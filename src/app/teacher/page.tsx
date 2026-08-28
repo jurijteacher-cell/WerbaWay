@@ -54,24 +54,26 @@ export default async function TeacherPage() {
       <section className="mb-12">
         <h2 className="mb-4 font-display text-xl text-paper">Наживо</h2>
         <div className="flex flex-col gap-3">
-          {Array.from(new Set(lessons.map((l) => l.category || 'Інше'))).map((category) => (
-            <div key={category}>
-              <p className="mb-1.5 font-mono text-[11px] uppercase tracking-widest text-stone-600">{category}</p>
-              <div className="flex flex-wrap gap-2">
-                {lessons
-                  .filter((l) => (l.category || 'Інше') === category)
-                  .map((lesson) => (
-                    <Link
-                      key={lesson.slug}
-                      href={`/teacher/live/${lesson.slug}`}
-                      className="rounded-lg border border-gold/40 px-4 py-2 text-sm text-gold hover:bg-gold/10"
-                    >
-                      {lesson.title} →
-                    </Link>
-                  ))}
+          {Array.from(new Set(lessons.filter((l) => !l.hideFromBrowse).map((l) => l.category || 'Інше'))).map(
+            (category) => (
+              <div key={category}>
+                <p className="mb-1.5 font-mono text-[11px] uppercase tracking-widest text-stone-600">{category}</p>
+                <div className="flex flex-wrap gap-2">
+                  {lessons
+                    .filter((l) => !l.hideFromBrowse && (l.category || 'Інше') === category)
+                    .map((lesson) => (
+                      <Link
+                        key={lesson.slug}
+                        href={`/teacher/live/${lesson.slug}`}
+                        className="rounded-lg border border-gold/40 px-4 py-2 text-sm text-gold hover:bg-gold/10"
+                      >
+                        {lesson.title} →
+                      </Link>
+                    ))}
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </section>
 

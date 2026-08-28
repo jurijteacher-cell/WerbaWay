@@ -18,6 +18,7 @@ export const movieTitanic: Lesson = {
   title: 'Titanic',
   subtitle: 'Mówienie o filmach — bohaterowie',
   category: 'Mówienie o filmach',
+  hideFromBrowse: true, // тепер тільки всередині лекції "Кіно" — /lectures/kino
   content: intro,
   exercises: [
     {
@@ -58,6 +59,7 @@ export const movieHarryPotter: Lesson = {
   title: 'Harry Potter i Kamień Filozoficzny',
   subtitle: 'Mówienie o filmach — bohaterowie',
   category: 'Mówienie o filmach',
+  hideFromBrowse: true, // тепер тільки всередині лекції "Кіно" — /lectures/kino
   content: intro,
   exercises: [
     {
@@ -98,6 +100,7 @@ export const movieFrozen: Lesson = {
   title: 'Kraina Lodu',
   subtitle: 'Mówienie o filmach — bohaterowie',
   category: 'Mówienie o filmach',
+  hideFromBrowse: true, // тепер тільки всередині лекції "Кіно" — /lectures/kino
   content: intro,
   exercises: [
     {
@@ -138,6 +141,7 @@ export const movieHomeAlone: Lesson = {
   title: 'Sam w domu',
   subtitle: 'Mówienie o filmach — bohaterowie',
   category: 'Mówienie o filmach',
+  hideFromBrowse: true, // тепер тільки всередині лекції "Кіно" — /lectures/kino
   content: intro,
   exercises: [
     {
@@ -178,6 +182,7 @@ export const movieAvengers: Lesson = {
   title: 'Avengers: Koniec gry',
   subtitle: 'Mówienie o filmach — bohaterowie',
   category: 'Mówienie o filmach',
+  hideFromBrowse: true, // тепер тільки всередині лекції "Кіно" — /lectures/kino
   content: intro,
   exercises: [
     {
@@ -218,6 +223,7 @@ export const movieIntouchables: Lesson = {
   title: 'Nietykalni (1+1)',
   subtitle: 'Mówienie o filmach — bohaterowie',
   category: 'Mówienie o filmach',
+  hideFromBrowse: true, // тепер тільки всередині лекції "Кіно" — /lectures/kino
   content: intro,
   exercises: [
     {

@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { lessons } from '@/content/lessons';
-import { LogoutButton } from '@/components/LogoutButton';
 
 export default async function HomePage() {
   const supabase = createClient();
@@ -14,21 +13,14 @@ export default async function HomePage() {
     redirect('/login');
   }
 
-  const categories = Array.from(new Set(lessons.map((l) => l.category || 'Інше')));
+  const visibleLessons = lessons.filter((l) => !l.hideFromBrowse);
+  const categories = Array.from(new Set(visibleLessons.map((l) => l.category || 'Інше')));
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-16">
-      <div className="mb-12 flex items-center justify-between">
-        <div>
-          <p className="text-sm uppercase tracking-widest text-gold-dim">Werba Way</p>
-          <h1 className="font-display text-3xl text-paper">Твої уроки</h1>
-        </div>
-        <div className="flex items-center gap-4">
-          <Link href="/lectures" className="text-sm text-gold transition-colors hover:text-gold-bright">
-            Лекції →
-          </Link>
-          <LogoutButton />
-        </div>
+      <div className="mb-12">
+        <p className="text-sm uppercase tracking-widest text-gold-dim">Werba Way</p>
+        <h1 className="font-display text-3xl text-paper">Твої уроки</h1>
       </div>
 
       <div className="flex flex-col gap-10">
@@ -36,7 +28,7 @@ export default async function HomePage() {
           <section key={category}>
             <h2 className="mb-3 font-mono text-xs uppercase tracking-widest text-gold-dim">{category}</h2>
             <div className="flex flex-col gap-3">
-              {lessons
+              {visibleLessons
                 .filter((l) => (l.category || 'Інше') === category)
                 .map((lesson) => (
                   <Link

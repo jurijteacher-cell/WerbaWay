@@ -60,6 +60,8 @@ export interface Lesson {
   subtitle?: string;
   /** Групування на головній сторінці — відповідає вкладкам з твого Notion (słownictwo i komunikacja тощо) */
   category?: string;
+  /** true — урок не показується в /  і в "Наживо" на /teacher, бо вже зібраний у лекцію (див. src/content/lectures) */
+  hideFromBrowse?: boolean;
   /** Абзаци контенту уроку (просто текст, пізніше можна замінити на MDX) */
   content: string[];
   exercises: Exercise[];

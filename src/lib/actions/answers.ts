@@ -21,7 +21,6 @@ export async function overrideAnswer(
   const evaluation = await evaluateExercise(exercise, answer);
   let { isCorrect, autoGraded, feedback } = evaluation;
 
-  // Вчитель вручну зберіг open_text — приймаємо відповідь, якщо AI недоступний.
   if (exercise.type === 'open_text' && isCorrect === null) {
     isCorrect = true;
     autoGraded = false;
@@ -30,8 +29,6 @@ export async function overrideAnswer(
 
   const supabase = createClient();
 
-  // RLS дозволяє UPDATE/INSERT чужого student_id лише якщо профіль поточного
-  // користувача має role='teacher' (див. is_teacher() у 0001_init.sql).
   const { error } = await supabase.from('submissions').upsert(
     {
       student_id: studentId,

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, Inter, IBM_Plex_Mono } from 'next/font/google';
 import './globals.css';
+import { TopNav } from '@/components/TopNav';
 
 const playfair = Playfair_Display({
   subsets: ['latin', 'latin-ext'],
@@ -26,10 +27,13 @@ export const metadata: Metadata = {
   description: 'Польська мова для українців — уроки та вправи',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="uk" className={`${playfair.variable} ${inter.variable} ${plexMono.variable}`}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <TopNav />
+        {children}
+      </body>
     </html>
   );
 }

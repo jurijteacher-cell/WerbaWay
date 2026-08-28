@@ -36,14 +36,9 @@ export default async function LecturesPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-16">
-      <div className="mb-12 flex items-center justify-between">
-        <div>
-          <p className="text-sm uppercase tracking-widest text-gold-dim">Werba Way</p>
-          <h1 className="font-display text-3xl text-paper">Лекції</h1>
-        </div>
-        <Link href="/" className="text-sm text-paper-muted transition-colors hover:text-gold">
-          Уроки →
-        </Link>
+      <div className="mb-12">
+        <p className="text-sm uppercase tracking-widest text-gold-dim">Werba Way</p>
+        <h1 className="font-display text-3xl text-paper">Лекції</h1>
       </div>
 
       {assigned.length > 0 && (

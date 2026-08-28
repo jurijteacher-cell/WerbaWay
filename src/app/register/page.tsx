@@ -5,9 +5,14 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/client';
 
+type Role = 'student' | 'teacher';
+
 export default function RegisterPage() {
   const router = useRouter();
-  const [fullName, setFullName] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [role, setRole] = useState<Role>('student');
+  const [teacherCode, setTeacherCode] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
@@ -22,7 +27,14 @@ export default function RegisterPage() {
     const { error } = await supabase.auth.signUp({
       email,
       password,
-      options: { data: { full_name: fullName } },
+      options: {
+        data: {
+          first_name: firstName,
+          last_name: lastName,
+          requested_role: role,
+          teacher_code: role === 'teacher' ? teacherCode : undefined,
+        },
+      },
     });
     setLoading(false);
     if (error) {
@@ -47,20 +59,70 @@ export default function RegisterPage() {
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center px-4">
+    <main className="flex min-h-screen items-center justify-center px-4 py-16">
       <div className="w-full max-w-sm">
         <h1 className="mb-1 font-display text-3xl text-paper">Реєстрація</h1>
-        <p className="mb-8 text-paper-muted">Створи акаунт учня Werba Way</p>
+        <p className="mb-8 text-paper-muted">Створи акаунт у Werba Way</p>
 
         <form onSubmit={onSubmit} className="flex flex-col gap-4">
-          <input
-            type="text"
-            required
-            placeholder="Імʼя"
-            value={fullName}
-            onChange={(e) => setFullName(e.target.value)}
-            className="rounded-lg border border-ink-line bg-ink-raised px-4 py-3 text-paper placeholder:text-paper-muted outline-none focus:border-gold"
-          />
+          <div className="grid grid-cols-2 gap-3">
+            <input
+              type="text"
+              required
+              placeholder="Ім'я"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              className="rounded-lg border border-ink-line bg-ink-raised px-4 py-3 text-paper placeholder:text-paper-muted outline-none focus:border-gold"
+            />
+            <input
+              type="text"
+              required
+              placeholder="Прізвище"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              className="rounded-lg border border-ink-line bg-ink-raised px-4 py-3 text-paper placeholder:text-paper-muted outline-none focus:border-gold"
+            />
+          </div>
+
+          <div>
+            <p className="mb-2 text-sm text-paper-muted">Я реєструюсь як</p>
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                type="button"
+                onClick={() => setRole('student')}
+                className={`rounded-lg border px-4 py-2.5 text-sm font-medium transition-colors ${
+                  role === 'student'
+                    ? 'border-gold bg-gold/10 text-gold-bright'
+                    : 'border-ink-line text-paper-muted hover:border-gold/40'
+                }`}
+              >
+                Учень
+              </button>
+              <button
+                type="button"
+                onClick={() => setRole('teacher')}
+                className={`rounded-lg border px-4 py-2.5 text-sm font-medium transition-colors ${
+                  role === 'teacher'
+                    ? 'border-gold bg-gold/10 text-gold-bright'
+                    : 'border-ink-line text-paper-muted hover:border-gold/40'
+                }`}
+              >
+                Вчитель
+              </button>
+            </div>
+          </div>
+
+          {role === 'teacher' && (
+            <input
+              type="text"
+              required
+              placeholder="Код запрошення вчителя"
+              value={teacherCode}
+              onChange={(e) => setTeacherCode(e.target.value)}
+              className="rounded-lg border border-ink-line bg-ink-raised px-4 py-3 text-paper placeholder:text-paper-muted outline-none focus:border-gold"
+            />
+          )}
+
           <input
             type="email"
             required
