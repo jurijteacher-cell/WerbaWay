@@ -96,17 +96,17 @@ export default function MoviesPracticePage() {
             onClick={() => openMovie(i)}
             className="overflow-hidden rounded-xl border border-ink-line bg-ink-raised text-left transition-colors hover:border-gold"
           >
-            <div className="relative aspect-[2/3] w-full bg-ink">
-              {movie.poster && (
-                <Image
-                  src={movie.poster}
-                  alt={movie.title}
-                  fill
-                  sizes="(max-width: 640px) 50vw, 33vw"
-                  className="object-cover"
-                />
-              )}
-            </div>
+            {movie.poster && (
+              <Image
+                src={movie.poster}
+                alt={movie.title}
+                width={600}
+                height={900}
+                sizes="(max-width: 640px) 50vw, 33vw"
+                className="block aspect-[2/3] w-full bg-ink object-cover"
+                quality={95}
+              />
+            )}
             <div className="p-4">
               <p className="font-display text-base leading-snug text-paper sm:text-lg">{movie.title}</p>
               <div className="mt-3 flex gap-1.5">
@@ -129,9 +129,14 @@ export default function MoviesPracticePage() {
           <div className="w-full max-w-lg rounded-2xl border border-ink-line bg-ink-raised p-6">
             <div className="mb-4 flex items-start gap-4">
               {active.poster && (
-                <div className="relative h-20 w-14 shrink-0 overflow-hidden rounded-md border border-ink-line">
-                  <Image src={active.poster} alt="" fill sizes="56px" className="object-cover" />
-                </div>
+                <Image
+                  src={active.poster}
+                  alt=""
+                  width={56}
+                  height={84}
+                  className="h-20 w-14 shrink-0 rounded-md border border-ink-line object-cover"
+                  quality={95}
+                />
               )}
               <div className="min-w-0 flex-1">
                 <div className="flex items-center justify-between gap-3">
