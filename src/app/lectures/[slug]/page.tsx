@@ -24,9 +24,20 @@ export default async function LecturePage({ params }: { params: { slug: string }
         ← Усі лекції
       </Link>
       <h1 className="mb-1 mt-4 font-display text-4xl text-paper">{lecture.title}</h1>
-      {lecture.subtitle && <p className="mb-8 text-lg text-paper-muted">{lecture.subtitle}</p>}
+      {lecture.subtitle && <p className="mb-4 text-lg text-paper-muted">{lecture.subtitle}</p>}
 
-      <LecturePlayer lecture={toPublicLecture(lecture)} studentId={user.id} studentName={studentName} />
+      {lecture.slug === 'kino' && (
+        <Link
+          href="/lectures/kino/movies"
+          className="mb-8 inline-flex items-center gap-2 rounded-lg border border-gold/40 px-4 py-2 text-sm text-gold transition-colors hover:bg-gold/10"
+        >
+          🎬 Практика: обговорення фільмів →
+        </Link>
+      )}
+
+      <div className={lecture.slug === 'kino' ? '' : 'mt-8'}>
+        <LecturePlayer lecture={toPublicLecture(lecture)} studentId={user.id} studentName={studentName} />
+      </div>
     </main>
   );
 }
