@@ -1,6 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import type { RealtimeChannel } from '@supabase/supabase-js';
+import { createClient } from '@/lib/supabase/client';
 import type { PublicExercise } from '@/content/types';
 import { MultipleChoice } from './MultipleChoice';
 import { Listening } from './Listening';
@@ -10,12 +12,69 @@ import { OpenText } from './OpenText';
 
 type SubmitResult = { ok: true; autoGraded: boolean; isCorrect: boolean | null } | { ok: false; error: string };
 
-export function ExerciseCard({ exercise, lessonSlug, index }: { exercise: PublicExercise; lessonSlug: string; index: number }) {
+type Props = {
+  exercise: PublicExercise;
+  lessonSlug: string;
+  index: number;
+  /** Потрібні лише для живої трансляції чернетки вчителю — не впливають на саму вправу */
+  studentId: string;
+  studentName: string;
+};
+
+export function ExerciseCard({ exercise, lessonSlug, index, studentId, studentName }: Props) {
   const [mcValue, setMcValue] = useState<number | null>(null);
   const [textValue, setTextValue] = useState('');
   const [matchValue, setMatchValue] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<'idle' | 'submitting'>('idle');
   const [result, setResult] = useState<SubmitResult | null>(null);
+
+  const channelRef = useRef<RealtimeChannel | null>(null);
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Приватний канал: цей учень тільки НАДСИЛАЄ, ніколи не слухає (див. RLS
+  // у supabase/migrations/0002_live_monitoring.sql) — інші учні його не почують.
+  useEffect(() => {
+    const supabase = createClient();
+    const channel = supabase.channel(`lesson-draft-${lessonSlug}`, { config: { private: true } });
+    channel.subscribe();
+    channelRef.current = channel;
+    return () => {
+      supabase.removeChannel(channel);
+    };
+  }, [lessonSlug]);
+
+  const broadcastDraft = (submitted: boolean, finalResult?: SubmitResult) => {
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    const send = () => {
+      channelRef.current?.send({
+        type: 'broadcast',
+        event: 'draft',
+        payload: {
+          studentId,
+          studentName,
+          exerciseId: exercise.id,
+          exerciseType: exercise.type,
+          answer: buildAnswer(),
+          submitted,
+          isCorrect: finalResult?.ok ? finalResult.isCorrect : null,
+          updatedAt: Date.now(),
+        },
+      });
+    };
+    if (submitted) {
+      send(); // фінальний стан — без затримки
+    } else {
+      debounceRef.current = setTimeout(send, 400);
+    }
+  };
+
+  // Живі чернетки: транслюємо зміну відповіді (з дебаунсом), поки вправу не заблоковано.
+  useEffect(() => {
+    if (result?.ok) return; // вже відправлено — фінальний стан шлється окремо в submit()
+    if (mcValue === null && textValue === '' && Object.keys(matchValue).length === 0) return;
+    broadcastDraft(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mcValue, textValue, matchValue]);
 
   const buildAnswer = (): unknown => {
     switch (exercise.type) {
@@ -61,7 +120,9 @@ export function ExerciseCard({ exercise, lessonSlug, index }: { exercise: Public
       if (!res.ok) {
         setResult({ ok: false, error: data.error ?? 'Помилка відправки' });
       } else {
-        setResult({ ok: true, autoGraded: data.autoGraded, isCorrect: data.isCorrect });
+        const finalResult: SubmitResult = { ok: true, autoGraded: data.autoGraded, isCorrect: data.isCorrect };
+        setResult(finalResult);
+        broadcastDraft(true, finalResult);
       }
     } catch {
       setResult({ ok: false, error: 'Немає з\'єднання із сервером' });
@@ -96,7 +157,13 @@ export function ExerciseCard({ exercise, lessonSlug, index }: { exercise: Public
         />
       )}
       {exercise.type === 'open_text' && (
-        <OpenText placeholder={exercise.placeholder} value={textValue} onChange={setTextValue} disabled={locked} />
+        <OpenText
+          placeholder={exercise.placeholder}
+          value={textValue}
+          onChange={setTextValue}
+          disabled={locked}
+          sampleAnswer={exercise.sampleAnswer}
+        />
       )}
 
       <div className="mt-4 flex items-center gap-4">

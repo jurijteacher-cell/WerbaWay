@@ -1,5 +1,7 @@
+import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
+import { lessons } from '@/content/lessons';
 import { GradeForm } from './GradeForm';
 
 export default async function TeacherPage() {
@@ -31,6 +33,30 @@ export default async function TeacherPage() {
       <h1 className="mb-8 font-display text-3xl text-paper">Кабінет викладача</h1>
 
       {error && <p className="text-incorrect">Помилка завантаження: {error.message}</p>}
+
+      <section className="mb-12">
+        <h2 className="mb-4 font-display text-xl text-paper">Наживо</h2>
+        <div className="flex flex-col gap-3">
+          {Array.from(new Set(lessons.map((l) => l.category || 'Інше'))).map((category) => (
+            <div key={category}>
+              <p className="mb-1.5 font-mono text-[11px] uppercase tracking-widest text-stone-600">{category}</p>
+              <div className="flex flex-wrap gap-2">
+                {lessons
+                  .filter((l) => (l.category || 'Інше') === category)
+                  .map((lesson) => (
+                    <Link
+                      key={lesson.slug}
+                      href={`/teacher/live/${lesson.slug}`}
+                      className="rounded-lg border border-gold/40 px-4 py-2 text-sm text-gold hover:bg-gold/10"
+                    >
+                      {lesson.title} →
+                    </Link>
+                  ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <section className="mb-12">
         <h2 className="mb-4 font-display text-xl text-gold">Очікують перевірки ({pendingReview.length})</h2>

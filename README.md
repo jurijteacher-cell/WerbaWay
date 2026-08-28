@@ -15,14 +15,50 @@ Next.js 14 (App Router) + TypeScript + Tailwind + Supabase (Auth + Postgres + RL
 контент через код, і це найшвидший спосіб для мене редагувати уроки на
 твій запит.
 
+## Живий моніторинг (нове)
+
+`/teacher/live/[slug]` — вчитель бачить, що учень зараз обирає/друкує в
+кожній вправі, ще до натискання "Відповісти", і може одразу перезаписати
+відповідь учня (наприклад, під час живого уроку в Zoom). Працює через
+Supabase Realtime Broadcast: учень тільки надсилає свою чернетку в приватний
+канал `lesson-draft-<slug>`, слухати цей канал може тільки профіль з
+role='teacher' — інші учні одне одного не бачать (це забезпечують RLS-політики
+в `0002_live_monitoring.sql`, а не просто прихована кнопка в UI).
+
 ## Запуск локально
 
 1. `npm install`
 2. Створи проєкт на [supabase.com](https://supabase.com), якщо ще нема.
-3. У Supabase Dashboard → SQL Editor виконай вміст `supabase/migrations/0001_init.sql`.
-4. Скопіюй `.env.local.example` → `.env.local`, встав `Project URL` і `anon public key`
+3. У Supabase Dashboard → SQL Editor по черзі виконай:
+   - `supabase/migrations/0001_init.sql`
+   - `supabase/migrations/0002_live_monitoring.sql`
+4. **Обов'язково руками**: Supabase Dashboard → Project Settings → Realtime →
+   вимкни "Allow public access". Без цього кроку RLS-політики на приватні
+   канали не працюють і чернетки будуть технічно доступні будь-якому
+   авторизованому клієнту, не тільки вчителю.
+5. Скопіюй `.env.local.example` → `.env.local`, встав `Project URL` і `anon public key`
    зі Supabase Dashboard → Project Settings → API.
-5. `npm run dev` → відкрий http://localhost:3000
+6. `npm run dev` → відкрий http://localhost:3000
+
+## Контент, перенесений з Notion (кіно-тема)
+
+- `slownictwo-filmowe.ts` — 5 вправ типу matching (Osoby, Produkcja, Struktura,
+  Oglądanie, Dystrybucja i uznanie), перенесено з drag&drop-версії
+  (`slownictwo_filmowe_v2_fixed.html`). Слова й визначення — оригінальний
+  текст, 1:1.
+- `movies.ts` — 6 уроків (Titanic, Harry Potter, Kraina Lodu, Sam w domu,
+  Avengers, Nietykalni), по 5 відкритих питань кожен, перенесено з
+  `popularne_filmy_quiz.html`.
+- **Не перенесено**: вправа "gatunki filmowe" (жанри) — файл не був наданий.
+  Постери фільмів — авторське право, не переносяться і не генеруються.
+  "3 повторення на фільм" (spaced repetition з оригіналу) — поки не
+  реалізовано, той самий пункт, що й "прогрес при перезаході" нижче.
+- Кольори в `tailwind.config.ts` підігнані під точні hex-значення з твоїх
+  реальних HTML-вправ (не наближення), додано IBM Plex Mono для лейблів —
+  так само, як у тебе.
+- Головна сторінка й "Наживо" в кабінеті вчителя тепер групують уроки за
+  `category` (нове поле в `Lesson`) — інакше 8 уроків одним списком було б
+  нечитабельно.
 
 ## Як стати вчителем
 
@@ -57,3 +93,10 @@ where id = (select id from auth.users where email = 'твій-email@example.com'
 - Аудіо-файл у прикладі — заглушка (`/audio/placeholder.mp3`), треба залити
   реальний файл у `public/audio/` або в Supabase Storage.
 - Нема адмін-панелі для контенту без коду — свідомо, за твоїм вибором.
+- Живий моніторинг показує тільки тих учнів, які вже відкрили урок і почали
+  відповідати в поточній сесії (+ тих, хто вже колись відповідав) — списку
+  "хто мав би бути на уроці" ще нема, бо нема груп/розкладу.
+- Коли вчитель редагує відповідь, це не "вписується" в поле учня в реальному
+  часі — учень побачить виправлений варіант тільки після перезавантаження
+  сторінки (і то поки що не побачить, бо сторінка вправи не показує раніше
+  збережену відповідь — це той самий пункт вище, "прогрес при перезаході").

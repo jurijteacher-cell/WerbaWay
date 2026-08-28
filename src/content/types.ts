@@ -43,6 +43,8 @@ export interface MatchingExercise extends BaseExercise {
 export interface OpenTextExercise extends BaseExercise {
   type: 'open_text';
   placeholder?: string;
+  /** Приклад гарної відповіді — не "правильна відповідь", тому можна показувати одразу, без сервера */
+  sampleAnswer?: string;
 }
 
 export type Exercise =
@@ -56,6 +58,8 @@ export interface Lesson {
   slug: string;
   title: string;
   subtitle?: string;
+  /** Групування на головній сторінці — відповідає вкладкам з твого Notion (słownictwo i komunikacja тощо) */
+  category?: string;
   /** Абзаци контенту уроку (просто текст, пізніше можна замінити на MDX) */
   content: string[];
   exercises: Exercise[];
@@ -74,12 +78,13 @@ export type PublicExercise =
       leftItems: { id: string; left: string }[];
       rightItems: string[];
     }
-  | { id: string; type: 'open_text'; prompt: string; placeholder?: string };
+  | { id: string; type: 'open_text'; prompt: string; placeholder?: string; sampleAnswer?: string };
 
 export interface PublicLesson {
   slug: string;
   title: string;
   subtitle?: string;
+  category?: string;
   content: string[];
   exercises: PublicExercise[];
 }
@@ -114,7 +119,7 @@ export function toPublicExercise(ex: Exercise): PublicExercise {
         rightItems: shuffle(ex.pairs.map((p) => p.right)),
       };
     case 'open_text':
-      return { id: ex.id, type: 'open_text', prompt: ex.prompt, placeholder: ex.placeholder };
+      return { id: ex.id, type: 'open_text', prompt: ex.prompt, placeholder: ex.placeholder, sampleAnswer: ex.sampleAnswer };
   }
 }
 
@@ -123,6 +128,7 @@ export function toPublicLesson(lesson: Lesson): PublicLesson {
     slug: lesson.slug,
     title: lesson.title,
     subtitle: lesson.subtitle,
+    category: lesson.category,
     content: lesson.content,
     exercises: lesson.exercises.map(toPublicExercise),
   };

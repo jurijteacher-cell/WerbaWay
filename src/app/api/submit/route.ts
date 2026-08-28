@@ -1,28 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 import { getLessonBySlug } from '@/content/lessons';
-import type { Exercise } from '@/content/types';
-
-function normalize(s: string): string {
-  return s.trim().toLowerCase();
-}
-
-/** Повертає null, якщо тип не перевіряється автоматично (open_text) */
-function grade(exercise: Exercise, answer: any): boolean | null {
-  switch (exercise.type) {
-    case 'multiple_choice':
-    case 'listening':
-      return answer?.selectedIndex === exercise.correctIndex;
-    case 'fill_blank':
-      return exercise.correctAnswers.some((a) => normalize(a) === normalize(answer?.text ?? ''));
-    case 'matching': {
-      const submitted: Record<string, string> = answer?.pairs ?? {};
-      return exercise.pairs.every((p) => normalize(submitted[p.id] ?? '') === normalize(p.right));
-    }
-    case 'open_text':
-      return null;
-  }
-}
+import { grade } from '@/lib/grading';
 
 export async function POST(req: NextRequest) {
   const supabase = createClient();

@@ -1,12 +1,22 @@
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
+import { createClient } from '@/lib/supabase/server';
 import { getLessonBySlug } from '@/content/lessons';
 import { toPublicLesson } from '@/content/types';
 import { ExerciseCard } from '@/components/exercises/ExerciseCard';
 
-export default function LessonPage({ params }: { params: { slug: string } }) {
+export default async function LessonPage({ params }: { params: { slug: string } }) {
   const lesson = getLessonBySlug(params.slug);
   if (!lesson) notFound();
+
+  const supabase = createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) redirect('/login');
+
+  const { data: profile } = await supabase.from('profiles').select('full_name').eq('id', user.id).single();
+  const studentName = profile?.full_name || user.email || 'Учень';
 
   const publicLesson = toPublicLesson(lesson);
 
@@ -30,7 +40,14 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
       <h2 className="mb-4 font-display text-2xl text-paper">Завдання</h2>
       <div className="flex flex-col gap-4">
         {publicLesson.exercises.map((exercise, i) => (
-          <ExerciseCard key={exercise.id} exercise={exercise} lessonSlug={publicLesson.slug} index={i} />
+          <ExerciseCard
+            key={exercise.id}
+            exercise={exercise}
+            lessonSlug={publicLesson.slug}
+            index={i}
+            studentId={user.id}
+            studentName={studentName}
+          />
         ))}
       </div>
     </main>

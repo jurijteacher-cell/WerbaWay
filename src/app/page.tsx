@@ -14,6 +14,8 @@ export default async function HomePage() {
     redirect('/login');
   }
 
+  const categories = Array.from(new Set(lessons.map((l) => l.category || 'Інше')));
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-16">
       <div className="mb-12 flex items-center justify-between">
@@ -24,16 +26,25 @@ export default async function HomePage() {
         <LogoutButton />
       </div>
 
-      <div className="flex flex-col gap-3">
-        {lessons.map((lesson) => (
-          <Link
-            key={lesson.slug}
-            href={`/lessons/${lesson.slug}`}
-            className="group rounded-xl border border-ink-line bg-ink-raised px-6 py-5 transition-colors hover:border-gold"
-          >
-            <h2 className="font-display text-xl text-paper group-hover:text-gold-bright">{lesson.title}</h2>
-            {lesson.subtitle && <p className="mt-1 text-paper-muted">{lesson.subtitle}</p>}
-          </Link>
+      <div className="flex flex-col gap-10">
+        {categories.map((category) => (
+          <section key={category}>
+            <h2 className="mb-3 font-mono text-xs uppercase tracking-widest text-gold-dim">{category}</h2>
+            <div className="flex flex-col gap-3">
+              {lessons
+                .filter((l) => (l.category || 'Інше') === category)
+                .map((lesson) => (
+                  <Link
+                    key={lesson.slug}
+                    href={`/lessons/${lesson.slug}`}
+                    className="group rounded-xl border border-ink-line bg-ink-raised px-6 py-5 transition-colors hover:border-gold"
+                  >
+                    <h3 className="font-display text-xl text-paper group-hover:text-gold-bright">{lesson.title}</h3>
+                    {lesson.subtitle && <p className="mt-1 text-paper-muted">{lesson.subtitle}</p>}
+                  </Link>
+                ))}
+            </div>
+          </section>
         ))}
       </div>
     </main>
