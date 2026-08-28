@@ -10,7 +10,9 @@ import { FillBlank } from './FillBlank';
 import { Matching } from './Matching';
 import { OpenText } from './OpenText';
 
-type SubmitResult = { ok: true; autoGraded: boolean; isCorrect: boolean | null } | { ok: false; error: string };
+type SubmitResult =
+  | { ok: true; autoGraded: boolean; isCorrect: boolean | null; feedback?: string | null }
+  | { ok: false; error: string };
 
 type Props = {
   exercise: PublicExercise;
@@ -125,7 +127,12 @@ export function ExerciseCard({ exercise, lessonSlug, index, studentId, studentNa
       if (!res.ok) {
         setResult({ ok: false, error: data.error ?? 'Помилка відправки' });
       } else {
-        const finalResult: SubmitResult = { ok: true, autoGraded: data.autoGraded, isCorrect: data.isCorrect };
+        const finalResult: SubmitResult = {
+          ok: true,
+          autoGraded: data.autoGraded,
+          isCorrect: data.isCorrect,
+          feedback: data.feedback ?? null,
+        };
         setResult(finalResult);
         broadcastDraft(true, finalResult);
       }
@@ -186,9 +193,12 @@ export function ExerciseCard({ exercise, lessonSlug, index, studentId, studentNa
         {result?.ok === false && <p className="text-sm text-incorrect">{result.error}</p>}
 
         {result?.ok === true && result.autoGraded && (
-          <p className={`text-sm font-medium ${result.isCorrect ? 'text-correct' : 'text-incorrect'}`}>
-            {result.isCorrect ? '✓ Правильно' : '✕ Неправильно'}
-          </p>
+          <div className="flex flex-col gap-1">
+            <p className={`text-sm font-medium ${result.isCorrect ? 'text-correct' : 'text-incorrect'}`}>
+              {result.isCorrect ? '✓ Правильно' : '✕ Неправильно'}
+            </p>
+            {result.feedback && <p className="text-sm text-paper-muted">{result.feedback}</p>}
+          </div>
         )}
         {result?.ok === true && !result.autoGraded && (
           <p className="text-sm text-gold-dim">Прийнято, очікує перевірки викладачем</p>

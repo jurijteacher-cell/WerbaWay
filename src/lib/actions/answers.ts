@@ -3,7 +3,7 @@
 import { revalidatePath } from 'next/cache';
 import { createClient } from '@/lib/supabase/server';
 import { getLessonBySlug } from '@/content/lessons';
-import { grade } from '@/lib/grading';
+import { evaluateExercise } from '@/lib/evaluate-exercise';
 
 export async function overrideAnswer(
   lessonSlug: string,
@@ -18,8 +18,16 @@ export async function overrideAnswer(
     return { ok: false as const, error: 'Урок або вправу не знайдено' };
   }
 
-  const isCorrect = grade(exercise, answer);
-  const autoGraded = isCorrect !== null;
+  const evaluation = await evaluateExercise(exercise, answer);
+  let { isCorrect, autoGraded, feedback } = evaluation;
+
+  // Вчитель вручну зберіг open_text — приймаємо відповідь, якщо AI недоступний.
+  if (exercise.type === 'open_text' && isCorrect === null) {
+    isCorrect = true;
+    autoGraded = false;
+    feedback = undefined;
+  }
+
   const supabase = createClient();
 
   // RLS дозволяє UPDATE/INSERT чужого student_id лише якщо профіль поточного
@@ -33,6 +41,7 @@ export async function overrideAnswer(
       answer,
       is_correct: isCorrect,
       auto_graded: autoGraded,
+      teacher_feedback: feedback ?? null,
       edited_by_teacher: true,
       submitted_at: new Date().toISOString(),
       graded_at: new Date().toISOString(),

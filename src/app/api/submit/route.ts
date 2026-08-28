@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 import { getLessonBySlug } from '@/content/lessons';
-import { grade } from '@/lib/grading';
+import { evaluateExercise } from '@/lib/evaluate-exercise';
 
 export async function POST(req: NextRequest) {
   const supabase = createClient();
@@ -27,8 +27,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Урок або вправу не знайдено' }, { status: 404 });
   }
 
-  const isCorrect = grade(exercise, answer);
-  const autoGraded = isCorrect !== null;
+  const { isCorrect, autoGraded, feedback } = await evaluateExercise(exercise, answer);
 
   const { error } = await supabase.from('submissions').upsert(
     {
@@ -39,6 +38,7 @@ export async function POST(req: NextRequest) {
       answer,
       is_correct: isCorrect,
       auto_graded: autoGraded,
+      teacher_feedback: feedback ?? null,
       submitted_at: new Date().toISOString(),
       graded_at: autoGraded ? new Date().toISOString() : null,
     },
@@ -49,5 +49,5 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 
-  return NextResponse.json({ ok: true, autoGraded, isCorrect });
+  return NextResponse.json({ ok: true, autoGraded, isCorrect, feedback: feedback ?? null });
 }
