@@ -18,7 +18,7 @@ export function Matching({ leftItems, rightItems, value, onChange, disabled }: P
             value={value[item.id] ?? ''}
             disabled={disabled}
             onChange={(e) => onChange(item.id, e.target.value)}
-            className="flex-1 rounded-lg border border-ink-line bg-ink-raised px-3 py-2 text-paper/90 outline-none focus:border-gold disabled:opacity-60"
+            className="min-w-0 flex-1 rounded-lg border border-ink-line bg-ink-raised px-3 py-2 text-paper/90 outline-none focus:border-gold disabled:opacity-60"
           >
             <option value="" disabled>
               Обери варіант…
