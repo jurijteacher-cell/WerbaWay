@@ -5,6 +5,7 @@ import type { Exercise } from '@/content/types';
 import { MultipleChoice } from '@/components/exercises/MultipleChoice';
 import { FillBlank } from '@/components/exercises/FillBlank';
 import { Matching } from '@/components/exercises/Matching';
+import { MatchingClick } from '@/components/exercises/MatchingClick';
 import { OpenText } from '@/components/exercises/OpenText';
 import { overrideAnswer } from '@/lib/actions/answers';
 
@@ -118,12 +119,24 @@ export function AnswerCell({
           {exercise.type === 'open_text' && (
             <OpenText value={textValue} onChange={setTextValue} sampleAnswer={exercise.sampleAnswer} />
           )}
-          {exercise.type === 'matching' && (
-            <Matching
-              leftItems={exercise.pairs.map((p) => ({ id: p.id, left: p.left }))}
-              rightItems={exercise.pairs.map((p) => p.right)}
+          {exercise.type === 'matching' && exercise.variant === 'click' && (
+            <MatchingClick
+              words={exercise.pairs.map((p) => ({ pairId: p.id, label: p.left }))}
+              definitions={exercise.pairs.map((p) => ({ pairId: p.id, label: p.right }))}
               value={matchValue}
-              onChange={(leftId, rightValue) => setMatchValue((prev) => ({ ...prev, [leftId]: rightValue }))}
+              onChange={(pairId, definitionLabel) =>
+                setMatchValue((prev) => ({ ...prev, [pairId]: definitionLabel }))
+              }
+            />
+          )}
+          {exercise.type === 'matching' && exercise.variant !== 'click' && (
+            <Matching
+              words={exercise.pairs.map((p) => ({ pairId: p.id, label: p.left }))}
+              definitions={exercise.pairs.map((p) => ({ pairId: p.id, label: p.right }))}
+              value={matchValue}
+              onChange={(pairId, definitionLabel) =>
+                setMatchValue((prev) => ({ ...prev, [pairId]: definitionLabel }))
+              }
             />
           )}
           <div className="flex gap-2">

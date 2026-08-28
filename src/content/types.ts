@@ -37,6 +37,8 @@ export interface MatchingPair {
 
 export interface MatchingExercise extends BaseExercise {
   type: 'matching';
+  /** 'drag' (типово) — банк слів + перетягування; 'click' — клік ліве, клік праве */
+  variant?: 'drag' | 'click';
   pairs: MatchingPair[];
 }
 
@@ -77,8 +79,11 @@ export type PublicExercise =
       id: string;
       type: 'matching';
       prompt: string;
-      leftItems: { id: string; left: string }[];
-      rightItems: string[];
+      variant: 'drag' | 'click';
+      /** Банк слів для перетягування — перемішаний */
+      words: { pairId: string; label: string }[];
+      /** Рядки з визначеннями і порожніми слотами — перемішані незалежно від слів */
+      definitions: { pairId: string; label: string }[];
     }
   | { id: string; type: 'open_text'; prompt: string; placeholder?: string; sampleAnswer?: string };
 
@@ -117,8 +122,9 @@ export function toPublicExercise(ex: Exercise): PublicExercise {
         id: ex.id,
         type: 'matching',
         prompt: ex.prompt,
-        leftItems: ex.pairs.map((p) => ({ id: p.id, left: p.left })),
-        rightItems: shuffle(ex.pairs.map((p) => p.right)),
+        variant: ex.variant ?? 'drag',
+        words: shuffle(ex.pairs.map((p) => ({ pairId: p.id, label: p.left }))),
+        definitions: shuffle(ex.pairs.map((p) => ({ pairId: p.id, label: p.right }))),
       };
     case 'open_text':
       return { id: ex.id, type: 'open_text', prompt: ex.prompt, placeholder: ex.placeholder, sampleAnswer: ex.sampleAnswer };

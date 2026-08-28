@@ -8,6 +8,7 @@ import { MultipleChoice } from './MultipleChoice';
 import { Listening } from './Listening';
 import { FillBlank } from './FillBlank';
 import { Matching } from './Matching';
+import { MatchingClick } from './MatchingClick';
 import { OpenText } from './OpenText';
 
 type SubmitResult =
@@ -106,7 +107,7 @@ export function ExerciseCard({ exercise, lessonSlug, index, studentId, studentNa
       case 'open_text':
         return textValue.trim().length > 0;
       case 'matching':
-        return exercise.leftItems.every((item) => Boolean(matchValue[item.id]));
+        return exercise.words.every((w) => Boolean(matchValue[w.pairId]));
     }
   };
 
@@ -159,12 +160,21 @@ export function ExerciseCard({ exercise, lessonSlug, index, studentId, studentNa
       {exercise.type === 'fill_blank' && (
         <FillBlank textWithBlank={exercise.textWithBlank} value={textValue} onChange={setTextValue} disabled={locked} />
       )}
-      {exercise.type === 'matching' && (
-        <Matching
-          leftItems={exercise.leftItems}
-          rightItems={exercise.rightItems}
+      {exercise.type === 'matching' && exercise.variant === 'click' && (
+        <MatchingClick
+          words={exercise.words}
+          definitions={exercise.definitions}
           value={matchValue}
-          onChange={(leftId, rightValue) => setMatchValue((prev) => ({ ...prev, [leftId]: rightValue }))}
+          onChange={(pairId, definitionLabel) => setMatchValue((prev) => ({ ...prev, [pairId]: definitionLabel }))}
+          disabled={locked}
+        />
+      )}
+      {exercise.type === 'matching' && exercise.variant !== 'click' && (
+        <Matching
+          words={exercise.words}
+          definitions={exercise.definitions}
+          value={matchValue}
+          onChange={(pairId, definitionLabel) => setMatchValue((prev) => ({ ...prev, [pairId]: definitionLabel }))}
           disabled={locked}
         />
       )}

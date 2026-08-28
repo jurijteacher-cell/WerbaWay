@@ -1,11 +1,9 @@
 import type { Lecture } from '../types';
 import { lessonSlownictwoFilmowe } from '../lessons/slownictwo-filmowe';
+import { lessonGatunkiFilmowe } from '../lessons/gatunki-filmowe';
 
-// Фільми (Titanic, Harry Potter тощо) більше НЕ тут — вони не вписувались
-// у формат "вправа за вправою" з навігацією по сайдбару. Це окремий
-// практичний віджет: /lectures/kino/movies (сітка карток → модалка з
-// питаннями → 3 покази на фільм, без збереження відповідей — чисто
-// практика для говоріння, як у твоєму оригінальному файлі).
+// Фільми (Titanic, Harry Potter тощо) — окремий практичний віджет,
+// /lectures/kino/movies, не тут (див. коментар в movies.ts).
 export const lectureKino: Lecture = {
   slug: 'kino',
   title: 'Кіно',
@@ -16,6 +14,12 @@ export const lectureKino: Lecture = {
       label: 'Słownictwo filmowe',
       lessonSlug: lessonSlownictwoFilmowe.slug,
       exercises: lessonSlownictwoFilmowe.exercises,
+    },
+    {
+      id: 'gatunki',
+      label: 'Gatunki filmowe',
+      lessonSlug: lessonGatunkiFilmowe.slug,
+      exercises: lessonGatunkiFilmowe.exercises,
     },
   ],
 };

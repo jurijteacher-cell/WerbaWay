@@ -1,6 +1,7 @@
 import type { Lesson } from '../types';
 import { lesson1Hello } from './lesson-1-hello';
 import { lessonSlownictwoFilmowe } from './slownictwo-filmowe';
+import { lessonGatunkiFilmowe } from './gatunki-filmowe';
 import {
   movieTitanic,
   movieHarryPotter,
@@ -15,6 +16,7 @@ import {
 export const lessons: Lesson[] = [
   lesson1Hello,
   lessonSlownictwoFilmowe,
+  lessonGatunkiFilmowe,
   movieTitanic,
   movieHarryPotter,
   movieFrozen,

@@ -76,6 +76,11 @@ role='teacher' — інші учні одне одного не бачать (ц
   Oglądanie, Dystrybucja i uznanie), перенесено з drag&drop-версії
   (`slownictwo_filmowe_v2_fixed.html`). Слова й визначення — оригінальний
   текст, 1:1.
+- `gatunki-filmowe.ts` — 8 пар жанр/опис, перенесено з
+  `gatunki_filmowe_dopasowanie.html`. Інший механізм взаємодії, ніж у
+  słownictwo-filmowe: клік-клік замість drag&drop (`MatchingExercise` тепер
+  має `variant: 'drag' | 'click'` — обидва варіанти в одному типі даних,
+  різниться тільки компонент рендера: `Matching.tsx` / `MatchingClick.tsx`).
 - `movies.ts` — 6 наборів по 5 відкритих питань (Titanic, Harry Potter, Kraina
   Lodu, Sam w domu, Avengers, Nietykalni), контент перенесено з
   `popularne_filmy_quiz.html`.
