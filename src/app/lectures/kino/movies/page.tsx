@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Lightbulb, X, Check } from 'lucide-react';
 import {
   movieTitanic,
@@ -15,10 +16,20 @@ import {
 const TOTAL_ROUNDS = 3;
 
 // Перевикористовую контент прямо з movies.ts — жодного дублювання питань.
+const POSTER_BY_SLUG: Record<string, string> = {
+  'movie-titanic': '/movies/titanic.png',
+  'movie-harry-potter': '/movies/harry-potter.png',
+  'movie-frozen': '/movies/frozen.png',
+  'movie-home-alone': '/movies/home-alone.png',
+  'movie-avengers': '/movies/avengers.jpg',
+  'movie-intouchables': '/movies/intouchables.png',
+};
+
 const movies = [movieTitanic, movieHarryPotter, movieFrozen, movieHomeAlone, movieAvengers, movieIntouchables].map(
   (lesson) => ({
     slug: lesson.slug,
     title: lesson.title,
+    poster: POSTER_BY_SLUG[lesson.slug],
     questions: lesson.exercises
       .filter((e) => e.type === 'open_text')
       .map((e) => ({ q: e.prompt, sample: e.sampleAnswer })),
@@ -83,18 +94,31 @@ export default function MoviesPracticePage() {
           <button
             key={movie.slug}
             onClick={() => openMovie(i)}
-            className="rounded-xl border border-ink-line bg-ink-raised p-5 text-left transition-colors hover:border-gold"
+            className="overflow-hidden rounded-xl border border-ink-line bg-ink-raised text-left transition-colors hover:border-gold"
           >
-            <p className="font-display text-lg text-paper">{movie.title}</p>
-            <div className="mt-3 flex gap-1.5">
-              {Array.from({ length: TOTAL_ROUNDS }).map((_, dot) => (
-                <span
-                  key={dot}
-                  className={`h-1.5 w-1.5 rounded-full ${
-                    dot < viewCounts[i] ? 'bg-gold' : 'bg-ink-line'
-                  }`}
+            <div className="relative aspect-[2/3] w-full bg-ink">
+              {movie.poster && (
+                <Image
+                  src={movie.poster}
+                  alt={movie.title}
+                  fill
+                  sizes="(max-width: 640px) 50vw, 33vw"
+                  className="object-cover"
                 />
-              ))}
+              )}
+            </div>
+            <div className="p-4">
+              <p className="font-display text-base leading-snug text-paper sm:text-lg">{movie.title}</p>
+              <div className="mt-3 flex gap-1.5">
+                {Array.from({ length: TOTAL_ROUNDS }).map((_, dot) => (
+                  <span
+                    key={dot}
+                    className={`h-1.5 w-1.5 rounded-full ${
+                      dot < viewCounts[i] ? 'bg-gold' : 'bg-ink-line'
+                    }`}
+                  />
+                ))}
+              </div>
             </div>
           </button>
         ))}
@@ -103,15 +127,24 @@ export default function MoviesPracticePage() {
       {active && question && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
           <div className="w-full max-w-lg rounded-2xl border border-ink-line bg-ink-raised p-6">
-            <div className="mb-1 flex items-center justify-between">
-              <p className="font-display text-lg text-gold">{active.title}</p>
-              <button onClick={closeModal} className="text-paper-muted hover:text-paper">
-                <X size={18} />
-              </button>
+            <div className="mb-4 flex items-start gap-4">
+              {active.poster && (
+                <div className="relative h-20 w-14 shrink-0 overflow-hidden rounded-md border border-ink-line">
+                  <Image src={active.poster} alt="" fill sizes="56px" className="object-cover" />
+                </div>
+              )}
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center justify-between gap-3">
+                  <p className="font-display text-lg text-gold">{active.title}</p>
+                  <button onClick={closeModal} className="shrink-0 text-paper-muted hover:text-paper">
+                    <X size={18} />
+                  </button>
+                </div>
+                <p className="mt-1 font-mono text-xs text-paper-muted">
+                  Питання {questionIdx + 1} / {active.questions.length}
+                </p>
+              </div>
             </div>
-            <p className="mb-4 font-mono text-xs text-paper-muted">
-              Питання {questionIdx + 1} / {active.questions.length}
-            </p>
 
             <p className="mb-3 font-medium text-paper">{question.q}</p>
             <textarea
