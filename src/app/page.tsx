@@ -23,7 +23,12 @@ export default async function HomePage() {
           <p className="text-sm uppercase tracking-widest text-gold-dim">Werba Way</p>
           <h1 className="font-display text-3xl text-paper">Твої уроки</h1>
         </div>
-        <LogoutButton />
+        <div className="flex items-center gap-4">
+          <Link href="/lectures" className="text-sm text-gold transition-colors hover:text-gold-bright">
+            Лекції →
+          </Link>
+          <LogoutButton />
+        </div>
       </div>
 
       <div className="flex flex-col gap-10">

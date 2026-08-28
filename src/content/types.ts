@@ -133,3 +133,54 @@ export function toPublicLesson(lesson: Lesson): PublicLesson {
     exercises: lesson.exercises.map(toPublicExercise),
   };
 }
+
+// ── Лекція: навігований набір вправ, зібраних з одного або кількох уроків ──
+//
+// Важливо: лекція НЕ дублює контент і НЕ вводить окреме сховище відповідей.
+// Кожна секція вказує lessonSlug — саме той урок, якому "належать" вправи
+// секції для оцінювання й збереження в submissions (той самий механізм,
+// що й на сторінці /lessons/[slug]). Лекція — це просто інший спосіб
+// навігації по вже існуючих вправах, зручний для живого проведення заняття.
+
+export interface LectureSection {
+  id: string;
+  label: string;
+  /** Урок, якому належать вправи цієї секції — потрібен для /api/submit */
+  lessonSlug: string;
+  exercises: Exercise[];
+}
+
+export interface Lecture {
+  slug: string;
+  title: string;
+  subtitle?: string;
+  sections: LectureSection[];
+}
+
+export interface PublicLectureSection {
+  id: string;
+  label: string;
+  lessonSlug: string;
+  exercises: PublicExercise[];
+}
+
+export interface PublicLecture {
+  slug: string;
+  title: string;
+  subtitle?: string;
+  sections: PublicLectureSection[];
+}
+
+export function toPublicLecture(lecture: Lecture): PublicLecture {
+  return {
+    slug: lecture.slug,
+    title: lecture.title,
+    subtitle: lecture.subtitle,
+    sections: lecture.sections.map((s) => ({
+      id: s.id,
+      label: s.label,
+      lessonSlug: s.lessonSlug,
+      exercises: s.exercises.map(toPublicExercise),
+    })),
+  };
+}

@@ -19,9 +19,11 @@ type Props = {
   /** Потрібні лише для живої трансляції чернетки вчителю — не впливають на саму вправу */
   studentId: string;
   studentName: string;
+  /** Канал трансляції. За замовчуванням — канал уроку; лекція передає свій єдиний канал. */
+  channelName?: string;
 };
 
-export function ExerciseCard({ exercise, lessonSlug, index, studentId, studentName }: Props) {
+export function ExerciseCard({ exercise, lessonSlug, index, studentId, studentName, channelName }: Props) {
   const [mcValue, setMcValue] = useState<number | null>(null);
   const [textValue, setTextValue] = useState('');
   const [matchValue, setMatchValue] = useState<Record<string, string>>({});
@@ -30,18 +32,20 @@ export function ExerciseCard({ exercise, lessonSlug, index, studentId, studentNa
 
   const channelRef = useRef<RealtimeChannel | null>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const resolvedChannel = channelName ?? `lesson-draft-${lessonSlug}`;
 
   // Приватний канал: цей учень тільки НАДСИЛАЄ, ніколи не слухає (див. RLS
-  // у supabase/migrations/0002_live_monitoring.sql) — інші учні його не почують.
+  // у supabase/migrations/0002_live_monitoring.sql і 0003_lectures.sql) —
+  // інші учні його не почують.
   useEffect(() => {
     const supabase = createClient();
-    const channel = supabase.channel(`lesson-draft-${lessonSlug}`, { config: { private: true } });
+    const channel = supabase.channel(resolvedChannel, { config: { private: true } });
     channel.subscribe();
     channelRef.current = channel;
     return () => {
       supabase.removeChannel(channel);
     };
-  }, [lessonSlug]);
+  }, [resolvedChannel]);
 
   const broadcastDraft = (submitted: boolean, finalResult?: SubmitResult) => {
     if (debounceRef.current) clearTimeout(debounceRef.current);
@@ -52,6 +56,7 @@ export function ExerciseCard({ exercise, lessonSlug, index, studentId, studentNa
         payload: {
           studentId,
           studentName,
+          lessonSlug,
           exerciseId: exercise.id,
           exerciseType: exercise.type,
           answer: buildAnswer(),

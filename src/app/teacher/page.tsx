@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { lessons } from '@/content/lessons';
+import { lectures } from '@/content/lectures';
 import { GradeForm } from './GradeForm';
 
 export default async function TeacherPage() {
@@ -33,6 +34,22 @@ export default async function TeacherPage() {
       <h1 className="mb-8 font-display text-3xl text-paper">Кабінет викладача</h1>
 
       {error && <p className="text-incorrect">Помилка завантаження: {error.message}</p>}
+
+      <section className="mb-12">
+        <h2 className="mb-4 font-display text-xl text-paper">Лекції наживо</h2>
+        <div className="flex flex-wrap gap-2">
+          {lectures.map((lecture) => (
+            <Link
+              key={lecture.slug}
+              href={`/teacher/live/lectures/${lecture.slug}`}
+              className="rounded-lg border border-gold/40 px-4 py-2 text-sm text-gold hover:bg-gold/10"
+            >
+              {lecture.title} →
+            </Link>
+          ))}
+          {lectures.length === 0 && <p className="text-sm text-paper-muted">Ще немає жодної лекції.</p>}
+        </div>
+      </section>
 
       <section className="mb-12">
         <h2 className="mb-4 font-display text-xl text-paper">Наживо</h2>
