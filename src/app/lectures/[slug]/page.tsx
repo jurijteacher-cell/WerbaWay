@@ -4,6 +4,7 @@ import { createClient } from '@/lib/supabase/server';
 import { getLectureBySlug } from '@/content/lectures';
 import { toPublicLecture } from '@/content/types';
 import { LecturePlayer } from './LecturePlayer';
+import { getSubmissionsForLessons } from '@/lib/submissions';
 
 export default async function LecturePage({ params }: { params: { slug: string } }) {
   const lecture = getLectureBySlug(params.slug);
@@ -17,6 +18,10 @@ export default async function LecturePage({ params }: { params: { slug: string }
 
   const { data: profile } = await supabase.from('profiles').select('full_name').eq('id', user.id).single();
   const studentName = profile?.full_name || user.email || 'Учень';
+
+  const lessonSlugs = Array.from(new Set(lecture.sections.map((s) => s.lessonSlug)));
+  const submissions = await getSubmissionsForLessons(user.id, lessonSlugs);
+  const submissionsRecord = Object.fromEntries(submissions);
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-16">
@@ -36,7 +41,12 @@ export default async function LecturePage({ params }: { params: { slug: string }
       )}
 
       <div className={lecture.slug === 'kino' ? '' : 'mt-8'}>
-        <LecturePlayer lecture={toPublicLecture(lecture)} studentId={user.id} studentName={studentName} />
+        <LecturePlayer
+          lecture={toPublicLecture(lecture)}
+          studentId={user.id}
+          studentName={studentName}
+          initialSubmissions={submissionsRecord}
+        />
       </div>
     </main>
   );

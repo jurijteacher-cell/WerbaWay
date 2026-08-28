@@ -10,6 +10,8 @@ import { FillBlank } from './FillBlank';
 import { Matching } from './Matching';
 import { MatchingClick } from './MatchingClick';
 import { OpenText } from './OpenText';
+import type { SavedSubmission } from '@/lib/submission-types';
+import { hydrateAnswerState, isSubmissionLocked, savedToResult } from '@/lib/hydrate-answer';
 
 type SubmitResult =
   | { ok: true; autoGraded: boolean; isCorrect: boolean | null; feedback?: string | null }
@@ -24,14 +26,26 @@ type Props = {
   studentName: string;
   /** Канал трансляції. За замовчуванням — канал уроку; лекція передає свій єдиний канал. */
   channelName?: string;
+  initialSubmission?: SavedSubmission | null;
 };
 
-export function ExerciseCard({ exercise, lessonSlug, index, studentId, studentName, channelName }: Props) {
-  const [mcValue, setMcValue] = useState<number | null>(null);
-  const [textValue, setTextValue] = useState('');
-  const [matchValue, setMatchValue] = useState<Record<string, string>>({});
+export function ExerciseCard({
+  exercise,
+  lessonSlug,
+  index,
+  studentId,
+  studentName,
+  channelName,
+  initialSubmission,
+}: Props) {
+  const hydrated = initialSubmission ? hydrateAnswerState(exercise, initialSubmission) : null;
+  const [mcValue, setMcValue] = useState<number | null>(hydrated?.mcValue ?? null);
+  const [textValue, setTextValue] = useState(hydrated?.textValue ?? '');
+  const [matchValue, setMatchValue] = useState<Record<string, string>>(hydrated?.matchValue ?? {});
   const [status, setStatus] = useState<'idle' | 'submitting'>('idle');
-  const [result, setResult] = useState<SubmitResult | null>(null);
+  const [result, setResult] = useState<SubmitResult | null>(() =>
+    initialSubmission ? savedToResult(initialSubmission) : null
+  );
 
   const channelRef = useRef<RealtimeChannel | null>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -144,7 +158,14 @@ export function ExerciseCard({ exercise, lessonSlug, index, studentId, studentNa
     }
   };
 
-  const locked = result?.ok === true;
+  const locked = isSubmissionLocked(initialSubmission ?? null, result?.ok ? result : null);
+
+  const retry = () => {
+    setMcValue(null);
+    setTextValue('');
+    setMatchValue({});
+    setResult(null);
+  };
 
   return (
     <div className="rounded-xl border border-ink-line bg-ink-raised/50 p-5">
@@ -188,7 +209,7 @@ export function ExerciseCard({ exercise, lessonSlug, index, studentId, studentNa
         />
       )}
 
-      <div className="mt-4 flex items-center gap-4">
+      <div className="mt-4 flex flex-wrap items-center gap-4">
         {!locked && (
           <button
             type="button"
@@ -196,7 +217,17 @@ export function ExerciseCard({ exercise, lessonSlug, index, studentId, studentNa
             disabled={!isAnswered() || status === 'submitting'}
             className="rounded-lg bg-gold px-5 py-2 font-medium text-ink transition-colors hover:bg-gold-bright disabled:cursor-not-allowed disabled:opacity-40"
           >
-            {status === 'submitting' ? 'Надсилаю…' : 'Відповісти'}
+            {status === 'submitting' ? 'Надсилаю…' : initialSubmission ? 'Оновити відповідь' : 'Відповісти'}
+          </button>
+        )}
+
+        {locked && (
+          <button
+            type="button"
+            onClick={retry}
+            className="rounded-lg border border-ink-line px-4 py-2 text-sm text-paper-muted transition-colors hover:border-gold hover:text-gold"
+          >
+            Спробувати знову
           </button>
         )}
 
@@ -210,8 +241,20 @@ export function ExerciseCard({ exercise, lessonSlug, index, studentId, studentNa
             {result.feedback && <p className="text-sm text-paper-muted">{result.feedback}</p>}
           </div>
         )}
-        {result?.ok === true && !result.autoGraded && (
+        {result?.ok === true && !result.autoGraded && result.isCorrect === null && (
           <p className="text-sm text-gold-dim">Прийнято, очікує перевірки викладачем</p>
+        )}
+        {result?.ok === true && !result.autoGraded && result.isCorrect !== null && (
+          <div className="flex flex-col gap-1">
+            <p className={`text-sm font-medium ${result.isCorrect ? 'text-correct' : 'text-incorrect'}`}>
+              {result.isCorrect ? '✓ Зараховано викладачем' : '✕ Не зараховано викладачем'}
+            </p>
+            {result.feedback && (
+              <p className="text-sm text-paper-muted">
+                <span className="font-medium text-gold">Коментар:</span> {result.feedback}
+              </p>
+            )}
+          </div>
         )}
       </div>
     </div>

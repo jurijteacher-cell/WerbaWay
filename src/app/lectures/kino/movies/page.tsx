@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Lightbulb, X, Check } from 'lucide-react';
@@ -14,6 +14,8 @@ import {
 } from '@/content/lessons/movies';
 
 const TOTAL_ROUNDS = 3;
+const MOVIES_STORAGE_KEY = 'werba-movies-progress-v1';
+const MOVIE_COUNT = 6;
 
 // Перевикористовую контент прямо з movies.ts — жодного дублювання питань.
 const POSTER_BY_SLUG: Record<string, string> = {
@@ -36,12 +38,39 @@ const movies = [movieTitanic, movieHarryPotter, movieFrozen, movieHomeAlone, mov
   })
 );
 
+function defaultViewCounts() {
+  return Array.from({ length: MOVIE_COUNT }, () => 0);
+}
+
+function loadViewCounts(): number[] {
+  try {
+    const raw = localStorage.getItem(MOVIES_STORAGE_KEY);
+    if (!raw) return defaultViewCounts();
+    const parsed = JSON.parse(raw) as number[];
+    if (!Array.isArray(parsed) || parsed.length !== MOVIE_COUNT) return defaultViewCounts();
+    return parsed.map((n) => Math.min(TOTAL_ROUNDS, Math.max(0, Number(n) || 0)));
+  } catch {
+    return defaultViewCounts();
+  }
+}
+
 export default function MoviesPracticePage() {
-  const [viewCounts, setViewCounts] = useState<number[]>(() => movies.map(() => 0));
+  const [viewCounts, setViewCounts] = useState<number[]>(defaultViewCounts);
+  const [storageReady, setStorageReady] = useState(false);
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
   const [questionIdx, setQuestionIdx] = useState(0);
   const [answer, setAnswer] = useState('');
   const [showSample, setShowSample] = useState(false);
+
+  useEffect(() => {
+    setViewCounts(loadViewCounts());
+    setStorageReady(true);
+  }, []);
+
+  useEffect(() => {
+    if (!storageReady) return;
+    localStorage.setItem(MOVIES_STORAGE_KEY, JSON.stringify(viewCounts));
+  }, [viewCounts, storageReady]);
 
   const totalDone = viewCounts.reduce((a, b) => a + b, 0);
   const totalTarget = movies.length * TOTAL_ROUNDS;

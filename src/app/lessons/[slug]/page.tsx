@@ -4,6 +4,7 @@ import { createClient } from '@/lib/supabase/server';
 import { getLessonBySlug } from '@/content/lessons';
 import { toPublicLesson } from '@/content/types';
 import { ExerciseCard } from '@/components/exercises/ExerciseCard';
+import { getSubmissionsForLessons, submissionKey } from '@/lib/submissions';
 
 export default async function LessonPage({ params }: { params: { slug: string } }) {
   const lesson = getLessonBySlug(params.slug);
@@ -18,6 +19,7 @@ export default async function LessonPage({ params }: { params: { slug: string } 
   const { data: profile } = await supabase.from('profiles').select('full_name').eq('id', user.id).single();
   const studentName = profile?.full_name || user.email || 'Учень';
 
+  const submissions = await getSubmissionsForLessons(user.id, [lesson.slug]);
   const publicLesson = toPublicLesson(lesson);
 
   return (
@@ -47,6 +49,7 @@ export default async function LessonPage({ params }: { params: { slug: string } 
             index={i}
             studentId={user.id}
             studentName={studentName}
+            initialSubmission={submissions.get(submissionKey(publicLesson.slug, exercise.id)) ?? null}
           />
         ))}
       </div>

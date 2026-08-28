@@ -22,5 +22,6 @@ export async function gradeSubmission(submissionId: string, isCorrect: boolean, 
   }
 
   revalidatePath('/teacher');
+  revalidatePath('/', 'layout');
   return { ok: true as const };
 }

@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { lessons } from '@/content/lessons';
+import { ProgressBadge } from '@/components/ProgressBadge';
+import { countDoneForLesson, getSubmissionRowsForUser } from '@/lib/submissions';
 
 export default async function HomePage() {
   const supabase = createClient();
@@ -13,6 +15,7 @@ export default async function HomePage() {
     redirect('/login');
   }
 
+  const submissionRows = await getSubmissionRowsForUser(user.id);
   const visibleLessons = lessons.filter((l) => !l.hideFromBrowse);
   const categories = Array.from(new Set(visibleLessons.map((l) => l.category || 'Інше')));
 
@@ -38,6 +41,10 @@ export default async function HomePage() {
                   >
                     <h3 className="font-display text-xl text-paper group-hover:text-gold-bright">{lesson.title}</h3>
                     {lesson.subtitle && <p className="mt-1 text-paper-muted">{lesson.subtitle}</p>}
+                    <ProgressBadge
+                      done={countDoneForLesson(lesson.slug, submissionRows)}
+                      total={lesson.exercises.length}
+                    />
                   </Link>
                 ))}
             </div>

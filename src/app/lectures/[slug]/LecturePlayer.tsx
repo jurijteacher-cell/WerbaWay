@@ -6,6 +6,8 @@ import type { RealtimeChannel } from '@supabase/supabase-js';
 import { createClient } from '@/lib/supabase/client';
 import type { PublicLecture } from '@/content/types';
 import { ExerciseCard } from '@/components/exercises/ExerciseCard';
+import type { SavedSubmission } from '@/lib/submission-types';
+import { submissionKey } from '@/lib/submission-types';
 
 type FlatItem = {
   sectionId: string;
@@ -20,10 +22,12 @@ export function LecturePlayer({
   lecture,
   studentId,
   studentName,
+  initialSubmissions = {},
 }: {
   lecture: PublicLecture;
   studentId: string;
   studentName: string;
+  initialSubmissions?: Record<string, SavedSubmission>;
 }) {
   const flat = useMemo<FlatItem[]>(() => {
     let gi = 0;
@@ -92,6 +96,8 @@ export function LecturePlayer({
                   const item = flat.find((f) => f.sectionId === section.id && f.indexInSection === i)!;
                   const isActive = item.globalIndex === activeIndex;
                   const isVisited = visited.has(item.globalIndex);
+                  const saved = initialSubmissions[submissionKey(item.lessonSlug, item.exercise.id)];
+                  const isDone = Boolean(saved);
                   return (
                     <button
                       key={item.exercise.id}
@@ -99,12 +105,14 @@ export function LecturePlayer({
                       className={`rounded-lg border px-3 py-1.5 text-left text-sm transition-colors md:w-full ${
                         isActive
                           ? 'border-gold bg-gold/10 text-gold-bright'
-                          : isVisited
-                            ? 'border-ink-line text-paper/70 hover:border-gold/40'
-                            : 'border-ink-line text-paper-muted hover:border-gold/40'
+                          : isDone
+                            ? 'border-correct/40 text-correct/90 hover:border-gold/40'
+                            : isVisited
+                              ? 'border-ink-line text-paper/70 hover:border-gold/40'
+                              : 'border-ink-line text-paper-muted hover:border-gold/40'
                       }`}
                     >
-                      Завдання {i + 1}
+                      {isDone ? '✓ ' : ''}Завдання {i + 1}
                     </button>
                   );
                 })}
@@ -129,6 +137,7 @@ export function LecturePlayer({
           studentId={studentId}
           studentName={studentName}
           channelName={channelName}
+          initialSubmission={initialSubmissions[submissionKey(active.lessonSlug, active.exercise.id)] ?? null}
         />
 
         <div className="mt-6 flex items-center justify-between">

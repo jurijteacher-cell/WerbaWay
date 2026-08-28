@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { lectures } from '@/content/lectures';
+import { ProgressBadge } from '@/components/ProgressBadge';
+import { getSubmissionRowsForUser } from '@/lib/submissions';
 
 export default async function LecturesPage() {
   const supabase = createClient();
@@ -18,8 +20,21 @@ export default async function LecturesPage() {
   const assignedSlugs = new Set((assignments ?? []).map((a) => a.lecture_slug));
   const assigned = lectures.filter((l) => assignedSlugs.has(l.slug));
   const rest = lectures.filter((l) => !assignedSlugs.has(l.slug));
+  const submissionRows = await getSubmissionRowsForUser(user.id);
 
-  const Card = (lecture: (typeof lectures)[number]) => (
+  const lectureProgress = (lecture: (typeof lectures)[number]) => {
+    const exerciseSlugs = lecture.sections.flatMap((s) =>
+      s.exercises.map((e) => ({ lessonSlug: s.lessonSlug, exerciseId: e.id }))
+    );
+    const done = exerciseSlugs.filter(({ lessonSlug, exerciseId }) =>
+      submissionRows.some((r) => r.lesson_slug === lessonSlug && r.exercise_id === exerciseId)
+    ).length;
+    return { done, total: exerciseSlugs.length };
+  };
+
+  const Card = (lecture: (typeof lectures)[number]) => {
+    const progress = lectureProgress(lecture);
+    return (
     <Link
       key={lecture.slug}
       href={`/lectures/${lecture.slug}`}
@@ -29,10 +44,12 @@ export default async function LecturesPage() {
       {lecture.subtitle && <p className="mt-1 text-paper-muted">{lecture.subtitle}</p>}
       <p className="mt-2 font-mono text-xs uppercase tracking-widest text-gold-dim">
         {lecture.sections.length} {lecture.sections.length === 1 ? 'секція' : 'секцій'} ·{' '}
-        {lecture.sections.reduce((sum, s) => sum + s.exercises.length, 0)} вправ
+        {progress.total} вправ
       </p>
+      <ProgressBadge done={progress.done} total={progress.total} />
     </Link>
-  );
+    );
+  };
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-16">
