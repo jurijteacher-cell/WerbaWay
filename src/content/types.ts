@@ -1,6 +1,16 @@
 // ── "Повні" типи (живуть тільки на сервері — містять правильні відповіді) ──
 
-export type ExerciseType = 'multiple_choice' | 'fill_blank' | 'matching' | 'open_text' | 'listening';
+export type ExerciseType =
+  | 'multiple_choice'
+  | 'fill_blank'
+  | 'matching'
+  | 'open_text'
+  | 'listening'
+  /** Content-queue / embed types (Notion pipeline) */
+  | 'vocab_cards'
+  | 'picture_set'
+  | 'flip_task'
+  | 'sentence_building';
 
 interface BaseExercise {
   id: string;

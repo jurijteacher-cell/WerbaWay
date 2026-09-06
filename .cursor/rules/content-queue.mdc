@@ -1,0 +1,31 @@
+---
+description: Process content-queue pending lectures/exercises — images, LMS embeds, Notion publish
+alwaysApply: true
+---
+
+# Content-queue processing (Werba Way)
+
+You own the organizational pipeline for new lessons in `CONTENT_SPEC.md` format. Claude/Yura own content only. Do not rewrite lesson wording.
+
+## Trigger
+
+New files in `content-queue/lectures/pending/` or `content-queue/exercises/pending/` → process autonomously (except delete/overwrite of already published content — ask first).
+
+## Pipeline
+
+1. Validate frontmatter/json and required `image_keywords` / `header_image_keywords`.
+2. Resolve all `[IMAGE: ...]` and `image_keywords` via stock photos → `public/content/<lesson_id>/`.
+3. Publish interactive exercises as public LMS embeds under `/embed/[lessonId]/{vocab|pictures|comm-tasks|grammar|hw}`.
+4. Publish Notion lecture page under module parent from `module_map.json` (Werba Way → module). Section order: reading → questions → vocab → conversation → pictures → flip-task → grammar → summary → homework.
+5. Move files pending → published; append `_manifest.json`; `git commit -m "content: <lesson_id>"` && `git push`.
+
+## Exercise types (templates, one each)
+
+`fill-in-blank`, `sentence-building`, `drag-and-drop`, `matching`, `vocab-cards`, `picture-set`, `flip-task` (+ existing LMS types). Do not vary layout per lesson.
+
+## Hard limits
+
+- Never edit Claude’s text, questions, or tasks — only layout, images, embeds.
+- Invalid/incomplete pending content → leave in pending, log reason, do not publish.
+- Do not delete `published/` or rewrite `_manifest.json` retroactively without explicit instruction.
+- Notion embeds must use public (no-auth) embed URLs.

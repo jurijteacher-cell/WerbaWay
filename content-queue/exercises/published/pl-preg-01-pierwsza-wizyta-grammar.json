@@ -1,0 +1,64 @@
+{
+  "lesson_id": "pl-preg-01-pierwsza-wizyta",
+  "exercise_type": "matching",
+  "title": "Czasowniki modalne — piramida ćwiczeń",
+  "instructions": "Ćwiczenia idą od najłatwiejszego do najtrudniejszego. Wykonuj po kolei.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Rozpoznawanie",
+      "task_type": "matching",
+      "items": [
+        { "id": 1, "prompt": "Muszę", "answer": "obowiązek" },
+        { "id": 2, "prompt": "Mogę", "answer": "możliwość / pozwolenie" },
+        { "id": 3, "prompt": "Powinnaś", "answer": "rada" }
+      ]
+    },
+    {
+      "level": 2,
+      "name": "Uzupełnianie",
+      "task_type": "fill-in-blank",
+      "items": [
+        { "id": 1, "sentence": "Przed wizytą ___ (musieć, ja) zrobić badanie krwi.", "answer": "muszę" },
+        { "id": 2, "sentence": "Czy ___ (móc, ja) zadać pytanie?", "answer": "mogę" },
+        { "id": 3, "sentence": "___ (powinien, ty - kobieta) odpocząć po wizycie.", "answer": "powinnaś" }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "Budowanie zdań",
+      "task_type": "sentence-building",
+      "items": [
+        { "id": 1, "words": ["wyniki", "zapytać", "o", "powinnam", "lekarza"], "answer": "Powinnam zapytać lekarza o wyniki." },
+        { "id": 2, "words": ["skierowanie", "muszę", "wziąć", "na badanie"], "answer": "Muszę wziąć skierowanie na badanie." }
+      ]
+    },
+    {
+      "level": 4,
+      "name": "Produkcja swobodna",
+      "task_type": "open-answer",
+      "items": [
+        { "id": 1, "prompt": "Napisz zdanie: co powinnaś zrobić przed następną wizytą u lekarza?" },
+        { "id": 2, "prompt": "Napisz zdanie: o co możesz zapytać lekarza, jeśli czegoś nie rozumiesz?" }
+      ]
+    },
+    {
+      "level": 5,
+      "name": "Wyjątki osobno",
+      "task_type": "fill-in-blank",
+      "items": [
+        { "id": 1, "sentence": "My ___ (móc) przyjść razem na wizytę.", "answer": "możemy" },
+        { "id": 2, "sentence": "Oni ___ (musieć) czekać w kolejce.", "answer": "muszą" },
+        { "id": 3, "sentence": "On ___ (powinien) zadzwonić do przychodni.", "answer": "powinien" }
+      ]
+    },
+    {
+      "level": 6,
+      "name": "Połączenie wszystkiego",
+      "task_type": "open-answer",
+      "items": [
+        { "id": 1, "prompt": "Opisz w 3-4 zdaniach, co musisz, możesz i powinnaś zrobić przed porodem, używając wszystkich trzech czasowników." }
+      ]
+    }
+  ]
+}
