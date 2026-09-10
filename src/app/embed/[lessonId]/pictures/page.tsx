@@ -12,6 +12,7 @@ export default function EmbedPicturesPage({ params }: Props) {
     <PictureSet
       title={pictures.title}
       instructions={pictures.instructions}
+      phrase_bank={pictures.phrase_bank}
       items={pictures.items}
     />
   );

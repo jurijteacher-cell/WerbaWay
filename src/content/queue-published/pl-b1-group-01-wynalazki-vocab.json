@@ -1,12 +1,20 @@
 {
   "lesson_id": "pl-b1-group-01-wynalazki",
   "exercise_type": "vocab-cards",
-  "title": "Słownictwo: wynalazki i technika",
-  "instruction": "Przeczytaj definicję, powiedz słowo na głos i ułóż z nim własne zdanie.",
-  "estimated_minutes": 13,
+  "title": "Słownictwo: wynalazki, energia, technika",
+  "instruction": "38 słów w pięciu grupach. Przeczytaj definicję, powiedz słowo na głos i ułóż z nim własne zdanie — najlepiej w stronie biernej.",
+  "estimated_minutes": 22,
+  "groups": [
+    "Wynalazki i nauka",
+    "Elektryczność i energia",
+    "Radio i internet",
+    "Silniki i transport",
+    "Serwis i reklamacja"
+  ],
   "items": [
     {
       "term": "wynalazek",
+      "group": "Wynalazki i nauka",
       "part_of_speech": "rzeczownik, m.",
       "definition": "Nowe urządzenie lub rozwiązanie, którego wcześniej nie było.",
       "example": "Koło to prawdopodobnie najważniejszy wynalazek w historii.",
@@ -14,41 +22,119 @@
     },
     {
       "term": "wynalazca",
+      "group": "Wynalazki i nauka",
       "part_of_speech": "rzeczownik, m.",
       "definition": "Człowiek, który tworzy coś zupełnie nowego.",
       "example": "Do dziś nie wiadomo, kto był prawdziwym wynalazcą radia.",
       "translation_uk": "винахідник"
     },
     {
+      "term": "odkrycie",
+      "group": "Wynalazki i nauka",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Znalezienie czegoś, co istniało wcześniej, ale nikt o tym nie wiedział.",
+      "example": "Odkrycie penicyliny uratowało miliony ludzi.",
+      "translation_uk": "відкриття"
+    },
+    {
+      "term": "urządzenie",
+      "group": "Wynalazki i nauka",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Przedmiot zbudowany po to, żeby wykonywać konkretną pracę.",
+      "example": "To urządzenie jest zasilane z baterii.",
+      "translation_uk": "пристрій"
+    },
+    {
       "term": "przełomowy",
+      "group": "Wynalazki i nauka",
       "part_of_speech": "przymiotnik",
       "definition": "Taki, który całkowicie zmienia sytuację i dzieli historię na „przed” i „po”.",
       "example": "To była przełomowa decyzja dla całej branży.",
       "translation_uk": "проривний, переломний"
     },
     {
+      "term": "przełom",
+      "group": "Wynalazki i nauka",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Moment, w którym coś zmienia się radykalnie i nie da się już wrócić do starego.",
+      "example": "Prawdziwy przełom przyszedł dopiero w 1991 roku.",
+      "translation_uk": "прорив, переломний момент"
+    },
+    {
       "term": "opatentować",
+      "group": "Wynalazki i nauka",
       "part_of_speech": "czasownik, dk.",
       "definition": "Oficjalnie zarejestrować wynalazek, żeby nikt inny nie mógł go używać bez zgody.",
       "example": "Benz opatentował swój samochód w 1886 roku.",
       "translation_uk": "запатентувати"
     },
     {
+      "term": "patent",
+      "group": "Wynalazki i nauka",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Dokument, który daje wyłączne prawo do korzystania z wynalazku.",
+      "example": "Spór o patent trwał w sądzie ponad dwadzieścia lat.",
+      "translation_uk": "патент"
+    },
+    {
+      "term": "prototyp",
+      "group": "Wynalazki i nauka",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Pierwsza, próbna wersja urządzenia — jeszcze nie do sprzedaży.",
+      "example": "Prototyp był testowany przez cały rok.",
+      "translation_uk": "прототип, дослідний зразок"
+    },
+    {
+      "term": "upowszechnić się",
+      "group": "Wynalazki i nauka",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Stać się powszechnym, dostępnym dla wszystkich, a nie tylko dla wąskiej grupy.",
+      "example": "Telefony komórkowe upowszechniły się dopiero w latach dziewięćdziesiątych.",
+      "translation_uk": "поширитися, стати загальнодоступним"
+    },
+    {
       "term": "prąd zmienny",
-      "part_of_speech": "wyrażenie",
+      "group": "Elektryczność i energia",
+      "part_of_speech": "wyrażenie, m.",
       "definition": "Rodzaj prądu, który wielokrotnie zmienia kierunek; można go przesyłać na duże odległości.",
       "example": "Dzięki prądowi zmiennemu energia jest przesyłana z elektrowni do miast.",
       "translation_uk": "змінний струм"
     },
     {
-      "term": "fale radiowe",
-      "part_of_speech": "wyrażenie, lm.",
-      "definition": "Niewidzialne fale, które przenoszą dźwięk i dane bez kabli.",
-      "example": "Pierwsze fale radiowe zostały wysłane przez ocean w 1901 roku.",
-      "translation_uk": "радіохвилі"
+      "term": "prąd stały",
+      "group": "Elektryczność i energia",
+      "part_of_speech": "wyrażenie, m.",
+      "definition": "Prąd płynący zawsze w jednym kierunku — taki jak w baterii.",
+      "example": "Edison do końca bronił prądu stałego.",
+      "translation_uk": "постійний струм"
+    },
+    {
+      "term": "elektrownia",
+      "group": "Elektryczność i energia",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Zakład, w którym wytwarza się energię elektryczną.",
+      "example": "Elektrownię przy Niagarze uruchomiono w 1895 roku.",
+      "translation_uk": "електростанція"
+    },
+    {
+      "term": "energia jądrowa",
+      "group": "Elektryczność i energia",
+      "part_of_speech": "wyrażenie, ż.",
+      "definition": "Energia otrzymywana z rozszczepienia jąder atomowych.",
+      "example": "We Francji energia jądrowa pokrywa większość zapotrzebowania na prąd.",
+      "translation_uk": "ядерна енергія"
+    },
+    {
+      "term": "zasilać",
+      "group": "Elektryczność i energia",
+      "part_of_speech": "czasownik, ndk.",
+      "definition": "Dostarczać urządzeniu energię, żeby mogło pracować.",
+      "example": "Ten silnik jest zasilany prądem, a nie benzyną.",
+      "translation_uk": "живити (енергією)"
     },
     {
       "term": "przesyłać",
+      "group": "Elektryczność i energia",
       "part_of_speech": "czasownik, ndk.",
       "definition": "Wysyłać coś z jednego miejsca do drugiego — energię, dane, informację.",
       "example": "Ta linia przesyła prąd na odległość dwustu kilometrów.",
@@ -56,52 +142,179 @@
     },
     {
       "term": "uruchomić",
+      "group": "Elektryczność i energia",
       "part_of_speech": "czasownik, dk.",
       "definition": "Sprawić, że urządzenie albo instalacja zaczyna działać.",
       "example": "Elektrownię uruchomiono dokładnie sto lat temu.",
       "translation_uk": "запустити, ввести в дію"
     },
     {
+      "term": "zużycie",
+      "group": "Elektryczność i energia",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Ilość energii, paliwa albo wody, którą coś pochłania w danym czasie.",
+      "example": "Nowa lodówka ma o połowę niższe zużycie prądu.",
+      "translation_uk": "споживання, витрата"
+    },
+    {
+      "term": "fale radiowe",
+      "group": "Radio i internet",
+      "part_of_speech": "wyrażenie, lm.",
+      "definition": "Niewidzialne fale, które przenoszą dźwięk i dane bez kabli.",
+      "example": "Pierwsze fale radiowe zostały wysłane przez ocean w 1901 roku.",
+      "translation_uk": "радіохвилі"
+    },
+    {
+      "term": "nadajnik",
+      "group": "Radio i internet",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Urządzenie, które wysyła sygnał w przestrzeń.",
+      "example": "Nadajnik na wzgórzu obsługuje całą okolicę.",
+      "translation_uk": "передавач"
+    },
+    {
+      "term": "odbiornik",
+      "group": "Radio i internet",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Urządzenie, które odbiera sygnał i zamienia go w dźwięk lub obraz.",
+      "example": "W muzeum stoi odbiornik radiowy z lat trzydziestych.",
+      "translation_uk": "приймач"
+    },
+    {
+      "term": "sygnał",
+      "group": "Radio i internet",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Informacja wysłana na odległość — dźwiękiem, światłem albo falą.",
+      "example": "Sygnał został odebrany po drugiej stronie oceanu.",
+      "translation_uk": "сигнал"
+    },
+    {
+      "term": "zasięg",
+      "group": "Radio i internet",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Odległość, na jaką dociera sygnał; też: obszar, gdzie coś działa.",
+      "example": "W górach nie mam zasięgu, więc zadzwonię wieczorem.",
+      "translation_uk": "покриття, зона дії"
+    },
+    {
+      "term": "sieć",
+      "group": "Radio i internet",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Połączone ze sobą komputery, drogi albo sklepy tworzące jeden system.",
+      "example": "Pierwsza sieć komputerowa łączyła tylko cztery uniwersytety.",
+      "translation_uk": "мережа"
+    },
+    {
+      "term": "przeglądarka",
+      "group": "Radio i internet",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Program, dzięki któremu oglądamy strony internetowe.",
+      "example": "Pierwsza graficzna przeglądarka została stworzona w 1993 roku.",
+      "translation_uk": "браузер"
+    },
+    {
       "term": "wdrożyć",
+      "group": "Radio i internet",
       "part_of_speech": "czasownik, dk.",
       "definition": "Wprowadzić nową technologię albo zasadę do codziennego użytku.",
       "example": "Nowy standard został wdrożony we wszystkich fabrykach.",
       "translation_uk": "впровадити"
     },
     {
-      "term": "zasilać",
-      "part_of_speech": "czasownik, ndk.",
-      "definition": "Dostarczać urządzeniu energię, żeby mogło pracować.",
-      "example": "Ten silnik jest zasilany prądem, a nie benzyną.",
-      "translation_uk": "живити (енергією)"
-    },
-    {
       "term": "silnik spalinowy",
+      "group": "Silniki i transport",
       "part_of_speech": "wyrażenie, m.",
       "definition": "Silnik, w którym paliwo spala się wewnątrz i zamienia w ruch.",
       "example": "Silniki spalinowe były produkowane w tej fabryce do 2019 roku.",
       "translation_uk": "двигун внутрішнього згоряння"
     },
     {
+      "term": "silnik wysokoprężny",
+      "group": "Silniki i transport",
+      "part_of_speech": "wyrażenie, m.",
+      "definition": "Silnik Diesla — cięższy i głośniejszy, ale bardziej oszczędny.",
+      "example": "Ciężarówki są napędzane silnikami wysokoprężnymi.",
+      "translation_uk": "дизельний двигун"
+    },
+    {
       "term": "paliwo",
+      "group": "Silniki i transport",
       "part_of_speech": "rzeczownik, n.",
-      "definition": "Substancja, którą się spala, żeby uzyskać energię — na przykład benzyna albo olej napędowy.",
+      "definition": "Substancja, którą się spala, żeby uzyskać energię.",
       "example": "Ceny paliwa znowu poszły w górę.",
       "translation_uk": "паливо"
     },
     {
+      "term": "benzyna",
+      "group": "Silniki i transport",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Paliwo do zwykłych samochodów osobowych.",
+      "example": "Muszę zatankować benzynę przed wyjazdem.",
+      "translation_uk": "бензин"
+    },
+    {
+      "term": "olej napędowy",
+      "group": "Silniki i transport",
+      "part_of_speech": "wyrażenie, m.",
+      "definition": "Paliwo do silników wysokoprężnych; potocznie: diesel.",
+      "example": "Na tej stacji olej napędowy jest tańszy niż benzyna.",
+      "translation_uk": "дизельне паливо"
+    },
+    {
+      "term": "napędzać",
+      "group": "Silniki i transport",
+      "part_of_speech": "czasownik, ndk.",
+      "definition": "Powodować, że coś się porusza; dawać maszynie siłę do ruchu.",
+      "example": "Ten pociąg jest napędzany silnikiem elektrycznym.",
+      "translation_uk": "приводити в рух"
+    },
+    {
       "term": "wydajny",
+      "group": "Silniki i transport",
       "part_of_speech": "przymiotnik",
       "definition": "Taki, który daje dużo efektu przy małym zużyciu energii, czasu albo pieniędzy.",
       "example": "Diesel jest bardziej wydajny niż silnik benzynowy.",
       "translation_uk": "продуктивний, ефективний"
     },
     {
-      "term": "upowszechnić się",
-      "part_of_speech": "czasownik, dk.",
-      "definition": "Stać się powszechnym, dostępnym dla wszystkich, a nie tylko dla wąskiej grupy.",
-      "example": "Telefony komórkowe upowszechniły się dopiero w latach dziewięćdziesiątych.",
-      "translation_uk": "поширитися, стати загальнодоступним"
+      "term": "awaria",
+      "group": "Serwis i reklamacja",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Nagła przerwa w działaniu urządzenia albo całej sieci.",
+      "example": "Awaria internetu została usunięta dopiero nad ranem.",
+      "translation_uk": "аварія, збій"
+    },
+    {
+      "term": "usterka",
+      "group": "Serwis i reklamacja",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Drobne uszkodzenie — coś działa, ale nie tak, jak powinno.",
+      "example": "Zgłosiłem usterkę i dostałem numer zgłoszenia.",
+      "translation_uk": "несправність, дефект"
+    },
+    {
+      "term": "naprawa",
+      "group": "Serwis i reklamacja",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Doprowadzenie zepsutej rzeczy do stanu używalności.",
+      "example": "Naprawa potrwa dwa dni i będzie kosztowała trzysta złotych.",
+      "translation_uk": "ремонт"
+    },
+    {
+      "term": "gwarancja",
+      "group": "Serwis i reklamacja",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Obietnica producenta, że przez określony czas naprawi wadliwy towar za darmo.",
+      "example": "Telefon jest jeszcze na gwarancji, więc nic nie zapłacisz.",
+      "translation_uk": "гарантія"
+    },
+    {
+      "term": "reklamacja",
+      "group": "Serwis i reklamacja",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Oficjalna skarga na wadliwy towar lub źle wykonaną usługę.",
+      "example": "Reklamacja zostanie rozpatrzona w ciągu czternastu dni.",
+      "translation_uk": "рекламація, скарга"
     }
   ]
 }

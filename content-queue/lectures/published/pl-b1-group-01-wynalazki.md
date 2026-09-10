@@ -48,7 +48,7 @@ Pięć wynalazków, pięć różnych historii. Łączy je jedno: żaden z nich n
 
 ## 3. Słownictwo
 
-Nowe słowa z tekstu — definicje, przykłady i wymowa w interaktywnych kartach.
+**38 słów** w pięciu grupach: wynalazki i nauka, elektryczność i energia, radio i internet, silniki i transport, serwis i reklamacja. Przerabiaj grupę po grupie — pełną listę z tłumaczeniami znajdziesz na końcu lekcji, na stronie **Słowniczek**.
 
 [EXERCISE: file="pl-b1-group-01-wynalazki-vocab.json", type="vocab-cards"]
 
@@ -70,7 +70,18 @@ Porozmawiajmy. Nie ma tu dobrych i złych odpowiedzi — jest tylko argument i k
 
 ## 5. Opis zdjęć
 
-Popatrz na przedmioty z przeszłości i porównaj je z ich dzisiejszymi wersjami.
+[BOARD: id="wtedy-i-dzis", title="Wtedy i dziś", layout="collage", style="polaroid-board", label_style="tape", note="sześć par zdjęć w ramkach polaroid, etykieta na skotczu nad parą, karteczki z wyrażeniami rozrzucone po planszy"]
+
+Sześć par: po lewej przedmiot sprzed stu lat, po prawej jego dzisiejsza wersja. Opisz najpierw stary, potem nowy, na końcu — co się między nimi zmieniło.
+
+**Karteczki z wyrażeniami** — sięgaj po nie, kiedy zabraknie ci słów:
+
+- Kiedyś… a dziś…
+- W porównaniu ze starym modelem…
+- Ten model był produkowany w latach…
+- Dziś takie urządzenia są zastępowane przez…
+- Na pierwszy rzut oka widać, że…
+- Największa różnica polega na tym, że…
 
 [EXERCISE: file="pl-b1-group-01-wynalazki-pictures.json", type="picture-set"]
 
@@ -86,65 +97,151 @@ Cztery sytuacje, w których trzeba zadzwonić, zapytać i dogadać się. Odwró�
 
 ## 7. Gramatyka: strona bierna
 
-W stronie **czynnej** ważne jest, **kto coś robi**:
+[BOARD: id="strona-bierna", title="Strona bierna — tablica", layout="cards", columns="3", style="whiteboard", note="każdy nagłówek H3 = osobna karta na tablicy, numer w kółku = numer karty"]
+
+### ① Po co komu strona bierna
+
+W stronie **czynnej** najważniejsze jest, **kto działa**:
 > Marconi wysłał sygnał przez ocean.
 
-W stronie **biernej** ważne jest, **co się stało** — wykonawca schodzi na drugi plan albo znika zupełnie:
-> Sygnał **został wysłany** przez ocean.
+W stronie **biernej** najważniejsze jest, **co się stało** — wykonawca schodzi na drugi plan albo znika:
+> Sygnał został wysłany przez ocean.
 
-Dlatego strona bierna króluje w tekstach o historii, nauce i technice. Buduje się ją z dwóch elementów:
+**Gdzie ją spotkasz:** historia i nauka, instrukcje obsługi, pisma urzędowe, wiadomości, reklamacje. Wszędzie tam, gdzie wynik jest ważniejszy od sprawcy.
 
-> **być / zostać** + **imiesłów bierny**
+### ② Wzór
 
-### Tabela form
+> **być / zostać** (odmienione) **+ imiesłów bierny**
 
-| Czas i znaczenie | Czasownik posiłkowy | Imiesłów bierny | Przykład |
-|---|---|---|---|
-| **Teraźniejszy** — stan lub proces trwający dziś | jest / są | używany, budowany | Internet **jest używany** na całym świecie. |
-| **Przeszły — fakt dokonany** (jednorazowa, zakończona czynność) | został / została / zostało / zostały | wynaleziony, opublikowany | Radio **zostało wynalezione** pod koniec XIX wieku. |
-| **Przeszły — proces lub stan** (trwanie, powtarzalność) | był / była / było / były | produkowany, oświetlany | Ten model **był produkowany** przez dwadzieścia lat. |
-| **Przyszły — fakt dokonany** | zostanie / zostaną | zaprezentowany, wdrożony | Nowy silnik **zostanie zaprezentowany** jutro. |
-| **Przyszły — proces** | będzie / będą | testowany, badany | Prototyp **będzie testowany** przez cały rok. |
+- Radio **zostało wynalezione**.
+- Internet **jest używany**.
+- Prototyp **będzie testowany**.
 
-Wykonawcę czynności dodajemy przez konstrukcję **przez + biernik**:
-> Elektrownia została zbudowana **przez Teslę**. — Sygnał został odebrany **przez inżynierów**.
+Kolejność w zdaniu: *podmiot → być/zostać → imiesłów → przez kogo → reszta*.
 
-### Jak powstaje imiesłów bierny
+### ③ Imiesłów bierny — trzy końcówki
 
-| Bezokolicznik | Końcówka | Imiesłów bierny |
+| Skąd | Końcówka | Przykłady |
 |---|---|---|
-| budować, używać, produkować | **-any** | budowany, używany, produkowany |
-| stworzyć, wynaleźć, uruchomić | **-ony** | stworzony, wynaleziony, uruchomiony |
-| odkryć, zamknąć, rozwinąć | **-ty** | odkryty, zamknięty, rozwinięty |
+| czasowniki na **-ać, -ować** | **-any** | budować → budowany, używać → używany, produkować → produkowany, zaprezentować → zaprezentowany |
+| czasowniki na **-ić, -yć, -eć** i z tematem spółgłoskowym | **-ony** | stworzyć → stworzony, uruchomić → uruchomiony, wynaleźć → wynaleziony, znieść → zniesiony |
+| krótkie czasowniki na **-ąć, -uć, -yć, -ić** | **-ty** | zamknąć → zamknięty, rozwinąć → rozwinięty, odkryć → odkryty, wypić → wypity |
 
-Imiesłów zachowuje się jak przymiotnik — **dopasowuje się do rodzaju i liczby**:
-> silnik został zbudowa**ny** · fabryka została zbudowa**na** · radio zostało zbudowa**ne** · maszyny zostały zbudowa**ne**
+**Uwaga na wymianę spółgłoski** przy -ony: *zaprosić → zaproszony*, *wozić → wożony*, *płacić → płacony*, *rzucić → rzucony*.
 
-### Wyjątki i pułapki
+### ④ Imiesłów to przymiotnik — odmienia się
 
-**1. Nieregularne imiesłowy — trzeba je zapamiętać:**
+| Rodzaj / liczba | Forma | Przykład |
+|---|---|---|
+| męski | zbudowa**ny** | silnik został zbudowany |
+| żeński | zbudowa**na** | fabryka została zbudowana |
+| nijaki | zbudowa**ne** | radio zostało zbudowane |
+| niemęskoosobowy (rzeczy) | zbudowa**ne** | maszyny zostały zbudowane |
+| **męskoosobowy** (ludzie) | zbudowa**ni** / zaprosze**ni** | inżynierowie zostali zaproszeni |
+
+Imiesłów odmienia się też **przez przypadki**, gdy stoi przy rzeczowniku:
+> samochód **wyprodukowany** w 1990 roku · o **wynalezionym** urządzeniu · na **zamkniętej** stacji
+
+### ⑤ Był czy został — najważniejszy wybór
+
+| | **BYŁ / BYŁA / BYŁO / BYŁY** | **ZOSTAŁ / ZOSTAŁA / ZOSTAŁO / ZOSTAŁY** |
+|---|---|---|
+| znaczenie | proces, trwanie, powtarzalność, stan | jednorazowa, zakończona czynność; fakt |
+| aspekt czasownika | niedokonany | dokonany |
+| sygnały w zdaniu | przez rok, codziennie, latami, zawsze, wtedy | w 1895 roku, wczoraj, nagle, wreszcie, w końcu |
+| przykład | Most **był budowany** przez trzy lata. | Most **został zbudowany** w 2019 roku. |
+
+Ta sama sytuacja, dwa spojrzenia:
+> Elektrownia **była budowana** pięć lat. *(jak długo trwało)*
+> Elektrownia **została uruchomiona** w maju. *(kiedy się skończyło)*
+
+### ⑥ Wszystkie czasy w jednej tabeli
+
+| Czas | Proces (niedokonany) | Fakt (dokonany) |
+|---|---|---|
+| teraźniejszy | Dom **jest budowany**. | — (po polsku nie ma) |
+| przeszły | Dom **był budowany**. | Dom **został zbudowany**. |
+| przyszły | Dom **będzie budowany**. | Dom **zostanie zbudowany**. |
+
+Zapamiętaj lukę: **czasownik zostać nie ma formy teraźniejszej** w tym znaczeniu. Dla teraźniejszości zawsze *jest / są*.
+
+### ⑦ Kto to zrobił: przez + biernik
+
+**Sprawca** — zawsze **przez + biernik**:
+> Elektrownia została zbudowana **przez Teslę**. · Sygnał został odebrany **przez inżynierów**.
+
+**Narzędzie albo środek** — **narzędnik, bez przez**:
+> Dokument został podpisany **długopisem**. · Miasto zostało oświetlone **prądem zmiennym**.
+
+**Siła natury** — obie formy działają:
+> Dach został zerwany **przez wiatr** / **wiatrem**.
+
+Sprawcę można po prostu pominąć, jeśli jest nieznany albo nieważny: *Telefon został skradziony.*
+
+### ⑧ Polski skrót: forma -no / -to
+
+Najczęstsza forma w tekstach historycznych. Zdanie **nie ma podmiotu** — nikt nie odpowiada za czynność.
+
+> Elektrownię **uruchomiono** w 1895 roku. · Protokoły **wdrożono** w 1983 roku. · Pierwsze próby **przeprowadzono** na pustyni.
+
+**Jak zrobić:** bierzesz czas przeszły, rodzaj męski, i zamieniasz końcówkę na -o.
+*zbudował → zbudowano · wynalazł → wynaleziono · zaczął → zaczęto · wziął → wzięto · otworzył → otwarto*
+
+**Dwie zasady:**
+- przedmiot stoi w **bierniku**: *Elektrowni**ę** uruchomiono* (nie „elektrownia”);
+- w przeczeniu biernik zmienia się w **dopełniacz**: *Nie wybudowano t**ego** most**u**.*
+
+Forma istnieje tylko dla przeszłości — nie ma jej w czasie teraźniejszym ani przyszłym.
+
+### ⑨ Wersja z „się”
+
+Trzecia droga, najbardziej potoczna:
+> Tu **buduje się** nowy most. · Chleb **sprzedaje się** dobrze. · Takich rzeczy **nie robi się** w pracy.
+
+Różnica wobec -no/-to: tutaj rzecz jest **podmiotem w mianowniku** i czasownik się z nią zgadza (*most się buduje*, *domy się budują*).
+
+### ⑩ Przeczenie — uwaga na przypadek
+
+To pułapka, bo w stronie czynnej i biernej działa odwrotnie:
+
+| | zdanie | przypadek |
+|---|---|---|
+| czynna | Nie zbudowali **mostu**. | dopełniacz |
+| -no / -to | Nie zbudowano **mostu**. | dopełniacz |
+| **bierna** | **Most** nie został zbudowany. | **mianownik** |
+
+W stronie biernej *most* jest podmiotem, więc przeczenie go nie rusza.
+
+### ⑪ Czego nie da się przekształcić
+
+Nie tworzą strony biernej:
+- **czasowniki nieprzechodnie** (bez biernika): iść, spać, rosnąć, pracować, istnieć, siedzieć;
+- **czasowniki zwrotne**: uczyć się, interesować się, rozwijać się, bać się;
+- **grupa częstych wyjątków**: mieć, móc, chcieć, woleć, kosztować, ważyć, potrzebować.
+
+> ~~Rower był miany przez Adama.~~ → **Adam miał rower.**
+> ~~Bilet był kosztowany 20 złotych.~~ → **Bilet kosztował 20 złotych.**
+
+### ⑫ Nieregularne imiesłowy do zapamiętania
 
 | wziąć → **wzięty** | otworzyć → **otwarty** | znaleźć → **znaleziony** |
 |---|---|---|
-| przynieść → **przyniesiony** | zacząć → **zaczęty** | zapomnieć → **zapomniany** |
+| wynaleźć → **wynaleziony** | przynieść → **przyniesiony** | wieźć → **wieziony** |
+| zacząć → **zaczęty** | zapomnieć → **zapomniany** | zaprosić → **zaproszony** |
 | jeść → **jedzony** | pić → **pity** | myć → **myty** |
 
-Uwaga na parę: *otworzyć* daje **otwarty**, nie „otworzony”.
+Najczęstszy błąd: *otworzyć* daje **otwarty**, nigdy „otworzony”.
 
-**2. Nie wszystkie czasowniki tworzą stronę bierną.** Nie tworzą jej:
-- czasowniki nieprzechodnie, czyli takie, po których nie stoi biernik: *iść, spać, rosnąć, pracować, istnieć*;
-- czasowniki zwrotne: *uczyć się, interesować się, rozwijać się*;
-- kilka bardzo częstych czasowników: *mieć, móc, chcieć, woleć, kosztować, ważyć*.
+### ⑬ Pułapki dla mówiących po ukraińsku
 
-Nie powiemy: ~~„Rower był miany przez Adama”~~, tylko: *Adam miał rower*.
-
-**3. Konstrukcja z -no / -to** — bardzo polska i bardzo wygodna, kiedy wykonawca jest nieznany lub nieistotny:
-> Elektrownię **uruchomiono** w 1895 roku. · Protokoły TCP/IP **wdrożono** w 1983 roku. · Pierwsze próby **przeprowadzono** na pustyni.
-
-Zdanie nie ma podmiotu, a przedmiot zostaje w **bierniku** (*elektrownię*, nie „elektrownia”). Formę tworzymy od czasu przeszłego: *wdrożył → wdrożono*, *zaczął → zaczęto*.
-
-**4. Zostać nie ma formy teraźniejszej.** Dla teraźniejszości używamy tylko *jest / są*:
-~~„Internet zostaje używany”~~ → **Internet jest używany**.
+| Nie tak | Tak | Dlaczego |
+|---|---|---|
+| ~~Radio zostało wynaleziony.~~ | Radio zostało **wynalezione**. | imiesłów zgadza się z rodzajem — radio jest nijakie |
+| ~~Inżynierowie zostały zaproszeni.~~ | Inżynierowie **zostali** zaproszeni. | rodzaj męskoosobowy w liczbie mnogiej |
+| ~~Internet zostaje używany.~~ | Internet **jest** używany. | zostać nie ma czasu teraźniejszego |
+| ~~Było zbudowano nowy most.~~ | **Zbudowano** nowy most. / Most **został zbudowany**. | ukraińskie „було збудовано” to po polsku jedna forma, nie dwie |
+| ~~Sygnał został wysłany przez Marconim.~~ | ...**przez Marconiego**. | po przez zawsze biernik, nie narzędnik |
+| ~~Dom jest zbudowany wczoraj.~~ | Dom **został zbudowany** wczoraj. | konkretny moment w przeszłości wymaga zostać |
 
 ---
 
@@ -196,3 +293,72 @@ W tekście musi się znaleźć:
 - kiedy i przez kogo wynalazek został stworzony (dwa zdania w stronie biernej),
 - jak zmienił codzienność zwykłych ludzi,
 - jedno zdanie o tym, co byś w nim poprawił.
+
+---
+
+## Słowniczek
+
+Wszystkie 38 słów lekcji w jednym miejscu. Wracaj tu przed pracą domową i przed następnymi zajęciami.
+
+### Wynalazki i nauka
+
+| Słowo | Tłumaczenie | W zdaniu |
+|---|---|---|
+| **wynalazek** | винахід | Koło to prawdopodobnie najważniejszy wynalazek w historii. |
+| **wynalazca** | винахідник | Do dziś nie wiadomo, kto był prawdziwym wynalazcą radia. |
+| **odkrycie** | відкриття | Odkrycie penicyliny uratowało miliony ludzi. |
+| **urządzenie** | пристрій | To urządzenie jest zasilane z baterii. |
+| **przełomowy** | проривний, переломний | To była przełomowa decyzja dla całej branży. |
+| **przełom** | прорив, переломний момент | Prawdziwy przełom przyszedł dopiero w 1991 roku. |
+| **opatentować** | запатентувати | Benz opatentował swój samochód w 1886 roku. |
+| **patent** | патент | Spór o patent trwał w sądzie ponad dwadzieścia lat. |
+| **prototyp** | прототип, дослідний зразок | Prototyp był testowany przez cały rok. |
+| **upowszechnić się** | поширитися | Telefony komórkowe upowszechniły się w latach dziewięćdziesiątych. |
+
+### Elektryczność i energia
+
+| Słowo | Tłumaczenie | W zdaniu |
+|---|---|---|
+| **prąd zmienny** | змінний струм | Dzięki prądowi zmiennemu energia jest przesyłana na duże odległości. |
+| **prąd stały** | постійний струм | Edison do końca bronił prądu stałego. |
+| **elektrownia** | електростанція | Elektrownię przy Niagarze uruchomiono w 1895 roku. |
+| **energia jądrowa** | ядерна енергія | We Francji energia jądrowa pokrywa większość zapotrzebowania na prąd. |
+| **zasilać** | живити (енергією) | Ten silnik jest zasilany prądem, a nie benzyną. |
+| **przesyłać** | передавати | Ta linia przesyła prąd na odległość dwustu kilometrów. |
+| **uruchomić** | запустити | Elektrownię uruchomiono dokładnie sto lat temu. |
+| **zużycie** | споживання, витрата | Nowa lodówka ma o połowę niższe zużycie prądu. |
+
+### Radio i internet
+
+| Słowo | Tłumaczenie | W zdaniu |
+|---|---|---|
+| **fale radiowe** | радіохвилі | Pierwsze fale radiowe zostały wysłane przez ocean w 1901 roku. |
+| **nadajnik** | передавач | Nadajnik na wzgórzu obsługuje całą okolicę. |
+| **odbiornik** | приймач | W muzeum stoi odbiornik radiowy z lat trzydziestych. |
+| **sygnał** | сигнал | Sygnał został odebrany po drugiej stronie oceanu. |
+| **zasięg** | покриття, зона дії | W górach nie mam zasięgu, więc zadzwonię wieczorem. |
+| **sieć** | мережа | Pierwsza sieć komputerowa łączyła tylko cztery uniwersytety. |
+| **przeglądarka** | браузер | Pierwsza graficzna przeglądarka została stworzona w 1993 roku. |
+| **wdrożyć** | впровадити | Nowy standard został wdrożony we wszystkich fabrykach. |
+
+### Silniki i transport
+
+| Słowo | Tłumaczenie | W zdaniu |
+|---|---|---|
+| **silnik spalinowy** | двигун внутрішнього згоряння | Silniki spalinowe były produkowane tu do 2019 roku. |
+| **silnik wysokoprężny** | дизельний двигун | Ciężarówki są napędzane silnikami wysokoprężnymi. |
+| **paliwo** | паливо | Ceny paliwa znowu poszły w górę. |
+| **benzyna** | бензин | Muszę zatankować benzynę przed wyjazdem. |
+| **olej napędowy** | дизельне паливо | Na tej stacji olej napędowy jest tańszy niż benzyna. |
+| **napędzać** | приводити в рух | Ten pociąg jest napędzany silnikiem elektrycznym. |
+| **wydajny** | продуктивний, ефективний | Diesel jest bardziej wydajny niż silnik benzynowy. |
+
+### Serwis i reklamacja
+
+| Słowo | Tłumaczenie | W zdaniu |
+|---|---|---|
+| **awaria** | аварія, збій | Awaria internetu została usunięta dopiero nad ranem. |
+| **usterka** | несправність, дефект | Zgłosiłem usterkę i dostałem numer zgłoszenia. |
+| **naprawa** | ремонт | Naprawa potrwa dwa dni i będzie kosztowała trzysta złotych. |
+| **gwarancja** | гарантія | Telefon jest jeszcze na gwarancji, więc nic nie zapłacisz. |
+| **reklamacja** | рекламація, скарга | Reklamacja zostanie rozpatrzona w ciągu czternastu dni. |

@@ -5,6 +5,7 @@ export type VocabCardsExercise = {
   exercise_type: 'vocab-cards';
   title: string;
   instructions?: string;
+  groups?: string[];
   items: {
     id: number | string;
     term: string;
@@ -12,8 +13,16 @@ export type VocabCardsExercise = {
     example_sentence: string;
     part_of_speech?: string;
     translation_uk?: string;
+    group?: string;
   }[];
   meta?: { estimated_minutes?: number };
+};
+
+export type PicturePairImage = {
+  role?: string;
+  image_keywords?: string;
+  alt?: string;
+  image_url?: string;
 };
 
 export type PictureSetExercise = {
@@ -22,13 +31,19 @@ export type PictureSetExercise = {
   title: string;
   instructions?: string;
   image_constraints?: string;
+  layout?: string;
+  phrase_bank?: string[];
   items: {
     id: number | string;
-    image_keywords: string;
     question: string;
+    label?: string;
+    note?: string;
+    /** Legacy single-image shape */
+    image_keywords?: string;
     alt?: string;
-    /** Resolved after image pipeline */
     image_url?: string;
+    /** Then/now pair shape */
+    images?: PicturePairImage[];
   }[];
 };
 

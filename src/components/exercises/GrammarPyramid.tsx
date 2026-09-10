@@ -30,54 +30,53 @@ export function GrammarPyramid({ data }: Props) {
   };
 
   return (
-    <div className="space-y-5">
-      <header>
-        <h1 className="font-display text-2xl text-gold">{data.title}</h1>
-        {data.instructions && <p className="mt-1 text-sm text-paper-muted">{data.instructions}</p>}
-        <p className="mt-2 text-xs uppercase tracking-wide text-gold-dim">
+    <div>
+      <header className="nb-head">
+        <p className="nb-eyebrow">gramatyka</p>
+        <h1>{data.title}</h1>
+        {data.instructions ? <p>{data.instructions}</p> : null}
+        <p className="nb-note">
           Poziom {level.level}: {level.name}
         </p>
-        {level.instruction && <p className="mt-1 text-sm text-paper-muted">{level.instruction}</p>}
+        {level.instruction ? <p>{level.instruction}</p> : null}
       </header>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="nb-idx" role="tablist">
         {data.levels.map((l, i) => (
           <button
             key={l.level}
             type="button"
+            role="tab"
+            aria-selected={i === levelIdx}
             onClick={() => setLevelIdx(i)}
-            className={`rounded-lg px-3 py-1 text-xs ${
-              i === levelIdx ? 'bg-gold text-ink' : 'border border-ink-line text-paper-muted'
-            }`}
           >
             {l.level}. {l.name}
           </button>
         ))}
       </div>
 
-      <div className="space-y-4">
+      <div>
         {level.task_type === 'matching' &&
           level.items.map((item) => {
             const k = key(item.id);
+            const fb = feedback[k];
             return (
-              <div key={k} className="rounded-lg border border-ink-line bg-ink-raised p-4">
-                <p className="mb-2 font-medium text-paper">{item.prompt}</p>
-                <div className="flex flex-wrap gap-2">
+              <div key={k} className="nb-panel">
+                <p style={{ margin: '0 0 8px', fontWeight: 700 }}>{item.prompt}</p>
+                <div className="nb-row" style={{ marginTop: 0 }}>
                   <input
+                    className={`nb-blank${fb === true ? ' ok' : ''}${fb === false ? ' no' : ''}`}
                     value={matchAnswers[k] ?? ''}
                     onChange={(e) => setMatchAnswers((a) => ({ ...a, [k]: e.target.value }))}
                     placeholder="Imiesłów / znaczenie…"
-                    className="min-w-[200px] flex-1 rounded-lg border border-ink-line bg-ink-soft px-3 py-2 text-sm"
                   />
                   <button
                     type="button"
+                    className="nb-btn"
                     onClick={() => check(k, matchAnswers[k] ?? '', item.answer ?? '')}
-                    className="rounded-lg bg-gold px-3 py-2 text-sm font-medium text-ink"
                   >
                     Sprawdź
                   </button>
-                  {feedback[k] === true && <span className="self-center text-correct">✓</span>}
-                  {feedback[k] === false && <span className="self-center text-incorrect">✕</span>}
                 </div>
               </div>
             );
@@ -86,46 +85,42 @@ export function GrammarPyramid({ data }: Props) {
         {level.task_type === 'fill-in-blank' &&
           level.items.map((item) => {
             const k = key(item.id);
+            const fb = feedback[k];
             return (
-              <div key={k} className="rounded-lg border border-ink-line bg-ink-raised p-4">
-                <p className="mb-2 text-paper">{item.sentence}</p>
+              <div key={k} className="nb-panel">
+                <p style={{ margin: '0 0 8px' }}>{item.sentence}</p>
                 {item.options?.length ? (
-                  <div className="mb-2 flex flex-wrap gap-2">
+                  <div className="nb-row" style={{ marginTop: 0, marginBottom: 8 }}>
                     {item.options.map((opt) => (
                       <button
                         key={opt}
                         type="button"
+                        className={`nb-chip${fillAnswers[k] === opt ? ' sel' : ''}`}
                         onClick={() => setFillAnswers((a) => ({ ...a, [k]: opt }))}
-                        className={`rounded-lg border px-3 py-1 text-sm ${
-                          fillAnswers[k] === opt
-                            ? 'border-gold bg-gold text-ink'
-                            : 'border-ink-line text-paper-muted'
-                        }`}
                       >
                         {opt}
                       </button>
                     ))}
                   </div>
                 ) : null}
-                <div className="flex flex-wrap gap-2">
+                <div className="nb-row" style={{ marginTop: 0 }}>
                   {!item.options?.length && (
                     <input
+                      className={`nb-blank${fb === true ? ' ok' : ''}${fb === false ? ' no' : ''}`}
                       value={fillAnswers[k] ?? ''}
                       onChange={(e) => setFillAnswers((a) => ({ ...a, [k]: e.target.value }))}
-                      className="min-w-[160px] rounded-lg border border-ink-line bg-ink-soft px-3 py-2 text-sm"
                     />
                   )}
                   <button
                     type="button"
+                    className="nb-btn"
                     onClick={() => check(k, fillAnswers[k] ?? '', item.answer ?? '')}
-                    className="rounded-lg bg-gold px-3 py-2 text-sm font-medium text-ink"
                   >
                     Sprawdź
                   </button>
-                  {feedback[k] === true && <span className="self-center text-correct">✓</span>}
-                  {feedback[k] === false && (
-                    <span className="self-center text-sm text-paper-muted">
-                      {item.explanation ?? `✕ (oczekiwane: ${item.answer})`}
+                  {fb === false && (
+                    <span className="nb-note" style={{ margin: 0 }}>
+                      {item.explanation ?? `oczekiwane: ${item.answer}`}
                     </span>
                   )}
                 </div>
@@ -135,7 +130,7 @@ export function GrammarPyramid({ data }: Props) {
 
         {level.task_type === 'sentence-building' &&
           level.items.map((item) => (
-            <div key={key(item.id)} className="rounded-lg border border-ink-line bg-ink-raised p-4">
+            <div key={key(item.id)} className="nb-panel">
               <SentenceBuilding words={item.words ?? []} answer={item.answer ?? ''} />
             </div>
           ))}
@@ -144,28 +139,39 @@ export function GrammarPyramid({ data }: Props) {
           level.items.map((item) => {
             const k = key(item.id);
             const expected = item.answer_hint ?? item.answer;
+            const fb = feedback[k];
             return (
-              <div key={k} className="rounded-lg border border-ink-line bg-ink-raised p-4">
-                <p className="mb-2 text-paper">{item.prompt}</p>
+              <div key={k} className="nb-panel">
+                <p style={{ margin: '0 0 8px' }}>{item.prompt}</p>
                 <textarea
                   value={openAnswers[k] ?? ''}
                   onChange={(e) => setOpenAnswers((a) => ({ ...a, [k]: e.target.value }))}
                   rows={3}
-                  className="w-full rounded-lg border border-ink-line bg-ink-soft px-3 py-2 text-sm"
                   placeholder="Twoja odpowiedź…"
+                  style={{
+                    width: '100%',
+                    font: 'inherit',
+                    border: 0,
+                    borderBottom: '2px dashed var(--nb-ink-soft)',
+                    background: 'rgba(255,255,255,.55)',
+                    padding: '6px 4px',
+                    color: 'var(--nb-ink)',
+                  }}
                 />
                 {expected && (
-                  <div className="mt-2 flex flex-wrap gap-2">
+                  <div className="nb-row">
                     <button
                       type="button"
+                      className="nb-btn"
                       onClick={() => check(k, openAnswers[k] ?? '', expected)}
-                      className="rounded-lg bg-gold px-3 py-2 text-sm font-medium text-ink"
                     >
                       Sprawdź
                     </button>
-                    {feedback[k] === true && <span className="self-center text-correct">✓</span>}
-                    {feedback[k] === false && (
-                      <span className="self-center text-sm text-paper-muted">Podpowiedź: {expected}</span>
+                    {fb === true && <span className="nb-score">Dobra robota!</span>}
+                    {fb === false && (
+                      <span className="nb-note" style={{ margin: 0 }}>
+                        Podpowiedź: {expected}
+                      </span>
                     )}
                   </div>
                 )}

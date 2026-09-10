@@ -11,14 +11,46 @@
       "title": "1. Rozgrzewka: który czasownik posiłkowy?",
       "instruction": "Wstaw właściwą formę: jest, są, był, była, było, były, został, została, zostało, zostały, zostanie, zostaną.",
       "items": [
-        { "id": "g1-1", "text": "Silnik indukcyjny ___ opatentowany w 1888 roku.", "answer": "został" },
-        { "id": "g1-2", "text": "Pierwsza strona WWW ___ opublikowana w 1991 roku.", "answer": "została" },
-        { "id": "g1-3", "text": "Radio ___ wynalezione pod koniec XIX wieku.", "answer": "zostało" },
-        { "id": "g1-4", "text": "Protokoły TCP/IP ___ wdrożone w 1983 roku.", "answer": "zostały" },
-        { "id": "g1-5", "text": "Internet ___ dziś używany przez miliardy ludzi.", "answer": "jest" },
-        { "id": "g1-6", "text": "Te samochody ___ produkowane w Niemczech przez wiele lat.", "answer": "były" },
-        { "id": "g1-7", "text": "Nowy prototyp ___ zaprezentowany na targach w przyszłym miesiącu.", "answer": "zostanie" },
-        { "id": "g1-8", "text": "Stare elektrownie węglowe ___ stopniowo zamykane w całej Europie.", "answer": "są" }
+        {
+          "id": "g1-1",
+          "text": "Silnik indukcyjny ___ opatentowany w 1888 roku.",
+          "answer": "został"
+        },
+        {
+          "id": "g1-2",
+          "text": "Pierwsza strona WWW ___ opublikowana w 1991 roku.",
+          "answer": "została"
+        },
+        {
+          "id": "g1-3",
+          "text": "Radio ___ wynalezione pod koniec XIX wieku.",
+          "answer": "zostało"
+        },
+        {
+          "id": "g1-4",
+          "text": "Protokoły TCP/IP ___ wdrożone w 1983 roku.",
+          "answer": "zostały"
+        },
+        {
+          "id": "g1-5",
+          "text": "Internet ___ dziś używany przez miliardy ludzi.",
+          "answer": "jest"
+        },
+        {
+          "id": "g1-6",
+          "text": "Te samochody ___ produkowane w Niemczech przez wiele lat.",
+          "answer": "były"
+        },
+        {
+          "id": "g1-7",
+          "text": "Nowy prototyp ___ zaprezentowany na targach w przyszłym miesiącu.",
+          "answer": "zostanie"
+        },
+        {
+          "id": "g1-8",
+          "text": "Stare elektrownie węglowe ___ stopniowo zamykane w całej Europie.",
+          "answer": "są"
+        }
       ]
     },
     {
@@ -27,16 +59,56 @@
       "title": "2. Bezokolicznik → imiesłów bierny",
       "instruction": "Połącz czasownik z jego imiesłowem. Cztery ostatnie pary to formy nieregularne.",
       "items": [
-        { "id": "g2-1", "left": "budować", "right": "budowany" },
-        { "id": "g2-2", "left": "produkować", "right": "produkowany" },
-        { "id": "g2-3", "left": "stworzyć", "right": "stworzony" },
-        { "id": "g2-4", "left": "wynaleźć", "right": "wynaleziony" },
-        { "id": "g2-5", "left": "odkryć", "right": "odkryty" },
-        { "id": "g2-6", "left": "zamknąć", "right": "zamknięty" },
-        { "id": "g2-7", "left": "otworzyć", "right": "otwarty" },
-        { "id": "g2-8", "left": "wziąć", "right": "wzięty" },
-        { "id": "g2-9", "left": "przynieść", "right": "przyniesiony" },
-        { "id": "g2-10", "left": "zacząć", "right": "zaczęty" }
+        {
+          "id": "g2-1",
+          "left": "budować",
+          "right": "budowany"
+        },
+        {
+          "id": "g2-2",
+          "left": "produkować",
+          "right": "produkowany"
+        },
+        {
+          "id": "g2-3",
+          "left": "stworzyć",
+          "right": "stworzony"
+        },
+        {
+          "id": "g2-4",
+          "left": "wynaleźć",
+          "right": "wynaleziony"
+        },
+        {
+          "id": "g2-5",
+          "left": "odkryć",
+          "right": "odkryty"
+        },
+        {
+          "id": "g2-6",
+          "left": "zamknąć",
+          "right": "zamknięty"
+        },
+        {
+          "id": "g2-7",
+          "left": "otworzyć",
+          "right": "otwarty"
+        },
+        {
+          "id": "g2-8",
+          "left": "wziąć",
+          "right": "wzięty"
+        },
+        {
+          "id": "g2-9",
+          "left": "przynieść",
+          "right": "przyniesiony"
+        },
+        {
+          "id": "g2-10",
+          "left": "zacząć",
+          "right": "zaczęty"
+        }
       ]
     },
     {
@@ -111,12 +183,36 @@
       "title": "4. Tekst: historia internetu",
       "instruction": "Uzupełnij tekst pełną formą strony biernej. Czasownik podany jest w nawiasie.",
       "items": [
-        { "id": "g5-1", "text": "ARPANET ___ (uruchomić) w 1969 roku.", "answer": "został uruchomiony" },
-        { "id": "g5-2", "text": "Przez pierwsze lata sieć ___ (używać) wyłącznie przez naukowców.", "answer": "była używana" },
-        { "id": "g5-3", "text": "W 1983 roku protokoły TCP/IP ___ (wdrożyć) jako obowiązujący standard.", "answer": "zostały wdrożone" },
-        { "id": "g5-4", "text": "Pierwsza strona WWW ___ (opublikować) w 1991 roku.", "answer": "została opublikowana" },
-        { "id": "g5-5", "text": "Dziś internet ___ (uważać) za jeden z najważniejszych wynalazków w historii.", "answer": "jest uważany" },
-        { "id": "g5-6", "text": "Kolejne standardy sieci ___ (opracować) w ciągu najbliższych lat.", "answer": "zostaną opracowane" }
+        {
+          "id": "g5-1",
+          "text": "ARPANET ___ (uruchomić) w 1969 roku.",
+          "answer": "został uruchomiony"
+        },
+        {
+          "id": "g5-2",
+          "text": "Przez pierwsze lata sieć ___ (używać) wyłącznie przez naukowców.",
+          "answer": "była używana"
+        },
+        {
+          "id": "g5-3",
+          "text": "W 1983 roku protokoły TCP/IP ___ (wdrożyć) jako obowiązujący standard.",
+          "answer": "zostały wdrożone"
+        },
+        {
+          "id": "g5-4",
+          "text": "Pierwsza strona WWW ___ (opublikować) w 1991 roku.",
+          "answer": "została opublikowana"
+        },
+        {
+          "id": "g5-5",
+          "text": "Dziś internet ___ (uważać) za jeden z najważniejszych wynalazków w historii.",
+          "answer": "jest uważany"
+        },
+        {
+          "id": "g5-6",
+          "text": "Kolejne standardy sieci ___ (opracować) w ciągu najbliższych lat.",
+          "answer": "zostaną opracowane"
+        }
       ]
     },
     {
@@ -125,12 +221,66 @@
       "title": "5. Niuans: był czy został?",
       "instruction": "Wybierz właściwą formę. Pamiętaj: BYŁ = proces, trwanie, powtarzalność. ZOSTAŁ = jednorazowy, zakończony fakt.",
       "items": [
-        { "id": "g6-1", "text": "Ta elektrownia ___ budowana przez pięć lat.", "options": ["była", "została"], "answer": "była", "explanation": "Budowa trwała pięć lat — to proces, więc BYŁA." },
-        { "id": "g6-2", "text": "Elektrownia ___ oddana do użytku w maju.", "options": ["była", "została"], "answer": "została", "explanation": "Jednorazowy, zakończony fakt z konkretną datą." },
-        { "id": "g6-3", "text": "W tej fabryce ___ produkowane silniki wysokoprężne.", "options": ["były", "zostały"], "answer": "były", "explanation": "Czynność powtarzalna, trwająca latami." },
-        { "id": "g6-4", "text": "Wszystkie egzemplarze ___ sprzedane w ciągu tygodnia.", "options": ["były", "zostały"], "answer": "zostały", "explanation": "Sprzedaż się zakończyła — mamy wynik, nie proces." },
-        { "id": "g6-5", "text": "Prototyp ___ testowany codziennie przez cały rok.", "options": ["był", "został"], "answer": "był", "explanation": "Słowo „codziennie” zdradza powtarzalność." },
-        { "id": "g6-6", "text": "Wynik testu ___ ogłoszony wczoraj o osiemnastej.", "options": ["był", "został"], "answer": "został", "explanation": "Konkretny moment, jedna czynność." }
+        {
+          "id": "g6-1",
+          "text": "Ta elektrownia ___ budowana przez pięć lat.",
+          "options": [
+            "była",
+            "została"
+          ],
+          "answer": "była",
+          "explanation": "Budowa trwała pięć lat — to proces, więc BYŁA."
+        },
+        {
+          "id": "g6-2",
+          "text": "Elektrownia ___ oddana do użytku w maju.",
+          "options": [
+            "była",
+            "została"
+          ],
+          "answer": "została",
+          "explanation": "Jednorazowy, zakończony fakt z konkretną datą."
+        },
+        {
+          "id": "g6-3",
+          "text": "W tej fabryce ___ produkowane silniki wysokoprężne.",
+          "options": [
+            "były",
+            "zostały"
+          ],
+          "answer": "były",
+          "explanation": "Czynność powtarzalna, trwająca latami."
+        },
+        {
+          "id": "g6-4",
+          "text": "Wszystkie egzemplarze ___ sprzedane w ciągu tygodnia.",
+          "options": [
+            "były",
+            "zostały"
+          ],
+          "answer": "zostały",
+          "explanation": "Sprzedaż się zakończyła — mamy wynik, nie proces."
+        },
+        {
+          "id": "g6-5",
+          "text": "Prototyp ___ testowany codziennie przez cały rok.",
+          "options": [
+            "był",
+            "został"
+          ],
+          "answer": "był",
+          "explanation": "Słowo „codziennie” zdradza powtarzalność."
+        },
+        {
+          "id": "g6-6",
+          "text": "Wynik testu ___ ogłoszony wczoraj o osiemnastej.",
+          "options": [
+            "był",
+            "został"
+          ],
+          "answer": "został",
+          "explanation": "Konkretny moment, jedna czynność."
+        }
       ]
     },
     {
@@ -163,6 +313,50 @@
           "id": "g7-5",
           "prompt": "Pierwsze próby zostały przeprowadzone na pustyni.",
           "answer": "Pierwsze próby przeprowadzono na pustyni."
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "exercise_type": "fill-in-blank",
+      "title": "7. Przeczenie i wersja z „się”",
+      "instruction": "Wstaw właściwą formę. Uwaga na przypadek po przeczeniu.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Tego mostu nie ___ (wybudować) do dziś.",
+          "answer": "wybudowano",
+          "explanation": "Forma -no, a po przeczeniu dopełniacz: tego mostu."
+        },
+        {
+          "id": "g8-2",
+          "text": "Most nie ___ (zbudować) na czas.",
+          "answer": "został zbudowany",
+          "explanation": "W stronie biernej most jest podmiotem, więc zostaje w mianowniku."
+        },
+        {
+          "id": "g8-3",
+          "text": "W tej dzielnicy ___ (budować) się teraz trzy nowe bloki.",
+          "answer": "budują",
+          "explanation": "Czasownik zgadza się z podmiotem w mianowniku: bloki się budują."
+        },
+        {
+          "id": "g8-4",
+          "text": "Takich rzeczy nie ___ (robić) się w pracy.",
+          "answer": "robi",
+          "explanation": "Konstrukcja z się, forma nieosobowa."
+        },
+        {
+          "id": "g8-5",
+          "text": "Elektrowni ___ (nie uruchomić) w zaplanowanym terminie.",
+          "answer": "nie uruchomiono",
+          "explanation": "Przeczenie przy formie -no wymaga dopełniacza: elektrowni."
+        },
+        {
+          "id": "g8-6",
+          "text": "Dokument został podpisany ___ (długopis), a nie ołówkiem.",
+          "answer": "długopisem",
+          "explanation": "Narzędzie to narzędnik, bez przez."
         }
       ]
     }

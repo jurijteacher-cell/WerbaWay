@@ -9,6 +9,11 @@ export default function EmbedVocabPage({ params }: Props) {
   if (!bundle) notFound();
   const { vocab } = bundle;
   return (
-    <VocabCards title={vocab.title} instructions={vocab.instructions} items={vocab.items} />
+    <VocabCards
+      title={vocab.title}
+      instructions={vocab.instructions}
+      items={vocab.items}
+      groups={vocab.groups}
+    />
   );
 }

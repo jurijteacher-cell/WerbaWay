@@ -25,6 +25,7 @@ function normalizeVocab(raw: any): VocabCardsExercise {
     exercise_type: 'vocab-cards',
     title: raw.title,
     instructions: raw.instructions ?? raw.instruction,
+    groups: raw.groups,
     meta: raw.meta ?? (raw.estimated_minutes ? { estimated_minutes: raw.estimated_minutes } : undefined),
     items: (raw.items ?? []).map(
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -35,6 +36,7 @@ function normalizeVocab(raw: any): VocabCardsExercise {
         example_sentence: it.example_sentence ?? it.example ?? '',
         part_of_speech: it.part_of_speech,
         translation_uk: it.translation_uk,
+        group: it.group,
       })
     ),
   };
@@ -48,15 +50,31 @@ function normalizePictures(raw: any): PictureSetExercise {
     title: raw.title,
     instructions: raw.instructions ?? raw.instruction,
     image_constraints: raw.image_constraints,
+    layout: raw.layout,
+    phrase_bank: raw.phrase_bank,
     items: (raw.items ?? []).map(
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (it: any, i: number) => ({
-        id: it.id ?? i + 1,
-        image_keywords: it.image_keywords,
-        question: it.question,
-        alt: it.alt,
-        image_url: it.image_url,
-      })
+      (it: any, i: number) => {
+        const images = Array.isArray(it.images)
+          ? // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            it.images.map((img: any) => ({
+              role: img.role,
+              image_keywords: img.image_keywords,
+              alt: img.alt,
+              image_url: img.image_url,
+            }))
+          : undefined;
+        return {
+          id: it.id ?? i + 1,
+          label: it.label,
+          note: it.note,
+          image_keywords: it.image_keywords ?? images?.[0]?.image_keywords,
+          question: it.question,
+          alt: it.alt ?? images?.[0]?.alt,
+          image_url: it.image_url ?? images?.[0]?.image_url,
+          images,
+        };
+      }
     ),
   };
 }

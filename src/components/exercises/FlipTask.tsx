@@ -15,37 +15,44 @@ type Props = {
   items: Item[];
 };
 
+const COLORS = ['c-y', 'c-m', 'c-s', 'c-c'] as const;
+
 export function FlipTask({ title, instructions, items }: Props) {
   const [flipped, setFlipped] = useState<Record<string, boolean>>({});
 
   return (
-    <div className="space-y-4">
-      <header>
-        <h1 className="font-display text-2xl text-gold">{title}</h1>
-        {instructions && <p className="mt-1 text-sm text-paper-muted">{instructions}</p>}
+    <div>
+      <header className="nb-head">
+        <p className="nb-eyebrow">zadania komunikacyjne</p>
+        <h1>{title}</h1>
+        {instructions ? <p>{instructions}</p> : null}
       </header>
-      <div className="grid gap-4 sm:grid-cols-2">
-        {items.map((item) => {
+
+      <div className="nb-grid">
+        {items.map((item, i) => {
           const key = String(item.id);
           const isBack = flipped[key];
           return (
             <button
               key={key}
               type="button"
+              className={`nb-card ${COLORS[i % COLORS.length]}`}
               onClick={() => setFlipped((prev) => ({ ...prev, [key]: !prev[key] }))}
-              className="min-h-[200px] rounded-xl border border-ink-line bg-ink-raised p-5 text-left transition-colors hover:border-gold"
             >
               {!isBack ? (
-                <p className="font-display text-xl text-paper">{item.front_title}</p>
+                <>
+                  <h3>{item.front_title}</h3>
+                  <div className="peek">kliknij, żeby odwrócić →</div>
+                </>
               ) : (
-                <div className="space-y-3">
-                  <p className="text-sm text-paper">{item.back_scenario}</p>
-                  <ul className="list-disc space-y-1 pl-5 text-sm text-paper-muted">
+                <>
+                  <p style={{ margin: 0 }}>{item.back_scenario}</p>
+                  <ul>
                     {item.back_checklist.map((line) => (
                       <li key={line}>{line}</li>
                     ))}
                   </ul>
-                </div>
+                </>
               )}
             </button>
           );
