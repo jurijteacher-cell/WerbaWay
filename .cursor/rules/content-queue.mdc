@@ -5,7 +5,7 @@ alwaysApply: true
 
 # Content-queue processing (Werba Way)
 
-You own the organizational pipeline for new lessons in `CONTENT_SPEC.md` format. Claude/Yura own content only. Do not rewrite lesson wording.
+You own the organizational pipeline for new lessons in `CONTENT_SPEC.md` format. Claude/Yura own content only. Do not rewrite lesson wording. Full rules: `docs/CURSOR_RULES.md`.
 
 ## Trigger
 
@@ -16,16 +16,32 @@ New files in `content-queue/lectures/pending/` or `content-queue/exercises/pendi
 1. Validate frontmatter/json and required `image_keywords` / `header_image_keywords`.
 2. Resolve all `[IMAGE: ...]` and `image_keywords` via stock photos → `public/content/<lesson_id>/`.
 3. Publish interactive exercises as public LMS embeds under `/embed/[lessonId]/{vocab|pictures|comm-tasks|grammar|hw}`.
-4. Publish Notion lecture page under module parent from `module_map.json` (Werba Way → module). Section order: reading → questions → vocab → conversation → pictures → flip-task → grammar → summary → homework.
+4. Publish Notion lecture page under module parent from `module_map.json`. Section order: reading → questions → vocab → conversation → pictures → flip-task → grammar → summary → homework.
 5. Move files pending → published; append `_manifest.json`; `git commit -m "content: <lesson_id>"` && `git push`.
 
-## Exercise types (templates, one each)
+## Notion embeds — CRITICAL
 
-`fill-in-blank`, `sentence-building`, `drag-and-drop`, `matching`, `vocab-cards`, `picture-set`, `flip-task` (+ existing LMS types). Do not vary layout per lesson.
+Every exercise MUST be a real embed iframe block, NEVER a markdown link:
+
+```
+<embed src="https://werba-way.vercel.app/embed/{lesson_id}/{exercise-type}">Підпис вправи</embed>
+```
+
+FORBIDDEN (publish is incomplete if any remain):
+
+```
+[Otwórz vocab-cards](https://werba-way.vercel.app/embed/...)
+```
+
+Self-check before marking published: no `[Otwórz ...](` in page content. Images must be `![Caption](URL)`, not text links. Grammar as Notion `<table>` block. Videos as `<video src="URL">Caption</video>`, never markdown links.
+
+## Image quality
+
+Reject any stock photo with visible text, signage, watermarks, digital clocks, or UI chrome (any language). Honor `image_constraints` from exercise JSON when present.
 
 ## Hard limits
 
-- Never edit Claude’s text, questions, or tasks — only layout, images, embeds.
-- Invalid/incomplete pending content → leave in pending, log reason, do not publish.
+- Never edit Claude’s text — only layout, images, embeds.
+- Invalid/incomplete pending → leave in pending, log reason.
 - Do not delete `published/` or rewrite `_manifest.json` retroactively without explicit instruction.
 - Notion embeds must use public (no-auth) embed URLs.

@@ -14,6 +14,7 @@ export type PictureSetExercise = {
   exercise_type: 'picture-set';
   title: string;
   instructions?: string;
+  image_constraints?: string;
   items: {
     id: number;
     image_keywords: string;
@@ -43,11 +44,18 @@ export type GrammarPyramidExercise = {
   levels: {
     level: number;
     name: string;
-    task_type: 'matching' | 'fill-in-blank' | 'sentence-building' | 'open-answer' | string;
+    task_type:
+      | 'matching'
+      | 'fill-in-blank'
+      | 'sentence-building'
+      | 'open-answer'
+      | 'text-transform'
+      | string;
     items: Array<{
       id: number;
       prompt?: string;
       answer?: string;
+      answer_hint?: string;
       sentence?: string;
       words?: string[];
     }>;

@@ -1,0 +1,54 @@
+{
+  "lesson_id": "pl-preg-02-kolejne-badania",
+  "exercise_type": "matching",
+  "title": "Aspekt dokonany i niedokonany — piramida ćwiczeń",
+  "instructions": "Ćwiczenia idą od najłatwiejszego do najtrudniejszego. Wykonuj po kolei.",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Rozpoznawanie aspektu",
+      "task_type": "matching",
+      "items": [
+        { "id": 1, "prompt": "robię badanie co miesiąc", "answer": "niedokonany, proces/regularność" },
+        { "id": 2, "prompt": "zrobiłam badanie wczoraj", "answer": "dokonany, zakończona czynność" },
+        { "id": 3, "prompt": "czekam na wyniki", "answer": "niedokonany, w trakcie" },
+        { "id": 4, "prompt": "poczekałam dwie godziny", "answer": "dokonany, zakończone" }
+      ]
+    },
+    {
+      "level": 2,
+      "name": "Uzupełnianie — wybór formy",
+      "task_type": "fill-in-blank",
+      "items": [
+        { "id": 1, "sentence": "Codziennie ___ (brać / wziąć) witaminy.", "answer": "biorę" },
+        { "id": 2, "sentence": "Dziś rano ___ (brać / wziąć) tabletkę na mdłości.", "answer": "wzięłam" },
+        { "id": 3, "sentence": "Lekarz ___ (sprawdzać / sprawdzić) mój wynik i powiedział, że wszystko dobrze.", "answer": "sprawdził" }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "Budowanie zdań: badania Agaty",
+      "task_type": "sentence-building",
+      "items": [
+        { "id": 1, "words": ["USG", "połówkowe", "zrobiłam", "wczoraj"], "answer": "Wczoraj zrobiłam USG połówkowe." },
+        { "id": 2, "words": ["co", "miesiąc", "robię", "morfologię", "krwi"], "answer": "Co miesiąc robię morfologię krwi." }
+      ]
+    },
+    {
+      "level": 4,
+      "name": "Mieszana transformacja tekstu",
+      "task_type": "text-transform",
+      "items": [
+        { "id": 1, "prompt": "Uzupełnij tekst właściwymi formami: 'W ciąży (robić/zrobić) badania co miesiąc. Wczoraj (robić/zrobić) test na cukrzycę ciążową.'", "answer_hint": "W ciąży robię badania co miesiąc. Wczoraj zrobiłam test na cukrzycę ciążową." }
+      ]
+    },
+    {
+      "level": 5,
+      "name": "Produkcja swobodna",
+      "task_type": "open-answer",
+      "items": [
+        { "id": 1, "prompt": "Napisz 2 zdania o swoich badaniach: jedno w aspekcie niedokonanym (co robisz regularnie), jedno w dokonanym (co już zrobiłaś raz)." }
+      ]
+    }
+  ]
+}

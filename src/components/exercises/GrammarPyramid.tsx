@@ -124,9 +124,10 @@ export function GrammarPyramid({ data }: Props) {
             </div>
           ))}
 
-        {level.task_type === 'open-answer' &&
+        {(level.task_type === 'open-answer' || level.task_type === 'text-transform') &&
           level.items.map((item) => {
             const k = key(item.id);
+            const expected = item.answer_hint ?? item.answer;
             return (
               <div key={k} className="rounded-lg border border-ink-line bg-ink-raised p-4">
                 <p className="mb-2 text-paper">{item.prompt}</p>
@@ -137,6 +138,26 @@ export function GrammarPyramid({ data }: Props) {
                   className="w-full rounded-lg border border-ink-line bg-ink-soft px-3 py-2 text-sm"
                   placeholder="Twoja odpowiedź…"
                 />
+                {expected && (
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setFeedback((f) => ({
+                          ...f,
+                          [k]: normalize(openAnswers[k] ?? '') === normalize(expected),
+                        }))
+                      }
+                      className="rounded-lg bg-gold px-3 py-2 text-sm font-medium text-ink"
+                    >
+                      Sprawdź
+                    </button>
+                    {feedback[k] === true && <span className="self-center text-correct">✓</span>}
+                    {feedback[k] === false && (
+                      <span className="self-center text-sm text-paper-muted">Podpowiedź: {expected}</span>
+                    )}
+                  </div>
+                )}
               </div>
             );
           })}
