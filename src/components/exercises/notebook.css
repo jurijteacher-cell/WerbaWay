@@ -411,29 +411,35 @@
 .nb-pair {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 14px;
+  align-items: start;
 }
 .nb-polaroid {
   background: #fff;
-  padding: 8px 8px 28px;
+  padding: 10px 10px 12px;
   box-shadow: 2px 3px 0 rgba(27, 42, 74, 0.12);
-  transform: rotate(-2deg);
+  transform: rotate(-1.2deg);
+  margin: 0;
 }
 .nb-polaroid:nth-child(2) {
-  transform: rotate(2.5deg);
+  transform: rotate(1.5deg);
 }
 .nb-polaroid img {
   width: 100%;
-  height: 140px;
-  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  min-height: 180px;
+  max-height: 280px;
+  object-fit: contain;
+  object-position: center;
   display: block;
-  background: var(--nb-paper-2);
+  background: #f0ebe0;
 }
 .nb-polaroid figcaption {
   font-family: var(--nb-hand);
-  font-size: 15px;
+  font-size: 16px;
   color: var(--nb-ink-soft);
-  margin-top: 6px;
+  margin-top: 8px;
   text-align: center;
 }
 .nb-cluster .note {
