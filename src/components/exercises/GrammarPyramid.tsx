@@ -20,21 +20,12 @@ export function GrammarPyramid({ data }: Props) {
   const level = data.levels[levelIdx];
   if (!level) return null;
 
-  const key = (id: number) => `${level.level}-${id}`;
+  const key = (id: number | string) => `${level.level}-${id}`;
 
-  const checkFill = (id: number, expected: string) => {
-    const k = key(id);
+  const check = (k: string, given: string, expected: string) => {
     setFeedback((f) => ({
       ...f,
-      [k]: normalize(fillAnswers[k] ?? '') === normalize(expected),
-    }));
-  };
-
-  const checkMatch = (id: number, expected: string) => {
-    const k = key(id);
-    setFeedback((f) => ({
-      ...f,
-      [k]: normalize(matchAnswers[k] ?? '') === normalize(expected),
+      [k]: normalize(given) === normalize(expected),
     }));
   };
 
@@ -46,6 +37,7 @@ export function GrammarPyramid({ data }: Props) {
         <p className="mt-2 text-xs uppercase tracking-wide text-gold-dim">
           Poziom {level.level}: {level.name}
         </p>
+        {level.instruction && <p className="mt-1 text-sm text-paper-muted">{level.instruction}</p>}
       </header>
 
       <div className="flex flex-wrap gap-2">
@@ -74,12 +66,12 @@ export function GrammarPyramid({ data }: Props) {
                   <input
                     value={matchAnswers[k] ?? ''}
                     onChange={(e) => setMatchAnswers((a) => ({ ...a, [k]: e.target.value }))}
-                    placeholder="Znaczenie…"
+                    placeholder="Imiesłów / znaczenie…"
                     className="min-w-[200px] flex-1 rounded-lg border border-ink-line bg-ink-soft px-3 py-2 text-sm"
                   />
                   <button
                     type="button"
-                    onClick={() => checkMatch(item.id, item.answer ?? '')}
+                    onClick={() => check(k, matchAnswers[k] ?? '', item.answer ?? '')}
                     className="rounded-lg bg-gold px-3 py-2 text-sm font-medium text-ink"
                   >
                     Sprawdź
@@ -97,21 +89,45 @@ export function GrammarPyramid({ data }: Props) {
             return (
               <div key={k} className="rounded-lg border border-ink-line bg-ink-raised p-4">
                 <p className="mb-2 text-paper">{item.sentence}</p>
+                {item.options?.length ? (
+                  <div className="mb-2 flex flex-wrap gap-2">
+                    {item.options.map((opt) => (
+                      <button
+                        key={opt}
+                        type="button"
+                        onClick={() => setFillAnswers((a) => ({ ...a, [k]: opt }))}
+                        className={`rounded-lg border px-3 py-1 text-sm ${
+                          fillAnswers[k] === opt
+                            ? 'border-gold bg-gold text-ink'
+                            : 'border-ink-line text-paper-muted'
+                        }`}
+                      >
+                        {opt}
+                      </button>
+                    ))}
+                  </div>
+                ) : null}
                 <div className="flex flex-wrap gap-2">
-                  <input
-                    value={fillAnswers[k] ?? ''}
-                    onChange={(e) => setFillAnswers((a) => ({ ...a, [k]: e.target.value }))}
-                    className="min-w-[160px] rounded-lg border border-ink-line bg-ink-soft px-3 py-2 text-sm"
-                  />
+                  {!item.options?.length && (
+                    <input
+                      value={fillAnswers[k] ?? ''}
+                      onChange={(e) => setFillAnswers((a) => ({ ...a, [k]: e.target.value }))}
+                      className="min-w-[160px] rounded-lg border border-ink-line bg-ink-soft px-3 py-2 text-sm"
+                    />
+                  )}
                   <button
                     type="button"
-                    onClick={() => checkFill(item.id, item.answer ?? '')}
+                    onClick={() => check(k, fillAnswers[k] ?? '', item.answer ?? '')}
                     className="rounded-lg bg-gold px-3 py-2 text-sm font-medium text-ink"
                   >
                     Sprawdź
                   </button>
                   {feedback[k] === true && <span className="self-center text-correct">✓</span>}
-                  {feedback[k] === false && <span className="self-center text-incorrect">✕</span>}
+                  {feedback[k] === false && (
+                    <span className="self-center text-sm text-paper-muted">
+                      {item.explanation ?? `✕ (oczekiwane: ${item.answer})`}
+                    </span>
+                  )}
                 </div>
               </div>
             );
@@ -142,12 +158,7 @@ export function GrammarPyramid({ data }: Props) {
                   <div className="mt-2 flex flex-wrap gap-2">
                     <button
                       type="button"
-                      onClick={() =>
-                        setFeedback((f) => ({
-                          ...f,
-                          [k]: normalize(openAnswers[k] ?? '') === normalize(expected),
-                        }))
-                      }
+                      onClick={() => check(k, openAnswers[k] ?? '', expected)}
                       className="rounded-lg bg-gold px-3 py-2 text-sm font-medium text-ink"
                     >
                       Sprawdź

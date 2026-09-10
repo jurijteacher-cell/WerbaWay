@@ -1,0 +1,83 @@
+{
+  "lesson_id": "pl-b1-group-01-wynalazki",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: słownictwo i strona bierna",
+  "instruction": "Trzy bloki do zrobienia w domu. Zadanie z wideo i wypracowanie znajdziesz na stronie lekcji.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "hw1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Słownictwo w nowym kontekście",
+      "instruction": "Wstaw słowo z lekcji we właściwej formie: wynalazek, wynalazca, przełomowy, opatentować, przesyłać, uruchomić, wdrożyć, zasilać, paliwo, wydajny, upowszechnić się.",
+      "items": [
+        { "id": "hw1-1", "text": "Mikrofalówka to ___, bez którego trudno wyobrazić sobie dzisiejszą kuchnię.", "answer": "wynalazek" },
+        { "id": "hw1-2", "text": "Ta lodówka jest bardzo ___ — zużywa o połowę mniej prądu niż stara.", "answer": "wydajna" },
+        { "id": "hw1-3", "text": "Musimy dokupić ___ do generatora, bo w kanistrze została połowa.", "answer": "paliwa" },
+        { "id": "hw1-4", "text": "Nowy system płatności zostanie ___ we wszystkich sklepach sieci od stycznia.", "answer": "wdrożony" },
+        { "id": "hw1-5", "text": "Laptop jest ___ z baterii, więc spokojnie popracujesz w pociągu.", "answer": "zasilany" },
+        { "id": "hw1-6", "text": "To była ___ decyzja — po niej cała branża wyglądała inaczej.", "answer": "przełomowa" },
+        { "id": "hw1-7", "text": "Smartfony ___ się zaskakująco szybko: w dziesięć lat trafiły do każdej kieszeni.", "answer": "upowszechniły" },
+        { "id": "hw1-8", "text": "Kabel ___ dane szybciej i stabilniej niż wi-fi.", "answer": "przesyła" },
+        { "id": "hw1-9", "text": "Nie mogę ___ komputera, bo zepsuł się przycisk zasilania.", "answer": "uruchomić" },
+        { "id": "hw1-10", "text": "Firma ___ swój pomysł, zanim pokazała go na targach.", "answer": "opatentowała" }
+      ]
+    },
+    {
+      "block_id": "hw2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Gramatyka: pełna forma strony biernej",
+      "instruction": "Uzupełnij zdanie formą strony biernej od czasownika w nawiasie. Zwróć uwagę na czas i na rodzaj.",
+      "items": [
+        { "id": "hw2-1", "text": "Penicylina ___ (odkryć) przez Alexandra Fleminga w 1928 roku.", "answer": "została odkryta" },
+        { "id": "hw2-2", "text": "Pierwsza pralka automatyczna ___ (zbudować) w Stanach Zjednoczonych.", "answer": "została zbudowana" },
+        { "id": "hw2-3", "text": "Szczepionki ___ (testować) przez wiele lat, zanim trafią do aptek.", "answer": "są testowane" },
+        { "id": "hw2-4", "text": "Winda w naszym bloku ___ (naprawiać) już trzeci tydzień.", "answer": "jest naprawiana" },
+        { "id": "hw2-5", "text": "System GPS ___ (opracować) najpierw dla wojska.", "answer": "został opracowany" },
+        { "id": "hw2-6", "text": "Nowy model drukarki 3D ___ (zaprezentować) na targach w marcu.", "answer": "zostanie zaprezentowany" },
+        { "id": "hw2-7", "text": "Te maszyny ___ (produkować) w Poznaniu przez czterdzieści lat.", "answer": "były produkowane" },
+        { "id": "hw2-8", "text": "Zamek błyskawiczny ___ (wynaleźć) ponad sto lat temu.", "answer": "został wynaleziony" },
+        { "id": "hw2-9", "text": "Most nad rzeką ___ (budować) od dwóch lat i wciąż nie jest gotowy.", "answer": "jest budowany" },
+        { "id": "hw2-10", "text": "Wyniki badania ___ (ogłosić) w przyszłym tygodniu.", "answer": "zostaną ogłoszone" }
+      ]
+    },
+    {
+      "block_id": "hw3",
+      "exercise_type": "sentence-building",
+      "title": "3. Przekształcenia",
+      "instruction": "Zamień zdania na stronę bierną. Jeśli wykonawca jest nieznany, po prostu go pomiń.",
+      "items": [
+        {
+          "id": "hw3-1",
+          "prompt": "Nasza firma wprowadziła nowy system w zeszłym miesiącu.",
+          "answer": "Nowy system został wprowadzony przez naszą firmę w zeszłym miesiącu."
+        },
+        {
+          "id": "hw3-2",
+          "prompt": "Naukowcy badają wpływ mikroplastiku na zdrowie.",
+          "answer": "Wpływ mikroplastiku na zdrowie jest badany przez naukowców."
+        },
+        {
+          "id": "hw3-3",
+          "prompt": "Technik wymieni baterię jutro rano.",
+          "answer": "Bateria zostanie wymieniona przez technika jutro rano."
+        },
+        {
+          "id": "hw3-4",
+          "prompt": "Miasto remontuje tę ulicę co roku.",
+          "answer": "Ta ulica jest remontowana co roku."
+        },
+        {
+          "id": "hw3-5",
+          "prompt": "Ktoś ukradł jej telefon w tramwaju.",
+          "answer": "Jej telefon został ukradziony w tramwaju."
+        },
+        {
+          "id": "hw3-6",
+          "prompt": "Sklep rozpatrzy reklamację w ciągu czternastu dni.",
+          "answer": "Reklamacja zostanie rozpatrzona w ciągu czternastu dni."
+        }
+      ]
+    }
+  ]
+}

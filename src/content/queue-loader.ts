@@ -3,6 +3,7 @@ import path from 'path';
 import type {
   FlipTaskExercise,
   GrammarPyramidExercise,
+  GrammarPyramidItem,
   HomeworkExercise,
   PictureSetExercise,
   QueueExerciseBundle,
@@ -17,14 +18,187 @@ function readJson<T>(file: string): T | null {
   return JSON.parse(readFileSync(full, 'utf8')) as T;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function normalizeVocab(raw: any): VocabCardsExercise {
+  return {
+    lesson_id: raw.lesson_id,
+    exercise_type: 'vocab-cards',
+    title: raw.title,
+    instructions: raw.instructions ?? raw.instruction,
+    meta: raw.meta ?? (raw.estimated_minutes ? { estimated_minutes: raw.estimated_minutes } : undefined),
+    items: (raw.items ?? []).map(
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (it: any, i: number) => ({
+        id: it.id ?? i + 1,
+        term: it.term,
+        definition: it.definition,
+        example_sentence: it.example_sentence ?? it.example ?? '',
+        part_of_speech: it.part_of_speech,
+        translation_uk: it.translation_uk,
+      })
+    ),
+  };
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function normalizePictures(raw: any): PictureSetExercise {
+  return {
+    lesson_id: raw.lesson_id,
+    exercise_type: 'picture-set',
+    title: raw.title,
+    instructions: raw.instructions ?? raw.instruction,
+    image_constraints: raw.image_constraints,
+    items: (raw.items ?? []).map(
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (it: any, i: number) => ({
+        id: it.id ?? i + 1,
+        image_keywords: it.image_keywords,
+        question: it.question,
+        alt: it.alt,
+        image_url: it.image_url,
+      })
+    ),
+  };
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function normalizeFlip(raw: any): FlipTaskExercise {
+  return {
+    lesson_id: raw.lesson_id,
+    exercise_type: 'flip-task',
+    title: raw.title,
+    instructions: raw.instructions ?? raw.instruction,
+    items: (raw.items ?? []).map(
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (it: any, i: number) => ({
+        id: it.id ?? i + 1,
+        front_title: it.front_title,
+        back_scenario: it.back_scenario,
+        back_checklist: it.back_checklist ?? [],
+      })
+    ),
+  };
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function normalizeGrammarItem(it: any, i: number): GrammarPyramidItem {
+  const id = it.id ?? i + 1;
+  if (it.left != null && it.right != null) {
+    return { id, prompt: it.left, answer: it.right };
+  }
+  if (it.text != null) {
+    return {
+      id,
+      sentence: it.text,
+      answer: it.answer,
+      options: it.options,
+      explanation: it.explanation,
+    };
+  }
+  if (it.prompt != null && it.words == null) {
+    return {
+      id,
+      prompt: it.prompt,
+      answer: it.answer,
+      answer_hint: it.answer_hint ?? it.answer,
+    };
+  }
+  return {
+    id,
+    prompt: it.prompt,
+    answer: it.answer,
+    answer_hint: it.answer_hint,
+    sentence: it.sentence,
+    words: it.words,
+    options: it.options,
+    explanation: it.explanation,
+  };
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function normalizeGrammar(raw: any): GrammarPyramidExercise {
+  if (Array.isArray(raw.levels)) {
+    return {
+      lesson_id: raw.lesson_id,
+      exercise_type: raw.exercise_type,
+      title: raw.title,
+      instructions: raw.instructions ?? raw.instruction,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      levels: raw.levels.map((l: any, i: number) => ({
+        level: l.level ?? i + 1,
+        name: l.name,
+        task_type: l.task_type,
+        instruction: l.instruction,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        items: (l.items ?? []).map((it: any, j: number) => normalizeGrammarItem(it, j)),
+      })),
+    };
+  }
+
+  const blocks = raw.blocks ?? [];
+  return {
+    lesson_id: raw.lesson_id,
+    exercise_type: raw.exercise_type,
+    title: raw.title,
+    instructions: raw.instructions ?? raw.instruction,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    levels: blocks.map((b: any, i: number) => {
+      let taskType = b.exercise_type ?? 'fill-in-blank';
+      const first = b.items?.[0];
+      // prompt/answer without words → transform-style open check
+      if (taskType === 'sentence-building' && first?.prompt && !first?.words) {
+        taskType = 'text-transform';
+      }
+      return {
+        level: i + 1,
+        name: b.title ?? `Poziom ${i + 1}`,
+        task_type: taskType,
+        instruction: b.instruction,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        items: (b.items ?? []).map((it: any, j: number) => normalizeGrammarItem(it, j)),
+      };
+    }),
+  };
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function normalizeHw(raw: any): HomeworkExercise {
+  if (Array.isArray(raw.blocks)) {
+    const grammar = normalizeGrammar(raw);
+    return {
+      lesson_id: raw.lesson_id,
+      exercise_type: raw.exercise_type,
+      title: raw.title,
+      instructions: raw.instructions ?? raw.instruction,
+      levels: grammar.levels,
+    };
+  }
+  return {
+    lesson_id: raw.lesson_id,
+    exercise_type: raw.exercise_type,
+    title: raw.title,
+    instructions: raw.instructions ?? raw.instruction,
+    vocab_review: raw.vocab_review,
+    video: raw.video,
+    grammar_exercises: raw.grammar_exercises,
+    writing_task: raw.writing_task,
+  };
+}
+
 export function getQueueBundle(lessonId: string): QueueExerciseBundle | null {
-  const vocab = readJson<VocabCardsExercise>(`${lessonId}-vocab.json`);
-  const pictures = readJson<PictureSetExercise>(`${lessonId}-pictures.json`);
-  const commTasks = readJson<FlipTaskExercise>(`${lessonId}-comm-tasks.json`);
-  const grammar = readJson<GrammarPyramidExercise>(`${lessonId}-grammar.json`);
-  const hw = readJson<HomeworkExercise>(`${lessonId}-hw.json`);
-  if (!vocab || !pictures || !commTasks || !grammar || !hw) return null;
-  return { vocab, pictures, commTasks, grammar, hw };
+  const vocabRaw = readJson<unknown>(`${lessonId}-vocab.json`);
+  const picturesRaw = readJson<unknown>(`${lessonId}-pictures.json`);
+  const commRaw = readJson<unknown>(`${lessonId}-comm-tasks.json`);
+  const grammarRaw = readJson<unknown>(`${lessonId}-grammar.json`);
+  const hwRaw = readJson<unknown>(`${lessonId}-hw.json`);
+  if (!vocabRaw || !picturesRaw || !commRaw || !grammarRaw || !hwRaw) return null;
+  return {
+    vocab: normalizeVocab(vocabRaw),
+    pictures: normalizePictures(picturesRaw),
+    commTasks: normalizeFlip(commRaw),
+    grammar: normalizeGrammar(grammarRaw),
+    hw: normalizeHw(hwRaw),
+  };
 }
 
 export function listPublishedLessonIds(): string[] {

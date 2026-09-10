@@ -5,7 +5,14 @@ export type VocabCardsExercise = {
   exercise_type: 'vocab-cards';
   title: string;
   instructions?: string;
-  items: { id: number; term: string; definition: string; example_sentence: string }[];
+  items: {
+    id: number | string;
+    term: string;
+    definition: string;
+    example_sentence: string;
+    part_of_speech?: string;
+    translation_uk?: string;
+  }[];
   meta?: { estimated_minutes?: number };
 };
 
@@ -16,9 +23,10 @@ export type PictureSetExercise = {
   instructions?: string;
   image_constraints?: string;
   items: {
-    id: number;
+    id: number | string;
     image_keywords: string;
     question: string;
+    alt?: string;
     /** Resolved after image pipeline */
     image_url?: string;
   }[];
@@ -28,54 +36,58 @@ export type FlipTaskExercise = {
   lesson_id: string;
   exercise_type: 'flip-task';
   title: string;
+  instructions?: string;
   items: {
-    id: number;
+    id: number | string;
     front_title: string;
     back_scenario: string;
     back_checklist: string[];
   }[];
 };
 
+export type GrammarPyramidItem = {
+  id: number | string;
+  prompt?: string;
+  answer?: string;
+  answer_hint?: string;
+  sentence?: string;
+  words?: string[];
+  options?: string[];
+  explanation?: string;
+};
+
 export type GrammarPyramidExercise = {
   lesson_id: string;
-  exercise_type: 'matching' | string;
+  exercise_type: string;
   title: string;
   instructions?: string;
   levels: {
     level: number;
     name: string;
-    task_type:
-      | 'matching'
-      | 'fill-in-blank'
-      | 'sentence-building'
-      | 'open-answer'
-      | 'text-transform'
-      | string;
-    items: Array<{
-      id: number;
-      prompt?: string;
-      answer?: string;
-      answer_hint?: string;
-      sentence?: string;
-      words?: string[];
-    }>;
+    task_type: string;
+    instruction?: string;
+    items: GrammarPyramidItem[];
   }[];
 };
 
 export type HomeworkExercise = {
   lesson_id: string;
-  exercise_type: 'homework';
+  exercise_type: string;
   title: string;
-  vocab_review: string;
-  video: { title: string; url: string; task: string };
-  grammar_exercises: Array<{
+  instructions?: string;
+  /** Legacy pl-preg shape */
+  vocab_review?: string;
+  video?: { title: string; url: string; task: string };
+  grammar_exercises?: Array<{
     id: number;
     sentence?: string;
     answer?: string;
     words?: string[];
     prompt?: string;
   }>;
-  writing_task: { type: string; prompt: string };
+  writing_task?: { type: string; prompt: string };
+  /** Newer block pyramid shape (same as grammar blocks, normalized to levels) */
+  levels?: GrammarPyramidExercise['levels'];
 };
 
 export type QueueExerciseBundle = {

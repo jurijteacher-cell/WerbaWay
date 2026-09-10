@@ -1,0 +1,170 @@
+{
+  "lesson_id": "pl-b1-group-01-wynalazki",
+  "exercise_type": "fill-in-blank",
+  "title": "Strona bierna: od rozpoznawania do przekształcania",
+  "instruction": "Sześć bloków ułożonych od najłatwiejszego do najtrudniejszego. Rób je po kolei.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rozgrzewka: który czasownik posiłkowy?",
+      "instruction": "Wstaw właściwą formę: jest, są, był, była, było, były, został, została, zostało, zostały, zostanie, zostaną.",
+      "items": [
+        { "id": "g1-1", "text": "Silnik indukcyjny ___ opatentowany w 1888 roku.", "answer": "został" },
+        { "id": "g1-2", "text": "Pierwsza strona WWW ___ opublikowana w 1991 roku.", "answer": "została" },
+        { "id": "g1-3", "text": "Radio ___ wynalezione pod koniec XIX wieku.", "answer": "zostało" },
+        { "id": "g1-4", "text": "Protokoły TCP/IP ___ wdrożone w 1983 roku.", "answer": "zostały" },
+        { "id": "g1-5", "text": "Internet ___ dziś używany przez miliardy ludzi.", "answer": "jest" },
+        { "id": "g1-6", "text": "Te samochody ___ produkowane w Niemczech przez wiele lat.", "answer": "były" },
+        { "id": "g1-7", "text": "Nowy prototyp ___ zaprezentowany na targach w przyszłym miesiącu.", "answer": "zostanie" },
+        { "id": "g1-8", "text": "Stare elektrownie węglowe ___ stopniowo zamykane w całej Europie.", "answer": "są" }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "exercise_type": "matching",
+      "title": "2. Bezokolicznik → imiesłów bierny",
+      "instruction": "Połącz czasownik z jego imiesłowem. Cztery ostatnie pary to formy nieregularne.",
+      "items": [
+        { "id": "g2-1", "left": "budować", "right": "budowany" },
+        { "id": "g2-2", "left": "produkować", "right": "produkowany" },
+        { "id": "g2-3", "left": "stworzyć", "right": "stworzony" },
+        { "id": "g2-4", "left": "wynaleźć", "right": "wynaleziony" },
+        { "id": "g2-5", "left": "odkryć", "right": "odkryty" },
+        { "id": "g2-6", "left": "zamknąć", "right": "zamknięty" },
+        { "id": "g2-7", "left": "otworzyć", "right": "otwarty" },
+        { "id": "g2-8", "left": "wziąć", "right": "wzięty" },
+        { "id": "g2-9", "left": "przynieść", "right": "przyniesiony" },
+        { "id": "g2-10", "left": "zacząć", "right": "zaczęty" }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "exercise_type": "sentence-building",
+      "title": "3A. Grupa pierwsza: Tesla i elektryczność",
+      "instruction": "Przekształć zdanie ze strony czynnej na bierną. Pamiętaj o rodzaju imiesłowu.",
+      "items": [
+        {
+          "id": "g3-1",
+          "prompt": "Tesla opatentował silnik indukcyjny.",
+          "answer": "Silnik indukcyjny został opatentowany przez Teslę."
+        },
+        {
+          "id": "g3-2",
+          "prompt": "Inżynierowie uruchomili elektrownię przy Niagarze.",
+          "answer": "Elektrownia przy Niagarze została uruchomiona przez inżynierów."
+        },
+        {
+          "id": "g3-3",
+          "prompt": "Prąd zmienny oświetlił całe miasta.",
+          "answer": "Całe miasta zostały oświetlone przez prąd zmienny."
+        },
+        {
+          "id": "g3-4",
+          "prompt": "Edison promował prąd stały.",
+          "answer": "Prąd stały był promowany przez Edisona."
+        },
+        {
+          "id": "g3-5",
+          "prompt": "Ta firma produkowała transformatory w Krakowie.",
+          "answer": "Transformatory były produkowane przez tę firmę w Krakowie."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "exercise_type": "sentence-building",
+      "title": "3B. Grupa druga: silniki i transport",
+      "instruction": "Ten sam mechanizm, inne słownictwo. Przekształć zdania na stronę bierną.",
+      "items": [
+        {
+          "id": "g4-1",
+          "prompt": "Nicolaus Otto zbudował silnik czterosuwowy w 1876 roku.",
+          "answer": "Silnik czterosuwowy został zbudowany przez Nicolausa Otta w 1876 roku."
+        },
+        {
+          "id": "g4-2",
+          "prompt": "Karl Benz opatentował pierwszy samochód z silnikiem benzynowym.",
+          "answer": "Pierwszy samochód z silnikiem benzynowym został opatentowany przez Karla Benza."
+        },
+        {
+          "id": "g4-3",
+          "prompt": "Rudolf Diesel skonstruował silnik wysokoprężny.",
+          "answer": "Silnik wysokoprężny został skonstruowany przez Rudolfa Diesla."
+        },
+        {
+          "id": "g4-4",
+          "prompt": "Ciężarówki przewożą towary na całym świecie.",
+          "answer": "Towary są przewożone przez ciężarówki na całym świecie."
+        },
+        {
+          "id": "g4-5",
+          "prompt": "Fabryka produkowała ten model do 2003 roku.",
+          "answer": "Ten model był produkowany w fabryce do 2003 roku."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "exercise_type": "fill-in-blank",
+      "title": "4. Tekst: historia internetu",
+      "instruction": "Uzupełnij tekst pełną formą strony biernej. Czasownik podany jest w nawiasie.",
+      "items": [
+        { "id": "g5-1", "text": "ARPANET ___ (uruchomić) w 1969 roku.", "answer": "został uruchomiony" },
+        { "id": "g5-2", "text": "Przez pierwsze lata sieć ___ (używać) wyłącznie przez naukowców.", "answer": "była używana" },
+        { "id": "g5-3", "text": "W 1983 roku protokoły TCP/IP ___ (wdrożyć) jako obowiązujący standard.", "answer": "zostały wdrożone" },
+        { "id": "g5-4", "text": "Pierwsza strona WWW ___ (opublikować) w 1991 roku.", "answer": "została opublikowana" },
+        { "id": "g5-5", "text": "Dziś internet ___ (uważać) za jeden z najważniejszych wynalazków w historii.", "answer": "jest uważany" },
+        { "id": "g5-6", "text": "Kolejne standardy sieci ___ (opracować) w ciągu najbliższych lat.", "answer": "zostaną opracowane" }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "exercise_type": "fill-in-blank",
+      "title": "5. Niuans: był czy został?",
+      "instruction": "Wybierz właściwą formę. Pamiętaj: BYŁ = proces, trwanie, powtarzalność. ZOSTAŁ = jednorazowy, zakończony fakt.",
+      "items": [
+        { "id": "g6-1", "text": "Ta elektrownia ___ budowana przez pięć lat.", "options": ["była", "została"], "answer": "była", "explanation": "Budowa trwała pięć lat — to proces, więc BYŁA." },
+        { "id": "g6-2", "text": "Elektrownia ___ oddana do użytku w maju.", "options": ["była", "została"], "answer": "została", "explanation": "Jednorazowy, zakończony fakt z konkretną datą." },
+        { "id": "g6-3", "text": "W tej fabryce ___ produkowane silniki wysokoprężne.", "options": ["były", "zostały"], "answer": "były", "explanation": "Czynność powtarzalna, trwająca latami." },
+        { "id": "g6-4", "text": "Wszystkie egzemplarze ___ sprzedane w ciągu tygodnia.", "options": ["były", "zostały"], "answer": "zostały", "explanation": "Sprzedaż się zakończyła — mamy wynik, nie proces." },
+        { "id": "g6-5", "text": "Prototyp ___ testowany codziennie przez cały rok.", "options": ["był", "został"], "answer": "był", "explanation": "Słowo „codziennie” zdradza powtarzalność." },
+        { "id": "g6-6", "text": "Wynik testu ___ ogłoszony wczoraj o osiemnastej.", "options": ["był", "został"], "answer": "został", "explanation": "Konkretny moment, jedna czynność." }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "exercise_type": "sentence-building",
+      "title": "6. Wyjątek w akcji: forma -no / -to",
+      "instruction": "Przekształć zdanie z konstrukcji „został + imiesłów” na formę bezosobową -no/-to. Uwaga: przedmiot przechodzi do biernika.",
+      "items": [
+        {
+          "id": "g7-1",
+          "prompt": "Elektrownia została uruchomiona w 1895 roku.",
+          "answer": "Elektrownię uruchomiono w 1895 roku."
+        },
+        {
+          "id": "g7-2",
+          "prompt": "Pierwsza strona WWW została opublikowana w 1991 roku.",
+          "answer": "Pierwszą stronę WWW opublikowano w 1991 roku."
+        },
+        {
+          "id": "g7-3",
+          "prompt": "Protokoły TCP/IP zostały wdrożone w 1983 roku.",
+          "answer": "Protokoły TCP/IP wdrożono w 1983 roku."
+        },
+        {
+          "id": "g7-4",
+          "prompt": "Ta fabryka została zamknięta pięć lat temu.",
+          "answer": "Tę fabrykę zamknięto pięć lat temu."
+        },
+        {
+          "id": "g7-5",
+          "prompt": "Pierwsze próby zostały przeprowadzone na pustyni.",
+          "answer": "Pierwsze próby przeprowadzono na pustyni."
+        }
+      ]
+    }
+  ]
+}

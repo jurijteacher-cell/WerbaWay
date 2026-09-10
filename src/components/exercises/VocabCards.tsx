@@ -2,7 +2,14 @@
 
 import { useState } from 'react';
 
-type Item = { id: number; term: string; definition: string; example_sentence: string };
+type Item = {
+  id: number | string;
+  term: string;
+  definition: string;
+  example_sentence: string;
+  part_of_speech?: string;
+  translation_uk?: string;
+};
 
 type Props = {
   title: string;
@@ -38,13 +45,21 @@ export function VocabCards({ title, instructions, items }: Props) {
         className="relative min-h-[220px] w-full rounded-xl border border-ink-line bg-ink-raised p-6 text-left transition-colors hover:border-gold"
       >
         {!flipped ? (
-          <p className="font-display text-3xl text-paper">{item.term}</p>
+          <div className="space-y-2">
+            <p className="font-display text-3xl text-paper">{item.term}</p>
+            {item.part_of_speech && (
+              <p className="text-xs uppercase tracking-wide text-gold-dim">{item.part_of_speech}</p>
+            )}
+          </div>
         ) : (
           <div className="space-y-3">
             <p className="text-lg text-paper">{item.definition}</p>
             <p className="border-t border-ink-line pt-3 text-sm italic text-paper-muted">
               {item.example_sentence}
             </p>
+            {item.translation_uk && (
+              <p className="text-sm text-gold-dim">{item.translation_uk}</p>
+            )}
           </div>
         )}
         <span className="absolute bottom-3 right-4 text-xs text-gold-dim">

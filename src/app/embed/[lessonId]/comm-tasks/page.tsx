@@ -8,5 +8,11 @@ export default function EmbedCommTasksPage({ params }: Props) {
   const bundle = getQueueBundle(params.lessonId);
   if (!bundle) notFound();
   const { commTasks } = bundle;
-  return <FlipTask title={commTasks.title} items={commTasks.items} />;
+  return (
+    <FlipTask
+      title={commTasks.title}
+      instructions={commTasks.instructions}
+      items={commTasks.items}
+    />
+  );
 }

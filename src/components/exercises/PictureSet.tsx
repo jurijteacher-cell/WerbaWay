@@ -3,10 +3,11 @@
 import { useState } from 'react';
 
 type Item = {
-  id: number;
+  id: number | string;
   question: string;
   image_url?: string;
   image_keywords?: string;
+  alt?: string;
 };
 
 type Props = {
@@ -16,7 +17,7 @@ type Props = {
 };
 
 export function PictureSet({ title, instructions, items }: Props) {
-  const [answers, setAnswers] = useState<Record<number, string>>({});
+  const [answers, setAnswers] = useState<Record<string, string>>({});
 
   return (
     <div className="space-y-6">
@@ -26,30 +27,33 @@ export function PictureSet({ title, instructions, items }: Props) {
       </header>
 
       <div className="space-y-8">
-        {items.map((item) => (
-          <figure key={item.id} className="space-y-3">
-            {item.image_url ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={item.image_url}
-                alt={item.question}
-                className="h-56 w-full rounded-xl object-cover"
+        {items.map((item) => {
+          const key = String(item.id);
+          return (
+            <figure key={key} className="space-y-3">
+              {item.image_url ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={item.image_url}
+                  alt={item.alt ?? item.question}
+                  className="h-56 w-full rounded-xl object-cover"
+                />
+              ) : (
+                <div className="flex h-56 items-center justify-center rounded-xl border border-dashed border-ink-line text-sm text-paper-muted">
+                  Brak obrazka
+                </div>
+              )}
+              <figcaption className="text-paper">{item.question}</figcaption>
+              <textarea
+                value={answers[key] ?? ''}
+                onChange={(e) => setAnswers((prev) => ({ ...prev, [key]: e.target.value }))}
+                rows={2}
+                placeholder="Twoja odpowiedź…"
+                className="w-full rounded-lg border border-ink-line bg-ink-soft px-3 py-2 text-sm text-paper placeholder:text-paper-muted"
               />
-            ) : (
-              <div className="flex h-56 items-center justify-center rounded-xl border border-dashed border-ink-line text-sm text-paper-muted">
-                Brak obrazka
-              </div>
-            )}
-            <figcaption className="text-paper">{item.question}</figcaption>
-            <textarea
-              value={answers[item.id] ?? ''}
-              onChange={(e) => setAnswers((prev) => ({ ...prev, [item.id]: e.target.value }))}
-              rows={2}
-              placeholder="Twoja odpowiedź…"
-              className="w-full rounded-lg border border-ink-line bg-ink-soft px-3 py-2 text-sm text-paper placeholder:text-paper-muted"
-            />
-          </figure>
-        ))}
+            </figure>
+          );
+        })}
       </div>
     </div>
   );

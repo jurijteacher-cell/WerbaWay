@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 type Item = {
-  id: number;
+  id: number | string;
   front_title: string;
   back_scenario: string;
   back_checklist: string[];
@@ -11,23 +11,28 @@ type Item = {
 
 type Props = {
   title: string;
+  instructions?: string;
   items: Item[];
 };
 
-export function FlipTask({ title, items }: Props) {
-  const [flipped, setFlipped] = useState<Record<number, boolean>>({});
+export function FlipTask({ title, instructions, items }: Props) {
+  const [flipped, setFlipped] = useState<Record<string, boolean>>({});
 
   return (
     <div className="space-y-4">
-      <h1 className="font-display text-2xl text-gold">{title}</h1>
+      <header>
+        <h1 className="font-display text-2xl text-gold">{title}</h1>
+        {instructions && <p className="mt-1 text-sm text-paper-muted">{instructions}</p>}
+      </header>
       <div className="grid gap-4 sm:grid-cols-2">
         {items.map((item) => {
-          const isBack = flipped[item.id];
+          const key = String(item.id);
+          const isBack = flipped[key];
           return (
             <button
-              key={item.id}
+              key={key}
               type="button"
-              onClick={() => setFlipped((prev) => ({ ...prev, [item.id]: !prev[item.id] }))}
+              onClick={() => setFlipped((prev) => ({ ...prev, [key]: !prev[key] }))}
               className="min-h-[200px] rounded-xl border border-ink-line bg-ink-raised p-5 text-left transition-colors hover:border-gold"
             >
               {!isBack ? (
@@ -42,9 +47,6 @@ export function FlipTask({ title, items }: Props) {
                   </ul>
                 </div>
               )}
-              <span className="mt-4 block text-xs text-gold-dim">
-                {isBack ? 'kliknij — tytuł' : 'kliknij — zadanie'}
-              </span>
             </button>
           );
         })}
