@@ -1,50 +1,56 @@
 {
   "lesson_id": "pl-preg-02-kolejne-badania",
   "exercise_type": "flip-task",
-  "title": "Zadania komunikacyjne",
+  "title": "Zadania komunikacyjne: cztery telefony",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Wyjdź z niej ze wszystkimi informacjami z listy.",
+  "estimated_minutes": 20,
   "items": [
     {
-      "id": 1,
-      "front_title": "Zadanie 1: Niepokojący wynik",
-      "back_scenario": "Dostałaś wynik testu obciążenia glukozą i nie jesteś pewna, czy jest w normie. Zadzwoń do lekarza.",
+      "id": "c1",
+      "front_title": "Przełożenie USG",
+      "back_scenario": "Masz umówione USG na czwartek, ale tego dnia wyjeżdżasz. Dzwonisz do rejestracji, żeby zmienić termin.",
       "back_checklist": [
-        "Podaj swoje dane i numer wyniku",
-        "Zapytaj, czy wynik jest w normie",
-        "Zapytaj, co robić, jeśli wynik jest podwyższony",
-        "Umów się na konsultację, jeśli to konieczne"
+        "podaj imię, nazwisko i dotychczasowy termin",
+        "poproś o dwa najbliższe wolne terminy i wybierz jeden",
+        "zapytaj, czy trzeba przynieść kartę ciąży i skierowanie",
+        "zapytaj, czy stary termin zostanie odwołany automatycznie",
+        "poproś o potwierdzenie SMS-em"
       ]
     },
     {
-      "id": 2,
-      "front_title": "Zadanie 2: Zmiana terminu USG",
-      "back_scenario": "Nie możesz przyjść na zaplanowane USG połówkowe. Zadzwoń do przychodni, żeby przełożyć termin.",
+      "id": "c2",
+      "front_title": "Telefon do laboratorium",
+      "back_scenario": "Za dwa tygodnie masz krzywą cukrową. Dzwonisz do laboratorium, żeby dowiedzieć się, jak się przygotować.",
       "back_checklist": [
-        "Podaj powód zmiany terminu",
-        "Zapytaj o najbliższe wolne terminy",
-        "Upewnij się, czy trzeba coś przygotować przed badaniem",
-        "Potwierdź nowy termin"
+        "zapytaj, od której godziny trzeba być na czczo i czy wolno pić wodę",
+        "dowiedz się, czy glukozę kupujesz sama, czy dostaniesz ją na miejscu",
+        "zapytaj, ile godzin trzeba zostać w laboratorium",
+        "ustal, kiedy i jak odbierzesz wyniki",
+        "zapytaj, co zrobić, jeśli tego dnia będziesz przeziębiona"
       ]
     },
     {
-      "id": 3,
-      "front_title": "Zadanie 3: Przygotowanie do badania krwi",
-      "back_scenario": "Masz zaplanowane badanie krwi na przeciwciała. Zadzwoń i zapytaj, jak się przygotować.",
+      "id": "c3",
+      "front_title": "Wynik poza normą",
+      "back_scenario": "W wyniku badania jedna liczba jest zaznaczona na czerwono. Dzwonisz do przychodni, żeby zapytać, co dalej.",
       "back_checklist": [
-        "Zapytaj, czy trzeba przyjść na czczo",
-        "Zapytaj, jak długo trwa badanie",
-        "Zapytaj, kiedy będą wyniki",
-        "Zapytaj, czy wyniki dostaniesz mailem czy osobiście"
+        "powiedz, którego badania dotyczy wynik i z którego jest dnia",
+        "zapytaj, czy trzeba powtórzyć badanie i kiedy",
+        "dowiedz się, czy potrzebna jest wizyta, czy wystarczy teleporada",
+        "zapytaj, na co zwracać uwagę do czasu wizyty",
+        "ustal, kto do kogo dzwoni następnym razem"
       ]
     },
     {
-      "id": 4,
-      "front_title": "Zadanie 4: Zwolnienie lekarskie",
-      "back_scenario": "Czujesz się gorzej i chcesz zapytać lekarza o zwolnienie lekarskie (L4) związane z ciążą.",
+      "id": "c4",
+      "front_title": "Zwolnienie lekarskie",
+      "back_scenario": "Praca stała się zbyt męcząca i chcesz porozmawiać z lekarką o zwolnieniu. Dzwonisz i umawiasz się na wizytę.",
       "back_checklist": [
-        "Opisz swoje objawy",
-        "Zapytaj, czy kwalifikujesz się na zwolnienie",
-        "Zapytaj, jak długo może trwać zwolnienie",
-        "Zapytaj o kolejne kroki formalne"
+        "opisz krótko, co się zmieniło w ostatnich tygodniach",
+        "zapytaj, czy decyzję można podjąć na wizycie, czy potrzebne są badania",
+        "dowiedz się, na ile dni wystawia się zwolnienie i czy da się je przedłużyć",
+        "zapytaj, czy pracodawca dostaje dokument elektronicznie",
+        "umów termin i zapytaj, co zabrać ze sobą"
       ]
     }
   ]

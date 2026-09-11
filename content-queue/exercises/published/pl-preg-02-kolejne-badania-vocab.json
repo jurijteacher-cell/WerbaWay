@@ -1,19 +1,320 @@
 {
   "lesson_id": "pl-preg-02-kolejne-badania",
   "exercise_type": "vocab-cards",
-  "title": "Trudne słowa: kolejne badania",
-  "instructions": "Poznaj znaczenie nowych słów i zapamiętaj je w kontekście zdania.",
-  "items": [
-    { "id": 1, "term": "badania okresowe", "definition": "badania robione regularnie, co jakiś czas", "example_sentence": "Badania okresowe robię co cztery tygodnie." },
-    { "id": 2, "term": "przeciwciała anty-D", "definition": "substancje we krwi sprawdzane u kobiet z grupą krwi Rh minus", "example_sentence": "Lekarz zlecił badanie na przeciwciała anty-D." },
-    { "id": 3, "term": "konflikt serologiczny", "definition": "sytuacja, gdy krew matki i dziecka nie są zgodne pod względem Rh", "example_sentence": "Konflikt serologiczny wymaga dodatkowej kontroli." },
-    { "id": 4, "term": "USG połówkowe", "definition": "dokładne badanie USG wykonywane w połowie ciąży", "example_sentence": "Na USG połówkowym poznałam płeć dziecka." },
-    { "id": 5, "term": "wysokość dna macicy", "definition": "pomiar pokazujący, jak rośnie macica i dziecko", "example_sentence": "Lekarz zmierzył wysokość dna macicy centymetrem." },
-    { "id": 6, "term": "test obciążenia glukozą", "definition": "badanie sprawdzające, czy nie ma cukrzycy ciążowej", "example_sentence": "Test obciążenia glukozą mam zaplanowany na przyszły tydzień." },
-    { "id": 7, "term": "krzywa cukrowa", "definition": "potoczna nazwa testu obciążenia glukozą", "example_sentence": "Wszystkie koleżanki mówią o krzywej cukrowej z niepokojem." },
-    { "id": 8, "term": "cukrzyca ciążowa", "definition": "podwyższony poziom cukru we krwi, który może pojawić się w ciąży", "example_sentence": "Cukrzyca ciążowa zwykle mija po porodzie." },
-    { "id": 9, "term": "obrzęki", "definition": "opuchlizna, najczęściej nóg, częsta w ciąży", "example_sentence": "Pod koniec dnia mam obrzęki nóg." },
-    { "id": 10, "term": "wynik w normie", "definition": "wynik badania, który jest prawidłowy, bez powodu do niepokoju", "example_sentence": "Lekarz powiedział, że wszystkie wyniki są w normie." }
+  "title": "Słownictwo: badania, wizyty, rejestracja",
+  "instruction": "38 słów w pięciu grupach. Najpierw powiedz słowo na głos, potem odwróć kartkę i sprawdź definicję.",
+  "estimated_minutes": 22,
+  "groups": [
+    "Badania i wyniki",
+    "Wizyta i USG",
+    "Ciało i objawy",
+    "Regularnie czy raz",
+    "W rejestracji"
   ],
-  "meta": { "estimated_minutes": 12 }
+  "items": [
+    {
+      "term": "badanie moczu",
+      "group": "Badania i wyniki",
+      "part_of_speech": "wyrażenie, n.",
+      "definition": "Badanie, w którym laboratorium sprawdza próbkę moczu.",
+      "example": "Wynik badania moczu dostaniesz tego samego dnia.",
+      "translation_uk": "аналіз сечі"
+    },
+    {
+      "term": "morfologia krwi",
+      "group": "Badania i wyniki",
+      "part_of_speech": "wyrażenie, ż.",
+      "definition": "Podstawowe badanie krwi; pokazuje między innymi poziom żelaza.",
+      "example": "Morfologia krwi wyszła dobrze, tylko żelazo jest niskie.",
+      "translation_uk": "загальний аналіз крові"
+    },
+    {
+      "term": "pobranie krwi",
+      "group": "Badania i wyniki",
+      "part_of_speech": "wyrażenie, n.",
+      "definition": "Moment, kiedy pielęgniarka bierze krew z żyły.",
+      "example": "Samo pobranie krwi trwa niecałą minutę.",
+      "translation_uk": "забір крові"
+    },
+    {
+      "term": "skierowanie",
+      "group": "Badania i wyniki",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Papier od lekarza, z którym idzie się na badanie.",
+      "example": "Bez skierowania to badanie będzie płatne.",
+      "translation_uk": "направлення"
+    },
+    {
+      "term": "wynik",
+      "group": "Badania i wyniki",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "To, co pokazuje badanie: liczby albo krótki opis.",
+      "example": "Wyniki odbierzesz w rejestracji albo przez internet.",
+      "translation_uk": "результат"
+    },
+    {
+      "term": "w normie",
+      "group": "Badania i wyniki",
+      "part_of_speech": "wyrażenie",
+      "definition": "Taki, jaki powinien być; bez powodu do niepokoju.",
+      "example": "Wszystkie liczby są w normie.",
+      "translation_uk": "у нормі"
+    },
+    {
+      "term": "na czczo",
+      "group": "Badania i wyniki",
+      "part_of_speech": "wyrażenie",
+      "definition": "Bez jedzenia od wieczora; wolno pić tylko wodę.",
+      "example": "Krew na cukier pobiera się rano, na czczo.",
+      "translation_uk": "натщесерце"
+    },
+    {
+      "term": "przeciwciała",
+      "group": "Badania i wyniki",
+      "part_of_speech": "rzeczownik, lm.",
+      "definition": "Substancje we krwi, które bronią organizmu.",
+      "example": "Przeciwciała sprawdza się u kobiet z grupą Rh minus.",
+      "translation_uk": "антитіла"
+    },
+    {
+      "term": "wizyta kontrolna",
+      "group": "Wizyta i USG",
+      "part_of_speech": "wyrażenie, ż.",
+      "definition": "Zwykła wizyta co kilka tygodni, żeby sprawdzić, czy wszystko jest dobrze.",
+      "example": "Wizytę kontrolną mam zawsze w czwartek rano.",
+      "translation_uk": "плановий огляд"
+    },
+    {
+      "term": "położna",
+      "group": "Wizyta i USG",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Osoba, która opiekuje się kobietą w ciąży i przy porodzie.",
+      "example": "Położna pokazała mi, jak oddychać.",
+      "translation_uk": "акушерка"
+    },
+    {
+      "term": "ginekolog",
+      "group": "Wizyta i USG",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Lekarz, który prowadzi ciążę.",
+      "example": "Mój ginekolog przyjmuje w poniedziałki i środy.",
+      "translation_uk": "гінеколог"
+    },
+    {
+      "term": "karta ciąży",
+      "group": "Wizyta i USG",
+      "part_of_speech": "wyrażenie, ż.",
+      "definition": "Książeczka, w której zapisuje się wizyty i wyniki badań.",
+      "example": "Zawsze noszę kartę ciąży w torebce.",
+      "translation_uk": "обмінна карта"
+    },
+    {
+      "term": "USG połówkowe",
+      "group": "Wizyta i USG",
+      "part_of_speech": "wyrażenie, n.",
+      "definition": "Dokładne badanie USG w połowie ciąży, między 18. a 22. tygodniem.",
+      "example": "Na USG połówkowym lekarz ogląda cały organizm dziecka.",
+      "translation_uk": "УЗД у середині вагітності"
+    },
+    {
+      "term": "zmierzyć",
+      "group": "Wizyta i USG",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Sprawdzić, ile czegoś jest: ile centymetrów, ile stopni.",
+      "example": "Pielęgniarka zmierzyła mi ciśnienie i tętno.",
+      "translation_uk": "виміряти"
+    },
+    {
+      "term": "obejrzeć",
+      "group": "Wizyta i USG",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Popatrzeć na coś dokładnie i do końca.",
+      "example": "Lekarz obejrzał zdjęcie i uśmiechnął się.",
+      "translation_uk": "оглянути"
+    },
+    {
+      "term": "zlecić",
+      "group": "Wizyta i USG",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Powiedzieć pacjentce, że ma zrobić jakieś badanie.",
+      "example": "Lekarka zleciła mi jeszcze jedno badanie.",
+      "translation_uk": "призначити"
+    },
+    {
+      "term": "obrzęk",
+      "group": "Ciało i objawy",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Miejsce na ciele większe niż zwykle, bo zebrała się w nim woda.",
+      "example": "Wieczorem mam obrzęki i buty są za małe.",
+      "translation_uk": "набряк"
+    },
+    {
+      "term": "ciśnienie",
+      "group": "Ciało i objawy",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Siła, z jaką krew płynie w naczyniach; mierzy się je na ramieniu.",
+      "example": "Mam niskie ciśnienie i czasem kręci mi się w głowie.",
+      "translation_uk": "тиск"
+    },
+    {
+      "term": "tętno",
+      "group": "Ciało i objawy",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Liczba uderzeń serca w ciągu minuty.",
+      "example": "Tętno dziecka słychać już na pierwszym USG.",
+      "translation_uk": "пульс"
+    },
+    {
+      "term": "przytyć",
+      "group": "Ciało i objawy",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Zacząć ważyć więcej niż wcześniej.",
+      "example": "Przez ostatni miesiąc przytyłam dwa kilogramy.",
+      "translation_uk": "набрати вагу"
+    },
+    {
+      "term": "zgaga",
+      "group": "Ciało i objawy",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Nieprzyjemne pieczenie w gardle albo w przełyku po jedzeniu.",
+      "example": "Po tłustym obiedzie mam zgagę.",
+      "translation_uk": "печія"
+    },
+    {
+      "term": "mdłości",
+      "group": "Ciało i objawy",
+      "part_of_speech": "rzeczownik, lm.",
+      "definition": "Uczucie, że zaraz zwymiotujesz.",
+      "example": "Rano mam mdłości, ale po śniadaniu przechodzą.",
+      "translation_uk": "нудота"
+    },
+    {
+      "term": "kręgosłup",
+      "group": "Ciało i objawy",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Kości biegnące przez środek pleców.",
+      "example": "Bolą mnie plecy w dolnej części kręgosłupa.",
+      "translation_uk": "хребет"
+    },
+    {
+      "term": "regularnie",
+      "group": "Regularnie czy raz",
+      "part_of_speech": "przysłówek",
+      "definition": "Zawsze po takim samym czasie: co tydzień, co miesiąc.",
+      "example": "Regularnie chodzę na basen.",
+      "translation_uk": "регулярно"
+    },
+    {
+      "term": "zwykle",
+      "group": "Regularnie czy raz",
+      "part_of_speech": "przysłówek",
+      "definition": "Prawie zawsze, w normalnej sytuacji.",
+      "example": "Zwykle wracam do domu przed piątą.",
+      "translation_uk": "зазвичай"
+    },
+    {
+      "term": "właśnie",
+      "group": "Regularnie czy raz",
+      "part_of_speech": "partykuła",
+      "definition": "W tej chwili albo przed chwilą.",
+      "example": "Właśnie wyszłam z gabinetu.",
+      "translation_uk": "щойно, саме"
+    },
+    {
+      "term": "wreszcie",
+      "group": "Regularnie czy raz",
+      "part_of_speech": "przysłówek",
+      "definition": "Po długim czekaniu; w końcu.",
+      "example": "Wreszcie znalazłam wygodne buty.",
+      "translation_uk": "нарешті"
+    },
+    {
+      "term": "już",
+      "group": "Regularnie czy raz",
+      "part_of_speech": "partykuła",
+      "definition": "Wcześniej, niż się spodziewałaś; ta rzecz jest gotowa.",
+      "example": "Już kupiłam wszystko na weekend.",
+      "translation_uk": "вже"
+    },
+    {
+      "term": "jeszcze nie",
+      "group": "Regularnie czy raz",
+      "part_of_speech": "wyrażenie",
+      "definition": "Do tej pory tego nie ma, ale ma się wydarzyć.",
+      "example": "Jeszcze nie wybrałam imienia.",
+      "translation_uk": "ще ні"
+    },
+    {
+      "term": "nagle",
+      "group": "Regularnie czy raz",
+      "part_of_speech": "przysłówek",
+      "definition": "Szybko i bez ostrzeżenia.",
+      "example": "Nagle zrobiło mi się gorąco.",
+      "translation_uk": "раптово"
+    },
+    {
+      "term": "rejestracja",
+      "group": "W rejestracji",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Miejsce w przychodni, gdzie zapisuje się pacjentów i wydaje wyniki.",
+      "example": "Numerek odbierzesz w rejestracji.",
+      "translation_uk": "реєстратура"
+    },
+    {
+      "term": "umówić się",
+      "group": "W rejestracji",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Ustalić z kimś dzień i godzinę spotkania.",
+      "example": "Umówiłam się na środę na dziewiątą.",
+      "translation_uk": "записатися"
+    },
+    {
+      "term": "przełożyć",
+      "group": "W rejestracji",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Zmienić termin na inny dzień lub godzinę.",
+      "example": "Musiałam przełożyć wizytę na przyszły tydzień.",
+      "translation_uk": "перенести"
+    },
+    {
+      "term": "odwołać",
+      "group": "W rejestracji",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Powiedzieć, że coś się nie odbędzie.",
+      "example": "Odwołałam spotkanie, bo źle się czułam.",
+      "translation_uk": "скасувати"
+    },
+    {
+      "term": "poczekalnia",
+      "group": "W rejestracji",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Pokój z krzesłami, gdzie czeka się na swoją kolej.",
+      "example": "W poczekalni siedziało pięć osób.",
+      "translation_uk": "зала очікування"
+    },
+    {
+      "term": "kolejka",
+      "group": "W rejestracji",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Ludzie, którzy czekają jeden za drugim.",
+      "example": "Do tej lekarki jest kolejka na trzy miesiące.",
+      "translation_uk": "черга"
+    },
+    {
+      "term": "zgłosić się",
+      "group": "W rejestracji",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Przyjść w umówione miejsce i powiedzieć, że się jest.",
+      "example": "Proszę zgłosić się piętnaście minut wcześniej.",
+      "translation_uk": "з'явитися"
+    },
+    {
+      "term": "potwierdzić",
+      "group": "W rejestracji",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Powiedzieć, że coś na pewno się odbędzie.",
+      "example": "Proszę potwierdzić termin dzień wcześniej.",
+      "translation_uk": "підтвердити"
+    }
+  ]
 }

@@ -1,23 +1,143 @@
 {
   "lesson_id": "pl-preg-02-kolejne-badania",
-  "exercise_type": "homework",
-  "title": "Zadanie domowe",
-  "vocab_review": "Powtórz 10 słów z lekcji (vocab-cards) — spróbuj użyć każdego w swoim zdaniu.",
-  "video": {
-    "title": "Co to jest test obciążenia glukozą i jak się do niego przygotować?",
-    "url": "https://www.youtube.com/shorts/sMMNlHhpk54",
-    "embed_instruction": "Cursor: wstaw jako <video src=\"{url}\">{title}</video>.",
-    "task": "Obejrzyj krótki film. Zapisz 2-3 nowe informacje o teście obciążenia glukozą, których nie było w naszej lekcji."
-  },
-  "grammar_exercises": [
-    { "id": 1, "sentence": "Codziennie ___ (mierzyć / zmierzyć) sobie ciśnienie w domu.", "answer": "mierzę" },
-    { "id": 2, "sentence": "Wczoraj ___ (mierzyć / zmierzyć) sobie ciśnienie trzy razy.", "answer": "zmierzyłam" },
-    { "id": 3, "sentence": "Co tydzień ___ (pisać / napisać) w dzienniku ciąży.", "answer": "piszę" },
-    { "id": 4, "words": ["dna", "macicy", "lekarz", "zmierzył", "wysokość"], "answer": "Lekarz zmierzył wysokość dna macicy." },
-    { "id": 5, "prompt": "Napisz 2 zdania o swoim planie badań: jedno w aspekcie niedokonanym, jedno w dokonanym." }
-  ],
-  "writing_task": {
-    "type": "wpis do dziennika",
-    "prompt": "Napisz krótki wpis do dziennika ciąży (5-6 zdań) o swojej ostatniej wizycie lub badaniu: co się wydarzyło, co poczułaś, na co czekasz."
-  }
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: słownictwo i aspekt",
+  "instruction": "Trzy bloki. Żadne zdanie nie powtarza się z lekcji — to ten sam materiał na nowych przykładach.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "drag-and-drop",
+      "title": "1. Słownictwo w nowych zdaniach",
+      "instruction": "Przeciągnij słowo w lukę. Dwa słowa nie pasują nigdzie.",
+      "bank": [
+        "skierowania",
+        "poczekalni",
+        "na czczo",
+        "obrzęki",
+        "wizytę kontrolną",
+        "potwierdzić",
+        "kolejka",
+        "tętno"
+      ],
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Bez ___ od lekarza laboratorium nie zrobi tego badania za darmo.",
+          "answer": "skierowania"
+        },
+        {
+          "id": "h1-2",
+          "text": "Kiedy weszłam do ___, wszystkie krzesła były już zajęte.",
+          "answer": "poczekalni"
+        },
+        {
+          "id": "h1-3",
+          "text": "Pamiętaj, że to badanie wykonuje się wyłącznie ___.",
+          "answer": "na czczo"
+        },
+        {
+          "id": "h1-4",
+          "text": "Pod koniec dnia ___ na nogach są większe niż rano.",
+          "answer": "obrzęki"
+        },
+        {
+          "id": "h1-5",
+          "text": "Moją ___ przełożyłam na przyszły wtorek.",
+          "answer": "wizytę kontrolną"
+        },
+        {
+          "id": "h1-6",
+          "text": "Zadzwoń do rejestracji, żeby ___ nowy termin.",
+          "answer": "potwierdzić"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Pełna forma czasownika",
+      "instruction": "Wstaw właściwą formę czasownika z nawiasu. Uważaj na słowa-sygnały.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Co sobotę ___ (sprzątać / posprzątać) całe mieszkanie.",
+          "answer": "sprzątam"
+        },
+        {
+          "id": "h2-2",
+          "text": "W niedzielę ___ (sprzątać / posprzątać) pokój dziecka i usiadłam zadowolona.",
+          "answer": "posprzątałam"
+        },
+        {
+          "id": "h2-3",
+          "text": "Zwykle ___ (kupować / kupić) warzywa na targu przy rynku.",
+          "answer": "kupuję"
+        },
+        {
+          "id": "h2-4",
+          "text": "Wczoraj wreszcie ___ (kupować / kupić) wózek.",
+          "answer": "kupiłam"
+        },
+        {
+          "id": "h2-5",
+          "text": "Przez cały wieczór ___ (czytać / przeczytać) ten poradnik i nic nie zapamiętałam.",
+          "answer": "czytałam"
+        },
+        {
+          "id": "h2-6",
+          "text": "W dwa dni ___ (czytać / przeczytać) cały poradnik.",
+          "answer": "przeczytałam"
+        },
+        {
+          "id": "h2-7",
+          "text": "Jutro ___ (pakować / spakować) torbę do szpitala.",
+          "answer": "spakuję"
+        },
+        {
+          "id": "h2-8",
+          "text": "Od miesiąca ___ (uczyć się / nauczyć się) oddychać na kursie.",
+          "answer": "uczę się"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Transformacje",
+      "instruction": "Przepisz zdanie zgodnie z podpowiedzią w nawiasie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Co wieczór gotuję zupę. (wczoraj)",
+          "answer": "Wczoraj ugotowałam zupę."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Długo szukałam wygodnych butów. (wreszcie)",
+          "answer": "Wreszcie znalazłam wygodne buty."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Zwykle wybieram imiona z długiej listy. (w sobotę · jedno imię)",
+          "answer": "W sobotę wybrałam jedno imię."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Co tydzień maluję jedną ścianę. (w weekend)",
+          "answer": "W weekend pomalowałam jedną ścianę."
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Cały dzień pakowałam rzeczy. (wieczorem · cała torba)",
+          "answer": "Wieczorem spakowałam całą torbę."
+        },
+        {
+          "id": "h3-6",
+          "prompt": "Codziennie uczę się oddychać. (na ostatnich zajęciach)",
+          "answer": "Na ostatnich zajęciach nauczyłam się oddychać."
+        }
+      ]
+    }
+  ]
 }

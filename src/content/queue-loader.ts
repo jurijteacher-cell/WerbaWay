@@ -167,13 +167,24 @@ function normalizeGrammar(raw: any): GrammarPyramidExercise {
       if (taskType === 'sentence-building' && first?.prompt && !first?.words) {
         taskType = 'text-transform';
       }
+      // drag bank → chip picker fill-in-blank (same UX as notebook prototype)
+      if (taskType === 'drag-and-drop') {
+        taskType = 'fill-in-blank';
+      }
+      const bank: string[] | undefined = Array.isArray(b.bank) ? b.bank : undefined;
       return {
         level: i + 1,
         name: b.title ?? `Poziom ${i + 1}`,
         task_type: taskType,
         instruction: b.instruction,
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        items: (b.items ?? []).map((it: any, j: number) => normalizeGrammarItem(it, j)),
+        items: (b.items ?? []).map((it: any, j: number) => {
+          const normalized = normalizeGrammarItem(it, j);
+          if (bank?.length && !normalized.options?.length && normalized.sentence) {
+            return { ...normalized, options: bank };
+          }
+          return normalized;
+        }),
       };
     }),
   };

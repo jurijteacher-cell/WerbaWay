@@ -1,53 +1,416 @@
 {
   "lesson_id": "pl-preg-02-kolejne-badania",
-  "exercise_type": "matching",
-  "title": "Aspekt dokonany i niedokonany — piramida ćwiczeń",
-  "instructions": "Ćwiczenia idą od najłatwiejszego do najtrudniejszego. Wykonuj po kolei.",
-  "levels": [
+  "exercise_type": "fill-in-blank",
+  "title": "Aspekt: od rozpoznawania do przekształcania",
+  "instruction": "Osiem bloków ułożonych od najłatwiejszego do najtrudniejszego. Przechodź po kolei — każdy dokłada jedną rzecz.",
+  "estimated_minutes": 25,
+  "blocks": [
     {
-      "level": 1,
-      "name": "Rozpoznawanie aspektu",
-      "task_type": "matching",
+      "block_id": "g1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rozgrzewka: proces czy wynik?",
+      "instruction": "Wybierz formę, która pasuje do słowa-sygnału w zdaniu.",
       "items": [
-        { "id": 1, "prompt": "robię badanie co miesiąc", "answer": "niedokonany, proces/regularność" },
-        { "id": 2, "prompt": "zrobiłam badanie wczoraj", "answer": "dokonany, zakończona czynność" },
-        { "id": 3, "prompt": "czekam na wyniki", "answer": "niedokonany, w trakcie" },
-        { "id": 4, "prompt": "poczekałam dwie godziny", "answer": "dokonany, zakończone" }
+        {
+          "id": "g1-1",
+          "text": "Co miesiąc ___ wyniki do karty ciąży.",
+          "options": [
+            "wpisuję",
+            "wpiszę"
+          ],
+          "answer": "wpisuję",
+          "explanation": "Co miesiąc to powtarzalność, więc forma niedokonana."
+        },
+        {
+          "id": "g1-2",
+          "text": "Wczoraj ___ ostatni wynik i zamknęłam kartę.",
+          "options": [
+            "wpisywałam",
+            "wpisałam"
+          ],
+          "answer": "wpisałam",
+          "explanation": "Jest efekt i koniec czynności, więc forma dokonana."
+        },
+        {
+          "id": "g1-3",
+          "text": "Zwykle ___ w poczekalni około dwudziestu minut.",
+          "options": [
+            "czekam",
+            "poczekam"
+          ],
+          "answer": "czekam",
+          "explanation": "Zwykle opisuje normalną, powtarzalną sytuację."
+        },
+        {
+          "id": "g1-4",
+          "text": "Wczoraj ___ pół godziny i wyszłam.",
+          "options": [
+            "czekałam",
+            "poczekałam"
+          ],
+          "answer": "poczekałam",
+          "explanation": "Zamknięty odcinek czasu z wynikiem: poczekałam i wyszłam."
+        },
+        {
+          "id": "g1-5",
+          "text": "Nagle ___ mi się słabo.",
+          "options": [
+            "robiło",
+            "zrobiło"
+          ],
+          "answer": "zrobiło",
+          "explanation": "Nagle to sygnał jednego momentu, a więc formy dokonanej."
+        },
+        {
+          "id": "g1-6",
+          "text": "Rano zawsze ___ sobie ciśnienie.",
+          "options": [
+            "mierzę",
+            "zmierzę"
+          ],
+          "answer": "mierzę",
+          "explanation": "Zawsze plus teraźniejszość: tylko forma niedokonana."
+        }
       ]
     },
     {
-      "level": 2,
-      "name": "Uzupełnianie — wybór formy",
-      "task_type": "fill-in-blank",
+      "block_id": "g2",
+      "exercise_type": "matching",
+      "title": "2. Pary aspektowe",
+      "instruction": "Połącz formę niedokonaną z jej parą dokonaną.",
       "items": [
-        { "id": 1, "sentence": "Codziennie ___ (brać / wziąć) witaminy.", "answer": "biorę" },
-        { "id": 2, "sentence": "Dziś rano ___ (brać / wziąć) tabletkę na mdłości.", "answer": "wzięłam" },
-        { "id": 3, "sentence": "Lekarz ___ (sprawdzać / sprawdzić) mój wynik i powiedział, że wszystko dobrze.", "answer": "sprawdził" }
+        {
+          "id": "g2-1",
+          "left": "robić",
+          "right": "zrobić"
+        },
+        {
+          "id": "g2-2",
+          "left": "mierzyć",
+          "right": "zmierzyć"
+        },
+        {
+          "id": "g2-3",
+          "left": "pytać",
+          "right": "zapytać"
+        },
+        {
+          "id": "g2-4",
+          "left": "oglądać",
+          "right": "obejrzeć"
+        },
+        {
+          "id": "g2-5",
+          "left": "brać",
+          "right": "wziąć"
+        },
+        {
+          "id": "g2-6",
+          "left": "mówić",
+          "right": "powiedzieć"
+        },
+        {
+          "id": "g2-7",
+          "left": "dawać",
+          "right": "dać"
+        },
+        {
+          "id": "g2-8",
+          "left": "zapisywać",
+          "right": "zapisać"
+        }
       ]
     },
     {
-      "level": 3,
-      "name": "Budowanie zdań: badania Agaty",
-      "task_type": "sentence-building",
+      "block_id": "g3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Teraz czy jutro?",
+      "instruction": "Forma dokonana nie ma czasu teraźniejszego. Sprawdź, jak to działa w praktyce.",
       "items": [
-        { "id": 1, "words": ["USG", "połówkowe", "zrobiłam", "wczoraj"], "answer": "Wczoraj zrobiłam USG połówkowe." },
-        { "id": 2, "words": ["co", "miesiąc", "robię", "morfologię", "krwi"], "answer": "Co miesiąc robię morfologię krwi." }
+        {
+          "id": "g3-1",
+          "text": "Teraz ___ formularz, daj mi dwie minuty.",
+          "options": [
+            "wypełniam",
+            "wypełnię"
+          ],
+          "answer": "wypełniam",
+          "explanation": "Teraźniejszość zawsze wymaga formy niedokonanej."
+        },
+        {
+          "id": "g3-2",
+          "text": "Jutro ___ wszystkie papiery i oddam je w rejestracji.",
+          "options": [
+            "wypełniam",
+            "wypełnię"
+          ],
+          "answer": "wypełnię",
+          "explanation": "Forma dokonana w tej postaci znaczy przyszłość, bez słowa będę."
+        },
+        {
+          "id": "g3-3",
+          "text": "W piątek cały dzień ___ na telefon z laboratorium.",
+          "options": [
+            "będę czekała",
+            "poczekam"
+          ],
+          "answer": "będę czekała",
+          "explanation": "Cały dzień to proces, więc będę plus forma niedokonana."
+        },
+        {
+          "id": "g3-4",
+          "text": "___ chwilę i zadzwonię jeszcze raz.",
+          "options": [
+            "Będę czekała",
+            "Poczekam"
+          ],
+          "answer": "Poczekam",
+          "explanation": "Krótka, zamknięta czynność z wyraźnym końcem."
+        },
+        {
+          "id": "g3-5",
+          "text": "Za tydzień ___ nową kartę ciąży.",
+          "options": [
+            "będę dostawała",
+            "dostanę"
+          ],
+          "answer": "dostanę",
+          "explanation": "Jedno zdarzenie w konkretnym momencie przyszłości."
+        },
+        {
+          "id": "g3-6",
+          "text": "Przez najbliższy miesiąc ___ dziennik codziennie.",
+          "options": [
+            "będę prowadziła",
+            "poprowadzę"
+          ],
+          "answer": "będę prowadziła",
+          "explanation": "Przez miesiąc to czas trwania, a nie jeden moment."
+        }
       ]
     },
     {
-      "level": 4,
-      "name": "Mieszana transformacja tekstu",
-      "task_type": "text-transform",
+      "block_id": "g4",
+      "exercise_type": "sentence-building",
+      "title": "4. Przekształcenia: regularnie → wczoraj",
+      "instruction": "Przepisz zdanie tak, żeby mówiło o jednym konkretnym dniu.",
       "items": [
-        { "id": 1, "prompt": "Uzupełnij tekst właściwymi formami: 'W ciąży (robić/zrobić) badania co miesiąc. Wczoraj (robić/zrobić) test na cukrzycę ciążową.'", "answer_hint": "W ciąży robię badania co miesiąc. Wczoraj zrobiłam test na cukrzycę ciążową." }
+        {
+          "id": "g4-1",
+          "prompt": "Co tydzień mierzę sobie ciśnienie. (wczoraj)",
+          "answer": "Wczoraj zmierzyłam sobie ciśnienie."
+        },
+        {
+          "id": "g4-2",
+          "prompt": "Zwykle pytam położną o wyniki. (w środę)",
+          "answer": "W środę zapytałam położną o wyniki."
+        },
+        {
+          "id": "g4-3",
+          "prompt": "Co miesiąc robię badanie moczu. (w poniedziałek)",
+          "answer": "W poniedziałek zrobiłam badanie moczu."
+        },
+        {
+          "id": "g4-4",
+          "prompt": "Często oglądam zdjęcia z USG. (wczoraj wieczorem)",
+          "answer": "Wczoraj wieczorem obejrzałam zdjęcia z USG."
+        },
+        {
+          "id": "g4-5",
+          "prompt": "Rano zawsze biorę witaminy. (dziś rano)",
+          "answer": "Dziś rano wzięłam witaminy."
+        },
+        {
+          "id": "g4-6",
+          "prompt": "Po każdej wizycie zapisuję jedno zdanie. (po ostatniej wizycie)",
+          "answer": "Po ostatniej wizycie zapisałam jedno zdanie."
+        }
       ]
     },
     {
-      "level": 5,
-      "name": "Produkcja swobodna",
-      "task_type": "open-answer",
+      "block_id": "g5",
+      "exercise_type": "sentence-building",
+      "title": "5. Plany na przyszłość",
+      "instruction": "Zbuduj zdanie o przyszłości. Zastanów się, czy to proces, czy jedno zdarzenie.",
       "items": [
-        { "id": 1, "prompt": "Napisz 2 zdania o swoich badaniach: jedno w aspekcie niedokonanym (co robisz regularnie), jedno w dokonanym (co już zrobiłaś raz)." }
+        {
+          "id": "g5-1",
+          "prompt": "jutro · czekać dwie godziny w laboratorium",
+          "answer": "Jutro będę czekała dwie godziny w laboratorium."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "w piątek · zrobić badanie krwi",
+          "answer": "W piątek zrobię badanie krwi."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "przez cały tydzień · mierzyć ciśnienie rano i wieczorem",
+          "answer": "Przez cały tydzień będę mierzyła ciśnienie rano i wieczorem."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "po weekendzie · odebrać wyniki z rejestracji",
+          "answer": "Po weekendzie odbiorę wyniki z rejestracji."
+        },
+        {
+          "id": "g5-5",
+          "prompt": "w środę · zapytać położną o krzywą cukrową",
+          "answer": "W środę zapytam położną o krzywą cukrową."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "exercise_type": "fill-in-blank",
+      "title": "6. Jeden dzień w laboratorium",
+      "instruction": "Siedem zdań, jedna historia. Wstaw właściwą formę czasownika z nawiasu.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Wczoraj Ola ___ (wstawać / wstać) o szóstej, bo była umówiona na czczo.",
+          "answer": "wstała"
+        },
+        {
+          "id": "g6-2",
+          "text": "Zwykle ___ (jeść / zjeść) śniadanie od razu, ale tego dnia wypiła tylko wodę.",
+          "answer": "je"
+        },
+        {
+          "id": "g6-3",
+          "text": "W poczekalni ___ (czekać / poczekać) czterdzieści minut.",
+          "answer": "czekała"
+        },
+        {
+          "id": "g6-4",
+          "text": "Pielęgniarka ___ (pobierać / pobrać) jej krew trzy razy.",
+          "answer": "pobrała"
+        },
+        {
+          "id": "g6-5",
+          "text": "Między pobraniami Ola ___ (czytać / przeczytać) książkę.",
+          "answer": "czytała"
+        },
+        {
+          "id": "g6-6",
+          "text": "O dwunastej ___ (wychodzić / wyjść) z laboratorium.",
+          "answer": "wyszła"
+        },
+        {
+          "id": "g6-7",
+          "text": "Wreszcie ___ (jeść / zjeść) kanapkę na ławce w parku.",
+          "answer": "zjadła"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "exercise_type": "drag-and-drop",
+      "title": "7. Po zacząć, skończyć, przestać",
+      "instruction": "Przeciągnij bezokolicznik w lukę. Dwa słowa nie pasują nigdzie — znajdź je.",
+      "bank": [
+        "prowadzić",
+        "wypełniać",
+        "chodzić",
+        "pić",
+        "myśleć",
+        "wypełnić",
+        "pójść"
+      ],
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Trzy miesiące temu zaczęłam ___ dziennik ciąży.",
+          "answer": "prowadzić"
+        },
+        {
+          "id": "g7-2",
+          "text": "Skończyłam ___ formularz i oddałam go w rejestracji.",
+          "answer": "wypełniać"
+        },
+        {
+          "id": "g7-3",
+          "text": "Od stycznia zaczęłam ___ na basen dwa razy w tygodniu.",
+          "answer": "chodzić"
+        },
+        {
+          "id": "g7-4",
+          "text": "Po pierwszej wizycie przestałam ___ kawę.",
+          "answer": "pić"
+        },
+        {
+          "id": "g7-5",
+          "text": "Wreszcie przestałam ___ o tym całymi wieczorami.",
+          "answer": "myśleć"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "exercise_type": "fill-in-blank",
+      "title": "8. Niuanse: ruch i przeczenie",
+      "instruction": "Tu decyduje jedno słowo w zdaniu. Po poprawnej odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "W każdą środę ___ do przychodni na zajęcia.",
+          "options": [
+            "idę",
+            "chodzę"
+          ],
+          "answer": "chodzę",
+          "explanation": "Czynność powtarzalna, tam i z powrotem: chodzę."
+        },
+        {
+          "id": "g8-2",
+          "text": "Właśnie ___ do gabinetu, zadzwonię za godzinę.",
+          "options": [
+            "idę",
+            "chodzę"
+          ],
+          "answer": "idę",
+          "explanation": "Teraz i w jedną stronę: idę."
+        },
+        {
+          "id": "g8-3",
+          "text": "Jutro ___ do nowej lekarki.",
+          "options": [
+            "będę chodziła",
+            "pójdę"
+          ],
+          "answer": "pójdę",
+          "explanation": "Jeden raz, konkretny cel, jedno wyjście: pójdę."
+        },
+        {
+          "id": "g8-4",
+          "text": "Jeszcze nie ___ wyników z rejestracji.",
+          "options": [
+            "odbierałam",
+            "odebrałam"
+          ],
+          "answer": "odebrałam",
+          "explanation": "Jeszcze nie łączy się z formą dokonaną: czynność miała się zdarzyć, ale się nie zdarzyła."
+        },
+        {
+          "id": "g8-5",
+          "text": "Nie musisz ___ tego badania na czczo.",
+          "options": [
+            "robić",
+            "zrobić"
+          ],
+          "answer": "robić",
+          "explanation": "Po nie musisz zawsze stoi forma niedokonana."
+        },
+        {
+          "id": "g8-6",
+          "text": "Nie chcę ___ dwóch godzin w kolejce.",
+          "options": [
+            "czekać",
+            "poczekać"
+          ],
+          "answer": "czekać",
+          "explanation": "Przeczenie z nie chcę wybiera proces, nie wynik."
+        }
       ]
     }
   ]

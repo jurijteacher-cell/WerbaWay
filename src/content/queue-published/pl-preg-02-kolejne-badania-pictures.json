@@ -1,45 +1,188 @@
 {
   "lesson_id": "pl-preg-02-kolejne-badania",
   "exercise_type": "picture-set",
-  "title": "Opisz, co widzisz",
-  "instructions": "Popatrz na obrazek i odpowiedz na pytanie pełnym zdaniem.",
-  "image_constraints": "WAŻNE dla Cursor: wybieraj WYŁĄCZNIE czyste zdjęcia bez żadnego widocznego tekstu, napisów, szyldów, cyfrowych wskazań czy znaków wodnych w innym języku. Jeśli zdjęcie zawiera jakikolwiek czytelny tekst — odrzuć je i szukaj dalej.",
+  "layout": "collage",
+  "layout_hints": {
+    "style": "polaroid-board",
+    "photo_frame": "polaroid",
+    "label_style": "tape",
+    "rotation_range": "-6..6",
+    "clusters": "dwa zdjęcia obok siebie, etykieta nad nimi, notatka pod spodem",
+    "phrase_notes": "wyrażenia z phrase_bank rozrzucone po planszy jako karteczki"
+  },
+  "title": "Opis zdjęć: dwa ujęcia jednego badania",
+  "instruction": "Sześć par. Opisz najpierw lewe zdjęcie, potem prawe, a na końcu powiedz, co je łączy. Mów pełnymi zdaniami.",
+  "estimated_minutes": 16,
+  "phrase_bank": [
+    "Na pierwszym zdjęciu widzę…",
+    "Na drugim zdjęciu natomiast…",
+    "To badanie robi się…, a tamto…",
+    "Wygląda na to, że ta pani właśnie…",
+    "Różnica polega na tym, że…",
+    "Obie sytuacje łączy to, że…"
+  ],
   "items": [
     {
-      "id": 1,
-      "image_keywords": "blood pressure measurement pregnant woman plain",
-      "question": "Co robi pielęgniarka? Po co mierzy się ciśnienie?",
-      "image_url": "/content/pl-preg-02-kolejne-badania/pic-1.jpg"
+      "id": "p1",
+      "label": "Krew",
+      "note": "ramię → probówka",
+      "images": [
+        {
+          "role": "u pacjentki",
+          "image_keywords": "nurse taking blood sample arm",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Pielęgniarka pobiera krew z ramienia pacjentki",
+          "image_url": "/content/pl-preg-02-kolejne-badania/pic-1a.jpg"
+        },
+        {
+          "role": "w laboratorium",
+          "image_keywords": "laboratory technician test tubes",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Pracownik laboratorium przy stole z probówkami",
+          "image_url": "/content/pl-preg-02-kolejne-badania/pic-1b.jpg"
+        }
+      ],
+      "question": "Co się dzieje na każdym zdjęciu? Jak myślisz, ile czasu mija między tymi dwoma momentami?",
+      "image_url": "/content/pl-preg-02-kolejne-badania/pic-1a.jpg",
+      "alt": "Pielęgniarka pobiera krew z ramienia pacjentki",
+      "image_keywords": "nurse taking blood sample arm"
     },
     {
-      "id": 2,
-      "image_keywords": "glucose drink test tube laboratory plain no text",
-      "question": "Jak myślisz, do jakiego badania służy ten płyn?",
-      "image_url": "/content/pl-preg-02-kolejne-badania/pic-2.jpg"
+      "id": "p2",
+      "label": "Gabinet",
+      "note": "rozmowa i badanie",
+      "images": [
+        {
+          "role": "przy biurku",
+          "image_keywords": "pregnant woman talking with doctor",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Kobieta w ciąży rozmawia z lekarką przy biurku",
+          "image_url": "/content/pl-preg-02-kolejne-badania/pic-2a.jpg"
+        },
+        {
+          "role": "na kozetce",
+          "image_keywords": "doctor examining pregnant patient",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Lekarka bada kobietę w ciąży leżącą na kozetce",
+          "image_url": "/content/pl-preg-02-kolejne-badania/pic-2b.jpg"
+        }
+      ],
+      "question": "Która część wizyty jest ważniejsza: rozmowa czy badanie? Opisz obie sytuacje i uzasadnij.",
+      "image_url": "/content/pl-preg-02-kolejne-badania/pic-2a.jpg",
+      "alt": "Kobieta w ciąży rozmawia z lekarką przy biurku",
+      "image_keywords": "pregnant woman talking with doctor"
     },
     {
-      "id": 3,
-      "image_keywords": "ultrasound screen mid pregnancy plain no text",
-      "question": "Co lekarz mógł zobaczyć na tym badaniu?",
-      "image_url": "/content/pl-preg-02-kolejne-badania/pic-3.jpg"
+      "id": "p3",
+      "label": "USG",
+      "note": "aparat i ludzie",
+      "images": [
+        {
+          "role": "podczas badania",
+          "image_keywords": "pregnant woman ultrasound examination",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Kobieta w ciąży podczas badania USG",
+          "image_url": "/content/pl-preg-02-kolejne-badania/pic-3a.jpg"
+        },
+        {
+          "role": "po badaniu",
+          "image_keywords": "couple smiling doctor office",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Uśmiechnięta para w gabinecie lekarskim",
+          "image_url": "/content/pl-preg-02-kolejne-badania/pic-3b.jpg"
+        }
+      ],
+      "question": "Opisz twarze ludzi na obu zdjęciach. Co się mogło wydarzyć między jednym a drugim momentem?",
+      "image_url": "/content/pl-preg-02-kolejne-badania/pic-3a.jpg",
+      "alt": "Kobieta w ciąży podczas badania USG",
+      "image_keywords": "pregnant woman ultrasound examination"
     },
     {
-      "id": 4,
-      "image_keywords": "measuring tape pregnant belly plain no text",
-      "question": "Co mierzy lekarz i po co?",
-      "image_url": "/content/pl-preg-02-kolejne-badania/pic-4.jpg"
+      "id": "p4",
+      "label": "Krzywa cukrowa",
+      "note": "wypić i czekać",
+      "images": [
+        {
+          "role": "roztwór",
+          "image_keywords": "glass of sweet drink table",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Szklanka słodkiego napoju na stole",
+          "image_url": "/content/pl-preg-02-kolejne-badania/pic-4a.jpg"
+        },
+        {
+          "role": "dwie godziny",
+          "image_keywords": "woman waiting clinic hallway chairs",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Kobieta czeka na krześle w korytarzu przychodni",
+          "image_url": "/content/pl-preg-02-kolejne-badania/pic-4b.jpg"
+        }
+      ],
+      "question": "Co trzeba zrobić przed tym badaniem, a co w jego trakcie? Powiedz, co robi ta pani na drugim zdjęciu.",
+      "image_url": "/content/pl-preg-02-kolejne-badania/pic-4a.jpg",
+      "alt": "Szklanka słodkiego napoju na stole",
+      "image_keywords": "glass of sweet drink table"
     },
     {
-      "id": 5,
-      "image_keywords": "swollen feet pregnancy plain no text",
-      "question": "Co to za objaw i czy jest normalny w ciąży?",
-      "image_url": "/content/pl-preg-02-kolejne-badania/pic-5.jpg"
+      "id": "p5",
+      "label": "Nogi wieczorem",
+      "note": "objaw i odpoczynek",
+      "images": [
+        {
+          "role": "koniec dnia",
+          "image_keywords": "tired feet resting pillow",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Stopy oparte na poduszce na kanapie",
+          "image_url": "/content/pl-preg-02-kolejne-badania/pic-5a.jpg"
+        },
+        {
+          "role": "rano",
+          "image_keywords": "pregnant woman walking park",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Kobieta w ciąży spaceruje po parku",
+          "image_url": "/content/pl-preg-02-kolejne-badania/pic-5b.jpg"
+        }
+      ],
+      "question": "Dlaczego wieczorem czujemy się inaczej niż rano? Co pomaga na obrzęki nóg?",
+      "image_url": "/content/pl-preg-02-kolejne-badania/pic-5a.jpg",
+      "alt": "Stopy oparte na poduszce na kanapie",
+      "image_keywords": "tired feet resting pillow"
     },
     {
-      "id": 6,
-      "image_keywords": "medical test results paper plain no text visible",
-      "question": "Co pacjentka może odczytać z takiego wyniku?",
-      "image_url": "/content/pl-preg-02-kolejne-badania/pic-6.jpg"
+      "id": "p6",
+      "label": "Papiery",
+      "note": "teczka → rozmowa",
+      "images": [
+        {
+          "role": "w domu",
+          "image_keywords": "medical documents folder desk",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Teczka z dokumentami medycznymi na biurku",
+          "image_url": "/content/pl-preg-02-kolejne-badania/pic-6a.jpg"
+        },
+        {
+          "role": "w przychodni",
+          "image_keywords": "reception desk clinic staff",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Rejestracja w przychodni z pracownicą za ladą",
+          "image_url": "/content/pl-preg-02-kolejne-badania/pic-6b.jpg"
+        }
+      ],
+      "question": "Jakie dokumenty warto mieć zawsze przy sobie? Odegraj krótką rozmowę przy drugim zdjęciu.",
+      "image_url": "/content/pl-preg-02-kolejne-badania/pic-6a.jpg",
+      "alt": "Teczka z dokumentami medycznymi na biurku",
+      "image_keywords": "medical documents folder desk"
     }
   ]
 }
