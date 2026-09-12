@@ -1,0 +1,53 @@
+{
+  "lesson_id": "pl-a0-trial-01-alfabet",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: te same reguły, nowe słowa",
+  "instruction": "Nothing here appeared in the lesson. Same rules, new material — that is the whole point. Twenty minutes, not more.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "matching",
+      "title": "1. Słowa, które już znasz",
+      "instruction": "Match the Polish word with its English meaning. You have never seen these words, and you will still get them all.",
+      "items": [
+        { "id": "h1-1", "left": "telefon", "right": "telephone" },
+        { "id": "h1-2", "left": "komputer", "right": "computer" },
+        { "id": "h1-3", "left": "adres", "right": "address" },
+        { "id": "h1-4", "left": "numer", "right": "number" },
+        { "id": "h1-5", "left": "problem", "right": "problem" },
+        { "id": "h1-6", "left": "teatr", "right": "theatre" },
+        { "id": "h1-7", "left": "bank", "right": "bank" },
+        { "id": "h1-8", "left": "lekcja", "right": "lesson" }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Przeczytaj nowe słowo",
+      "instruction": "Say the word out loud, then choose how it sounds. All six words are new.",
+      "items": [
+        { "id": "h2-1", "text": "żółty (yellow) → ___", "answer": "ZHOOW-ty", "options": ["ZHOOW-ty", "ZOL-ty"], "explanation": "ż = zh, ó = u, ł = w. Trzy reguły w jednym krótkim słowie." },
+        { "id": "h2-2", "text": "śniadanie (breakfast) → ___", "answer": "shnya-DA-nyeh", "options": ["sni-a-DA-ni-e", "shnya-DA-nyeh"], "explanation": "ś to miękkie sh, a i po n zmiękcza n do ń." },
+        { "id": "h2-3", "text": "dziewczyna (girl) → ___", "answer": "jef-CHI-na", "options": ["dzi-ev-CHI-na", "jef-CHI-na"], "explanation": "dzi = dź czyli miękkie j, w przed cz traci dźwięczność i brzmi jak f." },
+        { "id": "h2-4", "text": "chłopiec (boy) → ___", "answer": "HWO-pyets", "options": ["CHLO-pik", "HWO-pyets"], "explanation": "ch = h, ł = w, c na końcu = ts." },
+        { "id": "h2-5", "text": "kościół (church) → ___", "answer": "KOSH-choow", "options": ["kos-ki-OL", "KOSH-choow"], "explanation": "ś = miękkie sh, ci = ć, ó = u, ł = w. Cztery reguły naraz." },
+        { "id": "h2-6", "text": "wrzesień (September) → ___", "answer": "VZHE-shen", "options": ["vr-ZE-si-en", "VZHE-shen"], "explanation": "w = v, rz = zh, si = ś, ń = ny." }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Sześć nowych miast",
+      "instruction": "Write how each city sounds. Mark the stress with capital letters.",
+      "items": [
+        { "id": "h3-1", "prompt": "Toruń", "answer": "TOH-roony" },
+        { "id": "h3-2", "prompt": "Lublin", "answer": "LOOB-leen" },
+        { "id": "h3-3", "prompt": "Gdynia", "answer": "GDI-nya" },
+        { "id": "h3-4", "prompt": "Rzeszów", "answer": "ZHE-shoof" },
+        { "id": "h3-5", "prompt": "Bydgoszcz", "answer": "BID-goshch" },
+        { "id": "h3-6", "prompt": "Częstochowa", "answer": "chen-sto-HO-va" }
+      ]
+    }
+  ]
+}

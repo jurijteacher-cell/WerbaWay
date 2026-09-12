@@ -1,0 +1,189 @@
+{
+  "lesson_id": "pl-a0-trial-01-alfabet",
+  "exercise_type": "picture-set",
+  "layout": "collage",
+  "layout_hints": {
+    "style": "polaroid-board",
+    "photo_frame": "polaroid",
+    "label_style": "tape",
+    "rotation_range": "-6..6",
+    "clusters": "dwa zdjęcia obok siebie, etykieta na skotczu nad parą zawiera POLSKIE SŁOWO, notatka pod spodem to wymowa",
+    "phrase_notes": "wyrażenia z phrase_bank rozrzucone po planszy jako karteczki",
+    "label_is_target": "etykieta nie jest podpisem do zdjęć, tylko materiałem do przeczytania — musi być duża i czytelna"
+  },
+  "title": "Czytam polskie znaki",
+  "instruction": "Read the word on the tape OUT LOUD first. Only then look at the photos and say what the place is. Reading comes before understanding — that is the point of this exercise.",
+  "estimated_minutes": 14,
+  "phrase_bank": [
+    "To jest…",
+    "Tu jest…",
+    "Poproszę…",
+    "Ile to kosztuje?",
+    "Nie rozumiem.",
+    "Dziękuję."
+  ],
+  "items": [
+    {
+      "id": "p1",
+      "label": "RESTAURACJA",
+      "note": "res-tau-RAH-tsyah",
+      "images": [
+        {
+          "role": "miejsce",
+          "image_keywords": "restaurant tables chairs interior",
+          "source": "stock",
+          "orientation": "landscape",
+          "alt": "Wnętrze restauracji ze stolikami",
+          "image_url": "/content/pl-a0-trial-01-alfabet/pic-1.jpg"
+        },
+        {
+          "role": "sytuacja",
+          "image_keywords": "waiter serving plate table",
+          "source": "stock",
+          "orientation": "landscape",
+          "alt": "Kelner podaje danie przy stoliku",
+          "image_url": "/content/pl-a0-trial-01-alfabet/pic-1b.jpg"
+        }
+      ],
+      "question": "Przeczytaj słowo. Co to jest? Co tu mówisz na początku?",
+      "image_url": "/content/pl-a0-trial-01-alfabet/pic-1.jpg",
+      "alt": "Wnętrze restauracji ze stolikami",
+      "image_keywords": "restaurant tables chairs interior"
+    },
+    {
+      "id": "p2",
+      "label": "APTEKA",
+      "note": "ahp-TEH-kah",
+      "images": [
+        {
+          "role": "miejsce",
+          "image_keywords": "pharmacy shop front street",
+          "source": "stock",
+          "orientation": "landscape",
+          "alt": "Witryna apteki od strony ulicy",
+          "image_url": "/content/pl-a0-trial-01-alfabet/pic-2.jpg"
+        },
+        {
+          "role": "sytuacja",
+          "image_keywords": "pharmacist counter medicine boxes",
+          "source": "stock",
+          "orientation": "landscape",
+          "alt": "Farmaceuta przy ladzie z lekami",
+          "image_url": "/content/pl-a0-trial-01-alfabet/pic-2b.jpg"
+        }
+      ],
+      "question": "Przeczytaj słowo. Litera „a” na początku i na końcu — czy brzmi tak samo?",
+      "image_url": "/content/pl-a0-trial-01-alfabet/pic-2.jpg",
+      "alt": "Witryna apteki od strony ulicy",
+      "image_keywords": "pharmacy shop front street"
+    },
+    {
+      "id": "p3",
+      "label": "STACJA",
+      "note": "STAH-tsyah",
+      "images": [
+        {
+          "role": "miejsce",
+          "image_keywords": "train station platform tracks",
+          "source": "stock",
+          "orientation": "landscape",
+          "alt": "Peron kolejowy z torami",
+          "image_url": "/content/pl-a0-trial-01-alfabet/pic-3.jpg"
+        },
+        {
+          "role": "sytuacja",
+          "image_keywords": "departure board travellers hall",
+          "source": "stock",
+          "orientation": "landscape",
+          "alt": "Tablica odjazdów w hali dworca",
+          "image_url": "/content/pl-a0-trial-01-alfabet/pic-3b.jpg"
+        }
+      ],
+      "question": "Przeczytaj słowo. Jakie angielskie słowo się w nim ukrywa?",
+      "image_url": "/content/pl-a0-trial-01-alfabet/pic-3.jpg",
+      "alt": "Peron kolejowy z torami",
+      "image_keywords": "train station platform tracks"
+    },
+    {
+      "id": "p4",
+      "label": "HOTEL",
+      "note": "HOH-tel",
+      "images": [
+        {
+          "role": "miejsce",
+          "image_keywords": "hotel reception desk lobby",
+          "source": "stock",
+          "orientation": "landscape",
+          "alt": "Recepcja hotelowa w lobby",
+          "image_url": "/content/pl-a0-trial-01-alfabet/pic-4.jpg"
+        },
+        {
+          "role": "sytuacja",
+          "image_keywords": "hotel room bed window",
+          "source": "stock",
+          "orientation": "landscape",
+          "alt": "Pokój hotelowy z łóżkiem i oknem",
+          "image_url": "/content/pl-a0-trial-01-alfabet/pic-4b.jpg"
+        }
+      ],
+      "question": "Przeczytaj słowo. Gdzie pada akcent — na pierwszej czy na drugiej sylabie?",
+      "image_url": "/content/pl-a0-trial-01-alfabet/pic-4.jpg",
+      "alt": "Recepcja hotelowa w lobby",
+      "image_keywords": "hotel reception desk lobby"
+    },
+    {
+      "id": "p5",
+      "label": "MUZEUM",
+      "note": "moo-ZEH-oom",
+      "images": [
+        {
+          "role": "miejsce",
+          "image_keywords": "museum gallery visitors paintings",
+          "source": "stock",
+          "orientation": "landscape",
+          "alt": "Sala muzealna ze zwiedzającymi",
+          "image_url": "/content/pl-a0-trial-01-alfabet/pic-5.jpg"
+        },
+        {
+          "role": "sytuacja",
+          "image_keywords": "museum ticket desk entrance",
+          "source": "stock",
+          "orientation": "landscape",
+          "alt": "Kasa biletowa przy wejściu do muzeum",
+          "image_url": "/content/pl-a0-trial-01-alfabet/pic-5b.jpg"
+        }
+      ],
+      "question": "Przeczytaj słowo. Ile ma sylab? Policz je na palcach.",
+      "image_url": "/content/pl-a0-trial-01-alfabet/pic-5.jpg",
+      "alt": "Sala muzealna ze zwiedzającymi",
+      "image_keywords": "museum gallery visitors paintings"
+    },
+    {
+      "id": "p6",
+      "label": "INFORMACJA",
+      "note": "een-for-MAH-tsyah",
+      "images": [
+        {
+          "role": "miejsce",
+          "image_keywords": "information desk airport terminal",
+          "source": "stock",
+          "orientation": "landscape",
+          "alt": "Punkt informacji w terminalu lotniska",
+          "image_url": "/content/pl-a0-trial-01-alfabet/pic-6.jpg"
+        },
+        {
+          "role": "sytuacja",
+          "image_keywords": "tourist asking directions map",
+          "source": "stock",
+          "orientation": "landscape",
+          "alt": "Turysta pyta o drogę, trzymając mapę",
+          "image_url": "/content/pl-a0-trial-01-alfabet/pic-6b.jpg"
+        }
+      ],
+      "question": "Przeczytaj słowo. Znajdź w nim regułę: angielskie „-tion” to polskie „-cja”.",
+      "image_url": "/content/pl-a0-trial-01-alfabet/pic-6.jpg",
+      "alt": "Punkt informacji w terminalu lotniska",
+      "image_keywords": "information desk airport terminal"
+    }
+  ]
+}

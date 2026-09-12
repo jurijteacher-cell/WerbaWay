@@ -1,0 +1,125 @@
+{
+  "lesson_id": "pl-a0-trial-01-alfabet",
+  "exercise_type": "fill-in-blank",
+  "title": "Jak czytać po polsku: od dźwięku do akapitu",
+  "instruction": "Eight blocks, easiest first. Do them in order — each one adds exactly one new thing.",
+  "estimated_minutes": 24,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rozgrzewka: fałszywi przyjaciele",
+      "instruction": "Choose the real Polish sound.",
+      "items": [
+        { "id": "g1-1", "text": "W słowie „woda” litera w brzmi jak ___.", "answer": "v", "options": ["v", "w"], "explanation": "Polskie w to zawsze angielskie v. Litery w w angielskim znaczeniu w polskim nie ma." },
+        { "id": "g1-2", "text": "W słowie „jutro” litera j brzmi jak ___.", "answer": "y", "options": ["j", "y"], "explanation": "j = y jak w „yes”. Dźwięku j jak w „jam” szuka się pod literą dż." },
+        { "id": "g1-3", "text": "W słowie „cena” litera c brzmi jak ___.", "answer": "ts", "options": ["s", "ts", "k"], "explanation": "c = ts jak w „cats”. Nigdy s, nigdy k." },
+        { "id": "g1-4", "text": "W słowie „mały” litera ł brzmi jak ___.", "answer": "w", "options": ["l", "w"], "explanation": "ł to jedyna litera, która wygląda jak L i nie jest L. To w jak w „water”." },
+        { "id": "g1-5", "text": "Litery ó i u brzmią ___.", "answer": "tak samo", "options": ["tak samo", "inaczej"], "explanation": "Dwa zapisy, jeden dźwięk: oo jak w „food”. To tylko historia pisowni." },
+        { "id": "g1-6", "text": "W słowie „syn” litera y brzmi jak w angielskim ___.", "answer": "bit", "options": ["see", "bit", "by"], "explanation": "y to krótki dźwięk jak w „bit”. Nigdy „aj” i nigdy „i” jak w „see”." }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "exercise_type": "matching",
+      "title": "2. Litera i jej dźwięk",
+      "instruction": "Click the Polish letter, then its English sound.",
+      "items": [
+        { "id": "g2-1", "left": "sz", "right": "sh jak w „ship”" },
+        { "id": "g2-2", "left": "cz", "right": "ch jak w „church”" },
+        { "id": "g2-3", "left": "rz", "right": "s jak w „pleasure”" },
+        { "id": "g2-4", "left": "ch", "right": "h jak w szkockim „loch”" },
+        { "id": "g2-5", "left": "dz", "right": "ds jak w „kids”" },
+        { "id": "g2-6", "left": "dż", "right": "j jak w „jam”" },
+        { "id": "g2-7", "left": "ń", "right": "ny jak w „canyon”" },
+        { "id": "g2-8", "left": "ą", "right": "on jak we francuskim „bon”" }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Wybierz poprawną wymowę",
+      "instruction": "One of the two is how an English speaker guesses. The other one is Polish.",
+      "items": [
+        { "id": "g3-1", "text": "Warszawa → ___", "answer": "var-SHA-va", "options": ["war-SAW-a", "var-SHA-va"], "explanation": "w = v, sz = sh, akcent na przedostatniej sylabie." },
+        { "id": "g3-2", "text": "Kraków → ___", "answer": "KRA-kuf", "options": ["KRA-kov", "KRA-kuf"], "explanation": "ó = u, a w na końcu słowa traci dźwięczność i brzmi jak f." },
+        { "id": "g3-3", "text": "cześć → ___", "answer": "cheshch", "options": ["chest", "cheshch"], "explanation": "cz = ch, ś = miękkie sh, ć = miękkie ch. Trzy dźwięki, żadnego t." },
+        { "id": "g3-4", "text": "dziękuję → ___", "answer": "jen-KOO-yeh", "options": ["dzi-en-KOO-yoo", "jen-KOO-yeh"], "explanation": "dzi na początku sylaby to dź, czyli miękkie j. Końcowe ę brzmi prawie jak e." },
+        { "id": "g3-5", "text": "Łódź → ___", "answer": "wooch", "options": ["lodz", "wooch"], "explanation": "ł = w, ó = u, a dź na końcu słowa traci dźwięczność i brzmi jak ć." },
+        { "id": "g3-6", "text": "herbata → ___", "answer": "her-BA-ta", "options": ["HER-ba-ta", "her-BA-ta"], "explanation": "Akcent liczymy od końca: przedostatnia sylaba to BA." }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "exercise_type": "drag-and-drop",
+      "title": "4. Wstaw brakującą literę",
+      "instruction": "Drag the right letter into the gap. Two letters in the bank fit nowhere.",
+      "bank": ["ł", "ż", "ś", "cz", "ó", "ń", "ą", "dz"],
+      "items": [
+        { "id": "g4-1", "text": "ma___y (small) — brzmi: MA-wy", "answer": "ł" },
+        { "id": "g4-2", "text": "___ona (wife) — brzmi: ZHO-na", "answer": "ż" },
+        { "id": "g4-3", "text": "___roda (Wednesday) — brzmi: SHRO-da", "answer": "ś" },
+        { "id": "g4-4", "text": "___as (time) — brzmi: chas", "answer": "cz" },
+        { "id": "g4-5", "text": "g___ra (mountain) — brzmi: GOO-ra", "answer": "ó" },
+        { "id": "g4-6", "text": "ko___ (horse) — brzmi: kony", "answer": "ń" }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "exercise_type": "sentence-building",
+      "title": "5. Przeczytaj miasto",
+      "instruction": "Write how the city sounds. Capital letters mark the stressed syllable.",
+      "items": [
+        { "id": "g5-1", "prompt": "Szczecin", "answer": "SHCHE-cheen" },
+        { "id": "g5-2", "prompt": "Gdańsk", "answer": "gdahnsk" },
+        { "id": "g5-3", "prompt": "Poznań", "answer": "POZ-nany" },
+        { "id": "g5-4", "prompt": "Wrocław", "answer": "VROTS-wahf" },
+        { "id": "g5-5", "prompt": "Świnoujście", "answer": "shvee-no-OOYSH-cheh" },
+        { "id": "g5-6", "prompt": "Szczebrzeszyn", "answer": "shcheb-ZHE-shin" }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "exercise_type": "fill-in-blank",
+      "title": "6. Cały akapit",
+      "instruction": "Read the paragraph out loud first. Then fill the gaps — every missing word is one you already know.",
+      "items": [
+        { "id": "g6-1", "text": "___ dobry! Mam na imię Tom.", "answer": "Dzień", "explanation": "Dzień dobry to powitanie bezpieczne w każdej sytuacji." },
+        { "id": "g6-2", "text": "Jestem ___ Anglii, mieszkam w Londynie.", "answer": "z", "explanation": "z plus nazwa kraju: z Anglii, z Polski, z Ukrainy." },
+        { "id": "g6-3", "text": "___ się polskiego od jednego dnia.", "answer": "Uczę", "explanation": "Uczę się polskiego — zdanie, którym otworzysz każdą rozmowę w Polsce." },
+        { "id": "g6-4", "text": "Nie rozumiem wszystkiego, ale mówię ___ po polsku.", "answer": "trochę", "explanation": "trochę brzmi TRO-heh: ch to jedno h, nie dwa dźwięki." },
+        { "id": "g6-5", "text": "___ to jest kawa, a to jest woda.", "answer": "Tu", "explanation": "Tu jest… to najprostszy sposób pokazania czegoś palcem i nazwania." },
+        { "id": "g6-6", "text": "Dziękuję i do ___!", "answer": "widzenia", "explanation": "Do widzenia brzmi doh vee-DZE-nya. dz to jeden dźwięk, jak w „kids”." }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "exercise_type": "fill-in-blank",
+      "title": "7. Niuans: twarde czy miękkie",
+      "instruction": "Two sounds that English writes the same way. Polish does not.",
+      "items": [
+        { "id": "g7-1", "text": "szafa — pierwsza litera to dźwięk ___.", "answer": "twardy", "options": ["twardy", "miękki"], "explanation": "sz to twarde sh, język cofnięty. ś to miękkie sh, język przy zębach." },
+        { "id": "g7-2", "text": "środa — pierwsza litera to dźwięk ___.", "answer": "miękki", "options": ["twardy", "miękki"], "explanation": "ś z kreską zawsze oznacza miękkość. Kreska to instrukcja dla języka." },
+        { "id": "g7-3", "text": "czas i ciasto zaczynają się ___.", "answer": "inaczej", "options": ["tak samo", "inaczej"], "explanation": "cz to twarde ch, ci to miękkie ć. Dla Polaka to dwa różne słowa, nie akcent." },
+        { "id": "g7-4", "text": "żona i źle zaczynają się ___.", "answer": "inaczej", "options": ["tak samo", "inaczej"], "explanation": "ż z kropką to twardy dźwięk z „vision”, ź z kreską to jego miękka wersja." },
+        { "id": "g7-5", "text": "rz i ż brzmią ___.", "answer": "tak samo", "options": ["tak samo", "inaczej"], "explanation": "Jedyna para, która naprawdę brzmi identycznie. Różnicę widać tylko w pisowni." }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "exercise_type": "sentence-building",
+      "title": "8. Reguła -tion → -cja",
+      "instruction": "Turn the English word into Polish. One rule, a hundred words.",
+      "items": [
+        { "id": "g8-1", "prompt": "information", "answer": "informacja" },
+        { "id": "g8-2", "prompt": "station", "answer": "stacja" },
+        { "id": "g8-3", "prompt": "situation", "answer": "sytuacja" },
+        { "id": "g8-4", "prompt": "tradition", "answer": "tradycja" },
+        { "id": "g8-5", "prompt": "revolution", "answer": "rewolucja" },
+        { "id": "g8-6", "prompt": "operation", "answer": "operacja" },
+        { "id": "g8-7", "prompt": "organisation", "answer": "organizacja" },
+        { "id": "g8-8", "prompt": "police", "answer": "policja" }
+      ]
+    }
+  ]
+}
