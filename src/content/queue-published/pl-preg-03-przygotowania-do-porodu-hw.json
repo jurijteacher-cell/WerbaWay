@@ -1,0 +1,77 @@
+{
+  "lesson_id": "pl-preg-03-przygotowania-do-porodu",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: rozkazy w domu i w drodze",
+  "instruction": "Trzy bloki. Żadne zdanie nie powtarza się z lekcji — ta sama gramatyka na zupełnie innym materiale.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "drag-and-drop",
+      "title": "1. Notatka dla sąsiadki",
+      "instruction": "Wyjeżdżasz na kilka dni. Przeciągnij właściwą formę w lukę. Dwa słowa nie pasują nigdzie.",
+      "bank": ["podlej", "nakarm", "otwórz", "zostaw", "sprawdź", "podlewać", "nakarmić"],
+      "items": [
+        { "id": "h1-1", "text": "___ kwiaty na balkonie co drugi dzień.", "answer": "podlej" },
+        { "id": "h1-2", "text": "___ kota rano i wieczorem.", "answer": "nakarm" },
+        { "id": "h1-3", "text": "___ okno w sypialni na dziesięć minut.", "answer": "otwórz" },
+        { "id": "h1-4", "text": "Klucze ___ u siebie, nie wrzucaj ich do skrzynki.", "answer": "zostaw" },
+        { "id": "h1-5", "text": "___ skrzynkę na listy w piątek.", "answer": "sprawdź" }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Zbuduj formę",
+      "instruction": "Wstaw formę rozkazującą czasownika z nawiasu. Uważaj na przeczenie.",
+      "items": [
+        { "id": "h2-1", "text": "___ (zamknąć) drzwi na klucz, wychodzimy ostatni.", "answer": "Zamknij" },
+        { "id": "h2-2", "text": "Nie ___ (włączać) pralki w nocy, sąsiedzi śpią.", "answer": "włączaj" },
+        { "id": "h2-3", "text": "___ (wyjąć) chleb z zamrażarki godzinę wcześniej.", "answer": "Wyjmij" },
+        { "id": "h2-4", "text": "___ (pić) dużo wody, na dworze jest gorąco.", "answer": "Pij" },
+        { "id": "h2-5", "text": "___ (być) przy telefonie między szóstą a ósmą.", "answer": "Bądź" },
+        { "id": "h2-6", "text": "Nie ___ (zapominać) o kluczach od piwnicy.", "answer": "zapominaj" },
+        { "id": "h2-7", "text": "___ (wziąć) parasol, zapowiadali burzę.", "answer": "Weź" },
+        { "id": "h2-8", "text": "___ (kupić) mleko po drodze z pracy.", "answer": "Kup" }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Przekształcenia",
+      "instruction": "Zamień zdanie zgodnie z podpowiedzią w nawiasie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Proszę nie zostawiać bagażu bez opieki. (ty)",
+          "answer": "Nie zostawiaj bagażu bez opieki."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Proszę wysiąść na następnym przystanku. (ty)",
+          "answer": "Wysiądź na następnym przystanku."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Zamknij okno w kuchni. (proszę)",
+          "answer": "Proszę zamknąć okno w kuchni."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Wyłącz światło na korytarzu. (wy)",
+          "answer": "Wyłączcie światło na korytarzu."
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Idziemy na spacer. (propozycja: my)",
+          "answer": "Idźmy na spacer."
+        },
+        {
+          "id": "h3-6",
+          "prompt": "Pan wejdzie do środka. (niech)",
+          "answer": "Niech pan wejdzie do środka."
+        }
+      ]
+    }
+  ]
+}

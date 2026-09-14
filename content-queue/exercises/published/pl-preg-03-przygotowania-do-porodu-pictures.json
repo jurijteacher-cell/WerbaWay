@@ -1,0 +1,170 @@
+{
+  "lesson_id": "pl-preg-03-przygotowania-do-porodu",
+  "exercise_type": "picture-set",
+  "layout": "collage",
+  "layout_hints": {
+    "style": "polaroid-board",
+    "photo_frame": "polaroid",
+    "label_style": "tape",
+    "rotation_range": "-6..6",
+    "clusters": "dwa zdjęcia obok siebie, etykieta nad nimi, notatka pod spodem",
+    "phrase_notes": "wyrażenia z phrase_bank rozrzucone po planszy jako karteczki"
+  },
+  "title": "Opis zdjęć: ostatnie tygodnie",
+  "instruction": "Sześć par. Opisz jedno zdjęcie, potem drugie, a na końcu powiedz, co trzeba zrobić w takiej sytuacji — w formie rozkazującej.",
+  "estimated_minutes": 16,
+  "phrase_bank": [
+    "Na tym zdjęciu ktoś właśnie…",
+    "Najpierw…, a dopiero potem…",
+    "Przed wyjazdem do szpitala trzeba…",
+    "Ja na pewno wzięłabym…",
+    "To wygląda spokojnie, chociaż…",
+    "Moim zdaniem najważniejsze jest to, że…"
+  ],
+  "items": [
+    {
+      "id": "p1",
+      "label": "Zajęcia",
+      "note": "piłka i oddech",
+      "images": [
+        {
+          "role": "grupa",
+          "image_keywords": "pregnant women exercise ball class",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Grupa kobiet w ciąży ćwiczy na dużych piłkach",
+          "image_url": "/content/pl-preg-03-przygotowania-do-porodu/pic-1.jpg"
+        },
+        {
+          "role": "w parze",
+          "image_keywords": "couple prenatal class breathing",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Para ćwiczy oddychanie na zajęciach",
+          "image_url": "/content/pl-preg-03-przygotowania-do-porodu/pic-1-dzis.jpg"
+        }
+      ],
+      "question": "Co robią te osoby? Powiedz trzy polecenia, które może teraz mówić instruktorka."
+    },
+    {
+      "id": "p2",
+      "label": "Pakowanie",
+      "note": "rozłożone → zamknięte",
+      "images": [
+        {
+          "role": "przed",
+          "image_keywords": "baby clothes laid on bed",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Ubranka dla niemowlęcia rozłożone na łóżku",
+          "image_url": "/content/pl-preg-03-przygotowania-do-porodu/pic-2.jpg"
+        },
+        {
+          "role": "po",
+          "image_keywords": "packed bag near front door",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Spakowana torba stoi przy drzwiach wejściowych",
+          "image_url": "/content/pl-preg-03-przygotowania-do-porodu/pic-2-dzis.jpg"
+        }
+      ],
+      "question": "Co widzisz na pierwszym zdjęciu, a co na drugim? Wymień pięć rzeczy, które musisz spakować."
+    },
+    {
+      "id": "p3",
+      "label": "Sala",
+      "note": "łóżko i sprzęt",
+      "images": [
+        {
+          "role": "łóżko",
+          "image_keywords": "hospital delivery room bed",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Sala porodowa z łóżkiem i sprzętem",
+          "image_url": "/content/pl-preg-03-przygotowania-do-porodu/pic-3.jpg"
+        },
+        {
+          "role": "sprzęt",
+          "image_keywords": "birthing ball hospital room",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Duża piłka i drabinki w sali szpitalnej",
+          "image_url": "/content/pl-preg-03-przygotowania-do-porodu/pic-3-dzis.jpg"
+        }
+      ],
+      "question": "Która część tej sali wygląda przyjaźniej? O co warto zapytać, zanim wybierzesz szpital?"
+    },
+    {
+      "id": "p4",
+      "label": "Wyjazd",
+      "note": "torba → fotelik",
+      "images": [
+        {
+          "role": "do samochodu",
+          "image_keywords": "couple putting bag into car",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Para wkłada torbę do bagażnika samochodu",
+          "image_url": "/content/pl-preg-03-przygotowania-do-porodu/pic-4.jpg"
+        },
+        {
+          "role": "fotelik",
+          "image_keywords": "baby car seat inside car",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Fotelik samochodowy zamontowany w aucie",
+          "image_url": "/content/pl-preg-03-przygotowania-do-porodu/pic-4-dzis.jpg"
+        }
+      ],
+      "question": "Co trzeba sprawdzić przed wyjazdem? Powiedz cztery polecenia dla partnera."
+    },
+    {
+      "id": "p5",
+      "label": "Pierwsze chwile",
+      "note": "mama i tata",
+      "images": [
+        {
+          "role": "u mamy",
+          "image_keywords": "newborn baby on mother chest",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Noworodek leży na piersi mamy",
+          "image_url": "/content/pl-preg-03-przygotowania-do-porodu/pic-5.jpg"
+        },
+        {
+          "role": "u taty",
+          "image_keywords": "father holding newborn baby",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Tata trzyma noworodka na rękach",
+          "image_url": "/content/pl-preg-03-przygotowania-do-porodu/pic-5-dzis.jpg"
+        }
+      ],
+      "question": "Opisz obie sytuacje. Jak nazywa się to, co widzisz na pierwszym zdjęciu?"
+    },
+    {
+      "id": "p6",
+      "label": "Dom gotowy",
+      "note": "pokój i półka",
+      "images": [
+        {
+          "role": "pokój",
+          "image_keywords": "baby cot nursery room",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Łóżeczko dziecięce w przygotowanym pokoju",
+          "image_url": "/content/pl-preg-03-przygotowania-do-porodu/pic-6.jpg"
+        },
+        {
+          "role": "półka",
+          "image_keywords": "folded baby clothes shelf",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Poskładane ubranka na półce w szafie",
+          "image_url": "/content/pl-preg-03-przygotowania-do-porodu/pic-6-dzis.jpg"
+        }
+      ],
+      "question": "Co jest już gotowe, a czego jeszcze brakuje? Powiedz, co zrobisz w tym tygodniu, a co zostawisz na później."
+    }
+  ]
+}

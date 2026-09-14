@@ -1,0 +1,257 @@
+{
+  "lesson_id": "pl-preg-03-przygotowania-do-porodu",
+  "exercise_type": "fill-in-blank",
+  "title": "Tryb rozkazujący: od formy do rozmowy",
+  "instruction": "Osiem bloków ułożonych od najłatwiejszego do najtrudniejszego. Przechodź po kolei — każdy dokłada jedną rzecz.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rozgrzewka: do kogo mówimy?",
+      "instruction": "Wybierz formę, która pasuje do osoby w zdaniu.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Aniu, ___ spokojnie i licz do czterech.",
+          "options": ["oddychaj", "oddychajcie"],
+          "answer": "oddychaj",
+          "explanation": "Mówimy do jednej osoby, więc forma na ty."
+        },
+        {
+          "id": "g1-2",
+          "text": "Dziewczyny, ___ teraz wygodną pozycję.",
+          "options": ["znajdź", "znajdźcie"],
+          "answer": "znajdźcie",
+          "explanation": "Zwracamy się do grupy, więc końcówka -cie."
+        },
+        {
+          "id": "g1-3",
+          "text": "___ krótką przerwę, wszyscy jesteśmy zmęczeni.",
+          "options": ["Zrób", "Zróbmy"],
+          "answer": "Zróbmy",
+          "explanation": "Propozycja dla całej grupy razem: forma na my."
+        },
+        {
+          "id": "g1-4",
+          "text": "Niech pani ___ na tym krześle.",
+          "options": ["usiądzie", "usiądź"],
+          "answer": "usiądzie",
+          "explanation": "Po niech stoi zwykła forma on / ona, nie rozkazująca."
+        },
+        {
+          "id": "g1-5",
+          "text": "Proszę ___ po prawej stronie korytarza.",
+          "options": ["czekać", "czekaj"],
+          "answer": "czekać",
+          "explanation": "Po proszę zawsze bezokolicznik."
+        },
+        {
+          "id": "g1-6",
+          "text": "Tato, ___ torbę do bagażnika.",
+          "options": ["włóż", "włóżcie"],
+          "answer": "włóż",
+          "explanation": "Jedna osoba, więc forma na ty."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "exercise_type": "matching",
+      "title": "2. Bezokolicznik i rozkaz",
+      "instruction": "Połącz czasownik z jego formą rozkazującą dla ty.",
+      "items": [
+        { "id": "g2-1", "left": "oddychać", "right": "oddychaj" },
+        { "id": "g2-2", "left": "wziąć", "right": "weź" },
+        { "id": "g2-3", "left": "być", "right": "bądź" },
+        { "id": "g2-4", "left": "jeść", "right": "jedz" },
+        { "id": "g2-5", "left": "pić", "right": "pij" },
+        { "id": "g2-6", "left": "spać", "right": "śpij" },
+        { "id": "g2-7", "left": "dać", "right": "daj" },
+        { "id": "g2-8", "left": "iść", "right": "idź" }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Zbuduj formę",
+      "instruction": "Zrób formę rozkazującą dla ty od podanej formy on / ona.",
+      "items": [
+        { "id": "g3-1", "text": "ona pisze → ___", "answer": "pisz" },
+        { "id": "g3-2", "text": "on czeka → ___", "answer": "czekaj" },
+        { "id": "g3-3", "text": "ona myje → ___", "answer": "myj" },
+        { "id": "g3-4", "text": "on siada → ___", "answer": "siadaj" },
+        { "id": "g3-5", "text": "ona zamyka → ___", "answer": "zamykaj" },
+        { "id": "g3-6", "text": "on mówi → ___", "answer": "mów" },
+        { "id": "g3-7", "text": "ona wraca → ___", "answer": "wracaj" }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "exercise_type": "sentence-building",
+      "title": "4. Z urzędowego na domowe",
+      "instruction": "Zamień grzeczne polecenie z proszę na zwykłą formę na ty.",
+      "items": [
+        {
+          "id": "g4-1",
+          "prompt": "Proszę się położyć na lewym boku.",
+          "answer": "Połóż się na lewym boku."
+        },
+        {
+          "id": "g4-2",
+          "prompt": "Proszę wypełnić formularz na miejscu.",
+          "answer": "Wypełnij formularz na miejscu."
+        },
+        {
+          "id": "g4-3",
+          "prompt": "Proszę nie wstawać przez godzinę.",
+          "answer": "Nie wstawaj przez godzinę."
+        },
+        {
+          "id": "g4-4",
+          "prompt": "Proszę podpisać zgodę długopisem.",
+          "answer": "Podpisz zgodę długopisem."
+        },
+        {
+          "id": "g4-5",
+          "prompt": "Proszę zabrać ze sobą dowód osobisty.",
+          "answer": "Zabierz ze sobą dowód osobisty."
+        },
+        {
+          "id": "g4-6",
+          "prompt": "Proszę nie otwierać okna na korytarzu.",
+          "answer": "Nie otwieraj okna na korytarzu."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "exercise_type": "fill-in-blank",
+      "title": "5. Raz czy codziennie",
+      "instruction": "Ta sama zasada co przy badaniach: jeden raz czy zwyczaj. Uwaga na przeczenie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "___ te ćwiczenia codziennie, nie tylko na zajęciach.",
+          "options": ["Rób", "Zrób"],
+          "answer": "Rób",
+          "explanation": "Codziennie to zwyczaj, więc forma niedokonana."
+        },
+        {
+          "id": "g5-2",
+          "text": "___ to teraz, zanim zapomnisz.",
+          "options": ["Rób", "Zrób"],
+          "answer": "Zrób",
+          "explanation": "Jeden raz i od razu: forma dokonana."
+        },
+        {
+          "id": "g5-3",
+          "text": "Nie ___ tak szybko, poczekaj chwilę.",
+          "options": ["wstawaj", "wstań"],
+          "answer": "wstawaj",
+          "explanation": "Po nie zawsze forma niedokonana, nawet gdy chodzi o jeden raz."
+        },
+        {
+          "id": "g5-4",
+          "text": "___ dokumenty do foliowej koszulki i odłóż na komodę.",
+          "options": ["Wkładaj", "Włóż"],
+          "answer": "Włóż",
+          "explanation": "Jedna konkretna czynność z wynikiem."
+        },
+        {
+          "id": "g5-5",
+          "text": "Nie ___ tego planu jak testu.",
+          "options": ["traktuj", "potraktuj"],
+          "answer": "traktuj",
+          "explanation": "Przeczenie plus rada ogólna: forma niedokonana."
+        },
+        {
+          "id": "g5-6",
+          "text": "___ ładowarkę zawsze w bocznej kieszeni.",
+          "options": ["Trzymaj", "Potrzymaj"],
+          "answer": "Trzymaj",
+          "explanation": "Zawsze to zwyczaj, nie jednorazowa czynność."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "exercise_type": "fill-in-blank",
+      "title": "6. Instrukcja od położnej",
+      "instruction": "Siedem zdań, jedna instrukcja. Wstaw formę rozkazującą czasownika z nawiasu.",
+      "items": [
+        { "id": "g6-1", "text": "___ (spakować) torbę w trzydziestym szóstym tygodniu.", "answer": "Spakuj" },
+        { "id": "g6-2", "text": "___ (postawić) ją przy drzwiach i nie chowaj do szafy.", "answer": "Postaw" },
+        { "id": "g6-3", "text": "Dokumenty ___ (trzymać) osobno, w jednym miejscu.", "answer": "trzymaj" },
+        { "id": "g6-4", "text": "___ (zadzwonić) do nas, kiedy skurcze będą regularne.", "answer": "Zadzwoń" },
+        { "id": "g6-5", "text": "___ (przyjechać) spokojnie, nikt się nie spieszy.", "answer": "Przyjedź" },
+        { "id": "g6-6", "text": "Nie ___ (jeść) dużego posiłku przed wyjazdem.", "answer": "jedz" },
+        { "id": "g6-7", "text": "___ (być) w kontakcie z osobą towarzyszącą.", "answer": "Bądź" }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "exercise_type": "drag-and-drop",
+      "title": "7. Kartka na lodówce",
+      "instruction": "Przeciągnij właściwą formę w lukę. Dwa słowa nie pasują nigdzie — to bezokoliczniki.",
+      "bank": ["weź", "nie zapomnij", "zamknij", "wyłącz", "napisz", "wziąć", "zamykać"],
+      "items": [
+        { "id": "g7-1", "text": "___ dowód osobisty i kartę ciąży.", "answer": "weź" },
+        { "id": "g7-2", "text": "___ o ładowarce, leży przy łóżku.", "answer": "nie zapomnij" },
+        { "id": "g7-3", "text": "___ okno w kuchni, zapowiadali deszcz.", "answer": "zamknij" },
+        { "id": "g7-4", "text": "___ żelazko z gniazdka przed wyjściem.", "answer": "wyłącz" },
+        { "id": "g7-5", "text": "___ mi wiadomość, kiedy dojedziesz.", "answer": "napisz" }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "exercise_type": "fill-in-blank",
+      "title": "8. Niuanse: rada czy polecenie",
+      "instruction": "Tu decyduje ton rozmowy. Po poprawnej odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "___ oddychać wolniej, może będzie lżej.",
+          "options": ["Spróbuj", "Masz"],
+          "answer": "Spróbuj",
+          "explanation": "Spróbuj zamienia polecenie w propozycję."
+        },
+        {
+          "id": "g8-2",
+          "text": "___ się, ramiona masz przy uszach.",
+          "options": ["Rozluźnij", "Rozluźnić"],
+          "answer": "Rozluźnij",
+          "explanation": "Do jednej osoby bez proszę używamy formy rozkazującej."
+        },
+        {
+          "id": "g8-3",
+          "text": "Nie ___ się, wszystko idzie normalnie.",
+          "options": ["martw", "zmartw"],
+          "answer": "martw",
+          "explanation": "Przeczenie plus forma niedokonana. Się stoi po czasowniku."
+        },
+        {
+          "id": "g8-4",
+          "text": "___ się odpocząć między skurczami.",
+          "options": ["Postaraj", "Postarać"],
+          "answer": "Postaraj",
+          "explanation": "Postaraj się to łagodna zachęta, częsta na sali porodowej."
+        },
+        {
+          "id": "g8-5",
+          "text": "Niech tata ___ na korytarzu jeszcze chwilę.",
+          "options": ["poczeka", "poczekaj"],
+          "answer": "poczeka",
+          "explanation": "Po niech zawsze forma on / ona."
+        },
+        {
+          "id": "g8-6",
+          "text": "Proszę mi ___, kiedy mam przyjechać.",
+          "options": ["powiedzieć", "powiedz"],
+          "answer": "powiedzieć",
+          "explanation": "Grzeczna prośba do personelu: proszę plus bezokolicznik."
+        }
+      ]
+    }
+  ]
+}
