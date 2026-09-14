@@ -1,0 +1,179 @@
+{
+  "lesson_id": "pl-b1-group-02-zakupy",
+  "exercise_type": "fill-in-blank",
+  "title": "Tryb przypuszczający: od końcówki do całego zdania",
+  "instruction": "Osiem bloków ułożonych od najłatwiejszego do najtrudniejszego. Przechodź po kolei.",
+  "estimated_minutes": 28,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rozgrzewka: końcówka osobowa",
+      "instruction": "Dopisz właściwą końcówkę: bym, byś, by, byśmy, byście.",
+      "items": [
+        { "id": "g1-1", "text": "Chętnie pomógł___ ci wybrać laptopa. (ja)", "answer": "bym" },
+        { "id": "g1-2", "text": "Pokazał___ mi jeszcze raz ten model? (ty)", "answer": "byś" },
+        { "id": "g1-3", "text": "Poszli___ do galerii dopiero wieczorem. (my)", "answer": "byśmy" },
+        { "id": "g1-4", "text": "Zapłacili___ kartą czy gotówką? (wy)", "answer": "byście" },
+        { "id": "g1-5", "text": "On na pewno wybrał___ tańszy model. (on)", "answer": "by" },
+        { "id": "g1-6", "text": "Nigdy nie zapłacił___ tyle za buty. (ja)", "answer": "bym" }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "exercise_type": "matching",
+      "title": "2. Osoba plus czasownik",
+      "instruction": "Połącz osobę z gotową formą trybu przypuszczającego.",
+      "items": [
+        { "id": "g2-1", "left": "ja + wybrać", "right": "wybrałbym" },
+        { "id": "g2-2", "left": "ty + zapłacić", "right": "zapłaciłbyś" },
+        { "id": "g2-3", "left": "on + poczekać", "right": "poczekałby" },
+        { "id": "g2-4", "left": "my + sprawdzić", "right": "sprawdzilibyśmy" },
+        { "id": "g2-5", "left": "wy + zapytać", "right": "zapytalibyście" },
+        { "id": "g2-6", "left": "one + wrócić", "right": "wróciłyby" }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Rodzaj i liczba",
+      "instruction": "Wybierz formę zgodną z podmiotem.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Moja siostra ___ ten sweter w dwóch kolorach.",
+          "answer": "kupiłaby",
+          "options": ["kupiłby", "kupiłaby"],
+          "explanation": "Podmiot rodzaju żeńskiego: kupiłaby."
+        },
+        {
+          "id": "g3-2",
+          "text": "Chłopaki ___ z nami do centrum, gdyby mieli czas.",
+          "answer": "poszliby",
+          "options": ["poszliby", "poszłyby"],
+          "explanation": "Grupa mężczyzn to rodzaj męskoosobowy: poszliby."
+        },
+        {
+          "id": "g3-3",
+          "text": "Dziewczyny ___ wcześniej, gdyby wiedziały o promocji.",
+          "answer": "przyszłyby",
+          "options": ["przyszliby", "przyszłyby"],
+          "explanation": "Same kobiety — rodzaj niemęskoosobowy: przyszłyby."
+        },
+        {
+          "id": "g3-4",
+          "text": "My z żoną ___ raczej kasę samoobsługową.",
+          "answer": "wybralibyśmy",
+          "options": ["wybralibyśmy", "wybrałybyśmy"],
+          "explanation": "W grupie jest mężczyzna, więc forma męskoosobowa: wybralibyśmy."
+        },
+        {
+          "id": "g3-5",
+          "text": "Te buty ___ mi się bardziej w czarnym kolorze.",
+          "answer": "podobałyby",
+          "options": ["podobaliby", "podobałyby"],
+          "explanation": "Rzeczy nigdy nie są męskoosobowe: podobałyby się."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "exercise_type": "sentence-building",
+      "title": "4. Grzecznie, nie ostro",
+      "instruction": "Przekształć zdanie na formę, której naprawdę używa się w sklepie.",
+      "items": [
+        { "id": "g4-1", "prompt": "Proszę pokazać mi ten płaszcz.", "answer": "Czy mógłby mi pan pokazać ten płaszcz?" },
+        { "id": "g4-2", "prompt": "Chcę zapłacić kartą.", "answer": "Chciałbym zapłacić kartą." },
+        { "id": "g4-3", "prompt": "Proszę sprawdzić cenę tego sera.", "answer": "Czy mogłaby pani sprawdzić cenę tego sera?" },
+        { "id": "g4-4", "prompt": "Daj mi paragon.", "answer": "Poprosiłbym o paragon." },
+        { "id": "g4-5", "prompt": "Chcemy zobaczyć większy rozmiar.", "answer": "Chcielibyśmy zobaczyć większy rozmiar." },
+        { "id": "g4-6", "prompt": "Wolę dostać zwrot pieniędzy.", "answer": "Wolałbym dostać zwrot pieniędzy." }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "exercise_type": "fill-in-blank",
+      "title": "5. Sobota w galerii",
+      "instruction": "Jedna historia w sześciu zdaniach. Wstaw formę przeszłą czasownika z nawiasu.",
+      "items": [
+        { "id": "g5-1", "text": "Gdyby Marek ___ z domu pół godziny wcześniej, znalazłby miejsce na parkingu. (wyjść)", "answer": "wyszedł" },
+        { "id": "g5-2", "text": "Nie stałby tak długo w kolejce, gdyby ___ tylko trzy rzeczy. (kupić)", "answer": "kupił" },
+        { "id": "g5-3", "text": "Gdyby sprzedawczyni ___ mu cenę jednostkową, nie wziąłby droższego opakowania. (pokazać)", "answer": "pokazała" },
+        { "id": "g5-4", "text": "Kupiłby jeszcze sweter, gdyby przymierzalnia nie ___ zamknięta. (być)", "answer": "była" },
+        { "id": "g5-5", "text": "Gdyby ___ przy sobie kartę lojalnościową, zapłaciłby mniej. (mieć)", "answer": "miał" },
+        { "id": "g5-6", "text": "Marek ___ całkiem zadowolony, gdyby nie jedna rzecz: paragon został na ladzie. (być)", "answer": "byłby" }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "exercise_type": "fill-in-blank",
+      "title": "6. Jeśli czy gdyby",
+      "instruction": "Sytuacja realna czy nierealna? Wybierz spójnik.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "___ jutro będzie promocja, kupię od razu dwa opakowania.",
+          "answer": "Jeśli",
+          "options": ["Jeśli", "Gdyby"],
+          "explanation": "Realny plan na jutro. Po „jeśli” stoi czas przyszły."
+        },
+        {
+          "id": "g6-2",
+          "text": "___ miał teraz wolny dzień, pojechałbym do outletu.",
+          "answer": "Gdybym",
+          "options": ["Jeślibym", "Gdybym"],
+          "explanation": "Nie mam wolnego dnia — sytuacja nierealna. Zawsze „gdybym”."
+        },
+        {
+          "id": "g6-3",
+          "text": "___ nie zgubił paragonu, cała reklamacja byłaby prostsza.",
+          "answer": "Gdybyś",
+          "options": ["Jeślibyś", "Gdybyś"],
+          "explanation": "Paragon już zginął, więc mówimy o czymś, czego nie da się cofnąć."
+        },
+        {
+          "id": "g6-4",
+          "text": "___ sklep nie przyjmie reklamacji, napiszę do rzecznika konsumentów.",
+          "answer": "Jeśli",
+          "options": ["Jeśli", "Gdyby"],
+          "explanation": "To realny scenariusz na najbliższe dni, a nie hipoteza."
+        },
+        {
+          "id": "g6-5",
+          "text": "___ ceny były niższe, kupowalibyśmy znacznie więcej.",
+          "answer": "Gdyby",
+          "options": ["Jeśli", "Gdyby"],
+          "explanation": "W drugiej części jest „by”, więc w pierwszej musi być „gdyby”."
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "exercise_type": "drag-and-drop",
+      "title": "7. Żeby, żebym, żebyś",
+      "instruction": "Przeciągnij właściwą formę w lukę. Dwa słowa nie pasują nigdzie.",
+      "bank": ["żeby", "żebym", "żebyś", "żebyśmy", "żebyście", "że", "gdyby"],
+      "items": [
+        { "id": "g7-1", "text": "Poszedłem do galerii, ___ kupić prezent.", "answer": "żeby" },
+        { "id": "g7-2", "text": "Chcę, ___ sprawdził termin przydatności. (ty)", "answer": "żebyś" },
+        { "id": "g7-3", "text": "Sprzedawca poprosił, ___ pokazał dowód zakupu. (ja)", "answer": "żebym" },
+        { "id": "g7-4", "text": "Wolelibyśmy, ___ dostali zwrot pieniędzy, a nie wymianę. (my)", "answer": "żebyśmy" },
+        { "id": "g7-5", "text": "Mama prosi, ___ nie zapomnieli o zakupach. (wy)", "answer": "żebyście" }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "exercise_type": "sentence-building",
+      "title": "8. Ruchome „by”",
+      "instruction": "Zacznij zdanie od słowa w nawiasie i przenieś cząstkę „by” tam, gdzie trzeba.",
+      "items": [
+        { "id": "g8-1", "prompt": "Kupiłbym ten laptop bez wahania. (Chętnie)", "answer": "Chętnie bym kupił ten laptop bez wahania." },
+        { "id": "g8-2", "prompt": "Nie zapłaciłbym za to tyle. (Nigdy)", "answer": "Nigdy bym za to tyle nie zapłacił." },
+        { "id": "g8-3", "prompt": "Wybralibyśmy inny sklep. (Na pewno)", "answer": "Na pewno byśmy wybrali inny sklep." },
+        { "id": "g8-4", "prompt": "Zrobiłabyś to inaczej? (A ty)", "answer": "A ty byś to zrobiła inaczej?" },
+        { "id": "g8-5", "prompt": "Kupiłbyś to w innym sklepie? (Gdzie)", "answer": "Gdzie byś to kupił?" },
+        { "id": "g8-6", "prompt": "Poszedłbym tam jeszcze raz. (Nie)", "answer": "Nie poszedłbym tam jeszcze raz." }
+      ]
+    }
+  ]
+}

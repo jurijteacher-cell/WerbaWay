@@ -1,0 +1,188 @@
+{
+  "lesson_id": "pl-b1-group-02-zakupy",
+  "exercise_type": "picture-set",
+  "layout": "collage",
+  "layout_hints": {
+    "style": "polaroid-board",
+    "photo_frame": "polaroid",
+    "label_style": "tape",
+    "rotation_range": "-6..6",
+    "clusters": "dwa zdjęcia obok siebie, etykieta nad nimi, notatka pod spodem",
+    "phrase_notes": "wyrażenia z phrase_bank rozrzucone po planszy jako karteczki"
+  },
+  "title": "Opis zdjęć: zakupy wtedy i dziś",
+  "instruction": "Sześć par zdjęć. Opisz najpierw stare zdjęcie, potem nowe, a na końcu powiedz, co się między nimi zmieniło. Korzystaj z karteczek z wyrażeniami.",
+  "estimated_minutes": 16,
+  "phrase_bank": [
+    "Kiedyś… a dziś…",
+    "Gdybym miał wybór, wolałbym…",
+    "Na pierwszy rzut oka widać, że…",
+    "W porównaniu z dzisiejszym sklepem…",
+    "Ja bym tego nie kupił, bo…",
+    "Największa różnica polega na tym, że…"
+  ],
+  "items": [
+    {
+      "id": "p1",
+      "label": "Sklep spożywczy",
+      "note": "lada → półka",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "grocery store interior counter 1950s",
+          "orientation": "landscape",
+          "alt": "Wnętrze dawnego sklepu spożywczego z drewnianą ladą i towarem na półkach za plecami sprzedawcy",
+          "image_url": "/content/pl-b1-group-02-zakupy/pic-1.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "supermarket aisle shelves",
+          "orientation": "landscape",
+          "alt": "Długa alejka supermarketu z wysokimi regałami po obu stronach",
+          "image_url": "/content/pl-b1-group-02-zakupy/pic-1b.jpg"
+        }
+      ],
+      "question": "Kto podaje towar na pierwszym zdjęciu, a kto na drugim? Co ta różnica zmienia w rozmowie klienta ze sprzedawcą?",
+      "image_url": "/content/pl-b1-group-02-zakupy/pic-1.jpg",
+      "alt": "Wnętrze dawnego sklepu spożywczego z drewnianą ladą i towarem na półkach za plecami sprzedawcy",
+      "image_keywords": "grocery store interior counter 1950s"
+    },
+    {
+      "id": "p2",
+      "label": "Płatność",
+      "note": "korba → telefon",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "National cash register shop 1920s",
+          "orientation": "landscape",
+          "alt": "Mechaniczna kasa sklepowa z klawiszami i szufladą na pieniądze",
+          "image_url": "/content/pl-b1-group-02-zakupy/pic-2.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "contactless payment terminal phone",
+          "orientation": "landscape",
+          "alt": "Płatność telefonem przy terminalu w sklepie",
+          "image_url": "/content/pl-b1-group-02-zakupy/pic-2b.jpg"
+        }
+      ],
+      "question": "Opisz oba urządzenia. Co dziś zostało z tamtej kasy, a co zniknęło całkowicie?",
+      "image_url": "/content/pl-b1-group-02-zakupy/pic-2.jpg",
+      "alt": "Mechaniczna kasa sklepowa z klawiszami i szufladą na pieniądze",
+      "image_keywords": "National cash register shop 1920s"
+    },
+    {
+      "id": "p3",
+      "label": "Waga i cena",
+      "note": "sprzedawca → klient",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "shop scales weighing goods 1930s",
+          "orientation": "landscape",
+          "alt": "Sklepowa waga szalkowa z odważnikami na ladzie",
+          "image_url": "/content/pl-b1-group-02-zakupy/pic-3.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "supermarket vegetable scale",
+          "orientation": "landscape",
+          "alt": "Samoobsługowa waga z ekranem przy stoisku z warzywami",
+          "image_url": "/content/pl-b1-group-02-zakupy/pic-3b.jpg"
+        }
+      ],
+      "question": "Kto odpowiada za wagę i cenę na każdym ze zdjęć? Gdybyś miał wybierać, której wadze ufałbyś bardziej?",
+      "image_url": "/content/pl-b1-group-02-zakupy/pic-3.jpg",
+      "alt": "Sklepowa waga szalkowa z odważnikami na ladzie",
+      "image_keywords": "shop scales weighing goods 1930s"
+    },
+    {
+      "id": "p4",
+      "label": "W czym nosimy zakupy",
+      "note": "kosz → torba",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "wicker shopping basket market 1950s",
+          "orientation": "landscape",
+          "alt": "Wiklinowy kosz na zakupy pełen warzyw",
+          "image_url": "/content/pl-b1-group-02-zakupy/pic-4.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "reusable cotton shopping bag",
+          "orientation": "landscape",
+          "alt": "Materiałowa torba wielorazowa z zakupami",
+          "image_url": "/content/pl-b1-group-02-zakupy/pic-4b.jpg"
+        }
+      ],
+      "question": "Dlaczego reklamówka wygrała na kilkadziesiąt lat, a teraz przegrywa? Czego używasz Ty?",
+      "image_url": "/content/pl-b1-group-02-zakupy/pic-4.jpg",
+      "alt": "Wiklinowy kosz na zakupy pełen warzyw",
+      "image_keywords": "wicker shopping basket market 1950s"
+    },
+    {
+      "id": "p5",
+      "label": "Witryna i reklama",
+      "note": "wystawa → wielka litera",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "department store window display 1930s",
+          "orientation": "landscape",
+          "alt": "Witryna dawnego domu towarowego z ułożonym towarem",
+          "image_url": "/content/pl-b1-group-02-zakupy/pic-5.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "shop window sale sign",
+          "orientation": "landscape",
+          "alt": "Witryna sklepu z dużymi napisami o wyprzedaży",
+          "image_url": "/content/pl-b1-group-02-zakupy/pic-5b.jpg"
+        }
+      ],
+      "question": "Co przyciąga wzrok na każdym zdjęciu: towar czy cena? Które rozwiązanie działa na Ciebie mocniej?",
+      "image_url": "/content/pl-b1-group-02-zakupy/pic-5.jpg",
+      "alt": "Witryna dawnego domu towarowego z ułożonym towarem",
+      "image_keywords": "department store window display 1930s"
+    },
+    {
+      "id": "p6",
+      "label": "Dostawa do domu",
+      "note": "wóz → kurier",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "milk delivery horse cart 1930s",
+          "orientation": "landscape",
+          "alt": "Wóz z mlekiem zaprzężony w konia na miejskiej ulicy",
+          "image_url": "/content/pl-b1-group-02-zakupy/pic-6.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "courier delivering parcel door",
+          "orientation": "landscape",
+          "alt": "Kurier przekazuje paczkę w drzwiach mieszkania",
+          "image_url": "/content/pl-b1-group-02-zakupy/pic-6b.jpg"
+        }
+      ],
+      "question": "Obie dostawy przyjeżdżają pod dom. Co zyskał klient, a co stracił sprzedawca, który nie widzi już swojego klienta?",
+      "image_url": "/content/pl-b1-group-02-zakupy/pic-6.jpg",
+      "alt": "Wóz z mlekiem zaprzężony w konia na miejskiej ulicy",
+      "image_keywords": "milk delivery horse cart 1930s"
+    }
+  ]
+}
