@@ -1,0 +1,122 @@
+{
+  "lesson_id": "pl-b1-group-02-szkola",
+  "exercise_type": "fill-in-blank",
+  "title": "Czas przeszły czasowników na -eć: od rozpoznawania do wspomnień",
+  "instruction": "Osiem bloków ułożonych piramidą — od najłatwiejszego do najtrudniejszego. Przechodź po kolei, każdy blok dokłada jedną rzecz.",
+  "estimated_minutes": 26,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rozgrzewka: z a czy bez a?",
+      "instruction": "Wybierz formę, która naprawdę istnieje w polszczyźnie.",
+      "items": [
+        { "id": "g1-1", "text": "Wczoraj ___ o tobie całą lekcję.", "answer": "myślałem", "options": ["myślałem", "myśliłem"], "explanation": "myśleć kończy się na -eć, więc w czasie przeszłym pojawia się a: myślałem." },
+        { "id": "g1-2", "text": "Ona ___ mi pomóc przed sprawdzianem.", "answer": "chciała", "options": ["chciała", "chciła"], "explanation": "chcieć → chciał, chciała. Forma chciła nie istnieje." },
+        { "id": "g1-3", "text": "___ o tym egzaminie od tygodnia.", "answer": "Wiedziałem", "options": ["Wiedziałem", "Wiedziłem"], "explanation": "wiedzieć → wiedziałem. Litera a jest obowiązkowa." },
+        { "id": "g1-4", "text": "On ___ przez okno całą przerwę.", "answer": "patrzył", "options": ["patrzył", "patrzał"], "explanation": "patrzeć to wyjątek: patrzył, nie patrzał. Reszta grupy zachowuje się inaczej." },
+        { "id": "g1-5", "text": "Nauczyciel ___ nas przez cztery lata.", "answer": "uczył", "options": ["uczył", "uczał"], "explanation": "uczyć kończy się na -yć, nie na -eć. Żadnego a tu nie ma." },
+        { "id": "g1-6", "text": "Ona ___ do najlepszych uczennic w klasie.", "answer": "należała", "options": ["należała", "należyła"], "explanation": "należeć → należał, należała. To zwykły czasownik na -eć." }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "exercise_type": "matching",
+      "title": "2. Bezokolicznik i jego forma",
+      "instruction": "Połącz bezokolicznik z formą trzeciej osoby liczby pojedynczej (on).",
+      "items": [
+        { "id": "g2-1", "left": "mieć", "right": "miał" },
+        { "id": "g2-2", "left": "wiedzieć", "right": "wiedział" },
+        { "id": "g2-3", "left": "widzieć", "right": "widział" },
+        { "id": "g2-4", "left": "słyszeć", "right": "słyszał" },
+        { "id": "g2-5", "left": "patrzeć", "right": "patrzył" },
+        { "id": "g2-6", "left": "umrzeć", "right": "umarł" }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "exercise_type": "sentence-building",
+      "title": "3. Z jednej osoby na wiele",
+      "instruction": "Przepisz zdanie w liczbie mnogiej. Uważaj na końcówkę: -eli czy -ały?",
+      "items": [
+        { "id": "g3-1", "prompt": "On chciał zostać w domu. → oni", "answer": "Oni chcieli zostać w domu." },
+        { "id": "g3-2", "prompt": "Ona chciała zostać w domu. → one", "answer": "One chciały zostać w domu." },
+        { "id": "g3-3", "prompt": "Uczeń nie rozumiał zadania. → uczniowie", "answer": "Uczniowie nie rozumieli zadania." },
+        { "id": "g3-4", "prompt": "Uczennica siedziała w pierwszej ławce. → uczennice", "answer": "Uczennice siedziały w pierwszej ławce." },
+        { "id": "g3-5", "prompt": "Kolega musiał zdawać poprawkę. → koledzy", "answer": "Koledzy musieli zdawać poprawkę." },
+        { "id": "g3-6", "prompt": "Nauczycielka wolała ciszę. → nauczycielki", "answer": "Nauczycielki wolały ciszę." }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "exercise_type": "drag-and-drop",
+      "title": "4. Chłopcy czy dziewczyny",
+      "instruction": "Wstaw właściwą formę. Trzy słowa w banku nie pasują nigdzie.",
+      "bank": ["chcieli", "chciały", "wiedzieli", "wiedziały", "mieli", "miały", "widzieli", "widziały", "mieliśmy"],
+      "items": [
+        { "id": "g4-1", "text": "Chłopcy z mojej klasy ___ raz w życiu wagarować.", "answer": "chcieli" },
+        { "id": "g4-2", "text": "Dziewczyny z mojej klasy ___ raz w życiu wagarować.", "answer": "chciały" },
+        { "id": "g4-3", "text": "Studenci ___ o terminie sesji od października.", "answer": "wiedzieli" },
+        { "id": "g4-4", "text": "Studentki ___ o terminie sesji od października.", "answer": "wiedziały" },
+        { "id": "g4-5", "text": "Moi koledzy ___ wtedy ciężkie tornistry.", "answer": "mieli" },
+        { "id": "g4-6", "text": "Moje koleżanki ___ wtedy ciężkie tornistry.", "answer": "miały" }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "exercise_type": "fill-in-blank",
+      "title": "5. Pierwszy dzień w liceum",
+      "instruction": "Jedna historia w sześciu zdaniach. Wpisz formę czasu przeszłego.",
+      "items": [
+        { "id": "g5-1", "text": "Tamtego ranka ___ (mieć) w brzuchu kamień.", "answer": "miałem" },
+        { "id": "g5-2", "text": "W nowej klasie nikogo jeszcze nie ___ (widzieć) na oczy.", "answer": "widziałem" },
+        { "id": "g5-3", "text": "Usiadłem w ostatniej ławce, bo ___ (woleć) patrzeć na wszystkich z tyłu.", "answer": "wolałem" },
+        { "id": "g5-4", "text": "Wychowawczyni ___ (mieć) na imię Anna i mówiła bardzo cicho.", "answer": "miała" },
+        { "id": "g5-5", "text": "Chłopcy z pierwszego rzędu ___ (chcieć) od razu wyjść na przerwę.", "answer": "chcieli" },
+        { "id": "g5-6", "text": "Po dwóch godzinach ___ (wiedzieć) już, że będzie dobrze.", "answer": "wiedziałem" }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "exercise_type": "fill-in-blank",
+      "title": "6. Niuans: wiedzieć czy widzieć",
+      "instruction": "Jedna litera zmienia całe znaczenie. Wybierz i przeczytaj wyjaśnienie.",
+      "items": [
+        { "id": "g6-1", "text": "___ go wczoraj na korytarzu.", "answer": "Widziałem", "options": ["Widziałem", "Wiedziałem"], "explanation": "Kontakt wzrokowy, oczami — więc widzieć." },
+        { "id": "g6-2", "text": "___, że dziś będzie kartkówka.", "answer": "Wiedziałem", "options": ["Widziałem", "Wiedziałem"], "explanation": "Informacja w głowie, nie obraz — więc wiedzieć." },
+        { "id": "g6-3", "text": "Nie ___ tego filmu, ale dużo o nim słyszałem.", "answer": "widziałem", "options": ["widziałem", "wiedziałem"], "explanation": "Film się ogląda. Po przeczeniu dopełniacz: tego filmu." },
+        { "id": "g6-4", "text": "Nikt nie ___, gdzie jest dyrektor.", "answer": "wiedział", "options": ["widział", "wiedział"], "explanation": "Chodzi o informację, którą ktoś ma albo jej nie ma." },
+        { "id": "g6-5", "text": "___ ją tylko raz, na zjeździe absolwentów.", "answer": "Widziałem", "options": ["Widziałem", "Wiedziałem"], "explanation": "Spotkanie twarzą w twarz to zawsze widzieć." },
+        { "id": "g6-6", "text": "Skąd ___ o mojej poprawce?", "answer": "wiedziałeś", "options": ["widziałeś", "wiedziałeś"], "explanation": "Skąd + wiedzieć to stałe połączenie: pytanie o źródło informacji." }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "exercise_type": "sentence-building",
+      "title": "7. Wyjątki i czasowniki bez „ja”",
+      "instruction": "Przepisz zdanie w czasie przeszłym. Cztery z tych czasowników zachowują się nietypowo.",
+      "items": [
+        { "id": "g7-1", "prompt": "Patrzę na tablicę i nic nie rozumiem.", "answer": "Patrzyłem na tablicę i nic nie rozumiałem." },
+        { "id": "g7-2", "prompt": "Ona patrzy przez okno przez całą lekcję.", "answer": "Ona patrzyła przez okno przez całą lekcję." },
+        { "id": "g7-3", "prompt": "Zetrę tablicę przed dzwonkiem.", "answer": "Starłem tablicę przed dzwonkiem." },
+        { "id": "g7-4", "prompt": "Wszystko zależy od nauczyciela.", "answer": "Wszystko zależało od nauczyciela." },
+        { "id": "g7-5", "prompt": "Przed sprawdzianem boli mnie głowa.", "answer": "Przed sprawdzianem bolała mnie głowa." },
+        { "id": "g7-6", "prompt": "Należę do kółka teatralnego.", "answer": "Należałem do kółka teatralnego." }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "exercise_type": "fill-in-blank",
+      "title": "8. Przeczenie: biernik znika",
+      "instruction": "Po przeczeniu rzeczownik przechodzi w dopełniacz. Wpisz właściwą formę słowa z nawiasu.",
+      "items": [
+        { "id": "g8-1", "text": "Nie miałem wtedy ___ (czas) na nic oprócz nauki.", "answer": "czasu", "explanation": "miałem czas → nie miałem czasu. Sam czasownik się nie zmienia." },
+        { "id": "g8-2", "text": "Nie widziałem ___ (kolega) z ławki od matury.", "answer": "kolegi", "explanation": "widziałem kolegę → nie widziałem kolegi." },
+        { "id": "g8-3", "text": "Nie rozumiałem ___ (to zadanie) do samego końca lekcji.", "answer": "tego zadania", "explanation": "Zaimek też przechodzi w dopełniacz: to zadanie → tego zadania." },
+        { "id": "g8-4", "text": "Ona nie miała przy sobie ___ (legitymacja).", "answer": "legitymacji", "explanation": "Rzeczowniki żeńskie na -a mają w dopełniaczu -i albo -y." },
+        { "id": "g8-5", "text": "Nie słyszeliśmy ___ (dzwonek) na przerwę.", "answer": "dzwonka", "explanation": "słyszeliśmy dzwonek → nie słyszeliśmy dzwonka." },
+        { "id": "g8-6", "text": "Nie chciałem ___ (poprawka) i uczyłem się przez całe wakacje.", "answer": "poprawki", "explanation": "chcieć rządzi dopełniaczem także bez przeczenia: chcę poprawki." }
+      ]
+    }
+  ]
+}

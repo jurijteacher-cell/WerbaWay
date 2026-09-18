@@ -1,0 +1,57 @@
+{
+  "lesson_id": "pl-b1-group-02-szkola",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: słownictwo i czas przeszły",
+  "instruction": "Trzy bloki. Pierwszy sprawdza słownictwo z lekcji, dwa kolejne — tę samą gramatykę na zupełnie innym materiale.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "hw1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Słownictwo lekcji",
+      "instruction": "Wpisz właściwe słowo w odpowiedniej formie.",
+      "items": [
+        { "id": "hw1-1", "text": "Bez ___ nie wejdziesz do czytelni za darmo.", "answer": "legitymacji" },
+        { "id": "hw1-2", "text": "W tym roku ___ na kierunki medyczne trwa do sierpnia.", "answer": "rekrutacja" },
+        { "id": "hw1-3", "text": "Nie zdał egzaminu i we wrześniu czeka go ___.", "answer": "poprawka" },
+        { "id": "hw1-4", "text": "___ czynny jest tylko we wtorki i czwartki.", "answer": "Dziekanat" },
+        { "id": "hw1-5", "text": "Cały semestr mieszkał w ___, bo mieszkania były za drogie.", "answer": "akademiku" },
+        { "id": "hw1-6", "text": "Na koniec roku każdy uczeń dostaje ___ z ocenami.", "answer": "świadectwo" },
+        { "id": "hw1-7", "text": "Nasz ___ prowadził klasę od pierwszej do ósmej.", "answer": "wychowawca" },
+        { "id": "hw1-8", "text": "Napisał ___ o przedłużenie terminu i dostał zgodę.", "answer": "podanie" }
+      ]
+    },
+    {
+      "block_id": "hw2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Pełna forma czasu przeszłego",
+      "instruction": "Dziesięć zdań spoza szkoły. Wstaw czasownik z nawiasu w czasie przeszłym.",
+      "items": [
+        { "id": "hw2-1", "text": "Walizka ___ (leżeć) na łóżku już od tygodnia.", "answer": "leżała" },
+        { "id": "hw2-2", "text": "Klucze ___ (wisieć) przy drzwiach, ale nikt ich nie zauważył.", "answer": "wisiały" },
+        { "id": "hw2-3", "text": "Przez całą kolację ona ___ (milczeć) i patrzyła w talerz.", "answer": "milczała" },
+        { "id": "hw2-4", "text": "Samolot ___ (lecieć) nad chmurami prawie trzy godziny.", "answer": "leciał" },
+        { "id": "hw2-5", "text": "Moi rodzice ___ (umieć) naprawić w domu dosłownie wszystko.", "answer": "umieli" },
+        { "id": "hw2-6", "text": "Sąsiadki ___ (krzyczeć) na siebie przez balkon do północy.", "answer": "krzyczały" },
+        { "id": "hw2-7", "text": "Po remoncie ___ (cierpieć) na bóle pleców przez cały miesiąc.", "answer": "cierpiałem" },
+        { "id": "hw2-8", "text": "Ręce mu ___ (drżeć), kiedy podpisywał umowę.", "answer": "drżały" },
+        { "id": "hw2-9", "text": "W nocy ___ (leżeć) bez ruchu i słuchałem deszczu.", "answer": "leżałem" },
+        { "id": "hw2-10", "text": "Koledzy z pracy ___ (milczeć), kiedy szef zadał to pytanie.", "answer": "milczeli" }
+      ]
+    },
+    {
+      "block_id": "hw3",
+      "exercise_type": "sentence-building",
+      "title": "3. Przekształcenia: liczba mnoga",
+      "instruction": "Przepisz zdanie w liczbie mnogiej. Pamiętaj o różnicy między -eli a -ały.",
+      "items": [
+        { "id": "hw3-1", "prompt": "On leżał na kanapie cały wieczór. → oni", "answer": "Oni leżeli na kanapie cały wieczór." },
+        { "id": "hw3-2", "prompt": "Ona leżała na kanapie cały wieczór. → one", "answer": "One leżały na kanapie cały wieczór." },
+        { "id": "hw3-3", "prompt": "Pracownik umiał obsługiwać tę maszynę. → pracownicy", "answer": "Pracownicy umieli obsługiwać tę maszynę." },
+        { "id": "hw3-4", "prompt": "Pracownica umiała obsługiwać tę maszynę. → pracownice", "answer": "Pracownice umiały obsługiwać tę maszynę." },
+        { "id": "hw3-5", "prompt": "Turysta leciał do Lizbony z przesiadką. → turyści", "answer": "Turyści lecieli do Lizbony z przesiadką." },
+        { "id": "hw3-6", "prompt": "Sąsiadka milczała przez cały remont. → sąsiadki", "answer": "Sąsiadki milczały przez cały remont." }
+      ]
+    }
+  ]
+}

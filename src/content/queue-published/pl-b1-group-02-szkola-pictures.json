@@ -1,0 +1,188 @@
+{
+  "lesson_id": "pl-b1-group-02-szkola",
+  "exercise_type": "picture-set",
+  "layout": "collage",
+  "layout_hints": {
+    "style": "polaroid-board",
+    "photo_frame": "polaroid",
+    "label_style": "tape",
+    "rotation_range": "-6..6",
+    "clusters": "dwa zdjęcia obok siebie, etykieta nad nimi, notatka pod spodem",
+    "phrase_notes": "wyrażenia z phrase_bank rozrzucone po planszy jako karteczki"
+  },
+  "title": "Opis zdjęć: szkoła wtedy i dziś",
+  "instruction": "Sześć par. Po lewej szkoła sprzed kilkudziesięciu lat, po prawej dzisiejsza. Opisz najpierw stare zdjęcie, potem nowe, a na końcu powiedz, co zniknęło bezpowrotnie.",
+  "estimated_minutes": 16,
+  "phrase_bank": [
+    "Na starym zdjęciu widać…, a dziś…",
+    "Kiedyś każdy uczeń musiał…, teraz wystarczy…",
+    "To zostało zastąpione przez…",
+    "Pamiętam, że u nas w szkole też…",
+    "Na pierwszy rzut oka wydaje się, że nic się nie zmieniło, ale…",
+    "Największa różnica polega na tym, że…"
+  ],
+  "items": [
+    {
+      "id": "p1",
+      "label": "Sala lekcyjna",
+      "note": "lata 50. → dziś",
+      "images": [
+        {
+          "role": "wtedy",
+          "image_keywords": "classroom pupils wooden desks 1950s school",
+          "orientation": "landscape",
+          "alt": "Sala lekcyjna z rzędami drewnianych ławek i uczniami",
+          "image_url": "/content/pl-b1-group-02-szkola/pic-1.jpg",
+          "source": "archive"
+        },
+        {
+          "role": "dziś",
+          "image_keywords": "modern classroom students desks",
+          "orientation": "landscape",
+          "alt": "Współczesna sala lekcyjna z jasnymi meblami",
+          "image_url": "/content/pl-b1-group-02-szkola/pic-1-dzis.jpg",
+          "source": "stock"
+        }
+      ],
+      "question": "Ile osób siedzi w jednej ławce na każdym zdjęciu? Gdzie stoi nauczyciel? W której sali łatwiej byłoby ci się uczyć i dlaczego?",
+      "image_url": "/content/pl-b1-group-02-szkola/pic-1.jpg",
+      "alt": "Sala lekcyjna z rzędami drewnianych ławek i uczniami",
+      "image_keywords": "classroom pupils wooden desks 1950s school"
+    },
+    {
+      "id": "p2",
+      "label": "Tablica",
+      "note": "kreda → ekran",
+      "images": [
+        {
+          "role": "wtedy",
+          "image_keywords": "school blackboard chalk classroom 1930s",
+          "orientation": "landscape",
+          "alt": "Czarna tablica szkolna z napisami kredą",
+          "image_url": "/content/pl-b1-group-02-szkola/pic-2.jpg",
+          "source": "archive"
+        },
+        {
+          "role": "dziś",
+          "image_keywords": "interactive whiteboard classroom",
+          "orientation": "landscape",
+          "alt": "Tablica interaktywna w sali lekcyjnej",
+          "image_url": "/content/pl-b1-group-02-szkola/pic-2-dzis.jpg",
+          "source": "stock"
+        }
+      ],
+      "question": "Co dokładnie robił uczeń wywołany do starej tablicy? Czy dzisiejsza tablica zmienia coś w samej lekcji, czy tylko w technice?",
+      "image_url": "/content/pl-b1-group-02-szkola/pic-2.jpg",
+      "alt": "Czarna tablica szkolna z napisami kredą",
+      "image_keywords": "school blackboard chalk classroom 1930s"
+    },
+    {
+      "id": "p3",
+      "label": "Ławka",
+      "note": "kałamarz → laptop",
+      "images": [
+        {
+          "role": "wtedy",
+          "image_keywords": "wooden school desk with inkwell 1900",
+          "orientation": "landscape",
+          "alt": "Stara drewniana ławka szkolna z otworem na kałamarz",
+          "image_url": "/content/pl-b1-group-02-szkola/pic-3.jpg",
+          "source": "archive"
+        },
+        {
+          "role": "dziś",
+          "image_keywords": "student desk chair classroom",
+          "orientation": "landscape",
+          "alt": "Współczesne biurko i krzesło ucznia",
+          "image_url": "/content/pl-b1-group-02-szkola/pic-3-dzis.jpg",
+          "source": "stock"
+        }
+      ],
+      "question": "Z czego zrobione są oba meble? Który jest wygodniejszy, a który zostałby w pamięci na całe życie?",
+      "image_url": "/content/pl-b1-group-02-szkola/pic-3.jpg",
+      "alt": "Stara drewniana ławka szkolna z otworem na kałamarz",
+      "image_keywords": "wooden school desk with inkwell 1900"
+    },
+    {
+      "id": "p4",
+      "label": "Torba ucznia",
+      "note": "tornister → plecak",
+      "images": [
+        {
+          "role": "wtedy",
+          "image_keywords": "leather school satchel schoolbag 1930s",
+          "orientation": "landscape",
+          "alt": "Skórzany tornister szkolny z klamrami",
+          "image_url": "/content/pl-b1-group-02-szkola/pic-4.jpg",
+          "source": "archive"
+        },
+        {
+          "role": "dziś",
+          "image_keywords": "school backpack",
+          "orientation": "landscape",
+          "alt": "Współczesny plecak szkolny",
+          "image_url": "/content/pl-b1-group-02-szkola/pic-4-dzis.jpg",
+          "source": "stock"
+        }
+      ],
+      "question": "Co było w twojej szkolnej torbie w pierwszej klasie, a co w ostatniej? Co dzisiejszy uczeń nosi, czego ty nie nosiłeś?",
+      "image_url": "/content/pl-b1-group-02-szkola/pic-4.jpg",
+      "alt": "Skórzany tornister szkolny z klamrami",
+      "image_keywords": "leather school satchel schoolbag 1930s"
+    },
+    {
+      "id": "p5",
+      "label": "Biblioteka",
+      "note": "katalog kartkowy → wyszukiwarka",
+      "images": [
+        {
+          "role": "wtedy",
+          "image_keywords": "library card catalog cabinet 1950s",
+          "orientation": "landscape",
+          "alt": "Szafka katalogu kartkowego w bibliotece",
+          "image_url": "/content/pl-b1-group-02-szkola/pic-5.jpg",
+          "source": "archive"
+        },
+        {
+          "role": "dziś",
+          "image_keywords": "student laptop library table",
+          "orientation": "landscape",
+          "alt": "Student z laptopem przy stole w bibliotece",
+          "image_url": "/content/pl-b1-group-02-szkola/pic-5-dzis.jpg",
+          "source": "stock"
+        }
+      ],
+      "question": "Ile czasu zajmowało znalezienie jednej informacji wtedy, a ile zajmuje dziś? Co zyskaliśmy, a co przy okazji straciliśmy?",
+      "image_url": "/content/pl-b1-group-02-szkola/pic-5.jpg",
+      "alt": "Szafka katalogu kartkowego w bibliotece",
+      "image_keywords": "library card catalog cabinet 1950s"
+    },
+    {
+      "id": "p6",
+      "label": "Przybory",
+      "note": "pióro i kałamarz → długopis",
+      "images": [
+        {
+          "role": "wtedy",
+          "image_keywords": "inkwell dip pen writing set 1920s",
+          "orientation": "landscape",
+          "alt": "Kałamarz i obsadka ze stalówką na drewnianym blacie",
+          "image_url": "/content/pl-b1-group-02-szkola/pic-6.jpg",
+          "source": "archive"
+        },
+        {
+          "role": "dziś",
+          "image_keywords": "pens pencils notebook desk",
+          "orientation": "landscape",
+          "alt": "Długopisy, ołówki i zeszyt na biurku",
+          "image_url": "/content/pl-b1-group-02-szkola/pic-6-dzis.jpg",
+          "source": "stock"
+        }
+      ],
+      "question": "Jak wyglądał zeszyt ucznia, który pisał piórem? Czy ładne pismo jest jeszcze do czegoś potrzebne?",
+      "image_url": "/content/pl-b1-group-02-szkola/pic-6.jpg",
+      "alt": "Kałamarz i obsadka ze stalówką na drewnianym blacie",
+      "image_keywords": "inkwell dip pen writing set 1920s"
+    }
+  ]
+}
