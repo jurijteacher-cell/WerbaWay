@@ -1,0 +1,182 @@
+{
+  "lesson_id": "pl-a1-01-wczoraj",
+  "exercise_type": "picture-set",
+  "layout": "collage",
+  "layout_hints": {
+    "style": "polaroid-board",
+    "photo_frame": "polaroid",
+    "label_style": "tape",
+    "rotation_range": "-6..6",
+    "clusters": "dwa zdjęcia obok siebie, etykieta nad nimi, notatka pod spodem",
+    "phrase_notes": "wyrażenia z phrase_bank rozrzucone po planszy jako karteczki"
+  },
+  "title": "Opis zdjęć: rano i wieczorem",
+  "instruction": "Opowiedz, co ci ludzie robili — najpierw na pierwszym zdjęciu, potem na drugim. Wymyśl godziny i powiedz je na dwa sposoby.",
+  "estimated_minutes": 16,
+  "phrase_bank": [
+    "Na pierwszym zdjęciu widać…",
+    "Rano ta osoba… a wieczorem…",
+    "Najpierw…, potem…",
+    "Myślę, że to było o…",
+    "Wczoraj o tej porze ja…",
+    "Ja też… / Ja nie…"
+  ],
+  "items": [
+    {
+      "id": "p1",
+      "label": "Rano i wieczorem",
+      "note": "7:00 → 22:00",
+      "images": [
+        {
+          "role": "rano",
+          "source": "stock",
+          "image_keywords": "woman drinking coffee kitchen",
+          "orientation": "landscape",
+          "alt": "Kobieta pije kawę w kuchni",
+          "image_url": "/content/pl-a1-01-wczoraj/pic-1.jpg"
+        },
+        {
+          "role": "wieczorem",
+          "source": "stock",
+          "image_keywords": "woman reading book sofa",
+          "orientation": "landscape",
+          "alt": "Kobieta czyta książkę na kanapie",
+          "image_url": "/content/pl-a1-01-wczoraj/pic-1-dzis.jpg"
+        }
+      ],
+      "question": "Co ta kobieta robiła rano, a co wieczorem? O której? Powiedz godziny na dwa sposoby.",
+      "image_url": "/content/pl-a1-01-wczoraj/pic-1.jpg",
+      "alt": "Kobieta pije kawę w kuchni"
+    },
+    {
+      "id": "p2",
+      "label": "Droga do pracy",
+      "note": "autobus czy rower?",
+      "images": [
+        {
+          "role": "autobusem",
+          "source": "stock",
+          "image_keywords": "people waiting bus stop",
+          "orientation": "landscape",
+          "alt": "Ludzie czekają na przystanku autobusowym",
+          "image_url": "/content/pl-a1-01-wczoraj/pic-2.jpg"
+        },
+        {
+          "role": "rowerem",
+          "source": "stock",
+          "image_keywords": "cyclist city street",
+          "orientation": "landscape",
+          "alt": "Rowerzysta jedzie ulicą w mieście",
+          "image_url": "/content/pl-a1-01-wczoraj/pic-2-dzis.jpg"
+        }
+      ],
+      "question": "Jak ci ludzie jechali do pracy? O której wyszli z domu? A jak Ty jechałeś wczoraj?",
+      "image_url": "/content/pl-a1-01-wczoraj/pic-2.jpg",
+      "alt": "Ludzie czekają na przystanku autobusowym"
+    },
+    {
+      "id": "p3",
+      "label": "Zakupy i kolacja",
+      "note": "17:00 → 19:30",
+      "images": [
+        {
+          "role": "najpierw",
+          "source": "stock",
+          "image_keywords": "grocery store shopping",
+          "orientation": "landscape",
+          "alt": "Osoba robi zakupy w sklepie spożywczym",
+          "image_url": "/content/pl-a1-01-wczoraj/pic-3.jpg"
+        },
+        {
+          "role": "potem",
+          "source": "stock",
+          "image_keywords": "cooking dinner kitchen",
+          "orientation": "landscape",
+          "alt": "Osoba gotuje kolację w kuchni",
+          "image_url": "/content/pl-a1-01-wczoraj/pic-3-dzis.jpg"
+        }
+      ],
+      "question": "Co ta osoba kupiła, a potem ugotowała? Co Ty jadłeś wczoraj na kolację i o której?",
+      "image_url": "/content/pl-a1-01-wczoraj/pic-3.jpg",
+      "alt": "Osoba robi zakupy w sklepie spożywczym"
+    },
+    {
+      "id": "p4",
+      "label": "Weekend",
+      "note": "sobota → niedziela",
+      "images": [
+        {
+          "role": "w sobotę",
+          "source": "stock",
+          "image_keywords": "family picnic park",
+          "orientation": "landscape",
+          "alt": "Rodzina ma piknik w parku",
+          "image_url": "/content/pl-a1-01-wczoraj/pic-4.jpg"
+        },
+        {
+          "role": "w niedzielę",
+          "source": "stock",
+          "image_keywords": "friends watching movie home",
+          "orientation": "landscape",
+          "alt": "Przyjaciele oglądają film w domu",
+          "image_url": "/content/pl-a1-01-wczoraj/pic-4-dzis.jpg"
+        }
+      ],
+      "question": "Jak ci ludzie spędzili weekend? Co robiłeś w zeszły weekend?",
+      "image_url": "/content/pl-a1-01-wczoraj/pic-4.jpg",
+      "alt": "Rodzina ma piknik w parku"
+    },
+    {
+      "id": "p5",
+      "label": "Która godzina?",
+      "note": "oficjalnie ↔ potocznie",
+      "images": [
+        {
+          "role": "zegar ze wskazówkami",
+          "source": "stock",
+          "image_keywords": "wall clock",
+          "orientation": "landscape",
+          "alt": "Zegar ścienny ze wskazówkami",
+          "image_url": "/content/pl-a1-01-wczoraj/pic-5.jpg"
+        },
+        {
+          "role": "zegar cyfrowy",
+          "source": "stock",
+          "image_keywords": "digital clock display",
+          "orientation": "landscape",
+          "alt": "Zegar cyfrowy z godziną",
+          "image_url": "/content/pl-a1-01-wczoraj/pic-5-dzis.jpg"
+        }
+      ],
+      "question": "Która godzina jest na pierwszym zegarze, a która na drugim? Powiedz każdą oficjalnie i potocznie.",
+      "image_url": "/content/pl-a1-01-wczoraj/pic-5.jpg",
+      "alt": "Zegar ścienny ze wskazówkami"
+    },
+    {
+      "id": "p6",
+      "label": "Spóźnienie",
+      "note": "8:00 → 8:25",
+      "images": [
+        {
+          "role": "w drodze",
+          "source": "stock",
+          "image_keywords": "man running street",
+          "orientation": "landscape",
+          "alt": "Mężczyzna biegnie ulicą",
+          "image_url": "/content/pl-a1-01-wczoraj/pic-6.jpg"
+        },
+        {
+          "role": "na miejscu",
+          "source": "stock",
+          "image_keywords": "office meeting room",
+          "orientation": "landscape",
+          "alt": "Ludzie siedzą przy stole w sali spotkań",
+          "image_url": "/content/pl-a1-01-wczoraj/pic-6-dzis.jpg"
+        }
+      ],
+      "question": "Ten pan się spóźnił. O której wyszedł z domu? O której był na miejscu? Co się stało?",
+      "image_url": "/content/pl-a1-01-wczoraj/pic-6.jpg",
+      "alt": "Mężczyzna biegnie ulicą"
+    }
+  ]
+}

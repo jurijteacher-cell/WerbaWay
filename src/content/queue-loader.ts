@@ -2,6 +2,7 @@ import { readFileSync, existsSync, readdirSync } from 'fs';
 import path from 'path';
 import type {
   FlipTaskExercise,
+  GrammarBoardExercise,
   GrammarPyramidExercise,
   GrammarPyramidItem,
   HomeworkExercise,
@@ -191,6 +192,47 @@ function normalizeGrammar(raw: any): GrammarPyramidExercise {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
+function normalizeGrammarBoard(raw: any): GrammarBoardExercise {
+  return {
+    lesson_id: raw.lesson_id,
+    exercise_type: 'grammar-board',
+    title: raw.title,
+    instructions: raw.instructions ?? raw.instruction,
+    layout: raw.layout,
+    columns: raw.columns,
+    style: raw.style,
+    sections: raw.sections,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    cards: (raw.cards ?? []).map((c: any, i: number) => ({
+      id: c.id ?? i + 1,
+      number: c.number ?? i + 1,
+      section: c.section,
+      color_group: c.color_group,
+      rubric: c.rubric,
+      lead: c.lead,
+      rows: c.rows,
+      sticker: c.sticker,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      tasks: (c.tasks ?? []).map((t: any) => ({
+        task_id: t.task_id,
+        exercise_type: t.exercise_type,
+        instruction: t.instruction,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        items: (t.items ?? []).map((it: any, j: number) => ({
+          id: it.id ?? j + 1,
+          text: it.text,
+          sentence: it.sentence,
+          prompt: it.prompt,
+          answer: it.answer,
+          options: it.options,
+          explanation: it.explanation,
+        })),
+      })),
+    })),
+  };
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function normalizeHw(raw: any): HomeworkExercise {
   if (Array.isArray(raw.blocks)) {
     const grammar = normalizeGrammar(raw);
@@ -218,6 +260,7 @@ export function getQueueBundle(lessonId: string): QueueExerciseBundle | null {
   const vocabRaw = readJson<unknown>(`${lessonId}-vocab.json`);
   const picturesRaw = readJson<unknown>(`${lessonId}-pictures.json`);
   const commRaw = readJson<unknown>(`${lessonId}-comm-tasks.json`);
+  const grammarBoardRaw = readJson<unknown>(`${lessonId}-grammar-board.json`);
   const grammarRaw = readJson<unknown>(`${lessonId}-grammar.json`);
   const hwRaw = readJson<unknown>(`${lessonId}-hw.json`);
   // pictures.json is optional (some lessons have no picture-set)
@@ -226,6 +269,7 @@ export function getQueueBundle(lessonId: string): QueueExerciseBundle | null {
     vocab: normalizeVocab(vocabRaw),
     pictures: picturesRaw ? normalizePictures(picturesRaw) : undefined,
     commTasks: normalizeFlip(commRaw),
+    grammarBoard: grammarBoardRaw ? normalizeGrammarBoard(grammarBoardRaw) : undefined,
     grammar: normalizeGrammar(grammarRaw),
     hw: normalizeHw(hwRaw),
   };

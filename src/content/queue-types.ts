@@ -105,11 +105,52 @@ export type HomeworkExercise = {
   levels?: GrammarPyramidExercise['levels'];
 };
 
+export type GrammarBoardTaskItem = {
+  id: number | string;
+  text?: string;
+  sentence?: string;
+  prompt?: string;
+  answer?: string;
+  options?: string[];
+  explanation?: string;
+};
+
+export type GrammarBoardCard = {
+  id: string | number;
+  number?: number;
+  section?: string;
+  color_group?: string;
+  rubric?: string;
+  lead?: string;
+  rows?: string[];
+  sticker?: string;
+  tasks?: Array<{
+    task_id: string;
+    exercise_type?: string;
+    instruction?: string;
+    items?: GrammarBoardTaskItem[];
+  }>;
+};
+
+export type GrammarBoardExercise = {
+  lesson_id: string;
+  exercise_type: 'grammar-board';
+  title: string;
+  instructions?: string;
+  layout?: string;
+  columns?: number;
+  style?: string;
+  sections?: string[];
+  cards: GrammarBoardCard[];
+};
+
 export type QueueExerciseBundle = {
   vocab: VocabCardsExercise;
   /** Optional — some lessons ship without a picture-set. */
   pictures?: PictureSetExercise;
   commTasks: FlipTaskExercise;
+  /** Optional interactive grammar board (cards + mini-tasks). */
+  grammarBoard?: GrammarBoardExercise;
   grammar: GrammarPyramidExercise;
   hw: HomeworkExercise;
 };

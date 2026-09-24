@@ -1,0 +1,1018 @@
+{
+  "lesson_id": "pl-a1-01-wczoraj",
+  "exercise_type": "grammar-board",
+  "title": "Czas przeszły i godziny — tablica",
+  "instruction": "Przeczytaj kartę, potem zrób zadania pod nią. Dopiero wtedy przejdź dalej.",
+  "estimated_minutes": 35,
+  "layout": "cards",
+  "columns": 2,
+  "style": "sketch-board",
+  "sections": [
+    "Czas przeszły",
+    "Godziny"
+  ],
+  "cards": [
+    {
+      "id": "b01",
+      "number": 1,
+      "section": "Czas przeszły",
+      "color_group": "k1",
+      "rubric": "Po co",
+      "lead": "Dziś robię. Wczoraj robiłem.",
+      "rows": [
+        "Dziś pracuję.",
+        "Wczoraj pracowałem.",
+        "Sygnały: wczoraj, rano, tydzień temu"
+      ],
+      "sticker": "W polskim jest jeden czas przeszły. Nie trzy, jak w angielskim.",
+      "tasks": [
+        {
+          "task_id": "b01-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b01-t1-1",
+              "text": "Wczoraj ___ w domu.",
+              "answer": "byłem",
+              "options": [
+                "byłem",
+                "jestem"
+              ]
+            },
+            {
+              "id": "b01-t1-2",
+              "text": "Teraz ___ kawę.",
+              "answer": "piję",
+              "options": [
+                "piję",
+                "piłem"
+              ]
+            },
+            {
+              "id": "b01-t1-3",
+              "text": "Tydzień temu ___ w kinie.",
+              "answer": "byłam",
+              "options": [
+                "byłam",
+                "jestem"
+              ]
+            }
+          ]
+        },
+        {
+          "task_id": "b01-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Które słowo pasuje do czasu przeszłego?",
+          "items": [
+            {
+              "id": "b01-t2-1",
+              "text": "___ oglądałem film.",
+              "answer": "Wczoraj",
+              "options": [
+                "Wczoraj",
+                "Jutro"
+              ]
+            },
+            {
+              "id": "b01-t2-2",
+              "text": "___ gotowałam obiad.",
+              "answer": "Rano",
+              "options": [
+                "Rano",
+                "Teraz"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b02",
+      "number": 2,
+      "section": "Czas przeszły",
+      "color_group": "k1",
+      "rubric": "Wzór",
+      "lead": "bezokolicznik bez -ć + ł",
+      "rows": [
+        "robić → robi- → robił",
+        "czytać → czyta- → czytał",
+        "mówić → mówi- → mówił"
+      ],
+      "sticker": "Potem dodajemy końcówkę, która mówi, kto to robił: robił, robiła, robiłem.",
+      "tasks": [
+        {
+          "task_id": "b02-t1",
+          "exercise_type": "matching",
+          "instruction": "Połącz bezokolicznik z formą „on”.",
+          "items": [
+            {
+              "id": "b02-t1-1",
+              "left": "czytać",
+              "right": "czytał"
+            },
+            {
+              "id": "b02-t1-2",
+              "left": "pisać",
+              "right": "pisał"
+            },
+            {
+              "id": "b02-t1-3",
+              "left": "pracować",
+              "right": "pracował"
+            },
+            {
+              "id": "b02-t1-4",
+              "left": "mówić",
+              "right": "mówił"
+            }
+          ]
+        },
+        {
+          "task_id": "b02-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Napisz formę „on”.",
+          "items": [
+            {
+              "id": "b02-t2-1",
+              "text": "oglądać → ___",
+              "answer": "oglądał"
+            },
+            {
+              "id": "b02-t2-2",
+              "text": "gotować → ___",
+              "answer": "gotował"
+            },
+            {
+              "id": "b02-t2-3",
+              "text": "kupić → ___",
+              "answer": "kupił"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b03",
+      "number": 3,
+      "section": "Czas przeszły",
+      "color_group": "k2",
+      "rubric": "On, ona, ono",
+      "lead": "-ł · -ła · -ło",
+      "rows": [
+        "on robił",
+        "ona robiła",
+        "ono (dziecko) robiło"
+      ],
+      "sticker": "Rodzaj widać w czasowniku: Ola pisała, Adam pisał.",
+      "tasks": [
+        {
+          "task_id": "b03-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b03-t1-1",
+              "text": "Marta ___ książkę.",
+              "answer": "czytała",
+              "options": [
+                "czytał",
+                "czytała"
+              ]
+            },
+            {
+              "id": "b03-t1-2",
+              "text": "Tomek ___ obiad.",
+              "answer": "gotował",
+              "options": [
+                "gotował",
+                "gotowała"
+              ]
+            },
+            {
+              "id": "b03-t1-3",
+              "text": "Dziecko ___ w nocy.",
+              "answer": "płakało",
+              "options": [
+                "płakał",
+                "płakało"
+              ]
+            }
+          ]
+        },
+        {
+          "task_id": "b03-t2",
+          "exercise_type": "drag-and-drop",
+          "instruction": "Przeciągnij słowo w lukę. Dwa słowa nie pasują.",
+          "items": [
+            {
+              "id": "b03-t2-1",
+              "text": "Pani Ewa ___ w banku.",
+              "answer": "pracowała"
+            },
+            {
+              "id": "b03-t2-2",
+              "text": "Pan Jan ___ gazetę.",
+              "answer": "czytał"
+            }
+          ],
+          "bank": [
+            "pracował",
+            "czytała"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b04",
+      "number": 4,
+      "section": "Czas przeszły",
+      "color_group": "k2",
+      "rubric": "Ja i ty",
+      "lead": "Mężczyzna: -łem. Kobieta: -łam.",
+      "rows": [
+        "ja (on): robiłem",
+        "ja (ona): robiłam",
+        "ty (on): robiłeś",
+        "ty (ona): robiłaś"
+      ],
+      "sticker": "Słowo „ja” nie jest potrzebne. Końcówka -łem już mówi, kto to robił.",
+      "tasks": [
+        {
+          "task_id": "b04-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Kto mówi? Wybierz formę.",
+          "items": [
+            {
+              "id": "b04-t1-1",
+              "text": "Anna: „Wczoraj ___ w pracy.”",
+              "answer": "byłam",
+              "options": [
+                "byłem",
+                "byłam"
+              ]
+            },
+            {
+              "id": "b04-t1-2",
+              "text": "Piotr: „Rano ___ kawę.”",
+              "answer": "piłem",
+              "options": [
+                "piłem",
+                "piłam"
+              ]
+            },
+            {
+              "id": "b04-t1-3",
+              "text": "Ola, co ___ wczoraj?",
+              "answer": "robiłaś",
+              "options": [
+                "robiłeś",
+                "robiłaś"
+              ]
+            }
+          ]
+        },
+        {
+          "task_id": "b04-t2",
+          "exercise_type": "sentence-building",
+          "instruction": "Napisz zdanie w czasie przeszłym.",
+          "items": [
+            {
+              "id": "b04-t2-1",
+              "prompt": "(ja, kobieta) czytać książkę",
+              "answer": "Czytałam książkę."
+            },
+            {
+              "id": "b04-t2-2",
+              "prompt": "(ja, mężczyzna) oglądać film",
+              "answer": "Oglądałem film."
+            },
+            {
+              "id": "b04-t2-3",
+              "prompt": "(ty, mężczyzna) gotować?",
+              "answer": "Gotowałeś?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b05",
+      "number": 5,
+      "section": "Czas przeszły",
+      "color_group": "k2",
+      "rubric": "My, wy, oni, one",
+      "lead": "Grupa: -li albo -ły",
+      "rows": [
+        "my robiliśmy / robiłyśmy",
+        "wy robiliście / robiłyście",
+        "oni robili / one robiły"
+      ],
+      "sticker": "Jest w grupie mężczyzna? Wtedy -li. Same kobiety, dzieci albo rzeczy? Wtedy -ły.",
+      "tasks": [
+        {
+          "task_id": "b05-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b05-t1-1",
+              "text": "Adam i Ola ___ w kinie.",
+              "answer": "byli",
+              "options": [
+                "byli",
+                "były"
+              ],
+              "explanation": "Adam to mężczyzna, więc -li."
+            },
+            {
+              "id": "b05-t1-2",
+              "text": "Mama i babcia ___ obiad.",
+              "answer": "gotowały",
+              "options": [
+                "gotowali",
+                "gotowały"
+              ],
+              "explanation": "Same kobiety, więc -ły."
+            },
+            {
+              "id": "b05-t1-3",
+              "text": "Dzieci ___ się w parku.",
+              "answer": "bawiły",
+              "options": [
+                "bawili",
+                "bawiły"
+              ],
+              "explanation": "Dzieci to nie mężczyźni, więc -ły."
+            }
+          ]
+        },
+        {
+          "task_id": "b05-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b05-t2-1",
+              "text": "(my, same kobiety) ___ kawę.",
+              "answer": "piłyśmy",
+              "options": [
+                "piłyśmy",
+                "piliśmy"
+              ]
+            },
+            {
+              "id": "b05-t2-2",
+              "text": "Panowie, co ___ wczoraj?",
+              "answer": "robiliście",
+              "options": [
+                "robiliście",
+                "robiłyście"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b06",
+      "number": 6,
+      "section": "Czas przeszły",
+      "color_group": "k2",
+      "rubric": "Być",
+      "lead": "Najważniejszy czasownik",
+      "rows": [
+        "byłem / byłam",
+        "był / była / było",
+        "byliśmy / byłyśmy",
+        "byli / były"
+      ],
+      "sticker": "Wczoraj byłem w domu. Nigdy: wczoraj jestem.",
+      "tasks": [
+        {
+          "task_id": "b06-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Napisz formę „być”.",
+          "items": [
+            {
+              "id": "b06-t1-1",
+              "text": "Wczoraj (ja, mężczyzna) ___ zmęczony.",
+              "answer": "byłem"
+            },
+            {
+              "id": "b06-t1-2",
+              "text": "Gdzie (ty, kobieta) ___ rano?",
+              "answer": "byłaś"
+            },
+            {
+              "id": "b06-t1-3",
+              "text": "Oni ___ w pracy do szóstej.",
+              "answer": "byli"
+            }
+          ]
+        },
+        {
+          "task_id": "b06-t2",
+          "exercise_type": "matching",
+          "instruction": "Połącz osobę z formą.",
+          "items": [
+            {
+              "id": "b06-t2-1",
+              "left": "ona",
+              "right": "była"
+            },
+            {
+              "id": "b06-t2-2",
+              "left": "my (Adam i ja)",
+              "right": "byliśmy"
+            },
+            {
+              "id": "b06-t2-3",
+              "left": "wy (same kobiety)",
+              "right": "byłyście"
+            },
+            {
+              "id": "b06-t2-4",
+              "left": "ono",
+              "right": "było"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b07",
+      "number": 7,
+      "section": "Czas przeszły",
+      "color_group": "k3",
+      "rubric": "Czasowniki na -eć",
+      "lead": "e zmienia się w a",
+      "rows": [
+        "mieć → miałem, miała",
+        "chcieć → chciałem, chciała",
+        "musieć → musiałem, musiała",
+        "ale: mieli, chcieli, musieli"
+      ],
+      "sticker": "E wraca tylko w formie -li: oni mieli, chcieli, musieli.",
+      "tasks": [
+        {
+          "task_id": "b07-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b07-t1-1",
+              "text": "(ja, kobieta) Wczoraj nie ___ czasu.",
+              "answer": "miałam",
+              "options": [
+                "miałam",
+                "miełam"
+              ],
+              "explanation": "mieć → e zmienia się w a."
+            },
+            {
+              "id": "b07-t1-2",
+              "text": "Oni nie ___ iść do kina.",
+              "answer": "chcieli",
+              "options": [
+                "chcieli",
+                "chciali"
+              ],
+              "explanation": "W formie -li wraca e."
+            }
+          ]
+        },
+        {
+          "task_id": "b07-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Napisz formę.",
+          "items": [
+            {
+              "id": "b07-t2-1",
+              "text": "musieć (ja, mężczyzna) → ___",
+              "answer": "musiałem"
+            },
+            {
+              "id": "b07-t2-2",
+              "text": "mieć (my, Adam i ja) → ___",
+              "answer": "mieliśmy"
+            },
+            {
+              "id": "b07-t2-3",
+              "text": "chcieć (ona) → ___",
+              "answer": "chciała"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b08",
+      "number": 8,
+      "section": "Czas przeszły",
+      "color_group": "k3",
+      "rubric": "Nieregularne",
+      "lead": "Do zapamiętania na pamięć",
+      "rows": [
+        "iść → szedłem, szła, szli",
+        "jeść → jadłem, jadła, jedli",
+        "móc → mogłem, mógł, mogła"
+      ],
+      "sticker": "Pójść = po + iść: poszedłem, poszła, poszli.",
+      "tasks": [
+        {
+          "task_id": "b08-t1",
+          "exercise_type": "matching",
+          "instruction": "Połącz.",
+          "items": [
+            {
+              "id": "b08-t1-1",
+              "left": "iść (on)",
+              "right": "szedł"
+            },
+            {
+              "id": "b08-t1-2",
+              "left": "jeść (ona)",
+              "right": "jadła"
+            },
+            {
+              "id": "b08-t1-3",
+              "left": "móc (on)",
+              "right": "mógł"
+            },
+            {
+              "id": "b08-t1-4",
+              "left": "pójść (ona)",
+              "right": "poszła"
+            }
+          ]
+        },
+        {
+          "task_id": "b08-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b08-t2-1",
+              "text": "(ja, mężczyzna) Wczoraj nie ___ przyjść.",
+              "answer": "mogłem",
+              "options": [
+                "mogłem",
+                "możłem"
+              ]
+            },
+            {
+              "id": "b08-t2-2",
+              "text": "Co ___ na śniadanie? (ty, kobieta)",
+              "answer": "jadłaś",
+              "options": [
+                "jadłaś",
+                "jedłaś"
+              ]
+            },
+            {
+              "id": "b08-t2-3",
+              "text": "Oni ___ do domu pieszo.",
+              "answer": "szli",
+              "options": [
+                "szli",
+                "szedli"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b09",
+      "number": 9,
+      "section": "Czas przeszły",
+      "color_group": "k3",
+      "rubric": "Pytania i nie",
+      "lead": "Tak samo jak w czasie teraźniejszym",
+      "rows": [
+        "Nie byłem w pracy.",
+        "Czy byłaś w kinie?",
+        "Co robiłeś wczoraj?",
+        "O której wróciłeś?"
+      ],
+      "sticker": "Krótka odpowiedź: Tak, byłam. / Nie, nie byłam.",
+      "tasks": [
+        {
+          "task_id": "b09-t1",
+          "exercise_type": "sentence-building",
+          "instruction": "Zmień zdanie.",
+          "items": [
+            {
+              "id": "b09-t1-1",
+              "prompt": "Byłem w pracy. (nie)",
+              "answer": "Nie byłem w pracy."
+            },
+            {
+              "id": "b09-t1-2",
+              "prompt": "Oglądałaś film. (pytanie z „czy”)",
+              "answer": "Czy oglądałaś film?"
+            }
+          ]
+        },
+        {
+          "task_id": "b09-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Czy czy co?",
+          "items": [
+            {
+              "id": "b09-t2-1",
+              "text": "___ robiliście w sobotę?",
+              "answer": "Co",
+              "options": [
+                "Co",
+                "Czy"
+              ]
+            },
+            {
+              "id": "b09-t2-2",
+              "text": "___ byłeś wczoraj u lekarza?",
+              "answer": "Czy",
+              "options": [
+                "Czy",
+                "Co"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b10",
+      "number": 10,
+      "section": "Godziny",
+      "color_group": "k1",
+      "rubric": "Która godzina?",
+      "lead": "Godzina: piąta. Minuty: pięć.",
+      "rows": [
+        "7:00 → Jest siódma.",
+        "15:30 → Jest piętnasta trzydzieści.",
+        "9:05 → Jest dziewiąta pięć."
+      ],
+      "sticker": "W przeszłości: była siódma. Ale: było wpół do ósmej.",
+      "tasks": [
+        {
+          "task_id": "b10-t1",
+          "exercise_type": "matching",
+          "instruction": "Połącz godzinę ze słowem.",
+          "items": [
+            {
+              "id": "b10-t1-1",
+              "left": "8:00",
+              "right": "ósma"
+            },
+            {
+              "id": "b10-t1-2",
+              "left": "12:00",
+              "right": "dwunasta"
+            },
+            {
+              "id": "b10-t1-3",
+              "left": "16:00",
+              "right": "szesnasta"
+            },
+            {
+              "id": "b10-t1-4",
+              "left": "21:00",
+              "right": "dwudziesta pierwsza"
+            }
+          ]
+        },
+        {
+          "task_id": "b10-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b10-t2-1",
+              "text": "Jest ___ (10:20).",
+              "answer": "dziesiąta dwadzieścia",
+              "options": [
+                "dziesiąta dwadzieścia",
+                "dziesięć dwadzieścia"
+              ],
+              "explanation": "Godzina — porządkowa (dziesiąta), minuty — zwykła liczba."
+            },
+            {
+              "id": "b10-t2-2",
+              "text": "Jest ___ (14:00).",
+              "answer": "czternasta",
+              "options": [
+                "czternasta",
+                "czternaście"
+              ],
+              "explanation": "Godzina zawsze porządkowa."
+            }
+          ]
+        },
+        {
+          "task_id": "b10-t3",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Była czy było?",
+          "items": [
+            {
+              "id": "b10-t3-1",
+              "text": "Kiedy zadzwoniła mama, ___ dziewiąta.",
+              "answer": "była",
+              "options": [
+                "była",
+                "było"
+              ],
+              "explanation": "Dziewiąta = godzina, więc była."
+            },
+            {
+              "id": "b10-t3-2",
+              "text": "Kiedy wyszłam z pracy, ___ wpół do szóstej.",
+              "answer": "było",
+              "options": [
+                "była",
+                "było"
+              ],
+              "explanation": "Z „wpół do” mówimy było."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b11",
+      "number": 11,
+      "section": "Godziny",
+      "color_group": "k1",
+      "rubric": "O której?",
+      "lead": "o + piątej",
+      "rows": [
+        "Która? → piąta",
+        "O której? → o piątej",
+        "o siódmej trzydzieści",
+        "o dwudziestej"
+      ],
+      "sticker": "Minuty się nie zmieniają: o ósmej piętnaście.",
+      "tasks": [
+        {
+          "task_id": "b11-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b11-t1-1",
+              "text": "Film był ___ (20:00).",
+              "answer": "o dwudziestej",
+              "options": [
+                "o dwudziestej",
+                "o dwudziesta"
+              ]
+            },
+            {
+              "id": "b11-t1-2",
+              "text": "Wstałem ___ (6:00).",
+              "answer": "o szóstej",
+              "options": [
+                "o szóstej",
+                "o sześć"
+              ]
+            },
+            {
+              "id": "b11-t1-3",
+              "text": "Lekcja była ___ (11:15).",
+              "answer": "o jedenastej piętnaście",
+              "options": [
+                "o jedenastej piętnaście",
+                "o jedenastej piętnastej"
+              ]
+            }
+          ]
+        },
+        {
+          "task_id": "b11-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "O której? Napisz słowami.",
+          "items": [
+            {
+              "id": "b11-t2-1",
+              "text": "9:00 → ___",
+              "answer": "o dziewiątej"
+            },
+            {
+              "id": "b11-t2-2",
+              "text": "7:00 → ___",
+              "answer": "o siódmej"
+            },
+            {
+              "id": "b11-t2-3",
+              "text": "13:00 → ___",
+              "answer": "o trzynastej"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b12",
+      "number": 12,
+      "section": "Godziny",
+      "color_group": "k1",
+      "rubric": "Potocznie",
+      "lead": "Zegar do 12 i trzy słowa: po, wpół do, za",
+      "rows": [
+        "5:15 → kwadrans po piątej",
+        "5:30 → wpół do szóstej",
+        "5:45 → za kwadrans szósta",
+        "5:10 → dziesięć po piątej"
+      ],
+      "sticker": "Wpół do szóstej = 5:30. Liczymy do następnej godziny.",
+      "tasks": [
+        {
+          "task_id": "b12-t1",
+          "exercise_type": "matching",
+          "instruction": "Połącz.",
+          "items": [
+            {
+              "id": "b12-t1-1",
+              "left": "7:30",
+              "right": "wpół do ósmej"
+            },
+            {
+              "id": "b12-t1-2",
+              "left": "7:15",
+              "right": "kwadrans po siódmej"
+            },
+            {
+              "id": "b12-t1-3",
+              "left": "7:45",
+              "right": "za kwadrans ósma"
+            },
+            {
+              "id": "b12-t1-4",
+              "left": "7:20",
+              "right": "dwadzieścia po siódmej"
+            }
+          ]
+        },
+        {
+          "task_id": "b12-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Jak to powiedzieć potocznie?",
+          "items": [
+            {
+              "id": "b12-t2-1",
+              "text": "9:30 → ___",
+              "answer": "wpół do dziesiątej",
+              "options": [
+                "wpół do dziesiątej",
+                "wpół do dziewiątej"
+              ],
+              "explanation": "Wpół do + następna godzina."
+            },
+            {
+              "id": "b12-t2-2",
+              "text": "18:45 → ___",
+              "answer": "za kwadrans siódma",
+              "options": [
+                "za kwadrans siódma",
+                "za kwadrans dziewiętnasta"
+              ],
+              "explanation": "Potocznie liczymy tylko do dwunastu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b13",
+      "number": 13,
+      "section": "Godziny",
+      "color_group": "k1",
+      "rubric": "Oficjalnie czy potocznie",
+      "lead": "Dworzec i urząd — oficjalnie. Znajomi — potocznie.",
+      "rows": [
+        "Pociąg odjechał o siedemnastej czterdzieści.",
+        "Wróciłem za dwadzieścia szósta.",
+        "Sklep był otwarty od ósmej do dwudziestej."
+      ],
+      "sticker": "Od ósmej, do dwudziestej — po „od” i „do” ta sama forma: -ej.",
+      "tasks": [
+        {
+          "task_id": "b13-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Co brzmi naturalnie w tej sytuacji?",
+          "items": [
+            {
+              "id": "b13-t1-1",
+              "text": "Na dworcu: „Pociąg do Krakowa odjeżdża ___” (16:30).",
+              "answer": "o szesnastej trzydzieści",
+              "options": [
+                "o szesnastej trzydzieści",
+                "wpół do piątej"
+              ],
+              "explanation": "Dworzec, rozkład jazdy — forma oficjalna."
+            },
+            {
+              "id": "b13-t1-2",
+              "text": "Kolega: „Spotkamy się ___?” (16:30)",
+              "answer": "wpół do piątej",
+              "options": [
+                "wpół do piątej",
+                "o szesnastej trzydzieści"
+              ],
+              "explanation": "Między znajomymi mówimy potocznie."
+            }
+          ]
+        },
+        {
+          "task_id": "b13-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Napisz godzinę słowami.",
+          "items": [
+            {
+              "id": "b13-t2-1",
+              "text": "Bank był otwarty od ___ (9:00).",
+              "answer": "dziewiątej"
+            },
+            {
+              "id": "b13-t2-2",
+              "text": "Poczta była otwarta do ___ (20:00).",
+              "answer": "dwudziestej"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b14",
+      "number": 14,
+      "section": "Czas przeszły",
+      "color_group": "k4",
+      "rubric": "Pułapki z ukraińskiego",
+      "lead": "Cztery kalki — tak jest poprawnie.",
+      "rows": [
+        "я був → byłem (bez „ja”)",
+        "ми були → byliśmy",
+        "на роботі → w pracy",
+        "йти в кіно → iść do kina"
+      ],
+      "sticker": "ł вимовляй як «в» у слові «вовк». Nie tak: my byli · na pracy · w kino.",
+      "tasks": [
+        {
+          "task_id": "b14-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz poprawną formę.",
+          "items": [
+            {
+              "id": "b14-t1-1",
+              "text": "Wczoraj ___ w kinie.",
+              "answer": "byliśmy",
+              "options": [
+                "byliśmy",
+                "my byli"
+              ],
+              "explanation": "Końcówka -śmy robi to, co ukraińskie «ми»."
+            },
+            {
+              "id": "b14-t1-2",
+              "text": "Rano byłam ___.",
+              "answer": "w pracy",
+              "options": [
+                "w pracy",
+                "na pracy"
+              ],
+              "explanation": "Praca: w pracy, do pracy, z pracy."
+            },
+            {
+              "id": "b14-t1-3",
+              "text": "W sobotę poszliśmy ___.",
+              "answer": "do kina",
+              "options": [
+                "do kina",
+                "w kino"
+              ],
+              "explanation": "Dokąd? — do + dopełniacz."
+            }
+          ]
+        },
+        {
+          "task_id": "b14-t2",
+          "exercise_type": "sentence-building",
+          "instruction": "Przetłumacz na polski.",
+          "items": [
+            {
+              "id": "b14-t2-1",
+              "prompt": "Ми були на роботі до п'ятої.",
+              "answer": "Byliśmy w pracy do piątej."
+            },
+            {
+              "id": "b14-t2-2",
+              "prompt": "Вона була в кіно о дев'ятій.",
+              "answer": "Była w kinie o dziewiątej."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
