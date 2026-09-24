@@ -107,7 +107,8 @@ export type HomeworkExercise = {
 
 export type QueueExerciseBundle = {
   vocab: VocabCardsExercise;
-  pictures: PictureSetExercise;
+  /** Optional — some lessons ship without a picture-set. */
+  pictures?: PictureSetExercise;
   commTasks: FlipTaskExercise;
   grammar: GrammarPyramidExercise;
   hw: HomeworkExercise;

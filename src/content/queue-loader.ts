@@ -220,10 +220,11 @@ export function getQueueBundle(lessonId: string): QueueExerciseBundle | null {
   const commRaw = readJson<unknown>(`${lessonId}-comm-tasks.json`);
   const grammarRaw = readJson<unknown>(`${lessonId}-grammar.json`);
   const hwRaw = readJson<unknown>(`${lessonId}-hw.json`);
-  if (!vocabRaw || !picturesRaw || !commRaw || !grammarRaw || !hwRaw) return null;
+  // pictures.json is optional (some lessons have no picture-set)
+  if (!vocabRaw || !commRaw || !grammarRaw || !hwRaw) return null;
   return {
     vocab: normalizeVocab(vocabRaw),
-    pictures: normalizePictures(picturesRaw),
+    pictures: picturesRaw ? normalizePictures(picturesRaw) : undefined,
     commTasks: normalizeFlip(commRaw),
     grammar: normalizeGrammar(grammarRaw),
     hw: normalizeHw(hwRaw),
