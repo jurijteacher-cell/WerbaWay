@@ -6,7 +6,7 @@ type Props = { params: { lessonId: string } };
 
 export default function EmbedPicturesPage({ params }: Props) {
   const bundle = getQueueBundle(params.lessonId);
-  if (!bundle) notFound();
+  if (!bundle?.pictures) notFound();
   const { pictures } = bundle;
   return (
     <PictureSet
