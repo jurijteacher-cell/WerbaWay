@@ -1,0 +1,182 @@
+{
+  "lesson_id": "pl-b1-group-03-pies",
+  "exercise_type": "picture-set",
+  "layout": "collage",
+  "layout_hints": {
+    "style": "polaroid-board",
+    "photo_frame": "polaroid",
+    "label_style": "tape",
+    "rotation_range": "-6..6",
+    "clusters": "dwa zdjęcia obok siebie, etykieta nad nimi, notatka pod spodem",
+    "phrase_notes": "wyrażenia z phrase_bank rozrzucone po planszy jako karteczki"
+  },
+  "title": "Opis zdjęć: pies — dwa światy",
+  "instruction": "Opisz najpierw pierwsze zdjęcie, potem drugie, na końcu — co je łączy albo różni. Przy każdej parze daj właścicielowi jedną radę w trybie rozkazującym.",
+  "estimated_minutes": 16,
+  "phrase_bank": [
+    "Na pierwszym zdjęciu widać…",
+    "W porównaniu z tym psem…",
+    "Ten pies wygląda na…",
+    "Moim zdaniem lepiej…, bo…",
+    "Radzę ci: …",
+    "Nie zapominaj, że…"
+  ],
+  "items": [
+    {
+      "id": "p1",
+      "label": "Schronisko i dom",
+      "note": "przed adopcją → po adopcji",
+      "images": [
+        {
+          "role": "w schronisku",
+          "source": "stock",
+          "image_keywords": "dog shelter kennel",
+          "orientation": "landscape",
+          "alt": "Pies w boksie w schronisku",
+          "image_url": "/content/pl-b1-group-03-pies/pic-1.jpg"
+        },
+        {
+          "role": "w nowym domu",
+          "source": "stock",
+          "image_keywords": "dog lying sofa",
+          "orientation": "landscape",
+          "alt": "Pies leży na kanapie w domu",
+          "image_url": "/content/pl-b1-group-03-pies/pic-1-dzis.jpg"
+        }
+      ],
+      "question": "Jak ten pies czuje się w schronisku, a jak w domu? Co powiesz mu pierwszego dnia?",
+      "image_url": "/content/pl-b1-group-03-pies/pic-1.jpg",
+      "alt": "Pies w boksie w schronisku"
+    },
+    {
+      "id": "p2",
+      "label": "Szczeniak czy senior?",
+      "note": "8 tygodni ↔ 10 lat",
+      "images": [
+        {
+          "role": "szczeniak",
+          "source": "stock",
+          "image_keywords": "puppy playing grass",
+          "orientation": "landscape",
+          "alt": "Szczeniak bawi się na trawie",
+          "image_url": "/content/pl-b1-group-03-pies/pic-2.jpg"
+        },
+        {
+          "role": "senior",
+          "source": "stock",
+          "image_keywords": "old dog resting",
+          "orientation": "landscape",
+          "alt": "Stary pies odpoczywa",
+          "image_url": "/content/pl-b1-group-03-pies/pic-2-dzis.jpg"
+        }
+      ],
+      "question": "Którego psa wolisz do mieszkania w bloku? Co trzeba robić ze szczeniakiem, a co ze starszym psem?",
+      "image_url": "/content/pl-b1-group-03-pies/pic-2.jpg",
+      "alt": "Szczeniak bawi się na trawie"
+    },
+    {
+      "id": "p3",
+      "label": "Miasto i wieś",
+      "note": "chodnik ↔ łąka",
+      "images": [
+        {
+          "role": "w mieście",
+          "source": "stock",
+          "image_keywords": "dog walking city street",
+          "orientation": "landscape",
+          "alt": "Pies na smyczy idzie ulicą w mieście",
+          "image_url": "/content/pl-b1-group-03-pies/pic-3.jpg"
+        },
+        {
+          "role": "na wsi",
+          "source": "stock",
+          "image_keywords": "dog running meadow",
+          "orientation": "landscape",
+          "alt": "Pies biegnie po łące",
+          "image_url": "/content/pl-b1-group-03-pies/pic-3-dzis.jpg"
+        }
+      ],
+      "question": "Gdzie psu jest lepiej? Jakie zasady obowiązują psa w mieście, a jakie na wsi?",
+      "image_url": "/content/pl-b1-group-03-pies/pic-3.jpg",
+      "alt": "Pies na smyczy idzie ulicą w mieście"
+    },
+    {
+      "id": "p4",
+      "label": "Duży i mały",
+      "note": "40 kg ↔ 4 kg",
+      "images": [
+        {
+          "role": "duży pies",
+          "source": "stock",
+          "image_keywords": "large dog park",
+          "orientation": "landscape",
+          "alt": "Duży pies siedzi w parku",
+          "image_url": "/content/pl-b1-group-03-pies/pic-4.jpg"
+        },
+        {
+          "role": "mały pies",
+          "source": "stock",
+          "image_keywords": "small dog lap",
+          "orientation": "landscape",
+          "alt": "Mały pies siedzi na kolanach właściciela",
+          "image_url": "/content/pl-b1-group-03-pies/pic-4-dzis.jpg"
+        }
+      ],
+      "question": "Porównaj oba psy: ile jedzą, ile potrzebują ruchu, gdzie mogą mieszkać?",
+      "image_url": "/content/pl-b1-group-03-pies/pic-4.jpg",
+      "alt": "Duży pies siedzi w parku"
+    },
+    {
+      "id": "p5",
+      "label": "Wyprawka",
+      "note": "zanim pies przyjedzie",
+      "images": [
+        {
+          "role": "na spacer",
+          "source": "stock",
+          "image_keywords": "dog leash collar",
+          "orientation": "landscape",
+          "alt": "Smycz i obroża dla psa",
+          "image_url": "/content/pl-b1-group-03-pies/pic-5.jpg"
+        },
+        {
+          "role": "w domu",
+          "source": "stock",
+          "image_keywords": "dog bed bowl",
+          "orientation": "landscape",
+          "alt": "Legowisko i miska dla psa",
+          "image_url": "/content/pl-b1-group-03-pies/pic-5-dzis.jpg"
+        }
+      ],
+      "question": "Co trzeba kupić, zanim pies przyjedzie? Daj pięć rad w trybie rozkazującym.",
+      "image_url": "/content/pl-b1-group-03-pies/pic-5.jpg",
+      "alt": "Smycz i obroża dla psa"
+    },
+    {
+      "id": "p6",
+      "label": "Weterynarz i tresura",
+      "note": "zdrowie ↔ wychowanie",
+      "images": [
+        {
+          "role": "u weterynarza",
+          "source": "stock",
+          "image_keywords": "veterinarian examining dog",
+          "orientation": "landscape",
+          "alt": "Weterynarz bada psa",
+          "image_url": "/content/pl-b1-group-03-pies/pic-6.jpg"
+        },
+        {
+          "role": "na szkoleniu",
+          "source": "stock",
+          "image_keywords": "dog training class",
+          "orientation": "landscape",
+          "alt": "Psy i właściciele na szkoleniu",
+          "image_url": "/content/pl-b1-group-03-pies/pic-6-dzis.jpg"
+        }
+      ],
+      "question": "Co mówi weterynarz, a co trener? Podaj po dwie instrukcje dla każdego.",
+      "image_url": "/content/pl-b1-group-03-pies/pic-6.jpg",
+      "alt": "Weterynarz bada psa"
+    }
+  ]
+}

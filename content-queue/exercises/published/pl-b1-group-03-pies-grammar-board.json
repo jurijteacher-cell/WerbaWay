@@ -1,0 +1,877 @@
+{
+  "lesson_id": "pl-b1-group-03-pies",
+  "exercise_type": "grammar-board",
+  "title": "Tryb rozkazujący — tablica",
+  "instruction": "Przeczytaj kartę, potem zrób zadania pod nią. Dopiero wtedy przejdź dalej.",
+  "estimated_minutes": 35,
+  "layout": "cards",
+  "columns": 2,
+  "style": "sketch-board",
+  "sections": [
+    "Tryb rozkazujący"
+  ],
+  "cards": [
+    {
+      "id": "b01",
+      "number": 1,
+      "section": "Tryb rozkazujący",
+      "color_group": "k1",
+      "rubric": "Po co",
+      "lead": "Prośba, rada, instrukcja, komenda.",
+      "rows": [
+        "Podaj mi smycz, proszę.",
+        "Idź z nim do weterynarza.",
+        "Siad!"
+      ],
+      "sticker": "Do obcej osoby rzadko mówimy tak wprost. Zobacz kartę 9.",
+      "tasks": [
+        {
+          "task_id": "b01-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Która forma to tryb rozkazujący?",
+          "items": [
+            {
+              "id": "b01-t1-1",
+              "text": "Tomek, ___ drzwi!",
+              "answer": "zamknij",
+              "options": [
+                "zamknij",
+                "zamyka"
+              ]
+            },
+            {
+              "id": "b01-t1-2",
+              "text": "Pies ___ na kanapie.",
+              "answer": "śpi",
+              "options": [
+                "śpi",
+                "śpij"
+              ]
+            },
+            {
+              "id": "b01-t1-3",
+              "text": "Nie ___ się, to tylko mały pies!",
+              "answer": "bój",
+              "options": [
+                "bój",
+                "boisz"
+              ]
+            }
+          ]
+        },
+        {
+          "task_id": "b01-t2",
+          "exercise_type": "matching",
+          "instruction": "Co to jest?",
+          "items": [
+            {
+              "id": "b01-t2-1",
+              "left": "Siad!",
+              "right": "komenda"
+            },
+            {
+              "id": "b01-t2-2",
+              "left": "Idź do lekarza.",
+              "right": "rada"
+            },
+            {
+              "id": "b01-t2-3",
+              "left": "Podaj mi smycz, proszę.",
+              "right": "prośba"
+            },
+            {
+              "id": "b01-t2-4",
+              "left": "Wypełnij ankietę.",
+              "right": "instrukcja"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b02",
+      "number": 2,
+      "section": "Tryb rozkazujący",
+      "color_group": "k1",
+      "rubric": "Wzór",
+      "lead": "forma „on” bez końcówki",
+      "rows": [
+        "on czyta → czytaj",
+        "on pisze → pisz",
+        "on robi → rób"
+      ],
+      "sticker": "Najpierw powiedz formę „on”, potem utnij końcówkę.",
+      "tasks": [
+        {
+          "task_id": "b02-t1",
+          "exercise_type": "matching",
+          "instruction": "Połącz formę „on” z trybem rozkazującym.",
+          "items": [
+            {
+              "id": "b02-t1-1",
+              "left": "czeka",
+              "right": "czekaj"
+            },
+            {
+              "id": "b02-t1-2",
+              "left": "pisze",
+              "right": "pisz"
+            },
+            {
+              "id": "b02-t1-3",
+              "left": "mówi",
+              "right": "mów"
+            },
+            {
+              "id": "b02-t1-4",
+              "left": "pije",
+              "right": "pij"
+            }
+          ]
+        },
+        {
+          "task_id": "b02-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Napisz tryb rozkazujący (ty).",
+          "items": [
+            {
+              "id": "b02-t2-1",
+              "text": "słucha → ___",
+              "answer": "słuchaj"
+            },
+            {
+              "id": "b02-t2-2",
+              "text": "nosi → ___",
+              "answer": "noś"
+            },
+            {
+              "id": "b02-t2-3",
+              "text": "kupuje → ___",
+              "answer": "kupuj"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b03",
+      "number": 3,
+      "section": "Tryb rozkazujący",
+      "color_group": "k1",
+      "rubric": "Ty, my, wy",
+      "lead": "ty: — · my: -my · wy: -cie",
+      "rows": [
+        "czytaj · czytajmy · czytajcie",
+        "rób · róbmy · róbcie",
+        "idź · idźmy · idźcie"
+      ],
+      "sticker": "Forma „my” to propozycja: Idźmy na spacer!",
+      "tasks": [
+        {
+          "task_id": "b03-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b03-t1-1",
+              "text": "Dzieci, ___ ręce po zabawie z psem!",
+              "answer": "umyjcie",
+              "options": [
+                "umyjcie",
+                "umyj"
+              ]
+            },
+            {
+              "id": "b03-t1-2",
+              "text": "Chodź, ___ razem do parku!",
+              "answer": "idźmy",
+              "options": [
+                "idźmy",
+                "idźcie"
+              ]
+            }
+          ]
+        },
+        {
+          "task_id": "b03-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Napisz formę.",
+          "items": [
+            {
+              "id": "b03-t2-1",
+              "text": "kupić (my) → ___",
+              "answer": "kupmy"
+            },
+            {
+              "id": "b03-t2-2",
+              "text": "pisać (wy) → ___",
+              "answer": "piszcie"
+            },
+            {
+              "id": "b03-t2-3",
+              "text": "czekać (my) → ___",
+              "answer": "czekajmy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b04",
+      "number": 4,
+      "section": "Tryb rozkazujący",
+      "color_group": "k2",
+      "rubric": "Końcówki",
+      "lead": "-aj · -uj · — · -ij",
+      "rows": [
+        "czekać → czekaj",
+        "kupować → kupuj",
+        "zamknąć → zamknij",
+        "spać → śpij"
+      ],
+      "sticker": "-ij dodajemy, kiedy bez niego nie da się wymówić: zamknij, nie zamkń.",
+      "tasks": [
+        {
+          "task_id": "b04-t1",
+          "exercise_type": "matching",
+          "instruction": "Połącz.",
+          "items": [
+            {
+              "id": "b04-t1-1",
+              "left": "pracować",
+              "right": "pracuj"
+            },
+            {
+              "id": "b04-t1-2",
+              "left": "słuchać",
+              "right": "słuchaj"
+            },
+            {
+              "id": "b04-t1-3",
+              "left": "zacząć",
+              "right": "zacznij"
+            },
+            {
+              "id": "b04-t1-4",
+              "left": "pić",
+              "right": "pij"
+            }
+          ]
+        },
+        {
+          "task_id": "b04-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b04-t2-1",
+              "text": "Nie ___ o szczepieniu!",
+              "answer": "zapomnij",
+              "options": [
+                "zapomnij",
+                "zapomniej"
+              ]
+            },
+            {
+              "id": "b04-t2-2",
+              "text": "___ trochę po spacerze.",
+              "answer": "Odpocznij",
+              "options": [
+                "Odpocznij",
+                "Odpoczyj"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b05",
+      "number": 5,
+      "section": "Tryb rozkazujący",
+      "color_group": "k2",
+      "rubric": "Wymiany",
+      "lead": "o → ó · -ci → -ć",
+      "rows": [
+        "robi → rób",
+        "stoi → stój",
+        "pomoże → pomóż",
+        "rzuci → rzuć"
+      ],
+      "sticker": "Końcówka znika, a samogłoska się wydłuża albo spółgłoska mięknie: zapłać, wróć.",
+      "tasks": [
+        {
+          "task_id": "b05-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b05-t1-1",
+              "text": "___ piłkę, pies czeka!",
+              "answer": "Rzuć",
+              "options": [
+                "Rzuć",
+                "Rzuci"
+              ]
+            },
+            {
+              "id": "b05-t1-2",
+              "text": "___ tutaj i nie ruszaj się!",
+              "answer": "Stój",
+              "options": [
+                "Stój",
+                "Staj"
+              ]
+            },
+            {
+              "id": "b05-t1-3",
+              "text": "___ mi z tą torbą!",
+              "answer": "Pomóż",
+              "options": [
+                "Pomóż",
+                "Pomoc"
+              ]
+            }
+          ]
+        },
+        {
+          "task_id": "b05-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Napisz tryb rozkazujący (ty).",
+          "items": [
+            {
+              "id": "b05-t2-1",
+              "text": "robić → ___",
+              "answer": "rób"
+            },
+            {
+              "id": "b05-t2-2",
+              "text": "zapłacić → ___",
+              "answer": "zapłać"
+            },
+            {
+              "id": "b05-t2-3",
+              "text": "wrócić → ___",
+              "answer": "wróć"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b06",
+      "number": 6,
+      "section": "Tryb rozkazujący",
+      "color_group": "k2",
+      "rubric": "Nieregularne",
+      "lead": "Do zapamiętania na pamięć",
+      "rows": [
+        "być → bądź · mieć → miej",
+        "iść → idź · jeść → jedz",
+        "wziąć → weź · zostać → zostań"
+      ],
+      "sticker": "Bądź cierpliwy! Miej czas dla psa! Weź smycz!",
+      "tasks": [
+        {
+          "task_id": "b06-t1",
+          "exercise_type": "matching",
+          "instruction": "Połącz.",
+          "items": [
+            {
+              "id": "b06-t1-1",
+              "left": "być",
+              "right": "bądź"
+            },
+            {
+              "id": "b06-t1-2",
+              "left": "iść",
+              "right": "idź"
+            },
+            {
+              "id": "b06-t1-3",
+              "left": "wziąć",
+              "right": "weź"
+            },
+            {
+              "id": "b06-t1-4",
+              "left": "zostać",
+              "right": "zostań"
+            }
+          ]
+        },
+        {
+          "task_id": "b06-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b06-t2-1",
+              "text": "___ cierpliwy, pies się boi.",
+              "answer": "Bądź",
+              "options": [
+                "Bądź",
+                "Będź"
+              ]
+            },
+            {
+              "id": "b06-t2-2",
+              "text": "___ smycz, wychodzimy!",
+              "answer": "Weź",
+              "options": [
+                "Weź",
+                "Wziąj"
+              ]
+            },
+            {
+              "id": "b06-t2-3",
+              "text": "___ zupę, bo wystygnie.",
+              "answer": "Jedz",
+              "options": [
+                "Jedz",
+                "Jedź"
+              ],
+              "explanation": "Jedz — od jeść. Jedź — od jechać."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b07",
+      "number": 7,
+      "section": "Tryb rozkazujący",
+      "color_group": "k3",
+      "rubric": "Przeczenie",
+      "lead": "Nie + zwykle forma niedokonana",
+      "rows": [
+        "Kup karmę! → Nie kupuj tej karmy!",
+        "Zamknij okno! → Nie zamykaj okna!",
+        "Daj mu kość! → Nie dawaj mu kości!"
+      ],
+      "sticker": "Po „nie” biernik zmienia się w dopełniacz: karmę → karmy.",
+      "tasks": [
+        {
+          "task_id": "b07-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b07-t1-1",
+              "text": "Nie ___ psu czekolady!",
+              "answer": "dawaj",
+              "options": [
+                "dawaj",
+                "daj"
+              ],
+              "explanation": "Zakaz — zwykle forma niedokonana."
+            },
+            {
+              "id": "b07-t1-2",
+              "text": "Nie ___ psa samego w samochodzie!",
+              "answer": "zostawiaj",
+              "options": [
+                "zostawiaj",
+                "zostaw"
+              ],
+              "explanation": "Zakaz — forma niedokonana."
+            }
+          ]
+        },
+        {
+          "task_id": "b07-t2",
+          "exercise_type": "sentence-building",
+          "instruction": "Zamień na zakaz.",
+          "items": [
+            {
+              "id": "b07-t2-1",
+              "prompt": "Kup tę smycz!",
+              "answer": "Nie kupuj tej smyczy!"
+            },
+            {
+              "id": "b07-t2-2",
+              "prompt": "Otwórz okno!",
+              "answer": "Nie otwieraj okna!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b08",
+      "number": 8,
+      "section": "Tryb rozkazujący",
+      "color_group": "k3",
+      "rubric": "Z „się”",
+      "lead": "„Się” zostaje",
+      "rows": [
+        "nie bój się",
+        "uspokój się",
+        "połóż się",
+        "nie martwcie się"
+      ],
+      "sticker": "Na początku zdania: Uspokój się! — nie: Się uspokój!",
+      "tasks": [
+        {
+          "task_id": "b08-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b08-t1-1",
+              "text": "Nie ___, on nie gryzie!",
+              "answer": "bój się",
+              "options": [
+                "bój się",
+                "boj się"
+              ]
+            },
+            {
+              "id": "b08-t1-2",
+              "text": "Dzieci, ___ i posłuchajcie!",
+              "answer": "uspokójcie się",
+              "options": [
+                "uspokójcie się",
+                "uspokójcie"
+              ]
+            }
+          ]
+        },
+        {
+          "task_id": "b08-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Napisz formę.",
+          "items": [
+            {
+              "id": "b08-t2-1",
+              "text": "położyć się (ty) → ___",
+              "answer": "połóż się"
+            },
+            {
+              "id": "b08-t2-2",
+              "text": "nie martwić się (wy) → ___",
+              "answer": "nie martwcie się"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b09",
+      "number": 9,
+      "section": "Tryb rozkazujący",
+      "color_group": "k3",
+      "rubric": "Uprzejmie",
+      "lead": "Do obcych: proszę albo niech pan / pani",
+      "rows": [
+        "Proszę usiąść.",
+        "Proszę nie karmić psów.",
+        "Niech pan wejdzie.",
+        "Niech pani zadzwoni jutro."
+      ],
+      "sticker": "Proszę + bezokolicznik. Niech + forma „on”.",
+      "tasks": [
+        {
+          "task_id": "b09-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b09-t1-1",
+              "text": "Proszę ___ ankietę.",
+              "answer": "wypełnić",
+              "options": [
+                "wypełnić",
+                "wypełnij"
+              ]
+            },
+            {
+              "id": "b09-t1-2",
+              "text": "Niech pani ___ jutro o dziesiątej.",
+              "answer": "przyjdzie",
+              "options": [
+                "przyjdzie",
+                "przyjdź"
+              ]
+            }
+          ]
+        },
+        {
+          "task_id": "b09-t2",
+          "exercise_type": "sentence-building",
+          "instruction": "Powiedz to uprzejmie.",
+          "items": [
+            {
+              "id": "b09-t2-1",
+              "prompt": "Usiądź tutaj. → Proszę…",
+              "answer": "Proszę usiąść tutaj."
+            },
+            {
+              "id": "b09-t2-2",
+              "prompt": "Zadzwoń jutro. → Niech pani…",
+              "answer": "Niech pani zadzwoni jutro."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b10",
+      "number": 10,
+      "section": "Tryb rozkazujący",
+      "color_group": "k3",
+      "rubric": "Niech on, niech oni",
+      "lead": "Zasada albo rada o kimś trzecim",
+      "rows": [
+        "Niech pies śpi w kuchni.",
+        "Niech dzieci nie karmią psa przy stole.",
+        "Niech Marek wyjdzie z nim rano."
+      ],
+      "sticker": "Niech + zwykła forma: śpi, karmią, wyjdzie.",
+      "tasks": [
+        {
+          "task_id": "b10-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz formę.",
+          "items": [
+            {
+              "id": "b10-t1-1",
+              "text": "Niech Ola ___ psa wieczorem.",
+              "answer": "wyprowadzi",
+              "options": [
+                "wyprowadzi",
+                "wyprowadź"
+              ]
+            },
+            {
+              "id": "b10-t1-2",
+              "text": "Niech goście nie ___ do psa od razu.",
+              "answer": "podchodzą",
+              "options": [
+                "podchodzą",
+                "podchodźcie"
+              ]
+            }
+          ]
+        },
+        {
+          "task_id": "b10-t2",
+          "exercise_type": "sentence-building",
+          "instruction": "Napisz zdanie z „niech”.",
+          "items": [
+            {
+              "id": "b10-t2-1",
+              "prompt": "Pies ma spać na legowisku.",
+              "answer": "Niech pies śpi na legowisku."
+            },
+            {
+              "id": "b10-t2-2",
+              "prompt": "Dzieci mają myć ręce.",
+              "answer": "Niech dzieci myją ręce."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b11",
+      "number": 11,
+      "section": "Tryb rozkazujący",
+      "color_group": "k1",
+      "rubric": "Komendy i tablice",
+      "lead": "Krótko, głośno, zawsze tak samo",
+      "rows": [
+        "Siad! Leżeć! Zostań!",
+        "Do mnie! Noga!",
+        "Zostaw! Nie wolno!"
+      ],
+      "sticker": "Bezokolicznik też bywa rozkazem: Leżeć! — i na tablicach: Psy prowadzić na smyczy.",
+      "tasks": [
+        {
+          "task_id": "b11-t1",
+          "exercise_type": "matching",
+          "instruction": "Co ma zrobić pies?",
+          "items": [
+            {
+              "id": "b11-t1-1",
+              "left": "Siad!",
+              "right": "usiąść"
+            },
+            {
+              "id": "b11-t1-2",
+              "left": "Noga!",
+              "right": "iść przy nodze"
+            },
+            {
+              "id": "b11-t1-3",
+              "left": "Zostaw!",
+              "right": "wypuścić rzecz z pyska"
+            },
+            {
+              "id": "b11-t1-4",
+              "left": "Do mnie!",
+              "right": "przyjść do właściciela"
+            }
+          ]
+        },
+        {
+          "task_id": "b11-t2",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Co jest napisane na tablicy?",
+          "items": [
+            {
+              "id": "b11-t2-1",
+              "text": "Tablica w parku: „Psy ___ na smyczy”.",
+              "answer": "prowadzić",
+              "options": [
+                "prowadzić",
+                "prowadź"
+              ],
+              "explanation": "Na tablicach i w instrukcjach — bezokolicznik."
+            },
+            {
+              "id": "b11-t2-2",
+              "text": "Na worku z karmą: „___ w suchym miejscu”.",
+              "answer": "Przechowywać",
+              "options": [
+                "Przechowywać",
+                "Przechowujesz"
+              ],
+              "explanation": "Instrukcja — bezokolicznik."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b12",
+      "number": 12,
+      "section": "Tryb rozkazujący",
+      "color_group": "k1",
+      "rubric": "Łagodnie",
+      "lead": "Rozkaz + proszę = prośba",
+      "rows": [
+        "Zamknij, proszę, drzwi.",
+        "Weź, proszę, smycz.",
+        "Możesz wyprowadzić psa?"
+      ],
+      "sticker": "Samo „Zamknij drzwi!” brzmi jak rozkaz. Dodaj „proszę” albo zapytaj „możesz…?”.",
+      "tasks": [
+        {
+          "task_id": "b12-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Co brzmi milej?",
+          "items": [
+            {
+              "id": "b12-t1-1",
+              "text": "Do męża: ___",
+              "answer": "Daj, proszę, smycz.",
+              "options": [
+                "Daj, proszę, smycz.",
+                "Daj smycz."
+              ],
+              "explanation": "Z „proszę” rozkaz staje się prośbą."
+            },
+            {
+              "id": "b12-t1-2",
+              "text": "Do koleżanki: ___",
+              "answer": "Możesz wyjść z psem o siódmej?",
+              "options": [
+                "Możesz wyjść z psem o siódmej?",
+                "Wyjdź z psem o siódmej."
+              ],
+              "explanation": "Pytanie z „możesz” to miękka prośba."
+            }
+          ]
+        },
+        {
+          "task_id": "b12-t2",
+          "exercise_type": "sentence-building",
+          "instruction": "Powiedz to łagodniej.",
+          "items": [
+            {
+              "id": "b12-t2-1",
+              "prompt": "Zadzwoń do weterynarza. (proszę)",
+              "answer": "Zadzwoń, proszę, do weterynarza."
+            },
+            {
+              "id": "b12-t2-2",
+              "prompt": "Kup karmę. (możesz…?)",
+              "answer": "Możesz kupić karmę?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b13",
+      "number": 13,
+      "section": "Tryb rozkazujący",
+      "color_group": "k4",
+      "rubric": "Pułapki z ukraińskiego",
+      "lead": "Cztery kalki — tak jest poprawnie.",
+      "rows": [
+        "іди сюди → chodź tutaj",
+        "їж → jedz · їдь → jedź",
+        "давай підемо → chodźmy",
+        "не бійся → nie bój się"
+      ],
+      "sticker": "Idź = йди звідси. Nie tak: idź tutaj · jedź zupę · dawaj pójdziemy.",
+      "tasks": [
+        {
+          "task_id": "b13-t1",
+          "exercise_type": "fill-in-blank",
+          "instruction": "Wybierz poprawną formę.",
+          "items": [
+            {
+              "id": "b13-t1-1",
+              "text": "Burek, ___ tutaj!",
+              "answer": "chodź",
+              "options": [
+                "chodź",
+                "idź"
+              ],
+              "explanation": "Chodź — do mnie. Idź — ode mnie."
+            },
+            {
+              "id": "b13-t1-2",
+              "text": "___ obiad, bo wystygnie!",
+              "answer": "Jedz",
+              "options": [
+                "Jedz",
+                "Jedź"
+              ],
+              "explanation": "Jedz — od jeść. Jedź — od jechać."
+            },
+            {
+              "id": "b13-t1-3",
+              "text": "___ na spacer, jest ładnie!",
+              "answer": "Chodźmy",
+              "options": [
+                "Chodźmy",
+                "Dawaj pójdziemy"
+              ],
+              "explanation": "Propozycja: forma -my, bez «давай»."
+            }
+          ]
+        },
+        {
+          "task_id": "b13-t2",
+          "exercise_type": "sentence-building",
+          "instruction": "Przetłumacz na polski.",
+          "items": [
+            {
+              "id": "b13-t2-1",
+              "prompt": "Не бійся, він не кусається.",
+              "answer": "Nie bój się, on nie gryzie."
+            },
+            {
+              "id": "b13-t2-2",
+              "prompt": "Діти, ходімо додому!",
+              "answer": "Dzieci, chodźmy do domu!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
