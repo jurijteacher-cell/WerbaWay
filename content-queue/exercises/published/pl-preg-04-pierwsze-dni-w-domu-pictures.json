@@ -1,0 +1,170 @@
+{
+  "lesson_id": "pl-preg-04-pierwsze-dni-w-domu",
+  "exercise_type": "picture-set",
+  "layout": "collage",
+  "layout_hints": {
+    "style": "polaroid-board",
+    "photo_frame": "polaroid",
+    "label_style": "tape",
+    "rotation_range": "-6..6",
+    "clusters": "dwa zdjęcia obok siebie, etykieta nad nimi, notatka pod spodem",
+    "phrase_notes": "wyrażenia z phrase_bank rozrzucone po planszy jako karteczki"
+  },
+  "title": "Opis zdjęć: pierwszy tydzień w domu",
+  "instruction": "Sześć par. Opisz jedno zdjęcie, potem drugie, a na końcu powiedz, komu ktoś tu pomaga i w czym.",
+  "estimated_minutes": 16,
+  "phrase_bank": [
+    "Na tym zdjęciu ktoś pomaga…",
+    "Tej mamie na pewno przydałoby się…",
+    "Najpierw…, a dopiero potem…",
+    "Dziecku potrzebne jest teraz…",
+    "Ja bym poprosiła o…",
+    "Obie sytuacje łączy to, że…"
+  ],
+  "items": [
+    {
+      "id": "p1",
+      "label": "Powrót",
+      "note": "auto → kanapa",
+      "images": [
+        {
+          "role": "przed domem",
+          "image_keywords": "parents carrying baby car seat",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Rodzice niosą fotelik z dzieckiem do domu",
+          "image_url": "/content/pl-preg-04-pierwsze-dni-w-domu/pic-1.jpg"
+        },
+        {
+          "role": "w domu",
+          "image_keywords": "mother resting sofa newborn",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Mama odpoczywa na kanapie z noworodkiem",
+          "image_url": "/content/pl-preg-04-pierwsze-dni-w-domu/pic-1-dzis.jpg"
+        }
+      ],
+      "question": "Co się dzieje na każdym zdjęciu? Co powinno wydarzyć się między nimi?"
+    },
+    {
+      "id": "p2",
+      "label": "Patronaż",
+      "note": "waga i rozmowa",
+      "images": [
+        {
+          "role": "badanie",
+          "image_keywords": "midwife weighing newborn home",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Położna waży noworodka w domu",
+          "image_url": "/content/pl-preg-04-pierwsze-dni-w-domu/pic-2.jpg"
+        },
+        {
+          "role": "rozmowa",
+          "image_keywords": "nurse talking with mother table",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Pielęgniarka rozmawia z mamą przy stole",
+          "image_url": "/content/pl-preg-04-pierwsze-dni-w-domu/pic-2-dzis.jpg"
+        }
+      ],
+      "question": "Która część tej wizyty jest dla mamy ważniejsza? O co warto zapytać położną?"
+    },
+    {
+      "id": "p3",
+      "label": "Pomoc",
+      "note": "kuchnia i ręce",
+      "images": [
+        {
+          "role": "babcia",
+          "image_keywords": "grandmother cooking kitchen home",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Starsza kobieta gotuje w kuchni",
+          "image_url": "/content/pl-preg-04-pierwsze-dni-w-domu/pic-3.jpg"
+        },
+        {
+          "role": "partner",
+          "image_keywords": "father holding baby bottle",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Tata trzyma dziecko i butelkę",
+          "image_url": "/content/pl-preg-04-pierwsze-dni-w-domu/pic-3-dzis.jpg"
+        }
+      ],
+      "question": "Komu i w czym pomaga każda z tych osób? O co Ty poprosiłabyś najpierw?"
+    },
+    {
+      "id": "p4",
+      "label": "Papiery",
+      "note": "urząd albo laptop",
+      "images": [
+        {
+          "role": "w urzędzie",
+          "image_keywords": "office counter clerk documents",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Okienko w urzędzie z urzędniczką",
+          "image_url": "/content/pl-preg-04-pierwsze-dni-w-domu/pic-4.jpg"
+        },
+        {
+          "role": "przez internet",
+          "image_keywords": "woman laptop kitchen table morning",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Kobieta wypełnia wniosek na laptopie przy stole",
+          "image_url": "/content/pl-preg-04-pierwsze-dni-w-domu/pic-4-dzis.jpg"
+        }
+      ],
+      "question": "Który sposób wybrałabyś w pierwszym tygodniu po porodzie? Wymień trzy sprawy do załatwienia."
+    },
+    {
+      "id": "p5",
+      "label": "Dzień i noc",
+      "note": "karmienie o różnych porach",
+      "images": [
+        {
+          "role": "rano",
+          "image_keywords": "mother feeding baby daylight window",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Mama karmi dziecko przy oknie w dzień",
+          "image_url": "/content/pl-preg-04-pierwsze-dni-w-domu/pic-5.jpg"
+        },
+        {
+          "role": "w nocy",
+          "image_keywords": "dim bedroom lamp night baby",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Ciemna sypialnia z zapaloną małą lampką",
+          "image_url": "/content/pl-preg-04-pierwsze-dni-w-domu/pic-5-dzis.jpg"
+        }
+      ],
+      "question": "Czym różni się ta sama czynność w dzień i w nocy? Co pomaga przetrwać noce?"
+    },
+    {
+      "id": "p6",
+      "label": "Pierwszy spacer",
+      "note": "wózek i park",
+      "images": [
+        {
+          "role": "przygotowanie",
+          "image_keywords": "stroller ready near door",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Przygotowany wózek stoi przy drzwiach",
+          "image_url": "/content/pl-preg-04-pierwsze-dni-w-domu/pic-6.jpg"
+        },
+        {
+          "role": "na dworze",
+          "image_keywords": "parents walking stroller park",
+          "orientation": "landscape",
+          "source": "stock",
+          "alt": "Rodzice spacerują z wózkiem po parku",
+          "image_url": "/content/pl-preg-04-pierwsze-dni-w-domu/pic-6-dzis.jpg"
+        }
+      ],
+      "question": "Co trzeba zabrać na pierwszy spacer? Powiedz, komu ten spacer jest potrzebny bardziej."
+    }
+  ]
+}

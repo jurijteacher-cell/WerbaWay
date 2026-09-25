@@ -1,0 +1,77 @@
+{
+  "lesson_id": "pl-preg-04-pierwsze-dni-w-domu",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: celownik poza domem",
+  "instruction": "Trzy bloki. Żadne zdanie nie powtarza się z lekcji — ta sama gramatyka w zupełnie innych sytuacjach.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "drag-and-drop",
+      "title": "1. W pracy i w podróży",
+      "instruction": "Przeciągnij właściwą formę w lukę. Dwa słowa nie pasują nigdzie.",
+      "bank": ["koleżance", "szefowi", "turystom", "kierowcy", "nauczycielce", "koleżanka", "kierowca"],
+      "items": [
+        { "id": "h1-1", "text": "Przekaż ___ z księgowości te faktury.", "answer": "koleżance" },
+        { "id": "h1-2", "text": "Napisałem ___, że spóźnię się dziesięć minut.", "answer": "szefowi" },
+        { "id": "h1-3", "text": "Przewodnik pokazał ___ stare miasto.", "answer": "turystom" },
+        { "id": "h1-4", "text": "Podaj ___ adres, on nie zna tej dzielnicy.", "answer": "kierowcy" },
+        { "id": "h1-5", "text": "Uczniowie podziękowali ___ za cały rok.", "answer": "nauczycielce" }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Zbuduj formę",
+      "instruction": "Wstaw słowo z nawiasu w celowniku. Uważaj na wyjątki.",
+      "items": [
+        { "id": "h2-1", "text": "Pożycz ___ (brat) rower na weekend.", "answer": "bratu" },
+        { "id": "h2-2", "text": "Daj ___ (pies) wody, miska jest pusta.", "answer": "psu" },
+        { "id": "h2-3", "text": "Opowiedz ___ (babcia) o wakacjach.", "answer": "babci" },
+        { "id": "h2-4", "text": "Ten film bardzo spodobał się ___ (widzowie).", "answer": "widzom" },
+        { "id": "h2-5", "text": "Zrobiłam zdjęcie ___ (ojciec) przed wyjazdem.", "answer": "ojcu" },
+        { "id": "h2-6", "text": "Kelner przyniósł ___ (goście) kartę dań.", "answer": "gościom" },
+        { "id": "h2-7", "text": "Powiedz ___ (chłopiec), żeby zdjął czapkę.", "answer": "chłopcu" },
+        { "id": "h2-8", "text": "Hałas z ulicy przeszkadza ___ (sąsiadka) w nocy.", "answer": "sąsiadce" }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Przekształcenia",
+      "instruction": "Zbuduj zdanie z podanych elementów.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "ja · dziękować · ty · za pomoc przy przeprowadzce",
+          "answer": "Dziękuję ci za pomoc przy przeprowadzce."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "ta restauracja · podobać się · oni · najbardziej",
+          "answer": "Ta restauracja podoba się im najbardziej."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "być zimno · ja · zamknij okno",
+          "answer": "Jest mi zimno, zamknij okno."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "chcieć się spać · my · po tej podróży",
+          "answer": "Chce nam się spać po tej podróży."
+        },
+        {
+          "id": "h3-5",
+          "prompt": "udać się · ona · kupić bilety na jutro",
+          "answer": "Udało jej się kupić bilety na jutro."
+        },
+        {
+          "id": "h3-6",
+          "prompt": "dzięki · ty · zdążyliśmy na pociąg",
+          "answer": "Dzięki tobie zdążyliśmy na pociąg."
+        }
+      ]
+    }
+  ]
+}

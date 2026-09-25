@@ -1,0 +1,221 @@
+{
+  "lesson_id": "pl-preg-04-pierwsze-dni-w-domu",
+  "exercise_type": "fill-in-blank",
+  "title": "Celownik: komu i po co",
+  "instruction": "Osiem bloków ułożonych od najłatwiejszego do najtrudniejszego. Przechodź po kolei — każdy dokłada jedną rzecz.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rozgrzewka: komu?",
+      "instruction": "Wybierz właściwy zaimek.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Pomóż ___ przez chwilę, nie dam rady sama.",
+          "options": ["mi", "mnie"],
+          "answer": "mi",
+          "explanation": "W środku zdania używamy krótkiej formy: mi."
+        },
+        {
+          "id": "g1-2",
+          "text": "Dziękuję ___ za wszystko, co zrobiłaś w tym tygodniu.",
+          "options": ["cię", "ci"],
+          "answer": "ci",
+          "explanation": "Dziękować łączy się z celownikiem, nigdy z biernikiem."
+        },
+        {
+          "id": "g1-3",
+          "text": "Powiedz ___, że wrócimy koło piątej.",
+          "options": ["jej", "ją"],
+          "answer": "jej",
+          "explanation": "Mówimy komuś, więc forma celownika."
+        },
+        {
+          "id": "g1-4",
+          "text": "Przynieś ___ proszę szklankę wody.",
+          "options": ["nam", "nas"],
+          "answer": "nam",
+          "explanation": "Przynieść komu: nam."
+        },
+        {
+          "id": "g1-5",
+          "text": "___ to powiedz, nie jemu.",
+          "options": ["Mi", "Mnie"],
+          "answer": "Mnie",
+          "explanation": "Na początku zdania i przy podkreśleniu stoi długa forma."
+        },
+        {
+          "id": "g1-6",
+          "text": "Ten hałas przeszkadza ___ zasnąć.",
+          "options": ["dziecko", "dziecku"],
+          "answer": "dziecku",
+          "explanation": "Przeszkadzać komu: dziecku."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "exercise_type": "matching",
+      "title": "2. Mianownik i celownik",
+      "instruction": "Połącz słowo z jego formą w celowniku.",
+      "items": [
+        { "id": "g2-1", "left": "mama", "right": "mamie" },
+        { "id": "g2-2", "left": "siostra", "right": "siostrze" },
+        { "id": "g2-3", "left": "położna", "right": "położnej" },
+        { "id": "g2-4", "left": "lekarz", "right": "lekarzowi" },
+        { "id": "g2-5", "left": "dziecko", "right": "dziecku" },
+        { "id": "g2-6", "left": "brat", "right": "bratu" },
+        { "id": "g2-7", "left": "pan", "right": "panu" },
+        { "id": "g2-8", "left": "rodzice", "right": "rodzicom" }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Zbuduj formę",
+      "instruction": "Wstaw słowo z nawiasu w celowniku.",
+      "items": [
+        { "id": "g3-1", "text": "Powiedz o tym ___ (położna) na następnej wizycie.", "answer": "położnej" },
+        { "id": "g3-2", "text": "Podaj ___ (córka) smoczek, leży na komodzie.", "answer": "córce" },
+        { "id": "g3-3", "text": "Pokazałam zdjęcia ___ (siostra) i mamie.", "answer": "siostrze" },
+        { "id": "g3-4", "text": "Musimy podziękować ___ (lekarz) za cierpliwość.", "answer": "lekarzowi" },
+        { "id": "g3-5", "text": "Kupiliśmy ___ (dziecko) nowy kocyk.", "answer": "dziecku" },
+        { "id": "g3-6", "text": "Daj znać ___ (rodzice), że wróciliśmy do domu.", "answer": "rodzicom" },
+        { "id": "g3-7", "text": "Proszę powiedzieć ___ (pan) doktorowi, że czekamy.", "answer": "panu" }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "exercise_type": "fill-in-blank",
+      "title": "4. Zaimki w akcji",
+      "instruction": "Zamień słowo w nawiasie na krótki zaimek w celowniku.",
+      "items": [
+        { "id": "g4-1", "text": "Napisz ___ (do mamy), że wszystko jest dobrze.", "answer": "jej" },
+        { "id": "g4-2", "text": "Przynieś ___ (partnerowi) kawę, nie spał całą noc.", "answer": "mu" },
+        { "id": "g4-3", "text": "Kup ___ (nam obojgu) coś do jedzenia po drodze.", "answer": "nam" },
+        { "id": "g4-4", "text": "Sąsiedzi pomogli ___ (mnie) z zakupami.", "answer": "mi" },
+        { "id": "g4-5", "text": "Powiedz ___ (dzieciom), żeby były ciszej.", "answer": "im" },
+        { "id": "g4-6", "text": "Dziękujemy ___ (wam) za wszystko.", "answer": "wam" }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "exercise_type": "sentence-building",
+      "title": "5. Czasowniki z celownikiem",
+      "instruction": "Zbuduj zdanie z podanych elementów.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "sąsiadka · pomagać · ja · z zakupami",
+          "answer": "Sąsiadka pomaga mi z zakupami."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "ja · dziękować · położna · za spokój",
+          "answer": "Dziękuję położnej za spokój."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "hałas · przeszkadzać · dziecko · zasnąć",
+          "answer": "Hałas przeszkadza dziecku zasnąć."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "ta przychodnia · podobać się · my",
+          "answer": "Ta przychodnia nam się podoba."
+        },
+        {
+          "id": "g5-5",
+          "prompt": "ja · ufać · ta lekarka · najbardziej",
+          "answer": "Ufam tej lekarce najbardziej."
+        },
+        {
+          "id": "g5-6",
+          "prompt": "partner · podać · ja · telefon",
+          "answer": "Partner podał mi telefon."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "exercise_type": "fill-in-blank",
+      "title": "6. Pierwszy tydzień w domu",
+      "instruction": "Siedem zdań, jedna historia. Wstaw słowo z nawiasu w celowniku.",
+      "items": [
+        { "id": "g6-1", "text": "W poniedziałek położna pokazała ___ (Ola), jak kąpać dziecko.", "answer": "Oli" },
+        { "id": "g6-2", "text": "We wtorek Ola napisała ___ (siostra), żeby przywiozła pieluchy.", "answer": "siostrze" },
+        { "id": "g6-3", "text": "W środę partner zaniósł papiery ___ (urzędniczka) w okienku.", "answer": "urzędniczce" },
+        { "id": "g6-4", "text": "W czwartek ___ (dziecko) nadano numer PESEL.", "answer": "dziecku" },
+        { "id": "g6-5", "text": "W piątek Ola podziękowała ___ (sąsiedzi) za obiad.", "answer": "sąsiadom" },
+        { "id": "g6-6", "text": "W sobotę nikt ___ (ona) nie przeszkadzał i przespała trzy godziny.", "answer": "jej" },
+        { "id": "g6-7", "text": "W niedzielę powiedziała ___ (partner), że pierwszy tydzień minął.", "answer": "partnerowi" }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "exercise_type": "drag-and-drop",
+      "title": "7. Jest mi, chce mi się",
+      "instruction": "Przeciągnij właściwą formę w lukę. Dwa słowa nie pasują nigdzie.",
+      "bank": ["mi", "jej", "nam", "mu", "im", "mnie", "nas"],
+      "items": [
+        { "id": "g7-1", "text": "Chce ___ się spać, a mała znowu płacze.", "answer": "mi" },
+        { "id": "g7-2", "text": "Jest ___ zimno, przynieś proszę koc.", "answer": "jej" },
+        { "id": "g7-3", "text": "Udało ___ się wyjść na krótki spacer.", "answer": "nam" },
+        { "id": "g7-4", "text": "Nie chciało ___ się wstawać o trzeciej w nocy.", "answer": "mu" },
+        { "id": "g7-5", "text": "Wszystko ___ się tu podoba, zwłaszcza pokój dziecka.", "answer": "im" }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "exercise_type": "fill-in-blank",
+      "title": "8. Niuanse: krótko czy długo",
+      "instruction": "Tu decyduje miejsce w zdaniu i przyimek. Po poprawnej odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Zadzwoń ___ wieczorem, będę już w domu.",
+          "options": ["mi", "do mnie"],
+          "answer": "do mnie",
+          "explanation": "Dzwonimy do kogoś, nie komuś. To najczęstsza kalka."
+        },
+        {
+          "id": "g8-2",
+          "text": "Powiedz ___ prawdę, wytrzymam.",
+          "options": ["mi", "do mnie"],
+          "answer": "mi",
+          "explanation": "Mówimy komuś, bez przyimka."
+        },
+        {
+          "id": "g8-3",
+          "text": "___ to wcale nie przeszkadza.",
+          "options": ["Mi", "Mnie"],
+          "answer": "Mnie",
+          "explanation": "Na początku zdania zawsze długa forma."
+        },
+        {
+          "id": "g8-4",
+          "text": "___ tobie udało się wszystko załatwić w jeden dzień.",
+          "options": ["Dzięki", "Z powodu"],
+          "answer": "Dzięki",
+          "explanation": "Dzięki plus celownik mówi o czymś dobrym."
+        },
+        {
+          "id": "g8-5",
+          "text": "Pomóż ___, a potem odpocznij.",
+          "options": ["mi", "mnie"],
+          "answer": "mi",
+          "explanation": "Pomagać plus krótka forma celownika w środku zdania."
+        },
+        {
+          "id": "g8-6",
+          "text": "Ta położna spodobała się ___ od pierwszej wizyty.",
+          "options": ["nam", "nas"],
+          "answer": "nam",
+          "explanation": "Podobać się komu: nam."
+        }
+      ]
+    }
+  ]
+}
