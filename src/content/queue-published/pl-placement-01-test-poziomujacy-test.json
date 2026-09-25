@@ -1,0 +1,289 @@
+{
+  "lesson_id": "pl-placement-01-test-poziomujacy",
+  "exercise_type": "placement-test",
+  "title": "Test poziomujący A1–B2",
+  "instruction": "Cztery poziomy po kolei. Test zatrzymuje się, kiedy zadania stają się za trudne. Na końcu krótki tekst.",
+  "estimated_minutes": 55,
+  "scoring": {
+    "levels_order": ["A1", "A2", "B1", "B2"],
+    "pass_threshold": 0.7,
+    "plus_threshold": 0.5,
+    "dont_know_option": "Nie wiem / Не знаю",
+    "writing_variant_by_level": {
+      "A1 (start)": "A",
+      "A1": "A",
+      "A1+": "A",
+      "A2": "A",
+      "A2+": "B",
+      "B1": "B",
+      "B1+": "B",
+      "B2": "B"
+    }
+  },
+  "blocks": [
+    {
+      "block_id": "a1-gram",
+      "level": "A1",
+      "part": "gramatyka",
+      "exercise_type": "fill-in-blank",
+      "title": "A1 · Gramatyka",
+      "instruction": "Wybierz poprawną odpowiedź. / Обери правильну відповідь.",
+      "items": [
+        { "id": "a1-g1", "topic": "być", "text": "Ja ___ Anna.", "options": ["jestem", "jest", "są", "jesteś"], "answer": "jestem" },
+        { "id": "a1-g2", "topic": "odmiana czasownika", "text": "Mój brat ___ w Krakowie.", "options": ["mieszka", "mieszkam", "mieszkają", "mieszkasz"], "answer": "mieszka" },
+        { "id": "a1-g3", "topic": "liczba mnoga", "text": "Mam dwa ___. (kot)", "options": ["koty", "kotów", "kot", "kota"], "answer": "koty" },
+        { "id": "a1-g4", "topic": "dopełniacz po przeczeniu", "text": "Nie mam ___. (samochód)", "options": ["samochodu", "samochód", "samochodem", "samochody"], "answer": "samochodu" },
+        { "id": "a1-g5", "topic": "zaimki dzierżawcze", "text": "To jest ___ dom.", "options": ["nasz", "nasza", "nasze", "naszą"], "answer": "nasz" },
+        { "id": "a1-g6", "topic": "biernik", "text": "Lubię ___ kawę.", "options": ["czarną", "czarna", "czarny", "czarnej"], "answer": "czarną" },
+        { "id": "a1-g7", "topic": "kalka: wiek", "trap": "kalka-uk", "text": "Ile ___ lat?", "options": ["masz", "tobie jest", "ci jest", "jesteś"], "answer": "masz", "explanation": "Калька з «скільки тобі років». Po polsku wiek się ma: Ile masz lat? Mam 30 lat." },
+        { "id": "a1-g8", "topic": "miejscownik", "text": "Pracuję ___ biurze.", "options": ["w", "na", "do", "z"], "answer": "w" },
+        { "id": "a1-g9", "topic": "być", "text": "Oni ___ z Ukrainy.", "options": ["są", "jest", "jesteśmy", "jesteście"], "answer": "są" },
+        { "id": "a1-g10", "topic": "odmiana czasownika", "text": "My ___ po polsku.", "options": ["mówimy", "mówią", "mówicie", "mówię"], "answer": "mówimy" }
+      ]
+    },
+    {
+      "block_id": "a1-slow",
+      "level": "A1",
+      "part": "słownictwo",
+      "exercise_type": "fill-in-blank",
+      "title": "A1 · Słownictwo",
+      "instruction": "Wybierz słowo, które pasuje. / Обери слово, яке підходить.",
+      "items": [
+        { "id": "a1-v1", "topic": "słownictwo", "text": "Po poniedziałku jest ___.", "options": ["wtorek", "środa", "niedziela", "piątek"], "answer": "wtorek" },
+        { "id": "a1-v2", "topic": "słownictwo", "text": "Chleb kupuję w ___.", "options": ["piekarni", "aptece", "poczcie", "banku"], "answer": "piekarni" },
+        { "id": "a1-v3", "topic": "słownictwo", "text": "Ojciec mojego ojca to mój ___.", "options": ["dziadek", "wujek", "brat", "syn"], "answer": "dziadek" },
+        { "id": "a1-v4", "topic": "słownictwo", "text": "Rano jem ___.", "options": ["śniadanie", "kolację", "obiad", "deser"], "answer": "śniadanie" },
+        { "id": "a1-v5", "topic": "godziny", "text": "Jest 8:00. Jest ___.", "options": ["ósma", "osiem", "ósmy", "ósmą"], "answer": "ósma" },
+        { "id": "a1-v6", "topic": "słownictwo", "text": "Zimą w Polsce jest zwykle ___.", "options": ["zimno", "gorąco", "duszno", "parno"], "answer": "zimno" }
+      ]
+    },
+    {
+      "block_id": "a1-czyt",
+      "level": "A1",
+      "part": "czytanie",
+      "exercise_type": "fill-in-blank",
+      "title": "A1 · Czytanie",
+      "instruction": "Przeczytaj wiadomość i odpowiedz na pytania. / Прочитай повідомлення й дай відповідь на питання.",
+      "passage_title": "Wiadomość od Olka",
+      "passage": "Cześć, Marto!\n\nPiszę z Gdańska. Jestem tu na kursie języka polskiego. Mieszkam u pani Ewy. Ona ma mały dom blisko morza. Codziennie rano mam lekcje, a po południu spaceruję po mieście. Jedzenie jest bardzo dobre, ale drogie. W sobotę jadę pociągiem do Sopotu.\n\nPozdrawiam,\nOlek",
+      "items": [
+        { "id": "a1-r1", "topic": "czytanie", "text": "Gdzie jest teraz Olek?", "options": ["w Gdańsku", "w Sopocie", "w Krakowie", "w domu"], "answer": "w Gdańsku" },
+        { "id": "a1-r2", "topic": "czytanie", "text": "U kogo mieszka Olek?", "options": ["u pani Ewy", "u Marty", "w hotelu", "w akademiku"], "answer": "u pani Ewy" },
+        { "id": "a1-r3", "topic": "czytanie", "text": "Co Olek robi po południu?", "options": ["spaceruje", "ma lekcje", "pracuje", "śpi"], "answer": "spaceruje" },
+        { "id": "a1-r4", "topic": "czytanie", "text": "Jakie jest jedzenie?", "options": ["dobre, ale drogie", "tanie i dobre", "niedobre i drogie", "tanie, ale niedobre"], "answer": "dobre, ale drogie" }
+      ]
+    },
+    {
+      "block_id": "a2-gram",
+      "level": "A2",
+      "part": "gramatyka",
+      "exercise_type": "fill-in-blank",
+      "title": "A2 · Gramatyka",
+      "instruction": "Wybierz poprawną odpowiedź. / Обери правильну відповідь.",
+      "items": [
+        { "id": "a2-g1", "topic": "czas przeszły", "text": "Anna: — Wczoraj ___ długo w pracy.", "options": ["byłam", "byłem", "była", "jestem"], "answer": "byłam" },
+        { "id": "a2-g2", "topic": "rodzaj męskoosobowy", "text": "Moi koledzy ___ wczoraj na mecz.", "options": ["poszli", "poszły", "poszedł", "poszliśmy"], "answer": "poszli" },
+        { "id": "a2-g3", "topic": "iść / chodzić", "text": "Codziennie ___ do pracy pieszo.", "options": ["chodzę", "idę", "jadę", "jeżdżę"], "answer": "chodzę" },
+        { "id": "a2-g4", "topic": "dopełniacz po liczebnikach", "text": "W lodówce jest dużo ___.", "options": ["jajek", "jajka", "jajko", "jajkami"], "answer": "jajek" },
+        { "id": "a2-g5", "topic": "narzędnik po być", "trap": "kalka-uk", "text": "Moja siostra jest ___.", "options": ["lekarką", "lekarka", "lekarkę", "lekarce"], "answer": "lekarką", "explanation": "Po „być” + zawód zawsze narzędnik: jest lekarką, jest nauczycielem." },
+        { "id": "a2-g6", "topic": "czas przyszły", "text": "Jutro (ja) ___ się uczyć cały dzień.", "options": ["będę", "będzie", "jestem", "zostanę"], "answer": "będę" },
+        { "id": "a2-g7", "topic": "aspekt", "text": "Zadzwonię do ciebie, kiedy ___ pracę.", "options": ["skończę", "kończę", "skończyłem", "skończyłbym"], "answer": "skończę" },
+        { "id": "a2-g8", "topic": "stopniowanie", "text": "Ta sukienka jest ___ niż tamta.", "options": ["tańsza", "taniej", "bardziej tania", "najtańsza"], "answer": "tańsza" },
+        { "id": "a2-g9", "topic": "kalka: dzwonić do", "trap": "kalka-uk", "text": "Wieczorem zadzwonię ___.", "options": ["do mamy", "mamie", "z mamą", "mamę"], "answer": "do mamy", "explanation": "Калька з «подзвоню мамі». Po polsku: dzwonić do kogoś." },
+        { "id": "a2-g10", "topic": "celownik", "text": "Daję ___ kwiaty.", "options": ["mamie", "mamę", "mamy", "mamą"], "answer": "mamie" }
+      ]
+    },
+    {
+      "block_id": "a2-slow",
+      "level": "A2",
+      "part": "słownictwo",
+      "exercise_type": "fill-in-blank",
+      "title": "A2 · Słownictwo",
+      "instruction": "Wybierz poprawną odpowiedź. / Обери правильну відповідь.",
+      "items": [
+        { "id": "a2-v1", "topic": "fałszywi przyjaciele", "trap": "false-friend", "text": "Co znaczy „dywan”?", "options": ["килим", "диван", "ковдра", "штора"], "answer": "килим", "explanation": "Dywan = килим. Диван po polsku to kanapa." },
+        { "id": "a2-v2", "topic": "fałszywi przyjaciele", "trap": "false-friend", "text": "Co znaczy „owoce”?", "options": ["фрукти", "овочі", "ягоди", "горіхи"], "answer": "фрукти", "explanation": "Owoce = фрукти. Овочі po polsku to warzywa." },
+        { "id": "a2-v3", "topic": "słownictwo", "text": "Boli mnie ___, muszę iść do dentysty.", "options": ["ząb", "noga", "brzuch", "głowa"], "answer": "ząb" },
+        { "id": "a2-v4", "topic": "słownictwo", "text": "Pociąg ma dwadzieścia minut ___.", "options": ["opóźnienia", "spóźnienia", "zmęczenia", "przerwy"], "answer": "opóźnienia" },
+        { "id": "a2-v5", "topic": "słownictwo", "text": "Nie mam gotówki. Czy mogę zapłacić ___?", "options": ["kartą", "resztą", "paragonem", "rachunkiem"], "answer": "kartą" },
+        { "id": "a2-v6", "topic": "słownictwo", "text": "Chcę wynająć to mieszkanie, ale ___ jest za wysoki: 4000 zł miesięcznie.", "options": ["czynsz", "rachunek", "paragon", "podatek"], "answer": "czynsz" }
+      ]
+    },
+    {
+      "block_id": "a2-czyt",
+      "level": "A2",
+      "part": "czytanie",
+      "exercise_type": "fill-in-blank",
+      "title": "A2 · Czytanie",
+      "instruction": "Przeczytaj ogłoszenie i odpowiedz na pytania. / Прочитай оголошення й дай відповідь на питання.",
+      "passage_title": "Ogłoszenie",
+      "passage": "Wynajmę dwupokojowe mieszkanie na trzecim piętrze w centrum Lublina. Mieszkanie jest umeblowane: w salonie stoją kanapa i duży stół, a w kuchni jest nowa lodówka i zmywarka. W budynku nie ma windy, ale do przystanku autobusowego są tylko dwie minuty pieszo. Czynsz wynosi 2500 zł miesięcznie, do tego trzeba doliczyć opłaty za prąd i gaz. Przy podpisaniu umowy pobieram kaucję w wysokości jednego czynszu. Mieszkanie jest dostępne od 1 marca. Nie akceptuję zwierząt. Proszę dzwonić po 18:00.",
+      "items": [
+        { "id": "a2-r1", "topic": "czytanie", "text": "Ile pokoi ma mieszkanie?", "options": ["dwa", "jeden", "trzy", "cztery"], "answer": "dwa" },
+        { "id": "a2-r2", "topic": "czytanie", "text": "Co może być problemem dla osoby z ciężkimi walizkami?", "options": ["brak windy", "daleko do przystanku", "brak lodówki", "wysoki czynsz"], "answer": "brak windy" },
+        { "id": "a2-r3", "topic": "czytanie", "text": "Ile trzeba zapłacić kaucji?", "options": ["2500 zł", "5000 zł", "250 zł", "nic"], "answer": "2500 zł" },
+        { "id": "a2-r4", "topic": "czytanie", "text": "Kto nie może wynająć tego mieszkania?", "options": ["osoba z psem", "student", "rodzina z dzieckiem", "osoba bez samochodu"], "answer": "osoba z psem" },
+        { "id": "a2-r5", "topic": "czytanie", "text": "Kiedy można zadzwonić?", "options": ["o 19:00", "o 9:00", "o 13:00", "o 16:00"], "answer": "o 19:00" }
+      ]
+    },
+    {
+      "block_id": "b1-gram",
+      "level": "B1",
+      "part": "gramatyka",
+      "exercise_type": "fill-in-blank",
+      "title": "B1 · Gramatyka",
+      "instruction": "Wybierz albo wpisz poprawną formę. / Обери або впиши правильну форму.",
+      "items": [
+        { "id": "b1-g1", "topic": "tryb przypuszczający", "text": "Gdybym miał więcej czasu, ___ angielskiego.", "options": ["uczyłbym się", "uczę się", "będę się uczył", "uczyłem się"], "answer": "uczyłbym się" },
+        { "id": "b1-g2", "topic": "aspekt", "text": "Wczoraj ___ cały raport i od razu wysłałem go szefowi.", "options": ["napisałem", "pisałem", "piszę", "napiszę"], "answer": "napisałem" },
+        { "id": "b1-g3", "topic": "aspekt", "text": "Właśnie ___ obiad, kiedy nagle zadzwonił telefon.", "options": ["gotowałam", "ugotowałam", "ugotuję", "gotuję"], "answer": "gotowałam" },
+        { "id": "b1-g4", "topic": "żeby + forma przeszła", "text": "Mama prosi, żebyś ___ dziś wcześniej do domu.", "options": ["wrócił", "wrócisz", "wracasz", "wróciłbyś"], "answer": "wrócił" },
+        { "id": "b1-g5", "topic": "który w przypadkach", "text": "To jest kobieta, ___ wczoraj pomogłem.", "options": ["której", "która", "którą", "którym"], "answer": "której" },
+        { "id": "b1-g6", "topic": "kalka: rząd dopełniacza", "trap": "kalka-uk", "text": "Mój brat szuka ___ w Warszawie.", "options": ["pracy", "pracę", "pracą", "praca"], "answer": "pracy", "explanation": "Калька з «шукає роботу». Szukać, słuchać, używać, uczyć się — z dopełniaczem." },
+        { "id": "b1-g7", "topic": "liczebniki męskoosobowe", "text": "Na zajęcia przyszło ___ studentów.", "options": ["pięciu", "pięć", "pięciom", "pięcioma"], "answer": "pięciu" },
+        { "id": "b1-g8", "topic": "kalka: środek transportu", "trap": "kalka-uk", "text": "Do Krakowa pojadę ___.", "options": ["pociągiem", "na pociągu", "w pociągu", "pociąg"], "answer": "pociągiem", "explanation": "Калька з «поїду на поїзді». Po polsku narzędnik: pociągiem, autobusem, samochodem." },
+        { "id": "b1-g9", "topic": "tryb przypuszczający", "text": "Gdyby jutro było ciepło, ___ na plażę. (my — pójść)", "answer": "poszlibyśmy", "accept": ["poszlibyśmy", "poszłybyśmy", "to poszlibyśmy", "to poszłybyśmy"] },
+        { "id": "b1-g10", "topic": "czas przeszły", "text": "Wczoraj Ola nie ___ przyjść na spotkanie. (móc)", "answer": "mogła", "accept": ["mogła"] }
+      ]
+    },
+    {
+      "block_id": "b1-slow",
+      "level": "B1",
+      "part": "słownictwo",
+      "exercise_type": "fill-in-blank",
+      "title": "B1 · Słownictwo",
+      "instruction": "Wybierz poprawną odpowiedź. / Обери правильну відповідь.",
+      "items": [
+        { "id": "b1-v1", "topic": "fałszywi przyjaciele", "trap": "false-friend", "text": "Co znaczy „uroda”?", "options": ["краса", "потворність", "врожай", "народження"], "answer": "краса", "explanation": "Uroda = краса. Uroda nie ma nic wspólnego z «урод»." },
+        { "id": "b1-v2", "topic": "fałszywi przyjaciele", "trap": "false-friend", "text": "Co znaczy „wygodny”?", "options": ["зручний", "вигідний", "вільний", "веселий"], "answer": "зручний", "explanation": "Wygodny = зручний. Вигідний po polsku to korzystny, opłacalny." },
+        { "id": "b1-v3", "topic": "kolokacje", "trap": "kalka-uk", "text": "Muszę ___ decyzję do piątku.", "options": ["podjąć", "przyjąć", "zrobić", "dać"], "answer": "podjąć", "explanation": "Калька з «прийняти рішення». Po polsku decyzję się podejmuje." },
+        { "id": "b1-v4", "topic": "kolokacje", "trap": "kalka-uk", "text": "Firma szuka pracownika na pełny ___.", "options": ["etat", "czas", "dzień", "termin"], "answer": "etat", "explanation": "Praca na pełny etat / na pół etatu. Nie „na pełny dzień”." },
+        { "id": "b1-v5", "topic": "słownictwo", "text": "Po operacji lekarz dał mi ___ na dwa tygodnie.", "options": ["zwolnienie", "urlop", "wypowiedzenie", "przerwę"], "answer": "zwolnienie" },
+        { "id": "b1-v6", "topic": "fałszywi przyjaciele", "trap": "false-friend", "text": "Co znaczy „dworzec”?", "options": ["вокзал", "палац", "подвір'я", "село"], "answer": "вокзал", "explanation": "Dworzec = вокзал. Палац po polsku to pałac." }
+      ]
+    },
+    {
+      "block_id": "b1-czyt",
+      "level": "B1",
+      "part": "czytanie",
+      "exercise_type": "fill-in-blank",
+      "title": "B1 · Czytanie",
+      "instruction": "Przeczytaj tekst i odpowiedz na pytania. / Прочитай текст і дай відповідь на питання.",
+      "passage_title": "Praca z domu — wygoda czy pułapka?",
+      "passage": "Jeszcze kilka lat temu praca zdalna była w Polsce rzadkością. Dziś coraz więcej firm pozwala pracownikom pracować z domu przynajmniej dwa dni w tygodniu. Większość pracowników jest z tego zadowolona: nie traci czasu na dojazdy, oszczędza na paliwie i biletach, a obiad może zjeść we własnej kuchni.\n\nSą jednak i ciemne strony. Wiele osób przyznaje, że w domu trudniej im oddzielić pracę od życia prywatnego. Laptop leży na stole w salonie, więc łatwo „jeszcze tylko” sprawdzić maila o dziesiątej wieczorem. Psycholodzy ostrzegają też przed samotnością — szczególnie wśród młodych pracowników, którzy dopiero zaczynają karierę i nie mają się od kogo uczyć.\n\nPracodawcy też mają mieszane uczucia. Z jednej strony mogą wynająć mniejsze biuro i zatrudniać ludzi z całego kraju. Z drugiej — trudniej im zbudować zespół, w którym ludzie sobie ufają.\n\nDlatego wiele firm wybiera model hybrydowy: trzy dni w biurze, dwa w domu. Czy to złoty środek? Na razie trudno powiedzieć. Pewne jest jedno: do sztywnego modelu „od ósmej do szesnastej w biurze” nie ma już powrotu.",
+      "items": [
+        { "id": "b1-r1", "topic": "czytanie", "text": "Dlaczego pracownicy lubią pracę zdalną?", "options": ["nie tracą czasu na dojazdy", "zarabiają więcej", "mają dłuższy urlop", "pracują krócej"], "answer": "nie tracą czasu na dojazdy" },
+        { "id": "b1-r2", "topic": "czytanie", "text": "Przed czym ostrzegają psycholodzy?", "options": ["przed samotnością młodych pracowników", "przed długimi dojazdami", "przed za małymi biurami", "przed niskimi pensjami"], "answer": "przed samotnością młodych pracowników" },
+        { "id": "b1-r3", "topic": "czytanie", "text": "Co pokazuje zwrot „jeszcze tylko” sprawdzić maila?", "options": ["że ludzie pracują po godzinach, choć tego nie planowali", "że mail jest bardzo krótki", "że szef tego wymaga", "że mają mało pracy"], "answer": "że ludzie pracują po godzinach, choć tego nie planowali" },
+        { "id": "b1-r4", "topic": "czytanie", "text": "Jaką korzyść z pracy zdalnej mają pracodawcy?", "options": ["mogą zatrudniać ludzi z całego kraju", "ludzie bardziej sobie ufają", "pracownicy są mniej samotni", "nie muszą płacić za prąd"], "answer": "mogą zatrudniać ludzi z całego kraju" },
+        { "id": "b1-r5", "topic": "czytanie", "text": "Jaki jest wniosek autora?", "options": ["stary model pracy w biurze już nie wróci", "model hybrydowy jest idealny", "praca zdalna to pułapka", "wszyscy powinni wrócić do biura"], "answer": "stary model pracy w biurze już nie wróci" }
+      ]
+    },
+    {
+      "block_id": "b2-gram",
+      "level": "B2",
+      "part": "gramatyka",
+      "exercise_type": "fill-in-blank",
+      "title": "B2 · Gramatyka",
+      "instruction": "Wybierz albo wpisz poprawną formę. / Обери або впиши правильну форму.",
+      "items": [
+        { "id": "b2-g1", "topic": "imiesłów przysłówkowy", "text": "___ do domu, spotkałem po drodze sąsiada.", "options": ["Wracając", "Wróciwszy", "Wracający", "Wrócony"], "answer": "Wracając" },
+        { "id": "b2-g2", "topic": "imiesłów przymiotnikowy czynny", "text": "Ludzie ___ w dużych miastach częściej chorują na alergie.", "options": ["mieszkający", "mieszkani", "mieszkając", "mieszkaniowi"], "answer": "mieszkający" },
+        { "id": "b2-g3", "topic": "aspekt w trybie rozkazującym", "text": "Nie ___ tych drzwi, farba jeszcze nie wyschła!", "options": ["dotykaj", "dotknij", "dotykasz", "dotkniesz"], "answer": "dotykaj" },
+        { "id": "b2-g4", "topic": "liczebniki zbiorowe", "text": "Nasi sąsiedzi mają ___ dzieci.", "options": ["troje", "trzech", "trzy", "trzecie"], "answer": "troje" },
+        { "id": "b2-g5", "topic": "tryb przypuszczający", "text": "Gdybym wtedy o tym wiedział, ___ inaczej.", "options": ["postąpiłbym", "postąpię", "postępowałem", "postąpiłem"], "answer": "postąpiłbym" },
+        { "id": "b2-g6", "topic": "konstrukcje bezosobowe", "text": "W tej restauracji ___ tylko gotówką.", "options": ["płaci się", "płacą się", "płaci", "jest płacone"], "answer": "płaci się" },
+        { "id": "b2-g7", "topic": "rząd przyimków", "text": "Postąpił wbrew ___ lekarza.", "options": ["zaleceniom", "zaleceń", "zalecenia", "zaleceniami"], "answer": "zaleceniom" },
+        { "id": "b2-g8", "topic": "kalka: dotyczyć", "trap": "kalka-uk", "text": "Ten problem ___ wszystkich mieszkańców.", "options": ["dotyczy", "stosuje się", "dotyka się", "odnosi się"], "answer": "dotyczy", "explanation": "Калька з «стосується». Po polsku: coś dotyczy kogoś / czegoś." },
+        { "id": "b2-g9", "topic": "strona bierna", "text": "Umowa ___ jutro rano. (podpisać — strona bierna, czas przyszły)", "answer": "zostanie podpisana", "accept": ["zostanie podpisana", "będzie podpisana"] },
+        { "id": "b2-g10", "topic": "rzeczowniki odczasownikowe", "text": "Szef nie zgodził się na ___ terminu. (przedłużyć)", "answer": "przedłużenie", "accept": ["przedłużenie"] }
+      ]
+    },
+    {
+      "block_id": "b2-slow",
+      "level": "B2",
+      "part": "słownictwo",
+      "exercise_type": "fill-in-blank",
+      "title": "B2 · Słownictwo",
+      "instruction": "Wybierz poprawną odpowiedź. / Обери правильну відповідь.",
+      "items": [
+        { "id": "b2-v1", "topic": "kolokacje", "text": "Od stycznia rząd ___ nowe przepisy.", "options": ["wprowadza", "wnosi", "przynosi", "wstawia"], "answer": "wprowadza" },
+        { "id": "b2-v2", "topic": "słownictwo", "text": "Ta decyzja może mieć poważne ___ dla gospodarki.", "options": ["skutki", "przyczyny", "powody", "założenia"], "answer": "skutki" },
+        { "id": "b2-v3", "topic": "idiomy", "text": "Nie owijaj w ___, powiedz wprost.", "options": ["bawełnę", "papier", "słowa", "jedwab"], "answer": "bawełnę" },
+        { "id": "b2-v4", "topic": "kolokacje", "text": "Firma ___ upadłość w zeszłym miesiącu.", "options": ["ogłosiła", "oświadczyła", "obwieściła", "zapowiedziała"], "answer": "ogłosiła" },
+        { "id": "b2-v5", "topic": "fałszywi przyjaciele", "trap": "false-friend", "text": "Co znaczy „brak” w zdaniu: „Brak czasu to mój największy problem”?", "options": ["нестача", "дефект", "шлюб", "перерва"], "answer": "нестача", "explanation": "Brak = нестача, відсутність. Дефект po polsku to wada." },
+        { "id": "b2-v6", "topic": "rejestr", "text": "Który zwrot pasuje do oficjalnego maila?", "options": ["Uprzejmie proszę o informację.", "Daj znać, co i jak.", "Napisz szybko.", "Czekam na odp."], "answer": "Uprzejmie proszę o informację." }
+      ]
+    },
+    {
+      "block_id": "b2-czyt",
+      "level": "B2",
+      "part": "czytanie",
+      "exercise_type": "fill-in-blank",
+      "title": "B2 · Czytanie",
+      "instruction": "Przeczytaj tekst i odpowiedz na pytania. / Прочитай текст і дай відповідь на питання.",
+      "passage_title": "Mit wielozadaniowości",
+      "passage": "Współczesny rynek pracy uwielbia słowo „wielozadaniowość”. Pojawia się w co drugim ogłoszeniu, obok „odporności na stres” i „pracy pod presją czasu”. Kandydaci z przekonaniem wpisują je do CV, choć mało kto zastanawia się, co właściwie oznacza.\n\nNeurobiolodzy od lat studzą ten entuzjazm. Ludzki mózg nie potrafi świadomie wykonywać dwóch złożonych czynności jednocześnie — to, co nazywamy wielozadaniowością, jest w rzeczywistości szybkim przełączaniem uwagi. Każde takie przełączenie kosztuje: po przerwie na wiadomość powrót do pełnego skupienia zajmuje nierzadko kilkanaście, a nawet ponad dwadzieścia minut. Paradoksalnie więc osoby, które uważają się za mistrzów robienia kilku rzeczy naraz, często osiągają gorsze wyniki niż ci, którzy pracują nad jednym zadaniem.\n\nNie oznacza to, że należy wyłączyć telefon na cały dzień i odciąć się od świata. Chodzi raczej o świadome planowanie: bloki skupionej pracy przeplatane krótkimi okienkami na maile i rozmowy. Coraz więcej firm eksperymentuje z „godzinami ciszy”, w których nie organizuje się spotkań i nie oczekuje natychmiastowych odpowiedzi.\n\nByć może największą zmianą, jakiej potrzebujemy, nie jest nowa aplikacja do zarządzania czasem, lecz zmiana kultury. Dopóki szybka odpowiedź będzie ceniona wyżej niż dobra odpowiedź, pracownicy będą udawać, że potrafią robić wszystko naraz.",
+      "items": [
+        { "id": "b2-r1", "topic": "czytanie", "text": "Jaki jest stosunek autora do słowa „wielozadaniowość” w ogłoszeniach?", "options": ["sceptyczny", "pełen podziwu", "obojętny", "niezdecydowany"], "answer": "sceptyczny" },
+        { "id": "b2-r2", "topic": "czytanie", "text": "Czym według tekstu jest w rzeczywistości wielozadaniowość?", "options": ["szybkim przełączaniem uwagi", "rzadką, ale prawdziwą umiejętnością", "efektem długotrwałego stresu", "cechą najlepszych pracowników"], "answer": "szybkim przełączaniem uwagi" },
+        { "id": "b2-r3", "topic": "czytanie", "text": "Co wynika z tekstu o osobach, które uważają się za mistrzów wielozadaniowości?", "options": ["często pracują gorzej, niż sądzą", "są najcenniejszymi pracownikami", "powinny zmienić pracę", "rzadko korzystają z telefonu"], "answer": "często pracują gorzej, niż sądzą" },
+        { "id": "b2-r4", "topic": "czytanie", "text": "Czego autor NIE proponuje?", "options": ["całkowitego odcięcia się od telefonu", "bloków skupionej pracy", "godzin ciszy w firmie", "krótkich okienek na maile"], "answer": "całkowitego odcięcia się od telefonu" },
+        { "id": "b2-r5", "topic": "czytanie", "text": "Co autor uważa za główne źródło problemu?", "options": ["kulturę, która ceni szybkość wyżej niż jakość", "brak dobrych aplikacji", "zbyt wiele spotkań", "lenistwo pracowników"], "answer": "kulturę, która ceni szybkość wyżej niż jakość" }
+      ]
+    },
+    {
+      "block_id": "pisanie",
+      "level": "all",
+      "part": "pisanie",
+      "exercise_type": "open-writing",
+      "title": "Pisanie",
+      "instruction": "Napisz krótki tekst. Nie korzystaj ze słownika ani tłumacza. / Напиши короткий текст. Без словника й перекладача.",
+      "variants": {
+        "A": {
+          "prompt_pl": "Napisz wiadomość do nowego nauczyciela. Kim jesteś? Gdzie mieszkasz? Dlaczego uczysz się polskiego? Co lubisz robić w wolnym czasie?",
+          "prompt_uk": "Напиши повідомлення новому викладачеві польською: хто ти, де живеш, навіщо вчиш польську, що любиш робити у вільний час. Якщо поки не можеш написати польською жодного речення — напиши українською, навіщо тобі польська.",
+          "min_words": 20,
+          "max_words": 100
+        },
+        "B": {
+          "prompt_pl": "Napisz tekst na temat: „Jak znajomość polskiego zmieniła albo zmieni moje życie?”. Podaj dwa konkretne przykłady i odpowiedz na jeden możliwy kontrargument.",
+          "prompt_uk": "Напиши текст на тему: «Як знання польської змінило або змінить моє життя?». Наведи два конкретні приклади й дай відповідь на один можливий контраргумент.",
+          "min_words": 120,
+          "max_words": 180
+        }
+      }
+    }
+  ],
+  "results": {
+    "A1 (start)": {
+      "display": "A1",
+      "text_pl": "Zaczynamy od podstaw — i to dobra wiadomość: nie trzeba niczego poprawiać, można od razu uczyć się dobrze. Na pierwszych zajęciach poznasz wymowę, alfabet i zdania, które przydadzą się od pierwszego dnia.",
+      "text_uk": "Починаємо з основ — і це добра новина: нічого не треба виправляти, можна одразу вчитися правильно. На перших заняттях — вимова, алфавіт і фрази, які знадобляться з першого дня."
+    },
+    "A1": {
+      "display": "A1",
+      "text_pl": "Znasz podstawowe słowa i budujesz proste zdania o sobie. Teraz czas na przypadki, czas przeszły i pierwsze swobodne rozmowy.",
+      "text_uk": "Ти знаєш базові слова й будуєш прості речення про себе. Далі — відмінки, минулий час і перші вільні розмови."
+    },
+    "A2": {
+      "display": "A2",
+      "text_pl": "Radzisz sobie w codziennych sytuacjach: sklep, mieszkanie, praca. Kolejny krok to aspekt czasownika, tryb przypuszczający i dłuższe wypowiedzi.",
+      "text_uk": "Ти даєш собі раду в щоденних ситуаціях: магазин, житло, робота. Наступний крок — вид дієслова, умовний спосіб і довші висловлювання."
+    },
+    "B1": {
+      "display": "B1",
+      "text_pl": "Rozumiesz dłuższe teksty i potrafisz bronić swojego zdania. To dobry moment, żeby przygotować się do egzaminu certyfikatowego B1.",
+      "text_uk": "Ти розумієш довші тексти й умієш відстояти свою думку. Слушний момент, щоб готуватися до сертифікатного іспиту B1."
+    },
+    "B2": {
+      "display": "B2",
+      "text_pl": "Swobodnie posługujesz się językiem i wychwytujesz niuanse. Pracujemy nad stylem, rejestrem i precyzją — tam, gdzie zaczyna się poziom zaawansowany.",
+      "text_uk": "Ти вільно володієш мовою й помічаєш нюанси. Працюємо над стилем, регістром і точністю — там, де починається просунутий рівень."
+    },
+    "plus_note_pl": "Jesteś już blisko poziomu {next}.",
+    "plus_note_uk": "Ти вже близько до рівня {next}.",
+    "footer_pl": "To wynik wstępny. Twój tekst przeczyta nauczyciel, a ostateczny poziom potwierdzimy na pierwszej lekcji.",
+    "footer_uk": "Це попередній результат. Твій текст прочитає викладач, а остаточний рівень підтвердимо на першому уроці."
+  }
+}

@@ -553,3 +553,227 @@
     transition: none;
   }
 }
+
+/* —— Placement test —— */
+.placement-h2 {
+  font-family: var(--nb-display);
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0 0 8px;
+}
+.placement-panel {
+  position: relative;
+  z-index: 2;
+}
+.placement-rules {
+  margin: 12px 0 18px;
+  padding-left: 1.2em;
+  color: var(--nb-ink-soft);
+  font-size: 14.5px;
+}
+.placement-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: var(--nb-hand);
+  font-size: 20px;
+  color: var(--nb-gold);
+  margin: 18px 0 8px;
+}
+.placement-name {
+  font-family: var(--nb-body);
+  font-size: 18px;
+  border: 0;
+  border-bottom: 2px solid var(--nb-gold);
+  background: transparent;
+  padding: 6px 2px;
+  color: var(--nb-ink);
+  max-width: 280px;
+}
+.placement-block {
+  margin: 0 0 28px;
+}
+.placement-items {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.placement-q {
+  margin: 0 0 8px;
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+.placement-num {
+  font-family: var(--nb-hand);
+  color: var(--nb-gold);
+  font-size: 18px;
+}
+.placement-blank-mark {
+  letter-spacing: 2px;
+  color: var(--nb-ink-soft);
+}
+.placement-picks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.placement-picks.vertical {
+  flex-direction: column;
+  align-items: stretch;
+}
+.placement-pick {
+  border: 0;
+  cursor: pointer;
+  font-family: var(--nb-body);
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--nb-ink);
+  background: #fff;
+  padding: 8px 14px;
+  border-radius: 18px;
+  box-shadow: 1px 2px 0 rgba(27, 42, 74, 0.12);
+  text-align: left;
+}
+.placement-pick.on {
+  background: var(--nb-yellow);
+}
+.placement-pick.dk {
+  background: var(--nb-paper-2);
+  font-size: 12.5px;
+  opacity: 0.92;
+}
+.placement-blank {
+  width: min(100%, 320px);
+  border: 0;
+  border-bottom: 2px solid var(--nb-ink);
+  background: transparent;
+  font: inherit;
+  font-size: 16px;
+  padding: 4px 2px;
+  margin-bottom: 8px;
+  color: var(--nb-ink);
+}
+.placement-diacritics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 6px 0 8px;
+}
+.placement-diacritics button {
+  border: 1px solid var(--nb-edge);
+  background: var(--nb-paper-2);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-family: var(--nb-body);
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--nb-ink);
+}
+.placement-reading {
+  margin: 10px 0 16px;
+}
+.placement-toggle {
+  border: 0;
+  background: none;
+  font-family: var(--nb-hand);
+  font-size: 18px;
+  color: var(--nb-gold);
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 8px;
+}
+.placement-passage {
+  display: none;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 3px;
+  padding: 14px 16px;
+  box-shadow: 2px 3px 0 rgba(27, 42, 74, 0.08);
+  font-size: 15px;
+  line-height: 1.6;
+}
+.placement-passage.open {
+  display: block;
+}
+.placement-passage h3 {
+  font-family: var(--nb-display);
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+.placement-writing {
+  width: 100%;
+  min-height: 220px;
+  border: 1px solid var(--nb-edge);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.5);
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 27px,
+    var(--nb-rule) 27px,
+    var(--nb-rule) 28px
+  );
+  font: inherit;
+  font-size: 15px;
+  line-height: 28px;
+  padding: 8px 12px;
+  color: var(--nb-ink);
+  resize: vertical;
+}
+.placement-result {
+  text-align: center;
+  padding-top: 12px;
+}
+.placement-stamp {
+  display: inline-block;
+  font-family: var(--nb-display);
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--nb-ink);
+  transform: rotate(-7deg);
+  margin: 8px 0 12px;
+  border: 3px solid var(--nb-ink);
+  border-radius: 8px;
+  padding: 6px 18px;
+}
+.placement-plus {
+  font-family: var(--nb-hand);
+  font-size: 22px;
+  color: var(--nb-gold);
+  margin: 0 0 10px;
+}
+.placement-sticker {
+  display: inline-block;
+  text-align: left;
+  background: var(--nb-yellow);
+  padding: 14px 16px;
+  border-radius: 3px;
+  box-shadow: 2px 3px 0 rgba(27, 42, 74, 0.12);
+  max-width: 520px;
+  margin: 0 auto 12px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.placement-uk {
+  color: var(--nb-ink-soft);
+  font-size: 14.5px;
+  max-width: 520px;
+  margin: 0 auto 8px;
+  line-height: 1.5;
+}
+.placement-tabs button:disabled {
+  cursor: default;
+}
+@media (min-width: 820px) {
+  .placement-reading {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .placement-passage {
+    display: block;
+  }
+  .placement-toggle {
+    display: none;
+  }
+}
