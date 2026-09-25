@@ -1,7 +1,3 @@
-# Pierwsze dni w domu: połóg, patronaż, formalności
-
----
-
 ## 1. Czytanie
 
 ### Tydzień, w którym wszyscy czegoś od ciebie chcą
