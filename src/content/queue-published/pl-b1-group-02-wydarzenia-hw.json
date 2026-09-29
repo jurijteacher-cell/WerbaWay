@@ -1,0 +1,155 @@
+{
+  "lesson_id": "pl-b1-group-02-wydarzenia",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: słowa, daty i wyrażenia czasu",
+  "instruction": "Trzy bloki. Zdania są nowe — żadne nie pojawiło się na lekcji.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Słownictwo",
+      "instruction": "Wpisz słowo z lekcji w odpowiedniej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Od 21 grudnia 2007 roku na ___ ze Słowacją nie ma już kontroli paszportowej.",
+          "answer": "granicy",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-2",
+          "text": "W tym roku przypada setna ___ urodzin mojego pradziadka.",
+          "answer": "rocznica",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-3",
+          "text": "Każde ___ ma swoje wspomnienia: dziadkowie pamiętają listy, a wnuki tylko czaty.",
+          "answer": "pokolenie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-4",
+          "text": "Apteka przy mojej ulicy jest ___ w niedziele i święta.",
+          "answer": "nieczynna",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-5",
+          "text": "Muszę ___ wizytę u fryzjera, bo w poniedziałek jest dzień wolny.",
+          "answer": "przełożyć",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-6",
+          "text": "Żeby dostać odpis aktu urodzenia, trzeba złożyć ___.",
+          "answer": "wniosek",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Daty słownie",
+      "instruction": "Wpisz brakujące słowo albo słowa. Liczby zapisz słownie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Polska wstąpiła do NATO ___ marca 1999 roku.",
+          "answer": "dwunastego",
+          "grammar_point": "data-dopelniacz"
+        },
+        {
+          "id": "h2-2",
+          "text": "Do Unii Europejskiej weszła ___ maja 2004 roku.",
+          "answer": "pierwszego",
+          "grammar_point": "data-dopelniacz"
+        },
+        {
+          "id": "h2-3",
+          "text": "Wisława Szymborska dostała Nagrodę Nobla w tysiąc dziewięćset ___ roku.",
+          "answer": "dziewięćdziesiątym szóstym",
+          "grammar_point": "rok-miejscownik"
+        },
+        {
+          "id": "h2-4",
+          "text": "Mikołaj Kopernik wydał swoje najważniejsze dzieło w ___ wieku.",
+          "answer": "szesnastym",
+          "grammar_point": "wiek"
+        },
+        {
+          "id": "h2-5",
+          "text": "Unię lubelską zawarto w tysiąc pięćset ___ roku.",
+          "answer": "sześćdziesiątym dziewiątym",
+          "grammar_point": "rok-miejscownik"
+        },
+        {
+          "id": "h2-6",
+          "text": "Powstanie Warszawskie trwało ___ sześćdziesiąt trzy dni.",
+          "answer": "przez",
+          "grammar_point": "jak-dlugo"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Przekształcenia",
+      "instruction": "Napisz jedno zdanie. Użyj słowa albo formy z nawiasu.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Polska weszła do NATO. Potem weszła do Unii Europejskiej. (zanim)",
+          "answer": "Zanim Polska weszła do Unii Europejskiej, weszła do NATO.",
+          "accept": [
+            "Polska weszła do NATO, zanim weszła do Unii Europejskiej."
+          ],
+          "grammar_point": "kolejnosc"
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Wojna się skończyła. Potem odbudowano stolicę. (po tym, jak)",
+          "answer": "Po tym, jak wojna się skończyła, odbudowano stolicę.",
+          "accept": [
+            "Po tym jak wojna się skończyła, odbudowano stolicę.",
+            "Odbudowano stolicę po tym, jak wojna się skończyła.",
+            "Po tym, jak skończyła się wojna, odbudowano stolicę."
+          ],
+          "grammar_point": "kolejnosc"
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Powstanie Warszawskie: 1 sierpnia – 2 października 1944. (od… do…)",
+          "answer": "Powstanie Warszawskie trwało od pierwszego sierpnia do drugiego października 1944 roku.",
+          "accept": [
+            "Powstanie Warszawskie trwało od 1 sierpnia do 2 października 1944 roku."
+          ],
+          "grammar_point": "jak-dlugo"
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Nasza szkoła powstała w latach 90. (napisz słownie)",
+          "answer": "Nasza szkoła powstała w latach dziewięćdziesiątych.",
+          "grammar_point": "dekady"
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Ten dworek zbudowano w XIX w. (napisz słownie)",
+          "answer": "Ten dworek zbudowano w dziewiętnastym wieku.",
+          "grammar_point": "wiek"
+        },
+        {
+          "id": "h3-6",
+          "prompt": "Pojechaliśmy nad morze. Były wakacje. (podczas)",
+          "answer": "Podczas wakacji pojechaliśmy nad morze.",
+          "accept": [
+            "Pojechaliśmy nad morze podczas wakacji."
+          ],
+          "grammar_point": "przed-po-podczas"
+        }
+      ]
+    }
+  ]
+}

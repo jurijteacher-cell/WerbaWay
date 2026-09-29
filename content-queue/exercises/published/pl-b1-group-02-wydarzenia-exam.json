@@ -1,0 +1,41 @@
+{
+  "lesson_id": "pl-b1-group-02-wydarzenia",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Zadania w formacie egzaminu państwowego: czytanie i słuchanie.",
+  "estimated_minutes": 12,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj jeszcze raz tekst „Pięć dat, które zna każdy Polak” i zdecyduj, czy zdanie jest prawdziwe.",
+      "items": [
+        {"id": "e1-1", "statement": "Dokładny dzień chrztu Mieszka I jest dobrze znany historykom.", "answer": false, "explanation": "Dokładny dzień nie jest znany; czternasty kwietnia to tradycja."},
+        {"id": "e1-2", "statement": "Konstytucja 3 maja obowiązywała dłużej niż rok.", "answer": true, "explanation": "Obowiązywała przez czternaście miesięcy."},
+        {"id": "e1-3", "statement": "W rozbiorach Polski brały udział trzy państwa.", "answer": true, "explanation": "Rosja, Prusy i Austria."},
+        {"id": "e1-4", "statement": "Między wojnami Polska była niepodległa przez ponad trzydzieści lat.", "answer": false, "explanation": "Wolność trwała tylko dwadzieścia jeden lat."},
+        {"id": "e1-5", "statement": "Solidarność powstała, zanim podpisano porozumienie w sierpniu 1980 roku.", "answer": false, "explanation": "Powstała kilka tygodni po podpisaniu porozumienia."},
+        {"id": "e1-6", "statement": "W wyborach 1989 roku Solidarność nie mogła walczyć o wszystkie miejsca w Sejmie.", "answer": true, "explanation": "Zdobyła wszystkie 161 mandatów, o które mogła walczyć."}
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "pl-b1-group-02-wydarzenia-comm-tasks.json#c1.model_dialogue",
+      "audio_id": "pl-b1-group-02-wydarzenia-c1-dialog",
+      "max_plays": 2,
+      "title": "Słuchanie: rozmowa z archiwum",
+      "instruction": "Posłuchaj nagrania dwa razy i wybierz poprawną odpowiedź.",
+      "items": [
+        {"id": "e2-1", "question": "Kiedy urodził się pradziadek?", "options": ["12 marca 1921 roku", "21 marca 1912 roku", "12 maja 1921 roku"], "answer": "12 marca 1921 roku", "explanation": "„Dwunastego marca tysiąc dziewięćset dwudziestego pierwszego roku”."},
+        {"id": "e2-2", "question": "Dlaczego akt jest w archiwum, a nie w urzędzie?", "options": ["bo ma ponad sto lat", "bo urząd jest nieczynny", "bo pradziadek urodził się za granicą"], "answer": "bo ma ponad sto lat", "explanation": "Po stu latach księgi trafiają do archiwum."},
+        {"id": "e2-3", "question": "Jak długo najdłużej trzeba czekać na odpis?", "options": ["dwa tygodnie", "trzydzieści dni", "do jedenastego listopada"], "answer": "trzydzieści dni", "explanation": "„Termin realizacji to do trzydziestu dni”."},
+        {"id": "e2-4", "question": "Jak klient odbierze dokument?", "options": ["osobiście w archiwum", "pocztą", "e-mailem"], "answer": "pocztą", "explanation": "Wybiera odbiór pocztą, bo mieszka daleko."}
+      ]
+    }
+  ]
+}

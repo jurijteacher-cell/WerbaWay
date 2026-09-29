@@ -1,0 +1,186 @@
+{
+  "lesson_id": "pl-b1-group-02-wydarzenia",
+  "exercise_type": "picture-set",
+  "layout": "collage",
+  "layout_hints": {
+    "style": "polaroid-board",
+    "photo_frame": "polaroid",
+    "label_style": "tape",
+    "rotation_range": "-6..6"
+  },
+  "title": "Opis zdjęć: to samo miejsce wtedy i dziś",
+  "instruction": "Najpierw zgadnij, z jakich lat jest stare zdjęcie. Potem opisz oba i powiedz, co się zmieniło. Używaj wyrażeń z karteczek.",
+  "estimated_minutes": 18,
+  "phrase_bank": [
+    "Stare zdjęcie zrobiono prawdopodobnie w latach…",
+    "Na początku XX wieku…",
+    "…lat temu to miejsce wyglądało zupełnie inaczej.",
+    "Od tamtej pory…",
+    "Przez ponad sto lat…",
+    "Dziś, po wielu latach, …"
+  ],
+  "items": [
+    {
+      "id": "p1",
+      "label": "Westerplatte",
+      "note": "1939 → dziś",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "Westerplatte guardhouse 1939",
+          "orientation": "landscape",
+          "alt": "Wartownia na Westerplatte w 1939 roku",
+          "credit": "",
+          "image_url": "/content/pl-b1-group-02-wydarzenia/pic-1.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "westerplatte monument gdansk",
+          "orientation": "landscape",
+          "alt": "Pomnik Obrońców Wybrzeża na Westerplatte",
+          "image_url": "/content/pl-b1-group-02-wydarzenia/pic-1-dzis.jpg"
+        }
+      ],
+      "question": "Jak wygląda to miejsce na obu zdjęciach? Dlaczego dziś stoi tu pomnik, a nie budynki wojskowe?",
+      "image_url": "/content/pl-b1-group-02-wydarzenia/pic-1.jpg",
+      "alt": "Wartownia na Westerplatte w 1939 roku"
+    },
+    {
+      "id": "p2",
+      "label": "Wawel",
+      "note": "XIX w. → dziś",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "Wawel Castle Kraków photograph 1880s",
+          "orientation": "landscape",
+          "alt": "Wzgórze wawelskie na starej fotografii",
+          "credit": "",
+          "image_url": "/content/pl-b1-group-02-wydarzenia/pic-2.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "wawel castle krakow",
+          "orientation": "landscape",
+          "alt": "Zamek na Wawelu dzisiaj",
+          "image_url": "/content/pl-b1-group-02-wydarzenia/pic-2-dzis.jpg"
+        }
+      ],
+      "question": "Co się zmieniło wokół zamku? Kto odwiedzał to miejsce kiedyś, a kto przychodzi tu dziś?",
+      "image_url": "/content/pl-b1-group-02-wydarzenia/pic-2.jpg",
+      "alt": "Wzgórze wawelskie na starej fotografii"
+    },
+    {
+      "id": "p3",
+      "label": "Plac Zamkowy",
+      "note": "lata 20. → dziś",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "Castle Square Warsaw 1920s",
+          "orientation": "landscape",
+          "alt": "Plac Zamkowy w Warszawie w latach dwudziestych",
+          "credit": "",
+          "image_url": "/content/pl-b1-group-02-wydarzenia/pic-3.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "castle square warsaw",
+          "orientation": "landscape",
+          "alt": "Plac Zamkowy w Warszawie dzisiaj",
+          "image_url": "/content/pl-b1-group-02-wydarzenia/pic-3-dzis.jpg"
+        }
+      ],
+      "question": "Porównaj ludzi, ubrania i pojazdy. Czy to miejsce wygląda dziś tak samo jak sto lat temu?",
+      "image_url": "/content/pl-b1-group-02-wydarzenia/pic-3.jpg",
+      "alt": "Plac Zamkowy w Warszawie w latach dwudziestych"
+    },
+    {
+      "id": "p4",
+      "label": "Tramwaje",
+      "note": "lata 30. → dziś",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "Warsaw tram 1930s photograph",
+          "orientation": "landscape",
+          "alt": "Tramwaj na ulicy Warszawy w latach trzydziestych",
+          "credit": "",
+          "image_url": "/content/pl-b1-group-02-wydarzenia/pic-4.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "modern tram city street",
+          "orientation": "landscape",
+          "alt": "Nowoczesny tramwaj na ulicy miasta",
+          "image_url": "/content/pl-b1-group-02-wydarzenia/pic-4-dzis.jpg"
+        }
+      ],
+      "question": "Jak podróżowano po mieście przed wojną, a jak dziś? Co było wygodniejsze kiedyś, a co jest wygodniejsze teraz?",
+      "image_url": "/content/pl-b1-group-02-wydarzenia/pic-4.jpg",
+      "alt": "Tramwaj na ulicy Warszawy w latach trzydziestych"
+    },
+    {
+      "id": "p5",
+      "label": "Długi Targ",
+      "note": "początek XX w. → dziś",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "Long Market Danzig 1900s",
+          "orientation": "landscape",
+          "alt": "Długi Targ w Gdańsku na początku XX wieku",
+          "credit": "",
+          "image_url": "/content/pl-b1-group-02-wydarzenia/pic-5.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "long market gdansk",
+          "orientation": "landscape",
+          "alt": "Długi Targ w Gdańsku dzisiaj",
+          "image_url": "/content/pl-b1-group-02-wydarzenia/pic-5-dzis.jpg"
+        }
+      ],
+      "question": "Które budynki się nie zmieniły? Kto spaceruje po tej ulicy dziś, a kto chodził po niej sto lat temu?",
+      "image_url": "/content/pl-b1-group-02-wydarzenia/pic-5.jpg",
+      "alt": "Długi Targ w Gdańsku na początku XX wieku"
+    },
+    {
+      "id": "p6",
+      "label": "Ulica Nowy Świat",
+      "note": "lata 30. → dziś",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "Nowy Świat Street Warsaw 1930s",
+          "orientation": "landscape",
+          "alt": "Ulica Nowy Świat w Warszawie w latach trzydziestych",
+          "credit": "",
+          "image_url": "/content/pl-b1-group-02-wydarzenia/pic-6.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "nowy swiat street warsaw",
+          "orientation": "landscape",
+          "alt": "Ulica Nowy Świat w Warszawie dzisiaj",
+          "image_url": "/content/pl-b1-group-02-wydarzenia/pic-6-dzis.jpg"
+        }
+      ],
+      "question": "Jakie sklepy i lokale mogły tu być przed wojną, a jakie są dziś? Gdzie wolał(a)byś spędzić wieczór?",
+      "image_url": "/content/pl-b1-group-02-wydarzenia/pic-6.jpg",
+      "alt": "Ulica Nowy Świat w Warszawie w latach trzydziestych"
+    }
+  ]
+}

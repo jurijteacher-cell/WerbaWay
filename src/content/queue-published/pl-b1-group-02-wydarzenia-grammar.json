@@ -1,0 +1,140 @@
+{
+  "lesson_id": "pl-b1-group-02-wydarzenia",
+  "exercise_type": "fill-in-blank",
+  "title": "Daty i czas: od jednego dnia do całej epoki",
+  "instruction": "Osiem bloków w dwóch częściach. Bloki 1–4 idą po tablicy 1, bloki 5–8 po tablicy 2.",
+  "estimated_minutes": 45,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "covers_cards": [2, 3, 4],
+      "exercise_type": "fill-in-blank",
+      "title": "1. Jaki dzień czy kiedy?",
+      "instruction": "Wybierz formę. Pomyśl: to nazwa daty czy odpowiedź na pytanie „kiedy?”.",
+      "items": [
+        {"id": "g1-1", "text": "Dziś jest ___ listopada.", "options": ["jedenasty", "jedenastego"], "answer": "jedenasty", "explanation": "Jaki dziś dzień? — mianownik.", "grammar_point": "data-mianownik"},
+        {"id": "g1-2", "text": "Urodziłem się ___ marca.", "options": ["piąty", "piątego"], "answer": "piątego", "explanation": "Kiedy? — dopełniacz.", "grammar_point": "data-dopelniacz"},
+        {"id": "g1-3", "text": "Mur berliński upadł ___ listopada 1989 roku.", "options": ["dziewiąty", "dziewiątego"], "answer": "dziewiątego", "explanation": "Kiedy upadł? — dopełniacz.", "grammar_point": "data-dopelniacz"},
+        {"id": "g1-4", "text": "Euro w gotówce pojawiło się w 2002 ___.", "options": ["rok", "roku"], "answer": "roku", "explanation": "W + miejscownik: w roku.", "grammar_point": "rok-miejscownik"},
+        {"id": "g1-5", "text": "Pierwszy człowiek stanął na Księżycu w tysiąc dziewięćset ___ roku.", "options": ["sześćdziesiąt dziewięć", "sześćdziesiątym dziewiątym"], "answer": "sześćdziesiątym dziewiątym", "explanation": "Rok to liczebnik porządkowy w miejscowniku.", "grammar_point": "rok-miejscownik"},
+        {"id": "g1-6", "text": "Czwarty lipca to święto w USA. ___ lipca Amerykanie nie pracują.", "options": ["Czwarty", "Czwartego"], "answer": "Czwartego", "explanation": "Pierwsze zdanie nazywa datę, drugie mówi, kiedy.", "grammar_point": "data-dopelniacz"}
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "covers_cards": [6, 12],
+      "exercise_type": "matching",
+      "title": "2. Zapis i wymowa",
+      "instruction": "Kliknij zapis, potem to, jak go czytamy.",
+      "items": [
+        {"id": "g2-1", "left": "XIX w.", "right": "dziewiętnasty wiek", "grammar_point": "wiek"},
+        {"id": "g2-2", "left": "w XX w.", "right": "w dwudziestym wieku", "grammar_point": "wiek"},
+        {"id": "g2-3", "left": "na początku X w.", "right": "na początku dziesiątego wieku", "grammar_point": "wiek"},
+        {"id": "g2-4", "left": "w latach 90.", "right": "w latach dziewięćdziesiątych", "grammar_point": "dekady"},
+        {"id": "g2-5", "left": "1 IX", "right": "pierwszy września", "grammar_point": "zapis-dat"},
+        {"id": "g2-6", "left": "3.05.", "right": "trzeci maja", "grammar_point": "zapis-dat"},
+        {"id": "g2-7", "left": "1918 r.", "right": "tysiąc dziewięćset osiemnasty rok", "grammar_point": "zapis-dat"},
+        {"id": "g2-8", "left": "na przełomie XVIII i XIX w.", "right": "na przełomie osiemnastego i dziewiętnastego wieku", "grammar_point": "wiek"}
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "covers_cards": [5],
+      "exercise_type": "fill-in-blank",
+      "title": "3. Miesiąc z dniem i bez",
+      "instruction": "Jest dzień czy go nie ma? Wybierz formę.",
+      "items": [
+        {"id": "g3-1", "text": "Moje urodziny są ___.", "options": ["w maju", "maja"], "answer": "w maju", "explanation": "Bez dnia: w + miejscownik.", "grammar_point": "miesiac-z-dniem"},
+        {"id": "g3-2", "text": "Moje urodziny są dwunastego ___.", "options": ["w maju", "maja"], "answer": "maja", "explanation": "Z dniem: miesiąc w dopełniaczu.", "grammar_point": "miesiac-z-dniem"},
+        {"id": "g3-3", "text": "___ 2022 roku przeprowadziłam się do Krakowa.", "options": ["W lutym", "Lutego"], "answer": "W lutym", "explanation": "Nie ma dnia, więc w + miejscownik.", "grammar_point": "miesiac-z-dniem"},
+        {"id": "g3-4", "text": "Rok szkolny w Polsce zaczyna się zwykle ___ września.", "options": ["pierwszego", "w pierwszym"], "answer": "pierwszego", "explanation": "Konkretny dzień — dopełniacz, bez przyimka.", "grammar_point": "miesiac-z-dniem"},
+        {"id": "g3-5", "text": "Najzimniej jest zwykle ___.", "options": ["w styczniu", "stycznia"], "answer": "w styczniu", "explanation": "Cały miesiąc — w + miejscownik.", "grammar_point": "miesiac-z-dniem"},
+        {"id": "g3-6", "text": "Umówiliśmy się na dwudziestego ___.", "options": ["w październiku", "października"], "answer": "października", "explanation": "Jest dzień, więc dopełniacz.", "grammar_point": "miesiac-z-dniem"}
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "covers_cards": [2, 6],
+      "exercise_type": "fill-in-blank",
+      "title": "4. Rok i wiek słownie",
+      "instruction": "Wpisz brakującą część roku albo wieku słownie.",
+      "items": [
+        {"id": "g4-1", "text": "Fryderyk Chopin urodził się w 1810 roku, czyli w tysiąc osiemset ___ roku.", "answer": "dziesiątym", "grammar_point": "rok-miejscownik"},
+        {"id": "g4-2", "text": "Pierwszą linię metra w Warszawie otwarto w 1995 roku, czyli w tysiąc dziewięćset ___ roku.", "answer": "dziewięćdziesiątym piątym", "grammar_point": "rok-miejscownik"},
+        {"id": "g4-3", "text": "Euro 2012 odbyło się w Polsce i w Ukrainie w dwa tysiące ___ roku.", "answer": "dwunastym", "grammar_point": "rok-miejscownik"},
+        {"id": "g4-4", "text": "Maria Skłodowska-Curie dostała drugą Nagrodę Nobla w 1911 roku, czyli w tysiąc dziewięćset ___ roku.", "answer": "jedenastym", "grammar_point": "rok-miejscownik"},
+        {"id": "g4-5", "text": "Zamek w Malborku zaczęto budować w XIII wieku, czyli w ___ wieku.", "answer": "trzynastym", "grammar_point": "wiek"},
+        {"id": "g4-6", "text": "Kopalnię soli w Wieliczce wpisano na listę UNESCO w 1978 roku, czyli w tysiąc dziewięćset ___ roku.", "answer": "siedemdziesiątym ósmym", "grammar_point": "rok-miejscownik"}
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "covers_cards": [8, 9],
+      "exercise_type": "fill-in-blank",
+      "title": "5. Jak długo, przed czy po?",
+      "instruction": "Wybierz poprawną formę i przeczytaj wyjaśnienie.",
+      "items": [
+        {"id": "g5-1", "text": "Studiowałam w Krakowie ___ pięć lat.", "options": ["przez", "w ciągu"], "answer": "przez", "explanation": "Jak długo trwało? — przez + biernik.", "grammar_point": "jak-dlugo"},
+        {"id": "g5-2", "text": "Sklep jest nieczynny od poniedziałku ___ środy.", "options": ["do", "po"], "answer": "do", "explanation": "Granice okresu: od… do…", "grammar_point": "jak-dlugo"},
+        {"id": "g5-3", "text": "Dokument będzie gotowy ___ trzydziestu dni.", "options": ["przez", "w ciągu"], "answer": "w ciągu", "explanation": "Najpóźniej w tym czasie — w ciągu.", "grammar_point": "jak-dlugo"},
+        {"id": "g5-4", "text": "___ mój pradziadek mieszkał na wsi.", "options": ["Przed wojną", "Przed wojny"], "answer": "Przed wojną", "explanation": "Przed + narzędnik.", "grammar_point": "przed-po-podczas"},
+        {"id": "g5-5", "text": "___ poszliśmy na spacer.", "options": ["Po obiedzie", "Po obiadu"], "answer": "Po obiedzie", "explanation": "Po + miejscownik.", "grammar_point": "przed-po-podczas"},
+        {"id": "g5-6", "text": "Telefon zadzwonił ___ filmu.", "options": ["podczas", "pod czas"], "answer": "podczas", "explanation": "Podczas to jedno słowo, a po nim dopełniacz.", "grammar_point": "przed-po-podczas"}
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "covers_cards": [10, 11],
+      "exercise_type": "sentence-building",
+      "title": "6. Kolejność i odległość w czasie",
+      "instruction": "Połącz informacje w jedno zdanie. Użyj słowa z nawiasu.",
+      "items": [
+        {"id": "g6-1", "prompt": "Skończyłam studia. Potem wyjechałam do Warszawy. (po tym, jak)", "answer": "Po tym, jak skończyłam studia, wyjechałam do Warszawy.", "accept": ["Po tym jak skończyłam studia, wyjechałam do Warszawy.", "Wyjechałam do Warszawy, po tym, jak skończyłam studia.", "Wyjechałam do Warszawy po tym, jak skończyłam studia."], "grammar_point": "kolejnosc"},
+        {"id": "g6-2", "prompt": "Najpierw zadzwoń do urzędu. Potem idź do archiwum. (zanim)", "answer": "Zanim pójdziesz do archiwum, zadzwoń do urzędu.", "accept": ["Zadzwoń do urzędu, zanim pójdziesz do archiwum."], "grammar_point": "kolejnosc"},
+        {"id": "g6-3", "prompt": "Wrócę do domu. Potem zjem kolację. (kiedy)", "answer": "Kiedy wrócę do domu, zjem kolację.", "accept": ["Zjem kolację, kiedy wrócę do domu."], "grammar_point": "kolejnosc"},
+        {"id": "g6-4", "prompt": "Kupiliśmy mieszkanie w 2016 roku. Teraz jest 2026 rok. (temu)", "answer": "Kupiliśmy mieszkanie dziesięć lat temu.", "accept": ["Dziesięć lat temu kupiliśmy mieszkanie."], "grammar_point": "temu-za"},
+        {"id": "g6-5", "prompt": "Dziś jest 10 maja. Wizyta u lekarza jest 17 maja. (za)", "answer": "Wizyta u lekarza jest za tydzień.", "accept": ["Za tydzień jest wizyta u lekarza.", "Wizyta u lekarza jest za siedem dni."], "grammar_point": "temu-za"},
+        {"id": "g6-6", "prompt": "Brat urodził się w 2010 roku, a ja w 2012 roku. (wcześniej)", "answer": "Brat urodził się dwa lata wcześniej niż ja.", "accept": ["Mój brat urodził się dwa lata wcześniej niż ja.", "Brat urodził się dwa lata wcześniej ode mnie.", "Mój brat urodził się dwa lata wcześniej ode mnie."], "grammar_point": "temu-za"}
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "covers_cards": [3, 7, 8, 9, 11],
+      "exercise_type": "drag-and-drop",
+      "title": "7. Jedna historia: moja babcia",
+      "instruction": "Przeciągnij słowo do luki. Trzy słowa w banku nigdzie nie pasują.",
+      "bank": ["drugiego", "Zanim", "latach", "później", "podczas", "przez", "drugi", "pod czas", "lata"],
+      "items": [
+        {"id": "g7-1", "text": "Moja babcia urodziła się ___ lutego 1950 roku w małej wsi pod Lublinem.", "answer": "drugiego", "grammar_point": "data-dopelniacz"},
+        {"id": "g7-2", "text": "___ urodziła się moja mama, babcia skończyła szkołę pielęgniarską.", "answer": "Zanim", "grammar_point": "kolejnosc"},
+        {"id": "g7-3", "text": "Do Gdańska przeprowadziła się w ___ siedemdziesiątych.", "answer": "latach", "grammar_point": "dekady"},
+        {"id": "g7-4", "text": "Tam poznała dziadka, a rok ___ wzięli ślub.", "answer": "później", "grammar_point": "temu-za"},
+        {"id": "g7-5", "text": "Dziadek stracił pracę ___ stanu wojennego.", "answer": "podczas", "grammar_point": "przed-po-podczas"},
+        {"id": "g7-6", "text": "Babcia pracowała w szpitalu ___ czterdzieści lat.", "answer": "przez", "grammar_point": "jak-dlugo"}
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "covers_cards": [7, 12, 13, 14],
+      "exercise_type": "fill-in-blank",
+      "title": "8. Pułapki",
+      "instruction": "Jedna forma jest poprawna, druga to typowy błąd. Wybierz i przeczytaj wyjaśnienie.",
+      "items": [
+        {"id": "g8-1", "text": "Muzeum jest otwarte ___ poniedziałku do piątku.", "options": ["z", "od"], "answer": "od", "explanation": "Po polsku: od… do…, nie z… po…", "grammar_point": "kalki-uk"},
+        {"id": "g8-2", "text": "___ babcia wróciła do rodzinnej wsi.", "options": ["Po wojnie", "Po wojny"], "answer": "Po wojnie", "explanation": "Po + miejscownik, nie dopełniacz jak po ukraińsku.", "grammar_point": "kalki-uk"},
+        {"id": "g8-3", "text": "W zeszłym roku byłem w Polsce ___.", "options": ["w pierwszy raz", "po raz pierwszy"], "answer": "po raz pierwszy", "explanation": "Po raz pierwszy, a potocznie też pierwszy raz — ale nigdy „w pierwszy raz”.", "grammar_point": "kalki-uk"},
+        {"id": "g8-4", "text": "Moi rodzice poznali się w latach ___.", "options": ["80-tych", "80."], "answer": "80.", "explanation": "Do cyfr nie dopisujemy końcówek; wystarczy kropka.", "grammar_point": "zapis-dat"},
+        {"id": "g8-5", "text": "Urodziłem się ___ grudnia.", "options": ["11-go", "11"], "answer": "11", "explanation": "W dacie piszemy samą cyfrę, a czytamy: jedenastego.", "grammar_point": "zapis-dat"},
+        {"id": "g8-6", "text": "Skończyłam szkołę w dwa tysiące ___ roku.", "options": ["piętnaście", "piętnastym"], "answer": "piętnastym", "explanation": "Rok to liczebnik porządkowy w miejscowniku.", "grammar_point": "rok-miejscownik"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "lesson_id": "pl-b1-group-02-wydarzenia",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: daty, terminy, dokumenty",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Skończ dopiero wtedy, gdy masz wszystkie informacje z listy.",
+  "estimated_minutes": 22,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "listen-then-play",
+      "front_title": "W archiwum",
+      "back_scenario": "Szukasz aktu urodzenia swojego pradziadka. Dzwonisz do archiwum. Najpierw posłuchaj przykładowej rozmowy, potem odegraj swoją — z inną datą, innym miastem i innym sposobem odbioru.",
+      "back_checklist": [
+        "Podaj pełną datę urodzenia przodka — słownie, tak jak w nagraniu.",
+        "Dowiedz się, gdzie jest przechowywany dokument i dlaczego.",
+        "Zapytaj o termin realizacji odpisu.",
+        "Ustal, kiedy archiwum jest czynne, a kiedy nieczynne.",
+        "Wybierz sposób odbioru: osobiście albo pocztą."
+      ],
+      "model_dialogue": [
+        {"speaker": "Archiwistka", "voice": "pl-PL-female", "line": "Archiwum, dzień dobry. W czym mogę pomóc?"},
+        {"speaker": "Klient", "voice": "pl-PL-male", "line": "Dzień dobry. Szukam aktu urodzenia mojego pradziadka. Urodził się dwunastego marca tysiąc dziewięćset dwudziestego pierwszego roku."},
+        {"speaker": "Archiwistka", "voice": "pl-PL-female", "line": "Taki akt ma już ponad sto lat, więc nie ma go w urzędzie stanu cywilnego. Po stu latach księgi trafiają do archiwum."},
+        {"speaker": "Klient", "voice": "pl-PL-male", "line": "Właśnie dlatego dzwonię. Czy mogę zamówić odpis?"},
+        {"speaker": "Archiwistka", "voice": "pl-PL-female", "line": "Tak. Trzeba złożyć wniosek przez internet albo osobiście. Proszę podać imię, nazwisko i miejsce urodzenia."},
+        {"speaker": "Klient", "voice": "pl-PL-male", "line": "Jan Kowalczuk, urodzony w Przemyślu."},
+        {"speaker": "Archiwistka", "voice": "pl-PL-female", "line": "Sprawdzam… Tak, księgi z Przemyśla z lat dwudziestych są u nas."},
+        {"speaker": "Klient", "voice": "pl-PL-male", "line": "Ile trzeba czekać na dokument?"},
+        {"speaker": "Archiwistka", "voice": "pl-PL-female", "line": "Termin realizacji to do trzydziestu dni. Jesienią mamy dużo wniosków, więc proszę się nie martwić, jeśli potrwa to dłużej niż dwa tygodnie."},
+        {"speaker": "Klient", "voice": "pl-PL-male", "line": "A czy mogę odebrać odpis osobiście?"},
+        {"speaker": "Archiwistka", "voice": "pl-PL-female", "line": "Oczywiście. Jesteśmy czynni od poniedziałku do piątku, od ósmej do piętnastej. Tylko jedenastego listopada archiwum jest nieczynne."},
+        {"speaker": "Klient", "voice": "pl-PL-male", "line": "Rozumiem. W takim razie wolę odbiór pocztą, bo mieszkam daleko."},
+        {"speaker": "Archiwistka", "voice": "pl-PL-female", "line": "Nie ma problemu. Proszę tylko zaznaczyć to we wniosku."},
+        {"speaker": "Klient", "voice": "pl-PL-male", "line": "Dziękuję bardzo. Do widzenia."}
+      ]
+    },
+    {
+      "id": "c2",
+      "front_title": "Rozmowa w konsulacie",
+      "back_scenario": "Starasz się o Kartę Polaka. Konsul rozmawia z Tobą o Twoich przodkach i o Polsce. Jedna osoba jest konsulem, druga — kandydatem.",
+      "back_checklist": [
+        "Powiedz, kiedy i gdzie urodzili się Twoi przodkowie — pełne daty słownie.",
+        "Wyjaśnij, jakie dokumenty dołączyłeś / dołączyłaś do wniosku.",
+        "Wymień dwa polskie święta państwowe i powiedz, kiedy są.",
+        "Poproś konsula, żeby powtórzył pytanie, jeśli czegoś nie rozumiesz.",
+        "Zapytaj, kiedy i jak możesz odebrać decyzję albo zaświadczenie."
+      ]
+    },
+    {
+      "id": "c3",
+      "front_title": "Wizyta w dzień wolny",
+      "back_scenario": "Masz wizytę u dentysty jedenastego listopada. Dopiero teraz widzisz, że to dzień wolny od pracy. Dzwonisz do przychodni.",
+      "back_checklist": [
+        "Sprawdź, czy przychodnia jest czynna jedenastego listopada.",
+        "Poproś, żeby przełożyć wizytę, i zaproponuj dwa terminy.",
+        "Zapytaj o godziny otwarcia w dniu przed świętem.",
+        "Potwierdź nowy termin — powtórz datę i godzinę.",
+        "Zapytaj, czy dostaniesz przypomnienie SMS-em."
+      ]
+    },
+    {
+      "id": "c4",
+      "front_title": "Ważny dzień w moim kraju",
+      "back_scenario": "Kolega z pracy, Polak, pyta, jakie ważne rocznice obchodzi się w Twoim kraju. Opowiedz mu o jednej z nich.",
+      "back_checklist": [
+        "Podaj pełną datę wydarzenia słownie.",
+        "Opowiedz, co się wtedy stało i ile lat temu.",
+        "Wyjaśnij, jak ten dzień się upamiętnia i jak wyglądają obchody.",
+        "Porównaj to z jednym polskim świętem.",
+        "Zapytaj kolegę, które polskie święto jest dla niego najważniejsze i dlaczego."
+      ]
+    }
+  ]
+}
