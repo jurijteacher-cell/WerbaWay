@@ -6,13 +6,9 @@ Torba wróciła ze szpitala rozpakowana w pół godziny. Agata jest w domu od tr
 
 Pierwszy telefon zadzwonił już następnego ranka. To była położna środowiskowa — ta sama, którą Agata wybrała w przychodni jeszcze w ciąży. Pierwsza wizyta patronażowa musi się odbyć w ciągu czterdziestu ośmiu godzin od zgłoszenia, a wszystkich wizyt jest co najmniej cztery. Położna zważyła dziecko, obejrzała pępek, sprawdziła, jak goją się szwy, i pokazała **mamie**, jak przystawiać córkę do piersi. Potem zadała pytanie, którego Agata się nie spodziewała: „A jak Ty się czujesz?”.
 
-![Położna waży noworodka podczas wizyty w domu](https://werba-way.vercel.app/content/pl-preg-04-pierwsze-dni-w-domu/inline-1.jpg)
-
 Bo w połogu zmienia się wszystko naraz. Ciało wraca do formy przez sześć tygodni, około trzeciej doby przychodzi nawał mleczny, a hormony robią swoje. **Położnej** Agata przyznała się do tego, czego nie powiedziała nikomu: dwa razy rozpłakała się bez powodu. Usłyszała, że w pierwszych dniach zdarza się to większości kobiet, że to zwykle mija — ale jeśli nie minie, trzeba powiedzieć o tym **lekarzowi** albo **położnej**, a nie czekać.
 
 Druga sprawa to papiery. Urodzenie zgłasza się w urzędzie stanu cywilnego w ciągu dwudziestu jeden dni, przez internet albo osobiście. Wtedy **dziecku** nadaje się numer PESEL i akt urodzenia. Dopiero potem można złożyć wniosek o świadczenie 800 plus i o becikowe. Papierami zajął się partner — Agata dała **mu** tylko listę i swój dowód.
-
-![Rodzice z noworodkiem przy stole z dokumentami](https://werba-way.vercel.app/content/pl-preg-04-pierwsze-dni-w-domu/inline-2.jpg)
 
 Trzecia rzecz okazała się najtrudniejsza: prosić o pomoc. **Mamie** Agata powiedziała wprost, żeby przyszła na dwie godziny i ugotowała obiad. **Siostrze** napisała, żeby przywiozła pieluchy. **Sąsiadce**, która pytała, czym pomóc, podała konkretną rzecz zamiast grzecznego „dziękuję, damy radę”.
 
@@ -52,24 +48,7 @@ Porozmawiajmy. Tu nie ma dobrych i złych odpowiedzi — jest Twoje zdanie i arg
 
 ---
 
-## 5. Opis zdjęć
-
-Sześć par z pierwszych dni w domu. Opisz jedno zdjęcie, potem drugie, a na końcu powiedz, **komu** ktoś tu pomaga i w czym.
-
-**Karteczki z wyrażeniami** — sięgaj po nie, kiedy zabraknie Ci słów:
-
-- Na tym zdjęciu ktoś pomaga…
-- Tej mamie na pewno przydałoby się…
-- Najpierw…, a dopiero potem…
-- Dziecku potrzebne jest teraz…
-- Ja bym poprosiła o…
-- Obie sytuacje łączy to, że…
-
-<embed src="https://werba-way.vercel.app/embed/pl-preg-04-pierwsze-dni-w-domu/pictures">Opis zdjęć — pierwszy tydzień</embed>
-
----
-
-## 6. Zadania komunikacyjne
+## 5. Zadania komunikacyjne
 
 Cztery rozmowy z pierwszego tygodnia. Odwróć kartę i odegraj rozmowę — wyjdź z niej ze wszystkimi informacjami z listy.
 
@@ -77,7 +56,7 @@ Cztery rozmowy z pierwszego tygodnia. Odwróć kartę i odegraj rozmowę — wyj
 
 ---
 
-## 7. Gramatyka: celownik
+## 6. Gramatyka: celownik
 
 ### ① Po co ten przypadek
 
@@ -208,7 +187,7 @@ Cztery kalki — tak jest poprawnie.
 
 ---
 
-## 8. Ćwiczenia gramatyczne
+## 7. Ćwiczenia gramatyczne
 
 Osiem bloków ułożonych piramidą: od rozpoznawania formy do swobodnych próśb.
 
@@ -216,7 +195,7 @@ Osiem bloków ułożonych piramidą: od rozpoznawania formy do swobodnych próś
 
 ---
 
-## 9. Podsumowanie
+## 8. Podsumowanie
 
 Zanim skończymy, sprawdźmy, co zostało w głowie:
 
@@ -227,7 +206,7 @@ Zanim skończymy, sprawdźmy, co zostało w głowie:
 
 ---
 
-## 10. Praca domowa
+## 9. Praca domowa
 
 Trzy bloki interaktywne, film, artykuł i krótkie pisanie.
 
