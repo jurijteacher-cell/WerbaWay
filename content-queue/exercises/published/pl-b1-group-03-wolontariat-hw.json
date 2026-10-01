@@ -1,0 +1,185 @@
+{
+  "lesson_id": "pl-b1-group-03-wolontariat",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: słowa, formy, przekształcenia",
+  "instruction": "Trzy bloki. Zdania są nowe — nie ma ich w lekcji.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Słowa z lekcji w nowych zdaniach",
+      "instruction": "Wybierz słowo, które pasuje do zdania.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Do klubu seniora ___ się już dwadzieścia osób.",
+          "answer": "zgłosiło",
+          "options": [
+            "zgłosiło",
+            "przekonało",
+            "zależało"
+          ],
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-2",
+          "text": "Po maratonie charytatywnym organizatorzy opublikowali ___, z którego wynika, na co wydano pieniądze.",
+          "answer": "sprawozdanie",
+          "options": [
+            "sprawozdanie",
+            "zgodę",
+            "darowiznę"
+          ],
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-3",
+          "text": "Dziadek przekazał swoje książki szkole jako ___.",
+          "answer": "darowiznę",
+          "options": [
+            "darowiznę",
+            "zbiórkę",
+            "puszkę"
+          ],
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-4",
+          "text": "Po trzech latach pracy bez przerwy Iza poczuła ___ i wzięła urlop.",
+          "answer": "wypalenie",
+          "options": [
+            "wypalenie",
+            "satysfakcję",
+            "zgodę"
+          ],
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-5",
+          "text": "Kolega długo mnie ___, aż w końcu pojechałem z nim na obóz.",
+          "answer": "namawiał",
+          "options": [
+            "namawiał",
+            "odmawiał",
+            "zależał"
+          ],
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-6",
+          "text": "Na korepetycje w świetlicy osiedlowej potrzebna jest ___ rodziców.",
+          "answer": "zgoda",
+          "options": [
+            "zgoda",
+            "dyspozycyjność",
+            "koordynatorka"
+          ],
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Pełna forma",
+      "instruction": "Wpisz właściwą formę słowa z nawiasu.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Sąsiadka poprosiła, żebym ___ (podlać) jej pomidory w ogrodzie.",
+          "answer": "podlał",
+          "accept": [
+            "podlała"
+          ],
+          "grammar_point": "czasowniki-z-zeby"
+        },
+        {
+          "id": "h2-2",
+          "text": "Wyjeżdżam wcześniej, żeby nie ___ (stać) w korkach.",
+          "answer": "stać",
+          "grammar_point": "zeby-nie"
+        },
+        {
+          "id": "h2-3",
+          "text": "Nauczycielka chce, ___ (wy) przeczytali tę książkę do maja.",
+          "answer": "żebyście",
+          "grammar_point": "zeby-koncowki"
+        },
+        {
+          "id": "h2-4",
+          "text": "Zostawiłem kartkę, żeby kurier ___ (wiedzieć), gdzie zostawić paczkę.",
+          "answer": "wiedział",
+          "grammar_point": "zeby-forma-osobowa"
+        },
+        {
+          "id": "h2-5",
+          "text": "Biblioteka zbiera stare gry planszowe ___ (dla / na / do) świetlicy.",
+          "answer": "dla",
+          "grammar_point": "dla-na-do"
+        },
+        {
+          "id": "h2-6",
+          "text": "Trzeba wszystko sprawdzić, żeby wyniki ___ (zostać) opublikowane na czas.",
+          "answer": "zostały",
+          "grammar_point": "zeby-bierna"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Przekształcenia",
+      "instruction": "Połącz zdania albo przekształć je według wskazówki.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Chodzę na siłownię. Chcę mieć więcej energii. (żeby)",
+          "answer": "Chodzę na siłownię, żeby mieć więcej energii.",
+          "grammar_point": "zeby-bezokolicznik"
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Powiedz mu: niech zadzwoni do mnie. (Powiedz mu, żeby…)",
+          "answer": "Powiedz mu, żeby do mnie zadzwonił.",
+          "accept": [
+            "Powiedz mu, żeby zadzwonił do mnie."
+          ],
+          "grammar_point": "ze-vs-zeby"
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Sąsiedzi spotkali się, żeby omówić remont dachu. (w celu)",
+          "answer": "Sąsiedzi spotkali się w celu omówienia remontu dachu.",
+          "grammar_point": "w-celu"
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Oszczędzam. Chcę kupić mieszkanie. (po to, żeby)",
+          "answer": "Oszczędzam po to, żeby kupić mieszkanie.",
+          "accept": [
+            "Oszczędzam po to, by kupić mieszkanie."
+          ],
+          "grammar_point": "aby-by-po-to"
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Nie poszedłem na trening. Bolała mnie noga. (bo)",
+          "answer": "Nie poszedłem na trening, bo bolała mnie noga.",
+          "grammar_point": "bo-vs-zeby"
+        },
+        {
+          "id": "h3-6",
+          "prompt": "Mówię ci: nie spóźnij się. (Proszę cię, żebyś…)",
+          "answer": "Proszę cię, żebyś się nie spóźnił.",
+          "accept": [
+            "Proszę cię, żebyś nie spóźnił się.",
+            "Proszę cię, żebyś się nie spóźniła.",
+            "Proszę cię, żebyś nie spóźniła się."
+          ],
+          "grammar_point": "zeby-nie"
+        }
+      ]
+    }
+  ]
+}

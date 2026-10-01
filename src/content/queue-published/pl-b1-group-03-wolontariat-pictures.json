@@ -1,0 +1,121 @@
+{
+  "lesson_id": "pl-b1-group-03-wolontariat",
+  "exercise_type": "picture-set",
+  "layout": "collage",
+  "layout_hints": {
+    "style": "polaroid-board",
+    "photo_frame": "polaroid",
+    "label_style": "tape",
+    "rotation_range": "-6..6"
+  },
+  "title": "Opis zdjęć: ludzie, którzy pomagają",
+  "instruction": "Wybierz zdjęcie i opisz je: kto na nim jest, gdzie są ci ludzie, co robią i jak się czują. Powiedz, co Twoim zdaniem dzieje się poza kadrem, i odpowiedz na pytanie pod zdjęciem. Mów 1–2 minuty.",
+  "estimated_minutes": 15,
+  "phrase_bank": [
+    "Na pierwszym planie widać…",
+    "W tle widzę…",
+    "Wydaje mi się, że…",
+    "Ta osoba wygląda na…",
+    "Wygląda na to, że…",
+    "Myślę, że robią to po to, żeby…",
+    "Moim zdaniem…"
+  ],
+  "items": [
+    {
+      "id": "p1",
+      "label": "Bank żywności",
+      "images": [
+        {
+          "source": "stock",
+          "image_keywords": "food bank volunteers",
+          "orientation": "landscape",
+          "alt": "Wolontariusze układają produkty spożywcze w kartonach",
+          "image_url": "/content/pl-b1-group-03-wolontariat/pic-1.jpg"
+        }
+      ],
+      "question": "Opisz, co robią ci ludzie i gdzie są. Jak myślisz, skąd pochodzi to jedzenie i dla kogo jest?",
+      "image_url": "/content/pl-b1-group-03-wolontariat/pic-1.jpg",
+      "alt": "Wolontariusze układają produkty spożywcze w kartonach"
+    },
+    {
+      "id": "p2",
+      "label": "Spacer ze schroniska",
+      "images": [
+        {
+          "source": "stock",
+          "image_keywords": "woman walking shelter dog",
+          "orientation": "landscape",
+          "alt": "Kobieta idzie na spacer z psem na smyczy",
+          "image_url": "/content/pl-b1-group-03-wolontariat/pic-2.jpg"
+        }
+      ],
+      "question": "Kim może być ta osoba? Opisz jej nastrój i zachowanie psa. Czy Ty chciałbyś / chciałabyś pomagać zwierzętom? Dlaczego?",
+      "image_url": "/content/pl-b1-group-03-wolontariat/pic-2.jpg",
+      "alt": "Kobieta idzie na spacer z psem na smyczy"
+    },
+    {
+      "id": "p3",
+      "label": "Sprzątanie",
+      "images": [
+        {
+          "source": "stock",
+          "image_keywords": "volunteers picking litter",
+          "orientation": "landscape",
+          "alt": "Grupa ludzi z workami zbiera śmieci na trawie",
+          "image_url": "/content/pl-b1-group-03-wolontariat/pic-3.jpg"
+        }
+      ],
+      "question": "Opisz miejsce i ludzi. Jak myślisz, kto zorganizował tę akcję i po co?",
+      "image_url": "/content/pl-b1-group-03-wolontariat/pic-3.jpg",
+      "alt": "Grupa ludzi z workami zbiera śmieci na trawie"
+    },
+    {
+      "id": "p4",
+      "label": "Pomoc w lekcjach",
+      "images": [
+        {
+          "source": "stock",
+          "image_keywords": "child homework help",
+          "orientation": "landscape",
+          "alt": "Dorosły pomaga dziecku odrabiać lekcje przy stole",
+          "image_url": "/content/pl-b1-group-03-wolontariat/pic-4.jpg"
+        }
+      ],
+      "question": "Kim może być ta dorosła osoba: nauczycielem, rodzicem, wolontariuszem? Co na zdjęciu wskazuje na Twoją odpowiedź?",
+      "image_url": "/content/pl-b1-group-03-wolontariat/pic-4.jpg",
+      "alt": "Dorosły pomaga dziecku odrabiać lekcje przy stole"
+    },
+    {
+      "id": "p5",
+      "label": "Odwiedziny",
+      "images": [
+        {
+          "source": "stock",
+          "image_keywords": "young woman elderly woman",
+          "orientation": "landscape",
+          "alt": "Młoda kobieta rozmawia ze starszą panią przy herbacie",
+          "image_url": "/content/pl-b1-group-03-wolontariat/pic-5.jpg"
+        }
+      ],
+      "question": "Opisz relację między tymi osobami. Co mogą razem robić? Czy takie wizyty są ważne — dlaczego?",
+      "image_url": "/content/pl-b1-group-03-wolontariat/pic-5.jpg",
+      "alt": "Młoda kobieta rozmawia ze starszą panią przy herbacie"
+    },
+    {
+      "id": "p6",
+      "label": "Zbiórka ubrań",
+      "images": [
+        {
+          "source": "stock",
+          "image_keywords": "clothes donation boxes",
+          "orientation": "landscape",
+          "alt": "Kartony z ubraniami przygotowane do przekazania",
+          "image_url": "/content/pl-b1-group-03-wolontariat/pic-6.jpg"
+        }
+      ],
+      "question": "Co widzisz na zdjęciu? Co warto oddawać, a czego lepiej nie oddawać, żeby taka pomoc miała sens?",
+      "image_url": "/content/pl-b1-group-03-wolontariat/pic-6.jpg",
+      "alt": "Kartony z ubraniami przygotowane do przekazania"
+    }
+  ]
+}

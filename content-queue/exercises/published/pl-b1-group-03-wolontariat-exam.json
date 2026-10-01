@@ -1,0 +1,111 @@
+{
+  "lesson_id": "pl-b1-group-03-wolontariat",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 14,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Jeden dzień w styczniu”. Zdecyduj, czy zdania są prawdziwe (P), czy fałszywe (F).",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "WOŚP organizuje swoją wielką zbiórkę kilka razy w roku.",
+          "answer": false,
+          "explanation": "W tekście: raz w roku, przez jeden dzień."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Fundacja sama kupuje sprzęt i przekazuje go szpitalom.",
+          "answer": true,
+          "explanation": "Fundacja nie wysyła gotówki — kupuje urządzenia i przekazuje je szpitalom."
+        },
+        {
+          "id": "e1-3",
+          "statement": "W 2026 roku zbierano pieniądze na leczenie chorób serca u dzieci.",
+          "answer": false,
+          "explanation": "W 2026 roku celem były choroby przewodu pokarmowego u dzieci."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Ostateczny wynik 34. finału był wyższy niż kwota na liczniku przed północą.",
+          "answer": true,
+          "explanation": "Przed północą — ponad 183 miliony, ostatecznie — ponad 263 miliony złotych."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Wolontariuszami Orkiestry mogą być tylko uczniowie i studenci.",
+          "answer": false,
+          "explanation": "Najczęściej to uczniowie i studenci, ale może nim zostać także emerytka czy informatyk."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Według tekstu wielu wolontariuszy pomaga przede wszystkim po to, żeby ktoś ich chwalił.",
+          "answer": false,
+          "explanation": "Wielu mówi, że nie robi tego dla pochwał, tylko dlatego, że daje im to poczucie sensu."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "pl-b1-group-03-wolontariat-comm-tasks.json#c1.model_dialogue",
+      "audio_id": "pl-b1-group-03-wolontariat-c1-dialog",
+      "max_plays": 2,
+      "title": "Słuchanie: telefon do fundacji",
+      "instruction": "Posłuchaj nagrania dwa razy. Wybierz właściwą odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Kiedy jest najbliższe szkolenie?",
+          "options": [
+            "w sobotę o dziesiątej",
+            "w niedzielę o dziesiątej",
+            "w sobotę o dziewiątej"
+          ],
+          "answer": "w sobotę o dziesiątej",
+          "explanation": "Szkolenie jest w sobotę, siedemnastego października, o dziesiątej. O dziewiątej zaczyna się dyżur."
+        },
+        {
+          "id": "e2-2",
+          "question": "Dlaczego szkolenie trwa tak długo?",
+          "options": [
+            "Wolontariusze muszą wypełnić dużo dokumentów.",
+            "Wolontariusze uczą się, jak bezpiecznie wyprowadzać psy.",
+            "Wolontariusze sprzątają boksy dla psów."
+          ],
+          "answer": "Wolontariusze uczą się, jak bezpiecznie wyprowadzać psy.",
+          "explanation": "Koordynatorka mówi: robimy to po to, żeby każdy wiedział, jak bezpiecznie wyprowadzać psy."
+        },
+        {
+          "id": "e2-3",
+          "question": "Ile trwa jeden dyżur?",
+          "options": [
+            "trzy godziny",
+            "dwie godziny",
+            "cały dzień"
+          ],
+          "answer": "trzy godziny",
+          "explanation": "Dyżur trwa od dziewiątej do dwunastej, czyli trzy godziny."
+        },
+        {
+          "id": "e2-4",
+          "question": "Co Paweł musi przynieść na szkolenie?",
+          "options": [
+            "formularz zgłoszeniowy",
+            "dowód osobisty",
+            "zaświadczenie z pracy"
+          ],
+          "answer": "dowód osobisty",
+          "explanation": "Fundacja podpisuje porozumienie, więc potrzebny jest dowód osobisty. Formularz wypełnia się na stronie."
+        }
+      ]
+    }
+  ]
+}

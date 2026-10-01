@@ -1,0 +1,558 @@
+{
+  "lesson_id": "pl-b1-group-03-wolontariat",
+  "exercise_type": "fill-in-blank",
+  "title": "Cel i prośba: od „żeby” do „w celu”",
+  "instruction": "Osiem bloków w dwóch częściach: pierwsze cztery pod częścią 1 tablicy, następne cztery pod częścią 2.",
+  "estimated_minutes": 50,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "covers_cards": [
+        2,
+        3
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "1. Ten sam czy inny podmiot?",
+      "instruction": "Wybierz bezokolicznik albo formę osobową.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Zapisałem się na kurs, żeby ___ pierwszej pomocy.",
+          "answer": "nauczyć się",
+          "options": [
+            "nauczyć się",
+            "nauczył się"
+          ],
+          "grammar_point": "zeby-bezokolicznik"
+        },
+        {
+          "id": "g1-2",
+          "text": "Zostawiam ci klucze, żebyś ___ podlać kwiaty.",
+          "answer": "mógł",
+          "options": [
+            "móc",
+            "mógł"
+          ],
+          "grammar_point": "zeby-forma-osobowa"
+        },
+        {
+          "id": "g1-3",
+          "text": "Sąsiadka wstaje o piątej, żeby ___ na pierwszy autobus.",
+          "answer": "zdążyć",
+          "options": [
+            "zdążyć",
+            "zdążyła"
+          ],
+          "grammar_point": "zeby-bezokolicznik"
+        },
+        {
+          "id": "g1-4",
+          "text": "Dyrektor powiesił ogłoszenie, żeby wszyscy ___ o zebraniu.",
+          "answer": "wiedzieli",
+          "options": [
+            "wiedzieć",
+            "wiedzieli"
+          ],
+          "grammar_point": "zeby-forma-osobowa"
+        },
+        {
+          "id": "g1-5",
+          "text": "Kupiliśmy duży stół, żeby goście ___ usiąść razem.",
+          "answer": "mogli",
+          "options": [
+            "móc",
+            "mogli"
+          ],
+          "grammar_point": "zeby-forma-osobowa"
+        },
+        {
+          "id": "g1-6",
+          "text": "Otwieram okno, żeby ___ pokój.",
+          "answer": "przewietrzyć",
+          "options": [
+            "przewietrzyć",
+            "przewietrzył"
+          ],
+          "grammar_point": "zeby-bezokolicznik"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "covers_cards": [
+        4
+      ],
+      "exercise_type": "matching",
+      "title": "2. Kto? Dopasuj formę",
+      "instruction": "Połącz osobę i czasownik z właściwą formą z „żeby”.",
+      "items": [
+        {
+          "id": "g2-1",
+          "left": "ja (kobieta) + przyjść",
+          "right": "żebym przyszła",
+          "grammar_point": "zeby-koncowki"
+        },
+        {
+          "id": "g2-2",
+          "left": "ty (mężczyzna) + pomóc",
+          "right": "żebyś pomógł",
+          "grammar_point": "zeby-koncowki"
+        },
+        {
+          "id": "g2-3",
+          "left": "my (kobiety i mężczyźni) + wiedzieć",
+          "right": "żebyśmy wiedzieli",
+          "grammar_point": "zeby-koncowki"
+        },
+        {
+          "id": "g2-4",
+          "left": "wy (same kobiety) + zadzwonić",
+          "right": "żebyście zadzwoniły",
+          "grammar_point": "zeby-koncowki"
+        },
+        {
+          "id": "g2-5",
+          "left": "oni + zostać",
+          "right": "żeby zostali",
+          "grammar_point": "zeby-koncowki"
+        },
+        {
+          "id": "g2-6",
+          "left": "ona + odpocząć",
+          "right": "żeby odpoczęła",
+          "grammar_point": "zeby-koncowki"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "covers_cards": [
+        3,
+        4,
+        5
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "3. Prośby, rady i życzenia",
+      "instruction": "Wpisz właściwą formę czasownika z nawiasu albo „żeby” z końcówką.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Koordynatorka prosi, żebyśmy ___ (przyjść) dziesięć minut wcześniej.",
+          "answer": "przyszli",
+          "accept": [
+            "przyszły"
+          ],
+          "grammar_point": "czasowniki-z-zeby"
+        },
+        {
+          "id": "g3-2",
+          "text": "Lekarz radzi, żeby tata ___ (pić) więcej wody.",
+          "answer": "pił",
+          "grammar_point": "czasowniki-z-zeby"
+        },
+        {
+          "id": "g3-3",
+          "text": "Chcę, żebyś ___ (poznać) moją siostrę.",
+          "answer": "poznał",
+          "accept": [
+            "poznała"
+          ],
+          "grammar_point": "czasowniki-z-zeby"
+        },
+        {
+          "id": "g3-4",
+          "text": "Zależy mi, żeby list ___ (dojść) przed świętami.",
+          "answer": "doszedł",
+          "grammar_point": "czasowniki-z-zeby"
+        },
+        {
+          "id": "g3-5",
+          "text": "Namawiam was, żebyście ___ (zapisać się) na ten kurs.",
+          "answer": "zapisali się",
+          "accept": [
+            "zapisały się"
+          ],
+          "grammar_point": "czasowniki-z-zeby"
+        },
+        {
+          "id": "g3-6",
+          "text": "Babcia chce, ___ (ja) ją odwiedził w sobotę.",
+          "answer": "żebym",
+          "grammar_point": "zeby-koncowki"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "covers_cards": [
+        6
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "4. Że czy żeby?",
+      "instruction": "Wybierz spójnik. Po odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Szef powiedział, ___ jutro pracujemy z domu.",
+          "answer": "że",
+          "options": [
+            "że",
+            "żeby"
+          ],
+          "explanation": "Szef podaje informację o fakcie — „że”.",
+          "grammar_point": "ze-vs-zeby"
+        },
+        {
+          "id": "g4-2",
+          "text": "Szef powiedział, ___ wszyscy wysłali raporty do piątku.",
+          "answer": "żeby",
+          "options": [
+            "że",
+            "żeby"
+          ],
+          "explanation": "To polecenie, a po „żeby” stoi forma przeszła: wysłali.",
+          "grammar_point": "ze-vs-zeby"
+        },
+        {
+          "id": "g4-3",
+          "text": "Piszę do Ciebie, ___ zaprosić Cię na urodziny.",
+          "answer": "żeby",
+          "options": [
+            "że",
+            "żeby"
+          ],
+          "explanation": "Cel listu — „żeby” z bezokolicznikiem.",
+          "grammar_point": "ze-vs-zeby"
+        },
+        {
+          "id": "g4-4",
+          "text": "Mama napisała, ___ obiad jest w lodówce.",
+          "answer": "że",
+          "options": [
+            "że",
+            "żeby"
+          ],
+          "explanation": "Informacja, gdzie jest obiad — „że”.",
+          "grammar_point": "ze-vs-zeby"
+        },
+        {
+          "id": "g4-5",
+          "text": "Mama napisała, ___ wyjąć obiad z lodówki.",
+          "answer": "żeby",
+          "options": [
+            "że",
+            "żeby"
+          ],
+          "explanation": "Prośba mamy — „żeby” z bezokolicznikiem.",
+          "grammar_point": "ze-vs-zeby"
+        },
+        {
+          "id": "g4-6",
+          "text": "Wiem, ___ to trudne, ale spróbuj.",
+          "answer": "że",
+          "options": [
+            "że",
+            "żeby"
+          ],
+          "explanation": "Po „wiedzieć” idzie informacja — „że”.",
+          "grammar_point": "ze-vs-zeby"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "covers_cards": [
+        7,
+        8,
+        10,
+        11
+      ],
+      "exercise_type": "sentence-building",
+      "title": "5. Przekształć zdania",
+      "instruction": "Połącz zdania albo zmień styl według wskazówki w nawiasie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Uczę się wieczorami. Chcę zdać egzamin. (po to, żeby)",
+          "answer": "Uczę się wieczorami po to, żeby zdać egzamin.",
+          "accept": [
+            "Uczę się wieczorami po to, by zdać egzamin.",
+            "Po to, żeby zdać egzamin, uczę się wieczorami."
+          ],
+          "grammar_point": "aby-by-po-to"
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Wyłączcie, proszę, telefony. → komunikat w teatrze (Prosimy, aby Państwo…)",
+          "answer": "Prosimy, aby Państwo wyłączyli telefony.",
+          "accept": [
+            "Prosimy, aby wyłączyli Państwo telefony.",
+            "Prosimy, aby Państwo wyłączyli telefony komórkowe."
+          ],
+          "grammar_point": "aby-by-po-to"
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Zbieramy dane, żeby wystawić zaświadczenie. (w celu)",
+          "answer": "Zbieramy dane w celu wystawienia zaświadczenia.",
+          "grammar_point": "w-celu"
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Firma organizuje szkolenie, żeby poprawić bezpieczeństwo. (w celu)",
+          "answer": "Firma organizuje szkolenie w celu poprawy bezpieczeństwa.",
+          "accept": [
+            "Firma organizuje szkolenie w celu poprawienia bezpieczeństwa."
+          ],
+          "grammar_point": "w-celu"
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Biorę parasol. Pada deszcz. (bo)",
+          "answer": "Biorę parasol, bo pada deszcz.",
+          "grammar_point": "bo-vs-zeby"
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Biorę parasol. Nie chcę zmoknąć. (żeby nie)",
+          "answer": "Biorę parasol, żeby nie zmoknąć.",
+          "grammar_point": "zeby-nie"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "covers_cards": [
+        9,
+        10
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "6. Dla, na, do — i żeby nie",
+      "instruction": "Wybierz właściwą formę. Po odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Zbieramy pieniądze ___ operację Zosi.",
+          "answer": "na",
+          "options": [
+            "dla",
+            "na",
+            "do"
+          ],
+          "explanation": "„Na” — na co idą pieniądze.",
+          "grammar_point": "dla-na-do"
+        },
+        {
+          "id": "g6-2",
+          "text": "Te kredki są ___ dzieci ze świetlicy.",
+          "answer": "dla",
+          "options": [
+            "dla",
+            "na",
+            "do"
+          ],
+          "explanation": "„Dla” — odbiorca, komu dajemy.",
+          "grammar_point": "dla-na-do"
+        },
+        {
+          "id": "g6-3",
+          "text": "Kupiłam nową maszynę ___ szycia.",
+          "answer": "do",
+          "options": [
+            "dla",
+            "na",
+            "do"
+          ],
+          "explanation": "„Do” — do czego służy rzecz.",
+          "grammar_point": "dla-na-do"
+        },
+        {
+          "id": "g6-4",
+          "text": "Gotujmy mniej, żeby nie zmarnować ___.",
+          "answer": "jedzenia",
+          "options": [
+            "jedzenie",
+            "jedzenia"
+          ],
+          "explanation": "Zmarnować jedzenie → nie zmarnować jedzenia: po „nie” dopełniacz.",
+          "grammar_point": "zeby-nie"
+        },
+        {
+          "id": "g6-5",
+          "text": "Mów ciszej, żeby nie obudzić ___.",
+          "answer": "dziecka",
+          "options": [
+            "dziecko",
+            "dziecka"
+          ],
+          "explanation": "Obudzić dziecko → nie obudzić dziecka: po „nie” dopełniacz.",
+          "grammar_point": "zeby-nie"
+        },
+        {
+          "id": "g6-6",
+          "text": "Zbiórka ___ powodzian ruszyła w poniedziałek.",
+          "answer": "dla",
+          "options": [
+            "dla",
+            "na",
+            "do"
+          ],
+          "explanation": "Powodzianie to odbiorcy pomocy — „dla”.",
+          "grammar_point": "dla-na-do"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "covers_cards": [
+        3,
+        4,
+        12
+      ],
+      "exercise_type": "drag-and-drop",
+      "title": "7. Historia Marka",
+      "instruction": "Przeciągnij słowa na miejsca. Trzy słowa są zbędne.",
+      "bank": [
+        "żeby",
+        "przychodził",
+        "zostały",
+        "żebym",
+        "został",
+        "dla",
+        "przychodzi",
+        "że",
+        "na"
+      ],
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Mój kuzyn Marek od dwóch lat pomaga w banku żywności. Na początku zapisał się tam, ___ poznać nowych ludzi.",
+          "answer": "żeby",
+          "grammar_point": "zeby-bezokolicznik"
+        },
+        {
+          "id": "g7-2",
+          "text": "Koordynatorka poprosiła, żeby ___ w każdy czwartek.",
+          "answer": "przychodził",
+          "grammar_point": "zeby-forma-osobowa"
+        },
+        {
+          "id": "g7-3",
+          "text": "W grudniu wszyscy pracowali szybciej, żeby paczki ___ dostarczone przed świętami.",
+          "answer": "zostały",
+          "grammar_point": "zeby-bierna"
+        },
+        {
+          "id": "g7-4",
+          "text": "Marek namówił też mnie, ___ pomogła przy pakowaniu.",
+          "answer": "żebym",
+          "grammar_point": "zeby-koncowki"
+        },
+        {
+          "id": "g7-5",
+          "text": "Przez cały weekend sprawdzaliśmy listy, żeby nikt nie ___ pominięty.",
+          "answer": "został",
+          "grammar_point": "zeby-bierna"
+        },
+        {
+          "id": "g7-6",
+          "text": "Teraz Marek mówi, że nie robi tego ___ pochwał, tylko dlatego, że to lubi.",
+          "answer": "dla",
+          "grammar_point": "dla-na-do"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "covers_cards": [
+        13,
+        14
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "8. Pułapki",
+      "instruction": "Wybierz poprawną formę. Po odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Chcę, ___ ze mną poszła.",
+          "answer": "żebyś",
+          "options": [
+            "żebyś",
+            "że ty",
+            "żeby ty"
+          ],
+          "explanation": "Po „chcieć” — „żeby”, a osoba siedzi w końcówce: żebyś.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-2",
+          "text": "Mama prosi, żebym ___ zakupy.",
+          "answer": "zrobił",
+          "options": [
+            "zrobiłem",
+            "zrobił",
+            "zrobię"
+          ],
+          "explanation": "Końcówka -m jest już w „żebym”, więc czasownik zostaje bez niej: zrobił.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-3",
+          "text": "Organizujemy koncert, a pieniądze idą ___ rehabilitację.",
+          "answer": "na",
+          "options": [
+            "na",
+            "dla",
+            "do"
+          ],
+          "explanation": "Ukraińskie „для лікування” to po polsku „na leczenie”, „na rehabilitację”.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-4",
+          "text": "Od roku zajmuję się ___.",
+          "answer": "wolontariatem",
+          "options": [
+            "wolontariatem",
+            "wolontierstwem",
+            "wolontariuszem"
+          ],
+          "explanation": "Wolontariat — działalność; wolontariusz — osoba. „Wolontierstwo” nie istnieje.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-5",
+          "text": "Firma ___ pieniądze na nowy plac zabaw.",
+          "answer": "przekazała",
+          "options": [
+            "przekazała",
+            "pożertwowała",
+            "podała"
+          ],
+          "explanation": "„Пожертвувати” to po polsku „przekazać” albo „ofiarować”.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-6",
+          "text": "Sąsiad pomógł mi ___ przeprowadzce.",
+          "answer": "przy",
+          "options": [
+            "przy",
+            "z",
+            "na"
+          ],
+          "explanation": "„Pomóc z” słychać potocznie, ale norma to „pomóc przy” albo „w”.",
+          "grammar_point": "kalki-uk"
+        }
+      ]
+    }
+  ]
+}
