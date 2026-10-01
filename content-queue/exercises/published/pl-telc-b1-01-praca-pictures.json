@@ -1,0 +1,134 @@
+{
+  "lesson_id": "pl-telc-b1-01-praca",
+  "exercise_type": "picture-set",
+  "layout": "collage",
+  "layout_hints": {
+    "style": "polaroid-board",
+    "photo_frame": "polaroid",
+    "label_style": "tape",
+    "rotation_range": "-6..6"
+  },
+  "title": "Opis zdjęć: praca kiedyś i dziś",
+  "instruction": "Cztery pary zdjęć: ten sam rodzaj pracy kiedyś i dziś. Tak jak w części 1A egzaminu telc: najpierw powiedz, co widzisz, kim są ludzie i czym się zajmują. Potem porównaj oba zdjęcia. Mów około minuty o każdej parze.",
+  "estimated_minutes": 15,
+  "phrase_bank": [
+    "Na zdjęciu widzę…",
+    "Na pierwszym planie… / W tle…",
+    "Ta kobieta jest prawdopodobnie…",
+    "Ci ludzie pracują jako…",
+    "Wygląda na to, że…",
+    "Kiedyś… a dziś…",
+    "Największa różnica polega na tym, że…",
+    "Wolał(a)bym pracować…, bo…"
+  ],
+  "items": [
+    {
+      "id": "p1",
+      "label": "Biuro",
+      "note": "początek XX wieku → dziś",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "Larkin Administration Building interior office workers",
+          "orientation": "landscape",
+          "alt": "Duża sala biurowa z początku XX wieku, rzędy biurek i pracownicy przy papierach",
+          "credit": "Navy Department typing pool (public domain)",
+          "image_url": "/content/pl-telc-b1-01-praca/pic-1.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "open office laptops",
+          "orientation": "landscape",
+          "alt": "Nowoczesne biuro, ludzie pracują przy laptopach",
+          "image_url": "/content/pl-telc-b1-01-praca/pic-1-dzis.jpg"
+        }
+      ],
+      "question": "Kim są ludzie na obu zdjęciach i czym się zajmują? Gdzie wolał(a)byś pracować i dlaczego?",
+      "image_url": "/content/pl-telc-b1-01-praca/pic-1.jpg",
+      "alt": "Duża sala biurowa z początku XX wieku, rzędy biurek i pracownicy przy papierach"
+    },
+    {
+      "id": "p2",
+      "label": "Telefonistki",
+      "note": "lata 20. XX wieku → dziś",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "Bell Telephone switchboard operators",
+          "orientation": "landscape",
+          "alt": "Telefonistki przy dużej centrali telefonicznej łączą rozmowy kablami",
+          "credit": "Telephone operators, Weiss Collection (public domain)",
+          "image_url": "/content/pl-telc-b1-01-praca/pic-2.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "call center headset",
+          "orientation": "landscape",
+          "alt": "Konsultantka ze słuchawkami rozmawia z klientem przy komputerze",
+          "image_url": "/content/pl-telc-b1-01-praca/pic-2-dzis.jpg"
+        }
+      ],
+      "question": "Co robią kobiety na starym zdjęciu? Czym zajmuje się konsultantka dziś? Która praca jest bardziej stresująca?",
+      "image_url": "/content/pl-telc-b1-01-praca/pic-2.jpg",
+      "alt": "Telefonistki przy dużej centrali telefonicznej łączą rozmowy kablami"
+    },
+    {
+      "id": "p3",
+      "label": "Fabryka",
+      "note": "1913 → dziś",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "Ford Highland Park assembly line 1913",
+          "orientation": "landscape",
+          "alt": "Robotnicy przy taśmie produkcyjnej w fabryce samochodów",
+          "credit": "Ford assembly line 1913 (public domain)",
+          "image_url": "/content/pl-telc-b1-01-praca/pic-3.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "robot arms factory",
+          "orientation": "landscape",
+          "alt": "Roboty przemysłowe składają samochód w nowoczesnej fabryce",
+          "image_url": "/content/pl-telc-b1-01-praca/pic-3-dzis.jpg"
+        }
+      ],
+      "question": "Kto pracuje przy taśmie kiedyś, a kto dziś? Jakie zawody zniknęły, a jakie się pojawiły?",
+      "image_url": "/content/pl-telc-b1-01-praca/pic-3.jpg",
+      "alt": "Robotnicy przy taśmie produkcyjnej w fabryce samochodów"
+    },
+    {
+      "id": "p4",
+      "label": "Dostawa do domu",
+      "note": "lata 20. XX wieku → dziś",
+      "images": [
+        {
+          "role": "wtedy",
+          "source": "archive",
+          "image_keywords": "milkman horse-drawn milk wagon delivery",
+          "orientation": "landscape",
+          "alt": "Mleczarz z wozem konnym dostarcza butelki z mlekiem",
+          "credit": "Historic milk cart (CC)",
+          "image_url": "/content/pl-telc-b1-01-praca/pic-4.jpg"
+        },
+        {
+          "role": "dziś",
+          "source": "stock",
+          "image_keywords": "courier delivering parcel",
+          "orientation": "landscape",
+          "alt": "Kurier przekazuje paczkę klientce przy drzwiach",
+          "image_url": "/content/pl-telc-b1-01-praca/pic-4-dzis.jpg"
+        }
+      ],
+      "question": "Co przywoził mleczarz, a co przywozi kurier? Czy praca kuriera jest męcząca? Uzasadnij.",
+      "image_url": "/content/pl-telc-b1-01-praca/pic-4.jpg",
+      "alt": "Mleczarz z wozem konnym dostarcza butelki z mlekiem"
+    }
+  ]
+}

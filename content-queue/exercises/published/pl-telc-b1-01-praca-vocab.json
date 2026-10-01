@@ -1,0 +1,45 @@
+{
+  "lesson_id": "pl-telc-b1-01-praca",
+  "exercise_type": "vocab-cards",
+  "title": "Słownictwo: zawody, szukanie pracy i życie w pracy",
+  "instruction": "30 słów w pięciu grupach. Odwróć kartę, przeczytaj definicję i przykład, potem oznacz: znam / nie znam. Grupy „Szukam pracy”, „Na co dzień w pracy” i „Jaka to praca?” przydadzą się w zadaniach komunikacyjnych.",
+  "estimated_minutes": 15,
+  "groups": ["Zawody", "Szukam pracy", "Na co dzień w pracy", "Jaka to praca?", "Zmiana zawodu"],
+  "comm_groups": ["Szukam pracy", "Na co dzień w pracy", "Jaka to praca?"],
+  "items": [
+    {"id": "v01", "term": "księgowy / księgowa", "group": "Zawody", "part_of_speech": "rzeczownik, m. / ż. (odmienia się jak przymiotnik)", "definition": "Osoba, która liczy pieniądze firmy i przygotowuje dokumenty do urzędu skarbowego.", "example": "Mój sąsiad jest księgowym w szpitalu miejskim.", "translation_uk": "бухгалтер / бухгалтерка"},
+    {"id": "v02", "term": "fryzjer / fryzjerka", "group": "Zawody", "part_of_speech": "rzeczownik, m. / ż.", "definition": "Osoba, która strzyże i czesze włosy.", "example": "Moja kuzynka jest fryzjerką i ma własny salon.", "translation_uk": "перукар / перукарка"},
+    {"id": "v03", "term": "sprzedawca / sprzedawczyni", "group": "Zawody", "part_of_speech": "rzeczownik, m. / ż.", "definition": "Osoba, która pracuje w sklepie i obsługuje klientów.", "example": "Sprzedawca pomógł mi wybrać ciepłą kurtkę.", "translation_uk": "продавець / продавчиня"},
+    {"id": "v04", "term": "kierowca", "group": "Zawody", "part_of_speech": "rzeczownik, m. (odmienia się jak rzeczownik żeński)", "definition": "Osoba, która prowadzi samochód, autobus albo ciężarówkę.", "example": "Mój wujek był kierowcą ciężarówki przez dwadzieścia lat.", "translation_uk": "водій"},
+    {"id": "v05", "term": "kucharz / kucharka", "group": "Zawody", "part_of_speech": "rzeczownik, m. / ż.", "definition": "Osoba, która gotuje w restauracji, w stołówce albo w hotelu.", "example": "Kucharz przygotował dla nas zupę grzybową.", "translation_uk": "кухар / кухарка"},
+    {"id": "v06", "term": "kelner / kelnerka", "group": "Zawody", "part_of_speech": "rzeczownik, m. / ż.", "definition": "Osoba, która przynosi gościom jedzenie i napoje w restauracji.", "example": "Kelnerka przyniosła nam menu i dzbanek wody.", "translation_uk": "офіціант / офіціантка"},
+    {"id": "v07", "term": "pielęgniarka / pielęgniarz", "group": "Zawody", "part_of_speech": "rzeczownik, ż. / m.", "definition": "Osoba, która opiekuje się chorymi i pomaga lekarzowi.", "example": "Pielęgniarka zmierzyła mi temperaturę i ciśnienie.", "translation_uk": "медсестра / медбрат"},
+
+    {"id": "v08", "term": "ogłoszenie", "group": "Szukam pracy", "part_of_speech": "rzeczownik, n.", "definition": "Krótki tekst w internecie albo w gazecie: ktoś czegoś szuka albo coś oferuje.", "example": "Znalazłem to ogłoszenie na stronie urzędu pracy.", "translation_uk": "оголошення"},
+    {"id": "v09", "term": "doświadczenie", "group": "Szukam pracy", "part_of_speech": "rzeczownik, n.", "definition": "To, co już umiesz, bo robiłeś to wcześniej.", "example": "Szukamy kogoś z doświadczeniem w handlu.", "translation_uk": "досвід"},
+    {"id": "v10", "term": "rozmowa kwalifikacyjna", "group": "Szukam pracy", "part_of_speech": "rzeczownik, ż.", "definition": "Spotkanie, na którym pracodawca poznaje kandydata do pracy.", "example": "Przed rozmową kwalifikacyjną bardzo się denerwowałam.", "translation_uk": "співбесіда"},
+    {"id": "v11", "term": "CV", "group": "Szukam pracy", "part_of_speech": "rzeczownik, n., nieodmienny", "definition": "Dokument z informacjami o Twojej nauce i pracy.", "example": "W tym tygodniu wysłałem CV do pięciu firm.", "translation_uk": "резюме"},
+    {"id": "v12", "term": "pełny etat", "group": "Szukam pracy", "part_of_speech": "wyrażenie, m.", "definition": "Praca przez cały dzień, zwykle czterdzieści godzin w tygodniu.", "example": "Teraz pracuję na pół etatu, ale szukam pełnego etatu.", "translation_uk": "повна ставка, повний робочий день"},
+    {"id": "v13", "term": "pensja", "group": "Szukam pracy", "part_of_speech": "rzeczownik, ż.", "definition": "Pieniądze, które co miesiąc dostajesz za pracę.", "example": "Pensję dostaję zawsze dziesiątego dnia miesiąca.", "translation_uk": "зарплата"},
+    {"id": "v14", "term": "zmiana", "group": "Szukam pracy", "part_of_speech": "rzeczownik, ż.", "definition": "Część dnia, w której pracujesz, na przykład rano albo w nocy.", "example": "W tym tygodniu mam nocną zmianę.", "translation_uk": "(робоча) зміна"},
+
+    {"id": "v15", "term": "szef / szefowa", "group": "Na co dzień w pracy", "part_of_speech": "rzeczownik, m. / ż.", "definition": "Osoba, która kieruje Twoją pracą.", "example": "Moja szefowa odpowiada na maile tylko po południu.", "translation_uk": "начальник / начальниця"},
+    {"id": "v16", "term": "współpracownik / współpracowniczka", "group": "Na co dzień w pracy", "part_of_speech": "rzeczownik, m. / ż.", "definition": "Osoba, która pracuje razem z Tobą w tej samej firmie.", "example": "Ze współpracownikami chodzę w piątki na pizzę.", "translation_uk": "колега по роботі"},
+    {"id": "v17", "term": "obowiązki", "group": "Na co dzień w pracy", "part_of_speech": "rzeczownik, l.mn.", "definition": "To, co musisz robić w pracy.", "example": "Do moich obowiązków należy odbieranie telefonów.", "translation_uk": "обов'язки"},
+    {"id": "v18", "term": "urlop", "group": "Na co dzień w pracy", "part_of_speech": "rzeczownik, m.", "definition": "Czas wolny od pracy, za który dostajesz pensję.", "example": "W sierpniu biorę dwa tygodnie urlopu.", "translation_uk": "відпустка"},
+    {"id": "v19", "term": "nadgodziny", "group": "Na co dzień w pracy", "part_of_speech": "rzeczownik, l.mn.", "definition": "Godziny pracy ponad normalny czas.", "example": "Przed świętami mam dużo nadgodzin.", "translation_uk": "понаднормові години"},
+    {"id": "v20", "term": "praca zdalna", "group": "Na co dzień w pracy", "part_of_speech": "rzeczownik, ż.", "definition": "Praca z domu przez internet.", "example": "Dwa dni w tygodniu mam pracę zdalną.", "translation_uk": "віддалена робота"},
+
+    {"id": "v21", "term": "odpowiedzialny", "group": "Jaka to praca?", "part_of_speech": "przymiotnik", "definition": "Taki, od którego zależy coś ważnego: tu nie możesz się pomylić.", "example": "Praca ratownika na basenie jest bardzo odpowiedzialna.", "translation_uk": "відповідальний"},
+    {"id": "v22", "term": "stresujący", "group": "Jaka to praca?", "part_of_speech": "przymiotnik", "definition": "Taki, który daje dużo nerwów.", "example": "Pierwszy dzień w nowej pracy był dla mnie stresujący.", "translation_uk": "стресовий, напружений"},
+    {"id": "v23", "term": "męczący", "group": "Jaka to praca?", "part_of_speech": "przymiotnik", "definition": "Taki, po którym jesteś zmęczony.", "example": "Praca na budowie w upale jest bardzo męcząca.", "translation_uk": "виснажливий, втомливий"},
+    {"id": "v24", "term": "dobrze płatny", "group": "Jaka to praca?", "part_of_speech": "przymiotnik złożony", "definition": "Taki, za który dostajesz dużo pieniędzy.", "example": "Mój kuzyn szuka dobrze płatnej pracy w swoim zawodzie.", "translation_uk": "добре оплачуваний"},
+    {"id": "v25", "term": "elastyczny", "group": "Jaka to praca?", "part_of_speech": "przymiotnik", "definition": "Taki, który łatwo zmienić, na przykład godziny pracy.", "example": "Mam elastyczne godziny, więc mogę odebrać dziecko ze szkoły.", "translation_uk": "гнучкий"},
+    {"id": "v26", "term": "satysfakcjonujący", "group": "Jaka to praca?", "part_of_speech": "przymiotnik", "definition": "Taki, który daje radość i poczucie sensu.", "example": "Pomaganie starszym ludziom to satysfakcjonujące zajęcie.", "translation_uk": "що приносить задоволення"},
+
+    {"id": "v27", "term": "przekwalifikować się", "group": "Zmiana zawodu", "part_of_speech": "czasownik, dk.", "definition": "Nauczyć się nowego zawodu, kiedy stary już Ci nie odpowiada.", "example": "Mój kolega przekwalifikował się z nauczyciela na programistę.", "translation_uk": "перекваліфікуватися"},
+    {"id": "v28", "term": "zrezygnować z", "group": "Zmiana zawodu", "part_of_speech": "czasownik, dk. + dopełniacz", "definition": "Przestać coś robić albo czegoś chcieć.", "example": "Zrezygnowałam z siłowni, bo nie miałam czasu.", "translation_uk": "відмовитися від"},
+    {"id": "v29", "term": "kurs zawodowy", "group": "Zmiana zawodu", "part_of_speech": "rzeczownik, m.", "definition": "Kurs, na którym uczysz się konkretnego zawodu.", "example": "Na kursie zawodowym dla spawaczy jest tylko dziesięć miejsc.", "translation_uk": "професійний курс"},
+    {"id": "v30", "term": "spełniać się", "group": "Zmiana zawodu", "part_of_speech": "czasownik, ndk.", "definition": "Robić to, co lubisz, i czuć, że to ma sens.", "example": "Mój brat spełnia się jako trener piłki nożnej.", "translation_uk": "реалізовуватися"}
+  ]
+}

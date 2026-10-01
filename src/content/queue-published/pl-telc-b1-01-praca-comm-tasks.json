@@ -1,0 +1,62 @@
+{
+  "lesson_id": "pl-telc-b1-01-praca",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: szukam pracy, mówię o pracy",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę z nauczycielem. Sprawdź na końcu, czy zrobiłeś / zrobiłaś wszystko z listy.",
+  "estimated_minutes": 20,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "listen-then-play",
+      "front_title": "Telefon w sprawie ogłoszenia",
+      "back_scenario": "Restauracja „Pod Lipą” szuka kelnera albo kelnerki. Najpierw posłuchaj, jak Oksana dzwoni w sprawie tego ogłoszenia. Potem zadzwoń sam / sama, ale w sprawie innej pracy: kasjer w kinie, recepcjonista w hotelu albo sprzedawca w księgarni. Nauczyciel jest pracodawcą.",
+      "back_checklist": [
+        "Przedstaw się i powiedz, w jakiej sprawie dzwonisz.",
+        "Opowiedz o swoim doświadczeniu: kim byłeś / byłaś i gdzie pracujesz teraz.",
+        "Zapytaj o godziny pracy, zmiany i pensję.",
+        "Ustal dzień i godzinę rozmowy kwalifikacyjnej i zapytaj, czy masz przynieść CV."
+      ],
+      "model_dialogue": [
+        {"speaker": "Kierownik", "voice": "pl-PL-male", "line": "Restauracja „Pod Lipą”, Tomasz Wrona, słucham."},
+        {"speaker": "Oksana", "voice": "pl-PL-female", "line": "Dzień dobry, nazywam się Oksana Melnyk. Dzwonię w sprawie ogłoszenia. Państwo szukają kelnerki, prawda?"},
+        {"speaker": "Kierownik", "voice": "pl-PL-male", "line": "Tak, zgadza się. Szukamy osoby z doświadczeniem. Czy pani pracowała już w gastronomii?"},
+        {"speaker": "Oksana", "voice": "pl-PL-female", "line": "Tak. W Ukrainie przez trzy lata byłam kelnerką w kawiarni. Teraz w Polsce pracuję jako kasjerka w supermarkecie."},
+        {"speaker": "Kierownik", "voice": "pl-PL-male", "line": "Dobrze. Interesuje panią pełny etat czy pół etatu?"},
+        {"speaker": "Oksana", "voice": "pl-PL-female", "line": "Pełny etat. A jakie są godziny pracy?"},
+        {"speaker": "Kierownik", "voice": "pl-PL-male", "line": "Pracujemy na dwie zmiany: od dziesiątej do szesnastej albo od szesnastej do dwudziestej trzeciej. W soboty restauracja jest czynna do północy."},
+        {"speaker": "Oksana", "voice": "pl-PL-female", "line": "Rozumiem. A ile wynosi pensja?"},
+        {"speaker": "Kierownik", "voice": "pl-PL-male", "line": "Na początek trzydzieści pięć złotych brutto za godzinę plus napiwki. Pierwszy tydzień będzie pani pracować z panem Igorem. On jest naszym najlepszym kelnerem."},
+        {"speaker": "Oksana", "voice": "pl-PL-female", "line": "Świetnie. Od kiedy potrzebują Państwo nowej osoby?"},
+        {"speaker": "Kierownik", "voice": "pl-PL-male", "line": "Od pierwszego listopada. Czy może pani przyjść na rozmowę kwalifikacyjną w czwartek o jedenastej? W piątek niestety mnie nie ma."},
+        {"speaker": "Oksana", "voice": "pl-PL-female", "line": "Tak, czwartek mi pasuje. Czy mam przynieść CV?"},
+        {"speaker": "Kierownik", "voice": "pl-PL-male", "line": "Tak, proszę. I proszę nie parkować przed restauracją, bo tam zawsze jest tłok. Parking jest za budynkiem."},
+        {"speaker": "Oksana", "voice": "pl-PL-female", "line": "Dobrze, dziękuję. Do widzenia!"}
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Spotkanie po latach",
+      "back_scenario": "Na ulicy spotykasz kolegę albo koleżankę ze szkoły. Nie widzieliście się pięć lat i oboje macie teraz inną pracę. Nauczyciel gra kolegę. Rozmowa trwa około trzech minut.",
+      "back_checklist": [
+        "Opowiedz, kim jesteś z zawodu i gdzie pracujesz.",
+        "Opisz swojego szefa albo szefową i współpracowników.",
+        "Powiedz, jakie masz obowiązki i czy często masz nadgodziny.",
+        "Zapytaj kolegę, czym się teraz zajmuje i kiedy ma urlop.",
+        "Umów się z nim na kawę."
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "front_title": "Dyskusja: praca zdalna czy w biurze?",
+      "back_scenario": "Tak wygląda część 3 egzaminu telc: rozmawiasz z drugą osobą i oboje mówicie, co myślicie. Tutaj partnerem jest nauczyciel. Przeczytaj trzy opinie. Opinia 1: „Praca zdalna jest mniej męcząca: nie tracę dwóch godzin w autobusie.” Opinia 2: „W domu nie mam współpracowników. Dla mnie to bardziej stresujące niż biuro.” Opinia 3: „Najlepsze są elastyczne godziny: dwa dni w domu, trzy w biurze. Praca jest tak samo odpowiedzialna w obu miejscach.”",
+      "back_checklist": [
+        "Powiedz, co myślisz, i podaj jeden argument.",
+        "Opowiedz o swoim doświadczeniu: czy pracowałeś / pracowałaś kiedyś z domu?",
+        "Zgódź się albo nie zgódź się z jedną z opinii: „Masz rację, ale…”, „Nie zgadzam się, bo…”.",
+        "Zapytaj partnera o jego zdanie i zareaguj na jego odpowiedź."
+      ]
+    }
+  ]
+}

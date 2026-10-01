@@ -1,0 +1,41 @@
+{
+  "lesson_id": "pl-telc-b1-01-praca",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie telc",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 12,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst jeszcze raz i zdecyduj, czy zdania są prawdziwe, czy fałszywe. Na egzaminie telc taki format ma część 4 czytania.",
+      "items": [
+        {"id": "e1-1", "statement": "Marta przez dziewięć lat pracowała jako księgowa.", "answer": true, "explanation": "Tak: przez dziewięć lat była księgową w dużej firmie."},
+        {"id": "e1-2", "statement": "Marta zaczęła piec chleb dopiero po kursie.", "answer": false, "explanation": "Piekła wcześniej, w weekendy — najpierw dla rodziny, potem dla sąsiadów. Kurs zrobiła później."},
+        {"id": "e1-3", "statement": "Andrij uczył się polskiego w szkole wieczorowej.", "answer": false, "explanation": "Uczył się wieczorami, ale online, z nauczycielką."},
+        {"id": "e1-4", "statement": "Dziś Andrij prowadzi tramwaj.", "answer": true, "explanation": "Tak: kieruje tramwajem we Wrocławiu."},
+        {"id": "e1-5", "statement": "Po studiach Ewa pracowała jako adwokatka.", "answer": false, "explanation": "Skończyła prawo, ale pracowała jako asystentka w kancelarii."},
+        {"id": "e1-6", "statement": "Salon Ewy jest pod piekarnią, w której pracuje Marta.", "answer": false, "explanation": "Salon jest nad piekarnią, nie pod nią."}
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "pl-telc-b1-01-praca-comm-tasks.json#c1.model_dialogue",
+      "audio_id": "pl-telc-b1-01-praca-c1-dialog",
+      "max_plays": 2,
+      "title": "Słuchanie: telefon do restauracji",
+      "instruction": "Najpierw przeczytaj pytania. Potem posłuchaj rozmowy — maksymalnie dwa razy. Na egzaminie telc usłyszysz nagranie tylko raz.",
+      "items": [
+        {"id": "e2-1", "question": "Gdzie Oksana pracuje teraz?", "options": ["w kawiarni jako kelnerka", "w supermarkecie jako kasjerka", "w restauracji jako pomoc kuchenna"], "answer": "w supermarkecie jako kasjerka", "explanation": "Kelnerką była w Ukrainie. Teraz pracuje jako kasjerka w supermarkecie."},
+        {"id": "e2-2", "question": "O której kończy się druga zmiana w tygodniu?", "options": ["o szesnastej", "o dwudziestej trzeciej", "o północy"], "answer": "o dwudziestej trzeciej", "explanation": "Do północy restauracja jest czynna tylko w soboty."},
+        {"id": "e2-3", "question": "Kiedy będzie rozmowa kwalifikacyjna?", "options": ["w czwartek o jedenastej", "w piątek o jedenastej", "w czwartek o dziesiątej"], "answer": "w czwartek o jedenastej", "explanation": "W piątek kierownika nie ma; o dziesiątej zaczyna się pierwsza zmiana."},
+        {"id": "e2-4", "question": "Gdzie Oksana może zaparkować?", "options": ["przed restauracją", "za budynkiem", "obok supermarketu"], "answer": "za budynkiem", "explanation": "Przed restauracją jest tłok, parking jest za budynkiem."}
+      ]
+    }
+  ]
+}

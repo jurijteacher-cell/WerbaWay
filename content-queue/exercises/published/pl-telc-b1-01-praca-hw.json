@@ -1,0 +1,51 @@
+{
+  "lesson_id": "pl-telc-b1-01-praca",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: słownictwo, formy i przekształcenia",
+  "instruction": "Trzy bloki. Pisz pełne formy z polskimi literami.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Słownictwo z lekcji",
+      "instruction": "Wpisz brakujące słowo z lekcji w odpowiedniej formie.",
+      "items": [
+        {"id": "h1-1", "text": "Szukam pracy na pełny ___, nie na pół.", "answer": "etat", "grammar_point": "slownictwo"},
+        {"id": "h1-2", "text": "Przed rozmową ___ muszę jeszcze poprawić swoje CV.", "answer": "kwalifikacyjną", "grammar_point": "slownictwo"},
+        {"id": "h1-3", "text": "W tej firmie płacą więcej za ___, jeśli pracujesz dłużej niż osiem godzin.", "answer": "nadgodziny", "grammar_point": "slownictwo"},
+        {"id": "h1-4", "text": "Praca na nocną ___ jest dla mnie bardzo męcząca.", "answer": "zmianę", "grammar_point": "slownictwo"},
+        {"id": "h1-5", "text": "Mój sąsiad ___ z pracy w banku i otworzył warsztat rowerowy.", "answer": "zrezygnował", "grammar_point": "slownictwo"},
+        {"id": "h1-6", "text": "To ___ praca: zarabiam dużo, ale wracam późno.", "answer": "dobrze płatna", "grammar_point": "slownictwo"}
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Pełna forma: przymiotnik i rzeczownik",
+      "instruction": "Wpisz wyrażenie z nawiasu w narzędniku.",
+      "items": [
+        {"id": "h2-1", "text": "Mój kuzyn jest ___ (dobry mechanik).", "answer": "dobrym mechanikiem", "grammar_point": "narzednik-przymiotnik"},
+        {"id": "h2-2", "text": "Rozmawiałam wczoraj z ___ (nowa dyrektorka).", "answer": "nową dyrektorką", "grammar_point": "narzednik-przymiotnik"},
+        {"id": "h2-3", "text": "Kot śpi pod ___ (stara szafa).", "answer": "starą szafą", "grammar_point": "przyimki-miejsca-narzednik"},
+        {"id": "h2-4", "text": "Pracuję z ___ (sympatyczni ludzie).", "answer": "sympatycznymi ludźmi", "grammar_point": "narzednik-lm"},
+        {"id": "h2-5", "text": "Mój wujek był ___ (listonosz) przez trzydzieści lat.", "answer": "listonoszem", "grammar_point": "narzednik-lp"},
+        {"id": "h2-6", "text": "Ona interesuje się ___ (współczesna sztuka).", "answer": "współczesną sztuką", "grammar_point": "czasowniki-narzednik"}
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Powiedz to inaczej",
+      "instruction": "Napisz zdanie jeszcze raz, używając słowa w nawiasie.",
+      "items": [
+        {"id": "h3-1", "prompt": "Moja ciocia pracuje jako krawcowa. (jest)", "answer": "Moja ciocia jest krawcową.", "grammar_point": "zostac-jako"},
+        {"id": "h3-2", "prompt": "Mój brat jest strażakiem. (pracuje jako)", "answer": "Mój brat pracuje jako strażak.", "grammar_point": "zostac-jako"},
+        {"id": "h3-3", "prompt": "Mój sąsiad zmienił zawód. Teraz jest stolarzem. (został)", "answer": "Mój sąsiad został stolarzem.", "accept": ["Mój sąsiad zmienił zawód i został stolarzem."], "grammar_point": "zostac-jako"},
+        {"id": "h3-4", "prompt": "Piję herbatę. Do herbaty dodaję cytrynę. (z)", "answer": "Piję herbatę z cytryną.", "grammar_point": "z-narzednik"},
+        {"id": "h3-5", "prompt": "Na dole jest sklep, a na górze mieszka mój kolega. (nad)", "answer": "Mój kolega mieszka nad sklepem.", "grammar_point": "przyimki-miejsca-narzednik"},
+        {"id": "h3-6", "prompt": "Codziennie karmię swojego kota i bawię się z nim. (opiekować się)", "answer": "Opiekuję się swoim kotem.", "accept": ["Opiekuję się moim kotem.", "Codziennie opiekuję się swoim kotem.", "Codziennie opiekuję się moim kotem."], "grammar_point": "czasowniki-narzednik"}
+      ]
+    }
+  ]
+}

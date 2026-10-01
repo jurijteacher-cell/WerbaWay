@@ -1,0 +1,110 @@
+{
+  "lesson_id": "pl-telc-b1-01-praca",
+  "exercise_type": "fill-in-blank",
+  "title": "Narzędnik: kim jesteś, z kim pracujesz, gdzie siedzisz",
+  "instruction": "Sześć bloków w dwóch częściach: najpierw formy, potem konstrukcje i pułapki.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "covers_cards": [2, 3, 4],
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rozgrzewka: rzeczownik w narzędniku",
+      "instruction": "Wpisz słowo z nawiasu w narzędniku.",
+      "items": [
+        {"id": "g1-1", "text": "Mój brat jest ___ (fryzjer).", "answer": "fryzjerem", "grammar_point": "narzednik-lp"},
+        {"id": "g1-2", "text": "Ta pani jest ___ (pielęgniarka).", "answer": "pielęgniarką", "grammar_point": "narzednik-lp"},
+        {"id": "g1-3", "text": "Jeżdżę do pracy ___ (rower).", "answer": "rowerem", "grammar_point": "narzednik-lp"},
+        {"id": "g1-4", "text": "Codziennie rano rozmawiam z ___ (szef).", "answer": "szefem", "grammar_point": "narzednik-lp"},
+        {"id": "g1-5", "text": "Mój tata był ___ (kierowca).", "answer": "kierowcą", "grammar_point": "narzednik-lp", "explanation": "Kierowca to mężczyzna, ale w liczbie pojedynczej odmienia się jak kobieta: kierowcą."},
+        {"id": "g1-6", "text": "Lubię pracować z ___ (dzieci).", "answer": "dziećmi", "grammar_point": "narzednik-lm", "explanation": "Dzieci, ludzie, przyjaciele — wyjątki na -mi: dziećmi, ludźmi, przyjaciółmi."},
+        {"id": "g1-7", "text": "Po pracy spotykam się z ___ (koleżanki).", "answer": "koleżankami", "grammar_point": "narzednik-lm"},
+        {"id": "g1-8", "text": "Pani Nowak opiekuje się ___ (pies) sąsiadki.", "answer": "psem", "grammar_point": "narzednik-lp"}
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "covers_cards": [5],
+      "exercise_type": "matching",
+      "title": "2. Przymiotnik idzie razem z rzeczownikiem",
+      "instruction": "Połącz mianownik z formą w narzędniku.",
+      "items": [
+        {"id": "g2-1", "left": "dobry kolega", "right": "z dobrym kolegą", "grammar_point": "narzednik-przymiotnik"},
+        {"id": "g2-2", "left": "nowa szefowa", "right": "z nową szefową", "grammar_point": "narzednik-przymiotnik"},
+        {"id": "g2-3", "left": "mały pies", "right": "z małym psem", "grammar_point": "narzednik-przymiotnik"},
+        {"id": "g2-4", "left": "polski kierowca", "right": "z polskim kierowcą", "grammar_point": "narzednik-przymiotnik"},
+        {"id": "g2-5", "left": "mili ludzie", "right": "z miłymi ludźmi", "grammar_point": "narzednik-przymiotnik"},
+        {"id": "g2-6", "left": "polskie koleżanki", "right": "z polskimi koleżankami", "grammar_point": "narzednik-przymiotnik"}
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "covers_cards": [5, 6],
+      "exercise_type": "fill-in-blank",
+      "title": "3. Jest kim? To jest kto? Jaki jest?",
+      "instruction": "Wybierz poprawną formę. Po odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {"id": "g3-1", "text": "Moja siostra jest ___.", "options": ["nauczycielka", "nauczycielką"], "answer": "nauczycielką", "grammar_point": "jest-kim-to-jest", "explanation": "Ktoś jest kimś: po „jest” zawód stoi w narzędniku."},
+        {"id": "g3-2", "text": "To jest mój ___.", "options": ["szef", "szefem"], "answer": "szef", "grammar_point": "jest-kim-to-jest", "explanation": "„To jest” przedstawia osobę, więc mianownik: to jest mój szef."},
+        {"id": "g3-3", "text": "Pan Kowalski jest bardzo ___ po nocnej zmianie.", "options": ["zmęczony", "zmęczonym"], "answer": "zmęczony", "grammar_point": "jest-kim-to-jest", "explanation": "Sam przymiotnik po „jest” zostaje w mianowniku."},
+        {"id": "g3-4", "text": "Ona jest ___ lekarką.", "options": ["dobra", "dobrą"], "answer": "dobrą", "grammar_point": "narzednik-przymiotnik", "explanation": "Przymiotnik z rzeczownikiem idzie razem do narzędnika: dobrą lekarką."},
+        {"id": "g3-5", "text": "To jest ___ z pracy.", "options": ["nowa koleżanka", "nową koleżanką"], "answer": "nowa koleżanka", "grammar_point": "jest-kim-to-jest", "explanation": "Po „to jest” — mianownik, także dla przymiotnika."},
+        {"id": "g3-6", "text": "Mój dziadek był ___.", "options": ["górnik", "górnikiem"], "answer": "górnikiem", "grammar_point": "jest-kim-to-jest", "explanation": "Czas przeszły nic nie zmienia: był kim? — górnikiem."},
+        {"id": "g3-7", "text": "Ten film jest ___.", "options": ["nudny", "nudnym"], "answer": "nudny", "grammar_point": "jest-kim-to-jest", "explanation": "Tylko przymiotnik, bez rzeczownika — mianownik."},
+        {"id": "g3-8", "text": "Kto to jest? — To ___.", "options": ["mój sąsiad", "moim sąsiadem"], "answer": "mój sąsiad", "grammar_point": "jest-kim-to-jest", "explanation": "Pytanie „kto to jest?” prowadzi do mianownika."}
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "covers_cards": [7, 8],
+      "exercise_type": "sentence-building",
+      "title": "4. Zostać, jako i czasowniki z narzędnikiem",
+      "instruction": "Zbuduj zdanie z podanych słów. Zmień formy, gdzie trzeba.",
+      "items": [
+        {"id": "g4-1", "prompt": "ja / chcieć / zostać / programista", "answer": "Chcę zostać programistą.", "accept": ["Ja chcę zostać programistą."], "grammar_point": "zostac-jako"},
+        {"id": "g4-2", "prompt": "ona / pracować / jako / kelnerka / w hotelu", "answer": "Ona pracuje jako kelnerka w hotelu.", "accept": ["Pracuje jako kelnerka w hotelu.", "W hotelu pracuje jako kelnerka.", "Ona w hotelu pracuje jako kelnerka."], "grammar_point": "zostac-jako"},
+        {"id": "g4-3", "prompt": "mój syn / interesować się / historia", "answer": "Mój syn interesuje się historią.", "grammar_point": "czasowniki-narzednik"},
+        {"id": "g4-4", "prompt": "babcia / opiekować się / wnuczka", "answer": "Babcia opiekuje się wnuczką.", "grammar_point": "czasowniki-narzednik"},
+        {"id": "g4-5", "prompt": "moja szefowa / kierować / duży zespół", "answer": "Moja szefowa kieruje dużym zespołem.", "grammar_point": "czasowniki-narzednik"},
+        {"id": "g4-6", "prompt": "wy / jeździć do pracy / metro", "answer": "Jeździcie do pracy metrem.", "accept": ["Wy jeździcie do pracy metrem.", "Do pracy jeździcie metrem."], "grammar_point": "czasowniki-narzednik"}
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "covers_cards": [8, 9, 10],
+      "exercise_type": "drag-and-drop",
+      "title": "5. Jeden dzień baristy",
+      "instruction": "Przeciągnij właściwe słowa do luk. Trzy słowa w banku są niepotrzebne.",
+      "bank": ["tramwajem", "ladą", "z", "księgarnią", "laptopami", "bratem", "tramwaj", "ladzie", "laptopy"],
+      "items": [
+        {"id": "g5-1", "text": "Od roku pracuję jako barista. Rano jadę do pracy ___.", "answer": "tramwajem", "grammar_point": "czasowniki-narzednik"},
+        {"id": "g5-2", "text": "O siódmej staję za ___ i robię pierwszą kawę.", "answer": "ladą", "grammar_point": "przyimki-miejsca-narzednik"},
+        {"id": "g5-3", "text": "Pracuję ___ Anią — to moja najlepsza koleżanka z pracy.", "answer": "z", "grammar_point": "z-narzednik"},
+        {"id": "g5-4", "text": "Nasza kawiarnia jest nad ___, więc klienci często przychodzą z książkami.", "answer": "księgarnią", "grammar_point": "przyimki-miejsca-narzednik"},
+        {"id": "g5-5", "text": "Studenci siedzą u nas godzinami przed ___.", "answer": "laptopami", "grammar_point": "przyimki-miejsca-narzednik"},
+        {"id": "g5-6", "text": "Wieczorem wracam do domu z ___, który pracuje w tym samym budynku.", "answer": "bratem", "grammar_point": "z-narzednik"}
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "covers_cards": [11, 12],
+      "exercise_type": "fill-in-blank",
+      "title": "6. Pułapki z ukraińskiego",
+      "instruction": "Wybierz poprawną odpowiedź. Uważaj na kalki z ukraińskiego.",
+      "items": [
+        {"id": "g6-1", "text": "Moja mama jest ___.", "options": ["dentystka", "dentystką"], "answer": "dentystką", "grammar_point": "kalki-uk", "explanation": "Po ukraińsku „мама — стоматолог” działa bez czasownika. Po polsku jest czasownik i narzędnik: jest dentystką."},
+        {"id": "g6-2", "text": "Za pięć lat chcę ___ menedżerem.", "options": ["stać", "zostać"], "answer": "zostać", "grammar_point": "kalki-uk", "explanation": "„Stać” to po polsku стояти. Стати кимось = zostać kimś."},
+        {"id": "g6-3", "text": "Od roku pracuję jako ___.", "options": ["elektryk", "elektrykiem"], "answer": "elektryk", "grammar_point": "kalki-uk", "explanation": "W zdaniu „pracuję jako…” zawód stoi w mianowniku. Ukraińskie „працюю електриком” po polsku brzmi: pracuję jako elektryk albo jestem elektrykiem."},
+        {"id": "g6-4", "text": "Czy jesteś zadowolony ___?", "options": ["nową pracą", "z nowej pracy"], "answer": "z nowej pracy", "grammar_point": "kalki-uk", "explanation": "Zadowolony z czego? — z + dopełniacz, nie narzędnik jak w ukraińskim."},
+        {"id": "g6-5", "text": "W pracy często korzystam ___.", "options": ["internetem", "z internetu"], "answer": "z internetu", "grammar_point": "kalki-uk", "explanation": "Korzystać z czegoś — z + dopełniacz."},
+        {"id": "g6-6", "text": "Trzy razy w tygodniu ___ sport: biegam i pływam.", "options": ["uprawiam", "zajmuję się"], "answer": "uprawiam", "grammar_point": "kalki-uk", "explanation": "Sport się uprawia. „Zajmować się sportem” znaczy raczej pracować w sporcie, na przykład jako dziennikarz."}
+      ]
+    }
+  ]
+}
