@@ -1,0 +1,104 @@
+{
+  "lesson_id": "pl-preg-05-pierwsze-wyjscia",
+  "exercise_type": "picture-set",
+  "layout": "collage",
+  "layout_hints": {
+    "style": "polaroid-board",
+    "photo_frame": "polaroid",
+    "label_style": "tape",
+    "rotation_range": "-6..6"
+  },
+  "title": "Opis zdjęć: z dzieckiem w mieście",
+  "instruction": "Opisz każde zdjęcie osobno: kto na nim jest, gdzie to się dzieje, co ta osoba robi i jaki jest nastrój. Potem powiedz, co Twoim zdaniem wydarzyło się chwilę wcześniej albo chwilę później.",
+  "estimated_minutes": 14,
+  "phrase_bank": [
+    "Na pierwszym planie widać…",
+    "W tle…",
+    "Ta osoba znajduje się w…",
+    "Wygląda na to, że…",
+    "Wydaje mi się, że chwilę wcześniej…",
+    "Moim zdaniem najtrudniejsze w tej sytuacji jest…"
+  ],
+  "items": [
+    {
+      "id": "p1",
+      "label": "W parku",
+      "images": [
+        {
+          "source": "stock",
+          "image_keywords": "woman stroller park bench",
+          "orientation": "landscape",
+          "alt": "Kobieta siedzi na ławce w parku obok wózka",
+          "image_url": "/content/pl-preg-05-pierwsze-wyjscia/pic-1.jpg"
+        }
+      ],
+      "question": "Gdzie jest ta kobieta i co właśnie robi? Jak myślisz, jak długo już tam siedzi i dlaczego wybrała to miejsce?",
+      "image_url": "/content/pl-preg-05-pierwsze-wyjscia/pic-1.jpg",
+      "alt": "Kobieta siedzi na ławce w parku obok wózka"
+    },
+    {
+      "id": "p2",
+      "label": "W autobusie",
+      "images": [
+        {
+          "source": "stock",
+          "image_keywords": "mother stroller bus interior",
+          "orientation": "landscape",
+          "alt": "Kobieta z wózkiem w środku autobusu",
+          "image_url": "/content/pl-preg-05-pierwsze-wyjscia/pic-2.jpg"
+        }
+      ],
+      "question": "Opisz, co widzisz w środku autobusu. Czy tej osobie jest wygodnie? Co może być tu najtrudniejsze?",
+      "image_url": "/content/pl-preg-05-pierwsze-wyjscia/pic-2.jpg",
+      "alt": "Kobieta z wózkiem w środku autobusu"
+    },
+    {
+      "id": "p3",
+      "label": "Winda",
+      "images": [
+        {
+          "source": "stock",
+          "image_keywords": "woman stroller elevator building",
+          "orientation": "landscape",
+          "alt": "Kobieta z wózkiem wjeżdża do windy",
+          "image_url": "/content/pl-preg-05-pierwsze-wyjscia/pic-3.jpg"
+        }
+      ],
+      "question": "Co dzieje się na tym zdjęciu? Jak myślisz, na które piętro jedzie ta osoba i po co?",
+      "image_url": "/content/pl-preg-05-pierwsze-wyjscia/pic-3.jpg",
+      "alt": "Kobieta z wózkiem wjeżdża do windy"
+    },
+    {
+      "id": "p4",
+      "label": "W kawiarni",
+      "images": [
+        {
+          "source": "stock",
+          "image_keywords": "mother baby cafe table",
+          "orientation": "landscape",
+          "alt": "Kobieta z dzieckiem przy stoliku w kawiarni",
+          "image_url": "/content/pl-preg-05-pierwsze-wyjscia/pic-4.jpg"
+        }
+      ],
+      "question": "Gdzie siedzi ta kobieta i co zamówiła? Czy wygląda na odprężoną? A Ty wolałabyś taki stolik czy inny?",
+      "image_url": "/content/pl-preg-05-pierwsze-wyjscia/pic-4.jpg",
+      "alt": "Kobieta z dzieckiem przy stoliku w kawiarni"
+    },
+    {
+      "id": "p5",
+      "label": "Zimowy spacer",
+      "images": [
+        {
+          "source": "stock",
+          "image_keywords": "baby winter hat stroller",
+          "orientation": "landscape",
+          "alt": "Dziecko w czapce i kombinezonie w wózku zimą",
+          "image_url": "/content/pl-preg-05-pierwsze-wyjscia/pic-5.jpg"
+        }
+      ],
+      "question": "Jaka jest pogoda na tym zdjęciu i jak ubrane jest dziecko? Czy Twoim zdaniem jest ubrane dobrze, za ciepło czy za lekko?",
+      "image_url": "/content/pl-preg-05-pierwsze-wyjscia/pic-5.jpg",
+      "alt": "Dziecko w czapce i kombinezonie w wózku zimą"
+    }
+  ]
+}

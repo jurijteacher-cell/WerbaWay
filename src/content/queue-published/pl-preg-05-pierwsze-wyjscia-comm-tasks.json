@@ -1,0 +1,64 @@
+{
+  "lesson_id": "pl-preg-05-pierwsze-wyjscia",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: w mieście z dzieckiem",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Wyjdź z niej ze wszystkimi informacjami z listy.",
+  "estimated_minutes": 18,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "listen-then-play",
+      "front_title": "W kawiarni z wózkiem",
+      "back_scenario": "Jesteś w galerii z dzieckiem i chcesz usiąść na pół godziny w kawiarni. Najpierw posłuchaj przykładowej rozmowy, potem odegraj swoją — z innym zamówieniem i innym stolikiem.",
+      "back_checklist": [
+        "Poproś o stolik, przy którym zmieści się wózek.",
+        "Zapytaj, gdzie w budynku jest przewijak.",
+        "Zamów coś do picia i do jedzenia.",
+        "Ustal, czy można zapłacić kartą.",
+        "Dowiedz się, czy da się wziąć zamówienie na wynos."
+      ],
+      "model_dialogue": [
+        { "speaker": "Kelner", "voice": "pl-PL-male", "line": "Dzień dobry, witam w „Pod Lipą”. Stolik dla jednej osoby?" },
+        { "speaker": "Klientka", "voice": "pl-PL-female", "line": "Dzień dobry. Dla jednej, ale jestem z wózkiem. Macie jakiś wolny stolik przy oknie?" },
+        { "speaker": "Kelner", "voice": "pl-PL-male", "line": "Przy oknie wszystkie są zajęte. Mam wolny stolik w głębi sali, obok regału z książkami. Tam jest więcej miejsca." },
+        { "speaker": "Klientka", "voice": "pl-PL-female", "line": "Dobrze, wezmę ten. Mogę zostawić wózek przy stoliku?" },
+        { "speaker": "Kelner", "voice": "pl-PL-male", "line": "Oczywiście. Proszę tylko nie stawiać go w przejściu, bo tam chodzą kelnerzy." },
+        { "speaker": "Klientka", "voice": "pl-PL-female", "line": "Jasne. A macie u siebie przewijak?" },
+        { "speaker": "Kelner", "voice": "pl-PL-male", "line": "W kawiarni nie, ale w galerii na drugim piętrze jest pokój dla matki z dzieckiem. Winda jest zaraz za wejściem." },
+        { "speaker": "Klientka", "voice": "pl-PL-female", "line": "Świetnie, dziękuję. To poproszę herbatę z imbirem i sernik." },
+        { "speaker": "Kelner", "voice": "pl-PL-male", "line": "Herbata duża czy mała?" },
+        { "speaker": "Klientka", "voice": "pl-PL-female", "line": "Duża. I jeszcze jedno — można u was zapłacić kartą?" },
+        { "speaker": "Kelner", "voice": "pl-PL-male", "line": "Tak, kartą i telefonem. Rachunek przyniosę do stolika." },
+        { "speaker": "Klientka", "voice": "pl-PL-female", "line": "A gdybym musiała wyjść szybciej, da się wziąć sernik na wynos?" },
+        { "speaker": "Kelner", "voice": "pl-PL-male", "line": "Da się, zapakujemy go w pudełko. Zamówienie będzie gotowe za jakieś pięć minut." },
+        { "speaker": "Klientka", "voice": "pl-PL-female", "line": "Dziękuję bardzo. To ja już siadam." }
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Na przystanku i w autobusie",
+      "back_scenario": "Stoisz z wózkiem na przystanku i nie wiesz, czy wjedziesz do nadjeżdżającego autobusu. Rozmawiasz z inną osobą na przystanku, a potem z kierowcą.",
+      "back_checklist": [
+        "Zapytaj, czy ten autobus jest niskopodłogowy.",
+        "Dowiedz się, którymi drzwiami wsiada się z wózkiem.",
+        "Zapytaj, na którym przystanku najlepiej wysiąść, żeby był podjazd albo winda.",
+        "Poproś kogoś, żeby przytrzymał drzwi.",
+        "Ustal, czy po drodze jest wysoki próg albo wąski chodnik."
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "front_title": "Prośba o pomoc przy wejściu",
+      "back_scenario": "Wracasz do domu i nie możesz sama wnieść wózka przez próg. Przy drzwiach stoi obca osoba. Poproś ją o pomoc, a potem podziękuj.",
+      "back_checklist": [
+        "Poproś o pomoc jednym krótkim, uprzejmym zdaniem.",
+        "Powiedz dokładnie, co ta osoba ma zrobić — przytrzymać drzwi czy pomóc wnieść wózek.",
+        "Ostrzeż ją, na co ma uważać.",
+        "Zapytaj, czy nie przeszkadzasz jej, bo może gdzieś nie zdążyć.",
+        "Podziękuj i powiedz jedno zdanie o tym, co było najtrudniejsze."
+      ]
+    }
+  ]
+}

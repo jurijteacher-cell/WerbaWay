@@ -1,0 +1,294 @@
+{
+  "lesson_id": "pl-preg-05-pierwsze-wyjscia",
+  "exercise_type": "fill-in-blank",
+  "title": "Miejscownik: od rozpoznawania do opowiadania",
+  "instruction": "Sześć bloków w dwóch częściach. Rób je po kolei — każdy dokłada jedną rzecz.",
+  "estimated_minutes": 23,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "covers_cards": [2, 3],
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rozgrzewka: gdzie to jest?",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Czekam na Ciebie ___ obok apteki.",
+          "options": ["w kawiarni", "w kawiarnie"],
+          "answer": "w kawiarni",
+          "grammar_point": "miejscownik-rzeczownik"
+        },
+        {
+          "id": "g1-2",
+          "text": "Dziecko zasnęło ___ pod drzewem.",
+          "options": ["na ławce", "na ławki"],
+          "answer": "na ławce",
+          "grammar_point": "miejscownik-rzeczownik"
+        },
+        {
+          "id": "g1-3",
+          "text": "Spotkajmy się ___, przy przejściu dla pieszych.",
+          "options": ["na ulicy", "na ulice"],
+          "answer": "na ulicy",
+          "grammar_point": "miejscownik-rzeczownik"
+        },
+        {
+          "id": "g1-4",
+          "text": "Zostawiłam torbę ___ i musiałam wracać.",
+          "options": ["w windzie", "w windie"],
+          "answer": "w windzie",
+          "grammar_point": "miejscownik-rzeczownik"
+        },
+        {
+          "id": "g1-5",
+          "text": "Kupiłam te chusteczki ___ przy rynku.",
+          "options": ["w aptece", "w apteke"],
+          "answer": "w aptece",
+          "grammar_point": "miejscownik-rzeczownik"
+        },
+        {
+          "id": "g1-6",
+          "text": "Stoję ___ i czekam na rachunek.",
+          "options": ["przy kasie", "przy kasa"],
+          "answer": "przy kasie",
+          "grammar_point": "przyimki-miejscownik"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "covers_cards": [4, 5],
+      "exercise_type": "matching",
+      "title": "2. Od mianownika do miejscownika",
+      "instruction": "Połącz słowo z jego formą po przyimku.",
+      "items": [
+        { "id": "g2-1", "left": "park", "right": "w parku", "grammar_point": "miejscownik-rzeczownik" },
+        { "id": "g2-2", "left": "autobus", "right": "w autobusie", "grammar_point": "miejscownik-rzeczownik" },
+        { "id": "g2-3", "left": "okno", "right": "w oknie", "grammar_point": "miejscownik-rzeczownik" },
+        { "id": "g2-4", "left": "dom", "right": "w domu", "grammar_point": "miejscownik-rzeczownik" },
+        { "id": "g2-5", "left": "droga", "right": "na drodze", "grammar_point": "miejscownik-rzeczownik" },
+        { "id": "g2-6", "left": "gazeta", "right": "w gazecie", "grammar_point": "miejscownik-rzeczownik" },
+        { "id": "g2-7", "left": "miasto", "right": "w mieście", "grammar_point": "miejscownik-rzeczownik" },
+        { "id": "g2-8", "left": "pociąg", "right": "w pociągu", "grammar_point": "miejscownik-rzeczownik" }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "covers_cards": [3, 6],
+      "exercise_type": "fill-in-blank",
+      "title": "3. Przymiotnik i rzeczownik razem",
+      "instruction": "Wybierz wersję, w której oba słowa mają tę samą formę.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Mieszkamy ___ bez windy.",
+          "options": ["w starym budynku", "w starej budynku"],
+          "answer": "w starym budynku",
+          "grammar_point": "miejscownik-przymiotnik"
+        },
+        {
+          "id": "g3-2",
+          "text": "Czekam ___, tam jest podjazd.",
+          "options": ["przy drugim wejściu", "przy drugiej wejściu"],
+          "answer": "przy drugim wejściu",
+          "grammar_point": "miejscownik-przymiotnik"
+        },
+        {
+          "id": "g3-3",
+          "text": "Byłyśmy wczoraj ___ obok poczty.",
+          "options": ["w nowej kawiarni", "w nowym kawiarni"],
+          "answer": "w nowej kawiarni",
+          "grammar_point": "miejscownik-przymiotnik"
+        },
+        {
+          "id": "g3-4",
+          "text": "Mała zasnęła ___ po dwóch minutach.",
+          "options": ["w ciepłym kombinezonie", "w ciepłej kombinezonie"],
+          "answer": "w ciepłym kombinezonie",
+          "grammar_point": "miejscownik-przymiotnik"
+        },
+        {
+          "id": "g3-5",
+          "text": "Wysiądź ___ przed szkołą.",
+          "options": ["na następnym przystanku", "na następnej przystanku"],
+          "answer": "na następnym przystanku",
+          "grammar_point": "miejscownik-przymiotnik"
+        },
+        {
+          "id": "g3-6",
+          "text": "Folia przeciwdeszczowa leży ___ pod wózkiem.",
+          "options": ["w małym koszyku", "w małej koszyku"],
+          "answer": "w małym koszyku",
+          "grammar_point": "miejscownik-przymiotnik"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "covers_cards": [8, 9],
+      "exercise_type": "fill-in-blank",
+      "title": "4. w czy na, o kogo czy o kim",
+      "instruction": "Wybierz przyimek. Po poprawnej odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Kupiłam znaczki ___ poczcie.",
+          "options": ["na", "w"],
+          "answer": "na",
+          "explanation": "Poczta jest instytucją, a te po polsku często idą z na: na poczcie, na dworcu, na uczelni.",
+          "grammar_point": "w-vs-na"
+        },
+        {
+          "id": "g4-2",
+          "text": "Jestem ___ sklepie, wychodzę za chwilę.",
+          "options": ["w", "na"],
+          "answer": "w",
+          "explanation": "Jesteśmy w środku budynku, dlatego w sklepie, w kawiarni, w windzie.",
+          "grammar_point": "w-vs-na"
+        },
+        {
+          "id": "g4-3",
+          "text": "Siedzieliśmy ___ ławce obok stawu.",
+          "options": ["na", "w"],
+          "answer": "na",
+          "explanation": "Na powierzchni czegoś: na ławce, na krzesełku, na podłodze.",
+          "grammar_point": "w-vs-na"
+        },
+        {
+          "id": "g4-4",
+          "text": "Starsza pani pytała ___ córkę.",
+          "options": ["o", "na"],
+          "answer": "o",
+          "explanation": "Pytać o kogoś to biernik — o córkę. Forma zmienia się przy innym czasowniku: rozmawiać o córce.",
+          "grammar_point": "o-kim-o-czym"
+        },
+        {
+          "id": "g4-5",
+          "text": "Przez godzinę rozmawiałyśmy ___ dzieciach.",
+          "options": ["o", "na"],
+          "answer": "o",
+          "explanation": "Rozmawiać, myśleć i czytać — o kimś, czyli miejscownik. W liczbie mnogiej: o dzieciach.",
+          "grammar_point": "o-kim-o-czym"
+        },
+        {
+          "id": "g4-6",
+          "text": "Byłam ___ dworcu i nie zdążyłam na pociąg.",
+          "options": ["na", "w"],
+          "answer": "na",
+          "explanation": "Dworzec, podobnie jak poczta, łączy się z na, chociaż wchodzimy do środka.",
+          "grammar_point": "w-vs-na"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "covers_cards": [7, 10],
+      "exercise_type": "sentence-building",
+      "title": "5. Liczba mnoga, po i przy",
+      "instruction": "Zbuduj zdanie z podanych elementów.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "my · rozmawiać · o · dzieci · cały wieczór",
+          "answer": "Rozmawiałyśmy o dzieciach cały wieczór.",
+          "accept": ["Rozmawialiśmy o dzieciach cały wieczór.", "Cały wieczór rozmawiałyśmy o dzieciach."],
+          "grammar_point": "miejscownik-mnoga"
+        },
+        {
+          "id": "g5-2",
+          "prompt": "ja · odpoczywać · po · spacer",
+          "answer": "Odpoczywam po spacerze.",
+          "accept": ["Po spacerze odpoczywam."],
+          "grammar_point": "przyimki-miejscownik"
+        },
+        {
+          "id": "g5-3",
+          "prompt": "wózek · stać · przy · wejście",
+          "answer": "Wózek stoi przy wejściu.",
+          "accept": ["Przy wejściu stoi wózek."],
+          "grammar_point": "przyimki-miejscownik"
+        },
+        {
+          "id": "g5-4",
+          "prompt": "dzieci · spać · w · wózki",
+          "answer": "Dzieci śpią w wózkach.",
+          "accept": ["W wózkach śpią dzieci."],
+          "grammar_point": "miejscownik-mnoga"
+        },
+        {
+          "id": "g5-5",
+          "prompt": "ja · myśleć · o · te zdjęcia · od wczoraj",
+          "answer": "Myślę o tych zdjęciach od wczoraj.",
+          "accept": ["Od wczoraj myślę o tych zdjęciach."],
+          "grammar_point": "miejscownik-mnoga"
+        },
+        {
+          "id": "g5-6",
+          "prompt": "mała · zasnąć · po · karmienie",
+          "answer": "Mała zasnęła po karmieniu.",
+          "accept": ["Po karmieniu mała zasnęła."],
+          "grammar_point": "przyimki-miejscownik"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "covers_cards": [11, 12],
+      "exercise_type": "drag-and-drop",
+      "title": "6. Jeden dzień w mieście",
+      "instruction": "Przeciągnij wyrażenie w lukę. Trzy wyrażenia w banku są błędne — nie pasują nigdzie.",
+      "bank": ["na poczcie", "w kawiarni", "w nosidle", "po spacerze", "w tramwaju", "o dzieciach", "w poczcie", "o dzieci", "po spacer"],
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Rano byliśmy ___, bo trzeba było odebrać paczkę.",
+          "answer": "na poczcie",
+          "explanation": "Poczta idzie z na, więc forma w poczcie jest błędna.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-2",
+          "text": "Potem usiedliśmy ___ obok targu.",
+          "answer": "w kawiarni",
+          "explanation": "Kawiarnia kończy się na -nia, więc w miejscowniku ma jedno i.",
+          "grammar_point": "miejscownik-rzeczownik"
+        },
+        {
+          "id": "g6-3",
+          "text": "Dziecko zasnęło ___ po dziesięciu minutach.",
+          "answer": "w nosidle",
+          "explanation": "Nosidło to rodzaj nijaki: ł przed -e zmienia się w l.",
+          "grammar_point": "miejscownik-rzeczownik"
+        },
+        {
+          "id": "g6-4",
+          "text": "Wróciliśmy tramwajem dopiero ___.",
+          "answer": "po spacerze",
+          "explanation": "Po w znaczeniu „potem” żąda miejscownika, dlatego po spacer jest błędem.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-5",
+          "text": "Ktoś ustąpił nam miejsca ___.",
+          "answer": "w tramwaju",
+          "explanation": "Tramwaj ma miękkie zakończenie, więc bierze -u, nie -e.",
+          "grammar_point": "miejscownik-rzeczownik"
+        },
+        {
+          "id": "g6-6",
+          "text": "Wieczorem długo rozmawialiśmy z sąsiadami ___.",
+          "answer": "o dzieciach",
+          "explanation": "Rozmawiać o kimś to miejscownik, a w liczbie mnogiej końcówka jest zawsze -ach.",
+          "grammar_point": "kalki-uk"
+        }
+      ]
+    }
+  ]
+}

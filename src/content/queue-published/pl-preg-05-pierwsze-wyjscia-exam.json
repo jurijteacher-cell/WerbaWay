@@ -1,0 +1,55 @@
+{
+  "lesson_id": "pl-preg-05-pierwsze-wyjscia",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Przeczytaj tekst jeszcze raz i zdecyduj, czy zdanie jest prawdziwe czy fałszywe. Odpowiadaj tylko na podstawie tekstu.",
+  "estimated_minutes": 8,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Sześć zdań o tekście „Pierwszy dzień poza domem”.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Córka Agaty ma trzy miesiące.",
+          "answer": false,
+          "explanation": "W tekście jest napisane, że córka ma sześć tygodni."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Agata ubrała córkę o jedną warstwę cieplej, niż ubrała siebie.",
+          "answer": true,
+          "explanation": "Tak radziła jej położna i tak właśnie zrobiła."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Przy wejściu nie było podjazdu, więc Agata musiała znieść wózek po schodach.",
+          "answer": false,
+          "explanation": "Próg był wysoki, ale po lewej stronie zrobili podjazd i wózek przejechał bez problemu."
+        },
+        {
+          "id": "e1-4",
+          "statement": "W parku starsza pani pytała Agatę o wagę dziecka i o to, jak ono sypia.",
+          "answer": true,
+          "explanation": "Pani zapytała, ile mała waży i jak sypia."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Do autobusu Agata wsiadła pierwszymi drzwiami.",
+          "answer": false,
+          "explanation": "Wsiadła drugimi drzwiami, bo właśnie tam jest miejsce na wózek."
+        },
+        {
+          "id": "e1-6",
+          "statement": "W windzie zmieściły się dwa wózki naraz.",
+          "answer": false,
+          "explanation": "W windzie mieścił się tylko jeden wózek, dlatego Agata musiała czekać."
+        }
+      ]
+    }
+  ]
+}

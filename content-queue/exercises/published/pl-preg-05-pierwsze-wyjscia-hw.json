@@ -1,0 +1,156 @@
+{
+  "lesson_id": "pl-preg-05-pierwsze-wyjscia",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: miejscownik poza domem",
+  "instruction": "Trzy bloki. Zdania są nowe — ta sama gramatyka w zupełnie innych sytuacjach.",
+  "estimated_minutes": 18,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "drag-and-drop",
+      "title": "1. Słownictwo w nowych sytuacjach",
+      "instruction": "Przeciągnij słowo w lukę. Dwa słowa w banku nie pasują nigdzie.",
+      "bank": ["winda", "podjazd", "chodniku", "zdążyłem", "rachunek", "na wynos", "przewijak", "gondola"],
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "W tym biurowcu ___ jest tak wolna, że szybciej wchodzę po schodach.",
+          "answer": "winda",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-2",
+          "text": "Obok schodów zrobili ___ dla rowerów i walizek.",
+          "answer": "podjazd",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-3",
+          "text": "Po deszczu na całym ___ stały wielkie kałuże.",
+          "answer": "chodniku",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-4",
+          "text": "Nie ___ na ostatni pociąg i musiałem wracać taksówką.",
+          "answer": "zdążyłem",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-5",
+          "text": "Kelner przyniósł ___ dopiero po dwudziestu minutach.",
+          "answer": "rachunek",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-6",
+          "text": "Poproszę zupę ___, zjem ją w pracy.",
+          "answer": "na wynos",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Pełna forma",
+      "instruction": "Wpisz słowo z nawiasu w poprawnej formie razem z przyimkiem, jeśli go brakuje.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Byłam wczoraj ___ (biblioteka) i wypożyczyłam trzy książki.",
+          "answer": "w bibliotece",
+          "grammar_point": "miejscownik-rzeczownik"
+        },
+        {
+          "id": "h2-2",
+          "text": "Ćwiczę ___ (siłownia) trzy razy w tygodniu.",
+          "answer": "na siłowni",
+          "explanation": "Siłownia, podobnie jak poczta i dworzec, łączy się z na.",
+          "grammar_point": "w-vs-na"
+        },
+        {
+          "id": "h2-3",
+          "text": "Klucze leżą ___ (kuchnia), zaraz obok czajnika.",
+          "answer": "w kuchni",
+          "grammar_point": "miejscownik-rzeczownik"
+        },
+        {
+          "id": "h2-4",
+          "text": "Spaliśmy ___ (mały hotel) niedaleko dworca.",
+          "answer": "w małym hotelu",
+          "grammar_point": "miejscownik-przymiotnik"
+        },
+        {
+          "id": "h2-5",
+          "text": "Spotkaliśmy się ___ (lotnisko) o szóstej rano.",
+          "answer": "na lotnisku",
+          "grammar_point": "w-vs-na"
+        },
+        {
+          "id": "h2-6",
+          "text": "___ (góry) było w tym roku bardzo zimno.",
+          "answer": "W górach",
+          "grammar_point": "miejscownik-mnoga"
+        },
+        {
+          "id": "h2-7",
+          "text": "Rozmawialiśmy ___ (praca) przez całą kolację.",
+          "answer": "o pracy",
+          "grammar_point": "o-kim-o-czym"
+        },
+        {
+          "id": "h2-8",
+          "text": "___ (teatr) nie wolno rozmawiać.",
+          "answer": "W teatrze",
+          "grammar_point": "miejscownik-rzeczownik"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Dokończ zdanie",
+      "instruction": "Przeczytaj pierwsze zdanie i dokończ drugie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Idę na dworzec. → Jestem już…",
+          "answer": "Jestem już na dworcu.",
+          "grammar_point": "w-vs-na"
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Wracam ze szkoły. → Cały dzień byłam…",
+          "answer": "Cały dzień byłam w szkole.",
+          "grammar_point": "miejscownik-rzeczownik"
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Skończyliśmy obiad. → Zmywamy naczynia…",
+          "answer": "Zmywamy naczynia po obiedzie.",
+          "grammar_point": "przyimki-miejscownik"
+        },
+        {
+          "id": "h3-4",
+          "prompt": "To są zdjęcia moich braci. → Często opowiadam…",
+          "answer": "Często opowiadam o moich braciach.",
+          "accept": ["Często opowiadam o braciach."],
+          "grammar_point": "miejscownik-mnoga"
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Zostawiłem rower obok wejścia. → Rower stoi…",
+          "answer": "Rower stoi przy wejściu.",
+          "grammar_point": "przyimki-miejscownik"
+        },
+        {
+          "id": "h3-6",
+          "prompt": "Mamy nowe mieszkanie. → Mieszkamy teraz…",
+          "answer": "Mieszkamy teraz w nowym mieszkaniu.",
+          "grammar_point": "miejscownik-przymiotnik"
+        }
+      ]
+    }
+  ]
+}
