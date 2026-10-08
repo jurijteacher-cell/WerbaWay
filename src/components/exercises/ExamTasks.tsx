@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 
 export type ExamItem = {
   id: string;
@@ -19,6 +19,8 @@ export type ExamBlock = {
   instruction?: string;
   items: ExamItem[];
   transcript?: { speaker: string; line: string }[];
+  max_plays?: number;
+  audio_url?: string;
 };
 
 export type ExamExercise = {
@@ -44,6 +46,8 @@ export function ExamTasks({ data, blockIds }: Props) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState<Record<string, boolean>>({});
   const [showExplain, setShowExplain] = useState<Record<string, boolean>>({});
+  const [plays, setPlays] = useState<Record<string, number>>({});
+  const audioRefs = useRef<Record<string, HTMLAudioElement | null>>({});
 
   const expected = (item: ExamItem) => {
     if (typeof item.answer === 'boolean') return item.answer ? 'true' : 'false';
@@ -71,19 +75,55 @@ export function ExamTasks({ data, blockIds }: Props) {
           </div>
           {block.instruction ? <p className="nb-note">{block.instruction}</p> : null}
 
-          {block.transcript?.length ? (
+          {block.exercise_type === 'multiple-choice' ? (
             <div className="nb-panel" style={{ marginBottom: 14 }}>
-              <p style={{ margin: '0 0 8px', fontWeight: 700 }}>Transkrypt rozmowy</p>
-              <p className="nb-note" style={{ marginTop: 0 }}>
-                Nagranie TTS w przygotowaniu — przeczytaj dialog, potem odpowiedz.
-              </p>
-              <div style={{ display: 'grid', gap: 8 }}>
-                {block.transcript.map((line, i) => (
-                  <p key={`${block.block_id}-t-${i}`} style={{ margin: 0 }}>
-                    <strong>{line.speaker}:</strong> {line.line}
-                  </p>
-                ))}
-              </div>
+              {block.audio_url ? (
+                <>
+                  <audio
+                    ref={(el) => {
+                      audioRefs.current[block.block_id] = el;
+                    }}
+                    src={block.audio_url}
+                    preload="none"
+                  />
+                  <button
+                    type="button"
+                    className="nb-btn"
+                    disabled={
+                      block.max_plays != null &&
+                      (plays[block.block_id] ?? 0) >= block.max_plays
+                    }
+                    onClick={() => {
+                      const el = audioRefs.current[block.block_id];
+                      if (!el) return;
+                      const used = plays[block.block_id] ?? 0;
+                      if (block.max_plays != null && used >= block.max_plays) return;
+                      el.currentTime = 0;
+                      void el.play();
+                      setPlays((p) => ({ ...p, [block.block_id]: used + 1 }));
+                    }}
+                  >
+                    Odsłuchaj
+                    {block.max_plays != null
+                      ? ` (${plays[block.block_id] ?? 0}/${block.max_plays})`
+                      : ''}
+                  </button>
+                </>
+              ) : (
+                <p className="nb-note" style={{ marginTop: 0 }}>
+                  Nagranie TTS w przygotowaniu — przeczytaj dialog poniżej, potem odpowiedz.
+                </p>
+              )}
+              {block.transcript?.length ? (
+                <div style={{ display: 'grid', gap: 8, marginTop: 10 }}>
+                  <p style={{ margin: 0, fontWeight: 700 }}>Transkrypt rozmowy</p>
+                  {block.transcript.map((line, i) => (
+                    <p key={`${block.block_id}-t-${i}`} style={{ margin: 0 }}>
+                      <strong>{line.speaker}:</strong> {line.line}
+                    </p>
+                  ))}
+                </div>
+              ) : null}
             </div>
           ) : null}
 

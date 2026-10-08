@@ -1,0 +1,111 @@
+{
+  "lesson_id": "pl-b1-group-03-slang",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 12,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Wypad do Wrocławia” jeszcze raz. Zdecyduj, które zdania są prawdziwe (P), a które fałszywe (F).",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Kasia ma we Wrocławiu wolną chatę na cały weekend.",
+          "answer": true,
+          "explanation": "Marek mówi, że Kasia ma tam wolną chatę na cały weekend."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Na początku w jednym aucie miało jechać sześciu facetów.",
+          "answer": false,
+          "explanation": "Na początku mieli jechać pięciu facetów: narrator, Marek i trzech kumpli."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Marek poprosił, żeby zabrać dwoje dzieci jego siostry.",
+          "answer": true,
+          "explanation": "Siostra Marka musiała pracować w sobotę, więc Marek chciał zabrać jej dwoje dzieci."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Kombi taty narratora mieści siedem osób.",
+          "answer": false,
+          "explanation": "Kombi mieści tylko pięć osób, dlatego trzeba było wynająć busa."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Każdy dorosły dorzucił stówę na wynajem busa.",
+          "answer": true,
+          "explanation": "Pojechało siedmioro dorosłych i każdy dorzucił stówę, czyli razem siedemset złotych."
+        },
+        {
+          "id": "e1-6",
+          "statement": "W niedzielę rano trzech ziomków zwinęło się wcześniej.",
+          "answer": false,
+          "explanation": "Wcześniej zwinęło się dwóch ziomków, bo mieli fuchę w Krakowie."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "pl-b1-group-03-slang-comm-tasks.json#c1.model_dialogue",
+      "audio_id": "pl-b1-group-03-slang-c1-dialog",
+      "max_plays": 2,
+      "title": "Słuchanie: plan wypadu",
+      "instruction": "Posłuchaj nagrania dwa razy. Wybierz jedną poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Gdzie znajduje się chata Adama?",
+          "options": [
+            "w Mikołajkach",
+            "w Zakopanem",
+            "we Wrocławiu"
+          ],
+          "answer": "w Mikołajkach",
+          "explanation": "Ola mówi, że Adam ma chatę w Mikołajkach."
+        },
+        {
+          "id": "e2-2",
+          "question": "Ile osób pojedzie na wypad razem z Bartkiem?",
+          "options": [
+            "pięcioro",
+            "sześcioro",
+            "czworo"
+          ],
+          "answer": "sześcioro",
+          "explanation": "Bez Bartka jest pięcioro osób, z nim będzie sześcioro."
+        },
+        {
+          "id": "e2-3",
+          "question": "O której Bartek odbierze samochód od brata?",
+          "options": [
+            "o siódmej",
+            "o dwudziestej drugiej",
+            "o dwudziestej"
+          ],
+          "answer": "o dwudziestej drugiej",
+          "explanation": "Samochód Bartek odbierze w piątek o dwudziestej drugiej. O siódmej wyjadą w sobotę."
+        },
+        {
+          "id": "e2-4",
+          "question": "Ile kosztuje jedzenie na osobę?",
+          "options": [
+            "sto złotych",
+            "trzydzieści złotych",
+            "pięćdziesiąt złotych"
+          ],
+          "answer": "trzydzieści złotych",
+          "explanation": "Sto złotych kosztuje paliwo na jeden samochód, a jedzenie około trzydzieści złotych na osobę."
+        }
+      ]
+    }
+  ]
+}

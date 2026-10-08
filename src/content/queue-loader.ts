@@ -105,6 +105,16 @@ function normalizeGrammarItem(it: any, i: number): GrammarPyramidItem {
   if (it.left != null && it.right != null) {
     return { id, prompt: it.left, answer: it.right };
   }
+  if (it.statement != null && typeof it.answer === 'boolean') {
+    return {
+      id,
+      sentence: it.statement,
+      prompt: it.statement,
+      answer: it.answer ? 'Prawda' : 'Fałsz',
+      options: ['Prawda', 'Fałsz'],
+      explanation: it.explanation,
+    };
+  }
   if (it.text != null) {
     return {
       id,
@@ -112,6 +122,7 @@ function normalizeGrammarItem(it: any, i: number): GrammarPyramidItem {
       answer: it.answer,
       options: it.options,
       explanation: it.explanation,
+      accept: it.accept,
     };
   }
   if (it.prompt != null && it.words == null) {
@@ -120,6 +131,7 @@ function normalizeGrammarItem(it: any, i: number): GrammarPyramidItem {
       prompt: it.prompt,
       answer: it.answer,
       answer_hint: it.answer_hint ?? it.answer,
+      accept: it.accept,
     };
   }
   return {
@@ -131,6 +143,7 @@ function normalizeGrammarItem(it: any, i: number): GrammarPyramidItem {
     words: it.words,
     options: it.options,
     explanation: it.explanation,
+    accept: it.accept,
   };
 }
 
@@ -178,6 +191,7 @@ function normalizeGrammar(raw: any): GrammarPyramidExercise {
         name: b.title ?? `Poziom ${i + 1}`,
         task_type: taskType,
         instruction: b.instruction,
+        block_id: b.block_id,
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         items: (b.items ?? []).map((it: any, j: number) => {
           const normalized = normalizeGrammarItem(it, j);

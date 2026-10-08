@@ -518,6 +518,31 @@
   background: #e4f5ec;
   color: #2e6b50;
 }
+.nb-chip.ok {
+  background: #e4f5ec;
+  color: #2e8b62;
+  box-shadow: 0 0 0 2px #2e8b62;
+}
+.nb-chip.no {
+  background: #fbe7e2;
+  color: #c0503c;
+  box-shadow: 0 0 0 2px #c0503c;
+}
+@keyframes nb-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}
+.nb-shake {
+  animation: nb-shake 0.35s ease;
+}
 
 .nb-panel {
   border-radius: 3px;

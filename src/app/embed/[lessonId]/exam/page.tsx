@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { existsSync, readFileSync } from 'fs';
 import path from 'path';
 import { ExamTasks, type ExamExercise, type ExamBlock } from '@/components/exercises/ExamTasks';
+import { parseBlockIds } from '@/lib/block-ids';
 
 type Props = {
   params: { lessonId: string };
@@ -13,10 +14,7 @@ type DialogueLine = { speaker?: string; line?: string };
 function loadTranscript(lessonId: string, source?: string): ExamBlock['transcript'] {
   if (!source || !source.includes('#')) return undefined;
   const [fileHint, frag] = source.split('#');
-  // e.g. pl-b1-group-02-wydarzenia-comm-tasks.json#c1.model_dialogue
-  const file = fileHint.endsWith('.json')
-    ? fileHint
-    : `${lessonId}-comm-tasks.json`;
+  const file = fileHint.endsWith('.json') ? fileHint : `${lessonId}-comm-tasks.json`;
   const full = path.join(process.cwd(), 'src/content/queue-published', path.basename(file));
   if (!existsSync(full)) return undefined;
   try {
@@ -53,6 +51,8 @@ export default function EmbedExamPage({ params, searchParams }: Props) {
       title: b.title,
       instruction: b.instruction,
       items: b.items ?? [],
+      max_plays: b.max_plays,
+      audio_url: b.audio_url,
       transcript:
         b.exercise_type === 'multiple-choice'
           ? loadTranscript(params.lessonId, b.source)
@@ -67,9 +67,7 @@ export default function EmbedExamPage({ params, searchParams }: Props) {
     blocks,
   };
 
-  const blockIds = searchParams?.blocks
-    ? searchParams.blocks.split(',').map((s) => s.trim()).filter(Boolean)
-    : undefined;
+  const blockIds = parseBlockIds(searchParams?.blocks);
 
   return <ExamTasks data={data} blockIds={blockIds} />;
 }

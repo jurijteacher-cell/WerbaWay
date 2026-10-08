@@ -69,6 +69,7 @@ export type GrammarPyramidItem = {
   words?: string[];
   options?: string[];
   explanation?: string;
+  accept?: string[];
 };
 
 export type GrammarPyramidExercise = {
@@ -81,6 +82,7 @@ export type GrammarPyramidExercise = {
     name: string;
     task_type: string;
     instruction?: string;
+    block_id?: string;
     items: GrammarPyramidItem[];
   }[];
 };

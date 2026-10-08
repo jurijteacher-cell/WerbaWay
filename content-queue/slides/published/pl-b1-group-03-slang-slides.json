@@ -1,0 +1,544 @@
+{
+  "lesson_id": "pl-b1-group-03-slang",
+  "exercise_type": "grammar-slides",
+  "title": "Liczebniki męskoosobowe i zbiorowe",
+  "slides": [
+    {
+      "id": "s1",
+      "part": 1,
+      "section": "teoria",
+      "kind": "title",
+      "title": "Dwóch, dwoje, pięcioro",
+      "subtitle": "Ilu was jest? Ile osób? Dwóch czy dwoje?",
+      "goal": "Po tej lekcji policzysz grupę kolegów i znajomych bez błędu.",
+      "teacher_note": "Почни з питання до групи: «Скільки вас у родині? Скільки друзів прийде на день народження?» Нехай учні спробують відповісти польською, а потім покажи, що в польській для чоловіків і для змішаної групи є різні числівники."
+    },
+    {
+      "id": "s2",
+      "part": 1,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Dwa sposoby liczenia",
+      "left": {
+        "head": "dwóch, trzech, czterech",
+        "rule": "sami mężczyźni",
+        "examples": [
+          "Mam [[dwóch]] kolegów."
+        ]
+      },
+      "right": {
+        "head": "dwie, trzy, cztery",
+        "rule": "kobiety, zwierzęta, rzeczy",
+        "examples": [
+          "Mam [[dwie]] koleżanki.",
+          "Mam [[dwa]] psy."
+        ]
+      },
+      "note": "Pytanie kontrolne: czy w grupie są sami mężczyźni?",
+      "teacher_note": "Це ключова ідея всього уроку: у польській чоловіки мають власний числівник. Постав контрольне питання «чи тут самі чоловіки?» — до нього повернемося на кожному слайді."
+    },
+    {
+      "id": "s3",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Formy podstawowe",
+      "columns": [
+        "",
+        "2",
+        "3",
+        "4",
+        "5",
+        "10"
+      ],
+      "rows": [
+        [
+          "mężczyźni",
+          "[[dwóch]]",
+          "[[trzech]]",
+          "[[czterech]]",
+          "[[pięciu]]",
+          "[[dziesięciu]]"
+        ],
+        [
+          "kobiety",
+          "dwie",
+          "trzy",
+          "cztery",
+          "pięć",
+          "dziesięć"
+        ],
+        [
+          "psy, stoły, okna",
+          "dwa",
+          "trzy",
+          "cztery",
+          "pięć",
+          "dziesięć"
+        ]
+      ],
+      "note": "W tej tabeli mężczyźni mają własną formę.",
+      "teacher_note": "Відкривай по рядку. Зупинись на тому, що в чоловічому рядку форми для 5 і 10 теж інші (pięciu, dziesięciu), а не тільки для 2–4. Попроси учнів прочитати рядок вголос."
+    },
+    {
+      "id": "s4",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Przypadki: dwóch, trzech, czterech",
+      "columns": [
+        "",
+        "2",
+        "3",
+        "4"
+      ],
+      "rows": [
+        [
+          "M., B.",
+          "dwóch",
+          "trzech",
+          "czterech"
+        ],
+        [
+          "D.",
+          "dwóch",
+          "trzech",
+          "czterech"
+        ],
+        [
+          "C.",
+          "[[dwóm]]",
+          "[[trzem]]",
+          "[[czterem]]"
+        ],
+        [
+          "N.",
+          "[[dwoma]]",
+          "[[trzema]]",
+          "[[czterema]]"
+        ],
+        [
+          "Msc.",
+          "dwóch",
+          "trzech",
+          "czterech"
+        ]
+      ],
+      "note": "M., B., D. i Msc. brzmią tak samo.",
+      "teacher_note": "Скорочення: M. — mianownik, B. — biernik, D. — dopełniacz, C. — celownik, N. — narzędnik, Msc. — miejscownik. Наголоси: для чоловіків знахідний дорівнює родовому (widzę trzech kolegów). Різні форми лише в C. і N."
+    },
+    {
+      "id": "s5",
+      "part": 1,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Formuła",
+      "steps": [
+        {
+          "label": "czasownik",
+          "text": "przyszło",
+          "optional": "zwykle nijaki, l. poj."
+        },
+        {
+          "label": "liczebnik",
+          "text": "pięciu"
+        },
+        {
+          "label": "rzeczownik w D. lm.",
+          "text": "kolegów"
+        }
+      ],
+      "result": "Na mecz [[przyszło]] [[pięciu]] [[kolegów]].",
+      "note": "Po liczebniku rzeczownik stoi w dopełniaczu liczby mnogiej.",
+      "teacher_note": "Покажи, що іменник після числівника стоїть у родовому множини, а дієслово найчастіше в середньому роді однини: przyszło. Не заглиблюйся в варіанти — вони в блоці винятків."
+    },
+    {
+      "id": "s6",
+      "part": 1,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Widzę trzech, widzę trzy",
+      "items": [
+        {
+          "tag": "mężczyźni",
+          "pl": "Widzę [[trzech]] kolegów.",
+          "uk": "Бачу трьох друзів."
+        },
+        {
+          "tag": "kobiety",
+          "pl": "Widzę [[trzy]] koleżanki.",
+          "uk": "Бачу трьох подруг."
+        },
+        {
+          "tag": "zwierzęta",
+          "pl": "Widzę [[trzy]] psy.",
+          "uk": "Бачу трьох собак."
+        },
+        {
+          "tag": "rzeczy",
+          "pl": "Widzę [[trzy]] stoły.",
+          "uk": "Бачу три столи."
+        }
+      ],
+      "note": "Biernik mężczyzn jest taki sam jak dopełniacz.",
+      "teacher_note": "Порівняй чоловіків і тварин: trzech kolegów, але trzy psy. Тварини лічаться як речі. Це підготовка до пастки про koty."
+    },
+    {
+      "id": "s7",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Od pięciu w górę",
+      "columns": [
+        "",
+        "poza narzędnikiem",
+        "N."
+      ],
+      "rows": [
+        [
+          "5",
+          "pięci[[u]]",
+          "pięcioma"
+        ],
+        [
+          "6",
+          "sześci[[u]]",
+          "sześcioma"
+        ],
+        [
+          "7",
+          "siedm[[iu]]",
+          "siedmioma"
+        ],
+        [
+          "8",
+          "ośm[[iu]]",
+          "ośmioma"
+        ],
+        [
+          "9",
+          "dziewięci[[u]]",
+          "dziewięcioma"
+        ],
+        [
+          "10",
+          "dziesięci[[u]]",
+          "dziesięcioma"
+        ]
+      ],
+      "note": "Tak samo: jedenastu, dwunastu. Narzędnik: -oma.",
+      "teacher_note": "Закінчення -u для всіх відмінків, крім орудного (-oma). Додай усно jedenastu, dwunastu, trzynastu — вони утворюються так само. Орудний відмінок не вимагай від слабкої групи."
+    },
+    {
+      "id": "s8",
+      "part": 1,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Ilu czy ile?",
+      "left": {
+        "head": "Ilu",
+        "rule": "mężczyźni",
+        "examples": [
+          "[[Ilu]] kolegów przyjdzie?"
+        ]
+      },
+      "right": {
+        "head": "Ile",
+        "rule": "kobiety, rzeczy, osoby",
+        "examples": [
+          "[[Ile]] osób przyjdzie?",
+          "[[Ile]] koleżanek przyjdzie?"
+        ]
+      },
+      "note": "Odpowiedź: Przyjdzie trzech. Przyjdą trzy.",
+      "teacher_note": "Питальне слово ilu вживається лише для чоловіків. Для «скільки людей» кажемо ile osób. Попроси учнів поставити питання своїм сусідам по парі: Ilu masz kolegów?"
+    },
+    {
+      "id": "s9",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Dwóch czy dwoje?",
+      "left": {
+        "head": "dwóch, trzech…",
+        "rule": "sami mężczyźni",
+        "examples": [
+          "Przyszło [[dwóch]] kolegów."
+        ]
+      },
+      "right": {
+        "head": "dwoje, troje…",
+        "rule": "dzieci albo grupa mieszana",
+        "examples": [
+          "Przyszło [[dwoje]] znajomych."
+        ]
+      },
+      "note": "Ania, Piotr i Ewa to już troje.",
+      "teacher_note": "Друга половина теми: збірні числівники. Якщо в групі є і чоловіки, і жінки, або це діти, кажемо dwoje, troje, czworo. Запитай учнів: «Хлопчик і дівчинка — скільки це?»"
+    },
+    {
+      "id": "s10",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Dwoje, troje, czworo: przypadki",
+      "columns": [
+        "",
+        "2",
+        "3",
+        "4",
+        "5",
+        "10"
+      ],
+      "rows": [
+        [
+          "M., B.",
+          "[[dwoje]]",
+          "[[troje]]",
+          "[[czworo]]",
+          "[[pięcioro]]",
+          "[[dziesięcioro]]"
+        ],
+        [
+          "D.",
+          "dwojga",
+          "trojga",
+          "czworga",
+          "pięciorga",
+          "dziesięciorga"
+        ],
+        [
+          "C., Msc.",
+          "dwojgu",
+          "trojgu",
+          "czworgu",
+          "pięciorgu",
+          "dziesięciorgu"
+        ],
+        [
+          "N.",
+          "dwojgiem",
+          "trojgiem",
+          "czworgiem",
+          "pięciorgiem",
+          "dziesięciorgiem"
+        ]
+      ],
+      "note": "Po liczebniku: dopełniacz lm., np. dwoje dzieci.",
+      "teacher_note": "Не вимагай усіх відмінків від слабшої групи: головне M./B. (dwoje dzieci) і D. (dla dwojga dzieci). Орудний (z trojgiem dzieci) — для сильніших. Зверни увагу на 4: czworo, а не «czteroro»."
+    },
+    {
+      "id": "s11",
+      "part": 2,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Formuła zbiorowa",
+      "steps": [
+        {
+          "label": "liczebnik",
+          "text": "troje"
+        },
+        {
+          "label": "rzeczownik w D. lm.",
+          "text": "dzieci"
+        },
+        {
+          "label": "czasownik",
+          "text": "bawiło się",
+          "optional": "nijaki, l. poj."
+        }
+      ],
+      "result": "[[Troje]] [[dzieci]] [[bawiło]] się w parku.",
+      "note": "Orzeczenie najczęściej stoi w rodzaju nijakim.",
+      "teacher_note": "Формула така ж, як для чоловіків: числівник + іменник у родовому множини + дієслово в середньому роді. Різниця лише в самому числівнику."
+    },
+    {
+      "id": "s12",
+      "part": 2,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Kiedy: dwoje, troje, czworo?",
+      "items": [
+        {
+          "tag": "dzieci",
+          "pl": "Mam [[dwoje]] dzieci.",
+          "uk": "У мене двоє дітей."
+        },
+        {
+          "tag": "grupa mieszana",
+          "pl": "Przyszło [[czworo]] znajomych.",
+          "uk": "Прийшло четверо знайомих."
+        },
+        {
+          "tag": "ludzie",
+          "pl": "Było tam [[pięcioro]] ludzi.",
+          "uk": "Там було п'ятеро людей."
+        }
+      ],
+      "note": "Chłopiec i dziewczynka to już dwoje.",
+      "teacher_note": "Три типові випадки: діти, змішана група і «ludzie» без уточнення статі. Попроси учнів придумати своє речення про родину: Mam troje rodzeństwa."
+    },
+    {
+      "id": "s13",
+      "part": 2,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Osoby: ile osób?",
+      "items": [
+        {
+          "tag": "2–4",
+          "pl": "Przyszły [[trzy osoby]].",
+          "uk": "Прийшли три особи."
+        },
+        {
+          "tag": "5 i więcej",
+          "pl": "Przyszło [[pięć osób]].",
+          "uk": "Прийшло п'ять осіб."
+        },
+        {
+          "tag": "z",
+          "pl": "Jadę z [[pięcioma osobami]].",
+          "uk": "Їду з п'ятьма особами."
+        },
+        {
+          "tag": "dla",
+          "pl": "Bilet dla [[pięciu osób]].",
+          "uk": "Квиток на п'ять осіб."
+        }
+      ],
+      "note": "Mianownik: pięć osób. Po przyimku: dla pięciu osób.",
+      "teacher_note": "Osoba — жіночого роду, тому в називному кажемо trzy osoby, pięć osób, навіть коли йдеться про чоловіків. У знахідному і після прийменників числівник змінюється: dla pięciu osób, z pięcioma osobami."
+    },
+    {
+      "id": "s14",
+      "part": 2,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Było nas troje",
+      "steps": [
+        {
+          "label": "być",
+          "text": "było"
+        },
+        {
+          "label": "zaimek w D.",
+          "text": "nas",
+          "optional": "też: was, ich"
+        },
+        {
+          "label": "liczebnik",
+          "text": "troje"
+        }
+      ],
+      "result": "[[Było]] [[nas]] [[troje]]: Ania, Piotr i ja.",
+      "note": "Sami mężczyźni: było nas czterech.",
+      "teacher_note": "Конструкція «було нас троє» — дуже жива в розмові. Покажи пару: было nas troje (змішана група) і było ich czterech (самі чоловіки). Попроси кілька учнів сказати, скільки їх було на останньому святі."
+    },
+    {
+      "id": "s15",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "refers_to": "s3",
+      "title": "Formy książkowe i podwójne",
+      "items": [
+        {
+          "rule": "Mianownik, styl książkowy: dwaj, trzej, czterej",
+          "example": "[[Dwaj]] koledzy [[przyszli]] na mecz."
+        },
+        {
+          "rule": "Obaj: dwóch mężczyzn razem",
+          "example": "[[Obaj]] bracia grają w koszykówkę."
+        },
+        {
+          "rule": "Ludzie: dwie poprawne formy",
+          "example": "[[Pięciu]] ludzi albo [[pięcioro]] ludzi."
+        }
+      ],
+      "teacher_note": "Dwaj, trzej, czterej — тільки в називному і лише в книжній мові; у розмові кажемо dwóch. Ludzie допускає обидві форми: pięciu ludzi (чоловіки) і pięcioro ludzi (змішана група)."
+    },
+    {
+      "id": "s16",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "refers_to": "s10",
+      "title": "Liczebniki zbiorowe: nietypowe",
+      "items": [
+        {
+          "rule": "Czworo, nie „czteroro”",
+          "example": "Mam [[czworo]] wnuków."
+        },
+        {
+          "rule": "Młode zwierzęta: forma zbiorowa",
+          "example": "[[Pięcioro]] szczeniąt biegało po ogrodzie."
+        },
+        {
+          "rule": "Rzeczy tylko w lm.: dwoje drzwi",
+          "example": "Kupiliśmy [[dwoje]] drzwi."
+        }
+      ],
+      "teacher_note": "Три випадки: 4 дає czworo (не czteroro), малі тварини (szczenięta, kocięta) лічаться збірно, і іменники лише у множині (drzwi) теж. Для drzwi можна також сказати dwie pary drzwi."
+    },
+    {
+      "id": "s17",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "двоє хлопців",
+          "wrong": "dwoje chłopaków",
+          "right": "[[dwóch]] chłopaków",
+          "why": "Sami mężczyźni: dwóch. Dwoje to dzieci albo grupa mieszana."
+        },
+        {
+          "uk": "п'ять людей",
+          "wrong": "pięć ludzi",
+          "right": "[[pięciu]] ludzi",
+          "why": "„Ludzie” to grupa męskoosobowa: pięciu ludzi albo pięć osób."
+        },
+        {
+          "uk": "нас було троє",
+          "wrong": "było nas trzy",
+          "right": "było nas [[troje]]",
+          "why": "O osobach mówimy: troje, czworo. „Trzy” to forma rzeczy i kobiet."
+        }
+      ],
+      "teacher_note": "Перша пастка — калька «двоє хлопців». Друга — «п'ять людей». Третя — «нас було троє» з неправильним trzy. Спитай учнів, чому вони так схильні до цих помилок."
+    },
+    {
+      "id": "s18",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "з трьома друзями",
+          "wrong": "z trzy kolegami",
+          "right": "z [[trzema]] kolegami",
+          "why": "Po „z” potrzebny jest narzędnik: trzema."
+        },
+        {
+          "uk": "було десять осіб",
+          "wrong": "było dziesięciu osób",
+          "right": "było [[dziesięć]] osób",
+          "why": "„Osoba” jest rodzaju żeńskiego: było dziesięć osób."
+        },
+        {
+          "uk": "три коти",
+          "wrong": "trzech kotów",
+          "right": "[[trzy]] koty",
+          "why": "Zwierzęta liczymy jak rzeczy: trzy koty."
+        }
+      ],
+      "teacher_note": "Тут три типові відмінкові і родові помилки: орудний після z, osoba в називному, гіперкорекція з тваринами. Попроси учнів самих виправити «wrong» перед тим, як відкриється ✓."
+    }
+  ]
+}
