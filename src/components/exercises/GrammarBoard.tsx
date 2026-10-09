@@ -2,26 +2,9 @@
 
 import { useMemo, useState, type Dispatch, type SetStateAction } from 'react';
 import type { GrammarBoardExercise, GrammarBoardTaskItem } from '@/content/queue-types';
+import { answersMatch as matchAnswer } from '@/lib/answer-match';
 
 type Props = { data: GrammarBoardExercise };
-
-function normalize(s: string) {
-  return s.trim().replace(/\s+/g, ' ').toLowerCase();
-}
-
-function stripDiacritics(s: string) {
-  return normalize(s)
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/ł/g, 'l');
-}
-
-function answersMatch(given: string, expected: string) {
-  const g = normalize(given);
-  const e = normalize(expected);
-  if (g === e) return true;
-  return stripDiacritics(g) === stripDiacritics(e);
-}
 
 function shuffle<T>(arr: T[], seed: string): T[] {
   const a = [...arr];
@@ -56,7 +39,7 @@ export function GrammarBoard({ data }: Props) {
   const check = (k: string, given: string, expected: string) => {
     setFeedback((f) => ({
       ...f,
-      [k]: answersMatch(given, expected),
+      [k]: matchAnswer(given, expected).ok,
     }));
   };
 
@@ -270,7 +253,7 @@ function MatchingTask({
                   if (!leftId) return;
                   const item = items.find((it) => String(it.id) === leftId);
                   if (!item) return;
-                  const correct = right === itemAnswer(item);
+                  const correct = matchAnswer(right, itemAnswer(item)).ok;
                   if (correct) {
                     setMatchPairs((p) => ({
                       ...p,

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import type { GrammarPyramidExercise } from '@/content/queue-types';
+import { answersMatch } from '@/lib/answer-match';
 import { SentenceBuilding } from './SentenceBuilding';
 
 type Props = {
@@ -9,31 +10,6 @@ type Props = {
   /** Optional filter by original block_id stored on level.block_id, or by 1-based level index ids like g1 */
   blockIds?: string[];
 };
-
-function normalize(s: string) {
-  return s.trim().replace(/\s+/g, ' ').toLowerCase();
-}
-
-function stripDiacritics(s: string) {
-  return normalize(s)
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .replace(/ł/g, 'l')
-    .replace(/ø/g, 'o');
-}
-
-function answersMatch(given: string, expected: string, accept?: string[]) {
-  const g = normalize(given);
-  const pool = [expected, ...(accept ?? [])].map(normalize);
-  if (pool.includes(g)) return { ok: true as const, hint: null };
-  if (pool.some((a) => stripDiacritics(a) === stripDiacritics(g))) {
-    const withMarks = [expected, ...(accept ?? [])].find(
-      (a) => stripDiacritics(a) === stripDiacritics(g)
-    );
-    return { ok: true as const, hint: withMarks ? `↳ z ogonkami: ${withMarks}` : null };
-  }
-  return { ok: false as const, hint: null };
-}
 
 function shuffle<T>(arr: T[], seed: string): T[] {
   const a = [...arr];
@@ -166,7 +142,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
                         if (!leftId) return;
                         const item = level.items.find((it) => String(it.id) === leftId);
                         if (!item) return;
-                        const correct = right === item.answer;
+                        const correct = answersMatch(right, String(item.answer ?? '')).ok;
                         setMatchPairs((p) => {
                           const cur = { ...(p[String(level.level)] ?? {}) };
                           if (!correct) {
@@ -344,7 +320,9 @@ export function GrammarPyramid({ data, blockIds }: Props) {
                       <button
                         type="button"
                         className="nb-btn ghost"
-                        onClick={() => setShowAnswer((s) => ({ ...s, [k]: true }))}
+                        onClick={() =>
+                          setOpenAnswers((a) => ({ ...a, [k]: String(expected) }))
+                        }
                       >
                         Pokaż
                       </button>

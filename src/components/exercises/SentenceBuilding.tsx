@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import { answersMatch } from '@/lib/answer-match';
 
 type Props = {
   words: string[];
@@ -15,10 +16,6 @@ function shuffle<T>(arr: T[]): T[] {
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
-}
-
-function normalize(s: string) {
-  return s.trim().replace(/\s+/g, ' ').replace(/[.!?]$/, '').toLowerCase();
 }
 
 export function SentenceBuilding({ words, answer, disabled }: Props) {
@@ -51,7 +48,7 @@ export function SentenceBuilding({ words, answer, disabled }: Props) {
   };
 
   const check = () => {
-    setChecked(normalize(picked.join(' ')) === normalize(answer));
+    setChecked(answersMatch(picked.join(' '), answer).ok);
   };
 
   const reset = () => {
