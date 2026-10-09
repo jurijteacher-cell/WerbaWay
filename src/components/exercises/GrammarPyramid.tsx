@@ -100,13 +100,15 @@ export function GrammarPyramid({ data, blockIds }: Props) {
         <h1>{data.title}</h1>
         {data.instructions ? <p>{data.instructions}</p> : null}
         <p className="nb-note">
-          Poziom {level.level}: {level.name}
+          Poziom {level.level}: {level.name.replace(/^\d+[\.\)]\s*/, '')}
         </p>
         {level.instruction ? <p>{level.instruction}</p> : null}
       </header>
 
       <div className="nb-idx" role="tablist">
-        {levels.map((l, i) => (
+        {levels.map((l, i) => {
+          const bare = l.name.replace(/^\d+[\.\)]\s*/, '');
+          return (
           <button
             key={l.level}
             type="button"
@@ -114,9 +116,10 @@ export function GrammarPyramid({ data, blockIds }: Props) {
             aria-selected={i === levelIdx}
             onClick={() => setLevelIdx(i)}
           >
-            {l.level}. {l.name}
+            {l.level}. {bare}
           </button>
-        ))}
+          );
+        })}
       </div>
 
       <div>

@@ -186,6 +186,16 @@ function normalizeGrammar(raw: any): GrammarPyramidExercise {
         taskType = 'fill-in-blank';
       }
       const bank: string[] | undefined = Array.isArray(b.bank) ? b.bank : undefined;
+      // bank must include answers + traps; salvage if Claude left only traps
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const answerWords = (b.items ?? [])
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        .map((it: any) => (typeof it?.answer === 'string' ? it.answer : null))
+        .filter((w: string | null): w is string => Boolean(w));
+      const chipBank =
+        bank?.length || answerWords.length
+          ? Array.from(new Set([...(bank ?? []), ...answerWords]))
+          : undefined;
       return {
         level: i + 1,
         name: b.title ?? `Poziom ${i + 1}`,
@@ -195,8 +205,8 @@ function normalizeGrammar(raw: any): GrammarPyramidExercise {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         items: (b.items ?? []).map((it: any, j: number) => {
           const normalized = normalizeGrammarItem(it, j);
-          if (bank?.length && !normalized.options?.length && normalized.sentence) {
-            return { ...normalized, options: bank };
+          if (chipBank?.length && !normalized.options?.length && normalized.sentence) {
+            return { ...normalized, options: chipBank };
           }
           return normalized;
         }),
