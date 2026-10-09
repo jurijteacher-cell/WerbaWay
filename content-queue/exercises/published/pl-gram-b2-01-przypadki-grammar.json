@@ -1,0 +1,203 @@
+{
+  "lesson_id": "pl-gram-b2-01-przypadki",
+  "exercise_type": "fill-in-blank",
+  "title": "System przypadków: od rozpoznawania do tekstu",
+  "instruction": "Jedenaście bloków: start, dwie części gramatyki i polowanie na formy w tekście.",
+  "estimated_minutes": 75,
+  "blocks": [
+    {
+      "block_id": "g0",
+      "part": 1,
+      "covers_slides": ["s2", "s3"],
+      "exercise_type": "fill-in-blank",
+      "title": "Sprawdź, co już wiesz",
+      "instruction": "Wpisz właściwą formę słowa z nawiasu. Ten blok nie wpływa na ocenę.",
+      "items": [
+        { "id": "g0-1", "text": "Dziś niestety nie mam ___ (siła) na trening.", "answer": "siły", "grammar_point": "przypadki-funkcje" },
+        { "id": "g0-2", "text": "Mój brat jest ___ (kierowca).", "answer": "kierowcą", "grammar_point": "przypadki-funkcje" },
+        { "id": "g0-3", "text": "Wieczorem idę do ___ (apteka).", "answer": "apteki", "grammar_point": "przypadki-przyimki" },
+        { "id": "g0-4", "text": "Często rozmawiamy o ___ (polityka).", "answer": "polityce", "grammar_point": "przypadki-przyimki" },
+        { "id": "g0-5", "text": "Muszę zadzwonić do ___ (dentysta).", "answer": "dentysty", "grammar_point": "rzecz-lp-meski" }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "covers_slides": ["s2", "s3"],
+      "exercise_type": "fill-in-blank",
+      "title": "1. Jaki to przypadek?",
+      "instruction": "Wybierz przypadek wyróżnionego słowa.",
+      "items": [
+        { "id": "g1-1", "text": "„Wysłałem prezent babci” — słowo „babci” to ___.", "options": ["mianownik", "dopełniacz", "celownik", "biernik", "narzędnik", "miejscownik"], "answer": "celownik", "explanation": "Wysłać komu? — babci. Odbiorca to celownik.", "grammar_point": "przypadki-funkcje" },
+        { "id": "g1-2", "text": "„Nie widzę parasola” — słowo „parasola” to ___.", "options": ["mianownik", "dopełniacz", "celownik", "biernik", "narzędnik", "miejscownik"], "answer": "dopełniacz", "explanation": "Po negacji biernik zmienia się w dopełniacz.", "grammar_point": "przypadki-funkcje" },
+        { "id": "g1-3", "text": "„Jeżdżę do pracy rowerem” — słowo „rowerem” to ___.", "options": ["mianownik", "dopełniacz", "celownik", "biernik", "narzędnik", "miejscownik"], "answer": "narzędnik", "explanation": "Czym jeżdżę? — narzędzie, środek transportu.", "grammar_point": "przypadki-funkcje" },
+        { "id": "g1-4", "text": "„Spędziliśmy weekend w Gdańsku” — słowo „Gdańsku” to ___.", "options": ["mianownik", "dopełniacz", "celownik", "biernik", "narzędnik", "miejscownik"], "answer": "miejscownik", "explanation": "Gdzie? — w + miejscownik.", "grammar_point": "przypadki-funkcje" },
+        { "id": "g1-5", "text": "„Znasz tę piosenkę?” — słowo „piosenkę” to ___.", "options": ["mianownik", "dopełniacz", "celownik", "biernik", "narzędnik", "miejscownik"], "answer": "biernik", "explanation": "Znać kogo? co? — obiekt działania.", "grammar_point": "przypadki-funkcje" },
+        { "id": "g1-6", "text": "„Ten pan to mój sąsiad” — słowo „sąsiad” to ___.", "options": ["mianownik", "dopełniacz", "celownik", "biernik", "narzędnik", "miejscownik"], "answer": "mianownik", "explanation": "Po „to” stoi mianownik.", "grammar_point": "przypadki-funkcje" },
+        { "id": "g1-7", "text": "„Jej mąż jest weterynarzem” — słowo „weterynarzem” to ___.", "options": ["mianownik", "dopełniacz", "celownik", "biernik", "narzędnik", "miejscownik"], "answer": "narzędnik", "explanation": "Być kim? — narzędnik.", "grammar_point": "przypadki-funkcje" },
+        { "id": "g1-8", "text": "„Dziękuję koledze za pomoc” — słowo „koledze” to ___.", "options": ["mianownik", "dopełniacz", "celownik", "biernik", "narzędnik", "miejscownik"], "answer": "celownik", "explanation": "Dziękować komu? — celownik.", "grammar_point": "przypadki-funkcje" }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "covers_slides": ["s3", "s4"],
+      "exercise_type": "sentence-building",
+      "title": "2. Zaprzecz",
+      "instruction": "Zamień zdanie na przeczące. Zachowaj szyk zdania.",
+      "items": [
+        { "id": "g2-1", "prompt": "Mam rower.", "answer": "Nie mam roweru.", "grammar_point": "przypadki-funkcje" },
+        { "id": "g2-2", "prompt": "Znam Agatę.", "answer": "Nie znam Agaty.", "grammar_point": "przypadki-funkcje" },
+        { "id": "g2-3", "prompt": "Piję kawę rano.", "answer": "Nie piję kawy rano.", "grammar_point": "przypadki-funkcje" },
+        { "id": "g2-4", "prompt": "Oglądamy serial.", "answer": "Nie oglądamy serialu.", "grammar_point": "przypadki-funkcje" },
+        { "id": "g2-5", "prompt": "W lodówce jest masło.", "answer": "W lodówce nie ma masła.", "grammar_point": "przypadki-funkcje" },
+        { "id": "g2-6", "prompt": "Pomagam sąsiadce.", "answer": "Nie pomagam sąsiadce.", "grammar_point": "przypadki-funkcje" },
+        { "id": "g2-7", "prompt": "Interesuję się polityką.", "answer": "Nie interesuję się polityką.", "grammar_point": "przypadki-funkcje" },
+        { "id": "g2-8", "prompt": "Dzwonię do szefa.", "answer": "Nie dzwonię do szefa.", "grammar_point": "przypadki-funkcje" }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "covers_slides": ["s5", "s6", "s7"],
+      "exercise_type": "fill-in-blank",
+      "title": "3. Przyimek decyduje",
+      "instruction": "Wpisz słowo z nawiasu w odpowiednim przypadku.",
+      "items": [
+        { "id": "g3-1", "text": "Wracam z ___ (siłownia) około dziewiątej.", "answer": "siłowni", "grammar_point": "przypadki-przyimki" },
+        { "id": "g3-2", "text": "Kupiłam ten sweter dla ___ (córka).", "answer": "córki", "grammar_point": "przypadki-przyimki" },
+        { "id": "g3-3", "text": "Spotkajmy się przed ___ (teatr).", "answer": "teatrem", "grammar_point": "przypadki-przyimki" },
+        { "id": "g3-4", "text": "Projekt się udał dzięki ___ (Ania).", "answer": "Ani", "grammar_point": "przypadki-przyimki" },
+        { "id": "g3-5", "text": "Długo rozmawialiśmy o ___ (przyszłość).", "answer": "przyszłości", "grammar_point": "przypadki-przyimki" },
+        { "id": "g3-6", "text": "Herbata z ___ (cytryna), proszę.", "answer": "cytryną", "grammar_point": "przypadki-przyimki" },
+        { "id": "g3-7", "text": "Cała rodzina siedziała przy ___ (kolacja).", "answer": "kolacji", "grammar_point": "przypadki-przyimki" },
+        { "id": "g3-8", "text": "Bez ___ (paszport) nie wsiądziesz do samolotu.", "answer": "paszportu", "grammar_point": "przypadki-przyimki" }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "covers_slides": ["s8", "s9"],
+      "exercise_type": "fill-in-blank",
+      "title": "4. Gdzie czy dokąd?",
+      "instruction": "Wybierz właściwą formę. Zadaj sobie pytanie: gdzie? czy dokąd?",
+      "items": [
+        { "id": "g4-1", "text": "W lipcu jedziemy ___.", "options": ["nad jezioro", "nad jeziorem"], "answer": "nad jezioro", "explanation": "Ruch, pytanie dokąd? — nad + biernik.", "grammar_point": "przypadki-przyimki" },
+        { "id": "g4-2", "text": "Całe dzieciństwo spędziłem ___.", "options": ["nad jezioro", "nad jeziorem"], "answer": "nad jeziorem", "explanation": "Stan, pytanie gdzie? — nad + narzędnik.", "grammar_point": "przypadki-przyimki" },
+        { "id": "g4-3", "text": "Dziś wieczorem idziemy ___.", "options": ["na wesele", "na weselu"], "answer": "na wesele", "explanation": "Ruch: na + biernik.", "grammar_point": "przypadki-przyimki" },
+        { "id": "g4-4", "text": "Poznali się ___ u znajomych.", "options": ["na wesele", "na weselu"], "answer": "na weselu", "explanation": "Gdzie? — na + miejscownik.", "grammar_point": "przypadki-przyimki" },
+        { "id": "g4-5", "text": "Piłka wpadła ___.", "options": ["pod samochód", "pod samochodem"], "answer": "pod samochód", "explanation": "Ruch: pod + biernik.", "grammar_point": "przypadki-przyimki" },
+        { "id": "g4-6", "text": "Klucze leżą ___.", "options": ["pod wycieraczką", "pod wycieraczkę"], "answer": "pod wycieraczką", "explanation": "Stan: pod + narzędnik.", "grammar_point": "przypadki-przyimki" },
+        { "id": "g4-7", "text": "Idę ___, zaraz wracam.", "options": ["do sklepu", "w sklepie"], "answer": "do sklepu", "explanation": "Ruch: do + dopełniacz.", "grammar_point": "przypadki-przyimki" },
+        { "id": "g4-8", "text": "Czekam na ciebie ___.", "options": ["w kawiarni", "do kawiarni"], "answer": "w kawiarni", "explanation": "Stan: w + miejscownik.", "grammar_point": "przypadki-przyimki" }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "covers_slides": ["s10", "s11"],
+      "exercise_type": "fill-in-blank",
+      "title": "5. Rodzaj żeński",
+      "instruction": "Wpisz rzeczownik w odpowiedniej formie. Pamiętaj o obocznościach.",
+      "items": [
+        { "id": "g5-1", "text": "Codziennie dzwonię do ___ (babcia).", "answer": "babci", "grammar_point": "rzecz-lp-zenski" },
+        { "id": "g5-2", "text": "Kupiłam bilet do teatru ___ (ciocia).", "answer": "cioci", "grammar_point": "rzecz-lp-zenski" },
+        { "id": "g5-3", "text": "Opowiedz mi o swojej ___ (podróż).", "answer": "podróży", "grammar_point": "rzecz-lp-zenski" },
+        { "id": "g5-4", "text": "Zostawiłam okulary na ___ (półka).", "answer": "półce", "grammar_point": "rzecz-lp-zenski" },
+        { "id": "g5-5", "text": "Przyszła na imprezę z ___ (przyjaciółka).", "answer": "przyjaciółką", "grammar_point": "rzecz-lp-zenski" },
+        { "id": "g5-6", "text": "W ___ (apteka) nie było tego leku.", "answer": "aptece", "grammar_point": "rzecz-lp-zenski" },
+        { "id": "g5-7", "text": "Oddaj tę książkę ___ (koleżanka).", "answer": "koleżance", "grammar_point": "rzecz-lp-zenski" },
+        { "id": "g5-8", "text": "Od wczoraj czekam na ___ (odpowiedź).", "answer": "odpowiedź", "grammar_point": "rzecz-lp-zenski" }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "covers_slides": ["s12", "s13", "s16"],
+      "exercise_type": "fill-in-blank",
+      "title": "6. Rodzaj męski",
+      "instruction": "Wpisz rzeczownik w odpowiedniej formie.",
+      "items": [
+        { "id": "g6-1", "text": "Jutro idę do ___ (fryzjer).", "answer": "fryzjera", "grammar_point": "rzecz-lp-meski" },
+        { "id": "g6-2", "text": "Ten prezent jest dla ___ (dziadek).", "answer": "dziadka", "grammar_point": "rzecz-lp-meski" },
+        { "id": "g6-3", "text": "Wczoraj rozmawiałam z ___ (dyrektor).", "answer": "dyrektorem", "grammar_point": "rzecz-lp-meski" },
+        { "id": "g6-4", "text": "Powiedz ___ (Paweł), że się spóźnię.", "answer": "Pawłowi", "grammar_point": "rzecz-lp-meski" },
+        { "id": "g6-5", "text": "Nie mam ___ (pomysł) na prezent.", "answer": "pomysłu", "explanation": "Pomysł — pojęcie, więc -u.", "grammar_point": "rzecz-lp-meski" },
+        { "id": "g6-6", "text": "Zostawiłem portfel w ___ (samochód).", "answer": "samochodzie", "explanation": "Oboczność d → dzi i ó → o: samochód → samochodzie.", "grammar_point": "rzecz-lp-meski" },
+        { "id": "g6-7", "text": "Co wiesz o tym ___ (człowiek)?", "answer": "człowieku", "explanation": "Po k miejscownik ma końcówkę -u.", "grammar_point": "rzecz-lp-meski" },
+        { "id": "g6-8", "text": "Dałaś już jeść ___ (pies)?", "answer": "psu", "explanation": "Pies ma krótki celownik: psu.", "grammar_point": "rzecz-lp-meski" },
+        { "id": "g6-9", "text": "Od dwóch lat pracuję w ___ (bank).", "answer": "banku", "explanation": "Po k miejscownik ma końcówkę -u.", "grammar_point": "rzecz-lp-meski" }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "covers_slides": ["s14", "s15", "s17"],
+      "exercise_type": "fill-in-blank",
+      "title": "7. Rodzaj nijaki i wołacz",
+      "instruction": "Wpisz słowo z nawiasu w odpowiedniej formie. W ostatnich trzech zdaniach zwracasz się do kogoś.",
+      "items": [
+        { "id": "g7-1", "text": "Zapomniałem kupić ___ (pieczywo).", "answer": "pieczywo", "explanation": "Kupić co? — biernik, a w rodzaju nijakim biernik = mianownik.", "grammar_point": "rzecz-lp-nijaki" },
+        { "id": "g7-2", "text": "Marzę o spokojnym ___ (życie).", "answer": "życiu", "grammar_point": "rzecz-lp-nijaki" },
+        { "id": "g7-3", "text": "Nie pamiętam jego ___ (imię).", "answer": "imienia", "grammar_point": "rzecz-lp-nijaki" },
+        { "id": "g7-4", "text": "W niedzielę byliśmy w ___ (muzeum).", "answer": "muzeum", "grammar_point": "rzecz-lp-nijaki" },
+        { "id": "g7-5", "text": "W sobotę pływaliśmy w ___ (jezioro).", "answer": "jeziorze", "grammar_point": "rzecz-lp-nijaki" },
+        { "id": "g7-6", "text": "Dziecko bawi się ze ___ (zwierzę).", "answer": "zwierzęciem", "grammar_point": "rzecz-lp-nijaki" },
+        { "id": "g7-7", "text": "___ (pani Ewa), czy może pani chwilę poczekać?", "answer": "Pani Ewo", "accept": ["pani Ewo"], "grammar_point": "wolacz" },
+        { "id": "g7-8", "text": "___ (pan Piotr), dziękuję za pomoc!", "answer": "Panie Piotrze", "accept": ["panie Piotrze"], "grammar_point": "wolacz" },
+        { "id": "g7-9", "text": "___ (babcia), wszystkiego najlepszego!", "answer": "Babciu", "grammar_point": "wolacz" }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "covers_slides": ["s18", "s19"],
+      "exercise_type": "fill-in-blank",
+      "title": "8. Pułapki",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        { "id": "g8-1", "text": "Od miesiąca szukam ___ w centrum.", "options": ["mieszkanie", "mieszkania"], "answer": "mieszkania", "explanation": "Szukać czego? — dopełniacz.", "grammar_point": "kalki-uk" },
+        { "id": "g8-2", "text": "Wieczorami słucham ___.", "options": ["radio", "radia"], "answer": "radia", "explanation": "Słuchać czego? — dopełniacz.", "grammar_point": "kalki-uk" },
+        { "id": "g8-3", "text": "Moja siostra jest ___.", "options": ["pielęgniarka", "pielęgniarką"], "answer": "pielęgniarką", "explanation": "Być kim? — narzędnik.", "grammar_point": "kalki-uk" },
+        { "id": "g8-4", "text": "Zapytaj kelnera o ___.", "options": ["rachunek", "rachunku"], "answer": "rachunek", "explanation": "Pytać o + biernik.", "grammar_point": "kalki-uk" },
+        { "id": "g8-5", "text": "Czy mogę skorzystać ___?", "options": ["z łazienki", "łazienką"], "answer": "z łazienki", "explanation": "Korzystać z + dopełniacz.", "grammar_point": "kalki-uk" },
+        { "id": "g8-6", "text": "Od roku uczę się ___.", "options": ["gry na gitarze", "grę na gitarze"], "answer": "gry na gitarze", "explanation": "Uczyć się czego? — dopełniacz.", "grammar_point": "kalki-uk" }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 2,
+      "covers_slides": ["s5", "s7", "s10", "s12", "s14", "s15"],
+      "exercise_type": "drag-and-drop",
+      "title": "9. List do przyjaciółki",
+      "instruction": "Uzupełnij list słowami z banku. Uwaga: cztery słowa są zbędne.",
+      "bank": ["Zosiu", "biura", "babci", "pociągiem", "dziadku", "miasta", "mamę", "Zosia", "biurze", "pociąg", "dziadka"],
+      "items": [
+        { "id": "g9-1", "text": "Droga ___!", "answer": "Zosiu", "grammar_point": "wolacz" },
+        { "id": "g9-2", "text": "Piszę do Ciebie z ___, bo mam chwilę przerwy.", "answer": "biura", "grammar_point": "przypadki-przyimki" },
+        { "id": "g9-3", "text": "W zeszły weekend byłam u ___ na wsi.", "answer": "babci", "grammar_point": "przypadki-przyimki" },
+        { "id": "g9-4", "text": "Pojechałam tam ___, bo samochód jest w naprawie.", "answer": "pociągiem", "grammar_point": "przypadki-funkcje" },
+        { "id": "g9-5", "text": "Cały wieczór rozmawiałyśmy o ___ i o dawnych czasach.", "answer": "dziadku", "grammar_point": "rzecz-lp-meski" },
+        { "id": "g9-6", "text": "W niedzielę wróciłam do ___ z torbą pełną jabłek.", "answer": "miasta", "grammar_point": "przypadki-przyimki" },
+        { "id": "g9-7", "text": "Pozdrów ode mnie ___!", "answer": "mamę", "grammar_point": "rzecz-lp-zenski" }
+      ]
+    },
+    {
+      "block_id": "g10",
+      "part": 2,
+      "covers_slides": ["s2"],
+      "exercise_type": "matching",
+      "title": "Polowanie na formy",
+      "instruction": "Znajdź te formy w tekście „Rok we Wrocławiu” i połącz je z przypadkiem.",
+      "items": [
+        { "id": "g10-1", "left": "z pociągu", "right": "dopełniacz", "grammar_point": "przypadki-funkcje" },
+        { "id": "g10-2", "left": "z kubkiem", "right": "narzędnik", "grammar_point": "przypadki-funkcje" },
+        { "id": "g10-3", "left": "pani Halinie", "right": "celownik", "grammar_point": "przypadki-funkcje" },
+        { "id": "g10-4", "left": "o Charkowie", "right": "miejscownik", "grammar_point": "przypadki-funkcje" },
+        { "id": "g10-5", "left": "o cenę", "right": "biernik", "grammar_point": "przypadki-funkcje" },
+        { "id": "g10-6", "left": "kierownik", "right": "mianownik", "grammar_point": "przypadki-funkcje" },
+        { "id": "g10-7", "left": "Pani Oksano!", "right": "wołacz", "grammar_point": "wolacz" }
+      ]
+    }
+  ]
+}

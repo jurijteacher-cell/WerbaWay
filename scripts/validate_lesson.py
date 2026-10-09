@@ -47,7 +47,7 @@ def in_range(rep, label, value, rng):
 
 
 def reading_text(body):
-    m = re.search(r"## 1\. Czytanie\n(.*?)\n## ", body, re.S)
+    m = re.search(r"## \d+\. Czytanie[^\n]*\n(.*?)\n## ", body, re.S)
     if not m:
         return ""
     sec = m.group(1)
@@ -100,10 +100,12 @@ def main():
     rep.ok(f"JSON-файлів: {len(data)} ({', '.join(sorted(data))})")
 
     # pictures.json optional (lessons may omit Opis zdjęć / picture-set)
+    # kind=grammar — окремий трек (карта випадків тощо), той самий мінімальний набір
     required = {"lesson": ["vocab", "comm-tasks", "grammar", "hw"],
+                "grammar": ["vocab", "comm-tasks", "grammar", "hw"],
                 "review": ["vocab", "comm-tasks", "grammar", "hw"],
                 "checkpoint": ["test"], "exam": ["test"]}[kind]
-    if kind == "lesson" and level in ("A2", "B1"):
+    if kind in ("lesson", "grammar") and level in ("A2", "B1"):
         required.append("exam")
     for r in required:
         if r not in data:
@@ -155,7 +157,7 @@ def main():
     # Нові уроки можуть мати [SLIDES:] замість [BOARD:]; тоді картки не вимагаємо.
     has_slides = bool(re.search(r"\[SLIDES:", body))
     cards = board_cards(body)
-    if kind in ("lesson", "review") and not has_slides:
+    if kind in ("lesson", "review", "grammar") and not has_slides:
         if params:
             in_range(rep, "Картки на дошці", len(cards), params["cards"])
         for num, title, text in cards:
@@ -187,8 +189,13 @@ def main():
                 rep.err(f"картки без вправ (covers_cards): {missing}")
             if params and kind == "lesson":
                 in_range(rep, "Граматичні блоки", len(data["grammar"].get("blocks", [])), params["blocks"])
-    elif has_slides and "grammar" in data and params and kind == "lesson":
-        in_range(rep, "Граматичні блоки", len(data["grammar"].get("blocks", [])), params["blocks"])
+    elif has_slides and "grammar" in data and params and kind in ("lesson", "grammar"):
+        # grammar-track може мати більше блоків (g0 + g1–g10)
+        nblocks = len(data["grammar"].get("blocks", []))
+        lo, hi = params["blocks"]
+        if kind == "grammar":
+            hi = max(hi, 12)
+        in_range(rep, "Граматичні блоки", nblocks, (lo, hi))
         rep.ok("Граматика через [SLIDES:] — перевірка карток BOARD пропущена")
 
     # ---------- маркери ----------
@@ -201,11 +208,18 @@ def main():
             rep.err(f"IMAGE без source: {m[:60]}")
 
     # ---------- обсяги ----------
-    if params and kind == "lesson":
+    if params and kind in ("lesson", "grammar"):
         tw = len([w for w in re.findall(r"\S+", reading_text(body)) if re.search(r"\w", w)])
-        in_range(rep, "Текст Czytanie, слів", tw, params["text"])
+        text_rng = params["text"]
+        vocab_rng = params["vocab"]
+        comm_rng = params["comm"]
+        if kind == "grammar":
+            # граматичний трек: коротший словник, менше карток comm
+            vocab_rng = (20, 40)
+            comm_rng = (2, 4)
+        in_range(rep, "Текст Czytanie, слів", tw, text_rng)
         if "vocab" in data:
-            in_range(rep, "Словник", len(data["vocab"].get("items", [])), params["vocab"])
+            in_range(rep, "Словник", len(data["vocab"].get("items", [])), vocab_rng)
         if "pictures" in data:
             in_range(rep, "Пари в колажі", len(data["pictures"].get("items", [])), params["pairs"])
             for it in data["pictures"]["items"]:
@@ -214,9 +228,9 @@ def main():
                     rep.err(f"pictures: {it.get('id')} — треба 2 фото, у кожного source")
         if "comm-tasks" in data:
             items = data["comm-tasks"].get("items", [])
-            in_range(rep, "Комунікаційні задачі", len(items), params["comm"])
+            in_range(rep, "Комунікаційні задачі", len(items), comm_rng)
             dlg = (items[0] if items else {}).get("model_dialogue", [])
-            if not 10 <= len(dlg) <= 14:
+            if dlg and not 10 <= len(dlg) <= 14:
                 rep.err(f"c1.model_dialogue: {len(dlg)} реплік (треба 10–14)")
 
     # ---------- A0: instruction_uk ----------
@@ -233,14 +247,18 @@ def main():
         tfm, tbody = split_frontmatter(t)
         dur, ses = tfm.get("duration_minutes", 90), tfm.get("sessions", 1)
         per = dur // ses if ses else dur
-        # Лише основні «### Заняття N» (не варіант 3×60 і не «Заняття A/B/C»).
+        # Основні «### Заняття N» або «**Заняття N**» (стоп перед варіантом 3×60 / ##).
         sessions = re.findall(
-            r"(### Заняття \d+[^\n]*\n.*?)(?=\n### |\n## |\Z)",
+            r"(?:### |\*\*)Заняття \d+[^\n]*\*?\*?\n(.*?)(?=\n(?:### |\*\*)Заняття |\n\*\*Варіант|\n## |\Z)",
             tbody,
             re.S,
         )
         if not sessions:
-            sessions = re.split(r"\n### ", tbody)[1:] or [tbody]
+            sessions = re.findall(
+                r"(### Заняття \d+[^\n]*\n.*?)(?=\n### |\n\*\*Варіант|\n## |\Z)",
+                tbody,
+                re.S,
+            )
         for sidx, s in enumerate(sessions, 1):
             mins = [int(x) for x in re.findall(r"^\| (\d+) \|", s, re.M)]
             if mins and sum(mins) != per:

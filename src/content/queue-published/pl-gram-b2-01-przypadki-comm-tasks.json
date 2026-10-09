@@ -1,0 +1,51 @@
+{
+  "lesson_id": "pl-gram-b2-01-przypadki",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: nowe mieszkanie, nowa okolica",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę.",
+  "estimated_minutes": 20,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "listen-then-play",
+      "front_title": "Pokój do wynajęcia",
+      "back_scenario": "Dzwonisz w sprawie ogłoszenia o pokoju do wynajęcia. Najpierw posłuchaj przykładowej rozmowy, potem zadzwoń sam(a) — w sprawie innego pokoju, z innymi pytaniami i inną ceną.",
+      "back_checklist": [
+        "Zapytaj o czynsz i o to, czy opłaty są wliczone w cenę.",
+        "Dowiedz się, ile wynosi kaucja i kiedy ją odzyskasz.",
+        "Ustal, z kim będziesz mieszkać.",
+        "Zapytaj, czy pokój jest umeblowany.",
+        "Umów się na obejrzenie pokoju i podpisanie umowy najmu."
+      ],
+      "model_dialogue": [
+        { "speaker": "Pan Wojciech", "voice": "pl-PL-male", "line": "Halo, słucham?" },
+        { "speaker": "Marta", "voice": "pl-PL-female", "line": "Dzień dobry, dzwonię w sprawie ogłoszenia o pokoju przy ulicy Lipowej. Czy jest jeszcze aktualne?" },
+        { "speaker": "Pan Wojciech", "voice": "pl-PL-male", "line": "Tak, jak najbardziej. Pokój jest umeblowany, ma piętnaście metrów i wychodzi na balkon." },
+        { "speaker": "Marta", "voice": "pl-PL-female", "line": "A ile wynosi czynsz?" },
+        { "speaker": "Pan Wojciech", "voice": "pl-PL-male", "line": "Tysiąc dwieście złotych miesięcznie. Do tego dochodzą opłaty za prąd i internet, około stu pięćdziesięciu złotych." },
+        { "speaker": "Marta", "voice": "pl-PL-female", "line": "Czy trzeba zapłacić kaucję?" },
+        { "speaker": "Pan Wojciech", "voice": "pl-PL-male", "line": "Tak, kaucja wynosi tyle, ile jeden czynsz. Oddaję ją przy wyprowadzce." },
+        { "speaker": "Marta", "voice": "pl-PL-female", "line": "Rozumiem. A z kim będę mieszkać?" },
+        { "speaker": "Pan Wojciech", "voice": "pl-PL-male", "line": "Z młodą parą. On jest informatykiem, ona pracuje w przychodni. Ja mieszkam piętro niżej." },
+        { "speaker": "Marta", "voice": "pl-PL-female", "line": "Brzmi dobrze. Czy w okolicy jest jakiś przystanek?" },
+        { "speaker": "Pan Wojciech", "voice": "pl-PL-male", "line": "Tak, tramwaj zatrzymuje się dwie minuty od bloku, przy skrzyżowaniu." },
+        { "speaker": "Marta", "voice": "pl-PL-female", "line": "Kiedy mogę obejrzeć pokój?" },
+        { "speaker": "Pan Wojciech", "voice": "pl-PL-male", "line": "Może jutro o osiemnastej? Wtedy pokażę pani też umowę najmu." },
+        { "speaker": "Marta", "voice": "pl-PL-female", "line": "Świetnie, jutro o osiemnastej. Do zobaczenia!" }
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Nowa sąsiadka",
+      "back_scenario": "Na klatce schodowej spotykasz nową sąsiadkę, która wczoraj wprowadziła się na Twoje osiedle. Nie zna jeszcze okolicy. Pomóż jej się odnaleźć.",
+      "back_checklist": [
+        "Przedstaw się i powiedz, od kiedy mieszkasz na tym osiedlu.",
+        "Wytłumacz, jak dojść do najbliższego przystanku i do przychodni.",
+        "Powiedz, co jest po drugiej stronie ulicy i gdzie warto zrobić zakupy.",
+        "Poleć miejsce na spacer i powiedz, jak tam dojść od skrzyżowania.",
+        "Zaproponuj pomoc albo wspólną kawę."
+      ]
+    }
+  ]
+}

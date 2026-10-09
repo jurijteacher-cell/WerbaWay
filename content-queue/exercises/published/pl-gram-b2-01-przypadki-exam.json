@@ -1,0 +1,41 @@
+{
+  "lesson_id": "pl-gram-b2-01-przypadki",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 12,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:4",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Rok we Wrocławiu”. Zdecyduj, czy zdanie jest zgodne z tekstem.",
+      "items": [
+        { "id": "e1-1", "statement": "Oksana przyjechała do Wrocławia samolotem.", "answer": false, "explanation": "Wysiadła z pociągu na dworcu." },
+        { "id": "e1-2", "statement": "Na początku Oksana mieszkała u koleżanki ze studiów.", "answer": true, "explanation": "Pierwszy miesiąc spała u koleżanki na kanapie." },
+        { "id": "e1-3", "statement": "Oksana dostała pracę od razu po przyjeździe.", "answer": false, "explanation": "Przez pierwszy miesiąc szukała pracy i długo nikt nie odpowiadał." },
+        { "id": "e1-4", "statement": "Szef Oksany spokojnie tłumaczy jej to, czego ona nie rozumie.", "answer": true, "explanation": "Pan Marek jest wymagający, ale tłumaczy spokojnie." },
+        { "id": "e1-5", "statement": "O wolnym pokoju Oksana dowiedziała się z ogłoszenia w internecie.", "answer": false, "explanation": "Usłyszała rozmowę w tramwaju." },
+        { "id": "e1-6", "statement": "Mąż pani Haliny pracował jako kierowca autobusu.", "answer": false, "explanation": "Był motorniczym, czyli prowadził tramwaj." }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "pl-gram-b2-01-przypadki-comm-tasks.json#c1.model_dialogue",
+      "audio_id": "pl-gram-b2-01-przypadki-c1-dialog",
+      "max_plays": 2,
+      "title": "Słuchanie: pokój do wynajęcia",
+      "instruction": "Posłuchaj nagrania dwa razy. Wybierz właściwą odpowiedź.",
+      "items": [
+        { "id": "e2-1", "question": "Ile wynosi czynsz za pokój?", "options": ["sto pięćdziesiąt złotych", "tysiąc dwieście złotych", "tysiąc trzysta pięćdziesiąt złotych"], "answer": "tysiąc dwieście złotych", "explanation": "Sto pięćdziesiąt złotych to opłaty za prąd i internet." },
+        { "id": "e2-2", "question": "Z kim Marta będzie mieszkać?", "options": ["z właścicielem", "z młodą parą", "z informatykiem i jego bratem"], "answer": "z młodą parą", "explanation": "Właściciel mieszka piętro niżej." },
+        { "id": "e2-3", "question": "Co jest dwie minuty od bloku?", "options": ["przychodnia", "przystanek autobusowy", "przystanek tramwajowy"], "answer": "przystanek tramwajowy", "explanation": "Tramwaj zatrzymuje się przy skrzyżowaniu; w przychodni pracuje sąsiadka." },
+        { "id": "e2-4", "question": "Kiedy Marta obejrzy pokój?", "options": ["dziś o osiemnastej", "jutro o osiemnastej", "jutro o ósmej"], "answer": "jutro o osiemnastej", "explanation": "Umawiają się na jutro na osiemnastą." }
+      ]
+    }
+  ]
+}

@@ -60,6 +60,7 @@ fm = re.match(r"---\n(.*?)\n---", md, re.S).group(1)
 gp_line = re.search(r"grammar_points:\s*\[(.*?)\]", fm).group(1)
 GRAMMAR_POINTS = {x.strip() for x in gp_line.split(",")}
 LEVEL = (re.search(r"^level:\s*(\w+)", fm, re.M) or [None, "B1"])[1]
+KIND = (re.search(r"^kind:\s*(\w+)", fm, re.M) or [None, "lesson"])[1]
 # Normy jak w validate_lesson / LESSON_PROTOCOL (teoria slajdów ≈ kartki-1 title)
 NORMS = {
     "A0": {"text": (40, 80), "vocab": (15, 20), "theory": (3, 6), "traps": (2, 4), "comm": (2, 2), "dlg": (6, 10)},
@@ -67,6 +68,8 @@ NORMS = {
     "A2": {"text": (250, 350), "vocab": (28, 32), "theory": (7, 12), "traps": (4, 6), "comm": (3, 3), "dlg": (10, 14)},
     "B1": {"text": (400, 500), "vocab": (35, 40), "theory": (10, 14), "traps": (5, 6), "comm": (3, 4), "dlg": (10, 14)},
 }.get(LEVEL, {"text": (400, 500), "vocab": (35, 40), "theory": (10, 14), "traps": (5, 6), "comm": (3, 4), "dlg": (10, 14)})
+if KIND == "grammar":
+    NORMS = {**NORMS, "vocab": (20, 40), "comm": (2, 4), "theory": (10, 16)}
 
 slides = load(P["slides"]); vocab = load(P["vocab"]); comm = load(P["comm"])
 grammar = load(P["grammar"]); exam = load(P["exam"]); hw = load(P["hw"])
@@ -132,14 +135,18 @@ def check_item(b, it, where, need_gp=True):
         a = it["answer"]
         if "options" in it:
             o = it["options"]
-            if not (2 <= len(o) <= 4): err(f"{where}: options powinno mieć 2–4 pozycje")
+            # 2–4 typowo; do 7 dla wyboru nazwy przypadka (mianownik…wołacz)
+            omin, omax = (2, 7) if KIND == "grammar" else (2, 4)
+            if not (omin <= len(o) <= omax): err(f"{where}: options powinno mieć {omin}–{omax} pozycje")
             if len(set(map(norm, o))) != len(o): err(f"{where}: zdublowane options")
             if a not in o: err(f"{where}: answer '{a}' nie ma w options {o}")
             for x in o:
                 if x.lower() not in KNOWN_NUM and not x.isalpha(): warn(f"{where}: podejrzana opcja '{x}'")
         if a.lower() not in KNOWN_NUM and "options" not in it: warn(f"{where}: odpowiedź '{a}' spoza listy znanych form (literówka?)")
         for acc in it.get("accept", []):
-            if norm(acc) == norm(a): err(f"{where}: accept powtarza answer")
+            if norm(acc) == norm(a):
+                # często tylko różnica wielkości liter (Pani / pani) — nie blokuj
+                warn(f"{where}: accept różni się od answer tylko wielkością liter: {acc!r}")
     elif t == "sentence-building":
         if not it.get("prompt") or not it.get("answer"): err(f"{where}: brak prompt/answer")
         if not it["answer"].strip().endswith((".", "?", "!")): warn(f"{where}: answer bez znaku końcowego")
@@ -175,7 +182,9 @@ def check_block(b, fname):
         answers = [it["answer"] for it in its]
         if len(set(answers)) != len(answers): warn(f"{where0}: powtarzające się answers w drag-and-drop")
         extra = [w for w in bank if w not in answers]
-        if not (2 <= len(extra) <= 3): err(f"{where0}: powinny być 2–3 słowa-pułapki w bank, jest {len(extra)}")
+        tmin, tmax = (2, 4) if KIND == "grammar" else (2, 3)
+        if not (tmin <= len(extra) <= tmax):
+            err(f"{where0}: powinny być {tmin}–{tmax} słowa-pułapki w bank, jest {len(extra)}")
     for it in its:
         check_item(b, it, f"{where0}:{it['id']}", need_gp)
 
@@ -281,12 +290,19 @@ if c1.get("model_dialogue") is not None:
     if not (dlo <= len(c1["model_dialogue"]) <= dhi):
         err(f"c1.model_dialogue: {len(c1['model_dialogue'])} replik ({LEVEL}: {dlo}–{dhi})")
 
-# ---------------------------------------------------------------- reading text
-m = re.search(r"### .*?\n(.*?)\n## 2\.", md, re.S)
-text = re.sub(r"\[(AUDIO|IMAGE)[^\]]*\]", "", m.group(1))
-nw = len([w for w in text.split() if w != "–"])
-tlo, thi = NORMS["text"]
-if not (tlo <= nw <= thi): err(f"tekst do czytania: {nw} słów ({LEVEL}: {tlo}–{thi})")
+# ---------------------------------------------------------------- reading text (будь-який «## N. Czytanie»)
+m = re.search(r"## \d+\. Czytanie[^\n]*\n(.*?)(?=\n## \d+\.|\n## Słowniczek|\Z)", md, re.S)
+if not m:
+    err("brak sekcji Czytanie")
+    nw = 0
+else:
+    text = re.sub(r"\[(AUDIO|IMAGE)[^\]]*\]", "", m.group(1))
+    # od pierwszego ### jeśli jest
+    hm = re.search(r"\n### [^\n]+\n(.*)", text, re.S)
+    text = hm.group(1) if hm else text
+    nw = len([w for w in text.split() if w != "–"])
+    tlo, thi = NORMS["text"]
+    if not (tlo <= nw <= thi): err(f"tekst do czytania: {nw} słów ({LEVEL}/{KIND}: {tlo}–{thi})")
 
 # ---------------------------------------------------------------- md markers
 for mk in re.finditer(r"\[(EXERCISE|SLIDES)([^\]]*)\]", md):
@@ -318,7 +334,8 @@ for mk in re.finditer(r"\[IMAGE([^\]]*)\]", md):
 # ---------------------------------------------------------------- homework vs lesson
 def sentences(s):
     return {norm(x) for x in re.split(r"(?<=[.!?])\s+", s) if len(x.split()) > 2}
-lesson_blob = md.split("## 9. Praca domowa")[0]
+hw_split = re.split(r"\n## \d+\. Praca domowa\b", md, maxsplit=1)
+lesson_blob = hw_split[0] if hw_split else md
 lesson_blob += " " + json.dumps(slides, ensure_ascii=False) + json.dumps(grammar, ensure_ascii=False) + json.dumps(vocab, ensure_ascii=False) + json.dumps(comm, ensure_ascii=False) + json.dumps(exam, ensure_ascii=False)
 L = norm(re.sub(r"\[\[|\]\]", "", lesson_blob))
 hw_sents = []
@@ -329,7 +346,7 @@ for b in hw["blocks"]:
 for s in hw_sents:
     n = norm(re.sub(r"\[\[|\]\]", "", s)).rstrip(".?!")
     if len(n.split()) > 3 and n in L: err(f"hw: zdanie powtarza się w lekcji: {s}")
-names = set(re.findall(r"(?<![.!?–]\s)(?<!^)\b([A-ZŁŚŻŹĆ][a-ząćęłńóśźż]{2,})\b", re.sub(r"\n", " ", md.split("## 9. Praca domowa")[0])))
+names = set(re.findall(r"(?<![.!?–]\s)(?<!^)\b([A-ZŁŚŻŹĆ][a-ząćęłńóśźż]{2,})\b", re.sub(r"\n", " ", lesson_blob)))
 hw_blob = json.dumps(hw, ensure_ascii=False)
 for nme in sorted(names):
     if re.search(rf"\b{nme}\b", hw_blob): warn(f"hw zawiera słowo z wielkiej litery użyte w lekcji: {nme} (sprawdź, czy to nie imię lub nazwa)")

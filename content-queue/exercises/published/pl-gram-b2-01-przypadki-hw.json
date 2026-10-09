@@ -1,0 +1,98 @@
+{
+  "lesson_id": "pl-gram-b2-01-przypadki",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: przypadki w nowych sytuacjach",
+  "instruction": "Sześć bloków. Nie zaglądaj do slajdów, dopóki nie skończysz — potem sprawdź się z mapą przypadków.",
+  "estimated_minutes": 40,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "drag-and-drop",
+      "title": "1. Słowa z lekcji",
+      "instruction": "Uzupełnij zdania słowami z banku. Dwa słowa są zbędne.",
+      "bank": ["umowę najmu", "czynsz", "kaucję", "osiedlu", "przystanku", "opiekuje się", "umowa najmu", "osiedle"],
+      "items": [
+        { "id": "h1-1", "text": "Zanim coś podpiszesz, dokładnie przeczytaj ___.", "answer": "umowę najmu", "grammar_point": "slownictwo" },
+        { "id": "h1-2", "text": "Ile wynosi ___ za to mieszkanie?", "answer": "czynsz", "grammar_point": "slownictwo" },
+        { "id": "h1-3", "text": "Kiedy się wyprowadzisz, właściciel odda ci ___.", "answer": "kaucję", "grammar_point": "slownictwo" },
+        { "id": "h1-4", "text": "Na tym ___ są dwie szkoły i duży park.", "answer": "osiedlu", "grammar_point": "slownictwo" },
+        { "id": "h1-5", "text": "Do ___ idzie się pięć minut.", "answer": "przystanku", "grammar_point": "slownictwo" },
+        { "id": "h1-6", "text": "Iwona od lat ___ starszą sąsiadką.", "answer": "opiekuje się", "grammar_point": "slownictwo" }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Rozpoznaj przypadek",
+      "instruction": "Wybierz przypadek słowa w cudzysłowie.",
+      "items": [
+        { "id": "h2-1", "text": "„Olek pracuje jako kucharz w hotelu” — słowo „hotelu” to ___.", "options": ["mianownik", "dopełniacz", "celownik", "biernik", "narzędnik", "miejscownik"], "answer": "miejscownik", "grammar_point": "przypadki-funkcje" },
+        { "id": "h2-2", "text": "„Magda pożyczyła bratu pieniądze” — słowo „bratu” to ___.", "options": ["mianownik", "dopełniacz", "celownik", "biernik", "narzędnik", "miejscownik"], "answer": "celownik", "grammar_point": "przypadki-funkcje" },
+        { "id": "h2-3", "text": "„Bartek nie ma prawa jazdy” — słowo „prawa” to ___.", "options": ["mianownik", "dopełniacz", "celownik", "biernik", "narzędnik", "miejscownik"], "answer": "dopełniacz", "grammar_point": "przypadki-funkcje" },
+        { "id": "h2-4", "text": "„Wczoraj obejrzeliśmy mecz” — słowo „mecz” to ___.", "options": ["mianownik", "dopełniacz", "celownik", "biernik", "narzędnik", "miejscownik"], "answer": "biernik", "grammar_point": "przypadki-funkcje" },
+        { "id": "h2-5", "text": "„Moja ciotka została aktorką” — słowo „aktorką” to ___.", "options": ["mianownik", "dopełniacz", "celownik", "biernik", "narzędnik", "miejscownik"], "answer": "narzędnik", "grammar_point": "przypadki-funkcje" },
+        { "id": "h2-6", "text": "„Na stole leży list” — słowo „list” to ___.", "options": ["mianownik", "dopełniacz", "celownik", "biernik", "narzędnik", "miejscownik"], "answer": "mianownik", "grammar_point": "przypadki-funkcje" }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Negacja i przyimki",
+      "instruction": "Wpisz słowo z nawiasu w odpowiedniej formie.",
+      "items": [
+        { "id": "h3-1", "text": "Bartek nigdy nie je ___ (mięso).", "answer": "mięsa", "grammar_point": "przypadki-funkcje" },
+        { "id": "h3-2", "text": "W sierpniu wyjeżdżamy za ___ (granica).", "answer": "granicę", "grammar_point": "przypadki-przyimki" },
+        { "id": "h3-3", "text": "Przez dziesięć lat mieszkali za ___ (granica).", "answer": "granicą", "grammar_point": "przypadki-przyimki" },
+        { "id": "h3-4", "text": "Magda wróciła wczoraj z ___ (Hiszpania).", "answer": "Hiszpanii", "grammar_point": "przypadki-przyimki" },
+        { "id": "h3-5", "text": "Kuba czeka na nas przed ___ (wejście).", "answer": "wejściem", "grammar_point": "przypadki-przyimki" },
+        { "id": "h3-6", "text": "Kwiaty są dla ___ (nauczycielka).", "answer": "nauczycielki", "grammar_point": "przypadki-przyimki" },
+        { "id": "h3-7", "text": "Według ___ (prognoza) jutro będzie padać.", "answer": "prognozy", "grammar_point": "przypadki-przyimki" },
+        { "id": "h3-8", "text": "W tym sklepie nie ma ___ (chleb) bez glutenu.", "answer": "chleba", "grammar_point": "przypadki-funkcje" }
+      ]
+    },
+    {
+      "block_id": "h4",
+      "exercise_type": "fill-in-blank",
+      "title": "4. Trzy rodzaje",
+      "instruction": "Wpisz rzeczownik w odpowiedniej formie.",
+      "items": [
+        { "id": "h4-1", "text": "Zapisałem się do ___ (okulista) na wtorek.", "answer": "okulisty", "grammar_point": "rzecz-lp-meski" },
+        { "id": "h4-2", "text": "Iwona przyjechała na urlop z ___ (mąż).", "answer": "mężem", "grammar_point": "rzecz-lp-meski" },
+        { "id": "h4-3", "text": "Wiesz coś o tym ___ (hotel)?", "answer": "hotelu", "grammar_point": "rzecz-lp-meski" },
+        { "id": "h4-4", "text": "Dziękuję ___ (trener) za cierpliwość.", "answer": "trenerowi", "grammar_point": "rzecz-lp-meski" },
+        { "id": "h4-5", "text": "Spotkajmy się w ___ (restauracja) na rogu.", "answer": "restauracji", "grammar_point": "rzecz-lp-zenski" },
+        { "id": "h4-6", "text": "Olek dał kwiaty ___ (żona).", "answer": "żonie", "grammar_point": "rzecz-lp-zenski" },
+        { "id": "h4-7", "text": "Mieszkamy blisko ___ (plaża).", "answer": "plaży", "grammar_point": "rzecz-lp-zenski" },
+        { "id": "h4-8", "text": "Nie znam tego ___ (słowo).", "answer": "słowa", "grammar_point": "rzecz-lp-nijaki" },
+        { "id": "h4-9", "text": "Wszyscy w pracy rozmawiają o tym ___ (wydarzenie).", "answer": "wydarzeniu", "grammar_point": "rzecz-lp-nijaki" },
+        { "id": "h4-10", "text": "W ___ (centrum) rano zawsze są korki.", "answer": "centrum", "grammar_point": "rzecz-lp-nijaki" }
+      ]
+    },
+    {
+      "block_id": "h5",
+      "exercise_type": "fill-in-blank",
+      "title": "5. Zwracamy się do kogoś",
+      "instruction": "Wpisz wołacz.",
+      "items": [
+        { "id": "h5-1", "text": "___ (pani Magda), proszę usiąść.", "answer": "Pani Magdo", "accept": ["pani Magdo"], "grammar_point": "wolacz" },
+        { "id": "h5-2", "text": "Dzień dobry, ___ (pan doktor)!", "answer": "panie doktorze", "accept": ["Panie doktorze", "Panie Doktorze"], "grammar_point": "wolacz" },
+        { "id": "h5-3", "text": "Szanowny ___ (pan dyrektor),", "answer": "Panie Dyrektorze", "accept": ["panie dyrektorze", "Panie dyrektorze"], "grammar_point": "wolacz" },
+        { "id": "h5-4", "text": "Kochana ___ (ciocia), dziękuję za kartkę!", "answer": "Ciociu", "accept": ["ciociu"], "grammar_point": "wolacz" }
+      ]
+    },
+    {
+      "block_id": "h6",
+      "exercise_type": "sentence-building",
+      "title": "6. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd w przypadku. Napisz poprawne zdanie.",
+      "items": [
+        { "id": "h6-1", "prompt": "Bartek szuka pracę od miesiąca.", "answer": "Bartek szuka pracy od miesiąca.", "grammar_point": "kalki-uk" },
+        { "id": "h6-2", "prompt": "Mój tata jest kucharz.", "answer": "Mój tata jest kucharzem.", "grammar_point": "kalki-uk" },
+        { "id": "h6-3", "prompt": "W samochodzie słucham audiobook.", "answer": "W samochodzie słucham audiobooka.", "grammar_point": "kalki-uk" },
+        { "id": "h6-4", "prompt": "Zapytaj go o tym.", "answer": "Zapytaj go o to.", "grammar_point": "kalki-uk" },
+        { "id": "h6-5", "prompt": "Korzystam komputerem w bibliotece.", "answer": "Korzystam z komputera w bibliotece.", "grammar_point": "kalki-uk" },
+        { "id": "h6-6", "prompt": "W liceum uczyłam się historię.", "answer": "W liceum uczyłam się historii.", "grammar_point": "kalki-uk" }
+      ]
+    }
+  ]
+}

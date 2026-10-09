@@ -1,0 +1,241 @@
+{
+  "lesson_id": "pl-gram-b2-01-przypadki",
+  "exercise_type": "grammar-slides",
+  "title": "System przypadków",
+  "slides": [
+    {
+      "id": "s1", "part": 1, "section": "teoria", "kind": "title",
+      "title": "System przypadków",
+      "subtitle": "Siedem form jednego słowa — po co?",
+      "goal": "Po tej lekcji: masz mapę wszystkich przypadków i ich końcówek.",
+      "teacher_note": "Учень говорить вільно, тому почни з того, що він уже знає: «Які відмінки ти вживаєш, не думаючи?». Мета уроку — не нове, а система: одна мапа на всі відмінки."
+    },
+    {
+      "id": "s2", "part": 1, "section": "teoria", "kind": "table", "reveal": "row",
+      "title": "Siedem przypadków: pytania",
+      "columns": ["", "pytanie", "po ukraińsku", "przykład"],
+      "rows": [
+        ["mianownik", "kto? co?", "називний", "To jest [[student]]."],
+        ["dopełniacz", "kogo? czego?", "родовий", "Nie ma [[studenta]]."],
+        ["celownik", "komu? czemu?", "давальний", "Pomagam [[studentowi]]."],
+        ["biernik", "kogo? co?", "знахідний", "Pytam [[studenta]]."],
+        ["narzędnik", "kim? czym?", "орудний", "Rozmawiam ze [[studentem]]."],
+        ["miejscownik", "o kim? o czym?", "місцевий", "Myślę o [[studencie]]."]
+      ],
+      "note": "Siódmy przypadek, wołacz, służy do zwracania się: Studencie!",
+      "teacher_note": "Порядок відмінків той самий, що в українській, — це головна опора. Відкривай по рядку й проси учня дати власний приклад до кожного."
+    },
+    {
+      "id": "s3", "part": 1, "section": "teoria", "kind": "table", "reveal": "row",
+      "title": "Do czego służy przypadek?",
+      "columns": ["", "funkcja", "typowe czasowniki"],
+      "rows": [
+        ["mianownik", "podmiot, nazwa", "to jest"],
+        ["dopełniacz", "brak, część, ilość", "szukać, potrzebować, słuchać"],
+        ["celownik", "odbiorca", "dawać, pomagać, dziękować"],
+        ["biernik", "obiekt działania", "mieć, widzieć, kupować"],
+        ["narzędnik", "narzędzie, rola", "być (kim?), interesować się"],
+        ["miejscownik", "temat, miejsce", "mówić o, mieszkać w"]
+      ],
+      "note": "Czasownik może wymagać innego przypadku niż po ukraińsku.",
+      "teacher_note": "Не зубрити список: попроси учня до кожного рядка додати одне своє дієслово. Дієслова з родовим (szukać, słuchać) — головне джерело помилок, до них повернемося в пастках."
+    },
+    {
+      "id": "s4", "part": 1, "section": "teoria", "kind": "compare",
+      "title": "Negacja: biernik → dopełniacz",
+      "left": { "head": "tak", "rule": "biernik; „jest” + mianownik", "examples": ["Mam [[samochód]].", "Jest [[mleko]]."] },
+      "right": { "head": "nie", "rule": "dopełniacz", "examples": ["Nie mam [[samochodu]].", "Nie ma [[mleka]]."] },
+      "note": "Celownik i narzędnik po „nie” zostają: Nie pomagam bratu.",
+      "teacher_note": "Навіть ті, хто вільно говорить, кажуть «nie mam samochód» за інерцією — перевір на слух. Змінюється тільки знахідний (і «jest → nie ma»)."
+    },
+    {
+      "id": "s5", "part": 1, "section": "teoria", "kind": "table", "reveal": "row",
+      "title": "Przyimki z dopełniaczem",
+      "columns": ["przyimek", "znaczenie", "przykład"],
+      "rows": [
+        ["do", "dokąd? do kogo?", "Idę [[do sklepu]]."],
+        ["od", "od kogo? od kiedy?", "List [[od mamy]]."],
+        ["z", "skąd?", "Wracam [[z uczelni]]."],
+        ["bez", "brak", "Kawa [[bez cukru]]."],
+        ["dla", "dla kogo?", "Prezent [[dla dziecka]]."],
+        ["u", "u kogo? (miejsce)", "Jestem [[u lekarza]]."]
+      ],
+      "note": "Też z dopełniaczem: obok, koło, podczas, według, zamiast, wśród.",
+      "teacher_note": "«u + родовий» = в когось удома чи в кабінеті: u lekarza, u babci. Українське «у лікаря» збігається — це легкий рядок, не затримуйся."
+    },
+    {
+      "id": "s6", "part": 1, "section": "teoria", "kind": "table", "reveal": "row",
+      "title": "Przyimki z celownikiem i narzędnikiem",
+      "columns": ["przyimek", "przypadek", "przykład"],
+      "rows": [
+        ["dzięki", "celownik", "[[dzięki pomocy]] przyjaciół"],
+        ["przeciwko", "celownik", "[[przeciwko wojnie]]"],
+        ["z (razem)", "narzędnik", "kawa [[z mlekiem]]"],
+        ["przed", "narzędnik", "[[przed domem]]"],
+        ["nad, pod", "narzędnik", "[[nad morzem]], [[pod stołem]]"],
+        ["za, między", "narzędnik", "za rogiem, między drzewami"]
+      ],
+      "note": "„Z” + dopełniacz = skąd, „z” + narzędnik = razem.",
+      "teacher_note": "Головна пастка — «z»: звідки (родовий) vs з ким/чим (орудний). Попроси скласти пару: z pracy / z kolegą."
+    },
+    {
+      "id": "s7", "part": 1, "section": "teoria", "kind": "table", "reveal": "row",
+      "title": "Przyimki z miejscownikiem",
+      "columns": ["przyimek", "znaczenie", "przykład"],
+      "rows": [
+        ["w", "gdzie?", "[[w biurze]]"],
+        ["na", "gdzie?", "[[na poczcie]]"],
+        ["o", "o kim? o czym?", "mówić [[o pogodzie]]"],
+        ["przy", "blisko; w trakcie", "[[przy stole]], [[przy pracy]]"],
+        ["po", "po czym? (czas, ruch)", "[[po obiedzie]], po mieście"]
+      ],
+      "note": "Miejscownik zawsze występuje z przyimkiem.",
+      "teacher_note": "Вибір w/na часто традиційний (na poczcie, w banku, na uniwersytecie) — не шукай логіки, вчи парами. Місцевий без прийменника не буває."
+    },
+    {
+      "id": "s8", "part": 1, "section": "teoria", "kind": "compare",
+      "title": "Gdzie czy dokąd?",
+      "left": { "head": "gdzie? — stan", "rule": "w, na + miejscownik", "examples": ["Jestem [[w kinie]].", "Jestem [[na plaży]]."] },
+      "right": { "head": "dokąd? — ruch", "rule": "do + dopełniacz; na + biernik", "examples": ["Idę [[do kina]].", "Idę [[na plażę]]."] },
+      "note": "Na plaży czy na plażę? Decyduje ruch.",
+      "teacher_note": "Питай «gdzie? / dokąd?» до кожного прикладу. В українській те саме (на пляжі / на пляж), тому учень це чує — закріплюємо як систему."
+    },
+    {
+      "id": "s9", "part": 1, "section": "teoria", "kind": "examples",
+      "title": "Te same przyimki, dwa przypadki",
+      "items": [
+        { "tag": "gdzie?", "pl": "Kot śpi [[pod stołem]].", "uk": "Кіт спить під столом." },
+        { "tag": "dokąd?", "pl": "Kot wchodzi [[pod stół]].", "uk": "Кіт залазить під стіл." },
+        { "tag": "gdzie?", "pl": "Mieszkamy [[za miastem]].", "uk": "Живемо за містом." },
+        { "tag": "dokąd?", "pl": "W sobotę jedziemy [[za miasto]].", "uk": "У суботу їдемо за місто." }
+      ],
+      "note": "Tak działają: za, pod, nad, przed, między.",
+      "teacher_note": "Логіка «стан → орудний, рух → знахідний» для п'яти прийменників. Українська працює так само — попроси учня перекласти дзеркально."
+    },
+    {
+      "id": "s10", "part": 2, "section": "teoria", "kind": "table", "reveal": "column",
+      "title": "Rodzaj żeński: liczba pojedyncza",
+      "columns": ["", "kobieta", "ulica", "lekcja", "noc"],
+      "rows": [
+        ["mianownik", "kobieta", "ulica", "lekcja", "noc"],
+        ["dopełniacz", "kobiet[[y]]", "ulicy", "lekcji", "nocy"],
+        ["celownik", "kobie[[cie]]", "ulicy", "lekcji", "nocy"],
+        ["biernik", "kobiet[[ę]]", "ulicę", "lekcję", "noc"],
+        ["narzędnik", "kobiet[[ą]]", "ulicą", "lekcją", "nocą"],
+        ["miejscownik", "kobie[[cie]]", "ulicy", "lekcji", "nocy"]
+      ],
+      "note": "Celownik i miejscownik w rodzaju żeńskim mają tę samą formę.",
+      "teacher_note": "Відкривай по стовпчику: тверда основа → -y → -i → на приголосний. Попроси знайти однакові клітинки: родовий, давальний і місцевий у ulica, lekcja, noc."
+    },
+    {
+      "id": "s11", "part": 2, "section": "teoria", "kind": "table", "reveal": "row",
+      "title": "Oboczności przed -e",
+      "columns": ["zmiana", "mianownik", "celownik / miejscownik"],
+      "rows": [
+        ["t → ci", "kobieta", "kobie[[cie]]"],
+        ["d → dzi", "woda", "wo[[dzie]]"],
+        ["r → rz", "siostra", "siost[[rze]]"],
+        ["ł → l", "szkoła", "szko[[le]]"],
+        ["k → c", "Polska", "Pols[[ce]]"],
+        ["g → dz", "droga", "dro[[dze]]"]
+      ],
+      "note": "Inne twarde spółgłoski miękną: mama → mamie, kawa → kawie.",
+      "teacher_note": "Ті самі чергування будуть у місцевому чоловічого роду (o bracie, w ogrodzie, na stole). Ще одне: ch → sz (mucha → musze)."
+    },
+    {
+      "id": "s12", "part": 2, "section": "teoria", "kind": "table", "reveal": "column",
+      "title": "Rodzaj męski: liczba pojedyncza",
+      "columns": ["", "student", "lekarz", "komputer", "stół"],
+      "rows": [
+        ["mianownik", "student", "lekarz", "komputer", "stół"],
+        ["dopełniacz", "student[[a]]", "lekarza", "komputera", "stoł[[u]]"],
+        ["celownik", "student[[owi]]", "lekarzowi", "komputerowi", "stołowi"],
+        ["biernik", "student[[a]]", "lekarza", "komputer", "stół"],
+        ["narzędnik", "studentem", "lekarzem", "komputerem", "stołem"],
+        ["miejscownik", "studen[[cie]]", "lekarz[[u]]", "komputerze", "stole"]
+      ],
+      "note": "Biernik: osoba i zwierzę jak dopełniacz, rzecz jak mianownik.",
+      "teacher_note": "Ключове: знахідний живих = родовий (studenta), неживих = називний (komputer). Місцевий: -e з чергуванням (studencie, stole) або -u після м'яких (lekarzu)."
+    },
+    {
+      "id": "s13", "part": 2, "section": "teoria", "kind": "compare",
+      "title": "Dopełniacz męski: -a czy -u?",
+      "left": { "head": "-a", "rule": "zwykle: osoby, zwierzęta, narzędzia", "examples": ["Szukam [[Marka]].", "Nie mam [[noża]].", "do [[października]]"] },
+      "right": { "head": "-u", "rule": "zwykle: pojęcia, substancje", "examples": ["Nie mam [[czasu]].", "szklanka [[soku]]"] },
+      "note": "To tendencja: w razie wątpliwości sprawdź w słowniku.",
+      "teacher_note": "Це тенденція, а не закон: komputera, але samochodu, telefonu. Учню, який говорить, краще довіряти слуху, а спірні форми перевіряти в словнику."
+    },
+    {
+      "id": "s14", "part": 2, "section": "teoria", "kind": "table", "reveal": "column",
+      "title": "Rodzaj nijaki: liczba pojedyncza",
+      "columns": ["", "okno", "morze", "mieszkanie"],
+      "rows": [
+        ["mianownik", "okno", "morze", "mieszkanie"],
+        ["dopełniacz", "okn[[a]]", "morza", "mieszkania"],
+        ["celownik", "okn[[u]]", "morzu", "mieszkaniu"],
+        ["biernik", "okno", "morze", "mieszkanie"],
+        ["narzędnik", "okn[[em]]", "morzem", "mieszkaniem"],
+        ["miejscownik", "ok[[nie]]", "morz[[u]]", "mieszkaniu"]
+      ],
+      "note": "Biernik w rodzaju nijakim = mianownik.",
+      "teacher_note": "Середній рід найпростіший: знахідний = називний. Порівняй місцевий: okno → oknie (тверда основа, -e), morze → morzu (м'яка, -u)."
+    },
+    {
+      "id": "s15", "part": 2, "section": "teoria", "kind": "table", "reveal": "row",
+      "title": "Wołacz: zwracamy się do kogoś",
+      "columns": ["", "mianownik", "wołacz"],
+      "rows": [
+        ["ona", "pani Anna", "Pani [[Anno]]!"],
+        ["ona", "Kasia", "[[Kasiu]]!"],
+        ["ona", "mama", "[[Mamo]]!"],
+        ["on", "pan Tomasz", "Panie [[Tomaszu]]!"],
+        ["on", "Marek", "[[Marku]]!"],
+        ["on", "pan profesor", "Panie [[profesorze]]!"]
+      ],
+      "note": "W rozmowie potocznej często słychać mianownik: Kasia, chodź!",
+      "teacher_note": "У листах, на роботі, до незнайомих — тільки кличний. «Kasia, chodź!» серед друзів нормально, а «Pani Anna, proszę…» звучить недбало."
+    },
+    {
+      "id": "s16", "part": 2, "section": "wyjatki", "kind": "exceptions", "refers_to": "s12",
+      "title": "Rodzaj męski: inne końcówki",
+      "items": [
+        { "rule": "Celownik na -u", "example": "kotu, psu, bratu, ojcu, panu, chłopcu" },
+        { "rule": "Miejscownik -u: po k, g, ch", "example": "w parku, na brzegu; też: w domu, o synu" },
+        { "rule": "Potocznie: rzecz jak osoba", "example": "zjeść banana, wysłać maila, mieć papierosa" }
+      ],
+      "teacher_note": "Ці форми учень, найімовірніше, вже вживає на слух — просто назви їх окремою групою. Третій пункт — розмовна норма; в офіційному тексті частіше «wysłać e-mail»."
+    },
+    {
+      "id": "s17", "part": 2, "section": "wyjatki", "kind": "table", "reveal": "row", "refers_to": "s14",
+      "title": "Rodzaj nijaki: -ę i -um",
+      "columns": ["mianownik", "dopełniacz", "celownik", "miejscownik"],
+      "rows": [
+        ["imię", "imi[[enia]]", "imieniu", "imieniu"],
+        ["zwierzę", "zwierzę[[cia]]", "zwierzęciu", "zwierzęciu"],
+        ["muzeum", "muzeum", "muzeum", "muzeum"]
+      ],
+      "note": "Muzeum, liceum, centrum odmieniają się dopiero w liczbie mnogiej.",
+      "teacher_note": "Дві групи на -ę (imię → imienia, zwierzę → zwierzęcia) і незмінні в однині на -um. Українське «ім'я — імені» допомагає запам'ятати першу."
+    },
+    {
+      "id": "s18", "part": 2, "section": "pulapki", "kind": "traps",
+      "title": "Pułapki z ukraińskiego (1)",
+      "items": [
+        { "uk": "Шукаю роботу.", "wrong": "Szukam pracę.", "right": "Szukam [[pracy]].", "why": "Szukać czego? — dopełniacz, nie biernik." },
+        { "uk": "Слухаю музику.", "wrong": "Słucham muzykę.", "right": "Słucham [[muzyki]].", "why": "Słuchać, szukać, potrzebować — wszystkie z dopełniaczem." },
+        { "uk": "Вчу польську мову.", "wrong": "Uczę się polski język.", "right": "Uczę się [[języka polskiego]].", "why": "Uczyć się czego? — dopełniacz." }
+      ],
+      "teacher_note": "Тут українська дає знахідний, а польська — родовий. Попроси учня продовжити список: potrzebować, bać się, unikać."
+    },
+    {
+      "id": "s19", "part": 2, "section": "pulapki", "kind": "traps",
+      "title": "Pułapki z ukraińskiego (2)",
+      "items": [
+        { "uk": "Я лікар.", "wrong": "Jestem lekarz.", "right": "Jestem [[lekarzem]].", "why": "Być + rzeczownik = narzędnik. Mianownik po „to”: To jest lekarz." },
+        { "uk": "Запитати про ціну.", "wrong": "Zapytać o cenie.", "right": "Zapytać [[o cenę]].", "why": "Pytać o + biernik, mówić o + miejscownik." },
+        { "uk": "Користуюся телефоном.", "wrong": "Korzystam telefonem.", "right": "Korzystam [[z telefonu]].", "why": "Korzystać z + dopełniacz." }
+      ],
+      "teacher_note": "Найчастіша помилка навіть у тих, хто вільно говорить, — «jestem + називний». Лови її на слух увесь урок."
+    }
+  ]
+}
