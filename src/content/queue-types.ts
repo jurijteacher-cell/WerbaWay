@@ -112,6 +112,10 @@ export type GrammarBoardTaskItem = {
   text?: string;
   sentence?: string;
   prompt?: string;
+  /** matching: left side */
+  left?: string;
+  /** matching: right side (also used as answer) */
+  right?: string;
   answer?: string;
   options?: string[];
   explanation?: string;

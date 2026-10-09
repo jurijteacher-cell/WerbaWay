@@ -242,15 +242,23 @@ function normalizeGrammarBoard(raw: any): GrammarBoardExercise {
         exercise_type: t.exercise_type,
         instruction: t.instruction,
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        items: (t.items ?? []).map((it: any, j: number) => ({
-          id: it.id ?? j + 1,
-          text: it.text,
-          sentence: it.sentence,
-          prompt: it.prompt,
-          answer: it.answer,
-          options: it.options,
-          explanation: it.explanation,
-        })),
+        items: (t.items ?? []).map((it: any, j: number) => {
+          // matching: left/right → prompt/answer (same as grammar pyramid)
+          const prompt = it.prompt ?? it.left ?? it.text ?? it.sentence;
+          const answer =
+            it.answer ?? it.right ?? (typeof it.answer === 'boolean' ? String(it.answer) : undefined);
+          return {
+            id: it.id ?? j + 1,
+            text: it.text,
+            sentence: it.sentence,
+            prompt,
+            left: it.left,
+            right: it.right,
+            answer,
+            options: it.options,
+            explanation: it.explanation,
+          };
+        }),
       })),
     })),
   };
