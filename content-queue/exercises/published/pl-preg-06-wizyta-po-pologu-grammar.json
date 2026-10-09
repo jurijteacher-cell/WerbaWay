@@ -1,0 +1,294 @@
+{
+  "lesson_id": "pl-preg-06-wizyta-po-pologu",
+  "exercise_type": "fill-in-blank",
+  "title": "Narzędnik: od rozpoznawania do opowiadania",
+  "instruction": "Sześć bloków w dwóch częściach. Rób je po kolei — każdy dokłada jedną rzecz.",
+  "estimated_minutes": 24,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "covers_slides": ["s2", "s3"],
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rozgrzewka: kim, czym, z kim",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Codziennie jeżdżę do pracy ___.",
+          "options": ["autobusem", "autobusu"],
+          "answer": "autobusem",
+          "grammar_point": "narzednik-rzeczownik"
+        },
+        {
+          "id": "g1-2",
+          "text": "Rozmawiałam o tym ___ na ostatniej wizycie.",
+          "options": ["z lekarką", "z lekarka"],
+          "answer": "z lekarką",
+          "grammar_point": "narzednik-rzeczownik"
+        },
+        {
+          "id": "g1-3",
+          "text": "Wracam do domu ___, bo tramwaj dzisiaj nie jeździ.",
+          "options": ["metrem", "metra"],
+          "answer": "metrem",
+          "grammar_point": "narzednik-rzeczownik"
+        },
+        {
+          "id": "g1-4",
+          "text": "Od siedmiu tygodni jestem ___.",
+          "options": ["mamą", "mama"],
+          "answer": "mamą",
+          "grammar_point": "byc-kims"
+        },
+        {
+          "id": "g1-5",
+          "text": "Czekam na ciebie ___, obok windy.",
+          "options": ["przed wejściem", "przed wejście"],
+          "answer": "przed wejściem",
+          "grammar_point": "przyimki-narzednik"
+        },
+        {
+          "id": "g1-6",
+          "text": "Na konsultację pojechałam ___.",
+          "options": ["z partnerem", "z partnera"],
+          "answer": "z partnerem",
+          "grammar_point": "narzednik-rzeczownik"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "covers_slides": ["s3", "s4"],
+      "exercise_type": "matching",
+      "title": "2. Od mianownika do narzędnika",
+      "instruction": "Połącz słowo z jego formą w narzędniku.",
+      "items": [
+        { "id": "g2-1", "left": "autobus", "right": "autobusem", "grammar_point": "narzednik-rzeczownik" },
+        { "id": "g2-2", "left": "okno", "right": "oknem", "grammar_point": "narzednik-rzeczownik" },
+        { "id": "g2-3", "left": "mama", "right": "mamą", "grammar_point": "narzednik-rzeczownik" },
+        { "id": "g2-4", "left": "pociąg", "right": "pociągiem", "grammar_point": "narzednik-rzeczownik" },
+        { "id": "g2-5", "left": "dziecko", "right": "dzieckiem", "grammar_point": "narzednik-rzeczownik" },
+        { "id": "g2-6", "left": "koń", "right": "koniem", "grammar_point": "narzednik-rzeczownik" },
+        { "id": "g2-7", "left": "lekarz", "right": "lekarzem", "grammar_point": "narzednik-rzeczownik" },
+        { "id": "g2-8", "left": "przerwa", "right": "przerwą", "grammar_point": "narzednik-rzeczownik" }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "covers_slides": ["s5", "s6"],
+      "exercise_type": "fill-in-blank",
+      "title": "3. Przymiotnik i liczba mnoga",
+      "instruction": "Wybierz wersję, w której wszystkie słowa mają tę samą formę.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Rozmawiałam ___ o wynikach badań.",
+          "options": ["z nową lekarką", "z nowa lekarką"],
+          "answer": "z nową lekarką",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "g3-2",
+          "text": "Jadę ___ na drugą stronę miasta.",
+          "options": ["nowym tramwajem", "nowy tramwajem"],
+          "answer": "nowym tramwajem",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "g3-3",
+          "text": "Mieszkamy ___, zaraz obok przystanku.",
+          "options": ["nad małym sklepem", "nad mały sklepem"],
+          "answer": "nad małym sklepem",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "g3-4",
+          "text": "Pracuje ___ już od dwóch lat.",
+          "options": ["z wysokim mężczyzną", "z wysoki mężczyzną"],
+          "answer": "z wysokim mężczyzną",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "g3-5",
+          "text": "Stałam na peronie ___ i wózkiem.",
+          "options": ["z dwiema walizkami", "z dwie walizki"],
+          "answer": "z dwiema walizkami",
+          "grammar_point": "narzednik-mnoga"
+        },
+        {
+          "id": "g3-6",
+          "text": "Dogadałam się ___ bez żadnego problemu.",
+          "options": ["z sąsiadami", "z sąsiadów"],
+          "answer": "z sąsiadami",
+          "grammar_point": "narzednik-mnoga"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "covers_slides": ["s7", "s8", "s12"],
+      "exercise_type": "fill-in-blank",
+      "title": "4. Być kimś i czasowniki z narzędnikiem",
+      "instruction": "Wybierz formę. Po poprawnej odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Ona jest ___ w tej przychodni.",
+          "options": ["fizjoterapeutką", "fizjoterapeutka"],
+          "answer": "fizjoterapeutką",
+          "explanation": "Po być o zawodzie i roli idzie narzędnik.",
+          "grammar_point": "byc-kims"
+        },
+        {
+          "id": "g4-2",
+          "text": "To ___ z pierwszego piętra.",
+          "options": ["fizjoterapeutka", "fizjoterapeutką"],
+          "answer": "fizjoterapeutka",
+          "explanation": "W zdaniu stoi słowo to, więc wraca mianownik.",
+          "grammar_point": "byc-kims"
+        },
+        {
+          "id": "g4-3",
+          "text": "Mam dobre samopoczucie, ale jestem ___ po tym tygodniu.",
+          "options": ["zmęczona", "zmęczoną"],
+          "answer": "zmęczona",
+          "explanation": "Po być przymiotnik zostaje w mianowniku, inaczej niż rzeczownik.",
+          "grammar_point": "byc-kims"
+        },
+        {
+          "id": "g4-4",
+          "text": "Mama zajmuje się ___ dwa razy w tygodniu.",
+          "options": ["wnuczką", "wnuczkę"],
+          "answer": "wnuczką",
+          "explanation": "Zajmować się żąda narzędnika, nigdy biernika.",
+          "grammar_point": "czasowniki-z-narzednikiem"
+        },
+        {
+          "id": "g4-5",
+          "text": "Nie martw się ___, goi się bardzo dobrze.",
+          "options": ["blizną", "o bliznę"],
+          "answer": "blizną",
+          "explanation": "Martwić się czymś — bez przyimka, chociaż po ukraińsku jest przez.",
+          "grammar_point": "czasowniki-z-narzednikiem"
+        },
+        {
+          "id": "g4-6",
+          "text": "Cieszę się ___ wolną godziną w ciągu dnia.",
+          "options": ["każdą", "każdej"],
+          "answer": "każdą",
+          "explanation": "Cieszyć się czymś, więc przymiotnik też stoi w narzędniku.",
+          "grammar_point": "czasowniki-z-narzednikiem"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "covers_slides": ["s9", "s10", "s11"],
+      "exercise_type": "sentence-building",
+      "title": "5. Przyimki i nieregularna mnoga",
+      "instruction": "Zbuduj zdanie z podanych elementów.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "ja · czekać · przed · gabinet",
+          "answer": "Czekam przed gabinetem.",
+          "accept": ["Przed gabinetem czekam."],
+          "grammar_point": "przyimki-narzednik"
+        },
+        {
+          "id": "g5-2",
+          "prompt": "torba · stać · pod · krzesło",
+          "answer": "Torba stoi pod krzesłem.",
+          "accept": ["Pod krzesłem stoi torba."],
+          "grammar_point": "przyimki-narzednik"
+        },
+        {
+          "id": "g5-3",
+          "prompt": "ja · wracać · z · basen",
+          "answer": "Wracam z basenu.",
+          "accept": ["Z basenu wracam."],
+          "grammar_point": "przyimki-narzednik"
+        },
+        {
+          "id": "g5-4",
+          "prompt": "ja · iść · z · córka · na spacer",
+          "answer": "Idę z córką na spacer.",
+          "accept": ["Z córką idę na spacer."],
+          "grammar_point": "przyimki-narzednik"
+        },
+        {
+          "id": "g5-5",
+          "prompt": "ona · zajmować się · dzieci · całe popołudnie",
+          "answer": "Zajmuje się dziećmi całe popołudnie.",
+          "accept": ["Całe popołudnie zajmuje się dziećmi."],
+          "grammar_point": "narzednik-mnoga"
+        },
+        {
+          "id": "g5-6",
+          "prompt": "ja · dogadać się · z · ludzie · z osiedla",
+          "answer": "Dogadałam się z ludźmi z osiedla.",
+          "accept": ["Dogadałem się z ludźmi z osiedla."],
+          "grammar_point": "narzednik-mnoga"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "covers_slides": ["s13", "s14"],
+      "exercise_type": "drag-and-drop",
+      "title": "6. Tydzień pielęgniarki z osiedla",
+      "instruction": "Przeciągnij wyrażenie w lukę. Trzy wyrażenia w banku są błędne — nie pasują nigdzie.",
+      "bank": ["jestem pielęgniarką", "mówię po polsku", "zostać fizjoterapeutką", "zadowolona z wyniku", "korzystam z windy", "przez telefon", "jestem pielęgniarka", "mówię polskim", "korzystam windą"],
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Od dwóch lat ___ w przychodni na osiedlu.",
+          "answer": "jestem pielęgniarką",
+          "explanation": "Po być o zawodzie zawsze narzędnik, chociaż po ukraińsku mówimy bez odmiany.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-2",
+          "text": "Z pacjentami ___ już całkiem swobodnie.",
+          "answer": "mówię po polsku",
+          "explanation": "Nazwy języków mają własną formę po polsku, a nie narzędnik.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-3",
+          "text": "Za rok chcę ___, bo interesuję się pracą z ciałem.",
+          "answer": "zostać fizjoterapeutką",
+          "explanation": "O zawodzie mówimy zostać kimś; stać się zostawiamy dla stanów.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-4",
+          "text": "Wczoraj dostałam badania i jestem ___.",
+          "answer": "zadowolona z wyniku",
+          "explanation": "Zadowolony łączy się z przyimkiem z i dopełniaczem.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-5",
+          "text": "Na trzecie piętro zawsze ___, bo z wózkiem nie wejdę po schodach.",
+          "answer": "korzystam z windy",
+          "explanation": "Korzystać też wymaga z i dopełniacza, mimo ukraińskiego narzędnika.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-6",
+          "text": "Terminy wizyt ustalam ___, w czasie drzemki córki, bo wtedy zdążę spokojnie.",
+          "answer": "przez telefon",
+          "explanation": "Tu polski bierze przyimek przez i biernik, nie narzędnik.",
+          "grammar_point": "kalki-uk"
+        }
+      ]
+    }
+  ]
+}

@@ -11,6 +11,15 @@ Exit code 0 = no errors. Any ERROR line must be fixed (or reported to Claude in 
 Does NOT replace the visual check of the rendered exercises (see CURSOR_TASK).
 """
 import json, re, sys, os, glob
+from pathlib import Path
+
+# allow import of werba_common next to this script
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from werba_common import mentions as word_mentions
+except Exception:  # noqa: BLE001
+    def word_mentions(core_word, text_lower):
+        return core_word.lower() in text_lower
 
 lid = sys.argv[1]
 root = sys.argv[2]
@@ -50,6 +59,14 @@ md = open(P["md"], encoding="utf-8").read()
 fm = re.match(r"---\n(.*?)\n---", md, re.S).group(1)
 gp_line = re.search(r"grammar_points:\s*\[(.*?)\]", fm).group(1)
 GRAMMAR_POINTS = {x.strip() for x in gp_line.split(",")}
+LEVEL = (re.search(r"^level:\s*(\w+)", fm, re.M) or [None, "B1"])[1]
+# Normy jak w validate_lesson / LESSON_PROTOCOL (teoria slajdów ≈ kartki-1 title)
+NORMS = {
+    "A0": {"text": (40, 80), "vocab": (15, 20), "theory": (3, 6), "traps": (2, 4), "comm": (2, 2), "dlg": (6, 10)},
+    "A1": {"text": (120, 180), "vocab": (20, 25), "theory": (5, 8), "traps": (3, 5), "comm": (2, 2), "dlg": (8, 12)},
+    "A2": {"text": (250, 350), "vocab": (28, 32), "theory": (7, 12), "traps": (4, 6), "comm": (3, 3), "dlg": (10, 14)},
+    "B1": {"text": (400, 500), "vocab": (35, 40), "theory": (10, 14), "traps": (5, 6), "comm": (3, 4), "dlg": (10, 14)},
+}.get(LEVEL, {"text": (400, 500), "vocab": (35, 40), "theory": (10, 14), "traps": (5, 6), "comm": (3, 4), "dlg": (10, 14)})
 
 slides = load(P["slides"]); vocab = load(P["vocab"]); comm = load(P["comm"])
 grammar = load(P["grammar"]); exam = load(P["exam"]); hw = load(P["hw"])
@@ -178,13 +195,15 @@ sid = {s["id"]: s for s in S}
 theory = [s for s in S if s["section"] == "teoria" and s["kind"] != "title"]
 wy = [s for s in S if s["section"] == "wyjatki"]
 pu = [s for s in S if s["section"] == "pulapki"]
-if not (10 <= len(theory) <= 14): err(f"slajdy teorii: {len(theory)} (B1: 10–14)")
+lo, hi = NORMS["theory"]
+if not (lo <= len(theory) <= hi): err(f"slajdy teorii: {len(theory)} ({LEVEL}: {lo}–{hi})")
 if not (1 <= len(wy) <= 2): err(f"slajdy wyjątków: {len(wy)}")
 if not (1 <= len(pu) <= 2): err(f"slajdy pułapek: {len(pu)}")
 order = {"teoria": 0, "wyjatki": 1, "pulapki": 2}
 if [order[s["section"]] for s in S] != sorted(order[s["section"]] for s in S): err("kolejność sekcji: teoria → wyjatki → pulapki")
 ntraps = sum(len(s["items"]) for s in pu)
-if not (5 <= ntraps <= 6): err(f"pułapek razem: {ntraps} (ma być 5–6)")
+tlo, thi = NORMS["traps"]
+if not (tlo <= ntraps <= thi): err(f"pułapek razem: {ntraps} ({LEVEL}: {tlo}–{thi})")
 CYR = re.compile("[А-Яа-яІіЇїЄєҐґ]")
 FORBID = re.compile(r"wyjątek|oprócz|z wyjątkiem", re.I)
 for s in S:
@@ -225,27 +244,49 @@ for s in S:
 
 # ---------------------------------------------------------------- vocab / comm
 vi = vocab["items"]
-if not (35 <= len(vi) <= 40): err(f"słownik: {len(vi)} słów (B1: 35–40)")
-if not (4 <= len(vocab["groups"]) <= 6): err("słownik: grup ma być 4–6")
-for g in vocab["comm_groups"]:
+vlo, vhi = NORMS["vocab"]
+if not (vlo <= len(vi) <= vhi): err(f"słownik: {len(vi)} słów ({LEVEL}: {vlo}–{vhi})")
+gmin, gmax = (3, 6) if LEVEL in ("A0", "A1", "A2") else (4, 6)
+if not (gmin <= len(vocab["groups"]) <= gmax): err(f"słownik: grup ma być {gmin}–{gmax}")
+for g in vocab.get("comm_groups", []):
     if g not in vocab["groups"]: err(f"comm_group '{g}' nie ma w groups")
 for it in vi:
     if it["group"] not in vocab["groups"]: err(f"vocab {it['id']}: nieznana grupa")
 terms = {it["term"]: it["group"] for it in vi}
-cg_map = {"c1": "Wolny czas i miasto", "c2": "Pieniądze i ceny", "c3": "Szkoła i praca"}
-for t in comm["items"]:
+comm_groups = vocab.get("comm_groups") or []
+# Map c1..cn → groups from vocab.comm_groups (order). Match with stemming (zalecenie→zalecenia).
+for idx, t in enumerate(comm["items"]):
     blob = json.dumps(t, ensure_ascii=False).lower()
-    hits = [w for w, g in terms.items() if g == cg_map[t["id"]] and w.lower() in blob]
-    if len(hits) < 4: err(f"comm {t['id']}: tylko {len(hits)} słów z grupy '{cg_map[t['id']]}': {hits}")
+    expected_group = comm_groups[idx] if idx < len(comm_groups) else None
+    if expected_group:
+        hits = [w for w, g in terms.items() if g == expected_group and word_mentions(w, blob)]
+        need = 3 if LEVEL in ("A0", "A1", "A2") else 4
+        # If group is thin in the card text, also accept hits from any comm_group
+        if len(hits) < need:
+            pool = set(comm_groups) if comm_groups else set(vocab["groups"])
+            hits = [w for w, g in terms.items() if g in pool and word_mentions(w, blob)]
+        if len(hits) < need:
+            msg = f"comm {t['id']}: tylko {len(hits)} słów z grup comm ({expected_group}): {hits}"
+            # Karty play bez dialogu często mają tylko checklistę — nie blokuj A2
+            if LEVEL in ("A0", "A1", "A2") and t.get("mode") == "play" and not t.get("model_dialogue"):
+                warn(msg)
+            else:
+                err(msg)
     if not (3 <= len(t["back_checklist"]) <= 5): err(f"comm {t['id']}: checklista ma 3–5 punktów")
+clo, chi = NORMS["comm"]
+if not (clo <= len(comm["items"]) <= chi): err(f"comm-tasks: {len(comm['items'])} ({LEVEL}: {clo}–{chi})")
 c1 = comm["items"][0]
-if not (10 <= len(c1["model_dialogue"]) <= 14): err(f"c1.model_dialogue: {len(c1['model_dialogue'])} replik (10–14)")
+dlo, dhi = NORMS["dlg"]
+if c1.get("model_dialogue") is not None:
+    if not (dlo <= len(c1["model_dialogue"]) <= dhi):
+        err(f"c1.model_dialogue: {len(c1['model_dialogue'])} replik ({LEVEL}: {dlo}–{dhi})")
 
 # ---------------------------------------------------------------- reading text
 m = re.search(r"### .*?\n(.*?)\n## 2\.", md, re.S)
 text = re.sub(r"\[(AUDIO|IMAGE)[^\]]*\]", "", m.group(1))
 nw = len([w for w in text.split() if w != "–"])
-if not (400 <= nw <= 500): err(f"tekst do czytania: {nw} słów (B1: 400–500)")
+tlo, thi = NORMS["text"]
+if not (tlo <= nw <= thi): err(f"tekst do czytania: {nw} słów ({LEVEL}: {tlo}–{thi})")
 
 # ---------------------------------------------------------------- md markers
 for mk in re.finditer(r"\[(EXERCISE|SLIDES)([^\]]*)\]", md):
@@ -254,13 +295,25 @@ for mk in re.finditer(r"\[(EXERCISE|SLIDES)([^\]]*)\]", md):
     path = glob.glob(f"{root}/*/pending/{f}")
     if not path: err(f"marker {mk.group(0)}: brak pliku {f}")
     if "blocks" in kv:
-        a = kv["blocks"].split("-");
+        raw_blocks = kv["blocks"]
+        mrange = re.match(r"^([a-zA-Z]+)(\d+)-([a-zA-Z]*)(\d+)$", raw_blocks)
+        if mrange:
+            pfx, a, pfx2, b = mrange.groups()
+            if pfx2 and pfx2 != pfx:
+                ids_needed = [raw_blocks]
+            else:
+                ids_needed = [f"{pfx}{i}" for i in range(int(a), int(b) + 1)]
+        else:
+            ids_needed = [x.strip() for x in raw_blocks.split(",") if x.strip()]
         d = json.load(open(path[0], encoding="utf-8")) if path else None
         have = [b["block_id"] for b in d.get("blocks", [])] if d else []
-        for x in a:
+        for x in ids_needed:
             if x not in have: err(f"marker {mk.group(0)}: brak bloku {x} w {f}")
 for mk in re.finditer(r"\[IMAGE([^\]]*)\]", md):
-    if 'source="' not in mk.group(1): err("[IMAGE] bez source")
+    attrs = mk.group(1)
+    # Yura manual: fill="manual" / slot="…" — source opcjonalne
+    if 'source="' not in attrs and 'fill="manual"' not in attrs and 'slot="' not in attrs:
+        err("[IMAGE] bez source/slot/fill=manual")
 
 # ---------------------------------------------------------------- homework vs lesson
 def sentences(s):

@@ -1,0 +1,259 @@
+{
+  "lesson_id": "pl-preg-06-wizyta-po-pologu",
+  "exercise_type": "grammar-slides",
+  "title": "Narzędnik",
+  "estimated_minutes": 28,
+  "slides": [
+    {
+      "id": "s1",
+      "part": 1,
+      "section": "teoria",
+      "kind": "title",
+      "title": "Narzędnik",
+      "subtitle": "Kim jesteś? Czym jedziesz? Z kim idziesz?",
+      "goal": "Powiesz, kim jesteś i z kim coś robisz.",
+      "teacher_note": "Почни з трьох питань на екрані й попроси відповісти українською. Потім скажи, що польська на всі три відповідає одним відмінком."
+    },
+    {
+      "id": "s2",
+      "part": 1,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Trzy pytania",
+      "items": [
+        { "tag": "kim?", "pl": "Jestem [[mamą]].", "uk": "Я мама." },
+        { "tag": "czym?", "pl": "Jadę [[autobusem]].", "uk": "Їду автобусом." },
+        { "tag": "z kim?", "pl": "Idę [[z lekarką]].", "uk": "Іду з лікаркою." }
+      ],
+      "note": "Jedna forma odpowiada na wszystkie trzy pytania.",
+      "teacher_note": "Зверни увагу, що в першому прикладі польська вимагає відмінка там, де українська обходиться без нього."
+    },
+    {
+      "id": "s3",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Rzeczownik: dwie końcówki",
+      "columns": ["rodzaj", "mianownik", "narzędnik"],
+      "rows": [
+        ["męski", "autobus", "autobus[[em]]"],
+        ["nijaki", "okno", "okn[[em]]"],
+        ["żeński", "mama", "mam[[ą]]"]
+      ],
+      "note": "Męski i nijaki mają tę samą końcówkę.",
+      "teacher_note": "Відкривай по рядку. Після другого рядка спитай, яку закінчення вони вже бачили двічі."
+    },
+    {
+      "id": "s4",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Kiedy wchodzi -iem",
+      "columns": ["mianownik", "narzędnik"],
+      "rows": [
+        ["pociąg", "pociąg[[iem]]"],
+        ["dziecko", "dzieck[[iem]]"],
+        ["koń", "koni[[em]]"]
+      ],
+      "note": "Po k, g i po miękkiej spółgłosce dochodzi i.",
+      "teacher_note": "Попроси вимовити вголос обидві форми: помилку чути краще, ніж видно."
+    },
+    {
+      "id": "s5",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Przymiotnik",
+      "columns": ["rodzaj", "przykład"],
+      "rows": [
+        ["męski", "dobr[[ym]] lekarzem"],
+        ["nijaki", "mał[[ym]] dzieckiem"],
+        ["żeński", "dobr[[ą]] mamą"],
+        ["po k, g", "wysok[[im]] mężczyzną"]
+      ],
+      "note": "W żeńskim przymiotnik i rzeczownik brzmią tak samo.",
+      "teacher_note": "Останній рядок — та сама логіка, що на слайді про -iem. Не вводь нового правила, покажи аналогію."
+    },
+    {
+      "id": "s6",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Liczba mnoga",
+      "columns": ["mianownik", "narzędnik"],
+      "rows": [
+        ["autobusy", "autobus[[ami]]"],
+        ["mamy", "mam[[ami]]"],
+        ["lekarze", "lekarz[[ami]]"],
+        ["okna", "okn[[ami]]"]
+      ],
+      "note": "Jedna końcówka dla wszystkich rodzajów.",
+      "teacher_note": "Найлегший слайд уроку. Пройди швидко й скажи, що винятки будуть окремо."
+    },
+    {
+      "id": "s7",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Jestem mamą czy to mama?",
+      "left": {
+        "head": "być + narzędnik",
+        "rule": "zawód, rola, kim ktoś jest",
+        "examples": ["Jestem [[mamą]].", "Ona jest [[lekarką]]."]
+      },
+      "right": {
+        "head": "to + mianownik",
+        "rule": "pokazujemy albo przedstawiamy",
+        "examples": ["To [[lekarka]] z przychodni.", "To moja [[mama]]."]
+      },
+      "note": "Pytanie kontrolne: czy w zdaniu jest słowo to?",
+      "teacher_note": "Це головна пастка уроку. Дай три швидкі приклади на вибір форми, перш ніж іти далі."
+    },
+    {
+      "id": "s8",
+      "part": 2,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Czasowniki z narzędnikiem",
+      "items": [
+        { "tag": "zajmować się", "pl": "Mama zajmuje się [[córką]].", "uk": "Мама займається донькою." },
+        { "tag": "interesować się", "pl": "Interesuję się [[fizjoterapią]].", "uk": "Цікавлюся фізіотерапією." },
+        { "tag": "cieszyć się", "pl": "Cieszę się [[każdą]] wolną godziną.", "uk": "Радію кожній вільній годині." },
+        { "tag": "martwić się", "pl": "Nie martw się [[blizną]].", "uk": "Не хвилюйся через рубець." }
+      ],
+      "note": "Po tych czasownikach nigdy nie ma przyimka.",
+      "teacher_note": "Остання пара різна в двох мовах: українське «через» тут не перекладається. Наголоси на цьому."
+    },
+    {
+      "id": "s9",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Przyimki z narzędnikiem",
+      "columns": ["przyimek", "przykład"],
+      "rows": [
+        ["z", "Idę [[z mamą]]."],
+        ["przed", "Czekam [[przed gabinetem]]."],
+        ["za", "Parking jest [[za budynkiem]]."],
+        ["nad", "Lampa wisi [[nad łóżkiem]]."],
+        ["pod", "Torba stoi [[pod krzesłem]]."],
+        ["między", "Siedzę [[między oknami]]."]
+      ],
+      "teacher_note": "Прочитай усі шість, потім закрий і попроси назвати прийменники з пам'яті."
+    },
+    {
+      "id": "s10",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Dwa różne z",
+      "left": {
+        "head": "z kim? z czym?",
+        "rule": "razem, w towarzystwie",
+        "examples": ["Jadę [[z córką]].", "Kawa [[z mlekiem]]."]
+      },
+      "right": {
+        "head": "skąd?",
+        "rule": "ruch z jakiegoś miejsca",
+        "examples": ["Wracam [[z basenu]].", "Wyszłam [[z gabinetu]]."]
+      },
+      "note": "Ten sam przyimek, dwa pytania i dwie formy.",
+      "teacher_note": "Покажи пару «z mamą / z domu» і спитай, чим вони відрізняються, перш ніж відкривати праву частину."
+    },
+    {
+      "id": "s11",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "table",
+      "reveal": "row",
+      "refers_to": "s6",
+      "title": "Nieregularna liczba mnoga",
+      "columns": ["mianownik", "narzędnik"],
+      "rows": [
+        ["dzieci", "[[dziećmi]]"],
+        ["ludzie", "[[ludźmi]]"],
+        ["pieniądze", "[[pieniędzmi]]"],
+        ["przyjaciele", "[[przyjaciółmi]]"],
+        ["bracia", "[[braćmi]]"],
+        ["konie", "[[końmi]]"]
+      ],
+      "teacher_note": "Шість форм на пам'ять. Перші три трапляються щодня, тому вимагай саме їх."
+    },
+    {
+      "id": "s12",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "refers_to": "s7",
+      "title": "Kiedy po być jest mianownik",
+      "items": [
+        { "rule": "W zdaniu stoi słowo to", "example": "To jest moja fizjoterapeutka." },
+        { "rule": "Po być stoi przymiotnik", "example": "Jestem zmęczona i spokojna." },
+        { "rule": "Zawód razem ze słowem to", "example": "To dobra lekarka." }
+      ],
+      "note": "Narzędnik wraca, gdy mówimy o kimś bez słowa to.",
+      "teacher_note": "Найчастіша помилка в цій темі — «jestem zmęczoną». Назви її вголос і попроси повторити правильно."
+    },
+    {
+      "id": "s13",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego (1)",
+      "items": [
+        {
+          "uk": "вона лікарка",
+          "wrong": "ona jest lekarka",
+          "right": "ona jest [[lekarką]]",
+          "why": "po być o zawodzie i roli zawsze idzie narzędnik."
+        },
+        {
+          "uk": "я розмовляю польською",
+          "wrong": "mówię polskim",
+          "right": "mówię [[po polsku]]",
+          "why": "języki mają własną formę, nie narzędnik."
+        },
+        {
+          "uk": "стати лікарем",
+          "wrong": "stać się lekarzem",
+          "right": "[[zostać]] lekarzem",
+          "why": "o zawodzie mówimy zostać, a stać się zostawiamy dla stanów."
+        }
+      ],
+      "teacher_note": "Перша пастка — головна в уроці. Якщо студентка її тримає, решта вправ піде легко."
+    },
+    {
+      "id": "s14",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego (2)",
+      "items": [
+        {
+          "uk": "я задоволена результатом",
+          "wrong": "jestem zadowolona wynikiem",
+          "right": "jestem zadowolona [[z wyniku]]",
+          "why": "zadowolony łączy się z z i dopełniaczem."
+        },
+        {
+          "uk": "я користуюся ліфтом",
+          "wrong": "korzystam windą",
+          "right": "korzystam [[z windy]]",
+          "why": "korzystać też wymaga z i dopełniacza."
+        },
+        {
+          "uk": "розмовляти по телефону",
+          "wrong": "rozmawiać po telefonie",
+          "right": "rozmawiać [[przez telefon]]",
+          "why": "tutaj polski bierze przez i biernik."
+        }
+      ],
+      "teacher_note": "Три випадки, де український орудний перетворюється в польській на щось інше. Попроси вивчити їх як готові фрази."
+    }
+  ]
+}

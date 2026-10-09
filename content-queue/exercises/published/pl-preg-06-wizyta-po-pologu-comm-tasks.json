@@ -1,0 +1,64 @@
+{
+  "lesson_id": "pl-preg-06-wizyta-po-pologu",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: wizyta, specjalista, opieka",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Wyjdź z niej ze wszystkimi informacjami z listy.",
+  "estimated_minutes": 20,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "listen-then-play",
+      "front_title": "Na wizycie kontrolnej",
+      "back_scenario": "Jesteś na pierwszej wizycie kontrolnej po połogu. Najpierw posłuchaj przykładowej rozmowy, potem odegraj swoją — z innymi dolegliwościami i innymi pytaniami.",
+      "back_checklist": [
+        "Opisz dwie dolegliwości, które Cię niepokoją.",
+        "Zapytaj, do jakiego wysiłku możesz już wrócić.",
+        "Poproś o skierowanie do specjalisty.",
+        "Zapytaj o antykoncepcję przy karmieniu piersią.",
+        "Ustal termin następnej kontroli."
+      ],
+      "model_dialogue": [
+        { "speaker": "Lekarka", "voice": "pl-PL-female", "line": "Dzień dobry, proszę usiąść. Minęło już sześć tygodni, prawda?" },
+        { "speaker": "Pacjentka", "voice": "pl-PL-female", "line": "Dzień dobry. Sześć i pół. Przyjechałam z córką, mąż czeka z nią przed gabinetem." },
+        { "speaker": "Lekarka", "voice": "pl-PL-female", "line": "Dobrze. Jak się pani czuje?" },
+        { "speaker": "Pacjentka", "voice": "pl-PL-female", "line": "Ogólnie lepiej, ale mam dwie dolegliwości. Blizna czasem boli, a wieczorem czuję napięcie w prawym barku." },
+        { "speaker": "Lekarka", "voice": "pl-PL-female", "line": "Blizna wygląda spokojnie, nic mnie w niej nie niepokoi. A bark — czy nosi pani córkę zawsze tak samo?" },
+        { "speaker": "Pacjentka", "voice": "pl-PL-female", "line": "Chyba tak. Prawą ręką trzymam małą, lewą robię wszystko inne." },
+        { "speaker": "Lekarka", "voice": "pl-PL-female", "line": "To właśnie stąd. Wypiszę pani skierowanie do fizjoterapeutki, która zajmuje się kobietami po porodzie." },
+        { "speaker": "Pacjentka", "voice": "pl-PL-female", "line": "Bardzo dziękuję. A czy mogę już wrócić na basen?" },
+        { "speaker": "Lekarka", "voice": "pl-PL-female", "line": "Spacery i pływanie tak, tylko spokojnie. O ćwiczeniach na brzuch proszę porozmawiać z fizjoterapeutką." },
+        { "speaker": "Pacjentka", "voice": "pl-PL-female", "line": "Jasne. I jeszcze jedno pytanie, o antykoncepcję. Karmię piersią." },
+        { "speaker": "Lekarka", "voice": "pl-PL-female", "line": "Dobrze, że pani pyta. Przy karmieniu piersią są bezpieczne metody. Opowiem o nich, a potem wypiszę receptę." },
+        { "speaker": "Pacjentka", "voice": "pl-PL-female", "line": "Dziękuję. Zapiszę sobie wszystkie zalecenia na kartce." },
+        { "speaker": "Lekarka", "voice": "pl-PL-female", "line": "Następna kontrola za pół roku. Jeśli coś się zmieni, proszę przyjść wcześniej." },
+        { "speaker": "Pacjentka", "voice": "pl-PL-female", "line": "Dobrze. Do widzenia." }
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Pierwsza wizyta u fizjoterapeuty",
+      "back_scenario": "Masz skierowanie i jesteś u fizjoterapeuty pierwszy raz. Chcesz wyjść z konkretnym planem, a nie z ogólnymi radami.",
+      "back_checklist": [
+        "Powiedz, co Cię boli i kiedy to się zaczęło.",
+        "Zapytaj, czym są mięśnie dna miednicy i po co się je wzmacnia.",
+        "Dowiedz się, jakie ćwiczenia możesz robić w domu, a jakich jeszcze nie.",
+        "Zapytaj, po jakim czasie wróci kondycja.",
+        "Ustal, ile spotkań będzie potrzebnych i w jakich odstępach."
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "front_title": "Kto zostanie z dzieckiem",
+      "back_scenario": "Chcesz wychodzić dwa razy w tygodniu na dwie godziny. Rozmawiasz z bliską osobą i ustalacie szczegóły.",
+      "back_checklist": [
+        "Powiedz wprost, o co prosisz i dlaczego.",
+        "Zaproponuj konkretne dni i godziny.",
+        "Ustal, kto odbiera dziecko, jeśli wrócisz później.",
+        "Dogadajcie się, kto zastąpi tę osobę w razie choroby.",
+        "Powtórz na koniec cały plan jednym zdaniem."
+      ]
+    }
+  ]
+}
