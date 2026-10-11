@@ -81,7 +81,17 @@ def main():
     fm, body = split_frontmatter(md_text)
     level = fm.get("level", "B1")
     kind = fm.get("kind", "lesson")
-    params = LEVEL.get(level)
+    template = fm.get("template") or ""
+    params = dict(LEVEL.get(level) or {})
+    if template == "light-60":
+        # SPEC PATCH v3.5 — індивідуальні 60 хв
+        params.update({
+            "text": (200, 270),  # 200–260 + невеликий запас на підрахунок
+            "vocab": (20, 25),
+            "blocks": (4, 5),
+            "comm": (2, 2),
+            "pairs": (0, 0),
+        })
     fm_tags = set(fm.get("grammar_points") or [])
 
     # ---------- JSON: парсинг, лапки, lesson_id ----------
@@ -105,13 +115,27 @@ def main():
                 "grammar": ["vocab", "comm-tasks", "grammar", "hw"],
                 "review": ["vocab", "comm-tasks", "grammar", "hw"],
                 "checkpoint": ["test"], "exam": ["test"]}[kind]
-    if kind in ("lesson", "grammar") and level in ("A2", "B1"):
+    # light-60: без pictures / exam (індивідуальні 60 хв)
+    if template != "light-60" and kind in ("lesson", "grammar") and level in ("A2", "B1"):
         required.append("exam")
     for r in required:
         if r not in data:
             rep.err(f"немає файлу {lesson_id}-{r}.json (обов'язковий для kind={kind}, level={level})")
     if not files["teacher"].exists():
         rep.err(f"немає файлу {files['teacher'].name}")
+    if template == "light-60":
+        rep.ok("template light-60: pictures/exam не вимагаються")
+        dial = None
+        for it in (data.get("comm-tasks") or {}).get("items") or []:
+            if it.get("id") == "c1" or it.get("mode") == "listen-then-play":
+                dial = it.get("model_dialogue") or []
+                break
+        if dial is not None:
+            n = len(dial)
+            if 10 <= n <= 12:
+                rep.ok(f"c1 model_dialogue: {n} реплік")
+            else:
+                rep.err(f"c1 model_dialogue: {n}, а має бути 10–12")
 
     # ---------- id ----------
     seen_ids = {}

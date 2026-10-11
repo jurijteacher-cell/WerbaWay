@@ -1,0 +1,28 @@
+---
+description: Werba Way — зображення для уроків. Тільки Unsplash, фіксований алгоритм, без ручного відбору.
+globs: content-queue/**, scripts/**images**
+alwaysApply: false
+---
+
+# Зображення уроків (v3.5)
+
+- Джерело **тільки Unsplash API**. Pexels, Wikimedia Commons, LoC, Openverse, Google та інші — ЗАБОРОНЕНО.
+- Слоти: `header` (frontmatter `header_image_keywords`) + кожен `[IMAGE]` у `.md` (`img1`, `img2`…).
+
+## Алгоритм на слот
+
+1. `GET https://api.unsplash.com/search/photos?query={keywords}&orientation=landscape&per_page=5&content_filter=high`, заголовок `Authorization: Client-ID $UNSPLASH_ACCESS_KEY`.
+2. Взяти ПЕРШИЙ результат з `width >= 900`. Кандидатів не переглядати і не порівнювати.
+3. Порожньо → один запит з `keywords_alt` / `header_image_keywords_alt`.
+4. Знову порожньо, 403, 429 або таймаут → `status: "missing"`, плейсхолдер, рухатися далі.
+5. Вставити `urls.regular` (хотлінк), один раз викликати `links.download_location`, підпис `Photo: {user.name} / Unsplash` → `user.links.html`.
+
+## Ліміти
+
+- ≤2 запити на слот. ≤3 хвилини на всі зображення уроку.
+- Жодних ретраїв понад описане, фонових пошуків, «кращого кадру».
+- Відсутнє фото НЕ блокує публікацію.
+
+## Ручна заміна
+
+Файл `assets/manual/{lesson_id}-{slot}.jpg` має пріоритет над Unsplash. Перезаливати лише цей слот.
