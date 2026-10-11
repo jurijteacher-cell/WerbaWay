@@ -1,0 +1,50 @@
+{
+  "lesson_id": "pl-ksieg-01-moja-droga-zawodowa",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: słowa, aspekt i zdania o doświadczeniu",
+  "instruction": "Trzy bloki. Zrób je przed napisaniem tekstu „O mnie”.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "drag-and-drop",
+      "title": "1. Słowa z lekcji w nowych zdaniach",
+      "instruction": "Przeciągnij właściwe wyrażenie. Dwa wyrażenia są zbędne.",
+      "bank": ["biurze rachunkowym", "rozmowę kwalifikacyjną", "doświadczenia zawodowego", "wrócić do zawodu", "urzędem skarbowym", "stażu pracy", "dziale kadr", "osiągnięcie"],
+      "items": [
+        {"id": "h1-1", "text": "Moja ciocia od lat pracuje w ___ w Krakowie i prowadzi księgowość kilkunastu sklepów.", "answer": "biurze rachunkowym", "grammar_point": "slownictwo"},
+        {"id": "h1-2", "text": "W piątek mam ___ w dużej firmie logistycznej.", "answer": "rozmowę kwalifikacyjną", "grammar_point": "slownictwo"},
+        {"id": "h1-3", "text": "Na to stanowisko szukają osoby z pięcioma latami ___.", "answer": "doświadczenia zawodowego", "grammar_point": "slownictwo"},
+        {"id": "h1-4", "text": "Po trzech latach przerwy chcę ___.", "answer": "wrócić do zawodu", "grammar_point": "slownictwo"},
+        {"id": "h1-5", "text": "Każdy przedsiębiorca musi się rozliczyć z ___.", "answer": "urzędem skarbowym", "grammar_point": "slownictwo"},
+        {"id": "h1-6", "text": "Mój ojciec ma czterdzieści lat ___.", "answer": "stażu pracy", "grammar_point": "slownictwo"}
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Aspekt: nowe czasowniki",
+      "instruction": "Wybierz właściwą formę.",
+      "items": [
+        {"id": "h2-1", "text": "Przez cały rok ___ czynsz na czas.", "options": ["płaciłam", "zapłaciłam"], "answer": "płaciłam", "explanation": "Cały rok, regularnie → niedokonany.", "grammar_point": "aspekt-uzycie"},
+        {"id": "h2-2", "text": "Wczoraj wreszcie ___ ten długi formularz.", "options": ["wypełniałam", "wypełniłam"], "answer": "wypełniłam", "explanation": "Wreszcie: rezultat jest gotowy → dokonany.", "grammar_point": "aspekt-uzycie"},
+        {"id": "h2-3", "text": "Kiedy ___ stare dokumenty, ktoś zapukał do drzwi.", "options": ["archiwizowałam", "zarchiwizowałam"], "answer": "archiwizowałam", "explanation": "Tło przerwane przez zdarzenie → niedokonany.", "grammar_point": "aspekt-uzycie"},
+        {"id": "h2-4", "text": "W ciągu godziny ___ saldo z klientem.", "options": ["uzgadniałam", "uzgodniłam"], "answer": "uzgodniłam", "explanation": "W ciągu godziny: praca skończona w tym czasie → dokonany.", "grammar_point": "aspekt-uzycie"},
+        {"id": "h2-5", "text": "Co piątek ___ pieniądze na konto oszczędnościowe.", "options": ["przelewałam", "przelałam"], "answer": "przelewałam", "explanation": "Co piątek: czynność się powtarza → niedokonany.", "grammar_point": "aspekt-uzycie"},
+        {"id": "h2-6", "text": "Kontrolerka ___ magazyn i wyszła po trzech godzinach.", "options": ["kontrolowała", "skontrolowała"], "answer": "skontrolowała", "explanation": "Kolejne skończone kroki → dokonany.", "grammar_point": "aspekt-uzycie"}
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Z teraźniejszości do przeszłości",
+      "instruction": "Napisz zdanie w czasie przeszłym i dodaj określenie czasu z nawiasu.",
+      "items": [
+        {"id": "h3-1", "prompt": "Zajmuję się rozliczeniami w hotelu. (w zeszłym roku)", "answer": "W zeszłym roku zajmowałam się rozliczeniami w hotelu.", "accept": ["Zajmowałam się rozliczeniami w hotelu w zeszłym roku.", "W zeszłym roku zajmowałem się rozliczeniami w hotelu."], "grammar_point": "czas-przeszly"},
+        {"id": "h3-2", "prompt": "Odpowiadam za archiwum szkoły. (przez trzy lata)", "answer": "Przez trzy lata odpowiadałam za archiwum szkoły.", "accept": ["Odpowiadałam za archiwum szkoły przez trzy lata.", "Przez trzy lata odpowiadałem za archiwum szkoły."], "grammar_point": "czas-przeszly"},
+        {"id": "h3-3", "prompt": "Jestem kasjerką w przychodni. (wcześniej)", "answer": "Wcześniej byłam kasjerką w przychodni.", "accept": ["Byłam wcześniej kasjerką w przychodni."], "grammar_point": "czas-przeszly"},
+        {"id": "h3-4", "prompt": "Pracujemy jako tłumaczki w sądzie. (do 2023 roku)", "answer": "Do 2023 roku pracowałyśmy jako tłumaczki w sądzie.", "accept": ["Pracowałyśmy jako tłumaczki w sądzie do 2023 roku."], "grammar_point": "czas-przeszly"}
+      ]
+    }
+  ]
+}

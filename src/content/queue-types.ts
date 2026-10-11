@@ -57,6 +57,7 @@ export type FlipTaskExercise = {
     front_title: string;
     back_scenario: string;
     back_checklist: string[];
+    audio_url?: string;
   }[];
 };
 

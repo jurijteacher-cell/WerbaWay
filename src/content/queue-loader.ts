@@ -94,6 +94,7 @@ function normalizeFlip(raw: any): FlipTaskExercise {
         front_title: it.front_title,
         back_scenario: it.back_scenario,
         back_checklist: it.back_checklist ?? [],
+        audio_url: it.audio_url,
       })
     ),
   };

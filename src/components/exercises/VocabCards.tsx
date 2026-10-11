@@ -17,9 +17,17 @@ type Props = {
   instructions?: string;
   items: Item[];
   groups?: string[];
+  lessonId?: string;
 };
 
-export function VocabCards({ title, instructions, items, groups }: Props) {
+function vocabAudioSrc(lessonId: string | undefined, id: string | number): string | null {
+  if (!lessonId) return null;
+  const raw = String(id);
+  const slug = raw.startsWith('v') ? raw.slice(1) : raw;
+  return `/audio/${lessonId}-v-${slug}.mp3`;
+}
+
+export function VocabCards({ title, instructions, items, groups, lessonId }: Props) {
   const groupList = useMemo(() => {
     if (groups?.length) return groups;
     const seen = new Set<string>();
@@ -110,6 +118,22 @@ export function VocabCards({ title, instructions, items, groups }: Props) {
         <button type="button" className="nb-btn ghost" disabled={index === 0} onClick={() => go(index - 1)}>
           Poprzednie
         </button>
+        {vocabAudioSrc(lessonId, item.id) ? (
+          <button
+            type="button"
+            className="nb-btn ghost"
+            onClick={(e) => {
+              e.stopPropagation();
+              const src = vocabAudioSrc(lessonId, item.id);
+              if (!src) return;
+              const a = new Audio(src);
+              void a.play().catch(() => undefined);
+            }}
+            aria-label="Posłuchaj wymowy"
+          >
+            🔊
+          </button>
+        ) : null}
         <button
           type="button"
           className="nb-btn"

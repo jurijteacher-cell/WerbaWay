@@ -1,0 +1,96 @@
+{
+  "lesson_id": "pl-ksieg-01-moja-droga-zawodowa",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: opowiadam o swojej pracy",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Mów o swoim prawdziwym doświadczeniu.",
+  "estimated_minutes": 13,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "listen-then-play",
+      "front_title": "Pierwsze spotkanie w biurze rachunkowym",
+      "back_scenario": "Umówiłaś się na krótką rozmowę z właścicielem biura rachunkowego. Chce poznać Twoje doświadczenie. Najpierw posłuchaj przykładowej rozmowy, potem odegraj swoją — z prawdziwymi faktami ze swojej pracy.",
+      "back_checklist": [
+        "Przedstaw się i powiedz, jak długo pracowałaś w zawodzie.",
+        "Opisz trzy obowiązki: czym się zajmowałaś i za co odpowiadałaś.",
+        "Opowiedz o jednym konkretnym osiągnięciu, użyj formy dokonanej.",
+        "Zapytaj, jakimi klientami zajmuje się biuro."
+      ],
+      "model_dialogue": [
+        {
+          "speaker": "Pan Marek",
+          "voice": "pl-PL-male",
+          "line": "Dzień dobry, Pani Olgo. Proszę usiąść. Proszę powiedzieć kilka słów o swoim doświadczeniu."
+        },
+        {
+          "speaker": "Olga",
+          "voice": "pl-PL-female",
+          "line": "Dzień dobry. Przez dwanaście lat pracowałam jako księgowa w Charkowie. Najpierw w małej hurtowni, potem w spółce budowlanej."
+        },
+        {
+          "speaker": "Pan Marek",
+          "voice": "pl-PL-male",
+          "line": "A czym się Pani zajmowała w tej spółce?"
+        },
+        {
+          "speaker": "Olga",
+          "voice": "pl-PL-female",
+          "line": "Zajmowałam się fakturami i kadrami. Co miesiąc przygotowywałam listę płac dla czterdziestu pracowników."
+        },
+        {
+          "speaker": "Pan Marek",
+          "voice": "pl-PL-male",
+          "line": "Czterdziestu? To sporo. A za co Pani odpowiadała?"
+        },
+        {
+          "speaker": "Olga",
+          "voice": "pl-PL-female",
+          "line": "Odpowiadałam za deklaracje podatkowe i za kontakt z bankiem. W dwa tysiące dwudziestym pierwszym roku wdrożyłam w firmie nowy program księgowy."
+        },
+        {
+          "speaker": "Pan Marek",
+          "voice": "pl-PL-male",
+          "line": "Długo to trwało?"
+        },
+        {
+          "speaker": "Olga",
+          "voice": "pl-PL-female",
+          "line": "Wdrażaliśmy go przez trzy miesiące. Potem zamykałam miesiąc o dwa dni szybciej niż wcześniej."
+        },
+        {
+          "speaker": "Pan Marek",
+          "voice": "pl-PL-male",
+          "line": "Bardzo dobrze. Czy pracowała Pani już w polskim programie księgowym?"
+        },
+        {
+          "speaker": "Olga",
+          "voice": "pl-PL-female",
+          "line": "Jeszcze nie, ale w zeszłym tygodniu zapisałam się na kurs. A czym zajmuje się Pana biuro?"
+        },
+        {
+          "speaker": "Pan Marek",
+          "voice": "pl-PL-male",
+          "line": "Prowadzimy księgowość dla sześćdziesięciu małych firm, głównie jednoosobowych działalności. Szukamy kogoś do kadr i płac na pół etatu."
+        },
+        {
+          "speaker": "Olga",
+          "voice": "pl-PL-female",
+          "line": "To dokładnie to, czym zajmowałam się przez ostatnie lata. Chętnie spróbuję."
+        }
+      ],
+      "audio_url": "/audio/pl-ksieg-01-c1-dialog.mp3"
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Telefon od rekruterki",
+      "back_scenario": "Dzwoni rekruterka z firmy produkcyjnej. Ma Twoje CV i chce szybko sprawdzić kilka informacji. Rozmowa trwa najwyżej trzy minuty.",
+      "back_checklist": [
+        "Potwierdź, że szukasz pracy w księgowości, i powiedz, ile masz stażu pracy.",
+        "Wyjaśnij, które obowiązki wykonywałaś: wystawiałaś faktury, składałaś deklaracje, naliczałaś wynagrodzenia, sporządzałaś sprawozdania.",
+        "Powiedz, czego jeszcze nie znasz w Polsce i jak się tego uczysz.",
+        "Ustal dzień i godzinę rozmowy kwalifikacyjnej."
+      ]
+    }
+  ]
+}

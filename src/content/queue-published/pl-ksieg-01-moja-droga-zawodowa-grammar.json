@@ -1,0 +1,88 @@
+{
+  "lesson_id": "pl-ksieg-01-moja-droga-zawodowa",
+  "exercise_type": "fill-in-blank",
+  "title": "Aspekt w czasie przeszłym: od par do zdań o sobie",
+  "instruction": "Pięć bloków. Na lekcji robimy g1, g3 i g5; g2 i g4 — jeśli starczy czasu.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "covers_slides": ["s4", "s9"],
+      "exercise_type": "matching",
+      "title": "1. Dobierz pary aspektowe",
+      "instruction": "Połącz formę niedokonaną z dokonaną.",
+      "items": [
+        {"id": "g1-1", "left": "księgować", "right": "zaksięgować", "grammar_point": "aspekt-tworzenie"},
+        {"id": "g1-2", "left": "wystawiać", "right": "wystawić", "grammar_point": "aspekt-tworzenie"},
+        {"id": "g1-3", "left": "składać", "right": "złożyć", "grammar_point": "aspekt-tworzenie"},
+        {"id": "g1-4", "left": "brać", "right": "wziąć", "grammar_point": "aspekt-tworzenie"},
+        {"id": "g1-5", "left": "rozliczać", "right": "rozliczyć", "grammar_point": "aspekt-tworzenie"},
+        {"id": "g1-6", "left": "przygotowywać", "right": "przygotować", "grammar_point": "aspekt-tworzenie"}
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "covers_slides": ["s2"],
+      "exercise_type": "fill-in-blank",
+      "title": "2. Formy czasu przeszłego",
+      "instruction": "Wpisz czasownik z nawiasu w czasie przeszłym.",
+      "items": [
+        {"id": "g2-1", "text": "Na Ukrainie ___ (ja, kobieta / pracować) w dziale kadr.", "answer": "pracowałam", "grammar_point": "czas-przeszly"},
+        {"id": "g2-2", "text": "Mój kolega ___ (prowadzić) małą firmę transportową.", "answer": "prowadził", "grammar_point": "czas-przeszly"},
+        {"id": "g2-3", "text": "Czy Pani ___ (pracować) wcześniej w biurze rachunkowym?", "answer": "pracowała", "grammar_point": "czas-przeszly"},
+        {"id": "g2-4", "text": "My, trzy księgowe, ___ (zamknąć) rok przed terminem.", "answer": "zamknęłyśmy", "grammar_point": "czas-przeszly"},
+        {"id": "g2-5", "text": "Pięć lat temu w naszym dziale ___ (pracować) tylko kobiety.", "answer": "pracowały", "grammar_point": "czas-przeszly"},
+        {"id": "g2-6", "text": "Dyrektor i ja ___ (podpisać) umowę w piątek.", "answer": "podpisaliśmy", "grammar_point": "czas-przeszly"}
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "covers_slides": ["s3", "s5", "s6"],
+      "exercise_type": "fill-in-blank",
+      "title": "3. Proces czy rezultat?",
+      "instruction": "Wybierz właściwą formę.",
+      "items": [
+        {"id": "g3-1", "text": "Przez osiem lat ___ dokumenty klientów.", "options": ["sprawdzałam", "sprawdziłam"], "answer": "sprawdzałam", "explanation": "Przez + czas trwania: proces → niedokonany.", "grammar_point": "aspekt-uzycie"},
+        {"id": "g3-2", "text": "Wczoraj w końcu ___ błąd w raporcie.", "options": ["znajdowałam", "znalazłam"], "answer": "znalazłam", "explanation": "W końcu: jest gotowy rezultat → dokonany.", "grammar_point": "aspekt-uzycie"},
+        {"id": "g3-3", "text": "Co miesiąc ___ listę płac dla dyrektora.", "options": ["drukowałam", "wydrukowałam"], "answer": "drukowałam", "explanation": "Co miesiąc: czynność się powtarza → niedokonany.", "grammar_point": "aspekt-uzycie"},
+        {"id": "g3-4", "text": "W ciągu dwóch dni ___ cały bilans.", "options": ["przygotowywałam", "przygotowałam"], "answer": "przygotowałam", "explanation": "W ciągu + czas: w tym czasie praca została skończona → dokonany.", "grammar_point": "aspekt-uzycie"},
+        {"id": "g3-5", "text": "Kiedy ___ fakturę, wyłączył się prąd.", "options": ["księgowałam", "zaksięgowałam"], "answer": "księgowałam", "explanation": "Tło, które przerwało zdarzenie → niedokonany.", "grammar_point": "aspekt-uzycie"},
+        {"id": "g3-6", "text": "___ dokumenty i od razu wysłałam je do banku.", "options": ["Skanowałam", "Zeskanowałam"], "answer": "Zeskanowałam", "explanation": "Kolejne kroki, każdy skończony → dokonany.", "grammar_point": "aspekt-uzycie"}
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "covers_slides": ["s7", "s8"],
+      "exercise_type": "sentence-building",
+      "title": "4. Zdania do CV i na rozmowę",
+      "instruction": "Ułóż zdanie w czasie przeszłym (ja = kobieta).",
+      "items": [
+        {"id": "g4-1", "prompt": "przez / dziesięć lat / pracować / jako / księgowa / w szkole", "answer": "Przez dziesięć lat pracowałam jako księgowa w szkole.", "accept": ["Przez dziesięć lat pracowałam w szkole jako księgowa.", "Pracowałam jako księgowa w szkole przez dziesięć lat."], "grammar_point": "rekcja"},
+        {"id": "g4-2", "prompt": "zajmować się / faktury / i / umowy", "answer": "Zajmowałam się fakturami i umowami.", "grammar_point": "rekcja"},
+        {"id": "g4-3", "prompt": "odpowiadać za / kontakt / z / bank", "answer": "Odpowiadałam za kontakt z bankiem.", "grammar_point": "rekcja"},
+        {"id": "g4-4", "prompt": "być / główna księgowa / w / hurtownia", "answer": "Byłam główną księgową w hurtowni.", "accept": ["W hurtowni byłam główną księgową."], "grammar_point": "rekcja"},
+        {"id": "g4-5", "prompt": "(teraz) mieć / doświadczenie / w / kadry i płace", "answer": "Mam doświadczenie w kadrach i płacach.", "grammar_point": "rekcja"}
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 1,
+      "covers_slides": ["s10", "s11"],
+      "exercise_type": "fill-in-blank",
+      "title": "5. Pułapki z ukraińskiego",
+      "instruction": "Wybierz formę, którą powie Polak.",
+      "items": [
+        {"id": "g5-1", "text": "Na Ukrainie byłam ___.", "options": ["buchalterką", "księgową"], "answer": "księgową", "explanation": "Zawód to księgowa; być + narzędnik.", "grammar_point": "kalki-uk"},
+        {"id": "g5-2", "text": "W firmie odpowiadałam za ___ finansową.", "options": ["raportowość", "sprawozdawczość"], "answer": "sprawozdawczość", "explanation": "Sprawozdawczość finansowa; „raportowość” nie istnieje.", "grammar_point": "kalki-uk"},
+        {"id": "g5-3", "text": "Program sam ___ wynagrodzenia.", "options": ["narachowuje", "nalicza"], "answer": "nalicza", "explanation": "Нараховувати = naliczać.", "grammar_point": "kalki-uk"},
+        {"id": "g5-4", "text": "Wczoraj przyszło pismo z ___.", "options": ["podatkowej", "urzędu skarbowego"], "answer": "urzędu skarbowego", "explanation": "Instytucja to urząd skarbowy.", "grammar_point": "kalki-uk"},
+        {"id": "g5-5", "text": "___ sześć lat pracowałam w banku.", "options": ["W przeciągu", "Przez"], "answer": "Przez", "explanation": "Czas trwania: przez + biernik.", "grammar_point": "kalki-uk"},
+        {"id": "g5-6", "text": "W piątek ___ deklarację za klienta.", "options": ["składałam", "złożyłam"], "answer": "złożyłam", "explanation": "Jedna deklaracja, gotowy rezultat → dokonany.", "grammar_point": "kalki-uk"}
+      ]
+    }
+  ]
+}

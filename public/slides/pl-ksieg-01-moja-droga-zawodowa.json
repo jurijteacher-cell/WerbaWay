@@ -1,0 +1,116 @@
+{
+  "lesson_id": "pl-ksieg-01-moja-droga-zawodowa",
+  "exercise_type": "grammar-slides",
+  "title": "Aspekt w czasie przeszłym: mówię o doświadczeniu",
+  "slides": [
+    {"id": "s1", "part": 1, "section": "teoria", "kind": "title",
+     "title": "Mówię o swoim doświadczeniu",
+     "subtitle": "Co robiłaś przez lata, a co udało Ci się zrobić?",
+     "goal": "Po tej części: opowiesz o swojej pracy, wybierając właściwy aspekt.",
+     "teacher_note": "Спитай: «Що ви робили на роботі щодня? А що вам вдалося зробити одного разу, чим пишаєтеся?» Дві відповіді — це і є два аспекти."},
+
+    {"id": "s2", "part": 1, "section": "teoria", "kind": "table", "reveal": "column",
+     "title": "Czas przeszły: formy",
+     "columns": ["", "ja (kobieta)", "ja (mężczyzna)", "Pani / ona", "my (kobiety)", "my (z mężczyzną)"],
+     "rows": [
+       ["pracować", "pracował[[am]]", "pracował[[em]]", "pracował[[a]]", "pracował[[yśmy]]", "pracowal[[iśmy]]"],
+       ["prowadzić", "prowadziłam", "prowadziłem", "prowadziła", "prowadziłyśmy", "prowadziliśmy"],
+       ["przygotować", "przygotowałam", "przygotowałem", "przygotowała", "przygotowałyśmy", "przygotowaliśmy"]
+     ],
+     "note": "W rozmowie oficjalnej: „Pani pracowała?” — forma jak dla „ona”.",
+     "teacher_note": "Відкривай по стовпчику. Їй найважливіші «ja (kobieta)» і «Pani»: так до неї звертатимуться на співбесіді."},
+
+    {"id": "s3", "part": 1, "section": "teoria", "kind": "compare",
+     "title": "Proces czy rezultat?",
+     "left": {"head": "niedokonany", "rule": "proces, powtarzanie, jak długo", "examples": ["Przez pięć lat [[prowadziłam]] księgi.", "Co tydzień [[sprawdzałam]] wyciągi bankowe."]},
+     "right": {"head": "dokonany", "rule": "jeden rezultat, rzecz skończona", "examples": ["W marcu [[złożyłam]] deklarację.", "W końcu [[znalazłam]] błąd w bilansie."]},
+     "note": "Pytanie kontrolne: czy jest gotowy rezultat? Tak → dokonany.",
+     "teacher_note": "Аналогія з українською: «подавала» і «подала» працюють так само. Наголоси: різниця вона вже відчуває, нова тільки форма польських пар."},
+
+    {"id": "s4", "part": 1, "section": "teoria", "kind": "table", "reveal": "row",
+     "title": "Pary aspektowe w księgowości",
+     "columns": ["niedokonany", "dokonany", "jak powstaje"],
+     "rows": [
+       ["księgować", "[[za]]księgować", "przedrostek"],
+       ["naliczać", "nalicz[[yć]]", "-ać → -yć"],
+       ["sporządzać", "sporządz[[ić]]", "-ać → -ić"],
+       ["rozliczać", "rozlicz[[yć]]", "-ać → -yć"],
+       ["przygotowywać", "przygotow[[ać]]", "-ywać → -ać"]
+     ],
+     "note": "Pary tworzymy zwykle przedrostkiem albo zmianą końcówki tematu.",
+     "teacher_note": "Це її робочі дієслова. Попроси до кожної пари одне речення про власну роботу в Україні."},
+
+    {"id": "s5", "part": 1, "section": "teoria", "kind": "table", "reveal": "column",
+     "title": "Sygnały czasu",
+     "columns": ["niedokonany", "dokonany"],
+     "rows": [
+       ["[[przez]] pięć lat", "[[w ciągu]] dwóch dni"],
+       ["codziennie, co miesiąc", "raz, w marcu"],
+       ["od 2015 do 2022", "w końcu, wreszcie"],
+       ["często, zwykle", "już, na czas"]
+     ],
+     "note": "Przez + czas trwania → zwykle niedokonany.",
+     "teacher_note": "«Przez pięć lat» відповідає на питання «як довго тривало». «W ciągu dwóch dni» означає, що за цей час результат готовий."},
+
+    {"id": "s6", "part": 1, "section": "teoria", "kind": "examples",
+     "title": "Jedno zdanie, dwa aspekty",
+     "items": [
+       {"tag": "tło + zdarzenie", "pl": "Kiedy [[sporządzałam]] bilans, [[zadzwonił]] dyrektor.", "uk": "Коли я складала баланс, подзвонив директор."},
+       {"tag": "kolejne kroki", "pl": "[[Sprawdziłam]] dokumenty i [[wysłałam]] je klientowi.", "uk": "Я перевірила документи й надіслала їх клієнтові."},
+       {"tag": "rezultat", "pl": "Już [[zamknęłam]] miesiąc w systemie.", "uk": "Я вже закрила місяць у системі."}
+     ],
+     "teacher_note": "Перший приклад — фон і подія. Другий — ланцюжок завершених кроків. Попроси її скласти схожий ланцюжок про власний робочий день."},
+
+    {"id": "s7", "part": 1, "section": "teoria", "kind": "steps",
+     "title": "Formuła: zdanie o doświadczeniu",
+     "steps": [
+       {"label": "jak długo", "text": "Przez sześć lat"},
+       {"label": "czasownik ndk", "text": "pracowałam"},
+       {"label": "jako + zawód", "text": "jako główna księgowa"},
+       {"label": "gdzie", "text": "w firmie transportowej."}
+     ],
+     "result": "Przez sześć lat [[pracowałam]] jako główna księgowa w firmie transportowej.",
+     "teacher_note": "Це перше речення її самопрезентації. Нехай одразу скаже свою версію з реальними даними."},
+
+    {"id": "s8", "part": 1, "section": "teoria", "kind": "table", "reveal": "row",
+     "title": "Kim byłam? Czym się zajmowałam?",
+     "columns": ["konstrukcja", "przypadek", "przykład"],
+     "rows": [
+       ["być + kim?", "narzędnik", "Byłam [[główną księgową]]."],
+       ["pracować jako + kto?", "mianownik", "Pracowałam jako [[księgowa]]."],
+       ["zajmować się + czym?", "narzędnik", "Zajmowałam się [[fakturami]]."],
+       ["odpowiadać za + co?", "biernik", "Odpowiadałam za [[raporty]]."],
+       ["doświadczenie w + czym?", "miejscownik", "Mam doświadczenie [[w kadrach]]."]
+     ],
+     "note": "Byłam księgową, ale: pracowałam jako księgowa.",
+     "teacher_note": "Ключовий слайд для співбесіди. Перші два рядки плутають найчастіше: «być» вимагає орудного, «jako» — називного."},
+
+    {"id": "s9", "part": 1, "section": "wyjatki", "kind": "exceptions", "refers_to": "s4",
+     "title": "Pary, które wyglądają inaczej",
+     "items": [
+       {"rule": "Inny rdzeń w parze", "example": "brać → wziąć (urlop), mówić → powiedzieć"},
+       {"rule": "Nieregularna para", "example": "składać → złożyć (deklarację, wniosek)"},
+       {"rule": "W tym znaczeniu zwykle tylko niedokonany", "example": "prowadzić księgi, pracować w firmie"}
+     ],
+     "note": "Takie pary trzeba zapamiętać razem.",
+     "teacher_note": "«Prowadzić księgi» описує процес, тому говоримо «prowadziłam» навіть про завершений період. Форма «poprowadzić» існує, але в іншому значенні (poprowadzić spotkanie)."},
+
+    {"id": "s10", "part": 1, "section": "pulapki", "kind": "traps",
+     "title": "Pułapki z ukraińskiego (1)",
+     "items": [
+       {"uk": "Я бухгалтер.", "wrong": "Jestem buchalterem.", "right": "Jestem [[księgową]].", "why": "„Buchalter” brzmi dziś staroświecko lub żartobliwie. Zawód to księgowy / księgowa."},
+       {"uk": "фінансова звітність", "wrong": "finansowa raportowość", "right": "[[sprawozdawczość]] finansowa", "why": "Słowa „raportowość” nie ma. Mówimy: sprawozdanie finansowe, sprawozdawczość finansowa."},
+       {"uk": "нарахувала зарплату", "wrong": "narachowałam zarpłatę", "right": "[[naliczyłam]] wynagrodzenie", "why": "Нарахувати = naliczyć. Zamiast „zarpłata”: wynagrodzenie albo pensja."}
+     ],
+     "teacher_note": "Це професійні кальки: їх почують одразу. Похвали, якщо якусь із них вона вже сама знала."},
+
+    {"id": "s11", "part": 1, "section": "pulapki", "kind": "traps",
+     "title": "Pułapki z ukraińskiego (2)",
+     "items": [
+       {"uk": "Податкова надіслала лист.", "wrong": "Podatkowa wysłała list.", "right": "[[Urząd skarbowy]] wysłał pismo.", "why": "Instytucja to urząd skarbowy. Oficjalny dokument z urzędu to pismo, nie list."},
+       {"uk": "Протягом п'яти років я вела облік.", "wrong": "W przeciągu pięciu lat prowadziłam księgi.", "right": "[[Przez]] pięć lat prowadziłam księgi.", "why": "Czas trwania procesu: przez + biernik. „W przeciągu” uważa się za błąd."},
+       {"uk": "Я вчасно подала декларацію.", "wrong": "Składałam deklarację na czas.", "right": "[[Złożyłam]] deklarację na czas.", "why": "Jedna deklaracja, gotowy rezultat → forma dokonana."}
+     ],
+     "teacher_note": "Остання пастка повертає до головного правила уроку. Запитай: «А як сказати, якщо ви подавали декларації вчасно кожного місяця?» (Składałam deklaracje na czas)."}
+  ]
+}

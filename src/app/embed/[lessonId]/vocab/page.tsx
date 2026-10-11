@@ -14,6 +14,7 @@ export default function EmbedVocabPage({ params }: Props) {
       instructions={vocab.instructions}
       items={vocab.items}
       groups={vocab.groups}
+      lessonId={params.lessonId}
     />
   );
 }
