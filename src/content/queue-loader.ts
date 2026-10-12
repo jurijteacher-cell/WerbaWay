@@ -156,6 +156,7 @@ function normalizeGrammar(raw: any): GrammarPyramidExercise {
       exercise_type: raw.exercise_type,
       title: raw.title,
       instructions: raw.instructions ?? raw.instruction,
+      eyebrow: raw.eyebrow,
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       levels: raw.levels.map((l: any, i: number) => ({
         level: l.level ?? i + 1,
@@ -174,6 +175,7 @@ function normalizeGrammar(raw: any): GrammarPyramidExercise {
     exercise_type: raw.exercise_type,
     title: raw.title,
     instructions: raw.instructions ?? raw.instruction,
+    eyebrow: raw.eyebrow,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     levels: blocks.map((b: any, i: number) => {
       let taskType = b.exercise_type ?? 'fill-in-blank';
@@ -274,6 +276,7 @@ function normalizeHw(raw: any): HomeworkExercise {
       exercise_type: raw.exercise_type,
       title: raw.title,
       instructions: raw.instructions ?? raw.instruction,
+      eyebrow: raw.eyebrow,
       levels: grammar.levels,
     };
   }
@@ -296,14 +299,14 @@ export function getQueueBundle(lessonId: string): QueueExerciseBundle | null {
   const grammarBoardRaw = readJson<unknown>(`${lessonId}-grammar-board.json`);
   const grammarRaw = readJson<unknown>(`${lessonId}-grammar.json`);
   const hwRaw = readJson<unknown>(`${lessonId}-hw.json`);
-  // pictures.json is optional (some lessons have no picture-set)
-  if (!vocabRaw || !commRaw || !grammarRaw || !hwRaw) return null;
+  // pictures + grammar(+board) optional (e.g. RU copies without tryb rozkazujący)
+  if (!vocabRaw || !commRaw || !hwRaw) return null;
   return {
     vocab: normalizeVocab(vocabRaw),
     pictures: picturesRaw ? normalizePictures(picturesRaw) : undefined,
     commTasks: normalizeFlip(commRaw),
     grammarBoard: grammarBoardRaw ? normalizeGrammarBoard(grammarBoardRaw) : undefined,
-    grammar: normalizeGrammar(grammarRaw),
+    grammar: grammarRaw ? normalizeGrammar(grammarRaw) : undefined,
     hw: normalizeHw(hwRaw),
   };
 }

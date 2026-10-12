@@ -78,6 +78,8 @@ export type GrammarPyramidExercise = {
   exercise_type: string;
   title: string;
   instructions?: string;
+  /** Override notebook eyebrow (default: gramatyka) */
+  eyebrow?: string;
   levels: {
     level: number;
     name: string;
@@ -93,6 +95,7 @@ export type HomeworkExercise = {
   exercise_type: string;
   title: string;
   instructions?: string;
+  eyebrow?: string;
   /** Legacy pl-preg shape */
   vocab_review?: string;
   video?: { title: string; url: string; task: string };
@@ -158,6 +161,7 @@ export type QueueExerciseBundle = {
   commTasks: FlipTaskExercise;
   /** Optional interactive grammar board (cards + mini-tasks). */
   grammarBoard?: GrammarBoardExercise;
-  grammar: GrammarPyramidExercise;
+  /** Optional — RU / light copies may omit grammar embeds. */
+  grammar?: GrammarPyramidExercise;
   hw: HomeworkExercise;
 };

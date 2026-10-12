@@ -69,18 +69,23 @@ export function GrammarPyramid({ data, blockIds }: Props) {
     );
   }, [level]);
 
+  const single = levels.length <= 1;
+
   return (
     <div>
       <header className="nb-head">
-        <p className="nb-eyebrow">gramatyka</p>
+        <p className="nb-eyebrow">{data.eyebrow ?? 'gramatyka'}</p>
         <h1>{data.title}</h1>
         {data.instructions ? <p>{data.instructions}</p> : null}
-        <p className="nb-note">
-          Poziom {level.level}: {level.name.replace(/^\d+[\.\)]\s*/, '')}
-        </p>
+        {!single ? (
+          <p className="nb-note">
+            Poziom {level.level}: {level.name.replace(/^\d+[\.\)]\s*/, '')}
+          </p>
+        ) : null}
         {level.instruction ? <p>{level.instruction}</p> : null}
       </header>
 
+      {!single ? (
       <div className="nb-idx" role="tablist">
         {levels.map((l, i) => {
           const bare = l.name.replace(/^\d+[\.\)]\s*/, '');
@@ -97,6 +102,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
           );
         })}
       </div>
+      ) : null}
 
       <div>
         {level.task_type === 'matching' && (

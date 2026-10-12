@@ -24,6 +24,7 @@ export function HomeworkEmbed({ data }: Props) {
           exercise_type: data.exercise_type,
           title: data.title,
           instructions: data.instructions,
+          eyebrow: data.eyebrow,
           levels: data.levels,
         }}
       />

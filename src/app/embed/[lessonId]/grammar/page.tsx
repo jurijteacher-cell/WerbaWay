@@ -10,7 +10,7 @@ type Props = {
 
 export default function EmbedGrammarPage({ params, searchParams }: Props) {
   const bundle = getQueueBundle(params.lessonId);
-  if (!bundle) notFound();
+  if (!bundle?.grammar) notFound();
   const blockIds = parseBlockIds(searchParams?.blocks);
   return <GrammarPyramid data={bundle.grammar} blockIds={blockIds} />;
 }
