@@ -1,0 +1,284 @@
+{
+  "lesson_id": "pl-preg-07-zakupy-i-budzet",
+  "exercise_type": "grammar-slides",
+  "title": "Dopełniacz",
+  "estimated_minutes": 30,
+  "slides": [
+    {
+      "id": "s1",
+      "part": 1,
+      "section": "teoria",
+      "kind": "title",
+      "title": "Dopełniacz",
+      "subtitle": "Kogo? Czego? Czyj?",
+      "goal": "Powiesz, czego nie masz i ile czegoś potrzebujesz.",
+      "teacher_note": "Напиши три речення: «Mam wózek», «Nie mam wózka», «Szukam wózka». Попроси знайти різницю, перш ніж щось пояснювати."
+    },
+    {
+      "id": "s2",
+      "part": 1,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Cztery prace dopełniacza",
+      "items": [
+        { "tag": "przeczenie", "pl": "Nie mam [[czasu]].", "uk": "Немає часу." },
+        { "tag": "ilość", "pl": "Dużo [[pieluch]].", "uk": "Багато підгузків." },
+        { "tag": "czyj", "pl": "Wózek [[siostry]].", "uk": "Візок сестри." },
+        { "tag": "po przyimku", "pl": "Bez [[paragonu]].", "uk": "Без чека." }
+      ],
+      "note": "Jedna forma, cztery różne zadania w zdaniu.",
+      "teacher_note": "Чотири приклади — чотири різні причини появи цього відмінка. Назви кожну вголос і повертайся до них далі."
+    },
+    {
+      "id": "s3",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Rodzaj żeński",
+      "columns": ["mianownik", "dopełniacz"],
+      "rows": [
+        ["cena", "cen[[y]]"],
+        ["obniżka", "obniżk[[i]]"],
+        ["promocja", "promocj[[i]]"],
+        ["rzecz", "rzecz[[y]]"]
+      ],
+      "note": "Po k, g i po miękkiej spółgłosce wychodzi -i.",
+      "teacher_note": "Та сама логіка, що в місцевому відмінку з уроку 5. Нагадай про це одним реченням."
+    },
+    {
+      "id": "s4",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Rodzaj męski",
+      "columns": ["mianownik", "dopełniacz"],
+      "rows": [
+        ["syn", "syn[[a]]"],
+        ["wózek", "wózk[[a]]"],
+        ["paragon", "paragon[[u]]"],
+        ["sklep", "sklep[[u]]"]
+      ],
+      "note": "Istoty żywe zawsze -a; rzeczy raz -a, raz -u.",
+      "teacher_note": "Для речей надійного правила немає. Скажи це прямо: живе — завжди -a, решту вчимо разом зі словом."
+    },
+    {
+      "id": "s5",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Rodzaj nijaki",
+      "columns": ["mianownik", "dopełniacz"],
+      "rows": [
+        ["mleko", "mlek[[a]]"],
+        ["miejsce", "miejsc[[a]]"],
+        ["ogłoszenie", "ogłoszeni[[a]]"]
+      ],
+      "note": "Rodzaj nijaki ma zawsze jedną końcówkę.",
+      "teacher_note": "Найлегший слайд теорії. Пройди швидко — це подарунок після попереднього."
+    },
+    {
+      "id": "s6",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Przymiotnik",
+      "columns": ["rodzaj", "przykład"],
+      "rows": [
+        ["męski", "now[[ego]] wózka"],
+        ["nijaki", "ciepł[[ego]] mleka"],
+        ["żeński", "dobr[[ej]] ceny"]
+      ],
+      "note": "Męski i nijaki mają tę samą końcówkę.",
+      "teacher_note": "Попроси додати прикметник до трьох форм із попередніх слайдів — так перевіриш обидва правила разом."
+    },
+    {
+      "id": "s7",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Liczba mnoga",
+      "columns": ["mianownik", "dopełniacz"],
+      "rows": [
+        ["paragony", "paragon[[ów]]"],
+        ["pieluchy", "pieluch"],
+        ["miejsca", "miejsc"],
+        ["ogłoszenia", "ogłosz[[eń]]"]
+      ],
+      "note": "Męskie biorą -ów, żeńskie i nijakie często gubią końcówkę.",
+      "teacher_note": "Друга й третя форми виглядають «обрізаними» — саме це найбільше дивує. Дай вимовити вголос."
+    },
+    {
+      "id": "s8",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Mam czas, nie mam czasu",
+      "left": {
+        "head": "zdanie twierdzące",
+        "rule": "biernik",
+        "examples": ["Mam [[czas]].", "Kupiłam [[wózek]]."]
+      },
+      "right": {
+        "head": "zdanie z nie",
+        "rule": "dopełniacz",
+        "examples": ["Nie mam [[czasu]].", "Nie kupiłam [[wózka]]."]
+      },
+      "note": "Przeczenie zamienia biernik na dopełniacz. Zawsze.",
+      "teacher_note": "Це головне правило уроку. Дай п'ять пар речень на швидкість, перш ніж іти далі."
+    },
+    {
+      "id": "s9",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Ile czego?",
+      "columns": ["słowo", "przykład"],
+      "rows": [
+        ["dużo", "dużo [[pieluch]]"],
+        ["mało", "mało [[miejsca]]"],
+        ["trochę", "trochę [[mleka]]"],
+        ["kilka", "kilka [[rzeczy]]"],
+        ["pół", "pół [[godziny]]"],
+        ["nic", "nic [[nowego]]"]
+      ],
+      "teacher_note": "Закрий правий стовпчик і попроси самій поставити форму. Останній рядок найважчий."
+    },
+    {
+      "id": "s10",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Przyimki z dopełniaczem",
+      "columns": ["przyimek", "przykład"],
+      "rows": [
+        ["do", "Idę [[do sklepu]]."],
+        ["od", "List [[od siostry]]."],
+        ["bez", "Kawa [[bez cukru]]."],
+        ["dla", "Prezent [[dla dziecka]]."],
+        ["u", "Byłam [[u babci]]."],
+        ["obok", "Stoję [[obok kasy]]."]
+      ],
+      "teacher_note": "Прочитай усі шість, потім закрий слайд і попроси назвати прийменники з пам'яті."
+    },
+    {
+      "id": "s11",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Szukam czego, widzę co",
+      "left": {
+        "head": "dopełniacz",
+        "rule": "szukać, potrzebować, brakować",
+        "examples": ["Szukam [[spacerówki]].", "Potrzebuję [[rady]]."]
+      },
+      "right": {
+        "head": "biernik",
+        "rule": "mieć, kupować, widzieć",
+        "examples": ["Mam [[spacerówkę]].", "Kupuję [[radio]]."]
+      },
+      "note": "Te trzy czasowniki żądają dopełniacza bez przeczenia.",
+      "teacher_note": "Українською «шукаю роботу» — знахідний. Саме тут народжується помилка «szukam pracę»."
+    },
+    {
+      "id": "s12",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "table",
+      "reveal": "row",
+      "refers_to": "s4",
+      "title": "Męskie słowa z -u",
+      "columns": ["mianownik", "dopełniacz"],
+      "rows": [
+        ["czas", "czas[[u]]"],
+        ["zwrot", "zwrot[[u]]"],
+        ["stan", "stan[[u]]"],
+        ["sen", "sn[[u]]"],
+        ["rachunek", "rachunk[[u]]"],
+        ["wysiłek", "wysiłk[[u]]"]
+      ],
+      "note": "Te formy zapamiętujemy razem ze słowem.",
+      "teacher_note": "Шість слів, які трапляються щодня. Перші два — у вправах цього уроку, тому вимагай саме їх."
+    },
+    {
+      "id": "s13",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "table",
+      "reveal": "row",
+      "refers_to": "s7",
+      "title": "Nieregularna liczba mnoga",
+      "columns": ["mianownik", "dopełniacz"],
+      "rows": [
+        ["pieniądze", "[[pieniędzy]]"],
+        ["dzieci", "[[dzieci]]"],
+        ["ludzie", "[[ludzi]]"],
+        ["tygodnie", "[[tygodni]]"]
+      ],
+      "note": "Dzieci w dopełniaczu wygląda jak w mianowniku.",
+      "teacher_note": "«Nie mam pieniędzy» — найчастіша фраза з цього слайда. Відпрацюй її окремо."
+    },
+    {
+      "id": "s14",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego (1)",
+      "items": [
+        {
+          "uk": "у мене немає часу",
+          "wrong": "u mnie nie ma czasu",
+          "right": "[[nie mam]] czasu",
+          "why": "polski mówi przez czasownik mieć, a nie przez konstrukcję z u mnie."
+        },
+        {
+          "uk": "шукаю роботу",
+          "wrong": "szukam pracę",
+          "right": "szukam [[pracy]]",
+          "why": "szukać żąda dopełniacza, a po ukraińsku jest biernik."
+        },
+        {
+          "uk": "мені потрібна коляска",
+          "wrong": "potrzebuję wózek",
+          "right": "potrzebuję [[wózka]]",
+          "why": "potrzebować też łączy się z dopełniaczem, nie z biernikiem."
+        }
+      ],
+      "teacher_note": "Перша пастка — конструкція, друга й третя — керування. Читай українську форму вголос, інакше помилка не видна."
+    },
+    {
+      "id": "s15",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego (2)",
+      "items": [
+        {
+          "uk": "я не купила хліб",
+          "wrong": "nie kupiłam chleb",
+          "right": "nie kupiłam [[chleba]]",
+          "why": "po przeczeniu biernik zawsze przechodzi w dopełniacz."
+        },
+        {
+          "uk": "мені це не потрібно",
+          "wrong": "nie potrzebuję to",
+          "right": "nie potrzebuję [[tego]]",
+          "why": "zaimek zmienia formę tak samo jak rzeczownik."
+        },
+        {
+          "uk": "з магазину",
+          "wrong": "z sklepu",
+          "right": "[[ze]] sklepu",
+          "why": "przed zbiegiem spółgłosek z zmienia się w ze."
+        }
+      ],
+      "teacher_note": "Остання пастка — фонетична, не граматична. Попроси вимовити обидві версії й почути, що перша не вимовляється."
+    }
+  ]
+}

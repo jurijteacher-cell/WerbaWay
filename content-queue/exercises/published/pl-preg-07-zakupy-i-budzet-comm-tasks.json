@@ -1,0 +1,121 @@
+{
+  "lesson_id": "pl-preg-07-zakupy-i-budzet",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: sklep, ogłoszenie, budżet",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Wyjdź z niej ze wszystkimi informacjami z listy.",
+  "estimated_minutes": 20,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "listen-then-play",
+      "front_title": "Reklamacja bez paragonu",
+      "back_scenario": "Rzecz kupiona tydzień temu przestała działać, a paragonu nie możesz znaleźć. Najpierw posłuchaj przykładowej rozmowy, potem odegraj swoją — z inną rzeczą i innym problemem.",
+      "back_checklist": [
+        "Powiedz, co kupiłaś i co się zepsuło.",
+        "Wyjaśnij, że nie masz paragonu, i pokaż inny dowód zakupu.",
+        "Wybierz wymianę albo zwrot pieniędzy.",
+        "Zapytaj, ile to potrwa.",
+        "Ustal, jak sklep się z Tobą skontaktuje."
+      ],
+      "model_dialogue": [
+        {
+          "speaker": "Sprzedawczyni",
+          "voice": "pl-PL-female",
+          "line": "Dzień dobry, w czym mogę pomóc?"
+        },
+        {
+          "speaker": "Klientka",
+          "voice": "pl-PL-female",
+          "line": "Dzień dobry. Chciałabym złożyć reklamację. Kupiłam u państwa lampkę i przestała działać po tygodniu."
+        },
+        {
+          "speaker": "Sprzedawczyni",
+          "voice": "pl-PL-female",
+          "line": "Przykro mi. Ma pani paragon?"
+        },
+        {
+          "speaker": "Klientka",
+          "voice": "pl-PL-female",
+          "line": "Nie mam paragonu, zgubiłam go. Ale mam w telefonie rachunek z karty, z datą i z kwotą."
+        },
+        {
+          "speaker": "Sprzedawczyni",
+          "voice": "pl-PL-female",
+          "line": "To wystarczy, bo to też jest dowód zakupu. Proszę mi go pokazać."
+        },
+        {
+          "speaker": "Klientka",
+          "voice": "pl-PL-female",
+          "line": "Proszę. Dwudziestego trzeciego września, sto dziewięćdziesiąt złotych."
+        },
+        {
+          "speaker": "Sprzedawczyni",
+          "voice": "pl-PL-female",
+          "line": "Widzę. A obudowa jest uszkodzona z zewnątrz?"
+        },
+        {
+          "speaker": "Klientka",
+          "voice": "pl-PL-female",
+          "line": "Nie, z zewnątrz nic jej nie brakuje. Po prostu nie świeci."
+        },
+        {
+          "speaker": "Sprzedawczyni",
+          "voice": "pl-PL-female",
+          "line": "Rozumiem. Mamy dwie możliwości: wymiana na nową albo zwrot pieniędzy."
+        },
+        {
+          "speaker": "Klientka",
+          "voice": "pl-PL-female",
+          "line": "Wolę wymianę, jeśli macie taki sam model."
+        },
+        {
+          "speaker": "Sprzedawczyni",
+          "voice": "pl-PL-female",
+          "line": "Tego modelu już nie mamy, ale jest nowsza wersja, bez obniżki, w tej samej cenie."
+        },
+        {
+          "speaker": "Klientka",
+          "voice": "pl-PL-female",
+          "line": "Dobrze. Ile to potrwa?"
+        },
+        {
+          "speaker": "Sprzedawczyni",
+          "voice": "pl-PL-female",
+          "line": "Do czternastu dni. Zadzwonimy, kiedy będzie gotowe."
+        },
+        {
+          "speaker": "Klientka",
+          "voice": "pl-PL-female",
+          "line": "Dziękuję. To zostawiam lampkę i czekam na telefon."
+        }
+      ],
+      "audio_url": "/audio/pl-preg-07-c1-dialog.mp3"
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Telefon w sprawie ogłoszenia",
+      "back_scenario": "Znalazłaś ogłoszenie z rzeczą, której szukasz od miesiąca. Dzwonisz do osoby, która ją sprzedaje, i chcesz ustalić wszystko za jedną rozmowę.",
+      "back_checklist": [
+        "Powiedz, z którego ogłoszenia dzwonisz, i zapytaj, czy rzecz jest jeszcze wolna.",
+        "Zapytaj, od kiedy jest używana i w jakim jest stanie.",
+        "Dowiedz się, czego brakuje w zestawie.",
+        "Zapytaj o cenę i spróbuj ustalić niższą.",
+        "Ustal dzień, godzinę i miejsce odbioru osobistego."
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "front_title": "Co kupujemy w tym miesiącu",
+      "back_scenario": "Macie na liście cztery rzeczy, a pieniędzy na dwie. Rozmawiasz z bliską osobą i razem decydujecie, co kupić teraz, a co odłożyć.",
+      "back_checklist": [
+        "Powiedz, ile możecie wydać w tym miesiącu.",
+        "Uzasadnij, czego potrzebujesz najbardziej i dlaczego.",
+        "Zaproponuj, co można kupić używane albo pożyczyć.",
+        "Ustal, co odkładacie i na kiedy.",
+        "Powtórz na koniec całą decyzję jednym zdaniem."
+      ]
+    }
+  ]
+}
