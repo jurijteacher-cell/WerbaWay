@@ -1,0 +1,99 @@
+{
+  "lesson_id": "pl-a2-mow-03-wolny-czas",
+  "exercise_type": "grammar-slides",
+  "title": "Lubię, uwielbiam, wolę",
+  "slides": [
+    {"id": "s1", "part": 1, "section": "teoria", "kind": "title",
+     "title": "Lubię, uwielbiam, wolę",
+     "subtitle": "Jak powiedzieć, co lubisz i co wybierasz?",
+     "goal": "Po tej części powiesz: „Wolę góry niż morze” i „Chodzę na basen”.",
+     "teacher_note": "Спитай: «Góry czy morze?» і дай учневі відповісти як вміє. Потім: «Зараз навчимося казати це по-польськи природно»."},
+
+    {"id": "s2", "part": 1, "section": "teoria", "kind": "table", "reveal": "row",
+     "title": "Od „nie lubię” do „kocham”",
+     "columns": ["", "+ co robić?", "+ co?"],
+     "rows": [
+       ["lubię", "lubię [[tańczyć]]", "lubię [[jazz]]"],
+       ["uwielbiam", "uwielbiam gotować", "uwielbiam góry"],
+       ["kocham", "kocham czytać", "kocham kino"],
+       ["nie lubię", "nie lubię biegać", "nie lubię [[sportu]]"]
+     ],
+     "note": "Po „nie” rzeczownik idzie w dopełniaczu: nie lubię sportu, kawy, zimy.",
+     "teacher_note": "Після кожного рядка — одне питання учню: «A ty, co uwielbiasz?». На останньому рядку наголоси: заперечення → dopełniacz."},
+
+    {"id": "s3", "part": 1, "section": "teoria", "kind": "table", "reveal": "column",
+     "title": "Woleć — odmiana",
+     "columns": ["ja", "ty", "on / ona", "my", "wy", "oni / one"],
+     "rows": [
+       ["wol[[ę]]", "wol[[isz]]", "wol[[i]]", "wol[[imy]]", "wol[[icie]]", "wol[[ą]]"]
+     ],
+     "note": "Woleć znaczy bardziej lubić. Poprawne jest też: bardziej lubię góry.",
+     "teacher_note": "Відкривай по стовпчику й одразу питай: «Co woli twoja mama? Co wolą twoje dzieci / przyjaciele?»."},
+
+    {"id": "s4", "part": 1, "section": "teoria", "kind": "steps",
+     "title": "Formuła: woleć… niż…",
+     "steps": [
+       {"label": "woleć", "text": "Wolę"},
+       {"label": "co? — biernik", "text": "góry"},
+       {"label": "niż", "text": "niż"},
+       {"label": "co? — biernik", "text": "morze"}
+     ],
+     "result": "Wolę [[góry niż morze]].",
+     "teacher_note": "Після формули — швидкий раунд: «kawa czy herbata, kot czy pies, lato czy zima?». Учень відповідає тільки повним реченням з niż."},
+
+    {"id": "s5", "part": 1, "section": "teoria", "kind": "compare",
+     "title": "Niż czy od?",
+     "left": {"head": "niż", "rule": "ten sam przypadek po obu stronach", "examples": ["Wolę herbatę [[niż]] kawę.", "Wolę tańczyć [[niż]] śpiewać."]},
+     "right": {"head": "od", "rule": "od + dopełniacz, przy rzeczownikach", "examples": ["Wolę herbatę [[od kawy]].", "Wolę góry [[od morza]]."]},
+     "note": "Z bezokolicznikiem tylko niż: wolę czytać niż oglądać.",
+     "teacher_note": "Обидва варіанти правильні з іменниками; «od» трохи книжніший. Дай учню перекласти одне речення двома способами."},
+
+    {"id": "s6", "part": 1, "section": "teoria", "kind": "table", "reveal": "row",
+     "title": "Interesować się, grać, uprawiać",
+     "columns": ["konstrukcja", "przypadek", "przykład"],
+     "rows": [
+       ["interesować się", "+ narzędnik", "interesuję się [[fotografią]]"],
+       ["grać w", "+ biernik", "gram w [[szachy]]"],
+       ["grać na", "+ miejscownik", "gram na [[gitarze]]"],
+       ["uprawiać", "+ biernik", "uprawiam [[sport]]"]
+     ],
+     "note": "Grać w — gry i sport. Grać na — instrumenty i sprzęt.",
+     "teacher_note": "Спитай: «Na czym grasz? W co grasz? Czym się interesujesz?». Для «grać na» додай: na komputerze, na konsoli."},
+
+    {"id": "s7", "part": 1, "section": "teoria", "kind": "table", "reveal": "row",
+     "title": "Dokąd chodzisz?",
+     "columns": ["przyimek", "przypadek", "przykłady"],
+     "rows": [
+       ["do", "+ dopełniacz", "do [[kina]], do teatru"],
+       ["na", "+ biernik", "na [[basen]], na siłownię"],
+       ["na", "+ biernik", "na [[zajęcia]], na koncert"]
+     ],
+     "note": "Do — zwykle budynek. Na — zwykle zajęcia, wydarzenia i miejsca sportowe.",
+     "teacher_note": "Тут найбільше помилок з української («w kino»). Попроси учня назвати 5 місць, куди він ходить цього тижня, з правильним прийменником."},
+
+    {"id": "s8", "part": 1, "section": "wyjatki", "kind": "exceptions", "refers_to": "s7",
+     "title": "Jeździć na — dwa przypadki",
+     "items": [
+       {"rule": "Na czym jeżdżę? — miejscownik", "example": "Jeżdżę na rowerze, na nartach, na rolkach."},
+       {"rule": "Po co jadę? — biernik", "example": "W lutym jedziemy na narty w Tatry."}
+     ],
+     "teacher_note": "Поясни через питання: «na czym?» — чим пересуваюся; «po co?» — мета поїздки. Обидва речення правильні."},
+
+    {"id": "s9", "part": 1, "section": "pulapki", "kind": "traps",
+     "title": "Pułapki z ukraińskiego · 1",
+     "items": [
+       {"uk": "займаюся спортом", "wrong": "zajmuję się sportem", "right": "[[uprawiam]] sport", "why": "Zajmować się — robić coś zawodowo albo opiekować się czymś. Sport się uprawia."},
+       {"uk": "у вільний час", "wrong": "w wolny czas", "right": "w [[wolnym czasie]]", "why": "Kiedy? — w + miejscownik."},
+       {"uk": "ходжу в кіно", "wrong": "chodzę w kino", "right": "chodzę [[do kina]]", "why": "Do budynku — do + dopełniacz."}
+     ],
+     "teacher_note": "Кожну пастку спершу скажи українською й дай учню перекласти самому — тільки потім відкривай правильний варіант."},
+
+    {"id": "s10", "part": 1, "section": "pulapki", "kind": "traps",
+     "title": "Pułapki z ukraińskiego · 2",
+     "items": [
+       {"uk": "ходжу в спортзал", "wrong": "chodzę w sportzal", "right": "chodzę [[na siłownię]]", "why": "Po polsku to siłownia, a na zajęcia i treningi chodzimy na + biernik."},
+       {"uk": "відвідую заняття з танців", "wrong": "odwiedzam zajęcia", "right": "[[chodzę na]] zajęcia z tańca", "why": "Odwiedzać można ludzi i miasta. Na zajęcia się chodzi."}
+     ],
+     "teacher_note": "«Odwiedzam» — дуже стійка калька; лови її на слух до кінця уроку."}
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "lesson_id": "pl-a2-mow-03-wolny-czas",
+  "exercise_type": "vocab-cards",
+  "title": "Słownictwo: czas wolny, sport, zaproszenia i zapisy na zajęcia",
+  "instruction": "25 słów w czterech grupach. Odwróć kartę, posłuchaj wymowy i powiedz własne zdanie z tym słowem.",
+  "estimated_minutes": 5,
+  "groups": ["Czas wolny", "Sport i ruch", "Zaproszenia i plany", "Zapisy na zajęcia"],
+  "comm_groups": ["Czas wolny", "Zaproszenia i plany", "Zapisy na zajęcia"],
+  "items": [
+    {"id": "v01", "term": "spędzać czas", "group": "Czas wolny", "part_of_speech": "czasownik, ndk.", "definition": "Być gdzieś albo robić coś przez jakiś czas.", "example": "Weekendy zwykle spędzam z rodziną u rodziców.", "translation_uk": "проводити час"},
+    {"id": "v02", "term": "hobby", "group": "Czas wolny", "part_of_speech": "rzeczownik, n., nieodm.", "definition": "To, co lubisz robić po pracy albo po szkole.", "example": "Moim hobby jest kuchnia azjatycka.", "translation_uk": "хобі"},
+    {"id": "v03", "term": "pasja", "group": "Czas wolny", "part_of_speech": "rzeczownik, f.", "definition": "Coś, co bardzo kochasz robić.", "example": "Muzyka to jego wielka pasja od dziecka.", "translation_uk": "пристрасть, захоплення"},
+    {"id": "v04", "term": "zainteresowania", "group": "Czas wolny", "part_of_speech": "rzeczownik, lm.", "definition": "Tematy i rzeczy, które cię interesują.", "example": "W CV warto napisać kilka słów o swoich zainteresowaniach.", "translation_uk": "інтереси"},
+    {"id": "v05", "term": "interesować się (czym?)", "group": "Czas wolny", "part_of_speech": "czasownik, ndk.", "definition": "Chcieć wiedzieć o czymś więcej.", "example": "Mój syn interesuje się kosmosem i planetami.", "translation_uk": "цікавитися (чим?)"},
+    {"id": "v06", "term": "odpoczywać", "group": "Czas wolny", "part_of_speech": "czasownik, ndk.", "definition": "Nie pracować i relaksować się.", "example": "Po pracy odpoczywam na kanapie z książką.", "translation_uk": "відпочивати"},
+    {"id": "v07", "term": "nudzić się", "group": "Czas wolny", "part_of_speech": "czasownik, ndk.", "definition": "Nie mieć nic ciekawego do roboty.", "example": "W długiej podróży dzieci szybko się nudzą.", "translation_uk": "нудьгувати"},
+
+    {"id": "v08", "term": "uprawiać sport", "group": "Sport i ruch", "part_of_speech": "wyrażenie", "definition": "Regularnie trenować.", "example": "Lekarze radzą uprawiać sport kilka razy w tygodniu.", "translation_uk": "займатися спортом"},
+    {"id": "v09", "term": "siłownia", "group": "Sport i ruch", "part_of_speech": "rzeczownik, f.", "definition": "Miejsce, gdzie ćwiczysz z ciężarami i na maszynach.", "example": "Chodzę na siłownię przed pracą, o szóstej rano.", "translation_uk": "тренажерний зал"},
+    {"id": "v10", "term": "basen", "group": "Sport i ruch", "part_of_speech": "rzeczownik, m.", "definition": "Miejsce, gdzie się pływa.", "example": "W naszym mieście otworzyli nowy basen z sauną.", "translation_uk": "басейн"},
+    {"id": "v11", "term": "bieganie", "group": "Sport i ruch", "part_of_speech": "rzeczownik, n.", "definition": "Sport, w którym szybko poruszasz się na nogach.", "example": "Bieganie prawie nic nie kosztuje — potrzebujesz tylko dobrych butów.", "translation_uk": "біг"},
+    {"id": "v12", "term": "wspinaczka", "group": "Sport i ruch", "part_of_speech": "rzeczownik, f.", "definition": "Wchodzenie na skały albo na specjalną ścianę.", "example": "Na wspinaczkę zawsze zakładam kask.", "translation_uk": "скелелазіння"},
+    {"id": "v13", "term": "rozgrzewka", "group": "Sport i ruch", "part_of_speech": "rzeczownik, f.", "definition": "Krótkie ćwiczenia przed treningiem.", "example": "Bez rozgrzewki łatwo o kontuzję.", "translation_uk": "розминка"},
+
+    {"id": "v14", "term": "zaprosić (kogo? na co?)", "group": "Zaproszenia i plany", "part_of_speech": "czasownik, dk.", "definition": "Powiedzieć komuś: przyjdź do mnie albo chodź ze mną.", "example": "Sąsiedzi zaprosili nas na grilla w niedzielę.", "translation_uk": "запросити"},
+    {"id": "v15", "term": "przyjęcie", "group": "Zaproszenia i plany", "part_of_speech": "rzeczownik, n.", "definition": "Spotkanie z gośćmi i jedzeniem, np. z okazji urodzin.", "example": "Na przyjęciu było ponad pięćdziesiąt osób.", "translation_uk": "прийом, свято з гостями"},
+    {"id": "v16", "term": "impreza", "group": "Zaproszenia i plany", "part_of_speech": "rzeczownik, f.", "definition": "Spotkanie dla zabawy, często z muzyką.", "example": "Impreza u Kuby skończyła się o trzeciej w nocy.", "translation_uk": "вечірка"},
+    {"id": "v17", "term": "mieć ochotę (na co?)", "group": "Zaproszenia i plany", "part_of_speech": "wyrażenie", "definition": "Chcieć czegoś teraz.", "example": "Masz ochotę na kawę po zajęciach?", "translation_uk": "мати бажання, хотіти"},
+    {"id": "v18", "term": "dać znać", "group": "Zaproszenia i plany", "part_of_speech": "wyrażenie", "definition": "Powiedzieć albo napisać komuś ważną informację.", "example": "Daj znać, kiedy dojedziesz do domu.", "translation_uk": "дати знати"},
+    {"id": "v19", "term": "dać radę", "group": "Zaproszenia i plany", "part_of_speech": "wyrażenie, potoczne", "definition": "Móc coś zrobić albo zdążyć.", "example": "Sam nie dam rady przenieść tej szafy.", "translation_uk": "впоратися, встигнути"},
+
+    {"id": "v20", "term": "zapisać się (na co?)", "group": "Zapisy na zajęcia", "part_of_speech": "czasownik, dk.", "definition": "Dodać swoje nazwisko do listy osób na kursie.", "example": "Zapisałam córkę na lekcje pływania.", "translation_uk": "записатися"},
+    {"id": "v21", "term": "zajęcia", "group": "Zapisy na zajęcia", "part_of_speech": "rzeczownik, lm.", "definition": "Regularne lekcje, np. sportowe albo językowe.", "example": "Zajęcia z jogi są w poniedziałki i środy.", "translation_uk": "заняття"},
+    {"id": "v22", "term": "karnet", "group": "Zapisy na zajęcia", "part_of_speech": "rzeczownik, m.", "definition": "Bilet na wiele wejść albo na cały miesiąc.", "example": "Miesięczny karnet bardziej się opłaca niż bilety.", "translation_uk": "абонемент"},
+    {"id": "v23", "term": "pojedyncze wejście", "group": "Zapisy na zajęcia", "part_of_speech": "wyrażenie", "definition": "Bilet tylko na jeden raz.", "example": "Pojedyncze wejście jest drogie, jeśli ćwiczysz codziennie.", "translation_uk": "разовий вхід"},
+    {"id": "v24", "term": "zniżka", "group": "Zapisy na zajęcia", "part_of_speech": "rzeczownik, f.", "definition": "Niższa cena dla niektórych osób.", "example": "Studenci mają dwadzieścia procent zniżki.", "translation_uk": "знижка"},
+    {"id": "v25", "term": "dla początkujących", "group": "Zapisy na zajęcia", "part_of_speech": "wyrażenie", "definition": "Dla osób, które dopiero zaczynają.", "example": "Szukam kursu gitary dla początkujących.", "translation_uk": "для початківців"}
+  ]
+}

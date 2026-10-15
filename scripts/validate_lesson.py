@@ -84,14 +84,23 @@ def main():
     template = fm.get("template") or ""
     params = dict(LEVEL.get(level) or {})
     if template == "light-60":
-        # SPEC PATCH v3.5 — індивідуальні 60 хв
-        params.update({
-            "text": (200, 270),  # 200–260 + невеликий запас на підрахунок
-            "vocab": (20, 25),
-            "blocks": (4, 5),
-            "comm": (2, 2),
-            "pairs": (0, 0),
-        })
+        # SPEC PATCH v3.5 — індивідуальні 60 хв (B1 за замовч.; A2 — свідомі відхилення)
+        if level == "A2":
+            params.update({
+                "text": (250, 400),
+                "vocab": (20, 25),
+                "blocks": (3, 5),
+                "comm": (2, 3),
+                "pairs": (0, 0),
+            })
+        else:
+            params.update({
+                "text": (200, 270),  # 200–260 + невеликий запас на підрахунок
+                "vocab": (20, 25),
+                "blocks": (4, 5),
+                "comm": (2, 2),
+                "pairs": (0, 0),
+            })
     fm_tags = set(fm.get("grammar_points") or [])
 
     # ---------- JSON: парсинг, лапки, lesson_id ----------

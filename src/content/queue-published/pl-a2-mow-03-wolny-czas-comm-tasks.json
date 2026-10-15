@@ -1,0 +1,110 @@
+{
+  "lesson_id": "pl-a2-mow-03-wolny-czas",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: zaproszenie, zapisy i sonda",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Potem zamieńcie się rolami.",
+  "estimated_minutes": 17,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "listen-then-play",
+      "front_title": "Zaproszenie na urodziny",
+      "back_scenario": "W sobotę organizujesz przyjęcie urodzinowe. Dzwonisz do kolegi albo koleżanki i zapraszasz. Ta osoba nie jest pewna, czy zdąży. Najpierw posłuchaj rozmowy Marty i Pawła, potem odegraj swoją: inne miejsce, inna godzina, inny plan na wieczór.",
+      "back_checklist": [
+        "Przywitaj się i zapytaj, czy kolega ma chwilę.",
+        "Zaproś na przyjęcie i powiedz, gdzie ono będzie.",
+        "Podaj godzinę i powiedz, co będziecie robić.",
+        "Zareaguj na wahanie: zaproponuj inną godzinę.",
+        "Poproś, żeby kolega dał ci znać, i pożegnaj się."
+      ],
+      "model_dialogue": [
+        {
+          "speaker": "Paweł",
+          "voice": "pl-PL-male",
+          "line": "Halo, słucham?"
+        },
+        {
+          "speaker": "Marta",
+          "voice": "pl-PL-female",
+          "line": "Cześć, Paweł, tu Marta! Masz chwilę?"
+        },
+        {
+          "speaker": "Paweł",
+          "voice": "pl-PL-male",
+          "line": "Jasne, miło cię słyszeć! Co słychać?"
+        },
+        {
+          "speaker": "Marta",
+          "voice": "pl-PL-female",
+          "line": "Wszystko dobrze. W sobotę kończę trzydzieści lat i organizuję przyjęcie urodzinowe. Zapraszam cię!"
+        },
+        {
+          "speaker": "Paweł",
+          "voice": "pl-PL-male",
+          "line": "Super, dziękuję! A gdzie będzie impreza?"
+        },
+        {
+          "speaker": "Marta",
+          "voice": "pl-PL-female",
+          "line": "W klubie „Pod Lipą” na ulicy Ogrodowej. Najpierw kolacja, a potem karaoke. Wiem, że lubisz śpiewać!"
+        },
+        {
+          "speaker": "Paweł",
+          "voice": "pl-PL-male",
+          "line": "Lubię, ale chyba wolę słuchać niż śpiewać. O której zaczynacie?"
+        },
+        {
+          "speaker": "Marta",
+          "voice": "pl-PL-female",
+          "line": "O dziewiętnastej. Masz ochotę przyjść od początku?"
+        },
+        {
+          "speaker": "Paweł",
+          "voice": "pl-PL-male",
+          "line": "Mam, ale w soboty chodzę na wspinaczkę do osiemnastej. Nie wiem, czy dam radę na siódmą."
+        },
+        {
+          "speaker": "Marta",
+          "voice": "pl-PL-female",
+          "line": "Nie ma problemu. Przyjdź o ósmej, tort będzie dopiero o dziewiątej."
+        },
+        {
+          "speaker": "Paweł",
+          "voice": "pl-PL-male",
+          "line": "Dobrze, postaram się przyjść. Dam ci znać w piątek, dobrze?"
+        },
+        {
+          "speaker": "Marta",
+          "voice": "pl-PL-female",
+          "line": "Jasne. To do usłyszenia!"
+        }
+      ],
+      "audio_url": "/audio/pl-a2-mow-03-wolny-czas-c1-dialog.mp3"
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Zapisy na zajęcia",
+      "back_scenario": "Chcesz zapisać się na zajęcia: taniec, jogę, boks tajski albo coś innego, co lubisz. Dzwonisz do szkoły. Nauczyciel jest recepcjonistą i ma swoje ceny i godziny — dowiedz się wszystkiego, zanim się zapiszesz.",
+      "back_checklist": [
+        "Zapytaj, w jakie dni i o której są zajęcia.",
+        "Dowiedz się, ile kosztuje karnet, a ile pojedyncze wejście.",
+        "Zapytaj, czy jest grupa dla początkujących i czy są zniżki.",
+        "Zapisz się i podaj imię i nazwisko."
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "front_title": "Sonda uliczna",
+      "back_scenario": "Jesteś reporterem albo reporterką i robisz sondę o hobby. Zatrzymujesz na ulicy przechodnia — to nauczyciel. Zrób krótki wywiad, a potem zamieńcie się rolami.",
+      "back_checklist": [
+        "Przedstaw się i zapytaj, czy rozmówca ma chwilę.",
+        "Zapytaj, jak spędza wolny czas i jaką ma pasję.",
+        "Dowiedz się, co woli: sport czy kulturę, odpoczywać sam czy z ludźmi.",
+        "Zapytaj, czy czasem się nudzi i co wtedy robi.",
+        "Podziękuj i podsumuj jego odpowiedzi w jednym zdaniu."
+      ]
+    }
+  ]
+}

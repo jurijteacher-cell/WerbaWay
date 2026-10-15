@@ -1,0 +1,62 @@
+{
+  "lesson_id": "pl-a2-mow-03-wolny-czas",
+  "exercise_type": "fill-in-blank",
+  "title": "Lubię, wolę, chodzę na…: ćwiczenia",
+  "instruction": "Trzy krótkie bloki. Na lekcji robimy blok 1, bloki 2 i 3 — jeśli zostanie czas albo w domu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "covers_slides": ["s3", "s4", "s5"],
+      "exercise_type": "fill-in-blank",
+      "title": "1. Woleć: forma i niż / od",
+      "instruction": "Wybierz poprawną odpowiedź.",
+      "items": [
+        {"id": "g1-1", "text": "Moja siostra ___ herbatę niż kawę.", "options": ["wolę", "woli", "wolą"], "answer": "woli", "grammar_point": "wolec-odmiana"},
+        {"id": "g1-2", "text": "Dzieci zwykle ___ słodycze od warzyw.", "options": ["wolą", "wolimy", "woli"], "answer": "wolą", "grammar_point": "wolec-odmiana"},
+        {"id": "g1-3", "text": "A ty, co ___: kino czy teatr?", "options": ["wolisz", "wolicie", "woli"], "answer": "wolisz", "grammar_point": "wolec-odmiana"},
+        {"id": "g1-4", "text": "My ___ grać w karty niż oglądać telewizję.", "options": ["wolimy", "wolicie", "wolą"], "answer": "wolimy", "grammar_point": "wolec-odmiana"},
+        {"id": "g1-5", "text": "Wolę pływać ___ biegać.", "options": ["niż", "od"], "answer": "niż", "grammar_point": "wolec-niz-od", "explanation": "Z bezokolicznikiem tylko niż."},
+        {"id": "g1-6", "text": "Wolę rower ___ samochodu.", "options": ["niż", "od"], "answer": "od", "grammar_point": "wolec-niz-od", "explanation": "Samochodu to dopełniacz, więc od. Z niż byłoby: niż samochód."},
+        {"id": "g1-7", "text": "Wolę morze niż ___.", "options": ["góry", "gór"], "answer": "góry", "grammar_point": "wolec-niz-od", "explanation": "Po niż ten sam przypadek: morze — góry."},
+        {"id": "g1-8", "text": "Wolę morze od ___.", "options": ["góry", "gór"], "answer": "gór", "grammar_point": "wolec-niz-od", "explanation": "Od + dopełniacz: od gór."}
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "covers_slides": ["s6", "s7", "s8"],
+      "exercise_type": "fill-in-blank",
+      "title": "2. Interesuję się, gram, chodzę, jeżdżę",
+      "instruction": "Wpisz słowo z nawiasu w poprawnej formie.",
+      "items": [
+        {"id": "g2-1", "text": "Od lat interesuję się ___ (muzyka klasyczna).", "answer": "muzyką klasyczną", "grammar_point": "interesowac-sie-grac"},
+        {"id": "g2-2", "text": "Mój brat gra w ___ (koszykówka) w drużynie szkolnej.", "answer": "koszykówkę", "grammar_point": "interesowac-sie-grac"},
+        {"id": "g2-3", "text": "Od roku gram na ___ (pianino).", "answer": "pianinie", "grammar_point": "interesowac-sie-grac"},
+        {"id": "g2-4", "text": "Czy uprawiasz jakiś ___ (sport)?", "answer": "sport", "grammar_point": "interesowac-sie-grac"},
+        {"id": "g2-5", "text": "W piątki chodzimy do ___ (teatr).", "answer": "teatru", "grammar_point": "chodzic-do-na"},
+        {"id": "g2-6", "text": "Dwa razy w tygodniu chodzę na ___ (joga).", "answer": "jogę", "grammar_point": "chodzic-do-na"},
+        {"id": "g2-7", "text": "Latem jeżdżę do pracy na ___ (rower).", "answer": "rowerze", "grammar_point": "chodzic-do-na", "explanation": "Na czym jeżdżę? — miejscownik."},
+        {"id": "g2-8", "text": "Zimą jeździmy na ___ (narty) w Alpy.", "answer": "narty", "grammar_point": "chodzic-do-na", "explanation": "Po co jedziemy w Alpy? — biernik: na narty."}
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "covers_slides": ["s2", "s9", "s10"],
+      "exercise_type": "fill-in-blank",
+      "title": "3. Nie lubię… i pułapki z ukraińskiego",
+      "instruction": "Wybierz poprawną odpowiedź.",
+      "items": [
+        {"id": "g3-1", "text": "Nie lubię ___.", "options": ["zimę", "zimy"], "answer": "zimy", "grammar_point": "lubic-uwielbiac", "explanation": "Po nie — dopełniacz: nie lubię zimy."},
+        {"id": "g3-2", "text": "Uwielbiam ___ w deszczu.", "options": ["spacerować", "spaceruję"], "answer": "spacerować", "grammar_point": "lubic-uwielbiac", "explanation": "Po uwielbiam — bezokolicznik albo rzeczownik w bierniku."},
+        {"id": "g3-3", "text": "W ___ czytam kryminały.", "options": ["wolny czas", "wolnym czasie"], "answer": "wolnym czasie", "grammar_point": "kalki-uk", "explanation": "Kiedy? — w + miejscownik: w wolnym czasie."},
+        {"id": "g3-4", "text": "Mój tata ___ sport od dwudziestu lat.", "options": ["zajmuje się", "uprawia"], "answer": "uprawia", "grammar_point": "kalki-uk", "explanation": "Sport się uprawia. Zajmować się znaczy robić coś zawodowo albo się czymś opiekować."},
+        {"id": "g3-5", "text": "W sobotę idziemy ___ kina.", "options": ["w", "do", "na"], "answer": "do", "grammar_point": "kalki-uk", "explanation": "Do budynku — do + dopełniacz: do kina."},
+        {"id": "g3-6", "text": "Od września ___ na zajęcia z ceramiki.", "options": ["odwiedzam", "chodzę"], "answer": "chodzę", "grammar_point": "kalki-uk", "explanation": "Odwiedzać można ludzi i miasta. Na zajęcia się chodzi."},
+        {"id": "g3-7", "text": "Chodzę ___ siłownię trzy razy w tygodniu.", "options": ["w", "na"], "answer": "na", "grammar_point": "kalki-uk", "explanation": "Na siłownię, na basen, na trening — na + biernik."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "lesson_id": "pl-a2-mow-03-wolny-czas",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: czas wolny",
+  "instruction": "Trzy bloki: słowa, formy i jedna krótka historia.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "matching",
+      "title": "1. Słowa z lekcji",
+      "instruction": "Połącz słowo z opisem.",
+      "items": [
+        {"id": "h1-1", "left": "zniżka", "right": "płacisz mniej, bo jesteś studentem albo emerytem", "grammar_point": "slownictwo"},
+        {"id": "h1-2", "left": "karnet", "right": "wejściówka na cały miesiąc treningów", "grammar_point": "slownictwo"},
+        {"id": "h1-3", "left": "rozgrzewka", "right": "pięć minut skakania i kręcenia rękami przed treningiem", "grammar_point": "slownictwo"},
+        {"id": "h1-4", "left": "nudzić się", "right": "patrzeć w sufit, bo nie ma nic do roboty", "grammar_point": "slownictwo"},
+        {"id": "h1-5", "left": "dać znać", "right": "wysłać komuś SMS z ważną informacją", "grammar_point": "slownictwo"},
+        {"id": "h1-6", "left": "przyjęcie", "right": "wieczór z gośćmi, tortem i prezentami", "grammar_point": "slownictwo"}
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Pełna forma",
+      "instruction": "Wpisz słowo z nawiasu w poprawnej formie.",
+      "items": [
+        {"id": "h2-1", "text": "Babcia ___ (woleć) seriale niż wiadomości.", "answer": "woli", "grammar_point": "wolec-odmiana"},
+        {"id": "h2-2", "text": "Czy wy też ___ (woleć) lato od zimy?", "answer": "wolicie", "grammar_point": "wolec-odmiana"},
+        {"id": "h2-3", "text": "Wolę książki ___ (od / niż) filmów.", "answer": "od", "grammar_point": "wolec-niz-od"},
+        {"id": "h2-4", "text": "Mój kolega z pracy interesuje się ___ (astronomia).", "answer": "astronomią", "grammar_point": "interesowac-sie-grac"},
+        {"id": "h2-5", "text": "Nasz syn uczy się grać na ___ (skrzypce).", "answer": "skrzypcach", "grammar_point": "interesowac-sie-grac"},
+        {"id": "h2-6", "text": "W niedzielę gramy w ___ (siatkówka) na plaży.", "answer": "siatkówkę", "grammar_point": "interesowac-sie-grac"},
+        {"id": "h2-7", "text": "Wieczorem wychodzimy do ___ (kawiarnia) na rogu.", "answer": "kawiarni", "grammar_point": "chodzic-do-na"},
+        {"id": "h2-8", "text": "Szczerze mówiąc, nie lubię ___ (poniedziałki).", "answer": "poniedziałków", "grammar_point": "lubic-uwielbiac"}
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "drag-and-drop",
+      "title": "3. Historia Igora",
+      "instruction": "Przeciągnij słowa w luki. Trzy słowa są niepotrzebne.",
+      "bank": ["wolnym", "na", "od", "nudzić", "karnet", "interesuje", "wolny", "do", "niż"],
+      "items": [
+        {"id": "h3-1", "text": "Igor pracuje w biurze i w ___ czasie zwykle siedzi przed telewizorem.", "answer": "wolnym", "grammar_point": "kalki-uk"},
+        {"id": "h3-2", "text": "Pewnego dnia kolega powiedział: — Chodź ze mną ___ basen!", "answer": "na", "grammar_point": "chodzic-do-na"},
+        {"id": "h3-3", "text": "Igor odpowiedział, że woli kanapę ___ zimnej wody.", "answer": "od", "grammar_point": "wolec-niz-od"},
+        {"id": "h3-4", "text": "Ale po miesiącu zaczął się ___ w domu i poszedł.", "answer": "nudzić", "grammar_point": "slownictwo"},
+        {"id": "h3-5", "text": "Teraz ma miesięczny ___ i pływa trzy razy w tygodniu.", "answer": "karnet", "grammar_point": "slownictwo"},
+        {"id": "h3-6", "text": "A od niedawna ___ się też ratownictwem wodnym.", "answer": "interesuje", "grammar_point": "interesowac-sie-grac"}
+      ]
+    }
+  ]
+}
