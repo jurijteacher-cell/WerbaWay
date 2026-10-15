@@ -2,24 +2,15 @@
 
 import { useState } from 'react';
 
-type PairImage = {
-  role?: string;
-  image_keywords?: string;
-  alt?: string;
-  image_url?: string;
-};
-
 type Item = {
   id: number | string;
   question: string;
   label?: string;
   note?: string;
-  /** Legacy single image */
-  image_url?: string;
-  image_keywords?: string;
   alt?: string;
-  /** Then/now pair */
-  images?: PairImage[];
+  image_url?: string;
+  helper_questions?: string[];
+  image_status?: 'ok' | 'missing';
 };
 
 type Props = {
@@ -33,7 +24,7 @@ export function PictureSet({ title, instructions, phrase_bank, items }: Props) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
 
   return (
-    <div>
+    <div data-block-id="pictures">
       <header className="nb-head">
         <p className="nb-eyebrow">opis zdjęć</p>
         <h1>{title}</h1>
@@ -52,53 +43,47 @@ export function PictureSet({ title, instructions, phrase_bank, items }: Props) {
 
       {items.map((item, i) => {
         const key = String(item.id);
-        const pair =
-          item.images && item.images.length >= 2
-            ? item.images
-            : [
-                {
-                  role: 'zdjęcie',
-                  alt: item.alt,
-                  image_url: item.image_url,
-                },
-              ];
+        const status = item.image_status ?? (item.image_url ? 'ok' : 'missing');
         const rot = ((i % 3) - 1) * 1.2;
 
         return (
-          <section key={key} className="nb-cluster" style={{ transform: `rotate(${rot * 0.15}deg)` }}>
+          <section
+            key={key}
+            className="nb-cluster"
+            style={{ transform: `rotate(${rot * 0.15}deg)` }}
+            data-item-id={key}
+            data-image-status={status}
+          >
             {item.label ? <div className="nb-tape">{item.label}</div> : null}
-            {item.note ? <div className="note">{item.note}</div> : null}
 
-            <div className={pair.length > 1 ? 'nb-pair' : undefined}>
-              {pair.map((img, j) => (
-                <figure key={`${key}-${j}`} className="nb-polaroid">
-                  {img.image_url ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={img.image_url} alt={img.alt ?? item.question} />
-                  ) : (
-                    <div
-                      style={{
-                        height: 140,
-                        display: 'grid',
-                        placeItems: 'center',
-                        color: 'var(--nb-ink-soft)',
-                        fontSize: 13,
-                      }}
-                    >
-                      Brak obrazka
-                    </div>
-                  )}
-                  <figcaption>{img.role ?? img.alt ?? ''}</figcaption>
-                </figure>
-              ))}
-            </div>
+            <figure className="nb-polaroid">
+              {status === 'ok' && item.image_url ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={item.image_url} alt={item.alt ?? item.question} />
+              ) : (
+                <div className="nb-polaroid-missing">zdjęcie wkrótce</div>
+              )}
+              {item.alt ? <figcaption className="nb-polaroid-cap">{item.alt}</figcaption> : null}
+            </figure>
 
-            <p className="q">{item.question}</p>
+            <p style={{ fontWeight: 700 }}>{item.question}</p>
+
+            {item.helper_questions?.length ? (
+              <ul className="nb-helpers">
+                {item.helper_questions.map((q) => (
+                  <li key={q} data-role="helper-question">
+                    {q}
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+
             <textarea
-              value={answers[key] ?? ''}
-              onChange={(e) => setAnswers((prev) => ({ ...prev, [key]: e.target.value }))}
+              className="nb-open"
               rows={3}
               placeholder="Twoja odpowiedź…"
+              value={answers[key] ?? ''}
+              onChange={(e) => setAnswers((a) => ({ ...a, [key]: e.target.value }))}
             />
           </section>
         );

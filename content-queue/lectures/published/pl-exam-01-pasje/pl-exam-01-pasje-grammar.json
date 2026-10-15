@@ -1,0 +1,108 @@
+{
+  "lesson_id": "pl-exam-01-pasje",
+  "exercise_type": "fill-in-blank",
+  "title": "Czas teraźniejszy: od form do historii",
+  "instruction": "Siedem bloków w dwóch częściach.",
+  "estimated_minutes": 35,
+  "blocks": [
+    {
+      "block_id": "g1", "part": 1, "covers_slides": ["s2", "s3", "s4"],
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rozgrzewka: grupa -m, -sz",
+      "instruction": "Wpisz właściwą formę czasownika z nawiasu.",
+      "items": [
+        { "id": "g1-1", "text": "W weekend Marta ___ w siatkówkę. (grać)", "answer": "gra", "grammar_point": "koniugacja-m-sz" },
+        { "id": "g1-2", "text": "Czy ty ___ grać w szachy? (umieć)", "answer": "umiesz", "grammar_point": "koniugacja-m-sz" },
+        { "id": "g1-3", "text": "My często ___ kryminały. (czytać)", "answer": "czytamy", "grammar_point": "koniugacja-m-sz" },
+        { "id": "g1-4", "text": "Wieczorem ___ muzyki. (ja, słuchać)", "answer": "słucham", "grammar_point": "koniugacja-m-sz" },
+        { "id": "g1-5", "text": "Moi rodzice ___ w ogrodzie. (odpoczywać)", "answer": "odpoczywają", "grammar_point": "koniugacja-m-sz" },
+        { "id": "g1-6", "text": "Czy wy ___ dużo czasu na hobby? (mieć)", "answer": "macie", "grammar_point": "koniugacja-m-sz" }
+      ]
+    },
+    {
+      "block_id": "g2", "part": 1, "covers_slides": ["s5"],
+      "exercise_type": "matching",
+      "title": "2. Formy: grupa -ę, -esz",
+      "instruction": "Połącz bezokolicznik i osobę z właściwą formą.",
+      "items": [
+        { "id": "g2-1", "left": "gotować (ja)", "right": "gotuję", "grammar_point": "koniugacja-e-esz" },
+        { "id": "g2-2", "left": "trenować (oni)", "right": "trenują", "grammar_point": "koniugacja-e-esz" },
+        { "id": "g2-3", "left": "rysować (my)", "right": "rysujemy", "grammar_point": "koniugacja-e-esz" },
+        { "id": "g2-4", "left": "chcieć (ty)", "right": "chcesz", "grammar_point": "koniugacja-e-esz" },
+        { "id": "g2-5", "left": "fotografować (wy)", "right": "fotografujecie", "grammar_point": "koniugacja-e-esz" },
+        { "id": "g2-6", "left": "chcieć (ona)", "right": "chce", "grammar_point": "koniugacja-e-esz" }
+      ]
+    },
+    {
+      "block_id": "g3", "part": 1, "covers_slides": ["s6", "s7"],
+      "exercise_type": "fill-in-blank",
+      "title": "3. Która forma pasuje?",
+      "instruction": "Wybierz właściwą formę.",
+      "items": [
+        { "id": "g3-1", "text": "Mój brat dobrze ___ po niemiecku.", "options": ["mówi", "mówa", "mówie"], "answer": "mówi", "explanation": "Mówić: grupa -ę, -isz, więc on mówi.", "grammar_point": "koniugacja-e-isz" },
+        { "id": "g3-2", "text": "Często ___ na imprezach?", "options": ["tańczysz", "tańczisz", "tańczesz"], "answer": "tańczysz", "explanation": "Po cz piszemy -y-: tańczysz.", "grammar_point": "koniugacja-e-isz" },
+        { "id": "g3-3", "text": "Oni ___ się grać na skrzypcach.", "options": ["uczą", "uczają", "uczysz"], "answer": "uczą", "explanation": "Uczyć się: oni uczą się.", "grammar_point": "koniugacja-e-isz" },
+        { "id": "g3-4", "text": "Bardzo ___ długie spacery.", "options": ["lubię", "lubiem", "lubisz"], "answer": "lubię", "explanation": "Lubić: ja lubię, końcówka -ę.", "grammar_point": "koniugacja-e-isz" },
+        { "id": "g3-5", "text": "Kasia codziennie ___ w lesie.", "options": ["biega", "biegi", "biegie"], "answer": "biega", "explanation": "-ać zwykle daje -am, -asz: ona biega.", "grammar_point": "koniugacja-m-sz" },
+        { "id": "g3-6", "text": "Czy wy ___ w każdy piątek?", "options": ["trenujecie", "trenowacie", "trenicie"], "answer": "trenujecie", "explanation": "-ować → -uj-: wy trenujecie.", "grammar_point": "koniugacja-e-esz" }
+      ]
+    },
+    {
+      "block_id": "g4", "part": 2, "covers_slides": ["s9", "s10"],
+      "exercise_type": "fill-in-blank",
+      "title": "4. Lubię, umiem, mogę czy chcę?",
+      "instruction": "Wybierz czasownik, który pasuje do sensu zdania.",
+      "items": [
+        { "id": "g4-1", "text": "Nie ___ jeździć na nartach, ale chcę się nauczyć.", "options": ["umiem", "mogę", "lubię"], "answer": "umiem", "explanation": "Nie mam tej umiejętności, więc nie umiem.", "grammar_point": "modalne-bezokolicznik" },
+        { "id": "g4-2", "text": "Dziś nie ___ iść na basen, bo pracuję do wieczora.", "options": ["mogę", "umiem", "lubię"], "answer": "mogę", "explanation": "Nie mam czasu, to brak możliwości: nie mogę.", "grammar_point": "modalne-bezokolicznik" },
+        { "id": "g4-3", "text": "___ grać w planszówki: to mój ulubiony sposób na wieczór.", "options": ["Lubię", "Umiem", "Mogę"], "answer": "Lubię", "explanation": "Coś sprawia mi przyjemność, więc lubię.", "grammar_point": "modalne-bezokolicznik" },
+        { "id": "g4-4", "text": "W przyszłym roku ___ nauczyć się gotować po włosku.", "options": ["chcę", "umiem", "mogę"], "answer": "chcę", "explanation": "To plan na przyszłość, więc chcę.", "grammar_point": "modalne-bezokolicznik" },
+        { "id": "g4-5", "text": "Mój syn ma pięć lat i już ___ czytać.", "options": ["umie", "może", "chce"], "answer": "umie", "explanation": "Czytanie to umiejętność, więc umie.", "grammar_point": "modalne-bezokolicznik" },
+        { "id": "g4-6", "text": "Czy ___ tu grać w piłkę? — Tak, to boisko jest dla wszystkich.", "options": ["możemy", "umiemy", "lubimy"], "answer": "możemy", "explanation": "Pytamy o zgodę, więc możemy.", "grammar_point": "modalne-bezokolicznik" }
+      ]
+    },
+    {
+      "block_id": "g5", "part": 2, "covers_slides": ["s11", "s12", "s13"],
+      "exercise_type": "sentence-building",
+      "title": "5. Przekształć zdanie",
+      "instruction": "Napisz nowe zdanie według wskazówki w nawiasie.",
+      "items": [
+        { "id": "g5-1", "prompt": "Gram w tenisa. (przeczenie)", "answer": "Nie gram w tenisa.", "accept": ["Ja nie gram w tenisa."], "grammar_point": "koniugacja-m-sz" },
+        { "id": "g5-2", "prompt": "Często tańczę. (nigdy)", "answer": "Nigdy nie tańczę.", "accept": ["Ja nigdy nie tańczę."], "grammar_point": "koniugacja-e-isz" },
+        { "id": "g5-3", "prompt": "Ola / grać / gitara", "answer": "Ola gra na gitarze.", "accept": ["Na gitarze gra Ola."], "grammar_point": "grac-w-na" },
+        { "id": "g5-4", "prompt": "Piotr / grać / szachy", "answer": "Piotr gra w szachy.", "accept": ["W szachy gra Piotr."], "grammar_point": "grac-w-na" },
+        { "id": "g5-5", "prompt": "Pływasz. (pytanie z „czy”)", "answer": "Czy pływasz?", "accept": ["Czy ty pływasz?"], "grammar_point": "koniugacja-m-sz" },
+        { "id": "g5-6", "prompt": "Rysujemy w parku. (czasami)", "answer": "Czasami rysujemy w parku.", "accept": ["Rysujemy czasami w parku.", "Rysujemy w parku czasami.", "W parku czasami rysujemy."], "grammar_point": "koniugacja-e-esz" }
+      ]
+    },
+    {
+      "block_id": "g6", "part": 2, "covers_slides": ["s14", "s15", "s16", "s17"],
+      "exercise_type": "fill-in-blank",
+      "title": "6. Uwaga: inne formy i pułapki",
+      "instruction": "Wybierz właściwą odpowiedź.",
+      "items": [
+        { "id": "g6-1", "text": "Codziennie ___ e-maile do klientów. (ja, pisać)", "options": ["piszę", "pisam", "pisuję"], "answer": "piszę", "explanation": "Pisać: ja piszę, ty piszesz.", "grammar_point": "koniugacja-e-esz" },
+        { "id": "g6-2", "text": "W lecie często ___ na rowerze. (ja, jeździć)", "options": ["jeżdżę", "jeździę", "jeżdżam"], "answer": "jeżdżę", "explanation": "Jeździć: ja jeżdżę, ale ty jeździsz.", "grammar_point": "koniugacja-e-isz" },
+        { "id": "g6-3", "text": "Moje dzieci zawsze ___ dużo słodyczy.", "options": ["jedzą", "jeją", "jemią"], "answer": "jedzą", "explanation": "Jeść: ja jem, ale oni jedzą.", "grammar_point": "koniugacja-m-sz" },
+        { "id": "g6-4", "text": "W wolnym czasie ___ seriale.", "options": ["oglądam", "patrzę", "widzę"], "answer": "oglądam", "explanation": "Serial, film, mecz: oglądać.", "grammar_point": "pulapki-uk" },
+        { "id": "g6-5", "text": "Dwa razy w tygodniu chodzę ___ basen.", "options": ["na", "w", "po"], "answer": "na", "explanation": "Basen, siłownia, trening: chodzić na.", "grammar_point": "pulapki-uk" },
+        { "id": "g6-6", "text": "___ ciekawe hobby: robię zdjęcia ptaków.", "options": ["Mam", "U mnie jest", "Jestem"], "answer": "Mam", "explanation": "Gdy coś mamy, mówimy: mieć.", "grammar_point": "pulapki-uk" }
+      ]
+    },
+    {
+      "block_id": "g7", "part": 2, "covers_slides": ["s9", "s11", "s13"],
+      "exercise_type": "drag-and-drop",
+      "title": "7. Historia: sobota Pawła",
+      "instruction": "Przeciągnij słowa do tekstu. Trzy słowa nie pasują.",
+      "bank": ["śpi", "pije", "umie", "w", "ogląda", "dzwoni", "patrzy", "na", "umi"],
+      "items": [
+        { "id": "g7-1", "text": "W sobotę Paweł ___ do dziesiątej, bo jest zmęczony.", "answer": "śpi", "grammar_point": "koniugacja-e-isz" },
+        { "id": "g7-2", "text": "Rano ___ kawę i czyta wiadomości.", "answer": "pije", "grammar_point": "koniugacja-e-esz" },
+        { "id": "g7-3", "text": "Paweł nie ___ gotować, więc je obiad w mieście.", "answer": "umie", "grammar_point": "modalne-bezokolicznik" },
+        { "id": "g7-4", "text": "Po obiedzie gra ___ piłkę z przyjaciółmi.", "answer": "w", "grammar_point": "grac-w-na" },
+        { "id": "g7-5", "text": "Wieczorem ___ film z dziewczyną.", "answer": "ogląda", "grammar_point": "pulapki-uk" },
+        { "id": "g7-6", "text": "W niedzielę ___ do mamy i długo z nią rozmawia.", "answer": "dzwoni", "grammar_point": "koniugacja-e-isz" }
+      ]
+    }
+  ]
+}

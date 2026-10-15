@@ -29,3 +29,7 @@ export function parseBlockIds(raw?: string | string[]): string[] | undefined {
   }
   return out;
 }
+
+export function parseBlockRange(spec?: string): string[] | undefined {
+  return parseBlockIds(spec);
+}

@@ -1,0 +1,527 @@
+{
+  "lesson_id": "pl-exam-01-pasje",
+  "exercise_type": "grammar-slides",
+  "title": "Czas teraźniejszy",
+  "parts": 2,
+  "slides": [
+    {
+      "id": "s1",
+      "part": 1,
+      "section": "title",
+      "kind": "title",
+      "title": "Czas teraźniejszy",
+      "question": "Co robisz w wolnym czasie?",
+      "goal": "Mówię, co robię, co lubię i co umiem robić.",
+      "teacher_note": "Спитай учня, що він робив учора ввечері, і почуй, якими формами він говорить про себе. Це діагностика: ми побачимо, які дієвідміни вже сидять."
+    },
+    {
+      "id": "s2",
+      "part": 1,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Po co czas teraźniejszy?",
+      "reveal": "item",
+      "items": [
+        {
+          "tag": "teraz",
+          "pl": "Teraz [[czytam]] książkę.",
+          "uk": "Зараз читаю книжку."
+        },
+        {
+          "tag": "regularnie",
+          "pl": "W soboty [[gram]] w tenisa.",
+          "uk": "По суботах граю в теніс."
+        },
+        {
+          "tag": "o sobie",
+          "pl": "[[Mieszkam]] w Krakowie.",
+          "uk": "Живу в Кракові."
+        }
+      ],
+      "note": "Jedna forma: to, co robię teraz, i to, co robię regularnie.",
+      "teacher_note": "Наголоси: окремого тривалого часу, як в англійській, немає. Попроси учня сказати одне речення про «зараз» і одне про «щосуботи»."
+    },
+    {
+      "id": "s3",
+      "part": 1,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Temat + końcówka",
+      "bricks": [
+        {
+          "text": "czyta-",
+          "label": "temat"
+        },
+        {
+          "text": "-m",
+          "label": "ja"
+        }
+      ],
+      "result": "czytam",
+      "note": "Końcówka mówi, kto to robi. Słowo „ja” zwykle nie jest potrzebne.",
+      "teacher_note": "Покажи, що «Czytam» уже означає «я читаю». Займенник додаємо лише для контрасту: «Ja czytam, a ty?»."
+    },
+    {
+      "id": "s4",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "title": "Grupa 1: -m, -sz",
+      "reveal": "row",
+      "headers": [
+        "osoba",
+        "końcówka",
+        "grać",
+        "umieć"
+      ],
+      "rows": [
+        [
+          "ja",
+          "-m",
+          "gram",
+          "umiem"
+        ],
+        [
+          "ty",
+          "-sz",
+          "grasz",
+          "umiesz"
+        ],
+        [
+          "on, ona, ono",
+          "bez końcówki",
+          "gra",
+          "umie"
+        ],
+        [
+          "my",
+          "-my",
+          "gramy",
+          "umiemy"
+        ],
+        [
+          "wy",
+          "-cie",
+          "gracie",
+          "umiecie"
+        ],
+        [
+          "oni, one",
+          "-ją",
+          "grają",
+          "umieją"
+        ]
+      ],
+      "note": "Tak samo: czytać, słuchać, mieć, rozumieć.",
+      "teacher_note": "Відкривай рядок за рядком і проси учня вимовляти форму вголос. Ключ — пара «ja -m / ty -sz»: за нею впізнаємо групу."
+    },
+    {
+      "id": "s5",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "title": "Grupa 2: -ę, -esz",
+      "reveal": "row",
+      "headers": [
+        "osoba",
+        "końcówka",
+        "gotować",
+        "chcieć"
+      ],
+      "rows": [
+        [
+          "ja",
+          "-ę",
+          "gotuję",
+          "chcę"
+        ],
+        [
+          "ty",
+          "-esz",
+          "gotujesz",
+          "chcesz"
+        ],
+        [
+          "on, ona, ono",
+          "-e",
+          "gotuje",
+          "chce"
+        ],
+        [
+          "my",
+          "-emy",
+          "gotujemy",
+          "chcemy"
+        ],
+        [
+          "wy",
+          "-ecie",
+          "gotujecie",
+          "chcecie"
+        ],
+        [
+          "oni, one",
+          "-ą",
+          "gotują",
+          "chcą"
+        ]
+      ],
+      "note": "-ować → [[-uj-]]: gotuję, trenuję, rysuję.",
+      "teacher_note": "Головне тут — -ować → -uję. Назви ще три дієслова на -ować (trenować, rysować, fotografować) і попроси учня утворити форму «ja»."
+    },
+    {
+      "id": "s6",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "title": "Grupa 3: -ę, -isz / -ysz",
+      "reveal": "row",
+      "headers": [
+        "osoba",
+        "końcówka",
+        "mówić",
+        "tańczyć"
+      ],
+      "rows": [
+        [
+          "ja",
+          "-ę",
+          "mówię",
+          "tańczę"
+        ],
+        [
+          "ty",
+          "-isz / -ysz",
+          "mówisz",
+          "tańczysz"
+        ],
+        [
+          "on, ona, ono",
+          "-i / -y",
+          "mówi",
+          "tańczy"
+        ],
+        [
+          "my",
+          "-imy / -ymy",
+          "mówimy",
+          "tańczymy"
+        ],
+        [
+          "wy",
+          "-icie / -ycie",
+          "mówicie",
+          "tańczycie"
+        ],
+        [
+          "oni, one",
+          "-ą",
+          "mówią",
+          "tańczą"
+        ]
+      ],
+      "note": "Po cz, sz, rz, ż piszemy [[-y-]]: tańczysz, uczysz się.",
+      "teacher_note": "Порівняй із групою 2: «ja» однакове (-ę), різниця видна з «ty». Тому завжди перевіряємо дві форми: ja і ty."
+    },
+    {
+      "id": "s7",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "title": "Jak rozpoznać grupę?",
+      "reveal": "row",
+      "headers": [
+        "bezokolicznik",
+        "zwykle",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "-ać",
+          "-am, -asz",
+          "czytam, czytasz"
+        ],
+        [
+          "-ować",
+          "-uję, -ujesz",
+          "gotuję, gotujesz"
+        ],
+        [
+          "-ić, -yć",
+          "-ę, -isz / -ysz",
+          "mówię, tańczysz"
+        ]
+      ],
+      "note": "To reguła „zwykle”. Inne formy poznasz w części 2.",
+      "teacher_note": "Назви 5–6 інфінітивів (pływać, trenować, lubić, słuchać, uczyć się, rysować), учень каже групу і форму «ja». Не обіцяй, що правило діє завжди."
+    },
+    {
+      "id": "s8",
+      "part": 1,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Strategia: słuchanie, część 1",
+      "bricks": [
+        {
+          "text": "Przeczytaj a, b, c",
+          "label": "przed nagraniem"
+        },
+        {
+          "text": "Słuchaj słów-kluczy",
+          "label": "bilet, woda, książka"
+        },
+        {
+          "text": "Wybierz i idź dalej",
+          "label": "jedno odsłuchanie"
+        }
+      ],
+      "result": "Nie musisz rozumieć każdego słowa.",
+      "teacher_note": "Це формат першого завдання з аудіювання державного іспиту: коротке висловлювання — де це можна почути. На іспиті запис звучить один раз, тому вчимо ловити ключові слова, а не перекладати все."
+    },
+    {
+      "id": "s9",
+      "part": 2,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Lubię, umiem, chcę + bezokolicznik",
+      "bricks": [
+        {
+          "text": "lubię / umiem / chcę",
+          "label": "forma osobowa"
+        },
+        {
+          "text": "grać",
+          "label": "bezokolicznik"
+        }
+      ],
+      "result": "Umiem grać na gitarze.",
+      "note": "Drugi czasownik się nie zmienia: lubisz pływać, lubimy pływać.",
+      "teacher_note": "Покажи, що змінюється тільки перше дієслово. Попроси учня сказати по одному реченню з lubię, umiem і chcę про себе."
+    },
+    {
+      "id": "s10",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Umiem czy mogę?",
+      "left": {
+        "title": "umieć",
+        "lines": [
+          "Umiejętność: wiem, jak to zrobić.",
+          "[[Umiem]] pływać."
+        ]
+      },
+      "right": {
+        "title": "móc",
+        "lines": [
+          "Możliwość albo zgoda.",
+          "Dziś [[mogę]] pływać, bo mam czas."
+        ]
+      },
+      "teacher_note": "Спитай: «Ти вмієш плавати?» — umiem. «Ти можеш сьогодні піти в басейн?» — mogę / nie mogę. Українське «можу» часто означає вміння, звідси помилка."
+    },
+    {
+      "id": "s11",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Grać w czy grać na?",
+      "left": {
+        "title": "grać w + gra, sport",
+        "lines": [
+          "w tenisa",
+          "w piłkę",
+          "w szachy"
+        ]
+      },
+      "right": {
+        "title": "grać na + instrument",
+        "lines": [
+          "na gitarze",
+          "na pianinie",
+          "na perkusji"
+        ]
+      },
+      "note": "Ucz się całych zwrotów: [[grać w]] piłkę, [[grać na]] gitarze.",
+      "teacher_note": "Відмінки після w і na пояснимо пізніше (уроки 2 і 3). Зараз це готові зв'язки — учень запам'ятовує їх цілими."
+    },
+    {
+      "id": "s12",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "title": "Pytanie i przeczenie",
+      "reveal": "row",
+      "headers": [
+        "co mówimy",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "pytanie: tak czy nie?",
+          "[[Czy]] grasz w szachy?"
+        ],
+        [
+          "odpowiedź: tak",
+          "Tak, gram."
+        ],
+        [
+          "odpowiedź: nie",
+          "Nie, [[nie]] gram."
+        ],
+        [
+          "pytanie o czynność",
+          "[[Co]] robisz w weekend?"
+        ]
+      ],
+      "note": "„Nie” stoi przed czasownikiem.",
+      "teacher_note": "Пограйте в пінг-понг: ти питаєш «Czy…?», учень відповідає повним «Tak, …» або «Nie, nie …». Потім поміняйтеся ролями."
+    },
+    {
+      "id": "s13",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "title": "Jak często?",
+      "reveal": "row",
+      "headers": [
+        "słowo",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "zawsze",
+          "Zawsze czytam wieczorem."
+        ],
+        [
+          "często",
+          "Często gotuję."
+        ],
+        [
+          "czasami",
+          "Czasami tańczę."
+        ],
+        [
+          "rzadko",
+          "Rzadko oglądam telewizję."
+        ],
+        [
+          "nigdy",
+          "Nigdy [[nie]] gram w karty."
+        ]
+      ],
+      "note": "Z czasownikiem: „nigdy” + „nie”.",
+      "teacher_note": "Учень складає по реченню про себе з кожним словом. Окремо зупинись на «nigdy nie» — в українській теж подвійне заперечення, тому це легко."
+    },
+    {
+      "id": "s14",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "title": "Inne formy w grupach",
+      "reveal": "item",
+      "items": [
+        {
+          "text": "pisać → [[piszę]], piszesz, piszą",
+          "refers_to": "s7"
+        },
+        {
+          "text": "pić → piję, pijesz; myć → myję, myjesz",
+          "refers_to": "s7"
+        },
+        {
+          "text": "jeździć → [[jeżdżę]], ale jeździsz",
+          "refers_to": "s6"
+        },
+        {
+          "text": "chodzić → chodzę, ale chodzisz",
+          "refers_to": "s6"
+        }
+      ],
+      "teacher_note": "pisać і pić виглядають як група 1 або 3, але відмінюються як група 2. У jeździć і chodzić чергування тільки у формах «ja» та «oni»."
+    },
+    {
+      "id": "s15",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "title": "Ważne formy do zapamiętania",
+      "reveal": "item",
+      "items": [
+        {
+          "text": "być: jestem, jesteś, jest, jesteśmy, jesteście, są",
+          "refers_to": "s3"
+        },
+        {
+          "text": "jeść: jem, jesz, je, jemy, jecie, [[jedzą]]",
+          "refers_to": "s4"
+        },
+        {
+          "text": "wiedzieć: wiem, wiesz, wie, wiemy, wiecie, [[wiedzą]]",
+          "refers_to": "s4"
+        },
+        {
+          "text": "móc: [[mogę]], możesz, może, możemy, możecie, mogą",
+          "refers_to": "s10"
+        }
+      ],
+      "teacher_note": "jeść і wiedzieć схожі на групу 1, але «oni» інша. móc потрібен для порівняння з umieć — нехай учень промовить усі форми вголос."
+    },
+    {
+      "id": "s16",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "у мене є хобі",
+          "wrong": "U mnie jest hobby.",
+          "right": "[[Mam]] hobby.",
+          "why": "Gdy coś mamy, mówimy: mieć."
+        },
+        {
+          "uk": "дивлюся фільми",
+          "wrong": "Patrzę filmy.",
+          "right": "[[Oglądam]] filmy.",
+          "why": "Film, serial, mecz: oglądać."
+        },
+        {
+          "uk": "у вільний час",
+          "wrong": "w wolny czas",
+          "right": "w [[wolnym czasie]]",
+          "why": "Pytanie „kiedy?”: w + miejscownik."
+        }
+      ],
+      "teacher_note": "Прочитай українську форму і дай учню секунду сказати польською до того, як відкриєш ✓. Ці три помилки учні роблять найчастіше в темі хобі."
+    },
+    {
+      "id": "s17",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "катаюся на велосипеді",
+          "wrong": "Katam się na rowerze.",
+          "right": "[[Jeżdżę]] na rowerze.",
+          "why": "Rower, narty, rolki: jeździć na."
+        },
+        {
+          "uk": "ходжу в спортзал",
+          "wrong": "Chodzę w siłownię.",
+          "right": "Chodzę [[na siłownię]].",
+          "why": "Siłownia, basen, trening: chodzić na."
+        },
+        {
+          "uk": "я можу (= вмію) грати на гітарі",
+          "wrong": "Mogę grać na gitarze.",
+          "right": "[[Umiem]] grać na gitarze.",
+          "why": "Umiejętność: umieć. Móc: możliwość albo zgoda."
+        }
+      ],
+      "teacher_note": "Остання пастка — продовження слайда s10. Спитай учня, що він уміє, а що може робити сьогодні."
+    }
+  ]
+}

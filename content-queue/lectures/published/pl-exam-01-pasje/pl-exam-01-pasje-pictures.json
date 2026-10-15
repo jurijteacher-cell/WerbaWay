@@ -1,0 +1,59 @@
+{
+  "lesson_id": "pl-exam-01-pasje",
+  "exercise_type": "picture-set",
+  "title": "Opis zdjęć: czas wolny",
+  "instruction": "Opisz zdjęcie. Odpowiadaj po kolei na małe pytania pod zdjęciem — razem dadzą pełny opis.",
+  "estimated_minutes": 12,
+  "phrase_bank": [
+    "Na zdjęciu widzę…",
+    "Na pierwszym planie…",
+    "W tle…",
+    "Wygląda na to, że…",
+    "Myślę, że ta osoba lubi…",
+    "Moim zdaniem…"
+  ],
+  "items": [
+    {
+      "id": "p1",
+      "source": "stock",
+      "image_keywords": "man playing guitar home",
+      "image_keywords_alt": "woman listening music headphones",
+      "alt": "Osoba gra na gitarze w domu",
+      "question": "Opisz zdjęcie. Jak myślisz, czy to hobby, czy praca tej osoby? Czy chcesz grać na jakimś instrumencie?",
+      "helper_questions": [
+        "Kto jest na zdjęciu?",
+        "Gdzie jest ta osoba?",
+        "Co ona robi?",
+        "Czy ona jest spokojna, czy zmęczona?"
+      ]
+    },
+    {
+      "id": "p2",
+      "source": "stock",
+      "image_keywords": "friends running park",
+      "image_keywords_alt": "woman jogging alone",
+      "alt": "Ludzie biegają w parku",
+      "question": "Opisz zdjęcie. Jak myślisz, jak często ci ludzie biegają? Wolisz sport sam czy z przyjaciółmi?",
+      "helper_questions": [
+        "Ile osób jest na zdjęciu?",
+        "Gdzie oni są?",
+        "Jaka jest pogoda?",
+        "Czy oni są zadowoleni?"
+      ]
+    },
+    {
+      "id": "p3",
+      "source": "stock",
+      "image_keywords": "woman cooking kitchen",
+      "image_keywords_alt": "man cutting vegetables",
+      "alt": "Osoba gotuje w kuchni",
+      "question": "Opisz zdjęcie. Jak myślisz, dla kogo ta osoba gotuje? Czy gotowanie może być pasją?",
+      "helper_questions": [
+        "Kto jest w kuchni?",
+        "Co ta osoba robi?",
+        "Co jest na stole?",
+        "A ty lubisz gotować?"
+      ]
+    }
+  ]
+}

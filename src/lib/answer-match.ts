@@ -20,16 +20,22 @@ export function stripDiacritics(s: string) {
     .replace(/ø/g, 'o');
 }
 
+export type ItemState = 'idle' | 'correct' | 'wrong' | 'correct-no-diacritics';
+
 export function answersMatch(given: string, expected: string, accept?: string[]) {
   const g = normalizeAnswer(given);
   const pool = [expected, ...(accept ?? [])].map(normalizeAnswer);
-  if (!g) return { ok: false as const, hint: null };
-  if (pool.includes(g)) return { ok: true as const, hint: null };
+  if (!g) return { ok: false as const, hint: null, state: 'wrong' as ItemState };
+  if (pool.includes(g)) return { ok: true as const, hint: null, state: 'correct' as ItemState };
   if (pool.some((a) => stripDiacritics(a) === stripDiacritics(g))) {
     const withMarks = [expected, ...(accept ?? [])].find(
       (a) => stripDiacritics(a) === stripDiacritics(g)
     );
-    return { ok: true as const, hint: withMarks ? `↳ z ogonkami: ${withMarks}` : null };
+    return {
+      ok: true as const,
+      hint: withMarks ? `↳ z ogonkami: ${withMarks}` : null,
+      state: 'correct-no-diacritics' as ItemState,
+    };
   }
-  return { ok: false as const, hint: null };
+  return { ok: false as const, hint: null, state: 'wrong' as ItemState };
 }

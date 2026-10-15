@@ -1,0 +1,51 @@
+{
+  "lesson_id": "pl-exam-01-pasje",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: czas wolny",
+  "instruction": "Trzy bloki: słowa, formy, przekształcenia.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1", "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Słowa z lekcji",
+      "instruction": "Wpisz słowo z lekcji.",
+      "items": [
+        { "id": "h1-1", "text": "Moja babcia ma ciekawe ___: zbiera stare pocztówki.", "answer": "hobby", "grammar_point": "slownictwo" },
+        { "id": "h1-2", "text": "W ___ wolnym słucham podcastów.", "answer": "czasie", "grammar_point": "slownictwo" },
+        { "id": "h1-3", "text": "Nie znam tego sportu, ale chcę ___.", "answer": "spróbować", "grammar_point": "slownictwo" },
+        { "id": "h1-4", "text": "Kino w sobotę? Tak, sobota mi ___.", "answer": "pasuje", "grammar_point": "slownictwo" },
+        { "id": "h1-5", "text": "Ćwiczę jogę ___, nawet w niedzielę.", "answer": "codziennie", "grammar_point": "slownictwo" },
+        { "id": "h1-6", "text": "Nie lubię kina, więc ___ chodzę na filmy.", "answer": "rzadko", "grammar_point": "slownictwo" }
+      ]
+    },
+    {
+      "block_id": "h2", "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Pełne formy",
+      "instruction": "Wpisz właściwą formę czasownika z nawiasu.",
+      "items": [
+        { "id": "h2-1", "text": "Mój mąż świetnie ___. (gotować)", "answer": "gotuje", "grammar_point": "koniugacja-e-esz" },
+        { "id": "h2-2", "text": "Czy wy ___ grać w brydża? (umieć)", "answer": "umiecie", "grammar_point": "koniugacja-m-sz" },
+        { "id": "h2-3", "text": "Moje koleżanki ___ w zespole ludowym. (tańczyć)", "answer": "tańczą", "grammar_point": "koniugacja-e-isz" },
+        { "id": "h2-4", "text": "Wieczorem nie ___ kawy. (ja, pić)", "answer": "piję", "grammar_point": "koniugacja-e-esz" },
+        { "id": "h2-5", "text": "Oni co roku ___ w góry. (jeździć)", "answer": "jeżdżą", "grammar_point": "koniugacja-e-isz" },
+        { "id": "h2-6", "text": "___ iść z nami na koncert? (ty, chcieć)", "answer": "Chcesz", "grammar_point": "koniugacja-e-esz" }
+      ]
+    },
+    {
+      "block_id": "h3", "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "3. Przekształcenia",
+      "instruction": "Napisz zdanie według wskazówki.",
+      "items": [
+        { "id": "h3-1", "prompt": "Kasia / grać / skrzypce", "answer": "Kasia gra na skrzypcach.", "accept": ["Na skrzypcach gra Kasia."], "grammar_point": "grac-w-na" },
+        { "id": "h3-2", "prompt": "Moi synowie / grać / koszykówka", "answer": "Moi synowie grają w koszykówkę.", "accept": ["W koszykówkę grają moi synowie."], "grammar_point": "grac-w-na" },
+        { "id": "h3-3", "prompt": "Czytam przed snem. (nigdy)", "answer": "Nigdy nie czytam przed snem.", "accept": ["Przed snem nigdy nie czytam.", "Ja nigdy nie czytam przed snem."], "grammar_point": "koniugacja-m-sz" },
+        { "id": "h3-4", "prompt": "Umiesz pływać. (pytanie z „czy”)", "answer": "Czy umiesz pływać?", "accept": ["Czy ty umiesz pływać?"], "grammar_point": "modalne-bezokolicznik" },
+        { "id": "h3-5", "prompt": "Rysuję w weekend. (lubić)", "answer": "Lubię rysować w weekend.", "accept": ["W weekend lubię rysować."], "grammar_point": "modalne-bezokolicznik" },
+        { "id": "h3-6", "prompt": "U mnie jest dużo pasji. (popraw błąd)", "answer": "Mam dużo pasji.", "accept": ["Ja mam dużo pasji."], "grammar_point": "pulapki-uk" }
+      ]
+    }
+  ]
+}

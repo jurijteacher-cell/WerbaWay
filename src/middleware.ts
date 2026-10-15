@@ -32,12 +32,18 @@ export async function middleware(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
-  const isProtected = PROTECTED_PREFIXES.some((p) => request.nextUrl.pathname.startsWith(p));
+  const path = request.nextUrl.pathname;
+  // Content-queue notebook lessons are public (LMS + Playwright)
+  const isPublicQueueLesson = /^\/lessons\/pl-/.test(path);
+
+  const isProtected =
+    !isPublicQueueLesson &&
+    PROTECTED_PREFIXES.some((p) => path.startsWith(p));
 
   if (isProtected && !user) {
     const url = request.nextUrl.clone();
     url.pathname = '/login';
-    url.searchParams.set('next', request.nextUrl.pathname);
+    url.searchParams.set('next', path);
     return NextResponse.redirect(url);
   }
 

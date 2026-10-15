@@ -20,14 +20,7 @@ type Props = {
   lessonId?: string;
 };
 
-function vocabAudioSrc(lessonId: string | undefined, id: string | number): string | null {
-  if (!lessonId) return null;
-  const raw = String(id);
-  const slug = raw.startsWith('v') ? raw.slice(1) : raw;
-  return `/audio/${lessonId}-v-${slug}.mp3`;
-}
-
-export function VocabCards({ title, instructions, items, groups, lessonId }: Props) {
+export function VocabCards({ title, instructions, items, groups }: Props) {
   const groupList = useMemo(() => {
     if (groups?.length) return groups;
     const seen = new Set<string>();
@@ -37,41 +30,16 @@ export function VocabCards({ title, instructions, items, groups, lessonId }: Pro
     return [...seen];
   }, [groups, items]);
 
-  const [group, setGroup] = useState<string | 'all'>(groupList[0] ?? 'all');
+  const [group, setGroup] = useState<string | 'all'>('all');
+  const [flipped, setFlipped] = useState<Record<string, boolean>>({});
+
   const filtered = useMemo(() => {
     if (group === 'all' || !groupList.length) return items;
     return items.filter((it) => it.group === group);
   }, [items, group, groupList]);
 
-  const [index, setIndex] = useState(0);
-  const [flipped, setFlipped] = useState(false);
-  const item = filtered[index];
-
-  const selectGroup = (g: string | 'all') => {
-    setGroup(g);
-    setIndex(0);
-    setFlipped(false);
-  };
-
-  const go = (next: number) => {
-    setFlipped(false);
-    setIndex(next);
-  };
-
-  if (!item) {
-    return (
-      <div>
-        <header className="nb-head">
-          <p className="nb-eyebrow">słownictwo</p>
-          <h1>{title}</h1>
-        </header>
-        <p className="nb-note">Brak kart w tej grupie.</p>
-      </div>
-    );
-  }
-
   return (
-    <div>
+    <div data-block-id="vocab">
       <header className="nb-head">
         <p className="nb-eyebrow">słownictwo</p>
         <h1>{title}</h1>
@@ -80,13 +48,21 @@ export function VocabCards({ title, instructions, items, groups, lessonId }: Pro
 
       {groupList.length > 0 && (
         <div className="nb-idx" role="tablist">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={group === 'all'}
+            onClick={() => setGroup('all')}
+          >
+            wszystkie
+          </button>
           {groupList.map((g) => (
             <button
               key={g}
               type="button"
               role="tab"
               aria-selected={group === g}
-              onClick={() => selectGroup(g)}
+              onClick={() => setGroup(g)}
             >
               {g}
             </button>
@@ -94,57 +70,41 @@ export function VocabCards({ title, instructions, items, groups, lessonId }: Pro
         </div>
       )}
 
-      <button
-        type="button"
-        className={`nb-fiche${flipped ? ' flip' : ''}`}
-        onClick={() => setFlipped((f) => !f)}
-        aria-label={flipped ? 'Pokaż słowo' : 'Pokaż znaczenie'}
-      >
-        <div className="in">
-          <div className="f">
-            <div className="term">{item.term}</div>
-            {item.part_of_speech ? <div className="pos">{item.part_of_speech}</div> : null}
-            <div className="peek">kliknij, żeby odwrócić →</div>
-          </div>
-          <div className="b">
-            {item.translation_uk ? <div className="uk">{item.translation_uk}</div> : null}
-            <div>{item.definition}</div>
-            <div className="ex">{item.example_sentence}</div>
-          </div>
-        </div>
-      </button>
-
-      <div className="nb-row">
-        <button type="button" className="nb-btn ghost" disabled={index === 0} onClick={() => go(index - 1)}>
-          Poprzednie
-        </button>
-        {vocabAudioSrc(lessonId, item.id) ? (
-          <button
-            type="button"
-            className="nb-btn ghost"
-            onClick={(e) => {
-              e.stopPropagation();
-              const src = vocabAudioSrc(lessonId, item.id);
-              if (!src) return;
-              const a = new Audio(src);
-              void a.play().catch(() => undefined);
-            }}
-            aria-label="Posłuchaj wymowy"
-          >
-            🔊
-          </button>
-        ) : null}
-        <button
-          type="button"
-          className="nb-btn"
-          disabled={index >= filtered.length - 1}
-          onClick={() => go(index + 1)}
-        >
-          Następne
-        </button>
-        <span className="nb-score">
-          {index + 1} / {filtered.length}
-        </span>
+      <div className="nb-grid">
+        {filtered.map((item, i) => {
+          const key = String(item.id);
+          const isFlipped = !!flipped[key];
+          const colors = ['c-y', 'c-m', 'c-s', 'c-c'] as const;
+          return (
+            <div
+              key={key}
+              className={`nb-card ${colors[i % colors.length]}`}
+              data-item-id={key}
+              data-flipped={isFlipped ? 'true' : 'false'}
+            >
+              <button
+                type="button"
+                data-role="flip"
+                className="nb-flip-trigger"
+                onClick={() => setFlipped((f) => ({ ...f, [key]: !f[key] }))}
+              >
+                {!isFlipped ? (
+                  <>
+                    <h3>{item.term}</h3>
+                    {item.part_of_speech ? <div className="pos">{item.part_of_speech}</div> : null}
+                    <div className="peek">kliknij, żeby odwrócić →</div>
+                  </>
+                ) : (
+                  <>
+                    {item.translation_uk ? <div className="uk">{item.translation_uk}</div> : null}
+                    <p style={{ margin: 0 }}>{item.definition}</p>
+                    <div className="ex">{item.example_sentence}</div>
+                  </>
+                )}
+              </button>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

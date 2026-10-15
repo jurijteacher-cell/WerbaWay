@@ -1,0 +1,510 @@
+{
+  "lesson_id": "pl-exam-01-pasje",
+  "exercise_type": "grammar-slides",
+  "title": "Czas teraźniejszy",
+  "parts": 2,
+  "slides": [
+    {
+      "id": "s1",
+      "part": 1,
+      "section": "title",
+      "kind": "title",
+      "title": "Czas teraźniejszy",
+      "question": "Co robisz w wolnym czasie?",
+      "goal": "Mówię, co robię, co lubię i co umiem robić."
+    },
+    {
+      "id": "s2",
+      "part": 1,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Po co czas teraźniejszy?",
+      "reveal": "item",
+      "items": [
+        {
+          "tag": "teraz",
+          "pl": "Teraz [[czytam]] książkę.",
+          "uk": "Зараз читаю книжку."
+        },
+        {
+          "tag": "regularnie",
+          "pl": "W soboty [[gram]] w tenisa.",
+          "uk": "По суботах граю в теніс."
+        },
+        {
+          "tag": "o sobie",
+          "pl": "[[Mieszkam]] w Krakowie.",
+          "uk": "Живу в Кракові."
+        }
+      ],
+      "note": "Jedna forma: to, co robię teraz, i to, co robię regularnie."
+    },
+    {
+      "id": "s3",
+      "part": 1,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Temat + końcówka",
+      "bricks": [
+        {
+          "text": "czyta-",
+          "label": "temat"
+        },
+        {
+          "text": "-m",
+          "label": "ja"
+        }
+      ],
+      "result": "czytam",
+      "note": "Końcówka mówi, kto to robi. Słowo „ja” zwykle nie jest potrzebne."
+    },
+    {
+      "id": "s4",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "title": "Grupa 1: -m, -sz",
+      "reveal": "row",
+      "headers": [
+        "osoba",
+        "końcówka",
+        "grać",
+        "umieć"
+      ],
+      "rows": [
+        [
+          "ja",
+          "-m",
+          "gram",
+          "umiem"
+        ],
+        [
+          "ty",
+          "-sz",
+          "grasz",
+          "umiesz"
+        ],
+        [
+          "on, ona, ono",
+          "bez końcówki",
+          "gra",
+          "umie"
+        ],
+        [
+          "my",
+          "-my",
+          "gramy",
+          "umiemy"
+        ],
+        [
+          "wy",
+          "-cie",
+          "gracie",
+          "umiecie"
+        ],
+        [
+          "oni, one",
+          "-ją",
+          "grają",
+          "umieją"
+        ]
+      ],
+      "note": "Tak samo: czytać, słuchać, mieć, rozumieć."
+    },
+    {
+      "id": "s5",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "title": "Grupa 2: -ę, -esz",
+      "reveal": "row",
+      "headers": [
+        "osoba",
+        "końcówka",
+        "gotować",
+        "chcieć"
+      ],
+      "rows": [
+        [
+          "ja",
+          "-ę",
+          "gotuję",
+          "chcę"
+        ],
+        [
+          "ty",
+          "-esz",
+          "gotujesz",
+          "chcesz"
+        ],
+        [
+          "on, ona, ono",
+          "-e",
+          "gotuje",
+          "chce"
+        ],
+        [
+          "my",
+          "-emy",
+          "gotujemy",
+          "chcemy"
+        ],
+        [
+          "wy",
+          "-ecie",
+          "gotujecie",
+          "chcecie"
+        ],
+        [
+          "oni, one",
+          "-ą",
+          "gotują",
+          "chcą"
+        ]
+      ],
+      "note": "-ować → [[-uj-]]: gotuję, trenuję, rysuję."
+    },
+    {
+      "id": "s6",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "title": "Grupa 3: -ę, -isz / -ysz",
+      "reveal": "row",
+      "headers": [
+        "osoba",
+        "końcówka",
+        "mówić",
+        "tańczyć"
+      ],
+      "rows": [
+        [
+          "ja",
+          "-ę",
+          "mówię",
+          "tańczę"
+        ],
+        [
+          "ty",
+          "-isz / -ysz",
+          "mówisz",
+          "tańczysz"
+        ],
+        [
+          "on, ona, ono",
+          "-i / -y",
+          "mówi",
+          "tańczy"
+        ],
+        [
+          "my",
+          "-imy / -ymy",
+          "mówimy",
+          "tańczymy"
+        ],
+        [
+          "wy",
+          "-icie / -ycie",
+          "mówicie",
+          "tańczycie"
+        ],
+        [
+          "oni, one",
+          "-ą",
+          "mówią",
+          "tańczą"
+        ]
+      ],
+      "note": "Po cz, sz, rz, ż piszemy [[-y-]]: tańczysz, uczysz się."
+    },
+    {
+      "id": "s7",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "title": "Jak rozpoznać grupę?",
+      "reveal": "row",
+      "headers": [
+        "bezokolicznik",
+        "zwykle",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "-ać",
+          "-am, -asz",
+          "czytam, czytasz"
+        ],
+        [
+          "-ować",
+          "-uję, -ujesz",
+          "gotuję, gotujesz"
+        ],
+        [
+          "-ić, -yć",
+          "-ę, -isz / -ysz",
+          "mówię, tańczysz"
+        ]
+      ],
+      "note": "To reguła „zwykle”. Inne formy poznasz w części 2."
+    },
+    {
+      "id": "s8",
+      "part": 1,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Strategia: słuchanie, część 1",
+      "bricks": [
+        {
+          "text": "Przeczytaj a, b, c",
+          "label": "przed nagraniem"
+        },
+        {
+          "text": "Słuchaj słów-kluczy",
+          "label": "bilet, woda, książka"
+        },
+        {
+          "text": "Wybierz i idź dalej",
+          "label": "jedno odsłuchanie"
+        }
+      ],
+      "result": "Nie musisz rozumieć każdego słowa."
+    },
+    {
+      "id": "s9",
+      "part": 2,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Lubię, umiem, chcę + bezokolicznik",
+      "bricks": [
+        {
+          "text": "lubię / umiem / chcę",
+          "label": "forma osobowa"
+        },
+        {
+          "text": "grać",
+          "label": "bezokolicznik"
+        }
+      ],
+      "result": "Umiem grać na gitarze.",
+      "note": "Drugi czasownik się nie zmienia: lubisz pływać, lubimy pływać."
+    },
+    {
+      "id": "s10",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Umiem czy mogę?",
+      "left": {
+        "title": "umieć",
+        "lines": [
+          "Umiejętność: wiem, jak to zrobić.",
+          "[[Umiem]] pływać."
+        ]
+      },
+      "right": {
+        "title": "móc",
+        "lines": [
+          "Możliwość albo zgoda.",
+          "Dziś [[mogę]] pływać, bo mam czas."
+        ]
+      }
+    },
+    {
+      "id": "s11",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Grać w czy grać na?",
+      "left": {
+        "title": "grać w + gra, sport",
+        "lines": [
+          "w tenisa",
+          "w piłkę",
+          "w szachy"
+        ]
+      },
+      "right": {
+        "title": "grać na + instrument",
+        "lines": [
+          "na gitarze",
+          "na pianinie",
+          "na perkusji"
+        ]
+      },
+      "note": "Ucz się całych zwrotów: [[grać w]] piłkę, [[grać na]] gitarze."
+    },
+    {
+      "id": "s12",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "title": "Pytanie i przeczenie",
+      "reveal": "row",
+      "headers": [
+        "co mówimy",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "pytanie: tak czy nie?",
+          "[[Czy]] grasz w szachy?"
+        ],
+        [
+          "odpowiedź: tak",
+          "Tak, gram."
+        ],
+        [
+          "odpowiedź: nie",
+          "Nie, [[nie]] gram."
+        ],
+        [
+          "pytanie o czynność",
+          "[[Co]] robisz w weekend?"
+        ]
+      ],
+      "note": "„Nie” stoi przed czasownikiem."
+    },
+    {
+      "id": "s13",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "title": "Jak często?",
+      "reveal": "row",
+      "headers": [
+        "słowo",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "zawsze",
+          "Zawsze czytam wieczorem."
+        ],
+        [
+          "często",
+          "Często gotuję."
+        ],
+        [
+          "czasami",
+          "Czasami tańczę."
+        ],
+        [
+          "rzadko",
+          "Rzadko oglądam telewizję."
+        ],
+        [
+          "nigdy",
+          "Nigdy [[nie]] gram w karty."
+        ]
+      ],
+      "note": "Z czasownikiem: „nigdy” + „nie”."
+    },
+    {
+      "id": "s14",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "title": "Inne formy w grupach",
+      "reveal": "item",
+      "items": [
+        {
+          "text": "pisać → [[piszę]], piszesz, piszą",
+          "refers_to": "s7"
+        },
+        {
+          "text": "pić → piję, pijesz; myć → myję, myjesz",
+          "refers_to": "s7"
+        },
+        {
+          "text": "jeździć → [[jeżdżę]], ale jeździsz",
+          "refers_to": "s6"
+        },
+        {
+          "text": "chodzić → chodzę, ale chodzisz",
+          "refers_to": "s6"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "title": "Ważne formy do zapamiętania",
+      "reveal": "item",
+      "items": [
+        {
+          "text": "być: jestem, jesteś, jest, jesteśmy, jesteście, są",
+          "refers_to": "s3"
+        },
+        {
+          "text": "jeść: jem, jesz, je, jemy, jecie, [[jedzą]]",
+          "refers_to": "s4"
+        },
+        {
+          "text": "wiedzieć: wiem, wiesz, wie, wiemy, wiecie, [[wiedzą]]",
+          "refers_to": "s4"
+        },
+        {
+          "text": "móc: [[mogę]], możesz, może, możemy, możecie, mogą",
+          "refers_to": "s10"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "у мене є хобі",
+          "wrong": "U mnie jest hobby.",
+          "right": "[[Mam]] hobby.",
+          "why": "Gdy coś mamy, mówimy: mieć."
+        },
+        {
+          "uk": "дивлюся фільми",
+          "wrong": "Patrzę filmy.",
+          "right": "[[Oglądam]] filmy.",
+          "why": "Film, serial, mecz: oglądać."
+        },
+        {
+          "uk": "у вільний час",
+          "wrong": "w wolny czas",
+          "right": "w [[wolnym czasie]]",
+          "why": "Pytanie „kiedy?”: w + miejscownik."
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "катаюся на велосипеді",
+          "wrong": "Katam się na rowerze.",
+          "right": "[[Jeżdżę]] na rowerze.",
+          "why": "Rower, narty, rolki: jeździć na."
+        },
+        {
+          "uk": "ходжу в спортзал",
+          "wrong": "Chodzę w siłownię.",
+          "right": "Chodzę [[na siłownię]].",
+          "why": "Siłownia, basen, trening: chodzić na."
+        },
+        {
+          "uk": "я можу (= вмію) грати на гітарі",
+          "wrong": "Mogę grać na gitarze.",
+          "right": "[[Umiem]] grać na gitarze.",
+          "why": "Umiejętność: umieć. Móc: możliwość albo zgoda."
+        }
+      ]
+    }
+  ]
+}

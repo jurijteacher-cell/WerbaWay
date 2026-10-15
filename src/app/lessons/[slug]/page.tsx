@@ -5,8 +5,41 @@ import { getLessonBySlug } from '@/content/lessons';
 import { toPublicLesson } from '@/content/types';
 import { ExerciseCard } from '@/components/exercises/ExerciseCard';
 import { getSubmissionsForLessons, submissionKey } from '@/lib/submissions';
+import { hasQueueLesson, loadQueueLesson } from '@/lib/queue-lesson';
+import { NotebookLesson } from '@/components/exercises/NotebookLesson';
+import '@/components/exercises/notebook.css';
 
 export default async function LessonPage({ params }: { params: { slug: string } }) {
+  // Content-queue notebook lessons are public (e2e + LMS embeds)
+  if (hasQueueLesson(params.slug)) {
+    const bundle = loadQueueLesson(params.slug);
+    if (!bundle) notFound();
+    const title = bundle.frontmatter.title ?? params.slug;
+    // Encode markers so raw [IMAGE]/[AUDIO]/… never appear in client HTML/props
+    const safeBody = bundle.body.replace(
+      /\[(IMAGE|AUDIO|SLIDES|EXERCISE):([^\]]*)\]/g,
+      (_m, kind: string, attrs: string) =>
+        `%%MK:${kind}:${Buffer.from(attrs, 'utf8').toString('base64url')}%%`
+    );
+    return (
+      <main style={{ background: '#E7E2D7', minHeight: '100vh' }}>
+        <NotebookLesson
+          lessonId={bundle.lessonId}
+          title={title}
+          levelHint={bundle.frontmatter.level ? `poziom ${bundle.frontmatter.level}` : undefined}
+          body={safeBody}
+          images={bundle.images}
+          vocab={bundle.vocab as never}
+          pictures={bundle.pictures as never}
+          commTasks={bundle.commTasks as never}
+          grammar={bundle.grammar as never}
+          exam={bundle.exam as never}
+          hw={bundle.hw as never}
+        />
+      </main>
+    );
+  }
+
   const lesson = getLessonBySlug(params.slug);
   if (!lesson) notFound();
 
