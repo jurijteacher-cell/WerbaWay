@@ -1,0 +1,55 @@
+{
+  "lesson_id": "pl-b1-auto-01-serwis",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: w drodze, na stacji, na parkingu",
+  "instruction": "Trzy bloki: słownictwo, pełne formy i przekształcenia. Tym razem bez warsztatu — samochód w codziennym życiu.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "drag-and-drop",
+      "title": "1. Słownictwo w nowych sytuacjach",
+      "instruction": "Przeciągnij właściwe słowo. Trzy słowa są zbędne.",
+      "bank": ["oponach", "sprzęgła", "cieknie", "kontrolka", "odpalić", "zamiennik", "drgać", "stukać", "akumulatorze", "fakturę"],
+      "items": [
+        {"id": "h1-1", "text": "Na stacji paliw sprawdziłem ciśnienie w ___, bo jedna wyglądała na płaską.", "answer": "oponach", "grammar_point": "slownictwo"},
+        {"id": "h1-2", "text": "W wypożyczalni dostałem auto z ręczną skrzynią, więc znowu musiałem pamiętać o pedale ___.", "answer": "sprzęgła", "grammar_point": "slownictwo"},
+        {"id": "h1-3", "text": "Auto sąsiada stoi na parkingu i coś z niego ___ — pod spodem jest mała kałuża.", "answer": "cieknie", "grammar_point": "slownictwo"},
+        {"id": "h1-4", "text": "W trasie zapaliła się ___ temperatury silnika i musiałem zjechać na pobocze.", "answer": "kontrolka", "grammar_point": "slownictwo"},
+        {"id": "h1-5", "text": "Pomoc drogowa przyjechała po godzinie, ale auto i tak nie chciało ___.", "answer": "odpalić", "grammar_point": "slownictwo"},
+        {"id": "h1-6", "text": "W sklepie motoryzacyjnym kupiłem tańszy ___ filtra powietrza.", "answer": "zamiennik", "grammar_point": "slownictwo"},
+        {"id": "h1-7", "text": "Na nierównej drodze cała kierownica zaczęła ___.", "answer": "drgać", "grammar_point": "slownictwo"}
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Pełna forma bez osoby",
+      "instruction": "Wpisz formę bezosobową. W nawiasie jest czasownik i wskazówka.",
+      "items": [
+        {"id": "h2-1", "text": "Na tej stacji ___ (tankować + się) samemu, a kasjer tylko przyjmuje pieniądze.", "answer": "tankuje się", "accept": ["się tankuje"], "grammar_point": "sie-bezosobowe"},
+        {"id": "h2-2", "text": "W nocy z ulicy ___ (odholować, forma -no) pięć źle zaparkowanych aut.", "answer": "odholowano", "grammar_point": "forma-no-to"},
+        {"id": "h2-3", "text": "W nocy na parkingu pod blokiem ___ (rozbić, forma -to) szybę w moim aucie.", "answer": "rozbito", "grammar_point": "forma-no-to"},
+        {"id": "h2-4", "text": "W zeszłą sobotę na autostradzie ___ (trzeba, przeszłość) stać w korku dwie godziny.", "answer": "trzeba było", "grammar_point": "trzeba-mozna-warto"},
+        {"id": "h2-5", "text": "Od jutra na tej ulicy ___ (nie wolno, przyszłość) parkować, bo zaczyna się remont jezdni.", "answer": "nie będzie wolno", "accept": ["nie wolno będzie"], "grammar_point": "trzeba-mozna-warto"},
+        {"id": "h2-6", "text": "Z daleka ___ (słyszeć, bez osoby) syrenę karetki.", "answer": "słychać", "grammar_point": "slychac-widac-czuc"},
+        {"id": "h2-7", "text": "Na mapie w telefonie ___ (widzieć, bez osoby) korek aż do zjazdu na Kraków.", "answer": "widać", "grammar_point": "slychac-widac-czuc"},
+        {"id": "h2-8", "text": "W wypożyczalni ___ (wypożyczyć, forma -no) nam auto bez klimatyzacji, choć płaciliśmy za lepsze.", "answer": "wypożyczono", "grammar_point": "forma-no-to"}
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Przekształcenia",
+      "instruction": "Napisz zdanie bez osoby. Wskazówka w nawiasie mówi, której konstrukcji użyć.",
+      "items": [
+        {"id": "h3-1", "prompt": "(forma -no) Strażnicy miejscy zablokowali koła mojego auta.", "answer": "Zablokowano koła mojego auta.", "accept": ["Koła mojego auta zablokowano."], "grammar_point": "forma-no-to"},
+        {"id": "h3-2", "prompt": "(się) W tej wypożyczalni klienci oddają auta z pełnym bakiem.", "answer": "W tej wypożyczalni auta oddaje się z pełnym bakiem.", "accept": ["W tej wypożyczalni oddaje się auta z pełnym bakiem."], "grammar_point": "sie-bezosobowe"},
+        {"id": "h3-3", "prompt": "(forma -no) Ktoś wezwał pomoc drogową o północy.", "answer": "Wezwano pomoc drogową o północy.", "accept": ["O północy wezwano pomoc drogową.", "Pomoc drogową wezwano o północy."], "grammar_point": "forma-no-to"},
+        {"id": "h3-4", "prompt": "(forma -no, przeczenie) Obsługa parkingu nie zwróciła mi kaucji.", "answer": "Nie zwrócono mi kaucji.", "accept": ["Kaucji mi nie zwrócono."], "grammar_point": "forma-no-to"},
+        {"id": "h3-5", "prompt": "(trzeba) Musimy jechać wolniej, bo jest gęsta mgła.", "answer": "Trzeba jechać wolniej, bo jest gęsta mgła.", "grammar_point": "trzeba-mozna-warto"},
+        {"id": "h3-6", "prompt": "(można, przyszłość) Za dwa kilometry zjedziemy na parking.", "answer": "Za dwa kilometry będzie można zjechać na parking.", "accept": ["Za dwa kilometry można będzie zjechać na parking.", "Będzie można zjechać na parking za dwa kilometry."], "grammar_point": "trzeba-mozna-warto"}
+      ]
+    }
+  ]
+}

@@ -53,6 +53,8 @@ def reading_text(body):
     sec = m.group(1)
     h = re.search(r"\n### [^\n]+\n(.*)", sec, re.S)
     txt = h.group(1) if h else sec
+    # Pytania do tekstu — не частина лічильника слів тексту
+    txt = re.split(r"\n### Pytania[^\n]*\n", txt, maxsplit=1)[0]
     txt = re.sub(r"\[[A-Z]+:[^\]]*\]", "", txt).replace("**", "")
     return txt
 

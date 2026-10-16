@@ -1,0 +1,39 @@
+{
+  "lesson_id": "pl-b1-auto-01-serwis",
+  "exercise_type": "vocab-cards",
+  "title": "Słownictwo: samochód, usterki i warsztat",
+  "instruction": "25 słów w czterech grupach. Odwróć kartę, przeczytaj definicję i przykład, potem oceń: znam czy nie znam?",
+  "estimated_minutes": 10,
+  "groups": ["Części samochodu", "Objawy usterek", "Co robi mechanik", "Sprawy w warsztacie"],
+  "comm_groups": ["Objawy usterek", "Sprawy w warsztacie"],
+  "items": [
+    {"id": "v01", "term": "silnik", "group": "Części samochodu", "part_of_speech": "rzeczownik, m.", "definition": "Najważniejsza część auta. Daje mu moc, żeby mogło jechać.", "example": "Silnik w moim aucie pracuje głośniej niż zwykle.", "translation_uk": "двигун"},
+    {"id": "v02", "term": "klocki hamulcowe", "group": "Części samochodu", "part_of_speech": "rzeczownik, l.mn.", "definition": "Części, które dociskają się do tarczy przy kole i zatrzymują auto.", "example": "Mechanik powiedział, że klocki hamulcowe wystarczą jeszcze na kilka miesięcy.", "translation_uk": "гальмівні колодки"},
+    {"id": "v03", "term": "opona", "group": "Części samochodu", "part_of_speech": "rzeczownik, ż.", "definition": "Gumowa część koła, która dotyka drogi.", "example": "W lewej przedniej oponie utknął gwóźdź.", "translation_uk": "шина"},
+    {"id": "v04", "term": "akumulator", "group": "Części samochodu", "part_of_speech": "rzeczownik, m.", "definition": "Część, która daje prąd, żeby można było uruchomić silnik.", "example": "Na mrozie stary akumulator szybko się rozładowuje.", "translation_uk": "акумулятор"},
+    {"id": "v05", "term": "sprzęgło", "group": "Części samochodu", "part_of_speech": "rzeczownik, n.", "definition": "Mechanizm, który łączy silnik z kołami. Naciskasz jego pedał, kiedy zmieniasz bieg.", "example": "W samochodzie z automatyczną skrzynią nie ma pedału sprzęgła.", "translation_uk": "зчеплення"},
+    {"id": "v06", "term": "kontrolka", "group": "Części samochodu", "part_of_speech": "rzeczownik, ż.", "definition": "Mała lampka na desce rozdzielczej, która ostrzega o problemie.", "example": "Na autostradzie zapaliła się kontrolka ciśnienia w oponach.", "translation_uk": "індикатор (лампочка на панелі)"},
+
+    {"id": "v07", "term": "stukać", "group": "Objawy usterek", "part_of_speech": "czasownik, ndk.", "definition": "Wydawać krótkie, twarde dźwięki: puk, puk.", "example": "Coś stuka pod podłogą, kiedy jadę po dziurach.", "translation_uk": "стукати"},
+    {"id": "v08", "term": "piszczeć", "group": "Objawy usterek", "part_of_speech": "czasownik, ndk.", "definition": "Wydawać wysoki, nieprzyjemny dźwięk.", "example": "Pasek w silniku piszczy rano, kiedy jest zimno.", "translation_uk": "пищати, свистіти"},
+    {"id": "v09", "term": "ciec (cieknąć)", "group": "Objawy usterek", "part_of_speech": "czasownik, ndk.", "definition": "O płynie: wychodzić kroplami tam, gdzie nie powinien. Forma: cieknie.", "example": "Spod auta cieknie coś zielonego — chyba płyn chłodniczy.", "translation_uk": "текти, підтікати"},
+    {"id": "v10", "term": "odpalić", "group": "Objawy usterek", "part_of_speech": "czasownik, dk., potocznie", "definition": "O silniku albo aucie: zacząć pracować po przekręceniu kluczyka.", "example": "Rano auto nie chciało odpalić.", "translation_uk": "завестися (про двигун)"},
+    {"id": "v11", "term": "szarpać", "group": "Objawy usterek", "part_of_speech": "czasownik, ndk.", "definition": "O aucie: jechać nierówno, z nagłymi ruchami do przodu.", "example": "Przy ruszaniu auto szarpie, jakby brakowało mu mocy.", "translation_uk": "смикатися, сіпатися"},
+    {"id": "v12", "term": "drgać", "group": "Objawy usterek", "part_of_speech": "czasownik, ndk.", "definition": "Szybko i lekko się trząść.", "example": "Kiedy mocno hamuję, drga cały pedał.", "translation_uk": "вібрувати, тремтіти"},
+
+    {"id": "v13", "term": "zdiagnozować", "group": "Co robi mechanik", "part_of_speech": "czasownik, dk.", "definition": "Sprawdzić, co dokładnie jest zepsute i dlaczego.", "example": "Komputer zdiagnozował problem z czujnikiem w kilka minut.", "translation_uk": "продіагностувати"},
+    {"id": "v14", "term": "wymienić", "group": "Co robi mechanik", "part_of_speech": "czasownik, dk.", "definition": "Zdjąć starą część i założyć nową.", "example": "Po zimie trzeba wymienić wycieraczki.", "translation_uk": "замінити"},
+    {"id": "v15", "term": "dokręcić", "group": "Co robi mechanik", "part_of_speech": "czasownik, dk.", "definition": "Mocniej przykręcić śrubę albo nakrętkę.", "example": "Po wymianie kół warto dokręcić śruby po kilkudziesięciu kilometrach.", "translation_uk": "докрутити, підтягнути"},
+    {"id": "v16", "term": "wyważyć", "group": "Co robi mechanik", "part_of_speech": "czasownik, dk.", "definition": "Tak ustawić koło, żeby kręciło się równo, bez drgań.", "example": "Kierownica przestała drgać, kiedy wyważono koła.", "translation_uk": "відбалансувати"},
+    {"id": "v17", "term": "naładować", "group": "Co robi mechanik", "part_of_speech": "czasownik, dk.", "definition": "Napełnić akumulator albo baterię prądem.", "example": "Sąsiad pomógł mi naładować akumulator prostownikiem.", "translation_uk": "зарядити"},
+    {"id": "v18", "term": "zamówić", "group": "Co robi mechanik", "part_of_speech": "czasownik, dk.", "definition": "Poprosić o rzecz, którą dostaniesz później.", "example": "Części do starszych modeli często trzeba zamówić z hurtowni.", "translation_uk": "замовити"},
+
+    {"id": "v19", "term": "przegląd", "group": "Sprawy w warsztacie", "part_of_speech": "rzeczownik, m.", "definition": "Regularna kontrola auta. Potocznie też obowiązkowe badanie techniczne.", "example": "Termin przeglądu mam zapisany w kalendarzu.", "translation_uk": "техогляд; техобслуговування"},
+    {"id": "v20", "term": "wycena", "group": "Sprawy w warsztacie", "part_of_speech": "rzeczownik, ż.", "definition": "Informacja, ile będzie kosztowała usługa, zanim ktoś ją zrobi.", "example": "Poprosiłem o wycenę w dwóch warsztatach i wybrałem tańszy.", "translation_uk": "оцінка вартості, кошторис"},
+    {"id": "v21", "term": "części zamienne", "group": "Sprawy w warsztacie", "part_of_speech": "rzeczownik, l.mn.", "definition": "Nowe części, które montuje się zamiast zepsutych.", "example": "Do niektórych japońskich aut części zamienne trzeba sprowadzać.", "translation_uk": "запчастини"},
+    {"id": "v22", "term": "zamiennik", "group": "Sprawy w warsztacie", "part_of_speech": "rzeczownik, m.", "definition": "Część innej firmy niż producent auta, zwykle tańsza od oryginału.", "example": "Do filtra kupiłem zamiennik i działa bez zarzutu.", "translation_uk": "аналог (неоригінальна запчастина)"},
+    {"id": "v23", "term": "odbiór", "group": "Sprawy w warsztacie", "part_of_speech": "rzeczownik, m.", "definition": "Moment, kiedy zabierasz swoją rzecz, na przykład auto z warsztatu.", "example": "Odbiór auta jest możliwy do osiemnastej.", "translation_uk": "отримання (забрати авто)"},
+    {"id": "v24", "term": "faktura", "group": "Sprawy w warsztacie", "part_of_speech": "rzeczownik, ż.", "definition": "Dokument z listą usług, części i ceną.", "example": "Firma potrzebuje faktury na swoje dane.", "translation_uk": "рахунок-фактура"},
+    {"id": "v25", "term": "gwarancja", "group": "Sprawy w warsztacie", "part_of_speech": "rzeczownik, ż.", "definition": "Obietnica firmy, że naprawi coś za darmo, jeśli zepsuje się w określonym czasie.", "example": "Na nowy akumulator dostałem dwa lata gwarancji.", "translation_uk": "гарантія"}
+  ]
+}

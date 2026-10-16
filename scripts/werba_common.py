@@ -9,7 +9,10 @@ FILE_PREFIX = {
     "vocab": "v", "pictures": "p", "comm-tasks": "c", "grammar": "g",
     "hw": "h", "exam": "e", "test": "t",
 }
-EXTRA_TAGS = {"kalki-uk", "slownictwo"}
+EXTRA_TAGS = {
+    "kalki-uk", "slownictwo",
+    "trzeba-mozna-warto", "slychac-widac-czuc", "forma-no-to", "sie-bezosobowe",
+}
 
 
 def load_curriculum(path):

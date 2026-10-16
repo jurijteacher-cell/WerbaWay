@@ -1,0 +1,134 @@
+{
+  "lesson_id": "pl-b1-auto-01-serwis",
+  "exercise_type": "grammar-slides",
+  "title": "Konstrukcje bezosobowe",
+  "slides": [
+    {"id": "s1", "part": 1, "section": "teoria", "kind": "title",
+     "title": "Bez osoby: jak mówić o naprawie",
+     "subtitle": "Kto naprawił? Nieważne. Ważne, co trzeba zrobić i co zrobiono.",
+     "goal": "Po tej części: opiszesz usterkę i zrozumiesz listę prac z warsztatu.",
+     "teacher_note": "Спитай: «Коли ти віддаєш машину в сервіс, тобі важливо, хто саме з механіків її ремонтуватиме?» Підведи до думки, що в сервісі людина зазвичай не важлива — важлива дія."},
+
+    {"id": "s2", "part": 1, "section": "teoria", "kind": "examples",
+     "title": "Cztery konstrukcje bez osoby",
+     "items": [
+       {"tag": "konieczność", "pl": "[[Trzeba]] wymienić klocki hamulcowe.", "uk": "Треба замінити гальмівні колодки."},
+       {"tag": "zmysły", "pl": "Przy hamowaniu [[słychać]] stukanie.", "uk": "Під час гальмування чути стукіт."},
+       {"tag": "zasada", "pl": "W tym warsztacie [[płaci się]] przy odbiorze.", "uk": "У цій майстерні платять при отриманні."},
+       {"tag": "wynik", "pl": "[[Wymieniono]] olej i filtr powietrza.", "uk": "Замінено олію та повітряний фільтр."}
+     ],
+     "note": "Kto to robi? Nieważne albo oczywiste.",
+     "teacher_note": "Це карта уроку: чотири конструкції, кожна далі отримає свої слайди. Наголоси, що в українській є близькі відповідники: треба, чути, платять, замінено."},
+
+    {"id": "s3", "part": 1, "section": "teoria", "kind": "table", "reveal": "row",
+     "title": "Trzeba, można, warto, nie wolno",
+     "columns": ["słowo", "znaczenie", "przykład"],
+     "rows": [
+       ["[[trzeba]]", "to konieczne", "trzeba sprawdzić hamulce"],
+       ["[[należy]]", "trzeba (oficjalnie)", "należy podać numer rejestracyjny"],
+       ["[[można]]", "możliwe albo dozwolone", "można zapłacić kartą"],
+       ["[[warto]]", "to dobry pomysł", "warto zapytać o zamiennik"],
+       ["[[nie wolno]]", "to zabronione", "nie wolno tu parkować"],
+       ["[[da się]]", "to wykonalne", "da się to naprawić"]
+     ],
+     "note": "Po nich stoi bezokolicznik.",
+     "teacher_note": "«Należy» — на табличках, у правилах і листах сервісу; в розмові частіше «trzeba». Попроси учня скласти по одному реченню про своє авто з «warto» і «nie da się»."},
+
+    {"id": "s4", "part": 1, "section": "teoria", "kind": "table", "reveal": "column",
+     "title": "Wczoraj, dziś, jutro",
+     "columns": ["dziś", "wczoraj", "jutro"],
+     "rows": [
+       ["trzeba", "trzeba [[było]]", "trzeba [[będzie]]"],
+       ["można", "można [[było]]", "[[będzie]] można"],
+       ["nie wolno", "nie wolno [[było]]", "nie [[będzie]] wolno"]
+     ],
+     "note": "Jutro: trzeba będzie albo będzie trzeba — obie formy są poprawne.",
+     "teacher_note": "Ключ: «było» і «będzie» завжди в середньому роді однини, бо підмета немає. Приклад із сервісу: «Wczoraj trzeba było czekać na części»."},
+
+    {"id": "s5", "part": 1, "section": "teoria", "kind": "table", "reveal": "row",
+     "title": "Słychać, widać, czuć",
+     "columns": ["forma", "czym?", "przykład"],
+     "rows": [
+       ["[[słychać]]", "uchem", "słychać pisk hamulców"],
+       ["[[widać]]", "okiem", "widać plamę pod autem"],
+       ["[[czuć]]", "nosem albo ciałem", "czuć zapach spalenizny"]
+     ],
+     "note": "Po nich biernik: widać plamę; po „nie” dopełniacz: nie widać plamy.",
+     "teacher_note": "Головне для механіка: що чути, що видно, що відчувається і КОЛИ (przy hamowaniu, rano, przy dużej prędkości). «Czuć» — і запах, і вібрація тілом."},
+
+    {"id": "s6", "part": 1, "section": "teoria", "kind": "table", "reveal": "row",
+     "title": "Forma -no: co zrobiono",
+     "columns": ["bezokolicznik", "imiesłów", "forma -no"],
+     "rows": [
+       ["wymienić", "wymieniony", "wymienion[[o]]"],
+       ["naprawić", "naprawiony", "naprawion[[o]]"],
+       ["sprawdzić", "sprawdzony", "sprawdzon[[o]]"],
+       ["zamówić", "zamówiony", "zamówion[[o]]"],
+       ["wymontować", "wymontowany", "wymontowan[[o]]"],
+       ["wyważyć", "wyważony", "wyważon[[o]]"]
+     ],
+     "note": "Zwykle: imiesłów na -ny, końcówka -y zmienia się na -o.",
+     "teacher_note": "Саме так написаний список робіт у фактурі й протоколі сервісу. Українська аналогія: замінено, перевірено, замовлено."},
+
+    {"id": "s7", "part": 1, "section": "teoria", "kind": "steps",
+     "title": "Forma -no w zdaniu",
+     "steps": [
+       {"label": "kiedy?", "text": "Wczoraj", "optional": "nie zawsze"},
+       {"label": "forma -no", "text": "wymieniono"},
+       {"label": "co? (biernik)", "text": "tarcze i klocki"},
+       {"label": "gdzie?", "text": "z przodu", "optional": "nie zawsze"}
+     ],
+     "result": "Wczoraj [[wymieniono]] tarcze i klocki z przodu.",
+     "note": "Tylko przeszłość, bez osoby; po „nie” dopełniacz: nie wymieniono tarcz.",
+     "teacher_note": "Форма -no/-to не має теперішнього й майбутнього часу і не має виконавця. Для майбутнього в сервісі кажуть особово: «Wymienimy klocki jutro»."},
+
+    {"id": "s8", "part": 1, "section": "teoria", "kind": "examples",
+     "title": "Się: tak się to robi",
+     "items": [
+       {"tag": "zasada", "pl": "Kluczyki [[zostawia się]] w recepcji.", "uk": "Ключі залишають на рецепції."},
+       {"tag": "pytanie", "pl": "Jak [[otwiera się]] maskę w tym aucie?", "uk": "Як відкривається капот у цій машині?"},
+       {"tag": "zwyczaj", "pl": "Opony [[wymienia się]] zwykle jesienią i wiosną.", "uk": "Шини зазвичай міняють восени й навесні."},
+       {"tag": "zakaz", "pl": "Na terenie warsztatu [[nie pali się]].", "uk": "На території майстерні не палять."}
+     ],
+     "note": "Czasownik w 3. osobie + się; dopełnienie w bierniku: wymienia się opony.",
+     "teacher_note": "Зверни увагу на «maskę» і «opony» — знахідний відмінок, а не називний: це не «капот відкривається сам», а «відкривають капот»."},
+
+    {"id": "s9", "part": 1, "section": "teoria", "kind": "compare",
+     "title": "Się czy forma -no?",
+     "left": {"head": "się", "rule": "zasada albo zwyczaj", "examples": ["Tu [[naprawia się]] skrzynie biegów."]},
+     "right": {"head": "-no / -to", "rule": "konkretne zdarzenie w przeszłości", "examples": ["Wczoraj [[naprawiono]] moją skrzynię biegów."]},
+     "note": "Pytanie kontrolne: to zasada czy konkretna sytuacja?",
+     "teacher_note": "Ліве — як на вивісці сервісу, праве — як у фактурі. Попроси учня придумати пару речень про свій сервіс: правило й конкретний випадок."},
+
+    {"id": "s10", "part": 1, "section": "wyjatki", "kind": "table", "reveal": "row", "refers_to": "s6",
+     "title": "Forma -to",
+     "columns": ["bezokolicznik", "imiesłów", "forma -to"],
+     "rows": [
+       ["umyć", "umyty", "umy[[to]]"],
+       ["zamknąć", "zamknięty", "zamknię[[to]]"],
+       ["zdjąć", "zdjęty", "zdję[[to]]"],
+       ["wytrzeć", "wytarty", "wytar[[to]]"],
+       ["wziąć", "wzięty", "wzię[[to]]"]
+     ],
+     "note": "Imiesłów na -ty daje formę na -to.",
+     "teacher_note": "Правило те саме, що на слайді 6: форма йде від дієприкметника. Якщо дієприкметник на -ty, то й форма на -to: zdjęto koło, umyto auto."},
+
+    {"id": "s11", "part": 1, "section": "pulapki", "kind": "traps",
+     "title": "Pułapki z ukraińskiego · 1",
+     "items": [
+       {"uk": "поміняти масло", "wrong": "wymienić masło", "right": "wymienić [[olej]]", "why": "Masło jest do chleba, a w silniku jest olej."},
+       {"uk": "чути стук", "wrong": "czuć stukanie", "right": "[[słychać]] stukanie", "why": "Dźwięk słychać; czuć to zapach albo dotyk."},
+       {"uk": "ремонт гальм", "wrong": "remont hamulców", "right": "[[naprawa]] hamulców", "why": "Remont to zwykle mieszkanie albo generalna naprawa silnika."}
+     ],
+     "teacher_note": "Найчастіша помилка в сервісі — «masło». Спитай учня, як він досі це казав, і закріпи «wymiana oleju»."},
+
+    {"id": "s12", "part": 1, "section": "pulapki", "kind": "traps",
+     "title": "Pułapki z ukraińskiego · 2",
+     "items": [
+       {"uk": "майстер замінив мені олію", "wrong": "Wymieniono mi olej przez mechanika.", "right": "Mechanik [[wymienił]] mi olej.", "why": "Forma -no nie ma wykonawcy; kiedy wiesz kto, mów zwykłym zdaniem."},
+       {"uk": "тут не можна паркуватися", "wrong": "Tu nie można się parkować.", "right": "Tu nie można [[parkować]].", "why": "Polskie parkować jest bez się."},
+       {"uk": "мені треба замінити шини", "wrong": "Mi trzeba wymienić opony.", "right": "[[Muszę]] wymienić opony.", "why": "Trzeba zwykle stoi bez osoby; o sobie mówimy muszę."}
+     ],
+     "teacher_note": "Друга пастка — калька з «паркуватися». Третя: «trzeba» без давального звучить природно, а про себе — «muszę» або «potrzebuję»."}
+  ]
+}

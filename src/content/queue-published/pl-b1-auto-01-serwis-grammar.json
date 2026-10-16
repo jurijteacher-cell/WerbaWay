@@ -1,0 +1,90 @@
+{
+  "lesson_id": "pl-b1-auto-01-serwis",
+  "exercise_type": "fill-in-blank",
+  "title": "Konstrukcje bezosobowe w warsztacie",
+  "instruction": "Pięć bloków: od wyboru formy do przekształcania zdań i pułapek.",
+  "estimated_minutes": 18,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "covers_slides": ["s2", "s3", "s4"],
+      "exercise_type": "fill-in-blank",
+      "title": "1. Trzeba, można, warto czy nie wolno?",
+      "instruction": "Wybierz formę, która pasuje do sytuacji.",
+      "items": [
+        {"id": "g1-1", "text": "Hamulce piszczą od tygodnia. ___ je pilnie sprawdzić, bo chodzi o bezpieczeństwo.", "options": ["Trzeba", "Nie wolno", "Da się"], "answer": "Trzeba", "grammar_point": "trzeba-mozna-warto"},
+        {"id": "g1-2", "text": "W tym warsztacie ___ zapłacić kartą albo BLIK-iem.", "options": ["można", "nie wolno", "nie da się"], "answer": "można", "grammar_point": "trzeba-mozna-warto"},
+        {"id": "g1-3", "text": "Przy podnośniku ___ stać klientom — to niebezpieczne.", "options": ["nie wolno", "warto", "można"], "answer": "nie wolno", "grammar_point": "trzeba-mozna-warto"},
+        {"id": "g1-4", "text": "Ta część jest pęknięta na pół. Niestety, nie ___ jej naprawić.", "options": ["da się", "trzeba", "warto"], "answer": "da się", "grammar_point": "trzeba-mozna-warto", "explanation": "Nie da się = to niewykonalne. Nie trzeba i nie warto znaczą co innego: niepotrzebne i nieopłacalne."},
+        {"id": "g1-5", "text": "Oryginalne części są drogie, więc ___ zapytać o zamiennik.", "options": ["warto", "nie wolno", "nie da się"], "answer": "warto", "grammar_point": "trzeba-mozna-warto"},
+        {"id": "g1-6", "text": "Wczoraj ___ czekać na części trzy godziny.", "options": ["trzeba było", "trzeba będzie", "trzeba"], "answer": "trzeba było", "grammar_point": "trzeba-mozna-warto"},
+        {"id": "g1-7", "text": "Jutro ___ odebrać auto dopiero po szesnastej.", "options": ["będzie można", "można było", "można"], "answer": "będzie można", "grammar_point": "trzeba-mozna-warto"}
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "covers_slides": ["s2", "s5"],
+      "exercise_type": "fill-in-blank",
+      "title": "2. Słychać, widać czy czuć?",
+      "instruction": "Opisz objawy usterki. W ostatnim zdaniu wpisz rzeczownik we właściwej formie.",
+      "items": [
+        {"id": "g2-1", "text": "Przy hamowaniu ___ głośny pisk.", "options": ["słychać", "widać", "czuć"], "answer": "słychać", "grammar_point": "slychac-widac-czuc"},
+        {"id": "g2-2", "text": "Pod samochodem ___ plamę oleju.", "options": ["widać", "słychać", "czuć"], "answer": "widać", "grammar_point": "slychac-widac-czuc"},
+        {"id": "g2-3", "text": "W kabinie ___ zapach spalenizny.", "options": ["czuć", "słychać", "widać"], "answer": "czuć", "grammar_point": "slychac-widac-czuc"},
+        {"id": "g2-4", "text": "Przy stu dwudziestu na godzinę ___ wibracje na kierownicy.", "options": ["czuć", "słychać", "widać"], "answer": "czuć", "grammar_point": "slychac-widac-czuc", "explanation": "Wibracje czujesz rękami, czyli dotykiem — dlatego czuć."},
+        {"id": "g2-5", "text": "Na desce rozdzielczej ___ żółtą kontrolkę silnika.", "options": ["widać", "czuć", "słychać"], "answer": "widać", "grammar_point": "slychac-widac-czuc"},
+        {"id": "g2-6", "text": "Po naprawie nie słychać już ___ (stukanie).", "answer": "stukania", "grammar_point": "slychac-widac-czuc", "explanation": "Po „nie” biernik zmienia się w dopełniacz: słychać stukanie → nie słychać stukania."}
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "covers_slides": ["s6", "s10"],
+      "exercise_type": "matching",
+      "title": "3. Co zrobiono? Forma -no / -to",
+      "instruction": "Połącz bezokolicznik z formą bezosobową.",
+      "items": [
+        {"id": "g3-1", "left": "dokręcić", "right": "dokręcono", "grammar_point": "forma-no-to"},
+        {"id": "g3-2", "left": "naładować", "right": "naładowano", "grammar_point": "forma-no-to"},
+        {"id": "g3-3", "left": "wyczyścić", "right": "wyczyszczono", "grammar_point": "forma-no-to"},
+        {"id": "g3-4", "left": "zdiagnozować", "right": "zdiagnozowano", "grammar_point": "forma-no-to"},
+        {"id": "g3-5", "left": "przyjąć", "right": "przyjęto", "grammar_point": "forma-no-to"},
+        {"id": "g3-6", "left": "zacząć", "right": "zaczęto", "grammar_point": "forma-no-to"}
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "covers_slides": ["s2", "s7", "s8", "s9"],
+      "exercise_type": "sentence-building",
+      "title": "4. Bez osoby: przekształć zdania",
+      "instruction": "Konkretne zdarzenie w przeszłości → forma -no / -to. Zasada albo zwyczaj → się.",
+      "items": [
+        {"id": "g4-1", "prompt": "Mechanik wymienił akumulator.", "answer": "Wymieniono akumulator.", "accept": ["Akumulator wymieniono."], "grammar_point": "forma-no-to"},
+        {"id": "g4-2", "prompt": "Mechanicy nie sprawdzili sprzęgła.", "answer": "Nie sprawdzono sprzęgła.", "accept": ["Sprzęgła nie sprawdzono."], "grammar_point": "forma-no-to"},
+        {"id": "g4-3", "prompt": "Wczoraj ktoś zamówił nowe opony do Twojego auta.", "answer": "Wczoraj zamówiono nowe opony do Twojego auta.", "accept": ["Nowe opony do Twojego auta zamówiono wczoraj.", "Wczoraj zamówiono nowe opony do twojego auta."], "grammar_point": "forma-no-to"},
+        {"id": "g4-4", "prompt": "W tym serwisie klienci umawiają wizytę przez telefon.", "answer": "W tym serwisie wizytę umawia się przez telefon.", "accept": ["W tym serwisie umawia się wizytę przez telefon.", "Wizytę w tym serwisie umawia się przez telefon."], "grammar_point": "sie-bezosobowe"},
+        {"id": "g4-5", "prompt": "Tutaj klienci płacą gotówką albo kartą.", "answer": "Tutaj płaci się gotówką albo kartą.", "accept": ["Tu płaci się gotówką albo kartą.", "Płaci się tutaj gotówką albo kartą."], "grammar_point": "sie-bezosobowe"},
+        {"id": "g4-6", "prompt": "(zasada) Kierowcy zmieniają olej raz w roku.", "answer": "Olej zmienia się raz w roku.", "accept": ["Zmienia się olej raz w roku.", "Olej wymienia się raz w roku.", "Wymienia się olej raz w roku."], "grammar_point": "sie-bezosobowe"}
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 1,
+      "covers_slides": ["s11", "s12"],
+      "exercise_type": "fill-in-blank",
+      "title": "5. Pułapki z ukraińskiego",
+      "instruction": "Wybierz wersję, którą powie Polak.",
+      "items": [
+        {"id": "g5-1", "text": "Poproszę wymianę ___ i filtra.", "options": ["oleju", "masła"], "answer": "oleju", "grammar_point": "kalki-uk", "explanation": "W silniku jest olej; masło jest do jedzenia."},
+        {"id": "g5-2", "text": "Przy skręcaniu w lewo ___ stukanie z prawej strony.", "options": ["słychać", "czuć"], "answer": "słychać", "grammar_point": "kalki-uk", "explanation": "Dźwięk: słychać. Czuć — zapach, ciepło, wibracje."},
+        {"id": "g5-3", "text": "Ile będzie kosztowała ___ klimatyzacji?", "options": ["naprawa", "remont"], "answer": "naprawa", "grammar_point": "kalki-uk", "explanation": "Zwykła naprawa auta to naprawa; remont kojarzy się z mieszkaniem albo generalną naprawą silnika."},
+        {"id": "g5-4", "text": "Pan Marek, nasz mechanik, ___ mi wczoraj klocki.", "options": ["wymienił", "wymieniono"], "answer": "wymienił", "grammar_point": "kalki-uk", "explanation": "Wiemy, kto to zrobił, więc zwykłe zdanie z podmiotem. Forma -no nie łączy się z wykonawcą."},
+        {"id": "g5-5", "text": "Tu nie można ___ — to wjazd do warsztatu.", "options": ["parkować", "się parkować"], "answer": "parkować", "grammar_point": "kalki-uk", "explanation": "Parkować nie ma się, choć po ukraińsku mówimy паркуватися."},
+        {"id": "g5-6", "text": "Mam łyse opony, więc ___ kupić nowe.", "options": ["muszę", "mi trzeba"], "answer": "muszę", "grammar_point": "kalki-uk", "explanation": "O sobie: muszę albo potrzebuję. Trzeba zwykle stoi bez osoby."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "lesson_id": "pl-b1-auto-01-serwis",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: oddaję i odbieram auto",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę z nauczycielem.",
+  "estimated_minutes": 17,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "listen-then-play",
+      "front_title": "Coś stuka — dzwonię do warsztatu",
+      "back_scenario": "Najpierw posłuchaj rozmowy kierowcy z warsztatem. Potem zadzwoń sam / sama. Twój problem jest inny: rano auto szarpie przy ruszaniu, a pod samochodem widać małą plamę. Potrzebujesz auta w poniedziałek rano.",
+      "back_checklist": [
+        "Opisz objawy: co słychać, widać albo czuć i kiedy to się dzieje.",
+        "Zapytaj, ile kosztuje i jak długo trwa diagnostyka.",
+        "Ustal termin wizyty i godzinę odbioru.",
+        "Zapytaj, czy można zamontować zamiennik i jaka jest na niego gwarancja.",
+        "Poproś, żeby warsztat zadzwonił przed każdą dodatkową naprawą."
+      ],
+      "model_dialogue": [
+        {
+          "speaker": "Recepcjonistka",
+          "voice": "pl-PL-female",
+          "line": "Dzień dobry, Auto Serwis Pod Lipą, w czym mogę pomóc?"
+        },
+        {
+          "speaker": "Klient",
+          "voice": "pl-PL-male",
+          "line": "Dzień dobry. Od kilku dni przy hamowaniu słychać takie metaliczne stukanie z przodu."
+        },
+        {
+          "speaker": "Recepcjonistka",
+          "voice": "pl-PL-female",
+          "line": "Rozumiem. A czy na desce rozdzielczej świeci się jakaś kontrolka?"
+        },
+        {
+          "speaker": "Klient",
+          "voice": "pl-PL-male",
+          "line": "Tak, od wczoraj świeci się żółta kontrolka klocków. I po dłuższej jeździe czuć lekki zapach spalenizny."
+        },
+        {
+          "speaker": "Recepcjonistka",
+          "voice": "pl-PL-female",
+          "line": "To mogą być klocki hamulcowe. Najpierw trzeba zrobić diagnostykę. Kosztuje osiemdziesiąt złotych i trwa około godziny."
+        },
+        {
+          "speaker": "Klient",
+          "voice": "pl-PL-male",
+          "line": "Dobrze. Kiedy mogę przyjechać?"
+        },
+        {
+          "speaker": "Recepcjonistka",
+          "voice": "pl-PL-female",
+          "line": "Jutro o ósmej rano. Samochód można zostawić u nas na cały dzień."
+        },
+        {
+          "speaker": "Klient",
+          "voice": "pl-PL-male",
+          "line": "A czy da się to naprawić od razu? Potrzebuję auta w czwartek."
+        },
+        {
+          "speaker": "Recepcjonistka",
+          "voice": "pl-PL-female",
+          "line": "Jeśli trzeba będzie wymienić klocki, zrobimy to jutro. Oryginalne kosztują trzysta dwadzieścia złotych, a zamiennik sto osiemdziesiąt, z rokiem gwarancji."
+        },
+        {
+          "speaker": "Klient",
+          "voice": "pl-PL-male",
+          "line": "To poproszę zamiennik. Ale proszę zadzwonić, zanim zrobicie coś więcej. Nie chcę niespodzianek na rachunku."
+        },
+        {
+          "speaker": "Recepcjonistka",
+          "voice": "pl-PL-female",
+          "line": "Oczywiście. Każdą dodatkową naprawę ustala się u nas z klientem przez telefon. Odbiór będzie możliwy jutro po szesnastej."
+        },
+        {
+          "speaker": "Klient",
+          "voice": "pl-PL-male",
+          "line": "Świetnie, dziękuję. Do zobaczenia jutro o ósmej."
+        }
+      ],
+      "audio_url": "/audio/pl-b1-auto-01-serwis-c1-dialog.mp3"
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Odbiór auta: rachunek jest wyższy",
+      "back_scenario": "Przyjeżdżasz po auto. Wycena była na 180 zł za klocki z przodu. Na rachunku jest 470 zł. Nikt do Ciebie nie dzwonił. Nauczyciel gra pracownika warsztatu.",
+      "back_checklist": [
+        "Zapytaj, co dokładnie zrobiono w aucie i dlaczego rachunek jest wyższy.",
+        "Przypomnij, że prosiłeś / prosiłaś o telefon przed dodatkową naprawą.",
+        "Poproś o fakturę i listę wymienionych części.",
+        "Zapytaj o gwarancję i co trzeba zrobić, jeśli usterka wróci.",
+        "Ustal, jak rozwiążecie sprawę: rabat, zwrot różnicy albo rozmowa z kierownikiem."
+      ]
+    }
+  ]
+}
