@@ -91,10 +91,12 @@ function normalizeFlip(raw: any): FlipTaskExercise {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (it: any, i: number) => ({
         id: it.id ?? i + 1,
+        mode: it.mode,
         front_title: it.front_title,
         back_scenario: it.back_scenario,
         back_checklist: it.back_checklist ?? [],
         audio_url: it.audio_url,
+        model_dialogue: it.model_dialogue,
       })
     ),
   };

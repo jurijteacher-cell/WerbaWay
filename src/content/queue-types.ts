@@ -47,6 +47,12 @@ export type PictureSetExercise = {
   }[];
 };
 
+export type FlipTaskDialogueLine = {
+  speaker?: string;
+  line?: string;
+  text?: string;
+};
+
 export type FlipTaskExercise = {
   lesson_id: string;
   exercise_type: 'flip-task';
@@ -54,10 +60,12 @@ export type FlipTaskExercise = {
   instructions?: string;
   items: {
     id: number | string;
+    mode?: 'listen-then-play' | 'read-then-play' | string;
     front_title: string;
     back_scenario: string;
     back_checklist: string[];
     audio_url?: string;
+    model_dialogue?: FlipTaskDialogueLine[];
   }[];
 };
 

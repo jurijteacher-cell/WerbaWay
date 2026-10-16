@@ -7,9 +7,9 @@
   "items": [
     {
       "id": "c1",
-      "mode": "listen-then-play",
+      "mode": "read-then-play",
       "front_title": "Coś stuka — dzwonię do warsztatu",
-      "back_scenario": "Najpierw posłuchaj rozmowy kierowcy z warsztatem. Potem zadzwoń sam / sama. Twój problem jest inny: rano auto szarpie przy ruszaniu, a pod samochodem widać małą plamę. Potrzebujesz auta w poniedziałek rano.",
+      "back_scenario": "Najpierw przeczytajcie w rolach rozmowę kierowcy z warsztatem. Potem zadzwoń sam / sama. Twój problem jest inny: rano auto szarpie przy ruszaniu, a pod samochodem widać małą plamę. Potrzebujesz auta w poniedziałek rano.",
       "back_checklist": [
         "Opisz objawy: co słychać, widać albo czuć i kiedy to się dzieje.",
         "Zapytaj, ile kosztuje i jak długo trwa diagnostyka.",
@@ -20,66 +20,53 @@
       "model_dialogue": [
         {
           "speaker": "Recepcjonistka",
-          "voice": "pl-PL-female",
           "line": "Dzień dobry, Auto Serwis Pod Lipą, w czym mogę pomóc?"
         },
         {
           "speaker": "Klient",
-          "voice": "pl-PL-male",
           "line": "Dzień dobry. Od kilku dni przy hamowaniu słychać takie metaliczne stukanie z przodu."
         },
         {
           "speaker": "Recepcjonistka",
-          "voice": "pl-PL-female",
           "line": "Rozumiem. A czy na desce rozdzielczej świeci się jakaś kontrolka?"
         },
         {
           "speaker": "Klient",
-          "voice": "pl-PL-male",
           "line": "Tak, od wczoraj świeci się żółta kontrolka klocków. I po dłuższej jeździe czuć lekki zapach spalenizny."
         },
         {
           "speaker": "Recepcjonistka",
-          "voice": "pl-PL-female",
           "line": "To mogą być klocki hamulcowe. Najpierw trzeba zrobić diagnostykę. Kosztuje osiemdziesiąt złotych i trwa około godziny."
         },
         {
           "speaker": "Klient",
-          "voice": "pl-PL-male",
           "line": "Dobrze. Kiedy mogę przyjechać?"
         },
         {
           "speaker": "Recepcjonistka",
-          "voice": "pl-PL-female",
           "line": "Jutro o ósmej rano. Samochód można zostawić u nas na cały dzień."
         },
         {
           "speaker": "Klient",
-          "voice": "pl-PL-male",
           "line": "A czy da się to naprawić od razu? Potrzebuję auta w czwartek."
         },
         {
           "speaker": "Recepcjonistka",
-          "voice": "pl-PL-female",
           "line": "Jeśli trzeba będzie wymienić klocki, zrobimy to jutro. Oryginalne kosztują trzysta dwadzieścia złotych, a zamiennik sto osiemdziesiąt, z rokiem gwarancji."
         },
         {
           "speaker": "Klient",
-          "voice": "pl-PL-male",
           "line": "To poproszę zamiennik. Ale proszę zadzwonić, zanim zrobicie coś więcej. Nie chcę niespodzianek na rachunku."
         },
         {
           "speaker": "Recepcjonistka",
-          "voice": "pl-PL-female",
           "line": "Oczywiście. Każdą dodatkową naprawę ustala się u nas z klientem przez telefon. Odbiór będzie możliwy jutro po szesnastej."
         },
         {
           "speaker": "Klient",
-          "voice": "pl-PL-male",
           "line": "Świetnie, dziękuję. Do zobaczenia jutro o ósmej."
         }
-      ],
-      "audio_url": "/audio/pl-b1-auto-01-serwis-c1-dialog.mp3"
+      ]
     },
     {
       "id": "c2",

@@ -9,11 +9,15 @@ status: draft
 duration_minutes: 60
 sessions: 1
 grammar_points: [trzeba-mozna-warto, slychac-widac-czuc, forma-no-to, sie-bezosobowe, kalki-uk, slownictwo]
-exam_skills: [czytanie, sluchanie, pisanie, mowienie]
+exam_skills: [czytanie, pisanie, mowienie]
 recycles: []
-header_image_keywords: "mechanic repairing car"
+header_image_keywords: "mechanic inspecting car engine"
 header_image_keywords_alt: "car engine open hood"
 header_image_source: stock
+header_image_url: "https://images.unsplash.com/photo-1625047509248-ec889cbff17f?fm=jpg&q=80&w=1080&fit=max"
+header_image_unsplash_id: "bEGTsOCnHro"
+header_image_credit: "Photo: Kate Ibragimova / Unsplash"
+header_image_credit_url: "https://unsplash.com/@kateibragimova"
 ---
 
 # W warsztacie samochodowym
@@ -32,19 +36,19 @@ header_image_source: stock
 
 ### Zanim oddasz auto do warsztatu
 
-[AUDIO: id="pl-b1-auto-01-serwis-czytanie", source="tts", text="section:1", voice="pl-PL-female", speed="0.9"]
-
 Jesień to w Polsce gorący czas dla mechaników. Kierowcy zmieniają opony na zimowe, sprawdzają akumulatory i nagle przypominają sobie o przeglądzie. Jak nie stracić w warsztacie pieniędzy i nerwów?
 
 Po pierwsze, **warto** dokładnie opisać problem. Mechanik nie jeździ Twoim samochodem codziennie, więc **trzeba** mu powiedzieć, kiedy pojawia się usterka. **Słychać** stukanie przy hamowaniu? **Czuć** zapach spalenizny po dłuższej jeździe? Rano **widać** plamę pod autem? Każdy taki szczegół skraca diagnostykę, a za diagnostykę zwykle **się płaci**.
 
-[IMAGE: keywords="mechanic checking car wheel", keywords_alt="car on lift workshop", source="stock", alt="Mechanik sprawdza koło samochodu w warsztacie"]
+[IMAGE: slot="img1", source="stock", url="https://images.unsplash.com/photo-1696494561430-de087dd0bd69?fm=jpg&q=80&w=1080&fit=max", unsplash_id="ii4XEyJEm_I", credit="Photo: Toby Hall / Unsplash", credit_url="https://unsplash.com/@toby_hall28", keywords="car brake disc", keywords_alt="mechanic checking car wheel", alt="Tarcza hamulcowa i zacisk przy kole samochodu"]
 
 Po drugie, przed naprawą **należy** poprosić o wycenę. Najlepiej na piśmie — w SMS-ie albo w e-mailu, żeby potem nie było sporu o cenę. Dobry warsztat dzwoni do klienta, jeśli w czasie naprawy **znaleziono** nową usterkę. Jeśli tego **nie ustalono**, rachunek może być dużo wyższy, niż się spodziewałeś.
 
 Po trzecie, nie zawsze **trzeba** kupować oryginalne części. Często **można** zamontować dobry zamiennik, który kosztuje wyraźnie mniej. Przy klockach, filtrach czy wycieraczkach różnica bywa naprawdę duża. Zamiennik też powinien mieć gwarancję — o to także **warto** zapytać.
 
 I na koniec: obowiązkowe badanie techniczne, które kierowcy nazywają po prostu przeglądem, **robi się** nie w zwykłym warsztacie, tylko w stacji kontroli pojazdów. Nowe auto jedzie tam pierwszy raz po trzech latach, starsze zwykle co rok. Od września 2025 roku takie badanie kosztuje 149 złotych.
+
+[IMAGE: slot="img2", source="stock", url="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?fm=jpg&q=80&w=1080&fit=max", unsplash_id="V37iTrYZz2E", credit="Photo: Tim Mossholder / Unsplash", credit_url="https://unsplash.com/@timmossholder", keywords="man refilling motor oil", keywords_alt="car engine open hood", alt="Mężczyzna dolewa oleju do silnika"]
 
 Kiedy odbierasz samochód, poproś o fakturę i listę prac. Zobaczysz na niej, co **wymieniono**, co **sprawdzono** i ile to kosztowało.
 
@@ -83,9 +87,9 @@ W warsztacie rzadko mówimy, **kto** coś robi. Ważne jest, **co trzeba zrobić
 
 ## 4. Zadania komunikacyjne
 
-Najpierw posłuchaj rozmowy: kierowca dzwoni do warsztatu, bo coś stuka przy hamowaniu.
+[IMAGE: slot="img3", source="stock", url="https://images.unsplash.com/photo-1786490002518-8b5af5f2b537?fm=jpg&q=80&w=1080&fit=max", unsplash_id="0B05SYbRoIk", credit="Photo: Zoshua Colah / Unsplash", credit_url="https://unsplash.com/@zoshuacolah", keywords="car on lift garage", keywords_alt="mechanic working under car", alt="Samochód z otwartą maską na podnośniku w warsztacie"]
 
-[AUDIO: id="pl-b1-auto-01-serwis-c1-dialog", source="tts", text="pl-b1-auto-01-serwis-comm-tasks.json#c1.model_dialogue", voices="pl-PL-female,pl-PL-male", speed="0.95"]
+Najpierw przeczytajcie w rolach przykładową rozmowę: kierowca dzwoni do warsztatu, bo coś stuka przy hamowaniu.
 
 Teraz Twoja kolej. Dwie sytuacje: oddajesz auto do warsztatu i odbierasz je po naprawie. Odwróć kartę i wykonaj zadanie.
 
@@ -114,6 +118,8 @@ Trzy części — ćwiczenia, zadanie praktyczne z Twoim autem i pisanie.
 ### Zadanie praktyczne: kontrolki w Twoim aucie
 
 Kiedy przekręcasz kluczyk albo naciskasz przycisk startu, na desce rozdzielczej na chwilę zapala się większość kontrolek. Zrób wtedy zdjęcie deski. Wybierz trzy kontrolki i sprawdź w instrukcji auta, co oznaczają.
+
+[IMAGE: slot="img4", source="stock", url="https://images.unsplash.com/photo-1784037613631-f51ae3f09b96?fm=jpg&q=80&w=1080&fit=max", unsplash_id="buypIcbc-g8", credit="Photo: Compagnons / Unsplash", credit_url="https://unsplash.com/@sigmund", keywords="car dashboard warning light", keywords_alt="car dashboard speedometer", alt="Deska rozdzielcza z obrotomierzem i zapaloną kontrolką"]
 
 Nagraj 30–45 sekund po polsku. O każdej kontrolce powiedz:
 - jak wygląda i jaki ma kolor,

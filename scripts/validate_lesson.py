@@ -136,17 +136,23 @@ def main():
         rep.err(f"немає файлу {files['teacher'].name}")
     if template == "light-60":
         rep.ok("template light-60: pictures/exam не вимагаються")
-        dial = None
+        c1 = None
         for it in (data.get("comm-tasks") or {}).get("items") or []:
-            if it.get("id") == "c1" or it.get("mode") == "listen-then-play":
-                dial = it.get("model_dialogue") or []
+            if it.get("id") == "c1" or it.get("mode") in ("listen-then-play", "read-then-play"):
+                c1 = it
                 break
-        if dial is not None:
+        if c1 is not None:
+            dial = c1.get("model_dialogue") or []
             n = len(dial)
             if 10 <= n <= 12:
                 rep.ok(f"c1 model_dialogue: {n} реплік")
             else:
                 rep.err(f"c1 model_dialogue: {n}, а має бути 10–12")
+            mode = c1.get("mode")
+            if mode == "read-then-play":
+                rep.ok("c1 mode: read-then-play (без AUDIO)")
+            elif mode == "listen-then-play" and "[AUDIO:" not in body:
+                rep.warn("c1 mode listen-then-play, але в .md немає [AUDIO:]")
 
     # ---------- id ----------
     seen_ids = {}

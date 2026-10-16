@@ -3,12 +3,20 @@
 import { useState } from 'react';
 import { AudioCassette } from './AudioCassette';
 
+type DialogueLine = {
+  speaker?: string;
+  line?: string;
+  text?: string;
+};
+
 type Item = {
   id: number | string;
+  mode?: string;
   front_title: string;
   back_scenario: string;
   back_checklist: string[];
   audio_url?: string;
+  model_dialogue?: DialogueLine[];
 };
 
 type Props = {
@@ -20,6 +28,22 @@ type Props = {
 };
 
 const COLORS = ['c-y', 'c-m', 'c-s', 'c-c'] as const;
+
+function DialogueScript({ lines }: { lines: DialogueLine[] }) {
+  return (
+    <div className="nb-dialogue" data-role="model-dialogue">
+      {lines.map((turn, i) => {
+        const text = turn.line ?? turn.text ?? '';
+        return (
+          <p key={i} style={{ margin: '0 0 0.5rem' }}>
+            {turn.speaker ? <strong>{turn.speaker}: </strong> : null}
+            {text}
+          </p>
+        );
+      })}
+    </div>
+  );
+}
 
 export function FlipTask({ title, instructions, items, underCardAudio }: Props) {
   const [flipped, setFlipped] = useState<Record<string, boolean>>({});
@@ -36,12 +60,20 @@ export function FlipTask({ title, instructions, items, underCardAudio }: Props) 
         {items.map((item, i) => {
           const key = String(item.id);
           const isBack = !!flipped[key];
+          const isReadThenPlay = item.mode === 'read-then-play';
+          const dialogue = item.model_dialogue ?? [];
+          const audioSrc =
+            underCardAudio?.itemId === key
+              ? underCardAudio.src ?? item.audio_url
+              : item.audio_url;
+
           return (
             <div key={key}>
               <div
                 className={`nb-card ${COLORS[i % COLORS.length]}`}
                 data-item-id={key}
                 data-flipped={isBack ? 'true' : 'false'}
+                data-mode={item.mode || undefined}
               >
                 <button
                   type="button"
@@ -66,10 +98,11 @@ export function FlipTask({ title, instructions, items, underCardAudio }: Props) 
                   )}
                 </button>
               </div>
-              {underCardAudio?.itemId === key ? (
-                <AudioCassette src={underCardAudio.src ?? item.audio_url} defaultSpeed={0.85} />
-              ) : item.audio_url ? (
-                <AudioCassette src={item.audio_url} defaultSpeed={0.85} />
+              {isReadThenPlay && dialogue.length > 0 ? (
+                <DialogueScript lines={dialogue} />
+              ) : null}
+              {!isReadThenPlay && audioSrc ? (
+                <AudioCassette src={audioSrc} defaultSpeed={0.85} />
               ) : null}
             </div>
           );
