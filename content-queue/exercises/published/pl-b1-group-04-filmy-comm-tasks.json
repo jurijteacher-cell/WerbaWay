@@ -1,0 +1,118 @@
+{
+ "lesson_id": "pl-b1-group-04-filmy",
+ "exercise_type": "flip-task",
+ "title": "Zadania komunikacyjne: kino, platformy i rozmowy o filmach",
+ "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Skończ dopiero wtedy, gdy masz wszystkie informacje z listy.",
+ "estimated_minutes": 22,
+ "items": [
+  {
+   "id": "c1",
+   "front_title": "Bilety do kina",
+   "back_scenario": "Chcesz pójść z przyjaciółką do kina w piątek. Dzwonisz do kasy. Najpierw posłuchaj przykładowej rozmowy, potem odegraj swoją — z innym filmem, inną godziną i innymi biletami.",
+   "back_checklist": [
+    "Zapytaj, o której są seanse w piątek, i wybierz jeden.",
+    "Dowiedz się, czy film jest z napisami, z lektorem czy z dubbingiem.",
+    "Zapytaj o cenę biletu normalnego i ulgowego.",
+    "Poproś o najlepsze miejsca i podaj, ile ich potrzebujesz.",
+    "Ustal, do kiedy trzeba odebrać bilety."
+   ],
+   "mode": "read-then-play",
+   "model_dialogue": [
+    {
+     "speaker": "Kasjerka",
+     "voice": "pl-PL-female",
+     "line": "Kino Zorza, dzień dobry. W czym mogę pomóc?"
+    },
+    {
+     "speaker": "Klient",
+     "voice": "pl-PL-male",
+     "line": "Dzień dobry. Chciałbym zarezerwować dwa bilety na film „Ostatni pociąg” w sobotę."
+    },
+    {
+     "speaker": "Kasjerka",
+     "voice": "pl-PL-female",
+     "line": "Mamy dwa seanse: o osiemnastej i o dwudziestej pierwszej. Który pan woli?"
+    },
+    {
+     "speaker": "Klient",
+     "voice": "pl-PL-male",
+     "line": "Ten późniejszy. A czy jest wersja z napisami, czy z dubbingiem?"
+    },
+    {
+     "speaker": "Kasjerka",
+     "voice": "pl-PL-female",
+     "line": "Wieczorem tylko z napisami. Dubbing jest na wcześniejszym seansie."
+    },
+    {
+     "speaker": "Klient",
+     "voice": "pl-PL-male",
+     "line": "Napisy są dla nas lepsze, więc pasuje. Ile kosztują bilety?"
+    },
+    {
+     "speaker": "Kasjerka",
+     "voice": "pl-PL-female",
+     "line": "Normalny kosztuje trzydzieści dwa złote, a ulgowy dwadzieścia sześć. Ulgowy jest dla studentów i seniorów."
+    },
+    {
+     "speaker": "Klient",
+     "voice": "pl-PL-male",
+     "line": "Żona jest studentką, więc jeden normalny i jeden ulgowy. Gdzie są najlepsze miejsca?"
+    },
+    {
+     "speaker": "Kasjerka",
+     "voice": "pl-PL-female",
+     "line": "Najwygodniej siedzi się w środkowych rzędach. Mam wolne miejsca w siódmym rzędzie, dziesięć i jedenaście."
+    },
+    {
+     "speaker": "Klient",
+     "voice": "pl-PL-male",
+     "line": "Doskonale. Do kiedy muszę odebrać bilety?"
+    },
+    {
+     "speaker": "Kasjerka",
+     "voice": "pl-PL-female",
+     "line": "Najpóźniej pół godziny przed seansem. Rezerwacja jest na nazwisko. Jak się pan nazywa?"
+    },
+    {
+     "speaker": "Klient",
+     "voice": "pl-PL-male",
+     "line": "Kowalczuk. Dziękuję bardzo, do zobaczenia w sobotę."
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "front_title": "Co dziś oglądamy?",
+   "back_scenario": "Wieczór z przyjacielem. Ty chcesz obejrzeć dramat, a on — komedię. Macie czas tylko na jeden film.",
+   "back_checklist": [
+    "Porównaj oba filmy: co jest w nich lepsze, a co gorsze.",
+    "Użyj co najmniej trzech form stopnia wyższego albo najwyższego.",
+    "Zaproponuj kompromis.",
+    "Ustalcie, o której zaczynacie i co jecie."
+   ]
+  },
+  {
+   "id": "c3",
+   "front_title": "Podwójna opłata",
+   "back_scenario": "Platforma streamingowa pobrała z Twojej karty opłatę za abonament dwa razy w tym samym miesiącu. Dzwonisz na infolinię.",
+   "back_checklist": [
+    "Wyjaśnij, co się stało, i podaj daty obu płatności.",
+    "Poproś o zwrot pieniędzy za drugą opłatę.",
+    "Zapytaj, kiedy pieniądze wrócą na kartę.",
+    "Zapytaj, jak wyłączyć automatyczne odnawianie abonamentu.",
+    "Poproś o potwierdzenie mailem."
+   ]
+  },
+  {
+   "id": "c4",
+   "front_title": "Recenzja dla kolegi",
+   "back_scenario": "Kolega pyta, czy warto obejrzeć film, który widziałeś / widziałaś w zeszłym tygodniu. Nie zdradzaj zakończenia.",
+   "back_checklist": [
+    "Powiedz, jaki to gatunek i kto gra główną rolę.",
+    "Opowiedz fabułę w trzech zdaniach — bez zakończenia.",
+    "Porównaj film z innym, który kolega zna.",
+    "Powiedz, dla kogo ten film jest najlepszy, a komu się nie spodoba."
+   ]
+  }
+ ]
+}

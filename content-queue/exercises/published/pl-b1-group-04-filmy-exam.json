@@ -1,0 +1,110 @@
+{
+ "lesson_id": "pl-b1-group-04-filmy",
+ "exercise_type": "true-false",
+ "title": "Jak na egzaminie B1",
+ "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+ "estimated_minutes": 12,
+ "blocks": [
+  {
+   "block_id": "e1",
+   "exam_skill": "czytanie",
+   "exercise_type": "true-false",
+   "source": "section:1",
+   "title": "Czytanie: prawda czy fałsz?",
+   "instruction": "Przeczytaj jeszcze raz tekst „Ekran, który uczy — i który zabiera czas” i zdecyduj, czy zdanie jest prawdziwe.",
+   "items": [
+    {
+     "id": "e1-1",
+     "statement": "Według tekstu film historyczny bywa ciekawszy od podręcznika.",
+     "answer": true,
+     "explanation": "„Film historyczny bywa ciekawszy od podręcznika, bo historia ma w nim twarz i głos”."
+    },
+    {
+     "id": "e1-2",
+     "statement": "Autor radzi, żeby od pierwszego dnia oglądać seriale bez napisów.",
+     "answer": false,
+     "explanation": "Autor pisze, że na początku wygodniej są napisy w swoim języku, a skuteczniej — po polsku."
+    },
+    {
+     "id": "e1-3",
+     "statement": "„Ida” dostała Oscara w 2015 roku.",
+     "answer": true,
+     "explanation": "Film Pawła Pawlikowskiego dostał Oscara w 2015 roku."
+    },
+    {
+     "id": "e1-4",
+     "statement": "Andrzej Wajda dostał Oscara za film „Ida”.",
+     "answer": false,
+     "explanation": "Wajda dostał w 2000 roku Oscara za całokształt twórczości. „Ida” to film Pawlikowskiego."
+    },
+    {
+     "id": "e1-5",
+     "statement": "Platformy streamingowe chcą, żebyśmy oglądali jak najkrócej.",
+     "answer": false,
+     "explanation": "Są zaprojektowane tak, żebyśmy oglądali jak najdłużej."
+    },
+    {
+     "id": "e1-6",
+     "statement": "Autor uważa, że jeden dobry film tygodniowo daje więcej niż sześć odcinków słabego serialu.",
+     "answer": true,
+     "explanation": "„Jeden dobry film tygodniowo daje więcej niż sześć odcinków byle jakiego serialu”."
+    }
+   ]
+  },
+  {
+   "block_id": "e2",
+   "exam_skill": "sluchanie",
+   "exercise_type": "multiple-choice",
+   "source": "pl-b1-group-04-filmy-comm-tasks.json#c1.model_dialogue",
+   "max_plays": 2,
+   "title": "Słuchanie: rezerwacja biletów do kina",
+   "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+   "items": [
+    {
+     "id": "e2-1",
+     "question": "O której jest seans, który wybrał klient?",
+     "options": [
+      "o osiemnastej",
+      "o dwudziestej",
+      "o dwudziestej pierwszej"
+     ],
+     "answer": "o dwudziestej pierwszej",
+     "explanation": "Klient wybiera „ten późniejszy”, czyli seans o dwudziestej pierwszej."
+    },
+    {
+     "id": "e2-2",
+     "question": "W jakiej wersji obejrzą film?",
+     "options": [
+      "z napisami",
+      "z dubbingiem",
+      "z lektorem"
+     ],
+     "answer": "z napisami",
+     "explanation": "Wieczorem film jest tylko z napisami."
+    },
+    {
+     "id": "e2-3",
+     "question": "Ile klient zapłaci za dwa bilety?",
+     "options": [
+      "52 zł",
+      "58 zł",
+      "64 zł"
+     ],
+     "answer": "58 zł",
+     "explanation": "Jeden normalny (32 zł) i jeden ulgowy (26 zł) to 58 zł."
+    },
+    {
+     "id": "e2-4",
+     "question": "Do kiedy trzeba odebrać bilety?",
+     "options": [
+      "godzinę przed seansem",
+      "pół godziny przed seansem",
+      "w dniu rezerwacji"
+     ],
+     "answer": "pół godziny przed seansem",
+     "explanation": "„Najpóźniej pół godziny przed seansem”."
+    }
+   ]
+  }
+ ]
+}
