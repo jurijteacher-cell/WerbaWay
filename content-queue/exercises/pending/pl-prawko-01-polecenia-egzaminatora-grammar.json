@@ -1,0 +1,333 @@
+{
+ "lesson_id": "pl-prawko-01-polecenia-egzaminatora",
+ "exercise_type": "fill-in-blank",
+ "title": "Polecenia, zakazy i język testu",
+ "instruction": "Pięć bloków. Na lekcji robimy g2, g3 i g4; g1 i g5 — jeśli starczy czasu.",
+ "estimated_minutes": 12,
+ "blocks": [
+  {
+   "block_id": "g1",
+   "part": 1,
+   "covers_slides": [
+    "s4"
+   ],
+   "exercise_type": "matching",
+   "title": "1. Dobierz pary aspektowe",
+   "instruction": "Połącz formę niedokonaną z dokonaną.",
+   "items": [
+    {
+     "id": "g1-1",
+     "left": "skręcać",
+     "right": "skręcić",
+     "grammar_point": "aspekt-pary"
+    },
+    {
+     "id": "g1-2",
+     "left": "zawracać",
+     "right": "zawrócić",
+     "grammar_point": "aspekt-pary"
+    },
+    {
+     "id": "g1-3",
+     "left": "parkować",
+     "right": "zaparkować",
+     "grammar_point": "aspekt-pary"
+    },
+    {
+     "id": "g1-4",
+     "left": "włączać",
+     "right": "włączyć",
+     "grammar_point": "aspekt-pary"
+    },
+    {
+     "id": "g1-5",
+     "left": "ustępować",
+     "right": "ustąpić",
+     "grammar_point": "aspekt-pary"
+    },
+    {
+     "id": "g1-6",
+     "left": "zmieniać",
+     "right": "zmienić",
+     "grammar_point": "aspekt-pary"
+    }
+   ]
+  },
+  {
+   "block_id": "g2",
+   "part": 1,
+   "covers_slides": [
+    "s2",
+    "s3",
+    "s9"
+   ],
+   "exercise_type": "fill-in-blank",
+   "title": "2. Polecenie czy zakaz?",
+   "instruction": "Wybierz właściwą formę.",
+   "items": [
+    {
+     "id": "g2-1",
+     "text": "Na światłach proszę ___ w prawo.",
+     "options": [
+      "skręcać",
+      "skręcić"
+     ],
+     "answer": "skręcić",
+     "explanation": "Jedna konkretna czynność → dokonany.",
+     "grammar_point": "aspekt-polecenia"
+    },
+    {
+     "id": "g2-2",
+     "text": "Proszę nie ___ tego ciągnika, tu jest linia ciągła.",
+     "options": [
+      "wyprzedzać",
+      "wyprzedzić"
+     ],
+     "answer": "wyprzedzać",
+     "explanation": "Zakaz: nie + niedokonany.",
+     "grammar_point": "aspekt-polecenia"
+    },
+    {
+     "id": "g2-3",
+     "text": "Proszę ___ prosto aż do ronda.",
+     "options": [
+      "jechać",
+      "pojechać"
+     ],
+     "answer": "jechać",
+     "explanation": "Ruch ciągły na odcinku drogi → niedokonany.",
+     "grammar_point": "aspekt-polecenia"
+    },
+    {
+     "id": "g2-4",
+     "text": "Za przystankiem proszę ___ się przy prawej krawędzi.",
+     "options": [
+      "zatrzymywać",
+      "zatrzymać"
+     ],
+     "answer": "zatrzymać",
+     "explanation": "Jedna czynność z końcem → dokonany.",
+     "grammar_point": "aspekt-polecenia"
+    },
+    {
+     "id": "g2-5",
+     "text": "Proszę jeszcze nie ___ kierunkowskazu, skręcamy dopiero za mostem.",
+     "options": [
+      "włączać",
+      "włączyć"
+     ],
+     "answer": "włączać",
+     "explanation": "Zakaz: nie + niedokonany.",
+     "grammar_point": "aspekt-polecenia"
+    },
+    {
+     "id": "g2-6",
+     "text": "Proszę ___ tyłem na tym miejscu.",
+     "options": [
+      "parkować",
+      "zaparkować"
+     ],
+     "answer": "zaparkować",
+     "explanation": "Jeden manewr do końca → dokonany.",
+     "grammar_point": "aspekt-polecenia"
+    }
+   ]
+  },
+  {
+   "block_id": "g3",
+   "part": 1,
+   "covers_slides": [
+    "s5",
+    "s8"
+   ],
+   "exercise_type": "fill-in-blank",
+   "title": "3. Gdzie wykonać polecenie?",
+   "instruction": "Wpisz słowo z nawiasu we właściwej formie.",
+   "items": [
+    {
+     "id": "g3-1",
+     "text": "Na najbliższym ___ (skrzyżowanie) proszę skręcić w lewo.",
+     "answer": "skrzyżowaniu",
+     "grammar_point": "przyimki-miejsce"
+    },
+    {
+     "id": "g3-2",
+     "text": "Za ___ (światła) proszę zmienić pas na prawy.",
+     "answer": "światłami",
+     "grammar_point": "przyimki-miejsce"
+    },
+    {
+     "id": "g3-3",
+     "text": "Przed ___ (przejście) dla pieszych proszę zwolnić.",
+     "answer": "przejściem",
+     "grammar_point": "przyimki-miejsce"
+    },
+    {
+     "id": "g3-4",
+     "text": "Proszę zjechać z ronda ___ (drugi zjazd).",
+     "answer": "drugim zjazdem",
+     "grammar_point": "przyimki-miejsce"
+    },
+    {
+     "id": "g3-5",
+     "text": "Proszę jechać prosto do ___ (koniec) ulicy.",
+     "answer": "końca",
+     "grammar_point": "przyimki-miejsce"
+    },
+    {
+     "id": "g3-6",
+     "text": "Proszę zatrzymać się przy prawej ___ (krawędź) jezdni.",
+     "answer": "krawędzi",
+     "grammar_point": "przyimki-miejsce"
+    }
+   ]
+  },
+  {
+   "block_id": "g4",
+   "part": 1,
+   "covers_slides": [
+    "s6",
+    "s7"
+   ],
+   "exercise_type": "fill-in-blank",
+   "title": "4. Język testu",
+   "instruction": "Wybierz słowo, które pasuje do pytania z testu.",
+   "items": [
+    {
+     "id": "g4-1",
+     "text": "Czy w tej sytuacji ___ obowiązek zatrzymać się?",
+     "options": [
+      "masz",
+      "jesteś"
+     ],
+     "answer": "masz",
+     "explanation": "Mieć obowiązek: masz obowiązek.",
+     "grammar_point": "modalne-test"
+    },
+    {
+     "id": "g4-2",
+     "text": "Na autostradzie nie ___ zawracać.",
+     "options": [
+      "wolno",
+      "musisz"
+     ],
+     "answer": "wolno",
+     "explanation": "Zakaz: nie wolno + bezokolicznik.",
+     "grammar_point": "modalne-test"
+    },
+    {
+     "id": "g4-3",
+     "text": "W tej sytuacji ___ ustąpić pierwszeństwa pieszemu.",
+     "options": [
+      "należy",
+      "wolno"
+     ],
+     "answer": "należy",
+     "explanation": "Obowiązek: należy + bezokolicznik.",
+     "grammar_point": "modalne-test"
+    },
+    {
+     "id": "g4-4",
+     "text": "Czy w tej sytuacji ___ prawo skręcić w lewo?",
+     "options": [
+      "masz",
+      "możesz"
+     ],
+     "answer": "masz",
+     "explanation": "Mieć prawo: masz prawo, a nie „możesz prawo”.",
+     "grammar_point": "modalne-test"
+    },
+    {
+     "id": "g4-5",
+     "text": "Czy w tej sytuacji ___ zwolnić?",
+     "options": [
+      "powinieneś",
+      "powinien"
+     ],
+     "answer": "powinieneś",
+     "explanation": "Test mówi do Ciebie na „Ty”: powinieneś.",
+     "grammar_point": "modalne-test"
+    }
+   ]
+  },
+  {
+   "block_id": "g5",
+   "part": 1,
+   "covers_slides": [
+    "s10",
+    "s11"
+   ],
+   "exercise_type": "fill-in-blank",
+   "title": "5. Pułapki z ukraińskiego",
+   "instruction": "Wybierz formę, którą powie Polak.",
+   "items": [
+    {
+     "id": "g5-1",
+     "text": "Na drugim skrzyżowaniu proszę ___ w lewo.",
+     "options": [
+      "powrócić",
+      "skręcić"
+     ],
+     "answer": "skręcić",
+     "explanation": "Powrócić = wrócić. Zmiana kierunku to skręcić.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g5-2",
+     "text": "Tu jest ślepa ulica, proszę ___.",
+     "options": [
+      "zawrócić",
+      "się rozwrócić"
+     ],
+     "answer": "zawrócić",
+     "explanation": "Zawrócić, bez „się”.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g5-3",
+     "text": "Od wczoraj mam ___!",
+     "options": [
+      "prawa",
+      "prawo jazdy"
+     ],
+     "answer": "prawo jazdy",
+     "explanation": "Dokument to prawo jazdy. „Prawa” to prawa człowieka.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g5-4",
+     "text": "Piesi przechodzą przez jezdnię na ___ dla pieszych.",
+     "options": [
+      "przejściu",
+      "skrzyżowaniu"
+     ],
+     "answer": "przejściu",
+     "explanation": "Miejsce dla pieszych to przejście. Skrzyżowanie to miejsce, gdzie krzyżują się drogi.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g5-5",
+     "text": "Trzy razy ___ egzamin, zanim w końcu zdałem.",
+     "options": [
+      "zdawałem",
+      "zdałem"
+     ],
+     "answer": "zdawałem",
+     "explanation": "Zdawać = podchodzić do egzaminu; zdać = mieć pozytywny wynik.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g5-6",
+     "text": "Proszę nie ___ na pasie dla autobusów.",
+     "options": [
+      "zatrzymać się",
+      "zatrzymywać się"
+     ],
+     "answer": "zatrzymywać się",
+     "explanation": "Zakaz: nie + niedokonany.",
+     "grammar_point": "kalki-uk"
+    }
+   ]
+  }
+ ]
+}

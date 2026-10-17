@@ -1,0 +1,96 @@
+{
+ "lesson_id": "pl-prawko-01-polecenia-egzaminatora",
+ "exercise_type": "flip-task",
+ "title": "Zadania komunikacyjne: egzamin i zapis w WORD",
+ "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę.",
+ "estimated_minutes": 14,
+ "items": [
+  {
+   "id": "c1",
+   "mode": "listen-then-play",
+   "front_title": "Egzamin w ruchu drogowym",
+   "back_scenario": "Jesteś na egzaminie praktycznym. Egzaminator daje polecenia. Najpierw posłuchaj przykładowej rozmowy. Potem nauczyciel jest egzaminatorem, a Ty „jedziesz” palcem po mapie miasta i mówisz, co robisz.",
+   "back_checklist": [
+    "Po każdym poleceniu powiedz, co robisz, np. „Skręcam w prawo”.",
+    "Jeśli nie rozumiesz, grzecznie poproś o powtórzenie.",
+    "Upewnij się, na którym skrzyżowaniu skręcić i którym zjazdem zjechać z ronda.",
+    "Na końcu zapytaj, gdzie masz zaparkować i co będzie dalej."
+   ],
+   "model_dialogue": [
+    {
+     "speaker": "Egzaminator",
+     "voice": "pl-PL-male",
+     "line": "Dzień dobry. Wyjeżdżamy z placu. Na wyjeździe proszę skręcić w prawo."
+    },
+    {
+     "speaker": "Iryna",
+     "voice": "pl-PL-female",
+     "line": "Dobrze, skręcam w prawo."
+    },
+    {
+     "speaker": "Egzaminator",
+     "voice": "pl-PL-male",
+     "line": "Proszę jechać prosto. Na drugim skrzyżowaniu proszę skręcić w lewo."
+    },
+    {
+     "speaker": "Iryna",
+     "voice": "pl-PL-female",
+     "line": "Przepraszam, na drugim czy na najbliższym?"
+    },
+    {
+     "speaker": "Egzaminator",
+     "voice": "pl-PL-male",
+     "line": "Na drugim. Najbliższe skrzyżowanie mijamy."
+    },
+    {
+     "speaker": "Iryna",
+     "voice": "pl-PL-female",
+     "line": "Rozumiem. Na drugim w lewo."
+    },
+    {
+     "speaker": "Egzaminator",
+     "voice": "pl-PL-male",
+     "line": "Na rondzie proszę zjechać trzecim zjazdem, w kierunku centrum."
+    },
+    {
+     "speaker": "Iryna",
+     "voice": "pl-PL-female",
+     "line": "Przepraszam, czy może Pan powtórzyć? Którym zjazdem?"
+    },
+    {
+     "speaker": "Egzaminator",
+     "voice": "pl-PL-male",
+     "line": "Trzecim. W kierunku centrum."
+    },
+    {
+     "speaker": "Iryna",
+     "voice": "pl-PL-female",
+     "line": "Dziękuję. Zjeżdżam trzecim zjazdem."
+    },
+    {
+     "speaker": "Egzaminator",
+     "voice": "pl-PL-male",
+     "line": "Za przystankiem proszę zatrzymać się przy prawej krawędzi jezdni. Potem proszę zawrócić."
+    },
+    {
+     "speaker": "Iryna",
+     "voice": "pl-PL-female",
+     "line": "Dobrze. Zatrzymuję się za przystankiem, a potem zawracam."
+    }
+   ],
+   "audio_url": "/audio/pl-prawko-01-c1-dialog.mp3"
+  },
+  {
+   "id": "c2",
+   "mode": "play",
+   "front_title": "Zapis na egzamin w WORD",
+   "back_scenario": "Jesteś w punkcie obsługi klienta w WORD. Chcesz zapisać się na egzamin teoretyczny na kategorię B. Pracownica zadaje pytania i sprawdza Twoje dane.",
+   "back_checklist": [
+    "Powiedz, na jaki egzamin i na jaką kategorię chcesz się zapisać.",
+    "Podaj numer PKK (profil kandydata na kierowcę) i pokaż dokument tożsamości.",
+    "Zapytaj o najbliższy wolny termin i ustal dogodny dzień i godzinę.",
+    "Zapytaj, ile kosztuje egzamin i w jakim języku można go zdawać."
+   ]
+  }
+ ]
+}
