@@ -1,0 +1,110 @@
+{
+ "lesson_id": "pl-b1-group-05-pasje",
+ "exercise_type": "true-false",
+ "title": "Jak na egzaminie B1",
+ "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+ "estimated_minutes": 12,
+ "blocks": [
+  {
+   "block_id": "e1",
+   "exam_skill": "czytanie",
+   "exercise_type": "true-false",
+   "source": "section:1",
+   "title": "Czytanie: prawda czy fałsz?",
+   "instruction": "Przeczytaj jeszcze raz tekst „Pasja po godzinach” i zdecyduj, czy zdanie jest prawdziwe.",
+   "items": [
+    {
+     "id": "e1-1",
+     "statement": "Marta przez dziesięć lat chodziła na zajęcia z ceramiki.",
+     "answer": false,
+     "explanation": "Przez dziesięć lat oglądała seriale. Na ceramikę chodzi od dwóch lat."
+    },
+    {
+     "id": "e1-2",
+     "statement": "Na pierwszych zajęciach Marta zepsuła trzy miski.",
+     "answer": true,
+     "explanation": "„Na pierwszych zajęciach zepsułam trzy miski”."
+    },
+    {
+     "id": "e1-3",
+     "statement": "Tomasz kupił gotowy strój w sklepie.",
+     "answer": false,
+     "explanation": "„Strój szyłem sam przez pół roku”."
+    },
+    {
+     "id": "e1-4",
+     "statement": "W 2026 roku w inscenizacji wzięło udział około półtora tysiąca rekonstruktorów.",
+     "answer": true,
+     "explanation": "Tak mówi tekst: około półtora tysiąca rekonstruktorów."
+    },
+    {
+     "id": "e1-5",
+     "statement": "Sokolnictwo zniknęło w Polsce w latach siedemdziesiątych XX wieku.",
+     "answer": false,
+     "explanation": "W latach siedemdziesiątych pasjonaci je odrodzili. Prawie zniknęło w XIX wieku."
+    },
+    {
+     "id": "e1-6",
+     "statement": "Dziś sokolnicy pracują także na lotniskach.",
+     "answer": true,
+     "explanation": "Ich ptaki odstraszają inne ptaki, które mogłyby uszkodzić samolot."
+    }
+   ]
+  },
+  {
+   "block_id": "e2",
+   "exam_skill": "sluchanie",
+   "exercise_type": "multiple-choice",
+   "source": "pl-b1-group-05-pasje-comm-tasks.json#c1.model_dialogue",
+   "max_plays": 2,
+   "title": "Słuchanie: zapisy na kurs ceramiki",
+   "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+   "items": [
+    {
+     "id": "e2-1",
+     "question": "Kiedy klientka chce chodzić na zajęcia?",
+     "options": [
+      "we wtorki o osiemnastej",
+      "w soboty o dziesiątej",
+      "w soboty o osiemnastej"
+     ],
+     "answer": "w soboty o dziesiątej",
+     "explanation": "W tygodniu pracuje do późna, więc wybiera sobotę o dziesiątej."
+    },
+    {
+     "id": "e2-2",
+     "question": "Ile kosztuje cały kurs?",
+     "options": [
+      "80 zł",
+      "520 zł",
+      "600 zł"
+     ],
+     "answer": "600 zł",
+     "explanation": "„Cały kurs kosztuje sześćset złotych”, glina i szkliwo są w cenie."
+    },
+    {
+     "id": "e2-3",
+     "question": "Co klientka musi przynieść?",
+     "options": [
+      "fartuch",
+      "wygodne ubranie",
+      "własną glinę"
+     ],
+     "answer": "wygodne ubranie",
+     "explanation": "Fartuchy są na miejscu, wystarczy wygodne ubranie."
+    },
+    {
+     "id": "e2-4",
+     "question": "Kiedy można odebrać prace?",
+     "options": [
+      "od razu po zajęciach",
+      "po tygodniu",
+      "mniej więcej po dwóch tygodniach"
+     ],
+     "answer": "mniej więcej po dwóch tygodniach",
+     "explanation": "Prace trzeba wypalić w piecu — to trwa około dwóch tygodni."
+    }
+   ]
+  }
+ ]
+}
