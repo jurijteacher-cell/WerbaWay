@@ -40,6 +40,9 @@ If the lesson `.md` has a `[QUIZLET: set_id="…", url="…"]` marker, or `-voca
 - Do NOT publish `/embed/{lesson_id}/vocab` and do NOT generate vocab TTS.
 - In Notion, section «2. Słownictwo» gets the Quizlet set as a real embed block: `<embed src="https://quizlet.com/{set_id}/flashcards/embed">Słownictwo — Quizlet</embed>`.
 - Never create or edit Quizlet sets yourself. Full rules: `docs/SPEC_PATCH_v3.6.md`.
+- STILL copy `{id}-vocab.json` to `src/content/queue-published/` together with comm-tasks, grammar, hw, slides. Without it `getQueueBundle` returns null and EVERY embed of the lesson is 404.
+- Publish the Notion page only after the Vercel deploy is live and each embed URL returns 200; otherwise Notion stores a "Click to view content" placeholder instead of the embed.
+- No TTS/audio for new lessons: `c1` is `read-then-play`.
 
 Self-check before marking published: no `[Otwórz ...](` in page content; no `/embed/{lesson_id}/vocab` on Quizlet lessons. Images must be `![Caption](URL)`, not text links. Grammar as Notion `<table>` block. Videos as `<video src="URL">Caption</video>`, never markdown links.
 
