@@ -1,0 +1,319 @@
+{
+ "lesson_id": "pl-prawko-02-znaki-i-pierwszenstwo",
+ "exercise_type": "grammar-slides",
+ "title": "Zakaz czego? Nazwy znaków i pierwszeństwo",
+ "slides": [
+  {
+   "id": "s1",
+   "part": 1,
+   "section": "teoria",
+   "kind": "title",
+   "title": "Zakaz czego? Znaki i pierwszeństwo",
+   "subtitle": "Jak przeczytać nazwę znaku i kto jedzie pierwszy?",
+   "goal": "Po tej części: nazwiesz znak pełną nazwą i wyjaśnisz zasadę pierwszeństwa.",
+   "teacher_note": "Спитай: «Як по-українськи називається знак з перекресленою машиною? А по-польськи?» Більшість назв знаків — це «zakaz + іменник у родовому». Це і є граматика уроку."
+  },
+  {
+   "id": "s2",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Cztery grupy znaków",
+   "columns": [
+    "grupa",
+    "kształt i kolor",
+    "przykład"
+   ],
+   "rows": [
+    [
+     "A — [[ostrzegawcze]]",
+     "trójkąt, żółte tło",
+     "niebezpieczny zakręt"
+    ],
+    [
+     "B — [[zakazu]]",
+     "koło, czerwona obwódka",
+     "zakaz wyprzedzania"
+    ],
+    [
+     "C — [[nakazu]]",
+     "koło, niebieskie tło",
+     "nakaz jazdy w prawo"
+    ],
+    [
+     "D — [[informacyjne]]",
+     "prostokąt, niebieskie tło",
+     "przejście dla pieszych"
+    ]
+   ],
+   "note": "Uwaga na dwa znaki: „ustąp pierwszeństwa” to odwrócony trójkąt, a STOP — ośmiokąt.",
+   "teacher_note": "Нехай учень на кожен рядок назве один знак, який бачив у Польщі чи в Україні. Форми трикутника й восьмикутника пояснюємо як «щоб упізнати навіть ззаду»."
+  },
+  {
+   "id": "s3",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Czasownik → rzeczownik",
+   "columns": [
+    "czasownik (ndk)",
+    "rzeczownik"
+   ],
+   "rows": [
+    [
+     "wyprzedzać",
+     "wyprzedz[[anie]]"
+    ],
+    [
+     "zawracać",
+     "zawrac[[anie]]"
+    ],
+    [
+     "skręcać",
+     "skręc[[anie]]"
+    ],
+    [
+     "parkować",
+     "parkow[[anie]]"
+    ],
+    [
+     "zatrzymywać się",
+     "zatrzymyw[[anie]] się"
+    ]
+   ],
+   "note": "Rzeczownik robimy zwykle od czasownika niedokonanego; „się” zostaje.",
+   "teacher_note": "Українською так само: обганяти → обгін, але польська частіше дає -anie/-enie. Попроси утворити ще два: hamować → hamowanie, cofać → cofanie."
+  },
+  {
+   "id": "s4",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Zakaz czego? Nakaz czego? → dopełniacz",
+   "columns": [
+    "mianownik",
+    "na znaku"
+   ],
+   "rows": [
+    [
+     "wyprzedzanie",
+     "zakaz wyprzedz[[ania]]"
+    ],
+    [
+     "zawracanie",
+     "zakaz zawrac[[ania]]"
+    ],
+    [
+     "zatrzymywanie się",
+     "zakaz zatrzymyw[[ania]] się"
+    ],
+    [
+     "skręcanie w lewo",
+     "zakaz skręc[[ania]] w lewo"
+    ],
+    [
+     "jazda w prawo",
+     "nakaz jazd[[y]] w prawo"
+    ]
+   ],
+   "note": "-anie → -ania, -enie → -enia, jazda → jazdy.",
+   "teacher_note": "Після zakaz / nakaz — завжди родовий. Це ж працює поза дорогою: zakaz palenia, zakaz fotografowania."
+  },
+  {
+   "id": "s5",
+   "part": 1,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Znak czy polecenie egzaminatora?",
+   "left": {
+    "head": "znak: rzeczownik od ndk",
+    "rule": "zasada dla każdego, zawsze",
+    "examples": [
+     "Zakaz [[wyprzedzania]].",
+     "Zakaz [[zawracania]]."
+    ]
+   },
+   "right": {
+    "head": "egzaminator: bezokolicznik dk",
+    "rule": "jedna czynność teraz",
+    "examples": [
+     "Proszę [[wyprzedzić]] ten rower.",
+     "Proszę [[zawrócić]] za mostem."
+    ]
+   },
+   "note": "Lekcja 1 + lekcja 2: znak mówi o zasadzie, egzaminator — o jednej czynności.",
+   "teacher_note": "Місток до уроку 1: учень уже знає «Proszę zawrócić». Тепер та сама дія як назва знака: «zakaz zawracania»."
+  },
+  {
+   "id": "s6",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Kto ma pierwszeństwo?",
+   "columns": [
+    "sytuacja",
+    "pierwszeństwo ma"
+   ],
+   "rows": [
+    [
+     "skrzyżowanie równorzędne",
+     "pojazd z [[prawej]]"
+    ],
+    [
+     "tramwaj na równorzędnym",
+     "[[tramwaj]], z każdej strony"
+    ],
+    [
+     "droga z pierwszeństwem",
+     "pojazd na [[drodze z pierwszeństwem]]"
+    ],
+    [
+     "pieszy wchodzący na przejście",
+     "[[pieszy]]"
+    ],
+    [
+     "karetka z sygnałem",
+     "[[pojazd uprzywilejowany]]"
+    ]
+   ],
+   "note": "Znaki i światła są ważniejsze niż zasada prawej ręki.",
+   "teacher_note": "Пішохід, що ступає на перехід, має перевагу з 1.06.2021 (art. 13 ust. 1a, art. 26 PoRD). Трамвай на рівнозначному перехресті — art. 25. Не заглиблюйся в світлофори — це наступні уроки."
+  },
+  {
+   "id": "s7",
+   "part": 1,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Tak pytają w teście",
+   "items": [
+    {
+     "tag": "znak",
+     "pl": "Czy ten znak oznacza [[zakaz zatrzymywania się]]? — TAK / NIE",
+     "uk": "Чи цей знак означає «зупинку заборонено»? — ТАК / НІ"
+    },
+    {
+     "tag": "pierwszeństwo",
+     "pl": "Czy w tej sytuacji masz obowiązek [[ustąpić pierwszeństwa]] tramwajowi? — TAK / NIE",
+     "uk": "Чи зобов'язаний ти в цій ситуації поступитися дорогою трамваю? — ТАК / НІ"
+    },
+    {
+     "tag": "pieszy",
+     "pl": "Czy powinieneś się zatrzymać, gdy pieszy [[wchodzi]] na przejście? — TAK / NIE",
+     "uk": "Чи слід тобі зупинитися, коли пішохід ступає на перехід? — ТАК / НІ"
+    }
+   ],
+   "teacher_note": "Відповіді: 1 — залежить від картинки (питай, як виглядає знак); 2 — так, на рівнозначному перехресті; 3 — так. Повтори конструкції з уроку 1: masz obowiązek, powinieneś."
+  },
+  {
+   "id": "s8",
+   "part": 1,
+   "section": "teoria",
+   "kind": "steps",
+   "title": "Formuła: nazwa znaku",
+   "steps": [
+    {
+     "label": "co?",
+     "text": "Ten znak"
+    },
+    {
+     "label": "czasownik",
+     "text": "oznacza"
+    },
+    {
+     "label": "zakaz / nakaz",
+     "text": "zakaz"
+    },
+    {
+     "label": "czego? (dopełniacz)",
+     "text": "zatrzymywania się."
+    }
+   ],
+   "result": "Ten znak oznacza zakaz [[zatrzymywania się]].",
+   "teacher_note": "Показуй знаки на телефоні (пошук «znaki drogowe B»), учень відповідає за формулою."
+  },
+  {
+   "id": "s9",
+   "part": 1,
+   "section": "wyjatki",
+   "kind": "exceptions",
+   "refers_to": "s3",
+   "title": "Nazwy znaków bez -anie",
+   "items": [
+    {
+     "rule": "wjechać → wjazd",
+     "example": "zakaz [[wjazdu]] (nie: zakaz wjeżdżania)"
+    },
+    {
+     "rule": "stać długo → postój",
+     "example": "zakaz [[postoju]]"
+    },
+    {
+     "rule": "ruch",
+     "example": "zakaz [[ruchu]] w obu kierunkach"
+    }
+   ],
+   "note": "Te nazwy trzeba zapamiętać razem z dopełniaczem.",
+   "teacher_note": "Zakaz postoju ≠ zakaz zatrzymywania się: під першим можна зупинитися на хвилину, під другим — ні. Це часте питання тесту."
+  },
+  {
+   "id": "s10",
+   "part": 1,
+   "section": "pulapki",
+   "kind": "traps",
+   "title": "Pułapki z ukraińskiego (1)",
+   "items": [
+    {
+     "uk": "Обгін заборонено.",
+     "wrong": "Zakaz obgonu.",
+     "right": "Zakaz [[wyprzedzania]].",
+     "why": "Обганяти = wyprzedzać. „Obgon” po polsku nie istnieje."
+    },
+    {
+     "uk": "Зупинку заборонено.",
+     "wrong": "Zakaz zatrzymania.",
+     "right": "Zakaz [[zatrzymywania się]].",
+     "why": "Na znaku forma niedokonana i „się”."
+    },
+    {
+     "uk": "Поступіться дорогою.",
+     "wrong": "Ustąp drogi.",
+     "right": "Ustąp [[pierwszeństwa]].",
+     "why": "W przepisach i w teście mówimy o pierwszeństwie."
+    }
+   ],
+   "teacher_note": "«Ustąpić drogi» в розмовній мові трапляється, але в тесті й на знаку — тільки pierwszeństwa."
+  },
+  {
+   "id": "s11",
+   "part": 1,
+   "section": "pulapki",
+   "kind": "traps",
+   "title": "Pułapki z ukraińskiego (2)",
+   "items": [
+    {
+     "uk": "рівнозначне перехрестя",
+     "wrong": "skrzyżowanie równoznaczne",
+     "right": "skrzyżowanie [[równorzędne]]",
+     "why": "Równoznaczny = те саме значення. Drogi są równorzędne."
+    },
+    {
+     "uk": "головна дорога",
+     "wrong": "główna droga",
+     "right": "droga [[z pierwszeństwem]]",
+     "why": "Tak nazywa się znak i tak pyta test."
+    },
+    {
+     "uk": "Я отримав штраф.",
+     "wrong": "Dostałem sztraf.",
+     "right": "Dostałem [[mandat]].",
+     "why": "Kara od policji to mandat."
+    }
+   ],
+   "teacher_note": "«Główna droga» поляки кажуть у розмові, але в тесті шукай «droga z pierwszeństwem»."
+  }
+ ]
+}

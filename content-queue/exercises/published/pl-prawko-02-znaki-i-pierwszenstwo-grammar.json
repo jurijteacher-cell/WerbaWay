@@ -1,0 +1,333 @@
+{
+ "lesson_id": "pl-prawko-02-znaki-i-pierwszenstwo",
+ "exercise_type": "fill-in-blank",
+ "title": "Nazwy znaków i pierwszeństwo",
+ "instruction": "Pięć bloków. Na lekcji robimy g2, g4 i g5; g1 i g3 — jeśli starczy czasu.",
+ "estimated_minutes": 12,
+ "blocks": [
+  {
+   "block_id": "g1",
+   "part": 1,
+   "covers_slides": [
+    "s2",
+    "s3"
+   ],
+   "exercise_type": "matching",
+   "title": "1. Czasownik i rzeczownik",
+   "instruction": "Połącz czasownik z rzeczownikiem.",
+   "items": [
+    {
+     "id": "g1-1",
+     "left": "wyprzedzać",
+     "right": "wyprzedzanie",
+     "grammar_point": "rzeczowniki-odczasownikowe"
+    },
+    {
+     "id": "g1-2",
+     "left": "zawracać",
+     "right": "zawracanie",
+     "grammar_point": "rzeczowniki-odczasownikowe"
+    },
+    {
+     "id": "g1-3",
+     "left": "skręcać",
+     "right": "skręcanie",
+     "grammar_point": "rzeczowniki-odczasownikowe"
+    },
+    {
+     "id": "g1-4",
+     "left": "parkować",
+     "right": "parkowanie",
+     "grammar_point": "rzeczowniki-odczasownikowe"
+    },
+    {
+     "id": "g1-5",
+     "left": "hamować",
+     "right": "hamowanie",
+     "grammar_point": "rzeczowniki-odczasownikowe"
+    },
+    {
+     "id": "g1-6",
+     "left": "zatrzymywać się",
+     "right": "zatrzymywanie się",
+     "grammar_point": "rzeczowniki-odczasownikowe"
+    }
+   ]
+  },
+  {
+   "block_id": "g2",
+   "part": 1,
+   "covers_slides": [
+    "s4",
+    "s8",
+    "s9"
+   ],
+   "exercise_type": "fill-in-blank",
+   "title": "2. Zakaz czego?",
+   "instruction": "Wpisz słowo z nawiasu w dopełniaczu.",
+   "items": [
+    {
+     "id": "g2-1",
+     "text": "Na moście stoi znak „zakaz ___” (wyprzedzanie).",
+     "answer": "wyprzedzania",
+     "grammar_point": "zakaz-dopelniacz"
+    },
+    {
+     "id": "g2-2",
+     "text": "Pod szpitalem obowiązuje zakaz ___ (zatrzymywanie się).",
+     "answer": "zatrzymywania się",
+     "grammar_point": "zakaz-dopelniacz"
+    },
+    {
+     "id": "g2-3",
+     "text": "Na tej ulicy jest zakaz ___ (wjazd), bo to strefa pieszych.",
+     "answer": "wjazdu",
+     "grammar_point": "zakaz-dopelniacz"
+    },
+    {
+     "id": "g2-4",
+     "text": "Przy bramie wisi znak „zakaz ___” (postój).",
+     "answer": "postoju",
+     "grammar_point": "zakaz-dopelniacz"
+    },
+    {
+     "id": "g2-5",
+     "text": "Na skrzyżowaniu jest zakaz ___ (skręcanie) w lewo.",
+     "answer": "skręcania",
+     "grammar_point": "zakaz-dopelniacz"
+    },
+    {
+     "id": "g2-6",
+     "text": "Za rondem stoi nakaz ___ (jazda) prosto.",
+     "answer": "jazdy",
+     "grammar_point": "zakaz-dopelniacz"
+    }
+   ]
+  },
+  {
+   "block_id": "g3",
+   "part": 1,
+   "covers_slides": [
+    "s5"
+   ],
+   "exercise_type": "fill-in-blank",
+   "title": "3. Znak czy egzaminator?",
+   "instruction": "Wybierz właściwą formę.",
+   "items": [
+    {
+     "id": "g3-1",
+     "text": "Na tym odcinku obowiązuje zakaz ___.",
+     "options": [
+      "wyprzedzania",
+      "wyprzedzenia"
+     ],
+     "answer": "wyprzedzania",
+     "explanation": "Nazwa znaku: rzeczownik od niedokonanego.",
+     "grammar_point": "aspekt-rzeczownik"
+    },
+    {
+     "id": "g3-2",
+     "text": "Za przejściem proszę ___ ten autobus.",
+     "options": [
+      "wyprzedzać",
+      "wyprzedzić"
+     ],
+     "answer": "wyprzedzić",
+     "explanation": "Polecenie, jedna czynność → dokonany.",
+     "grammar_point": "aspekt-rzeczownik"
+    },
+    {
+     "id": "g3-3",
+     "text": "Tu jest zakaz ___, więc pojedziemy do ronda.",
+     "options": [
+      "zawracania",
+      "zawrócenia"
+     ],
+     "answer": "zawracania",
+     "explanation": "Nazwa znaku: -anie od niedokonanego.",
+     "grammar_point": "aspekt-rzeczownik"
+    },
+    {
+     "id": "g3-4",
+     "text": "Proszę ___ na najbliższym skrzyżowaniu.",
+     "options": [
+      "zawracać",
+      "zawrócić"
+     ],
+     "answer": "zawrócić",
+     "explanation": "Polecenie egzaminatora → dokonany.",
+     "grammar_point": "aspekt-rzeczownik"
+    },
+    {
+     "id": "g3-5",
+     "text": "Ten znak oznacza zakaz ___ w lewo.",
+     "options": [
+      "skręcania",
+      "skręcenia"
+     ],
+     "answer": "skręcania",
+     "explanation": "Nazwa znaku: niedokonany.",
+     "grammar_point": "aspekt-rzeczownik"
+    }
+   ]
+  },
+  {
+   "block_id": "g4",
+   "part": 1,
+   "covers_slides": [
+    "s6",
+    "s7"
+   ],
+   "exercise_type": "fill-in-blank",
+   "title": "4. Kto jedzie pierwszy?",
+   "instruction": "Wybierz, kto ma pierwszeństwo.",
+   "items": [
+    {
+     "id": "g4-1",
+     "text": "Skrzyżowanie równorzędne. Z prawej jedzie motocykl. Pierwszeństwo ma ___.",
+     "options": [
+      "motocykl",
+      "mój samochód"
+     ],
+     "answer": "motocykl",
+     "explanation": "Zasada prawej ręki.",
+     "grammar_point": "pierwszenstwo-test"
+    },
+    {
+     "id": "g4-2",
+     "text": "Skrzyżowanie równorzędne. Z lewej jedzie tramwaj. Pierwszeństwo ma ___.",
+     "options": [
+      "tramwaj",
+      "mój samochód"
+     ],
+     "answer": "tramwaj",
+     "explanation": "Tramwaj na równorzędnym ma pierwszeństwo z każdej strony.",
+     "grammar_point": "pierwszenstwo-test"
+    },
+    {
+     "id": "g4-3",
+     "text": "Jadę drogą z pierwszeństwem. Z drogi podporządkowanej wyjeżdża bus. Pierwszeństwo ma ___.",
+     "options": [
+      "bus",
+      "mój samochód"
+     ],
+     "answer": "mój samochód",
+     "explanation": "Droga z pierwszeństwem jest ważniejsza niż zasada prawej ręki.",
+     "grammar_point": "pierwszenstwo-test"
+    },
+    {
+     "id": "g4-4",
+     "text": "Pani z psem stoi przy krawężniku i wchodzi na przejście. Pierwszeństwo ma ___.",
+     "options": [
+      "pani z psem",
+      "mój samochód"
+     ],
+     "answer": "pani z psem",
+     "explanation": "Pieszy wchodzący na przejście ma pierwszeństwo.",
+     "grammar_point": "pierwszenstwo-test"
+    },
+    {
+     "id": "g4-5",
+     "text": "Z tyłu jedzie karetka z syreną i światłami. Pierwszeństwo ma ___.",
+     "options": [
+      "karetka",
+      "mój samochód"
+     ],
+     "answer": "karetka",
+     "explanation": "To pojazd uprzywilejowany.",
+     "grammar_point": "pierwszenstwo-test"
+    },
+    {
+     "id": "g4-6",
+     "text": "Wjeżdżam na rondo ze znakiem „ustąp pierwszeństwa”. Pierwszeństwo ma ___.",
+     "options": [
+      "samochód na rondzie",
+      "mój samochód"
+     ],
+     "answer": "samochód na rondzie",
+     "explanation": "Znak każe ustąpić pierwszeństwa.",
+     "grammar_point": "pierwszenstwo-test"
+    }
+   ]
+  },
+  {
+   "block_id": "g5",
+   "part": 1,
+   "covers_slides": [
+    "s10",
+    "s11"
+   ],
+   "exercise_type": "fill-in-blank",
+   "title": "5. Pułapki z ukraińskiego",
+   "instruction": "Wybierz formę, którą powie Polak.",
+   "items": [
+    {
+     "id": "g5-1",
+     "text": "Na tym zakręcie obowiązuje zakaz ___.",
+     "options": [
+      "obgonu",
+      "wyprzedzania"
+     ],
+     "answer": "wyprzedzania",
+     "explanation": "Obganiać = wyprzedzać.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g5-2",
+     "text": "Przed rondem stoi znak „ustąp ___”.",
+     "options": [
+      "drogi",
+      "pierwszeństwa"
+     ],
+     "answer": "pierwszeństwa",
+     "explanation": "Nazwa znaku: ustąp pierwszeństwa.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g5-3",
+     "text": "Na skrzyżowaniu ___ działa zasada prawej ręki.",
+     "options": [
+      "równoznacznym",
+      "równorzędnym"
+     ],
+     "answer": "równorzędnym",
+     "explanation": "Drogi są równorzędne.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g5-4",
+     "text": "Wczoraj policja dała mi ___ za prędkość.",
+     "options": [
+      "sztraf",
+      "mandat"
+     ],
+     "answer": "mandat",
+     "explanation": "Kara od policji to mandat.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g5-5",
+     "text": "Jedziemy drogą ___, więc możemy jechać dalej.",
+     "options": [
+      "z pierwszeństwem",
+      "główną"
+     ],
+     "answer": "z pierwszeństwem",
+     "explanation": "Tak mówi znak i test.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g5-6",
+     "text": "Pod szkołą jest zakaz ___ się.",
+     "options": [
+      "zatrzymania",
+      "zatrzymywania"
+     ],
+     "answer": "zatrzymywania",
+     "explanation": "Na znaku: zatrzymywania się.",
+     "grammar_point": "kalki-uk"
+    }
+   ]
+  }
+ ]
+}

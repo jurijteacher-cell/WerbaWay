@@ -1,0 +1,95 @@
+{
+ "lesson_id": "pl-prawko-02-znaki-i-pierwszenstwo",
+ "exercise_type": "flip-task",
+ "title": "Zadania komunikacyjne: zasady i kontrola drogowa",
+ "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę.",
+ "estimated_minutes": 14,
+ "items": [
+  {
+   "id": "c1",
+   "mode": "read-then-play",
+   "front_title": "Kolega z kursu nie rozumie zasad",
+   "back_scenario": "Kolega z kursu na prawo jazdy myli zasady pierwszeństwa i znaki. Najpierw przeczytajcie w rolach rozmowę Iryny i Olka. Potem nauczyciel jest Twoim kolegą, a Ty wyjaśniasz mu zasady.",
+   "back_checklist": [
+    "Wyjaśnij, kto ma pierwszeństwo na skrzyżowaniu równorzędnym i co z tramwajem.",
+    "Opisz kształt i kolor jednego znaku, a kolega zgaduje jego nazwę: zakaz / nakaz + dopełniacz.",
+    "Wyjaśnij, co robi kierowca, gdy pieszy wchodzi na przejście.",
+    "Zaproponuj wspólną naukę: kiedy, gdzie i jak."
+   ],
+   "model_dialogue": [
+    {
+     "speaker": "Olek",
+     "voice": "pl-PL-male",
+     "line": "Iryna, pomóż mi. W teście było skrzyżowanie bez znaków. Kto jedzie pierwszy?"
+    },
+    {
+     "speaker": "Iryna",
+     "voice": "pl-PL-female",
+     "line": "To skrzyżowanie równorzędne. Ustępujesz pierwszeństwa pojazdowi z prawej strony."
+    },
+    {
+     "speaker": "Olek",
+     "voice": "pl-PL-male",
+     "line": "A jeśli z lewej jedzie tramwaj?"
+    },
+    {
+     "speaker": "Iryna",
+     "voice": "pl-PL-female",
+     "line": "Tramwaj ma pierwszeństwo, bez względu na to, z której strony jedzie."
+    },
+    {
+     "speaker": "Olek",
+     "voice": "pl-PL-male",
+     "line": "Serio? Ja zawsze patrzyłem tylko w prawo."
+    },
+    {
+     "speaker": "Iryna",
+     "voice": "pl-PL-female",
+     "line": "Ja też, dlatego zrobiłam ten błąd w teście. A znasz taki znak: okrągły, z czerwoną obwódką, a w środku dwa samochody?"
+    },
+    {
+     "speaker": "Olek",
+     "voice": "pl-PL-male",
+     "line": "To chyba zakaz wyprzedzania?"
+    },
+    {
+     "speaker": "Iryna",
+     "voice": "pl-PL-female",
+     "line": "Dokładnie. A okrągły niebieski znak ze strzałką w prawo?"
+    },
+    {
+     "speaker": "Olek",
+     "voice": "pl-PL-male",
+     "line": "Zakaz skręcania w lewo?"
+    },
+    {
+     "speaker": "Iryna",
+     "voice": "pl-PL-female",
+     "line": "Nie, niebieski to zawsze nakaz. To nakaz jazdy w prawo."
+    },
+    {
+     "speaker": "Olek",
+     "voice": "pl-PL-male",
+     "line": "Dobrze, że mi to mówisz. Zrobimy razem jeszcze jeden test?"
+    },
+    {
+     "speaker": "Iryna",
+     "voice": "pl-PL-female",
+     "line": "Jasne. Kto dostanie mniej punktów, stawia kawę."
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "mode": "play",
+   "front_title": "Kontrola drogowa",
+   "back_scenario": "Jedziesz przez miasto. Policjant daje znak, żebyś zjechał / zjechała na bok. Zatrzymujesz się przy prawej krawędzi jezdni i otwierasz okno.",
+   "back_checklist": [
+    "Przywitaj się i podaj dokumenty, o które prosi policjant.",
+    "Zapytaj, dlaczego Cię zatrzymał.",
+    "Jeśli nie rozumiesz, poproś o powtórzenie; zapytaj, jakie jest tu ograniczenie prędkości.",
+    "Zapytaj, jaki jest mandat i ile punktów karnych dostaniesz."
+   ]
+  }
+ ]
+}
