@@ -1,0 +1,479 @@
+{
+ "lesson_id": "pl-b1-group-01-wynalazki",
+ "exercise_type": "grammar-slides",
+ "title": "Strona bierna",
+ "slides": [
+  {
+   "id": "s1",
+   "part": 1,
+   "section": "teoria",
+   "kind": "title",
+   "title": "Strona bierna",
+   "subtitle": "Kto to zrobił? Co się stało?",
+   "goal": "Po tej lekcji opowiesz historię wynalazku tak, jak w książce historycznej.",
+   "teacher_note": "Запитай: «Хто винайшов радіо?» Більшість не знає точно — і це ключ: коли виконавець неважливий або невідомий, поляки кажуть пасивом. Сьогодні вчимося саме цього."
+  },
+  {
+   "id": "s2",
+   "part": 1,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Czynna czy bierna?",
+   "left": {
+    "head": "strona czynna",
+    "rule": "ważne: kto działa",
+    "examples": [
+     "[[Marconi]] wysłał sygnał."
+    ]
+   },
+   "right": {
+    "head": "strona bierna",
+    "rule": "ważne: co się stało",
+    "examples": [
+     "Sygnał [[został wysłany]]."
+    ]
+   },
+   "note": "Wykonawca schodzi na drugi plan albo znika.",
+   "teacher_note": "Одна подія, два погляди. В активному стані головний — Marconi, у пасивному — сигнал. Попроси учнів знайти в тексті ще два пасивні речення."
+  },
+  {
+   "id": "s3",
+   "part": 1,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Gdzie spotkasz stronę bierną",
+   "items": [
+    {
+     "tag": "historia",
+     "pl": "Radio [[zostało wynalezione]] w XIX wieku.",
+     "uk": "Радіо винайшли в XIX столітті."
+    },
+    {
+     "tag": "instrukcja",
+     "pl": "Urządzenie [[jest zasilane]] z baterii.",
+     "uk": "Пристрій живиться від батареї."
+    },
+    {
+     "tag": "urząd",
+     "pl": "Wniosek [[zostanie rozpatrzony]] w ciągu 14 dni.",
+     "uk": "Заяву розглянуть протягом 14 днів."
+    },
+    {
+     "tag": "wiadomości",
+     "pl": "Most [[został otwarty]] wczoraj.",
+     "uk": "Міст відкрили вчора."
+    }
+   ],
+   "note": "Wszędzie tam, gdzie wynik jest ważniejszy od sprawcy.",
+   "teacher_note": "Покажи, що пасив — це не «книжна екзотика», а мова інструкцій, листів з урядів і новин. Саме ці тексти учні читатимуть у Польщі."
+  },
+  {
+   "id": "s4",
+   "part": 1,
+   "section": "teoria",
+   "kind": "steps",
+   "title": "Wzór",
+   "steps": [
+    {
+     "label": "podmiot",
+     "text": "Radio"
+    },
+    {
+     "label": "być / zostać",
+     "text": "zostało"
+    },
+    {
+     "label": "imiesłów bierny",
+     "text": "wynalezione"
+    },
+    {
+     "label": "przez kogo",
+     "text": "przez Marconiego",
+     "optional": "nie zawsze"
+    }
+   ],
+   "result": "Radio [[zostało]] [[wynalezione]] przez Marconiego.",
+   "note": "Szyk: podmiot → być / zostać → imiesłów → przez kogo.",
+   "teacher_note": "Формула з чотирьох цеглинок. Останню — виконавця — часто пропускаємо. Попроси скласти речення про будь-який предмет у класі."
+  },
+  {
+   "id": "s5",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Imiesłów bierny: trzy końcówki",
+   "columns": [
+    "czasownik",
+    "końcówka",
+    "przykład"
+   ],
+   "rows": [
+    [
+     "-ać, -ować",
+     "[[-any]]",
+     "budować → budowany"
+    ],
+    [
+     "-ić, -yć, -eć",
+     "[[-ony]]",
+     "stworzyć → stworzony"
+    ],
+    [
+     "-ąć, -uć, krótkie",
+     "[[-ty]]",
+     "zamknąć → zamknięty"
+    ],
+    [
+     "wymiana spółgłoski",
+     "-ony",
+     "zaprosić → [[zaproszony]]"
+    ]
+   ],
+   "note": "Imiesłów robimy od czasownika, nie od czasu przeszłego.",
+   "teacher_note": "Три закінчення залежать від інфінітива. Останній рядок — чергування приголосних, як в укр. «запросити → запрошений»."
+  },
+  {
+   "id": "s6",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Imiesłów odmienia się jak przymiotnik",
+   "columns": [
+    "rodzaj",
+    "forma",
+    "przykład"
+   ],
+   "rows": [
+    [
+     "męski",
+     "zbudowa[[ny]]",
+     "silnik został zbudowany"
+    ],
+    [
+     "żeński",
+     "zbudowa[[na]]",
+     "fabryka została zbudowana"
+    ],
+    [
+     "nijaki",
+     "zbudowa[[ne]]",
+     "radio zostało zbudowane"
+    ],
+    [
+     "rzeczy, lm",
+     "zbudowa[[ne]]",
+     "maszyny zostały zbudowane"
+    ],
+    [
+     "ludzie, lm",
+     "zaprosze[[ni]]",
+     "inżynierowie zostali zaproszeni"
+    ]
+   ],
+   "note": "Męskoosobowy: zostali zaproszeni.",
+   "teacher_note": "Дієприкметник узгоджується з підметом у роді й числі. Останній рядок — чоловічо-особова форма, з нею найбільше помилок."
+  },
+  {
+   "id": "s7",
+   "part": 1,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Był czy został?",
+   "left": {
+    "head": "był — proces",
+    "rule": "trwanie, powtarzanie",
+    "examples": [
+     "Most [[był budowany]] trzy lata.",
+     "przez rok, latami, codziennie"
+    ]
+   },
+   "right": {
+    "head": "został — fakt",
+    "rule": "jedno zdarzenie, koniec",
+    "examples": [
+     "Most [[został zbudowany]] w maju.",
+     "w 1895 roku, wczoraj, nagle"
+    ]
+   },
+   "note": "Pytaj: jak długo? — był. Kiedy się skończyło? — został.",
+   "teacher_note": "Головний вибір уроку. Ключ — сигнальні слова в реченні. Порівняй укр. «будувався» і «був збудований»."
+  },
+  {
+   "id": "s8",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Wszystkie czasy",
+   "columns": [
+    "czas",
+    "proces / stan",
+    "zdarzenie"
+   ],
+   "rows": [
+    [
+     "teraźniejszy",
+     "jest budowany",
+     "zostaje wybrany (co roku)"
+    ],
+    [
+     "przeszły",
+     "[[był]] budowany",
+     "[[został]] zbudowany"
+    ],
+    [
+     "przyszły",
+     "[[będzie]] budowany",
+     "[[zostanie]] zbudowany"
+    ]
+   ],
+   "note": "Stan opisuje jest: Internet jest używany.",
+   "teacher_note": "У теперішньому часі «zostaje» вживаємо тільки для подій, що повторюються (co roku zostaje wybrany). Стан — завжди «jest»."
+  },
+  {
+   "id": "s9",
+   "part": 1,
+   "section": "wyjatki",
+   "kind": "exceptions",
+   "refers_to": "s5",
+   "title": "Imiesłowy nieregularne",
+   "items": [
+    {
+     "rule": "wziąć → wzięty",
+     "example": "Paszport został [[wzięty]] przez pomyłkę.",
+     "refers_to": "s5"
+    },
+    {
+     "rule": "otworzyć → otwarty",
+     "example": "Muzeum zostało [[otwarte]] w maju.",
+     "refers_to": "s5"
+    },
+    {
+     "rule": "znaleźć → znaleziony",
+     "example": "Klucz został [[znaleziony]] w parku.",
+     "refers_to": "s5"
+    },
+    {
+     "rule": "jeść → jedzony",
+     "example": "Ten chleb jest [[jedzony]] na śniadanie.",
+     "refers_to": "s5"
+    }
+   ],
+   "teacher_note": "Форми, які треба просто запам'ятати. Найчастіша помилка — «otworzony» замість «otwarty»."
+  },
+  {
+   "id": "s10",
+   "part": 2,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Kto to zrobił: przez + biernik",
+   "columns": [
+    "kto / co",
+    "forma",
+    "przykład"
+   ],
+   "rows": [
+    [
+     "sprawca",
+     "[[przez]] + biernik",
+     "przez Teslę"
+    ],
+    [
+     "narzędzie",
+     "narzędnik bez przez",
+     "długopisem"
+    ],
+    [
+     "siła natury",
+     "obie formy",
+     "przez wiatr / wiatrem"
+    ]
+   ],
+   "note": "Po „przez” zawsze biernik.",
+   "teacher_note": "Виконавця вводимо через «przez» і знахідний. Інструмент — орудний без прийменника, як в укр. «підписано ручкою»."
+  },
+  {
+   "id": "s11",
+   "part": 2,
+   "section": "teoria",
+   "kind": "steps",
+   "title": "Forma -no / -to",
+   "steps": [
+    {
+     "label": "czas przeszły",
+     "text": "zbudował"
+    },
+    {
+     "label": "końcówka",
+     "text": "-o zamiast -ł"
+    },
+    {
+     "label": "forma",
+     "text": "zbudowano"
+    }
+   ],
+   "result": "Elektrownię [[uruchomiono]] w 1895 roku.",
+   "note": "Zdanie bez podmiotu, tylko w czasie przeszłym.",
+   "teacher_note": "Найчастіша форма в історичних текстах. Порівняй з укр. «збудовано», «запущено» — механізм майже той самий."
+  },
+  {
+   "id": "s12",
+   "part": 2,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Wersja z „się”",
+   "left": {
+    "head": "rzecz jako podmiot",
+    "rule": "czasownik zgadza się z rzeczą",
+    "examples": [
+     "Tu [[budują się]] nowe domy."
+    ]
+   },
+   "right": {
+    "head": "bez podmiotu",
+    "rule": "czasownik w 3. os. lp",
+    "examples": [
+     "Tu [[buduje się]] nowe domy."
+    ]
+   },
+   "note": "Obie wersje są poprawne.",
+   "teacher_note": "Найрозмовніший варіант пасиву. Норма допускає обидві конструкції — не кажи учням, що одна з них помилкова."
+  },
+  {
+   "id": "s13",
+   "part": 2,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Przeczenie: odwrotnie niż zwykle",
+   "left": {
+    "head": "-no / -to",
+    "rule": "dopełniacz",
+    "examples": [
+     "Nie zbudowano [[mostu]]."
+    ]
+   },
+   "right": {
+    "head": "strona bierna",
+    "rule": "mianownik",
+    "examples": [
+     "[[Most]] nie został zbudowany."
+    ]
+   },
+   "note": "W biernej most jest podmiotem, więc przeczenie go nie rusza.",
+   "teacher_note": "Пастка для уважних: у формі на -no заперечення дає родовий, а в пасиві з zostać підмет лишається в називному."
+  },
+  {
+   "id": "s14",
+   "part": 2,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Kiedy strony biernej nie ma",
+   "columns": [
+    "grupa",
+    "przykłady"
+   ],
+   "rows": [
+    [
+     "nieprzechodnie",
+     "iść, spać, rosnąć"
+    ],
+    [
+     "zwrotne",
+     "uczyć się, bać się"
+    ],
+    [
+     "stan, nie czynność",
+     "mieszkać, istnieć"
+    ]
+   ],
+   "note": "Strona bierna potrzebuje dopełnienia w bierniku.",
+   "teacher_note": "Пасив можливий лише від перехідних дієслів (тих, що мають додаток у знахідному). «Spać», «iść» додатка не мають."
+  },
+  {
+   "id": "s15",
+   "part": 2,
+   "section": "wyjatki",
+   "kind": "exceptions",
+   "refers_to": "s14",
+   "title": "Przechodnie, ale bez biernej",
+   "items": [
+    {
+     "rule": "mieć, móc, chcieć",
+     "example": "Adam [[miał]] rower. (nie: rower był miany)",
+     "refers_to": "s14"
+    },
+    {
+     "rule": "kosztować, ważyć",
+     "example": "Bilet [[kosztował]] 20 złotych.",
+     "refers_to": "s14"
+    },
+    {
+     "rule": "potrzebować",
+     "example": "Firma [[potrzebuje]] inżynierów.",
+     "refers_to": "s14"
+    }
+   ],
+   "teacher_note": "Ці дієслова мають знахідний відмінок, але пасиву не утворюють. Їх треба запам'ятати."
+  },
+  {
+   "id": "s16",
+   "part": 2,
+   "section": "pulapki",
+   "kind": "traps",
+   "title": "Pułapki z ukraińskiego",
+   "items": [
+    {
+     "uk": "було збудовано",
+     "wrong": "było zbudowano",
+     "right": "[[zbudowano]]",
+     "why": "Forma -no / -to nie ma łącznika „było”."
+    },
+    {
+     "uk": "надісланий Марконі",
+     "wrong": "wysłany Marconim",
+     "right": "wysłany [[przez Marconiego]]",
+     "why": "Sprawca to przez + biernik."
+    },
+    {
+     "uk": "інженери були запрошені",
+     "wrong": "inżynierowie były zaproszone",
+     "right": "inżynierowie [[zostali zaproszeni]]",
+     "why": "Ludzie wymagają formy męskoosobowej."
+    }
+   ],
+   "teacher_note": "Перша трійка — кальки синтаксису. Спершу хай учні самі виправлять, потім відкривай ✓."
+  },
+  {
+   "id": "s17",
+   "part": 2,
+   "section": "pulapki",
+   "kind": "traps",
+   "title": "Pułapki z ukraińskiego",
+   "items": [
+    {
+     "uk": "не збудовано міст",
+     "wrong": "nie zbudowano most",
+     "right": "nie zbudowano [[mostu]]",
+     "why": "Przeczenie przy -no / -to wymaga dopełniacza."
+    },
+    {
+     "uk": "використовується",
+     "wrong": "zostaje używany",
+     "right": "[[jest]] używany",
+     "why": "Stan opisuje „jest”, nie „zostaje”."
+    },
+    {
+     "uk": "відкритий (музей)",
+     "wrong": "otworzony",
+     "right": "[[otwarty]]",
+     "why": "Otworzyć daje otwarty."
+    }
+   ],
+   "teacher_note": "Друга трійка — заперечення, стан і неправильна форма. Нагадай: «zostało wynalezione» — це «було винайдене», а не «залишилося»."
+  }
+ ]
+}

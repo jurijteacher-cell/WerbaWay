@@ -1,0 +1,110 @@
+{
+ "lesson_id": "pl-b1-group-02-praca",
+ "exercise_type": "true-false",
+ "title": "Jak na egzaminie B1",
+ "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+ "estimated_minutes": 12,
+ "blocks": [
+  {
+   "block_id": "e1",
+   "exam_skill": "czytanie",
+   "exercise_type": "true-false",
+   "source": "section:1",
+   "title": "Czytanie: prawda czy fałsz?",
+   "instruction": "Przeczytaj jeszcze raz tekst „Na jakiej umowie?” i zdecyduj, czy zdanie jest prawdziwe.",
+   "items": [
+    {
+     "id": "e1-1",
+     "statement": "Według autora od rodzaju umowy zależą nawet szanse na kredyt.",
+     "answer": true,
+     "explanation": "„Od odpowiedzi zależy prawie wszystko — pensja, urlop, ubezpieczenie, a nawet szanse na kredyt”."
+    },
+    {
+     "id": "e1-2",
+     "statement": "Osoba na umowie zlecenia ma płatny urlop.",
+     "answer": false,
+     "explanation": "Zleceniobiorca nie dostaje płatnego urlopu."
+    },
+    {
+     "id": "e1-3",
+     "statement": "W 2026 roku minimalna stawka na zleceniu to 31,40 zł brutto za godzinę.",
+     "answer": true,
+     "explanation": "Tak podaje tekst w akapicie o umowie zlecenia."
+    },
+    {
+     "id": "e1-4",
+     "statement": "Nowy przedsiębiorca przez pół roku nie płaci składki zdrowotnej.",
+     "answer": false,
+     "explanation": "Ulga obejmuje składki na ubezpieczenia społeczne. Zdrowotną trzeba płacić od pierwszego miesiąca."
+    },
+    {
+     "id": "e1-5",
+     "statement": "Szef nie może odmówić okazjonalnej pracy zdalnej.",
+     "answer": false,
+     "explanation": "Pracownik może złożyć wniosek, ale szef ma prawo odmówić."
+    },
+    {
+     "id": "e1-6",
+     "statement": "Autor przypomina, że o formie zatrudnienia nie zawsze decydujemy sami.",
+     "answer": true,
+     "explanation": "„O formie zatrudnienia nie zawsze decydujemy sami”."
+    }
+   ]
+  },
+  {
+   "block_id": "e2",
+   "exam_skill": "sluchanie",
+   "exercise_type": "multiple-choice",
+   "source": "pl-b1-group-02-praca-comm-tasks.json#c1.model_dialogue",
+   "max_plays": 2,
+   "title": "Słuchanie: rozmowa kwalifikacyjna",
+   "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+   "items": [
+    {
+     "id": "e2-1",
+     "question": "Gdzie kandydatka pracuje teraz?",
+     "options": [
+      "w recepcji hotelu w Krakowie",
+      "w biurze podróży w Gdańsku",
+      "w restauracji hotelowej"
+     ],
+     "answer": "w recepcji hotelu w Krakowie",
+     "explanation": "„Od czterech lat pracuję w recepcji hotelu w Krakowie”."
+    },
+    {
+     "id": "e2-2",
+     "question": "Dlaczego szuka nowej pracy?",
+     "options": [
+      "bo nie ma możliwości awansu",
+      "bo ma za niską pensję",
+      "bo ma za długi dojazd"
+     ],
+     "answer": "bo nie ma możliwości awansu",
+     "explanation": "„U nas nie ma możliwości awansu”."
+    },
+    {
+     "id": "e2-3",
+     "question": "Ile trwa okres próbny?",
+     "options": [
+      "dwa tygodnie",
+      "trzy miesiące",
+      "pół roku"
+     ],
+     "answer": "trzy miesiące",
+     "explanation": "Dwa tygodnie trwa tylko wdrożenie. Okres próbny trwa trzy miesiące."
+    },
+    {
+     "id": "e2-4",
+     "question": "Kiedy firma podejmie decyzję?",
+     "options": [
+      "jutro",
+      "do piątku",
+      "za miesiąc"
+     ],
+     "answer": "do piątku",
+     "explanation": "„Po zakończeniu wszystkich rozmów, czyli do piątku”."
+    }
+   ]
+  }
+ ]
+}

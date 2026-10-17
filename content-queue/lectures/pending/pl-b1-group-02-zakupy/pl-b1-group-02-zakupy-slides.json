@@ -1,0 +1,462 @@
+{
+ "lesson_id": "pl-b1-group-02-zakupy",
+ "exercise_type": "grammar-slides",
+ "title": "Tryb przypuszczający",
+ "slides": [
+  {
+   "id": "s1",
+   "part": 1,
+   "section": "teoria",
+   "kind": "title",
+   "title": "Tryb przypuszczający",
+   "subtitle": "Kupię czy kupiłbym?",
+   "goal": "Po tej lekcji poprosisz grzecznie w sklepie i powiesz, co zrobiłbyś w innej sytuacji.",
+   "teacher_note": "Запитай: «Що б ви купили, якби мали зайві 1000 злотих?» Збери відповіді українською — у кожній буде «б». Польською це «by», і сьогодні вчимося його ставити."
+  },
+  {
+   "id": "s2",
+   "part": 1,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Fakt czy możliwość?",
+   "left": {
+    "head": "decyzja",
+    "rule": "tryb oznajmujący",
+    "examples": [
+     "[[Kupię]] ten płaszcz."
+    ]
+   },
+   "right": {
+    "head": "chęć, plan, marzenie",
+    "rule": "tryb przypuszczający",
+    "examples": [
+     "[[Kupiłbym]] ten płaszcz."
+    ]
+   },
+   "note": "Cztery zastosowania: grzeczność, warunek, rada, hipoteza.",
+   "teacher_note": "Порівняй два речення. Перше — рішення, друге — можливість. Укр. «купив би» працює так само, тільки в польській «by» прилипає до дієслова."
+  },
+  {
+   "id": "s3",
+   "part": 1,
+   "section": "teoria",
+   "kind": "steps",
+   "title": "Wzór",
+   "steps": [
+    {
+     "label": "czas przeszły",
+     "text": "kupił"
+    },
+    {
+     "label": "cząstka",
+     "text": "by"
+    },
+    {
+     "label": "końcówka osobowa",
+     "text": "m"
+    }
+   ],
+   "result": "[[kupił]] + [[by]] + [[m]] → kupiłbym",
+   "note": "Podstawą jest zawsze forma przeszła, nie bezokolicznik.",
+   "teacher_note": "Три цеглинки: форма минулого часу + by + особове закінчення. Попроси утворити: wziąć (ty), pójść (my)."
+  },
+  {
+   "id": "s4",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Końcówki osobowe",
+   "columns": [
+    "osoba",
+    "końcówka",
+    "przykład"
+   ],
+   "rows": [
+    [
+     "ja",
+     "[[-bym]]",
+     "kupiłbym / kupiłabym"
+    ],
+    [
+     "ty",
+     "[[-byś]]",
+     "kupiłbyś / kupiłabyś"
+    ],
+    [
+     "on, ona, ono",
+     "-by",
+     "kupiłby / kupiłaby"
+    ],
+    [
+     "my",
+     "[[-byśmy]]",
+     "kupilibyśmy"
+    ],
+    [
+     "wy",
+     "[[-byście]]",
+     "kupilibyście"
+    ],
+    [
+     "oni, one",
+     "-by",
+     "kupiliby / kupiłyby"
+    ]
+   ],
+   "note": "Trzecia osoba nie ma końcówki: samo „by”.",
+   "teacher_note": "Відкривай по рядку. Зверни увагу: у множині закінчення -byśmy, -byście, а наголос не переходить на «by»."
+  },
+  {
+   "id": "s5",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Rodzaj i liczba",
+   "columns": [
+    "kto?",
+    "forma",
+    "przykład"
+   ],
+   "rows": [
+    [
+     "on",
+     "kupił[[by]]",
+     "On kupiłby buty."
+    ],
+    [
+     "ona",
+     "kupiła[[by]]",
+     "Ona kupiłaby buty."
+    ],
+    [
+     "chłopaki, grupa mieszana",
+     "poszli[[by]]",
+     "Oni poszliby do kina."
+    ],
+    [
+     "dziewczyny",
+     "poszły[[by]]",
+     "One poszłyby do kina."
+    ]
+   ],
+   "note": "Męskoosobowy, gdy w grupie jest choć jeden mężczyzna.",
+   "teacher_note": "Рід видно ще до «by»: kupił- / kupiła-. Нагадай правило чоловічо-особової форми з уроку про числівники."
+  },
+  {
+   "id": "s6",
+   "part": 1,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Ruchome „by”",
+   "items": [
+    {
+     "tag": "przy czasowniku",
+     "pl": "[[Kupiłbym]] to od razu.",
+     "uk": "Я б купив це одразу."
+    },
+    {
+     "tag": "po słowie",
+     "pl": "Chętnie [[bym]] to kupił.",
+     "uk": "Я б охоче це купив."
+    },
+    {
+     "tag": "po przeczeniu",
+     "pl": "Nigdy [[byśmy]] tam nie weszli.",
+     "uk": "Ми б ніколи туди не зайшли."
+    }
+   ],
+   "note": "Znaczenie takie samo, zmienia się akcent.",
+   "teacher_note": "Частка може «відклеїтися» і стати після першого слова в реченні — як в укр. «я б це купив». Значення не змінюється."
+  },
+  {
+   "id": "s7",
+   "part": 1,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Grzecznie w sklepie",
+   "items": [
+    {
+     "tag": "prośba",
+     "pl": "[[Chciałbym]] zapłacić kartą.",
+     "uk": "Я хотів би заплатити карткою."
+    },
+    {
+     "tag": "pytanie",
+     "pl": "Czy [[mógłby]] pan sprawdzić cenę?",
+     "uk": "Чи не могли б ви перевірити ціну?"
+    },
+    {
+     "tag": "wybór",
+     "pl": "[[Wolałbym]] zwrot pieniędzy.",
+     "uk": "Я б волів повернення грошей."
+    }
+   ],
+   "note": "„Chcę” brzmi w sklepie ostro. „Chciałbym” to standard.",
+   "teacher_note": "Найчастіше вживання в житті. Попроси кожного попросити щось у «продавця» — викладача — тільки через chciałbym / czy mógłby pan."
+  },
+  {
+   "id": "s8",
+   "part": 1,
+   "section": "wyjatki",
+   "kind": "exceptions",
+   "refers_to": "s4",
+   "title": "Zmiana samogłoski w liczbie mnogiej",
+   "items": [
+    {
+     "rule": "chciałbym → chcielibyśmy",
+     "example": "[[Chcielibyśmy]] zobaczyć większy rozmiar.",
+     "refers_to": "s4"
+    },
+    {
+     "rule": "mógłbym → moglibyśmy",
+     "example": "[[Moglibyśmy]] przyjść jutro?",
+     "refers_to": "s4"
+    },
+    {
+     "rule": "wziąłbym → wzięlibyśmy",
+     "example": "[[Wzięlibyśmy]] dwa opakowania.",
+     "refers_to": "s4"
+    }
+   ],
+   "teacher_note": "У множині чоловічо-особовій голосна в основі змінюється: a → e, ó → o, ą → ę. Те саме було в минулому часі (chciał → chcieli)."
+  },
+  {
+   "id": "s9",
+   "part": 2,
+   "section": "teoria",
+   "kind": "steps",
+   "title": "Gdyby — warunek nierealny",
+   "steps": [
+    {
+     "label": "gdyby + osoba",
+     "text": "Gdybym"
+    },
+    {
+     "label": "czas przeszły",
+     "text": "miał czas,"
+    },
+    {
+     "label": "forma z by",
+     "text": "pojechałbym"
+    }
+   ],
+   "result": "[[Gdybym]] miał czas, [[pojechałbym]] do outletu.",
+   "note": "Po „gdyby” stoi forma przeszła, nigdy czas przyszły.",
+   "teacher_note": "В обох частинах речення є «by»: gdybym… pojechałbym. Попроси скласти речення про себе: Gdybym mieszkał w Polsce…"
+  },
+  {
+   "id": "s10",
+   "part": 2,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Jeśli czy gdyby?",
+   "left": {
+    "head": "jeśli — realne",
+    "rule": "czas przyszły",
+    "examples": [
+     "[[Jeśli]] będzie promocja, kupię."
+    ]
+   },
+   "right": {
+    "head": "gdyby — nierealne",
+    "rule": "tryb przypuszczający",
+    "examples": [
+     "[[Gdyby]] była promocja, kupiłbym."
+    ]
+   },
+   "note": "Mów „gdybym”, nie „jeślibym”.",
+   "teacher_note": "Обидва — «якщо/якби», але jeśli — реальна умова з майбутнім часом, gdyby — уявна. Перевір кількома ситуаціями: завтра субота / я мільйонер."
+  },
+  {
+   "id": "s11",
+   "part": 2,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Jedna forma, dwa czasy",
+   "items": [
+    {
+     "tag": "wczoraj",
+     "pl": "Gdybym wiedział, [[nie kupiłbym]] tego.",
+     "uk": "Якби я знав, не купив би цього (учора)."
+    },
+    {
+     "tag": "dziś",
+     "pl": "Gdybym wiedział, [[nie kupiłbym]] tego.",
+     "uk": "Якби я знав, не купив би цього (зараз)."
+    },
+    {
+     "tag": "kontekst",
+     "pl": "[[Wtedy]] / [[teraz]] pokazuje czas.",
+     "uk": "Час показують слова «тоді» або «тепер»."
+    }
+   ],
+   "note": "W mowie ta sama forma działa dla teraźniejszości i przeszłości.",
+   "teacher_note": "У мові однакова форма і для теперішнього, і для минулого. Існує й окрема книжна форма (gdybym był wiedział, byłbym kupił) — розглянемо її у блоці винятків."
+  },
+  {
+   "id": "s12",
+   "part": 2,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Żeby czy żebym?",
+   "left": {
+    "head": "ten sam podmiot",
+    "rule": "żeby + bezokolicznik",
+    "examples": [
+     "Poszedłem tam, [[żeby kupić]] prezent."
+    ]
+   },
+   "right": {
+    "head": "inny podmiot",
+    "rule": "żeby + osoba + forma przeszła",
+    "examples": [
+     "Chcę, [[żebyś]] sprawdził skład."
+    ]
+   },
+   "note": "Dwa różne podmioty — żebym, żebyś, nigdy samo „żeby ty”.",
+   "teacher_note": "Нагадай урок про волонтерство: та сама особа — інфінітив, інша — żebym / żebyś + форма минулого."
+  },
+  {
+   "id": "s13",
+   "part": 2,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Razem czy osobno?",
+   "columns": [
+    "gdzie stoi by",
+    "pisownia",
+    "przykład"
+   ],
+   "rows": [
+    [
+     "z czasownikiem",
+     "razem",
+     "[[zapłaciłbym]]"
+    ],
+    [
+     "ze spójnikiem",
+     "razem",
+     "[[gdyby]], [[żeby]], aby"
+    ],
+    [
+     "po innym słowie",
+     "osobno",
+     "kto [[by]], może [[byś]]"
+    ]
+   ],
+   "note": "Chyba by przyszedł. Może byś zadzwonił.",
+   "teacher_note": "Правило правопису з трьох рядків. Найчастіша помилка — «może byś» разом."
+  },
+  {
+   "id": "s14",
+   "part": 2,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Przeczenie",
+   "items": [
+    {
+     "tag": "zwykle",
+     "pl": "[[Nie kupiłbym]] tego.",
+     "uk": "Я б цього не купив."
+    },
+    {
+     "tag": "z ruchomym by",
+     "pl": "Nigdy [[bym]] tego [[nie]] kupił.",
+     "uk": "Я б ніколи цього не купив."
+    },
+    {
+     "tag": "ona",
+     "pl": "[[Nie chciałabym]] stać w tej kolejce.",
+     "uk": "Я не хотіла б стояти в цій черзі."
+    }
+   ],
+   "note": "„Nie” stoi zawsze tuż przed czasownikiem.",
+   "teacher_note": "Заперечення не чіпає «by», але «nie» завжди перед дієсловом. При рухомому «by» між ними може стояти ще слово."
+  },
+  {
+   "id": "s15",
+   "part": 2,
+   "section": "wyjatki",
+   "kind": "exceptions",
+   "refers_to": "s10",
+   "title": "Rzadkie i książkowe",
+   "items": [
+    {
+     "rule": "„Jeślibym” istnieje, ale w mowie prawie się go nie używa",
+     "example": "[[Gdybym]] miał czas… (nie: jeślibym miał czas)",
+     "refers_to": "s10"
+    },
+    {
+     "rule": "Forma przeszła w literaturze",
+     "example": "Gdybym [[był wiedział]], nie [[byłbym kupił]].",
+     "refers_to": "s10"
+    },
+    {
+     "rule": "Życzenie bez drugiej części",
+     "example": "[[Gdyby]] tak pojechać nad morze!",
+     "refers_to": "s10"
+    }
+   ],
+   "teacher_note": "Три рідкісні випадки. Книжну форму минулого учні мають тільки впізнавати в текстах, а не вживати."
+  },
+  {
+   "id": "s16",
+   "part": 2,
+   "section": "pulapki",
+   "kind": "traps",
+   "title": "Pułapki z ukraińskiego",
+   "items": [
+    {
+     "uk": "я б купив",
+     "wrong": "ja by kupił",
+     "right": "[[kupiłbym]]",
+     "why": "Osoba siedzi w końcówce: -bym."
+    },
+    {
+     "uk": "ми б пішли",
+     "wrong": "my by poszli",
+     "right": "[[poszlibyśmy]]",
+     "why": "Cząstka nie żyje osobno od osoby."
+    },
+    {
+     "uk": "ти б заплатила?",
+     "wrong": "ty by zapłaciła?",
+     "right": "[[zapłaciłabyś]]?",
+     "why": "Końcówka -byś zastępuje zaimek."
+    }
+   ],
+   "teacher_note": "Перша трійка — калька з укр. «я б», «ми б». У польській займенник не потрібен, особу показує закінчення."
+  },
+  {
+   "id": "s17",
+   "part": 2,
+   "section": "pulapki",
+   "kind": "traps",
+   "title": "Pułapki z ukraińskiego",
+   "items": [
+    {
+     "uk": "якби я мав час",
+     "wrong": "jeśli bym miał czas",
+     "right": "[[gdybym]] miał czas",
+     "why": "Warunek nierealny zaczyna się od „gdyby”."
+    },
+    {
+     "uk": "якби я мав",
+     "wrong": "gdyby ja miał",
+     "right": "[[gdybym]] miał",
+     "why": "Końcówka osobowa przechodzi na „gdyby”."
+    },
+    {
+     "uk": "хочу, щоб ти прийшов",
+     "wrong": "chcę, żeby ty przyszedł",
+     "right": "chcę, [[żebyś]] przyszedł",
+     "why": "Osoba przechodzi na „żeby”."
+    }
+   ],
+   "teacher_note": "Друга трійка — сполучники. Попроси учнів вимовити правильні форми вголос тричі."
+  }
+ ]
+}

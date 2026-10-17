@@ -47,7 +47,7 @@ Marek to taki typ, który ma sto pomysłów na minutę, a ja zwykle muszę to ws
 
 – No dobra – westchnąłem. – Ale wiesz, że robi się nas dziewięcioro?
 
-Policzyłem jeszcze raz na kartce: pięciu facetów, dwie dziewczyny i dwoje dzieci, czyli dziewięć osób. Kombi mojego taty mieści tylko pięć osób. Masakra! Zarwałem noc, żeby znaleźć jakieś rozwiązanie. Rano wiedziałem już, że trzeba wynająć busa. Zrobiłem rezerwację przez internet i musiałem przełożyć swoje spotkanie z szefem. Wynajem kosztował siedemset złotych, ale kierowca dał nam zniżkę. Każdy dorosły dorzucił stówę i wyszło równo, bo pojechało siedem osób dorosłych: pięciu facetów i dwie dziewczyny. Marek okazał się kozakiem, bo sam odebrał busa i zapłacił kaucję.
+Policzyłem jeszcze raz na kartce: pięciu facetów, dwie dziewczyny i dwoje dzieci, czyli dziewięć osób. Kombi mojego taty mieści tylko pięć osób. Masakra! Zarwałem noc, żeby znaleźć jakieś rozwiązanie. Rano wiedziałem już, że trzeba wynająć busa. Zrobiłem rezerwację przez internet i musiałem przełożyć swoje spotkanie z szefem. Wynajem kosztował osiemset złotych, ale w wypożyczalni dali nam zniżkę i zapłaciliśmy siedemset. Każdy dorosły dorzucił stówę i wyszło równo, bo pojechało siedem osób dorosłych: pięciu facetów i dwie dziewczyny. Marek okazał się kozakiem, bo sam odebrał busa i zapłacił kaucję.
 
 [IMAGE: keywords="friends loading van trip", source="stock", alt="Grupa znajomych pakuje bagaże do busa przed wyjazdem"]
 
@@ -65,7 +65,6 @@ W niedzielę rano dwóch ziomków zwinęło się wcześniej, bo mieli fuchę w K
 
 – A ja myślę, że czworo dzieci też dałoby radę – zażartowała Ola.
 
-[IMAGE: keywords="friends eating kebab bench", source="stock", alt="Znajomi jedzą kebaby na ławce w mieście"]
 
 Lipa, że w poniedziałek trzeba było wracać do pracy.
 
@@ -223,3 +222,10 @@ Odpowiedz na piśmie, jednym zdaniem na każde pytanie:
 | **zaliczyć** | здати (залік) | Zaliczyłam wszystkie przedmioty z pierwszego semestru. |
 | **fucha** | підробіток, шабашка | W wakacje łapię fuchy przy remontach. |
 | **urwać się** | змитися (з уроку, з роботи) | Urwaliśmy się z ostatniej lekcji i poszliśmy na lody. |
+
+---
+
+## Źródła
+
+- [Słownik języka polskiego PWN](https://sjp.pwn.pl/) — znaczenia i kwalifikatory słów potocznych.
+- [Młodzieżowe Słowo Roku 2025 — wroclaw.pl](https://www.wroclaw.pl/dla-mieszkanca/mlodziezowe-slowo-roku-2025-trwaja-zgloszenia-do-plebiscytu) — plebiscyt na słowo roku, tekst do pracy domowej.

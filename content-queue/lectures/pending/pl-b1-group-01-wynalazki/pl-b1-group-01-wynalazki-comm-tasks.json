@@ -1,0 +1,130 @@
+{
+ "lesson_id": "pl-b1-group-01-wynalazki",
+ "exercise_type": "flip-task",
+ "title": "Zadania komunikacyjne: technika w praktyce",
+ "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Skończ dopiero wtedy, gdy masz wszystkie informacje z listy.",
+ "estimated_minutes": 22,
+ "items": [
+  {
+   "id": "c1",
+   "mode": "read-then-play",
+   "front_title": "Awaria internetu",
+   "back_scenario": "Od wczoraj nie masz internetu, a jutro rano masz zdalne spotkanie. Dzwonisz na infolinię dostawcy. Najpierw posłuchaj przykładowej rozmowy, potem odegraj swoją — z innym adresem, inną godziną spotkania i inną usterką.",
+   "back_checklist": [
+    "Dowiedz się, czy to awaria u operatora, czy problem z Twoim sprzętem.",
+    "Zapytaj, do której godziny usterka zostanie usunięta.",
+    "Ustal, czy i kiedy przyjedzie technik.",
+    "Zapytaj o zwrot pieniędzy za dni bez usługi.",
+    "Poproś o numer zgłoszenia i zapisz go."
+   ],
+   "model_dialogue": [
+    {
+     "speaker": "Konsultant",
+     "voice": "pl-PL-male",
+     "line": "Dzień dobry, infolinia NetPol, w czym mogę pomóc?"
+    },
+    {
+     "speaker": "Klientka",
+     "voice": "pl-PL-female",
+     "line": "Dzień dobry. Od wczoraj wieczorem nie mam internetu. Router świeci na czerwono."
+    },
+    {
+     "speaker": "Konsultant",
+     "voice": "pl-PL-male",
+     "line": "Poproszę adres instalacji."
+    },
+    {
+     "speaker": "Klientka",
+     "voice": "pl-PL-female",
+     "line": "Ulica Lipowa dwanaście, mieszkanie cztery."
+    },
+    {
+     "speaker": "Konsultant",
+     "voice": "pl-PL-male",
+     "line": "Widzę, że w Pani okolicy została wykryta awaria. Uszkodzony został kabel na ulicy Polnej."
+    },
+    {
+     "speaker": "Klientka",
+     "voice": "pl-PL-female",
+     "line": "Czyli to nie mój sprzęt. Kiedy to zostanie naprawione? Jutro o dziewiątej mam ważne spotkanie online."
+    },
+    {
+     "speaker": "Konsultant",
+     "voice": "pl-PL-male",
+     "line": "Ekipa techniczna została już wysłana. Usterka powinna zostać usunięta dzisiaj do dwudziestej drugiej."
+    },
+    {
+     "speaker": "Klientka",
+     "voice": "pl-PL-female",
+     "line": "A jeśli nie zdążą?"
+    },
+    {
+     "speaker": "Konsultant",
+     "voice": "pl-PL-male",
+     "line": "Wtedy technik przyjedzie jutro między ósmą a dziesiątą."
+    },
+    {
+     "speaker": "Klientka",
+     "voice": "pl-PL-female",
+     "line": "Czy za dni bez internetu dostanę zwrot pieniędzy?"
+    },
+    {
+     "speaker": "Konsultant",
+     "voice": "pl-PL-male",
+     "line": "Tak, rabat zostanie naliczony automatycznie na następnej fakturze."
+    },
+    {
+     "speaker": "Klientka",
+     "voice": "pl-PL-female",
+     "line": "Proszę jeszcze o numer zgłoszenia."
+    },
+    {
+     "speaker": "Konsultant",
+     "voice": "pl-PL-male",
+     "line": "Oczywiście: cztery, siedem, jeden, dziewięć, zero, trzy. Zgłoszenie zostało przyjęte."
+    },
+    {
+     "speaker": "Klientka",
+     "voice": "pl-PL-female",
+     "line": "Dziękuję, zapisałam. Do widzenia."
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "front_title": "Dziwny dźwięk w silniku",
+   "back_scenario": "Twój samochód głośno stuka przy przyspieszaniu. Dzwonisz do warsztatu.",
+   "back_checklist": [
+    "Opisz objaw: kiedy stuka, jak głośno i od kiedy.",
+    "Zapytaj, czy można jeszcze bezpiecznie jeździć.",
+    "Umów termin diagnostyki i zapytaj o jej koszt.",
+    "Dowiedz się, czy części zamienne są na miejscu.",
+    "Zapytaj o gwarancję na naprawę."
+   ]
+  },
+  {
+   "id": "c3",
+   "front_title": "Wycieczka do muzeum",
+   "back_scenario": "Organizujesz wyjście dla dwunastu osób. Dzwonisz do Muzeum Techniki.",
+   "back_checklist": [
+    "Podaj liczbę osób i zaproponuj dwa terminy.",
+    "Zapytaj o cenę biletu grupowego i o zniżki.",
+    "Ustal, czy będzie przewodnik i w jakim języku.",
+    "Dowiedz się, ile trwa zwiedzanie i czy można robić zdjęcia.",
+    "Zapytaj, jak i kiedy zapłacić za rezerwację."
+   ]
+  },
+  {
+   "id": "c4",
+   "front_title": "Reklamacja ładowarki",
+   "back_scenario": "Ładowarka kupiona dwa miesiące temu przestała działać. Idziesz do sklepu z paragonem.",
+   "back_checklist": [
+    "Opisz, co dokładnie się dzieje i od kiedy.",
+    "Powiedz, czego oczekujesz: naprawy, wymiany czy zwrotu pieniędzy.",
+    "Zapytaj, jakie dokumenty są potrzebne oprócz paragonu.",
+    "Dowiedz się, w ciągu ilu dni reklamacja zostanie rozpatrzona.",
+    "Zapytaj, co możesz zrobić, jeśli reklamacja zostanie odrzucona."
+   ]
+  }
+ ]
+}

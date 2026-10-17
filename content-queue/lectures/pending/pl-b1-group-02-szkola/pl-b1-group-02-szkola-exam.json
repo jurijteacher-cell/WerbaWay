@@ -1,0 +1,110 @@
+{
+ "lesson_id": "pl-b1-group-02-szkola",
+ "exercise_type": "true-false",
+ "title": "Jak na egzaminie B1",
+ "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+ "estimated_minutes": 12,
+ "blocks": [
+  {
+   "block_id": "e1",
+   "exam_skill": "czytanie",
+   "exercise_type": "true-false",
+   "source": "section:1",
+   "title": "Czytanie: prawda czy fałsz?",
+   "instruction": "Przeczytaj jeszcze raz tekst „Pani Barbara i druga ławka pod oknem” i zdecyduj, czy zdanie jest prawdziwe.",
+   "items": [
+    {
+     "id": "e1-1",
+     "statement": "Według autora dorośli zaczynają wspomnienia o szkole od ocen.",
+     "answer": false,
+     "explanation": "Prawie nikt nie zaczyna od ocen. Ludzie zaczynają od zapachu, dźwięku albo twarzy."
+    },
+    {
+     "id": "e1-2",
+     "statement": "Sala autora była na drugim piętrze.",
+     "answer": true,
+     "explanation": "W tekście: „Moja sala była na drugim piętrze”."
+    },
+    {
+     "id": "e1-3",
+     "statement": "Pani Barbara postawiła autorowi jedynkę za wypracowanie.",
+     "answer": false,
+     "explanation": "Nie postawiła jedynki. Powiedziała tylko: „Szkoda, bo ty potrafisz lepiej”."
+    },
+    {
+     "id": "e1-4",
+     "statement": "Dziś autor myśli, że drugi nauczyciel nie umiał rozmawiać z nastolatkami.",
+     "answer": true,
+     "explanation": "„Dziś myślę, że on po prostu nie umiał rozmawiać z nastolatkami”."
+    },
+    {
+     "id": "e1-5",
+     "statement": "Dzisiaj szkoła podstawowa w Polsce trwa sześć lat.",
+     "answer": false,
+     "explanation": "Szkoła podstawowa trwa osiem lat."
+    },
+    {
+     "id": "e1-6",
+     "statement": "Po latach ludzie najlepiej pamiętają konkretne wykłady.",
+     "answer": false,
+     "explanation": "Mało kto pamięta wykłady. Wszyscy pamiętają ludzi i rozmowy."
+    }
+   ]
+  },
+  {
+   "block_id": "e2",
+   "exam_skill": "sluchanie",
+   "exercise_type": "multiple-choice",
+   "source": "pl-b1-group-02-szkola-comm-tasks.json#c1.model_dialogue",
+   "max_plays": 2,
+   "title": "Słuchanie: zapisy na kurs niemieckiego",
+   "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+   "items": [
+    {
+     "id": "e2-1",
+     "question": "Dlaczego klientka wybiera kurs weekendowy?",
+     "options": [
+      "bo pracuje do dziewiętnastej",
+      "bo mieszka daleko od szkoły",
+      "bo kurs wieczorowy jest droższy"
+     ],
+     "answer": "bo pracuje do dziewiętnastej",
+     "explanation": "„W tygodniu pracuję do dziewiętnastej, więc wieczorem nie zdążę”."
+    },
+    {
+     "id": "e2-2",
+     "question": "Ile osób jest w grupie?",
+     "options": [
+      "sześć",
+      "osiem",
+      "dwanaście"
+     ],
+     "answer": "osiem",
+     "explanation": "Sekretarz mówi: „W grupie jest osiem osób”."
+    },
+    {
+     "id": "e2-3",
+     "question": "Ile kosztuje kurs?",
+     "options": [
+      "1200 zł za semestr",
+      "1200 zł za rok",
+      "300 zł miesięcznie"
+     ],
+     "answer": "1200 zł za semestr",
+     "explanation": "„Tysiąc dwieście złotych za semestr. Można płacić w trzech ratach”."
+    },
+    {
+     "id": "e2-4",
+     "question": "Co klientka zrobi przed zapisem?",
+     "options": [
+      "napisze test poziomujący online",
+      "przyjdzie na lekcję próbną",
+      "wyśle świadectwo z liceum"
+     ],
+     "answer": "napisze test poziomujący online",
+     "explanation": "Test poziomujący jest bezpłatny i można go zrobić online."
+    }
+   ]
+  }
+ ]
+}
