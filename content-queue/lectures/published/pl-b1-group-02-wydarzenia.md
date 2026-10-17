@@ -27,11 +27,9 @@ header_image_source: stock
 
 ## 1. Czytanie
 
-**Zanim przeczytasz:** jaka data z historii Twojego kraju jest dla Ciebie najważniejsza? Zapisz ją cyframi — na końcu lekcji przeczytasz ją na głos słownie.
+**Rozgrzewka.** Jaka data z historii Twojego kraju jest dla Ciebie najważniejsza? Zapisz ją cyframi — na końcu lekcji przeczytasz ją na głos słownie.
 
 ### Pięć dat, które zna każdy Polak
-
-[AUDIO: id="pl-b1-group-02-wydarzenia-czytanie", source="tts", text="section:1", voice="pl-PL-male", speed="0.9"]
 
 Zapytaj Polaka o najważniejszą datę w historii kraju, a zamiast jednej odpowiedzi usłyszysz spór. Są jednak daty przełomowe, które zna prawie każdy — ze szkoły, z nazw ulic i z kalendarza świąt.
 
@@ -70,7 +68,7 @@ Dlatego w Polsce historia to nie tylko przedmiot w szkole. To kalendarz: 3 maja 
 
 **40 słów** w sześciu grupach: państwo i władza, wojna i okupacja, przemiany, opowiadanie o przeszłości, w urzędzie i archiwum, święta i dni wolne. Trzy ostatnie grupy przydadzą się w zadaniach komunikacyjnych. Pełna lista z tłumaczeniami jest na końcu lekcji, na stronie **Słowniczek**.
 
-[EXERCISE: file="pl-b1-group-02-wydarzenia-vocab.json", type="vocab-cards"]
+[QUIZLET: set_id="1223593961", url="https://quizlet.com/1223593961/flashcards/embed", title="Słownictwo — Quizlet"]
 
 ---
 
@@ -88,89 +86,23 @@ Porozmawiajmy. Tu nie chodzi o znajomość dat, tylko o argumenty.
 
 ---
 
-## 5. Opis zdjęć
+## 5. Zadania komunikacyjne
 
-Sześć par: po lewej to samo miejsce kilkadziesiąt albo sto lat temu, po prawej dzisiaj. Najpierw powiedz, z jakich lat może być stare zdjęcie, potem opisz oba, na końcu — co się zmieniło. Karteczki z gotowymi wyrażeniami leżą na planszy.
-
-[EXERCISE: file="pl-b1-group-02-wydarzenia-pictures.json", type="picture-set"]
-
----
-
-## 6. Zadania komunikacyjne
-
-Najpierw posłuchaj rozmowy z archiwum, w którym ktoś szuka dokumentu pradziadka, i odpowiedz na cztery pytania.
-
-[AUDIO: id="pl-b1-group-02-wydarzenia-c1-dialog", source="tts", text="pl-b1-group-02-wydarzenia-comm-tasks.json#c1.model_dialogue", voices="pl-PL-female,pl-PL-male", speed="0.95"]
+Najpierw posłuchaj rozmowy z archiwum, w którym ktoś szuka dokumentu pradziadka, i odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
 
 [EXERCISE: file="pl-b1-group-02-wydarzenia-exam.json", type="multiple-choice", blocks="e2"]
 
-Teraz Twoja kolej. Cztery sytuacje, w których daty i terminy decydują o wszystkim. Odwróć kartę i wykonaj zadanie.
+Teraz Twoja kolej. Cztery sytuacje, w których daty i terminy decydują o wszystkim. Odwróć kartę i wykonaj zadanie. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 [EXERCISE: file="pl-b1-group-02-wydarzenia-comm-tasks.json", type="flip-task"]
 
 ---
 
-## 7. Gramatyka: daty i czas — część 1
+## 6. Gramatyka: daty i czas — część 1
 
-[BOARD: id="daty-1", title="Daty i czas · część 1", layout="cards", columns="3", style="sketch-board"]
+Prezentacja krok po kroku: liczebniki porządkowe, rok, data, miesiąc i wiek.
 
-### ① Po co komu
-
-Historia bez dat nie istnieje, a data to liczebnik porządkowy.
-
-✦ Który? — pierwszy, trzeci, jedenasty
-✦ nie „jeden września”, tylko pierwszy września
-
-📌 Główny liczy (trzy lata), porządkowy wskazuje miejsce w kolejności (trzeci rok).
-
-### ② Rok
-
-w + miejscownik: w … roku
-
-✦ w 1989 roku — w tysiąc dziewięćset osiemdziesiątym dziewiątym roku
-✦ w 2004 roku — w dwa tysiące czwartym roku
-✦ w 2000 roku — w dwutysięcznym roku
-
-📌 Porządkowe są tylko dziesiątki i jedności. Tysiąc i dziewięćset się nie zmieniają.
-
-### ③ Kiedy? — pełna data
-
-Dzień, miesiąc i rok w dopełniaczu.
-
-✦ 11 listopada 1918 roku — jedenastego listopada tysiąc dziewięćset osiemnastego roku
-✦ Kiedy masz urodziny? — Dwudziestego piątego marca.
-
-📌 Pytanie „kiedy?” zawsze prowadzi do dopełniacza: pierwszego, drugiego, trzeciego.
-
-### ④ Jaki dziś dzień?
-
-Nazwa daty — dzień w mianowniku.
-
-✦ Dziś jest jedenasty listopada.
-✦ Pierwszy września to tradycyjnie początek roku szkolnego.
-✦ ale: Pierwszego września idziemy do szkoły.
-
-📌 „Jaki dzień?” — mianownik. „Kiedy?” — dopełniacz. Miesiąc w obu przypadkach w dopełniaczu.
-
-### ⑤ Miesiąc z dniem i bez
-
-Jest dzień — dopełniacz. Nie ma dnia — w + miejscownik.
-
-✦ trzeciego maja — w maju
-✦ trzydziestego pierwszego sierpnia — w sierpniu
-✦ we wrześniu, w lutym, w grudniu
-
-📌 W sierpniu 1980 roku, ale 31 sierpnia 1980 roku.
-
-### ⑥ Wieki
-
-Rzymska cyfra to liczebnik porządkowy.
-
-✦ XX wiek — dwudziesty wiek
-✦ w XX wieku — w dwudziestym wieku
-✦ na początku XX wieku — dwudziestego wieku
-
-📌 Odmieniamy jak przymiotnik: w dziesiątym wieku, pod koniec osiemnastego wieku.
+[SLIDES: file="pl-b1-group-02-wydarzenia-slides.json", part="1"]
 
 **Ćwiczenia do części 1** — cztery bloki: dzień, miesiąc, rok i wiek.
 
@@ -178,88 +110,11 @@ Rzymska cyfra to liczebnik porządkowy.
 
 ---
 
-## 8. Gramatyka: daty i czas — część 2
+## 7. Gramatyka: daty i czas — część 2
 
-[BOARD: id="daty-2", title="Daty i czas · część 2", layout="cards", columns="3", style="sketch-board"]
+Prezentacja krok po kroku: okresy, przyimki czasu, kolejność wydarzeń i zapis dat.
 
-### ⑦ Dekady i przełomy
-
-Okresy dłuższe niż rok.
-
-✦ w latach osiemdziesiątych (1980–1989)
-✦ na przełomie XVIII i XIX wieku
-✦ w połowie XX wieku
-
-📌 Lata osiemdziesiąte to dekada, nie osiemdziesiąt lat.
-
-### ⑧ Jak długo?
-
-przez · od… do · w ciągu
-
-✦ przez 123 lata — cały czas
-✦ od 1795 do 1918 roku — granice okresu
-✦ w ciągu kilku dni — najpóźniej w tym czasie
-
-📌 Przez + biernik: przez rok, przez dwa lata, przez całą wojnę.
-
-### ⑨ Przed · po · podczas
-
-Trzy przyimki, trzy przypadki.
-
-✦ przed wojną — narzędnik
-✦ po wojnie — miejscownik
-✦ podczas wojny / w czasie wojny — dopełniacz
-
-📌 Ucz się ich razem z rzeczownikiem, nie osobno.
-
-### ⑩ Temu · za · później
-
-Odległość w czasie.
-
-✦ sto lat temu
-✦ za dziesięć lat
-✦ rok wcześniej · kilka miesięcy później
-
-📌 Temu zawsze stoi po liczbie: sto lat temu, nigdy „temu sto lat”.
-
-### ⑪ Kolejność wydarzeń
-
-zanim · po tym, jak · kiedy / gdy
-
-✦ Zanim wybuchła wojna, Polska była wolna przez 21 lat.
-✦ Po tym, jak upadł mur, zmieniła się Europa.
-
-📌 Po „zanim” i „po tym, jak” zwykle czasownik dokonany: wybuchła, upadł.
-
-### ⑫ Zapis dat
-
-Jak to wygląda na papierze.
-
-✦ 11 XI 1918 r. — miesiąc cyfrą rzymską
-✦ XX w. — skrót od „wiek”
-✦ w latach 90. — kropka zamiast końcówki
-
-📌 Do cyfr nie dopisujemy końcówek: nie „11-go”, nie „90-te”.
-
-### ⑬ Pułapki z ukraińskiego · 1
-
-Przyimki czasu wyglądają podobnie, ale rządzą czym innym.
-
-✦ з 1795 по 1918 → ✗ z 1795 po 1918 → ✓ od 1795 do 1918
-✦ після війни → ✗ po wojny → ✓ po wojnie
-✦ під час війни → ✗ pod czas wojny → ✓ podczas wojny
-
-📌 Dlaczego: „po” łączy się z miejscownikiem, a „podczas” to jedno słowo.
-
-### ⑭ Pułapki z ukraińskiego · 2
-
-Liczebnik, „raz” i zapis.
-
-✦ у 1989 році → ✗ osiemdziesiąt dziewięć roku → ✓ osiemdziesiątym dziewiątym roku
-✦ вперше → ✗ w pierwszy raz → ✓ po raz pierwszy
-✦ у 90-х → ✗ w latach 90-tych → ✓ w latach 90.
-
-📌 Dlaczego: rok to liczebnik porządkowy, a potocznie mówi się też „pierwszy raz”.
+[SLIDES: file="pl-b1-group-02-wydarzenia-slides.json", part="2"]
 
 **Ćwiczenia do części 2** — okresy, kolejność, jedna rodzinna historia i pułapki na koniec.
 
@@ -267,7 +122,7 @@ Liczebnik, „raz” i zapis.
 
 ---
 
-## 9. Podsumowanie
+## 8. Podsumowanie
 
 Sprawdź, czy umiesz to, co obiecaliśmy na początku:
 
@@ -279,7 +134,7 @@ Sprawdź, czy umiesz to, co obiecaliśmy na początku:
 
 ---
 
-## 10. Praca domowa
+## 9. Praca domowa
 
 Cztery części — słownictwo i gramatyka, wideo, czytanie i pisanie.
 
@@ -361,7 +216,7 @@ Wszystkie 40 słów lekcji w jednym miejscu. Wracaj tu przed pracą domową i pr
 | **pokolenie** | покоління | Moje pokolenie nie pamięta świata bez internetu. |
 | **rocznica** | річниця | W sobotę rodzice świętują trzydziestą rocznicę ślubu. |
 | **upamiętnić** | увічнити, вшанувати | Miasto upamiętniło lekarza, nadając jego imię szpitalowi. |
-| **przełom** | перелом, зламом | Na przełomie wieków do miasta przyjechało wielu nowych mieszkańców. |
+| **przełom** | перелом, злам | Na przełomie wieków do miasta przyjechało wielu nowych mieszkańców. |
 
 ### W urzędzie i archiwum
 
@@ -387,3 +242,12 @@ Wszystkie 40 słów lekcji w jednym miejscu. Wracaj tu przed pracą domową i pr
 | **nieczynny** | зачинений, не працює | Winda jest nieczynna do piątku. |
 | **przełożyć** | перенести | Szef przełożył spotkanie na przyszły tydzień. |
 | **godziny otwarcia** | години роботи | Godziny otwarcia są wywieszone na drzwiach. |
+
+---
+
+## Źródła
+
+- [Święto Narodowe Trzeciego Maja — Mazowiecki Urząd Wojewódzki (gov.pl)](https://www.gov.pl/web/uw-mazowiecki/swieto-narodowe-trzeciego-maja) — Konstytucja 3 maja i jej 14 miesięcy.
+- [Wybory parlamentarne 1989 roku — Zintegrowana Platforma Edukacyjna (gov.pl)](https://zpe.gov.pl/a/D1F1N0oy2) — 161 mandatów w Sejmie i 99 w Senacie.
+- [Druga tura wyborów 18 czerwca 1989 — dzieje.pl](https://dzieje.pl/node/105333) — wybory czerwcowe i rząd Mazowieckiego.
+- [Rocznica bitwy pod Grunwaldem — dzieje.pl](https://dzieje.pl/aktualnosci/rocznica-bitwy-pod-grunwaldem) — tekst do pracy domowej.

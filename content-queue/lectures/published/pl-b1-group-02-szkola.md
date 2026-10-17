@@ -5,6 +5,11 @@ lesson_number: 2
 level: B1
 tags: [szkoła, edukacja, studia, wspomnienia, czas-przeszły, czasowniki-na-ec, konwersacja]
 status: draft
+duration_minutes: 180
+sessions: 2
+grammar_points: [ec-z-a, ec-wzor, ec-liczba-mnoga, ec-meskoosobowe, ec-narracja, wiedziec-widziec-znac, ec-wyjatki, przeczenie-dopelniacz, kalki-uk, slownictwo]
+exam_skills: [czytanie, sluchanie, pisanie, mowienie]
+recycles: [{lesson: 1, words: [zgłoszenie, zniżka, rezerwacja], grammar: [bierna-byc-zostac]}]
 header_image_keywords: "old wooden school desk notebook"
 header_image_source: stock
 header_image: "/content/pl-b1-group-02-szkola/header.jpg"
@@ -12,9 +17,18 @@ header_image: "/content/pl-b1-group-02-szkola/header.jpg"
 
 # Zapach kredy. Szkoła, której już nie ma
 
+**Po tej lekcji potrafisz:**
+
+- 🎯 opowiedzieć o swojej szkole i nauczycielach w czasie przeszłym;
+- 🎯 poprawnie odmienić czasowniki na -eć: miałem, mieliśmy, chciały, wiedzieli;
+- 🎯 odróżnić *wiedziałem*, *widziałem* i *znałem*;
+- 🎯 załatwić sprawę w dziekanacie: zapytać o zaświadczenie, termin i dokumenty.
+
 ---
 
 ## 1. Czytanie
+
+**Rozgrzewka.** Jakie jedno słowo kojarzy ci się ze szkołą? Zapisz je na kartce. Na końcu lekcji powiesz o nim zdanie w czasie przeszłym.
 
 ### Pani Barbara i druga ławka pod oknem
 
@@ -46,13 +60,17 @@ Ciekawe jest to, co zostaje po latach. Nie oceny, nie wzory, nie daty. Zostaje k
 4. Co, zdaniem autora, zostaje w pamięci po studiach, a co znika?
 5. Znajdź w tekście zdanie, które najlepiej pokazuje stosunek autora do szkoły. Zgadzasz się z nim?
 
+**Jak na egzaminie:** sześć zdań — prawda czy fałsz?
+
+[EXERCISE: file="pl-b1-group-02-szkola-exam.json", type="true-false", blocks="e1"]
+
 ---
 
 ## 3. Słownictwo
 
-**40 słów** w pięciu grupach: szkoła i wspomnienia; lekcje, oceny, egzaminy; nauczyciele i uczniowie; studia i uczelnia; formalności i zapisy. Ostatnia grupa przyda się w rozdziale 6 — bez niej rozmowa z dziekanatem skończy się na „przepraszam, nie rozumiem”.
+**40 słów** w pięciu grupach: szkoła i wspomnienia; lekcje, oceny, egzaminy; nauczyciele i uczniowie; studia i uczelnia; formalności i zapisy. Ostatnia grupa przyda się w rozdziale 5 — bez niej rozmowa z dziekanatem skończy się na „przepraszam, nie rozumiem”.
 
-[EXERCISE: file="pl-b1-group-02-szkola-vocab.json", type="vocab-cards"]
+[QUIZLET: set_id="1223594183", url="https://quizlet.com/1223594183/flashcards/embed", title="Słownictwo — Quizlet"]
 
 ---
 
@@ -70,192 +88,55 @@ Wróć na chwilę do tamtej ławki. Mów długo, nie skracaj.
 
 ---
 
-## 5. Opis zdjęć
+## 5. Zadania komunikacyjne
 
-[BOARD: id="szkola-wtedy-i-dzis", title="Szkoła wtedy i dziś", layout="collage", style="polaroid-board", label_style="tape", note="sześć par zdjęć w ramkach polaroid, etykieta na skotczu nad parą, karteczki z wyrażeniami rozrzucone po planszy"]
+Najpierw posłuchaj rozmowy: klientka dzwoni do szkoły językowej i pyta o kurs niemieckiego. Odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
 
-Sześć par: po lewej szkoła twoich dziadków, po prawej szkoła dzisiejsza. Opisz najpierw stare zdjęcie, potem nowe, na końcu powiedz, co zniknęło bezpowrotnie — i czy ci tego szkoda.
+[EXERCISE: file="pl-b1-group-02-szkola-exam.json", type="multiple-choice", blocks="e2"]
 
-**Karteczki z wyrażeniami** — sięgaj po nie, kiedy zabraknie ci słów:
-
-- Na starym zdjęciu widać…, a dziś…
-- Kiedyś każdy uczeń musiał…, teraz wystarczy…
-- To zostało zastąpione przez…
-- Pamiętam, że u nas w szkole też…
-- Na pierwszy rzut oka wydaje się, że nic się nie zmieniło, ale…
-- Największa różnica polega na tym, że…
-
-[EXERCISE: file="pl-b1-group-02-szkola-pictures.json", type="picture-set"]
-
----
-
-## 6. Zadania komunikacyjne
-
-Cztery sytuacje, w których trzeba zadzwonić, zapytać i dogadać się po polsku. Odwróć kartę i odegraj rozmowę.
+Teraz Twoja kolej. Cztery sytuacje, w których trzeba zadzwonić, zapytać i dogadać się po polsku. Odwróć kartę i odegraj rozmowę. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 [EXERCISE: file="pl-b1-group-02-szkola-comm-tasks.json", type="flip-task"]
 
 ---
 
-## 7. Gramatyka: czas przeszły czasowników na -eć
+## 6. Gramatyka: czas przeszły czasowników na -eć — część 1
 
-[BOARD: id="czas-przeszly-ec", title="Czasowniki na -eć — tablica", layout="cards", columns="3", style="sketch-board", note="każdy H3 = karta z numerem w kółku, wiersze z ✦ = kolorowe plakietki, akapit z 📌 = żółta karteczka na dole karty"]
+Prezentacja krok po kroku: wzór -ał, liczba pojedyncza i mnoga, męskoosobowe -eli, wyjątki.
 
-### ① Po co ta lekcja
+[SLIDES: file="pl-b1-group-02-szkola-slides.json", part="1"]
 
-Wspomnienia opowiadamy tylko w czasie przeszłym.
+**Ćwiczenia do części 1** — pięć bloków: od rozpoznawania formy do krótkiej historii z liceum.
 
-✦ Mam kolegę. → Miałem kolegę.
-✦ Chcę odpocząć. → Chciałem odpocząć.
-
-📌 Czasowniki na -eć odmieniają się inaczej niż te na -ić. Właśnie w nich robisz najwięcej błędów.
-
-### ② Wzór
-
-Odetnij -eć, dodaj -ał i końcówkę.
-
-✦ mieć → mia + ł + em
-✦ widzieć → widzia + ł + am
-✦ musieć → musia + ł + o
-
-📌 Litera a bierze się znikąd. W bezokoliczniku jej nie ma i to myli.
-
-### ③ Ja, ty, on
-
-Rodzaj słychać w samej końcówce.
-
-✦ miałem, miałeś, miał
-✦ miałam, miałaś, miała
-✦ ono miało
-
-📌 Miałem mówi mężczyzna, miałam kobieta. Zaimek ja jest tu zupełnie niepotrzebny.
-
-### ④ My, wy, oni
-
-Tu zaczyna się prawdziwa różnica.
-
-✦ mieliśmy, mieliście, mieli
-✦ miałyśmy, miałyście, miały
-
-📌 Grupa z jednym chłopakiem → mieli. Same dziewczyny → miały.
-
-### ⑤ Ł to A, L to E
-
-Jedna zasada na wszystko.
-
-✦ przed ł: chciał, chciała, chciały
-✦ przed l: chcieli, chcielibyśmy
-
-📌 Popatrz na literę po samogłosce. Twarde ł ciągnie za sobą a, miękkie l ciągnie e.
-
-### ⑥ Szkolne czasowniki
-
-Wszystkie działają według jednego wzoru.
-
-✦ umieć → umiałem, umieliśmy
-✦ rozumieć → rozumiałam, rozumieli
-✦ woleć → wolałem, wolały
-
-📌 wiedzieć → wiedziałem. Formy „wiedziłem” nie ma w polszczyźnie w ogóle.
-
-### ⑦ Wiedzieć czy widzieć
-
-Dwa słowa, jedna litera różnicy.
-
-✦ wiedziałem = знав
-✦ widziałem = бачив
-
-📌 Wiedziałem o egzaminie. Widziałem go na korytarzu. Nigdy odwrotnie.
-
-### ⑧ Patrzeć — wyjątek
-
-Wygląda jak reszta, zachowuje się inaczej.
-
-✦ patrzeć → patrzył, patrzyła
-✦ patrzyli, patrzyły
-
-📌 leżeć daje leżał, słyszeć daje słyszał, ale patrzeć daje patrzył. Tego uczymy się na pamięć.
-
-### ⑨ Grupa -rzeć
-
-Inna końcówka: -arł.
-
-✦ zetrzeć → starłem tablicę
-✦ umrzeć → umarł, umarli
-
-📌 Nie „umrzał” i nie „zetrzał”. Ta grupa gubi e całkowicie.
-
-### ⑩ Czasowniki bez „ja”
-
-Istnieją tylko w trzeciej osobie.
-
-✦ Bolał mnie brzuch przed klasówką.
-✦ Bolała mnie głowa.
-✦ Wszystko zależało od nauczyciela.
-
-📌 Nie mówimy „bolałem”. To część ciała boli, nie ty.
-
-### ⑪ Należeć do
-
-Czasownik z przyimkiem na stałe.
-
-✦ Należałem do kółka teatralnego.
-✦ Ona należała do najlepszych uczennic.
-
-📌 Zawsze należeć DO + dopełniacz. Nigdy „należeć w”.
-
-### ⑫ Przeczenie
-
-Czasownik zostaje, rzeczownik zmienia przypadek.
-
-✦ Miałem czas. → Nie miałem czasu.
-✦ Widziałem kolegę. → Nie widziałem kolegi.
-
-📌 Biernik zamienia się w dopełniacz. Sama forma miałem się nie zmienia.
-
-### ⑬ Czego nie mieszać
-
--eć to nie -ić i nie -ać.
-
-✦ robić → robił (bez a)
-✦ myśleć → myślał (z a)
-✦ pytać → pytał
-
-📌 Najpierw sprawdź bezokolicznik, dopiero potem pisz końcówkę. Odwrotna kolejność kończy się błędem.
-
-### ⑭ Pułapki z ukraińskiego
-
-Sześć kalek — tak jest poprawnie.
-
-✦ Miałem dużo wolnego czasu.
-✦ Dziewczyny chciały wyjść wcześniej.
-✦ Myślałem o tobie całą lekcję.
-✦ Znałem go ze szkoły.
-
-📌 Nie tak: mełem · chcieli o dziewczynach · myślił · musił · patrzał · wiedziałem go zamiast znałem go.
+[EXERCISE: file="pl-b1-group-02-szkola-grammar.json", type="fill-in-blank", blocks="g1-g5"]
 
 ---
 
-## 8. Ćwiczenia gramatyczne
+## 7. Gramatyka: czas przeszły czasowników na -eć — część 2
 
-Od rozpoznawania formy do opowiadania własnych wspomnień.
+Prezentacja krok po kroku: wiedzieć, widzieć i znać, czasowniki bez „ja”, należeć do, przeczenie i pułapki z ukraińskiego.
 
-[EXERCISE: file="pl-b1-group-02-szkola-grammar.json", type="fill-in-blank"]
+[SLIDES: file="pl-b1-group-02-szkola-slides.json", part="2"]
 
----
+**Ćwiczenia do części 2** — wiedzieć czy widzieć, wyjątki i przeczenie.
 
-## 9. Podsumowanie
-
-Zanim skończymy, sprawdźmy, co zostało w głowie:
-
-- Powiedz jedno zdanie o swojej klasie, używając czasownika **mieć** w liczbie mnogiej.
-- Powiedz zdanie o kolegach i zdanie o koleżankach z tym samym czasownikiem. Co się zmieniło w końcówce?
-- Ułóż dwa zdania: jedno z **wiedziałem**, drugie z **widziałem**.
-- Co było dziś najtrudniejsze: wymiana e na a, męskoosobowa końcówka -eli czy wyjątki typu **patrzeć**?
+[EXERCISE: file="pl-b1-group-02-szkola-grammar.json", type="fill-in-blank", blocks="g6-g8"]
 
 ---
 
-## 10. Praca domowa
+## 8. Podsumowanie
+
+Sprawdź, czy umiesz to, co obiecaliśmy na początku:
+
+- Opowiedz w trzech zdaniach o swojej klasie. Użyj czasownika **mieć** w liczbie mnogiej.
+- Powiedz zdanie o kolegach i zdanie o koleżankach z tym samym czasownikiem na -eć. Co się zmieniło w końcówce?
+- Ułóż trzy zdania: z **wiedziałem**, z **widziałem** i ze **znałem**.
+- Zadaj dwa pytania, które zadasz w dziekanacie, kiedy potrzebujesz zaświadczenia.
+- Wróć do słowa z rozgrzewki i powiedz o nim jedno zdanie w czasie przeszłym.
+
+---
+
+## 9. Praca domowa
 
 Cztery części — słownictwo, gramatyka, wideo i pisanie.
 
@@ -278,7 +159,7 @@ Wypisz pięć informacji o polskim systemie i zapisz każdą jednym pełnym zdan
 
 ### Pisanie
 
-Napisz krótkie wspomnienie (**140–170 słów**) na temat: **„Nauczyciel, którego pamiętam do dziś”**.
+Napisz krótkie wspomnienie (**120–150 słów**) na temat: **„Nauczyciel, którego pamiętam do dziś”**.
 
 W tekście musi się znaleźć:
 - opis tej osoby i przedmiotu, którego uczyła (dwa zdania w czasie przeszłym),
@@ -355,3 +236,10 @@ Wszystkie 40 słów lekcji w jednym miejscu. Wracaj tu przed pracą domową i pr
 | **rekrutacja** | вступна кампанія | Rekrutacja na ten kierunek trwa do lipca. |
 | **czesne** | плата за навчання | Czesne można płacić w ratach. |
 | **zaliczenie** | залік | Bez zaliczenia z ćwiczeń nie podejdziesz do egzaminu. |
+
+---
+
+## Źródła
+
+- [Organizacja i struktura systemu edukacji — Eurydice (Komisja Europejska)](https://eurydice.eacea.ec.europa.eu/pl/eurypedia/poland/organizacja-i-struktura-systemu-edukacji) — szkoła podstawowa, liceum, technikum, szkoła branżowa.
+- [System edukacji w Polsce — Perspektywy zawodowe](https://perspektywyzawodowe.pnwm.org/informacje-o-ksztalceniu/systemy-edukacji/system-edukacji-polsce/) — matura, studia, licencjat i magisterium.

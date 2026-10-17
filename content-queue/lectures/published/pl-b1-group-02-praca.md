@@ -5,6 +5,11 @@ lesson_number: 2
 level: B1
 tags: [praca, praca-zdalna, samozatrudnienie, umowy, rozmowa-kwalifikacyjna, rzeczowniki-odczasownikowe, konwersacja]
 status: draft
+duration_minutes: 180
+sessions: 2
+grammar_points: [ro-czynnosc-rzecz, ro-wzor, ro-dopelniacz, ro-rekcja-sie, ro-przyimki, ro-aspekt, ro-leksykalizacja, ro-pulapki, kalki-uk, slownictwo]
+exam_skills: [czytanie, sluchanie, pisanie, mowienie]
+recycles: [{lesson: 1, words: [zgłoszenie, naprawa, zniżka], grammar: [bierna-byc-zostac]}]
 header_image_keywords: "office desk laptop"
 header_image_source: stock
 header_image: "/content/pl-b1-group-02-praca/header.jpg"
@@ -12,9 +17,18 @@ header_image: "/content/pl-b1-group-02-praca/header.jpg"
 
 # Etat, zlecenie czy własna firma? Praca w Polsce
 
+**Po tej lekcji potrafisz:**
+
+- 🎯 porównać umowę o pracę, umowę zlecenia i własną firmę;
+- 🎯 tworzyć rzeczowniki odczasownikowe i używać ich z przyimkami *po, przed, w trakcie*;
+- 🎯 zadawać pytania na rozmowie kwalifikacyjnej i negocjować warunki;
+- 🎯 opowiedzieć o zaletach i wadach pracy zdalnej.
+
 ---
 
 ## 1. Czytanie
+
+**Rozgrzewka.** Zapisz trzy czynności, które robisz w pracy albo w domu każdego dnia (same czasowniki). Na końcu lekcji zamienisz je na rzeczowniki.
 
 ### Na jakiej umowie?
 
@@ -46,13 +60,17 @@ Która droga jest najlepsza? Nie ma jednej odpowiedzi. Etat daje spokój, zlecen
 4. Na czym polega ulga dla osób, które zakładają własną firmę? Jakiej składki ta ulga nie obejmuje?
 5. Jakie wady pracy zdalnej wymienia autor? Z którą zgadzasz się najbardziej?
 
+**Jak na egzaminie:** sześć zdań — prawda czy fałsz?
+
+[EXERCISE: file="pl-b1-group-02-praca-exam.json", type="true-false", blocks="e1"]
+
 ---
 
 ## 3. Słownictwo
 
 **39 słów** w pięciu grupach: praca i zatrudnienie, umowy i formalności, własna firma, praca zdalna, rozmowa kwalifikacyjna i negocjacje. Ostatnia grupa przyda się od razu w zadaniach komunikacyjnych. Pełna lista z tłumaczeniami czeka na końcu lekcji, na stronie **Słowniczek**.
 
-[EXERCISE: file="pl-b1-group-02-praca-vocab.json", type="vocab-cards"]
+[QUIZLET: set_id="1214747942", url="https://quizlet.com/1214747942/flashcards/embed", title="Słownictwo — Quizlet"]
 
 ---
 
@@ -72,168 +90,49 @@ Tu nie ma dobrych odpowiedzi. Jest stanowisko, argument i kontrargument.
 
 ## 5. Zadania komunikacyjne
 
-Cztery sytuacje z rozmowy o pracę — od pierwszego pytania rekrutera do ostatecznej oferty. Odwróć kartę i odegraj rozmowę. Wyjdź z niej ze wszystkimi informacjami z listy.
+Najpierw posłuchaj rozmowy kwalifikacyjnej: kandydatka ubiega się o stanowisko kierowniczki zmiany w hotelu. Odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
+
+[EXERCISE: file="pl-b1-group-02-praca-exam.json", type="multiple-choice", blocks="e2"]
+
+Teraz Twoja kolej. Cztery sytuacje z rozmowy o pracę — od pierwszego pytania rekrutera do ostatecznej oferty. Odwróć kartę i odegraj rozmowę, a potem wyjdź z niej ze wszystkimi informacjami z listy. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 [EXERCISE: file="pl-b1-group-02-praca-comm-tasks.json", type="flip-task"]
 
 ---
 
-## 6. Gramatyka: rzeczowniki odczasownikowe
+## 6. Gramatyka: rzeczowniki odczasownikowe — część 1
 
-[BOARD: id="rzeczowniki-odczasownikowe", title="Rzeczowniki odczasownikowe — tablica", layout="cards", columns="3", style="sketch-board", note="każdy H3 = karta z numerem w kółku, wiersze z ✦ = kolorowe plakietki, akapit z 📌 = żółta karteczka na dole karty"]
+Prezentacja krok po kroku: od czasownika do rzeczownika, końcówki, wyjątki, dopełnienie, rekcja i „się”.
 
-### ① Po co komu
+[SLIDES: file="pl-b1-group-02-praca-slides.json", part="1"]
 
-Czynność zamieniona w rzecz.
+**Ćwiczenia do części 1** — czynność czy rzecz, wzór, dopełniacz i rekcja.
 
-✦ Szukam pracy.
-✦ Szukanie pracy trwa miesiącami.
-✦ Palenie wzbronione.
-
-📌 Dom tych słów: CV, ogłoszenia, umowy, pisma z urzędu.
-
-### ② Wzór
-
-Imiesłów bierny: -ny → -nie, -ty → -cie
-
-✦ pisany → pisanie
-✦ zatrudniony → zatrudnienie
-✦ zamknięty → zamknięcie
-
-📌 Znasz imiesłów bierny z lekcji 1? Masz już połowę pracy.
-
-### ③ Końcówki
-
--anie · -enie · -cie
-
-✦ szukać → szukanie
-✦ rozliczyć → rozliczenie
-✦ pić → picie
-
-📌 Wymiana jak w imiesłowie: prosić → proszenie, nosić → noszenie.
-
-### ④ Rodzaj i odmiana
-
-Zawsze nijaki, odmiana jak „zdanie”.
-
-✦ to zatrudnienie
-✦ bez zatrudnienia
-✦ o zatrudnieniu
-✦ z zatrudnieniem
-
-📌 Liczba mnoga też istnieje: spotkania, zaproszenia, zlecenia.
-
-### ⑤ Proces czy wynik
-
-Aspekt zostaje w rzeczowniku.
-
-✦ niedk.: wypełnianie wniosku trwało godzinę
-✦ dk.: po wypełnieniu wniosku kliknij „Wyślij”
-
-📌 Trwa, zajmuje czas → niedokonany. Po, przed → zwykle dokonany.
-
-### ⑥ Dopełnienie
-
-Biernik zamienia się w dopełniacz.
-
-✦ piszę list → pisanie listu
-✦ prowadzę firmę → prowadzenie firmy
-✦ podpisuję umowę → podpisanie umowy
-
-📌 Kto to robi? przez + biernik: podpisanie umowy przez pracodawcę.
-
-### ⑦ Rekcja zostaje
-
-Zmienia się tylko biernik.
-
-✦ zarządzać zespołem → zarządzanie zespołem
-✦ pomagać klientom → pomaganie klientom
-✦ korzystać z auta → korzystanie z auta
-
-📌 Narzędnik, celownik i przyimki przechodzą bez zmian.
-
-### ⑧ Z „się”
-
-„Się” nie znika.
-
-✦ uczyć się → uczenie się
-✦ zgłaszać się → zgłaszanie się
-✦ skupić się → skupienie się
-
-📌 Bez „się” zmienia się sens: uczenie dzieci to nie uczenie się.
-
-### ⑨ Z przyimkiem
-
-Język umów i urzędów.
-
-✦ po podpisaniu umowy — miejscownik
-✦ przed rozpoczęciem pracy — narzędnik
-✦ w trakcie szukania — dopełniacz
-✦ wniosek do wypełnienia — dopełniacz
-
-📌 Przyimek wybiera przypadek, rzeczownik tylko się odmienia.
-
-### ⑩ Przeczenie
-
-Nie + rzeczownik = razem.
-
-✦ niezapłacenie składek
-✦ niedotrzymanie terminu
-✦ niestawienie się do pracy
-
-📌 Czasownik osobno: nie zapłacił. Rzeczownik razem: niezapłacenie.
-
-### ⑪ Słowa-rzeczy
-
-Niektóre dostały własne znaczenie.
-
-✦ zwolnienie z pracy / zwolnienie lekarskie
-✦ wypowiedzenie umowy
-✦ wynagrodzenie = pensja
-✦ umowa zlecenia
-
-📌 Zwolnienie lekarskie (L4) to nie utrata pracy, tylko dni wolne z powodu choroby.
-
-### ⑫ Nieregularne
-
-Do zapamiętania na pamięć.
-
-✦ jeść → jedzenie
-✦ wziąć → wzięcie
-✦ znaleźć → znalezienie
-✦ pójść → pójście
-
-📌 Mieć nie daje rzeczownika czynności. Mienie to majątek.
-
-### ⑬ Pułapki z ukraińskiego
-
-Cztery kalki — tak jest poprawnie.
-
-✦ після підписання → po podpisaniu
-✦ для заповнення → do wypełnienia
-✦ досвід роботи → doświadczenie zawodowe
-✦ виконання → wykonanie (jedno n)
-
-📌 Nie tak: po podpisania · dla wypełnienia · doświadczenie pracy · wykonannie.
+[EXERCISE: file="pl-b1-group-02-praca-grammar.json", type="fill-in-blank", blocks="g1-g4"]
 
 ---
 
-## 7. Ćwiczenia gramatyczne
+## 7. Gramatyka: rzeczowniki odczasownikowe — część 2
 
-Osiem bloków: od rozpoznawania formy do pułapek, w które wpadają nawet zaawansowani.
+Prezentacja krok po kroku: odmiana, przyimki po i przed, proces czy wynik, słowa-rzeczy, przeczenie i pułapki z ukraińskiego.
 
-[EXERCISE: file="pl-b1-group-02-praca-grammar.json", type="fill-in-blank"]
+[SLIDES: file="pl-b1-group-02-praca-slides.json", part="2"]
+
+**Ćwiczenia do części 2** — historia Oleny, aspekt, słowa-rzeczy i pułapki.
+
+[EXERCISE: file="pl-b1-group-02-praca-grammar.json", type="fill-in-blank", blocks="g5-g8"]
 
 ---
 
 ## 8. Podsumowanie
 
-Zanim skończymy, sprawdźmy, co zostało w głowie:
+Sprawdź, czy umiesz to, co obiecaliśmy na początku:
 
-- Zamień na rzeczowniki dwie czynności, które robisz codziennie w pracy albo w domu.
+- Którą formę zatrudnienia wybrałbyś dzisiaj? Porównaj ją z jedną z dwóch pozostałych, używając trzech nowych słów z lekcji.
 - Powiedz jedno zdanie z **po + …niu** i jedno z **przed + …niem**.
-- Czym różni się **zwolnienie z pracy** od **zwolnienia lekarskiego**?
-- Którą formę zatrudnienia wybrałbyś dzisiaj? Opowiedz o niej, używając trzech nowych słów z lekcji.
+- Zadaj dwa pytania o warunki pracy, które zadasz na rozmowie kwalifikacyjnej.
+- Wymień jedną zaletę i jedną wadę pracy zdalnej. Czym różni się **zwolnienie z pracy** od **zwolnienia lekarskiego**?
+- Wróć do trzech czynności z rozgrzewki i zamień je na rzeczowniki odczasownikowe.
 
 ---
 
@@ -338,3 +237,12 @@ Wszystkie 39 słów lekcji w jednym miejscu. Wracaj tu przed pracą domową i pr
 | **okres próbny** | випробувальний термін | Okres próbny trwa u nas trzy miesiące. |
 | **benefity** | бонуси, соцпакет | Benefity są miłe, ale nie zastąpią dobrej pensji. |
 | **wdrożenie** | адаптація, онбординг | Wdrożenie nowego kolegi zajęło nam dwa tygodnie. |
+
+---
+
+## Źródła
+
+- [Wynagrodzenie minimalne w 2026 r. — Zielona Linia (gov.pl)](https://zielonalinia.gov.pl/wynagrodzenie-minimalne-w-2026-1/) — 4806 zł brutto i 31,40 zł za godzinę.
+- [Działalność gospodarcza i umowa zlecenia wliczone do stażu pracy — Powroty.gov.pl](https://powroty.gov.pl/nowosc-w-prawie-pracy/) — zmiany od 2026 roku.
+- [Praca zdalna — przydatne informacje — Zielona Linia (gov.pl)](https://zielonalinia.gov.pl/praca-zdalna-przydatne-informacje-dla-pracownikow-i-pracodawcow/) — rodzaje pracy zdalnej i limit 24 dni.
+- [Ulga na start — pół roku bez składek — Forsal](https://forsal.pl/artykuly/1120405,konstytucja-biznesu-ulga-na-start-pol-roku-bez-skladek-na-ubezpieczenie-spoleczne.html) — ulga dla nowych przedsiębiorców.

@@ -5,15 +5,29 @@ lesson_number: 3
 level: A2–B1
 tags: [zwierzęta, pies, adopcja, schronisko, weterynarz, tryb-rozkazujący, konwersacja]
 status: draft
+duration_minutes: 180
+sessions: 2
+grammar_points: [tr-funkcja, tr-wzor, tr-osoby, tr-przeczenie, tr-praktyka, tr-ton, tr-nieregularne, tr-pulapki, kalki-uk, slownictwo]
+exam_skills: [czytanie, sluchanie, pisanie, mowienie]
+recycles: [{lesson: 3, words: [wolontariusz, schronisko, zgłoszenie], grammar: [zeby-cel]}]
 header_image_keywords: "dog shelter adoption"
 header_image_source: stock
 ---
 
 # Zanim weźmiesz psa: schronisko czy hodowla?
 
+**Po tej lekcji potrafisz:**
+
+- 🎯 dać radę albo polecenie w trybie rozkazującym, także z *nie* i *niech*;
+- 🎯 dobrać ton: do przyjaciela, do grupy i grzecznie do obcej osoby;
+- 🎯 porównać adopcję ze schroniska i zakup psa z hodowli;
+- 🎯 załatwić sprawę u weterynarza, w schronisku i z sąsiadem.
+
 ---
 
 ## 1. Czytanie
+
+**Rozgrzewka.** Jakie polecenie najczęściej słyszy pies? Zapisz je po polsku albo w swoim języku. Na końcu lekcji powiesz je w trzech formach.
 
 ### Zanim weźmiesz psa
 
@@ -45,13 +59,17 @@ Druga droga to schronisko. Tu na dom czekają szczeniaki i dorosłe psy, miesza�
 4. Jaki obowiązek ma dziś każdy właściciel psa w Polsce, a co zmieni nowa ustawa?
 5. Dlaczego pierwsze dni z psem ze schroniska bywają trudne i co wtedy robić?
 
+**Jak na egzaminie:** sześć zdań — prawda czy fałsz?
+
+[EXERCISE: file="pl-b1-group-03-pies-exam.json", type="true-false", blocks="e1"]
+
 ---
 
 ## 3. Słownictwo
 
 **38 słów** w pięciu grupach: pies i jego wygląd, wyprawka, zdrowie i formalności, adopcja i hodowla, codzienna opieka i sąsiedzi. Trzy ostatnie grupy przydadzą się w zadaniach komunikacyjnych. Pełna lista czeka na końcu lekcji, na stronie **Słowniczek**.
 
-[EXERCISE: file="pl-b1-group-03-pies-vocab.json", type="vocab-cards"]
+[QUIZLET: set_id="1223594482", url="https://quizlet.com/1223594482/flashcards/embed", title="Słownictwo — Quizlet"]
 
 ---
 
@@ -75,61 +93,55 @@ Wyobraź sobie, że pies właśnie przyjechał do Twojego domu. Napisz pięć za
 
 ---
 
-## 5. Opis zdjęć
+## 5. Zadania komunikacyjne
 
-[BOARD: id="pies-dwa-swiaty", title="Pies: dwa światy", layout="collage", style="polaroid-board", label_style="tape", note="sześć par zdjęć w ramkach polaroid, etykieta na skotczu nad parą, karteczki z wyrażeniami rozrzucone po planszy"]
+Najpierw posłuchaj rozmowy: klient dzwoni do schroniska w sprawie suczki Luny. Odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
 
-Sześć par zdjęć. Opisz najpierw pierwsze, potem drugie, na końcu — co je łączy albo co je różni. Przy każdej parze daj właścicielowi jedną radę w trybie rozkazującym.
+[EXERCISE: file="pl-b1-group-03-pies-exam.json", type="multiple-choice", blocks="e2"]
 
-**Karteczki z wyrażeniami** — sięgaj po nie, kiedy zabraknie ci słów:
-
-- Na pierwszym zdjęciu widać…
-- W porównaniu z tym psem…
-- Ten pies wygląda na…
-- Moim zdaniem lepiej…, bo…
-- Radzę ci: …
-- Nie zapominaj, że…
-
-[EXERCISE: file="pl-b1-group-03-pies-pictures.json", type="picture-set"]
-
----
-
-## 6. Zadania komunikacyjne
-
-Cztery rozmowy, które czekają każdego przyszłego właściciela psa: schronisko, weterynarz, sąsiad i opiekun na czas urlopu. Odwróć kartę i wykonaj zadanie.
+Teraz Twoja kolej. Cztery rozmowy, które czekają każdego przyszłego właściciela psa: schronisko, weterynarz, sąsiad i opiekun na czas urlopu. Odwróć kartę i wykonaj zadanie. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 [EXERCISE: file="pl-b1-group-03-pies-comm-tasks.json", type="flip-task"]
 
 ---
 
-## 7. Gramatyka: tryb rozkazujący
+## 6. Gramatyka: tryb rozkazujący — część 1
 
-Trzynaście kart. Pod każdą kartą są dwa małe zadania — zrób je, zanim przejdziesz do następnej karty.
+Prezentacja krok po kroku: po co, wzór, ty / my / wy, końcówki, wymiany i przeczenie.
 
-[EXERCISE: file="pl-b1-group-03-pies-grammar-board.json", type="grammar-board"]
+[SLIDES: file="pl-b1-group-03-pies-slides.json", part="1"]
 
----
+**Ćwiczenia do części 1** — rozkaz czy informacja, wzór, osoby i zakazy.
 
-## 8. Ćwiczenia gramatyczne
-
-Osiem bloków: od rozpoznawania formy do tonu i pułapek.
-
-[EXERCISE: file="pl-b1-group-03-pies-grammar.json", type="fill-in-blank"]
+[EXERCISE: file="pl-b1-group-03-pies-grammar.json", type="fill-in-blank", blocks="g1-g4"]
 
 ---
 
-## 9. Podsumowanie
+## 7. Gramatyka: tryb rozkazujący — część 2
 
-Zanim skończymy, sprawdźmy, co zostało w głowie:
+Prezentacja krok po kroku: nieregularne, „się”, ton do obcych, niech, łagodne prośby, komendy i pułapki z ukraińskiego.
+
+[SLIDES: file="pl-b1-group-03-pies-slides.json", part="2"]
+
+**Ćwiczenia do części 2** — kartka dla opiekuna, ton, nieregularne formy i pułapki.
+
+[EXERCISE: file="pl-b1-group-03-pies-grammar.json", type="fill-in-blank", blocks="g5-g8"]
+
+---
+
+## 8. Podsumowanie
+
+Sprawdź, czy umiesz to, co obiecaliśmy na początku:
 
 - Daj trzy rady komuś, kto chce wziąć psa ze schroniska: jedną z **nie**, jedną z **niech**, jedną w formie **my**.
-- Jak powiesz to samo do przyjaciela, a jak do pracownika schroniska: *Pokaż mi tego psa*?
-- Czym różni się **chodź** od **idź**, a **jedz** od **jedź**?
-- Która droga — hodowla czy schronisko — przekonuje Cię po tej lekcji bardziej? Dlaczego?
+- Jak powiesz to samo do przyjaciela, a jak do pracownika schroniska: *Pokaż mi tego psa*? Czym różni się **chodź** od **idź**, a **jedz** od **jedź**?
+- Która droga — hodowla czy schronisko — przekonuje Cię po tej lekcji bardziej? Podaj dwa argumenty.
+- Zadaj weterynarzowi dwa pytania o szczepienie.
+- Wróć do polecenia z rozgrzewki i powiedz je w trzech formach: do psa, do dzieci i grzecznie do dorosłej osoby.
 
 ---
 
-## 10. Praca domowa
+## 9. Praca domowa
 
 Cztery części — słownictwo i gramatyka, wideo, artykuł i pisanie.
 
@@ -230,3 +242,11 @@ Wszystkie 38 słów lekcji w jednym miejscu. Wracaj tu przed pracą domową i pr
 | **opiekun (psa)** | доглядач, догситер | Opiekun przychodzi do psa dwa razy dziennie. |
 | **skarżyć się** | скаржитися | Sąsiad skarżył się, że pies wyje w nocy. |
 | **tresura** | дресирування | Na tresurę chodzimy w każdą sobotę. |
+
+---
+
+## Źródła
+
+- [Odpowiedź Głównego Lekarza Weterynarii w sprawie szczepień psów przeciw wściekliźnie (16.03.2026) — RPO](https://bip.brpo.gov.pl/sites/default/files/2026-03/Odpowiedz_GLW_psy_wscieklizna_szczepienia_16_03_2026.pdf) — 30 dni po ukończeniu 3. miesiąca życia, potem co 12 miesięcy.
+- [Nowe obowiązki dla właścicieli psów i kotów (KROPiK) — Polsat News](https://www.polsatnews.pl/wiadomosc/2026-06-02/nowe-obowiazki-dla-wlascicieli-psow-i-kotow-za-uchylenie-sie-grzywna-do-5-tys-zl/) — ustawa o obowiązkowym czipowaniu.
+- [Adopcja psa ze schroniska — dogout.app](https://dogout.app/artykuly/adopcja-psa-ze-schroniska) — tekst do pracy domowej.

@@ -27,11 +27,9 @@ header_image_source: stock
 
 ## 1. Czytanie
 
-**Zanim przeczytasz:** komu ostatnio pomogłeś / pomogłaś? Zapisz jeden czasownik, który opisuje tę pomoc — wrócimy do niego na końcu lekcji.
+**Rozgrzewka.** Komu ostatnio pomogłeś / pomogłaś? Zapisz jeden czasownik, który opisuje tę pomoc — wrócimy do niego na końcu lekcji.
 
 ### Jeden dzień w styczniu
-
-[AUDIO: id="pl-b1-group-03-wolontariat-czytanie", source="tts", text="section:1", voice="pl-PL-female", speed="0.9"]
 
 Wyobraź sobie zimową niedzielę. Na ulicach stoją ludzie z puszkami, na kurtkach przechodniów widać czerwone serduszka, a w telewizji co chwilę pokazuje się licznik z coraz większą kwotą. Tak wygląda finał Wielkiej Orkiestry Świątecznej Pomocy, w skrócie WOŚP — jednej z najbardziej znanych akcji charytatywnych w Polsce.
 
@@ -68,7 +66,7 @@ Dlaczego ludzie to robią? Jedni chcą, **żeby** ich dzieci **zobaczyły**, że
 
 **38 słów** w sześciu grupach: pomaganie, komu pomagamy, zgłoszenie do wolontariatu, namawianie, pieniądze i zaufanie, motywacja. Grupy „Zgłoszenie”, „Namawianie” i „Pieniądze i zaufanie” przydadzą się w zadaniach komunikacyjnych. Pełna lista z tłumaczeniami jest na końcu lekcji, na stronie **Słowniczek**.
 
-[EXERCISE: file="pl-b1-group-03-wolontariat-vocab.json", type="vocab-cards"]
+[QUIZLET: set_id="1223594363", url="https://quizlet.com/1223594363/flashcards/embed", title="Słownictwo — Quizlet"]
 
 ---
 
@@ -86,88 +84,23 @@ Porozmawiajmy. Tu nie ma dobrych i złych odpowiedzi — liczą się argumenty.
 
 ---
 
-## 5. Opis zdjęć
+## 5. Zadania komunikacyjne
 
-Sześć zdjęć, sześć sytuacji. Wybierz zdjęcie i opisz je: kto na nim jest, gdzie są ci ludzie, co robią i jak się czują. Potem powiedz, co Twoim zdaniem dzieje się poza kadrem, i odpowiedz na pytanie pod zdjęciem. Karteczki z gotowymi wyrażeniami leżą na planszy.
-
-[EXERCISE: file="pl-b1-group-03-wolontariat-pictures.json", type="picture-set"]
-
----
-
-## 6. Zadania komunikacyjne
-
-Najpierw posłuchaj rozmowy: Paweł dzwoni do fundacji, bo chce zostać wolontariuszem w schronisku. Odpowiedz na cztery pytania.
-
-[AUDIO: id="pl-b1-group-03-wolontariat-c1-dialog", source="tts", text="pl-b1-group-03-wolontariat-comm-tasks.json#c1.model_dialogue", voices="pl-PL-female,pl-PL-male", speed="0.95"]
+Najpierw posłuchaj rozmowy: Paweł dzwoni do fundacji, bo chce zostać wolontariuszem w schronisku. Odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
 
 [EXERCISE: file="pl-b1-group-03-wolontariat-exam.json", type="multiple-choice", blocks="e2"]
 
-Teraz Twoja kolej. Cztery sytuacje, w których trzeba o coś poprosić, kogoś przekonać albo zadać dobre pytanie. Odwróć kartę i wykonaj zadanie.
+Teraz Twoja kolej. Cztery sytuacje, w których trzeba o coś poprosić, kogoś przekonać albo zadać dobre pytanie. Odwróć kartę i wykonaj zadanie. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 [EXERCISE: file="pl-b1-group-03-wolontariat-comm-tasks.json", type="flip-task"]
 
 ---
 
-## 7. Gramatyka: cel i prośba — część 1
+## 6. Gramatyka: cel i prośba — część 1
 
-[BOARD: id="zeby-1", title="Cel i prośba · część 1", layout="cards", columns="3", style="sketch-board"]
+Prezentacja krok po kroku: żeby z bezokolicznikiem i z formą osobową, prośby, że czy żeby.
 
-### ① Po co komu
-
-„Żeby” mówi, po co coś robimy i czego chcemy od innych.
-
-✦ Pomagam, żeby czuć się potrzebnym.
-✦ Proszę, żebyś mi pomógł.
-
-📌 Pytania: Po co? W jakim celu? Czego chcesz?
-
-### ② Ten sam podmiot
-
-żeby + bezokolicznik
-
-✦ Zapisałam się, żeby poznać nowych ludzi.
-✦ Dzwonię, żeby zapytać o szkolenie.
-
-📌 Kto się zapisał? Ja. Kto pozna ludzi? Też ja — więc bezokolicznik.
-
-### ③ Inny podmiot
-
-żeby + forma jak w czasie przeszłym
-
-✦ Kupiłam karmę, żeby psy nie były głodne.
-✦ Mama chce, żeby syn pomagał w schronisku.
-
-📌 Forma przeszła, ale znaczenie — teraz albo w przyszłości.
-
-### ④ Osoba siedzi w „żeby”
-
-Końcówka osobowa przechodzi z czasownika na „żeby”.
-
-✦ żebym poszedł / poszła
-✦ żebyś pomógł / pomogła
-✦ żebyśmy wiedzieli · żebyście przyszli
-
-📌 Czasownik zostaje bez końcówki: żebym pomógł, nie „żebym pomogłem”.
-
-### ⑤ Czasowniki, które wołają „żeby”
-
-chcieć · prosić · radzić · namawiać · zależy mi
-
-✦ Proszę, żeby Pan podpisał porozumienie.
-✦ Zależy mi, żebyście byli punktualni.
-✦ Namawiam cię, żebyś poszła z nami.
-
-📌 Chcę pomagać — chodzi o mnie. Chcę, żebyś pomagał — o kogoś innego.
-
-### ⑥ Że czy żeby?
-
-„Że” — informacja. „Żeby” — prośba, cel, życzenie.
-
-✦ Powiedział, że przyjdzie. — informuje
-✦ Powiedział, żebym przyszedł. — prosi
-✦ Wiem, że… · Chcę, żeby…
-
-📌 Po „mówić” i „pisać” są możliwe oba — zmienia się sens zdania.
+[SLIDES: file="pl-b1-group-03-wolontariat-slides.json", part="1"]
 
 **Ćwiczenia do części 1** — ten sam czy inny podmiot, formy osobowe, prośby i wybór „że / żeby”.
 
@@ -175,89 +108,11 @@ chcieć · prosić · radzić · namawiać · zależy mi
 
 ---
 
-## 8. Gramatyka: cel i prośba — część 2
+## 7. Gramatyka: cel i prośba — część 2
 
-[BOARD: id="zeby-2", title="Cel i prośba · część 2", layout="cards", columns="3", style="sketch-board"]
+Prezentacja krok po kroku: aby i w celu, dla / na / do, żeby nie, bo czy żeby.
 
-### ⑦ Aby, by, po to, żeby
-
-To samo znaczenie, inny styl.
-
-✦ aby — oficjalnie: Prosimy, aby Państwo…
-✦ by — krótko, w piśmie: Przyszedł, by pomóc.
-✦ po to, żeby — mocny akcent na cel
-
-📌 W rozmowie najczęściej „żeby”. „Aby” pasuje do e-maila i urzędu.
-
-### ⑧ W celu
-
-w celu + dopełniacz, styl urzędowy
-
-✦ w celu zebrania pieniędzy
-✦ w celu weryfikacji danych
-✦ Dane są zbierane w celu wystawienia zaświadczenia.
-
-📌 W mowie: żeby zebrać. W piśmie: w celu zebrania.
-
-### ⑨ Dla kogo? Na co? Do czego?
-
-Cel wyrażony rzeczownikiem.
-
-✦ dla dzieci, dla schroniska — odbiorca
-✦ na leczenie, na karmę — na co idą pieniądze
-✦ maszyna do szycia — do czego służy rzecz
-
-📌 Zbiórka dla Ani na operację: „dla” — komu, „na” — po co.
-
-### ⑩ Żeby nie
-
-Przeczenie stoi tuż przed czasownikiem.
-
-✦ Zapisz godzinę, żeby nie zapomnieć.
-✦ Zamknij furtkę, żeby psy nie uciekły.
-✦ zmarnować jedzenie → żeby nie zmarnować jedzenia
-
-📌 Po „nie” biernik zmienia się w dopełniacz. „Nie żeby…” znaczy coś innego: „to nie tak, że…”.
-
-### ⑪ Bo czy żeby?
-
-Przyczyna patrzy wstecz, cel — do przodu.
-
-✦ Pomagam, bo kiedyś ktoś pomógł mi.
-✦ Pomagam, żeby inni nie byli sami.
-✦ ponieważ, dlatego że — styl bardziej oficjalny
-
-📌 Zwykle: „dlaczego?” → bo; „po co?” → żeby.
-
-### ⑫ Żeby + strona bierna
-
-zostać + imiesłów — jak w lekcji o wynalazkach.
-
-✦ żeby paczki zostały dostarczone na czas
-✦ żeby sprzęt został kupiony jeszcze w tym roku
-✦ żeby nikt nie został pominięty
-
-📌 Imiesłów zgadza się z podmiotem: paczki dostarczone, sprzęt kupiony.
-
-### ⑬ Pułapki z ukraińskiego · 1
-
-Spójnik i osoba.
-
-✦ щоб я допоміг → ✗ żeby ja pomógł → ✓ żebym pomógł
-✦ хочу, щоб ти прийшла → ✗ chcę, że przyjdziesz → ✓ chcę, żebyś przyszła
-✦ збирати на лікування → ✗ zbierać dla leczenia → ✓ zbierać na leczenie
-
-📌 Dlaczego: osobę pokazuje końcówka przy „żeby”, a „chcieć” wymaga „żeby”, nie „że”.
-
-### ⑭ Pułapki z ukraińskiego · 2
-
-Słowa, które tylko brzmią podobnie.
-
-✦ займатися волонтерством → ✗ wolontierstwo → ✓ wolontariat
-✦ пожертвувати гроші → ✗ pożertwować → ✓ przekazać pieniądze
-✦ допомагати з ремонтом → ✗ pomagać z remontem → ✓ pomagać przy remoncie
-
-📌 Dlaczego: „pomóc z” słychać w mowie potocznej, ale norma to „pomóc w” albo „przy”.
+[SLIDES: file="pl-b1-group-03-wolontariat-slides.json", part="2"]
 
 **Ćwiczenia do części 2** — styl, „w celu”, „dla / na / do”, przyczyna i cel, jedna historia i pułapki na koniec.
 
@@ -265,7 +120,7 @@ Słowa, które tylko brzmią podobnie.
 
 ---
 
-## 9. Podsumowanie
+## 8. Podsumowanie
 
 Sprawdź, czy umiesz to, co obiecaliśmy na początku:
 
@@ -277,7 +132,7 @@ Sprawdź, czy umiesz to, co obiecaliśmy na początku:
 
 ---
 
-## 10. Praca domowa
+## 9. Praca domowa
 
 Cztery części — słownictwo i gramatyka, wideo, czytanie i pisanie.
 
@@ -383,3 +238,12 @@ Wszystkie 38 słów lekcji w jednym miejscu. Wracaj tu przed pracą domową i pr
 | **satysfakcja** | задоволення, сатисфакція | Ukończenie maratonu dało mi ogromną satysfakcję. |
 | **poczucie sensu** | відчуття сенсу | Nowa praca dała jej poczucie sensu. |
 | **wypalenie** | вигорання | Po pięciu latach bez urlopu przyszło wypalenie. |
+
+---
+
+## Źródła
+
+- [Tyle zebrała WOŚP w 2026 r. — TVN24](https://tvn24.pl/polska/ile-zebrano-na-wosp-w-2026-jerzy-owsiak-podal-kwote-st8973346) — wynik 34. Finału.
+- [34. Finał WOŚP z wynikiem ponad 183 mln zł — Eska](https://www.eska.pl/wiadomosci/34-final-wosp-z-wynikiem-ponad-183-mln-zl-ostateczna-kwota-bedzie-wyzsza-aa-8y9N-yvMh-4yvj.html) — wolontariusze, sztaby i cel zbiórki.
+- [Umowa z wolontariuszem — Infor.pl](https://www.infor.pl/prawo/umowy/inne-umowy/296369,Umowa-z-wolontariuszem.html) — porozumienie na piśmie przy wolontariacie dłuższym niż 30 dni.
+- [O Paczce — Szlachetna Paczka](https://www.szlachetnapaczka.pl/o-paczce/) — tekst do pracy domowej.

@@ -5,15 +5,29 @@ lesson_number: 2
 level: B1
 tags: [zakupy, sklep, centrum-handlowe, etykieta, reklamacja, tryb-przypuszczający, konwersacja]
 status: draft
+duration_minutes: 180
+sessions: 2
+grammar_points: [tp-koncowki, tp-osoba, tp-rodzaj, tp-grzecznosc, tp-gdyby, jesli-vs-gdyby, zeby-forma, by-ruchome, kalki-uk, slownictwo]
+exam_skills: [czytanie, sluchanie, pisanie, mowienie]
+recycles: [{lesson: 1, words: [reklamacja, paragon, gwarancja, wymiana, zwrot pieniędzy, usterka], grammar: [bierna-byc-zostac]}]
 header_image_keywords: "shopping mall interior escalator"
 header_image_source: stock
 ---
 
 # Koszyk pełen pułapek: zakupy po polsku
 
+**Po tej lekcji potrafisz:**
+
+- 🎯 grzecznie poprosić o coś w sklepie: *chciałbym, czy mógłby pan*;
+- 🎯 utworzyć tryb przypuszczający we wszystkich osobach i wybrać *jeśli* albo *gdyby*;
+- 🎯 przeczytać etykietę i porównać ceny jednostkowe;
+- 🎯 złożyć reklamację albo poprosić o zwrot towaru.
+
 ---
 
 ## 1. Czytanie
+
+**Rozgrzewka.** Jaki produkt kupiłeś ostatnio i nie wiedziałeś, jak się nazywa po polsku? Zapisz jego nazwę w swoim języku. Na końcu lekcji spróbujesz powiedzieć ją po polsku.
 
 ### Koszyk pełen pułapek
 
@@ -45,13 +59,17 @@ Reszta jest kwestią wprawy. Po miesiącu przestajesz tłumaczyć etykiety i zac
 4. Dlaczego błonnik nie zawsze pojawia się w tabeli wartości odżywczej?
 5. Który z czterech chronionych produktów wymienionych na końcu wybrałby autor i pod jakim warunkiem?
 
+**Jak na egzaminie:** sześć zdań — prawda czy fałsz?
+
+[EXERCISE: file="pl-b1-group-02-zakupy-exam.json", type="true-false", blocks="e1"]
+
 ---
 
 ## 3. Słownictwo
 
 **40 słów** w pięciu grupach: sklep i galeria, nazwy nie do odgadnięcia, ceny i płatności, etykieta i wartości odżywcze, reklamacja i zwrot. Przerabiaj grupę po grupie — pełną listę z tłumaczeniami znajdziesz na końcu lekcji, na stronie **Słowniczek**.
 
-[EXERCISE: file="pl-b1-group-02-zakupy-vocab.json", type="vocab-cards"]
+[QUIZLET: set_id="1223593634", url="https://quizlet.com/1223593634/flashcards/embed", title="Słownictwo — Quizlet"]
 
 ---
 
@@ -69,194 +87,55 @@ Rozmawiamy. Odpowiedź „nie wiem” nie jest zabroniona, ale musi mieć ciąg 
 
 ---
 
-## 5. Opis zdjęć
+## 5. Zadania komunikacyjne
 
-[BOARD: id="zakupy-wtedy-dzis", title="Wtedy i dziś: jak się robiło zakupy", layout="collage", style="polaroid-board", label_style="tape", note="sześć par zdjęć w ramkach polaroid, etykieta na skotczu nad parą, karteczki z wyrażeniami rozrzucone po planszy"]
+Najpierw posłuchaj rozmowy w sklepie: klient reklamuje kurtkę. Odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
 
-Sześć par: po lewej zakupy sprzed kilkudziesięciu lat, po prawej ta sama czynność dzisiaj. Opisz najpierw stare zdjęcie, potem nowe, a na końcu powiedz, co zyskaliśmy i co straciliśmy.
+[EXERCISE: file="pl-b1-group-02-zakupy-exam.json", type="multiple-choice", blocks="e2"]
 
-**Karteczki z wyrażeniami** — sięgaj po nie, kiedy zabraknie Ci słów:
-
-- Kiedyś… a dziś…
-- Gdybym miał wybór, wolałbym…
-- Na pierwszy rzut oka widać, że…
-- W porównaniu z dzisiejszym sklepem…
-- Ja bym tego nie kupił, bo…
-- Największa różnica polega na tym, że…
-
-[EXERCISE: file="pl-b1-group-02-zakupy-pictures.json", type="picture-set"]
-
----
-
-## 6. Zadania komunikacyjne
-
-Cztery sytuacje, w których trzeba zapytać, dopytać i nie dać się zbyć. Odwróć kartę i odegraj rozmowę.
+Teraz Twoja kolej. Cztery sytuacje, w których trzeba zapytać, dopytać i nie dać się zbyć. Odwróć kartę i odegraj rozmowę. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 [EXERCISE: file="pl-b1-group-02-zakupy-comm-tasks.json", type="flip-task"]
 
 ---
 
-## 7. Gramatyka: tryb przypuszczający
+## 6. Gramatyka: tryb przypuszczający — część 1
 
-[BOARD: id="tryb-przypuszczajacy", title="Tryb przypuszczający — tablica", layout="cards", columns="3", style="sketch-board", note="każdy H3 = karta z numerem w kółku, wiersze z ✦ = kolorowe plakietki, akapit z 📌 = żółta karteczka na dole karty"]
+Prezentacja krok po kroku: wzór, końcówki osobowe, rodzaj, ruchome „by” i grzeczność.
 
-### ① Po co komu
+[SLIDES: file="pl-b1-group-02-zakupy-slides.json", part="1"]
 
-Nie fakt, tylko możliwość.
+**Ćwiczenia do części 1** — cztery bloki: końcówki, osoby, rodzaj i grzeczne prośby.
 
-✦ Kupię ten płaszcz. — decyzja
-✦ Kupiłbym ten płaszcz. — chęć, plan, marzenie
-
-📌 Cztery zastosowania: grzeczność, warunek, rada, hipoteza.
-
-### ② Wzór
-
-czas przeszły + by + końcówka osobowa
-
-✦ kupił + by + m → kupiłbym
-✦ wzięła + by + ś → wzięłabyś
-✦ poszli + by + śmy → poszlibyśmy
-
-📌 Nie ma tu bezokolicznika. Podstawą jest zawsze forma przeszła.
-
-### ③ Końcówki osobowe
-
-Sześć form do zapamiętania.
-
-✦ ja: -bym · ty: -byś
-✦ on, ona, ono: -by
-✦ my: -byśmy · wy: -byście
-
-📌 Trzecia osoba nie ma końcówki. Samo „by” to on, ona, ono i oni.
-
-### ④ Rodzaj i liczba
-
-Rodzaj widać przed „by”.
-
-✦ kupiłbym / kupiłabym
-✦ chcielibyśmy / chciałybyśmy
-✦ oni poszliby / one poszłyby
-
-📌 Męskoosobowy tylko wtedy, gdy w grupie jest mężczyzna. Dziewczyny poszłyby.
-
-### ⑤ Ruchome „by”
-
-Cząstka może odkleić się od czasownika.
-
-✦ Chętnie bym to kupił.
-✦ Nigdy byśmy tam nie weszli.
-✦ Kupiłbym to od razu.
-
-📌 Znaczenie takie samo. Zmienia się tylko akcent zdania.
-
-### ⑥ Grzeczność w sklepie
-
-Najczęstsze użycie w codziennym życiu.
-
-✦ Chciałbym zapłacić kartą.
-✦ Czy mógłby pan sprawdzić cenę?
-✦ Wolałbym zwrot pieniędzy.
-
-📌 „Chcę” brzmi w sklepie ostro. „Chciałbym” to standard.
-
-### ⑦ Gdyby — warunek nierealny
-
-W obu częściach zdania jest „by”.
-
-✦ Gdybym miał czas, pojechałbym do outletu.
-✦ Gdyby było taniej, wzięlibyśmy dwa.
-
-📌 Po „gdyby” nigdy nie ma czasu przyszłego. Tylko forma przeszła.
-
-### ⑧ Jeśli czy gdyby
-
-Realne kontra nierealne.
-
-✦ Jeśli będzie promocja, kupię. — realne
-✦ Gdyby była promocja, kupiłbym. — nierealne
-
-📌 Forma „jeślibym” praktycznie nie istnieje w mowie. Mów „gdybym”.
-
-### ⑨ Jedna forma, dwa czasy
-
-Polski nie rozróżnia tu przeszłości.
-
-✦ Gdybym wiedział, nie kupiłbym tego. — wczoraj
-✦ Gdybym wiedział, nie kupiłbym tego. — dziś
-
-📌 Czas pokazuje kontekst albo słowo „wtedy”, „teraz”.
-
-### ⑩ Żeby i żebym
-
-Cel i cudza wola.
-
-✦ Poszedłem tam, żeby kupić prezent. — ten sam podmiot
-✦ Chcę, żebyś sprawdził skład. — inny podmiot
-
-📌 Dwa różne podmioty — obowiązkowo „żebyś”, „żebym”, nigdy samo „żeby”.
-
-### ⑪ Razem czy osobno
-
-Trzy reguły pisowni.
-
-✦ z czasownikiem razem: zapłaciłbym
-✦ ze spójnikiem razem: gdyby, żeby, aby
-✦ po pytajniku osobno: kto by, gdzie byś
-
-📌 „Chyba by przyszedł”, „Może byś zadzwonił” — zawsze osobno.
-
-### ⑫ Przeczenie
-
-„Nie” nie rusza cząstki „by”.
-
-✦ Nie kupiłbym tego.
-✦ Nigdy bym tego nie kupił.
-✦ Nie chciałabym stać w tej kolejce.
-
-📌 Przy ruchomym „by” przeczenie zostaje przy czasowniku: bym… nie kupił.
-
-### ⑬ Pułapki z ukraińskiego: osoba
-
-Cząstka nie żyje osobno od osoby.
-
-✦ Kupiłbym to jutro.
-✦ Poszlibyśmy z wami.
-✦ Zapłaciłabyś kartą?
-
-📌 Nie tak: ja by kupił · my by poszli · ty by zapłaciła.
-
-### ⑭ Pułapki z ukraińskiego: gdyby
-
-Jeden spójnik, dwa różne polskie słowa.
-
-✦ Gdybym miał czas, przyszedłbym.
-✦ Jeśli będę miał czas, przyjdę.
-✦ Chcę, żebyś przyszedł.
-
-📌 Nie tak: jeśli bym miał · gdyby ja miał · chcę, żeby ty przyszedł.
+[EXERCISE: file="pl-b1-group-02-zakupy-grammar.json", type="fill-in-blank", blocks="g1-g4"]
 
 ---
 
-## 8. Ćwiczenia gramatyczne
+## 7. Gramatyka: tryb przypuszczający — część 2
 
-Osiem bloków od końcówek do całych przekształceń. Rób po kolei, każdy dokłada jedną rzecz.
+Prezentacja krok po kroku: gdyby, jeśli czy gdyby, żeby, pisownia i przeczenie.
 
-[EXERCISE: file="pl-b1-group-02-zakupy-grammar.json", type="fill-in-blank"]
+[SLIDES: file="pl-b1-group-02-zakupy-slides.json", part="2"]
 
----
+**Ćwiczenia do części 2** — warunek, jeśli czy gdyby, żeby i ruchome „by”.
 
-## 9. Podsumowanie
-
-Zanim skończymy, sprawdźmy, co zostało w głowie:
-
-- Powiedz jedno zdanie o zakupach, używając formy **chciałbym** albo **wolałbym**.
-- Zbuduj zdanie z **gdyby** o sytuacji, która na pewno się nie wydarzy.
-- Które trzy nowe słowa z dzisiejszej lekcji zobaczysz w sklepie już jutro?
-- Co było dziś najtrudniejsze: końcówki osobowe, ruchome **by** czy wybór między *jeśli* a *gdyby*?
+[EXERCISE: file="pl-b1-group-02-zakupy-grammar.json", type="fill-in-blank", blocks="g5-g8"]
 
 ---
 
-## 10. Praca domowa
+## 8. Podsumowanie
+
+Sprawdź, czy umiesz to, co obiecaliśmy na początku:
+
+- Poproś sprzedawcę o dwie rzeczy, używając **chciałbym / chciałabym** i **czy mógłby pan / mogłaby pani**.
+- Zbuduj dwa zdania: jedno z **jeśli** o realnym planie, drugie z **gdyby** o sytuacji, która się nie wydarzy.
+- Wyjaśnij, po co na etykiecie jest cena jednostkowa.
+- Powiedz trzy zdania, od których zaczniesz reklamację w sklepie.
+- Wróć do produktu z rozgrzewki. Jak nazywa się po polsku?
+
+---
+
+## 9. Praca domowa
 
 Cztery części — słownictwo, gramatyka, wideo i pisanie.
 
@@ -279,7 +158,7 @@ Wypisz pięć konkretnych informacji (terminy, prawa, obowiązki) i przy każdej
 
 ### Pisanie
 
-Napisz krótką wiadomość do sklepu internetowego (**100–130 słów**) na temat: **„Zamówienie przyszło niekompletne”**.
+Napisz krótką wiadomość do sklepu internetowego (**120–150 słów**) na temat: **„Zamówienie przyszło niekompletne”**.
 
 W tekście musi się znaleźć:
 - co zamówiłeś i czego zabrakło (dwa zdania w czasie przeszłym),
@@ -356,3 +235,13 @@ Wszystkie 40 słów lekcji w jednym miejscu. Wracaj tu przed pracą domową i pr
 | **wymiana** | обмін | Wolę wymianę niż naprawę, bo buty są mi potrzebne na jutro. |
 | **dowód zakupu** | підтвердження покупки | Dowodem zakupu może być też wydruk z karty płatniczej. |
 | **odstąpić od umowy** | відмовитися від договору | Od umowy zawartej przez internet można odstąpić bez podawania powodu. |
+
+---
+
+## Źródła
+
+- [Niedziele handlowe w 2026 r. — Zielona Linia (gov.pl)](https://zielonalinia.gov.pl/niedziele-handlowe-w-2026-r/) — zakaz handlu i kalendarz niedziel handlowych.
+- [Najniższa cena z 30 dni przed obniżką — UOKiK](https://uokik.gov.pl/Download/1707) — obowiązek informowania o obniżkach.
+- [Polskie produkty ChNP, ChOG, GTS — IJHARS (gov.pl)](https://www.gov.pl/web/ijhars/polskie-produkty-chnp-chog-gts--raport-i-analizy) — bryndza, oscypek, rogal świętomarciński i inne chronione produkty.
+- [Pokarmowe źródła błonnika — mp.pl](https://www.mp.pl/pacjent/dieta/zasady/176007,pokarmowe-zrodla-blonnika) — kiedy produkt jest „źródłem błonnika”.
+- [Niezgodność towaru z umową — UOKiK](https://prawakonsumenta.uokik.gov.pl/reklamacja/niezgodnosc/) — reklamacja i prawa konsumenta.
