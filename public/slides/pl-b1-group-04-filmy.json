@@ -1,0 +1,465 @@
+{
+ "lesson_id": "pl-b1-group-04-filmy",
+ "exercise_type": "grammar-slides",
+ "title": "Stopniowanie i porównania",
+ "slides": [
+  {
+   "id": "s1",
+   "part": 1,
+   "section": "teoria",
+   "kind": "title",
+   "title": "Stopniowanie i porównania",
+   "subtitle": "Lepszy, ciekawszy, najzabawniejszy",
+   "goal": "Po tej lekcji porównasz filmy, ludzi i rzeczy bez kalek z ukraińskiego."
+  },
+  {
+   "id": "s2",
+   "part": 1,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Trzy stopnie",
+   "left": {
+    "head": "stopień wyższy",
+    "rule": "porównujemy dwie rzeczy",
+    "examples": [
+     "Ten film jest [[ciekawszy]] od tamtego."
+    ]
+   },
+   "right": {
+    "head": "stopień najwyższy",
+    "rule": "najlepszy z grupy",
+    "examples": [
+     "To [[najciekawszy]] film roku."
+    ]
+   },
+   "note": "Naj- dodajemy do formy stopnia wyższego."
+  },
+  {
+   "id": "s3",
+   "part": 1,
+   "section": "teoria",
+   "kind": "steps",
+   "title": "Wzór: -szy",
+   "steps": [
+    {
+     "label": "przymiotnik",
+     "text": "ciekawy"
+    },
+    {
+     "label": "odetnij -y, dodaj -szy",
+     "text": "ciekawszy"
+    },
+    {
+     "label": "dodaj naj-",
+     "text": "najciekawszy"
+    }
+   ],
+   "result": "ciekaw[[y]] → ciekaw[[szy]] → [[naj]]ciekawszy",
+   "note": "Rodzaj zmieniamy jak zwykle: ciekawsza, ciekawsze."
+  },
+  {
+   "id": "s4",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "-szy czy -ejszy?",
+   "columns": [
+    "przymiotnik",
+    "stopień wyższy",
+    "przed końcówką"
+   ],
+   "rows": [
+    [
+     "młody",
+     "młod[[szy]]",
+     "jedna spółgłoska"
+    ],
+    [
+     "nowy",
+     "now[[szy]]",
+     "jedna spółgłoska"
+    ],
+    [
+     "łatwy",
+     "łatwi[[ejszy]]",
+     "dwie spółgłoski"
+    ],
+    [
+     "ciepły",
+     "ciepl[[ejszy]]",
+     "dwie spółgłoski"
+    ]
+   ],
+   "note": "Po grupie spółgłosek dodajemy -ejszy, bo łatwiej wymówić."
+  },
+  {
+   "id": "s5",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Wymiany przed -szy",
+   "columns": [
+    "przymiotnik",
+    "stopień wyższy",
+    "co się zmienia"
+   ],
+   "rows": [
+    [
+     "wysoki",
+     "wyż[[szy]]",
+     "k → ż"
+    ],
+    [
+     "niski",
+     "niż[[szy]]",
+     "k → ż"
+    ],
+    [
+     "krótki",
+     "krót[[szy]]",
+     "-k- znika"
+    ],
+    [
+     "szeroki",
+     "szer[[szy]]",
+     "-ok- znika"
+    ],
+    [
+     "tani",
+     "tań[[szy]]",
+     "i → ń"
+    ]
+   ],
+   "note": "Krótkie przymiotniki na -ki, -oki, -eki tracą część tematu."
+  },
+  {
+   "id": "s6",
+   "part": 1,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Bardziej i najbardziej",
+   "items": [
+    {
+     "tag": "długi przymiotnik",
+     "pl": "[[bardziej]] interesujący",
+     "uk": "цікавіший, більш захопливий"
+    },
+    {
+     "tag": "imiesłów",
+     "pl": "[[bardziej]] zmęczony",
+     "uk": "більш втомлений"
+    },
+    {
+     "tag": "stopień najwyższy",
+     "pl": "[[najbardziej]] znany aktor",
+     "uk": "найвідоміший актор"
+    }
+   ],
+   "note": "Dla długich przymiotników i imiesłowów."
+  },
+  {
+   "id": "s7",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Odmiana jak zwykły przymiotnik",
+   "columns": [
+    "kto? co?",
+    "forma",
+    "przykład"
+   ],
+   "rows": [
+    [
+     "on",
+     "lepszy",
+     "lepszy film"
+    ],
+    [
+     "ona",
+     "lepsza",
+     "lepsza komedia"
+    ],
+    [
+     "ono",
+     "lepsze",
+     "lepsze zakończenie"
+    ],
+    [
+     "oni",
+     "lep[[si]]",
+     "lepsi aktorzy"
+    ],
+    [
+     "one",
+     "lepsze",
+     "lepsze seriale"
+    ]
+   ],
+   "note": "Męskoosobowe: lepsi, młodsi, wyżsi."
+  },
+  {
+   "id": "s8",
+   "part": 1,
+   "section": "wyjatki",
+   "kind": "exceptions",
+   "refers_to": "s3",
+   "title": "Nieregularne",
+   "items": [
+    {
+     "rule": "dobry → lepszy → najlepszy",
+     "example": "To [[najlepszy]] film roku.",
+     "refers_to": "s3"
+    },
+    {
+     "rule": "zły → gorszy → najgorszy",
+     "example": "Drugi sezon był [[gorszy]].",
+     "refers_to": "s3"
+    },
+    {
+     "rule": "duży → większy, mały → mniejszy",
+     "example": "W kinie ekran jest [[większy]].",
+     "refers_to": "s3"
+    }
+   ]
+  },
+  {
+   "id": "s9",
+   "part": 2,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Jaki? czy jak?",
+   "left": {
+    "head": "jaki? — przymiotnik",
+    "rule": "-szy",
+    "examples": [
+     "To [[szybszy]] samochód."
+    ]
+   },
+   "right": {
+    "head": "jak? — przysłówek",
+    "rule": "-iej / -ej",
+    "examples": [
+     "On mówi [[szybciej]] niż ja."
+    ]
+   },
+   "note": "Przysłówek: szybko → szybciej, często → częściej."
+  },
+  {
+   "id": "s10",
+   "part": 2,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Przysłówki nieregularne",
+   "columns": [
+    "stopień równy",
+    "wyższy",
+    "najwyższy"
+   ],
+   "rows": [
+    [
+     "dobrze",
+     "[[lepiej]]",
+     "najlepiej"
+    ],
+    [
+     "źle",
+     "[[gorzej]]",
+     "najgorzej"
+    ],
+    [
+     "dużo",
+     "[[więcej]]",
+     "najwięcej"
+    ],
+    [
+     "mało",
+     "[[mniej]]",
+     "najmniej"
+    ],
+    [
+     "często",
+     "częściej",
+     "najczęściej"
+    ]
+   ],
+   "note": "Lepiej, gorzej, więcej, mniej — najczęstsze słowa w porównaniach."
+  },
+  {
+   "id": "s11",
+   "part": 2,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Niż czy od?",
+   "left": {
+    "head": "niż",
+    "rule": "+ mianownik albo całe zdanie",
+    "examples": [
+     "Jest starszy [[niż]] ja.",
+     "Wolę kino [[niż]] dom."
+    ]
+   },
+   "right": {
+    "head": "od",
+    "rule": "+ dopełniacz",
+    "examples": [
+     "Jest starszy [[od]] brata.",
+     "Starszy [[ode]] mnie."
+    ]
+   },
+   "note": "Przed przyimkiem i bezokolicznikiem tylko „niż”."
+  },
+  {
+   "id": "s12",
+   "part": 2,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Najlepszy z… i w…",
+   "items": [
+    {
+     "tag": "z + dopełniacz",
+     "pl": "[[najlepszy z]] filmów",
+     "uk": "найкращий з фільмів"
+    },
+    {
+     "tag": "w + miejscownik",
+     "pl": "[[najlepszy w]] Polsce",
+     "uk": "найкращий у Польщі"
+    },
+    {
+     "tag": "jeden z",
+     "pl": "[[jeden z najlepszych]] seriali",
+     "uk": "один з найкращих серіалів"
+    }
+   ],
+   "note": "Po „jeden z” — liczba mnoga w dopełniaczu."
+  },
+  {
+   "id": "s13",
+   "part": 2,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Im…, tym…",
+   "items": [
+    {
+     "tag": "ilość",
+     "pl": "[[Im]] więcej oglądam, [[tym]] mniej śpię.",
+     "uk": "Чим більше дивлюся, тим менше сплю."
+    },
+    {
+     "tag": "cecha",
+     "pl": "[[Im]] dłuższy film, [[tym]] nudniejszy.",
+     "uk": "Чим довший фільм, тим нудніший."
+    }
+   ],
+   "note": "W obu częściach stopień wyższy."
+  },
+  {
+   "id": "s14",
+   "part": 2,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Coraz, jak najszybciej, o wiele",
+   "items": [
+    {
+     "tag": "coraz",
+     "pl": "Seriale są [[coraz]] dłuższe.",
+     "uk": "Серіали дедалі довші."
+    },
+    {
+     "tag": "jak + naj-",
+     "pl": "Przyjdź [[jak najszybciej]].",
+     "uk": "Прийди якнайшвидше."
+    },
+    {
+     "tag": "o wiele",
+     "pl": "To [[o wiele]] lepszy film.",
+     "uk": "Це набагато кращий фільм."
+    }
+   ],
+   "note": "Coraz + stopień wyższy, jak + stopień najwyższy."
+  },
+  {
+   "id": "s15",
+   "part": 2,
+   "section": "wyjatki",
+   "kind": "exceptions",
+   "refers_to": "s2",
+   "title": "Bez stopniowania",
+   "items": [
+    {
+     "rule": "materiał i pochodzenie",
+     "example": "[[drewniany]] stół, [[polski]] film",
+     "refers_to": "s2"
+    },
+    {
+     "rule": "cechy bez skali",
+     "example": "[[żonaty]], [[martwy]]",
+     "refers_to": "s2"
+    },
+    {
+     "rule": "kolejność",
+     "example": "[[pierwszy]], [[ostatni]] odcinek",
+     "refers_to": "s2"
+    }
+   ]
+  },
+  {
+   "id": "s16",
+   "part": 2,
+   "section": "pulapki",
+   "kind": "traps",
+   "title": "Pułapki z ukraińskiego",
+   "items": [
+    {
+     "uk": "самий кращий",
+     "wrong": "samy najlepszy",
+     "right": "[[najlepszy]]",
+     "why": "Naj- już znaczy „самий”."
+    },
+    {
+     "uk": "більш цікавіший",
+     "wrong": "bardziej ciekawszy",
+     "right": "[[ciekawszy]]",
+     "why": "Albo -szy, albo bardziej."
+    },
+    {
+     "uk": "в два рази дорожчий",
+     "wrong": "w dwa razy droższy",
+     "right": "[[dwa razy]] droższy",
+     "why": "Bez przyimka „w”."
+    }
+   ]
+  },
+  {
+   "id": "s17",
+   "part": 2,
+   "section": "pulapki",
+   "kind": "traps",
+   "title": "Pułapki z ukraińskiego",
+   "items": [
+    {
+     "uk": "чим більше, тим",
+     "wrong": "czym więcej, tym",
+     "right": "[[im]] więcej, tym",
+     "why": "Po polsku: im… tym…"
+    },
+    {
+     "uk": "вищий за мене",
+     "wrong": "wyższy za mnie",
+     "right": "wyższy [[ode mnie]]",
+     "why": "Od + dopełniacz albo niż ja."
+    },
+    {
+     "uk": "найкраще з усіх",
+     "wrong": "najlepsze ze wszystkich",
+     "right": "[[najlepiej]] ze wszystkich",
+     "why": "Jak? — przysłówek."
+    }
+   ]
+  }
+ ]
+}
