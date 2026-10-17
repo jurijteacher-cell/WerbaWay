@@ -54,7 +54,7 @@ Za pierwszym razem Taras nie zdał, bo nie ustąpił pierwszeństwa pieszemu. Za
 
 ## 2. Słownictwo
 
-[EXERCISE: file="pl-prawko-01-polecenia-egzaminatora-vocab.json", type="vocab-cards"]
+[QUIZLET: set_id="1223449895", url="https://quizlet.com/1223449895/flashcards/embed", title="Słownictwo — Quizlet"]
 
 ## 3. Gramatyka: polecenia, zakazy i język testu
 
