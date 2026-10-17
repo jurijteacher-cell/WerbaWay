@@ -20,14 +20,14 @@ header_image_keywords: "friends road trip van"
 header_image_source: stock
 ---
 
-## 🎯 Cele lekcji
-
-Po tej lekcji potrafisz:
+**Po tej lekcji potrafisz:**
 
 - 🎯 zrozumieć i użyć około czterdziestu popularnych słów potocznych (ziomek, kasa, ogarnąć, spoko…) i powiedzieć, kiedy lepiej ich nie używać;
 - 🎯 policzyć grupę mężczyzn: dwóch, trzech, czterech, pięciu… i użyć tych liczebników w różnych przypadkach;
 - 🎯 odróżnić „dwóch” od „dwoje” i wybrać dwoje, troje, czworo, pięcioro dla dzieci i grupy mieszanej;
 - 🎯 zapytać o liczbę osób i odpowiedzieć na to pytanie: „Ilu was jest? Ile osób? Było nas troje.”
+
+---
 
 ## 1. Czytanie
 
@@ -68,6 +68,8 @@ W niedzielę rano dwóch ziomków zwinęło się wcześniej, bo mieli fuchę w K
 
 Lipa, że w poniedziałek trzeba było wracać do pracy.
 
+---
+
 ## 2. Pytania do tekstu
 
 1. Dlaczego narrator zdecydował się wynająć busa?
@@ -75,15 +77,23 @@ Lipa, że w poniedziałek trzeba było wracać do pracy.
 3. Jak ekipa poradziła sobie z brakiem pieniędzy na kolację?
 4. Czy ten wypad był udany? Uzasadnij odpowiedź, używając dwóch przykładów z tekstu.
 
+**Jak na egzaminie:** sześć zdań — prawda czy fałsz?
+
 [EXERCISE: file="pl-b1-group-03-slang-exam.json", type="true-false", blocks="e1"]
+
+---
 
 ## 3. Słownictwo
 
-Czterdzieści słów w sześciu grupach. Trzy ostatnie grupy przydadzą się w zadaniach komunikacyjnych.
+**40 słów** w sześciu grupach: ludzie i ekipa, oceny i emocje, czasowniki na co dzień, pieniądze i ceny, wolny czas i miasto, szkoła i praca. Grupy „Pieniądze i ceny”, „Wolny czas i miasto” i „Szkoła i praca” przydadzą się w zadaniach komunikacyjnych. Pełna lista z tłumaczeniami jest na końcu lekcji, na stronie **Słowniczek**.
 
 [QUIZLET: set_id="1223594638", url="https://quizlet.com/1223594638/flashcards/embed", title="Słownictwo — Quizlet"]
 
+---
+
 ## 4. Praktyka mówienia
+
+Porozmawiajmy. Używaj słów z lekcji i liczebników: *dwóch, troje, pięcioro*.
 
 1. W jakich sytuacjach slang jest w porządku, a kiedy lepiej go unikać? Podaj przykłady z pracy, ze szkoły i z domu.
 2. Ilu bliskich znajomych masz? Kogo nazwałbyś ziomkiem, a kogo tylko kolegą i dlaczego?
@@ -93,44 +103,66 @@ Czterdzieści słów w sześciu grupach. Trzy ostatnie grupy przydadzą się w z
 6. Czy pieniądze zmieniają przyjaźń? Jak wygląda zrzutka na prezent w Twojej ekipie?
 7. Które słowo potoczne z Twojego języka chciałbyś/chciałabyś przetłumaczyć na polski? Czy wiesz, jakiego polskiego słowa użyć?
 
+---
+
 ## 5. Zadania komunikacyjne
 
-Pierwsza rozmowa jest nagrana: najpierw jej posłuchaj, potem odegraj swoją wersję z innymi szczegółami. Dwie kolejne zagraj w parach.
-
-[AUDIO: id="pl-b1-group-03-slang-c1-dialog", source="tts", text="pl-b1-group-03-slang-comm-tasks.json#c1.model_dialogue", voice="pl-PL-female", speed="0.95"]
-
-[EXERCISE: file="pl-b1-group-03-slang-comm-tasks.json", type="flip-task"]
+Najpierw posłuchaj rozmowy: znajomi planują wypad na weekend. Odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
 
 [EXERCISE: file="pl-b1-group-03-slang-exam.json", type="multiple-choice", blocks="e2"]
 
-## 6. Gramatyka, część 1: liczebniki dla mężczyzn
+Teraz Twoja kolej. Trzy sytuacje: plan wypadu, zrzutka na prezent i rozmowa po sesji. Odwróć kartę i odegraj rozmowę. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
+
+[EXERCISE: file="pl-b1-group-03-slang-comm-tasks.json", type="flip-task"]
+
+---
+
+## 6. Gramatyka: liczebniki — część 1
+
+Prezentacja krok po kroku: liczebniki dla mężczyzn — dwóch, trzech, pięciu — i ich odmiana.
 
 [SLIDES: file="pl-b1-group-03-slang-slides.json", part="1"]
 
+**Ćwiczenia do części 1** — dwóch, trzech, pięciu w różnych przypadkach.
+
 [EXERCISE: file="pl-b1-group-03-slang-grammar.json", type="fill-in-blank", blocks="g1-g4"]
 
-## 7. Gramatyka, część 2: dwoje, troje, czworo i osoby
+---
+
+## 7. Gramatyka: liczebniki — część 2
+
+Prezentacja krok po kroku: dwoje, troje, czworo, osoby i pytanie *Ilu was jest?*
 
 [SLIDES: file="pl-b1-group-03-slang-slides.json", part="2"]
 
+**Ćwiczenia do części 2** — liczebniki zbiorowe, osoby i pułapki na koniec.
+
 [EXERCISE: file="pl-b1-group-03-slang-grammar.json", type="fill-in-blank", blocks="g5-g8"]
+
+---
 
 ## 8. Podsumowanie
 
-Sprawdź się. Przy każdym punkcie zdecyduj: **umiem** czy **jeszcze nie**.
+Sprawdź, czy umiesz to, co obiecaliśmy na początku. Przy każdym punkcie zdecyduj: **umiem** czy **jeszcze nie**.
 
-- 🎯 Rozumiem i potrafię użyć około czterdziestu słów potocznych z lekcji. Wiem, których z nich nie powiem szefowi ani nauczycielowi.
-- 🎯 Policzę grupę mężczyzn: dwóch, trzech, czterech, pięciu… i odmienię te liczebniki.
-- 🎯 Odróżniam „dwóch” od „dwoje” i wiem, kiedy użyć dwoje, troje, czworo, pięcioro.
-- 🎯 Zapytam „Ilu was jest? Ile osób?” i odpowiem „Było nas troje.”
+- Rozumiem i potrafię użyć około czterdziestu słów potocznych z lekcji. Wiem, których z nich nie powiem szefowi ani nauczycielowi.
+- Policzę grupę mężczyzn: dwóch, trzech, czterech, pięciu… i odmienię te liczebniki.
+- Odróżniam „dwóch” od „dwoje” i wiem, kiedy użyć dwoje, troje, czworo, pięcioro.
+- Zapytam „Ilu was jest? Ile osób?” i odpowiem „Było nas troje.”
 
 Wróć do słowa z rozgrzewki. Czy wiesz już, czy to slang, czy zwykłe słowo potoczne? Powiedz je w zdaniu z liczebnikiem.
 
+---
+
 ## 9. Praca domowa
+
+Trzy części — słownictwo i gramatyka, czytanie i pisanie.
 
 [EXERCISE: file="pl-b1-group-03-slang-hw.json", type="fill-in-blank"]
 
-**Artykuł.** Przeczytaj tekst „Młodzieżowe Słowo Roku 2025. Zgłoś swoją propozycję!” na portalu wroclaw.pl: https://www.wroclaw.pl/dla-mieszkanca/mlodziezowe-slowo-roku-2025-trwaja-zgloszenia-do-plebiscytu
+### Do czytania
+
+Przeczytaj tekst „Młodzieżowe Słowo Roku 2025. Zgłoś swoją propozycję!” na portalu wroclaw.pl: https://www.wroclaw.pl/dla-mieszkanca/mlodziezowe-slowo-roku-2025-trwaja-zgloszenia-do-plebiscytu
 
 Odpowiedz na piśmie, jednym zdaniem na każde pytanie:
 
@@ -138,19 +170,25 @@ Odpowiedz na piśmie, jednym zdaniem na każde pytanie:
 2. Jakie słowo wygrało w 2024 roku i co ono oznacza?
 3. Do kiedy można było zgłaszać propozycje słów i od kiedy głosować na finałową listę?
 
-**Praca pisemna (120–150 słów).** Twoja polska koleżanka przeprowadza się do Twojego miasta. Napisz do niej e-mail. Zacznij od zwrotu grzecznościowego i zakończ go pożegnaniem. W e-mailu:
+### Pisanie
+
+Napisz e-mail (**120–150 słów**). Twoja polska koleżanka przeprowadza się do Twojego miasta. Napisz do niej e-mail. Zacznij od zwrotu grzecznościowego i zakończ go pożegnaniem. W e-mailu:
 
 1. napisz, gdzie młodzi ludzie w Twoim mieście spędzają wieczory;
 2. opisz grupę znajomych, którym chcesz ją przedstawić (użyj liczebnika męskoosobowego lub zbiorowego);
 3. wyjaśnij jedno słowo potoczne, które powinna znać, zanim przyjedzie;
 4. zaproponuj spotkanie w pierwszym tygodniu po jej przyjeździe.
 
+---
+
 ## Słowniczek
+
+Wszystkie 40 słów lekcji w jednym miejscu. Wracaj tu przed pracą domową i przed następnymi zajęciami.
 
 
 ### Ludzie i ekipa
 
-| Słowo | Znaczenie | Przykład |
+| Słowo | Tłumaczenie | W zdaniu |
 |---|---|---|
 | **ziomek** | кореш, друг | Mój ziomek pomógł mi przenieść szafę. |
 | **stary** | чувак, старий (звертання) | Stary, zobacz, co znalazłem na ulicy! |
@@ -161,7 +199,7 @@ Odpowiedz na piśmie, jednym zdaniem na każde pytanie:
 
 ### Oceny i emocje
 
-| Słowo | Znaczenie | Przykład |
+| Słowo | Tłumaczenie | W zdaniu |
 |---|---|---|
 | **spoko** | нормально, окей | Spoko, możemy spotkać się o osiemnastej. |
 | **git** | норм, усе добре | Jak tam egzamin? – Git, chyba zdałem. |
@@ -175,7 +213,7 @@ Odpowiedz na piśmie, jednym zdaniem na każde pytanie:
 
 ### Czasowniki na co dzień
 
-| Słowo | Znaczenie | Przykład |
+| Słowo | Tłumaczenie | W zdaniu |
 |---|---|---|
 | **ogarnąć** | розібратися, впоратися | Spokojnie, ogarnę to jeszcze dzisiaj. |
 | **kumać** | розуміти, тямити | Nie kumam, dlaczego ten bilet jest taki drogi. |
@@ -189,7 +227,7 @@ Odpowiedz na piśmie, jednym zdaniem na każde pytanie:
 
 ### Pieniądze i ceny
 
-| Słowo | Znaczenie | Przykład |
+| Słowo | Tłumaczenie | W zdaniu |
 |---|---|---|
 | **kasa** | гроші; каса | Nie mam teraz kasy na nowy telefon. |
 | **hajs** | бабки, гроші | Skąd masz taki hajs na nowy rower? |
@@ -201,7 +239,7 @@ Odpowiedz na piśmie, jednym zdaniem na każde pytanie:
 
 ### Wolny czas i miasto
 
-| Słowo | Znaczenie | Przykład |
+| Słowo | Tłumaczenie | W zdaniu |
 |---|---|---|
 | **wypad** | виїзд, вилазка | W niedzielę robimy wypad na rowery. |
 | **chata** | хата, квартира | Chodźmy do mnie, mam chatę dla siebie. |
@@ -214,7 +252,7 @@ Odpowiedz na piśmie, jednym zdaniem na każde pytanie:
 
 ### Szkoła i praca
 
-| Słowo | Znaczenie | Przykład |
+| Słowo | Tłumaczenie | W zdaniu |
 |---|---|---|
 | **kujon** | ботан, зубрила | Nasz kujon zawsze ma piątkę z kartkówki. |
 | **ściąga** | шпаргалка | Nauczycielka znalazła ściągę pod ławką. |
