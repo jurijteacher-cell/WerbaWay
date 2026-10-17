@@ -7,9 +7,9 @@
   "items": [
     {
       "id": "c1",
-      "mode": "listen-then-play",
+      "mode": "read-then-play",
       "front_title": "Zaproszenie na urodziny",
-      "back_scenario": "W sobotę organizujesz przyjęcie urodzinowe. Dzwonisz do kolegi albo koleżanki i zapraszasz. Ta osoba nie jest pewna, czy zdąży. Najpierw posłuchaj rozmowy Marty i Pawła, potem odegraj swoją: inne miejsce, inna godzina, inny plan na wieczór.",
+      "back_scenario": "W sobotę organizujesz przyjęcie urodzinowe. Dzwonisz do kolegi albo koleżanki i zapraszasz. Ta osoba nie jest pewna, czy zdąży. Najpierw przeczytajcie w rolach rozmowę Marty i Pawła, potem odegraj swoją: inne miejsce, inna godzina, inny plan na wieczór.",
       "back_checklist": [
         "Przywitaj się i zapytaj, czy kolega ma chwilę.",
         "Zaproś na przyjęcie i powiedz, gdzie ono będzie.",
@@ -78,8 +78,7 @@
           "voice": "pl-PL-female",
           "line": "Jasne. To do usłyszenia!"
         }
-      ],
-      "audio_url": "/audio/pl-a2-mow-03-wolny-czas-c1-dialog.mp3"
+      ]
     },
     {
       "id": "c2",
