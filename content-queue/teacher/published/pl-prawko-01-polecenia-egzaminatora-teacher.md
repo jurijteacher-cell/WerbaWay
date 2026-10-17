@@ -18,11 +18,11 @@ sessions: 1
 | Хв | Розділ | Що робимо |
 |---|---|---|
 | 0–3 | Cele + rozgrzewka | Цілі уроку, два слова з розминки учень записує |
-| 3–13 | 1. Czytanie | Аудіо (≈2 хв) → читає сам → 4 питання до тексту |
+| 3–13 | 1. Czytanie | Учень читає вголос (≈3 хв) → 4 питання до тексту |
 | 13–20 | 2. Słownictwo | Групи «Na drodze» і «Polecenia egzaminatora»: до кожної команди жест або точка на мапі; «Egzamin i formalności» — швидко |
 | 20–31 | 3. Gramatyka, слайди | s1–s11; найдовше на s3, s5, s6 |
 | 31–40 | 3. Gramatyka, вправи | g2, g3, g4 (g1 і g5 — якщо лишився час, інакше в ДЗ) |
-| 40–55 | 4. Zadania | c1: аудіо (≈1,5 хв) + 3 питання на слухання + «їзда» по мапі (8 хв); c2: запис у WORD, ти — працівниця (5 хв) |
+| 40–55 | 4. Zadania | c1: діалог у ролях (≈2 хв) + 3 питання на розуміння + «їзда» по мапі (8 хв); c2: запис у WORD, ти — працівниця (5 хв) |
 | 55–60 | 5. Podsumowanie + ДЗ | 4 пункти підсумку, пояснити домашку |
 | **60** | | |
 
@@ -47,7 +47,7 @@ sessions: 1
 3. Bo na egzaminie praktycznym nikt nie będzie tłumaczył: polecenia są po polsku.
 4. Najtrudniejsze były polskie polecenia, nie przepisy. Друга частина — відкрита відповідь.
 
-**Слухання c1 (усно, після першого прослуховування)**
+**Розуміння c1 (усно, після читання в ролях)**
 1. Na którym skrzyżowaniu Iryna ma skręcić w lewo? — Na drugim.
 2. Którym zjazdem ma zjechać z ronda? — Trzecim, w kierunku centrum.
 3. Co ma zrobić za przystankiem? — Zatrzymać się przy prawej krawędzi jezdni, a potem zawrócić.

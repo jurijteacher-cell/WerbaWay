@@ -6,11 +6,11 @@ level: B1
 template: light-60
 kind: lesson
 tags: [prawo-jazdy, egzamin, droga, polecenia]
-status: draft
+status: published
 duration_minutes: 60
 sessions: 1
 grammar_points: [aspekt-pary, aspekt-polecenia, przyimki-miejsce, modalne-test, kalki-uk, slownictwo]
-exam_skills: [czytanie, sluchanie, mowienie, pisanie]
+exam_skills: [czytanie, mowienie, pisanie]
 recycles: []
 header_image_keywords: "driving lesson car"
 header_image_keywords_alt: "person driving car city"
@@ -34,8 +34,6 @@ header_image_source: stock
 [IMAGE: keywords="driving instructor student car", keywords_alt="hands steering wheel road", source="stock", alt="Kursant za kierownicą z instruktorem"]
 
 ### Taras zdaje na prawo jazdy
-
-[AUDIO: id="pl-prawko-01-czytanie", source="tts", text="section:1", voice="pl-PL-female", speed="0.9"]
 
 Taras od dwóch lat mieszka w Poznaniu i pracuje w magazynie. Kiedy dostał propozycję pracy jako kurier, usłyszał tylko jedno pytanie: „Ma Pan polskie prawo jazdy?”. Nie miał. Zapisał się więc na kurs w szkole jazdy.
 
@@ -66,9 +64,7 @@ Jak rozumieć, co mówi egzaminator, i jak czytać pytania z testu.
 
 ## 4. Zadania komunikacyjne
 
-Pierwsza karta ma przykładową rozmowę z egzaminatorem. Posłuchaj jej, a potem „jedź” po mapie i reaguj na polecenia.
-
-[AUDIO: id="pl-prawko-01-c1-dialog", source="tts", text="pl-prawko-01-polecenia-egzaminatora-comm-tasks.json#c1.model_dialogue", voice="pl-PL-female", speed="0.95"]
+Pierwsza karta ma przykładową rozmowę z egzaminatorem. Przeczytajcie ją w rolach, a potem „jedź” po mapie i reaguj na polecenia.
 
 [EXERCISE: file="pl-prawko-01-polecenia-egzaminatora-comm-tasks.json", type="flip-task"]
 

@@ -7,9 +7,9 @@
  "items": [
   {
    "id": "c1",
-   "mode": "listen-then-play",
+   "mode": "read-then-play",
    "front_title": "Egzamin w ruchu drogowym",
-   "back_scenario": "Jesteś na egzaminie praktycznym. Egzaminator daje polecenia. Najpierw posłuchaj przykładowej rozmowy. Potem nauczyciel jest egzaminatorem, a Ty „jedziesz” palcem po mapie miasta i mówisz, co robisz.",
+   "back_scenario": "Jesteś na egzaminie praktycznym. Egzaminator daje polecenia. Najpierw przeczytajcie w rolach przykładową rozmowę. Potem nauczyciel jest egzaminatorem, a Ty „jedziesz” palcem po mapie miasta i mówisz, co robisz.",
    "back_checklist": [
     "Po każdym poleceniu powiedz, co robisz, np. „Skręcam w prawo”.",
     "Jeśli nie rozumiesz, grzecznie poproś o powtórzenie.",
@@ -77,8 +77,7 @@
      "voice": "pl-PL-female",
      "line": "Dobrze. Zatrzymuję się za przystankiem, a potem zawracam."
     }
-   ],
-   "audio_url": "/audio/pl-prawko-01-c1-dialog.mp3"
+   ]
   },
   {
    "id": "c2",
