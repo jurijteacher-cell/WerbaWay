@@ -1,0 +1,110 @@
+{
+ "lesson_id": "pl-b1-group-03-pies",
+ "exercise_type": "true-false",
+ "title": "Jak na egzaminie B1",
+ "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+ "estimated_minutes": 12,
+ "blocks": [
+  {
+   "block_id": "e1",
+   "exam_skill": "czytanie",
+   "exercise_type": "true-false",
+   "source": "section:1",
+   "title": "Czytanie: prawda czy fałsz?",
+   "instruction": "Przeczytaj jeszcze raz tekst „Zanim weźmiesz psa” i zdecyduj, czy zdanie jest prawdziwe.",
+   "items": [
+    {
+     "id": "e1-1",
+     "statement": "Kasia jest wolontariuszką w schronisku od ośmiu lat.",
+     "answer": true,
+     "explanation": "„Od ośmiu lat jestem wolontariuszką w schronisku”."
+    },
+    {
+     "id": "e1-2",
+     "statement": "Pies potrzebuje jednego długiego spaceru dziennie.",
+     "answer": false,
+     "explanation": "Pies potrzebuje dwóch albo trzech spacerów dziennie."
+    },
+    {
+     "id": "e1-3",
+     "statement": "Kasia radzi kupić psa z ogłoszenia, jeśli jest tani.",
+     "answer": false,
+     "explanation": "Kasia pisze: „Nie kupuj psa z ogłoszenia »rasowy, bez papierów, tanio«”."
+    },
+    {
+     "id": "e1-4",
+     "statement": "Adopcja ze schroniska kończy się podpisaniem umowy.",
+     "answer": true,
+     "explanation": "„Na końcu podpisujesz umowę adopcyjną”."
+    },
+    {
+     "id": "e1-5",
+     "statement": "Obowiązkowe czipowanie psów już działa w całej Polsce.",
+     "answer": false,
+     "explanation": "Ustawa jest podpisana, ale obowiązek zacznie działać za kilka lat, kiedy powstanie rejestr."
+    },
+    {
+     "id": "e1-6",
+     "statement": "Pierwszy pies Kasi przez tydzień spał pod stołem.",
+     "answer": true,
+     "explanation": "„Burek przez tydzień spał pod stołem”."
+    }
+   ]
+  },
+  {
+   "block_id": "e2",
+   "exam_skill": "sluchanie",
+   "exercise_type": "multiple-choice",
+   "source": "pl-b1-group-03-pies-comm-tasks.json#c1.model_dialogue",
+   "max_plays": 2,
+   "title": "Słuchanie: telefon do schroniska",
+   "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+   "items": [
+    {
+     "id": "e2-1",
+     "question": "Jak długo Luna jest w schronisku?",
+     "options": [
+      "dwa tygodnie",
+      "trzy miesiące",
+      "cztery lata"
+     ],
+     "answer": "trzy miesiące",
+     "explanation": "Cztery lata to wiek Luny. W schronisku jest od trzech miesięcy."
+    },
+    {
+     "id": "e2-2",
+     "question": "Co klient musi zrobić najpierw?",
+     "options": [
+      "wypełnić ankietę na stronie",
+      "przyjść na rozmowę",
+      "podpisać umowę adopcyjną"
+     ],
+     "answer": "wypełnić ankietę na stronie",
+     "explanation": "„Najpierw niech pan wypełni ankietę na naszej stronie”."
+    },
+    {
+     "id": "e2-3",
+     "question": "Jakie zwierzę klient ma w domu?",
+     "options": [
+      "psa",
+      "kota",
+      "królika"
+     ],
+     "answer": "kota",
+     "explanation": "„Mam w domu kota”."
+    },
+    {
+     "id": "e2-4",
+     "question": "Kiedy klient przyjdzie na spacer z Luną?",
+     "options": [
+      "w sobotę o dziesiątej",
+      "w niedzielę rano",
+      "w sobotę po południu"
+     ],
+     "answer": "w sobotę o dziesiątej",
+     "explanation": "„Zapraszam o dziesiątej” — w sobotę rano."
+    }
+   ]
+  }
+ ]
+}

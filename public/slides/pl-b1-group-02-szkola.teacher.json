@@ -1,0 +1,421 @@
+{
+  "lesson_id": "pl-b1-group-02-szkola",
+  "exercise_type": "grammar-slides",
+  "title": "Czas przeszły: czasowniki na -eć",
+  "slides": [
+    {
+      "id": "s1",
+      "part": 1,
+      "section": "teoria",
+      "kind": "title",
+      "title": "Czasowniki na -eć",
+      "subtitle": "Miałem, mieliśmy, miały",
+      "goal": "Po tej lekcji opowiesz o swojej szkole w czasie przeszłym bez błędów w końcówkach.",
+      "teacher_note": "Запитай: «Що ви пам'ятаєте зі школи?» Учні відповідають польською як уміють. Запиши на дошці 3–4 помилкові форми типу «mełem», «chcieli» про дівчат — повернемося до них на пастках."
+    },
+    {
+      "id": "s2",
+      "part": 1,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Na -ić czy na -eć?",
+      "left": {
+        "head": "robić, uczyć, mówić",
+        "rule": "-ić / -yć → -ił",
+        "examples": [
+          "robić → [[robił]]",
+          "uczyć → [[uczył]]"
+        ]
+      },
+      "right": {
+        "head": "mieć, chcieć, wiedzieć",
+        "rule": "-eć → -ał",
+        "examples": [
+          "mieć → [[miał]]",
+          "chcieć → [[chciał]]"
+        ]
+      },
+      "note": "Najpierw sprawdź bezokolicznik, dopiero potem pisz końcówkę.",
+      "teacher_note": "Головне правило уроку: -eć дає -ał, а не -ił. В укр. «мав», «хотів» голосна теж змінюється — польська робить це регулярно."
+    },
+    {
+      "id": "s3",
+      "part": 1,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Wzór",
+      "steps": [
+        {
+          "label": "bezokolicznik",
+          "text": "mieć"
+        },
+        {
+          "label": "odetnij -eć, dodaj a",
+          "text": "mia-"
+        },
+        {
+          "label": "dodaj ł i końcówkę",
+          "text": "miałem"
+        }
+      ],
+      "result": "mi[[eć]] → mi[[a]]ł[[em]]",
+      "note": "Litery a nie ma w bezokoliczniku. Musisz ją dodać sam.",
+      "teacher_note": "Три кроки на дошці. Попроси утворити так само: musieć (ja), widzieć (ona), siedzieć (ono)."
+    },
+    {
+      "id": "s4",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Liczba pojedyncza",
+      "columns": [
+        "osoba",
+        "on mówi",
+        "ona mówi"
+      ],
+      "rows": [
+        [
+          "ja",
+          "miał[[em]]",
+          "miał[[am]]"
+        ],
+        [
+          "ty",
+          "miał[[eś]]",
+          "miał[[aś]]"
+        ],
+        [
+          "on / ona",
+          "miał",
+          "miał[[a]]"
+        ],
+        [
+          "ono",
+          "—",
+          "miało"
+        ]
+      ],
+      "note": "Zaimek „ja” jest niepotrzebny: osobę widać w końcówce.",
+      "teacher_note": "Відкривай по рядку. Учень-чоловік і учениця кажуть одне речення про себе: Miałem / Miałam dobrą wychowawczynię."
+    },
+    {
+      "id": "s5",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Liczba mnoga",
+      "columns": [
+        "osoba",
+        "męskoosobowe",
+        "pozostałe"
+      ],
+      "rows": [
+        [
+          "my",
+          "mi[[e]]liśmy",
+          "miałyśmy"
+        ],
+        [
+          "wy",
+          "mi[[e]]liście",
+          "miałyście"
+        ],
+        [
+          "oni / one",
+          "mi[[e]]li",
+          "miały"
+        ]
+      ],
+      "note": "Jeden mężczyzna w grupie wystarczy, żeby powiedzieć „mieli”.",
+      "teacher_note": "Це місце, де помиляються найчастіше. Перевір на групі: «Наш клас мав…» — якщо в класі є хлопці, то mieli."
+    },
+    {
+      "id": "s6",
+      "part": 1,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Ł to a, l to e",
+      "left": {
+        "head": "przed twardym ł",
+        "rule": "zostaje a",
+        "examples": [
+          "chci[[a]]ł, chci[[a]]ła, chci[[a]]ły"
+        ]
+      },
+      "right": {
+        "head": "przed miękkim l",
+        "rule": "wraca e",
+        "examples": [
+          "chci[[e]]li, chci[[e]]liśmy"
+        ]
+      },
+      "note": "Spójrz na literę po samogłosce: ł ciągnie a, l ciągnie e.",
+      "teacher_note": "Одне правило замість таблиці. Попроси прочитати вголос пари: wiedział / wiedzieli, umiał / umieli."
+    },
+    {
+      "id": "s7",
+      "part": 1,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Szkolne czasowniki",
+      "items": [
+        {
+          "tag": "umieć",
+          "pl": "Nie [[umiałem]] tego wzoru.",
+          "uk": "Я не вмів цієї формули."
+        },
+        {
+          "tag": "rozumieć",
+          "pl": "Uczniowie nie [[rozumieli]] zadania.",
+          "uk": "Учні не розуміли завдання."
+        },
+        {
+          "tag": "woleć",
+          "pl": "Nauczycielki [[wolały]] ciszę.",
+          "uk": "Вчительки воліли тишу."
+        },
+        {
+          "tag": "wiedzieć",
+          "pl": "[[Wiedziałam]] o kartkówce.",
+          "uk": "Я знала про коротку контрольну."
+        }
+      ],
+      "note": "Wszystkie działają według jednego wzoru.",
+      "teacher_note": "Дієслова, які знадобляться в розповіді про школу. Форми «wiedziłem» не існує — зверни увагу."
+    },
+    {
+      "id": "s8",
+      "part": 1,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "refers_to": "s3",
+      "title": "Nie każde -eć daje -ał",
+      "items": [
+        {
+          "rule": "patrzeć → patrzył, patrzyli",
+          "example": "[[Patrzyła]] na mnie przez dłuższą chwilę.",
+          "refers_to": "s3"
+        },
+        {
+          "rule": "grupa -rzeć gubi e: -arł",
+          "example": "Ktoś [[starł]] tablicę. Pies [[umarł]].",
+          "refers_to": "s3"
+        },
+        {
+          "rule": "ale słyszeć, leżeć, krzyczeć — zwykły wzór",
+          "example": "Nie [[słyszałem]] dzwonka. Tornistry [[leżały]] pod ścianą.",
+          "refers_to": "s3"
+        }
+      ],
+      "teacher_note": "Дві групи поза правилом і третій рядок для контрасту: схожі дієслова на -szeć, -żeć, -czeć працюють за звичайним зразком. Patrzał трапляється в розмові й старших книжках, але в завданнях уроку пишемо patrzył."
+    },
+    {
+      "id": "s9",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Wiedzieć czy widzieć?",
+      "left": {
+        "head": "wiedzieć = знати факт",
+        "rule": "wiedziałem, że…",
+        "examples": [
+          "[[Wiedziałem]] o egzaminie."
+        ]
+      },
+      "right": {
+        "head": "widzieć = бачити",
+        "rule": "widziałem kogoś / coś",
+        "examples": [
+          "[[Widziałem]] go na korytarzu."
+        ]
+      },
+      "note": "Jedna litera zmienia całe znaczenie.",
+      "teacher_note": "Wiedzieć — є «ie» як у «знати», widzieć — «i» як у «бачити». Перевір двома реченнями від учнів."
+    },
+    {
+      "id": "s10",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Wiedzieć czy znać?",
+      "left": {
+        "head": "znać + osoba, miejsce",
+        "rule": "znać kogoś / coś",
+        "examples": [
+          "[[Znałem]] go ze szkoły.",
+          "[[Znała]] to miasto."
+        ]
+      },
+      "right": {
+        "head": "wiedzieć + informacja",
+        "rule": "wiedzieć, że / o czym",
+        "examples": [
+          "[[Wiedziałem]], gdzie mieszka."
+        ]
+      },
+      "note": "Укр. «знати» = dwa polskie czasowniki.",
+      "teacher_note": "Калька «wiedziałem go» дуже часта. Людей і місця ми знаємо через znać, факти — через wiedzieć."
+    },
+    {
+      "id": "s11",
+      "part": 2,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Bez „ja”: boli mnie",
+      "items": [
+        {
+          "tag": "bolał",
+          "pl": "[[Bolał]] mnie brzuch przed klasówką.",
+          "uk": "У мене болів живіт перед контрольною."
+        },
+        {
+          "tag": "bolała",
+          "pl": "[[Bolała]] mnie głowa.",
+          "uk": "У мене боліла голова."
+        },
+        {
+          "tag": "zależało",
+          "pl": "Wszystko [[zależało]] od nauczyciela.",
+          "uk": "Усе залежало від учителя."
+        }
+      ],
+      "note": "Boli część ciała, nie ty. Nie mówimy „bolałem”.",
+      "teacher_note": "Підмет — частина тіла, тому рід дієслова береться від неї: brzuch → bolał, głowa → bolała."
+    },
+    {
+      "id": "s12",
+      "part": 2,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Należeć do",
+      "items": [
+        {
+          "tag": "ja",
+          "pl": "[[Należałem do]] kółka teatralnego.",
+          "uk": "Я ходив до театрального гуртка."
+        },
+        {
+          "tag": "ona",
+          "pl": "Ona [[należała do]] najlepszych uczennic.",
+          "uk": "Вона була серед найкращих учениць."
+        },
+        {
+          "tag": "my",
+          "pl": "[[Należeliśmy do]] harcerstwa.",
+          "uk": "Ми були в скаутській організації."
+        }
+      ],
+      "note": "Zawsze należeć do + dopełniacz. Nigdy „należeć w”.",
+      "teacher_note": "Сталий зворот. Попроси кожного сказати, до якого гуртка або клубу належав у школі."
+    },
+    {
+      "id": "s13",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Przeczenie",
+      "left": {
+        "head": "tak",
+        "rule": "biernik",
+        "examples": [
+          "Miałem [[czas]].",
+          "Widziałem [[kolegę]]."
+        ]
+      },
+      "right": {
+        "head": "nie",
+        "rule": "dopełniacz",
+        "examples": [
+          "Nie miałem [[czasu]].",
+          "Nie widziałem [[kolegi]]."
+        ]
+      },
+      "note": "Forma czasownika się nie zmienia. Zmienia się rzeczownik.",
+      "teacher_note": "Нагадай: після заперечення знахідний відмінок переходить у родовий. В укр. так само буває: «не мав часу»."
+    },
+    {
+      "id": "s14",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "refers_to": "s13",
+      "title": "Kiedy przeczenie nic nie zmienia",
+      "items": [
+        {
+          "rule": "być + narzędnik zostaje",
+          "example": "Nie byłem [[dobrym uczniem]].",
+          "refers_to": "s13"
+        },
+        {
+          "rule": "podmiot zostaje w mianowniku",
+          "example": "Nie bolała mnie [[głowa]].",
+          "refers_to": "s13"
+        },
+        {
+          "rule": "czasownik już z dopełniaczem",
+          "example": "Nie bała się [[nauczyciela]].",
+          "refers_to": "s13"
+        }
+      ],
+      "teacher_note": "Правило працює тільки для знахідного. Інші відмінки після «nie» лишаються як були."
+    },
+    {
+      "id": "s15",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "я мав",
+          "wrong": "mełem",
+          "right": "[[miałem]]",
+          "why": "-eć zawsze daje -ał."
+        },
+        {
+          "uk": "я думав",
+          "wrong": "myślił",
+          "right": "[[myślał]]",
+          "why": "myśleć kończy się na -eć."
+        },
+        {
+          "uk": "він мусив",
+          "wrong": "musił",
+          "right": "[[musiał]]",
+          "why": "musieć → musiał, jak mieć → miał."
+        }
+      ],
+      "teacher_note": "Перша трійка — форми. Українське «мав», «мусив» тягне до -ił. Вимовити правильні форми вголос."
+    },
+    {
+      "id": "s16",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "дівчата хотіли",
+          "wrong": "dziewczyny chcieli",
+          "right": "dziewczyny [[chciały]]",
+          "why": "Same kobiety → forma na -ały."
+        },
+        {
+          "uk": "я знав його",
+          "wrong": "wiedziałem go",
+          "right": "[[znałem]] go",
+          "why": "Osobę znamy, informację wiemy."
+        },
+        {
+          "uk": "у мене боліла голова",
+          "wrong": "u mnie bolała głowa",
+          "right": "[[bolała mnie]] głowa",
+          "why": "Kogo boli? Mnie — bez „u”."
+        }
+      ],
+      "teacher_note": "Друга трійка — вживання. Попроси учнів виправити речення з дошки з розминки."
+    }
+  ]
+}

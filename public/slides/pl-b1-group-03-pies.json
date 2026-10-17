@@ -1,0 +1,416 @@
+{
+  "lesson_id": "pl-b1-group-03-pies",
+  "exercise_type": "grammar-slides",
+  "title": "Tryb rozkazujący",
+  "slides": [
+    {
+      "id": "s1",
+      "part": 1,
+      "section": "teoria",
+      "kind": "title",
+      "title": "Tryb rozkazujący",
+      "subtitle": "Weź smycz! Nie krzycz! Niech śpi.",
+      "goal": "Po tej lekcji dasz radę, polecenie albo zakaz — do psa, do przyjaciela i grzecznie do obcej osoby."
+    },
+    {
+      "id": "s2",
+      "part": 1,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Informacja czy rozkaz?",
+      "left": {
+        "head": "informacja",
+        "rule": "co ktoś robi",
+        "examples": [
+          "Kasia [[wyprowadza]] psa o siódmej."
+        ]
+      },
+      "right": {
+        "head": "rozkaz, rada, prośba",
+        "rule": "co masz zrobić",
+        "examples": [
+          "Marek, [[wyprowadź]] psa!",
+          "Reks, [[czekaj]]!"
+        ]
+      },
+      "note": "Tryb rozkazujący: prośba, rada, instrukcja, komenda."
+    },
+    {
+      "id": "s3",
+      "part": 1,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Wzór",
+      "steps": [
+        {
+          "label": "forma „on”",
+          "text": "on czyta / on robi"
+        },
+        {
+          "label": "utnij końcówkę",
+          "text": "czyta- / rob-"
+        },
+        {
+          "label": "rozkaz dla „ty”",
+          "text": "czytaj / rób"
+        }
+      ],
+      "result": "on czyt[[a]] → [[czytaj]] · on rob[[i]] → [[rób]]",
+      "note": "Najpierw powiedz formę „on”, potem utnij końcówkę."
+    },
+    {
+      "id": "s4",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Ty, my, wy",
+      "columns": [
+        "ty",
+        "my",
+        "wy"
+      ],
+      "rows": [
+        [
+          "czytaj",
+          "czytaj[[my]]",
+          "czytaj[[cie]]"
+        ],
+        [
+          "rób",
+          "rób[[my]]",
+          "rób[[cie]]"
+        ],
+        [
+          "idź",
+          "idźmy",
+          "idźcie"
+        ]
+      ],
+      "note": "Forma „my” to propozycja: Idźmy na spacer!"
+    },
+    {
+      "id": "s5",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Końcówki",
+      "columns": [
+        "bezokolicznik",
+        "on",
+        "rozkaz"
+      ],
+      "rows": [
+        [
+          "czekać",
+          "czeka",
+          "czek[[aj]]"
+        ],
+        [
+          "kupować",
+          "kupuje",
+          "kup[[uj]]"
+        ],
+        [
+          "pisać, czesać",
+          "pisze, czesze",
+          "pisz, czesz"
+        ],
+        [
+          "zamknąć, wytrzeć",
+          "zamknie, wytrze",
+          "zamkn[[ij]], wytrz[[yj]]"
+        ]
+      ],
+      "note": "-ij / -yj dodajemy tylko wtedy, kiedy bez nich nie da się wymówić."
+    },
+    {
+      "id": "s6",
+      "part": 1,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Wymiany",
+      "items": [
+        {
+          "tag": "o → ó",
+          "pl": "robi → [[rób]], stoi → [[stój]]",
+          "uk": "роби, стій"
+        },
+        {
+          "tag": "o → ó",
+          "pl": "pomoże → [[pomóż]]",
+          "uk": "допоможи"
+        },
+        {
+          "tag": "-ci → -ć",
+          "pl": "zapłaci → [[zapłać]], wróci → [[wróć]]",
+          "uk": "заплати, повернися"
+        }
+      ],
+      "note": "Końcówka znika, samogłoska się wydłuża albo spółgłoska mięknie."
+    },
+    {
+      "id": "s7",
+      "part": 1,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Przeczenie: nie + niedokonany",
+      "left": {
+        "head": "rada",
+        "rule": "dokonany",
+        "examples": [
+          "[[Kup]] karmę!",
+          "[[Daj]] mu kość!"
+        ]
+      },
+      "right": {
+        "head": "zakaz",
+        "rule": "nie + niedokonany",
+        "examples": [
+          "Nie [[kupuj]] tej karmy!",
+          "Nie [[dawaj]] mu kości!"
+        ]
+      },
+      "note": "Po „nie” biernik zmienia się w dopełniacz: karmę → karmy."
+    },
+    {
+      "id": "s8",
+      "part": 1,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "refers_to": "s7",
+      "title": "Nie + dokonany: ostrzeżenie",
+      "items": [
+        {
+          "rule": "przestroga przed wypadkiem",
+          "example": "Nie [[zgub]] kluczy!",
+          "refers_to": "s7"
+        },
+        {
+          "rule": "coś, co może się stać przypadkiem",
+          "example": "Nie [[zapomnij]] smyczy!",
+          "refers_to": "s7"
+        },
+        {
+          "rule": "troska",
+          "example": "Uważaj, nie [[przewróć się]]!",
+          "refers_to": "s7"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Nieregularne",
+      "columns": [
+        "bezokolicznik",
+        "rozkaz",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "być",
+          "[[bądź]]",
+          "Bądź cierpliwy!"
+        ],
+        [
+          "mieć",
+          "[[miej]]",
+          "Miej czas dla psa!"
+        ],
+        [
+          "iść / jeść",
+          "idź / jedz",
+          "Idź na spacer. Jedz powoli."
+        ],
+        [
+          "wziąć / zostać",
+          "weź / zostań",
+          "Weź smycz! Zostań w domu!"
+        ]
+      ],
+      "note": "Tych form uczymy się na pamięć."
+    },
+    {
+      "id": "s10",
+      "part": 2,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Z „się”",
+      "items": [
+        {
+          "tag": "bać się",
+          "pl": "Nie [[bój się]]!",
+          "uk": "Не бійся!"
+        },
+        {
+          "tag": "uspokoić się",
+          "pl": "[[Uspokój się]]!",
+          "uk": "Заспокойся!"
+        },
+        {
+          "tag": "martwić się",
+          "pl": "Nie [[martwcie się]]!",
+          "uk": "Не хвилюйтеся!"
+        }
+      ],
+      "note": "„Się” stoi po czasowniku: Uspokój się! — nie: Się uspokój!"
+    },
+    {
+      "id": "s11",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Do przyjaciela czy do obcego?",
+      "left": {
+        "head": "ty, wy",
+        "rule": "tryb rozkazujący",
+        "examples": [
+          "[[Pokaż]] mi tego psa."
+        ]
+      },
+      "right": {
+        "head": "pan, pani",
+        "rule": "proszę + bezokolicznik / niech pan",
+        "examples": [
+          "[[Proszę]] mi [[pokazać]] tego psa.",
+          "[[Niech pan pokaże]] tego psa."
+        ]
+      },
+      "note": "Do obcych prawie nigdy nie mówimy „pokaż”."
+    },
+    {
+      "id": "s12",
+      "part": 2,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Niech on, niech oni",
+      "items": [
+        {
+          "tag": "zasada",
+          "pl": "[[Niech]] pies [[śpi]] w kuchni.",
+          "uk": "Нехай пес спить на кухні."
+        },
+        {
+          "tag": "zakaz",
+          "pl": "[[Niech]] dzieci [[nie karmią]] psa przy stole.",
+          "uk": "Нехай діти не годують пса за столом."
+        },
+        {
+          "tag": "plan",
+          "pl": "[[Niech]] Marek [[wyjdzie]] z nim rano.",
+          "uk": "Нехай Марек вийде з ним уранці."
+        }
+      ],
+      "note": "Niech + zwykła forma czasownika (on, oni)."
+    },
+    {
+      "id": "s13",
+      "part": 2,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Łagodnie",
+      "items": [
+        {
+          "tag": "proszę w środku",
+          "pl": "[[Zamknij, proszę,]] drzwi.",
+          "uk": "Зачини, будь ласка, двері."
+        },
+        {
+          "tag": "pytanie",
+          "pl": "[[Możesz]] wyprowadzić psa?",
+          "uk": "Можеш вивести пса?"
+        },
+        {
+          "tag": "propozycja",
+          "pl": "[[Może]] weźmiesz smycz?",
+          "uk": "Може, візьмеш повідець?"
+        }
+      ],
+      "note": "Samo „Zamknij drzwi!” brzmi jak rozkaz."
+    },
+    {
+      "id": "s14",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "refers_to": "s11",
+      "title": "Rozkaz bez trybu rozkazującego",
+      "items": [
+        {
+          "rule": "komendy dla psa",
+          "example": "[[Siad!]] [[Leżeć!]] [[Do mnie!]]",
+          "refers_to": "s11"
+        },
+        {
+          "rule": "tablice i regulaminy",
+          "example": "[[Nie deptać]] trawników. Psy [[prowadzić]] na smyczy.",
+          "refers_to": "s11"
+        },
+        {
+          "rule": "instrukcje",
+          "example": "Karmę [[podawać]] dwa razy dziennie.",
+          "refers_to": "s11"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "іди сюди",
+          "wrong": "idź tutaj",
+          "right": "[[chodź]] tutaj",
+          "why": "Idź = йди звідси, chodź = йди сюди."
+        },
+        {
+          "uk": "їж / їдь",
+          "wrong": "jedź to!",
+          "right": "[[jedz]] to! · [[jedź]] wolniej!",
+          "why": "jedz = їж, jedź = їдь."
+        },
+        {
+          "uk": "давай підемо",
+          "wrong": "dawaj chodźmy",
+          "right": "[[chodźmy]]",
+          "why": "Forma „my” już znaczy „давай”."
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "не бійся",
+          "wrong": "nie boisz się",
+          "right": "nie [[bój]] się",
+          "why": "Zakaz, nie pytanie."
+        },
+        {
+          "uk": "нехай подзвонить",
+          "wrong": "niech zadzwoń",
+          "right": "niech [[zadzwoni]]",
+          "why": "Po niech forma „on”."
+        },
+        {
+          "uk": "зачини двері",
+          "wrong": "zamknę drzwi",
+          "right": "[[zamknij]] drzwi",
+          "why": "Zamknę = зачиню (я)."
+        }
+      ]
+    }
+  ]
+}

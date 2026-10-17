@@ -1,0 +1,110 @@
+{
+ "lesson_id": "pl-b1-group-02-zakupy",
+ "exercise_type": "true-false",
+ "title": "Jak na egzaminie B1",
+ "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+ "estimated_minutes": 12,
+ "blocks": [
+  {
+   "block_id": "e1",
+   "exam_skill": "czytanie",
+   "exercise_type": "true-false",
+   "source": "section:1",
+   "title": "Czytanie: prawda czy fałsz?",
+   "instruction": "Przeczytaj jeszcze raz tekst „Koszyk pełen pułapek” i zdecyduj, czy zdanie jest prawdziwe.",
+   "items": [
+    {
+     "id": "e1-1",
+     "statement": "Autor uważa, że w zakupach za granicą najtrudniejsze są ceny.",
+     "answer": false,
+     "explanation": "Autor pisze, że najtrudniejsze są nazwy, a nie ceny."
+    },
+    {
+     "id": "e1-2",
+     "statement": "Bułka tarta nie jest rodzajem bułki.",
+     "answer": true,
+     "explanation": "W tekście: „Bułka tarta nie jest bułką”."
+    },
+    {
+     "id": "e1-3",
+     "statement": "W 2026 roku w Polsce jest osiem niedziel handlowych.",
+     "answer": true,
+     "explanation": "Autor podaje, że w 2026 roku niedziel handlowych jest tylko osiem."
+    },
+    {
+     "id": "e1-4",
+     "statement": "Przy promocji sklep musi podać najwyższą cenę z trzydziestu dni przed obniżką.",
+     "answer": false,
+     "explanation": "Sklep musi podać najniższą cenę z trzydziestu dni przed obniżką."
+    },
+    {
+     "id": "e1-5",
+     "statement": "Błonnik jest obowiązkową pozycją w tabeli wartości odżywczej.",
+     "answer": false,
+     "explanation": "Producent podaje błonnik tylko wtedy, kiedy sam chce."
+    },
+    {
+     "id": "e1-6",
+     "statement": "Oscypek dostał unijną ochronę wcześniej niż bryndza podhalańska.",
+     "answer": false,
+     "explanation": "Bryndza była pierwsza, w 2007 roku. Oscypek dołączył rok później."
+    }
+   ]
+  },
+  {
+   "block_id": "e2",
+   "exam_skill": "sluchanie",
+   "exercise_type": "multiple-choice",
+   "source": "pl-b1-group-02-zakupy-comm-tasks.json#c1.model_dialogue",
+   "max_plays": 2,
+   "title": "Słuchanie: reklamacja kurtki",
+   "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+   "items": [
+    {
+     "id": "e2-1",
+     "question": "Kiedy klient kupił kurtkę?",
+     "options": [
+      "miesiąc temu",
+      "tydzień temu",
+      "pięć dni temu"
+     ],
+     "answer": "miesiąc temu",
+     "explanation": "Klient mówi: „Kupiłem tę kurtkę miesiąc temu”."
+    },
+    {
+     "id": "e2-2",
+     "question": "Czym klient potwierdza zakup?",
+     "options": [
+      "paragonem",
+      "potwierdzeniem z aplikacji banku",
+      "protokołem reklamacji"
+     ],
+     "answer": "potwierdzeniem z aplikacji banku",
+     "explanation": "Paragon zginął, więc klient pokazuje potwierdzenie z aplikacji banku."
+    },
+    {
+     "id": "e2-3",
+     "question": "Czego klient chciałby najpierw?",
+     "options": [
+      "zwrotu pieniędzy",
+      "wymiany na nową kurtkę",
+      "naprawy zamka"
+     ],
+     "answer": "wymiany na nową kurtkę",
+     "explanation": "„Najchętniej wymieniłbym ją na nową”. Zwrot to dopiero drugi wybór."
+    },
+    {
+     "id": "e2-4",
+     "question": "Kiedy pieniądze wrócą na kartę?",
+     "options": [
+      "w ciągu pięciu dni roboczych",
+      "od razu",
+      "za miesiąc"
+     ],
+     "answer": "w ciągu pięciu dni roboczych",
+     "explanation": "Sprzedawczyni mówi, że pieniądze wrócą w ciągu pięciu dni roboczych."
+    }
+   ]
+  }
+ ]
+}

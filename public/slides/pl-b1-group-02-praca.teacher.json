@@ -1,0 +1,441 @@
+{
+  "lesson_id": "pl-b1-group-02-praca",
+  "exercise_type": "grammar-slides",
+  "title": "Rzeczowniki odczasownikowe",
+  "slides": [
+    {
+      "id": "s1",
+      "part": 1,
+      "section": "teoria",
+      "kind": "title",
+      "title": "Rzeczowniki odczasownikowe",
+      "subtitle": "Szukać → szukanie",
+      "goal": "Po tej lekcji zamienisz czynność w rzecz i zrozumiesz język ogłoszeń, umów i maili do szefa.",
+      "teacher_note": "Покажи справжнє оголошення про роботу польською і попроси знайти всі слова на -nie / -cie. Їх буде 5–8 — це мова документів, тому урок про роботу."
+    },
+    {
+      "id": "s2",
+      "part": 1,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Czynność czy rzecz?",
+      "left": {
+        "head": "czasownik",
+        "rule": "co robię?",
+        "examples": [
+          "[[Szukam]] pracy od marca."
+        ]
+      },
+      "right": {
+        "head": "rzeczownik odczasownikowy",
+        "rule": "czynność jako rzecz",
+        "examples": [
+          "[[Szukanie]] pracy trwa miesiącami.",
+          "[[Palenie]] wzbronione."
+        ]
+      },
+      "note": "Rzeczownik może być podmiotem, stać po przyimku i mieć przypadek.",
+      "teacher_note": "В укр. те саме: шукати → пошук, але польська утворює такі слова майже від кожного дієслова й регулярно. Порівняй: «Шукання роботи» звучить штучно, а «szukanie pracy» — норма."
+    },
+    {
+      "id": "s3",
+      "part": 1,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Wzór: przez imiesłów",
+      "steps": [
+        {
+          "label": "czasownik",
+          "text": "zatrudnić"
+        },
+        {
+          "label": "imiesłów bierny",
+          "text": "zatrudniony"
+        },
+        {
+          "label": "-ny → -nie, -ty → -cie",
+          "text": "zatrudnienie"
+        }
+      ],
+      "result": "zatrudnio[[ny]] → zatrudnie[[nie]] · zamknię[[ty]] → zamknię[[cie]]",
+      "note": "Znasz imiesłów bierny z lekcji o wynalazkach? Masz już połowę pracy.",
+      "teacher_note": "Ключ — дієприкметник пасиву з першого уроку. Попроси утворити: podpisać → podpisany → ?, przyjąć → przyjęty → ?"
+    },
+    {
+      "id": "s4",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Trzy końcówki",
+      "columns": [
+        "czasownik",
+        "końcówka",
+        "rzeczownik"
+      ],
+      "rows": [
+        [
+          "szukać, pisać",
+          "[[-anie]]",
+          "szukanie, pisanie"
+        ],
+        [
+          "rozliczyć, prosić",
+          "[[-enie]]",
+          "rozliczenie, proszenie"
+        ],
+        [
+          "pić, przyjąć, zamknąć",
+          "[[-cie]]",
+          "picie, przyjęcie, zamknięcie"
+        ]
+      ],
+      "note": "Wymiana spółgłosek jak w imiesłowie: prosić → proszony → proszenie.",
+      "teacher_note": "Відкривай рядками. Чергування s → sz, z → ż, t → c ті самі, що в дієприкметнику — нового вчити не треба."
+    },
+    {
+      "id": "s5",
+      "part": 1,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "refers_to": "s3",
+      "title": "Nieregularne",
+      "items": [
+        {
+          "rule": "jeść → jedzenie",
+          "example": "[[Jedzenie]] w stołówce jest tanie.",
+          "refers_to": "s3"
+        },
+        {
+          "rule": "wziąć → wzięcie, znaleźć → znalezienie",
+          "example": "[[Znalezienie]] mieszkania zajęło mi dwa miesiące.",
+          "refers_to": "s3"
+        },
+        {
+          "rule": "mieć → brak rzeczownika czynności",
+          "example": "[[Mienie]] znaczy majątek, nie „posiadanie”.",
+          "refers_to": "s3"
+        }
+      ],
+      "teacher_note": "Три випадки, які не виводяться з дієприкметника. Mienie — пастка: це «майно», а не «мання»."
+    },
+    {
+      "id": "s6",
+      "part": 1,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Dopełnienie: biernik → dopełniacz",
+      "left": {
+        "head": "czasownik + biernik",
+        "rule": "co robię?",
+        "examples": [
+          "Podpisuję [[umowę]].",
+          "Prowadzę [[firmę]]."
+        ]
+      },
+      "right": {
+        "head": "rzeczownik + dopełniacz",
+        "rule": "czego?",
+        "examples": [
+          "Podpisanie [[umowy]]",
+          "Prowadzenie [[firmy]]"
+        ]
+      },
+      "note": "Kto to robi? przez + biernik: podpisanie umowy przez pracodawcę.",
+      "teacher_note": "Як в укр.: підписую договір → підписання договору. Тут збіг повний, тому учні роблять правильно, якщо не перекладають дослівно з -ння."
+    },
+    {
+      "id": "s7",
+      "part": 1,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Rekcja zostaje",
+      "items": [
+        {
+          "tag": "narzędnik",
+          "pl": "zarządzać zespołem → [[zarządzanie zespołem]]",
+          "uk": "керування командою"
+        },
+        {
+          "tag": "celownik",
+          "pl": "pomagać klientom → [[pomaganie klientom]]",
+          "uk": "допомога клієнтам"
+        },
+        {
+          "tag": "przyimek",
+          "pl": "korzystać z auta → [[korzystanie z auta]]",
+          "uk": "користування авто"
+        }
+      ],
+      "note": "Zmienia się tylko biernik. Reszta przechodzi bez zmian.",
+      "teacher_note": "Правило з одного речення: у родовий переходить лише знахідний. Попроси назвати 3 свої робочі обов'язки іменниками."
+    },
+    {
+      "id": "s8",
+      "part": 1,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Z „się”",
+      "items": [
+        {
+          "tag": "uczyć się",
+          "pl": "[[uczenie się]] języka",
+          "uk": "вивчення мови (собою)"
+        },
+        {
+          "tag": "skupić się",
+          "pl": "[[skupienie się]] na zadaniu",
+          "uk": "зосередження на завданні"
+        },
+        {
+          "tag": "zgłaszać się",
+          "pl": "[[zgłaszanie się]] na szkolenie",
+          "uk": "запис на навчання"
+        }
+      ],
+      "note": "Bez „się” zmienia się sens: uczenie dzieci ≠ uczenie się.",
+      "teacher_note": "«Się» не зникає. Покажи різницю: uczenie (кого?) — навчання інших, uczenie się — навчання себе."
+    },
+    {
+      "id": "s9",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Odmiana jak „zdanie”",
+      "columns": [
+        "przypadek",
+        "pytanie",
+        "forma"
+      ],
+      "rows": [
+        [
+          "mianownik",
+          "co?",
+          "to zatrudnienie"
+        ],
+        [
+          "dopełniacz",
+          "czego?",
+          "bez zatrudnieni[[a]]"
+        ],
+        [
+          "narzędnik",
+          "czym?",
+          "z zatrudnienie[[m]]"
+        ],
+        [
+          "miejscownik",
+          "o czym?",
+          "o zatrudnieni[[u]]"
+        ],
+        [
+          "l. mnoga",
+          "co?",
+          "spotkani[[a]], zlecenia"
+        ]
+      ],
+      "note": "Zawsze rodzaj nijaki.",
+      "teacher_note": "Іменник середнього роду, відмінюється як zdanie або mieszkanie. Окремо вчити не треба."
+    },
+    {
+      "id": "s10",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Po, przed, w trakcie, do",
+      "columns": [
+        "przyimek",
+        "przypadek",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "po",
+          "miejscownik",
+          "po [[podpisaniu]] umowy"
+        ],
+        [
+          "przed",
+          "narzędnik",
+          "przed [[rozpoczęciem]] pracy"
+        ],
+        [
+          "w trakcie",
+          "dopełniacz",
+          "w trakcie [[szukania]] pracy"
+        ],
+        [
+          "do",
+          "dopełniacz",
+          "wniosek do [[wypełnienia]]"
+        ]
+      ],
+      "note": "Przyimek wybiera przypadek, rzeczownik tylko się odmienia.",
+      "teacher_note": "Мова договорів і мейлів. Попроси кожного скласти речення з po і przed про свій перший день на роботі."
+    },
+    {
+      "id": "s11",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Proces czy wynik?",
+      "left": {
+        "head": "niedokonany: proces",
+        "rule": "trwa, zajmuje czas",
+        "examples": [
+          "[[Pisanie]] raportu zajęło mi dzień."
+        ]
+      },
+      "right": {
+        "head": "dokonany: wynik",
+        "rule": "po, przed, termin",
+        "examples": [
+          "Po [[napisaniu]] raportu wyślij go szefowej."
+        ]
+      },
+      "note": "Aspekt czasownika zostaje w rzeczowniku.",
+      "teacher_note": "Вид дієслова «переходить» в іменник. Укр. «писання / написання» працює так само."
+    },
+    {
+      "id": "s12",
+      "part": 2,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Słowa, które stały się rzeczami",
+      "items": [
+        {
+          "tag": "zwolnienie",
+          "pl": "[[zwolnienie lekarskie]] (L4)",
+          "uk": "лікарняний — не звільнення!"
+        },
+        {
+          "tag": "wypowiedzenie",
+          "pl": "złożyć [[wypowiedzenie]]",
+          "uk": "подати заяву про розірвання договору"
+        },
+        {
+          "tag": "wynagrodzenie",
+          "pl": "[[wynagrodzenie]] brutto",
+          "uk": "заробітна плата"
+        },
+        {
+          "tag": "zlecenie",
+          "pl": "umowa [[zlecenia]]",
+          "uk": "договір доручення"
+        }
+      ],
+      "note": "Te słowa mają już własne znaczenie, nie tylko czynność.",
+      "teacher_note": "Найважливіше для роботи в Польщі: zwolnienie lekarskie ≠ zwolnienie z pracy. Перепитай групу."
+    },
+    {
+      "id": "s13",
+      "part": 2,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Przeczenie: razem",
+      "items": [
+        {
+          "tag": "czasownik",
+          "pl": "Nie [[zapłacił]] składek.",
+          "uk": "Не сплатив внесків."
+        },
+        {
+          "tag": "rzeczownik",
+          "pl": "[[Niezapłacenie]] składek",
+          "uk": "Несплата внесків"
+        },
+        {
+          "tag": "z się",
+          "pl": "[[Niestawienie się]] do pracy",
+          "uk": "Неявка на роботу"
+        }
+      ],
+      "note": "Czasownik osobno, rzeczownik razem.",
+      "teacher_note": "Правопис: nie з дієсловом окремо, з іменником — разом. Типова помилка в листах."
+    },
+    {
+      "id": "s14",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "refers_to": "s11",
+      "title": "Kiedy po + niedokonany",
+      "items": [
+        {
+          "rule": "liczy się długi proces",
+          "example": "Po długim [[szukaniu]] znalazłam pracę.",
+          "refers_to": "s11"
+        },
+        {
+          "rule": "czasownik nie ma pary",
+          "example": "Po [[pływaniu]] jestem głodny.",
+          "refers_to": "s11"
+        },
+        {
+          "rule": "przed + zwykle dokonany",
+          "example": "Przed [[podpisaniem]] umowy przeczytaj ją.",
+          "refers_to": "s11"
+        }
+      ],
+      "teacher_note": "Правило «po / przed → доконаний» — тенденція, не закон. Якщо важливий довгий процес або пари немає, вживаємо недоконаний."
+    },
+    {
+      "id": "s15",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "після підписання",
+          "wrong": "po podpisania",
+          "right": "po [[podpisaniu]]",
+          "why": "Po + miejscownik."
+        },
+        {
+          "uk": "для заповнення",
+          "wrong": "dla wypełnienia",
+          "right": "[[do]] wypełnienia",
+          "why": "Formularz do czego? Do wypełnienia."
+        },
+        {
+          "uk": "досвід роботи",
+          "wrong": "doświadczenie pracy",
+          "right": "doświadczenie [[zawodowe]]",
+          "why": "Stałe połączenie w CV."
+        }
+      ],
+      "teacher_note": "Перша трійка — калька прийменників і словосполучень."
+    },
+    {
+      "id": "s16",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "виконання",
+          "wrong": "wykonannie",
+          "right": "[[wykonanie]]",
+          "why": "Jedno n: wykonany → wykonanie."
+        },
+        {
+          "uk": "несплата",
+          "wrong": "nie zapłacenie",
+          "right": "[[niezapłacenie]]",
+          "why": "Rzeczownik z nie — razem."
+        },
+        {
+          "uk": "запрошення",
+          "wrong": "zapraszenie",
+          "right": "[[zaproszenie]]",
+          "why": "zaprosić → zaproszony → zaproszenie."
+        }
+      ],
+      "teacher_note": "Друга трійка — правопис. Українське подвоєння -нн- у польській не з'являється."
+    }
+  ]
+}

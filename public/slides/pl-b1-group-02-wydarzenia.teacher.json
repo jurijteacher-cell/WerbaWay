@@ -1,0 +1,448 @@
+{
+  "lesson_id": "pl-b1-group-02-wydarzenia",
+  "exercise_type": "grammar-slides",
+  "title": "Daty i czas",
+  "slides": [
+    {
+      "id": "s1",
+      "part": 1,
+      "section": "teoria",
+      "kind": "title",
+      "title": "Daty i czas",
+      "subtitle": "Kiedy? W którym roku? Jak długo?",
+      "goal": "Po tej lekcji przeczytasz każdą datę i opowiesz historię krok po kroku.",
+      "teacher_note": "Попроси кожного назвати одну важливу дату з історії своєї країни цифрами. Не виправляй — повернемося до цих дат у кінці уроку."
+    },
+    {
+      "id": "s2",
+      "part": 1,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Ile? czy który?",
+      "left": {
+        "head": "ile? — liczebnik główny",
+        "rule": "liczy",
+        "examples": [
+          "[[trzy]] lata",
+          "[[sto]] lat"
+        ]
+      },
+      "right": {
+        "head": "który? — liczebnik porządkowy",
+        "rule": "wskazuje miejsce",
+        "examples": [
+          "[[trzeci]] rok",
+          "[[pierwszy]] września"
+        ]
+      },
+      "note": "Data to zawsze liczebnik porządkowy.",
+      "teacher_note": "Головна думка уроку: дата — це «котрий», а не «скільки». Порівняй укр. «першого вересня» — там теж порядковий числівник."
+    },
+    {
+      "id": "s3",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Rok: w … roku",
+      "columns": [
+        "zapis",
+        "czytamy"
+      ],
+      "rows": [
+        [
+          "w 1989 roku",
+          "w tysiąc dziewięćset [[osiemdziesiątym dziewiątym]] roku"
+        ],
+        [
+          "w 1410 roku",
+          "w tysiąc czterysta [[dziesiątym]] roku"
+        ],
+        [
+          "w 2004 roku",
+          "w dwa tysiące [[czwartym]] roku"
+        ]
+      ],
+      "note": "Porządkowe są tylko dziesiątki i jedności.",
+      "teacher_note": "Відкривай по рядку і проси читати вголос. Наголос: тисяча і сотні не змінюються, змінюються тільки десятки й одиниці, і вони стоять у місцевому відмінку."
+    },
+    {
+      "id": "s4",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Kiedy? czy jaki dziś dzień?",
+      "columns": [
+        "pytanie",
+        "przypadek",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "Kiedy?",
+          "dopełniacz",
+          "[[jedenastego]] listopada"
+        ],
+        [
+          "Jaki dziś dzień?",
+          "mianownik",
+          "Dziś jest [[jedenasty]] listopada."
+        ],
+        [
+          "Kiedy masz urodziny?",
+          "dopełniacz",
+          "[[Dwudziestego piątego]] marca."
+        ]
+      ],
+      "note": "Miesiąc w obu przypadkach stoi w dopełniaczu.",
+      "teacher_note": "Питання вирішує відмінок: kiedy? → родовий, jaki dzień? → називний. Місяць завжди в родовому: listopada, marca. Попроси учнів назвати свій день народження."
+    },
+    {
+      "id": "s5",
+      "part": 1,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Miesiąc z dniem i bez dnia",
+      "left": {
+        "head": "z dniem",
+        "rule": "dzień i miesiąc w dopełniaczu",
+        "examples": [
+          "[[trzeciego maja]]",
+          "[[31 sierpnia]] 1980 roku"
+        ]
+      },
+      "right": {
+        "head": "bez dnia",
+        "rule": "w + miejscownik",
+        "examples": [
+          "[[w maju]]",
+          "[[w sierpniu]] 1980 roku"
+        ]
+      },
+      "note": "Jest dzień — dopełniacz. Nie ma dnia — w + miejscownik.",
+      "teacher_note": "Типова помилка: «w trzeciego maja». Якщо є число, прийменник не потрібен. Якщо числа немає — w + місцевий."
+    },
+    {
+      "id": "s6",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Wieki",
+      "columns": [
+        "zapis",
+        "jaki wiek?",
+        "w którym wieku?"
+      ],
+      "rows": [
+        [
+          "X w.",
+          "dziesiąty wiek",
+          "w [[dziesiątym]] wieku"
+        ],
+        [
+          "XVIII w.",
+          "osiemnasty wiek",
+          "w [[osiemnastym]] wieku"
+        ],
+        [
+          "XX w.",
+          "dwudziesty wiek",
+          "w [[dwudziestym]] wieku"
+        ]
+      ],
+      "note": "Na początku, pod koniec + dopełniacz: pod koniec osiemnastego wieku.",
+      "teacher_note": "Римська цифра читається як порядковий числівник і відмінюється як прикметник. Попроси прочитати: «na początku XXI wieku»."
+    },
+    {
+      "id": "s7",
+      "part": 1,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "refers_to": "s3",
+      "title": "Lata z tysiącami",
+      "items": [
+        {
+          "rule": "Rok 2000: jedno słowo",
+          "example": "w [[dwutysięcznym]] roku",
+          "refers_to": "s3"
+        },
+        {
+          "rule": "Rok 1000: też jedno słowo",
+          "example": "w [[tysięcznym]] roku",
+          "refers_to": "s3"
+        },
+        {
+          "rule": "Po 2000: dwa tysiące + porządkowy",
+          "example": "w dwa tysiące [[dwudziestym szóstym]] roku",
+          "refers_to": "s3"
+        }
+      ],
+      "teacher_note": "Круглі роки 1000 і 2000 — одне слово-порядковий. Після 2000 «dwa tysiące» не змінюється, змінюються тільки десятки й одиниці."
+    },
+    {
+      "id": "s8",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Dekady i przełomy",
+      "columns": [
+        "zapis",
+        "mówimy",
+        "to znaczy"
+      ],
+      "rows": [
+        [
+          "lata 80.",
+          "w [[latach osiemdziesiątych]]",
+          "1980–1989"
+        ],
+        [
+          "przełom XVIII i XIX w.",
+          "na [[przełomie]] wieków",
+          "ok. 1790–1810"
+        ],
+        [
+          "połowa XX w.",
+          "w [[połowie]] XX wieku",
+          "ok. 1950"
+        ]
+      ],
+      "note": "Lata osiemdziesiąte to dekada, nie osiemdziesiąt lat.",
+      "teacher_note": "Поясни різницю: «lata osiemdziesiąte» — десятиліття, «osiemdziesiąt lat» — тривалість. «Na przełomie» — межа двох століть або років."
+    },
+    {
+      "id": "s9",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Jak długo?",
+      "columns": [
+        "wyrażenie",
+        "przypadek",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "przez",
+          "biernik",
+          "[[przez 123 lata]]"
+        ],
+        [
+          "od… do",
+          "dopełniacz",
+          "[[od 1795 do 1918]] roku"
+        ],
+        [
+          "w ciągu",
+          "dopełniacz",
+          "[[w ciągu]] kilku dni"
+        ]
+      ],
+      "note": "Przez = cały ten czas. W ciągu = najpóźniej w tym czasie.",
+      "teacher_note": "Przez — дія триває весь час. W ciągu — щось стається не пізніше, ніж закінчиться цей час. Попроси скласти речення про свою роботу з обома."
+    },
+    {
+      "id": "s10",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Przed · po · podczas",
+      "columns": [
+        "przyimek",
+        "przypadek",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "przed",
+          "narzędnik",
+          "[[przed wojną]]"
+        ],
+        [
+          "po",
+          "miejscownik",
+          "[[po wojnie]]"
+        ],
+        [
+          "podczas, w czasie",
+          "dopełniacz",
+          "[[podczas wojny]]"
+        ]
+      ],
+      "note": "Ucz się przyimka razem z rzeczownikiem.",
+      "teacher_note": "Три прийменники — три відмінки. Не вчіть правило окремо, вчіть словосполучення: przed wojną, po wojnie, podczas wojny."
+    },
+    {
+      "id": "s11",
+      "part": 2,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Temu · za · wcześniej · później",
+      "items": [
+        {
+          "tag": "przeszłość",
+          "pl": "sto lat [[temu]]",
+          "uk": "сто років тому"
+        },
+        {
+          "tag": "przyszłość",
+          "pl": "[[za]] dziesięć lat",
+          "uk": "через десять років"
+        },
+        {
+          "tag": "wcześniej",
+          "pl": "rok [[wcześniej]]",
+          "uk": "роком раніше"
+        },
+        {
+          "tag": "później",
+          "pl": "kilka miesięcy [[później]]",
+          "uk": "кілька місяців потому"
+        }
+      ],
+      "note": "Temu stoi po liczbie: sto lat temu.",
+      "teacher_note": "Порядок слів: «sto lat temu», а не «temu sto lat». «Za» — про майбутнє, як укр. «через»."
+    },
+    {
+      "id": "s12",
+      "part": 2,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Kolejność wydarzeń",
+      "items": [
+        {
+          "tag": "zanim",
+          "pl": "[[Zanim]] wybuchła wojna, Polska była wolna.",
+          "uk": "До того як почалася війна, Польща була вільною."
+        },
+        {
+          "tag": "po tym, jak",
+          "pl": "[[Po tym, jak]] upadł mur, zmieniła się Europa.",
+          "uk": "Після того як упав мур, змінилася Європа."
+        },
+        {
+          "tag": "kiedy",
+          "pl": "[[Kiedy]] wróciła niepodległość, ludzie świętowali.",
+          "uk": "Коли повернулася незалежність, люди святкували."
+        }
+      ],
+      "note": "Po „zanim” i „po tym, jak” zwykle stoi czasownik dokonany.",
+      "teacher_note": "Три сполучники для розповіді. Дієслова тут доконані: wybuchła, upadł. Попроси переказати одну подію з тексту з «zanim»."
+    },
+    {
+      "id": "s13",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Zapis dat",
+      "columns": [
+        "zapis",
+        "czytamy"
+      ],
+      "rows": [
+        [
+          "11 XI 1918 r.",
+          "jedenastego listopada tysiąc dziewięćset osiemnastego roku"
+        ],
+        [
+          "XX w.",
+          "[[dwudziesty wiek]]"
+        ],
+        [
+          "w latach 90.",
+          "w [[latach dziewięćdziesiątych]]"
+        ]
+      ],
+      "note": "Do cyfr nie dopisujemy końcówek: piszemy 11 listopada, w latach 90.",
+      "teacher_note": "Покажи письмову норму: місяць можна римською цифрою, «r.» і «w.» — скорочення. Закінчення до цифр не дописуємо."
+    },
+    {
+      "id": "s14",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "refers_to": "s11",
+      "title": "Raz, pierwszy raz",
+      "items": [
+        {
+          "rule": "Pierwszy raz w życiu: po raz pierwszy",
+          "example": "[[Po raz pierwszy]] byłem w Gdańsku.",
+          "refers_to": "s11"
+        },
+        {
+          "rule": "Potocznie też bez „po”",
+          "example": "[[Pierwszy raz]] widzę takie miasto.",
+          "refers_to": "s11"
+        },
+        {
+          "rule": "Bez liczby: dawno temu, niedawno",
+          "example": "To było [[dawno temu]].",
+          "refers_to": "s11"
+        }
+      ],
+      "teacher_note": "Укр. «вперше» — po raz pierwszy. У розмові часто кажуть просто «pierwszy raz», і це нормально. «Dawno temu» — без числа."
+    },
+    {
+      "id": "s15",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "з 1795 по 1918",
+          "wrong": "z 1795 po 1918",
+          "right": "[[od]] 1795 [[do]] 1918",
+          "why": "Granice okresu to od… do."
+        },
+        {
+          "uk": "після війни",
+          "wrong": "po wojny",
+          "right": "po [[wojnie]]",
+          "why": "Przyimek „po” łączy się z miejscownikiem."
+        },
+        {
+          "uk": "під час війни",
+          "wrong": "pod czas wojny",
+          "right": "[[podczas]] wojny",
+          "why": "„Podczas” to jedno słowo."
+        }
+      ],
+      "teacher_note": "Перша трійка — прийменники часу. Попроси учнів спершу самих виправити «wrong», потім відкривай ✓."
+    },
+    {
+      "id": "s16",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "у 1989 році",
+          "wrong": "w osiemdziesiąt dziewięć roku",
+          "right": "w osiemdziesiątym [[dziewiątym]] roku",
+          "why": "Rok to liczebnik porządkowy."
+        },
+        {
+          "uk": "вперше",
+          "wrong": "w pierwszy raz",
+          "right": "[[po raz pierwszy]]",
+          "why": "Polski nie używa tu przyimka „w”."
+        },
+        {
+          "uk": "у 90-х",
+          "wrong": "w latach 90-tych",
+          "right": "w latach [[90.]]",
+          "why": "Po cyfrze stawiamy kropkę, nie końcówkę."
+        }
+      ],
+      "teacher_note": "Друга трійка — числівники й запис. «W latach 90-tych» дуже поширена помилка навіть у поляків, але норма — «w latach 90.»."
+    }
+  ]
+}
