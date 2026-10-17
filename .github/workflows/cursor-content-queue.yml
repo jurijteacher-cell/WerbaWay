@@ -1,0 +1,108 @@
+# Коли Claude кладе нову лекцію в content-queue/*/pending/ і пушить у main,
+# цей workflow запускає хмарного агента Cursor, який обробляє чергу
+# за правилами .cursor/rules/content-queue.mdc (фото, embeds, Notion, manifest).
+#
+# Потрібен секрет репозиторію CURSOR_API_KEY
+# (Cursor Dashboard → Integrations → API Keys; GitHub → Settings → Secrets → Actions).
+
+name: Cursor — process content queue
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content-queue/lectures/pending/**"
+      - "content-queue/exercises/pending/**"
+      - "content-queue/slides/pending/**"
+      - "content-queue/teacher/pending/**"
+  workflow_dispatch:
+    inputs:
+      note:
+        description: "Додаткова вказівка для Cursor (необов'язково)"
+        required: false
+        default: ""
+
+concurrency:
+  group: cursor-content-queue
+  cancel-in-progress: false
+
+jobs:
+  launch-cursor-agent:
+    runs-on: ubuntu-latest
+    # Не запускати на власних комітах Cursor (переміщення pending → published)
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      !startsWith(github.event.head_commit.message, 'content:')
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Find newly added pending files
+        id: diff
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            FILES=$(find content-queue -path '*/pending/*' -type f | sort)
+          else
+            BEFORE='${{ github.event.before }}'
+            if ! git cat-file -e "$BEFORE" 2>/dev/null; then BEFORE=HEAD~1; fi
+            FILES=$(git diff --name-only --diff-filter=AM "$BEFORE" HEAD -- 'content-queue/*/pending/**' | sort)
+          fi
+          if [ -z "$FILES" ]; then
+            echo "Нових файлів у pending немає — Cursor не запускаю."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          IDS=$(echo "$FILES" | xargs -n1 basename | sed -E 's/(-teacher|-slides|-vocab|-pictures|-comm-tasks|-grammar|-exam|-hw|-test)?\.(md|json)$//' | sort -u | paste -sd ', ')
+          echo "Файли:"; echo "$FILES"
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+          echo "ids=$IDS" >> "$GITHUB_OUTPUT"
+          {
+            echo "files<<EOF"
+            echo "$FILES"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Launch Cursor cloud agent
+        if: steps.diff.outputs.skip != 'true'
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          IDS: ${{ steps.diff.outputs.ids }}
+          FILES: ${{ steps.diff.outputs.files }}
+          NOTE: ${{ github.event.inputs.note }}
+          REPO_URL: https://github.com/${{ github.repository }}
+        run: |
+          if [ -z "$CURSOR_API_KEY" ]; then
+            echo "::error::Секрет CURSOR_API_KEY не задано."
+            exit 1
+          fi
+          PROMPT=$(cat <<EOF
+          Process the Werba Way content queue.
+          New lesson(s): ${IDS}
+          New files:
+          ${FILES}
+
+          Follow .cursor/rules/content-queue.mdc, .cursor/rules/werba-fast-lesson.mdc,
+          .cursor/rules/werba-images.mdc and docs/CURSOR_RULES.md exactly.
+          Never edit lesson wording. If a file is invalid, leave it in pending and
+          write the reason to content-queue/_errors.log.
+          When done: move files pending -> published, update _manifest.json,
+          commit with message "content: <lesson_id>" and push to main.
+          ${NOTE}
+          EOF
+          )
+          BODY=$(jq -n \
+            --arg text "$PROMPT" \
+            --arg url "$REPO_URL" \
+            --arg name "content-queue: $IDS" \
+            '{prompt:{text:$text}, repos:[{url:$url, startingRef:"main"}],
+              workOnCurrentBranch:true, autoCreatePR:false, name:($name|.[0:100])}')
+          RESP=$(curl -sS -w '\n%{http_code}' -u "$CURSOR_API_KEY:" \
+            -H 'Content-Type: application/json' \
+            -X POST https://api.cursor.com/v1/agents -d "$BODY")
+          CODE=$(echo "$RESP" | tail -n1)
+          echo "$RESP" | sed '$d' | jq '{id, status, name, url: (.target.url // .url)}' || echo "$RESP"
+          if [ "$CODE" -ge 300 ]; then
+            echo "::error::Cursor API повернув HTTP $CODE"
+            exit 1
+          fi
