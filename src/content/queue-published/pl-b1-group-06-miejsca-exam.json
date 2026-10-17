@@ -1,0 +1,110 @@
+{
+ "lesson_id": "pl-b1-group-06-miejsca",
+ "exercise_type": "true-false",
+ "title": "Jak na egzaminie B1",
+ "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+ "estimated_minutes": 12,
+ "blocks": [
+  {
+   "block_id": "e1",
+   "exam_skill": "czytanie",
+   "exercise_type": "true-false",
+   "source": "section:1",
+   "title": "Czytanie: prawda czy fałsz?",
+   "instruction": "Przeczytaj jeszcze raz tekst „Miejsca, które zaskakują” i zdecyduj, czy zdanie jest prawdziwe.",
+   "items": [
+    {
+     "id": "e1-1",
+     "statement": "Na Kanale Elbląskim statki pokonują różnicę poziomów prawie stu metrów.",
+     "answer": true,
+     "explanation": "„Różnica poziomów wody wynosi prawie sto metrów”."
+    },
+    {
+     "id": "e1-2",
+     "statement": "Budowę kanału skończono w 1844 roku.",
+     "answer": false,
+     "explanation": "W 1844 roku budowę zaczęto, a skończono ją w 1881 roku."
+    },
+    {
+     "id": "e1-3",
+     "statement": "W Krzywym Lesie rośnie około czterystu krzywych sosen.",
+     "answer": false,
+     "explanation": "Tekst mówi o około stu sosnach."
+    },
+    {
+     "id": "e1-4",
+     "statement": "Kopalnia w Wieliczce trafiła na listę UNESCO w 1978 roku.",
+     "answer": true,
+     "explanation": "„W 1978 roku… trafiła na listę światowego dziedzictwa UNESCO”."
+    },
+    {
+     "id": "e1-5",
+     "statement": "Na Hańczy można nurkować tylko latem.",
+     "answer": false,
+     "explanation": "Można nurkować przez cały rok, nawet pod lodem."
+    },
+    {
+     "id": "e1-6",
+     "statement": "W Zalipiu jest muzeum w domu Felicji Curyłowej.",
+     "answer": true,
+     "explanation": "„…Felicja Curyłowa, której dom jest dziś muzeum”."
+    }
+   ]
+  },
+  {
+   "block_id": "e2",
+   "exam_skill": "sluchanie",
+   "exercise_type": "multiple-choice",
+   "source": "pl-b1-group-06-miejsca-comm-tasks.json#c1.model_dialogue",
+   "max_plays": 2,
+   "title": "Słuchanie: rezerwacja noclegu koło Kanału Elbląskiego",
+   "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+   "items": [
+    {
+     "id": "e2-1",
+     "question": "Ile kosztuje pokój za noc?",
+     "options": [
+      "200 zł",
+      "220 zł",
+      "240 zł"
+     ],
+     "answer": "220 zł",
+     "explanation": "„Kosztuje dwieście dwadzieścia złotych za noc”."
+    },
+    {
+     "id": "e2-2",
+     "question": "Co jest w cenie pokoju?",
+     "options": [
+      "śniadanie",
+      "obiad",
+      "rejs"
+     ],
+     "answer": "śniadanie",
+     "explanation": "Śniadanie jest w cenie, obiad kosztuje osobno 40 zł."
+    },
+    {
+     "id": "e2-3",
+     "question": "Jak daleko jest do pochylni w Buczyńcu?",
+     "options": [
+      "trzy kilometry",
+      "trzynaście kilometrów",
+      "trzydzieści kilometrów"
+     ],
+     "answer": "trzy kilometry",
+     "explanation": "„Do pochylni w Buczyńcu są trzy kilometry”."
+    },
+    {
+     "id": "e2-4",
+     "question": "Ile wynosi zaliczka?",
+     "options": [
+      "40 zł",
+      "100 zł",
+      "220 zł"
+     ],
+     "answer": "100 zł",
+     "explanation": "„Sto złotych w ciągu trzech dni”."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,579 @@
+{
+ "lesson_id": "pl-b1-group-06-miejsca",
+ "exercise_type": "fill-in-blank",
+ "title": "Zdania względne: który, która, które i inne",
+ "instruction": "Osiem bloków w dwóch częściach. Bloki 1–4 idą po części 1 prezentacji, bloki 5–8 po części 2.",
+ "estimated_minutes": 45,
+ "blocks": [
+  {
+   "block_id": "g1",
+   "part": 1,
+   "exercise_type": "fill-in-blank",
+   "title": "1. Który, która czy które?",
+   "instruction": "Rodzaj bierzemy od rzeczownika przed przecinkiem. Wybierz formę.",
+   "covers_slides": [
+    "s2",
+    "s3"
+   ],
+   "items": [
+    {
+     "id": "g1-1",
+     "text": "To kanał, ___ ma pięć pochylni.",
+     "options": [
+      "który",
+      "która",
+      "które"
+     ],
+     "answer": "który",
+     "explanation": "Kanał — rodzaj męski.",
+     "grammar_point": "ktory-mianownik"
+    },
+    {
+     "id": "g1-2",
+     "text": "Zalipie to wieś, ___ słynie z kwiatów.",
+     "options": [
+      "który",
+      "która",
+      "które"
+     ],
+     "answer": "która",
+     "explanation": "Wieś — rodzaj żeński.",
+     "grammar_point": "ktory-zgoda"
+    },
+    {
+     "id": "g1-3",
+     "text": "Hańcza to jezioro, ___ ma ponad sto metrów głębokości.",
+     "options": [
+      "który",
+      "która",
+      "które"
+     ],
+     "answer": "które",
+     "explanation": "Jezioro — rodzaj nijaki.",
+     "grammar_point": "ktory-zgoda"
+    },
+    {
+     "id": "g1-4",
+     "text": "To przewodniczka, ___ zna każdy korytarz kopalni.",
+     "options": [
+      "który",
+      "która",
+      "które"
+     ],
+     "answer": "która",
+     "explanation": "Przewodniczka — rodzaj żeński.",
+     "grammar_point": "ktory-mianownik"
+    },
+    {
+     "id": "g1-5",
+     "text": "Krzywy Las to miejsce, ___ wygląda jak z bajki.",
+     "options": [
+      "który",
+      "która",
+      "które"
+     ],
+     "answer": "które",
+     "explanation": "Rodzaj od słowa „miejsce” — nijaki.",
+     "grammar_point": "ktory-zgoda"
+    },
+    {
+     "id": "g1-6",
+     "text": "Znam przewodnika, ___ pracuje w Wieliczce.",
+     "options": [
+      "który",
+      "którego",
+      "które"
+     ],
+     "answer": "który",
+     "explanation": "W drugim zdaniu on pracuje — mianownik.",
+     "grammar_point": "ktory-mianownik"
+    }
+   ]
+  },
+  {
+   "block_id": "g2",
+   "part": 1,
+   "exercise_type": "matching",
+   "title": "2. Jaki przypadek?",
+   "instruction": "Kliknij początek zdania, potem właściwą formę słowa który.",
+   "covers_slides": [
+    "s4",
+    "s5"
+   ],
+   "items": [
+    {
+     "id": "g2-1",
+     "left": "kanał, ___ zbudował Steenke",
+     "right": "który",
+     "grammar_point": "ktory-przypadki"
+    },
+    {
+     "id": "g2-2",
+     "left": "inżynier, ___ wszyscy znają",
+     "right": "którego",
+     "grammar_point": "ktory-przypadki"
+    },
+    {
+     "id": "g2-3",
+     "left": "kaplica, ___ zrobiono z soli",
+     "right": "którą",
+     "grammar_point": "ktory-przypadki"
+    },
+    {
+     "id": "g2-4",
+     "left": "malarka, ___ dom jest muzeum",
+     "right": "której",
+     "grammar_point": "ktory-przypadki"
+    },
+    {
+     "id": "g2-5",
+     "left": "jezioro, w ___ nurkujemy",
+     "right": "którym",
+     "grammar_point": "ktory-przypadki"
+    },
+    {
+     "id": "g2-6",
+     "left": "sosny, ___ są krzywe",
+     "right": "które",
+     "grammar_point": "ktory-liczba-mnoga"
+    },
+    {
+     "id": "g2-7",
+     "left": "turyści, ___ przyjechali",
+     "right": "którzy",
+     "grammar_point": "ktory-liczba-mnoga"
+    },
+    {
+     "id": "g2-8",
+     "left": "miejsca, o ___ mówimy",
+     "right": "których",
+     "grammar_point": "ktory-liczba-mnoga"
+    }
+   ]
+  },
+  {
+   "block_id": "g3",
+   "part": 1,
+   "exercise_type": "fill-in-blank",
+   "title": "3. Komu? Z kim? Gdzie?",
+   "instruction": "Przypadek zależy od czasownika w drugim zdaniu. Wybierz formę.",
+   "covers_slides": [
+    "s6"
+   ],
+   "items": [
+    {
+     "id": "g3-1",
+     "text": "To przewodnik, z ___ zwiedzałem kopalnię.",
+     "options": [
+      "którym",
+      "którego"
+     ],
+     "answer": "którym",
+     "explanation": "Z kim? — narzędnik: z którym.",
+     "grammar_point": "ktory-przypadki"
+    },
+    {
+     "id": "g3-2",
+     "text": "Wieś, w ___ mieszkam, jest bardzo mała.",
+     "options": [
+      "której",
+      "którą"
+     ],
+     "answer": "której",
+     "explanation": "W czym? — miejscownik: w której.",
+     "grammar_point": "ktory-przypadki"
+    },
+    {
+     "id": "g3-3",
+     "text": "Mam koleżankę, ___ zawsze pomagam planować podróże.",
+     "options": [
+      "której",
+      "którą"
+     ],
+     "answer": "której",
+     "explanation": "Pomagać komu? — celownik: której.",
+     "grammar_point": "ktory-przypadki"
+    },
+    {
+     "id": "g3-4",
+     "text": "Las, w ___ rosną krzywe sosny, leży koło Gryfina.",
+     "options": [
+      "którym",
+      "który"
+     ],
+     "answer": "którym",
+     "explanation": "W czym? — miejscownik: w którym.",
+     "grammar_point": "ktory-przypadki"
+    },
+    {
+     "id": "g3-5",
+     "text": "To jest pan, ___ dałem bilet.",
+     "options": [
+      "któremu",
+      "którego"
+     ],
+     "answer": "któremu",
+     "explanation": "Dać komu? — celownik: któremu.",
+     "grammar_point": "ktory-przypadki"
+    },
+    {
+     "id": "g3-6",
+     "text": "Trasa, ___ jechaliśmy, była bardzo malownicza.",
+     "options": [
+      "którą",
+      "której"
+     ],
+     "answer": "którą",
+     "explanation": "Jechać czym? trasą — narzędnik: którą.",
+     "grammar_point": "ktory-przypadki"
+    }
+   ]
+  },
+  {
+   "block_id": "g4",
+   "part": 1,
+   "exercise_type": "drag-and-drop",
+   "title": "4. Liczba mnoga: którzy czy które?",
+   "instruction": "Przeciągnij formę do luki. Dwa słowa w banku nigdzie nie pasują.",
+   "covers_slides": [
+    "s7",
+    "s8"
+   ],
+   "bank": [
+    "którzy",
+    "które",
+    "którymi",
+    "których",
+    "którym",
+    "który",
+    "którego",
+    "którą"
+   ],
+   "items": [
+    {
+     "id": "g4-1",
+     "text": "Turyści, ___ przyjechali rano, już zwiedzają kopalnię.",
+     "answer": "którzy",
+     "grammar_point": "ktory-liczba-mnoga"
+    },
+    {
+     "id": "g4-2",
+     "text": "Statki, ___ jadą po szynach, wyglądają niesamowicie.",
+     "answer": "które",
+     "grammar_point": "ktory-liczba-mnoga"
+    },
+    {
+     "id": "g4-3",
+     "text": "To ludzie, z ___ jeździmy na wycieczki.",
+     "answer": "którymi",
+     "grammar_point": "ktory-liczba-mnoga"
+    },
+    {
+     "id": "g4-4",
+     "text": "Malarki, ___ prace widzieliśmy, mieszkają w Zalipiu.",
+     "answer": "których",
+     "grammar_point": "ktory-liczba-mnoga"
+    },
+    {
+     "id": "g4-5",
+     "text": "Dzieci, ___ przewodnik dał mapy, były zadowolone.",
+     "answer": "którym",
+     "grammar_point": "ktory-liczba-mnoga"
+    },
+    {
+     "id": "g4-6",
+     "text": "Przewodnik, ___ nas oprowadzał, był z Wieliczki.",
+     "answer": "który",
+     "grammar_point": "ktory-mianownik"
+    }
+   ]
+  },
+  {
+   "block_id": "g5",
+   "part": 2,
+   "exercise_type": "fill-in-blank",
+   "title": "5. Przyimek przed który",
+   "instruction": "Przyimek stoi zawsze przed który. Wybierz poprawną formę.",
+   "covers_slides": [
+    "s9"
+   ],
+   "items": [
+    {
+     "id": "g5-1",
+     "text": "To miejsce, ___ ci opowiadałem.",
+     "options": [
+      "o którym",
+      "o którego"
+     ],
+     "answer": "o którym",
+     "explanation": "O + miejscownik: o którym.",
+     "grammar_point": "ktory-przyimki"
+    },
+    {
+     "id": "g5-2",
+     "text": "Wieś, ___ jedziemy, leży w Małopolsce.",
+     "options": [
+      "do której",
+      "do którą"
+     ],
+     "answer": "do której",
+     "explanation": "Do + dopełniacz: do której.",
+     "grammar_point": "ktory-przyimki"
+    },
+    {
+     "id": "g5-3",
+     "text": "Przyjaciel, ___ podróżuję, mówi po polsku.",
+     "options": [
+      "z którym",
+      "z którego"
+     ],
+     "answer": "z którym",
+     "explanation": "Z kim? — narzędnik: z którym.",
+     "grammar_point": "ktory-przyimki"
+    },
+    {
+     "id": "g5-4",
+     "text": "Jezioro, ___ nurkowaliśmy, ma ponad sto metrów.",
+     "options": [
+      "w którym",
+      "w które"
+     ],
+     "answer": "w którym",
+     "explanation": "Gdzie? w czym? — miejscownik: w którym.",
+     "grammar_point": "ktory-przyimki"
+    },
+    {
+     "id": "g5-5",
+     "text": "Most, ___ przejeżdżamy, jest bardzo stary.",
+     "options": [
+      "przez który",
+      "przez którego"
+     ],
+     "answer": "przez który",
+     "explanation": "Przez + biernik, most to rzecz: przez który.",
+     "grammar_point": "ktory-przyimki"
+    },
+    {
+     "id": "g5-6",
+     "text": "Przewodnik, ___ dostałam mapę, był bardzo miły.",
+     "options": [
+      "od którego",
+      "od który"
+     ],
+     "answer": "od którego",
+     "explanation": "Od + dopełniacz: od którego.",
+     "grammar_point": "ktory-przyimki"
+    }
+   ]
+  },
+  {
+   "block_id": "g6",
+   "part": 2,
+   "exercise_type": "fill-in-blank",
+   "title": "6. Gdzie, skąd, dokąd, co, kto",
+   "instruction": "Wybierz słowo, które łączy zdania.",
+   "covers_slides": [
+    "s10",
+    "s11"
+   ],
+   "items": [
+    {
+     "id": "g6-1",
+     "text": "Pokażę ci miejsce, ___ robiłem te zdjęcia.",
+     "options": [
+      "gdzie",
+      "dokąd"
+     ],
+     "answer": "gdzie",
+     "explanation": "Robić zdjęcia gdzie? — miejsce, nie kierunek.",
+     "grammar_point": "wzgledne-gdzie-dokad"
+    },
+    {
+     "id": "g6-2",
+     "text": "To wieś, ___ pochodzi moja babcia.",
+     "options": [
+      "skąd",
+      "gdzie"
+     ],
+     "answer": "skąd",
+     "explanation": "Pochodzić skąd? — skąd.",
+     "grammar_point": "wzgledne-gdzie-dokad"
+    },
+    {
+     "id": "g6-3",
+     "text": "Znam miejsce, ___ warto pojechać w październiku.",
+     "options": [
+      "dokąd",
+      "skąd"
+     ],
+     "answer": "dokąd",
+     "explanation": "Pojechać dokąd? — kierunek.",
+     "grammar_point": "wzgledne-gdzie-dokad"
+    },
+    {
+     "id": "g6-4",
+     "text": "To jest wszystko, ___ wiem o Kanale Elbląskim.",
+     "options": [
+      "co",
+      "które"
+     ],
+     "answer": "co",
+     "explanation": "Po „wszystko” — co.",
+     "grammar_point": "wzgledne-co-kto"
+    },
+    {
+     "id": "g6-5",
+     "text": "Zrób to, ___ mówi przewodnik.",
+     "options": [
+      "co",
+      "które"
+     ],
+     "answer": "co",
+     "explanation": "Po „to” — co.",
+     "grammar_point": "wzgledne-co-kto"
+    },
+    {
+     "id": "g6-6",
+     "text": "___ był w Wieliczce, ten wie, jak tam jest pięknie.",
+     "options": [
+      "Kto",
+      "Który"
+     ],
+     "answer": "Kto",
+     "explanation": "Kto…, ten… — jak укр. «хто…, той…».",
+     "grammar_point": "wzgledne-co-kto"
+    }
+   ]
+  },
+  {
+   "block_id": "g7",
+   "part": 2,
+   "exercise_type": "sentence-building",
+   "title": "7. Połącz zdania",
+   "instruction": "Połącz dwa zdania w jedno. Użyj słowa z nawiasu i pamiętaj o przecinku.",
+   "covers_slides": [
+    "s12",
+    "s13",
+    "s14",
+    "s15"
+   ],
+   "items": [
+    {
+     "id": "g7-1",
+     "prompt": "To jest malarka. Jej dom jest muzeum. (której)",
+     "answer": "To jest malarka, której dom jest muzeum.",
+     "grammar_point": "ktory-czyj"
+    },
+    {
+     "id": "g7-2",
+     "prompt": "Hańcza to jezioro. Jego głębokość wynosi 108,5 metra. (którego)",
+     "answer": "Hańcza to jezioro, którego głębokość wynosi 108,5 metra.",
+     "grammar_point": "ktory-czyj"
+    },
+    {
+     "id": "g7-3",
+     "prompt": "To najpiękniejsze miejsce. Znam je. (jakie)",
+     "answer": "To najpiękniejsze miejsce, jakie znam.",
+     "grammar_point": "wzgledne-jaki"
+    },
+    {
+     "id": "g7-4",
+     "prompt": "Kanał ma pochylnie. Kanał jest unikalny. (który — w środku zdania)",
+     "answer": "Kanał, który ma pochylnie, jest unikalny.",
+     "grammar_point": "przecinek"
+    },
+    {
+     "id": "g7-5",
+     "prompt": "Odwiedziłem muzeum. Muzeum jest w Zalipiu. (które)",
+     "answer": "Odwiedziłem muzeum, które jest w Zalipiu.",
+     "grammar_point": "ktory-zgoda"
+    },
+    {
+     "id": "g7-6",
+     "prompt": "Spotkaliśmy mężczyznę. Mężczyzna maluje obrazy. (który)",
+     "answer": "Spotkaliśmy mężczyznę, który maluje obrazy.",
+     "grammar_point": "ktory-zgoda"
+    }
+   ]
+  },
+  {
+   "block_id": "g8",
+   "part": 2,
+   "exercise_type": "fill-in-blank",
+   "title": "8. Pułapki z ukraińskiego",
+   "instruction": "Jedna forma jest poprawna, druga to kalka z ukraińskiego. Wybierz i przeczytaj wyjaśnienie.",
+   "covers_slides": [
+    "s16",
+    "s17"
+   ],
+   "items": [
+    {
+     "id": "g8-1",
+     "text": "Miasto, ___ mieszkam, jest małe.",
+     "options": [
+      "w którym",
+      "w jakim"
+     ],
+     "answer": "w którym",
+     "explanation": "Укр. «в якому» — po polsku o konkretnym miejscu: w którym.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g8-2",
+     "text": "To człowiek, ___ znam od dziecka.",
+     "options": [
+      "którego",
+      "który"
+     ],
+     "answer": "którego",
+     "explanation": "Znać kogo? — biernik osoby: którego.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g8-3",
+     "text": "To przyjaciel, ___ jadę na wycieczkę.",
+     "options": [
+      "z którym",
+      "który z nim"
+     ],
+     "answer": "z którym",
+     "explanation": "Przyimek przed który, bez „z nim” na końcu.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g8-4",
+     "text": "To wszystko, ___ wiem.",
+     "options": [
+      "co",
+      "które"
+     ],
+     "answer": "co",
+     "explanation": "Укр. «все, що» — wszystko, co.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g8-5",
+     "text": "To kobieta, ___ dom jest pomalowany w kwiaty.",
+     "options": [
+      "której",
+      "czyj"
+     ],
+     "answer": "której",
+     "explanation": "Укр. «чий» у підрядному — której / którego.",
+     "grammar_point": "kalki-uk"
+    },
+    {
+     "id": "g8-6",
+     "text": "Ludzie, ___ przyjechali, są z Ukrainy.",
+     "options": [
+      "którzy",
+      "które"
+     ],
+     "answer": "którzy",
+     "explanation": "Ludzie — forma męskoosobowa: którzy.",
+     "grammar_point": "kalki-uk"
+    }
+   ]
+  }
+ ]
+}
