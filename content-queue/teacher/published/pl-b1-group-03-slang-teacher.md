@@ -50,7 +50,7 @@ sessions: 2
 |---|---|---|
 | 15 | Gramatyka, część 1: слайди | s1–s8. |
 | 20 | Gramatyka, część 1: вправи | g1–g4. |
-| 15 | Zadanie komunikacyjne c1 + e2 | Аудіо, e2, потім розіграти. |
+| 15 | Zadanie komunikacyjne c1 + e2 | Викладач читає діалог двічі, учні відповідають на e2, потім розігрують. |
 | 10 | Zadanie komunikacyjne c2 | У парах. |
 
 **Заняття C (60 хв)**
