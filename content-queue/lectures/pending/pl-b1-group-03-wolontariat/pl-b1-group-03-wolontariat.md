@@ -66,7 +66,7 @@ Dlaczego ludzie to robią? Jedni chcą, **żeby** ich dzieci **zobaczyły**, że
 
 **38 słów** w sześciu grupach: pomaganie, komu pomagamy, zgłoszenie do wolontariatu, namawianie, pieniądze i zaufanie, motywacja. Grupy „Zgłoszenie”, „Namawianie” i „Pieniądze i zaufanie” przydadzą się w zadaniach komunikacyjnych. Pełna lista z tłumaczeniami jest na końcu lekcji, na stronie **Słowniczek**.
 
-[EXERCISE: file="pl-b1-group-03-wolontariat-vocab.json", type="vocab-cards"]
+[QUIZLET: set_id="1223594363", url="https://quizlet.com/1223594363/flashcards/embed", title="Słownictwo — Quizlet"]
 
 ---
 

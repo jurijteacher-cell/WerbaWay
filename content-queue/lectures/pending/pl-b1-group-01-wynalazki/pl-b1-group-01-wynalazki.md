@@ -68,7 +68,7 @@ Pięć wynalazków, pięć różnych historii. Łączy je jedno: żaden z nich n
 
 **40 słów** w sześciu grupach: wynalazki i nauka, elektryczność i energia, radio i internet, silniki i transport, usterki i reklamacje, zwiedzanie z grupą. Dwie ostatnie grupy przydadzą się w zadaniach komunikacyjnych. Pełna lista z tłumaczeniami jest na końcu lekcji, na stronie **Słowniczek**.
 
-[EXERCISE: file="pl-b1-group-01-wynalazki-vocab.json", type="vocab-cards"]
+[QUIZLET: set_id="1223463578", url="https://quizlet.com/1223463578/flashcards/embed", title="Słownictwo — Quizlet"]
 
 ---
 

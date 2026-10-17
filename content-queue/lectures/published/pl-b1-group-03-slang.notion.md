@@ -58,7 +58,7 @@ Lipa, że w poniedziałek trzeba było wracać do pracy.
 
 Czterdzieści słów w sześciu grupach. Trzy ostatnie grupy przydadzą się w zadaniach komunikacyjnych.
 
-<embed src="https://werba-way.vercel.app/embed/pl-b1-group-03-slang/vocab">Słownictwo — karty</embed>
+<embed src="https://quizlet.com/1223594638/flashcards/embed">Słownictwo — Quizlet</embed>
 
 ## 4. Praktyka mówienia
 

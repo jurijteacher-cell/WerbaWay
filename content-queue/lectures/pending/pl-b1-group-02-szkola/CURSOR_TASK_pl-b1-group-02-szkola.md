@@ -63,6 +63,8 @@ python3 scripts/check_lesson_package.py content-queue/lectures/pending/pl-b1-gro
 
 **Зайва картинка.** У поточній сторінці Notion після останньої таблиці Słowniczka стоїть зображення без підпису (`notion-file-block://3f896e03-c7c8-80f7-…`). Юра просив його видалити; через API Claude не зміг. Оскільки сторінка перезбирається з `.md`, цього блока в новій версії бути не повинно — перевір після публікації.
 
+**Quizlet.** У `.md` стоїть маркер `[QUIZLET: set_id="1223594183"]`, у `vocab.json` — `"publish": "quizlet"`. Сет уже створений Claude 2026-10-18 (зворот картки = польське визначення + переклад у дужках). Ти сет не створюєш і не редагуєш, тільки вставляєш у розділ «Słownictwo» `<embed src="https://quizlet.com/1223594183/flashcards/embed">Słownictwo — Quizlet</embed>` замість `/embed/pl-b1-group-02-szkola/vocab`. `vocab.json` усе одно копіюєш у `src/content/queue-published/`.
+
 
 ## КРОК 5 · Маркери → розділи → компоненти
 
@@ -74,7 +76,7 @@ python3 scripts/check_lesson_package.py content-queue/lectures/pending/pl-b1-gro
 | `[EXERCISE: … grammar.json … blocks="g6-g8"]` | Gramatyka, część 2 | embed `/grammar?blocks=g6-g8` |
 | `[EXERCISE: … exam.json … blocks="e1"]` | Pytania do tekstu | embed `/exam?blocks=e1`, `true-false` |
 | `[EXERCISE: … exam.json … blocks="e2"]` | Zadania komunikacyjne | embed `/exam?blocks=e2`, `multiple-choice` |
-| `[EXERCISE: … vocab.json …]` | Słownictwo | vocab-cards (до появи маркера Quizlet) |
+| `[QUIZLET: set_id="1223594183", …]` | Słownictwo | Notion `<embed src="https://quizlet.com/1223594183/flashcards/embed">`; `/embed/pl-b1-group-02-szkola/vocab` НЕ публікувати |
 | `[EXERCISE: … comm-tasks.json …]` | Zadania komunikacyjne | flip-task |
 | `[EXERCISE: … hw.json …]` | Praca domowa | hw |
 

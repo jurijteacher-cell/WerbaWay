@@ -68,7 +68,7 @@ Dlatego w Polsce historia to nie tylko przedmiot w szkole. To kalendarz: 3 maja 
 
 **40 słów** w sześciu grupach: państwo i władza, wojna i okupacja, przemiany, opowiadanie o przeszłości, w urzędzie i archiwum, święta i dni wolne. Trzy ostatnie grupy przydadzą się w zadaniach komunikacyjnych. Pełna lista z tłumaczeniami jest na końcu lekcji, na stronie **Słowniczek**.
 
-[EXERCISE: file="pl-b1-group-02-wydarzenia-vocab.json", type="vocab-cards"]
+[QUIZLET: set_id="1223593961", url="https://quizlet.com/1223593961/flashcards/embed", title="Słownictwo — Quizlet"]
 
 ---
 

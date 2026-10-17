@@ -69,7 +69,7 @@ Druga droga to schronisko. Tu na dom czekają szczeniaki i dorosłe psy, miesza�
 
 **38 słów** w pięciu grupach: pies i jego wygląd, wyprawka, zdrowie i formalności, adopcja i hodowla, codzienna opieka i sąsiedzi. Trzy ostatnie grupy przydadzą się w zadaniach komunikacyjnych. Pełna lista czeka na końcu lekcji, na stronie **Słowniczek**.
 
-[EXERCISE: file="pl-b1-group-03-pies-vocab.json", type="vocab-cards"]
+[QUIZLET: set_id="1223594482", url="https://quizlet.com/1223594482/flashcards/embed", title="Słownictwo — Quizlet"]
 
 ---
 

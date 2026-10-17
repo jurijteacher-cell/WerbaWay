@@ -70,7 +70,7 @@ Ciekawe jest to, co zostaje po latach. Nie oceny, nie wzory, nie daty. Zostaje k
 
 **40 słów** w pięciu grupach: szkoła i wspomnienia; lekcje, oceny, egzaminy; nauczyciele i uczniowie; studia i uczelnia; formalności i zapisy. Ostatnia grupa przyda się w rozdziale 5 — bez niej rozmowa z dziekanatem skończy się na „przepraszam, nie rozumiem”.
 
-[EXERCISE: file="pl-b1-group-02-szkola-vocab.json", type="vocab-cards"]
+[QUIZLET: set_id="1223594183", url="https://quizlet.com/1223594183/flashcards/embed", title="Słownictwo — Quizlet"]
 
 ---
 

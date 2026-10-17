@@ -69,7 +69,7 @@ Reszta jest kwestią wprawy. Po miesiącu przestajesz tłumaczyć etykiety i zac
 
 **40 słów** w pięciu grupach: sklep i galeria, nazwy nie do odgadnięcia, ceny i płatności, etykieta i wartości odżywcze, reklamacja i zwrot. Przerabiaj grupę po grupie — pełną listę z tłumaczeniami znajdziesz na końcu lekcji, na stronie **Słowniczek**.
 
-[EXERCISE: file="pl-b1-group-02-zakupy-vocab.json", type="vocab-cards"]
+[QUIZLET: set_id="1223593634", url="https://quizlet.com/1223593634/flashcards/embed", title="Słownictwo — Quizlet"]
 
 ---
 
