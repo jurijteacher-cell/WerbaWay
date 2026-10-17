@@ -23,6 +23,7 @@
 - `flip-task`: картка з переворотом — front показує `front_title`, back показує `back_scenario` + `back_checklist` як список.
 - `picture-set`: 5–6 картинок, під кожною своє питання з json, окремий інпут для відповіді учня.
 - `vocab-cards`: інтерактивні картки термін→визначення+приклад, час проходження орієнтовно 10–15 хв (не хардкодь таймер, просто відповідний обсяг).
+- **З v3.6 (2026-10-17):** для лекцій з `[QUIZLET: …]` або `"publish": "quizlet"` у vocab.json `vocab-cards` не публікуєш; у Notion вставляєш `<embed src="https://quizlet.com/{set_id}/flashcards/embed">Słownictwo — Quizlet</embed>`. Див. `SPEC_PATCH_v3.6.md`.
 
 ## Notion-публікація
 

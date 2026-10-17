@@ -33,7 +33,15 @@ FORBIDDEN (publish is incomplete if any remain):
 [Otwórz vocab-cards](https://werba-way.vercel.app/embed/...)
 ```
 
-Self-check before marking published: no `[Otwórz ...](` in page content. Images must be `![Caption](URL)`, not text links. Grammar as Notion `<table>` block. Videos as `<video src="URL">Caption</video>`, never markdown links.
+## Vocabulary = Quizlet (v3.6, from 2026-10-17)
+
+If the lesson `.md` has a `[QUIZLET: set_id="…", url="…"]` marker, or `-vocab.json` has `"publish": "quizlet"`:
+
+- Do NOT publish `/embed/{lesson_id}/vocab` and do NOT generate vocab TTS.
+- In Notion, section «2. Słownictwo» gets the Quizlet set as a real embed block: `<embed src="https://quizlet.com/{set_id}/flashcards/embed">Słownictwo — Quizlet</embed>`.
+- Never create or edit Quizlet sets yourself. Full rules: `docs/SPEC_PATCH_v3.6.md`.
+
+Self-check before marking published: no `[Otwórz ...](` in page content; no `/embed/{lesson_id}/vocab` on Quizlet lessons. Images must be `![Caption](URL)`, not text links. Grammar as Notion `<table>` block. Videos as `<video src="URL">Caption</video>`, never markdown links.
 
 ## Image quality
 
