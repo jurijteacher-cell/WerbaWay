@@ -23,7 +23,7 @@
 
 ## 3. `{id}-vocab.json`
 
-Файл лишається в пакеті як **джерело слів** (для імпорту в Quizlet, Słowniczka і валідатора). Нові поля верхнього рівня:
+Файл лишається в пакеті як **джерело слів** (для імпорту в Quizlet, Słowniczka і валідатора). **Технічно обов'язково:** копія `{id}-vocab.json` має лежати в `src/content/queue-published/` — LMS (`getQueueBundle`) без неї віддає 404 на всі вправи уроку (comm-tasks, grammar, hw, slides). Embed `/vocab` при цьому в Notion не вставляється. Нові поля верхнього рівня:
 
 ```json
 "publish": "quizlet",
