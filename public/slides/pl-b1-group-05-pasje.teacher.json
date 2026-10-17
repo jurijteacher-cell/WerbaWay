@@ -1,0 +1,477 @@
+{
+ "lesson_id": "pl-b1-group-05-pasje",
+ "exercise_type": "grammar-slides",
+ "title": "Aspekt czasownika",
+ "slides": [
+  {
+   "id": "s1",
+   "part": 1,
+   "section": "teoria",
+   "kind": "title",
+   "title": "Aspekt czasownika",
+   "subtitle": "Robić czy zrobić?",
+   "goal": "Po tej lekcji opowiesz, co robiłeś i co zrobiłeś, i powiesz, co zrobisz jutro.",
+   "teacher_note": "Запитай: «Co robiliście w weekend? Co zrobiliście?» Запиши на дошці дві колонки й не пояснюй різницю — нехай учні самі здогадаються."
+  },
+  {
+   "id": "s2",
+   "part": 1,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Proces czy wynik?",
+   "left": {
+    "head": "niedokonany",
+    "rule": "jak? jak długo? jak często?",
+    "examples": [
+     "Wczoraj [[lepiłam]] miskę."
+    ]
+   },
+   "right": {
+    "head": "dokonany",
+    "rule": "co z wynikiem? czy się udało?",
+    "examples": [
+     "Wczoraj [[ulepiłam]] miskę."
+    ]
+   },
+   "note": "Niedokonany: czynność trwa. Dokonany: jest wynik.",
+   "teacher_note": "Так само, як в укр.: ліпила — виліпила. Польська система видів майже така сама, як українська, — це добра новина для учнів."
+  },
+  {
+   "id": "s3",
+   "part": 1,
+   "section": "teoria",
+   "kind": "steps",
+   "title": "Para przez przedrostek",
+   "steps": [
+    {
+     "label": "niedokonany",
+     "text": "pisać"
+    },
+    {
+     "label": "dodaj przedrostek",
+     "text": "na-"
+    },
+    {
+     "label": "dokonany",
+     "text": "napisać"
+    }
+   ],
+   "result": "pisać → [[na]]pisać, robić → [[z]]robić",
+   "note": "Przedrostek trzeba zapamiętać razem z czasownikiem.",
+   "teacher_note": "Як в укр.: писати — написати, робити — зробити. Попроси назвати 3 пари з укр. і перекласти."
+  },
+  {
+   "id": "s4",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Najczęstsze przedrostki",
+   "columns": [
+    "niedokonany",
+    "dokonany",
+    "przedrostek"
+   ],
+   "rows": [
+    [
+     "pisać",
+     "[[na]]pisać",
+     "na-"
+    ],
+    [
+     "robić",
+     "[[z]]robić",
+     "z-"
+    ],
+    [
+     "czytać",
+     "[[prze]]czytać",
+     "prze-"
+    ],
+    [
+     "gotować",
+     "[[u]]gotować",
+     "u-"
+    ],
+    [
+     "dzwonić",
+     "[[za]]dzwonić",
+     "za-"
+    ]
+   ],
+   "note": "Przedrostek nie zmienia znaczenia, tylko dodaje wynik.",
+   "teacher_note": "Не існує правила, який префікс з яким дієсловом. Вчити парами, як в укр."
+  },
+  {
+   "id": "s5",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Para przez przyrostek",
+   "columns": [
+    "niedokonany",
+    "dokonany",
+    "co się zmienia"
+   ],
+   "rows": [
+    [
+     "kupować",
+     "kup[[ić]]",
+     "-ować → -ić"
+    ],
+    [
+     "zapominać",
+     "zapomn[[ieć]]",
+     "-ać → -eć"
+    ],
+    [
+     "dawać",
+     "d[[ać]]",
+     "-awać → -ać"
+    ],
+    [
+     "otwierać",
+     "otw[[orzyć]]",
+     "-ierać → -orzyć"
+    ],
+    [
+     "wstawać",
+     "wst[[ać]]",
+     "-awać → -ać"
+    ]
+   ],
+   "note": "Niedokonany jest zwykle dłuższy.",
+   "teacher_note": "Підказка: довша форма — недоконана (kupować, dawać). В укр. так само: купувати — купити, давати — дати."
+  },
+  {
+   "id": "s6",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Czas przeszły: pytanie podpowiada",
+   "columns": [
+    "pytanie",
+    "aspekt",
+    "przykład"
+   ],
+   "rows": [
+    [
+     "Co robiłeś?",
+     "niedokonany",
+     "Cały wieczór [[lepiłem]]."
+    ],
+    [
+     "Co zrobiłeś?",
+     "dokonany",
+     "[[Ulepiłem]] trzy miski."
+    ],
+    [
+     "Jak często?",
+     "niedokonany",
+     "Codziennie [[ćwiczyłem]]."
+    ],
+    [
+     "Czy się udało?",
+     "dokonany",
+     "Wreszcie [[zdałem]] egzamin."
+    ]
+   ],
+   "note": "Oba aspekty mają czas przeszły.",
+   "teacher_note": "Ключове питання: «що робив?» чи «що зробив?». Попроси учнів поставити питання до 3 речень із тексту."
+  },
+  {
+   "id": "s7",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Czas przyszły: dwie formy",
+   "columns": [
+    "aspekt",
+    "forma",
+    "przykład"
+   ],
+   "rows": [
+    [
+     "niedokonany",
+     "będę + bezokolicznik",
+     "Jutro [[będę ćwiczyć]] cały dzień."
+    ],
+    [
+     "niedokonany",
+     "będę + forma na -ł",
+     "Jutro [[będę ćwiczył]] cały dzień."
+    ],
+    [
+     "dokonany",
+     "forma osobowa",
+     "Jutro [[zrobię]] kubek."
+    ]
+   ],
+   "note": "Dokonany: zrobię, napiszę, kupię — to już przyszłość.",
+   "teacher_note": "Найважливіше: «zrobię» — це вже майбутній час, як укр. «зроблю». «Będę zrobić» не існує."
+  },
+  {
+   "id": "s8",
+   "part": 1,
+   "section": "wyjatki",
+   "kind": "exceptions",
+   "refers_to": "s3",
+   "title": "Pary z innego tematu",
+   "items": [
+    {
+     "rule": "brać → wziąć",
+     "example": "Na warsztaty [[wezmę]] fartuch.",
+     "refers_to": "s3"
+    },
+    {
+     "rule": "mówić → powiedzieć",
+     "example": "Instruktor [[powiedział]], że zajęcia są odwołane.",
+     "refers_to": "s3"
+    },
+    {
+     "rule": "oglądać → obejrzeć",
+     "example": "Wczoraj [[obejrzałam]] film.",
+     "refers_to": "s3"
+    },
+    {
+     "rule": "kłaść → położyć",
+     "example": "Gdzie [[położyłaś]] narzędzia?",
+     "refers_to": "s3"
+    }
+   ],
+   "teacher_note": "Ці пари не будуються префіксом — це різні основи. В укр. так само: брати — взяти, говорити — сказати. Пастка: «сказав» ≠ skazał."
+  },
+  {
+   "id": "s9",
+   "part": 2,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Słowa-sygnały",
+   "left": {
+    "head": "niedokonany",
+    "rule": "jak często? jak długo?",
+    "examples": [
+     "[[codziennie]], [[często]], zwykle, zawsze, przez rok"
+    ]
+   },
+   "right": {
+    "head": "dokonany",
+    "rule": "jeden raz, wynik",
+    "examples": [
+     "[[nagle]], [[w końcu]], od razu, wreszcie"
+    ]
+   },
+   "note": "Sygnał w zdaniu podpowiada aspekt.",
+   "teacher_note": "Попроси знайти в тексті уроку 3 слова-сигнали і дієслова біля них."
+  },
+  {
+   "id": "s10",
+   "part": 2,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Tło i akcja",
+   "items": [
+    {
+     "tag": "tło + akcja",
+     "pl": "Kiedy [[lepiłam]], [[zadzwonił]] telefon.",
+     "uk": "Коли я ліпила, задзвонив телефон."
+    },
+    {
+     "tag": "jedna po drugiej",
+     "pl": "[[Skończyłam]] miskę i [[wyszłam]].",
+     "uk": "Я закінчила миску й вийшла."
+    },
+    {
+     "tag": "dwie naraz",
+     "pl": "[[Słuchałam]] muzyki i [[lepiłam]].",
+     "uk": "Я слухала музику й ліпила."
+    }
+   ],
+   "note": "Tło trwa — niedokonany. Akcja przerywa — dokonany.",
+   "teacher_note": "Намалюй на дошці довгу лінію (тло) і коротку стрілку (дія). Учні придумують свої речення з kiedy."
+  },
+  {
+   "id": "s11",
+   "part": 2,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Zacząć, skończyć, przestać",
+   "items": [
+    {
+     "tag": "zacząć",
+     "pl": "Zacząłem [[grać]] na gitarze.",
+     "uk": "Я почав грати на гітарі."
+    },
+    {
+     "tag": "skończyć",
+     "pl": "Skończyłam [[malować]] obraz.",
+     "uk": "Я закінчила малювати картину."
+    },
+    {
+     "tag": "przestać",
+     "pl": "Przestał [[palić]].",
+     "uk": "Він кинув курити."
+    }
+   ],
+   "note": "Po tych czasownikach tylko bezokolicznik niedokonany.",
+   "teacher_note": "Як в укр.: почав грати, а не «почав зіграти». Але учні часто роблять тут помилку з польськими дієсловами."
+  },
+  {
+   "id": "s12",
+   "part": 2,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Rozkaz i zakaz",
+   "left": {
+    "head": "zrób! — dokonany",
+    "rule": "prośba o wynik",
+    "examples": [
+     "[[Zapisz się]] na kurs!",
+     "[[Przynieś]] fartuch."
+    ]
+   },
+   "right": {
+    "head": "nie rób! — niedokonany",
+    "rule": "zakaz",
+    "examples": [
+     "[[Nie zapisuj się]] tam.",
+     "[[Nie przynoś]] gliny."
+    ]
+   },
+   "note": "W zakazie zwykle niedokonany.",
+   "teacher_note": "В укр. так само: «не роби», а не «не зроби». Але «nie zapomnij!» (застереження) — можливе; на B1 не ускладнюй."
+  },
+  {
+   "id": "s13",
+   "part": 2,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Przez i w",
+   "items": [
+    {
+     "tag": "przez + czas",
+     "pl": "[[Przez]] rok uczyłam się lepić.",
+     "uk": "Цілий рік я вчилася ліпити."
+    },
+    {
+     "tag": "w + czas",
+     "pl": "[[W]] miesiąc nauczyłam się lepić.",
+     "uk": "За місяць я навчилася ліпити."
+    }
+   ],
+   "note": "Przez — ile trwało. W — ile czasu potrzeba do wyniku.",
+   "teacher_note": "Укр. «за місяць» = w miesiąc. Польське «za miesiąc» = через місяць! Це пастка на s17."
+  },
+  {
+   "id": "s14",
+   "part": 2,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Dokonany nie ma teraźniejszości",
+   "items": [
+    {
+     "tag": "niedokonany: teraz",
+     "pl": "Teraz [[robię]] kubek.",
+     "uk": "Зараз я роблю чашку."
+    },
+    {
+     "tag": "dokonany: przyszłość",
+     "pl": "Jutro [[zrobię]] kubek.",
+     "uk": "Завтра я зроблю чашку."
+    },
+    {
+     "tag": "pytanie o plany",
+     "pl": "Co [[zrobisz]] w weekend?",
+     "uk": "Що ти зробиш на вихідних?"
+    }
+   ],
+   "note": "Zrobię, napiszę, kupię — to zawsze przyszłość.",
+   "teacher_note": "Як в укр.: «зроблю» — майбутній. Попроси трьох учнів сказати, що вони зроблять сьогодні після уроку."
+  },
+  {
+   "id": "s15",
+   "part": 2,
+   "section": "wyjatki",
+   "kind": "exceptions",
+   "refers_to": "s3",
+   "title": "Bez pary",
+   "items": [
+    {
+     "rule": "mieć, być, wiedzieć",
+     "example": "Wtedy [[miałem]] dużo czasu.",
+     "refers_to": "s3"
+    },
+    {
+     "rule": "kosztować, ważyć",
+     "example": "Kurs [[kosztował]] sześćset złotych.",
+     "refers_to": "s3"
+    },
+    {
+     "rule": "lubić → polubić = zacząć lubić",
+     "example": "Szybko [[polubiłam]] glinę.",
+     "refers_to": "s3"
+    }
+   ],
+   "teacher_note": "Ці дієслова недоконані й пари не мають. «Polubić» — не пара, а «почати любити», як укр. «полюбити»."
+  },
+  {
+   "id": "s16",
+   "part": 2,
+   "section": "pulapki",
+   "kind": "traps",
+   "title": "Pułapki z ukraińskiego",
+   "items": [
+    {
+     "uk": "почав грати",
+     "wrong": "zacząłem zagrać",
+     "right": "zacząłem [[grać]]",
+     "why": "Po zacząć tylko niedokonany."
+    },
+    {
+     "uk": "буду зробити",
+     "wrong": "będę zrobić",
+     "right": "[[zrobię]]",
+     "why": "Dokonany: forma osobowa = przyszłość."
+    },
+    {
+     "uk": "не роби цього",
+     "wrong": "nie zrób tego",
+     "right": "[[nie rób]] tego",
+     "why": "Zakaz — niedokonany."
+    }
+   ],
+   "teacher_note": "Перша трійка — граматика виду. Попроси кожного сказати свій приклад."
+  },
+  {
+   "id": "s17",
+   "part": 2,
+   "section": "pulapki",
+   "kind": "traps",
+   "title": "Pułapki z ukraińskiego",
+   "items": [
+    {
+     "uk": "навчилася за рік",
+     "wrong": "nauczyłam się za rok",
+     "right": "nauczyłam się [[w rok]]",
+     "why": "Za rok = через рік."
+    },
+    {
+     "uk": "подивився фільм",
+     "wrong": "popatrzyłem film",
+     "right": "[[obejrzałem]] film",
+     "why": "Film się ogląda."
+    },
+    {
+     "uk": "він сказав",
+     "wrong": "on skazał",
+     "right": "on [[powiedział]]",
+     "why": "Skazać = засудити."
+    }
+   ],
+   "teacher_note": "Друга трійка — лексичні кальки. Особливо смішна «skazał» — учні її запам'ятовують."
+  }
+ ]
+}
