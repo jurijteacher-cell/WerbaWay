@@ -1,0 +1,94 @@
+{
+  "lesson_id": "pl-b1-group-07-dojazd",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 12,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj jeszcze raz tekst „Miasto w ruchu” i zdecyduj, czy zdanie jest prawdziwe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Katarzyna mieszka i pracuje w Krakowie.",
+          "answer": false,
+          "explanation": "Mieszka w Wieliczce, a w Krakowie tylko pracuje."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Do Krakowa Katarzyna jedzie pociągiem, a na dworcu przesiada się do tramwaju.",
+          "answer": true,
+          "explanation": "Wsiada do pociągu podmiejskiego, a na dworcu przesiada się do tramwaju."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Andrij od początku jeździł do pracy rowerem.",
+          "answer": false,
+          "explanation": "Na początku chodził pieszo, bo nie znał miasta."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Kiedy pada deszcz, Andrij wypożycza hulajnogę albo jedzie tramwajem.",
+          "answer": true,
+          "explanation": "Tak mówi tekst: hulajnoga elektryczna albo tramwaj."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Według raportu Łódź była najbardziej zakorkowanym miastem na świecie.",
+          "answer": false,
+          "explanation": "Była najbardziej zakorkowana w Polsce, a na świecie — czwarta."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Przez objazd pan Zbigniew jechał czterdzieści minut zamiast dziesięciu.",
+          "answer": true,
+          "explanation": "„Zamiast dziesięciu minut jechałem czterdzieści”."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "pl-b1-group-07-dojazd-comm-tasks.json#c1.model_dialogue",
+      "max_plays": 2,
+      "title": "Słuchanie: w punkcie obsługi pasażera",
+      "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Jaki bilet poleca pracownica?",
+          "options": ["jednorazowy", "miesięczny", "dobowy"],
+          "answer": "miesięczny",
+          "explanation": "Pasażer będzie jeździł codziennie, więc najlepszy jest bilet miesięczny."
+        },
+        {
+          "id": "e2-2",
+          "question": "Czego potrzeba, żeby wyrobić kartę miejską?",
+          "options": ["dokumentu ze zdjęciem", "zaświadczenia z pracy", "dwóch zdjęć"],
+          "answer": "dokumentu ze zdjęciem",
+          "explanation": "Kartę wyrabiają od ręki, wystarczy dokument ze zdjęciem."
+        },
+        {
+          "id": "e2-3",
+          "question": "Gdzie pasażer musi się przesiąść?",
+          "options": ["przy szpitalu", "na pętli przy dworcu", "w strefie przemysłowej"],
+          "answer": "na pętli przy dworcu",
+          "explanation": "Wysiada z autobusu na pętli przy dworcu i przesiada się do tramwaju numer siedem."
+        },
+        {
+          "id": "e2-4",
+          "question": "Dlaczego autobus bez przesiadki nie zawsze pomoże?",
+          "options": ["jest droższy", "jeździ tylko rano", "stoi w korku"],
+          "answer": "jeździ tylko rano",
+          "explanation": "Autobus dwieście piętnaście jeździ tylko do dziewiątej rano."
+        }
+      ]
+    }
+  ]
+}

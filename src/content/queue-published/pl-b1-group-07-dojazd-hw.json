@@ -1,0 +1,187 @@
+{
+  "lesson_id": "pl-b1-group-07-dojazd",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: słownictwo dojazdu i czasowniki ruchu",
+  "instruction": "Trzy bloki do zrobienia w domu. Zadanie z wideo, tekst do czytania i e-mail znajdziesz na stronie lekcji.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "hw1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Słownictwo w nowych zdaniach",
+      "instruction": "Wpisz słowo z lekcji we właściwej formie: przystanek na żądanie, godziny szczytu, objazd, rozkład jazdy, buspas, zdążyć, podwieźć, kontroler.",
+      "items": [
+        {
+          "id": "hw1-1",
+          "text": "Autobus nie zatrzyma się, jeśli nie naciśniesz przycisku — to ___.",
+          "answer": "przystanek na żądanie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "hw1-2",
+          "text": "W ___ na moście jest zawsze korek.",
+          "answer": "godzinach szczytu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "hw1-3",
+          "text": "Ulica Długa jest zamknięta, dlatego kierowcy jadą ___ przez osiedle.",
+          "answer": "objazdem",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "hw1-4",
+          "text": "Sprawdziłem w ___, że ostatni tramwaj odjeżdża o północy.",
+          "answer": "rozkładzie jazdy",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "hw1-5",
+          "text": "Taksówki też mogą jeździć ___.",
+          "answer": "buspasem",
+          "accept": [
+            "po buspasie"
+          ],
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "hw1-6",
+          "text": "Jeśli wyjdziesz teraz, ___ na pociąg.",
+          "answer": "zdążysz",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "hw1-7",
+          "text": "Mogę cię jutro ___ na lotnisko, mam samochód.",
+          "answer": "podwieźć",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "hw1-8",
+          "text": "___ poprosił mnie o bilet i dokument ze zdjęciem.",
+          "answer": "Kontroler",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "hw2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Który czasownik?",
+      "instruction": "Wybierz czasownik z nawiasu i wpisz go we właściwej formie.",
+      "items": [
+        {
+          "id": "hw2-1",
+          "text": "Teraz ___ (iść / chodzić) do apteki, zaraz wracam. (ja)",
+          "answer": "idę",
+          "grammar_point": "ruch-kierunek"
+        },
+        {
+          "id": "hw2-2",
+          "text": "Na studiach codziennie ___ (jechać / jeździć) na uczelnię autobusem. (ja, m.)",
+          "answer": "jeździłem",
+          "grammar_point": "ruch-przeszly"
+        },
+        {
+          "id": "hw2-3",
+          "text": "Kiedy byłam mała, codziennie ___ (iść / chodzić) z babcią do parku. (ja, ż.)",
+          "answer": "chodziłam",
+          "grammar_point": "ruch-przeszly"
+        },
+        {
+          "id": "hw2-4",
+          "text": "Ten pociąg zawsze ___ (przyjechać / przyjeżdżać) punktualnie.",
+          "answer": "przyjeżdża",
+          "grammar_point": "ruch-przedrostki-aspekt"
+        },
+        {
+          "id": "hw2-5",
+          "text": "Jutro ___ (wyjść / wychodzić) z domu wcześniej, bo mam spotkanie. (ja)",
+          "answer": "wyjdę",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "hw2-6",
+          "text": "Mój mąż ___ (lecieć / latać) samolotem dwa razy w miesiącu.",
+          "answer": "lata",
+          "grammar_point": "ruch-inne-pary"
+        },
+        {
+          "id": "hw2-7",
+          "text": "Uwaga, tramwaj właśnie ___ (wjechać / wjeżdżać) na przystanek!",
+          "answer": "wjeżdża",
+          "grammar_point": "ruch-przedrostki-aspekt"
+        },
+        {
+          "id": "hw2-8",
+          "text": "Wczoraj ___ (dojechać / dojeżdżać) do pracy dopiero o dziesiątej, bo na drodze był wypadek. (my)",
+          "answer": "dojechaliśmy",
+          "grammar_point": "ruch-przedrostki-aspekt"
+        }
+      ]
+    },
+    {
+      "block_id": "hw3",
+      "exercise_type": "sentence-building",
+      "title": "3. Zbuduj zdanie",
+      "instruction": "Napisz pełne zdanie według wskazówki w nawiasie.",
+      "items": [
+        {
+          "id": "hw3-1",
+          "prompt": "Wracam / szkoła / o piętnastej (skąd?)",
+          "answer": "Wracam ze szkoły o piętnastej.",
+          "accept": [
+            "O piętnastej wracam ze szkoły."
+          ],
+          "grammar_point": "ruch-dokad-skad"
+        },
+        {
+          "id": "hw3-2",
+          "prompt": "Babcia / wracać / dentysta (skąd?)",
+          "answer": "Babcia wraca od dentysty.",
+          "grammar_point": "ruch-dokad-skad"
+        },
+        {
+          "id": "hw3-3",
+          "prompt": "W weekend / jechać / jezioro (dokąd?, my)",
+          "answer": "W weekend jedziemy nad jezioro.",
+          "accept": [
+            "Jedziemy w weekend nad jezioro.",
+            "W weekend pojedziemy nad jezioro.",
+            "Pojedziemy w weekend nad jezioro."
+          ],
+          "grammar_point": "ruch-dokad-skad"
+        },
+        {
+          "id": "hw3-4",
+          "prompt": "Hania / codziennie / jeździć / do szkoły / hulajnoga (czym?)",
+          "answer": "Hania codziennie jeździ do szkoły na hulajnodze.",
+          "accept": [
+            "Hania codziennie jeździ do szkoły hulajnogą.",
+            "Hania jeździ codziennie do szkoły na hulajnodze.",
+            "Hania jeździ codziennie do szkoły hulajnogą.",
+            "Codziennie Hania jeździ do szkoły na hulajnodze.",
+            "Codziennie Hania jeździ do szkoły hulajnogą."
+          ],
+          "grammar_point": "ruch-czym"
+        },
+        {
+          "id": "hw3-5",
+          "prompt": "Wytłumacz drogę: ty / iść prosto, potem skręcać w prawo (czas teraźniejszy)",
+          "answer": "Idziesz prosto, a potem skręcasz w prawo.",
+          "accept": [
+            "Idziesz prosto, potem skręcasz w prawo.",
+            "Idziesz prosto i potem skręcasz w prawo."
+          ],
+          "grammar_point": "ruch-kierunek"
+        },
+        {
+          "id": "hw3-6",
+          "prompt": "Kiedy / iść / na przystanek / spotkać / kolega (ja, ż.)",
+          "answer": "Kiedy szłam na przystanek, spotkałam kolegę.",
+          "grammar_point": "ruch-przeszly"
+        }
+      ]
+    }
+  ]
+}
