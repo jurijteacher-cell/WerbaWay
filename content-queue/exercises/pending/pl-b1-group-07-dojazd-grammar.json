@@ -1,0 +1,619 @@
+{
+  "lesson_id": "pl-b1-group-07-dojazd",
+  "exercise_type": "fill-in-blank",
+  "title": "Czasowniki ruchu: iść, chodzić, jechać, jeździć i przedrostki",
+  "instruction": "Osiem bloków w dwóch częściach. Bloki 1–4 idą po części 1 prezentacji, bloki 5–8 po części 2.",
+  "estimated_minutes": 45,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Pieszo czy pojazdem? Teraz czy regularnie?",
+      "instruction": "Wybierz czasownik. Pomyśl: pieszo czy czymś? Ten jeden raz czy regularnie?",
+      "covers_slides": [
+        "s2",
+        "s3"
+      ],
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Mieszkam blisko biura, więc codziennie ___ do pracy pieszo.",
+          "options": [
+            "chodzę",
+            "jeżdżę"
+          ],
+          "answer": "chodzę",
+          "explanation": "Pieszo i codziennie — chodzić.",
+          "grammar_point": "ruch-pieszo-pojazdem"
+        },
+        {
+          "id": "g1-2",
+          "text": "Nie mogę rozmawiać, właśnie ___ tramwajem do centrum.",
+          "options": [
+            "jadę",
+            "idę"
+          ],
+          "answer": "jadę",
+          "explanation": "Tramwaj to pojazd, a „właśnie” to teraz — jechać.",
+          "grammar_point": "ruch-pieszo-pojazdem"
+        },
+        {
+          "id": "g1-3",
+          "text": "Od wiosny do jesieni ___ do pracy rowerem.",
+          "options": [
+            "jeżdżę",
+            "chodzę"
+          ],
+          "answer": "jeżdżę",
+          "explanation": "Rower to pojazd, a jazda się powtarza — jeździć.",
+          "grammar_point": "ruch-pieszo-pojazdem"
+        },
+        {
+          "id": "g1-4",
+          "text": "Patrz, tam ___ nasz autobus! Szybko na przystanek!",
+          "options": [
+            "jedzie",
+            "jeździ"
+          ],
+          "answer": "jedzie",
+          "explanation": "Teraz, w jedną stronę — jechać.",
+          "grammar_point": "ruch-kierunek"
+        },
+        {
+          "id": "g1-5",
+          "text": "Mój brat często ___ w delegacje do Niemiec.",
+          "options": [
+            "jeździ",
+            "jedzie"
+          ],
+          "answer": "jeździ",
+          "explanation": "„Często” — droga się powtarza, jeździć.",
+          "grammar_point": "ruch-kierunek"
+        },
+        {
+          "id": "g1-6",
+          "text": "Dokąd ___? — Do lekarza, mam wizytę o dziesiątej.",
+          "options": [
+            "idziesz",
+            "chodzisz"
+          ],
+          "answer": "idziesz",
+          "explanation": "Pytanie o to jedno wyjście teraz — iść.",
+          "grammar_point": "ruch-kierunek"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "drag-and-drop",
+      "title": "2. Formy: teraz i w przeszłości",
+      "instruction": "Przeciągnij formę do luki. Dwa słowa w banku nigdzie nie pasują.",
+      "covers_slides": [
+        "s4",
+        "s5"
+      ],
+      "bank": [
+        "jeżdżą",
+        "szłam",
+        "idziecie",
+        "jechałem",
+        "szły",
+        "jedziemy",
+        "szedłem",
+        "jadą"
+      ],
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Oni codziennie ___ do pracy pociągiem.",
+          "answer": "jeżdżą",
+          "grammar_point": "ruch-odmiana"
+        },
+        {
+          "id": "g2-2",
+          "text": "Wczoraj ___ do domu pieszo, bo nie było autobusu. (ja, ż.)",
+          "answer": "szłam",
+          "grammar_point": "ruch-przeszly"
+        },
+        {
+          "id": "g2-3",
+          "text": "Dokąd ___? — Na dworzec, mamy pociąg za godzinę. (wy)",
+          "answer": "idziecie",
+          "grammar_point": "ruch-odmiana"
+        },
+        {
+          "id": "g2-4",
+          "text": "Kiedy ___ samochodem przez most, zadzwonił szef. (ja, m.)",
+          "answer": "jechałem",
+          "grammar_point": "ruch-przeszly"
+        },
+        {
+          "id": "g2-5",
+          "text": "Dzieci ___ do szkoły parami i głośno rozmawiały.",
+          "answer": "szły",
+          "grammar_point": "ruch-przeszly"
+        },
+        {
+          "id": "g2-6",
+          "text": "Jutro ___ do Krakowa na cały dzień. (my)",
+          "answer": "jedziemy",
+          "grammar_point": "ruch-odmiana"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Sygnał podpowiada",
+      "instruction": "Znajdź w zdaniu słowo-sygnał i wybierz formę.",
+      "covers_slides": [
+        "s6"
+      ],
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Zwykle ___ do biura na ósmą, ale dziś mam wolne.",
+          "options": [
+            "chodzę",
+            "idę"
+          ],
+          "answer": "chodzę",
+          "explanation": "„Zwykle” — powtarzanie, chodzić.",
+          "grammar_point": "ruch-kierunek"
+        },
+        {
+          "id": "g3-2",
+          "text": "W sobotę ___ z dziećmi do zoo. Chcesz z nami?",
+          "options": [
+            "jedziemy",
+            "jeździmy"
+          ],
+          "answer": "jedziemy",
+          "explanation": "Plan na sobotę, jeden wyjazd — jechać.",
+          "grammar_point": "ruch-kierunek"
+        },
+        {
+          "id": "g3-3",
+          "text": "Dziadek ma osiemdziesiąt lat i nadal ___ samochodem.",
+          "options": [
+            "jeździ",
+            "jedzie"
+          ],
+          "answer": "jeździ",
+          "explanation": "Mówimy o tym, co robi w ogóle, nie o jednej drodze — jeździć.",
+          "grammar_point": "ruch-kierunek"
+        },
+        {
+          "id": "g3-4",
+          "text": "Zadzwoń później, właśnie ___ autostradą.",
+          "options": [
+            "jadę",
+            "jeżdżę"
+          ],
+          "answer": "jadę",
+          "explanation": "„Właśnie” — teraz, jechać.",
+          "grammar_point": "ruch-kierunek"
+        },
+        {
+          "id": "g3-5",
+          "text": "Nigdy nie ___ do pracy w godzinach szczytu — w biurze jestem już o siódmej.",
+          "options": [
+            "jeżdżę",
+            "jadę"
+          ],
+          "answer": "jeżdżę",
+          "explanation": "„Nigdy” — mówimy o zwyczaju, jeździć.",
+          "grammar_point": "ruch-kierunek"
+        },
+        {
+          "id": "g3-6",
+          "text": "Moja córka uczy się ___ na rowerze.",
+          "options": [
+            "jeździć",
+            "jechać"
+          ],
+          "answer": "jeździć",
+          "explanation": "Umiejętność, ogólnie — jeździć.",
+          "grammar_point": "ruch-kierunek"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Inne pary i znaczenia przenośne",
+      "instruction": "Wybierz formę. Uwaga: w trzech ostatnich zdaniach czasownik nie mówi o drodze.",
+      "covers_slides": [
+        "s7",
+        "s8"
+      ],
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "W przyszłym tygodniu ___ do Barcelony na konferencję.",
+          "options": [
+            "lecę",
+            "latam"
+          ],
+          "answer": "lecę",
+          "explanation": "Jeden konkretny lot — lecieć.",
+          "grammar_point": "ruch-inne-pary"
+        },
+        {
+          "id": "g4-2",
+          "text": "Trzy razy w tygodniu ___ w parku przed pracą.",
+          "options": [
+            "biegam",
+            "biegnę"
+          ],
+          "answer": "biegam",
+          "explanation": "„Trzy razy w tygodniu” — powtarzanie, biegać.",
+          "grammar_point": "ruch-inne-pary"
+        },
+        {
+          "id": "g4-3",
+          "text": "Ola zawsze ___ do pracy duży plecak z laptopem.",
+          "options": [
+            "nosi",
+            "niesie"
+          ],
+          "answer": "nosi",
+          "explanation": "„Zawsze” — zwyczaj, nosić.",
+          "grammar_point": "ruch-inne-pary"
+        },
+        {
+          "id": "g4-4",
+          "text": "Jak ci ___ na kursie prawa jazdy?",
+          "options": [
+            "idzie",
+            "chodzi"
+          ],
+          "answer": "idzie",
+          "explanation": "Jak ci idzie? = czy ci się udaje?",
+          "grammar_point": "ruch-przenosne"
+        },
+        {
+          "id": "g4-5",
+          "text": "Nie ___ o pieniądze, tylko o czas dojazdu.",
+          "options": [
+            "chodzi",
+            "idzie"
+          ],
+          "answer": "chodzi",
+          "explanation": "Chodzi o… = mowa o… (укр. «йдеться про»).",
+          "grammar_point": "ruch-przenosne"
+        },
+        {
+          "id": "g4-6",
+          "text": "Nasz syn ___ do trzeciej klasy i bardzo lubi swoją nauczycielkę.",
+          "options": [
+            "chodzi",
+            "idzie"
+          ],
+          "answer": "chodzi",
+          "explanation": "Chodzić do szkoły, do klasy = uczyć się tam.",
+          "grammar_point": "ruch-przenosne"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Który przedrostek?",
+      "instruction": "Wybierz czasownik z właściwym przedrostkiem.",
+      "covers_slides": [
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Pociąg do Gdyni ___ z peronu drugiego o ósmej piętnaście.",
+          "options": [
+            "odjeżdża",
+            "przyjeżdża"
+          ],
+          "answer": "odjeżdża",
+          "explanation": "Z peronu — pociąg się oddala, od-.",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "g5-2",
+          "text": "Dzieci ___ przez ulicę na zielonym świetle.",
+          "options": [
+            "przeszły",
+            "wyszły"
+          ],
+          "answer": "przeszły",
+          "explanation": "Przez ulicę, na drugą stronę — prze-.",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "g5-3",
+          "text": "Winda nie działa, musimy ___ z piątego piętra po schodach.",
+          "options": [
+            "zejść",
+            "dojść"
+          ],
+          "answer": "zejść",
+          "explanation": "Z góry w dół — z-.",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "g5-4",
+          "text": "Kiedy ___ do biura, od razu zrobiłam kawę.",
+          "options": [
+            "weszłam",
+            "wyszłam"
+          ],
+          "answer": "weszłam",
+          "explanation": "Do środka — w-, przeszłość: weszłam.",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "g5-5",
+          "text": "Na moście jest wypadek, musimy go ___ inną drogą.",
+          "options": [
+            "objechać",
+            "odjechać"
+          ],
+          "answer": "objechać",
+          "explanation": "Dookoła przeszkody — ob-.",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "g5-6",
+          "text": "Po zebraniu wszyscy ___ do domów.",
+          "options": [
+            "rozeszli się",
+            "zeszli się"
+          ],
+          "answer": "rozeszli się",
+          "explanation": "W różne strony — roz-. Zejść się = spotkać się w jednym miejscu.",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "g5-7",
+          "text": "Jutro przed pracą ___ do urzędu. (ja)",
+          "options": [
+            "pójdę",
+            "wyjdę"
+          ],
+          "answer": "pójdę",
+          "explanation": "Plan na jedną drogę — pójść (po- + iść).",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "g5-8",
+          "text": "W drodze do domu ___ do piekarni po chleb. (ja, m.)",
+          "options": [
+            "zaszedłem",
+            "odszedłem"
+          ],
+          "answer": "zaszedłem",
+          "explanation": "Po drodze, na chwilę — za-.",
+          "grammar_point": "ruch-przedrostki"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "matching",
+      "title": "6. Znajdź parę",
+      "instruction": "Kliknij czasownik dokonany, potem jego parę niedokonaną.",
+      "covers_slides": [
+        "s12"
+      ],
+      "items": [
+        {
+          "id": "g6-1",
+          "left": "wyjść",
+          "right": "wychodzić",
+          "grammar_point": "ruch-przedrostki-aspekt"
+        },
+        {
+          "id": "g6-2",
+          "left": "przyjść",
+          "right": "przychodzić",
+          "grammar_point": "ruch-przedrostki-aspekt"
+        },
+        {
+          "id": "g6-3",
+          "left": "wejść",
+          "right": "wchodzić",
+          "grammar_point": "ruch-przedrostki-aspekt"
+        },
+        {
+          "id": "g6-4",
+          "left": "przejść",
+          "right": "przechodzić",
+          "grammar_point": "ruch-przedrostki-aspekt"
+        },
+        {
+          "id": "g6-5",
+          "left": "przyjechać",
+          "right": "przyjeżdżać",
+          "grammar_point": "ruch-przedrostki-aspekt"
+        },
+        {
+          "id": "g6-6",
+          "left": "odjechać",
+          "right": "odjeżdżać",
+          "grammar_point": "ruch-przedrostki-aspekt"
+        },
+        {
+          "id": "g6-7",
+          "left": "dojechać",
+          "right": "dojeżdżać",
+          "grammar_point": "ruch-przedrostki-aspekt"
+        },
+        {
+          "id": "g6-8",
+          "left": "przesiąść się",
+          "right": "przesiadać się",
+          "grammar_point": "ruch-przedrostki-aspekt"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "7. Dokąd, skąd i czym?",
+      "instruction": "Napisz jedno zdanie według wskazówki w nawiasie.",
+      "covers_slides": [
+        "s13",
+        "s14",
+        "s15"
+      ],
+      "items": [
+        {
+          "id": "g7-1",
+          "prompt": "Wracam / praca / o szesnastej (skąd?)",
+          "answer": "Wracam z pracy o szesnastej.",
+          "accept": [
+            "O szesnastej wracam z pracy."
+          ],
+          "grammar_point": "ruch-dokad-skad"
+        },
+        {
+          "id": "g7-2",
+          "prompt": "Jutro / jechać / dworzec (dokąd?, ja)",
+          "answer": "Jutro jadę na dworzec.",
+          "accept": [
+            "Jadę jutro na dworzec.",
+            "Jutro pojadę na dworzec.",
+            "Pojadę jutro na dworzec."
+          ],
+          "grammar_point": "ruch-dokad-skad"
+        },
+        {
+          "id": "g7-3",
+          "prompt": "Wracam / lekarz (skąd?)",
+          "answer": "Wracam od lekarza.",
+          "grammar_point": "ruch-dokad-skad"
+        },
+        {
+          "id": "g7-4",
+          "prompt": "Codziennie / jeździć / tramwaj (czym?, ja)",
+          "answer": "Codziennie jeżdżę tramwajem.",
+          "accept": [
+            "Jeżdżę codziennie tramwajem.",
+            "Jeżdżę tramwajem codziennie."
+          ],
+          "grammar_point": "ruch-czym"
+        },
+        {
+          "id": "g7-5",
+          "prompt": "Ona / jechać / do pracy / rower (teraz)",
+          "answer": "Ona jedzie do pracy rowerem.",
+          "accept": [
+            "Ona jedzie do pracy na rowerze.",
+            "Jedzie do pracy rowerem.",
+            "Jedzie do pracy na rowerze.",
+            "Ona jedzie rowerem do pracy.",
+            "Ona jedzie na rowerze do pracy."
+          ],
+          "grammar_point": "ruch-czym"
+        },
+        {
+          "id": "g7-6",
+          "prompt": "Wczoraj / Ania / wyjść / z domu / o siódmej",
+          "answer": "Wczoraj Ania wyszła z domu o siódmej.",
+          "accept": [
+            "Ania wyszła wczoraj z domu o siódmej.",
+            "Wczoraj o siódmej Ania wyszła z domu.",
+            "Ania wyszła z domu wczoraj o siódmej."
+          ],
+          "grammar_point": "ruch-przedrostki"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Pułapki z ukraińskiego",
+      "instruction": "Jedna forma jest poprawna, druga to kalka z ukraińskiego. Wybierz i przeczytaj wyjaśnienie.",
+      "covers_slides": [
+        "s16",
+        "s17"
+      ],
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "W sobotę ___ na koncert. Było super! (ja, ż.)",
+          "options": [
+            "poszłam",
+            "chodziłam"
+          ],
+          "answer": "poszłam",
+          "explanation": "Jeden raz — poszłam. Chodziłam brzmi jak „chodziłam regularnie”.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-2",
+          "text": "Codziennie jeżdżę ___ autobusem.",
+          "options": [
+            "do pracy",
+            "na pracę"
+          ],
+          "answer": "do pracy",
+          "explanation": "Укр. «на роботу» → do pracy.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-3",
+          "text": "Przepraszam, jak ___ do dworca?",
+          "options": [
+            "dojść",
+            "projść"
+          ],
+          "answer": "dojść",
+          "explanation": "Укр. «пройти» → dojść. Formy „projść” w polskim nie ma.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-4",
+          "text": "Na przystanku przy rynku ___ do autobusu numer 12.",
+          "options": [
+            "wsiadam",
+            "siadam"
+          ],
+          "answer": "wsiadam",
+          "explanation": "Do pojazdu wsiadamy. Siadamy na krześle.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-5",
+          "text": "W tramwaju trzeba od razu ___ bilet.",
+          "options": [
+            "skasować",
+            "skompostować"
+          ],
+          "answer": "skasować",
+          "explanation": "Укр. «прокомпостувати» → skasować. Kompostować = robić kompost.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-6",
+          "text": "To połączenie jest bez ___ — autobus jedzie prosto pod biuro.",
+          "options": [
+            "przesiadki",
+            "przesadki"
+          ],
+          "answer": "przesiadki",
+          "explanation": "Przesiadka — od przesiąść się, z literą i.",
+          "grammar_point": "kalki-uk"
+        }
+      ]
+    }
+  ]
+}

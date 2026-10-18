@@ -1,0 +1,96 @@
+---
+lesson_id: pl-b1-group-07-dojazd
+audience: teacher
+level: B1
+duration_minutes: 180
+sessions: 2
+---
+
+# Нотатки викладача · Dojazd do pracy: miasto w ruchu
+
+Файл не публікується учням. План за хвилинами, ключі, типові помилки й критерії письмової роботи.
+
+**Місце в курсі:** лекція 7 з 22. Тихо повторює лекції 5 (*nieczynny, przełożyć, godziny otwarcia*, *temu*) і 6 (*wypożyczyć, odwołać, potwierdzenie*, вид дієслова). Вид з уроку 6 — опора для частини 2: префікс робить дієслово руху доконаним.
+
+## План на 2 заняття × 90 хв
+
+### Заняття 1 — текст, словник, говоріння, діалог
+
+| Хв | Розділ | Що робимо |
+|---|---|---|
+| 5 | Cele + rozgrzewka | Кожен записує, скільки хвилин їде на роботу і чим. Не обговорювати — повернемося в кінці. |
+| 15 | 1. Czytanie | Викладач читає текст уголос. На другому читанні учні виписують у дві колонки: *idzie / jedzie* (зараз) і *chodzi / jeździ* (регулярно). |
+| 8 | 2. Pytania do tekstu | Усно, в парах. |
+| 6 | 2. Jak na egzaminie (e1) | Індивідуально, без тексту, потім перевірка з текстом. |
+| 18 | 3. Słownictwo, групи 1–3 | Групи 4–6 — на заняття 2. Пояснити *przystanek na żądanie* і *skasować bilet* — це польські реалії. |
+| 20 | 4. Praktyka mówienia | 3–4 питання. Виправляти тільки *iść / chodzić, jechać / jeździć*, решту — пізніше. |
+| 18 | 5. Dialog c1 + e2 | Викладач двічі читає діалог з картки c1 за ролями, учні без тексту; між читаннями 30 с на питання. Потім c1 у парах. |
+
+### Заняття 2 — розмови, граматика
+
+| Хв | Розділ | Що робимо |
+|---|---|---|
+| 8 | 3. Słownictwo, групи 4–6 | Одразу в реченнях про свою дорогу на роботу. |
+| 14 | 5. Zadania komunikacyjne c2–c4 | c2 — спиною одне до одного, як справжній дзвінок. c3 — викладач грає колегу. c4 — кожен говорить 2 хв, решта рахує дієслова руху. |
+| 28 | 6. Gramatyka cz. 1 + g1–g4 | Слайди s2–s8 — 10 хв, вправи — 18 хв. |
+| 30 | 7. Gramatyka cz. 2 + g5–g8 | Слайди s9–s17 — 12 хв, вправи — 18 хв. Пастки s16–s17 — вголос з українськими відповідниками. |
+| 10 | 8. Podsumowanie + 9 | Повернутися до розминки: кожен описує свою дорогу «od wyjścia z domu do wejścia do biura» з префіксами. Пояснити e-mail. |
+
+**Варіант 3 × 60 хв:** заняття 1 = розділи 1–3; заняття 2 = розділи 4–5; заняття 3 = розділи 6–9.
+
+**Група швидша:** c2 з картою міста на телефоні — один пояснює, другий прокладає маршрут пальцем. **Група повільніша:** s11 тільки прочитати, g5-5 і g5-6 — у домашку.
+
+## Ключі до відкритих завдань
+
+**Pytania do tekstu**
+
+1. Пішки на станцію → приміський поїзд до Кракова → на вокзалі пересадка на трамвай.
+2. Щодня стояла в заторі на тій самій дорозі; у поїзді може читати або спати.
+3. Ходив пішки, бо не знав міста й боявся поїхати не в той бік.
+4. Лодзь — найбільш заторне місто в Польщі й четверте у світі (TomTom 2025); водій у години пік втрачає близько 135 годин на рік.
+5. Відкрита відповідь.
+
+**Podsumowanie:** пункт 5 — зразок: «Wychodzę z domu o siódmej, idę na przystanek i wsiadam do autobusu. Na dworcu przesiadam się do tramwaju, wysiadam przy rondzie, przechodzę przez ulicę i wchodzę do biura».
+
+**Домашнє, відео:** відповіді відкриті; перевіряти форму минулого часу і дієслова руху. **Читання:** безкоштовно паркуються ті, хто при виїзді покаже чинний квиток (добовий, 3-денний, вихідний, 30- чи 90-денний тощо) або документ на безкоштовний проїзд; паркування дозволене з 4:30 до 2:30 (вночі заборона, крім вихідних); без квитка — одноразова плата 150 зл.
+
+## Типові помилки
+
+- *chodziłem wczoraj do kina* — разова поїздка: *byłem w kinie / poszedłem do kina*.
+- *jadę na pracę* — калька «на роботу»; треба *do pracy*.
+- *idę rowerem* — велосипед і самокат — це *jechać*.
+- *jedę, jeździę* — форми *jadę / jedziesz*, *jeżdżę / jeździsz*.
+- *poiść, projść* — правильно *pójść*; префікса *pro-* при *iść* немає, «пройти до…» = *dojść do…*.
+- *siadam do autobusu* — у транспорт *wsiadam*; *siadam* — на стілець.
+- *przesadka, skompostować bilet* — *przesiadka, skasować bilet*.
+- *przyjeździć* — недоконана пара до *przyjechać* — *przyjeżdżać*.
+- *wyszedłem z autobusu* — з транспорту нормативно *wysiadłem*; *wyjść* — з будинку, кімнати.
+
+## Письмова робота: критерії (0–10)
+
+| Критерій | 0 | 1 | 2 |
+|---|---|---|---|
+| Три пункти завдання | один пункт | два пункти | усі три, є квиток і години роботи каси |
+| Дієслова руху | <4 | 4–5 або <3 з префіксами | ≥6, з них ≥3 з префіксами, без помилок у виборі |
+| Форма e-mail | немає звертання й підпису | одне з двох | звертання, прощання, підпис |
+| Лексика уроку | <3 слова | 3–4 слова | ≥5 слів |
+| Коректність | помилки заважають зрозуміти | помилки є, зміст ясний | поодинокі помилки |
+
+Менше 100 слів — максимум 5 балів.
+
+**Зразок відповіді**
+
+> Cześć Ira!
+>
+> Bardzo się cieszę, że przyjeżdżasz! Wytłumaczę Ci, jak do mnie dojechać. Kiedy wysiądziesz z pociągu, wyjdź z dworca głównym wyjściem. Przystanek tramwajowy jest po drugiej stronie ulicy. Wsiądź do tramwaju numer cztery i jedź sześć przystanków. Wysiądziesz na przystanku „Rondo Grunwaldzkie”. Uwaga, to przystanek na żądanie, więc naciśnij przycisk!
+>
+> Potem przejdziesz przez przejście dla pieszych i pójdziesz prosto około pięciu minut. Na drugim skrzyżowaniu skręcisz w lewo. Mój blok jest naprzeciwko apteki, numer dwanaście. Cała droga z dworca zajmie Ci najwyżej dwadzieścia pięć minut.
+>
+> Bilet jednorazowy kupisz w automacie w tramwaju albo w kasie na dworcu. Kasa jest czynna od szóstej do dwudziestej drugiej. Nie zapomnij od razu skasować biletu!
+>
+> Jeśli się zgubisz, zadzwoń. Mogę po Ciebie wyjść na przystanek.
+>
+> Do zobaczenia w piątek!
+> Oksana
+
+*(Зразок використовує наказовий спосіб — він буде в лекції 13; від учнів на цьому етапі достатньо форм на кшталт «wysiądziesz, przejdziesz, skręcisz».)*
