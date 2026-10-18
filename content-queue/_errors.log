@@ -7,3 +7,4 @@
   (same checker/spec mismatch as pl-a0-01-alfabet: CURSOR_TASK says exam.json is not created on A0; needs owner decision. Content not modified.)
 [2026-10-18] pl-a0-02-glosk: still NOT PUBLISHED (re-run), check_lesson.py exit 1: missing pl-a0-02-glosk-exam.json (A0 has no exam per CURSOR_TASK; checker/spec mismatch, owner decision needed). Files left in pending.
 [2026-10-18] pl-a0-01-alfabet: already published (commit 59f6d1a, in _manifest.json); stale duplicate copies remain in pending/ (lectures, exercises, slides, teacher). Not touched, not republished; owner to clean up.
+[2026-10-18] pl-a0-02-glosk: re-run, check_lesson.py still exit 1 (missing pl-a0-02-glosk-exam.json; A0 has no exam per CURSOR_TASK). Not published to Notion, files left in pending. Note: commit 718fd97 already added partial LMS data/slides/audio for this lesson without passing the check; owner decision needed.
