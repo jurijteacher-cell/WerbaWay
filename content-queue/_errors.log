@@ -2,3 +2,6 @@
   scripts/check_lesson.py pl-a0-01-alfabet content-queue -> exit 1: "brak pliku: content-queue/exercises/pending/pl-a0-01-alfabet-exam.json"
   (the checker requires an exam.json; CURSOR_TASK says exam is not created on A0 - checker/spec mismatch, needs owner decision. Content not modified.)
   Also scripts/check_lesson_package.py on a flat copy: "ERROR slides: пасток 3, норма 5-6" (known divergence per CURSOR_TASK, not blocking).
+[2026-10-18] pl-a0-02-glosk: NOT PUBLISHED, files left in pending.
+  scripts/check_lesson.py pl-a0-02-glosk content-queue -> exit 1: "brak pliku: content-queue/exercises/pending/pl-a0-02-glosk-exam.json"
+  (same checker/spec mismatch as pl-a0-01-alfabet: CURSOR_TASK says exam.json is not created on A0; needs owner decision. Content not modified.)
