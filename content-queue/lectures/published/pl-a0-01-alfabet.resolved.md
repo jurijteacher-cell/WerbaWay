@@ -28,7 +28,9 @@ Konduktor: — Dziękuję.
 
 Dzwonek. Telefon: Taras.
 
-*[Kobieta w pociągu, za oknem pola — zdjęcie wkrótce]*
+![Kobieta w pociągu, za oknem pola](https://images.unsplash.com/photo-1679888669393-87b874472df2?fm=jpg&q=80&w=1080&fit=max)
+
+[Photo: Kevin Charit / Unsplash](https://unsplash.com/@kevin_charit)
 
 Stacja: Opole Główne. Stacja: Katowice. Mapa: Szczecin, Częstochowa, Rzeszów, Chorzów, Kłodzko.
 

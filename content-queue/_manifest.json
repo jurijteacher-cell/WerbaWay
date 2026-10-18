@@ -646,13 +646,17 @@
         "quizlet": "https://quizlet.com/1223959934/flashcards/embed"
       },
       "images": {
-        "header": "missing",
-        "img1": "missing"
+        "header": "https://images.unsplash.com/photo-1661138485147-7aebd5847bc4?fm=jpg&q=80&w=1080&fit=max",
+        "img1": "https://images.unsplash.com/photo-1679888669393-87b874472df2?fm=jpg&q=80&w=1080&fit=max"
       },
       "audio": [
         "pl-a0-01-czytanie",
         "pl-a0-01-c1-dialog"
       ],
+      "tts_voices": {
+        "czytanie": "pl-PL-ZofiaNeural",
+        "c1_dialog": ["pl-PL-MarekNeural", "pl-PL-ZofiaNeural"]
+      },
       "status": "published",
       "notion_parent_id": "3e596e03-c7c8-815b-be7b-d031abb6a836",
       "check_lesson_package": "traps 3 (known A0 WARN); vocab/czytanie WARN ranges",
