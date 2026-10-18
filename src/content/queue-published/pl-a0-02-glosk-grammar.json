@@ -1,0 +1,336 @@
+{
+  "lesson_id": "pl-a0-02-glosk",
+  "exercise_type": "fill-in-blank",
+  "title": "Miękkie głoski, ł i akcent",
+  "instruction": "Cztery bloki po prezentacji: miękkie głoski, ł i l, pisownia, akcent i pułapki.",
+  "instruction_uk": "Чотири блоки після презентації: м'які звуки, ł і l, правопис, наголос і пастки.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "1. Ten sam dźwięk",
+      "instruction": "Połącz literę ze słowem: ten sam dźwięk. Potem przeczytaj słowo na głos.",
+      "instruction_uk": "З'єднай літеру зі словом, у якому той самий звук. Потім прочитай слово вголос.",
+      "covers_slides": [
+        "s2",
+        "s3"
+      ],
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "ś",
+          "right": "osiedle",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g1-2",
+          "left": "ć",
+          "right": "ciemno",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g1-3",
+          "left": "ź",
+          "right": "zimno",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g1-4",
+          "left": "ń",
+          "right": "nie",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g1-5",
+          "left": "dź",
+          "right": "dzień",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g1-6",
+          "left": "ł",
+          "right": "łóżko",
+          "grammar_point": "wymowa-glosek"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Ł czy l? Dz, dż czy dź?",
+      "instruction": "Nauczyciel czyta słowo. Wybierz literę, którą słyszysz.",
+      "instruction_uk": "Викладач читає слово. Вибери літеру, яку чуєш.",
+      "covers_slides": [
+        "s4",
+        "s5"
+      ],
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "___óżko",
+          "options": [
+            "ł",
+            "l"
+          ],
+          "answer": "ł",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g2-2",
+          "text": "bi___et",
+          "options": [
+            "l",
+            "ł"
+          ],
+          "answer": "l",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g2-3",
+          "text": "Wroc___aw",
+          "options": [
+            "ł",
+            "l"
+          ],
+          "answer": "ł",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g2-4",
+          "text": "Zie___ińska",
+          "options": [
+            "l",
+            "ł"
+          ],
+          "answer": "l",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g2-5",
+          "text": "de, eł, u, gie, a = ___",
+          "options": [
+            "Długa",
+            "Dluga"
+          ],
+          "answer": "Długa",
+          "grammar_point": "wymowa-glosek",
+          "explanation": "Eł to nazwa litery ł; el to l."
+        },
+        {
+          "id": "g2-6",
+          "text": "___em",
+          "options": [
+            "dż",
+            "dz"
+          ],
+          "answer": "dż",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g2-7",
+          "text": "Łó___",
+          "options": [
+            "dź",
+            "dz"
+          ],
+          "answer": "dź",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g2-8",
+          "text": "___wonek",
+          "options": [
+            "dz",
+            "dź"
+          ],
+          "answer": "dz",
+          "grammar_point": "wymowa-glosek"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "drag-and-drop",
+      "title": "3. Jak to napisać?",
+      "diacritics": "strict",
+      "instruction": "Przeciągnij litery do luki. Dwie karteczki w banku nigdzie nie pasują.",
+      "instruction_uk": "Перетягни літери в пропуск. Дві картки в банку нікуди не підходять.",
+      "covers_slides": [
+        "s3",
+        "s6"
+      ],
+      "bank": [
+        "si",
+        "ci",
+        "zi",
+        "ni",
+        "dzi",
+        "ó",
+        "rz",
+        "ś",
+        "ć"
+      ],
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "o___edle",
+          "answer": "si",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "g3-2",
+          "text": "___emno",
+          "answer": "ci",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "g3-3",
+          "text": "___mno",
+          "answer": "zi",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "g3-4",
+          "text": "mieszka___e",
+          "answer": "ni",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "g3-5",
+          "text": "___eń",
+          "answer": "dzi",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "g3-6",
+          "text": "ł___żko",
+          "answer": "ó",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "g3-7",
+          "text": "dob___e",
+          "answer": "rz",
+          "grammar_point": "pisownia"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Akcent i pułapki",
+      "instruction": "Wybierz sylabę z akcentem. W trzech ostatnich zadaniach wybierz dobry dźwięk.",
+      "instruction_uk": "Вибери наголошений склад. У трьох останніх завданнях вибери правильний звук.",
+      "covers_slides": [
+        "s7",
+        "s8",
+        "s9"
+      ],
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "u-li-ca → ___",
+          "options": [
+            "u",
+            "li",
+            "ca"
+          ],
+          "answer": "li",
+          "grammar_point": "akcent"
+        },
+        {
+          "id": "g4-2",
+          "text": "mia-sto → ___",
+          "options": [
+            "mia",
+            "sto"
+          ],
+          "answer": "mia",
+          "grammar_point": "akcent",
+          "explanation": "Mia to jedna sylaba: mia-sto."
+        },
+        {
+          "id": "g4-3",
+          "text": "do-brze → ___",
+          "options": [
+            "do",
+            "brze"
+          ],
+          "answer": "do",
+          "grammar_point": "akcent"
+        },
+        {
+          "id": "g4-4",
+          "text": "pro-szę → ___",
+          "options": [
+            "pro",
+            "szę"
+          ],
+          "answer": "pro",
+          "grammar_point": "akcent"
+        },
+        {
+          "id": "g4-5",
+          "text": "Zie-liń-ska → ___",
+          "options": [
+            "Zie",
+            "liń",
+            "ska"
+          ],
+          "answer": "liń",
+          "grammar_point": "akcent",
+          "explanation": "Zie to jedna sylaba, więc akcent: liń."
+        },
+        {
+          "id": "g4-6",
+          "text": "tak-sów-ka → ___",
+          "options": [
+            "tak",
+            "sów",
+            "ka"
+          ],
+          "answer": "sów",
+          "grammar_point": "akcent"
+        },
+        {
+          "id": "g4-7",
+          "text": "łóżko: ł = ___",
+          "options": [
+            "w",
+            "l"
+          ],
+          "answer": "w",
+          "grammar_point": "kalki-uk",
+          "explanation": "Укр. «лужко» ✗ — ł brzmi jak krótkie w."
+        },
+        {
+          "id": "g4-8",
+          "text": "Kraków: ó = ___",
+          "options": [
+            "u",
+            "o"
+          ],
+          "answer": "u",
+          "grammar_point": "kalki-uk",
+          "explanation": "Укр. «Краков» ✗ — ó brzmi jak u."
+        },
+        {
+          "id": "g4-9",
+          "text": "ciemno: ci = ___",
+          "options": [
+            "ć",
+            "c"
+          ],
+          "answer": "ć",
+          "grammar_point": "kalki-uk",
+          "explanation": "Przed samogłoską ci to ć: ćemno."
+        }
+      ]
+    }
+  ]
+}

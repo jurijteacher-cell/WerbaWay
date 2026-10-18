@@ -1,0 +1,275 @@
+{
+  "lesson_id": "pl-a0-02-glosk",
+  "exercise_type": "grammar-slides",
+  "title": "Miękkie głoski, ł i akcent",
+  "slides": [
+    {
+      "id": "s1",
+      "part": 1,
+      "section": "teoria",
+      "kind": "title",
+      "title": "Miękkie głoski i ł",
+      "subtitle": "Jak przeczytać cześć, źle i łóżko?",
+      "goal": "Po tej lekcji: przeczytasz ś, ć, ź, ń, dź i ł w słowach z lekcji."
+    },
+    {
+      "id": "s2",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Kreska = miękko",
+      "columns": [
+        "litera",
+        "po ukraińsku",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "ś",
+          "≈ сь",
+          "cze[[ś]]ć"
+        ],
+        [
+          "ć",
+          "≈ ць",
+          "cześ[[ć]]"
+        ],
+        [
+          "ź",
+          "≈ зь",
+          "[[ź]]le"
+        ],
+        [
+          "ń",
+          "нь",
+          "Pozna[[ń]]"
+        ],
+        [
+          "dź",
+          "≈ дзь",
+          "Łó[[dź]]"
+        ]
+      ],
+      "note": "Kreska nad literą: głoska miękka."
+    },
+    {
+      "id": "s3",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Ten sam dźwięk: si, ci, zi, ni, dzi",
+      "columns": [
+        "kreska",
+        "przed samogłoską",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "ś",
+          "si",
+          "o[[si]]edle"
+        ],
+        [
+          "ć",
+          "ci",
+          "[[ci]]emno"
+        ],
+        [
+          "ź",
+          "zi",
+          "[[zi]]mno"
+        ],
+        [
+          "ń",
+          "ni",
+          "mieszka[[ni]]e"
+        ],
+        [
+          "dź",
+          "dzi",
+          "[[dzi]]eń"
+        ]
+      ],
+      "note": "Przed samogłoską piszemy i, nie kreskę."
+    },
+    {
+      "id": "s4",
+      "part": 1,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Ł czy l?",
+      "left": {
+        "head": "ł",
+        "rule": "jak krótkie u albo w",
+        "examples": [
+          "[[ł]]óżko",
+          "D[[ł]]uga"
+        ]
+      },
+      "right": {
+        "head": "l",
+        "rule": "blisko ukraińskiego ль",
+        "examples": [
+          "bi[[l]]et",
+          "Zie[[l]]ińska"
+        ]
+      },
+      "note": "Dziś ł brzmi jak w w słowie „wow”."
+    },
+    {
+      "id": "s5",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "dz, dż, dź: trzy dźwięki",
+      "columns": [
+        "litery",
+        "po ukraińsku",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "dz",
+          "дз",
+          "[[dz]]wonek"
+        ],
+        [
+          "dż",
+          "дж",
+          "[[dż]]em"
+        ],
+        [
+          "dź, dzi",
+          "≈ дзь",
+          "Łó[[dź]], [[dzi]]eń"
+        ]
+      ],
+      "note": "Dz twardo, dż jak дж, dź miękko."
+    },
+    {
+      "id": "s6",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Powtórka: ó = u, rz = ż",
+      "columns": [
+        "dźwięk",
+        "litera",
+        "litera",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "у",
+          "u",
+          "ó",
+          "[[u]]lica, ł[[ó]]żko"
+        ],
+        [
+          "ж",
+          "ż",
+          "rz",
+          "łó[[ż]]ko, dob[[rz]]e"
+        ]
+      ],
+      "note": "Łóżko: ł, ó i ż w jednym słowie."
+    },
+    {
+      "id": "s7",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Akcent: zwykle przedostatnia sylaba",
+      "columns": [
+        "słowo",
+        "sylaby",
+        "akcent"
+      ],
+      "rows": [
+        [
+          "ulica",
+          "u-li-ca",
+          "[[li]]"
+        ],
+        [
+          "miasto",
+          "mia-sto",
+          "[[mia]]"
+        ],
+        [
+          "dobrze",
+          "do-brze",
+          "[[do]]"
+        ],
+        [
+          "łóżko",
+          "łóż-ko",
+          "[[łóż]]"
+        ],
+        [
+          "Zielińska",
+          "Zie-liń-ska",
+          "[[liń]]"
+        ]
+      ],
+      "note": "Mia, zie: jedna sylaba, nie dwie."
+    },
+    {
+      "id": "s8",
+      "part": 1,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "refers_to": "s3",
+      "title": "Uwaga: kiedy kreska, kiedy i",
+      "items": [
+        {
+          "rule": "si, ci, zi, ni + spółgłoska: i to samogłoska",
+          "example": "[[zi]]mno = ź + i",
+          "refers_to": "s3"
+        },
+        {
+          "rule": "na końcu słowa i przed spółgłoską: kreska",
+          "example": "cze[[ść]], Pozna[[ń]]",
+          "refers_to": "s3"
+        },
+        {
+          "rule": "ia, ie, io po spółgłosce: jedna sylaba",
+          "example": "[[mia]]-sto, Zie-[[liń]]-ska",
+          "refers_to": "s7"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "part": 1,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego",
+      "items": [
+        {
+          "uk": "ł = українське «л»",
+          "wrong": "łóżko jak «лужко»",
+          "right": "[[ł]]óżko jak «вужко»",
+          "why": "Ł brzmi jak krótkie w, jak ukraińskie в w słowie „вовк”."
+        },
+        {
+          "uk": "ó = українське «о»",
+          "wrong": "Kraków jak «Краков»",
+          "right": "Krak[[ó]]w jak «Кракув»",
+          "why": "Ó zawsze brzmi jak u."
+        },
+        {
+          "uk": "si = «сі», ci = «ці»",
+          "wrong": "ciemno jak «ці-емно»",
+          "right": "[[ci]]emno = ćemno",
+          "why": "Przed samogłoską ci to jedna głoska ć, i tylko zmiękcza."
+        }
+      ]
+    }
+  ]
+}

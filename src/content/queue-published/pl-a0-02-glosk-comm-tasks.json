@@ -1,0 +1,91 @@
+{
+  "lesson_id": "pl-a0-02-glosk",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: telefon i taksówka",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Gotowe zwroty są na karcie.",
+  "instruction_uk": "Переверни картку, прочитай ситуацію і розіграй розмову. Готові фрази є на картці.",
+  "estimated_minutes": 12,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "listen-then-play",
+      "front_title": "Pierwszy telefon",
+      "back_scenario": "Jesteś na dworcu. Dzwonisz pierwszy raz do właścicielki mieszkania. Przedstaw się i zapytaj o ulicę. Najpierw posłuchaj rozmowy Oleny, potem odegraj swoją: Twoje imię, inna ulica. Gotowe zwroty: „Halo, dzień dobry.” „Przepraszam, jestem …” „Ulica, proszę?” „Tak, dobrze.” „Dziękuję.”",
+      "back_checklist": [
+        "Powiedz „Dzień dobry” i przedstaw się: „Jestem …”.",
+        "Powiedz, że jesteś na dworcu.",
+        "Zapytaj o ulicę: „Ulica, proszę?”",
+        "Powtórz nazwę ulicy litera po literze.",
+        "Odpowiedz „Tak” albo „Nie” i podziękuj."
+      ],
+      "comm_group": "Rozmowa",
+      "model_dialogue": [
+        {
+          "speaker": "Pani Ewa",
+          "voice": "pl-PL-female",
+          "line": "Halo? Dzień dobry."
+        },
+        {
+          "speaker": "Olena",
+          "voice": "pl-PL-female",
+          "line": "Dzień dobry. Przepraszam, jestem Olena. Olena Kowalenko."
+        },
+        {
+          "speaker": "Pani Ewa",
+          "voice": "pl-PL-female",
+          "line": "Olena! Dzień dobry. Ewa Zielińska. Dworzec Kraków Główny?"
+        },
+        {
+          "speaker": "Olena",
+          "voice": "pl-PL-female",
+          "line": "Tak, dworzec. Pociąg i peron — dobrze. Ulica, proszę?"
+        },
+        {
+          "speaker": "Pani Ewa",
+          "voice": "pl-PL-female",
+          "line": "Ulica Długa. De, eł, u, gie, a."
+        },
+        {
+          "speaker": "Olena",
+          "voice": "pl-PL-female",
+          "line": "De, eł, u, gie, a. Długa. Dziękuję."
+        },
+        {
+          "speaker": "Pani Ewa",
+          "voice": "pl-PL-female",
+          "line": "Noc, miasto… Tramwaj? Nie. Taksówka — tak."
+        },
+        {
+          "speaker": "Olena",
+          "voice": "pl-PL-female",
+          "line": "Dobrze. Taksówka, ulica Długa."
+        },
+        {
+          "speaker": "Pani Ewa",
+          "voice": "pl-PL-female",
+          "line": "Tak. Łóżko, herbata, klucz — dobrze."
+        },
+        {
+          "speaker": "Olena",
+          "voice": "pl-PL-female",
+          "line": "Dziękuję! Dobranoc."
+        }
+      ],
+      "audio_url": "/audio/pl-a0-02-c1-dialog.mp3"
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Adres dla taksówkarza",
+      "back_scenario": "Wsiadasz do taksówki na dworcu. Taksówkarz nie zna ulicy. Powiedz adres i przeliteruj nazwę ulicy. Gotowe zwroty: „Dzień dobry. Osiedle, ulica Długa, proszę.” „De, eł, u, gie, a.” „Tak.” „Nie.” „Dziękuję.” Potem to samo z Twoją ulicą.",
+      "back_checklist": [
+        "Powiedz „Dzień dobry” i nazwę ulicy.",
+        "Przeliteruj nazwę ulicy litera po literze.",
+        "Powiedz miasto: „Mieszkam w Krakowie” albo Twoje miasto.",
+        "Odpowiedz taksówkarzowi: „Tak” albo „Nie”.",
+        "Podziękuj na końcu: „Dziękuję”."
+      ],
+      "comm_group": "Miasto i droga"
+    }
+  ]
+}
