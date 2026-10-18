@@ -1,0 +1,91 @@
+{
+  "lesson_id": "pl-a0-01-alfabet",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: w pociągu i na peronie",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Gotowe zwroty są na karcie.",
+  "instruction_uk": "Переверни картку, прочитай ситуацію і розіграй розмову. Готові фрази є на картці.",
+  "estimated_minutes": 10,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "listen-then-play",
+      "front_title": "Konduktor i Twoje nazwisko",
+      "back_scenario": "Jesteś w pociągu Wrocław — Kraków. Konduktor sprawdza bilet i pyta o imię i nazwisko. Najpierw posłuchaj rozmowy Oleny, potem odegraj swoją: Twoje imię, Twoje nazwisko. Gotowe zwroty: „Dzień dobry.” „Przepraszam.” „Dziękuję.” „Kowalenko: ka, o, wu, a, el, e, en, ka, o.”",
+      "back_checklist": [
+        "Powiedz konduktorowi „Dzień dobry” i pokaż bilet.",
+        "Powiedz imię i nazwisko.",
+        "Przeliteruj nazwisko: litera po literze.",
+        "Przeliteruj imię.",
+        "Podziękuj: „Dziękuję”."
+      ],
+      "comm_group": "W pociągu",
+      "model_dialogue": [
+        {
+          "speaker": "Konduktor",
+          "voice": "pl-PL-male",
+          "line": "Dzień dobry. Bilet?"
+        },
+        {
+          "speaker": "Olena",
+          "voice": "pl-PL-female",
+          "line": "Dzień dobry. Bilet: Wrocław — Kraków."
+        },
+        {
+          "speaker": "Konduktor",
+          "voice": "pl-PL-male",
+          "line": "Dziękuję. Imię i nazwisko?"
+        },
+        {
+          "speaker": "Olena",
+          "voice": "pl-PL-female",
+          "line": "Olena Kowalenko."
+        },
+        {
+          "speaker": "Konduktor",
+          "voice": "pl-PL-male",
+          "line": "Przepraszam… Kowalenko?"
+        },
+        {
+          "speaker": "Olena",
+          "voice": "pl-PL-female",
+          "line": "Kowalenko: ka, o, wu, a, el, e, en, ka, o."
+        },
+        {
+          "speaker": "Konduktor",
+          "voice": "pl-PL-male",
+          "line": "Ka, o, wu, a, el, e, en, ka, o. Dziękuję. Imię: Olena?"
+        },
+        {
+          "speaker": "Olena",
+          "voice": "pl-PL-female",
+          "line": "Olena: o, el, e, en, a."
+        },
+        {
+          "speaker": "Konduktor",
+          "voice": "pl-PL-male",
+          "line": "Dziękuję. Wagon, miejsce, bilet: Kraków Główny."
+        },
+        {
+          "speaker": "Olena",
+          "voice": "pl-PL-female",
+          "line": "Dziękuję."
+        }
+      ],
+      "audio_url": "/audio/pl-a0-01-c1-dialog.mp3"
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "To pociąg do Krakowa?",
+      "back_scenario": "Dworzec, peron, pociąg. Nie wiesz, czy to pociąg do Krakowa. Zapytaj pasażera albo konduktora. Gotowe zwroty: „Przepraszam, to pociąg do Krakowa?” „Peron? Stacja?” „Dziękuję.”",
+      "back_checklist": [
+        "Powiedz „Przepraszam”.",
+        "Zapytaj: „To pociąg do Krakowa?”",
+        "Zapytaj o peron i stację: „Peron? Stacja Kraków Główny?”",
+        "Pokaż bilet z kasy.",
+        "Podziękuj: „Dziękuję”."
+      ],
+      "comm_group": "Na dworcu"
+    }
+  ]
+}

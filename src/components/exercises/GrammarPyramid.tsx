@@ -49,7 +49,8 @@ export function GrammarPyramid({ data, blockIds }: Props) {
   const key = (id: number | string) => `${level.level}-${id}`;
 
   const applyCheck = (k: string, given: string, expected: string, accept?: string[]) => {
-    const result = answersMatch(given, expected, accept);
+    const mode = level.diacritics === 'strict' ? 'strict' : 'lenient';
+    const result = answersMatch(given, expected, accept, mode);
     setFeedback((f) => ({ ...f, [k]: result.ok }));
     setHints((h) => ({ ...h, [k]: result.hint }));
     if (!result.ok) {
@@ -77,12 +78,22 @@ export function GrammarPyramid({ data, blockIds }: Props) {
         <p className="nb-eyebrow">{data.eyebrow ?? 'gramatyka'}</p>
         <h1>{data.title}</h1>
         {data.instructions ? <p>{data.instructions}</p> : null}
+        {data.instructions_uk ? (
+          <p className="nb-instruction-uk" style={{ fontSize: '0.9em', opacity: 0.85 }}>
+            {data.instructions_uk}
+          </p>
+        ) : null}
         {!single ? (
           <p className="nb-note">
             Poziom {level.level}: {level.name.replace(/^\d+[\.\)]\s*/, '')}
           </p>
         ) : null}
         {level.instruction ? <p>{level.instruction}</p> : null}
+        {level.instruction_uk ? (
+          <p className="nb-instruction-uk" style={{ fontSize: '0.9em', opacity: 0.85 }}>
+            {level.instruction_uk}
+          </p>
+        ) : null}
       </header>
 
       {!single ? (

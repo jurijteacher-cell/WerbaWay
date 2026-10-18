@@ -1,0 +1,184 @@
+{
+  "lesson_id": "pl-a0-01-alfabet",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: pisownia i akcent",
+  "instruction": "Trzy bloki do zrobienia w domu. Shadowing i pisanie znajdziesz na stronie lekcji.",
+  "instruction_uk": "Три блоки для дому. Shadowing і письмове завдання є на сторінці уроку.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "hw1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Jak to napisać?",
+      "diacritics": "strict",
+      "instruction": "Nowe słowa. Wybierz literę i przeczytaj słowo na głos.",
+      "instruction_uk": "Нові слова. Вибери літеру й прочитай слово вголос.",
+      "items": [
+        {
+          "id": "hw1-1",
+          "text": "g___ra",
+          "options": [
+            "ó",
+            "u"
+          ],
+          "answer": "ó",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "hw1-2",
+          "text": "mo___e",
+          "options": [
+            "rz",
+            "ż"
+          ],
+          "answer": "rz",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "hw1-3",
+          "text": "___leb",
+          "options": [
+            "ch",
+            "h"
+          ],
+          "answer": "ch",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "hw1-4",
+          "text": "___otel",
+          "options": [
+            "h",
+            "ch"
+          ],
+          "answer": "h",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "hw1-5",
+          "text": "ksi___żka",
+          "options": [
+            "ą",
+            "o"
+          ],
+          "answer": "ą",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "hw1-6",
+          "text": "pi___kny",
+          "options": [
+            "ę",
+            "e"
+          ],
+          "answer": "ę",
+          "grammar_point": "pisownia"
+        }
+      ]
+    },
+    {
+      "block_id": "hw2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Gdzie jest akcent?",
+      "instruction": "Przeczytaj słowo na głos i wybierz sylabę z akcentem.",
+      "instruction_uk": "Прочитай слово вголос і вибери наголошений склад.",
+      "items": [
+        {
+          "id": "hw2-1",
+          "text": "ko-le-ga → ___",
+          "options": [
+            "ko",
+            "le",
+            "ga"
+          ],
+          "answer": "le",
+          "grammar_point": "akcent"
+        },
+        {
+          "id": "hw2-2",
+          "text": "a-pte-ka → ___",
+          "options": [
+            "a",
+            "pte",
+            "ka"
+          ],
+          "answer": "pte",
+          "grammar_point": "akcent"
+        },
+        {
+          "id": "hw2-3",
+          "text": "te-le-fon → ___",
+          "options": [
+            "te",
+            "le",
+            "fon"
+          ],
+          "answer": "le",
+          "grammar_point": "akcent"
+        },
+        {
+          "id": "hw2-4",
+          "text": "o-kno → ___",
+          "options": [
+            "o",
+            "kno"
+          ],
+          "answer": "o",
+          "grammar_point": "akcent"
+        },
+        {
+          "id": "hw2-5",
+          "text": "fi-zy-ka → ___",
+          "options": [
+            "fi",
+            "zy",
+            "ka"
+          ],
+          "answer": "fi",
+          "grammar_point": "akcent",
+          "explanation": "Słowa na -yka: trzecia sylaba od końca."
+        }
+      ]
+    },
+    {
+      "block_id": "hw3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Napisz z ogonkami",
+      "diacritics": "strict",
+      "instruction": "Słowo jest bez ogonków i kresek. Napisz je dobrze.",
+      "instruction_uk": "Слово написане без «хвостиків» і рисок. Напиши його правильно.",
+      "items": [
+        {
+          "id": "hw3-1",
+          "text": "zolty → ___",
+          "answer": "żółty",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "hw3-2",
+          "text": "maz → ___",
+          "answer": "mąż",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "hw3-3",
+          "text": "wegiel → ___",
+          "answer": "węgiel",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "hw3-4",
+          "text": "zuraw → ___",
+          "answer": "żuraw",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "hw3-5",
+          "text": "jezyk → ___",
+          "answer": "język",
+          "grammar_point": "pisownia"
+        }
+      ]
+    }
+  ]
+}

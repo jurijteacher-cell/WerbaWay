@@ -22,12 +22,20 @@ export function stripDiacritics(s: string) {
 
 export type ItemState = 'idle' | 'correct' | 'wrong' | 'correct-no-diacritics';
 
-export function answersMatch(given: string, expected: string, accept?: string[]) {
+export function answersMatch(
+  given: string,
+  expected: string,
+  accept?: string[],
+  diacritics: 'strict' | 'lenient' = 'lenient'
+) {
   const g = normalizeAnswer(given);
   const pool = [expected, ...(accept ?? [])].map(normalizeAnswer);
   if (!g) return { ok: false as const, hint: null, state: 'wrong' as ItemState };
   if (pool.includes(g)) return { ok: true as const, hint: null, state: 'correct' as ItemState };
   if (pool.some((a) => stripDiacritics(a) === stripDiacritics(g))) {
+    if (diacritics === 'strict') {
+      return { ok: false as const, hint: null, state: 'wrong' as ItemState };
+    }
     const withMarks = [expected, ...(accept ?? [])].find(
       (a) => stripDiacritics(a) === stripDiacritics(g)
     );

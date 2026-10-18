@@ -1,0 +1,328 @@
+{
+  "lesson_id": "pl-a0-01-alfabet",
+  "exercise_type": "fill-in-blank",
+  "title": "Litery, dźwięki i akcent",
+  "instruction": "Cztery bloki po prezentacji: litery, miasta, pisownia, akcent i pułapki.",
+  "instruction_uk": "Чотири блоки після презентації: літери, міста, правопис, наголос і пастки.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "1. Litera i słowo",
+      "instruction": "Połącz literę ze słowem. Potem przeczytaj słowo na głos.",
+      "instruction_uk": "З'єднай літеру зі словом. Потім прочитай слово вголос.",
+      "covers_slides": [
+        "s2",
+        "s3"
+      ],
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "y",
+          "right": "dobry",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g1-2",
+          "left": "h",
+          "right": "herbata",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g1-3",
+          "left": "szcz",
+          "right": "Szczecin",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g1-4",
+          "left": "rz",
+          "right": "dworzec",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g1-5",
+          "left": "ó",
+          "right": "Kraków",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g1-6",
+          "left": "ą",
+          "right": "pociąg",
+          "grammar_point": "wymowa-glosek"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "drag-and-drop",
+      "title": "2. Miasta na mapie",
+      "instruction": "Nauczyciel czyta nazwę miasta. Przeciągnij brakujące litery. Dwie karteczki w banku nigdzie nie pasują.",
+      "instruction_uk": "Викладач читає назву міста. Перетягни літери, яких бракує. Дві картки в банку нікуди не підходять.",
+      "covers_slides": [
+        "s3"
+      ],
+      "bank": [
+        "Szcz",
+        "sz",
+        "Cz",
+        "rz",
+        "Ch",
+        "dz",
+        "cz"
+      ],
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "___ecin",
+          "answer": "Szcz",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g2-2",
+          "text": "Rze___ów",
+          "answer": "sz",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g2-3",
+          "text": "___ęstochowa",
+          "answer": "Cz",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g2-4",
+          "text": "Cho___ów",
+          "answer": "rz",
+          "grammar_point": "wymowa-glosek"
+        },
+        {
+          "id": "g2-5",
+          "text": "___ełm",
+          "answer": "Ch",
+          "grammar_point": "wymowa-glosek"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Jak to napisać?",
+      "diacritics": "strict",
+      "instruction": "Brzmi tak samo, piszemy inaczej. Wybierz literę.",
+      "instruction_uk": "Звучить однаково, пишемо по-різному. Вибери літеру.",
+      "covers_slides": [
+        "s4",
+        "s5"
+      ],
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Krak___w",
+          "options": [
+            "ó",
+            "u"
+          ],
+          "answer": "ó",
+          "grammar_point": "pisownia",
+          "explanation": "Ó i u brzmią tak samo. Kraków piszemy przez ó."
+        },
+        {
+          "id": "g3-2",
+          "text": "dwo___ec",
+          "options": [
+            "rz",
+            "ż"
+          ],
+          "answer": "rz",
+          "grammar_point": "pisownia",
+          "explanation": "Rz i ż brzmią tak samo. Dworzec piszemy przez rz."
+        },
+        {
+          "id": "g3-3",
+          "text": "pasa___er",
+          "options": [
+            "ż",
+            "rz"
+          ],
+          "answer": "ż",
+          "grammar_point": "pisownia",
+          "explanation": "Pasażer piszemy przez ż."
+        },
+        {
+          "id": "g3-4",
+          "text": "___erbata",
+          "options": [
+            "h",
+            "ch"
+          ],
+          "answer": "h",
+          "grammar_point": "pisownia",
+          "explanation": "Herbata piszemy przez h."
+        },
+        {
+          "id": "g3-5",
+          "text": "___aos",
+          "options": [
+            "ch",
+            "h"
+          ],
+          "answer": "ch",
+          "grammar_point": "pisownia",
+          "explanation": "Chaos piszemy przez ch."
+        },
+        {
+          "id": "g3-6",
+          "text": "poci___g",
+          "options": [
+            "ą",
+            "ę"
+          ],
+          "answer": "ą",
+          "grammar_point": "pisownia",
+          "explanation": "Pociąg: ą, jak o przez nos."
+        },
+        {
+          "id": "g3-7",
+          "text": "Cz___stochowa",
+          "options": [
+            "ę",
+            "ą"
+          ],
+          "answer": "ę",
+          "grammar_point": "pisownia",
+          "explanation": "Częstochowa: ę, jak e przez nos."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Akcent i pułapki",
+      "instruction": "Wybierz sylabę z akcentem. W trzech ostatnich zadaniach wybierz dobry dźwięk.",
+      "instruction_uk": "Вибери наголошений склад. У трьох останніх завданнях вибери правильний звук.",
+      "covers_slides": [
+        "s6",
+        "s7",
+        "s8"
+      ],
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "bi-let → ___",
+          "options": [
+            "bi",
+            "let"
+          ],
+          "answer": "bi",
+          "grammar_point": "akcent"
+        },
+        {
+          "id": "g4-2",
+          "text": "pe-ron → ___",
+          "options": [
+            "pe",
+            "ron"
+          ],
+          "answer": "pe",
+          "grammar_point": "akcent"
+        },
+        {
+          "id": "g4-3",
+          "text": "sta-cja → ___",
+          "options": [
+            "sta",
+            "cja"
+          ],
+          "answer": "sta",
+          "grammar_point": "akcent"
+        },
+        {
+          "id": "g4-4",
+          "text": "prze-pra-szam → ___",
+          "options": [
+            "prze",
+            "pra",
+            "szam"
+          ],
+          "answer": "pra",
+          "grammar_point": "akcent",
+          "explanation": "Druga sylaba od końca: pra."
+        },
+        {
+          "id": "g4-5",
+          "text": "Szcze-cin → ___",
+          "options": [
+            "Szcze",
+            "cin"
+          ],
+          "answer": "Szcze",
+          "grammar_point": "akcent"
+        },
+        {
+          "id": "g4-6",
+          "text": "ma-te-ma-ty-ka → ___",
+          "options": [
+            "te",
+            "ma",
+            "ty"
+          ],
+          "answer": "ma",
+          "grammar_point": "akcent",
+          "explanation": "Słowa na -yka: trzecia sylaba od końca — matemAtyka."
+        },
+        {
+          "id": "g4-7",
+          "text": "mu-zy-ka → ___",
+          "options": [
+            "mu",
+            "zy",
+            "ka"
+          ],
+          "answer": "mu",
+          "grammar_point": "akcent",
+          "explanation": "Słowa na -yka: trzecia sylaba od końca — mUzyka."
+        },
+        {
+          "id": "g4-8",
+          "text": "herbata: h = ___",
+          "options": [
+            "ch",
+            "g"
+          ],
+          "answer": "ch",
+          "grammar_point": "kalki-uk",
+          "explanation": "Укр. «гербата» ✗ — h brzmi jak ch, jak ukraińskie х."
+        },
+        {
+          "id": "g4-9",
+          "text": "dworzec: rz = ___",
+          "options": [
+            "ż",
+            "r"
+          ],
+          "answer": "ż",
+          "grammar_point": "kalki-uk",
+          "explanation": "Укр. «дворзец» ✗ — rz to jedna głoska, jak ż."
+        },
+        {
+          "id": "g4-10",
+          "text": "dziękuję ≈ dzięku___",
+          "options": [
+            "je",
+            "jen"
+          ],
+          "answer": "je",
+          "grammar_point": "kalki-uk",
+          "explanation": "Na końcu słowa ę brzmi prawie jak e."
+        }
+      ]
+    }
+  ]
+}

@@ -87,6 +87,7 @@ function normalizeFlip(raw: any): FlipTaskExercise {
     exercise_type: 'flip-task',
     title: raw.title,
     instructions: raw.instructions ?? raw.instruction,
+    instructions_uk: raw.instructions_uk ?? raw.instruction_uk,
     items: (raw.items ?? []).map(
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       (it: any, i: number) => ({
@@ -177,6 +178,7 @@ function normalizeGrammar(raw: any): GrammarPyramidExercise {
     exercise_type: raw.exercise_type,
     title: raw.title,
     instructions: raw.instructions ?? raw.instruction,
+    instructions_uk: raw.instructions_uk ?? raw.instruction_uk,
     eyebrow: raw.eyebrow,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     levels: blocks.map((b: any, i: number) => {
@@ -206,6 +208,8 @@ function normalizeGrammar(raw: any): GrammarPyramidExercise {
         name: b.title ?? `Poziom ${i + 1}`,
         task_type: taskType,
         instruction: b.instruction,
+        instruction_uk: b.instruction_uk,
+        diacritics: b.diacritics === 'strict' ? 'strict' : undefined,
         block_id: b.block_id,
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         items: (b.items ?? []).map((it: any, j: number) => {
@@ -278,6 +282,7 @@ function normalizeHw(raw: any): HomeworkExercise {
       exercise_type: raw.exercise_type,
       title: raw.title,
       instructions: raw.instructions ?? raw.instruction,
+      instructions_uk: raw.instructions_uk ?? raw.instruction_uk,
       eyebrow: raw.eyebrow,
       levels: grammar.levels,
     };
@@ -287,6 +292,7 @@ function normalizeHw(raw: any): HomeworkExercise {
     exercise_type: raw.exercise_type,
     title: raw.title,
     instructions: raw.instructions ?? raw.instruction,
+    instructions_uk: raw.instructions_uk ?? raw.instruction_uk,
     vocab_review: raw.vocab_review,
     video: raw.video,
     grammar_exercises: raw.grammar_exercises,

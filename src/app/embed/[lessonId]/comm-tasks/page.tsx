@@ -12,6 +12,7 @@ export default function EmbedCommTasksPage({ params }: Props) {
     <FlipTask
       title={commTasks.title}
       instructions={commTasks.instructions}
+      instructionsUk={commTasks.instructions_uk}
       items={commTasks.items}
     />
   );

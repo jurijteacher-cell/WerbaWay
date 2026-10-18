@@ -1,257 +1,36 @@
 {
   "lesson_id": "pl-a0-01-alfabet",
-  "exercise_type": "grammar-slides",
-  "title": "Alfabet, dźwięki i akcent",
   "slides": [
     {
       "id": "s1",
-      "part": 1,
-      "section": "teoria",
-      "kind": "title",
-      "title": "Alfabet i czytanie",
-      "subtitle": "Jak przeczytać Szczecin, Wrocław i Szczebrzeszyn?",
-      "goal": "Po tej lekcji: przeczytasz każde słowo z lekcji. Ł, ś, ć, ź, ń — na lekcji 2.",
       "teacher_note": "Покажи три назви з розминки й нагадай, що учні їх уже пробували прочитати. Скажи, що ł і м'які ś, ć, ź, ń будуть на наступному уроці, сьогодні їх не пояснюємо."
     },
     {
       "id": "s2",
-      "part": 1,
-      "section": "teoria",
-      "kind": "table",
-      "reveal": "row",
-      "title": "Alfabet: 32 litery",
-      "columns": [
-        "litera",
-        "po ukraińsku",
-        "przykład"
-      ],
-      "rows": [
-        [
-          "c",
-          "ц",
-          "sta[[c]]ja"
-        ],
-        [
-          "w",
-          "в",
-          "[[W]]rocław"
-        ],
-        [
-          "j",
-          "й",
-          "stac[[j]]a"
-        ],
-        [
-          "y",
-          "и",
-          "dobr[[y]]"
-        ],
-        [
-          "h",
-          "х",
-          "[[h]]erbata"
-        ]
-      ],
-      "note": "Q, v, x — tylko w obcych słowach.",
       "teacher_note": "Це літери, які українці читають неправильно через англійську: c — це ц, не к; w — в; y — и (а i — як українське і). H — це х, а не українське г: «хербата»."
     },
     {
       "id": "s3",
-      "part": 1,
-      "section": "teoria",
-      "kind": "table",
-      "reveal": "row",
-      "title": "Dwie litery, jeden dźwięk",
-      "columns": [
-        "litery",
-        "po ukraińsku",
-        "przykład"
-      ],
-      "rows": [
-        [
-          "sz",
-          "ш",
-          "przepra[[sz]]am"
-        ],
-        [
-          "cz",
-          "ч",
-          "[[Cz]]ęstochowa"
-        ],
-        [
-          "szcz",
-          "щ",
-          "[[Szcz]]ecin"
-        ],
-        [
-          "rz",
-          "ж",
-          "dwo[[rz]]ec"
-        ],
-        [
-          "dz",
-          "дз",
-          "[[dz]]wonek"
-        ]
-      ],
-      "note": "Szcz = sz + cz, jak ukraińskie щ.",
       "teacher_note": "Читай рядок і проси повторити хором. На szcz зупинись: Szczecin = «Щецін», не «Шчецін». Ch = х — на слайді 5. Dz у dzwonek — тверде «дз», м'яке dzi буде на уроці 2."
     },
     {
       "id": "s4",
-      "part": 1,
-      "section": "teoria",
-      "kind": "compare",
-      "title": "Ogonki: ą i ę",
-      "left": {
-        "head": "ą",
-        "rule": "o przez nos",
-        "examples": [
-          "poci[[ą]]g",
-          "chrz[[ą]]szcz"
-        ]
-      },
-      "right": {
-        "head": "ę",
-        "rule": "e przez nos",
-        "examples": [
-          "Cz[[ę]]stochowa",
-          "r[[ę]]ka"
-        ]
-      },
-      "note": "Ą to nie u. Ę to nie je.",
       "teacher_note": "Ą — носове о, ę — носове е, як у французькій. Українці часто читають ą як «у»: «поцюг» — виправляй одразу. Перед g, k ą звучить як «он»: pociąg ≈ «по-чьонк»."
     },
     {
       "id": "s5",
-      "part": 1,
-      "section": "teoria",
-      "kind": "table",
-      "reveal": "row",
-      "title": "Dwa zapisy, jeden dźwięk",
-      "columns": [
-        "dźwięk",
-        "litera",
-        "litera",
-        "przykład"
-      ],
-      "rows": [
-        [
-          "у",
-          "u",
-          "ó",
-          "Krak[[ó]]w"
-        ],
-        [
-          "ж",
-          "ż",
-          "rz",
-          "pasa[[ż]]er, dwo[[rz]]ec"
-        ],
-        [
-          "х",
-          "h",
-          "ch",
-          "[[h]]erbata, [[ch]]aos"
-        ]
-      ],
-      "note": "Słyszysz u — piszesz u albo ó. Słowo trzeba zapamiętać.",
       "teacher_note": "Три «двійники»: на слух їх не розрізнити, тільки на письмі. Ó — це у, а не о: Kraków = «Кракув». Правило, коли писати ó чи rz, сьогодні не даємо: слова запам'ятовуємо."
     },
     {
       "id": "s6",
-      "part": 1,
-      "section": "teoria",
-      "kind": "table",
-      "reveal": "row",
-      "title": "Akcent: zwykle przedostatnia sylaba",
-      "columns": [
-        "słowo",
-        "sylaby",
-        "akcent"
-      ],
-      "rows": [
-        [
-          "bilet",
-          "bi-let",
-          "[[bi]]"
-        ],
-        [
-          "dworzec",
-          "dwo-rzec",
-          "[[dwo]]"
-        ],
-        [
-          "Kraków",
-          "Kra-ków",
-          "[[Kra]]"
-        ],
-        [
-          "przepraszam",
-          "prze-pra-szam",
-          "[[pra]]"
-        ],
-        [
-          "dziękuję",
-          "dzię-ku-ję",
-          "[[ku]]"
-        ]
-      ],
-      "note": "Licz sylaby od końca: druga sylaba to akcent.",
       "teacher_note": "Плескай у долоні на кожен склад і сильніше — на наголошений. В українській наголос рухомий, у польській майже завжди на передостанньому складі: «перепрАшам», «дзєнькУє»."
     },
     {
       "id": "s7",
-      "part": 1,
-      "section": "wyjatki",
-      "kind": "exceptions",
-      "refers_to": "s6",
-      "title": "Uwaga: inaczej niż zwykle",
-      "items": [
-        {
-          "rule": "-yka, -ika: trzecia sylaba od końca",
-          "example": "mate[[ma]]tyka, [[mu]]zyka",
-          "refers_to": "s6"
-        },
-        {
-          "rule": "uniwersytet: starannie trzecia od końca",
-          "example": "uni[[wer]]sytet",
-          "refers_to": "s6"
-        },
-        {
-          "rule": "rz po p, t, k, ch brzmi jak sz",
-          "example": "p[[rz]]epraszam, ch[[rz]]ąszcz",
-          "refers_to": "s3"
-        }
-      ],
       "teacher_note": "Matematyka, muzyka — наголос як в українській: «матемАтика», «мУзика». Uniwersytet: старанна вимова uniWERsytet, у розмові чути й uniwerSYtet (обидві форми допускає PWN). Rz після p, t, k, ch оглушується: przepraszam = «пшепрашам»."
     },
     {
       "id": "s8",
-      "part": 1,
-      "section": "pulapki",
-      "kind": "traps",
-      "title": "Pułapki z ukraińskiego",
-      "items": [
-        {
-          "uk": "читаю h як українське «г»",
-          "wrong": "herbata jak «гербата»",
-          "right": "[[h]]erbata jak «хербата»",
-          "why": "H i ch to ten sam dźwięk, jak ukraińskie х."
-        },
-        {
-          "uk": "rz — це «р» + «з»",
-          "wrong": "dworzec jak «дворзец»",
-          "right": "dwo[[rz]]ec jak «двожец»",
-          "why": "Rz to jedna głoska, brzmi jak ż."
-        },
-        {
-          "uk": "ę в кінці — «ен»",
-          "wrong": "dziękujen",
-          "right": "dziękuj[[ę]] ≈ dziękuje",
-          "why": "Na końcu słowa ę brzmi prawie jak e, ale piszemy ę."
-        }
-      ],
       "teacher_note": "Три пастки з карти курсу. Читай українську форму, пауза, учні самі кажуть, як правильно. «Гербата» і «дворзец» — найчастіші помилки першого заняття."
     }
   ]

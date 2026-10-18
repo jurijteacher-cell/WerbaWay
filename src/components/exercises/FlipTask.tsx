@@ -22,6 +22,7 @@ type Item = {
 type Props = {
   title: string;
   instructions?: string;
+  instructionsUk?: string;
   items: Item[];
   /** Optional audio under a specific card (e.g. c1) */
   underCardAudio?: { itemId: string; src?: string };
@@ -45,7 +46,7 @@ function DialogueScript({ lines }: { lines: DialogueLine[] }) {
   );
 }
 
-export function FlipTask({ title, instructions, items, underCardAudio }: Props) {
+export function FlipTask({ title, instructions, instructionsUk, items, underCardAudio }: Props) {
   const [flipped, setFlipped] = useState<Record<string, boolean>>({});
 
   return (
@@ -54,6 +55,11 @@ export function FlipTask({ title, instructions, items, underCardAudio }: Props) 
         <p className="nb-eyebrow">zadania komunikacyjne</p>
         <h1>{title}</h1>
         {instructions ? <p>{instructions}</p> : null}
+        {instructionsUk ? (
+          <p className="nb-instruction-uk" style={{ fontSize: '0.9em', opacity: 0.85 }}>
+            {instructionsUk}
+          </p>
+        ) : null}
       </header>
 
       <div className="nb-grid">
@@ -61,6 +67,9 @@ export function FlipTask({ title, instructions, items, underCardAudio }: Props) 
           const key = String(item.id);
           const isBack = !!flipped[key];
           const isReadThenPlay = item.mode === 'read-then-play';
+          const showDialogue =
+            (isReadThenPlay || item.mode === 'listen-then-play') &&
+            (item.model_dialogue?.length ?? 0) > 0;
           const dialogue = item.model_dialogue ?? [];
           const audioSrc =
             underCardAudio?.itemId === key
@@ -98,11 +107,9 @@ export function FlipTask({ title, instructions, items, underCardAudio }: Props) 
                   )}
                 </button>
               </div>
-              {isReadThenPlay && dialogue.length > 0 ? (
-                <DialogueScript lines={dialogue} />
-              ) : null}
+              {showDialogue ? <DialogueScript lines={dialogue} /> : null}
               {!isReadThenPlay && audioSrc ? (
-                <AudioCassette src={audioSrc} defaultSpeed={0.85} />
+                <AudioCassette src={audioSrc} defaultSpeed={0.75} />
               ) : null}
             </div>
           );

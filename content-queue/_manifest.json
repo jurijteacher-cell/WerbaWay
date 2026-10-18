@@ -497,6 +497,7 @@
       "notes": "no TTS; read-then-play; manual Unsplash URLs"
     },
     {
+<<<<<<< HEAD
       "lesson_id": "pl-prawko-01-polecenia-egzaminatora",
       "module": "pl-prawko",
       "title": "Egzamin na prawo jazdy: test i polecenia egzaminatora",
@@ -629,6 +630,35 @@
       "course_order": 7,
       "quizlet_set_id": "1223751186",
       "images": "missing (no UNSPLASH_ACCESS_KEY)"
+=======
+      "lesson_id": "pl-a0-01-alfabet",
+      "module": "pl-a1",
+      "title": "Alfabet i czytanie",
+      "course_order": 1,
+      "curriculum_id": "0.1",
+      "published_at": "2026-10-18T23:12:38Z",
+      "quizlet_set_id": "1223959934",
+      "embeds": {
+        "comm_tasks": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/comm-tasks",
+        "grammar": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/grammar?blocks=g1-g4",
+        "hw": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/hw",
+        "slides": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/slides?part=1",
+        "quizlet": "https://quizlet.com/1223959934/flashcards/embed"
+      },
+      "images": {
+        "header": "missing",
+        "img1": "missing"
+      },
+      "audio": [
+        "pl-a0-01-czytanie",
+        "pl-a0-01-c1-dialog"
+      ],
+      "status": "published",
+      "notion_parent_id": "3e596e03-c7c8-815b-be7b-d031abb6a836",
+      "check_lesson_package": "traps 3 (known A0 WARN); vocab/czytanie WARN ranges",
+      "notion_page_id": "3fd96e03-c7c8-81c0-bb80-e16198157eaa",
+      "notion_page_url": "https://app.notion.com/p/3fd96e03c7c881c0bb80e16198157eaa"
+>>>>>>> b550c5b (content: pl-a0-01-alfabet)
     }
   ]
 }

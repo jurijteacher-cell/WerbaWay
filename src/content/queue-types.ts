@@ -58,6 +58,7 @@ export type FlipTaskExercise = {
   exercise_type: 'flip-task';
   title: string;
   instructions?: string;
+  instructions_uk?: string;
   items: {
     id: number | string;
     mode?: 'listen-then-play' | 'read-then-play' | string;
@@ -86,6 +87,7 @@ export type GrammarPyramidExercise = {
   exercise_type: string;
   title: string;
   instructions?: string;
+  instructions_uk?: string;
   /** Override notebook eyebrow (default: gramatyka) */
   eyebrow?: string;
   levels: {
@@ -93,7 +95,9 @@ export type GrammarPyramidExercise = {
     name: string;
     task_type: string;
     instruction?: string;
+    instruction_uk?: string;
     block_id?: string;
+    diacritics?: 'strict' | 'lenient';
     items: GrammarPyramidItem[];
   }[];
 };
@@ -103,6 +107,7 @@ export type HomeworkExercise = {
   exercise_type: string;
   title: string;
   instructions?: string;
+  instructions_uk?: string;
   eyebrow?: string;
   /** Legacy pl-preg shape */
   vocab_review?: string;
