@@ -1,0 +1,121 @@
+{
+  "lesson_id": "pl-b1-group-07-dojazd",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: bilety, droga i spóźnienia",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Skończ dopiero wtedy, gdy masz wszystkie informacje z listy.",
+  "estimated_minutes": 22,
+  "items": [
+    {
+      "id": "c1",
+      "front_title": "Bilet i połączenie",
+      "back_scenario": "Za tydzień zaczynasz pracę w innej dzielnicy. Idziesz do punktu obsługi pasażera, żeby kupić bilet i zapytać o dojazd. Najpierw przeczytajcie przykładową rozmowę z podziałem na role, potem odegrajcie swoją.",
+      "back_checklist": [
+        "Zapytaj, jaki bilet jest dla Ciebie najlepszy: jednorazowy czy miesięczny.",
+        "Dowiedz się, czy bilet można mieć na karcie miejskiej i co trzeba przynieść.",
+        "Zapytaj, jak dojechać do pracy i gdzie jest przesiadka.",
+        "Zapytaj o rozkład jazdy: o której jedzie pierwszy i ostatni autobus.",
+        "Zapytaj, czy bilet trzeba skasować i co pokazać kontrolerowi."
+      ],
+      "comm_group": "W komunikacji miejskiej",
+      "mode": "read-then-play",
+      "model_dialogue": [
+        {
+          "speaker": "Pracownica",
+          "voice": "pl-PL-female",
+          "line": "Punkt obsługi pasażera, dzień dobry. W czym mogę pomóc?"
+        },
+        {
+          "speaker": "Pasażer",
+          "voice": "pl-PL-male",
+          "line": "Dzień dobry. Od poniedziałku zaczynam nową pracę w strefie przemysłowej i będę tam codziennie dojeżdżać z Osiedla Słonecznego. Jaki bilet będzie dla mnie najlepszy?"
+        },
+        {
+          "speaker": "Pracownica",
+          "voice": "pl-PL-female",
+          "line": "Jeśli jeździ pan codziennie, najlepszy będzie bilet miesięczny. Normalny kosztuje sto dziesięć złotych."
+        },
+        {
+          "speaker": "Pasażer",
+          "voice": "pl-PL-male",
+          "line": "A czy mogę mieć go na karcie miejskiej?"
+        },
+        {
+          "speaker": "Pracownica",
+          "voice": "pl-PL-female",
+          "line": "Tak. Kartę wyrobimy od ręki, potrzebuję tylko dokumentu ze zdjęciem."
+        },
+        {
+          "speaker": "Pasażer",
+          "voice": "pl-PL-male",
+          "line": "Świetnie. A jak najszybciej dojadę z osiedla do strefy przemysłowej?"
+        },
+        {
+          "speaker": "Pracownica",
+          "voice": "pl-PL-female",
+          "line": "Z pana osiedla jedzie autobus sto czterdzieści. Wysiada pan na pętli przy dworcu i przesiada się do tramwaju numer siedem."
+        },
+        {
+          "speaker": "Pasażer",
+          "voice": "pl-PL-male",
+          "line": "Ile trwa cała podróż?"
+        },
+        {
+          "speaker": "Pracownica",
+          "voice": "pl-PL-female",
+          "line": "Około czterdziestu minut. Ale w godzinach szczytu autobus często stoi w korku, więc lepiej wyjść z domu wcześniej."
+        },
+        {
+          "speaker": "Pasażer",
+          "voice": "pl-PL-male",
+          "line": "A czy jest jakieś połączenie bez przesiadki?"
+        },
+        {
+          "speaker": "Pracownica",
+          "voice": "pl-PL-female",
+          "line": "Jest autobus dwieście piętnaście, ale jeździ tylko rano, do dziewiątej. Po południu trzeba wracać z przesiadką."
+        },
+        {
+          "speaker": "Pasażer",
+          "voice": "pl-PL-male",
+          "line": "Dobrze. To poproszę kartę i bilet miesięczny od poniedziałku. I potwierdzenie zakupu, proszę."
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "front_title": "Jak do mnie dojechać?",
+      "back_scenario": "Kolega pierwszy raz przyjeżdża do Twojego miasta. Właśnie wysiadł z pociągu i dzwoni do Ciebie z dworca. Wytłumacz mu, jak dojechać do Twojego domu.",
+      "back_checklist": [
+        "Powiedz, czym ma jechać i gdzie jest przystanek — na przykład po drugiej stronie ulicy.",
+        "Wyjaśnij, gdzie ma wysiąść; uprzedź, jeśli to przystanek na żądanie.",
+        "Opisz drogę od przystanku: skrzyżowanie, rondo, przejście dla pieszych, skręcić, prosto.",
+        "Powiedz, co jest naprzeciwko Twojego domu.",
+        "Kolega powtarza drogę — sprawdź, czy dobrze zrozumiał."
+      ],
+      "comm_group": "Droga i kierunki"
+    },
+    {
+      "id": "c3",
+      "front_title": "Spóźnię się!",
+      "back_scenario": "Jest ósma dwadzieścia, a o dziewiątej masz ważne spotkanie. Autobus utknął w korku, bo na trasie jest objazd. Dzwonisz do koleżanki z pracy.",
+      "back_checklist": [
+        "Powiedz, gdzie jesteś i co się stało: korek, objazd, utrudnienia, tłok.",
+        "Powiedz, jakie jest opóźnienie i o której mniej więcej dojedziesz.",
+        "Poproś, żeby przełożyła spotkanie albo zaczęła bez Ciebie.",
+        "Powiedz, co zrobisz jutro, żeby zdążyć: wcześniej wyjdziesz, pojedziesz inną trasą, rowerem."
+      ],
+      "comm_group": "Utrudnienia w ruchu"
+    },
+    {
+      "id": "c4",
+      "front_title": "Moja droga do pracy",
+      "back_scenario": "Na spotkaniu zespołu każdy opowiada, jak dojeżdża do pracy. Teraz Twoja kolej — mów około 2 minut.",
+      "back_checklist": [
+        "Opowiedz, jak dojeżdżasz teraz: o której wychodzisz, czym jedziesz, gdzie się przesiadasz.",
+        "Powiedz, jak jeździłeś / jeździłaś do pracy albo szkoły kiedyś i co się zmieniło.",
+        "Opisz jeden dzień, kiedy coś poszło nie tak po drodze.",
+        "Powiedz, co w Twoim mieście trzeba zmienić: buspasy, ścieżki rowerowe, parkingi przesiadkowe."
+      ]
+    }
+  ]
+}
