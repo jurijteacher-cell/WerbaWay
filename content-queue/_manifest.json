@@ -655,7 +655,10 @@
       ],
       "tts_voices": {
         "czytanie": "pl-PL-ZofiaNeural",
-        "c1_dialog": ["pl-PL-MarekNeural", "pl-PL-ZofiaNeural"]
+        "c1_dialog": [
+          "pl-PL-MarekNeural",
+          "pl-PL-ZofiaNeural"
+        ]
       },
       "status": "published",
       "notion_parent_id": "3e596e03-c7c8-815b-be7b-d031abb6a836",
@@ -691,6 +694,28 @@
       "notion_page_id": "3fd96e03-c7c8-8176-87f5-f2cade6c5507",
       "notion_page_url": "https://app.notion.com/p/3fd96e03c7c8817687f5f2cade6c5507",
       "check_lesson_package": "traps 3 (known A0 WARN); vocab/czytanie/comm WARN ranges"
+    },
+    {
+      "lesson_id": "pl-a2-mow-04-jedzenie",
+      "module": "pl-a2-mow",
+      "title": "Poproszę pierogi! Jedzenie i restauracja",
+      "published_at": "2026-10-19T18:40:00Z",
+      "template": "light-60",
+      "embeds": {
+        "vocab": "https://werba-way.vercel.app/embed/pl-a2-mow-04-jedzenie/vocab",
+        "comm_tasks": "https://werba-way.vercel.app/embed/pl-a2-mow-04-jedzenie/comm-tasks",
+        "grammar": "https://werba-way.vercel.app/embed/pl-a2-mow-04-jedzenie/grammar",
+        "hw": "https://werba-way.vercel.app/embed/pl-a2-mow-04-jedzenie/hw",
+        "slides": "https://werba-way.vercel.app/embed/pl-a2-mow-04-jedzenie/slides?part=1"
+      },
+      "images": {
+        "header": "https://images.unsplash.com/photo-1777679715668-8d20edec5446?fm=jpg&q=80&w=1600&fit=max",
+        "img1": "https://images.unsplash.com/photo-1788603377815-fd9f7ed95fd7?fm=jpg&q=80&w=1600&fit=max"
+      },
+      "audio": [],
+      "status": "published",
+      "published_by": "claude (bez Cursora)",
+      "notion_parent_id": "3fa96e03-c7c8-819b-9ef1-eaa310055016"
     }
   ]
 }

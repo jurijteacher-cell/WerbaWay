@@ -1,0 +1,63 @@
+{
+  "lesson_id": "pl-a2-mow-04-jedzenie",
+  "exercise_type": "fill-in-blank",
+  "title": "Poproszę, nie jem, smakuje mi: ćwiczenia",
+  "instruction": "Trzy krótkie bloki. Na lekcji robimy blok 1, bloki 2 i 3 — jeśli zostanie czas albo w domu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "covers_slides": ["s2", "s3", "s8"],
+      "exercise_type": "fill-in-blank",
+      "title": "1. Poproszę… — biernik",
+      "instruction": "Wybierz poprawną odpowiedź.",
+      "items": [
+        {"id": "g1-1", "text": "Poproszę ___ pomidorową.", "options": ["zupa", "zupę"], "answer": "zupę", "grammar_point": "biernik-zamawianie"},
+        {"id": "g1-2", "text": "Poproszę jeszcze jedną ___.", "options": ["herbata", "herbatę", "herbaty"], "answer": "herbatę", "grammar_point": "biernik-zamawianie"},
+        {"id": "g1-3", "text": "Na deser biorę ___.", "options": ["szarlotka", "szarlotkę"], "answer": "szarlotkę", "grammar_point": "biernik-zamawianie"},
+        {"id": "g1-4", "text": "Zamawiam sałatkę i ___ pomarańczowy.", "options": ["sok", "soku"], "answer": "sok", "grammar_point": "biernik-zamawianie", "explanation": "Sok to rodzaj męski — w bierniku bez zmian."},
+        {"id": "g1-5", "text": "Poproszę kawę ___.", "options": ["czarna", "czarną"], "answer": "czarną", "grammar_point": "biernik-zamawianie", "explanation": "Przymiotnik też się zmienia: czarna kawa → czarną kawę."},
+        {"id": "g1-6", "text": "Na obiad zamówimy ___ ziemniaczane.", "options": ["placki", "placków"], "answer": "placki", "grammar_point": "biernik-zamawianie", "explanation": "Liczba mnoga rzeczy — w bierniku bez zmian."},
+        {"id": "g1-7", "text": "Dzień dobry, poproszę ___ z różą.", "options": ["pączek", "pączka"], "answer": "pączka", "grammar_point": "biernik-zamawianie", "explanation": "Wiele nazw jedzenia rodzaju męskiego ma w bierniku -a: pączka, banana, ogórka."},
+        {"id": "g1-8", "text": "Poproszę ___ i masło.", "options": ["chleb", "chleba"], "answer": "chleb", "grammar_point": "biernik-zamawianie", "explanation": "Chleb, ser, sok — w bierniku bez zmian. Chleba byłoby po trochę albo kawałek."}
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "covers_slides": ["s4", "s5"],
+      "exercise_type": "fill-in-blank",
+      "title": "2. Ile? i nie — dopełniacz",
+      "instruction": "Wpisz słowo z nawiasu w poprawnej formie.",
+      "items": [
+        {"id": "g2-1", "text": "Poproszę szklankę ___ (woda) bez gazu.", "answer": "wody", "grammar_point": "ilosc-dopelniacz"},
+        {"id": "g2-2", "text": "Do ciasta dodaj trochę ___ (cukier).", "answer": "cukru", "grammar_point": "ilosc-dopelniacz"},
+        {"id": "g2-3", "text": "Kupiłam na targu kilo ___ (jabłka).", "answer": "jabłek", "grammar_point": "ilosc-dopelniacz"},
+        {"id": "g2-4", "text": "Zjem jeszcze kawałek ___ (sernik).", "answer": "sernika", "grammar_point": "ilosc-dopelniacz"},
+        {"id": "g2-5", "text": "Herbata bez ___ (mleko), proszę.", "answer": "mleka", "grammar_point": "ilosc-dopelniacz"},
+        {"id": "g2-6", "text": "Mój mąż nie je ___ (ryba).", "answer": "ryby", "grammar_point": "przeczenie-dopelniacz"},
+        {"id": "g2-7", "text": "Przykro mi, nie ma już ___ (żurek).", "answer": "żurku", "grammar_point": "przeczenie-dopelniacz"},
+        {"id": "g2-8", "text": "Dziękuję, nie piję ___ (alkohol).", "answer": "alkoholu", "grammar_point": "przeczenie-dopelniacz"}
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "covers_slides": ["s6", "s7", "s9", "s10"],
+      "exercise_type": "fill-in-blank",
+      "title": "3. Smakuje, do picia i pułapki z ukraińskiego",
+      "instruction": "Wybierz poprawną odpowiedź.",
+      "items": [
+        {"id": "g3-1", "text": "Czy ___ ci ta zupa?", "options": ["smakuje", "smakują"], "answer": "smakuje", "grammar_point": "celownik-bezosobowe", "explanation": "Zupa — jedna rzecz, więc smakuje."},
+        {"id": "g3-2", "text": "Dzieciom bardzo ___ naleśniki.", "options": ["smakuje", "smakują"], "answer": "smakują", "grammar_point": "celownik-bezosobowe", "explanation": "Czasownik zgadza się z jedzeniem: naleśniki smakują."},
+        {"id": "g3-3", "text": "Mamo, czy ___ smakuje sałatka?", "options": ["ty", "cię", "ci"], "answer": "ci", "grammar_point": "celownik-bezosobowe", "explanation": "Komu smakuje? — tobie, krótko: ci."},
+        {"id": "g3-4", "text": "Coś ___ picia?", "options": ["do", "dla", "na"], "answer": "do", "grammar_point": "dla-do-na"},
+        {"id": "g3-5", "text": "Co zwykle jesz ___ śniadanie?", "options": ["do", "dla", "na"], "answer": "na", "grammar_point": "dla-do-na"},
+        {"id": "g3-6", "text": "Ta zupa jest pyszna, bardzo mi ___.", "options": ["się podoba", "smakuje"], "answer": "smakuje", "grammar_point": "kalki-uk", "explanation": "O jedzeniu mówimy smakować. Podobać się — o tym, co widzisz."},
+        {"id": "g3-7", "text": "Marchewka, kapusta i cebula to ___.", "options": ["owoce", "warzywa"], "answer": "warzywa", "grammar_point": "kalki-uk", "explanation": "Warzywa to овочі, owoce to фрукти."},
+        {"id": "g3-8", "text": "Przepraszam, gdzie jest nasz ___? Czekamy na rachunek.", "options": ["oficjant", "kelner"], "answer": "kelner", "grammar_point": "kalki-uk", "explanation": "Po polsku: kelner, kelnerka."}
+      ]
+    }
+  ]
+}
