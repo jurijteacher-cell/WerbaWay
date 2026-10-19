@@ -1,0 +1,54 @@
+{
+  "lesson_id": "pl-a2-mow-04-jedzenie",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: jedzenie i restauracja",
+  "instruction": "Trzy bloki: słowa, formy i jedna krótka historia.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "matching",
+      "title": "1. Słowa z lekcji",
+      "instruction": "Połącz słowo z opisem.",
+      "items": [
+        {"id": "h1-1", "left": "napiwek", "right": "pieniądze dla kelnera za miłą obsługę", "grammar_point": "slownictwo"},
+        {"id": "h1-2", "left": "dokładka", "right": "druga porcja, bo pierwsza bardzo smakowała", "grammar_point": "slownictwo"},
+        {"id": "h1-3", "left": "paragon", "right": "mały papier z kasy, potrzebny przy reklamacji", "grammar_point": "slownictwo"},
+        {"id": "h1-4", "left": "na wynos", "right": "jedzenie w pudełku, które zabierasz do domu", "grammar_point": "slownictwo"},
+        {"id": "h1-5", "left": "nakryć do stołu", "right": "położyć talerze, sztućce i serwetki", "grammar_point": "slownictwo"},
+        {"id": "h1-6", "left": "danie główne", "right": "to, co jesz po zupie, a przed deserem", "grammar_point": "slownictwo"}
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Pełna forma",
+      "instruction": "Wpisz słowo z nawiasu w poprawnej formie albo wybierz odpowiedź.",
+      "items": [
+        {"id": "h2-1", "text": "Na kolację zrobię ___ (jajecznica) z pomidorami.", "answer": "jajecznicę", "grammar_point": "biernik-zamawianie"},
+        {"id": "h2-2", "text": "Kupisz dwa kilo ___ (ziemniaki)?", "answer": "ziemniaków", "grammar_point": "ilosc-dopelniacz"},
+        {"id": "h2-3", "text": "Poproszę butelkę ___ (sok pomarańczowy).", "answer": "soku pomarańczowego", "grammar_point": "ilosc-dopelniacz"},
+        {"id": "h2-4", "text": "Wujek nie pije ___ (piwo), tylko wino.", "answer": "piwa", "grammar_point": "przeczenie-dopelniacz"},
+        {"id": "h2-5", "text": "Mój syn nie je ___ (cebula).", "answer": "cebuli", "grammar_point": "przeczenie-dopelniacz"},
+        {"id": "h2-6", "text": "Czy ___ (smakować) wam pierogi babci?", "answer": "smakują", "grammar_point": "celownik-bezosobowe"},
+        {"id": "h2-7", "text": "Ten tort jest ___ (dla / do) mamy na urodziny.", "answer": "dla", "grammar_point": "dla-do-na"},
+        {"id": "h2-8", "text": "Na deser zjedliśmy kawałek słodkiego, żółtego ___.", "options": ["melona", "dyni"], "answer": "melona", "grammar_point": "kalki-uk", "explanation": "Dynia to гарбуз. Диня — po polsku melon."}
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "drag-and-drop",
+      "title": "3. Kolacja u Leny",
+      "instruction": "Przeciągnij słowa w luki. Trzy słowa są niepotrzebne.",
+      "bank": ["nakryła", "pomidorów", "mięsa", "smakowało", "dokładkę", "najadłem", "mięso", "podobało", "pomidory"],
+      "items": [
+        {"id": "h3-1", "text": "Lena zaprosiła przyjaciół na kolację i już o szóstej ___ do stołu.", "answer": "nakryła", "grammar_point": "slownictwo"},
+        {"id": "h3-2", "text": "Na przystawkę podała sałatkę z ___ i sera.", "answer": "pomidorów", "grammar_point": "ilosc-dopelniacz"},
+        {"id": "h3-3", "text": "Gość z Hiszpanii powiedział, że nie je ___.", "answer": "mięsa", "grammar_point": "przeczenie-dopelniacz"},
+        {"id": "h3-4", "text": "Na szczęście było też risotto z grzybami, które bardzo mu ___.", "answer": "smakowało", "grammar_point": "kalki-uk"},
+        {"id": "h3-5", "text": "Marcin zjadł dwie porcje i poprosił jeszcze o ___.", "answer": "dokładkę", "grammar_point": "slownictwo"},
+        {"id": "h3-6", "text": "Na koniec powiedział: — Dziękuję, Lena, już się ___!", "answer": "najadłem", "grammar_point": "slownictwo"}
+      ]
+    }
+  ]
+}

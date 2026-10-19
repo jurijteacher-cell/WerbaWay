@@ -1,0 +1,61 @@
+{
+  "lesson_id": "pl-a2-mow-04-jedzenie",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: zamówienie, problem i obiad u babci",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Potem zamieńcie się rolami.",
+  "estimated_minutes": 17,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "listen-then-play",
+      "front_title": "Obiad w restauracji",
+      "back_scenario": "Jesteś w restauracji. Kelner prowadzi Cię do stolika i daje kartę. Nauczyciel jest kelnerem. Najpierw posłuchaj, jak zamawia Julia, potem zamów swój obiad: zapytaj, co kelner poleca, i zamów danie główne i coś do picia. Na koniec zamów też ciasto na wynos dla kogoś z rodziny.",
+      "back_checklist": [
+        "Przywitaj się i poproś o kartę.",
+        "Zapytaj kelnera, co poleca.",
+        "Powiedz, czego nie jesz albo czego nie lubisz.",
+        "Zapytaj o jedno danie: czy jest ostre, czy jest w nim mięso, czy porcja jest duża.",
+        "Zamów zupę albo przystawkę, danie główne i coś do picia, a potem ciasto na wynos."
+      ],
+      "model_dialogue": [
+        {"speaker": "Kelner", "voice": "pl-PL-male", "line": "Dzień dobry! Czy już pani wybrała?"},
+        {"speaker": "Julia", "voice": "pl-PL-female", "line": "Jeszcze nie… Co pan poleca?"},
+        {"speaker": "Kelner", "voice": "pl-PL-male", "line": "Dzisiaj polecam danie dnia: kaczkę z jabłkami i kopytkami."},
+        {"speaker": "Julia", "voice": "pl-PL-female", "line": "Brzmi pysznie, ale nie jem mięsa. Co macie dla wegetarian?"},
+        {"speaker": "Kelner", "voice": "pl-PL-male", "line": "Mamy pierogi ruskie, placki ziemniaczane i zupę krem z dyni."},
+        {"speaker": "Julia", "voice": "pl-PL-female", "line": "Czy ta zupa jest ostra?"},
+        {"speaker": "Kelner", "voice": "pl-PL-male", "line": "Nie, jest łagodna i trochę słodka. Podajemy ją z grzankami."},
+        {"speaker": "Julia", "voice": "pl-PL-female", "line": "To poproszę zupę, a na danie główne placki ziemniaczane."},
+        {"speaker": "Kelner", "voice": "pl-PL-male", "line": "Świetny wybór. A coś do picia?"},
+        {"speaker": "Julia", "voice": "pl-PL-female", "line": "Poproszę szklankę wody bez gazu, a po obiedzie herbatę z cytryną."},
+        {"speaker": "Kelner", "voice": "pl-PL-male", "line": "Dobrze. Woda zaraz będzie, a zupa za dziesięć minut."}
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Coś jest nie tak",
+      "back_scenario": "Jesz obiad w restauracji. Zupa przyszła zimna, a w rachunku jest pomyłka: policzyli Ci dwa desery, a jadłeś / jadłaś jeden. Nauczyciel jest kelnerem — na początku nie bardzo chce pomóc. Bądź grzeczny / grzeczna, ale konkretny / konkretna.",
+      "back_checklist": [
+        "Grzecznie zawołaj kelnera i powiedz, co jest nie tak z zupą.",
+        "Poproś o nową zupę albo o coś innego.",
+        "Sprawdź rachunek i wyjaśnij pomyłkę.",
+        "Poproś o poprawiony rachunek i paragon, zapłać kartą albo gotówką.",
+        "Zdecyduj, czy zostawiasz napiwek, i powiedz to kelnerowi."
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "front_title": "Obiad u babci Krysi",
+      "back_scenario": "Jesteś pierwszy raz na obiedzie u polskiej rodziny. Stół jest już nakryty. Gospodyni, babcia Krysia, to nauczyciel: cały czas proponuje dokładkę i bardzo chce, żebyś zjadł / zjadła wszystko. Jesteś już najedzony / najedzona.",
+      "back_checklist": [
+        "Powiedz „Smacznego!” i pochwal jedzenie: smakuje mi…, to jest pyszne.",
+        "Zapytaj, co to za danie i z czego jest.",
+        "Grzecznie powiedz, czego nie jesz (możesz być wegetarianinem / wegetarianką).",
+        "Odmów dokładki tak, żeby babcia nie była smutna.",
+        "Podziękuj za obiad i zaproponuj pomoc przy zmywaniu."
+      ]
+    }
+  ]
+}
