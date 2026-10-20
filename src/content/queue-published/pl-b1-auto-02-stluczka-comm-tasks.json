@@ -1,0 +1,79 @@
+{
+  "lesson_id": "pl-b1-auto-02-stluczka",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: po stłuczce",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę z nauczycielem.",
+  "estimated_minutes": 15,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "read-then-play",
+      "comm_group": "Ubezpieczenie",
+      "front_title": "Telefon do ubezpieczyciela",
+      "back_scenario": "Najpierw przeczytajcie w rolach rozmowę Pawła z ubezpieczycielem. Potem zadzwoń sam / sama. Twoja sytuacja: wczoraj na rondzie wjechał w Ciebie inny kierowca. Przyznał się do winy, macie spisane oświadczenie. Masz porysowany zderzak i pęknięte lusterko.",
+      "back_checklist": [
+        "Przedstaw się i powiedz, że chcesz zgłosić szkodę z OC sprawcy.",
+        "Opisz, gdzie i kiedy doszło do stłuczki, i podaj numer rejestracyjny sprawcy.",
+        "Opisz co najmniej dwa uszkodzenia.",
+        "Wybierz kosztorys albo naprawę bezgotówkową i powiedz dlaczego.",
+        "Poproś grzecznie o samochód zastępczy i zapytaj o termin oględzin u rzeczoznawcy."
+      ],
+      "model_dialogue": [
+        {
+          "speaker": "Konsultantka",
+          "line": "Dzień dobry, dział szkód, w czym mogę pomóc?"
+        },
+        {
+          "speaker": "Paweł",
+          "line": "Dzień dobry, chciałbym zgłosić szkodę z OC sprawcy. Wczoraj ktoś wjechał w moje auto na parkingu."
+        },
+        {
+          "speaker": "Konsultantka",
+          "line": "Rozumiem. Czy ma pan numer polisy sprawcy albo numer rejestracyjny jego samochodu?"
+        },
+        {
+          "speaker": "Paweł",
+          "line": "Tak, mam oba numery. Spisaliśmy też oświadczenie, sprawca przyznał się do winy."
+        },
+        {
+          "speaker": "Konsultantka",
+          "line": "Bardzo dobrze. Jakie są uszkodzenia?"
+        },
+        {
+          "speaker": "Paweł",
+          "line": "Na tylnych drzwiach jest duże wgniecenie, a zderzak jest porysowany."
+        },
+        {
+          "speaker": "Konsultantka",
+          "line": "Jak chciałby pan rozliczyć szkodę: według kosztorysu czy bezgotówkowo, w warsztacie?"
+        },
+        {
+          "speaker": "Paweł",
+          "line": "Wolałbym naprawę bezgotówkową. I czy mógłbym dostać samochód zastępczy? Codziennie dojeżdżam autem do pracy."
+        },
+        {
+          "speaker": "Konsultantka",
+          "line": "Oczywiście, zapiszę to w zgłoszeniu. Rzeczoznawca zadzwoni do pana jutro i umówi się na oględziny."
+        },
+        {
+          "speaker": "Paweł",
+          "line": "Dziękuję, bardzo mi pani pomogła."
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "comm_group": "W warsztacie blacharskim",
+      "front_title": "W warsztacie blacharskim",
+      "back_scenario": "Rzeczoznawca już obejrzał Twoje auto. Przyjeżdżasz do warsztatu blacharskiego, w którym będzie naprawa bezgotówkowa. Nauczyciel gra pana Zbyszka, blacharza.",
+      "back_checklist": [
+        "Zapytaj, ile potrwa naprawa i kiedy będzie możliwy odbiór.",
+        "Powiedz, że wolałbyś / wolałabyś oryginalne części, i zapytaj, czy ubezpieczyciel za nie zapłaci.",
+        "Poproś, żeby warsztat zadzwonił do Ciebie, gdyby znaleziono nowe uszkodzenia.",
+        "Zapytaj, czy lakiernik dobierze kolor i jaka jest gwarancja na lakier.",
+        "Zapytaj, czy warsztat rozliczy się z ubezpieczycielem sam i czy dostaniesz fakturę."
+      ]
+    }
+  ]
+}

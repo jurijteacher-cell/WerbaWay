@@ -1,0 +1,342 @@
+{
+  "lesson_id": "pl-b1-auto-02-stluczka",
+  "exercise_type": "grammar-slides",
+  "title": "Tryb przypuszczający",
+  "slides": [
+    {
+      "id": "s1",
+      "part": 1,
+      "section": "teoria",
+      "kind": "title",
+      "title": "Gdybym wiedział… Tryb przypuszczający",
+      "subtitle": "Grzecznie prosimy, mówimy, czego chcemy, i myślimy, co by było, gdyby…",
+      "goal": "Po tej części: poprosisz o coś grzecznie i opowiesz o sytuacji nierealnej.",
+      "teacher_note": "Спитай: «Що б ти зробив, якби хтось подряпав твоє авто на парковці?» Нехай відповість як уміє — потім покажемо, як це звучить польською."
+    },
+    {
+      "id": "s2",
+      "part": 1,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Cztery zadania jednej formy",
+      "items": [
+        {
+          "tag": "prośba",
+          "pl": "Czy [[mógłby]] pan wysłać mi kosztorys?",
+          "uk": "Чи не могли б ви надіслати мені кошторис?"
+        },
+        {
+          "tag": "życzenie",
+          "pl": "[[Chciałabym]] zgłosić szkodę.",
+          "uk": "Я хотіла б заявити про страховий випадок."
+        },
+        {
+          "tag": "rada",
+          "pl": "Na twoim miejscu [[zrobiłbym]] więcej zdjęć.",
+          "uk": "На твоєму місці я зробив би більше фото."
+        },
+        {
+          "tag": "nierealne",
+          "pl": "[[Gdybym]] miał AC, naprawiłbym auto sam.",
+          "uk": "Якби в мене було автокаско, я відремонтував би авто сам."
+        }
+      ],
+      "note": "Jedna forma: czas przeszły + by + końcówka.",
+      "teacher_note": "Карта уроку. В українській — «б/би» окремим словом; у польській «by» приростає до дієслова і має особове закінчення."
+    },
+    {
+      "id": "s3",
+      "part": 1,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Jak zbudować formę",
+      "steps": [
+        {
+          "label": "czas przeszły",
+          "text": "chciał"
+        },
+        {
+          "label": "+ by",
+          "text": "chciałby"
+        },
+        {
+          "label": "+ końcówka",
+          "text": "chciałbym"
+        }
+      ],
+      "result": "[[Chciałbym]] zgłosić szkodę.",
+      "note": "Końcówki jak w czasie przeszłym: -m, -ś, -śmy, -ście.",
+      "teacher_note": "Спочатку минулий час без особового закінчення (chciał, chciała, chcieli), потім by, потім закінчення особи. Учень, який знає минулий час, уже знає 90% форми."
+    },
+    {
+      "id": "s4",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Odmiana: ja, ty, on…",
+      "columns": [
+        "osoba",
+        "on / oni",
+        "ona / one"
+      ],
+      "rows": [
+        [
+          "ja",
+          "chciał[[bym]]",
+          "chciałabym"
+        ],
+        [
+          "ty",
+          "chciał[[byś]]",
+          "chciałabyś"
+        ],
+        [
+          "on / ona · pan / pani",
+          "chciał[[by]]",
+          "chciałaby"
+        ],
+        [
+          "my",
+          "chcieli[[byśmy]]",
+          "chciałybyśmy"
+        ],
+        [
+          "wy",
+          "chcieli[[byście]]",
+          "chciałybyście"
+        ],
+        [
+          "oni / one · państwo",
+          "chcieliby",
+          "chciałyby"
+        ]
+      ],
+      "note": "Rodzaj jak w czasie przeszłym: chciał, chciała, chcieli, chciały.",
+      "teacher_note": "Ліва колонка — чоловіки і групи з чоловіком, права — жінки і групи без чоловіків, як у минулому часі. Пан / пані / państwo — це 3-тя особа, тому форми ті самі, що в рядку «on / ona» та «oni»."
+    },
+    {
+      "id": "s5",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Ważne czasowniki w warsztacie",
+      "columns": [
+        "bezokolicznik",
+        "ja (on)",
+        "ja (ona)"
+      ],
+      "rows": [
+        [
+          "chcieć",
+          "chciałbym",
+          "chciałabym"
+        ],
+        [
+          "móc",
+          "m[[ó]]głbym",
+          "mogłabym"
+        ],
+        [
+          "woleć",
+          "wolałbym",
+          "wolałabym"
+        ],
+        [
+          "zrobić",
+          "zrobiłbym",
+          "zrobiłabym"
+        ],
+        [
+          "zacząć",
+          "zacz[[ą]]łbym",
+          "zaczęłabym"
+        ]
+      ],
+      "note": "Zmiana jak w czasie przeszłym: mógł, mogła; zaczął, zaczęła.",
+      "teacher_note": "Головна пастка — «ó» в чоловічому роді: mógł → mógłbym. Тут же zacząć: zaczął → zacząłby, zaczęła → zaczęłaby. Якщо учень знає минулий час, він знає і ці форми."
+    },
+    {
+      "id": "s6",
+      "part": 1,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Grzecznie: pan, pani, państwo",
+      "items": [
+        {
+          "tag": "do pana",
+          "pl": "Czy [[mógłby]] pan zadzwonić przed naprawą?",
+          "uk": "Чи не могли б ви (пане) подзвонити перед ремонтом?"
+        },
+        {
+          "tag": "do pani",
+          "pl": "Czy [[mogłaby]] pani przesłać fakturę?",
+          "uk": "Чи не могли б ви (пані) надіслати фактуру?"
+        },
+        {
+          "tag": "do firmy",
+          "pl": "Czy [[mogliby]] państwo podstawić auto zastępcze?",
+          "uk": "Чи не могли б ви підігнати підмінне авто?"
+        },
+        {
+          "tag": "wybór",
+          "pl": "[[Wolałbym]] naprawę bezgotówkową.",
+          "uk": "Я віддав би перевагу безготівковому ремонту."
+        }
+      ],
+      "note": "Pan / pani / państwo + czasownik w 3. osobie.",
+      "teacher_note": "У телефонній розмові зі страховою чи сервісом це найчастіша конструкція. Попроси учня перетворити «Proszę zadzwonić» на ввічливе прохання."
+    },
+    {
+      "id": "s7",
+      "part": 1,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Jeśli czy gdyby?",
+      "left": {
+        "head": "jeśli / jeżeli",
+        "rule": "realne, możliwe",
+        "examples": [
+          "[[Jeśli]] ubezpieczyciel się zgodzi, dostanę auto zastępcze."
+        ]
+      },
+      "right": {
+        "head": "gdyby",
+        "rule": "mało realne albo już niemożliwe",
+        "examples": [
+          "[[Gdybym]] o tym wiedziała, nie jeździłabym autobusem."
+        ]
+      },
+      "note": "Po „jeśli” zwykły czas; po „gdyby” forma przeszła.",
+      "teacher_note": "Контрольне питання: це може статися чи це уявна ситуація / вже пізно? «Jeśli» — нормальний час (теперішній, майбутній), «gdyby» — завжди з формою минулого часу."
+    },
+    {
+      "id": "s8",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Gdyby + końcówka",
+      "columns": [
+        "osoba",
+        "gdyby…",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "ja",
+          "gdyby[[m]]",
+          "gdybym wiedział"
+        ],
+        [
+          "ty",
+          "gdyby[[ś]]",
+          "gdybyś miał AC"
+        ],
+        [
+          "on / ona",
+          "gdyby",
+          "gdyby sprawca uciekł"
+        ],
+        [
+          "my",
+          "gdyby[[śmy]]",
+          "gdybyśmy mieli czas"
+        ],
+        [
+          "wy",
+          "gdyby[[ście]]",
+          "gdybyście zadzwonili"
+        ]
+      ],
+      "note": "Końcówka idzie do „gdyby”, czasownik zostaje bez niej.",
+      "teacher_note": "Ключова думка: закінчення особи бере «gdyby», а дієслово стоїть у формі «wiedział / miała» без -bym. Другу частину речення будуємо вже з -bym: Gdybym wiedział, zadzwoniłbym."
+    },
+    {
+      "id": "s9",
+      "part": 1,
+      "section": "wyjatki",
+      "kind": "table",
+      "reveal": "row",
+      "refers_to": "s4",
+      "title": "Ruchome „by”",
+      "columns": [
+        "neutralnie",
+        "z akcentem na osobie"
+      ],
+      "rows": [
+        [
+          "chciałbym",
+          "[[ja bym]] chciał"
+        ],
+        [
+          "czy mógłby pan",
+          "czy pan [[by]] mógł"
+        ],
+        [
+          "gdzie pojechałbyś",
+          "gdzie [[byś]] pojechał"
+        ]
+      ],
+      "note": "W mowie „by” z końcówką może stać przed czasownikiem.",
+      "teacher_note": "Це не помилка: у розмові «by» з закінченням може переїхати на займенник чи питальне слово. Учневі достатньо впізнавати ці форми; сам хай використовує нейтральні."
+    },
+    {
+      "id": "s10",
+      "part": 1,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego · 1",
+      "items": [
+        {
+          "uk": "я б хотів",
+          "wrong": "ja by chciał",
+          "right": "[[chciałbym]]",
+          "why": "By zawsze ma końcówkę osoby: -bym, -byś…"
+        },
+        {
+          "uk": "якби я знав",
+          "wrong": "jakby ja wiedział",
+          "right": "[[gdybym]] wiedział",
+          "why": "Warunek to gdyby z końcówką; jakby znaczy przede wszystkim «ніби»."
+        },
+        {
+          "uk": "якби в мене був час",
+          "wrong": "gdybym będę miał czas",
+          "right": "gdybym [[miał]] czas",
+          "why": "Po gdyby tylko forma przeszła, nigdy przyszła."
+        }
+      ],
+      "teacher_note": "У розмовній мові поляки кажуть і «jakbym wiedział» — учень це почує. Але в листі й на іспиті — тільки «gdybym»."
+    },
+    {
+      "id": "s11",
+      "part": 1,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego · 2",
+      "items": [
+        {
+          "uk": "я міг би",
+          "wrong": "mogłbym",
+          "right": "[[mógłbym]]",
+          "why": "W rodzaju męskim jest ó, jak w mógł."
+        },
+        {
+          "uk": "Ви не могли б… (до одного пана)",
+          "wrong": "Czy wy nie moglibyście…?",
+          "right": "Czy [[mógłby pan]]…?",
+          "why": "Do jednej obcej osoby mówimy pan lub pani i 3. osoba."
+        },
+        {
+          "uk": "хотів би, щоб сервіс подзвонив",
+          "wrong": "Chciałbym, że warsztat zadzwonił.",
+          "right": "Chciałbym, [[żeby]] warsztat zadzwonił.",
+          "why": "Życzenie wobec kogoś innego to żeby i forma przeszła."
+        }
+      ],
+      "teacher_note": "Друга пастка — звертання на «wy» до однієї людини звучить для поляка грубувато або по-селянськи. У сервісі й страховій — тільки pan / pani."
+    }
+  ]
+}
