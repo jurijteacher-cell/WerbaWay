@@ -1,0 +1,101 @@
+{
+  "lesson_id": "pl-arch-01-figury-wymiary",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: rzut, obliczenia i prezentacja projektu",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Potem zamieńcie się rolami.",
+  "estimated_minutes": 15,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "read-then-play",
+      "comm_group": "Na zajęciach z rysunku technicznego",
+      "front_title": "Narysuj mój pokój",
+      "back_scenario": "Najpierw przeczytajcie w rolach rozmowę Andrija z Martą. Potem opisz swój pokój albo kuchnię, a druga osoba rysuje rzut tylko z Twoich słów. Na końcu porównajcie rysunek z rzeczywistością.",
+      "back_checklist": [
+        "Podaj skalę rysunku.",
+        "Podaj wymiary pomieszczenia: A na B metrów.",
+        "Powiedz, gdzie są drzwi i okno i jaką mają szerokość.",
+        "Opisz dwa meble: gdzie stoją i jakie mają wymiary.",
+        "Jeśli nie znasz dokładnej liczby, zaokrąglij ją."
+      ],
+      "model_dialogue": [
+        {
+          "speaker": "Andrij",
+          "line": "Narysujesz mi rzut mojego pokoju? Tylko z moich słów, bez zdjęcia."
+        },
+        {
+          "speaker": "Marta",
+          "line": "Spróbuję. W jakiej skali?"
+        },
+        {
+          "speaker": "Andrij",
+          "line": "Jeden do pięćdziesięciu. Pokój jest prostokątny, ma wymiary cztery na trzy metry."
+        },
+        {
+          "speaker": "Marta",
+          "line": "Czyli na kartce osiem na sześć centymetrów. Gdzie są drzwi?"
+        },
+        {
+          "speaker": "Andrij",
+          "line": "Na krótszej ścianie, po lewej stronie. Mają dziewięćdziesiąt centymetrów szerokości."
+        },
+        {
+          "speaker": "Marta",
+          "line": "A okno?"
+        },
+        {
+          "speaker": "Andrij",
+          "line": "Naprzeciwko drzwi, na środku ściany. Jest szerokie na półtora metra."
+        },
+        {
+          "speaker": "Marta",
+          "line": "Dobrze, kreślę. Co stoi w środku?"
+        },
+        {
+          "speaker": "Andrij",
+          "line": "Wzdłuż dłuższej ściany stoi łóżko: dwa metry na dziewięćdziesiąt centymetrów."
+        },
+        {
+          "speaker": "Marta",
+          "line": "A biurko?"
+        },
+        {
+          "speaker": "Andrij",
+          "line": "Pod oknem. Nie wiem dokładnie, ile ma, ale zaokrąglijmy do metra."
+        },
+        {
+          "speaker": "Marta",
+          "line": "Gotowe. Sprawdź wymiary — wszystko się zgadza?"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "comm_group": "Na zajęciach z rysunku technicznego",
+      "front_title": "Kolega nie był na zajęciach",
+      "back_scenario": "Kolega z grupy dzwoni do Ciebie. Musi obliczyć powierzchnię mieszkania w kształcie litery L: prostokąt 6 × 4 m, z którego w rogu brakuje kwadratu 2 × 2 m. Narysuj mu na kartce szkic rzutu (nie musisz kreślić dokładnie ani trzymać skali) i wytłumacz krok po kroku, jak obliczyć powierzchnię. Podaj wynik — jeśli trzeba, zaokrąglij go. Kolega nie wszystko rozumie i dopytuje.",
+      "back_checklist": [
+        "Powiedz, jak wygląda rzut mieszkania.",
+        "Podaj wymiary dużego prostokąta i brakującego kwadratu.",
+        "Wytłumacz działania: najpierw…, potem…, na końcu….",
+        "Podaj wynik w metrach kwadratowych.",
+        "Zapytaj, czy kolega wszystko zrozumiał."
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "comm_group": "Na zajęciach z rysunku technicznego",
+      "front_title": "Prezentacja projektu",
+      "back_scenario": "Jesteś na przeglądzie projektów. Pokaż komisji swój projekt małego domku letniskowego albo altany w parku. Opowiedz, co widać na rzucie, przekroju i elewacji, podaj wymiary i skalę. Komisja (nauczyciel) zadaje pytania.",
+      "back_checklist": [
+        "Powiedz, co to za budynek i do czego służy.",
+        "Opisz rzut: pomieszczenia i ich wymiary.",
+        "Opisz przekrój: wysokość ścian i dachu.",
+        "Opisz elewację: okna, drzwi, materiał.",
+        "Odpowiedz na dwa pytania komisji."
+      ]
+    }
+  ]
+}

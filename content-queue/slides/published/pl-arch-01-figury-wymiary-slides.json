@@ -1,0 +1,526 @@
+{
+  "lesson_id": "pl-arch-01-figury-wymiary",
+  "exercise_type": "grammar-slides",
+  "title": "Figury, wymiary i działania",
+  "slides": [
+    {
+      "id": "s1",
+      "part": 1,
+      "section": "teoria",
+      "kind": "title",
+      "title": "Ile metrów? Liczebnik i jednostka",
+      "subtitle": "2 metry, 5 metrów, 2,5 metra — kiedy która forma?",
+      "goal": "Po tej części podasz wymiary, pole i objętość z poprawną formą: dwa metry, pięć metrów, dwa i pół metra.",
+      "teacher_note": "Спитай: «Ile metrów kwadratowych ma twój pokój? A ile metrów ma twój stół?». Запиши 1–2 помилки з формою — повернетеся на s3."
+    },
+    {
+      "id": "s2",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Forma rzeczownika po liczebniku",
+      "columns": [
+        "ile?",
+        "metr (on)",
+        "stopień (on)",
+        "przekątna (ona)"
+      ],
+      "rows": [
+        [
+          "1",
+          "jeden metr",
+          "jeden stopień",
+          "jedna przekątna"
+        ],
+        [
+          "2, 3, 4",
+          "dwa [[metry]]",
+          "dwa stopnie",
+          "[[dwie]] przekątne"
+        ],
+        [
+          "5–20",
+          "pięć [[metrów]]",
+          "pięć stopni",
+          "pięć [[przekątnych]]"
+        ]
+      ],
+      "note": "Po 2, 3, 4 — mianownik liczby mnogiej. Od 5 — dopełniacz liczby mnogiej. Rodzaj żeński: dwie przekątne, dwie ściany.",
+      "teacher_note": "Перед кожним рядком питай: «Як думаєш, як буде з 3? з 7?». Порівняй з українським: два метри / п'ять метрів — логіка та сама, отже це легко."
+    },
+    {
+      "id": "s3",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Decyduje ostatnia cyfra",
+      "columns": [
+        "liczba",
+        "forma",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "22, 23, 24, 32…",
+          "metry",
+          "dwadzieścia dwa [[metry]]"
+        ],
+        [
+          "25–30, 35, 100…",
+          "metrów",
+          "dwadzieścia pięć [[metrów]]"
+        ],
+        [
+          "12, 13, 14",
+          "metrów",
+          "dwanaście [[metrów]]"
+        ],
+        [
+          "21, 31, 41…",
+          "metrów",
+          "dwadzieścia jeden [[metrów]]"
+        ]
+      ],
+      "note": "Patrzymy na ostatnią cyfrę: 2, 3, 4 → metry. Ale „-naście” i liczby zakończone na 1 → metrów.",
+      "teacher_note": "Швидкий раунд: називаєш числа 2, 12, 22, 21, 104, 111 — учень одразу каже з «metr». Тут найчастіше помиляються в «dwadzieścia jeden metr»."
+    },
+    {
+      "id": "s4",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Ułamek i przecinek",
+      "columns": [
+        "zapis",
+        "czytamy"
+      ],
+      "rows": [
+        [
+          "0,5 m",
+          "pół [[metra]]"
+        ],
+        [
+          "1,5 m",
+          "półtora [[metra]]"
+        ],
+        [
+          "2,5 m",
+          "dwa i pół [[metra]]"
+        ],
+        [
+          "3,75 m",
+          "trzy przecinek siedemdziesiąt pięć metra"
+        ],
+        [
+          "1/2 · 1/3 · 1/4",
+          "jedna druga · jedna trzecia · jedna czwarta"
+        ],
+        [
+          "2/3 · 3/4",
+          "dwie trzecie · trzy czwarte"
+        ]
+      ],
+      "note": "Liczba z przecinkiem albo ułamek → rzeczownik w dopełniaczu liczby pojedynczej: 2,5 metra, 12,5 metra kwadratowego.",
+      "teacher_note": "В українській і російській те саме: 2,5 метра. Скажи це вголос — легкий виграш. У розмовній польській чути «2,5 metrów», але норма — metra."
+    },
+    {
+      "id": "s5",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Jak podać wymiary",
+      "columns": [
+        "konstrukcja",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "mieć + liczba + długości",
+          "Pokój ma cztery metry [[długości]]."
+        ],
+        [
+          "wymiary A na B",
+          "Pokój ma wymiary cztery [[na]] trzy metry."
+        ],
+        [
+          "wynosić + liczba",
+          "Długość [[wynosi]] cztery metry."
+        ],
+        [
+          "o + miejscownik",
+          "mieszkanie [[o powierzchni]] 50 m²"
+        ],
+        [
+          "szeroki na + biernik",
+          "Okno jest [[szerokie na]] półtora metra."
+        ]
+      ],
+      "note": "Przy „A na B” forma zależy od ostatniej liczby: cztery na trzy metry, cztery na pięć metrów.",
+      "teacher_note": "Учень описує свій стіл, двері й вікно: по одному реченню на кожну конструкцію. Стеж, щоб після «ma» стояв родовий: długości, szerokości."
+    },
+    {
+      "id": "s6",
+      "part": 1,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "O ile? Ile razy?",
+      "left": {
+        "head": "o ile?",
+        "rule": "o + biernik",
+        "examples": [
+          "Ten pokój jest [[o dwa metry]] dłuższy.",
+          "Cena wzrosła [[o połowę]]."
+        ]
+      },
+      "right": {
+        "head": "ile razy?",
+        "rule": "liczba + razy",
+        "examples": [
+          "Ta sala jest [[dwa razy]] większa.",
+          "Wieża jest [[cztery razy]] wyższa."
+        ]
+      },
+      "note": "Z czym porównujemy? — niż + mianownik albo od + dopełniacz: dłuższy niż korytarz = dłuższy od korytarza.",
+      "teacher_note": "Тут головна пастка: «на два метри довший» → o dwa metry. Попроси порівняти дві кімнати у квартирі учня двома способами."
+    },
+    {
+      "id": "s7",
+      "part": 1,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "title": "Uwaga na te formy",
+      "refers_to": "s3",
+      "items": [
+        {
+          "text": "Często mówimy po prostu „metr”, bez „jeden”: Drzwi mają [[metr]] szerokości.",
+          "rule": "metr bez jeden",
+          "example": "Drzwi mają metr szerokości.",
+          "refers_to": "s2"
+        },
+        {
+          "text": "12, 13, 14 kończą się na 2, 3, 4, ale mają formę [[metrów]].",
+          "rule": "12–14",
+          "example": "dwanaście metrów",
+          "refers_to": "s3"
+        },
+        {
+          "text": "21, 31, 41… → zawsze [[metrów]], nigdy „dwadzieścia jeden metr”.",
+          "rule": "21, 31",
+          "example": "dwadzieścia jeden metrów",
+          "refers_to": "s3"
+        },
+        {
+          "text": "[[półtora]] metra, roku — ale [[półtorej]] godziny, strony (rodzaj żeński).",
+          "rule": "półtora / półtorej",
+          "example": "półtorej godziny",
+          "refers_to": "s4"
+        },
+        {
+          "text": "„Pół” bez „jeden”: [[pół metra]].",
+          "rule": "pół",
+          "example": "pół metra",
+          "refers_to": "s4"
+        }
+      ],
+      "teacher_note": "Не роби з цього правила «завжди/ніколи» для всього: тут лише форми, які реально трапляться на заняттях. Półtorej — пасивно, достатньо впізнавати."
+    },
+    {
+      "id": "s8",
+      "part": 2,
+      "section": "teoria",
+      "kind": "title",
+      "title": "Działania i wzory na głos",
+      "subtitle": "Jak przeczytać działanie, potęgę, pierwiastek i wzór?",
+      "goal": "Po tej części przeczytasz na głos: „pole koła równa się pi er kwadrat” i zrozumiesz polecenia w zadaniach.",
+      "teacher_note": "Напиши на папері «12 : 3 = 4» і попроси прочитати польською. Більшість скаже «dwanaście na trzy» — це і є тема."
+    },
+    {
+      "id": "s9",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Cztery działania",
+      "columns": [
+        "zapis",
+        "czytamy na głos"
+      ],
+      "rows": [
+        [
+          "2 + 3 = 5",
+          "dwa [[plus]] trzy równa się pięć"
+        ],
+        [
+          "10 − 4 = 6",
+          "dziesięć [[minus]] cztery równa się sześć"
+        ],
+        [
+          "3 · 4 = 12",
+          "trzy [[razy]] cztery równa się dwanaście"
+        ],
+        [
+          "12 : 3 = 4",
+          "dwanaście [[podzielić przez]] trzy"
+        ]
+      ],
+      "note": "Znak „=” czytamy: równa się. 12 : 3 = 4 — dwanaście podzielić przez trzy równa się cztery.",
+      "teacher_note": "Диктуй 4–5 прикладів усно (7·8, 63:9, 100−37), учень читає й відповідає повним реченням."
+    },
+    {
+      "id": "s10",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Działanie, wynik i przyimek",
+      "columns": [
+        "działanie",
+        "wynik",
+        "czasownik + przyimek"
+      ],
+      "rows": [
+        [
+          "dodawanie",
+          "suma",
+          "dodać trzy [[do]] dwóch"
+        ],
+        [
+          "odejmowanie",
+          "różnica",
+          "odjąć cztery [[od]] dziesięciu"
+        ],
+        [
+          "mnożenie",
+          "iloczyn",
+          "pomnożyć trzy [[przez]] cztery"
+        ],
+        [
+          "dzielenie",
+          "iloraz",
+          "podzielić dwanaście [[przez]] trzy"
+        ]
+      ],
+      "note": "do i od + dopełniacz (do dwóch, od dziesięciu); przez + biernik (przez cztery).",
+      "teacher_note": "Iloczyn / iloraz плутають — підкажи: iloRaz як «raz po raz ділимо». Слова-результати учневі потрібні для формулювань задач на парах."
+    },
+    {
+      "id": "s11",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Potęgi i pierwiastki",
+      "columns": [
+        "zapis",
+        "czytamy"
+      ],
+      "rows": [
+        [
+          "a²",
+          "a [[do kwadratu]] / a kwadrat"
+        ],
+        [
+          "a³",
+          "a [[do sześcianu]]"
+        ],
+        [
+          "2⁵",
+          "dwa do potęgi piątej"
+        ],
+        [
+          "√9",
+          "[[pierwiastek z]] dziewięciu"
+        ],
+        [
+          "∛8",
+          "pierwiastek sześcienny z ośmiu"
+        ]
+      ],
+      "note": "do + dopełniacz: do kwadratu, do potęgi. z + dopełniacz: pierwiastek z dziewięciu.",
+      "teacher_note": "Звертай увагу на родовий після z: «z dziewięciu», «z szesnastu» — учень захоче сказати «z dziewięć»."
+    },
+    {
+      "id": "s12",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Litery i znaki we wzorach",
+      "columns": [
+        "znak",
+        "czytamy",
+        "znak",
+        "czytamy"
+      ],
+      "rows": [
+        [
+          "a, b, c",
+          "a, be, ce",
+          "=",
+          "równa się"
+        ],
+        [
+          "h",
+          "[[ha]]",
+          "≈",
+          "w przybliżeniu"
+        ],
+        [
+          "r",
+          "er",
+          "< / >",
+          "mniejsze od / większe od"
+        ],
+        [
+          "P, V",
+          "pe, [[fał]]",
+          "( )",
+          "nawias"
+        ],
+        [
+          "π",
+          "pi",
+          "%",
+          "procent"
+        ]
+      ],
+      "note": "Litery czytamy po polsku: h to ha, nie „аш”; V to fał, nie „ве”.",
+      "teacher_note": "Найчастіший ступор. Дай учневі прочитати 3–4 позначення з його конспекту з пар."
+    },
+    {
+      "id": "s13",
+      "part": 2,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Wzory na głos",
+      "items": [
+        {
+          "tag": "P = a · b",
+          "pl": "Pole prostokąta równa się [[a razy be]].",
+          "uk": "площа прямокутника"
+        },
+        {
+          "tag": "Obw = 2a + 2b",
+          "pl": "Obwód równa się dwa a plus dwa be.",
+          "uk": "периметр"
+        },
+        {
+          "tag": "P = πr²",
+          "pl": "Pole koła równa się [[pi er kwadrat]].",
+          "uk": "площа круга"
+        },
+        {
+          "tag": "V = a³",
+          "pl": "Objętość sześcianu równa się a do sześcianu.",
+          "uk": "об'єм куба"
+        },
+        {
+          "tag": "c² = a² + b²",
+          "pl": "Ce kwadrat równa się a kwadrat plus be kwadrat.",
+          "uk": "теорема Піфагора"
+        }
+      ],
+      "teacher_note": "Учень читає кожну формулу вголос двічі: повільно, потім у нормальному темпі."
+    },
+    {
+      "id": "s14",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Polecenia w zadaniach",
+      "columns": [
+        "polecenie",
+        "co robisz"
+      ],
+      "rows": [
+        [
+          "[[Oblicz]] pole trójkąta.",
+          "обчисли"
+        ],
+        [
+          "[[Wyznacz]] długość przekątnej.",
+          "визнач, знайди"
+        ],
+        [
+          "[[Narysuj]] rzut w skali 1:50.",
+          "накресли"
+        ],
+        [
+          "[[Zaokrąglij]] wynik do setnych.",
+          "округли"
+        ],
+        [
+          "Podaj wynik w metrach kwadratowych.",
+          "запиши відповідь у м²"
+        ],
+        [
+          "Uzasadnij odpowiedź.",
+          "обґрунтуй"
+        ]
+      ],
+      "note": "Polecenia w zadaniach są w trybie rozkazującym, w formie „ty”.",
+      "teacher_note": "Попроси учня знайти одне таке завдання в його конспектах з пар і прочитати його вголос."
+    },
+    {
+      "id": "s15",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego · 1",
+      "items": [
+        {
+          "uk": "прямокутник (рос. прямоугольник)",
+          "wrong": "prostokątnik",
+          "right": "[[prostokąt]]",
+          "why": "Polskie nazwy figur kończą się na -kąt bez dodatkowego sufiksu: trójkąt, prostokąt, wielokąt."
+        },
+        {
+          "uk": "коло — лінія (рос. окружность)",
+          "wrong": "koło",
+          "right": "[[okrąg]]",
+          "why": "Okrąg to tylko linia, koło to cała figura ze środkiem (укр. круг). Koło ma pole, okrąg — tylko długość."
+        },
+        {
+          "uk": "ділити на два (рос. делить на два)",
+          "wrong": "dziesięć podzielić na dwa",
+          "right": "dziesięć podzielić [[przez]] dwa",
+          "why": "W działaniu dzielimy i mnożymy przez. Na — gdy dzielimy rzecz na części: podzielić działkę na trzy części."
+        }
+      ],
+      "teacher_note": "Кожну пастку спершу скажи українською й дай учню перекласти самому — тільки потім відкривай правильний варіант."
+    },
+    {
+      "id": "s16",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego · 2",
+      "items": [
+        {
+          "uk": "на два метри довший (рос. на два метра длиннее)",
+          "wrong": "na dwa metry dłuższy",
+          "right": "[[o]] dwa metry dłuższy",
+          "why": "Różnicę podajemy przez o + biernik: o metr, o połowę, o dwadzieścia procent."
+        },
+        {
+          "uk": "квадратний метр",
+          "wrong": "kwadratowy metr",
+          "right": "[[metr kwadratowy]]",
+          "why": "Przymiotnik, który mówi, jaki to rodzaj rzeczy, stoi po rzeczowniku: metr sześcienny, kąt prosty."
+        },
+        {
+          "uk": "площа кімнати (рос. площадь комнаты)",
+          "wrong": "plac pokoju",
+          "right": "[[powierzchnia]] pokoju",
+          "why": "Plac to майдан. W życiu mówimy powierzchnia, w zadaniu z geometrii — pole."
+        }
+      ],
+      "teacher_note": "«O dwa metry» — головна пастка уроку, лови її на слух до кінця заняття й на наступному уроці."
+    }
+  ]
+}

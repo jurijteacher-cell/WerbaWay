@@ -307,7 +307,7 @@ export function GrammarSlides({ title, slides, part, teacherMode }: Props) {
                   ) : null}
                   {trapStep >= 2 && it.right ? (
                     <>
-                      <p className="nb-trap-right">✓ {it.right}</p>
+                      <p className="nb-trap-right">✓ {highlight(it.right)}</p>
                       {it.why ? <div className="nb-trap-why">Dlaczego? {it.why}</div> : null}
                     </>
                   ) : null}

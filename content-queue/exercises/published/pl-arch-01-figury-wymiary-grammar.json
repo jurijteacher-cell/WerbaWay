@@ -1,0 +1,608 @@
+{
+  "lesson_id": "pl-arch-01-figury-wymiary",
+  "exercise_type": "fill-in-blank",
+  "title": "Figury, wymiary i działania: ćwiczenia",
+  "instruction": "Sześć bloków: trzy po pierwszej części gramatyki, trzy po drugiej.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "covers_slides": [
+        "s2",
+        "s3",
+        "s7"
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "1. Metry czy metrów?",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Stół ma dwa ___ długości.",
+          "options": [
+            "metr",
+            "metry",
+            "metrów"
+          ],
+          "answer": "metry",
+          "grammar_point": "liczebnik-jednostka"
+        },
+        {
+          "id": "g1-2",
+          "text": "Do uczelni mam tylko siedemset ___.",
+          "options": [
+            "metr",
+            "metry",
+            "metrów"
+          ],
+          "answer": "metrów",
+          "grammar_point": "liczebnik-jednostka"
+        },
+        {
+          "id": "g1-3",
+          "text": "Klatka schodowa ma dwanaście ___ wysokości.",
+          "options": [
+            "metr",
+            "metry",
+            "metrów"
+          ],
+          "answer": "metrów",
+          "grammar_point": "liczebnik-jednostka",
+          "explanation": "12, 13, 14 kończą się na 2, 3, 4, ale mają formę metrów."
+        },
+        {
+          "id": "g1-4",
+          "text": "Kupiłem dwadzieścia dwa ___ listwy.",
+          "options": [
+            "metr",
+            "metry",
+            "metrów"
+          ],
+          "answer": "metry",
+          "grammar_point": "liczebnik-jednostka",
+          "explanation": "Ostatnia cyfra 2 → metry."
+        },
+        {
+          "id": "g1-5",
+          "text": "Korytarz ma dwadzieścia jeden ___.",
+          "options": [
+            "metr",
+            "metry",
+            "metrów"
+          ],
+          "answer": "metrów",
+          "grammar_point": "liczebnik-jednostka",
+          "explanation": "21, 31, 41… → zawsze metrów."
+        },
+        {
+          "id": "g1-6",
+          "text": "Kwadrat ma ___ przekątne.",
+          "options": [
+            "dwa",
+            "dwie"
+          ],
+          "answer": "dwie",
+          "grammar_point": "liczebnik-jednostka",
+          "explanation": "Przekątna to rodzaj żeński: dwie przekątne."
+        },
+        {
+          "id": "g1-7",
+          "text": "Kąt prosty ma dziewięćdziesiąt ___.",
+          "options": [
+            "stopień",
+            "stopnie",
+            "stopni"
+          ],
+          "answer": "stopni",
+          "grammar_point": "liczebnik-jednostka"
+        },
+        {
+          "id": "g1-8",
+          "text": "Ten kąt jest o trzy ___ większy.",
+          "options": [
+            "stopień",
+            "stopnie",
+            "stopni"
+          ],
+          "answer": "stopnie",
+          "grammar_point": "liczebnik-jednostka"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "covers_slides": [
+        "s4",
+        "s7"
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "2. Pół, półtora i przecinek",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Okno ma półtora ___ szerokości.",
+          "options": [
+            "metr",
+            "metra",
+            "metrów"
+          ],
+          "answer": "metra",
+          "grammar_point": "ulamki-przecinek"
+        },
+        {
+          "id": "g2-2",
+          "text": "Ściana ma dwa i pół ___ wysokości.",
+          "options": [
+            "metry",
+            "metra",
+            "metrów"
+          ],
+          "answer": "metra",
+          "grammar_point": "ulamki-przecinek",
+          "explanation": "Liczba z ułamkiem → dopełniacz liczby pojedynczej: metra."
+        },
+        {
+          "id": "g2-3",
+          "text": "Zostało nam tylko pół ___ taśmy.",
+          "options": [
+            "metr",
+            "metra",
+            "metrów"
+          ],
+          "answer": "metra",
+          "grammar_point": "ulamki-przecinek"
+        },
+        {
+          "id": "g2-4",
+          "text": "Wykład trwał ___ godziny.",
+          "options": [
+            "półtora",
+            "półtorej"
+          ],
+          "answer": "półtorej",
+          "grammar_point": "ulamki-przecinek",
+          "explanation": "Godzina to rodzaj żeński: półtorej godziny."
+        },
+        {
+          "id": "g2-5",
+          "text": "Rysunek zajmuje ___ kartki.",
+          "options": [
+            "trzy czwarte",
+            "trzy czwarty",
+            "trzech czwartych"
+          ],
+          "answer": "trzy czwarte",
+          "grammar_point": "ulamki-przecinek"
+        },
+        {
+          "id": "g2-6",
+          "text": "Pole działki wynosi 12,5 ___ kwadratowego.",
+          "options": [
+            "metra",
+            "metrów",
+            "metry"
+          ],
+          "answer": "metra",
+          "grammar_point": "ulamki-przecinek",
+          "explanation": "Z przecinkiem: metra kwadratowego."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "covers_slides": [
+        "s5",
+        "s6"
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "3. Wymiary i porównania",
+      "instruction": "Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Pokój ma wymiary pięć ___ cztery metry.",
+          "options": [
+            "na",
+            "przez",
+            "i"
+          ],
+          "answer": "na",
+          "grammar_point": "wymiary-porownanie"
+        },
+        {
+          "id": "g3-2",
+          "text": "Długość korytarza ___ dziewięć metrów.",
+          "options": [
+            "wynosi",
+            "równa",
+            "dorównuje"
+          ],
+          "answer": "wynosi",
+          "grammar_point": "wymiary-porownanie"
+        },
+        {
+          "id": "g3-3",
+          "text": "Szukam mieszkania ___ powierzchni pięćdziesięciu metrów kwadratowych.",
+          "options": [
+            "o",
+            "na",
+            "z"
+          ],
+          "answer": "o",
+          "grammar_point": "wymiary-porownanie"
+        },
+        {
+          "id": "g3-4",
+          "text": "Okno jest szerokie ___ półtora metra.",
+          "options": [
+            "na",
+            "o",
+            "w"
+          ],
+          "answer": "na",
+          "grammar_point": "wymiary-porownanie"
+        },
+        {
+          "id": "g3-5",
+          "text": "Okno A jest ___ dwadzieścia centymetrów szersze niż okno B.",
+          "options": [
+            "na",
+            "o",
+            "przez"
+          ],
+          "answer": "o",
+          "grammar_point": "wymiary-porownanie",
+          "explanation": "Różnica: o + biernik. Po ukraińsku „на”, po polsku o."
+        },
+        {
+          "id": "g3-6",
+          "text": "Sala A jest dwa ___ większa niż sala B.",
+          "options": [
+            "razy",
+            "raz",
+            "razów"
+          ],
+          "answer": "razy",
+          "grammar_point": "wymiary-porownanie"
+        },
+        {
+          "id": "g3-7",
+          "text": "Wieża jest cztery razy wyższa ___ dom.",
+          "options": [
+            "niż",
+            "od",
+            "jak"
+          ],
+          "answer": "niż",
+          "grammar_point": "wymiary-porownanie",
+          "explanation": "Niż + mianownik (dom). Od wymaga dopełniacza: od domu."
+        },
+        {
+          "id": "g3-8",
+          "text": "Wieża jest o trzydzieści metrów wyższa od ___.",
+          "options": [
+            "dom",
+            "domu",
+            "domem"
+          ],
+          "answer": "domu",
+          "grammar_point": "wymiary-porownanie"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "covers_slides": [
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "4. Do, od, przez, na",
+      "instruction": "Wybierz przyimek albo słowo.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Dodaj pięć ___ siedmiu.",
+          "options": [
+            "do",
+            "od",
+            "przez"
+          ],
+          "answer": "do",
+          "grammar_point": "dzialania"
+        },
+        {
+          "id": "g4-2",
+          "text": "Odejmij trzy ___ dwudziestu.",
+          "options": [
+            "do",
+            "od",
+            "przez"
+          ],
+          "answer": "od",
+          "grammar_point": "dzialania"
+        },
+        {
+          "id": "g4-3",
+          "text": "Pomnóż długość ___ szerokość.",
+          "options": [
+            "przez",
+            "na",
+            "do"
+          ],
+          "answer": "przez",
+          "grammar_point": "dzialania",
+          "explanation": "Mnożymy przez, nie „na”."
+        },
+        {
+          "id": "g4-4",
+          "text": "Podziel wynik ___ dwa.",
+          "options": [
+            "przez",
+            "na",
+            "od"
+          ],
+          "answer": "przez",
+          "grammar_point": "dzialania"
+        },
+        {
+          "id": "g4-5",
+          "text": "Podzielcie działkę ___ cztery równe części.",
+          "options": [
+            "na",
+            "przez",
+            "do"
+          ],
+          "answer": "na",
+          "grammar_point": "dzialania",
+          "explanation": "Tu dzielimy rzecz na części, więc na."
+        },
+        {
+          "id": "g4-6",
+          "text": "Wynik mnożenia to ___.",
+          "options": [
+            "iloczyn",
+            "iloraz",
+            "suma"
+          ],
+          "answer": "iloczyn",
+          "grammar_point": "dzialania"
+        },
+        {
+          "id": "g4-7",
+          "text": "Wynik dzielenia to ___.",
+          "options": [
+            "iloraz",
+            "różnica",
+            "iloczyn"
+          ],
+          "answer": "iloraz",
+          "grammar_point": "dzialania"
+        },
+        {
+          "id": "g4-8",
+          "text": "Dziesięć ___ cztery równa się sześć.",
+          "options": [
+            "minus",
+            "plus",
+            "razy"
+          ],
+          "answer": "minus",
+          "grammar_point": "dzialania"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "covers_slides": [
+        "s11",
+        "s12",
+        "s13"
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "5. Jak to przeczytać?",
+      "instruction": "Wybierz, jak przeczytać zapis.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "5² — pięć do ___",
+          "options": [
+            "kwadratu",
+            "kwadrat",
+            "kwadratem"
+          ],
+          "answer": "kwadratu",
+          "grammar_point": "wzory-na-glos"
+        },
+        {
+          "id": "g5-2",
+          "text": "a³ — a do ___",
+          "options": [
+            "sześcianu",
+            "sześcian",
+            "trzech"
+          ],
+          "answer": "sześcianu",
+          "grammar_point": "wzory-na-glos"
+        },
+        {
+          "id": "g5-3",
+          "text": "√49 — pierwiastek z ___",
+          "options": [
+            "czterdziestu dziewięciu",
+            "czterdzieści dziewięć",
+            "czterdziestoma dziewięcioma"
+          ],
+          "answer": "czterdziestu dziewięciu",
+          "grammar_point": "wzory-na-glos",
+          "explanation": "Z + dopełniacz: z czterdziestu dziewięciu."
+        },
+        {
+          "id": "g5-4",
+          "text": "V we wzorze na objętość czytamy: ___",
+          "options": [
+            "fał",
+            "we",
+            "wu"
+          ],
+          "answer": "fał",
+          "grammar_point": "wzory-na-glos"
+        },
+        {
+          "id": "g5-5",
+          "text": "h we wzorze na wysokość czytamy: ___",
+          "options": [
+            "ha",
+            "asz",
+            "en"
+          ],
+          "answer": "ha",
+          "grammar_point": "wzory-na-glos"
+        },
+        {
+          "id": "g5-6",
+          "text": "P = πr²: Pole koła równa się pi er ___.",
+          "options": [
+            "kwadrat",
+            "kwadratowy",
+            "kwadratu"
+          ],
+          "answer": "kwadrat",
+          "grammar_point": "wzory-na-glos"
+        },
+        {
+          "id": "g5-7",
+          "text": "≈ czytamy: w ___ równa się",
+          "options": [
+            "przybliżeniu",
+            "przybliżenie",
+            "przybliżony"
+          ],
+          "answer": "przybliżeniu",
+          "grammar_point": "wzory-na-glos"
+        },
+        {
+          "id": "g5-8",
+          "text": "c² = a² + b² to twierdzenie ___.",
+          "options": [
+            "Pitagorasa",
+            "Pitagoras",
+            "Pitagorasem"
+          ],
+          "answer": "Pitagorasa",
+          "grammar_point": "wzory-na-glos"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "covers_slides": [
+        "s14",
+        "s15",
+        "s16"
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "6. Polecenia i pułapki z ukraińskiego",
+      "instruction": "Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "___ pole trójkąta i podaj wynik w metrach kwadratowych.",
+          "options": [
+            "Oblicz",
+            "Uzasadnij",
+            "Zaokrąglij"
+          ],
+          "answer": "Oblicz",
+          "grammar_point": "polecenia"
+        },
+        {
+          "id": "g6-2",
+          "text": "___ wynik do dwóch miejsc po przecinku.",
+          "options": [
+            "Zaokrąglij",
+            "Oblicz",
+            "Narysuj"
+          ],
+          "answer": "Zaokrąglij",
+          "grammar_point": "polecenia"
+        },
+        {
+          "id": "g6-3",
+          "text": "Kartka papieru ma kształt ___.",
+          "options": [
+            "prostokąta",
+            "prostokątnika",
+            "prostokątu"
+          ],
+          "answer": "prostokąta",
+          "grammar_point": "kalki-uk",
+          "explanation": "Prostokąt, bez -nik."
+        },
+        {
+          "id": "g6-4",
+          "text": "Cyrklem rysujemy ___, czyli samą linię.",
+          "options": [
+            "okrąg",
+            "koło",
+            "kółko"
+          ],
+          "answer": "okrąg",
+          "grammar_point": "kalki-uk",
+          "explanation": "Linia to okrąg (укр. коло). Koło to cała figura (укр. круг)."
+        },
+        {
+          "id": "g6-5",
+          "text": "Pokój ma czternaście ___.",
+          "options": [
+            "metrów kwadratowych",
+            "kwadratowych metrów",
+            "kwadratów metrów"
+          ],
+          "answer": "metrów kwadratowych",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-6",
+          "text": "Jaka jest ___ tego mieszkania?",
+          "options": [
+            "powierzchnia",
+            "plac",
+            "płaszczyzna"
+          ],
+          "answer": "powierzchnia",
+          "grammar_point": "kalki-uk",
+          "explanation": "Plac to майдан. Площа квартири — powierzchnia."
+        },
+        {
+          "id": "g6-7",
+          "text": "Dziesięć podzielić ___ dwa równa się pięć.",
+          "options": [
+            "przez",
+            "na"
+          ],
+          "answer": "przez",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-8",
+          "text": "Mój pokój jest ___ dwa metry dłuższy niż kuchnia.",
+          "options": [
+            "o",
+            "na"
+          ],
+          "answer": "o",
+          "grammar_point": "kalki-uk"
+        }
+      ]
+    }
+  ]
+}

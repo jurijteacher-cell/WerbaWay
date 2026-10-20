@@ -1,0 +1,183 @@
+{
+  "lesson_id": "pl-arch-01-figury-wymiary",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: figury, wymiary i działania",
+  "instruction": "Trzy bloki: słowa, formy z liczbami i działania.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "matching",
+      "title": "1. Słowa z lekcji",
+      "instruction": "Połącz słowo z opisem.",
+      "items": [
+        {
+          "id": "h1-1",
+          "left": "trapez",
+          "right": "czworokąt z jedną parą boków równoległych",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-2",
+          "left": "ostrosłup",
+          "right": "bryła z trójkątnymi ścianami, które spotykają się w jednym punkcie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-3",
+          "left": "krawędź",
+          "right": "odcinek, w którym spotykają się dwie ściany bryły",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-4",
+          "left": "średnica",
+          "right": "odcinek przez środek koła, równy dwóm promieniom",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-5",
+          "left": "elewacja",
+          "right": "rysunek zewnętrznej ściany budynku",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-6",
+          "left": "skala",
+          "right": "stosunek wymiarów na rysunku do wymiarów w rzeczywistości",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Liczby z jednostką",
+      "instruction": "Wpisz słowo z nawiasu w poprawnej formie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Ogrodzenie działki ma czterdzieści trzy ___ (metr).",
+          "answer": "metry",
+          "grammar_point": "liczebnik-jednostka"
+        },
+        {
+          "id": "h2-2",
+          "text": "Most ma trzysta piętnaście ___ (metr) długości.",
+          "answer": "metrów",
+          "grammar_point": "liczebnik-jednostka"
+        },
+        {
+          "id": "h2-3",
+          "text": "Rura ma średnicę 2,5 ___ (centymetr).",
+          "answer": "centymetra",
+          "grammar_point": "ulamki-przecinek"
+        },
+        {
+          "id": "h2-4",
+          "text": "Paczka waży ___ (1,5) kilograma.",
+          "answer": "półtora",
+          "grammar_point": "ulamki-przecinek"
+        },
+        {
+          "id": "h2-5",
+          "text": "Pociąg z Krakowa jechał ___ (1,5) godziny.",
+          "answer": "półtorej",
+          "grammar_point": "ulamki-przecinek"
+        },
+        {
+          "id": "h2-6",
+          "text": "Garaż ma wymiary sześć ___ (na / przez) trzy metry.",
+          "answer": "na",
+          "grammar_point": "wymiary-porownanie"
+        },
+        {
+          "id": "h2-7",
+          "text": "Ten wieżowiec jest trzy ___ (raz) wyższy niż kościół.",
+          "answer": "razy",
+          "grammar_point": "wymiary-porownanie"
+        },
+        {
+          "id": "h2-8",
+          "text": "Nowa hala jest ___ (o / na) dziesięć metrów szersza niż stara.",
+          "answer": "o",
+          "grammar_point": "wymiary-porownanie"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Działania",
+      "instruction": "Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Odejmij piętnaście ___ stu.",
+          "options": [
+            "od",
+            "do",
+            "z"
+          ],
+          "answer": "od",
+          "grammar_point": "dzialania"
+        },
+        {
+          "id": "h3-2",
+          "text": "Dodaj osiem ___ dwunastu.",
+          "options": [
+            "do",
+            "od",
+            "przez"
+          ],
+          "answer": "do",
+          "grammar_point": "dzialania"
+        },
+        {
+          "id": "h3-3",
+          "text": "Pierwiastek ___ stu to dziesięć.",
+          "options": [
+            "z",
+            "od",
+            "do"
+          ],
+          "answer": "z",
+          "grammar_point": "wzory-na-glos"
+        },
+        {
+          "id": "h3-4",
+          "text": "Trzy do ___ czwartej to osiemdziesiąt jeden.",
+          "options": [
+            "potęgi",
+            "potęga",
+            "potęgą"
+          ],
+          "answer": "potęgi",
+          "grammar_point": "wzory-na-glos"
+        },
+        {
+          "id": "h3-5",
+          "text": "Wynik dodawania to ___.",
+          "options": [
+            "suma",
+            "różnica",
+            "iloraz"
+          ],
+          "answer": "suma",
+          "grammar_point": "dzialania"
+        },
+        {
+          "id": "h3-6",
+          "text": "Pomnóż cenę jednego metra ___ dziesięć.",
+          "options": [
+            "przez",
+            "na",
+            "do"
+          ],
+          "answer": "przez",
+          "grammar_point": "dzialania"
+        }
+      ]
+    }
+  ]
+}
