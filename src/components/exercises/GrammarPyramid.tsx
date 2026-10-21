@@ -23,6 +23,34 @@ function shuffle<T>(arr: T[], seed: string): T[] {
   return a;
 }
 
+function ItemPhoto({ item }: { item: { image_url?: string; image_alt?: string; image_credit?: string } }) {
+  if (!item.image_url) return null;
+  return (
+    <figure className="nb-item-photo" style={{ margin: '0 0 10px' }}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={item.image_url}
+        alt={item.image_alt ?? ''}
+        loading="lazy"
+        style={{
+          display: 'block',
+          maxWidth: '100%',
+          maxHeight: 280,
+          width: 'auto',
+          height: 'auto',
+          borderRadius: 8,
+          boxShadow: '0 1px 4px rgba(0,0,0,.15)',
+        }}
+      />
+      {item.image_credit ? (
+        <figcaption style={{ fontSize: '0.75em', opacity: 0.7, marginTop: 4 }}>
+          {item.image_credit}
+        </figcaption>
+      ) : null}
+    </figure>
+  );
+}
+
 export function GrammarPyramid({ data, blockIds }: Props) {
   const levels = useMemo(() => {
     if (!blockIds?.length) return data.levels;
@@ -202,6 +230,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
             const sentence = item.sentence ?? item.prompt ?? '';
             return (
               <div key={k} className="nb-panel">
+                <ItemPhoto item={item} />
                 <p style={{ margin: '0 0 8px' }}>{sentence}</p>
                 {options?.length ? (
                   <div className="nb-row" style={{ marginTop: 0, marginBottom: 8 }}>
@@ -290,6 +319,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
             const fb = feedback[k];
             return (
               <div key={k} className="nb-panel">
+                <ItemPhoto item={item} />
                 <p style={{ margin: '0 0 8px' }}>{item.prompt}</p>
                 <textarea
                   value={openAnswers[k] ?? ''}

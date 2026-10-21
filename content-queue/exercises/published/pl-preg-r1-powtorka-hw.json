@@ -1,0 +1,157 @@
+{
+  "lesson_id": "pl-preg-r1-powtorka",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: powtórka z lekcji 1 i 2",
+  "instruction": "Trzy bloki: połączenia słów, pełna forma i krótka historia Sofii.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "title": "1. Co z czym?",
+      "exercise_type": "matching",
+      "instruction": "Połącz czasownik z tym, co do niego pasuje.",
+      "items": [
+        {
+          "id": "h1-1",
+          "left": "zmierzyć",
+          "right": "ciśnienie i wagę",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-2",
+          "left": "odebrać",
+          "right": "wyniki z laboratorium",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-3",
+          "left": "umówić się",
+          "right": "na wizytę kontrolną",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-4",
+          "left": "wypić",
+          "right": "słodki roztwór glukozy",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-5",
+          "left": "zgłosić się",
+          "right": "do rejestracji kwadrans wcześniej",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-6",
+          "left": "zlecić",
+          "right": "dodatkowe badanie krwi",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "title": "2. Pełna forma",
+      "exercise_type": "fill-in-blank",
+      "instruction": "Wpisz czasownik w dobrej formie. W nawiasie jest podpowiedź.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "W zeszłym tygodniu Sofia ___ (musieć) wziąć dzień wolny, żeby zrobić USG.",
+          "answer": "musiała",
+          "grammar_point": "modalne-przeszly"
+        },
+        {
+          "id": "h2-2",
+          "text": "Za dwa tygodnie ___ (ja, kobieta — musieć) jeszcze raz zrobić morfologię.",
+          "answer": "będę musiała",
+          "grammar_point": "modalne-przyszly",
+          "accept": [
+            "bede musiala"
+          ]
+        },
+        {
+          "id": "h2-3",
+          "text": "Ja ___ (powinien, ja — kobieta, przeszłość) wcześniej powiedzieć lekarce o zgadze.",
+          "answer": "powinnam była",
+          "grammar_point": "modalne-przeszly"
+        },
+        {
+          "id": "h2-4",
+          "text": "Mąż codziennie ___ (robić / zrobić) mi rano herbatę z imbirem.",
+          "answer": "robi",
+          "grammar_point": "aspekt"
+        },
+        {
+          "id": "h2-5",
+          "text": "W sobotę ___ (kupować / kupić, ja) wreszcie wygodne buty na obrzęki.",
+          "answer": "kupiłam",
+          "grammar_point": "aspekt",
+          "accept": [
+            "kupię"
+          ]
+        },
+        {
+          "id": "h2-6",
+          "text": "Wieczorem ___ (my — będziemy oglądać / obejrzymy) zdjęcia z USG całą rodziną — wszystkie, do końca.",
+          "answer": "obejrzymy",
+          "grammar_point": "aspekt"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "title": "3. Krzywa cukrowa Sofii",
+      "exercise_type": "drag-and-drop",
+      "instruction": "Wybierz słowo z banku i uzupełnij historię. Dwa słowa są niepotrzebne.",
+      "bank": [
+        "umówiła",
+        "na czczo",
+        "siedziała",
+        "pobrała",
+        "wyniki",
+        "będzie musiała",
+        "umawiała",
+        "powinna będzie"
+      ],
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Sofia jest w dwudziestym czwartym tygodniu ciąży. W poniedziałek ___ się na krzywą cukrową.",
+          "answer": "umówiła",
+          "grammar_point": "powtorka"
+        },
+        {
+          "id": "h3-2",
+          "text": "Dzień przed badaniem nie jadła kolacji, bo musiała przyjść ___.",
+          "answer": "na czczo",
+          "grammar_point": "powtorka"
+        },
+        {
+          "id": "h3-3",
+          "text": "W laboratorium wypiła słodki roztwór i przez dwie godziny ___ w poczekalni.",
+          "answer": "siedziała",
+          "grammar_point": "powtorka"
+        },
+        {
+          "id": "h3-4",
+          "text": "Pielęgniarka ___ jej krew trzy razy.",
+          "answer": "pobrała",
+          "grammar_point": "powtorka"
+        },
+        {
+          "id": "h3-5",
+          "text": "Po dwóch dniach Sofia odebrała ___ — wszystko było w normie.",
+          "answer": "wyniki",
+          "grammar_point": "powtorka"
+        },
+        {
+          "id": "h3-6",
+          "text": "Następnym razem ___ wziąć ze sobą książkę, bo dwie godziny to naprawdę długo.",
+          "answer": "będzie musiała",
+          "grammar_point": "powtorka"
+        }
+      ]
+    }
+  ]
+}

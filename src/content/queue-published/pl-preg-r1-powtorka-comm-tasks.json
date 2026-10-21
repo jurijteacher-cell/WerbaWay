@@ -1,0 +1,101 @@
+{
+  "lesson_id": "pl-preg-r1-powtorka",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: rejestracja, nowa lekarka i rada dla koleżanki",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę z nauczycielem. Potem zamieńcie się rolami.",
+  "estimated_minutes": 15,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "read-then-play",
+      "front_title": "Rejestracja: nie ma karty ciąży",
+      "back_scenario": "Przychodzisz na wizytę kontrolną i w rejestracji widzisz, że zostawiłaś kartę ciąży w domu. Nauczyciel jest rejestratorką. Najpierw przeczytajcie w rolach rozmowę Sofii z rejestratorką, potem odegraj swoją: zapytaj, czy wizyta może się odbyć bez karty, a jeśli nie — przełóż ją na inny dzień i potwierdź nowy termin.",
+      "back_checklist": [
+        "Przywitaj się i powiedz, na którą godzinę jesteś umówiona.",
+        "Wyjaśnij, czego zapomniałaś (forma dokonana: zapomniałam, zostawiłam).",
+        "Zapytaj, czy wizyta może się odbyć bez karty ciąży.",
+        "Przełóż wizytę i zapytaj o najbliższy wolny termin.",
+        "Zapytaj, o której masz się zgłosić i co musisz ze sobą przynieść.",
+        "Potwierdź nowy termin i podziękuj."
+      ],
+      "model_dialogue": [
+        {
+          "speaker": "Rejestratorka",
+          "line": "Dzień dobry, w czym mogę pomóc?"
+        },
+        {
+          "speaker": "Sofia",
+          "line": "Dzień dobry. Jestem umówiona na dziesiątą do doktor Nowak, na wizytę kontrolną."
+        },
+        {
+          "speaker": "Rejestratorka",
+          "line": "Nazwisko i PESEL poproszę."
+        },
+        {
+          "speaker": "Sofia",
+          "line": "Sofia Hnatiuk. Przepraszam, ale zostawiłam kartę ciąży w domu."
+        },
+        {
+          "speaker": "Rejestratorka",
+          "line": "Bez karty pani doktor nie zapisze dzisiejszych wyników. Mieszka pani daleko?"
+        },
+        {
+          "speaker": "Sofia",
+          "line": "Niestety tak, godzinę autobusem. Czy mogę przełożyć wizytę?"
+        },
+        {
+          "speaker": "Rejestratorka",
+          "line": "Mam wolny termin w czwartek o ósmej trzydzieści albo w piątek o dwunastej."
+        },
+        {
+          "speaker": "Sofia",
+          "line": "Czwartek będzie dobry. O której mam się zgłosić?"
+        },
+        {
+          "speaker": "Rejestratorka",
+          "line": "Dziesięć minut wcześniej. I proszę wziąć kartę ciąży i wyniki badania moczu."
+        },
+        {
+          "speaker": "Sofia",
+          "line": "Badanie moczu muszę zrobić jeszcze raz?"
+        },
+        {
+          "speaker": "Rejestratorka",
+          "line": "Tak, pani doktor zleciła je na każdą wizytę. Pojemnik dostanie pani w aptece."
+        },
+        {
+          "speaker": "Sofia",
+          "line": "Dobrze. Czyli czwartek, ósma trzydzieści. Dziękuję bardzo!"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "read-then-play",
+      "front_title": "Nowa lekarka: wywiad",
+      "back_scenario": "Przeprowadziłaś się do innego miasta i dziś pierwszy raz idziesz do nowej ginekolożki. Nauczyciel jest lekarką. Lekarka robi wywiad: pyta, w którym jesteś tygodniu, jakie badania już zrobiłaś, jakie były wyniki i jak się czujesz. Odpowiadaj pełnymi zdaniami.",
+      "back_checklist": [
+        "Powiedz, w którym jesteś tygodniu i kiedy masz termin porodu.",
+        "Powiedz, jakie badania już zrobiłaś (zrobiłam…, miałam…), a jakich jeszcze nie.",
+        "Powiedz, czy wyniki były w normie.",
+        "Opowiedz o jednym objawie (mdłości, zgaga, obrzęki) — od kiedy i jak często.",
+        "Powiedz, co musiałaś albo powinnaś była zrobić inaczej w poprzedniej przychodni.",
+        "Zapytaj, co będziesz musiała zrobić przed następną wizytą."
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "read-then-play",
+      "front_title": "Rada dla koleżanki",
+      "back_scenario": "Twoja koleżanka jest w szóstym tygodniu ciąży i za tydzień idzie na pierwszą wizytę w Polsce. Bardzo się boi. Nauczyciel jest koleżanką i zadaje dużo pytań. Opowiedz, jak wyglądała Twoja pierwsza wizyta i co ją czeka w najbliższych miesiącach.",
+      "back_checklist": [
+        "Opowiedz, jak wyglądała Twoja pierwsza wizyta (musiałam…, lekarz zrobił…).",
+        "Powiedz, co koleżanka musi ze sobą wziąć.",
+        "Powiedz jedną rzecz, którą Ty powinnaś była zrobić inaczej.",
+        "Wyjaśnij, jakie badania będzie musiała zrobić później (krzywa cukrowa, USG połówkowe).",
+        "Daj radę o rejestracji: jak się umówić, przełożyć albo potwierdzić wizytę.",
+        "Uspokój koleżankę jednym zdaniem na koniec."
+      ]
+    }
+  ]
+}

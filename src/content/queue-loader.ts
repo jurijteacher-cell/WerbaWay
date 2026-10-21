@@ -105,6 +105,17 @@ function normalizeFlip(raw: any): FlipTaskExercise {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function normalizeGrammarItem(it: any, i: number): GrammarPyramidItem {
+  const base = normalizeGrammarItemCore(it, i);
+  if (it?.image_url) {
+    base.image_url = it.image_url;
+    base.image_alt = it.image_alt ?? it.alt;
+    base.image_credit = it.image_credit ?? it.credit;
+  }
+  return base;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function normalizeGrammarItemCore(it: any, i: number): GrammarPyramidItem {
   const id = it.id ?? i + 1;
   if (it.left != null && it.right != null) {
     return { id, prompt: it.left, answer: it.right };

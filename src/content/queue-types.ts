@@ -80,6 +80,11 @@ export type GrammarPyramidItem = {
   options?: string[];
   explanation?: string;
   accept?: string[];
+  /** Optional photo shown above the item (Unsplash URL; never cropped). */
+  image_url?: string;
+  image_alt?: string;
+  /** e.g. "Fot. Jan Kowalski / Unsplash" */
+  image_credit?: string;
 };
 
 export type GrammarPyramidExercise = {

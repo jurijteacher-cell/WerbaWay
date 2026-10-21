@@ -1,0 +1,49 @@
+{
+  "lesson_id": "pl-preg-r1-powtorka",
+  "exercise_type": "vocab-cards",
+  "title": "Słownictwo: powtórka z dwóch lekcji",
+  "instruction": "34 słowa z lekcji 1 i 2 w pięciu grupach. Najpierw spróbuj sama przypomnieć sobie znaczenie, dopiero potem odwróć kartę. Z każdym słowem, którego nie pamiętałaś, powiedz własne zdanie.",
+  "estimated_minutes": 7,
+  "groups": ["Pierwsza wizyta", "Badania i wyniki", "Wizyta i USG", "Ciało i objawy", "W rejestracji"],
+  "comm_groups": ["W rejestracji"],
+  "items": [
+    {"id": "v01", "term": "ciąża", "group": "Pierwsza wizyta", "part_of_speech": "rzeczownik", "definition": "Czas, kiedy kobieta nosi w sobie dziecko — około dziewięciu miesięcy.", "example": "W pierwszej ciąży wszystko jest nowe i trochę straszne.", "translation_uk": "вагітність"},
+    {"id": "v02", "term": "ginekolog", "group": "Pierwsza wizyta", "part_of_speech": "rzeczownik", "definition": "Lekarz, który zajmuje się zdrowiem kobiety i prowadzi ciążę.", "example": "Mój ginekolog zawsze ma czas na pytania.", "translation_uk": "гінеколог"},
+    {"id": "v03", "term": "wywiad lekarski", "group": "Pierwsza wizyta", "part_of_speech": "wyrażenie", "definition": "Rozmowa na początku wizyty: lekarz pyta o zdrowie, leki i choroby w rodzinie.", "example": "Wywiad lekarski trwał dłużej niż samo badanie.", "translation_uk": "анамнез, опитування пацієнта"},
+    {"id": "v04", "term": "karta ciąży", "group": "Pierwsza wizyta", "part_of_speech": "wyrażenie", "definition": "Dokument, w którym lekarz zapisuje wizyty i wyniki badań przez całą ciążę.", "example": "Na każdą wizytę biorę ze sobą kartę ciąży.", "translation_uk": "обмінна карта вагітної"},
+    {"id": "v05", "term": "termin porodu", "group": "Pierwsza wizyta", "part_of_speech": "wyrażenie", "definition": "Przewidywany dzień, w którym urodzi się dziecko.", "example": "Lekarz wyliczył termin porodu na koniec marca.", "translation_uk": "передбачувана дата пологів"},
+    {"id": "v06", "term": "przychodnia", "group": "Pierwsza wizyta", "part_of_speech": "rzeczownik", "definition": "Miejsce, w którym przyjmują lekarze różnych specjalności.", "example": "Przychodnia jest otwarta od siódmej rano.", "translation_uk": "поліклініка"},
+    {"id": "v07", "term": "położna", "group": "Pierwsza wizyta", "part_of_speech": "rzeczownik", "definition": "Osoba, która opiekuje się kobietą w ciąży, przy porodzie i po porodzie.", "example": "Położna wytłumaczyła mi, jak liczyć ruchy dziecka.", "translation_uk": "акушерка"},
+
+    {"id": "v08", "term": "skierowanie", "group": "Badania i wyniki", "part_of_speech": "rzeczownik", "definition": "Papier od lekarza, z którym idziesz na badanie.", "example": "Zostawiłam skierowanie w domu i musiałam po nie wrócić.", "translation_uk": "направлення"},
+    {"id": "v09", "term": "morfologia krwi", "group": "Badania i wyniki", "part_of_speech": "wyrażenie", "definition": "Podstawowe badanie krwi; pokazuje między innymi poziom żelaza.", "example": "Po morfologii krwi lekarka przepisała mi żelazo.", "translation_uk": "загальний аналіз крові"},
+    {"id": "v10", "term": "badanie moczu", "group": "Badania i wyniki", "part_of_speech": "wyrażenie", "definition": "Badanie, w którym laboratorium sprawdza próbkę moczu.", "example": "Pojemnik na badanie moczu kupisz w aptece.", "translation_uk": "аналіз сечі"},
+    {"id": "v11", "term": "pobranie krwi", "group": "Badania i wyniki", "part_of_speech": "wyrażenie", "definition": "Moment, kiedy pielęgniarka bierze krew z żyły.", "example": "Pobranie krwi jest rano, od siódmej do dziesiątej.", "translation_uk": "забір крові"},
+    {"id": "v12", "term": "wynik", "group": "Badania i wyniki", "part_of_speech": "rzeczownik", "definition": "To, co pokazało badanie: liczby albo krótki opis.", "example": "Wyniki przyszły mailem po dwóch dniach.", "translation_uk": "результат"},
+    {"id": "v13", "term": "w normie", "group": "Badania i wyniki", "part_of_speech": "wyrażenie", "definition": "Taki, jaki powinien być; nie ma powodu do niepokoju.", "example": "Cukier wyszedł w normie, więc mogę spokojnie jeść owoce.", "translation_uk": "у нормі"},
+    {"id": "v14", "term": "na czczo", "group": "Badania i wyniki", "part_of_speech": "wyrażenie", "definition": "Bez jedzenia od wieczora; rano można pić tylko wodę.", "example": "Na badanie trzeba przyjść na czczo, więc śniadanie zjem później.", "translation_uk": "натщесерце"},
+    {"id": "v15", "term": "krzywa cukrowa", "group": "Badania i wyniki", "part_of_speech": "wyrażenie", "definition": "Test obciążenia glukozą: pijesz słodki roztwór, a krew pobiera się kilka razy.", "example": "Krzywą cukrową robi się zwykle między 24. a 28. tygodniem ciąży.", "translation_uk": "глюкозотолерантний тест"},
+
+    {"id": "v16", "term": "USG połówkowe", "group": "Wizyta i USG", "part_of_speech": "wyrażenie", "definition": "Dokładne badanie USG w połowie ciąży, między 18. a 22. tygodniem.", "example": "Na USG połówkowe poszłam razem z mężem.", "translation_uk": "УЗД у середині вагітності"},
+    {"id": "v17", "term": "wizyta kontrolna", "group": "Wizyta i USG", "part_of_speech": "wyrażenie", "definition": "Zwykła wizyta co kilka tygodni, żeby sprawdzić, czy wszystko jest dobrze.", "example": "Na wizycie kontrolnej lekarz zawsze pyta, jak śpię.", "translation_uk": "плановий огляд"},
+    {"id": "v18", "term": "zmierzyć", "group": "Wizyta i USG", "part_of_speech": "czasownik (dok.)", "definition": "Sprawdzić, ile czegoś jest: centymetrów, kilogramów, stopni.", "example": "Położna zmierzyła mi brzuch centymetrem.", "translation_uk": "виміряти"},
+    {"id": "v19", "term": "obejrzeć", "group": "Wizyta i USG", "part_of_speech": "czasownik (dok.)", "definition": "Popatrzeć na coś dokładnie i do końca.", "example": "Lekarka obejrzała wyniki i powiedziała, że wszystko jest dobrze.", "translation_uk": "оглянути, переглянути"},
+    {"id": "v20", "term": "zlecić", "group": "Wizyta i USG", "part_of_speech": "czasownik (dok.)", "definition": "Powiedzieć pacjentce, że ma zrobić jakieś badanie.", "example": "Lekarz zlecił mi badanie moczu przed następną wizytą.", "translation_uk": "призначити"},
+    {"id": "v21", "term": "tętno", "group": "Wizyta i USG", "part_of_speech": "rzeczownik", "definition": "Liczba uderzeń serca w ciągu minuty.", "example": "Tętno dziecka jest dużo szybsze niż tętno mamy.", "translation_uk": "пульс, серцебиття"},
+    {"id": "v22", "term": "ciśnienie", "group": "Wizyta i USG", "part_of_speech": "rzeczownik", "definition": "Siła, z jaką krew płynie w naczyniach; mierzy się je na ramieniu.", "example": "Rano mam niższe ciśnienie niż wieczorem.", "translation_uk": "тиск"},
+
+    {"id": "v23", "term": "obrzęk", "group": "Ciało i objawy", "part_of_speech": "rzeczownik", "definition": "Miejsce na ciele większe niż zwykle, bo zebrała się w nim woda.", "example": "Po długim dniu w pracy mam obrzęki kostek.", "translation_uk": "набряк"},
+    {"id": "v24", "term": "mdłości", "group": "Ciało i objawy", "part_of_speech": "rzeczownik (l. mn.)", "definition": "Uczucie, że zaraz zwymiotujesz.", "example": "W pierwszym trymestrze miałam mdłości od zapachu kawy.", "translation_uk": "нудота"},
+    {"id": "v25", "term": "zgaga", "group": "Ciało i objawy", "part_of_speech": "rzeczownik", "definition": "Nieprzyjemne pieczenie w gardle po jedzeniu.", "example": "Zgaga męczy mnie zwłaszcza w nocy.", "translation_uk": "печія"},
+    {"id": "v26", "term": "przytyć", "group": "Ciało i objawy", "part_of_speech": "czasownik (dok.)", "definition": "Zacząć ważyć więcej niż wcześniej.", "example": "Od początku ciąży przytyłam siedem kilogramów.", "translation_uk": "набрати вагу"},
+    {"id": "v27", "term": "kręgosłup", "group": "Ciało i objawy", "part_of_speech": "rzeczownik", "definition": "Kości, które biegną przez środek pleców.", "example": "Na USG lekarz sprawdza też kręgosłup dziecka.", "translation_uk": "хребет"},
+
+    {"id": "v28", "term": "umówić się", "group": "W rejestracji", "part_of_speech": "czasownik (dok.)", "definition": "Ustalić dzień i godzinę wizyty albo spotkania.", "example": "Umówiłam się na wizytę kontrolną na przyszły wtorek.", "translation_uk": "записатися, домовитися"},
+    {"id": "v29", "term": "przełożyć", "group": "W rejestracji", "part_of_speech": "czasownik (dok.)", "definition": "Zmienić termin na inny dzień albo inną godzinę.", "example": "Czy mogę przełożyć wizytę z piątku na poniedziałek?", "translation_uk": "перенести"},
+    {"id": "v30", "term": "odwołać", "group": "W rejestracji", "part_of_speech": "czasownik (dok.)", "definition": "Powiedzieć, że wizyta albo spotkanie się nie odbędzie.", "example": "Lekarka zachorowała i rejestracja odwołała wszystkie wizyty.", "translation_uk": "скасувати"},
+    {"id": "v31", "term": "potwierdzić", "group": "W rejestracji", "part_of_speech": "czasownik (dok.)", "definition": "Powiedzieć, że coś na pewno się odbędzie.", "example": "Przychodnia wysłała SMS, żebym potwierdziła wizytę.", "translation_uk": "підтвердити"},
+    {"id": "v32", "term": "zgłosić się", "group": "W rejestracji", "part_of_speech": "czasownik (dok.)", "definition": "Przyjść w umówione miejsce i powiedzieć, że już jesteś.", "example": "Na badanie trzeba zgłosić się dziesięć minut wcześniej.", "translation_uk": "з'явитися, прийти (за записом)"},
+    {"id": "v33", "term": "kolejka", "group": "W rejestracji", "part_of_speech": "rzeczownik", "definition": "Ludzie, którzy czekają jeden za drugim; też czas oczekiwania na wizytę.", "example": "Na prywatną wizytę nie ma kolejki, ale trzeba zapłacić.", "translation_uk": "черга"},
+    {"id": "v34", "term": "poczekalnia", "group": "W rejestracji", "part_of_speech": "rzeczownik", "definition": "Pokój z krzesłami, gdzie czeka się na swoją kolej.", "example": "W poczekalni zawsze czytam coś na telefonie.", "translation_uk": "зала очікування"}
+  ]
+}
