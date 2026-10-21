@@ -1,0 +1,137 @@
+{
+  "lesson_id": "pl-kpk1-r01-powtorka",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: sekretariat, nowa osoba, „nie rozumiem” i torba",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i rozmawiaj. Potem zamiana ról.",
+  "instruction_uk": "Переверни картку, прочитай ситуацію й говори. Потім мінятеся ролями.",
+  "estimated_minutes": 20,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "read-then-play",
+      "front_title": "W sekretariacie szkoły",
+      "back_scenario": "Pierwszy dzień w szkole językowej w Krakowie. Nauczyciel jest sekretarką. Najpierw przeczytajcie dialog w rolach. Potem rozmowa jeszcze raz — ale teraz to Ty i Twoje dane.",
+      "back_checklist": [
+        "Przywitaj się oficjalnie.",
+        "Powiedz imię i nazwisko. Przeliteruj nazwisko.",
+        "Powiedz, skąd jesteś.",
+        "Podaj adres i numer telefonu.",
+        "Powiedz, dlaczego uczysz się polskiego: bo… / żeby…",
+        "Podziękuj i pożegnaj się."
+      ],
+      "model_dialogue": [
+        {
+          "speaker": "Sekretarka",
+          "voice": "pl-PL-female",
+          "line": "Dzień dobry! Jak się pan nazywa?"
+        },
+        {
+          "speaker": "Andrij",
+          "voice": "pl-PL-male",
+          "line": "Dzień dobry. Nazywam się Andrij Melnyk."
+        },
+        {
+          "speaker": "Sekretarka",
+          "voice": "pl-PL-female",
+          "line": "Przepraszam, proszę przeliterować nazwisko."
+        },
+        {
+          "speaker": "Andrij",
+          "voice": "pl-PL-male",
+          "line": "M-e-l-n-y-k."
+        },
+        {
+          "speaker": "Sekretarka",
+          "voice": "pl-PL-female",
+          "line": "Dziękuję. Skąd pan jest?"
+        },
+        {
+          "speaker": "Andrij",
+          "voice": "pl-PL-male",
+          "line": "Jestem z Ukrainy, ale teraz mieszkam w Krakowie."
+        },
+        {
+          "speaker": "Sekretarka",
+          "voice": "pl-PL-female",
+          "line": "A adres w Krakowie?"
+        },
+        {
+          "speaker": "Andrij",
+          "voice": "pl-PL-male",
+          "line": "Ulica Spacerowa 17 przez 4."
+        },
+        {
+          "speaker": "Sekretarka",
+          "voice": "pl-PL-female",
+          "line": "Dobrze. Numer telefonu?"
+        },
+        {
+          "speaker": "Andrij",
+          "voice": "pl-PL-male",
+          "line": "21 08 19 27."
+        },
+        {
+          "speaker": "Sekretarka",
+          "voice": "pl-PL-female",
+          "line": "A dlaczego uczy się pan polskiego?"
+        },
+        {
+          "speaker": "Andrij",
+          "voice": "pl-PL-male",
+          "line": "Uczę się polskiego, żeby pracować w Polsce."
+        },
+        {
+          "speaker": "Sekretarka",
+          "voice": "pl-PL-female",
+          "line": "Świetnie. Grupa A1, klasa numer 12. Miłej lekcji!"
+        },
+        {
+          "speaker": "Andrij",
+          "voice": "pl-PL-male",
+          "line": "Dziękuję bardzo. Do widzenia!"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Nowa osoba w grupie",
+      "back_scenario": "Przerwa na kursie. W grupie jest nowa osoba — to nauczyciel. Nie znacie się. Rozmawiacie nieoficjalnie: na „ty”. Zapytaj o wszystko!",
+      "back_checklist": [
+        "Cześć! Przedstaw się i powiedz: Bardzo mi miło.",
+        "Zapytaj, jak ta osoba ma na imię i skąd jest.",
+        "Zapytaj, gdzie mieszka.",
+        "Zapytaj, dlaczego uczy się polskiego.",
+        "Zapytaj, czy gra w tenisa albo na gitarze.",
+        "Na koniec: Cześć, do jutra!"
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "front_title": "Nie rozumiem!",
+      "back_scenario": "Nauczyciel mówi szybko i używa słów, których nie znasz. Nie panikuj! Ratuj rozmowę po polsku — bez ukraińskiego i bez angielskiego.",
+      "back_checklist": [
+        "Przepraszam, nie rozumiem.",
+        "Proszę powtórzyć.",
+        "Co to znaczy „…”?",
+        "Jak się mówi po polsku „…”?",
+        "Proszę przeliterować.",
+        "Aha, rozumiem! Dziękuję."
+      ]
+    },
+    {
+      "id": "c4",
+      "mode": "play",
+      "front_title": "Co jest w torbie?",
+      "back_scenario": "Weź torbę. Pokaż na kamerze pięć rzeczy i powiedz o nich wszystko, co umiesz. Potem nauczyciel pokazuje swoje rzeczy, a Ty pytasz.",
+      "back_checklist": [
+        "To jest… (co?)",
+        "Ten / ta / to … jest … — jaki to kolor?",
+        "Nowy czy stary? Duży czy mały? Dobry czy zły?",
+        "Nauczyciel pyta: Czy to jest…? — Tak, to jest… / Nie, to nie jest…",
+        "Teraz Ty pytasz: Co to jest? Jaki to kolor?"
+      ]
+    }
+  ]
+}

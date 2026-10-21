@@ -1,0 +1,202 @@
+{
+  "lesson_id": "pl-kpk1-r01-powtorka",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: powtórka lekcji 1–3",
+  "instruction": "Trzy bloki: słowa, formy i wiadomość od Kasi.",
+  "instruction_uk": "Три блоки: слова, форми і повідомлення від Касі.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "matching",
+      "title": "1. Przeciwieństwa",
+      "instruction": "Proszę połączyć słowo z przeciwieństwem.",
+      "instruction_uk": "Протилежності: з'єднай пари.",
+      "items": [
+        {
+          "id": "h1-1",
+          "left": "nowy",
+          "right": "stary",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-2",
+          "left": "duży",
+          "right": "mały",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-3",
+          "left": "dobry",
+          "right": "zły",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-4",
+          "left": "tu",
+          "right": "tam",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-5",
+          "left": "na lewo",
+          "right": "na prawo",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-6",
+          "left": "Dzień dobry!",
+          "right": "Do widzenia!",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-7",
+          "left": "rozumiem",
+          "right": "nie rozumiem",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-8",
+          "left": "czarny",
+          "right": "biały",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Dobra forma",
+      "instruction": "Proszę uzupełnić. Wpisz słowo z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Moja koleżanka ___ Ewa. (nazywać się)",
+          "answer": "nazywa się",
+          "accept": [
+            "się nazywa"
+          ],
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "h2-2",
+          "text": "Ewa i Piotr ___ z Polski. (być)",
+          "answer": "są",
+          "grammar_point": "byc"
+        },
+        {
+          "id": "h2-3",
+          "text": "Czy oni ___ w Polsce? (mieszkać)",
+          "answer": "mieszkają",
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "h2-4",
+          "text": "Ty ___ słownik polsko-ukraiński? (mieć)",
+          "answer": "masz",
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "h2-5",
+          "text": "Przepraszam, (ja) nie ___. Proszę powtórzyć. (rozumieć)",
+          "answer": "rozumiem",
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "h2-6",
+          "text": "Wy ___ na gitarze? (grać)",
+          "answer": "gracie",
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "h2-7",
+          "text": "___ mapa jest bardzo stara. (ten / ta / to)",
+          "answer": "Ta",
+          "grammar_point": "rodzaj"
+        },
+        {
+          "id": "h2-8",
+          "text": "To dziecko jest ___. (mały)",
+          "answer": "małe",
+          "grammar_point": "przymiotnik-zgoda"
+        },
+        {
+          "id": "h2-9",
+          "text": "Ta tablica jest ___. (czarny)",
+          "answer": "czarna",
+          "grammar_point": "przymiotnik-zgoda"
+        },
+        {
+          "id": "h2-10",
+          "text": "Ten segregator jest ___. (niebieski)",
+          "answer": "niebieski",
+          "grammar_point": "przymiotnik-zgoda"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "drag-and-drop",
+      "title": "3. Wiadomość od Kasi",
+      "instruction": "Kasia pisze do nowego kolegi z kursu. Przeciągnij słowa w luki. Trzy słowa są niepotrzebne.",
+      "instruction_uk": "Перетягни слова в пропуски. Три слова зайві.",
+      "bank": [
+        "Mam",
+        "mieszkam",
+        "bo",
+        "numer",
+        "słownik",
+        "jesteś",
+        "mieszkasz",
+        "żeby",
+        "jest",
+        "masz"
+      ],
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Cześć! ___ na imię Kasia.",
+          "answer": "Mam",
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "h3-2",
+          "text": "Jestem z Polski, ale teraz ___ w Paryżu.",
+          "answer": "mieszkam",
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "h3-3",
+          "text": "Uczę się francuskiego, ___ chcę tu pracować.",
+          "answer": "bo",
+          "grammar_point": "bo-zeby",
+          "explanation": "bo + chcę (forma osobowa); żeby + bezokolicznik (żeby pracować)."
+        },
+        {
+          "id": "h3-4",
+          "text": "Mój ___ telefonu to 14 27 03 11.",
+          "answer": "numer",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h3-5",
+          "text": "Mam nowy ___ polsko-francuski. Jest zielony i bardzo dobry!",
+          "answer": "słownik",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h3-6",
+          "text": "A ty? Skąd ___?",
+          "answer": "jesteś",
+          "grammar_point": "byc"
+        },
+        {
+          "id": "h3-7",
+          "text": "Napisz, gdzie ___ i dlaczego uczysz się polskiego!",
+          "answer": "mieszkasz",
+          "grammar_point": "koniugacja-m-sz"
+        }
+      ]
+    }
+  ]
+}
