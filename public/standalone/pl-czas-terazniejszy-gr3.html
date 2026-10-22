@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Werba Way · Grupa III: -ę, -isz / -ysz</title>
+<style>
+:root{--bg:#F6F1E7;--paper:#FFFDF8;--ink:#1f2a37;--soft:#6b7280;--line:#e7dfcf;--ok:#1f8a5b;--okbg:#e3f4ea;--no:#c0392b;--nobg:#fbe5e1;--acc:#F7D774;--chip:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:16px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 18px 8px;box-shadow:0 2px 0 rgba(0,0,0,.04)}
+.eyebrow{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);margin:0}
+h1{font-size:22px;margin:4px 0 6px}
+.uk{color:var(--soft);font-size:14px;margin:2px 0}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tabs button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
+.tabs button.on{background:var(--acc);border-color:#e8c14d;font-weight:600}
+.item{border-top:1px dashed var(--line);padding:12px 0}
+.item:first-child{border-top:0}
+.q{margin:0 0 8px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{border:1px solid var(--line);background:var(--chip);border-radius:10px;padding:7px 12px;font:inherit;cursor:pointer}
+.chip.sel{border-color:#c9a227;background:#fff6d6}
+.chip.ok{border-color:var(--ok);background:var(--okbg);color:var(--ok)}
+.chip.no{border-color:var(--no);background:var(--nobg);color:var(--no)}
+.chip:disabled{opacity:.55;cursor:default}
+input.blank{font:inherit;border:0;border-bottom:2px dashed #9ca3af;background:#fff;padding:6px 6px;min-width:180px}
+input.blank.ok{border-color:var(--ok);background:var(--okbg)}
+input.blank.no{border-color:var(--no);background:var(--nobg)}
+.btn{border:0;background:#1f2a37;color:#fff;border-radius:10px;padding:7px 14px;font:inherit;cursor:pointer}
+.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.fb{font-size:14px}
+.fb.ok{color:var(--ok)} .fb.no{color:var(--no)}
+.sb-out{min-height:44px;border:2px dashed var(--line);border-radius:10px;padding:6px;display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;background:#fff}
+.match{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.match .col{display:grid;gap:8px;align-content:start}
+.match .chip{text-align:left}
+.score{margin:14px 0 6px;font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin-top:10px}
+.vc{perspective:900px;height:170px;cursor:pointer}
+.vc .in{position:relative;width:100%;height:100%;transition:transform .45s;transform-style:preserve-3d}
+.vc.flip .in{transform:rotateY(180deg)}
+.vc .f,.vc .b{position:absolute;inset:0;backface-visibility:hidden;border-radius:12px;border:1px solid var(--line);padding:12px;display:flex;flex-direction:column;justify-content:center}
+.vc .f{background:#fff;text-align:center;font-weight:700;font-size:18px}
+.vc .f small{display:block;font-weight:400;font-size:12px;color:var(--soft);margin-top:6px}
+.vc .b{background:#fffaf0;transform:rotateY(180deg);font-size:14px;gap:4px}
+.vc .b .tr{font-weight:700}
+.vc .b .ex{font-style:italic;color:#374151}
+.g0{border-top:4px solid #f0a35e}.g1{border-top:4px solid #5b9bd5}.g2{border-top:4px solid #5cb85c}.g3{border-top:4px solid #9b6fd0}.g4{border-top:4px solid #e07ab0}
+.flips{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:10px}
+.ft{border-radius:12px;border:1px solid var(--line);padding:14px;cursor:pointer;min-height:110px}
+.ft h3{margin:0 0 6px;font-size:17px}
+.ft .hint{font-size:13px;color:var(--soft);font-style:italic}
+.ftc0{background:#fff1b8}.ftc1{background:#d8efe3}.ftc2{background:#dcebf9}.ftc3{background:#f9ddd3}
+.ftback{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:12px}
+.ftback ul{margin:6px 0 0 18px;padding:0}
+.dlg p{margin:4px 0}
+.filter{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.filter button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 10px;font-size:13px;cursor:pointer}
+.filter button.on{background:#1f2a37;color:#fff}
+@media (max-width:560px){.match{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="card" id="app"></div></div>
+<script>
+const DATA = {"grammar": {"lesson_id": "pl-czas-terazniejszy", "exercise_type": "fill-in-blank", "title": "Grupa III: -ę, -isz / -ysz", "instruction": "Wybierz, wpisz, napisz.", "instruction_uk": "Выбери, впиши, напиши.", "estimated_minutes": 40, "blocks": [{"block_id": "g1", "title": "A. Wybierz", "exercise_type": "fill-in-blank", "instruction": "Wybierz właściwą formę.", "instruction_uk": "Выбери правильную форму.", "items": [{"id": "g1-1", "text": "Ja ___ ten tekst.", "options": ["czyta", "czytam", "czytasz"], "answer": "czytam", "grammar_point": "czas-terazniejszy", "explanation": "ja → -m"}, {"id": "g1-2", "text": "Czy ty ___ brata?", "options": ["masz", "mam", "ma"], "answer": "masz", "grammar_point": "czas-terazniejszy", "explanation": "ty → -sz"}, {"id": "g1-3", "text": "Oni ___ wszystko.", "options": ["rozumie", "rozumiemy", "rozumieją"], "answer": "rozumieją", "grammar_point": "czas-terazniejszy", "explanation": "oni → on + -ją"}, {"id": "g1-4", "text": "My ___ w centrum.", "options": ["mieszkacie", "mieszkamy", "mieszkają"], "answer": "mieszkamy", "grammar_point": "czas-terazniejszy", "explanation": "my → on + -my"}, {"id": "g1-5", "text": "Ewa ___ muzyki.", "options": ["słucha", "słuchasz", "słuchają"], "answer": "słucha", "grammar_point": "czas-terazniejszy", "explanation": "ona = ty без -sz"}, {"id": "g1-6", "text": "Wy ___ nauczyciela.", "options": ["pytamy", "pytają", "pytacie"], "answer": "pytacie", "grammar_point": "czas-terazniejszy", "explanation": "wy → on + -cie"}]}, {"block_id": "g2", "title": "B. Wpisz", "exercise_type": "fill-in-blank", "instruction": "Wpisz czasownik w odpowiedniej formie.", "instruction_uk": "Впиши глагол в нужной форме.", "items": [{"id": "g2-1", "text": "Ja ___ (mieszkać) w Poznaniu.", "answer": "mieszkam", "grammar_point": "czas-terazniejszy"}, {"id": "g2-2", "text": "My ___ (czekać) na autobus.", "answer": "czekamy", "grammar_point": "czas-terazniejszy"}, {"id": "g2-3", "text": "Oni nie ___ (umieć) pływać.", "answer": "umieją", "grammar_point": "czas-terazniejszy"}, {"id": "g2-4", "text": "Anna ___ (mieć) psa.", "answer": "ma", "grammar_point": "czas-terazniejszy", "explanation": "mieć спрягается как czytać: mam, masz, ma"}, {"id": "g2-5", "text": "Dzieci ___ (grać) w piłkę.", "answer": "grają", "grammar_point": "czas-terazniejszy"}, {"id": "g2-6", "text": "Czy pan ___ (pamiętać) moje imię?", "answer": "pamięta", "grammar_point": "czas-terazniejszy", "explanation": "pan / pani + форма on"}, {"id": "g2-7", "text": "Czy ty ___ (oglądać) seriale?", "answer": "oglądasz", "grammar_point": "czas-terazniejszy"}, {"id": "g2-8", "text": "Ona ___ (kochać) koty.", "answer": "kocha", "grammar_point": "czas-terazniejszy"}]}, {"block_id": "g3", "title": "C. Napisz", "exercise_type": "fill-in-blank", "instruction": "Napisz po polsku.", "instruction_uk": "Напиши по-польски. Можно с местоимением или без.", "items": [{"id": "g3-1", "text": "Я живу в Варшаве.", "answer": "Mieszkam w Warszawie.", "grammar_point": "czas-terazniejszy", "accept": ["Ja mieszkam w Warszawie."]}, {"id": "g3-2", "text": "Ты понимаешь?", "answer": "Rozumiesz?", "grammar_point": "czas-terazniejszy", "accept": ["Czy rozumiesz?", "Czy ty rozumiesz?", "Ty rozumiesz?"]}, {"id": "g3-3", "text": "У нас есть машина.", "answer": "Mamy samochód.", "grammar_point": "czas-terazniejszy", "accept": ["Mamy auto.", "My mamy auto.", "My mamy samochód."]}, {"id": "g3-4", "text": "Они ждут автобус.", "answer": "Czekają na autobus.", "grammar_point": "czas-terazniejszy", "accept": ["One czekają na autobus.", "Oni czekają na autobus."]}, {"id": "g3-5", "text": "Вы играете в теннис?", "answer": "Gracie w tenisa?", "grammar_point": "czas-terazniejszy", "accept": ["Czy gracie w tenisa?", "Czy wy gracie w tenisa?", "Wy gracie w tenisa?"]}]}, {"block_id": "g4", "title": "A. Wybierz", "exercise_type": "fill-in-blank", "instruction": "Wybierz właściwą formę.", "instruction_uk": "Выбери правильную форму.", "items": [{"id": "g4-1", "text": "Ja ___ list.", "options": ["pisam", "pisze", "piszę"], "answer": "piszę", "grammar_point": "czas-terazniejszy", "explanation": "pisać — группа II: piszę"}, {"id": "g4-2", "text": "Czy ty ___ w szpitalu?", "options": ["pracujesz", "pracowasz", "pracuje"], "answer": "pracujesz", "grammar_point": "czas-terazniejszy", "explanation": "-ować → -uję, -ujesz"}, {"id": "g4-3", "text": "On ___ sok.", "options": ["pija", "pije", "pijesz"], "answer": "pije", "grammar_point": "czas-terazniejszy", "explanation": "pić → piję, pije"}, {"id": "g4-4", "text": "My ___ do Gdyni.", "options": ["jadziemy", "jedzemy", "jedziemy"], "answer": "jedziemy", "grammar_point": "czas-terazniejszy", "explanation": "jadę только в ja и oni"}, {"id": "g4-5", "text": "Oni ___ owoce.", "options": ["kupują", "kupowają", "kupuje"], "answer": "kupują", "grammar_point": "czas-terazniejszy", "explanation": "kupuję → kupują"}, {"id": "g4-6", "text": "Wy ___ wejść.", "options": ["mogecie", "możecie", "możemy"], "answer": "możecie", "grammar_point": "czas-terazniejszy", "explanation": "mogę только в ja и oni"}]}, {"block_id": "g5", "title": "B. Wpisz", "exercise_type": "fill-in-blank", "instruction": "Wpisz czasownik w odpowiedniej formie.", "instruction_uk": "Впиши глагол в нужной форме.", "items": [{"id": "g5-1", "text": "Ja ___ (pracować) w banku.", "answer": "pracuję", "grammar_point": "czas-terazniejszy"}, {"id": "g5-2", "text": "Co ty ___ (pisać)?", "answer": "piszesz", "grammar_point": "czas-terazniejszy"}, {"id": "g5-3", "text": "My ___ (studiować) medycynę.", "answer": "studiujemy", "grammar_point": "czas-terazniejszy"}, {"id": "g5-4", "text": "O której wy ___ (wstawać)?", "answer": "wstajecie", "grammar_point": "czas-terazniejszy", "explanation": "-awać → -aję"}, {"id": "g5-5", "text": "Ona teraz ___ (jechać) do Krakowa.", "answer": "jedzie", "grammar_point": "czas-terazniejszy"}, {"id": "g5-6", "text": "Przepraszam, dziś nie ___ (móc) przyjść. (ja)", "answer": "mogę", "grammar_point": "czas-terazniejszy"}, {"id": "g5-7", "text": "Czy ty ___ (brać) parasol?", "answer": "bierzesz", "grammar_point": "czas-terazniejszy", "explanation": "biorę, bierzesz, biorą"}, {"id": "g5-8", "text": "Dzieci ___ (myć) ręce.", "answer": "myją", "grammar_point": "czas-terazniejszy"}]}, {"block_id": "g6", "title": "C. Napisz", "exercise_type": "fill-in-blank", "instruction": "Napisz po polsku.", "instruction_uk": "Напиши по-польски. Можно с местоимением или без.", "items": [{"id": "g6-1", "text": "Я рисую.", "answer": "Rysuję.", "grammar_point": "czas-terazniejszy", "accept": ["Ja rysuję."]}, {"id": "g6-2", "text": "Ты встаёшь в семь?", "answer": "Wstajesz o siódmej?", "grammar_point": "czas-terazniejszy", "accept": ["Czy ty wstajesz o siódmej?", "Czy wstajesz o siódmej?", "Ty wstajesz o siódmej?"]}, {"id": "g6-3", "text": "Мы готовим ужин.", "answer": "Gotujemy kolację.", "grammar_point": "czas-terazniejszy", "accept": ["My gotujemy kolację."]}, {"id": "g6-4", "text": "Она пьёт воду.", "answer": "Pije wodę.", "grammar_point": "czas-terazniejszy", "accept": ["Ona pije wodę."]}, {"id": "g6-5", "text": "Они не могут прийти.", "answer": "Nie mogą przyjść.", "grammar_point": "czas-terazniejszy", "accept": ["One nie mogą przyjść.", "Oni nie mogą przyjść."]}]}, {"block_id": "g7", "title": "A. Wybierz", "exercise_type": "fill-in-blank", "instruction": "Wybierz właściwą formę.", "instruction_uk": "Выбери правильную форму.", "items": [{"id": "g7-1", "text": "Ja ___ po polsku.", "options": ["mówisz", "mówię", "mówi"], "answer": "mówię", "grammar_point": "czas-terazniejszy"}, {"id": "g7-2", "text": "Ty ___ codziennie?", "options": ["uczisz się", "uczy się", "uczysz się"], "answer": "uczysz się", "grammar_point": "czas-terazniejszy", "explanation": "после cz → -ysz"}, {"id": "g7-3", "text": "Oni ___ o pomoc.", "options": ["prosią", "proszą", "prosza"], "answer": "proszą", "grammar_point": "czas-terazniejszy", "explanation": "как прошу: s → sz в ja и oni"}, {"id": "g7-4", "text": "My ___ zakupy.", "options": ["robimy", "robiemy", "robią"], "answer": "robimy", "grammar_point": "czas-terazniejszy"}, {"id": "g7-5", "text": "Ona ___ muzykę.", "options": ["słyszi", "słyszę", "słyszy"], "answer": "słyszy", "grammar_point": "czas-terazniejszy", "explanation": "после sz → -y"}, {"id": "g7-6", "text": "Ja ___ na siłownię.", "options": ["chodzię", "chodzę", "chodzi"], "answer": "chodzę", "grammar_point": "czas-terazniejszy", "explanation": "как хожу: chodzę, chodzisz"}]}, {"block_id": "g8", "title": "B. Wpisz", "exercise_type": "fill-in-blank", "instruction": "Wpisz czasownik w odpowiedniej formie.", "instruction_uk": "Впиши глагол в нужной форме.", "items": [{"id": "g8-1", "text": "Co ty ___ (robić) wieczorem?", "answer": "robisz", "grammar_point": "czas-terazniejszy"}, {"id": "g8-2", "text": "Tomek ___ (uczyć się) hiszpańskiego.", "answer": "uczy się", "grammar_point": "czas-terazniejszy"}, {"id": "g8-3", "text": "My bardzo ___ (lubić) kino.", "answer": "lubimy", "grammar_point": "czas-terazniejszy"}, {"id": "g8-4", "text": "Czy wy mnie ___ (słyszeć)?", "answer": "słyszycie", "grammar_point": "czas-terazniejszy"}, {"id": "g8-5", "text": "Oni ___ (chodzić) na basen w soboty.", "answer": "chodzą", "grammar_point": "czas-terazniejszy"}, {"id": "g8-6", "text": "Ona zawsze ___ (płacić) kartą.", "answer": "płaci", "grammar_point": "czas-terazniejszy"}, {"id": "g8-7", "text": "Codziennie ___ (jeździć) do pracy rowerem. (ja)", "answer": "jeżdżę", "grammar_point": "czas-terazniejszy", "explanation": "как езжу: jeżdżę, jeździsz"}, {"id": "g8-8", "text": "Oni ___ (myśleć), że to dobry pomysł.", "answer": "myślą", "grammar_point": "czas-terazniejszy"}]}, {"block_id": "g9", "title": "C. Napisz", "exercise_type": "fill-in-blank", "instruction": "Napisz po polsku.", "instruction_uk": "Напиши по-польски. Можно с местоимением или без.", "items": [{"id": "g9-1", "text": "Я хожу на работу пешком.", "answer": "Chodzę do pracy pieszo.", "grammar_point": "czas-terazniejszy", "accept": ["Chodzę pieszo do pracy.", "Ja chodzę do pracy pieszo.", "Ja chodzę pieszo do pracy."]}, {"id": "g9-2", "text": "Ты говоришь по-английски?", "answer": "Mówisz po angielsku?", "grammar_point": "czas-terazniejszy", "accept": ["Czy mówisz po angielsku?", "Czy ty mówisz po angielsku?", "Ty mówisz po angielsku?"]}, {"id": "g9-3", "text": "Мы учим польский.", "answer": "Uczymy się polskiego.", "grammar_point": "czas-terazniejszy", "accept": ["My uczymy się polskiego.", "Uczymy się języka polskiego."]}, {"id": "g9-4", "text": "Я плачу наличными.", "answer": "Płacę gotówką.", "grammar_point": "czas-terazniejszy", "accept": ["Ja płacę gotówką."]}, {"id": "g9-5", "text": "Они видят море.", "answer": "Widzą morze.", "grammar_point": "czas-terazniejszy", "accept": ["One widzą morze.", "Oni widzą morze."]}]}, {"block_id": "g10", "title": "A. Wybierz", "exercise_type": "fill-in-blank", "instruction": "Wybierz właściwą formę.", "instruction_uk": "Выбери правильную форму.", "items": [{"id": "g10-1", "text": "Ja ___ w pracy.", "options": ["jest", "jestem", "jesteś"], "answer": "jestem", "grammar_point": "czas-terazniejszy"}, {"id": "g10-2", "text": "Oni ___ zmęczeni.", "options": ["są", "jest", "jesteście"], "answer": "są", "grammar_point": "czas-terazniejszy"}, {"id": "g10-3", "text": "Czy ty ___ mięso?", "options": ["jem", "je", "jesz"], "answer": "jesz", "grammar_point": "czas-terazniejszy"}, {"id": "g10-4", "text": "Oni ___ zupę.", "options": ["jeją", "jedzą", "jemy"], "answer": "jedzą", "grammar_point": "czas-terazniejszy", "explanation": "jem, jesz… но oni jedzą"}, {"id": "g10-5", "text": "Ja nie ___.", "options": ["wiedzę", "wie", "wiem"], "answer": "wiem", "grammar_point": "czas-terazniejszy"}, {"id": "g10-6", "text": "Czy wy ___?", "options": ["wiecie", "wiedzicie", "wiedzą"], "answer": "wiecie", "grammar_point": "czas-terazniejszy"}]}, {"block_id": "g11", "title": "B. Wpisz", "exercise_type": "fill-in-blank", "instruction": "Wpisz czasownik w odpowiedniej formie.", "instruction_uk": "Впиши глагол в нужной форме.", "items": [{"id": "g11-1", "text": "Ja ___ (być) lekarzem.", "answer": "jestem", "grammar_point": "czas-terazniejszy"}, {"id": "g11-2", "text": "Gdzie ty teraz ___ (być)?", "answer": "jesteś", "grammar_point": "czas-terazniejszy"}, {"id": "g11-3", "text": "Rodzice ___ (być) w domu.", "answer": "są", "grammar_point": "czas-terazniejszy"}, {"id": "g11-4", "text": "Czy pani ___ (być) z Polski?", "answer": "jest", "grammar_point": "czas-terazniejszy", "explanation": "pani + форма ona"}, {"id": "g11-5", "text": "My ___ (jeść) dużo warzyw.", "answer": "jemy", "grammar_point": "czas-terazniejszy"}, {"id": "g11-6", "text": "Ona ___ (jeść) śniadanie o ósmej.", "answer": "je", "grammar_point": "czas-terazniejszy"}, {"id": "g11-7", "text": "On nie ___ (wiedzieć), gdzie jest dworzec.", "answer": "wie", "grammar_point": "czas-terazniejszy"}, {"id": "g11-8", "text": "Oni wszystko ___ (wiedzieć).", "answer": "wiedzą", "grammar_point": "czas-terazniejszy"}]}, {"block_id": "g12", "title": "C. Napisz", "exercise_type": "fill-in-blank", "instruction": "Napisz po polsku.", "instruction_uk": "Напиши по-польски. Можно с местоимением или без.", "items": [{"id": "g12-1", "text": "Где вы? (многим)", "answer": "Gdzie jesteście?", "grammar_point": "czas-terazniejszy", "accept": ["Gdzie wy jesteście?"]}, {"id": "g12-2", "text": "Мы едим пиццу.", "answer": "Jemy pizzę.", "grammar_point": "czas-terazniejszy", "accept": ["My jemy pizzę."]}, {"id": "g12-3", "text": "Ты знаешь, где он?", "answer": "Wiesz, gdzie on jest?", "grammar_point": "czas-terazniejszy", "accept": ["Czy wiesz gdzie jest?", "Czy wiesz gdzie on jest?", "Czy wiesz, gdzie jest?", "Czy wiesz, gdzie on jest?", "Ty wiesz gdzie on jest?", "Ty wiesz, gdzie on jest?", "Wiesz gdzie jest?", "Wiesz gdzie on jest?", "Wiesz, gdzie jest?"]}, {"id": "g12-4", "text": "Они не знают, что делать.", "answer": "Nie wiedzą, co robić.", "grammar_point": "czas-terazniejszy", "accept": ["Nie wiedzą co robić.", "One nie wiedzą co robić.", "One nie wiedzą, co robić.", "Oni nie wiedzą co robić.", "Oni nie wiedzą, co robić."]}, {"id": "g12-5", "text": "Она дома.", "answer": "Jest w domu.", "grammar_point": "czas-terazniejszy", "accept": ["Ona jest w domu."]}]}, {"block_id": "g13", "title": "A. Wybierz", "exercise_type": "fill-in-blank", "instruction": "Wybierz właściwą formę.", "instruction_uk": "Выбери правильную форму.", "items": [{"id": "g13-1", "text": "Ja ___ w szpitalu.", "options": ["pracowam", "pracuję"], "answer": "pracuję", "grammar_point": "czas-terazniejszy", "explanation": "-ować → -uję"}, {"id": "g13-2", "text": "Ty ___ za szybko.", "options": ["mówiesz", "mówisz"], "answer": "mówisz", "grammar_point": "czas-terazniejszy", "explanation": "группа III: -isz"}, {"id": "g13-3", "text": "Oni ___ test.", "options": ["pisają", "piszą"], "answer": "piszą", "grammar_point": "czas-terazniejszy", "explanation": "pisać — группа II"}, {"id": "g13-4", "text": "My ___ czas.", "options": ["miejemy", "mamy"], "answer": "mamy", "grammar_point": "czas-terazniejszy", "explanation": "mieć: mam, mamy"}, {"id": "g13-5", "text": "Ona ___ obiad.", "options": ["jedzie", "je"], "answer": "je", "grammar_point": "czas-terazniejszy", "explanation": "jeść → je, jechać → jedzie"}, {"id": "g13-6", "text": "Czy wy ___, gdzie jest apteka?", "options": ["znacie", "wiecie"], "answer": "wiecie", "grammar_point": "czas-terazniejszy", "explanation": "знать где / что → wiedzieć"}, {"id": "g13-7", "text": "Czy ty ___ Marka?", "options": ["wiesz", "znasz"], "answer": "znasz", "grammar_point": "czas-terazniejszy", "explanation": "знать человека → znać"}, {"id": "g13-8", "text": "Pani ___ z Warszawy?", "options": ["jesteś", "jest"], "answer": "jest", "grammar_point": "czas-terazniejszy", "explanation": "pani + форма ona"}]}, {"block_id": "g14", "title": "B. Wpisz", "exercise_type": "fill-in-blank", "instruction": "Najpierw grupa, potem forma.", "instruction_uk": "Сначала определи группу, потом впиши форму.", "items": [{"id": "g14-1", "text": "Ja ___ (gotować) obiad.", "answer": "gotuję", "grammar_point": "czas-terazniejszy"}, {"id": "g14-2", "text": "Oni ___ (mieszkać) w Gdańsku.", "answer": "mieszkają", "grammar_point": "czas-terazniejszy"}, {"id": "g14-3", "text": "Czy pani ___ (mówić) po angielsku?", "answer": "mówi", "grammar_point": "czas-terazniejszy"}, {"id": "g14-4", "text": "Ja ___ (mieć) siostrę.", "answer": "mam", "grammar_point": "czas-terazniejszy"}, {"id": "g14-5", "text": "Co wy ___ (robić) w weekend?", "answer": "robicie", "grammar_point": "czas-terazniejszy"}, {"id": "g14-6", "text": "Ona ___ (pisać) maile.", "answer": "pisze", "grammar_point": "czas-terazniejszy"}, {"id": "g14-7", "text": "My ___ (jeść) kolację.", "answer": "jemy", "grammar_point": "czas-terazniejszy"}, {"id": "g14-8", "text": "Dlaczego ty nie ___ (odpowiadać)?", "answer": "odpowiadasz", "grammar_point": "czas-terazniejszy"}, {"id": "g14-9", "text": "Oni jeszcze nie ___ (rozumieć) wszystkiego.", "answer": "rozumieją", "grammar_point": "czas-terazniejszy"}, {"id": "g14-10", "text": "Wieczorami ___ (uczyć się). (ja)", "answer": "uczę się", "grammar_point": "czas-terazniejszy"}]}, {"block_id": "g15", "title": "C. Napisz", "exercise_type": "fill-in-blank", "instruction": "Napisz po polsku.", "instruction_uk": "Напиши по-польски. Можно с местоимением или без.", "items": [{"id": "g15-1", "text": "Я работаю и учусь.", "answer": "Pracuję i uczę się.", "grammar_point": "czas-terazniejszy", "accept": ["Ja pracuję i się uczę.", "Ja pracuję i uczę się.", "Pracuję i się uczę."]}, {"id": "g15-2", "text": "Что ты пьёшь?", "answer": "Co pijesz?", "grammar_point": "czas-terazniejszy", "accept": ["Co ty pijesz?"]}, {"id": "g15-3", "text": "Мы не знаем, где они живут.", "answer": "Nie wiemy, gdzie oni mieszkają.", "grammar_point": "czas-terazniejszy", "accept": ["My nie wiemy gdzie mieszkają.", "My nie wiemy gdzie oni mieszkają.", "My nie wiemy, gdzie mieszkają.", "My nie wiemy, gdzie oni mieszkają.", "Nie wiemy gdzie mieszkają.", "Nie wiemy gdzie oni mieszkają.", "Nie wiemy, gdzie mieszkają."]}, {"id": "g15-4", "text": "Вы говорите по-польски? (вежливо, мужчине)", "answer": "Pan mówi po polsku?", "grammar_point": "czas-terazniejszy", "accept": ["Czy pan mówi po polsku?"]}, {"id": "g15-5", "text": "Она ездит в Краков.", "answer": "Jeździ do Krakowa.", "grammar_point": "czas-terazniejszy", "accept": ["Ona jeździ do Krakowa."]}, {"id": "g15-6", "text": "У меня есть кот.", "answer": "Mam kota.", "grammar_point": "czas-terazniejszy", "accept": ["Ja mam kota."]}]}]}};
+const $ = (t, a = {}, ...kids) => { const e = document.createElement(t); for (const [k, v] of Object.entries(a)) { if (k === 'class') e.className = v; else if (k.startsWith('on')) e.addEventListener(k.slice(2), v); else if (v !== undefined && v !== null) e.setAttribute(k, v); } for (const c of kids.flat()) { if (c == null) continue; e.append(c.nodeType ? c : document.createTextNode(c)); } return e; };
+const norm = s => String(s).trim().replace(/\s+/g, ' ').toLowerCase().replace(/[.!?…]+$/u, '').replace(/[„”«»"']/g, '').replace(/[–—]/g, '-').trim();
+const strip = s => norm(s).normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ł/g, 'l');
+function match(given, expected, accept) {
+  const g = norm(given); if (!g) return { ok: false };
+  const pool = [expected, ...(accept || [])];
+  if (pool.map(norm).includes(g)) return { ok: true };
+  const hit = pool.find(a => strip(a) === strip(g));
+  if (hit) return { ok: true, hint: '↳ z ogonkami: ' + hit };
+  return { ok: false };
+}
+const shuffle = (a, seed) => { const r = [...a]; let s = seed || 7; for (let i = r.length - 1; i > 0; i--) { s = (s * 9301 + 49297) % 233280; const j = Math.floor(s / 233280 * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; } return r; };
+
+const params = new URLSearchParams('view=grammar&blocks=g7-g9');
+const view = params.get('view') || 'grammar';
+const app = document.getElementById('app');
+
+function header(eyebrow, title, instr, uk) {
+  app.append($('p', { class: 'eyebrow' }, eyebrow), $('h1', {}, title));
+  if (instr) app.append($('p', {}, instr));
+  if (uk) app.append($('p', { class: 'uk' }, uk));
+}
+
+function expandBlocks(spec) {
+  if (!spec) return null; const out = [];
+  for (const p of spec.split(',')) { const m = p.match(/^([a-z]+)(\d+)-([a-z]*)(\d+)$/i); if (m) { for (let i = +m[2]; i <= +m[4]; i++) out.push(m[1] + i); } else out.push(p); }
+  return out;
+}
+
+function renderBlocks(data, eyebrow) {
+  const ids = expandBlocks(params.get('blocks'));
+  const blocks = ids ? data.blocks.filter(b => ids.includes(b.block_id)) : data.blocks;
+  const single = blocks.length === 1;
+  header(eyebrow, single ? blocks[0].title.replace(/^\d+\.\s*/, '') : data.title, single ? null : data.instruction, single ? null : data.instruction_uk);
+  const tabs = $('div', { class: 'tabs' }); const body = $('div');
+  if (!single) app.append(tabs);
+  app.append(body);
+  const show = i => { [...tabs.children].forEach((t, k) => t.classList.toggle('on', k === i)); body.innerHTML = ''; renderBlock(blocks[i], body); };
+  blocks.forEach((b, i) => tabs.append($('button', { onclick: () => show(i) }, b.title)));
+  show(0);
+}
+
+function renderBlock(b, root) {
+  root.append($('p', { class: 'q' }, $('b', {}, b.instruction || '')));
+  if (b.instruction_uk) root.append($('p', { class: 'uk' }, b.instruction_uk));
+  const type = b.exercise_type;
+  if (type === 'matching') return renderMatching(b, root);
+  if (type === 'sentence-building') return b.items.forEach(it => renderSB(it, root));
+  if (type === 'drag-and-drop') {
+    const answers = b.items.map(i => i.answer);
+    const bank = shuffle([...new Set([...(b.bank || []), ...answers])], 3);
+    return b.items.forEach(it => renderChoice({ ...it, options: bank }, root, false));
+  }
+  if (type === 'true-false') return b.items.forEach(it => renderChoice({ text: it.statement, options: ['Prawda', 'Fałsz'], answer: it.answer ? 'Prawda' : 'Fałsz', explanation: it.explanation }, root, true));
+  b.items.forEach(it => it.options ? renderChoice(it, root, false) : renderInput(it, root));
+}
+
+function renderChoice(it, root) {
+  const box = $('div', { class: 'item' }, $('p', { class: 'q' }, it.text));
+  const row = $('div', { class: 'row' }); const fb = $('span', { class: 'fb' });
+  let done = false;
+  it.options.forEach(opt => {
+    const c = $('button', { class: 'chip', onclick: () => {
+      if (done) return;
+      const r = match(opt, it.answer, it.accept);
+      [...row.querySelectorAll('.chip')].forEach(x => x.classList.remove('no'));
+      if (r.ok) { c.classList.add('ok'); done = true; fb.className = 'fb ok'; fb.textContent = '✓ Dobrze!' + (it.explanation ? ' ' + it.explanation : ''); }
+      else { c.classList.add('no'); fb.className = 'fb no'; fb.textContent = it.explanation ? '✗ ' + it.explanation : '✗ Spróbuj jeszcze raz.'; }
+    } }, opt);
+    row.append(c);
+  });
+  box.append(row, $('div', {}, fb)); root.append(box);
+}
+
+function renderInput(it, root) {
+  const box = $('div', { class: 'item' }, $('p', { class: 'q' }, it.text));
+  const inp = $('input', { class: 'blank', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false' });
+  const fb = $('span', { class: 'fb' }); let fails = 0;
+  const check = () => {
+    const r = match(inp.value, it.answer, it.accept);
+    inp.classList.toggle('ok', r.ok); inp.classList.toggle('no', !r.ok);
+    if (r.ok) { fb.className = 'fb ok'; fb.textContent = '✓ Dobrze!' + (r.hint ? ' ' + r.hint : ''); }
+    else { fails++; fb.className = 'fb no'; fb.textContent = fails >= 2 ? '↳ ' + it.answer + (it.explanation ? ' — ' + it.explanation : '') : '✗ Spróbuj jeszcze raz.'; }
+  };
+  inp.addEventListener('keydown', e => { if (e.key === 'Enter') check(); });
+  box.append($('div', { class: 'row' }, inp, $('button', { class: 'btn', onclick: check }, 'Sprawdź'), fb));
+  root.append(box);
+}
+
+function renderSB(it, root) {
+  const box = $('div', { class: 'item' });
+  const out = $('div', { class: 'sb-out' }); const pool = $('div', { class: 'row' }); const fb = $('span', { class: 'fb' });
+  const reset = () => { out.innerHTML = ''; pool.innerHTML = ''; fb.textContent = ''; out.className = 'sb-out'; shuffle(it.words, it.words.length * 13 + it.id.length).forEach(w => pool.append(mk(w))); };
+  const mk = w => { const c = $('button', { class: 'chip', onclick: () => { (c.parentNode === pool ? out : pool).append(c); } }, w); return c; };
+  const check = () => { const s = [...out.children].map(c => c.textContent).join(' '); const r = match(s, it.answer); fb.className = 'fb ' + (r.ok ? 'ok' : 'no'); fb.textContent = r.ok ? '✓ Dobrze!' : '✗ Spróbuj jeszcze raz.'; out.style.borderColor = r.ok ? 'var(--ok)' : 'var(--no)'; };
+  box.append(out, pool, $('div', { class: 'row', style: 'margin-top:8px' }, $('button', { class: 'btn', onclick: check }, 'Sprawdź'), $('button', { class: 'btn ghost', onclick: reset }, 'Od nowa'), fb));
+  reset(); root.append(box);
+}
+
+function renderMatching(b, root) {
+  const lefts = b.items.map(i => i.left), rights = shuffle(b.items.map(i => i.right), b.items.length * 5 + 1);
+  let sel = null, done = 0;
+  const L = $('div', { class: 'col' }), R = $('div', { class: 'col' }); const fb = $('p', { class: 'fb' });
+  const lbtn = lefts.map((t, i) => { const c = $('button', { class: 'chip', onclick: () => { if (c.disabled) return; lbtn.forEach(x => x.classList.remove('sel')); c.classList.add('sel'); sel = i; } }, t); L.append(c); return c; });
+  rights.forEach(t => { const c = $('button', { class: 'chip', onclick: () => {
+    if (sel === null || c.disabled) { fb.className = 'fb'; fb.textContent = 'Najpierw kliknij słowo po lewej.'; return; }
+    if (b.items[sel].right === t) { c.classList.add('ok'); c.disabled = true; lbtn[sel].classList.remove('sel'); lbtn[sel].classList.add('ok'); lbtn[sel].disabled = true; lbtn[sel].textContent += ' → ' + t; sel = null; done++; fb.className = 'fb ok'; fb.textContent = done === b.items.length ? '✓ Wszystko dobrze!' : '✓'; }
+    else { c.classList.add('no'); setTimeout(() => c.classList.remove('no'), 600); fb.className = 'fb no'; fb.textContent = '✗ Nie pasuje.'; }
+  } }, t); R.append(c); });
+  root.append($('div', { class: 'match' }, L, R), fb);
+}
+
+function renderVocab(d) {
+  header('słownictwo', d.title, d.instruction);
+  const filter = $('div', { class: 'filter' }); const grid = $('div', { class: 'cards' });
+  const draw = g => { grid.innerHTML = ''; [...filter.children].forEach(b => b.classList.toggle('on', b.dataset.g === (g ?? ''))); d.items.filter(i => g == null || i.group === g).forEach(it => {
+    const gi = d.groups.indexOf(it.group);
+    const c = $('div', { class: 'vc', onclick: () => c.classList.toggle('flip') }, $('div', { class: 'in' },
+      $('div', { class: 'f g' + gi }, it.term, $('small', {}, it.group)),
+      $('div', { class: 'b g' + gi }, $('div', { class: 'tr' }, it.translation_uk), $('div', {}, it.definition), $('div', { class: 'ex' }, it.example))));
+    grid.append(c); }); };
+  const all = $('button', { onclick: () => draw(null) }, 'Wszystkie'); all.dataset.g = ''; filter.append(all);
+  d.groups.forEach(g => { const b = $('button', { onclick: () => draw(g) }, g); b.dataset.g = g; filter.append(b); });
+  app.append(filter, grid); draw(null);
+}
+
+function renderComm(d) {
+  header('zadania komunikacyjne', d.title, d.instruction, d.instruction_uk);
+  const grid = $('div', { class: 'flips' }); const back = $('div');
+  d.items.forEach((it, i) => grid.append($('div', { class: 'ft ftc' + (i % 4), onclick: () => {
+    back.innerHTML = '';
+    const b = $('div', { class: 'ftback' }, $('h3', {}, it.front_title), $('p', {}, it.back_scenario), $('b', {}, 'Plan rozmowy:'), $('ul', {}, it.back_checklist.map(x => $('li', {}, x))));
+    if (it.model_dialogue) b.append($('p', { style: 'margin-top:12px' }, $('b', {}, 'Dialog — przeczytajcie w rolach:')), $('div', { class: 'dlg' }, it.model_dialogue.map(l => $('p', {}, $('b', {}, l.speaker + ': '), l.line))));
+    back.append(b); b.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  } }, $('h3', {}, it.front_title), $('div', { class: 'hint' }, 'kliknij, żeby odwrócić →'))));
+  app.append(grid, back);
+}
+
+if (view === 'vocab') renderVocab(DATA.vocab);
+else if (view === 'comm') renderComm(DATA.comm);
+else if (view === 'hw') renderBlocks(DATA.hw, 'praca domowa');
+else renderBlocks(DATA.grammar, 'czas teraźniejszy');
+</script>
+</body>
+</html>
