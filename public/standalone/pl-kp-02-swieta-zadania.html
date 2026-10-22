@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Werba Way · zadania</title>
+<style>
+:root{--bg:#F6F1E7;--paper:#FFFDF8;--ink:#1f2a37;--soft:#6b7280;--line:#e7dfcf;--ok:#1f8a5b;--okbg:#e3f4ea;--no:#c0392b;--nobg:#fbe5e1;--acc:#F7D774;--chip:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:16px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 18px 8px;box-shadow:0 2px 0 rgba(0,0,0,.04)}
+.eyebrow{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);margin:0}
+h1{font-size:22px;margin:4px 0 6px}
+.uk{color:var(--soft);font-size:14px;margin:2px 0}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tabs button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
+.tabs button.on{background:var(--acc);border-color:#e8c14d;font-weight:600}
+.item{border-top:1px dashed var(--line);padding:12px 0}
+.item:first-child{border-top:0}
+.q{margin:0 0 8px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{border:1px solid var(--line);background:var(--chip);border-radius:10px;padding:7px 12px;font:inherit;cursor:pointer}
+.chip.sel{border-color:#c9a227;background:#fff6d6}
+.chip.ok{border-color:var(--ok);background:var(--okbg);color:var(--ok)}
+.chip.no{border-color:var(--no);background:var(--nobg);color:var(--no)}
+.chip:disabled{opacity:.55;cursor:default}
+input.blank{font:inherit;border:0;border-bottom:2px dashed #9ca3af;background:#fff;padding:6px 6px;min-width:180px}
+input.blank.ok{border-color:var(--ok);background:var(--okbg)}
+input.blank.no{border-color:var(--no);background:var(--nobg)}
+.btn{border:0;background:#1f2a37;color:#fff;border-radius:10px;padding:7px 14px;font:inherit;cursor:pointer}
+.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.fb{font-size:14px}
+.fb.ok{color:var(--ok)} .fb.no{color:var(--no)}
+.sb-out{min-height:44px;border:2px dashed var(--line);border-radius:10px;padding:6px;display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;background:#fff}
+.match{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.match .col{display:grid;gap:8px;align-content:start}
+.match .chip{text-align:left}
+.score{margin:14px 0 6px;font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin-top:10px}
+.vc{perspective:900px;height:170px;cursor:pointer}
+.vc .in{position:relative;width:100%;height:100%;transition:transform .45s;transform-style:preserve-3d}
+.vc.flip .in{transform:rotateY(180deg)}
+.vc .f,.vc .b{position:absolute;inset:0;backface-visibility:hidden;border-radius:12px;border:1px solid var(--line);padding:12px;display:flex;flex-direction:column;justify-content:center}
+.vc .f{background:#fff;text-align:center;font-weight:700;font-size:18px}
+.vc .f small{display:block;font-weight:400;font-size:12px;color:var(--soft);margin-top:6px}
+.vc .b{background:#fffaf0;transform:rotateY(180deg);font-size:14px;gap:4px}
+.vc .b .tr{font-weight:700}
+.vc .b .ex{font-style:italic;color:#374151}
+.g0{border-top:4px solid #f0a35e}.g1{border-top:4px solid #5b9bd5}.g2{border-top:4px solid #5cb85c}.g3{border-top:4px solid #9b6fd0}.g4{border-top:4px solid #e07ab0}
+.flips{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:10px}
+.ft{border-radius:12px;border:1px solid var(--line);padding:14px;cursor:pointer;min-height:110px}
+.ft h3{margin:0 0 6px;font-size:17px}
+.ft .hint{font-size:13px;color:var(--soft);font-style:italic}
+.ftc0{background:#fff1b8}.ftc1{background:#d8efe3}.ftc2{background:#dcebf9}.ftc3{background:#f9ddd3}
+.ftback{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:12px}
+.ftback ul{margin:6px 0 0 18px;padding:0}
+.dlg p{margin:4px 0}
+.filter{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.filter button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 10px;font-size:13px;cursor:pointer}
+.filter button.on{background:#1f2a37;color:#fff}
+@media (max-width:560px){.match{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="card" id="app"></div></div>
+<script>
+const DATA = {"vocab": {"lesson_id": "pl-kp-02-swieta", "exercise_type": "vocab-cards", "title": "Słownictwo: polskie święta i tradycje", "instruction": "38 słów i zwrotów w pięciu grupach. Odwróć kartę, przeczytaj i powiedz własne zdanie.", "estimated_minutes": 8, "groups": ["Święta i daty", "Wigilijny stół", "Zwyczaje", "Wielkanoc i pamięć", "Rozmowa z konsulem"], "comm_groups": ["Święta i daty", "Wigilijny stół", "Zwyczaje", "Rozmowa z konsulem"], "items": [{"id": "v01", "term": "święto · święta", "group": "Święta i daty", "part_of_speech": "rzeczownik", "definition": "Ważny dzień: nie pracujemy, jesteśmy z rodziną.", "example": "Jakie jest twoje ulubione święto?", "translation_uk": "свято · свята"}, {"id": "v02", "term": "Boże Narodzenie", "group": "Święta i daty", "part_of_speech": "rzeczownik", "definition": "Święto 25 i 26 grudnia.", "example": "Na Boże Narodzenie jadę do rodziców.", "translation_uk": "Різдво"}, {"id": "v03", "term": "Wigilia", "group": "Święta i daty", "part_of_speech": "rzeczownik", "definition": "24 grudnia, uroczysta kolacja z rodziną.", "example": "W Wigilię cała rodzina jest razem.", "translation_uk": "Святвечір"}, {"id": "v04", "term": "Wielkanoc", "group": "Święta i daty", "part_of_speech": "rzeczownik", "definition": "Święto wiosną, w marcu albo w kwietniu.", "example": "Wielkanoc jest co roku w inną niedzielę.", "translation_uk": "Великдень"}, {"id": "v05", "term": "Wszystkich Świętych", "group": "Święta i daty", "part_of_speech": "rzeczownik", "definition": "1 listopada, dzień pamięci o zmarłych.", "example": "Na Wszystkich Świętych jedziemy do dziadków.", "translation_uk": "День усіх святих (1 листопада)"}, {"id": "v06", "term": "Zaduszki", "group": "Święta i daty", "part_of_speech": "rzeczownik", "definition": "2 listopada, też dzień pamięci o zmarłych.", "example": "W Zaduszki też odwiedzamy groby.", "translation_uk": "Поминальний день (2 листопада)"}, {"id": "v07", "term": "Święto Niepodległości", "group": "Święta i daty", "part_of_speech": "rzeczownik", "definition": "11 listopada, święto państwowe.", "example": "Jedenastego listopada jest Święto Niepodległości.", "translation_uk": "День Незалежності (11 листопада)"}, {"id": "v08", "term": "obchodzić (święto)", "group": "Święta i daty", "part_of_speech": "czasownik", "definition": "Świętować: obchodzę, obchodzimy, obchodzicie.", "example": "Jak obchodzicie Boże Narodzenie?", "translation_uk": "святкувати, відзначати"}, {"id": "v09", "term": "kolacja wigilijna", "group": "Wigilijny stół", "part_of_speech": "rzeczownik", "definition": "Uroczysta kolacja 24 grudnia.", "example": "Kolacja wigilijna zaczyna się wieczorem.", "translation_uk": "святвечірня вечеря"}, {"id": "v10", "term": "potrawa", "group": "Wigilijny stół", "part_of_speech": "rzeczownik", "definition": "Jedzenie, które gotujemy, np. zupa albo pierogi.", "example": "Na stole jest dużo potraw.", "translation_uk": "страва"}, {"id": "v11", "term": "barszcz z uszkami", "group": "Wigilijny stół", "part_of_speech": "rzeczownik", "definition": "Czerwona zupa z buraków z małymi pierożkami.", "example": "Mama robi najlepszy barszcz z uszkami.", "translation_uk": "борщ з вушками"}, {"id": "v12", "term": "pierogi z kapustą i grzybami", "group": "Wigilijny stół", "part_of_speech": "rzeczownik", "definition": "Pierogi bez mięsa, na Wigilię.", "example": "Lubię pierogi z kapustą i grzybami.", "translation_uk": "вареники з капустою і грибами"}, {"id": "v13", "term": "karp", "group": "Wigilijny stół", "part_of_speech": "rzeczownik", "definition": "Ryba, którą Polacy jedzą w Wigilię. Biernik: karpia.", "example": "Na kolację jemy karpia.", "translation_uk": "короп"}, {"id": "v14", "term": "makowiec", "group": "Wigilijny stół", "part_of_speech": "rzeczownik", "definition": "Ciasto z makiem.", "example": "Babcia piecze makowiec.", "translation_uk": "маківник"}, {"id": "v15", "term": "kompot z suszu", "group": "Wigilijny stół", "part_of_speech": "rzeczownik", "definition": "Napój z suszonych owoców.", "example": "Do kolacji pijemy kompot z suszu.", "translation_uk": "узвар"}, {"id": "v16", "term": "puste miejsce", "group": "Wigilijny stół", "part_of_speech": "rzeczownik", "definition": "Miejsce przy stole dla gościa, który może przyjść.", "example": "Przy stole jest jedno puste miejsce.", "translation_uk": "вільне місце (за столом)"}, {"id": "v17", "term": "opłatek", "group": "Zwyczaje", "part_of_speech": "rzeczownik", "definition": "Cienki, biały wafel. Dzielimy się nim przed kolacją.", "example": "Kupujemy opłatek w kościele.", "translation_uk": "облатка"}, {"id": "v18", "term": "dzielić się (czym? z kim?)", "group": "Zwyczaje", "part_of_speech": "czasownik", "definition": "Dzielić się opłatkiem z kimś — bez „z” przed opłatkiem.", "example": "Dzielę się opłatkiem z babcią.", "translation_uk": "ділитися"}, {"id": "v19", "term": "składać życzenia", "group": "Zwyczaje", "part_of_speech": "czasownik", "definition": "Mówić komuś dobre słowa: zdrowia, szczęścia.", "example": "Składam ci życzenia: zdrowia i szczęścia!", "translation_uk": "складати побажання, вітати"}, {"id": "v20", "term": "choinka", "group": "Zwyczaje", "part_of_speech": "rzeczownik", "definition": "Drzewko z bombkami i światełkami.", "example": "Ubieramy choinkę dzień przed Wigilią.", "translation_uk": "ялинка"}, {"id": "v21", "term": "prezent", "group": "Zwyczaje", "part_of_speech": "rzeczownik", "definition": "Rzecz, którą dajemy komuś na święta.", "example": "Prezenty leżą pod choinką.", "translation_uk": "подарунок"}, {"id": "v22", "term": "kolęda", "group": "Zwyczaje", "part_of_speech": "rzeczownik", "definition": "Piosenka na Boże Narodzenie.", "example": "Znasz jakąś polską kolędę?", "translation_uk": "колядка"}, {"id": "v23", "term": "pasterka", "group": "Zwyczaje", "part_of_speech": "rzeczownik", "definition": "Msza w kościele o północy z 24 na 25 grudnia.", "example": "Na pasterkę idziemy całą rodziną.", "translation_uk": "різдвяна опівнічна меса"}, {"id": "v24", "term": "Wesołych Świąt!", "group": "Zwyczaje", "part_of_speech": "zwrot", "definition": "Życzenia na Boże Narodzenie (na Wielkanoc też).", "example": "Wesołych Świąt i szczęśliwego Nowego Roku!", "translation_uk": "Веселих свят!"}, {"id": "v25", "term": "święconka", "group": "Wielkanoc i pamięć", "part_of_speech": "rzeczownik", "definition": "Jedzenie w koszyczku, które ksiądz święci w Wielką Sobotę.", "example": "Z rana idziemy ze święconką do kościoła.", "translation_uk": "свячене, освячення кошика"}, {"id": "v26", "term": "koszyczek", "group": "Wielkanoc i pamięć", "part_of_speech": "rzeczownik", "definition": "Mały koszyk na jajka, chleb, sól i kiełbasę.", "example": "Dziecko niesie koszyczek.", "translation_uk": "кошик"}, {"id": "v27", "term": "pisanka", "group": "Wielkanoc i pamięć", "part_of_speech": "rzeczownik", "definition": "Kolorowe, malowane jajko na Wielkanoc.", "example": "Dzieci malują pisanki.", "translation_uk": "писанка"}, {"id": "v28", "term": "baranek", "group": "Wielkanoc i pamięć", "part_of_speech": "rzeczownik", "definition": "Symbol Wielkanocy, często z cukru albo z masła.", "example": "W koszyczku jest mały baranek.", "translation_uk": "ягнятко (символ Великодня)"}, {"id": "v29", "term": "śmigus-dyngus", "group": "Wielkanoc i pamięć", "part_of_speech": "rzeczownik", "definition": "Poniedziałek po Wielkanocy: ludzie oblewają się wodą.", "example": "W śmigus-dyngus lepiej nie zakładać białej koszuli!", "translation_uk": "обливаний понеділок"}, {"id": "v30", "term": "cmentarz", "group": "Wielkanoc i pamięć", "part_of_speech": "rzeczownik", "definition": "Miejsce, gdzie są groby.", "example": "Cmentarz jest niedaleko kościoła.", "translation_uk": "кладовище, цвинтар"}, {"id": "v31", "term": "grób · groby", "group": "Wielkanoc i pamięć", "part_of_speech": "rzeczownik", "definition": "Miejsce, gdzie leży zmarła osoba.", "example": "Sprzątamy grób dziadka.", "translation_uk": "могила · могили"}, {"id": "v32", "term": "znicz", "group": "Wielkanoc i pamięć", "part_of_speech": "rzeczownik", "definition": "Lampka w szkle, którą zapalamy na grobie.", "example": "Zapalamy znicz i chwilę stoimy w ciszy.", "translation_uk": "лампадка (на могилі)"}, {"id": "v33", "term": "U nas w rodzinie…", "group": "Rozmowa z konsulem", "part_of_speech": "zwrot", "definition": "Tak zaczynasz odpowiedź o swojej rodzinie.", "example": "U nas w rodzinie Wigilia jest u babci.", "translation_uk": "У нашій родині…"}, {"id": "v34", "term": "co roku", "group": "Rozmowa z konsulem", "part_of_speech": "zwrot", "definition": "Każdego roku.", "example": "Co roku pieczemy makowiec.", "translation_uk": "щороку"}, {"id": "v35", "term": "zwykle · zawsze", "group": "Rozmowa z konsulem", "part_of_speech": "przysłówek", "definition": "Zwykle — prawie zawsze. Zawsze — bez wyjątku.", "example": "Zwykle jemy o szóstej, ale opłatek jest zawsze.", "translation_uk": "зазвичай · завжди"}, {"id": "v36", "term": "Najbardziej lubię…, bo…", "group": "Rozmowa z konsulem", "part_of_speech": "zwrot", "definition": "Mówisz, co lubisz, i od razu dlaczego.", "example": "Najbardziej lubię Wigilię, bo cała rodzina jest razem.", "translation_uk": "Найбільше люблю…, бо…"}, {"id": "v37", "term": "Przepraszam, czy może pan powtórzyć?", "group": "Rozmowa z konsulem", "part_of_speech": "zwrot", "definition": "Grzeczna prośba do konsula, kiedy nie rozumiesz.", "example": "Przepraszam, czy może pan powtórzyć pytanie?", "translation_uk": "Перепрошую, чи можете повторити?"}, {"id": "v38", "term": "Nie jestem pewien / pewna, ale…", "group": "Rozmowa z konsulem", "part_of_speech": "zwrot", "definition": "Mówisz coś, choć nie wiesz na sto procent.", "example": "Nie jestem pewna, ale myślę, że to jest w listopadzie.", "translation_uk": "Я не впевнений / не впевнена, але…"}]}, "grammar": {"lesson_id": "pl-kp-02-swieta", "exercise_type": "fill-in-blank", "title": "Polskie święta: ćwiczenia", "instruction": "Krótkie bloki. Najpierw próbujesz sam / sama, ściąga jest na stronie lekcji.", "eyebrow": "ćwiczenia", "estimated_minutes": 30, "blocks": [{"block_id": "t1", "exercise_type": "true-false", "title": "Rok w polskim domu — prawda czy fałsz?", "instruction": "Przeczytaj tekst jeszcze raz. Prawda czy fałsz?", "instruction_uk": "Прочитай текст ще раз. Правда чи неправда?", "items": [{"id": "t1-1", "statement": "Wigilia jest dwudziestego piątego grudnia.", "answer": false, "grammar_point": "czytanie", "explanation": "Wigilia jest 24 grudnia, a 25 grudnia jest Boże Narodzenie."}, {"id": "t1-2", "statement": "W Wigilię na stole jest dwanaście potraw.", "answer": true, "grammar_point": "czytanie"}, {"id": "t1-3", "statement": "Kolacja wigilijna zaczyna się o północy.", "answer": false, "grammar_point": "czytanie", "explanation": "Kolacja zaczyna się, kiedy na niebie jest pierwsza gwiazdka. O północy jest pasterka."}, {"id": "t1-4", "statement": "Przed kolacją rodzina dzieli się opłatkiem.", "answer": true, "grammar_point": "czytanie"}, {"id": "t1-5", "statement": "Od 2025 roku Wigilia jest dniem wolnym od pracy.", "answer": true, "grammar_point": "czytanie"}, {"id": "t1-6", "statement": "Wielkanoc jest zawsze w kwietniu.", "answer": false, "grammar_point": "czytanie", "explanation": "Wielkanoc jest w marcu albo w kwietniu — data co roku jest inna."}, {"id": "t1-7", "statement": "W koszyczku jest baranek z cukru.", "answer": true, "grammar_point": "czytanie"}, {"id": "t1-8", "statement": "Pierwszego listopada Polacy odwiedzają groby i zapalają znicze.", "answer": true, "grammar_point": "czytanie"}]}, {"block_id": "g1", "exercise_type": "fill-in-blank", "part": 1, "title": "1. Data świąt", "instruction": "Wybierz dobrą formę daty.", "instruction_uk": "Kiedy? / … jest … (якого числа?) → родовий: dwudziestego czwartego. Jaki dziś dzień? → називний: dwudziesty czwarty.", "items": [{"id": "g1-1", "text": "Wigilia jest ___ grudnia.", "answer": "dwudziestego czwartego", "grammar_point": "data-swieta", "options": ["dwudziesty czwarty", "dwudziestego czwartego", "dwudziestym czwartym"]}, {"id": "g1-2", "text": "Wszystkich Świętych jest ___ listopada.", "answer": "pierwszego", "grammar_point": "data-swieta", "options": ["pierwszy", "pierwszego", "pierwszym"]}, {"id": "g1-3", "text": "Święto Niepodległości jest ___ listopada.", "answer": "jedenastego", "grammar_point": "data-swieta", "options": ["jedenasty", "jedenastego", "jedenastym"]}, {"id": "g1-4", "text": "Święto Konstytucji jest ___ maja.", "answer": "trzeciego", "grammar_point": "data-swieta", "options": ["trzeci", "trzeciego", "trzecim"]}, {"id": "g1-5", "text": "Dziś jest ___ grudnia. Wesołych Świąt!", "answer": "dwudziesty piąty", "grammar_point": "data-swieta", "options": ["dwudziesty piąty", "dwudziestego piątego", "dwudziestym piątym"], "explanation": "„Jaki dziś dzień?” — dzień w mianowniku, miesiąc w dopełniaczu."}, {"id": "g1-6", "text": "Drugi dzień świąt jest ___ grudnia.", "answer": "dwudziestego szóstego", "grammar_point": "data-swieta", "options": ["dwudziesty szósty", "dwudziestego szóstego", "dwudziestym szóstym"]}]}, {"block_id": "g2", "exercise_type": "fill-in-blank", "part": 1, "title": "2. W czy na?", "instruction": "Co pasuje: w, na czy nic?", "instruction_uk": "w + день (w Wigilię, w sobotę) · na + свято як мета чи план (prezenty na święta) · пора року — без прийменника (wiosną).", "items": [{"id": "g2-1", "text": "Co robicie ___ Wigilię?", "answer": "w", "grammar_point": "w-na-swieto", "options": ["w", "na", "o"]}, {"id": "g2-2", "text": "Prezenty ___ święta już mam!", "answer": "na", "grammar_point": "w-na-swieto", "options": ["w", "na", "o"], "explanation": "Na święta = для свят, на свята."}, {"id": "g2-3", "text": "___ grudniu jest dużo śniegu.", "answer": "W", "grammar_point": "w-na-swieto", "options": ["W", "Na", "O"], "explanation": "Miesiąc: w + miejscownik — w grudniu."}, {"id": "g2-4", "text": "Wielkanoc jest ___.", "answer": "wiosną", "grammar_point": "w-na-swieto", "options": ["wiosną", "w wiosnę", "na wiosnę"], "explanation": "Pora roku bez przyimka: wiosną, latem, jesienią, zimą."}, {"id": "g2-5", "text": "___ Wielką Sobotę idziemy ze święconką.", "answer": "W", "grammar_point": "w-na-swieto", "options": ["W", "Na", "O"]}, {"id": "g2-6", "text": "Co robisz ___ Wielkanoc? — Jadę do rodziny.", "answer": "na", "grammar_point": "w-na-swieto", "options": ["na", "o", "przy"]}]}, {"block_id": "g3", "exercise_type": "fill-in-blank", "part": 1, "title": "3. Przed i po", "instruction": "Wybierz dobrą formę.", "instruction_uk": "przed + орудний (przed Wigilią) · po + місцевий (po Wigilii).", "items": [{"id": "g3-1", "text": "Przed ___ ubieramy choinkę.", "answer": "Wigilią", "grammar_point": "przed-po-swieta", "options": ["Wigilia", "Wigilią", "Wigilii"]}, {"id": "g3-2", "text": "Po ___ wracamy do pracy.", "answer": "świętach", "grammar_point": "przed-po-swieta", "options": ["święta", "świętami", "świętach"]}, {"id": "g3-3", "text": "Przed ___ kupujemy jajka i kiełbasę.", "answer": "Wielkanocą", "grammar_point": "przed-po-swieta", "options": ["Wielkanoc", "Wielkanocą", "Wielkanocy"]}, {"id": "g3-4", "text": "Po ___ wszyscy są trochę zmęczeni.", "answer": "Bożym Narodzeniu", "grammar_point": "przed-po-swieta", "options": ["Boże Narodzenie", "Bożym Narodzeniem", "Bożym Narodzeniu"]}, {"id": "g3-5", "text": "Tydzień przed ___ w sklepach jest dużo ludzi.", "answer": "Bożym Narodzeniem", "grammar_point": "przed-po-swieta", "options": ["Boże Narodzenie", "Bożym Narodzeniem", "Bożym Narodzeniu"]}, {"id": "g3-6", "text": "Po ___ śpiewamy kolędy.", "answer": "kolacji", "grammar_point": "przed-po-swieta", "options": ["kolacja", "kolacją", "kolacji"]}]}, {"block_id": "g4", "exercise_type": "fill-in-blank", "part": 2, "title": "4. Co robimy? Forma „my” i „wy”", "instruction": "Wpisz czasownik w dobrej formie.", "instruction_uk": "my → -my (robimy, jemy) · wy → -cie (robicie, jecie). Так консул питає про твою родину: Jak obchodzicie…?", "items": [{"id": "g4-1", "text": "W Wigilię ___ dwanaście potraw. (my, gotować)", "answer": "gotujemy", "grammar_point": "forma-my-wy"}, {"id": "g4-2", "text": "Przed kolacją ___ się opłatkiem. (my, dzielić)", "answer": "dzielimy", "grammar_point": "forma-my-wy"}, {"id": "g4-3", "text": "Po kolacji ___ kolędy. (my, śpiewać)", "answer": "śpiewamy", "grammar_point": "forma-my-wy"}, {"id": "g4-4", "text": "O północy ___ na pasterkę. (my, iść)", "answer": "idziemy", "grammar_point": "forma-my-wy"}, {"id": "g4-5", "text": "W Wigilię nie ___ mięsa. (my, jeść)", "answer": "jemy", "grammar_point": "forma-my-wy"}, {"id": "g4-6", "text": "Dwudziestego piątego grudnia ___ rodzinę. (my, odwiedzać)", "answer": "odwiedzamy", "grammar_point": "forma-my-wy"}, {"id": "g4-7", "text": "— Jak ___ Wigilię? (wy, obchodzić) — W domu, z całą rodziną.", "answer": "obchodzicie", "grammar_point": "forma-my-wy"}, {"id": "g4-8", "text": "— Co ___ w Wigilię? (wy, jeść) — Barszcz i pierogi.", "answer": "jecie", "grammar_point": "forma-my-wy"}]}, {"block_id": "g5", "exercise_type": "sentence-building", "part": 2, "title": "5. Ułóż zdanie", "instruction": "Kliknij słowa w dobrej kolejności.", "instruction_uk": "Клікай слова в правильному порядку.", "items": [{"id": "g5-1", "words": ["Przy", "stole", "jest", "jedno", "puste", "miejsce."], "answer": "Przy stole jest jedno puste miejsce.", "grammar_point": "szyk"}, {"id": "g5-2", "words": ["Zawsze", "dzielimy", "się", "opłatkiem", "z", "rodziną."], "answer": "Zawsze dzielimy się opłatkiem z rodziną.", "grammar_point": "forma-my-wy"}, {"id": "g5-3", "words": ["W", "Wielką", "Sobotę", "idziemy", "do", "kościoła."], "answer": "W Wielką Sobotę idziemy do kościoła.", "grammar_point": "w-na-swieto"}, {"id": "g5-4", "words": ["Pierwszego", "listopada", "zapalamy", "znicze", "na", "grobach."], "answer": "Pierwszego listopada zapalamy znicze na grobach.", "grammar_point": "data-swieta"}, {"id": "g5-5", "words": ["U", "nas", "w", "rodzinie", "Wigilia", "jest", "bardzo", "ważna."], "answer": "U nas w rodzinie Wigilia jest bardzo ważna.", "grammar_point": "szyk"}]}, {"block_id": "g6", "exercise_type": "matching", "part": 2, "title": "6. Pytanie konsula — odpowiedź", "instruction": "Kliknij pytanie po lewej, potem odpowiedź po prawej.", "items": [{"id": "g6-1", "left": "Kiedy jest Wigilia?", "right": "Dwudziestego czwartego grudnia.", "grammar_point": "dialog"}, {"id": "g6-2", "left": "Co to jest opłatek?", "right": "Cienki, biały wafel. Dzielimy się nim przed kolacją.", "grammar_point": "dialog"}, {"id": "g6-3", "left": "Po co jest puste miejsce przy stole?", "right": "Dla gościa, który może przyjść.", "grammar_point": "dialog"}, {"id": "g6-4", "left": "Co jest w koszyczku?", "right": "Jajka, chleb, sól i kiełbasa.", "grammar_point": "dialog"}, {"id": "g6-5", "left": "Co Polacy robią pierwszego listopada?", "right": "Odwiedzają groby i zapalają znicze.", "grammar_point": "dialog"}, {"id": "g6-6", "left": "Kiedy na domach wiszą flagi?", "right": "Trzeciego maja i jedenastego listopada.", "grammar_point": "dialog"}]}, {"block_id": "g7", "exercise_type": "fill-in-blank", "part": 2, "title": "7. Pułapki z ukraińskiego", "instruction": "Co powie Polak?", "items": [{"id": "g7-1", "text": "Dwudziestego czwartego grudnia jest ___.", "answer": "Wigilia", "grammar_point": "kalki-uk", "options": ["Święty Wieczór", "Wigilia"], "explanation": "Святвечір = Wigilia, jedno słowo, z dużej litery."}, {"id": "g7-2", "text": "Co robicie na ___?", "answer": "Wielkanoc", "grammar_point": "kalki-uk", "options": ["Wielki Dzień", "Wielkanoc"], "explanation": "Великдень = Wielkanoc, jedno słowo, rodzaj żeński."}, {"id": "g7-3", "text": "Na grobach zapalamy ___.", "answer": "znicze", "grammar_point": "kalki-uk", "options": ["świece", "znicze"], "explanation": "Lampka na grób to znicz. Świeca stoi na stole albo w kościele."}, {"id": "g7-4", "text": "W koszyczku jest kawałek ___.", "answer": "babki", "grammar_point": "kalki-uk", "options": ["paski", "babki"], "explanation": "Паска = babka wielkanocna. Polska „pascha” to inny deser — z twarogu."}, {"id": "g7-5", "text": "Dzielę się ___ z mamą.", "answer": "opłatkiem", "grammar_point": "kalki-uk", "options": ["z opłatkiem", "opłatkiem"], "explanation": "Dzielić się czym? — opłatkiem (narzędnik bez „z”). „Z” stoi przed osobą: z mamą."}, {"id": "g7-6", "text": "Babciu, ___!", "answer": "Wesołych Świąt", "grammar_point": "kalki-uk", "options": ["witam ze świętem", "Wesołych Świąt"], "explanation": "Вітаю зі святом = Wesołych Świąt! / Składam ci życzenia. „Witać” to вітатися, здороватися."}]}]}, "comm": {"lesson_id": "pl-kp-02-swieta", "exercise_type": "flip-task", "title": "Zadania komunikacyjne: rozmowa z konsulem", "instruction": "Odwróć kartę, przeczytaj sytuację i rozmawiaj. Nauczyciel jest konsulem.", "instruction_uk": "Переверни картку, прочитай ситуацію й говори. Викладач — консул.", "estimated_minutes": 20, "items": [{"id": "c1", "mode": "read-then-play", "front_title": "Konsul pyta o Wigilię", "back_scenario": "Rozmowa w konsulacie. Najpierw przeczytajcie dialog w rolach. Potem rozmowa jeszcze raz — ale teraz to Ty i Twoja rodzina.", "back_checklist": ["Przywitaj się i powiedz, jak się nazywasz.", "Wymień trzy polskie święta.", "Powiedz, kiedy jest Wigilia.", "Opowiedz o Wigilii w Twojej rodzinie — minimum trzy zdania z formą „my”.", "Podziękuj i pożegnaj się."], "model_dialogue": [{"speaker": "Konsul", "line": "Dzień dobry. Proszę usiąść. Jak się pani nazywa?"}, {"speaker": "Anna", "line": "Dzień dobry. Nazywam się Anna Kowalczuk."}, {"speaker": "Konsul", "line": "Jakie polskie święta pani zna?"}, {"speaker": "Anna", "line": "Znam Boże Narodzenie, Wielkanoc i Wszystkich Świętych."}, {"speaker": "Konsul", "line": "Kiedy jest Wigilia?"}, {"speaker": "Anna", "line": "Dwudziestego czwartego grudnia."}, {"speaker": "Konsul", "line": "A jak wygląda Wigilia w pani rodzinie?"}, {"speaker": "Anna", "line": "Wieczorem cała rodzina je kolację. Najpierw dzielimy się opłatkiem i składamy sobie życzenia."}, {"speaker": "Konsul", "line": "Co jecie?"}, {"speaker": "Anna", "line": "Barszcz z uszkami, pierogi i karpia. Nie jemy mięsa."}, {"speaker": "Konsul", "line": "A po kolacji?"}, {"speaker": "Anna", "line": "Śpiewamy kolędy, a o północy idziemy na pasterkę."}, {"speaker": "Konsul", "line": "Bardzo dobrze. Dziękuję."}]}, {"id": "c2", "mode": "play", "front_title": "Wielkanoc w Twojej rodzinie", "back_scenario": "Konsul pyta: „Jak obchodzicie Wielkanoc?”. Odpowiedz krótko, ale pełnymi zdaniami. Konsul może przerywać i dopytywać.", "back_checklist": ["Powiedz, kiedy jest Wielkanoc.", "Co robicie w Wielką Sobotę?", "Co jest w Waszym koszyczku?", "Co jecie w niedzielę rano?", "Wyjaśnij, co to jest śmigus-dyngus."]}, {"id": "c3", "mode": "play", "front_title": "Nie rozumiem pytania", "back_scenario": "Konsul zadaje pytanie, którego nie rozumiesz, albo mówi za szybko. Nie milcz! Poproś o powtórzenie i odpowiedz prostymi słowami.", "back_checklist": ["Przepraszam, czy może pan powtórzyć?", "Proszę mówić trochę wolniej.", "Nie jestem pewien / pewna, ale myślę, że…", "Odpowiedz dwoma zdaniami.", "Na koniec: Dziękuję, teraz rozumiem."]}, {"id": "c4", "mode": "play", "front_title": "Moje ulubione święto", "back_scenario": "Konsul pyta: „Jakie święto lubi pan / pani najbardziej?”. Mów jedną minutę bez przerwy. Potem konsul zadaje dwa pytania.", "back_checklist": ["Najbardziej lubię…, bo…", "Kiedy jest to święto?", "Co wtedy robicie — trzy czasowniki w formie „my”.", "Co jecie?", "Odpowiedz na pytanie: A dlaczego to jest dla pana / pani ważne?"]}]}, "hw": {"lesson_id": "pl-kp-02-swieta", "exercise_type": "fill-in-blank", "title": "Praca domowa: inne polskie święta", "instruction": "Cztery krótkie bloki. Poznasz święta, o które konsul też lubi pytać.", "instruction_uk": "Чотири короткі блоки. Тут інші свята, про які консул теж любить питати.", "estimated_minutes": 25, "blocks": [{"block_id": "h1", "exercise_type": "matching", "title": "1. Święto — co wtedy robimy?", "instruction": "Połącz święto z opisem.", "instruction_uk": "З'єднай свято з описом. Незнайомі слова шукай у словнику.", "items": [{"id": "h1-1", "left": "Mikołajki (6 grudnia)", "right": "Dzieci dostają małe prezenty.", "grammar_point": "slownictwo"}, {"id": "h1-2", "left": "Andrzejki (29–30 listopada)", "right": "Wróżymy: lejemy wosk na wodę.", "grammar_point": "slownictwo"}, {"id": "h1-3", "left": "Tłusty Czwartek", "right": "Jemy pączki.", "grammar_point": "slownictwo"}, {"id": "h1-4", "left": "Trzech Króli (6 stycznia)", "right": "Ulicami idą kolorowe orszaki.", "grammar_point": "slownictwo"}, {"id": "h1-5", "left": "Dzień Matki (26 maja)", "right": "Dajemy mamie kwiaty.", "grammar_point": "slownictwo"}, {"id": "h1-6", "left": "Sylwester (31 grudnia)", "right": "O północy oglądamy fajerwerki.", "grammar_point": "slownictwo"}]}, {"block_id": "h2", "exercise_type": "fill-in-blank", "title": "2. Forma „my”", "instruction": "Wpisz czasownik w formie „my”.", "items": [{"id": "h2-1", "text": "W Andrzejki ___ wróżby. (robić)", "answer": "robimy", "grammar_point": "forma-my-wy"}, {"id": "h2-2", "text": "Szóstego grudnia rano ___ prezentów pod poduszką. (szukać)", "answer": "szukamy", "grammar_point": "forma-my-wy"}, {"id": "h2-3", "text": "W Tłusty Czwartek długo ___ w kolejce do cukierni. (stać)", "answer": "stoimy", "grammar_point": "forma-my-wy"}, {"id": "h2-4", "text": "W sylwestra ___ do rana. (tańczyć)", "answer": "tańczymy", "grammar_point": "forma-my-wy"}, {"id": "h2-5", "text": "Pierwszego stycznia ___ do południa. (spać)", "answer": "śpimy", "grammar_point": "forma-my-wy"}, {"id": "h2-6", "text": "Szóstego stycznia ___ na orszak. (iść)", "answer": "idziemy", "grammar_point": "forma-my-wy"}, {"id": "h2-7", "text": "Na Dzień Matki ___ laurkę. (rysować)", "answer": "rysujemy", "grammar_point": "forma-my-wy"}]}, {"block_id": "h3", "exercise_type": "fill-in-blank", "title": "3. Kiedy?", "instruction": "Wybierz dobrą formę.", "items": [{"id": "h3-1", "text": "Kartki ___ święta wysyłam na początku grudnia.", "answer": "na", "grammar_point": "w-na-swieto", "options": ["na", "w", "po"]}, {"id": "h3-2", "text": "___ sylwestrem kupujemy szampana.", "answer": "Przed", "grammar_point": "przed-po-swieta", "options": ["Przed", "Po", "Na"]}, {"id": "h3-3", "text": "___ Nowym Roku zaczynam dietę.", "answer": "Po", "grammar_point": "przed-po-swieta", "options": ["Po", "Przed", "W"]}, {"id": "h3-4", "text": "Andrzejki są ___ listopadzie.", "answer": "w", "grammar_point": "w-na-swieto", "options": ["w", "na", "o"]}, {"id": "h3-5", "text": "Dzień Matki jest ___ maja.", "answer": "dwudziestego szóstego", "grammar_point": "data-swieta", "options": ["dwudziesty szósty", "dwudziestego szóstego", "dwudziestym szóstym"]}, {"id": "h3-6", "text": "Kulig jest zwykle ___.", "answer": "zimą", "grammar_point": "w-na-swieto", "options": ["zimą", "w zima", "na zimie"]}]}, {"block_id": "h4", "exercise_type": "sentence-building", "title": "4. Ułóż zdanie", "instruction": "Kliknij słowa w dobrej kolejności.", "items": [{"id": "h4-1", "words": ["Najbardziej", "lubię", "Mikołajki,", "bo", "dostaję", "prezenty."], "answer": "Najbardziej lubię Mikołajki, bo dostaję prezenty.", "grammar_point": "szyk"}, {"id": "h4-2", "words": ["W", "Tłusty", "Czwartek", "cała", "Polska", "je", "pączki."], "answer": "W Tłusty Czwartek cała Polska je pączki.", "grammar_point": "szyk"}, {"id": "h4-3", "words": ["U", "nas", "w", "domu", "sylwester", "jest", "bardzo", "wesoły."], "answer": "U nas w domu sylwester jest bardzo wesoły.", "grammar_point": "szyk"}, {"id": "h4-4", "words": ["Szóstego", "stycznia", "jest", "dzień", "wolny", "od", "pracy."], "answer": "Szóstego stycznia jest dzień wolny od pracy.", "grammar_point": "data-swieta"}]}]}};
+const $ = (t, a = {}, ...kids) => { const e = document.createElement(t); for (const [k, v] of Object.entries(a)) { if (k === 'class') e.className = v; else if (k.startsWith('on')) e.addEventListener(k.slice(2), v); else if (v !== undefined && v !== null) e.setAttribute(k, v); } for (const c of kids.flat()) { if (c == null) continue; e.append(c.nodeType ? c : document.createTextNode(c)); } return e; };
+const norm = s => String(s).trim().replace(/\s+/g, ' ').toLowerCase().replace(/[.!?…]+$/u, '').replace(/[„”«»"']/g, '').replace(/[–—]/g, '-').trim();
+const strip = s => norm(s).normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ł/g, 'l');
+function match(given, expected, accept) {
+  const g = norm(given); if (!g) return { ok: false };
+  const pool = [expected, ...(accept || [])];
+  if (pool.map(norm).includes(g)) return { ok: true };
+  const hit = pool.find(a => strip(a) === strip(g));
+  if (hit) return { ok: true, hint: '↳ z ogonkami: ' + hit };
+  return { ok: false };
+}
+const shuffle = (a, seed) => { const r = [...a]; let s = seed || 7; for (let i = r.length - 1; i > 0; i--) { s = (s * 9301 + 49297) % 233280; const j = Math.floor(s / 233280 * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; } return r; };
+
+const params = new URLSearchParams('view=comm');
+const view = params.get('view') || 'grammar';
+const app = document.getElementById('app');
+
+function header(eyebrow, title, instr, uk) {
+  app.append($('p', { class: 'eyebrow' }, eyebrow), $('h1', {}, title));
+  if (instr) app.append($('p', {}, instr));
+  if (uk) app.append($('p', { class: 'uk' }, uk));
+}
+
+function expandBlocks(spec) {
+  if (!spec) return null; const out = [];
+  for (const p of spec.split(',')) { const m = p.match(/^([a-z]+)(\d+)-([a-z]*)(\d+)$/i); if (m) { for (let i = +m[2]; i <= +m[4]; i++) out.push(m[1] + i); } else out.push(p); }
+  return out;
+}
+
+function renderBlocks(data, eyebrow) {
+  const ids = expandBlocks(params.get('blocks'));
+  const blocks = ids ? data.blocks.filter(b => ids.includes(b.block_id)) : data.blocks;
+  const single = blocks.length === 1;
+  header(eyebrow, single ? blocks[0].title.replace(/^\d+\.\s*/, '') : data.title, single ? null : data.instruction, single ? null : data.instruction_uk);
+  const tabs = $('div', { class: 'tabs' }); const body = $('div');
+  if (!single) app.append(tabs);
+  app.append(body);
+  const show = i => { [...tabs.children].forEach((t, k) => t.classList.toggle('on', k === i)); body.innerHTML = ''; renderBlock(blocks[i], body); };
+  blocks.forEach((b, i) => tabs.append($('button', { onclick: () => show(i) }, b.title)));
+  show(0);
+}
+
+function renderBlock(b, root) {
+  root.append($('p', { class: 'q' }, $('b', {}, b.instruction || '')));
+  if (b.instruction_uk) root.append($('p', { class: 'uk' }, b.instruction_uk));
+  const type = b.exercise_type;
+  if (type === 'matching') return renderMatching(b, root);
+  if (type === 'sentence-building') return b.items.forEach(it => renderSB(it, root));
+  if (type === 'drag-and-drop') {
+    const answers = b.items.map(i => i.answer);
+    const bank = shuffle([...new Set([...(b.bank || []), ...answers])], 3);
+    return b.items.forEach(it => renderChoice({ ...it, options: bank }, root, false));
+  }
+  if (type === 'true-false') return b.items.forEach(it => renderChoice({ text: it.statement, options: ['Prawda', 'Fałsz'], answer: it.answer ? 'Prawda' : 'Fałsz', explanation: it.explanation }, root, true));
+  b.items.forEach(it => it.options ? renderChoice(it, root, false) : renderInput(it, root));
+}
+
+function renderChoice(it, root) {
+  const box = $('div', { class: 'item' }, $('p', { class: 'q' }, it.text));
+  const row = $('div', { class: 'row' }); const fb = $('span', { class: 'fb' });
+  let done = false;
+  it.options.forEach(opt => {
+    const c = $('button', { class: 'chip', onclick: () => {
+      if (done) return;
+      const r = match(opt, it.answer, it.accept);
+      [...row.querySelectorAll('.chip')].forEach(x => x.classList.remove('no'));
+      if (r.ok) { c.classList.add('ok'); done = true; fb.className = 'fb ok'; fb.textContent = '✓ Dobrze!' + (it.explanation ? ' ' + it.explanation : ''); }
+      else { c.classList.add('no'); fb.className = 'fb no'; fb.textContent = it.explanation ? '✗ ' + it.explanation : '✗ Spróbuj jeszcze raz.'; }
+    } }, opt);
+    row.append(c);
+  });
+  box.append(row, $('div', {}, fb)); root.append(box);
+}
+
+function renderInput(it, root) {
+  const box = $('div', { class: 'item' }, $('p', { class: 'q' }, it.text));
+  const inp = $('input', { class: 'blank', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false' });
+  const fb = $('span', { class: 'fb' }); let fails = 0;
+  const check = () => {
+    const r = match(inp.value, it.answer, it.accept);
+    inp.classList.toggle('ok', r.ok); inp.classList.toggle('no', !r.ok);
+    if (r.ok) { fb.className = 'fb ok'; fb.textContent = '✓ Dobrze!' + (r.hint ? ' ' + r.hint : ''); }
+    else { fails++; fb.className = 'fb no'; fb.textContent = fails >= 2 ? '↳ ' + it.answer + (it.explanation ? ' — ' + it.explanation : '') : '✗ Spróbuj jeszcze raz.'; }
+  };
+  inp.addEventListener('keydown', e => { if (e.key === 'Enter') check(); });
+  box.append($('div', { class: 'row' }, inp, $('button', { class: 'btn', onclick: check }, 'Sprawdź'), fb));
+  root.append(box);
+}
+
+function renderSB(it, root) {
+  const box = $('div', { class: 'item' });
+  const out = $('div', { class: 'sb-out' }); const pool = $('div', { class: 'row' }); const fb = $('span', { class: 'fb' });
+  const reset = () => { out.innerHTML = ''; pool.innerHTML = ''; fb.textContent = ''; out.className = 'sb-out'; shuffle(it.words, it.words.length * 13 + it.id.length).forEach(w => pool.append(mk(w))); };
+  const mk = w => { const c = $('button', { class: 'chip', onclick: () => { (c.parentNode === pool ? out : pool).append(c); } }, w); return c; };
+  const check = () => { const s = [...out.children].map(c => c.textContent).join(' '); const r = match(s, it.answer); fb.className = 'fb ' + (r.ok ? 'ok' : 'no'); fb.textContent = r.ok ? '✓ Dobrze!' : '✗ Spróbuj jeszcze raz.'; out.style.borderColor = r.ok ? 'var(--ok)' : 'var(--no)'; };
+  box.append(out, pool, $('div', { class: 'row', style: 'margin-top:8px' }, $('button', { class: 'btn', onclick: check }, 'Sprawdź'), $('button', { class: 'btn ghost', onclick: reset }, 'Od nowa'), fb));
+  reset(); root.append(box);
+}
+
+function renderMatching(b, root) {
+  const lefts = b.items.map(i => i.left), rights = shuffle(b.items.map(i => i.right), b.items.length * 5 + 1);
+  let sel = null, done = 0;
+  const L = $('div', { class: 'col' }), R = $('div', { class: 'col' }); const fb = $('p', { class: 'fb' });
+  const lbtn = lefts.map((t, i) => { const c = $('button', { class: 'chip', onclick: () => { if (c.disabled) return; lbtn.forEach(x => x.classList.remove('sel')); c.classList.add('sel'); sel = i; } }, t); L.append(c); return c; });
+  rights.forEach(t => { const c = $('button', { class: 'chip', onclick: () => {
+    if (sel === null || c.disabled) { fb.className = 'fb'; fb.textContent = 'Najpierw kliknij słowo po lewej.'; return; }
+    if (b.items[sel].right === t) { c.classList.add('ok'); c.disabled = true; lbtn[sel].classList.remove('sel'); lbtn[sel].classList.add('ok'); lbtn[sel].disabled = true; lbtn[sel].textContent += ' → ' + t; sel = null; done++; fb.className = 'fb ok'; fb.textContent = done === b.items.length ? '✓ Wszystko dobrze!' : '✓'; }
+    else { c.classList.add('no'); setTimeout(() => c.classList.remove('no'), 600); fb.className = 'fb no'; fb.textContent = '✗ Nie pasuje.'; }
+  } }, t); R.append(c); });
+  root.append($('div', { class: 'match' }, L, R), fb);
+}
+
+function renderVocab(d) {
+  header('słownictwo', d.title, d.instruction);
+  const filter = $('div', { class: 'filter' }); const grid = $('div', { class: 'cards' });
+  const draw = g => { grid.innerHTML = ''; [...filter.children].forEach(b => b.classList.toggle('on', b.dataset.g === (g ?? ''))); d.items.filter(i => g == null || i.group === g).forEach(it => {
+    const gi = d.groups.indexOf(it.group);
+    const c = $('div', { class: 'vc', onclick: () => c.classList.toggle('flip') }, $('div', { class: 'in' },
+      $('div', { class: 'f g' + gi }, it.term, $('small', {}, it.group)),
+      $('div', { class: 'b g' + gi }, $('div', { class: 'tr' }, it.translation_uk), $('div', {}, it.definition), $('div', { class: 'ex' }, it.example))));
+    grid.append(c); }); };
+  const all = $('button', { onclick: () => draw(null) }, 'Wszystkie'); all.dataset.g = ''; filter.append(all);
+  d.groups.forEach(g => { const b = $('button', { onclick: () => draw(g) }, g); b.dataset.g = g; filter.append(b); });
+  app.append(filter, grid); draw(null);
+}
+
+function renderComm(d) {
+  header('zadania komunikacyjne', d.title, d.instruction, d.instruction_uk);
+  const grid = $('div', { class: 'flips' }); const back = $('div');
+  d.items.forEach((it, i) => grid.append($('div', { class: 'ft ftc' + (i % 4), onclick: () => {
+    back.innerHTML = '';
+    const b = $('div', { class: 'ftback' }, $('h3', {}, it.front_title), $('p', {}, it.back_scenario), $('b', {}, 'Plan rozmowy:'), $('ul', {}, it.back_checklist.map(x => $('li', {}, x))));
+    if (it.model_dialogue) b.append($('p', { style: 'margin-top:12px' }, $('b', {}, 'Dialog — przeczytajcie w rolach:')), $('div', { class: 'dlg' }, it.model_dialogue.map(l => $('p', {}, $('b', {}, l.speaker + ': '), l.line))));
+    back.append(b); b.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  } }, $('h3', {}, it.front_title), $('div', { class: 'hint' }, 'kliknij, żeby odwrócić →'))));
+  app.append(grid, back);
+}
+
+if (view === 'vocab') renderVocab(DATA.vocab);
+else if (view === 'comm') renderComm(DATA.comm);
+else if (view === 'hw') renderBlocks(DATA.hw, 'praca domowa');
+else renderBlocks(DATA.grammar, (params.get('blocks') || '').startsWith('t') ? 'czytanie' : (DATA.grammar.eyebrow || 'ćwiczenia'));
+</script>
+</body>
+</html>
