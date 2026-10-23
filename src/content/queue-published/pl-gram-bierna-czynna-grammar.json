@@ -1,0 +1,778 @@
+{
+  "lesson_id": "pl-gram-bierna-czynna",
+  "exercise_type": "fill-in-blank",
+  "title": "Strona czynna i bierna: od rozpoznania do przekształcenia",
+  "instruction": "Najpierw tekst, potem dwie części slajdów — po każdej ćwiczenia.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "g0",
+      "part": 1,
+      "exercise_type": "true-false",
+      "title": "0. Na start: kto co zrobił?",
+      "instruction": "Prawda czy fałsz? Uważaj: w tekście nie zawsze jest powiedziane, kto coś zrobił.",
+      "covers_slides": [
+        "s1"
+      ],
+      "items": [
+        {
+          "id": "g0-1",
+          "statement": "Kamienicę zaprojektował fabrykant.",
+          "answer": false,
+          "explanation": "Zaprojektował ją młody architekt. Fabrykant dał pieniądze.",
+          "grammar_point": "bierna-wykonawca"
+        },
+        {
+          "id": "g0-2",
+          "statement": "W 2015 roku kamienica została sprzedana prywatnej firmie.",
+          "answer": true,
+          "explanation": "„Miasto sprzedało kamienicę prywatnej firmie” — to samo zdarzenie w stronie czynnej.",
+          "grammar_point": "bierna-czynna"
+        },
+        {
+          "id": "g0-3",
+          "statement": "Fasadę odnawia ekipa z Łodzi.",
+          "answer": false,
+          "explanation": "„Fasada jest odnawiana przez ekipę z Krakowa.”",
+          "grammar_point": "bierna-wykonawca"
+        },
+        {
+          "id": "g0-4",
+          "statement": "Dach jest jeszcze wymieniany.",
+          "answer": false,
+          "explanation": "„Dach został już wymieniony” — to zdarzenie zakończone, nie proces.",
+          "grammar_point": "bierna-byc-zostac"
+        },
+        {
+          "id": "g0-5",
+          "statement": "Tekst mówi, kto zbudował kamienicę.",
+          "answer": false,
+          "explanation": "„Została zbudowana w 1903 roku” — wykonawcy nie ma, bo nie jest ważny.",
+          "grammar_point": "bierna-wykonawca"
+        },
+        {
+          "id": "g0-6",
+          "statement": "Nazwę kawiarni wybrał nowy właściciel.",
+          "answer": false,
+          "explanation": "„Nazwa została wybrana przez internautów.”",
+          "grammar_point": "bierna-wykonawca"
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. To samo zdarzenie — strona bierna",
+      "instruction": "Wybierz poprawne zdanie w stronie biernej. Błędne odpowiedzi to typowe pomyłki.",
+      "covers_slides": [
+        "s2",
+        "s3",
+        "s8"
+      ],
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Firma z Gdańska kupiła hotel.",
+          "options": [
+            "Hotel został kupiony firmą z Gdańska.",
+            "Hotel został kupiony przez firmę z Gdańska.",
+            "Hotel został kupiony przez firma z Gdańska."
+          ],
+          "answer": "Hotel został kupiony przez firmę z Gdańska.",
+          "explanation": "Wykonawca: przez + biernik (firmę). Narzędnik to kalka z ukraińskiego.",
+          "grammar_point": "bierna-przez"
+        },
+        {
+          "id": "g1-2",
+          "text": "Policja zatrzymała kierowcę.",
+          "options": [
+            "Kierowca został zatrzymany przez policję.",
+            "Kierowcę został zatrzymany przez policję.",
+            "Kierowca została zatrzymana przez policję."
+          ],
+          "answer": "Kierowca został zatrzymany przez policję.",
+          "explanation": "Podmiot jest w mianowniku (kierowca). To mężczyzna, choć słowo kończy się na -a: został zatrzymany.",
+          "grammar_point": "bierna-zgoda"
+        },
+        {
+          "id": "g1-3",
+          "text": "Sąsiad znalazł mój portfel.",
+          "options": [
+            "Mój portfel został znalezony przez sąsiada.",
+            "Mój portfel został znaleziony sąsiadem.",
+            "Mój portfel został znaleziony przez sąsiada."
+          ],
+          "answer": "Mój portfel został znaleziony przez sąsiada.",
+          "explanation": "znaleźć → znaleziony; wykonawca: przez sąsiada.",
+          "grammar_point": "imieslow-nieregularny"
+        },
+        {
+          "id": "g1-4",
+          "text": "Ja przygotowałem tę prezentację.",
+          "options": [
+            "Ta prezentacja została przygotowana przeze mnie.",
+            "Ta prezentacja została przygotowana mną.",
+            "Tę prezentację została przygotowana przeze mnie."
+          ],
+          "answer": "Ta prezentacja została przygotowana przeze mnie.",
+          "explanation": "Podmiot w mianowniku (ta prezentacja) i przeze mnie.",
+          "grammar_point": "bierna-przez"
+        },
+        {
+          "id": "g1-5",
+          "text": "Rodzice zaprosili moich przyjaciół.",
+          "options": [
+            "Moich przyjaciół zostali zaproszeni przez rodziców.",
+            "Moi przyjaciele zostali zaproszeni przez rodziców.",
+            "Moi przyjaciele zostały zaproszone przez rodziców."
+          ],
+          "answer": "Moi przyjaciele zostali zaproszeni przez rodziców.",
+          "explanation": "Mianownik: moi przyjaciele. Mężczyźni → zostali zaproszeni.",
+          "grammar_point": "bierna-meskoosobowa"
+        },
+        {
+          "id": "g1-6",
+          "text": "Kot zjadł rybę.",
+          "options": [
+            "Ryba została zjedziona przez kota.",
+            "Ryba została zjedzona kotem.",
+            "Ryba została zjedzona przez kota."
+          ],
+          "answer": "Ryba została zjedzona przez kota.",
+          "explanation": "zjeść → zjedzony (nieregularny); wykonawca: przez kota.",
+          "grammar_point": "imieslow-nieregularny"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Imiesłów: która forma jest poprawna?",
+      "instruction": "Wybierz poprawny imiesłów bierny. Druga forma to częsty błąd.",
+      "covers_slides": [
+        "s4",
+        "s5",
+        "s6"
+      ],
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "zgasić → ___",
+          "options": [
+            "zgasiony",
+            "zgaszony"
+          ],
+          "answer": "zgaszony",
+          "explanation": "ś → sz przed -ony: gaszę → zgaszony.",
+          "grammar_point": "imieslow-wymiany"
+        },
+        {
+          "id": "g2-2",
+          "text": "przetłumaczyć → ___",
+          "options": [
+            "przetłumaczony",
+            "przetłumaczany"
+          ],
+          "answer": "przetłumaczony",
+          "explanation": "-yć → -ony. Forma na -any pasuje do -ać.",
+          "grammar_point": "imieslow-koncowki"
+        },
+        {
+          "id": "g2-3",
+          "text": "otworzyć → ___",
+          "options": [
+            "otworzony",
+            "otwarty"
+          ],
+          "answer": "otwarty",
+          "explanation": "Nieregularny: otwarty.",
+          "grammar_point": "imieslow-nieregularny"
+        },
+        {
+          "id": "g2-4",
+          "text": "zapomnieć → ___",
+          "options": [
+            "zapomniany",
+            "zapomniony"
+          ],
+          "answer": "zapomniany",
+          "explanation": "-eć → -any.",
+          "grammar_point": "imieslow-koncowki"
+        },
+        {
+          "id": "g2-5",
+          "text": "dotknąć → ___",
+          "options": [
+            "dotkniony",
+            "dotknięty"
+          ],
+          "answer": "dotknięty",
+          "explanation": "-nąć → -nięty.",
+          "grammar_point": "imieslow-koncowki"
+        },
+        {
+          "id": "g2-6",
+          "text": "wypić → ___",
+          "options": [
+            "wypity",
+            "wypiony"
+          ],
+          "answer": "wypity",
+          "explanation": "Krótkie pić → -ty.",
+          "grammar_point": "imieslow-koncowki"
+        },
+        {
+          "id": "g2-7",
+          "text": "obudzić → ___",
+          "options": [
+            "obudziony",
+            "obudzony"
+          ],
+          "answer": "obudzony",
+          "explanation": "dź → dz: budzę → obudzony.",
+          "grammar_point": "imieslow-wymiany"
+        },
+        {
+          "id": "g2-8",
+          "text": "zjeść → ___",
+          "options": [
+            "zjedzony",
+            "zjeściony"
+          ],
+          "answer": "zjedzony",
+          "explanation": "Nieregularny: zjedzony.",
+          "grammar_point": "imieslow-nieregularny"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Wpisz imiesłów w dobrej formie",
+      "instruction": "Utwórz imiesłów od czasownika z nawiasu i dopasuj go do podmiotu.",
+      "covers_slides": [
+        "s4",
+        "s5",
+        "s7"
+      ],
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Okno zostało ___ (umyć) wczoraj wieczorem.",
+          "answer": "umyte",
+          "explanation": "Okno — rodzaj nijaki: umyte.",
+          "grammar_point": "bierna-zgoda"
+        },
+        {
+          "id": "g3-2",
+          "text": "Paczka została ___ (wysłać) w poniedziałek.",
+          "answer": "wysłana",
+          "explanation": "Paczka — rodzaj żeński.",
+          "grammar_point": "bierna-zgoda"
+        },
+        {
+          "id": "g3-3",
+          "text": "Wszystkie bilety zostały ___ (sprzedać) w godzinę.",
+          "answer": "sprzedane",
+          "explanation": "Bilety — niemęskoosobowe: sprzedane.",
+          "grammar_point": "bierna-zgoda"
+        },
+        {
+          "id": "g3-4",
+          "text": "Nowi pracownicy zostali ___ (przeszkolić) w zeszłym tygodniu.",
+          "answer": "przeszkoleni",
+          "explanation": "Pracownicy — męskoosobowe: przeszkolony → przeszkoleni.",
+          "grammar_point": "bierna-meskoosobowa"
+        },
+        {
+          "id": "g3-5",
+          "text": "Rachunek został ___ (zapłacić) przelewem.",
+          "answer": "zapłacony",
+          "explanation": "ć → c: zapłacony.",
+          "grammar_point": "imieslow-wymiany"
+        },
+        {
+          "id": "g3-6",
+          "text": "Drzwi zostały ___ (zamknąć) na klucz.",
+          "answer": "zamknięte",
+          "explanation": "Drzwi — tylko liczba mnoga, niemęskoosobowe.",
+          "grammar_point": "bierna-zgoda"
+        },
+        {
+          "id": "g3-7",
+          "text": "Złodzieje zostali ___ (złapać) po dwóch dniach.",
+          "answer": "złapani",
+          "explanation": "Męskoosobowe: złapany → złapani.",
+          "grammar_point": "bierna-meskoosobowa"
+        },
+        {
+          "id": "g3-8",
+          "text": "Goście zostali ___ (powitać) przez gospodarza.",
+          "answer": "powitani",
+          "explanation": "Męskoosobowe: powitany → powitani.",
+          "grammar_point": "bierna-meskoosobowa"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Kto to zrobił? przez + biernik",
+      "instruction": "Wpisz wykonawcę razem z przyimkiem przez, np. przez moją siostrę.",
+      "covers_slides": [
+        "s8"
+      ],
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Ta książka została napisana ___ (znana dziennikarka).",
+          "answer": "przez znaną dziennikarkę",
+          "grammar_point": "bierna-przez"
+        },
+        {
+          "id": "g4-2",
+          "text": "Decyzja została podjęta ___ (zarząd firmy).",
+          "answer": "przez zarząd firmy",
+          "grammar_point": "bierna-przez"
+        },
+        {
+          "id": "g4-3",
+          "text": "Pies został znaleziony ___ (dwaj chłopcy).",
+          "answer": "przez dwóch chłopców",
+          "grammar_point": "bierna-przez"
+        },
+        {
+          "id": "g4-4",
+          "text": "Ten obraz został namalowany ___ (mój dziadek).",
+          "answer": "przez mojego dziadka",
+          "grammar_point": "bierna-przez"
+        },
+        {
+          "id": "g4-5",
+          "text": "Wiadomość została przeczytana ___ (wszyscy uczestnicy).",
+          "answer": "przez wszystkich uczestników",
+          "grammar_point": "bierna-przez"
+        },
+        {
+          "id": "g4-6",
+          "text": "Te zdjęcia zostały zrobione ___ (ona).",
+          "answer": "przez nią",
+          "grammar_point": "bierna-przez"
+        },
+        {
+          "id": "g4-7",
+          "text": "Ten tekst został poprawiony ___ (ja).",
+          "answer": "przeze mnie",
+          "grammar_point": "bierna-przez"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Być czy zostać?",
+      "instruction": "Zdarzenie czy stan? Wybierz formę i przeczytaj wyjaśnienie.",
+      "covers_slides": [
+        "s9"
+      ],
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "W niedziele sklep ___ zamknięty.",
+          "options": [
+            "jest",
+            "został"
+          ],
+          "answer": "jest",
+          "explanation": "Stan, który się powtarza → być.",
+          "grammar_point": "bierna-byc-zostac"
+        },
+        {
+          "id": "g5-2",
+          "text": "Wczoraj o 15:00 sklep ___ zamknięty przez sanepid.",
+          "options": [
+            "był",
+            "został"
+          ],
+          "answer": "został",
+          "explanation": "Konkretny moment, zdarzenie → zostać.",
+          "grammar_point": "bierna-byc-zostac"
+        },
+        {
+          "id": "g5-3",
+          "text": "Kiedy przyszłam, okno ___ już otwarte.",
+          "options": [
+            "było",
+            "zostało"
+          ],
+          "answer": "było",
+          "explanation": "Stan w chwili mojego przyjścia → być.",
+          "grammar_point": "bierna-byc-zostac"
+        },
+        {
+          "id": "g5-4",
+          "text": "W 2021 roku most ___ oddany do użytku.",
+          "options": [
+            "był",
+            "został"
+          ],
+          "answer": "został",
+          "explanation": "Data, jednorazowe zdarzenie → zostać.",
+          "grammar_point": "bierna-byc-zostac"
+        },
+        {
+          "id": "g5-5",
+          "text": "Mój samochód ___ ukradziony w nocy z piątku na sobotę.",
+          "options": [
+            "był",
+            "został"
+          ],
+          "answer": "został",
+          "explanation": "Zdarzenie w konkretnym czasie → zostać.",
+          "grammar_point": "bierna-byc-zostac"
+        },
+        {
+          "id": "g5-6",
+          "text": "Wszystkie formularze ___ już wypełnione — możemy je wysłać.",
+          "options": [
+            "są",
+            "zostają"
+          ],
+          "answer": "są",
+          "explanation": "Teraz mamy wynik, stan → być.",
+          "grammar_point": "bierna-byc-zostac"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Proces czy wynik?",
+      "instruction": "Wybierz imiesłów niedokonany (proces) albo dokonany (wynik).",
+      "covers_slides": [
+        "s10"
+      ],
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Dom był ___ przez cały rok.",
+          "options": [
+            "budowany",
+            "zbudowany"
+          ],
+          "answer": "budowany",
+          "explanation": "„Przez cały rok” — proces → niedokonany.",
+          "grammar_point": "bierna-aspekt"
+        },
+        {
+          "id": "g6-2",
+          "text": "Dom został ___ w rekordowym czasie.",
+          "options": [
+            "budowany",
+            "zbudowany"
+          ],
+          "answer": "zbudowany",
+          "explanation": "Zostać + dokonany.",
+          "grammar_point": "bierna-aspekt"
+        },
+        {
+          "id": "g6-3",
+          "text": "Pacjenci są ___ od ósmej do czternastej.",
+          "options": [
+            "przyjmowani",
+            "przyjęci"
+          ],
+          "answer": "przyjmowani",
+          "explanation": "Regularnie, codziennie → niedokonany.",
+          "grammar_point": "bierna-aspekt"
+        },
+        {
+          "id": "g6-4",
+          "text": "Ten pacjent został ___ bez kolejki.",
+          "options": [
+            "przyjmowany",
+            "przyjęty"
+          ],
+          "answer": "przyjęty",
+          "explanation": "Jedno zdarzenie, zostać → dokonany.",
+          "grammar_point": "bierna-aspekt"
+        },
+        {
+          "id": "g6-5",
+          "text": "List był ___ trzy razy, zanim go wysłałam.",
+          "options": [
+            "poprawiany",
+            "poprawiony"
+          ],
+          "answer": "poprawiany",
+          "explanation": "Kilka razy, proces → niedokonany.",
+          "grammar_point": "bierna-aspekt"
+        },
+        {
+          "id": "g6-6",
+          "text": "Błąd został ___ w nowej wersji programu.",
+          "options": [
+            "poprawiany",
+            "poprawiony"
+          ],
+          "answer": "poprawiony",
+          "explanation": "Wynik → dokonany.",
+          "grammar_point": "bierna-aspekt"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Wszystkie czasy",
+      "instruction": "Wybierz formę być lub zostać. Patrz na czas i na to, czy to proces, czy zdarzenie.",
+      "covers_slides": [
+        "s11"
+      ],
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Teraz ten film ___ pokazywany w kinach w całej Polsce.",
+          "options": [
+            "jest",
+            "został"
+          ],
+          "answer": "jest",
+          "explanation": "Teraz, proces → jest + niedokonany.",
+          "grammar_point": "bierna-czasy"
+        },
+        {
+          "id": "g7-2",
+          "text": "W zeszłym roku festiwal ___ zorganizowany po raz pierwszy.",
+          "options": [
+            "był",
+            "został"
+          ],
+          "answer": "został",
+          "explanation": "Zdarzenie w przeszłości → został.",
+          "grammar_point": "bierna-czasy"
+        },
+        {
+          "id": "g7-3",
+          "text": "Przez całe wakacje basen ___ remontowany.",
+          "options": [
+            "będzie",
+            "zostanie"
+          ],
+          "answer": "będzie",
+          "explanation": "Proces w przyszłości: zostanie + niedokonany nie istnieje.",
+          "grammar_point": "bierna-czasy"
+        },
+        {
+          "id": "g7-4",
+          "text": "Wyniki konkursu ___ ogłoszone jutro o dziesiątej.",
+          "options": [
+            "zostaną",
+            "zostały"
+          ],
+          "answer": "zostaną",
+          "explanation": "Jutro → przyszły.",
+          "grammar_point": "bierna-czasy"
+        },
+        {
+          "id": "g7-5",
+          "text": "Przez dwa lata szpital ___ rozbudowywany.",
+          "options": [
+            "był",
+            "został"
+          ],
+          "answer": "był",
+          "explanation": "Proces w przeszłości → był + niedokonany.",
+          "grammar_point": "bierna-czasy"
+        },
+        {
+          "id": "g7-6",
+          "text": "Gdyby nie protest mieszkańców, stare drzewa ___ wycięte.",
+          "options": [
+            "zostały",
+            "zostałyby"
+          ],
+          "answer": "zostałyby",
+          "explanation": "Coś, co się nie stało → tryb przypuszczający.",
+          "grammar_point": "bierna-czasy"
+        },
+        {
+          "id": "g7-7",
+          "text": "Gdybyś wysłał wniosek wcześniej, ___ rozpatrzony w tym tygodniu.",
+          "options": [
+            "zostanie",
+            "zostałby"
+          ],
+          "answer": "zostałby",
+          "explanation": "Gdyby… → zostałby.",
+          "grammar_point": "bierna-czasy"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "8. Z czynnej na bierną",
+      "instruction": "Napisz to samo zdanie w stronie biernej. Zachowaj czas i aspekt, wykonawcę podaj z przez.",
+      "covers_slides": [
+        "s12"
+      ],
+      "items": [
+        {
+          "id": "g8-1",
+          "prompt": "Mechanik naprawił mój samochód.",
+          "answer": "Mój samochód został naprawiony przez mechanika.",
+          "accept": [
+            "Samochód został naprawiony przez mechanika."
+          ],
+          "grammar_point": "bierna-przeksztalcenie"
+        },
+        {
+          "id": "g8-2",
+          "prompt": "Firma zatrudni nowych kierowców.",
+          "answer": "Nowi kierowcy zostaną zatrudnieni przez firmę.",
+          "grammar_point": "bierna-przeksztalcenie"
+        },
+        {
+          "id": "g8-3",
+          "prompt": "Studenci piszą test.",
+          "answer": "Test jest pisany przez studentów.",
+          "grammar_point": "bierna-przeksztalcenie"
+        },
+        {
+          "id": "g8-4",
+          "prompt": "Burmistrz otworzył nowy park.",
+          "answer": "Nowy park został otwarty przez burmistrza.",
+          "grammar_point": "bierna-przeksztalcenie"
+        },
+        {
+          "id": "g8-5",
+          "prompt": "Jutro kurier dostarczy paczki.",
+          "answer": "Jutro paczki zostaną dostarczone przez kuriera.",
+          "accept": [
+            "Paczki zostaną dostarczone przez kuriera jutro.",
+            "Paczki zostaną jutro dostarczone przez kuriera."
+          ],
+          "grammar_point": "bierna-przeksztalcenie"
+        },
+        {
+          "id": "g8-6",
+          "prompt": "Lekarze uratowali dziecko.",
+          "answer": "Dziecko zostało uratowane przez lekarzy.",
+          "grammar_point": "bierna-przeksztalcenie"
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "9. Pułapki i granice strony biernej",
+      "instruction": "Jedna forma jest poprawna. Druga to kalka albo forma, której w polskim nie ma.",
+      "covers_slides": [
+        "s13",
+        "s14",
+        "s15",
+        "s16"
+      ],
+      "items": [
+        {
+          "id": "g9-1",
+          "text": "Ten list został napisany ___.",
+          "options": [
+            "mną",
+            "przeze mnie"
+          ],
+          "answer": "przeze mnie",
+          "explanation": "Wykonawca: przez + biernik.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g9-2",
+          "text": "Pracownicy ___ poinformowani o zmianach.",
+          "options": [
+            "zostali",
+            "zostały"
+          ],
+          "answer": "zostali",
+          "explanation": "Pracownicy — męskoosobowe.",
+          "grammar_point": "bierna-meskoosobowa"
+        },
+        {
+          "id": "g9-3",
+          "text": "Ten projekt ___ realizowany przez trzy lata.",
+          "options": [
+            "został",
+            "był"
+          ],
+          "answer": "był",
+          "explanation": "Proces → być + niedokonany.",
+          "grammar_point": "bierna-aspekt"
+        },
+        {
+          "id": "g9-4",
+          "text": "Czy restauracja jest już ___?",
+          "options": [
+            "otworzona",
+            "otwarta"
+          ],
+          "answer": "otwarta",
+          "explanation": "otworzyć → otwarty.",
+          "grammar_point": "imieslow-nieregularny"
+        },
+        {
+          "id": "g9-5",
+          "text": "Na autobus ___ prawie godzinę.",
+          "options": [
+            "czekaliśmy",
+            "był czekany"
+          ],
+          "answer": "czekaliśmy",
+          "explanation": "Czekać na + biernik nie ma strony biernej.",
+          "grammar_point": "bierna-brak"
+        },
+        {
+          "id": "g9-6",
+          "text": "Ten samochód ___ przez mojego ojca od dwudziestu lat.",
+          "options": [
+            "jest używany",
+            "został używany"
+          ],
+          "answer": "jest używany",
+          "explanation": "Od dwudziestu lat, proces → jest. Używać + dopełniacz, a mimo to ma stronę bierną.",
+          "grammar_point": "bierna-brak"
+        },
+        {
+          "id": "g9-7",
+          "text": "W piątek sprzedano ___.",
+          "options": [
+            "ostatnia działka",
+            "ostatnią działkę"
+          ],
+          "answer": "ostatnią działkę",
+          "explanation": "Po -no / -to zostaje biernik.",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g9-8",
+          "text": "W tym biurze ___ po polsku i po angielsku.",
+          "options": [
+            "jest mówione",
+            "mówi się"
+          ],
+          "answer": "mówi się",
+          "explanation": "Mówić nie tworzy tu strony biernej — mówimy: mówi się.",
+          "grammar_point": "bierna-brak"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,493 @@
+{
+  "lesson_id": "pl-gram-bierna-czynna",
+  "exercise_type": "grammar-slides",
+  "title": "Strona czynna i bierna",
+  "slides": [
+    {
+      "id": "s1",
+      "part": 1,
+      "section": "teoria",
+      "kind": "title",
+      "title": "Strona czynna i bierna",
+      "subtitle": "Kto to zrobił? — czy: co się z tym stało?",
+      "question": "Kto to zrobił? — czy: co się z tym stało?",
+      "goal": "Po tej części: zamienisz zdanie „Konserwatorzy odnowili fasadę” na „Fasada została odnowiona przez konserwatorów”."
+    },
+    {
+      "id": "s2",
+      "part": 1,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Dwie strony tego samego zdarzenia",
+      "left": {
+        "head": "strona czynna",
+        "rule": "w centrum jest wykonawca: kto robi?",
+        "examples": [
+          "[[Ekipa z Krakowa]] odnawia fasadę.",
+          "[[Internauci]] wybrali nazwę."
+        ]
+      },
+      "right": {
+        "head": "strona bierna",
+        "rule": "w centrum jest rzecz: co się z nią dzieje?",
+        "examples": [
+          "[[Fasada]] jest odnawiana przez ekipę z Krakowa.",
+          "[[Nazwa]] została wybrana przez internautów."
+        ]
+      },
+      "note": "Dopełnienie w bierniku (fasadę, nazwę) staje się podmiotem w mianowniku (fasada, nazwa)."
+    },
+    {
+      "id": "s3",
+      "part": 1,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Formuła strony biernej",
+      "steps": [
+        {
+          "label": "podmiot (mianownik)",
+          "text": "Kawiarnia"
+        },
+        {
+          "label": "być / zostać w odpowiednim czasie",
+          "text": "zostanie"
+        },
+        {
+          "label": "imiesłów bierny",
+          "text": "otwarta"
+        },
+        {
+          "label": "przez + biernik — tylko gdy ważne",
+          "text": "przez nowego właściciela"
+        }
+      ],
+      "result": "Kawiarnia [[zostanie otwarta]] przez nowego właściciela.",
+      "note": "Odmieniamy tylko być / zostać. Imiesłów zgadza się z podmiotem jak przymiotnik."
+    },
+    {
+      "id": "s4",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Jak tworzymy imiesłów bierny",
+      "columns": [
+        "bezokolicznik",
+        "końcówka",
+        "przykłady"
+      ],
+      "rows": [
+        [
+          "-ać, -ować",
+          "[[-any]]",
+          "sprzedać → sprzedany · zaprojektować → zaprojektowany"
+        ],
+        [
+          "-eć",
+          "[[-any]]",
+          "zrozumieć → zrozumiany · zapomnieć → zapomniany"
+        ],
+        [
+          "-ić, -yć",
+          "[[-ony]]",
+          "zniszczyć → zniszczony · zgubić → zgubiony"
+        ],
+        [
+          "-ść, -źć, -c",
+          "[[-ony]]",
+          "znaleźć → znaleziony · upiec → upieczony"
+        ],
+        [
+          "-nąć",
+          "[[-nięty]]",
+          "zamknąć → zamknięty · dotknąć → dotknięty"
+        ],
+        [
+          "-ąć; krótkie -yć, -ić",
+          "[[-ty]]",
+          "zdjąć → zdjęty · umyć → umyty · wypić → wypity"
+        ]
+      ],
+      "note": "Krótkie czasowniki: myć, pić, bić, szyć, kryć i ich pary z przedrostkiem: odkryć → odkryty, zbić → zbity."
+    },
+    {
+      "id": "s5",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Wymiany przed -ony",
+      "columns": [
+        "bezokolicznik",
+        "wymiana",
+        "imiesłów"
+      ],
+      "rows": [
+        [
+          "zapłacić",
+          "ć → c",
+          "zapła[[c]]ony"
+        ],
+        [
+          "zaprosić",
+          "ś → sz",
+          "zapro[[sz]]ony"
+        ],
+        [
+          "obrazić",
+          "ź → ż",
+          "obra[[ż]]ony"
+        ],
+        [
+          "urodzić",
+          "dź → dz",
+          "uro[[dz]]ony"
+        ],
+        [
+          "opuścić",
+          "ść → szcz",
+          "opu[[szcz]]ony"
+        ],
+        [
+          "zostawić",
+          "bez wymiany",
+          "zostawi[[ony]]"
+        ]
+      ],
+      "note": "Tak samo jak w 1. osobie czasu teraźniejszego: płacę, proszę, rodzę, puszczam."
+    },
+    {
+      "id": "s6",
+      "part": 1,
+      "section": "wyjatki",
+      "kind": "table",
+      "reveal": "row",
+      "refers_to": "s4",
+      "title": "Nieregularne — na pamięć",
+      "columns": [
+        "bezokolicznik",
+        "imiesłów",
+        "przykład"
+      ],
+      "rows": [
+        [
+          "otworzyć",
+          "[[otwarty]]",
+          "Sklep jest otwarty do 22:00."
+        ],
+        [
+          "zjeść",
+          "[[zjedzony]]",
+          "Cały tort został zjedzony."
+        ],
+        [
+          "ukraść",
+          "[[ukradziony]]",
+          "Rower został ukradziony w nocy."
+        ],
+        [
+          "wziąć",
+          "[[wzięty]]",
+          "Kredyt został wzięty na 20 lat."
+        ],
+        [
+          "przynieść",
+          "[[przyniesiony]]",
+          "Obiad został przyniesiony do pokoju."
+        ]
+      ],
+      "note": "✗ otworzony, ✗ zjeściony — typowe błędy."
+    },
+    {
+      "id": "s7",
+      "part": 1,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Zgoda z podmiotem",
+      "columns": [
+        "",
+        "on",
+        "ona",
+        "ono",
+        "oni",
+        "one"
+      ],
+      "rows": [
+        [
+          "zostać",
+          "został",
+          "została",
+          "zostało",
+          "[[zostali]]",
+          "zostały"
+        ],
+        [
+          "imiesłów",
+          "zaproszon[[y]]",
+          "zaproszon[[a]]",
+          "zaproszon[[e]]",
+          "zaprosze[[ni]]",
+          "zaproszon[[e]]"
+        ],
+        [
+          "przykład",
+          "Gość został zaproszony.",
+          "Sąsiadka została zaproszona.",
+          "Dziecko zostało zaproszone.",
+          "Koledzy zostali zaproszeni.",
+          "Koleżanki zostały zaproszone."
+        ]
+      ],
+      "note": "Oni — forma męskoosobowa: -ony → -eni, -any → -ani, -ty → -ci (zaproszeni, wybrani, zamknięci)."
+    },
+    {
+      "id": "s8",
+      "part": 1,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Wykonawca: przez + biernik",
+      "items": [
+        {
+          "tag": "osoba",
+          "pl": "Nazwa została wybrana [[przez internautów]].",
+          "uk": "Назву обрали інтернет-користувачі."
+        },
+        {
+          "tag": "instytucja",
+          "pl": "Kamienica została kupiona [[przez prywatną firmę]].",
+          "uk": "Кам'яницю купила приватна фірма."
+        },
+        {
+          "tag": "zaimek",
+          "pl": "Ten raport został przygotowany [[przeze mnie]].",
+          "uk": "Цей звіт підготував я / підготовлений мною."
+        },
+        {
+          "tag": "bez wykonawcy",
+          "pl": "Kamienica została zbudowana w 1903 roku.",
+          "uk": "Кам'яницю збудували в 1903 році."
+        }
+      ],
+      "note": "Nigdy narzędnik: ✗ wybrana internautami. Wykonawcę dodajemy tylko wtedy, gdy jest ważny."
+    },
+    {
+      "id": "s9",
+      "part": 2,
+      "section": "teoria",
+      "kind": "compare",
+      "title": "Zostać czy być?",
+      "left": {
+        "head": "zostać",
+        "rule": "zdarzenie: coś się stało w konkretnym momencie",
+        "examples": [
+          "Dach [[został]] wymieniony w maju.",
+          "Kawiarnia [[zostanie]] otwarta wiosną."
+        ]
+      },
+      "right": {
+        "head": "być",
+        "rule": "stan albo proces, który trwa lub się powtarza",
+        "examples": [
+          "Fasada [[jest]] odnawiana.",
+          "W niedziele sklep [[jest]] zamknięty."
+        ]
+      },
+      "note": "Pytanie kontrolne: czy mogę dodać „w tamtej chwili”, „wczoraj o 10:00”? Tak → zostać."
+    },
+    {
+      "id": "s10",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Aspekt decyduje",
+      "columns": [
+        "",
+        "niedokonany → proces",
+        "dokonany → wynik"
+      ],
+      "rows": [
+        [
+          "być",
+          "Most [[jest budowany]]. — budowa trwa",
+          "Most [[jest zbudowany]]. — stan: most już stoi"
+        ],
+        [
+          "zostać",
+          "✗ został budowany",
+          "Most [[został zbudowany]]. — zdarzenie"
+        ]
+      ],
+      "note": "Zostać łączymy z imiesłowem dokonanym. Proces w przeszłości: był budowany."
+    },
+    {
+      "id": "s11",
+      "part": 2,
+      "section": "teoria",
+      "kind": "table",
+      "reveal": "row",
+      "title": "Strona bierna we wszystkich czasach",
+      "columns": [
+        "czas",
+        "być — proces lub stan",
+        "zostać — zdarzenie"
+      ],
+      "rows": [
+        [
+          "teraźniejszy",
+          "Fasada [[jest]] odnawiana.",
+          "Każdy wniosek [[zostaje]] sprawdzony. (rzadziej — procedury, reportaż)"
+        ],
+        [
+          "przeszły",
+          "Fasada [[była]] odnawiana przez rok.",
+          "Dach [[został]] wymieniony."
+        ],
+        [
+          "przyszły",
+          "Fasada [[będzie]] odnawiana do maja.",
+          "Kawiarnia [[zostanie]] otwarta."
+        ],
+        [
+          "tryb przypuszczający",
+          "Dom [[byłby]] lepiej chroniony.",
+          "Kamienica [[zostałaby]] zburzona, gdyby nie nowy właściciel."
+        ]
+      ],
+      "note": "Imiesłów się nie zmienia z czasem — tylko z rodzajem i liczbą."
+    },
+    {
+      "id": "s12",
+      "part": 2,
+      "section": "teoria",
+      "kind": "steps",
+      "title": "Z czynnej na bierną — cztery kroki",
+      "steps": [
+        {
+          "label": "1. dopełnienie (biernik) → podmiot (mianownik)",
+          "text": "fasadę → fasada"
+        },
+        {
+          "label": "2. być / zostać: ten sam czas i aspekt",
+          "text": "odnowili (przeszły, dokonany) → została"
+        },
+        {
+          "label": "3. imiesłów zgodny z podmiotem",
+          "text": "odnowiona"
+        },
+        {
+          "label": "4. wykonawca: przez + biernik, jeśli ważny",
+          "text": "przez konserwatorów"
+        }
+      ],
+      "result": "Konserwatorzy odnowili fasadę. → [[Fasada została odnowiona przez konserwatorów.]]"
+    },
+    {
+      "id": "s13",
+      "part": 2,
+      "section": "wyjatki",
+      "kind": "exceptions",
+      "refers_to": "s2",
+      "title": "Kiedy strony biernej nie ma",
+      "items": [
+        {
+          "text": "Bez dopełnienia w bierniku: spać, iść, mieszkać, czekać na kogoś — ✗ „Autobus był czekany”."
+        },
+        {
+          "text": "Zwykle też bez strony biernej przy dopełniaczu i celowniku: pomagać komuś, szukać czegoś. Wyjątki z dopełniaczem: [[używany]], [[poszukiwany]]."
+        },
+        {
+          "text": "Czasowniki z się (uczyć się, bać się) nie tworzą strony biernej."
+        },
+        {
+          "text": "Mieć, chcieć, umieć — też nie: ✗ „Samochód jest miany”."
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "part": 2,
+      "section": "teoria",
+      "kind": "examples",
+      "title": "Polszczyzna ma też inne drogi",
+      "items": [
+        {
+          "tag": "strona bierna — oficjalnie",
+          "pl": "Kamienica [[została sprzedana]] w 2015 roku.",
+          "uk": "Кам'яниця була продана у 2015 році."
+        },
+        {
+          "tag": "-no / -to — bez podmiotu",
+          "pl": "[[Sprzedano]] kamienicę w 2015 roku.",
+          "uk": "Кам'яницю продано у 2015 році."
+        },
+        {
+          "tag": "3. os. lm — w mowie",
+          "pl": "[[Sprzedali]] kamienicę w 2015 roku.",
+          "uk": "Кам'яницю продали у 2015 році."
+        },
+        {
+          "tag": "się — ogólnie, zwyczaj",
+          "pl": "Tu [[remontuje się]] stare kamienice.",
+          "uk": "Тут ремонтують старі кам'яниці."
+        }
+      ],
+      "note": "Po -no / -to i bezosobowym się dopełnienie zostaje w bierniku: sprzedano kamienicę."
+    },
+    {
+      "id": "s15",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego (1)",
+      "items": [
+        {
+          "uk": "написаний мною",
+          "wrong": "napisany mną",
+          "right": "napisany [[przeze mnie]]",
+          "why": "Wykonawca: przez + biernik. Narzędnik tutaj nie działa."
+        },
+        {
+          "uk": "дім був збудований у 1903 році (подія)",
+          "wrong": "Dom był zbudowany w 1903 roku.",
+          "right": "Dom [[został]] zbudowany w 1903 roku.",
+          "why": "Konkretne zdarzenie z datą → zostać. „Był zbudowany” opisuje stan."
+        },
+        {
+          "uk": "міст будували два роки",
+          "wrong": "Most został budowany przez dwa lata.",
+          "right": "Most [[był]] budowany przez dwa lata.",
+          "why": "Proces, który trwał → być + imiesłów niedokonany."
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "part": 2,
+      "section": "pulapki",
+      "kind": "traps",
+      "title": "Pułapki z ukraińskiego (2)",
+      "items": [
+        {
+          "uk": "студентів запросили / студенти були запрошені",
+          "wrong": "Studenci zostały zaproszone.",
+          "right": "Studenci [[zostali zaproszeni]].",
+          "why": "Mężczyźni albo grupa mieszana → forma męskoosobowa w obu słowach."
+        },
+        {
+          "uk": "магазин відчинений",
+          "wrong": "Sklep jest otworzony.",
+          "right": "Sklep jest [[otwarty]].",
+          "why": "Nieregularne: otworzyć → otwarty."
+        },
+        {
+          "uk": "кам'яницю продано",
+          "wrong": "Kamienica sprzedano w 2015 roku.",
+          "right": "[[Kamienicę]] sprzedano w 2015 roku.",
+          "why": "Forma -no nie ma podmiotu — rzeczownik zostaje w bierniku."
+        }
+      ]
+    }
+  ]
+}

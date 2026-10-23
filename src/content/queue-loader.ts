@@ -200,20 +200,22 @@ function normalizeGrammar(raw: any): GrammarPyramidExercise {
         taskType = 'text-transform';
       }
       // drag bank → chip picker fill-in-blank (same UX as notebook prototype)
+      const isBankBlock = taskType === 'drag-and-drop' || (Array.isArray(b.bank) && b.bank.length > 0);
       if (taskType === 'drag-and-drop') {
         taskType = 'fill-in-blank';
       }
       const bank: string[] | undefined = Array.isArray(b.bank) ? b.bank : undefined;
-      // bank must include answers + traps; salvage if Claude left only traps
+      // bank must include answers + traps; salvage if Claude left only traps.
+      // Only for real bank blocks: a plain "wpisz" fill-in-blank stays a text input,
+      // otherwise every item gets the answers of all other items as chips.
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const answerWords = (b.items ?? [])
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         .map((it: any) => (typeof it?.answer === 'string' ? it.answer : null))
         .filter((w: string | null): w is string => Boolean(w));
-      const chipBank =
-        bank?.length || answerWords.length
-          ? Array.from(new Set([...(bank ?? []), ...answerWords]))
-          : undefined;
+      const chipBank = isBankBlock
+        ? Array.from(new Set([...(bank ?? []), ...answerWords]))
+        : undefined;
       return {
         level: i + 1,
         name: b.title ?? `Poziom ${i + 1}`,
