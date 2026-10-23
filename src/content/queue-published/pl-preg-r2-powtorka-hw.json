@@ -1,0 +1,160 @@
+{
+  "lesson_id": "pl-preg-r2-powtorka",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: powtórka z lekcji 3 i 4",
+  "instruction": "Trzy bloki: połączenia słów, pełna forma i krótka historia Ireny.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "title": "1. Co z czym?",
+      "exercise_type": "matching",
+      "instruction": "Połącz czasownik z tym, co do niego pasuje.",
+      "items": [
+        {
+          "id": "h1-1",
+          "left": "zamontować",
+          "right": "fotelik w samochodzie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-2",
+          "left": "zapisywać",
+          "right": "godziny skurczów w telefonie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-3",
+          "left": "odebrać",
+          "right": "odpis aktu urodzenia",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-4",
+          "left": "przystawiać",
+          "right": "dziecko do piersi",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-5",
+          "left": "obejrzeć",
+          "right": "szwy po porodzie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-6",
+          "left": "złożyć",
+          "right": "wniosek o świadczenie",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "title": "2. Pełna forma",
+      "exercise_type": "fill-in-blank",
+      "instruction": "Wpisz słowo w dobrej formie. W nawiasie jest podpowiedź.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Ireno, ___ (kupić, ty) po drodze wodę mineralną!",
+          "answer": "kup",
+          "grammar_point": "tryb-rozkazujacy"
+        },
+        {
+          "id": "h2-2",
+          "text": "Dziewczyny, ___ (usiąść, wy) na piłkach i zamknijcie oczy.",
+          "answer": "usiądźcie",
+          "grammar_point": "tryb-rozkazujacy",
+          "accept": [
+            "usiadzcie"
+          ]
+        },
+        {
+          "id": "h2-3",
+          "text": "Nie ___ (dźwigać, ty) ciężkich zakupów w połogu.",
+          "answer": "dźwigaj",
+          "grammar_point": "tryb-rozkazujacy",
+          "accept": [
+            "dzwigaj"
+          ]
+        },
+        {
+          "id": "h2-4",
+          "text": "Wysłałam zdjęcie małej ___ (babcia) do Lwowa.",
+          "answer": "babci",
+          "grammar_point": "celownik"
+        },
+        {
+          "id": "h2-5",
+          "text": "Sąsiad pomógł ___ (Sofia) wnieść wózek na trzecie piętro.",
+          "answer": "Sofii",
+          "grammar_point": "celownik",
+          "accept": [
+            "sofii"
+          ]
+        },
+        {
+          "id": "h2-6",
+          "text": "Ciocia przysłała ___ (my) paczkę z ubrankami.",
+          "answer": "nam",
+          "grammar_point": "celownik"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "title": "3. Pierwszy tydzień Ireny",
+      "exercise_type": "drag-and-drop",
+      "instruction": "Wybierz słowo z banku i uzupełnij historię. Dwa słowa są niepotrzebne.",
+      "bank": [
+        "rozpakował",
+        "zważyła",
+        "Nie martw",
+        "im",
+        "mamie",
+        "Przyjedź",
+        "dla mamy",
+        "Nie zmartw"
+      ],
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Irena wróciła ze szpitala w piątek. W sobotę jej mąż ___ wszystkie rzeczy z torby.",
+          "answer": "rozpakował",
+          "grammar_point": "powtorka"
+        },
+        {
+          "id": "h3-2",
+          "text": "W niedzielę przyszła położna środowiskowa i ___ syna.",
+          "answer": "zważyła",
+          "grammar_point": "powtorka"
+        },
+        {
+          "id": "h3-3",
+          "text": "Powiedziała Irenie: „___ się, wszystko jest w porządku”.",
+          "answer": "Nie martw",
+          "grammar_point": "powtorka"
+        },
+        {
+          "id": "h3-4",
+          "text": "Teściowa codziennie przynosi ___ obiad w słoikach.",
+          "answer": "im",
+          "grammar_point": "powtorka"
+        },
+        {
+          "id": "h3-5",
+          "text": "Mąż mówi do teściowej: „Dziękuję ___ za wszystko!”",
+          "answer": "mamie",
+          "grammar_point": "powtorka"
+        },
+        {
+          "id": "h3-6",
+          "text": "Wieczorem Irena pisze do siostry: „___ do nas w środę, mały już na ciebie czeka!”",
+          "answer": "Przyjedź",
+          "grammar_point": "powtorka"
+        }
+      ]
+    }
+  ]
+}
