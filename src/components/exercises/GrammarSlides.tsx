@@ -287,7 +287,15 @@ export function GrammarSlides({ title, slides, part, teacherMode }: Props) {
           <div className="nb-slide-exceptions">
             {(slide.items ?? []).map((it, i) => (
               <div key={i} className="nb-exc" style={{ opacity: i < itemsVisible ? 1 : 0 }}>
-                {highlight(it.text ?? '')}
+                {it.text ? (
+                  highlight(it.text)
+                ) : (
+                  <>
+                    {it.rule ? <b>{highlight(it.rule)}</b> : null}
+                    {it.rule && it.example ? ' — ' : null}
+                    {it.example ? highlight(it.example) : null}
+                  </>
+                )}
                 {it.refers_to ? <small> → {it.refers_to}</small> : null}
               </div>
             ))}
