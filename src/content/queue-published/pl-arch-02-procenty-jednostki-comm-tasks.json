@@ -1,0 +1,109 @@
+{
+  "lesson_id": "pl-arch-02-procenty-jednostki",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: zakupy, działka i zadanie przy tablicy",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Potem zamieńcie się rolami.",
+  "estimated_minutes": 17,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "read-then-play",
+      "comm_group": "Liczymy w praktyce",
+      "front_title": "W markecie budowlanym",
+      "back_scenario": "Najpierw przeczytajcie w rolach rozmowę Andrija ze sprzedawcą. Potem Ty kupujesz płytki do swojej łazienki albo przedpokoju. Podaj wymiary, dolicz zapas, policz paczki i worki kleju. Nauczyciel jest sprzedawcą.",
+      "back_checklist": [
+        "Podaj wymiary i pole podłogi.",
+        "Dolicz dziesięć procent zapasu.",
+        "Zapytaj o cenę za metr i o liczbę metrów w paczce.",
+        "Policz, ile paczek i ile worków kleju potrzebujesz.",
+        "Zapytaj o rabat i powiedz, czy zakup się opłaca."
+      ],
+      "model_dialogue": [
+        {
+          "speaker": "Sprzedawca",
+          "line": "Dzień dobry, w czym mogę pomóc?"
+        },
+        {
+          "speaker": "Andrij",
+          "line": "Szukam płytek na podłogę do kuchni. Kuchnia ma cztery na trzy metry."
+        },
+        {
+          "speaker": "Sprzedawca",
+          "line": "Czyli dwanaście metrów kwadratowych. Do tego trzeba doliczyć zapas, zwykle dziesięć procent."
+        },
+        {
+          "speaker": "Andrij",
+          "line": "Dziesięć procent z dwunastu to jeden przecinek dwa. Razem trzynaście przecinek dwa metra."
+        },
+        {
+          "speaker": "Sprzedawca",
+          "line": "Zgadza się. Te szare płytki kosztują sześćdziesiąt złotych za metr kwadratowy."
+        },
+        {
+          "speaker": "Andrij",
+          "line": "A ile metrów jest w jednej paczce?"
+        },
+        {
+          "speaker": "Sprzedawca",
+          "line": "Jeden przecinek dwa metra kwadratowego."
+        },
+        {
+          "speaker": "Andrij",
+          "line": "Czyli potrzebuję jedenastu paczek."
+        },
+        {
+          "speaker": "Sprzedawca",
+          "line": "Tak. Jeszcze klej: zużycie wynosi pięć kilogramów na metr kwadratowy."
+        },
+        {
+          "speaker": "Andrij",
+          "line": "To wychodzi około sześćdziesięciu sześciu kilogramów. W jakich workach go macie?"
+        },
+        {
+          "speaker": "Sprzedawca",
+          "line": "Po dwadzieścia pięć kilogramów. Weźmie pan trzy worki?"
+        },
+        {
+          "speaker": "Andrij",
+          "line": "Tak. A jest jakiś rabat dla studentów?"
+        },
+        {
+          "speaker": "Sprzedawca",
+          "line": "Dla studentów nie, ale klej jest w tym tygodniu tańszy o piętnaście procent."
+        },
+        {
+          "speaker": "Andrij",
+          "line": "To się opłaca. Biorę."
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "comm_group": "Liczymy w praktyce",
+      "front_title": "Która działka?",
+      "back_scenario": "Ty i kolega szukacie działki pod dom. Oferta A: 12 arów za 180 000 zł, 15 km od miasta. Oferta B: 0,08 ha za 160 000 zł, 5 km od miasta. Najpierw oszacujcie w pamięci, która jest tańsza za metr. Potem policzcie dokładnie, porównajcie wyniki i zdecydujcie, która oferta bardziej się opłaca. Na koniec policzcie, jaki rabat musiałby dać sprzedawca B, żeby metr kosztował tyle samo co w A.",
+      "back_checklist": [
+        "Zamień ary i hektary na metry kwadratowe.",
+        "Policz cenę za metr kwadratowy w obu ofertach.",
+        "Powiedz, o ile procent jedna oferta jest droższa i ile razy jedna działka jest większa.",
+        "Policz, ile procent rabatu potrzeba w ofercie B.",
+        "Wybierz działkę i powiedz, dlaczego się opłaca."
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "comm_group": "Liczymy w praktyce",
+      "front_title": "Przy tablicy",
+      "back_scenario": "Jesteś na ćwiczeniach z matematyki. Prowadzący prosi Cię do tablicy. Zadanie: firma A liczy za projekt domu 2000 zł plus 150 zł za każdy metr kwadratowy. Kosztorys wynosi 20 000 zł. Ile metrów kwadratowych ma dom? Firma B liczy 170 zł za metr, bez stałej opłaty — która firma bardziej się opłaca przy takim domu? Najpierw oszacuj wynik, potem ułóż równanie i rozwiąż je na głos. Prowadzący (nauczyciel) przerywa pytaniami.",
+      "back_checklist": [
+        "Oszacuj wynik, zanim zaczniesz liczyć.",
+        "Oznacz niewiadomą i przeczytaj równanie na głos.",
+        "Opisz każdy krok: przenosimy…, dzielimy obie strony przez….",
+        "Sprawdź wynik: podstaw go do równania.",
+        "Porównaj firmy i powiedz, która się bardziej opłaca i o ile."
+      ]
+    }
+  ]
+}

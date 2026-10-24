@@ -1,0 +1,186 @@
+{
+  "lesson_id": "pl-arch-02-procenty-jednostki",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: procenty, jednostki i równania",
+  "instruction": "Trzy bloki: słowa, formy z liczbami i przyimki.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "matching",
+      "title": "1. Słowa z lekcji",
+      "instruction": "Połącz słowo z opisem.",
+      "items": [
+        {
+          "id": "h1-1",
+          "left": "kosztorys",
+          "right": "wyliczenie kosztów budowy albo remontu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-2",
+          "left": "hektar",
+          "right": "sto arów",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-3",
+          "left": "niewiadoma",
+          "right": "liczba, której szukamy w równaniu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-4",
+          "left": "licznik",
+          "right": "liczba nad kreską ułamka",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-5",
+          "left": "zużycie",
+          "right": "ile materiału idzie na metr albo na sztukę",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h1-6",
+          "left": "kubatura",
+          "right": "objętość budynku w metrach sześciennych",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Liczby z jednostką",
+      "instruction": "Wpisz słowo z nawiasu w poprawnej formie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Oprocentowanie lokaty wynosi osiem ___ (procent) w skali roku.",
+          "answer": "procent",
+          "grammar_point": "procent-liczebnik",
+          "accept": [
+            "procentów"
+          ]
+        },
+        {
+          "id": "h2-2",
+          "text": "Liczba studentów na naszym wydziale wzrosła o cztery ___ (procent).",
+          "answer": "procenty",
+          "grammar_point": "procent-liczebnik"
+        },
+        {
+          "id": "h2-3",
+          "text": "Gospodarstwo wujka ma czterdzieści ___ (hektar).",
+          "answer": "hektarów",
+          "grammar_point": "jednostki"
+        },
+        {
+          "id": "h2-4",
+          "text": "Do akwarium wlałem dwadzieścia dwa ___ (litr) wody.",
+          "answer": "litry",
+          "grammar_point": "jednostki"
+        },
+        {
+          "id": "h2-5",
+          "text": "Ciężarówka przywiozła półtorej ___ (tona) piasku.",
+          "answer": "tony",
+          "grammar_point": "jednostki"
+        },
+        {
+          "id": "h2-6",
+          "text": "Na ścianę w garażu poszły cztery ___ (worek) zaprawy.",
+          "answer": "worki",
+          "grammar_point": "jednostki"
+        },
+        {
+          "id": "h2-7",
+          "text": "W hurtowni dostaliśmy ___ (5%) rabat.",
+          "answer": "pięcioprocentowy",
+          "grammar_point": "ile-razy"
+        },
+        {
+          "id": "h2-8",
+          "text": "Wynajem koparki zdrożał ___ (×2).",
+          "answer": "dwukrotnie",
+          "grammar_point": "ile-razy"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Przyimki i słowa przy liczbach",
+      "instruction": "Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Ile to jest dziesięć procent ___ tej kwoty?",
+          "options": [
+            "z",
+            "od",
+            "do"
+          ],
+          "answer": "z",
+          "grammar_point": "przyimki-liczby"
+        },
+        {
+          "id": "h3-2",
+          "text": "Podaj powierzchnię lasu ___ hektarach.",
+          "options": [
+            "w",
+            "na",
+            "po"
+          ],
+          "answer": "w",
+          "grammar_point": "jednostki"
+        },
+        {
+          "id": "h3-3",
+          "text": "Farbę mieszamy z wodą w proporcji jeden ___ dziesięciu.",
+          "options": [
+            "do",
+            "na",
+            "z"
+          ],
+          "answer": "do",
+          "grammar_point": "przyimki-liczby"
+        },
+        {
+          "id": "h3-4",
+          "text": "Za metr paneli płacimy pięćdziesiąt złotych, a ___ jedną listwę — dwadzieścia.",
+          "options": [
+            "za",
+            "na",
+            "po"
+          ],
+          "answer": "za",
+          "grammar_point": "przyimki-liczby"
+        },
+        {
+          "id": "h3-5",
+          "text": "Iks podzielić ___ trzy równa się pięć.",
+          "options": [
+            "przez",
+            "na",
+            "od"
+          ],
+          "answer": "przez",
+          "grammar_point": "rownania-na-glos"
+        },
+        {
+          "id": "h3-6",
+          "text": "Rozwiązaniem nierówności x > 3 jest każda liczba ___ od trzech.",
+          "options": [
+            "większa",
+            "wyższa",
+            "dłuższa"
+          ],
+          "answer": "większa",
+          "grammar_point": "rownania-na-glos"
+        }
+      ]
+    }
+  ]
+}

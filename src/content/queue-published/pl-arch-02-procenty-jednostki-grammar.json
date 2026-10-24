@@ -1,0 +1,629 @@
+{
+  "lesson_id": "pl-arch-02-procenty-jednostki",
+  "exercise_type": "fill-in-blank",
+  "title": "Procenty, jednostki i równania: ćwiczenia",
+  "instruction": "Sześć bloków: trzy po pierwszej części gramatyki, trzy po drugiej.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "covers_slides": [
+        "s2",
+        "s5",
+        "s7"
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "1. Procenty i ułamki",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Cena kleju wzrosła o dwa ___.",
+          "options": [
+            "procent",
+            "procenty",
+            "procentów"
+          ],
+          "answer": "procenty",
+          "grammar_point": "procent-liczebnik"
+        },
+        {
+          "id": "g1-2",
+          "text": "Spadek terenu wynosi trzy ___.",
+          "options": [
+            "procent",
+            "procenty",
+            "procentów"
+          ],
+          "answer": "procenty",
+          "grammar_point": "procent-liczebnik"
+        },
+        {
+          "id": "g1-3",
+          "text": "Błąd pomiaru wynosi jeden ___.",
+          "options": [
+            "procent",
+            "procenty",
+            "procenta"
+          ],
+          "answer": "procent",
+          "grammar_point": "procent-liczebnik"
+        },
+        {
+          "id": "g1-4",
+          "text": "Student ma pięćdziesiąt jeden ___ zniżki na pociąg.",
+          "options": [
+            "procent",
+            "procenty"
+          ],
+          "answer": "procent",
+          "grammar_point": "procent-liczebnik",
+          "explanation": "51 kończy się na 1 → procent, jak dwadzieścia jeden metrów."
+        },
+        {
+          "id": "g1-5",
+          "text": "Ogród zajmuje trzy ___ działki.",
+          "options": [
+            "piąte",
+            "piątych",
+            "piąta"
+          ],
+          "answer": "piąte",
+          "grammar_point": "ulamki"
+        },
+        {
+          "id": "g1-6",
+          "text": "Pięć ___ budżetu poszło na fundamenty.",
+          "options": [
+            "ósmych",
+            "ósme",
+            "ósma"
+          ],
+          "answer": "ósmych",
+          "grammar_point": "ulamki",
+          "explanation": "Od pięciu — dopełniacz liczby mnogiej: ósmych, jak metrów."
+        },
+        {
+          "id": "g1-7",
+          "text": "Zero przecinek dwa to dwie ___.",
+          "options": [
+            "dziesiąte",
+            "dziesiątych",
+            "dziesiąta"
+          ],
+          "answer": "dziesiąte",
+          "grammar_point": "ulamki"
+        },
+        {
+          "id": "g1-8",
+          "text": "Zostało nam ___ worka cementu.",
+          "options": [
+            "ćwierć",
+            "ćwierci",
+            "czwarta"
+          ],
+          "answer": "ćwierć",
+          "grammar_point": "ulamki"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "covers_slides": [
+        "s3",
+        "s6"
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "2. O, do, z, za, na",
+      "instruction": "Wybierz przyimek.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Cena cegły wzrosła ___ dziesięć procent.",
+          "options": [
+            "o",
+            "do",
+            "na"
+          ],
+          "answer": "o",
+          "grammar_point": "przyimki-liczby",
+          "explanation": "Różnica → o + biernik."
+        },
+        {
+          "id": "g2-2",
+          "text": "Cena jednej cegły wzrosła ___ dwóch złotych.",
+          "options": [
+            "do",
+            "o",
+            "z"
+          ],
+          "answer": "do",
+          "grammar_point": "przyimki-liczby",
+          "explanation": "Dwóch złotych to dopełniacz → do. Wynik końcowy."
+        },
+        {
+          "id": "g2-3",
+          "text": "Dwadzieścia procent ___ trzystu to sześćdziesiąt.",
+          "options": [
+            "z",
+            "od",
+            "do"
+          ],
+          "answer": "z",
+          "grammar_point": "przyimki-liczby"
+        },
+        {
+          "id": "g2-4",
+          "text": "Płytki kosztują sześćdziesiąt złotych ___ metr kwadratowy.",
+          "options": [
+            "za",
+            "na",
+            "po"
+          ],
+          "answer": "za",
+          "grammar_point": "przyimki-liczby"
+        },
+        {
+          "id": "g2-5",
+          "text": "Zużycie kleju wynosi pięć kilogramów ___ metr kwadratowy.",
+          "options": [
+            "na",
+            "za",
+            "po"
+          ],
+          "answer": "na",
+          "grammar_point": "przyimki-liczby"
+        },
+        {
+          "id": "g2-6",
+          "text": "Cement mieszamy z piaskiem w proporcji jeden ___ trzech.",
+          "options": [
+            "do",
+            "na",
+            "z"
+          ],
+          "answer": "do",
+          "grammar_point": "przyimki-liczby"
+        },
+        {
+          "id": "g2-7",
+          "text": "Czynsz spadł ___ ośmiuset złotych.",
+          "options": [
+            "do",
+            "o",
+            "na"
+          ],
+          "answer": "do",
+          "grammar_point": "przyimki-liczby"
+        },
+        {
+          "id": "g2-8",
+          "text": "Firma obniżyła cenę ___ połowę.",
+          "options": [
+            "o",
+            "na",
+            "do"
+          ],
+          "answer": "o",
+          "grammar_point": "przyimki-liczby",
+          "explanation": "Połowę to biernik → o. „Do” potrzebuje dopełniacza: do połowy."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "covers_slides": [
+        "s4",
+        "s6",
+        "s7"
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "3. Ile razy? Ile procent?",
+      "instruction": "Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Za szybką płatność dostaliśmy ___ rabat (10%).",
+          "options": [
+            "dziesięcioprocentowy",
+            "dziesięćprocentowy",
+            "dziesięcioprocentny"
+          ],
+          "answer": "dziesięcioprocentowy",
+          "grammar_point": "ile-razy"
+        },
+        {
+          "id": "g3-2",
+          "text": "Taras ma ___ spadek (2%).",
+          "options": [
+            "dwuprocentowy",
+            "dwaprocentowy",
+            "dwóchprocentowy"
+          ],
+          "answer": "dwuprocentowy",
+          "grammar_point": "ile-razy"
+        },
+        {
+          "id": "g3-3",
+          "text": "Mam ___ pewność, że wynik jest dobry (100%).",
+          "options": [
+            "stuprocentową",
+            "stoprocentową",
+            "stuprocentowy"
+          ],
+          "answer": "stuprocentową",
+          "grammar_point": "ile-razy"
+        },
+        {
+          "id": "g3-4",
+          "text": "Koszt wzrósł o sto procent, czyli ___.",
+          "options": [
+            "dwukrotnie",
+            "trzykrotnie",
+            "o połowę"
+          ],
+          "answer": "dwukrotnie",
+          "grammar_point": "ile-razy",
+          "explanation": "Plus sto procent to razy dwa."
+        },
+        {
+          "id": "g3-5",
+          "text": "Nowy blok jest ___ wyższy od starego (×3).",
+          "options": [
+            "trzykrotnie",
+            "trzyrazowo",
+            "w trzy razy"
+          ],
+          "answer": "trzykrotnie",
+          "grammar_point": "ile-razy"
+        },
+        {
+          "id": "g3-6",
+          "text": "Hala jest półtora ___ dłuższa od garażu.",
+          "options": [
+            "raza",
+            "razy",
+            "raz"
+          ],
+          "answer": "raza",
+          "grammar_point": "ile-razy"
+        },
+        {
+          "id": "g3-7",
+          "text": "Egzaminu z matematyki nie zdał co ___ student.",
+          "options": [
+            "trzeci",
+            "trzy",
+            "trzeciego"
+          ],
+          "answer": "trzeci",
+          "grammar_point": "ile-razy"
+        },
+        {
+          "id": "g3-8",
+          "text": "Słupy ogrodzenia stoją co ___ metry.",
+          "options": [
+            "dwa",
+            "drugie",
+            "dwóch"
+          ],
+          "answer": "dwa",
+          "grammar_point": "ile-razy"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "covers_slides": [
+        "s8",
+        "s9",
+        "s10",
+        "s11"
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "4. Ary, hektary, litry",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Działka budowlana ma dziesięć ___.",
+          "options": [
+            "arów",
+            "ary",
+            "ar"
+          ],
+          "answer": "arów",
+          "grammar_point": "jednostki"
+        },
+        {
+          "id": "g4-2",
+          "text": "Ogródek za domem ma trzy ___.",
+          "options": [
+            "ary",
+            "arów",
+            "ar"
+          ],
+          "answer": "ary",
+          "grammar_point": "jednostki"
+        },
+        {
+          "id": "g4-3",
+          "text": "Jeden hektar to sto ___.",
+          "options": [
+            "arów",
+            "ary",
+            "arach"
+          ],
+          "answer": "arów",
+          "grammar_point": "jednostki"
+        },
+        {
+          "id": "g4-4",
+          "text": "Jeden decymetr sześcienny to jeden ___.",
+          "options": [
+            "litr",
+            "mililitr",
+            "hektolitr"
+          ],
+          "answer": "litr",
+          "grammar_point": "jednostki"
+        },
+        {
+          "id": "g4-5",
+          "text": "Metr sześcienny betonu waży około 2,4 ___.",
+          "options": [
+            "tony",
+            "ton",
+            "tona"
+          ],
+          "answer": "tony",
+          "grammar_point": "jednostki",
+          "explanation": "Liczba z przecinkiem → dopełniacz liczby pojedynczej: tony."
+        },
+        {
+          "id": "g4-6",
+          "text": "Zamień hektary ___ metry kwadratowe.",
+          "options": [
+            "na",
+            "w",
+            "do"
+          ],
+          "answer": "na",
+          "grammar_point": "jednostki"
+        },
+        {
+          "id": "g4-7",
+          "text": "Podaj wynik ___ litrach.",
+          "options": [
+            "w",
+            "na",
+            "po"
+          ],
+          "answer": "w",
+          "grammar_point": "jednostki"
+        },
+        {
+          "id": "g4-8",
+          "text": "Wyraź pole działki w ___.",
+          "options": [
+            "arach",
+            "arów",
+            "ary"
+          ],
+          "answer": "arach",
+          "grammar_point": "jednostki"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "covers_slides": [
+        "s12",
+        "s13"
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "5. Równanie na głos",
+      "instruction": "Wybierz słowo, które pasuje.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "x : 2 = 7 — iks ___ dwa równa się siedem.",
+          "options": [
+            "przez",
+            "na",
+            "od"
+          ],
+          "answer": "przez",
+          "grammar_point": "rownania-na-glos"
+        },
+        {
+          "id": "g5-2",
+          "text": "x ≠ 0 — iks jest ___ od zera.",
+          "options": [
+            "różne",
+            "inne",
+            "odmienne"
+          ],
+          "answer": "różne",
+          "grammar_point": "rownania-na-glos"
+        },
+        {
+          "id": "g5-3",
+          "text": "Przenosimy piątkę na drugą ___ równania.",
+          "options": [
+            "stronę",
+            "część",
+            "połowę"
+          ],
+          "answer": "stronę",
+          "grammar_point": "rownania-na-glos",
+          "explanation": "Po polsku równanie ma dwie strony, nie części."
+        },
+        {
+          "id": "g5-4",
+          "text": "Dzielimy ___ strony przez cztery.",
+          "options": [
+            "obie",
+            "oba",
+            "obydwa"
+          ],
+          "answer": "obie",
+          "grammar_point": "rownania-na-glos"
+        },
+        {
+          "id": "g5-5",
+          "text": "Podstawiamy trzy ___ iks.",
+          "options": [
+            "za",
+            "na",
+            "w"
+          ],
+          "answer": "za",
+          "grammar_point": "rownania-na-glos"
+        },
+        {
+          "id": "g5-6",
+          "text": "Rozwiązaniem równania ___ liczba trzy.",
+          "options": [
+            "jest",
+            "ma",
+            "wynosi"
+          ],
+          "answer": "jest",
+          "grammar_point": "rownania-na-glos"
+        },
+        {
+          "id": "g5-7",
+          "text": "Równanie, które nie ma rozwiązania, jest ___.",
+          "options": [
+            "sprzeczne",
+            "fałszywe",
+            "puste"
+          ],
+          "answer": "sprzeczne",
+          "grammar_point": "rownania-na-glos"
+        },
+        {
+          "id": "g5-8",
+          "text": "W zapisie 3(x + 1) wyrażenie x + 1 jest w ___.",
+          "options": [
+            "nawiasie",
+            "nawiasu",
+            "nawias"
+          ],
+          "answer": "nawiasie",
+          "grammar_point": "rownania-na-glos"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "covers_slides": [
+        "s14",
+        "s15",
+        "s16"
+      ],
+      "exercise_type": "fill-in-blank",
+      "title": "6. Polecenia i pułapki z ukraińskiego",
+      "instruction": "Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "___ równanie i sprawdź wynik.",
+          "options": [
+            "Rozwiąż",
+            "Zdecyduj",
+            "Wyraź"
+          ],
+          "answer": "Rozwiąż",
+          "grammar_point": "polecenia"
+        },
+        {
+          "id": "g6-2",
+          "text": "___ h ze wzoru na pole trójkąta.",
+          "options": [
+            "Wyznacz",
+            "Rozwiąż",
+            "Zamień"
+          ],
+          "answer": "Wyznacz",
+          "grammar_point": "polecenia"
+        },
+        {
+          "id": "g6-3",
+          "text": "Podstaw dane ___ wzoru.",
+          "options": [
+            "do",
+            "w",
+            "na"
+          ],
+          "answer": "do",
+          "grammar_point": "polecenia"
+        },
+        {
+          "id": "g6-4",
+          "text": "x² czytamy: iks ___.",
+          "options": [
+            "do kwadratu",
+            "w kwadracie",
+            "na kwadrat"
+          ],
+          "answer": "do kwadratu",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-5",
+          "text": "Dziadek sprzedał działkę, która miała sześć ___.",
+          "options": [
+            "arów",
+            "sotek",
+            "setek"
+          ],
+          "answer": "arów",
+          "grammar_point": "kalki-uk",
+          "explanation": "Sotka to słowo ze Wschodu. Po polsku: ar."
+        },
+        {
+          "id": "g6-6",
+          "text": "3/4 to ___.",
+          "options": [
+            "ułamek",
+            "drób",
+            "dzielnik"
+          ],
+          "answer": "ułamek",
+          "grammar_point": "kalki-uk",
+          "explanation": "Drób to kury i indyki."
+        },
+        {
+          "id": "g6-7",
+          "text": "Sklep obniżył ceny ___ dwadzieścia procent.",
+          "options": [
+            "o",
+            "na",
+            "w"
+          ],
+          "answer": "o",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-8",
+          "text": "Po rozbudowie hali rachunki za prąd wzrosły ___.",
+          "options": [
+            "dwukrotnie",
+            "w dwa razy",
+            "na dwa razy"
+          ],
+          "answer": "dwukrotnie",
+          "grammar_point": "kalki-uk"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,409 @@
+{
+  "lesson_id": "pl-arch-02-procenty-jednostki",
+  "exercise_type": "vocab-cards",
+  "title": "Słownictwo: procenty, ceny, jednostki i równania",
+  "instruction": "39 słów w pięciu grupach. Odwróć kartę, przeczytaj definicję i powiedz własne zdanie z tym słowem.",
+  "estimated_minutes": 10,
+  "groups": [
+    "Procenty i ułamki",
+    "Ceny: wzrost i spadek",
+    "Jednostki i działka",
+    "Równania",
+    "Liczymy w praktyce"
+  ],
+  "comm_groups": [
+    "Liczymy w praktyce"
+  ],
+  "items": [
+    {
+      "id": "v01",
+      "term": "procent",
+      "group": "Procenty i ułamki",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Setna część całości, znak %.",
+      "example": "Na egzaminie trzeba mieć sześćdziesiąt procent punktów.",
+      "example_sentence": "Na egzaminie trzeba mieć sześćdziesiąt procent punktów.",
+      "translation_uk": "відсоток"
+    },
+    {
+      "id": "v02",
+      "term": "odsetek",
+      "group": "Procenty i ułamki",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Część grupy podana w procentach.",
+      "example": "Odsetek studentów z zagranicy rośnie co roku.",
+      "example_sentence": "Odsetek studentów z zagranicy rośnie co roku.",
+      "translation_uk": "частка (у відсотках)"
+    },
+    {
+      "id": "v03",
+      "term": "ułamek",
+      "group": "Procenty i ułamki",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Liczba zapisana z kreską, na przykład 3/4.",
+      "example": "Wynik podaj w postaci ułamka.",
+      "example_sentence": "Wynik podaj w postaci ułamka.",
+      "translation_uk": "дріб"
+    },
+    {
+      "id": "v04",
+      "term": "licznik",
+      "group": "Procenty i ułamki",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Liczba nad kreską ułamka.",
+      "example": "W ułamku 3/4 licznik to trzy.",
+      "example_sentence": "W ułamku 3/4 licznik to trzy.",
+      "translation_uk": "чисельник"
+    },
+    {
+      "id": "v05",
+      "term": "mianownik",
+      "group": "Procenty i ułamki",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Liczba pod kreską ułamka.",
+      "example": "Sprowadź ułamki do wspólnego mianownika.",
+      "example_sentence": "Sprowadź ułamki do wspólnego mianownika.",
+      "translation_uk": "знаменник"
+    },
+    {
+      "id": "v06",
+      "term": "ćwierć",
+      "group": "Procenty i ułamki",
+      "part_of_speech": "rzeczownik, f.",
+      "definition": "Jedna czwarta część czegoś.",
+      "example": "Do końca wykładu została ćwierć godziny.",
+      "example_sentence": "Do końca wykładu została ćwierć godziny.",
+      "translation_uk": "чверть"
+    },
+    {
+      "id": "v07",
+      "term": "proporcja",
+      "group": "Procenty i ułamki",
+      "part_of_speech": "rzeczownik, f.",
+      "definition": "Stosunek dwóch wielkości, na przykład 1:3.",
+      "example": "Klej rozrabiamy z wodą w proporcji podanej na worku.",
+      "example_sentence": "Klej rozrabiamy z wodą w proporcji podanej na worku.",
+      "translation_uk": "пропорція"
+    },
+    {
+      "id": "v08",
+      "term": "rosnąć / wzrosnąć",
+      "group": "Ceny: wzrost i spadek",
+      "part_of_speech": "czasownik, ndk. / dk.",
+      "definition": "Stawać się większym albo droższym.",
+      "example": "Ceny mieszkań w Krakowie wciąż rosną.",
+      "example_sentence": "Ceny mieszkań w Krakowie wciąż rosną.",
+      "translation_uk": "рости / зрости"
+    },
+    {
+      "id": "v09",
+      "term": "spadać / spaść",
+      "group": "Ceny: wzrost i spadek",
+      "part_of_speech": "czasownik, ndk. / dk.",
+      "definition": "Stawać się mniejszym albo tańszym.",
+      "example": "Po sezonie ceny drewna spadły.",
+      "example_sentence": "Po sezonie ceny drewna spadły.",
+      "translation_uk": "падати / впасти"
+    },
+    {
+      "id": "v10",
+      "term": "zwiększyć",
+      "group": "Ceny: wzrost i spadek",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Zrobić coś większym.",
+      "example": "Inwestor chce zwiększyć liczbę mieszkań w bloku.",
+      "example_sentence": "Inwestor chce zwiększyć liczbę mieszkań w bloku.",
+      "translation_uk": "збільшити"
+    },
+    {
+      "id": "v11",
+      "term": "zmniejszyć",
+      "group": "Ceny: wzrost i spadek",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Zrobić coś mniejszym.",
+      "example": "Musimy zmniejszyć koszty o jedną piątą.",
+      "example_sentence": "Musimy zmniejszyć koszty o jedną piątą.",
+      "translation_uk": "зменшити"
+    },
+    {
+      "id": "v12",
+      "term": "dwukrotnie",
+      "group": "Ceny: wzrost i spadek",
+      "part_of_speech": "przysłówek",
+      "definition": "Dwa razy więcej albo dwa razy mniej.",
+      "example": "Od zeszłego roku czynsz wzrósł dwukrotnie.",
+      "example_sentence": "Od zeszłego roku czynsz wzrósł dwukrotnie.",
+      "translation_uk": "удвічі"
+    },
+    {
+      "id": "v13",
+      "term": "cena netto",
+      "group": "Ceny: wzrost i spadek",
+      "part_of_speech": "rzeczownik + przymiotnik",
+      "definition": "Cena bez podatku VAT.",
+      "example": "W ofercie dla firm podajemy ceny netto.",
+      "example_sentence": "W ofercie dla firm podajemy ceny netto.",
+      "translation_uk": "ціна без ПДВ"
+    },
+    {
+      "id": "v14",
+      "term": "cena brutto",
+      "group": "Ceny: wzrost i spadek",
+      "part_of_speech": "rzeczownik + przymiotnik",
+      "definition": "Cena razem z podatkiem VAT.",
+      "example": "Klient indywidualny zawsze pyta o cenę brutto.",
+      "example_sentence": "Klient indywidualny zawsze pyta o cenę brutto.",
+      "translation_uk": "ціна з ПДВ"
+    },
+    {
+      "id": "v15",
+      "term": "podatek VAT",
+      "group": "Ceny: wzrost i spadek",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Podatek doliczany do ceny towaru albo usługi.",
+      "example": "Na fakturze podatek VAT jest w osobnej kolumnie.",
+      "example_sentence": "Na fakturze podatek VAT jest w osobnej kolumnie.",
+      "translation_uk": "ПДВ"
+    },
+    {
+      "id": "v16",
+      "term": "jednostka",
+      "group": "Jednostki i działka",
+      "part_of_speech": "rzeczownik, f.",
+      "definition": "Miara, w której coś podajemy: metr, litr, tona.",
+      "example": "Nie zapomnij napisać jednostki przy wyniku.",
+      "example_sentence": "Nie zapomnij napisać jednostki przy wyniku.",
+      "translation_uk": "одиниця виміру"
+    },
+    {
+      "id": "v17",
+      "term": "działka",
+      "group": "Jednostki i działka",
+      "part_of_speech": "rzeczownik, f.",
+      "definition": "Kawałek ziemi, na przykład pod budowę domu.",
+      "example": "Kupili działkę budowlaną pod Wieliczką.",
+      "example_sentence": "Kupili działkę budowlaną pod Wieliczką.",
+      "translation_uk": "ділянка"
+    },
+    {
+      "id": "v18",
+      "term": "ar",
+      "group": "Jednostki i działka",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Jednostka powierzchni: sto metrów kwadratowych.",
+      "example": "Ogródek babci ma cztery ary.",
+      "example_sentence": "Ogródek babci ma cztery ary.",
+      "translation_uk": "ар, сотка"
+    },
+    {
+      "id": "v19",
+      "term": "hektar",
+      "group": "Jednostki i działka",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Jednostka powierzchni: sto arów, czyli dziesięć tysięcy metrów kwadratowych.",
+      "example": "Park miejski zajmuje dwanaście hektarów.",
+      "example_sentence": "Park miejski zajmuje dwanaście hektarów.",
+      "translation_uk": "гектар"
+    },
+    {
+      "id": "v20",
+      "term": "litr",
+      "group": "Jednostki i działka",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Jednostka objętości: jeden decymetr sześcienny.",
+      "example": "Wiadro mieści dziesięć litrów wody.",
+      "example_sentence": "Wiadro mieści dziesięć litrów wody.",
+      "translation_uk": "літр"
+    },
+    {
+      "id": "v21",
+      "term": "tona",
+      "group": "Jednostki i działka",
+      "part_of_speech": "rzeczownik, f.",
+      "definition": "Jednostka masy: tysiąc kilogramów.",
+      "example": "Dźwig podnosi pięć ton.",
+      "example_sentence": "Dźwig podnosi pięć ton.",
+      "translation_uk": "тонна"
+    },
+    {
+      "id": "v22",
+      "term": "przeliczyć",
+      "group": "Jednostki i działka",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Zamienić wynik na inną jednostkę albo walutę.",
+      "example": "Przelicz cenę z euro na złotówki.",
+      "example_sentence": "Przelicz cenę z euro na złotówki.",
+      "translation_uk": "перерахувати"
+    },
+    {
+      "id": "v23",
+      "term": "kubatura",
+      "group": "Jednostki i działka",
+      "part_of_speech": "rzeczownik, f.",
+      "definition": "Objętość budynku albo pomieszczenia w metrach sześciennych.",
+      "example": "Kubatura hali wynosi trzy tysiące metrów sześciennych.",
+      "example_sentence": "Kubatura hali wynosi trzy tysiące metrów sześciennych.",
+      "translation_uk": "кубатура, об'єм будівлі"
+    },
+    {
+      "id": "v24",
+      "term": "równanie",
+      "group": "Równania",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Zapis ze znakiem równości i niewiadomą.",
+      "example": "To równanie ma dwa rozwiązania.",
+      "example_sentence": "To równanie ma dwa rozwiązania.",
+      "translation_uk": "рівняння"
+    },
+    {
+      "id": "v25",
+      "term": "niewiadoma",
+      "group": "Równania",
+      "part_of_speech": "rzeczownik, f.",
+      "definition": "Liczba, której szukamy, zwykle x.",
+      "example": "Oznacz niewiadomą literą x.",
+      "example_sentence": "Oznacz niewiadomą literą x.",
+      "translation_uk": "невідоме"
+    },
+    {
+      "id": "v26",
+      "term": "rozwiązywać / rozwiązać",
+      "group": "Równania",
+      "part_of_speech": "czasownik, ndk. / dk.",
+      "definition": "Znajdować odpowiedź na zadanie albo równanie.",
+      "example": "Na kolokwium rozwiązywaliśmy zadania przez dwie godziny.",
+      "example_sentence": "Na kolokwium rozwiązywaliśmy zadania przez dwie godziny.",
+      "translation_uk": "розв'язувати / розв'язати"
+    },
+    {
+      "id": "v27",
+      "term": "rozwiązanie",
+      "group": "Równania",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Odpowiedź na zadanie albo liczba, która spełnia równanie.",
+      "example": "Zapisz całe rozwiązanie, nie tylko wynik.",
+      "example_sentence": "Zapisz całe rozwiązanie, nie tylko wynik.",
+      "translation_uk": "розв'язок, розв'язання"
+    },
+    {
+      "id": "v28",
+      "term": "nawias",
+      "group": "Równania",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Znak ( ), który łączy część działania.",
+      "example": "Najpierw licz to, co jest w nawiasie.",
+      "example_sentence": "Najpierw licz to, co jest w nawiasie.",
+      "translation_uk": "дужка"
+    },
+    {
+      "id": "v29",
+      "term": "nierówność",
+      "group": "Równania",
+      "part_of_speech": "rzeczownik, f.",
+      "definition": "Zapis ze znakiem <, > albo ≤.",
+      "example": "Rozwiąż nierówność i zaznacz wynik na osi.",
+      "example_sentence": "Rozwiąż nierówność i zaznacz wynik na osi.",
+      "translation_uk": "нерівність"
+    },
+    {
+      "id": "v30",
+      "term": "podstawić",
+      "group": "Równania",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Wpisać liczbę w miejsce litery.",
+      "example": "Podstaw dwa za iks i sprawdź wynik.",
+      "example_sentence": "Podstaw dwa za iks i sprawdź wynik.",
+      "translation_uk": "підставити"
+    },
+    {
+      "id": "v31",
+      "term": "przekształcić",
+      "group": "Równania",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Zmienić wzór tak, żeby wyznaczyć inną literę.",
+      "example": "Przekształć wzór na pole i wyznacz wysokość.",
+      "example_sentence": "Przekształć wzór na pole i wyznacz wysokość.",
+      "translation_uk": "перетворити"
+    },
+    {
+      "id": "v32",
+      "term": "kosztorys",
+      "group": "Liczymy w praktyce",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Wyliczenie wszystkich kosztów budowy albo remontu.",
+      "example": "Przed remontem firma przygotowała kosztorys.",
+      "example_sentence": "Przed remontem firma przygotowała kosztorys.",
+      "translation_uk": "кошторис"
+    },
+    {
+      "id": "v33",
+      "term": "zapas",
+      "group": "Liczymy w praktyce",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Dodatkowa ilość materiału na wszelki wypadek.",
+      "example": "Do paneli zawsze kupujemy trochę zapasu.",
+      "example_sentence": "Do paneli zawsze kupujemy trochę zapasu.",
+      "translation_uk": "запас"
+    },
+    {
+      "id": "v34",
+      "term": "zużycie",
+      "group": "Liczymy w praktyce",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Ile materiału idzie na metr albo na sztukę.",
+      "example": "Zużycie farby podano na puszce.",
+      "example_sentence": "Zużycie farby podano na puszce.",
+      "translation_uk": "витрата"
+    },
+    {
+      "id": "v35",
+      "term": "worek",
+      "group": "Liczymy w praktyce",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Duża torba, w której sprzedaje się cement albo klej.",
+      "example": "Jeden worek cementu waży dwadzieścia pięć kilogramów.",
+      "example_sentence": "Jeden worek cementu waży dwadzieścia pięć kilogramów.",
+      "translation_uk": "мішок"
+    },
+    {
+      "id": "v36",
+      "term": "rabat",
+      "group": "Liczymy w praktyce",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Obniżka ceny dla klienta.",
+      "example": "Przy dużym zamówieniu hurtownia daje rabat.",
+      "example_sentence": "Przy dużym zamówieniu hurtownia daje rabat.",
+      "translation_uk": "знижка"
+    },
+    {
+      "id": "v37",
+      "term": "opłacać się",
+      "group": "Liczymy w praktyce",
+      "part_of_speech": "czasownik, ndk.",
+      "definition": "Dawać korzyść, być wart swojej ceny.",
+      "example": "Nie opłaca się kupować taniej farby.",
+      "example_sentence": "Nie opłaca się kupować taniej farby.",
+      "translation_uk": "бути вигідним"
+    },
+    {
+      "id": "v38",
+      "term": "oszacować",
+      "group": "Liczymy w praktyce",
+      "part_of_speech": "czasownik, dk.",
+      "definition": "Policzyć w przybliżeniu, bez dokładnych danych.",
+      "example": "Oszacuj, ile cegieł pójdzie na tę ścianę.",
+      "example_sentence": "Oszacuj, ile cegieł pójdzie na tę ścianę.",
+      "translation_uk": "оцінити (приблизно)"
+    },
+    {
+      "id": "v39",
+      "term": "wynik",
+      "group": "Liczymy w praktyce",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Liczba, którą dostajemy po obliczeniach.",
+      "example": "Wynik zaokrąglij do pełnych złotych.",
+      "example_sentence": "Wynik zaokrąglij do pełnych złotych.",
+      "translation_uk": "результат"
+    }
+  ]
+}

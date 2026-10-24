@@ -1,0 +1,529 @@
+{
+ "lesson_id": "pl-arch-02-procenty-jednostki",
+ "exercise_type": "grammar-slides",
+ "title": "Procenty, jednostki i równania",
+ "slides": [
+  {
+   "id": "s1",
+   "part": 1,
+   "section": "teoria",
+   "kind": "title",
+   "title": "Ile procent? Procenty, ułamki i proporcje",
+   "subtitle": "2 procenty, 5 procent, trzy piąte — i o ile wzrosła cena",
+   "goal": "Po tej części podasz procent i ułamek z poprawną formą i powiesz, o ile albo ile razy coś się zmieniło."
+  },
+  {
+   "id": "s2",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Procent po liczebniku",
+   "columns": [
+    "ile?",
+    "forma",
+    "przykład"
+   ],
+   "rows": [
+    [
+     "1",
+     "procent",
+     "jeden [[procent]]"
+    ],
+    [
+     "2, 3, 4 · 22, 23, 24…",
+     "procenty",
+     "dwa [[procenty]]"
+    ],
+    [
+     "5 i więcej",
+     "procent",
+     "pięć [[procent]]"
+    ],
+    [
+     "12, 13, 14 · 21, 31…",
+     "procent",
+     "dwadzieścia jeden [[procent]]"
+    ]
+   ],
+   "note": "Logika jak przy metrach z lekcji 1: po 2, 3, 4 — procenty. Od pięciu forma się nie zmienia: pięć, dwadzieścia, sto procent."
+  },
+  {
+   "id": "s3",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Z czego? O ile? Do ilu?",
+   "columns": [
+    "pytanie",
+    "konstrukcja",
+    "przykład"
+   ],
+   "rows": [
+    [
+     "ile to jest?",
+     "procent z + D",
+     "20% [[z]] trzystu"
+    ],
+    [
+     "o ile?",
+     "o + B",
+     "wzrosła [[o]] 10%"
+    ],
+    [
+     "do ilu?",
+     "do + D",
+     "wzrosła [[do]] stu złotych"
+    ],
+    [
+     "ile kosztuje?",
+     "za + B",
+     "60 zł [[za]] metr"
+    ],
+    [
+     "ile zużywamy?",
+     "na + B",
+     "5 kg [[na]] metr kwadratowy"
+    ]
+   ],
+   "note": "O — o ile się zmieniło (było 100, jest 110: wzrosło o 10). Do — ile jest na końcu (wzrosło do 110)."
+  },
+  {
+   "id": "s4",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Ile razy? Przymiotnik z procentem",
+   "columns": [
+    "zapis",
+    "słowo",
+    "przykład"
+   ],
+   "rows": [
+    [
+     "×2",
+     "[[dwukrotnie]]",
+     "Cena wzrosła dwukrotnie."
+    ],
+    [
+     "×3",
+     "trzykrotnie",
+     "trzykrotny wzrost"
+    ],
+    [
+     "×1,5",
+     "półtora raza",
+     "półtora [[raza]] większy"
+    ],
+    [
+     "2%",
+     "dwuprocentowy",
+     "[[dwuprocentowy]] spadek"
+    ],
+    [
+     "10%",
+     "dziesięcioprocentowy",
+     "dziesięcioprocentowy rabat"
+    ],
+    [
+     "100%",
+     "stuprocentowy",
+     "[[stuprocentowa]] pewność"
+    ]
+   ],
+   "note": "Przymiotnik z liczby: dwu-, trzy-, cztero-, pięcio-, dziesięcio-, dwudziesto-, stu- + procentowy albo krotny."
+  },
+  {
+   "id": "s5",
+   "part": 1,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Ułamki zwykłe i dziesiętne",
+   "columns": [
+    "zapis",
+    "czytamy"
+   ],
+   "rows": [
+    [
+     "3/5",
+     "trzy [[piąte]]"
+    ],
+    [
+     "5/8",
+     "pięć [[ósmych]]"
+    ],
+    [
+     "0,2",
+     "dwie dziesiąte"
+    ],
+    [
+     "0,05",
+     "pięć [[setnych]]"
+    ],
+    [
+     "1/4",
+     "[[ćwierć]] albo jedna czwarta"
+    ],
+    [
+     "licznik / mianownik",
+     "liczba nad kreską / pod kreską"
+    ]
+   ],
+   "note": "Znowu ta sama logika: po 2, 3, 4 — piąte, dziesiąte (jak metry). Od pięciu — ósmych, setnych (jak metrów)."
+  },
+  {
+   "id": "s6",
+   "part": 1,
+   "section": "teoria",
+   "kind": "compare",
+   "title": "Proporcja i co który",
+   "left": {
+    "head": "w jakiej proporcji?",
+    "rule": "jeden do + D",
+    "examples": [
+     "Cement z piaskiem mieszamy [[w proporcji jeden do trzech]].",
+     "Na jeden worek cementu dajemy trzy worki piasku."
+    ]
+   },
+   "right": {
+    "head": "co ile?",
+    "rule": "co + liczba",
+    "examples": [
+     "[[Co trzeci]] student mieszka w akademiku.",
+     "Słupy stoją [[co dwa metry]]."
+    ]
+   },
+   "note": "Proporcję 1:3 czytamy tak samo jak skalę 1:50 z lekcji 1: jeden do trzech, jeden do pięćdziesięciu."
+  },
+  {
+   "id": "s7",
+   "part": 1,
+   "section": "wyjatki",
+   "kind": "exceptions",
+   "title": "Uwaga na te formy",
+   "refers_to": "s2",
+   "items": [
+    {
+     "text": "Od pięciu zwykle mówimy [[pięć procent]]. Usłyszysz też „pięć procentów” — to też się spotyka.",
+     "rule": "procent / procentów",
+     "example": "dwadzieścia pięć procent",
+     "refers_to": "s2"
+    },
+    {
+     "text": "[[półtora raza]], nie „półtora razy”.",
+     "rule": "półtora raza",
+     "example": "półtora raza dłuższy",
+     "refers_to": "s4"
+    },
+    {
+     "text": "100% → [[stuprocentowy]], nie „stoprocentowy”.",
+     "rule": "stu-",
+     "example": "stuprocentowa pewność",
+     "refers_to": "s4"
+    },
+    {
+     "text": "[[ćwierć]] bez „jedna”: ćwierć worka, ćwierć hektara.",
+     "rule": "ćwierć",
+     "example": "ćwierć worka",
+     "refers_to": "s5"
+    },
+    {
+     "text": "Odsetek to część grupy w procentach. [[Odsetki]] to pieniądze, które płacisz bankowi za kredyt.",
+     "rule": "odsetek / odsetki",
+     "example": "odsetek studentów z zagranicy",
+     "refers_to": "s3"
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "part": 2,
+   "section": "teoria",
+   "kind": "title",
+   "title": "Jednostki i równania na głos",
+   "subtitle": "Ary, hektary, litry — i jak powiedzieć 2x + 3 = 11",
+   "goal": "Po tej części przeliczysz jednostki powierzchni i objętości i opiszesz na głos kroki rozwiązania równania."
+  },
+  {
+   "id": "s9",
+   "part": 2,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Jednostki powierzchni",
+   "columns": [
+    "jednostka",
+    "ile to jest?",
+    "forma po liczbie"
+   ],
+   "rows": [
+    [
+     "m² — metr kwadratowy",
+     "1 m × 1 m",
+     "pięć metrów kwadratowych"
+    ],
+    [
+     "a — [[ar]]",
+     "100 m²",
+     "dwa [[ary]], pięć [[arów]]"
+    ],
+    [
+     "ha — [[hektar]]",
+     "100 arów = 10 000 m²",
+     "dwa hektary, pięć hektarów"
+    ],
+    [
+     "km² — kilometr kwadratowy",
+     "100 ha",
+     "pięć kilometrów kwadratowych"
+    ]
+   ],
+   "note": "Działkę budowlaną podajemy zwykle w arach albo w metrach kwadratowych, pole uprawne i las — w hektarach."
+  },
+  {
+   "id": "s10",
+   "part": 2,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Objętość i masa",
+   "columns": [
+    "zapis",
+    "czytamy",
+    "to samo co"
+   ],
+   "rows": [
+    [
+     "1 dm³",
+     "decymetr sześcienny",
+     "jeden [[litr]]"
+    ],
+    [
+     "1 m³",
+     "metr sześcienny",
+     "tysiąc [[litrów]]"
+    ],
+    [
+     "1 cm³",
+     "centymetr sześcienny",
+     "jeden mililitr"
+    ],
+    [
+     "1 t",
+     "[[tona]]",
+     "tysiąc kilogramów"
+    ],
+    [
+     "2,4 t",
+     "dwa przecinek cztery [[tony]]",
+     "dwa tysiące czterysta kilogramów"
+    ]
+   ],
+   "note": "Liczba z przecinkiem — dopełniacz liczby pojedynczej, jak w lekcji 1: 2,5 metra, 2,4 tony, 1,5 litra."
+  },
+  {
+   "id": "s11",
+   "part": 2,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Zamień, przelicz, wyraź",
+   "columns": [
+    "polecenie",
+    "konstrukcja"
+   ],
+   "rows": [
+    [
+     "Zamień hektary [[na]] ary.",
+     "zamienić A na B"
+    ],
+    [
+     "Przelicz litry na metry sześcienne.",
+     "przeliczyć A na B"
+    ],
+    [
+     "Wyraź wynik [[w]] tonach.",
+     "wyrazić w + Msc"
+    ],
+    [
+     "Podaj pole w [[arach]].",
+     "podać w + Msc"
+    ],
+    [
+     "Ile to jest w litrach?",
+     "w + Msc"
+    ]
+   ],
+   "note": "Miejscownik liczby mnogiej: w metrach, w arach, w hektarach, w litrach, w tonach."
+  },
+  {
+   "id": "s12",
+   "part": 2,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Równanie na głos",
+   "columns": [
+    "zapis",
+    "czytamy"
+   ],
+   "rows": [
+    [
+     "2x + 3 = 11",
+     "dwa [[iks]] plus trzy równa się jedenaście"
+    ],
+    [
+     "x : 4 = 3",
+     "iks [[przez]] cztery równa się trzy"
+    ],
+    [
+     "y = 2x",
+     "[[igrek]] równa się dwa iks"
+    ],
+    [
+     "x ≠ 0",
+     "iks jest [[różne od]] zera"
+    ],
+    [
+     "x ≤ 5",
+     "iks mniejsze lub równe pięć"
+    ],
+    [
+     "x² = 49",
+     "iks kwadrat równa się czterdzieści dziewięć"
+    ]
+   ],
+   "note": "Litery czytamy po polsku: x — iks, y — igrek, z — zet."
+  },
+  {
+   "id": "s13",
+   "part": 2,
+   "section": "teoria",
+   "kind": "examples",
+   "title": "Kroki rozwiązania",
+   "items": [
+    {
+     "tag": "3x − 4 = 11",
+     "pl": "[[Przenosimy]] czwórkę na drugą stronę ze zmienionym znakiem.",
+     "uk": "переносимо 4 в праву частину"
+    },
+    {
+     "tag": "3x = 15",
+     "pl": "Dzielimy [[obie strony]] przez trzy.",
+     "uk": "ділимо обидві частини на 3"
+    },
+    {
+     "tag": "x = 5",
+     "pl": "Iks wynosi pięć.",
+     "uk": "ікс дорівнює 5"
+    },
+    {
+     "tag": "3 · 5 − 4 = 11",
+     "pl": "Sprawdzamy: [[podstawiamy]] pięć za iks.",
+     "uk": "перевірка: підставляємо 5"
+    },
+    {
+     "tag": "0 · x = 7",
+     "pl": "Równanie nie ma rozwiązania, jest [[sprzeczne]].",
+     "uk": "рівняння не має розв'язку"
+    }
+   ]
+  },
+  {
+   "id": "s14",
+   "part": 2,
+   "section": "teoria",
+   "kind": "table",
+   "reveal": "row",
+   "title": "Polecenia w zadaniach · 2",
+   "columns": [
+    "polecenie",
+    "co robisz"
+   ],
+   "rows": [
+    [
+     "[[Rozwiąż]] równanie.",
+     "розв'яжи"
+    ],
+    [
+     "Wyznacz h [[ze wzoru]].",
+     "вирази h з формули"
+    ],
+    [
+     "[[Podstaw]] dane do wzoru.",
+     "підстав дані"
+    ],
+    [
+     "[[Przekształć]] wzór.",
+     "перетвори формулу"
+    ],
+    [
+     "[[Oszacuj]] wynik.",
+     "оціни приблизно"
+    ],
+    [
+     "Sprawdź rozwiązanie.",
+     "перевір"
+    ]
+   ],
+   "note": "Wyznacz znasz już z lekcji 1. Nowe: ze wzoru — z + dopełniacz."
+  },
+  {
+   "id": "s15",
+   "part": 2,
+   "section": "pulapki",
+   "kind": "traps",
+   "title": "Pułapki z ukraińskiego · 1",
+   "items": [
+    {
+     "uk": "сотка (рос. сотка)",
+     "wrong": "działka ma sześć sotek",
+     "right": "działka ma sześć [[arów]]",
+     "why": "Sotka to słowo ze Wschodu, w Polsce nikt go nie zna. Sto metrów kwadratowych to ar."
+    },
+    {
+     "uk": "дріб (рос. дробь)",
+     "wrong": "drób",
+     "right": "[[ułamek]]",
+     "why": "Drób to kury i indyki. Liczba z kreską to ułamek: trzy piąte."
+    },
+    {
+     "uk": "знизити на 10 % (рос. снизить на 10 %)",
+     "wrong": "obniżyć na dziesięć procent",
+     "right": "obniżyć [[o]] dziesięć procent",
+     "why": "Różnicę podajemy przez o + biernik, jak w lekcji 1: o dwa metry, o połowę."
+    }
+   ]
+  },
+  {
+   "id": "s16",
+   "part": 2,
+   "section": "pulapki",
+   "kind": "traps",
+   "title": "Pułapki z ukraińskiego · 2",
+   "items": [
+    {
+     "uk": "збільшити в два рази (рос. увеличить в два раза)",
+     "wrong": "zwiększyć w dwa razy",
+     "right": "zwiększyć [[dwukrotnie]] albo dwa razy",
+     "why": "Po polsku bez „w”: dwa razy, trzy razy albo dwukrotnie, trzykrotnie."
+    },
+    {
+     "uk": "розв'язати рівняння (рос. решить уравнение)",
+     "wrong": "zdecydować równanie",
+     "right": "[[rozwiązać]] równanie",
+     "why": "Zdecydować to прийняти рішення. Zadanie i równanie rozwiązujemy."
+    },
+    {
+     "uk": "ікс у квадраті (рос. икс в квадрате)",
+     "wrong": "iks w kwadracie",
+     "right": "iks [[do kwadratu]] albo iks kwadrat",
+     "why": "Potęgę czytamy z do: do kwadratu, do sześcianu, do potęgi piątej."
+    }
+   ]
+  }
+ ]
+}
