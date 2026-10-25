@@ -1,0 +1,110 @@
+{
+  "lesson_id": "pl-b1-group-01-mieszkanie",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 14,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Trzecie piętro bez windy”. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Mieszkanie jest na trzecim piętrze i w bloku jest winda.",
+          "answer": false,
+          "explanation": "W tekście: trzy pokoje na trzecim piętrze, bez windy."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Rodzina poznała pana Henryka już w dniu przeprowadzki.",
+          "answer": true,
+          "explanation": "Już pierwszego wieczoru spotkali go na klatce schodowej."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Pani Monika pracuje w szpitalu jako lekarka.",
+          "answer": false,
+          "explanation": "Pani Monika jest pielęgniarką."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Narratorka przeprosiła sąsiadkę osobiście.",
+          "answer": true,
+          "explanation": "Poszła do niej z ciastem i przeprosiła."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Woda w łazience leciała z mieszkania pana Henryka.",
+          "answer": false,
+          "explanation": "Rura pękła u pani Moniki, sąsiadki z góry."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Teraz Maksym gra w piłkę na podwórku przed blokiem.",
+          "answer": false,
+          "explanation": "Gra na boisku za blokiem."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "pl-b1-group-01-mieszkanie-teacher#dialog",
+      "max_plays": 2,
+      "title": "Słuchanie: telefon do administracji",
+      "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Gdzie cieknie woda?",
+          "options": [
+            "pod zlewem w kuchni",
+            "pod wanną w łazience",
+            "z sufitu w kuchni"
+          ],
+          "answer": "pod zlewem w kuchni",
+          "explanation": "Lokatorka mówi: od rana cieknie woda pod zlewem w kuchni."
+        },
+        {
+          "id": "e2-2",
+          "question": "O której przyjdzie hydraulik?",
+          "options": [
+            "o czternastej",
+            "o szesnastej",
+            "o szesnastej trzydzieści"
+          ],
+          "answer": "o szesnastej trzydzieści",
+          "explanation": "O czternastej lokatorka jest w pracy, więc administrator wpisuje szesnastą trzydzieści."
+        },
+        {
+          "id": "e2-3",
+          "question": "Czego boi się lokatorka?",
+          "options": [
+            "że zaleje sąsiadkę z dołu",
+            "że hydraulik się spóźni",
+            "że właściciel nie zapłaci"
+          ],
+          "answer": "że zaleje sąsiadkę z dołu",
+          "explanation": "Mówi: boję się, że zaleję sąsiadkę pode mną."
+        },
+        {
+          "id": "e2-4",
+          "question": "Jaki jest numer zgłoszenia?",
+          "options": [
+            "dwadzieścia trzy",
+            "czterdzieści osiem",
+            "piętnaście"
+          ],
+          "answer": "czterdzieści osiem",
+          "explanation": "Dwadzieścia trzy to numer mieszkania, piętnaście — mieszkanie sąsiadki."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,718 @@
+{
+  "lesson_id": "pl-b1-group-01-mieszkanie",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: narzędnik, miejscownik, gdzie i dokąd",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 60,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "Słowa: co to jest?",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "kaucja",
+          "right": "pieniądze na start, które właściciel oddaje na końcu najmu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "czynsz",
+          "right": "opłata za mieszkanie, którą płaci się co miesiąc",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "kawalerka",
+          "right": "mieszkanie, w którym jest tylko jeden pokój",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "klatka schodowa",
+          "right": "część bloku ze schodami między piętrami",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "hydraulik",
+          "right": "fachowiec od rur i kranów",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "cisza nocna",
+          "right": "godziny, kiedy w budynku nie wolno hałasować",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "piwnica",
+          "right": "pomieszczenie pod budynkiem na rowery i słoiki",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "najemca",
+          "right": "osoba, która płaci za cudze mieszkanie i w nim mieszka",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Z kim? Czym? Formy narzędnika",
+      "instruction": "Wpisz słowa z nawiasu w narzędniku. Pisz z polskimi znakami: końcówka -ą jest tu najważniejsza.",
+      "diacritics": "strict",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Mieszkam w jednym pokoju z ___ (młodszy brat).",
+          "answer": "młodszym bratem",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "g2-2",
+          "text": "Na wakacje jedziemy do babci ___ (pociąg).",
+          "answer": "pociągiem",
+          "grammar_point": "narzednik-formy"
+        },
+        {
+          "id": "g2-3",
+          "text": "Moja sąsiadka jest ___ (dobra fryzjerka).",
+          "answer": "dobrą fryzjerką",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "g2-4",
+          "text": "Od lat interesuję się ___ (stare meble).",
+          "answer": "starymi meblami",
+          "grammar_point": "narzednik-mnoga"
+        },
+        {
+          "id": "g2-5",
+          "text": "Pan z parteru opiekuje się ___ (nasz kot), kiedy wyjeżdżamy.",
+          "answer": "naszym kotem",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "g2-6",
+          "text": "Przed ___ (każde wejście) stoi ławka.",
+          "answer": "każdym wejściem",
+          "grammar_point": "nad-pod-przed-za"
+        },
+        {
+          "id": "g2-7",
+          "text": "Wczoraj poznaliśmy się z ___ (nowi sąsiedzi) na podwórku.",
+          "answer": "nowymi sąsiadami",
+          "grammar_point": "narzednik-mnoga"
+        },
+        {
+          "id": "g2-8",
+          "text": "Zajmuję się ___ (ta sprawa) od poniedziałku.",
+          "answer": "tą sprawą",
+          "grammar_point": "czasowniki-narzednik"
+        },
+        {
+          "id": "g2-9",
+          "text": "Za ___ (nasz blok) jest mały park.",
+          "answer": "naszym blokiem",
+          "grammar_point": "nad-pod-przed-za"
+        },
+        {
+          "id": "g2-10",
+          "text": "Chleb kroję tylko ___ (ten ostry nóż).",
+          "answer": "tym ostrym nożem",
+          "grammar_point": "narzednik-przymiotnik"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Kim jest? Z kim? Wybierz formę",
+      "instruction": "Wybierz poprawną wersję. Po błędzie przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Mój mąż jest ___.",
+          "answer": "elektrykiem",
+          "grammar_point": "byc-narzednik",
+          "options": [
+            "elektrykiem",
+            "elektryk"
+          ],
+          "explanation": "Być + narzędnik: jest elektrykiem. Mianownik tylko po „to”: To elektryk."
+        },
+        {
+          "id": "g3-2",
+          "text": "To jest ___ naszego bloku.",
+          "answer": "administrator",
+          "grammar_point": "byc-narzednik",
+          "options": [
+            "administratorem",
+            "administrator"
+          ],
+          "explanation": "Po „to (jest)” stoi mianownik: To jest administrator."
+        },
+        {
+          "id": "g3-3",
+          "text": "Od roku pracuję ___ w hotelu.",
+          "answer": "jako recepcjonistka",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "recepcjonistką",
+            "jako recepcjonistka"
+          ],
+          "explanation": "Pracować jako + mianownik. „Pracuję recepcjonistką” to kalka z ukraińskiego."
+        },
+        {
+          "id": "g3-4",
+          "text": "Marta została ___ wspólnoty.",
+          "answer": "przewodniczącą",
+          "grammar_point": "byc-narzednik",
+          "options": [
+            "przewodnicząca",
+            "przewodniczącą"
+          ],
+          "explanation": "Zostać kim? — narzędnik, tak jak po „być”."
+        },
+        {
+          "id": "g3-5",
+          "text": "Codziennie rozmawiam ___ przez telefon.",
+          "answer": "z mamą",
+          "grammar_point": "z-kim",
+          "options": [
+            "z mamą",
+            "mamą",
+            "z mamy"
+          ],
+          "explanation": "Z kim? — z + narzędnik. Bez „z” zdanie znaczy coś innego."
+        },
+        {
+          "id": "g3-6",
+          "text": "Mój syn interesuje się ___.",
+          "answer": "piłką nożną",
+          "grammar_point": "czasowniki-narzednik",
+          "options": [
+            "piłkę nożną",
+            "piłką nożną",
+            "piłki nożnej"
+          ],
+          "explanation": "Interesować się czym? — narzędnikiem. Ale: interesuje mnie piłka nożna."
+        },
+        {
+          "id": "g3-7",
+          "text": "Lubię gotować z ___.",
+          "answer": "tobą",
+          "grammar_point": "zaimki-narzednik",
+          "options": [
+            "tobą",
+            "ciebie",
+            "ty"
+          ],
+          "explanation": "Z + narzędnik zaimka: ze mną, z tobą, z nim, z nią."
+        },
+        {
+          "id": "g3-8",
+          "text": "Rozmawialiśmy z ___ o remoncie.",
+          "answer": "nimi",
+          "grammar_point": "zaimki-narzednik",
+          "options": [
+            "nimi",
+            "nich",
+            "ich"
+          ],
+          "explanation": "Po przyimku zaimek ma formę z „n-”: z nimi, z nim, z nią."
+        },
+        {
+          "id": "g3-9",
+          "text": "Jesteśmy ___ od dwudziestu lat.",
+          "answer": "sąsiadami",
+          "grammar_point": "byc-narzednik",
+          "options": [
+            "sąsiedzi",
+            "sąsiadami"
+          ],
+          "explanation": "Jesteśmy kim? — narzędnik liczby mnogiej: sąsiadami."
+        },
+        {
+          "id": "g3-10",
+          "text": "To ___ z trzeciego piętra.",
+          "answer": "nasza nowa sąsiadka",
+          "grammar_point": "byc-narzednik",
+          "options": [
+            "naszą nową sąsiadką",
+            "nasza nowa sąsiadka"
+          ],
+          "explanation": "„To” + mianownik: To nasza nowa sąsiadka."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g4-1",
+          "prompt": "Mieszkam z dwoma przyjacielami.",
+          "answer": "Mieszkam z dwoma przyjaciółmi.",
+          "grammar_point": "narzednik-wyjatki",
+          "explanation": "Przyjaciele → z przyjaciółmi (końcówka -mi)."
+        },
+        {
+          "id": "g4-2",
+          "prompt": "Dzieci bawią się z sąsiedzkimi dzieciami.",
+          "answer": "Dzieci bawią się z sąsiedzkimi dziećmi.",
+          "grammar_point": "narzednik-wyjatki",
+          "explanation": "Dzieci → z dziećmi, ludzie → z ludźmi."
+        },
+        {
+          "id": "g4-3",
+          "prompt": "Czy pójdziesz z mną do piwnicy?",
+          "answer": "Czy pójdziesz ze mną do piwnicy?",
+          "grammar_point": "zaimki-narzednik",
+          "explanation": "Przed „mną” zawsze „ze”: ze mną."
+        },
+        {
+          "id": "g4-4",
+          "prompt": "Mój brat jest dobry kucharz.",
+          "answer": "Mój brat jest dobrym kucharzem.",
+          "accept": [
+            "Mój brat to dobry kucharz."
+          ],
+          "grammar_point": "byc-narzednik",
+          "explanation": "Być + narzędnik: jest dobrym kucharzem."
+        },
+        {
+          "id": "g4-5",
+          "prompt": "Wczoraj rozmawiałam z nową sąsiadkom.",
+          "answer": "Wczoraj rozmawiałam z nową sąsiadką.",
+          "accept": [
+            "Rozmawiałam wczoraj z nową sąsiadką.",
+            "Wczoraj rozmawiałam z nową sąsiadką"
+          ],
+          "grammar_point": "narzednik-formy",
+          "explanation": "Narzędnik rodzaju żeńskiego kończy się na -ą, nie na -om."
+        },
+        {
+          "id": "g4-6",
+          "prompt": "Nie umiem dogadać się z tymi ludziami.",
+          "answer": "Nie umiem dogadać się z tymi ludźmi.",
+          "accept": [
+            "Nie umiem się dogadać z tymi ludźmi."
+          ],
+          "grammar_point": "narzednik-wyjatki",
+          "explanation": "Ludzie → z ludźmi."
+        },
+        {
+          "id": "g4-7",
+          "prompt": "Pracuję kierowcą w firmie przeprowadzkowej.",
+          "answer": "Pracuję jako kierowca w firmie przeprowadzkowej.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Pracować jako + mianownik: pracuję jako kierowca."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Gdzie? Formy miejscownika",
+      "instruction": "Wpisz słowa z nawiasu w miejscowniku. Uważaj na wymiany: t → cie, d → dzie, r → rze.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Klucze zostawiłam w ___ (szafa) w przedpokoju.",
+          "answer": "szafie",
+          "grammar_point": "miejscownik-formy"
+        },
+        {
+          "id": "g5-2",
+          "text": "Rower stoi na ___ (balkon).",
+          "answer": "balkonie",
+          "grammar_point": "miejscownik-formy"
+        },
+        {
+          "id": "g5-3",
+          "text": "Mieszkamy w starym ___ (blok) przy parku.",
+          "answer": "bloku",
+          "grammar_point": "miejscownik-formy"
+        },
+        {
+          "id": "g5-4",
+          "text": "W ___ (kuchnia) mamy nowy piekarnik.",
+          "answer": "kuchni",
+          "grammar_point": "miejscownik-formy"
+        },
+        {
+          "id": "g5-5",
+          "text": "Sąsiadka długo opowiadała o swoim ___ (syn).",
+          "answer": "synu",
+          "grammar_point": "miejscownik-wyjatki"
+        },
+        {
+          "id": "g5-6",
+          "text": "Ogłoszenie wisi na ___ (drzwi) od klatki.",
+          "answer": "drzwiach",
+          "grammar_point": "miejscownik-formy"
+        },
+        {
+          "id": "g5-7",
+          "text": "Cała nasza rodzina mieszka w jednym ___ (miasto).",
+          "answer": "mieście",
+          "grammar_point": "miejscownik-alternacje"
+        },
+        {
+          "id": "g5-8",
+          "text": "Na ___ (podłoga) leżał mokry ręcznik.",
+          "answer": "podłodze",
+          "grammar_point": "miejscownik-alternacje"
+        },
+        {
+          "id": "g5-9",
+          "text": "Na naszej ___ (ulica) remontują chodnik.",
+          "answer": "ulicy",
+          "grammar_point": "miejscownik-formy"
+        },
+        {
+          "id": "g5-10",
+          "text": "Myślę o ___ (przeprowadzka) do większego mieszkania.",
+          "answer": "przeprowadzce",
+          "grammar_point": "miejscownik-alternacje"
+        },
+        {
+          "id": "g5-11",
+          "text": "W ___ (dom) zawsze pachnie kawą.",
+          "answer": "domu",
+          "grammar_point": "miejscownik-wyjatki"
+        },
+        {
+          "id": "g5-12",
+          "text": "Na ___ (parter) jest sklep spożywczy.",
+          "answer": "parterze",
+          "grammar_point": "miejscownik-alternacje"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Gdzie, dokąd czy skąd?",
+      "instruction": "Najpierw zadaj sobie pytanie: gdzie? dokąd? skąd? Potem wybierz formę.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "W sierpniu jedziemy ___.",
+          "answer": "nad morze",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "nad morzem",
+            "nad morze",
+            "na morze"
+          ],
+          "explanation": "Dokąd? — nad + biernik: nad morze. Gdzie? — nad morzem."
+        },
+        {
+          "id": "g6-2",
+          "text": "Całe wakacje spędziliśmy ___.",
+          "answer": "nad jeziorem",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "nad jezioro",
+            "nad jeziorem"
+          ],
+          "explanation": "Spędzić gdzie? — nad + narzędnik: nad jeziorem."
+        },
+        {
+          "id": "g6-3",
+          "text": "Nasz samochód stoi ___.",
+          "answer": "pod blokiem",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "pod blok",
+            "pod blokiem"
+          ],
+          "explanation": "Stoi gdzie? — pod + narzędnik."
+        },
+        {
+          "id": "g6-4",
+          "text": "Dzieci wybiegły ___ i zaczęły grać.",
+          "answer": "przed dom",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "przed domem",
+            "przed dom"
+          ],
+          "explanation": "Wybiegły dokąd? — przed + biernik: przed dom."
+        },
+        {
+          "id": "g6-5",
+          "text": "Idę ___ pożyczyć wiertarkę.",
+          "answer": "do sąsiada",
+          "grammar_point": "u-do-od",
+          "options": [
+            "u sąsiada",
+            "do sąsiada",
+            "w sąsiada"
+          ],
+          "explanation": "Do osoby idziemy „do”: do sąsiada. Jesteśmy „u” niego."
+        },
+        {
+          "id": "g6-6",
+          "text": "Wczoraj wieczorem byłam ___ na kawie.",
+          "answer": "u sąsiadki",
+          "grammar_point": "u-do-od",
+          "options": [
+            "do sąsiadki",
+            "w sąsiadki",
+            "u sąsiadki"
+          ],
+          "explanation": "Gdzie, jeśli chodzi o osobę? — u + dopełniacz: u sąsiadki."
+        },
+        {
+          "id": "g6-7",
+          "text": "Wyjdź ___, tu jest lepszy zasięg.",
+          "answer": "na balkon",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "na balkonie",
+            "na balkon",
+            "do balkonu"
+          ],
+          "explanation": "Dokąd? — na + biernik: na balkon. Gdzie? — na balkonie."
+        },
+        {
+          "id": "g6-8",
+          "text": "Właśnie wracam ___ i jestem cały mokry.",
+          "answer": "z basenu",
+          "grammar_point": "skad",
+          "options": [
+            "od basenu",
+            "z basenu"
+          ],
+          "explanation": "Byłem „na” basenie → wracam „z” basenu. Skąd od osoby: od sąsiada."
+        },
+        {
+          "id": "g6-9",
+          "text": "Kot schował się ___ i śpi.",
+          "answer": "za szafą",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "za szafę",
+            "za szafą"
+          ],
+          "explanation": "Gdzie śpi? — za + narzędnik: za szafą."
+        },
+        {
+          "id": "g6-10",
+          "text": "Kot wszedł ___ i nie chce wyjść.",
+          "answer": "pod łóżko",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "pod łóżkiem",
+            "pod łóżko"
+          ],
+          "explanation": "Wszedł dokąd? — pod + biernik: pod łóżko."
+        },
+        {
+          "id": "g6-11",
+          "text": "W weekend wyjeżdżamy ___, do domku na wsi.",
+          "answer": "za miasto",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "za miastem",
+            "za miasto"
+          ],
+          "explanation": "Wyjeżdżamy dokąd? — za miasto. Mieszkamy gdzie? — za miastem."
+        },
+        {
+          "id": "g6-12",
+          "text": "Wracam ___ dopiero o ósmej.",
+          "answer": "z pracy",
+          "grammar_point": "skad",
+          "options": [
+            "z pracy",
+            "od pracy",
+            "z pracą"
+          ],
+          "explanation": "Jestem w pracy → wracam z pracy."
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Wiadomość w grupie sąsiedzkiej",
+      "instruction": "Pani Ania pisze do sąsiadów. Przeczytaj wiadomość zdanie po zdaniu i wybierz formę: gdzie czy dokąd?",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Kochani, w sobotę o dziesiątej sprzątamy razem teren ___.",
+          "answer": "przed blokiem",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "przed blokiem",
+            "przed blok"
+          ],
+          "explanation": "Sprzątamy gdzie? — przed + narzędnik."
+        },
+        {
+          "id": "g7-2",
+          "text": "Worki i rękawice będą leżeć ___, obok rowerów.",
+          "answer": "w piwnicy",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "do piwnicy",
+            "w piwnicy"
+          ],
+          "explanation": "Leżeć gdzie? — w + miejscownik."
+        },
+        {
+          "id": "g7-3",
+          "text": "Stare meble wynosimy ___, w poniedziałek ktoś je zabierze.",
+          "answer": "na podwórko",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "na podwórku",
+            "na podwórko"
+          ],
+          "explanation": "Wynosimy dokąd? — na + biernik."
+        },
+        {
+          "id": "g7-4",
+          "text": "Po sprzątaniu zapraszam wszystkich ___ na kawę i ciasto.",
+          "answer": "do mnie",
+          "grammar_point": "u-do-od",
+          "options": [
+            "do mnie",
+            "u mnie"
+          ],
+          "explanation": "Zapraszam dokąd? — do mnie. Kawa będzie u mnie."
+        },
+        {
+          "id": "g7-5",
+          "text": "Mieszkam ___, pod siódemką.",
+          "answer": "na drugim piętrze",
+          "grammar_point": "miejscownik-formy",
+          "options": [
+            "na drugie piętro",
+            "na drugim piętrze"
+          ],
+          "explanation": "Mieszkam gdzie? — na + miejscownik: na drugim piętrze."
+        },
+        {
+          "id": "g7-6",
+          "text": "Kto nie może przyjść, niech zostawi klucz do piwnicy ___ z parteru.",
+          "answer": "u pani Basi",
+          "grammar_point": "u-do-od",
+          "options": [
+            "u pani Basi",
+            "do pani Basi"
+          ],
+          "explanation": "Zostawić gdzie, jeśli chodzi o osobę? — u + dopełniacz."
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Pułapki z ukraińskiego",
+      "instruction": "Wybierz wersję, którą powie Polak. Po każdej odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Mama gotuje obiad ___.",
+          "answer": "w kuchni",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "na kuchni",
+            "w kuchni"
+          ],
+          "explanation": "Kuchnia to pokój → w kuchni. „Na kuchni” = na kuchence."
+        },
+        {
+          "id": "g8-2",
+          "text": "W piątek byliśmy ___ na urodzinach.",
+          "answer": "u Marka",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "u Marka",
+            "w Marka",
+            "do Marka"
+          ],
+          "explanation": "Gdzie, jeśli chodzi o osobę? — u + dopełniacz."
+        },
+        {
+          "id": "g8-3",
+          "text": "Długo rozmawialiśmy ___.",
+          "answer": "o remoncie",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "o remont",
+            "o remoncie",
+            "pro remont"
+          ],
+          "explanation": "O czym? — o + miejscownik: o remoncie."
+        },
+        {
+          "id": "g8-4",
+          "text": "Pójdziesz ___ do sklepu?",
+          "answer": "ze mną",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "z mną",
+            "ze mną"
+          ],
+          "explanation": "Przed „mną” zawsze „ze”."
+        },
+        {
+          "id": "g8-5",
+          "text": "Jestem bardzo dumna ___.",
+          "answer": "z córki",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "córką",
+            "z córki",
+            "za córkę"
+          ],
+          "explanation": "Dumny z kogo? z czego? — z + dopełniacz."
+        },
+        {
+          "id": "g8-6",
+          "text": "Moja siostra pracuje ___.",
+          "answer": "jako pielęgniarka",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "jako pielęgniarka",
+            "pielęgniarką"
+          ],
+          "explanation": "Pracować jako + mianownik."
+        },
+        {
+          "id": "g8-7",
+          "text": "Każdego lata jeździmy ___.",
+          "answer": "nad Bałtyk",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "na Bałtyk",
+            "nad Bałtyk"
+          ],
+          "explanation": "Nad wodę: nad morze, nad Bałtyk, nad jezioro, nad rzekę."
+        }
+      ]
+    }
+  ]
+}
