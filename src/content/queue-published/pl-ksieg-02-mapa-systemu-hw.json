@@ -1,0 +1,133 @@
+{
+  "lesson_id": "pl-ksieg-02-mapa-systemu",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: porównania w nowych zdaniach",
+  "instruction": "Dwa bloki. Zrób je przed napisaniem posta.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz właściwą formę",
+      "instruction": "Wpisz formę z nawiasu.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Pociągiem dojedziesz do Gdańska ___ (szybko → wyższy) niż autobusem.",
+          "answer": "szybciej",
+          "grammar_point": "przyslowki-stopniowanie"
+        },
+        {
+          "id": "h1-2",
+          "text": "W tym roku zima jest ___ (zły → wyższy) niż w zeszłym.",
+          "answer": "gorsza",
+          "grammar_point": "wyjatki-stopniowania"
+        },
+        {
+          "id": "h1-3",
+          "text": "Mój syn mówi po polsku ___ (dobrze → wyższy) ode mnie.",
+          "answer": "lepiej",
+          "grammar_point": "wyjatki-stopniowania"
+        },
+        {
+          "id": "h1-4",
+          "text": "W tej dzielnicy mieszkania kosztują ___ (drogo → wyższy) niż na obrzeżach.",
+          "answer": "drożej",
+          "grammar_point": "przyslowki-stopniowanie"
+        },
+        {
+          "id": "h1-5",
+          "text": "To ___ (duży → najwyższy) park w naszym mieście.",
+          "answer": "największy",
+          "grammar_point": "wyjatki-stopniowania"
+        },
+        {
+          "id": "h1-6",
+          "text": "Po kursie mam ___ (mało → wyższy) stresu na rozmowach.",
+          "answer": "mniej",
+          "grammar_point": "wyjatki-stopniowania"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdania",
+      "instruction": "Klikaj słowa w dobrej kolejności.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "nasze",
+            "mieszkanie",
+            "jest",
+            "mniejsze",
+            "od",
+            "waszego."
+          ],
+          "answer": "Nasze mieszkanie jest mniejsze od waszego.",
+          "grammar_point": "porownanie-niz-od"
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "w listopadzie",
+            "dni",
+            "są",
+            "coraz",
+            "krótsze."
+          ],
+          "answer": "W listopadzie dni są coraz krótsze.",
+          "accept": [
+            "Dni w listopadzie są coraz krótsze.",
+            "W listopadzie są dni coraz krótsze."
+          ],
+          "grammar_point": "im-tym"
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "im",
+            "więcej",
+            "ćwiczysz,",
+            "tym",
+            "swobodniej",
+            "mówisz."
+          ],
+          "answer": "Im więcej ćwiczysz, tym swobodniej mówisz.",
+          "grammar_point": "im-tym"
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "ta",
+            "kanapa",
+            "nie",
+            "jest",
+            "tak",
+            "wygodna",
+            "jak",
+            "stara."
+          ],
+          "answer": "Ta kanapa nie jest tak wygodna jak stara.",
+          "grammar_point": "tak-jak"
+        },
+        {
+          "id": "h2-5",
+          "words": [
+            "to",
+            "była",
+            "najciekawsza",
+            "wycieczka",
+            "w tym roku."
+          ],
+          "answer": "To była najciekawsza wycieczka w tym roku.",
+          "accept": [
+            "W tym roku to była najciekawsza wycieczka."
+          ],
+          "grammar_point": "stopien-najwyzszy"
+        }
+      ]
+    }
+  ]
+}

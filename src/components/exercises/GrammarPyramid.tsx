@@ -308,7 +308,11 @@ export function GrammarPyramid({ data, blockIds }: Props) {
         {level.task_type === 'sentence-building' &&
           level.items.map((item) => (
             <div key={key(item.id)} className="nb-panel">
-              <SentenceBuilding words={item.words ?? []} answer={item.answer ?? ''} />
+              <SentenceBuilding
+                words={item.words ?? []}
+                answer={item.answer ?? ''}
+                accept={(item as { accept?: string[] }).accept}
+              />
             </div>
           ))}
 

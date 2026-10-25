@@ -1,0 +1,324 @@
+{
+  "lesson_id": "pl-ksieg-02-mapa-systemu",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: urzędy i porównania",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "exercise_type": "matching",
+      "title": "1. Urzędy i rejestry",
+      "instruction": "Kliknij nazwę po lewej, a potem jej opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "KRS",
+          "right": "rejestr, w którym jest każda spółka z o.o.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "CEIDG",
+          "right": "rejestr osób, które prowadzą JDG",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "ZUS",
+          "right": "tu płaci się składki na ubezpieczenia społeczne",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "urząd skarbowy",
+          "right": "tu rozlicza się podatki",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "KPiR",
+          "right": "prosta ewidencja przychodów i kosztów",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "kapitał zakładowy",
+          "right": "pieniądze, które wspólnicy wnoszą do spółki",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Stopień wyższy i najwyższy",
+      "instruction": "Wpisz właściwą formę. W nawiasie jest słowo i stopień, którego potrzebujesz.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Nowy program księgowy jest ___ (szybki → wyższy) niż stary.",
+          "answer": "szybszy",
+          "grammar_point": "stopien-wyzszy"
+        },
+        {
+          "id": "g2-2",
+          "text": "Rozliczenie roczne jest ___ (trudny → wyższy) od miesięcznego.",
+          "answer": "trudniejsze",
+          "grammar_point": "stopien-wyzszy"
+        },
+        {
+          "id": "g2-3",
+          "text": "Marta jest ___ (doświadczony → wyższy) niż ja, bo pracuje tu od dziesięciu lat.",
+          "answer": "bardziej doświadczona",
+          "grammar_point": "bardziej-mniej"
+        },
+        {
+          "id": "g2-4",
+          "text": "Styczeń to ___ (pracowity → najwyższy) miesiąc w biurze rachunkowym.",
+          "answer": "najpracowitszy",
+          "grammar_point": "stopien-najwyzszy",
+          "accept": [
+            "najbardziej pracowity"
+          ]
+        },
+        {
+          "id": "g2-5",
+          "text": "Dla małej firmy to ___ (dobry → najwyższy) rozwiązanie.",
+          "answer": "najlepsze",
+          "grammar_point": "wyjatki-stopniowania"
+        },
+        {
+          "id": "g2-6",
+          "text": "Nasi nowi klienci są ___ (młody → wyższy) niż poprzedni.",
+          "answer": "młodsi",
+          "grammar_point": "stopien-wyzszy"
+        },
+        {
+          "id": "g2-7",
+          "text": "Ta forma opodatkowania jest ___ (ryzykowny → mniej) dla przedsiębiorcy.",
+          "answer": "mniej ryzykowna",
+          "grammar_point": "bardziej-mniej"
+        },
+        {
+          "id": "g2-8",
+          "text": "Ten raport przygotuję w programie ___ (łatwo → wyższy) niż w arkuszu.",
+          "answer": "łatwiej",
+          "grammar_point": "przyslowki-stopniowanie"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Niż, od, jak, im…",
+      "instruction": "Wybierz poprawną wersję.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Moja pensja jest niższa ___ mojej koleżanki.",
+          "answer": "od pensji",
+          "grammar_point": "porownanie-niz-od",
+          "options": [
+            "od pensji",
+            "za pensję",
+            "niż pensji"
+          ],
+          "explanation": "Od + dopełniacz (od pensji) albo niż + ten sam przypadek (niż pensja). „Za” po polsku nie porównuje."
+        },
+        {
+          "id": "g3-2",
+          "text": "Ten formularz jest bardzo podobny ___.",
+          "answer": "do ukraińskiego",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "na ukraiński",
+            "do ukraińskiego"
+          ],
+          "explanation": "Podobny do + dopełniacz. „Podobny na” to kalka z ukraińskiego."
+        },
+        {
+          "id": "g3-3",
+          "text": "___ spółki JDG nie musi mieć kapitału zakładowego.",
+          "answer": "W przeciwieństwie do",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "Na odmianę od",
+            "W przeciwieństwie do"
+          ],
+          "explanation": "„Na odmianę” znaczy „dla różnorodności”. На відміну від = w przeciwieństwie do."
+        },
+        {
+          "id": "g3-4",
+          "text": "___ więcej klientów, tym więcej terminów.",
+          "answer": "Im",
+          "grammar_point": "im-tym",
+          "options": [
+            "Czym",
+            "Im"
+          ],
+          "explanation": "Po polsku: im …, tym …"
+        },
+        {
+          "id": "g3-5",
+          "text": "Spółka nie jest tak prosta ___ JDG.",
+          "answer": "jak",
+          "grammar_point": "tak-jak",
+          "options": [
+            "jak",
+            "niż",
+            "od"
+          ],
+          "explanation": "Nie tak … jak: po „tak” zawsze „jak”."
+        },
+        {
+          "id": "g3-6",
+          "text": "Moja koleżanka ma ___ staż jak ja.",
+          "answer": "taki sam",
+          "grammar_point": "tak-jak",
+          "options": [
+            "taki sam",
+            "tak samo"
+          ],
+          "explanation": "Przed rzeczownikiem (staż) — taki sam."
+        },
+        {
+          "id": "g3-7",
+          "text": "W tym roku przepisy są ___ skomplikowane.",
+          "answer": "coraz bardziej",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "coraz bardziej",
+            "więcej i więcej"
+          ],
+          "explanation": "Все більше й більше = coraz bardziej / coraz więcej."
+        },
+        {
+          "id": "g3-8",
+          "text": "Ta usługa kosztuje w małym biurze ___.",
+          "answer": "taniej",
+          "grammar_point": "przyslowki-stopniowanie",
+          "options": [
+            "taniej",
+            "bardziej tanio",
+            "tańsza"
+          ],
+          "explanation": "Kosztuje jak? → przysłówek: taniej."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "exercise_type": "sentence-building",
+      "title": "4. Popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g4-1",
+          "prompt": "Ten program jest bardziej nowy niż nasz.",
+          "answer": "Ten program jest nowszy niż nasz.",
+          "accept": [
+            "Ten program jest nowszy od naszego."
+          ],
+          "grammar_point": "stopien-wyzszy"
+        },
+        {
+          "id": "g4-2",
+          "prompt": "To jest najbardziej łatwa forma działalności.",
+          "answer": "To jest najłatwiejsza forma działalności.",
+          "accept": [
+            "To najłatwiejsza forma działalności."
+          ],
+          "grammar_point": "stopien-najwyzszy"
+        },
+        {
+          "id": "g4-3",
+          "prompt": "Biuro w centrum jest droższe za biuro na osiedlu.",
+          "answer": "Biuro w centrum jest droższe od biura na osiedlu.",
+          "accept": [
+            "Biuro w centrum jest droższe niż biuro na osiedlu."
+          ],
+          "grammar_point": "porownanie-niz-od"
+        },
+        {
+          "id": "g4-4",
+          "prompt": "W tym miesiącu pracuję więcej dobrze niż w zeszłym.",
+          "answer": "W tym miesiącu pracuję lepiej niż w zeszłym.",
+          "accept": [
+            "W tym miesiącu pracuję lepiej niż w zeszłym miesiącu."
+          ],
+          "grammar_point": "wyjatki-stopniowania"
+        },
+        {
+          "id": "g4-5",
+          "prompt": "Wczoraj przez trzy godziny zaksięgowałam faktury i w końcu zaksięgowałam wszystkie.",
+          "answer": "Wczoraj przez trzy godziny księgowałam faktury i w końcu zaksięgowałam wszystkie.",
+          "grammar_point": "aspekt-uzycie"
+        },
+        {
+          "id": "g4-6",
+          "prompt": "Przez pięć lat co miesiąc złożyłam deklaracje VAT.",
+          "answer": "Przez pięć lat co miesiąc składałam deklaracje VAT.",
+          "accept": [
+            "Przez pięć lat składałam co miesiąc deklaracje VAT."
+          ],
+          "grammar_point": "aspekt-uzycie"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "exercise_type": "drag-and-drop",
+      "title": "5. Post Olgi",
+      "instruction": "Uzupełnij post słowami z ramki. Jedno słowo jest potrzebne dwa razy, trzy słowa są zbędne.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Dwa lata temu otworzyłam JDG, bo to była ___ forma na start.",
+          "answer": "najprostsza",
+          "grammar_point": "stopien-najwyzszy"
+        },
+        {
+          "id": "g5-2",
+          "text": "Rejestracja była ___, niż myślałam.",
+          "answer": "łatwiejsza",
+          "grammar_point": "stopien-wyzszy"
+        },
+        {
+          "id": "g5-3",
+          "text": "Teraz mam dwa razy ___ klientów niż na początku.",
+          "answer": "więcej",
+          "grammar_point": "wyjatki-stopniowania"
+        },
+        {
+          "id": "g5-4",
+          "text": "I mam coraz ___ dokumentów.",
+          "answer": "więcej",
+          "grammar_point": "wyjatki-stopniowania"
+        },
+        {
+          "id": "g5-5",
+          "text": "Moja księgowa mówi, że ___ większa firma,",
+          "answer": "im",
+          "grammar_point": "im-tym"
+        },
+        {
+          "id": "g5-6",
+          "text": "tym ___ warto myśleć o spółce z o.o.",
+          "answer": "bardziej",
+          "grammar_point": "im-tym"
+        }
+      ],
+      "bank": [
+        "najprostsza",
+        "najbardziej prosta",
+        "łatwiejsza",
+        "łatwiej",
+        "więcej",
+        "bardziej",
+        "im",
+        "czym"
+      ]
+    }
+  ]
+}

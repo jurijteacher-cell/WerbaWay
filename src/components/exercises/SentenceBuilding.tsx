@@ -6,6 +6,8 @@ import { answersMatch } from '@/lib/answer-match';
 type Props = {
   words: string[];
   answer: string;
+  /** Other correct word orders (Polish word order is often free). */
+  accept?: string[];
   disabled?: boolean;
 };
 
@@ -18,7 +20,7 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export function SentenceBuilding({ words, answer, disabled }: Props) {
+export function SentenceBuilding({ words, answer, accept, disabled }: Props) {
   const bank = useMemo(() => shuffle(words), [words]);
   const [picked, setPicked] = useState<string[]>([]);
   const [remaining, setRemaining] = useState<string[]>(bank);
@@ -48,7 +50,7 @@ export function SentenceBuilding({ words, answer, disabled }: Props) {
   };
 
   const check = () => {
-    setChecked(answersMatch(picked.join(' '), answer).ok);
+    setChecked(answersMatch(picked.join(' '), answer, accept).ok);
   };
 
   const reset = () => {
