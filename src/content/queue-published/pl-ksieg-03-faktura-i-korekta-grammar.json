@@ -1,0 +1,341 @@
+{
+  "lesson_id": "pl-ksieg-03-faktura-i-korekta",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: faktura, dopełniacz i daty",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "exercise_type": "matching",
+      "title": "1. Kto i co na fakturze",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "sprzedawca",
+          "right": "wystawia fakturę",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "nabywca",
+          "right": "kupuje i dostaje fakturę",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "faktura korygująca",
+          "right": "poprawia błąd na fakturze",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "faktura pierwotna",
+          "right": "pierwsza faktura, którą się poprawia",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "numer KSeF",
+          "right": "nadaje go system każdej e-fakturze",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "wyciąg bankowy",
+          "right": "lista wpłat i wypłat z konta",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Dopełniacz: liczba pojedyncza",
+      "instruction": "Wpisz słowa z nawiasu w dopełniaczu.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Na fakturze nie ma ___ (numer zamówienia).",
+          "answer": "numeru zamówienia",
+          "grammar_point": "dopelniacz-przeczenie"
+        },
+        {
+          "id": "g2-2",
+          "text": "Proszę o przesłanie ___ (umowa najmu).",
+          "answer": "umowy najmu",
+          "grammar_point": "dopelniacz-lp"
+        },
+        {
+          "id": "g2-3",
+          "text": "Sprawdzam dane ___ (nowy nabywca).",
+          "answer": "nowego nabywcy",
+          "grammar_point": "dopelniacz-przymiotnik"
+        },
+        {
+          "id": "g2-4",
+          "text": "To jest korekta ___ (ostatnia faktura).",
+          "answer": "ostatniej faktury",
+          "grammar_point": "dopelniacz-przymiotnik"
+        },
+        {
+          "id": "g2-5",
+          "text": "Klient nie podał ___ (swój NIP).",
+          "answer": "swojego NIP-u",
+          "grammar_point": "dopelniacz-przeczenie",
+          "accept": [
+            "swojego NIP",
+            "swojego NIPu"
+          ]
+        },
+        {
+          "id": "g2-6",
+          "text": "Czekam na kopię ___ (to zamówienie).",
+          "answer": "tego zamówienia",
+          "grammar_point": "dopelniacz-przymiotnik"
+        },
+        {
+          "id": "g2-7",
+          "text": "Bez ___ (wyciąg bankowy) nie zamknę miesiąca.",
+          "answer": "wyciągu bankowego",
+          "grammar_point": "dopelniacz-przyimki"
+        },
+        {
+          "id": "g2-8",
+          "text": "Według ___ (nasz system) faktura jest już w KSeF.",
+          "answer": "naszego systemu",
+          "grammar_point": "dopelniacz-przyimki"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Dopełniacz: liczba mnoga i liczebniki",
+      "instruction": "Wpisz właściwą formę. Uwaga: nie wszędzie jest dopełniacz.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "W tym miesiącu zaksięgowałam dwadzieścia pięć ___ (faktura).",
+          "answer": "faktur",
+          "grammar_point": "liczebnik-dopelniacz"
+        },
+        {
+          "id": "g3-2",
+          "text": "Hurtownia wystawiła już dwie ___ (korekta).",
+          "answer": "korekty",
+          "grammar_point": "liczebnik-dopelniacz",
+          "explanation": "Po 2, 3, 4 (i 22, 23, 24) — mianownik: dwie korekty."
+        },
+        {
+          "id": "g3-3",
+          "text": "Brakuje mi trzech ___ (dokument).",
+          "answer": "dokumentów",
+          "grammar_point": "dopelniacz-lm"
+        },
+        {
+          "id": "g3-4",
+          "text": "Nasze biuro obsługuje czterdziestu ___ (klient).",
+          "answer": "klientów",
+          "grammar_point": "liczebnik-dopelniacz"
+        },
+        {
+          "id": "g3-5",
+          "text": "Klient nie przysłał jeszcze ___ (nowe zamówienia).",
+          "answer": "nowych zamówień",
+          "grammar_point": "dopelniacz-lm"
+        },
+        {
+          "id": "g3-6",
+          "text": "Mam kopie wszystkich ___ (umowa).",
+          "answer": "umów",
+          "grammar_point": "dopelniacz-lm"
+        },
+        {
+          "id": "g3-7",
+          "text": "Kilka ___ (pozycja) na tej fakturze jest błędnych.",
+          "answer": "pozycji",
+          "grammar_point": "liczebnik-dopelniacz"
+        },
+        {
+          "id": "g3-8",
+          "text": "Na liście do sprawdzenia są cztery ___ (faktura).",
+          "answer": "faktury",
+          "grammar_point": "liczebnik-dopelniacz"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "exercise_type": "fill-in-blank",
+      "title": "4. Daty i pułapki",
+      "instruction": "Wybierz poprawną wersję.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Faktura ___ ma błąd w cenie.",
+          "answer": "z dnia 3 marca",
+          "grammar_point": "data-dokument",
+          "options": [
+            "z dnia 3 marca",
+            "od 3 marca"
+          ],
+          "explanation": "Data dokumentu: faktura z dnia… „Od 3 marca” znaczy „від 3 березня і далі”."
+        },
+        {
+          "id": "g4-2",
+          "text": "Deklarację trzeba złożyć ___.",
+          "answer": "do 25. dnia miesiąca",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "do 25. dnia miesiąca",
+            "do 25. liczby"
+          ],
+          "explanation": "До 25 числа = do 25. dnia miesiąca / do dwudziestego piątego."
+        },
+        {
+          "id": "g4-3",
+          "text": "Spotkanie z klientem mamy ___.",
+          "answer": "piątego maja",
+          "grammar_point": "data-kiedy",
+          "options": [
+            "piątego maja",
+            "piąty maja"
+          ],
+          "explanation": "Kiedy? → dopełniacz: piątego maja."
+        },
+        {
+          "id": "g4-4",
+          "text": "Dzisiaj jest ___.",
+          "answer": "dwudziesty kwietnia",
+          "grammar_point": "data-kiedy",
+          "options": [
+            "dwudziesty kwietnia",
+            "dwudziestego kwietnia"
+          ],
+          "explanation": "Jaki dziś dzień? → mianownik: dwudziesty kwietnia."
+        },
+        {
+          "id": "g4-5",
+          "text": "Towar policzono ___.",
+          "answer": "zgodnie z zamówieniem",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "zgodnie z zamówieniem",
+            "odpowiednio do zamówienia"
+          ],
+          "explanation": "Відповідно до замовлення = zgodnie z zamówieniem / według zamówienia."
+        },
+        {
+          "id": "g4-6",
+          "text": "___ faktur w tym miesiącu jest większa niż w marcu.",
+          "answer": "Liczba",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "Liczba",
+            "Ilość"
+          ],
+          "explanation": "Rzeczy, które można policzyć: liczba faktur. Ilość — np. ilość papieru."
+        },
+        {
+          "id": "g4-7",
+          "text": "Brakuje ___ jeszcze dwóch dokumentów.",
+          "answer": "mi",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "mi",
+            "mnie"
+          ],
+          "explanation": "Komu brakuje? → mi. „Brakuje mnie” = мене бракує, мене немає."
+        },
+        {
+          "id": "g4-8",
+          "text": "W ___ zaksięgowałam ponad sto faktur.",
+          "answer": "kwietniu",
+          "grammar_point": "wyjatki-miejscownik",
+          "options": [
+            "kwietniu",
+            "kwietnia"
+          ],
+          "explanation": "W + miesiąc → miejscownik: w kwietniu."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "exercise_type": "fill-in-blank",
+      "title": "5. Powtórka: aspekt i porównanie",
+      "instruction": "Wybierz poprawną wersję.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Wczoraj Halina ___ wszystkie faktury klientki.",
+          "answer": "zaksięgowała",
+          "grammar_point": "aspekt-uzycie",
+          "options": [
+            "zaksięgowała",
+            "księgowała"
+          ],
+          "explanation": "Wszystkie, gotowy rezultat → forma dokonana."
+        },
+        {
+          "id": "g5-2",
+          "text": "Przez cały ranek ___ dokumenty z KSeF.",
+          "answer": "pobierała",
+          "grammar_point": "aspekt-uzycie",
+          "options": [
+            "pobierała",
+            "pobrała"
+          ],
+          "explanation": "Przez cały ranek — proces → forma niedokonana."
+        },
+        {
+          "id": "g5-3",
+          "text": "Hurtownia ___ korektę dopiero po trzech dniach.",
+          "answer": "wystawiła",
+          "grammar_point": "aspekt-uzycie",
+          "options": [
+            "wystawiła",
+            "wystawiała"
+          ],
+          "explanation": "Jedna korekta, rezultat → forma dokonana."
+        },
+        {
+          "id": "g5-4",
+          "text": "Pełna księgowość jest ___ od KPiR.",
+          "answer": "bardziej skomplikowana",
+          "grammar_point": "bardziej-mniej",
+          "options": [
+            "bardziej skomplikowana",
+            "więcej skomplikowana"
+          ],
+          "explanation": "Długi przymiotnik → bardziej + przymiotnik."
+        },
+        {
+          "id": "g5-5",
+          "text": "___ więcej faktur, tym więcej pracy w biurze.",
+          "answer": "Im",
+          "grammar_point": "im-tym",
+          "options": [
+            "Im",
+            "Czym"
+          ],
+          "explanation": "Po polsku: im …, tym …"
+        },
+        {
+          "id": "g5-6",
+          "text": "Faktury z KSeF pobiera się ___ niż papierowe.",
+          "answer": "szybciej",
+          "grammar_point": "przyslowki-stopniowanie",
+          "options": [
+            "szybciej",
+            "szybsze",
+            "bardziej szybko"
+          ],
+          "explanation": "Pobiera się jak? → przysłówek: szybciej."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "lesson_id": "pl-ksieg-03-faktura-i-korekta",
+  "exercise_type": "vocab-cards",
+  "title": "Słownictwo: faktura, korekta i terminy",
+  "instruction": "25 słów w czterech grupach. Odwróć kartę, powiedz przykład na głos i oceń: znam / nie znam.",
+  "estimated_minutes": 8,
+  "groups": [
+    "Faktura",
+    "Korekta i KSeF",
+    "Braki i terminy",
+    "Dokumenty klienta"
+  ],
+  "comm_groups": [
+    "Braki i terminy",
+    "Dokumenty klienta"
+  ],
+  "items": [
+    {
+      "id": "v01",
+      "term": "faktura VAT",
+      "group": "Faktura",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Dokument sprzedaży z podatkiem VAT.",
+      "example": "Za naprawę samochodu dostałem fakturę VAT.",
+      "translation_uk": "рахунок-фактура з ПДВ"
+    },
+    {
+      "id": "v02",
+      "term": "sprzedawca",
+      "group": "Faktura",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Firma, która sprzedaje i wystawia fakturę.",
+      "example": "Sprzedawca wysłał towar dzień po zamówieniu.",
+      "translation_uk": "продавець"
+    },
+    {
+      "id": "v03",
+      "term": "nabywca",
+      "group": "Faktura",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Firma albo osoba, która kupuje.",
+      "example": "Nabywca zapłacił za meble przelewem.",
+      "translation_uk": "покупець"
+    },
+    {
+      "id": "v04",
+      "term": "NIP",
+      "group": "Faktura",
+      "part_of_speech": "skrót, m.",
+      "definition": "Numer identyfikacji podatkowej firmy.",
+      "example": "Proszę podać NIP firmy, to wystawię fakturę.",
+      "translation_uk": "податковий номер (≈ ІПН / ЄДРПОУ)"
+    },
+    {
+      "id": "v05",
+      "term": "data wystawienia",
+      "group": "Faktura",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Dzień, w którym wystawiono fakturę.",
+      "example": "Data wystawienia jest w prawym górnym rogu.",
+      "translation_uk": "дата виписки"
+    },
+    {
+      "id": "v06",
+      "term": "data sprzedaży",
+      "group": "Faktura",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Dzień dostawy towaru albo wykonania usługi.",
+      "example": "Data sprzedaży i data wystawienia mogą być różne.",
+      "translation_uk": "дата продажу (поставки)"
+    },
+    {
+      "id": "v07",
+      "term": "kwota netto / brutto",
+      "group": "Faktura",
+      "part_of_speech": "wyrażenie",
+      "definition": "Cena bez VAT / cena z VAT.",
+      "example": "Kwota brutto to kwota netto plus VAT.",
+      "translation_uk": "сума без ПДВ / з ПДВ"
+    },
+    {
+      "id": "v08",
+      "term": "pozycja na fakturze",
+      "group": "Faktura",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Jeden wiersz faktury: towar, ilość, cena.",
+      "example": "Na fakturze za remont jest dwanaście pozycji.",
+      "translation_uk": "позиція (рядок) у фактурі"
+    },
+    {
+      "id": "v09",
+      "term": "faktura korygująca (korekta)",
+      "group": "Korekta i KSeF",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Faktura, która poprawia błąd na wcześniejszej fakturze.",
+      "example": "Sklep wystawił korektę, bo oddałam jedną drukarkę.",
+      "translation_uk": "коригувальна фактура"
+    },
+    {
+      "id": "v10",
+      "term": "faktura pierwotna",
+      "group": "Korekta i KSeF",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Pierwsza faktura, którą poprawia korekta.",
+      "example": "Na korekcie trzeba podać numer faktury pierwotnej.",
+      "translation_uk": "первинна фактура"
+    },
+    {
+      "id": "v11",
+      "term": "nota korygująca",
+      "group": "Korekta i KSeF",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Dokument, którym kiedyś nabywca poprawiał drobne błędy.",
+      "example": "Dawniej nota korygująca poprawiała np. literówkę w adresie.",
+      "translation_uk": "коригувальна нота"
+    },
+    {
+      "id": "v12",
+      "term": "numer KSeF",
+      "group": "Korekta i KSeF",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Numer, który system nadaje każdej e-fakturze.",
+      "example": "Numer KSeF ma trzydzieści pięć znaków.",
+      "translation_uk": "номер у KSeF"
+    },
+    {
+      "id": "v13",
+      "term": "pobrać z systemu",
+      "group": "Korekta i KSeF",
+      "part_of_speech": "czasownik",
+      "definition": "Ściągnąć dokument z programu albo strony.",
+      "example": "Pobrałam wyciąg z systemu banku.",
+      "translation_uk": "завантажити з системи"
+    },
+    {
+      "id": "v14",
+      "term": "przesłać do KSeF",
+      "group": "Korekta i KSeF",
+      "part_of_speech": "czasownik",
+      "definition": "Wysłać fakturę do Krajowego Systemu e-Faktur.",
+      "example": "Program sam przesyła faktury do KSeF.",
+      "translation_uk": "надіслати до KSeF"
+    },
+    {
+      "id": "v15",
+      "term": "brakuje (komu? czego?)",
+      "group": "Braki i terminy",
+      "part_of_speech": "czasownik",
+      "definition": "Czegoś nie ma, a jest potrzebne.",
+      "example": "Brakuje mi jeszcze jednego podpisu.",
+      "translation_uk": "бракує, не вистачає"
+    },
+    {
+      "id": "v16",
+      "term": "brak (+ dopełniacz)",
+      "group": "Braki i terminy",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "To, że czegoś nie ma.",
+      "example": "Brak podpisu to częsty problem w umowach.",
+      "translation_uk": "відсутність"
+    },
+    {
+      "id": "v17",
+      "term": "termin",
+      "group": "Braki i terminy",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Dzień, do którego trzeba coś zrobić.",
+      "example": "Termin płatności mija w piątek.",
+      "translation_uk": "термін"
+    },
+    {
+      "id": "v18",
+      "term": "do końca miesiąca",
+      "group": "Braki i terminy",
+      "part_of_speech": "wyrażenie",
+      "definition": "Najpóźniej w ostatnim dniu miesiąca.",
+      "example": "Raport muszę oddać do końca miesiąca.",
+      "translation_uk": "до кінця місяця"
+    },
+    {
+      "id": "v19",
+      "term": "złożyć deklarację",
+      "group": "Braki i terminy",
+      "part_of_speech": "czasownik",
+      "definition": "Wysłać deklarację do urzędu.",
+      "example": "Złożyłem deklarację przez internet w pięć minut.",
+      "translation_uk": "подати декларацію"
+    },
+    {
+      "id": "v20",
+      "term": "przesłać dokumenty",
+      "group": "Braki i terminy",
+      "part_of_speech": "czasownik",
+      "definition": "Wysłać dokumenty e-mailem albo przez system.",
+      "example": "Proszę przesłać dokumenty w jednym pliku.",
+      "translation_uk": "надіслати документи"
+    },
+    {
+      "id": "v21",
+      "term": "wyciąg bankowy",
+      "group": "Dokumenty klienta",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Lista wpłat i wypłat z konta za okres.",
+      "example": "Bank wysyła wyciąg bankowy na początku miesiąca.",
+      "translation_uk": "банківська виписка"
+    },
+    {
+      "id": "v22",
+      "term": "umowa najmu",
+      "group": "Dokumenty klienta",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Umowa o wynajem mieszkania albo lokalu.",
+      "example": "Umowa najmu jest na dwa lata.",
+      "translation_uk": "договір оренди"
+    },
+    {
+      "id": "v23",
+      "term": "zamówienie",
+      "group": "Dokumenty klienta",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Lista towarów, które klient chce kupić.",
+      "example": "Zamówienie wysłałam e-mailem w poniedziałek.",
+      "translation_uk": "замовлення"
+    },
+    {
+      "id": "v24",
+      "term": "hurtownia",
+      "group": "Dokumenty klienta",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Firma, która sprzedaje towar dużymi partiami.",
+      "example": "Kupujemy papier w hurtowni, bo jest taniej.",
+      "translation_uk": "оптова база, гуртівня"
+    },
+    {
+      "id": "v25",
+      "term": "dostawca",
+      "group": "Dokumenty klienta",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Firma, która dostarcza towar albo usługę.",
+      "example": "Zmieniliśmy dostawcę internetu.",
+      "translation_uk": "постачальник"
+    }
+  ]
+}
