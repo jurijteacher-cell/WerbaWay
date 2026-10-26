@@ -1,0 +1,561 @@
+{
+ "lesson_id": "pl-preg-r3-powtorka",
+ "exercise_type": "fill-in-blank",
+ "title": "Powtórka: zdjęcia, słowa, miejscownik i narzędnik",
+ "instruction": "Sześć bloków. Bloki 1–2 to słowa (ze zdjęciami), bloki 3–6 to gramatyka i tekst. Kliknij odpowiedź i sprawdź.",
+ "estimated_minutes": 25,
+ "blocks": [
+  {
+   "block_id": "g1",
+   "title": "1. Co widać na zdjęciu?",
+   "exercise_type": "fill-in-blank",
+   "instruction": "Popatrz na zdjęcie i wybierz słowo, które pasuje.",
+   "items": [
+    {
+     "id": "g1-1",
+     "text": "Mała śpi w ___, a mama ma wolne ręce.",
+     "options": [
+      "wózku",
+      "nosidle",
+      "gondoli"
+     ],
+     "answer": "nosidle",
+     "image_url": "https://images.unsplash.com/photo-1772463221461-27d45c11e2bf?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Mama nosi niemowlę w nosidle",
+     "image_credit": "Fot. Luiza Braun / Unsplash",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g1-2",
+     "text": "Zimą trudno jechać wózkiem po ośnieżonym ___.",
+     "options": [
+      "chodniku",
+      "przystanku",
+      "podjeździe"
+     ],
+     "answer": "chodniku",
+     "image_url": "https://images.unsplash.com/photo-1706459773588-20591994dca3?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Kobieta z wózkiem na ośnieżonym chodniku",
+     "image_credit": "Fot. Vitalii Khodzinskyi / Unsplash",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g1-3",
+     "text": "Mężczyzna czeka na autobus na ___.",
+     "options": [
+      "przejściu dla pieszych",
+      "przystanku",
+      "chodniku"
+     ],
+     "answer": "przystanku",
+     "image_url": "https://images.unsplash.com/photo-1732630481654-96a4bdeaa1e4?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Mężczyzna czeka pod wiatą przystanku",
+     "image_credit": "Fot. Johnny Ho / Unsplash",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g1-4",
+     "text": "Tata z wózkiem nie ma czasu siedzieć, więc bierze kawę ___.",
+     "options": [
+      "przy oknie",
+      "na wynos",
+      "w gondoli"
+     ],
+     "answer": "na wynos",
+     "image_url": "https://images.unsplash.com/photo-1777464218480-ab26b8617ca4?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Mężczyzna z wózkiem przy ladzie w kawiarni",
+     "image_credit": "Fot. Haberdoedas / Unsplash",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g1-5",
+     "text": "Kiedy babcia zostaje z małą, mama idzie na ___.",
+     "options": [
+      "basen",
+      "przystanek",
+      "wizytę patronażową"
+     ],
+     "answer": "basen",
+     "image_url": "https://images.unsplash.com/photo-1730244548329-4ae2f4fcaa7c?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Kryty basen z niebieską wodą",
+     "image_credit": "Fot. Mariusz Smenzyk / Unsplash",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g1-6",
+     "text": "Specjalistka sprawdza, czy pacjentka ma ___ w barku.",
+     "options": [
+      "bliznę",
+      "napięcie",
+      "skierowanie"
+     ],
+     "answer": "napięcie",
+     "image_url": "https://images.unsplash.com/photo-1645005512968-0c1fe99f0093?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Specjalistka sprawdza bark pacjentki",
+     "image_credit": "Fot. Sincerely Media / Unsplash",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g1-7",
+     "text": "Pacjentka ćwiczy na specjalnym łóżku, a obok stoi ___.",
+     "options": [
+      "kelnerka",
+      "fizjoterapeutka",
+      "położna środowiskowa"
+     ],
+     "answer": "fizjoterapeutka",
+     "image_url": "https://images.unsplash.com/photo-1717500251688-1c369ec2ab44?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Fizjoterapeutka pomaga pacjentce przy ćwiczeniach",
+     "image_credit": "Fot. Ahmet Kurt / Unsplash",
+     "grammar_point": "slownictwo"
+    }
+   ]
+  },
+  {
+   "block_id": "g2",
+   "title": "2. Słowa z dwóch lekcji",
+   "exercise_type": "matching",
+   "instruction": "Kliknij słowo po lewej, potem jego znaczenie po prawej.",
+   "items": [
+    {
+     "id": "g2-1",
+     "left": "próg",
+     "right": "przez niego wózek może nie przejechać",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g2-2",
+     "left": "podjazd",
+     "right": "dzięki niemu wjedziesz do budynku bez schodów",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g2-3",
+     "left": "przewijak",
+     "right": "tu zmieniasz dziecku pieluchę poza domem",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g2-4",
+     "left": "ustąpić miejsca",
+     "right": "wstać, żeby ktoś inny mógł usiąść",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g2-5",
+     "left": "skierowanie",
+     "right": "kartka od lekarza do specjalisty",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g2-6",
+     "left": "mięśnie dna miednicy",
+     "right": "z nimi pracuje fizjoterapeutka po porodzie",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g2-7",
+     "left": "zastąpić",
+     "right": "zająć się czymś zamiast kogoś",
+     "grammar_point": "slownictwo"
+    }
+   ]
+  },
+  {
+   "block_id": "g3",
+   "title": "3. Gdzie? O czym? Miejscownik",
+   "exercise_type": "fill-in-blank",
+   "instruction": "Wybierz formę, która pasuje do zdania.",
+   "items": [
+    {
+     "id": "g3-1",
+     "text": "Mała śpi w ___ i nie słyszy ulicy.",
+     "options": [
+      "gondola",
+      "gondoli",
+      "gondolą"
+     ],
+     "answer": "gondoli",
+     "explanation": "w + miejscownik: gondola → w gondoli.",
+     "grammar_point": "miejscownik"
+    },
+    {
+     "id": "g3-2",
+     "text": "Agata siedzi na ___ i pije kawę.",
+     "options": [
+      "ławce",
+      "ławkie",
+      "ławką"
+     ],
+     "answer": "ławce",
+     "explanation": "Przed -e: k → c. Ławka → na ławce.",
+     "grammar_point": "miejscownik"
+    },
+    {
+     "id": "g3-3",
+     "text": "Czekamy na tramwaj na ___.",
+     "options": [
+      "przystanek",
+      "przystanku",
+      "przystankiem"
+     ],
+     "answer": "przystanku",
+     "explanation": "Po k, g, ch w miejscowniku jest -u: na przystanku.",
+     "grammar_point": "miejscownik"
+    },
+    {
+     "id": "g3-4",
+     "text": "Pokój dla matki z dzieckiem jest na ___ piętrze.",
+     "options": [
+      "drugim",
+      "drugiej",
+      "drugiego"
+     ],
+     "answer": "drugim",
+     "explanation": "Przymiotnik męski i nijaki w miejscowniku: -ym / -im.",
+     "grammar_point": "miejscownik"
+    },
+    {
+     "id": "g3-5",
+     "text": "W ___ mieści się tylko jeden wózek.",
+     "options": [
+      "windie",
+      "windzie",
+      "windą"
+     ],
+     "answer": "windzie",
+     "explanation": "Przed -e: d → dzi. Winda → w windzie.",
+     "grammar_point": "miejscownik"
+    },
+    {
+     "id": "g3-6",
+     "text": "Długo rozmawiałyśmy o ___ i o pracy.",
+     "options": [
+      "dziecko",
+      "dziecku",
+      "dzieckiem"
+     ],
+     "answer": "dziecku",
+     "explanation": "Rozmawiać o kimś / o czym — miejscownik.",
+     "grammar_point": "miejscownik"
+    },
+    {
+     "id": "g3-7",
+     "text": "Zapytałam położną o ___.",
+     "options": [
+      "szczepienie",
+      "szczepieniu",
+      "szczepieniem"
+     ],
+     "answer": "szczepienie",
+     "explanation": "Pytać o coś — biernik. Rozmawiać o czymś — miejscownik.",
+     "grammar_point": "miejscownik"
+    },
+    {
+     "id": "g3-8",
+     "text": "Po ___ mała od razu zasnęła.",
+     "options": [
+      "spacer",
+      "spacerze",
+      "spacerem"
+     ],
+     "answer": "spacerze",
+     "explanation": "Po = potem, kiedy coś się skończyło: po + miejscownik.",
+     "grammar_point": "miejscownik"
+    },
+    {
+     "id": "g3-9",
+     "text": "W ___ na naszym osiedlu nie ma podjazdów.",
+     "options": [
+      "starych sklepach",
+      "starymi sklepami",
+      "starych sklepami"
+     ],
+     "answer": "starych sklepach",
+     "explanation": "Miejscownik liczby mnogiej: -ych + -ach.",
+     "grammar_point": "miejscownik"
+    },
+    {
+     "id": "g3-10",
+     "text": "Moja siostra pracuje ___ poczcie.",
+     "options": [
+      "w",
+      "na",
+      "o"
+     ],
+     "answer": "na",
+     "explanation": "Niektóre instytucje są z na: na poczcie, na dworcu, na uczelni.",
+     "grammar_point": "miejscownik"
+    }
+   ]
+  },
+  {
+   "block_id": "g4",
+   "title": "4. Czym? Z kim? Kim? Narzędnik",
+   "exercise_type": "fill-in-blank",
+   "instruction": "Wybierz formę, która pasuje do zdania.",
+   "items": [
+    {
+     "id": "g4-1",
+     "text": "Do przychodni zawsze jadę ___.",
+     "options": [
+      "autobusem",
+      "autobusie",
+      "autobus"
+     ],
+     "answer": "autobusem",
+     "explanation": "Czym jedziesz? Narzędnik: autobus → autobusem.",
+     "grammar_point": "narzednik"
+    },
+    {
+     "id": "g4-2",
+     "text": "Mama przyjeżdża do nas ___ z drugiego końca miasta.",
+     "options": [
+      "tramwajem",
+      "tramwaju",
+      "tramwajom"
+     ],
+     "answer": "tramwajem",
+     "explanation": "Środek transportu: narzędnik -em.",
+     "grammar_point": "narzednik"
+    },
+    {
+     "id": "g4-3",
+     "text": "Na basenie jestem po prostu ___, nie tylko mamą.",
+     "options": [
+      "pływaczka",
+      "pływaczką",
+      "pływaczce"
+     ],
+     "answer": "pływaczką",
+     "explanation": "Być kimś: po być rola albo zawód w narzędniku.",
+     "grammar_point": "narzednik"
+    },
+    {
+     "id": "g4-4",
+     "text": "To jest ___, która zajmuje się kobietami po porodzie.",
+     "options": [
+      "moja fizjoterapeutka",
+      "moją fizjoterapeutką",
+      "mojej fizjoterapeutce"
+     ],
+     "answer": "moja fizjoterapeutka",
+     "explanation": "Kiedy w zdaniu jest to, mówimy w mianowniku: to jest moja fizjoterapeutka.",
+     "grammar_point": "narzednik"
+    },
+    {
+     "id": "g4-5",
+     "text": "Kiedy mnie nie ma, mama zajmuje się ___.",
+     "options": [
+      "małej",
+      "małą",
+      "mała"
+     ],
+     "answer": "małą",
+     "explanation": "Zajmować się kimś — narzędnik, bez przyimka.",
+     "grammar_point": "narzednik"
+    },
+    {
+     "id": "g4-6",
+     "text": "Siedziałam w kawiarni z ___ z kursu.",
+     "options": [
+      "koleżanką",
+      "koleżanki",
+      "koleżanka"
+     ],
+     "answer": "koleżanką",
+     "explanation": "Z kim? z + narzędnik: z koleżanką.",
+     "grammar_point": "narzednik"
+    },
+    {
+     "id": "g4-7",
+     "text": "Wózek zostawiłam przed ___.",
+     "options": [
+      "gabinecie",
+      "gabinetem",
+      "gabinetu"
+     ],
+     "answer": "gabinetem",
+     "explanation": "Przed + narzędnik, kiedy mówimy, gdzie coś jest.",
+     "grammar_point": "narzednik"
+    },
+    {
+     "id": "g4-8",
+     "text": "W tej kawiarni zawsze siedzą mamy z ___.",
+     "options": [
+      "dzieciami",
+      "dziećmi",
+      "dzieci"
+     ],
+     "answer": "dziećmi",
+     "explanation": "Nieregularna liczba mnoga: z dziećmi, z ludźmi.",
+     "grammar_point": "narzednik"
+    },
+    {
+     "id": "g4-9",
+     "text": "Cieszę się każdą wolną ___.",
+     "options": [
+      "godziną",
+      "godziny",
+      "godzinie"
+     ],
+     "answer": "godziną",
+     "explanation": "Cieszyć się czymś — narzędnik: każdą wolną godziną.",
+     "grammar_point": "narzednik"
+    },
+    {
+     "id": "g4-10",
+     "text": "Wieczorem rozmawiam z mamą ___.",
+     "options": [
+      "po telefonie",
+      "przez telefon",
+      "telefonem"
+     ],
+     "answer": "przez telefon",
+     "explanation": "Kalka z ukraińskiego: по телефону → przez telefon.",
+     "grammar_point": "narzednik"
+    }
+   ]
+  },
+  {
+   "block_id": "g5",
+   "title": "5. Mapa Agaty — prawda czy fałsz?",
+   "exercise_type": "true-false",
+   "instruction": "Wróć do mapy Agaty i zdecyduj.",
+   "items": [
+    {
+     "id": "g5-1",
+     "statement": "Do parku najlepiej wjechać od ulicy Leśnej.",
+     "answer": false,
+     "explanation": "Nie: tam jest wysoki próg. Lepiej bramą przy placu zabaw.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g5-2",
+     "statement": "Do autobusu 17 z wózkiem wsiada się drugimi drzwiami.",
+     "answer": true,
+     "explanation": "Tak: tam jest miejsce na wózek.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g5-3",
+     "statement": "W windzie w galerii mieszczą się dwa wózki.",
+     "answer": false,
+     "explanation": "Nie: w windzie mieści się tylko jeden wózek.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g5-4",
+     "statement": "W kawiarni Agata rozmawiała z koleżanką głównie o pieluchach.",
+     "answer": false,
+     "explanation": "Nie: rozmawiały o wszystkim, tylko nie o pieluchach.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g5-5",
+     "statement": "Podczas wizyty Tomek czekał z wózkiem na korytarzu.",
+     "answer": true,
+     "explanation": "Tak: przed gabinetem są tylko trzy krzesła.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g5-6",
+     "statement": "Fizjoterapeutka pozwala Agacie już robić brzuszki.",
+     "answer": false,
+     "explanation": "Nie: na brzuszki jest jeszcze za wcześnie.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g5-7",
+     "statement": "Kiedy Agata pływa, małą zajmuje się jej babcia.",
+     "answer": true,
+     "explanation": "Tak: przyjeżdża mama Agaty, czyli babcia małej.",
+     "grammar_point": "czytanie"
+    }
+   ]
+  },
+  {
+   "block_id": "g6",
+   "title": "6. Ułóż zdanie",
+   "exercise_type": "sentence-building",
+   "instruction": "Klikaj kawałki w dobrej kolejności.",
+   "items": [
+    {
+     "id": "g6-1",
+     "words": [
+      "tramwajem",
+      "czekam",
+      "na przystanku",
+      "i jadę"
+     ],
+     "answer": "Czekam na przystanku i jadę tramwajem.",
+     "prompt": "Powiedz, gdzie czekasz i czym jedziesz.",
+     "grammar_point": "powtorka"
+    },
+    {
+     "id": "g6-2",
+     "words": [
+      "w kawiarni",
+      "byłam",
+      "z koleżanką"
+     ],
+     "answer": "Byłam z koleżanką w kawiarni.",
+     "accept": [
+      "Byłam w kawiarni z koleżanką.",
+      "Z koleżanką byłam w kawiarni.",
+      "W kawiarni byłam z koleżanką."
+     ],
+     "prompt": "Powiedz, gdzie i z kim byłaś.",
+     "grammar_point": "powtorka"
+    },
+    {
+     "id": "g6-3",
+     "words": [
+      "jestem",
+      "pływaczką",
+      "na basenie"
+     ],
+     "answer": "Na basenie jestem pływaczką.",
+     "accept": [
+      "Jestem pływaczką na basenie."
+     ],
+     "prompt": "Powiedz, kim jesteś na basenie.",
+     "grammar_point": "narzednik"
+    },
+    {
+     "id": "g6-4",
+     "words": [
+      "z Tomkiem",
+      "zostawiłam",
+      "na korytarzu",
+      "wózek"
+     ],
+     "answer": "Zostawiłam wózek z Tomkiem na korytarzu.",
+     "accept": [
+      "Wózek zostawiłam z Tomkiem na korytarzu.",
+      "Zostawiłam wózek na korytarzu z Tomkiem.",
+      "Wózek zostawiłam na korytarzu z Tomkiem."
+     ],
+     "prompt": "Powiedz, gdzie i z kim został wózek.",
+     "grammar_point": "powtorka"
+    },
+    {
+     "id": "g6-5",
+     "words": [
+      "małą",
+      "zajmuje się",
+      "we wtorki",
+      "mama"
+     ],
+     "answer": "We wtorki mama zajmuje się małą.",
+     "accept": [
+      "Mama zajmuje się małą we wtorki.",
+      "Mama we wtorki zajmuje się małą."
+     ],
+     "prompt": "Powiedz, kto i kiedy zajmuje się małą.",
+     "grammar_point": "narzednik"
+    }
+   ]
+  }
+ ]
+}
