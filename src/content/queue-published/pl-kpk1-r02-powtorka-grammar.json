@@ -1,0 +1,710 @@
+{
+  "lesson_id": "pl-kpk1-r02-powtorka",
+  "exercise_type": "fill-in-blank",
+  "title": "Powtórka: lekcje 1–5",
+  "instruction": "Krótkie bloki. Najpierw próbujesz sam / sama, mapa gramatyki jest na stronie lekcji.",
+  "eyebrow": "powtórka",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst Oleny. Zdecyduj: prawda czy fałsz?",
+      "items": [
+        {
+          "id": "t1-1",
+          "statement": "Pani Iwona jest nauczycielką i mówi trochę po ukraińsku.",
+          "answer": true,
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "statement": "Olena wie, ile lat ma pani Iwona.",
+          "answer": false,
+          "explanation": "Olena nie wie i nie pyta — tylko myśli: chyba czterdzieści dwa.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "statement": "Z zawodu Marco jest kucharzem.",
+          "answer": true,
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "statement": "Hanna ma dwadzieścia dziewięć lat.",
+          "answer": false,
+          "explanation": "Hanna ma dziewiętnaście lat. Dwadzieścia dziewięć lat ma Olena.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "statement": "Hanna interesuje się sportem.",
+          "answer": false,
+          "explanation": "Hanna interesuje się historią i literaturą. Sportem interesuje się Marco.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "statement": "Tom lubi mówić, ale nie lubi pisać.",
+          "answer": true,
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-7",
+          "statement": "Olena jest lekarką i już pracuje w Polsce.",
+          "answer": false,
+          "explanation": "Olena jest lekarką, ale w Polsce jeszcze nie pracuje.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "1. Jaki on jest? Przeciwieństwa",
+      "instruction": "Połącz słowo z przeciwieństwem.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "wysoki",
+          "right": "niski",
+          "grammar_point": "opis-osoby"
+        },
+        {
+          "id": "g1-2",
+          "left": "szczupły",
+          "right": "gruby",
+          "grammar_point": "opis-osoby"
+        },
+        {
+          "id": "g1-3",
+          "left": "wesoły",
+          "right": "smutny",
+          "grammar_point": "opis-osoby"
+        },
+        {
+          "id": "g1-4",
+          "left": "pracowity",
+          "right": "leniwy",
+          "grammar_point": "opis-osoby"
+        },
+        {
+          "id": "g1-5",
+          "left": "młody",
+          "right": "stary",
+          "grammar_point": "opis-osoby"
+        },
+        {
+          "id": "g1-6",
+          "left": "zdrowy",
+          "right": "chory",
+          "grammar_point": "opis-osoby"
+        },
+        {
+          "id": "g1-7",
+          "left": "ładny",
+          "right": "brzydki",
+          "grammar_point": "opis-osoby"
+        },
+        {
+          "id": "g1-8",
+          "left": "czysty",
+          "right": "brudny",
+          "grammar_point": "opis-osoby"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Pan i pani: zawody",
+      "instruction": "Wpisz formę żeńską zawodu.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "pan kelner → pani ___",
+          "answer": "kelnerka",
+          "grammar_point": "zawody-forma-zenska"
+        },
+        {
+          "id": "g2-2",
+          "text": "pan dziennikarz → pani ___",
+          "answer": "dziennikarka",
+          "explanation": "-arz → -arka: dziennikarz → dziennikarka.",
+          "grammar_point": "zawody-forma-zenska"
+        },
+        {
+          "id": "g2-3",
+          "text": "pan kucharz → pani ___",
+          "answer": "kucharka",
+          "grammar_point": "zawody-forma-zenska"
+        },
+        {
+          "id": "g2-4",
+          "text": "pan tancerz → pani ___",
+          "answer": "tancerka",
+          "explanation": "-erz → -erka: tancerz → tancerka.",
+          "grammar_point": "zawody-forma-zenska"
+        },
+        {
+          "id": "g2-5",
+          "text": "pan nauczyciel → pani ___",
+          "answer": "nauczycielka",
+          "grammar_point": "zawody-forma-zenska"
+        },
+        {
+          "id": "g2-6",
+          "text": "pan dentysta → pani ___",
+          "answer": "dentystka",
+          "explanation": "Zawód na -a: -a → -ka, jak artysta → artystka.",
+          "grammar_point": "zawody-forma-zenska"
+        },
+        {
+          "id": "g2-7",
+          "text": "pan emeryt → pani ___",
+          "answer": "emerytka",
+          "grammar_point": "zawody-forma-zenska"
+        },
+        {
+          "id": "g2-8",
+          "text": "pan policjant → pani ___",
+          "answer": "policjantka",
+          "grammar_point": "zawody-forma-zenska"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Czasowniki: -m, -sz czy -ę, -isz / -ysz?",
+      "instruction": "Wpisz czasownik z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Czy ty ___ po hiszpańsku? (mówić)",
+          "answer": "mówisz",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g3-2",
+          "text": "Oni nie ___ — i bardzo dobrze! (palić)",
+          "answer": "palą",
+          "explanation": "oni → -ą: palą, mówią, lubią.",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g3-3",
+          "text": "Moja żona świetnie ___ tango. (tańczyć)",
+          "answer": "tańczy",
+          "explanation": "Po cz, sz, rz, ż — -y: tańczysz, tańczy.",
+          "grammar_point": "koniugacja-e-ysz"
+        },
+        {
+          "id": "g3-4",
+          "text": "Wy ___ czytać książki? (lubić)",
+          "answer": "lubicie",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g3-5",
+          "text": "(Ja) ___, że ona ma trzydzieści lat. (myśleć)",
+          "answer": "myślę",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g3-6",
+          "text": "My ___ się polskiego, bo chcemy pracować w Polsce. (uczyć)",
+          "answer": "uczymy",
+          "grammar_point": "koniugacja-e-ysz"
+        },
+        {
+          "id": "g3-7",
+          "text": "Mój syn ___ liczebniki: dwadzieścia, trzydzieści… (ćwiczyć)",
+          "answer": "ćwiczy",
+          "grammar_point": "koniugacja-e-ysz"
+        },
+        {
+          "id": "g3-8",
+          "text": "(My) bardzo ___ się, że jesteś w Krakowie! (cieszyć)",
+          "answer": "cieszymy",
+          "grammar_point": "koniugacja-e-ysz"
+        },
+        {
+          "id": "g3-9",
+          "text": "Państwo Nowak ___ w Krakowie. (mieszkać)",
+          "answer": "mieszkają",
+          "explanation": "Mieszkać ma -m, -sz: mieszkam, mieszkasz… oni mieszkają.",
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "g3-10",
+          "text": "Czy wy ___ dzieci? (mieć)",
+          "answer": "macie",
+          "grammar_point": "koniugacja-m-sz"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. To jest lekarz czy jest lekarzem?",
+      "instruction": "Wybierz dobrą formę: mianownik (kto? co?) czy narzędnik (kim? czym?).",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Mój mąż jest ___.",
+          "options": [
+            "lekarz",
+            "lekarzem"
+          ],
+          "answer": "lekarzem",
+          "explanation": "Jest + kim? → narzędnik: lekarzem.",
+          "grammar_point": "narzednik-mianownik"
+        },
+        {
+          "id": "g4-2",
+          "text": "Kto to jest? — To jest ___.",
+          "options": [
+            "nowy nauczyciel",
+            "nowym nauczycielem"
+          ],
+          "answer": "nowy nauczyciel",
+          "explanation": "To jest + kto? → mianownik, forma bez zmian.",
+          "grammar_point": "narzednik-mianownik"
+        },
+        {
+          "id": "g4-3",
+          "text": "Moja żona jest ___.",
+          "options": [
+            "nauczycielka",
+            "nauczycielką"
+          ],
+          "answer": "nauczycielką",
+          "explanation": "Ona: -a → -ą.",
+          "grammar_point": "narzednik-mianownik"
+        },
+        {
+          "id": "g4-4",
+          "text": "Kim pan jest z zawodu? — Jestem ___.",
+          "options": [
+            "inżynier",
+            "inżynierem"
+          ],
+          "answer": "inżynierem",
+          "explanation": "Jestem + kim? → narzędnik: inżynierem.",
+          "grammar_point": "narzednik-mianownik"
+        },
+        {
+          "id": "g4-5",
+          "text": "Marek to ___.",
+          "options": [
+            "dobry kucharz",
+            "dobrym kucharzem"
+          ],
+          "answer": "dobry kucharz",
+          "explanation": "To (bez „jest”) + mianownik: Marek to dobry kucharz.",
+          "grammar_point": "narzednik-mianownik"
+        },
+        {
+          "id": "g4-6",
+          "text": "Ola jest ___.",
+          "options": [
+            "zdolna studentka",
+            "zdolną studentką",
+            "zdolną studentka"
+          ],
+          "answer": "zdolną studentką",
+          "explanation": "Przymiotnik i rzeczownik razem w narzędniku: -ą … -ą.",
+          "grammar_point": "narzednik-mianownik"
+        },
+        {
+          "id": "g4-7",
+          "text": "Interesuję się ___.",
+          "options": [
+            "muzyka",
+            "muzyką"
+          ],
+          "answer": "muzyką",
+          "explanation": "Interesować się + czym? → narzędnik.",
+          "grammar_point": "narzednik-mianownik"
+        },
+        {
+          "id": "g4-8",
+          "text": "Czym się interesujesz? — ___ fotografią.",
+          "options": [
+            "Interesuję się",
+            "Interesuję",
+            "Lubię"
+          ],
+          "answer": "Interesuję się",
+          "explanation": "Bez „się” to błąd. „Lubię” idzie z bezokolicznikiem: lubię robić zdjęcia.",
+          "grammar_point": "narzednik-mianownik"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "5. To… → jest…",
+      "instruction": "Powiedz to samo inaczej. Wpisz przymiotnik i rzeczownik w dobrej formie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Ewa to miła sekretarka. → Ewa jest ___.",
+          "answer": "miłą sekretarką",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "g5-2",
+          "text": "Pan Tomasz to dobry lekarz. → Pan Tomasz jest ___.",
+          "answer": "dobrym lekarzem",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "g5-3",
+          "text": "Adam to polski dziennikarz. → Adam jest ___.",
+          "answer": "polskim dziennikarzem",
+          "explanation": "Przymiotnik na -ki, -gi: polski → polskim.",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "g5-4",
+          "text": "Piotr to młody informatyk. → Piotr jest ___.",
+          "answer": "młodym informatykiem",
+          "explanation": "Rzeczownik na -k, -g: informatyk → informatykiem.",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "g5-5",
+          "text": "Ola jest ambitną studentką. → Ola to ___.",
+          "answer": "ambitna studentka",
+          "explanation": "Po „to” — mianownik.",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "g5-6",
+          "text": "Marek jest wysokim mężczyzną. → Marek to ___.",
+          "answer": "wysoki mężczyzna",
+          "explanation": "Po „to” — mianownik.",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "g5-7",
+          "text": "Pani Basia to świetna tancerka. → Pani Basia jest ___.",
+          "answer": "świetną tancerką",
+          "grammar_point": "narzednik-przymiotnik"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Ile masz lat? Liczby do 100",
+      "instruction": "Wpisz: rok, lata albo lat. Liczby pisz słowami.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Mój syn ma 4 ___.",
+          "answer": "lata",
+          "explanation": "2, 3, 4 → lata.",
+          "grammar_point": "wiek"
+        },
+        {
+          "id": "g6-2",
+          "text": "Moja mama ma 52 ___.",
+          "answer": "lata",
+          "explanation": "Na końcu 2, 3, 4 (ale nie 12, 13, 14) → lata.",
+          "grammar_point": "wiek"
+        },
+        {
+          "id": "g6-3",
+          "text": "Pani Zofia ma 75 ___.",
+          "answer": "lat",
+          "grammar_point": "wiek"
+        },
+        {
+          "id": "g6-4",
+          "text": "Mój kolega ma 13 ___.",
+          "answer": "lat",
+          "explanation": "12, 13, 14 → zawsze lat.",
+          "grammar_point": "wiek"
+        },
+        {
+          "id": "g6-5",
+          "text": "Tomek ma 21 ___.",
+          "answer": "lat",
+          "explanation": "21 → lat. „Rok” — tylko 1.",
+          "grammar_point": "wiek"
+        },
+        {
+          "id": "g6-6",
+          "text": "Profesor Nowak ma 64 ___.",
+          "answer": "lata",
+          "grammar_point": "wiek"
+        },
+        {
+          "id": "g6-7",
+          "text": "Nasze dziecko ma ___ (1) — jeszcze nie mówi.",
+          "answer": "rok",
+          "accept": [
+            "jeden rok"
+          ],
+          "grammar_point": "wiek"
+        },
+        {
+          "id": "g6-8",
+          "text": "70 + 20 = ___ (słownie)",
+          "answer": "dziewięćdziesiąt",
+          "explanation": "90 = dziewięć + dziesiąt.",
+          "grammar_point": "liczebniki"
+        },
+        {
+          "id": "g6-9",
+          "text": "48 = ___ (słownie)",
+          "answer": "czterdzieści osiem",
+          "explanation": "40 = czterdzieści (jak 20, 30: -dzieści).",
+          "grammar_point": "liczebniki"
+        },
+        {
+          "id": "g6-10",
+          "text": "Mam ___ lat. (35, słownie)",
+          "answer": "trzydzieści pięć",
+          "grammar_point": "liczebniki"
+        },
+        {
+          "id": "g6-11",
+          "text": "100 − 33 = ___ (słownie)",
+          "answer": "sześćdziesiąt siedem",
+          "grammar_point": "liczebniki"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "7. Ułóż pytanie",
+      "instruction": "Klikaj słowa po kolei i ułóż pytanie.",
+      "items": [
+        {
+          "id": "g7-1",
+          "words": [
+            "lat",
+            "ile",
+            "masz"
+          ],
+          "answer": "Ile masz lat?",
+          "grammar_point": "pytania"
+        },
+        {
+          "id": "g7-2",
+          "words": [
+            "się",
+            "czym",
+            "interesujesz"
+          ],
+          "answer": "Czym się interesujesz?",
+          "grammar_point": "pytania"
+        },
+        {
+          "id": "g7-3",
+          "words": [
+            "z zawodu",
+            "pan",
+            "jest",
+            "kim"
+          ],
+          "answer": "Kim pan jest z zawodu?",
+          "accept": [
+            "Kim jest pan z zawodu?"
+          ],
+          "grammar_point": "pytania"
+        },
+        {
+          "id": "g7-4",
+          "words": [
+            "myślisz,",
+            "ile",
+            "jak",
+            "on",
+            "ma",
+            "lat"
+          ],
+          "answer": "Jak myślisz, ile on ma lat?",
+          "accept": [
+            "Jak myślisz ile on ma lat?",
+            "Jak myślisz, ile ma on lat?"
+          ],
+          "grammar_point": "pytania"
+        },
+        {
+          "id": "g7-5",
+          "words": [
+            "robić",
+            "lubisz",
+            "co"
+          ],
+          "answer": "Co lubisz robić?",
+          "grammar_point": "pytania"
+        },
+        {
+          "id": "g7-6",
+          "words": [
+            "mówisz",
+            "czy",
+            "po",
+            "polsku"
+          ],
+          "answer": "Czy mówisz po polsku?",
+          "accept": [
+            "Czy po polsku mówisz?"
+          ],
+          "grammar_point": "pytania"
+        },
+        {
+          "id": "g7-7",
+          "words": [
+            "jest",
+            "żona",
+            "twoja",
+            "kim"
+          ],
+          "answer": "Kim jest twoja żona?",
+          "accept": [
+            "Kim twoja żona jest?"
+          ],
+          "grammar_point": "pytania"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "8. Pułapki z ukraińskiego",
+      "instruction": "Każde zdanie ma jeden błąd. Napisz je poprawnie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "prompt": "Mi jest dwadzieścia lat.",
+          "answer": "Mam dwadzieścia lat.",
+          "explanation": "Po polsku wiek „mamy”: Mam… lat.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-2",
+          "prompt": "Mam dwadzieścia dwa lat.",
+          "answer": "Mam dwadzieścia dwa lata.",
+          "explanation": "Na końcu 2, 3, 4 → lata.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-3",
+          "prompt": "Jestem lekarz.",
+          "answer": "Jestem lekarzem.",
+          "accept": [
+            "Z zawodu jestem lekarzem.",
+            "Jestem lekarką."
+          ],
+          "explanation": "Jestem + kim? → narzędnik.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-4",
+          "prompt": "Interesuję muzyką.",
+          "answer": "Interesuję się muzyką.",
+          "explanation": "Interesować SIĘ czym — jak „цікавлюся”.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-5",
+          "prompt": "Dobrze mówię polską.",
+          "answer": "Dobrze mówię po polsku.",
+          "accept": [
+            "Mówię dobrze po polsku.",
+            "Mówię po polsku dobrze."
+          ],
+          "explanation": "Mówić PO + -u: po polsku, po ukraińsku.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-6",
+          "prompt": "Moja żona jest bardzo przystojna.",
+          "answer": "Moja żona jest bardzo ładna.",
+          "accept": [
+            "Moja żona jest bardzo piękna."
+          ],
+          "explanation": "Przystojny — o mężczyźnie. O kobiecie: ładna, piękna.",
+          "grammar_point": "kalki-uk"
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 2,
+      "exercise_type": "drag-and-drop",
+      "title": "9. Wszystko razem: nowy kolega Toma",
+      "instruction": "Tom pisze o nowym koledze. Przeciągnij dobre słowo do luki. Połowa słów w banku jest niepotrzebna.",
+      "bank": [
+        "informatykiem",
+        "informatyk",
+        "lata",
+        "lat",
+        "sportem",
+        "sport",
+        "mówi",
+        "mówisz",
+        "miłym",
+        "miły",
+        "lubisz",
+        "lubi"
+      ],
+      "items": [
+        {
+          "id": "g9-1",
+          "text": "To jest Piotr, mój nowy kolega z pracy. Z zawodu jest ___.",
+          "answer": "informatykiem",
+          "grammar_point": "narzednik-mianownik"
+        },
+        {
+          "id": "g9-2",
+          "text": "Ma trzydzieści cztery ___ i mieszka w Krakowie.",
+          "answer": "lata",
+          "grammar_point": "wiek"
+        },
+        {
+          "id": "g9-3",
+          "text": "Interesuje się ___ i gra w tenisa.",
+          "answer": "sportem",
+          "grammar_point": "narzednik-mianownik"
+        },
+        {
+          "id": "g9-4",
+          "text": "Piotr bardzo dobrze ___ po angielsku i trochę po ukraińsku.",
+          "answer": "mówi",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g9-5",
+          "text": "Myślę, że jest bardzo ___ kolegą.",
+          "answer": "miłym",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "g9-6",
+          "text": "A ty, Olena? Czy ty też ___ grać w tenisa?",
+          "answer": "lubisz",
+          "grammar_point": "koniugacja-e-isz"
+        }
+      ]
+    }
+  ]
+}

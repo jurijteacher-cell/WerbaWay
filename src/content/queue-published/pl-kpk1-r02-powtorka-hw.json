@@ -1,0 +1,175 @@
+{
+  "lesson_id": "pl-kpk1-r02-powtorka",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: powtórka lekcji 1–5",
+  "instruction": "Trzy bloki: rozmowa, formy i wiadomość od Kasi.",
+  "instruction_uk": "Три блоки: розмова, форми і повідомлення від Касі.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "matching",
+      "title": "1. Pytanie i odpowiedź",
+      "instruction": "Połącz pytanie z odpowiedzią.",
+      "instruction_uk": "З'єднай питання з відповіддю.",
+      "items": [
+        {
+          "id": "h1-1",
+          "left": "Ile lat ma twoja córka?",
+          "right": "Sześć. Idzie do szkoły.",
+          "grammar_point": "dialog"
+        },
+        {
+          "id": "h1-2",
+          "left": "Kim jest twój mąż z zawodu?",
+          "right": "Jest policjantem.",
+          "grammar_point": "dialog"
+        },
+        {
+          "id": "h1-3",
+          "left": "Czym się interesuje twój syn?",
+          "right": "Piłką nożną i boksem.",
+          "grammar_point": "dialog"
+        },
+        {
+          "id": "h1-4",
+          "left": "Jaki jest twój nowy kolega?",
+          "right": "Wysoki i bardzo wesoły.",
+          "grammar_point": "dialog"
+        },
+        {
+          "id": "h1-5",
+          "left": "Jakie języki znasz?",
+          "right": "Ukraiński, polski i trochę angielski.",
+          "grammar_point": "dialog"
+        },
+        {
+          "id": "h1-6",
+          "left": "Co lubisz robić?",
+          "right": "Lubię tańczyć i grać w tenisa.",
+          "grammar_point": "dialog"
+        },
+        {
+          "id": "h1-7",
+          "left": "Jak myślisz, ile ona ma lat?",
+          "right": "Nie wiem. Chyba czterdzieści.",
+          "grammar_point": "dialog"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Dobra forma",
+      "instruction": "Wpisz słowo z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Czy ty już ___ pracę? (kończyć)",
+          "answer": "kończysz",
+          "grammar_point": "koniugacja-e-ysz"
+        },
+        {
+          "id": "h2-2",
+          "text": "Oni bardzo ładnie ___ po polsku. (mówić)",
+          "answer": "mówią",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "h2-3",
+          "text": "Moja córka ___ się w szkole muzycznej. (uczyć)",
+          "answer": "uczy",
+          "grammar_point": "koniugacja-e-ysz"
+        },
+        {
+          "id": "h2-4",
+          "text": "Moja mama jest ___. (emerytka)",
+          "answer": "emerytką",
+          "grammar_point": "narzednik-mianownik"
+        },
+        {
+          "id": "h2-5",
+          "text": "Jan jest ___. (młody aktor)",
+          "answer": "młodym aktorem",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "h2-6",
+          "text": "Mój mąż interesuje się ___. (polityka)",
+          "answer": "polityką",
+          "grammar_point": "narzednik-mianownik"
+        },
+        {
+          "id": "h2-7",
+          "text": "Pani Anna ma 62 ___.",
+          "answer": "lata",
+          "grammar_point": "wiek"
+        },
+        {
+          "id": "h2-8",
+          "text": "Nasz syn ma 15 ___.",
+          "answer": "lat",
+          "grammar_point": "wiek"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "drag-and-drop",
+      "title": "3. Wiadomość od Kasi",
+      "instruction": "Kasia pisze o nowym nauczycielu gitary. Przeciągnij dobre słowo do luki. Połowa słów jest niepotrzebna.",
+      "bank": [
+        "muzykiem",
+        "muzyk",
+        "lat",
+        "lata",
+        "wysoki",
+        "wysokim",
+        "świetnym",
+        "świetny",
+        "mówimy",
+        "mówicie",
+        "interesujesz",
+        "interesuje"
+      ],
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Cześć! Mój nowy nauczyciel gitary nazywa się Leon. Z zawodu jest ___.",
+          "answer": "muzykiem",
+          "grammar_point": "narzednik-mianownik"
+        },
+        {
+          "id": "h3-2",
+          "text": "Ma dwadzieścia dziewięć ___.",
+          "answer": "lat",
+          "grammar_point": "wiek"
+        },
+        {
+          "id": "h3-3",
+          "text": "Jest ___ i bardzo wysportowany.",
+          "answer": "wysoki",
+          "grammar_point": "narzednik-mianownik"
+        },
+        {
+          "id": "h3-4",
+          "text": "Myślę, że on jest ___ nauczycielem.",
+          "answer": "świetnym",
+          "grammar_point": "narzednik-przymiotnik"
+        },
+        {
+          "id": "h3-5",
+          "text": "Na lekcji ___ tylko po polsku, bo Leon nie zna ukraińskiego.",
+          "answer": "mówimy",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "h3-6",
+          "text": "A ty? Czy ty też ___ się muzyką?",
+          "answer": "interesujesz",
+          "grammar_point": "koniugacja-chunk"
+        }
+      ]
+    }
+  ]
+}
