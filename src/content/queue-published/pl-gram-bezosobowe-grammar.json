@@ -1,0 +1,722 @@
+{
+  "lesson_id": "pl-gram-bezosobowe",
+  "exercise_type": "fill-in-blank",
+  "title": "Konstrukcje bezosobowe: -no / -to, się, można, trzeba",
+  "instruction": "Najpierw tekst, potem dwie części gramatyki — po każdej ćwiczenia.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "g0",
+      "part": 1,
+      "exercise_type": "true-false",
+      "title": "0. Na start: co wiemy z tekstu?",
+      "instruction": "Prawda czy fałsz? Uważaj: tekst często nie mówi, kto coś zrobił.",
+      "items": [
+        {
+          "id": "g0-1",
+          "statement": "Tekst mówi, kto zaprosił narratora na imieniny.",
+          "answer": false,
+          "explanation": "„Zaproszono mnie” — forma na -no nie mówi, kto to zrobił.",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g0-2",
+          "statement": "Kolega radził przynieść kwiaty albo coś słodkiego.",
+          "answer": true,
+          "explanation": "„Kwiaty albo coś słodkiego. Z pustymi rękami nie wypada przyjść.”",
+          "grammar_point": "bezosobowe-sie"
+        },
+        {
+          "id": "g0-3",
+          "statement": "Kiedy narrator przyszedł, w kuchni nikt już nie gotował.",
+          "answer": false,
+          "explanation": "„W kuchni wciąż coś gotowano.”",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g0-4",
+          "statement": "Według narratora gości w Polsce pyta się, czy są głodni.",
+          "answer": false,
+          "explanation": "„Tu się nie pyta, czy jesteś głodny, tu się po prostu nakłada.”",
+          "grammar_point": "bezosobowe-sie"
+        },
+        {
+          "id": "g0-5",
+          "statement": "„Sto lat” śpiewa się nie tylko na imieninach.",
+          "answer": true,
+          "explanation": "„Śpiewa się tę piosenkę prawie przy każdej okazji.”",
+          "grammar_point": "bezosobowe-sie"
+        },
+        {
+          "id": "g0-6",
+          "statement": "Narrator wyszedł wcześnie, bo był zmęczony.",
+          "answer": false,
+          "explanation": "„Nie dało się wyjść wcześniej” — ciągle ktoś dolewał herbaty.",
+          "grammar_point": "modalne"
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Forma na -no / -to",
+      "instruction": "Wybierz poprawną formę. Pomyśl najpierw o imiesłowie: zrobiony → zrobiono.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Wczoraj w biurze ___ (zrobić) generalne porządki.",
+          "options": [
+            "zrobiło",
+            "zrobiono",
+            "zrobione"
+          ],
+          "answer": "zrobiono",
+          "explanation": "zrobiony → zrobiono. Bez podmiotu nie ma formy „zrobiło”.",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g1-2",
+          "text": "O dziewiątej ___ (podać) tort.",
+          "options": [
+            "podano",
+            "podane",
+            "podało"
+          ],
+          "answer": "podano",
+          "explanation": "podany → podano.",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g1-3",
+          "text": "Sklep ___ (zamknąć) wcześniej z powodu awarii.",
+          "options": [
+            "zamkniono",
+            "zamknęło",
+            "zamknięto"
+          ],
+          "answer": "zamknięto",
+          "explanation": "zamknięty → zamknięto: -ty daje -to.",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g1-4",
+          "text": "Do sali ___ (przynieść) dodatkowe krzesła.",
+          "options": [
+            "przyniesiono",
+            "przyniosono"
+          ],
+          "answer": "przyniesiono",
+          "explanation": "przyniesiony → przyniesiono (o → e jak w imiesłowie).",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g1-5",
+          "text": "Moich kluczy nie ___ (znaleźć) do dziś.",
+          "options": [
+            "znalazło",
+            "znaleziono",
+            "znaleźono"
+          ],
+          "answer": "znaleziono",
+          "explanation": "znaleziony → znaleziono.",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g1-6",
+          "text": "O mnie całkiem ___ (zapomnieć)!",
+          "options": [
+            "zapomniano",
+            "zapomnięto"
+          ],
+          "answer": "zapomniano",
+          "explanation": "zapomniany → zapomniano.",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g1-7",
+          "text": "Do samochodu ___ (wziąć) tylko jedną walizkę.",
+          "options": [
+            "wziąto",
+            "wzięło",
+            "wzięto"
+          ],
+          "answer": "wzięto",
+          "explanation": "wzięty → wzięto.",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g1-8",
+          "text": "Wszystkie ciasta ___ (zjeść) w godzinę.",
+          "options": [
+            "zjedzono",
+            "zjedziono"
+          ],
+          "answer": "zjedzono",
+          "explanation": "zjedzony → zjedzono.",
+          "grammar_point": "bezosobowe-no-to"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Biernik czy dopełniacz?",
+      "instruction": "Wpisz wyraz z nawiasu w dobrej formie. Po -no / -to jest biernik, po „nie” — dopełniacz.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Otwarto ___ (nowa szkoła).",
+          "answer": "nową szkołę",
+          "explanation": "Biernik, jak w zdaniu „Otworzyli nową szkołę”.",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g2-2",
+          "text": "Zaproszono ___ (wszyscy sąsiedzi).",
+          "answer": "wszystkich sąsiadów",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g2-3",
+          "text": "Nie znaleziono ___ (moje klucze).",
+          "answer": "moich kluczy",
+          "explanation": "Przeczenie: dopełniacz.",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g2-4",
+          "text": "Podano ___ (zupa pomidorowa).",
+          "answer": "zupę pomidorową",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g2-5",
+          "text": "Nie zaproszono ___ (Marta).",
+          "answer": "Marty",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g2-6",
+          "text": "Wybrano ___ (nowy prezes).",
+          "answer": "nowego prezesa",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g2-7",
+          "text": "Nie sprzedano ___ (ani jeden bilet).",
+          "answer": "ani jednego biletu",
+          "grammar_point": "bezosobowe-no-to"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "3. Bez wykonawcy",
+      "instruction": "Napisz to samo zdanie z formą na -no / -to. Uważaj na przypadek rzeczownika.",
+      "items": [
+        {
+          "id": "g3-1",
+          "prompt": "Most został zbudowany w 1910 roku.",
+          "answer": "Most zbudowano w 1910 roku.",
+          "accept": [
+            "Zbudowano most w 1910 roku.",
+            "W 1910 roku zbudowano most."
+          ],
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g3-2",
+          "prompt": "Wczoraj zamknęli dworzec.",
+          "answer": "Wczoraj zamknięto dworzec.",
+          "accept": [
+            "Dworzec zamknięto wczoraj.",
+            "Wczoraj dworzec zamknięto."
+          ],
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g3-3",
+          "prompt": "Goście zostali zaproszeni na siódmą.",
+          "answer": "Gości zaproszono na siódmą.",
+          "accept": [
+            "Zaproszono gości na siódmą.",
+            "Na siódmą zaproszono gości."
+          ],
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g3-4",
+          "prompt": "Ta decyzja została podjęta w piątek.",
+          "answer": "Tę decyzję podjęto w piątek.",
+          "accept": [
+            "Decyzję podjęto w piątek.",
+            "W piątek podjęto tę decyzję.",
+            "Podjęto tę decyzję w piątek."
+          ],
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g3-5",
+          "prompt": "Nie znaleźli dokumentów.",
+          "answer": "Nie znaleziono dokumentów.",
+          "accept": [
+            "Dokumentów nie znaleziono."
+          ],
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g3-6",
+          "prompt": "Szkoła została wyremontowana latem.",
+          "answer": "Szkołę wyremontowano latem.",
+          "accept": [
+            "Latem wyremontowano szkołę.",
+            "Wyremontowano szkołę latem."
+          ],
+          "grammar_point": "bezosobowe-no-to"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Kto jest ważny?",
+      "instruction": "Wybierz konstrukcję, która pasuje do zdania.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Ten obraz ___ przez Matejkę.",
+          "options": [
+            "namalowano",
+            "został namalowany"
+          ],
+          "answer": "został namalowany",
+          "explanation": "Jest wykonawca z „przez” — tylko strona bierna.",
+          "grammar_point": "bierna-byc-zostac"
+        },
+        {
+          "id": "g4-2",
+          "text": "W naszym mieście ___ nowy basen.",
+          "options": [
+            "otwarto",
+            "otwarty"
+          ],
+          "answer": "otwarto",
+          "explanation": "Samo „otwarty” bez czasownika to kalka z rosyjskiego nagłówka.",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g4-3",
+          "text": "Teraz w centrum ___ nowy parking.",
+          "options": [
+            "zbudowano",
+            "budują"
+          ],
+          "answer": "budują",
+          "explanation": "„Teraz” — czas teraźniejszy. Forma na -no mówi tylko o przeszłości.",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g4-4",
+          "text": "Złodziej ___ przez policję po tygodniu.",
+          "options": [
+            "został złapany",
+            "złapano"
+          ],
+          "answer": "został złapany",
+          "explanation": "Podmiot w mianowniku i „przez” — strona bierna.",
+          "grammar_point": "bierna-byc-zostac"
+        },
+        {
+          "id": "g4-5",
+          "text": "Kiedy przyszedłem, w kuchni jeszcze ___.",
+          "options": [
+            "gotowało",
+            "gotowano"
+          ],
+          "answer": "gotowano",
+          "explanation": "Bez podmiotu: gotowano.",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g4-6",
+          "text": "Podobno w przyszłym roku ___ ceny biletów.",
+          "options": [
+            "podniosą",
+            "podniesiono"
+          ],
+          "answer": "podniosą",
+          "explanation": "Przyszłość: 3. osoba liczby mnogiej, nie forma na -no.",
+          "grammar_point": "bezosobowe-no-to"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Jak się to robi?",
+      "instruction": "Wpisz czasownik z „się” w dobrym czasie: teraz, kiedyś albo w przyszłości.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "W wielu polskich domach obiad ___ (jeść) po pracy.",
+          "answer": "je się",
+          "accept": [
+            "się je"
+          ],
+          "grammar_point": "bezosobowe-sie"
+        },
+        {
+          "id": "g5-2",
+          "text": "Jak ___ (mówić) po polsku „спасибо”?",
+          "answer": "się mówi",
+          "accept": [
+            "mówi się"
+          ],
+          "grammar_point": "bezosobowe-sie"
+        },
+        {
+          "id": "g5-3",
+          "text": "Kiedyś listy ___ (pisać) ręcznie.",
+          "answer": "pisało się",
+          "accept": [
+            "się pisało"
+          ],
+          "explanation": "Przeszłość: 3. osoba, rodzaj nijaki + się.",
+          "grammar_point": "bezosobowe-sie"
+        },
+        {
+          "id": "g5-4",
+          "text": "W tej restauracji nie ___ (płacić) kartą.",
+          "answer": "płaci się",
+          "grammar_point": "bezosobowe-sie"
+        },
+        {
+          "id": "g5-5",
+          "text": "Na imieniny ___ (przynosić) kwiaty albo coś słodkiego.",
+          "answer": "przynosi się",
+          "accept": [
+            "się przynosi"
+          ],
+          "grammar_point": "bezosobowe-sie"
+        },
+        {
+          "id": "g5-6",
+          "text": "Za czasów moich dziadków do szkoły ___ (chodzić) pieszo.",
+          "answer": "chodziło się",
+          "accept": [
+            "się chodziło"
+          ],
+          "grammar_point": "bezosobowe-sie"
+        },
+        {
+          "id": "g5-7",
+          "text": "Za dwadzieścia lat do pracy ___ (jeździć) samochodami bez kierowcy.",
+          "answer": "będzie się jeździć",
+          "accept": [
+            "będzie się jeździło",
+            "się będzie jeździć",
+            "się będzie jeździło"
+          ],
+          "grammar_point": "bezosobowe-sie"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Nie wolno, nie da się czy nie trzeba?",
+      "instruction": "Zakaz, niemożliwość czy brak obowiązku? Wpisz: nie wolno, nie da się albo nie trzeba.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "W pociągu ___ palić.",
+          "answer": "nie wolno",
+          "accept": [
+            "nie można"
+          ],
+          "explanation": "Zakaz.",
+          "grammar_point": "modalne"
+        },
+        {
+          "id": "g6-2",
+          "text": "Ten telefon jest za stary, ___ go naprawić.",
+          "answer": "nie da się",
+          "accept": [
+            "nie można"
+          ],
+          "explanation": "Niemożliwe.",
+          "grammar_point": "modalne"
+        },
+        {
+          "id": "g6-3",
+          "text": "Bilet kupiłem online, ___ go drukować.",
+          "answer": "nie trzeba",
+          "explanation": "Nie ma takiego obowiązku.",
+          "grammar_point": "modalne"
+        },
+        {
+          "id": "g6-4",
+          "text": "Tego okna ___ otworzyć — jest zablokowane.",
+          "answer": "nie da się",
+          "accept": [
+            "nie można"
+          ],
+          "explanation": "Niemożliwe fizycznie.",
+          "grammar_point": "modalne"
+        },
+        {
+          "id": "g6-5",
+          "text": "Na egzaminie ___ korzystać z telefonu.",
+          "answer": "nie wolno",
+          "accept": [
+            "nie można"
+          ],
+          "explanation": "Zakaz.",
+          "grammar_point": "modalne"
+        },
+        {
+          "id": "g6-6",
+          "text": "Jutro jest niedziela, ___ wstawać wcześnie.",
+          "answer": "nie trzeba",
+          "explanation": "Nie ma obowiązku.",
+          "grammar_point": "modalne"
+        },
+        {
+          "id": "g6-7",
+          "text": "Przy tym hałasie ___ skupić.",
+          "answer": "nie da się",
+          "explanation": "Skupić się → nie da się skupić: zostaje jedno „się”. Ale: nie można się skupić.",
+          "grammar_point": "modalne"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Kiedyś i potem",
+      "instruction": "Wpisz słowo z nawiasu w przeszłości albo w przyszłości.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Wczoraj ___ (trzeba) czekać godzinę na autobus.",
+          "answer": "trzeba było",
+          "accept": [
+            "było trzeba"
+          ],
+          "grammar_point": "modalne"
+        },
+        {
+          "id": "g7-2",
+          "text": "Po remoncie ___ (można) parkować przed blokiem.",
+          "answer": "będzie można",
+          "accept": [
+            "można będzie"
+          ],
+          "grammar_point": "modalne"
+        },
+        {
+          "id": "g7-3",
+          "text": "Drzwi były zamknięte i ___ (nie da się) wejść.",
+          "answer": "nie dało się",
+          "grammar_point": "modalne"
+        },
+        {
+          "id": "g7-4",
+          "text": "Kiedyś w samolotach ___ (wolno) palić.",
+          "answer": "wolno było",
+          "accept": [
+            "było wolno"
+          ],
+          "grammar_point": "modalne"
+        },
+        {
+          "id": "g7-5",
+          "text": "Jutro ___ (trzeba) wstać o piątej.",
+          "answer": "trzeba będzie",
+          "accept": [
+            "będzie trzeba"
+          ],
+          "grammar_point": "modalne"
+        },
+        {
+          "id": "g7-6",
+          "text": "W czasie burzy ___ (nie można) wyjść z domu.",
+          "answer": "nie można było",
+          "accept": [
+            "nie było można"
+          ],
+          "grammar_point": "modalne"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "8. Popraw kalkę z rosyjskiego",
+      "instruction": "Każde zdanie ma jeden błąd. Napisz je poprawnie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "prompt": "Było zdecydowane przenieść spotkanie.",
+          "answer": "Zdecydowano przenieść spotkanie.",
+          "accept": [
+            "Postanowiono przenieść spotkanie.",
+            "Spotkanie postanowiono przenieść.",
+            "Spotkanie zdecydowano przenieść."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g8-2",
+          "prompt": "Mnie zostało powiedziane czekać.",
+          "answer": "Kazano mi czekać.",
+          "accept": [
+            "Kazali mi czekać.",
+            "Powiedziano mi, żebym czekał.",
+            "Powiedziano mi żebym czekał.",
+            "Powiedzieli mi, żebym czekał.",
+            "Powiedzieli mi żebym czekał.",
+            "Powiedziano mi, żebym czekała.",
+            "Powiedzieli mi, żebym czekała."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g8-3",
+          "prompt": "Otwarto nowa biblioteka.",
+          "answer": "Otwarto nową bibliotekę.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g8-4",
+          "prompt": "Tego zamka nie wolno naprawić, jest za stary.",
+          "answer": "Tego zamka nie da się naprawić, jest za stary.",
+          "accept": [
+            "Tego zamka nie da się naprawić jest za stary.",
+            "Tego zamka nie można naprawić, jest za stary.",
+            "Tego zamka nie można naprawić jest za stary."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g8-5",
+          "prompt": "Zbudowano ten dom przez naszą firmę.",
+          "answer": "Ten dom został zbudowany przez naszą firmę.",
+          "accept": [
+            "Nasza firma zbudowała ten dom.",
+            "Dom został zbudowany przez naszą firmę."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g8-6",
+          "prompt": "Oni mówią, że zima będzie ciepła.",
+          "answer": "Mówią, że zima będzie ciepła.",
+          "accept": [
+            "Mówią że zima będzie ciepła.",
+            "Mówi się, że zima będzie ciepła.",
+            "Mówi się że zima będzie ciepła."
+          ],
+          "grammar_point": "kalki-ru"
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "9. Wszystko razem",
+      "instruction": "Wybierz konstrukcję, która pasuje do znaczenia i do czasu.",
+      "items": [
+        {
+          "id": "g9-1",
+          "text": "W Polsce na powitanie zwykle ___ sobie rękę.",
+          "options": [
+            "podano",
+            "podaje się",
+            "zostało podane"
+          ],
+          "answer": "podaje się",
+          "explanation": "Zwyczaj, teraz: się.",
+          "grammar_point": "bezosobowe-sie"
+        },
+        {
+          "id": "g9-2",
+          "text": "Gdzie ___ bilety na koncert?",
+          "options": [
+            "kupuje się",
+            "kupują się"
+          ],
+          "answer": "kupuje się",
+          "explanation": "Konstrukcja bezosobowa: czasownik w 3. osobie liczby pojedynczej.",
+          "grammar_point": "bezosobowe-sie"
+        },
+        {
+          "id": "g9-3",
+          "text": "Wczoraj na zebraniu ___ nowego kierownika.",
+          "options": [
+            "wybrany",
+            "wybrało się",
+            "wybrano"
+          ],
+          "answer": "wybrano",
+          "explanation": "Przeszłość, bez wykonawcy, biernik: wybrano nowego kierownika.",
+          "grammar_point": "bezosobowe-no-to"
+        },
+        {
+          "id": "g9-4",
+          "text": "Tu ___ parkować, to miejsce dla karetki.",
+          "options": [
+            "nie da się",
+            "nie wolno"
+          ],
+          "answer": "nie wolno",
+          "explanation": "Zakaz.",
+          "grammar_point": "modalne"
+        },
+        {
+          "id": "g9-5",
+          "text": "Spotkanie ___ przez dyrektora.",
+          "options": [
+            "odwołano",
+            "zostało odwołane"
+          ],
+          "answer": "zostało odwołane",
+          "explanation": "Jest „przez” — strona bierna.",
+          "grammar_point": "bierna-byc-zostac"
+        },
+        {
+          "id": "g9-6",
+          "text": "Kiedyś ___ więcej czasu z sąsiadami.",
+          "options": [
+            "spędzało",
+            "spędzało się"
+          ],
+          "answer": "spędzało się",
+          "explanation": "Bez podmiotu potrzebne „się” (albo: spędzano).",
+          "grammar_point": "bezosobowe-sie"
+        },
+        {
+          "id": "g9-7",
+          "text": "Żeby wejść do budynku, ___ pokazać przepustkę.",
+          "options": [
+            "należy",
+            "należy się"
+          ],
+          "answer": "należy",
+          "explanation": "Należy + bezokolicznik = trzeba. „Należy się” znaczy coś innego: komuś się coś należy.",
+          "grammar_point": "modalne"
+        }
+      ]
+    }
+  ]
+}
