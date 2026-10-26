@@ -1,0 +1,352 @@
+{
+  "lesson_id": "pl-a2-mow-05-mieszkanie",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: gdzie to jest?",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "exercise_type": "matching",
+      "title": "1. Słowa o mieszkaniu",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "kawalerka",
+          "right": "mieszkanie z jednym pokojem",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "kaucja",
+          "right": "pieniądze na początku, które wracają, kiedy się wyprowadzasz",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "parter",
+          "right": "poziom domu na wysokości ulicy",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "winda",
+          "right": "dzięki niej nie musisz chodzić po schodach",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "zmywarka",
+          "right": "sprzęt, który myje talerze",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "przedpokój",
+          "right": "pierwsze miejsce za drzwiami wejściowymi",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Gdzie to jest? Miejscownik",
+      "instruction": "Wpisz słowo z nawiasu w miejscowniku.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Ręczniki są w ___ (łazienka).",
+          "answer": "łazience",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "k → c: łazienka → w łazience."
+        },
+        {
+          "id": "g2-2",
+          "text": "Klucze leżą na ___ (półka) w przedpokoju.",
+          "answer": "półce",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "k → c: półka → na półce."
+        },
+        {
+          "id": "g2-3",
+          "text": "Zimą rower stoi w ___ (piwnica).",
+          "answer": "piwnicy",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "Słowa na -ca mają -y: piwnica → w piwnicy, ulica → na ulicy."
+        },
+        {
+          "id": "g2-4",
+          "text": "Kot znowu śpi na ___ (szafa)!",
+          "answer": "szafie",
+          "grammar_point": "miejscownik-miejsce"
+        },
+        {
+          "id": "g2-5",
+          "text": "Mój laptop jest na ___ (biurko).",
+          "answer": "biurku",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "Po k → -u: biurko → na biurku, blok → w bloku."
+        },
+        {
+          "id": "g2-6",
+          "text": "Babcia czyta gazetę na ___ (balkon).",
+          "answer": "balkonie",
+          "grammar_point": "miejscownik-miejsce"
+        },
+        {
+          "id": "g2-7",
+          "text": "Łóżko dla gości jest w ___ (pokój) syna.",
+          "answer": "pokoju",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "Pokój kończy się na -j, więc ma -u: w pokoju."
+        },
+        {
+          "id": "g2-8",
+          "text": "Dzieci bawią się w ___ (ogród).",
+          "answer": "ogrodzie",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "ó → o, d → dz: ogród → w ogrodzie."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Obok, nad, w… — jaki przypadek?",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Mieszkamy blisko ___.",
+          "answer": "Poznania",
+          "grammar_point": "przyimki-dopelniacz-miejsce",
+          "options": [
+            "Poznaniu",
+            "Poznań",
+            "Poznania"
+          ],
+          "explanation": "Blisko, obok, naprzeciwko + dopełniacz: blisko Poznania."
+        },
+        {
+          "id": "g3-2",
+          "text": "Lampa wisi nad ___.",
+          "answer": "stołem",
+          "grammar_point": "przyimki-narzednik-miejsce",
+          "options": [
+            "stołem",
+            "stole",
+            "stół"
+          ],
+          "explanation": "Nad + narzędnik: nad stołem."
+        },
+        {
+          "id": "g3-3",
+          "text": "Przystanek jest naprzeciwko ___.",
+          "answer": "szkoły",
+          "grammar_point": "przyimki-dopelniacz-miejsce",
+          "options": [
+            "szkoły",
+            "szkołą",
+            "szkole"
+          ]
+        },
+        {
+          "id": "g3-4",
+          "text": "Rower zostaw przed ___.",
+          "answer": "blokiem",
+          "grammar_point": "przyimki-narzednik-miejsce",
+          "options": [
+            "bloku",
+            "blokiem"
+          ],
+          "explanation": "Przed + narzędnik: przed blokiem. Obok bloku — to dopełniacz."
+        },
+        {
+          "id": "g3-5",
+          "text": "Moi rodzice mieszkają w ___ domu.",
+          "answer": "starym",
+          "grammar_point": "przymiotnik-miejscownik",
+          "options": [
+            "stary",
+            "starej",
+            "starym"
+          ],
+          "explanation": "Dom to on → w starym domu. -ej jest dla ona: w starej kamienicy."
+        },
+        {
+          "id": "g3-6",
+          "text": "Biuro jest na ___ piętrze.",
+          "answer": "piątym",
+          "grammar_point": "przymiotnik-miejscownik",
+          "options": [
+            "piątym",
+            "piątej",
+            "piąte"
+          ]
+        },
+        {
+          "id": "g3-7",
+          "text": "Ukraiński „перший поверх” to po polsku ___.",
+          "answer": "parter",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "pierwsze piętro",
+            "parter"
+          ],
+          "explanation": "W Polsce liczymy: parter, potem pierwsze piętro. Ukraiński „другий поверх” to polskie pierwsze piętro."
+        },
+        {
+          "id": "g3-8",
+          "text": "Nie mieszkam w Krakowie, tylko pod ___ — dwadzieścia minut autobusem.",
+          "answer": "Krakowem",
+          "grammar_point": "przyimki-narzednik-miejsce",
+          "options": [
+            "Kraków",
+            "Krakowem",
+            "Krakowie"
+          ],
+          "explanation": "Pod + miasto w narzędniku = niedaleko miasta: mieszkam pod Krakowem."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "exercise_type": "fill-in-blank",
+      "title": "4. Gdzie? czy dokąd?",
+      "instruction": "Jesteś gdzieś czy dopiero tam idziesz? Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Poczekaj chwilę, idę jeszcze ___.",
+          "answer": "do łazienki",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "do łazienki",
+            "w łazience"
+          ],
+          "explanation": "Idę dokąd? → do + dopełniacz."
+        },
+        {
+          "id": "g4-2",
+          "text": "Mama jest teraz ___ i gotuje obiad.",
+          "answer": "w kuchni",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "do kuchni",
+            "w kuchni"
+          ],
+          "explanation": "Jest gdzie? → w + miejscownik."
+        },
+        {
+          "id": "g4-3",
+          "text": "Wychodzę na ___, bo w pokoju jest gorąco.",
+          "answer": "balkon",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "balkonie",
+            "balkon"
+          ],
+          "explanation": "Wychodzę dokąd? → na + biernik: na balkon."
+        },
+        {
+          "id": "g4-4",
+          "text": "Latem jemy śniadanie na ___.",
+          "answer": "tarasie",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "tarasie",
+            "taras"
+          ],
+          "explanation": "Jemy gdzie? → na + miejscownik: na tarasie."
+        },
+        {
+          "id": "g4-5",
+          "text": "W sobotę jedziemy ___ do dziadków.",
+          "answer": "na wieś",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "na wsi",
+            "na wieś"
+          ],
+          "explanation": "Jedziemy dokąd? → na wieś. Mieszkamy gdzie? → na wsi."
+        },
+        {
+          "id": "g4-6",
+          "text": "Wujek ma mały dom ___, blisko szlaku.",
+          "answer": "w górach",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "w górach",
+            "w góry"
+          ],
+          "explanation": "Ma dom gdzie? → w górach. Jedzie dokąd? → w góry."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "exercise_type": "sentence-building",
+      "title": "5. Popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Mieszkam w centrze Poznania.",
+          "answer": "Mieszkam w centrum Poznania.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Centrum w liczbie pojedynczej się nie odmienia: w centrum."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Wieczorem rozmawiamy na kuchni przy herbacie.",
+          "answer": "Wieczorem rozmawiamy w kuchni przy herbacie.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Pomieszczenie → w kuchni. „Na kuchni” to na kuchence, na płycie do gotowania.",
+          "accept": [
+            "W kuchni rozmawiamy wieczorem przy herbacie."
+          ]
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Mieszkamy w domie z ogrodem.",
+          "answer": "Mieszkamy w domu z ogrodem.",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "Wyjątek: dom → w domu."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Chcę arendować mieszkanie na rok.",
+          "answer": "Chcę wynająć mieszkanie na rok.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Po polsku: wynająć / wynajmować mieszkanie.",
+          "accept": [
+            "Chcę wynajmować mieszkanie na rok."
+          ]
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Podoba mnie się ten pokój.",
+          "answer": "Podoba mi się ten pokój.",
+          "grammar_point": "celownik-podoba-sie",
+          "explanation": "Podoba się komu? → mi, ci, mu, jej — tak samo jak smakuje mi.",
+          "accept": [
+            "Ten pokój mi się podoba.",
+            "Ten pokój podoba mi się."
+          ]
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Brakuje mi winda w tym bloku.",
+          "answer": "Brakuje mi windy w tym bloku.",
+          "grammar_point": "celownik-podoba-sie",
+          "explanation": "Brakuje mi czego? → dopełniacz: windy.",
+          "accept": [
+            "W tym bloku brakuje mi windy."
+          ]
+        }
+      ]
+    }
+  ]
+}

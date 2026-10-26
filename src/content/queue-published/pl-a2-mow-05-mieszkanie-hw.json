@@ -1,0 +1,219 @@
+{
+  "lesson_id": "pl-a2-mow-05-mieszkanie",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: dom i okolica",
+  "instruction": "Trzy bloki: formy, zdania i jedna wiadomość.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Gdzie to jest?",
+      "instruction": "Wpisz słowa z nawiasu w miejscowniku.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Zapasowe koło jest w ___ (bagażnik).",
+          "answer": "bagażniku",
+          "grammar_point": "miejscownik-miejsce"
+        },
+        {
+          "id": "h1-2",
+          "text": "Stare zabawki trzymamy na ___ (strych).",
+          "answer": "strychu",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "Po ch → -u: na strychu, na dachu."
+        },
+        {
+          "id": "h1-3",
+          "text": "Mleko jest w ___ (lodówka), na dole.",
+          "answer": "lodówce",
+          "grammar_point": "miejscownik-miejsce"
+        },
+        {
+          "id": "h1-4",
+          "text": "Spotkamy się na ___ (rynek) o szóstej.",
+          "answer": "rynku",
+          "grammar_point": "miejscownik-miejsce"
+        },
+        {
+          "id": "h1-5",
+          "text": "Zostawiłam parasol w ___ (samochód).",
+          "answer": "samochodzie",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "ó → o, d → dz: w samochodzie."
+        },
+        {
+          "id": "h1-6",
+          "text": "Od marca pracuję w ___ (nowe biuro).",
+          "answer": "nowym biurze",
+          "grammar_point": "przymiotnik-miejscownik",
+          "explanation": "Biuro → w biurze (r → rz), nowe → w nowym."
+        },
+        {
+          "id": "h1-7",
+          "text": "Nasza córka śpi na ___ (górne łóżko).",
+          "answer": "górnym łóżku",
+          "grammar_point": "przymiotnik-miejscownik"
+        },
+        {
+          "id": "h1-8",
+          "text": "Mapa jest na ___ (ostatnia strona).",
+          "answer": "ostatniej stronie",
+          "grammar_point": "przymiotnik-miejscownik"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdania",
+      "instruction": "Ułóż zdanie z kafelków. Często jest więcej niż jeden dobry porządek.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "między",
+            "biurkiem",
+            "a",
+            "oknem",
+            "stoi",
+            "fotel"
+          ],
+          "answer": "Między biurkiem a oknem stoi fotel.",
+          "grammar_point": "przyimki-narzednik-miejsce",
+          "accept": [
+            "Fotel stoi między biurkiem a oknem.",
+            "Między oknem a biurkiem stoi fotel.",
+            "Fotel stoi między oknem a biurkiem."
+          ]
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "pod",
+            "oknem",
+            "w",
+            "salonie",
+            "śpi",
+            "pies"
+          ],
+          "answer": "Pod oknem w salonie śpi pies.",
+          "grammar_point": "przyimki-narzednik-miejsce",
+          "accept": [
+            "W salonie pod oknem śpi pies.",
+            "Pies śpi pod oknem w salonie.",
+            "Pies śpi w salonie pod oknem.",
+            "W salonie pies śpi pod oknem."
+          ]
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "naprzeciwko",
+            "naszego",
+            "bloku",
+            "jest",
+            "apteka"
+          ],
+          "answer": "Naprzeciwko naszego bloku jest apteka.",
+          "grammar_point": "przyimki-dopelniacz-miejsce",
+          "accept": [
+            "Apteka jest naprzeciwko naszego bloku."
+          ]
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "w",
+            "tym",
+            "mieszkaniu",
+            "brakuje",
+            "mi",
+            "balkonu"
+          ],
+          "answer": "W tym mieszkaniu brakuje mi balkonu.",
+          "grammar_point": "celownik-podoba-sie",
+          "accept": [
+            "Brakuje mi balkonu w tym mieszkaniu.",
+            "W tym mieszkaniu balkonu mi brakuje."
+          ]
+        },
+        {
+          "id": "h2-5",
+          "words": [
+            "na",
+            "trzecim",
+            "piętrze",
+            "mieszka",
+            "miły",
+            "sąsiad"
+          ],
+          "answer": "Na trzecim piętrze mieszka miły sąsiad.",
+          "grammar_point": "przymiotnik-miejscownik",
+          "accept": [
+            "Miły sąsiad mieszka na trzecim piętrze."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "drag-and-drop",
+      "title": "3. Wiadomość od Oli",
+      "instruction": "Przeciągnij słowa w luki. Cztery słowa są niepotrzebne.",
+      "bank": [
+        "winda",
+        "przy",
+        "piętro",
+        "kanapę",
+        "obok",
+        "windy",
+        "balkonie",
+        "dywan",
+        "piętrze",
+        "przed"
+      ],
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Cześć! Od tygodnia mieszkam w nowym mieszkaniu na trzecim ___.",
+          "answer": "piętrze",
+          "grammar_point": "przymiotnik-miejscownik"
+        },
+        {
+          "id": "h3-2",
+          "text": "Niestety w bloku nie ma ___, więc codziennie chodzę po schodach.",
+          "answer": "windy",
+          "grammar_point": "przeczenie-dopelniacz"
+        },
+        {
+          "id": "h3-3",
+          "text": "W salonie mam wygodną ___ — jest idealna na wieczory z serialem.",
+          "answer": "kanapę",
+          "grammar_point": "kalki-uk",
+          "explanation": "Dywan to килим. Диван po polsku to kanapa albo sofa."
+        },
+        {
+          "id": "h3-4",
+          "text": "Rano piję kawę na ___ i patrzę na park.",
+          "answer": "balkonie",
+          "grammar_point": "miejscownik-miejsce"
+        },
+        {
+          "id": "h3-5",
+          "text": "Tuż ___ blokiem jest mała piekarnia z pysznymi bułkami.",
+          "answer": "przed",
+          "grammar_point": "przyimki-narzednik-miejsce",
+          "explanation": "Blokiem to narzędnik, więc przed blokiem. Obok i przy potrzebują innego przypadku: obok bloku, przy bloku."
+        },
+        {
+          "id": "h3-6",
+          "text": "Przyjedź w sobotę! Mieszkam ___ ulicy Polnej 5.",
+          "answer": "przy",
+          "grammar_point": "miejscownik-miejsce"
+        }
+      ]
+    }
+  ]
+}

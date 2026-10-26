@@ -1025,6 +1025,26 @@
       "notion_teacher_page_id": "40596e03-c7c8-8162-8d09-fe99eb3ff741",
       "notion_teacher_page_url": "https://app.notion.com/p/40596e03c7c881628d09fe99eb3ff741",
       "notes": "individual student, Polski krok po kroku 1, review of textbook lessons 1–5 (focus 4–5), speaking-focused, 60 min"
+    },
+    {
+      "lesson_id": "pl-a2-mow-05-mieszkanie",
+      "module": "pl-a2-mow",
+      "title": "Szukam mieszkania! Dom, pokoje i okolica",
+      "published_at": "2026-10-26T17:30:00Z",
+      "template": "light-60",
+      "embeds": {
+        "vocab": "https://werba-way.vercel.app/embed/pl-a2-mow-05-mieszkanie/vocab",
+        "comm_tasks": "https://werba-way.vercel.app/embed/pl-a2-mow-05-mieszkanie/comm-tasks",
+        "grammar": "https://werba-way.vercel.app/embed/pl-a2-mow-05-mieszkanie/grammar",
+        "hw": "https://werba-way.vercel.app/embed/pl-a2-mow-05-mieszkanie/hw"
+      },
+      "images": {
+        "header": "https://images.unsplash.com/photo-1741156386380-0236c72eb6f9?fm=jpg&q=80&w=1600&fit=max",
+        "img1": "https://images.unsplash.com/photo-1722942116153-ee3aa0fc2153?fm=jpg&q=80&w=1600&fit=max"
+      },
+      "notion_parent_id": "3fa96e03-c7c8-819b-9ef1-eaa310055016",
+      "status": "published",
+      "notes": "v3.11: Claude published exercise JSON + Notion pages directly; grammar as native Notion blocks."
     }
   ]
 }
