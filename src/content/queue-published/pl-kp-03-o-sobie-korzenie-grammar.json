@@ -1,0 +1,463 @@
+{
+  "lesson_id": "pl-kp-03-o-sobie-korzenie",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: o sobie i o rodzinie",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "exercise_type": "matching",
+      "title": "1. Kto to jest? Co to jest?",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "prababcia",
+          "right": "mama mojego dziadka albo mojej babci",
+          "grammar_point": "slownictwo-rodzina"
+        },
+        {
+          "id": "g1-2",
+          "left": "wnuczka",
+          "right": "córka mojego syna albo mojej córki",
+          "grammar_point": "slownictwo-rodzina"
+        },
+        {
+          "id": "g1-3",
+          "left": "pradziadkowie",
+          "right": "rodzice moich dziadków",
+          "grammar_point": "slownictwo-rodzina"
+        },
+        {
+          "id": "g1-4",
+          "left": "przodek",
+          "right": "ktoś z rodziny, kto żył dawno temu",
+          "grammar_point": "slownictwo-rodzina"
+        },
+        {
+          "id": "g1-5",
+          "left": "metryka chrztu",
+          "right": "dokument z kościoła",
+          "grammar_point": "slownictwo-dokumenty"
+        },
+        {
+          "id": "g1-6",
+          "left": "akt urodzenia",
+          "right": "dokument z urzędu: kiedy i gdzie ktoś przyszedł na świat",
+          "grammar_point": "slownictwo-dokumenty"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Ile masz lat?",
+      "instruction": "Wybierz dobrą formę.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Mój mąż ma ___.",
+          "answer": "dwadzieścia trzy lata",
+          "grammar_point": "wiek-lat-lata",
+          "options": [
+            "dwadzieścia trzy lata",
+            "dwadzieścia trzy lat"
+          ],
+          "explanation": "23 kończy się na 3 → lata."
+        },
+        {
+          "id": "g2-2",
+          "text": "Moja córka ma ___.",
+          "answer": "dwanaście lat",
+          "grammar_point": "wiek-lat-lata",
+          "options": [
+            "dwanaście lata",
+            "dwanaście lat"
+          ],
+          "explanation": "12, 13, 14 → lat, chociaż kończą się na 2, 3, 4."
+        },
+        {
+          "id": "g2-3",
+          "text": "Brat ma ___.",
+          "answer": "trzydzieści jeden lat",
+          "grammar_point": "wiek-lat-lata",
+          "options": [
+            "trzydzieści jeden rok",
+            "trzydzieści jeden lat"
+          ],
+          "explanation": "Rok — tylko przy 1. Ale 21, 31, 41 → lat."
+        },
+        {
+          "id": "g2-4",
+          "text": "Wnuczek ma ___ i już chodzi.",
+          "answer": "rok",
+          "grammar_point": "wiek-lat-lata",
+          "options": [
+            "rok",
+            "jeden lata"
+          ],
+          "explanation": "1 → rok: Ma rok. Ma roczek."
+        },
+        {
+          "id": "g2-5",
+          "text": "Dziadek ma ___.",
+          "answer": "osiemdziesiąt cztery lata",
+          "grammar_point": "wiek-lat-lata",
+          "options": [
+            "osiemdziesiąt cztery lat",
+            "osiemdziesiąt cztery lata"
+          ],
+          "explanation": "84 kończy się na 4 → lata."
+        },
+        {
+          "id": "g2-6",
+          "text": "Siostra ma ___.",
+          "answer": "czterdzieści pięć lat",
+          "grammar_point": "wiek-lat-lata",
+          "options": [
+            "czterdzieści pięć lat",
+            "czterdzieści pięć lata"
+          ],
+          "explanation": "5, 6, 7, 8, 9, 0 na końcu → lat."
+        },
+        {
+          "id": "g2-7",
+          "text": "Przepraszam, ___?",
+          "answer": "ile ma Pani lat",
+          "grammar_point": "wiek-lat-lata",
+          "options": [
+            "ile ma Pani lat",
+            "ile Pani jest lat"
+          ],
+          "explanation": "Wiek się „ma”: Ile ma Pan / Pani lat? Ile masz lat?"
+        },
+        {
+          "id": "g2-8",
+          "text": "Metryka chrztu pradziadka ma ___.",
+          "answer": "sto dwa lata",
+          "grammar_point": "wiek-lat-lata",
+          "options": [
+            "sto dwa lat",
+            "sto dwa lata"
+          ],
+          "explanation": "102 kończy się na 2, ale to nie 12 → lata. 112 → lat."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Kim jestem i skąd jestem?",
+      "instruction": "Wybierz dobrą formę.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Z zawodu jestem ___.",
+          "answer": "informatykiem",
+          "grammar_point": "jestem-narzednik",
+          "options": [
+            "informatykiem",
+            "informatyk"
+          ],
+          "explanation": "Jestem + narzędnik: kim? → informatykiem."
+        },
+        {
+          "id": "g3-2",
+          "text": "Pracuję jako ___ w szkole.",
+          "answer": "nauczyciel",
+          "grammar_point": "jako-mianownik",
+          "options": [
+            "nauczyciel",
+            "nauczycielem"
+          ],
+          "explanation": "Jako + mianownik: pracuję jako nauczyciel. Ale: jestem nauczycielem."
+        },
+        {
+          "id": "g3-3",
+          "text": "Mój mąż jest ___.",
+          "answer": "kierowcą",
+          "grammar_point": "jestem-narzednik",
+          "options": [
+            "kierowcą",
+            "kierowcem"
+          ],
+          "explanation": "Kierowca kończy się na -a, więc -ą, chociaż to mężczyzna: kierowcą."
+        },
+        {
+          "id": "g3-4",
+          "text": "Jestem z ___.",
+          "answer": "Ukrainy",
+          "grammar_point": "z-dopelniacz",
+          "options": [
+            "Ukrainy",
+            "Ukrainą"
+          ],
+          "explanation": "Z + dopełniacz: z Ukrainy, z Polski, z Kijowa."
+        },
+        {
+          "id": "g3-5",
+          "text": "Od roku mieszkam w ___.",
+          "answer": "Łucku",
+          "grammar_point": "w-miejscownik",
+          "options": [
+            "Łucku",
+            "Łuck"
+          ],
+          "explanation": "Gdzie? w + miejscownik: w Łucku, w Kijowie, w Lublinie."
+        },
+        {
+          "id": "g3-6",
+          "text": "Urodziłam się ___ marca.",
+          "answer": "piątego",
+          "grammar_point": "data-dopelniacz",
+          "options": [
+            "piątego",
+            "piąty"
+          ],
+          "explanation": "Data w dopełniaczu: piątego marca, dwunastego maja."
+        },
+        {
+          "id": "g3-7",
+          "text": "___ Ołena, a moje nazwisko to Hnatiuk.",
+          "answer": "Mam na imię",
+          "grammar_point": "przedstawianie",
+          "options": [
+            "Mam na imię",
+            "Nazywam"
+          ],
+          "explanation": "Mam na imię Ołena albo Nazywam się Ołena. Bez „się” nie można."
+        },
+        {
+          "id": "g3-8",
+          "text": "Jestem ___, ale mam polskie korzenie.",
+          "answer": "Ukraińcem",
+          "grammar_point": "jestem-narzednik",
+          "options": [
+            "Ukraińcem",
+            "Ukrainiec"
+          ],
+          "explanation": "Jestem + narzędnik: Ukrainiec → jestem Ukraińcem."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "exercise_type": "fill-in-blank",
+      "title": "4. Kim był? Gdzie mieszkał?",
+      "instruction": "Wpisz formę słowa z nawiasu.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Mój pradziadek ___ (być) Polakiem.",
+          "answer": "był",
+          "grammar_point": "przeszly-3-osoba",
+          "explanation": "On → był."
+        },
+        {
+          "id": "g4-2",
+          "text": "Prababcia ___ (pochodzić) z Krakowa.",
+          "answer": "pochodziła",
+          "grammar_point": "przeszly-3-osoba",
+          "explanation": "Ona → -ła: pochodziła."
+        },
+        {
+          "id": "g4-3",
+          "text": "Moi dziadkowie ___ (mieszkać) pod Winnicą.",
+          "answer": "mieszkali",
+          "grammar_point": "przeszly-3-osoba",
+          "explanation": "Oni (babcia i dziadek) → -li: mieszkali."
+        },
+        {
+          "id": "g4-4",
+          "text": "Babcia ze strony taty była ___ (Polka).",
+          "answer": "Polką",
+          "grammar_point": "byc-narodowosc-narzednik",
+          "explanation": "Była kim? → narzędnik: Polką."
+        },
+        {
+          "id": "g4-5",
+          "text": "Jej bracia też byli ___ (Polak).",
+          "answer": "Polakami",
+          "grammar_point": "byc-narodowosc-narzednik",
+          "explanation": "Byli kim? → narzędnik, liczba mnoga: Polakami."
+        },
+        {
+          "id": "g4-6",
+          "text": "W domu wszyscy ___ (mówić) po polsku.",
+          "answer": "mówili",
+          "grammar_point": "przeszly-3-osoba",
+          "explanation": "Wszyscy (mężczyźni i kobiety) → -li: mówili."
+        },
+        {
+          "id": "g4-7",
+          "text": "Dziadek ___ (urodzić się) w małej wsi.",
+          "answer": "urodził się",
+          "grammar_point": "przeszly-3-osoba",
+          "accept": [
+            "się urodził"
+          ],
+          "explanation": "On → urodził się. „Się” zostaje."
+        },
+        {
+          "id": "g4-8",
+          "text": "Jego siostry ___ (być) nauczycielkami.",
+          "answer": "były",
+          "grammar_point": "przeszly-3-osoba",
+          "explanation": "Same kobiety → były. Jeśli jest choć jeden mężczyzna → byli."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "exercise_type": "sentence-building",
+      "title": "5. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Mi jest czterdzieści lat.",
+          "answer": "Mam czterdzieści lat.",
+          "grammar_point": "kalki-uk",
+          "accept": [],
+          "explanation": "Po polsku wiek się „ma”: Mam czterdzieści lat."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Moja prababcia była Polka.",
+          "answer": "Moja prababcia była Polką.",
+          "grammar_point": "byc-narodowosc-narzednik",
+          "accept": [],
+          "explanation": "Była kim? → narzędnik: Polką."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Pracuję jako lekarzem.",
+          "answer": "Pracuję jako lekarz.",
+          "grammar_point": "jako-mianownik",
+          "accept": [
+            "Jestem lekarzem."
+          ],
+          "explanation": "Jako + mianownik: jako lekarz. Albo: Jestem lekarzem."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Dziadek dobrze mówił polskim.",
+          "answer": "Dziadek dobrze mówił po polsku.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Dziadek mówił dobrze po polsku."
+          ],
+          "explanation": "Mówić po polsku, po ukraińsku — z „po”."
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Uczę polski od dwóch lat.",
+          "answer": "Uczę się polskiego od dwóch lat.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Od dwóch lat uczę się polskiego.",
+            "Uczę się języka polskiego od dwóch lat.",
+            "Od dwóch lat uczę się języka polskiego."
+          ],
+          "explanation": "Sam / sama się uczę → uczę się + dopełniacz: polskiego."
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Chcę dostać Polską Kartę.",
+          "answer": "Chcę dostać Kartę Polaka.",
+          "grammar_point": "kalki-uk",
+          "accept": [],
+          "explanation": "Dokument nazywa się Karta Polaka: chcę dostać Kartę Polaka."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "exercise_type": "sentence-building",
+      "title": "6. Ułóż odpowiedź dla konsula",
+      "instruction": "Ułóż zdanie z kafelków. Czasem dobry jest więcej niż jeden porządek.",
+      "items": [
+        {
+          "id": "g6-1",
+          "words": [
+            "ze strony taty",
+            "moja babcia",
+            "była Polką"
+          ],
+          "answer": "Moja babcia ze strony taty była Polką.",
+          "grammar_point": "byc-narodowosc-narzednik",
+          "accept": [
+            "Ze strony taty moja babcia była Polką."
+          ]
+        },
+        {
+          "id": "g6-2",
+          "words": [
+            "bo moja rodzina",
+            "chcę dostać",
+            "ma polskie korzenie",
+            "Kartę Polaka,"
+          ],
+          "answer": "Chcę dostać Kartę Polaka, bo moja rodzina ma polskie korzenie.",
+          "grammar_point": "chce-bo",
+          "accept": [
+            "Chcę dostać Kartę Polaka bo moja rodzina ma polskie korzenie."
+          ]
+        },
+        {
+          "id": "g6-3",
+          "words": [
+            "z Lublina",
+            "pochodzili",
+            "pradziadkowie"
+          ],
+          "answer": "Pradziadkowie pochodzili z Lublina.",
+          "grammar_point": "przeszly-3-osoba",
+          "accept": [
+            "Z Lublina pochodzili pradziadkowie."
+          ]
+        },
+        {
+          "id": "g6-4",
+          "words": [
+            "od roku",
+            "polskiego",
+            "uczę się"
+          ],
+          "answer": "Uczę się polskiego od roku.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Od roku uczę się polskiego.",
+            "Polskiego uczę się od roku."
+          ]
+        },
+        {
+          "id": "g6-5",
+          "words": [
+            "mojego pradziadka",
+            "mam",
+            "metrykę chrztu"
+          ],
+          "answer": "Mam metrykę chrztu mojego pradziadka.",
+          "grammar_point": "slownictwo-dokumenty"
+        },
+        {
+          "id": "g6-6",
+          "words": [
+            "dzielimy się opłatkiem",
+            "w Wigilię",
+            "w mojej rodzinie"
+          ],
+          "answer": "W mojej rodzinie w Wigilię dzielimy się opłatkiem.",
+          "grammar_point": "powtorka-swieta",
+          "accept": [
+            "W Wigilię w mojej rodzinie dzielimy się opłatkiem.",
+            "W mojej rodzinie dzielimy się opłatkiem w Wigilię.",
+            "W Wigilię dzielimy się opłatkiem w mojej rodzinie."
+          ]
+        }
+      ]
+    }
+  ]
+}

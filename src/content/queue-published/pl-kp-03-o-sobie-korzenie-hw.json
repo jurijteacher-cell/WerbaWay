@@ -1,0 +1,200 @@
+{
+  "lesson_id": "pl-kp-03-o-sobie-korzenie",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: inne rodziny, inne historie",
+  "instruction": "Trzy ćwiczenia: formy, zdania i jedno ogłoszenie.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rodzina pana Igora",
+      "instruction": "Wpisz formę słowa z nawiasu.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Pan Igor ma czterdzieści dwa ___ (rok).",
+          "answer": "lata",
+          "grammar_point": "wiek-lat-lata",
+          "explanation": "42 kończy się na 2 → lata."
+        },
+        {
+          "id": "h1-2",
+          "text": "Z zawodu jest ___ (mechanik).",
+          "answer": "mechanikiem",
+          "grammar_point": "jestem-narzednik",
+          "explanation": "Jest kim? → mechanikiem."
+        },
+        {
+          "id": "h1-3",
+          "text": "Jego żona jest ___ (fryzjerka).",
+          "answer": "fryzjerką",
+          "grammar_point": "jestem-narzednik",
+          "explanation": "Jest kim? → fryzjerką."
+        },
+        {
+          "id": "h1-4",
+          "text": "Ich syn ma trzynaście ___ (rok).",
+          "answer": "lat",
+          "grammar_point": "wiek-lat-lata",
+          "explanation": "12, 13, 14 → lat."
+        },
+        {
+          "id": "h1-5",
+          "text": "Ojciec Igora ___ (urodzić się) w Odessie.",
+          "answer": "urodził się",
+          "grammar_point": "przeszly-3-osoba",
+          "accept": [
+            "się urodził"
+          ]
+        },
+        {
+          "id": "h1-6",
+          "text": "Jego babcia ___ (pochodzić) z Tarnowa.",
+          "answer": "pochodziła",
+          "grammar_point": "przeszly-3-osoba"
+        },
+        {
+          "id": "h1-7",
+          "text": "Babcia i jej siostry ___ (być) Polkami.",
+          "answer": "były",
+          "grammar_point": "przeszly-3-osoba",
+          "explanation": "Same kobiety → były."
+        },
+        {
+          "id": "h1-8",
+          "text": "Na święta dziadkowie zawsze ___ (śpiewać) kolędy.",
+          "answer": "śpiewali",
+          "grammar_point": "przeszly-3-osoba"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdania",
+      "instruction": "Ułóż zdanie z kafelków. Czasem dobry jest więcej niż jeden porządek.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "ale mieszkam",
+            "jestem",
+            "we Lwowie",
+            "z Charkowa,"
+          ],
+          "answer": "Jestem z Charkowa, ale mieszkam we Lwowie.",
+          "grammar_point": "z-dopelniacz",
+          "accept": [
+            "Jestem z Charkowa ale mieszkam we Lwowie."
+          ]
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "był",
+            "mój dziadek",
+            "żołnierzem"
+          ],
+          "answer": "Mój dziadek był żołnierzem.",
+          "grammar_point": "byc-narodowosc-narzednik"
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "w polskiej szkole",
+            "prababcia",
+            "uczyła dzieci"
+          ],
+          "answer": "Prababcia uczyła dzieci w polskiej szkole.",
+          "grammar_point": "przeszly-3-osoba",
+          "accept": [
+            "W polskiej szkole prababcia uczyła dzieci."
+          ]
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "polską rodzinę",
+            "chcę",
+            "poznać",
+            "mojej mamy"
+          ],
+          "answer": "Chcę poznać polską rodzinę mojej mamy.",
+          "grammar_point": "chce-bo"
+        },
+        {
+          "id": "h2-5",
+          "words": [
+            "chodzę",
+            "od pół roku",
+            "na kurs polskiego"
+          ],
+          "answer": "Od pół roku chodzę na kurs polskiego.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Chodzę na kurs polskiego od pół roku."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "drag-and-drop",
+      "title": "3. Szukam rodziny w Polsce",
+      "instruction": "Pan Wiktor pisze ogłoszenie na forum. Przeciągnij słowa w luki. Sześć słów jest niepotrzebnych.",
+      "bank": [
+        "lat",
+        "lata",
+        "urodził",
+        "urodziła",
+        "Polakami",
+        "Polacy",
+        "mieszkał",
+        "mieszkali",
+        "mojego",
+        "mojej",
+        "metrykę",
+        "metryka"
+      ],
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Dzień dobry! Nazywam się Wiktor Szymański i mam pięćdziesiąt jeden ___.",
+          "answer": "lat",
+          "grammar_point": "wiek-lat-lata"
+        },
+        {
+          "id": "h3-2",
+          "text": "Mój dziadek Stanisław ___ się w Przemyślu w 1931 roku.",
+          "answer": "urodził",
+          "grammar_point": "przeszly-3-osoba"
+        },
+        {
+          "id": "h3-3",
+          "text": "Jego rodzice byli ___.",
+          "answer": "Polakami",
+          "grammar_point": "byc-narodowosc-narzednik"
+        },
+        {
+          "id": "h3-4",
+          "text": "Po wojnie dziadek sam ___ w Tarnopolu.",
+          "answer": "mieszkał",
+          "grammar_point": "przeszly-3-osoba"
+        },
+        {
+          "id": "h3-5",
+          "text": "Szukam krewnych ze strony ___ taty.",
+          "answer": "mojego",
+          "grammar_point": "rodzina-dopelniacz"
+        },
+        {
+          "id": "h3-6",
+          "text": "Mam ___ chrztu dziadka i jego stare zdjęcia.",
+          "answer": "metrykę",
+          "grammar_point": "slownictwo-dokumenty"
+        }
+      ]
+    }
+  ]
+}
