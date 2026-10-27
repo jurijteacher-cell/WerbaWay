@@ -1,0 +1,384 @@
+{
+  "lesson_id": "pl-b1-group-02-u-lekarza",
+  "exercise_type": "vocab-cards",
+  "title": "Słownictwo: ciało, objawy, przychodnia i apteka",
+  "instruction": "40 słów w sześciu grupach. Odwróć kartę, powiedz przykład na głos i oceń: znam / nie znam.",
+  "estimated_minutes": 20,
+  "groups": [
+    "Ciało i dolegliwości",
+    "Objawy",
+    "W przychodni",
+    "Badanie i leczenie",
+    "W aptece",
+    "Nagłe sytuacje"
+  ],
+  "comm_groups": [
+    "Ciało i dolegliwości",
+    "Objawy",
+    "W przychodni",
+    "Badanie i leczenie",
+    "W aptece"
+  ],
+  "items": [
+    {
+      "id": "v01",
+      "term": "kręgosłup",
+      "group": "Ciało i dolegliwości",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Kość, która trzyma ciało prosto — od szyi do bioder.",
+      "example": "Przy pracy przy biurku warto dbać o kręgosłup.",
+      "translation_uk": "хребет"
+    },
+    {
+      "id": "v02",
+      "term": "plecy",
+      "group": "Ciało i dolegliwości",
+      "part_of_speech": "rzeczownik, tylko lm.",
+      "definition": "Tylna część ciała od szyi do pasa. Mówimy: bolą mnie plecy.",
+      "example": "Po całym dniu w ogrodzie bolą mnie plecy.",
+      "translation_uk": "спина"
+    },
+    {
+      "id": "v03",
+      "term": "gardło",
+      "group": "Ciało i dolegliwości",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Część szyi w środku, przez którą idzie jedzenie i powietrze.",
+      "example": "Kiedy boli mnie gardło, piję herbatę z miodem.",
+      "translation_uk": "горло"
+    },
+    {
+      "id": "v04",
+      "term": "żołądek",
+      "group": "Ciało i dolegliwości",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Organ, do którego trafia jedzenie.",
+      "example": "Po tłustej kolacji bolał mnie żołądek.",
+      "translation_uk": "шлунок"
+    },
+    {
+      "id": "v05",
+      "term": "kostka",
+      "group": "Ciało i dolegliwości",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Miejsce, gdzie noga łączy się ze stopą.",
+      "example": "Na mokrych schodach skręciłam kostkę.",
+      "translation_uk": "щиколотка, кісточка"
+    },
+    {
+      "id": "v06",
+      "term": "boleć",
+      "group": "Ciało i dolegliwości",
+      "part_of_speech": "czasownik, ndk",
+      "definition": "O części ciała: sprawiać ból. Boli mnie ząb, bolą mnie nogi.",
+      "example": "Od rana boli mnie ząb.",
+      "translation_uk": "боліти"
+    },
+    {
+      "id": "v07",
+      "term": "dolegliwość",
+      "group": "Ciało i dolegliwości",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Problem ze zdrowiem, który przeszkadza w życiu.",
+      "example": "Pacjent dokładnie opisał swoje dolegliwości.",
+      "translation_uk": "нездужання, скарга (на здоров'я)"
+    },
+    {
+      "id": "v08",
+      "term": "gorączka",
+      "group": "Objawy",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Wysoka temperatura ciała.",
+      "example": "Dziecko ma gorączkę od wczoraj wieczorem.",
+      "translation_uk": "гарячка, висока температура"
+    },
+    {
+      "id": "v09",
+      "term": "kaszel",
+      "group": "Objawy",
+      "part_of_speech": "rzeczownik, m. (dop. kaszlu)",
+      "definition": "Gwałtowne wypychanie powietrza z płuc, np. przy przeziębieniu.",
+      "example": "Ten suchy kaszel nie pozwala mi spać.",
+      "translation_uk": "кашель"
+    },
+    {
+      "id": "v10",
+      "term": "katar",
+      "group": "Objawy",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Kiedy z nosa cieknie i trudno oddychać.",
+      "example": "Mam katar i zużyłem już całą paczkę chusteczek.",
+      "translation_uk": "нежить"
+    },
+    {
+      "id": "v11",
+      "term": "zawroty głowy",
+      "group": "Objawy",
+      "part_of_speech": "rzeczownik, lm.",
+      "definition": "Uczucie, że wszystko wokół się kręci.",
+      "example": "Kiedy szybko wstaję z łóżka, mam zawroty głowy.",
+      "translation_uk": "запаморочення"
+    },
+    {
+      "id": "v12",
+      "term": "mdłości",
+      "group": "Objawy",
+      "part_of_speech": "rzeczownik, tylko lm.",
+      "definition": "Uczucie, że zaraz zwymiotujemy. Mówimy też: mdli mnie.",
+      "example": "W autobusie na krętej drodze zawsze mam mdłości.",
+      "translation_uk": "нудота"
+    },
+    {
+      "id": "v13",
+      "term": "drętwieć / zdrętwieć",
+      "group": "Objawy",
+      "part_of_speech": "czasownik, ndk / dk",
+      "definition": "Tracić czucie w części ciała, np. w ręce albo nodze.",
+      "example": "Kiedy długo siedzę po turecku, drętwieje mi noga.",
+      "translation_uk": "терпнути, німіти"
+    },
+    {
+      "id": "v14",
+      "term": "osłabienie",
+      "group": "Objawy",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Brak siły w czasie choroby albo po niej.",
+      "example": "Po grypie przez tydzień czułam osłabienie.",
+      "translation_uk": "слабкість"
+    },
+    {
+      "id": "v15",
+      "term": "przychodnia",
+      "group": "W przychodni",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Miejsce, gdzie przyjmują lekarz rodzinny i specjaliści; pacjent tam nie nocuje.",
+      "example": "Nowa przychodnia jest dwa przystanki od nas.",
+      "translation_uk": "поліклініка, амбулаторія"
+    },
+    {
+      "id": "v16",
+      "term": "rejestracja",
+      "group": "W przychodni",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Okienko albo telefon, gdzie umawia się wizyty.",
+      "example": "Rejestracja działa od wpół do ósmej.",
+      "translation_uk": "реєстратура"
+    },
+    {
+      "id": "v17",
+      "term": "lekarz rodzinny",
+      "group": "W przychodni",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Lekarz pierwszego kontaktu — do niego idziemy najpierw.",
+      "example": "Nasz lekarz rodzinny leczy całą rodzinę, od babci do wnuczki.",
+      "translation_uk": "сімейний лікар"
+    },
+    {
+      "id": "v18",
+      "term": "skierowanie",
+      "group": "W przychodni",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Dokument od lekarza, z którym idziemy do specjalisty albo na badanie.",
+      "example": "Na rezonans potrzebuję skierowania.",
+      "translation_uk": "направлення"
+    },
+    {
+      "id": "v19",
+      "term": "termin (wizyty)",
+      "group": "W przychodni",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Dzień i godzina wizyty.",
+      "example": "Najbliższy wolny termin jest dopiero w piątek.",
+      "translation_uk": "дата і час прийому"
+    },
+    {
+      "id": "v20",
+      "term": "zapisać się (do lekarza)",
+      "group": "W przychodni",
+      "part_of_speech": "czasownik, dk",
+      "definition": "Umówić się na wizytę.",
+      "example": "Zapisałam się do dentysty przez internet.",
+      "translation_uk": "записатися (до лікаря)"
+    },
+    {
+      "id": "v21",
+      "term": "odwołać (wizytę)",
+      "group": "W przychodni",
+      "part_of_speech": "czasownik, dk",
+      "definition": "Powiedzieć, że nie przyjdziemy na wizytę.",
+      "example": "Muszę odwołać wizytę, bo mam egzamin.",
+      "translation_uk": "скасувати (візит)"
+    },
+    {
+      "id": "v22",
+      "term": "zbadać",
+      "group": "Badanie i leczenie",
+      "part_of_speech": "czasownik, dk",
+      "definition": "O lekarzu: sprawdzić stan zdrowia pacjenta.",
+      "example": "Lekarka zbadała mi gardło i uszy.",
+      "translation_uk": "оглянути, обстежити"
+    },
+    {
+      "id": "v23",
+      "term": "badanie krwi",
+      "group": "Badanie i leczenie",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Analiza krwi w laboratorium.",
+      "example": "Na badanie krwi idę jutro o siódmej.",
+      "translation_uk": "аналіз крові"
+    },
+    {
+      "id": "v24",
+      "term": "wyniki (badań)",
+      "group": "Badanie i leczenie",
+      "part_of_speech": "rzeczownik, lm.",
+      "definition": "To, co pokazało badanie.",
+      "example": "Wyniki będą gotowe jutro po południu.",
+      "translation_uk": "результати (аналізів)"
+    },
+    {
+      "id": "v25",
+      "term": "zastrzyk",
+      "group": "Badanie i leczenie",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Lek podawany igłą.",
+      "example": "Mój syn nie lubi zastrzyków, ale dzielnie wytrzymał.",
+      "translation_uk": "укол, ін'єкція"
+    },
+    {
+      "id": "v26",
+      "term": "zwolnienie lekarskie (L4)",
+      "group": "Badanie i leczenie",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Dokument od lekarza: pacjent jest chory i nie pracuje.",
+      "example": "Wzięłam trzy dni zwolnienia lekarskiego.",
+      "translation_uk": "лікарняний"
+    },
+    {
+      "id": "v27",
+      "term": "zalecić",
+      "group": "Badanie i leczenie",
+      "part_of_speech": "czasownik, dk",
+      "definition": "O lekarzu: powiedzieć pacjentowi, co ma robić.",
+      "example": "Lekarka zaleciła mi codzienne spacery.",
+      "translation_uk": "порадити, призначити"
+    },
+    {
+      "id": "v28",
+      "term": "przeciwbólowy",
+      "group": "Badanie i leczenie",
+      "part_of_speech": "przymiotnik",
+      "definition": "Taki, który zmniejsza ból.",
+      "example": "Przed wizytą u dentysty wziąłem lek przeciwbólowy.",
+      "translation_uk": "знеболювальний"
+    },
+    {
+      "id": "v29",
+      "term": "e-recepta",
+      "group": "W aptece",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Recepta w systemie: dostajemy kod SMS-em, e-mailem albo w aplikacji.",
+      "example": "E-recepta jest zwykle ważna 30 dni, a na antybiotyk tylko 7.",
+      "translation_uk": "електронний рецепт"
+    },
+    {
+      "id": "v30",
+      "term": "lek bez recepty",
+      "group": "W aptece",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Lek, który kupimy bez wizyty u lekarza.",
+      "example": "Na lekki katar często wystarczy lek bez recepty.",
+      "translation_uk": "безрецептурний препарат"
+    },
+    {
+      "id": "v31",
+      "term": "farmaceuta / farmaceutka",
+      "group": "W aptece",
+      "part_of_speech": "rzeczownik, m. / ż.",
+      "definition": "Osoba, która pracuje w aptece i zna się na lekach.",
+      "example": "Zapytaj farmaceutkę, czy można to brać z kawą.",
+      "translation_uk": "фармацевт / фармацевтка"
+    },
+    {
+      "id": "v32",
+      "term": "opakowanie",
+      "group": "W aptece",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Pudełko albo butelka, w której jest lek.",
+      "example": "Weź większe opakowanie, wystarczy na miesiąc.",
+      "translation_uk": "упаковка"
+    },
+    {
+      "id": "v33",
+      "term": "syrop",
+      "group": "W aptece",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Płynny lek, często słodki.",
+      "example": "Ten syrop pije się trzy razy dziennie po jedzeniu.",
+      "translation_uk": "сироп"
+    },
+    {
+      "id": "v34",
+      "term": "maść",
+      "group": "W aptece",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Lek, którym smarujemy skórę.",
+      "example": "Posmaruj kolano maścią rano i wieczorem.",
+      "translation_uk": "мазь"
+    },
+    {
+      "id": "v35",
+      "term": "pogotowie (ratunkowe)",
+      "group": "Nagłe sytuacje",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Służba, która przyjeżdża do chorego w nagłej sytuacji.",
+      "example": "Wezwij pogotowie — zadzwoń pod 112 albo 999!",
+      "translation_uk": "швидка допомога"
+    },
+    {
+      "id": "v36",
+      "term": "karetka",
+      "group": "Nagłe sytuacje",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Samochód pogotowia.",
+      "example": "Karetka przyjechała po dziesięciu minutach.",
+      "translation_uk": "карета швидкої"
+    },
+    {
+      "id": "v37",
+      "term": "SOR",
+      "group": "Nagłe sytuacje",
+      "part_of_speech": "skrót, m.",
+      "definition": "Szpitalny Oddział Ratunkowy — dla osób w ciężkim stanie.",
+      "example": "Na SOR nie potrzeba skierowania, a kolejność zależy od stanu pacjenta.",
+      "translation_uk": "приймальне відділення невідкладної допомоги"
+    },
+    {
+      "id": "v38",
+      "term": "nocna i świąteczna opieka",
+      "group": "Nagłe sytuacje",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Pomoc lekarza wieczorem, w nocy i w dni wolne, kiedy przychodnia jest zamknięta.",
+      "example": "W Wielkanoc z wysoką gorączką pojechaliśmy na nocną i świąteczną opiekę.",
+      "translation_uk": "нічна і святкова (чергова) допомога"
+    },
+    {
+      "id": "v39",
+      "term": "zemdleć",
+      "group": "Nagłe sytuacje",
+      "part_of_speech": "czasownik, dk",
+      "definition": "Nagle na chwilę stracić przytomność.",
+      "example": "W upale jeden pasażer zemdlał w tramwaju.",
+      "translation_uk": "знепритомніти"
+    },
+    {
+      "id": "v40",
+      "term": "uraz",
+      "group": "Nagłe sytuacje",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Uszkodzenie ciała po wypadku, np. złamanie.",
+      "example": "Po upadku na lodzie miał uraz ręki.",
+      "translation_uk": "травма"
+    }
+  ]
+}

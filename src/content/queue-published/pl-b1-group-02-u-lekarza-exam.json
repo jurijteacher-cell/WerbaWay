@@ -1,0 +1,110 @@
+{
+  "lesson_id": "pl-b1-group-02-u-lekarza",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 14,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Plecy, czyli męska duma”. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Taras wnosił meble na trzecie piętro windą.",
+          "answer": false,
+          "explanation": "W bloku nie ma windy — nosił wszystko po schodach."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Przez pierwsze trzy dni Taras nie brał żadnych leków.",
+          "answer": true,
+          "explanation": "Nie chciał żadnych leków i udawał, że wszystko jest w porządku."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Pani Monika jest lekarką rodzinną Tarasa.",
+          "answer": false,
+          "explanation": "Pani Monika to sąsiadka z góry, pielęgniarka."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Taras poszedł do lekarza w ten sam dzień, w którym Olena zadzwoniła do przychodni.",
+          "answer": false,
+          "explanation": "Na ten dzień nie było terminów — wizyta była następnego dnia o ósmej."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Żeby kupić lek, Taras podał w aptece kod z SMS-a i numer PESEL.",
+          "answer": true,
+          "explanation": "Recepta przyszła SMS-em; w aptece wystarczył kod i PESEL."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Neurolog zbadał Tarasa tydzień po wizycie u lekarza rodzinnego.",
+          "answer": false,
+          "explanation": "Najbliższy termin u neurologa był dopiero w styczniu."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "pl-b1-group-02-u-lekarza-teacher#dialog",
+      "max_plays": 2,
+      "title": "Słuchanie: telefon do przychodni",
+      "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Co dolega pacjentowi?",
+          "options": [
+            "kaszel, gorączka i ból ucha",
+            "katar, gorączka i ból gardła",
+            "kaszel, katar i ból pleców"
+          ],
+          "answer": "kaszel, gorączka i ból ucha",
+          "explanation": "Pacjent mówi: od trzech dni kaszel i gorączka, a dziś rano boli ucho."
+        },
+        {
+          "id": "e2-2",
+          "question": "Dlaczego pacjent nie idzie do swojego lekarza?",
+          "options": [
+            "Na dziś nie ma u niego terminów.",
+            "Jego lekarz jest na urlopie.",
+            "Jego lekarz przyjmuje tylko rano."
+          ],
+          "answer": "Na dziś nie ma u niego terminów.",
+          "explanation": "Do doktora Malinowskiego na dziś nie ma już wolnych terminów."
+        },
+        {
+          "id": "e2-3",
+          "question": "O której pacjent ma wizytę?",
+          "options": [
+            "o jedenastej czterdzieści",
+            "o piętnastej",
+            "o jedenastej czternaście"
+          ],
+          "answer": "o jedenastej czterdzieści",
+          "explanation": "Pacjent bierze termin u doktor Wójcik o 11:40."
+        },
+        {
+          "id": "e2-4",
+          "question": "Co pacjent ma zabrać na wizytę?",
+          "options": [
+            "dowód osobisty i stare wyniki",
+            "dowód osobisty i skierowanie",
+            "skierowanie i stare wyniki"
+          ],
+          "answer": "dowód osobisty i stare wyniki",
+          "explanation": "Rejestratorka prosi o dowód osobisty i wyniki z ostatniego roku."
+        }
+      ]
+    }
+  ]
+}

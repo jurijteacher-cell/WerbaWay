@@ -109,9 +109,13 @@ export function ExamTasks({ data, blockIds }: Props) {
                       : ''}
                   </button>
                 </>
+              ) : block.transcript?.length ? (
+                <p className="nb-note" style={{ marginTop: 0 }}>
+                  Przeczytaj dialog poniżej, potem odpowiedz.
+                </p>
               ) : (
                 <p className="nb-note" style={{ marginTop: 0 }}>
-                  Nagranie TTS w przygotowaniu — przeczytaj dialog poniżej, potem odpowiedz.
+                  🎧 Słuchaj nauczyciela — bez tekstu.
                 </p>
               )}
               {block.transcript?.length ? (

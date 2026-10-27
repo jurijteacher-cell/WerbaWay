@@ -1,0 +1,242 @@
+{
+  "lesson_id": "pl-b1-group-02-u-lekarza",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: dopełniacz w nowych zdaniach",
+  "instruction": "Trzy bloki. Zrób je przed napisaniem e-maila.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz właściwą formę",
+      "instruction": "Wpisz słowa z nawiasu w dopełniaczu.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "W lodówce nie ma już ___ (masło).",
+          "answer": "masła",
+          "grammar_point": "dopelniacz-lp"
+        },
+        {
+          "id": "h1-2",
+          "text": "Do ___ (koncert) zostały dwie godziny.",
+          "answer": "koncertu",
+          "grammar_point": "dopelniacz-m-a-u"
+        },
+        {
+          "id": "h1-3",
+          "text": "Na wycieczkę zabierzcie dużo ___ (woda).",
+          "answer": "wody",
+          "grammar_point": "dopelniacz-ilosc"
+        },
+        {
+          "id": "h1-4",
+          "text": "Moja szefowa nie toleruje ___ (spóźnienia).",
+          "answer": "spóźnień",
+          "grammar_point": "negacja-dopelniacz"
+        },
+        {
+          "id": "h1-5",
+          "text": "Szukamy ___ (nowy pracownik) do biura.",
+          "answer": "nowego pracownika",
+          "grammar_point": "czasowniki-dopelniacz"
+        },
+        {
+          "id": "h1-6",
+          "text": "W tej bibliotece jest ponad tysiąc ___ (książka) po ukraińsku.",
+          "answer": "książek",
+          "grammar_point": "dopelniacz-lm"
+        },
+        {
+          "id": "h1-7",
+          "text": "Kupiłem bilet dla ___ (moja córka).",
+          "answer": "mojej córki",
+          "grammar_point": "dopelniacz-przymiotnik"
+        },
+        {
+          "id": "h1-8",
+          "text": "Studenci boją się ___ (egzamin) z historii.",
+          "answer": "egzaminu",
+          "grammar_point": "czasowniki-dopelniacz"
+        },
+        {
+          "id": "h1-9",
+          "text": "Nie oglądam ___ (seriale) kryminalnych.",
+          "answer": "seriali",
+          "grammar_point": "negacja-dopelniacz",
+          "accept": [
+            "serialów"
+          ]
+        },
+        {
+          "id": "h1-10",
+          "text": "Do końca ___ (miesiąc) muszę oddać projekt.",
+          "answer": "miesiąca",
+          "grammar_point": "dopelniacz-lp"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdania",
+      "instruction": "Klikaj słowa w dobrej kolejności.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "nie",
+            "mam",
+            "dziś",
+            "ochoty",
+            "na",
+            "spacer"
+          ],
+          "answer": "Nie mam dziś ochoty na spacer.",
+          "grammar_point": "dopelniacz-zdanie",
+          "accept": [
+            "Dziś nie mam ochoty na spacer."
+          ]
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "szukamy",
+            "mieszkania",
+            "blisko",
+            "centrum"
+          ],
+          "answer": "Szukamy mieszkania blisko centrum.",
+          "grammar_point": "dopelniacz-zdanie",
+          "accept": [
+            "Blisko centrum szukamy mieszkania."
+          ]
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "w",
+            "tej",
+            "kawiarni",
+            "nie",
+            "ma",
+            "wolnych",
+            "stolików"
+          ],
+          "answer": "W tej kawiarni nie ma wolnych stolików.",
+          "grammar_point": "dopelniacz-zdanie",
+          "accept": [
+            "Nie ma wolnych stolików w tej kawiarni."
+          ]
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "potrzebuję",
+            "twojej",
+            "pomocy",
+            "przy",
+            "przeprowadzce"
+          ],
+          "answer": "Potrzebuję twojej pomocy przy przeprowadzce.",
+          "grammar_point": "dopelniacz-zdanie",
+          "accept": [
+            "Przy przeprowadzce potrzebuję twojej pomocy."
+          ]
+        },
+        {
+          "id": "h2-5",
+          "words": [
+            "mój",
+            "brat",
+            "boi",
+            "się",
+            "psów",
+            "sąsiada"
+          ],
+          "answer": "Mój brat boi się psów sąsiada.",
+          "grammar_point": "dopelniacz-zdanie",
+          "accept": [
+            "Psów sąsiada boi się mój brat."
+          ]
+        },
+        {
+          "id": "h2-6",
+          "words": [
+            "kupiłam",
+            "trzy",
+            "kilo",
+            "jabłek",
+            "i",
+            "butelkę",
+            "soku"
+          ],
+          "answer": "Kupiłam trzy kilo jabłek i butelkę soku.",
+          "grammar_point": "dopelniacz-zdanie",
+          "accept": [
+            "Kupiłam butelkę soku i trzy kilo jabłek."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Nie lubię kawę bez mleka.",
+          "answer": "Nie lubię kawy bez mleka.",
+          "grammar_point": "dopelniacz-popraw",
+          "explanation": "Po „nie” — dopełniacz: kawy."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "U mnie nie ma czasu na sport.",
+          "answer": "Nie mam czasu na sport.",
+          "grammar_point": "dopelniacz-popraw",
+          "explanation": "O sobie: nie mam czasu."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "W sklepie nie było chleb.",
+          "answer": "W sklepie nie było chleba.",
+          "grammar_point": "dopelniacz-popraw",
+          "explanation": "Nie było + dopełniacz: chleba.",
+          "accept": [
+            "Nie było chleba w sklepie."
+          ]
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Szukam pracę w Warszawie.",
+          "answer": "Szukam pracy w Warszawie.",
+          "grammar_point": "dopelniacz-popraw",
+          "explanation": "Szukać + dopełniacz: pracy.",
+          "accept": [
+            "W Warszawie szukam pracy."
+          ]
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Na wycieczce było dwadzieścia osoby.",
+          "answer": "Na wycieczce było dwadzieścia osób.",
+          "grammar_point": "dopelniacz-popraw",
+          "explanation": "Od pięciu w górę — dopełniacz lm.: osób."
+        },
+        {
+          "id": "h3-6",
+          "prompt": "Wróciłam od pracy o szóstej.",
+          "answer": "Wróciłam z pracy o szóstej.",
+          "grammar_point": "dopelniacz-popraw",
+          "explanation": "Skąd? Z miejsca — z pracy.",
+          "accept": [
+            "O szóstej wróciłam z pracy."
+          ]
+        }
+      ]
+    }
+  ]
+}
