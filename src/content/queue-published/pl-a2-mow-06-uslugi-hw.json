@@ -1,0 +1,198 @@
+{
+  "lesson_id": "pl-a2-mow-06-uslugi",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: sprawy i naprawy",
+  "instruction": "Trzy bloki: miejsca, formy i jeden e-mail.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Gdzie? Dokąd? U kogo?",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Wczoraj byłem ___ i dostałem receptę na okulary.",
+          "answer": "u okulisty",
+          "grammar_point": "gdzie-dokad-uslugi",
+          "options": [
+            "u okulisty",
+            "do okulisty",
+            "w okuliście"
+          ],
+          "explanation": "Gdzie byłem? u osoby → u + dopełniacz."
+        },
+        {
+          "id": "h1-2",
+          "text": "Idę ___ po syrop na kaszel.",
+          "answer": "do apteki",
+          "grammar_point": "gdzie-dokad-uslugi",
+          "options": [
+            "do apteki",
+            "w aptece",
+            "na aptekę"
+          ],
+          "explanation": "Dokąd? → do apteki."
+        },
+        {
+          "id": "h1-3",
+          "text": "Mój samochód stoi ___ od tygodnia.",
+          "answer": "w warsztacie",
+          "grammar_point": "gdzie-dokad-uslugi",
+          "options": [
+            "w warsztacie",
+            "do warsztatu",
+            "u warsztatu"
+          ],
+          "explanation": "Gdzie stoi? → w warsztacie."
+        },
+        {
+          "id": "h1-4",
+          "text": "Muszę jeszcze pójść ___, bo spodnie są za długie.",
+          "answer": "do krawcowej",
+          "grammar_point": "gdzie-dokad-uslugi",
+          "options": [
+            "do krawcowej",
+            "u krawcowej",
+            "na krawcową"
+          ],
+          "explanation": "Dokąd? do osoby → do krawcowej."
+        },
+        {
+          "id": "h1-5",
+          "text": "Studenci często uczą się ___ do późna.",
+          "answer": "w bibliotece",
+          "grammar_point": "gdzie-dokad-uslugi",
+          "options": [
+            "w bibliotece",
+            "do biblioteki",
+            "na bibliotekę"
+          ],
+          "explanation": "Gdzie? → w bibliotece."
+        },
+        {
+          "id": "h1-6",
+          "text": "W sobotę zawiozę psa ___ na szczepienie.",
+          "answer": "do weterynarza",
+          "grammar_point": "gdzie-dokad-uslugi",
+          "options": [
+            "do weterynarza",
+            "u weterynarza",
+            "na weterynarza"
+          ],
+          "explanation": "Dokąd? do osoby → do weterynarza."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Wpisz formę",
+      "instruction": "Wpisz słowo z nawiasu w poprawnej formie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Lodówka ___ się w nocy i rano wszystko było ciepłe. (zepsuć, czas przeszły)",
+          "answer": "zepsuła",
+          "grammar_point": "czas-przeszly-rodzaj",
+          "explanation": "Lodówka — ona → zepsuła się."
+        },
+        {
+          "id": "h2-2",
+          "text": "Mój stary rower ___ się na środku mostu. (zepsuć, czas przeszły)",
+          "answer": "zepsuł",
+          "grammar_point": "czas-przeszly-rodzaj",
+          "explanation": "Rower — on → zepsuł się."
+        },
+        {
+          "id": "h2-3",
+          "text": "Światła w przedpokoju nie ___. (działać, teraz)",
+          "answer": "działają",
+          "grammar_point": "czas-przeszly-rodzaj",
+          "explanation": "Światła — liczba mnoga → działają."
+        },
+        {
+          "id": "h2-4",
+          "text": "Nie polecam ___ — naprawa trwała miesiąc. (ten warsztat)",
+          "answer": "tego warsztatu",
+          "grammar_point": "czas-przeszly-rodzaj",
+          "explanation": "Nie polecam + dopełniacz.",
+          "accept": [
+            "tego warsztatu"
+          ]
+        },
+        {
+          "id": "h2-5",
+          "text": "Jestem bardzo zadowolony z ___. (nowy dentysta)",
+          "answer": "nowego dentysty",
+          "grammar_point": "czas-przeszly-rodzaj",
+          "explanation": "Zadowolony z + dopełniacz."
+        },
+        {
+          "id": "h2-6",
+          "text": "Mam problem z ___ — zamek się zablokował. (walizka)",
+          "answer": "walizką",
+          "grammar_point": "czas-przeszly-rodzaj",
+          "explanation": "Problem z + narzędnik: z walizką."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "drag-and-drop",
+      "title": "3. E-mail do sklepu",
+      "instruction": "Przeciągnij słowa w luki. Cztery słowa są niepotrzebne.",
+      "bank": [
+        "kupiłam",
+        "kupiła",
+        "zepsuł",
+        "zepsuła",
+        "zareklamować",
+        "paragon",
+        "paragonu",
+        "zwrot",
+        "zwrotu",
+        "odpowiedź"
+      ],
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Dzień dobry, dwa tygodnie temu ___ w Państwa sklepie internetowym czajnik elektryczny.",
+          "answer": "kupiłam",
+          "grammar_point": "czas-przeszly-rodzaj"
+        },
+        {
+          "id": "h3-2",
+          "text": "Niestety, czajnik już się ___ i nie gotuje wody.",
+          "answer": "zepsuł",
+          "grammar_point": "czas-przeszly-rodzaj"
+        },
+        {
+          "id": "h3-3",
+          "text": "Dlatego chciałabym go ___.",
+          "answer": "zareklamować",
+          "grammar_point": "polecac-przypadek"
+        },
+        {
+          "id": "h3-4",
+          "text": "W załączniku wysyłam ___ i zdjęcie czajnika.",
+          "answer": "paragon",
+          "grammar_point": "polecac-przypadek"
+        },
+        {
+          "id": "h3-5",
+          "text": "Czy mogę dostać ___ pieniędzy?",
+          "answer": "zwrot",
+          "grammar_point": "polecac-przypadek"
+        },
+        {
+          "id": "h3-6",
+          "text": "Z góry dziękuję za szybką ___. Anna Kowalczyk",
+          "answer": "odpowiedź",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    }
+  ]
+}

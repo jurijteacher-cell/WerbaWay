@@ -1,0 +1,441 @@
+{
+  "lesson_id": "pl-a2-mow-06-uslugi",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: sprawy, awarie i reklamacje",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 22,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "exercise_type": "matching",
+      "title": "1. Słowa z poczty, banku i serwisu",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "przelew",
+          "right": "pieniądze, które wysyłasz z konta na inne konto",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "paragon",
+          "right": "papier z kasy, który pokazuje, co kupiłeś i za ile",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "przerwa",
+          "right": "krótki czas, kiedy okienko albo kasa nie działa",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "hydraulik",
+          "right": "fachowiec od kranów, rur i wody",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "przełożyć wizytę",
+          "right": "zmienić dzień albo godzinę spotkania",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "awaria",
+          "right": "nagły problem: coś przestało działać",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Gdzie? Dokąd? U kogo?",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Jutro rano muszę iść ___, bo kończą mi się znaczki.",
+          "answer": "na pocztę",
+          "grammar_point": "gdzie-dokad-uslugi",
+          "options": [
+            "na pocztę",
+            "na poczcie",
+            "do poczty"
+          ],
+          "explanation": "Idę dokąd? → na + biernik: na pocztę. Na poczcie — tam, gdzie jestem."
+        },
+        {
+          "id": "g2-2",
+          "text": "Moja siostra pracuje ___ w centrum miasta.",
+          "answer": "w banku",
+          "grammar_point": "gdzie-dokad-uslugi",
+          "options": [
+            "w banku",
+            "u banku",
+            "do banku"
+          ],
+          "explanation": "Instytucja → w + miejscownik. „U” stawiamy tylko przed osobą: u fryzjera, u lekarza."
+        },
+        {
+          "id": "g2-3",
+          "text": "W czwartek o dziesiątej idę ___.",
+          "answer": "do fryzjera",
+          "grammar_point": "gdzie-dokad-uslugi",
+          "options": [
+            "do fryzjera",
+            "u fryzjera",
+            "na fryzjera"
+          ],
+          "explanation": "Dokąd? do osoby → do + dopełniacz: do fryzjera."
+        },
+        {
+          "id": "g2-4",
+          "text": "Byłam wczoraj ___ i dostałam receptę.",
+          "answer": "u lekarza",
+          "grammar_point": "gdzie-dokad-uslugi",
+          "options": [
+            "u lekarza",
+            "do lekarza",
+            "w lekarzu"
+          ],
+          "explanation": "Gdzie byłam? u osoby → u + dopełniacz: u lekarza."
+        },
+        {
+          "id": "g2-5",
+          "text": "Bilety kupiliśmy ___ kolejowym.",
+          "answer": "na dworcu",
+          "grammar_point": "gdzie-dokad-uslugi",
+          "options": [
+            "na dworcu",
+            "w dworcu",
+            "na dworzec"
+          ],
+          "explanation": "Dworzec jak poczta: na dworcu (gdzie?), na dworzec (dokąd?)."
+        },
+        {
+          "id": "g2-6",
+          "text": "W przyszłym tygodniu jadę ___, żeby odebrać kartę pobytu.",
+          "answer": "do urzędu",
+          "grammar_point": "gdzie-dokad-uslugi",
+          "options": [
+            "do urzędu",
+            "na urząd",
+            "w urzędzie"
+          ],
+          "explanation": "Jadę dokąd? → do urzędu. Ale: na pocztę, na dworzec."
+        },
+        {
+          "id": "g2-7",
+          "text": "Zostawiłem laptopa ___ na trzy dni.",
+          "answer": "w serwisie",
+          "grammar_point": "gdzie-dokad-uslugi",
+          "options": [
+            "w serwisie",
+            "do serwisu",
+            "na serwisie"
+          ],
+          "explanation": "Zostawiłem gdzie? → w serwisie. Oddałem dokąd? → do serwisu."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Co się zepsuło?",
+      "instruction": "Wpisz czasownik z nawiasu w czasie przeszłym. Uważaj na rodzaj.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Wczoraj wieczorem ___ się pralka. (zepsuć)",
+          "answer": "zepsuła",
+          "grammar_point": "czas-przeszly-rodzaj",
+          "explanation": "Pralka — ona → -ła: zepsuła się."
+        },
+        {
+          "id": "g3-2",
+          "text": "W drodze nad morze ___ nam się samochód. (zepsuć)",
+          "answer": "zepsuł",
+          "grammar_point": "czas-przeszly-rodzaj",
+          "explanation": "Samochód — on → -ł: zepsuł się."
+        },
+        {
+          "id": "g3-3",
+          "text": "Radio w kuchni ___ się po burzy. (zepsuć)",
+          "answer": "zepsuło",
+          "grammar_point": "czas-przeszly-rodzaj",
+          "explanation": "Radio — ono → -ło: zepsuło się."
+        },
+        {
+          "id": "g3-4",
+          "text": "Drzwi do garażu ___ się i nie można ich zamknąć. (zepsuć)",
+          "answer": "zepsuły",
+          "grammar_point": "czas-przeszly-rodzaj",
+          "explanation": "Drzwi mają tylko liczbę mnogą → -ły: zepsuły się."
+        },
+        {
+          "id": "g3-5",
+          "text": "Okulary spadły na podłogę i szkło ___. (pęknąć)",
+          "answer": "pękło",
+          "grammar_point": "czas-przeszly-rodzaj",
+          "explanation": "Szkło — ono → pękło. On pękł, ona pękła."
+        },
+        {
+          "id": "g3-6",
+          "text": "Nowe słuchawki ___ tylko tydzień. (działać)",
+          "answer": "działały",
+          "grammar_point": "czas-przeszly-rodzaj",
+          "explanation": "Słuchawki — liczba mnoga, rzeczy → -ły: działały."
+        },
+        {
+          "id": "g3-7",
+          "text": "Kiedy kawa była gotowa, ekspres sam ___ się. (wyłączyć)",
+          "answer": "wyłączył",
+          "grammar_point": "czas-przeszly-rodzaj",
+          "explanation": "Ekspres — on → wyłączył się."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "exercise_type": "fill-in-blank",
+      "title": "4. Polecam, nie polecam, mam problem z…",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Nie polecam tego ___ — czekałam na naprawę dwa tygodnie.",
+          "answer": "serwisu",
+          "grammar_point": "polecac-przypadek",
+          "options": [
+            "serwisu",
+            "serwis",
+            "serwisem"
+          ],
+          "explanation": "Nie polecam + dopełniacz — jak „nie lubię”, „nie mam”."
+        },
+        {
+          "id": "g4-2",
+          "text": "Polecam Ci ___ na rogu — mają świetne bułki.",
+          "answer": "tę piekarnię",
+          "grammar_point": "polecac-przypadek",
+          "options": [
+            "tę piekarnię",
+            "tej piekarni",
+            "ta piekarnia"
+          ],
+          "explanation": "Polecam + biernik: polecam tę piekarnię."
+        },
+        {
+          "id": "g4-3",
+          "text": "Jestem bardzo zadowolona z ___.",
+          "answer": "nowej fryzjerki",
+          "grammar_point": "polecac-przypadek",
+          "options": [
+            "nowej fryzjerki",
+            "nową fryzjerką",
+            "nowa fryzjerka"
+          ],
+          "explanation": "Zadowolony z + dopełniacz: z nowej fryzjerki."
+        },
+        {
+          "id": "g4-4",
+          "text": "Mam problem z ___ — nie chce się włączyć.",
+          "answer": "laptopem",
+          "grammar_point": "polecac-przypadek",
+          "options": [
+            "laptopem",
+            "laptopa",
+            "laptop"
+          ],
+          "explanation": "Problem z czym? → z + narzędnik: z laptopem."
+        },
+        {
+          "id": "g4-5",
+          "text": "Dzień dobry, chciałbym zareklamować ___.",
+          "answer": "tę kurtkę",
+          "grammar_point": "polecac-przypadek",
+          "options": [
+            "tę kurtkę",
+            "tej kurtki",
+            "ta kurtka"
+          ],
+          "explanation": "Zareklamować co? → biernik: tę kurtkę."
+        },
+        {
+          "id": "g4-6",
+          "text": "Niestety, nie mam ___. Czy mogę oddać buty?",
+          "answer": "paragonu",
+          "grammar_point": "polecac-przypadek",
+          "options": [
+            "paragonu",
+            "paragon",
+            "paragonem"
+          ],
+          "explanation": "Nie mam + dopełniacz: nie mam paragonu."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "exercise_type": "sentence-building",
+      "title": "5. Ułóż grzeczną prośbę",
+      "instruction": "Ułóż zdanie z kafelków. Często jest więcej niż jeden dobry porządek.",
+      "items": [
+        {
+          "id": "g5-1",
+          "words": [
+            "czy",
+            "mógłby",
+            "pan",
+            "przyjechać",
+            "dzisiaj",
+            "po",
+            "południu?"
+          ],
+          "answer": "Czy mógłby pan przyjechać dzisiaj po południu?",
+          "accept": [
+            "Czy mógłby pan dzisiaj po południu przyjechać?",
+            "Czy mógłby pan przyjechać po południu dzisiaj?"
+          ],
+          "grammar_point": "prosba-grzeczna"
+        },
+        {
+          "id": "g5-2",
+          "words": [
+            "chciałabym",
+            "wysłać",
+            "list",
+            "polecony",
+            "do",
+            "Gdańska"
+          ],
+          "answer": "Chciałabym wysłać list polecony do Gdańska.",
+          "accept": [
+            "Do Gdańska chciałabym wysłać list polecony.",
+            "Chciałabym wysłać do Gdańska list polecony."
+          ],
+          "grammar_point": "prosba-grzeczna"
+        },
+        {
+          "id": "g5-3",
+          "words": [
+            "czy",
+            "mogę",
+            "przełożyć",
+            "wizytę",
+            "na",
+            "piątek?"
+          ],
+          "answer": "Czy mogę przełożyć wizytę na piątek?",
+          "accept": [
+            "Czy wizytę mogę przełożyć na piątek?",
+            "Czy mogę wizytę przełożyć na piątek?"
+          ],
+          "grammar_point": "prosba-grzeczna"
+        },
+        {
+          "id": "g5-4",
+          "words": [
+            "zepsuł",
+            "mi",
+            "się",
+            "laptop",
+            "i",
+            "nie",
+            "mogę",
+            "pracować"
+          ],
+          "answer": "Zepsuł mi się laptop i nie mogę pracować.",
+          "accept": [
+            "Laptop mi się zepsuł i nie mogę pracować.",
+            "Laptop zepsuł mi się i nie mogę pracować.",
+            "Zepsuł mi się laptop, i nie mogę pracować."
+          ],
+          "grammar_point": "prosba-grzeczna"
+        },
+        {
+          "id": "g5-5",
+          "words": [
+            "trzeba",
+            "wypełnić",
+            "ten",
+            "formularz",
+            "drukowanymi",
+            "literami"
+          ],
+          "answer": "Trzeba wypełnić ten formularz drukowanymi literami.",
+          "accept": [
+            "Ten formularz trzeba wypełnić drukowanymi literami.",
+            "Trzeba ten formularz wypełnić drukowanymi literami.",
+            "Drukowanymi literami trzeba wypełnić ten formularz."
+          ],
+          "grammar_point": "prosba-grzeczna"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "exercise_type": "sentence-building",
+      "title": "6. Popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g6-1",
+          "prompt": "Złamał mi się telefon, muszę iść do serwisu.",
+          "answer": "Zepsuł mi się telefon, muszę iść do serwisu.",
+          "accept": [
+            "Telefon mi się zepsuł, muszę iść do serwisu.",
+            "Zepsuł mi się telefon i muszę iść do serwisu."
+          ],
+          "explanation": "Sprzęt się psuje: zepsuł się. „Złamać” mówimy o kości albo patyku: złamał nogę.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-2",
+          "prompt": "Chcę wysłać posyłkę do Kijowa.",
+          "answer": "Chcę wysłać paczkę do Kijowa.",
+          "explanation": "Укр. посилка → po polsku paczka.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-3",
+          "prompt": "Czy mogę zapłacić kartką?",
+          "answer": "Czy mogę zapłacić kartą?",
+          "explanation": "Karta — płatnicza. Kartka — kawałek papieru.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-4",
+          "prompt": "Moja żona pracuje u banku.",
+          "answer": "Moja żona pracuje w banku.",
+          "explanation": "U + osoba (u fryzjera). Instytucja → w banku, na poczcie.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-5",
+          "prompt": "Remont telefonu kosztował dwieście złotych.",
+          "answer": "Naprawa telefonu kosztowała dwieście złotych.",
+          "accept": [
+            "Naprawa telefonu kosztowała 200 złotych.",
+            "Naprawa telefonu kosztowała 200 zł."
+          ],
+          "explanation": "Remont — mieszkania, domu. Sprzęt → naprawa. Naprawa (ona) → kosztowała.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g6-6",
+          "prompt": "Proszę, tu jest pana czek i reszta.",
+          "answer": "Proszę, tu jest pana paragon i reszta.",
+          "accept": [
+            "Proszę, tu jest paragon i reszta."
+          ],
+          "explanation": "Укр. чек → po polsku paragon. Czek to dokument bankowy.",
+          "grammar_point": "kalki-uk"
+        }
+      ]
+    }
+  ]
+}
