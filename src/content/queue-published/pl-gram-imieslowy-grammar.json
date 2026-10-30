@@ -1,0 +1,671 @@
+{
+  "lesson_id": "pl-gram-imieslowy",
+  "exercise_type": "fill-in-blank",
+  "title": "Imiesłowy przymiotnikowe: -ący i -ny / -ony / -ty",
+  "instruction": "Najpierw tekst, potem dwie części gramatyki — po każdej ćwiczenia.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "g0",
+      "part": 1,
+      "exercise_type": "true-false",
+      "title": "0. Na start: co wiemy z tekstu?",
+      "instruction": "Prawda czy fałsz? Szukaj w tekście form na -ący i -ny / -ony / -ty — one dają odpowiedź.",
+      "items": [
+        {
+          "id": "g0-1",
+          "statement": "Fleming pracował w Oksfordzie.",
+          "answer": false,
+          "explanation": "„Fleming, pracujący w szpitalu St Mary's w Londynie”. W Oksfordzie pracował zespół Floreya.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g0-2",
+          "statement": "Szalki z bakteriami zostały w laboratorium przed urlopem.",
+          "answer": true,
+          "explanation": "„Szalki z bakteriami zostawione tam przed wyjazdem”.",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g0-3",
+          "statement": "Bakterie wokół pleśni dobrze rosły.",
+          "answer": false,
+          "explanation": "„Bakterie rosnące wokół pleśni były martwe”.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g0-4",
+          "statement": "Artykuł Fleminga od razu zainteresował wielu naukowców.",
+          "answer": false,
+          "explanation": "„Przez kilka lat mało kto się nim interesował”.",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g0-5",
+          "statement": "Zespołem z Oksfordu kierował Howard Florey.",
+          "answer": true,
+          "explanation": "„Zespół kierowany przez Howarda Floreya” — przez + biernik mówi, kto kieruje.",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g0-6",
+          "statement": "Antybiotyki brane bez potrzeby mogą przestać działać.",
+          "answer": true,
+          "explanation": "„Leki przyjmowane bez potrzeby […] przestają działać”.",
+          "grammar_point": "imieslow-bierny"
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Forma na -ący",
+      "instruction": "Wpisz imiesłów na -ący. Najpierw powiedz formę „oni”: czekają → czekający.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Mężczyzna ___ (czekać) na przystanku to nasz lekarz.",
+          "answer": "czekający",
+          "explanation": "czekają → czekający",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g1-2",
+          "text": "Kobieta ___ (pisać) coś w zeszycie to pielęgniarka.",
+          "answer": "pisząca",
+          "explanation": "piszą → pisząca",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g1-3",
+          "text": "Dziecko ___ (płakać) w poczekalni ma gorączkę.",
+          "answer": "płaczące",
+          "explanation": "płaczą → płaczące",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g1-4",
+          "text": "Pan ___ (iść) przed nami to dyrektor szpitala.",
+          "answer": "idący",
+          "explanation": "idą → idący",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g1-5",
+          "text": "Pani ___ (chcieć) zapisać się do lekarza musi poczekać.",
+          "answer": "chcąca",
+          "explanation": "chcą → chcąca",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g1-6",
+          "text": "Student ___ (być) na stażu w szpitalu dostaje mało pieniędzy.",
+          "answer": "będący",
+          "explanation": "Wyjątek: są → ale imiesłów będący (od „będą”).",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g1-7",
+          "text": "Pacjent ___ (mieć) wysoką temperaturę leży w łóżku.",
+          "answer": "mający",
+          "explanation": "mają → mający",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g1-8",
+          "text": "Pielęgniarka ___ (pracować) na nocnej zmianie jest zmęczona.",
+          "answer": "pracująca",
+          "explanation": "pracują → pracująca",
+          "grammar_point": "imieslow-czynny"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "2. Zamiast „który” — imiesłów na -ący",
+      "instruction": "Napisz krótsze zdanie z imiesłowem. Uważaj na przypadek: imiesłów ma formę rzeczownika.",
+      "items": [
+        {
+          "id": "g2-1",
+          "prompt": "Ludzie, którzy mieszkają w centrum, narzekają na hałas.",
+          "answer": "Ludzie mieszkający w centrum narzekają na hałas.",
+          "accept": [
+            "Ludzie, mieszkający w centrum, narzekają na hałas."
+          ],
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g2-2",
+          "prompt": "Znam lekarkę, która mówi po rosyjsku.",
+          "answer": "Znam lekarkę mówiącą po rosyjsku.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g2-3",
+          "prompt": "Dzieci, które bawią się w parku, są głośne.",
+          "answer": "Dzieci bawiące się w parku są głośne.",
+          "accept": [
+            "Dzieci, bawiące się w parku, są głośne."
+          ],
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g2-4",
+          "prompt": "Szukamy pracowników, którzy znają angielski.",
+          "answer": "Szukamy pracowników znających angielski.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g2-5",
+          "prompt": "Rozmawiałem z kobietą, która sprzedaje bilety.",
+          "answer": "Rozmawiałem z kobietą sprzedającą bilety.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g2-6",
+          "prompt": "To jest lek, który obniża temperaturę.",
+          "answer": "To jest lek obniżający temperaturę.",
+          "grammar_point": "imieslow-czynny"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Imiesłów czy „który”?",
+      "instruction": "-ący tylko od czasownika niedokonanego i tylko o tym, co dzieje się w tym samym czasie. Wybierz.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Student ___ teraz ten artykuł ma jutro egzamin.",
+          "options": [
+            "przeczytający",
+            "czytający"
+          ],
+          "answer": "czytający",
+          "explanation": "Od czasownika dokonanego nie ma formy na -ący.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g3-2",
+          "text": "Student, ___ ten artykuł wczoraj, wie już wszystko.",
+          "options": [
+            "który przeczytał",
+            "czytający"
+          ],
+          "answer": "który przeczytał",
+          "explanation": "Skończone w przeszłości: tylko „który”. Rosyjskie „прочитавший” nie ma polskiego odpowiednika.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g3-3",
+          "text": "Wrocław to szybko ___ miasto.",
+          "options": [
+            "rozwijające się",
+            "rozwijające"
+          ],
+          "answer": "rozwijające się",
+          "explanation": "Rozwija się → rozwijające się. „Się” zostaje.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g3-4",
+          "text": "Pacjenci, ___ już do domu, czują się dobrze.",
+          "options": [
+            "wracający",
+            "którzy wrócili"
+          ],
+          "answer": "którzy wrócili",
+          "explanation": "Wrócili — dokonany i przeszłość: tylko „którzy”.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g3-5",
+          "text": "Ludzie ___ na pociąg stoją na peronie.",
+          "options": [
+            "czekający",
+            "poczekający"
+          ],
+          "answer": "czekający",
+          "explanation": "Poczekać jest dokonane — nie ma formy na -ący.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g3-6",
+          "text": "Dziewczyna ___ polskiego od roku mówi już bardzo dobrze.",
+          "options": [
+            "ucząca się",
+            "uczona"
+          ],
+          "answer": "ucząca się",
+          "explanation": "Ona się uczy → ucząca się. „Uczona” znaczy: której ktoś uczy.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g3-7",
+          "text": "Mój ___ szef jest z Krakowa.",
+          "options": [
+            "będący",
+            "przyszły"
+          ],
+          "answer": "przyszły",
+          "explanation": "„Будущий” to po polsku przyszły. „Będący” = который является.",
+          "grammar_point": "kalki-ru"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Odmiana: jak przymiotnik",
+      "instruction": "Wpisz imiesłów z nawiasu w dobrej formie. Zapytaj: jaki? jakiej? jakim?",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Rozmawiałem z ___ (pracujący) matką trojga dzieci.",
+          "answer": "pracującą",
+          "explanation": "z kim? — narzędnik, jak „z dobrą matką”.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g4-2",
+          "text": "Ten kurs jest dla ___ (uczący się) studentów.",
+          "answer": "uczących się",
+          "explanation": "dla kogo? — dopełniacz l. mn.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g4-3",
+          "text": "Lekarz dał lek ___ (kaszlący) dziecku.",
+          "answer": "kaszlącemu",
+          "explanation": "komu? — celownik.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g4-4",
+          "text": "W tym szpitalu ___ (pracujący) lekarze nie mają czasu na obiad.",
+          "answer": "pracujący",
+          "explanation": "Lekarze to mężczyźni: forma męskoosobowa = pracujący.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g4-5",
+          "text": "Na korytarzu siedzą ___ (czekający) pacjentki.",
+          "answer": "czekające",
+          "explanation": "Pacjentki to kobiety: forma niemęskoosobowa = czekające.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g4-6",
+          "text": "W autobusie ustąp miejsca ___ (stojący) kobiecie w ciąży.",
+          "answer": "stojącej",
+          "explanation": "komu? — celownik.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g4-7",
+          "text": "Szukamy osób ___ (mówiący) po niemiecku.",
+          "answer": "mówiących",
+          "explanation": "szukać + dopełniacz.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g4-8",
+          "text": "Dyrektor szpitala rozmawiał z ___ (protestujący) pielęgniarkami.",
+          "answer": "protestującymi",
+          "explanation": "z kim? — narzędnik l. mn.",
+          "grammar_point": "imieslow-czynny"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. -ący czy -ny?",
+      "instruction": "Kto robi, a z kim / z czym coś się robi? Wybierz imiesłów czynny albo bierny.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Pacjent ___ przez lekarza leży na łóżku.",
+          "options": [
+            "badający",
+            "badany"
+          ],
+          "answer": "badany",
+          "explanation": "Ktoś go bada → imiesłów bierny. „Przez” zawsze z biernym.",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g5-2",
+          "text": "Lekarz ___ pacjenta zadaje dużo pytań.",
+          "options": [
+            "badany",
+            "badający"
+          ],
+          "answer": "badający",
+          "explanation": "On bada → imiesłów czynny.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g5-3",
+          "text": "Ten lek, ___ przez wielu lekarzy, jest drogi.",
+          "options": [
+            "polecany",
+            "polecający"
+          ],
+          "answer": "polecany",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g5-4",
+          "text": "Studenci ___ medycynę mają mało czasu.",
+          "options": [
+            "studiujący",
+            "studiowani"
+          ],
+          "answer": "studiujący",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g5-5",
+          "text": "Dokumenty ___ przez pacjenta leżą w recepcji.",
+          "options": [
+            "podpisujące",
+            "podpisane"
+          ],
+          "answer": "podpisane",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g5-6",
+          "text": "Pielęgniarka ___ chorym ma dużo pracy.",
+          "options": [
+            "pomagana",
+            "pomagająca"
+          ],
+          "answer": "pomagająca",
+          "explanation": "Pomagać komu? — celownik. Od takich czasowników nie ma imiesłowu biernego.",
+          "grammar_point": "imieslow-czynny"
+        },
+        {
+          "id": "g5-7",
+          "text": "Szpital ___ w XIX wieku jest dziś muzeum.",
+          "options": [
+            "zbudowany",
+            "budujący"
+          ],
+          "answer": "zbudowany",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g5-8",
+          "text": "Ludzie ___ antybiotyki bez potrzeby szkodzą sobie.",
+          "options": [
+            "biorący",
+            "brani"
+          ],
+          "answer": "biorący",
+          "grammar_point": "imieslow-czynny"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Proces czy wynik?",
+      "instruction": "Niedokonany: dzieje się, często, zwykle. Dokonany: już zrobione. Wybierz.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "To najczęściej ___ książka w naszej bibliotece.",
+          "options": [
+            "przeczytana",
+            "czytana"
+          ],
+          "answer": "czytana",
+          "explanation": "Wiele razy, ciągle → niedokonany. Po rosyjsku: читаемая.",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g6-2",
+          "text": "Odłożyłem na półkę książkę ___ do końca.",
+          "options": [
+            "przeczytaną",
+            "czytaną"
+          ],
+          "answer": "przeczytaną",
+          "explanation": "Już skończone → dokonany. Po rosyjsku: прочитанная.",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g6-3",
+          "text": "Ten lek jest często ___ dzieciom.",
+          "options": [
+            "przepisany",
+            "przepisywany"
+          ],
+          "answer": "przepisywany",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g6-4",
+          "text": "Recepta ___ wczoraj leży na stole w kuchni.",
+          "options": [
+            "wystawiana",
+            "wystawiona"
+          ],
+          "answer": "wystawiona",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g6-5",
+          "text": "Pacjenci ___ co tydzień muszą przychodzić na czczo.",
+          "options": [
+            "badani",
+            "zbadani"
+          ],
+          "answer": "badani",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g6-6",
+          "text": "Wszyscy ___ już pacjenci mogą iść do domu.",
+          "options": [
+            "zbadani",
+            "badani"
+          ],
+          "answer": "zbadani",
+          "grammar_point": "imieslow-bierny"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Mężczyźni czy nie?",
+      "instruction": "Wpisz imiesłów w liczbie mnogiej. Męskoosobowe: -ony → -eni, -ny → -ni, -ty → -ci.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Wszyscy ___ (zaproszony) goście przyszli o szóstej.",
+          "answer": "zaproszeni",
+          "explanation": "zaproszony → zaproszeni",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g7-2",
+          "text": "Nowo ___ (zatrudniony) pielęgniarki zaczynają w poniedziałek.",
+          "answer": "zatrudnione",
+          "explanation": "Kobiety → zatrudnione.",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g7-3",
+          "text": "Nowo ___ (zatrudniony) lekarze dostali klucze do gabinetów.",
+          "answer": "zatrudnieni",
+          "explanation": "Mężczyźni → zatrudnieni.",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g7-4",
+          "text": "Wszystkie dzieci są już ___ (zaszczepiony).",
+          "answer": "zaszczepione",
+          "explanation": "Dzieci → forma niemęskoosobowa.",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g7-5",
+          "text": "Pacjenci ___ (przebadany) rano mogą zjeść śniadanie.",
+          "answer": "przebadani",
+          "explanation": "-any → -ani",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g7-6",
+          "text": "Wszyscy ___ (przyjęty) studenci dostaną maila.",
+          "answer": "przyjęci",
+          "explanation": "-ty → -ci",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g7-7",
+          "text": "Dwaj kierowcy zostali ___ (zabrany) do szpitala.",
+          "answer": "zabrani",
+          "explanation": "Strona bierna: zostali + forma męskoosobowa.",
+          "grammar_point": "bierna-byc-zostac"
+        },
+        {
+          "id": "g7-8",
+          "text": "Te okna nie są ___ (umyty).",
+          "answer": "umyte",
+          "explanation": "Okna → umyte.",
+          "grammar_point": "imieslow-bierny"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "8. Zamiast „który” — imiesłów bierny",
+      "instruction": "Napisz krótsze zdanie z imiesłowem na -ny / -ony / -ty. Wykonawcę dodaj z „przez”.",
+      "items": [
+        {
+          "id": "g8-1",
+          "prompt": "Lek, który odkrył Fleming, uratował miliony ludzi.",
+          "answer": "Lek odkryty przez Fleminga uratował miliony ludzi.",
+          "accept": [
+            "Odkryty przez Fleminga lek uratował miliony ludzi."
+          ],
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g8-2",
+          "prompt": "Czytam książkę, którą napisała Olga Tokarczuk.",
+          "answer": "Czytam książkę napisaną przez Olgę Tokarczuk.",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g8-3",
+          "prompt": "Pacjent, którego zoperowano wczoraj, czuje się dobrze.",
+          "answer": "Pacjent zoperowany wczoraj czuje się dobrze.",
+          "accept": [
+            "Pacjent operowany wczoraj czuje się dobrze.",
+            "Wczoraj zoperowany pacjent czuje się dobrze.",
+            "Zoperowany wczoraj pacjent czuje się dobrze."
+          ],
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g8-4",
+          "prompt": "Dostałem receptę, którą wystawiła lekarka rodzinna.",
+          "answer": "Dostałem receptę wystawioną przez lekarkę rodzinną.",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g8-5",
+          "prompt": "Studenci, których zaproszono na konferencję, przyjechali z całej Polski.",
+          "answer": "Studenci zaproszeni na konferencję przyjechali z całej Polski.",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g8-6",
+          "prompt": "Mieszkam w domu, który zbudował mój dziadek.",
+          "answer": "Mieszkam w domu zbudowanym przez mojego dziadka.",
+          "grammar_point": "imieslow-bierny"
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "9. Popraw kalkę z rosyjskiego",
+      "instruction": "Każde zdanie ma jeden błąd. Napisz je poprawnie.",
+      "items": [
+        {
+          "id": "g9-1",
+          "prompt": "Student przeczytający książkę zna już zakończenie.",
+          "answer": "Student, który przeczytał książkę, zna już zakończenie.",
+          "accept": [
+            "Student który przeczytał książkę zna już zakończenie."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g9-2",
+          "prompt": "To jest szybko rozwijający kraj.",
+          "answer": "To jest szybko rozwijający się kraj.",
+          "accept": [
+            "To jest kraj szybko rozwijający się.",
+            "To jest kraj szybko się rozwijający.",
+            "To jest szybko się rozwijający kraj."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g9-3",
+          "prompt": "Będący lekarz musi dużo się uczyć.",
+          "answer": "Przyszły lekarz musi dużo się uczyć.",
+          "accept": [
+            "Przyszły lekarz musi się dużo uczyć."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g9-4",
+          "prompt": "Zaproszone goście siedzą przy stole.",
+          "answer": "Zaproszeni goście siedzą przy stole.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g9-5",
+          "prompt": "Szanowany Panie Dyrektorze,",
+          "answer": "Szanowny Panie Dyrektorze,",
+          "accept": [
+            "Szanowny Panie Dyrektorze",
+            "Szanowny Panie Dyrektorze!"
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g9-6",
+          "prompt": "To jest często czytająca książka.",
+          "answer": "To jest często czytana książka.",
+          "accept": [
+            "To jest książka często czytana."
+          ],
+          "grammar_point": "kalki-ru"
+        }
+      ]
+    }
+  ]
+}
