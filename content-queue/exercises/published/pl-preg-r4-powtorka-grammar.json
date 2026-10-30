@@ -1,0 +1,511 @@
+{
+ "lesson_id": "pl-preg-r4-powtorka",
+ "exercise_type": "fill-in-blank",
+ "title": "Powtórka: zdjęcia, słowa, dopełniacz i wszystkie przypadki",
+ "instruction": "Sześć bloków. Bloki 1–2 to słowa (ze zdjęciami), bloki 3–6 to gramatyka i tekst. Kliknij odpowiedź i sprawdź.",
+ "estimated_minutes": 25,
+ "blocks": [
+  {
+   "block_id": "g1",
+   "title": "1. Co widać na zdjęciu?",
+   "exercise_type": "fill-in-blank",
+   "instruction": "Popatrz na zdjęcie i wybierz słowo, które pasuje.",
+   "items": [
+    {
+     "id": "g1-1",
+     "text": "Ten zmięty ___ jest z kasy w sklepie — lepiej go nie wyrzucać.",
+     "options": [
+      "paragon",
+      "rachunek",
+      "termin"
+     ],
+     "answer": "paragon",
+     "explanation": "W sklepie dostajesz paragon. Rachunek dostajesz w kawiarni albo z banku.",
+     "image_url": "https://images.unsplash.com/photo-1545941962-1b6654eb8072?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Zmięty paragon na białym tle",
+     "image_credit": "Fot. Michael Walter / Unsplash",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g1-2",
+     "text": "Na witrynie wisi wielki napis, bo w sklepie jest ___.",
+     "options": [
+      "promocja",
+      "reklamacja",
+      "rata"
+     ],
+     "answer": "promocja",
+     "image_url": "https://images.unsplash.com/photo-1580828343064-fde4fc206bc6?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Żółty napis SALE na szybie sklepu",
+     "image_credit": "Fot. Markus Spiske / Unsplash",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g1-3",
+     "text": "Co tydzień wrzucamy do świnki kilka monet, bo ___ na wakacje.",
+     "options": [
+      "oszczędzamy",
+      "wydajemy",
+      "pożyczamy"
+     ],
+     "answer": "oszczędzamy",
+     "image_url": "https://images.unsplash.com/photo-1607863680198-23d4b2565df0?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Różowa świnka skarbonka i monety na stole",
+     "image_credit": "Fot. Andre Taissin / Unsplash",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g1-4",
+     "text": "Zanim pójdziesz do sklepu, napisz krótką ___.",
+     "options": [
+      "listę zakupów",
+      "reklamację",
+      "gwarancję"
+     ],
+     "answer": "listę zakupów",
+     "image_url": "https://images.unsplash.com/photo-1623265300459-dfc7609a0a55?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Notes z listą zakupów i zielony długopis",
+     "image_credit": "Fot. Torbjørn Helgesen / Unsplash",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g1-5",
+     "text": "Ta lekka ___ jest dla dziecka, które już samo siedzi.",
+     "options": [
+      "spacerówka",
+      "gondola",
+      "wanienka"
+     ],
+     "answer": "spacerówka",
+     "explanation": "Gondola jest dla niemowlęcia, które jeszcze leży.",
+     "image_url": "https://images.unsplash.com/photo-1559135141-2bea6465fccf?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Czerwono-czarna spacerówka na chodniku w parku",
+     "image_credit": "Fot. Kyaw Zay Ya / Unsplash",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g1-6",
+     "text": "Wieczorem liczy na kalkulatorze, ile w tym miesiącu ___ na jedzenie.",
+     "options": [
+      "wydała",
+      "oddała",
+      "pożyczyła"
+     ],
+     "answer": "wydała",
+     "image_url": "https://images.unsplash.com/photo-1707902665498-a202981fb5ac?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Osoba przy biurku z kalkulatorem i notesem",
+     "image_credit": "Fot. Jakub Żerdzicki / Unsplash",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g1-7",
+     "text": "Te ubranka są ___, ale w bardzo dobrym stanie — dostaliśmy je po kuzynie.",
+     "options": [
+      "używane",
+      "uszkodzone",
+      "zbędne"
+     ],
+     "answer": "używane",
+     "image_url": "https://images.unsplash.com/photo-1768693602418-260d828b878d?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Ubranka dla niemowlęcia w wiklinowym koszu",
+     "image_credit": "Fot. CARMELA LUSTRE / Unsplash",
+     "grammar_point": "slownictwo"
+    }
+   ]
+  },
+  {
+   "block_id": "g2",
+   "title": "2. Słowa z lekcji 7",
+   "exercise_type": "matching",
+   "instruction": "Kliknij słowo po lewej, potem jego znaczenie po prawej.",
+   "items": [
+    {
+     "id": "g2-1",
+     "left": "paragon",
+     "right": "mały papier z kasy: co kupiłaś i za ile",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g2-2",
+     "left": "rata",
+     "right": "część ceny, którą płacisz co miesiąc",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g2-3",
+     "left": "odbiór osobisty",
+     "right": "przyjeżdżasz po rzecz sama, bez kuriera",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g2-4",
+     "left": "gwarancja",
+     "right": "przez ten czas producent naprawi zepsutą rzecz",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g2-5",
+     "left": "zbędny",
+     "right": "niepotrzebny, dasz sobie radę bez tego",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g2-6",
+     "left": "pożyczyć",
+     "right": "wziąć coś na jakiś czas i potem oddać",
+     "grammar_point": "slownictwo"
+    },
+    {
+     "id": "g2-7",
+     "left": "w razie czego",
+     "right": "na wypadek, gdyby coś się stało",
+     "grammar_point": "slownictwo"
+    }
+   ]
+  },
+  {
+   "block_id": "g3",
+   "title": "3. Czego? Ile? Dopełniacz",
+   "exercise_type": "fill-in-blank",
+   "instruction": "Wybierz formę, która pasuje do zdania.",
+   "items": [
+    {
+     "id": "g3-1",
+     "text": "Nie mamy już ___ na nową spacerówkę.",
+     "options": [
+      "pieniądze",
+      "pieniędzy",
+      "pieniędzmi"
+     ],
+     "answer": "pieniędzy",
+     "explanation": "nie mieć → dopełniacz; pieniądze → pieniędzy (forma nieregularna).",
+     "grammar_point": "przeczenie-dopelniacz"
+    },
+    {
+     "id": "g3-2",
+     "text": "W tej paczce jest dwadzieścia ___.",
+     "options": [
+      "pieluchy",
+      "pieluch",
+      "pieluchach"
+     ],
+     "answer": "pieluch",
+     "explanation": "Od pięciu w górę (też dwadzieścia) → dopełniacz liczby mnogiej: pieluchy → pieluch.",
+     "grammar_point": "ilosc-dopelniacz"
+    },
+    {
+     "id": "g3-3",
+     "text": "W promocji kupiłam trzy ___.",
+     "options": [
+      "ręczniki",
+      "ręczników",
+      "ręcznikami"
+     ],
+     "answer": "ręczniki",
+     "explanation": "Po 2, 3, 4 forma jest jak w mianowniku: trzy ręczniki. Ale: pięć ręczników.",
+     "grammar_point": "liczebniki"
+    },
+    {
+     "id": "g3-4",
+     "text": "Kawa na wynos kosztuje tu dwanaście ___.",
+     "options": [
+      "złote",
+      "złotych",
+      "złoty"
+     ],
+     "answer": "złotych",
+     "explanation": "12, 13, 14 to nie 2, 3, 4: dwanaście, trzynaście, czternaście złotych.",
+     "grammar_point": "liczebniki"
+    },
+    {
+     "id": "g3-5",
+     "text": "Od tygodnia szukam ___ do pokoju dziecka.",
+     "options": [
+      "dobrą lampkę",
+      "dobrej lampki",
+      "dobrej lampce"
+     ],
+     "answer": "dobrej lampki",
+     "explanation": "szukać + dopełniacz (tak jak potrzebować i brakować): dobra lampka → dobrej lampki.",
+     "grammar_point": "czasowniki-z-dopelniaczem"
+    },
+    {
+     "id": "g3-6",
+     "text": "Nie kupuj ___ na zapas!",
+     "options": [
+      "nowe ubranka",
+      "nowych ubranek",
+      "nowymi ubrankami"
+     ],
+     "answer": "nowych ubranek",
+     "explanation": "Przeczenie zmienia biernik na dopełniacz: kupuję ubranka → nie kupuj ubranek.",
+     "grammar_point": "przeczenie-dopelniacz"
+    },
+    {
+     "id": "g3-7",
+     "text": "Ten wózek dostaliśmy od ___.",
+     "options": [
+      "teściowa",
+      "teściowej",
+      "teściową"
+     ],
+     "answer": "teściowej",
+     "explanation": "od + dopełniacz: teściowa → teściowej.",
+     "grammar_point": "przyimki-dopelniacz"
+    }
+   ]
+  },
+  {
+   "block_id": "g4",
+   "title": "4. Który przypadek?",
+   "exercise_type": "fill-in-blank",
+   "instruction": "Zadaj sobie pytanie (gdzie? czym? komu? czego?) i wybierz formę.",
+   "items": [
+    {
+     "id": "g4-1",
+     "text": "Czekam z małą w ___ i czytam ogłoszenia.",
+     "options": [
+      "poczekalnia",
+      "poczekalni",
+      "poczekalnią"
+     ],
+     "answer": "poczekalni",
+     "explanation": "Gdzie? w + miejscownik: w poczekalni.",
+     "grammar_point": "miejscownik"
+    },
+    {
+     "id": "g4-2",
+     "text": "Do teściów zawsze jedziemy ___.",
+     "options": [
+      "tramwaj",
+      "tramwaju",
+      "tramwajem"
+     ],
+     "answer": "tramwajem",
+     "explanation": "Czym jedziemy? → narzędnik: tramwajem.",
+     "grammar_point": "narzednik"
+    },
+    {
+     "id": "g4-3",
+     "text": "Kup ___ coś małego na urodziny.",
+     "options": [
+      "siostra",
+      "siostrze",
+      "siostrą"
+     ],
+     "answer": "siostrze",
+     "explanation": "Komu kupujesz? → celownik: siostrze.",
+     "grammar_point": "celownik"
+    },
+    {
+     "id": "g4-4",
+     "text": "Po całym dniu nie mam już ___.",
+     "options": [
+      "siła",
+      "siły",
+      "siłą"
+     ],
+     "answer": "siły",
+     "explanation": "nie mieć → dopełniacz: nie mam siły.",
+     "grammar_point": "przeczenie-dopelniacz"
+    },
+    {
+     "id": "g4-5",
+     "text": "Długo rozmawiałyśmy o tym ___.",
+     "options": [
+      "ogłoszenie",
+      "ogłoszeniu",
+      "ogłoszeniem"
+     ],
+     "answer": "ogłoszeniu",
+     "explanation": "o + miejscownik: o ogłoszeniu.",
+     "grammar_point": "miejscownik"
+    },
+    {
+     "id": "g4-6",
+     "text": "Spotkajmy się przed ___ o piątej.",
+     "options": [
+      "sklep",
+      "sklepu",
+      "sklepem"
+     ],
+     "answer": "sklepem",
+     "explanation": "przed + narzędnik: przed sklepem. Sklepu to dopełniacz: do sklepu.",
+     "grammar_point": "narzednik"
+    },
+    {
+     "id": "g4-7",
+     "text": "Pomóż ___ wnieść wózek na górę!",
+     "options": [
+      "sąsiad",
+      "sąsiada",
+      "sąsiadowi"
+     ],
+     "answer": "sąsiadowi",
+     "explanation": "pomagać / pomóc komu? → celownik: sąsiadowi.",
+     "grammar_point": "celownik"
+    },
+    {
+     "id": "g4-8",
+     "text": "Dzisiaj nie pomagam ___, bo sama jestem zmęczona.",
+     "options": [
+      "mama",
+      "mamy",
+      "mamie"
+     ],
+     "answer": "mamie",
+     "explanation": "Przeczenie zmienia tylko biernik. Pomagać komu? → celownik zostaje: nie pomagam mamie.",
+     "grammar_point": "celownik"
+    }
+   ]
+  },
+  {
+   "block_id": "g5",
+   "title": "5. Grupa z ogłoszeniami — prawda czy fałsz?",
+   "exercise_type": "true-false",
+   "instruction": "Wróć do postów z grupy i zdecyduj.",
+   "items": [
+    {
+     "id": "g5-1",
+     "statement": "Agata chce sprzedać śpiworek.",
+     "answer": false,
+     "explanation": "Nie: oddaje go za darmo.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g5-2",
+     "statement": "Oksana nie potrzebuje materaca do łóżeczka.",
+     "answer": true,
+     "explanation": "Tak: mają swój materac.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g5-3",
+     "statement": "Spacerówka Marty kosztuje dla wszystkich trzysta złotych.",
+     "answer": false,
+     "explanation": "Nie: kosztuje 350 złotych, a 300 tylko dla mamy z osiedla.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g5-4",
+     "statement": "Tomek pyta, czy spacerówkę da się złożyć jedną ręką.",
+     "answer": true,
+     "explanation": "Tak: szukają spacerówki do tramwaju i autobusu.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g5-5",
+     "statement": "Ewa może zwrócić pieluchy do sklepu, bo ma paragon.",
+     "answer": false,
+     "explanation": "Nie: paragonu już nie ma, dlatego chce się zamienić.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g5-6",
+     "statement": "Agata złożyła reklamację, chociaż nie miała paragonu.",
+     "answer": true,
+     "explanation": "Tak: wystarczył rachunek z karty w aplikacji banku.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g5-7",
+     "statement": "Kasia wydaje na pieluchy i mleko połowę pieniędzy na dziecko.",
+     "answer": true,
+     "explanation": "Tak: połowę z ponad tysiąca złotych.",
+     "grammar_point": "czytanie"
+    }
+   ]
+  },
+  {
+   "block_id": "g6",
+   "title": "6. Ułóż zdanie",
+   "exercise_type": "sentence-building",
+   "instruction": "Klikaj kawałki w dobrej kolejności.",
+   "items": [
+    {
+     "id": "g6-1",
+     "words": [
+      "nie mam",
+      "już",
+      "paragonu",
+      "za tę lampkę"
+     ],
+     "answer": "Nie mam już paragonu za tę lampkę.",
+     "prompt": "Powiedz, że nie masz paragonu za lampkę.",
+     "grammar_point": "powtorka",
+     "accept": [
+      "Za tę lampkę nie mam już paragonu."
+     ]
+    },
+    {
+     "id": "g6-2",
+     "words": [
+      "szukamy",
+      "używanego łóżeczka",
+      "dla córki"
+     ],
+     "answer": "Szukamy używanego łóżeczka dla córki.",
+     "prompt": "Napisz ogłoszenie: czego szukacie i dla kogo.",
+     "grammar_point": "powtorka",
+     "accept": [
+      "Dla córki szukamy używanego łóżeczka."
+     ]
+    },
+    {
+     "id": "g6-3",
+     "words": [
+      "czy mogę",
+      "odebrać",
+      "spacerówkę",
+      "w sobotę rano?"
+     ],
+     "answer": "Czy mogę odebrać spacerówkę w sobotę rano?",
+     "prompt": "Zapytaj o odbiór.",
+     "grammar_point": "powtorka",
+     "accept": [
+      "Czy w sobotę rano mogę odebrać spacerówkę?"
+     ]
+    },
+    {
+     "id": "g6-4",
+     "words": [
+      "brakuje nam",
+      "tylko",
+      "ciepłego kombinezonu"
+     ],
+     "answer": "Brakuje nam tylko ciepłego kombinezonu.",
+     "prompt": "Powiedz, czego wam brakuje.",
+     "grammar_point": "powtorka"
+    },
+    {
+     "id": "g6-5",
+     "words": [
+      "pojadę",
+      "z mężem",
+      "do sklepu",
+      "po pieluchy"
+     ],
+     "answer": "Pojadę z mężem do sklepu po pieluchy.",
+     "prompt": "Powiedz, z kim, dokąd i po co pojedziesz.",
+     "grammar_point": "powtorka",
+     "accept": [
+      "Pojadę do sklepu z mężem po pieluchy.",
+      "Z mężem pojadę do sklepu po pieluchy."
+     ]
+    },
+    {
+     "id": "g6-6",
+     "words": [
+      "nie ma sensu",
+      "kupować",
+      "wszystkiego",
+      "naraz"
+     ],
+     "answer": "Nie ma sensu kupować wszystkiego naraz.",
+     "prompt": "Daj radę przyszłej mamie.",
+     "grammar_point": "powtorka"
+    }
+   ]
+  }
+ ]
+}
