@@ -10,7 +10,7 @@
       "mode": "listen-then-play",
       "comm_group": "Umawiamy się",
       "front_title": "Nowy sport z kolegą",
-      "back_scenario": "Kolega z kursu gra w badmintona. Ty nie umiesz grać, ale chcesz spróbować. Najpierw posłuchaj przykładowej rozmowy, potem odegraj swoją z innymi szczegółami: inny sport, inny dzień, inna godzina.",
+      "back_scenario": "Kolega z kursu gra w badmintona. Ty nie umiesz grać, ale chcesz spróbować. Najpierw posłuchaj przykładowej rozmowy — czyta nauczyciel. Potem odegraj swoją rozmowę z innymi szczegółami: inny sport, inny dzień, inna godzina.",
       "back_checklist": [
         "Zapytaj, co kolega robi w wolnym czasie.",
         "Powiedz, co umiesz, a czego jeszcze nie umiesz.",
@@ -19,20 +19,60 @@
         "Zakończ rozmowę: „Do zobaczenia!”."
       ],
       "model_dialogue": [
-        { "speaker": "Ania", "voice": "pl-PL-female", "line": "Cześć, Marek! Co robisz w wolnym czasie?" },
-        { "speaker": "Marek", "voice": "pl-PL-male", "line": "Gram w badmintona. Dwa razy w tygodniu trenuję w hali przy ulicy Leśnej." },
-        { "speaker": "Ania", "voice": "pl-PL-female", "line": "Super! Ja nie umiem grać w badmintona, ale bardzo chcę spróbować." },
-        { "speaker": "Marek", "voice": "pl-PL-male", "line": "To nie jest trudne. Masz czas w czwartek?" },
-        { "speaker": "Ania", "voice": "pl-PL-female", "line": "W czwartek pracuję do siedemnastej. O której zaczynacie?" },
-        { "speaker": "Marek", "voice": "pl-PL-male", "line": "Zaczynamy o osiemnastej trzydzieści i gramy półtorej godziny." },
-        { "speaker": "Ania", "voice": "pl-PL-female", "line": "Pasuje mi! Ile kosztuje jeden trening?" },
-        { "speaker": "Marek", "voice": "pl-PL-male", "line": "Dwadzieścia złotych. Rakietę możesz pożyczyć ode mnie." },
-        { "speaker": "Ania", "voice": "pl-PL-female", "line": "Dziękuję! A co jeszcze lubisz robić?" },
-        { "speaker": "Marek", "voice": "pl-PL-male", "line": "Lubię gotować, ale nie umiem piec ciast. A ty?" },
-        { "speaker": "Ania", "voice": "pl-PL-female", "line": "Ja lubię tańczyć. W sobotę idę na salsę. Chcesz iść ze mną? Pierwsza lekcja jest za darmo." },
-        { "speaker": "Marek", "voice": "pl-PL-male", "line": "Hmm, nie umiem tańczyć… Ale dobrze, spróbuję!" },
-        { "speaker": "Ania", "voice": "pl-PL-female", "line": "Świetnie! To do zobaczenia w czwartek o osiemnastej trzydzieści!" }
-      ]
+        {
+          "speaker": "Ania",
+          "line": "Cześć, Marek! Co robisz w wolnym czasie?"
+        },
+        {
+          "speaker": "Marek",
+          "line": "Gram w badmintona. Dwa razy w tygodniu trenuję w hali przy ulicy Leśnej."
+        },
+        {
+          "speaker": "Ania",
+          "line": "Super! Ja nie umiem grać w badmintona, ale bardzo chcę spróbować."
+        },
+        {
+          "speaker": "Marek",
+          "line": "To nie jest trudne. Masz czas w czwartek?"
+        },
+        {
+          "speaker": "Ania",
+          "line": "W czwartek pracuję do siedemnastej. O której zaczynacie?"
+        },
+        {
+          "speaker": "Marek",
+          "line": "Zaczynamy o osiemnastej trzydzieści i gramy półtorej godziny."
+        },
+        {
+          "speaker": "Ania",
+          "line": "Pasuje mi! Ile kosztuje jeden trening?"
+        },
+        {
+          "speaker": "Marek",
+          "line": "Dwadzieścia złotych. Rakietę możesz pożyczyć ode mnie."
+        },
+        {
+          "speaker": "Ania",
+          "line": "Dziękuję! A co jeszcze lubisz robić?"
+        },
+        {
+          "speaker": "Marek",
+          "line": "Lubię gotować, ale nie umiem piec ciast. A ty?"
+        },
+        {
+          "speaker": "Ania",
+          "line": "Ja lubię tańczyć. W sobotę idę na salsę. Chcesz iść ze mną? Pierwsza lekcja jest za darmo."
+        },
+        {
+          "speaker": "Marek",
+          "line": "Hmm, nie umiem tańczyć… Ale dobrze, spróbuję!"
+        },
+        {
+          "speaker": "Ania",
+          "line": "Świetnie! To do zobaczenia w czwartek o osiemnastej trzydzieści!"
+        }
+      ],
+      "audio_source": "teacher"
     },
     {
       "id": "c2",

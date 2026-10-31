@@ -8,6 +8,7 @@ import { FlipTask } from './FlipTask';
 import { PictureSet } from './PictureSet';
 import { ExerciseBlocks, type ExerciseBlock } from './ExerciseBlocks';
 import { AudioCassette } from './AudioCassette';
+import { TeacherReads } from './TeacherReads';
 import { parseBlockRange } from '@/lib/block-ids';
 
 type ImageLockSlot = {
@@ -52,6 +53,8 @@ type Props = {
   grammar?: { title: string; instruction?: string; blocks: ExerciseBlock[] };
   exam?: { title: string; instruction?: string; blocks: ExerciseBlock[] };
   hw?: { title: string; instruction?: string; blocks: ExerciseBlock[] };
+  /** ?teacher=1 — shows texts the teacher reads aloud */
+  teacherMode?: boolean;
 };
 
 const MARKER_RE = /%%MK:(IMAGE|AUDIO|SLIDES|EXERCISE):([A-Za-z0-9_-]+)%%/g;
@@ -192,6 +195,7 @@ export function NotebookLesson(props: Props) {
     grammar,
     exam,
     hw,
+    teacherMode = false,
   } = props;
 
   const audioSrc = (id: string) => `/audio/${id}.mp3`;
@@ -275,6 +279,10 @@ export function NotebookLesson(props: Props) {
       const id = attr(rawAttrs, 'id') ?? '';
       // c1 dialog is mounted under the flip card
       if (id.includes('c1-dialog')) return <Fragment key={key} />;
+      if (attr(rawAttrs, 'source') === 'teacher') {
+        const plays = Number(attr(rawAttrs, 'plays') ?? '') || undefined;
+        return <TeacherReads key={key} times={plays} />;
+      }
       return <AudioCassette key={key} src={audioSrc(id)} defaultSpeed={0.85} />;
     }
 
@@ -329,10 +337,12 @@ export function NotebookLesson(props: Props) {
             title={commTasks.title}
             instructions={commTasks.instructions ?? commTasks.instruction}
             items={commTasks.items}
-            underCardAudio={{
-              itemId: 'c1',
-              src: audioSrc(`${lessonId}-c1-dialog`),
-            }}
+            teacherMode={teacherMode}
+            underCardAudio={
+              commTasks.items.some((it) => String(it.id) === 'c1' && it.audio_source === 'teacher')
+                ? undefined
+                : { itemId: 'c1', src: audioSrc(`${lessonId}-c1-dialog`) }
+            }
           />
         );
       }
@@ -347,6 +357,7 @@ export function NotebookLesson(props: Props) {
             blocks={exam.blocks}
             blockIds={blockIds}
             audioSrc={audioSrc}
+            teacherMode={teacherMode}
           />
         );
       }
@@ -361,6 +372,7 @@ export function NotebookLesson(props: Props) {
             blocks={grammar.blocks}
             blockIds={blockIds}
             audioSrc={audioSrc}
+            teacherMode={teacherMode}
           />
         );
       }
@@ -375,6 +387,7 @@ export function NotebookLesson(props: Props) {
             blocks={hw.blocks}
             blockIds={blockIds}
             audioSrc={audioSrc}
+            teacherMode={teacherMode}
           />
         );
       }

@@ -46,7 +46,7 @@ Tomek i Ola mają jedno wspólne marzenie. Chcą pojechać na festiwal muzyczny 
 
 [IMAGE: keywords="man playing drums", image_keywords_alt="drum set room", source="stock", alt="Mężczyzna gra na perkusji"]
 
-[AUDIO: id="pl-exam-01-pasje-czytanie", source="tts", text="section:1", voice="pl-PL-male", speed="0.85"]
+[AUDIO: id="pl-exam-01-pasje-czytanie", source="teacher", text="section:1", plays="1"]
 
 ## 2. Pytania do tekstu
 
@@ -88,7 +88,7 @@ Odpowiedz na pytania. Pod każdym pytaniem masz początek odpowiedzi — użyj g
 
 [EXERCISE: file="pl-exam-01-pasje-comm-tasks.json", type="flip-task"]
 
-[AUDIO: id="pl-exam-01-pasje-c1-dialog", source="tts", text="pl-exam-01-pasje-comm-tasks.json#c1.model_dialogue", voice="pl-PL-female", speed="0.85"]
+[AUDIO: id="pl-exam-01-pasje-c1-dialog", source="teacher", text="pl-exam-01-pasje-comm-tasks.json#c1.model_dialogue", plays="2"]
 
 [EXERCISE: file="pl-exam-01-pasje-exam.json", type="multiple-choice", blocks="e2"]
 

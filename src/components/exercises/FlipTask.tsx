@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { AudioCassette } from './AudioCassette';
+import { TeacherReads } from './TeacherReads';
 
 type DialogueLine = {
   speaker?: string;
@@ -16,6 +17,8 @@ type Item = {
   back_scenario: string;
   back_checklist: string[];
   audio_url?: string;
+  /** 'teacher' — the teacher reads model_dialogue aloud, no recording */
+  audio_source?: string;
   model_dialogue?: DialogueLine[];
 };
 
@@ -26,6 +29,7 @@ type Props = {
   items: Item[];
   /** Optional audio under a specific card (e.g. c1) */
   underCardAudio?: { itemId: string; src?: string };
+  teacherMode?: boolean;
 };
 
 const COLORS = ['c-y', 'c-m', 'c-s', 'c-c'] as const;
@@ -46,7 +50,14 @@ function DialogueScript({ lines }: { lines: DialogueLine[] }) {
   );
 }
 
-export function FlipTask({ title, instructions, instructionsUk, items, underCardAudio }: Props) {
+export function FlipTask({
+  title,
+  instructions,
+  instructionsUk,
+  items,
+  underCardAudio,
+  teacherMode = false,
+}: Props) {
   const [flipped, setFlipped] = useState<Record<string, boolean>>({});
 
   return (
@@ -107,8 +118,20 @@ export function FlipTask({ title, instructions, instructionsUk, items, underCard
                   )}
                 </button>
               </div>
-              {showDialogue ? <DialogueScript lines={dialogue} /> : null}
-              {!isReadThenPlay && audioSrc ? (
+              {item.audio_source === 'teacher' && !isReadThenPlay ? (
+                <>
+                  <TeacherReads times={2} />
+                  {showDialogue ? (
+                    <details className="nb-dialogue-toggle" open={teacherMode}>
+                      <summary>Tekst rozmowy — po słuchaniu</summary>
+                      <DialogueScript lines={dialogue} />
+                    </details>
+                  ) : null}
+                </>
+              ) : showDialogue ? (
+                <DialogueScript lines={dialogue} />
+              ) : null}
+              {item.audio_source !== 'teacher' && !isReadThenPlay && audioSrc ? (
                 <AudioCassette src={audioSrc} defaultSpeed={0.75} />
               ) : null}
             </div>

@@ -11,7 +11,7 @@
  *   SLIDES_URL=http://localhost:3000/slides/pl-exam-01-pasje \
  *   npx playwright test tests/lesson-exercises.spec.ts --reporter=line
  *
- * Тест спирається на DOM-контракт з CURSOR_TASK (data-атрибути). Якщо атрибута
+ * Тест спирається на DOM-контракт з rules/06_BUILD_AND_CHECKLIST.md (data-атрибути). Якщо атрибута
  * немає — це помилка компонента, а не тесту: додай атрибут, тест не чіпай.
  */
 import { test, expect, Page, Locator } from '@playwright/test';
@@ -161,23 +161,23 @@ test('lenient: відповідь без огонків — зелена з пі
   await expectState(it, /^correct-no-diacritics$/, `${x.id}: без огонків має бути correct-no-diacritics`);
 });
 
-test('аудіо: max_plays рахується, кнопка гасне, але не зникає', async ({ page }) => {
+test('слухання: читає вчитель — учень бачить наліпку без тексту, вчитель з ?teacher=1 — текст', async ({ page }) => {
   const exam = load('exam');
-  const block = exam?.blocks.find((b: any) => b.max_plays);
-  test.skip(!block, 'немає аудіо з max_plays');
+  const block = exam?.blocks.find((b: any) => b.audio_source === 'teacher');
+  test.skip(!block, 'немає слухання, яке читає вчитель');
+  const firstLine: string = block.items[0].dialogue[0].line;
+
   await page.goto(URL);
   const scope = await openBlock(page, block.block_id);
-  const it = block.audio_mode === 'per-item' ? item(scope, block.items[0].id) : scope;
-  const play = it.locator('[data-role="audio-play"]').first();
-  await expect(play).toHaveAttribute('data-plays-left', String(block.max_plays));
-  for (let i = block.max_plays - 1; i >= 0; i--) {
-    await play.click();
-    await page.waitForTimeout(300);
-    await page.evaluate(() => document.querySelectorAll('audio').forEach(a => a.dispatchEvent(new Event('ended'))));
-    await expect(play).toHaveAttribute('data-plays-left', String(i), { timeout: 5_000 });
-  }
-  await expect(play).toBeDisabled();
-  await expect(play).toBeVisible();
+  const it = item(scope, block.items[0].id);
+  await expect(it.locator('[data-role="teacher-reads"]')).toBeVisible();
+  await expect(it.locator('[data-role="teacher-text"]')).toHaveCount(0);
+  await expect(it.locator('[data-role="audio-play"]')).toHaveCount(0);
+  expect(await page.content(), 'текст для читання потрапив у сторінку учня').not.toContain(firstLine);
+
+  await page.goto(`${URL}${URL.includes('?') ? '&' : '?'}teacher=1`);
+  const tScope = await openBlock(page, block.block_id);
+  await expect(item(tScope, block.items[0].id).locator('[data-role="teacher-text"]')).toContainText(firstLine);
 });
 
 test('vocab і flip-task: кожна картка перевертається', async ({ page }) => {

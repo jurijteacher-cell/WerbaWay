@@ -90,7 +90,7 @@
 | `exceptions` | `items[]` = `{text, refers_to}`, `reveal: "item"` |
 | `traps` | `items[]` = `{uk, wrong, right, why}` |
 
-Спільні поля: `id`, `part`, `section` (`title` · `teoria` · `wyjatki` · `pulapki`), `kind`, `title`, `teacher_note`; опц. `note` (стікер 📌, останній крок). Слайд «Strategia» (див. `05`) — `section: "teoria"`, зазвичай `kind: "steps"`. Якщо рушій чекає інші назви полів, Cursor пише адаптер у рендері, а JSON не змінює.
+Спільні поля: `id`, `part`, `section` (`title` · `teoria` · `wyjatki` · `pulapki`), `kind`, `title`, `teacher_note`; опц. `note` (стікер 📌, останній крок). Слайд «Strategia» (див. `05`) — `section: "teoria"`, зазвичай `kind: "steps"`. Якщо рушій чекає інші назви полів, збірка пише адаптер у рендері, а JSON не змінює.
 
 ## Словник — `{id}-vocab.json`
 
@@ -108,7 +108,7 @@
 ```
 - `definition` — проста польська, без слів, складніших за саме слово.
 - `example` — не з тексту лекції, фактично перевірений.
-- `audio` Claude не пише — Cursor генерує вимову з `term`.
+- Аудіо вимови немає: слова вимовляє вчитель на занятті.
 
 ## Комунікаційні задачі — `{id}-comm-tasks.json`
 
@@ -121,8 +121,8 @@
       "back_scenario": "… Najpierw posłuchaj przykładowej rozmowy, potem odegraj swoją z innymi szczegółami.",
       "back_checklist": ["Dowiedz się, …", "Zapytaj, …", "Poproś o …"],
       "model_dialogue": [
-        { "speaker": "Rekruterka", "voice": "pl-PL-female", "line": "…" },
-        { "speaker": "Kandydat", "voice": "pl-PL-male", "line": "…" }
+        { "speaker": "Rekruterka", "line": "…" },
+        { "speaker": "Kandydat", "line": "…" }
       ] }
   ]
 }
@@ -146,16 +146,18 @@
       "title": "Czytanie: prawda czy fałsz?", "instruction": "…",
       "items": [ { "id": "e1-1", "statement": "…", "answer": false, "explanation": "…" } ] },
     { "block_id": "e2", "exam_skill": "sluchanie", "exercise_type": "multiple-choice",
-      "source": "{id}-comm-tasks.json#c1.model_dialogue", "audio_id": "{id}-c1-dialog", "max_plays": 2,
-      "title": "Słuchanie: …", "instruction": "Posłuchaj nagrania …",
+      "source": "{id}-comm-tasks.json#c1.model_dialogue", "audio_source": "teacher", "reads": 2,
+      "title": "Słuchanie: …", "instruction": "Nauczyciel przeczyta rozmowę dwa razy. …",
       "items": [ { "id": "e2-1", "question": "…", "options": ["…", "…", "…"], "answer": "…", "explanation": "…" } ] }
   ]
 }
 ```
 - `e1`: 6 тверджень, 3–4 хибні; хибне спирається на конкретну деталь тексту, а не на загальний зміст.
 - `e2`: 4 питання; правильну відповідь чути дослівно або перефразовано, дистрактори теж звучать у записі (інша година, інше місце).
-- `max_plays` — скільки разів можна прослухати, як на іспиті.
-- **Слухання з окремими записами** (держ. іспит zad. I, telc cz. 1): `"audio_mode": "per-item"` на рівні блоку, а в кожному елементі — свій `audio_id` і `dialogue[]` (1–3 репліки з `speaker` і `voice`). `max_plays` один на весь блок.
+- **Слухання читає вчитель.** На кожному блоці слухання: `"audio_source": "teacher"` і `reads` — скільки разів учитель читає (блок 1 курсу — 2, далі — 1, як на іспиті). Полів `audio_id`, `voice`, `max_plays`, `audio_mode` немає.
+- **Слухання з окремими висловлюваннями** (держ. іспит zad. I, telc cz. 1): у кожному елементі — свій `dialogue[]` (1–3 репліки з `speaker` і `line`); учень бачить тільки питання, текст — вчитель (`?teacher=1` і розділ 7 файлу викладача).
+- Слухання одного діалогу (як вище): `source` вказує на `model_dialogue`, `dialogue` в елементах не потрібен.
+- `instruction` блоку слухання каже, скільки разів читатиме вчитель і що на іспиті запис звучить один раз.
 - `exam_part` у блоці (напр. `"panstwowy-sluchanie-1"`) і `covers_slides` (якщо блок покриває слайд «Strategia») — за потреби.
 
 ## Домашка — `{id}-hw.json` + `.md`
@@ -174,13 +176,17 @@
 | `t1` | gramatyka | 10 завдань, кожен тег `rec` ≥2 рази | 16 |
 | `t2` | slownictwo (`grammar_point: "slownictwo"`) | 4 | 8 |
 | `t3` | czytanie, `source_text` 80–120 слів | 3 завдання | 2 тексти, 8 |
-| `t4` | sluchanie, `dialogue[]` 8–10 реплік + `audio_id` + `max_plays` | 3 завдання | 2 діалоги, 8 |
+| `t4` | sluchanie, `dialogue[]` 8–10 реплік + `audio_source: "teacher"` + `reads` | 3 завдання | 2 діалоги, 8 |
 
 У `t3`/`t4` `grammar_point` не пишеться. Mówienie й pisanie в JSON не входять — їх оцінює викладач рубрикою з `teacher.md`.
 
-## Аудіо — маркер і швидкості
+## Слухання — маркер
+
+Аудіо не генерується: ні TTS, ні запису. Слухання читає вчитель.
 
 ```
-[AUDIO: id="…", source="tts", text="section:1 | {file}#{item}.model_dialogue", voice="pl-PL-female", speed="0.9"]
+[AUDIO: id="…", source="teacher", text="section:1 | {file}#{item}.model_dialogue", plays="1"]
 ```
-Голоси `pl-PL-female` / `pl-PL-male`. Швидкість: A2 `0.85`, B1 `0.9` (тексти) / `0.95` (діалоги). Для пробних іспитів — див. `05`.
+- `source` — завжди `"teacher"`; `plays` — скільки разів учитель читає (показано учню на наліпці).
+- Голосів і швидкостей немає. Темп і паузи — у розділі «Тексти для читання вголос» файлу викладача.
+- Для пробних іспитів — див. `05`.

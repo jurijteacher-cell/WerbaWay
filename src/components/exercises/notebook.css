@@ -1126,3 +1126,35 @@
   margin-top: 14px; background: #fff; border: 1px solid var(--nb-edge);
   padding: 12px 14px; border-radius: 3px; font-size: 14px; line-height: 1.45;
 }
+
+/* --- listening read by the teacher (no recordings) --- */
+.nb-teacher-reads-label {
+  font-family: var(--nb-display, inherit);
+  font-weight: 600;
+  color: var(--nb-ink);
+}
+.nb-teacher-reads-label::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: var(--nb-mint, #A9DCC6);
+  vertical-align: 1px;
+}
+.nb-teacher-reads-text {
+  flex-basis: 100%;
+  background: #fff;
+  border-left: 3px solid var(--nb-gold);
+  padding: 8px 12px;
+}
+.nb-teacher-reads-text p {
+  margin: 0 0 4px;
+}
+.nb-dialogue-toggle summary {
+  cursor: pointer;
+  font-family: var(--nb-hand);
+  font-size: 18px;
+  color: var(--nb-ink-soft);
+}

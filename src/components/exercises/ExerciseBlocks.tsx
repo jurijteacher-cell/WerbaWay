@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import { answersMatch, type ItemState } from '@/lib/answer-match';
 import { AudioCassette } from './AudioCassette';
+import { TeacherReads } from './TeacherReads';
 
 export type BlockItem = {
   id: string;
@@ -30,6 +31,10 @@ export type ExerciseBlock = {
   max_plays?: number;
   audio_mode?: string;
   audio_url?: string;
+  /** 'teacher' — no recording, the teacher reads each item's dialogue aloud */
+  audio_source?: string;
+  /** How many times the teacher reads each item */
+  reads?: number;
 };
 
 type Props = {
@@ -41,6 +46,7 @@ type Props = {
   blockIds?: string[];
   /** Resolve audio_id → url */
   audioSrc?: (id: string) => string | undefined;
+  teacherMode?: boolean;
 };
 
 function shuffle<T>(arr: T[], seed: string): T[] {
@@ -68,6 +74,7 @@ export function ExerciseBlocks({
   blocks: allBlocks,
   blockIds,
   audioSrc,
+  teacherMode = false,
 }: Props) {
   const blocks = useMemo(() => {
     if (!blockIds?.length) return allBlocks;
@@ -301,7 +308,13 @@ export function ExerciseBlocks({
                     data-item-id={item.id}
                     data-state={st}
                   >
-                    {perItemAudio != null || (block.audio_mode === 'per-item' && audioId) ? (
+                    {block.audio_source === 'teacher' ? (
+                      <TeacherReads
+                        times={block.reads}
+                        lines={item.dialogue}
+                        teacherMode={teacherMode}
+                      />
+                    ) : perItemAudio != null || (block.audio_mode === 'per-item' && audioId) ? (
                       <AudioCassette
                         src={perItemAudio ?? `/audio/${audioId}.mp3`}
                         maxPlays={block.max_plays}

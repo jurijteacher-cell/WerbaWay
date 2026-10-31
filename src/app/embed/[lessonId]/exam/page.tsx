@@ -3,10 +3,11 @@ import { existsSync, readFileSync } from 'fs';
 import path from 'path';
 import { ExamTasks, type ExamExercise, type ExamBlock } from '@/components/exercises/ExamTasks';
 import { parseBlockIds } from '@/lib/block-ids';
+import { stripTeacherTexts } from '@/lib/teacher-reads';
 
 type Props = {
   params: { lessonId: string };
-  searchParams?: { blocks?: string };
+  searchParams?: { blocks?: string; teacher?: string };
 };
 
 type DialogueLine = { speaker?: string; line?: string };
@@ -41,7 +42,8 @@ export default function EmbedExamPage({ params, searchParams }: Props) {
   );
   if (!existsSync(file)) notFound();
 
-  const raw = JSON.parse(readFileSync(file, 'utf8'));
+  const teacherMode = searchParams?.teacher === '1';
+  const raw = stripTeacherTexts(JSON.parse(readFileSync(file, 'utf8')), teacherMode);
   const blocks: ExamBlock[] = (raw.blocks ?? []).map(
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (b: any) => ({
@@ -53,6 +55,8 @@ export default function EmbedExamPage({ params, searchParams }: Props) {
       items: b.items ?? [],
       max_plays: b.max_plays,
       audio_url: b.audio_url,
+      audio_source: b.audio_source,
+      reads: b.reads,
       transcript:
         b.exercise_type === 'multiple-choice'
           ? loadTranscript(params.lessonId, b.source)
@@ -69,5 +73,5 @@ export default function EmbedExamPage({ params, searchParams }: Props) {
 
   const blockIds = parseBlockIds(searchParams?.blocks);
 
-  return <ExamTasks data={data} blockIds={blockIds} />;
+  return <ExamTasks data={data} blockIds={blockIds} teacherMode={teacherMode} />;
 }

@@ -20,7 +20,7 @@ sessions: 2
 | хвилини | розділ | що робимо | говоріння |
 |---|---|---|---|
 | 0–5 | 1. Czytanie: розминка | питання «Co robisz wieczorem po pracy?», учень записує одне слово | 5 |
-| 5–15 | 1. Czytanie | аудіо один раз з текстом, потім учень читає вголос перший абзац | — |
+| 5–15 | 1. Czytanie | ти читаєш текст уголос один раз, учень стежить очима; потім учень читає вголос перший абзац | — |
 | 15–22 | 2. Pytania + e1 | 4 питання усно (4 хв), e1 у LMS (3 хв) | 4 |
 | 22–30 | 3. Słownictwo | картки: учень читає слово й одразу каже своє речення | 3 |
 | 30–42 | 4. Praktyka mówienia | 4–5 питань із 7, опори під питанням — не підказуй раніше за них | 12 |
@@ -34,8 +34,8 @@ sessions: 2
 |---|---|---|---|
 | 0–5 | повторення | «Розкажи 3 речення про хобі Томка і 3 про своє» | 5 |
 | 5–17 | 5. Opis zdjęć | p1–p3: спершу маленькі питання по черзі, потім основне питання цілим монологом | 12 |
-| 17–27 | 6. c1 | слухаємо діалог, учень грає свою версію (інший спорт, день, година) | 7 |
-| 27–33 | 6. e2 | 6 коротких висловлювань, 2 прослуховування | — |
+| 17–27 | 6. c1 | ти читаєш діалог (розділ 7), учень грає свою версію (інший спорт, день, година) | 7 |
+| 27–33 | 6. e2 | ти читаєш 6 коротких висловлювань, кожне двічі (розділ 7) | — |
 | 33–41 | 6. c2 + c3 | c3 — як на іспиті: монолог ≥1 хв, далі ти ставиш 2 додаткові питання | 8 |
 | 41–50 | 8. Gramatyka ч. 2 | слайди s9–s17 | 2 |
 | 50–57 | 8. Gramatyka ч. 2 | блоки g4–g6, g7 — якщо встигаєте | — |
@@ -123,6 +123,49 @@ sessions: 2
 
 ## 6. Що ще важливо
 
-- **e2 і державний іспит.** На іспиті перше завдання з аудіювання звучить один раз. В уроках 1–5 даємо два прослуховування, але щоразу проговорюємо, що на іспиті буде одне.
+- **e2 і державний іспит.** На іспиті перше завдання з аудіювання звучить один раз. В уроках 1–5 ти читаєш кожне висловлювання двічі, але щоразу проговорюєш, що на іспиті буде одне прослуховування.
 - **Відмінки поки — готові фрази.** Після w / na (w kinie, na basenie, na gitarze, w tenisa) учень ще не знає правил: це уроки 2 і 3. Сьогодні вчимо ці зв'язки цілими.
 - **ДЗ — стаття.** Стаття gov.pl про морсування реальна й важка для A1. Завдання — тільки знайти дієслова й сказати свою думку, переклад не потрібен.
+
+## 7. Тексти для читання вголос
+
+Аудіо в уроці немає: слухання читаєш ти. Учень цих текстів не бачить. Той самий текст видно на сторінці уроку з `?teacher=1`.
+
+**Як читати.** Темп спокійний, як диктор на іспиті, без пауз усередині речення. Числа — так, як записано словами. Нічого не перефразовуй і не підказуй інтонацією, де правильна відповідь.
+
+### Czytanie — «Nowa pasja po trzydziestce»
+
+Текст — на сторінці уроку, розділ 1. Читаєш один раз, учень стежить очима.
+
+### c1 — модельний діалог «Nowy sport z kolegą»
+
+Читаєш двічі. Перший раз — сам, міняючи голос на кожній репліці; другий раз — учень читає репліки Ані, ти — Марека. Після цього учень грає свою версію.
+
+| № | Хто | Репліка |
+|---|---|---|
+| 1 | Ania | Cześć, Marek! Co robisz w wolnym czasie? |
+| 2 | Marek | Gram w badmintona. Dwa razy w tygodniu trenuję w hali przy ulicy Leśnej. |
+| 3 | Ania | Super! Ja nie umiem grać w badmintona, ale bardzo chcę spróbować. |
+| 4 | Marek | To nie jest trudne. Masz czas w czwartek? |
+| 5 | Ania | W czwartek pracuję do siedemnastej. O której zaczynacie? |
+| 6 | Marek | Zaczynamy o osiemnastej trzydzieści i gramy półtorej godziny. |
+| 7 | Ania | Pasuje mi! Ile kosztuje jeden trening? |
+| 8 | Marek | Dwadzieścia złotych. Rakietę możesz pożyczyć ode mnie. |
+| 9 | Ania | Dziękuję! A co jeszcze lubisz robić? |
+| 10 | Marek | Lubię gotować, ale nie umiem piec ciast. A ty? |
+| 11 | Ania | Ja lubię tańczyć. W sobotę idę na salsę. Chcesz iść ze mną? Pierwsza lekcja jest za darmo. |
+| 12 | Marek | Hmm, nie umiem tańczyć… Ale dobrze, spróbuję! |
+| 13 | Ania | Świetnie! To do zobaczenia w czwartek o osiemnastej trzydzieści! |
+
+### e2 — «Słuchanie: gdzie to słyszymy?»
+
+Перед кожним висловлюванням кажеш номер («Numer jeden»). Читаєш двічі, пауза 5 секунд, далі наступне. Ключ — для тебе.
+
+| № | Хто говорить | Що читаєш | Ключ |
+|---|---|---|---|
+| 1 | Klientka | Dzień dobry, poproszę dwa bilety na film o dziewiętnastej. Czy są jeszcze miejsca w środku sali? | w kinie przy kasie. |
+| 2 | Ratownik | Proszę pamiętać: przed wejściem do wody trzeba wziąć prysznic i założyć czepek. | na basenie. |
+| 3 | Bibliotekarka | Tę książkę może pan wypożyczyć na miesiąc. Proszę pokazać kartę czytelnika. | w bibliotece. |
+| 4 | Mężczyzna | O której zaczyna się dzisiaj trening? Mam czas dopiero po pracy. | czas. |
+| 5 | Kobieta | Niestety nie umiem jeździć na nartach, ale tej zimy bardzo chcę się nauczyć. | chce zacząć jeździć na nartach. |
+| 6 | Mężczyzna | No nie! Znowu pada deszcz, a ja mam dzisiaj mecz. To jest okropne! | złość. |

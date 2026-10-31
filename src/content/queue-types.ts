@@ -66,6 +66,7 @@ export type FlipTaskExercise = {
     back_scenario: string;
     back_checklist: string[];
     audio_url?: string;
+    audio_source?: string;
     model_dialogue?: FlipTaskDialogueLine[];
   }[];
 };

@@ -7,14 +7,22 @@ import { ExerciseCard } from '@/components/exercises/ExerciseCard';
 import { getSubmissionsForLessons, submissionKey } from '@/lib/submissions';
 import { hasQueueLesson, loadQueueLesson } from '@/lib/queue-lesson';
 import { NotebookLesson } from '@/components/exercises/NotebookLesson';
+import { stripTeacherTexts } from '@/lib/teacher-reads';
 import '@/components/exercises/notebook.css';
 
-export default async function LessonPage({ params }: { params: { slug: string } }) {
+export default async function LessonPage({
+  params,
+  searchParams,
+}: {
+  params: { slug: string };
+  searchParams?: { teacher?: string };
+}) {
   // Content-queue notebook lessons are public (e2e + LMS embeds)
   if (hasQueueLesson(params.slug)) {
     const bundle = loadQueueLesson(params.slug);
     if (!bundle) notFound();
     const title = bundle.frontmatter.title ?? params.slug;
+    const teacherMode = searchParams?.teacher === '1';
     // Encode markers so raw [IMAGE]/[AUDIO]/… never appear in client HTML/props
     const safeBody = bundle.body.replace(
       /\[(IMAGE|AUDIO|SLIDES|EXERCISE):([^\]]*)\]/g,
@@ -33,8 +41,9 @@ export default async function LessonPage({ params }: { params: { slug: string } 
           pictures={bundle.pictures as never}
           commTasks={bundle.commTasks as never}
           grammar={bundle.grammar as never}
-          exam={bundle.exam as never}
+          exam={stripTeacherTexts(bundle.exam, teacherMode) as never}
           hw={bundle.hw as never}
+          teacherMode={teacherMode}
         />
       </main>
     );

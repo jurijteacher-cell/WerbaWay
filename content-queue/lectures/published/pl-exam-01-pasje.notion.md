@@ -13,7 +13,7 @@
 
 **Na początek.** Co robisz wieczorem po pracy? Odpowiedz jednym zdaniem. Potem napisz w zeszycie jedno słowo, które opisuje Twój wieczór.
 
-<audio src="https://werba-way.vercel.app/audio/pl-exam-01-pasje-czytanie.mp3">Słuchaj — Nowa pasja po trzydziestce</audio>
+> **Słuchaj — czyta nauczyciel.** Najpierw posłuchaj tekstu, potem czytaj sam / sama.
 
 ### Nowa pasja po trzydziestce
 
@@ -77,7 +77,7 @@ Odpowiedz na pytania. Pod każdym pytaniem masz początek odpowiedzi — użyj g
 
 <embed src="https://werba-way.vercel.app/embed/pl-exam-01-pasje/comm-tasks">Zadania komunikacyjne</embed>
 
-<audio src="https://werba-way.vercel.app/audio/pl-exam-01-pasje-c1-dialog.mp3">Słuchaj — dialog c1</audio>
+> **Słuchaj — czyta nauczyciel.** Przykładowa rozmowa do zadania 1. Usłyszysz ją dwa razy.
 
 <embed src="https://werba-way.vercel.app/embed/pl-exam-01-pasje/exam?blocks=e2">Jak na egzaminie — e2 (słuchanie)</embed>
 

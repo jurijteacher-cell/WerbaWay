@@ -14,12 +14,42 @@
       "title": "Czytanie: prawda czy fałsz?",
       "instruction": "Przeczytaj tekst „Nowa pasja po trzydziestce” jeszcze raz. Zdecyduj: prawda (P) czy fałsz (F)?",
       "items": [
-        { "id": "e1-1", "statement": "Tomek pracuje w biurze od poniedziałku do piątku.", "answer": true, "explanation": "W tekście: od poniedziałku do piątku pracuje w biurze." },
-        { "id": "e1-2", "statement": "Tomek chodzi na lekcje perkusji trzy razy w tygodniu.", "answer": false, "explanation": "Chodzi na lekcje dwa razy w tygodniu." },
-        { "id": "e1-3", "statement": "W domu Tomek gra w słuchawkach.", "answer": true, "explanation": "Gra w słuchawkach, bo sąsiedzi nie lubią hałasu." },
-        { "id": "e1-4", "statement": "Ola umie grać na gitarze.", "answer": false, "explanation": "Ola nie umie grać na żadnym instrumencie." },
-        { "id": "e1-5", "statement": "W niedziele Ola jeździ na rowerze.", "answer": false, "explanation": "Na rowerze jeździ w soboty, a w niedziele gotuje." },
-        { "id": "e1-6", "statement": "Tomek i Ola chcą pojechać na festiwal muzyczny w górach.", "answer": true, "explanation": "To ich wspólne marzenie." }
+        {
+          "id": "e1-1",
+          "statement": "Tomek pracuje w biurze od poniedziałku do piątku.",
+          "answer": true,
+          "explanation": "W tekście: od poniedziałku do piątku pracuje w biurze."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Tomek chodzi na lekcje perkusji trzy razy w tygodniu.",
+          "answer": false,
+          "explanation": "Chodzi na lekcje dwa razy w tygodniu."
+        },
+        {
+          "id": "e1-3",
+          "statement": "W domu Tomek gra w słuchawkach.",
+          "answer": true,
+          "explanation": "Gra w słuchawkach, bo sąsiedzi nie lubią hałasu."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Ola umie grać na gitarze.",
+          "answer": false,
+          "explanation": "Ola nie umie grać na żadnym instrumencie."
+        },
+        {
+          "id": "e1-5",
+          "statement": "W niedziele Ola jeździ na rowerze.",
+          "answer": false,
+          "explanation": "Na rowerze jeździ w soboty, a w niedziele gotuje."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Tomek i Ola chcą pojechać na festiwal muzyczny w górach.",
+          "answer": true,
+          "explanation": "To ich wspólne marzenie."
+        }
       ]
     },
     {
@@ -27,67 +57,117 @@
       "exam_skill": "sluchanie",
       "exam_part": "panstwowy-sluchanie-1",
       "exercise_type": "multiple-choice",
-      "covers_slides": ["s8"],
-      "audio_mode": "per-item",
-      "max_plays": 2,
+      "covers_slides": [
+        "s8"
+      ],
       "title": "Słuchanie: gdzie to słyszymy?",
-      "instruction": "Posłuchaj sześciu krótkich wypowiedzi. Każdą możesz usłyszeć dwa razy. Na egzaminie usłyszysz nagranie tylko jeden raz. Wybierz a, b albo c.",
+      "instruction": "Nauczyciel przeczyta sześć krótkich wypowiedzi. Każdą usłyszysz dwa razy. Na egzaminie usłyszysz nagranie tylko jeden raz. Wybierz a, b albo c.",
       "items": [
         {
           "id": "e2-1",
-          "audio_id": "pl-exam-01-pasje-e2-1",
-          "dialogue": [ { "speaker": "Klientka", "voice": "pl-PL-female", "line": "Dzień dobry, poproszę dwa bilety na film o dziewiętnastej. Czy są jeszcze miejsca w środku sali?" } ],
+          "dialogue": [
+            {
+              "speaker": "Klientka",
+              "line": "Dzień dobry, poproszę dwa bilety na film o dziewiętnastej. Czy są jeszcze miejsca w środku sali?"
+            }
+          ],
           "question": "Ta wypowiedź jest typowa",
-          "options": ["w kinie przy kasie.", "w bibliotece.", "na basenie."],
+          "options": [
+            "w kinie przy kasie.",
+            "w bibliotece.",
+            "na basenie."
+          ],
           "answer": "w kinie przy kasie.",
           "explanation": "Słowa-klucze: bilety, film, miejsca na sali."
         },
         {
           "id": "e2-2",
-          "audio_id": "pl-exam-01-pasje-e2-2",
-          "dialogue": [ { "speaker": "Ratownik", "voice": "pl-PL-male", "line": "Proszę pamiętać: przed wejściem do wody trzeba wziąć prysznic i założyć czepek." } ],
+          "dialogue": [
+            {
+              "speaker": "Ratownik",
+              "line": "Proszę pamiętać: przed wejściem do wody trzeba wziąć prysznic i założyć czepek."
+            }
+          ],
           "question": "Ta wypowiedź jest typowa",
-          "options": ["na basenie.", "w sklepie sportowym.", "w restauracji."],
+          "options": [
+            "na basenie.",
+            "w sklepie sportowym.",
+            "w restauracji."
+          ],
           "answer": "na basenie.",
           "explanation": "Słowa-klucze: woda, prysznic, czepek."
         },
         {
           "id": "e2-3",
-          "audio_id": "pl-exam-01-pasje-e2-3",
-          "dialogue": [ { "speaker": "Bibliotekarka", "voice": "pl-PL-female", "line": "Tę książkę może pan wypożyczyć na miesiąc. Proszę pokazać kartę czytelnika." } ],
+          "dialogue": [
+            {
+              "speaker": "Bibliotekarka",
+              "line": "Tę książkę może pan wypożyczyć na miesiąc. Proszę pokazać kartę czytelnika."
+            }
+          ],
           "question": "Ta wypowiedź jest typowa",
-          "options": ["w bibliotece.", "w księgarni.", "w szkole muzycznej."],
+          "options": [
+            "w bibliotece.",
+            "w księgarni.",
+            "w szkole muzycznej."
+          ],
           "answer": "w bibliotece.",
           "explanation": "W księgarni książki kupujemy. Wypożyczamy je w bibliotece."
         },
         {
           "id": "e2-4",
-          "audio_id": "pl-exam-01-pasje-e2-4",
-          "dialogue": [ { "speaker": "Mężczyzna", "voice": "pl-PL-male", "line": "O której zaczyna się dzisiaj trening? Mam czas dopiero po pracy." } ],
+          "dialogue": [
+            {
+              "speaker": "Mężczyzna",
+              "line": "O której zaczyna się dzisiaj trening? Mam czas dopiero po pracy."
+            }
+          ],
           "question": "Ta wypowiedź to pytanie o",
-          "options": ["czas.", "miejsce.", "cenę."],
+          "options": [
+            "czas.",
+            "miejsce.",
+            "cenę."
+          ],
           "answer": "czas.",
           "explanation": "„O której?” to pytanie o godzinę."
         },
         {
           "id": "e2-5",
-          "audio_id": "pl-exam-01-pasje-e2-5",
-          "dialogue": [ { "speaker": "Kobieta", "voice": "pl-PL-female", "line": "Niestety nie umiem jeździć na nartach, ale tej zimy bardzo chcę się nauczyć." } ],
+          "dialogue": [
+            {
+              "speaker": "Kobieta",
+              "line": "Niestety nie umiem jeździć na nartach, ale tej zimy bardzo chcę się nauczyć."
+            }
+          ],
           "question": "Ta wypowiedź oznacza, że ta osoba",
-          "options": ["chce zacząć jeździć na nartach.", "dobrze jeździ na nartach.", "nie lubi zimy."],
+          "options": [
+            "chce zacząć jeździć na nartach.",
+            "dobrze jeździ na nartach.",
+            "nie lubi zimy."
+          ],
           "answer": "chce zacząć jeździć na nartach.",
           "explanation": "Nie umie, ale chce się nauczyć."
         },
         {
           "id": "e2-6",
-          "audio_id": "pl-exam-01-pasje-e2-6",
-          "dialogue": [ { "speaker": "Mężczyzna", "voice": "pl-PL-male", "line": "No nie! Znowu pada deszcz, a ja mam dzisiaj mecz. To jest okropne!" } ],
+          "dialogue": [
+            {
+              "speaker": "Mężczyzna",
+              "line": "No nie! Znowu pada deszcz, a ja mam dzisiaj mecz. To jest okropne!"
+            }
+          ],
           "question": "Ta wypowiedź oznacza",
-          "options": ["złość.", "radość.", "spokój."],
+          "options": [
+            "złość.",
+            "radość.",
+            "spokój."
+          ],
           "answer": "złość.",
           "explanation": "„No nie!” i „okropne” pokazują złość."
         }
-      ]
+      ],
+      "audio_source": "teacher",
+      "reads": 2
     }
   ]
 }

@@ -2,9 +2,9 @@ import { notFound } from 'next/navigation';
 import { getQueueBundle } from '@/content/queue-loader';
 import { FlipTask } from '@/components/exercises/FlipTask';
 
-type Props = { params: { lessonId: string } };
+type Props = { params: { lessonId: string }; searchParams?: { teacher?: string } };
 
-export default function EmbedCommTasksPage({ params }: Props) {
+export default function EmbedCommTasksPage({ params, searchParams }: Props) {
   const bundle = getQueueBundle(params.lessonId);
   if (!bundle) notFound();
   const { commTasks } = bundle;
@@ -14,6 +14,7 @@ export default function EmbedCommTasksPage({ params }: Props) {
       instructions={commTasks.instructions}
       instructionsUk={commTasks.instructions_uk}
       items={commTasks.items}
+      teacherMode={searchParams?.teacher === '1'}
     />
   );
 }

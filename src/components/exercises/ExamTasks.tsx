@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useRef, useState } from 'react';
+import { TeacherReads } from './TeacherReads';
 
 export type ExamItem = {
   id: string;
@@ -9,6 +10,7 @@ export type ExamItem = {
   options?: string[];
   answer: string | boolean;
   explanation?: string;
+  dialogue?: { speaker?: string; line?: string }[];
 };
 
 export type ExamBlock = {
@@ -21,6 +23,8 @@ export type ExamBlock = {
   transcript?: { speaker: string; line: string }[];
   max_plays?: number;
   audio_url?: string;
+  audio_source?: string;
+  reads?: number;
 };
 
 export type ExamExercise = {
@@ -34,9 +38,10 @@ type Props = {
   data: ExamExercise;
   /** Optional filter: e1, e2 or e1,e2 */
   blockIds?: string[];
+  teacherMode?: boolean;
 };
 
-export function ExamTasks({ data, blockIds }: Props) {
+export function ExamTasks({ data, blockIds, teacherMode = false }: Props) {
   const blocks = useMemo(() => {
     if (!blockIds?.length) return data.blocks;
     const set = new Set(blockIds);
@@ -114,9 +119,13 @@ export function ExamTasks({ data, blockIds }: Props) {
                   Przeczytaj dialog poniżej, potem odpowiedz.
                 </p>
               ) : (
-                <p className="nb-note" style={{ marginTop: 0 }}>
-                  🎧 Słuchaj nauczyciela — bez tekstu.
-                </p>
+                <TeacherReads
+                  times={block.reads}
+                  teacherMode={teacherMode}
+                  lines={block.items.flatMap((it, i) =>
+                    (it.dialogue ?? []).map((d) => ({ speaker: `${i + 1}. ${d.speaker ?? ''}`.trim(), line: d.line }))
+                  )}
+                />
               )}
               {block.transcript?.length ? (
                 <div style={{ display: 'grid', gap: 8, marginTop: 10 }}>

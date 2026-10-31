@@ -128,7 +128,7 @@ def check_items_block(fname, block, gpoints, need_gp):
 def main(pkg):
     pkg = Path(pkg)
     mds = [p for p in pkg.glob("*.md") if not p.name.endswith("-teacher.md")
-           and not p.name.startswith("CURSOR_TASK")]
+           and not p.name.startswith("BUILD_TASK")]
     if len(mds) != 1:
         err(f"очікую один .md уроку, знайдено {len(mds)}")
         return
@@ -246,11 +246,16 @@ def main(pkg):
         for b in files.get(kind, {}).get("blocks", []):
             check_items_block(kind, b, gpoints, need_gp=kind in ("grammar", "hw"))
             if b.get("exam_skill") == "sluchanie":
-                if not b.get("max_plays"):
-                    err(f"{kind} {b['block_id']}: слухання без max_plays")
+                # Слухання читає вчитель: audio_source "teacher" + reads + dialogue в кожному елементі.
+                if b.get("audio_source") != "teacher":
+                    err(f"{kind} {b['block_id']}: слухання без audio_source: teacher (аудіо не генеруємо)")
+                if not b.get("reads"):
+                    err(f"{kind} {b['block_id']}: слухання без reads (скільки разів читає вчитель)")
                 for it in b.get("items", []):
-                    if b.get("audio_mode") == "per-item" and not (it.get("audio_id") and it.get("dialogue")):
-                        err(f"{kind} {it['id']}: per-item аудіо без audio_id / dialogue")
+                    if not it.get("dialogue") and not b.get("source"):
+                        err(f"{kind} {it['id']}: немає dialogue — вчителю нічого читати")
+                    if it.get("audio_id"):
+                        err(f"{kind} {it['id']}: audio_id — аудіо не генеруємо, читає вчитель")
 
     # словник
     voc = files.get("vocab")
@@ -312,8 +317,16 @@ def main(pkg):
     # файл викладача
     if not (pkg / f"{lesson_id}-teacher.md").exists():
         err("немає файлу викладача")
-    if not (pkg / f"CURSOR_TASK_{lesson_id}.md").exists():
-        err("немає CURSOR_TASK")
+    if not (pkg / f"BUILD_TASK_{lesson_id}.md").exists():
+        err("немає BUILD_TASK")
+
+    # аудіо: тільки вчитель
+    for mk in re.findall(r"\[AUDIO:([^\]]*)\]", md_text):
+        if 'source="teacher"' not in mk:
+            err(f"маркер AUDIO без source=\"teacher\": {mk.strip()[:60]}")
+    for kind, d in files.items():
+        if '"voice"' in json.dumps(d):
+            err(f"{kind}: поле voice — TTS не використовуємо")
 
 
 if __name__ == "__main__":
