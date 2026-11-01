@@ -1,0 +1,182 @@
+{
+  "lesson_id": "pl-a0-en-03-kawiarnia",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: zakupy, kino i rodzina",
+  "instruction": "Trzy ćwiczenia. 20 minut.",
+  "instruction_uk": "Three exercises, 20 minutes. New places: a shop, a cinema, a kiosk.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Dobra forma",
+      "instruction": "Wpisz słowo z nawiasu w dobrej formie.",
+      "instruction_uk": "Write the word in brackets in the right form.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "W kiosku kupuję ___. (gazeta)",
+          "answer": "gazetę",
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "h1-2",
+          "text": "Wieczorem jem ___. (pizza)",
+          "answer": "pizzę",
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "h1-3",
+          "text": "Mam ___. Mieszka w Londynie. (siostra)",
+          "answer": "siostrę",
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "h1-4",
+          "text": "Kocham ___! (Polska)",
+          "answer": "Polskę",
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "h1-5",
+          "text": "Dziecko chce ___. (czekolada)",
+          "answer": "czekoladę",
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "h1-6",
+          "text": "Znam ___ z pracy. (Marek)",
+          "answer": "Marka",
+          "explanation": "Marek → Marka: a he-person takes -a, and the e disappears (like pies → psa).",
+          "grammar_point": "biernik-m-zywotny"
+        },
+        {
+          "id": "h1-7",
+          "text": "Mamy ___ i dwa koty. (pies)",
+          "answer": "psa",
+          "grammar_point": "biernik-m-zywotny"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdanie",
+      "instruction": "Ułóż zdanie ze słów.",
+      "instruction_uk": "Put the words in order.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "poproszę",
+            "pizzę",
+            "z",
+            "szynką"
+          ],
+          "answer": "Poproszę pizzę z szynką.",
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "moja",
+            "żona",
+            "lubi",
+            "herbatę",
+            "z",
+            "miodem"
+          ],
+          "answer": "Moja żona lubi herbatę z miodem.",
+          "accept": [
+            "Herbatę z miodem lubi moja żona."
+          ],
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "chcę",
+            "kupić",
+            "chleb",
+            "i",
+            "masło"
+          ],
+          "answer": "Chcę kupić chleb i masło.",
+          "accept": [
+            "Chcę kupić masło i chleb."
+          ],
+          "grammar_point": "biernik-m-nieżywotny"
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "w",
+            "sklepie",
+            "płacę",
+            "telefonem"
+          ],
+          "answer": "W sklepie płacę telefonem.",
+          "accept": [
+            "Płacę telefonem w sklepie.",
+            "W sklepie telefonem płacę."
+          ],
+          "grammar_point": "narzednik-narzedzie"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Ile płacę?",
+      "instruction": "Napisz cenę słowami.",
+      "instruction_uk": "Write the price in words: … złote or … złotych.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Bilet do kina — 32 zł. Ile płacę?",
+          "answer": "Trzydzieści dwa złote.",
+          "accept": [
+            "Płacę trzydzieści dwa złote."
+          ],
+          "grammar_point": "liczebniki-2-3-4"
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Gazeta — 6 zł. Ile płacę?",
+          "answer": "Sześć złotych.",
+          "accept": [
+            "Płacę sześć złotych."
+          ],
+          "grammar_point": "liczebniki-2-3-4"
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Pizza — 45 zł. Ile płacę?",
+          "answer": "Czterdzieści pięć złotych.",
+          "accept": [
+            "Płacę czterdzieści pięć złotych."
+          ],
+          "grammar_point": "liczebniki-2-3-4"
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Bilet na autobus — 4 zł. Ile płacę?",
+          "answer": "Cztery złote.",
+          "accept": [
+            "Płacę cztery złote."
+          ],
+          "grammar_point": "liczebniki-2-3-4"
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Kwiaty — 13 zł. Ile płacę?",
+          "answer": "Trzynaście złotych.",
+          "accept": [
+            "Płacę trzynaście złotych."
+          ],
+          "grammar_point": "liczebniki-2-3-4"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "lesson_id": "pl-a0-en-03-kawiarnia",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: powtórka i biernik",
+  "instruction": "Try first, then press Sprawdź (check).",
+  "eyebrow": "ćwiczenia",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "1. Powtórka: ceny",
+      "instruction": "Połącz cenę ze słowami.",
+      "instruction_uk": "Review. Match the price with the words. Careful: -naście = -teen, -dzieści / -dziesiąt = -ty.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "14 zł",
+          "right": "czternaście złotych",
+          "grammar_point": "liczebniki-0-100"
+        },
+        {
+          "id": "g1-2",
+          "left": "40 zł",
+          "right": "czterdzieści złotych",
+          "grammar_point": "liczebniki-0-100"
+        },
+        {
+          "id": "g1-3",
+          "left": "15 zł",
+          "right": "piętnaście złotych",
+          "grammar_point": "liczebniki-0-100"
+        },
+        {
+          "id": "g1-4",
+          "left": "50 zł",
+          "right": "pięćdziesiąt złotych",
+          "grammar_point": "liczebniki-0-100"
+        },
+        {
+          "id": "g1-5",
+          "left": "22 zł",
+          "right": "dwadzieścia dwa złote",
+          "grammar_point": "liczebniki-0-100"
+        },
+        {
+          "id": "g1-6",
+          "left": "33 zł",
+          "right": "trzydzieści trzy złote",
+          "grammar_point": "liczebniki-0-100"
+        },
+        {
+          "id": "g1-7",
+          "left": "1 zł",
+          "right": "jeden złoty",
+          "grammar_point": "liczebniki-0-100"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Powtórka: złote czy złotych? lata czy lat?",
+      "instruction": "Wybierz dobrą formę.",
+      "instruction_uk": "Review. Choose the right form — remember the 2-3-4 rule.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Sok — 12 zł: ___",
+          "answer": "dwanaście złotych",
+          "options": [
+            "dwanaście złote",
+            "dwanaście złotych"
+          ],
+          "explanation": "12, 13, 14 are -teen numbers → złotych.",
+          "grammar_point": "liczebniki-2-3-4"
+        },
+        {
+          "id": "g2-2",
+          "text": "Sernik — 23 zł: ___",
+          "answer": "dwadzieścia trzy złote",
+          "options": [
+            "dwadzieścia trzy złote",
+            "dwadzieścia trzy złotych"
+          ],
+          "explanation": "The number ends in 3 → złote.",
+          "grammar_point": "liczebniki-2-3-4"
+        },
+        {
+          "id": "g2-3",
+          "text": "Pączek — 7 zł: ___",
+          "answer": "siedem złotych",
+          "options": [
+            "siedem złote",
+            "siedem złotych"
+          ],
+          "explanation": "7 → złotych. Only 2, 3, 4 at the end take złote.",
+          "grammar_point": "liczebniki-2-3-4"
+        },
+        {
+          "id": "g2-4",
+          "text": "Woda — 4 zł: ___",
+          "answer": "cztery złote",
+          "options": [
+            "cztery złotych",
+            "cztery złote"
+          ],
+          "explanation": "4 → złote.",
+          "grammar_point": "liczebniki-2-3-4"
+        },
+        {
+          "id": "g2-5",
+          "text": "Mój brat ma ___.",
+          "answer": "trzydzieści cztery lata",
+          "options": [
+            "trzydzieści cztery lata",
+            "trzydzieści cztery lat"
+          ],
+          "explanation": "The number ends in 4 → lata.",
+          "grammar_point": "liczebniki-2-3-4"
+        },
+        {
+          "id": "g2-6",
+          "text": "Mój tata ma ___.",
+          "answer": "sześćdziesiąt jeden lat",
+          "options": [
+            "sześćdziesiąt jeden lata",
+            "sześćdziesiąt jeden lat",
+            "sześćdziesiąt jeden rok"
+          ],
+          "explanation": "21, 31, 41, 61… → lat. Rok is only for 1 year: mam rok.",
+          "grammar_point": "liczebniki-2-3-4"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Powtórka: z czy bez z?",
+      "instruction": "Wybierz dobrą formę.",
+      "instruction_uk": "Review of narzędnik. z = together with. No z = a tool or transport.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Piję herbatę ___. (cytryna)",
+          "answer": "z cytryną",
+          "options": [
+            "z cytryną",
+            "cytryną",
+            "z cytryna"
+          ],
+          "explanation": "Tea together with lemon → z + narzędnik: z cytryną.",
+          "grammar_point": "narzednik-z"
+        },
+        {
+          "id": "g3-2",
+          "text": "Mogę zapłacić ___? (karta)",
+          "answer": "kartą",
+          "options": [
+            "z kartą",
+            "kartą",
+            "karta"
+          ],
+          "explanation": "The card is a tool → narzędnik without z: kartą.",
+          "grammar_point": "narzednik-narzedzie"
+        },
+        {
+          "id": "g3-3",
+          "text": "Jem kanapkę ___. (ser)",
+          "answer": "z serem",
+          "options": [
+            "serem",
+            "z ser",
+            "z serem"
+          ],
+          "explanation": "A sandwich together with cheese → z serem.",
+          "grammar_point": "narzednik-z"
+        },
+        {
+          "id": "g3-4",
+          "text": "Do pracy jeżdżę ___. (rower)",
+          "answer": "rowerem",
+          "options": [
+            "rowerem",
+            "z rowerem",
+            "rower"
+          ],
+          "explanation": "Transport → no z: rowerem.",
+          "grammar_point": "narzednik-narzedzie"
+        },
+        {
+          "id": "g3-5",
+          "text": "Mieszkam ___. (siostra)",
+          "answer": "z siostrą",
+          "options": [
+            "siostrą",
+            "z siostrą",
+            "z siostra"
+          ],
+          "explanation": "Together with my sister → z siostrą.",
+          "grammar_point": "narzednik-z"
+        },
+        {
+          "id": "g3-6",
+          "text": "Jestem ___. (programista)",
+          "answer": "programistą",
+          "options": [
+            "programistem",
+            "z programistą",
+            "programistą"
+          ],
+          "explanation": "Men's words in -a take -ą: programista → programistą.",
+          "grammar_point": "narzednik-kim"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "true-false",
+      "title": "4. Prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst. Prawda czy fałsz?",
+      "instruction_uk": "Read the text. Prawda = true, Fałsz = false.",
+      "items": [
+        {
+          "id": "g4-1",
+          "statement": "Tom jest Anglikiem.",
+          "answer": true,
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g4-2",
+          "statement": "Tom mieszka z siostrą.",
+          "answer": false,
+          "explanation": "Mieszka z bratem — with his brother.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g4-3",
+          "statement": "Tom pije kawę z mlekiem.",
+          "answer": true,
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g4-4",
+          "statement": "Tom chce szarlotkę.",
+          "answer": false,
+          "explanation": "Poproszę sernik — he orders cheesecake.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g4-5",
+          "statement": "Tom je na wynos.",
+          "answer": false,
+          "explanation": "Na miejscu — he stays in the café.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g4-6",
+          "statement": "Tom płaci kartą.",
+          "answer": true,
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "5. Zwroty w kawiarni",
+      "instruction": "Połącz po polsku i po angielsku.",
+      "instruction_uk": "Match the Polish phrase with the English one.",
+      "items": [
+        {
+          "id": "g5-1",
+          "left": "Co dla pana?",
+          "right": "What can I get you?",
+          "grammar_point": "slownictwo-kawiarnia"
+        },
+        {
+          "id": "g5-2",
+          "left": "Coś jeszcze?",
+          "right": "Anything else?",
+          "grammar_point": "slownictwo-kawiarnia"
+        },
+        {
+          "id": "g5-3",
+          "left": "To wszystko.",
+          "right": "That's all.",
+          "grammar_point": "slownictwo-kawiarnia"
+        },
+        {
+          "id": "g5-4",
+          "left": "Na miejscu czy na wynos?",
+          "right": "Eat in or take away?",
+          "grammar_point": "slownictwo-kawiarnia"
+        },
+        {
+          "id": "g5-5",
+          "left": "Ile płacę?",
+          "right": "How much do I pay?",
+          "grammar_point": "slownictwo-kawiarnia"
+        },
+        {
+          "id": "g5-6",
+          "left": "Poproszę rachunek.",
+          "right": "The bill, please.",
+          "grammar_point": "slownictwo-kawiarnia"
+        },
+        {
+          "id": "g5-7",
+          "left": "Płacę gotówką.",
+          "right": "I pay in cash.",
+          "grammar_point": "slownictwo-kawiarnia"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Kawa czy kawę?",
+      "instruction": "Wybierz dobrą formę.",
+      "instruction_uk": "To jest… → dictionary form. Poproszę, mam, lubię, chcę, piję, jem… → biernik.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Poproszę ___ z mlekiem.",
+          "answer": "kawę",
+          "options": [
+            "kawa",
+            "kawę"
+          ],
+          "explanation": "Poproszę + biernik: kawa → kawę.",
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "g6-2",
+          "text": "To jest ___ z cytryną.",
+          "answer": "herbata",
+          "options": [
+            "herbatę",
+            "herbata"
+          ],
+          "explanation": "To jest… shows something → dictionary form: herbata.",
+          "grammar_point": "biernik-to-jest"
+        },
+        {
+          "id": "g6-3",
+          "text": "Chcę ___ i ciastko.",
+          "answer": "sok",
+          "options": [
+            "sok",
+            "soka",
+            "soku"
+          ],
+          "explanation": "A he-thing does not change: sok → sok.",
+          "grammar_point": "biernik-m-nieżywotny"
+        },
+        {
+          "id": "g6-4",
+          "text": "Mam ___ i siostrę.",
+          "answer": "brata",
+          "options": [
+            "brat",
+            "brata"
+          ],
+          "explanation": "A he-person or animal takes -a: brat → brata.",
+          "grammar_point": "biernik-m-zywotny"
+        },
+        {
+          "id": "g6-5",
+          "text": "Lubię ___ z cukrem.",
+          "answer": "herbatę",
+          "options": [
+            "herbatę",
+            "herbata",
+            "herbatą"
+          ],
+          "explanation": "Lubię + biernik: herbatę. herbatą is narzędnik (with).",
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "g6-6",
+          "text": "Rano piję ___.",
+          "answer": "mleko",
+          "options": [
+            "mleko",
+            "mlekę",
+            "mlekiem"
+          ],
+          "explanation": "An it-word (-o) does not change: mleko → mleko.",
+          "grammar_point": "biernik-nijaki"
+        },
+        {
+          "id": "g6-7",
+          "text": "Tu jest ___. Jest bardzo dobra!",
+          "answer": "zupa",
+          "options": [
+            "zupa",
+            "zupę"
+          ],
+          "explanation": "Tu jest… = here is → dictionary form: zupa.",
+          "grammar_point": "biernik-to-jest"
+        },
+        {
+          "id": "g6-8",
+          "text": "Mam ___. On jest czarny.",
+          "answer": "kota",
+          "options": [
+            "kot",
+            "kota",
+            "kotem"
+          ],
+          "explanation": "An animal is like a person: kot → kota.",
+          "grammar_point": "biernik-m-zywotny"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Napisz formę",
+      "instruction": "Wpisz słowo z nawiasu w dobrej formie.",
+      "instruction_uk": "Write the word in brackets after the verb. Only words that change.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Poproszę ___. (szarlotka)",
+          "answer": "szarlotkę",
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "g7-2",
+          "text": "Chcę ___ i wodę. (zupa)",
+          "answer": "zupę",
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "g7-3",
+          "text": "Jem ___ z serem. (kanapka)",
+          "answer": "kanapkę",
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "g7-4",
+          "text": "Kocham ___. (mama)",
+          "answer": "mamę",
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "g7-5",
+          "text": "Mam ___. Ma na imię Adam. (syn)",
+          "answer": "syna",
+          "explanation": "A he-person takes -a: syn → syna.",
+          "grammar_point": "biernik-m-zywotny"
+        },
+        {
+          "id": "g7-6",
+          "text": "Lubię ___. (muzyka)",
+          "answer": "muzykę",
+          "explanation": "Polish -ę, not Russian -у: muzykę.",
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "g7-7",
+          "text": "Masz ___? Jak ma na imię? (pies)",
+          "answer": "psa",
+          "explanation": "pies → psa: the e disappears.",
+          "grammar_point": "biernik-m-zywotny"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "8. Popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie dobrze.",
+      "instruction_uk": "Each sentence has one mistake. Write the whole sentence correctly.",
+      "items": [
+        {
+          "id": "g8-1",
+          "prompt": "Poproszę kawa z mlekiem.",
+          "answer": "Poproszę kawę z mlekiem.",
+          "grammar_point": "biernik-a-e"
+        },
+        {
+          "id": "g8-2",
+          "prompt": "Mam brat i siostrę.",
+          "answer": "Mam brata i siostrę.",
+          "grammar_point": "biernik-m-zywotny"
+        },
+        {
+          "id": "g8-3",
+          "prompt": "To jest kawę z cukrem.",
+          "answer": "To jest kawa z cukrem.",
+          "grammar_point": "biernik-to-jest"
+        },
+        {
+          "id": "g8-4",
+          "prompt": "Mogę zapłacić z kartą?",
+          "answer": "Mogę zapłacić kartą?",
+          "accept": [
+            "Czy mogę zapłacić kartą?"
+          ],
+          "grammar_point": "narzednik-narzedzie"
+        },
+        {
+          "id": "g8-5",
+          "prompt": "Lubię herbatę z cytryna.",
+          "answer": "Lubię herbatę z cytryną.",
+          "grammar_point": "narzednik-z"
+        },
+        {
+          "id": "g8-6",
+          "prompt": "Chcę szarlotka i wodę.",
+          "answer": "Chcę szarlotkę i wodę.",
+          "grammar_point": "biernik-a-e"
+        }
+      ]
+    }
+  ]
+}
