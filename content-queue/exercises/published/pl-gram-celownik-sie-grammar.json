@@ -1,0 +1,731 @@
+{
+  "lesson_id": "pl-gram-celownik-sie",
+  "exercise_type": "fill-in-blank",
+  "title": "Celownik + się: zepsuł mi się telefon, chce mi się spać",
+  "instruction": "Najpierw tekst, potem dwie części gramatyki — po każdej ćwiczenia.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "g0",
+      "part": 1,
+      "exercise_type": "true-false",
+      "title": "0. Na start: co się stało w poniedziałek?",
+      "instruction": "Prawda czy fałsz? Szukaj w tekście form z „mi się”, „mu się” — one dają odpowiedź.",
+      "items": [
+        {
+          "id": "g0-1",
+          "statement": "Budzik nie zadzwonił, bo w nocy rozładował się telefon.",
+          "answer": true,
+          "explanation": "„Rozładował mi się telefon i budzik nie zadzwonił”.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g0-2",
+          "statement": "Bohater specjalnie wylał kawę na dokumenty.",
+          "answer": false,
+          "explanation": "„Rozlała mi się” — stało się samo, przypadkiem, nie specjalnie.",
+          "grammar_point": "sie-znaczenia"
+        },
+        {
+          "id": "g0-3",
+          "statement": "Bohater zgubił klucze na przystanku.",
+          "answer": false,
+          "explanation": "Zatrzasnęły mu się drzwi, a klucze zostały w środku.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g0-4",
+          "statement": "W tramwaju bohater źle się poczuł.",
+          "answer": true,
+          "explanation": "„Zrobiło mi się słabo” = źle się poczułem.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g0-5",
+          "statement": "Szefowi spóźnienie nie przeszkadzało.",
+          "answer": false,
+          "explanation": "„Bardzo mu się to nie podobało”.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g0-6",
+          "statement": "Koledze z IT udało się uratować pliki.",
+          "answer": true,
+          "explanation": "„Udało mu się uratować wszystkie pliki”.",
+          "grammar_point": "celownik-sie"
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Komu? — mi, ci, mu, jej…",
+      "instruction": "Wpisz zaimek albo rzeczownik w celowniku. Kogo to spotkało?",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Wczoraj zepsuł ___ się telefon. (ja)",
+          "answer": "mi",
+          "explanation": "ja → mi",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g1-2",
+          "text": "Czy ___ też rozładował się telefon? (ty)",
+          "answer": "ci",
+          "explanation": "ty → ci",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g1-3",
+          "text": "Mój brat jest zły, bo zgubiły ___ się klucze. (on)",
+          "answer": "mu",
+          "explanation": "on → mu",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g1-4",
+          "text": "Ania płacze, bo rozbił ___ się ulubiony kubek. (ona)",
+          "answer": "jej",
+          "explanation": "ona → jej",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g1-5",
+          "text": "Na wakacjach zepsuł ___ się samochód i staliśmy dwa dni w Zakopanem. (my)",
+          "answer": "nam",
+          "explanation": "my → nam",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g1-6",
+          "text": "Czy ___ też skończyły się pieniądze przed końcem miesiąca? (wy)",
+          "answer": "wam",
+          "explanation": "wy → wam",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g1-7",
+          "text": "Sąsiedzi siedzą po ciemku, bo przepalił ___ się bezpiecznik. (oni)",
+          "answer": "im",
+          "explanation": "oni → im",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g1-8",
+          "text": "Wczoraj ___ (mama) spaliło się ciasto.",
+          "answer": "mamie",
+          "explanation": "Komu? — mamie (jak „dziękuję mamie”).",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g1-9",
+          "text": "Wczoraj ___ (sąsiad) zepsuła się pralka.",
+          "answer": "sąsiadowi",
+          "explanation": "Komu? — sąsiadowi (rodzaj męski: -owi).",
+          "grammar_point": "celownik-sie"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Czasownik zgadza się z rzeczą",
+      "instruction": "Wpisz czasownik w czasie przeszłym. Zapytaj: CO się zepsuło? — z tym słowem zgadza się czasownik.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "W nocy ___ mi się telefon. (rozładować się)",
+          "answer": "rozładował",
+          "explanation": "telefon (on) → rozładował",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g2-2",
+          "text": "Rano ___ mi się kawa na stół. (rozlać się)",
+          "answer": "rozlała",
+          "explanation": "kawa (ona) → rozlała",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g2-3",
+          "text": "Kiedy wychodziłem, ___ mi się drzwi. (zatrzasnąć się)",
+          "answer": "zatrzasnęły",
+          "explanation": "drzwi (one, l. mn.) → zatrzasnęły",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g2-4",
+          "text": "Mamie ___ się mleko. (skończyć się)",
+          "answer": "skończyło",
+          "explanation": "mleko (ono) → skończyło",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g2-5",
+          "text": "Bratu ___ się okulary. (zgubić się)",
+          "answer": "zgubiły",
+          "explanation": "okulary — tylko liczba mnoga → zgubiły",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g2-6",
+          "text": "W restauracji ___ mi się guzik od marynarki. (urwać się)",
+          "answer": "urwał",
+          "explanation": "guzik (on) → urwał",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g2-7",
+          "text": "Nam ___ się wszystkie pieniądze w pierwszym tygodniu. (skończyć się)",
+          "answer": "skończyły",
+          "explanation": "pieniądze (one) → skończyły. Czasownik zgadza się z rzeczą, nie z „nam”.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g2-8",
+          "text": "Jej ___ się obiad, bo rozmawiała przez telefon. (spalić się)",
+          "answer": "spalił",
+          "explanation": "obiad (on) → spalił. Ona rozmawiała, ale spalił się obiad.",
+          "grammar_point": "celownik-sie"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Moja wina czy samo się stało?",
+      "instruction": "Zrobiłem to ja → zepsułem. Stało się samo → zepsuł mi się. Wybierz.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Ze złości rzuciłem telefonem o ścianę. Tak, ___ go — to moja wina.",
+          "options": [
+            "zepsułem",
+            "zepsuł mi się"
+          ],
+          "answer": "zepsułem",
+          "explanation": "Zrobiłem to sam → zwykła forma: zepsułem go.",
+          "grammar_point": "sie-znaczenia"
+        },
+        {
+          "id": "g3-2",
+          "text": "Telefon leżał spokojnie na biurku i nagle ___. Nic z nim nie robiłem.",
+          "options": [
+            "zepsułem",
+            "zepsuł mi się"
+          ],
+          "answer": "zepsuł mi się",
+          "explanation": "Samo się stało → celownik + się.",
+          "grammar_point": "sie-znaczenia"
+        },
+        {
+          "id": "g3-3",
+          "text": "Kubek stał na brzegu półki i ___, kiedy trzasnęły drzwi.",
+          "options": [
+            "rozbiłem",
+            "rozbił mi się"
+          ],
+          "answer": "rozbił mi się",
+          "explanation": "Nikt go nie rzucił → rozbił mi się.",
+          "grammar_point": "sie-znaczenia"
+        },
+        {
+          "id": "g3-4",
+          "text": "Na imprezie chciałem pokazać sztuczkę i ___ szklankę gospodarza.",
+          "options": [
+            "rozbiłem",
+            "rozbiła mi się"
+          ],
+          "answer": "rozbiłem",
+          "explanation": "To ja to zrobiłem; „szklankę” to biernik — rzecz nie jest podmiotem.",
+          "grammar_point": "sie-znaczenia"
+        },
+        {
+          "id": "g3-5",
+          "text": "Zapomniałem o garnku i ___ zupa.",
+          "options": [
+            "przypaliłem",
+            "przypaliła mi się"
+          ],
+          "answer": "przypaliła mi się",
+          "explanation": "„zupa” w mianowniku = podmiot → przypaliła mi się. Z „przypaliłem” byłoby: przypaliłem zupę.",
+          "grammar_point": "sie-znaczenia"
+        },
+        {
+          "id": "g3-6",
+          "text": "Specjalnie ___ stare listy w kominku, żeby nikt ich nie przeczytał.",
+          "options": [
+            "spaliłem",
+            "spaliły mi się"
+          ],
+          "answer": "spaliłem",
+          "explanation": "„specjalnie” = to moja decyzja → spaliłem.",
+          "grammar_point": "sie-znaczenia"
+        },
+        {
+          "id": "g3-7",
+          "text": "Pisałem dwie godziny, a potem ___ cały tekst, bo komputer się zawiesił.",
+          "options": [
+            "skasowałem",
+            "skasował mi się"
+          ],
+          "answer": "skasował mi się",
+          "explanation": "Winny jest komputer, nie ja → skasował mi się.",
+          "grammar_point": "sie-znaczenia"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "4. Bez „u mnie”",
+      "instruction": "Przetłumacz na polski. Kogo to spotkało — w celowniku.",
+      "items": [
+        {
+          "id": "g4-1",
+          "prompt": "У меня сломалась стиральная машина.",
+          "answer": "Zepsuła mi się pralka.",
+          "accept": [
+            "Pralka mi się zepsuła."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g4-2",
+          "prompt": "У сестры потерялись ключи.",
+          "answer": "Siostrze zgubiły się klucze.",
+          "accept": [
+            "Mojej siostrze zgubiły się klucze.",
+            "Siostra zgubiła klucze.",
+            "Moja siostra zgubiła klucze."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g4-3",
+          "prompt": "У нас закончился хлеб.",
+          "answer": "Skończył nam się chleb.",
+          "accept": [
+            "Chleb nam się skończył.",
+            "Skończył się nam chleb."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g4-4",
+          "prompt": "У меня разрядился телефон.",
+          "answer": "Rozładował mi się telefon.",
+          "accept": [
+            "Telefon mi się rozładował."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g4-5",
+          "prompt": "У него оторвалась пуговица.",
+          "answer": "Urwał mu się guzik.",
+          "accept": [
+            "Guzik mu się urwał.",
+            "Oderwał mu się guzik.",
+            "Guzik mu się oderwał."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g4-6",
+          "prompt": "У тебя пролился чай.",
+          "answer": "Rozlała ci się herbata.",
+          "accept": [
+            "Herbata ci się rozlała.",
+            "Wylała ci się herbata.",
+            "Herbata ci się wylała."
+          ],
+          "grammar_point": "kalki-ru"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Wczoraj: chciało mi się, podobał mi się",
+      "instruction": "Wpisz czas przeszły. Jest rzecz-podmiot → zgoda z nią. Nie ma → forma na -ło.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Wczoraj nic mi się nie ___. (chce się)",
+          "answer": "chciało",
+          "explanation": "Nie ma podmiotu → forma na -ło.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g5-2",
+          "text": "Ten film bardzo mi się ___. (podoba się)",
+          "answer": "podobał",
+          "explanation": "film (on) → podobał",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g5-3",
+          "text": "Te buty od razu mi się ___. (podobają się)",
+          "answer": "podobały",
+          "explanation": "buty (one) → podobały",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g5-4",
+          "text": "Dziś w nocy ___ mi się babcia. (śni się)",
+          "answer": "śniła",
+          "explanation": "babcia (ona) → śniła",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g5-5",
+          "text": "Całą noc ___ mi się, że ktoś chodzi po mieszkaniu. (wydaje się)",
+          "answer": "wydawało",
+          "explanation": "Nie ma podmiotu (jest „że…”) → -ło.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g5-6",
+          "text": "Nie ___ mi się zdać egzaminu za pierwszym razem. (udać się)",
+          "answer": "udało",
+          "explanation": "Nie ma podmiotu → udało.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g5-7",
+          "text": "W nowym biurze bardzo dobrze mi się ___. (pracuje się)",
+          "answer": "pracowało",
+          "explanation": "dobrze mi się pracuje → pracowało",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g5-8",
+          "text": "W pociągu ___ mi się zimno. (zrobić się)",
+          "answer": "zrobiło",
+          "explanation": "zrobiło mi się zimno / słabo / niedobrze",
+          "grammar_point": "celownik-sie"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Mi czy mnie? Ci czy cię?",
+      "instruction": "Celownik (komu?) czy biernik (kogo?). Uwaga na „boli”!",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Od rana boli ___ głowa.",
+          "options": [
+            "mi",
+            "mnie"
+          ],
+          "answer": "mnie",
+          "explanation": "Boleć + biernik: boli mnie, ciebie, go.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g6-2",
+          "text": "Jest ___ zimno, zamknij okno.",
+          "options": [
+            "mi",
+            "mnie"
+          ],
+          "answer": "mi",
+          "explanation": "Stan: jest mi zimno — celownik.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g6-3",
+          "text": "___ się to nie podoba, a tobie?",
+          "options": [
+            "Mi",
+            "Mnie"
+          ],
+          "answer": "Mnie",
+          "explanation": "Na początku zdania i przy kontraście — pełna forma: mnie.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g6-4",
+          "text": "W autobusie zrobiło ___ się słabo.",
+          "options": [
+            "mi",
+            "mnie"
+          ],
+          "answer": "mi",
+          "explanation": "Komu? — mi.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g6-5",
+          "text": "Bolą ___ plecy po treningu? (ty)",
+          "options": [
+            "ci",
+            "cię"
+          ],
+          "answer": "cię",
+          "explanation": "Boleć + biernik: cię.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g6-6",
+          "text": "Czy ___ też chce się spać? (ty)",
+          "options": [
+            "ci",
+            "cię"
+          ],
+          "answer": "ci",
+          "explanation": "Chce się komu? — ci.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g6-7",
+          "text": "Kręci ___ się w głowie. (on)",
+          "options": [
+            "mu",
+            "go"
+          ],
+          "answer": "mu",
+          "explanation": "Kręci się komu? — mu.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g6-8",
+          "text": "Wstyd ___ za brata. (ona)",
+          "options": [
+            "jej",
+            "ją"
+          ],
+          "answer": "jej",
+          "explanation": "Wstyd komu? — jej.",
+          "grammar_point": "celownik-sie"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Nie chcę czy nie chce mi się? Lubię czy podoba mi się?",
+      "instruction": "Decyzja czy brak energii? Zawsze czy pierwsze wrażenie? Wybierz.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Wiem, że powinienem posprzątać, ale po prostu ___ — leżę i oglądam serial.",
+          "options": [
+            "nie chcę",
+            "nie chce mi się"
+          ],
+          "answer": "nie chce mi się",
+          "explanation": "Brak energii, lenistwo → nie chce mi się (неохота).",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g7-2",
+          "text": "___ pracować w tej firmie — złożyłem wypowiedzenie.",
+          "options": [
+            "Nie chcę",
+            "Nie chce mi się"
+          ],
+          "answer": "Nie chcę",
+          "explanation": "Decyzja → nie chcę (не хочу).",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g7-3",
+          "text": "W poniedziałki rano nic ___ — nawet wstać z łóżka.",
+          "options": [
+            "mi się nie chce",
+            "się mi nie chce"
+          ],
+          "answer": "mi się nie chce",
+          "explanation": "Szyk: mi + się, celownik przed „się”.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g7-4",
+          "text": "Dziękuję, ale ___ deseru — jestem na diecie.",
+          "options": [
+            "nie chcę",
+            "nie chce mi się"
+          ],
+          "answer": "nie chcę",
+          "explanation": "Decyzja → nie chcę + dopełniacz.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g7-5",
+          "text": "Mieliśmy iść na siłownię, ale tak padało, że ___.",
+          "options": [
+            "nam się nie chciało",
+            "nie chcieliśmy się"
+          ],
+          "answer": "nam się nie chciało",
+          "explanation": "Komu? — nam + się + chciało.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "g7-6",
+          "text": "Zwykle ___ horrorów, ale ten film bardzo mi się podobał.",
+          "options": [
+            "nie lubię",
+            "nie podobają mi się"
+          ],
+          "answer": "nie lubię",
+          "explanation": "Ogólnie, zawsze → lubić (+ dopełniacz po „nie”).",
+          "grammar_point": "celownik-sie"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "8. Мне хочется, мне кажется — po polsku",
+      "instruction": "Przetłumacz na polski.",
+      "items": [
+        {
+          "id": "g8-1",
+          "prompt": "Мне не хочется идти на работу.",
+          "answer": "Nie chce mi się iść do pracy.",
+          "accept": [
+            "Nie chce mi się iść do roboty."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g8-2",
+          "prompt": "Мне понравились эти туфли.",
+          "answer": "Podobały mi się te buty.",
+          "accept": [
+            "Te buty mi się podobały.",
+            "Te buty podobały mi się.",
+            "Spodobały mi się te buty."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g8-3",
+          "prompt": "Мне кажется, что он прав.",
+          "answer": "Wydaje mi się, że on ma rację.",
+          "accept": [
+            "Wydaje mi się, że ma rację.",
+            "Mnie się wydaje, że on ma rację.",
+            "Mnie się wydaje, że ma rację.",
+            "Wydaje mi się że on ma rację.",
+            "Wydaje mi się że ma rację.",
+            "Mnie się wydaje że on ma rację.",
+            "Mnie się wydaje że ma rację."
+          ],
+          "explanation": "„прав” → „ma rację”.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g8-4",
+          "prompt": "Мне удалось сдать экзамен.",
+          "answer": "Udało mi się zdać egzamin.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g8-5",
+          "prompt": "Мне холодно.",
+          "answer": "Jest mi zimno.",
+          "accept": [
+            "Zimno mi.",
+            "Zimno mi jest."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g8-6",
+          "prompt": "У меня болит горло.",
+          "answer": "Boli mnie gardło.",
+          "accept": [
+            "Gardło mnie boli."
+          ],
+          "explanation": "Boleć + biernik: mnie.",
+          "grammar_point": "kalki-ru"
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "9. Popraw kalkę z rosyjskiego",
+      "instruction": "Każde zdanie ma jeden błąd. Napisz je poprawnie.",
+      "items": [
+        {
+          "id": "g9-1",
+          "prompt": "U mnie zepsuł się laptop.",
+          "answer": "Zepsuł mi się laptop.",
+          "accept": [
+            "Laptop mi się zepsuł."
+          ],
+          "explanation": "„U mnie” = u mnie w domu. Kogo to spotkało → celownik.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g9-2",
+          "prompt": "Boli mi głowa od rana.",
+          "answer": "Boli mnie głowa od rana.",
+          "accept": [
+            "Od rana boli mnie głowa."
+          ],
+          "explanation": "Boleć + biernik.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g9-3",
+          "prompt": "Mi się nie chce dziś gotować.",
+          "answer": "Nie chce mi się dziś gotować.",
+          "accept": [
+            "Dziś nie chce mi się gotować.",
+            "Mnie się dziś nie chce gotować.",
+            "Mnie się nie chce dziś gotować.",
+            "Nie chce mi się dzisiaj gotować."
+          ],
+          "explanation": "„Mi” nie stoi na początku zdania.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g9-4",
+          "prompt": "Podobało mi się te buty.",
+          "answer": "Podobały mi się te buty.",
+          "accept": [
+            "Te buty mi się podobały."
+          ],
+          "explanation": "buty (one) → podobały",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g9-5",
+          "prompt": "Jestem zimny, zamknij okno.",
+          "answer": "Jest mi zimno, zamknij okno.",
+          "accept": [
+            "Zimno mi, zamknij okno.",
+            "Jest mi zimno zamknij okno.",
+            "Zimno mi zamknij okno."
+          ],
+          "explanation": "„Jestem zimny” = холодный на ощупь / холодный человек.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g9-6",
+          "prompt": "U mnie się udało zdać egzamin.",
+          "answer": "Udało mi się zdać egzamin.",
+          "grammar_point": "kalki-ru"
+        }
+      ]
+    }
+  ]
+}

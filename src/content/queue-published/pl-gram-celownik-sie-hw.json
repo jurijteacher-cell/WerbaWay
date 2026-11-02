@@ -1,0 +1,291 @@
+{
+  "lesson_id": "pl-gram-celownik-sie",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: komu co się stało",
+  "instruction": "Pięć bloków. Zrób wszystko bez notatek z lekcji, potem sprawdź się.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Komu?",
+      "instruction": "Wpisz zaimek albo rzeczownik w celowniku.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "W czasie biegu rozwiązało ___ się sznurowadło. (ja)",
+          "answer": "mi",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h1-2",
+          "text": "Babcia nie może czytać, bo stłukły ___ się okulary. (ona)",
+          "answer": "jej",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h1-3",
+          "text": "Na autostradzie ___ (kierowca) przebiła się opona.",
+          "answer": "kierowcy",
+          "explanation": "kierowca → kierowcy (jak „mama → mamie”, ale -y).",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h1-4",
+          "text": "Czy ___ też zawiesił się komputer? (wy)",
+          "answer": "wam",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h1-5",
+          "text": "Turyści wysiedli w złym miejscu, bo pomyliły ___ się przystanki. (oni)",
+          "answer": "im",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h1-6",
+          "text": "Wczoraj ___ (koleżanka) zablokowała się karta w bankomacie.",
+          "answer": "koleżance",
+          "grammar_point": "celownik-sie"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Czas przeszły: z czym zgoda?",
+      "instruction": "Wpisz czasownik w czasie przeszłym.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Wczoraj pierwszy raz w życiu ___ mi się ciasto. (udać się)",
+          "answer": "udało",
+          "explanation": "ciasto (ono) → udało",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h2-2",
+          "text": "Na egzaminie ___ mi się wszystkie daty. (pomylić się)",
+          "answer": "pomyliły",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h2-3",
+          "text": "W hotelu ___ nam się klimatyzacja. (popsuć się)",
+          "answer": "popsuła",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h2-4",
+          "text": "Jak ___ wam się nowe mieszkanie? (podobać się)",
+          "answer": "podobało",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h2-5",
+          "text": "Wczoraj tak ___ mi się spać, że zasnąłem w kinie. (chcieć się)",
+          "answer": "chciało",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h2-6",
+          "text": "Po przeprowadzce długo ___ mi się stare mieszkanie. (śnić się)",
+          "answer": "śniło",
+          "grammar_point": "celownik-sie"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Mi czy mnie?",
+      "instruction": "Celownik czy biernik? Wybierz.",
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Po maratonie bolały ___ nogi.",
+          "options": [
+            "mi",
+            "mnie"
+          ],
+          "answer": "mnie",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h3-2",
+          "text": "Przykro ___, że nie mogę przyjść.",
+          "options": [
+            "mi",
+            "mnie"
+          ],
+          "answer": "mi",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h3-3",
+          "text": "Czy ___ też jest gorąco? (ty)",
+          "options": [
+            "ci",
+            "cię"
+          ],
+          "answer": "ci",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h3-4",
+          "text": "Kłuje ___ w boku. (on)",
+          "options": [
+            "mu",
+            "go"
+          ],
+          "answer": "go",
+          "explanation": "Jak „boli”: kłuje go — biernik.",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h3-5",
+          "text": "Smutno ___ bez ciebie. (ja)",
+          "options": [
+            "mi",
+            "mnie"
+          ],
+          "answer": "mi",
+          "grammar_point": "celownik-sie"
+        },
+        {
+          "id": "h3-6",
+          "text": "___ się wydaje, że on kłamie, a tobie?",
+          "options": [
+            "Mi",
+            "Mnie"
+          ],
+          "answer": "Mnie",
+          "grammar_point": "celownik-sie"
+        }
+      ]
+    },
+    {
+      "block_id": "h4",
+      "exercise_type": "sentence-building",
+      "title": "4. Popraw kalkę",
+      "instruction": "Każde zdanie ma jeden błąd. Napisz je poprawnie.",
+      "items": [
+        {
+          "id": "h4-1",
+          "prompt": "U mnie skończyły się pieniądze.",
+          "answer": "Skończyły mi się pieniądze.",
+          "accept": [
+            "Pieniądze mi się skończyły."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "h4-2",
+          "prompt": "Mi się wydaje, że pada deszcz.",
+          "answer": "Wydaje mi się, że pada deszcz.",
+          "accept": [
+            "Mnie się wydaje, że pada deszcz.",
+            "Wydaje mi się że pada deszcz.",
+            "Mnie się wydaje że pada deszcz."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "h4-3",
+          "prompt": "Bolą mi zęby.",
+          "answer": "Bolą mnie zęby.",
+          "accept": [
+            "Zęby mnie bolą."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "h4-4",
+          "prompt": "Spodobało mi się te kwiaty.",
+          "answer": "Spodobały mi się te kwiaty.",
+          "accept": [
+            "Te kwiaty mi się spodobały."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "h4-5",
+          "prompt": "Jestem gorący, otwórz okno.",
+          "answer": "Jest mi gorąco, otwórz okno.",
+          "accept": [
+            "Gorąco mi, otwórz okno.",
+            "Jest mi gorąco otwórz okno.",
+            "Gorąco mi otwórz okno."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "h4-6",
+          "prompt": "U niego się nie udało znaleźć pracy.",
+          "answer": "Nie udało mu się znaleźć pracy.",
+          "grammar_point": "kalki-ru"
+        }
+      ]
+    },
+    {
+      "block_id": "h5",
+      "exercise_type": "sentence-building",
+      "title": "5. Z rosyjskiego na polski",
+      "instruction": "Przetłumacz na polski.",
+      "items": [
+        {
+          "id": "h5-1",
+          "prompt": "Мне снился странный сон.",
+          "answer": "Śnił mi się dziwny sen.",
+          "accept": [
+            "Miałem dziwny sen.",
+            "Dziwny sen mi się śnił."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "h5-2",
+          "prompt": "У неё замёрзли руки.",
+          "answer": "Zmarzły jej ręce.",
+          "accept": [
+            "Zmarzły jej dłonie.",
+            "Ręce jej zmarzły."
+          ],
+          "explanation": "Bez „się”, ale też celownik: zmarzły jej ręce.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "h5-3",
+          "prompt": "Нам хорошо спалось в горах.",
+          "answer": "Dobrze nam się spało w górach.",
+          "accept": [
+            "W górach dobrze nam się spało.",
+            "Dobrze się nam spało w górach.",
+            "W górach dobrze się nam spało."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "h5-4",
+          "prompt": "Мне стыдно.",
+          "answer": "Wstyd mi.",
+          "accept": [
+            "Jest mi wstyd."
+          ],
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "h5-5",
+          "prompt": "У тебя упал телефон.",
+          "answer": "Wypadł ci telefon.",
+          "accept": [
+            "Telefon ci wypadł.",
+            "Spadł ci telefon.",
+            "Upadł ci telefon."
+          ],
+          "grammar_point": "kalki-ru"
+        }
+      ]
+    }
+  ]
+}
