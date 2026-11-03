@@ -1,7 +1,7 @@
 # Werba Way — карта групового курсу B1 (розмовно-граматичні лекції)
 
 Модуль: `pl-b1-group` · формат: група, 2 × 90 хв на лекцію (або 3 × 60) · шаблон: LESSON_PROTOCOL v3.11
-Статус на 2026-10-27: **14 лекцій готові** (+ №1 Mieszkanie 25.10; №2 U lekarza 27.10; №7 Dojazd опублікована 18.10), **8 нових** треба написати, **4 повторення** + пробний іспит.
+Статус на 2026-11-03: **15 лекцій готові** (+ №1 Mieszkanie 25.10; №2 U lekarza 27.10; №3 Rodzina 03.11; №7 Dojazd опублікована 18.10), **7 нових** треба написати, **4 повторення** + пробний іспит.
 
 Принцип: кожна лекція = одна жива тема + одна граматична тема + комунікаційні задачі + e1/e2 у форматі іспиту. Граматика йде від базових форм (відмінки, множина, час, вид) до складного речення та аргументації. Лекції рівня B1+ (пасив, віддієслівні іменники) стоять у кінці.
 
@@ -15,7 +15,7 @@
 |---|---|---|---|---|
 | 1 | ✅ | Mieszkanie i sąsiedzi: trzecie piętro bez windy · `01-mieszkanie` | орудний (*kim? czym? z kim?*), місцевий + прийменники, *gdzie? / dokąd? / skąd?* (*nad morzem / nad morze*) | e-mail до адміністратора будинку |
 | 2 | ✅ | U lekarza: plecy, czyli męska duma · `02-u-lekarza` | родовий: заперечення, кількість, дієслова з родовим (*szukać, potrzebować, bać się, unikać, używać*), прийменники | перенесення візиту (e-mail до реєстратури) |
-| 3 | 🆕 | **Rodzina dawniej i dziś** | множина: чоловічо-особова / нечоловічо-особова, відмінки множини, *ludzie, dzieci, pieniądze* | лист другові про родину |
+| 3 | ✅ | Trzy pokolenia przy jednym stole: rodzina dawniej i dziś · `03-rodzina` | множина: чоловічо-особова / нечоловічо-особова, відмінки множини, *ludzie, dzieci, pieniądze* | лист другові про родину |
 | 4 | ✅ | Zapach kredy. Szkoła, której już nie ma · `02-szkola` | минулий час дієслів на -eć, чоловічо-особові форми | спогад «Nauczyciel, którego pamiętam» |
 | 5 | ✅ | Wydarzenia, które zmieniły historię Polski · `02-wydarzenia` | дати, роки, *temu / za*, *przed / po / podczas* | e-mail до бюро подорожей |
 | 6 | ✅ | Niezwykłe pasje dorosłych · `05-pasje` | вид дієслова: пари, минулий / майбутній, сигнали, *zacząć* + ndk | e-mail про нове хобі |
@@ -114,13 +114,15 @@
 - **№1 Mieszkanie (2026-10-25):** словник із 40 слів у шести групах (Budynek i mieszkanie, Wynajem i opłaty, Usterki i naprawy, Sąsiedzi i osiedle, Hałas i konflikty, Przeprowadzka). №2 U lekarza повторює з нього ≥6 слів і таблицю «Skąd? z / od + dopełniacz» та «u + dopełniacz».
 - **№2 U lekarza (2026-10-27):** сюжет — та сама родина Олени в Любліні (Тарас, сусідка-медсестра пані Моніка). Словник 40 слів у шести групах (Ciało i dolegliwości, Objawy, W przychodni, Badanie i leczenie, W aptece, Nagłe sytuacje). №3 Rodzina повторює ≥6 слів з №1 і №2 і родовий множини (*ludzi, dzieci, pieniędzy* — у №2 вони лише у винятках, у №3 стають темою).
 
+- **№3 Rodzina (2026-11-03):** `pl-b1-group-03-rodzina`. Сюжет — та сама родина Олени: приїзд бабусі Ганни (87, з України), батьки Олени з Луцька, шкільний проєкт Максима «Rodzina dawniej i dziś», пані Моніка (сини в Гданську й Дубліні) і пан Генрик. Словник 40 слів у шести групах (Bliższa i dalsza rodzina, Związki i małżeństwo, Dzieci i wychowanie, Dawniej, Uroczystości rodzinne, Rodzina na odległość). Чисельники *trzech braci, dwoje dzieci* і минулий час на *-eć* свідомо не перевіряються (лекції №11 і №4). №4 Szkoła повторює ≥6 слів з №2–3 і узгодження *byli / były* (у №3 — лише базові дієслова).
+
 ## 4. Порядок виробництва нових лекцій
 
 | Черга | Лекція | Чому зараз |
 |---|---|---|
 | ✅ | 1 Mieszkanie | готова 2026-10-25 |
 | ✅ | 2 U lekarza | готова 2026-10-27 |
-| 1 | 3 Rodzina | множина потрібна до лекцій 4 і 11 |
+| ✅ | 3 Rodzina | готова 2026-11-03 |
 | 2 | 14 W urzędzie | повертає *umieć / móc, warto, należy*, які вилетіли зі старої Pasje |
 | ✅ | 7 Dojazd | опублікована 2026-10-18 |
 | 3 | 8 Przyjaźń | займенники |
