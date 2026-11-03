@@ -1,0 +1,110 @@
+{
+  "lesson_id": "pl-b1-group-03-rodzina",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 14,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Trzy pokolenia przy jednym stole”. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Babcia Hanna była już wcześniej u Oleny w Lublinie.",
+          "answer": false,
+          "explanation": "Babcia pierwszy raz przyjechała do Polski."
+        },
+        {
+          "id": "e1-2",
+          "statement": "W domu babci mieszkały razem trzy pokolenia.",
+          "answer": true,
+          "explanation": "Pod jednym dachem byli dziadkowie, rodzice i dzieci."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Dzieci w rodzinie babci jadły razem z dorosłymi i dużo mówiły przy stole.",
+          "answer": false,
+          "explanation": "Dzieci jadły po dorosłych i przy stole były cicho."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Babcia poznała dziadka na weselu.",
+          "answer": true,
+          "explanation": "Poznali się na weselu u sąsiadów."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Według danych z GUS kobiety rodzą dziś dzieci później niż w 1990 roku.",
+          "answer": true,
+          "explanation": "Dziś mają zwykle około 31 lat, w 1990 roku — około 26."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Synowie pani Moniki mieszkają w Lublinie, blisko mamy.",
+          "answer": false,
+          "explanation": "Przeprowadzili się do Gdańska i do Dublina."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "pl-b1-group-03-rodzina-teacher#dialog",
+      "max_plays": 2,
+      "title": "Słuchanie: telefon do kuzyna",
+      "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Co świętują dziadkowie?",
+          "options": [
+            "pięćdziesiąte urodziny dziadka",
+            "dwudziestą piątą rocznicę ślubu",
+            "pięćdziesiątą rocznicę ślubu"
+          ],
+          "answer": "pięćdziesiątą rocznicę ślubu",
+          "explanation": "Ola mówi o złotych godach — pięćdziesiąt lat po ślubie."
+        },
+        {
+          "id": "e2-2",
+          "question": "Dlaczego Paweł nie zostanie na przyjęciu do wieczora?",
+          "options": [
+            "Wieczorem jedzie nad morze.",
+            "W sobotę pracuje do wieczora.",
+            "Wieczorem idzie na wesele kolegi."
+          ],
+          "answer": "Wieczorem idzie na wesele kolegi.",
+          "explanation": "Paweł ma tego dnia wieczorem wesele kolegi z pracy."
+        },
+        {
+          "id": "e2-3",
+          "question": "Z kim przyjedzie Paweł?",
+          "options": [
+            "z Martą i z dziećmi",
+            "sam, bez rodziny",
+            "z kolegą z pracy"
+          ],
+          "answer": "z Martą i z dziećmi",
+          "explanation": "Paweł mówi: z Martą i z dziećmi, bo dzieci tęsknią za dziadkami."
+        },
+        {
+          "id": "e2-4",
+          "question": "Co ma być niespodzianką dla dziadków?",
+          "options": [
+            "wycieczka nad morze od wnuków",
+            "przyjęcie w restauracji",
+            "przyjazd wszystkich krewnych"
+          ],
+          "answer": "wycieczka nad morze od wnuków",
+          "explanation": "O przyjęciu dziadkowie wiedzą, o wycieczce — nie."
+        }
+      ]
+    }
+  ]
+}

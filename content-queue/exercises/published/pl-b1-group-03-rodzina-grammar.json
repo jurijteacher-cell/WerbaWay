@@ -1,0 +1,760 @@
+{
+  "lesson_id": "pl-b1-group-03-rodzina",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: liczba mnoga w rodzinie",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 60,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "Słowa: kto to jest?",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "rodzeństwo",
+          "right": "bracia i siostry",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "teściowie",
+          "right": "rodzice męża albo żony",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "synowa",
+          "right": "żona syna",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "zięć",
+          "right": "mąż córki",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "jedynak",
+          "right": "syn, który nie ma rodzeństwa",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "złote gody",
+          "right": "pięćdziesiąt lat po ślubie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "nowożeńcy",
+          "right": "para tuż po ślubie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "krewni",
+          "right": "ludzie z tej samej, także dalszej rodziny",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Oni czy one? Czasownik",
+      "instruction": "Pomyśl: czy w grupie jest mężczyzna? Wybierz formę czasownika.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Moi dziadkowie ___ na wsi pod Łuckiem.",
+          "answer": "mieszkali",
+          "grammar_point": "oni-one-czasownik",
+          "options": [
+            "mieszkały",
+            "mieszkali"
+          ],
+          "explanation": "Dziadkowie = dziadek i babcia. Jest mężczyzna → oni → mieszkali."
+        },
+        {
+          "id": "g2-2",
+          "text": "Moje kuzynki ___ na święta z Krakowa.",
+          "answer": "przyjechały",
+          "grammar_point": "oni-one-czasownik",
+          "options": [
+            "przyjechały",
+            "przyjechali"
+          ],
+          "explanation": "Same kobiety → one → przyjechały."
+        },
+        {
+          "id": "g2-3",
+          "text": "Olena i pani Monika ___ do późna w kuchni.",
+          "answer": "rozmawiały",
+          "grammar_point": "oni-one-czasownik",
+          "options": [
+            "rozmawiały",
+            "rozmawiali"
+          ],
+          "explanation": "Dwie kobiety → one → rozmawiały."
+        },
+        {
+          "id": "g2-4",
+          "text": "Olena i Taras ___ wczoraj na weselu u sąsiadów.",
+          "answer": "byli",
+          "grammar_point": "oni-one-czasownik",
+          "options": [
+            "były",
+            "byli"
+          ],
+          "explanation": "Kobieta i mężczyzna → oni → byli."
+        },
+        {
+          "id": "g2-5",
+          "text": "Nasze dzieci ___ cały dzień na podwórku.",
+          "answer": "bawiły się",
+          "grammar_point": "oni-one-czasownik",
+          "options": [
+            "bawili się",
+            "bawiły się"
+          ],
+          "explanation": "Dzieci to zawsze „one” → bawiły się."
+        },
+        {
+          "id": "g2-6",
+          "text": "Psy sąsiadów ___ całą noc.",
+          "answer": "szczekały",
+          "grammar_point": "oni-one-czasownik",
+          "options": [
+            "szczekali",
+            "szczekały"
+          ],
+          "explanation": "Zwierzęta → one, nawet jeśli to samce."
+        },
+        {
+          "id": "g2-7",
+          "text": "Wszyscy goście ___ prezenty dla nowożeńców.",
+          "answer": "przynieśli",
+          "grammar_point": "oni-one-czasownik",
+          "options": [
+            "przynieśli",
+            "przyniosły"
+          ],
+          "explanation": "Goście to kobiety i mężczyźni → oni → przynieśli."
+        },
+        {
+          "id": "g2-8",
+          "text": "Babcia i dziadek ___ razem pięćdziesiąt lat.",
+          "answer": "przeżyli",
+          "grammar_point": "oni-one-czasownik",
+          "options": [
+            "przeżyły",
+            "przeżyli"
+          ],
+          "explanation": "Jest dziadek → oni → przeżyli."
+        },
+        {
+          "id": "g2-9",
+          "text": "Siostry babci ___ w szpitalu jako pielęgniarki.",
+          "answer": "pracowały",
+          "grammar_point": "oni-one-czasownik",
+          "options": [
+            "pracowały",
+            "pracowali"
+          ],
+          "explanation": "Siostry → same kobiety → pracowały."
+        },
+        {
+          "id": "g2-10",
+          "text": "Moi synowie ___ się do Irlandii.",
+          "answer": "przeprowadzili",
+          "grammar_point": "oni-one-czasownik",
+          "options": [
+            "przeprowadzili",
+            "przeprowadziły"
+          ],
+          "explanation": "Synowie → oni → przeprowadzili się."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Rzeczowniki w liczbie mnogiej",
+      "instruction": "Wpisz słowo z nawiasu w liczbie mnogiej (mianownik: kto? co?).",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "W naszej klasie wszyscy ___ (uczeń) mają rodzeństwo.",
+          "answer": "uczniowie",
+          "grammar_point": "lm-meskoosobowe"
+        },
+        {
+          "id": "g3-2",
+          "text": "Na zebraniu byli wszyscy ___ (sąsiad) z naszej klatki.",
+          "answer": "sąsiedzi",
+          "grammar_point": "lm-meskoosobowe"
+        },
+        {
+          "id": "g3-3",
+          "text": "Moi ___ (syn) mieszkają za granicą.",
+          "answer": "synowie",
+          "grammar_point": "lm-meskoosobowe"
+        },
+        {
+          "id": "g3-4",
+          "text": "Na starych zdjęciach wszyscy ___ (pan) mają wąsy.",
+          "answer": "panowie",
+          "grammar_point": "lm-meskoosobowe"
+        },
+        {
+          "id": "g3-5",
+          "text": "Moje ___ (ciocia) zawsze przywożą ciasto.",
+          "answer": "ciocie",
+          "grammar_point": "lm-niemeskoosobowe"
+        },
+        {
+          "id": "g3-6",
+          "text": "W tej szkole ___ (nauczyciel) znają imiona wszystkich rodziców.",
+          "answer": "nauczyciele",
+          "grammar_point": "lm-meskoosobowe"
+        },
+        {
+          "id": "g3-7",
+          "text": "Moi ___ (kuzyn) z Kanady przyjadą na święta.",
+          "answer": "kuzyni",
+          "grammar_point": "lm-meskoosobowe"
+        },
+        {
+          "id": "g3-8",
+          "text": "Na weselu ___ (student) z zespołu grali do rana.",
+          "answer": "studenci",
+          "grammar_point": "lm-meskoosobowe"
+        },
+        {
+          "id": "g3-9",
+          "text": "W naszym bloku są cztery ___ (piętro).",
+          "answer": "piętra",
+          "grammar_point": "lm-niemeskoosobowe"
+        },
+        {
+          "id": "g3-10",
+          "text": "Na weselach ___ (Polak) często tańczą do białego rana.",
+          "answer": "Polacy",
+          "grammar_point": "lm-meskoosobowe",
+          "accept": [
+            "polacy"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Przymiotniki i zaimki: oni czy one?",
+      "instruction": "Wybierz formę, która pasuje do rzeczownika.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "___ dziadkowie mieszkają na wsi.",
+          "answer": "Moi",
+          "grammar_point": "lm-przymiotniki",
+          "options": [
+            "Moje",
+            "Moi"
+          ],
+          "explanation": "Dziadkowie → oni → moi."
+        },
+        {
+          "id": "g4-2",
+          "text": "___ siostry są starsze ode mnie.",
+          "answer": "Twoje",
+          "grammar_point": "lm-przymiotniki",
+          "options": [
+            "Twoi",
+            "Twoje"
+          ],
+          "explanation": "Siostry → one → twoje."
+        },
+        {
+          "id": "g4-3",
+          "text": "To są ___ synowie, Adam i Piotr.",
+          "answer": "nasi",
+          "grammar_point": "lm-przymiotniki",
+          "options": [
+            "nasi",
+            "nasze"
+          ],
+          "explanation": "Synowie → oni → nasi."
+        },
+        {
+          "id": "g4-4",
+          "text": "___ wnuczki uczą się w Warszawie?",
+          "answer": "Wasze",
+          "grammar_point": "lm-przymiotniki",
+          "options": [
+            "Wasze",
+            "Wasi"
+          ],
+          "explanation": "Wnuczki → one → wasze."
+        },
+        {
+          "id": "g4-5",
+          "text": "Rodzice Tarasa są bardzo ___.",
+          "answer": "mili",
+          "grammar_point": "lm-przymiotniki",
+          "options": [
+            "mili",
+            "miłe"
+          ],
+          "explanation": "Rodzice → oni → mili (ł → l)."
+        },
+        {
+          "id": "g4-6",
+          "text": "Teściowie są dla mnie bardzo ___.",
+          "answer": "dobrzy",
+          "grammar_point": "lm-przymiotniki",
+          "options": [
+            "dobre",
+            "dobrzy"
+          ],
+          "explanation": "Teściowie → oni → dobrzy (r → rz)."
+        },
+        {
+          "id": "g4-7",
+          "text": "Moi bracia są dużo ___ ode mnie.",
+          "answer": "wyżsi",
+          "grammar_point": "lm-przymiotniki",
+          "options": [
+            "wyżsi",
+            "wyższe"
+          ],
+          "explanation": "Bracia → oni → wyżsi (sz → s)."
+        },
+        {
+          "id": "g4-8",
+          "text": "___ ludzie z drugiego piętra to nasi nowi sąsiedzi.",
+          "answer": "Ci",
+          "grammar_point": "lm-przymiotniki",
+          "options": [
+            "Te",
+            "Ci"
+          ],
+          "explanation": "Ludzie → oni → ci."
+        },
+        {
+          "id": "g4-9",
+          "text": "Babcie z naszego osiedla są bardzo ___.",
+          "answer": "towarzyskie",
+          "grammar_point": "lm-przymiotniki",
+          "options": [
+            "towarzyscy",
+            "towarzyskie"
+          ],
+          "explanation": "Babcie → one → towarzyskie."
+        },
+        {
+          "id": "g4-10",
+          "text": "Na zdjęciach stoją ___ panowie w kapeluszach.",
+          "answer": "eleganccy",
+          "grammar_point": "lm-przymiotniki",
+          "options": [
+            "eleganccy",
+            "eleganckie"
+          ],
+          "explanation": "Panowie → oni → eleganccy (k → c)."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "5. Zmień na liczbę mnogą",
+      "instruction": "Napisz całe zdanie w liczbie mnogiej. Zmień rzeczownik, przymiotnik, zaimek i czasownik.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Mój starszy brat był wysoki.",
+          "answer": "Moi starsi bracia byli wysocy.",
+          "grammar_point": "lm-transformacja",
+          "accept": [
+            "Moi starsi bracia byli wysocy"
+          ],
+          "explanation": "Brat → bracia (oni): moi starsi, byli wysocy."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Ta miła sąsiadka mieszka na parterze.",
+          "answer": "Te miłe sąsiadki mieszkają na parterze.",
+          "grammar_point": "lm-transformacja",
+          "accept": [
+            "Te miłe sąsiadki mieszkają na parterze"
+          ],
+          "explanation": "Sąsiadki → one: te miłe, mieszkają."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Nasz nowy sąsiad jest młody.",
+          "answer": "Nasi nowi sąsiedzi są młodzi.",
+          "grammar_point": "lm-transformacja",
+          "accept": [
+            "Nasi nowi sąsiedzi są młodzi"
+          ],
+          "explanation": "Sąsiad → sąsiedzi (oni): nasi nowi, młodzi."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Twoja córka była grzeczna.",
+          "answer": "Twoje córki były grzeczne.",
+          "grammar_point": "lm-transformacja",
+          "accept": [
+            "Twoje córki były grzeczne"
+          ],
+          "explanation": "Córki → one: twoje, były grzeczne."
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Ten polski lekarz był bardzo dobry.",
+          "answer": "Ci polscy lekarze byli bardzo dobrzy.",
+          "grammar_point": "lm-transformacja",
+          "accept": [
+            "Ci polscy lekarze byli bardzo dobrzy"
+          ],
+          "explanation": "Lekarze → oni: ci polscy, byli dobrzy."
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Nasz syn przyjechał na święta.",
+          "answer": "Nasi synowie przyjechali na święta.",
+          "grammar_point": "lm-transformacja",
+          "accept": [
+            "Nasi synowie przyjechali na święta"
+          ],
+          "explanation": "Syn → synowie (oni): nasi, przyjechali."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Przypadki w liczbie mnogiej",
+      "instruction": "Wpisz słowo z nawiasu w odpowiednim przypadku. Najpierw zadaj pytanie: kogo? komu? z kim? o kim?",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Co niedzielę dzwonię do ___ (dziadkowie).",
+          "answer": "dziadków",
+          "grammar_point": "lm-dopelniacz"
+        },
+        {
+          "id": "g6-2",
+          "text": "W wakacje mieszkam z ___ (rodzice).",
+          "answer": "rodzicami",
+          "grammar_point": "lm-narzednik"
+        },
+        {
+          "id": "g6-3",
+          "text": "Na święta kupuję prezenty wszystkim ___ (kuzynki).",
+          "answer": "kuzynkom",
+          "grammar_point": "lm-celownik"
+        },
+        {
+          "id": "g6-4",
+          "text": "Babcia lubi opowiadać o swoich ___ (siostry).",
+          "answer": "siostrach",
+          "grammar_point": "lm-miejscownik"
+        },
+        {
+          "id": "g6-5",
+          "text": "Nie mam ___ (siostry), mam tylko brata.",
+          "answer": "sióstr",
+          "grammar_point": "lm-dopelniacz"
+        },
+        {
+          "id": "g6-6",
+          "text": "Pomagamy ___ (sąsiedzi) przy przeprowadzce.",
+          "answer": "sąsiadom",
+          "grammar_point": "lm-celownik"
+        },
+        {
+          "id": "g6-7",
+          "text": "Na wesele zaprosiliśmy pięćdziesiąt ___ (rodziny).",
+          "answer": "rodzin",
+          "grammar_point": "lm-dopelniacz"
+        },
+        {
+          "id": "g6-8",
+          "text": "Na zdjęciu stoję między ___ (ciocie).",
+          "answer": "ciociami",
+          "grammar_point": "lm-narzednik"
+        },
+        {
+          "id": "g6-9",
+          "text": "Dziadek często kłócił się z ___ (synowie).",
+          "answer": "synami",
+          "grammar_point": "lm-narzednik"
+        },
+        {
+          "id": "g6-10",
+          "text": "Ta rodzina mieszka w tej wsi od pięciu ___ (pokolenia).",
+          "answer": "pokoleń",
+          "grammar_point": "lm-dopelniacz"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Biernik: moich czy moje?",
+      "instruction": "Kogo? Co? Wybierz formę. Pamiętaj: oni → jak dopełniacz, one → jak mianownik.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Na wesele zapraszam ___ kolegów z pracy.",
+          "answer": "wszystkich",
+          "grammar_point": "lm-biernik",
+          "options": [
+            "wszystkie",
+            "wszystkich"
+          ],
+          "explanation": "Koledzy → oni → biernik jak dopełniacz: wszystkich kolegów."
+        },
+        {
+          "id": "g7-2",
+          "text": "W każde wakacje odwiedzam ___ kuzynki w Gdańsku.",
+          "answer": "moje",
+          "grammar_point": "lm-biernik",
+          "options": [
+            "moich",
+            "moje"
+          ],
+          "explanation": "Kuzynki → one → biernik jak mianownik: moje kuzynki."
+        },
+        {
+          "id": "g7-3",
+          "text": "Znasz ___ panów z trzeciego piętra?",
+          "answer": "tych",
+          "grammar_point": "lm-biernik",
+          "options": [
+            "te",
+            "tych"
+          ],
+          "explanation": "Panowie → oni → tych panów."
+        },
+        {
+          "id": "g7-4",
+          "text": "Babcia bardzo kocha ___ wnuczki.",
+          "answer": "swoje",
+          "grammar_point": "lm-biernik",
+          "options": [
+            "swoje",
+            "swoich"
+          ],
+          "explanation": "Wnuczki → one → swoje wnuczki."
+        },
+        {
+          "id": "g7-5",
+          "text": "Za bardzo rozpieszczamy ___ synów.",
+          "answer": "naszych",
+          "grammar_point": "lm-biernik",
+          "options": [
+            "nasze",
+            "naszych"
+          ],
+          "explanation": "Synowie → oni → naszych synów."
+        },
+        {
+          "id": "g7-6",
+          "text": "Olena zaprosiła na kolację ___ sąsiadki.",
+          "answer": "nowe",
+          "grammar_point": "lm-biernik",
+          "options": [
+            "nowe",
+            "nowych"
+          ],
+          "explanation": "Sąsiadki → one → nowe sąsiadki."
+        },
+        {
+          "id": "g7-7",
+          "text": "Wczoraj spotkałem ___ teściów w sklepie.",
+          "answer": "twoich",
+          "grammar_point": "lm-biernik",
+          "options": [
+            "twoich",
+            "twoje"
+          ],
+          "explanation": "Teściowie → oni → twoich teściów."
+        },
+        {
+          "id": "g7-8",
+          "text": "Widziałaś dzieci? — Tak, widziałam ___ na podwórku.",
+          "answer": "je",
+          "grammar_point": "lm-biernik",
+          "options": [
+            "ich",
+            "je"
+          ],
+          "explanation": "Dzieci → one → widzę je. „Ich” — tylko o „oni”."
+        },
+        {
+          "id": "g7-9",
+          "text": "Na rocznicę ślubu dziadkowie zaprosili ___ przyjaciół.",
+          "answer": "starych",
+          "grammar_point": "lm-biernik",
+          "options": [
+            "starych",
+            "stare"
+          ],
+          "explanation": "Przyjaciele → oni → starych przyjaciół."
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Wyjątki: ludzie, dzieci, pieniądze, bracia",
+      "instruction": "Wpisz formę słowa z nawiasu.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "W parku było dużo ___ (ludzie).",
+          "answer": "ludzi",
+          "grammar_point": "lm-wyjatki"
+        },
+        {
+          "id": "g8-2",
+          "text": "Lubię rozmawiać z ___ (ludzie) starszymi od siebie.",
+          "answer": "ludźmi",
+          "grammar_point": "lm-wyjatki"
+        },
+        {
+          "id": "g8-3",
+          "text": "W weekend jedziemy z ___ (dzieci) do babci.",
+          "answer": "dziećmi",
+          "grammar_point": "lm-wyjatki"
+        },
+        {
+          "id": "g8-4",
+          "text": "Dziadkowie zawsze kupują ___ (dzieci) za dużo słodyczy.",
+          "answer": "dzieciom",
+          "grammar_point": "lm-wyjatki"
+        },
+        {
+          "id": "g8-5",
+          "text": "Młodzi rodzice często nie mają ___ (pieniądze) na nianię.",
+          "answer": "pieniędzy",
+          "grammar_point": "lm-wyjatki"
+        },
+        {
+          "id": "g8-6",
+          "text": "W naszej rodzinie nie rozmawia się o ___ (pieniądze).",
+          "answer": "pieniądzach",
+          "grammar_point": "lm-wyjatki"
+        },
+        {
+          "id": "g8-7",
+          "text": "W sobotę dzwonię do ___ (bracia) w Toronto.",
+          "answer": "braci",
+          "grammar_point": "lm-wyjatki"
+        },
+        {
+          "id": "g8-8",
+          "text": "Wieczorem gram w piłkę z ___ (przyjaciele).",
+          "answer": "przyjaciółmi",
+          "grammar_point": "lm-wyjatki"
+        },
+        {
+          "id": "g8-9",
+          "text": "W tym mieście nie mam jeszcze ___ (przyjaciele).",
+          "answer": "przyjaciół",
+          "grammar_point": "lm-wyjatki"
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "9. Pułapki z ukraińskiego",
+      "instruction": "Wybierz wersję, którą powie Polak. Po każdej odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g9-1",
+          "text": "Wczoraj ___ u nas na obiedzie.",
+          "answer": "moi rodzice byli",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "moje rodzice były",
+            "moi rodzice byli"
+          ],
+          "explanation": "Rodzice to mama i tata → oni: moi rodzice byli."
+        },
+        {
+          "id": "g9-2",
+          "text": "Na święta ___ wszystkie moje siostry.",
+          "answer": "przyjechały",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "przyjechali",
+            "przyjechały"
+          ],
+          "explanation": "Same siostry → one → przyjechały. Po ukraińsku jest jedna forma: приїхали."
+        },
+        {
+          "id": "g9-3",
+          "text": "Bardzo ___ córki.",
+          "answer": "kocham moje",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "kocham moich",
+            "kocham moje"
+          ],
+          "explanation": "Po ukraińsku: люблю своїх доньок. Po polsku córki → one → kocham moje córki."
+        },
+        {
+          "id": "g9-4",
+          "text": "Idę na spacer ___.",
+          "answer": "z dziećmi",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "z dzieciami",
+            "z dziećmi"
+          ],
+          "explanation": "Wyjątek: z dziećmi (jak z ludźmi), nie „dzieciami”."
+        },
+        {
+          "id": "g9-5",
+          "text": "Na wesele przyjechali wszyscy ___ z Ukrainy: ciocie, wujkowie i kuzyni.",
+          "answer": "krewni",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "rodzice",
+            "krewni"
+          ],
+          "explanation": "Rodzice = батьки. Родичі po polsku to krewni albo rodzina."
+        },
+        {
+          "id": "g9-6",
+          "text": "Kobiety gotowały, a ich ___ siedzieli przy stole.",
+          "answer": "mężowie",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "mężowie",
+            "mężczyźni"
+          ],
+          "explanation": "Їхні чоловіки (= mężowie) — to ich mężowie. Mężczyźni = чоловіки взагалі."
+        }
+      ]
+    }
+  ]
+}
