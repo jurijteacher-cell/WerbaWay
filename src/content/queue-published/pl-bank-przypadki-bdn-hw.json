@@ -1,0 +1,195 @@
+{
+  "lesson_id": "pl-bank-przypadki-bdn",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: biernik, dopełniacz, narzędnik",
+  "instruction": "Cztery bloki. Zrób je bez konspektu, potem sprawdź się.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Jaki przypadek?",
+      "instruction": "Wpisz właściwą formę.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Na urodziny chcę dostać ___. (bluzka)",
+          "answer": "bluzkę",
+          "grammar_point": "biernik"
+        },
+        {
+          "id": "h1-2",
+          "text": "Co rano karmię ___. (papuga)",
+          "answer": "papugę",
+          "grammar_point": "biernik"
+        },
+        {
+          "id": "h1-3",
+          "text": "W lodówce nie ma ___. (masło)",
+          "answer": "masła",
+          "grammar_point": "dopelniacz",
+          "explanation": "nie ma + dopełniacz"
+        },
+        {
+          "id": "h1-4",
+          "text": "Moja ciocia jest ___. (księgowa)",
+          "answer": "księgową",
+          "grammar_point": "narzednik",
+          "explanation": "Księgowa odmienia się jak przymiotnik: -ą"
+        },
+        {
+          "id": "h1-5",
+          "text": "Lecę do Gdańska ___. (samolot)",
+          "answer": "samolotem",
+          "grammar_point": "narzednik"
+        },
+        {
+          "id": "h1-6",
+          "text": "Robię kanapki z ___. (szynka)",
+          "answer": "szynką",
+          "grammar_point": "narzednik"
+        },
+        {
+          "id": "h1-7",
+          "text": "Dzwonię do ___. (hydraulik)",
+          "answer": "hydraulika",
+          "grammar_point": "dopelniacz"
+        },
+        {
+          "id": "h1-8",
+          "text": "Czekam na ___. (listonosz)",
+          "answer": "listonosza",
+          "grammar_point": "biernik",
+          "explanation": "czekać na + biernik; osoba (on) → -a"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Zaprzeczenie",
+      "instruction": "Napisz zdanie z „nie”.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Mam rower.",
+          "answer": "Nie mam roweru.",
+          "grammar_point": "dopelniacz"
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Jem mięso.",
+          "answer": "Nie jem mięsa.",
+          "grammar_point": "dopelniacz"
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Oglądam telewizję.",
+          "answer": "Nie oglądam telewizji.",
+          "grammar_point": "dopelniacz"
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Rozumiem to pytanie.",
+          "answer": "Nie rozumiem tego pytania.",
+          "grammar_point": "dopelniacz"
+        },
+        {
+          "id": "h2-5",
+          "prompt": "Znam twojego sąsiada.",
+          "answer": "Nie znam twojego sąsiada.",
+          "grammar_point": "dopelniacz",
+          "explanation": "Osoba (on): biernik = dopełniacz"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "Każde zdanie ma jeden błąd. Napisz je poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Moja żona jest architekt.",
+          "answer": "Moja żona jest architektem.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Moja żona jest architektką."
+          ]
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Słuchamy wykład.",
+          "answer": "Słuchamy wykładu.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Szukam apteka.",
+          "answer": "Szukam apteki.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Nie lubię zimę.",
+          "answer": "Nie lubię zimy.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Interesuję się sport.",
+          "answer": "Interesuję się sportem.",
+          "grammar_point": "kalki-uk"
+        }
+      ]
+    },
+    {
+      "block_id": "h4",
+      "exercise_type": "fill-in-blank",
+      "title": "4. Liczba mnoga",
+      "instruction": "Wpisz rzeczownik w liczbie mnogiej.",
+      "items": [
+        {
+          "id": "h4-1",
+          "text": "jeden ołówek — dwa ___ (ołówek)",
+          "answer": "ołówki",
+          "grammar_point": "mn-mianownik",
+          "explanation": "e znika: ołówek → ołówki"
+        },
+        {
+          "id": "h4-2",
+          "text": "jedna szklanka — dwie ___ (szklanka)",
+          "answer": "szklanki",
+          "grammar_point": "mn-mianownik"
+        },
+        {
+          "id": "h4-3",
+          "text": "jedno jabłko — trzy ___ (jabłko)",
+          "answer": "jabłka",
+          "grammar_point": "mn-mianownik"
+        },
+        {
+          "id": "h4-4",
+          "text": "jeden pokój — dwa ___ (pokój)",
+          "answer": "pokoje",
+          "grammar_point": "mn-mianownik",
+          "explanation": "ó → o: pokoje"
+        },
+        {
+          "id": "h4-5",
+          "text": "Moi ___ mieszkają w Niemczech. (brat)",
+          "answer": "bracia",
+          "grammar_point": "mn-mianownik",
+          "explanation": "brat → bracia: trzeba zapamiętać"
+        },
+        {
+          "id": "h4-6",
+          "text": "Ci ___ są bardzo mili. (sprzedawca)",
+          "answer": "sprzedawcy",
+          "grammar_point": "mn-mianownik"
+        }
+      ]
+    }
+  ]
+}
