@@ -1153,3 +1153,115 @@
   margin-top: 14px; background: #fff; border: 1px solid var(--nb-edge);
   padding: 12px 14px; border-radius: 3px; font-size: 14px; line-height: 1.45;
 }
+
+/* ── Konspekt (GrammarNotes): static notebook cards ───────────────────────── */
+.nb-notes-root { display: flex; flex-direction: column; gap: 34px; }
+.nb-notes-section { --acc: var(--nb-sky); }
+.nb-notes-section.a-mint { --acc: var(--nb-mint); }
+.nb-notes-section.a-coral { --acc: var(--nb-coral); }
+.nb-notes-section.a-sky { --acc: var(--nb-sky); }
+.nb-notes-section.a-lilac { --acc: var(--nb-lilac); }
+.nb-notes-section.a-yellow { --acc: var(--nb-yellow); }
+.nb-notes-head { margin-bottom: 16px; }
+.nb-notes-title {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px;
+  font-family: var(--nb-display); font-weight: 600; font-size: 28px; line-height: 1.2;
+  color: var(--nb-ink); margin: 2px 0 0;
+}
+.nb-notes-tab {
+  background: var(--acc); padding: 2px 14px 4px; border-radius: 3px 14px 14px 3px;
+  box-shadow: 2px 3px 0 rgba(27,42,74,.1);
+}
+.nb-notes-q { font-family: var(--nb-hand); font-size: 26px; font-weight: 700; color: var(--nb-gold); }
+.nb-notes-gloss { font-family: var(--nb-hand); font-size: 20px; color: var(--nb-ink-soft); margin: 4px 0 0; }
+
+.nb-notes-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: start; }
+.nb-notes-card {
+  background: #fff; border-radius: 3px; padding: 14px 16px 16px;
+  border-top: 4px solid var(--acc);
+  box-shadow: 2px 3px 0 rgba(27,42,74,.1);
+  min-width: 0;
+}
+.nb-notes-card.wide, .nb-notes-card.k-tiles, .nb-notes-card.k-traps, .nb-notes-card.k-sentences { grid-column: 1 / -1; }
+.nb-notes-card.k-note {
+  background: var(--nb-yellow); border-top: 0; transform: rotate(-0.8deg);
+  padding: 10px 14px; align-self: center;
+}
+.nb-notes-card-title {
+  font-family: var(--nb-display); font-weight: 600; font-size: 18px; color: var(--nb-ink);
+  margin: 0 0 10px;
+}
+
+.nb-notes-hl { background: var(--acc); color: var(--nb-ink); font-weight: 700; padding: 0 1px; border-radius: 2px; box-decoration-break: clone; }
+.nb-notes-case { color: var(--nb-ink); font-weight: 700; padding: 0 2px; border-radius: 2px; box-decoration-break: clone; }
+.nb-notes-case.c-b { background: var(--nb-mint); }
+.nb-notes-case.c-d { background: var(--nb-coral); }
+.nb-notes-case.c-n { background: var(--nb-sky); }
+.nb-notes-case.c-m { background: var(--nb-paper-2); }
+
+/* ending tiles */
+.nb-notes-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.nb-notes-tile {
+  display: flex; flex-direction: column; gap: 3px;
+  background: var(--nb-paper); border: 1px solid var(--nb-edge); border-radius: 3px;
+  padding: 10px 12px 12px;
+}
+.nb-notes-tile-label {
+  align-self: flex-start; font-size: 13px; font-weight: 700; letter-spacing: .02em;
+  background: var(--nb-paper-2); border-radius: 999px; padding: 1px 10px; color: var(--nb-ink-soft);
+}
+.nb-notes-tile-ending { font-family: var(--nb-display); font-weight: 600; font-size: 24px; color: var(--nb-ink); margin: 2px 0 2px; }
+.nb-notes-tile-ex { font-size: 16px; color: var(--nb-ink); }
+.nb-notes-tile-hint { font-family: var(--nb-hand); font-size: 17px; color: var(--nb-gold); }
+
+/* tables */
+.nb-notes-table { width: 100%; border-collapse: collapse; font-size: 16px; }
+.nb-notes-table th {
+  text-align: left; font-family: var(--nb-display); font-weight: 600; font-size: 14px;
+  color: var(--nb-ink-soft); padding: 4px 8px 6px; border-bottom: 2px solid var(--acc);
+}
+.nb-notes-table td { padding: 7px 8px; border-bottom: 1px dashed var(--nb-edge); vertical-align: top; color: var(--nb-ink); }
+.nb-notes-table tr:last-child td { border-bottom: 0; }
+.nb-notes-table td:first-child { font-weight: 700; }
+.nb-notes-table tr.r-b td:first-child { box-shadow: inset 4px 0 0 var(--nb-mint); }
+.nb-notes-table tr.r-d td:first-child { box-shadow: inset 4px 0 0 var(--nb-coral); }
+.nb-notes-table tr.r-n td:first-child { box-shadow: inset 4px 0 0 var(--nb-sky); }
+
+/* compare */
+.nb-notes-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.nb-notes-side { background: var(--nb-paper); border-radius: 3px; padding: 10px 12px; border-left: 4px solid var(--nb-paper-2); }
+.nb-notes-side.right { border-left-color: var(--acc); }
+.nb-notes-side h4 { margin: 0 0 6px; font-family: var(--nb-hand); font-size: 20px; font-weight: 700; color: var(--nb-gold); }
+.nb-notes-side p { margin: 0 0 5px; font-size: 16px; color: var(--nb-ink); }
+
+/* lists (wyjątki) */
+.nb-notes-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.nb-notes-list li { border-left: 3px solid var(--nb-lilac); padding: 4px 0 4px 10px; font-size: 16px; color: var(--nb-ink); }
+
+/* colour-coded sentences */
+.nb-notes-sentences p { font-size: 19px; line-height: 1.7; margin: 0 0 6px; color: var(--nb-ink); }
+.nb-notes-legend { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; font-size: 13px; }
+
+/* traps */
+.nb-notes-traps { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+.nb-notes-trap {
+  display: flex; flex-direction: column; gap: 3px; background: var(--nb-paper);
+  border: 1px solid var(--nb-edge); border-radius: 3px; padding: 10px 12px;
+}
+.nb-notes-trap-uk { font-family: var(--nb-hand); font-size: 20px; color: var(--nb-gold); }
+.nb-notes-trap-wrong { text-decoration: line-through; color: #c0503c; font-size: 15px; }
+.nb-notes-trap-right { color: #2e8b62; font-weight: 700; font-size: 16px; }
+.nb-notes-trap-why { font-size: 13px; color: var(--nb-ink-soft); margin-top: 2px; }
+
+.nb-notes-sticker { margin: 0; font-size: 16px; color: var(--nb-ink); }
+
+@media (max-width: 760px) {
+  .nb-notes-grid { grid-template-columns: 1fr; }
+  .nb-notes-compare { grid-template-columns: 1fr; }
+  .nb-notes-title { font-size: 23px; }
+  .nb-notes-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .nb-notes-tile { padding: 8px 9px 10px; }
+  .nb-notes-tile-ending { font-size: 20px; }
+  .nb-notes-tile-ex { font-size: 14px; }
+  .nb-notes-card { padding: 12px 12px 14px; }
+}

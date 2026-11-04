@@ -1,0 +1,617 @@
+{
+  "lesson_id": "pl-bank-przypadki-bdn",
+  "exercise_type": "grammar-notes",
+  "title": "Biernik, dopełniacz, narzędnik i liczba mnoga",
+  "sections": [
+    {
+      "id": "biernik",
+      "accent": "mint",
+      "eyebrow": "Konspekt · 1",
+      "title": "Biernik",
+      "question": "kogo? co?",
+      "gloss": "знахідний відмінок",
+      "cards": [
+        {
+          "kind": "table",
+          "title": "Kiedy?",
+          "wide": true,
+          "columns": [
+            "Po czym",
+            "Przykład"
+          ],
+          "rows": [
+            [
+              "mam, lubię, kupuję, piję, jem",
+              "Piję [[kawę]]."
+            ],
+            [
+              "widzę, znam, kocham, odwiedzam",
+              "Znam [[Tomka]]."
+            ],
+            [
+              "poproszę, proszę",
+              "Poproszę [[herbatę]]."
+            ],
+            [
+              "czekać na, pytać o, przez",
+              "Czekam na [[autobus]]."
+            ]
+          ]
+        },
+        {
+          "kind": "tiles",
+          "title": "Końcówki",
+          "tiles": [
+            {
+              "label": "ona · -a",
+              "ending": "-a → [[-ę]]",
+              "examples": [
+                "kawa → kaw[[ę]]",
+                "mama → mam[[ę]]"
+              ]
+            },
+            {
+              "label": "ona · spółgłoska",
+              "ending": "bez zmian",
+              "examples": [
+                "noc → noc",
+                "rzecz → rzecz"
+              ]
+            },
+            {
+              "label": "on · osoba, zwierzę",
+              "ending": "[[-a]]",
+              "examples": [
+                "brat → brat[[a]]",
+                "pies → ps[[a]]"
+              ]
+            },
+            {
+              "label": "on · rzecz",
+              "ending": "bez zmian",
+              "examples": [
+                "telefon → telefon",
+                "film → film"
+              ]
+            },
+            {
+              "label": "ono",
+              "ending": "bez zmian",
+              "examples": [
+                "mleko → mleko",
+                "okno → okno"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "title": "Przymiotnik",
+          "columns": [
+            "Rodzaj",
+            "Końcówka",
+            "Przykład"
+          ],
+          "rows": [
+            [
+              "ona",
+              "[[-ą]]",
+              "Mam młodsz[[ą]] siostrę."
+            ],
+            [
+              "on · osoba, zwierzę",
+              "[[-ego]]",
+              "Mam starsz[[ego]] brata."
+            ],
+            [
+              "on · rzecz",
+              "-y / -i",
+              "Mam nowy telefon."
+            ],
+            [
+              "ono",
+              "-e",
+              "Piję zimne mleko."
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "Wyjątki",
+          "items": [
+            "„on” na -a odmienia się jak „ona”: kolega → [[kolegę]], tata → [[tatę]], dentysta → [[dentystę]]",
+            "pani → [[panią]]",
+            "ta → [[tę]]: Znam tę panią."
+          ]
+        },
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "Pytanie kontrolne dla „on”: to osoba albo zwierzę? Tak → [[-a]]. Nie → bez zmian."
+        }
+      ]
+    },
+    {
+      "id": "dopelniacz",
+      "accent": "coral",
+      "eyebrow": "Konspekt · 2",
+      "title": "Dopełniacz",
+      "question": "kogo? czego?",
+      "gloss": "родовий відмінок",
+      "cards": [
+        {
+          "kind": "table",
+          "title": "Kiedy?",
+          "columns": [
+            "Po czym",
+            "Przykład"
+          ],
+          "rows": [
+            [
+              "„nie” zamiast biernika",
+              "Nie mam [[czasu]]."
+            ],
+            [
+              "do, z (skąd?), od, bez, dla",
+              "Jestem z [[Ukrainy]]."
+            ],
+            [
+              "obok, koło, u",
+              "Mieszkam obok [[parku]]."
+            ],
+            [
+              "dużo, mało, kilo, butelka",
+              "Butelka [[wody]]."
+            ],
+            [
+              "szukać, potrzebować, słuchać",
+              "Szukam [[pracy]]."
+            ],
+            [
+              "uczyć się, bać się",
+              "Uczę się [[polskiego]]."
+            ]
+          ]
+        },
+        {
+          "kind": "compare",
+          "title": "Mam → nie mam",
+          "left": {
+            "head": "bez „nie” · biernik",
+            "lines": [
+              "Mam samochód.",
+              "Lubię kawę.",
+              "Mam psa."
+            ]
+          },
+          "right": {
+            "head": "z „nie” · dopełniacz",
+            "lines": [
+              "Nie mam [[samochodu]].",
+              "Nie lubię [[kawy]].",
+              "Nie mam [[psa]]."
+            ]
+          }
+        },
+        {
+          "kind": "tiles",
+          "title": "Końcówki",
+          "tiles": [
+            {
+              "label": "ona · -a",
+              "ending": "[[-y]]",
+              "examples": [
+                "kawa → kaw[[y]]",
+                "praca → prac[[y]]"
+              ]
+            },
+            {
+              "label": "ona · po k, g, l, j, -ia",
+              "ending": "[[-i]]",
+              "examples": [
+                "muzyka → muzyk[[i]]",
+                "Kasia → Kas[[i]]"
+              ]
+            },
+            {
+              "label": "on · osoba, zwierzę",
+              "ending": "[[-a]]",
+              "examples": [
+                "brat → brat[[a]]",
+                "pies → ps[[a]]"
+              ]
+            },
+            {
+              "label": "on · rzecz",
+              "ending": "[[-u]] / [[-a]]",
+              "examples": [
+                "dom → dom[[u]]",
+                "chleb → chleb[[a]]"
+              ],
+              "hint": "ucz się razem ze słowem"
+            },
+            {
+              "label": "ono",
+              "ending": "[[-a]]",
+              "examples": [
+                "mleko → mlek[[a]]",
+                "okno → okn[[a]]"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "title": "Przymiotnik",
+          "columns": [
+            "Rodzaj",
+            "Końcówka",
+            "Przykład"
+          ],
+          "rows": [
+            [
+              "ona",
+              "[[-ej]]",
+              "Nie piję zimn[[ej]] wody."
+            ],
+            [
+              "on, ono",
+              "[[-ego]]",
+              "Nie mam now[[ego]] telefonu."
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "Wyjątki",
+          "items": [
+            "czas → [[czasu]], cukier → [[cukru]] (e znika)",
+            "„on” na -a → jak „ona”: kolega → [[kolegi]], dentysta → [[dentysty]]"
+          ]
+        },
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "Osoba i zwierzę (on): biernik i dopełniacz wyglądają tak samo — mam [[brata]] / nie mam [[brata]]."
+        }
+      ]
+    },
+    {
+      "id": "narzednik",
+      "accent": "sky",
+      "eyebrow": "Konspekt · 3",
+      "title": "Narzędnik",
+      "question": "kim? czym? z kim? z czym?",
+      "gloss": "орудний відмінок",
+      "cards": [
+        {
+          "kind": "table",
+          "title": "Kiedy?",
+          "columns": [
+            "Po czym",
+            "Przykład"
+          ],
+          "rows": [
+            [
+              "być + kim? (zawód, kto)",
+              "Jestem [[lekarzem]]."
+            ],
+            [
+              "z + kim? z czym?",
+              "Kawa z [[mlekiem]]."
+            ],
+            [
+              "czym jadę?",
+              "Jadę [[autobusem]]."
+            ],
+            [
+              "interesować się, zajmować się",
+              "Interesuję się [[muzyką]]."
+            ],
+            [
+              "przed, za, nad, pod, między",
+              "Kot śpi pod [[stołem]]."
+            ]
+          ]
+        },
+        {
+          "kind": "compare",
+          "title": "„To jest…” czy „jest kim?”",
+          "left": {
+            "head": "mianownik",
+            "lines": [
+              "To jest Ola.",
+              "Ola jest miła.",
+              "To jest mój brat."
+            ]
+          },
+          "right": {
+            "head": "narzędnik",
+            "lines": [
+              "Ola jest [[lekarką]].",
+              "Ola jest [[miłą dziewczyną]].",
+              "Mój brat nie jest [[kierowcą]]."
+            ]
+          }
+        },
+        {
+          "kind": "tiles",
+          "title": "Końcówki",
+          "tiles": [
+            {
+              "label": "ona",
+              "ending": "[[-ą]]",
+              "examples": [
+                "mama → mam[[ą]]",
+                "kawa → kaw[[ą]]"
+              ]
+            },
+            {
+              "label": "on",
+              "ending": "[[-em]]",
+              "examples": [
+                "brat → brat[[em]]",
+                "autobus → autobus[[em]]"
+              ]
+            },
+            {
+              "label": "on, ono · po k, g",
+              "ending": "[[-iem]]",
+              "examples": [
+                "pociąg → pociąg[[iem]]",
+                "mleko → mlek[[iem]]"
+              ]
+            },
+            {
+              "label": "ono",
+              "ending": "[[-em]]",
+              "examples": [
+                "okno → okn[[em]]",
+                "piwo → piw[[em]]"
+              ]
+            },
+            {
+              "label": "przymiotnik · ona",
+              "ending": "[[-ą]]",
+              "examples": [
+                "z dobr[[ą]] kawą"
+              ]
+            },
+            {
+              "label": "przymiotnik · on, ono",
+              "ending": "[[-ym]] / -im",
+              "examples": [
+                "z dobr[[ym]] kolegą",
+                "z polsk[[im]] piwem"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "Wyjątki",
+          "items": [
+            "„on” na -a → [[-ą]]: kolega → [[kolegą]], kierowca → [[kierowcą]]",
+            "ó → o, e znika: stół → [[stołem]], Marek → [[Markiem]]"
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "Sam przymiotnik po „jest” — mianownik. Przymiotnik z rzeczownikiem — narzędnik. „Nie” niczego tu nie zmienia."
+        }
+      ]
+    },
+    {
+      "id": "razem",
+      "accent": "lilac",
+      "eyebrow": "Konspekt · 4",
+      "title": "Wszystko razem",
+      "question": "jeden rzeczownik — cztery formy",
+      "cards": [
+        {
+          "kind": "table",
+          "title": "Ściąga",
+          "wide": true,
+          "columns": [
+            "Przypadek",
+            "Pytanie",
+            "ona",
+            "on · osoba",
+            "on · rzecz",
+            "ono"
+          ],
+          "row_cases": [
+            null,
+            "b",
+            "d",
+            "n"
+          ],
+          "rows": [
+            [
+              "Mianownik",
+              "kto? co?",
+              "kawa",
+              "brat",
+              "telefon",
+              "mleko"
+            ],
+            [
+              "Biernik",
+              "kogo? co?",
+              "kaw{{b|ę}}",
+              "brat{{b|a}}",
+              "telefon",
+              "mleko"
+            ],
+            [
+              "Dopełniacz",
+              "kogo? czego?",
+              "kaw{{d|y}}",
+              "brat{{d|a}}",
+              "telefon{{d|u}}",
+              "mlek{{d|a}}"
+            ],
+            [
+              "Narzędnik",
+              "kim? czym?",
+              "kaw{{n|ą}}",
+              "brat{{n|em}}",
+              "telefon{{n|em}}",
+              "mlek{{n|iem}}"
+            ]
+          ]
+        },
+        {
+          "kind": "sentences",
+          "title": "Trzy przypadki w jednym zdaniu",
+          "items": [
+            "Kupuję {{b|kawę}} dla {{d|mamy}} i piję ją z {{n|mlekiem}}.",
+            "Nie mam {{d|samochodu}}, więc jeżdżę {{n|autobusem}} i czytam {{b|książkę}}.",
+            "Jestem {{n|studentką}}, szukam {{d|pokoju}} i mam {{b|kota}}."
+          ]
+        },
+        {
+          "kind": "traps",
+          "title": "Pułapki z ukraińskiego",
+          "traps": [
+            {
+              "uk": "я лікар",
+              "wrong": "Jestem lekarz.",
+              "right": "Jestem [[lekarzem]].",
+              "why": "być + kim? → narzędnik"
+            },
+            {
+              "uk": "я не люблю каву",
+              "wrong": "Nie lubię kawę.",
+              "right": "Nie lubię [[kawy]].",
+              "why": "po „nie” → dopełniacz"
+            },
+            {
+              "uk": "слухаю подкаст",
+              "wrong": "Słucham podcast.",
+              "right": "Słucham [[podcastu]].",
+              "why": "słuchać + dopełniacz"
+            },
+            {
+              "uk": "шукаю квартиру",
+              "wrong": "Szukam mieszkanie.",
+              "right": "Szukam [[mieszkania]].",
+              "why": "szukać + dopełniacz"
+            },
+            {
+              "uk": "чекаю маму",
+              "wrong": "Czekam mamy.",
+              "right": "Czekam [[na mamę]].",
+              "why": "czekać na + biernik"
+            },
+            {
+              "uk": "користуюся телефоном",
+              "wrong": "Korzystam telefonem.",
+              "right": "Korzystam [[z telefonu]].",
+              "why": "korzystać z + dopełniacz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mnoga",
+      "accent": "yellow",
+      "eyebrow": "Bonus",
+      "title": "Liczba mnoga",
+      "question": "jeden → dwa",
+      "gloss": "називний відмінок множини",
+      "cards": [
+        {
+          "kind": "tiles",
+          "title": "Końcówki",
+          "tiles": [
+            {
+              "label": "ona, on · rzecz",
+              "ending": "[[-y]]",
+              "examples": [
+                "kawa → kaw[[y]]",
+                "dom → dom[[y]]"
+              ]
+            },
+            {
+              "label": "po k, g",
+              "ending": "[[-i]]",
+              "examples": [
+                "książka → książk[[i]]",
+                "bank → bank[[i]]"
+              ]
+            },
+            {
+              "label": "po c, cz, sz, rz, ż, j, l",
+              "ending": "[[-e]]",
+              "examples": [
+                "ulica → ulic[[e]]",
+                "klucz → klucz[[e]]"
+              ]
+            },
+            {
+              "label": "ono",
+              "ending": "[[-a]]",
+              "examples": [
+                "okno → okn[[a]]",
+                "morze → morz[[a]]"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "title": "Grupa z mężczyzną: ci",
+          "columns": [
+            "Jeden",
+            "Wielu",
+            "Zmiana"
+          ],
+          "rows": [
+            [
+              "student",
+              "ci student[[ci]]",
+              "t → ci"
+            ],
+            [
+              "Polak",
+              "ci Pola[[cy]]",
+              "k → cy"
+            ],
+            [
+              "lekarz",
+              "ci lekarz[[e]]",
+              "rz → -e"
+            ],
+            [
+              "kolega",
+              "ci kole[[dzy]]",
+              "g → dzy"
+            ],
+            [
+              "pan",
+              "ci pan[[owie]]",
+              "-owie"
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "Wyjątki",
+          "items": [
+            "człowiek → [[ludzie]]",
+            "dziecko → [[dzieci]]",
+            "brat → [[bracia]]",
+            "ręka → [[ręce]], oko → [[oczy]]"
+          ]
+        },
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "Kobiety, rzeczy, zwierzęta — [[te]]: te studentki, te domy, te koty."
+        }
+      ]
+    }
+  ]
+}
