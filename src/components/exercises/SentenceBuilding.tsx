@@ -20,6 +20,12 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
+/**
+ * Rendered only inside embeds (light notebook theme).
+ * Use ONLY `nb-*` classes / `--nb-*` variables here — never the dark site tokens
+ * (`text-paper`, `bg-ink*`, `border-ink-line`, `text-gold`…): on notebook paper
+ * they turn into cream text on white tiles (invisible). See docs/STYLE_NOTEBOOK.md.
+ */
 export function SentenceBuilding({ words, answer, accept, disabled }: Props) {
   const bank = useMemo(() => shuffle(words), [words]);
   const [picked, setPicked] = useState<string[]>([]);
@@ -27,7 +33,8 @@ export function SentenceBuilding({ words, answer, accept, disabled }: Props) {
   const [checked, setChecked] = useState<boolean | null>(null);
 
   const pick = (word: string, fromRemaining: boolean) => {
-    if (disabled || checked !== null) return;
+    if (disabled || checked === true) return;
+    if (checked === false) setChecked(null);
     if (fromRemaining) {
       setRemaining((r) => {
         const i = r.indexOf(word);
@@ -59,47 +66,48 @@ export function SentenceBuilding({ words, answer, accept, disabled }: Props) {
     setChecked(null);
   };
 
+  const lineState = checked === true ? ' ok' : checked === false ? ' no' : '';
+
   return (
-    <div className="space-y-3">
-      <div className="flex min-h-[48px] flex-wrap gap-2 rounded-lg border border-ink-line bg-ink-soft p-3">
-        {picked.length === 0 && <span className="text-sm text-paper-muted">Ułóż zdanie…</span>}
+    <div>
+      <div className={`nb-build-line${lineState}`}>
+        {picked.length === 0 && <span className="nb-build-ph">Ułóż zdanie…</span>}
         {picked.map((w, i) => (
           <button
             key={`p-${w}-${i}`}
             type="button"
             onClick={() => pick(w, false)}
-            className="rounded-md bg-gold/20 px-2 py-1 text-sm text-gold"
+            className={`nb-chip sel${checked === true ? ' ok' : ''}`}
           >
             {w}
           </button>
         ))}
       </div>
-      <div className="flex flex-wrap gap-2">
+      <div className="nb-row" style={{ marginTop: 10 }}>
         {remaining.map((w, i) => (
-          <button
-            key={`r-${w}-${i}`}
-            type="button"
-            onClick={() => pick(w, true)}
-            className="rounded-md border border-ink-line px-2 py-1 text-sm text-paper"
-          >
+          <button key={`r-${w}-${i}`} type="button" onClick={() => pick(w, true)} className="nb-chip">
             {w}
           </button>
         ))}
       </div>
-      <div className="flex gap-2">
+      <div className="nb-row">
         <button
           type="button"
           onClick={check}
           disabled={picked.length === 0 || checked !== null}
-          className="rounded-lg bg-gold px-3 py-1.5 text-sm font-medium text-ink disabled:opacity-40"
+          className="nb-btn"
         >
           Sprawdź
         </button>
-        <button type="button" onClick={reset} className="rounded-lg border border-ink-line px-3 py-1.5 text-sm">
+        <button type="button" onClick={reset} className="nb-btn ghost">
           Reset
         </button>
-        {checked === true && <span className="text-sm text-correct">✓</span>}
-        {checked === false && <span className="text-sm text-incorrect">✕ Spróbuj ponownie</span>}
+        {checked === true && <span className="nb-score">Dobra robota!</span>}
+        {checked === false && (
+          <span className="nb-note" style={{ margin: 0 }}>
+            ✕ Spróbuj ponownie — przesuń kafelki.
+          </span>
+        )}
       </div>
     </div>
   );

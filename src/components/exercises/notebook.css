@@ -544,6 +544,33 @@
   animation: nb-shake 0.35s ease;
 }
 
+/* sentence-building: answer line + tiles (light theme only) */
+.nb-build-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  min-height: 52px;
+  padding: 8px 10px;
+  background: #fff;
+  border: 2px dashed var(--nb-edge);
+  border-radius: 6px;
+}
+.nb-build-line.ok {
+  border-style: solid;
+  border-color: #2e8b62;
+  background: #f1faf5;
+}
+.nb-build-line.no {
+  border-style: solid;
+  border-color: #c0503c;
+  background: #fdf3f0;
+}
+.nb-build-ph {
+  color: var(--nb-ink-soft);
+  font-size: 14px;
+}
+
 .nb-panel {
   border-radius: 3px;
   padding: 14px 16px;

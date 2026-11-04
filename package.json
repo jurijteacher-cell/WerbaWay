@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "check:embed-theme": "node scripts/check-embed-theme.mjs",
+    "prebuild": "node scripts/check-embed-theme.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

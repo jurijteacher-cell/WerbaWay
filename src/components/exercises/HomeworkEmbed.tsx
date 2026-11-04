@@ -32,52 +32,52 @@ export function HomeworkEmbed({ data }: Props) {
     );
   }
 
+  // Embed-only (light notebook theme): nb-* classes only, never dark site tokens.
   return (
-    <div className="space-y-6">
-      <h1 className="font-display text-2xl text-gold">{data.title}</h1>
+    <div>
+      <header className="nb-head">
+        <p className="nb-eyebrow">{data.eyebrow ?? 'praca domowa'}</p>
+        <h1>{data.title}</h1>
+      </header>
 
       {data.vocab_review && (
-        <section className="space-y-2">
-          <h2 className="text-sm uppercase tracking-wide text-gold-dim">Słownictwo</h2>
-          <p className="text-paper">{data.vocab_review}</p>
-        </section>
+        <div className="nb-panel">
+          <p className="nb-eyebrow">Słownictwo</p>
+          <p style={{ margin: 0 }}>{data.vocab_review}</p>
+        </div>
       )}
 
       {data.video && (
-        <section className="space-y-2">
-          <h2 className="text-sm uppercase tracking-wide text-gold-dim">Wideo / artykuł</h2>
-          <a
-            href={data.video.url}
-            target="_blank"
-            rel="noreferrer"
-            className="font-medium text-gold underline"
-          >
+        <div className="nb-panel">
+          <p className="nb-eyebrow">Wideo / artykuł</p>
+          <a href={data.video.url} target="_blank" rel="noreferrer" style={{ color: 'var(--nb-ink)', fontWeight: 700 }}>
             {data.video.title}
           </a>
-          <p className="text-sm text-paper-muted">{data.video.task}</p>
-        </section>
+          <p className="nb-note" style={{ margin: '6px 0 0' }}>{data.video.task}</p>
+        </div>
       )}
 
       {data.grammar_exercises && (
-        <section className="space-y-4">
-          <h2 className="text-sm uppercase tracking-wide text-gold-dim">Gramatyka</h2>
+        <section>
+          <p className="nb-eyebrow">Gramatyka</p>
           {data.grammar_exercises.map((ex) => {
             if (ex.words && ex.answer) {
               return (
-                <div key={ex.id} className="rounded-lg border border-ink-line bg-ink-raised p-4">
+                <div key={ex.id} className="nb-panel">
                   <SentenceBuilding words={ex.words} answer={ex.answer} />
                 </div>
               );
             }
             if (ex.sentence && ex.answer) {
+              const fb = feedback[ex.id];
               return (
-                <div key={ex.id} className="rounded-lg border border-ink-line bg-ink-raised p-4">
-                  <p className="mb-2 text-paper">{ex.sentence}</p>
-                  <div className="flex flex-wrap gap-2">
+                <div key={ex.id} className="nb-panel">
+                  <p style={{ margin: '0 0 8px' }}>{ex.sentence}</p>
+                  <div className="nb-row" style={{ marginTop: 0 }}>
                     <input
                       value={fills[ex.id] ?? ''}
                       onChange={(e) => setFills((f) => ({ ...f, [ex.id]: e.target.value }))}
-                      className="rounded-lg border border-ink-line bg-ink-soft px-3 py-2 text-sm"
+                      className={`nb-blank${fb === true ? ' ok' : ''}${fb === false ? ' no' : ''}`}
                     />
                     <button
                       type="button"
@@ -87,25 +87,25 @@ export function HomeworkEmbed({ data }: Props) {
                           [ex.id]: normalize(fills[ex.id] ?? '') === normalize(ex.answer ?? ''),
                         }))
                       }
-                      className="rounded-lg bg-gold px-3 py-2 text-sm font-medium text-ink"
+                      className="nb-btn"
                     >
                       Sprawdź
                     </button>
-                    {feedback[ex.id] === true && <span className="self-center text-correct">✓</span>}
-                    {feedback[ex.id] === false && <span className="self-center text-incorrect">✕</span>}
+                    {fb === true && <span className="nb-score">Dobra robota!</span>}
+                    {fb === false && (
+                      <span className="nb-note" style={{ margin: 0 }}>
+                        ✕ Spróbuj ponownie
+                      </span>
+                    )}
                   </div>
                 </div>
               );
             }
             if (ex.prompt) {
               return (
-                <div key={ex.id} className="rounded-lg border border-ink-line bg-ink-raised p-4">
-                  <p className="mb-2 text-paper">{ex.prompt}</p>
-                  <textarea
-                    rows={3}
-                    className="w-full rounded-lg border border-ink-line bg-ink-soft px-3 py-2 text-sm"
-                    placeholder="Twoja odpowiedź…"
-                  />
+                <div key={ex.id} className="nb-panel">
+                  <p style={{ margin: '0 0 8px' }}>{ex.prompt}</p>
+                  <textarea rows={3} className="nb-open" placeholder="Twoja odpowiedź…" />
                 </div>
               );
             }
@@ -115,18 +115,16 @@ export function HomeworkEmbed({ data }: Props) {
       )}
 
       {data.writing_task && (
-        <section className="space-y-2">
-          <h2 className="text-sm uppercase tracking-wide text-gold-dim">
-            Pisanie ({data.writing_task.type})
-          </h2>
-          <p className="text-paper">{data.writing_task.prompt}</p>
+        <div className="nb-panel">
+          <p className="nb-eyebrow">Pisanie ({data.writing_task.type})</p>
+          <p style={{ margin: '0 0 8px' }}>{data.writing_task.prompt}</p>
           <textarea
             value={writing}
             onChange={(e) => setWriting(e.target.value)}
             rows={6}
-            className="w-full rounded-lg border border-ink-line bg-ink-soft px-3 py-2 text-sm"
+            className="nb-open"
           />
-        </section>
+        </div>
       )}
     </div>
   );
