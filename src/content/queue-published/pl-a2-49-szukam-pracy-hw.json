@@ -1,0 +1,191 @@
+{
+  "lesson_id": "pl-a2-49-szukam-pracy",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: przyimki, formy i wiadomość do mamy",
+  "instruction": "Trzy bloki: przyimki, formy i jedna wiadomość. Potem napisz e-mail — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Do, dla, u, z, bez czy obok?",
+      "instruction": "Wybierz poprawny przyimek.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "W sobotę jedziemy ___ babci na wieś.",
+          "answer": "do",
+          "options": [
+            "u",
+            "do",
+            "na"
+          ],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Dokąd? Do osoby: do babci. U babci — gdzie jesteśmy."
+        },
+        {
+          "id": "h1-2",
+          "text": "Kupiłem kwiaty ___ żony na rocznicę.",
+          "answer": "dla",
+          "options": [
+            "dla",
+            "do",
+            "od"
+          ],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Dla kogo są kwiaty? Dla żony."
+        },
+        {
+          "id": "h1-3",
+          "text": "Byłam wczoraj ___ fryzjera i mam nową fryzurę.",
+          "answer": "u",
+          "options": [
+            "w",
+            "do",
+            "u"
+          ],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Gdzie byłam? U osoby: u fryzjera."
+        },
+        {
+          "id": "h1-4",
+          "text": "Pociąg ___ Gdańska ma czterdzieści minut opóźnienia.",
+          "answer": "z",
+          "options": [
+            "ze",
+            "z",
+            "od"
+          ],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Skąd? Z miasta: z Gdańska. Ze — tylko przed trudną grupą spółgłosek, np. ze Lwowa."
+        },
+        {
+          "id": "h1-5",
+          "text": "Piję herbatę ___ cukru, bo jestem na diecie.",
+          "answer": "bez",
+          "options": [
+            "bez",
+            "z",
+            "od"
+          ],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Bez + dopełniacz: bez cukru. Z cukrem — to inny przypadek."
+        },
+        {
+          "id": "h1-6",
+          "text": "Apteka jest ___ poczty, po lewej stronie.",
+          "answer": "obok",
+          "options": [
+            "u",
+            "obok",
+            "do"
+          ],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Gdzie? Obok + dopełniacz: obok poczty."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Wpisz formę",
+      "instruction": "Wpisz słowa z nawiasu w poprawnej formie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Nie mogę dziś przyjść, bo nie mam ___ (czas).",
+          "answer": "czasu",
+          "grammar_point": "dopelniacz-nie-ma",
+          "explanation": "Po nie — dopełniacz. Czas ma -u: czasu."
+        },
+        {
+          "id": "h2-2",
+          "text": "Ile ___ (mleko) mam dodać do ciasta?",
+          "answer": "mleka",
+          "grammar_point": "ilosc-dopelniacz",
+          "explanation": "Ile? → dopełniacz: mleka."
+        },
+        {
+          "id": "h2-3",
+          "text": "Od ___ (wtorek) chodzę na basen.",
+          "answer": "wtorku",
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Od + dopełniacz: od wtorku."
+        },
+        {
+          "id": "h2-4",
+          "text": "Uczę się ___ (język niemiecki), bo jadę do Berlina.",
+          "answer": "języka niemieckiego",
+          "grammar_point": "czasowniki-z-dopelniaczem",
+          "explanation": "Uczyć się + dopełniacz: języka niemieckiego."
+        },
+        {
+          "id": "h2-5",
+          "text": "Mieszkamy niedaleko ___ (duże centrum handlowe).",
+          "answer": "dużego centrum handlowego",
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Centrum w liczbie pojedynczej się nie zmienia; przymiotniki: dużego, handlowego."
+        },
+        {
+          "id": "h2-6",
+          "text": "Słucham ___ (polskie radio) w samochodzie.",
+          "answer": "polskiego radia",
+          "grammar_point": "czasowniki-z-dopelniaczem",
+          "explanation": "Słuchać + dopełniacz: polskiego radia."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "drag-and-drop",
+      "title": "3. Wiadomość Oleny do mamy",
+      "instruction": "Przeciągnij wyrażenie w lukę. Dwa wyrażenia w banku są błędne — nie pasują nigdzie.",
+      "bank": [
+        "z biura podróży",
+        "białą koszulę",
+        "z kawiarni",
+        "do Tomka",
+        "dla osoby",
+        "u Tomka",
+        "białej koszuli"
+      ],
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Mamo, dostałam e-mail ___ — w czwartek mam rozmowę!",
+          "answer": "z biura podróży",
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Skąd jest e-mail? Z biura podróży (z + dopełniacz)."
+        },
+        {
+          "id": "h3-2",
+          "text": "Pojadę tam prosto ___, bo rano mam zmianę.",
+          "answer": "z kawiarni",
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Skąd pojadę? Z kawiarni."
+        },
+        {
+          "id": "h3-3",
+          "text": "Tomek mówi, że to dobre miejsce ___ jak ja.",
+          "answer": "dla osoby",
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Dla + dopełniacz: dla osoby."
+        },
+        {
+          "id": "h3-4",
+          "text": "Nie mam jeszcze ___, więc w środę kupię coś eleganckiego.",
+          "answer": "białej koszuli",
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Po nie mam — dopełniacz: białej koszuli, nie białą koszulę."
+        },
+        {
+          "id": "h3-5",
+          "text": "Po rozmowie idę ___ na kawę. Trzymaj kciuki!",
+          "answer": "do Tomka",
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Idę dokąd? Do Tomka. U Tomka — gdzie jestem."
+        }
+      ]
+    }
+  ]
+}

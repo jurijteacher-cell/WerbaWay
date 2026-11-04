@@ -1,0 +1,49 @@
+{
+  "lesson_id": "pl-a2-49-szukam-pracy",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Przeczytaj tekst jeszcze raz i zdecyduj, czy zdanie jest prawdziwe czy fałszywe. Odpowiadaj tylko na podstawie tekstu.",
+  "estimated_minutes": 4,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o tekście „Wiadomość od Tomka”.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Olena pracuje w kawiarni od roku.",
+          "answer": true,
+          "explanation": "W tekście: „Olena od roku pracuje jako kelnerka w kawiarni obok Rynku”."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Olena zna Tomka z pracy w kawiarni.",
+          "answer": false,
+          "explanation": "Tomek to kolega z zajęć wspinaczki."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Bez doświadczenia w turystyce nie można się zgłosić.",
+          "answer": false,
+          "explanation": "Doświadczenie jest mile widziane, ale można się zgłosić bez doświadczenia."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Olena skończyła studia turystyczne.",
+          "answer": false,
+          "explanation": "Nie ma wykształcenia turystycznego — skończyła filologię angielską."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Olena wysyła dokumenty przed terminem.",
+          "answer": true,
+          "explanation": "Termin mija w środę, a Olena wysyła dokumenty w niedzielę."
+        }
+      ]
+    }
+  ]
+}
