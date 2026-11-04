@@ -1,0 +1,200 @@
+{
+ "lesson_id": "pl-preg-r5-powtorka",
+ "exercise_type": "fill-in-blank",
+ "title": "Praca domowa: czasowniki modalne, aspekt i tryb rozkazujący",
+ "instruction": "Trzy bloki: sytuacja i rada, pełna forma i wycieczka Bartka.",
+ "estimated_minutes": 20,
+ "blocks": [
+  {
+   "block_id": "h1",
+   "title": "1. Problem i rada",
+   "exercise_type": "matching",
+   "instruction": "Połącz problem po lewej z radą po prawej.",
+   "items": [
+    {
+     "id": "h1-1",
+     "left": "Nie mam samochodu na wyjazd w sobotę.",
+     "right": "Możesz pożyczyć auto od taty.",
+     "grammar_point": "rady"
+    },
+    {
+     "id": "h1-2",
+     "left": "Jutro rano mam egzamin na prawo jazdy.",
+     "right": "Musisz się dziś wcześnie położyć.",
+     "grammar_point": "rady"
+    },
+    {
+     "id": "h1-3",
+     "left": "Wieczorem nie mogę zasnąć.",
+     "right": "Nie pij kawy po południu.",
+     "grammar_point": "rady"
+    },
+    {
+     "id": "h1-4",
+     "left": "Kot od wczoraj nic nie je.",
+     "right": "Zadzwoń do weterynarza.",
+     "grammar_point": "rady"
+    },
+    {
+     "id": "h1-5",
+     "left": "Szef chce raport na jutro, a ja nie zdążę.",
+     "right": "Niech kolega ci pomoże.",
+     "grammar_point": "rady"
+    },
+    {
+     "id": "h1-6",
+     "left": "Zostawiłam klucze w biurze.",
+     "right": "Nie martw się, wrócimy po nie razem.",
+     "grammar_point": "rady"
+    }
+   ]
+  },
+  {
+   "block_id": "h2",
+   "title": "2. Pełna forma",
+   "exercise_type": "fill-in-blank",
+   "instruction": "Wpisz czasownik w dobrej formie. W nawiasie jest podpowiedź.",
+   "items": [
+    {
+     "id": "h2-1",
+     "text": "Wczoraj Bartek ___ (musieć) zostać w pracy do dziewiątej.",
+     "answer": "musiał",
+     "grammar_point": "modalne-czas"
+    },
+    {
+     "id": "h2-2",
+     "text": "Wiktorio, ___ (powinien) więcej spać!",
+     "answer": "powinnaś",
+     "grammar_point": "modalne-formy"
+    },
+    {
+     "id": "h2-3",
+     "text": "Przez całe wakacje ___ (my, czytać) książki na plaży.",
+     "answer": "czytaliśmy",
+     "accept": [
+      "czytałyśmy"
+     ],
+     "grammar_point": "aspekt-przeszly"
+    },
+    {
+     "id": "h2-4",
+     "text": "Nareszcie ___ (ja, skończyć) ten długi raport!",
+     "answer": "skończyłam",
+     "accept": [
+      "skończyłem"
+     ],
+     "grammar_point": "aspekt-przeszly"
+    },
+    {
+     "id": "h2-5",
+     "text": "W sobotę ___ (my, posprzątać — przyszłość) piwnicę.",
+     "answer": "posprzątamy",
+     "grammar_point": "aspekt-przyszly"
+    },
+    {
+     "id": "h2-6",
+     "text": "___ (ty, zamknąć) okno, zimno tu!",
+     "answer": "Zamknij",
+     "grammar_point": "rozkazujacy-formy"
+    },
+    {
+     "id": "h2-7",
+     "text": "Nie ___ (ty, dotykać) tego kabla!",
+     "answer": "dotykaj",
+     "grammar_point": "rozkazujacy-przeczenie"
+    },
+    {
+     "id": "h2-8",
+     "text": "___ (niech + on, przyjść) do mnie po pracy.",
+     "answer": "Niech przyjdzie",
+     "grammar_point": "niech"
+    }
+   ]
+  },
+  {
+   "block_id": "h3",
+   "title": "3. Wycieczka Bartka",
+   "exercise_type": "fill-in-blank",
+   "instruction": "Przeczytaj historię i wybierz formę, która pasuje.",
+   "items": [
+    {
+     "id": "h3-1",
+     "text": "W piątek wieczorem Bartek szybko ___ plecak i poszedł spać.",
+     "options": [
+      "spakował",
+      "pakował",
+      "spakuje"
+     ],
+     "answer": "spakował",
+     "grammar_point": "aspekt-przeszly"
+    },
+    {
+     "id": "h3-2",
+     "text": "Mama powiedziała mu: „___ ciepłą kurtkę!”",
+     "options": [
+      "Weź",
+      "Bierz",
+      "Weźmiesz"
+     ],
+     "answer": "Weź",
+     "grammar_point": "rozkazujacy-aspekt"
+    },
+    {
+     "id": "h3-3",
+     "text": "Rano autobus się spóźnił, więc Bartek ___ czekać pół godziny.",
+     "options": [
+      "musiał",
+      "mógł",
+      "powinien"
+     ],
+     "answer": "musiał",
+     "grammar_point": "modalne-czas"
+    },
+    {
+     "id": "h3-4",
+     "text": "Kiedy ___ na szczyt, zaczął padać deszcz.",
+     "options": [
+      "wchodził",
+      "wszedł",
+      "wejdzie"
+     ],
+     "answer": "wchodził",
+     "grammar_point": "aspekt-przeszly"
+    },
+    {
+     "id": "h3-5",
+     "text": "Na górze pomyślał: „___ wziąć też czapkę”.",
+     "options": [
+      "Powinienem był",
+      "Powinnam była",
+      "Powinien"
+     ],
+     "answer": "Powinienem był",
+     "grammar_point": "modalne-czas"
+    },
+    {
+     "id": "h3-6",
+     "text": "Kolega napisał: „Burza idzie! ___ zejść na dół jak najszybciej”.",
+     "options": [
+      "Musisz",
+      "Nie musisz",
+      "Możesz"
+     ],
+     "answer": "Musisz",
+     "grammar_point": "musiec"
+    },
+    {
+     "id": "h3-7",
+     "text": "Wieczorem Bartek ___ do mamy i wszystko jej opowiedział.",
+     "options": [
+      "zadzwonił",
+      "dzwonił",
+      "zadzwoni"
+     ],
+     "answer": "zadzwonił",
+     "grammar_point": "aspekt-przeszly"
+    }
+   ]
+  }
+ ]
+}

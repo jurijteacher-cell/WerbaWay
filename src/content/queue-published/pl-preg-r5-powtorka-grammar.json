@@ -1,0 +1,610 @@
+{
+ "lesson_id": "pl-preg-r5-powtorka",
+ "exercise_type": "fill-in-blank",
+ "title": "Powtórka: czasowniki z całego kursu",
+ "instruction": "Siedem bloków. Bloki 1–2 to słowa (ze zdjęciami i pary), bloki 3–7 to gramatyka i tekst. Kliknij odpowiedź i sprawdź.",
+ "estimated_minutes": 28,
+ "blocks": [
+  {
+   "block_id": "g1",
+   "title": "1. Co widać na zdjęciu?",
+   "exercise_type": "fill-in-blank",
+   "instruction": "Popatrz na zdjęcie i wybierz formę, która pasuje do zdania.",
+   "items": [
+    {
+     "id": "g1-1",
+     "text": "Nie przeszkadzaj — teraz ___ sobie ciśnienie.",
+     "options": [
+      "mierzę",
+      "mierzyłam",
+      "zmierzyłam"
+     ],
+     "answer": "mierzę",
+     "explanation": "Teraz, w tej chwili → czas teraźniejszy, tylko niedokonany: mierzę.",
+     "image_url": "https://images.unsplash.com/photo-1615486511484-92e172cc4fe0?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Ciśnieniomierz na ręce i wynik na ekranie",
+     "image_credit": "Fot. Mockup Graphics / Unsplash",
+     "grammar_point": "aspekt-teraz"
+    },
+    {
+     "id": "g1-2",
+     "text": "Wczoraj wieczorem mąż w końcu ___ torbę do szpitala.",
+     "options": [
+      "spakował",
+      "pakował",
+      "spakuje"
+     ],
+     "answer": "spakował",
+     "explanation": "W końcu → wynik → dokonany: spakował.",
+     "image_url": "https://images.unsplash.com/photo-1648737967037-96967e9151b5?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Otwarta walizka i ręce, które pakują rzeczy",
+     "image_credit": "Fot. Surface / Unsplash",
+     "grammar_point": "aspekt-przeszly"
+    },
+    {
+     "id": "g1-3",
+     "text": "W izbie przyjęć ___ trzy formularze w pięć minut.",
+     "options": [
+      "podpisałam",
+      "podpisywałam",
+      "podpiszę"
+     ],
+     "answer": "podpisałam",
+     "explanation": "W pięć minut → liczy się wynik → dokonany: podpisałam.",
+     "image_url": "https://images.unsplash.com/photo-1562564055-71e051d33c19?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Kobieta podpisuje dokument przy stole",
+     "image_credit": "Fot. Gabrielle Henderson / Unsplash",
+     "grammar_point": "aspekt-przeszly"
+    },
+    {
+     "id": "g1-4",
+     "text": "___ go codziennie przed snem — ciepła woda go uspokaja.",
+     "options": [
+      "Kąp",
+      "Wykąp",
+      "Kąpać"
+     ],
+     "answer": "Kąp",
+     "explanation": "Codziennie → niedokonany; rada dla ty → tryb rozkazujący: kąp.",
+     "image_url": "https://images.unsplash.com/photo-1609220361664-a5cd02bc7345?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Uśmiechnięte dziecko w wannie",
+     "image_credit": "Fot. Nathan Dumlao / Unsplash",
+     "grammar_point": "rozkazujacy-aspekt"
+    },
+    {
+     "id": "g1-5",
+     "text": "Uff, wreszcie go ___! Teraz wypiję ciepłą kawę.",
+     "options": [
+      "uśpiłam",
+      "usypiałam",
+      "uśpię"
+     ],
+     "answer": "uśpiłam",
+     "explanation": "Wreszcie → wynik → dokonany: uśpiłam.",
+     "image_url": "https://images.unsplash.com/photo-1582212742235-a2500f31cb39?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Niemowlę śpi na białym prześcieradle",
+     "image_credit": "Fot. hessam nabavi / Unsplash",
+     "grammar_point": "aspekt-przeszly"
+    },
+    {
+     "id": "g1-6",
+     "text": "Jestem zmęczona, ale ___ codziennie wychodzić z małą na spacer.",
+     "options": [
+      "powinnam",
+      "powinnaś",
+      "powinien"
+     ],
+     "answer": "powinnam",
+     "explanation": "Jestem → ja, kobieta → powinnam. Powinnaś — to ty, powinien — on.",
+     "image_url": "https://images.unsplash.com/photo-1773573924969-33c2ba2d7707?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Kobieta pcha wózek przez park",
+     "image_credit": "Fot. Phillip Flores / Unsplash",
+     "grammar_point": "modalne-formy"
+    },
+    {
+     "id": "g1-7",
+     "text": "Wczoraj na USG ___ czekać prawie godzinę, ale było warto!",
+     "options": [
+      "musiałam",
+      "muszę",
+      "będę musiała"
+     ],
+     "answer": "musiałam",
+     "explanation": "Wczoraj → czas przeszły: musiałam.",
+     "image_url": "https://images.unsplash.com/photo-1768776180013-5c33c9fd9ada?fm=jpg&q=80&w=900&fit=max",
+     "image_alt": "Kobieta trzyma telefon ze zdjęciem z USG",
+     "image_credit": "Fot. Samuel Lopez Cruz / Unsplash",
+     "grammar_point": "modalne-czas"
+    }
+   ]
+  },
+  {
+   "block_id": "g2",
+   "title": "2. Para: niedokonany i dokonany",
+   "exercise_type": "matching",
+   "instruction": "Kliknij czasownik niedokonany po lewej, potem jego parę dokonaną po prawej.",
+   "items": [
+    {
+     "id": "g2-1",
+     "left": "brać",
+     "right": "wziąć",
+     "grammar_point": "pary-aspektowe"
+    },
+    {
+     "id": "g2-2",
+     "left": "umawiać się",
+     "right": "umówić się",
+     "grammar_point": "pary-aspektowe"
+    },
+    {
+     "id": "g2-3",
+     "left": "odbierać",
+     "right": "odebrać",
+     "grammar_point": "pary-aspektowe"
+    },
+    {
+     "id": "g2-4",
+     "left": "przynosić",
+     "right": "przynieść",
+     "grammar_point": "pary-aspektowe"
+    },
+    {
+     "id": "g2-5",
+     "left": "usypiać",
+     "right": "uśpić",
+     "grammar_point": "pary-aspektowe"
+    },
+    {
+     "id": "g2-6",
+     "left": "zostawiać",
+     "right": "zostawić",
+     "grammar_point": "pary-aspektowe"
+    },
+    {
+     "id": "g2-7",
+     "left": "odpoczywać",
+     "right": "odpocząć",
+     "grammar_point": "pary-aspektowe"
+    }
+   ]
+  },
+  {
+   "block_id": "g3",
+   "title": "3. Musisz, możesz czy powinnaś?",
+   "exercise_type": "fill-in-blank",
+   "instruction": "Wybierz formę, która pasuje do znaczenia i do czasu.",
+   "items": [
+    {
+     "id": "g3-1",
+     "text": "Na pierwszą wizytę ___ wziąć dowód osobisty — w rejestracji zawsze o niego pytają.",
+     "options": [
+      "musisz",
+      "możesz",
+      "nie musisz"
+     ],
+     "answer": "musisz",
+     "explanation": "Bez dowodu nie da się → obowiązek → musisz.",
+     "grammar_point": "musiec"
+    },
+    {
+     "id": "g3-2",
+     "text": "Nowych ubranek ___ kupować — dużo rzeczy pożyczysz ode mnie.",
+     "options": [
+      "nie musisz",
+      "nie możesz",
+      "musisz"
+     ],
+     "answer": "nie musisz",
+     "explanation": "Nie ma obowiązku, ale wolno → nie musisz. Nie możesz znaczyłoby: zakaz.",
+     "grammar_point": "nie-musisz-nie-mozesz"
+    },
+    {
+     "id": "g3-3",
+     "text": "Przed krzywą cukrową ___ jeść śniadania.",
+     "options": [
+      "nie możesz",
+      "nie musisz",
+      "możesz"
+     ],
+     "answer": "nie możesz",
+     "explanation": "Na badanie przychodzisz na czczo → zakaz → nie możesz.",
+     "grammar_point": "nie-musisz-nie-mozesz"
+    },
+    {
+     "id": "g3-4",
+     "text": "Zapomniałam ładowarki! ___ spakować torbę wcześniej.",
+     "options": [
+      "Powinnam była",
+      "Powinnam",
+      "Będę musiała"
+     ],
+     "answer": "Powinnam była",
+     "explanation": "Rada o przeszłości, której już nie zmienisz → powinnam była.",
+     "grammar_point": "modalne-czas"
+    },
+    {
+     "id": "g3-5",
+     "text": "Wczoraj autobus nie był niskopodłogowy, więc ___ czekać na następny.",
+     "options": [
+      "musiałam",
+      "muszę",
+      "będę musiała"
+     ],
+     "answer": "musiałam",
+     "explanation": "Wczoraj → czas przeszły: musiałam.",
+     "grammar_point": "modalne-czas"
+    },
+    {
+     "id": "g3-6",
+     "text": "Tomku, ty też ___ chodzić do szkoły rodzenia!",
+     "options": [
+      "powinieneś",
+      "powinnaś",
+      "powinien"
+     ],
+     "answer": "powinieneś",
+     "explanation": "Ty + mężczyzna → powinieneś. Powinnaś — ty, kobieta.",
+     "grammar_point": "modalne-formy"
+    },
+    {
+     "id": "g3-7",
+     "text": "Przepraszam, czy ___ tu na chwilę zostawić wózek? Zaraz wrócę.",
+     "options": [
+      "mogę",
+      "może",
+      "mogłam"
+     ],
+     "answer": "mogę",
+     "explanation": "Prosisz o pozwolenie teraz, o sobie → Czy mogę…?",
+     "grammar_point": "moc"
+    }
+   ]
+  },
+  {
+   "block_id": "g4",
+   "title": "4. Proces czy wynik?",
+   "exercise_type": "fill-in-blank",
+   "instruction": "Szukaj sygnału: codziennie, przez…, wreszcie, teraz, jutro. Potem wybierz.",
+   "items": [
+    {
+     "id": "g4-1",
+     "text": "Przez dwa miesiące ___ do szkoły rodzenia co środę.",
+     "options": [
+      "chodziliśmy",
+      "poszliśmy",
+      "pójdziemy"
+     ],
+     "answer": "chodziliśmy",
+     "explanation": "Przez dwa miesiące, co środę → proces, powtarzanie → niedokonany.",
+     "grammar_point": "aspekt-przeszly"
+    },
+    {
+     "id": "g4-2",
+     "text": "Wczoraj wreszcie ___ wyniki z laboratorium.",
+     "options": [
+      "odebrałam",
+      "odbierałam",
+      "odbiorę"
+     ],
+     "answer": "odebrałam",
+     "explanation": "Wreszcie → wynik → dokonany.",
+     "grammar_point": "aspekt-przeszly"
+    },
+    {
+     "id": "g4-3",
+     "text": "Przez pierwsze dwa tygodnie mała ___ co noc.",
+     "options": [
+      "płakała",
+      "zapłakała",
+      "zapłacze"
+     ],
+     "answer": "płakała",
+     "explanation": "Co noc → powtarzanie → niedokonany.",
+     "grammar_point": "aspekt-przeszly"
+    },
+    {
+     "id": "g4-4",
+     "text": "Jutro rano najpierw ___ do przychodni, a potem dam ci znać.",
+     "options": [
+      "zadzwonię",
+      "będę dzwonić",
+      "dzwoniłam"
+     ],
+     "answer": "zadzwonię",
+     "explanation": "Najpierw jedno, potem drugie → jeden raz, z wynikiem → dokonany: zadzwonię.",
+     "grammar_point": "aspekt-przyszly"
+    },
+    {
+     "id": "g4-5",
+     "text": "Od przyszłego tygodnia będę codziennie ___ ćwiczenia z fizjoterapeutką.",
+     "options": [
+      "robić",
+      "zrobić",
+      "robiłam"
+     ],
+     "answer": "robić",
+     "explanation": "Będę + tylko niedokonany: będę robić. Będę zrobić — takiej formy nie ma.",
+     "grammar_point": "aspekt-przyszly"
+    },
+    {
+     "id": "g4-6",
+     "text": "Cicho, teraz ___ z położną przez telefon!",
+     "options": [
+      "rozmawiam",
+      "rozmawiałam",
+      "porozmawiałam"
+     ],
+     "answer": "rozmawiam",
+     "explanation": "Teraz → tylko niedokonany.",
+     "grammar_point": "aspekt-teraz"
+    },
+    {
+     "id": "g4-7",
+     "text": "Najpierw ___ torbę, a potem pojechaliśmy do szpitala.",
+     "options": [
+      "spakowaliśmy",
+      "pakowaliśmy",
+      "spakujemy"
+     ],
+     "answer": "spakowaliśmy",
+     "explanation": "Najpierw jedno, potem drugie → kolejne wyniki → dokonany.",
+     "grammar_point": "aspekt-przeszly"
+    },
+    {
+     "id": "g4-8",
+     "text": "Kiedy ___ dziecko, nagle zadzwonił kurier.",
+     "options": [
+      "przewijałam",
+      "przewinęłam",
+      "przewinę"
+     ],
+     "answer": "przewijałam",
+     "explanation": "Tło, które trwało, kiedy coś się stało → niedokonany.",
+     "grammar_point": "aspekt-przeszly"
+    }
+   ]
+  },
+  {
+   "block_id": "g5",
+   "title": "5. Rady i polecenia",
+   "exercise_type": "fill-in-blank",
+   "instruction": "Wybierz formę trybu rozkazującego, która pasuje.",
+   "items": [
+    {
+     "id": "g5-1",
+     "text": "Zosiu, ___ do szkoły rodzenia, póki są wolne miejsca!",
+     "options": [
+      "zapisz się",
+      "zapisuj się",
+      "zapiszesz się"
+     ],
+     "answer": "zapisz się",
+     "explanation": "Jedna konkretna rzecz do zrobienia → dokonany: zapisz się.",
+     "grammar_point": "rozkazujacy-aspekt"
+    },
+    {
+     "id": "g5-2",
+     "text": "Nie ___ ładowarki do telefonu!",
+     "options": [
+      "zapomnij",
+      "zapominaj",
+      "zapomnisz"
+     ],
+     "answer": "zapomnij",
+     "explanation": "Ostrzeżenie: żeby coś się nie stało przypadkiem → nie + dokonany.",
+     "grammar_point": "rozkazujacy-przeczenie"
+    },
+    {
+     "id": "g5-3",
+     "text": "Nie ___ wszystkiego naraz — po kolei!",
+     "options": [
+      "kupuj",
+      "kup",
+      "kupisz"
+     ],
+     "answer": "kupuj",
+     "explanation": "Zakaz, rada na zawsze → nie + zwykle niedokonany: nie kupuj.",
+     "grammar_point": "rozkazujacy-przeczenie"
+    },
+    {
+     "id": "g5-4",
+     "text": "___ Marek przewija dziecko w nocy, a ty śpij.",
+     "options": [
+      "Niech",
+      "Proszę",
+      "Daj"
+     ],
+     "answer": "Niech",
+     "explanation": "Polecenie dla trzeciej osoby → niech + forma: niech przewija.",
+     "grammar_point": "niech"
+    },
+    {
+     "id": "g5-5",
+     "text": "Pani Zofio, ___ przyjść na badanie na czczo.",
+     "options": [
+      "proszę",
+      "niech",
+      "weź"
+     ],
+     "answer": "proszę",
+     "explanation": "Grzecznie, do pani → proszę + bezokolicznik.",
+     "grammar_point": "prosze-bezokolicznik"
+    },
+    {
+     "id": "g5-6",
+     "text": "Kochanie, ___ dziś razem na spacer!",
+     "options": [
+      "chodźmy",
+      "chodźcie",
+      "dawaj pójdziemy"
+     ],
+     "answer": "chodźmy",
+     "explanation": "My razem → forma na -my: chodźmy. Chodźcie — do kilku osób. Dawaj pójdziemy — kalka z ukraińskiego.",
+     "grammar_point": "rozkazujacy-my"
+    },
+    {
+     "id": "g5-7",
+     "text": "Nie ___ tyle słodyczy, to niezdrowe!",
+     "options": [
+      "jedz",
+      "jeż",
+      "zjedz"
+     ],
+     "answer": "jedz",
+     "explanation": "Jeść → jedz. Jeż to zwierzę! Zakaz → niedokonany.",
+     "grammar_point": "rozkazujacy-formy"
+    }
+   ]
+  },
+  {
+   "block_id": "g6",
+   "title": "6. Wiadomości od Agaty — prawda czy fałsz?",
+   "exercise_type": "true-false",
+   "instruction": "Wróć do wiadomości głosowych i zdecyduj.",
+   "items": [
+    {
+     "id": "g6-1",
+     "statement": "Agata znalazła wolny termin w pierwszej przychodni, do której zadzwoniła.",
+     "answer": false,
+     "explanation": "Nie: dzwoniła do trzech przychodni.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g6-2",
+     "statement": "Na pierwszej wizycie Agata zapomniała swoich pytań.",
+     "answer": true,
+     "explanation": "Tak: nie zapisała ich i wszystko zapomniała.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g6-3",
+     "statement": "Agata zjadła rano banana, ale badanie się udało.",
+     "answer": false,
+     "explanation": "Nie: musiała przełożyć badanie na następny tydzień.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g6-4",
+     "statement": "Agata i Tomek chodzili do szkoły rodzenia przez dwa miesiące.",
+     "answer": true,
+     "explanation": "Tak: co środę przez dwa miesiące.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g6-5",
+     "statement": "Agata spakowała torbę do szpitala dużo wcześniej.",
+     "answer": false,
+     "explanation": "Nie: spakowała ją w ostatniej chwili.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g6-6",
+     "statement": "Mama Tomka przynosiła im obiady przez tydzień.",
+     "answer": true,
+     "explanation": "Tak: przez cały pierwszy tydzień.",
+     "grammar_point": "czytanie"
+    },
+    {
+     "id": "g6-7",
+     "statement": "Według Agaty wizytę kontrolną można odwołać, jeśli dobrze się czujesz.",
+     "answer": false,
+     "explanation": "Nie: mówi „nie odwołuj jej, nawet jeśli dobrze się czujesz”.",
+     "grammar_point": "czytanie"
+    }
+   ]
+  },
+  {
+   "block_id": "g7",
+   "title": "7. Ułóż zdanie",
+   "exercise_type": "sentence-building",
+   "instruction": "Klikaj kawałki w dobrej kolejności.",
+   "items": [
+    {
+     "id": "g7-1",
+     "words": [
+      "powinnam była",
+      "wcześniej",
+      "spakować",
+      "torbę"
+     ],
+     "answer": "Powinnam była wcześniej spakować torbę.",
+     "prompt": "Powiedz, czego żałujesz: torba była spakowana za późno.",
+     "grammar_point": "powtorka",
+     "accept": [
+      "Powinnam była spakować torbę wcześniej."
+     ]
+    },
+    {
+     "id": "g7-2",
+     "words": [
+      "nie musisz",
+      "kupować",
+      "nowego",
+      "łóżeczka"
+     ],
+     "answer": "Nie musisz kupować nowego łóżeczka.",
+     "prompt": "Powiedz koleżance, że nowe łóżeczko nie jest konieczne.",
+     "grammar_point": "powtorka"
+    },
+    {
+     "id": "g7-3",
+     "words": [
+      "niech",
+      "Marek",
+      "przewija",
+      "dziecko",
+      "w nocy"
+     ],
+     "answer": "Niech Marek przewija dziecko w nocy.",
+     "prompt": "Powiedz, kto ma się zająć dzieckiem w nocy.",
+     "grammar_point": "powtorka",
+     "accept": [
+      "Niech Marek w nocy przewija dziecko.",
+      "W nocy niech Marek przewija dziecko."
+     ]
+    },
+    {
+     "id": "g7-4",
+     "words": [
+      "w przyszłym tygodniu",
+      "będę musiała",
+      "przełożyć",
+      "wizytę"
+     ],
+     "answer": "W przyszłym tygodniu będę musiała przełożyć wizytę.",
+     "prompt": "Powiedz, co będzie konieczne w przyszłym tygodniu.",
+     "grammar_point": "powtorka",
+     "accept": [
+      "Będę musiała przełożyć wizytę w przyszłym tygodniu."
+     ]
+    },
+    {
+     "id": "g7-5",
+     "words": [
+      "nie zapomnij",
+      "wziąć",
+      "dowodu",
+      "osobistego"
+     ],
+     "answer": "Nie zapomnij wziąć dowodu osobistego.",
+     "prompt": "Ostrzeż koleżankę przed wizytą.",
+     "grammar_point": "powtorka"
+    },
+    {
+     "id": "g7-6",
+     "words": [
+      "przez dwa tygodnie",
+      "prawie",
+      "nie spałam"
+     ],
+     "answer": "Przez dwa tygodnie prawie nie spałam.",
+     "prompt": "Opowiedz o pierwszych tygodniach z dzieckiem.",
+     "grammar_point": "powtorka",
+     "accept": [
+      "Prawie nie spałam przez dwa tygodnie."
+     ]
+    }
+   ]
+  }
+ ]
+}
