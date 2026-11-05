@@ -33,6 +33,12 @@ export type TrackerState = {
   error: string | null;
 };
 
+/**
+ * Master switch. Off until migration 0005_embed_results.sql is applied in Supabase —
+ * otherwise students would see a code field that can't work.
+ */
+export const EMBED_RESULTS_ENABLED = false;
+
 const LS_CODE = 'ww_student_code';
 const LS_NAME = 'ww_student_name';
 export const TEACHER_CODE = 'NAUCZYCIEL';
@@ -113,6 +119,8 @@ async function verify(code: string, save: boolean): Promise<boolean> {
           if (save) lsSet(LS_CODE, null);
           emit({ status: 'none', code: null, name: null });
         }
+      } else if (save) {
+        emit({ error: 'Błąd serwera, spróbuj później' });
       }
       return false;
     }
@@ -192,6 +200,7 @@ function flush(beacon = false) {
 
 /** Call on every check. Safe outside embeds (no-op). */
 export function trackAttempt(a: AttemptInput) {
+  if (!EMBED_RESULTS_ENABLED) return;
   const ctx = context();
   if (!ctx) return;
   init();

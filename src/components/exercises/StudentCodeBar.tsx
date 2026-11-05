@@ -2,7 +2,14 @@
 
 import { useState, useSyncExternalStore } from 'react';
 import { usePathname } from 'next/navigation';
-import { clearCode, getServerState, getState, setCode, subscribe } from '@/lib/embed-tracker';
+import {
+  EMBED_RESULTS_ENABLED,
+  clearCode,
+  getServerState,
+  getState,
+  setCode,
+  subscribe,
+} from '@/lib/embed-tracker';
 
 /** Embeds where answers are checked and recorded */
 const TRACKED = /^\/embed\/[^/]+\/(grammar|hw|exam|grammar-board)(\/|$)/;
@@ -17,7 +24,7 @@ export function StudentCodeBar() {
   const [busy, setBusy] = useState(false);
   const [editing, setEditing] = useState(false);
 
-  if (!TRACKED.test(pathname)) return null;
+  if (!EMBED_RESULTS_ENABLED || !TRACKED.test(pathname)) return null;
 
   if (s.status === 'teacher' && !editing) {
     return (
