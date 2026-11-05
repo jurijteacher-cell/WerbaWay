@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import type { GrammarPyramidExercise } from '@/content/queue-types';
 import { answersMatch } from '@/lib/answer-match';
 import { SentenceBuilding } from './SentenceBuilding';
@@ -62,6 +62,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
   }, [data.levels, blockIds]);
 
   const [levelIdx, setLevelIdx] = useState(0);
+  const tabsRef = useRef<HTMLParagraphElement>(null);
   const [fillAnswers, setFillAnswers] = useState<Record<string, string>>({});
   const [matchLeft, setMatchLeft] = useState<Record<string, string | null>>({});
   const [matchPairs, setMatchPairs] = useState<Record<string, Record<string, string>>>({});
@@ -100,6 +101,13 @@ export function GrammarPyramid({ data, blockIds }: Props) {
 
   const single = levels.length <= 1;
 
+  const goTo = (i: number) => {
+    setLevelIdx(i);
+    requestAnimationFrame(() =>
+      tabsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    );
+  };
+
   return (
     <div>
       <header className="nb-head">
@@ -112,7 +120,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
           </p>
         ) : null}
         {!single ? (
-          <p className="nb-note">
+          <p className="nb-note" ref={tabsRef} style={{ scrollMarginTop: 12 }}>
             Poziom {level.level}: {level.name.replace(/^\d+[\.\)]\s*/, '')}
           </p>
         ) : null}
@@ -384,6 +392,23 @@ export function GrammarPyramid({ data, blockIds }: Props) {
             );
           })}
       </div>
+
+      {!single ? (
+        <div className="nb-row" style={{ marginTop: 16, justifyContent: 'space-between' }}>
+          {levelIdx > 0 ? (
+            <button type="button" className="nb-btn ghost" onClick={() => goTo(levelIdx - 1)}>
+              ← Poprzednia
+            </button>
+          ) : (
+            <span />
+          )}
+          {levelIdx < levels.length - 1 ? (
+            <button type="button" className="nb-btn" onClick={() => goTo(levelIdx + 1)}>
+              Następna →
+            </button>
+          ) : null}
+        </div>
+      ) : null}
     </div>
   );
 }

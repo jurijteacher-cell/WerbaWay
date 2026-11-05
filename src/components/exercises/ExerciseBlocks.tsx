@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { answersMatch, type ItemState } from '@/lib/answer-match';
 import { AudioCassette } from './AudioCassette';
 
@@ -76,6 +76,7 @@ export function ExerciseBlocks({
   }, [allBlocks, blockIds]);
 
   const [active, setActive] = useState(blocks[0]?.block_id ?? '');
+  const tabsRef = useRef<HTMLDivElement>(null);
   const [states, setStates] = useState<Record<string, ItemState>>({});
   const [values, setValues] = useState<Record<string, string>>({});
   const [fails, setFails] = useState<Record<string, number>>({});
@@ -115,7 +116,7 @@ export function ExerciseBlocks({
       ) : null}
 
       {blocks.length > 1 ? (
-        <div className="nb-idx" role="tablist">
+        <div className="nb-idx" role="tablist" ref={tabsRef} style={{ scrollMarginTop: 12 }}>
           {blocks.map((b) => (
             <button
               key={b.block_id}
@@ -450,6 +451,34 @@ export function ExerciseBlocks({
           </section>
         );
       })}
+
+      {blocks.length > 1
+        ? (() => {
+            const idx = Math.max(0, blocks.findIndex((b) => b.block_id === active));
+            const goTo = (i: number) => {
+              setActive(blocks[i].block_id);
+              requestAnimationFrame(() =>
+                tabsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+              );
+            };
+            return (
+              <div className="nb-row" style={{ marginTop: 16, justifyContent: 'space-between' }}>
+                {idx > 0 ? (
+                  <button type="button" className="nb-btn ghost" onClick={() => goTo(idx - 1)}>
+                    ← Poprzednia
+                  </button>
+                ) : (
+                  <span />
+                )}
+                {idx < blocks.length - 1 ? (
+                  <button type="button" className="nb-btn" onClick={() => goTo(idx + 1)}>
+                    Następna →
+                  </button>
+                ) : null}
+              </div>
+            );
+          })()
+        : null}
     </div>
   );
 }
