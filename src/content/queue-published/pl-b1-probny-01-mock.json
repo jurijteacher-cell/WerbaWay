@@ -1,0 +1,349 @@
+{
+  "lesson_id": "pl-b1-probny-01",
+  "exercise_type": "mock-exam",
+  "exam_label": "Egzamin 1",
+  "title": "Egzamin próbny B1 · 1",
+  "subtitle": "Rozumienie tekstów pisanych i poprawność gramatyczna",
+  "source": "B. Wilczyńska, „Polski na B1”, Egzamin 1",
+  "pass_ratio": 0.6,
+  "sections": [
+    {
+      "id": "rt",
+      "tab": "Czytanie",
+      "title": "Rozumienie tekstów pisanych",
+      "minutes": 40,
+      "tasks": [
+        {
+          "id": "rt1",
+          "title": "Zadanie 1",
+          "layout": "mc-passages",
+          "instruction": "Proszę przeczytać fragmenty tekstów i zaznaczyć prawidłową odpowiedź.",
+          "points_per_item": 1,
+          "example": {
+            "passage": "Na igrzyskach olimpijskich w Tokio polska sztafeta mieszana zdobyła złoty medal w biegu 4 razy 400 metrów. Jednocześnie pobiła rekord olimpijski w tej dyscyplinie. To drugi medal, który Polska wywalczyła do tej pory na letniej olimpiadzie w Japonii.",
+            "stem": "Z tego tekstu wynika, że",
+            "options": [
+              "nikt wcześniej na olimpiadzie nie pobiegł w sztafecie mieszanej tak dobrze jak Polacy w Tokio.",
+              "na igrzyskach w Tokio Polska nie zdobyła do tej pory medali.",
+              "Polacy zajęli drugie miejsce w biegu 4 razy 400 metrów."
+            ],
+            "answer": "a"
+          },
+          "items": [
+            {
+              "id": "rt1-1",
+              "passage": "Powstanie nowe centrum Warszawy? Kilka firm złożyło oferty na zaprojektowanie nowego wyglądu Alei Jerozolimskich. Jak podaje Urząd Miasta, planowane jest zwężenie Alei, budowa ścieżek rowerowych i posadzenie nowych drzew. Niestety zmniejszy się liczba miejsc parkingowych.",
+              "stem": "Z tego tekstu wynika, że",
+              "options": [
+                "przebudowa Alei Jerozolimskich będzie korzystna dla kierowców i rowerzystów.",
+                "przy Alejach Jerozolimskich będzie więcej zieleni.",
+                "przy Alejach Jerozolimskich będzie więcej miejsc do parkowania."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "rt1-2",
+              "passage": "Pandemia koronawirusa sprawiła, że więcej ludzi niż kiedyś pracuje zdalnie. Jak podają badacze, praca z domu nie wpływa negatywnie na produktywność większości pracowników. Ponad 70% ankietowanych mówi, że nie chce wracać do biur. Dzięki pracy zdalnej oszczędzają czas, więc mogą łatwiej pogodzić życie zawodowe z osobistym.",
+              "stem": "Z tego tekstu wynika, że",
+              "options": [
+                "praca zdalna jest efektywniejsza niż praca z biura.",
+                "większość ankietowanych chce dalej pracować zdalnie.",
+                "70% pracowników chce powrotu do biur."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "rt1-3",
+              "passage": "Dubaj – jedno z najbogatszych miast świata – przyciąga tłumy turystów. Jeszcze 60 lat temu była to nieduża miejscowość, która rozwinęła się dzięki odkryciu złóż ropy naftowej. Dziś można tu zobaczyć najwyższy budynek na świecie i jedną z największych na ziemi sztucznych wysp w kształcie palmy.",
+              "stem": "Z tego tekstu wynika, że",
+              "options": [
+                "Dubaj stał się popularny wśród turystów ponad pół wieku temu.",
+                "w Dubaju można zobaczyć ogromną wyspę palmową.",
+                "wyspa palmowa w Dubaju to archipelag 60 wysp."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "rt1-4",
+              "passage": "Ceny mieszkań na polskim rynku ciągle rosną. Mimo to banki udzielają coraz więcej kredytów hipotecznych. Wiele osób decyduje się na kupno mieszkania, ponieważ traktują to jako inwestycję – planują później drożej je sprzedać lub wynająć. Inni czekają z zakupem, aż ceny spadną.",
+              "stem": "Z tego tekstu wynika, że",
+              "options": [
+                "dziś trudno jest kupić mieszkanie.",
+                "więcej osób czeka z zakupem mieszkania, niż kupuje.",
+                "wielu nabywców chce zarobić na mieszkaniach."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "rt1-5",
+              "passage": "Ocieplenie klimatu jest coraz większym zagrożeniem dla naszej planety. Przyczynia się między innymi do topnienia lodowców. Z powodu podnoszenia się poziomu wód rośnie ryzyko powodzi. W przyszłości będzie też więcej takich zjawisk atmosferycznych jak burze, grad i tornada.",
+              "stem": "Z tego tekstu wynika, że",
+              "options": [
+                "zmiany klimatyczne sprawiają, że ryzyko powodzi jest większe.",
+                "poziom wód obniża się z powodu ocieplenia klimatu.",
+                "pogoda na ziemi będzie stabilniejsza za kilka lat."
+              ],
+              "answer": "a"
+            }
+          ]
+        },
+        {
+          "id": "rt2",
+          "title": "Zadanie 2",
+          "layout": "true-false",
+          "instruction": "Proszę przeczytać tekst, a następnie zaznaczyć: TAK – gdy zdanie jest zgodne z tekstem, NIE – gdy nie jest zgodne z tekstem.",
+          "points_per_item": 1,
+          "passage_title": "Nie tylko pod palmą",
+          "passage": "„Majorka. Nie tylko pod palmą” to najnowsza książka Anny Klary Majewskiej. Autorka pokazuje w niej głównie mało znane zakątki wyspy oddalone od masowej turystyki. Poszukuje śladów pozostawionych przez Rzymian, Arabów i chrześcijan. Pisze o postaciach historycznych, które miały duży wpływ na kulturę Majorki, ale przede wszystkim mówi o tym, jacy są współcześni Majorkańczycy. Interesuje ją, jak żyją, świętują i co jedzą. Majewska pisze o lokalnych fiestach, targach i zwyczajach oraz o majorkańskiej faunie i florze.\n\nZ książki dowiadujemy się, że na ulicach Majorki usłyszymy hiszpański, kataloński i majorkański. To na tej wyspie możemy posmakować ryżu po arabsku, lokalnych pączków, likieru migdałowego i dobrego wina oraz poczuć zapach uprawianych tu pomarańczy i cytryn. Majewska oprowadza nas po pięknych miasteczkach, takich jak Fornalutx, Deià, Sóller czy Valldemossa – w tym ostatnim swoje ślady pozostawił Fryderyk Chopin. Zresztą nie tylko słynny polski kompozytor był związany z balearską wyspą. Kto jeszcze? Przeczytajcie niecodzienny przewodnik Majewskiej i przekonajcie się sami!\n\nWażną częścią książki są przepisy kulinarne, które inspirują do samodzielnego gotowania. Dzięki temu możemy poczuć smaki i zapachy wyspy w swoim domu. Tradycyjna zupa rybna, chlebek figowy czy sorbet z migdałów – to wszystko można przygotować we własnej kuchni.\n\n„Majorka. Nie tylko pod palmą” to literacka podróż, która pozostawia piękne wspomnienia.",
+          "example": { "text": "Majewska pisze głównie o miejscach popularnych wśród turystów.", "answer": "NIE" },
+          "items": [
+            { "id": "rt2-1", "text": "Autorka pisze o historii Majorki.", "answer": "TAK" },
+            { "id": "rt2-2", "text": "Głównym tematem książki jest życie dzisiejszych mieszkańców Majorki.", "answer": "TAK" },
+            { "id": "rt2-3", "text": "Autorka pisze o majorkańskim likierze, winie i wódce.", "answer": "NIE" },
+            { "id": "rt2-4", "text": "Autorka podaje, że na Majorce rosną cytrusy.", "answer": "TAK" },
+            { "id": "rt2-5", "text": "Majewska mówi, że z Majorką byli związani sławni ludzie.", "answer": "TAK" },
+            { "id": "rt2-6", "text": "Książka zawiera propozycje majorkańskich dań.", "answer": "TAK" },
+            { "id": "rt2-7", "text": "Lektura książki Majewskiej jest jak wycieczka na Majorkę.", "answer": "TAK" }
+          ]
+        },
+        {
+          "id": "rt3",
+          "title": "Zadanie 3",
+          "layout": "cloze",
+          "instruction": "Proszę przeczytać tekst i dopasować usunięte z niego fragmenty (A–H). Jeden fragment jest niepotrzebny.",
+          "points_per_item": 1,
+          "passage_title": "Równowaga w życiu",
+          "bank": [
+            { "key": "A", "text": "poza godzinami pracy" },
+            { "key": "B", "text": "oddzielić pracę od życia osobistego" },
+            { "key": "C", "text": "mamy wtedy poczucie" },
+            { "key": "D", "text": "szybciej niż kiedyś" },
+            { "key": "E", "text": "nic się nie stanie" },
+            { "key": "F", "text": "na brak czasu" },
+            { "key": "G", "text": "odpoczynek jest ważniejszy" },
+            { "key": "H", "text": "brakuje nam czasu" }
+          ],
+          "text": "W dzisiejszych czasach dużo spraw możemy załatwić {{ex}}. Robimy zakupy i płacimy rachunki online, komunikujemy się przez telefon i internet, a mimo to ciągle narzekamy {{1}}. Trudno jest nam pogodzić życie osobiste z zawodowym. Jak znaleźć między nimi równowagę?\n\nPrzede wszystkim warto zadbać o higienę pracy. Szef lub szefowa i współpracownicy powinni wiedzieć, że nie odpisujemy na maile i nie odbieramy telefonów {{2}}. Dzięki temu po wyjściu z biura będzie nam łatwiej zapomnieć o obowiązkach. Jeśli zabieramy pracę do domu, nic dziwnego, że {{3}} dla rodziny i przyjaciół. Warto więc wyraźnie {{4}}.\n\nDom i rodzina to również wymagające sfery życia. Trzeba robić zakupy, przygotowywać posiłki, zajmować się dziećmi, sprzątać dom, robić pranie – lista zadań do zrobienia nigdy się nie kończy. Na tym polu warto czasami odpuścić – {{5}}, jeśli pranie zrobimy następnego dnia albo zamówimy na obiad pizzę. {{6}} niż idealnie wysprzątane mieszkanie. Czasami trzeba iść na kompromis i zrezygnować z perfekcjonizmu. Gdy jesteśmy zrelaksowani, możemy osiągnąć większy spokój. {{7}}, że w naszym życiu panuje harmonia.",
+          "example": { "answer": "D" },
+          "gaps": [
+            { "id": "rt3-1", "n": 1, "kind": "bank", "answer": "F" },
+            { "id": "rt3-2", "n": 2, "kind": "bank", "answer": "A" },
+            { "id": "rt3-3", "n": 3, "kind": "bank", "answer": "H" },
+            { "id": "rt3-4", "n": 4, "kind": "bank", "answer": "B" },
+            { "id": "rt3-5", "n": 5, "kind": "bank", "answer": "E" },
+            { "id": "rt3-6", "n": 6, "kind": "bank", "answer": "G" },
+            { "id": "rt3-7", "n": 7, "kind": "bank", "answer": "C" }
+          ]
+        },
+        {
+          "id": "rt4",
+          "title": "Zadanie 4",
+          "layout": "matching",
+          "instruction": "Proszę połączyć tytuły z kolumny I z fragmentami tekstów z kolumny II. Jeden fragment jest niepotrzebny.",
+          "points_per_item": 1,
+          "passage_title": "Jak przygotować się do podróży w tropiki",
+          "right": [
+            { "key": "A", "text": "W tropikach narażamy się przede wszystkim na choroby zakaźne i zatrucia bakteryjne, ale też na ugryzienia przez zwierzęta czy udar słoneczny." },
+            { "key": "B", "text": "Podróż do krajów tropikalnych to emocjonująca przygoda, ale trzeba być świadomym różnych niebezpieczeństw, które zagrażają zdrowiu i życiu." },
+            { "key": "C", "text": "Jeśli zauważysz u siebie niepokojące objawy, takie jak gorączka, osłabienie, ból mięśni i stawów, od razu szukaj pomocy, ponieważ to może być malaria." },
+            { "key": "D", "text": "Przed wyjazdem pamiętaj o skompletowaniu zestawu niezbędnych leków." },
+            { "key": "E", "text": "W krajach tropikalnych trzeba uważać na komary, które przenoszą malarię. Na tę chorobę umiera wielu ludzi i nie ma na nią szczepionki dla podróżnych, więc należy pamiętać o profilaktyce – stosowaniu środków na komary i spaniu pod moskitierą." },
+            { "key": "F", "text": "Przed wyjazdem porozmawiaj z lekarzem medycyny podróży, który poinformuje cię o ryzyku dotyczącym kraju, do którego jedziesz. Skieruje cię także na odpowiednie szczepienia." },
+            { "key": "G", "text": "W tropikach lepiej być aktywnym rano i wieczorem. W ciągu dnia ryzyko przegrzania organizmu jest zbyt duże." },
+            { "key": "H", "text": "Ta rada wydaje się oczywista, ale warto ją przypomnieć – często myj ręce i miej przy sobie płyn dezynfekujący." }
+          ],
+          "example": { "text": "Wiedza o zagrożeniach", "answer": "B" },
+          "items": [
+            { "id": "rt4-1", "text": "Higiena to podstawa", "answer": "H" },
+            { "id": "rt4-2", "text": "Zalecenia od specjalisty", "answer": "F" },
+            { "id": "rt4-3", "text": "Apteczka pierwszej pomocy", "answer": "D" },
+            { "id": "rt4-4", "text": "Liczne niebezpieczeństwa", "answer": "A" },
+            { "id": "rt4-5", "text": "Jedna z najgroźniejszych chorób", "answer": "E" },
+            { "id": "rt4-6", "text": "Natychmiastowe działanie", "answer": "C" },
+            { "id": "rt4-7", "text": "Niebezpieczny upał", "answer": "G" }
+          ]
+        },
+        {
+          "id": "rt5",
+          "title": "Zadanie 5",
+          "layout": "cloze",
+          "instruction": "Proszę wybrać najlepszą spośród możliwości podanych w nawiasach.",
+          "points_per_item": 0.5,
+          "passage_title": "Muzeum Emigracji w Gdyni",
+          "text": "Dziś poza {{ex}} naszego kraju żyje około 20 milionów osób polskiego pochodzenia. Historię emigracji Polaków do różnych państw świata można poznać w Muzeum Emigracji w Gdyni. {{1}} pomaga nam zrozumieć, dlaczego nasi rodacy wyjeżdżali z Polski. Często {{2}} lepszego życia i wolności. W gdyńskim muzeum możemy poznać ich osiągnięcia, bo niektórzy stali się {{3}} w swoich nowych ojczyznach.\n\nEkspozycja przedstawia Wielką Emigrację z pierwszej połowy XIX wieku, masowe wyjazdy do Ameryki, a także {{4}} Polaków z kraju w czasie drugiej wojny światowej. W trakcie zwiedzania możemy się {{5}}, jak wyglądała podróż emigrantów za ocean.\n\nW muzeum można również {{6}} statek „Batory w budowie”. Celem projektu jest skonstruowanie największej makiety statku pasażerskiego na {{7}}. Warto zatrzymać się w muzeum chwilę {{8}}, aby wysłuchać wspomnień polskich emigrantów.",
+          "example": { "options": ["granicami", "zagranicą", "mapą"], "answer": "granicami" },
+          "gaps": [
+            { "id": "rt5-1", "n": 1, "kind": "options", "options": ["Eksponaty", "Wystawa", "Widok"], "answer": "Wystawa" },
+            { "id": "rt5-2", "n": 2, "kind": "options", "options": ["znajdowali", "szukali", "marzyli"], "answer": "szukali" },
+            { "id": "rt5-3", "n": 3, "kind": "options", "options": ["sławni", "poważni", "historyczni"], "answer": "sławni" },
+            { "id": "rt5-4", "n": 4, "kind": "options", "options": ["ucieczkę", "bieg", "wycieczkę"], "answer": "ucieczkę" },
+            { "id": "rt5-5", "n": 5, "kind": "options", "options": ["wykonać", "zrozumieć", "przekonać"], "answer": "przekonać" },
+            { "id": "rt5-6", "n": 6, "kind": "options", "options": ["widzieć", "zobaczyć", "wiedzieć"], "answer": "zobaczyć" },
+            { "id": "rt5-7", "n": 7, "kind": "options", "options": ["globusie", "świecie", "historii"], "answer": "świecie" },
+            { "id": "rt5-8", "n": 8, "kind": "options", "options": ["dłużej", "więcej", "bardziej"], "answer": "dłużej" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pg",
+      "tab": "Gramatyka",
+      "title": "Poprawność gramatyczna",
+      "minutes": 45,
+      "tasks": [
+        {
+          "id": "pg1",
+          "title": "Zadanie 1",
+          "topic": "odmiana rzeczowników, przymiotników i zaimków",
+          "layout": "cloze",
+          "instruction": "Proszę wybrać poprawne formy wyrazów podanych w nawiasach.",
+          "points_per_item": 0.5,
+          "passage_title": "Jak schudnąć",
+          "text": "Odchudzanie nie jest proste. W {{ex}} o utratę wagi warto skupić się na dwóch rzeczach – odżywianiu i ćwiczeniach. Jeśli chodzi o {{1}}, trzeba zjadać mniej kalorii, niż się spala. Niestety wtedy często chodzimy {{2}}, bo okazuje się, że wcześniej jedliśmy po prostu za dużo. Przy wyborze diety warto skonsultować się z {{3}} i nie sugerować się modą, aby {{4}} nie zaszkodzić.\n\nCo jeść i pić, żeby schudnąć? Specjaliści zalecają, aby ograniczyć węglowodany oczyszczone, czyli białą mąkę, biały ryż oraz makaron. Oczywiście lepiej nie jeść {{5}} i żywności przetworzonej. W {{6}} pomaga jedzenie niskokalorycznych warzyw i owoców oraz picie dużej ilości wody. Gazowane i kolorowe napoje są zakazane, ponieważ zawierają dużo {{7}}. Jednak dieta to nie wszystko, trzeba też ćwiczyć. Jeśli nie wiesz, jaki {{8}} sportu wybrać, pomyśl, co sprawia ci przyjemność – pływanie, bieganie, a może ćwiczenia na siłowni? {{9}} trening to podstawa. Taki sposób odchudzania jest dobry dla {{10}}.",
+          "example": { "options": ["walkę", "walce", "walką"], "answer": "walce" },
+          "gaps": [
+            { "id": "pg1-1", "n": 1, "kind": "options", "options": ["dietę", "diecie", "dietą"], "answer": "dietę" },
+            { "id": "pg1-2", "n": 2, "kind": "options", "options": ["głodnymi", "głodni", "głodnych"], "answer": "głodni" },
+            { "id": "pg1-3", "n": 3, "kind": "options", "options": ["dietetykiem", "dietetyka", "dietetykowi"], "answer": "dietetykiem" },
+            { "id": "pg1-4", "n": 4, "kind": "options", "options": ["sobą", "sobie", "siebie"], "answer": "sobie" },
+            { "id": "pg1-5", "n": 5, "kind": "options", "options": ["słodyczy", "słodycze", "słodyczami"], "answer": "słodyczy" },
+            { "id": "pg1-6", "n": 6, "kind": "options", "options": ["odchudzania", "odchudzaniem", "odchudzaniu"], "answer": "odchudzaniu" },
+            { "id": "pg1-7", "n": 7, "kind": "options", "options": ["cukrem", "cukrze", "cukru"], "answer": "cukru" },
+            { "id": "pg1-8", "n": 8, "kind": "options", "options": ["rodzaj", "rodzajem", "rodzaju"], "answer": "rodzaj" },
+            { "id": "pg1-9", "n": 9, "kind": "options", "options": ["Regularny", "Regularnym", "Regularnymi"], "answer": "Regularny" },
+            { "id": "pg1-10", "n": 10, "kind": "options", "options": ["każdą", "każdego", "każdym"], "answer": "każdego" }
+          ]
+        },
+        {
+          "id": "pg2",
+          "title": "Zadanie 2",
+          "topic": "spójniki",
+          "layout": "cloze",
+          "instruction": "Proszę uzupełnić tekst wyrazami z ramki. Jeden wyraz jest niepotrzebny.",
+          "points_per_item": 0.5,
+          "bank_words": ["bo", "że", "czy", "chociaż", "więc", "żeby", "i"],
+          "text": "Mówi się, {{ex}} pies jest najlepszym przyjacielem człowieka {{1}} chyba coś w tym jest. Sam mam dwa psy – Maksa i Plamkę. Maks jest spokojny, {{2}} czasami potrafi zdenerwować się na Plamkę. Ona ciągle chce się bawić, {{3}} jest jeszcze szczeniakiem. Mieszkamy z rodziną w dużym domu z ogrodem, {{4}} psy mają gdzie biegać. Nie wiem, {{5}} zdecydowałbym się na nie, gdybyśmy nie mieli tyle miejsca.",
+          "example": { "answer": "że" },
+          "gaps": [
+            { "id": "pg2-1", "n": 1, "kind": "bank", "answer": "i" },
+            { "id": "pg2-2", "n": 2, "kind": "bank", "answer": "chociaż" },
+            { "id": "pg2-3", "n": 3, "kind": "bank", "answer": "bo" },
+            { "id": "pg2-4", "n": 4, "kind": "bank", "answer": "więc" },
+            { "id": "pg2-5", "n": 5, "kind": "bank", "answer": "czy" }
+          ]
+        },
+        {
+          "id": "pg3",
+          "title": "Zadanie 3",
+          "topic": "stopniowanie przymiotników i przysłówków",
+          "layout": "cloze",
+          "instruction": "Proszę wybrać poprawne formy wyrazów podanych w nawiasach.",
+          "points_per_item": 0.5,
+          "text": "Uwaga na upały! W {{ex}} dniach czekają nas rekordowo wysokie temperatury. {{1}} będzie na południu Polski, gdzie słupek rtęci przekroczy 34 stopnie Celsjusza. Upałom będą towarzyszyć burze, {{2}} na zachodzie kraju. Szczególną ostrożność muszą zachować osoby {{3}} i dzieci. Powinny pić {{4}} niż zwykle i nie wychodzić z domu między jedenastą a szesnastą. Tegoroczny lipiec jest {{5}} upalny od dziesięciu lat.",
+          "example": { "options": ["najbliżej", "najbliższe", "najbliższych"], "answer": "najbliższych" },
+          "gaps": [
+            { "id": "pg3-1", "n": 1, "kind": "options", "options": ["Najgoręcej", "Najgorętszy", "Goręcej"], "answer": "Najgoręcej" },
+            { "id": "pg3-2", "n": 2, "kind": "options", "options": ["najsilniejsze", "najsilniej", "najsilniejszym"], "answer": "najsilniejsze" },
+            { "id": "pg3-3", "n": 3, "kind": "options", "options": ["starszymi", "najstarszych", "starsze"], "answer": "starsze" },
+            { "id": "pg3-4", "n": 4, "kind": "options", "options": ["więcej", "najwięcej", "większy"], "answer": "więcej" },
+            { "id": "pg3-5", "n": 5, "kind": "options", "options": ["bardziej", "najbardziej", "bardzo"], "answer": "najbardziej" }
+          ]
+        },
+        {
+          "id": "pg4",
+          "title": "Zadanie 4",
+          "topic": "czas teraźniejszy i przyszły",
+          "layout": "cloze",
+          "instruction": "Proszę wpisać poprawne formy wyrazów podanych w nawiasach (czas teraźniejszy lub przyszły).",
+          "points_per_item": 0.5,
+          "text": "Ania i Piotrek {{ex}} (planować) urlop w Chorwacji. „Spędzimy (spędzić) trochę czasu nad morzem, ale chcemy też pozwiedzać – mówi Ania. – Co roku {{1}} (jeździć) nad polskie morze. Pomyśleliśmy, że w te wakacje {{2}} (zmienić) kierunek. Bałtyk zrobił się drogi i za zagraniczny wyjazd wcale nie {{3}} (zapłacić – my) więcej niż za wakacje w Polsce”. Piotrek {{4}} (cieszyć się), że wybrali akurat Chorwację. „Jestem miłośnikiem kultury śródziemnomorskiej – mówi. – Znam Włochy i Hiszpanię, ale w Chorwacji jeszcze nie byłem”.\n\nOrganizacją podróży zajmuje się Ania. Kupiła już bilety lotnicze, teraz {{5}} (zaczynać) szukać noclegów i zastanawia się, co zwiedzić. „Będziemy w Chorwacji dwa tygodnie. To długo, ale tak planuję wyjazd, żebyśmy mieli dużo czasu wolnego. Na urlopie nie {{6}} (lubić – my) wstawać wcześnie rano” – wyznaje Ania. Piotrek dodaje: „Na pewno {{7}} (popływać – my) trochę żaglówką i {{8}} (opalać się – my). Myślę, że codziennie {{9}} (jeść – my) w restauracjach, ale może kilka razy sami {{10}} (ugotować – my) coś z lokalnych produktów. W kwestii wyboru miejsc do zwiedzania ufam Ani”.",
+          "example": { "answer": "planują" },
+          "gaps": [
+            { "id": "pg4-1", "n": 1, "kind": "input", "accept": ["jeździmy"] },
+            { "id": "pg4-2", "n": 2, "kind": "input", "accept": ["zmienimy"] },
+            { "id": "pg4-3", "n": 3, "kind": "input", "accept": ["zapłacimy"] },
+            { "id": "pg4-4", "n": 4, "kind": "input", "accept": ["cieszy się"] },
+            { "id": "pg4-5", "n": 5, "kind": "input", "accept": ["zaczyna"] },
+            { "id": "pg4-6", "n": 6, "kind": "input", "accept": ["lubimy"] },
+            { "id": "pg4-7", "n": 7, "kind": "input", "accept": ["popływamy"] },
+            { "id": "pg4-8", "n": 8, "kind": "input", "display": "będziemy się opalać / będziemy się opalali", "accept": ["będziemy się opalać", "będziemy się opalali", "będziemy opalać się", "będziemy opalali się"] },
+            { "id": "pg4-9", "n": 9, "kind": "input", "display": "będziemy jeść / będziemy jedli", "accept": ["będziemy jeść", "będziemy jedli"] },
+            { "id": "pg4-10", "n": 10, "kind": "input", "accept": ["ugotujemy"] }
+          ]
+        },
+        {
+          "id": "pg5",
+          "title": "Zadanie 5",
+          "topic": "pytania",
+          "layout": "questions",
+          "instruction": "Proszę zapytać o podkreśloną część zdania.",
+          "points_per_item": 0.5,
+          "example": { "sentence": "Edyta wyjechała na urlop __ze znajomymi__.", "answer": "Z kim", "after": "Edyta wyjechała na urlop?", "reply": "Ze znajomymi." },
+          "items": [
+            { "id": "pg5-1", "sentence": "Planuję mieszkać w Kanadzie __dwa lata__.", "after": "planujesz mieszkać w Kanadzie?", "reply": "Dwa lata.", "accept": ["Jak długo", "Ile czasu", "Ile lat", "Przez ile lat", "Na jak długo", "Na ile lat", "Przez jak długi czas", "Przez jaki czas"] },
+            { "id": "pg5-2", "sentence": "Na egzaminie pisemnym wybrałem zestaw __numer 3__.", "after": "zestaw wybrałeś na egzaminie pisemnym?", "reply": "Numer 3.", "accept": ["Który"] },
+            { "id": "pg5-3", "sentence": "Spotkamy się __pod pomnikiem Kopernika__.", "after": "się spotkamy?", "reply": "Pod pomnikiem Kopernika.", "accept": ["Gdzie"] },
+            { "id": "pg5-4", "sentence": "Ten sklep jest czynny __od dziewiątej trzydzieści__.", "after": "jest czynny ten sklep?", "reply": "Od dziewiątej trzydzieści.", "accept": ["Od której", "Od której godziny"] },
+            { "id": "pg5-5", "sentence": "To są prace __znanej malarki__.", "after": "to są prace?", "reply": "Znanej malarki.", "accept": ["Czyje"] }
+          ]
+        },
+        {
+          "id": "pg6",
+          "title": "Zadanie 6",
+          "topic": "przekształcenia zdań",
+          "layout": "transform",
+          "instruction": "Proszę użyć wyrazu w nawiasie i przekształcić zdanie tak, by miało ten sam sens.",
+          "points_per_item": 1,
+          "example": { "sentence": "Dostałam propozycję pracy za granicą.", "keyword": "zaproponowali", "answer": "Zaproponowali mi pracę za granicą." },
+          "items": [
+            { "id": "pg6-1", "sentence": "Nie podoba mi się ten hotel.", "keyword": "zadowolony", "model": "Nie jestem zadowolony z tego hotelu.", "accept": ["Nie jestem zadowolony z tego hotelu", "Nie jestem zadowolona z tego hotelu", "Z tego hotelu nie jestem zadowolony", "Z tego hotelu nie jestem zadowolona", "Nie jestem z tego hotelu zadowolony", "Nie jestem z tego hotelu zadowolona"] },
+            { "id": "pg6-2", "sentence": "Zapiszę się na kurs hiszpańskiego.", "keyword": "zamiar", "model": "Mam zamiar zapisać się na kurs hiszpańskiego.", "accept": ["Mam zamiar zapisać się na kurs hiszpańskiego", "Mam zamiar się zapisać na kurs hiszpańskiego", "Mam zamiar zapisać się na kurs języka hiszpańskiego", "Mam zamiar się zapisać na kurs języka hiszpańskiego"] },
+            { "id": "pg6-3", "sentence": "Mam wrażenie, że twoi rodzice mnie nie lubią.", "keyword": "wydaje", "model": "Wydaje mi się, że twoi rodzice mnie nie lubią.", "accept": ["Wydaje mi się, że twoi rodzice mnie nie lubią", "Wydaje mi się, że twoi rodzice nie lubią mnie"] },
+            { "id": "pg6-4", "sentence": "Marzę o podróży do Chin.", "keyword": "marzeniem", "model": "Podróż do Chin jest moim marzeniem.", "accept": ["Podróż do Chin jest moim marzeniem", "Moim marzeniem jest podróż do Chin", "Moim marzeniem jest podróżować do Chin", "Moim marzeniem jest podróż do Chin", "Podróż do Chin to moje marzenie"] },
+            { "id": "pg6-5", "sentence": "Zwiedzamy miasto z przewodnikiem.", "keyword": "pokazuje", "model": "Przewodnik pokazuje nam miasto.", "accept": ["Przewodnik pokazuje nam miasto", "Miasto pokazuje nam przewodnik"] }
+          ]
+        },
+        {
+          "id": "pg7",
+          "title": "Zadanie 7",
+          "topic": "aspekt i tryby",
+          "layout": "cloze",
+          "instruction": "Proszę wybrać poprawną formę wyrazów podanych w nawiasach.",
+          "points_per_item": 0.5,
+          "text": "Magda: Jedziesz do Japonii? Lepiej {{ex}} z różnicami kulturowymi, żeby nie zrobić nic głupiego!\nJarek: Masz rację. Ty świetnie znasz Japonię. {{1}} mi coś?\nMagda: Jasne. {{2}}, że zasady dotyczą różnych dziedzin życia. Opiszę ci kilka najważniejszych. Jeśli chodzi o posiłki, nie {{3}} i nie {{4}} na ulicy. Kiedy wchodzisz do czyjegoś domu, {{5}} buty. Ta sama zasada obowiązuje w świątyniach, szkołach i szpitalach. Gdy czekasz na pociąg, autobus albo metro, {{6}} w kolejce. W środkach komunikacji miejskiej nie {{7}} głośno przez telefon. Japończycy uważają to za nieuprzejme. W taksówkach i restauracjach nie {{8}} napiwków. Opłata za obsługę jest zwykle doliczana do rachunku.\nJarek: Dzięki za rady! Słuchaj, a może {{9}} mnie kilku słów po japońsku?\nMagda: Nie ma sprawy! {{10}} się jutro po południu, to zdążę przygotować krótką lekcję.\nJarek: Dzięki!",
+          "example": { "options": ["zapoznaj się", "zapoznaję się", "niech się zapozna"], "answer": "zapoznaj się" },
+          "gaps": [
+            { "id": "pg7-1", "n": 1, "kind": "options", "options": ["Radziłaby", "Doradzi", "Doradziłabyś"], "answer": "Doradziłabyś" },
+            { "id": "pg7-2", "n": 2, "kind": "options", "options": ["Pamiętaj", "Zapamiętajcie", "Pamięta"], "answer": "Pamiętaj" },
+            { "id": "pg7-3", "n": 3, "kind": "options", "options": ["zjedz", "zje", "jedz"], "answer": "jedz" },
+            { "id": "pg7-4", "n": 4, "kind": "options", "options": ["wypij", "pije", "pij"], "answer": "pij" },
+            { "id": "pg7-5", "n": 5, "kind": "options", "options": ["zdejmuje", "zdejmuj", "zdjąłbyś"], "answer": "zdejmuj" },
+            { "id": "pg7-6", "n": 6, "kind": "options", "options": ["ustawisz się", "ustawiłbyś się", "ustaw się"], "answer": "ustaw się" },
+            { "id": "pg7-7", "n": 7, "kind": "options", "options": ["rozmawiaj", "porozmawiaj", "porozmawia"], "answer": "rozmawiaj" },
+            { "id": "pg7-8", "n": 8, "kind": "options", "options": ["zostawiaj", "zostaw", "zostawisz"], "answer": "zostawiaj" },
+            { "id": "pg7-9", "n": 9, "kind": "options", "options": ["uczyłabyś", "nauczyłbym", "nauczyłabyś"], "answer": "nauczyłabyś" },
+            { "id": "pg7-10", "n": 10, "kind": "options", "options": ["Spotkajcie", "Spotkaj", "Spotkajmy"], "answer": "Spotkajmy" }
+          ]
+        },
+        {
+          "id": "pg8",
+          "title": "Zadanie 8",
+          "topic": "przyimki",
+          "layout": "cloze",
+          "instruction": "Proszę uzupełnić tekst wyrazami z ramki. Jeden wyraz jest niepotrzebny.",
+          "points_per_item": 0.5,
+          "bank_words": ["z", "przy", "od", "na", "dla", "w", "na"],
+          "text": "Otwieramy nową restaurację Sól i Pieprz {{ex}} ulicy Płockiej 7. {{1}} naszym menu będzie można znaleźć tradycyjne dania kuchni polskiej. Mamy też specjalną ofertę posiłków {{2}} wynos oraz potrawy {{3}} najmłodszych. Restauracja będzie czynna codziennie od 10 do 22. Zapraszamy {{4}} otwarcie już w najbliższą sobotę. Planujemy specjalny wieczór {{5}} muzyką na żywo.",
+          "example": { "answer": "przy" },
+          "gaps": [
+            { "id": "pg8-1", "n": 1, "kind": "bank", "answer": "w" },
+            { "id": "pg8-2", "n": 2, "kind": "bank", "answer": "na" },
+            { "id": "pg8-3", "n": 3, "kind": "bank", "answer": "dla" },
+            { "id": "pg8-4", "n": 4, "kind": "bank", "answer": "na" },
+            { "id": "pg8-5", "n": 5, "kind": "bank", "answer": "z" }
+          ]
+        }
+      ]
+    }
+  ]
+}
