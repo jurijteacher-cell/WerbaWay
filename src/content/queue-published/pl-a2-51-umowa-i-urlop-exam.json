@@ -1,0 +1,49 @@
+{
+  "lesson_id": "pl-a2-51-umowa-i-urlop",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Przeczytaj tekst jeszcze raz i zdecyduj, czy zdanie jest prawdziwe czy fałszywe. Odpowiadaj tylko na podstawie tekstu.",
+  "estimated_minutes": 4,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o tekście „Umowa podpisana!”.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Olena podpisuje umowę w piątek.",
+          "answer": true,
+          "explanation": "W tekście: „Jest piątek, dwudziesty siódmy listopada”."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Okres próbny trwa dwa miesiące.",
+          "answer": false,
+          "explanation": "Od pierwszego grudnia do dwudziestego ósmego lutego — to trzy miesiące."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Olena pracuje także w soboty.",
+          "answer": false,
+          "explanation": "Pracuje od poniedziałku do piątku."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Liczba dni urlopu zależy od stażu pracy.",
+          "answer": true,
+          "explanation": "Pani Agnieszka mówi: to zależy od stażu pracy."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Olena idzie pierwszy raz do nowej pracy w poniedziałek.",
+          "answer": false,
+          "explanation": "Zaczyna we wtorek, pierwszego grudnia."
+        }
+      ]
+    }
+  ]
+}

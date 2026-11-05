@@ -1,0 +1,201 @@
+{
+  "lesson_id": "pl-a2-51-umowa-i-urlop",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: daty słowami i wiadomość o świętach",
+  "instruction": "Trzy bloki: daty, zdania i jedna wiadomość. Potem napisz wiadomość do przyjaciela — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Napisz datę słowami",
+      "instruction": "Napisz liczbę z nawiasu słowami, w poprawnej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Wizyta u dentysty jest ___ (16) października.",
+          "answer": "szesnastego",
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Kiedy? — dopełniacz: szesnastego."
+        },
+        {
+          "id": "h1-2",
+          "text": "Pociąg do Gdańska mam ___ (29) czerwca.",
+          "answer": "dwudziestego dziewiątego",
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Kiedy? Obie części w dopełniaczu: dwudziestego dziewiątego."
+        },
+        {
+          "id": "h1-3",
+          "text": "Dziś jest ___ (23) listopada, poniedziałek.",
+          "answer": "dwudziesty trzeci",
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Jaki dzień? — mianownik: dwudziesty trzeci."
+        },
+        {
+          "id": "h1-4",
+          "text": "Moja córka urodziła się ___ (4) kwietnia.",
+          "answer": "czwartego",
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Kiedy? — dopełniacz: czwartego."
+        },
+        {
+          "id": "h1-5",
+          "text": "Kurs angielskiego zaczyna się ___ (1) października.",
+          "answer": "pierwszego",
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Kiedy? — dopełniacz: pierwszego."
+        },
+        {
+          "id": "h1-6",
+          "text": "Wynajmujemy to mieszkanie od ___ (2018) roku.",
+          "answer": "dwa tysiące osiemnastego",
+          "grammar_point": "data-pelna",
+          "explanation": "Od + dopełniacz. Dwa tysiące — bez zmian, osiemnasty → osiemnastego."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdanie",
+      "instruction": "Ułóż zdanie z kafelków.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "sklep",
+            "jest",
+            "otwarty",
+            "od",
+            "dziesiątej",
+            "do",
+            "osiemnastej"
+          ],
+          "answer": "Sklep jest otwarty od dziesiątej do osiemnastej.",
+          "accept": [
+            "Od dziesiątej do osiemnastej sklep jest otwarty."
+          ],
+          "grammar_point": "godzina"
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "kurs",
+            "trwa",
+            "od",
+            "drugiego",
+            "do",
+            "szóstego",
+            "marca"
+          ],
+          "answer": "Kurs trwa od drugiego do szóstego marca.",
+          "accept": [
+            "Od drugiego do szóstego marca trwa kurs."
+          ],
+          "grammar_point": "przyimki-czasu"
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "urodziłem",
+            "się",
+            "w",
+            "dwa tysiące",
+            "pierwszym",
+            "roku"
+          ],
+          "answer": "Urodziłem się w dwa tysiące pierwszym roku.",
+          "accept": [
+            "W dwa tysiące pierwszym roku urodziłem się."
+          ],
+          "grammar_point": "data-pelna"
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "remont",
+            "kuchni",
+            "skończył",
+            "się",
+            "trzy",
+            "tygodnie",
+            "temu"
+          ],
+          "answer": "Remont kuchni skończył się trzy tygodnie temu.",
+          "accept": [
+            "Trzy tygodnie temu skończył się remont kuchni."
+          ],
+          "grammar_point": "przyimki-czasu"
+        },
+        {
+          "id": "h2-5",
+          "words": [
+            "w",
+            "kwietniu",
+            "mamy",
+            "długi",
+            "weekend"
+          ],
+          "answer": "W kwietniu mamy długi weekend.",
+          "accept": [
+            "Mamy długi weekend w kwietniu."
+          ],
+          "grammar_point": "data-pelna"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "drag-and-drop",
+      "title": "3. Wiadomość od Tomka: święta w biurze",
+      "instruction": "Przeciągnij wyrażenie w lukę. Dwa wyrażenia w banku są błędne — nie pasują nigdzie.",
+      "bank": [
+        "dwudziestego czwartego grudnia",
+        "w czwartek",
+        "dwudziestego ósmego",
+        "od dziewiątej",
+        "trzydziestego pierwszego",
+        "dwudziesty czwarty grudnia",
+        "od dziewięć"
+      ],
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Olena, mam dobrą wiadomość: ___ całe biuro ma wolne!",
+          "answer": "dwudziestego czwartego grudnia",
+          "grammar_point": "data-pelna",
+          "explanation": "Kiedy? — dopełniacz. Od 2025 roku Wigilia to w Polsce dzień wolny od pracy."
+        },
+        {
+          "id": "h3-2",
+          "text": "W tym roku Wigilia jest ___, więc mamy długi weekend.",
+          "answer": "w czwartek",
+          "grammar_point": "data-pelna",
+          "explanation": "Dzień tygodnia: w + biernik — w czwartek."
+        },
+        {
+          "id": "h3-3",
+          "text": "Do pracy wracamy ___, w poniedziałek.",
+          "answer": "dwudziestego ósmego",
+          "grammar_point": "data-pelna",
+          "explanation": "Kiedy? — dopełniacz: dwudziestego ósmego (grudnia)."
+        },
+        {
+          "id": "h3-4",
+          "text": "W Sylwestra biuro jest otwarte tylko ___ do trzynastej.",
+          "answer": "od dziewiątej",
+          "grammar_point": "godzina",
+          "explanation": "Od + dopełniacz: od dziewiątej."
+        },
+        {
+          "id": "h3-5",
+          "text": "Imprezę sylwestrową robimy u mnie ___ wieczorem. Przyjdziesz?",
+          "answer": "trzydziestego pierwszego",
+          "grammar_point": "data-pelna",
+          "explanation": "Kiedy? — dopełniacz: trzydziestego pierwszego (grudnia)."
+        }
+      ]
+    }
+  ]
+}
