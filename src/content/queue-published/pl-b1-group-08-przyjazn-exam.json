@@ -1,0 +1,110 @@
+{
+  "lesson_id": "pl-b1-group-08-przyjazn",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 14,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Kawa o ósmej, kawa o czternastej”. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Olena i Ira poznały się na studiach.",
+          "answer": false,
+          "explanation": "Znają się od pierwszej klasy, siedziały w jednej ławce w Łucku."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Kiedy w Lublinie jest czternasta, w Toronto jest ósma rano.",
+          "answer": true,
+          "explanation": "Kawa o czternastej czasu Oleny, czyli o ósmej czasu Iry."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Olena zapomniała o urodzinach Iry, bo była chora.",
+          "answer": false,
+          "explanation": "Była na warsztatach w Krakowie i wróciła późno, bo pociąg miał opóźnienie."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Po kłótni to Olena odezwała się pierwsza.",
+          "answer": true,
+          "explanation": "Olena zadzwoniła do Iry, a Ira odebrała po pierwszym sygnale."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Olena nigdy nie widziała Kuby na żywo.",
+          "answer": true,
+          "explanation": "Słyszy tylko jego śmiech w słuchawkach Maksyma."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Według Dunbara mamy zwykle około piętnastu najbliższych osób.",
+          "answer": false,
+          "explanation": "Najbliższy krąg to około pięciu osób; piętnaście to drugi krąg."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "pl-b1-group-08-przyjazn-teacher#dialog",
+      "max_plays": 2,
+      "title": "Słuchanie: telefon po latach",
+      "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Dlaczego Oksana długo się nie odzywała?",
+          "options": [
+            "pokłóciła się z Oleną",
+            "po przeprowadzce myślała tylko o pracy i nowym języku",
+            "długo leżała w szpitalu"
+          ],
+          "answer": "po przeprowadzce myślała tylko o pracy i nowym języku",
+          "explanation": "Oksana mówi, że po przeprowadzce do Lizbony miała w głowie tylko pracę i nowy język."
+        },
+        {
+          "id": "e2-2",
+          "question": "Skąd Oksana ma numer Oleny?",
+          "options": [
+            "od męża",
+            "od Iry",
+            "ze starego notesu"
+          ],
+          "answer": "od Iry",
+          "explanation": "Oksana znalazła Irę w internecie i od niej dostała numer."
+        },
+        {
+          "id": "e2-3",
+          "question": "Kiedy będą rozmawiać przez wideo?",
+          "options": [
+            "w sobotę o szesnastej",
+            "w niedzielę o dwudziestej czasu Oleny",
+            "w niedzielę o dwudziestej czasu Oksany"
+          ],
+          "answer": "w niedzielę o dwudziestej czasu Oleny",
+          "explanation": "U Oleny dwudziesta, u Oksany w Lizbonie — dziewiętnasta."
+        },
+        {
+          "id": "e2-4",
+          "question": "Po co Oksana przyleci w maju do Polski?",
+          "options": [
+            "na wesele kuzynki",
+            "na warsztaty",
+            "na rozmowę o pracę"
+          ],
+          "answer": "na wesele kuzynki",
+          "explanation": "Leci do Krakowa na wesele kuzynki, potem przyjedzie do Lublina."
+        }
+      ]
+    }
+  ]
+}

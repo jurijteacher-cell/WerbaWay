@@ -1,0 +1,277 @@
+{
+  "lesson_id": "pl-b1-group-08-przyjazn",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: zaimki i przeczenie w nowych zdaniach",
+  "instruction": "Trzy bloki. Zrób je przed napisaniem listu.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz właściwą formę",
+      "instruction": "Wpisz słowo z nawiasu w odpowiedniej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Szef? Nie widziałem ___ (on) dziś w biurze.",
+          "answer": "go",
+          "grammar_point": "zaimki-krotkie-dlugie"
+        },
+        {
+          "id": "h1-2",
+          "text": "Sąsiadka wyjechała i poprosiła, żebym podlewała ___ (ona) kwiaty.",
+          "answer": "jej",
+          "grammar_point": "zaimki-celownik"
+        },
+        {
+          "id": "h1-3",
+          "text": "Na siłowni ćwiczę z ___ (oni) dwa razy w tygodniu.",
+          "answer": "nimi",
+          "grammar_point": "zaimki-po-przyimku"
+        },
+        {
+          "id": "h1-4",
+          "text": "Trener zawsze ma dla ___ (my) czas.",
+          "answer": "nas",
+          "grammar_point": "zaimki-po-przyimku"
+        },
+        {
+          "id": "h1-5",
+          "text": "Kot sąsiadów? Opiekuję się ___ (on) w czasie ich urlopu.",
+          "answer": "nim",
+          "grammar_point": "zaimki-narzednik"
+        },
+        {
+          "id": "h1-6",
+          "text": "W tym mieście nie znam ___ (nikt) oprócz ciebie.",
+          "answer": "nikogo",
+          "grammar_point": "nikt-nic-odmiana"
+        },
+        {
+          "id": "h1-7",
+          "text": "Czy ___ (kto) widział moje okulary?",
+          "answer": "ktoś",
+          "grammar_point": "ktos-cos",
+          "accept": [
+            "ktos"
+          ]
+        },
+        {
+          "id": "h1-8",
+          "text": "W lodówce nie było ___ (nic) do jedzenia.",
+          "answer": "nic",
+          "grammar_point": "nikt-nic-odmiana",
+          "accept": [
+            "niczego"
+          ]
+        },
+        {
+          "id": "h1-9",
+          "text": "W pracy z ___ (nikt) się nie kłócę.",
+          "answer": "nikim",
+          "grammar_point": "nikt-nic-odmiana"
+        },
+        {
+          "id": "h1-10",
+          "text": "Kuzynki przyjechały i od razu poszłam z ___ (one) na spacer.",
+          "answer": "nimi",
+          "grammar_point": "zaimki-po-przyimku"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdania",
+      "instruction": "Klikaj słowa w dobrej kolejności.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "nikt",
+            "nie",
+            "odebrał",
+            "telefonu"
+          ],
+          "answer": "Nikt nie odebrał telefonu.",
+          "grammar_point": "zdanie-zaimki",
+          "accept": [
+            "Nikt nie odebrał telefonu",
+            "Telefonu nikt nie odebrał.",
+            "Telefonu nikt nie odebrał"
+          ]
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "zadzwonię",
+            "do",
+            "niego",
+            "po",
+            "pracy"
+          ],
+          "answer": "Zadzwonię do niego po pracy.",
+          "grammar_point": "zdanie-zaimki",
+          "accept": [
+            "Zadzwonię do niego po pracy",
+            "Po pracy zadzwonię do niego.",
+            "Po pracy zadzwonię do niego",
+            "Po pracy do niego zadzwonię.",
+            "Po pracy do niego zadzwonię"
+          ]
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "nic",
+            "mi",
+            "nie",
+            "powiedziała"
+          ],
+          "answer": "Nic mi nie powiedziała.",
+          "grammar_point": "zdanie-zaimki",
+          "accept": [
+            "Nic mi nie powiedziała",
+            "Nie powiedziała mi nic.",
+            "Nie powiedziała mi nic"
+          ]
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "możesz",
+            "na",
+            "mnie",
+            "zawsze",
+            "liczyć"
+          ],
+          "answer": "Zawsze możesz na mnie liczyć.",
+          "grammar_point": "zdanie-zaimki",
+          "accept": [
+            "Zawsze możesz na mnie liczyć",
+            "Możesz na mnie zawsze liczyć.",
+            "Możesz na mnie zawsze liczyć",
+            "Możesz zawsze na mnie liczyć.",
+            "Możesz zawsze na mnie liczyć",
+            "Na mnie zawsze możesz liczyć.",
+            "Na mnie zawsze możesz liczyć"
+          ]
+        },
+        {
+          "id": "h2-5",
+          "words": [
+            "czy",
+            "ktoś",
+            "z",
+            "was",
+            "ją",
+            "zna"
+          ],
+          "answer": "Czy ktoś z was ją zna?",
+          "grammar_point": "zdanie-zaimki",
+          "accept": [
+            "Czy ktoś z was ją zna",
+            "Czy ktoś z was zna ją?",
+            "Czy ktoś z was zna ją"
+          ]
+        },
+        {
+          "id": "h2-6",
+          "words": [
+            "nigdy",
+            "nigdzie",
+            "z",
+            "nim",
+            "nie",
+            "byłam"
+          ],
+          "answer": "Nigdy nigdzie z nim nie byłam.",
+          "grammar_point": "zdanie-zaimki",
+          "accept": [
+            "Nigdy nigdzie z nim nie byłam",
+            "Nigdzie nigdy z nim nie byłam.",
+            "Nigdzie nigdy z nim nie byłam",
+            "Z nim nigdy nigdzie nie byłam.",
+            "Z nim nigdy nigdzie nie byłam"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Wczoraj widziałam jego w sklepie.",
+          "answer": "Wczoraj widziałam go w sklepie.",
+          "grammar_point": "zaimki-popraw",
+          "accept": [
+            "Wczoraj widziałam go w sklepie",
+            "Widziałam go wczoraj w sklepie.",
+            "Widziałam go wczoraj w sklepie"
+          ],
+          "explanation": "Bez akcentu → krótka forma: go."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Nikt z kolegów nie przyszli na spotkanie.",
+          "answer": "Nikt z kolegów nie przyszedł na spotkanie.",
+          "grammar_point": "nikt-popraw",
+          "accept": [
+            "Nikt z kolegów nie przyszedł na spotkanie"
+          ],
+          "explanation": "Nikt = on → przyszedł."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Idę do jego, bo ma moje książki.",
+          "answer": "Idę do niego, bo ma moje książki.",
+          "grammar_point": "zaimki-popraw",
+          "accept": [
+            "Idę do niego, bo ma moje książki",
+            "Idę do niego bo ma moje książki.",
+            "Idę do niego bo ma moje książki"
+          ],
+          "explanation": "Po przyimku → niego."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Zrobisz to z mną?",
+          "answer": "Zrobisz to ze mną?",
+          "grammar_point": "zaimki-popraw",
+          "accept": [
+            "Zrobisz to ze mną"
+          ],
+          "explanation": "Przed „mną” → ze."
+        },
+        {
+          "id": "h3-5",
+          "prompt": "U niej nie ma samochodu, więc jeździ autobusem.",
+          "answer": "Ona nie ma samochodu, więc jeździ autobusem.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Ona nie ma samochodu, więc jeździ autobusem",
+            "Nie ma samochodu, więc jeździ autobusem.",
+            "Nie ma samochodu, więc jeździ autobusem"
+          ],
+          "explanation": "Укр. «у неї немає» → po polsku: ona nie ma."
+        },
+        {
+          "id": "h3-6",
+          "prompt": "Nikt nic powiedział o zmianie planu.",
+          "answer": "Nikt nic nie powiedział o zmianie planu.",
+          "grammar_point": "podwojne-przeczenie",
+          "accept": [
+            "Nikt nic nie powiedział o zmianie planu",
+            "Nikt nie powiedział nic o zmianie planu.",
+            "Nikt nie powiedział nic o zmianie planu"
+          ],
+          "explanation": "Słowa z ni- zawsze z „nie” przy czasowniku."
+        }
+      ]
+    }
+  ]
+}

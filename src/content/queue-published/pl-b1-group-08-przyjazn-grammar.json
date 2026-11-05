@@ -1,0 +1,767 @@
+{
+  "lesson_id": "pl-b1-group-08-przyjazn",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: zaimki osobowe, ktoś i nikt",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 60,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "Słowa: co to znaczy?",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "przyjaciel",
+          "right": "ktoś bardzo bliski, komu ufasz",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "znajomy",
+          "right": "ktoś, kogo znasz, ale niezbyt dobrze",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "bratnia dusza",
+          "right": "ktoś, kto myśli i czuje tak jak ty",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "pogodzić się",
+          "right": "skończyć kłótnię i znowu się lubić",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "oddzwonić",
+          "right": "zadzwonić do kogoś, kto wcześniej dzwonił",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "zwierzać się",
+          "right": "opowiadać komuś o swoich uczuciach",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "nadrobić zaległości",
+          "right": "opowiedzieć sobie wszystkie nowości",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "nieśmiały",
+          "right": "boi się rozmawiać z nowymi ludźmi",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Krótka czy długa forma?",
+      "instruction": "Wybierz formę zaimka. Pomyśl: czy jest akcent, kontrast albo przyimek?",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Kuba wraca późno. Daj ___ zapasowe klucze.",
+          "answer": "mu",
+          "grammar_point": "zaimki-krotkie-dlugie",
+          "options": [
+            "mu",
+            "jemu"
+          ],
+          "explanation": "Zwykłe zdanie, bez akcentu → krótka forma: daj mu."
+        },
+        {
+          "id": "g2-2",
+          "text": "___ daj klucze, a nie jego siostrze!",
+          "answer": "Jemu",
+          "grammar_point": "zaimki-krotkie-dlugie",
+          "options": [
+            "Mu",
+            "Jemu"
+          ],
+          "explanation": "Początek zdania i kontrast (jemu, a nie jej) → długa forma."
+        },
+        {
+          "id": "g2-3",
+          "text": "Lubię ___, ale nie twojego brata.",
+          "answer": "ciebie",
+          "grammar_point": "zaimki-krotkie-dlugie",
+          "options": [
+            "cię",
+            "ciebie"
+          ],
+          "explanation": "Kontrast: ciebie — ale nie brata → długa forma."
+        },
+        {
+          "id": "g2-4",
+          "text": "Pożycz ___ długopis, proszę.",
+          "answer": "mi",
+          "grammar_point": "zaimki-krotkie-dlugie",
+          "options": [
+            "mi",
+            "mnie"
+          ],
+          "explanation": "Komu? Zwykłe zdanie → krótka forma: pożycz mi."
+        },
+        {
+          "id": "g2-5",
+          "text": "Twojego szwagra? Widziałam ___ wczoraj w tramwaju.",
+          "answer": "go",
+          "grammar_point": "zaimki-krotkie-dlugie",
+          "options": [
+            "go",
+            "jego"
+          ],
+          "explanation": "Kogo? Bez akcentu, po czasowniku → go."
+        },
+        {
+          "id": "g2-6",
+          "text": "— Kogo zaprosiłaś na urodziny? — ___.",
+          "answer": "Jego",
+          "grammar_point": "zaimki-krotkie-dlugie",
+          "options": [
+            "Go",
+            "Jego"
+          ],
+          "explanation": "Odpowiedź jednym słowem → zawsze długa forma: — Jego."
+        },
+        {
+          "id": "g2-7",
+          "text": "Nie mam teraz czasu. Wieczorem zadzwonię ___.",
+          "answer": "do ciebie",
+          "grammar_point": "zaimki-krotkie-dlugie",
+          "options": [
+            "ci",
+            "do ciebie"
+          ],
+          "explanation": "Dzwonić DO kogoś (укр. «подзвоню тобі»). Po przyimku → długa forma: do ciebie."
+        },
+        {
+          "id": "g2-8",
+          "text": "Kto ___ wysłał tę wiadomość głosową?",
+          "answer": "ci",
+          "grammar_point": "zaimki-krotkie-dlugie",
+          "options": [
+            "ci",
+            "tobie"
+          ],
+          "explanation": "Komu? Zwykłe pytanie, bez akcentu → ci."
+        },
+        {
+          "id": "g2-9",
+          "text": "— Wiesz, że Ola wyjeżdża? — Nie! ___ nikt nic nie mówi!",
+          "answer": "Mnie",
+          "grammar_point": "zaimki-krotkie-dlugie",
+          "options": [
+            "Mi",
+            "Mnie"
+          ],
+          "explanation": "Początek zdania i akcent (mnie, a innym tak) → długa forma: mnie."
+        },
+        {
+          "id": "g2-10",
+          "text": "Nowa trenerka? Jeszcze dobrze ___ nie znam.",
+          "answer": "jej",
+          "grammar_point": "zaimki-krotkie-dlugie",
+          "options": [
+            "ją",
+            "jej"
+          ],
+          "explanation": "Uwaga: po „nie” biernik zmienia się w dopełniacz: znam ją → nie znam jej."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Po przyimku",
+      "instruction": "Wpisz zaimek z nawiasu w odpowiedniej formie. Uwaga na przyimek!",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Ira mieszka daleko, ale często myślę o ___ (ona).",
+          "answer": "niej",
+          "grammar_point": "zaimki-po-przyimku"
+        },
+        {
+          "id": "g3-2",
+          "text": "Piotrek? Pojechałem do ___ (on) rowerem.",
+          "answer": "niego",
+          "grammar_point": "zaimki-po-przyimku"
+        },
+        {
+          "id": "g3-3",
+          "text": "Moi kuzyni mieszkają w Gdańsku. Często dzwonię do ___ (oni).",
+          "answer": "nich",
+          "grammar_point": "zaimki-po-przyimku"
+        },
+        {
+          "id": "g3-4",
+          "text": "Ten prezent jest dla ___ (ty).",
+          "answer": "ciebie",
+          "grammar_point": "zaimki-po-przyimku",
+          "explanation": "Ja, ty, my, wy nie mają formy z n-: dla ciebie."
+        },
+        {
+          "id": "g3-5",
+          "text": "Idziesz z ___ (my) do kina?",
+          "answer": "nami",
+          "grammar_point": "zaimki-po-przyimku"
+        },
+        {
+          "id": "g3-6",
+          "text": "Kasia ma problem. Musimy z ___ (ona) porozmawiać.",
+          "answer": "nią",
+          "grammar_point": "zaimki-po-przyimku",
+          "accept": [
+            "nia"
+          ]
+        },
+        {
+          "id": "g3-7",
+          "text": "Dzieci sąsiadów? Mogę na ___ (one) chwilę popatrzeć.",
+          "answer": "nie",
+          "grammar_point": "zaimki-po-przyimku",
+          "explanation": "One w bierniku: je → po przyimku nie: patrzę na nie."
+        },
+        {
+          "id": "g3-8",
+          "text": "Pójdziesz ze ___ (ja) na warsztaty z ceramiki?",
+          "answer": "mną",
+          "grammar_point": "zaimki-po-przyimku",
+          "accept": [
+            "mna"
+          ],
+          "explanation": "Ze mną — przed „mną” piszemy ze, nie z."
+        },
+        {
+          "id": "g3-9",
+          "text": "Ten szalik zrobiła babcia. Dostałam go od ___ (ona) na święta.",
+          "answer": "niej",
+          "grammar_point": "zaimki-po-przyimku"
+        },
+        {
+          "id": "g3-10",
+          "text": "Sąsiedzi mnie podwieźli. Dzięki ___ (oni) zdążyłam na pociąg.",
+          "answer": "nim",
+          "grammar_point": "zaimki-po-przyimku",
+          "explanation": "Dzięki + komu? → im → po przyimku nim."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Jego czy niego? Czyj czy kogo?",
+      "instruction": "Wpisz formę zaimka z nawiasu. Najpierw zapytaj: czyj? czy kogo? / z kim?",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Wczoraj byłam u ___ (on) mamy na obiedzie.",
+          "answer": "jego",
+          "grammar_point": "jego-czy-niego",
+          "explanation": "Czyja mama? → jego mama. Zaimek dzierżawczy (czyj?) nigdy nie ma n-."
+        },
+        {
+          "id": "g4-2",
+          "text": "Wczoraj byłam u ___ (on) na obiedzie.",
+          "answer": "niego",
+          "grammar_point": "jego-czy-niego",
+          "explanation": "U kogo? → u niego. Po przyimku zaimek osobowy ma n-."
+        },
+        {
+          "id": "g4-3",
+          "text": "Rozmawiałam wczoraj z ___ (ona) mężem.",
+          "answer": "jej",
+          "grammar_point": "jego-czy-niego",
+          "explanation": "Czyim mężem? → jej mężem. Jej się nie zmienia."
+        },
+        {
+          "id": "g4-4",
+          "text": "Rozmawiałam z ___ (ona) przez godzinę.",
+          "answer": "nią",
+          "grammar_point": "jego-czy-niego",
+          "accept": [
+            "nia"
+          ],
+          "explanation": "Z kim? → z nią."
+        },
+        {
+          "id": "g4-5",
+          "text": "Martwię się o ___ (oni) syna — nic nie je.",
+          "answer": "ich",
+          "grammar_point": "jego-czy-niego",
+          "explanation": "Czyjego syna? → ich syna."
+        },
+        {
+          "id": "g4-6",
+          "text": "Sąsiedzi są w szpitalu. Bardzo się o ___ (oni) martwię.",
+          "answer": "nich",
+          "grammar_point": "jego-czy-niego",
+          "explanation": "O kogo? Po przyimku → o nich."
+        },
+        {
+          "id": "g4-7",
+          "text": "Na weekend pojadę do ___ (ona) siostry.",
+          "answer": "jej",
+          "grammar_point": "jego-czy-niego",
+          "explanation": "Czyjej siostry? → jej siostry."
+        },
+        {
+          "id": "g4-8",
+          "text": "Mam dla ___ (ona) niespodziankę.",
+          "answer": "niej",
+          "grammar_point": "jego-czy-niego",
+          "explanation": "Dla kogo? → dla niej."
+        },
+        {
+          "id": "g4-9",
+          "text": "Dzięki ___ (ona) radom szybko pogodziłam się z mężem.",
+          "answer": "jej",
+          "grammar_point": "jego-czy-niego",
+          "explanation": "Czyim radom? → jej radom. To nie jest „dzięki niej”."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "5. Zamień na zaimek",
+      "instruction": "Napisz całe zdanie. Zamień osobę na zaimek: on, ona, oni albo one.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Zaprosiłam Kubę na urodziny.",
+          "answer": "Zaprosiłam go na urodziny.",
+          "grammar_point": "zamiana-na-zaimek",
+          "accept": [
+            "Zaprosiłam go na urodziny"
+          ],
+          "explanation": "Kogo? Kubę → go."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Wysłałam Irze wiadomość głosową.",
+          "answer": "Wysłałam jej wiadomość głosową.",
+          "grammar_point": "zamiana-na-zaimek",
+          "accept": [
+            "Wysłałam jej wiadomość głosową"
+          ],
+          "explanation": "Komu? Irze → jej."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "W sobotę pojechaliśmy do dziadków na wieś.",
+          "answer": "W sobotę pojechaliśmy do nich na wieś.",
+          "grammar_point": "zamiana-na-zaimek",
+          "accept": [
+            "W sobotę pojechaliśmy do nich na wieś",
+            "Pojechaliśmy do nich na wieś w sobotę.",
+            "Pojechaliśmy do nich na wieś w sobotę"
+          ],
+          "explanation": "Do kogo? Do dziadków → do nich."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Taras rozmawia z Piotrkiem o pracy.",
+          "answer": "Taras rozmawia z nim o pracy.",
+          "grammar_point": "zamiana-na-zaimek",
+          "accept": [
+            "Taras rozmawia z nim o pracy"
+          ],
+          "explanation": "Z kim? Z Piotrkiem → z nim."
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Bardzo tęsknię za siostrami.",
+          "answer": "Bardzo tęsknię za nimi.",
+          "grammar_point": "zamiana-na-zaimek",
+          "accept": [
+            "Bardzo tęsknię za nimi"
+          ],
+          "explanation": "Za kim? Za siostrami → za nimi."
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Pomagam sąsiadce w ogrodzie.",
+          "answer": "Pomagam jej w ogrodzie.",
+          "grammar_point": "zamiana-na-zaimek",
+          "accept": [
+            "Pomagam jej w ogrodzie"
+          ],
+          "explanation": "Komu? Sąsiadce → jej."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Ktoś, coś, gdzieś, kiedyś",
+      "instruction": "Dodaj -ś do słowa z nawiasu i wpisz je w odpowiedniej formie.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Słyszysz? ___ (kto) puka do drzwi.",
+          "answer": "Ktoś",
+          "grammar_point": "ktos-cos",
+          "accept": [
+            "ktoś",
+            "ktos",
+            "Ktos"
+          ]
+        },
+        {
+          "id": "g6-2",
+          "text": "Mam dla ciebie ___ (co) ciekawego.",
+          "answer": "coś",
+          "grammar_point": "ktos-cos",
+          "accept": [
+            "cos"
+          ]
+        },
+        {
+          "id": "g6-3",
+          "text": "Zostawiłam ___ (gdzie) klucze i nie mogę ich znaleźć.",
+          "answer": "gdzieś",
+          "grammar_point": "ktos-cos",
+          "accept": [
+            "gdzies"
+          ]
+        },
+        {
+          "id": "g6-4",
+          "text": "___ (kiedy) mieszkałam w Łucku, a teraz mieszkam w Lublinie.",
+          "answer": "Kiedyś",
+          "grammar_point": "ktos-cos",
+          "accept": [
+            "kiedyś",
+            "kiedys",
+            "Kiedys"
+          ]
+        },
+        {
+          "id": "g6-5",
+          "text": "Dzwonił do ciebie ___ (jaki) pan z banku.",
+          "answer": "jakiś",
+          "grammar_point": "ktos-cos",
+          "accept": [
+            "jakis"
+          ]
+        },
+        {
+          "id": "g6-6",
+          "text": "Zgubiliśmy się. Musimy ___ (kto) zapytać o drogę.",
+          "answer": "kogoś",
+          "grammar_point": "ktos-cos",
+          "accept": [
+            "kogos"
+          ],
+          "explanation": "Zapytać kogo? → kogoś (biernik)."
+        },
+        {
+          "id": "g6-7",
+          "text": "Rozmawiałaś już z ___ (kto) o tym problemie?",
+          "answer": "kimś",
+          "grammar_point": "ktos-cos",
+          "accept": [
+            "kims"
+          ],
+          "explanation": "Z kim? → z kimś."
+        },
+        {
+          "id": "g6-8",
+          "text": "Myślę o ___ (co) ważnym.",
+          "answer": "czymś",
+          "grammar_point": "ktos-cos",
+          "accept": [
+            "czyms"
+          ],
+          "explanation": "O czym? → o czymś."
+        },
+        {
+          "id": "g6-9",
+          "text": "Nie jeżdżę już na rowerze. Oddam go ___ (kto).",
+          "answer": "komuś",
+          "grammar_point": "ktos-cos",
+          "accept": [
+            "komus"
+          ],
+          "explanation": "Komu? → komuś."
+        },
+        {
+          "id": "g6-10",
+          "text": "W tym roku zapisałam się na ___ (jaki) kurs online.",
+          "answer": "jakiś",
+          "grammar_point": "ktos-cos",
+          "accept": [
+            "jakis"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "7. Powiedz „nie”!",
+      "instruction": "Napisz zdanie przeczące. Użyj: nikt, nic, nigdy, nigdzie albo żaden — i „nie”.",
+      "items": [
+        {
+          "id": "g7-1",
+          "prompt": "Ktoś dzwonił do ciebie.",
+          "answer": "Nikt nie dzwonił do ciebie.",
+          "grammar_point": "podwojne-przeczenie",
+          "accept": [
+            "Nikt nie dzwonił do ciebie",
+            "Nikt do ciebie nie dzwonił.",
+            "Nikt do ciebie nie dzwonił"
+          ],
+          "explanation": "Ktoś → nikt + nie."
+        },
+        {
+          "id": "g7-2",
+          "prompt": "Widzę coś na ekranie.",
+          "answer": "Nic nie widzę na ekranie.",
+          "grammar_point": "podwojne-przeczenie",
+          "accept": [
+            "Nic nie widzę na ekranie",
+            "Nie widzę nic na ekranie.",
+            "Nie widzę nic na ekranie",
+            "Nie widzę niczego na ekranie.",
+            "Nie widzę niczego na ekranie",
+            "Niczego nie widzę na ekranie.",
+            "Niczego nie widzę na ekranie",
+            "Na ekranie nic nie widzę.",
+            "Na ekranie nic nie widzę",
+            "Na ekranie nie widzę niczego.",
+            "Na ekranie nie widzę niczego"
+          ],
+          "explanation": "Coś → nic + nie. Po „nie” możesz też powiedzieć: niczego nie widzę."
+        },
+        {
+          "id": "g7-3",
+          "prompt": "Kiedyś byłam w Toronto.",
+          "answer": "Nigdy nie byłam w Toronto.",
+          "grammar_point": "podwojne-przeczenie",
+          "accept": [
+            "Nigdy nie byłam w Toronto",
+            "W Toronto nigdy nie byłam.",
+            "W Toronto nigdy nie byłam"
+          ],
+          "explanation": "Kiedyś → nigdy + nie."
+        },
+        {
+          "id": "g7-4",
+          "prompt": "Gdzieś zostawiłam telefon.",
+          "answer": "Nigdzie nie zostawiłam telefonu.",
+          "grammar_point": "podwojne-przeczenie",
+          "accept": [
+            "Nigdzie nie zostawiłam telefonu",
+            "Telefonu nigdzie nie zostawiłam.",
+            "Telefonu nigdzie nie zostawiłam"
+          ],
+          "explanation": "Gdzieś → nigdzie + nie. Uwaga: po „nie” biernik → dopełniacz: telefon → telefonu."
+        },
+        {
+          "id": "g7-5",
+          "prompt": "Mam jakiś pomysł.",
+          "answer": "Nie mam żadnego pomysłu.",
+          "grammar_point": "podwojne-przeczenie",
+          "accept": [
+            "Nie mam żadnego pomysłu",
+            "Żadnego pomysłu nie mam.",
+            "Żadnego pomysłu nie mam"
+          ],
+          "explanation": "Jakiś → żaden + nie, w dopełniaczu: żadnego pomysłu."
+        },
+        {
+          "id": "g7-6",
+          "prompt": "Ktoś mi coś powiedział.",
+          "answer": "Nikt mi nic nie powiedział.",
+          "grammar_point": "podwojne-przeczenie",
+          "accept": [
+            "Nikt mi nic nie powiedział",
+            "Nikt nic mi nie powiedział.",
+            "Nikt nic mi nie powiedział",
+            "Nikt mi niczego nie powiedział.",
+            "Nikt mi niczego nie powiedział",
+            "Nikt niczego mi nie powiedział.",
+            "Nikt niczego mi nie powiedział"
+          ],
+          "explanation": "Ktoś → nikt, coś → nic. W zdaniu może być kilka słów z ni- i jedno „nie”."
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Nikogo, nikomu, z nikim",
+      "instruction": "Wpisz słowo z nawiasu w odpowiedniej formie. Najpierw zadaj pytanie: kogo? komu? z kim? o czym?",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Na imprezie nie znałam ___ (nikt).",
+          "answer": "nikogo",
+          "grammar_point": "nikt-nic-odmiana",
+          "explanation": "Znać kogo? → po „nie” dopełniacz: nikogo."
+        },
+        {
+          "id": "g8-2",
+          "text": "To tajemnica. Nie mów o tym ___ (nikt)!",
+          "answer": "nikomu",
+          "grammar_point": "nikt-nic-odmiana",
+          "explanation": "Mówić komu? → nikomu."
+        },
+        {
+          "id": "g8-3",
+          "text": "Cały dzień byłam w domu i z ___ (nikt) nie rozmawiałam.",
+          "answer": "nikim",
+          "grammar_point": "nikt-nic-odmiana",
+          "explanation": "Z kim? → z nikim."
+        },
+        {
+          "id": "g8-4",
+          "text": "Jesteś na urlopie. Nie myśl teraz o ___ (nic).",
+          "answer": "niczym",
+          "grammar_point": "nikt-nic-odmiana",
+          "explanation": "O czym? → o niczym."
+        },
+        {
+          "id": "g8-5",
+          "text": "Mój młodszy brat nie boi się ___ (nic).",
+          "answer": "niczego",
+          "grammar_point": "nikt-nic-odmiana",
+          "explanation": "Bać się czego? → niczego."
+        },
+        {
+          "id": "g8-6",
+          "text": "Ira nie ufa ___ (nikt) oprócz mnie.",
+          "answer": "nikomu",
+          "grammar_point": "nikt-nic-odmiana",
+          "explanation": "Ufać komu? → nikomu."
+        },
+        {
+          "id": "g8-7",
+          "text": "Nikt z nas nie ___ (wiedzieć, czas przeszły) o zebraniu.",
+          "answer": "wiedział",
+          "grammar_point": "nikt-nic-odmiana",
+          "explanation": "Nikt = on: czasownik w 3. osobie liczby pojedynczej — nikt z nas nie wiedział."
+        },
+        {
+          "id": "g8-8",
+          "text": "Żadna z koleżanek nie ___ (przyjść, czas przeszły) na czas.",
+          "answer": "przyszła",
+          "grammar_point": "nikt-nic-odmiana",
+          "accept": [
+            "przyszla"
+          ],
+          "explanation": "Żadna = ona: żadna nie przyszła."
+        },
+        {
+          "id": "g8-9",
+          "text": "Zadzwoniłem do biura, ale nie było tam ___ (nikt).",
+          "answer": "nikogo",
+          "grammar_point": "nikt-nic-odmiana",
+          "explanation": "Nie ma / nie było kogo? → nikogo."
+        },
+        {
+          "id": "g8-10",
+          "text": "Cierpliwość to podstawa. Nie przejmuj się ___ (nic)!",
+          "answer": "niczym",
+          "grammar_point": "nikt-nic-odmiana",
+          "explanation": "Przejmować się czym? → niczym."
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "9. Pułapki z ukraińskiego",
+      "instruction": "Wybierz wersję, którą powie Polak. Po każdej odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g9-1",
+          "text": "Piotrek nie odpisuje. Wieczorem ___.",
+          "answer": "zadzwonię do niego",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "zadzwonię mu",
+            "zadzwonię do niego"
+          ],
+          "explanation": "Укр. «подзвоню йому», ale po polsku dzwonimy DO kogoś: do niego."
+        },
+        {
+          "id": "g9-2",
+          "text": "Kasia? Tak, ___ od dawna.",
+          "answer": "znam ją",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "jestem z nią znajoma",
+            "znam ją"
+          ],
+          "explanation": "Укр. «я з нею знайома» → po polsku: znam ją albo znamy się."
+        },
+        {
+          "id": "g9-3",
+          "text": "Taras dzisiaj nie przyjdzie, bo ___.",
+          "answer": "nie ma czasu",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "u niego nie ma czasu",
+            "nie ma czasu"
+          ],
+          "explanation": "Укр. «у нього немає часу» → po polsku: on nie ma czasu."
+        },
+        {
+          "id": "g9-4",
+          "text": "Szef zapytał, kto się spóźnił, więc ___ prawdę.",
+          "answer": "powiedziałam mu",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "powiedziałam jemu",
+            "powiedziałam mu"
+          ],
+          "explanation": "Укр. має одну форму «йому». Bez akcentu po polsku → krótka: mu."
+        },
+        {
+          "id": "g9-5",
+          "text": "Masz wolny wieczór? Chodź ___ na koncert!",
+          "answer": "ze mną",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "z mną",
+            "ze mną"
+          ],
+          "explanation": "Przed „mną” zawsze ze: ze mną."
+        },
+        {
+          "id": "g9-6",
+          "text": "___ o jej urodzinach.",
+          "answer": "Nikt z nas nie wiedział",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "Nikt z nas nie wiedzieliśmy",
+            "Nikt z nas nie wiedział"
+          ],
+          "explanation": "Nikt = on: czasownik w 3. osobie liczby pojedynczej."
+        }
+      ]
+    }
+  ]
+}
