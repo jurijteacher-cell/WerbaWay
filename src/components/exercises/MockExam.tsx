@@ -170,7 +170,7 @@ export function MockExam({ lessonId }: { lessonId: string }) {
     try {
       const res = await fetch(`/api/mock-exam/${lessonId}/finish`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
         body: JSON.stringify({
           imie: imie.trim(),
           answers,
