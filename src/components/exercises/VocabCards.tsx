@@ -1,6 +1,7 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo, useState, type CSSProperties } from 'react';
+import { Check, RefreshCw, RotateCcw, Repeat } from 'lucide-react';
 
 type Item = {
   id: number | string;
@@ -20,23 +21,49 @@ type Props = {
   lessonId?: string;
 };
 
+const COLORS = ['c-y', 'c-m', 'c-s', 'c-c'] as const;
+type Mark = 'known' | 'again';
+
+/** Vocabulary flashcards: 3D flip, self-rating «znam / powtórzę». Embed-only: nb-* classes. */
 export function VocabCards({ title, instructions, items, groups }: Props) {
   const groupList = useMemo(() => {
     if (groups?.length) return groups;
     const seen = new Set<string>();
-    for (const it of items) {
-      if (it.group) seen.add(it.group);
-    }
+    for (const it of items) if (it.group) seen.add(it.group);
     return [...seen];
   }, [groups, items]);
 
-  const [group, setGroup] = useState<string | 'all'>('all');
+  const [group, setGroup] = useState<string | 'all' | 'again'>('all');
   const [flipped, setFlipped] = useState<Record<string, boolean>>({});
+  const [marks, setMarks] = useState<Record<string, Mark>>({});
+
+  const colorOf = useMemo(() => {
+    const m: Record<string, string> = {};
+    items.forEach((it, i) => {
+      const gi = it.group ? groupList.indexOf(it.group) : -1;
+      m[String(it.id)] = COLORS[(gi >= 0 ? gi : i) % COLORS.length];
+    });
+    return m;
+  }, [items, groupList]);
 
   const filtered = useMemo(() => {
+    if (group === 'again') return items.filter((it) => marks[String(it.id)] === 'again');
     if (group === 'all' || !groupList.length) return items;
     return items.filter((it) => it.group === group);
-  }, [items, group, groupList]);
+  }, [items, group, groupList, marks]);
+
+  const known = Object.values(marks).filter((m) => m === 'known').length;
+  const again = Object.values(marks).filter((m) => m === 'again').length;
+
+  const mark = (key: string, m: Mark) => {
+    setMarks((s) => {
+      const next = { ...s };
+      if (next[key] === m) delete next[key];
+      else next[key] = m;
+      return next;
+    });
+    setFlipped((f) => ({ ...f, [key]: false }));
+  };
 
   return (
     <div data-block-id="vocab">
@@ -48,60 +75,99 @@ export function VocabCards({ title, instructions, items, groups }: Props) {
 
       {groupList.length > 0 && (
         <div className="nb-idx" role="tablist">
-          <button
-            type="button"
-            role="tab"
-            aria-selected={group === 'all'}
-            onClick={() => setGroup('all')}
-          >
+          <button type="button" role="tab" aria-selected={group === 'all'} onClick={() => setGroup('all')}>
             wszystkie
+            <span className="nb-tab-count">{items.length}</span>
           </button>
           {groupList.map((g) => (
-            <button
-              key={g}
-              type="button"
-              role="tab"
-              aria-selected={group === g}
-              onClick={() => setGroup(g)}
-            >
+            <button key={g} type="button" role="tab" aria-selected={group === g} onClick={() => setGroup(g)}>
               {g}
             </button>
           ))}
+          {again > 0 ? (
+            <button type="button" role="tab" aria-selected={group === 'again'} onClick={() => setGroup('again')}>
+              <Repeat size={14} aria-hidden /> do powtórki
+              <span className="nb-tab-count">{again}</span>
+            </button>
+          ) : null}
         </div>
       )}
 
-      <div className="nb-grid">
+      <div className="nb-deck-bar">
+        <div className="nb-progress-track" aria-hidden>
+          <div className="nb-progress-fill" style={{ width: `${(known / Math.max(1, items.length)) * 100}%` }} />
+        </div>
+        <span>
+          znam <b style={{ color: 'var(--nb-ink)' }}>{known}</b> z {items.length}
+          {again ? ` · do powtórki: ${again}` : ''}
+        </span>
+        {Object.keys(flipped).some((k) => flipped[k]) ? (
+          <button type="button" className="nb-btn ghost sm" onClick={() => setFlipped({})}>
+            <RotateCcw aria-hidden /> Odwróć wszystkie
+          </button>
+        ) : null}
+      </div>
+
+      <div className="nb-grid" key={group}>
         {filtered.map((item, i) => {
           const key = String(item.id);
           const isFlipped = !!flipped[key];
-          const colors = ['c-y', 'c-m', 'c-s', 'c-c'] as const;
+          const m = marks[key];
+          const flip = () => setFlipped((f) => ({ ...f, [key]: !f[key] }));
           return (
             <div
               key={key}
-              className={`nb-card ${colors[i % colors.length]}`}
+              className={`nb-flip fixed ${colorOf[key]}`}
               data-item-id={key}
               data-flipped={isFlipped ? 'true' : 'false'}
+              style={{ '--i': i } as CSSProperties}
             >
-              <button
-                type="button"
-                data-role="flip"
-                className="nb-flip-trigger"
-                onClick={() => setFlipped((f) => ({ ...f, [key]: !f[key] }))}
-              >
-                {!isFlipped ? (
-                  <>
-                    <h3>{item.term}</h3>
-                    {item.part_of_speech ? <div className="pos">{item.part_of_speech}</div> : null}
-                    <div className="peek">kliknij, żeby odwrócić →</div>
-                  </>
-                ) : (
-                  <>
-                    {item.translation_uk ? <div className="uk">{item.translation_uk}</div> : null}
-                    <p style={{ margin: 0 }}>{item.definition}</p>
-                    <div className="ex">{item.example_sentence}</div>
-                  </>
-                )}
-              </button>
+              <div className="nb-flip-in">
+                <button
+                  type="button"
+                  data-role="flip"
+                  className="nb-face front"
+                  aria-hidden={isFlipped}
+                  tabIndex={isFlipped ? -1 : 0}
+                  onClick={flip}
+                >
+                  {m ? (
+                    <span className={`nb-known${m === 'again' ? ' again' : ''}`} aria-label={m === 'known' ? 'znam' : 'do powtórki'}>
+                      {m === 'known' ? <Check strokeWidth={3} /> : <Repeat strokeWidth={2.6} />}
+                    </span>
+                  ) : null}
+                  <span className="term">{item.term}</span>
+                  {item.part_of_speech ? <span className="pos">{item.part_of_speech}</span> : null}
+                  <span className="peek">
+                    <RefreshCw aria-hidden /> odwróć
+                  </span>
+                </button>
+                <div className="nb-face back" aria-hidden={!isFlipped} onClick={flip}>
+                  {item.translation_uk ? <div className="uk">{item.translation_uk}</div> : null}
+                  <p className="def">{item.definition}</p>
+                  {item.example_sentence ? <div className="ex">{item.example_sentence}</div> : null}
+                  <div className="nb-rate" style={{ marginTop: 'auto', paddingTop: 10 }} onClick={(e) => e.stopPropagation()}>
+                    <button
+                      type="button"
+                      className="yes"
+                      tabIndex={isFlipped ? 0 : -1}
+                      aria-pressed={m === 'known'}
+                      onClick={() => mark(key, 'known')}
+                    >
+                      <Check aria-hidden strokeWidth={3} /> znam
+                    </button>
+                    <button
+                      type="button"
+                      className="no"
+                      tabIndex={isFlipped ? 0 : -1}
+                      aria-pressed={m === 'again'}
+                      onClick={() => mark(key, 'again')}
+                    >
+                      <Repeat aria-hidden /> powtórzę
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           );
         })}

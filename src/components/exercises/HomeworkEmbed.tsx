@@ -6,6 +6,7 @@ import { SentenceBuilding } from './SentenceBuilding';
 import { GrammarPyramid } from './GrammarPyramid';
 import { SendToTeacher } from './SendToTeacher';
 import { trackAttempt } from '@/lib/embed-tracker';
+import { Feedback, PolishKeys } from './nb-ui';
 
 type Props = { data: HomeworkExercise };
 
@@ -46,14 +47,14 @@ export function HomeworkEmbed({ data }: Props) {
       {data.vocab_review && (
         <div className="nb-panel">
           <p className="nb-eyebrow">Słownictwo</p>
-          <p style={{ margin: 0 }}>{data.vocab_review}</p>
+          <p className="nb-q" style={{ fontSize: 16 }}>{data.vocab_review}</p>
         </div>
       )}
 
       {data.video && (
         <div className="nb-panel">
           <p className="nb-eyebrow">Wideo / artykuł</p>
-          <a href={data.video.url} target="_blank" rel="noreferrer" style={{ color: 'var(--nb-ink)', fontWeight: 700 }}>
+          <a href={data.video.url} target="_blank" rel="noreferrer" className="nb-link">
             {data.video.title}
           </a>
           <p className="nb-note" style={{ margin: '6px 0 0' }}>{data.video.task}</p>
@@ -89,11 +90,15 @@ export function HomeworkEmbed({ data }: Props) {
               const fb = feedback[ex.id];
               return (
                 <div key={ex.id} className="nb-panel">
-                  <p style={{ margin: '0 0 8px' }}>{ex.sentence}</p>
-                  <div className="nb-row" style={{ marginTop: 0 }}>
+                  <p className="nb-q">{ex.sentence}</p>
+                  <div className="nb-row" style={{ marginTop: 10 }}>
                     <input
                       value={fills[ex.id] ?? ''}
-                      onChange={(e) => setFills((f) => ({ ...f, [ex.id]: e.target.value }))}
+                      onChange={(e) => {
+                        setFills((f) => ({ ...f, [ex.id]: e.target.value }));
+                        setFeedback((f) => ({ ...f, [ex.id]: null }));
+                      }}
+                      placeholder="Twoja odpowiedź…"
                       className={`nb-blank${fb === true ? ' ok' : ''}${fb === false ? ' no' : ''}`}
                     />
                     <button
@@ -115,20 +120,16 @@ export function HomeworkEmbed({ data }: Props) {
                     >
                       Sprawdź
                     </button>
-                    {fb === true && <span className="nb-score">Dobra robota!</span>}
-                    {fb === false && (
-                      <span className="nb-note" style={{ margin: 0 }}>
-                        ✕ Spróbuj ponownie
-                      </span>
-                    )}
                   </div>
+                  {fb === true && <Feedback kind="ok"><b>Dobra robota!</b></Feedback>}
+                  {fb === false && <Feedback kind="no">Jeszcze nie. Spróbuj ponownie.</Feedback>}
                 </div>
               );
             }
             if (ex.prompt) {
               return (
                 <div key={ex.id} className="nb-panel">
-                  <p style={{ margin: '0 0 8px' }}>{ex.prompt}</p>
+                  <p className="nb-q" style={{ marginBottom: 10 }}>{ex.prompt}</p>
                   <textarea
                     rows={3}
                     className="nb-open"
@@ -151,13 +152,18 @@ export function HomeworkEmbed({ data }: Props) {
       {data.writing_task && (
         <div className="nb-panel">
           <p className="nb-eyebrow">Pisanie ({data.writing_task.type})</p>
-          <p style={{ margin: '0 0 8px' }}>{data.writing_task.prompt}</p>
+          <p className="nb-q" style={{ marginBottom: 10 }}>{data.writing_task.prompt}</p>
           <textarea
             value={writing}
             onChange={(e) => setWriting(e.target.value)}
             rows={6}
             className="nb-open"
+            placeholder="Pisz tutaj…"
           />
+          <div className="nb-row" style={{ marginTop: 6 }}>
+            <span className="nb-counter">{writing.trim() ? writing.trim().split(/\s+/).length : 0} słów</span>
+          </div>
+          <PolishKeys />
           <SendToTeacher
             text={writing}
             attempt={{

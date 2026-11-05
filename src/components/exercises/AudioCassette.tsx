@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { Play } from 'lucide-react';
 
 type Props = {
   src?: string;
@@ -67,10 +68,21 @@ export function AudioCassette({
         disabled={disabled}
         onClick={play}
       >
-        ▶ {label}
+        {playing ? (
+          <span className="nb-eq" aria-hidden>
+            <i />
+            <i />
+            <i />
+          </span>
+        ) : (
+          <Play aria-hidden fill="currentColor" />
+        )}
+        {label}
       </button>
       {limited ? (
-        <span className="nb-cassette-left">zostały {playsLeft} odsłuchy</span>
+        <span className="nb-cassette-left">
+          {playsLeft > 0 ? `odsłuchy: ${playsLeft}` : 'brak odsłuchów'}
+        </span>
       ) : null}
       <div className="nb-cassette-speeds" aria-label="Prędkość">
         {SPEEDS.map((s) => (
@@ -80,7 +92,7 @@ export function AudioCassette({
             className={`nb-speed${speed === s ? ' on' : ''}`}
             onClick={() => setSpeed(s)}
           >
-            × {s}
+            {s}×
           </button>
         ))}
       </div>

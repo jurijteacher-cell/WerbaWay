@@ -1,4 +1,25 @@
 import type { ReactNode } from 'react';
+import { Onest, Literata } from 'next/font/google';
+
+/**
+ * Fonts for every notebook surface (embeds, slides, lesson pages).
+ * Both families ship latin-ext (ą ć ę ł ń ó ś ź ż) AND cyrillic (instructions_uk, glosses).
+ * Onest = interface, Literata = Polish text, inputs and italic notes. STYLE_NOTEBOOK.md
+ */
+const onest = Onest({
+  subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-onest',
+  display: 'swap',
+});
+
+const literata = Literata({
+  subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-literata',
+  display: 'swap',
+});
 
 type Props = {
   children: ReactNode;
@@ -8,7 +29,7 @@ type Props = {
   aside?: ReactNode;
 };
 
-/** Spiral notebook chrome for LMS embeds (STYLE_NOTEBOOK.md). */
+/** Notebook chrome for LMS embeds (STYLE_NOTEBOOK.md · UI v2). */
 export function NotebookShell({
   children,
   brandLabel = 'Werba Way',
@@ -16,10 +37,10 @@ export function NotebookShell({
   aside,
 }: Props) {
   return (
-    <div className="nb-wrap">
+    <div className={`nb-wrap ${onest.variable} ${literata.variable}`}>
       <div className="nb-brandbar">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/brand/werba-logo.jpg" alt="" width={44} height={44} />
+        <img src="/brand/werba-logo.jpg" alt="" width={38} height={38} />
         <div>
           <b>{brandLabel}</b>
           {levelHint ? <span>{levelHint}</span> : null}
@@ -28,18 +49,7 @@ export function NotebookShell({
       </div>
 
       <div className="nb-book">
-        <div className="nb-rings" aria-hidden>
-          {Array.from({ length: 13 }).map((_, i) => (
-            <span key={i} className="nb-ring" />
-          ))}
-        </div>
-        <div className="nb-sheet">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="nb-logo-stamp" src="/brand/werba-logo.jpg" alt="" />
-          {children}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="nb-mark" src="/brand/werba-logo.jpg" alt="" />
-        </div>
+        <div className="nb-sheet">{children}</div>
       </div>
     </div>
   );

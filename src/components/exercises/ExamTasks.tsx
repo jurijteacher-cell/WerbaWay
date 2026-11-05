@@ -1,7 +1,9 @@
 'use client';
 
 import { useMemo, useRef, useState } from 'react';
+import { Headphones, Lightbulb, Play } from 'lucide-react';
 import { trackAttempt } from '@/lib/embed-tracker';
+import { Feedback } from './nb-ui';
 
 export type ExamItem = {
   id: string;
@@ -71,13 +73,11 @@ export function ExamTasks({ data, blockIds }: Props) {
 
       {blocks.map((block) => (
         <section key={block.block_id} style={{ marginBottom: 28 }}>
-          <div className="nb-tape" style={{ marginBottom: 10 }}>
-            {block.title}
-          </div>
+          <div className="nb-tape">{block.title}</div>
           {block.instruction ? <p className="nb-note">{block.instruction}</p> : null}
 
           {block.exercise_type === 'multiple-choice' ? (
-            <div className="nb-panel" style={{ marginBottom: 14 }}>
+            <div className="nb-panel" style={{ marginBottom: 14, background: 'var(--nb-paper-2)' }}>
               {block.audio_url ? (
                 <>
                   <audio
@@ -104,7 +104,7 @@ export function ExamTasks({ data, blockIds }: Props) {
                       setPlays((p) => ({ ...p, [block.block_id]: used + 1 }));
                     }}
                   >
-                    Odsłuchaj
+                    <Play aria-hidden fill="currentColor" /> Odsłuchaj
                     {block.max_plays != null
                       ? ` (${plays[block.block_id] ?? 0}/${block.max_plays})`
                       : ''}
@@ -115,16 +115,16 @@ export function ExamTasks({ data, blockIds }: Props) {
                   Przeczytaj dialog poniżej, potem odpowiedz.
                 </p>
               ) : (
-                <p className="nb-note" style={{ marginTop: 0 }}>
-                  🎧 Słuchaj nauczyciela — bez tekstu.
+                <p className="nb-note" style={{ marginTop: 0, display: 'flex', gap: 8, alignItems: 'center' }}>
+                  <Headphones size={18} aria-hidden /> Słuchaj nauczyciela — bez tekstu.
                 </p>
               )}
               {block.transcript?.length ? (
-                <div style={{ display: 'grid', gap: 8, marginTop: 10 }}>
-                  <p style={{ margin: 0, fontWeight: 700 }}>Transkrypt rozmowy</p>
+                <div className="nb-dialogue">
+                  <p className="nb-eyebrow" style={{ marginBottom: 8 }}>Transkrypt rozmowy</p>
                   {block.transcript.map((line, i) => (
-                    <p key={`${block.block_id}-t-${i}`} style={{ margin: 0 }}>
-                      <strong>{line.speaker}:</strong> {line.line}
+                    <p key={`${block.block_id}-t-${i}`}>
+                      <strong>{line.speaker}</strong> {line.line}
                     </p>
                   ))}
                 </div>
@@ -134,107 +134,103 @@ export function ExamTasks({ data, blockIds }: Props) {
 
           {block.items.map((item, idx) => {
             const ok = checked[item.id] ? isCorrect(item) : null;
+            const isTF = block.exercise_type === 'true-false';
+            const label = (v: string | undefined) =>
+              isTF ? (v === 'true' ? 'Prawda' : v === 'false' ? 'Fałsz' : v) : v;
+            const check = (given: string) => {
+              setAnswers((a) => ({ ...a, [item.id]: given }));
+              setChecked((c) => ({ ...c, [item.id]: true }));
+              trackAttempt({
+                blockId: block.block_id,
+                itemId: `${block.block_id}:${item.id}`,
+                itemType: block.exercise_type,
+                grammarPoint: block.exam_skill ?? null,
+                prompt: (isTF ? item.statement : item.question) ?? null,
+                answer: label(given) ?? '',
+                expected: label(expected(item)) ?? null,
+                correct: given === expected(item),
+              });
+            };
             return (
-              <div key={item.id} className="nb-panel" style={{ marginBottom: 12 }}>
-                <p style={{ margin: '0 0 10px', fontWeight: 700 }}>
-                  {idx + 1}.{' '}
-                  {block.exercise_type === 'true-false' ? item.statement : item.question}
-                </p>
+              <div
+                key={item.id}
+                className={`nb-panel nb-item${ok === true ? ' is-ok' : ok === false ? ' is-no' : ''}`}
+              >
+                <span className="nb-item-num" aria-hidden>
+                  {idx + 1}
+                </span>
+                <div>
+                  <p className="nb-q" style={{ marginBottom: 12 }}>
+                    {isTF ? item.statement : item.question}
+                  </p>
 
-                {block.exercise_type === 'true-false' ? (
-                  <div className="nb-row" style={{ marginTop: 0, gap: 8 }}>
-                    {[
-                      { v: 'true', label: 'Prawda' },
-                      { v: 'false', label: 'Fałsz' },
-                    ].map((opt) => (
-                      <button
-                        key={opt.v}
-                        type="button"
-                        className={`nb-btn${answers[item.id] === opt.v ? '' : ' ghost'}`}
-                        onClick={() => {
-                          setAnswers((a) => ({ ...a, [item.id]: opt.v }));
-                          setChecked((c) => ({ ...c, [item.id]: false }));
-                        }}
-                      >
-                        {opt.label}
-                      </button>
-                    ))}
-                  </div>
-                ) : (
-                  <div style={{ display: 'grid', gap: 8 }}>
-                    {(item.options ?? []).map((opt) => (
-                      <button
-                        key={opt}
-                        type="button"
-                        className={`nb-btn${answers[item.id] === opt ? '' : ' ghost'}`}
-                        style={{ justifyContent: 'flex-start', textAlign: 'left' }}
-                        onClick={() => {
-                          setAnswers((a) => ({ ...a, [item.id]: opt }));
-                          setChecked((c) => ({ ...c, [item.id]: false }));
-                        }}
-                      >
-                        {opt}
-                      </button>
-                    ))}
-                  </div>
-                )}
+                  {isTF ? (
+                    <div className="nb-tf-row" role="group" aria-label="Prawda czy fałsz">
+                      {[
+                        { v: 'true', label: 'Prawda' },
+                        { v: 'false', label: 'Fałsz' },
+                      ].map((opt) => {
+                        const sel = answers[item.id] === opt.v;
+                        return (
+                          <button
+                            key={opt.v}
+                            type="button"
+                            aria-pressed={sel}
+                            className={`nb-tf${sel ? ' sel' : ''}${sel && ok === true ? ' ok' : ''}${sel && ok === false ? ' no' : ''}`}
+                            onClick={() => check(opt.v)}
+                          >
+                            {opt.label}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    <div className="nb-mc">
+                      {(item.options ?? []).map((opt, oi) => {
+                        const sel = answers[item.id] === opt;
+                        return (
+                          <button
+                            key={opt}
+                            type="button"
+                            aria-pressed={sel}
+                            className={`nb-choice${sel ? ' sel' : ''}${sel && ok === true ? ' ok' : ''}${sel && ok === false ? ' no' : ''}`}
+                            onClick={() => check(opt)}
+                          >
+                            <span className="nb-choice-key">{String.fromCharCode(65 + oi)}</span>
+                            <span>{opt}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
 
-                <div className="nb-row" style={{ marginTop: 10 }}>
-                  <button
-                    type="button"
-                    className="nb-btn"
-                    disabled={answers[item.id] == null}
-                    onClick={() => {
-                      setChecked((c) => ({ ...c, [item.id]: true }));
-                      const given = answers[item.id];
-                      const label = (v: string | undefined) =>
-                        block.exercise_type === 'true-false'
-                          ? v === 'true'
-                            ? 'Prawda'
-                            : v === 'false'
-                              ? 'Fałsz'
-                              : v
-                          : v;
-                      trackAttempt({
-                        blockId: block.block_id,
-                        itemId: `${block.block_id}:${item.id}`,
-                        itemType: block.exercise_type,
-                        grammarPoint: block.exam_skill ?? null,
-                        prompt: (block.exercise_type === 'true-false' ? item.statement : item.question) ?? null,
-                        answer: label(given) ?? '',
-                        expected: label(expected(item)) ?? null,
-                        correct: given === expected(item),
-                      });
-                    }}
-                  >
-                    Sprawdź
-                  </button>
-                  {checked[item.id] && item.explanation ? (
-                    <button
-                      type="button"
-                      className="nb-btn ghost"
-                      onClick={() =>
-                        setShowExplain((s) => ({ ...s, [item.id]: !s[item.id] }))
+                  {ok === true ? (
+                    <Feedback
+                      kind="ok"
+                      action={
+                        item.explanation ? (
+                          <button
+                            type="button"
+                            className="nb-btn ghost sm"
+                            onClick={() => setShowExplain((s) => ({ ...s, [item.id]: !s[item.id] }))}
+                          >
+                            <Lightbulb aria-hidden /> {showExplain[item.id] ? 'Ukryj' : 'Dlaczego?'}
+                          </button>
+                        ) : null
                       }
                     >
-                      {showExplain[item.id] ? 'Ukryj wyjaśnienie' : 'Wyjaśnienie'}
-                    </button>
+                      <b>Dobrze!</b>
+                    </Feedback>
+                  ) : null}
+                  {ok === false ? (
+                    <Feedback kind="no">
+                      <b>Nie tym razem.</b> Przeczytaj jeszcze raz i wybierz inną odpowiedź.
+                    </Feedback>
+                  ) : null}
+                  {showExplain[item.id] && item.explanation && ok === true ? (
+                    <Feedback kind="hint">{item.explanation}</Feedback>
                   ) : null}
                 </div>
-
-                {ok === true ? (
-                  <p className="nb-note" style={{ color: 'var(--nb-ok, #2f7d32)' }}>
-                    Dobrze!
-                  </p>
-                ) : null}
-                {ok === false ? (
-                  <p className="nb-note" style={{ color: 'var(--nb-no, #b42318)' }}>
-                    Nie tym razem.
-                  </p>
-                ) : null}
-                {showExplain[item.id] && item.explanation ? (
-                  <p className="nb-note">{item.explanation}</p>
-                ) : null}
               </div>
             );
           })}

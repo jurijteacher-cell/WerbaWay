@@ -46,7 +46,7 @@ export default function SlidesPage({ params, searchParams }: Props) {
   }
 
   return (
-    <main style={{ background: '#E7E2D7', minHeight: '100vh' }}>
+    <main style={{ background: '#efeae0', minHeight: '100vh' }}>
       <NotebookShell levelHint="gramatyka · prezentacja">
         <GrammarSlides
           title={raw.title ?? 'Slajdy'}

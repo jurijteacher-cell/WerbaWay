@@ -1,7 +1,9 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { RotateCcw } from 'lucide-react';
 import { answersMatch } from '@/lib/answer-match';
+import { Feedback } from './nb-ui';
 
 type Props = {
   words: string[];
@@ -13,8 +15,10 @@ type Props = {
   onCheck?: (given: string, ok: boolean) => void;
 };
 
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
+type Tile = { id: number; word: string };
+
+function shuffled(words: string[]): Tile[] {
+  const a = words.map((word, id) => ({ id, word }));
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
@@ -23,43 +27,41 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 /**
+ * «Ułóż zdanie» — tap tiles into the line, tap again to send them back.
  * Rendered only inside embeds (light notebook theme).
  * Use ONLY `nb-*` classes / `--nb-*` variables here — never the dark site tokens
  * (`text-paper`, `bg-ink*`, `border-ink-line`, `text-gold`…): on notebook paper
  * they turn into cream text on white tiles (invisible). See docs/STYLE_NOTEBOOK.md.
  */
 export function SentenceBuilding({ words, answer, accept, disabled, onCheck }: Props) {
-  const bank = useMemo(() => shuffle(words), [words]);
-  const [picked, setPicked] = useState<string[]>([]);
-  const [remaining, setRemaining] = useState<string[]>(bank);
+  // shuffle after mount: random order on the server would break hydration
+  const [remaining, setRemaining] = useState<Tile[]>(() => words.map((word, id) => ({ id, word })));
+  const [picked, setPicked] = useState<Tile[]>([]);
   const [checked, setChecked] = useState<boolean | null>(null);
 
-  const pick = (word: string, fromRemaining: boolean) => {
-    if (disabled || checked === true) return;
-    if (checked === false) setChecked(null);
-    if (fromRemaining) {
-      setRemaining((r) => {
-        const i = r.indexOf(word);
-        if (i < 0) return r;
-        const next = [...r];
-        next.splice(i, 1);
-        return next;
-      });
-      setPicked((p) => [...p, word]);
-    } else {
-      setPicked((p) => {
-        const i = p.indexOf(word);
-        if (i < 0) return p;
-        const next = [...p];
-        next.splice(i, 1);
-        return next;
-      });
-      setRemaining((r) => [...r, word]);
-    }
+  useEffect(() => {
+    setRemaining(shuffled(words));
+    setPicked([]);
+    setChecked(null);
+  }, [words]);
+
+  const locked = disabled || checked === true;
+
+  const take = (t: Tile) => {
+    if (locked) return;
+    setChecked(null);
+    setRemaining((r) => r.filter((x) => x.id !== t.id));
+    setPicked((p) => [...p, t]);
+  };
+  const giveBack = (t: Tile) => {
+    if (locked) return;
+    setChecked(null);
+    setPicked((p) => p.filter((x) => x.id !== t.id));
+    setRemaining((r) => [...r, t]);
   };
 
   const check = () => {
-    const given = picked.join(' ');
+    const given = picked.map((t) => t.word).join(' ');
     const ok = answersMatch(given, answer, accept).ok;
     setChecked(ok);
     onCheck?.(given, ok);
@@ -67,7 +69,7 @@ export function SentenceBuilding({ words, answer, accept, disabled, onCheck }: P
 
   const reset = () => {
     setPicked([]);
-    setRemaining(shuffle(words));
+    setRemaining(shuffled(words));
     setChecked(null);
   };
 
@@ -75,45 +77,46 @@ export function SentenceBuilding({ words, answer, accept, disabled, onCheck }: P
 
   return (
     <div>
-      <div className={`nb-build-line${lineState}`}>
-        {picked.length === 0 && <span className="nb-build-ph">Ułóż zdanie…</span>}
-        {picked.map((w, i) => (
+      <div className={`nb-build-line${lineState}`} aria-live="polite">
+        {picked.length === 0 && <span className="nb-build-ph">Kliknij słowa w dobrej kolejności…</span>}
+        {picked.map((t) => (
           <button
-            key={`p-${w}-${i}`}
+            key={`p-${t.id}`}
             type="button"
-            onClick={() => pick(w, false)}
-            className={`nb-chip sel${checked === true ? ' ok' : ''}`}
+            onClick={() => giveBack(t)}
+            disabled={locked}
+            className={`nb-chip${checked === true ? ' ok' : ' sel'}`}
           >
-            {w}
+            {t.word}
           </button>
         ))}
       </div>
-      <div className="nb-row" style={{ marginTop: 10 }}>
-        {remaining.map((w, i) => (
-          <button key={`r-${w}-${i}`} type="button" onClick={() => pick(w, true)} className="nb-chip">
-            {w}
-          </button>
-        ))}
-      </div>
-      <div className="nb-row">
-        <button
-          type="button"
-          onClick={check}
-          disabled={picked.length === 0 || checked !== null}
-          className="nb-btn"
-        >
-          Sprawdź
-        </button>
-        <button type="button" onClick={reset} className="nb-btn ghost">
-          Reset
-        </button>
-        {checked === true && <span className="nb-score">Dobra robota!</span>}
-        {checked === false && (
-          <span className="nb-note" style={{ margin: 0 }}>
-            ✕ Spróbuj ponownie — przesuń kafelki.
-          </span>
-        )}
-      </div>
+      {remaining.length > 0 ? (
+        <div className="nb-build-bank">
+          {remaining.map((t) => (
+            <button key={`r-${t.id}`} type="button" onClick={() => take(t)} className="nb-chip">
+              {t.word}
+            </button>
+          ))}
+        </div>
+      ) : null}
+      {checked !== true && picked.length > 0 ? (
+        <div className="nb-row">
+          {remaining.length === 0 && checked !== false ? (
+            <button type="button" onClick={check} className="nb-btn sm nb-appear">
+              Sprawdź
+            </button>
+          ) : null}
+          {picked.length > 0 ? (
+            <button type="button" onClick={reset} className="nb-btn ghost sm" title="Od nowa">
+              <RotateCcw aria-hidden /> Od nowa
+            </button>
+          ) : null}
+        </div>
+      ) : null}
+      {checked === false ? (
+        <Feedback kind="no">Kolejność nie jest dobra. Kliknij słowo w linijce, żeby je cofnąć.</Feedback>
+      ) : null}
     </div>
   );
 }

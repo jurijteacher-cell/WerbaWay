@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type CSSProperties } from 'react';
+import { RefreshCw } from 'lucide-react';
 import { AudioCassette } from './AudioCassette';
 
 type DialogueLine = {
@@ -36,8 +37,8 @@ function DialogueScript({ lines }: { lines: DialogueLine[] }) {
       {lines.map((turn, i) => {
         const text = turn.line ?? turn.text ?? '';
         return (
-          <p key={i} style={{ margin: '0 0 0.5rem' }}>
-            {turn.speaker ? <strong>{turn.speaker}: </strong> : null}
+          <p key={i}>
+            {turn.speaker ? <strong>{turn.speaker}</strong> : null}
             {text}
           </p>
         );
@@ -46,6 +47,7 @@ function DialogueScript({ lines }: { lines: DialogueLine[] }) {
   );
 }
 
+/** Communication tasks: situation cards that flip (scenario + checklist on the back). Embed-only. */
 export function FlipTask({ title, instructions, instructionsUk, items, underCardAudio }: Props) {
   const [flipped, setFlipped] = useState<Record<string, boolean>>({});
 
@@ -55,62 +57,68 @@ export function FlipTask({ title, instructions, instructionsUk, items, underCard
         <p className="nb-eyebrow">zadania komunikacyjne</p>
         <h1>{title}</h1>
         {instructions ? <p>{instructions}</p> : null}
-        {instructionsUk ? (
-          <p className="nb-instruction-uk" style={{ fontSize: '0.9em', opacity: 0.85 }}>
-            {instructionsUk}
-          </p>
-        ) : null}
+        {instructionsUk ? <p className="nb-instruction-uk">{instructionsUk}</p> : null}
       </header>
 
-      <div className="nb-grid">
+      <div className="nb-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))' }}>
         {items.map((item, i) => {
           const key = String(item.id);
           const isBack = !!flipped[key];
           const isReadThenPlay = item.mode === 'read-then-play';
           const showDialogue =
-            (isReadThenPlay || item.mode === 'listen-then-play') &&
-            (item.model_dialogue?.length ?? 0) > 0;
+            (isReadThenPlay || item.mode === 'listen-then-play') && (item.model_dialogue?.length ?? 0) > 0;
           const dialogue = item.model_dialogue ?? [];
           const audioSrc =
-            underCardAudio?.itemId === key
-              ? underCardAudio.src ?? item.audio_url
-              : item.audio_url;
+            underCardAudio?.itemId === key ? underCardAudio.src ?? item.audio_url : item.audio_url;
+          const flip = () => setFlipped((prev) => ({ ...prev, [key]: !prev[key] }));
 
           return (
-            <div key={key}>
+            <div key={key} style={{ '--i': i, display: 'flex', flexDirection: 'column' } as CSSProperties}>
               <div
-                className={`nb-card ${COLORS[i % COLORS.length]}`}
+                className={`nb-flip ${COLORS[i % COLORS.length]}`}
+                style={{ flex: 1 }}
                 data-item-id={key}
                 data-flipped={isBack ? 'true' : 'false'}
                 data-mode={item.mode || undefined}
               >
-                <button
-                  type="button"
-                  data-role="flip"
-                  className="nb-flip-trigger"
-                  onClick={() => setFlipped((prev) => ({ ...prev, [key]: !prev[key] }))}
-                >
-                  {!isBack ? (
-                    <>
-                      <h3>{item.front_title}</h3>
-                      <div className="peek">kliknij, żeby odwrócić →</div>
-                    </>
-                  ) : (
-                    <>
-                      <p style={{ margin: 0 }}>{item.back_scenario}</p>
+                <div className="nb-flip-in">
+                  <button
+                    type="button"
+                    data-role="flip"
+                    className="nb-face front"
+                    aria-hidden={isBack}
+                    tabIndex={isBack ? -1 : 0}
+                    onClick={flip}
+                  >
+                    <span className="big" aria-hidden>
+                      {i + 1}
+                    </span>
+                    <span className="pos">sytuacja</span>
+                    <h3 className="task">{item.front_title}</h3>
+                    <span className="peek">
+                      <RefreshCw aria-hidden /> odwróć kartę
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    className="nb-face back"
+                    aria-hidden={!isBack}
+                    tabIndex={isBack ? 0 : -1}
+                    onClick={flip}
+                  >
+                    <span style={{ display: 'block' }}>{item.back_scenario}</span>
+                    {item.back_checklist?.length ? (
                       <ul>
                         {item.back_checklist.map((line) => (
                           <li key={line}>{line}</li>
                         ))}
                       </ul>
-                    </>
-                  )}
-                </button>
+                    ) : null}
+                  </button>
+                </div>
               </div>
               {showDialogue ? <DialogueScript lines={dialogue} /> : null}
-              {!isReadThenPlay && audioSrc ? (
-                <AudioCassette src={audioSrc} defaultSpeed={0.75} />
-              ) : null}
+              {!isReadThenPlay && audioSrc ? <AudioCassette src={audioSrc} defaultSpeed={0.75} /> : null}
             </div>
           );
         })}
