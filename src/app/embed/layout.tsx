@@ -37,10 +37,13 @@ export default function EmbedLayout({ children }: { children: ReactNode }) {
         backgroundSize: '22px 22px',
       }}
     >
-      <style>{`
-        body > header { display: none !important; }
-        body { background: #E7E2D7 !important; }
-      `}</style>
+      {/* dangerouslySetInnerHTML: a text child would be escaped ('>' → '&gt;') on the server and
+          mismatch on the client, which throws away hydration of every embed (blank / stuck on phones). */}
+      <style
+        dangerouslySetInnerHTML={{
+          __html: 'body > header { display: none !important; } body { background: #E7E2D7 !important; }',
+        }}
+      />
       <NotebookShell levelHint="lekcja · ćwiczenia" aside={<StudentCodeBar />}>{children}</NotebookShell>
     </div>
   );
