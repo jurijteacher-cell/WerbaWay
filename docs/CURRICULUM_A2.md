@@ -1,7 +1,9 @@
-# Werba Way — курс A2 (v1.1, 2026-11-04)
+# Werba Way — курс A2 (v1.2, 2026-11-05)
 
 Модуль: `pl-a2` · формат: **індивідуально, 60 хв** на урок (шаблон `light-60 A2`, нижче) · id нового уроку: `pl-a2-{n}-{slug}`, `n` наскрізний від 47 (продовження A1: уроки 1–46)
 Запит у новому чаті: «Урок 2.3» (або «Урок 58»).
+
+**v1.2 (2026-11-05)** — порядок тем вирівняно під сюжет (номери в таблицях уже нові): M1 — договір (51) іде одразу після співбесіди, потім перший день (52) і команда (53); M3 «Mama w Krakowie» — спершу мама приїжджає й знайомиться з колегами (63), зовнішність (64), потім здоров'я (65–67); M4 — місто (70 житло, 71 пошта/банк ✅), потім підготовка поїздки (72 ціни, готель), сама поїздка (73) і улюблені місця (74). Граматичні залежності `rec` перевірено: кожен тег приходить раніше, ніж повторюється. План з переходами на готові уроки — на сторінці модуля «Польська A2» у Notion (розділ «🗺️ План курсу»).
 
 **v1.0 (2026-11-04)** замінює скелет v0.1 (42 × 90 хв, група). Рішення Юри:
 - формат — індивідуальні уроки по 60 хв;
@@ -59,6 +61,8 @@
 
 Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 
+**Хронологія сюжету (з уроку 51):** Olena підписує umowa na okres próbny 27.11.2026 (пт), працює з 1.12.2026 (вт) до 28.02.2027, пн–пт 9:00–17:00 у бюро подорожей на Kazimierzu; планує urlop 5–16.07.2027 (весілля подруги у Львові). Tomek просить urlop 15–26.02.2027, Olena його заміщає. Нові уроки не суперечать цим датам.
+
 ## 4. Карта курсу
 
 Статус: ✅ готовий урок (входить як є) · ♻️ граматика з готового уроку, тема нова · 🆕 пишемо з нуля.
@@ -77,9 +81,9 @@ Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 |---|---|---|---|---|---|---|---|
 | 49 | 1.1 | ✅ | 49 · Szukam pracy | `pl-a2-49-szukam-pracy` (2026-11-04); граматика з `pl-preg-07-zakupy-i-budzet` | `dopelniacz-przyimki` (+ *szukać, potrzebować, uczyć się* + D.) | родовий з 48 | оголошення, CV, дзвінок у справі оголошення |
 | 50 | 1.2 | ✅ | 07 · Moja praca to moja pasja! Zawody, warunki i rozmowa o pracę | `pl-a2-mow-07-praca` | `przyimki-czasu` (od kiedy, jak długo), *pracuję jako*, *powinienem* (вступ) | `narzednik-zawod-z`, `dopelniacz-przyimki` | професії, співбесіда |
-| 51 | 1.3 | 🆕 | Poznaję zespół | — | `zaimki-osobowe-przypadki` | `biernik-rzeczownik`, `pan-pani` | перший день, офіс, колеги |
-| 52 | 1.4 | ♻️ | Z kim pracuję | граматика `pl-preg-06-wizyta-po-pologu` (орудний: прикметник, *być kimś*, прийменники) | `narzednik-pelny` | `zaimki-osobowe-przypadki`, `narzednik-zawod-z` | відділи, посади, наради |
-| 53 | 1.5 | ♻️ | Umowa i urlop | граматика `pl-b1-group-02-wydarzenia`, спрощена до A2 (порядкові, повна дата, *od … do*) | `liczebniki-porzadkowe`, `data-pelna` | `przyimki-czasu`, `godzina` | договір, графік, відпустка |
+| 51 | 1.3 | ✅ | 51 · Umowa i urlop | `pl-a2-51-umowa-i-urlop` (2026-11-05); граматика `pl-b1-group-02-wydarzenia`, спрощена до A2 (порядкові, повна дата, *od … do*) | `liczebniki-porzadkowe`, `data-pelna` | `przyimki-czasu`, `godzina` | договір, графік, відпустка |
+| 52 | 1.4 | 🆕 | Poznaję zespół | — | `zaimki-osobowe-przypadki` | `biernik-rzeczownik`, `pan-pani` | перший день, офіс, колеги |
+| 53 | 1.5 | ♻️ | Z kim pracuję | граматика `pl-preg-06-wizyta-po-pologu` (орудний: прикметник, *być kimś*, прийменники) | `narzednik-pelny` | `zaimki-osobowe-przypadki`, `narzednik-zawod-z` | відділи, посади, наради |
 | 54 | 1.6 | 🆕 | Powtórka: praca | — | — | теги M1 | перший місяць у фірмі |
 | 55 | 1.7 | 🆕 | Kontrolna: praca | — | — | теги M1 | Taras питає про роботу |
 
@@ -95,14 +99,14 @@ Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 | 61 | 2.6 | 🆕 | Powtórka: opowiadam | — | — | теги M2 | щоденник Олени |
 | 62 | 2.7 | 🆕 | Kontrolna: opowiadam | — | — | теги M2 | Kasia просить переказати подію |
 
-### M3 · Zdrowie i rady (63–69)
+### M3 · Mama w Krakowie: ludzie i zdrowie (63–69)
 
 | n | cid | Статус | Урок | Джерело | new | rec | Тема |
 |---|---|---|---|---|---|---|---|
-| 63 | 3.1 | ♻️ | Zdrowy styl życia | граматика `pl-preg-03-przygotowania-do-porodu` (наказовий: ty / wy / my, *nie* + ndk, порада чи наказ) | `rozkaznik-pelny` | `rozkaznik-podstawowy`, `modalne-bezokolicznik` | спорт, сон, харчування |
-| 64 | 3.2 | ♻️ | Co powinnam zrobić? | граматика `pl-preg-01-pierwsza-wizyta` (модальні: піраміда) | `modalne-obowiazek` | `rozkaznik-pelny`, *powinienem* з 50 | поради хворому колезі |
-| 65 | 3.3 | 🆕 | Znam go, widzę ją | — (лексику родини можна взяти з `pl-kp-03`) | `biernik-osobowy` | `zaimki-osobowe-przypadki` | мама знайомиться з колегами |
-| 66 | 3.4 | 🆕 | Jak wygląda? | — | `przymiotnik-przypadki` | `narzednik-pelny`, `miejscownik-pelny` | зовнішність, одяг, загублена сумка |
+| 63 | 3.1 | 🆕 | Znam go, widzę ją | — (лексику родини можна взяти з `pl-kp-03`) | `biernik-osobowy` | `zaimki-osobowe-przypadki` | мама знайомиться з колегами |
+| 64 | 3.2 | 🆕 | Jak wygląda? | — | `przymiotnik-przypadki` | `narzednik-pelny`, `miejscownik-pelny` | зовнішність, одяг, загублена сумка |
+| 65 | 3.3 | ♻️ | Zdrowy styl życia | граматика `pl-preg-03-przygotowania-do-porodu` (наказовий: ty / wy / my, *nie* + ndk, порада чи наказ) | `rozkaznik-pelny` | `rozkaznik-podstawowy`, `modalne-bezokolicznik` | спорт, сон, харчування |
+| 66 | 3.4 | ♻️ | Co powinnam zrobić? | граматика `pl-preg-01-pierwsza-wizyta` (модальні: піраміда) | `modalne-obowiazek` | `rozkaznik-pelny`, *powinienem* з 50 | поради мамі й колезі |
 | 67 | 3.5 | ♻️ | Jest mi zimno | граматика `pl-preg-04-pierwsze-dni-w-domu` (давальний: *komu?*, займенники, *jest mi, chce mi się*) | `celownik-osoby`, `celownik-bezosobowe` | *smakuje mi* з 48 | мама хворіє, візит до doktor Nowickiej |
 | 68 | 3.6 | 🆕 | Powtórka: zdrowie | — | — | теги M3 | — |
 | 69 | 3.7 | 🆕 | Kontrolna: zdrowie | — | — | теги M3 | — |
@@ -112,9 +116,9 @@ Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 | n | cid | Статус | Урок | Джерело | new | rec | Тема |
 |---|---|---|---|---|---|---|---|
 | 70 | 4.1 | ✅ | 05 · Szukam mieszkania! Dom, pokoje i okolica | `pl-a2-mow-05-mieszkanie` (+ версія RU) | `przyimki-kierunku` (*gdzie / dokąd*, *obok, nad, w*) | `miejscownik-pelny`, `przymiotnik-przypadki` | житло, район |
-| 71 | 4.2 | 🆕 | Przyjechał, wyszedł | — | `isc-jechac-przedrostki` | `przyimki-kierunku`, `aspekt-przeszly` | поїзд до Zakopanego |
-| 72 | 4.3 | ✅ | 06 · Muszę wysłać paczkę! Poczta, bank i naprawy | `pl-a2-mow-06-uslugi` | `warunkowy-prosby` (ввічливе прохання) | `czas-przeszly-rodzaj`, `przyimki-kierunku` | пошта, банк, сервіс |
-| 73 | 4.4 | 🆕 | Tańszy, lepszy, najlepszy | — | `stopniowanie`, `porownania` | *woleć … niż* з 47, `warunkowy-prosby` | готель, квитки, ціни |
+| 71 | 4.2 | ✅ | 06 · Muszę wysłać paczkę! Poczta, bank i naprawy | `pl-a2-mow-06-uslugi` | `warunkowy-prosby` (ввічливе прохання) | `czas-przeszly-rodzaj`, `przyimki-kierunku` | пошта, банк, сервіс |
+| 72 | 4.3 | 🆕 | Tańszy, lepszy, najlepszy | — | `stopniowanie`, `porownania` | *woleć … niż* з 47, `warunkowy-prosby` | готель, квитки, ціни |
+| 73 | 4.4 | 🆕 | Przyjechał, wyszedł | — | `isc-jechac-przedrostki` | `przyimki-kierunku`, `aspekt-przeszly` | поїзд до Zakopanego |
 | 74 | 4.5 | 🆕 | Miejsce, które lubię | — | `ktory-podstawy` | `miejscownik-pelny`, `stopniowanie` | місто, пам'ятки |
 | 75 | 4.6 | 🆕 | Powtórka: podróże | — | — | теги M4 | — |
 | 76 | 4.7 | 🆕 | Kontrolna: podróże | — | — | теги M4 | — |
@@ -141,7 +145,7 @@ Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 | 87 | 6.4 | 🆕 | Powtórka generalna | — | — | усі A2 | Olena допомагає новачку |
 | 88 | 6.5 | 🆕 | Egzamin A2 (2 × 60 хв) | — | — | усі A2 | — |
 
-**Разом:** 42 одиниці = 5 ✅ · 11 ♻️ · 26 🆕 (план v1.0). Готово на 2026-11-04: 6 (47, 48, 49, 50, 70, 72). Контакт 43 год (42 уроки × 60 хв + друге заняття іспиту) + домашка ~0,5 год на урок ≈ 64 год. Темп 2 уроки на тиждень — 21 тиждень.
+**Разом:** 42 одиниці = 5 ✅ · 11 ♻️ · 26 🆕 (план v1.0). Готово на 2026-11-05: 7 (47, 48, 49, 50, 51, 70, 71). Контакт 43 год (42 уроки × 60 хв + друге заняття іспиту) + домашка ~0,5 год на урок ≈ 64 год. Темп 2 уроки на тиждень — 21 тиждень.
 
 ## 5. Як переробляти уроки ♻️
 
@@ -212,11 +216,11 @@ grammar_points_a2:
 | Черга | Уроки | Що робити |
 |---|---|---|
 | 1 | ~~49 Szukam pracy~~ | ✅ 2026-11-04; модуль «Польська A2» (`pl-a2`) створено |
-| 2 | 51, 52, 53 | 🆕 займенники; ♻️ орудний з `pl-preg-06`; ♻️ дати з Wydarzenia |
+| 2 | ~~51~~, 52, 53 | ✅ 51 (2026-11-05); 🆕 займенники; ♻️ орудний з `pl-preg-06` |
 | 3 | 54, 55 | повторення й контрольна M1 |
 | 4 | 56–62 | M2: вид (♻️ `pl-preg-02` на три уроки), *kiedy / zanim*, місцевий (♻️ `pl-preg-05`) |
 | 5 | 63–69 | M3 |
-| 6 | 71, 73–76 | M4 (70 і 72 готові) |
+| 6 | 72–76 | M4 (70 і 71 готові) |
 | 7 | 77–83 | M5 |
 | 8 | 84–88 | M6 та іспит |
 
@@ -225,17 +229,19 @@ grammar_points_a2:
 ## 9. Notion
 
 - Новий модуль «Польська A2» (`Код` = `pl-a2`, рівень A2) у базі «Модулі» — за `NOTION_STRUCTURE.md` §5.
-- Готові уроки ✅ (47, 48, 50, 70, 72) **не переносяться і не копіюються**: у поле `Модуль` кожного з них (і їхніх TEACHER) додається ще «Польська A2». Поле приймає кілька модулів, тож уроки лишаються й у «Розмовна польська A2», і з'являються в A2.
+- Готові уроки ✅ (47, 48, 50, 70, 71) **не переносяться і не копіюються**: у поле `Модуль` кожного з них (і їхніх TEACHER) додається ще «Польська A2». Поле приймає кілька модулів, тож уроки лишаються й у «Розмовна польська A2», і з'являються в A2.
 - Нові уроки — рядки бази «Уроки» з `Модуль` = «Польська A2».
 - Модуль «Польська A2»: `Код` = `pl-a2`, page `40e96e03c7c8815e8f91c3e8684a92a3`. Галерея сортує за полем «№ у курсі» (= `n` цієї карти), потім за назвою. Кожному новому уроку (і TEACHER) ставити «№ у курсі» = `n`; назва — `{n} · {назва}`.
+- На сторінці модуля під галереєю — розділ «🗺️ План курсу» (тогли по модулях, готові уроки — посиланнями, майбутні — сірим). Коли урок опубліковано, сірий рядок замінити на посилання (`update_content`, точково). При зміні порядку — оновити і карту, і цей розділ, і «№ у курсі».
 
 ## 10. Ризики й відкриті питання
 
 1. **Годин мало.** 42 год контакту — це на третину менше за скелет (63) і помітно менше за звичні орієнтири для A2. Для україномовних це, ймовірно, реально, але лише з домашкою щоразу. Якщо учень не робить ДЗ — розтягувати модуль, а не тиснути темп.
 2. **Вид дієслова (56–58)** — найважче місце. Три уроки підряд з одного джерела: стежити, щоб вправи не повторювались із `pl-preg-02`.
-3. **M3 щільний:** 6 нових тегів за 5 уроків (67 несе два). Якщо 66 не закріпиться — перенести `przymiotnik-przypadki` у M4.
+3. **M3 щільний:** 6 нових тегів за 5 уроків (67 несе два). Якщо 64 не закріпиться — перенести `przymiotnik-przypadki` у M4.
 4. **Готові уроки ✅ з іншими персонажами й нумерацією.** Не критично, але в сюжеті буде «шов». Порядок у галереї вирішено полем «№ у курсі» (2026-11-04).
 5. **Різна мова учнів.** Пастки й глоси — під мову конкретного учня (UA або RU, як `05 · Szukam mieszkania · RU`).
 6. **Окремого діагностичного уроку немає** — вхід через тест poziomujący. Якщо учень приходить без тесту, перше заняття 47 дає 5 хв діагностичної розмови.
 7. **Реєстр тегів.** Теги A2 і мапінг старих тегів треба внести в `grammar_points`, інакше Supabase не рахуватиме mastery.
 8. `CURRICULUM_MASTER_A0-B2.md` ще описує A2 як «скелет v0.1, 90 хв» — за правилом пріоритету перемагає ця карта; master варто оновити.
+9. **Майбутній доконаний (58) у M1 не вживається.** Тексти й вправи 49–55 обходяться *będę + інф.*, *chcę / mogę + інф.* і теперішнім часом; не вводити *podpiszę, wezmę* раніше за 58.
