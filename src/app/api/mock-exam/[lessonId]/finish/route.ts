@@ -32,5 +32,6 @@ export async function POST(req: NextRequest, { params }: Ctx) {
   return NextResponse.json({
     score,
     notionSaved: notion.ok,
+    notionError: notion.ok ? undefined : (notion.error ?? '').split(':')[0],
   });
 }
