@@ -1,0 +1,472 @@
+{
+  "lesson_id": "pl-a1-en-02-rodzaj-przymiotniki",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: rodzaj i przymiotniki",
+  "instruction": "Try first, then press Sprawdź (check).",
+  "eyebrow": "ćwiczenia",
+  "estimated_minutes": 35,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "true-false",
+      "title": "1. Prawda czy fałsz?",
+      "instruction": "Przeczytaj zdanie i wybierz: prawda czy fałsz.",
+      "instruction_uk": "Texts 1 and 2. Prawda = true, fałsz = false.",
+      "items": [
+        {
+          "id": "g1-1",
+          "statement": "Mieszkanie Toma jest duże.",
+          "answer": false,
+          "explanation": "„Nie jest duże, ale jest bardzo jasne.”",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g1-2",
+          "statement": "Tom pije rano kawę na balkonie.",
+          "answer": true,
+          "explanation": "„Rano piję tam kawę i czytam.”",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g1-3",
+          "statement": "Łazienka jest nowa i jasna.",
+          "answer": false,
+          "explanation": "Łazienka jest stara i ciemna.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g1-4",
+          "statement": "Kasia jest wysoka i bardzo otwarta.",
+          "answer": true,
+          "explanation": "„Kasia jest wysoka, szczupła i zawsze uśmiechnięta. Jest bardzo otwarta.”",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g1-5",
+          "statement": "Michał dużo mówi.",
+          "answer": false,
+          "explanation": "„On rzadko mówi.”",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g1-6",
+          "statement": "Praca Kasi jest ciekawa.",
+          "answer": false,
+          "explanation": "„Jej praca jest nudna, ale dobrze płatna.”",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Mój, moja czy moje?",
+      "instruction": "Wybierz dobrą formę.",
+      "instruction_uk": "Look at the end of the noun: consonant → mój, -a → moja, -o / -e / -ę / -um → moje. Watch the exceptions!",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "To jest ___. Ma trzy pokoje.",
+          "answer": "moje mieszkanie",
+          "options": [
+            "moje mieszkanie",
+            "mój mieszkanie",
+            "moja mieszkanie"
+          ],
+          "grammar_point": "rodzaj-rzeczownika",
+          "explanation": "mieszkanie ends in -e → ono → moje."
+        },
+        {
+          "id": "g2-2",
+          "text": "Gdzie jest ___? Nie mogę zadzwonić.",
+          "answer": "mój telefon",
+          "options": [
+            "mój telefon",
+            "moja telefon",
+            "moje telefon"
+          ],
+          "grammar_point": "rodzaj-rzeczownika",
+          "explanation": "telefon ends in a consonant → on → mój."
+        },
+        {
+          "id": "g2-3",
+          "text": "To jest ___. Mieszka w Gdańsku.",
+          "answer": "moja siostra",
+          "options": [
+            "moja siostra",
+            "mój siostra",
+            "moje siostra"
+          ],
+          "grammar_point": "rodzaj-rzeczownika",
+          "explanation": "siostra ends in -a → ona → moja."
+        },
+        {
+          "id": "g2-4",
+          "text": "A to ___. Ma pięćdziesiąt lat.",
+          "answer": "mój tata",
+          "options": [
+            "mój tata",
+            "moja tata",
+            "moje tata"
+          ],
+          "grammar_point": "rodzaj-wyjatki",
+          "explanation": "tata ends in -a, but he is a man → on → mój."
+        },
+        {
+          "id": "g2-5",
+          "text": "Kraków to ___ miasto.",
+          "answer": "moje ulubione",
+          "options": [
+            "moje ulubione",
+            "mój ulubiony",
+            "moja ulubiona"
+          ],
+          "grammar_point": "rodzaj-rzeczownika",
+          "explanation": "miasto ends in -o → ono → moje ulubione."
+        },
+        {
+          "id": "g2-6",
+          "text": "To jest ___. Ania, a to Ola.",
+          "answer": "moje imię",
+          "options": [
+            "moje imię",
+            "mój imię",
+            "moja imię"
+          ],
+          "grammar_point": "rodzaj-wyjatki",
+          "explanation": "imię ends in -ę → ono → moje."
+        },
+        {
+          "id": "g2-7",
+          "text": "Polski to ___!",
+          "answer": "moja miłość",
+          "options": [
+            "moja miłość",
+            "mój miłość",
+            "moje miłość"
+          ],
+          "grammar_point": "rodzaj-wyjatki",
+          "explanation": "-ość words are ona: moja miłość, moja wiadomość."
+        },
+        {
+          "id": "g2-8",
+          "text": "Tu jest ___: Narodowe w Warszawie.",
+          "answer": "moje ulubione muzeum",
+          "options": [
+            "moje ulubione muzeum",
+            "mój ulubiony muzeum"
+          ],
+          "grammar_point": "rodzaj-wyjatki",
+          "explanation": "-um words are ono: muzeum, centrum."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. On, ona czy ono?",
+      "instruction": "Wpisz: on, ona albo ono.",
+      "instruction_uk": "Replace the noun with a pronoun. In Polish a table is „he” and a door is „she”.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Gdzie jest klucz? — ___ jest na stole.",
+          "answer": "on",
+          "grammar_point": "rodzaj-rzeczownika",
+          "explanation": "klucz → consonant → on."
+        },
+        {
+          "id": "g3-2",
+          "text": "Gdzie jest torba? — ___ jest w samochodzie.",
+          "answer": "ona",
+          "grammar_point": "rodzaj-rzeczownika",
+          "explanation": "torba → -a → ona."
+        },
+        {
+          "id": "g3-3",
+          "text": "Gdzie jest krzesło? — ___ jest w kuchni.",
+          "answer": "ono",
+          "grammar_point": "rodzaj-rzeczownika",
+          "explanation": "krzesło → -o → ono."
+        },
+        {
+          "id": "g3-4",
+          "text": "Gdzie jest kolega? — ___ jest jeszcze w pracy.",
+          "answer": "on",
+          "grammar_point": "rodzaj-wyjatki",
+          "explanation": "kolega is a man → on."
+        },
+        {
+          "id": "g3-5",
+          "text": "Gdzie jest gazeta? — ___ jest pod kanapą.",
+          "answer": "ona",
+          "grammar_point": "rodzaj-rzeczownika"
+        },
+        {
+          "id": "g3-6",
+          "text": "Gdzie jest muzeum? — ___ jest obok parku.",
+          "answer": "ono",
+          "grammar_point": "rodzaj-wyjatki",
+          "explanation": "-um → ono."
+        },
+        {
+          "id": "g3-7",
+          "text": "Gdzie jest rachunek? — ___ jest w szufladzie.",
+          "answer": "on",
+          "grammar_point": "rodzaj-rzeczownika"
+        },
+        {
+          "id": "g3-8",
+          "text": "Jaka jest wiadomość? — ___ jest bardzo dobra!",
+          "answer": "ona",
+          "grammar_point": "rodzaj-wyjatki",
+          "explanation": "-ość → ona."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Wybierz formę przymiotnika",
+      "instruction": "Wybierz dobrą formę.",
+      "instruction_uk": "on → -y / -i · ona → -a · ono → -e / -ie. And for people: is the person a man or a woman?",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Kuchnia jest ___.",
+          "answer": "czysta",
+          "options": [
+            "czysta",
+            "czysty",
+            "czyste"
+          ],
+          "grammar_point": "przymiotnik-zgoda",
+          "explanation": "kuchnia → ona → czysta."
+        },
+        {
+          "id": "g4-2",
+          "text": "Okno jest ___.",
+          "answer": "otwarte",
+          "options": [
+            "otwarte",
+            "otwarty",
+            "otwarta"
+          ],
+          "grammar_point": "przymiotnik-zgoda",
+          "explanation": "okno → ono → otwarte."
+        },
+        {
+          "id": "g4-3",
+          "text": "Pokój jest bardzo ___.",
+          "answer": "wygodny",
+          "options": [
+            "wygodny",
+            "wygodna",
+            "wygodne"
+          ],
+          "grammar_point": "przymiotnik-zgoda"
+        },
+        {
+          "id": "g4-4",
+          "text": "Mój brat jest ___.",
+          "answer": "wysoki",
+          "options": [
+            "wysoki",
+            "wysoka",
+            "wysoky"
+          ],
+          "grammar_point": "przymiotnik-i",
+          "explanation": "After k we write -i: wysoki (never -ky)."
+        },
+        {
+          "id": "g4-5",
+          "text": "Twoje mieszkanie jest ___?",
+          "answer": "drogie",
+          "options": [
+            "drogie",
+            "drogi",
+            "droga"
+          ],
+          "grammar_point": "przymiotnik-i",
+          "explanation": "ono → -ie after g: drogie."
+        },
+        {
+          "id": "g4-6",
+          "text": "Emma: — Dzisiaj jestem bardzo ___.",
+          "answer": "zmęczona",
+          "options": [
+            "zmęczona",
+            "zmęczony",
+            "zmęczone"
+          ],
+          "grammar_point": "byc-przymiotnik",
+          "explanation": "Emma is a woman → zmęczona."
+        },
+        {
+          "id": "g4-7",
+          "text": "Pan jest ___ z mieszkania?",
+          "answer": "zadowolony",
+          "options": [
+            "zadowolony",
+            "zadowolona",
+            "zadowolone"
+          ],
+          "grammar_point": "byc-przymiotnik",
+          "explanation": "Pan → a man → zadowolony."
+        },
+        {
+          "id": "g4-8",
+          "text": "Mój dziadek jest ___ i spokojny.",
+          "answer": "miły",
+          "options": [
+            "miły",
+            "miła",
+            "miłe"
+          ],
+          "grammar_point": "przymiotnik-zgoda"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Napisz formę",
+      "instruction": "Wpisz przymiotnik w dobrej formie.",
+      "instruction_uk": "The adjective in brackets is in the „on” form. Change it if you need to.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "To muzeum jest zupełnie ___. (nowy)",
+          "answer": "nowe",
+          "grammar_point": "przymiotnik-zgoda",
+          "explanation": "muzeum → ono → nowe."
+        },
+        {
+          "id": "g5-2",
+          "text": "Ola jest bardzo ___. (nieśmiały)",
+          "answer": "nieśmiała",
+          "grammar_point": "przymiotnik-zgoda"
+        },
+        {
+          "id": "g5-3",
+          "text": "Noc w górach jest ___. (cichy)",
+          "answer": "cicha",
+          "grammar_point": "rodzaj-wyjatki",
+          "explanation": "noc → ona → cicha."
+        },
+        {
+          "id": "g5-4",
+          "text": "Wasz balkon jest ___. (słoneczny)",
+          "answer": "słoneczny",
+          "grammar_point": "przymiotnik-zgoda"
+        },
+        {
+          "id": "g5-5",
+          "text": "Twoja wiadomość jest bardzo ___. (ważny)",
+          "answer": "ważna",
+          "grammar_point": "rodzaj-wyjatki",
+          "explanation": "wiadomość → ona → ważna."
+        },
+        {
+          "id": "g5-6",
+          "text": "Mój kolega jest naprawdę ___. (zabawny)",
+          "answer": "zabawny",
+          "grammar_point": "rodzaj-wyjatki",
+          "explanation": "kolega → on → zabawny."
+        },
+        {
+          "id": "g5-7",
+          "text": "Czy pani jest ___ z nowej pracy? (zadowolony)",
+          "answer": "zadowolona",
+          "grammar_point": "byc-przymiotnik",
+          "explanation": "pani → a woman → zadowolona."
+        },
+        {
+          "id": "g5-8",
+          "text": "Ta kawiarnia jest ___. (tani)",
+          "answer": "tania",
+          "grammar_point": "przymiotnik-i",
+          "explanation": "tani → tania, tanie."
+        },
+        {
+          "id": "g5-9",
+          "text": "Jezioro jest bardzo ___. (głęboki)",
+          "answer": "głębokie",
+          "grammar_point": "przymiotnik-i",
+          "explanation": "jezioro → ono → głębokie."
+        },
+        {
+          "id": "g5-10",
+          "text": "Twoje imię jest ___! (piękny)",
+          "answer": "piękne",
+          "grammar_point": "rodzaj-wyjatki",
+          "explanation": "imię → ono → piękne."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "6. Popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "instruction_uk": "One mistake per sentence — sometimes from today, sometimes from lesson 1.",
+      "items": [
+        {
+          "id": "g6-1",
+          "prompt": "Nasze mieszkanie jest duży.",
+          "answer": "Nasze mieszkanie jest duże.",
+          "grammar_point": "przymiotnik-zgoda",
+          "explanation": "mieszkanie → ono → duże."
+        },
+        {
+          "id": "g6-2",
+          "prompt": "Emma mówi: Jestem bardzo zmęczony.",
+          "answer": "Emma mówi: Jestem bardzo zmęczona.",
+          "grammar_point": "byc-przymiotnik",
+          "accept": [
+            "Emma mówi: jestem bardzo zmęczona.",
+            "Jestem bardzo zmęczona."
+          ],
+          "explanation": "Emma is a woman → zmęczona."
+        },
+        {
+          "id": "g6-3",
+          "prompt": "Pani jesteś zadowolona?",
+          "answer": "Pani jest zadowolona?",
+          "grammar_point": "pan-pani",
+          "accept": [
+            "Czy pani jest zadowolona?"
+          ],
+          "explanation": "pani → the ona form of być: jest."
+        },
+        {
+          "id": "g6-4",
+          "prompt": "Mój tata jest wysoka.",
+          "answer": "Mój tata jest wysoki.",
+          "grammar_point": "rodzaj-wyjatki",
+          "explanation": "tata is a man → wysoki."
+        },
+        {
+          "id": "g6-5",
+          "prompt": "Michał rzadko mówią.",
+          "answer": "Michał rzadko mówi.",
+          "grammar_point": "osoby-koncowki",
+          "explanation": "Michał = on → mówi (lesson 1)."
+        },
+        {
+          "id": "g6-6",
+          "prompt": "Ta wiadomość jest bardzo dobry.",
+          "answer": "Ta wiadomość jest bardzo dobra.",
+          "grammar_point": "rodzaj-wyjatki",
+          "explanation": "wiadomość → ona → dobra."
+        }
+      ]
+    }
+  ]
+}
