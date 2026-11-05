@@ -34,10 +34,10 @@ export type TrackerState = {
 };
 
 /**
- * Master switch. Off until migration 0005_embed_results.sql is applied in Supabase —
- * otherwise students would see a code field that can't work.
+ * Master switch (migration 0005 applied in Supabase 2026-11-05). Turning it off hides
+ * the code bar and stops recording.
  */
-export const EMBED_RESULTS_ENABLED = false;
+export const EMBED_RESULTS_ENABLED = true;
 
 const LS_CODE = 'ww_student_code';
 const LS_NAME = 'ww_student_name';
