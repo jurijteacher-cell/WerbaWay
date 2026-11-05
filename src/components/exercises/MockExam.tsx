@@ -23,6 +23,14 @@ function storeKey(id: string) {
   return `werba-mock:${id}`;
 }
 
+type Stored = {
+  imie?: string;
+  answers?: Answers;
+  startedAt?: number;
+  tab?: Tab;
+  result?: { score: MockScore; saved: boolean };
+};
+
 type Ctx = {
   answers: Answers;
   set: (id: string, v: string) => void;
@@ -58,31 +66,48 @@ export function MockExam({ lessonId }: { lessonId: string }) {
       .catch(() => setLoadError('Nie udało się wczytać egzaminu. Odśwież stronę.'));
   }, [lessonId]);
 
-  // restore an unfinished attempt (same browser)
+  // Attempt state lives in this browser: unfinished answers, the open tab and, after sending,
+  // the result itself — so closing the embed by accident never loses work or the score.
+  const [restored, setRestored] = useState(false);
   useEffect(() => {
     try {
       const raw = localStorage.getItem(storeKey(lessonId));
       if (raw) {
-        const s = JSON.parse(raw) as { imie?: string; answers?: Answers; startedAt?: number };
+        const s = JSON.parse(raw) as Stored;
         if (s.imie) setImie(s.imie);
         if (s.answers) setAnswers(s.answers);
         if (s.startedAt) setStartedAt(s.startedAt);
+        if (s.result?.score) {
+          setScore(s.result.score);
+          setSaved(s.result.saved);
+          setTab('wynik');
+        } else if (s.tab && s.startedAt) {
+          setTab(s.tab);
+        }
       }
     } catch {
       /* storage unavailable */
     }
     const q = new URLSearchParams(window.location.search).get('imie');
-    if (q) setImie(q);
+    if (q) setImie((cur) => cur || q);
+    setRestored(true);
   }, [lessonId]);
 
   useEffect(() => {
-    if (score || startedAt == null) return;
+    if (!restored || startedAt == null) return;
     try {
-      localStorage.setItem(storeKey(lessonId), JSON.stringify({ imie, answers, startedAt }));
+      const data: Stored = {
+        imie,
+        answers,
+        startedAt,
+        tab,
+        result: score ? { score, saved: Boolean(saved) } : undefined,
+      };
+      localStorage.setItem(storeKey(lessonId), JSON.stringify(data));
     } catch {
       /* ignore */
     }
-  }, [answers, imie, startedAt, score, lessonId]);
+  }, [restored, answers, imie, startedAt, tab, score, saved, lessonId]);
 
   useEffect(() => {
     const t = setInterval(() => setNow(Date.now()), 20000);
@@ -156,11 +181,6 @@ export function MockExam({ lessonId }: { lessonId: string }) {
       if (!res.ok) throw new Error(data.error || 'error');
       setScore(data.score as MockScore);
       setSaved(Boolean(data.notionSaved));
-      try {
-        localStorage.removeItem(storeKey(lessonId));
-      } catch {
-        /* ignore */
-      }
       go('wynik');
     } catch {
       setSendError('Nie udało się wysłać odpowiedzi. Sprawdź internet i spróbuj jeszcze raz.');
@@ -239,6 +259,10 @@ export function MockExam({ lessonId }: { lessonId: string }) {
           <p className="nb-note">
             Без словника й перекладача. Після відправлення побачиш результат і правильні відповіді.
           </p>
+          <p className="mx-saved-note">
+            Odpowiedzi zapisują się same. Jeśli zamkniesz okno, wrócisz w to samo miejsce. / Відповіді
+            зберігаються автоматично: закриєш вікно — повернешся туди ж (у цьому ж браузері).
+          </p>
           <label className="mx-label" htmlFor="mx-imie">
             Imię i nazwisko / Ім&apos;я та прізвище
           </label>
@@ -306,7 +330,25 @@ export function MockExam({ lessonId }: { lessonId: string }) {
       ) : null}
 
       {tab === 'wynik' && score ? (
-        <ResultView exam={exam} score={score} saved={saved} imie={imie} onOpen={go} />
+        <ResultView
+          exam={exam}
+          score={score}
+          saved={saved}
+          imie={imie}
+          onOpen={go}
+          onRetake={() => {
+            try {
+              localStorage.removeItem(storeKey(lessonId));
+            } catch {
+              /* ignore */
+            }
+            setScore(null);
+            setSaved(null);
+            setAnswers({});
+            setStartedAt(null);
+            go('start');
+          }}
+        />
       ) : null}
 
       {showKeys && !locked && section ? (
@@ -829,13 +871,16 @@ function ResultView({
   saved,
   imie,
   onOpen,
+  onRetake,
 }: {
   exam: PublicMockExam;
   score: MockScore;
   saved: boolean | null;
   imie: string;
   onOpen: (t: Tab) => void;
+  onRetake: () => void;
 }) {
+  const [askRetake, setAskRetake] = useState(false);
   const pct = score.max ? Math.round((score.total / score.max) * 100) : 0;
   return (
     <section className="mx-panel mx-result">
@@ -914,6 +959,23 @@ function ResultView({
           ? 'Wynik nie zapisał się u nauczyciela. Zrób zrzut ekranu i wyślij go.'
           : 'Wynik wysłany do nauczyciela. / Результат надіслано викладачеві.'}
       </p>
+      <div className="nb-row mx-center">
+        {askRetake ? (
+          <>
+            <span className="mx-retake-q">Wynik zniknie z tego ekranu (nauczyciel go ma). Zacząć od nowa?</span>
+            <button type="button" className="nb-btn ghost" onClick={onRetake}>
+              Tak, od nowa
+            </button>
+            <button type="button" className="nb-btn ghost" onClick={() => setAskRetake(false)}>
+              Nie
+            </button>
+          </>
+        ) : (
+          <button type="button" className="mx-link" onClick={() => setAskRetake(true)}>
+            Rozwiąż jeszcze raz
+          </button>
+        )}
+      </div>
       {exam.source ? <p className="mx-source">Źródło zadań: {exam.source}</p> : null}
     </section>
   );

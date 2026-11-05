@@ -1408,3 +1408,6 @@
   .mx-tf-row { grid-template-columns: 1fr; }
   .mx-cloze { padding: 12px; }
 }
+.mx-saved-note { margin: 8px 0 0; font-size: 13px; color: var(--nb-ink-soft); line-height: 1.5; }
+.mx-link { border: 0; background: none; cursor: pointer; font: inherit; font-size: 13.5px; color: var(--nb-ink-soft); text-decoration: underline; text-underline-offset: 3px; padding: 4px; }
+.mx-retake-q { font-size: 14px; color: var(--nb-ink); }
