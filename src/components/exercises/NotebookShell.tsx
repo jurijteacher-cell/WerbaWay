@@ -4,6 +4,8 @@ type Props = {
   children: ReactNode;
   brandLabel?: string;
   levelHint?: string;
+  /** Right side of the brand bar (e.g. student code) */
+  aside?: ReactNode;
 };
 
 /** Spiral notebook chrome for LMS embeds (STYLE_NOTEBOOK.md). */
@@ -11,6 +13,7 @@ export function NotebookShell({
   children,
   brandLabel = 'Werba Way',
   levelHint,
+  aside,
 }: Props) {
   return (
     <div className="nb-wrap">
@@ -21,6 +24,7 @@ export function NotebookShell({
           <b>{brandLabel}</b>
           {levelHint ? <span>{levelHint}</span> : null}
         </div>
+        {aside}
       </div>
 
       <div className="nb-book">

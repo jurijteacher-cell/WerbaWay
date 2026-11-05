@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useRef, useState } from 'react';
+import { trackAttempt } from '@/lib/embed-tracker';
 
 export type ExamItem = {
   id: string;
@@ -183,7 +184,28 @@ export function ExamTasks({ data, blockIds }: Props) {
                     type="button"
                     className="nb-btn"
                     disabled={answers[item.id] == null}
-                    onClick={() => setChecked((c) => ({ ...c, [item.id]: true }))}
+                    onClick={() => {
+                      setChecked((c) => ({ ...c, [item.id]: true }));
+                      const given = answers[item.id];
+                      const label = (v: string | undefined) =>
+                        block.exercise_type === 'true-false'
+                          ? v === 'true'
+                            ? 'Prawda'
+                            : v === 'false'
+                              ? 'Fałsz'
+                              : v
+                          : v;
+                      trackAttempt({
+                        blockId: block.block_id,
+                        itemId: `${block.block_id}:${item.id}`,
+                        itemType: block.exercise_type,
+                        grammarPoint: block.exam_skill ?? null,
+                        prompt: (block.exercise_type === 'true-false' ? item.statement : item.question) ?? null,
+                        answer: label(given) ?? '',
+                        expected: label(expected(item)) ?? null,
+                        correct: given === expected(item),
+                      });
+                    }}
                   >
                     Sprawdź
                   </button>

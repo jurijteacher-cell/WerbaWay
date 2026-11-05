@@ -1411,3 +1411,44 @@
 .mx-saved-note { margin: 8px 0 0; font-size: 13px; color: var(--nb-ink-soft); line-height: 1.5; }
 .mx-link { border: 0; background: none; cursor: pointer; font: inherit; font-size: 13.5px; color: var(--nb-ink-soft); text-decoration: underline; text-underline-offset: 3px; padding: 4px; }
 .mx-retake-q { font-size: 14px; color: var(--nb-ink); }
+
+/* Student code («Twój kod») in the brand bar — embeds only */
+.nb-brandbar { flex-wrap: wrap; }
+.nb-codebar {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-family: var(--nb-display);
+  font-size: 14px;
+  color: var(--nb-ink);
+  background: var(--nb-paper);
+  border-radius: 18px;
+  padding: 6px 12px;
+  box-shadow: 0 1px 4px rgba(27, 42, 74, 0.12);
+}
+.nb-codebar-ask { background: var(--nb-yellow); }
+.nb-brandbar .nb-codebar span {
+  font-family: var(--nb-display);
+  font-size: 14px;
+  color: var(--nb-ink);
+}
+.nb-codebar label { font-weight: 500; }
+.nb-codebar .nb-blank { background: var(--nb-paper); }
+.nb-codebar .nb-btn { padding: 6px 14px; }
+.nb-codebar-link {
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-size: 13px;
+  color: var(--nb-ink-soft);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.nb-brandbar .nb-codebar .nb-codebar-err { color: #b3261e; font-size: 13px; }
+.nb-brandbar .nb-codebar .nb-codebar-hint { color: var(--nb-ink-soft); font-size: 13px; }
+@media (max-width: 520px) {
+  .nb-codebar { margin-left: 0; width: 100%; }
+}

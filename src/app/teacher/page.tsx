@@ -45,6 +45,15 @@ export default async function TeacherPage() {
     <main className="mx-auto max-w-4xl px-4 py-16">
       <h1 className="mb-8 font-display text-3xl text-paper">Кабінет викладача</h1>
 
+      <section className="mb-12">
+        <Link
+          href="/teacher/results"
+          className="inline-block rounded-lg bg-gold px-5 py-3 text-sm font-medium text-ink hover:bg-gold-bright"
+        >
+          Результати учнів з Notion →
+        </Link>
+      </section>
+
       {error && <p className="text-incorrect">Помилка завантаження: {error.message}</p>}
 
       <section className="mb-12">

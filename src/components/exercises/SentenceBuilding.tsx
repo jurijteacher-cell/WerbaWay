@@ -9,6 +9,8 @@ type Props = {
   /** Other correct word orders (Polish word order is often free). */
   accept?: string[];
   disabled?: boolean;
+  /** Called on every «Sprawdź» (results recording) */
+  onCheck?: (given: string, ok: boolean) => void;
 };
 
 function shuffle<T>(arr: T[]): T[] {
@@ -26,7 +28,7 @@ function shuffle<T>(arr: T[]): T[] {
  * (`text-paper`, `bg-ink*`, `border-ink-line`, `text-gold`…): on notebook paper
  * they turn into cream text on white tiles (invisible). See docs/STYLE_NOTEBOOK.md.
  */
-export function SentenceBuilding({ words, answer, accept, disabled }: Props) {
+export function SentenceBuilding({ words, answer, accept, disabled, onCheck }: Props) {
   const bank = useMemo(() => shuffle(words), [words]);
   const [picked, setPicked] = useState<string[]>([]);
   const [remaining, setRemaining] = useState<string[]>(bank);
@@ -57,7 +59,10 @@ export function SentenceBuilding({ words, answer, accept, disabled }: Props) {
   };
 
   const check = () => {
-    setChecked(answersMatch(picked.join(' '), answer, accept).ok);
+    const given = picked.join(' ');
+    const ok = answersMatch(given, answer, accept).ok;
+    setChecked(ok);
+    onCheck?.(given, ok);
   };
 
   const reset = () => {

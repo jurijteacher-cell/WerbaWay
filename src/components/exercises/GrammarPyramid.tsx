@@ -3,7 +3,10 @@
 import { useMemo, useRef, useState } from 'react';
 import type { GrammarPyramidExercise } from '@/content/queue-types';
 import { answersMatch } from '@/lib/answer-match';
+import { trackAttempt } from '@/lib/embed-tracker';
+import type { GrammarPyramidItem } from '@/content/queue-types';
 import { SentenceBuilding } from './SentenceBuilding';
+import { SendToTeacher } from './SendToTeacher';
 
 type Props = {
   data: GrammarPyramidExercise;
@@ -77,9 +80,30 @@ export function GrammarPyramid({ data, blockIds }: Props) {
 
   const key = (id: number | string) => `${level.level}-${id}`;
 
-  const applyCheck = (k: string, given: string, expected: string, accept?: string[]) => {
+  const blockId = level.block_id ?? `g${level.level}`;
+
+  const record = (item: GrammarPyramidItem, given: string, expected: string, ok: boolean | null) =>
+    trackAttempt({
+      blockId,
+      itemId: `${blockId}:${item.id}`,
+      itemType: level.task_type,
+      grammarPoint: item.grammar_point ?? null,
+      prompt: item.sentence ?? item.prompt ?? (item.words ? item.words.join(' / ') : null),
+      answer: given,
+      expected,
+      correct: ok,
+    });
+
+  const applyCheck = (
+    k: string,
+    given: string,
+    expected: string,
+    accept: string[] | undefined,
+    item: GrammarPyramidItem
+  ) => {
     const mode = level.diacritics === 'strict' ? 'strict' : 'lenient';
     const result = answersMatch(given, expected, accept, mode);
+    record(item, given, expected, result.ok);
     setFeedback((f) => ({ ...f, [k]: result.ok }));
     setHints((h) => ({ ...h, [k]: result.hint }));
     if (!result.ok) {
@@ -196,6 +220,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
                         const item = level.items.find((it) => String(it.id) === leftId);
                         if (!item) return;
                         const correct = answersMatch(right, String(item.answer ?? '')).ok;
+                        record(item, right, String(item.answer ?? ''), correct);
                         setMatchPairs((p) => {
                           const cur = { ...(p[String(level.level)] ?? {}) };
                           if (!correct) {
@@ -283,7 +308,8 @@ export function GrammarPyramid({ data, blockIds }: Props) {
                         k,
                         fillAnswers[k] ?? '',
                         expected,
-                        (item as { accept?: string[] }).accept
+                        (item as { accept?: string[] }).accept,
+                        item
                       )
                     }
                   >
@@ -320,6 +346,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
                 words={item.words ?? []}
                 answer={item.answer ?? ''}
                 accept={(item as { accept?: string[] }).accept}
+                onCheck={(given, ok) => record(item, given, item.answer ?? '', ok)}
               />
             </div>
           ))}
@@ -358,7 +385,8 @@ export function GrammarPyramid({ data, blockIds }: Props) {
                           k,
                           openAnswers[k] ?? '',
                           expected,
-                          (item as { accept?: string[] }).accept
+                          (item as { accept?: string[] }).accept,
+                          item
                         )
                       }
                     >
@@ -387,6 +415,19 @@ export function GrammarPyramid({ data, blockIds }: Props) {
                       </button>
                     ) : null}
                   </div>
+                )}
+                {!expected && (
+                  <SendToTeacher
+                    text={openAnswers[k] ?? ''}
+                    attempt={{
+                      blockId,
+                      itemId: `${blockId}:${item.id}`,
+                      itemType: level.task_type,
+                      grammarPoint: item.grammar_point ?? null,
+                      prompt: item.prompt ?? null,
+                      expected: null,
+                    }}
+                  />
                 )}
               </div>
             );

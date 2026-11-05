@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { Fredoka, Nunito, Caveat } from 'next/font/google';
 import { NotebookShell } from '@/components/exercises/NotebookShell';
+import { StudentCodeBar } from '@/components/exercises/StudentCodeBar';
 import '@/components/exercises/notebook.css';
 
 const fredoka = Fredoka({
@@ -40,7 +41,7 @@ export default function EmbedLayout({ children }: { children: ReactNode }) {
         body > header { display: none !important; }
         body { background: #E7E2D7 !important; }
       `}</style>
-      <NotebookShell levelHint="lekcja · ćwiczenia">{children}</NotebookShell>
+      <NotebookShell levelHint="lekcja · ćwiczenia" aside={<StudentCodeBar />}>{children}</NotebookShell>
     </div>
   );
 }

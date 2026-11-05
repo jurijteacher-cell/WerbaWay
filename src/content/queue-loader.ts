@@ -106,6 +106,7 @@ function normalizeFlip(raw: any): FlipTaskExercise {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function normalizeGrammarItem(it: any, i: number): GrammarPyramidItem {
   const base = normalizeGrammarItemCore(it, i);
+  if (typeof it?.grammar_point === 'string') base.grammar_point = it.grammar_point;
   if (it?.image_url) {
     base.image_url = it.image_url;
     base.image_alt = it.image_alt ?? it.alt;

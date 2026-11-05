@@ -3,6 +3,7 @@
 import { useMemo, useState, type Dispatch, type SetStateAction } from 'react';
 import type { GrammarBoardExercise, GrammarBoardTaskItem } from '@/content/queue-types';
 import { answersMatch as matchAnswer } from '@/lib/answer-match';
+import { trackAttempt } from '@/lib/embed-tracker';
 
 type Props = { data: GrammarBoardExercise };
 
@@ -36,11 +37,18 @@ export function GrammarBoard({ data }: Props) {
   const card = data.cards[cardIdx];
   if (!card) return null;
 
-  const check = (k: string, given: string, expected: string) => {
-    setFeedback((f) => ({
-      ...f,
-      [k]: matchAnswer(given, expected).ok,
-    }));
+  const check = (k: string, given: string, expected: string, prompt?: string, type?: string) => {
+    const ok = matchAnswer(given, expected).ok;
+    setFeedback((f) => ({ ...f, [k]: ok }));
+    trackAttempt({
+      blockId: `karta ${card.number ?? card.id}`,
+      itemId: k,
+      itemType: type ?? 'fill-in-blank',
+      prompt: prompt ?? null,
+      answer: given,
+      expected,
+      correct: ok,
+    });
   };
 
   return (
@@ -144,7 +152,7 @@ export function GrammarBoard({ data }: Props) {
                       type="button"
                       className="nb-btn"
                       style={{ marginTop: 6 }}
-                      onClick={() => check(k, answers[k] ?? '', expected)}
+                      onClick={() => check(k, answers[k] ?? '', expected, sentence, type)}
                     >
                       Sprawdź
                     </button>
@@ -254,6 +262,15 @@ function MatchingTask({
                   const item = items.find((it) => String(it.id) === leftId);
                   if (!item) return;
                   const correct = matchAnswer(right, itemAnswer(item)).ok;
+                  trackAttempt({
+                    blockId: `karta ${cardId}`,
+                    itemId: `${scope}-${leftId}`,
+                    itemType: 'matching',
+                    prompt: itemPrompt(item) ?? null,
+                    answer: right,
+                    expected: itemAnswer(item),
+                    correct,
+                  });
                   if (correct) {
                     setMatchPairs((p) => ({
                       ...p,

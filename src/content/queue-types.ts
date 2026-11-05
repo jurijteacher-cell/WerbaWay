@@ -80,6 +80,8 @@ export type GrammarPyramidItem = {
   options?: string[];
   explanation?: string;
   accept?: string[];
+  /** Grammar tag from the lesson JSON — recorded with student results. */
+  grammar_point?: string;
   /** Optional photo shown above the item (Unsplash URL; never cropped). */
   image_url?: string;
   image_alt?: string;

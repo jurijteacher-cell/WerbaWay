@@ -4,6 +4,8 @@ import { useState } from 'react';
 import type { HomeworkExercise } from '@/content/queue-types';
 import { SentenceBuilding } from './SentenceBuilding';
 import { GrammarPyramid } from './GrammarPyramid';
+import { SendToTeacher } from './SendToTeacher';
+import { trackAttempt } from '@/lib/embed-tracker';
 
 type Props = { data: HomeworkExercise };
 
@@ -15,6 +17,7 @@ export function HomeworkEmbed({ data }: Props) {
   const [fills, setFills] = useState<Record<number, string>>({});
   const [feedback, setFeedback] = useState<Record<number, boolean | null>>({});
   const [writing, setWriting] = useState('');
+  const [open, setOpen] = useState<Record<number, string>>({});
 
   if (data.levels?.length) {
     return (
@@ -64,7 +67,21 @@ export function HomeworkEmbed({ data }: Props) {
             if (ex.words && ex.answer) {
               return (
                 <div key={ex.id} className="nb-panel">
-                  <SentenceBuilding words={ex.words} answer={ex.answer} />
+                  <SentenceBuilding
+                    words={ex.words}
+                    answer={ex.answer}
+                    onCheck={(given, ok) =>
+                      trackAttempt({
+                        blockId: 'gramatyka',
+                        itemId: `hw:${ex.id}`,
+                        itemType: 'sentence-building',
+                        prompt: ex.words?.join(' / ') ?? null,
+                        answer: given,
+                        expected: ex.answer ?? null,
+                        correct: ok,
+                      })
+                    }
+                  />
                 </div>
               );
             }
@@ -81,12 +98,19 @@ export function HomeworkEmbed({ data }: Props) {
                     />
                     <button
                       type="button"
-                      onClick={() =>
-                        setFeedback((f) => ({
-                          ...f,
-                          [ex.id]: normalize(fills[ex.id] ?? '') === normalize(ex.answer ?? ''),
-                        }))
-                      }
+                      onClick={() => {
+                        const ok = normalize(fills[ex.id] ?? '') === normalize(ex.answer ?? '');
+                        setFeedback((f) => ({ ...f, [ex.id]: ok }));
+                        trackAttempt({
+                          blockId: 'gramatyka',
+                          itemId: `hw:${ex.id}`,
+                          itemType: 'fill-in-blank',
+                          prompt: ex.sentence ?? null,
+                          answer: fills[ex.id] ?? '',
+                          expected: ex.answer ?? null,
+                          correct: ok,
+                        });
+                      }}
                       className="nb-btn"
                     >
                       Sprawdź
@@ -105,7 +129,17 @@ export function HomeworkEmbed({ data }: Props) {
               return (
                 <div key={ex.id} className="nb-panel">
                   <p style={{ margin: '0 0 8px' }}>{ex.prompt}</p>
-                  <textarea rows={3} className="nb-open" placeholder="Twoja odpowiedź…" />
+                  <textarea
+                    rows={3}
+                    className="nb-open"
+                    placeholder="Twoja odpowiedź…"
+                    value={open[ex.id] ?? ''}
+                    onChange={(e) => setOpen((o) => ({ ...o, [ex.id]: e.target.value }))}
+                  />
+                  <SendToTeacher
+                    text={open[ex.id] ?? ''}
+                    attempt={{ blockId: 'gramatyka', itemId: `hw:${ex.id}`, itemType: 'open-answer', prompt: ex.prompt ?? null }}
+                  />
                 </div>
               );
             }
@@ -123,6 +157,15 @@ export function HomeworkEmbed({ data }: Props) {
             onChange={(e) => setWriting(e.target.value)}
             rows={6}
             className="nb-open"
+          />
+          <SendToTeacher
+            text={writing}
+            attempt={{
+              blockId: 'pisanie',
+              itemId: 'hw:writing',
+              itemType: 'writing',
+              prompt: data.writing_task.prompt,
+            }}
           />
         </div>
       )}
