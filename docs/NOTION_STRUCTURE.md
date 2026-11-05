@@ -51,6 +51,7 @@
 | Вагітність і пологи | pl-preg | `3d396e03c7c881038ad0e5ed99fcbe0f` |
 | Polish from zero | pl-a0-en | `40e96e03c7c88146b4edeb0bd162d0ee` |
 | Russian from zero | ru-a0 | `40e96e03c7c8810481f5da1e7a1bd88f` |
+| Polish grammar: back to basics (EN, A1→A2) | pl-a1-en | `40f96e03c7c8815691b7c94437511fca` |
 
 Таблиця — довідка; актуальний стан завжди в базі. Модуль шукати **за полем `Код`**, не за назвою (назви людські й можуть мінятися):
 
