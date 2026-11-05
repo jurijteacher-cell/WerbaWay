@@ -5,6 +5,8 @@ import { usePathname } from 'next/navigation';
 import {
   EMBED_RESULTS_ENABLED,
   clearCode,
+  codeFromUrl,
+  createCode,
   getServerState,
   getState,
   setCode,
@@ -15,45 +17,64 @@ import {
 const TRACKED = /^\/embed\/[^/]+\/(grammar|hw|exam|grammar-board)(\/|$)/;
 
 /**
- * «Twój kod» in the notebook brand bar. Embed-only: nb-* classes / --nb-* vars only.
+ * «Twój kod» in the notebook brand bar: enter a code, create one from your name,
+ * log out. Embed-only: nb-* classes / --nb-* vars only.
  */
 export function StudentCodeBar() {
   const pathname = usePathname() ?? '';
   const s = useSyncExternalStore(subscribe, getState, getServerState);
+  const [mode, setMode] = useState<'code' | 'new'>('code');
   const [value, setValue] = useState('');
   const [busy, setBusy] = useState(false);
-  const [editing, setEditing] = useState(false);
+  const [justCreated, setJustCreated] = useState<string | null>(null);
 
   if (!EMBED_RESULTS_ENABLED || !TRACKED.test(pathname)) return null;
 
-  if (s.status === 'teacher' && !editing) {
+  const logout = () => {
+    setJustCreated(null);
+    setValue('');
+    setMode('code');
+    clearCode();
+  };
+
+  if (s.status === 'teacher') {
     return (
       <div className="nb-codebar">
         <span>👩‍🏫 tryb nauczyciela</span>
-        <button type="button" className="nb-codebar-link" onClick={() => setEditing(true)}>
-          zmień
+        <button type="button" className="nb-codebar-link" onClick={logout}>
+          wyjdź
         </button>
       </div>
     );
   }
 
-  if (s.status === 'student' && !editing) {
+  if (s.status === 'student') {
     return (
-      <div className="nb-codebar" title="Twoje odpowiedzi widzi nauczyciel">
-        <span>
-          👤 {s.name ?? s.code}
-          {s.pending > 0 ? ' · zapisuję…' : ' · ✓'}
-        </span>
-        <button
-          type="button"
-          className="nb-codebar-link"
-          onClick={() => {
-            setValue('');
-            setEditing(true);
-          }}
-        >
-          to nie ja
-        </button>
+      <div className={`nb-codebar${justCreated ? ' nb-codebar-new' : ''}`} title="Twoje odpowiedzi widzi nauczyciel">
+        {justCreated ? (
+          <>
+            <span>
+              ✨ Twój kod: <b className="nb-codebar-code">{justCreated}</b>
+            </span>
+            <span className="nb-codebar-hint">Zapisz go — wpisz go na innym urządzeniu.</span>
+            <button type="button" className="nb-btn" onClick={() => setJustCreated(null)}>
+              OK
+            </button>
+          </>
+        ) : (
+          <>
+            <span>
+              👤 {s.name ?? s.code}
+              {s.name && s.code ? <span className="nb-codebar-hint"> · {s.code}</span> : null}
+              {s.pending > 0 ? ' · zapisuję…' : ' · ✓'}
+            </span>
+            {!codeFromUrl() ? (
+              <button type="button" className="nb-codebar-link" onClick={logout}>
+                wyloguj
+              </button>
+            ) : null}
+          </>
+        )}
       </div>
     );
   }
@@ -61,12 +82,22 @@ export function StudentCodeBar() {
   const submit = async () => {
     if (!value.trim()) return;
     setBusy(true);
-    const ok = await setCode(value);
-    setBusy(false);
-    if (ok) {
-      setEditing(false);
-      setValue('');
+    if (mode === 'code') {
+      const ok = await setCode(value);
+      if (ok) setValue('');
+    } else {
+      const code = await createCode(value);
+      if (code) {
+        setJustCreated(code);
+        setValue('');
+      }
     }
+    setBusy(false);
+  };
+
+  const switchMode = () => {
+    setMode((m) => (m === 'code' ? 'new' : 'code'));
+    setValue('');
   };
 
   return (
@@ -77,35 +108,25 @@ export function StudentCodeBar() {
         void submit();
       }}
     >
-      <label htmlFor="nb-code-input">🔑 Twój kod</label>
+      <label htmlFor="nb-code-input">{mode === 'code' ? '🔑 Twój kod' : '✨ Jak masz na imię?'}</label>
       <input
         id="nb-code-input"
         className="nb-blank"
         value={value}
-        onChange={(e) => setValue(e.target.value.toUpperCase())}
-        placeholder="np. ANNA7"
-        autoComplete="off"
-        autoCapitalize="characters"
+        onChange={(e) => setValue(mode === 'code' ? e.target.value.toUpperCase() : e.target.value)}
+        placeholder={mode === 'code' ? 'np. ANNA47' : 'np. Anna K.'}
+        autoComplete={mode === 'code' ? 'off' : 'given-name'}
+        autoCapitalize={mode === 'code' ? 'characters' : 'words'}
         spellCheck={false}
-        maxLength={12}
-        style={{ width: 110 }}
+        maxLength={mode === 'code' ? 12 : 40}
+        style={{ width: mode === 'code' ? 110 : 140 }}
       />
       <button type="submit" className="nb-btn" disabled={busy || !value.trim()}>
-        OK
+        {mode === 'code' ? 'OK' : 'Utwórz kod'}
       </button>
-      {editing ? (
-        <button
-          type="button"
-          className="nb-codebar-link"
-          onClick={() => {
-            if (s.status === 'none') return setEditing(false);
-            clearCode();
-            setEditing(false);
-          }}
-        >
-          {s.status === 'none' ? 'anuluj' : 'wyloguj'}
-        </button>
-      ) : null}
+      <button type="button" className="nb-codebar-link" onClick={switchMode}>
+        {mode === 'code' ? 'nie mam kodu' : 'mam już kod'}
+      </button>
       {s.error ? <span className="nb-codebar-err">{s.error}</span> : null}
       {s.pending > 0 && !s.error ? (
         <span className="nb-codebar-hint">odpowiedzi czekają na kod ({s.pending})</span>

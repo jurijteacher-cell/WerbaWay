@@ -46,6 +46,8 @@ export const TEACHER_CODE = 'NAUCZYCIEL';
 let state: TrackerState = { status: 'none', code: null, name: null, pending: 0, error: null };
 let queue: Payload[] = [];
 let initialized = false;
+/** Code fixed by ?s= in the embed URL — logout makes no sense there */
+let urlCode: string | null = null;
 const listeners = new Set<() => void>();
 
 function emit(patch: Partial<TrackerState>) {
@@ -84,6 +86,7 @@ function init() {
   if (initialized || typeof window === 'undefined') return;
   initialized = true;
   const fromUrl = normalizeCode(new URLSearchParams(window.location.search).get('s') ?? '');
+  urlCode = fromUrl || null;
   const stored = lsGet(LS_CODE);
   const code = fromUrl || stored;
   if (code === TEACHER_CODE) {
@@ -159,11 +162,50 @@ export async function setCode(raw: string) {
   return ok;
 }
 
+/** Logout: send what is still waiting, then forget the code in this browser */
 export function clearCode() {
   init();
+  flush(true);
+  queue = [];
   lsSet(LS_CODE, null);
   lsSet(LS_NAME, null);
+  urlCode = null;
   emit({ status: 'none', code: null, name: null, error: null });
+}
+
+export function codeFromUrl() {
+  return urlCode !== null;
+}
+
+/** Student has no code yet: create one from their name */
+export async function createCode(rawName: string): Promise<string | null> {
+  init();
+  const name = rawName.replace(/\s+/g, ' ').trim();
+  if (name.length < 2) {
+    emit({ error: 'Wpisz imię (min. 2 litery)' });
+    return null;
+  }
+  emit({ error: null });
+  try {
+    const r = await fetch('/api/embed/student', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name }),
+    });
+    if (!r.ok) {
+      emit({ error: r.status === 429 ? 'Spróbuj za kilka minut' : 'Błąd serwera, spróbuj później' });
+      return null;
+    }
+    const { code, name: saved } = (await r.json()) as { code: string; name: string };
+    lsSet(LS_CODE, code);
+    lsSet(LS_NAME, saved);
+    emit({ status: 'student', code, name: saved, error: null });
+    flush();
+    return code;
+  } catch {
+    emit({ error: 'Brak internetu, spróbuj później' });
+    return null;
+  }
 }
 
 let sending = false;

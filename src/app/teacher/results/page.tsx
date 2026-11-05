@@ -11,6 +11,7 @@ type Row = {
   name: string;
   note: string | null;
   archived_at: string | null;
+  self_created?: boolean;
   attempts: number;
   first_total: number;
   first_ok: number;
@@ -93,6 +94,7 @@ export default async function ResultsPage({ searchParams }: { searchParams?: { a
                         {r.name}
                       </Link>
                       {r.note ? <p className="text-xs text-paper-muted">{r.note}</p> : null}
+                      {r.self_created ? <p className="text-xs text-paper-muted">створив(ла) код сам(а)</p> : null}
                     </td>
                     <td className="px-4 py-3 font-mono text-gold">{r.code}</td>
                     <td className="px-4 py-3 text-paper">{r.lessons}</td>

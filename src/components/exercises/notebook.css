@@ -1429,6 +1429,12 @@
   box-shadow: 0 1px 4px rgba(27, 42, 74, 0.12);
 }
 .nb-codebar-ask { background: var(--nb-yellow); }
+.nb-codebar-new { background: var(--nb-mint); }
+.nb-brandbar .nb-codebar .nb-codebar-code {
+  font-family: var(--nb-display);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
 .nb-brandbar .nb-codebar span {
   font-family: var(--nb-display);
   font-size: 14px;
