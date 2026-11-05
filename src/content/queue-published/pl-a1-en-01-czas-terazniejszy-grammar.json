@@ -1,0 +1,477 @@
+{
+  "lesson_id": "pl-a1-en-01-czas-terazniejszy",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: czas teraźniejszy",
+  "instruction": "Try first, then press Sprawdź (check).",
+  "eyebrow": "ćwiczenia",
+  "estimated_minutes": 35,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "true-false",
+      "title": "1. Prawda czy fałsz?",
+      "instruction": "Przeczytaj zdanie i wybierz: prawda czy fałsz.",
+      "instruction_uk": "Texts 1 and 2. Prawda = true, fałsz = false.",
+      "items": [
+        {
+          "id": "g1-1",
+          "statement": "Emma mieszka we Wrocławiu od trzech lat.",
+          "answer": true,
+          "explanation": "„Od trzech lat mieszkam we Wrocławiu.”",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g1-2",
+          "statement": "Emma uczy angielskiego dzieci.",
+          "answer": false,
+          "explanation": "Jej uczniowie to dorośli — pracują w firmach.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g1-3",
+          "statement": "Emma jeździ do pracy autobusem.",
+          "answer": false,
+          "explanation": "Jedzie tramwajem.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g1-4",
+          "statement": "Mama Emmy też mieszka w Polsce.",
+          "answer": false,
+          "explanation": "Mama mieszka w Leeds.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g1-5",
+          "statement": "Ola i Kuba pracują w szpitalu.",
+          "answer": true,
+          "explanation": "Ona jest lekarką, a on pielęgniarzem.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "g1-6",
+          "statement": "W weekend studentki odpoczywają.",
+          "answer": false,
+          "explanation": "„Uczymy się, jak zawsze!”",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Oni czy one?",
+      "instruction": "Wybierz: oni czy one?",
+      "instruction_uk": "Is there at least one man in the group? → oni. No men at all → one.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Mój brat i jego żona? ___ w Londynie.",
+          "answer": "Oni mieszkają",
+          "options": [
+            "Oni mieszkają",
+            "One mieszkają"
+          ],
+          "grammar_point": "oni-one",
+          "explanation": "Brat = a man in the group → oni."
+        },
+        {
+          "id": "g2-2",
+          "text": "Moja mama i ciocia? ___ razem obiad.",
+          "answer": "One gotują",
+          "options": [
+            "Oni gotują",
+            "One gotują"
+          ],
+          "grammar_point": "oni-one",
+          "explanation": "Two women, no man → one."
+        },
+        {
+          "id": "g2-3",
+          "text": "Dzieci? ___ w ogrodzie.",
+          "answer": "One się bawią",
+          "options": [
+            "Oni się bawią",
+            "One się bawią"
+          ],
+          "grammar_point": "oni-one",
+          "explanation": "Dzieci is grammatically not a group of men → one (even if there are boys)."
+        },
+        {
+          "id": "g2-4",
+          "text": "Studenci? ___ do egzaminu.",
+          "answer": "Oni się przygotowują",
+          "options": [
+            "Oni się przygotowują",
+            "One się przygotowują"
+          ],
+          "grammar_point": "oni-one",
+          "explanation": "Studenci = men (or a mixed group) → oni."
+        },
+        {
+          "id": "g2-5",
+          "text": "Moje koty? ___ cały dzień.",
+          "answer": "One śpią",
+          "options": [
+            "Oni śpią",
+            "One śpią"
+          ],
+          "grammar_point": "oni-one",
+          "explanation": "Animals are never „men” → one."
+        },
+        {
+          "id": "g2-6",
+          "text": "Pani Ewa i pan Adam? ___ tango.",
+          "answer": "Oni tańczą",
+          "options": [
+            "Oni tańczą",
+            "One tańczą"
+          ],
+          "grammar_point": "oni-one",
+          "explanation": "Pan Adam is in the group → oni."
+        },
+        {
+          "id": "g2-7",
+          "text": "Pięć kobiet i jeden mężczyzna? ___ o pracy.",
+          "answer": "Oni rozmawiają",
+          "options": [
+            "Oni rozmawiają",
+            "One rozmawiają"
+          ],
+          "grammar_point": "oni-one",
+          "explanation": "One man is enough → oni."
+        },
+        {
+          "id": "g2-8",
+          "text": "Twoje przyjaciółki? ___ na koncert.",
+          "answer": "One czekają",
+          "options": [
+            "Oni czekają",
+            "One czekają"
+          ],
+          "grammar_point": "oni-one",
+          "explanation": "Przyjaciółki = women friends → one."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Kto? Która forma?",
+      "instruction": "Wybierz dobrą formę czasownika.",
+      "instruction_uk": "Look at the person first: ja, ty, pan / pani, my, wy, oni / one.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Pani ___ bardzo dobrze po polsku!",
+          "answer": "mówi",
+          "options": [
+            "mówi",
+            "mówisz",
+            "mówić"
+          ],
+          "grammar_point": "pan-pani",
+          "explanation": "Pani (polite you) → the ona form: pani mówi."
+        },
+        {
+          "id": "g3-2",
+          "text": "Ty też ___ w szkole?",
+          "answer": "pracujesz",
+          "options": [
+            "pracujesz",
+            "pracuje",
+            "pracować"
+          ],
+          "grammar_point": "osoby-koncowki",
+          "explanation": "Ty → -sz: pracujesz."
+        },
+        {
+          "id": "g3-3",
+          "text": "My zwykle ___ w domu.",
+          "answer": "gotujemy",
+          "options": [
+            "gotujemy",
+            "gotują",
+            "gotuje"
+          ],
+          "grammar_point": "osoby-koncowki",
+          "explanation": "My → -my: gotujemy."
+        },
+        {
+          "id": "g3-4",
+          "text": "Moi rodzice ___ w Bristolu.",
+          "answer": "mieszkają",
+          "options": [
+            "mieszkają",
+            "mieszka",
+            "mieszkamy"
+          ],
+          "grammar_point": "osoby-koncowki",
+          "explanation": "Rodzice = oni → mieszkają."
+        },
+        {
+          "id": "g3-5",
+          "text": "Czy pan ___ kawę z cukrem?",
+          "answer": "pije",
+          "options": [
+            "pije",
+            "pijesz",
+            "piję"
+          ],
+          "grammar_point": "pan-pani",
+          "explanation": "Pan → the on form: pan pije."
+        },
+        {
+          "id": "g3-6",
+          "text": "O której wy ___ do domu?",
+          "answer": "wracacie",
+          "options": [
+            "wracacie",
+            "wracają",
+            "wracamy"
+          ],
+          "grammar_point": "osoby-koncowki",
+          "explanation": "Wy → -cie: wracacie."
+        },
+        {
+          "id": "g3-7",
+          "text": "Ja ___ angielskiego od dziesięciu lat.",
+          "answer": "uczę",
+          "options": [
+            "uczę",
+            "uczy",
+            "uczyć"
+          ],
+          "grammar_point": "osoby-koncowki",
+          "explanation": "Ja → -ę: uczę. The dictionary form (uczyć) is never a present form."
+        },
+        {
+          "id": "g3-8",
+          "text": "Ania ___ jedną książkę w tygodniu.",
+          "answer": "czyta",
+          "options": [
+            "czyta",
+            "czytam",
+            "czytać"
+          ],
+          "grammar_point": "osoby-koncowki",
+          "explanation": "Ania = ona → czyta."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Napisz formę",
+      "instruction": "Wpisz czasownik w dobrej formie.",
+      "instruction_uk": "In brackets: the person and the dictionary form. First think: what is the ja and ty form?",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Często ___ e-maile do szefa? (ty, pisać)",
+          "answer": "piszesz",
+          "grammar_point": "koniugacja-e-esz",
+          "explanation": "pisać → piszę, piszesz (s → sz)."
+        },
+        {
+          "id": "g4-2",
+          "text": "Tomek ___ na autobus. (on, czekać)",
+          "answer": "czeka",
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "czekam, czekasz → on czeka."
+        },
+        {
+          "id": "g4-3",
+          "text": "O piątej ___ pracę. (my, kończyć)",
+          "answer": "kończymy",
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "kończę, kończysz → my kończymy."
+        },
+        {
+          "id": "g4-4",
+          "text": "Co ___ wieczorem? (wy, oglądać)",
+          "answer": "oglądacie",
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "oglądam, oglądasz → wy oglądacie."
+        },
+        {
+          "id": "g4-5",
+          "text": "Moi uczniowie wszystko ___. (oni, rozumieć)",
+          "answer": "rozumieją",
+          "grammar_point": "koniugacja-em-esz",
+          "explanation": "rozumiem → rozumieją."
+        },
+        {
+          "id": "g4-6",
+          "text": "___ niedaleko centrum. (ja, mieszkać)",
+          "answer": "mieszkam",
+          "grammar_point": "koniugacja-am-asz"
+        },
+        {
+          "id": "g4-7",
+          "text": "Moja córka ___ w szkole tańca. (ona, tańczyć)",
+          "answer": "tańczy",
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "tańczę, tańczysz (-ysz after cz) → ona tańczy."
+        },
+        {
+          "id": "g4-8",
+          "text": "Siostry ___ prezenty dla mamy. (one, kupować)",
+          "answer": "kupują",
+          "grammar_point": "koniugacja-e-esz",
+          "explanation": "-ować → -uję: kupuję, kupujesz → one kupują."
+        },
+        {
+          "id": "g4-9",
+          "text": "Co ___ w sobotę? (ty, robić)",
+          "answer": "robisz",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g4-10",
+          "text": "W niedzielę ___ dla całej rodziny. (ja, gotować)",
+          "answer": "gotuję",
+          "grammar_point": "koniugacja-e-esz",
+          "explanation": "-ować → -uję: gotuję."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "5. Popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "instruction_uk": "Each sentence has one typical mistake. Write the whole sentence correctly.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Jestem pracuję w szkole.",
+          "answer": "Pracuję w szkole.",
+          "grammar_point": "pulapki-en",
+          "accept": [
+            "Ja pracuję w szkole."
+          ],
+          "explanation": "Polish has no „I am + -ing”: one form, pracuję."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Ona mieszkać w Krakowie.",
+          "answer": "Ona mieszka w Krakowie.",
+          "grammar_point": "osoby-koncowki",
+          "accept": [
+            "Mieszka w Krakowie."
+          ],
+          "explanation": "mieszkać is the dictionary form; ona → mieszka."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Czy pani mówisz po angielsku?",
+          "answer": "Czy pani mówi po angielsku?",
+          "grammar_point": "pan-pani",
+          "accept": [
+            "Pani mówi po angielsku?"
+          ],
+          "explanation": "Pani → the ona form: mówi."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Tomek i Kasia są w domu. One gotują.",
+          "answer": "Tomek i Kasia są w domu. Oni gotują.",
+          "grammar_point": "oni-one",
+          "accept": [
+            "Tomek i Kasia są w domu, oni gotują.",
+            "Tomek i Kasia są w domu. Gotują."
+          ],
+          "explanation": "Tomek is a man → oni."
+        },
+        {
+          "id": "g5-5",
+          "prompt": "My czytają dużo książek.",
+          "answer": "My czytamy dużo książek.",
+          "grammar_point": "osoby-koncowki",
+          "accept": [
+            "Czytamy dużo książek."
+          ],
+          "explanation": "My → -my: czytamy."
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Codziennie wstawam o szóstej.",
+          "answer": "Codziennie wstaję o szóstej.",
+          "grammar_point": "wyjatki",
+          "accept": [
+            "Wstaję codziennie o szóstej.",
+            "Codziennie o szóstej wstaję."
+          ],
+          "explanation": "wstawać → wstaję, wstajesz (not wstawam)."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "drag-and-drop",
+      "title": "6. Sobota w domu",
+      "instruction": "Wybierz z banku dobrą formę.",
+      "instruction_uk": "Each verb is in the bank twice — in two persons. Choose the one that matches the person.",
+      "bank": [
+        "wstaje",
+        "wstają",
+        "robi",
+        "robię",
+        "słuchają",
+        "słucha",
+        "spaceruję",
+        "spaceruje",
+        "oglądamy",
+        "oglądają",
+        "robicie",
+        "robią"
+      ],
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "W sobotę cała moja rodzina ___ późno.",
+          "answer": "wstaje",
+          "explanation": "Rodzina is one ona-word → wstaje.",
+          "grammar_point": "osoby-koncowki"
+        },
+        {
+          "id": "g6-2",
+          "text": "Tata ___ śniadanie dla wszystkich.",
+          "answer": "robi",
+          "grammar_point": "osoby-koncowki"
+        },
+        {
+          "id": "g6-3",
+          "text": "Moje siostry ___ muzyki w kuchni.",
+          "answer": "słuchają",
+          "grammar_point": "osoby-koncowki"
+        },
+        {
+          "id": "g6-4",
+          "text": "A ja ___ z psem w parku.",
+          "answer": "spaceruję",
+          "grammar_point": "osoby-koncowki"
+        },
+        {
+          "id": "g6-5",
+          "text": "Po południu my razem ___ film.",
+          "answer": "oglądamy",
+          "grammar_point": "osoby-koncowki"
+        },
+        {
+          "id": "g6-6",
+          "text": "A wy? Co ___ w sobotę?",
+          "answer": "robicie",
+          "grammar_point": "osoby-koncowki"
+        }
+      ]
+    }
+  ]
+}
