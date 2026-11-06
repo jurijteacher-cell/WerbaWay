@@ -1,0 +1,769 @@
+{
+  "lesson_id": "pl-gram-zaimki-uk",
+  "exercise_type": "fill-in-blank",
+  "title": "Ktoś, coś, ktokolwiek, nikt: zaimki nieokreślone i przeczenie",
+  "instruction": "Najpierw tekst, potem dwie części gramatyki — po każdej ćwiczenia.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "g0",
+      "part": 1,
+      "exercise_type": "true-false",
+      "title": "0. Na start: kto był w mieszkaniu?",
+      "instruction": "Prawda czy fałsz? Szukaj w tekście słów ktoś, nikt, nic, żaden — one dają odpowiedź.",
+      "items": [
+        {
+          "id": "g0-1",
+          "statement": "Na wieszaku w przedpokoju wisiała czyjaś czapka.",
+          "answer": true,
+          "explanation": "„Czyjaś czapka — na pewno nie moja”. Czyjaś = чиясь.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g0-2",
+          "statement": "Ktoś zabrał laptop i pieniądze.",
+          "answer": false,
+          "explanation": "„Nic nie zginęło: laptop i pieniądze leżały na swoim miejscu”.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g0-3",
+          "statement": "Sąsiadka widziała na schodach kogoś obcego.",
+          "answer": false,
+          "explanation": "„Nikt obcy dzisiaj tu nie chodził” — słyszała tylko, jak ktoś gwizdał.",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g0-4",
+          "statement": "Właściciel mieszkania dał komuś klucze.",
+          "answer": false,
+          "explanation": "„Nikomu, nigdy! Nie daję kluczy byle komu”.",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g0-5",
+          "statement": "Zapasowe klucze miał tylko brat bohatera.",
+          "answer": true,
+          "explanation": "„Zapasowe klucze miał tylko jeden człowiek. Kiedyś sam mu je dałem”.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g0-6",
+          "statement": "Bratu bardzo smakowała herbata.",
+          "answer": false,
+          "explanation": "„Herbata była okropna. Kup sobie jakąś lepszą”.",
+          "grammar_point": "celownik-sie"
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Kogoś, czegoś, komuś…",
+      "instruction": "Wpisz słowo z nawiasu w dobrym przypadku. Zapytaj: kogo? czego? komu? z kim?",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Czekasz na ___? (ktoś)",
+          "answer": "kogoś",
+          "explanation": "czekać na + biernik: kogoś.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g1-2",
+          "text": "Boję się, że zapomniałem o ___ ważnym. (coś)",
+          "answer": "czymś",
+          "explanation": "o + miejscownik: o czymś.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g1-3",
+          "text": "Sprzedam ten stary rower ___ z sąsiadów. (ktoś)",
+          "answer": "komuś",
+          "explanation": "sprzedać komu? — komuś.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g1-4",
+          "text": "Napiłbym się ___ zimnego. (coś)",
+          "answer": "czegoś",
+          "explanation": "napić się + dopełniacz: czegoś.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g1-5",
+          "text": "Spotkałem się wczoraj z ___ z dawnej pracy. (ktoś)",
+          "answer": "kimś",
+          "explanation": "z + narzędnik: z kimś.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g1-6",
+          "text": "Na biurku leży ___ telefon. (czyj → -ś)",
+          "answer": "czyjś",
+          "explanation": "czyj → czyjś (telefon), czyjaś (czapka), czyjeś (buty).",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g1-7",
+          "text": "Nie mogę ___ znaleźć. (nic)",
+          "answer": "nic",
+          "accept": [
+            "niczego"
+          ],
+          "explanation": "Po „nie” możesz powiedzieć nic albo niczego — obie formy są poprawne.",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g1-8",
+          "text": "Nie rozmawiałem dziś z ___. (nikt)",
+          "answer": "nikim",
+          "explanation": "z + narzędnik: z nikim.",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g1-9",
+          "text": "Pani Halina nie ufa ___. (nikt)",
+          "answer": "nikomu",
+          "explanation": "ufać komu? — nikomu.",
+          "grammar_point": "negacja-podwojna"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. -ś, -kolwiek czy byle?",
+      "instruction": "Konkretne, ale nieznane → -ś. Wszystko jedno / що б не → -kolwiek. Абияк, як попало → byle. Wybierz.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Wczoraj ___ zostawił pod moimi drzwiami paczkę.",
+          "answer": "ktoś",
+          "options": [
+            "ktoś",
+            "ktokolwiek"
+          ],
+          "explanation": "Konkretna osoba, tylko nie wiem kto → -ś (хтось).",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g2-2",
+          "text": "___ zrobisz, rodzice i tak będą z ciebie dumni.",
+          "answer": "Cokolwiek",
+          "options": [
+            "Coś",
+            "Cokolwiek"
+          ],
+          "explanation": "Що б ти не зробив → cokolwiek zrobisz.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g2-3",
+          "text": "___ pojedziesz, zawsze możesz do mnie zadzwonić.",
+          "answer": "Gdziekolwiek",
+          "options": [
+            "Gdzieś",
+            "Gdziekolwiek"
+          ],
+          "explanation": "Куди б ти не поїхав → gdziekolwiek pojedziesz.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g2-4",
+          "text": "___ pojadę do Japonii — to moje marzenie.",
+          "answer": "Kiedyś",
+          "options": [
+            "Kiedyś",
+            "Kiedykolwiek"
+          ],
+          "explanation": "Колись, коли-небудь (у майбутньому) → kiedyś. W zdaniu twierdzącym nie ma „kiedykolwiek pojadę”.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g2-5",
+          "text": "Mój dziadek ___ był kierowcą ciężarówki.",
+          "answer": "kiedyś",
+          "options": [
+            "kiedyś",
+            "kiedykolwiek"
+          ],
+          "explanation": "Колись (у минулому) → też kiedyś.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g2-6",
+          "text": "Napisał ten raport ___ — pełno w nim błędów.",
+          "answer": "byle jak",
+          "options": [
+            "jakoś",
+            "byle jak"
+          ],
+          "explanation": "Абияк, без старання → byle jak.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g2-7",
+          "text": "Nie daję swojego numeru ___ — tylko znajomym.",
+          "answer": "byle komu",
+          "options": [
+            "komuś",
+            "byle komu"
+          ],
+          "explanation": "Кому попало, абикому → byle komu.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g2-8",
+          "text": "To nie jest ___ — to najlepszy chirurg w mieście.",
+          "answer": "byle kto",
+          "options": [
+            "ktoś",
+            "byle kto"
+          ],
+          "explanation": "Nie byle kto = не абихто, важлива персона.",
+          "grammar_point": "zaimki-nieokreslone"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "3. -сь, -небудь, будь- — po polsku",
+      "instruction": "Przetłumacz na polski.",
+      "items": [
+        {
+          "id": "g3-1",
+          "prompt": "Хто-небудь бачив мої ключі?",
+          "answer": "Czy ktoś widział moje klucze?",
+          "accept": [
+            "Ktoś widział moje klucze?",
+            "Czy ktokolwiek widział moje klucze?",
+            "Ktokolwiek widział moje klucze?"
+          ],
+          "explanation": "Zwykłe pytanie → ktoś. „Ktokolwiek” też jest poprawne, ale brzmi mocniej: «хоч хтось узагалі?».",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g3-2",
+          "prompt": "Купи що-небудь на вечерю.",
+          "answer": "Kup coś na kolację.",
+          "explanation": "Prośba → coś. „Cokolwiek” = «будь-що, мені все одно» — inny sens.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g3-3",
+          "prompt": "Колись я напишу книжку.",
+          "answer": "Kiedyś napiszę książkę.",
+          "accept": [
+            "Napiszę kiedyś książkę.",
+            "Kiedyś napiszę jakąś książkę.",
+            "Kiedyś ja napiszę książkę."
+          ],
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g3-4",
+          "prompt": "Хтось залишив тут парасольку.",
+          "answer": "Ktoś zostawił tu parasol.",
+          "accept": [
+            "Ktoś zostawił tutaj parasol.",
+            "Ktoś tu zostawił parasol.",
+            "Ktoś zostawił tu parasolkę.",
+            "Ktoś zostawił tutaj parasolkę.",
+            "Ktoś tu zostawił parasolkę.",
+            "Ktoś tutaj zostawił parasol.",
+            "Ktoś tutaj zostawił parasolkę."
+          ],
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g3-5",
+          "prompt": "Спитай будь-кого — всі знають цей ресторан.",
+          "answer": "Zapytaj kogokolwiek — wszyscy znają tę restaurację.",
+          "accept": [
+            "Zapytaj kogokolwiek — każdy zna tę restaurację.",
+            "Spytaj kogokolwiek — wszyscy znają tę restaurację.",
+            "Spytaj kogokolwiek — każdy zna tę restaurację.",
+            "Spytaj kogokolwiek - każdy zna tę restaurację.",
+            "Spytaj kogokolwiek - wszyscy znają tę restaurację.",
+            "Spytaj kogokolwiek, każdy zna tę restaurację.",
+            "Spytaj kogokolwiek, wszyscy znają tę restaurację.",
+            "Spytaj kogokolwiek. każdy zna tę restaurację.",
+            "Spytaj kogokolwiek. wszyscy znają tę restaurację.",
+            "Zapytaj kogokolwiek - każdy zna tę restaurację.",
+            "Zapytaj kogokolwiek - wszyscy znają tę restaurację.",
+            "Zapytaj kogokolwiek, każdy zna tę restaurację.",
+            "Zapytaj kogokolwiek, wszyscy znają tę restaurację.",
+            "Zapytaj kogokolwiek. każdy zna tę restaurację.",
+            "Zapytaj kogokolwiek. wszyscy znają tę restaurację."
+          ],
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g3-6",
+          "prompt": "Він усе робить абияк.",
+          "answer": "On wszystko robi byle jak.",
+          "accept": [
+            "Wszystko robi byle jak.",
+            "On robi wszystko byle jak.",
+            "Robi wszystko byle jak."
+          ],
+          "grammar_point": "zaimki-nieokreslone"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Nikt, nic, nigdzie, żaden",
+      "instruction": "Wpisz polskie słowo w dobrym przypadku. Pamiętaj o „nie”.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "W domu nie ma ___. (нікого)",
+          "answer": "nikogo",
+          "explanation": "Nie ma + dopełniacz: nikogo.",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g4-2",
+          "text": "Nigdy ___ nie mówię o swojej pensji. (нікому)",
+          "answer": "nikomu",
+          "explanation": "mówić komu? — nikomu.",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g4-3",
+          "text": "Nie mam ___ pomysłu na prezent. (ніякий)",
+          "answer": "żadnego",
+          "explanation": "Ніякий, жоден → żaden (żadnego pomysłu). „Nijaki” znaczy «безбарвний, нудний».",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g4-4",
+          "text": "Od rana ___ nie jadłem. (нічого)",
+          "answer": "nic",
+          "accept": [
+            "niczego"
+          ],
+          "explanation": "nic albo niczego — obie formy poprawne.",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g4-5",
+          "text": "W centrum ___ nie ma wolnego miejsca do parkowania. (ніде)",
+          "answer": "nigdzie",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g4-6",
+          "text": "___ z moich kolegów nie mówi po polsku. (жоден)",
+          "answer": "Żaden",
+          "accept": [
+            "Ani jeden"
+          ],
+          "explanation": "Жоден з → żaden z.",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g4-7",
+          "text": "Nie interesuję się ___. (нічим)",
+          "answer": "niczym",
+          "explanation": "interesować się + narzędnik: niczym.",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g4-8",
+          "text": "Nie piję ani kawy, ___ herbaty. (ні)",
+          "answer": "ani",
+          "explanation": "Ні… ні… → ani… ani…",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g4-9",
+          "text": "Nie rozmawialiśmy o ___ ważnym. (ні про що)",
+          "answer": "niczym",
+          "explanation": "o + miejscownik: o niczym.",
+          "grammar_point": "negacja-podwojna"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Coś ciekawego, ktoś nowy",
+      "instruction": "Wpisz przymiotnik w dobrej formie. Po coś / nic → dopełniacz. Po ktoś → ten sam przypadek.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Masz ochotę na coś ___? (słodki)",
+          "answer": "słodkiego",
+          "explanation": "coś + dopełniacz: coś słodkiego.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g5-2",
+          "text": "U mnie w pracy nic ___. (nowy)",
+          "answer": "nowego",
+          "explanation": "nic + dopełniacz: nic nowego (як «нічого нового»).",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g5-3",
+          "text": "Opowiedz mi coś ___ o sobie. (ciekawy)",
+          "answer": "ciekawego",
+          "explanation": "Щось цікаве → coś ciekawego.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g5-4",
+          "text": "Szukamy kogoś ___ do zespołu. (doświadczony)",
+          "answer": "doświadczonego",
+          "explanation": "ktoś + przymiotnik w tym samym przypadku: szukamy kogo? — kogoś doświadczonego.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g5-5",
+          "text": "Do biura przyszedł ktoś ___. (obcy)",
+          "answer": "obcy",
+          "explanation": "Mianownik: ktoś obcy (bez dopełniacza!).",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g5-6",
+          "text": "Czy stało się coś ___? (zły)",
+          "answer": "złego",
+          "explanation": "coś złego.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g5-7",
+          "text": "Na weselu poznałem kogoś bardzo ___. (miły)",
+          "answer": "miłego",
+          "explanation": "poznać kogo? — kogoś miłego.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g5-8",
+          "text": "Rozmawiałem z kimś ___ z ministerstwa. (ważny)",
+          "answer": "ważnym",
+          "explanation": "z kim? — z kimś ważnym.",
+          "grammar_point": "zaimki-nieokreslone"
+        },
+        {
+          "id": "g5-9",
+          "text": "Nie widzę w tym nic ___. (śmieszny)",
+          "answer": "śmiesznego",
+          "explanation": "nic śmiesznego.",
+          "grammar_point": "negacja-podwojna"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Nikt czy żaden?",
+      "instruction": "O ludziach bez rzeczownika → nikt. Z rzeczownikiem albo „z nich” → żaden. Wybierz.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Rano ___ autobus nie przyjechał na czas.",
+          "answer": "żaden",
+          "options": [
+            "żaden",
+            "nikt"
+          ],
+          "explanation": "Z rzeczownikiem → żaden (жоден автобус).",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g6-2",
+          "text": "W całym domu ___ nie wie, gdzie są klucze.",
+          "answer": "nikt",
+          "options": [
+            "nikt",
+            "żaden"
+          ],
+          "explanation": "Bez rzeczownika, o ludziach → nikt.",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g6-3",
+          "text": "Z tych trzech filmów ___ mi się nie podobał.",
+          "answer": "żaden",
+          "options": [
+            "żaden",
+            "nikt"
+          ],
+          "explanation": "Wybór z grupy rzeczy → żaden (z nich).",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g6-4",
+          "text": "Nie mam ___ pytań.",
+          "answer": "żadnych",
+          "options": [
+            "żadnych",
+            "nikogo"
+          ],
+          "explanation": "Жодних питань → żadnych pytań.",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g6-5",
+          "text": "Dzwoniłem dwa razy, ale ___ nie odebrał.",
+          "answer": "nikt",
+          "options": [
+            "nikt",
+            "żaden"
+          ],
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g6-6",
+          "text": "To ___ problem, naprawimy to w minutę.",
+          "answer": "żaden",
+          "options": [
+            "żaden",
+            "nikt"
+          ],
+          "explanation": "To żaden problem = це не проблема.",
+          "grammar_point": "negacja-podwojna"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "7. „Нічого!” — po polsku",
+      "instruction": "Wybierz naturalną odpowiedź.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "— Przepraszam, nadepnąłem panu na nogę! — ___",
+          "answer": "Nic nie szkodzi.",
+          "options": [
+            "Nic.",
+            "Nic nie szkodzi."
+          ],
+          "explanation": "„Нічого!” у відповідь на вибачення → Nic nie szkodzi / Nic się nie stało.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g7-2",
+          "text": "— Jak się masz? — ___, jakoś leci.",
+          "answer": "Może być",
+          "options": [
+            "Może być",
+            "Nic"
+          ],
+          "explanation": "„Нічого, нормально” → może być, jakoś leci.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g7-3",
+          "text": "— Dostałem podwyżkę! — ___ Gratuluję!",
+          "answer": "No proszę!",
+          "options": [
+            "No proszę!",
+            "Nic sobie!"
+          ],
+          "explanation": "„Нічого собі!” → No proszę! / Nieźle! / O rany!",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g7-4",
+          "text": "— Jak tam egzamin? — ___, zdałem na czwórkę.",
+          "answer": "Nieźle",
+          "options": [
+            "Nieźle",
+            "Nic"
+          ],
+          "explanation": "„Нічогенько” → nieźle.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g7-5",
+          "text": "— Dziękuję za pomoc! — ___",
+          "answer": "Nie ma za co.",
+          "options": [
+            "Nie ma za co.",
+            "Nic."
+          ],
+          "explanation": "„Нема за що” → Nie ma za co.",
+          "grammar_point": "kalki-uk"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "8. Ніхто ніколи нічого — po polsku",
+      "instruction": "Przetłumacz na polski.",
+      "items": [
+        {
+          "id": "g8-1",
+          "prompt": "Ніхто мені нічого не сказав.",
+          "answer": "Nikt mi nic nie powiedział.",
+          "accept": [
+            "Nikt nic mi nie powiedział.",
+            "Nikt mi niczego nie powiedział.",
+            "Nikt niczego mi nie powiedział."
+          ],
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g8-2",
+          "prompt": "Він ніколи нікому не допомагає.",
+          "answer": "On nigdy nikomu nie pomaga.",
+          "accept": [
+            "Nigdy nikomu nie pomaga.",
+            "On nikomu nigdy nie pomaga.",
+            "Nikomu nigdy nie pomaga."
+          ],
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g8-3",
+          "prompt": "У мене немає жодних проблем.",
+          "answer": "Nie mam żadnych problemów.",
+          "accept": [
+            "Nie mam żadnego problemu."
+          ],
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g8-4",
+          "prompt": "Нікого не було вдома.",
+          "answer": "Nikogo nie było w domu.",
+          "accept": [
+            "W domu nikogo nie było."
+          ],
+          "explanation": "Nie było + dopełniacz: nikogo.",
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g8-5",
+          "prompt": "Нічого страшного, буває.",
+          "answer": "Nic nie szkodzi, zdarza się.",
+          "accept": [
+            "Nic się nie stało, zdarza się.",
+            "Nic nie szkodzi, bywa.",
+            "Nic się nie stało, bywa.",
+            "Nic nie szkodzi - bywa.",
+            "Nic nie szkodzi - zdarza się.",
+            "Nic nie szkodzi — bywa.",
+            "Nic nie szkodzi — zdarza się.",
+            "Nic nie szkodzi. bywa.",
+            "Nic nie szkodzi. zdarza się.",
+            "Nic się nie stało - bywa.",
+            "Nic się nie stało - zdarza się.",
+            "Nic się nie stało — bywa.",
+            "Nic się nie stało — zdarza się.",
+            "Nic się nie stało. bywa.",
+            "Nic się nie stało. zdarza się."
+          ],
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-6",
+          "prompt": "Ми не знайшли жодного вільного місця.",
+          "answer": "Nie znaleźliśmy żadnego wolnego miejsca.",
+          "accept": [
+            "Nie znaleźliśmy ani jednego wolnego miejsca."
+          ],
+          "grammar_point": "negacja-podwojna"
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "9. Popraw kalkę z ukraińskiego",
+      "instruction": "Każde zdanie ma jeden błąd. Napisz je poprawnie.",
+      "items": [
+        {
+          "id": "g9-1",
+          "prompt": "Kiedykolwiek pojadę do Australii.",
+          "answer": "Kiedyś pojadę do Australii.",
+          "accept": [
+            "Pojadę kiedyś do Australii."
+          ],
+          "explanation": "Przyszłość w zdaniu twierdzącym → kiedyś.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g9-2",
+          "prompt": "Mam dla ciebie coś ciekawe.",
+          "answer": "Mam dla ciebie coś ciekawego.",
+          "accept": [
+            "Mam coś ciekawego dla ciebie."
+          ],
+          "explanation": "coś + dopełniacz.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g9-3",
+          "prompt": "Nie mam nijakiego pomysłu.",
+          "answer": "Nie mam żadnego pomysłu.",
+          "explanation": "Ніякий → żaden. Nijaki = безбарвний, нудний.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g9-4",
+          "prompt": "Nikt nie ma w domu.",
+          "answer": "Nikogo nie ma w domu.",
+          "accept": [
+            "W domu nikogo nie ma."
+          ],
+          "explanation": "Nie ma + dopełniacz, jak «нікого немає».",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g9-5",
+          "prompt": "Co byś nie powiedział, ja i tak zostanę.",
+          "answer": "Cokolwiek powiesz, ja i tak zostanę.",
+          "accept": [
+            "Cokolwiek byś powiedział, ja i tak zostanę.",
+            "Cokolwiek powiesz, i tak zostanę.",
+            "Cokolwiek byś powiedział, i tak zostanę.",
+            "Cokolwiek byś powiedział - i tak zostanę.",
+            "Cokolwiek byś powiedział - ja i tak zostanę.",
+            "Cokolwiek byś powiedział — i tak zostanę.",
+            "Cokolwiek byś powiedział — ja i tak zostanę.",
+            "Cokolwiek byś powiedział. i tak zostanę.",
+            "Cokolwiek byś powiedział. ja i tak zostanę.",
+            "Cokolwiek powiesz - i tak zostanę.",
+            "Cokolwiek powiesz - ja i tak zostanę.",
+            "Cokolwiek powiesz — i tak zostanę.",
+            "Cokolwiek powiesz — ja i tak zostanę.",
+            "Cokolwiek powiesz. i tak zostanę.",
+            "Cokolwiek powiesz. ja i tak zostanę."
+          ],
+          "explanation": "„Co byś nie…” to kalka z «що б ти не…». W piśmie i na egzaminie: cokolwiek.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g9-6",
+          "prompt": "Odpowiedź na „Przepraszam za spóźnienie!”: Nic!",
+          "answer": "Nic nie szkodzi!",
+          "accept": [
+            "Nic się nie stało!"
+          ],
+          "explanation": "Samo „Nic!” brzmi jak «ніщо».",
+          "grammar_point": "kalki-uk"
+        }
+      ]
+    }
+  ]
+}
