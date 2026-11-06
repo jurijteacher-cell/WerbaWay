@@ -141,6 +141,8 @@ export type GrammarBoardTaskItem = {
   /** matching: right side (also used as answer) */
   right?: string;
   answer?: string;
+  /** other correct answers (also from `"answer": [..]` in JSON) */
+  accept?: string[];
   options?: string[];
   explanation?: string;
 };

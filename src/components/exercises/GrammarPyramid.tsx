@@ -29,6 +29,10 @@ type Props = {
   data: GrammarPyramidExercise;
   /** Optional filter by original block_id stored on level.block_id, or by 1-based level index ids like g1 */
   blockIds?: string[];
+  /** Embedded inside another exercise (grammar board card): no header, no tabs, no «level done» banner. */
+  bare?: boolean;
+  /** Keep legacy result ids (grammar board) — defaults to `${block_id}:${item.id}`. */
+  track?: { blockId: string; itemId: (item: GrammarPyramidItem) => string };
 };
 
 type Level = GrammarPyramidExercise['levels'][number];
@@ -84,7 +88,7 @@ function ItemPhoto({ item }: { item: { image_url?: string; image_alt?: string; i
   );
 }
 
-export function GrammarPyramid({ data, blockIds }: Props) {
+export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
   const levels = useMemo(() => {
     if (!blockIds?.length) return data.levels;
     const set = new Set(blockIds);
@@ -155,8 +159,8 @@ export function GrammarPyramid({ data, blockIds }: Props) {
 
   const record = (item: GrammarPyramidItem, given: string, expected: string, ok: boolean | null) =>
     trackAttempt({
-      blockId,
-      itemId: `${blockId}:${item.id}`,
+      blockId: track?.blockId ?? blockId,
+      itemId: track ? track.itemId(item) : `${blockId}:${item.id}`,
       itemType: level.task_type,
       grammarPoint: item.grammar_point ?? null,
       prompt: item.sentence ?? item.prompt ?? (item.words ? item.words.join(' / ') : null),
@@ -203,8 +207,17 @@ export function GrammarPyramid({ data, blockIds }: Props) {
       const fields = Array.from(root.querySelectorAll<HTMLElement>('[data-k]'));
       const i = fields.findIndex((f) => f.dataset.k === fromK);
       const order = [...fields.slice(i + 1), ...fields.slice(0, Math.max(i, 0))];
-      const next = order.find((f) => !doneRef.current[f.dataset.k ?? '']);
-      const target = next ?? document.querySelector<HTMLElement>('.nb-done .nb-btn, .nb-nav .nb-btn.success');
+      const next = bare
+        ? fields.slice(i + 1).find((f) => !doneRef.current[f.dataset.k ?? ''])
+        : order.find((f) => !doneRef.current[f.dataset.k ?? '']);
+      const after = (el: Element) => root.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING && !root.contains(el);
+      const later = bare
+        ? Array.from(document.querySelectorAll<HTMLElement>('[data-k]')).find(
+            (f) => after(f) && f.offsetParent !== null && !f.classList.contains('ok')
+          )
+        : undefined;
+      const target =
+        next ?? later ?? document.querySelector<HTMLElement>('.nb-done .nb-btn, .nb-nav .nb-btn.success');
       if (!target) return;
       target.focus({ preventScroll: true });
       target.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -280,12 +293,14 @@ export function GrammarPyramid({ data, blockIds }: Props) {
 
   return (
     <div>
+      {bare ? null : (
       <header className="nb-head">
         <p className="nb-eyebrow">{data.eyebrow ?? 'gramatyka'}</p>
         <h1>{data.title}</h1>
         {data.instructions ? <p>{data.instructions}</p> : null}
         {data.instructions_uk ? <p className="nb-instruction-uk">{data.instructions_uk}</p> : null}
       </header>
+      )}
 
       {!single ? (
         <>
@@ -325,7 +340,15 @@ export function GrammarPyramid({ data, blockIds }: Props) {
             </p>
           ) : null}
           {level.instruction ? (
-            <p style={{ margin: 0, color: 'var(--nb-ink-soft)', fontSize: 15 }}>{level.instruction}</p>
+            <p
+              style={
+                bare
+                  ? { margin: 0, fontWeight: 600, fontSize: 15.5 }
+                  : { margin: 0, color: 'var(--nb-ink-soft)', fontSize: 15 }
+              }
+            >
+              {level.instruction}
+            </p>
           ) : null}
           {level.instruction_uk ? <p className="nb-instruction-uk" style={{ margin: '4px 0 0' }}>{level.instruction_uk}</p> : null}
           {!levelDone && (!level.instruction || ['type', 'type-long', 'build'].includes(tipFor(level))) ? (
@@ -696,7 +719,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
           })}
       </div>
 
-      {levelDone ? (
+      {levelDone && !bare ? (
         isLast || single ? (
           allDone ? (
             <LevelDone title="Wszystko zrobione!" text="Każde zadanie jest poprawne. Brawo!" />

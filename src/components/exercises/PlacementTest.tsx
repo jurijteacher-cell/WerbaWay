@@ -328,8 +328,9 @@ export function PlacementTest({ lessonId }: Props) {
 
               <ol className="placement-items">
                 {(block.items ?? []).map((item, idx) => {
+                  // «Nie wiem» always last, visually separate — not shuffled in among real options
                   const opts = item.options
-                    ? shuffle([...item.options, dontKnow], `${seed}:${item.id}`)
+                    ? [...shuffle([...item.options], `${seed}:${item.id}`), dontKnow]
                     : [dontKnow];
                   const vertical =
                     (item.options ?? []).some((o) => o.length > 36) ||
@@ -344,7 +345,13 @@ export function PlacementTest({ lessonId }: Props) {
                               <span key={i}>
                                 {part}
                                 {i < arr.length - 1 ? (
-                                  <span className="placement-blank-mark">……</span>
+                                  answers[item.id] && answers[item.id] !== dontKnow && item.options ? (
+                                    <span className="placement-blank-mark filled" key={answers[item.id]}>
+                                      {answers[item.id]}
+                                    </span>
+                                  ) : (
+                                    <span className="placement-blank-mark">……</span>
+                                  )
                                 ) : null}
                               </span>
                             ))

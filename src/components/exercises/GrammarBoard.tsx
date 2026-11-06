@@ -1,54 +1,66 @@
 'use client';
 
-import { useMemo, useState, type Dispatch, type SetStateAction } from 'react';
-import type { GrammarBoardExercise, GrammarBoardTaskItem } from '@/content/queue-types';
-import { answersMatch as matchAnswer } from '@/lib/answer-match';
-import { trackAttempt } from '@/lib/embed-tracker';
+import { useMemo, useState } from 'react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import type {
+  GrammarBoardExercise,
+  GrammarBoardTaskItem,
+  GrammarPyramidExercise,
+  GrammarPyramidItem,
+} from '@/content/queue-types';
+import { GrammarPyramid } from './GrammarPyramid';
 
+/**
+ * «Tablica gramatyczna»: theory card + its tasks. Tasks run on the same engine as grammar
+ * exercises (GrammarPyramid, bare mode) — inline gaps, one Enter, accept[] — UI v2.
+ * All cards stay mounted (hidden) so answers survive switching cards.
+ */
 type Props = { data: GrammarBoardExercise };
 
-function shuffle<T>(arr: T[], seed: string): T[] {
-  const a = [...arr];
-  let h = 0;
-  for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) >>> 0;
-  for (let i = a.length - 1; i > 0; i--) {
-    h = (h * 1664525 + 1013904223) >>> 0;
-    const j = h % (i + 1);
-    [a[i], a[j]] = [a[j], a[i]];
+function toPyramidItem(it: GrammarBoardTaskItem, type: string): GrammarPyramidItem {
+  if (type === 'matching') {
+    return { id: it.id, prompt: it.left ?? it.prompt ?? '', answer: String(it.answer ?? it.right ?? ''), accept: it.accept };
   }
-  return a;
+  return {
+    id: it.id,
+    sentence: it.text ?? it.sentence ?? it.prompt,
+    prompt: it.prompt ?? it.text ?? it.sentence,
+    answer: it.answer == null ? undefined : String(it.answer),
+    options: it.options,
+    explanation: it.explanation,
+    accept: it.accept,
+  };
 }
 
-function itemPrompt(item: GrammarBoardTaskItem) {
-  return item.left ?? item.prompt ?? item.text ?? item.sentence ?? '';
-}
-
-function itemAnswer(item: GrammarBoardTaskItem) {
-  return String(item.answer ?? item.right ?? '');
-}
+const TASK_TYPES = new Set(['fill-in-blank', 'matching', 'true-false', 'sentence-building', 'open-answer', 'text-transform']);
 
 export function GrammarBoard({ data }: Props) {
   const [cardIdx, setCardIdx] = useState(0);
-  const [answers, setAnswers] = useState<Record<string, string>>({});
-  const [feedback, setFeedback] = useState<Record<string, boolean | null>>({});
-  const [matchLeft, setMatchLeft] = useState<Record<string, string | null>>({});
-  const [matchPairs, setMatchPairs] = useState<Record<string, Record<string, string>>>({});
 
-  const card = data.cards[cardIdx];
-  if (!card) return null;
+  const cards = useMemo(
+    () =>
+      data.cards.map((card) => {
+        const levels = (card.tasks ?? []).map((task, ti) => {
+          const raw = task.exercise_type ?? 'fill-in-blank';
+          const type = TASK_TYPES.has(raw) ? raw : 'fill-in-blank'; // multiple-choice → option chips
+          return {
+            level: ti + 1,
+            name: task.instruction ?? '',
+            instruction: task.instruction,
+            task_type: type,
+            block_id: `${card.id}-${task.task_id}`,
+            items: (task.items ?? []).map((it) => toPyramidItem(it, type)),
+            taskId: task.task_id,
+          };
+        });
+        return { card, levels };
+      }),
+    [data.cards]
+  );
 
-  const check = (k: string, given: string, expected: string, prompt?: string, type?: string) => {
-    const ok = matchAnswer(given, expected).ok;
-    setFeedback((f) => ({ ...f, [k]: ok }));
-    trackAttempt({
-      blockId: `karta ${card.number ?? card.id}`,
-      itemId: k,
-      itemType: type ?? 'fill-in-blank',
-      prompt: prompt ?? null,
-      answer: given,
-      expected,
-      correct: ok,
-    });
+  const go = (i: number) => {
+    setCardIdx(i);
+    requestAnimationFrame(() => document.querySelector('.nb-idx')?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
   };
 
   return (
@@ -59,236 +71,72 @@ export function GrammarBoard({ data }: Props) {
         {data.instructions ? <p>{data.instructions}</p> : null}
       </header>
 
-      <div className="nb-idx" role="tablist">
+      <div className="nb-idx" role="tablist" style={{ scrollMarginTop: 12 }}>
         {data.cards.map((c, i) => (
-          <button
-            key={c.id}
-            type="button"
-            role="tab"
-            aria-selected={i === cardIdx}
-            onClick={() => setCardIdx(i)}
-          >
-            {c.number ?? i + 1}
+          <button key={c.id} type="button" role="tab" aria-selected={i === cardIdx} onClick={() => go(i)}>
+            <span className="nb-tab-badge">{c.number ?? i + 1}</span>
+            {c.rubric ?? c.section ?? `Karta ${i + 1}`}
           </button>
         ))}
       </div>
 
-      <article className="nb-panel">
-        {card.section ? (
-          <p className="nb-note" style={{ marginTop: 0 }}>
-            {card.section}
-          </p>
-        ) : null}
-        {card.rubric ? <p style={{ fontWeight: 700, margin: '0 0 6px' }}>{card.rubric}</p> : null}
-        {card.lead ? <p style={{ fontSize: '1.15rem', margin: '0 0 10px' }}>{card.lead}</p> : null}
-        {card.rows?.length ? (
-          <ul style={{ margin: '0 0 12px', paddingLeft: 18 }}>
-            {card.rows.map((row) => (
-              <li key={row}>{row}</li>
-            ))}
-          </ul>
-        ) : null}
-        {card.sticker ? (
-          <p className="nb-sticky" style={{ display: 'inline-block', marginBottom: 14 }}>
-            {card.sticker}
-          </p>
-        ) : null}
+      {cards.map(({ card, levels }, ci) => (
+        <section key={card.id} hidden={ci !== cardIdx} className="nb-list">
+          <article className="nb-panel" style={{ background: 'var(--nb-paper-2)', borderColor: 'transparent' }}>
+            {card.section ? (
+              <p className="nb-eyebrow" style={{ display: 'flex' }}>
+                {card.section}
+              </p>
+            ) : null}
+            {card.rubric ? <p className="nb-tape">{card.rubric}</p> : null}
+            {card.lead ? (
+              <p className="nb-q" style={{ fontSize: 19, fontWeight: 500, margin: '0 0 8px' }}>
+                {card.lead}
+              </p>
+            ) : null}
+            {card.rows?.length ? (
+              <ul className="nb-q" style={{ margin: '0 0 8px', paddingLeft: 20, fontSize: 16.5, lineHeight: 1.6 }}>
+                {card.rows.map((row) => (
+                  <li key={row}>{row}</li>
+                ))}
+              </ul>
+            ) : null}
+            {card.sticker ? (
+              <p className="nb-fb hint" style={{ margin: '8px 0 0' }}>
+                {card.sticker}
+              </p>
+            ) : null}
+          </article>
 
-        {(card.tasks ?? []).map((task) => {
-          const type = task.exercise_type ?? 'fill-in-blank';
-          const items = task.items ?? [];
-
-          if (type === 'matching') {
-            return (
-              <MatchingTask
-                key={task.task_id}
-                taskId={task.task_id}
-                cardId={String(card.id)}
-                instruction={task.instruction}
-                items={items}
-                matchLeft={matchLeft}
-                setMatchLeft={setMatchLeft}
-                matchPairs={matchPairs}
-                setMatchPairs={setMatchPairs}
-              />
-            );
-          }
-
-          return (
-            <div key={task.task_id} style={{ marginTop: 14 }}>
-              {task.instruction ? (
-                <p style={{ fontWeight: 600, margin: '0 0 8px' }}>{task.instruction}</p>
-              ) : null}
-              {items.map((item) => {
-                const k = `${card.id}-${task.task_id}-${item.id}`;
-                const fb = feedback[k];
-                const sentence = itemPrompt(item);
-                const expected = itemAnswer(item);
-                return (
-                  <div key={k} style={{ marginBottom: 12 }}>
-                    {sentence ? <p style={{ margin: '0 0 6px' }}>{sentence}</p> : null}
-                    {item.options?.length ? (
-                      <div className="nb-row" style={{ marginTop: 0, marginBottom: 6 }}>
-                        {item.options.map((opt) => (
-                          <button
-                            key={opt}
-                            type="button"
-                            className={`nb-chip${answers[k] === opt ? ' sel' : ''}`}
-                            onClick={() => setAnswers((a) => ({ ...a, [k]: opt }))}
-                          >
-                            {opt}
-                          </button>
-                        ))}
-                      </div>
-                    ) : (
-                      <input
-                        className={`nb-blank${fb === true ? ' ok' : ''}${fb === false ? ' no' : ''}`}
-                        value={answers[k] ?? ''}
-                        onChange={(e) => setAnswers((a) => ({ ...a, [k]: e.target.value }))}
-                        placeholder="Odpowiedź…"
-                      />
-                    )}
-                    <button
-                      type="button"
-                      className="nb-btn"
-                      style={{ marginTop: 6 }}
-                      onClick={() => check(k, answers[k] ?? '', expected, sentence, type)}
-                    >
-                      Sprawdź
-                    </button>
-                    {fb === true ? <span className="ok"> ✓</span> : null}
-                    {fb === false ? <span className="no"> ✗</span> : null}
-                    {fb === false && expected ? (
-                      <p className="nb-note" style={{ margin: '4px 0 0' }}>
-                        → {expected}
-                      </p>
-                    ) : null}
-                  </div>
-                );
-              })}
-            </div>
-          );
-        })}
-      </article>
-
-      <div className="nb-row" style={{ marginTop: 16 }}>
-        <button
-          type="button"
-          className="nb-btn"
-          disabled={cardIdx === 0}
-          onClick={() => setCardIdx((i) => Math.max(0, i - 1))}
-        >
-          ← Poprzednia
-        </button>
-        <button
-          type="button"
-          className="nb-btn"
-          disabled={cardIdx >= data.cards.length - 1}
-          onClick={() => setCardIdx((i) => Math.min(data.cards.length - 1, i + 1))}
-        >
-          Następna →
-        </button>
-      </div>
-    </div>
-  );
-}
-
-function MatchingTask({
-  taskId,
-  cardId,
-  instruction,
-  items,
-  matchLeft,
-  setMatchLeft,
-  matchPairs,
-  setMatchPairs,
-}: {
-  taskId: string;
-  cardId: string;
-  instruction?: string;
-  items: GrammarBoardTaskItem[];
-  matchLeft: Record<string, string | null>;
-  setMatchLeft: Dispatch<SetStateAction<Record<string, string | null>>>;
-  matchPairs: Record<string, Record<string, string>>;
-  setMatchPairs: Dispatch<SetStateAction<Record<string, Record<string, string>>>>;
-}) {
-  const scope = `${cardId}-${taskId}`;
-  const rights = useMemo(
-    () => shuffle(items.map((it) => itemAnswer(it)).filter(Boolean), `board-${scope}`),
-    [items, scope]
-  );
-
-  return (
-    <div style={{ marginTop: 14 }}>
-      {instruction ? <p style={{ fontWeight: 600, margin: '0 0 8px' }}>{instruction}</p> : null}
-      <p className="nb-note" style={{ margin: '0 0 8px' }}>
-        Kliknij lewą stronę, potem prawą.
-      </p>
-      <div className="nb-row" style={{ marginTop: 0, alignItems: 'flex-start' }}>
-        <div style={{ flex: 1, display: 'grid', gap: 8 }}>
-          {items.map((item) => {
-            const id = String(item.id);
-            const paired = matchPairs[scope]?.[id];
-            const selected = matchLeft[scope] === id;
-            const expected = itemAnswer(item);
-            const ok = paired != null && paired === expected;
-            return (
-              <button
-                key={id}
-                type="button"
-                className={`nb-chip${selected ? ' sel' : ''}${ok ? ' ok' : ''}${
-                  paired && !ok ? ' no' : ''
-                }`}
-                onClick={() => setMatchLeft((m) => ({ ...m, [scope]: id }))}
-              >
-                {itemPrompt(item)}
-                {paired ? ` → ${paired}` : ''}
-              </button>
-            );
-          })}
-        </div>
-        <div style={{ flex: 1, display: 'grid', gap: 8 }}>
-          {rights.map((right) => {
-            const used = Object.values(matchPairs[scope] ?? {}).includes(right);
-            return (
-              <button
-                key={right}
-                type="button"
-                className={`nb-chip${used ? ' ok' : ''}`}
-                disabled={used}
-                onClick={() => {
-                  const leftId = matchLeft[scope];
-                  if (!leftId) return;
-                  const item = items.find((it) => String(it.id) === leftId);
-                  if (!item) return;
-                  const correct = matchAnswer(right, itemAnswer(item)).ok;
-                  trackAttempt({
-                    blockId: `karta ${cardId}`,
-                    itemId: `${scope}-${leftId}`,
-                    itemType: 'matching',
-                    prompt: itemPrompt(item) ?? null,
-                    answer: right,
-                    expected: itemAnswer(item),
-                    correct,
-                  });
-                  if (correct) {
-                    setMatchPairs((p) => ({
-                      ...p,
-                      [scope]: { ...(p[scope] ?? {}), [leftId]: right },
-                    }));
-                  } else {
-                    const btn = document.activeElement as HTMLElement | null;
-                    btn?.classList.add('nb-shake');
-                    setTimeout(() => btn?.classList.remove('nb-shake'), 400);
-                  }
-                  setMatchLeft((m) => ({ ...m, [scope]: null }));
+          {levels.map((lvl) => (
+            <div key={lvl.block_id} style={{ marginTop: 18 }}>
+              <GrammarPyramid
+                bare
+                data={{ lesson_id: data.lesson_id, exercise_type: 'grammar', title: '', levels: [lvl] } as unknown as GrammarPyramidExercise}
+                track={{
+                  blockId: `karta ${card.number ?? card.id}`,
+                  // same ids as the pre-v2 board, so earlier student attempts stay linked
+                  itemId: (item) => `${card.id}-${lvl.taskId}-${item.id}`,
                 }}
-              >
-                {right}
-              </button>
-            );
-          })}
-        </div>
+              />
+            </div>
+          ))}
+        </section>
+      ))}
+
+      <div className="nb-nav">
+        {cardIdx > 0 ? (
+          <button type="button" className="nb-btn ghost" onClick={() => go(cardIdx - 1)}>
+            <ArrowLeft aria-hidden /> Poprzednia
+          </button>
+        ) : (
+          <span />
+        )}
+        {cardIdx < data.cards.length - 1 ? (
+          <button type="button" className="nb-btn success" onClick={() => go(cardIdx + 1)}>
+            Następna karta <ArrowRight aria-hidden />
+          </button>
+        ) : null}
       </div>
     </div>
   );
