@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, Check, Eye } from 'lucide-react';
 import type { GrammarPyramidExercise, GrammarPyramidItem } from '@/content/queue-types';
 import { answersMatch, stripDiacritics } from '@/lib/answer-match';
 import { trackAttempt } from '@/lib/embed-tracker';
+import { clearProgress, hasAny, loadProgress, saveProgress } from '@/lib/embed-progress';
 import { SentenceBuilding } from './SentenceBuilding';
 import { SendToTeacher } from './SendToTeacher';
 import {
@@ -19,6 +20,8 @@ import {
   otherAnswers,
   splitGap,
   type TipKind,
+  ResetControl,
+  RestoredNote,
 } from './nb-ui';
 
 /**
@@ -107,16 +110,103 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
   const [openAnswers, setOpenAnswers] = useState<Record<string, string>>({});
   const [feedback, setFeedback] = useState<Record<string, boolean | null>>({});
   const [hints, setHints] = useState<Record<string, string | null>>({});
-  const [, setFailCounts] = useState<Record<string, number>>({});
+  const [failCounts, setFailCounts] = useState<Record<string, number>>({});
   const [showAnswer, setShowAnswer] = useState<Record<string, boolean>>({});
   const [sbOk, setSbOk] = useState<Record<string, boolean>>({});
   const [focusKey, setFocusKey] = useState<string | null>(null);
   const [also, setAlso] = useState<Record<string, string[]>>({});
+  /** «ułóż» order the student got right — to show the solved line again after reopening */
+  const [sbGiven, setSbGiven] = useState<Record<string, string>>({});
+  /** bumped on reset → remounts the level (clears SentenceBuilding's own state) */
+  const [epoch, setEpoch] = useState(0);
+  const [ready, setReady] = useState(false);
+  const [restored, setRestored] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
   /** keys answered correctly — read synchronously when moving focus */
   const doneRef = useRef<Record<string, boolean>>({});
   /** last navigation came from the keyboard → keep the Enter flow going on the next level */
   const kbRef = useRef(false);
+
+  /* ── progress in the browser: restore on open, save on every change ─────── */
+  const scope = bare ? `pyramid:${data.levels[0]?.block_id ?? 'x'}` : 'pyramid';
+  type Snap = {
+    levelIdx: number;
+    fill: Record<string, string>;
+    open: Record<string, string>;
+    pairs: Record<string, Record<string, string>>;
+    feedback: Record<string, boolean | null>;
+    hints: Record<string, string | null>;
+    fails: Record<string, number>;
+    showAnswer: Record<string, boolean>;
+    sbOk: Record<string, boolean>;
+    sbGiven: Record<string, string>;
+    also: Record<string, string[]>;
+  };
+  useEffect(() => {
+    const snap = loadProgress<Snap>(scope);
+    if (snap) {
+      setFillAnswers(snap.fill ?? {});
+      setOpenAnswers(snap.open ?? {});
+      setMatchPairs(snap.pairs ?? {});
+      setFeedback(snap.feedback ?? {});
+      setHints(snap.hints ?? {});
+      setFailCounts(snap.fails ?? {});
+      setShowAnswer(snap.showAnswer ?? {});
+      setSbOk(snap.sbOk ?? {});
+      setSbGiven(snap.sbGiven ?? {});
+      setAlso(snap.also ?? {});
+      const done: Record<string, boolean> = {};
+      Object.entries(snap.feedback ?? {}).forEach(([k, v]) => v === true && (done[k] = true));
+      doneRef.current = done;
+      if (!bare && typeof snap.levelIdx === 'number' && snap.levelIdx < levels.length) setLevelIdx(snap.levelIdx);
+      if (!bare && hasAny(snap.fill, snap.open, snap.pairs, snap.sbOk)) setRestored(true);
+    }
+    setReady(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scope]);
+  useEffect(() => {
+    if (!ready) return;
+    saveProgress<Snap>(scope, {
+      levelIdx,
+      fill: fillAnswers,
+      open: openAnswers,
+      pairs: matchPairs,
+      feedback,
+      hints,
+      fails: failCounts,
+      showAnswer,
+      sbOk,
+      sbGiven,
+      also,
+    });
+  }, [ready, scope, levelIdx, fillAnswers, openAnswers, matchPairs, feedback, hints, failCounts, showAnswer, sbOk, sbGiven, also]);
+
+  /** Drop answers of one level (prefix `${level}-`) or of everything. */
+  const resetProgress = (lvl: Level | null) => {
+    const prefix = lvl ? `${lvl.level}-` : '';
+    const drop = <T,>(r: Record<string, T>) =>
+      lvl ? Object.fromEntries(Object.entries(r).filter(([k]) => !k.startsWith(prefix))) : {};
+    setFillAnswers(drop);
+    setOpenAnswers(drop);
+    setFeedback(drop);
+    setHints(drop);
+    setFailCounts(drop);
+    setShowAnswer(drop);
+    setSbOk(drop);
+    setSbGiven(drop);
+    setAlso(drop);
+    setMatchPairs((p) => (lvl ? Object.fromEntries(Object.entries(p).filter(([k]) => k !== String(lvl.level))) : {}));
+    setMatchLeft({});
+    doneRef.current = lvl
+      ? Object.fromEntries(Object.entries(doneRef.current).filter(([k]) => !k.startsWith(prefix)))
+      : {};
+    if (!lvl) {
+      clearProgress(scope);
+      setLevelIdx(0);
+    }
+    setRestored(false);
+    setEpoch((e) => e + 1);
+  };
 
   const keyFor = (l: Level, id: number | string) => `${l.level}-${id}`;
 
@@ -302,6 +392,8 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
       </header>
       )}
 
+      {!bare ? <RestoredNote show={restored} onDismiss={() => setRestored(false)} /> : null}
+
       {!single ? (
         <>
           <div className="nb-idx" role="tablist" ref={tabsRef} style={{ scrollMarginTop: 12 }}>
@@ -358,7 +450,7 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
 
       <div
         className="nb-list"
-        key={level.level}
+        key={`${level.level}-${epoch}`}
         ref={listRef}
         onPointerDown={() => {
           kbRef.current = false;
@@ -605,10 +697,14 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
                   <SentenceBuilding
                     words={item.words ?? []}
                     answer={item.answer ?? ''}
-                    accept={(item as { accept?: string[] }).accept}
+                    accept={item.accept}
+                    solved={sbOk[k] ? sbGiven[k] ?? item.answer ?? '' : undefined}
                     onCheck={(given, ok) => {
                       record(item, given, item.answer ?? '', ok);
-                      if (ok) setSbOk((s) => ({ ...s, [k]: true }));
+                      if (ok) {
+                        setSbOk((s) => ({ ...s, [k]: true }));
+                        setSbGiven((g) => ({ ...g, [k]: given }));
+                      }
                     }}
                   />
                 </div>
@@ -735,20 +831,28 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
         )
       ) : null}
 
-      {!single ? (
+      {!bare ? (
         <div className="nb-nav">
-          {levelIdx > 0 ? (
+          {!single && levelIdx > 0 ? (
             <button type="button" className="nb-btn ghost" onClick={() => goTo(levelIdx - 1)}>
               <ArrowLeft aria-hidden /> Poprzedni
             </button>
           ) : (
             <span />
           )}
-          {!isLast ? (
+          <div className="nb-nav-mid">
+            <ResetControl
+              onResetLevel={single ? undefined : () => resetProgress(level)}
+              onResetAll={() => resetProgress(null)}
+            />
+          </div>
+          {!single && !isLast ? (
             <button type="button" className={`nb-btn${levelDone ? ' success' : ' ghost'}`} onClick={() => goTo(levelIdx + 1)}>
               Następny <ArrowRight aria-hidden />
             </button>
-          ) : null}
+          ) : (
+            <span />
+          )}
         </div>
       ) : null}
     </div>

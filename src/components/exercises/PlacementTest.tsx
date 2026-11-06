@@ -1,6 +1,8 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { clearProgress, loadProgress, saveProgress } from '@/lib/embed-progress';
+import { ResetControl, RestoredNote } from './nb-ui';
 
 type PublicItem = {
   id: string;
@@ -92,7 +94,7 @@ export function PlacementTest({ lessonId }: Props) {
   const [levelTokens, setLevelTokens] = useState<string[]>([]);
   const [writing, setWriting] = useState('');
   const [busy, setBusy] = useState(false);
-  const [startedAt] = useState(() => Date.now());
+  const [startedAt, setStartedAt] = useState(() => Date.now());
   const [result, setResult] = useState<{
     level: string;
     display: string;
@@ -104,8 +106,73 @@ export function PlacementTest({ lessonId }: Props) {
     footer_uk?: string;
   } | null>(null);
   const [writingVariant, setWritingVariant] = useState<'A' | 'B'>('A');
-  const [seed] = useState(() => `${Date.now()}-${Math.random()}`);
+  const [seed, setSeed] = useState(() => `${Date.now()}-${Math.random()}`);
   const [showPassage, setShowPassage] = useState(false);
+
+  /* ── progress in the browser (level tokens are client-held, so resuming is safe) ── */
+  type Snap = {
+    imie: string;
+    tab: Tab;
+    unlocked: Tab[];
+    doneLevels: string[];
+    answers: Record<string, string>;
+    levelTokens: string[];
+    writing: string;
+    startedAt: number;
+    seed: string;
+    writingVariant: 'A' | 'B';
+    result: typeof result;
+  };
+  const [ready, setReady] = useState(false);
+  const [restored, setRestored] = useState(false);
+  useEffect(() => {
+    const snap = loadProgress<Snap>('placement');
+    if (snap && snap.tab && snap.tab !== 'Start') {
+      setImie(snap.imie ?? '');
+      setTab(snap.tab);
+      setUnlocked(new Set(snap.unlocked ?? ['Start']));
+      setDoneLevels(new Set(snap.doneLevels ?? []));
+      setAnswers(snap.answers ?? {});
+      setLevelTokens(snap.levelTokens ?? []);
+      setWriting(snap.writing ?? '');
+      if (snap.startedAt) setStartedAt(snap.startedAt);
+      if (snap.seed) setSeed(snap.seed);
+      if (snap.writingVariant) setWritingVariant(snap.writingVariant);
+      if (snap.result) setResult(snap.result);
+      setRestored(true);
+    }
+    setReady(true);
+  }, []);
+  useEffect(() => {
+    if (!ready) return;
+    saveProgress<Snap>('placement', {
+      imie,
+      tab,
+      unlocked: [...unlocked],
+      doneLevels: [...doneLevels],
+      answers,
+      levelTokens,
+      writing,
+      startedAt,
+      seed,
+      writingVariant,
+      result,
+    });
+  }, [ready, imie, tab, unlocked, doneLevels, answers, levelTokens, writing, startedAt, seed, writingVariant, result]);
+
+  const restart = () => {
+    clearProgress('placement');
+    setTab('Start');
+    setUnlocked(new Set(['Start']));
+    setDoneLevels(new Set());
+    setAnswers({});
+    setLevelTokens([]);
+    setWriting('');
+    setResult(null);
+    setStartedAt(Date.now());
+    setSeed(`${Date.now()}-${Math.random()}`);
+    setRestored(false);
+  };
 
   useEffect(() => {
     const q = new URLSearchParams(window.location.search).get('imie');
@@ -220,7 +287,6 @@ export function PlacementTest({ lessonId }: Props) {
   }
 
   const tabs: Tab[] = ['Start', 'A1', 'A2', 'B1', 'B2', 'Pisanie', 'Wynik'];
-  const tabColors = ['#FFE168', '#A9DCC6', '#BCDCF2', '#F6C2AF', '#D8CFF0', '#FFF0B8', '#E9E3F8'];
 
   return (
     <div className="placement">
@@ -243,18 +309,21 @@ export function PlacementTest({ lessonId }: Props) {
               type="button"
               aria-selected={tab === t}
               disabled={!open}
-              style={{
-                background: tab === t ? tabColors[i] : undefined,
-                opacity: open ? 1 : 0.45,
-              }}
               onClick={() => open && setTab(t)}
             >
-              {done ? '✓ ' : ''}
+              <span className={`nb-tab-badge${done ? ' done' : ''}`}>{done ? '✓' : i + 1}</span>
               {t}
             </button>
           );
         })}
       </nav>
+
+      <RestoredNote show={restored} onDismiss={() => setRestored(false)} />
+      {tab !== 'Start' ? (
+        <div style={{ display: 'flex', justifyContent: 'flex-end', margin: '-8px 0 12px' }}>
+          <ResetControl label="Zacznij test od nowa" onResetAll={restart} />
+        </div>
+      ) : null}
 
       {loadError ? <p className="nb-note">{loadError}</p> : null}
 

@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import type {
   GrammarBoardExercise,
@@ -9,6 +9,8 @@ import type {
   GrammarPyramidItem,
 } from '@/content/queue-types';
 import { GrammarPyramid } from './GrammarPyramid';
+import { clearProgress, loadProgress, saveProgress } from '@/lib/embed-progress';
+import { ResetControl, RestoredNote } from './nb-ui';
 
 /**
  * «Tablica gramatyczna»: theory card + its tasks. Tasks run on the same engine as grammar
@@ -36,6 +38,9 @@ const TASK_TYPES = new Set(['fill-in-blank', 'matching', 'true-false', 'sentence
 
 export function GrammarBoard({ data }: Props) {
   const [cardIdx, setCardIdx] = useState(0);
+  const [epochs, setEpochs] = useState<Record<string, number>>({});
+  const [ready, setReady] = useState(false);
+  const [restored, setRestored] = useState(false);
 
   const cards = useMemo(
     () =>
@@ -58,6 +63,32 @@ export function GrammarBoard({ data }: Props) {
     [data.cards]
   );
 
+  useEffect(() => {
+    const snap = loadProgress<{ cardIdx: number }>('board');
+    if (snap && snap.cardIdx > 0 && snap.cardIdx < data.cards.length) {
+      setCardIdx(snap.cardIdx);
+      setRestored(true);
+    }
+    const anyTask = cards.some(({ levels }) => levels.some((l) => loadProgress(`pyramid:${l.block_id}`)));
+    if (anyTask) setRestored(true);
+    setReady(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  useEffect(() => {
+    if (ready) saveProgress('board', { cardIdx });
+  }, [ready, cardIdx]);
+
+  const resetCards = (which: number[]) => {
+    which.forEach((ci) => cards[ci]?.levels.forEach((l) => clearProgress(`pyramid:${l.block_id}`)));
+    setEpochs((e) => {
+      const next = { ...e };
+      which.forEach((ci) => (next[ci] = (next[ci] ?? 0) + 1));
+      return next;
+    });
+    if (which.length > 1) setCardIdx(0);
+    setRestored(false);
+  };
+
   const go = (i: number) => {
     setCardIdx(i);
     requestAnimationFrame(() => document.querySelector('.nb-idx')?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
@@ -70,6 +101,8 @@ export function GrammarBoard({ data }: Props) {
         <h1>{data.title}</h1>
         {data.instructions ? <p>{data.instructions}</p> : null}
       </header>
+
+      <RestoredNote show={restored} onDismiss={() => setRestored(false)} />
 
       <div className="nb-idx" role="tablist" style={{ scrollMarginTop: 12 }}>
         {data.cards.map((c, i) => (
@@ -109,7 +142,7 @@ export function GrammarBoard({ data }: Props) {
           </article>
 
           {levels.map((lvl) => (
-            <div key={lvl.block_id} style={{ marginTop: 18 }}>
+            <div key={`${lvl.block_id}-${epochs[ci] ?? 0}`} style={{ marginTop: 18 }}>
               <GrammarPyramid
                 bare
                 data={{ lesson_id: data.lesson_id, exercise_type: 'grammar', title: '', levels: [lvl] } as unknown as GrammarPyramidExercise}
@@ -132,11 +165,21 @@ export function GrammarBoard({ data }: Props) {
         ) : (
           <span />
         )}
+        <div className="nb-nav-mid">
+          <ResetControl
+            levelLabel="Ta karta"
+            allLabel="Cała tablica"
+            onResetLevel={() => resetCards([cardIdx])}
+            onResetAll={() => resetCards(cards.map((_, i) => i))}
+          />
+        </div>
         {cardIdx < data.cards.length - 1 ? (
           <button type="button" className="nb-btn success" onClick={() => go(cardIdx + 1)}>
             Następna karta <ArrowRight aria-hidden />
           </button>
-        ) : null}
+        ) : (
+          <span />
+        )}
       </div>
     </div>
   );

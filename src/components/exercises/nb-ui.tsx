@@ -4,8 +4,18 @@
  * Shared building blocks of the exercise UI v2 (embed-only: nb-* classes / --nb-* vars).
  * See docs/STYLE_NOTEBOOK.md «UI v2».
  */
-import { useState, type CSSProperties, type ReactNode } from 'react';
-import { ArrowRight, Check, CornerDownLeft, Lightbulb, MousePointerClick, PartyPopper, X } from 'lucide-react';
+import { useEffect, useState, type CSSProperties, type ReactNode } from 'react';
+import {
+  ArrowRight,
+  Check,
+  CornerDownLeft,
+  History,
+  Lightbulb,
+  MousePointerClick,
+  PartyPopper,
+  RotateCcw,
+  X,
+} from 'lucide-react';
 import { normalizeAnswer, stripDiacritics } from '@/lib/answer-match';
 
 /* ── feedback line under an item ───────────────────────────────────────────── */
@@ -100,6 +110,75 @@ export function LevelDone({
           {nextLabel} <ArrowRight aria-hidden />
         </button>
       ) : null}
+    </div>
+  );
+}
+
+/* ── «you're back where you stopped» ─────────────────────────────────────── */
+export function RestoredNote({ show, onDismiss }: { show: boolean; onDismiss: () => void }) {
+  useEffect(() => {
+    if (!show) return;
+    const t = window.setTimeout(onDismiss, 9000);
+    return () => window.clearTimeout(t);
+    // onDismiss is a fresh closure every render — the timer must not restart because of it
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [show]);
+  if (!show) return null;
+  return (
+    <div className="nb-fb info nb-restored" role="status">
+      <History aria-hidden strokeWidth={2.2} />
+      <div style={{ flex: 1 }}>
+        <b>Kontynuujesz od miejsca, w którym przerwano.</b> Odpowiedzi są zapisane w tej przeglądarce.
+      </div>
+      <button type="button" className="nb-btn link" onClick={onDismiss} aria-label="Zamknij">
+        <X size={16} aria-hidden />
+      </button>
+    </div>
+  );
+}
+
+/* ── «start again» with an inline confirmation (no browser dialogs) ────────── */
+export function ResetControl({
+  onResetLevel,
+  onResetAll,
+  levelLabel = 'Ten poziom',
+  allLabel = 'Wszystko',
+  label = 'Zacznij od nowa',
+  disabled,
+}: {
+  onResetLevel?: () => void;
+  onResetAll: () => void;
+  levelLabel?: string;
+  allLabel?: string;
+  label?: string;
+  disabled?: boolean;
+}) {
+  const [ask, setAsk] = useState(false);
+  if (!ask) {
+    return (
+      <button type="button" className="nb-btn ghost sm" disabled={disabled} onClick={() => setAsk(true)}>
+        <RotateCcw aria-hidden /> {label}
+      </button>
+    );
+  }
+  const done = (fn: () => void) => () => {
+    fn();
+    setAsk(false);
+  };
+  return (
+    <div className="nb-reset-ask" role="group" aria-label="Zacząć od nowa?">
+      <span>Usunąć odpowiedzi i zacząć od nowa?</span>
+      {onResetLevel ? (
+        <button type="button" className="nb-btn sm" onClick={done(onResetLevel)}>
+          {levelLabel}
+        </button>
+      ) : null}
+      <button type="button" className={`nb-btn sm${onResetLevel ? ' ghost' : ''}`} onClick={done(onResetAll)}>
+        {onResetLevel ? allLabel : 'Tak, od nowa'}
+      </button>
+      <button type="button" className="nb-btn link sm" onClick={() => setAsk(false)}>
+        Anuluj
+      </button>
     </div>
   );
 }

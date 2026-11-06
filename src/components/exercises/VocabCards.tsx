@@ -2,6 +2,8 @@
 
 import { useMemo, useState, type CSSProperties } from 'react';
 import { Check, RefreshCw, RotateCcw, Repeat } from 'lucide-react';
+import { usePersistentState } from '@/lib/embed-progress';
+import { ResetControl, RestoredNote } from './nb-ui';
 
 type Item = {
   id: number | string;
@@ -35,7 +37,10 @@ export function VocabCards({ title, instructions, items, groups }: Props) {
 
   const [group, setGroup] = useState<string | 'all' | 'again'>('all');
   const [flipped, setFlipped] = useState<Record<string, boolean>>({});
-  const [marks, setMarks] = useState<Record<string, Mark>>({});
+  const prog = usePersistentState<{ marks: Record<string, Mark> }>('vocab', { marks: {} });
+  const marks = prog.value.marks;
+  const setMarks = (fn: (m: Record<string, Mark>) => Record<string, Mark>) =>
+    prog.setValue((v) => ({ ...v, marks: fn(v.marks) }));
 
   const colorOf = useMemo(() => {
     const m: Record<string, string> = {};
@@ -73,6 +78,8 @@ export function VocabCards({ title, instructions, items, groups }: Props) {
         {instructions ? <p>{instructions}</p> : null}
       </header>
 
+      <RestoredNote show={prog.restored} onDismiss={prog.dismissRestored} />
+
       {groupList.length > 0 && (
         <div className="nb-idx" role="tablist">
           <button type="button" role="tab" aria-selected={group === 'all'} onClick={() => setGroup('all')}>
@@ -101,6 +108,16 @@ export function VocabCards({ title, instructions, items, groups }: Props) {
           znam <b style={{ color: 'var(--nb-ink)' }}>{known}</b> z {items.length}
           {again ? ` · do powtórki: ${again}` : ''}
         </span>
+        {known + again > 0 ? (
+          <ResetControl
+            label="Wyczyść oceny"
+            onResetAll={() => {
+              prog.reset();
+              setFlipped({});
+              setGroup('all');
+            }}
+          />
+        ) : null}
         {Object.keys(flipped).some((k) => flipped[k]) ? (
           <button type="button" className="nb-btn ghost sm" onClick={() => setFlipped({})}>
             <RotateCcw aria-hidden /> Odwróć wszystkie

@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
 import type { HomeworkExercise } from '@/content/queue-types';
 import { SentenceBuilding } from './SentenceBuilding';
 import { GrammarPyramid } from './GrammarPyramid';
 import { SendToTeacher } from './SendToTeacher';
 import { trackAttempt } from '@/lib/embed-tracker';
-import { Feedback, PolishKeys } from './nb-ui';
+import { Feedback, PolishKeys, ResetControl, RestoredNote } from './nb-ui';
+import { usePersistentState } from '@/lib/embed-progress';
 
 type Props = { data: HomeworkExercise };
 
@@ -15,10 +15,19 @@ function normalize(s: string) {
 }
 
 export function HomeworkEmbed({ data }: Props) {
-  const [fills, setFills] = useState<Record<number, string>>({});
-  const [feedback, setFeedback] = useState<Record<number, boolean | null>>({});
-  const [writing, setWriting] = useState('');
-  const [open, setOpen] = useState<Record<number, string>>({});
+  type HwSnap = {
+    fills: Record<number, string>;
+    feedback: Record<number, boolean | null>;
+    writing: string;
+    open: Record<number, string>;
+  };
+  const prog = usePersistentState<HwSnap>('hw-legacy', { fills: {}, feedback: {}, writing: '', open: {} });
+  const { fills, feedback, writing, open } = prog.value;
+  const setFills = (fn: (v: HwSnap['fills']) => HwSnap['fills']) => prog.setValue((v) => ({ ...v, fills: fn(v.fills) }));
+  const setFeedback = (fn: (v: HwSnap['feedback']) => HwSnap['feedback']) =>
+    prog.setValue((v) => ({ ...v, feedback: fn(v.feedback) }));
+  const setOpen = (fn: (v: HwSnap['open']) => HwSnap['open']) => prog.setValue((v) => ({ ...v, open: fn(v.open) }));
+  const setWriting = (w: string) => prog.setValue((v) => ({ ...v, writing: w }));
 
   if (data.levels?.length) {
     return (
@@ -43,6 +52,7 @@ export function HomeworkEmbed({ data }: Props) {
         <p className="nb-eyebrow">{data.eyebrow ?? 'praca domowa'}</p>
         <h1>{data.title}</h1>
       </header>
+      <RestoredNote show={prog.restored} onDismiss={prog.dismissRestored} />
 
       {data.vocab_review && (
         <div className="nb-panel">
@@ -175,6 +185,12 @@ export function HomeworkEmbed({ data }: Props) {
           />
         </div>
       )}
+
+      <div className="nb-nav">
+        <span />
+        <ResetControl onResetAll={prog.reset} />
+        <span />
+      </div>
     </div>
   );
 }

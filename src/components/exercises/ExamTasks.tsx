@@ -1,9 +1,10 @@
 'use client';
 
-import { useMemo, useRef, useState } from 'react';
+import { useMemo, useRef } from 'react';
 import { Headphones, Lightbulb, Play } from 'lucide-react';
 import { trackAttempt } from '@/lib/embed-tracker';
-import { Feedback } from './nb-ui';
+import { Feedback, ResetControl, RestoredNote } from './nb-ui';
+import { usePersistentState } from '@/lib/embed-progress';
 
 export type ExamItem = {
   id: string;
@@ -48,10 +49,22 @@ export function ExamTasks({ data, blockIds }: Props) {
     return data.blocks.filter((b) => set.has(b.block_id));
   }, [data.blocks, blockIds]);
 
-  const [answers, setAnswers] = useState<Record<string, string>>({});
-  const [checked, setChecked] = useState<Record<string, boolean>>({});
-  const [showExplain, setShowExplain] = useState<Record<string, boolean>>({});
-  const [plays, setPlays] = useState<Record<string, number>>({});
+  type ExamSnap = {
+    answers: Record<string, string>;
+    checked: Record<string, boolean>;
+    showExplain: Record<string, boolean>;
+    plays: Record<string, number>;
+  };
+  const prog = usePersistentState<ExamSnap>('exam', { answers: {}, checked: {}, showExplain: {}, plays: {} });
+  const field =
+    <K extends keyof ExamSnap>(k: K) =>
+    (fn: (cur: ExamSnap[K]) => ExamSnap[K]) =>
+      prog.setValue((v) => ({ ...v, [k]: fn(v[k]) }));
+  const { answers, checked, showExplain, plays } = prog.value;
+  const setAnswers = field('answers');
+  const setChecked = field('checked');
+  const setShowExplain = field('showExplain');
+  const setPlays = field('plays');
   const audioRefs = useRef<Record<string, HTMLAudioElement | null>>({});
 
   const correctSet = (item: ExamItem): string[] => {
@@ -74,6 +87,8 @@ export function ExamTasks({ data, blockIds }: Props) {
         <h1>{data.title}</h1>
         {data.instruction ? <p>{data.instruction}</p> : null}
       </header>
+
+      <RestoredNote show={prog.restored} onDismiss={prog.dismissRestored} />
 
       {blocks.map((block) => (
         <section key={block.block_id} style={{ marginBottom: 28 }}>
@@ -240,6 +255,14 @@ export function ExamTasks({ data, blockIds }: Props) {
           })}
         </section>
       ))}
+
+      {Object.keys(answers).length ? (
+        <div className="nb-nav">
+          <span />
+          <ResetControl onResetAll={prog.reset} />
+          <span />
+        </div>
+      ) : null}
     </div>
   );
 }

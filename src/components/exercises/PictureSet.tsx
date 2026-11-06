@@ -3,7 +3,8 @@
 import { useRef, useState, type CSSProperties } from 'react';
 import { Plus } from 'lucide-react';
 import { SendToTeacher } from './SendToTeacher';
-import { PolishKeys, TaskTip } from './nb-ui';
+import { usePersistentState } from '@/lib/embed-progress';
+import { PolishKeys, ResetControl, RestoredNote, TaskTip } from './nb-ui';
 
 type Item = {
   id: number | string;
@@ -25,7 +26,10 @@ type Props = {
 
 /** Photo description (UI v2): photo card + question + answer sent to the teacher. Embed-only: nb-* classes. */
 export function PictureSet({ title, instructions, phrase_bank, items }: Props) {
-  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const prog = usePersistentState<{ answers: Record<string, string> }>('pictures', { answers: {} });
+  const answers = prog.value.answers;
+  const setAnswers = (fn: (a: Record<string, string>) => Record<string, string>) =>
+    prog.setValue((v) => ({ ...v, answers: fn(v.answers) }));
   const [focusKey, setFocusKey] = useState<string | null>(null);
   const lastField = useRef<HTMLTextAreaElement | null>(null);
   const lastKey = useRef<string | null>(null);
@@ -59,6 +63,8 @@ export function PictureSet({ title, instructions, phrase_bank, items }: Props) {
         {instructions ? <p>{instructions}</p> : null}
         <TaskTip kind="write" />
       </header>
+
+      <RestoredNote show={prog.restored} onDismiss={prog.dismissRestored} />
 
       {phrase_bank && phrase_bank.length > 0 && (
         <div style={{ margin: '0 0 18px' }}>
@@ -161,6 +167,14 @@ export function PictureSet({ title, instructions, phrase_bank, items }: Props) {
           );
         })}
       </div>
+
+      {Object.values(answers).some((a) => a.trim()) ? (
+        <div className="nb-nav">
+          <span />
+          <ResetControl label="Wyczyść odpowiedzi" onResetAll={prog.reset} />
+          <span />
+        </div>
+      ) : null}
     </div>
   );
 }
