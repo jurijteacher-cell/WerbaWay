@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { NotebookShell } from '@/components/exercises/NotebookShell';
 import { StudentCodeBar } from '@/components/exercises/StudentCodeBar';
+import { FocusKeeper } from '@/components/exercises/FocusKeeper';
 import '@/components/exercises/notebook.css';
 
 /* Raw CSS string via dangerouslySetInnerHTML: a JSX text child gets `>` escaped to `&gt;`
@@ -24,6 +25,7 @@ export default function EmbedLayout({ children }: { children: ReactNode }) {
       <style dangerouslySetInnerHTML={{ __html: EMBED_CSS }} />
       <NotebookShell levelHint="lekcja · ćwiczenia" aside={<StudentCodeBar />}>
         {children}
+        <FocusKeeper />
       </NotebookShell>
     </div>
   );
