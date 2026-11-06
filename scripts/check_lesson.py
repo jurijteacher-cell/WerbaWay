@@ -124,6 +124,26 @@ dwie dwa trzy cztery pięć sześć siedem osiem dziewięć dziesięć jedenaśc
 
 def check_item(b, it, where, need_gp=True):
     t = b["exercise_type"]
+    # several correct answers: "answer": ["na", "w"] == "answer": "na" + "accept": ["w"]
+    if isinstance(it.get("answer"), list):
+        if not it["answer"]:
+            err(f"{where}: pusta lista answer")
+            return
+        it = {**it, "answer": it["answer"][0], "accept": list(it["answer"][1:]) + list(it.get("accept", []))}
+    acc = it.get("accept", [])
+    a0 = it.get("answer")
+    if t == "fill-in-blank" and "options" in it:
+        for x in acc:
+            if x not in it["options"]:
+                warn(f"{where}: accept {x!r} nie ma w options — to nie zadziała przy wyborze")
+    if isinstance(a0, str) and not acc:
+        words = len(a0.split())
+        if t == "fill-in-blank" and "options" not in it and words >= 3:
+            warn(f"{where}: odpowiedź {a0!r} ma {words} słowa — czy inny szyk/synonim też jest poprawny? dopisz accept[] albo zostaw świadomie")
+        if t == "sentence-building" and words >= 5:
+            warn(f"{where}: {words} słów bez accept[] — sprawdź, czy inny szyk zdania też jest poprawny")
+        if t in ("open-answer", "text-transform") and words >= 3:
+            warn(f"{where}: transformacja {a0!r} bez accept[] — dopisz inne poprawne wersje")
     if not need_gp and "grammar_point" not in it:
         pass
     elif "grammar_point" not in it:
@@ -176,6 +196,11 @@ def check_block(b, fname):
     if t == "matching":
         L = [it["left"] for it in its]; R = [it["right"] for it in its]
         if len(set(L)) != len(L) or len(set(R)) != len(R): err(f"{where0}: zdublowane strony w matching")
+        # an accepted right that belongs to another pair would leave that pair without a card
+        for it in its:
+            for x in it.get("accept", []):
+                if x in R and x != it["right"]:
+                    err(f"{where0}:{it['id']}: accept {x!r} to prawa strona innej pary — uczeń utknie")
     if t == "drag-and-drop":
         bank = b.get("bank", [])
         if len(bank) != len(set(bank)): err(f"{where0}: zdublowane słowa w bank")

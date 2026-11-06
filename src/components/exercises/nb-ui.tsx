@@ -5,7 +5,8 @@
  * See docs/STYLE_NOTEBOOK.md «UI v2».
  */
 import { useState, type CSSProperties, type ReactNode } from 'react';
-import { ArrowRight, Check, Lightbulb, PartyPopper, X } from 'lucide-react';
+import { ArrowRight, Check, CornerDownLeft, Lightbulb, MousePointerClick, PartyPopper, X } from 'lucide-react';
+import { normalizeAnswer, stripDiacritics } from '@/lib/answer-match';
 
 /* ── feedback line under an item ───────────────────────────────────────────── */
 export function Feedback({
@@ -103,11 +104,99 @@ export function LevelDone({
   );
 }
 
+/* ── keyboard key ──────────────────────────────────────────────────────────── */
+export function Key({ children = 'Enter' }: { children?: ReactNode }) {
+  return (
+    <kbd className="nb-key">
+      {children}
+      {children === 'Enter' ? <CornerDownLeft aria-hidden /> : null}
+    </kbd>
+  );
+}
+
+/* ── «how it works» line under a level heading ────────────────────────────── */
+export type TipKind = 'type' | 'type-long' | 'pick' | 'true-false' | 'match' | 'build' | 'write';
+
+export function TaskTip({ kind }: { kind: TipKind }) {
+  const kb = (() => {
+    switch (kind) {
+      case 'type':
+        return (
+          <>
+            Wpisz odpowiedź i naciśnij <Key />. Dobrze? Kursor sam przejdzie do następnego zdania.
+          </>
+        );
+      case 'type-long':
+        return (
+          <>
+            Napisz zdanie i naciśnij <Key />. Nowa linia: <Key>Shift + Enter</Key>.
+          </>
+        );
+      case 'pick':
+        return <>Kliknij właściwą odpowiedź. Sprawdzamy od razu.</>;
+      case 'true-false':
+        return <>Wybierz „Prawda” albo „Fałsz”. Sprawdzamy od razu.</>;
+      case 'match':
+        return <>Kliknij element po lewej, potem jego parę po prawej.</>;
+      case 'build':
+        return <>Klikaj słowa po kolei. Pomyłka? Kliknij słowo w linijce, a wróci na dół.</>;
+      case 'write':
+        return <>Napisz odpowiedź i wyślij ją nauczycielowi.</>;
+    }
+  })();
+  const touch =
+    kind === 'type'
+      ? 'Wpisz odpowiedź i dotknij „Sprawdź” albo „Dalej” na klawiaturze.'
+      : kind === 'type-long'
+        ? 'Napisz zdanie i dotknij „Sprawdź”.'
+        : null;
+  const Icon = kind === 'type' || kind === 'type-long' || kind === 'write' ? CornerDownLeft : MousePointerClick;
+  return (
+    <p className="nb-tip">
+      <Icon aria-hidden />
+      <span className={touch ? 'nb-only-kb' : undefined}>{kb}</span>
+      {touch ? <span className="nb-only-touch">{touch}</span> : null}
+    </p>
+  );
+}
+
+/* ── several correct answers ───────────────────────────────────────────────── */
+/** Other accepted answers worth showing after a correct one (no case/punctuation/diacritics-only twins). */
+export function otherAnswers(given: string, expected: string, accept?: string[]): string[] {
+  const seen = new Set([stripDiacritics(given)]);
+  const out: string[] = [];
+  for (const a of [expected, ...(accept ?? [])]) {
+    const k = stripDiacritics(a);
+    if (!normalizeAnswer(a) || seen.has(k)) continue;
+    seen.add(k);
+    out.push(a);
+  }
+  return out.slice(0, 3);
+}
+
+export function AlsoCorrect({ items }: { items: string[] }) {
+  if (!items.length) return null;
+  return (
+    <div className="nb-fb info" role="status">
+      <Check aria-hidden strokeWidth={2.4} />
+      <div>
+        Też poprawnie:{' '}
+        {items.map((a, i) => (
+          <span key={a}>
+            {i ? ' · ' : ''}
+            <span className="pl">{a}</span>
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 /* ── Polish letters for students without a Polish keyboard ───────────────── */
 const PL = ['ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż'];
 
 /** Inserts into the focused input/textarea; buttons don't steal focus (mousedown preventDefault). */
-export function PolishKeys() {
+export function PolishKeys({ hint }: { hint?: ReactNode }) {
   const [upper, setUpper] = useState(false);
   const insert = (ch: string) => {
     const el = document.activeElement;
@@ -122,6 +211,7 @@ export function PolishKeys() {
   };
   return (
     <div className="nb-keys" aria-label="Polskie litery">
+      {hint ? <span className="nb-keys-hint nb-only-kb">{hint}</span> : null}
       {PL.map((c) => {
         const ch = upper ? c.toUpperCase() : c;
         return (

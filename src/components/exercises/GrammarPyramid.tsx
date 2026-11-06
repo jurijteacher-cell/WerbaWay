@@ -1,13 +1,25 @@
 'use client';
 
-import { useMemo, useRef, useState, type CSSProperties, type KeyboardEvent } from 'react';
+import { useEffect, useMemo, useRef, useState, type CSSProperties, type KeyboardEvent } from 'react';
 import { ArrowLeft, ArrowRight, Check, Eye } from 'lucide-react';
 import type { GrammarPyramidExercise, GrammarPyramidItem } from '@/content/queue-types';
 import { answersMatch, stripDiacritics } from '@/lib/answer-match';
 import { trackAttempt } from '@/lib/embed-tracker';
 import { SentenceBuilding } from './SentenceBuilding';
 import { SendToTeacher } from './SendToTeacher';
-import { Feedback, LevelDone, PolishKeys, Progress, gapWidth, splitGap } from './nb-ui';
+import {
+  AlsoCorrect,
+  Feedback,
+  Key,
+  LevelDone,
+  PolishKeys,
+  Progress,
+  TaskTip,
+  gapWidth,
+  otherAnswers,
+  splitGap,
+  type TipKind,
+} from './nb-ui';
 
 /**
  * Grammar / homework «pyramid»: levels as tabs, items as cards.
@@ -38,6 +50,21 @@ const hasKey = (l: Level, item: GrammarPyramidItem) =>
   l.task_type === 'open-answer' || l.task_type === 'text-transform'
     ? Boolean(item.answer_hint ?? item.answer)
     : true;
+
+function tipFor(l: Level): TipKind {
+  switch (l.task_type) {
+    case 'matching':
+      return 'match';
+    case 'sentence-building':
+      return 'build';
+    case 'true-false':
+      return 'true-false';
+    case 'fill-in-blank':
+      return l.items.some((it) => it.options?.length) ? 'pick' : 'type';
+    default:
+      return l.items.some((it) => it.answer_hint ?? it.answer) ? 'type-long' : 'write';
+  }
+}
 
 function ItemPhoto({ item }: { item: { image_url?: string; image_alt?: string; image_credit?: string } }) {
   if (!item.image_url) return null;
@@ -80,6 +107,12 @@ export function GrammarPyramid({ data, blockIds }: Props) {
   const [showAnswer, setShowAnswer] = useState<Record<string, boolean>>({});
   const [sbOk, setSbOk] = useState<Record<string, boolean>>({});
   const [focusKey, setFocusKey] = useState<string | null>(null);
+  const [also, setAlso] = useState<Record<string, string[]>>({});
+  const listRef = useRef<HTMLDivElement>(null);
+  /** keys answered correctly — read synchronously when moving focus */
+  const doneRef = useRef<Record<string, boolean>>({});
+  /** last navigation came from the keyboard → keep the Enter flow going on the next level */
+  const kbRef = useRef(false);
 
   const keyFor = (l: Level, id: number | string) => `${l.level}-${id}`;
 
@@ -103,6 +136,17 @@ export function GrammarPyramid({ data, blockIds }: Props) {
       `match-${level.level}`
     );
   }, [level]);
+
+  useEffect(() => {
+    if (!kbRef.current) return;
+    const t = window.setTimeout(() => {
+      const first = Array.from(listRef.current?.querySelectorAll<HTMLElement>('[data-k]') ?? []).find(
+        (f) => !doneRef.current[f.dataset.k ?? '']
+      );
+      first?.focus({ preventScroll: true });
+    }, 450);
+    return () => window.clearTimeout(t);
+  }, [levelIdx]);
 
   if (!level) return null;
 
@@ -133,6 +177,10 @@ export function GrammarPyramid({ data, blockIds }: Props) {
     const result = answersMatch(given, expected, accept, mode);
     record(item, given, expected, result.ok);
     setFeedback((f) => ({ ...f, [k]: result.ok }));
+    if (result.ok) {
+      doneRef.current[k] = true;
+      setAlso((a) => ({ ...a, [k]: otherAnswers(given, expected, accept) }));
+    }
     const almost =
       !result.ok &&
       [expected, ...(accept ?? [])].some((a) => stripDiacritics(a) === stripDiacritics(given));
@@ -144,6 +192,23 @@ export function GrammarPyramid({ data, blockIds }: Props) {
         return { ...c, [k]: n };
       });
     }
+    return result.ok;
+  };
+
+  /** After a correct answer: next unfinished field of this level, or the «next level» button. */
+  const focusNext = (fromK: string) => {
+    window.setTimeout(() => {
+      const root = listRef.current;
+      if (!root) return;
+      const fields = Array.from(root.querySelectorAll<HTMLElement>('[data-k]'));
+      const i = fields.findIndex((f) => f.dataset.k === fromK);
+      const order = [...fields.slice(i + 1), ...fields.slice(0, Math.max(i, 0))];
+      const next = order.find((f) => !doneRef.current[f.dataset.k ?? '']);
+      const target = next ?? document.querySelector<HTMLElement>('.nb-done .nb-btn, .nb-nav .nb-btn.success');
+      if (!target) return;
+      target.focus({ preventScroll: true });
+      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 260);
   };
 
   const single = levels.length <= 1;
@@ -161,11 +226,23 @@ export function GrammarPyramid({ data, blockIds }: Props) {
     requestAnimationFrame(() => tabsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
   };
 
-  const onEnter = (fn: () => void) => (e: KeyboardEvent) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      fn();
+  /**
+   * One key does everything: Enter checks; Enter on an already-correct field moves on;
+   * Enter on an empty field shakes it instead of failing silently.
+   */
+  const onEnter = (k: string, value: string, check: () => boolean | undefined) => (e: KeyboardEvent<HTMLElement>) => {
+    if (e.key !== 'Enter' || e.shiftKey || e.nativeEvent.isComposing) return;
+    e.preventDefault();
+    kbRef.current = true;
+    const el = e.currentTarget;
+    if (doneRef.current[k]) return focusNext(k);
+    if (!value.trim()) {
+      el.classList.remove('nb-shake');
+      void el.offsetWidth;
+      el.classList.add('nb-shake');
+      return;
     }
+    if (check()) focusNext(k);
   };
 
   /** Number badge on the left of each item card */
@@ -196,7 +273,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
           Poprawnie: <span className="pl">{expected}</span>
         </>
       ) : (
-        'Jeszcze nie. Spróbuj jeszcze raz.'
+        'Jeszcze nie — popraw i sprawdź jeszcze raz.'
       )}
     </Feedback>
   );
@@ -241,8 +318,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
         </>
       ) : null}
 
-      {!single || level.instruction ? (
-        <div style={{ margin: '0 0 14px' }}>
+      <div style={{ margin: '0 0 14px' }}>
           {!single ? (
             <p className="nb-tape" style={{ margin: '0 0 6px' }}>
               {bareName(level.name)}
@@ -252,10 +328,19 @@ export function GrammarPyramid({ data, blockIds }: Props) {
             <p style={{ margin: 0, color: 'var(--nb-ink-soft)', fontSize: 15 }}>{level.instruction}</p>
           ) : null}
           {level.instruction_uk ? <p className="nb-instruction-uk" style={{ margin: '4px 0 0' }}>{level.instruction_uk}</p> : null}
+          {!levelDone && (!level.instruction || ['type', 'type-long', 'build'].includes(tipFor(level))) ? (
+            <TaskTip kind={tipFor(level)} />
+          ) : null}
         </div>
-      ) : null}
 
-      <div className="nb-list" key={level.level}>
+      <div
+        className="nb-list"
+        key={level.level}
+        ref={listRef}
+        onPointerDown={() => {
+          kbRef.current = false;
+        }}
+      >
         {level.task_type === 'matching' && (
           <div className="nb-panel">
             <div className="nb-match">
@@ -301,7 +386,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
                         }
                         const item = level.items.find((it) => String(it.id) === leftId);
                         if (!item) return;
-                        const correct = answersMatch(right, String(item.answer ?? '')).ok;
+                        const correct = answersMatch(right, String(item.answer ?? ''), item.accept).ok;
                         record(item, right, String(item.answer ?? ''), correct);
                         if (correct) {
                           setMatchPairs((p) => ({
@@ -321,11 +406,6 @@ export function GrammarPyramid({ data, blockIds }: Props) {
                 })}
               </div>
             </div>
-            {!level.instruction && !matchLeft[String(level.level)] && !levelDone ? (
-              <p className="nb-note" style={{ marginTop: 12 }}>
-                Najpierw kliknij element po lewej, potem jego parę po prawej.
-              </p>
-            ) : null}
           </div>
         )}
 
@@ -343,7 +423,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
             const options = isTF ? undefined : item.options;
             const gap = splitGap(sentence);
             const value = fillAnswers[k] ?? '';
-            const accept = (item as { accept?: string[] }).accept;
+            const accept = item.accept;
             const check = (given = value) => applyCheck(k, given, expected, accept, item);
             const state = fb === true ? ' is-ok' : fb === false ? ' is-no' : '';
 
@@ -357,10 +437,13 @@ export function GrammarPyramid({ data, blockIds }: Props) {
                 autoComplete="off"
                 autoCapitalize="off"
                 spellCheck={false}
+                data-k={k}
+                enterKeyHint="next"
                 onFocus={() => setFocusKey(k)}
                 onBlur={() => setFocusKey((f) => (f === k ? null : f))}
-                onKeyDown={onEnter(() => check())}
+                onKeyDown={onEnter(k, value, () => check())}
                 onChange={(e) => {
+                  doneRef.current[k] = false;
                   setFillAnswers((a) => ({ ...a, [k]: e.target.value }));
                   setFeedback((f) => ({ ...f, [k]: null }));
                   setHints((h) => ({ ...h, [k]: null }));
@@ -422,12 +505,14 @@ export function GrammarPyramid({ data, blockIds }: Props) {
                     <div className="nb-opts" style={{ marginTop: 12 }}>
                       {options.map((opt) => {
                         const sel = value === opt;
+                        const alsoOk =
+                          fb === true && !sel && answersMatch(opt, expected, accept).ok;
                         return (
                           <button
                             key={`${k}-${opt}`}
                             type="button"
                             className={`nb-chip${sel ? ' sel' : ''}${sel && fb === true ? ' ok' : ''}${sel && fb === false ? ' no' : ''}${
-                              fb === true && !sel ? ' faded' : ''
+                              alsoOk ? ' alt' : fb === true && !sel ? ' faded' : ''
                             }`}
                             aria-pressed={sel}
                             onClick={() => {
@@ -444,15 +529,33 @@ export function GrammarPyramid({ data, blockIds }: Props) {
                     <div className="nb-row" style={{ marginTop: gap ? (value.trim() && fb !== true ? 12 : 0) : 10 }}>
                       {!gap ? input(false) : null}
                       {value.trim() && fb !== true ? (
-                        <button type="button" className="nb-btn sm nb-appear" onClick={() => check()}>
+                        <button
+                          type="button"
+                          className="nb-btn sm nb-appear"
+                          onClick={() => {
+                            if (check()) focusNext(k);
+                          }}
+                        >
                           Sprawdź <span className="nb-kbd">Enter</span>
                         </button>
                       ) : null}
                     </div>
                   )}
 
-                  {focusKey === k && fb !== true ? <PolishKeys /> : null}
+                  {focusKey === k && fb !== true ? (
+                    <PolishKeys
+                      hint={
+                        value.trim() ? undefined : <>
+                          <Key /> sprawdź
+                        </>
+                      }
+                    />
+                  ) : null}
                   {fb === true && hints[k] ? <Feedback kind="hint">{hints[k]!.replace(/^↳\s*/, '')}</Feedback> : null}
+                  {fb === true && !isTF && !options?.length ? <AlsoCorrect items={also[k] ?? []} /> : null}
+                  {fb === true && options?.length && (also[k]?.length ?? 0) > 0 ? (
+                    <Feedback kind="info">Tu pasuje więcej niż jedna odpowiedź — zielone są wszystkie poprawne.</Feedback>
+                  ) : null}
                   {fb === false
                     ? wrongNote(k, item, expected, () => {
                         setFillAnswers((a) => ({ ...a, [k]: expected }));
@@ -496,8 +599,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
             const expected = item.answer_hint ?? item.answer ?? '';
             const fb = feedback[k];
             const value = openAnswers[k] ?? '';
-            const check = () =>
-              applyCheck(k, value, expected, (item as { accept?: string[] }).accept, item);
+            const check = () => applyCheck(k, value, expected, item.accept, item);
             return (
               <div
                 key={k}
@@ -517,20 +619,39 @@ export function GrammarPyramid({ data, blockIds }: Props) {
                     style={expected ? { minHeight: 48 } : undefined}
                     placeholder="Twoja odpowiedź…"
                     spellCheck={false}
+                    data-k={expected ? k : undefined}
+                    enterKeyHint={expected ? 'next' : 'enter'}
                     onFocus={() => setFocusKey(k)}
                     onBlur={() => setFocusKey((f) => (f === k ? null : f))}
-                    onKeyDown={expected ? onEnter(check) : undefined}
+                    onKeyDown={expected ? onEnter(k, value, check) : undefined}
                     onChange={(e) => {
+                      doneRef.current[k] = false;
                       setOpenAnswers((a) => ({ ...a, [k]: e.target.value }));
                       setFeedback((f) => ({ ...f, [k]: null }));
                     }}
                   />
-                  {focusKey === k && fb !== true ? <PolishKeys /> : null}
+                  {focusKey === k && fb !== true ? (
+                    <PolishKeys
+                      hint={
+                        expected && !value.trim() ? (
+                          <>
+                            <Key /> sprawdź
+                          </>
+                        ) : undefined
+                      }
+                    />
+                  ) : null}
                   {expected ? (
                     <>
                       {value.trim() && fb !== true ? (
                         <div className="nb-row">
-                          <button type="button" className="nb-btn sm nb-appear" onClick={check}>
+                          <button
+                            type="button"
+                            className="nb-btn sm nb-appear"
+                            onClick={() => {
+                              if (check()) focusNext(k);
+                            }}
+                          >
                             Sprawdź <span className="nb-kbd">Enter</span>
                           </button>
                         </div>
@@ -541,6 +662,7 @@ export function GrammarPyramid({ data, blockIds }: Props) {
                           {hints[k] ? <> {hints[k]!.replace(/^↳\s*/, '')}</> : null}
                         </Feedback>
                       ) : null}
+                      {fb === true ? <AlsoCorrect items={also[k] ?? []} /> : null}
                       {fb === false
                         ? wrongNote(k, item, String(expected), () => {
                             setOpenAnswers((a) => ({ ...a, [k]: String(expected) }));

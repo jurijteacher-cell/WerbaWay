@@ -115,11 +115,28 @@ function normalizeGrammarItem(it: any, i: number): GrammarPyramidItem {
   return base;
 }
 
+/**
+ * Several correct answers: `"answer": ["na", "w"]` (first = model answer) and/or `"accept": [...]`.
+ * Everything is folded into `answer` (string) + `accept` (other correct variants) for the components.
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function answerSet(rawAnswer: any, rawAccept: any): { answer?: string; accept?: string[] } {
+  const list = Array.isArray(rawAnswer) ? rawAnswer.map(String) : rawAnswer == null ? [] : [rawAnswer];
+  const extra = Array.isArray(rawAccept) ? rawAccept.map(String) : [];
+  const [answer, ...rest] = list;
+  const accept = [...rest, ...extra].filter((a, i, arr) => a !== answer && arr.indexOf(a) === i);
+  return { answer, accept: accept.length ? accept : undefined };
+}
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function normalizeGrammarItemCore(it: any, i: number): GrammarPyramidItem {
   const id = it.id ?? i + 1;
   if (it.left != null && it.right != null) {
-    return { id, prompt: it.left, answer: it.right };
+    const { answer, accept } = answerSet(it.right, it.accept);
+    return { id, prompt: it.left, answer, accept };
+  }
+  if (Array.isArray(it.answer) || Array.isArray(it.right)) {
+    it = { ...it, ...answerSet(it.answer, it.accept) };
   }
   if (it.statement != null && typeof it.answer === 'boolean') {
     return {
@@ -268,9 +285,11 @@ function normalizeGrammarBoard(raw: any): GrammarBoardExercise {
         items: (t.items ?? []).map((it: any, j: number) => {
           // matching: left/right → prompt/answer (same as grammar pyramid)
           const prompt = it.prompt ?? it.left ?? it.text ?? it.sentence;
-          const answer =
-            it.answer ?? it.right ?? (typeof it.answer === 'boolean' ? String(it.answer) : undefined);
+          const set =
+            typeof it.answer === 'boolean' ? { answer: String(it.answer), accept: undefined } : answerSet(it.answer ?? it.right, it.accept);
+          const answer = set.answer;
           return {
+            accept: set.accept,
             id: it.id ?? j + 1,
             text: it.text,
             sentence: it.sentence,

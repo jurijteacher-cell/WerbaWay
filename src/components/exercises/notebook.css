@@ -1808,6 +1808,78 @@
   font-size: 12.5px;
 }
 
+
+/* ── hints (UI v2.1) ──────────────────────────────────────────────────────── */
+.nb-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 10px 0 0;
+  padding: 8px 12px;
+  border-radius: var(--nb-r);
+  background: var(--nb-paper-2);
+  color: var(--nb-ink-2);
+  font-size: 13.5px;
+  line-height: 1.55;
+  animation: nb-rise var(--nb-mid) var(--nb-ease) both;
+}
+.nb-tip > svg {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  color: var(--nb-gold);
+}
+.nb-key {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  vertical-align: 1px;
+  font-family: var(--nb-body);
+  font-size: 11.5px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--nb-ink);
+  background: #fff;
+  border: 1px solid var(--nb-edge-strong);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  padding: 3px 6px;
+  white-space: nowrap;
+}
+.nb-key svg {
+  width: 11px;
+  height: 11px;
+}
+.nb-keys-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--nb-ink-soft);
+}
+.nb-only-touch {
+  display: none;
+}
+@media (hover: none) and (pointer: coarse) {
+  .nb-only-kb {
+    display: none !important;
+  }
+  .nb-only-touch {
+    display: inline;
+  }
+}
+/* other correct options after a correct pick */
+.nb-chip.alt {
+  border-color: var(--nb-ok);
+  border-style: dashed;
+  color: var(--nb-ok);
+  background: #fff;
+  box-shadow: none;
+}
+
 /* ── motion ───────────────────────────────────────────────────────────────── */
 @keyframes nb-rise {
   from {

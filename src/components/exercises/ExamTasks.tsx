@@ -10,7 +10,9 @@ export type ExamItem = {
   statement?: string;
   question?: string;
   options?: string[];
-  answer: string | boolean;
+  /** One correct option, or several: `["A", "B"]`. Other correct options may also go to `accept`. */
+  answer: string | boolean | string[];
+  accept?: string[];
   explanation?: string;
 };
 
@@ -52,15 +54,17 @@ export function ExamTasks({ data, blockIds }: Props) {
   const [plays, setPlays] = useState<Record<string, number>>({});
   const audioRefs = useRef<Record<string, HTMLAudioElement | null>>({});
 
-  const expected = (item: ExamItem) => {
-    if (typeof item.answer === 'boolean') return item.answer ? 'true' : 'false';
-    return String(item.answer);
+  const correctSet = (item: ExamItem): string[] => {
+    if (typeof item.answer === 'boolean') return [item.answer ? 'true' : 'false'];
+    const list = Array.isArray(item.answer) ? item.answer.map(String) : [String(item.answer)];
+    return [...list, ...(item.accept ?? [])];
   };
+  const expected = (item: ExamItem) => correctSet(item)[0];
 
   const isCorrect = (item: ExamItem) => {
     const given = answers[item.id];
     if (given == null) return null;
-    return given === expected(item);
+    return correctSet(item).includes(given);
   };
 
   return (
@@ -148,7 +152,7 @@ export function ExamTasks({ data, blockIds }: Props) {
                 prompt: (isTF ? item.statement : item.question) ?? null,
                 answer: label(given) ?? '',
                 expected: label(expected(item)) ?? null,
-                correct: given === expected(item),
+                correct: correctSet(item).includes(given),
               });
             };
             return (
