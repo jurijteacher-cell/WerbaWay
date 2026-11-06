@@ -240,9 +240,9 @@
           "prompt": "Кто-нибудь видел мои ключи?",
           "answer": "Czy ktoś widział moje klucze?",
           "accept": [
+            "Ktoś widział moje klucze?",
             "Czy ktokolwiek widział moje klucze?",
-            "Ktokolwiek widział moje klucze?",
-            "Ktoś widział moje klucze?"
+            "Ktokolwiek widział moje klucze?"
           ],
           "explanation": "Zwykłe pytanie → ktoś. „Ktokolwiek” też jest poprawne, ale brzmi mocniej: «вообще хоть кто-нибудь?».",
           "grammar_point": "zaimki-nieokreslone"
@@ -259,9 +259,9 @@
           "prompt": "Когда-нибудь я напишу книгу.",
           "answer": "Kiedyś napiszę książkę.",
           "accept": [
-            "Kiedyś ja napiszę książkę.",
+            "Napiszę kiedyś książkę.",
             "Kiedyś napiszę jakąś książkę.",
-            "Napiszę kiedyś książkę."
+            "Kiedyś ja napiszę książkę."
           ],
           "grammar_point": "zaimki-nieokreslone"
         },
@@ -270,13 +270,13 @@
           "prompt": "Кто-то оставил здесь зонтик.",
           "answer": "Ktoś zostawił tu parasol.",
           "accept": [
+            "Ktoś zostawił tutaj parasol.",
             "Ktoś tu zostawił parasol.",
+            "Ktoś zostawił tu parasolkę.",
+            "Ktoś zostawił tutaj parasolkę.",
             "Ktoś tu zostawił parasolkę.",
             "Ktoś tutaj zostawił parasol.",
-            "Ktoś tutaj zostawił parasolkę.",
-            "Ktoś zostawił tu parasolkę.",
-            "Ktoś zostawił tutaj parasol.",
-            "Ktoś zostawił tutaj parasolkę."
+            "Ktoś tutaj zostawił parasolkę."
           ],
           "grammar_point": "zaimki-nieokreslone"
         },
@@ -285,17 +285,17 @@
           "prompt": "Спроси кого угодно — все знают этот ресторан.",
           "answer": "Zapytaj kogokolwiek — wszyscy znają tę restaurację.",
           "accept": [
+            "Zapytaj kogokolwiek — każdy zna tę restaurację.",
+            "Spytaj kogokolwiek — wszyscy znają tę restaurację.",
+            "Spytaj kogokolwiek — każdy zna tę restaurację.",
             "Spytaj kogokolwiek - każdy zna tę restaurację.",
             "Spytaj kogokolwiek - wszyscy znają tę restaurację.",
-            "Spytaj kogokolwiek — każdy zna tę restaurację.",
-            "Spytaj kogokolwiek — wszyscy znają tę restaurację.",
             "Spytaj kogokolwiek, każdy zna tę restaurację.",
             "Spytaj kogokolwiek, wszyscy znają tę restaurację.",
             "Spytaj kogokolwiek. każdy zna tę restaurację.",
             "Spytaj kogokolwiek. wszyscy znają tę restaurację.",
             "Zapytaj kogokolwiek - każdy zna tę restaurację.",
             "Zapytaj kogokolwiek - wszyscy znają tę restaurację.",
-            "Zapytaj kogokolwiek — każdy zna tę restaurację.",
             "Zapytaj kogokolwiek, każdy zna tę restaurację.",
             "Zapytaj kogokolwiek, wszyscy znają tę restaurację.",
             "Zapytaj kogokolwiek. każdy zna tę restaurację.",
@@ -308,9 +308,9 @@
           "prompt": "Он всё делает как попало.",
           "answer": "On wszystko robi byle jak.",
           "accept": [
+            "Wszystko robi byle jak.",
             "On robi wszystko byle jak.",
-            "Robi wszystko byle jak.",
-            "Wszystko robi byle jak."
+            "Robi wszystko byle jak."
           ],
           "grammar_point": "zaimki-nieokreslone"
         }
@@ -615,8 +615,8 @@
           "prompt": "Никто мне ничего не сказал.",
           "answer": "Nikt mi nic nie powiedział.",
           "accept": [
-            "Nikt mi niczego nie powiedział.",
             "Nikt nic mi nie powiedział.",
+            "Nikt mi niczego nie powiedział.",
             "Nikt niczego mi nie powiedział."
           ],
           "grammar_point": "negacja-podwojna"
@@ -627,8 +627,8 @@
           "answer": "On nigdy nikomu nie pomaga.",
           "accept": [
             "Nigdy nikomu nie pomaga.",
-            "Nikomu nigdy nie pomaga.",
-            "On nikomu nigdy nie pomaga."
+            "On nikomu nigdy nie pomaga.",
+            "Nikomu nigdy nie pomaga."
           ],
           "grammar_point": "negacja-podwojna"
         },
@@ -656,19 +656,19 @@
           "prompt": "Ничего страшного, бывает.",
           "answer": "Nic nie szkodzi, zdarza się.",
           "accept": [
+            "Nic się nie stało, zdarza się.",
+            "Nic nie szkodzi, bywa.",
+            "Nic się nie stało, bywa.",
             "Nic nie szkodzi - bywa.",
             "Nic nie szkodzi - zdarza się.",
             "Nic nie szkodzi — bywa.",
             "Nic nie szkodzi — zdarza się.",
-            "Nic nie szkodzi, bywa.",
             "Nic nie szkodzi. bywa.",
             "Nic nie szkodzi. zdarza się.",
             "Nic się nie stało - bywa.",
             "Nic się nie stało - zdarza się.",
             "Nic się nie stało — bywa.",
             "Nic się nie stało — zdarza się.",
-            "Nic się nie stało, bywa.",
-            "Nic się nie stało, zdarza się.",
             "Nic się nie stało. bywa.",
             "Nic się nie stało. zdarza się."
           ],
@@ -734,19 +734,19 @@
           "prompt": "Co byś nie powiedział, ja i tak zostanę.",
           "answer": "Cokolwiek powiesz, ja i tak zostanę.",
           "accept": [
+            "Cokolwiek byś powiedział, ja i tak zostanę.",
+            "Cokolwiek powiesz, i tak zostanę.",
+            "Cokolwiek byś powiedział, i tak zostanę.",
             "Cokolwiek byś powiedział - i tak zostanę.",
             "Cokolwiek byś powiedział - ja i tak zostanę.",
             "Cokolwiek byś powiedział — i tak zostanę.",
             "Cokolwiek byś powiedział — ja i tak zostanę.",
-            "Cokolwiek byś powiedział, i tak zostanę.",
-            "Cokolwiek byś powiedział, ja i tak zostanę.",
             "Cokolwiek byś powiedział. i tak zostanę.",
             "Cokolwiek byś powiedział. ja i tak zostanę.",
             "Cokolwiek powiesz - i tak zostanę.",
             "Cokolwiek powiesz - ja i tak zostanę.",
             "Cokolwiek powiesz — i tak zostanę.",
             "Cokolwiek powiesz — ja i tak zostanę.",
-            "Cokolwiek powiesz, i tak zostanę.",
             "Cokolwiek powiesz. i tak zostanę.",
             "Cokolwiek powiesz. ja i tak zostanę."
           ],

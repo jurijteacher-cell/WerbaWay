@@ -163,10 +163,13 @@ export function TaskTip({ kind }: { kind: TipKind }) {
 /* ── several correct answers ───────────────────────────────────────────────── */
 /** Other accepted answers worth showing after a correct one (no case/punctuation/diacritics-only twins). */
 export function otherAnswers(given: string, expected: string, accept?: string[]): string[] {
-  const seen = new Set([stripDiacritics(given)]);
+  // internal punctuation too: "A, b" / "A — b" / "A. b" are the same answer for the student
+  const twinKey = (s: string) =>
+    stripDiacritics(s).replace(/[.,;:!?…-]+/g, ' ').replace(/\s+/g, ' ').trim();
+  const seen = new Set([twinKey(given)]);
   const out: string[] = [];
   for (const a of [expected, ...(accept ?? [])]) {
-    const k = stripDiacritics(a);
+    const k = twinKey(a);
     if (!normalizeAnswer(a) || seen.has(k)) continue;
     seen.add(k);
     out.push(a);

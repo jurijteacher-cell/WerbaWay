@@ -225,9 +225,11 @@
           "prompt": "Gdzie byś nie pojechał, zawsze tęsknisz za domem.",
           "answer": "Gdziekolwiek pojedziesz, zawsze tęsknisz za domem.",
           "accept": [
+            "Gdziekolwiek byś pojechał, zawsze tęsknisz za domem.",
+            "Gdziekolwiek pojedziesz, zawsze będziesz tęsknić za domem.",
+            "Gdziekolwiek pojedziesz, zawsze będziesz tęsknił za domem.",
             "Gdziekolwiek byś pojechał - zawsze tęsknisz za domem.",
             "Gdziekolwiek byś pojechał — zawsze tęsknisz za domem.",
-            "Gdziekolwiek byś pojechał, zawsze tęsknisz za domem.",
             "Gdziekolwiek byś pojechał. zawsze tęsknisz za domem.",
             "Gdziekolwiek pojedziesz - zawsze będziesz tęsknić za domem.",
             "Gdziekolwiek pojedziesz - zawsze będziesz tęsknił za domem.",
@@ -235,8 +237,6 @@
             "Gdziekolwiek pojedziesz — zawsze będziesz tęsknić za domem.",
             "Gdziekolwiek pojedziesz — zawsze będziesz tęsknił za domem.",
             "Gdziekolwiek pojedziesz — zawsze tęsknisz za domem.",
-            "Gdziekolwiek pojedziesz, zawsze będziesz tęsknić za domem.",
-            "Gdziekolwiek pojedziesz, zawsze będziesz tęsknił za domem.",
             "Gdziekolwiek pojedziesz. zawsze będziesz tęsknić za domem.",
             "Gdziekolwiek pojedziesz. zawsze będziesz tęsknił za domem.",
             "Gdziekolwiek pojedziesz. zawsze tęsknisz za domem."
@@ -274,11 +274,11 @@
           "prompt": "Ты когда-нибудь был в Гданьске?",
           "answer": "Byłeś kiedyś w Gdańsku?",
           "accept": [
+            "Czy byłeś kiedyś w Gdańsku?",
             "Byłeś kiedykolwiek w Gdańsku?",
             "Czy byłeś kiedykolwiek w Gdańsku?",
-            "Czy byłeś kiedyś w Gdańsku?",
-            "Czy kiedykolwiek byłeś w Gdańsku?",
-            "Czy kiedyś byłeś w Gdańsku?"
+            "Czy kiedyś byłeś w Gdańsku?",
+            "Czy kiedykolwiek byłeś w Gdańsku?"
           ],
           "explanation": "W pytaniu o doświadczenie oba są dobre: kiedyś i kiedykolwiek.",
           "grammar_point": "zaimki-nieokreslone"
@@ -297,11 +297,11 @@
           "prompt": "Мне ничего не нужно.",
           "answer": "Niczego nie potrzebuję.",
           "accept": [
-            "Nic mi nie potrzeba.",
-            "Nic mi nie trzeba.",
             "Nic nie potrzebuję.",
-            "Niczego mi nie potrzeba.",
-            "Niczego mi nie trzeba."
+            "Nic mi nie trzeba.",
+            "Niczego mi nie trzeba.",
+            "Nic mi nie potrzeba.",
+            "Niczego mi nie potrzeba."
           ],
           "grammar_point": "negacja-podwojna"
         },

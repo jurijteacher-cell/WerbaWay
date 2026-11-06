@@ -653,6 +653,22 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
                       setFeedback((f) => ({ ...f, [k]: null }));
                     }}
                   />
+                  {/* «Sprawdź» goes ABOVE the Polish keys: clicking it blurs the field, the keys
+                      unmount, and a button below them would jump up from under the cursor
+                      (first mouse click lost). Same order as in fill-in-blank items. */}
+                  {expected && value.trim() && fb !== true ? (
+                    <div className="nb-row">
+                      <button
+                        type="button"
+                        className="nb-btn sm nb-appear"
+                        onClick={() => {
+                          if (check()) focusNext(k);
+                        }}
+                      >
+                        Sprawdź <span className="nb-kbd">Enter</span>
+                      </button>
+                    </div>
+                  ) : null}
                   {focusKey === k && fb !== true ? (
                     <PolishKeys
                       hint={
@@ -666,19 +682,6 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
                   ) : null}
                   {expected ? (
                     <>
-                      {value.trim() && fb !== true ? (
-                        <div className="nb-row">
-                          <button
-                            type="button"
-                            className="nb-btn sm nb-appear"
-                            onClick={() => {
-                              if (check()) focusNext(k);
-                            }}
-                          >
-                            Sprawdź <span className="nb-kbd">Enter</span>
-                          </button>
-                        </div>
-                      ) : null}
                       {fb === true ? (
                         <Feedback kind="ok">
                           <b>Dobra robota!</b>
