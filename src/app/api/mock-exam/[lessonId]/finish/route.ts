@@ -5,11 +5,19 @@ import { writeMockResult } from '@/lib/mock-exam/notion';
 type Ctx = { params: { lessonId: string } };
 
 /** Scores a submitted mock exam on the server and writes one row to the teacher's Notion database. */
+export function OPTIONS() {
+  return new NextResponse(null, { status: 204 });
+}
+
 export async function POST(req: NextRequest, { params }: Ctx) {
   const exam = loadMockExam(params.lessonId);
   if (!exam) return NextResponse.json({ error: 'not found' }, { status: 404 });
 
-  const body = await req.json().catch(() => null);
+  // body may arrive as text/plain (no CORS preflight from sandboxed iframes)
+  const body = await req
+    .text()
+    .then((t) => JSON.parse(t))
+    .catch(() => null);
   const imie = String(body?.imie ?? '').trim().slice(0, 120);
   if (!imie) return NextResponse.json({ error: 'imie required' }, { status: 400 });
 
