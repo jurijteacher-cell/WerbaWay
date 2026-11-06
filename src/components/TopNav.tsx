@@ -3,6 +3,8 @@ import { createClient } from '@/lib/supabase/server';
 import { LogoutButton } from './LogoutButton';
 
 export async function TopNav() {
+  // Preview deployments without Supabase env: render no nav instead of crashing every page.
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) return null;
   const supabase = createClient();
   const {
     data: { user },
