@@ -1,0 +1,234 @@
+{
+  "lesson_id": "pl-ksieg-04-vat-i-jpk",
+  "exercise_type": "vocab-cards",
+  "title": "Słownictwo: VAT, JPK i liczby",
+  "instruction": "24 słowa w trzech grupach. Odwróć kartę, powiedz przykład na głos i oceń: znam / nie znam.",
+  "estimated_minutes": 8,
+  "groups": [
+    "VAT",
+    "JPK i płatności",
+    "Liczby i zmiany"
+  ],
+  "comm_groups": [
+    "Liczby i zmiany",
+    "VAT"
+  ],
+  "items": [
+    {
+      "id": "v01",
+      "term": "podatek od towarów i usług (VAT)",
+      "group": "VAT",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Oficjalna polska nazwa VAT-u.",
+      "example": "W ustawie VAT nazywa się podatkiem od towarów i usług.",
+      "translation_uk": "податок на додану вартість (ПДВ)"
+    },
+    {
+      "id": "v02",
+      "term": "stawka VAT",
+      "group": "VAT",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Procent, którym liczy się VAT od ceny netto.",
+      "example": "Na książki stawka VAT jest niższa niż na meble.",
+      "translation_uk": "ставка ПДВ"
+    },
+    {
+      "id": "v03",
+      "term": "VAT należny",
+      "group": "VAT",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "VAT ze sprzedaży, który firma doliczyła klientom.",
+      "example": "Po dużym zamówieniu VAT należny w grudniu był bardzo wysoki.",
+      "translation_uk": "ПДВ із продажу (податкові зобов'язання)"
+    },
+    {
+      "id": "v04",
+      "term": "VAT naliczony",
+      "group": "VAT",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "VAT z faktur zakupowych, który firma może odliczyć.",
+      "example": "Z faktury za nowy komputer mamy 460 zł VAT-u naliczonego.",
+      "translation_uk": "ПДВ із покупок (податковий кредит)"
+    },
+    {
+      "id": "v05",
+      "term": "odliczyć VAT",
+      "group": "VAT",
+      "part_of_speech": "czasownik dk., odliczę, odliczysz",
+      "definition": "Zmniejszyć VAT do zapłaty o VAT z zakupów.",
+      "example": "Odliczę VAT z faktury za nowe biurko.",
+      "translation_uk": "віднести ПДВ до податкового кредиту"
+    },
+    {
+      "id": "v06",
+      "term": "nadwyżka VAT naliczonego",
+      "group": "VAT",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Sytuacja, gdy VAT z zakupów jest wyższy niż VAT ze sprzedaży.",
+      "example": "Po zakupie maszyn w styczniu wyszła nadwyżka VAT naliczonego.",
+      "translation_uk": "від'ємне значення ПДВ (надлишок кредиту)"
+    },
+    {
+      "id": "v07",
+      "term": "zwrot VAT",
+      "group": "VAT",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Pieniądze z urzędu skarbowego, gdy jest nadwyżka.",
+      "example": "Zwrot VAT przyszedł na konto firmy po dwóch miesiącach.",
+      "translation_uk": "бюджетне відшкодування ПДВ"
+    },
+    {
+      "id": "v08",
+      "term": "zwolnienie z VAT",
+      "group": "VAT",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Prawo małej firmy, żeby nie doliczać VAT-u do sprzedaży.",
+      "example": "Fryzjerka z małego salonu korzysta ze zwolnienia z VAT.",
+      "translation_uk": "звільнення від ПДВ (неплатник ПДВ)"
+    },
+    {
+      "id": "v09",
+      "term": "JPK_V7M",
+      "group": "JPK i płatności",
+      "part_of_speech": "skrót, m. [jot-pe-ka we siedem em]",
+      "definition": "Plik z ewidencją i deklaracją VAT wysyłany co miesiąc.",
+      "example": "Program sam przygotował JPK_V7M za październik.",
+      "translation_uk": "щомісячна звітність з ПДВ (файл JPK)"
+    },
+    {
+      "id": "v10",
+      "term": "JPK_V7K",
+      "group": "JPK i płatności",
+      "part_of_speech": "skrót, m.",
+      "definition": "Plik małego podatnika: ewidencja co miesiąc, deklaracja co kwartał.",
+      "example": "Mała firma męża składa JPK_V7K.",
+      "translation_uk": "квартальна звітність з ПДВ"
+    },
+    {
+      "id": "v11",
+      "term": "ewidencja VAT",
+      "group": "JPK i płatności",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Lista faktur sprzedaży i zakupu w danym okresie.",
+      "example": "W ewidencji VAT brakowało jednej faktury za prąd.",
+      "translation_uk": "реєстр (облік) ПДВ"
+    },
+    {
+      "id": "v12",
+      "term": "okres rozliczeniowy",
+      "group": "JPK i płatności",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Miesiąc albo kwartał, za który liczy się podatek.",
+      "example": "W naszej firmie okresem rozliczeniowym jest miesiąc.",
+      "translation_uk": "звітний (податковий) період"
+    },
+    {
+      "id": "v13",
+      "term": "mikrorachunek podatkowy",
+      "group": "JPK i płatności",
+      "part_of_speech": "rzeczownik, m.",
+      "definition": "Indywidualny rachunek do płacenia podatków, tworzony z NIP-u.",
+      "example": "Numer mikrorachunku sprawdzisz w generatorze Ministerstwa Finansów.",
+      "translation_uk": "індивідуальний податковий рахунок"
+    },
+    {
+      "id": "v14",
+      "term": "podzielona płatność (split payment)",
+      "group": "JPK i płatności",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Przelew, w którym VAT idzie na osobny rachunek VAT.",
+      "example": "Za dużą dostawę stali zapłaciliśmy w podzielonej płatności.",
+      "translation_uk": "розділений платіж"
+    },
+    {
+      "id": "v15",
+      "term": "odsetki za zwłokę",
+      "group": "JPK i płatności",
+      "part_of_speech": "rzeczownik, lm.",
+      "definition": "Dodatkowa kwota za spóźnioną płatność podatku.",
+      "example": "Zapłaciłem PIT tydzień po terminie i doszły odsetki za zwłokę.",
+      "translation_uk": "пеня (відсотки за прострочення)"
+    },
+    {
+      "id": "v16",
+      "term": "rozliczenie",
+      "group": "JPK i płatności",
+      "part_of_speech": "rzeczownik, n.",
+      "definition": "Policzenie podatku i złożenie deklaracji za okres.",
+      "example": "Rozliczenie PIT-u za zeszły rok zrobiła mi księgowa.",
+      "translation_uk": "розрахунок, звітування"
+    },
+    {
+      "id": "v17",
+      "term": "wynosić",
+      "group": "Liczby i zmiany",
+      "part_of_speech": "czasownik ndk., wynosi",
+      "definition": "Mieć wartość (o kwocie, liczbie).",
+      "example": "Czynsz wynosi dwa tysiące złotych miesięcznie.",
+      "translation_uk": "становити, дорівнювати"
+    },
+    {
+      "id": "v18",
+      "term": "wzrosnąć o",
+      "group": "Liczby i zmiany",
+      "part_of_speech": "czasownik dk., wzrośnie, wzrósł",
+      "definition": "Stać się większym o daną liczbę.",
+      "example": "Ceny prądu wzrosły o dziesięć procent.",
+      "translation_uk": "зрости на"
+    },
+    {
+      "id": "v19",
+      "term": "spaść o / do",
+      "group": "Liczby i zmiany",
+      "part_of_speech": "czasownik dk., spadnie, spadł",
+      "definition": "Stać się mniejszym o daną liczbę / do danej liczby.",
+      "example": "Bezrobocie w mieście spadło do pięciu procent.",
+      "translation_uk": "знизитися на / до"
+    },
+    {
+      "id": "v20",
+      "term": "różnica",
+      "group": "Liczby i zmiany",
+      "part_of_speech": "rzeczownik, ż.",
+      "definition": "Wynik odejmowania: o ile jedna liczba jest większa.",
+      "example": "Różnica między ceną brutto a netto to VAT.",
+      "translation_uk": "різниця"
+    },
+    {
+      "id": "v21",
+      "term": "około",
+      "group": "Liczby i zmiany",
+      "part_of_speech": "przyimek + dopełniacz",
+      "definition": "Mniej więcej.",
+      "example": "Na spotkanie przyszło około stu osób.",
+      "translation_uk": "близько, приблизно"
+    },
+    {
+      "id": "v22",
+      "term": "ponad",
+      "group": "Liczby i zmiany",
+      "part_of_speech": "przyimek + biernik",
+      "definition": "Więcej niż.",
+      "example": "To mieszkanie kosztuje ponad milion złotych.",
+      "translation_uk": "понад"
+    },
+    {
+      "id": "v23",
+      "term": "prawie",
+      "group": "Liczby i zmiany",
+      "part_of_speech": "przysłówek",
+      "definition": "Trochę mniej niż.",
+      "example": "Czekałam na autobus prawie godzinę.",
+      "translation_uk": "майже"
+    },
+    {
+      "id": "v24",
+      "term": "łącznie",
+      "group": "Liczby i zmiany",
+      "part_of_speech": "przysłówek",
+      "definition": "Razem, w sumie.",
+      "example": "Łącznie zapłaciliśmy osiemset złotych.",
+      "translation_uk": "разом, загалом"
+    }
+  ]
+}

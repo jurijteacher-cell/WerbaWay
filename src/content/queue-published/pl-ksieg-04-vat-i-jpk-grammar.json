@@ -1,0 +1,347 @@
+{
+  "lesson_id": "pl-ksieg-04-vat-i-jpk",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: VAT, kwoty i procenty",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "exercise_type": "matching",
+      "title": "1. Słowa z rozliczenia VAT",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "VAT należny",
+          "right": "podatek ze sprzedaży",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "VAT naliczony",
+          "right": "podatek z faktur zakupowych",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "mikrorachunek podatkowy",
+          "right": "rachunek do podatków, tworzony z NIP-u",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "JPK_V7M",
+          "right": "ewidencja i deklaracja VAT co miesiąc",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "zwolnienie z VAT",
+          "right": "mała firma nie dolicza VAT-u do cen",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "odsetki za zwłokę",
+          "right": "kara za podatek zapłacony po terminie",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Liczba + złoty, grosz, tysiąc",
+      "instruction": "Wpisz słowo z nawiasu w dobrej formie. Patrz na ostatnią cyfrę liczby.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Opłata za przelew kosztuje 4 ___ (złoty).",
+          "answer": "złote",
+          "grammar_point": "liczebnik-zloty"
+        },
+        {
+          "id": "g2-2",
+          "text": "Do zapłaty zostało jeszcze 21 ___ (złoty).",
+          "answer": "złotych",
+          "grammar_point": "liczebnik-zloty",
+          "explanation": "„Złoty” jest tylko po samym 1. Po 21, 31, 101 mówimy „złotych”."
+        },
+        {
+          "id": "g2-3",
+          "text": "Na rachunku brakuje jeszcze jednego ___ (złoty).",
+          "answer": "złotego",
+          "grammar_point": "dopelniacz-brakuje",
+          "explanation": "Brakuje + dopełniacz: jednego złotego."
+        },
+        {
+          "id": "g2-4",
+          "text": "Różnica wynosi 32 ___ (grosz).",
+          "answer": "grosze",
+          "grammar_point": "liczebnik-grosz",
+          "explanation": "Ostatnia cyfra 2 → grosze (jak dwa, trzy, cztery)."
+        },
+        {
+          "id": "g2-5",
+          "text": "Bank pobrał 15 ___ (grosz) prowizji.",
+          "answer": "groszy",
+          "grammar_point": "liczebnik-grosz",
+          "explanation": "12, 13, 14 i 15 idą jak 5: groszy."
+        },
+        {
+          "id": "g2-6",
+          "text": "Kwota faktury to 2 ___ (tysiąc) złotych.",
+          "answer": "tysiące",
+          "grammar_point": "liczebnik-tysiac"
+        },
+        {
+          "id": "g2-7",
+          "text": "Sprzedaż w maju wyniosła 5 ___ (tysiąc) złotych.",
+          "answer": "tysięcy",
+          "grammar_point": "liczebnik-tysiac"
+        },
+        {
+          "id": "g2-8",
+          "text": "W kwietniu przyszły 22 ___ (faktura) zakupowe.",
+          "answer": "faktury",
+          "grammar_point": "liczebnik-dopelniacz",
+          "explanation": "22, 23, 24 → mianownik liczby mnogiej: faktury."
+        },
+        {
+          "id": "g2-9",
+          "text": "Firma klienta ma 3 ___ (milion) złotych obrotu.",
+          "answer": "miliony",
+          "grammar_point": "liczebnik-tysiac"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Wybierz: zmiany i kwoty",
+      "instruction": "Kliknij poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Sprzedaż wzrosła ___ 15 procent.",
+          "answer": "o",
+          "grammar_point": "zmiana-o",
+          "options": [
+            "o",
+            "na"
+          ],
+          "explanation": "O ile wzrosła? → o 15 procent. Ukraińskie „на” to po polsku „o”."
+        },
+        {
+          "id": "g3-2",
+          "text": "Cena wzrosła z 4 000 ___ 4 500 złotych.",
+          "answer": "do",
+          "grammar_point": "zmiana-z-do",
+          "options": [
+            "do",
+            "po"
+          ],
+          "explanation": "Z jakiej kwoty do jakiej? → z … do …"
+        },
+        {
+          "id": "g3-3",
+          "text": "VAT do zapłaty ___ 3 432 zł.",
+          "answer": "wynosi",
+          "grammar_point": "wynosic",
+          "options": [
+            "wynosi",
+            "stanowi"
+          ],
+          "explanation": "Kwota wynosi. „Stanowi” mówimy o części całości: VAT stanowi część ceny."
+        },
+        {
+          "id": "g3-4",
+          "text": "Urząd naliczył odsetki ___ 120 zł.",
+          "answer": "w wysokości",
+          "grammar_point": "w-wysokosci",
+          "options": [
+            "w wysokości",
+            "w rozmiarze"
+          ],
+          "explanation": "O kwotach w dokumentach: w wysokości. „Rozmiar” to wielkość rzeczy, np. buta."
+        },
+        {
+          "id": "g3-5",
+          "text": "Klient zapłacił ___ tysiące złotych.",
+          "answer": "dwa",
+          "grammar_point": "dwa-tysiace",
+          "options": [
+            "dwa",
+            "dwie"
+          ],
+          "explanation": "Tysiąc jest rodzaju męskiego: dwa tysiące."
+        },
+        {
+          "id": "g3-6",
+          "text": "W marcu przyszło ___ faktur.",
+          "answer": "dwadzieścia jeden",
+          "grammar_point": "21-jeden",
+          "options": [
+            "dwadzieścia jeden",
+            "dwadzieścia jedna"
+          ],
+          "explanation": "W liczbach 21, 31… „jeden” nie zmienia się: dwadzieścia jeden faktur."
+        },
+        {
+          "id": "g3-7",
+          "text": "Za spóźnioną płatność urząd naliczy ___.",
+          "answer": "odsetki",
+          "grammar_point": "odsetki",
+          "options": [
+            "odsetki",
+            "procenty"
+          ],
+          "explanation": "Dodatkowa kwota za spóźnienie to odsetki (за прострочення). „Procent” to tylko jednostka: 23 procent."
+        },
+        {
+          "id": "g3-8",
+          "text": "VAT w kwietniu był ___ niż w marcu.",
+          "answer": "wyższy",
+          "grammar_point": "stopien-wyzszy",
+          "options": [
+            "wyższy",
+            "bardziej wysoki"
+          ],
+          "explanation": "Krótkie przymiotniki mają formę na -szy: wyższy. Powtórka z lekcji 2."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "exercise_type": "fill-in-blank",
+      "title": "4. Liczebnik po przyimku",
+      "instruction": "Wpisz liczbę z nawiasu słownie w dobrej formie. Uwaga: nie po każdym słowie jest dopełniacz.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Obowiązkowy split payment dotyczy niektórych faktur na kwotę powyżej ___ (15 000) złotych.",
+          "answer": "piętnastu tysięcy",
+          "grammar_point": "liczebnik-dopelniacz-przyimek"
+        },
+        {
+          "id": "g4-2",
+          "text": "Klientka sprzedała dziś towar za około ___ (200) złotych.",
+          "answer": "dwustu",
+          "grammar_point": "liczebnik-dopelniacz-przyimek",
+          "explanation": "Około + dopełniacz: dwieście → dwustu."
+        },
+        {
+          "id": "g4-3",
+          "text": "Czekam na dokumenty od ___ (5) klientów.",
+          "answer": "pięciu",
+          "grammar_point": "liczebnik-dopelniacz-przyimek"
+        },
+        {
+          "id": "g4-4",
+          "text": "Zwolnienie z VAT dotyczy firm ze sprzedażą do ___ (240 000) złotych rocznie.",
+          "answer": "dwustu czterdziestu tysięcy",
+          "grammar_point": "liczebnik-dopelniacz-przyimek",
+          "explanation": "Do + dopełniacz: zmienia się każda część liczby — dwustu czterdziestu tysięcy."
+        },
+        {
+          "id": "g4-5",
+          "text": "Od ___ (2) miesięcy klient nie przysyła wyciągów.",
+          "answer": "dwóch",
+          "grammar_point": "liczebnik-dopelniacz-przyimek",
+          "accept": [
+            "dwu"
+          ]
+        },
+        {
+          "id": "g4-6",
+          "text": "Stawka VAT na usługi księgowe wynosi ___ (23) procent.",
+          "answer": "dwadzieścia trzy",
+          "grammar_point": "procent",
+          "explanation": "Tu nie ma przyimka — liczebnik zostaje w mianowniku."
+        },
+        {
+          "id": "g4-7",
+          "text": "Bez ___ (4) faktur nie zamknę miesiąca.",
+          "answer": "czterech",
+          "grammar_point": "liczebnik-dopelniacz-przyimek"
+        },
+        {
+          "id": "g4-8",
+          "text": "W KPiR klientki jest już ponad ___ (100) wpisów.",
+          "answer": "sto",
+          "grammar_point": "ponad-biernik",
+          "explanation": "Ponad + biernik: liczebnik się nie zmienia — ponad sto."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "exercise_type": "sentence-building",
+      "title": "5. Popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Cena wzrosła na 10 procent.",
+          "answer": "Cena wzrosła o 10 procent.",
+          "grammar_point": "pulapka-na-o",
+          "accept": [
+            "Cena wzrosła o dziesięć procent."
+          ]
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Urząd naliczył odsetki w rozmiarze 500 złotych.",
+          "answer": "Urząd naliczył odsetki w wysokości 500 złotych.",
+          "grammar_point": "pulapka-wysokosc",
+          "accept": [
+            "Urząd naliczył odsetki w wysokości pięciuset złotych."
+          ]
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Klient zapłacił dwie tysiące złotych.",
+          "answer": "Klient zapłacił dwa tysiące złotych.",
+          "grammar_point": "dwa-tysiace"
+        },
+        {
+          "id": "g5-4",
+          "prompt": "VAT do zapłaty stanowi 900 złotych.",
+          "answer": "VAT do zapłaty wynosi 900 złotych.",
+          "grammar_point": "wynosic",
+          "accept": [
+            "VAT do zapłaty wynosi dziewięćset złotych."
+          ]
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Za spóźnioną płatność trzeba zapłacić procenty.",
+          "answer": "Za spóźnioną płatność trzeba zapłacić odsetki.",
+          "grammar_point": "odsetki",
+          "accept": [
+            "Za spóźnioną płatność trzeba zapłacić odsetki za zwłokę."
+          ]
+        },
+        {
+          "id": "g5-6",
+          "prompt": "W marcu przyszło dwadzieścia jedna faktura.",
+          "answer": "W marcu przyszło dwadzieścia jeden faktur.",
+          "grammar_point": "21-jeden",
+          "accept": [
+            "W marcu przyszło 21 faktur."
+          ]
+        },
+        {
+          "id": "g5-7",
+          "prompt": "Ten miesiąc był bardziej drogi niż poprzedni.",
+          "answer": "Ten miesiąc był droższy niż poprzedni.",
+          "grammar_point": "stopien-wyzszy",
+          "accept": [
+            "Ten miesiąc był droższy od poprzedniego."
+          ]
+        }
+      ]
+    }
+  ]
+}
