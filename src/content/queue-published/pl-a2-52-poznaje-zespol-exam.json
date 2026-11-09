@@ -1,0 +1,105 @@
+{
+  "lesson_id": "pl-a2-52-poznaje-zespol",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 8,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o tekście „Pierwszy dzień w zespole”. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Tomek czeka na Olenę przy recepcji.",
+          "answer": true,
+          "explanation": "W tekście: Tomek już na nią czeka przy recepcji."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Hasło do poczty Olena dostaje od Tomka.",
+          "answer": false,
+          "explanation": "Identyfikator, laptop i hasło daje jej pani Agnieszka z działu HR."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Z drukarką często są problemy.",
+          "answer": true,
+          "explanation": "Tomek mówi: ona często nie działa."
+        },
+        {
+          "id": "e1-4",
+          "statement": "W zespole wszyscy mówią do siebie „Pan” i „Pani”.",
+          "answer": false,
+          "explanation": "Magda mówi: u nas wszyscy są na ty — tylko do szefa mówią „Panie Piotrze”."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Z pytaniami Olena może pisać tylko do pana Piotra.",
+          "answer": false,
+          "explanation": "Pan Piotr mówi: proszę pisać do mnie albo do Tomka."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "pl-a2-52-poznaje-zespol-comm-tasks.json#c1.model_dialogue",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-52-poznaje-zespol-e2-dialog.mp3",
+      "title": "Słuchanie: kto jest kim?",
+      "instruction": "Usłyszysz rozmowę Oleny i Tomka dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Co Olena ma zrobić w sprawie laptopa?",
+          "options": [
+            "zadzwonić do Bartka",
+            "napisać do Bartka maila",
+            "iść do Bartka przed dziesiątą"
+          ],
+          "answer": "napisać do Bartka maila",
+          "explanation": "Olena pyta, czy może zadzwonić, ale Tomek mówi: lepiej napisz do niego maila."
+        },
+        {
+          "id": "e2-2",
+          "question": "Jak Olena ma mówić do pani z księgowości?",
+          "options": [
+            "po imieniu, na ty",
+            "„pani Agnieszko”",
+            "„pani Danuto”"
+          ],
+          "answer": "„pani Danuto”",
+          "explanation": "Tomek mówi: z nią nie jesteśmy na ty, mów do niej „pani Danuto”."
+        },
+        {
+          "id": "e2-3",
+          "question": "Kiedy Olena ma iść z dokumentami do pani Danuty?",
+          "options": [
+            "po lunchu",
+            "teraz",
+            "po dziesiątej"
+          ],
+          "answer": "po lunchu",
+          "explanation": "Teraz pani Danuta ma rozmowę z szefem — Tomek mówi: idź do niej po lunchu."
+        },
+        {
+          "id": "e2-4",
+          "question": "Co Olena ma przynieść jutro?",
+          "options": [
+            "kawę",
+            "ciastko",
+            "dokumenty"
+          ],
+          "answer": "ciastko",
+          "explanation": "Tomek żartuje: jutro kawa ode mnie, a ciastko od ciebie."
+        }
+      ]
+    }
+  ]
+}

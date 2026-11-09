@@ -138,7 +138,8 @@ export function ExamTasks({ data, blockIds }: Props) {
                   <Headphones size={18} aria-hidden /> Słuchaj nauczyciela — bez tekstu.
                 </p>
               )}
-              {block.transcript?.length ? (
+              {block.transcript?.length &&
+              (!block.audio_url || block.items.every((it) => checked[it.id])) ? (
                 <div className="nb-dialogue">
                   <p className="nb-eyebrow" style={{ marginBottom: 8 }}>Transkrypt rozmowy</p>
                   {block.transcript.map((line, i) => (

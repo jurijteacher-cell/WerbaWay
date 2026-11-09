@@ -1,0 +1,366 @@
+{
+  "lesson_id": "pl-a2-52-poznaje-zespol",
+  "exercise_type": "fill-in-blank",
+  "title": "Poznaję zespół: zaimki osobowe w przypadkach",
+  "instruction": "Pięć krótkich bloków. Na lekcji robimy bloki 1–3, bloki 4 i 5 — jeśli zostanie czas albo w domu.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Kogo? Komu? Kogo nie ma?",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Znasz Bartka z IT? — Tak, znam ___ od roku.",
+          "answer": "go",
+          "options": [
+            "go",
+            "mu",
+            "jej"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Znać kogo? — biernik: go. Mu odpowiada na pytanie komu?"
+        },
+        {
+          "id": "g1-2",
+          "text": "Magda ma problem z drukarką. Możesz ___ pomóc?",
+          "answer": "jej",
+          "options": [
+            "jej",
+            "ją",
+            "nią"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Pomóc komu? — celownik: jej. Ją to biernik (kogo?)."
+        },
+        {
+          "id": "g1-3",
+          "text": "Pan Piotr jest w sali konferencyjnej. Widzę ___ przez okno.",
+          "answer": "go",
+          "options": [
+            "go",
+            "mu",
+            "nim"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Widzieć kogo? — biernik: go."
+        },
+        {
+          "id": "g1-4",
+          "text": "Nowa koleżanka jest bardzo miła. Lubię ___.",
+          "answer": "ją",
+          "options": [
+            "ją",
+            "jej",
+            "nią"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Lubić kogo? — biernik: ją. Po ukraińsku „її”, ale po polsku w bierniku jest ją."
+        },
+        {
+          "id": "g1-5",
+          "text": "Tomek i Magda chcą zobaczyć mój nowy grafik. Pokazuję ___ go na laptopie.",
+          "answer": "im",
+          "options": [
+            "im",
+            "ich",
+            "nich"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Pokazać komu? — celownik liczby mnogiej: im."
+        },
+        {
+          "id": "g1-6",
+          "text": "Magda jest dziś na szkoleniu. Nie ma ___ w biurze.",
+          "answer": "jej",
+          "options": [
+            "jej",
+            "ją",
+            "niej"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Nie ma kogo? — dopełniacz: jej. Po zaprzeczeniu ją zmienia się na jej."
+        },
+        {
+          "id": "g1-7",
+          "text": "Halo, Olena? Słabo ___ słyszę, jestem w windzie.",
+          "answer": "cię",
+          "options": [
+            "cię",
+            "ci",
+            "tobie"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Słyszeć kogo? — biernik: cię. Ci i tobie to celownik (komu?)."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Rzeczownik czy zaimek?",
+      "instruction": "Wpisz słowo z nawiasu w poprawnej formie.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Czy znasz już ___ (Magda) z działu sprzedaży?",
+          "answer": "Magdę",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "Znać kogo? — biernik: Magda → Magdę."
+        },
+        {
+          "id": "g2-2",
+          "text": "Tak, znam ___ (ona) od wczoraj.",
+          "answer": "ją",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Znać kogo? — biernik: ona → ją."
+        },
+        {
+          "id": "g2-3",
+          "text": "Przepraszam, gdzie mogę znaleźć ___ (pan Piotr)?",
+          "answer": "pana Piotra",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "Znaleźć kogo? — biernik: pan Piotr → pana Piotra."
+        },
+        {
+          "id": "g2-4",
+          "text": "Olena, pan Piotr ___ (ty) szuka!",
+          "answer": "cię",
+          "accept": [
+            "ciebie"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Szukać kogo? — krótka forma cię. Ciebie też jest poprawne, ale mocniej podkreśla: właśnie ciebie."
+        },
+        {
+          "id": "g2-5",
+          "text": "Tomek zaprasza ___ (my) na lunch.",
+          "answer": "nas",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Zapraszać kogo? — biernik: my → nas."
+        },
+        {
+          "id": "g2-6",
+          "text": "Mam pytanie do ___ (wy): gdzie jest kuchnia?",
+          "answer": "was",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Po przyimku do — dopełniacz: wy → was."
+        },
+        {
+          "id": "g2-7",
+          "text": "Zawsze pytam ___ (Tomek) o drukarkę.",
+          "answer": "Tomka",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "Pytać kogo? — biernik: Tomek → Tomka."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Z nim, dla niej, do nich",
+      "instruction": "Po przyimku. Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "To jest Tomek. Na lunch zawsze chodzę z ___.",
+          "answer": "nim",
+          "options": [
+            "nim",
+            "go",
+            "nią"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Po przyimku z — forma z n-: z nim (on), z nią (ona)."
+        },
+        {
+          "id": "g3-2",
+          "text": "Magda ma dziś urodziny. Mamy dla ___ tort.",
+          "answer": "niej",
+          "options": [
+            "niej",
+            "jej",
+            "nią"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Po przyimku dla — niej. Jej bez n- stoi tylko bez przyimka."
+        },
+        {
+          "id": "g3-3",
+          "text": "Tomek i Magda są w kuchni. Idę do ___.",
+          "answer": "nich",
+          "options": [
+            "nich",
+            "ich",
+            "nimi"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Po przyimku do — nich. Ich bez n- stoi tylko bez przyimka."
+        },
+        {
+          "id": "g3-4",
+          "text": "Masz chwilę? Chodź ze ___ do recepcji.",
+          "answer": "mną",
+          "options": [
+            "mną",
+            "mnie",
+            "mi"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Z kim? — ze mną (z → ze przed mną)."
+        },
+        {
+          "id": "g3-5",
+          "text": "Pan Piotr pracuje od ósmej. Ta kawa jest dla ___.",
+          "answer": "niego",
+          "options": [
+            "niego",
+            "go",
+            "nim"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Po przyimku dla — niego, nigdy dla go."
+        },
+        {
+          "id": "g3-6",
+          "text": "Cześć, Bartek! Co u ___ słychać?",
+          "answer": "ciebie",
+          "options": [
+            "ciebie",
+            "cię",
+            "tobie"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Po przyimku u — długa forma: u ciebie. Cię po przyimku nie stoi."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Pan i Pani w zdaniu",
+      "instruction": "Wpisz Pan albo Pani w poprawnej formie.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Dzień dobry, miło mi ___ poznać. (Pani)",
+          "answer": "Panią",
+          "grammar_point": "pan-pani",
+          "explanation": "Poznać kogo? — biernik: Pani → Panią."
+        },
+        {
+          "id": "g4-2",
+          "text": "Czy mogę ___ w czymś pomóc? (Pan)",
+          "answer": "Panu",
+          "grammar_point": "pan-pani",
+          "explanation": "Pomóc komu? — Panu."
+        },
+        {
+          "id": "g4-3",
+          "text": "Dzwonię do ___ w sprawie szkolenia. (Pani)",
+          "answer": "Pani",
+          "grammar_point": "pan-pani",
+          "explanation": "Do kogo? — dopełniacz: do Pani (forma się nie zmienia)."
+        },
+        {
+          "id": "g4-4",
+          "text": "Przepraszam, jeszcze ___ nie znam. Jestem Olena. (Pan)",
+          "answer": "Pana",
+          "grammar_point": "pan-pani",
+          "explanation": "Nie znam kogo? — dopełniacz: Pana."
+        },
+        {
+          "id": "g4-5",
+          "text": "Mogę iść z ___ na spotkanie? (Pan)",
+          "answer": "Panem",
+          "grammar_point": "pan-pani",
+          "explanation": "Z kim? — narzędnik: z Panem."
+        },
+        {
+          "id": "g4-6",
+          "text": "Dziękuję ___ za pomoc! (Pani)",
+          "answer": "Pani",
+          "grammar_point": "pan-pani",
+          "explanation": "Dziękować komu? — celownik: Pani (forma się nie zmienia)."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "5. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Widzę jej przy drukarce.",
+          "answer": "Widzę ją przy drukarce.",
+          "accept": [
+            "Przy drukarce widzę ją."
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Widzieć kogo? — biernik: ją. Jej to dopełniacz albo celownik."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Wieczorem dzwonię mu.",
+          "answer": "Wieczorem dzwonię do niego.",
+          "accept": [
+            "Dzwonię do niego wieczorem."
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Po polsku dzwonimy do kogo: do niego, do niej, do mnie."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Miło mi z Panią poznać się.",
+          "answer": "Miło mi Panią poznać.",
+          "accept": [
+            "Miło mi poznać Panią.",
+            "Miło Panią poznać."
+          ],
+          "grammar_point": "pan-pani",
+          "explanation": "Poznać kogo? — bez z i bez się: Miło mi Panią poznać."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "To jest prezent dla go.",
+          "answer": "To jest prezent dla niego.",
+          "accept": [
+            "To prezent dla niego."
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Po przyimku — forma z n-: dla niego."
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Nie znam ją dobrze.",
+          "answer": "Nie znam jej dobrze.",
+          "accept": [
+            "Jej nie znam dobrze.",
+            "Dobrze jej nie znam."
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Po nie — dopełniacz: jej."
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Go nie ma w biurze.",
+          "answer": "Nie ma go w biurze.",
+          "accept": [
+            "Jego nie ma w biurze."
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Krótka forma go nie stoi na początku zdania. Na początku — jego."
+        }
+      ]
+    }
+  ]
+}

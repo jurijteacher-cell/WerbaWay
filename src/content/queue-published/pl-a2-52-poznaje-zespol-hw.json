@@ -1,0 +1,208 @@
+{
+  "lesson_id": "pl-a2-52-poznaje-zespol",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: zaimki w domu, w sklepie i z przyjaciółmi",
+  "instruction": "Trzy bloki ćwiczeń. Potem napisz wiadomość — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz zaimek",
+      "instruction": "Wpisz zaimek z nawiasu w poprawnej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Mama dzwoni do mnie codziennie. Bardzo ___ kocham. (ona)",
+          "answer": "ją",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Kochać kogo? — biernik: ją."
+        },
+        {
+          "id": "h1-2",
+          "text": "Sąsiad ma osiemdziesiąt lat, więc pomagam ___ z zakupami. (on)",
+          "answer": "mu",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Pomagać komu? — mu."
+        },
+        {
+          "id": "h1-3",
+          "text": "Dzieci już śpią. Widzę ___ przez drzwi. (one)",
+          "answer": "je",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Dzieci to one, a one w bierniku — je. Ich jest dla mężczyzn i grup z mężczyzną."
+        },
+        {
+          "id": "h1-4",
+          "text": "Gdzie są moje klucze? Nigdzie ___ nie widzę. (one)",
+          "answer": "ich",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Po zaprzeczeniu — dopełniacz: ich (także dla one)."
+        },
+        {
+          "id": "h1-5",
+          "text": "Wszystkiego najlepszego! Kupiłam ___ kwiaty. (ty)",
+          "answer": "ci",
+          "accept": [
+            "tobie"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Kupić komu? — ci. Tobie też jest poprawne, ale podkreśla: właśnie tobie."
+        },
+        {
+          "id": "h1-6",
+          "text": "Wiesz, ___ nie interesuje piłka nożna. (ja)",
+          "answer": "mnie",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Interesować kogo? — biernik: mnie."
+        },
+        {
+          "id": "h1-7",
+          "text": "Czekamy na ___ przed kinem, pospieszcie się! (wy)",
+          "answer": "was",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Czekać na kogo? — biernik: was."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdanie",
+      "instruction": "Ułóż zdanie z kafelków.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "rozmawiam",
+            "z",
+            "nią",
+            "codziennie",
+            "przez",
+            "telefon"
+          ],
+          "answer": "Rozmawiam z nią codziennie przez telefon.",
+          "accept": [
+            "Codziennie rozmawiam z nią przez telefon.",
+            "Rozmawiam z nią przez telefon codziennie.",
+            "Codziennie rozmawiam przez telefon z nią.",
+            "Rozmawiam codziennie z nią przez telefon."
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki"
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "babcia",
+            "zawsze",
+            "pomaga",
+            "mi",
+            "w",
+            "lekcjach"
+          ],
+          "answer": "Babcia zawsze mi pomaga w lekcjach.",
+          "accept": [
+            "Babcia zawsze pomaga mi w lekcjach.",
+            "Babcia pomaga mi zawsze w lekcjach.",
+            "W lekcjach zawsze pomaga mi babcia.",
+            "Zawsze babcia pomaga mi w lekcjach."
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki"
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "czy",
+            "mogę",
+            "do",
+            "Pana",
+            "zadzwonić",
+            "jutro"
+          ],
+          "answer": "Czy mogę do Pana zadzwonić jutro?",
+          "accept": [
+            "Czy mogę jutro do Pana zadzwonić?",
+            "Czy mogę zadzwonić do Pana jutro?",
+            "Czy mogę jutro zadzwonić do Pana?"
+          ],
+          "grammar_point": "pan-pani"
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "mam",
+            "dla",
+            "ciebie",
+            "małą",
+            "niespodziankę"
+          ],
+          "answer": "Mam dla ciebie małą niespodziankę.",
+          "accept": [
+            "Mam małą niespodziankę dla ciebie."
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Bardzo kocham jej.",
+          "answer": "Bardzo ją kocham.",
+          "accept": [
+            "Kocham ją bardzo.",
+            "Bardzo kocham ją."
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Kochać kogo? — biernik: ją."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Zadzwoń mu wieczorem!",
+          "answer": "Zadzwoń do niego wieczorem!",
+          "accept": [
+            "Wieczorem zadzwoń do niego!",
+            "Zadzwoń wieczorem do niego!"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Dzwonić do kogo: do niego."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Idę do kina z on.",
+          "answer": "Idę do kina z nim.",
+          "accept": [
+            "Idę z nim do kina."
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Z kim? — z nim."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Pani Ewo, to są kwiaty dla was.",
+          "answer": "Pani Ewo, to są kwiaty dla Pani.",
+          "accept": [
+            "Pani Ewo, to kwiaty dla Pani."
+          ],
+          "grammar_point": "pan-pani",
+          "explanation": "Do jednej osoby oficjalnie — Pani, nie wy: dla Pani."
+        },
+        {
+          "id": "h3-5",
+          "prompt": "W weekend byłam w kinie z bratem i z ją.",
+          "answer": "W weekend byłam w kinie z bratem i z nią.",
+          "accept": [
+            "W weekend byłam z bratem i z nią w kinie."
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Z kim? — z nią (ona). Ją to biernik bez przyimka."
+        }
+      ]
+    }
+  ]
+}
