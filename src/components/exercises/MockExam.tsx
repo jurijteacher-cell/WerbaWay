@@ -19,6 +19,19 @@ function unitIds(t: Task): string[] {
   return [...(t.items ?? []).map((i) => i.id), ...(t.gaps ?? []).map((g) => g.id)];
 }
 
+function writingDone(t: Task, answers: Answers): boolean {
+  const c = t.choices?.find((x) => x.id === answers[`${t.id}:choice`]);
+  return Boolean(c?.parts.some((p) => (answers[`${t.id}:${p.id}`] ?? '').trim()));
+}
+
+function countWords(s: string): number {
+  return (s.match(/[\p{L}\p{N}]+(?:[-'’][\p{L}\p{N}]+)*/gu) ?? []).length;
+}
+
+function itemNum(t: Task, i: number) {
+  return (t.start_n ?? 1) + i;
+}
+
 function storeKey(id: string) {
   return `werba-mock:${id}`;
 }
@@ -28,7 +41,8 @@ type Stored = {
   answers?: Answers;
   startedAt?: number;
   tab?: Tab;
-  result?: { score: MockScore; saved: boolean };
+  plays?: Record<string, number>;
+  result?: { score: MockScore; saved: boolean; transcripts?: Record<string, string> };
 };
 
 type Ctx = {
@@ -37,6 +51,9 @@ type Ctx = {
   locked: boolean;
   results: Map<string, ItemResult>;
   focus: (el: HTMLInputElement | HTMLTextAreaElement | null) => void;
+  plays: Record<string, number>;
+  onPlay: (taskId: string) => void;
+  transcripts: Record<string, string>;
 };
 
 export function MockExam({ lessonId }: { lessonId: string }) {
@@ -54,6 +71,8 @@ export function MockExam({ lessonId }: { lessonId: string }) {
   const [sendError, setSendError] = useState<string | null>(null);
   const activeInput = useRef<HTMLInputElement | HTMLTextAreaElement | null>(null);
   const [showKeys, setShowKeys] = useState(false);
+  const [plays, setPlays] = useState<Record<string, number>>({});
+  const [transcripts, setTranscripts] = useState<Record<string, string>>({});
   const topRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -77,8 +96,10 @@ export function MockExam({ lessonId }: { lessonId: string }) {
         if (s.imie) setImie(s.imie);
         if (s.answers) setAnswers(s.answers);
         if (s.startedAt) setStartedAt(s.startedAt);
+        if (s.plays) setPlays(s.plays);
         if (s.result?.score) {
           setScore(s.result.score);
+          setTranscripts(s.result.transcripts ?? {});
           setSaved(s.result.saved);
           setTab('wynik');
         } else if (s.tab && s.startedAt) {
@@ -101,13 +122,14 @@ export function MockExam({ lessonId }: { lessonId: string }) {
         answers,
         startedAt,
         tab,
-        result: score ? { score, saved: Boolean(saved) } : undefined,
+        plays,
+        result: score ? { score, saved: Boolean(saved), transcripts } : undefined,
       };
       localStorage.setItem(storeKey(lessonId), JSON.stringify(data));
     } catch {
       /* ignore */
     }
-  }, [restored, answers, imie, startedAt, tab, score, saved, lessonId]);
+  }, [restored, answers, imie, startedAt, tab, score, saved, lessonId, plays, transcripts]);
 
   useEffect(() => {
     const t = setInterval(() => setNow(Date.now()), 20000);
@@ -124,7 +146,11 @@ export function MockExam({ lessonId }: { lessonId: string }) {
     const c: Record<string, { done: number; total: number }> = {};
     for (const s of exam?.sections ?? []) {
       const ids = s.tasks.flatMap(unitIds);
-      c[s.id] = { done: ids.filter((id) => (answers[id] ?? '').trim()).length, total: ids.length };
+      const wr = s.tasks.filter((t) => t.layout === 'writing');
+      c[s.id] = {
+        done: ids.filter((id) => (answers[id] ?? '').trim()).length + wr.filter((t) => writingDone(t, answers)).length,
+        total: ids.length + wr.length,
+      };
     }
     return c;
   }, [exam, answers]);
@@ -146,6 +172,9 @@ export function MockExam({ lessonId }: { lessonId: string }) {
       activeInput.current = el;
       setShowKeys(Boolean(el));
     },
+    plays,
+    onPlay: (taskId) => setPlays((p) => ({ ...p, [taskId]: (p[taskId] ?? 0) + 1 })),
+    transcripts,
   };
 
   const go = (t: Tab) => {
@@ -180,6 +209,7 @@ export function MockExam({ lessonId }: { lessonId: string }) {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'error');
       setScore(data.score as MockScore);
+      setTranscripts((data.transcripts as Record<string, string>) ?? {});
       setSaved(Boolean(data.notionSaved));
       go('wynik');
     } catch {
@@ -222,7 +252,7 @@ export function MockExam({ lessonId }: { lessonId: string }) {
   return (
     <div className="mx" ref={topRef}>
       <header className="nb-head">
-        <p className="nb-eyebrow">egzamin próbny · B1</p>
+        <p className="nb-eyebrow">{exam.eyebrow ?? 'egzamin próbny · B1'}</p>
         <h1>{exam.title}</h1>
         <p>{exam.subtitle}</p>
       </header>
@@ -249,11 +279,19 @@ export function MockExam({ lessonId }: { lessonId: string }) {
           <ul className="mx-rules">
             {exam.sections.map((s) => (
               <li key={s.id}>
-                <b>{s.title}</b> — {s.tasks.length} zadań, {s.max_points} p., na egzaminie {s.minutes} minut
+                <b>{s.title}</b> —{' '}
+                {s.manual
+                  ? `ocenia nauczyciel${s.manual_points ? ` (${s.manual_points} p.)` : ''}`
+                  : `${s.tasks.length} ${s.tasks.length === 1 ? 'zadanie' : s.tasks.length < 5 ? 'zadania' : 'zadań'}, ${fmt(s.max_points)} p.`}
+                {s.minutes ? `, na egzaminie ${s.minutes} minut` : ''}
               </li>
             ))}
-            <li>Bez słownika i tłumacza. Możesz przechodzić między częściami.</li>
-            <li>Na egzaminie trzeba mieć co najmniej 60% w każdej części.</li>
+            {(exam.rules ?? [
+              'Bez słownika i tłumacza. Możesz przechodzić między częściami.',
+              `Na egzaminie trzeba mieć co najmniej ${Math.round(exam.pass_ratio * 100)}% w każdej części.`,
+            ]).map((r) => (
+              <li key={r}>{r}</li>
+            ))}
             <li>Po wysłaniu zobaczysz wynik i poprawne odpowiedzi.</li>
           </ul>
           <p className="nb-note">
@@ -367,7 +405,7 @@ export function MockExam({ lessonId }: { lessonId: string }) {
 /* ---------- tasks ---------- */
 
 function TaskView({ task, ctx }: { task: Task; ctx: Ctx }) {
-  const pts = `${fmt(task.max_points)} p.`;
+  const pts = task.layout === 'writing' ? 'ocenia nauczyciel' : `${fmt(task.max_points)} p.`;
   return (
     <article className="mx-task">
       <div className="mx-task-head">
@@ -376,12 +414,28 @@ function TaskView({ task, ctx }: { task: Task; ctx: Ctx }) {
       </div>
       {task.topic ? <p className="mx-topic">{task.topic}</p> : null}
       {task.instruction ? <p className="mx-instr">{task.instruction}</p> : null}
+      {task.audio ? <AudioPlayer task={task} ctx={ctx} /> : null}
       {task.layout === 'mc-passages' ? <McPassages task={task} ctx={ctx} /> : null}
       {task.layout === 'true-false' ? <TrueFalse task={task} ctx={ctx} /> : null}
       {task.layout === 'cloze' ? <Cloze task={task} ctx={ctx} /> : null}
       {task.layout === 'matching' ? <MatchingView task={task} ctx={ctx} /> : null}
       {task.layout === 'questions' ? <Questions task={task} ctx={ctx} /> : null}
       {task.layout === 'transform' ? <Transform task={task} ctx={ctx} /> : null}
+      {task.layout === 'writing' ? <Writing task={task} ctx={ctx} /> : null}
+      {ctx.locked && ctx.transcripts[task.id] ? (
+        <details className="mx-transcript">
+          <summary>Transkrypcja nagrania</summary>
+          {ctx.transcripts[task.id].split('\n').map((l, i) => {
+            const m = l.match(/^([^:]{1,40}):\s(.*)$/);
+            return l.trim() ? (
+              <p key={i}>
+                {m ? <b>{m[1]}: </b> : null}
+                {m ? m[2] : l}
+              </p>
+            ) : null;
+          })}
+        </details>
+      ) : null}
     </article>
   );
 }
@@ -430,11 +484,16 @@ function McPassages({ task, ctx }: { task: Task; ctx: Ctx }) {
     exAnswer?: string
   ) => (
     <div key={key} className={`mx-mc${exAnswer ? ' mx-example' : ''}`}>
-      <p className="mx-mc-pass">
-        {num}
-        {passage}
+      {passage ? (
+        <p className="mx-mc-pass">
+          {num}
+          {passage}
+        </p>
+      ) : null}
+      <p className="mx-stem">
+        {passage ? null : num}
+        {stem}
       </p>
-      <p className="mx-stem">{stem}</p>
       <div className="mx-opts">
         {options.map((o, i) => {
           const l = LETTERS[i];
@@ -472,17 +531,78 @@ function McPassages({ task, ctx }: { task: Task; ctx: Ctx }) {
           )
         : null}
       {(task.items ?? []).map((it, i) =>
-        block(
-          it.id,
-          it.passage ?? '',
-          it.stem ?? '',
-          it.options ?? [],
-          ctx.answers[it.id] ?? '',
-          ctx.locked ? null : (l) => ctx.set(it.id, l),
-          <span className="mx-num">{i + 1}. </span>,
-          ctx.results.get(it.id)
+        it.kind === 'tf' ? (
+          <TfRow
+            key={it.id}
+            num={<span className="mx-num">{itemNum(task, i)}. </span>}
+            heading={it.passage}
+            text={it.stem ?? it.text ?? ''}
+            labels={task.tf_labels ?? ['TAK', 'NIE']}
+            value={ctx.answers[it.id] ?? ''}
+            onPick={ctx.locked ? null : (v) => ctx.set(it.id, v)}
+            r={ctx.results.get(it.id)}
+          />
+        ) : (
+          block(
+            it.id,
+            it.passage ?? '',
+            it.stem ?? '',
+            it.options ?? [],
+            ctx.answers[it.id] ?? '',
+            ctx.locked ? null : (l) => ctx.set(it.id, l),
+            <span className="mx-num">{itemNum(task, i)}. </span>,
+            ctx.results.get(it.id)
+          )
         )
       )}
+    </div>
+  );
+}
+
+function TfRow({
+  num,
+  heading,
+  text,
+  labels,
+  value,
+  onPick,
+  r,
+  exm = false,
+}: {
+  num: ReactNode;
+  heading?: string;
+  text: string;
+  labels: string[];
+  value: string;
+  onPick: ((v: string) => void) | null;
+  r?: ItemResult;
+  exm?: boolean;
+}) {
+  return (
+    <div className={`mx-tf-row${exm ? ' mx-example' : ''}`}>
+      {heading ? <p className="mx-mc-pass">{heading}</p> : null}
+      <p>
+        {num}
+        {text}
+      </p>
+      <div className="mx-tf-btns">
+        {labels.map((v) => {
+          const on = value === v;
+          const cls = r ? (r.expected === v ? ' good' : on ? ' bad' : '') : '';
+          return (
+            <button
+              key={v}
+              type="button"
+              className={`nb-tf${on ? ' sel' : ''}${cls}`}
+              disabled={!onPick}
+              onClick={() => onPick?.(v)}
+            >
+              {v}
+            </button>
+          );
+        })}
+      </div>
+      {r ? <Verdict r={r} /> : null}
     </div>
   );
 }
@@ -498,7 +618,7 @@ function TrueFalse({ task, ctx }: { task: Task; ctx: Ctx }) {
           {text}
         </p>
         <div className="mx-tf-btns">
-          {['TAK', 'NIE'].map((v) => {
+          {(task.tf_labels ?? ['TAK', 'NIE']).map((v) => {
             const on = value === v;
             const cls = r ? (r.expected === v ? ' good' : on ? ' bad' : '') : '';
             return (
@@ -524,7 +644,7 @@ function TrueFalse({ task, ctx }: { task: Task; ctx: Ctx }) {
       <div className="mx-stack">
         {ex ? row('ex', <span className="mx-exlabel">Przykład: </span>, String(ex.text), String(ex.answer), null, true) : null}
         {(task.items ?? []).map((it, i) =>
-          row(it.id, <span className="mx-num">{i + 1}. </span>, it.text ?? '', ctx.answers[it.id] ?? '', it.id)
+          row(it.id, <span className="mx-num">{itemNum(task, i)}. </span>, it.text ?? '', ctx.answers[it.id] ?? '', it.id)
         )}
       </div>
     </>
@@ -701,26 +821,34 @@ function MatchingView({ task, ctx }: { task: Task; ctx: Ctx }) {
   const ex = task.example as Ex | undefined;
   const keys = (task.right ?? []).map((r) => r.key);
   const used = new Set(Object.entries(ctx.answers).filter(([k]) => k.startsWith(`${task.id}-`)).map(([, v]) => v));
+  const showRight = (task.right ?? []).some((r) => r.text);
+  const isPic = (t: string) => /^[^\p{L}\p{N}]+$/u.test(t.trim());
   return (
     <>
       {task.passage_title ? <h4 className="mx-subtitle">{task.passage_title}</h4> : null}
-      <div className="mx-match">
-        <div className="mx-match-right">
-          <p className="mx-col">Kolumna II</p>
-          {(task.right ?? []).map((r) => (
-            <div key={r.key} className={`mx-frag${used.has(r.key) ? ' used' : ''}${ex?.answer === r.key ? ' exm' : ''}`}>
-              <b>{r.key}</b>
-              <span>{r.text}</span>
-            </div>
-          ))}
-        </div>
+      <div className={`mx-match${showRight ? '' : ' solo'}`}>
+        {showRight ? (
+          <div className="mx-match-right">
+            <p className="mx-col">{task.right_label ?? 'Kolumna II'}</p>
+            {(task.right ?? []).map((r) => (
+              <div
+                key={r.key}
+                className={`mx-frag${isPic(r.text) ? ' pic' : ''}${used.has(r.key) && !task.reuse_keys ? ' used' : ''}${ex?.answer === r.key ? ' exm' : ''}`}
+              >
+                <b>{r.key}</b>
+                <span>{r.text}</span>
+              </div>
+            ))}
+          </div>
+        ) : null}
         <div className="mx-match-left">
-          <p className="mx-col">Kolumna I — tytuły</p>
+          <p className="mx-col">{task.left_label ?? 'Kolumna I — tytuły'}</p>
           {ex ? (
             <div className="mx-title-row mx-example">
-              <p>
+              <p className={String(ex.text ?? '').includes('\n') ? 'mx-long' : undefined}>
                 <span className="mx-exlabel">Przykład: </span>
-                {String(ex.text)}
+                {ex.emoji ? <span className="mx-emoji">{String(ex.emoji)}</span> : null}
+                {String(ex.text ?? '')}
               </p>
               <div className="mx-letters">
                 <span className="mx-letter on">{String(ex.answer)}</span>
@@ -733,8 +861,9 @@ function MatchingView({ task, ctx }: { task: Task; ctx: Ctx }) {
             const expected = r?.expected.split(' · ')[0];
             return (
               <div key={it.id} className="mx-title-row">
-                <p>
-                  <span className="mx-num">{i + 1}. </span>
+                <p className={(it.text ?? '').includes('\n') ? 'mx-long' : undefined}>
+                  <span className="mx-num">{itemNum(task, i)}. </span>
+                  {it.emoji ? <span className="mx-emoji">{it.emoji}</span> : null}
                   {it.text}
                 </p>
                 <div className="mx-letters">
@@ -746,7 +875,7 @@ function MatchingView({ task, ctx }: { task: Task; ctx: Ctx }) {
                         key={k}
                         type="button"
                         className={`mx-letter${on ? ' on' : ''}${cls}`}
-                        disabled={ctx.locked || ex?.answer === k}
+                        disabled={ctx.locked || (!task.reuse_keys && ex?.answer === k)}
                         onClick={() => ctx.set(it.id, on ? '' : k)}
                       >
                         {k}
@@ -795,7 +924,7 @@ function Questions({ task, ctx }: { task: Task; ctx: Ctx }) {
         return (
           <div key={it.id} className="mx-q">
             <p>
-              <span className="mx-num">{i + 1}. </span>
+              <span className="mx-num">{itemNum(task, i)}. </span>
               <Underlined s={it.sentence ?? ''} />
             </p>
             <p className="mx-q-line">
@@ -841,7 +970,7 @@ function Transform({ task, ctx }: { task: Task; ctx: Ctx }) {
         return (
           <div key={it.id} className="mx-tr">
             <p>
-              <span className="mx-num">{i + 1}. </span>
+              <span className="mx-num">{itemNum(task, i)}. </span>
               {it.sentence} <span className="mx-kw">{it.keyword}</span>
             </p>
             <textarea
@@ -859,6 +988,156 @@ function Transform({ task, ctx }: { task: Task; ctx: Ctx }) {
           </div>
         );
       })}
+    </div>
+  );
+}
+
+function AudioPlayer({ task, ctx }: { task: Task; ctx: Ctx }) {
+  const audio = task.audio!;
+  const ref = useRef<HTMLAudioElement | null>(null);
+  const [state, setState] = useState<'idle' | 'playing' | 'paused'>('idle');
+  const [pos, setPos] = useState(0);
+  const used = ctx.plays[task.id] ?? 0;
+  const left = Math.max(0, audio.max_plays - used);
+  if (ctx.locked) {
+    return (
+      <div className="mx-audio">
+        <audio controls preload="none" src={audio.src} className="mx-audio-free" />
+      </div>
+    );
+  }
+  const play = () => {
+    const el = ref.current;
+    if (!el) return;
+    if (state === 'paused') {
+      void el.play();
+      setState('playing');
+      return;
+    }
+    if (state === 'playing') {
+      el.pause();
+      setState('paused');
+      return;
+    }
+    if (left <= 0) return;
+    ctx.onPlay(task.id);
+    el.currentTime = 0;
+    void el.play();
+    setState('playing');
+  };
+  const label =
+    state === 'playing'
+      ? '❚❚ Pauza'
+      : state === 'paused'
+        ? '▶ Wznów'
+        : left > 0
+          ? `▶ Odsłuchaj (${used + 1}/${audio.max_plays})`
+          : 'Nagranie odsłuchane';
+  return (
+    <div className="mx-audio">
+      <audio
+        ref={ref}
+        preload="auto"
+        src={audio.src}
+        onTimeUpdate={(e) => {
+          const el = e.currentTarget;
+          setPos(el.duration ? el.currentTime / el.duration : 0);
+        }}
+        onEnded={() => {
+          setState('idle');
+          setPos(0);
+        }}
+      />
+      <button type="button" className="nb-btn" disabled={state === 'idle' && left <= 0} onClick={play}>
+        {label}
+      </button>
+      <div className="mx-audio-bar">
+        <i style={{ width: `${pos * 100}%` }} />
+      </div>
+      <span className="mx-audio-note">
+        {audio.note ?? (audio.max_plays === 1 ? 'Nagranie usłyszysz jeden raz.' : `Nagranie usłyszysz ${audio.max_plays} razy.`)}
+      </span>
+    </div>
+  );
+}
+
+function PromptText({ text }: { text: string }) {
+  const lines = text.split('\n').filter((l) => l.trim());
+  const out: ReactNode[] = [];
+  let list: string[] = [];
+  const flush = () => {
+    if (list.length) {
+      out.push(
+        <ul key={`l${out.length}`}>
+          {list.map((l) => (
+            <li key={l}>{l}</li>
+          ))}
+        </ul>
+      );
+      list = [];
+    }
+  };
+  for (const l of lines) {
+    if (/^[-•]\s/.test(l)) list.push(l.replace(/^[-•]\s/, ''));
+    else {
+      flush();
+      out.push(<p key={`p${out.length}`}>{l}</p>);
+    }
+  }
+  flush();
+  return <div className="mx-prompt">{out}</div>;
+}
+
+function Writing({ task, ctx }: { task: Task; ctx: Ctx }) {
+  const choiceKey = `${task.id}:choice`;
+  const choiceId = ctx.answers[choiceKey] ?? '';
+  const choice = task.choices?.find((c) => c.id === choiceId);
+  return (
+    <div className="mx-stack">
+      <div className="mx-choices">
+        {(task.choices ?? []).map((c) => (
+          <button
+            key={c.id}
+            type="button"
+            className={`mx-choice-card${c.id === choiceId ? ' on' : ''}`}
+            disabled={ctx.locked}
+            onClick={() => ctx.set(choiceKey, c.id)}
+          >
+            <b>{c.label}</b>
+            {c.intro ? <span>{c.intro}</span> : null}
+          </button>
+        ))}
+      </div>
+      {!choice && !ctx.locked ? <p className="nb-note">Wybierz jeden temat. / Обери одну тему.</p> : null}
+      {choice?.parts.map((p) => {
+        const id = `${task.id}:${p.id}`;
+        const v = ctx.answers[id] ?? '';
+        const n = countWords(v);
+        const lo = p.words ? Math.floor(p.words * 0.9) : 0;
+        const hi = p.words ? Math.ceil(p.words * 1.1) : 0;
+        const state = !p.words || !n ? '' : n < lo ? ' short' : n > hi ? ' long' : ' fine';
+        return (
+          <div key={p.id} className="mx-write">
+            <h4>{p.label}</h4>
+            <PromptText text={p.prompt} />
+            <textarea
+              className="mx-area mx-write-area"
+              data-answer-id={id}
+              rows={p.words && p.words < 60 ? 5 : 12}
+              value={v}
+              disabled={ctx.locked}
+              onChange={(e) => ctx.set(id, e.target.value)}
+              onFocus={(e) => ctx.focus(e.currentTarget)}
+              spellCheck={false}
+              aria-label={p.label}
+            />
+            <p className={`mx-wc${state}`}>
+              {n} słów{p.words ? ` · limit ${p.words} (od ${lo} do ${hi})` : ''}
+            </p>
+          </div>
+        );
+      })}
+      {ctx.locked ? <p className="mx-check-note">Tekst oceni nauczyciel. / Текст оцінить викладач.</p> : null}
     </div>
   );
 }
@@ -881,7 +1160,12 @@ function ResultView({
   onRetake: () => void;
 }) {
   const [askRetake, setAskRetake] = useState(false);
-  const pct = score.max ? Math.round((score.total / score.max) * 100) : 0;
+    const auto = score.sections.filter((s) => !s.manual);
+  const manual = exam.sections.filter((s) => s.manual);
+  const checks = score.tasks.reduce((a, t) => a + t.items.filter((r) => r.status === 'check').length, 0);
+  const passPct = Math.round(exam.pass_ratio * 100);
+  const telc = exam.scoring === 'telc';
+  const lv = Object.entries(exam.levels ?? { B1: 27, B2: 43 }).sort((a, b) => a[1] - b[1]);
   return (
     <section className="mx-panel mx-result">
       <p className="nb-eyebrow">{imie}</p>
@@ -889,42 +1173,63 @@ function ResultView({
         {fmt(score.total)}
         <small>/{score.max}</small>
       </div>
-      <p className="mx-verdict">
-        {score.passed
-          ? 'Próg zaliczony w obu częściach.'
-          : 'Na prawdziwym egzaminie potrzeba co najmniej 60% w każdej części.'}
-      </p>
+      {telc ? (
+        <p className="mx-verdict">
+          Poziom w części pisemnej: <b>{score.level ?? '—'}</b>
+          <br />
+          <small>
+            {lv.map(([k, v]) => `${k} od ${v} p.`).join(' · ')} (bez wypowiedzi pisemnej). Na certyfikat trzeba też zdać
+            egzamin ustny.
+          </small>
+        </p>
+      ) : (
+        <p className="mx-verdict">
+          {score.passed
+            ? auto.length > 1
+              ? 'Próg zaliczony we wszystkich częściach, które sprawdza komputer.'
+              : 'Próg zaliczony.'
+            : `Na prawdziwym egzaminie potrzeba co najmniej ${passPct}% w każdej części.`}
+        </p>
+      )}
 
       <div className="mx-bars">
-        {score.sections.map((s) => {
+        {auto.map((s) => {
           const w = s.max ? (s.points / s.max) * 100 : 0;
           return (
             <div key={s.id} className="mx-bar-row">
               <div className="mx-bar-head">
                 <b>{s.title}</b>
-                <span className={s.passed ? 'mx-ok' : 'mx-no'}>
-                  {fmt(s.points)}/{s.max} p. {s.passed ? '✓' : '✗'}
+                <span className={telc ? undefined : s.passed ? 'mx-ok' : 'mx-no'}>
+                  {fmt(s.points)}/{fmt(s.max)} p. {telc ? '' : s.passed ? '✓' : '✗'}
                 </span>
               </div>
               <div className="mx-bar">
-                <i style={{ width: `${w}%` }} className={s.passed ? 'pass' : 'fail'} />
-                <em style={{ left: `${exam.pass_ratio * 100}%` }} title="próg 60%" />
+                <i style={{ width: `${w}%` }} className={telc || s.passed ? 'pass' : 'fail'} />
+                {telc ? null : <em style={{ left: `${exam.pass_ratio * 100}%` }} title={`próg ${passPct}%`} />}
               </div>
             </div>
           );
         })}
       </div>
 
-      {score.pending ? (
+      {checks ? (
         <p className="mx-check-note">
-          {score.pending} {score.pending === 1 ? 'zdanie' : 'zdania'} z Zadania 6 sprawdzi nauczyciel — na razie liczone
-          jako 0 p.
+          {checks} {checks === 1 ? 'odpowiedź otwartą' : 'odpowiedzi otwarte'} sprawdzi nauczyciel — na razie liczone jako 0
+          p.
         </p>
       ) : null}
+      {manual.map((s) => (
+        <p key={s.id} className="mx-check-note">
+          {s.title}: ocenia nauczyciel{s.manual_points ? ` (max ${s.manual_points} p.)` : ''} — tekst wysłany razem z
+          wynikiem.
+        </p>
+      ))}
 
       <table className="mx-table">
         <tbody>
-          {exam.sections.map((s) => (
+          {exam.sections
+            .filter((s) => !s.manual)
+            .map((s) => (
             <Fragment key={s.id}>
               <tr className="mx-table-sec">
                 <th colSpan={2}>{s.tab}</th>
@@ -937,7 +1242,9 @@ function ResultView({
                       {t.title}
                       {t.topic ? <span className="mx-topic-inline"> · {t.topic}</span> : null}
                     </td>
-                    <td className={t.points === t.max ? 'mx-ok' : t.points / t.max < 0.6 ? 'mx-no' : undefined}>
+                    <td
+                      className={t.points === t.max ? 'mx-ok' : t.points / t.max < exam.pass_ratio ? 'mx-no' : undefined}
+                    >
                       {fmt(t.points)}/{fmt(t.max)}
                     </td>
                   </tr>
@@ -950,7 +1257,7 @@ function ResultView({
       <div className="nb-row mx-center">
         {exam.sections.map((s) => (
           <button key={s.id} type="button" className="nb-btn ghost" onClick={() => onOpen(s.id)}>
-            Zobacz błędy: {s.tab}
+            {s.manual ? 'Twój tekst' : 'Zobacz błędy'}: {s.tab}
           </button>
         ))}
       </div>

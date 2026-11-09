@@ -1,6 +1,6 @@
 import type { MockExam, MockScore, ItemResult } from './core';
 
-/** Teacher-only Notion database «Wyniki — egzamin próbny B1» (page «Egzamin próbny B1» in Werba Way). */
+/** Teacher-only Notion database «Wyniki — egzamin próbny» (page «Egzamin próbny B1» in Werba Way). */
 const DEFAULT_DB = '8e2ceb755dc1451cada978409be51369';
 
 function headers(token: string) {
@@ -64,9 +64,12 @@ export function weakTopics(exam: MockExam, score: MockScore): string[] {
 
 function buildChildren(exam: MockExam, score: MockScore) {
   const blocks: unknown[] = [];
-  const sec = score.sections
-    .map((s) => `${s.title}: ${fmtPts(s.points)}/${s.max} ${s.passed ? '✓' : '✗'}`)
-    .join('   ·   ');
+  const sec =
+    (score.level ? `Poziom w teście: ${score.level} (${fmtPts(score.total)}/${fmtPts(score.max)})   ·   ` : '') +
+    score.sections
+      .filter((s) => !s.manual)
+      .map((s) => `${s.title}: ${fmtPts(s.points)}/${fmtPts(s.max)}${score.level ? '' : s.passed ? ' ✓' : ' ✗'}`)
+      .join('   ·   ');
   blocks.push({
     object: 'block',
     type: 'callout',
@@ -77,15 +80,15 @@ function buildChildren(exam: MockExam, score: MockScore) {
     },
   });
   if (score.pending) {
+    const checks = score.pending - score.writing.filter((w) => w.parts.some((p) => p.text)).length;
+    const bits: string[] = [];
+    if (checks > 0) bits.push(`${checks} odpowiedzi otwartych (liczone jako 0 p., dopóki ich nie sprawdzisz)`);
+    if (score.writing.some((w) => w.parts.some((p) => p.text))) bits.push('wypowiedź pisemna — teksty niżej');
     blocks.push({
       object: 'block',
       type: 'callout',
       callout: {
-        rich_text: [
-          rt(
-            `Do sprawdzenia: ${score.pending} przekształc. (Zadanie 6) — liczone jako 0 p., dopóki ich nie sprawdzisz.`
-          ),
-        ],
+        rich_text: [rt(`Do sprawdzenia: ${bits.join('; ')}.`)],
         icon: { type: 'emoji', emoji: '✍️' },
         color: 'orange_background',
       },
@@ -93,6 +96,7 @@ function buildChildren(exam: MockExam, score: MockScore) {
   }
 
   for (const s of exam.sections) {
+    if (s.manual) continue;
     const tasks = score.tasks.filter((t) => t.section === s.id);
     blocks.push({ object: 'block', type: 'heading_2', heading_2: { rich_text: [rt(s.title)] } });
     for (const t of tasks) {
@@ -125,6 +129,36 @@ function buildChildren(exam: MockExam, score: MockScore) {
       }
     }
   }
+  for (const w of score.writing) {
+    blocks.push({
+      object: 'block',
+      type: 'heading_2',
+      heading_2: { rich_text: [rt(`✍️ ${w.title}${w.choice ? ` · ${w.choice}` : ''}`)] },
+    });
+    if (!w.parts.some((p) => p.text)) {
+      blocks.push({ object: 'block', type: 'paragraph', paragraph: { rich_text: [rt('— (brak tekstu)', { color: 'gray' })] } });
+      continue;
+    }
+    for (const part of w.parts) {
+      const limit = part.target ? ` · limit ${part.target} (±10%)` : '';
+      blocks.push({
+        object: 'block',
+        type: 'heading_3',
+        heading_3: { rich_text: [rt(`${part.label} — ${part.words} słów${limit}`)] },
+      });
+      blocks.push({
+        object: 'block',
+        type: 'quote',
+        quote: { rich_text: [rt(part.prompt, { color: 'gray' })] },
+      });
+      const text = part.text || '— (brak tekstu)';
+      for (const para of text.split(/\n{2,}/)) {
+        for (let i = 0; i < para.length; i += 1900) {
+          blocks.push({ object: 'block', type: 'paragraph', paragraph: { rich_text: [rt(para.slice(i, i + 1900))] } });
+        }
+      }
+    }
+  }
   return blocks;
 }
 
@@ -139,12 +173,16 @@ export async function writeMockResult(args: {
   if (!token) return { ok: false, error: 'NOTION_API_KEY missing' };
 
   const { exam, score } = args;
-  const rt_ = score.sections.find((s) => s.id === 'rt');
-  const pg = score.sections.find((s) => s.id === 'pg');
+  const pick = (...ids: string[]) => score.sections.find((s) => ids.includes(s.id));
+  const rt_ = pick('rt', 'cz');
+  const pg = pick('pg');
+  const sl = pick('rs', 'sl');
+  const el = pick('el');
+  const wynik = score.level ?? (score.passed ? 'Zdane' : 'Poniżej progu');
   const props: Record<string, unknown> = {
     Imię: { title: [rt(args.imie.slice(0, 200))] },
     Egzamin: { select: { name: exam.exam_label } },
-    Wynik: { select: { name: score.passed ? 'Zdane' : 'Poniżej progu' } },
+    Wynik: { select: { name: wynik } },
     'Czytanie (pkt)': { number: rt_?.points ?? null },
     'Gramatyka (pkt)': { number: pg?.points ?? null },
     'Razem %': { number: score.max ? Math.round((score.total / score.max) * 1000) / 1000 : 0 },
@@ -153,6 +191,8 @@ export async function writeMockResult(args: {
     Błędy: { rich_text: [rt(errorsSummary(score))] },
     'Lesson ID': { rich_text: [rt(exam.lesson_id)] },
   };
+  if (sl) props['Słuchanie (pkt)'] = { number: sl.points };
+  if (el) props['Elementy (pkt)'] = { number: el.points };
   const weak = weakTopics(exam, score);
   if (weak.length) {
     props['Słabe tematy'] = { multi_select: weak.slice(0, 20).map((name) => ({ name: name.slice(0, 100) })) };

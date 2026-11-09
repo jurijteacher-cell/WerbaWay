@@ -2743,6 +2743,37 @@
 .mx-link { border: 0; background: none; cursor: pointer; font: inherit; font-size: 13.5px; color: var(--nb-ink-soft); text-decoration: underline; text-underline-offset: 3px; padding: 4px; }
 .mx-retake-q { font-size: 14px; color: var(--nb-ink); }
 
+/* mock exam v2: audio with limited plays, writing, telc */
+.mx-audio { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 4px 0 16px; padding: 12px 14px; background: var(--nb-yellow-soft); border-radius: var(--nb-r); box-shadow: var(--nb-shadow-xs); }
+.mx-audio .nb-btn { min-width: 190px; }
+.mx-audio-bar { flex: 1 1 160px; height: 6px; border-radius: 3px; background: rgba(27,42,74,.12); overflow: hidden; }
+.mx-audio-bar i { display: block; height: 100%; background: var(--nb-gold); transition: width .25s linear; }
+.mx-audio-note { flex-basis: 100%; font-size: 13px; color: var(--nb-ink-soft); }
+.mx-audio-free { width: 100%; max-width: 520px; }
+.mx-transcript { margin: 14px 0 0; padding: 10px 14px; background: rgba(255,255,255,.6); border-radius: 3px; font-size: 14px; line-height: 1.6; color: var(--nb-ink); }
+.mx-transcript summary { cursor: pointer; font-weight: 600; color: var(--nb-ink-soft); }
+.mx-transcript p { margin: 6px 0 0; }
+.mx-match.solo { grid-template-columns: minmax(0,1fr); }
+.mx-frag.pic span { font-size: 34px; line-height: 1.1; }
+.mx-emoji { font-size: 34px; line-height: 1; margin-right: 8px; vertical-align: middle; }
+.mx-long { white-space: pre-line; }
+.mx-choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.mx-choice-card { text-align: left; border: 0; cursor: pointer; font: inherit; color: var(--nb-ink); background: #fff; padding: 12px 14px; border-radius: 10px; box-shadow: 1px 2px 0 rgba(27,42,74,.12); display: flex; flex-direction: column; gap: 4px; }
+.mx-choice-card b { font-family: var(--nb-display); font-size: 16px; }
+.mx-choice-card span { font-size: 13.5px; line-height: 1.45; color: var(--nb-ink-soft); }
+.mx-choice-card.on { background: var(--nb-yellow); }
+.mx-choice-card:disabled { cursor: default; }
+.mx-write { display: flex; flex-direction: column; gap: 8px; }
+.mx-write h4 { margin: 6px 0 0; font-family: var(--nb-display); font-size: 17px; color: var(--nb-ink); }
+.mx-prompt { background: rgba(255,255,255,.6); border-radius: 3px; padding: 10px 14px; font-size: 15px; line-height: 1.6; color: var(--nb-ink); }
+.mx-prompt p { margin: 0 0 6px; }
+.mx-prompt ul { margin: 0 0 6px; padding-left: 22px; list-style: disc; }
+.mx-prompt li { margin: 2px 0; }
+.mx-write-area { min-height: 120px; }
+.mx-wc { margin: 0; font-size: 13px; color: var(--nb-ink-soft); }
+.mx-wc.fine { color: var(--nb-ok); }
+.mx-wc.short, .mx-wc.long { color: var(--nb-no); }
+
 
 /* ═════════ UI v2 harmonisation of legacy name fields ═════════ */
 .placement-name,

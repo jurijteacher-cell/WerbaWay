@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { loadMockExam, scoreMockExam } from '@/lib/mock-exam/core';
+import { loadMockExam, scoreMockExam, transcriptsOf } from '@/lib/mock-exam/core';
 import { writeMockResult } from '@/lib/mock-exam/notion';
 
 type Ctx = { params: { lessonId: string } };
@@ -23,8 +23,11 @@ export async function POST(req: NextRequest, { params }: Ctx) {
 
   const raw = (body?.answers ?? {}) as Record<string, unknown>;
   const answers: Record<string, string> = {};
-  for (const [k, v] of Object.entries(raw)) {
-    if (typeof v === 'string') answers[k.slice(0, 40)] = v.slice(0, 400);
+  for (const [k, v] of Object.entries(raw).slice(0, 400)) {
+    if (typeof v !== 'string') continue;
+    // writing parts (`task:part`) carry whole texts; everything else is a short answer
+    const long = k.includes(':') && !k.endsWith(':choice');
+    answers[k.slice(0, 40)] = v.slice(0, long ? 6000 : 400);
   }
   const minutes = Number(body?.minutes ?? 0);
 
@@ -39,6 +42,7 @@ export async function POST(req: NextRequest, { params }: Ctx) {
 
   return NextResponse.json({
     score,
+    transcripts: transcriptsOf(exam),
     notionSaved: notion.ok,
     notionError: notion.ok ? undefined : (notion.error ?? '').split(':')[0],
   });

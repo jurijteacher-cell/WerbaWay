@@ -1,0 +1,866 @@
+{
+  "lesson_id": "pl-telc-probny-01",
+  "exercise_type": "mock-exam",
+  "exam_label": "telc 1",
+  "title": "telc Polski B1·B2 · egzamin próbny 1",
+  "subtitle": "Część pisemna: słuchanie, czytanie, elementy językowe, wypowiedź pisemna",
+  "eyebrow": "egzamin próbny · telc B1·B2",
+  "source": "Materiały własne Werba Way w formacie telc B1·B2. Nagrania: głosy syntetyczne.",
+  "pass_ratio": 0.6,
+  "scoring": "telc",
+  "levels": {
+    "B1": 27,
+    "B2": 43
+  },
+  "rules": [
+    "Każde nagranie usłyszysz tylko raz — jak na egzaminie. Nie da się go przewinąć ani włączyć ponownie.",
+    "Bez słownika i tłumacza. Możesz przechodzić między częściami.",
+    "Wynik testu (słuchanie + czytanie + elementy językowe, razem 59 p.): od 27 p. — B1, od 43 p. — B2.",
+    "Wypowiedź pisemną oceni nauczyciel. Na certyfikat trzeba zdać też egzamin ustny."
+  ],
+  "sections": [
+    {
+      "id": "sl",
+      "tab": "Słuchanie",
+      "title": "Rozumienie ze słuchu",
+      "minutes": 25,
+      "tasks": [
+        {
+          "id": "sl1",
+          "title": "Część 1 · wiadomości głosowe",
+          "layout": "mc-passages",
+          "points_per_item": 1,
+          "start_n": 1,
+          "instruction": "Usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz.",
+          "audio": {
+            "src": "/audio/pl-telc-probny-01/telc-sluchanie-1.mp3",
+            "max_plays": 1
+          },
+          "transcript": "Lektor: Rozumienie ze słuchu, część pierwsza. Za chwilę usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz. Najpierw przykład.\nPani Wróbel: Dzień dobry, mówi Agnieszka Wróbel z przychodni „Zdrowie” na Grunwaldzkiej. Dzwonię, żeby przypomnieć, że jutro o dziewiątej piętnaście ma pan wizytę u doktora Malinowskiego. Proszę zabrać ze sobą wyniki badań krwi, które robił pan w zeszłym tygodniu, i dowód osobisty. Gdyby nie mógł pan przyjść, proszę nas poinformować najpóźniej dziś do osiemnastej, bo na ten termin czekają inni pacjenci. Dziękuję i do widzenia.\n\nLektor: Numer jeden.\nKurier: Dzień dobry, tu Marek z firmy kurierskiej SpeedPol. Byłem dziś u pana dwa razy, przed dziesiątą i po trzynastej, ale nikt nie otwierał. Dzwoniłem też na numer z zamówienia, niestety bez odpowiedzi. Nie mogłem zostawić paczki u sąsiadów, bo przesyłka jest za pobraniem. Zostawiłem ją w punkcie odbioru w kiosku przy ulicy Słowackiego dwanaście. Będzie tam czekać do piątku do osiemnastej. Proszę pamiętać o dokumencie i o gotówce, bo w kiosku nie można płacić kartą. Pozdrawiam.\n\nLektor: Numer dwa.\nPan Lis: Dzień dobry, pani Kowalczyk, mówi Tomasz Lis, administrator budynku przy Leśnej cztery. W przyszłym tygodniu firma będzie wymieniać wodomierze we wszystkich mieszkaniach. W pani klatce prace zaplanowaliśmy na środę, między ósmą a dwunastą. Wiem, że wtedy pani pracuje, dlatego dzwonię wcześniej. Jeśli ten termin pani nie odpowiada, możemy przyjść w czwartek po szesnastej. Proszę o informację do poniedziałku, który termin pani wybiera. W czasie wymiany nie będzie wody, ale tylko przez około godzinę. Dziękuję.\n\nLektor: Numer trzy.\nMonika: Cześć Paweł, tu Monika. Słuchaj, jest zmiana co do jutrzejszego spotkania z klientem z Gdańska. Pan Zieliński przyjeżdża pociągiem, a nie samochodem, więc nie spotkamy się w naszym biurze, tylko w kawiarni na dworcu, żeby nie tracił czasu. Godzina zostaje ta sama, jedenasta. Prezentację mam ja, ale weź, proszę, wydrukowaną umowę w dwóch egzemplarzach, bo on chce ją od razu podpisać. Gdybyś miał jakieś pytania, dzwoń wieczorem. Na razie!\n\nLektor: Numer cztery.\nPani Duda: Dzień dobry, mówi Ewelina Duda ze szkoły językowej Lingua. Dzwonię w sprawie kursu hiszpańskiego na poziomie A2, na który się pan zapisał. Niestety zgłosiły się tylko trzy osoby, a grupa rusza od sześciu, więc kurs we wrześniu się nie odbędzie. Możemy zwrócić panu całą opłatę albo zaproponować lekcje indywidualne – w tej samej cenie dostałby pan dziesięć zajęć zamiast dwudziestu. Następna grupa startuje dopiero w lutym. Proszę o telefon, jaką decyzję pan podejmie. Dziękuję.\n\nLektor: Koniec pierwszej części Rozumienia ze słuchu.",
+          "example": {
+            "stem": "Pani Wróbel dzwoni, aby",
+            "options": [
+              "przypomnieć o wizycie.",
+              "odwołać wizytę.",
+              "poprosić o zrobienie badań krwi."
+            ],
+            "answer": "a"
+          },
+          "items": [
+            {
+              "id": "sl1-1",
+              "stem": "Kurier dzwoni, aby",
+              "options": [
+                "umówić się na ponowne doręczenie paczki.",
+                "poprosić o podanie adresu sąsiadów.",
+                "poinformować, gdzie można odebrać paczkę."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "sl1-2",
+              "stem": "Pan Lis dzwoni, aby",
+              "options": [
+                "ustalić termin wymiany wodomierza.",
+                "poinformować o awarii wody w budynku.",
+                "zaprosić na zebranie mieszkańców."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "sl1-3",
+              "stem": "Paweł musi",
+              "options": [
+                "przygotować prezentację.",
+                "przynieść umowę na spotkanie.",
+                "odebrać klienta z dworca."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "sl1-4",
+              "stem": "Pani Duda informuje, że",
+              "options": [
+                "następna grupa zacznie zajęcia we wrześniu.",
+                "grupa jest już pełna.",
+                "kurs w planowanym terminie nie ruszy."
+              ],
+              "answer": "c"
+            }
+          ]
+        },
+        {
+          "id": "sl2",
+          "title": "Część 2 · dialogi",
+          "layout": "mc-passages",
+          "points_per_item": 1,
+          "start_n": 5,
+          "tf_labels": [
+            "prawda",
+            "fałsz"
+          ],
+          "instruction": "Usłyszysz pięć dialogów. Do każdego dialogu są dwa zadania: najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe, potem wybierz a, b lub c. Każdy dialog usłyszysz jeden raz.",
+          "audio": {
+            "src": "/audio/pl-telc-probny-01/telc-sluchanie-2.mp3",
+            "max_plays": 1
+          },
+          "transcript": "Lektor: Rozumienie ze słuchu, część druga. Za chwilę usłyszysz pięć dialogów. Na temat każdego dialogu napisano po dwa zdania. Najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe. Następnie zdecyduj, które zdanie jest najbardziej trafne: a, b czy c. Każdy dialog usłyszysz jeden raz.\n\nLektor: Numer pięć i sześć.\nOla: Dzień dobry, dzwonię w sprawie ogłoszenia o mieszkaniu na Ochocie. Czy jest jeszcze aktualne?\nWłaściciel: Dzień dobry. Tak, aktualne. Dwa pokoje, czterdzieści osiem metrów, trzecie piętro.\nOla: A jest winda?\nWłaściciel: Niestety nie, to stara kamienica. Ale mieszkanie jest po remoncie, kuchnia zupełnie nowa.\nOla: Rozumiem. W ogłoszeniu było trzy tysiące dwieście złotych. Czy to razem z opłatami?\nWłaściciel: Nie, do tego dochodzą opłaty dla wspólnoty, około pięciuset złotych, i prąd według licznika. Kaucja to jeden czynsz.\nOla: Dobrze. Mam jeszcze jedno pytanie: mam kota. Czy to jest problem?\nWłaściciel: Hmm… Psa bym nie przyjął, ale kot… Jeśli jest spokojny, to możemy się dogadać. Wtedy kaucja byłaby trochę wyższa – półtora czynszu.\nOla: To dla mnie w porządku. Kiedy mogłabym obejrzeć mieszkanie?\nWłaściciel: Jutro po osiemnastej albo w sobotę rano.\nOla: Wolę sobotę. Może o dziesiątej?\nWłaściciel: Pasuje. Do zobaczenia w sobotę.\n\nLektor: Numer siedem i osiem.\nKasia: Michał, masz chwilę?\nMichał: Jasne, co się stało?\nKasia: Od poniedziałku idę na urlop, na dwa tygodnie. Szefowa powiedziała, że przejmiesz moich klientów.\nMichał: Wszystkich? Mam teraz sporo pracy z raportem kwartalnym.\nKasia: Nie, spokojnie, tylko trzech najważniejszych. Resztą zajmie się Agata. Przygotowałam ci listę spraw i kontakty.\nMichał: Dobra. A coś pilnego?\nKasia: Tak, firma Budmax czeka na ofertę. Musi ją dostać najpóźniej w środę. Wszystko jest prawie gotowe, trzeba tylko sprawdzić ceny i wysłać.\nMichał: Okej. A jeśli będą jakieś problemy? Będziesz pod telefonem?\nKasia: Wolałabym nie… Jadę w góry i tam często nie ma zasięgu. Ale maile będę sprawdzać wieczorem, raz dziennie.\nMichał: W porządku. Udanego urlopu!\n\nLektor: Numer dziewięć i dziesięć.\nKlient: Dzień dobry, chciałbym zapytać o karnet.\nRecepcjonistka: Dzień dobry. Mamy karnet miesięczny za sto dwadzieścia złotych i roczny – wtedy wychodzi dziewięćdziesiąt złotych miesięcznie, ale podpisuje pan umowę na dwanaście miesięcy.\nKlient: A jak często mogę przychodzić?\nRecepcjonistka: Bez ograniczeń, codziennie od szóstej do dwudziestej trzeciej. W karnecie są też zajęcia grupowe, tylko na jogę i pilates trzeba się zapisywać przez aplikację.\nKlient: A trening z trenerem?\nRecepcjonistka: Pierwszy trening jest gratis – trener pokaże panu sprzęt i przygotuje plan. Kolejne są dodatkowo płatne, sto złotych za godzinę.\nKlient: Rozumiem. Myślę, że na początek wezmę miesięczny. Nie wiem jeszcze, czy w ogóle będę miał czas.\nRecepcjonistka: Dobrze. Poproszę dowód osobisty. Zrobię panu zdjęcie do karty klubowej.\n\nLektor: Numer jedenaście i dwanaście.\nKlientka: Dzień dobry, chciałabym złożyć reklamację. Kupiłam te słuchawki miesiąc temu i lewa słuchawka przestała działać.\nSprzedawca: Dzień dobry. Ma pani paragon?\nKlientka: Mam, ale tylko zdjęcie w telefonie. Oryginał chyba wyrzuciłam.\nSprzedawca: Zdjęcie wystarczy, jeśli wszystko jest dobrze widoczne… Tak, w porządku. Słuchawki muszę wysłać do serwisu. Naprawa albo wymiana trwa zwykle do czternastu dni.\nKlientka: Dwa tygodnie? A nie można ich od razu wymienić na nowe? Używam ich codziennie w pracy.\nSprzedawca: Niestety, od razu wymieniamy tylko w ciągu siedmiu dni od zakupu. Mogę za to pożyczyć pani na ten czas słuchawki zastępcze, trochę prostszy model.\nKlientka: No dobrze, to lepsze niż nic.\nSprzedawca: To proszę jeszcze o numer telefonu – wyślemy SMS, kiedy słuchawki wrócą z serwisu.\n\nLektor: Numer trzynaście i czternaście.\nBartek: Aniu, to co, jedziemy w sobotę do Zakopanego?\nAnia: Właśnie sprawdzałam pogodę. W sobotę ma padać przez cały dzień, a w górach nawet śnieg.\nBartek: Serio? A w niedzielę?\nAnia: Niedziela ma być ładna, słonecznie. Może pojedziemy w sobotę po południu, przenocujemy, a w niedzielę rano wyjdziemy na szlak?\nBartek: Dobry pomysł, ale nocleg w ostatniej chwili będzie drogi.\nAnia: Moja ciocia ma pensjonat w Kościelisku. Zadzwonię do niej, na pewno coś znajdzie.\nBartek: Super. To ja wezmę samochód i kupię coś do jedzenia na drogę.\nAnia: Tylko pamiętaj o ciepłych kurtkach. Rano w górach będzie zimno.\n\nLektor: Koniec drugiej części Rozumienia ze słuchu.",
+          "items": [
+            {
+              "id": "sl2-1",
+              "kind": "tf",
+              "stem": "Mieszkanie znajduje się w budynku z windą.",
+              "answer": "fałsz",
+              "passage": "Rozmowa 1 · zadania 5–6"
+            },
+            {
+              "id": "sl2-2",
+              "stem": "Właściciel",
+              "options": [
+                "chce wyższą kaucję od osoby z kotem.",
+                "nie zgadza się na zwierzęta.",
+                "proponuje oglądanie mieszkania jutro rano."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "sl2-3",
+              "kind": "tf",
+              "stem": "Kasia wyjeżdża na urlop na dwa tygodnie.",
+              "answer": "prawda",
+              "passage": "Rozmowa 2 · zadania 7–8"
+            },
+            {
+              "id": "sl2-4",
+              "stem": "Kasia",
+              "options": [
+                "prosi, żeby Michał do niej dzwonił.",
+                "przygotowała już całą ofertę dla firmy Budmax.",
+                "będzie sprawdzać pocztę podczas urlopu."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "sl2-5",
+              "kind": "tf",
+              "stem": "Klient decyduje się na karnet roczny.",
+              "answer": "fałsz",
+              "passage": "Rozmowa 3 · zadania 9–10"
+            },
+            {
+              "id": "sl2-6",
+              "stem": "Recepcjonistka mówi, że",
+              "options": [
+                "zajęcia jogi są dodatkowo płatne.",
+                "pierwszy trening z trenerem jest darmowy.",
+                "siłownia jest czynna całą dobę."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "sl2-7",
+              "kind": "tf",
+              "stem": "Klientka ma zdjęcie paragonu.",
+              "answer": "prawda",
+              "passage": "Rozmowa 4 · zadania 11–12"
+            },
+            {
+              "id": "sl2-8",
+              "stem": "Sprzedawca",
+              "options": [
+                "proponuje klientce słuchawki na czas naprawy.",
+                "od razu wymienia słuchawki na nowe.",
+                "zwraca klientce pieniądze."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "sl2-9",
+              "kind": "tf",
+              "stem": "Ania i Bartek pojadą w góry w sobotę po południu.",
+              "answer": "prawda",
+              "passage": "Rozmowa 5 · zadania 13–14"
+            },
+            {
+              "id": "sl2-10",
+              "stem": "Ania",
+              "options": [
+                "zarezerwowała już nocleg w pensjonacie.",
+                "kupi jedzenie na drogę.",
+                "zadzwoni do cioci w sprawie noclegu."
+              ],
+              "answer": "c"
+            }
+          ]
+        },
+        {
+          "id": "sl3",
+          "title": "Część 3 · wywiad",
+          "layout": "mc-passages",
+          "points_per_item": 1,
+          "start_n": 15,
+          "instruction": "Usłyszysz wywiad radiowy. Wybierz właściwą odpowiedź: a, b lub c. Na początku nagrania masz minutę na przeczytanie zadań. Wywiad usłyszysz jeden raz.",
+          "audio": {
+            "src": "/audio/pl-telc-probny-01/telc-sluchanie-3.mp3",
+            "max_plays": 1,
+            "note": "Nagranie usłyszysz jeden raz. Pierwsza minuta to cisza na przeczytanie zadań."
+          },
+          "transcript": "Lektor: Rozumienie ze słuchu, część trzecia. Za chwilę usłyszysz wywiad. Najpierw przeczytaj treść punktów od piętnastego do dwudziestego. Masz na to minutę.\n\nLektor: Teraz posłuchaj wywiadu. Usłyszysz go jeden raz.\nPrezenter: Dzień dobry, witam w audycji „Ludzie z pasją”. Moim gościem jest dziś Joanna Mazur, która dziesięć lat pracowała w banku w Krakowie, a trzy lata temu otworzyła piekarnię w Myślenicach. Dzień dobry.\nJoanna: Dzień dobry, dziękuję za zaproszenie.\nPrezenter: Bank i piekarnia – to dość duża zmiana. Jak do tego doszło?\nJoanna: Wiele osób myśli, że po prostu miałam dość korporacji. To nie do końca prawda. Praca w banku była w porządku, dobrze zarabiałam, miałam fajny zespół. Ale w czasie pandemii zaczęłam piec chleb na zakwasie, jak pół Polski zresztą. I okazało się, że to jedyna rzecz, przy której naprawdę odpoczywam. Najpierw piekłam dla rodziny, potem dla sąsiadów, aż w końcu sąsiedzi zaczęli zamawiać chleb dla swoich znajomych. Wtedy pomyślałam, że może to jest coś więcej niż hobby.\nPrezenter: I od razu rzuciła pani pracę?\nJoanna: Nie, absolutnie. Przez rok robiłam jedno i drugie. W tygodniu bank, w weekendy pieczenie. Zrobiłam też kurs dla piekarzy i policzyłam dokładnie, ile muszę sprzedawać, żeby się utrzymać. Odeszłam z banku dopiero wtedy, kiedy miałam stałych klientów i oszczędności na pół roku.\nPrezenter: Co było najtrudniejsze na początku?\nJoanna: Chyba nie samo pieczenie, tylko formalności. Sanepid, lokal, przepisy… Znalezienie lokalu z odpowiednią wentylacją zajęło mi cztery miesiące. A druga rzecz to godziny pracy. Wstaję o trzeciej rano. Pierwszy rok był naprawdę ciężki, mój organizm długo się do tego przyzwyczajał.\nPrezenter: Pani piekarnia jest dziś bardzo popularna. Na czym polega jej sukces?\nJoanna: Myślę, że ludzie mają dość pieczywa, które po jednym dniu jest twarde jak kamień. My pieczemy powoli, ciasto rośnie nawet dwadzieścia cztery godziny, używamy tylko mąki z lokalnych młynów. Nasz chleb jest dobry nawet po trzech, czterech dniach. To kosztuje, oczywiście, jest droższy niż w supermarkecie. Ale klienci mówią, że wolą kupić jeden dobry bochenek niż trzy, które potem wyrzucają.\nPrezenter: Kim są pani klienci?\nJoanna: Na początku myślałam, że będą to głównie młodzi ludzie z Krakowa, którzy przeprowadzili się za miasto. A tymczasem najwięcej kupują u nas starsze osoby. Mówią, że nasz chleb smakuje jak ten z ich dzieciństwa. To dla mnie największy komplement.\nPrezenter: Czy zatrudnia pani pracowników?\nJoanna: Tak, dziś jest nas pięcioro. I tu mam ciekawą obserwację: najlepszego piekarza znalazłam nie przez ogłoszenie, tylko wśród klientów. Pan Henryk jest emerytowanym inżynierem, przychodził codziennie po chleb i zadawał mnóstwo pytań. W końcu zaproponowałam mu pracę.\nPrezenter: Planuje pani rozwój? Druga piekarnia, może w Krakowie?\nJoanna: Wiele osób mi to proponuje. Ale nie chcę rosnąć za szybko, bo boję się, że stracimy jakość. Raczej myślę o warsztatach – chcę uczyć ludzi, jak piec chleb w domu. Pierwsze zajęcia ruszają jesienią.\nPrezenter: A czy żałuje pani czasem decyzji o odejściu z banku?\nJoanna: Czasem, w styczniu, o trzeciej rano, kiedy za oknem jest minus piętnaście stopni. Ale tylko przez chwilę. Mam poczucie, że robię coś, co ma sens, i codziennie widzę efekty swojej pracy. W banku tego brakowało.\nPrezenter: Dziękuję bardzo za rozmowę.\nJoanna: Ja również dziękuję.\n\nLektor: Koniec trzeciej części Rozumienia ze słuchu.",
+          "items": [
+            {
+              "id": "sl3-1",
+              "stem": "Joanna zaczęła piec chleb, ponieważ",
+              "options": [
+                "była niezadowolona z pracy w banku.",
+                "pieczenie pomagało jej odpocząć.",
+                "chciała otworzyć własną firmę."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "sl3-2",
+              "stem": "Zanim odeszła z banku, Joanna",
+              "options": [
+                "przez rok łączyła pracę z pieczeniem.",
+                "zatrudniła pierwszego pracownika.",
+                "pracowała w innej piekarni."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "sl3-3",
+              "stem": "Najwięcej problemów sprawiło Joannie na początku",
+              "options": [
+                "przygotowanie dobrego chleba.",
+                "znalezienie pracowników.",
+                "załatwienie spraw urzędowych i lokalu."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "sl3-4",
+              "stem": "Według Joanny klienci kupują jej chleb, ponieważ",
+              "options": [
+                "dłużej zachowuje świeżość.",
+                "jest tańszy niż w supermarkecie.",
+                "jest pieczony z mąki z zagranicy."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "sl3-5",
+              "stem": "Najwięcej w piekarni kupują",
+              "options": [
+                "młodzi ludzie z Krakowa.",
+                "osoby starsze.",
+                "turyści."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "sl3-6",
+              "stem": "W przyszłości Joanna chce",
+              "options": [
+                "otworzyć piekarnię w Krakowie.",
+                "zatrudnić więcej piekarzy.",
+                "prowadzić warsztaty pieczenia."
+              ],
+              "answer": "c"
+            }
+          ]
+        },
+        {
+          "id": "sl4",
+          "title": "Część 4 · opinie",
+          "layout": "matching",
+          "points_per_item": 1,
+          "start_n": 21,
+          "instruction": "Usłyszysz audycję radiową „Czy czterodniowy tydzień pracy to dobry pomysł?”. Które zdanie (a–f) pasuje do opinii 21–23? Na początku nagrania masz pół minuty na przeczytanie zdań. Audycję usłyszysz jeden raz.",
+          "audio": {
+            "src": "/audio/pl-telc-probny-01/telc-sluchanie-4.mp3",
+            "max_plays": 1,
+            "note": "Nagranie usłyszysz jeden raz. Na początku jest pół minuty ciszy na przeczytanie zdań."
+          },
+          "transcript": "Lektor: Rozumienie ze słuchu, część czwarta. Usłyszysz audycję, w której ludzie wyrażają opinie na dany temat. Które zdanie, od a do f, najlepiej pasuje do opinii dwadzieścia jeden, dwadzieścia dwa i dwadzieścia trzy? Masz pół minuty na przeczytanie zdań.\n\nLektor: Teraz posłuchaj audycji.\nPrezenter: Witamy w kolejnym wydaniu programu „Między nami”. Dziś pytamy: czy czterodniowy tydzień pracy to dobry pomysł? W kilku krajach europejskich firmy już go testują. Czekamy na państwa telefony.\nLektor: Przykład.\nSłuchacz: Dla mnie to byłoby spełnienie marzeń. Mam dwójkę małych dzieci, a teraz widzę je właściwie tylko wieczorem, kiedy są już zmęczone. W weekend robimy zakupy, sprzątamy i nagle jest poniedziałek. Gdybym miał wolny piątek, mógłbym odbierać dzieci z przedszkola, chodzić z nimi na basen, po prostu z nimi być. Pieniądze są ważne, ale te lata nie wrócą.\n\nLektor: Numer dwadzieścia jeden.\nSłuchaczka: Słucham tej dyskusji i trochę się uśmiecham. Jestem pielęgniarką w szpitalu. U nas pacjenci nie chorują od poniedziałku do czwartku. Już teraz brakuje ludzi do pracy, mamy dyżury po dwanaście godzin. Kto by przyszedł w piątek, gdybyśmy wszyscy mieli wolne? W biurze może to działa, ale u nas po prostu się nie da. Najpierw trzeba by zatrudnić dwa razy więcej osób.\n\nLektor: Numer dwadzieścia dwa.\nSłuchaczka: Moja firma testowała taki system przez pół roku. Na początku byłam zachwycona – długi weekend co tydzień! Ale pracy nie ubyło. Zamiast ośmiu godzin pracowaliśmy po dziesięć, a klienci i tak dzwonili w piątki. Od poniedziałku do czwartku byłam tak zmęczona i zdenerwowana, że w piątek tylko odsypiałam. Dla mnie bilans wyszedł na minus i ucieszyłam się, kiedy wróciliśmy do starego systemu.\n\nLektor: Numer dwadzieścia trzy.\nSłuchacz: Prowadzę małą drukarnię, zatrudniam osiem osób. Od roku pracujemy cztery dni w tygodniu i powiem szczerze: na początku bardzo się bałem. Ale okazało się, że ludzie pracują szybciej, rzadziej chorują, a przede wszystkim nikt nie odszedł. Wcześniej co kilka miesięcy traciłem dobrego pracownika, bo konkurencja płaciła więcej. Teraz ludzie mówią, że nie zamieniliby dodatkowego wolnego dnia na wyższą pensję.\n\nPrezenter: Dziękujemy wszystkim, którzy się do nas dodzwonili. Jak widać, dla jednych czterodniowy tydzień to marzenie, a dla innych – pomysł nie do zrealizowania. Zapraszamy za tydzień!\n\nLektor: Koniec Rozumienia ze słuchu. Dziękujemy za uwagę.",
+          "left_label": "Opinie",
+          "right_label": "Zdania a–f",
+          "right": [
+            {
+              "key": "a",
+              "text": "Krótszy tydzień pracy oznacza więcej stresu w pozostałe dni."
+            },
+            {
+              "key": "b",
+              "text": "Dodatkowy wolny dzień pozwoliłby mi spędzać więcej czasu z rodziną."
+            },
+            {
+              "key": "c",
+              "text": "W moim zawodzie taki system jest niemożliwy do wprowadzenia."
+            },
+            {
+              "key": "d",
+              "text": "Wolę pracować pięć dni, ale krócej każdego dnia."
+            },
+            {
+              "key": "e",
+              "text": "Czterodniowy tydzień to dobry sposób, żeby zatrzymać pracowników w firmie."
+            },
+            {
+              "key": "f",
+              "text": "Taki system powinien obowiązywać tylko w dużych firmach."
+            }
+          ],
+          "example": {
+            "text": "opinia słuchacza (ojciec dwójki dzieci)",
+            "answer": "b"
+          },
+          "items": [
+            {
+              "id": "sl4-1",
+              "text": "Opinia 21",
+              "answer": "c"
+            },
+            {
+              "id": "sl4-2",
+              "text": "Opinia 22",
+              "answer": "a"
+            },
+            {
+              "id": "sl4-3",
+              "text": "Opinia 23",
+              "answer": "e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cz",
+      "tab": "Czytanie",
+      "title": "Rozumienie tekstu czytanego",
+      "minutes": 40,
+      "tasks": [
+        {
+          "id": "cz1",
+          "title": "Część 1 · wiadomości",
+          "layout": "matching",
+          "points_per_item": 1,
+          "start_n": 24,
+          "instruction": "Przeczytaj teksty 24–27 i dopasuj do każdego temat (a–f). Dwa tematy są niepotrzebne.",
+          "left_label": "Teksty 24–27",
+          "right_label": "Tematy a–f",
+          "right": [
+            {
+              "key": "a",
+              "text": "Prośba o zastępstwo"
+            },
+            {
+              "key": "b",
+              "text": "Zaproszenie na jubileusz firmy"
+            },
+            {
+              "key": "c",
+              "text": "Zmiana godzin otwarcia"
+            },
+            {
+              "key": "d",
+              "text": "Planowane wyłączenie wody"
+            },
+            {
+              "key": "e",
+              "text": "Podziękowanie za pomoc"
+            },
+            {
+              "key": "f",
+              "text": "Nowa usługa dla klientów"
+            }
+          ],
+          "items": [
+            {
+              "id": "cz1-1",
+              "answer": "d",
+              "text": "Szanowni Mieszkańcy,\ninformujemy, że w czwartek 14 listopada w godzinach 9:00–15:00 w budynku przy ul. Lipowej 7 będą prowadzone prace przy wymianie rur w piwnicy. W tym czasie z kranów nie popłynie ani zimna, ani ciepła woda. Prosimy, aby wcześniej zrobić niewielki zapas i nie włączać pralek ani zmywarek. Za utrudnienia przepraszamy.\nAdministracja Osiedla „Lipowe”"
+            },
+            {
+              "id": "cz1-2",
+              "answer": "a",
+              "text": "Cześć Marta,\nmam do Ciebie ogromną prośbę. W przyszłą sobotę mój brat bierze ślub, a ja mam wtedy dyżur w sklepie od 8 do 16. Kierowniczka zgodzi się na zmianę grafiku, jeśli ktoś przyjdzie za mnie. Mogłabyś? W zamian wezmę Twoją niedzielę 24 listopada. Daj znać do środy, proszę!\nOla"
+            },
+            {
+              "id": "cz1-3",
+              "answer": "e",
+              "text": "Cześć Kuba,\njeszcze raz wielkie dzięki za niedzielę! Bez Ciebie i Twojego busa przeprowadzka trwałaby cały tydzień, a tak w jeden dzień wszystko było na miejscu. Szafa stoi, regały wiszą, a kot już znalazł swoje miejsce na parapecie. Jak tylko się rozpakuję, robię parapetówkę – jesteś pierwszy na liście gości!\nPiotrek"
+            },
+            {
+              "id": "cz1-4",
+              "answer": "b",
+              "text": "Szanowni Państwo,\nw tym roku firma Transmet obchodzi dziesięciolecie. Z tej okazji serdecznie zapraszamy wszystkich pracowników wraz z osobami towarzyszącymi na uroczystą kolację, która odbędzie się 6 grudnia o godz. 19:00 w restauracji „Pod Lipami”. Prosimy o potwierdzenie obecności w dziale kadr do 25 listopada.\nZarząd firmy Transmet"
+            }
+          ]
+        },
+        {
+          "id": "cz2",
+          "title": "Część 2 · ogłoszenia",
+          "layout": "matching",
+          "points_per_item": 1,
+          "start_n": 28,
+          "reuse_keys": true,
+          "passage_title": "Forum „Nowi w mieście” — ogłoszenia lokalne",
+          "instruction": "Przeczytaj sytuacje 28–32 i ogłoszenia a–h. Które ogłoszenie pasuje do której sytuacji? Każde ogłoszenie możesz wybrać tylko raz. Jeśli żadne ogłoszenie nie pasuje, wybierz x.",
+          "left_label": "Sytuacje 28–32",
+          "right_label": "Ogłoszenia a–h",
+          "right": [
+            {
+              "key": "a",
+              "text": "Biblioteka Miejska, filia nr 3 — ciche sale do pracy, darmowe Wi-Fi i gniazdka przy każdym stoliku. Na I piętrze coworking: 25 zł za dzień, kawa w cenie."
+            },
+            {
+              "key": "b",
+              "text": "Bank Przyjazny — kredyt hipoteczny także dla obcokrajowców z kartą pobytu. Nasz doradca mówi po angielsku i po ukraińsku."
+            },
+            {
+              "key": "c",
+              "text": "Klub „Nowi w mieście”: w każdy czwartek wieczór gier planszowych, w weekendy wycieczki rowerowe po okolicy. Wstęp wolny, każdy jest mile widziany."
+            },
+            {
+              "key": "d",
+              "text": "Kurs języka polskiego dla dorosłych, poziomy A1–B1. Zajęcia wieczorami dwa razy w tygodniu, na koniec certyfikat szkoły."
+            },
+            {
+              "key": "e",
+              "text": "Bezpłatne porady prawne dla najemców: sprawdzimy Twoją umowę najmu i pomożemy odzyskać kaucję. Dyżur we wtorki 16:00–19:00, Dom Kultury „Zorza”."
+            },
+            {
+              "key": "f",
+              "text": "Żłobek „Misiaczek” przyjmuje dzieci w wieku od 1 do 3 lat przez cały rok. Wolne miejsca od stycznia."
+            },
+            {
+              "key": "g",
+              "text": "Skup aut — każda marka, każdy stan. Płacimy gotówką od ręki i sami załatwiamy formalności. Przyjedziemy do Ciebie."
+            },
+            {
+              "key": "h",
+              "text": "Hotel dla zwierząt „Łapka” — opieka nad psami i kotami podczas Twojego urlopu, spacery trzy razy dziennie."
+            },
+            {
+              "key": "x",
+              "text": "Żadne ogłoszenie nie pasuje."
+            }
+          ],
+          "example": {
+            "text": "Chcesz, żeby ktoś zajął się Twoim psem, kiedy wyjedziesz na wakacje.",
+            "answer": "h"
+          },
+          "items": [
+            {
+              "id": "cz2-1",
+              "text": "Niedawno się przeprowadziłeś/przeprowadziłaś i chcesz w wolnym czasie poznać nowych ludzi.",
+              "answer": "c"
+            },
+            {
+              "id": "cz2-2",
+              "text": "Właściciel mieszkania nie chce oddać Ci kaucji, a Ty nie wiesz, czy pozwala mu na to umowa.",
+              "answer": "e"
+            },
+            {
+              "id": "cz2-3",
+              "text": "Szukasz miejsca w przedszkolu dla pięcioletniej córki od lutego.",
+              "answer": "x"
+            },
+            {
+              "id": "cz2-4",
+              "text": "Pracujesz zdalnie, ale w Twoim bloku trwa remont i w domu jest za głośno.",
+              "answer": "a"
+            },
+            {
+              "id": "cz2-5",
+              "text": "Od kiedy jeździsz komunikacją miejską, Twój stary samochód tylko stoi na parkingu. Chcesz się go pozbyć.",
+              "answer": "g"
+            }
+          ]
+        },
+        {
+          "id": "cz3",
+          "title": "Część 3 · artykuły",
+          "layout": "mc-passages",
+          "points_per_item": 1,
+          "start_n": 33,
+          "instruction": "Przeczytaj trzy teksty. Do każdego tekstu są dwa zadania. Wybierz właściwą odpowiedź: a, b lub c.",
+          "items": [
+            {
+              "id": "cz3-1",
+              "stem": "W bibliotece rzeczy",
+              "options": [
+                "można kupić używane narzędzia.",
+                "można wypożyczyć przedmioty na kilka dni.",
+                "trzeba zapłacić za każde wypożyczenie."
+              ],
+              "answer": "b",
+              "passage": "Biblioteka rzeczy na osiedlu Zielone Wzgórze\n\nNa osiedlu Zielone Wzgórze działa od września pierwsza w mieście biblioteka rzeczy. Zamiast książek można tu wypożyczyć wiertarkę, namiot, maszynę do szycia czy rzutnik. Wszystkie przedmioty podarowali mieszkańcy, którzy mieli w domu rzeczy używane raz w roku. Wypożyczenie jest bezpłatne, ale trzeba się zarejestrować i pokazać dowód osobisty. Rzeczy można zatrzymać najwyżej na tydzień. „Chcemy, żeby ludzie kupowali mniej i więcej się dzielili” – mówi pomysłodawczyni, Anna Lis. Na razie z biblioteki korzysta ponad dwieście rodzin."
+            },
+            {
+              "id": "cz3-2",
+              "stem": "Przedmioty w bibliotece",
+              "options": [
+                "pochodzą od mieszkańców osiedla.",
+                "kupiło miasto.",
+                "są zupełnie nowe."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "cz3-3",
+              "stem": "Kurs pierwszej pomocy prowadzili",
+              "options": [
+                "lekarze ze szpitala.",
+                "ratownicy medyczni.",
+                "pracownicy firmy EkoTrans."
+              ],
+              "answer": "b",
+              "passage": "Pierwsza pomoc w centrum logistycznym\n\nW ubiegły piątek pracownicy centrum logistycznego firmy EkoTrans w Strykowie wzięli udział w kursie pierwszej pomocy. Zajęcia poprowadzili ratownicy medyczni z łódzkiego pogotowia. Uczestnicy ćwiczyli na fantomach resuscytację i uczyli się obsługi defibrylatora, który od miesiąca wisi przy głównym wejściu. Kurs był dobrowolny, a mimo to zapisało się na niego prawie sto osób – dwa razy więcej, niż planowano. Dlatego firma zorganizuje w styczniu dodatkowy termin."
+            },
+            {
+              "id": "cz3-4",
+              "stem": "Firma zorganizuje drugi kurs, ponieważ",
+              "options": [
+                "pierwszy kurs był za krótki.",
+                "kurs był obowiązkowy dla wszystkich.",
+                "zgłosiło się dużo chętnych."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "cz3-5",
+              "stem": "Nauka w szkole „Kariera”",
+              "options": [
+                "jest bezpłatna.",
+                "kosztuje mniej w trybie zaocznym.",
+                "jest płatna dla obcokrajowców."
+              ],
+              "answer": "a",
+              "passage": "Dzień otwarty w Szkole Policealnej „Kariera”\n\nSzkoła Policealna „Kariera” zaprasza w sobotę 23 listopada w godzinach 10:00–14:00 na dzień otwarty. Przyszli słuchacze poznają kierunki: technik masażysta, opiekun medyczny, technik administracji i florysta. Nauka w naszej szkole jest bezpłatna – również w trybie zaocznym, w weekendy. W programie dnia otwartego: zajęcia pokazowe w pracowniach oraz rozmowy z nauczycielami i absolwentami. Nie trzeba się wcześniej zapisywać. Obcokrajowcy mogą złożyć dokumenty z tłumaczeniem przysięgłym świadectwa."
+            },
+            {
+              "id": "cz3-6",
+              "stem": "Podczas dnia otwartego można",
+              "options": [
+                "zapisać się na egzamin końcowy.",
+                "wziąć udział w zajęciach pokazowych.",
+                "napisać test kwalifikacyjny."
+              ],
+              "answer": "b"
+            }
+          ]
+        },
+        {
+          "id": "cz4",
+          "title": "Część 4 · regulamin",
+          "layout": "true-false",
+          "points_per_item": 1,
+          "start_n": 39,
+          "tf_labels": [
+            "prawda",
+            "fałsz"
+          ],
+          "instruction": "Przeczytaj regulamin i zdecyduj, czy zdania 39–41 są prawdziwe, czy fałszywe.",
+          "passage_title": "Regulamin parkingu osiedla „Słoneczne”",
+          "passage": "§1. Parking jest przeznaczony dla mieszkańców osiedla „Słoneczne”, którzy mają ważny identyfikator parkingowy.\n\n§2. Goście mieszkańców mogą parkować na miejscach oznaczonych literą G, maksymalnie przez 24 godziny. Kartę gościa wydaje administracja.\n\n§3. Na miejscach dla osób z niepełnosprawnościami mogą parkować wyłącznie pojazdy z ważną kartą parkingową.\n\n§4. Zabrania się wynajmowania miejsc parkingowych osobom, które nie mieszkają na osiedlu.\n\n§5. Mycie i naprawianie samochodów na terenie parkingu jest zabronione, z wyjątkiem wymiany żarówek i wycieraczek.\n\n§6. Pojazdy pozostawione niezgodnie z regulaminem będą odholowane na koszt właściciela.",
+          "example": {
+            "text": "Na parkingu można samemu wymienić żarówkę w samochodzie.",
+            "answer": "prawda"
+          },
+          "items": [
+            {
+              "id": "cz4-1",
+              "text": "Goście mieszkańców mogą zostawić samochód na parkingu na cały weekend.",
+              "answer": "fałsz"
+            },
+            {
+              "id": "cz4-2",
+              "text": "Na miejscu dla osób z niepełnosprawnościami może stanąć tylko samochód z odpowiednią kartą.",
+              "answer": "prawda"
+            },
+            {
+              "id": "cz4-3",
+              "text": "Mieszkaniec może wynająć swoje miejsce parkingowe znajomemu z innej dzielnicy.",
+              "answer": "fałsz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "el",
+      "tab": "Elementy",
+      "title": "Elementy językowe",
+      "minutes": 20,
+      "tasks": [
+        {
+          "id": "el1",
+          "title": "Część 1 · rozmowa telefoniczna",
+          "layout": "cloze",
+          "points_per_item": 1,
+          "instruction": "Uzupełnij rozmowę (42–49) zwrotami a–j. Dwa zwroty są niepotrzebne.",
+          "passage_title": "Telefon do warsztatu samochodowego",
+          "bank": [
+            {
+              "key": "a",
+              "text": "czy mogłaby pani"
+            },
+            {
+              "key": "b",
+              "text": "jak najszybciej"
+            },
+            {
+              "key": "c",
+              "text": "nie ma sprawy"
+            },
+            {
+              "key": "d",
+              "text": "chwileczkę"
+            },
+            {
+              "key": "e",
+              "text": "w takim razie"
+            },
+            {
+              "key": "f",
+              "text": "co się dzieje"
+            },
+            {
+              "key": "g",
+              "text": "niestety"
+            },
+            {
+              "key": "h",
+              "text": "do usłyszenia"
+            },
+            {
+              "key": "i",
+              "text": "zależy od"
+            },
+            {
+              "key": "j",
+              "text": "mam problem"
+            }
+          ],
+          "text": "Recepcjonistka: Auto-Serwis „Kowalski”, dzień dobry, w czym mogę pomóc?\nKlient: Dzień dobry, {{42}} z samochodem. Od wczoraj coś dziwnie hałasuje, kiedy hamuję.\nRecepcjonistka: Rozumiem. Kiedy chciałby pan przyjechać?\nKlient: {{43}}. Codziennie dojeżdżam autem do pracy.\nRecepcjonistka: {{44}}, sprawdzę w systemie… Mamy wolny termin jutro o ósmej.\nKlient: Jutro rano pracuję. A w czwartek?\nRecepcjonistka: W czwartek mechanik ma czas dopiero po piętnastej.\nKlient: {{45}} poproszę czwartek, piętnasta trzydzieści. Ile mniej więcej będzie kosztować naprawa?\nRecepcjonistka: To {{46}} tego, co znajdzie mechanik. Sama diagnoza kosztuje sto złotych.\nKlient: Dobrze. {{47}} wysłać mi SMS z potwierdzeniem terminu?\nRecepcjonistka: {{48}}. Proszę podać numer telefonu.\nKlient: Sześćset jeden, dwieście trzydzieści cztery, pięćset sześćdziesiąt siedem. Dziękuję bardzo.\nRecepcjonistka: To ja dziękuję. {{49}}!",
+          "gaps": [
+            {
+              "id": "el1-1",
+              "n": 42,
+              "kind": "bank",
+              "answer": "j"
+            },
+            {
+              "id": "el1-2",
+              "n": 43,
+              "kind": "bank",
+              "answer": "b"
+            },
+            {
+              "id": "el1-3",
+              "n": 44,
+              "kind": "bank",
+              "answer": "d"
+            },
+            {
+              "id": "el1-4",
+              "n": 45,
+              "kind": "bank",
+              "answer": "e"
+            },
+            {
+              "id": "el1-5",
+              "n": 46,
+              "kind": "bank",
+              "answer": "i"
+            },
+            {
+              "id": "el1-6",
+              "n": 47,
+              "kind": "bank",
+              "answer": "a"
+            },
+            {
+              "id": "el1-7",
+              "n": 48,
+              "kind": "bank",
+              "answer": "c"
+            },
+            {
+              "id": "el1-8",
+              "n": 49,
+              "kind": "bank",
+              "answer": "h"
+            }
+          ]
+        },
+        {
+          "id": "el2",
+          "title": "Część 2 · e-mail z reklamacją",
+          "layout": "cloze",
+          "points_per_item": 1,
+          "instruction": "Przeczytaj e-mail i wybierz właściwe słowo lub wyrażenie do każdej luki (50–59).",
+          "passage_title": "Reklamacja usługi internetowej",
+          "text": "Szanowni Państwo,\n\n{{50}} problemów z internetem w moim mieszkaniu przy ul. Kwiatowej 12/5. Jestem Państwa klientem od trzech lat i do tej pory byłem bardzo {{51}}. Niestety od dwóch tygodni internet co chwilę się wyłącza, czasem nawet na kilka godzin.\n\nPracuję z domu, dlatego stabilny internet jest dla mnie {{52}}. Zgłaszałem problem dwa razy przez infolinię. Za każdym razem {{53}}, że technik skontaktuje się ze mną w ciągu 48 godzin, ale nikt do mnie {{54}}. {{55}} musiałem kilka razy pracować w kawiarni.\n\nProszę o jak najszybsze {{56}} i sprawdzenie instalacji. Oczekuję również obniżenia {{57}} za ten miesiąc, ponieważ nie mogłem normalnie korzystać z usługi, {{58}} płacę co miesiąc.\n\n{{59}}\n\nZ poważaniem\nTomasz Wrona",
+          "gaps": [
+            {
+              "id": "el2-1",
+              "n": 50,
+              "kind": "options",
+              "options": [
+                "Piszę o sprawie",
+                "Piszę w sprawie",
+                "Piszę na sprawę"
+              ],
+              "answer": "Piszę w sprawie"
+            },
+            {
+              "id": "el2-2",
+              "n": 51,
+              "kind": "options",
+              "options": [
+                "zadowolony z usług",
+                "zadowolony usługami",
+                "zadowolony na usługi"
+              ],
+              "answer": "zadowolony z usług"
+            },
+            {
+              "id": "el2-3",
+              "n": 52,
+              "kind": "options",
+              "options": [
+                "zbędny",
+                "niezbędnie",
+                "niezbędny"
+              ],
+              "answer": "niezbędny"
+            },
+            {
+              "id": "el2-4",
+              "n": 53,
+              "kind": "options",
+              "options": [
+                "usłyszałbym",
+                "słuchałem",
+                "słyszałem"
+              ],
+              "answer": "słyszałem"
+            },
+            {
+              "id": "el2-5",
+              "n": 54,
+              "kind": "options",
+              "options": [
+                "nie zadzwonił",
+                "zadzwonił",
+                "nie zadzwonić"
+              ],
+              "answer": "nie zadzwonił"
+            },
+            {
+              "id": "el2-6",
+              "n": 55,
+              "kind": "options",
+              "options": [
+                "Dlatego że",
+                "Z tego powodu",
+                "Mimo to"
+              ],
+              "answer": "Z tego powodu"
+            },
+            {
+              "id": "el2-7",
+              "n": 56,
+              "kind": "options",
+              "options": [
+                "przysłanie technika",
+                "przysłanie technikowi",
+                "przysłać technika"
+              ],
+              "answer": "przysłanie technika"
+            },
+            {
+              "id": "el2-8",
+              "n": 57,
+              "kind": "options",
+              "options": [
+                "rachunek",
+                "rachunkiem",
+                "rachunku"
+              ],
+              "answer": "rachunku"
+            },
+            {
+              "id": "el2-9",
+              "n": 58,
+              "kind": "options",
+              "options": [
+                "za który",
+                "za którą",
+                "na którą"
+              ],
+              "answer": "za którą"
+            },
+            {
+              "id": "el2-10",
+              "n": 59,
+              "kind": "options",
+              "options": [
+                "Liczę na szybką odpowiedź.",
+                "Liczę szybką odpowiedź.",
+                "Liczę o szybką odpowiedź."
+              ],
+              "answer": "Liczę na szybką odpowiedź."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pi",
+      "tab": "Pisanie",
+      "title": "Wypowiedź pisemna",
+      "minutes": 30,
+      "manual": true,
+      "manual_points": 45,
+      "tasks": [
+        {
+          "id": "pi1",
+          "title": "Wypowiedź pisemna · e-mail półformalny",
+          "layout": "writing",
+          "points_per_item": 0,
+          "instruction": "Wybierz jeden temat (A lub B) i napisz e-mail. Odnieś się do wszystkich trzech punktów. Czas: 30 minut.",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Temat A · szkolenie w pracy",
+              "intro": "E-mail do pani Ewy Nowak z działu personalnego",
+              "parts": [
+                {
+                  "id": "A",
+                  "label": "E-mail do pani Nowak",
+                  "prompt": "W zeszłym tygodniu Twoja firma zorganizowała szkolenie dla pracowników. Szefowa działu personalnego, pani Ewa Nowak, prosi wszystkich o opinię.\nNapisz e-mail do pani Nowak. Odnieś się do trzech punktów:\n- co to było za szkolenie i jak było zorganizowane,\n- co było dla Ciebie przydatne, a co nie,\n- jaki temat zaproponujesz na następne szkolenie i dlaczego.\nZacznij i zakończ e-mail w odpowiedni sposób. Napisz ok. 150 słów."
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "label": "Temat B · porządek w bloku",
+              "intro": "E-mail do administratora, pana Andrzeja Kowalskiego",
+              "parts": [
+                {
+                  "id": "B",
+                  "label": "E-mail do administratora",
+                  "prompt": "Od kilku tygodni na klatce schodowej i przy śmietnikach w Twoim bloku jest bardzo brudno.\nNapisz e-mail do administratora budynku, pana Andrzeja Kowalskiego. Odnieś się do trzech punktów:\n- opisz, co się dzieje,\n- napisz, dlaczego to przeszkadza Tobie i sąsiadom,\n- zaproponuj rozwiązanie i poproś o odpowiedź.\nZacznij i zakończ e-mail w odpowiedni sposób. Napisz ok. 150 słów."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

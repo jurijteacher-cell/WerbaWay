@@ -2,7 +2,8 @@ import { readFileSync, existsSync } from 'fs';
 import path from 'path';
 
 /**
- * Mock exam (egzamin próbny B1): reading + grammar modules of a state-exam set.
+ * Mock exam: a full or partial exam set (state B1 or telc B1·B2) — listening with limited plays,
+ * reading, grammar / language elements, and writing that the teacher marks by hand.
  * Content: src/content/queue-published/{lessonId}-mock.json
  * Answers never leave the server before the student submits (toPublicMockExam strips them).
  */
@@ -33,13 +34,21 @@ export type MockItem = {
   answer?: string;
   accept?: string[];
   model?: string;
+  /** item rendered as a two-button true/false row inside an mc-passages task */
+  kind?: 'tf';
+  /** large picture (emoji) instead of text on the left of a matching task */
+  emoji?: string;
 };
+
+export type WritingPart = { id: string; label: string; prompt: string; words?: number };
+export type WritingChoice = { id: string; label: string; intro?: string; parts: WritingPart[] };
+export type TaskAudio = { src: string; max_plays: number; note?: string };
 
 export type MockTask = {
   id: string;
   title: string;
   topic?: string;
-  layout: 'mc-passages' | 'true-false' | 'cloze' | 'matching' | 'questions' | 'transform';
+  layout: 'mc-passages' | 'true-false' | 'cloze' | 'matching' | 'questions' | 'transform' | 'writing';
   instruction?: string;
   points_per_item: number;
   passage_title?: string;
@@ -51,6 +60,18 @@ export type MockTask = {
   example?: Record<string, unknown>;
   items?: MockItem[];
   gaps?: MockGap[];
+  audio?: TaskAudio;
+  /** shown to the student only after sending */
+  transcript?: string;
+  /** button labels for true/false rows; default TAK / NIE (telc: prawda / fałsz) */
+  tf_labels?: [string, string];
+  left_label?: string;
+  right_label?: string;
+  choices?: WritingChoice[];
+  /** number shown for the first item (telc numbers items across the whole exam) */
+  start_n?: number;
+  /** matching: one key may answer several items (persons in an opinion task, telc «x») */
+  reuse_keys?: boolean;
 };
 
 export type MockSection = {
@@ -58,6 +79,9 @@ export type MockSection = {
   tab: string;
   title: string;
   minutes?: number;
+  /** marked by the teacher (writing): not scored automatically, not in the pass rule */
+  manual?: boolean;
+  manual_points?: number;
   tasks: MockTask[];
 };
 
@@ -69,6 +93,12 @@ export type MockExam = {
   subtitle?: string;
   source?: string;
   pass_ratio: number;
+  /** per-section: every scored section ≥ pass_ratio (state exam); telc: one test total → B1 / B2 */
+  scoring?: 'per-section' | 'telc';
+  /** telc thresholds on the scored total, e.g. { B1: 27, B2: 43 } */
+  levels?: Record<string, number>;
+  eyebrow?: string;
+  rules?: string[];
   sections: MockSection[];
 };
 
@@ -89,11 +119,17 @@ export function toPublicMockExam(exam: MockExam) {
     subtitle: exam.subtitle,
     source: exam.source,
     pass_ratio: exam.pass_ratio,
+    scoring: exam.scoring ?? 'per-section',
+    levels: exam.levels,
+    eyebrow: exam.eyebrow,
+    rules: exam.rules,
     sections: exam.sections.map((s) => ({
       id: s.id,
       tab: s.tab,
       title: s.title,
       minutes: s.minutes,
+      manual: Boolean(s.manual),
+      manual_points: s.manual_points,
       max_points: sectionMax(s),
       tasks: s.tasks.map((t) => ({
         id: t.id,
@@ -110,6 +146,14 @@ export function toPublicMockExam(exam: MockExam) {
         bank_words: t.bank_words ? uniq(t.bank_words) : undefined,
         right: t.right,
         example: t.example,
+        audio: t.audio,
+        has_transcript: Boolean(t.transcript),
+        tf_labels: t.tf_labels,
+        left_label: t.left_label,
+        right_label: t.right_label,
+        choices: t.choices,
+        start_n: t.start_n,
+        reuse_keys: t.reuse_keys,
         items: t.items?.map((it) => ({
           id: it.id,
           passage: it.passage,
@@ -120,6 +164,8 @@ export function toPublicMockExam(exam: MockExam) {
           after: it.after,
           reply: it.reply,
           keyword: it.keyword,
+          kind: it.kind,
+          emoji: it.emoji,
         })),
         gaps: t.gaps?.map((g) => ({ id: g.id, n: g.n, kind: g.kind, options: g.options })),
       })),
@@ -191,6 +237,15 @@ export type SectionResult = {
   max: number;
   passed: boolean;
   pending: number;
+  manual?: boolean;
+  manual_points?: number;
+};
+
+export type WritingResult = {
+  task: string;
+  title: string;
+  choice: string;
+  parts: Array<{ label: string; prompt: string; text: string; words: number; target?: number }>;
 };
 
 export type MockScore = {
@@ -200,7 +255,20 @@ export type MockScore = {
   max: number;
   pending: number;
   passed: boolean;
+  /** telc: level reached in the scored test (B2 / B1 / poniżej B1) */
+  level?: string;
+  writing: WritingResult[];
 };
+
+export function wordCount(s: string): number {
+  return (s.match(/[\p{L}\p{N}]+(?:[-'’][\p{L}\p{N}]+)*/gu) ?? []).length;
+}
+
+/** answer keys for a writing task: `${task}:choice` and `${task}:${part}` */
+export function writingKeys(t: MockTask, choice: string): string[] {
+  const c = t.choices?.find((x) => x.id === choice);
+  return c ? c.parts.map((p) => `${t.id}:${p.id}`) : [];
+}
 
 type MatchResult = { ok: boolean; note?: string };
 
@@ -260,16 +328,25 @@ export function scoreMockExam(exam: MockExam, answers: Record<string, string>): 
       };
 
       (t.items ?? []).forEach((it, idx) => {
-        const n = idx + 1;
+        const n = (t.start_n ?? 1) + idx;
         const given = String(answers[it.id] ?? '').trim();
-        if (t.layout === 'mc-passages') {
+        if (t.layout === 'mc-passages' && it.kind === 'tf') {
+          push({
+            id: it.id,
+            n,
+            label: short(it.stem ?? it.text ?? ''),
+            given,
+            expected: it.answer ?? '',
+            status: !given ? 'empty' : given === it.answer ? 'ok' : 'no',
+          });
+        } else if (t.layout === 'mc-passages') {
           const exp = it.answer ?? '';
           const optText = it.options?.[LETTERS.indexOf(exp)] ?? '';
           const gText = it.options?.[LETTERS.indexOf(given)] ?? '';
           push({
             id: it.id,
             n,
-            label: short(it.passage ?? ''),
+            label: short(it.passage || it.stem || ''),
             given: given ? `${given}) ${short(gText, 60)}` : '',
             expected: `${exp}) ${short(optText, 60)}`,
             status: !given ? 'empty' : given === exp ? 'ok' : 'no',
@@ -289,7 +366,7 @@ export function scoreMockExam(exam: MockExam, answers: Record<string, string>): 
           push({
             id: it.id,
             n,
-            label: it.text ?? '',
+            label: it.emoji ?? short(it.text ?? '', 90),
             given: given ? `${given} · ${short(gRight?.text ?? '', 50)}` : '',
             expected: `${it.answer} · ${short(right?.text ?? '', 50)}`,
             status: !given ? 'empty' : given === it.answer ? 'ok' : 'no',
@@ -371,17 +448,59 @@ export function scoreMockExam(exam: MockExam, answers: Record<string, string>): 
       max,
       passed: sPoints >= max * exam.pass_ratio,
       pending: sPending,
+      manual: Boolean(s.manual),
+      manual_points: s.manual_points,
     });
   }
 
-  const total = sections.reduce((a, s) => a + s.points, 0);
-  const max = sections.reduce((a, s) => a + s.max, 0);
+  const writing: WritingResult[] = [];
+  for (const s of exam.sections) {
+    for (const t of s.tasks) {
+      if (t.layout !== 'writing') continue;
+      const choiceId = String(answers[`${t.id}:choice`] ?? '');
+      const c = t.choices?.find((x) => x.id === choiceId);
+      if (!c) {
+        writing.push({ task: t.id, title: t.title, choice: '', parts: [] });
+        continue;
+      }
+      writing.push({
+        task: t.id,
+        title: t.title,
+        choice: c.label,
+        parts: c.parts.map((p) => {
+          const text = String(answers[`${t.id}:${p.id}`] ?? '').trim();
+          return { label: p.label, prompt: p.prompt, text, words: wordCount(text), target: p.words };
+        }),
+      });
+    }
+  }
+  const writtenCount = writing.filter((w) => w.parts.some((p) => p.text)).length;
+
+  const scored = sections.filter((s) => !s.manual && s.max > 0);
+  const total = scored.reduce((a, s) => a + s.points, 0);
+  const max = scored.reduce((a, s) => a + s.max, 0);
+  let passed = scored.every((s) => s.passed);
+  let level: string | undefined;
+  if (exam.scoring === 'telc') {
+    const lv = Object.entries(exam.levels ?? { B1: 27, B2: 43 }).sort((a, b) => b[1] - a[1]);
+    level = lv.find(([, min]) => total >= min)?.[0] ?? 'poniżej B1';
+    passed = level !== 'poniżej B1';
+    for (const s of scored) s.passed = passed;
+  }
   return {
     sections,
     tasks,
     total,
     max,
-    pending: sections.reduce((a, s) => a + s.pending, 0),
-    passed: sections.every((s) => s.passed),
+    pending: sections.reduce((a, s) => a + s.pending, 0) + writtenCount,
+    passed,
+    level,
+    writing,
   };
+}
+
+export function transcriptsOf(exam: MockExam): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const s of exam.sections) for (const t of s.tasks) if (t.transcript) out[t.id] = t.transcript;
+  return out;
 }
