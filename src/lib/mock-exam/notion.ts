@@ -168,7 +168,7 @@ export async function writeMockResult(args: {
   imie: string;
   minutes: number;
 }): Promise<{ ok: boolean; url?: string; error?: string }> {
-  const token = process.env.NOTION_API_KEY || process.env.NOTION_TOKEN;
+  const token = process.env.NOTION_API_KEY || process.env.NOTION_TOKEN || process.env.NotionAPI;
   const databaseId = process.env.NOTION_MOCK_DATABASE_ID || DEFAULT_DB;
   if (!token) return { ok: false, error: 'NOTION_API_KEY missing' };
 

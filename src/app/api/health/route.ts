@@ -10,7 +10,7 @@ export function GET() {
   return NextResponse.json({
     commit: process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) ?? 'local',
     env: process.env.VERCEL_ENV ?? 'local',
-    notion_key: Boolean(process.env.NOTION_API_KEY || process.env.NOTION_TOKEN),
+    notion_key: Boolean(process.env.NOTION_API_KEY || process.env.NOTION_TOKEN || process.env.NotionAPI),
     now: new Date().toISOString(),
   });
 }

@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
   }
   if (!/^[0-9a-f-]{36}$/i.test(batch)) return NextResponse.json({ error: 'bad batch' }, { status: 400 });
 
-  const token = process.env.NOTION_API_KEY || process.env.NOTION_TOKEN;
+  const token = process.env.NOTION_API_KEY || process.env.NOTION_TOKEN || process.env.NotionAPI;
   if (!token) return NextResponse.json({ error: 'NOTION_API_KEY missing' }, { status: 500 });
 
   const supabase = createAnonClient();

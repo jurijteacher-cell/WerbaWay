@@ -27,7 +27,7 @@ function notionHeaders(token: string) {
 export async function writePlacementResult(
   payload: PlacementNotionPayload
 ): Promise<{ ok: boolean; url?: string; error?: string }> {
-  const token = process.env.NOTION_API_KEY || process.env.NOTION_TOKEN;
+  const token = process.env.NOTION_API_KEY || process.env.NOTION_TOKEN || process.env.NotionAPI;
   const databaseId =
     process.env.NOTION_PLACEMENT_DATABASE_ID || '7d440a2a69ba4bcaa67bb27ad861145a';
 
