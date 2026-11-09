@@ -1,0 +1,817 @@
+{
+  "lesson_id": "pl-bank-ortografia-uk",
+  "exercise_type": "grammar-notes",
+  "title": "Ortografia dla Ukraińców",
+  "sections": [
+    {
+      "id": "most",
+      "accent": "mint",
+      "eyebrow": "Konspekt · 1",
+      "title": "Most z ukraińskiego",
+      "question": "cz, sz, szcz, ch, c, dż",
+      "gloss": "ч, ш, щ, х, ц, дж — у польській це дві-чотири літери, але один звук",
+      "cards": [
+        {
+          "kind": "tiles",
+          "title": "Ukraińska litera → polskie litery",
+          "wide": true,
+          "tiles": [
+            {
+              "label": "ч",
+              "ending": "[[cz]]",
+              "examples": [
+                "час → [[cz]]as",
+                "чорний → [[cz]]arny"
+              ]
+            },
+            {
+              "label": "ш",
+              "ending": "[[sz]]",
+              "examples": [
+                "шість → [[sz]]eść",
+                "школа → [[sz]]koła"
+              ]
+            },
+            {
+              "label": "щ",
+              "ending": "[[szcz]]",
+              "examples": [
+                "щастя → [[szcz]]ęście",
+                "щука → [[szcz]]upak"
+              ]
+            },
+            {
+              "label": "х",
+              "ending": "[[ch]]",
+              "examples": [
+                "хліб → [[ch]]leb",
+                "хата → [[ch]]ata"
+              ]
+            },
+            {
+              "label": "ц",
+              "ending": "[[c]]",
+              "examples": [
+                "ціна → [[c]]ena",
+                "цукор → [[c]]ukier"
+              ]
+            },
+            {
+              "label": "дж",
+              "ending": "[[dż]]",
+              "examples": [
+                "джем → [[dż]]em",
+                "джинси → [[dż]]insy"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "title": "Uwaga na ж",
+          "columns": [
+            "Po ukraińsku",
+            "Po polsku"
+          ],
+          "rows": [
+            [
+              "жаба, жити",
+              "[[ż]]aba, [[ż]]yć"
+            ],
+            [
+              "річка, три",
+              "[[rz]]eka, t[[rz]]y"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "Dwie litery = jeden dźwięk: [[cz]], [[sz]], [[rz]], [[ch]], [[dz]], [[dż]], [[dź]]. Nie rozdzielaj ich."
+        }
+      ]
+    },
+    {
+      "id": "rz",
+      "accent": "coral",
+      "eyebrow": "Konspekt · 2",
+      "title": "rz czy ż?",
+      "question": "brzmią tak samo",
+      "gloss": "обидва звучать як «ж» — пишемо за походженням слова",
+      "cards": [
+        {
+          "kind": "tiles",
+          "title": "Trik z ukraińskiego",
+          "tiles": [
+            {
+              "label": "укр. р",
+              "ending": "→ [[rz]]",
+              "examples": [
+                "річ → [[rz]]ecz",
+                "три → t[[rz]]y",
+                "море → mo[[rz]]e"
+              ]
+            },
+            {
+              "label": "укр. ж",
+              "ending": "→ [[ż]]",
+              "examples": [
+                "жаба → [[ż]]aba",
+                "жити → [[ż]]yć",
+                "книжка → ksią[[ż]]ka"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "title": "Sprawdź inną formą",
+          "columns": [
+            "rz ← r",
+            "ż ← g, z, h"
+          ],
+          "rows": [
+            [
+              "mo[[rz]]e ← morski",
+              "mo[[ż]]e ← mogę"
+            ],
+            [
+              "dob[[rz]]e ← dobry",
+              "Bo[[ż]]e ← Bóg"
+            ],
+            [
+              "w teat[[rz]]e ← teatr",
+              "wo[[ż]]ę ← wozić"
+            ],
+            [
+              "na gó[[rz]]e ← góra",
+              "dru[[ż]]yna ← druh"
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "Prawie zawsze rz",
+          "items": [
+            "po p, b, t, d, k, g, ch, w: p[[rz]]y, b[[rz]]eg, t[[rz]]y, d[[rz]]wi, k[[rz]]esło, g[[rz]]yb",
+            "zawody na -arz, -erz: leka[[rz]], kucha[[rz]], żołnie[[rz]]"
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "⭐ Poziom wyżej: wyjątki",
+          "items": [
+            "po p, k: [[sz]] — p[[sz]]czoła, p[[sz]]enica, k[[sz]]tałt",
+            "stopień wyższy: lep[[sz]]y, łatwiej[[sz]]y (nie „leprzy”)",
+            "-aż w słowach z francuskiego: gara[[ż]], baga[[ż]], masa[[ż]], pla[[ż]]a"
+          ]
+        },
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "Nie wiesz? Szukaj formy z [[r]]. Jest r → [[rz]]. Jest g, z, h → [[ż]]."
+        }
+      ]
+    },
+    {
+      "id": "ou",
+      "accent": "sky",
+      "eyebrow": "Konspekt · 3",
+      "title": "ó czy u?",
+      "question": "brzmią tak samo",
+      "gloss": "обидва звучать як українське «у»",
+      "cards": [
+        {
+          "kind": "tiles",
+          "title": "Kiedy ó",
+          "tiles": [
+            {
+              "label": "inna forma ma o, e, a",
+              "ending": "[[ó]]",
+              "examples": [
+                "st[[ó]]ł ← stołu",
+                "wr[[ó]]cić ← wracać",
+                "si[[ó]]dmy ← siedem"
+              ]
+            },
+            {
+              "label": "końcówki -ów, -ówka",
+              "ending": "[[ó]]",
+              "examples": [
+                "Krak[[ó]]w, dom[[ó]]w",
+                "złot[[ó]]wka"
+              ]
+            },
+            {
+              "label": "na początku — tylko kilka słów",
+              "ending": "[[ó]]",
+              "examples": [
+                "[[ó]]smy, [[ó]]semka"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "tiles",
+          "title": "Kiedy u",
+          "tiles": [
+            {
+              "label": "na początku i na końcu",
+              "ending": "[[u]]",
+              "examples": [
+                "[[u]]lica, [[u]]cho",
+                "t[[u]], dom[[u]]"
+              ]
+            },
+            {
+              "label": "-uje (укр. -ує)",
+              "ending": "[[u]]",
+              "examples": [
+                "kup[[u]]je, mal[[u]]je"
+              ]
+            },
+            {
+              "label": "-unek, -uch, -utki",
+              "ending": "[[u]]",
+              "examples": [
+                "rach[[u]]nek, mal[[u]]ch",
+                "mal[[u]]tki"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "title": "Trik z ukraińskiego",
+          "columns": [
+            "Po ukraińsku: і ↔ о",
+            "Po polsku"
+          ],
+          "rows": [
+            [
+              "стіл — стола",
+              "st[[ó]]ł"
+            ],
+            [
+              "двір — двору",
+              "dw[[ó]]r"
+            ],
+            [
+              "мій — моя",
+              "m[[ó]]j"
+            ],
+            [
+              "сіль — солі",
+              "s[[ó]]l"
+            ],
+            [
+              "ніж — ножа",
+              "n[[ó]]ż"
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "⭐ Do zapamiętania",
+          "items": [
+            "ó bez reguły: g[[ó]]ra, sk[[ó]]ra, kr[[ó]]l, og[[ó]]rek, ż[[ó]]łty",
+            "ukraińskie і nie zawsze daje ó: кінь → koń, кіт → kot, дім → dom"
+          ]
+        },
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "Ukraiński tylko podpowiada. Pewny test: znajdź polską formę z [[o]] — stół → stołu."
+        }
+      ]
+    },
+    {
+      "id": "ch",
+      "accent": "lilac",
+      "eyebrow": "Konspekt · 4",
+      "title": "ch czy h?",
+      "question": "brzmią tak samo",
+      "gloss": "у польській ch і h звучать однаково — як українське «х»",
+      "cards": [
+        {
+          "kind": "tiles",
+          "title": "Trik z ukraińskiego",
+          "wide": true,
+          "tiles": [
+            {
+              "label": "укр. х",
+              "ending": "→ [[ch]]",
+              "examples": [
+                "хліб → [[ch]]leb",
+                "вухо → u[[ch]]o",
+                "сухий → su[[ch]]y"
+              ]
+            },
+            {
+              "label": "укр. г",
+              "ending": "→ zwykle [[g]]",
+              "examples": [
+                "гора → [[g]]óra",
+                "голова → [[g]]łowa",
+                "гість → [[g]]ość"
+              ]
+            },
+            {
+              "label": "h — do zapamiętania",
+              "ending": "[[h]]",
+              "examples": [
+                "[[h]]otel, [[h]]istoria",
+                "[[h]]erbata, [[h]]obby",
+                "галас → [[h]]ałas"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "title": "Sprawdź inną formą",
+          "columns": [
+            "Słowo",
+            "Inna forma"
+          ],
+          "rows": [
+            [
+              "mu[[ch]]a",
+              "musze (sz → ch)"
+            ],
+            [
+              "u[[ch]]o",
+              "uszy (sz → ch)"
+            ],
+            [
+              "ci[[ch]]y",
+              "ciszej (sz → ch)"
+            ],
+            [
+              "dru[[h]]",
+              "drużyna (ż → h)"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "Na końcu słowa prawie zawsze [[ch]]: da[[ch]], stra[[ch]], w doma[[ch]], dobry[[ch]]."
+        }
+      ]
+    },
+    {
+      "id": "l",
+      "accent": "yellow",
+      "eyebrow": "Konspekt · 5",
+      "title": "ł czy l?",
+      "question": "dwa różne dźwięki",
+      "gloss": "ł звучить як українське «в» у слові «був» — і це найкраща підказка",
+      "cards": [
+        {
+          "kind": "table",
+          "title": "Trik z ukraińskiego",
+          "wide": true,
+          "columns": [
+            "Po ukraińsku",
+            "Po polsku"
+          ],
+          "rows": [
+            [
+              "-в у минулому часі: був, мав",
+              "by[[ł]], mia[[ł]]"
+            ],
+            [
+              "тверде л: ла, ло, лу, ли",
+              "[[ł]]apa, g[[ł]]owa, stó[[ł]]"
+            ],
+            [
+              "м'яке л: лі, ля, лю, ль",
+              "[[l]]as, [[l]]udzie, só[[l]]"
+            ],
+            [
+              "słowa międzynarodowe",
+              "[[l]]ampa, p[[l]]an, hote[[l]]"
+            ]
+          ]
+        },
+        {
+          "kind": "compare",
+          "title": "Czas przeszły",
+          "left": {
+            "head": "on, ona, ono, one",
+            "lines": [
+              "by[[ł]], by[[ła]], by[[ło]]",
+              "dzieci by[[ły]]",
+              "siostry mia[[ły]]"
+            ]
+          },
+          "right": {
+            "head": "oni (są mężczyźni)",
+            "lines": [
+              "studenci by[[li]]",
+              "bracia mie[[li]]",
+              "my by[[liśmy]]"
+            ]
+          }
+        },
+        {
+          "kind": "note",
+          "text": "Przed [[i]] zawsze [[l]]: byli, mieli, list. Połączenia „łi” po polsku nie ma."
+        },
+        {
+          "kind": "list",
+          "title": "⭐ Wyjątki od triku",
+          "items": [
+            "молоко → m[[l]]eko",
+            "легкий → [[l]]ekki"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nosowe",
+      "accent": "mint",
+      "eyebrow": "Konspekt · 6",
+      "title": "ą i ę",
+      "question": "samogłoski nosowe",
+      "gloss": "навіть коли в кінці слова звучить як просте «е», пишемо «ę»",
+      "cards": [
+        {
+          "kind": "tiles",
+          "title": "Trik z ukraińskiego",
+          "tiles": [
+            {
+              "label": "укр. я",
+              "ending": "→ [[ę]]",
+              "examples": [
+                "п'ять → pi[[ę]]ć",
+                "м'ясо → mi[[ę]]so",
+                "ім'я → imi[[ę]]"
+              ]
+            },
+            {
+              "label": "укр. у",
+              "ending": "→ [[ą]] albo [[ę]]",
+              "examples": [
+                "зуб → z[[ą]]b",
+                "дуб → d[[ą]]b",
+                "рука → r[[ę]]ka"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "compare",
+          "title": "Ja i oni",
+          "left": {
+            "head": "ja → -ę",
+            "lines": [
+              "id[[ę]]",
+              "pisz[[ę]]",
+              "mog[[ę]]"
+            ]
+          },
+          "right": {
+            "head": "oni → -ą",
+            "lines": [
+              "id[[ą]]",
+              "pisz[[ą]]",
+              "mog[[ą]]"
+            ]
+          }
+        },
+        {
+          "kind": "table",
+          "title": "Rzeczownik i przymiotnik (ona)",
+          "columns": [
+            "Pytanie",
+            "Przykład"
+          ],
+          "rows": [
+            [
+              "kogo? co?",
+              "Piję kaw[[ę]]."
+            ],
+            [
+              "z kim? z czym?",
+              "Idę z mam[[ą]]."
+            ],
+            [
+              "jaką?",
+              "Mam now[[ą]] pracę."
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "⭐ Wymiana ą ↔ ę",
+          "items": [
+            "z[[ą]]b — z[[ę]]by",
+            "r[[ę]]ka — r[[ą]]k",
+            "m[[ą]]ż — m[[ę]]ża",
+            "pi[[ę]]ć — pi[[ą]]ty"
+          ]
+        },
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "Nie pisz tak, jak słyszysz: dzi[[ę]]kuję, nie „dzienkuje”; z[[ą]]b, nie „zomb”."
+        }
+      ]
+    },
+    {
+      "id": "miekkie",
+      "accent": "coral",
+      "eyebrow": "Konspekt · 7",
+      "title": "ś czy si?",
+      "question": "miękkie spółgłoski",
+      "gloss": "м'якість позначаємо або рискою (ś), або літерою i (si) — ніколи обома",
+      "cards": [
+        {
+          "kind": "table",
+          "title": "Jedna zasada",
+          "wide": true,
+          "columns": [
+            "Dalej samogłoska",
+            "Dalej spółgłoska albo koniec"
+          ],
+          "rows": [
+            [
+              "[[si]]ostra",
+              "[[ś]]wiat, co[[ś]]"
+            ],
+            [
+              "[[ci]]ocia",
+              "[[ć]]ma, by[[ć]]"
+            ],
+            [
+              "[[zi]]ma",
+              "[[ź]]le, gałą[[ź]]"
+            ],
+            [
+              "[[ni]]ebo",
+              "ko[[ń]], pa[[ń]]stwo"
+            ],
+            [
+              "[[dzi]]ecko",
+              "[[dź]]więk, łabę[[dź]]"
+            ]
+          ]
+        },
+        {
+          "kind": "traps",
+          "title": "Pułapki z ukraińskiego",
+          "traps": [
+            {
+              "uk": "сім",
+              "wrong": "śiedem",
+              "right": "[[si]]edem",
+              "why": "dalej samogłoska → si"
+            },
+            {
+              "uk": "бути, мати",
+              "wrong": "byt, maty",
+              "right": "by[[ć]], mie[[ć]]",
+              "why": "bezokolicznik kończy się na -ć"
+            },
+            {
+              "uk": "кінь",
+              "wrong": "koni",
+              "right": "ko[[ń]]",
+              "why": "na końcu słowa → ń"
+            }
+          ]
+        },
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "Kreska — tylko gdy dalej NIE ma samogłoski. Nigdy: „śostra”, „ćiocia”."
+        }
+      ]
+    },
+    {
+      "id": "iyj",
+      "accent": "sky",
+      "eyebrow": "Konspekt · 8",
+      "title": "i, y czy j?",
+      "question": "",
+      "gloss": "y — це українське «и», i — українське «і»",
+      "cards": [
+        {
+          "kind": "table",
+          "title": "Trik z ukraińskiego",
+          "columns": [
+            "Po ukraińsku",
+            "Po polsku"
+          ],
+          "rows": [
+            [
+              "и: ти, син, риба",
+              "t[[y]], s[[y]]n, r[[y]]ba"
+            ],
+            [
+              "ale: пити, бити",
+              "p[[i]]ć, b[[i]]ć"
+            ]
+          ]
+        },
+        {
+          "kind": "tiles",
+          "title": "Reguły",
+          "tiles": [
+            {
+              "label": "po cz, sz, rz, ż",
+              "ending": "zawsze [[y]]",
+              "examples": [
+                "cz[[y]], sz[[y]]bko",
+                "prz[[y]], ż[[y]]cie"
+              ]
+            },
+            {
+              "label": "po k, g",
+              "ending": "[[i]]",
+              "examples": [
+                "k[[i]]no, drog[[i]]",
+                "polsk[[i]]"
+              ]
+            },
+            {
+              "label": "po samogłosce",
+              "ending": "[[j]]",
+              "examples": [
+                "mo[[j]]a, kra[[j]]",
+                "dzięku[[j]]ę"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "title": "⭐ Słowa obce: -ia czy -ja?",
+          "columns": [
+            "po c, s, z → j",
+            "po innych → i"
+          ],
+          "rows": [
+            [
+              "akc[[j]]a",
+              "Angl[[i]]a"
+            ],
+            [
+              "Ros[[j]]a",
+              "Hiszpan[[i]]a"
+            ],
+            [
+              "Az[[j]]a",
+              "histor[[i]]a"
+            ],
+            [
+              "telewiz[[j]]a",
+              "chem[[i]]a"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "Po ukraińsku wszędzie -ія (Росія, Іспанія). Po polsku — dwie wersje: Ros[[j]]a, Hiszpan[[i]]a."
+        }
+      ]
+    },
+    {
+      "id": "razem",
+      "accent": "lilac",
+      "eyebrow": "Konspekt · 9",
+      "title": "Razem czy osobno?",
+      "question": "",
+      "gloss": "тут українська часто підказує неправильно",
+      "cards": [
+        {
+          "kind": "traps",
+          "title": "Pułapki z ukraińskiego",
+          "wide": true,
+          "traps": [
+            {
+              "uk": "напевно",
+              "wrong": "napewno",
+              "right": "[[na pewno]]"
+            },
+            {
+              "uk": "наприклад",
+              "wrong": "naprzykład",
+              "right": "[[na przykład]]"
+            },
+            {
+              "uk": "по-польськи",
+              "wrong": "po-polsku",
+              "right": "[[po polsku]]",
+              "why": "bez kreski"
+            },
+            {
+              "uk": "взагалі",
+              "wrong": "wogóle",
+              "right": "[[w ogóle]]"
+            },
+            {
+              "uk": "назад",
+              "wrong": "spowrotem",
+              "right": "[[z powrotem]]"
+            },
+            {
+              "uk": "насправді",
+              "wrong": "na prawdę",
+              "right": "[[naprawdę]]",
+              "why": "tu odwrotnie — razem"
+            }
+          ]
+        },
+        {
+          "kind": "compare",
+          "title": "nie",
+          "left": {
+            "head": "osobno: z czasownikiem",
+            "lines": [
+              "nie [[wiem]]",
+              "nie [[mam]]",
+              "nie [[ma]]"
+            ]
+          },
+          "right": {
+            "head": "razem: z przymiotnikiem i rzeczownikiem",
+            "lines": [
+              "[[nie]]dobry",
+              "[[nie]]prawda",
+              "[[nie]]długo"
+            ]
+          }
+        },
+        {
+          "kind": "list",
+          "title": "⭐ Wyjątki i nowe zasady",
+          "items": [
+            "czasowniki pisane razem: [[nie]]nawidzić, [[nie]]pokoić się",
+            "od 2026 r. razem także stopień wyższy i najwyższy: [[nie]]najlepszy, [[nie]]najlepiej"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wielka",
+      "accent": "yellow",
+      "eyebrow": "Konspekt · 10",
+      "title": "Wielka czy mała litera?",
+      "question": "",
+      "gloss": "у польській національності — з великої літери, мови й дні — з малої",
+      "cards": [
+        {
+          "kind": "table",
+          "title": "Porównaj",
+          "wide": true,
+          "columns": [
+            "Wielka litera",
+            "Mała litera"
+          ],
+          "rows": [
+            [
+              "[[P]]olak, [[U]]krainka",
+              "polski, po ukraińsku"
+            ],
+            [
+              "[[W]]arszawiak, [[K]]ijowianka",
+              "poniedziałek, styczeń"
+            ],
+            [
+              "[[B]]oże [[N]]arodzenie",
+              "wiosna, lato"
+            ],
+            [
+              "ul. [[D]]ługa",
+              "ulica, plac"
+            ]
+          ]
+        },
+        {
+          "kind": "traps",
+          "title": "Pułapki z ukraińskiego",
+          "traps": [
+            {
+              "uk": "я українка",
+              "wrong": "Jestem ukrainką.",
+              "right": "Jestem [[U]]krainką.",
+              "why": "narodowość → wielka"
+            },
+            {
+              "uk": "кияни",
+              "wrong": "kijowianie",
+              "right": "[[K]]ijowianie",
+              "why": "mieszkańcy miast → wielka (od 2026 r.)"
+            }
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "W listach i e-mailach z szacunku piszemy: [[P]]an, [[P]]ani, [[P]]aństwo."
+        }
+      ]
+    }
+  ]
+}

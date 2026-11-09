@@ -241,6 +241,7 @@ function normalizeGrammar(raw: any): GrammarPyramidExercise {
         instruction: b.instruction,
         instruction_uk: b.instruction_uk,
         diacritics: b.diacritics === 'strict' ? 'strict' : undefined,
+        letter_case: b.letter_case === 'strict' ? 'strict' : undefined,
         block_id: b.block_id,
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         items: (b.items ?? []).map((it: any, j: number) => {

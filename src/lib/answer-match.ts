@@ -1,9 +1,7 @@
 /** Normalize student answers for tolerant grammar checks. */
-export function normalizeAnswer(s: string) {
-  return s
-    .trim()
-    .replace(/\s+/g, ' ')
-    .toLowerCase()
+export function normalizeAnswer(s: string, keepCase = false) {
+  const t = s.trim().replace(/\s+/g, ' ');
+  return (keepCase ? t : t.toLowerCase())
     // trailing sentence punctuation should not fail a correct form
     .replace(/[.!?…]+$/u, '')
     // occasional curly quotes / dashes
@@ -26,12 +24,20 @@ export function answersMatch(
   given: string,
   expected: string,
   accept?: string[],
-  diacritics: 'strict' | 'lenient' = 'lenient'
+  diacritics: 'strict' | 'lenient' = 'lenient',
+  letterCase: 'strict' | 'lenient' = 'lenient'
 ) {
   const g = normalizeAnswer(given);
-  const pool = [expected, ...(accept ?? [])].map(normalizeAnswer);
+  const all = [expected, ...(accept ?? [])];
+  const pool = all.map((a) => normalizeAnswer(a));
   if (!g) return { ok: false as const, hint: null, state: 'wrong' as ItemState };
-  if (pool.includes(g)) return { ok: true as const, hint: null, state: 'correct' as ItemState };
+  if (pool.includes(g)) {
+    // capital-letter exercises (Polak / polak): same letters, wrong case = wrong answer
+    if (letterCase === 'strict' && !all.some((a) => normalizeAnswer(a, true) === normalizeAnswer(given, true))) {
+      return { ok: false as const, hint: 'Sprawdź wielkie i małe litery.', state: 'wrong' as ItemState };
+    }
+    return { ok: true as const, hint: null, state: 'correct' as ItemState };
+  }
   if (pool.some((a) => stripDiacritics(a) === stripDiacritics(g))) {
     if (diacritics === 'strict') {
       return { ok: false as const, hint: null, state: 'wrong' as ItemState };

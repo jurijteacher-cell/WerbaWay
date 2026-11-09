@@ -1,0 +1,969 @@
+{
+  "lesson_id": "pl-bank-ortografia-uk",
+  "exercise_type": "fill-in-blank",
+  "title": "Ortografia dla Ukraińców",
+  "instruction": "Po każdym wyjaśnieniu — krótka seria ćwiczeń. Najpierw pomyśl o regule, potem wpisz.",
+  "eyebrow": "ortografia",
+  "estimated_minutes": 60,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "diacritics": "strict",
+      "title": "1. Z ukraińskiego na polski",
+      "instruction": "Wpisz brakujące litery.",
+      "instruction_uk": "Підказка — українське слово в дужках.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Przepraszam, nie mam ___asu. (час)",
+          "answer": "cz",
+          "grammar_point": "most",
+          "explanation": "ч → cz"
+        },
+        {
+          "id": "g1-2",
+          "text": "Ten ___łopiec to mój syn. (хлопець)",
+          "answer": "ch",
+          "grammar_point": "most",
+          "explanation": "х → ch"
+        },
+        {
+          "id": "g1-3",
+          "text": "Moja córka ma ___eść lat. (шість)",
+          "answer": "sz",
+          "grammar_point": "most",
+          "explanation": "ш → sz"
+        },
+        {
+          "id": "g1-4",
+          "text": "Życzę ci dużo ___ęścia! (щастя)",
+          "answer": "szcz",
+          "grammar_point": "most",
+          "explanation": "щ → szcz"
+        },
+        {
+          "id": "g1-5",
+          "text": "Piję kawę bez ___ukru. (цукор)",
+          "answer": "c",
+          "grammar_point": "most",
+          "explanation": "ц → c"
+        },
+        {
+          "id": "g1-6",
+          "text": "Na śniadanie jem chleb z ___emem. (джем)",
+          "answer": "dż",
+          "grammar_point": "most",
+          "explanation": "дж → dż"
+        },
+        {
+          "id": "g1-7",
+          "text": "To bardzo ___ęsty błąd. (частий)",
+          "answer": "cz",
+          "grammar_point": "most",
+          "explanation": "ч → cz"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "diacritics": "strict",
+      "title": "2. rz czy ż?",
+      "instruction": "Wpisz rz albo ż.",
+      "instruction_uk": "Шукай іншу форму: є r → rz; є g, z, h → ż. Або українське слово: р → rz, ж → ż.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Latem jedziemy nad mo___e.",
+          "answer": "rz",
+          "grammar_point": "rz-z",
+          "explanation": "morze ← morski (r) · укр. море"
+        },
+        {
+          "id": "g2-2",
+          "text": "Jutro mo___e będzie padać.",
+          "answer": "ż",
+          "grammar_point": "rz-z",
+          "explanation": "może ← mogę (g)"
+        },
+        {
+          "id": "g2-3",
+          "text": "Mój tata jest leka___em.",
+          "answer": "rz",
+          "grammar_point": "rz-z",
+          "explanation": "zawody na -arz → rz: lekarz, kucharz"
+        },
+        {
+          "id": "g2-4",
+          "text": "Proszę zamknąć d___wi.",
+          "answer": "rz",
+          "grammar_point": "rz-z",
+          "explanation": "po d → rz · укр. двері"
+        },
+        {
+          "id": "g2-5",
+          "text": "Dziecko czyta ksią___kę.",
+          "answer": "ż",
+          "grammar_point": "rz-z",
+          "explanation": "książka · укр. книжка (ж)"
+        },
+        {
+          "id": "g2-6",
+          "text": "Masz ___ółty długopis?",
+          "answer": "ż",
+          "grammar_point": "rz-z",
+          "explanation": "żółty · укр. жовтий (ж)"
+        },
+        {
+          "id": "g2-7",
+          "text": "Wszystko jest dob___e.",
+          "answer": "rz",
+          "grammar_point": "rz-z",
+          "explanation": "dobrze ← dobry (r)"
+        },
+        {
+          "id": "g2-8",
+          "text": "Kot śpi na k___eśle.",
+          "answer": "rz",
+          "grammar_point": "rz-z",
+          "explanation": "po k → rz · укр. крісло"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "3. ⭐ Wyjątki: sz i -aż",
+      "instruction": "Wybierz dobrą pisownię.",
+      "instruction_uk": "Слова, де правило «після приголосної — rz» не працює.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Na łące lata ___.",
+          "answer": "pszczoła",
+          "grammar_point": "rz-wyjatki",
+          "options": [
+            "pszczoła",
+            "przczoła"
+          ],
+          "explanation": "wyjątek: po p → sz (pszczoła, pszenica)"
+        },
+        {
+          "id": "g3-2",
+          "text": "Ten telefon jest ___ od tamtego.",
+          "answer": "lepszy",
+          "grammar_point": "rz-wyjatki",
+          "options": [
+            "lepszy",
+            "leprzy"
+          ],
+          "explanation": "stopień wyższy: -szy (lepszy, łatwiejszy)"
+        },
+        {
+          "id": "g3-3",
+          "text": "Samochód stoi w ___.",
+          "answer": "garażu",
+          "grammar_point": "rz-wyjatki",
+          "options": [
+            "garażu",
+            "gararzu"
+          ],
+          "explanation": "-aż z francuskiego: garaż, bagaż"
+        },
+        {
+          "id": "g3-4",
+          "text": "W sierpniu leżę na ___.",
+          "answer": "plaży",
+          "grammar_point": "rz-wyjatki",
+          "options": [
+            "plaży",
+            "plarzy"
+          ],
+          "explanation": "plaża — z francuskiego, ż"
+        },
+        {
+          "id": "g3-5",
+          "text": "Ten stół ma ciekawy ___.",
+          "answer": "kształt",
+          "grammar_point": "rz-wyjatki",
+          "options": [
+            "kształt",
+            "krztałt"
+          ],
+          "explanation": "wyjątek: po k → sz (kształt)"
+        },
+        {
+          "id": "g3-6",
+          "text": "Po treningu idę na ___.",
+          "answer": "masaż",
+          "grammar_point": "rz-wyjatki",
+          "options": [
+            "masaż",
+            "masarz"
+          ],
+          "explanation": "-aż z francuskiego: masaż"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 3,
+      "exercise_type": "fill-in-blank",
+      "diacritics": "strict",
+      "title": "4. ó czy u?",
+      "instruction": "Wpisz ó albo u.",
+      "instruction_uk": "Є форма з o, e, a → ó. Закінчення -ów → ó. -uje, -unek і початок слова → u.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Mamy w kuchni nowy st___ł.",
+          "answer": "ó",
+          "grammar_point": "o-u",
+          "explanation": "stół ← stołu (o)"
+        },
+        {
+          "id": "g4-2",
+          "text": "Bardzo lubię Krak___w.",
+          "answer": "ó",
+          "grammar_point": "o-u",
+          "explanation": "końcówka -ów → ó"
+        },
+        {
+          "id": "g4-3",
+          "text": "Ona często kup___je owoce.",
+          "answer": "u",
+          "grammar_point": "o-u",
+          "explanation": "-uje → u · укр. купує"
+        },
+        {
+          "id": "g4-4",
+          "text": "Mieszkam przy ___licy Długiej.",
+          "answer": "u",
+          "grammar_point": "o-u",
+          "explanation": "na początku słowa → u"
+        },
+        {
+          "id": "g4-5",
+          "text": "Jutro wr___cę późno.",
+          "answer": "ó",
+          "grammar_point": "o-u",
+          "explanation": "wrócić ← wracać (a)"
+        },
+        {
+          "id": "g4-6",
+          "text": "Proszę, oto rach___nek.",
+          "answer": "u",
+          "grammar_point": "o-u",
+          "explanation": "-unek → u"
+        },
+        {
+          "id": "g4-7",
+          "text": "Zimą na g___rach leży śnieg.",
+          "answer": "ó",
+          "grammar_point": "o-u",
+          "explanation": "góra — do zapamiętania"
+        },
+        {
+          "id": "g4-8",
+          "text": "To jest m___j brat.",
+          "answer": "ó",
+          "grammar_point": "o-u",
+          "explanation": "mój ← moja (o) · укр. мій — моя"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 4,
+      "exercise_type": "fill-in-blank",
+      "diacritics": "strict",
+      "title": "5. ch, h czy g?",
+      "instruction": "Wpisz ch, h albo g.",
+      "instruction_uk": "укр. х → ch; укр. г → зазвичай g; h — слова міжнародні й «до запам'ятання».",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Kupuję ___leb na śniadanie.",
+          "answer": "ch",
+          "grammar_point": "ch-h",
+          "explanation": "укр. хліб → ch"
+        },
+        {
+          "id": "g5-2",
+          "text": "Ten ___otel jest blisko dworca.",
+          "answer": "h",
+          "grammar_point": "ch-h",
+          "explanation": "słowo międzynarodowe → h"
+        },
+        {
+          "id": "g5-3",
+          "text": "Boli mnie u___o.",
+          "answer": "ch",
+          "grammar_point": "ch-h",
+          "explanation": "ucho ← uszy (sz) · укр. вухо"
+        },
+        {
+          "id": "g5-4",
+          "text": "Piję ___erbatę z cytryną.",
+          "answer": "h",
+          "grammar_point": "ch-h",
+          "explanation": "herbata — do zapamiętania"
+        },
+        {
+          "id": "g5-5",
+          "text": "Wejdziemy na tę ___órę?",
+          "answer": "g",
+          "grammar_point": "ch-h",
+          "explanation": "укр. гора → g"
+        },
+        {
+          "id": "g5-6",
+          "text": "Za oknem jest straszny ___ałas.",
+          "answer": "h",
+          "grammar_point": "ch-h",
+          "explanation": "hałas — do zapamiętania (укр. галас)"
+        },
+        {
+          "id": "g5-7",
+          "text": "Mieszkamy w małych doma___.",
+          "answer": "ch",
+          "grammar_point": "ch-h",
+          "explanation": "-ach na końcu → ch"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 5,
+      "exercise_type": "fill-in-blank",
+      "diacritics": "strict",
+      "title": "6. ł czy l?",
+      "instruction": "Wpisz ł albo l.",
+      "instruction_uk": "укр. -в у минулому часі → ł; тверде л (ла, ло, лу, ли) → ł; м'яке (лі, ля, лю, ль) → l. Перед i — завжди l.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Wczoraj by___em w kinie.",
+          "answer": "ł",
+          "grammar_point": "l-l",
+          "explanation": "укр. був → był, byłem"
+        },
+        {
+          "id": "g6-2",
+          "text": "Idziemy na spacer do ___asu.",
+          "answer": "l",
+          "grammar_point": "l-l",
+          "explanation": "укр. ліс (м'яке л) → l"
+        },
+        {
+          "id": "g6-3",
+          "text": "Boli mnie g___owa.",
+          "answer": "ł",
+          "grammar_point": "l-l",
+          "explanation": "укр. голова (тверде л) → ł"
+        },
+        {
+          "id": "g6-4",
+          "text": "Moi bracia by___i w Polsce.",
+          "answer": "l",
+          "grammar_point": "l-l",
+          "explanation": "przed i → zawsze l"
+        },
+        {
+          "id": "g6-5",
+          "text": "Mam dla ciebie ___ist.",
+          "answer": "l",
+          "grammar_point": "l-l",
+          "explanation": "przed i → zawsze l"
+        },
+        {
+          "id": "g6-6",
+          "text": "Ona mia___a rację.",
+          "answer": "ł",
+          "grammar_point": "l-l",
+          "explanation": "укр. мала (минулий час) → ł"
+        },
+        {
+          "id": "g6-7",
+          "text": "Zapal ___ampę, proszę.",
+          "answer": "l",
+          "grammar_point": "l-l",
+          "explanation": "słowo międzynarodowe → l"
+        },
+        {
+          "id": "g6-8",
+          "text": "Podaj mi só___, proszę.",
+          "answer": "l",
+          "grammar_point": "l-l",
+          "explanation": "укр. сіль (м'яке ль) → l"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 5,
+      "exercise_type": "fill-in-blank",
+      "title": "7. -li czy -ły?",
+      "instruction": "Wybierz formę.",
+      "instruction_uk": "Є хоча б один чоловік (oni) → -li. Жінки, діти, речі (one) → -ły.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Moje siostry ___ w Gdańsku.",
+          "answer": "mieszkały",
+          "grammar_point": "przeszly-li-ly",
+          "options": [
+            "mieszkały",
+            "mieszkali"
+          ],
+          "explanation": "siostry → one → -ły"
+        },
+        {
+          "id": "g7-2",
+          "text": "Piotr i Ania ___ do kina.",
+          "answer": "poszli",
+          "grammar_point": "przeszly-li-ly",
+          "options": [
+            "poszli",
+            "poszły"
+          ],
+          "explanation": "Piotr + Ania → oni → -li"
+        },
+        {
+          "id": "g7-3",
+          "text": "Dzieci długo ___ w parku.",
+          "answer": "bawiły się",
+          "grammar_point": "przeszly-li-ly",
+          "options": [
+            "bawiły się",
+            "bawili się"
+          ],
+          "explanation": "dzieci → one → -ły"
+        },
+        {
+          "id": "g7-4",
+          "text": "Studenci ___ cały dzień.",
+          "answer": "uczyli się",
+          "grammar_point": "przeszly-li-ly",
+          "options": [
+            "uczyli się",
+            "uczyły się"
+          ],
+          "explanation": "studenci → oni → -li"
+        },
+        {
+          "id": "g7-5",
+          "text": "Te książki ___ na stole.",
+          "answer": "leżały",
+          "grammar_point": "przeszly-li-ly",
+          "options": [
+            "leżały",
+            "leżeli"
+          ],
+          "explanation": "książki → one → -ły"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 6,
+      "exercise_type": "fill-in-blank",
+      "diacritics": "strict",
+      "title": "8. ą czy ę?",
+      "instruction": "Wpisz ą albo ę.",
+      "instruction_uk": "ja → -ę, oni → -ą. Kogo? co? (ona) → -ę; z kim? z czym? → -ą. укр. я → ę.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Jutro id___ do lekarza.",
+          "answer": "ę",
+          "grammar_point": "a-e",
+          "explanation": "ja → -ę: idę"
+        },
+        {
+          "id": "g8-2",
+          "text": "Oni zawsze pij___ kawę rano.",
+          "answer": "ą",
+          "grammar_point": "a-e",
+          "explanation": "oni → -ą: piją"
+        },
+        {
+          "id": "g8-3",
+          "text": "Proszę kaw___ z mlekiem.",
+          "answer": "ę",
+          "grammar_point": "a-e",
+          "explanation": "kogo? co? → kawę"
+        },
+        {
+          "id": "g8-4",
+          "text": "Idę do kina z mam___.",
+          "answer": "ą",
+          "grammar_point": "a-e",
+          "explanation": "z kim? → z mamą"
+        },
+        {
+          "id": "g8-5",
+          "text": "Mój syn ma pi___ć lat.",
+          "answer": "ę",
+          "grammar_point": "a-e",
+          "explanation": "укр. п'ять → pięć"
+        },
+        {
+          "id": "g8-6",
+          "text": "Boli mnie z___b.",
+          "answer": "ą",
+          "grammar_point": "a-e",
+          "explanation": "ząb — zęby"
+        },
+        {
+          "id": "g8-7",
+          "text": "Myj z___by dwa razy dziennie.",
+          "answer": "ę",
+          "grammar_point": "a-e",
+          "explanation": "ząb — zęby"
+        },
+        {
+          "id": "g8-8",
+          "text": "Dzi___kuję za pomoc!",
+          "answer": "ę",
+          "grammar_point": "a-e",
+          "explanation": "dziękuję — nie „dzienkuje”"
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 7,
+      "exercise_type": "fill-in-blank",
+      "diacritics": "strict",
+      "title": "9. ś czy si?",
+      "instruction": "Wpisz: ś / si, ć / ci, ź / zi, ń / ni albo dź / dzi.",
+      "instruction_uk": "Далі голосна → si, ci, zi, ni, dzi. Далі приголосна або кінець слова → ś, ć, ź, ń, dź.",
+      "items": [
+        {
+          "id": "g9-1",
+          "text": "Moja ___ostra mieszka w Krakowie.",
+          "answer": "si",
+          "grammar_point": "miekkie",
+          "explanation": "dalej samogłoska → si"
+        },
+        {
+          "id": "g9-2",
+          "text": "Chcę zobaczyć cały ___wiat.",
+          "answer": "ś",
+          "grammar_point": "miekkie",
+          "explanation": "dalej spółgłoska → ś"
+        },
+        {
+          "id": "g9-3",
+          "text": "Muszę dziś by___ w pracy.",
+          "answer": "ć",
+          "grammar_point": "miekkie",
+          "explanation": "koniec słowa → ć"
+        },
+        {
+          "id": "g9-4",
+          "text": "Nasza ___ocia ma kota.",
+          "answer": "ci",
+          "grammar_point": "miekkie",
+          "explanation": "dalej samogłoska → ci"
+        },
+        {
+          "id": "g9-5",
+          "text": "Ta ___ma jest bardzo mroźna.",
+          "answer": "zi",
+          "grammar_point": "miekkie",
+          "explanation": "dalej samogłoska → zi"
+        },
+        {
+          "id": "g9-6",
+          "text": "Czuję się ___le.",
+          "answer": "ź",
+          "grammar_point": "miekkie",
+          "explanation": "dalej spółgłoska → ź"
+        },
+        {
+          "id": "g9-7",
+          "text": "To jest mój ko___.",
+          "answer": "ń",
+          "grammar_point": "miekkie",
+          "explanation": "koniec słowa → ń"
+        },
+        {
+          "id": "g9-8",
+          "text": "___eń dobry!",
+          "answer": "dzi",
+          "grammar_point": "miekkie",
+          "explanation": "dalej samogłoska → dzi"
+        }
+      ]
+    },
+    {
+      "block_id": "g10",
+      "part": 8,
+      "exercise_type": "fill-in-blank",
+      "diacritics": "strict",
+      "title": "10. i, y czy j?",
+      "instruction": "Wpisz i, y albo j.",
+      "instruction_uk": "Після cz, sz, rz, ż — завжди y. Після k, g — i. Після голосної — j. укр. и → зазвичай y.",
+      "items": [
+        {
+          "id": "g10-1",
+          "text": "Cz___ masz czas?",
+          "answer": "y",
+          "grammar_point": "i-y-j",
+          "explanation": "po cz → zawsze y"
+        },
+        {
+          "id": "g10-2",
+          "text": "Ona mówi bardzo sz___bko.",
+          "answer": "y",
+          "grammar_point": "i-y-j",
+          "explanation": "po sz → zawsze y"
+        },
+        {
+          "id": "g10-3",
+          "text": "Idziemy dziś do k___na.",
+          "answer": "i",
+          "grammar_point": "i-y-j",
+          "explanation": "po k → i"
+        },
+        {
+          "id": "g10-4",
+          "text": "To jest mo___a córka.",
+          "answer": "j",
+          "grammar_point": "i-y-j",
+          "explanation": "po samogłosce → j"
+        },
+        {
+          "id": "g10-5",
+          "text": "To są polsk___e słowa.",
+          "answer": "i",
+          "grammar_point": "i-y-j",
+          "explanation": "po k → i"
+        },
+        {
+          "id": "g10-6",
+          "text": "Dzięku___ę bardzo!",
+          "answer": "j",
+          "grammar_point": "i-y-j",
+          "explanation": "po samogłosce → j"
+        },
+        {
+          "id": "g10-7",
+          "text": "Ż___cie jest piękne.",
+          "answer": "y",
+          "grammar_point": "i-y-j",
+          "explanation": "po ż → zawsze y"
+        },
+        {
+          "id": "g10-8",
+          "text": "Mam w domu złotą r___bkę.",
+          "answer": "y",
+          "grammar_point": "i-y-j",
+          "explanation": "укр. риба → ryba, rybka"
+        }
+      ]
+    },
+    {
+      "block_id": "g11",
+      "part": 8,
+      "exercise_type": "fill-in-blank",
+      "diacritics": "strict",
+      "title": "11. ⭐ Słowa obce: i czy j?",
+      "instruction": "Wpisz i albo j.",
+      "instruction_uk": "У міжнародних словах після c, s, z → j (akcja, Rosja). Після інших приголосних → i (Anglia, historia).",
+      "items": [
+        {
+          "id": "g11-1",
+          "text": "Mój kolega jest z Hiszpan___i.",
+          "answer": "i",
+          "grammar_point": "ia-ja",
+          "explanation": "po n → i: Hiszpania, Hiszpanii"
+        },
+        {
+          "id": "g11-2",
+          "text": "Lubię lekcje histor___i.",
+          "answer": "i",
+          "grammar_point": "ia-ja",
+          "explanation": "po r → i: historia"
+        },
+        {
+          "id": "g11-3",
+          "text": "W telewiz___i był ciekawy film.",
+          "answer": "j",
+          "grammar_point": "ia-ja",
+          "explanation": "po z → j: telewizja"
+        },
+        {
+          "id": "g11-4",
+          "text": "To była ważna akc___a.",
+          "answer": "j",
+          "grammar_point": "ia-ja",
+          "explanation": "po c → j: akcja"
+        },
+        {
+          "id": "g11-5",
+          "text": "Moja siostra mieszka w Az___i.",
+          "answer": "j",
+          "grammar_point": "ia-ja",
+          "explanation": "po z → j: Azja, Azji"
+        },
+        {
+          "id": "g11-6",
+          "text": "Mój sąsiad pochodzi z Angl___i.",
+          "answer": "i",
+          "grammar_point": "ia-ja",
+          "explanation": "po l → i: Anglia"
+        }
+      ]
+    },
+    {
+      "block_id": "g12",
+      "part": 9,
+      "exercise_type": "fill-in-blank",
+      "title": "12. Razem czy osobno?",
+      "instruction": "Wybierz dobrą pisownię.",
+      "instruction_uk": "Не довіряй українській: «напевно» разом, а na pewno — окремо.",
+      "items": [
+        {
+          "id": "g12-1",
+          "text": "Przyjdę jutro ___.",
+          "answer": "na pewno",
+          "grammar_point": "razem-osobno",
+          "options": [
+            "na pewno",
+            "napewno"
+          ],
+          "explanation": "укр. напевно, ale po polsku osobno"
+        },
+        {
+          "id": "g12-2",
+          "text": "Mówisz ___?",
+          "answer": "po polsku",
+          "grammar_point": "razem-osobno",
+          "options": [
+            "po polsku",
+            "po-polsku"
+          ],
+          "explanation": "osobno i bez kreski (укр. по-польськи)"
+        },
+        {
+          "id": "g12-3",
+          "text": "Nie rozumiem tego ___.",
+          "answer": "w ogóle",
+          "grammar_point": "razem-osobno",
+          "options": [
+            "w ogóle",
+            "wogóle"
+          ],
+          "explanation": "w ogóle — zawsze osobno"
+        },
+        {
+          "id": "g12-4",
+          "text": "To ___ dobry film!",
+          "answer": "naprawdę",
+          "grammar_point": "razem-osobno",
+          "options": [
+            "naprawdę",
+            "na prawdę"
+          ],
+          "explanation": "naprawdę — razem"
+        },
+        {
+          "id": "g12-5",
+          "text": "Lubię owoce, ___ jabłka.",
+          "answer": "na przykład",
+          "grammar_point": "razem-osobno",
+          "options": [
+            "na przykład",
+            "naprzykład"
+          ],
+          "explanation": "укр. наприклад, ale po polsku osobno"
+        },
+        {
+          "id": "g12-6",
+          "text": "Wracam ___ o 18:00.",
+          "answer": "z powrotem",
+          "grammar_point": "razem-osobno",
+          "options": [
+            "z powrotem",
+            "spowrotem"
+          ],
+          "explanation": "z powrotem — osobno"
+        },
+        {
+          "id": "g12-7",
+          "text": "Przepraszam, ___, gdzie jest dworzec.",
+          "answer": "nie wiem",
+          "grammar_point": "razem-osobno",
+          "options": [
+            "nie wiem",
+            "niewiem"
+          ],
+          "explanation": "nie z czasownikiem → osobno"
+        },
+        {
+          "id": "g12-8",
+          "text": "Ta zupa jest ___, za słona.",
+          "answer": "niedobra",
+          "grammar_point": "razem-osobno",
+          "options": [
+            "niedobra",
+            "nie dobra"
+          ],
+          "explanation": "nie z przymiotnikiem → razem"
+        },
+        {
+          "id": "g12-9",
+          "text": "⭐ Ona ___ poniedziałków.",
+          "answer": "nienawidzi",
+          "grammar_point": "razem-osobno",
+          "options": [
+            "nienawidzi",
+            "nie nawidzi"
+          ],
+          "explanation": "wyjątek: nienawidzić — razem"
+        }
+      ]
+    },
+    {
+      "block_id": "g13",
+      "part": 10,
+      "exercise_type": "fill-in-blank",
+      "letter_case": "strict",
+      "title": "13. Wielka czy mała litera?",
+      "instruction": "Wybierz dobrą formę.",
+      "instruction_uk": "Національності й мешканці міст — з великої. Мови, дні, місяці — з малої.",
+      "items": [
+        {
+          "id": "g13-1",
+          "text": "Jestem ___ z Kijowa.",
+          "answer": "Ukrainką",
+          "grammar_point": "wielka-litera",
+          "options": [
+            "Ukrainką",
+            "ukrainką"
+          ],
+          "explanation": "narodowość → wielka litera"
+        },
+        {
+          "id": "g13-2",
+          "text": "Uczę się języka ___.",
+          "answer": "polskiego",
+          "grammar_point": "wielka-litera",
+          "options": [
+            "polskiego",
+            "Polskiego"
+          ],
+          "explanation": "język → mała litera"
+        },
+        {
+          "id": "g13-3",
+          "text": "Spotkajmy się w ___.",
+          "answer": "środę",
+          "grammar_point": "wielka-litera",
+          "options": [
+            "środę",
+            "Środę"
+          ],
+          "explanation": "dni tygodnia → mała litera"
+        },
+        {
+          "id": "g13-4",
+          "text": "Mój mąż jest ___.",
+          "answer": "Polakiem",
+          "grammar_point": "wielka-litera",
+          "options": [
+            "Polakiem",
+            "polakiem"
+          ],
+          "explanation": "narodowość → wielka litera"
+        },
+        {
+          "id": "g13-5",
+          "text": "Mówię ___ i po ukraińsku.",
+          "answer": "po polsku",
+          "grammar_point": "wielka-litera",
+          "options": [
+            "po polsku",
+            "po Polsku"
+          ],
+          "explanation": "po polsku → mała litera"
+        },
+        {
+          "id": "g13-6",
+          "text": "⭐ Wszyscy ___ kochają swoje miasto.",
+          "answer": "Krakowianie",
+          "grammar_point": "wielka-litera",
+          "options": [
+            "Krakowianie",
+            "krakowianie"
+          ],
+          "explanation": "od 2026 r. mieszkańcy miast → wielka litera"
+        }
+      ]
+    },
+    {
+      "block_id": "g14",
+      "part": 11,
+      "exercise_type": "sentence-building",
+      "diacritics": "strict",
+      "letter_case": "strict",
+      "title": "14. Wszystko razem: popraw zdanie",
+      "instruction": "W każdym zdaniu są dwa błędy. Napisz zdanie poprawnie.",
+      "instruction_uk": "Перевір: rz/ż, ó/u, ch/h, ł/l, ą/ę, ś/si, разом/окремо, велика літера.",
+      "items": [
+        {
+          "id": "g14-1",
+          "prompt": "Wczoraj bylem w sklepie i kupiłem hleb.",
+          "answer": "Wczoraj byłem w sklepie i kupiłem chleb.",
+          "grammar_point": "mix",
+          "explanation": "bylem → byłem (був) · hleb → chleb (хліб)"
+        },
+        {
+          "id": "g14-2",
+          "prompt": "Moja śostra mieszka nad możem.",
+          "answer": "Moja siostra mieszka nad morzem.",
+          "grammar_point": "mix",
+          "explanation": "śostra → siostra · możem → morzem (morski)"
+        },
+        {
+          "id": "g14-3",
+          "prompt": "Napewno przyjdę z mamom.",
+          "answer": "Na pewno przyjdę z mamą.",
+          "grammar_point": "mix",
+          "explanation": "na pewno — osobno · z kim? → z mamą"
+        },
+        {
+          "id": "g14-4",
+          "prompt": "Mój brat jest polakiem i mówi po-ukraińsku.",
+          "answer": "Mój brat jest Polakiem i mówi po ukraińsku.",
+          "grammar_point": "mix",
+          "explanation": "Polak — wielka litera · po ukraińsku — bez kreski"
+        },
+        {
+          "id": "g14-5",
+          "prompt": "Dzienkuję, ten hotel jest naprawde ładny.",
+          "answer": "Dziękuję, ten hotel jest naprawdę ładny.",
+          "grammar_point": "mix",
+          "accept": [
+            "Dziękuję ten hotel jest naprawdę ładny."
+          ],
+          "explanation": "dziękuję · naprawdę"
+        },
+        {
+          "id": "g14-6",
+          "prompt": "W poniedziałek idę do lekaża z córkom.",
+          "answer": "W poniedziałek idę do lekarza z córką.",
+          "grammar_point": "mix",
+          "explanation": "lekarz (-arz → rz) · z kim? → z córką"
+        }
+      ]
+    }
+  ]
+}

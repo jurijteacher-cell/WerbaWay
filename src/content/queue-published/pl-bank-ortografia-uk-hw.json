@@ -1,0 +1,188 @@
+{
+  "lesson_id": "pl-bank-ortografia-uk",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: ortografia",
+  "eyebrow": "ortografia",
+  "instruction": "Trzy bloki. Zrób je bez konspektu, potem sprawdź się.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "diacritics": "strict",
+      "title": "1. Brakujące litery",
+      "instruction": "Wpisz brakujące litery.",
+      "instruction_uk": "Тут змішано всі правила: rz/ż, ó/u, ch/h, ł/l, ą/ę.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "W lesie rośnie duży g___yb.",
+          "answer": "rz",
+          "grammar_point": "rz-z",
+          "explanation": "po g → rz · укр. гриб"
+        },
+        {
+          "id": "h1-2",
+          "text": "Ten pies jest bardzo du___y.",
+          "answer": "ż",
+          "grammar_point": "rz-z",
+          "explanation": "укр. дужий (ж) → ż"
+        },
+        {
+          "id": "h1-3",
+          "text": "Na stole leży n___ż.",
+          "answer": "ó",
+          "grammar_point": "o-u",
+          "explanation": "nóż ← noża (o)"
+        },
+        {
+          "id": "h1-4",
+          "text": "Mama mal___je obraz.",
+          "answer": "u",
+          "grammar_point": "o-u",
+          "explanation": "-uje → u"
+        },
+        {
+          "id": "h1-5",
+          "text": "Za oknem lata mu___a.",
+          "answer": "ch",
+          "grammar_point": "ch-h",
+          "explanation": "mucha ← musze (sz)"
+        },
+        {
+          "id": "h1-6",
+          "text": "Jutro będzie pi___kna pogoda.",
+          "answer": "ę",
+          "grammar_point": "a-e",
+          "explanation": "piękna — ę"
+        },
+        {
+          "id": "h1-7",
+          "text": "Kiedyś Ania gra___a na gitarze.",
+          "answer": "ł",
+          "grammar_point": "l-l",
+          "explanation": "укр. грала (минулий час) → ł"
+        },
+        {
+          "id": "h1-8",
+          "text": "Mieszkam w ma___ym mieście.",
+          "answer": "ł",
+          "grammar_point": "l-l",
+          "explanation": "укр. малий (тверде л) → ł"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "diacritics": "strict",
+      "letter_case": "strict",
+      "title": "2. Popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Moja ćiocia mieszka w Gdańsku.",
+          "answer": "Moja ciocia mieszka w Gdańsku.",
+          "grammar_point": "miekkie",
+          "explanation": "dalej samogłoska → ci"
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Nie mogę dziś przyjść, możesz mi pomuc?",
+          "answer": "Nie mogę dziś przyjść, możesz mi pomóc?",
+          "grammar_point": "o-u",
+          "accept": [
+            "Nie mogę dziś przyjść możesz mi pomóc?"
+          ],
+          "explanation": "pomóc ← pomoc (o)"
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Oni robiły zakupy w sobotę.",
+          "answer": "Oni robili zakupy w sobotę.",
+          "grammar_point": "przeszly-li-ly",
+          "explanation": "oni → -li"
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Lubię herbatę z cytrynom.",
+          "answer": "Lubię herbatę z cytryną.",
+          "grammar_point": "a-e",
+          "explanation": "z czym? → z cytryną"
+        },
+        {
+          "id": "h2-5",
+          "prompt": "Wogóle nie rozumiem tej lekcji.",
+          "answer": "W ogóle nie rozumiem tej lekcji.",
+          "grammar_point": "razem-osobno",
+          "explanation": "w ogóle — osobno"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "fill-in-blank",
+      "letter_case": "strict",
+      "title": "3. Razem, osobno, wielka litera",
+      "instruction": "Wybierz dobrą formę.",
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Mój kolega z pracy jest ___.",
+          "answer": "Niemcem",
+          "grammar_point": "wielka-litera",
+          "options": [
+            "Niemcem",
+            "niemcem"
+          ],
+          "explanation": "narodowość → wielka litera"
+        },
+        {
+          "id": "h3-2",
+          "text": "W ___ mam wolne.",
+          "answer": "piątek",
+          "grammar_point": "wielka-litera",
+          "options": [
+            "piątek",
+            "Piątek"
+          ],
+          "explanation": "dni tygodnia → mała litera"
+        },
+        {
+          "id": "h3-3",
+          "text": "___ nie mam czasu.",
+          "answer": "Na razie",
+          "grammar_point": "razem-osobno",
+          "options": [
+            "Na razie",
+            "Narazie"
+          ],
+          "explanation": "na razie — osobno (укр. наразі)"
+        },
+        {
+          "id": "h3-4",
+          "text": "Moja sąsiadka jest ___.",
+          "answer": "Włoszką",
+          "grammar_point": "wielka-litera",
+          "options": [
+            "Włoszką",
+            "włoszką"
+          ],
+          "explanation": "narodowość → wielka litera"
+        },
+        {
+          "id": "h3-5",
+          "text": "Jestem chory, ___ nie przyjdę.",
+          "answer": "dlatego",
+          "grammar_point": "razem-osobno",
+          "options": [
+            "dlatego",
+            "dla tego"
+          ],
+          "explanation": "dlatego — razem"
+        }
+      ]
+    }
+  ]
+}

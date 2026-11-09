@@ -268,7 +268,8 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
   ) => {
     if (!given.trim()) return;
     const mode = level.diacritics === 'strict' ? 'strict' : 'lenient';
-    const result = answersMatch(given, expected, accept, mode);
+    const caseMode = level.letter_case === 'strict' ? 'strict' : 'lenient';
+    const result = answersMatch(given, expected, accept, mode, caseMode);
     record(item, given, expected, result.ok);
     setFeedback((f) => ({ ...f, [k]: result.ok }));
     if (result.ok) {
@@ -277,6 +278,7 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
     }
     const almost =
       !result.ok &&
+      !result.hint &&
       [expected, ...(accept ?? [])].some((a) => stripDiacritics(a) === stripDiacritics(given));
     setHints((h) => ({ ...h, [k]: almost ? 'Prawie! Dodaj polskie znaki: ą ć ę ł ń ó ś ź ż.' : result.hint }));
     if (!result.ok) {
@@ -621,7 +623,7 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
                       {options.map((opt) => {
                         const sel = value === opt;
                         const alsoOk =
-                          fb === true && !sel && answersMatch(opt, expected, accept).ok;
+                          fb === true && !sel && answersMatch(opt, expected, accept, level.diacritics === 'strict' ? 'strict' : 'lenient', level.letter_case === 'strict' ? 'strict' : 'lenient').ok;
                         return (
                           <button
                             key={`${k}-${opt}`}

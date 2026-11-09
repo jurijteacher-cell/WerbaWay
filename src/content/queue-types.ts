@@ -105,6 +105,8 @@ export type GrammarPyramidExercise = {
     instruction_uk?: string;
     block_id?: string;
     diacritics?: 'strict' | 'lenient';
+    /** 'strict': upper/lower case must match (capital-letter spelling exercises) */
+    letter_case?: 'strict' | 'lenient';
     items: GrammarPyramidItem[];
   }[];
 };
