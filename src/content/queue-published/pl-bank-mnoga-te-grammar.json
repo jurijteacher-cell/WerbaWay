@@ -1,0 +1,887 @@
+{
+  "lesson_id": "pl-bank-mnoga-te",
+  "exercise_type": "fill-in-blank",
+  "title": "Liczba mnoga: rodzaj niemęskoosobowy",
+  "instruction": "Po każdym wyjaśnieniu — ćwiczenia.",
+  "instruction_uk": "Спершу подумай: це група «ci» чи «te»? Потім дивись на останню приголосну.",
+  "estimated_minutes": 45,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Ci czy te?",
+      "instruction": "Wybierz.",
+      "instruction_uk": "Чоловіки → ci. Жінки, діти, тварини, речі → te.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "___ dziewczyny są z Gdańska.",
+          "answer": "Te",
+          "grammar_point": "ci-te",
+          "options": [
+            "Ci",
+            "Te"
+          ],
+          "explanation": "dziewczyny = kobiety → te"
+        },
+        {
+          "id": "g1-2",
+          "text": "___ chłopcy grają w szachy.",
+          "answer": "Ci",
+          "grammar_point": "ci-te",
+          "options": [
+            "Ci",
+            "Te"
+          ],
+          "explanation": "chłopcy = mężczyźni → ci"
+        },
+        {
+          "id": "g1-3",
+          "text": "___ psy są bardzo głośne.",
+          "answer": "Te",
+          "grammar_point": "ci-te",
+          "options": [
+            "Ci",
+            "Te"
+          ],
+          "explanation": "Pies to zwierzę → te, chociaż to rodzaj męski"
+        },
+        {
+          "id": "g1-4",
+          "text": "___ dzieci mają sześć lat.",
+          "answer": "Te",
+          "grammar_point": "ci-te",
+          "options": [
+            "Ci",
+            "Te"
+          ],
+          "explanation": "dzieci → te"
+        },
+        {
+          "id": "g1-5",
+          "text": "___ lekarki pracują w szpitalu.",
+          "answer": "Te",
+          "grammar_point": "ci-te",
+          "options": [
+            "Ci",
+            "Te"
+          ],
+          "explanation": "lekarki = kobiety → te"
+        },
+        {
+          "id": "g1-6",
+          "text": "___ lekarze pracują w przychodni.",
+          "answer": "Ci",
+          "grammar_point": "ci-te",
+          "options": [
+            "Ci",
+            "Te"
+          ],
+          "explanation": "lekarze = mężczyźni albo grupa mieszana → ci"
+        },
+        {
+          "id": "g1-7",
+          "text": "___ samochody są nowe.",
+          "answer": "Te",
+          "grammar_point": "ci-te",
+          "options": [
+            "Ci",
+            "Te"
+          ],
+          "explanation": "rzeczy → te"
+        },
+        {
+          "id": "g1-8",
+          "text": "Ola, Kasia i Marek studiują razem. ___ studenci są z Wrocławia.",
+          "answer": "Ci",
+          "grammar_point": "ci-te",
+          "options": [
+            "Ci",
+            "Te"
+          ],
+          "explanation": "W grupie jest mężczyzna (Marek) → ci"
+        },
+        {
+          "id": "g1-9",
+          "text": "___ koty śpią cały dzień.",
+          "answer": "Te",
+          "grammar_point": "ci-te",
+          "options": [
+            "Ci",
+            "Te"
+          ],
+          "explanation": "zwierzęta → te"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Jeden — dwa: -y czy -i",
+      "instruction": "Wpisz liczbę mnogą.",
+      "instruction_uk": "Тверда приголосна → -y. Після k, g → -i.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "jedna gazeta — dwie ___ (gazeta)",
+          "answer": "gazety",
+          "grammar_point": "konc-y-i",
+          "explanation": "t — twarda → -y"
+        },
+        {
+          "id": "g2-2",
+          "text": "jeden telefon — dwa ___ (telefon)",
+          "answer": "telefony",
+          "grammar_point": "konc-y-i",
+          "explanation": "n — twarda → -y"
+        },
+        {
+          "id": "g2-3",
+          "text": "jedna ryba — dwie ___ (ryba)",
+          "answer": "ryby",
+          "grammar_point": "konc-y-i",
+          "explanation": "b — twarda → -y"
+        },
+        {
+          "id": "g2-4",
+          "text": "jeden ptak — dwa ___ (ptak)",
+          "answer": "ptaki",
+          "grammar_point": "konc-y-i",
+          "explanation": "po k → -i"
+        },
+        {
+          "id": "g2-5",
+          "text": "jedna córka — dwie ___ (córka)",
+          "answer": "córki",
+          "grammar_point": "konc-y-i",
+          "explanation": "po k → -i"
+        },
+        {
+          "id": "g2-6",
+          "text": "jeden sklep — dwa ___ (sklep)",
+          "answer": "sklepy",
+          "grammar_point": "konc-y-i",
+          "explanation": "p — twarda → -y"
+        },
+        {
+          "id": "g2-7",
+          "text": "jedna droga — dwie ___ (droga)",
+          "answer": "drogi",
+          "grammar_point": "konc-y-i",
+          "explanation": "po g → -i"
+        },
+        {
+          "id": "g2-8",
+          "text": "jeden kwiat — dwa ___ (kwiat)",
+          "answer": "kwiaty",
+          "grammar_point": "konc-y-i",
+          "explanation": "t — twarda → -y"
+        },
+        {
+          "id": "g2-9",
+          "text": "jedna torba — dwie ___ (torba)",
+          "answer": "torby",
+          "grammar_point": "konc-y-i",
+          "explanation": "b — twarda → -y"
+        },
+        {
+          "id": "g2-10",
+          "text": "jeden plecak — dwa ___ (plecak)",
+          "answer": "plecaki",
+          "grammar_point": "konc-y-i",
+          "explanation": "po k → -i"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Wybierz poprawną formę",
+      "instruction": "Wybierz.",
+      "instruction_uk": "Одна форма правильна, інша — типова помилка.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Na półce stoją ___. (kubek)",
+          "answer": "kubki",
+          "grammar_point": "konc-y-i",
+          "options": [
+            "kubki",
+            "kubky"
+          ],
+          "explanation": "po k → -i; e znika: kubek → kubki"
+        },
+        {
+          "id": "g3-2",
+          "text": "W naszym mieście są duże ___. (park)",
+          "answer": "parki",
+          "grammar_point": "konc-y-i",
+          "options": [
+            "parki",
+            "parky"
+          ],
+          "explanation": "po k → -i"
+        },
+        {
+          "id": "g3-3",
+          "text": "Na ulicy stoją ___. (autobus)",
+          "answer": "autobusy",
+          "grammar_point": "konc-y-i",
+          "options": [
+            "autobusy",
+            "autobusi"
+          ],
+          "explanation": "s — twarda → -y"
+        },
+        {
+          "id": "g3-4",
+          "text": "Te ___ są drogie. (bluzka)",
+          "answer": "bluzki",
+          "grammar_point": "konc-y-i",
+          "options": [
+            "bluzki",
+            "bluzky"
+          ],
+          "explanation": "po k → -i"
+        },
+        {
+          "id": "g3-5",
+          "text": "Lubię stare ___. (film)",
+          "answer": "filmy",
+          "grammar_point": "konc-y-i",
+          "options": [
+            "filmy",
+            "filmi"
+          ],
+          "explanation": "m — twarda → -y"
+        },
+        {
+          "id": "g3-6",
+          "text": "W lesie żyją ___. (wilk)",
+          "answer": "wilki",
+          "grammar_point": "konc-y-i",
+          "options": [
+            "wilki",
+            "wilky"
+          ],
+          "explanation": "po k → -i"
+        },
+        {
+          "id": "g3-7",
+          "text": "W pokoju są dwie ___. (lampa)",
+          "answer": "lampy",
+          "grammar_point": "konc-y-i",
+          "options": [
+            "lampy",
+            "lampi"
+          ],
+          "explanation": "p — twarda → -y"
+        },
+        {
+          "id": "g3-8",
+          "text": "Te ___ są bardzo słodkie. (truskawka)",
+          "answer": "truskawki",
+          "grammar_point": "konc-y-i",
+          "options": [
+            "truskawki",
+            "truskawky"
+          ],
+          "explanation": "po k → -i"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 3,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Jeden — dwa: końcówka -e",
+      "instruction": "Wpisz liczbę mnogą.",
+      "instruction_uk": "ni, si, zi, ci, l, j, c, cz, sz, rz, ż, -ia, -ja → -e.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "jedna stacja — dwie ___ (stacja)",
+          "answer": "stacje",
+          "grammar_point": "konc-e",
+          "explanation": "-ja → -je"
+        },
+        {
+          "id": "g4-2",
+          "text": "jedna łazienka — dwie ___ (łazienka)",
+          "answer": "łazienki",
+          "grammar_point": "konc-y-i",
+          "explanation": "Uwaga: tu jest k → -i!"
+        },
+        {
+          "id": "g4-3",
+          "text": "jedna kawiarnia — dwie ___ (kawiarnia)",
+          "answer": "kawiarnie",
+          "grammar_point": "konc-e",
+          "explanation": "-nia → -nie"
+        },
+        {
+          "id": "g4-4",
+          "text": "jeden parasol — dwa ___ (parasol)",
+          "answer": "parasole",
+          "grammar_point": "konc-e",
+          "explanation": "l → -e"
+        },
+        {
+          "id": "g4-5",
+          "text": "jedna tablica — dwie ___ (tablica)",
+          "answer": "tablice",
+          "grammar_point": "konc-e",
+          "explanation": "c → -e"
+        },
+        {
+          "id": "g4-6",
+          "text": "jeden kosz — dwa ___ (kosz)",
+          "answer": "kosze",
+          "grammar_point": "konc-e",
+          "explanation": "sz → -e"
+        },
+        {
+          "id": "g4-7",
+          "text": "jeden pokój — dwa ___ (pokój)",
+          "answer": "pokoje",
+          "grammar_point": "konc-e",
+          "explanation": "j → -e; ó → o"
+        },
+        {
+          "id": "g4-8",
+          "text": "jedna wnuczka — dwie ___ (wnuczka)",
+          "answer": "wnuczki",
+          "grammar_point": "konc-y-i",
+          "explanation": "Uwaga: k → -i!"
+        },
+        {
+          "id": "g4-9",
+          "text": "jedna ciocia — dwie ___ (ciocia)",
+          "answer": "ciocie",
+          "grammar_point": "konc-e",
+          "explanation": "-cia → -cie"
+        },
+        {
+          "id": "g4-10",
+          "text": "jeden nóż — dwa ___ (nóż)",
+          "answer": "noże",
+          "grammar_point": "konc-e",
+          "explanation": "ż → -e; ó → o"
+        },
+        {
+          "id": "g4-11",
+          "text": "jedna noc — dwie ___ (noc)",
+          "answer": "noce",
+          "grammar_point": "konc-e",
+          "explanation": "ona na c → -e"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 3,
+      "exercise_type": "fill-in-blank",
+      "title": "5. -y, -i czy -e?",
+      "instruction": "Wybierz.",
+      "instruction_uk": "Перевір останню приголосну. Пам'ятай: «kuchni» — не множина.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Te ___ są nowe. (szafa)",
+          "answer": "szafy",
+          "grammar_point": "konc-y-i",
+          "options": [
+            "szafy",
+            "szafe",
+            "szafi"
+          ],
+          "explanation": "f — twarda → -y"
+        },
+        {
+          "id": "g5-2",
+          "text": "W centrum są dwie ___. (pralnia)",
+          "answer": "pralnie",
+          "grammar_point": "konc-e",
+          "options": [
+            "pralnie",
+            "pralni",
+            "pralny"
+          ],
+          "explanation": "-nia → -nie; „pralni” to dopełniacz"
+        },
+        {
+          "id": "g5-3",
+          "text": "Mam tylko dwie ___. (szklanka)",
+          "answer": "szklanki",
+          "grammar_point": "konc-y-i",
+          "options": [
+            "szklanki",
+            "szklanky",
+            "szklanke"
+          ],
+          "explanation": "po k → -i"
+        },
+        {
+          "id": "g5-4",
+          "text": "W Europie są różne ___. (kraj)",
+          "answer": "kraje",
+          "grammar_point": "konc-e",
+          "options": [
+            "kraje",
+            "kraji",
+            "krajy"
+          ],
+          "explanation": "j → -e"
+        },
+        {
+          "id": "g5-5",
+          "text": "Mam dla ciebie dobre ___. (wiadomość)",
+          "answer": "wiadomości",
+          "grammar_point": "konc-e",
+          "options": [
+            "wiadomości",
+            "wiadomoście",
+            "wiadomośce"
+          ],
+          "explanation": "-ość → -i"
+        },
+        {
+          "id": "g5-6",
+          "text": "W ogrodzie rosną ___. (róża)",
+          "answer": "róże",
+          "grammar_point": "konc-e",
+          "options": [
+            "róże",
+            "róży",
+            "różi"
+          ],
+          "explanation": "ż → -e; „róży” to dopełniacz"
+        },
+        {
+          "id": "g5-7",
+          "text": "Kupuję czerwone ___. (pomidor)",
+          "answer": "pomidory",
+          "grammar_point": "konc-y-i",
+          "options": [
+            "pomidory",
+            "pomidore",
+            "pomidori"
+          ],
+          "explanation": "r — twarda → -y"
+        },
+        {
+          "id": "g5-8",
+          "text": "Gdzie są moje ___? (rzecz)",
+          "answer": "rzeczy",
+          "grammar_point": "konc-e",
+          "options": [
+            "rzeczy",
+            "rzecze",
+            "rzeczi"
+          ],
+          "explanation": "rzecz → rzeczy: trzeba zapamiętać"
+        },
+        {
+          "id": "g5-9",
+          "text": "W szkole są dwie ___. (biblioteka)",
+          "answer": "biblioteki",
+          "grammar_point": "konc-y-i",
+          "options": [
+            "biblioteki",
+            "biblioteky",
+            "biblioteke"
+          ],
+          "explanation": "po k → -i"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 4,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Rodzaj nijaki",
+      "instruction": "Wpisz liczbę mnogą.",
+      "instruction_uk": "Середній рід → -a. На -ę → -ęta або -ona.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "jedno biurko — dwa ___ (biurko)",
+          "answer": "biurka",
+          "grammar_point": "nijaki-a",
+          "explanation": "-o → -a"
+        },
+        {
+          "id": "g6-2",
+          "text": "jedno lustro — dwa ___ (lustro)",
+          "answer": "lustra",
+          "grammar_point": "nijaki-a",
+          "explanation": "-o → -a"
+        },
+        {
+          "id": "g6-3",
+          "text": "jedno pytanie — dwa ___ (pytanie)",
+          "answer": "pytania",
+          "grammar_point": "nijaki-a",
+          "explanation": "-nie → -nia"
+        },
+        {
+          "id": "g6-4",
+          "text": "jedno wiadro — dwa ___ (wiadro)",
+          "answer": "wiadra",
+          "grammar_point": "nijaki-a",
+          "explanation": "-o → -a"
+        },
+        {
+          "id": "g6-5",
+          "text": "jedno akwarium — dwa ___ (akwarium)",
+          "answer": "akwaria",
+          "grammar_point": "nijaki-a",
+          "explanation": "-um → -a"
+        },
+        {
+          "id": "g6-6",
+          "text": "jedno szczenię — dwa ___ (szczenię)",
+          "answer": "szczenięta",
+          "grammar_point": "nijaki-a",
+          "explanation": "-ę → -ęta"
+        },
+        {
+          "id": "g6-7",
+          "text": "jedno ramię — dwa ___ (ramię)",
+          "answer": "ramiona",
+          "grammar_point": "nijaki-a",
+          "explanation": "-ę → -iona, jak imię → imiona"
+        },
+        {
+          "id": "g6-8",
+          "text": "jedno jajko — dwa ___ (jajko)",
+          "answer": "jajka",
+          "grammar_point": "nijaki-a",
+          "explanation": "-o → -a"
+        },
+        {
+          "id": "g6-9",
+          "text": "Te ___ są piękne. (zdanie)",
+          "answer": "zdania",
+          "grammar_point": "nijaki-a",
+          "explanation": "-nie → -nia"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 5,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Zmiany i wyjątki",
+      "instruction": "Wpisz formę albo wybierz.",
+      "instruction_uk": "Тут змінюється голосна в слові або форма зовсім інша.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "jeden kościół — dwa ___ (kościół)",
+          "answer": "kościoły",
+          "grammar_point": "zmiany-wyjatki",
+          "explanation": "ó → o"
+        },
+        {
+          "id": "g7-2",
+          "text": "jeden ogród — dwa ___ (ogród)",
+          "answer": "ogrody",
+          "grammar_point": "zmiany-wyjatki",
+          "explanation": "ó → o"
+        },
+        {
+          "id": "g7-3",
+          "text": "jeden dąb — dwa ___ (dąb)",
+          "answer": "dęby",
+          "grammar_point": "zmiany-wyjatki",
+          "explanation": "ą → ę"
+        },
+        {
+          "id": "g7-4",
+          "text": "jeden wtorek — dwa ___ (wtorek)",
+          "answer": "wtorki",
+          "grammar_point": "zmiany-wyjatki",
+          "explanation": "e znika, po k → -i"
+        },
+        {
+          "id": "g7-5",
+          "text": "Mieszkam tu już dwa ___. (rok)",
+          "answer": "lata",
+          "grammar_point": "zmiany-wyjatki",
+          "explanation": "rok → lata: trzeba zapamiętać"
+        },
+        {
+          "id": "g7-6",
+          "text": "Mam zimne ___. (ręka)",
+          "answer": "ręce",
+          "grammar_point": "zmiany-wyjatki",
+          "explanation": "ręka → ręce: trzeba zapamiętać"
+        },
+        {
+          "id": "g7-7",
+          "text": "Dwa ___ temu byłem w Krakowie. (tydzień)",
+          "answer": "tygodnie",
+          "grammar_point": "zmiany-wyjatki",
+          "explanation": "tydzień → tygodnie"
+        },
+        {
+          "id": "g7-8",
+          "text": "Kot ma zielone ___. (oko)",
+          "answer": "oczy",
+          "grammar_point": "zmiany-wyjatki",
+          "explanation": "oko → oczy"
+        },
+        {
+          "id": "g7-9",
+          "text": "Moje urodziny ___ w sobotę.",
+          "answer": "są",
+          "grammar_point": "zmiany-wyjatki",
+          "options": [
+            "są",
+            "jest"
+          ],
+          "explanation": "urodziny — tylko liczba mnoga → są"
+        },
+        {
+          "id": "g7-10",
+          "text": "Gdzie ___ moje okulary?",
+          "answer": "są",
+          "grammar_point": "zmiany-wyjatki",
+          "options": [
+            "są",
+            "jest"
+          ],
+          "explanation": "okulary — tylko liczba mnoga → są"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 6,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Te, moje, nowe, były",
+      "instruction": "Wybierz.",
+      "instruction_uk": "Займенник → te/moje, прикметник → -e, минулий час → -ły.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "___ książki są ciekawe.",
+          "answer": "Te",
+          "grammar_point": "zgoda",
+          "options": [
+            "Te",
+            "Ci"
+          ],
+          "explanation": "książki → te"
+        },
+        {
+          "id": "g8-2",
+          "text": "Moje siostry ___ w Warszawie.",
+          "answer": "mieszkały",
+          "grammar_point": "zgoda",
+          "options": [
+            "mieszkały",
+            "mieszkali"
+          ],
+          "explanation": "siostry → -ły"
+        },
+        {
+          "id": "g8-3",
+          "text": "To są ___ buty.",
+          "answer": "nowe",
+          "grammar_point": "zgoda",
+          "options": [
+            "nowe",
+            "nowi"
+          ],
+          "explanation": "przymiotnik w grupie te → -e"
+        },
+        {
+          "id": "g8-4",
+          "text": "Dzieci ___ w ogrodzie.",
+          "answer": "bawiły się",
+          "grammar_point": "zgoda",
+          "options": [
+            "bawiły się",
+            "bawili się"
+          ],
+          "explanation": "dzieci → -ły"
+        },
+        {
+          "id": "g8-5",
+          "text": "Te psy ___ bardzo głodne.",
+          "answer": "były",
+          "grammar_point": "zgoda",
+          "options": [
+            "były",
+            "byli"
+          ],
+          "explanation": "psy → były"
+        },
+        {
+          "id": "g8-6",
+          "text": "Kupuję ___ jabłka.",
+          "answer": "zielone",
+          "grammar_point": "zgoda",
+          "options": [
+            "zielone",
+            "zieloni"
+          ],
+          "explanation": "biernik = mianownik: zielone jabłka"
+        },
+        {
+          "id": "g8-7",
+          "text": "Widzę ___ koleżanki.",
+          "answer": "moje",
+          "grammar_point": "zgoda",
+          "options": [
+            "moje",
+            "moi"
+          ],
+          "explanation": "biernik = mianownik: moje koleżanki"
+        },
+        {
+          "id": "g8-8",
+          "text": "Na stole są ___ talerze.",
+          "answer": "dwa",
+          "grammar_point": "zgoda",
+          "options": [
+            "dwa",
+            "dwie"
+          ],
+          "explanation": "talerz — on → dwa"
+        },
+        {
+          "id": "g8-9",
+          "text": "W pokoju są ___ lampy.",
+          "answer": "dwie",
+          "grammar_point": "zgoda",
+          "options": [
+            "dwie",
+            "dwa"
+          ],
+          "explanation": "lampa — ona → dwie"
+        },
+        {
+          "id": "g8-10",
+          "text": "Te okna ___ czyste.",
+          "answer": "są",
+          "grammar_point": "zgoda",
+          "options": [
+            "są",
+            "jest"
+          ],
+          "explanation": "liczba mnoga → są"
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 6,
+      "exercise_type": "sentence-building",
+      "title": "9. Napisz w liczbie mnogiej",
+      "instruction": "Napisz całe zdanie w liczbie mnogiej.",
+      "instruction_uk": "Зміни все: займенник, іменник, прикметник, дієслово.",
+      "items": [
+        {
+          "id": "g9-1",
+          "prompt": "Ta lampa jest nowa.",
+          "answer": "Te lampy są nowe.",
+          "grammar_point": "zgoda"
+        },
+        {
+          "id": "g9-2",
+          "prompt": "Ten pokój jest duży.",
+          "answer": "Te pokoje są duże.",
+          "grammar_point": "zgoda",
+          "explanation": "pokój → pokoje"
+        },
+        {
+          "id": "g9-3",
+          "prompt": "To jabłko jest słodkie.",
+          "answer": "Te jabłka są słodkie.",
+          "grammar_point": "zgoda"
+        },
+        {
+          "id": "g9-4",
+          "prompt": "Moja koleżanka była w kinie.",
+          "answer": "Moje koleżanki były w kinie.",
+          "grammar_point": "zgoda"
+        },
+        {
+          "id": "g9-5",
+          "prompt": "Mój kot śpi na kanapie.",
+          "answer": "Moje koty śpią na kanapie.",
+          "grammar_point": "zgoda",
+          "accept": [
+            "Moje koty śpią na kanapach."
+          ],
+          "explanation": "śpi → śpią"
+        },
+        {
+          "id": "g9-6",
+          "prompt": "Kupuję zieloną kurtkę.",
+          "answer": "Kupuję zielone kurtki.",
+          "grammar_point": "zgoda",
+          "explanation": "biernik l. mnogiej = mianownik"
+        }
+      ]
+    },
+    {
+      "block_id": "g10",
+      "part": 6,
+      "exercise_type": "sentence-building",
+      "title": "10. Popraw błąd",
+      "instruction": "Każde zdanie ma jeden błąd. Napisz je poprawnie.",
+      "instruction_uk": "Це типові помилки україномовних учнів.",
+      "items": [
+        {
+          "id": "g10-1",
+          "prompt": "Ci książki są na stole.",
+          "answer": "Te książki są na stole.",
+          "grammar_point": "kalki-uk",
+          "explanation": "książki → te"
+        },
+        {
+          "id": "g10-2",
+          "prompt": "Moje córki byli w szkole.",
+          "answer": "Moje córki były w szkole.",
+          "grammar_point": "kalki-uk",
+          "explanation": "córki → były"
+        },
+        {
+          "id": "g10-3",
+          "prompt": "Na ulicy są nowi samochody.",
+          "answer": "Na ulicy są nowe samochody.",
+          "grammar_point": "kalki-uk",
+          "explanation": "samochody → nowe"
+        },
+        {
+          "id": "g10-4",
+          "prompt": "W hotelu są dwie kuchni.",
+          "answer": "W hotelu są dwie kuchnie.",
+          "grammar_point": "kalki-uk",
+          "explanation": "kuchnia → kuchnie"
+        },
+        {
+          "id": "g10-5",
+          "prompt": "Moje urodziny jest w czerwcu.",
+          "answer": "Moje urodziny są w czerwcu.",
+          "grammar_point": "kalki-uk",
+          "explanation": "urodziny → są"
+        },
+        {
+          "id": "g10-6",
+          "prompt": "Te zadania są trudni.",
+          "answer": "Te zadania są trudne.",
+          "grammar_point": "kalki-uk",
+          "explanation": "zadania → trudne"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "lesson_id": "pl-bank-mnoga-te",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: liczba mnoga (te)",
+  "instruction": "Cztery bloki. Zrób je bez konspektu, potem sprawdź się.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Jeden — dwa",
+      "instruction": "Wpisz liczbę mnogą.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "jedna gruszka — dwie ___ (gruszka)",
+          "answer": "gruszki",
+          "grammar_point": "konc-y-i"
+        },
+        {
+          "id": "h1-2",
+          "text": "jeden zeszyt — dwa ___ (zeszyt)",
+          "answer": "zeszyty",
+          "grammar_point": "konc-y-i"
+        },
+        {
+          "id": "h1-3",
+          "text": "jedna świnia — dwie ___ (świnia)",
+          "answer": "świnie",
+          "grammar_point": "konc-e"
+        },
+        {
+          "id": "h1-4",
+          "text": "jeden szalik — dwa ___ (szalik)",
+          "answer": "szaliki",
+          "grammar_point": "konc-y-i"
+        },
+        {
+          "id": "h1-5",
+          "text": "jedno ciastko — dwa ___ (ciastko)",
+          "answer": "ciastka",
+          "grammar_point": "nijaki-a"
+        },
+        {
+          "id": "h1-6",
+          "text": "jedno kino — dwa ___ (kino)",
+          "answer": "kina",
+          "grammar_point": "nijaki-a"
+        },
+        {
+          "id": "h1-7",
+          "text": "jeden róg — dwa ___ (róg)",
+          "answer": "rogi",
+          "grammar_point": "zmiany-wyjatki",
+          "explanation": "ó → o, po g → -i"
+        },
+        {
+          "id": "h1-8",
+          "text": "jedna pani — dwie ___ (pani)",
+          "answer": "panie",
+          "grammar_point": "konc-e"
+        },
+        {
+          "id": "h1-9",
+          "text": "jedna informacja — dwie ___ (informacja)",
+          "answer": "informacje",
+          "grammar_point": "konc-e"
+        },
+        {
+          "id": "h1-10",
+          "text": "jedna opowieść — dwie ___ (opowieść)",
+          "answer": "opowieści",
+          "grammar_point": "konc-e",
+          "explanation": "-ść → -i"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Wybierz",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "___ nauczycielki są bardzo miłe.",
+          "answer": "Te",
+          "grammar_point": "ci-te",
+          "options": [
+            "Ci",
+            "Te"
+          ]
+        },
+        {
+          "id": "h2-2",
+          "text": "___ nauczyciele są bardzo mili.",
+          "answer": "Ci",
+          "grammar_point": "ci-te",
+          "options": [
+            "Ci",
+            "Te"
+          ]
+        },
+        {
+          "id": "h2-3",
+          "text": "Kury ___ po podwórku.",
+          "answer": "biegały",
+          "grammar_point": "zgoda",
+          "options": [
+            "biegały",
+            "biegali"
+          ]
+        },
+        {
+          "id": "h2-4",
+          "text": "To są ___ rękawiczki.",
+          "answer": "twoje",
+          "grammar_point": "zgoda",
+          "options": [
+            "twoje",
+            "twoi"
+          ]
+        },
+        {
+          "id": "h2-5",
+          "text": "W sali są ___ okna.",
+          "answer": "trzy",
+          "grammar_point": "zgoda",
+          "options": [
+            "trzy",
+            "trzech"
+          ],
+          "explanation": "trzy — dla wszystkich rodzajów"
+        },
+        {
+          "id": "h2-6",
+          "text": "Wnuczki ___ babcię w niedzielę.",
+          "answer": "odwiedziły",
+          "grammar_point": "zgoda",
+          "options": [
+            "odwiedziły",
+            "odwiedzili"
+          ]
+        },
+        {
+          "id": "h2-7",
+          "text": "Na biurku leżą ___ długopisy.",
+          "answer": "dwa",
+          "grammar_point": "zgoda",
+          "options": [
+            "dwa",
+            "dwie"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Liczba mnoga",
+      "instruction": "Napisz całe zdanie w liczbie mnogiej.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Ta spódnica jest za krótka.",
+          "answer": "Te spódnice są za krótkie.",
+          "grammar_point": "zgoda"
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Ten sklep jest zamknięty.",
+          "answer": "Te sklepy są zamknięte.",
+          "grammar_point": "zgoda"
+        },
+        {
+          "id": "h3-3",
+          "prompt": "To ciasto było pyszne.",
+          "answer": "Te ciasta były pyszne.",
+          "grammar_point": "zgoda"
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Moja sąsiadka pracowała w banku.",
+          "answer": "Moje sąsiadki pracowały w banku.",
+          "grammar_point": "zgoda",
+          "accept": [
+            "Moje sąsiadki pracowały w bankach."
+          ]
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Ten tygrys jest groźny.",
+          "answer": "Te tygrysy są groźne.",
+          "grammar_point": "zgoda"
+        }
+      ]
+    },
+    {
+      "block_id": "h4",
+      "exercise_type": "sentence-building",
+      "title": "4. Popraw błąd",
+      "instruction": "Każde zdanie ma jeden błąd. Napisz je poprawnie.",
+      "items": [
+        {
+          "id": "h4-1",
+          "prompt": "Te krzesła są wygodni.",
+          "answer": "Te krzesła są wygodne.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "h4-2",
+          "prompt": "Ci kury jedzą ziarno.",
+          "answer": "Te kury jedzą ziarno.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "h4-3",
+          "prompt": "Moje babci mieszkają na wsi.",
+          "answer": "Moje babcie mieszkają na wsi.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "h4-4",
+          "prompt": "Nasze wakacje była krótka.",
+          "answer": "Nasze wakacje były krótkie.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "h4-5",
+          "prompt": "Na drzewie siedzą ptaky.",
+          "answer": "Na drzewie siedzą ptaki.",
+          "grammar_point": "kalki-uk"
+        }
+      ]
+    }
+  ]
+}

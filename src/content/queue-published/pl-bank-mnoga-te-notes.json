@@ -1,0 +1,606 @@
+{
+  "lesson_id": "pl-bank-mnoga-te",
+  "exercise_type": "grammar-notes",
+  "title": "Liczba mnoga: rodzaj niemęskoosobowy",
+  "sections": [
+    {
+      "id": "kto",
+      "accent": "lilac",
+      "eyebrow": "Konspekt · 1",
+      "title": "Ci czy te?",
+      "question": "kto należy do grupy «te»?",
+      "gloss": "нечоловічоособова група",
+      "cards": [
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "У польській множині є дві групи. [[ci]] — коли в групі є хоча б один чоловік: ci studenci, ci panowie. [[te]] — усе інше: жінки, діти, тварини, речі, місця. Сьогодні вчимо групу [[te]] — вона найчастіша."
+        },
+        {
+          "kind": "compare",
+          "title": "Дві групи",
+          "left": {
+            "head": "ci — męskoosobowy",
+            "lines": [
+              "ci studenci — тільки чоловіки",
+              "ci studenci — Ania i Tomek (є чоловік)",
+              "ci panowie"
+            ]
+          },
+          "right": {
+            "head": "te — niemęskoosobowy",
+            "lines": [
+              "te studentki — тільки жінки",
+              "te dzieci",
+              "te koty, te psy",
+              "te domy, te okna"
+            ]
+          }
+        },
+        {
+          "kind": "table",
+          "title": "Хто і що належить до «te»",
+          "wide": true,
+          "columns": [
+            "Хто / що",
+            "Приклад"
+          ],
+          "rows": [
+            [
+              "жінки",
+              "[[te]] koleżanki, [[te]] panie"
+            ],
+            [
+              "діти",
+              "[[te]] dzieci"
+            ],
+            [
+              "тварини (навіть самці!)",
+              "[[te]] koty, [[te]] psy"
+            ],
+            [
+              "речі",
+              "[[te]] stoły, [[te]] książki"
+            ],
+            [
+              "місця, ідеї",
+              "[[te]] miasta, [[te]] pomysły"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "Пастка: pies і kot — чоловічий рід, але це тварини, тому [[te]] psy, [[te]] koty. Група «ci» — тільки для людей-чоловіків."
+        }
+      ]
+    },
+    {
+      "id": "y-i",
+      "accent": "mint",
+      "eyebrow": "Konspekt · 2",
+      "title": "Końcówki -y i -i",
+      "question": "kawa → kawy, książka → książki",
+      "gloss": "тверді приголосні та k, g",
+      "cards": [
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "Як знайти закінчення: прибери закінчення однини (-a) і подивись на останню приголосну. Тверда приголосна — b, p, f, w, m, n, t, d, s, z, ł, r — дає [[-y]]. Після k і g завжди [[-i]], бо в польській немає «ky» і «gy»."
+        },
+        {
+          "kind": "tiles",
+          "title": "Закінчення",
+          "tiles": [
+            {
+              "label": "ona · -a після твердої",
+              "ending": "-a → [[-y]]",
+              "examples": [
+                "kawa → kaw[[y]]",
+                "szkoła → szkoł[[y]]",
+                "lampa → lamp[[y]]"
+              ]
+            },
+            {
+              "label": "on · річ, тварина",
+              "ending": "+ [[-y]]",
+              "examples": [
+                "dom → dom[[y]]",
+                "kot → kot[[y]]",
+                "komputer → komputer[[y]]"
+              ]
+            },
+            {
+              "label": "ona · -ka, -ga",
+              "ending": "-a → [[-i]]",
+              "examples": [
+                "książka → książk[[i]]",
+                "noga → nog[[i]]",
+                "matka → matk[[i]]"
+              ]
+            },
+            {
+              "label": "on · -k, -g",
+              "ending": "+ [[-i]]",
+              "examples": [
+                "bank → bank[[i]]",
+                "ptak → ptak[[i]]",
+                "pociąg → pociąg[[i]]"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "title": "Крок за кроком",
+          "columns": [
+            "Крок",
+            "gazeta",
+            "park"
+          ],
+          "rows": [
+            [
+              "1. Прибери закінчення однини",
+              "gazet-",
+              "park"
+            ],
+            [
+              "2. Яка остання приголосна?",
+              "t — тверда",
+              "k"
+            ],
+            [
+              "3. Додай закінчення",
+              "gazet[[y]]",
+              "park[[i]]"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "Українською «книжки», польською — książk[[i]]. Після k, g ніколи не пишемо -y."
+        }
+      ]
+    },
+    {
+      "id": "e",
+      "accent": "sky",
+      "eyebrow": "Konspekt · 3",
+      "title": "Końcówka -e",
+      "question": "kuchnia → kuchnie, klucz → klucze",
+      "gloss": "м'які та «шиплячі» приголосні",
+      "cards": [
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "[[-e]] отримують іменники чоловічого і жіночого роду, у яких основа закінчується на: м'яку приголосну ń, ś, ź, ć, dź (перед голосною пишемо [[ni, si, zi, ci, dzi]]), на l, j або на c, cz, sz, rz, ż, dż. Сюди ж належать слова на -ia, -ja: lekcja, historia, alergia."
+        },
+        {
+          "kind": "tiles",
+          "title": "Закінчення -e",
+          "tiles": [
+            {
+              "label": "ona · -nia, -sia, -zia, -cia",
+              "ending": "-a → [[-e]]",
+              "examples": [
+                "kuchnia → kuchni[[e]]",
+                "babcia → babci[[e]]",
+                "ciocia → cioci[[e]]"
+              ]
+            },
+            {
+              "label": "ona · -ia, -ja (-gia, -kia)",
+              "ending": "-a → [[-e]]",
+              "examples": [
+                "lekcja → lekcj[[e]]",
+                "historia → histori[[e]]",
+                "alergia → alergi[[e]]"
+              ]
+            },
+            {
+              "label": "on · ń, ś, ź, ć, dź",
+              "ending": "+ [[-e]]",
+              "examples": [
+                "koń → koni[[e]]",
+                "liść → liści[[e]]",
+                "łabędź → łabędzi[[e]]"
+              ],
+              "hint": "ń → ni, ć → ci перед -e"
+            },
+            {
+              "label": "on, ona · l, j",
+              "ending": "[[-e]]",
+              "examples": [
+                "hotel → hotel[[e]]",
+                "kraj → kraj[[e]]",
+                "szyja → szyj[[e]]"
+              ]
+            },
+            {
+              "label": "c, cz, sz, rz, ż, dż",
+              "ending": "[[-e]]",
+              "examples": [
+                "ulica → ulic[[e]]",
+                "klucz → klucz[[e]]",
+                "talerz → talerz[[e]]"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "title": "Жіночий рід на приголосну",
+          "wide": true,
+          "columns": [
+            "Однина",
+            "Множина",
+            "Правило"
+          ],
+          "rows": [
+            [
+              "noc",
+              "noc[[e]]",
+              "як ulica → -e"
+            ],
+            [
+              "twarz",
+              "twarz[[e]]",
+              "-e"
+            ],
+            [
+              "dłoń",
+              "dłoni[[e]]",
+              "ń → ni + -e"
+            ],
+            [
+              "wiadomość",
+              "wiadomośc[[i]]",
+              "-ość, -ść → [[-i]]"
+            ],
+            [
+              "kość",
+              "kośc[[i]]",
+              "-ść → [[-i]]"
+            ],
+            [
+              "rzecz, mysz",
+              "rzecz[[y]], mysz[[y]]",
+              "запам'ятати"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "Не плутай: [[kuchnie]] — множина (te kuchnie są duże), а «kuchni» — родовий відмінок однини (nie ma kuchni). Так само: [[lekcje]] ≠ lekcji."
+        }
+      ]
+    },
+    {
+      "id": "ono",
+      "accent": "coral",
+      "eyebrow": "Konspekt · 4",
+      "title": "Rodzaj nijaki",
+      "question": "okno → okna",
+      "gloss": "середній рід",
+      "cards": [
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "Середній рід майже завжди має в множині [[-a]] — і неважливо, яка там приголосна."
+        },
+        {
+          "kind": "tiles",
+          "title": "Закінчення -a",
+          "tiles": [
+            {
+              "label": "-o",
+              "ending": "-o → [[-a]]",
+              "examples": [
+                "okno → okn[[a]]",
+                "jabłko → jabłk[[a]]",
+                "krzesło → krzesł[[a]]"
+              ]
+            },
+            {
+              "label": "-e",
+              "ending": "-e → [[-a]]",
+              "examples": [
+                "morze → morz[[a]]",
+                "pole → pol[[a]]",
+                "serce → serc[[a]]"
+              ]
+            },
+            {
+              "label": "-nie, -cie",
+              "ending": "-e → [[-a]]",
+              "examples": [
+                "mieszkanie → mieszkani[[a]]",
+                "zdjęcie → zdjęci[[a]]",
+                "zadanie → zadani[[a]]"
+              ]
+            },
+            {
+              "label": "-um",
+              "ending": "-um → [[-a]]",
+              "examples": [
+                "muzeum → muze[[a]]",
+                "centrum → centr[[a]]",
+                "liceum → lice[[a]]"
+              ],
+              "hint": "в однині не змінюються: w muzeum"
+            },
+            {
+              "label": "-ę",
+              "ending": "[[-ęta]] / [[-ona]]",
+              "examples": [
+                "zwierzę → zwierz[[ęta]]",
+                "kurczę → kurcz[[ęta]]",
+                "imię → im[[iona]]"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "Винятки середнього роду",
+          "items": [
+            "dziecko → [[dzieci]] (te dzieci)",
+            "oko → [[oczy]]",
+            "ucho → [[uszy]]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zmiany",
+      "accent": "yellow",
+      "eyebrow": "Konspekt · 5",
+      "title": "Zmiany w środku słowa",
+      "question": "stół → stoły, pies → psy",
+      "gloss": "чергування, винятки, тільки множина",
+      "cards": [
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "У множині слово стає на склад довшим, і голосна в останньому складі часто змінюється. Такі пари вчи разом: [[stół — stoły]]."
+        },
+        {
+          "kind": "table",
+          "title": "Чергування в чоловічому роді",
+          "wide": true,
+          "columns": [
+            "Зміна",
+            "Однина",
+            "Множина"
+          ],
+          "rows": [
+            [
+              "ó → o",
+              "stół, pokój, nóż",
+              "st[[o]]ły, pok[[o]]je, n[[o]]że"
+            ],
+            [
+              "ą → ę",
+              "ząb, gołąb",
+              "z[[ę]]by, goł[[ę]]bie"
+            ],
+            [
+              "e зникає",
+              "pies, ołówek, sen",
+              "psy, ołówki, sny"
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "Винятки — запам'ятай",
+          "items": [
+            "ręka → [[ręce]]",
+            "rok → [[lata]]",
+            "dzień → [[dni]], tydzień → [[tygodnie]]",
+            "dziecko → [[dzieci]], oko → [[oczy]], ucho → [[uszy]]",
+            "rzecz → [[rzeczy]], mysz → [[myszy]]"
+          ]
+        },
+        {
+          "kind": "table",
+          "title": "Тільки множина",
+          "wide": true,
+          "columns": [
+            "Słowo",
+            "Українською",
+            "Приклад"
+          ],
+          "rows": [
+            [
+              "drzwi",
+              "двері",
+              "Te drzwi [[są]] otwarte."
+            ],
+            [
+              "okulary",
+              "окуляри",
+              "Gdzie [[są]] moje okulary?"
+            ],
+            [
+              "spodnie",
+              "штани",
+              "Te spodnie [[są]] za długie."
+            ],
+            [
+              "urodziny",
+              "день народження",
+              "Moje urodziny [[są]] w maju."
+            ],
+            [
+              "wakacje",
+              "канікули, відпустка",
+              "Wakacje [[były]] super."
+            ],
+            [
+              "plecy",
+              "спина",
+              "Bolą mnie plecy."
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "Не кожне ó змінюється: góra → góry, ogórek → ogórki. Якщо не впевнений — перевір у словнику."
+        }
+      ]
+    },
+    {
+      "id": "zgoda",
+      "accent": "mint",
+      "eyebrow": "Konspekt · 6",
+      "title": "Te nowe książki są moje",
+      "question": "te · moje · nowe · są · były",
+      "gloss": "узгодження і знахідний відмінок",
+      "cards": [
+        {
+          "kind": "note",
+          "wide": true,
+          "text": "У групі te змінюється не тільки іменник. Займенник → [[te, moje, nasze]], прикметник → [[-e]], дієслово в минулому часі → [[-ły]]."
+        },
+        {
+          "kind": "table",
+          "title": "Jeden → wiele",
+          "wide": true,
+          "columns": [
+            "Однина",
+            "Множина"
+          ],
+          "rows": [
+            [
+              "ten nowy dom",
+              "[[te]] now[[e]] dom[[y]]"
+            ],
+            [
+              "ta mała kuchnia",
+              "[[te]] mał[[e]] kuchni[[e]]"
+            ],
+            [
+              "to duże okno",
+              "[[te]] duż[[e]] okn[[a]]"
+            ],
+            [
+              "mój stary pies",
+              "moj[[e]] star[[e]] ps[[y]]"
+            ],
+            [
+              "Ta książka jest ciekawa.",
+              "Te książki [[są]] ciekaw[[e]]."
+            ],
+            [
+              "Kot był głodny.",
+              "Koty [[były]] głodn[[e]]."
+            ],
+            [
+              "Ania mieszkała w Krakowie.",
+              "Ania i Ola [[mieszkały]] w Krakowie."
+            ]
+          ]
+        },
+        {
+          "kind": "compare",
+          "title": "Знахідний = називний",
+          "left": {
+            "head": "Mianownik · kto? co?",
+            "lines": [
+              "To są [[nowe kurtki]].",
+              "Te [[psy]] szczekają."
+            ]
+          },
+          "right": {
+            "head": "Biernik · kogo? co?",
+            "lines": [
+              "Kupuję [[nowe kurtki]].",
+              "Widzę te [[psy]]."
+            ]
+          }
+        },
+        {
+          "kind": "table",
+          "title": "Числа 2, 3, 4",
+          "columns": [
+            "ona",
+            "on",
+            "ono"
+          ],
+          "rows": [
+            [
+              "[[dwie]] książki",
+              "[[dwa]] domy",
+              "[[dwa]] okna"
+            ],
+            [
+              "trzy książki",
+              "trzy domy",
+              "trzy okna"
+            ],
+            [
+              "cztery książki",
+              "cztery domy",
+              "cztery okna"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "text": "Від 5 — інша форма: pięć kotów, pięć książek. Це окрема тема."
+        },
+        {
+          "kind": "traps",
+          "title": "Пастки з української",
+          "wide": true,
+          "traps": [
+            {
+              "uk": "ці книжки",
+              "wrong": "ci książki",
+              "right": "[[te]] książki",
+              "why": "ci — тільки для чоловіків"
+            },
+            {
+              "uk": "ці собаки",
+              "wrong": "ci psy",
+              "right": "[[te]] psy",
+              "why": "тварини → te"
+            },
+            {
+              "uk": "дівчата були",
+              "wrong": "dziewczyny byli",
+              "right": "dziewczyny [[były]]",
+              "why": "група te → -ły"
+            },
+            {
+              "uk": "книжки",
+              "wrong": "książky",
+              "right": "książk[[i]]",
+              "why": "після k, g → -i"
+            },
+            {
+              "uk": "кухні (багато)",
+              "wrong": "kuchni",
+              "right": "kuchni[[e]]",
+              "why": "kuchni — це «нема кухні»"
+            },
+            {
+              "uk": "нові вікна",
+              "wrong": "nowi okna",
+              "right": "now[[e]] okna",
+              "why": "прикметник у групі te → -e"
+            },
+            {
+              "uk": "мій день народження",
+              "wrong": "moje urodziny jest",
+              "right": "moje urodziny [[są]]",
+              "why": "urodziny — тільки множина"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
