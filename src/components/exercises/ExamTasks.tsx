@@ -1,7 +1,8 @@
 'use client';
 
-import { useMemo, useRef } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { Headphones, Lightbulb, Play } from 'lucide-react';
+import { AudioTransport } from './AudioTransport';
 import { trackAttempt } from '@/lib/embed-tracker';
 import { Feedback, ResetControl, RestoredNote } from './nb-ui';
 import { usePersistentState } from '@/lib/embed-progress';
@@ -66,6 +67,19 @@ export function ExamTasks({ data, blockIds }: Props) {
   const setShowExplain = field('showExplain');
   const setPlays = field('plays');
   const audioRefs = useRef<Record<string, HTMLAudioElement | null>>({});
+  const [audioState, setAudioState] = useState<Record<string, 'playing' | 'paused'>>({});
+  const setAud = (id: string, st: 'playing' | 'paused' | null) =>
+    setAudioState((m) => {
+      const n = { ...m };
+      if (st) n[id] = st;
+      else delete n[id];
+      return n;
+    });
+  const audioRefFor = (id: string) => ({
+    get current() {
+      return audioRefs.current[id] ?? null;
+    },
+  });
 
   const correctSet = (item: ExamItem): string[] => {
     if (typeof item.answer === 'boolean') return [item.answer ? 'true' : 'false'];
@@ -105,29 +119,55 @@ export function ExamTasks({ data, blockIds }: Props) {
                     }}
                     src={block.audio_url}
                     preload="none"
+                    onEnded={() => setAud(block.block_id, null)}
                   />
-                  <button
-                    type="button"
-                    className="nb-btn"
-                    disabled={
-                      block.max_plays != null &&
-                      (plays[block.block_id] ?? 0) >= block.max_plays
-                    }
-                    onClick={() => {
-                      const el = audioRefs.current[block.block_id];
-                      if (!el) return;
-                      const used = plays[block.block_id] ?? 0;
-                      if (block.max_plays != null && used >= block.max_plays) return;
-                      el.currentTime = 0;
-                      void el.play();
-                      setPlays((p) => ({ ...p, [block.block_id]: used + 1 }));
-                    }}
-                  >
-                    <Play aria-hidden fill="currentColor" /> Odsłuchaj
-                    {block.max_plays != null
-                      ? ` (${plays[block.block_id] ?? 0}/${block.max_plays})`
-                      : ''}
-                  </button>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px 14px' }}>
+                    <button
+                      type="button"
+                      className="nb-btn"
+                      disabled={
+                        !audioState[block.block_id] &&
+                        block.max_plays != null &&
+                        (plays[block.block_id] ?? 0) >= block.max_plays
+                      }
+                      onClick={() => {
+                        const el = audioRefs.current[block.block_id];
+                        if (!el) return;
+                        const st = audioState[block.block_id];
+                        if (st === 'playing') {
+                          el.pause();
+                          setAud(block.block_id, 'paused');
+                          return;
+                        }
+                        if (st === 'paused') {
+                          void el.play();
+                          setAud(block.block_id, 'playing');
+                          return;
+                        }
+                        const used = plays[block.block_id] ?? 0;
+                        if (block.max_plays != null && used >= block.max_plays) return;
+                        el.currentTime = 0;
+                        void el.play();
+                        setAud(block.block_id, 'playing');
+                        setPlays((p) => ({ ...p, [block.block_id]: used + 1 }));
+                      }}
+                    >
+                      <Play aria-hidden fill="currentColor" />{' '}
+                      {audioState[block.block_id] === 'playing'
+                        ? 'Pauza'
+                        : audioState[block.block_id] === 'paused'
+                          ? 'Wznów'
+                          : 'Odsłuchaj'}
+                      {block.max_plays != null
+                        ? ` (${plays[block.block_id] ?? 0}/${block.max_plays})`
+                        : ''}
+                    </button>
+                    <AudioTransport
+                      audioRef={audioRefFor(block.block_id)}
+                      enabled={!!audioState[block.block_id]}
+                      onStop={() => setAud(block.block_id, 'paused')}
+                    />
+                  </div>
                 </>
               ) : block.transcript?.length ? (
                 <p className="nb-note" style={{ marginTop: 0 }}>

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { Play } from 'lucide-react';
+import { AudioTransport } from './AudioTransport';
 
 type Props = {
   src?: string;
@@ -23,6 +24,7 @@ export function AudioCassette({
   const [playsLeft, setPlaysLeft] = useState(maxPlays ?? 99);
   const [speed, setSpeed] = useState(defaultSpeed);
   const [playing, setPlaying] = useState(false);
+  const [paused, setPaused] = useState(false);
   const limited = maxPlays != null;
   const disabled = limited && playsLeft <= 0;
 
@@ -33,12 +35,26 @@ export function AudioCassette({
   const finishPlay = () => {
     if (!playing) return;
     setPlaying(false);
+    setPaused(false);
     if (limited) setPlaysLeft((n) => Math.max(0, n - 1));
   };
 
   const play = () => {
+    const cur = audioRef.current;
+    if (playing && cur && src) {
+      // session already running: toggle pause / resume
+      if (paused) {
+        void cur.play().catch(() => undefined);
+        setPaused(false);
+      } else {
+        cur.pause();
+        setPaused(true);
+      }
+      return;
+    }
     if (disabled || playing) return;
     setPlaying(true);
+    setPaused(false);
     const el = audioRef.current;
     if (el && src) {
       el.playbackRate = speed;
@@ -65,10 +81,13 @@ export function AudioCassette({
         className="nb-btn"
         data-role="audio-play"
         data-plays-left={limited ? String(playsLeft) : undefined}
-        disabled={disabled}
+        disabled={disabled && !playing}
         onClick={play}
+        aria-label={playing ? (paused ? 'Wznów' : 'Pauza') : label}
       >
-        {playing ? (
+        {playing && paused ? (
+          <Play aria-hidden fill="currentColor" />
+        ) : playing ? (
           <span className="nb-eq" aria-hidden>
             <i />
             <i />
@@ -77,12 +96,19 @@ export function AudioCassette({
         ) : (
           <Play aria-hidden fill="currentColor" />
         )}
-        {label}
+        {playing ? (paused ? 'Wznów' : 'Pauza') : label}
       </button>
       {limited ? (
         <span className="nb-cassette-left">
           {playsLeft > 0 ? `odsłuchy: ${playsLeft}` : 'brak odsłuchów'}
         </span>
+      ) : null}
+      {src ? (
+        <AudioTransport
+          audioRef={audioRef}
+          enabled={playing}
+          onStop={() => setPaused(true)}
+        />
       ) : null}
       <div className="nb-cassette-speeds" aria-label="Prędkość">
         {SPEEDS.map((s) => (

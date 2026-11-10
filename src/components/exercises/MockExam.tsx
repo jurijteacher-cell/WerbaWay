@@ -1,6 +1,7 @@
 'use client';
 
 import { Fragment, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { AudioTransport } from './AudioTransport';
 import type { PublicMockExam, MockScore, ItemResult } from '@/lib/mock-exam/core';
 
 type Section = PublicMockExam['sections'][number];
@@ -996,7 +997,6 @@ function AudioPlayer({ task, ctx }: { task: Task; ctx: Ctx }) {
   const audio = task.audio!;
   const ref = useRef<HTMLAudioElement | null>(null);
   const [state, setState] = useState<'idle' | 'playing' | 'paused'>('idle');
-  const [pos, setPos] = useState(0);
   const used = ctx.plays[task.id] ?? 0;
   const left = Math.max(0, audio.max_plays - used);
   if (ctx.locked) {
@@ -1039,21 +1039,18 @@ function AudioPlayer({ task, ctx }: { task: Task; ctx: Ctx }) {
         ref={ref}
         preload="auto"
         src={audio.src}
-        onTimeUpdate={(e) => {
-          const el = e.currentTarget;
-          setPos(el.duration ? el.currentTime / el.duration : 0);
-        }}
         onEnded={() => {
           setState('idle');
-          setPos(0);
         }}
       />
       <button type="button" className="nb-btn" disabled={state === 'idle' && left <= 0} onClick={play}>
         {label}
       </button>
-      <div className="mx-audio-bar">
-        <i style={{ width: `${pos * 100}%` }} />
-      </div>
+      <AudioTransport
+        audioRef={ref}
+        enabled={state !== 'idle'}
+        onStop={() => setState('paused')}
+      />
       <span className="mx-audio-note">
         {audio.note ?? (audio.max_plays === 1 ? 'Nagranie usłyszysz jeden raz.' : `Nagranie usłyszysz ${audio.max_plays} razy.`)}
       </span>
