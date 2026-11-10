@@ -82,7 +82,7 @@ Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 | 49 | 1.1 | ✅ | 49 · Szukam pracy | `pl-a2-49-szukam-pracy` (2026-11-04); граматика з `pl-preg-07-zakupy-i-budzet` | `dopelniacz-przyimki` (+ *szukać, potrzebować, uczyć się* + D.) | родовий з 48 | оголошення, CV, дзвінок у справі оголошення |
 | 50 | 1.2 | ✅ | 07 · Moja praca to moja pasja! Zawody, warunki i rozmowa o pracę | `pl-a2-mow-07-praca` | `przyimki-czasu` (od kiedy, jak długo), *pracuję jako*, *powinienem* (вступ) | `narzednik-zawod-z`, `dopelniacz-przyimki` | професії, співбесіда |
 | 51 | 1.3 | ✅ | 51 · Umowa i urlop | `pl-a2-51-umowa-i-urlop` (2026-11-05); граматика `pl-b1-group-02-wydarzenia`, спрощена до A2 (порядкові, повна дата, *od … do*) | `liczebniki-porzadkowe`, `data-pelna` | `przyimki-czasu`, `godzina` | договір, графік, відпустка |
-| 52 | 1.4 | 🆕 | Poznaję zespół | — | `zaimki-osobowe-przypadki` | `biernik-rzeczownik`, `pan-pani` | перший день, офіс, колеги |
+| 52 | 1.4 | ✅ | 52 · Poznaję zespół | `pl-a2-52-poznaje-zespol` (2026-11-09) | `zaimki-osobowe-przypadki` | `biernik-rzeczownik`, `pan-pani` | перший день, офіс, колеги |
 | 53 | 1.5 | ♻️ | Z kim pracuję | граматика `pl-preg-06-wizyta-po-pologu` (орудний: прикметник, *być kimś*, прийменники) | `narzednik-pelny` | `zaimki-osobowe-przypadki`, `narzednik-zawod-z` | відділи, посади, наради |
 | 54 | 1.6 | 🆕 | Powtórka: praca | — | — | теги M1 | перший місяць у фірмі |
 | 55 | 1.7 | 🆕 | Kontrolna: praca | — | — | теги M1 | Taras питає про роботу |
@@ -145,7 +145,7 @@ Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 | 87 | 6.4 | 🆕 | Powtórka generalna | — | — | усі A2 | Olena допомагає новачку |
 | 88 | 6.5 | 🆕 | Egzamin A2 (2 × 60 хв) | — | — | усі A2 | — |
 
-**Разом:** 42 одиниці = 5 ✅ · 11 ♻️ · 26 🆕 (план v1.0). Готово на 2026-11-05: 7 (47, 48, 49, 50, 51, 70, 71). Контакт 43 год (42 уроки × 60 хв + друге заняття іспиту) + домашка ~0,5 год на урок ≈ 64 год. Темп 2 уроки на тиждень — 21 тиждень.
+**Разом:** 42 одиниці = 5 ✅ · 11 ♻️ · 26 🆕 (план v1.0). Готово на 2026-11-09: 8 (47, 48, 49, 50, 51, 52, 70, 71). Контакт 43 год (42 уроки × 60 хв + друге заняття іспиту) + домашка ~0,5 год на урок ≈ 64 год. Темп 2 уроки на тиждень — 21 тиждень.
 
 ## 5. Як переробляти уроки ♻️
 
@@ -216,7 +216,7 @@ grammar_points_a2:
 | Черга | Уроки | Що робити |
 |---|---|---|
 | 1 | ~~49 Szukam pracy~~ | ✅ 2026-11-04; модуль «Польська A2» (`pl-a2`) створено |
-| 2 | ~~51~~, 52, 53 | ✅ 51 (2026-11-05); 🆕 займенники; ♻️ орудний з `pl-preg-06` |
+| 2 | ~~51~~, ~~52~~, 53 | ✅ 51 (2026-11-05); ✅ 52 (2026-11-09, перший урок з аудіо e2 ElevenLabs); ♻️ орудний з `pl-preg-06` |
 | 3 | 54, 55 | повторення й контрольна M1 |
 | 4 | 56–62 | M2: вид (♻️ `pl-preg-02` на три уроки), *kiedy / zanim*, місцевий (♻️ `pl-preg-05`) |
 | 5 | 63–69 | M3 |
