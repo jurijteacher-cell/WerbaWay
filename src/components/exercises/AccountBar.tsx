@@ -21,6 +21,8 @@ import {
 
 /** Embeds where answers are checked and recorded */
 const TRACKED = /^\/embed\/[^/]+\/(grammar|hw|exam|mock-exam|grammar-board)(\/|$)/;
+/** Only the mock exam requires an account; elsewhere logging in is optional */
+const REQUIRED = /^\/embed\/[^/]+\/mock-exam(\/|$)/;
 
 type Mode = 'login' | 'register' | 'forgot';
 
@@ -32,11 +34,29 @@ export function AccountBar() {
   const pathname = usePathname() ?? '';
   const a = useSyncExternalStore(subscribe, getState, getServerState);
   const t = useSyncExternalStore(trackerSubscribe, trackerState, trackerServer);
+  const [open, setOpen] = useState(false);
 
   if (!EMBED_RESULTS_ENABLED || !TRACKED.test(pathname)) return null;
   if (!a.ready) return null;
 
-  if (!a.userId) return <LoginWall />;
+  if (!a.userId) {
+    if (REQUIRED.test(pathname)) return <LoginWall />;
+    return (
+      <>
+        <div className="nb-codebar nb-codebar-ask">
+          <span>
+            {t.pending > 0
+              ? `Zaloguj się, żeby zapisać wyniki (${t.pending})`
+              : 'Zaloguj się, żeby zapisywać wyniki'}
+          </span>
+          <button type="button" className="nb-btn" onClick={() => setOpen(true)}>
+            Zaloguj się
+          </button>
+        </div>
+        {open ? <LoginWall onClose={() => setOpen(false)} /> : null}
+      </>
+    );
+  }
 
   return (
     <div className="nb-codebar" title="Twoje odpowiedzi widzi nauczyciel">
@@ -53,7 +73,7 @@ export function AccountBar() {
   );
 }
 
-function LoginWall() {
+function LoginWall({ onClose }: { onClose?: () => void }) {
   const a = useSyncExternalStore(subscribe, getState, getServerState);
   const [mode, setMode] = useState<Mode>('login');
   const [email, setEmail] = useState('');
@@ -104,7 +124,13 @@ function LoginWall() {
   const err = localErr ?? a.error;
 
   return (
-    <div className="nb-authwall" role="dialog" aria-modal="true" aria-labelledby="nb-auth-title">
+    <div
+      className="nb-authwall"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="nb-auth-title"
+      onClick={onClose ? (e) => e.target === e.currentTarget && onClose() : undefined}
+    >
       <form
         className="nb-authcard"
         onSubmit={(e) => {
@@ -112,6 +138,11 @@ function LoginWall() {
           void submit();
         }}
       >
+        {onClose ? (
+          <button type="button" className="nb-authclose" aria-label="Zamknij" onClick={onClose}>
+            ✕
+          </button>
+        ) : null}
         <h2 id="nb-auth-title">
           {mode === 'login' ? 'Zaloguj się' : mode === 'register' ? 'Załóż konto' : 'Nie pamiętam hasła'}
         </h2>

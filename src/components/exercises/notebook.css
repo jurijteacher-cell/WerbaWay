@@ -3271,3 +3271,22 @@
     grid-template-columns: 1fr;
   }
 }
+.nb-authcard {
+  position: relative;
+}
+.nb-authclose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--nb-paper-2);
+  color: var(--nb-ink-soft);
+  font-size: 15px;
+  cursor: pointer;
+}
+.nb-authclose:hover {
+  color: var(--nb-ink);
+}
