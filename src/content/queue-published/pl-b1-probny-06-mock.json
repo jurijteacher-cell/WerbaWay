@@ -1,0 +1,1741 @@
+{
+  "lesson_id": "pl-b1-probny-06",
+  "exercise_type": "mock-exam",
+  "exam_label": "Egzamin 6",
+  "title": "Egzamin próbny B1 · 6",
+  "subtitle": "Pełna część pisemna: słuchanie, czytanie, gramatyka, pisanie",
+  "eyebrow": "egzamin próbny · B1 państwowy",
+  "source": "Materiały własne Werba Way w formacie egzaminu państwowego B1. Nagrania: głosy syntetyczne.",
+  "pass_ratio": 0.5,
+  "rules": [
+    "Słuchanie: nagranie do zadań 1, 2 i 5 włączysz jeden raz (w zadaniach 2 i 5 powtórzenie jest w nagraniu), nagrania do zadań 3 i 4 — dwa razy.",
+    "Bez słownika i tłumacza. Możesz przechodzić między częściami.",
+    "Na egzaminie trzeba mieć co najmniej 50% w każdej części.",
+    "Wypowiedź pisemną oceni nauczyciel."
+  ],
+  "sections": [
+    {
+      "id": "rs",
+      "tab": "Słuchanie",
+      "title": "Rozumienie ze słuchu",
+      "minutes": 30,
+      "tasks": [
+        {
+          "id": "rs1",
+          "title": "Zadanie 1",
+          "layout": "mc-passages",
+          "points_per_item": 0.5,
+          "instruction": "Proszę wysłuchać nagrań i zaznaczyć prawidłową odpowiedź. Każde nagranie usłyszysz jeden raz.",
+          "audio": {
+            "src": "/audio/pl-b1-probny-06/b1-sluchanie-1.mp3",
+            "max_plays": 1
+          },
+          "transcript": "Lektor: Rozumienie ze słuchu. Zadanie pierwsze. Proszę wysłuchać nagrań i zaznaczyć prawidłową odpowiedź: a, b albo c. Każde nagranie usłyszysz jeden raz. Przykład.\nNagranie: Poproszę dwa bilety ulgowe na seans o dwudziestej. Najlepiej w środkowym rzędzie.\n\nLektor: Numer jeden.\nNagranie: Przepraszam, że dzwonię tak późno, ale wcześniej naprawdę nie mogłem.\n\nLektor: Numer dwa.\nNagranie: Proszę się nie ruszać i głęboko oddychać. Jeszcze chwileczkę… Dziękuję, może się pan już ubrać.\n\nLektor: Numer trzy.\nNagranie: Prosimy o wyłączenie telefonów komórkowych. Spektakl rozpocznie się za pięć minut.\n\nLektor: Numer cztery.\nNagranie: Na twoim miejscu wziąłbym parasol. W radiu mówili, że po południu będzie lało.\n\nLektor: Numer pięć.\nNagranie: Gratuluję! Wiedziałam, że zdasz ten egzamin za pierwszym razem!\n\nLektor: Numer sześć.\nNagranie: Poproszę pięć znaczków na listy do Niemiec. I chciałbym jeszcze wysłać ten list jako polecony.\n\nLektor: Numer siedem.\nNagranie: Nie, nie pożyczę ci samochodu. Ostatnim razem oddałeś go z pustym bakiem.\n\nLektor: Numer osiem.\nNagranie: Bilety do kontroli, proszę. Niestety, pana bilet nie jest skasowany.\n\nLektor: Numer dziewięć.\nNagranie: No nie! Znowu ktoś zaparkował na moim miejscu! Ile razy można to powtarzać?\n\nLektor: Numer dziesięć.\nNagranie: Tę samą sukienkę, ale w rozmiarze trzydzieści osiem? Zaraz sprawdzę, czy mamy ją na zapleczu.\n\nLektor: Numer jedenaście.\nNagranie: Może zostaniesz na kolacji? Zrobiłam pierogi, starczy dla wszystkich.\n\nLektor: Numer dwanaście.\nNagranie: Czy mógłby pan mówić trochę wolniej? Nie wszystko rozumiem.\n\nLektor: Numer trzynaście.\nNagranie: Ojej, to już jedenasta? Nawet nie zauważyłem, kiedy minął ten czas!\n\nLektor: Numer czternaście.\nNagranie: Owoce trzeba zważyć samemu. Waga stoi obok bananów, a naklejkę proszę przykleić na torebkę.\n\nLektor: Koniec zadania pierwszego.",
+          "example": {
+            "stem": "Gdzie można usłyszeć tę wypowiedź?",
+            "options": [
+              "w kinie",
+              "w teatrze",
+              "w muzeum"
+            ],
+            "answer": "a"
+          },
+          "items": [
+            {
+              "id": "rs1-1",
+              "stem": "To jest",
+              "options": [
+                "przeprosiny.",
+                "prośba.",
+                "skarga."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "rs1-2",
+              "stem": "Kto to mówi?",
+              "options": [
+                "fotograf",
+                "lekarz",
+                "fryzjer"
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "rs1-3",
+              "stem": "Gdzie można usłyszeć ten komunikat?",
+              "options": [
+                "w kinie",
+                "w samolocie",
+                "w teatrze"
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "rs1-4",
+              "stem": "To jest",
+              "options": [
+                "obietnica.",
+                "pochwała.",
+                "rada."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "rs1-5",
+              "stem": "Ta osoba",
+              "options": [
+                "jest zdziwiona.",
+                "się cieszy.",
+                "jest zła."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "rs1-6",
+              "stem": "Gdzie można usłyszeć tę wypowiedź?",
+              "options": [
+                "na poczcie",
+                "w urzędzie miasta",
+                "w banku"
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "rs1-7",
+              "stem": "To jest",
+              "options": [
+                "propozycja.",
+                "przeprosiny.",
+                "odmowa."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "rs1-8",
+              "stem": "Kto to mówi?",
+              "options": [
+                "kierowca",
+                "kasjer",
+                "kontroler biletów"
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "rs1-9",
+              "stem": "Ta osoba jest",
+              "options": [
+                "zdenerwowana.",
+                "smutna.",
+                "zaskoczona."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "rs1-10",
+              "stem": "Kto to mówi?",
+              "options": [
+                "krawcowa",
+                "sprzedawczyni",
+                "projektantka mody"
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "rs1-11",
+              "stem": "To jest",
+              "options": [
+                "prośba.",
+                "rada.",
+                "zaproszenie."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "rs1-12",
+              "stem": "To jest",
+              "options": [
+                "skarga.",
+                "prośba.",
+                "pytanie o drogę."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "rs1-13",
+              "stem": "Ta osoba jest",
+              "options": [
+                "zdziwiona.",
+                "zmęczona.",
+                "zła."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "rs1-14",
+              "stem": "Gdzie można usłyszeć tę wypowiedź?",
+              "options": [
+                "na targu",
+                "w supermarkecie",
+                "w piekarni"
+              ],
+              "answer": "b"
+            }
+          ]
+        },
+        {
+          "id": "rs2",
+          "title": "Zadanie 2",
+          "layout": "mc-passages",
+          "points_per_item": 1,
+          "instruction": "Proszę wysłuchać siedmiu dialogów i zaznaczyć prawidłową odpowiedź. Każdy dialog usłyszysz dwa razy.",
+          "audio": {
+            "src": "/audio/pl-b1-probny-06/b1-sluchanie-2.mp3",
+            "max_plays": 1,
+            "note": "Nagranie włączysz raz — każdy dialog jest w nim powtórzony dwa razy, jak na egzaminie."
+          },
+          "transcript": "Lektor: Zadanie drugie. Proszę wysłuchać siedmiu dialogów i zaznaczyć prawidłową odpowiedź. Każdy dialog usłyszysz dwa razy. Przykład.\nŻona: Kupiłeś chleb?\nMąż: Nie, piekarnia była już zamknięta. Kupiłem bułki na stacji benzynowej.\nŻona: Dobrze, na śniadanie wystarczą.\n\nŻona: Kupiłeś chleb?\nMąż: Nie, piekarnia była już zamknięta. Kupiłem bułki na stacji benzynowej.\nŻona: Dobrze, na śniadanie wystarczą.\n\nLektor: Dialog jeden.\nPacjentka: Dzień dobry, chciałabym się zapisać do dermatologa.\nRecepcjonistka: Najbliższy wolny termin jest za trzy tygodnie, w czwartek. Ale jeśli ktoś odwoła wizytę, możemy do pani zadzwonić.\nPacjentka: To proszę mnie zapisać na ten czwartek. A gdyby coś zwolniło się wcześniej, proszę dać mi znać.\n\nPacjentka: Dzień dobry, chciałabym się zapisać do dermatologa.\nRecepcjonistka: Najbliższy wolny termin jest za trzy tygodnie, w czwartek. Ale jeśli ktoś odwoła wizytę, możemy do pani zadzwonić.\nPacjentka: To proszę mnie zapisać na ten czwartek. A gdyby coś zwolniło się wcześniej, proszę dać mi znać.\n\nLektor: Dialog dwa.\nKobieta: Idziesz z nami na lunch?\nMężczyzna: Chętnie, tylko nie do tej pizzerii co zawsze.\nKobieta: To może do baru wegetariańskiego?\nMężczyzna: Byłem tam wczoraj. Chodźmy do tej nowej tajskiej restauracji na rogu.\n\nKobieta: Idziesz z nami na lunch?\nMężczyzna: Chętnie, tylko nie do tej pizzerii co zawsze.\nKobieta: To może do baru wegetariańskiego?\nMężczyzna: Byłem tam wczoraj. Chodźmy do tej nowej tajskiej restauracji na rogu.\n\nLektor: Dialog trzy.\nGość: Dzień dobry, mam rezerwację na nazwisko Wiśniewski. Pokój dwuosobowy.\nRecepcjonistka: Tak, widzę. Niestety pokój z widokiem na morze jest jeszcze sprzątany. Mogą państwo zostawić bagaż w recepcji.\nGość: W porządku. To pójdziemy na spacer i wrócimy za godzinę.\n\nGość: Dzień dobry, mam rezerwację na nazwisko Wiśniewski. Pokój dwuosobowy.\nRecepcjonistka: Tak, widzę. Niestety pokój z widokiem na morze jest jeszcze sprzątany. Mogą państwo zostawić bagaż w recepcji.\nGość: W porządku. To pójdziemy na spacer i wrócimy za godzinę.\n\nLektor: Dialog cztery.\nSyn: Tato, mogę w sobotę pojechać z Kubą na rowerach nad jezioro?\nOjciec: Sami? Przecież to trzydzieści kilometrów.\nSyn: Pojedzie z nami jego starszy brat.\nOjciec: No dobrze. Ale masz wrócić przed zmrokiem i weź kask.\n\nSyn: Tato, mogę w sobotę pojechać z Kubą na rowerach nad jezioro?\nOjciec: Sami? Przecież to trzydzieści kilometrów.\nSyn: Pojedzie z nami jego starszy brat.\nOjciec: No dobrze. Ale masz wrócić przed zmrokiem i weź kask.\n\nLektor: Dialog pięć.\nKlientka: Dzień dobry, odbieram płaszcz. Numer czterdzieści dwa.\nPracownik: Proszę chwilę poczekać… Przepraszam panią, płaszcz będzie gotowy dopiero jutro. Ta plama okazała się trudniejsza, niż myśleliśmy.\nKlientka: A mogę dzisiaj przynajmniej zapłacić?\nPracownik: Płaci się przy odbiorze.\n\nKlientka: Dzień dobry, odbieram płaszcz. Numer czterdzieści dwa.\nPracownik: Proszę chwilę poczekać… Przepraszam panią, płaszcz będzie gotowy dopiero jutro. Ta plama okazała się trudniejsza, niż myśleliśmy.\nKlientka: A mogę dzisiaj przynajmniej zapłacić?\nPracownik: Płaci się przy odbiorze.\n\nLektor: Dialog sześć.\nSąsiadka: Słyszał pan, że w sobotę jest zebranie mieszkańców?\nSąsiad: Słyszałem, ale przenieśli je na niedzielę po południu. Na drzwiach wisi nowa kartka.\nSąsiadka: To dobrze, bo w sobotę wyjeżdżam.\n\nSąsiadka: Słyszał pan, że w sobotę jest zebranie mieszkańców?\nSąsiad: Słyszałem, ale przenieśli je na niedzielę po południu. Na drzwiach wisi nowa kartka.\nSąsiadka: To dobrze, bo w sobotę wyjeżdżam.\n\nLektor: Dialog siedem.\nKobieta: Zapisałeś się w końcu na kurs angielskiego?\nMężczyzna: Chciałem, ale grupa wieczorowa była już pełna.\nKobieta: I co teraz?\nMężczyzna: Firma zapłaci mi za lekcje z lektorem przez internet. Dwa razy w tygodniu.\n\nKobieta: Zapisałeś się w końcu na kurs angielskiego?\nMężczyzna: Chciałem, ale grupa wieczorowa była już pełna.\nKobieta: I co teraz?\nMężczyzna: Firma zapłaci mi za lekcje z lektorem przez internet. Dwa razy w tygodniu.\n\nLektor: Koniec zadania drugiego.",
+          "example": {
+            "stem": "Mąż kupił",
+            "options": [
+              "chleb w piekarni.",
+              "bułki na stacji benzynowej.",
+              "nic, bo wszystko było zamknięte."
+            ],
+            "answer": "b"
+          },
+          "items": [
+            {
+              "id": "rs2-1",
+              "stem": "Pacjentka",
+              "options": [
+                "zrezygnowała z wizyty.",
+                "ma wizytę u lekarza jeszcze w tym tygodniu.",
+                "zapisała się na wizytę za trzy tygodnie."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "rs2-2",
+              "stem": "Koledzy pójdą na lunch",
+              "options": [
+                "do pizzerii.",
+                "do tajskiej restauracji.",
+                "do baru wegetariańskiego."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "rs2-3",
+              "stem": "Goście hotelowi",
+              "options": [
+                "od razu wchodzą do pokoju.",
+                "dostali pokój bez widoku na morze.",
+                "wrócą do hotelu za godzinę."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "rs2-4",
+              "stem": "Ojciec",
+              "options": [
+                "pozwala synowi jechać, ale stawia warunki.",
+                "nie zgadza się na wycieczkę.",
+                "pojedzie razem z chłopcami."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "rs2-5",
+              "stem": "Klientka",
+              "options": [
+                "odbierze płaszcz następnego dnia.",
+                "zapłaci za usługę dzisiaj.",
+                "odebrała już płaszcz."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "rs2-6",
+              "stem": "Zebranie mieszkańców odbędzie się",
+              "options": [
+                "w sobotę.",
+                "w niedzielę.",
+                "w innym terminie, który nie jest jeszcze znany."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "rs2-7",
+              "stem": "Mężczyzna",
+              "options": [
+                "chodzi na kurs wieczorowy.",
+                "sam płaci za lekcje.",
+                "będzie uczył się przez internet."
+              ],
+              "answer": "c"
+            }
+          ]
+        },
+        {
+          "id": "rs3",
+          "title": "Zadanie 3",
+          "layout": "true-false",
+          "points_per_item": 1,
+          "instruction": "Proszę wysłuchać wywiadu z tłumaczką języka migowego i zaznaczyć: TAK – jeśli zdanie jest zgodne z nagraniem, NIE – jeśli nie jest zgodne. Nagranie usłyszysz dwa razy.",
+          "audio": {
+            "src": "/audio/pl-b1-probny-06/b1-sluchanie-3.mp3",
+            "max_plays": 2
+          },
+          "transcript": "Lektor: Zadanie trzecie. Proszę wysłuchać wywiadu z tłumaczką języka migowego i zaznaczyć: TAK – jeśli zdanie jest zgodne z nagraniem, NIE – jeśli nie jest zgodne. Nagranie usłyszysz dwa razy.\nDziennikarz: Dzień dobry. Moim gościem jest Karolina Mazur, tłumaczka polskiego języka migowego. Pani Karolino, jak to się zaczęło?\nKarolina Mazur: Moi rodzice są głusi, więc język migowy był moim pierwszym językiem. Mówić po polsku nauczyłam się od babci i w przedszkolu. Ale tłumaczką wcale nie chciałam być. Skończyłam ekonomię i przez kilka lat pracowałam w biurze.\nDziennikarz: Co zmieniło pani zdanie?\nKarolina Mazur: Kiedyś tata trafił do szpitala, a tam nie było tłumacza. Lekarze rozmawiali z nim, pisząc na kartkach. Wtedy zrozumiałam, jak bardzo ta praca jest potrzebna. Zrobiłam kurs i zdałam egzamin.\nDziennikarz: Gdzie pani dziś pracuje?\nKarolina Mazur: Najczęściej w urzędach i w przychodniach, czasem w sądzie. Tłumaczę też wiadomości w telewizji, ale tylko dwa razy w miesiącu.\nDziennikarz: Czy język migowy jest taki sam na całym świecie?\nKarolina Mazur: To bardzo popularny mit. Każdy kraj ma swój własny język migowy. Polski różni się na przykład od czeskiego czy od ukraińskiego. A nawet w Polsce są różnice regionalne, trochę jak dialekty.\nDziennikarz: Co jest w tej pracy najtrudniejsze?\nKarolina Mazur: Tempo. Ludzie mówią szybko, a ja muszę jednocześnie słuchać, rozumieć i migać. Po godzinie tłumaczenia jestem bardziej zmęczona niż kiedyś po całym dniu w biurze. Dlatego przy dłuższych spotkaniach pracujemy w parach i zmieniamy się co dwadzieścia minut.\nDziennikarz: Czy osoby słyszące mogą się nauczyć migać?\nKarolina Mazur: Oczywiście. Na kursy podstawowe przychodzą na przykład pielęgniarki, sprzedawcy, urzędnicy. Wystarczy kilka zwrotów, żeby głucha osoba poczuła się lepiej.\nDziennikarz: Dziękuję za rozmowę.",
+          "example": {
+            "text": "Rodzice Karoliny nie słyszą.",
+            "answer": "TAK"
+          },
+          "items": [
+            {
+              "id": "rs3-1",
+              "text": "Karolina od dziecka chciała zostać tłumaczką.",
+              "answer": "NIE"
+            },
+            {
+              "id": "rs3-2",
+              "text": "Karolina zmieniła zawód po trudnej sytuacji w rodzinie.",
+              "answer": "TAK"
+            },
+            {
+              "id": "rs3-3",
+              "text": "Karolina codziennie tłumaczy wiadomości w telewizji.",
+              "answer": "NIE"
+            },
+            {
+              "id": "rs3-4",
+              "text": "Polski i ukraiński język migowy są takie same.",
+              "answer": "NIE"
+            },
+            {
+              "id": "rs3-5",
+              "text": "Podczas długich spotkań tłumacze pracują na zmianę.",
+              "answer": "TAK"
+            }
+          ]
+        },
+        {
+          "id": "rs4",
+          "title": "Zadanie 4",
+          "layout": "matching",
+          "points_per_item": 1,
+          "reuse_keys": true,
+          "instruction": "Proszę wysłuchać wypowiedzi czterech osób na temat zakazu handlu w niedziele i dopasować do każdej opinii właściwą osobę (A–D). Jedna osoba może pasować do kilku opinii. Nagranie usłyszysz dwa razy.",
+          "audio": {
+            "src": "/audio/pl-b1-probny-06/b1-sluchanie-4.mp3",
+            "max_plays": 2
+          },
+          "transcript": "Lektor: Zadanie czwarte. Proszę wysłuchać wypowiedzi czterech osób na temat zakazu handlu w niedziele i dopasować do każdej opinii właściwą osobę. Jedna osoba może pasować do kilku opinii. Nagranie usłyszysz dwa razy.\n\nLektor: Osoba pierwsza.\nPani Beata: Pracuję w supermarkecie jako kasjerka od piętnastu lat. Kiedyś pracowałam w co drugą niedzielę i prawie nie widziałam swoich dzieci. Teraz niedziela jest dla rodziny. W sobotę w sklepie jest straszny tłok i wieczorem ledwo stoję na nogach, ale i tak wolę to niż pracę w niedzielę.\n\nLektor: Osoba druga.\nPan Robert: Mam mały sklep na osiedlu i sam w nim stoję, więc w niedzielę mogę go otworzyć. Klientów mam wtedy więcej niż kiedyś, to prawda. Tylko że przez to nie mam wolnego ani jednego dnia w tygodniu. Żona mówi, że w ogóle mnie nie widzi.\n\nLektor: Osoba trzecia.\nAnia: Studiuję w tygodniu, a w weekendy pracowałam w galerii handlowej. Kiedy w niedziele sklepy zamknięto, straciłam część zarobków, dlatego zmieniłam pracę i teraz pracuję w kawiarni. Szczerze mówiąc, wolałabym, żeby sklepy w niedziele były otwarte. Dla studentów to była dobra praca.\n\nLektor: Osoba czwarta.\nPan Wiesław: Mnie to w ogóle nie przeszkadza. Zakupy robię w tygodniu rano, kiedy w sklepie prawie nikogo nie ma. W niedzielę chodzę z wnukami do parku albo do muzeum. Ludzie się do tego przyzwyczaili i dziś mało kto pamięta, jak było wcześniej.",
+          "left_label": "Opinie",
+          "right_label": "Osoby",
+          "right": [
+            {
+              "key": "A",
+              "text": "Pani Beata, kasjerka"
+            },
+            {
+              "key": "B",
+              "text": "Pan Robert"
+            },
+            {
+              "key": "C",
+              "text": "Ania, studentka"
+            },
+            {
+              "key": "D",
+              "text": "Pan Wiesław"
+            }
+          ],
+          "example": {
+            "text": "Ta osoba prowadzi własny sklep.",
+            "answer": "B"
+          },
+          "items": [
+            {
+              "id": "rs4-1",
+              "text": "Ta osoba zmieniła pracę z powodu nowych przepisów.",
+              "answer": "C"
+            },
+            {
+              "id": "rs4-2",
+              "text": "Ta osoba robi zakupy wtedy, kiedy w sklepach jest pusto.",
+              "answer": "D"
+            },
+            {
+              "id": "rs4-3",
+              "text": "Ta osoba pracuje siedem dni w tygodniu.",
+              "answer": "B"
+            },
+            {
+              "id": "rs4-4",
+              "text": "Dla tej osoby wolna niedziela jest ważniejsza niż zmęczenie w sobotę.",
+              "answer": "A"
+            },
+            {
+              "id": "rs4-5",
+              "text": "Ta osoba chciałaby, żeby w niedziele można było robić zakupy.",
+              "answer": "C"
+            },
+            {
+              "id": "rs4-6",
+              "text": "Według tej osoby ludzie przywykli już do nowej sytuacji.",
+              "answer": "D"
+            }
+          ]
+        },
+        {
+          "id": "rs5",
+          "title": "Zadanie 5",
+          "layout": "matching",
+          "points_per_item": 0.5,
+          "instruction": "Pan Marek pierwszy raz jedzie zimą samochodem w góry. Mechanik daje mu rady. Proszę wysłuchać dziesięciu wypowiedzi i do każdej dopasować właściwy obrazek (A–L). Jeden obrazek jest niepotrzebny. Każdą wypowiedź usłyszysz dwa razy.",
+          "audio": {
+            "src": "/audio/pl-b1-probny-06/b1-sluchanie-5.mp3",
+            "max_plays": 1,
+            "note": "Nagranie włączysz raz — każda wypowiedź jest w nim powtórzona dwa razy, jak na egzaminie."
+          },
+          "transcript": "Lektor: Zadanie piąte. Pan Marek pierwszy raz jedzie zimą samochodem w góry. Mechanik daje mu rady. Proszę wysłuchać dziesięciu wypowiedzi i do każdej dopasować właściwy obrazek. Jeden obrazek jest niepotrzebny. Każdą wypowiedź usłyszysz dwa razy. Przykład.\nMechanik: Zatankuj do pełna, zanim wyjedziesz z miasta. Na górskich drogach jest mało stacji.\n\nMechanik: Zatankuj do pełna, zanim wyjedziesz z miasta. Na górskich drogach jest mało stacji.\n\nLektor: Numer jeden.\nMechanik: Przede wszystkim załóż zimowe opony. Na letnich nie wjedziesz nawet pod pierwszą górkę.\n\nMechanik: Przede wszystkim załóż zimowe opony. Na letnich nie wjedziesz nawet pod pierwszą górkę.\n\nLektor: Numer dwa.\nMechanik: Sprawdź akumulator. Stary akumulator przy dużym mrozie często odmawia posłuszeństwa.\n\nMechanik: Sprawdź akumulator. Stary akumulator przy dużym mrozie często odmawia posłuszeństwa.\n\nLektor: Numer trzy.\nMechanik: Wlej do zbiornika zimowy płyn do spryskiwaczy. Letni po prostu zamarznie.\n\nMechanik: Wlej do zbiornika zimowy płyn do spryskiwaczy. Letni po prostu zamarznie.\n\nLektor: Numer cztery.\nMechanik: Weź ze sobą łańcuchy na koła. Na niektórych górskich drogach mogą być potrzebne.\n\nMechanik: Weź ze sobą łańcuchy na koła. Na niektórych górskich drogach mogą być potrzebne.\n\nLektor: Numer pięć.\nMechanik: Zanim ruszysz, zmieć cały śnieg z dachu samochodu, nie tylko z szyb.\n\nMechanik: Zanim ruszysz, zmieć cały śnieg z dachu samochodu, nie tylko z szyb.\n\nLektor: Numer sześć.\nMechanik: Wożę w samochodzie skrobaczkę do lodu i tobie też radzę. Rano szyby będą zamarznięte.\n\nMechanik: Wożę w samochodzie skrobaczkę do lodu i tobie też radzę. Rano szyby będą zamarznięte.\n\nLektor: Numer siedem.\nMechanik: Zabierz koc i ciepłe rzeczy, na wypadek gdybyś musiał długo stać w korku.\n\nMechanik: Zabierz koc i ciepłe rzeczy, na wypadek gdybyś musiał długo stać w korku.\n\nLektor: Numer osiem.\nMechanik: Przed wyjazdem sprawdź prognozę pogody i komunikaty o stanie dróg.\n\nMechanik: Przed wyjazdem sprawdź prognozę pogody i komunikaty o stanie dróg.\n\nLektor: Numer dziewięć.\nMechanik: Pamiętaj o ładowarce do telefonu w samochodzie. Na zimnie bateria szybko się rozładowuje.\n\nMechanik: Pamiętaj o ładowarce do telefonu w samochodzie. Na zimnie bateria szybko się rozładowuje.\n\nLektor: Numer dziesięć.\nMechanik: Jedź wolniej niż zwykle i trzymaj większą odległość od samochodu przed tobą.\n\nMechanik: Jedź wolniej niż zwykle i trzymaj większą odległość od samochodu przed tobą.\n\nLektor: Koniec rozumienia ze słuchu.",
+          "left_label": "Wypowiedzi",
+          "right_label": "Obrazki",
+          "right": [
+            {
+              "key": "A",
+              "text": "🌨️"
+            },
+            {
+              "key": "B",
+              "text": "🔋"
+            },
+            {
+              "key": "C",
+              "text": "⛽"
+            },
+            {
+              "key": "D",
+              "text": "🧹"
+            },
+            {
+              "key": "E",
+              "text": "🔦"
+            },
+            {
+              "key": "F",
+              "text": "🛞"
+            },
+            {
+              "key": "G",
+              "text": "🧣"
+            },
+            {
+              "key": "H",
+              "text": "⛓️"
+            },
+            {
+              "key": "I",
+              "text": "🐢"
+            },
+            {
+              "key": "J",
+              "text": "🧊"
+            },
+            {
+              "key": "K",
+              "text": "🧴"
+            },
+            {
+              "key": "L",
+              "text": "🔌"
+            }
+          ],
+          "example": {
+            "text": "Wypowiedź 0",
+            "answer": "C"
+          },
+          "items": [
+            {
+              "id": "rs5-1",
+              "text": "Wypowiedź",
+              "answer": "F"
+            },
+            {
+              "id": "rs5-2",
+              "text": "Wypowiedź",
+              "answer": "B"
+            },
+            {
+              "id": "rs5-3",
+              "text": "Wypowiedź",
+              "answer": "K"
+            },
+            {
+              "id": "rs5-4",
+              "text": "Wypowiedź",
+              "answer": "H"
+            },
+            {
+              "id": "rs5-5",
+              "text": "Wypowiedź",
+              "answer": "D"
+            },
+            {
+              "id": "rs5-6",
+              "text": "Wypowiedź",
+              "answer": "J"
+            },
+            {
+              "id": "rs5-7",
+              "text": "Wypowiedź",
+              "answer": "G"
+            },
+            {
+              "id": "rs5-8",
+              "text": "Wypowiedź",
+              "answer": "A"
+            },
+            {
+              "id": "rs5-9",
+              "text": "Wypowiedź",
+              "answer": "L"
+            },
+            {
+              "id": "rs5-10",
+              "text": "Wypowiedź",
+              "answer": "I"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rt",
+      "tab": "Czytanie",
+      "title": "Rozumienie tekstów pisanych",
+      "minutes": 45,
+      "tasks": [
+        {
+          "id": "rt1",
+          "title": "Zadanie 1",
+          "layout": "mc-passages",
+          "points_per_item": 1,
+          "instruction": "Proszę przeczytać fragmenty tekstów i zaznaczyć prawidłową odpowiedź.",
+          "example": {
+            "passage": "Przychodnia „Zdrowie” informuje, że od 1 grudnia rejestracja telefoniczna będzie czynna od 7:30 do 18:00. Na wizytę można się też zapisać przez stronę internetową przychodni.",
+            "stem": "Z tego tekstu wynika, że",
+            "options": [
+              "w grudniu rejestracja będzie zamknięta.",
+              "na wizytę można się zapisać nie tylko przez telefon.",
+              "przychodnia będzie czynna do 18:00."
+            ],
+            "answer": "b"
+          },
+          "items": [
+            {
+              "id": "rt1-1",
+              "passage": "Parking przy Galerii „Arkada”: pierwsze dwie godziny bezpłatnie dla klientów, którzy zrobią zakupy za co najmniej 50 zł – wystarczy pokazać paragon w kasie parkingowej. Każda kolejna godzina: 4 zł. Parking jest zamykany o 22:00.",
+              "stem": "Z tego tekstu wynika, że",
+              "options": [
+                "klient z paragonem za trzy godziny postoju zapłaci 4 zł.",
+                "parking jest bezpłatny dla wszystkich przez dwie godziny.",
+                "parking jest czynny przez całą dobę."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "rt1-2",
+              "passage": "Szkoła pływania „Delfinek” zaprasza dzieci w wieku od 5 do 10 lat. Zajęcia odbywają się w grupach do 8 osób, we wtorki i czwartki o 17:00. Pierwsza lekcja jest próbna i bezpłatna. Rodzice nie mogą wchodzić na halę basenową – zapraszamy na balkon dla widzów.",
+              "stem": "Z tego tekstu wynika, że",
+              "options": [
+                "w jednej grupie może być dziesięcioro dzieci.",
+                "rodzice mogą oglądać zajęcia z balkonu.",
+                "za pierwszą lekcję trzeba zapłacić."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "rt1-3",
+              "passage": "Szanowni Mieszkańcy! Od poniedziałku rowery i wózki można przechowywać wyłącznie w nowej wózkowni na parterze. Rzeczy pozostawione na klatce schodowej po 30 listopada zostaną usunięte. Klucz do wózkowni wydaje biuro administracji w godzinach pracy.",
+              "stem": "Z tego tekstu wynika, że",
+              "options": [
+                "rowery można trzymać na klatce schodowej do końca roku.",
+                "nowa wózkownia znajduje się w piwnicy.",
+                "klucz do wózkowni trzeba odebrać w administracji."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "rt1-4",
+              "passage": "Towar kupiony w naszym sklepie internetowym można zwrócić w ciągu 30 dni bez podawania przyczyny. Zwrot w sklepie stacjonarnym jest bezpłatny, a odesłanie paczki kurierem kosztuje 15 zł. Pieniądze oddajemy w ciągu 14 dni na konto, z którego zapłacono za zamówienie.",
+              "stem": "Z tego tekstu wynika, że",
+              "options": [
+                "odesłanie towaru kurierem jest bezpłatne.",
+                "klient musi wyjaśnić, dlaczego zwraca towar.",
+                "za odesłanie towaru kurierem trzeba zapłacić."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "rt1-5",
+              "passage": "Uwaga, Czytelnicy! Z powodu remontu czytelnia będzie nieczynna od 2 do 20 grudnia. Wypożyczalnia działa bez zmian. Książki można też zwracać przez całą dobę do skrzynki przy wejściu do budynku.",
+              "stem": "Z tego tekstu wynika, że",
+              "options": [
+                "książki można oddawać także w nocy.",
+                "w grudniu nie będzie można wypożyczać książek.",
+                "remont potrwa do końca grudnia."
+              ],
+              "answer": "a"
+            }
+          ]
+        },
+        {
+          "id": "rt2",
+          "title": "Zadanie 2",
+          "layout": "true-false",
+          "points_per_item": 1,
+          "instruction": "Proszę przeczytać tekst, a następnie zaznaczyć: TAK – gdy zdanie jest zgodne z tekstem, NIE – gdy nie jest zgodne z tekstem.",
+          "passage_title": "Wisłą do morza",
+          "passage": "Halina Nowicka ma 64 lata. Przez prawie czterdzieści lat uczyła geografii w liceum w Tarnowie. Kiedy przeszła na emeryturę, dzieci kupiły jej w prezencie rower elektryczny. „Byłam trochę obrażona. Myślałam, że uważają mnie za staruszkę” – śmieje się. Rower przez pół roku stał w garażu.\n\nWszystko zmieniło się, kiedy przyjaciółka namówiła ją na krótką wycieczkę nad Dunajec. „Przejechałyśmy czterdzieści kilometrów, a ja w ogóle nie byłam zmęczona. Wtedy pomyślałam, że mogłabym pojechać dużo dalej”. Zimą zaczęła planować trasę: wzdłuż Wisły, od źródeł w Beskidzie Śląskim aż do Bałtyku.\n\nRodzina nie była zachwycona. Syn chciał, żeby jechała z kimś, ale przyjaciółka nie mogła zostawić chorego męża. Halina pojechała więc sama. Codziennie wysyłała dzieciom zdjęcie i swoją lokalizację. Spała w małych pensjonatach i w gospodarstwach agroturystycznych, a dwa razy – u ludzi, których poznała po drodze.\n\nPodróż trwała dwadzieścia trzy dni. Najtrudniejszy był odcinek między Warszawą a Płockiem: przez trzy dni padał deszcz, a wiatr wiał prosto w twarz. „Raz chciałam zrezygnować i wrócić do domu pociągiem. Ale wieczorem zadzwoniła wnuczka i zapytała, czy widzę już morze. Nie mogłam jej zawieść”.\n\nNajpiękniejsze wspomnienia? Toruń o zachodzie słońca i rozmowy z ludźmi. „Kiedy jedziesz rowerem, ludzie inaczej na ciebie patrzą. Zagadują, częstują owocami, pytają, dokąd jedziesz”.\n\nDziś pani Halina prowadzi bloga, na którym opisuje trasy rowerowe dla seniorów. W przyszłym roku chce przejechać wzdłuż Odry. Tym razem nie sama – zgłosiło się już siedem osób, które czytają jej bloga.",
+          "example": {
+            "text": "Pani Halina pracowała w szkole.",
+            "answer": "TAK"
+          },
+          "items": [
+            {
+              "id": "rt2-1",
+              "text": "Halina od razu ucieszyła się z prezentu od dzieci.",
+              "answer": "NIE"
+            },
+            {
+              "id": "rt2-2",
+              "text": "Pierwsza wycieczka rowerowa okazała się dla Haliny łatwiejsza, niż myślała.",
+              "answer": "TAK"
+            },
+            {
+              "id": "rt2-3",
+              "text": "Halina pojechała nad morze razem z przyjaciółką.",
+              "answer": "NIE"
+            },
+            {
+              "id": "rt2-4",
+              "text": "Rodzina codziennie wiedziała, gdzie jest Halina.",
+              "answer": "TAK"
+            },
+            {
+              "id": "rt2-5",
+              "text": "W czasie podróży Halina nocowała tylko w pensjonatach.",
+              "answer": "NIE"
+            },
+            {
+              "id": "rt2-6",
+              "text": "Na jednym z etapów Halina myślała o przerwaniu podróży.",
+              "answer": "TAK"
+            },
+            {
+              "id": "rt2-7",
+              "text": "Następną wyprawę Halina planuje z innymi ludźmi.",
+              "answer": "TAK"
+            }
+          ]
+        },
+        {
+          "id": "rt3",
+          "title": "Zadanie 3",
+          "layout": "cloze",
+          "points_per_item": 1,
+          "instruction": "Proszę przeczytać tekst i dopasować usunięte z niego fragmenty (A–I). Jeden fragment jest niepotrzebny.",
+          "passage_title": "Kręgosłup w biurze",
+          "bank": [
+            {
+              "key": "A",
+              "text": "problemy z kręgosłupem mają już nawet dwudziestolatkowie"
+            },
+            {
+              "key": "B",
+              "text": "przy których można pracować także na stojąco"
+            },
+            {
+              "key": "C",
+              "text": "żeby nie trzeba było pochylać głowy"
+            },
+            {
+              "key": "D",
+              "text": "dlatego warto kupić wygodne buty"
+            },
+            {
+              "key": "E",
+              "text": "które podtrzymuje dolną część pleców"
+            },
+            {
+              "key": "F",
+              "text": "rozmawiać przez telefon na stojąco"
+            },
+            {
+              "key": "G",
+              "text": "bo ekran laptopa jest zwykle za nisko"
+            },
+            {
+              "key": "H",
+              "text": "a kolana powinny być zgięte pod kątem prostym"
+            },
+            {
+              "key": "I",
+              "text": "jeśli siedzimy bez przerwy przez cały dzień"
+            }
+          ],
+          "example": {
+            "answer": "A"
+          },
+          "text": "Coraz więcej osób spędza w pracy osiem godzin przy komputerze. Lekarze alarmują, że {{ex}}.\n\nNajważniejsze jest dobre krzesło. Powinno mieć oparcie, {{1}}. Stopy powinny stać płasko na podłodze, {{2}}.\n\nRównie ważny jest monitor. Jego górna krawędź powinna być na wysokości oczu, {{3}}. Osoby, które pracują na laptopie, powinny kupić osobną klawiaturę i podstawkę pod komputer, {{4}}.\n\nJednak nawet najlepsze krzesło nie pomoże, {{5}}. Fizjoterapeuci radzą, żeby co godzinę wstać i przejść się choćby kilka kroków. Można na przykład {{6}} albo pójść po wodę do kuchni.\n\nCoraz więcej firm kupuje pracownikom biurka, {{7}}. Ich użytkownicy twierdzą, że rzadziej bolą ich plecy i łatwiej im się skoncentrować.",
+          "gaps": [
+            {
+              "id": "rt3-1",
+              "n": 1,
+              "kind": "bank",
+              "answer": "E"
+            },
+            {
+              "id": "rt3-2",
+              "n": 2,
+              "kind": "bank",
+              "answer": "H"
+            },
+            {
+              "id": "rt3-3",
+              "n": 3,
+              "kind": "bank",
+              "answer": "C"
+            },
+            {
+              "id": "rt3-4",
+              "n": 4,
+              "kind": "bank",
+              "answer": "G"
+            },
+            {
+              "id": "rt3-5",
+              "n": 5,
+              "kind": "bank",
+              "answer": "I"
+            },
+            {
+              "id": "rt3-6",
+              "n": 6,
+              "kind": "bank",
+              "answer": "F"
+            },
+            {
+              "id": "rt3-7",
+              "n": 7,
+              "kind": "bank",
+              "answer": "B"
+            }
+          ]
+        },
+        {
+          "id": "rt4",
+          "title": "Zadanie 4",
+          "layout": "matching",
+          "points_per_item": 1,
+          "instruction": "Proszę połączyć tytuły z kolumny I z fragmentami tekstu z kolumny II. Jeden fragment jest niepotrzebny.",
+          "passage_title": "Jak dbać o rośliny w domu",
+          "right": [
+            {
+              "key": "A",
+              "text": "Od listopada do lutego wiele roślin prawie nie rośnie. W tym czasie podlewamy je rzadziej i nie nawozimy. Nie stawiajmy też doniczek na kaloryferze – suche, gorące powietrze bardzo im szkodzi."
+            },
+            {
+              "key": "B",
+              "text": "Niektóre popularne rośliny doniczkowe, na przykład difenbachia czy lilia, są trujące dla kotów i psów. Jeśli masz w domu zwierzęta, przed zakupem sprawdź, czy roślina jest dla nich bezpieczna."
+            },
+            {
+              "key": "C",
+              "text": "Wiele osób podlewa kwiaty w każdą sobotę, niezależnie od pory roku. To błąd. Zanim podlejesz roślinę, włóż palec do ziemi: jeśli na głębokości dwóch centymetrów jest jeszcze wilgotna, poczekaj kilka dni."
+            },
+            {
+              "key": "D",
+              "text": "Wiele osób uważa, że rośliny w sypialni są niezdrowe, bo w nocy zabierają tlen. Naukowcy uspokajają: kilka roślin zużywa go tak mało, że nie ma to żadnego znaczenia dla naszego snu."
+            },
+            {
+              "key": "E",
+              "text": "Większość roślin lubi jasne miejsca, ale nie ostre słońce. Na parapecie od strony południowej liście mogą się latem poparzyć. Lepiej postawić roślinę metr od okna albo zasłonić je cienką firanką."
+            },
+            {
+              "key": "F",
+              "text": "Jeśli często wyjeżdżasz albo zapominasz o podlewaniu, wybierz kaktusy, sukulenty albo zamiokulkasa. Te rośliny wytrzymają bez wody nawet kilka tygodni."
+            },
+            {
+              "key": "G",
+              "text": "Więcej roślin ginie od nadmiaru wody niż od suszy, bo w mokrej ziemi gniją korzenie. Dlatego doniczka zawsze powinna mieć dziurki w dnie, a wodę, która zostanie na podstawce, trzeba wylać."
+            },
+            {
+              "key": "H",
+              "text": "Na liściach zbiera się kurz, który utrudnia roślinie oddychanie. Raz w miesiącu warto przetrzeć je wilgotną szmatką albo umyć całą roślinę pod letnim prysznicem."
+            },
+            {
+              "key": "I",
+              "text": "Co dwa, trzy lata roślinę trzeba przesadzić do większej doniczki ze świeżą ziemią. Najlepiej zrobić to wiosną. Nowa doniczka powinna być tylko trochę większa od starej."
+            }
+          ],
+          "example": {
+            "text": "Nie podlewaj według kalendarza",
+            "answer": "C"
+          },
+          "items": [
+            {
+              "id": "rt4-1",
+              "text": "Za dużo wody szkodzi",
+              "answer": "G"
+            },
+            {
+              "id": "rt4-2",
+              "text": "Światło, ale nie każde",
+              "answer": "E"
+            },
+            {
+              "id": "rt4-3",
+              "text": "Zimowy odpoczynek",
+              "answer": "A"
+            },
+            {
+              "id": "rt4-4",
+              "text": "Nowy dom dla rośliny",
+              "answer": "I"
+            },
+            {
+              "id": "rt4-5",
+              "text": "Uwaga na zwierzęta",
+              "answer": "B"
+            },
+            {
+              "id": "rt4-6",
+              "text": "Kąpiel dla liści",
+              "answer": "H"
+            },
+            {
+              "id": "rt4-7",
+              "text": "Rośliny dla zapominalskich",
+              "answer": "F"
+            }
+          ]
+        },
+        {
+          "id": "rt5",
+          "title": "Zadanie 5",
+          "layout": "cloze",
+          "points_per_item": 0.5,
+          "instruction": "Proszę wybrać najlepszą spośród możliwości podanych w nawiasach.",
+          "passage_title": "Andrzejki",
+          "example": {
+            "options": [
+              "wypada",
+              "spada",
+              "pada"
+            ],
+            "answer": "wypada"
+          },
+          "text": "Andrzejki to wieczór wróżb, który {{ex}} w nocy z 29 na 30 listopada, w wigilię imienin Andrzeja. Dawniej wróżyły głównie niezamężne dziewczęta, które chciały się dowiedzieć, kiedy {{1}} ślub i jak będzie miał na imię przyszły mąż. Najbardziej znaną wróżbą jest {{2}} wosku. Gorący wosk wlewa się przez {{3}} dużego klucza do zimnej wody. Potem ogląda się {{4}}, który zastygły wosk rzuca na ścianę, i zgaduje, co przypomina. Inna zabawa polega na tym, że dziewczęta {{5}} buty jeden za drugim od ściany do drzwi. Ta, której but pierwszy dotknie progu, pierwsza wyjdzie {{6}} mąż. Dziś andrzejki to przede wszystkim okazja do dobrej {{7}}. W klubach, w szkołach i w domach organizuje się andrzejkowe imprezy, ale wróżb nikt już nie {{8}} poważnie.",
+          "gaps": [
+            {
+              "id": "rt5-1",
+              "n": 1,
+              "kind": "options",
+              "options": [
+                "zrobią",
+                "wezmą",
+                "dadzą"
+              ],
+              "answer": "wezmą"
+            },
+            {
+              "id": "rt5-2",
+              "n": 2,
+              "kind": "options",
+              "options": [
+                "lanie",
+                "sypanie",
+                "kładzenie"
+              ],
+              "answer": "lanie"
+            },
+            {
+              "id": "rt5-3",
+              "n": 3,
+              "kind": "options",
+              "options": [
+                "nos",
+                "palec",
+                "ucho"
+              ],
+              "answer": "ucho"
+            },
+            {
+              "id": "rt5-4",
+              "n": 4,
+              "kind": "options",
+              "options": [
+                "kolor",
+                "cień",
+                "blask"
+              ],
+              "answer": "cień"
+            },
+            {
+              "id": "rt5-5",
+              "n": 5,
+              "kind": "options",
+              "options": [
+                "stawiają",
+                "zakładają",
+                "zdejmują"
+              ],
+              "answer": "stawiają"
+            },
+            {
+              "id": "rt5-6",
+              "n": 6,
+              "kind": "options",
+              "options": [
+                "na",
+                "do",
+                "za"
+              ],
+              "answer": "za"
+            },
+            {
+              "id": "rt5-7",
+              "n": 7,
+              "kind": "options",
+              "options": [
+                "gry",
+                "zabawy",
+                "grania"
+              ],
+              "answer": "zabawy"
+            },
+            {
+              "id": "rt5-8",
+              "n": 8,
+              "kind": "options",
+              "options": [
+                "traktuje",
+                "uważa",
+                "myśli"
+              ],
+              "answer": "traktuje"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pg",
+      "tab": "Gramatyka",
+      "title": "Poprawność gramatyczna",
+      "minutes": 45,
+      "tasks": [
+        {
+          "id": "pg1",
+          "title": "Zadanie 1",
+          "topic": "odmiana rzeczowników, przymiotników i zaimków",
+          "layout": "cloze",
+          "points_per_item": 0.5,
+          "instruction": "Proszę wybrać poprawne formy wyrazów podanych w nawiasach.",
+          "passage_title": "Moja babcia Helena",
+          "example": {
+            "options": [
+              "wieś",
+              "wsi",
+              "wsią"
+            ],
+            "answer": "wsi"
+          },
+          "text": "Moja babcia Helena mieszka na {{ex}} pod Lublinem. Ma osiemdziesiąt lat, ale nie potrzebuje {{1}} pomocy. Codziennie rano karmi {{2}} i pracuje w {{3}}. Babcia ma trzech {{4}} i siedmioro {{5}}. Najbardziej lubi {{6}}, Zosię. Zosia często przyjeżdża do {{7}} na wakacje. Razem pieką ciasta i rozmawiają o {{8}}. Babcia jest bardzo dumna ze {{9}}. Sąsiedzi, {{10}} babcia zawsze pomaga, bardzo ją lubią.",
+          "gaps": [
+            {
+              "id": "pg1-1",
+              "n": 1,
+              "kind": "options",
+              "options": [
+                "żadna",
+                "żadnej",
+                "żadną"
+              ],
+              "answer": "żadnej"
+            },
+            {
+              "id": "pg1-2",
+              "n": 2,
+              "kind": "options",
+              "options": [
+                "kury",
+                "kurami",
+                "kur"
+              ],
+              "answer": "kury"
+            },
+            {
+              "id": "pg1-3",
+              "n": 3,
+              "kind": "options",
+              "options": [
+                "ogród",
+                "ogrodem",
+                "ogrodzie"
+              ],
+              "answer": "ogrodzie"
+            },
+            {
+              "id": "pg1-4",
+              "n": 4,
+              "kind": "options",
+              "options": [
+                "synami",
+                "synowie",
+                "synów"
+              ],
+              "answer": "synów"
+            },
+            {
+              "id": "pg1-5",
+              "n": 5,
+              "kind": "options",
+              "options": [
+                "wnuki",
+                "wnuków",
+                "wnukami"
+              ],
+              "answer": "wnuków"
+            },
+            {
+              "id": "pg1-6",
+              "n": 6,
+              "kind": "options",
+              "options": [
+                "najmłodszą wnuczkę",
+                "najmłodszej wnuczki",
+                "najmłodsza wnuczka"
+              ],
+              "answer": "najmłodszą wnuczkę"
+            },
+            {
+              "id": "pg1-7",
+              "n": 7,
+              "kind": "options",
+              "options": [
+                "ją",
+                "nią",
+                "niej"
+              ],
+              "answer": "niej"
+            },
+            {
+              "id": "pg1-8",
+              "n": 8,
+              "kind": "options",
+              "options": [
+                "dawne czasy",
+                "dawnych czasach",
+                "dawnymi czasami"
+              ],
+              "answer": "dawnych czasach"
+            },
+            {
+              "id": "pg1-9",
+              "n": 9,
+              "kind": "options",
+              "options": [
+                "swojej rodziny",
+                "swoja rodzina",
+                "swoją rodziną"
+              ],
+              "answer": "swojej rodziny"
+            },
+            {
+              "id": "pg1-10",
+              "n": 10,
+              "kind": "options",
+              "options": [
+                "którym",
+                "których",
+                "którzy"
+              ],
+              "answer": "którym"
+            }
+          ]
+        },
+        {
+          "id": "pg2",
+          "title": "Zadanie 2",
+          "topic": "spójniki",
+          "layout": "cloze",
+          "points_per_item": 0.5,
+          "instruction": "Proszę uzupełnić tekst wyrazami z ramki. Jeden wyraz jest niepotrzebny.",
+          "bank_words": [
+            "że",
+            "chociaż",
+            "aby",
+            "zanim",
+            "dlatego",
+            "jeśli",
+            "bo"
+          ],
+          "example": {
+            "answer": "że"
+          },
+          "text": "Mój kolega Paweł powiedział mi, {{ex}} w sobotę robi grilla. Pojechałem do niego, {{1}} od rana padał deszcz. {{2}} wyszedłem z domu, kupiłem kiełbasę i sok. Paweł mieszka daleko za miastem, {{3}} jechałem prawie godzinę. Na miejscu okazało się, że wszyscy siedzą w kuchni, {{4}} w ogrodzie jest za mokro. Paweł obiecał, że {{5}} w przyszłą sobotę będzie ładna pogoda, zrobimy grilla jeszcze raz.",
+          "gaps": [
+            {
+              "id": "pg2-1",
+              "n": 1,
+              "kind": "bank",
+              "answer": "chociaż"
+            },
+            {
+              "id": "pg2-2",
+              "n": 2,
+              "kind": "bank",
+              "answer": "zanim"
+            },
+            {
+              "id": "pg2-3",
+              "n": 3,
+              "kind": "bank",
+              "answer": "dlatego"
+            },
+            {
+              "id": "pg2-4",
+              "n": 4,
+              "kind": "bank",
+              "answer": "bo"
+            },
+            {
+              "id": "pg2-5",
+              "n": 5,
+              "kind": "bank",
+              "answer": "jeśli"
+            }
+          ]
+        },
+        {
+          "id": "pg3",
+          "title": "Zadanie 3",
+          "topic": "stopniowanie przymiotników i przysłówków",
+          "layout": "cloze",
+          "points_per_item": 0.5,
+          "instruction": "Proszę wybrać poprawne formy wyrazów podanych w nawiasach.",
+          "passage_title": "Urlop w górach",
+          "example": {
+            "options": [
+              "blisko",
+              "bliżej",
+              "najbliżej"
+            ],
+            "answer": "bliżej"
+          },
+          "text": "W zeszłym roku byliśmy nad morzem, ale w tym roku wybraliśmy góry, bo są {{ex}} naszego domu. Pensjonat był {{1}} niż hotel w Sopocie, a jedzenie było {{2}} w całej okolicy. Pogoda była {{3}} niż nad morzem, często padało. Mimo to chodziliśmy {{4}} niż zwykle, nawet po dwadzieścia kilometrów dziennie. Wejście na Rysy było {{5}} etapem całego urlopu.",
+          "gaps": [
+            {
+              "id": "pg3-1",
+              "n": 1,
+              "kind": "options",
+              "options": [
+                "tańszy",
+                "tani",
+                "najtańszy"
+              ],
+              "answer": "tańszy"
+            },
+            {
+              "id": "pg3-2",
+              "n": 2,
+              "kind": "options",
+              "options": [
+                "lepsze",
+                "najlepsze",
+                "dobrze"
+              ],
+              "answer": "najlepsze"
+            },
+            {
+              "id": "pg3-3",
+              "n": 3,
+              "kind": "options",
+              "options": [
+                "gorzej",
+                "najgorzej",
+                "gorsza"
+              ],
+              "answer": "gorsza"
+            },
+            {
+              "id": "pg3-4",
+              "n": 4,
+              "kind": "options",
+              "options": [
+                "dużo",
+                "więcej",
+                "najwięcej"
+              ],
+              "answer": "więcej"
+            },
+            {
+              "id": "pg3-5",
+              "n": 5,
+              "kind": "options",
+              "options": [
+                "trudniejszym",
+                "trudnym",
+                "najtrudniejszym"
+              ],
+              "answer": "najtrudniejszym"
+            }
+          ]
+        },
+        {
+          "id": "pg4",
+          "title": "Zadanie 4",
+          "topic": "czas teraźniejszy i przyszły",
+          "layout": "cloze",
+          "points_per_item": 0.5,
+          "instruction": "Proszę wpisać poprawne formy wyrazów podanych w nawiasach (czas teraźniejszy lub przyszły).",
+          "example": {
+            "answer": "jedziemy"
+          },
+          "text": "W sobotę {{ex}} (jechać – my) do Krakowa na urodziny mojej siostry. Siostra {{1}} (kończyć) trzydzieści lat i {{2}} (organizować) przyjęcie w restauracji. Wszyscy goście {{3}} (musieć) przyjść w strojach z lat osiemdziesiątych. Ja jeszcze nie {{4}} (wiedzieć), co założę. Mąż mówi, że {{5}} (pożyczyć – on) kurtkę od kolegi. Jutro po pracy {{6}} (iść – my) razem do sklepu z używaną odzieżą. Może tam {{7}} (znaleźć – ja) coś ciekawego. Prezent już mamy: dzieci {{8}} (malować) dla cioci obraz i bardzo się starają. Do Krakowa {{9}} (dojechać – my) około południa. Wieczorem siostra na pewno {{10}} (płakać) ze wzruszenia, jak zawsze.",
+          "gaps": [
+            {
+              "id": "pg4-1",
+              "n": 1,
+              "kind": "input",
+              "accept": [
+                "kończy"
+              ]
+            },
+            {
+              "id": "pg4-2",
+              "n": 2,
+              "kind": "input",
+              "accept": [
+                "organizuje"
+              ]
+            },
+            {
+              "id": "pg4-3",
+              "n": 3,
+              "kind": "input",
+              "accept": [
+                "muszą",
+                "będą musieli",
+                "będą musiały",
+                "będą musieć"
+              ]
+            },
+            {
+              "id": "pg4-4",
+              "n": 4,
+              "kind": "input",
+              "accept": [
+                "wiem"
+              ]
+            },
+            {
+              "id": "pg4-5",
+              "n": 5,
+              "kind": "input",
+              "accept": [
+                "pożyczy"
+              ]
+            },
+            {
+              "id": "pg4-6",
+              "n": 6,
+              "kind": "input",
+              "accept": [
+                "pójdziemy",
+                "idziemy"
+              ]
+            },
+            {
+              "id": "pg4-7",
+              "n": 7,
+              "kind": "input",
+              "accept": [
+                "znajdę"
+              ]
+            },
+            {
+              "id": "pg4-8",
+              "n": 8,
+              "kind": "input",
+              "accept": [
+                "malują"
+              ]
+            },
+            {
+              "id": "pg4-9",
+              "n": 9,
+              "kind": "input",
+              "accept": [
+                "dojedziemy"
+              ]
+            },
+            {
+              "id": "pg4-10",
+              "n": 10,
+              "kind": "input",
+              "accept": [
+                "będzie płakać",
+                "będzie płakała"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pg5",
+          "title": "Zadanie 5",
+          "topic": "pytania",
+          "layout": "questions",
+          "points_per_item": 0.5,
+          "instruction": "Proszę zapytać o podkreśloną część zdania.",
+          "example": {
+            "sentence": "Mieszkam __w Gdańsku__.",
+            "answer": "Gdzie",
+            "after": "mieszkasz?",
+            "reply": "W Gdańsku."
+          },
+          "items": [
+            {
+              "id": "pg5-1",
+              "sentence": "Wczoraj spotkałem się __z Anną__.",
+              "after": "spotkałeś się wczoraj?",
+              "reply": "Z Anną.",
+              "accept": [
+                "Z kim"
+              ]
+            },
+            {
+              "id": "pg5-2",
+              "sentence": "Ten film trwa __dwie godziny__.",
+              "after": "trwa ten film?",
+              "reply": "Dwie godziny.",
+              "accept": [
+                "Jak długo",
+                "Ile"
+              ]
+            },
+            {
+              "id": "pg5-3",
+              "sentence": "Ciągle myślę __o egzaminie__.",
+              "after": "ciągle myślisz?",
+              "reply": "O egzaminie.",
+              "accept": [
+                "O czym"
+              ]
+            },
+            {
+              "id": "pg5-4",
+              "sentence": "Pracuję w tej firmie __od pięciu lat__.",
+              "after": "pracujesz w tej firmie?",
+              "reply": "Od pięciu lat.",
+              "accept": [
+                "Od kiedy",
+                "Jak długo",
+                "Od ilu lat"
+              ]
+            },
+            {
+              "id": "pg5-5",
+              "sentence": "To jest samochód __mojego brata__.",
+              "after": "to jest samochód?",
+              "reply": "Mojego brata.",
+              "accept": [
+                "Czyj"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pg6",
+          "title": "Zadanie 6",
+          "topic": "przekształcenia zdań",
+          "layout": "transform",
+          "points_per_item": 1,
+          "instruction": "Proszę użyć wyrazu w nawiasie i przekształcić zdanie tak, by miało ten sam sens.",
+          "example": {
+            "sentence": "Byłem w tym mieście pierwszy raz.",
+            "keyword": "nigdy",
+            "answer": "Nigdy wcześniej nie byłem w tym mieście."
+          },
+          "items": [
+            {
+              "id": "pg6-1",
+              "sentence": "Jestem tu od godziny.",
+              "keyword": "temu",
+              "model": "Przyszedłem tu godzinę temu.",
+              "accept": [
+                "Przyszedłem tu godzinę temu",
+                "Przyszedłem tutaj godzinę temu",
+                "Godzinę temu przyszedłem tu",
+                "Godzinę temu tu przyszedłem",
+                "Przyszedłem godzinę temu",
+                "Godzinę temu przyszedłem",
+                "Przyszłam tu godzinę temu",
+                "Przyszłam tutaj godzinę temu",
+                "Godzinę temu przyszłam tu",
+                "Godzinę temu tu przyszłam",
+                "Przyszłam godzinę temu",
+                "Godzinę temu przyszłam",
+                "Przyjechałem tu godzinę temu",
+                "Przyjechałem tutaj godzinę temu",
+                "Godzinę temu przyjechałem tu",
+                "Godzinę temu tu przyjechałem",
+                "Przyjechałem godzinę temu",
+                "Godzinę temu przyjechałem",
+                "Przyjechałam tu godzinę temu",
+                "Przyjechałam tutaj godzinę temu",
+                "Godzinę temu przyjechałam tu",
+                "Godzinę temu tu przyjechałam",
+                "Przyjechałam godzinę temu",
+                "Godzinę temu przyjechałam"
+              ]
+            },
+            {
+              "id": "pg6-2",
+              "sentence": "Ten dom zbudował mój dziadek.",
+              "keyword": "został",
+              "model": "Ten dom został zbudowany przez mojego dziadka.",
+              "accept": [
+                "Ten dom został zbudowany przez mojego dziadka",
+                "Ten dom został wybudowany przez mojego dziadka",
+                "Dom został zbudowany przez mojego dziadka",
+                "Dom został wybudowany przez mojego dziadka",
+                "Ten dom został przez mojego dziadka zbudowany",
+                "Ten dom został przez mojego dziadka wybudowany"
+              ]
+            },
+            {
+              "id": "pg6-3",
+              "sentence": "Nie znam angielskiego, więc nie mogę z nim rozmawiać.",
+              "keyword": "gdybym",
+              "model": "Gdybym znał angielski, mógłbym z nim rozmawiać.",
+              "accept": [
+                "Gdybym znał angielski, mógłbym z nim rozmawiać",
+                "Gdybym znał angielski, to mógłbym z nim rozmawiać",
+                "Mógłbym z nim rozmawiać, gdybym znał angielski",
+                "Gdybym znał angielski, mógłbym rozmawiać z nim",
+                "Gdybym znał angielski, mógłbym z nim porozmawiać",
+                "Gdybym znał angielski, to mógłbym z nim porozmawiać",
+                "Mógłbym z nim porozmawiać, gdybym znał angielski",
+                "Gdybym znał angielski, mógłbym porozmawiać z nim",
+                "Gdybym znała angielski, mogłabym z nim rozmawiać",
+                "Gdybym znała angielski, to mogłabym z nim rozmawiać",
+                "Mogłabym z nim rozmawiać, gdybym znała angielski",
+                "Gdybym znała angielski, mogłabym rozmawiać z nim",
+                "Gdybym znała angielski, mogłabym z nim porozmawiać",
+                "Gdybym znała angielski, to mogłabym z nim porozmawiać",
+                "Mogłabym z nim porozmawiać, gdybym znała angielski",
+                "Gdybym znała angielski, mogłabym porozmawiać z nim"
+              ]
+            },
+            {
+              "id": "pg6-4",
+              "sentence": "Lekarz powiedział mi: „Proszę więcej odpoczywać”.",
+              "keyword": "żebym",
+              "model": "Lekarz powiedział mi, żebym więcej odpoczywał.",
+              "accept": [
+                "Lekarz powiedział mi, żebym więcej odpoczywał",
+                "Lekarz powiedział mi, żebym odpoczywał więcej",
+                "Lekarz powiedział, żebym więcej odpoczywał",
+                "Lekarz powiedział, żebym odpoczywał więcej",
+                "Lekarz powiedział mi, żebym więcej odpoczywała",
+                "Lekarz powiedział mi, żebym odpoczywała więcej",
+                "Lekarz powiedział, żebym więcej odpoczywała",
+                "Lekarz powiedział, żebym odpoczywała więcej"
+              ]
+            },
+            {
+              "id": "pg6-5",
+              "sentence": "Nikt w klasie nie biega tak szybko jak Tomek.",
+              "keyword": "najszybciej",
+              "model": "Tomek biega najszybciej w klasie.",
+              "accept": [
+                "Tomek biega najszybciej w klasie",
+                "Tomek najszybciej biega w klasie",
+                "W klasie najszybciej biega Tomek",
+                "Najszybciej w klasie biega Tomek",
+                "Tomek biega najszybciej w całej klasie",
+                "Tomek biega najszybciej z całej klasy",
+                "Tomek z całej klasy biega najszybciej",
+                "W całej klasie najszybciej biega Tomek",
+                "Tomek biega w klasie najszybciej"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pg7",
+          "title": "Zadanie 7",
+          "topic": "aspekt i tryby",
+          "layout": "cloze",
+          "points_per_item": 0.5,
+          "instruction": "Proszę wybrać poprawną formę wyrazów podanych w nawiasach.",
+          "example": {
+            "options": [
+              "zadzwoń",
+              "dzwonić",
+              "zadzwonisz"
+            ],
+            "answer": "zadzwoń"
+          },
+          "text": "Ewa: Piotrek, {{ex}} do mamy! Czeka na telefon od rana.\nPiotr: Zaraz {{1}}. Najpierw muszę {{2}} ten raport.\nEwa: Wczoraj też cały wieczór {{3}} raporty.\nPiotr: Wiem. Ale dzisiaj na pewno {{4}} przed szóstą.\nEwa: {{5}} potem zrobić zakupy? Ja nie zdążę.\nPiotr: Jasne. {{6}} mi tylko listę, bo wszystko zapomnę.\nEwa: Gdybyś miał lepszą pamięć, nie {{7}} listy!\nPiotr: Bardzo śmieszne. A co {{8}} na kolację?\nEwa: {{9}} rybę i ziemniaki. I nie {{10}} znowu słodyczy!",
+          "gaps": [
+            {
+              "id": "pg7-1",
+              "n": 1,
+              "kind": "options",
+              "options": [
+                "zadzwoniłem",
+                "zadzwonię",
+                "dzwonić"
+              ],
+              "answer": "zadzwonię"
+            },
+            {
+              "id": "pg7-2",
+              "n": 2,
+              "kind": "options",
+              "options": [
+                "skończ",
+                "kończył",
+                "skończyć"
+              ],
+              "answer": "skończyć"
+            },
+            {
+              "id": "pg7-3",
+              "n": 3,
+              "kind": "options",
+              "options": [
+                "pisałeś",
+                "napisałeś",
+                "piszesz"
+              ],
+              "answer": "pisałeś"
+            },
+            {
+              "id": "pg7-4",
+              "n": 4,
+              "kind": "options",
+              "options": [
+                "skończyłbym",
+                "kończyć",
+                "skończę"
+              ],
+              "answer": "skończę"
+            },
+            {
+              "id": "pg7-5",
+              "n": 5,
+              "kind": "options",
+              "options": [
+                "Mogłabym",
+                "Mógłbyś",
+                "Mogłabyś"
+              ],
+              "answer": "Mógłbyś"
+            },
+            {
+              "id": "pg7-6",
+              "n": 6,
+              "kind": "options",
+              "options": [
+                "Napisz",
+                "Pisać",
+                "Napisać"
+              ],
+              "answer": "Napisz"
+            },
+            {
+              "id": "pg7-7",
+              "n": 7,
+              "kind": "options",
+              "options": [
+                "potrzebujesz",
+                "potrzebowałbyś",
+                "potrzebował"
+              ],
+              "answer": "potrzebowałbyś"
+            },
+            {
+              "id": "pg7-8",
+              "n": 8,
+              "kind": "options",
+              "options": [
+                "kupuj",
+                "kupiłbyś",
+                "kupić"
+              ],
+              "answer": "kupić"
+            },
+            {
+              "id": "pg7-9",
+              "n": 9,
+              "kind": "options",
+              "options": [
+                "Weź",
+                "Brać",
+                "Wziąć"
+              ],
+              "answer": "Weź"
+            },
+            {
+              "id": "pg7-10",
+              "n": 10,
+              "kind": "options",
+              "options": [
+                "kup",
+                "kupuj",
+                "kupować"
+              ],
+              "answer": "kupuj"
+            }
+          ]
+        },
+        {
+          "id": "pg8",
+          "title": "Zadanie 8",
+          "topic": "przyimki",
+          "layout": "cloze",
+          "points_per_item": 0.5,
+          "instruction": "Proszę uzupełnić tekst wyrazami z ramki. Jeden wyraz jest niepotrzebny.",
+          "bank_words": [
+            "do",
+            "przed",
+            "pod",
+            "w",
+            "po",
+            "od",
+            "obok"
+          ],
+          "example": {
+            "answer": "do"
+          },
+          "text": "Codziennie jeżdżę {{ex}} pracy rowerem. Wyjeżdżam z domu {{1}} siódmą, żeby nie stać w korkach. Rower zostawiam {{2}} biurem, przy specjalnym stojaku. {{3}} pracy często jadę jeszcze na zakupy. Mieszkam tylko pięć kilometrów {{4}} pracy, więc droga zajmuje mi dwadzieścia minut. Zimą, kiedy jest ślisko, jeżdżę autobusem, który zatrzymuje się {{5}} mojego domu.",
+          "gaps": [
+            {
+              "id": "pg8-1",
+              "n": 1,
+              "kind": "bank",
+              "answer": "przed"
+            },
+            {
+              "id": "pg8-2",
+              "n": 2,
+              "kind": "bank",
+              "answer": "pod"
+            },
+            {
+              "id": "pg8-3",
+              "n": 3,
+              "kind": "bank",
+              "answer": "po"
+            },
+            {
+              "id": "pg8-4",
+              "n": 4,
+              "kind": "bank",
+              "answer": "od"
+            },
+            {
+              "id": "pg8-5",
+              "n": 5,
+              "kind": "bank",
+              "answer": "obok"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pi",
+      "tab": "Pisanie",
+      "title": "Wypowiedź pisemna",
+      "minutes": 75,
+      "manual": true,
+      "manual_points": 30,
+      "tasks": [
+        {
+          "id": "pi1",
+          "title": "Wypowiedź pisemna",
+          "layout": "writing",
+          "points_per_item": 0,
+          "instruction": "Proszę wybrać jeden zestaw i napisać oba teksty. Liczba słów może się różnić od podanej najwyżej o 10%. Czas: 75 minut.",
+          "choices": [
+            {
+              "id": "z1",
+              "label": "Zestaw I",
+              "intro": "gratulacje · charakterystyka",
+              "parts": [
+                {
+                  "id": "z1a",
+                  "label": "Tekst krótki (40 słów)",
+                  "words": 40,
+                  "prompt": "Kolega z kursu językowego dostał nową, dobrą pracę. Napisz do niego e-mail:\n- pogratuluj mu,\n- napisz, skąd o tym wiesz,\n- zaproponuj, jak razem to uczcić."
+                },
+                {
+                  "id": "z1b",
+                  "label": "Tekst długi (160 słów)",
+                  "words": 160,
+                  "prompt": "Opisz osobę, która miała duży wpływ na twoje życie. Napisz:\n- kim jest ta osoba i skąd ją znasz,\n- jak wygląda i jaki ma charakter,\n- czego cię nauczyła."
+                }
+              ]
+            },
+            {
+              "id": "z2",
+              "label": "Zestaw II",
+              "intro": "ogłoszenie · recenzja",
+              "parts": [
+                {
+                  "id": "z2a",
+                  "label": "Tekst krótki (30 słów)",
+                  "words": 30,
+                  "prompt": "Szukasz osoby, która dwa razy w tygodniu odbierze twoje dziecko z przedszkola. Napisz ogłoszenie:\n- napisz, w jakie dni i o której godzinie,\n- napisz, czego oczekujesz od tej osoby,\n- podaj kontakt."
+                },
+                {
+                  "id": "z2b",
+                  "label": "Tekst długi (170 słów)",
+                  "words": 170,
+                  "prompt": "Napisz recenzję filmu albo serialu, który ostatnio obejrzałeś/obejrzałaś. Napisz, o czym jest, co ci się podobało, a co nie, i komu go polecasz."
+                }
+              ]
+            },
+            {
+              "id": "z3",
+              "label": "Zestaw III",
+              "intro": "prośba · rozprawka",
+              "parts": [
+                {
+                  "id": "z3a",
+                  "label": "Tekst krótki (35 słów)",
+                  "words": 35,
+                  "prompt": "Potrzebujesz jednego dnia urlopu w przyszłym tygodniu. Napisz e-mail do szefa / szefowej:\n- podaj dzień,\n- wyjaśnij, dlaczego potrzebujesz wolnego,\n- napisz, kto cię zastąpi."
+                },
+                {
+                  "id": "z3b",
+                  "label": "Tekst długi (170 słów)",
+                  "words": 170,
+                  "prompt": "Napisz rozprawkę: „Czy praca powinna być pasją?”. Przedstaw argumenty za i przeciw oraz swoją opinię."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
