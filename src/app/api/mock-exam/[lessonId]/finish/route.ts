@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { loadMockExam, scoreMockExam, transcriptsOf } from '@/lib/mock-exam/core';
-import { writeMockResult } from '@/lib/mock-exam/notion';
+import { writeMockResult, weakTopics } from '@/lib/mock-exam/notion';
+import { createUserClient } from '@/lib/supabase/user-token';
 
 type Ctx = { params: { lessonId: string } };
 
@@ -18,8 +19,14 @@ export async function POST(req: NextRequest, { params }: Ctx) {
     .text()
     .then((t) => JSON.parse(t))
     .catch(() => null);
-  const imie = String(body?.imie ?? '').trim().slice(0, 120);
-  if (!imie) return NextResponse.json({ error: 'imie required' }, { status: 400 });
+  // the student must be logged in: result goes to their account (and to Notion under their name)
+  const token = typeof body?.token === 'string' ? body.token : '';
+  if (!token) return NextResponse.json({ error: 'login required' }, { status: 401 });
+  const supabase = createUserClient(token);
+  const { data: u } = await supabase.auth.getUser(token);
+  if (!u.user) return NextResponse.json({ error: 'login required' }, { status: 401 });
+  const { data: prof } = await supabase.from('profiles').select('full_name').eq('id', u.user.id).maybeSingle();
+  const imie = (prof?.full_name || u.user.email?.split('@')[0] || 'Uczeń').trim().slice(0, 120);
 
   const raw = (body?.answers ?? {}) as Record<string, unknown>;
   const answers: Record<string, string> = {};
@@ -32,11 +39,27 @@ export async function POST(req: NextRequest, { params }: Ctx) {
   const minutes = Number(body?.minutes ?? 0);
 
   const score = scoreMockExam(exam, answers);
+  const mins = Number.isFinite(minutes) && minutes > 0 ? Math.min(minutes, 600) : 0;
+
+  const { error: dbError } = await supabase.from('mock_results').insert({
+    user_id: u.user.id,
+    lesson_id: exam.lesson_id,
+    exam_label: exam.exam_label,
+    scoring: exam.scoring ?? 'per-section',
+    total: score.total,
+    max_total: score.max,
+    level: score.level ?? null,
+    passed: score.passed,
+    minutes: Math.round(mins * 10) / 10,
+    score: { sections: score.sections, pending: score.pending, weak: weakTopics(exam, score).slice(0, 20) },
+  });
+  if (dbError) console.error('[mock-exam] mock_results insert failed', dbError.message);
+
   const notion = await writeMockResult({
     exam,
     score,
     imie,
-    minutes: Number.isFinite(minutes) && minutes > 0 ? Math.min(minutes, 600) : 0,
+    minutes: mins,
   });
   if (!notion.ok) console.error('[mock-exam] notion write failed', notion.error);
 
@@ -44,6 +67,7 @@ export async function POST(req: NextRequest, { params }: Ctx) {
     score,
     transcripts: transcriptsOf(exam),
     notionSaved: notion.ok,
+    accountSaved: !dbError,
     notionError: notion.ok ? undefined : (notion.error ?? '').split(':')[0],
   });
 }

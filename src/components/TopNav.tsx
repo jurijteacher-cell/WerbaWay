@@ -28,6 +28,9 @@ export async function TopNav() {
           <Link href="/lectures" className="text-paper-muted transition-colors hover:text-gold">
             Лекції
           </Link>
+          <Link href="/dashboard" className="text-paper-muted transition-colors hover:text-gold">
+            Прогрес
+          </Link>
           {isTeacher && (
             <Link href="/teacher" className="text-paper-muted transition-colors hover:text-gold">
               Кабінет викладача

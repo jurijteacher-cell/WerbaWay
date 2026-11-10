@@ -1,15 +1,12 @@
 'use client';
 
 /**
- * Records every «Sprawdź» in Notion embeds to Supabase under the student's code.
- *
- * Code source, in order: `?s=CODE` in the embed URL → localStorage (shared by all
- * embeds of one Notion page in one browser) → nothing yet. Attempts made before
- * the code is entered wait in memory and are sent once it is entered.
- *
- * Teacher mode (code `NAUCZYCIEL`): nothing is recorded in that browser —
- * for the teacher clicking through exercises on a screen share.
+ * Records every «Sprawdź» in Notion embeds to Supabase under the logged-in account
+ * (see embed-auth.ts). Attempts made before login wait in memory and are sent right after it.
+ * Teacher accounts record nothing — for clicking through exercises on a screen share.
  */
+
+import { getAccessToken, getState as authState, subscribe as authSubscribe } from '@/lib/embed-auth';
 
 export type AttemptInput = {
   embed?: string;
@@ -25,54 +22,21 @@ export type AttemptInput = {
 
 type Payload = AttemptInput & { lessonId: string; embed: string };
 
-export type TrackerState = {
-  status: 'none' | 'student' | 'teacher';
-  code: string | null;
-  name: string | null;
-  pending: number;
-  error: string | null;
-};
+export type TrackerState = { pending: number; error: string | null };
 
-/**
- * Master switch (migration 0005 applied in Supabase 2026-11-05). Turning it off hides
- * the code bar and stops recording.
- */
+/** Master switch: off hides the account bar and stops recording. */
 export const EMBED_RESULTS_ENABLED = true;
 
-const LS_CODE = 'ww_student_code';
-const LS_NAME = 'ww_student_name';
-export const TEACHER_CODE = 'NAUCZYCIEL';
-
-let state: TrackerState = { status: 'none', code: null, name: null, pending: 0, error: null };
+let state: TrackerState = { pending: 0, error: null };
+const serverState: TrackerState = { pending: 0, error: null };
 let queue: Payload[] = [];
 let initialized = false;
-/** Code fixed by ?s= in the embed URL — logout makes no sense there */
-let urlCode: string | null = null;
+let sending = false;
 const listeners = new Set<() => void>();
 
-function emit(patch: Partial<TrackerState>) {
+function emit(patch: Partial<TrackerState> = {}) {
   state = { ...state, ...patch, pending: queue.length };
   listeners.forEach((l) => l());
-}
-
-function lsGet(k: string) {
-  try {
-    return window.localStorage.getItem(k);
-  } catch {
-    return null;
-  }
-}
-function lsSet(k: string, v: string | null) {
-  try {
-    if (v == null) window.localStorage.removeItem(k);
-    else window.localStorage.setItem(k, v);
-  } catch {
-    /* storage blocked — keep in memory only */
-  }
-}
-
-export function normalizeCode(raw: string) {
-  return raw.trim().toUpperCase().replace(/[^A-Z0-9]/g, '');
 }
 
 /** `/embed/{lessonId}/{embed}` → ids, or null outside embeds */
@@ -85,159 +49,39 @@ function context(): { lessonId: string; embed: string } | null {
 function init() {
   if (initialized || typeof window === 'undefined') return;
   initialized = true;
-  const fromUrl = normalizeCode(new URLSearchParams(window.location.search).get('s') ?? '');
-  urlCode = fromUrl || null;
-  const stored = lsGet(LS_CODE);
-  const code = fromUrl || stored;
-  if (code === TEACHER_CODE) {
-    state = { ...state, status: 'teacher', code };
-  } else if (code) {
-    state = { ...state, status: 'student', code, name: fromUrl && fromUrl !== stored ? null : lsGet(LS_NAME) };
-    // URL code wins for this page but doesn't overwrite another student's stored code
-    if (!stored) lsSet(LS_CODE, code);
-    if (!state.name) void verify(code, false);
-  }
-  window.addEventListener('storage', (e) => {
-    if (e.key !== LS_CODE || fromUrl) return;
-    const c = e.newValue;
-    if (!c) emit({ status: 'none', code: null, name: null });
-    else if (c === TEACHER_CODE) {
-      queue = [];
-      emit({ status: 'teacher', code: c, name: null });
-    } else {
-      emit({ status: 'student', code: c, name: lsGet(LS_NAME) });
-      flush();
-    }
-  });
-  window.addEventListener('pagehide', () => flush(true));
+  // flush as soon as the account is known (login, restored session)
+  authSubscribe(() => void flush());
+  window.addEventListener('pagehide', () => void flush());
 }
 
-async function verify(code: string, save: boolean): Promise<boolean> {
-  try {
-    const r = await fetch(`/api/embed/student?code=${encodeURIComponent(code)}`);
-    if (!r.ok) {
-      if (r.status === 404 || r.status === 400) {
-        emit({ error: 'Nie ma takiego kodu' });
-        if (state.code === code) {
-          if (save) lsSet(LS_CODE, null);
-          emit({ status: 'none', code: null, name: null });
-        }
-      } else if (save) {
-        emit({ error: 'Błąd serwera, spróbuj później' });
-      }
-      return false;
-    }
-    const { name } = (await r.json()) as { name: string };
-    if (save) {
-      lsSet(LS_CODE, code);
-      lsSet(LS_NAME, name);
-    } else if (lsGet(LS_CODE) === code) {
-      lsSet(LS_NAME, name);
-    }
-    emit({ status: 'student', code, name, error: null });
-    return true;
-  } catch {
-    // offline: keep the code, try sending later
-    if (save) lsSet(LS_CODE, code);
-    emit({ status: 'student', code, error: null });
-    return true;
-  }
-}
-
-/** Student typed a code in the bar */
-export async function setCode(raw: string) {
-  init();
-  const code = normalizeCode(raw);
-  if (!code) return false;
-  if (code === TEACHER_CODE) {
-    queue = [];
-    lsSet(LS_CODE, code);
-    lsSet(LS_NAME, null);
-    emit({ status: 'teacher', code, name: null, error: null });
-    return true;
-  }
-  emit({ error: null });
-  const ok = await verify(code, true);
-  if (ok) flush();
-  return ok;
-}
-
-/** Logout: send what is still waiting, then forget the code in this browser */
-export function clearCode() {
-  init();
-  flush(true);
-  queue = [];
-  lsSet(LS_CODE, null);
-  lsSet(LS_NAME, null);
-  urlCode = null;
-  emit({ status: 'none', code: null, name: null, error: null });
-}
-
-export function codeFromUrl() {
-  return urlCode !== null;
-}
-
-/** Student has no code yet: create one from their name */
-export async function createCode(rawName: string): Promise<string | null> {
-  init();
-  const name = rawName.replace(/\s+/g, ' ').trim();
-  if (name.length < 2) {
-    emit({ error: 'Wpisz imię (min. 2 litery)' });
-    return null;
-  }
-  emit({ error: null });
-  try {
-    const r = await fetch('/api/embed/student', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name }),
-    });
-    if (!r.ok) {
-      emit({ error: r.status === 429 ? 'Spróbuj za kilka minut' : 'Błąd serwera, spróbuj później' });
-      return null;
-    }
-    const { code, name: saved } = (await r.json()) as { code: string; name: string };
-    lsSet(LS_CODE, code);
-    lsSet(LS_NAME, saved);
-    emit({ status: 'student', code, name: saved, error: null });
-    flush();
-    return code;
-  } catch {
-    emit({ error: 'Brak internetu, spróbuj później' });
-    return null;
-  }
-}
-
-let sending = false;
-function flush(beacon = false) {
-  if (state.status !== 'student' || !state.code || !queue.length || sending) return;
-  const batch = queue.slice(0, 50);
-  const body = JSON.stringify({ code: state.code, attempts: batch });
-  if (beacon && typeof navigator.sendBeacon === 'function') {
-    if (navigator.sendBeacon('/api/embed/attempt', body)) {
-      queue = queue.slice(batch.length);
-      emit({});
-    }
-    return;
-  }
+async function flush() {
+  const a = authState();
+  if (!a.userId || a.role === 'teacher' || !queue.length || sending) return;
+  const token = await getAccessToken();
+  if (!token) return;
   sending = true;
-  fetch('/api/embed/attempt', { method: 'POST', body, keepalive: true, headers: { 'Content-Type': 'text/plain' } })
-    .then((r) => {
-      if (r.ok) {
-        queue = queue.slice(batch.length);
-        emit({});
-      } else if (r.status === 404) {
-        emit({ error: 'Nie ma takiego kodu' });
-        clearCode();
-      }
-    })
-    .catch(() => {
-      /* offline — stays in queue */
-    })
-    .finally(() => {
-      sending = false;
-      if (queue.length && state.status === 'student') setTimeout(() => flush(), 1500);
+  const batch = queue.slice(0, 50);
+  try {
+    const r = await fetch('/api/embed/attempt', {
+      method: 'POST',
+      keepalive: true,
+      headers: { 'Content-Type': 'text/plain' },
+      body: JSON.stringify({ token, attempts: batch }),
     });
+    if (r.ok) {
+      queue = queue.slice(batch.length);
+      emit({ error: null });
+    } else if (r.status === 401) {
+      emit({ error: 'Zaloguj się ponownie. / Увійди знову.' });
+    } else {
+      emit({ error: 'Błąd serwera, spróbuję ponownie. / Помилка сервера, спробую ще раз.' });
+    }
+  } catch {
+    /* offline — stays in queue */
+  } finally {
+    sending = false;
+    if (queue.length) setTimeout(() => void flush(), 2500);
+  }
 }
 
 /** Call on every check. Safe outside embeds (no-op). */
@@ -246,7 +90,7 @@ export function trackAttempt(a: AttemptInput) {
   const ctx = context();
   if (!ctx) return;
   init();
-  if (state.status === 'teacher') return;
+  if (authState().role === 'teacher') return;
   queue.push({
     ...a,
     lessonId: ctx.lessonId,
@@ -255,8 +99,8 @@ export function trackAttempt(a: AttemptInput) {
     itemId: String(a.itemId),
   });
   if (queue.length > 300) queue = queue.slice(-300);
-  emit({});
-  flush();
+  emit();
+  void flush();
 }
 
 export function subscribe(l: () => void) {
@@ -268,7 +112,6 @@ export function getState() {
   init();
   return state;
 }
-const serverState: TrackerState = { status: 'none', code: null, name: null, pending: 0, error: null };
 export function getServerState() {
   return serverState;
 }

@@ -1,7 +1,8 @@
 'use client';
 
-import { Fragment, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { Fragment, useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { AudioTransport } from './AudioTransport';
+import { getAccessToken, getServerState, getState, subscribe } from '@/lib/embed-auth';
 import type { PublicMockExam, MockScore, ItemResult } from '@/lib/mock-exam/core';
 
 type Section = PublicMockExam['sections'][number];
@@ -38,7 +39,6 @@ function storeKey(id: string) {
 }
 
 type Stored = {
-  imie?: string;
   answers?: Answers;
   startedAt?: number;
   tab?: Tab;
@@ -61,10 +61,23 @@ type Ctx = {
   paused: boolean;
 };
 
+/** Login is required (the AccountBar wall covers the page); progress is stored per account. */
 export function MockExam({ lessonId }: { lessonId: string }) {
+  const auth = useSyncExternalStore(subscribe, getState, getServerState);
+  if (!auth.ready || !auth.userId) return null;
+  return (
+    <MockExamInner
+      key={auth.userId}
+      lessonId={lessonId}
+      storageId={`${auth.userId}:${lessonId}`}
+      imie={auth.name ?? auth.email ?? ''}
+    />
+  );
+}
+
+function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storageId: string; imie: string }) {
   const [exam, setExam] = useState<PublicMockExam | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
-  const [imie, setImie] = useState('');
   const [tab, setTab] = useState<Tab>('start');
   const [answers, setAnswers] = useState<Answers>({});
   const [startedAt, setStartedAt] = useState<number | null>(null);
@@ -96,10 +109,9 @@ export function MockExam({ lessonId }: { lessonId: string }) {
   const [restored, setRestored] = useState(false);
   useEffect(() => {
     try {
-      const raw = localStorage.getItem(storeKey(lessonId));
+      const raw = localStorage.getItem(storeKey(storageId));
       if (raw) {
         const s = JSON.parse(raw) as Stored;
-        if (s.imie) setImie(s.imie);
         if (s.answers) setAnswers(s.answers);
         if (s.startedAt) setStartedAt(s.startedAt);
         if (s.plays) setPlays(s.plays);
@@ -117,16 +129,13 @@ export function MockExam({ lessonId }: { lessonId: string }) {
     } catch {
       /* storage unavailable */
     }
-    const q = new URLSearchParams(window.location.search).get('imie');
-    if (q) setImie((cur) => cur || q);
     setRestored(true);
-  }, [lessonId]);
+  }, [storageId]);
 
   useEffect(() => {
     if (!restored || startedAt == null) return;
     try {
       const data: Stored = {
-        imie,
         answers,
         startedAt,
         tab,
@@ -135,11 +144,11 @@ export function MockExam({ lessonId }: { lessonId: string }) {
         paused,
         result: score ? { score, saved: Boolean(saved), transcripts } : undefined,
       };
-      localStorage.setItem(storeKey(lessonId), JSON.stringify(data));
+      localStorage.setItem(storeKey(storageId), JSON.stringify(data));
     } catch {
       /* ignore */
     }
-  }, [restored, answers, imie, startedAt, tab, score, saved, lessonId, plays, transcripts, elapsed, paused]);
+  }, [restored, answers, startedAt, tab, score, saved, storageId, plays, transcripts, elapsed, paused]);
 
   // Section timer: counts only while this section is open, the page is visible and the exam is not paused.
   const timerRunning = restored && startedAt != null && !score && !paused && tab !== 'start' && tab !== 'wynik';
@@ -201,7 +210,6 @@ export function MockExam({ lessonId }: { lessonId: string }) {
   };
 
   const start = () => {
-    if (!imie.trim()) return;
     if (startedAt == null) setStartedAt(Date.now());
     go(exam.sections[0].id);
   };
@@ -215,11 +223,13 @@ export function MockExam({ lessonId }: { lessonId: string }) {
     setBusy(true);
     setSendError(null);
     try {
+      const token = await getAccessToken();
+      if (!token) throw new Error('login');
       const res = await fetch(`/api/mock-exam/${lessonId}/finish`, {
         method: 'POST',
         headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
         body: JSON.stringify({
-          imie: imie.trim(),
+          token,
           answers,
           minutes: totalSec > 0 ? totalSec / 60 : startedAt ? (Date.now() - startedAt) / 60000 : 0,
         }),
@@ -324,20 +334,9 @@ export function MockExam({ lessonId }: { lessonId: string }) {
             Odpowiedzi zapisują się same. Jeśli zamkniesz okno, wrócisz w to samo miejsce. / Відповіді
             зберігаються автоматично: закриєш вікно — повернешся туди ж (у цьому ж браузері).
           </p>
-          <label className="mx-label" htmlFor="mx-imie">
-            Imię i nazwisko / Ім&apos;я та прізвище
-          </label>
-          <input
-            id="mx-imie"
-            className="mx-name"
-            value={imie}
-            disabled={locked}
-            onChange={(e) => setImie(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && start()}
-            autoComplete="name"
-          />
+          <p className="nb-note">Piszesz jako: <b>{imie}</b></p>
           <div className="nb-row">
-            <button type="button" className="nb-btn" disabled={!imie.trim() || locked} onClick={start}>
+            <button type="button" className="nb-btn" disabled={locked} onClick={start}>
               {startedAt != null ? 'Wracam do egzaminu' : 'Zaczynam'}
             </button>
           </div>
@@ -432,7 +431,7 @@ export function MockExam({ lessonId }: { lessonId: string }) {
           onOpen={go}
           onRetake={() => {
             try {
-              localStorage.removeItem(storeKey(lessonId));
+              localStorage.removeItem(storeKey(storageId));
             } catch {
               /* ignore */
             }

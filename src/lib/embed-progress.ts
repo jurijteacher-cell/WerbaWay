@@ -5,8 +5,8 @@ import { useCallback, useEffect, useState } from 'react';
 /**
  * Exercise progress kept in the student's browser, so an embed reopens where they left off.
  *
- * Key = embed URL (lesson + embed + ?blocks=) + scope + student code («anon» before a code is
- * entered). Anonymous progress is adopted once the student enters a code. Storage can be
+ * Key = embed URL (lesson + embed + ?blocks=) + scope + account id («anon» when logged out).
+ * Anonymous progress is adopted once the student logs in. Storage can be
  * blocked or wiped (private mode, Safari third-party iframes) — every call is wrapped and the
  * exercise simply starts empty then. Server-side results (embed-tracker) are not touched here.
  */
@@ -18,7 +18,7 @@ type Envelope<T> = { t: number; d: T };
 
 function studentCode(): string {
   try {
-    return window.localStorage.getItem('ww_student_code') || 'anon';
+    return window.localStorage.getItem('ww_embed_uid') || 'anon';
   } catch {
     return 'anon';
   }

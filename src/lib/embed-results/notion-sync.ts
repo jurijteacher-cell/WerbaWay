@@ -32,7 +32,7 @@ export type SyncResult = {
 
 export type SyncStudent = {
   id: string;
-  code: string;
+  code: string | null;
   name: string;
   note: string | null;
   self_created: boolean;
@@ -118,7 +118,7 @@ export class NotionClient {
 export async function upsertStudent(n: NotionClient, s: SyncStudent): Promise<string> {
   const properties: Record<string, unknown> = {
     'Ім’я': { title: [rt(s.name)] },
-    Код: { rich_text: [rt(s.code)] },
+    Код: { rich_text: [rt(s.code ?? "")] },
     Статус: { select: { name: s.archived ? 'Архів' : 'Активний' } },
     'Код створив': { select: { name: s.self_created ? 'Учень сам' : 'Викладач' } },
     Примітка: { rich_text: s.note ? [rt(s.note)] : [] },
