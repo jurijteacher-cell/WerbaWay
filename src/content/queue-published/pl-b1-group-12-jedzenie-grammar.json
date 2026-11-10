@@ -1,0 +1,691 @@
+{
+  "lesson_id": "pl-b1-group-12-jedzenie",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: celownik, smakuje mi, chce mi się",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 60,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "Słowa: co to znaczy?",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "przekąska",
+          "right": "małe jedzenie między posiłkami",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "surówka",
+          "right": "sałatka z surowych warzyw",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "doprawić",
+          "right": "dodać soli albo przypraw",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "mdły",
+          "right": "bez wyraźnego smaku",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "lekkostrawny",
+          "right": "nie obciąża żołądka",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "błonnik",
+          "right": "część roślin, która pomaga w trawieniu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "podjadać",
+          "right": "jeść coś małego między posiłkami",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "umiar",
+          "right": "rozsądna ilość, nie za dużo",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Komu? Zaimki",
+      "instruction": "Wpisz zaimek z nawiasu w celowniku. Na początku zdania, w kontraście i po przyimku — forma długa.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Mamo, pomóż ___ (ja) nakryć do stołu!",
+          "answer": "mi",
+          "grammar_point": "celownik-zaimki",
+          "explanation": "Zwykła pozycja w środku zdania → krótka forma: mi."
+        },
+        {
+          "id": "g2-2",
+          "text": "___ (ja) ten rosół nie smakuje, ale Maksymowi bardzo.",
+          "answer": "Mnie",
+          "grammar_point": "celownik-zaimki",
+          "explanation": "Początek zdania i kontrast (ja — Maksym) → długa forma: mnie."
+        },
+        {
+          "id": "g2-3",
+          "text": "Na urodziny kupiłam ___ (on) nowy garnek.",
+          "answer": "mu",
+          "grammar_point": "celownik-zaimki",
+          "explanation": "Bez akcentu → mu."
+        },
+        {
+          "id": "g2-4",
+          "text": "Dzięki ___ (ona) nauczyłam się piec chleb.",
+          "answer": "niej",
+          "grammar_point": "celownik-zaimki",
+          "explanation": "Po przyimku (dzięki) → forma z n-: niej."
+        },
+        {
+          "id": "g2-5",
+          "text": "Babcia ugotowała ___ (my) pierogi z jagodami.",
+          "answer": "nam",
+          "grammar_point": "celownik-zaimki"
+        },
+        {
+          "id": "g2-6",
+          "text": "Czy mogę ___ (wy) zaproponować deser?",
+          "answer": "wam",
+          "grammar_point": "celownik-zaimki"
+        },
+        {
+          "id": "g2-7",
+          "text": "Zapach czosnku w ogóle ___ (oni) nie przeszkadza.",
+          "answer": "im",
+          "grammar_point": "celownik-zaimki"
+        },
+        {
+          "id": "g2-8",
+          "text": "Mnie zupa smakuje. A ___ (ty)?",
+          "answer": "tobie",
+          "grammar_point": "celownik-zaimki",
+          "explanation": "Kontrast (mnie — a tobie?) → długa forma: tobie."
+        },
+        {
+          "id": "g2-9",
+          "text": "Wbrew ___ (on) zamówiliśmy pizzę, a nie sushi.",
+          "answer": "niemu",
+          "grammar_point": "celownik-zaimki",
+          "explanation": "Po przyimku (wbrew) → niemu."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Komu? Rzeczowniki",
+      "instruction": "Wpisz słowa z nawiasu w celowniku. Uważaj na wymiany: Monika → Monice.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Podziękowałam ___ (pani Monika) za dobrą radę.",
+          "answer": "pani Monice",
+          "grammar_point": "celownik-rzeczowniki",
+          "explanation": "Monika → Monice (k → c, jak w miejscowniku)."
+        },
+        {
+          "id": "g3-2",
+          "text": "W sobotę ugotuję zupę ___ (mój syn).",
+          "answer": "mojemu synowi",
+          "grammar_point": "celownik-rzeczowniki",
+          "accept": [
+            "dla mojego syna"
+          ],
+          "explanation": "Rodzaj męski: -owi; przymiotnik: -emu. Można też: dla mojego syna."
+        },
+        {
+          "id": "g3-3",
+          "text": "Nie dawaj czekolady ___ (pies)!",
+          "answer": "psu",
+          "grammar_point": "celownik-rzeczowniki",
+          "explanation": "Wyjątek: pies → psu (-u, nie -owi)."
+        },
+        {
+          "id": "g3-4",
+          "text": "Kuchnia tajska bardzo smakuje ___ (moja córka).",
+          "answer": "mojej córce",
+          "grammar_point": "celownik-rzeczowniki",
+          "explanation": "Córka → córce (k → c); przymiotnik: -ej."
+        },
+        {
+          "id": "g3-5",
+          "text": "Co tydzień pomagamy ___ (starsi sąsiedzi) w zakupach.",
+          "answer": "starszym sąsiadom",
+          "grammar_point": "celownik-rzeczowniki",
+          "explanation": "Liczba mnoga: -om; przymiotnik: -ym."
+        },
+        {
+          "id": "g3-6",
+          "text": "Maksym wysłał zdjęcie obiadu ___ (Kuba).",
+          "answer": "Kubie",
+          "grammar_point": "celownik-rzeczowniki",
+          "explanation": "Rodzaj męski na -a odmienia się jak kobieta: Kuba → Kubie."
+        },
+        {
+          "id": "g3-7",
+          "text": "Przed snem czytam bajkę ___ (dziecko).",
+          "answer": "dziecku",
+          "grammar_point": "celownik-rzeczowniki",
+          "explanation": "Rodzaj nijaki: -u."
+        },
+        {
+          "id": "g3-8",
+          "text": "Lekarz powiedział, że sól szkodzi ___ (mój ojciec).",
+          "answer": "mojemu ojcu",
+          "grammar_point": "celownik-rzeczowniki",
+          "explanation": "Wyjątek: ojciec → ojcu."
+        },
+        {
+          "id": "g3-9",
+          "text": "Wysłałam przepis ___ (koleżanka) z pracy.",
+          "answer": "koleżance",
+          "grammar_point": "celownik-rzeczowniki",
+          "explanation": "Koleżanka → koleżance (k → c)."
+        },
+        {
+          "id": "g3-10",
+          "text": "Dziękujemy ___ (wszyscy goście) za przybycie!",
+          "answer": "wszystkim gościom",
+          "grammar_point": "celownik-rzeczowniki"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Smakuje czy smakują?",
+      "instruction": "Wybierz formę. Pytaj: co smakuje? co się podoba? Czasownik zgadza się z tą rzeczą, a nie z osobą w celowniku.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Wczoraj w barze mlecznym bardzo ___ mi pierogi.",
+          "answer": "smakowały",
+          "grammar_point": "smakuje-zgoda",
+          "options": [
+            "smakowało",
+            "smakowały"
+          ],
+          "explanation": "Co smakowało? Pierogi (one) → smakowały."
+        },
+        {
+          "id": "g4-2",
+          "text": "Czy ___ ci ten sernik?",
+          "answer": "smakuje",
+          "grammar_point": "smakuje-zgoda",
+          "options": [
+            "smakuje",
+            "smakują"
+          ],
+          "explanation": "Sernik (on) → smakuje."
+        },
+        {
+          "id": "g4-3",
+          "text": "Kuba od razu ___ się babci.",
+          "answer": "spodobał",
+          "grammar_point": "smakuje-zgoda",
+          "options": [
+            "spodobała",
+            "spodobał"
+          ],
+          "explanation": "Kto się spodobał? Kuba (on) → spodobał. Babcia jest w celowniku."
+        },
+        {
+          "id": "g4-4",
+          "text": "Babci bardzo ___ hummus.",
+          "answer": "smakował",
+          "grammar_point": "smakuje-zgoda",
+          "options": [
+            "smakowała",
+            "smakował"
+          ],
+          "explanation": "Co smakowało? Hummus (on) → smakował, nie forma babci."
+        },
+        {
+          "id": "g4-5",
+          "text": "Ta restauracja wcale mi się nie ___.",
+          "answer": "podobała",
+          "grammar_point": "smakuje-zgoda",
+          "options": [
+            "podobała",
+            "podobałam"
+          ],
+          "explanation": "Co się podobało? Restauracja (ona) → podobała. „Podobałam” = ja komuś."
+        },
+        {
+          "id": "g4-6",
+          "text": "Nowi sąsiedzi bardzo nam się ___.",
+          "answer": "podobają",
+          "grammar_point": "smakuje-zgoda",
+          "options": [
+            "podobają",
+            "podobamy"
+          ],
+          "explanation": "Sąsiedzi (oni) → podobają."
+        },
+        {
+          "id": "g4-7",
+          "text": "Zupa ___ wszystkim gościom.",
+          "answer": "smakowała",
+          "grammar_point": "smakuje-zgoda",
+          "options": [
+            "smakowała",
+            "smakowali"
+          ],
+          "explanation": "Zupa (ona) → smakowała. Goście są w celowniku."
+        },
+        {
+          "id": "g4-8",
+          "text": "Ciasto Oleny zawsze mi ___.",
+          "answer": "smakowało",
+          "grammar_point": "smakuje-zgoda",
+          "options": [
+            "smakowało",
+            "smakowała"
+          ],
+          "explanation": "Ciasto (ono) → smakowało."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Lubię, smakuje czy podoba się?",
+      "instruction": "Wybierz słowo. Smak → smakuje. Wygląd, wrażenie → podoba się. Ogólnie, zawsze → lubię.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Mmm, pyszna! Ta zupa naprawdę mi ___.",
+          "answer": "smakuje",
+          "grammar_point": "lubie-smakuje-podoba",
+          "options": [
+            "smakuje",
+            "się podoba"
+          ],
+          "explanation": "Smak jedzenia → smakuje."
+        },
+        {
+          "id": "g5-2",
+          "text": "___ gotować, ale nie znoszę zmywać.",
+          "answer": "Lubię",
+          "grammar_point": "lubie-smakuje-podoba",
+          "options": [
+            "Lubię",
+            "Podoba mi się"
+          ],
+          "explanation": "Ogólnie, zawsze + bezokolicznik → lubię."
+        },
+        {
+          "id": "g5-3",
+          "text": "Ładnie tu! Bardzo mi się ___ ten wystrój.",
+          "answer": "podoba",
+          "grammar_point": "lubie-smakuje-podoba",
+          "options": [
+            "podoba",
+            "smakuje"
+          ],
+          "explanation": "Wygląd → podoba się."
+        },
+        {
+          "id": "g5-4",
+          "text": "Mój mąż ___ ostrych potraw, nawet pieprz to dla niego za dużo.",
+          "answer": "nie lubi",
+          "grammar_point": "lubie-smakuje-podoba",
+          "options": [
+            "nie lubi",
+            "nie smakuje"
+          ],
+          "explanation": "Ogólnie, zawsze → nie lubi + dopełniacz (ostrych potraw)."
+        },
+        {
+          "id": "g5-5",
+          "text": "Kawa była słaba, ale wnętrze kawiarni bardzo nam się ___.",
+          "answer": "podobało",
+          "grammar_point": "lubie-smakuje-podoba",
+          "options": [
+            "podobało",
+            "smakowało"
+          ],
+          "explanation": "Wnętrze — wygląd → podobało się."
+        },
+        {
+          "id": "g5-6",
+          "text": "Spróbuj! ___ ci?",
+          "answer": "Smakuje",
+          "grammar_point": "lubie-smakuje-podoba",
+          "options": [
+            "Smakuje",
+            "Podoba się"
+          ],
+          "explanation": "Próbujemy jedzenia → smakuje."
+        },
+        {
+          "id": "g5-7",
+          "text": "Moja córka ___ chodzić do szkoły, bo ma tam przyjaciół.",
+          "answer": "lubi",
+          "grammar_point": "lubie-smakuje-podoba",
+          "options": [
+            "lubi",
+            "się podoba"
+          ],
+          "explanation": "Czynność, ogólnie → lubi + bezokolicznik."
+        },
+        {
+          "id": "g5-8",
+          "text": "Na początku ten serial mi się nie podobał, ale potem go ___.",
+          "answer": "polubiłam",
+          "grammar_point": "lubie-smakuje-podoba",
+          "options": [
+            "polubiłam",
+            "spodobałam"
+          ],
+          "explanation": "Zaczęłam lubić → polubiłam (go). „Spodobałam” = ja komuś."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "6. Chce mi się, było mi zimno — trzy czasy",
+      "instruction": "Napisz całe zdanie tak, jak każe nawias.",
+      "items": [
+        {
+          "id": "g6-1",
+          "prompt": "Chce mi się pić. (wczoraj wieczorem)",
+          "answer": "Wczoraj wieczorem chciało mi się pić.",
+          "grammar_point": "chce-mi-sie",
+          "accept": [
+            "Chciało mi się pić wczoraj wieczorem."
+          ],
+          "explanation": "Przeszły: chce się → chciało się (ono)."
+        },
+        {
+          "id": "g6-2",
+          "prompt": "Nie chce mi się gotować. (w sobotę — czas przyszły)",
+          "answer": "W sobotę nie będzie mi się chciało gotować.",
+          "grammar_point": "chce-mi-sie",
+          "accept": [
+            "Nie będzie mi się chciało gotować w sobotę.",
+            "W sobotę nie będzie mi się chcieć gotować."
+          ],
+          "explanation": "Przyszły: będzie mi się chciało."
+        },
+        {
+          "id": "g6-3",
+          "prompt": "Chcę spać. (powiedz to z „chce się”)",
+          "answer": "Chce mi się spać.",
+          "grammar_point": "chce-mi-sie",
+          "accept": [
+            "Spać mi się chce."
+          ],
+          "explanation": "Ochota, ciało → chce mi się."
+        },
+        {
+          "id": "g6-4",
+          "prompt": "Maksym nie ma ochoty sprzątać. (użyj: nie chce się)",
+          "answer": "Maksymowi nie chce się sprzątać.",
+          "grammar_point": "chce-mi-sie",
+          "accept": [
+            "Maksymowi nie chce się sprzątać kuchni."
+          ],
+          "explanation": "Osoba w celowniku: Maksym → Maksymowi."
+        },
+        {
+          "id": "g6-5",
+          "prompt": "Jest mi zimno. (wczoraj)",
+          "answer": "Wczoraj było mi zimno.",
+          "grammar_point": "stany-celownik",
+          "accept": [
+            "Było mi zimno wczoraj.",
+            "Wczoraj było mi bardzo zimno."
+          ],
+          "explanation": "Przeszły: jest mi → było mi."
+        },
+        {
+          "id": "g6-6",
+          "prompt": "Jest jej niedobrze. (po obiedzie — czas przeszły)",
+          "answer": "Po obiedzie było jej niedobrze.",
+          "grammar_point": "stany-celownik",
+          "accept": [
+            "Było jej niedobrze po obiedzie."
+          ],
+          "explanation": "Przeszły: było jej niedobrze."
+        },
+        {
+          "id": "g6-7",
+          "prompt": "Brakuje mi ruchu. (w zeszłym roku)",
+          "answer": "W zeszłym roku brakowało mi ruchu.",
+          "grammar_point": "stany-celownik",
+          "accept": [
+            "Brakowało mi ruchu w zeszłym roku."
+          ],
+          "explanation": "Przeszły: brakuje → brakowało; ruchu — dopełniacz."
+        },
+        {
+          "id": "g6-8",
+          "prompt": "Ta zupa smakuje babci. (wczoraj)",
+          "answer": "Wczoraj ta zupa smakowała babci.",
+          "grammar_point": "smakuje-zgoda",
+          "accept": [
+            "Ta zupa smakowała babci wczoraj.",
+            "Wczoraj babci smakowała ta zupa.",
+            "Babci wczoraj smakowała ta zupa.",
+            "Wczoraj babci ta zupa smakowała.",
+            "Ta zupa wczoraj smakowała babci.",
+            "Ta zupa wczoraj babci smakowała."
+          ],
+          "explanation": "Zupa (ona) → smakowała."
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "7. Gdzie stoi „mi” i „się”?",
+      "instruction": "Klikaj słowa w dobrej kolejności. Krótkie słówka (mi, ci, się) nie stoją na początku zdania.",
+      "items": [
+        {
+          "id": "g7-1",
+          "words": [
+            "się",
+            "nie",
+            "chce",
+            "mi",
+            "dzisiaj",
+            "gotować"
+          ],
+          "answer": "Dzisiaj nie chce mi się gotować.",
+          "grammar_point": "celownik-szyk",
+          "accept": [
+            "Nie chce mi się dzisiaj gotować.",
+            "Nie chce mi się gotować dzisiaj."
+          ],
+          "explanation": "Nie + czasownik razem: nie chce mi się."
+        },
+        {
+          "id": "g7-2",
+          "words": [
+            "mi",
+            "bardzo",
+            "ta",
+            "smakuje",
+            "zupa"
+          ],
+          "answer": "Ta zupa bardzo mi smakuje.",
+          "grammar_point": "celownik-szyk",
+          "accept": [
+            "Bardzo mi smakuje ta zupa.",
+            "Ta zupa mi bardzo smakuje.",
+            "Ta zupa smakuje mi bardzo."
+          ]
+        },
+        {
+          "id": "g7-3",
+          "words": [
+            "się",
+            "nam",
+            "udało",
+            "upiec",
+            "chleb"
+          ],
+          "answer": "Udało nam się upiec chleb.",
+          "grammar_point": "celownik-szyk",
+          "accept": [
+            "Chleb udało nam się upiec."
+          ]
+        },
+        {
+          "id": "g7-4",
+          "words": [
+            "mu",
+            "brakuje",
+            "czasu",
+            "na",
+            "sport"
+          ],
+          "answer": "Brakuje mu czasu na sport.",
+          "grammar_point": "celownik-szyk",
+          "accept": [
+            "Na sport brakuje mu czasu."
+          ]
+        },
+        {
+          "id": "g7-5",
+          "words": [
+            "że",
+            "mi",
+            "wydaje",
+            "się",
+            "za",
+            "słone",
+            "to"
+          ],
+          "answer": "Wydaje mi się, że to za słone.",
+          "grammar_point": "celownik-szyk",
+          "accept": [
+            "Wydaje mi się że to za słone."
+          ]
+        },
+        {
+          "id": "g7-6",
+          "words": [
+            "było",
+            "mi",
+            "wczoraj",
+            "zimno",
+            "w",
+            "domu"
+          ],
+          "answer": "Wczoraj w domu było mi zimno.",
+          "grammar_point": "celownik-szyk",
+          "accept": [
+            "Wczoraj było mi zimno w domu.",
+            "W domu było mi wczoraj zimno.",
+            "W domu wczoraj było mi zimno.",
+            "Było mi wczoraj zimno w domu."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Pułapki z ukraińskiego",
+      "instruction": "Wybierz wersję, którą powie Polak. Po każdej odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "— Ile masz lat? — ___ trzydzieści pięć.",
+          "answer": "Mam",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "Mi jest",
+            "Mam"
+          ],
+          "explanation": "Укр. «мені 35» → po polsku: mam 35 lat."
+        },
+        {
+          "id": "g8-2",
+          "text": "Pani Hanno, ten bigos ___!",
+          "answer": "bardzo mi smakuje",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "bardzo mi się podoba",
+            "bardzo mi smakuje"
+          ],
+          "explanation": "Укр. «подобається» про смак → smakuje."
+        },
+        {
+          "id": "g8-3",
+          "text": "Zamknij okno, ___!",
+          "answer": "zimno mi",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "mi zimno",
+            "zimno mi"
+          ],
+          "explanation": "„Mi” nie stoi na początku: zimno mi / jest mi zimno."
+        },
+        {
+          "id": "g8-4",
+          "text": "Po pracy nigdy ___ gotować.",
+          "answer": "nie chce mi się",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "mi nie chce się",
+            "nie chce mi się"
+          ],
+          "explanation": "Укр. «мені не хочеться» → nie chce mi się."
+        },
+        {
+          "id": "g8-5",
+          "text": "Brakuje mi ___ na sen.",
+          "answer": "czasu",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "czas",
+            "czasu"
+          ],
+          "explanation": "Brakuje + dopełniacz: czasu (укр. «не вистачає часу»)."
+        },
+        {
+          "id": "g8-6",
+          "text": "Po tej rybie ___. Muszę się położyć.",
+          "answer": "niedobrze mi",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "nudzi mnie",
+            "niedobrze mi"
+          ],
+          "explanation": "Укр. «мене нудить» → niedobrze mi. „Nudzi mnie” = мені нудно (з чимось)."
+        }
+      ]
+    }
+  ]
+}

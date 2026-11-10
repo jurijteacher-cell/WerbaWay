@@ -1,0 +1,110 @@
+{
+  "lesson_id": "pl-b1-group-12-jedzenie",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Rosół dla babci, hummus dla Kuby”. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Kuba przyjechał do Lublina sam, żeby odwiedzić Maksyma.",
+          "answer": false,
+          "explanation": "Przyjechał na wycieczkę z klasą i wpadł na obiad."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Babcia Hanna nie była zadowolona, że Kuba nie je mięsa.",
+          "answer": true,
+          "explanation": "Prawie się obraziła: obiad bez mięsa to dla niej nie obiad."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Po tłustym obiedzie Taras czuje się zmęczony.",
+          "answer": true,
+          "explanation": "Robi mu się ciężko i chce mu się spać."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Według pani Moniki sól nie jest problemem, jeśli je się dużo warzyw.",
+          "answer": false,
+          "explanation": "Pani Monika mówi: uważajcie na sól — jemy jej ponad dwa razy więcej, niż trzeba."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Babcia nie chciała spróbować hummusu.",
+          "answer": false,
+          "explanation": "Spróbowała i przyznała, że jej smakuje."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Po obiedzie Taras nie miał ochoty spać.",
+          "answer": true,
+          "explanation": "Tarasowi pierwszy raz od dawna nie chciało się spać, poszli na spacer."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "teacher:p2-dialogi",
+      "max_plays": 2,
+      "title": "Słuchanie: cztery krótkie dialogi",
+      "instruction": "Nauczyciel przeczyta cztery krótkie dialogi. Każdy usłyszysz dwa razy. Najpierw przeczytaj pytania. Do każdego dialogu wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Dialog 1. Klientka w końcu zamawia…",
+          "options": [
+            "pierogi ruskie.",
+            "pierogi z kapustą i grzybami.",
+            "zupę i surówkę."
+          ],
+          "answer": "zupę i surówkę.",
+          "explanation": "Ruskie się skończyły, a pierogi z kapustą są słone — wybrała zupę dnia i surówkę."
+        },
+        {
+          "id": "e2-2",
+          "question": "Dialog 2. Z rozmowy wynika, że Tomek…",
+          "options": [
+            "przyjdzie na grilla o szesnastej.",
+            "przyniesie sałatkę.",
+            "kupi mięso na grilla."
+          ],
+          "answer": "przyniesie sałatkę.",
+          "explanation": "Grill miał być o czwartej, ale zaczyna się o szóstej; mięsa jest dość, Tomek zrobi sałatkę."
+        },
+        {
+          "id": "e2-3",
+          "question": "Dialog 3. Według dietetyczki pacjent…",
+          "options": [
+            "musi zupełnie zrezygnować ze słodyczy.",
+            "może zjeść trochę słodkiego po obiedzie.",
+            "powinien wieczorem jeść dużo owoców."
+          ],
+          "answer": "może zjeść trochę słodkiego po obiedzie.",
+          "explanation": "Słodkie — po obiedzie, w małej ilości; owoce wieczorem tak, ale z umiarem."
+        },
+        {
+          "id": "e2-4",
+          "question": "Dialog 4. Z rozmowy wynika, że…",
+          "options": [
+            "Pawłowi nie smakowało jedzenie w wegańskiej restauracji.",
+            "Pawłowi nie podobało się wnętrze wegańskiej restauracji.",
+            "urodziny Oli będą w wegańskiej restauracji."
+          ],
+          "answer": "Pawłowi nie smakowało jedzenie w wegańskiej restauracji.",
+          "explanation": "Wnętrze mu się podobało, ale jedzenie było mdłe. Urodziny będą w gruzińskiej restauracji."
+        }
+      ]
+    }
+  ]
+}

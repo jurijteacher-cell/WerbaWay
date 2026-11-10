@@ -1,0 +1,241 @@
+{
+  "lesson_id": "pl-b1-group-12-jedzenie",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: celownik w nowych zdaniach",
+  "instruction": "Trzy bloki. Zrób je przed napisaniem zaproszenia.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz właściwą formę",
+      "instruction": "Wpisz słowo z nawiasu w odpowiedniej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Co wieczór dziadek czyta ___ (wnuczka) bajki.",
+          "answer": "wnuczce",
+          "grammar_point": "celownik-rzeczowniki"
+        },
+        {
+          "id": "h1-2",
+          "text": "Nie dawaj ___ (kot) mleka, koty źle je trawią.",
+          "answer": "kotu",
+          "grammar_point": "celownik-rzeczowniki",
+          "explanation": "Wyjątek: kot → kotu."
+        },
+        {
+          "id": "h1-3",
+          "text": "Ten nowy serial w ogóle mi się nie ___ (podobać, czas przeszły).",
+          "answer": "podobał",
+          "grammar_point": "smakuje-zgoda",
+          "explanation": "Serial (on) → podobał."
+        },
+        {
+          "id": "h1-4",
+          "text": "Po treningu zawsze chce ___ (ja) się pić.",
+          "answer": "mi",
+          "grammar_point": "chce-mi-sie"
+        },
+        {
+          "id": "h1-5",
+          "text": "W górach było ___ (my) bardzo zimno.",
+          "answer": "nam",
+          "grammar_point": "stany-celownik"
+        },
+        {
+          "id": "h1-6",
+          "text": "Musimy się zrzucić na prezent ___ (nasz trener).",
+          "answer": "naszemu trenerowi",
+          "grammar_point": "celownik-rzeczowniki",
+          "accept": [
+            "dla naszego trenera"
+          ]
+        },
+        {
+          "id": "h1-7",
+          "text": "Wczoraj nie ___ (chcieć) mu się iść na siłownię.",
+          "answer": "chciało",
+          "grammar_point": "chce-mi-sie",
+          "explanation": "Przeszły: chciało się."
+        },
+        {
+          "id": "h1-8",
+          "text": "Wydaje ___ (ona) się, że ten nocleg jest za drogi.",
+          "answer": "jej",
+          "grammar_point": "celownik-zaimki"
+        },
+        {
+          "id": "h1-9",
+          "text": "Udało ___ (oni) się znaleźć agroturystykę ze śniadaniem w cenie.",
+          "answer": "im",
+          "grammar_point": "celownik-zaimki"
+        },
+        {
+          "id": "h1-10",
+          "text": "Dziękuję ___ (pan) za pomoc z walizką!",
+          "answer": "panu",
+          "grammar_point": "celownik-rzeczowniki"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdania",
+      "instruction": "Klikaj słowa w dobrej kolejności.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "się",
+            "im",
+            "nie",
+            "chce",
+            "wracać"
+          ],
+          "answer": "Nie chce im się wracać.",
+          "grammar_point": "celownik-szyk",
+          "accept": [
+            "Im się nie chce wracać.",
+            "Wracać im się nie chce."
+          ]
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "mi",
+            "ruchu",
+            "brakuje"
+          ],
+          "answer": "Brakuje mi ruchu.",
+          "grammar_point": "celownik-szyk",
+          "accept": [
+            "Ruchu mi brakuje."
+          ]
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "podobało",
+            "się",
+            "nam",
+            "to",
+            "miasto"
+          ],
+          "answer": "To miasto nam się podobało.",
+          "grammar_point": "celownik-szyk",
+          "accept": [
+            "Podobało nam się to miasto.",
+            "To miasto podobało nam się."
+          ]
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "udało",
+            "ci",
+            "się",
+            "ogarnąć",
+            "bilety"
+          ],
+          "answer": "Udało ci się ogarnąć bilety?",
+          "grammar_point": "celownik-szyk",
+          "accept": [
+            "Udało ci się ogarnąć bilety.",
+            "Bilety udało ci się ogarnąć?"
+          ]
+        },
+        {
+          "id": "h2-5",
+          "words": [
+            "dziękujemy",
+            "wszystkim",
+            "za",
+            "pomoc"
+          ],
+          "answer": "Dziękujemy wszystkim za pomoc.",
+          "grammar_point": "celownik-szyk",
+          "accept": [
+            "Wszystkim dziękujemy za pomoc.",
+            "Za pomoc dziękujemy wszystkim."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Mi jest dwadzieścia osiem lat.",
+          "answer": "Mam dwadzieścia osiem lat.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Mam 28 lat."
+          ],
+          "explanation": "Укр. «мені 28» → mam 28 lat."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Spróbowałam twojej zupy i bardzo mi się podoba.",
+          "answer": "Spróbowałam twojej zupy i bardzo mi smakuje.",
+          "grammar_point": "lubie-smakuje-podoba",
+          "accept": [
+            "Spróbowałam twojej zupy i bardzo mi smakowała.",
+            "Spróbowałam twojej zupy i bardzo mi ona smakuje."
+          ],
+          "explanation": "Smak → smakuje."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Mi nie chce się dziś wychodzić.",
+          "answer": "Nie chce mi się dziś wychodzić.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Dziś nie chce mi się wychodzić.",
+            "Nie chce mi się wychodzić dziś.",
+            "Nie chce mi się dzisiaj wychodzić.",
+            "Dzisiaj nie chce mi się wychodzić."
+          ],
+          "explanation": "Nie chce mi się — „mi” po czasowniku."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Brakuje mi pieniądze na wakacje.",
+          "answer": "Brakuje mi pieniędzy na wakacje.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Na wakacje brakuje mi pieniędzy."
+          ],
+          "explanation": "Brakuje + dopełniacz: pieniędzy."
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Pomogłem mój brat przy przeprowadzce.",
+          "answer": "Pomogłem mojemu bratu przy przeprowadzce.",
+          "grammar_point": "celownik-rzeczowniki",
+          "accept": [
+            "Pomogłem mojemu bratu w przeprowadzce."
+          ],
+          "explanation": "Pomagać komu? → mojemu bratu (brat → bratu)."
+        },
+        {
+          "id": "h3-6",
+          "prompt": "Ten film bardzo się mi podobał.",
+          "answer": "Ten film bardzo mi się podobał.",
+          "grammar_point": "celownik-szyk",
+          "accept": [
+            "Ten film podobał mi się bardzo.",
+            "Bardzo mi się podobał ten film.",
+            "Ten film mi się bardzo podobał."
+          ],
+          "explanation": "Kolejność: mi się (najpierw zaimek, potem się)."
+        }
+      ]
+    }
+  ]
+}
