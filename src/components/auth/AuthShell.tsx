@@ -21,6 +21,7 @@ const MESSAGES: [RegExp, string][] = [
   [/invalid login credentials/i, 'Невірний email або пароль'],
   [/email not confirmed/i, 'Спочатку підтвердь пошту — посилання в листі'],
   [/already registered|already been registered/i, 'Такий акаунт уже існує — увійди'],
+  [/email rate limit/i, 'Ліміт листів вичерпано. Спробуй за годину або напиши викладачу'],
   [/rate limit|too many/i, 'Забагато спроб. Спробуй за кілька хвилин'],
   [/password should be at least/i, 'Пароль має містити щонайменше 8 символів'],
   [/same password|different from the old/i, 'Новий пароль має відрізнятися від старого'],

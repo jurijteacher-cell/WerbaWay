@@ -67,6 +67,7 @@ const MESSAGES: Record<string, string> = {
 
 function human(msg: string | undefined) {
   if (!msg) return 'Błąd. Spróbuj jeszcze raz. / Помилка, спробуй ще раз.';
+  if (/email rate limit/i.test(msg)) return 'Limit wysyłki e-maili wyczerpany — spróbuj za godzinę lub napisz do nauczyciela. / Ліміт листів вичерпано — спробуй за годину або напиши викладачу.';
   if (/rate limit|too many/i.test(msg)) return 'Za dużo prób. Spróbuj za kilka minut. / Забагато спроб, спробуй за кілька хвилин.';
   if (/password should be at least/i.test(msg)) return 'Hasło: minimum 8 znaków. / Пароль: мінімум 8 символів.';
   return MESSAGES[msg] ?? 'Nie udało się. Spróbuj jeszcze raz. / Не вийшло, спробуй ще раз.';
