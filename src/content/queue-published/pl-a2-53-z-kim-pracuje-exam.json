@@ -1,0 +1,128 @@
+{
+  "lesson_id": "pl-a2-53-z-kim-pracuje",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Sześć zdań o wiadomości Oleny „Kto jest kim w biurze?”. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Narada była w gabinecie pana Piotra.",
+          "answer": false,
+          "explanation": "Narada była w sali konferencyjnej."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Na naradzie Olena siedziała między Tomkiem a Magdą.",
+          "answer": true,
+          "explanation": "W tekście: Siedziałam między Tomkiem a Magdą."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Olena i pan Piotr są na ty.",
+          "answer": false,
+          "explanation": "Mówią do niego „Panie Piotrze”."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Tomek jeździ do Zakopanego samochodem firmy.",
+          "answer": true,
+          "explanation": "Często jeździ służbowym samochodem do Zakopanego."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Nad stroną internetową Olena pracuje sama.",
+          "answer": false,
+          "explanation": "W środy pracuje nad nią z Tomkiem."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Bar, w którym jedli obiad, jest blisko biura.",
+          "answer": true,
+          "explanation": "Poszli do baru mlecznego za rogiem."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "true-false",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-53-z-kim-pracuje-e2-dialog.mp3",
+      "title": "Słuchanie: prawda czy fałsz?",
+      "instruction": "Usłyszysz rozmowę Oleny z panem Piotrem dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Nad katalogiem zimowym Olena będzie pracować z Tomkiem.",
+          "answer": false,
+          "explanation": "Tomek jest w Zakopanem z grupą — Olena będzie pracować z Magdą."
+        },
+        {
+          "id": "e2-2",
+          "statement": "Biurko Magdy stoi pod dużym kalendarzem.",
+          "answer": true,
+          "explanation": "Pan Piotr: jej biurko stoi między drukarką a oknem, pod dużym kalendarzem."
+        },
+        {
+          "id": "e2-3",
+          "statement": "Teraz stroną internetową zajmuje się Bartek.",
+          "answer": true,
+          "explanation": "Na razie zajmuje się nią Bartek z IT."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-53-z-kim-pracuje-e2-dialog.mp3",
+      "title": "Słuchanie: a, b czy c?",
+      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Gdzie jest teraz Tomek?",
+          "options": [
+            "w Zakopanem",
+            "w dziale sprzedaży",
+            "na szkoleniu"
+          ],
+          "answer": "w Zakopanem",
+          "explanation": "Dział sprzedaży to dział Magdy, a na szkoleniu będzie pan Piotr."
+        },
+        {
+          "id": "e3-2",
+          "question": "Od kiedy Olena będzie się zajmować stroną internetową?",
+          "options": [
+            "od jutra",
+            "od stycznia",
+            "od przyszłego tygodnia"
+          ],
+          "answer": "od stycznia",
+          "explanation": "Pan Piotr: od stycznia będzie się nią zajmować pani."
+        },
+        {
+          "id": "e3-3",
+          "question": "Kiedy będzie narada w przyszłym tygodniu?",
+          "options": [
+            "w poniedziałek o dziewiątej",
+            "we wtorek",
+            "w poniedziałek po szkoleniu"
+          ],
+          "answer": "we wtorek",
+          "explanation": "Zwykle narada jest w poniedziałek o dziewiątej, ale w przyszłym tygodniu wyjątkowo we wtorek, bo w poniedziałek pan Piotr ma szkolenie."
+        }
+      ]
+    }
+  ]
+}

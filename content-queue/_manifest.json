@@ -1854,6 +1854,38 @@
       },
       "status": "published",
       "notes": "e2 bez audio — czyta nauczyciel (brak klucza ElevenLabs w sesji)"
+    },
+    {
+      "lesson_id": "pl-a2-53-z-kim-pracuje",
+      "module": "pl-a2",
+      "course_order": 53,
+      "level": "A2",
+      "title": "Z kim pracuję",
+      "published_at": "2026-11-10T14:20:00Z",
+      "template": "light-60 A2",
+      "embeds": {
+        "vocab": "https://werba-way.vercel.app/embed/pl-a2-53-z-kim-pracuje/vocab",
+        "grammar": "https://werba-way.vercel.app/embed/pl-a2-53-z-kim-pracuje/grammar",
+        "comm_tasks": "https://werba-way.vercel.app/embed/pl-a2-53-z-kim-pracuje/comm-tasks",
+        "hw": "https://werba-way.vercel.app/embed/pl-a2-53-z-kim-pracuje/hw",
+        "exam": "https://werba-way.vercel.app/embed/pl-a2-53-z-kim-pracuje/exam"
+      },
+      "audio": [
+        "/audio/pl-a2-53-z-kim-pracuje-e2-dialog.mp3"
+      ],
+      "images": {
+        "cover": "https://images.unsplash.com/photo-1677078610072-7f11ebc4d4d7?w=1600&q=80&fm=jpg&fit=max",
+        "cover_credit": "Paymo / Unsplash",
+        "img1": "https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?w=1400&q=80&fm=jpg&fit=max",
+        "img1_credit": "Memento Media / Unsplash"
+      },
+      "notion_page_id": "41496e03-c7c8-81bc-9dfc-d1b1cfba286e",
+      "notion_page_url": "https://app.notion.com/p/41496e03c7c881bc9dfcd1b1cfba286e",
+      "notion_teacher_page_id": "41496e03-c7c8-810c-9483-c0571b679146",
+      "notion_teacher_page_url": "https://app.notion.com/p/41496e03c7c8810c9483c0571b679146",
+      "status": "published",
+      "published_by": "claude",
+      "notes": "CURRICULUM_A2 v1.2, n=53 (1.5). New tag narzednik-pelny (grammar from pl-preg-06); rec zaimki-osobowe-przypadki, narzednik-zawod-z, pan-pani. e2-e3 telc-light T2; audio file not generated yet."
     }
   ]
 }
