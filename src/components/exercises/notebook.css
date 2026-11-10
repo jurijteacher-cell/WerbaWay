@@ -3171,3 +3171,25 @@
   border-radius: 22px;
   width: min(100%, 540px);
 }
+
+/* ── exam clock, per-task time, pause ─────────────────────────────────────── */
+.mx-timebar { margin: 6px 0 14px; padding: 10px 14px; border-radius: var(--nb-r); background: #fff; border: 1px solid var(--nb-edge); box-shadow: var(--nb-shadow-xs); }
+.mx-timebar-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.mx-timebar-label { font-size: 13px; color: var(--nb-ink-soft); }
+.mx-timebar-val { font-size: 22px; font-variant-numeric: tabular-nums; color: var(--nb-ink); }
+.mx-timebar-of { font-size: 13px; color: var(--nb-ink-soft); }
+.mx-pause { margin-left: auto; align-self: center; min-height: 34px; padding: 4px 14px; border: 1px solid var(--nb-edge-strong); border-radius: 999px; background: var(--nb-paper-2); color: var(--nb-ink); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+.mx-pause:hover:not(:disabled) { background: var(--nb-yellow-soft); }
+.mx-pause:disabled { opacity: .45; cursor: default; }
+.mx-timebar-track { height: 5px; margin-top: 8px; border-radius: 3px; background: rgba(27,42,74,.12); overflow: hidden; }
+.mx-timebar-track i { display: block; height: 100%; background: var(--nb-gold); transition: width 1s linear; }
+.mx-timebar.low .mx-timebar-val { color: #b4541a; }
+.mx-timebar.low .mx-timebar-track i { background: #b4541a; }
+.mx-timebar.over .mx-timebar-val { color: #b3261e; }
+.mx-timebar.over .mx-timebar-track i { background: #b3261e; }
+.mx-timebar-msg { margin: 8px 0 0; font-size: 13px; color: #b3261e; }
+.mx-time { font-style: normal; font-family: inherit; font-size: 13px; color: var(--nb-ink-soft); font-variant-numeric: tabular-nums; }
+.mx-hold-card { margin: 8px 0 14px; padding: 18px 18px 16px; border-radius: var(--nb-r); background: var(--nb-yellow-soft); box-shadow: var(--nb-shadow-xs); }
+.mx-hold-card h3 { margin: 0 0 6px; font-family: var(--nb-display); font-size: 20px; color: var(--nb-ink); }
+.mx-hold-card p { margin: 0 0 8px; font-size: 15px; color: var(--nb-ink); line-height: 1.5; }
+.mx-held { display: none; }

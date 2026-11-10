@@ -43,6 +43,9 @@ type Stored = {
   startedAt?: number;
   tab?: Tab;
   plays?: Record<string, number>;
+  /** active seconds spent in each section (timer runs only while the exam is open and not paused) */
+  elapsed?: Record<string, number>;
+  paused?: boolean;
   result?: { score: MockScore; saved: boolean; transcripts?: Record<string, string> };
 };
 
@@ -55,6 +58,7 @@ type Ctx = {
   plays: Record<string, number>;
   onPlay: (taskId: string) => void;
   transcripts: Record<string, string>;
+  paused: boolean;
 };
 
 export function MockExam({ lessonId }: { lessonId: string }) {
@@ -64,7 +68,8 @@ export function MockExam({ lessonId }: { lessonId: string }) {
   const [tab, setTab] = useState<Tab>('start');
   const [answers, setAnswers] = useState<Answers>({});
   const [startedAt, setStartedAt] = useState<number | null>(null);
-  const [now, setNow] = useState(() => Date.now());
+  const [elapsed, setElapsed] = useState<Record<string, number>>({});
+  const [paused, setPaused] = useState(false);
   const [score, setScore] = useState<MockScore | null>(null);
   const [saved, setSaved] = useState<boolean | null>(null);
   const [busy, setBusy] = useState(false);
@@ -98,6 +103,8 @@ export function MockExam({ lessonId }: { lessonId: string }) {
         if (s.answers) setAnswers(s.answers);
         if (s.startedAt) setStartedAt(s.startedAt);
         if (s.plays) setPlays(s.plays);
+        if (s.elapsed) setElapsed(s.elapsed);
+        if (s.paused) setPaused(true);
         if (s.result?.score) {
           setScore(s.result.score);
           setTranscripts(s.result.transcripts ?? {});
@@ -124,18 +131,26 @@ export function MockExam({ lessonId }: { lessonId: string }) {
         startedAt,
         tab,
         plays,
+        elapsed,
+        paused,
         result: score ? { score, saved: Boolean(saved), transcripts } : undefined,
       };
       localStorage.setItem(storeKey(lessonId), JSON.stringify(data));
     } catch {
       /* ignore */
     }
-  }, [restored, answers, imie, startedAt, tab, score, saved, lessonId, plays, transcripts]);
+  }, [restored, answers, imie, startedAt, tab, score, saved, lessonId, plays, transcripts, elapsed, paused]);
 
+  // Section timer: counts only while this section is open, the page is visible and the exam is not paused.
+  const timerRunning = restored && startedAt != null && !score && !paused && tab !== 'start' && tab !== 'wynik';
   useEffect(() => {
-    const t = setInterval(() => setNow(Date.now()), 20000);
-    return () => clearInterval(t);
-  }, []);
+    if (!timerRunning) return;
+    const id = setInterval(() => {
+      if (document.visibilityState !== 'visible') return;
+      setElapsed((e) => ({ ...e, [tab]: (e[tab] ?? 0) + 1 }));
+    }, 1000);
+    return () => clearInterval(id);
+  }, [timerRunning, tab]);
 
   const results = useMemo(() => {
     const m = new Map<string, ItemResult>();
@@ -176,6 +191,7 @@ export function MockExam({ lessonId }: { lessonId: string }) {
     plays,
     onPlay: (taskId) => setPlays((p) => ({ ...p, [taskId]: (p[taskId] ?? 0) + 1 })),
     transcripts,
+    paused,
   };
 
   const go = (t: Tab) => {
@@ -191,7 +207,8 @@ export function MockExam({ lessonId }: { lessonId: string }) {
   };
 
   const missing = Object.values(counts).reduce((a, c) => a + (c.total - c.done), 0);
-  const minutes = startedAt ? Math.max(0, Math.round((now - startedAt) / 60000)) : 0;
+  const totalSec = Object.values(elapsed).reduce((a, b) => a + b, 0);
+  const minutes = Math.floor(totalSec / 60);
 
   const submit = async () => {
     if (busy) return;
@@ -204,7 +221,7 @@ export function MockExam({ lessonId }: { lessonId: string }) {
         body: JSON.stringify({
           imie: imie.trim(),
           answers,
-          minutes: startedAt ? (Date.now() - startedAt) / 60000 : 0,
+          minutes: totalSec > 0 ? totalSec / 60 : startedAt ? (Date.now() - startedAt) / 60000 : 0,
         }),
       });
       const data = await res.json();
@@ -271,7 +288,12 @@ export function MockExam({ lessonId }: { lessonId: string }) {
             {t.label}
           </button>
         ))}
-        {startedAt != null && !locked ? <span className="mx-clock">{minutes} min</span> : null}
+        {startedAt != null && !locked ? (
+          <span className="mx-clock">
+            {paused ? '⏸ ' : ''}
+            {minutes} min
+          </span>
+        ) : null}
       </nav>
 
       {tab === 'start' ? (
@@ -325,8 +347,40 @@ export function MockExam({ lessonId }: { lessonId: string }) {
       {section ? (
         <section className="mx-panel">
           <h2 className="mx-h2">{section.title}</h2>
+          {!locked ? (
+            <SectionClock
+              minutes={section.minutes}
+              elapsed={elapsed[section.id] ?? 0}
+              paused={paused}
+              onPause={() => setPaused(true)}
+            />
+          ) : null}
+          {paused && !locked ? (
+            <div className="mx-hold-card" role="status">
+              <h3>⏸ Egzamin wstrzymany</h3>
+              <p>
+                Czas stoi, a odpowiedzi są zapisane. Wróć, kiedy będziesz mieć czas — zadania są ukryte do
+                momentu wznowienia.
+              </p>
+              <p className="nb-note">
+                Іспит на паузі: час не йде, відповіді збережені. Повернись, коли буде час, — завдання
+                приховані до відновлення.
+              </p>
+              <div className="nb-row">
+                <button type="button" className="nb-btn" onClick={() => setPaused(false)}>
+                  ▶ Wznów egzamin
+                </button>
+              </div>
+            </div>
+          ) : null}
+          <div className={paused && !locked ? 'mx-held' : undefined}>
           {section.tasks.map((t) => (
-            <TaskView key={t.id} task={t} ctx={ctx} />
+            <TaskView
+              key={t.id}
+              task={t}
+              ctx={ctx}
+              minutes={locked ? undefined : taskMinutes(section, t)}
+            />
           ))}
 
           <div className="mx-foot">
@@ -365,6 +419,7 @@ export function MockExam({ lessonId }: { lessonId: string }) {
             </div>
           ) : null}
           {sendError ? <p className="mx-error">{sendError}</p> : null}
+          </div>
         </section>
       ) : null}
 
@@ -405,13 +460,75 @@ export function MockExam({ lessonId }: { lessonId: string }) {
 
 /* ---------- tasks ---------- */
 
-function TaskView({ task, ctx }: { task: Task; ctx: Ctx }) {
+/** Time for one task: its own `minutes`, else the section time split by points (audio tasks follow the recording). */
+function taskMinutes(section: Section, task: Task): number | undefined {
+  if (task.minutes) return task.minutes;
+  if (!section.minutes || task.audio) return undefined;
+  const n = section.tasks.length;
+  const total = section.max_points;
+  const share = total > 0 && task.max_points > 0 ? task.max_points / total : 1 / n;
+  return Math.max(1, Math.round(section.minutes * share));
+}
+
+function clock(sec: number) {
+  const s = Math.max(0, Math.floor(sec));
+  return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+}
+
+function SectionClock({
+  minutes,
+  elapsed,
+  paused,
+  onPause,
+}: {
+  minutes?: number;
+  elapsed: number;
+  paused: boolean;
+  onPause: () => void;
+}) {
+  const limit = (minutes ?? 0) * 60;
+  const left = limit - elapsed;
+  const over = limit > 0 && left < 0;
+  const low = limit > 0 && left >= 0 && left <= 300;
+  const pct = limit > 0 ? Math.min(100, (elapsed / limit) * 100) : 0;
+  return (
+    <div className={`mx-timebar${over ? ' over' : low ? ' low' : ''}`}>
+      <div className="mx-timebar-row">
+        <span className="mx-timebar-label">
+          {limit > 0 ? (over ? 'Czas minął o' : 'Zostało czasu') : 'Czas w tej części'}
+        </span>
+        <b className="mx-timebar-val">{limit > 0 ? clock(Math.abs(left)) : clock(elapsed)}</b>
+        {limit > 0 ? <span className="mx-timebar-of">z {minutes} min</span> : null}
+        <button type="button" className="mx-pause" disabled={paused} onClick={onPause}>
+          ⏸ Pauza
+        </button>
+      </div>
+      {limit > 0 ? (
+        <div className="mx-timebar-track" aria-hidden>
+          <i style={{ width: `${pct}%` }} />
+        </div>
+      ) : null}
+      {over ? (
+        <p className="mx-timebar-msg">Na prawdziwym egzaminie ta część już by się skończyła. Dokończ spokojnie, ale zapamiętaj tempo.</p>
+      ) : null}
+    </div>
+  );
+}
+
+function TaskView({ task, ctx, minutes }: { task: Task; ctx: Ctx; minutes?: number }) {
   const pts = task.layout === 'writing' ? 'ocenia nauczyciel' : `${fmt(task.max_points)} p.`;
   return (
     <article className="mx-task">
       <div className="mx-task-head">
         <h3>{task.title}</h3>
-        <span className="mx-pts">{pts}</span>
+        <span className="mx-pts">
+          {minutes ? (
+            <span className="mx-time" title="Orientacyjny czas na to zadanie">
+              ⏱ ≈ {minutes} min ·{' '}
+            </span>
+          ) : null}
+          {pts}
+        </span>
       </div>
       {task.topic ? <p className="mx-topic">{task.topic}</p> : null}
       {task.instruction ? <p className="mx-instr">{task.instruction}</p> : null}
@@ -999,6 +1116,12 @@ function AudioPlayer({ task, ctx }: { task: Task; ctx: Ctx }) {
   const [state, setState] = useState<'idle' | 'playing' | 'paused'>('idle');
   const used = ctx.plays[task.id] ?? 0;
   const left = Math.max(0, audio.max_plays - used);
+  useEffect(() => {
+    if (ctx.paused && state === 'playing') {
+      ref.current?.pause();
+      setState('paused');
+    }
+  }, [ctx.paused, state]);
   if (ctx.locked) {
     return (
       <div className="mx-audio">

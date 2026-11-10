@@ -50,6 +50,8 @@ export type MockTask = {
   topic?: string;
   layout: 'mc-passages' | 'true-false' | 'cloze' | 'matching' | 'questions' | 'transform' | 'writing';
   instruction?: string;
+  /** optional time for this task, minutes; otherwise the UI splits the section time by points */
+  minutes?: number;
   points_per_item: number;
   passage_title?: string;
   passage?: string;
@@ -137,6 +139,7 @@ export function toPublicMockExam(exam: MockExam) {
         topic: t.topic,
         layout: t.layout,
         instruction: t.instruction,
+        minutes: t.minutes,
         points_per_item: t.points_per_item,
         max_points: taskMax(t),
         passage_title: t.passage_title,
