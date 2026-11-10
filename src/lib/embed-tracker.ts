@@ -54,6 +54,8 @@ function init() {
   window.addEventListener('pagehide', () => void flush());
 }
 
+let retryMs = 0;
+
 async function flush() {
   const a = authState();
   if (!a.userId || a.role === 'teacher' || !queue.length || sending) return;
@@ -61,6 +63,7 @@ async function flush() {
   if (!token) return;
   sending = true;
   const batch = queue.slice(0, 50);
+  let failed = false;
   try {
     const r = await fetch('/api/embed/attempt', {
       method: 'POST',
@@ -70,17 +73,29 @@ async function flush() {
     });
     if (r.ok) {
       queue = queue.slice(batch.length);
+      retryMs = 0;
       emit({ error: null });
-    } else if (r.status === 401) {
-      emit({ error: 'Zaloguj się ponownie. / Увійди знову.' });
     } else {
-      emit({ error: 'Błąd serwera, spróbuję ponownie. / Помилка сервера, спробую ще раз.' });
+      failed = true;
+      // the server may have stored the first N before failing — do not send those twice
+      const j = (await r.json().catch(() => ({}))) as { saved?: number };
+      if (r.status !== 401 && typeof j.saved === 'number' && j.saved > 0) queue = queue.slice(j.saved);
+      emit({
+        error:
+          r.status === 401
+            ? 'Zaloguj się ponownie. / Увійди знову.'
+            : 'Błąd serwera, spróbuję ponownie. / Помилка сервера, спробую ще раз.',
+      });
     }
   } catch {
-    /* offline — stays in queue */
+    failed = true; // offline — stays in queue
   } finally {
     sending = false;
-    if (queue.length) setTimeout(() => void flush(), 2500);
+    if (queue.length) {
+      // success: send the next batch soon; failure: back off (2.5 s → 60 s)
+      retryMs = failed ? Math.min(retryMs ? retryMs * 2 : 2500, 60000) : 0;
+      setTimeout(() => void flush(), failed ? retryMs : 50);
+    }
   }
 }
 
