@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import { requireTeacher } from './requireTeacher';
-import { NewStudentForm } from './NewStudentForm';
 import { fmt, pct, pctClass } from './format';
 
 export const dynamic = 'force-dynamic';
 
 type Row = {
   id: string;
-  code: string;
+  code: string | null;
+  user_id: string | null;
   name: string;
   note: string | null;
   archived_at: string | null;
@@ -46,7 +46,7 @@ export default async function ResultsPage({ searchParams }: { searchParams?: { a
       </p>
       <h1 className="mb-2 font-display text-3xl text-paper">Результати учнів</h1>
       <p className="mb-8 text-sm text-paper-muted">
-        Усі «Sprawdź» з ембедів у Notion (граматика, домашка, egzamin). % — правильно з першої спроби.
+        Усі «Sprawdź» з ембедів у Notion (граматика, домашка, egzamin). % — правильно з першої спроби. Учні реєструються самі на сайті; <Link href="/teacher/analytics" className="text-gold hover:underline">аналітика класу →</Link>
       </p>
 
       {error && (
@@ -54,11 +54,6 @@ export default async function ResultsPage({ searchParams }: { searchParams?: { a
           Помилка: {error.message}. Якщо таблиці ще немає — виконайте міграцію 0005_embed_results.sql у Supabase.
         </p>
       )}
-
-      <section className="mb-10">
-        <h2 className="mb-3 font-display text-xl text-paper">Новий учень</h2>
-        <NewStudentForm />
-      </section>
 
       <section>
         <div className="mb-3 flex items-baseline justify-between">
@@ -79,7 +74,7 @@ export default async function ResultsPage({ searchParams }: { searchParams?: { a
               <thead className="bg-ink-raised text-paper-muted">
                 <tr>
                   <th className="px-4 py-3 font-normal">Учень</th>
-                  <th className="px-4 py-3 font-normal">Код</th>
+                  <th className="px-4 py-3 font-normal">Акаунт</th>
                   <th className="px-4 py-3 font-normal">Уроків</th>
                   <th className="px-4 py-3 font-normal">З першої спроби</th>
                   <th className="px-4 py-3 font-normal">Письмо</th>
@@ -94,9 +89,10 @@ export default async function ResultsPage({ searchParams }: { searchParams?: { a
                         {r.name}
                       </Link>
                       {r.note ? <p className="text-xs text-paper-muted">{r.note}</p> : null}
-                      {r.self_created ? <p className="text-xs text-paper-muted">створив(ла) код сам(а)</p> : null}
+                                          </td>
+                    <td className="px-4 py-3 text-xs text-paper-muted">
+                      {r.user_id ? '✓ акаунт' : r.code ? <span className="font-mono text-gold">{r.code} · старий код</span> : '—'}
                     </td>
-                    <td className="px-4 py-3 font-mono text-gold">{r.code}</td>
                     <td className="px-4 py-3 text-paper">{r.lessons}</td>
                     <td className="px-4 py-3">
                       <PctBadge ok={r.first_ok} total={r.first_total} />{' '}

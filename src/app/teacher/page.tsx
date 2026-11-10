@@ -51,6 +51,12 @@ export default async function TeacherPage() {
           className="inline-block rounded-lg bg-gold px-5 py-3 text-sm font-medium text-ink hover:bg-gold-bright"
         >
           Результати учнів з Notion →
+        </Link>{' '}
+        <Link
+          href="/teacher/analytics"
+          className="inline-block rounded-lg border border-gold/40 px-5 py-3 text-sm font-medium text-gold hover:bg-gold/10"
+        >
+          Аналітика класу →
         </Link>
       </section>
 

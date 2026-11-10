@@ -141,7 +141,7 @@ export default async function StudentResultsPage({ params }: { params: { student
         <div>
           <h1 className="font-display text-3xl text-paper">{student.name}</h1>
           <p className="mt-1 text-sm text-paper-muted">
-            Код <span className="font-mono text-gold">{student.code}</span>
+            {student.user_id ? 'Акаунт' : student.code ? <>Код <span className="font-mono text-gold">{student.code}</span></> : '—'}
             {student.note ? ` · ${student.note}` : ''}
             {student.archived_at ? ' · в архіві' : ''}
           </p>
@@ -196,8 +196,7 @@ export default async function StudentResultsPage({ params }: { params: { student
         <h2 className="mb-3 font-display text-xl text-paper">Уроки</h2>
         {lessons.length === 0 && (
           <p className="text-sm text-paper-muted">
-            Ще немає жодної спроби. Учень має ввести код <span className="font-mono text-gold">{student.code}</span> над
-            вправами.
+            Ще немає жодної спроби. Учень має увійти в акаунт над вправами в Notion.
           </p>
         )}
         <div className="flex flex-col gap-4">

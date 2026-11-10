@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { NotebookShell } from '@/components/exercises/NotebookShell';
-import { StudentCodeBar } from '@/components/exercises/StudentCodeBar';
+import { AccountBar } from '@/components/exercises/AccountBar';
 import { FocusKeeper } from '@/components/exercises/FocusKeeper';
 import '@/components/exercises/notebook.css';
 
@@ -23,7 +23,7 @@ export default function EmbedLayout({ children }: { children: ReactNode }) {
       }}
     >
       <style dangerouslySetInnerHTML={{ __html: EMBED_CSS }} />
-      <NotebookShell levelHint="lekcja · ćwiczenia" aside={<StudentCodeBar />}>
+      <NotebookShell levelHint="lekcja · ćwiczenia" aside={<AccountBar />}>
         {children}
         <FocusKeeper />
       </NotebookShell>

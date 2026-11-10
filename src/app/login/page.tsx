@@ -4,6 +4,8 @@ import { Suspense, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/client';
+import { safeNext } from '@/lib/safe-next';
+import { AuthShell, buttonClass, humanAuthError, inputClass } from '@/components/auth/AuthShell';
 
 function LoginForm() {
   const router = useRouter();
@@ -12,63 +14,63 @@ function LoginForm() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const reset = searchParams.get('reset') === '1';
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setError(null);
     const supabase = createClient();
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-    setLoading(false);
+    const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password });
     if (error) {
-      setError('Невірний email або пароль');
+      setLoading(false);
+      setError(humanAuthError(error.message));
       return;
     }
-    router.push(searchParams.get('next') ?? '/');
+    router.push(safeNext(searchParams.get('next')));
     router.refresh();
   };
 
   return (
-    <main className="flex min-h-screen items-center justify-center px-4">
-      <div className="w-full max-w-sm">
-        <h1 className="mb-1 font-display text-3xl text-paper">Werba Way</h1>
-        <p className="mb-8 text-paper-muted">Увійди, щоб продовжити навчання</p>
+    <AuthShell title="Werba Way" lead="Увійди, щоб продовжити навчання">
+      {reset ? <p className="mb-4 text-sm text-correct">Пароль змінено. Увійди з новим паролем.</p> : null}
+      <form onSubmit={onSubmit} className="flex flex-col gap-4">
+        <input
+          type="email"
+          required
+          autoComplete="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className={inputClass}
+        />
+        <input
+          type="password"
+          required
+          autoComplete="current-password"
+          placeholder="Пароль"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className={inputClass}
+        />
+        {error && <p className="text-sm text-incorrect">{error}</p>}
+        <button type="submit" disabled={loading} className={buttonClass}>
+          {loading ? 'Входжу…' : 'Увійти'}
+        </button>
+      </form>
 
-        <form onSubmit={onSubmit} className="flex flex-col gap-4">
-          <input
-            type="email"
-            required
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="rounded-lg border border-ink-line bg-ink-raised px-4 py-3 text-paper placeholder:text-paper-muted outline-none focus:border-gold"
-          />
-          <input
-            type="password"
-            required
-            placeholder="Пароль"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="rounded-lg border border-ink-line bg-ink-raised px-4 py-3 text-paper placeholder:text-paper-muted outline-none focus:border-gold"
-          />
-          {error && <p className="text-sm text-incorrect">{error}</p>}
-          <button
-            type="submit"
-            disabled={loading}
-            className="rounded-lg bg-gold px-5 py-3 font-medium text-ink transition-colors hover:bg-gold-bright disabled:opacity-50"
-          >
-            {loading ? 'Входжу…' : 'Увійти'}
-          </button>
-        </form>
-
-        <p className="mt-6 text-sm text-paper-muted">
-          Немає акаунта?{' '}
-          <Link href="/register" className="text-gold hover:text-gold-bright">
-            Зареєструватись
-          </Link>
-        </p>
-      </div>
-    </main>
+      <p className="mt-4 text-sm">
+        <Link href="/forgot-password" className="text-paper-muted hover:text-gold">
+          Забув(ла) пароль?
+        </Link>
+      </p>
+      <p className="mt-3 text-sm text-paper-muted">
+        Немає акаунта?{' '}
+        <Link href="/register" className="text-gold hover:text-gold-bright">
+          Зареєструватись
+        </Link>
+      </p>
+    </AuthShell>
   );
 }
 

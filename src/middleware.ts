@@ -1,7 +1,7 @@
 import { createServerClient, type CookieOptions } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
 
-const PROTECTED_PREFIXES = ['/lessons', '/lectures', '/teacher'];
+const PROTECTED_PREFIXES = ['/lessons', '/lectures', '/teacher', '/dashboard'];
 
 /** Public surfaces opened from Notion iframes — no auth, no Supabase round-trip. */
 const PUBLIC_PREFIXES = ['/embed', '/slides', '/brand', '/api/embed'];
