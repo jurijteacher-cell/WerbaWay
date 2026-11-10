@@ -1,0 +1,119 @@
+{
+  "lesson_id": "pl-telc-b1-02-mieszkanie",
+  "exercise_type": "true-false",
+  "title": "W formacie egzaminu: regulamin i rozmowa o mieszkaniu",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie tekstu urzędowego i słuchanie rozmowy.",
+  "estimated_minutes": 14,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "title": "Czytanie: regulamin — prawda czy fałsz?",
+      "instruction": "Przeczytaj regulamin budynku i historię Andrija. Zdecyduj, czy zdania są prawdziwe, czy fałszywe. Taki format ma czwarta część czytania na egzaminie.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Muzyk z czwartego piętra może grać na saksofonie o dwudziestej trzeciej.",
+          "answer": false,
+          "explanation": "Cisza nocna trwa od 22.00 do 6.00 — wtedy nie wolno grać na instrumentach."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Andrij może zostawić rower przy drzwiach na klatce schodowej.",
+          "answer": false,
+          "explanation": "Rowery trzyma się tylko w rowerowni w piwnicy, na klatce nie wolno."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Starą szafę firma może zabrać w pierwszą sobotę miesiąca.",
+          "answer": true,
+          "explanation": "Meble i duży sprzęt firma odbiera w pierwszą sobotę miesiąca."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Pies studenta może biegać po podwórku bez smyczy.",
+          "answer": false,
+          "explanation": "Na podwórku i na klatce psy muszą być na smyczy."
+        },
+        {
+          "id": "e1-5",
+          "statement": "O cieknącym kranie Andrij może napisać administratorowi e-mail.",
+          "answer": true,
+          "explanation": "Usterki zgłasza się telefonicznie lub e-mailem."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Jeśli w nocy pęknie rura, trzeba dzwonić pod numer z tablicy ogłoszeń.",
+          "answer": true,
+          "explanation": "W nagłych wypadkach, także w nocy, dzwoni się pod numer alarmowy z tablicy."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "max_plays": 2,
+      "title": "Słuchanie: rozmowa z właścicielką mieszkania",
+      "instruction": "Najpierw przeczytaj pytania. Potem posłuchaj rozmowy — maksymalnie dwa razy. Na egzaminie usłyszysz nagranie tylko raz.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Co wiemy o pieniądzach?",
+          "options": [
+            "Czynsz to 2400 zł, a za prąd płaci się osobno.",
+            "Kaucja jest wyższa niż czynsz.",
+            "Prąd jest już w cenie czynszu."
+          ],
+          "answer": "Czynsz to 2400 zł, a za prąd płaci się osobno.",
+          "explanation": "Właścicielka mówi: dwa tysiące czterysta plus prąd; kaucja to jeden czynsz."
+        },
+        {
+          "id": "e2-2",
+          "question": "Gdzie stoi pralka?",
+          "options": [
+            "w kuchni, pod oknem",
+            "w łazience",
+            "w piwnicy"
+          ],
+          "answer": "w łazience",
+          "explanation": "Pod oknem w kuchni jest zmywarka, a w piwnicy — rowerownia."
+        },
+        {
+          "id": "e2-3",
+          "question": "Gdzie jest klucz do rowerowni?",
+          "options": [
+            "na klatce schodowej",
+            "w piwnicy",
+            "w przedpokoju"
+          ],
+          "answer": "w przedpokoju",
+          "explanation": "Klucz wisi w przedpokoju, przy drzwiach."
+        },
+        {
+          "id": "e2-4",
+          "question": "Kto mieszka piętro wyżej?",
+          "options": [
+            "starsze małżeństwo",
+            "studentka",
+            "właścicielka"
+          ],
+          "answer": "studentka",
+          "explanation": "Obok mieszka starsze małżeństwo, a na górze — studentka."
+        },
+        {
+          "id": "e2-5",
+          "question": "Od kiedy można się wprowadzić?",
+          "options": [
+            "od przyszłego piątku",
+            "od piętnastego listopada",
+            "od pierwszego grudnia"
+          ],
+          "answer": "od pierwszego grudnia",
+          "explanation": "Piętnasty listopada to propozycja kandydata, a w piątek podpiszą umowę."
+        }
+      ]
+    }
+  ]
+}

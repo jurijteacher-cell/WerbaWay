@@ -1,0 +1,643 @@
+{
+  "lesson_id": "pl-telc-b1-02-mieszkanie",
+  "exercise_type": "fill-in-blank",
+  "title": "Miejscownik: gdzie mieszkasz, o czym mówisz?",
+  "instruction": "Ćwiczenia do lekcji: najpierw formy, potem w / na / przy / o / po i pułapki.",
+  "estimated_minutes": 40,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "Słowa: połącz słowo z opisem",
+      "instruction": "Kliknij słowo po lewej, potem pasujący opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "parter",
+          "right": "poziom budynku przy ulicy",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "piwnica",
+          "right": "pomieszczenie pod budynkiem, np. na rowery",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "kaucja",
+          "right": "pieniądze, które dostajesz z powrotem po końcu umowy",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "czynsz",
+          "right": "opłata za mieszkanie co miesiąc",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "klatka schodowa",
+          "right": "schody i korytarz, wspólne dla sąsiadów",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "hydraulik",
+          "right": "fachowiec, który naprawia krany i rury",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rodzaj męski i nijaki: -e czy -u?",
+      "instruction": "Wpisz słowo z nawiasu w miejscowniku.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Laptop leży na ___ (stół).",
+          "answer": "stole",
+          "grammar_point": "miejscownik-m-n",
+          "explanation": "stół → na stole: ó zmienia się w o, ł → l."
+        },
+        {
+          "id": "g2-2",
+          "text": "Po nocnej zmianie śpię w ___ (pokój) do południa.",
+          "answer": "pokoju",
+          "grammar_point": "miejscownik-m-n",
+          "explanation": "Pokój kończy się na -j (miękka spółgłoska) → -u."
+        },
+        {
+          "id": "g2-3",
+          "text": "Moja siostra mieszka w ___ (Gdańsk).",
+          "answer": "Gdańsku",
+          "grammar_point": "miejscownik-m-n",
+          "explanation": "Po -k → -u: w Gdańsku, w parku."
+        },
+        {
+          "id": "g2-4",
+          "text": "Szefowa często pracuje w ___ (dom).",
+          "answer": "domu",
+          "grammar_point": "miejscownik-m-n",
+          "explanation": "Wyjątek: dom → w domu."
+        },
+        {
+          "id": "g2-5",
+          "text": "Kot śpi na ___ (fotel).",
+          "answer": "fotelu",
+          "grammar_point": "miejscownik-m-n",
+          "explanation": "Po -l → -u: na fotelu, w hotelu."
+        },
+        {
+          "id": "g2-6",
+          "text": "W ___ (miasto) jest za dużo samochodów.",
+          "answer": "mieście",
+          "grammar_point": "miejscownik-m-n",
+          "explanation": "miasto → w mieście: st → ści, a → e."
+        },
+        {
+          "id": "g2-7",
+          "text": "Wszystkie zdjęcia mam na ___ (komputer).",
+          "answer": "komputerze",
+          "grammar_point": "miejscownik-m-n",
+          "explanation": "r → rze: na komputerze, w teatrze."
+        },
+        {
+          "id": "g2-8",
+          "text": "Długo rozmawialiśmy o ___ (urlop).",
+          "answer": "urlopie",
+          "grammar_point": "miejscownik-m-n",
+          "explanation": "p → pie: o urlopie, w sklepie."
+        },
+        {
+          "id": "g2-9",
+          "text": "Rowery dzieci stoją w ___ (ogród).",
+          "answer": "ogrodzie",
+          "grammar_point": "miejscownik-m-n",
+          "explanation": "d → dzie, ó → o: w ogrodzie."
+        },
+        {
+          "id": "g2-10",
+          "text": "Proszę nie siedzieć na ___ (krzesło) z mokrymi rzeczami.",
+          "answer": "krześle",
+          "grammar_point": "miejscownik-m-n",
+          "explanation": "sł → śl: na krześle."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Rodzaj żeński i liczba mnoga",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Mieszkam przy ___ Długiej.",
+          "answer": "ulicy",
+          "grammar_point": "miejscownik-f",
+          "options": [
+            "ulicy",
+            "ulice",
+            "ulicą"
+          ],
+          "explanation": "Po -c-, -cz-, -sz-, -rz-, -ż- w żeńskim: -y (ulicy, piwnicy)."
+        },
+        {
+          "id": "g3-2",
+          "text": "Czyste ręczniki są w ___.",
+          "answer": "łazience",
+          "grammar_point": "miejscownik-f",
+          "options": [
+            "łazience",
+            "łazienki",
+            "łazienką"
+          ],
+          "explanation": "k → c: łazienka → w łazience."
+        },
+        {
+          "id": "g3-3",
+          "text": "Słoiki z dżemem trzymamy w ___.",
+          "answer": "piwnicy",
+          "grammar_point": "miejscownik-f",
+          "options": [
+            "piwnicy",
+            "piwnice",
+            "piwnicę"
+          ]
+        },
+        {
+          "id": "g3-4",
+          "text": "Na ___ wisi nowy obraz.",
+          "answer": "ścianie",
+          "grammar_point": "miejscownik-f",
+          "options": [
+            "ścianie",
+            "ściany",
+            "ścianę"
+          ],
+          "explanation": "n → nie: ściana → na ścianie."
+        },
+        {
+          "id": "g3-5",
+          "text": "Klucze leżą na ___.",
+          "answer": "podłodze",
+          "grammar_point": "miejscownik-f",
+          "options": [
+            "podłodze",
+            "podłogie",
+            "podłogę"
+          ],
+          "explanation": "g → dz: podłoga → na podłodze."
+        },
+        {
+          "id": "g3-6",
+          "text": "Moi rodzice od roku mieszkają w ___.",
+          "answer": "Polsce",
+          "grammar_point": "miejscownik-f",
+          "options": [
+            "Polsce",
+            "Polskie",
+            "Polską"
+          ],
+          "explanation": "k → c: Polska → w Polsce."
+        },
+        {
+          "id": "g3-7",
+          "text": "Dzieci bawią się na ___.",
+          "answer": "schodach",
+          "grammar_point": "miejscownik-l-mn",
+          "options": [
+            "schodach",
+            "schodami",
+            "schodów"
+          ],
+          "explanation": "Liczba mnoga w miejscowniku: zawsze -ach."
+        },
+        {
+          "id": "g3-8",
+          "text": "Wszyscy rozmawiają o nowych ___.",
+          "answer": "sąsiadach",
+          "grammar_point": "miejscownik-l-mn",
+          "options": [
+            "sąsiadach",
+            "sąsiadami",
+            "sąsiadów"
+          ],
+          "explanation": "Rozmawiać o + miejscownik: o sąsiadach."
+        },
+        {
+          "id": "g3-9",
+          "text": "W tych starych ___ nie ma windy.",
+          "answer": "blokach",
+          "grammar_point": "miejscownik-l-mn",
+          "options": [
+            "blokach",
+            "blokami",
+            "bloki"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Przymiotnik + rzeczownik",
+      "instruction": "Wpisz oba słowa w miejscowniku.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Mieszkamy na ___ (trzecie piętro).",
+          "answer": "trzecim piętrze",
+          "grammar_point": "miejscownik-przymiotnik"
+        },
+        {
+          "id": "g4-2",
+          "text": "Mój współpracownik wynajmuje pokój w ___ (stary blok).",
+          "answer": "starym bloku",
+          "grammar_point": "miejscownik-przymiotnik"
+        },
+        {
+          "id": "g4-3",
+          "text": "Pani Ewa pracuje w ___ (duża apteka).",
+          "answer": "dużej aptece",
+          "grammar_point": "miejscownik-przymiotnik",
+          "explanation": "Żeński przymiotnik: -ej; apteka → w aptece (k → c)."
+        },
+        {
+          "id": "g4-4",
+          "text": "Czekam na ciebie przy ___ (główna brama).",
+          "answer": "głównej bramie",
+          "grammar_point": "miejscownik-przymiotnik"
+        },
+        {
+          "id": "g4-5",
+          "text": "W ___ (nowe mieszkanie) jest jeszcze mało mebli.",
+          "answer": "nowym mieszkaniu",
+          "grammar_point": "miejscownik-przymiotnik"
+        },
+        {
+          "id": "g4-6",
+          "text": "Na ___ (ten balkon) rosną pomidory.",
+          "answer": "tym balkonie",
+          "grammar_point": "miejscownik-przymiotnik",
+          "explanation": "ten → w tym, ta → w tej."
+        },
+        {
+          "id": "g4-7",
+          "text": "W ___ (wszystkie pokoje) są nowe okna.",
+          "answer": "wszystkich pokojach",
+          "grammar_point": "miejscownik-przymiotnik",
+          "explanation": "Liczba mnoga: przymiotnik -ych / -ich, rzeczownik -ach."
+        },
+        {
+          "id": "g4-8",
+          "text": "W ___ (mała kuchnia) nie ma miejsca na stół.",
+          "answer": "małej kuchni",
+          "grammar_point": "miejscownik-przymiotnik"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. W, na, przy, o czy po?",
+      "instruction": "Wybierz poprawne wyrażenie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Obiad jemy zawsze ___.",
+          "answer": "w kuchni",
+          "grammar_point": "w-czy-na",
+          "options": [
+            "w kuchni",
+            "na kuchni",
+            "do kuchni"
+          ],
+          "explanation": "Pomieszczenie → w: w kuchni, w łazience. „Na kuchni” to po polsku na kuchence."
+        },
+        {
+          "id": "g5-2",
+          "text": "Pani Zofia pracuje ___.",
+          "answer": "na poczcie",
+          "grammar_point": "w-czy-na",
+          "options": [
+            "na poczcie",
+            "w poczcie",
+            "o poczcie"
+          ],
+          "explanation": "Instytucje: na poczcie, na dworcu, na uczelni."
+        },
+        {
+          "id": "g5-3",
+          "text": "Mój brat studiuje ___.",
+          "answer": "na uniwersytecie",
+          "grammar_point": "w-czy-na",
+          "options": [
+            "na uniwersytecie",
+            "w uniwersytecie",
+            "po uniwersytecie"
+          ]
+        },
+        {
+          "id": "g5-4",
+          "text": "Weź czapkę, ___ jest bardzo zimno!",
+          "answer": "na dworze",
+          "grammar_point": "w-czy-na",
+          "options": [
+            "na dworze",
+            "w dworze",
+            "na dwór"
+          ],
+          "explanation": "Poza domem, pod gołym niebem: na dworze (albo na zewnątrz)."
+        },
+        {
+          "id": "g5-5",
+          "text": "Moje biurko stoi ___, bo lubię naturalne światło.",
+          "answer": "przy oknie",
+          "grammar_point": "przy-o-po",
+          "options": [
+            "przy oknie",
+            "o oknie",
+            "po oknie"
+          ],
+          "explanation": "Przy = blisko czegoś."
+        },
+        {
+          "id": "g5-6",
+          "text": "Wieczorem lubię spacerować ___.",
+          "answer": "po parku",
+          "grammar_point": "przy-o-po",
+          "options": [
+            "po parku",
+            "na parku",
+            "o parku"
+          ],
+          "explanation": "Chodzić, spacerować po + miejscownik: po parku, po mieście."
+        },
+        {
+          "id": "g5-7",
+          "text": "Mieszkamy ___ Kwiatowej 5.",
+          "answer": "przy ulicy",
+          "grammar_point": "przy-o-po",
+          "options": [
+            "przy ulicy",
+            "w ulicy",
+            "o ulicy"
+          ],
+          "explanation": "W adresie: przy ulicy… (potocznie też: na ulicy…)."
+        },
+        {
+          "id": "g5-8",
+          "text": "Często myślę ___.",
+          "answer": "o rodzinie",
+          "grammar_point": "przy-o-po",
+          "options": [
+            "o rodzinie",
+            "po rodzinie",
+            "przy rodzinie"
+          ],
+          "explanation": "Myśleć, mówić, pamiętać o + miejscownik."
+        },
+        {
+          "id": "g5-9",
+          "text": "Wakacje spędziliśmy ___.",
+          "answer": "na Węgrzech",
+          "grammar_point": "w-czy-na",
+          "options": [
+            "na Węgrzech",
+            "w Węgrzech",
+            "na Węgry"
+          ],
+          "explanation": "Niektóre kraje i regiony mają na: na Węgrzech, na Słowacji, na Litwie."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Gdzie? czy dokąd?",
+      "instruction": "Gdzie jesteś — miejscownik. Dokąd idziesz — do / na + inna forma. Wybierz.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Idę ___, bo skończyło się mleko.",
+          "answer": "do sklepu",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "do sklepu",
+            "w sklepie",
+            "na sklep"
+          ],
+          "explanation": "Idę dokąd? → do sklepu."
+        },
+        {
+          "id": "g6-2",
+          "text": "Kawa stoi ___.",
+          "answer": "na stole",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "na stole",
+            "na stół",
+            "do stołu"
+          ],
+          "explanation": "Stoi gdzie? → na stole (miejscownik)."
+        },
+        {
+          "id": "g6-3",
+          "text": "Wstaw mleko ___.",
+          "answer": "do lodówki",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "do lodówki",
+            "w lodówce",
+            "na lodówkę"
+          ],
+          "explanation": "Wstawiam dokąd? → do lodówki."
+        },
+        {
+          "id": "g6-4",
+          "text": "Wieczorem wychodzimy ___ na herbatę.",
+          "answer": "na balkon",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "na balkon",
+            "na balkonie",
+            "do balkonu"
+          ],
+          "explanation": "Wychodzę dokąd? → na balkon (biernik). Jestem gdzie? → na balkonie."
+        },
+        {
+          "id": "g6-5",
+          "text": "Rowery są ___.",
+          "answer": "w piwnicy",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "w piwnicy",
+            "do piwnicy",
+            "na piwnicę"
+          ]
+        },
+        {
+          "id": "g6-6",
+          "text": "Po pracy idę ___.",
+          "answer": "na siłownię",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "na siłownię",
+            "na siłowni",
+            "w siłownię"
+          ]
+        },
+        {
+          "id": "g6-7",
+          "text": "Dzieci są jeszcze ___.",
+          "answer": "w szkole",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "w szkole",
+            "do szkoły",
+            "na szkołę"
+          ]
+        },
+        {
+          "id": "g6-8",
+          "text": "Na weekend jedziemy ___.",
+          "answer": "do Krakowa",
+          "grammar_point": "gdzie-dokad",
+          "options": [
+            "do Krakowa",
+            "w Krakowie",
+            "na Kraków"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "6. Pułapki z rosyjskiego: popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g7-1",
+          "prompt": "Rodzina je kolację na kuchni.",
+          "answer": "Rodzina je kolację w kuchni.",
+          "grammar_point": "kalki-ru",
+          "accept": [
+            "W kuchni rodzina je kolację."
+          ],
+          "explanation": "Ros. «на кухне» → pol. w kuchni."
+        },
+        {
+          "id": "g7-2",
+          "prompt": "Mój mąż pracuje na fabryce.",
+          "answer": "Mój mąż pracuje w fabryce.",
+          "grammar_point": "kalki-ru",
+          "accept": [
+            "W fabryce pracuje mój mąż."
+          ],
+          "explanation": "Ros. «на фабрике» → pol. w fabryce."
+        },
+        {
+          "id": "g7-3",
+          "prompt": "Na ulicy jest dziś bardzo zimno.",
+          "answer": "Na dworze jest dziś bardzo zimno.",
+          "grammar_point": "kalki-ru",
+          "accept": [
+            "Dziś na dworze jest bardzo zimno.",
+            "Na zewnątrz jest dziś bardzo zimno.",
+            "Dziś na zewnątrz jest bardzo zimno."
+          ],
+          "explanation": "Ros. «на улице» (не дома) → pol. na dworze / na zewnątrz. Na ulicy = na jezdni, na chodniku."
+        },
+        {
+          "id": "g7-4",
+          "prompt": "Bardzo tęsknię po domu.",
+          "answer": "Bardzo tęsknię za domem.",
+          "grammar_point": "narzednik",
+          "accept": [
+            "Tęsknię bardzo za domem."
+          ],
+          "explanation": "Ros. «скучать по…» → pol. tęsknić za + narzędnik."
+        },
+        {
+          "id": "g7-5",
+          "prompt": "Do pracy jeżdżę na tramwaju.",
+          "answer": "Do pracy jeżdżę tramwajem.",
+          "grammar_point": "narzednik",
+          "accept": [
+            "Jeżdżę do pracy tramwajem.",
+            "Tramwajem jeżdżę do pracy."
+          ],
+          "explanation": "Środek transportu: narzędnik bez przyimka — jeżdżę tramwajem, autobusem."
+        },
+        {
+          "id": "g7-6",
+          "prompt": "Mieszkamy na pierwszym etażu.",
+          "answer": "Mieszkamy na pierwszym piętrze.",
+          "grammar_point": "kalki-ru",
+          "explanation": "Ros. «этаж» → pol. piętro. Uwaga: pierwsze piętro to rosyjski второй этаж."
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "drag-and-drop",
+      "title": "7. Ogłoszenie: mieszkanie do wynajęcia",
+      "instruction": "Przeciągnij właściwe słowo do każdego zdania. Trzy słowa są zbędne.",
+      "bank": [
+        "kamienicy",
+        "piętrze",
+        "kuchni",
+        "balkonie",
+        "centrum",
+        "kamienicę",
+        "piętro",
+        "kuchnią"
+      ],
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Wynajmę dwupokojowe mieszkanie w zabytkowej ___ na Starym Mieście.",
+          "answer": "kamienicy",
+          "grammar_point": "miejscownik-f"
+        },
+        {
+          "id": "g8-2",
+          "text": "Mieszkanie jest na drugim ___, w budynku jest winda.",
+          "answer": "piętrze",
+          "grammar_point": "miejscownik-przymiotnik"
+        },
+        {
+          "id": "g8-3",
+          "text": "W ___ jest nowa lodówka i zmywarka.",
+          "answer": "kuchni",
+          "grammar_point": "miejscownik-f"
+        },
+        {
+          "id": "g8-4",
+          "text": "Na dużym ___ można suszyć pranie.",
+          "answer": "balkonie",
+          "grammar_point": "miejscownik-m-n"
+        },
+        {
+          "id": "g8-5",
+          "text": "Do pracy w ___ dojedziesz tramwajem w dziesięć minut.",
+          "answer": "centrum",
+          "grammar_point": "miejscownik-m-n"
+        }
+      ]
+    }
+  ]
+}
