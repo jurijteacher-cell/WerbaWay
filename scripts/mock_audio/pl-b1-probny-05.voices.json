@@ -1,0 +1,73 @@
+{
+  "model": "eleven_v4",
+  "cast": {
+    "NAR": "uPeXyAUvljDRLYs8zgwt",
+    "W1": "mQq2zdGT1zEfDbh8W95l",
+    "W2": "gHGjEjdr2LBds0XHTsvg",
+    "W3": "hq1SDzCP9HutY7Ea9PAW",
+    "W4": "2AI3SLYKkKZsvZEiHd3D",
+    "W5": "AwWFxYalAvioLDuxV9WV",
+    "M1": "p0KQaxqGrT7xcRWSJiHp",
+    "M2": "bwhymd1UcFEihyvPSEoR",
+    "M3": "ihTsqWCgsTDbANOCuZD2",
+    "M4": "e3WIS9BUv6I0HZ9v36L2"
+  },
+  "tasks": {
+    "rs1": {
+      "block_gap": 3.0,
+      "voices": {"Lektor": "NAR"},
+      "segments": [
+        {"Nagranie": "W1"},
+        {"Nagranie": "W3"},
+        {"Nagranie": "M4"},
+        {"Nagranie": "M2"},
+        {"Nagranie": "W5"},
+        {"Nagranie": "W2"},
+        {"Nagranie": "M1"},
+        {"Nagranie": "W1"},
+        {"Nagranie": "M3"},
+        {"Nagranie": "W4"},
+        {"Nagranie": "M1"},
+        {"Nagranie": "W2"},
+        {"Nagranie": "W4"},
+        {"Nagranie": "M3"},
+        {"Nagranie": "W3"}
+      ],
+      "tags": {
+        "1": "[politely]",
+        "4": "[surprised]",
+        "7": "[politely]",
+        "8": "[cautiously]",
+        "9": "[warmly]",
+        "11": "[angry]",
+        "13": "[excited]",
+        "14": "[sad]"
+      }
+    },
+    "rs2": {
+      "block_gap": 2.0,
+      "voices": {"Lektor": "NAR"},
+      "segments": [
+        {"Córka": "W5", "Mama": "W2"},
+        {"Ola": "W3", "Bartek": "M1"},
+        {"Klient": "M2", "Mechanik": "M3"},
+        {"Klient": "M1", "Kelnerka": "W1"},
+        {"Lokatorka": "W5", "Właściciel": "M2"},
+        {"Kobieta": "W4", "Mężczyzna": "M3"},
+        {"Czytelniczka": "W2", "Bibliotekarz": "M1"},
+        {"Mężczyzna": "M2", "Kobieta": "W1"}
+      ]
+    },
+    "rs3": {
+      "voices": {"Lektor": "NAR", "Dziennikarz": "M4", "Joanna Kowalczyk": "W4"}
+    },
+    "rs4": {
+      "block_gap": 1.5,
+      "voices": {"Lektor": "NAR", "Marta": "W3", "Pan Zbigniew": "M2", "Ola": "W5", "Kuba": "M1"}
+    },
+    "rs5": {
+      "block_gap": 2.5,
+      "voices": {"Lektor": "NAR", "Lekarka": "W2"}
+    }
+  }
+}
