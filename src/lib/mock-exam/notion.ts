@@ -195,7 +195,10 @@ export async function writeMockResult(args: {
   if (el) props['Elementy (pkt)'] = { number: el.points };
   const weak = weakTopics(exam, score);
   if (weak.length) {
-    props['Słabe tematy'] = { multi_select: weak.slice(0, 20).map((name) => ({ name: name.slice(0, 100) })) };
+    // Notion rejects commas in multi_select option names (400 → the whole result was lost)
+    props['Słabe tematy'] = {
+      multi_select: weak.slice(0, 20).map((name) => ({ name: name.replace(/,\s*/g, ' · ').slice(0, 100) })),
+    };
   }
 
   const children = buildChildren(exam, score);
