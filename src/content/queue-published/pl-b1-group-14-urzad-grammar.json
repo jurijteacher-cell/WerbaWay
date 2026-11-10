@@ -1,0 +1,688 @@
+{
+  "lesson_id": "pl-b1-group-14-urzad",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: czasowniki modalne i trzeba, wolno, warto",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 60,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "Słowa: co to znaczy?",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "petent",
+          "right": "osoba, która przychodzi do urzędu ze swoją sprawą",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "wniosek",
+          "right": "oficjalna prośba do urzędu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "zaświadczenie",
+          "right": "dokument, który potwierdza jakiś fakt",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "pełnomocnictwo",
+          "right": "zgoda, żeby ktoś załatwił sprawę za ciebie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "termin",
+          "right": "dzień, do którego trzeba coś zrobić",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "kara",
+          "right": "pieniądze do zapłacenia za złamanie przepisu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "zakaz",
+          "right": "informacja, że czegoś nie wolno robić",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "profil zaufany",
+          "right": "podpis, dzięki któremu załatwiasz sprawy przez internet",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Muszę, mogę, powinienem",
+      "instruction": "Wpisz czasownik z nawiasu w odpowiedniej formie. Uważaj na osobę i rodzaj.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Jutro rano ___ (ja, musieć) iść do urzędu skarbowego.",
+          "answer": "muszę",
+          "grammar_point": "musiec-odmiana"
+        },
+        {
+          "id": "g2-2",
+          "text": "Czy ___ (wy, móc) przyjść w czwartek po południu?",
+          "answer": "możecie",
+          "grammar_point": "moc-odmiana"
+        },
+        {
+          "id": "g2-3",
+          "text": "Pani Moniko, ___ (pani, musieć) to podpisać dwa razy.",
+          "answer": "musi pani",
+          "grammar_point": "musiec-odmiana",
+          "accept": [
+            "musi"
+          ],
+          "explanation": "Pani + 3. osoba: pani musi, pani może."
+        },
+        {
+          "id": "g2-4",
+          "text": "Karolina ___ (powinien) odpocząć — pracuje od rana.",
+          "answer": "powinna",
+          "grammar_point": "powinien-odmiana",
+          "explanation": "Ona → powinna."
+        },
+        {
+          "id": "g2-5",
+          "text": "Marku, ___ (ty, powinien) zadzwonić do mamy.",
+          "answer": "powinieneś",
+          "grammar_point": "powinien-odmiana",
+          "explanation": "Ty, mężczyzna → powinieneś."
+        },
+        {
+          "id": "g2-6",
+          "text": "Kasiu, ___ (ty, powinien) wziąć parasol.",
+          "answer": "powinnaś",
+          "grammar_point": "powinien-odmiana",
+          "explanation": "Ty, kobieta → powinnaś."
+        },
+        {
+          "id": "g2-7",
+          "text": "Jestem zmęczona. ___ (ja, powinien) wcześniej się położyć.",
+          "answer": "Powinnam",
+          "grammar_point": "powinien-odmiana",
+          "accept": [
+            "powinnam"
+          ],
+          "explanation": "Ja, kobieta → powinnam."
+        },
+        {
+          "id": "g2-8",
+          "text": "Sąsiedzi ___ (móc) parkować tylko na swoim miejscu.",
+          "answer": "mogą",
+          "grammar_point": "moc-odmiana"
+        },
+        {
+          "id": "g2-9",
+          "text": "W zeszłym roku ___ (my, musieć) dwa razy zmieniać mieszkanie.",
+          "answer": "musieliśmy",
+          "grammar_point": "musiec-czasy",
+          "explanation": "Przeszły, grupa z mężczyzną → musieliśmy."
+        },
+        {
+          "id": "g2-10",
+          "text": "Jeśli spóźnisz się z wnioskiem, ___ (ty, musieć) zapłacić karę. (czas przyszły)",
+          "answer": "będziesz musiał",
+          "grammar_point": "musiec-czasy",
+          "accept": [
+            "będziesz musiała",
+            "będziesz musieć"
+          ],
+          "explanation": "Przyszły: będę / będziesz + musiał(a) albo musieć."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Umiem, potrafię czy mogę?",
+      "instruction": "Wybierz czasownik. Zapytaj: to umiejętność czy możliwość / pozwolenie?",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Mój syn ma pięć lat i już ___ czytać.",
+          "answer": "umie",
+          "grammar_point": "umiec-moc",
+          "options": [
+            "umie",
+            "może"
+          ],
+          "explanation": "Umiejętność (nauczył się) → umie."
+        },
+        {
+          "id": "g3-2",
+          "text": "Dziś nie ___ przyjść, bo mam gorączkę.",
+          "answer": "mogę",
+          "grammar_point": "umiec-moc",
+          "options": [
+            "umiem",
+            "mogę"
+          ],
+          "explanation": "Sytuacja, nie umiejętność → mogę."
+        },
+        {
+          "id": "g3-3",
+          "text": "Czy ___ pan mówić trochę wolniej?",
+          "answer": "może",
+          "grammar_point": "umiec-moc",
+          "options": [
+            "umie",
+            "może"
+          ],
+          "explanation": "Prośba → Czy może pan…?"
+        },
+        {
+          "id": "g3-4",
+          "text": "Babcia nie ___ obsługiwać komputera, ale chce się nauczyć.",
+          "answer": "umie",
+          "grammar_point": "umiec-moc",
+          "options": [
+            "umie",
+            "może"
+          ],
+          "explanation": "Nie nauczyła się → nie umie."
+        },
+        {
+          "id": "g3-5",
+          "text": "Po operacji tata długo nie ___ chodzić bez kul.",
+          "answer": "mógł",
+          "grammar_point": "umiec-moc",
+          "options": [
+            "umiał",
+            "mógł"
+          ],
+          "explanation": "Umiał chodzić, ale nie mógł — przez operację."
+        },
+        {
+          "id": "g3-6",
+          "text": "Ona ___ w jeden dzień załatwić to, na co inni potrzebują tygodnia — ma talent.",
+          "answer": "potrafi",
+          "grammar_point": "umiec-moc",
+          "options": [
+            "potrafi",
+            "musi"
+          ],
+          "explanation": "Talent, umiejętność → potrafi (= umie i daje radę)."
+        },
+        {
+          "id": "g3-7",
+          "text": "Niestety, nie ___ panu pomóc — tę sprawę załatwia inny wydział.",
+          "answer": "mogę",
+          "grammar_point": "umiec-moc",
+          "options": [
+            "umiem",
+            "mogę"
+          ],
+          "explanation": "Nie chodzi o umiejętność, tylko o sytuację → nie mogę."
+        },
+        {
+          "id": "g3-8",
+          "text": "Pływać ___ od dziecka, ale dzisiaj nie ___, bo basen jest zamknięty.",
+          "answer": "umiem, mogę",
+          "grammar_point": "umiec-moc",
+          "options": [
+            "umiem, mogę",
+            "mogę, umiem"
+          ],
+          "explanation": "Umiejętność → umiem; sytuacja → nie mogę."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Co mam zrobić?",
+      "instruction": "Wpisz czasownik „mieć” w odpowiedniej formie. Mieć + bezokolicznik = plan, polecenie albo pytanie o radę.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Przepraszam, gdzie ___ (ja) podpisać?",
+          "answer": "mam",
+          "grammar_point": "miec-bezokolicznik"
+        },
+        {
+          "id": "g4-2",
+          "text": "Szef powiedział, że ___ (my) przyjść jutro o ósmej.",
+          "answer": "mamy",
+          "grammar_point": "miec-bezokolicznik"
+        },
+        {
+          "id": "g4-3",
+          "text": "Lekarz mówi, że ___ (ty) brać lek trzy razy dziennie.",
+          "answer": "masz",
+          "grammar_point": "miec-bezokolicznik"
+        },
+        {
+          "id": "g4-4",
+          "text": "Co ___ (oni) zrobić z tymi dokumentami? Nikt im nie wyjaśnił.",
+          "answer": "mają",
+          "grammar_point": "miec-bezokolicznik"
+        },
+        {
+          "id": "g4-5",
+          "text": "Paczka ___ przyjść w piątek, ale jeszcze jej nie ma. (czas przeszły)",
+          "answer": "miała",
+          "grammar_point": "miec-bezokolicznik",
+          "explanation": "Plan w przeszłości: paczka miała przyjść."
+        },
+        {
+          "id": "g4-6",
+          "text": "Pociąg ___ odjechać o dziewiątej, ale ma opóźnienie. (czas przeszły)",
+          "answer": "miał",
+          "grammar_point": "miec-bezokolicznik",
+          "explanation": "Plan, który się nie udał: miał odjechać."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Trzeba, można, wolno, warto",
+      "instruction": "Wybierz słowo, które pasuje do sensu zdania.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Na wymianę dowodu ___ umówić się przez internet — tak jest szybciej.",
+          "answer": "warto",
+          "grammar_point": "bezosobowe-wybor",
+          "options": [
+            "warto",
+            "nie wolno"
+          ],
+          "explanation": "Rada → warto."
+        },
+        {
+          "id": "g5-2",
+          "text": "W szpitalu ___ palić papierosów.",
+          "answer": "nie wolno",
+          "grammar_point": "bezosobowe-wybor",
+          "options": [
+            "nie trzeba",
+            "nie wolno"
+          ],
+          "explanation": "Zakaz → nie wolno."
+        },
+        {
+          "id": "g5-3",
+          "text": "Bilet ___ kupić w automacie albo w aplikacji — jak wolisz.",
+          "answer": "można",
+          "grammar_point": "bezosobowe-wybor",
+          "options": [
+            "można",
+            "należy"
+          ],
+          "explanation": "Możliwość, wybór → można."
+        },
+        {
+          "id": "g5-4",
+          "text": "Wniosek ___ złożyć najpóźniej do końca miesiąca.",
+          "answer": "należy",
+          "grammar_point": "bezosobowe-wybor",
+          "options": [
+            "należy",
+            "warto"
+          ],
+          "explanation": "Oficjalny obowiązek → należy (styl urzędowy) albo trzeba."
+        },
+        {
+          "id": "g5-5",
+          "text": "Przed wyjazdem za granicę ___ sprawdzić, czy paszport jest ważny.",
+          "answer": "trzeba",
+          "grammar_point": "bezosobowe-wybor",
+          "options": [
+            "trzeba",
+            "wolno"
+          ]
+        },
+        {
+          "id": "g5-6",
+          "text": "Do kina ___ wejść z kawą, ale nie z pizzą.",
+          "answer": "wolno",
+          "grammar_point": "bezosobowe-wybor",
+          "options": [
+            "wolno",
+            "trzeba"
+          ],
+          "explanation": "Pozwolenie → wolno / można."
+        },
+        {
+          "id": "g5-7",
+          "text": "Ten film jest nudny. Nie ___ go oglądać.",
+          "answer": "warto",
+          "grammar_point": "bezosobowe-wybor",
+          "options": [
+            "warto",
+            "wolno"
+          ],
+          "explanation": "Ocena, rada → nie warto."
+        },
+        {
+          "id": "g5-8",
+          "text": "Jeżeli zgubisz dowód osobisty, ___ to szybko zgłosić.",
+          "answer": "trzeba",
+          "grammar_point": "bezosobowe-wybor",
+          "options": [
+            "trzeba",
+            "wolno"
+          ],
+          "explanation": "Ważna sprawa, obowiązek → trzeba."
+        },
+        {
+          "id": "g5-9",
+          "text": "Psa ___ zaszczepić przeciwko wściekliźnie — to obowiązek.",
+          "answer": "trzeba",
+          "grammar_point": "bezosobowe-wybor",
+          "options": [
+            "trzeba",
+            "wolno"
+          ],
+          "explanation": "Obowiązek → trzeba / należy."
+        },
+        {
+          "id": "g5-10",
+          "text": "W tym urzędzie nie ___ czekać w kolejce — wszystko jest online.",
+          "answer": "trzeba",
+          "grammar_point": "bezosobowe-wybor",
+          "options": [
+            "trzeba",
+            "wolno"
+          ],
+          "explanation": "Brak potrzeby → nie trzeba."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "6. Wczoraj, dziś, jutro",
+      "instruction": "Napisz całe zdanie w czasie, który podaje słowo w nawiasie.",
+      "items": [
+        {
+          "id": "g6-1",
+          "prompt": "Trzeba zapłacić rachunek. (wczoraj)",
+          "answer": "Wczoraj trzeba było zapłacić rachunek.",
+          "grammar_point": "bezosobowe-czasy",
+          "accept": [
+            "Wczoraj trzeba było zapłacić rachunek.",
+            "Wczoraj trzeba było zapłacić rachunek",
+            "Trzeba było wczoraj zapłacić rachunek.",
+            "Trzeba było wczoraj zapłacić rachunek",
+            "Rachunek trzeba było zapłacić wczoraj.",
+            "Rachunek trzeba było zapłacić wczoraj"
+          ],
+          "explanation": "Przeszły: trzeba → trzeba było."
+        },
+        {
+          "id": "g6-2",
+          "prompt": "Można parkować przed blokiem. (od przyszłego miesiąca)",
+          "answer": "Od przyszłego miesiąca będzie można parkować przed blokiem.",
+          "grammar_point": "bezosobowe-czasy",
+          "accept": [
+            "Od przyszłego miesiąca będzie można parkować przed blokiem.",
+            "Od przyszłego miesiąca będzie można parkować przed blokiem",
+            "Od przyszłego miesiąca można będzie parkować przed blokiem.",
+            "Od przyszłego miesiąca można będzie parkować przed blokiem",
+            "Przed blokiem będzie można parkować od przyszłego miesiąca.",
+            "Przed blokiem będzie można parkować od przyszłego miesiąca"
+          ],
+          "explanation": "Przyszły: będzie można (albo: można będzie)."
+        },
+        {
+          "id": "g6-3",
+          "prompt": "Nie wolno wchodzić na trawnik. (kiedyś)",
+          "answer": "Kiedyś nie wolno było wchodzić na trawnik.",
+          "grammar_point": "bezosobowe-czasy",
+          "accept": [
+            "Kiedyś nie wolno było wchodzić na trawnik.",
+            "Kiedyś nie wolno było wchodzić na trawnik",
+            "Kiedyś na trawnik nie wolno było wchodzić.",
+            "Kiedyś na trawnik nie wolno było wchodzić"
+          ],
+          "explanation": "Przeszły: nie wolno było."
+        },
+        {
+          "id": "g6-4",
+          "prompt": "Muszę uzupełnić braki we wniosku. (jutro)",
+          "answer": "Jutro będę musiał uzupełnić braki we wniosku.",
+          "grammar_point": "musiec-czasy",
+          "accept": [
+            "Jutro będę musiał uzupełnić braki we wniosku.",
+            "Jutro będę musiał uzupełnić braki we wniosku",
+            "Jutro będę musiała uzupełnić braki we wniosku.",
+            "Jutro będę musiała uzupełnić braki we wniosku",
+            "Jutro będę musieć uzupełnić braki we wniosku.",
+            "Jutro będę musieć uzupełnić braki we wniosku",
+            "Braki we wniosku będę musiał uzupełnić jutro.",
+            "Braki we wniosku będę musiał uzupełnić jutro",
+            "Braki we wniosku będę musiała uzupełnić jutro.",
+            "Braki we wniosku będę musiała uzupełnić jutro"
+          ],
+          "explanation": "Przyszły: będę musiał / musiała / musieć."
+        },
+        {
+          "id": "g6-5",
+          "prompt": "Warto pojechać tam wcześniej. (wczoraj)",
+          "answer": "Wczoraj warto było pojechać tam wcześniej.",
+          "grammar_point": "bezosobowe-czasy",
+          "accept": [
+            "Wczoraj warto było pojechać tam wcześniej.",
+            "Wczoraj warto było pojechać tam wcześniej",
+            "Warto było wczoraj pojechać tam wcześniej.",
+            "Warto było wczoraj pojechać tam wcześniej",
+            "Warto było pojechać tam wcześniej.",
+            "Warto było pojechać tam wcześniej"
+          ],
+          "explanation": "Przeszły: warto było."
+        },
+        {
+          "id": "g6-6",
+          "prompt": "Musimy czekać dwie godziny. (wczoraj)",
+          "answer": "Wczoraj musieliśmy czekać dwie godziny.",
+          "grammar_point": "musiec-czasy",
+          "accept": [
+            "Wczoraj musieliśmy czekać dwie godziny.",
+            "Wczoraj musieliśmy czekać dwie godziny",
+            "Wczoraj musiałyśmy czekać dwie godziny.",
+            "Wczoraj musiałyśmy czekać dwie godziny",
+            "Musieliśmy wczoraj czekać dwie godziny.",
+            "Musieliśmy wczoraj czekać dwie godziny",
+            "Musiałyśmy wczoraj czekać dwie godziny.",
+            "Musiałyśmy wczoraj czekać dwie godziny"
+          ],
+          "explanation": "Przeszły: musieliśmy (z mężczyzną) / musiałyśmy (same kobiety)."
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Nie musisz czy nie wolno ci?",
+      "instruction": "„Nie musisz” = nie ma potrzeby. „Nie wolno” = zakaz. Wybierz.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Masz już bilet online, więc ___ drukować go w domu.",
+          "answer": "nie musisz",
+          "grammar_point": "nie-musisz-nie-wolno",
+          "options": [
+            "nie musisz",
+            "nie wolno ci"
+          ],
+          "explanation": "Nie ma potrzeby → nie musisz."
+        },
+        {
+          "id": "g7-2",
+          "text": "Po alkoholu ___ prowadzić samochodu.",
+          "answer": "nie wolno",
+          "grammar_point": "nie-musisz-nie-wolno",
+          "options": [
+            "nie trzeba",
+            "nie wolno"
+          ],
+          "explanation": "Zakaz → nie wolno."
+        },
+        {
+          "id": "g7-3",
+          "text": "Dziecku do lat trzech ___ kupować biletu w autobusie w naszym mieście.",
+          "answer": "nie trzeba",
+          "grammar_point": "nie-musisz-nie-wolno",
+          "options": [
+            "nie trzeba",
+            "nie wolno"
+          ],
+          "explanation": "Nie ma potrzeby → nie trzeba."
+        },
+        {
+          "id": "g7-4",
+          "text": "Psa ___ zostawiać samego w gorącym samochodzie.",
+          "answer": "nie wolno",
+          "grammar_point": "nie-musisz-nie-wolno",
+          "options": [
+            "nie musisz",
+            "nie wolno"
+          ],
+          "explanation": "To niebezpieczne i zabronione → nie wolno."
+        },
+        {
+          "id": "g7-5",
+          "text": "Jutro jest święto, ___ wstawać wcześnie.",
+          "answer": "nie musimy",
+          "grammar_point": "nie-musisz-nie-wolno",
+          "options": [
+            "nie musimy",
+            "nie wolno nam"
+          ],
+          "explanation": "Nie ma potrzeby → nie musimy."
+        },
+        {
+          "id": "g7-6",
+          "text": "Podczas egzaminu ___ używać telefonu.",
+          "answer": "nie wolno",
+          "grammar_point": "nie-musisz-nie-wolno",
+          "options": [
+            "nie trzeba",
+            "nie wolno"
+          ],
+          "explanation": "Zakaz → nie wolno."
+        },
+        {
+          "id": "g7-7",
+          "text": "Zostań, ___ jeszcze wychodzić — autobus jest za pół godziny.",
+          "answer": "nie musisz",
+          "grammar_point": "nie-musisz-nie-wolno",
+          "options": [
+            "nie musisz",
+            "nie wolno ci"
+          ]
+        },
+        {
+          "id": "g7-8",
+          "text": "Tego leku ___ łączyć z kawą — tak mówi ulotka.",
+          "answer": "nie wolno",
+          "grammar_point": "nie-musisz-nie-wolno",
+          "options": [
+            "nie trzeba",
+            "nie wolno"
+          ],
+          "explanation": "Zakaz → nie wolno."
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Pułapki z ukraińskiego",
+      "instruction": "Wybierz wersję, którą powie Polak. Po każdej odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Przepraszam, już późno. ___ do domu.",
+          "answer": "Muszę iść",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "Mi trzeba iść",
+            "Muszę iść"
+          ],
+          "explanation": "Укр. «мені треба йти» → zwykle: muszę iść (albo: trzeba iść)."
+        },
+        {
+          "id": "g8-2",
+          "text": "Nie boję się wody — ___ od dziecka.",
+          "answer": "umiem pływać",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "mogę pływać",
+            "umiem pływać"
+          ],
+          "explanation": "Укр. «я можу плавати» = вмію → umiem pływać."
+        },
+        {
+          "id": "g8-3",
+          "text": "Dzięki, ale ___ po mnie przyjeżdżać, wrócę taksówką.",
+          "answer": "nie musisz",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "nie wolno ci",
+            "nie musisz"
+          ],
+          "explanation": "Укр. «тобі не треба» → nie musisz. „Nie wolno ci” = заборона."
+        },
+        {
+          "id": "g8-4",
+          "text": "— Mamo, ___ jeszcze godzinę pograć? — Dobrze, ale tylko godzinę.",
+          "answer": "mogę",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "można mi",
+            "mogę"
+          ],
+          "explanation": "Укр. «мені можна?» → mogę? albo wolno mi?, nie „można mi”."
+        },
+        {
+          "id": "g8-5",
+          "text": "Szkoda, że nie przyszedłeś. ___ zadzwonić wcześniej!",
+          "answer": "Powinieneś był",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "Byłeś powinien",
+            "Powinieneś był"
+          ],
+          "explanation": "Укр. «ти повинен був» → powinieneś był: najpierw powinien, potem był."
+        },
+        {
+          "id": "g8-6",
+          "text": "Do wniosku ___ jeszcze jednego zaświadczenia.",
+          "answer": "potrzebuję",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "mi potrzebna",
+            "potrzebuję"
+          ],
+          "explanation": "Укр. «мені потрібна довідка» → potrzebuję zaświadczenia (dopełniacz!)."
+        }
+      ]
+    }
+  ]
+}

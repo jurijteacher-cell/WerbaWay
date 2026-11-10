@@ -1,0 +1,111 @@
+{
+  "lesson_id": "pl-b1-group-14-urzad",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Trzydzieści dni, dwa urzędy i jeden numerek”. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Taras kupił samochód w salonie samochodowym.",
+          "answer": false,
+          "explanation": "Kupił używaną skodę od sąsiada, pana Wiesława."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Na zapłacenie podatku jest mniej czasu niż na rejestrację.",
+          "answer": true,
+          "explanation": "Podatek — czternaście dni, rejestracja — trzydzieści dni."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Maksym pomógł ojcu z deklaracją podatkową.",
+          "answer": true,
+          "explanation": "Maksym powiedział, że deklarację można wysłać przez e-Urząd Skarbowy, i zrobili to razem."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Według Oleny warto było najpierw umówić się na wizytę.",
+          "answer": true,
+          "explanation": "Powiedziała: warto najpierw zarezerwować wizytę przez internet."
+        },
+        {
+          "id": "e1-5",
+          "statement": "W urzędzie Taras dostał nowe tablice rejestracyjne.",
+          "answer": false,
+          "explanation": "Mógł zachować stare tablice, bo były w dobrym stanie."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Taras chce w niedzielę zawieźć babcię na targ.",
+          "answer": true,
+          "explanation": "Obiecał babci Hannie, że nie będzie musiała jechać autobusem na targ."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "audio:p2-dialogi",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-b1-group-14-urzad/e2-dialogi.mp3",
+      "title": "Słuchanie: cztery krótkie dialogi",
+      "instruction": "Usłyszysz cztery krótkie dialogi w urzędzie. Nagranie możesz odtworzyć dwa razy. Do każdego dialogu wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Dialog 1. Z rozmowy wynika, że mężczyzna…",
+          "options": [
+            "może od razu złożyć wniosek w okienku.",
+            "musi stanąć w kolejce do okienka A.",
+            "musi najpierw pobrać numerek z literą C."
+          ],
+          "answer": "musi najpierw pobrać numerek z literą C.",
+          "explanation": "Urzędniczka: bez numerka nie może go przyjąć; litera C, a nie A."
+        },
+        {
+          "id": "e2-2",
+          "question": "Dialog 2. Kobieta odbierze dowód osobisty…",
+          "options": [
+            "w czwartek po pracy.",
+            "w poniedziałek rano.",
+            "przez męża."
+          ],
+          "answer": "w czwartek po pracy.",
+          "explanation": "Mąż nie może odebrać dowodu — trzeba osobiście. W czwartki urząd pracuje do osiemnastej."
+        },
+        {
+          "id": "e2-3",
+          "question": "Dialog 3. Według urzędnika kobieta powinna…",
+          "options": [
+            "wypełnić formularz w urzędzie.",
+            "zrobić wszystko przez internet przed ostatnim dniem.",
+            "od razu złożyć korektę."
+          ],
+          "answer": "zrobić wszystko przez internet przed ostatnim dniem.",
+          "explanation": "Mówi, że nie musi przychodzić, i radzi nie czekać do ostatniego dnia. Korekta — tylko jeśli się pomyli."
+        },
+        {
+          "id": "e2-4",
+          "question": "Dialog 4. Kobieta…",
+          "options": [
+            "pójdzie do okienka na pierwszym piętrze.",
+            "przyniesie umowę najmu.",
+            "złoży deklarację przez internet."
+          ],
+          "answer": "złoży deklarację przez internet.",
+          "explanation": "Mówi: nie będę stać w kolejce, zrobię to w domu. Umowy najmu nie trzeba."
+        }
+      ]
+    }
+  ]
+}
