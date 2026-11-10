@@ -1,0 +1,89 @@
+{
+  "model": "eleven_v4",
+  "cast": {
+    "NAR": "uPeXyAUvljDRLYs8zgwt",
+    "W1": "mQq2zdGT1zEfDbh8W95l",
+    "W2": "gHGjEjdr2LBds0XHTsvg",
+    "W3": "hq1SDzCP9HutY7Ea9PAW",
+    "W4": "2AI3SLYKkKZsvZEiHd3D",
+    "W5": "AwWFxYalAvioLDuxV9WV",
+    "M1": "p0KQaxqGrT7xcRWSJiHp",
+    "M2": "bwhymd1UcFEihyvPSEoR",
+    "M3": "ihTsqWCgsTDbANOCuZD2",
+    "M4": "e3WIS9BUv6I0HZ9v36L2"
+  },
+  "tasks": {
+    "sl1": {
+      "block_gap": 2.5,
+      "voices": {
+        "Lektor": "NAR",
+        "Pani Kaczmarek": "W2",
+        "Joanna": "W5",
+        "Marek": "M1",
+        "Pani Lis": "W4",
+        "Administracja": "M2"
+      }
+    },
+    "sl2": {
+      "block_gap": 2.0,
+      "voices": {
+        "Lektor": "NAR",
+        "Farmaceutka": "W1",
+        "Klient": "M2",
+        "Ania": "W3",
+        "Kuba": "M1",
+        "Klientka": "W5",
+        "Pracownik banku": "M3",
+        "Mama": "W2",
+        "Filip": "M1",
+        "Kasjerka": "W4"
+      },
+      "segments": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {
+          "Klient": "M3"
+        }
+      ]
+    },
+    "sl3": {
+      "gaps": {
+        "1": 60
+      },
+      "voices": {
+        "Lektor": "NAR",
+        "Prezenterka": "W1",
+        "Tomasz": "M3"
+      }
+    },
+    "sl4": {
+      "block_gap": 1.5,
+      "gaps": {
+        "1": 30
+      },
+      "voices": {
+        "Lektor": "NAR",
+        "Prezenter": "M4"
+      },
+      "segments": [
+        {},
+        {},
+        {
+          "Słuchacz": "M2"
+        },
+        {
+          "Słuchaczka": "W3"
+        },
+        {
+          "Słuchacz": "M1"
+        },
+        {
+          "Słuchaczka": "W2"
+        }
+      ]
+    }
+  }
+}

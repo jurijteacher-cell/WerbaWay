@@ -13,6 +13,7 @@ Voices and emotion tags: scripts/mock_audio/{lesson_id}.voices.json
   tasks.{task}.segments   — list (segment 0 = example, then numer/dialog 1, 2…) of {speaker: code}
   tasks.{task}.tags       — {segment index: "[surprised]"} added in front of non-Lektor lines
   tasks.{task}.block_gap  — seconds of silence between blocks (blank line in the transcript)
+  tasks.{task}.gaps       — {block index: seconds} overrides block_gap before that block (e.g. 60 s reading time)
 A new segment starts at every block that begins with "Lektor:" (after the first one).
 Repeated blocks reuse the cached clip, so a dialog heard twice is billed once and sounds identical.
 
@@ -149,7 +150,7 @@ def main():
         parts = []
         for bi, block in enumerate(plans[t["id"]]):
             if bi:
-                parts.append(silence(tcfg.get("block_gap", 2.0), cache_dir))
+                parts.append(silence(float(tcfg.get("gaps", {}).get(str(bi), tcfg.get("block_gap", 2.0))), cache_dir))
             for li, (spk, code, vid, text) in enumerate(block):
                 if li:
                     parts.append(silence(AFTER_LEKTOR if block[li - 1][0] == "Lektor" else LINE_GAP, cache_dir))

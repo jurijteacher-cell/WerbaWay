@@ -1,0 +1,866 @@
+{
+  "lesson_id": "pl-telc-probny-03",
+  "exercise_type": "mock-exam",
+  "exam_label": "telc 3",
+  "title": "telc Polski B1·B2 · egzamin próbny 3",
+  "subtitle": "Część pisemna: słuchanie, czytanie, elementy językowe, wypowiedź pisemna",
+  "eyebrow": "egzamin próbny · telc B1·B2",
+  "source": "Materiały własne Werba Way w formacie telc B1·B2. Nagrania: głosy syntetyczne.",
+  "pass_ratio": 0.6,
+  "scoring": "telc",
+  "levels": {
+    "B1": 27,
+    "B2": 43
+  },
+  "rules": [
+    "Każde nagranie usłyszysz tylko raz — jak na egzaminie. Nie da się go przewinąć ani włączyć ponownie.",
+    "Bez słownika i tłumacza. Możesz przechodzić między częściami.",
+    "Wynik testu (słuchanie + czytanie + elementy językowe, razem 59 p.): od 27 p. — B1, od 43 p. — B2.",
+    "Wypowiedź pisemną oceni nauczyciel. Na certyfikat trzeba zdać też egzamin ustny."
+  ],
+  "sections": [
+    {
+      "id": "sl",
+      "tab": "Słuchanie",
+      "title": "Rozumienie ze słuchu",
+      "minutes": 25,
+      "tasks": [
+        {
+          "id": "sl1",
+          "title": "Część 1 · wiadomości głosowe",
+          "layout": "mc-passages",
+          "points_per_item": 1,
+          "start_n": 1,
+          "instruction": "Usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz.",
+          "audio": {
+            "src": "/audio/pl-telc-probny-03/telc-sluchanie-1.mp3",
+            "max_plays": 1
+          },
+          "transcript": "Lektor: Rozumienie ze słuchu, część pierwsza. Za chwilę usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz. Najpierw przykład.\nPani Kaczmarek: Dzień dobry, mówi Ewa Kaczmarek z Biblioteki Miejskiej przy ulicy Słowackiego. Przewodnik po Bieszczadach, który zamówił pan dwa tygodnie temu, jest już do odebrania. Książka będzie na pana czekać w wypożyczalni do piątku. Proszę pamiętać o karcie bibliotecznej. Do widzenia.\n\nLektor: Numer jeden.\nJoanna: Dzień dobry, tu Joanna z gabinetu stomatologicznego „Uśmiech”. Dzwonię w sprawie pani wizyty u doktor Nowak. Niestety pani doktor jest chora i w środę nie przyjmuje. Możemy zaproponować wizytę w piątek o czternastej albo w przyszły poniedziałek rano. Proszę oddzwonić i powiedzieć, który termin pani pasuje. Dziękuję.\n\nLektor: Numer dwa.\nMarek: Cześć Piotrek, tu Marek. Słuchaj, w sprawie koncertu w sobotę. Bilety już mam, oba, więc nic nie kupuj. Ale zmiana planu: nie spotykamy się pod halą, bo tam będzie straszny tłum. Czekam na ciebie o siódmej w kawiarni naprzeciwko dworca, zjemy coś i pójdziemy razem. Aha, weź dowód, bo przy wejściu sprawdzają. Na razie!\n\nLektor: Numer trzy.\nPani Lis: Dzień dobry, pani Oksano, mówi Barbara Lis, kierowniczka zmiany. W przyszłym tygodniu zmieniamy grafik. W poniedziałek i we wtorek będzie pani pracować na drugiej zmianie, od czternastej, a nie od szóstej. Od środy wszystko wraca do normy. Grafik powieszę jutro w szatni, ale chciałam, żeby pani wiedziała wcześniej. Do zobaczenia.\n\nLektor: Numer cztery.\nAdministracja: Dzień dobry, tu administracja Spółdzielni „Pod Lipami”. Informujemy, że w czwartek w budynku przy ulicy Jasnej cztery nie będzie ciepłej wody, od ósmej do szesnastej. Zimna woda będzie normalnie. Prosimy nie zostawiać odkręconych kranów. Przepraszamy za utrudnienia.\n\nLektor: Koniec pierwszej części Rozumienia ze słuchu.",
+          "example": {
+            "stem": "Pani Kaczmarek dzwoni, aby",
+            "options": [
+              "poinformować, że książka czeka na odbiór.",
+              "przypomnieć o zwrocie książki.",
+              "zaprosić na spotkanie w bibliotece."
+            ],
+            "answer": "a"
+          },
+          "items": [
+            {
+              "id": "sl1-1",
+              "stem": "Joanna dzwoni, aby",
+              "options": [
+                "potwierdzić wizytę w środę.",
+                "zaproponować nowy termin wizyty.",
+                "odwołać wszystkie wizyty w tym tygodniu."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "sl1-2",
+              "stem": "Marek chce, żeby Piotrek",
+              "options": [
+                "kupił bilety na koncert.",
+                "przyszedł prosto pod halę.",
+                "spotkał się z nim w kawiarni."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "sl1-3",
+              "stem": "W poniedziałek i we wtorek Oksana",
+              "options": [
+                "ma wolne.",
+                "zacznie pracę później niż zwykle.",
+                "musi przyjść do pracy o szóstej."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "sl1-4",
+              "stem": "W czwartek mieszkańcy",
+              "options": [
+                "nie będą mieli ciepłej wody przez kilka godzin.",
+                "nie będą mieli wody przez cały dzień.",
+                "muszą być w domu od ósmej."
+              ],
+              "answer": "a"
+            }
+          ]
+        },
+        {
+          "id": "sl2",
+          "title": "Część 2 · dialogi",
+          "layout": "mc-passages",
+          "points_per_item": 1,
+          "start_n": 5,
+          "tf_labels": [
+            "prawda",
+            "fałsz"
+          ],
+          "instruction": "Usłyszysz pięć dialogów. Do każdego dialogu są dwa zadania: najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe, potem wybierz a, b lub c. Każdy dialog usłyszysz jeden raz.",
+          "audio": {
+            "src": "/audio/pl-telc-probny-03/telc-sluchanie-2.mp3",
+            "max_plays": 1
+          },
+          "transcript": "Lektor: Rozumienie ze słuchu, część druga. Za chwilę usłyszysz pięć dialogów. Na temat każdego dialogu napisano po dwa zdania. Najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe. Następnie zdecyduj, które zdanie jest najbardziej trafne: a, b czy c. Każdy dialog usłyszysz jeden raz.\n\nLektor: Numer pięć i sześć.\nFarmaceutka: Dzień dobry, w czym mogę pomóc?\nKlient: Dzień dobry, mam e-receptę. Kod: cztery, siedem, dwa, jeden.\nFarmaceutka: Dziękuję. Niestety, tego leku w tej chwili nie mamy. Mogę go zamówić na jutro albo dać panu zamiennik. To ta sama substancja, tylko inna firma. I jest tańszy.\nKlient: A działa tak samo?\nFarmaceutka: Tak, to ten sam lek. Różni się tylko opakowaniem.\nKlient: To poproszę zamiennik. Nie chcę przychodzić drugi raz.\nFarmaceutka: Proszę. Dwadzieścia trzy złote. Bierze pan dwie tabletki dziennie, po jedzeniu.\n\nLektor: Numer siedem i osiem.\nAnia: Kuba, wiesz, że w piątek szef ma pięćdziesiąte urodziny?\nKuba: Wiem. Zbieramy na prezent? Po ile?\nAnia: Po trzydzieści złotych. Myślałam o ekspresie do kawy, ale Marta mówi, że szef dostał już jeden od żony.\nKuba: A może bilety do teatru? Ciągle mówi, że nie ma czasu na kulturę.\nAnia: Dobry pomysł, ale nie wiemy, czy jego żona ma czas w ten weekend. Weźmy voucher, wtedy sami wybiorą termin.\nKuba: Zgoda. Kupisz go? Ja mogę zamówić tort w cukierni na dole.\nAnia: Dobra. Ja voucher, ty tort.\n\nLektor: Numer dziewięć i dziesięć.\nKlientka: Dzień dobry, chciałabym założyć konto. Pracuję w Polsce od miesiąca.\nPracownik banku: Zapraszam. Potrzebuję paszportu i numeru PESEL. Ma pani PESEL?\nKlientka: Jeszcze nie. Złożyłam wniosek w zeszłym tygodniu.\nPracownik banku: Nic nie szkodzi. Konto otworzymy na paszport, a numer dopisze pani później w aplikacji.\nKlientka: Świetnie. A ile kosztuje prowadzenie konta?\nPracownik banku: Nic, jeśli co miesiąc wpływa na nie co najmniej tysiąc złotych. Jeśli nie, dziesięć złotych miesięcznie.\nKlientka: Będzie na nie wpływać pensja, więc nie ma problemu.\n\nLektor: Numer jedenaście i dwanaście.\nMama: Filip, w niedzielę babcia przyjeżdża na obiad. Pomożesz mi?\nFilip: Jasne. Co mam zrobić?\nMama: Pojedź w niedzielę rano na targ po warzywa.\nFilip: W niedzielę rano mam trening, do jedenastej. A targ jest otwarty tylko do dwunastej.\nMama: No to kup warzywa w sobotę, w supermarkecie. A w niedzielę po treningu odbierz babcię z dworca.\nFilip: Dobrze. O której przyjeżdża pociąg?\nMama: O dwunastej trzydzieści. Tylko się nie spóźnij, babcia nie lubi czekać.\n\nLektor: Numer trzynaście i czternaście.\nKlient: Dzień dobry, dwa bilety na „Ostatni pociąg”, na dwudziestą.\nKasjerka: Na dwudziestą zostały tylko miejsca w pierwszym rzędzie. Może seans o dwudziestej pierwszej trzydzieści? Tam są dobre miejsca w środku sali.\nKlient: Pierwszy rząd to nie dla mnie. Dobrze, biorę późniejszy.\nKasjerka: Czy ktoś ma legitymację studencką?\nKlient: Żona jest studentką, ja nie.\nKasjerka: To jeden bilet normalny, trzydzieści dwa złote, i jeden ulgowy, dwadzieścia cztery. Razem pięćdziesiąt sześć.\n\nLektor: Koniec drugiej części Rozumienia ze słuchu.",
+          "items": [
+            {
+              "id": "sl2-1",
+              "kind": "tf",
+              "stem": "W aptece był lek, który lekarz zapisał na recepcie.",
+              "answer": "fałsz",
+              "passage": "Rozmowa 1 · zadania 5–6"
+            },
+            {
+              "id": "sl2-2",
+              "stem": "Klient",
+              "options": [
+                "przyjdzie po lek jutro.",
+                "kupi tańszy lek, który działa tak samo.",
+                "ma brać lek przed jedzeniem."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "sl2-3",
+              "kind": "tf",
+              "stem": "Koledzy kupią szefowi ekspres do kawy.",
+              "answer": "fałsz",
+              "passage": "Rozmowa 2 · zadania 7–8"
+            },
+            {
+              "id": "sl2-4",
+              "stem": "Kuba",
+              "options": [
+                "zamówi tort.",
+                "kupi voucher.",
+                "zbierze pieniądze od kolegów."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "sl2-5",
+              "kind": "tf",
+              "stem": "Konto można założyć bez numeru PESEL.",
+              "answer": "prawda",
+              "passage": "Rozmowa 3 · zadania 9–10"
+            },
+            {
+              "id": "sl2-6",
+              "stem": "Konto będzie dla klientki bezpłatne, jeśli",
+              "options": [
+                "zainstaluje aplikację banku.",
+                "dopisze numer PESEL.",
+                "co miesiąc wpłynie na nie co najmniej tysiąc złotych."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "sl2-7",
+              "kind": "tf",
+              "stem": "W niedzielę rano Filip jest zajęty.",
+              "answer": "prawda",
+              "passage": "Rozmowa 4 · zadania 11–12"
+            },
+            {
+              "id": "sl2-8",
+              "stem": "W niedzielę Filip",
+              "options": [
+                "pojedzie na targ.",
+                "odbierze babcię z dworca.",
+                "zrobi zakupy w supermarkecie."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "sl2-9",
+              "kind": "tf",
+              "stem": "Klient kupił bilety na seans o dwudziestej.",
+              "answer": "fałsz",
+              "passage": "Rozmowa 5 · zadania 13–14"
+            },
+            {
+              "id": "sl2-10",
+              "stem": "Klient zapłaci",
+              "options": [
+                "za dwa bilety normalne.",
+                "sześćdziesiąt cztery złote.",
+                "za jeden bilet normalny i jeden ulgowy."
+              ],
+              "answer": "c"
+            }
+          ]
+        },
+        {
+          "id": "sl3",
+          "title": "Część 3 · wywiad",
+          "layout": "mc-passages",
+          "points_per_item": 1,
+          "start_n": 15,
+          "instruction": "Usłyszysz wywiad radiowy. Wybierz właściwą odpowiedź: a, b lub c. Na początku nagrania masz minutę na przeczytanie zadań. Wywiad usłyszysz jeden raz.",
+          "audio": {
+            "src": "/audio/pl-telc-probny-03/telc-sluchanie-3.mp3",
+            "max_plays": 1,
+            "note": "Nagranie usłyszysz jeden raz. Pierwsza minuta to cisza na przeczytanie zadań."
+          },
+          "transcript": "Lektor: Rozumienie ze słuchu, część trzecia. Za chwilę usłyszysz wywiad. Najpierw przeczytaj treść punktów od piętnastego do dwudziestego. Masz na to minutę.\n\nLektor: Teraz posłuchaj wywiadu. Usłyszysz go jeden raz.\nPrezenterka: Dzień dobry, w audycji „Ludzie z pasją” gościmy dziś Tomasza Wierzbickiego, który hoduje pszczoły… w centrum miasta. Dzień dobry.\nTomasz: Dzień dobry, dziękuję za zaproszenie.\nPrezenterka: Skąd pomysł na pszczoły w mieście?\nTomasz: Trochę z dzieciństwa. Mój dziadek miał pasiekę na wsi i spędzałem u niego każde wakacje. Potem przez dwadzieścia lat pracowałem jako informatyk i o pszczołach zapomniałem. Wróciłem do nich, kiedy lekarz powiedział mi, że muszę mniej siedzieć przed komputerem i więcej się ruszać.\nPrezenterka: Gdzie stoją pana ule?\nTomasz: Na dachu hotelu w centrum. Najpierw myślałem o ogródku działkowym, ale tam sąsiedzi się nie zgodzili. A dyrektor hotelu sam do mnie zadzwonił: chciał mieć własny miód dla gości na śniadania.\nPrezenterka: A ludzie się nie boją?\nTomasz: Na początku goście pytali, czy to bezpieczne. Ale pszczoły latają wysoko, nad ulicami, i nikomu nie przeszkadzają. Przez trzy lata nikt z gości nie został użądlony. Tylko ja, oczywiście, kilka razy.\nPrezenterka: Co jest w tej pracy najtrudniejsze?\nTomasz: Zima. Uli nie można wtedy otwierać i sprawdzać, trzeba po prostu czekać i mieć nadzieję, że pszczoły przeżyją. Latem pracy jest dużo, ale to przyjemna praca.\nPrezenterka: Gdzie można kupić pana miód?\nTomasz: W sklepie nigdzie. Większość dostaje hotel, a resztę oddaję znajomym. Ludzie piszą do mnie przez internet, ale niestety muszę odmawiać.\nPrezenterka: Planuje pan więcej uli?\nTomasz: Nie, cztery wystarczą. Za to od wiosny chcę prowadzić warsztaty dla uczniów z okolicznych szkół, żeby dzieci wiedziały, że miód nie bierze się z supermarketu.\nPrezenterka: Dziękuję bardzo za rozmowę.\n\nLektor: Koniec trzeciej części Rozumienia ze słuchu.",
+          "items": [
+            {
+              "id": "sl3-1",
+              "stem": "Tomasz zaczął hodować pszczoły, ponieważ",
+              "options": [
+                "odziedziczył pasiekę po dziadku.",
+                "chciał zmienić styl życia po rozmowie z lekarzem.",
+                "stracił pracę jako informatyk."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "sl3-2",
+              "stem": "Ule Tomasza stoją",
+              "options": [
+                "na ogródku działkowym.",
+                "na wsi u dziadka.",
+                "na dachu hotelu."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "sl3-3",
+              "stem": "Według Tomasza pszczoły",
+              "options": [
+                "nie przeszkadzają ludziom w okolicy.",
+                "są niebezpieczne dla gości hotelu.",
+                "kilka razy użądliły gości."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "sl3-4",
+              "stem": "Zima jest najtrudniejsza, bo",
+              "options": [
+                "jest wtedy najwięcej pracy.",
+                "pszczoły są wtedy agresywne.",
+                "Tomasz nie może wtedy sprawdzać uli."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "sl3-5",
+              "stem": "Miód Tomasza",
+              "options": [
+                "można kupić w sklepach w centrum.",
+                "w większości trafia do hotelu.",
+                "można zamówić przez internet."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "sl3-6",
+              "stem": "W przyszłości Tomasz chce",
+              "options": [
+                "pokazywać dzieciom, jak pracują pszczelarze.",
+                "postawić więcej uli.",
+                "otworzyć sklep z miodem."
+              ],
+              "answer": "a"
+            }
+          ]
+        },
+        {
+          "id": "sl4",
+          "title": "Część 4 · opinie",
+          "layout": "matching",
+          "points_per_item": 1,
+          "start_n": 21,
+          "instruction": "Usłyszysz audycję radiową „Praca z domu — wygoda czy samotność?”. Które zdanie (a–f) pasuje do opinii 21–23? Na początku nagrania masz pół minuty na przeczytanie zdań. Audycję usłyszysz jeden raz.",
+          "audio": {
+            "src": "/audio/pl-telc-probny-03/telc-sluchanie-4.mp3",
+            "max_plays": 1,
+            "note": "Nagranie usłyszysz jeden raz. Na początku jest pół minuty ciszy na przeczytanie zdań."
+          },
+          "transcript": "Lektor: Rozumienie ze słuchu, część czwarta. Usłyszysz audycję, w której ludzie wyrażają opinie na dany temat. Które zdanie, od a do f, najlepiej pasuje do opinii dwadzieścia jeden, dwadzieścia dwa i dwadzieścia trzy? Masz pół minuty na przeczytanie zdań.\n\nLektor: Teraz posłuchaj audycji.\nPrezenter: Dzień dobry, w programie „Między nami” pytamy dziś: praca z domu — wygoda czy samotność? Czekamy na państwa telefony.\n\nLektor: Przykład.\nSłuchacz: Mam dwoje małych dzieci. Odkąd pracuję z domu, nie tracę dwóch godzin dziennie na dojazdy. Rano odprowadzam dzieci do przedszkola, a po pracy od razu jestem z nimi. Dla mnie to ogromna zmiana.\n\nLektor: Numer dwadzieścia jeden.\nSłuchaczka: Przez dwa lata pracowałam tylko z domu. Wiem, że w domu pracowałam nawet szybciej, ale po jakimś czasie czułam się bardzo samotna. Brakowało mi zwykłej rozmowy przy kawie, żartów, wspólnego obiadu. Teraz codziennie jeżdżę do biura i jestem szczęśliwsza.\n\nLektor: Numer dwadzieścia dwa.\nSłuchacz: U nas w firmie dwa dni pracujemy w domu, trzy w biurze, i moim zdaniem to idealne rozwiązanie. W domu mam spokój i robię to, co wymaga skupienia. W biurze są spotkania i rozmowy z zespołem. Mój brat jest kierowcą, on takiego wyboru nie ma, ale tam, gdzie się da, polecam właśnie to.\n\nLektor: Numer dwadzieścia trzy.\nSłuchaczka: Pracuję w domu od roku i lubię to, ale jedna rzecz mnie denerwuje. Rachunki za prąd i ogrzewanie wzrosły mi o prawie dwieście złotych miesięcznie, a firma oszczędza na biurze. Uważam, że pracodawca powinien oddawać pracownikom choć część tych pieniędzy.\nPrezenter: Dziękujemy za wszystkie telefony. Do usłyszenia za tydzień!\n\nLektor: Koniec Rozumienia ze słuchu. Dziękujemy za uwagę.",
+          "left_label": "Opinie",
+          "right_label": "Zdania a–f",
+          "right": [
+            {
+              "key": "a",
+              "text": "Dzięki pracy z domu mam więcej czasu dla rodziny."
+            },
+            {
+              "key": "b",
+              "text": "Brakuje mi kontaktu z ludźmi z pracy."
+            },
+            {
+              "key": "c",
+              "text": "Firma powinna pokrywać część kosztów pracy w domu."
+            },
+            {
+              "key": "d",
+              "text": "Najlepiej łączyć pracę w domu i w biurze."
+            },
+            {
+              "key": "e",
+              "text": "W moim zawodzie praca zdalna jest niemożliwa."
+            },
+            {
+              "key": "f",
+              "text": "W domu pracuję wydajniej niż w biurze, dlatego nie chcę wracać."
+            }
+          ],
+          "example": {
+            "text": "opinia słuchacza (ojciec dwojga dzieci)",
+            "answer": "a"
+          },
+          "items": [
+            {
+              "id": "sl4-1",
+              "text": "Opinia 21",
+              "answer": "b"
+            },
+            {
+              "id": "sl4-2",
+              "text": "Opinia 22",
+              "answer": "d"
+            },
+            {
+              "id": "sl4-3",
+              "text": "Opinia 23",
+              "answer": "c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cz",
+      "tab": "Czytanie",
+      "title": "Rozumienie tekstu czytanego",
+      "minutes": 40,
+      "tasks": [
+        {
+          "id": "cz1",
+          "title": "Część 1 · wiadomości",
+          "layout": "matching",
+          "points_per_item": 1,
+          "start_n": 24,
+          "instruction": "Przeczytaj teksty 24–27 i dopasuj do każdego temat (a–f). Dwa tematy są niepotrzebne.",
+          "left_label": "Teksty 24–27",
+          "right_label": "Tematy a–f",
+          "right": [
+            {
+              "key": "a",
+              "text": "Zaproszenie na urodziny"
+            },
+            {
+              "key": "b",
+              "text": "Zmiana godzin otwarcia"
+            },
+            {
+              "key": "c",
+              "text": "Prośba o zastępstwo w pracy"
+            },
+            {
+              "key": "d",
+              "text": "Prośba o pożyczenie samochodu"
+            },
+            {
+              "key": "e",
+              "text": "Przeprosiny za nieobecność"
+            },
+            {
+              "key": "f",
+              "text": "Zbiórka pieniędzy na prezent"
+            }
+          ],
+          "items": [
+            {
+              "id": "cz1-1",
+              "answer": "b",
+              "text": "Szanowni Pacjenci,\nod 2 stycznia apteka będzie czynna od poniedziałku do piątku w godzinach 8:00–20:00, a w soboty od 9:00 do 14:00. W niedziele i święta apteka będzie zamknięta. Najbliższa apteka całodobowa znajduje się przy ulicy Kościuszki 12.\nZespół Apteki „Pod Orłem”"
+            },
+            {
+              "id": "cz1-2",
+              "answer": "d",
+              "text": "Cześć Basiu,\nmam do Ciebie wielką prośbę. W sobotę muszę zawieźć mamę do lekarza do Opola, a mój samochód od tygodnia stoi w warsztacie. Czy mogłabym wziąć Twoje auto na jeden dzień? Zatankuję do pełna i oddam wieczorem. Daj znać, czy to możliwe!\nGosia"
+            },
+            {
+              "id": "cz1-3",
+              "answer": "e",
+              "text": "Szanowna Pani Dyrektor,\nbardzo przepraszam, że wczoraj nie przyszedłem na zebranie rodziców. W ostatniej chwili musiałem zostać dłużej w pracy, bo zachorował kolega. Czy mógłbym umówić się z wychowawczynią syna na rozmowę w innym terminie?\nZ poważaniem\nAndrzej Bielecki"
+            },
+            {
+              "id": "cz1-4",
+              "answer": "a",
+              "text": "Hej wszystkim!\nW przyszłą sobotę kończę trzydzieści lat i chcę to uczcić. Zapraszam do mnie na grilla od 17:00, w ogrodzie za domem. Prezentów nie trzeba, ale jeśli ktoś chce, może przynieść sałatkę albo ciasto. Potwierdźcie do środy, żebym wiedziała, ile kupić kiełbasek!\nIza"
+            }
+          ]
+        },
+        {
+          "id": "cz2",
+          "title": "Część 2 · ogłoszenia",
+          "layout": "matching",
+          "points_per_item": 1,
+          "start_n": 28,
+          "reuse_keys": true,
+          "passage_title": "Tablica ogłoszeń w bibliotece osiedlowej",
+          "instruction": "Przeczytaj sytuacje 28–32 i ogłoszenia a–h. Które ogłoszenie pasuje do której sytuacji? Każde ogłoszenie możesz wybrać tylko raz. Jeśli żadne ogłoszenie nie pasuje, wybierz x.",
+          "left_label": "Sytuacje 28–32",
+          "right_label": "Ogłoszenia a–h",
+          "right": [
+            {
+              "key": "a",
+              "text": "Kurs szycia dla początkujących — maszyny na miejscu. Wtorki, 18:00, sala nr 2."
+            },
+            {
+              "key": "b",
+              "text": "Klub szachowy dla dzieci od 7 do 12 lat. Soboty, 10:00. Zajęcia bezpłatne."
+            },
+            {
+              "key": "c",
+              "text": "Sprzedam rower dziecięcy, koła 20 cali, prawie nowy. Tanio!"
+            },
+            {
+              "key": "d",
+              "text": "Nauczycielka z wieloletnim doświadczeniem — pomoc w odrabianiu lekcji z języka polskiego, klasy 1–3."
+            },
+            {
+              "key": "e",
+              "text": "Grupa biegowa „Poranne Kilometry” — w niedziele o 8:00 przy fontannie w parku. Zapraszamy na każdym poziomie!"
+            },
+            {
+              "key": "f",
+              "text": "Oddam za darmo kanapę i dwa fotele. Odbiór własny z 3. piętra."
+            },
+            {
+              "key": "g",
+              "text": "Tłumacz przysięgły języka ukraińskiego i rosyjskiego — akty stanu cywilnego, dyplomy, świadectwa."
+            },
+            {
+              "key": "h",
+              "text": "Wyprowadzę Twojego psa na spacer i zaopiekuję się nim, kiedy wyjedziesz. Referencje od sąsiadów."
+            },
+            {
+              "key": "x",
+              "text": "Żadne ogłoszenie nie pasuje."
+            }
+          ],
+          "example": {
+            "text": "Twoja dziewięcioletnia córka chce nauczyć się grać w szachy.",
+            "answer": "b"
+          },
+          "items": [
+            {
+              "id": "cz2-1",
+              "text": "Wyjeżdżasz na dwa tygodnie do rodziny i nie masz z kim zostawić psa.",
+              "answer": "h"
+            },
+            {
+              "id": "cz2-2",
+              "text": "Potrzebujesz oficjalnego tłumaczenia aktu urodzenia na polski.",
+              "answer": "g"
+            },
+            {
+              "id": "cz2-3",
+              "text": "Chcesz zacząć biegać, ale nie lubisz trenować sam/sama.",
+              "answer": "e"
+            },
+            {
+              "id": "cz2-4",
+              "text": "Twój syn chodzi do trzeciej klasy i ma kłopoty z matematyką.",
+              "answer": "x"
+            },
+            {
+              "id": "cz2-5",
+              "text": "Wynająłeś/Wynajęłaś puste mieszkanie i masz mało pieniędzy na meble.",
+              "answer": "f"
+            }
+          ]
+        },
+        {
+          "id": "cz3",
+          "title": "Część 3 · artykuły",
+          "layout": "mc-passages",
+          "points_per_item": 1,
+          "start_n": 33,
+          "instruction": "Przeczytaj trzy teksty. Do każdego tekstu są dwa zadania. Wybierz właściwą odpowiedź: a, b lub c.",
+          "items": [
+            {
+              "id": "cz3-1",
+              "stem": "Ogród społeczny",
+              "options": [
+                "powstał na boisku szkoły.",
+                "dostał od miasta teren i narzędzia.",
+                "kupuje mieszkańcom nasiona."
+              ],
+              "answer": "b",
+              "passage": "Ogród społeczny na Zatorzu\n\nWiosną na osiedlu Zatorze, na nieużywanym terenie za szkołą, powstał ogród społeczny. Mieszkańcy dostali od miasta ziemię i narzędzia, a nasiona i sadzonki kupują sami. Każdy, kto chce, może dostać jedną grządkę — wystarczy zapisać się u koordynatorki ogrodu, pani Haliny Sroki. Warzywa należą do osób, które je posadziły, ale zioła rosną we wspólnej części i może je zbierać każdy. W soboty o dziesiątej odbywają się wspólne prace, na które zapraszamy także dzieci. Na razie w ogrodzie jest trzydzieści grządek i wszystkie są już zajęte, ale miasto obiecało w przyszłym roku powiększyć teren."
+            },
+            {
+              "id": "cz3-2",
+              "stem": "Teraz w ogrodzie",
+              "options": [
+                "nie ma już wolnych grządek.",
+                "każdy może zbierać warzywa z każdej grządki.",
+                "pracują tylko dorośli."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "cz3-3",
+              "stem": "Kurs prowadzą",
+              "options": [
+                "pracownicy domu kultury.",
+                "licealiści.",
+                "emerytowani nauczyciele."
+              ],
+              "answer": "b",
+              "passage": "Smartfon bez tajemnic\n\nW Domu Kultury „Słonecznik” ruszył bezpłatny kurs obsługi smartfona dla osób po sześćdziesiątym piątym roku życia. Uczestnicy uczą się, jak robić zdjęcia, wysyłać wiadomości, rozmawiać przez wideo z rodziną i kupować bilety w aplikacji. Nauczycielami są uczniowie pobliskiego liceum, którzy w ten sposób odbywają wolontariat. Kurs trwa sześć tygodni, zajęcia są raz w tygodniu. Każdy przychodzi z własnym telefonem — dom kultury nie ma sprzętu do wypożyczenia. Zapisy przyjmuje sekretariat, także telefonicznie."
+            },
+            {
+              "id": "cz3-4",
+              "stem": "Uczestnicy kursu",
+              "options": [
+                "dostają telefon na czas zajęć.",
+                "płacą za materiały.",
+                "przynoszą na zajęcia swoje telefony."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "cz3-5",
+              "stem": "Pomysł, żeby zrezygnować z plastiku,",
+              "options": [
+                "wyszedł od uczniów.",
+                "zaproponowali rodzice.",
+                "przyszedł od dyrekcji."
+              ],
+              "answer": "a",
+              "passage": "Stołówka bez plastiku\n\nOd nowego semestru w stołówce Szkoły Podstawowej nr 7 nie ma już jednorazowych kubków i sztućców. Dzieci piją wodę z dzbanków stojących na stołach, a każdy uczeń dostał od szkoły metalowy bidon. Pomysł wyszedł od samorządu uczniowskiego, który policzył, że szkoła wyrzucała co miesiąc ponad dwa tysiące plastikowych kubków. Rodzice na początku obawiali się, że naczynia będą źle umyte, dlatego dyrekcja kupiła nową zmywarkę. W przyszłym roku uczniowie chcą zorganizować wymianę używanych podręczników."
+            },
+            {
+              "id": "cz3-6",
+              "stem": "Szkoła kupiła nową zmywarkę, ponieważ",
+              "options": [
+                "stara się zepsuła.",
+                "rodzice martwili się o czystość naczyń.",
+                "uczniowie dostali metalowe bidony."
+              ],
+              "answer": "b"
+            }
+          ]
+        },
+        {
+          "id": "cz4",
+          "title": "Część 4 · regulamin",
+          "layout": "true-false",
+          "points_per_item": 1,
+          "start_n": 39,
+          "tf_labels": [
+            "prawda",
+            "fałsz"
+          ],
+          "instruction": "Przeczytaj regulamin i zdecyduj, czy zdania 39–41 są prawdziwe, czy fałszywe.",
+          "passage_title": "Regulamin pływalni miejskiej „Fala”",
+          "passage": "§1. Pływalnia jest czynna od poniedziałku do piątku w godzinach 6:00–22:00, a w soboty i niedziele od 8:00 do 20:00. Wejście na halę basenową jest możliwe najpóźniej 45 minut przed zamknięciem.\n\n§2. Przed wejściem do wody każdy musi wziąć prysznic. Na basenie obowiązuje czepek.\n\n§3. Dzieci do lat 10 mogą przebywać na basenie wyłącznie pod opieką osoby dorosłej.\n\n§4. Na hali basenowej nie wolno jeść ani biegać. Napoje można pić tylko z plastikowych butelek.\n\n§5. Bilet jest ważny 60 minut. Za każdą rozpoczętą dodatkową minutę pobierana jest dopłata w wysokości 1 zł.\n\n§6. Pływalnia nie odpowiada za rzeczy pozostawione poza szafkami.",
+          "example": {
+            "text": "Na basenie trzeba pływać w czepku.",
+            "answer": "prawda"
+          },
+          "items": [
+            {
+              "id": "cz4-1",
+              "text": "W sobotę można wejść na halę basenową o 19:30.",
+              "answer": "fałsz"
+            },
+            {
+              "id": "cz4-2",
+              "text": "Dziewięcioletnie dziecko może pływać na basenie samo.",
+              "answer": "fałsz"
+            },
+            {
+              "id": "cz4-3",
+              "text": "Klient, który był na pływalni 70 minut, musi dopłacić.",
+              "answer": "prawda"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "el",
+      "tab": "Elementy",
+      "title": "Elementy językowe",
+      "minutes": 20,
+      "tasks": [
+        {
+          "id": "el1",
+          "title": "Część 1 · rozmowa telefoniczna",
+          "layout": "cloze",
+          "points_per_item": 1,
+          "instruction": "Uzupełnij rozmowę (42–49) zwrotami a–j. Dwa zwroty są niepotrzebne.",
+          "passage_title": "Telefon do przychodni",
+          "bank": [
+            {
+              "key": "a",
+              "text": "słucham"
+            },
+            {
+              "key": "b",
+              "text": "chciałabym się zapisać"
+            },
+            {
+              "key": "c",
+              "text": "niestety"
+            },
+            {
+              "key": "d",
+              "text": "a może"
+            },
+            {
+              "key": "e",
+              "text": "najwcześniej"
+            },
+            {
+              "key": "f",
+              "text": "to mi pasuje"
+            },
+            {
+              "key": "g",
+              "text": "proszę podać"
+            },
+            {
+              "key": "h",
+              "text": "do widzenia"
+            },
+            {
+              "key": "i",
+              "text": "w porządku"
+            },
+            {
+              "key": "j",
+              "text": "wcześniej"
+            }
+          ],
+          "text": "Rejestratorka: Przychodnia „Zdrowie”, rejestracja, {{42}}.\nPacjentka: Dzień dobry, {{43}} do lekarza rodzinnego, do doktora Wójcika.\nRejestratorka: {{44}} numer PESEL… Dziękuję. Doktor Wójcik ma wolny termin {{45}} w czwartek o 11:20.\nPacjentka: Dopiero w czwartek? {{46}} jest coś w środę?\nRejestratorka: W środę {{47}} nie. Ale w czwartek jest jeszcze termin o 16:40.\nPacjentka: O 16:40? Tak, {{48}}, bo kończę pracę o szesnastej.\nRejestratorka: {{49}}. Zapisuję panią na czwartek, 16:40. Proszę przyjść dziesięć minut przed wizytą.\nPacjentka: Dziękuję, do widzenia.",
+          "gaps": [
+            {
+              "id": "el1-1",
+              "n": 42,
+              "kind": "bank",
+              "answer": "a"
+            },
+            {
+              "id": "el1-2",
+              "n": 43,
+              "kind": "bank",
+              "answer": "b"
+            },
+            {
+              "id": "el1-3",
+              "n": 44,
+              "kind": "bank",
+              "answer": "g"
+            },
+            {
+              "id": "el1-4",
+              "n": 45,
+              "kind": "bank",
+              "answer": "e"
+            },
+            {
+              "id": "el1-5",
+              "n": 46,
+              "kind": "bank",
+              "answer": "d"
+            },
+            {
+              "id": "el1-6",
+              "n": 47,
+              "kind": "bank",
+              "answer": "c"
+            },
+            {
+              "id": "el1-7",
+              "n": 48,
+              "kind": "bank",
+              "answer": "f"
+            },
+            {
+              "id": "el1-8",
+              "n": 49,
+              "kind": "bank",
+              "answer": "i"
+            }
+          ]
+        },
+        {
+          "id": "el2",
+          "title": "Część 2 · e-mail do sali zabaw",
+          "layout": "cloze",
+          "points_per_item": 1,
+          "instruction": "Przeczytaj e-mail i wybierz właściwe słowo lub wyrażenie do każdej luki (50–59).",
+          "passage_title": "Urodziny w sali zabaw",
+          "text": "Szanowni Państwo,\n\n{{50}} się do Państwa w sprawie wynajmu sali na urodziny mojego syna. Syn kończy siedem lat i chcielibyśmy zorganizować przyjęcie w sobotę 14 marca, {{51}} 15:00 do 18:00. Przyjdzie około dwunastu dzieci i {{52}} dorosłych.\n\nNa Państwa stronie przeczytałam, {{53}} sala jest dostępna od 10:00 do 18:00. Chciałabym zapytać, {{54}} w cenie jest też animator. Jeśli nie, czy można zamówić go {{55}}?\n\nCzy możemy przynieść własny tort? Jedno z dzieci ma alergię {{56}} orzechy. Proszę też o informację, ile wynosi zaliczka i {{57}} trzeba ją wpłacić.\n\nNajlepiej {{58}} ze mną mailowo albo pod numerem 601 234 567. Z góry dziękuję za {{59}}.\n\nZ poważaniem\nNatalia Hrycenko",
+          "gaps": [
+            {
+              "id": "el2-1",
+              "n": 50,
+              "kind": "options",
+              "options": [
+                "Zwracam",
+                "Zwracałam",
+                "Zwrócę"
+              ],
+              "answer": "Zwracam"
+            },
+            {
+              "id": "el2-2",
+              "n": 51,
+              "kind": "options",
+              "options": [
+                "od",
+                "z",
+                "po"
+              ],
+              "answer": "od"
+            },
+            {
+              "id": "el2-3",
+              "n": 52,
+              "kind": "options",
+              "options": [
+                "kilku",
+                "kilka",
+                "kilkoma"
+              ],
+              "answer": "kilku"
+            },
+            {
+              "id": "el2-4",
+              "n": 53,
+              "kind": "options",
+              "options": [
+                "że",
+                "czy",
+                "żeby"
+              ],
+              "answer": "że"
+            },
+            {
+              "id": "el2-5",
+              "n": 54,
+              "kind": "options",
+              "options": [
+                "czy",
+                "że",
+                "ile"
+              ],
+              "answer": "czy"
+            },
+            {
+              "id": "el2-6",
+              "n": 55,
+              "kind": "options",
+              "options": [
+                "osobno",
+                "osobny",
+                "osobnego"
+              ],
+              "answer": "osobno"
+            },
+            {
+              "id": "el2-7",
+              "n": 56,
+              "kind": "options",
+              "options": [
+                "na",
+                "od",
+                "do"
+              ],
+              "answer": "na"
+            },
+            {
+              "id": "el2-8",
+              "n": 57,
+              "kind": "options",
+              "options": [
+                "do kiedy",
+                "od kiedy",
+                "za ile"
+              ],
+              "answer": "do kiedy"
+            },
+            {
+              "id": "el2-9",
+              "n": 58,
+              "kind": "options",
+              "options": [
+                "kontaktować się",
+                "kontaktuje się",
+                "skontaktował się"
+              ],
+              "answer": "kontaktować się"
+            },
+            {
+              "id": "el2-10",
+              "n": 59,
+              "kind": "options",
+              "options": [
+                "odpowiedź",
+                "odpowiedzi",
+                "odpowiadać"
+              ],
+              "answer": "odpowiedź"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pi",
+      "tab": "Pisanie",
+      "title": "Wypowiedź pisemna",
+      "minutes": 30,
+      "manual": true,
+      "manual_points": 45,
+      "tasks": [
+        {
+          "id": "pi1",
+          "title": "Wypowiedź pisemna · e-mail półformalny",
+          "layout": "writing",
+          "points_per_item": 0,
+          "instruction": "Wybierz jeden temat (A lub B) i napisz e-mail. Odnieś się do wszystkich trzech punktów. Czas: 30 minut.",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Temat A · prośba o dzień wolny",
+              "intro": "E-mail do kierowniczki, pani Teresy Nowak",
+              "parts": [
+                {
+                  "id": "A",
+                  "label": "E-mail do pani Nowak",
+                  "prompt": "W przyszłym miesiącu potrzebujesz trzech dni wolnych, ale w Twoim dziale w tym czasie jest dużo pracy.\nNapisz e-mail do kierowniczki, pani Teresy Nowak. Odnieś się do trzech punktów:\n- dlaczego potrzebujesz wolnego i w jakie dni,\n- jak zorganizujesz swoją pracę przed wyjazdem i kto może Cię zastąpić,\n- co proponujesz, jeśli te dni są dla firmy problemem.\nZacznij i zakończ e-mail w odpowiedni sposób. Napisz ok. 150 słów."
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "label": "Temat B · wolontariat w schronisku",
+              "intro": "E-mail do schroniska dla zwierząt „Przyjazna Łapa”",
+              "parts": [
+                {
+                  "id": "B",
+                  "label": "E-mail do schroniska",
+                  "prompt": "Na stronie schroniska dla zwierząt „Przyjazna Łapa” przeczytałeś/przeczytałaś, że szukają wolontariuszy.\nNapisz e-mail do schroniska. Odnieś się do trzech punktów:\n- kim jesteś i dlaczego chcesz pomagać,\n- jakie masz doświadczenie ze zwierzętami i kiedy masz czas,\n- o co chcesz zapytać (np. szkolenie, obowiązki, dojazd).\nZacznij i zakończ e-mail w odpowiedni sposób. Napisz ok. 150 słów."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
