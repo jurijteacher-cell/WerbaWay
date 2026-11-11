@@ -1,0 +1,521 @@
+{
+  "lesson_id": "pl-trener-01-zawod-trenera",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: uprzejme prośby, propozycje i pytania",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "exercise_type": "matching",
+      "title": "1. Sprzęt i miejsca w klubie",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "karnet",
+          "right": "bilet do klubu na określony czas",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "hantle",
+          "right": "dwa małe ciężary, po jednym w każdej ręce",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "bieżnia",
+          "right": "maszyna do chodzenia i biegania w miejscu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "szatnia",
+          "right": "miejsce do przebrania się",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "guma oporowa",
+          "right": "elastyczna taśma do ćwiczeń",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "recepcja",
+          "right": "miejsce przy wejściu, gdzie się płaci",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Chciałbym, chciałabym, chcielibyśmy",
+      "instruction": "Wpisz albo wybierz właściwą formę. Zwróć uwagę, kto mówi i do kogo.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Pani Kasia pyta w recepcji: „___ (chcieć) zapisać się na zajęcia grupowe.”",
+          "answer": "Chciałabym",
+          "grammar_point": "chcialbym",
+          "explanation": "Kobieta mówi o sobie → chciałabym (nie chciałbym)."
+        },
+        {
+          "id": "g2-2",
+          "text": "Marek, trener, mówi do klientki: „___ (chcieć) zadać pani kilka pytań.”",
+          "answer": "Chciałbym",
+          "grammar_point": "chcialbym",
+          "explanation": "Mężczyzna mówi o sobie → chciałbym."
+        },
+        {
+          "id": "g2-3",
+          "text": "Trener pyta pana Piotra: „Czy ___ (chcieć) pan zacząć od bieżni?”",
+          "answer": "chciałby",
+          "grammar_point": "chcialbym",
+          "explanation": "Pan = on → chciałby."
+        },
+        {
+          "id": "g2-4",
+          "text": "Trenerka pyta panią Annę: „Czy ___ (chcieć) pani wypełnić ankietę?”",
+          "answer": "chciałaby",
+          "grammar_point": "chcialbym",
+          "explanation": "Pani = ona → chciałaby."
+        },
+        {
+          "id": "g2-5",
+          "text": "Marta i Ola mówią do trenera: „___ umówić się na wtorek.”",
+          "answer": "Chciałybyśmy",
+          "grammar_point": "chcialbym",
+          "options": [
+            "Chciałybyśmy",
+            "Chcielibyśmy",
+            "Chciałabym"
+          ],
+          "explanation": "Dwie kobiety mówią o sobie → chciałybyśmy. Chcielibyśmy mówi mężczyzna albo grupa mieszana."
+        },
+        {
+          "id": "g2-6",
+          "text": "Pan i pani Lis mówią do recepcjonistki: „___ obejrzeć szatnię.”",
+          "answer": "Chcielibyśmy",
+          "grammar_point": "chcialbym",
+          "options": [
+            "Chcielibyśmy",
+            "Chciałybyśmy"
+          ],
+          "explanation": "Mąż i żona to grupa mieszana → chcielibyśmy."
+        },
+        {
+          "id": "g2-7",
+          "text": "Trener pyta małżeństwo: „Czy ___ państwo wypełnić ankietę?”",
+          "answer": "chcieliby",
+          "grammar_point": "chcialbym",
+          "options": [
+            "chcieliby",
+            "chciałyby"
+          ],
+          "explanation": "Państwo (kobieta i mężczyzna) → chcieliby."
+        },
+        {
+          "id": "g2-8",
+          "text": "Pan Tomek mówi do trenera: „___ (chcieć) trochę schudnąć.”",
+          "answer": "Chciałbym",
+          "grammar_point": "chcialbym"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Czy mógłby pan…? Czy mogłaby pani…?",
+      "instruction": "Wpisz uprzejmą formę czasownika „móc” (z końcówką -bym, -by…) albo wybierz właściwą.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Pan Adam pyta trenera: „Czy ___ (móc) zadać jedno pytanie?”",
+          "answer": "mógłbym",
+          "grammar_point": "moglbym",
+          "explanation": "Mężczyzna pyta o siebie → mógłbym."
+        },
+        {
+          "id": "g3-2",
+          "text": "Trener pyta panią Wandę: „Czy ___ (móc) pani powtórzyć ruch?”",
+          "answer": "mogłaby",
+          "grammar_point": "moglbym",
+          "explanation": "Pani → mogłaby (forma żeńska: mogł-)."
+        },
+        {
+          "id": "g3-3",
+          "text": "Trenerka pyta pana Jana: „Czy ___ (móc) pan usiąść na ławce?”",
+          "answer": "mógłby",
+          "grammar_point": "moglbym",
+          "explanation": "Pan → mógłby (forma męska: mógł-)."
+        },
+        {
+          "id": "g3-4",
+          "text": "Pani Ola pyta trenera: „Czy ___ (móc) pan pokazać to jeszcze raz?”",
+          "answer": "mógłby",
+          "grammar_point": "moglbym"
+        },
+        {
+          "id": "g3-5",
+          "text": "Pani Zofia pyta: „Czy ___ odpocząć minutę?”",
+          "answer": "mogłabym",
+          "grammar_point": "moglbym",
+          "options": [
+            "mogłabym",
+            "mógłbym"
+          ],
+          "explanation": "Kobieta mówi o sobie → mogłabym."
+        },
+        {
+          "id": "g3-6",
+          "text": "Trener mówi do pary: „Czy ___ państwo podejść do maty?”",
+          "answer": "mogliby",
+          "grammar_point": "moglbym",
+          "options": [
+            "mogliby",
+            "mogłyby"
+          ],
+          "explanation": "Państwo → mogliby."
+        },
+        {
+          "id": "g3-7",
+          "text": "Pani Dorota pyta w recepcji: „Czy ___ (móc) zostawić torbę w szatni?”",
+          "answer": "mogłabym",
+          "grammar_point": "moglbym"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "exercise_type": "sentence-building",
+      "title": "4. Proszę + bezokolicznik",
+      "instruction": "Zamień polecenie na uprzejmą prośbę trenera. Zacznij od słowa „Proszę”.",
+      "items": [
+        {
+          "id": "g4-1",
+          "prompt": "Siadaj na ławce.",
+          "answer": "Proszę usiąść na ławce.",
+          "grammar_point": "prosze-bezokolicznik",
+          "accept": [
+            "Proszę siadać na ławce."
+          ]
+        },
+        {
+          "id": "g4-2",
+          "prompt": "Nie wstrzymuj oddechu.",
+          "answer": "Proszę nie wstrzymywać oddechu.",
+          "grammar_point": "prosze-bezokolicznik",
+          "accept": [
+            "Proszę oddechu nie wstrzymywać."
+          ]
+        },
+        {
+          "id": "g4-3",
+          "prompt": "Pokaż mi ten ruch.",
+          "answer": [
+            "Proszę mi pokazać ten ruch.",
+            "Proszę pokazać mi ten ruch."
+          ],
+          "grammar_point": "prosze-bezokolicznik"
+        },
+        {
+          "id": "g4-4",
+          "prompt": "Powtórz ćwiczenie dziesięć razy.",
+          "answer": "Proszę powtórzyć ćwiczenie dziesięć razy.",
+          "grammar_point": "prosze-bezokolicznik",
+          "accept": [
+            "Proszę powtórzyć ćwiczenie 10 razy."
+          ]
+        },
+        {
+          "id": "g4-5",
+          "prompt": "Nie podnoś tak ciężkich hantli.",
+          "answer": "Proszę nie podnosić tak ciężkich hantli.",
+          "grammar_point": "prosze-bezokolicznik",
+          "accept": [
+            "Proszę tak ciężkich hantli nie podnosić."
+          ]
+        },
+        {
+          "id": "g4-6",
+          "prompt": "Podejdź do bieżni.",
+          "answer": "Proszę podejść do bieżni.",
+          "grammar_point": "prosze-bezokolicznik",
+          "accept": [
+            "Do bieżni proszę podejść."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "exercise_type": "fill-in-blank",
+      "title": "5. Jedna czynność czy proces?",
+      "instruction": "Wybierz właściwą formę czasownika po „Proszę”.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Proszę nie ___ oddechu.",
+          "answer": "wstrzymywać",
+          "grammar_point": "aspekt-po-nie",
+          "options": [
+            "wstrzymywać",
+            "wstrzymać"
+          ],
+          "explanation": "Po „Proszę nie” zwykle używamy czasownika niedokonanego."
+        },
+        {
+          "id": "g5-2",
+          "text": "Proszę nie ___ za ciężkich hantli.",
+          "answer": "podnosić",
+          "grammar_point": "aspekt-po-nie",
+          "options": [
+            "podnosić",
+            "podnieść"
+          ],
+          "explanation": "Zakaz → czasownik niedokonany: nie podnosić."
+        },
+        {
+          "id": "g5-3",
+          "text": "Proszę nie ___ ćwiczeń bez rozgrzewki.",
+          "answer": "zaczynać",
+          "grammar_point": "aspekt-po-nie",
+          "options": [
+            "zaczynać",
+            "zacząć"
+          ]
+        },
+        {
+          "id": "g5-4",
+          "text": "Proszę ___ ruch jeszcze raz.",
+          "answer": "powtórzyć",
+          "grammar_point": "aspekt-jedna-czynnosc",
+          "options": [
+            "powtórzyć",
+            "powtarzać"
+          ],
+          "explanation": "Jedna czynność, jeden raz → czasownik dokonany."
+        },
+        {
+          "id": "g5-5",
+          "text": "Proszę ___ spokojnie przez cały ruch.",
+          "answer": "oddychać",
+          "grammar_point": "aspekt-proces",
+          "options": [
+            "oddychać",
+            "odetchnąć"
+          ],
+          "explanation": "Proces, który trwa → czasownik niedokonany."
+        },
+        {
+          "id": "g5-6",
+          "text": "Proszę ___ do maty.",
+          "answer": "podejść",
+          "grammar_point": "aspekt-jedna-czynnosc",
+          "options": [
+            "podejść",
+            "podchodzić"
+          ],
+          "explanation": "Jedna czynność → czasownik dokonany."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "exercise_type": "fill-in-blank",
+      "title": "6. Propozycje trenera",
+      "instruction": "Wpisz albo wybierz właściwą formę.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Proponuję ___ od rozgrzewki.",
+          "answer": "zacząć",
+          "grammar_point": "propozycje",
+          "options": [
+            "zacząć",
+            "zaczniemy"
+          ],
+          "explanation": "Proponuję + bezokolicznik. „Zaczniemy” pasuje do „Może…”, nie do „Proponuję”."
+        },
+        {
+          "id": "g6-2",
+          "text": "Może ___ (zacząć — my) od bieżni?",
+          "answer": "zaczniemy",
+          "grammar_point": "propozycje",
+          "explanation": "Może + forma „my” czasu przyszłego."
+        },
+        {
+          "id": "g6-3",
+          "text": "Co pani powie ___ trening w czwartek?",
+          "answer": "na",
+          "grammar_point": "propozycje",
+          "options": [
+            "na",
+            "o"
+          ],
+          "explanation": "Co pani powie na + biernik."
+        },
+        {
+          "id": "g6-4",
+          "text": "Co pan powie na ___ (sobota)?",
+          "answer": "sobotę",
+          "grammar_point": "propozycje",
+          "explanation": "na + biernik: na sobotę."
+        },
+        {
+          "id": "g6-5",
+          "text": "___ (zacząć — my, zachęta) od rozgrzewki.",
+          "answer": "Zacznijmy",
+          "grammar_point": "propozycje"
+        },
+        {
+          "id": "g6-6",
+          "text": "Proponuję trening w piątek ___ osiemnastej.",
+          "answer": "o",
+          "grammar_point": "godzina-o",
+          "options": [
+            "o",
+            "na",
+            "w"
+          ],
+          "explanation": "Godzina: o osiemnastej. Ukraińskie „на” tu nie pasuje."
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "exercise_type": "fill-in-blank",
+      "title": "7. Pytania do klienta",
+      "instruction": "Wybierz albo wpisz brakujące słowo w pytaniu trenera.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "___ jest pana cel treningowy?",
+          "answer": "Jaki",
+          "grammar_point": "pytania",
+          "options": [
+            "Jaki",
+            "Który"
+          ]
+        },
+        {
+          "id": "g7-2",
+          "text": "___ często może pani ćwiczyć?",
+          "answer": "Jak",
+          "grammar_point": "pytania",
+          "options": [
+            "Jak",
+            "Ile"
+          ]
+        },
+        {
+          "id": "g7-3",
+          "text": "___ jak dawna pani ćwiczy?",
+          "answer": "Od",
+          "grammar_point": "pytania",
+          "options": [
+            "Od",
+            "Z"
+          ],
+          "explanation": "Od jak dawna? Ukraińskie „з якого часу” → od."
+        },
+        {
+          "id": "g7-4",
+          "text": "W ___ mogę pani pomóc?",
+          "answer": "czym",
+          "grammar_point": "pytania",
+          "options": [
+            "czym",
+            "co"
+          ],
+          "explanation": "W czym mogę pomóc? (nie „czym mogę pomóc”)."
+        },
+        {
+          "id": "g7-5",
+          "text": "Czy ___ (mieć) pan jakieś kontuzje?",
+          "answer": "ma",
+          "grammar_point": "pytania"
+        },
+        {
+          "id": "g7-6",
+          "text": "Ile razy w ___ pani ćwiczy?",
+          "answer": "tygodniu",
+          "grammar_point": "pytania",
+          "options": [
+            "tygodniu",
+            "tydzień"
+          ],
+          "explanation": "w + miejscownik: w tygodniu."
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "exercise_type": "sentence-building",
+      "title": "8. Pułapki z ukraińskiego",
+      "instruction": "W każdym zdaniu jest błąd. Popraw całe zdanie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "prompt": "Czy wy możecie mi pokazać to ćwiczenie? (pytasz jednego trenera, mężczyznę)",
+          "answer": [
+            "Czy może pan mi pokazać to ćwiczenie?",
+            "Czy mógłby pan mi pokazać to ćwiczenie?",
+            "Czy może mi pan pokazać to ćwiczenie?",
+            "Czy mógłby mi pan pokazać to ćwiczenie?",
+            "Czy pan może mi pokazać to ćwiczenie?",
+            "Czy pan mógłby mi pokazać to ćwiczenie?"
+          ],
+          "grammar_point": "pulapki",
+          "explanation": "Do jednej osoby mówimy „pan” albo „pani”, nie „wy”."
+        },
+        {
+          "id": "g8-2",
+          "prompt": "Dajcie mi, proszę, karnet miesięczny. (w recepcji)",
+          "answer": [
+            "Poproszę karnet miesięczny.",
+            "Proszę mi dać karnet miesięczny.",
+            "Proszę o karnet miesięczny.",
+            "Poproszę o karnet miesięczny."
+          ],
+          "grammar_point": "pulapki",
+          "explanation": "Ukraińskie „дайте” → po polsku „poproszę” albo „proszę mi dać”."
+        },
+        {
+          "id": "g8-3",
+          "prompt": "Czym mogę pani pomóc?",
+          "answer": "W czym mogę pani pomóc?",
+          "grammar_point": "pulapki",
+          "accept": [
+            "W czym mogę pomóc pani?"
+          ],
+          "explanation": "Po polsku: w czym mogę pomóc?"
+        },
+        {
+          "id": "g8-4",
+          "prompt": "Chciałbym zapisać się na zajęcia. (mówi kobieta)",
+          "answer": "Chciałabym zapisać się na zajęcia.",
+          "grammar_point": "pulapki",
+          "accept": [
+            "Chciałabym się zapisać na zajęcia.",
+            "Na zajęcia chciałabym się zapisać."
+          ],
+          "explanation": "Kobieta mówi o sobie: chciałabym."
+        },
+        {
+          "id": "g8-5",
+          "prompt": "Proszę nie zacząć ćwiczeń bez rozgrzewki.",
+          "answer": "Proszę nie zaczynać ćwiczeń bez rozgrzewki.",
+          "grammar_point": "pulapki",
+          "accept": [
+            "Proszę bez rozgrzewki nie zaczynać ćwiczeń."
+          ],
+          "explanation": "Po „Proszę nie” — czasownik niedokonany."
+        }
+      ]
+    }
+  ]
+}

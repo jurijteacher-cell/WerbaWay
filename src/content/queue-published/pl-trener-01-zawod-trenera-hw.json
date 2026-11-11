@@ -1,0 +1,173 @@
+{
+  "lesson_id": "pl-trener-01-zawod-trenera",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: recepcja, sala i grafik",
+  "instruction": "Trzy ćwiczenia. Zrób je przed napisaniem wiadomości. Każde zdanie przeczytaj potem na głos.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz właściwą formę",
+      "instruction": "Wpisz uprzejmą formę czasownika z nawiasu. Zwróć uwagę, kto mówi.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Pani Weronika mówi w recepcji: „___ (chcieć) kupić karnet miesięczny.”",
+          "answer": "Chciałabym",
+          "grammar_point": "chcialbym"
+        },
+        {
+          "id": "h1-2",
+          "text": "Pan Karol pyta trenera: „Czy ___ (móc) pan mi pokazać, jak ustawić ławkę?”",
+          "answer": "mógłby",
+          "grammar_point": "moglbym"
+        },
+        {
+          "id": "h1-3",
+          "text": "Recepcjonistka pyta panią Weronikę: „Czy ___ (chcieć) pani zapłacić kartą?”",
+          "answer": "chciałaby",
+          "grammar_point": "chcialbym"
+        },
+        {
+          "id": "h1-4",
+          "text": "Państwo Lis mówią: „___ (chcieć) obejrzeć salę z matami.”",
+          "answer": "Chcielibyśmy",
+          "grammar_point": "chcialbym"
+        },
+        {
+          "id": "h1-5",
+          "text": "Trenerka pyta pana Karola: „Czy ___ (móc) pan przyjść jutro o siódmej?”",
+          "answer": "mógłby",
+          "grammar_point": "moglbym"
+        },
+        {
+          "id": "h1-6",
+          "text": "Pani Basia pyta recepcjonistę: „Czy ___ (móc) zostawić kurtkę w szatni?”",
+          "answer": "mogłabym",
+          "grammar_point": "moglbym"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Wybierz",
+      "instruction": "Kliknij poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Proszę ___ ławkę do ściany.",
+          "answer": "przesunąć",
+          "grammar_point": "aspekt-jedna-czynnosc",
+          "options": [
+            "przesunąć",
+            "przesuwać"
+          ],
+          "explanation": "Jedna czynność → czasownik dokonany."
+        },
+        {
+          "id": "h2-2",
+          "text": "Proszę nie ___ hantli na podłogę.",
+          "answer": "rzucać",
+          "grammar_point": "aspekt-po-nie",
+          "options": [
+            "rzucać",
+            "rzucić"
+          ],
+          "explanation": "Po „Proszę nie” — czasownik niedokonany."
+        },
+        {
+          "id": "h2-3",
+          "text": "Proszę nie ___ maty na środku sali.",
+          "answer": "zostawiać",
+          "grammar_point": "aspekt-po-nie",
+          "options": [
+            "zostawiać",
+            "zostawić"
+          ]
+        },
+        {
+          "id": "h2-4",
+          "text": "Proszę ___ ankietę przed pierwszym treningiem.",
+          "answer": "wypełnić",
+          "grammar_point": "aspekt-jedna-czynnosc",
+          "options": [
+            "wypełnić",
+            "wypełniać"
+          ]
+        },
+        {
+          "id": "h2-5",
+          "text": "Co pani powie ___ zajęcia w środę?",
+          "answer": "na",
+          "grammar_point": "propozycje",
+          "options": [
+            "na",
+            "o"
+          ]
+        },
+        {
+          "id": "h2-6",
+          "text": "Proponuję ___ karnet na trzy miesiące.",
+          "answer": "wziąć",
+          "grammar_point": "propozycje",
+          "options": [
+            "wziąć",
+            "bierzemy"
+          ],
+          "explanation": "Proponuję + bezokolicznik."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw zdanie",
+      "instruction": "W każdym zdaniu jest błąd albo zdanie jest zbyt ostre. Napisz poprawną, uprzejmą wersję.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Czy wy możecie przesunąć ten termin? (pytasz jedną klientkę)",
+          "answer": [
+            "Czy może pani przesunąć ten termin?",
+            "Czy mogłaby pani przesunąć ten termin?",
+            "Czy pani może przesunąć ten termin?",
+            "Czy pani mogłaby przesunąć ten termin?"
+          ],
+          "grammar_point": "pulapki"
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Proszę nie podnieść tak dużego ciężaru.",
+          "answer": "Proszę nie podnosić tak dużego ciężaru.",
+          "grammar_point": "aspekt-po-nie",
+          "accept": [
+            "Proszę tak dużego ciężaru nie podnosić."
+          ]
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Dajcie mi grafik zajęć. (w recepcji)",
+          "answer": [
+            "Poproszę grafik zajęć.",
+            "Proszę mi dać grafik zajęć.",
+            "Proszę o grafik zajęć.",
+            "Poproszę o grafik zajęć."
+          ],
+          "grammar_point": "pulapki"
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Chciałbym umówić się na trening w sobotę. (mówi kobieta)",
+          "answer": "Chciałabym umówić się na trening w sobotę.",
+          "grammar_point": "chcialbym",
+          "accept": [
+            "Chciałabym się umówić na trening w sobotę.",
+            "W sobotę chciałabym umówić się na trening."
+          ]
+        }
+      ]
+    }
+  ]
+}
