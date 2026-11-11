@@ -1886,6 +1886,35 @@
       "status": "published",
       "published_by": "claude",
       "notes": "CURRICULUM_A2 v1.2, n=53 (1.5). New tag narzednik-pelny (grammar from pl-preg-06); rec zaimki-osobowe-przypadki, narzednik-zawod-z, pan-pani. e2-e3 telc-light T2; audio file not generated yet."
+    },
+    {
+      "lesson_id": "pl-trener-01-zawod-trenera",
+      "module": "pl-trener",
+      "course_order": 1,
+      "level": "B1",
+      "title": "Zawód trenera i siłownia",
+      "published_at": "2026-11-11T11:30:00Z",
+      "template": "light-60 / B1 hybrid (90 min)",
+      "embeds": {
+        "vocab": "https://werba-way.vercel.app/embed/pl-trener-01-zawod-trenera/vocab",
+        "grammar": "https://werba-way.vercel.app/embed/pl-trener-01-zawod-trenera/grammar",
+        "comm_tasks": "https://werba-way.vercel.app/embed/pl-trener-01-zawod-trenera/comm-tasks",
+        "hw": "https://werba-way.vercel.app/embed/pl-trener-01-zawod-trenera/hw"
+      },
+      "audio": [],
+      "images": {
+        "cover": "https://images.unsplash.com/photo-1758875569256-f37c438cac65?w=1600&q=80&fm=jpg&fit=max",
+        "cover_credit": "Vitaly Gariev / Unsplash",
+        "img1": "https://images.unsplash.com/photo-1758875570137-8691b7c55033?w=1400&q=80&fm=jpg&fit=max",
+        "img1_credit": "Vitaly Gariev / Unsplash"
+      },
+      "notion_page_id": "41596e03-c7c8-81f0-a2f9-ce58ad95bfa1",
+      "notion_page_url": "https://app.notion.com/p/41596e03c7c881f0a2f9ce58ad95bfa1",
+      "notion_teacher_page_id": "41596e03-c7c8-812a-bf02-d052ce30b855",
+      "notion_teacher_page_url": "https://app.notion.com/p/41596e03c7c8812abf02d052ce30b855",
+      "status": "published",
+      "published_by": "claude",
+      "notes": "Module pl-trener (Notion module page 41596e03-c7c8-811b-8cd5-eb877ba7576e), n=1 of 16. Assumptions: UA glosses, gym/fitness focus. No exam/listening embed (listening component not built); model dialogue read by teacher. check_answers 0 ERR 0 WARN."
     }
   ]
 }

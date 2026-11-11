@@ -45,6 +45,7 @@
 | Розмовна польська A2 | pl-a2-mow | `3fa96e03c7c8819b9ef1eaa310055016` |
 | Авто і сервіс | pl-b1-auto | `3fb96e03c7c88135932edd8fc0b17ab7` |
 | Права водія | pl-prawko | `3fc96e03c7c8818684fbf06cdd9435cd` |
+| Польська для тренера (B1, 16 лекцій) | pl-trener | `41596e03c7c8811b8cd5eb877ba7576e` |
 | Математика і архітектура | pl-arch | `3ff96e03c7c88114a885d398f2afc5ad` |
 | Polski, krok po kroku 1 | pl-kpk1 | `40096e03c7c88113a5ecd22a10bda9d7` |
 | Карта поляка | pl-kp | `40196e03c7c881678836c6929a17102e` |
