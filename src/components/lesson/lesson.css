@@ -216,3 +216,6 @@
 .lp-step { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
 
 .lp-root :focus-visible { outline: 3px solid var(--lp-marker); outline-offset: 2px; border-radius: .3rem; }
+
+/* на вузькому екрані закріплена стрічка змісту не повинна закривати заголовок після переходу */
+@media (max-width: 1099px) { .lp-prose h2, .lp-prose h3 { scroll-margin-top: 6rem; } }
