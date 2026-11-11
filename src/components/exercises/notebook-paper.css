@@ -1,0 +1,288 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   Werba Way · exercise UI «paper & ink» — OPT-IN preview variant.
+   Active only when .nb-wrap carries data-nb-style="paper" (open any /embed/... URL with ?style=paper).
+   Without the attribute nothing here applies, so live lessons stay on the default notebook theme.
+   Idea: warm paper + near-black ink, chunky rounded type, hard offset shadows, slightly uneven radii
+   (hand-cut look). Gold stays the Werba accent. Uses only --nb-* vars and nb-* classes (embed guard).
+   ───────────────────────────────────────────────────────────────────────────── */
+.nb-wrap[data-nb-style='paper'] {
+  --nb-desk: #f4f3ef;
+  --nb-paper: #f4f3ef;
+  --nb-paper-2: #ebe9e1;
+  --nb-card: #ffffff;
+  --nb-edge: #14140f;
+  --nb-edge-strong: #14140f;
+  --nb-rule: #d9d6ca;
+  --nb-ink: #14140f;
+  --nb-ink-2: #2a2a22;
+  --nb-ink-soft: #55554a;
+  --nb-ink-faint: #8b8a7d;
+  --nb-gold: #a8740a;
+  --nb-yellow: #f2c31a;
+  --nb-yellow-soft: #f8e08a;
+  --nb-ok: #1d7f55;
+  --nb-ok-bg: #dff3e8;
+  --nb-ok-line: #1d7f55;
+  --nb-no: #c0342a;
+  --nb-no-bg: #fbe3df;
+  --nb-no-line: #c0342a;
+  --nb-hint-bg: #f8e08a;
+  --nb-display: var(--font-nunito), 'Nunito', var(--font-onest), system-ui, sans-serif;
+  --nb-body: var(--font-nunito), 'Nunito', var(--font-onest), system-ui, sans-serif;
+  --nb-text: var(--font-nunito), 'Nunito', var(--font-onest), system-ui, sans-serif;
+  --nb-hand: var(--font-nunito), 'Nunito', var(--font-onest), system-ui, sans-serif;
+  /* shared pieces */
+  --pp-line: 2.5px solid var(--nb-ink);
+  --pp-hard: 3px 4px 0 0 var(--nb-ink);
+  --pp-hard-sm: 2px 3px 0 0 var(--nb-ink);
+  --pp-cut: 16px 20px 15px 18px / 20px 15px 18px 16px;
+  --pp-cut-lg: 22px 26px 20px 24px / 26px 20px 24px 22px;
+  --nb-ring: 0 0 0 4px rgba(242, 195, 26, 0.55);
+  font-weight: 600;
+}
+
+/* page background (embed layout sets an inline colour + dots) */
+.embed-shell:has(.nb-wrap[data-nb-style='paper']) {
+  background: #f4f3ef !important;
+}
+body:has(.nb-wrap[data-nb-style='paper']) {
+  background: #f4f3ef !important;
+}
+
+/* brand bar */
+.nb-wrap[data-nb-style='paper'] .nb-brandbar b {
+  font-weight: 900;
+  font-size: 17px;
+}
+.nb-wrap[data-nb-style='paper'] .nb-brandbar > div > span {
+  font-style: normal;
+  font-weight: 700;
+}
+.nb-wrap[data-nb-style='paper'] .nb-brandbar > img {
+  border: var(--pp-line);
+  box-shadow: var(--pp-hard-sm);
+}
+
+/* sheet: no rainbow strip, inked outline + hard shadow */
+.nb-wrap[data-nb-style='paper'] .nb-sheet {
+  background: #fbfaf6;
+  border: var(--pp-line);
+  border-radius: var(--pp-cut-lg);
+  box-shadow: 4px 6px 0 0 var(--nb-ink);
+}
+.nb-wrap[data-nb-style='paper'] .nb-sheet::before {
+  display: none;
+}
+
+/* buttons */
+.nb-wrap[data-nb-style='paper'] .nb-btn {
+  font-family: var(--nb-display);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f4f3ef;
+  background: var(--nb-ink);
+  border: 2.5px solid #f4f3ef;
+  border-radius: var(--pp-cut);
+  box-shadow: var(--pp-hard);
+  min-height: 44px;
+  padding: 10px 20px;
+}
+.nb-wrap[data-nb-style='paper'] .nb-btn:hover:not(:disabled) {
+  background: var(--nb-ink-2);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 5px 0 0 var(--nb-ink);
+}
+.nb-wrap[data-nb-style='paper'] .nb-btn:active:not(:disabled) {
+  transform: translate(2px, 3px);
+  box-shadow: 1px 1px 0 0 var(--nb-ink);
+}
+.nb-wrap[data-nb-style='paper'] .nb-btn.ghost {
+  color: var(--nb-ink);
+  background: #fff;
+  border: var(--pp-line);
+}
+.nb-wrap[data-nb-style='paper'] .nb-btn.ghost:hover:not(:disabled) {
+  background: var(--nb-yellow-soft);
+  border-color: var(--nb-ink);
+}
+.nb-wrap[data-nb-style='paper'] .nb-btn.soft {
+  color: var(--nb-ink);
+  background: var(--nb-yellow);
+  border: var(--pp-line);
+}
+.nb-wrap[data-nb-style='paper'] .nb-btn.soft:hover:not(:disabled) {
+  background: #f7cf3d;
+}
+.nb-wrap[data-nb-style='paper'] .nb-btn.success {
+  background: var(--nb-ok);
+}
+.nb-wrap[data-nb-style='paper'] .nb-btn.link {
+  color: var(--nb-ink-soft);
+  border: 0;
+  box-shadow: none;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+.nb-wrap[data-nb-style='paper'] .nb-btn:disabled {
+  opacity: 0.4;
+  box-shadow: none;
+}
+
+/* exercise item card */
+.nb-wrap[data-nb-style='paper'] .nb-panel {
+  border: var(--pp-line);
+  border-radius: var(--pp-cut);
+  box-shadow: var(--pp-hard);
+  background: #fff;
+}
+.nb-wrap[data-nb-style='paper'] .nb-panel:focus-within {
+  border-color: var(--nb-ink);
+  box-shadow: 4px 5px 0 0 var(--nb-ink);
+}
+.nb-wrap[data-nb-style='paper'] .nb-panel.is-ok {
+  border-color: var(--nb-ok);
+  background: var(--nb-ok-bg);
+  box-shadow: 3px 4px 0 0 var(--nb-ok);
+}
+.nb-wrap[data-nb-style='paper'] .nb-panel.is-no {
+  border-color: var(--nb-no);
+  box-shadow: 3px 4px 0 0 var(--nb-no);
+}
+.nb-wrap[data-nb-style='paper'] .nb-item-num {
+  width: 30px;
+  height: 30px;
+  background: var(--nb-yellow);
+  color: var(--nb-ink);
+  border: 2px solid var(--nb-ink);
+  font-family: var(--nb-display);
+  font-weight: 900;
+  font-size: 13px;
+}
+.nb-wrap[data-nb-style='paper'] .nb-panel.is-ok .nb-item-num {
+  background: var(--nb-ok);
+  border-color: var(--nb-ok);
+  color: #fff;
+}
+.nb-wrap[data-nb-style='paper'] .nb-panel.is-no .nb-item-num {
+  background: var(--nb-no-bg);
+  border-color: var(--nb-no);
+  color: var(--nb-no);
+}
+.nb-wrap[data-nb-style='paper'] .nb-q {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+/* inputs and inline gaps */
+.nb-wrap[data-nb-style='paper'] .nb-blank,
+.nb-wrap[data-nb-style='paper'] .nb-input {
+  font-weight: 700;
+  border: var(--pp-line);
+  border-radius: 14px 16px 13px 15px / 16px 13px 15px 14px;
+  background: #fff;
+  box-shadow: var(--pp-hard-sm);
+}
+.nb-wrap[data-nb-style='paper'] .nb-blank:hover,
+.nb-wrap[data-nb-style='paper'] .nb-input:hover {
+  border-color: var(--nb-ink);
+}
+.nb-wrap[data-nb-style='paper'] .nb-blank:focus,
+.nb-wrap[data-nb-style='paper'] .nb-input:focus {
+  border-color: var(--nb-ink);
+  background: #fffdf0;
+  box-shadow: var(--pp-hard-sm), var(--nb-ring);
+}
+.nb-wrap[data-nb-style='paper'] .nb-blank.ok {
+  border-color: var(--nb-ok);
+  box-shadow: 2px 3px 0 0 var(--nb-ok);
+}
+.nb-wrap[data-nb-style='paper'] .nb-blank.no {
+  border-color: var(--nb-no);
+  box-shadow: 2px 3px 0 0 var(--nb-no);
+}
+.nb-wrap[data-nb-style='paper'] .nb-gap {
+  border-width: 0 0 3px;
+  border-color: var(--nb-ink);
+  background: var(--nb-yellow-soft);
+  box-shadow: none;
+  border-radius: 8px 10px 3px 3px;
+}
+.nb-wrap[data-nb-style='paper'] .nb-gap:focus {
+  border-color: var(--nb-ink);
+  background: #fbe9a0;
+  box-shadow: var(--nb-ring);
+}
+.nb-wrap[data-nb-style='paper'] .nb-gap.ok {
+  border-color: var(--nb-ok);
+  background: var(--nb-ok-bg);
+}
+.nb-wrap[data-nb-style='paper'] .nb-gap.no {
+  border-color: var(--nb-no);
+  background: var(--nb-no-bg);
+}
+
+/* answer chips */
+.nb-wrap[data-nb-style='paper'] .nb-chip {
+  font-weight: 700;
+  border: var(--pp-line);
+  border-radius: 14px 16px 13px 15px / 16px 13px 15px 14px;
+  box-shadow: var(--pp-hard-sm);
+}
+.nb-wrap[data-nb-style='paper'] .nb-chip:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  border-color: var(--nb-ink);
+  background: var(--nb-yellow-soft);
+  box-shadow: 3px 4px 0 0 var(--nb-ink);
+}
+.nb-wrap[data-nb-style='paper'] .nb-chip:active:not(:disabled) {
+  transform: translate(2px, 3px);
+  box-shadow: 0 0 0 0 var(--nb-ink);
+}
+.nb-wrap[data-nb-style='paper'] .nb-chip.sel {
+  background: var(--nb-yellow);
+  border-color: var(--nb-ink);
+  box-shadow: var(--pp-hard-sm);
+}
+.nb-wrap[data-nb-style='paper'] .nb-chip.ok {
+  border-color: var(--nb-ok);
+  box-shadow: 2px 3px 0 0 var(--nb-ok);
+}
+.nb-wrap[data-nb-style='paper'] .nb-chip.no {
+  border-color: var(--nb-no);
+  box-shadow: 2px 3px 0 0 var(--nb-no);
+}
+.nb-wrap[data-nb-style='paper'] .nb-chip.used {
+  box-shadow: none;
+}
+
+/* progress bar */
+.nb-wrap[data-nb-style='paper'] .nb-progress-track {
+  height: 12px;
+  border: 2px solid var(--nb-ink);
+  background: #fff;
+  box-shadow: none;
+}
+.nb-wrap[data-nb-style='paper'] .nb-progress-fill {
+  background: var(--nb-yellow);
+  border-right: 2px solid var(--nb-ink);
+}
+
+/* feedback strips */
+.nb-wrap[data-nb-style='paper'] .nb-fb {
+  border: 2px solid var(--nb-ink);
+  border-radius: 14px 16px 13px 15px / 16px 13px 15px 14px;
+  font-weight: 600;
+}
+.nb-wrap[data-nb-style='paper'] .nb-fb.ok {
+  border-color: var(--nb-ok);
+}
+.nb-wrap[data-nb-style='paper'] .nb-fb.no {
+  border-color: var(--nb-no);
+}
+.nb-wrap[data-nb-style='paper'] .nb-fb.hint {
+  color: var(--nb-ink);
+}

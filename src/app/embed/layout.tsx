@@ -2,7 +2,9 @@ import type { ReactNode } from 'react';
 import { NotebookShell } from '@/components/exercises/NotebookShell';
 import { AccountBar } from '@/components/exercises/AccountBar';
 import { FocusKeeper } from '@/components/exercises/FocusKeeper';
+import { StyleFlag } from '@/components/exercises/StyleFlag';
 import '@/components/exercises/notebook.css';
+import '@/components/exercises/notebook-paper.css';
 
 /* Raw CSS string via dangerouslySetInnerHTML: a JSX text child gets `>` escaped to `&gt;`
    on the server, which broke hydration on every embed (whole page re-rendered on load). */
@@ -26,6 +28,7 @@ export default function EmbedLayout({ children }: { children: ReactNode }) {
       <NotebookShell levelHint="lekcja · ćwiczenia" aside={<AccountBar />}>
         {children}
         <FocusKeeper />
+        <StyleFlag />
       </NotebookShell>
     </div>
   );

@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { Onest, Literata } from 'next/font/google';
+import { Onest, Literata, Nunito } from 'next/font/google';
 
 /**
  * Fonts for every notebook surface (embeds, slides, lesson pages).
@@ -21,6 +21,16 @@ const literata = Literata({
   display: 'swap',
 });
 
+/* Used only by the opt-in «paper & ink» variant (notebook-paper.css, ?style=paper).
+   preload:false → no extra request on regular lessons; the file is fetched only when that variant uses it. */
+const nunito = Nunito({
+  subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
+  weight: ['600', '700', '800', '900'],
+  variable: '--font-nunito',
+  display: 'swap',
+  preload: false,
+});
+
 type Props = {
   children: ReactNode;
   brandLabel?: string;
@@ -37,7 +47,7 @@ export function NotebookShell({
   aside,
 }: Props) {
   return (
-    <div className={`nb-wrap ${onest.variable} ${literata.variable}`}>
+    <div className={`nb-wrap ${onest.variable} ${literata.variable} ${nunito.variable}`}>
       <div className="nb-brandbar">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/brand/werba-logo.jpg" alt="" width={38} height={38} />
