@@ -3,6 +3,8 @@ import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { fetchAttempts, fmtDate, pctClass, summarize, type MockRow } from '@/lib/analytics';
 import { listPages } from '@/lib/pages/pages';
+import { lectureStats } from '@/lib/lecture-stats';
+import { LectureCard } from '@/components/dashboard/LectureCard';
 import { Activity, EmbedBreakdown, Kpi, Section, WeakList } from '@/components/dashboard/parts';
 
 export const dynamic = 'force-dynamic';
@@ -26,12 +28,15 @@ export default async function DashboardPage() {
     .select('lesson_slug, completed_at, homework_assigned_at, homework_done_at')
     .eq('student_id', user.id)
     .order('completed_at', { ascending: false });
-  const titles = new Map(listPages().map((p) => [p.slug, p]));
+  const progressBySlug = new Map((progressRows ?? []).map((r) => [r.lesson_slug as string, r]));
+  // Картка лекції — для кожного уроку курсу, де є запис про проходження або хоч одна відповідь
+  const lectureCards = listPages()
+    .map((p) => ({ page: p, stats: lectureStats(p.slug, attempts), row: progressBySlug.get(p.slug) }))
+    .filter((x) => x.row || x.stats.touched)
+    .sort((a, b) => ((b.row?.completed_at as string) ?? b.stats.lastAt ?? '').localeCompare((a.row?.completed_at as string) ?? a.stats.lastAt ?? ''));
   const history = (progressRows ?? []).map((r) => ({
     ...r,
-    title: titles.get(r.lesson_slug as string)?.title ?? (r.lesson_slug as string),
-    level: titles.get(r.lesson_slug as string)?.level,
-    hasPage: titles.has(r.lesson_slug as string),
+    title: listPages().find((p) => p.slug === r.lesson_slug)?.title ?? (r.lesson_slug as string),
   }));
   const homeworkTodo = history.filter((h) => h.homework_assigned_at && !h.homework_done_at);
 
@@ -91,46 +96,23 @@ export default async function DashboardPage() {
         </Section>
       )}
 
-      {history.length > 0 && (
-        <Section title="Історія лекцій">
-          <div className="overflow-x-auto rounded-xl border border-ink-line">
-            <table className="w-full text-left text-sm">
-              <thead className="bg-ink-raised text-paper-muted">
-                <tr>
-                  <th className="px-4 py-3 font-normal">Лекція</th>
-                  <th className="px-4 py-3 font-normal">Пройдено</th>
-                  <th className="px-4 py-3 font-normal">Домашка</th>
-                </tr>
-              </thead>
-              <tbody>
-                {history.map((h) => (
-                  <tr key={h.lesson_slug as string} className="border-t border-ink-line">
-                    <td className="px-4 py-3 text-paper">
-                      {h.hasPage ? (
-                        <Link href={`/learn/${h.lesson_slug}`} className="hover:text-gold">
-                          {h.title}
-                        </Link>
-                      ) : (
-                        h.title
-                      )}
-                      {h.level && <span className="ml-2 font-mono text-xs text-gold-dim">{h.level}</span>}
-                    </td>
-                    <td className="px-4 py-3 text-paper-muted">{fmtDate(h.completed_at as string)}</td>
-                    <td className="px-4 py-3">
-                      {!h.homework_assigned_at ? (
-                        <span className="text-paper-muted">—</span>
-                      ) : h.homework_done_at ? (
-                        <span className="text-correct">✓ здано {fmtDate(h.homework_done_at as string)}</span>
-                      ) : (
-                        <Link href={`/learn/${h.lesson_slug}/hw`} className="text-gold hover:text-gold-bright">
-                          виконати →
-                        </Link>
-                      )}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+      {lectureCards.length > 0 && (
+        <Section title="Мої лекції">
+          <div className="grid gap-4 md:grid-cols-2">
+            {lectureCards.map(({ page, stats, row }) => (
+              <LectureCard
+                key={page.slug}
+                slug={page.slug}
+                title={page.title}
+                level={page.level}
+                icon={page.icon}
+                cover={page.cover}
+                stats={stats}
+                completedAt={(row?.completed_at as string) ?? null}
+                homework={row ? { assigned: !!row.homework_assigned_at, done: !!row.homework_done_at } : null}
+                fmt={fmtDate}
+              />
+            ))}
           </div>
         </Section>
       )}
