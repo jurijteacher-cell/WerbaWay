@@ -286,3 +286,75 @@ body:has(.nb-wrap[data-nb-style='paper']) {
 .nb-wrap[data-nb-style='paper'] .nb-fb.hint {
   color: var(--nb-ink);
 }
+
+/* block tabs */
+.nb-wrap[data-nb-style='paper'] .nb-idx button {
+  font-weight: 800;
+  color: var(--nb-ink);
+  background: #fff;
+  border: 2px solid var(--nb-ink);
+  border-radius: 14px 17px 13px 16px / 17px 13px 16px 14px;
+  box-shadow: 2px 3px 0 0 var(--nb-ink);
+}
+.nb-wrap[data-nb-style='paper'] .nb-idx button:hover {
+  transform: translate(-1px, -1px);
+  border-color: var(--nb-ink);
+  background: var(--nb-yellow-soft);
+  box-shadow: 3px 4px 0 0 var(--nb-ink);
+}
+.nb-wrap[data-nb-style='paper'] .nb-idx button:active {
+  transform: translate(2px, 3px);
+  box-shadow: 0 0 0 0 var(--nb-ink);
+}
+.nb-wrap[data-nb-style='paper'] .nb-idx button[aria-selected='true'] {
+  background: var(--nb-ink);
+  border-color: var(--nb-ink);
+  color: #f4f3ef;
+  box-shadow: 2px 3px 0 0 var(--nb-yellow);
+}
+.nb-wrap[data-nb-style='paper'] .nb-tab-badge {
+  background: var(--nb-yellow);
+  color: var(--nb-ink);
+  border: 2px solid var(--nb-ink);
+  font-weight: 900;
+}
+.nb-wrap[data-nb-style='paper'] .nb-idx button[aria-selected='true'] .nb-tab-badge {
+  background: var(--nb-yellow);
+  color: var(--nb-ink);
+  border-color: #f4f3ef;
+}
+.nb-wrap[data-nb-style='paper'] .nb-tab-badge.done {
+  background: var(--nb-ok);
+  border-color: var(--nb-ok);
+  color: #fff;
+}
+.nb-wrap[data-nb-style='paper'] .nb-tab-count {
+  color: var(--nb-ink-soft);
+  font-weight: 800;
+}
+.nb-wrap[data-nb-style='paper'] .nb-idx button[aria-selected='true'] .nb-tab-count {
+  color: #f4f3ef;
+}
+
+/* headings */
+.nb-wrap[data-nb-style='paper'] .nb-eyebrow {
+  font-weight: 900;
+  color: var(--nb-ink);
+}
+.nb-wrap[data-nb-style='paper'] .nb-eyebrow::before {
+  height: 3px;
+  background: var(--nb-yellow);
+  opacity: 1;
+}
+.nb-wrap[data-nb-style='paper'] .nb-head h1 {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+.nb-wrap[data-nb-style='paper'] .nb-level-name {
+  font-weight: 900;
+}
+.nb-wrap[data-nb-style='paper'] .nb-level-num {
+  font-style: normal;
+  font-weight: 800;
+  color: var(--nb-gold);
+}
