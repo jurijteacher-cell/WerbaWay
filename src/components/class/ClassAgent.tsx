@@ -29,6 +29,7 @@ export function ClassAgent() {
       const [{ record }, { pack }] = await Promise.all([import('rrweb'), import('@rrweb/packer')]);
       if (cancelled) return;
       rec = record;
+      (window as unknown as { __wwRec?: unknown }).__wwRec = record;
       stop = record({
         emit: (e) => post({ k: 'ev', e }),
         packFn: pack,
@@ -48,6 +49,7 @@ export function ClassAgent() {
       } else if (m.k === 'click' && Number.isInteger(m.id)) {
         const node = rec.mirror.getNode(m.id);
         const el = node instanceof HTMLElement ? node : (node?.parentElement ?? null);
+        console.info('[class] click', m.id, node ? node.nodeName : 'no node', el ? el.className : '');
         el?.click();
       }
     };
