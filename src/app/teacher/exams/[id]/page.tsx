@@ -12,6 +12,8 @@ type StoredScore = {
   weak?: string[];
   tasks?: TaskResult[];
   writing?: WritingResult[];
+  /** detail restored from the Notion result page: mistakes only, no correct answers */
+  backfilled?: boolean;
 };
 
 type MockRow = {
@@ -172,6 +174,13 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
           Для цього результату деталі (відповіді по завданнях і тексти) не збережені в акаунті: його здано до оновлення
           дашборда. Повний розбір цього іспиту є в Notion, в базі «Wyniki — egzamin próbny». Нові іспити зберігаються з
           деталями.
+        </section>
+      )}
+
+      {score.backfilled && (
+        <section className="mt-8 rounded-xl border border-ink-line p-4 text-sm text-paper-muted">
+          Деталі відновлено зі сторінки результату в Notion: показано лише помилки (правильні відповіді не збережені), а
+          розриви рядків у текстах можуть трохи відрізнятися від того, що ввів учень.
         </section>
       )}
 
