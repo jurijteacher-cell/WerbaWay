@@ -31,13 +31,14 @@ export default async function DashboardPage() {
     .order('completed_at', { ascending: false });
   const progressBySlug = new Map((progressRows ?? []).map((r) => [r.lesson_slug as string, r]));
   // Картка лекції — для кожного уроку курсу, де є запис про проходження або хоч одна відповідь
-  const lectureCards = listPages()
+  const allPages = listPages();
+  const lectureCards = allPages
     .map((p) => ({ page: p, stats: lectureStats(p.slug, attempts), row: progressBySlug.get(p.slug) }))
     .filter((x) => x.row || x.stats.touched)
     .sort((a, b) => ((b.row?.completed_at as string) ?? b.stats.lastAt ?? '').localeCompare((a.row?.completed_at as string) ?? a.stats.lastAt ?? ''));
   const history = (progressRows ?? []).map((r) => ({
     ...r,
-    title: listPages().find((p) => p.slug === r.lesson_slug)?.title ?? (r.lesson_slug as string),
+    title: allPages.find((p) => p.slug === r.lesson_slug)?.title ?? (r.lesson_slug as string),
   }));
   // Слова: колоди з пройдених лекцій і скільки вже запам'ятано
   const { data: vpRows } = await supabase.from('vocab_progress').select('lesson_slug, known').eq('student_id', user.id);

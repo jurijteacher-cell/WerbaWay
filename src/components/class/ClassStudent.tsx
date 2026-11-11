@@ -27,7 +27,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
     onMessage: (m) => {
       if (m.k === 'room') setRoom(m.room);
       else if (m.k === 'need-snap') toFrame({ k: 'need-snap' });
-      else if (m.k === 'click') toFrame({ k: 'click', id: m.id });
+      else if (m.k === 'click') toFrame({ k: 'click', id: m.id, tag: m.tag, text: m.text, path: m.path });
     },
     onSubscribed: () => {
       // after (re)connecting: pick up the room from the database and give the teacher a fresh picture

@@ -176,7 +176,14 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
 
   const pickStep = (st: StepDTO) =>
     setRoomState({ active: true, lesson_id: courseSlug, embed: COURSE_EMBED, blocks: st.url });
-  const startCourse = () => course && course.steps[0] && pickStep(course.steps[0]);
+  const startCourse = () => {
+    if (!course) return;
+    // з залу очікування повертаємось туди, де зупинились, а не на початок
+    const resume =
+      room.lesson_id === courseSlug && isCourseRoom(room) ? course.steps.find((s) => s.url === room.blocks) : undefined;
+    const st = resume ?? course.steps[0];
+    if (st) pickStep(st);
+  };
 
   /** Завершити лекцію: запис в історію учня + автоматично задається домашка */
   async function finishLecture() {

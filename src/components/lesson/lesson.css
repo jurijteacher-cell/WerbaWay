@@ -24,8 +24,7 @@
 .lp-prose a { color: #8a5f17; text-decoration: underline; text-underline-offset: 3px; }
 .lp-prose b, .lp-prose strong { font-weight: 700; }
 
-.lp-fig { margin: 1.4rem 0; }
-.lp-fig img { width: 100%; border-radius: 12px; border: 1px solid #ddd5c2; display: block; }
+.lp-img { width: 100%; border-radius: 12px; border: 1px solid #ddd5c2; display: block; margin: 1.4rem 0; }
 
 .lp-prose table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 0 0 1.6rem; font-size: .96rem; background: #fbf9f4; border: 1px solid #ddd5c2; border-radius: 12px; overflow: hidden; }
 .lp-prose th { text-align: left; background: #f3eee3; font: 600 .8rem var(--font-onest), sans-serif; text-transform: uppercase; letter-spacing: .06em; color: #52607a; }

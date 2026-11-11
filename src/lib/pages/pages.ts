@@ -108,7 +108,7 @@ marked.use({
     },
     image(href: string, _title: string | null, text: string) {
       const alt = (text ?? '').replace(/"/g, '&quot;');
-      return `<figure class="lp-fig"><img src="${href}" alt="${alt}" loading="lazy" /></figure>`;
+      return `<img class="lp-img" src="${href}" alt="${alt}" loading="lazy" />`;
     },
     link(href: string, _title: string | null | undefined, text: string) {
       const ext = /^https?:\/\//.test(href);

@@ -55,6 +55,7 @@ export function WordGame({
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items }),
+        keepalive: true,
       });
       setSaveErr(!res.ok);
       if (!res.ok) keys.forEach((k) => dirty.current.add(k));

@@ -13,7 +13,14 @@ export default async function PlayPage({ searchParams }: { searchParams?: { deck
   } = await supabase.auth.getUser();
   if (!user) redirect(`/login?next=${encodeURIComponent('/words')}`);
 
-  const slugs = (searchParams?.decks ?? '').split(',').filter(Boolean).slice(0, 20);
+  const asked = (searchParams?.decks ?? '').split(',').filter(Boolean).slice(0, 20);
+  // Учневі — лише колоди пройдених лекцій (як у папці «Слова»); викладач бачить усі
+  const [{ data: profile }, { data: done }] = await Promise.all([
+    supabase.from('profiles').select('role').eq('id', user.id).maybeSingle(),
+    supabase.from('lesson_progress').select('lesson_slug').eq('student_id', user.id),
+  ]);
+  const allowed = new Set((done ?? []).map((r) => r.lesson_slug as string));
+  const slugs = profile?.role === 'teacher' ? asked : asked.filter((s) => allowed.has(s));
   const titles = new Map(listPages().map((p) => [p.slug, p.title]));
   const words: Word[] = [];
   const names: string[] = [];
