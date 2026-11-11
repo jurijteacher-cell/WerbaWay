@@ -40,7 +40,7 @@ export type StepDTO = { key: string; section: string; label: string; kind: strin
 
 /** Кімната «лекція курсу»: embed === 'url', blocks = шлях кроку (/learn/…, /embed/…, /slides/…) */
 export const COURSE_EMBED = 'url';
-const SAFE_PATH = /^\/(learn|embed|slides)\/[\w\-./?=&,%:]*$/;
+const SAFE_PATH = /^\/(learn|embed|slides)\/[\w\-./?=&,%:~]*$/;
 export const isCourseRoom = (r: RoomState | null | undefined) => !!r && r.embed === COURSE_EMBED;
 
 /** iframe src for a room, or null when the room is closed or incomplete */
