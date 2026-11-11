@@ -51,7 +51,14 @@ export async function POST(req: NextRequest, { params }: Ctx) {
     level: score.level ?? null,
     passed: score.passed,
     minutes: Math.round(mins * 10) / 10,
-    score: { sections: score.sections, pending: score.pending, weak: weakTopics(exam, score).slice(0, 20) },
+    score: {
+      sections: score.sections,
+      pending: score.pending,
+      weak: weakTopics(exam, score).slice(0, 20),
+      // per-item breakdown and the student's own texts, so the teacher dashboard can show every mistake
+      tasks: score.tasks,
+      writing: score.writing,
+    },
   });
   if (dbError) console.error('[mock-exam] mock_results insert failed', dbError.message);
 

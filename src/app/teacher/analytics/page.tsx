@@ -27,7 +27,7 @@ export default async function TeacherAnalyticsPage() {
   const [{ data: studentRows }, attempts, { data: mockRows }] = await Promise.all([
     supabase.from('embed_student_stats').select('id, name, user_id, code, first_total, first_ok, attempts, last_at, archived_at'),
     fetchAttempts(supabase, { sinceIso: since }),
-    supabase.from('mock_results').select('*').order('created_at', { ascending: false }).limit(20),
+    supabase.from('mock_results').select('*').order('created_at', { ascending: false }).limit(50),
   ]);
 
   const students = ((studentRows ?? []) as Student[]).filter((s) => !s.archived_at);
@@ -146,6 +146,7 @@ export default async function TeacherAnalyticsPage() {
                   <th className="px-4 py-3 font-normal">Бали</th>
                   <th className="px-4 py-3 font-normal">Результат</th>
                   <th className="px-4 py-3 font-normal">Коли</th>
+                  <th className="px-4 py-3 font-normal"></th>
                 </tr>
               </thead>
               <tbody>
@@ -170,6 +171,11 @@ export default async function TeacherAnalyticsPage() {
                         {m.level ?? (m.passed ? 'zdane' : 'poniżej progu')}
                       </td>
                       <td className="px-4 py-3 text-paper-muted">{fmtDate(m.created_at)}</td>
+                      <td className="px-4 py-3">
+                        <Link href={`/teacher/exams/${m.id}`} className="text-gold hover:underline">
+                          Деталі, помилки й тексти →
+                        </Link>
+                      </td>
                     </tr>
                   );
                 })}

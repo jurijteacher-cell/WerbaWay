@@ -37,6 +37,17 @@ type ItemSummary = {
   versions: number;
 };
 
+type ExamRow = {
+  id: string;
+  exam_label: string | null;
+  lesson_id: string;
+  total: number;
+  max_total: number;
+  level: string | null;
+  passed: boolean | null;
+  created_at: string;
+};
+
 const EMBED_LABEL: Record<string, string> = {
   grammar: 'Gramatyka',
   hw: 'Praca domowa',
@@ -123,6 +134,15 @@ export default async function StudentResultsPage({ params }: { params: { student
     .order('created_at', { ascending: true })
     .limit(5000);
 
+  const { data: examRows } = student.user_id
+    ? await supabase
+        .from('mock_results')
+        .select('id, exam_label, lesson_id, total, max_total, level, passed, created_at')
+        .eq('user_id', student.user_id)
+        .order('created_at', { ascending: false })
+    : { data: [] as ExamRow[] };
+  const exams = (examRows ?? []) as ExamRow[];
+
   const attempts = (data ?? []) as Attempt[];
   const lessons = Array.from(summarize(attempts).entries()).sort((a, b) =>
     b[1].lastAt.localeCompare(a[1].lastAt)
@@ -188,6 +208,35 @@ export default async function StudentResultsPage({ params }: { params: { student
                   </span>
                 </span>
               ))}
+          </div>
+        </section>
+      )}
+
+      {exams.length > 0 && (
+        <section className="mb-10">
+          <h2 className="mb-3 font-display text-xl text-paper">Пробні іспити</h2>
+          <div className="overflow-x-auto rounded-xl border border-ink-line">
+            <table className="w-full text-left text-sm">
+              <tbody>
+                {exams.map((m) => (
+                  <tr key={m.id} className="border-t border-ink-line first:border-t-0">
+                    <td className="px-4 py-3 text-paper">{m.exam_label ?? m.lesson_id}</td>
+                    <td className="px-4 py-3 font-mono text-paper">
+                      {m.total}/{m.max_total}
+                    </td>
+                    <td className={`px-4 py-3 ${m.passed ? 'text-correct' : 'text-incorrect'}`}>
+                      {m.level ?? (m.passed ? 'zdane' : 'poniżej progu')}
+                    </td>
+                    <td className="px-4 py-3 text-paper-muted">{fmt(m.created_at)}</td>
+                    <td className="px-4 py-3">
+                      <Link href={`/teacher/exams/${m.id}`} className="text-gold hover:underline">
+                        Помилки й тексти →
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </section>
       )}
