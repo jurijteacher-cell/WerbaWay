@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { fetchAttempts, fmtDate, pctClass, summarize, type MockRow } from '@/lib/analytics';
+import { listPages } from '@/lib/pages/pages';
 import { Activity, EmbedBreakdown, Kpi, Section, WeakList } from '@/components/dashboard/parts';
 
 export const dynamic = 'force-dynamic';
@@ -18,6 +19,21 @@ export default async function DashboardPage() {
     fetchAttempts(supabase), // RLS: only this user's own attempts
     supabase.from('mock_results').select('*').eq('user_id', user.id).order('created_at', { ascending: false }).limit(10),
   ]);
+
+  // Історія лекцій і домашка (таблиця lesson_progress; якщо її ще нема — просто порожньо)
+  const { data: progressRows } = await supabase
+    .from('lesson_progress')
+    .select('lesson_slug, completed_at, homework_assigned_at, homework_done_at')
+    .eq('student_id', user.id)
+    .order('completed_at', { ascending: false });
+  const titles = new Map(listPages().map((p) => [p.slug, p]));
+  const history = (progressRows ?? []).map((r) => ({
+    ...r,
+    title: titles.get(r.lesson_slug as string)?.title ?? (r.lesson_slug as string),
+    level: titles.get(r.lesson_slug as string)?.level,
+    hasPage: titles.has(r.lesson_slug as string),
+  }));
+  const homeworkTodo = history.filter((h) => h.homework_assigned_at && !h.homework_done_at);
 
   const s = summarize(attempts);
   const isTeacher = profile?.role === 'teacher';
@@ -57,6 +73,67 @@ export default async function DashboardPage() {
           Це особистий прогрес. Відповіді з акаунта викладача не записуються — дивись результати учнів в аналітиці класу.
         </p>
       ) : null}
+
+      {homeworkTodo.length > 0 && (
+        <Section title={`Домашка (${homeworkTodo.length})`}>
+          <div className="flex flex-col gap-2">
+            {homeworkTodo.map((h) => (
+              <Link
+                key={h.lesson_slug as string}
+                href={`/learn/${h.lesson_slug}/hw`}
+                className="flex items-center justify-between gap-3 rounded-xl border border-gold/50 bg-ink-raised px-4 py-3 transition-colors hover:border-gold"
+              >
+                <span className="text-paper">📝 {h.title}</span>
+                <span className="text-sm text-paper-muted">задано {fmtDate(h.homework_assigned_at as string)} →</span>
+              </Link>
+            ))}
+          </div>
+        </Section>
+      )}
+
+      {history.length > 0 && (
+        <Section title="Історія лекцій">
+          <div className="overflow-x-auto rounded-xl border border-ink-line">
+            <table className="w-full text-left text-sm">
+              <thead className="bg-ink-raised text-paper-muted">
+                <tr>
+                  <th className="px-4 py-3 font-normal">Лекція</th>
+                  <th className="px-4 py-3 font-normal">Пройдено</th>
+                  <th className="px-4 py-3 font-normal">Домашка</th>
+                </tr>
+              </thead>
+              <tbody>
+                {history.map((h) => (
+                  <tr key={h.lesson_slug as string} className="border-t border-ink-line">
+                    <td className="px-4 py-3 text-paper">
+                      {h.hasPage ? (
+                        <Link href={`/learn/${h.lesson_slug}`} className="hover:text-gold">
+                          {h.title}
+                        </Link>
+                      ) : (
+                        h.title
+                      )}
+                      {h.level && <span className="ml-2 font-mono text-xs text-gold-dim">{h.level}</span>}
+                    </td>
+                    <td className="px-4 py-3 text-paper-muted">{fmtDate(h.completed_at as string)}</td>
+                    <td className="px-4 py-3">
+                      {!h.homework_assigned_at ? (
+                        <span className="text-paper-muted">—</span>
+                      ) : h.homework_done_at ? (
+                        <span className="text-correct">✓ здано {fmtDate(h.homework_done_at as string)}</span>
+                      ) : (
+                        <Link href={`/learn/${h.lesson_slug}/hw`} className="text-gold hover:text-gold-bright">
+                          виконати →
+                        </Link>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </Section>
+      )}
 
       {s.attempts === 0 ? (
         <p className="rounded-xl border border-ink-line bg-ink-raised p-6 text-paper-muted">

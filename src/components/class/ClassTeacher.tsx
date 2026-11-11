@@ -4,17 +4,28 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import 'rrweb/dist/style.css';
 import {
   CLASS_EMBEDS,
+  COURSE_EMBED,
+  isCourseRoom,
   EMPTY_ROOM,
   elementPath,
   shortText,
   type ClassMsg,
   type Presence,
   type RoomState,
+  type StepDTO,
 } from '@/lib/class/protocol';
 import { useClassChannel } from './useClassChannel';
+import { StepNav, useSteps } from './StepNav';
 
 type Lesson = { id: string; title: string };
-type Props = { studentId: string; studentName: string; lessons: Lesson[]; initialRoom: RoomState };
+type Props = {
+  studentId: string;
+  studentName: string;
+  lessons: Lesson[];
+  /** Лекції курсу (нові сторінки /learn) */
+  pages: Lesson[];
+  initialRoom: RoomState;
+};
 
 type Rep = {
   addEvent: (e: unknown) => void;
@@ -27,14 +38,16 @@ type Rep = {
 };
 
 /** Teacher side: pick a lesson, move the student in, watch the student's screen live and click on it. */
-export function ClassTeacher({ studentId, studentName, lessons, initialRoom }: Props) {
+export function ClassTeacher({ studentId, studentName, lessons, pages, initialRoom }: Props) {
   const [room, setRoom] = useState<RoomState>(initialRoom);
-  const [lessonId, setLessonId] = useState(initialRoom.lesson_id ?? lessons[0]?.id ?? '');
-  const [embed, setEmbed] = useState(initialRoom.embed ?? 'slides');
+  const [lessonId, setLessonId] = useState(isCourseRoom(initialRoom) ? lessons[0]?.id ?? '' : initialRoom.lesson_id ?? lessons[0]?.id ?? '');
+  const [embed, setEmbed] = useState(isCourseRoom(initialRoom) ? 'slides' : initialRoom.embed ?? 'slides');
   const [blocks, setBlocks] = useState(initialRoom.blocks ?? '');
   const [student, setStudent] = useState<Presence | null>(null);
   const [hasFrame, setHasFrame] = useState(false);
   const [pult, setPult] = useState(false);
+  const [courseSlug, setCourseSlug] = useState<string>(isCourseRoom(initialRoom) ? initialRoom.lesson_id ?? '' : '');
+  const [done, setDone] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
 
@@ -158,6 +171,40 @@ export function ClassTeacher({ studentId, studentName, lessons, initialRoom }: P
     send({ k: 'room', room: next });
   }
 
+  const course = useSteps(courseSlug || null);
+  const inCourse = isCourseRoom(room) && room.active && room.lesson_id === courseSlug;
+
+  const pickStep = (st: StepDTO) =>
+    setRoomState({ active: true, lesson_id: courseSlug, embed: COURSE_EMBED, blocks: st.url });
+  const startCourse = () => course && course.steps[0] && pickStep(course.steps[0]);
+
+  /** Завершити лекцію: запис в історію учня + автоматично задається домашка */
+  async function finishLecture() {
+    if (!courseSlug || !course) return;
+    setBusy(true);
+    setErr(null);
+    const { data: prev } = await supabase
+      .from('lesson_progress')
+      .select('homework_assigned_at')
+      .eq('student_id', studentId)
+      .eq('lesson_slug', courseSlug)
+      .maybeSingle();
+    const now = new Date().toISOString();
+    const { error } = await supabase.from('lesson_progress').upsert({
+      student_id: studentId,
+      lesson_slug: courseSlug,
+      completed_at: now,
+      completed_via: 'class',
+      homework_assigned_at: prev?.homework_assigned_at ?? (course.hasHomework ? now : null),
+    });
+    setBusy(false);
+    if (error) {
+      setErr(error.message);
+      return;
+    }
+    setDone(course.hasHomework ? 'Лекцію завершено, домашку задано.' : 'Лекцію завершено (домашки в цьому уроці немає).');
+  }
+
   const enter = () =>
     setRoomState({ active: true, lesson_id: lessonId, embed, blocks: embed === 'grammar' && blocks.trim() ? blocks.trim() : null });
   const leave = () => setRoomState({ ...EMPTY_ROOM, lesson_id: room.lesson_id, embed: room.embed, blocks: room.blocks });
@@ -192,6 +239,26 @@ export function ClassTeacher({ studentId, studentName, lessons, initialRoom }: P
       </div>
 
       <div className="mb-4 flex flex-wrap items-end gap-3 rounded-lg border border-ink-line p-4">
+        <label className="flex min-w-[16rem] flex-1 flex-col gap-1 text-xs text-paper-muted">
+          Що проводимо
+          <select
+            value={courseSlug}
+            onChange={(e) => {
+              setCourseSlug(e.target.value);
+              setDone(null);
+            }}
+            className="rounded-md border border-ink-line bg-ink px-3 py-2 text-sm text-paper"
+          >
+            <option value="">Окрема вправа (старий формат)</option>
+            {pages.map((p) => (
+              <option key={p.id} value={p.id}>
+                Лекція: {p.title}
+              </option>
+            ))}
+          </select>
+        </label>
+        {!courseSlug && (
+        <>
         <label className="flex min-w-[16rem] flex-1 flex-col gap-1 text-xs text-paper-muted">
           Урок
           <select
@@ -248,14 +315,56 @@ export function ClassTeacher({ studentId, studentName, lessons, initialRoom }: P
             У зал очікування
           </button>
         )}
+        </>
+        )}
+        {courseSlug && (
+          <>
+            {!inCourse && (
+              <button
+                type="button"
+                onClick={startCourse}
+                disabled={busy || !course}
+                className="rounded-lg bg-gold-fill px-5 py-2 text-sm font-medium text-paper hover:bg-gold-fillHover disabled:opacity-50"
+              >
+                {room.active ? 'Перейти до цієї лекції' : 'У клас'}
+              </button>
+            )}
+            {room.active && (
+              <button
+                type="button"
+                onClick={leave}
+                disabled={busy}
+                className="rounded-lg border border-gold/40 px-4 py-2 text-sm text-gold hover:bg-gold/10 disabled:opacity-50"
+              >
+                У зал очікування
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={finishLecture}
+              disabled={busy || !course}
+              className="rounded-lg border border-correct/50 px-4 py-2 text-sm font-medium text-correct hover:bg-correct/10 disabled:opacity-50"
+            >
+              Завершити лекцію
+            </button>
+          </>
+        )}
         <label className="ml-auto flex items-center gap-2 text-sm text-paper-muted">
           <input type="checkbox" checked={pult} onChange={(e) => setPult(e.target.checked)} />
           Пульт: клік по екрану = клік у учня
         </label>
       </div>
       {err && <p className="mb-3 text-incorrect">Не вдалося: {err}</p>}
+      {done && <p className="mb-3 text-correct">{done}</p>}
 
-      <div ref={stageRef} className="rounded-lg border border-ink-line bg-ink-soft p-2">
+      <div className={courseSlug && course ? 'grid gap-4 md:grid-cols-[16rem_minmax(0,1fr)]' : ''}>
+      {courseSlug && course && (
+        <aside className="md:max-h-[80vh] md:overflow-y-auto">
+          <p className="mb-3 font-display text-base text-paper">{course.title}</p>
+          <StepNav steps={course.steps} currentUrl={inCourse ? room.blocks : null} onPick={pickStep} disabled={busy} />
+        </aside>
+      )}
+      <div ref={stageRef} className="min-w-0 rounded-lg border border-ink-line bg-ink-soft p-2">
         <div className="relative mx-auto" style={{ width: 'fit-content' }}>
           <div ref={mountRef} className="relative overflow-hidden bg-white" />
           {pult && hasFrame && (
@@ -275,6 +384,7 @@ export function ClassTeacher({ studentId, studentName, lessons, initialRoom }: P
                 : 'Чекаю на екран учня…'}
           </p>
         )}
+      </div>
       </div>
     </div>
   );

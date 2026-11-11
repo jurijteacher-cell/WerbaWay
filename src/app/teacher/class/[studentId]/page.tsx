@@ -5,6 +5,7 @@ import { ClassTeacher } from '@/components/class/ClassTeacher';
 import { EMPTY_ROOM, type RoomState } from '@/lib/class/protocol';
 import { listPublishedLessonIds } from '@/content/queue-loader';
 import { lessonTitle } from '@/lib/lesson-titles';
+import { listPages } from '@/lib/pages/pages';
 
 export const dynamic = 'force-dynamic';
 
@@ -24,6 +25,8 @@ export default async function TeacherClassPage({ params }: { params: { studentId
     .map((id) => ({ id, title: `${lessonTitle(id)} · ${id}` }))
     .sort((a, b) => a.id.localeCompare(b.id));
 
+  const pages = listPages().map((p) => ({ id: p.slug, title: `${p.level ?? ''} · ${p.title}` }));
+
   return (
     <main>
       <div className="mx-auto max-w-6xl px-4 pt-8">
@@ -35,6 +38,7 @@ export default async function TeacherClassPage({ params }: { params: { studentId
         studentId={student.id as string}
         studentName={(student.full_name as string | null) || 'Учень'}
         lessons={lessons}
+        pages={pages}
         initialRoom={(room as RoomState | null) ?? EMPTY_ROOM}
       />
     </main>

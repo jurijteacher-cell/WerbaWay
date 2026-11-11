@@ -43,3 +43,12 @@
 .lp-embed-skel { position: absolute; inset: 0; display: grid; place-items: center; color: #52607a; font-size: .9rem; }
 .lp-video { position: relative; aspect-ratio: 16 / 9; background: #000; }
 .lp-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+.lp-badge-hw { background: #f6c2af; }
+.lp-hwlink { display: inline-block; margin: 0 0 1.2rem; padding: .6rem 1rem; border: 1px solid #ddd5c2; border-radius: 10px; background: #fbf9f4; color: #8a5f17; font-weight: 600; text-decoration: none; }
+.lp-hwlink:hover { border-color: #8a5f17; }
+.lp-hwdone { margin-top: 2rem; padding: 1.1rem 1.25rem; border: 1px solid #ddd5c2; border-radius: 12px; background: #fbf9f4; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-family: var(--font-onest), sans-serif; }
+.lp-hwdone button { background: #ffe168; color: #1b2a4a; font-weight: 600; border: 0; border-radius: 10px; padding: .6rem 1.1rem; cursor: pointer; }
+.lp-hwdone button:hover { background: #ffd84a; }
+.lp-hwdone button:disabled { opacity: .6; cursor: default; }
+.lp-prose > div > h2:first-child { margin-top: 0; }

@@ -35,9 +35,22 @@ export const CLASS_EMBEDS: { id: string; label: string }[] = [
   { id: 'exam', label: 'Іспитові блоки' },
 ];
 
+/** Крок лекції курсу (з /api/learn/steps) */
+export type StepDTO = { key: string; section: string; label: string; kind: string; url: string };
+
+/** Кімната «лекція курсу»: embed === 'url', blocks = шлях кроку (/learn/…, /embed/…, /slides/…) */
+export const COURSE_EMBED = 'url';
+const SAFE_PATH = /^\/(learn|embed|slides)\/[\w\-./?=&,%:]*$/;
+export const isCourseRoom = (r: RoomState | null | undefined) => !!r && r.embed === COURSE_EMBED;
+
 /** iframe src for a room, or null when the room is closed or incomplete */
 export function roomUrl(r: RoomState | null | undefined): string | null {
   if (!r?.active || !r.lesson_id || !r.embed) return null;
+  if (r.embed === COURSE_EMBED) {
+    const path = r.blocks ?? '';
+    if (!SAFE_PATH.test(path) || path.includes('..')) return null;
+    return `${path}${path.includes('?') ? '&' : '?'}class=1`;
+  }
   const id = encodeURIComponent(r.lesson_id);
   if (r.embed === 'slides') return `/slides/${id}?class=1`;
   const blocks = r.blocks ? `&blocks=${encodeURIComponent(r.blocks)}` : '';

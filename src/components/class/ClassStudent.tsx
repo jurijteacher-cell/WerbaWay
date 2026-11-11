@@ -1,7 +1,8 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { FRAME_TAG, roomUrl, type ClassMsg, type RoomState } from '@/lib/class/protocol';
+import { FRAME_TAG, isCourseRoom, roomUrl, type ClassMsg, type RoomState } from '@/lib/class/protocol';
+import { StepNav, useSteps } from './StepNav';
 import { useClassChannel } from './useClassChannel';
 
 type Props = { userId: string; name: string; initialRoom: RoomState };
@@ -75,6 +76,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
   }, [toFrame]);
 
   const url = roomUrl(room);
+  const course = useSteps(isCourseRoom(room) && room.active ? room.lesson_id : null);
   const dot = link === 'online' ? 'bg-correct' : link === 'connecting' ? 'bg-gold-fill' : 'bg-incorrect';
   const label = link === 'online' ? 'на зв’язку' : link === 'connecting' ? 'підключаюсь…' : 'немає зв’язку, пробую знову';
 
@@ -88,14 +90,22 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
         </span>
       </header>
       {url ? (
-        <iframe
-          key={url}
-          ref={frameRef}
-          src={url}
-          title="Заняття"
-          className="w-full flex-1 border-0 bg-white"
-          style={{ minHeight: 'calc(100vh - 56px)' }}
-        />
+        <div className="flex flex-1 flex-col md:flex-row">
+          {course && (
+            <aside className="shrink-0 border-b border-ink-line p-3 md:w-64 md:overflow-y-auto md:border-b-0 md:border-r">
+              <p className="mb-3 font-display text-base text-paper">{course.title}</p>
+              <StepNav steps={course.steps} currentUrl={room.blocks} />
+            </aside>
+          )}
+          <iframe
+            key={url}
+            ref={frameRef}
+            src={url}
+            title="Заняття"
+            className="w-full flex-1 border-0 bg-white"
+            style={{ minHeight: 'calc(100vh - 56px)' }}
+          />
+        </div>
       ) : (
         <div className="flex flex-1 items-center justify-center px-6 text-center">
           <div>

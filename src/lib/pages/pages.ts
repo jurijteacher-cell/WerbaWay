@@ -26,13 +26,35 @@ export type PageBlock =
   | { k: 'embed'; src: string; title: string; kind: EmbedKind }
   | { k: 'video'; id: string; title: string };
 
+export type PageSection = {
+  id: string;
+  label: string;
+  /** homework = «Praca domowa» (окрема сторінка /hw); lecture = решта */
+  kind: 'lecture' | 'homework';
+  blocks: PageBlock[];
+};
+
 export type ParsedPage = {
   meta: PageMeta;
   /** «Po tej lekcji potrafisz» — усе до першого ---, показується окремою карткою */
   goal: string | null;
-  blocks: PageBlock[];
+  sections: PageSection[];
+  /** змістом лекції є лише lecture-секції */
   toc: { id: string; label: string }[];
+  hasHomework: boolean;
 };
+
+/** Крок заняття в класі: або текст розділу, або одна вправа */
+export type ClassStep = {
+  key: string;
+  section: string;
+  label: string;
+  kind: 'goal' | 'text' | EmbedKind | 'video';
+  /** шлях сайту, який вантажиться в iframe класу (без ?class=1) */
+  url: string;
+};
+
+const HOMEWORK_RE = /praca\s+domowa|домашн|homework/i;
 
 const DIR = path.join(process.cwd(), 'src/content/pages');
 const SLUG_RE = /^[a-z0-9][a-z0-9-]*$/;
@@ -117,32 +139,60 @@ export function parsePage(slug: string, raw: string): ParsedPage {
     rest = rest.slice(hr).replace(/^---\s*\n/, '');
   }
 
+  // секції за заголовками «## …»
+  const parts = rest.split(/^(?=##\s)/m).filter((x) => x.trim());
+  const sections: PageSection[] = parts.map((part) => {
+    const h = part.match(/^##\s+(.+?)\s*$/m);
+    const label = h ? h[1].replace(/<[^>]+>/g, '') : '';
+    return {
+      id: slugify(label) || 'intro',
+      label,
+      kind: HOMEWORK_RE.test(label) ? 'homework' : 'lecture',
+      blocks: parseBlocks(part),
+    };
+  });
+
+  const toc = sections.filter((x) => x.kind === 'lecture' && x.label).map((x) => ({ id: x.id, label: x.label }));
+  return { meta, goal, sections, toc, hasHomework: sections.some((x) => x.kind === 'homework') };
+}
+
+function parseBlocks(md: string): PageBlock[] {
   const blocks: PageBlock[] = [];
   const re = /<embed\s+source="([^"]+)"\s*>\s*([\s\S]*?)\s*<\/embed>|<video\s+source="([^"]+)"\s*>\s*([\s\S]*?)\s*<\/video>/g;
   let last = 0;
   let m: RegExpExecArray | null;
-  const pushMd = (md: string) => {
-    if (md.trim()) blocks.push({ k: 'html', html: marked.parse(md) as string });
+  const pushMd = (x: string) => {
+    // «---» між розділами — це лише роздільник: на сторінці його малює CSS
+    const t = x.replace(/^\s*---\s*$/gm, '');
+    if (t.trim()) blocks.push({ k: 'html', html: marked.parse(t) as string });
   };
-  while ((m = re.exec(rest))) {
-    pushMd(rest.slice(last, m.index));
-    if (m[1]) {
-      blocks.push({ k: 'embed', src: localize(m[1]), title: m[2], kind: embedKind(m[1]) });
-    } else {
+  while ((m = re.exec(md))) {
+    pushMd(md.slice(last, m.index));
+    if (m[1]) blocks.push({ k: 'embed', src: localize(m[1]), title: m[2], kind: embedKind(m[1]) });
+    else {
       const id = youtubeId(m[3]);
       if (id) blocks.push({ k: 'video', id, title: m[4] });
     }
     last = m.index + m[0].length;
   }
-  pushMd(rest.slice(last));
+  pushMd(md.slice(last));
+  return blocks;
+}
 
-  const toc: { id: string; label: string }[] = [];
-  for (const line of rest.split('\n')) {
-    const h = line.match(/^##\s+(.+?)\s*$/);
-    if (h) toc.push({ id: slugify(h[1].replace(/<[^>]+>/g, '')), label: h[1] });
+/** Кроки заняття в класі: «Cele» → для кожного lecture-розділу текст + кожна вправа окремим кроком */
+export function buildSteps(page: ParsedPage): ClassStep[] {
+  const base = `/learn/${page.meta.slug}`;
+  const steps: ClassStep[] = [];
+  if (page.goal) steps.push({ key: 'goal', section: 'Cele', label: 'Cele lekcji', kind: 'goal', url: `${base}?step=goal` });
+  for (const sec of page.sections) {
+    if (sec.kind !== 'lecture' || !sec.label) continue;
+    const hasText = sec.blocks.some((b) => b.k === 'html' || b.k === 'video');
+    if (hasText) steps.push({ key: `t:${sec.id}`, section: sec.label, label: 'Текст', kind: 'text', url: `${base}?step=${sec.id}` });
+    sec.blocks.forEach((b) => {
+      if (b.k === 'embed') steps.push({ key: `e:${b.src}`, section: sec.label, label: b.title, kind: b.kind, url: b.src });
+    });
   }
-
-  return { meta, goal, blocks, toc };
+  return steps;
 }
 
 export function listPages(): PageMeta[] {
