@@ -156,7 +156,7 @@ export function LessonView({ page, mode, step, hw }: Props) {
             )}
             {toc.length > 1 && (
               <div className="lp-outline-mobile">
-                <LessonOutline items={toc} />
+                <LessonOutline items={toc} variant="strip" />
               </div>
             )}
             <article className="lp-prose">
