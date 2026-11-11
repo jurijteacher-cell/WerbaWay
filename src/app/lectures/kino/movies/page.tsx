@@ -143,7 +143,7 @@ export default function MoviesPracticePage() {
                   <span
                     key={dot}
                     className={`h-1.5 w-1.5 rounded-full ${
-                      dot < viewCounts[i] ? 'bg-gold' : 'bg-ink-line'
+                      dot < viewCounts[i] ? 'bg-gold-fill' : 'bg-ink-line'
                     }`}
                   />
                 ))}
@@ -206,7 +206,7 @@ export default function MoviesPracticePage() {
             <div className="mt-5 flex justify-end">
               <button
                 onClick={nextQuestion}
-                className="flex items-center gap-1.5 rounded-lg bg-gold px-4 py-2 text-sm font-medium text-ink hover:bg-gold-bright"
+                className="flex items-center gap-1.5 rounded-lg bg-gold-fill px-4 py-2 text-sm font-medium text-paper hover:bg-gold-fillHover"
               >
                 {questionIdx + 1 < active.questions.length ? (
                   'Далі →'

@@ -76,7 +76,6 @@ export function ClassTeacher({ studentId, studentName, lessons, initialRoom }: P
       });
       rep.startLive();
       repRef.current = rep;
-      (window as unknown as { __wwRep?: unknown }).__wwRep = rep;
     },
     [fit]
   );

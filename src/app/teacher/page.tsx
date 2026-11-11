@@ -48,7 +48,7 @@ export default async function TeacherPage() {
       <section className="mb-12">
         <Link
           href="/teacher/class"
-          className="inline-block rounded-lg bg-gold px-5 py-3 text-sm font-medium text-ink hover:bg-gold-bright"
+          className="inline-block rounded-lg bg-gold-fill px-5 py-3 text-sm font-medium text-paper hover:bg-gold-fillHover"
         >
           Клас наживо →
         </Link>{' '}

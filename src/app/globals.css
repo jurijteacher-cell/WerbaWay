@@ -5,11 +5,18 @@
 @layer base {
   body {
     @apply bg-ink text-paper antialiased;
-    background-image: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(201, 166, 98, 0.08), transparent);
+    /* зошитова «клітинка-крапка» як у вправ */
+    background-image: radial-gradient(circle at 1px 1px, rgba(27, 42, 74, 0.05) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+
+  h1, h2, h3, .font-display {
+    font-weight: 700;
+    letter-spacing: -0.015em;
   }
 
   :focus-visible {
-    outline: 2px solid theme('colors.gold.DEFAULT');
+    outline: 3px solid theme('colors.gold.fill');
     outline-offset: 2px;
   }
 

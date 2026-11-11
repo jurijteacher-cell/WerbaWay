@@ -1,17 +1,21 @@
 import type { Metadata } from 'next';
-import { Playfair_Display, Inter, IBM_Plex_Mono } from 'next/font/google';
+import { Onest, Literata, IBM_Plex_Mono } from 'next/font/google';
 import './globals.css';
 import { TopNav } from '@/components/TopNav';
 
-const playfair = Playfair_Display({
-  subsets: ['latin', 'latin-ext'],
-  variable: '--font-playfair',
+// Ті самі шрифти, що у вправах: Onest — інтерфейс, Literata — польський текст. Обидва мають латиницю з діакритикою й кирилицю.
+const onest = Onest({
+  subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-onest',
   display: 'swap',
 });
 
-const inter = Inter({
-  subsets: ['latin', 'latin-ext'],
-  variable: '--font-inter',
+const literata = Literata({
+  subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-literata',
   display: 'swap',
 });
 
@@ -29,7 +33,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="uk" className={`${playfair.variable} ${inter.variable} ${plexMono.variable}`}>
+    <html lang="uk" className={`${onest.variable} ${literata.variable} ${plexMono.variable}`}>
       <body className="font-sans">
         <TopNav />
         {children}

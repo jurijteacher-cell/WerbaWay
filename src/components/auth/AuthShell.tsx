@@ -3,7 +3,7 @@ import type { ReactNode } from 'react';
 export const inputClass =
   'rounded-lg border border-ink-line bg-ink-raised px-4 py-3 text-paper placeholder:text-paper-muted outline-none focus:border-gold';
 export const buttonClass =
-  'rounded-lg bg-gold px-5 py-3 font-medium text-ink transition-colors hover:bg-gold-bright disabled:opacity-50';
+  'rounded-lg bg-gold-fill px-5 py-3 font-medium text-paper transition-colors hover:bg-gold-fillHover disabled:opacity-50';
 
 export function AuthShell({ title, lead, children }: { title: string; lead?: string; children: ReactNode }) {
   return (

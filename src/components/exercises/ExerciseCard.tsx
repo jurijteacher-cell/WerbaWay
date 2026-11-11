@@ -215,7 +215,7 @@ export function ExerciseCard({
             type="button"
             onClick={submit}
             disabled={!isAnswered() || status === 'submitting'}
-            className="rounded-lg bg-gold px-5 py-2 font-medium text-ink transition-colors hover:bg-gold-bright disabled:cursor-not-allowed disabled:opacity-40"
+            className="rounded-lg bg-gold-fill px-5 py-2 font-medium text-paper transition-colors hover:bg-gold-fillHover disabled:cursor-not-allowed disabled:opacity-40"
           >
             {status === 'submitting' ? 'Надсилаю…' : initialSubmission ? 'Оновити відповідь' : 'Відповісти'}
           </button>

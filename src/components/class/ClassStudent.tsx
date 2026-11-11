@@ -75,7 +75,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
   }, [toFrame]);
 
   const url = roomUrl(room);
-  const dot = link === 'online' ? 'bg-correct' : link === 'connecting' ? 'bg-gold' : 'bg-incorrect';
+  const dot = link === 'online' ? 'bg-correct' : link === 'connecting' ? 'bg-gold-fill' : 'bg-incorrect';
   const label = link === 'online' ? 'на зв’язку' : link === 'connecting' ? 'підключаюсь…' : 'немає зв’язку, пробую знову';
 
   return (

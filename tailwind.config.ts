@@ -5,27 +5,32 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // «Кремовий зошит» — ті самі кольори, що у вправах (notebook.css --nb-*).
+        // Назви токенів лишилися від темної теми: ink = поверхні, paper = текст.
         ink: {
-          DEFAULT: '#15130f', // фон — точно як у вправах Werba Way
-          raised: '#211f19', // картки
-          soft: '#1c1a15', // другорядні поверхні (банки слів тощо)
-          line: '#34302a', // тонкі роздільники
+          DEFAULT: '#efeae0', // фон-«стіл»
+          raised: '#fbf9f4', // картки-аркуші
+          soft: '#f3eee3', // другорядні поверхні
+          line: '#ddd5c2', // тонкі роздільники
         },
         gold: {
-          DEFAULT: '#e2b34f',
-          bright: '#f0c968',
-          dim: '#7a6431',
+          DEFAULT: '#8a5f17', // текст і рамки акценту (контраст ≥4.7 на кремовому)
+          bright: '#6e4a0f', // наведення на текст/посилання
+          dim: '#74622f', // дрібні підписи
+          fill: '#ffe168', // заливка кнопок-«маркер»
+          fillHover: '#ffd84a',
         },
         paper: {
-          DEFAULT: '#f2ede1',
-          muted: '#a89d88',
+          DEFAULT: '#1b2a4a', // основний текст — синє чорнило
+          muted: '#52607a',
         },
-        correct: '#6fae72',
-        incorrect: '#b5555a',
+        correct: '#17704a',
+        incorrect: '#b83a27',
       },
       fontFamily: {
-        display: ['var(--font-playfair)', 'serif'],
-        sans: ['var(--font-inter)', 'sans-serif'],
+        display: ['var(--font-onest)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-onest)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-literata)', 'Georgia', 'serif'],
         mono: ['var(--font-plex-mono)', 'monospace'],
       },
       keyframes: {

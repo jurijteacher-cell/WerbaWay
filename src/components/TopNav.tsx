@@ -16,7 +16,11 @@ export async function TopNav() {
   const isTeacher = profile?.role === 'teacher';
 
   return (
-    <header className="border-b border-ink-line">
+    <header className="border-b border-ink-line bg-ink-raised/80">
+      <div
+        className="h-1"
+        style={{ background: 'linear-gradient(90deg,#ffe168 0,#a9dcc6 25%,#bcdcf2 50%,#f6c2af 75%,#d8cff0 100%)' }}
+      />
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
         <Link href="/" className="font-display text-lg text-gold">
           Werba Way

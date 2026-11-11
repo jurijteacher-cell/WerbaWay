@@ -29,7 +29,6 @@ export function ClassAgent() {
       const [{ record }, { pack }] = await Promise.all([import('rrweb'), import('@rrweb/packer')]);
       if (cancelled) return;
       rec = record;
-      (window as unknown as { __wwRec?: unknown }).__wwRec = record;
       stop = record({
         emit: (e) => post({ k: 'ev', e }),
         packFn: pack,
@@ -52,7 +51,6 @@ export function ClassAgent() {
         const byId = rec.mirror.getNode(m.id);
         let el: Element | null = byId instanceof Element ? byId : (byId?.parentElement ?? null);
         if (!fits(el) && Array.isArray(m.path)) el = elementAtPath(document, m.path);
-        console.info('[class] click', m.id, el ? el.tagName : 'no element', fits(el) ? 'ok' : 'unverified');
         if (el && fits(el)) (el as HTMLElement).click();
       }
     };

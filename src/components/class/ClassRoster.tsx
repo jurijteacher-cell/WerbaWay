@@ -38,7 +38,7 @@ export function ClassRoster({ students }: { students: Student[] }) {
   }, [students]);
 
   const label: Record<Where, string> = { offline: 'не в мережі', lobby: 'у залі очікування', class: 'у класі' };
-  const dot: Record<Where, string> = { offline: 'bg-paper-muted', lobby: 'bg-gold', class: 'bg-correct' };
+  const dot: Record<Where, string> = { offline: 'bg-paper-muted', lobby: 'bg-gold-fill', class: 'bg-correct' };
   const order: Record<Where, number> = { class: 0, lobby: 1, offline: 2 };
   const rows = [...students].sort(
     (a, b) => order[where[a.id] ?? 'offline'] - order[where[b.id] ?? 'offline'] || a.name.localeCompare(b.name)
