@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { fetchAttempts, fmtDate, pctClass, summarize, type MockRow } from '@/lib/analytics';
 import { listPages } from '@/lib/pages/pages';
+import { loadDeck } from '@/lib/words';
 import { lectureStats } from '@/lib/lecture-stats';
 import { LectureCard } from '@/components/dashboard/LectureCard';
 import { Activity, EmbedBreakdown, Kpi, Section, WeakList } from '@/components/dashboard/parts';
@@ -38,6 +39,13 @@ export default async function DashboardPage() {
     ...r,
     title: listPages().find((p) => p.slug === r.lesson_slug)?.title ?? (r.lesson_slug as string),
   }));
+  // Слова: колоди з пройдених лекцій і скільки вже запам'ятано
+  const { data: vpRows } = await supabase.from('vocab_progress').select('lesson_slug, known').eq('student_id', user.id);
+  const wordDecks = (progressRows ?? [])
+    .map((r) => loadDeck(r.lesson_slug as string))
+    .filter((d): d is NonNullable<typeof d> => !!d && d.words.length > 0);
+  const wordsTotal = wordDecks.reduce((n, d) => n + d.words.length, 0);
+  const wordsKnown = (vpRows ?? []).filter((r) => r.known && wordDecks.some((d) => d.slug === r.lesson_slug)).length;
   const homeworkTodo = history.filter((h) => h.homework_assigned_at && !h.homework_done_at);
 
   const s = summarize(attempts);
@@ -93,6 +101,28 @@ export default async function DashboardPage() {
               </Link>
             ))}
           </div>
+        </Section>
+      )}
+
+      {wordDecks.length > 0 && (
+        <Section title="Слова">
+          <Link
+            href="/words"
+            className="flex flex-wrap items-center gap-4 rounded-2xl border border-ink-line bg-ink-raised px-5 py-4 transition-colors hover:border-gold"
+          >
+            <div className="min-w-0 flex-1">
+              <p className="font-display text-lg text-paper">
+                {wordDecks.length} {wordDecks.length === 1 ? 'колода' : 'колод'} · {wordsTotal} слів
+              </p>
+              <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-ink-line/70">
+                <div className="h-full rounded-full bg-gold-fill" style={{ width: `${wordsTotal ? Math.round((wordsKnown / wordsTotal) * 100) : 0}%` }} />
+              </div>
+              <p className="mt-1 text-xs text-paper-muted">
+                запам’ятано {wordsKnown} з {wordsTotal}
+              </p>
+            </div>
+            <span className="rounded-lg bg-gold-fill px-4 py-2 text-sm font-semibold text-paper">Тренувати →</span>
+          </Link>
         </Section>
       )}
 

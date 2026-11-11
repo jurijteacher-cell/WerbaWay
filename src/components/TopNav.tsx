@@ -32,6 +32,9 @@ export async function TopNav() {
           <Link href="/learn" className="text-paper-muted transition-colors hover:text-gold">
             Курс
           </Link>
+          <Link href="/words" className="text-paper-muted transition-colors hover:text-gold">
+            Слова
+          </Link>
           <Link href="/lectures" className="text-paper-muted transition-colors hover:text-gold">
             Лекції
           </Link>

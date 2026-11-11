@@ -62,8 +62,8 @@ Jak na egzaminie — czytanie
 
 <b>40 słów</b> w sześciu grupach: wynalazki i nauka, elektryczność i energia, radio i internet, silniki i transport, usterki i reklamacje, zwiedzanie z grupą. Dwie ostatnie grupy przydadzą się w zadaniach komunikacyjnych. Pełna lista z tłumaczeniami jest na końcu lekcji, na stronie <b>Słowniczek</b>.
 
-<embed source="https://quizlet.com/1223463578/flashcards/embed">
-Słownictwo — Quizlet
+<embed source="https://werba-way.vercel.app/embed/pl-b1-group-01-wynalazki/vocab">
+Słownictwo — fiszki
 </embed>
 
 ---
