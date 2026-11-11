@@ -1,0 +1,93 @@
+{
+  "model": "eleven_v4",
+  "cast": {
+    "NAR": "uPeXyAUvljDRLYs8zgwt",
+    "W1": "mQq2zdGT1zEfDbh8W95l",
+    "W2": "gHGjEjdr2LBds0XHTsvg",
+    "W3": "hq1SDzCP9HutY7Ea9PAW",
+    "W4": "2AI3SLYKkKZsvZEiHd3D",
+    "W5": "AwWFxYalAvioLDuxV9WV",
+    "M1": "p0KQaxqGrT7xcRWSJiHp",
+    "M2": "bwhymd1UcFEihyvPSEoR",
+    "M3": "ihTsqWCgsTDbANOCuZD2",
+    "M4": "e3WIS9BUv6I0HZ9v36L2"
+  },
+  "tasks": {
+    "sl1": {
+      "block_gap": 2.5,
+      "voices": {
+        "Lektor": "NAR",
+        "Pani Zielińska": "W2",
+        "Pan Mazur": "M2",
+        "Agata": "W5",
+        "Pani Lewandowska": "W4",
+        "Bartek": "M1"
+      }
+    },
+    "sl2": {
+      "block_gap": 2.0,
+      "voices": {
+        "Lektor": "NAR"
+      },
+      "segments": [
+        {},
+        {
+          "Studentka": "W3",
+          "Kasjer": "M2"
+        },
+        {
+          "Klientka": "W1",
+          "Wykonawca": "M3"
+        },
+        {
+          "Monika": "W5",
+          "Ewa": "W2"
+        },
+        {
+          "Darek": "M4",
+          "Tomek": "M1"
+        },
+        {
+          "Pracownica": "W4",
+          "Klient": "M3"
+        }
+      ]
+    },
+    "sl3": {
+      "gaps": {
+        "1": 60
+      },
+      "voices": {
+        "Lektor": "NAR",
+        "Prezenterka": "W1",
+        "Roman": "M2"
+      }
+    },
+    "sl4": {
+      "block_gap": 1.5,
+      "gaps": {
+        "1": 30
+      },
+      "voices": {
+        "Lektor": "NAR",
+        "Prezenter": "M4"
+      },
+      "segments": [
+        {},
+        {},
+        {
+          "Słuchaczka": "W3"
+        },
+        {
+          "Słuchacz": "M1"
+        },
+        {
+          "Słuchaczka": "W2"
+        },
+        {
+          "Słuchacz": "M3"
+        }
+      ]
+    }
+  }
+}

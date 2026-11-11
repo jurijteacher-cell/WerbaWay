@@ -1,0 +1,866 @@
+{
+  "lesson_id": "pl-telc-probny-04",
+  "exercise_type": "mock-exam",
+  "exam_label": "telc 4",
+  "title": "telc Polski B1·B2 · egzamin próbny 4",
+  "subtitle": "Część pisemna: słuchanie, czytanie, elementy językowe, wypowiedź pisemna",
+  "eyebrow": "egzamin próbny · telc B1·B2",
+  "source": "Materiały własne Werba Way w formacie telc B1·B2. Nagrania: głosy syntetyczne.",
+  "pass_ratio": 0.6,
+  "scoring": "telc",
+  "levels": {
+    "B1": 27,
+    "B2": 43
+  },
+  "rules": [
+    "Każde nagranie możesz włączyć tylko raz — jak na egzaminie. W trakcie możesz je zatrzymać, wznowić i przewinąć.",
+    "Bez słownika i tłumacza. Możesz przechodzić między częściami.",
+    "Wynik testu (słuchanie + czytanie + elementy językowe, razem 59 p.): od 27 p. — B1, od 43 p. — B2.",
+    "Wypowiedź pisemną oceni nauczyciel. Na certyfikat trzeba zdać też egzamin ustny."
+  ],
+  "sections": [
+    {
+      "id": "sl",
+      "tab": "Słuchanie",
+      "title": "Rozumienie ze słuchu",
+      "minutes": 25,
+      "tasks": [
+        {
+          "id": "sl1",
+          "title": "Część 1 · wiadomości głosowe",
+          "layout": "mc-passages",
+          "points_per_item": 1,
+          "start_n": 1,
+          "instruction": "Usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz.",
+          "audio": {
+            "src": "/audio/pl-telc-probny-04/telc-sluchanie-1.mp3",
+            "max_plays": 1
+          },
+          "transcript": "Lektor: Rozumienie ze słuchu, część pierwsza. Za chwilę usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz. Najpierw przykład.\nPani Zielińska: Dzień dobry, mówi Krystyna Zielińska z Urzędu Pocztowego numer pięć. Paczka dla pana jest już do odbioru, leży na poczcie od wtorku. Proszę pamiętać o dowodzie osobistym. Urząd jest czynny do osiemnastej. Do widzenia.\n\nLektor: Numer jeden.\nPan Mazur: Dzień dobry, Mazur z warsztatu „Szybki Serwis”. Dzwonię w sprawie pana samochodu. Przy przeglądzie okazało się, że trzeba wymienić klocki hamulcowe. To dodatkowe dwieście osiemdziesiąt złotych. Bez tego nie mogę wystawić pozytywnego wyniku przeglądu. Proszę oddzwonić, czy się pan zgadza. Jeśli tak, auto będzie gotowe jutro o piętnastej.\n\nLektor: Numer dwa.\nAgata: Cześć, braciszku, tu Agata. Słuchaj, w sobotę są urodziny mamy. Restauracja jest za droga, więc zrobimy przyjęcie u mnie w domu. Obiad zrobię ja, a ty, proszę, odbierz tort z cukierni na Długiej. Zamówiłam go na sobotę, musisz być tam przed jedenastą. Mama o niczym nie wie, więc ani słowa. Dzięki, na razie!\n\nLektor: Numer trzy.\nPani Lewandowska: Dzień dobry, mówi Anna Lewandowska, wychowawczyni klasy trzeciej b. W przyszły czwartek jedziemy na wycieczkę do Krakowa. Proszę o podpisanie zgody, którą dzieci dostały w poniedziałek, i o wpłatę sześćdziesięciu złotych na bilety. Zgodę i pieniądze proszę oddać do przyszłego poniedziałku. Autokar odjeżdża o siódmej spod szkoły. Dziękuję.\n\nLektor: Numer cztery.\nBartek: Cześć Olu, tu Bartek z kursu angielskiego. Pisała do mnie lektorka. Jest chora, więc zajęcia w środę się nie odbędą, a zastępstwa nie będzie. Zamiast tego jest dodatkowe spotkanie w sobotę o dziesiątej, ale nie jest obowiązkowe. Zadanie domowe masz oddać do piątku, materiały są na stronie kursu. Pozdrawiam!\n\nLektor: Koniec pierwszej części Rozumienia ze słuchu.",
+          "example": {
+            "stem": "Pani Zielińska dzwoni, aby",
+            "options": [
+              "poinformować, że paczka czeka na odbiór.",
+              "przypomnieć o zapłacie rachunku.",
+              "zmienić godziny otwarcia urzędu."
+            ],
+            "answer": "a"
+          },
+          "items": [
+            {
+              "id": "sl1-1",
+              "stem": "Pan Mazur dzwoni, aby",
+              "options": [
+                "poinformować, że samochód jest już gotowy.",
+                "zapytać o zgodę na dodatkową naprawę.",
+                "przełożyć przegląd na następny tydzień."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "sl1-2",
+              "stem": "Agata prosi brata, żeby",
+              "options": [
+                "odebrał tort z cukierni.",
+                "zarezerwował stolik w restauracji.",
+                "powiedział mamie o przyjęciu."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "sl1-3",
+              "stem": "Rodzice mają",
+              "options": [
+                "podpisać zgodę dopiero po wycieczce.",
+                "zawieźć dzieci do Krakowa własnym samochodem.",
+                "zapłacić sześćdziesiąt złotych i oddać zgodę do poniedziałku."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "sl1-4",
+              "stem": "Bartek informuje, że",
+              "options": [
+                "kurs angielskiego już się skończył.",
+                "zajęcia w środę się nie odbędą.",
+                "lektorka zmieniła salę."
+              ],
+              "answer": "b"
+            }
+          ]
+        },
+        {
+          "id": "sl2",
+          "title": "Część 2 · dialogi",
+          "layout": "mc-passages",
+          "points_per_item": 1,
+          "start_n": 5,
+          "tf_labels": [
+            "prawda",
+            "fałsz"
+          ],
+          "instruction": "Usłyszysz pięć dialogów. Do każdego dialogu są dwa zadania: najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe, potem wybierz a, b lub c. Każdy dialog usłyszysz jeden raz.",
+          "audio": {
+            "src": "/audio/pl-telc-probny-04/telc-sluchanie-2.mp3",
+            "max_plays": 1
+          },
+          "transcript": "Lektor: Rozumienie ze słuchu, część druga. Za chwilę usłyszysz pięć dialogów. Na temat każdego dialogu napisano po dwa zdania. Najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe. Następnie zdecyduj, które zdanie jest najbardziej trafne: a, b czy c. Każdy dialog usłyszysz jeden raz.\n\nLektor: Numer pięć i sześć.\nStudentka: Dzień dobry, poproszę jeden bilet do Gdańska na jutro rano.\nKasjer: Pierwszą czy drugą klasą?\nStudentka: Drugą. Czy mogę kupić bilet ulgowy? Jestem studentką.\nKasjer: Tak, ale w pociągu musi pani pokazać ważną legitymację studencką. Ma ją pani?\nStudentka: Mam, ale jest już elektroniczna, w telefonie.\nKasjer: To też wystarczy. Pociąg odjeżdża o siódmej dziesięć, z peronu trzeciego. Bilet ulgowy kosztuje czterdzieści dziewięć złotych.\nStudentka: A pełny?\nKasjer: Siedemdziesiąt dziewięć. Płaci pani kartą?\nStudentka: Tak, kartą.\n\nLektor: Numer siedem i osiem.\nKlientka: Dzień dobry, panie Marku. Kiedy zaczynamy remont kuchni?\nWykonawca: W przyszły poniedziałek. Najpierw zdejmiemy stare szafki i położymy nowe płytki. To zajmie około tygodnia.\nKlientka: A kiedy przyjdzie hydraulik? Zlew chcemy przenieść pod okno.\nWykonawca: Hydraulik będzie we wtorek, ale wcześniej trzeba zakręcić wodę w całym pionie. Musi pani uprzedzić sąsiadów.\nKlientka: Dobrze, wywieszę ogłoszenie na klatce schodowej. A meble?\nWykonawca: Meble z magazynu dojadą dopiero w drugim tygodniu. Kuchnia będzie gotowa za dwa tygodnie, jeśli nic się nie opóźni.\nKlientka: Świetnie. Czyli mogę zaprosić rodzinę na święta?\nWykonawca: Tak, spokojnie zdążymy.\n\nLektor: Numer dziewięć i dziesięć.\nMonika: Ewa, idziesz dziś na jogę? Zajęcia są o siedemnastej trzydzieści.\nEwa: Nie dam rady. Muszę zostać w pracy do szóstej, bo szef wymyślił zebranie.\nMonika: Szkoda. A w czwartek? Jest drugi termin, o dziewiętnastej.\nEwa: W czwartek chętnie. Ale chyba nie mam już karnetu, skończył mi się w zeszłym miesiącu.\nMonika: Możesz kupić nowy w recepcji. Miesięczny kosztuje sto czterdzieści złotych, a pojedyncze wejście trzydzieści.\nEwa: Wezmę pojedyncze wejście, zobaczę, czy mi się spodoba po takiej przerwie.\nMonika: Dobrze. To spotkajmy się w czwartek pół godziny wcześniej, wypijemy kawę.\nEwa: Super, do czwartku.\n\nLektor: Numer jedenaście i dwanaście.\nDarek: Tomek, jak tam w pracy? Podobno macie nowego szefa.\nTomek: Tak, od poniedziałku. Pan Wiśniewski, przyszedł z innej firmy. Na początku się baliśmy, bo słyszeliśmy, że jest bardzo wymagający.\nDarek: I jak?\nTomek: Pozytywnie mnie zaskoczył. Zorganizował spotkanie z całym zespołem i zapytał każdego, co chciałby zmienić. Mnie obiecał, że będę mógł pracować dwa dni w tygodniu z domu.\nDarek: To świetnie. A premie? Wcześniej mówiłeś, że macie z tym problem.\nTomek: Na razie nic nie obiecuje, ale zapowiedział rozmowę o wynagrodzeniach za miesiąc.\nDarek: Czyli jest nadzieja.\nTomek: Jest, zobaczymy.\n\nLektor: Numer trzynaście i czternaście.\nPracownica: Pizzeria „Napoli”, słucham.\nKlient: Dobry wieczór, chciałbym zamówić dwie pizze na dowóz. Jedną margheritę i jedną z szynką i pieczarkami.\nPracownica: Duże czy średnie?\nKlient: Obie duże. I do tego dwa sosy czosnkowe.\nPracownica: Dobrze. Razem sześćdziesiąt osiem złotych. Dziś jest promocja: przy dwóch dużych pizzach dostaje pan litr coli gratis.\nKlient: Świetnie. Kiedy dowiozą? Mam gości na dwudziestą.\nPracownica: Dziś mamy dużo zamówień, czas oczekiwania to około godziny. Jest osiemnasta czterdzieści, więc pizza będzie u pana około dziewiętnastej czterdzieści.\nKlient: W takim razie proszę. Adres: ulica Polna dwanaście, mieszkanie osiem.\nPracownica: Dziękuję. Płaci pan kartą czy gotówką?\nKlient: Gotówką, kurierowi.\n\nLektor: Koniec drugiej części Rozumienia ze słuchu.",
+          "items": [
+            {
+              "id": "sl2-1",
+              "kind": "tf",
+              "stem": "Studentka ma papierową legitymację studencką.",
+              "answer": "fałsz",
+              "passage": "Rozmowa 1 · zadania 5–6"
+            },
+            {
+              "id": "sl2-2",
+              "stem": "Bilet ulgowy do Gdańska",
+              "options": [
+                "kosztuje siedemdziesiąt dziewięć złotych.",
+                "kosztuje czterdzieści dziewięć złotych.",
+                "jest tańszy tylko w drugiej klasie."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "sl2-3",
+              "kind": "tf",
+              "stem": "Remont kuchni zacznie się w przyszły wtorek.",
+              "answer": "fałsz",
+              "passage": "Rozmowa 2 · zadania 7–8"
+            },
+            {
+              "id": "sl2-4",
+              "stem": "Klientka",
+              "options": [
+                "uprzedzi sąsiadów o zakręceniu wody.",
+                "kupi meble w innym sklepie.",
+                "przełoży remont na później."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "sl2-5",
+              "kind": "tf",
+              "stem": "Ewa nie może iść dziś na jogę, ponieważ ma zebranie w pracy.",
+              "answer": "prawda",
+              "passage": "Rozmowa 3 · zadania 9–10"
+            },
+            {
+              "id": "sl2-6",
+              "stem": "W czwartek Ewa",
+              "options": [
+                "kupi miesięczny karnet.",
+                "nie pójdzie na zajęcia.",
+                "zapłaci za pojedyncze wejście."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "sl2-7",
+              "kind": "tf",
+              "stem": "Nowy szef pracuje w firmie Tomka od kilku miesięcy.",
+              "answer": "fałsz",
+              "passage": "Rozmowa 4 · zadania 11–12"
+            },
+            {
+              "id": "sl2-8",
+              "stem": "Tomek",
+              "options": [
+                "będzie mógł częściowo pracować w domu.",
+                "dostał już podwyżkę.",
+                "chce zmienić pracę."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "sl2-9",
+              "kind": "tf",
+              "stem": "Klient dostanie colę za darmo.",
+              "answer": "prawda",
+              "passage": "Rozmowa 5 · zadania 13–14"
+            },
+            {
+              "id": "sl2-10",
+              "stem": "Pizza dotrze do klienta",
+              "options": [
+                "około osiemnastej czterdzieści.",
+                "około dziewiętnastej czterdzieści.",
+                "dopiero po dwudziestej."
+              ],
+              "answer": "b"
+            }
+          ]
+        },
+        {
+          "id": "sl3",
+          "title": "Część 3 · wywiad",
+          "layout": "mc-passages",
+          "points_per_item": 1,
+          "start_n": 15,
+          "instruction": "Usłyszysz wywiad radiowy. Wybierz właściwą odpowiedź: a, b lub c. Na początku nagrania masz minutę na przeczytanie zadań. Wywiad usłyszysz jeden raz.",
+          "audio": {
+            "src": "/audio/pl-telc-probny-04/telc-sluchanie-3.mp3",
+            "max_plays": 1,
+            "note": "Nagranie usłyszysz jeden raz. Pierwsza minuta to cisza na przeczytanie zadań."
+          },
+          "transcript": "Lektor: Rozumienie ze słuchu, część trzecia. Za chwilę usłyszysz wywiad. Najpierw przeczytaj treść punktów od piętnastego do dwudziestego. Masz na to minutę.\n\nLektor: Teraz posłuchaj wywiadu. Usłyszysz go jeden raz.\nPrezenterka: Dzień dobry, w audycji „Zawody” gościmy dziś pana Romana Kowalskiego, instruktora nauki jazdy. Dzień dobry.\nRoman: Dzień dobry, dziękuję za zaproszenie.\nPrezenterka: Od jak dawna uczy pan ludzi jeździć?\nRoman: Od dwudziestu pięciu lat. Zaczynałem jako kierowca ciężarówki, ale po wypadku kolegi postanowiłem uczyć innych, żeby jeździli bezpieczniej.\nPrezenterka: Kto uczy się łatwiej: młodzi czy starsi?\nRoman: Młodzi szybko łapią technikę, ale mają za dużo pewności siebie. Starsi są ostrożniejsi i bardziej cierpliwi, tylko często boją się ruchu w mieście.\nPrezenterka: Wielu kursantów nie zdaje egzaminu za pierwszym razem. Dlaczego?\nRoman: Mniej więcej połowa oblewa, ale to nie jest tragedia. Najczęściej nie brakuje im umiejętności, tylko opanowania. Stres robi swoje, a trzęsące się ręce nie pomagają w parkowaniu.\nPrezenterka: A co jest najtrudniejsze na egzaminie?\nRoman: Wszyscy boją się parkowania równoległego i ruszania pod górę. Ale tak naprawdę najwięcej punktów karnych dostaje się za to, że ktoś nie patrzy w lusterka. To jest błąd numer jeden.\nPrezenterka: Ile godzin jazdy trzeba odbyć?\nRoman: Kurs obejmuje trzydzieści godzin jazdy. Radzę wziąć jeszcze kilka dodatkowych godzin przed egzaminem, na trasach egzaminacyjnych. Jedna godzina kosztuje około dziewięćdziesięciu złotych.\nPrezenterka: Jakie ma pan plany na przyszłość?\nRoman: Za rok przechodzę na emeryturę, ale nie przestanę zupełnie. Chcę uczyć w weekendy ludzi, którzy po latach boją się wsiąść za kierownicę. To wymaga czasu, ale daje największą satysfakcję.\nPrezenterka: Dziękuję bardzo za rozmowę.\n\nLektor: Koniec trzeciej części Rozumienia ze słuchu.",
+          "items": [
+            {
+              "id": "sl3-1",
+              "stem": "Pan Roman został instruktorem, ponieważ",
+              "options": [
+                "zawsze marzył o tym zawodzie.",
+                "po wypadku kolegi chciał uczyć innych bezpiecznej jazdy.",
+                "stracił prawo jazdy kierowcy ciężarówki."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "sl3-2",
+              "stem": "Zdaniem pana Romana młodzi kierowcy",
+              "options": [
+                "szybko uczą się techniki, ale są zbyt pewni siebie.",
+                "boją się jazdy w mieście.",
+                "są bardziej cierpliwi niż starsi."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "sl3-3",
+              "stem": "Według instruktora egzaminu nie zdaje się najczęściej, ponieważ",
+              "options": [
+                "kursanci nie znają przepisów.",
+                "kursanci nie umieją parkować.",
+                "kursanci się stresują."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "sl3-4",
+              "stem": "Najwięcej punktów karnych dostaje się za",
+              "options": [
+                "niepatrzenie w lusterka.",
+                "parkowanie równoległe.",
+                "ruszanie pod górę."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "sl3-5",
+              "stem": "Kurs prawa jazdy obejmuje",
+              "options": [
+                "dwadzieścia godzin jazdy.",
+                "trzydzieści godzin jazdy.",
+                "dziewięćdziesiąt godzin jazdy."
+              ],
+              "answer": "b"
+            },
+            {
+              "id": "sl3-6",
+              "stem": "Po przejściu na emeryturę pan Roman",
+              "options": [
+                "otworzy własną szkołę jazdy.",
+                "przestanie pracować.",
+                "będzie uczyć osoby, które boją się prowadzić."
+              ],
+              "answer": "c"
+            }
+          ]
+        },
+        {
+          "id": "sl4",
+          "title": "Część 4 · opinie",
+          "layout": "matching",
+          "points_per_item": 1,
+          "start_n": 21,
+          "instruction": "Usłyszysz audycję radiową „Zakupy — sklep czy internet?”. Które zdanie (a–f) pasuje do opinii 21–23? Na początku nagrania masz pół minuty na przeczytanie zdań. Audycję usłyszysz jeden raz.",
+          "audio": {
+            "src": "/audio/pl-telc-probny-04/telc-sluchanie-4.mp3",
+            "max_plays": 1,
+            "note": "Nagranie usłyszysz jeden raz. Na początku jest pół minuty ciszy na przeczytanie zdań."
+          },
+          "transcript": "Lektor: Rozumienie ze słuchu, część czwarta. Usłyszysz audycję, w której ludzie wyrażają opinie na dany temat. Które zdanie, od a do f, najlepiej pasuje do opinii dwadzieścia jeden, dwadzieścia dwa i dwadzieścia trzy? Masz pół minuty na przeczytanie zdań.\n\nLektor: Teraz posłuchaj audycji.\nPrezenter: Dzień dobry, w programie „Głos słuchaczy” pytamy dziś: zakupy w sklepie czy w internecie? Czekamy na państwa telefony.\n\nLektor: Przykład.\nSłuchaczka: Mieszkam na wsi, do najbliższego centrum handlowego mam czterdzieści kilometrów. Dlatego prawie wszystko zamawiam przez internet, a kurier przywozi paczkę pod same drzwi. Oszczędzam czas i benzynę.\n\nLektor: Numer dwadzieścia jeden.\nSłuchacz: Kupuję w internecie, ale ubrania zawsze wolę przymierzyć. Ostatnio zamówiłem kurtkę, która okazała się za duża, a odesłanie jej kosztowało mnie dwadzieścia złotych. Teraz chodzę do sklepów, bo wolę zobaczyć towar na własne oczy.\n\nLektor: Numer dwadzieścia dwa.\nSłuchaczka: Pracuję w małym sklepie osiedlowym i widzę, co się dzieje. Przychodzi do nas coraz mniej ludzi, a przecież to my dajemy pracę ludziom z okolicy. Apeluję, żeby chociaż część zakupów robić u sąsiadów, a nie tylko w wielkich sieciach.\n\nLektor: Numer dwadzieścia trzy.\nSłuchacz: Lubię porównywać ceny. W internecie w kilka minut sprawdzam, gdzie jest najtaniej, i często oszczędzam nawet kilkaset złotych na sprzęcie, na przykład na pralce albo telewizorze. W sklepie sprzedawca nigdy mi tego nie pokaże.\n\nPrezenter: Dziękujemy za wszystkie telefony. Do usłyszenia za tydzień!\n\nLektor: Koniec Rozumienia ze słuchu. Dziękujemy za uwagę.",
+          "left_label": "Opinie",
+          "right_label": "Zdania a–f",
+          "right": [
+            {
+              "key": "a",
+              "text": "Zakupy w internecie oszczędzają mi czas i dojazdy."
+            },
+            {
+              "key": "b",
+              "text": "Towar wolę obejrzeć i przymierzyć w sklepie."
+            },
+            {
+              "key": "c",
+              "text": "Warto wspierać lokalne sklepy."
+            },
+            {
+              "key": "d",
+              "text": "W internecie łatwiej znaleźć niższą cenę."
+            },
+            {
+              "key": "e",
+              "text": "Boję się płacić kartą w internecie."
+            },
+            {
+              "key": "f",
+              "text": "Paczki z internetu zawsze przychodzą z opóźnieniem."
+            }
+          ],
+          "example": {
+            "text": "opinia słuchaczki (mieszka na wsi)",
+            "answer": "a"
+          },
+          "items": [
+            {
+              "id": "sl4-1",
+              "text": "Opinia 21",
+              "answer": "b"
+            },
+            {
+              "id": "sl4-2",
+              "text": "Opinia 22",
+              "answer": "c"
+            },
+            {
+              "id": "sl4-3",
+              "text": "Opinia 23",
+              "answer": "d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cz",
+      "tab": "Czytanie",
+      "title": "Rozumienie tekstu czytanego",
+      "minutes": 40,
+      "tasks": [
+        {
+          "id": "cz1",
+          "title": "Część 1 · wiadomości",
+          "layout": "matching",
+          "points_per_item": 1,
+          "start_n": 24,
+          "instruction": "Przeczytaj teksty 24–27 i dopasuj do każdego temat (a–f). Dwa tematy są niepotrzebne.",
+          "left_label": "Teksty 24–27",
+          "right_label": "Tematy a–f",
+          "right": [
+            {
+              "key": "a",
+              "text": "Zaproszenie na parapetówkę"
+            },
+            {
+              "key": "b",
+              "text": "Zmiana terminu spotkania"
+            },
+            {
+              "key": "c",
+              "text": "Podziękowanie za pomoc"
+            },
+            {
+              "key": "d",
+              "text": "Reklamacja towaru"
+            },
+            {
+              "key": "e",
+              "text": "Oferta pracy dorywczej"
+            },
+            {
+              "key": "f",
+              "text": "Informacja o wyłączeniu prądu"
+            }
+          ],
+          "items": [
+            {
+              "id": "cz1-1",
+              "answer": "f",
+              "text": "Szanowni Mieszkańcy,\nw czwartek w godzinach 9:00–15:00 nie będzie prądu w budynkach przy ulicy Lipowej 2–10. Wyłączenie jest związane z pracami na stacji transformatorowej. Prosimy o wyłączenie wrażliwych urządzeń i o zabranie z windy osób, które mogą w niej utknąć.\nZakład Energetyczny"
+            },
+            {
+              "id": "cz1-2",
+              "answer": "c",
+              "text": "Droga Pani Haniu,\nbardzo dziękuję, że w zeszłym tygodniu zaopiekowała się Pani Burkiem, kiedy musiałam pilnie jechać do szpitala. Pies jest zdrowy i zadowolony, a ja mogłam być spokojna. W piątek wpadnę do Pani z ciastem!\nEwa"
+            },
+            {
+              "id": "cz1-3",
+              "answer": "b",
+              "text": "Cześć Marek,\nniestety muszę przełożyć nasze spotkanie z wtorku na czwartek, bo szef zwołał na wtorek zebranie. Czy w czwartek o 17:00 byłoby Ci pasowało? Jeśli nie, daj znać, znajdziemy inny termin.\nPozdrawiam, Adam"
+            },
+            {
+              "id": "cz1-4",
+              "answer": "d",
+              "text": "Dzień dobry,\nw zeszłym tygodniu kupiłem w Państwa sklepie internetowym czajnik elektryczny, numer zamówienia 4821. Po dwóch dniach przestał działać. Chciałbym go zwrócić i otrzymać pieniądze. Proszę o informację, jak mam odesłać towar.\nZ poważaniem\nJan Kuliński"
+            }
+          ]
+        },
+        {
+          "id": "cz2",
+          "title": "Część 2 · ogłoszenia",
+          "layout": "matching",
+          "points_per_item": 1,
+          "start_n": 28,
+          "reuse_keys": true,
+          "passage_title": "Tablica ogłoszeń w domu kultury",
+          "instruction": "Przeczytaj sytuacje 28–32 i ogłoszenia a–h. Które ogłoszenie pasuje do której sytuacji? Każde ogłoszenie możesz wybrać tylko raz. Jeśli żadne ogłoszenie nie pasuje, wybierz x.",
+          "left_label": "Sytuacje 28–32",
+          "right_label": "Ogłoszenia a–h",
+          "right": [
+            {
+              "key": "a",
+              "text": "Kurs fotografii dla początkujących — soboty, 10:00. Aparat własny."
+            },
+            {
+              "key": "b",
+              "text": "Warsztaty ceramiczne dla dzieci w wieku 6–10 lat. Środy, 16:00."
+            },
+            {
+              "key": "c",
+              "text": "Zespół „Dobre Dni” szuka perkusisty. Próby w poniedziałki i czwartki wieczorem."
+            },
+            {
+              "key": "d",
+              "text": "Wynajmę salę na urodziny i spotkania rodzinne — do 40 osób, z kuchnią."
+            },
+            {
+              "key": "e",
+              "text": "Bezpłatne porady prawne dla seniorów — pierwszy wtorek miesiąca, 11:00."
+            },
+            {
+              "key": "f",
+              "text": "Zajęcia taneczne dla par — piątki, 19:00. Nie potrzeba doświadczenia."
+            },
+            {
+              "key": "g",
+              "text": "Chór „Harmonia” zaprasza nowych śpiewaków. Czwartki, 18:30."
+            },
+            {
+              "key": "h",
+              "text": "Wyprzedaż książek z biblioteki domu kultury — wszystkie po 2 zł, w sobotę i niedzielę."
+            },
+            {
+              "key": "x",
+              "text": "Żadne ogłoszenie nie pasuje."
+            }
+          ],
+          "example": {
+            "text": "Twoja siedmioletnia córka lubi lepić z gliny.",
+            "answer": "b"
+          },
+          "items": [
+            {
+              "id": "cz2-1",
+              "text": "Chcesz urządzić urodziny dla trzydziestu osób i szukasz sali.",
+              "answer": "d"
+            },
+            {
+              "id": "cz2-2",
+              "text": "Masz 70 lat i nie wiesz, jak napisać odwołanie od decyzji w sprawie emerytury.",
+              "answer": "e"
+            },
+            {
+              "id": "cz2-3",
+              "text": "Grasz na perkusji i szukasz zespołu.",
+              "answer": "c"
+            },
+            {
+              "id": "cz2-4",
+              "text": "Chcesz tanio kupić kilka książek do czytania na wakacje.",
+              "answer": "h"
+            },
+            {
+              "id": "cz2-5",
+              "text": "Szukasz kursu języka hiszpańskiego dla początkujących.",
+              "answer": "x"
+            }
+          ]
+        },
+        {
+          "id": "cz3",
+          "title": "Część 3 · artykuły",
+          "layout": "mc-passages",
+          "points_per_item": 1,
+          "start_n": 33,
+          "instruction": "Przeczytaj trzy teksty. Do każdego tekstu są dwa zadania. Wybierz właściwą odpowiedź: a, b lub c.",
+          "items": [
+            {
+              "id": "cz3-1",
+              "stem": "Po wprowadzeniu kas samoobsługowych kasjerzy",
+              "options": [
+                "stracili pracę.",
+                "pomagają klientom na sali sprzedaży.",
+                "pracują tylko wieczorami."
+              ],
+              "answer": "b",
+              "passage": "Kasy samoobsługowe w supermarkecie\n\nOd roku w supermarkecie przy ulicy Długiej działa osiem kas samoobsługowych. Klient sam skanuje produkty i płaci kartą lub gotówką. Sieć zapewnia, że nikt nie stracił pracy: kasjerzy zostali przeszkoleni i pracują teraz na sali sprzedaży, gdzie pomagają klientom. Kasy samoobsługowe nie nadają się jednak do dużych zakupów, bo przy kilkudziesięciu produktach klienci wolą tradycyjną kasę. Najchętniej korzystają z nich osoby, które w porze obiadowej kupują kilka rzeczy na szybko. Sklep planuje zainstalować jeszcze cztery kasy do końca roku."
+            },
+            {
+              "id": "cz3-2",
+              "stem": "Z kas samoobsługowych najchętniej korzystają",
+              "options": [
+                "osoby kupujące kilka produktów w porze obiadowej.",
+                "klienci robiący duże zakupy.",
+                "osoby starsze."
+              ],
+              "answer": "a"
+            },
+            {
+              "id": "cz3-3",
+              "stem": "Pan Andrzej jeździ pociągiem, ponieważ",
+              "options": [
+                "nie ma samochodu.",
+                "dojazd samochodem trwałby dłużej.",
+                "bilet jest bezpłatny."
+              ],
+              "answer": "b",
+              "passage": "Pociągiem do pracy\n\nPan Andrzej mieszka w Kutnie, a pracuje w Warszawie. Codziennie jeździ pociągiem, bo samochodem stałby w korkach przez ponad dwie godziny. W pociągu spędza godzinę i czterdzieści minut w jedną stronę i ten czas wykorzystuje na czytanie i naukę angielskiego. „Na początku byłem zmęczony, ale teraz to mój najspokojniejszy czas w ciągu dnia” — mówi. Bilet miesięczny kosztuje go sto osiemdziesiąt złotych, czyli mniej niż benzyna. Jedyny problem to opóźnienia, zimą pociągi spóźniają się częściej. Wtedy pan Andrzej dzwoni do szefa, a ten rozumie sytuację, bo firma pozwala na elastyczny początek pracy."
+            },
+            {
+              "id": "cz3-4",
+              "stem": "Podróż pociągiem",
+              "options": [
+                "męczy pana Andrzeja każdego dnia.",
+                "jest droższa niż dojazd samochodem.",
+                "daje mu czas na czytanie i naukę."
+              ],
+              "answer": "c"
+            },
+            {
+              "id": "cz3-5",
+              "stem": "Według tekstu aplikacje do nauki języków",
+              "options": [
+                "pomagają zapamiętać słówka, ale nie uczą rozmowy.",
+                "zastępują lekcje z nauczycielem.",
+                "są zbyt trudne dla początkujących."
+              ],
+              "answer": "a",
+              "passage": "Aplikacje do nauki języków\n\nAplikacje do nauki języków obcych są bardzo popularne, ale nauczyciele ostrzegają: same aplikacje nie wystarczą. Dziesięć minut dziennie pomaga zapamiętać słówka, ale nie uczy swobodnej rozmowy. W badaniu, w którym wzięło udział dwustu uczniów szkoły językowej, osoby łączące aplikację z lekcjami z nauczycielem robiły większe postępy niż ci, którzy korzystali tylko z telefonu. Eksperci radzą traktować aplikację jako uzupełnienie, a nie zamiennik kursu. Warto też powtarzać słówka na głos, bo wtedy łatwiej je zapamiętać."
+            },
+            {
+              "id": "cz3-6",
+              "stem": "Eksperci radzą",
+              "options": [
+                "korzystać wyłącznie z aplikacji.",
+                "zrezygnować z kursów.",
+                "powtarzać słówka na głos."
+              ],
+              "answer": "c"
+            }
+          ]
+        },
+        {
+          "id": "cz4",
+          "title": "Część 4 · regulamin",
+          "layout": "true-false",
+          "points_per_item": 1,
+          "start_n": 39,
+          "tf_labels": [
+            "prawda",
+            "fałsz"
+          ],
+          "instruction": "Przeczytaj regulamin i zdecyduj, czy zdania 39–41 są prawdziwe, czy fałszywe.",
+          "passage_title": "Regulamin wypożyczalni rowerów miejskich",
+          "passage": "§1. Wypożyczalnia działa od kwietnia do października, codziennie w godzinach 7:00–21:00. Rower można wypożyczyć na stacjach w całym mieście po zarejestrowaniu się w aplikacji.\n\n§2. Pierwsze 20 minut jazdy jest bezpłatne. Za każdą kolejną rozpoczętą godzinę pobierana jest opłata w wysokości 4 zł.\n\n§3. Rower mogą wypożyczyć osoby, które ukończyły 16 lat. Młodsze dzieci mogą jeździć wyłącznie pod opieką osoby dorosłej, która wypożyczyła rower.\n\n§4. Rower należy zwrócić na dowolnej stacji. Zwrot poza stacją skutkuje karą w wysokości 50 zł.\n\n§5. Wypożyczający odpowiada za uszkodzenie roweru. Awarię należy zgłosić w aplikacji.\n\n§6. Zabrania się przewozu pasażerów na rowerze oraz jazdy po alkoholu.",
+          "example": {
+            "text": "Aby wypożyczyć rower, trzeba się zarejestrować w aplikacji.",
+            "answer": "prawda"
+          },
+          "items": [
+            {
+              "id": "cz4-1",
+              "text": "Piętnastolatek może wypożyczyć rower samodzielnie.",
+              "answer": "fałsz"
+            },
+            {
+              "id": "cz4-2",
+              "text": "Za rower oddany poza stacją trzeba zapłacić karę.",
+              "answer": "prawda"
+            },
+            {
+              "id": "cz4-3",
+              "text": "Dwadzieścia pięć minut jazdy jest bezpłatne.",
+              "answer": "fałsz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "el",
+      "tab": "Elementy",
+      "title": "Elementy językowe",
+      "minutes": 20,
+      "tasks": [
+        {
+          "id": "el1",
+          "title": "Część 1 · rozmowa telefoniczna",
+          "layout": "cloze",
+          "points_per_item": 1,
+          "instruction": "Uzupełnij rozmowę (42–49) zwrotami a–j. Dwa zwroty są niepotrzebne.",
+          "passage_title": "Telefon do wypożyczalni samochodów",
+          "bank": [
+            {
+              "key": "a",
+              "text": "słucham"
+            },
+            {
+              "key": "b",
+              "text": "chciałbym"
+            },
+            {
+              "key": "c",
+              "text": "proszę podać"
+            },
+            {
+              "key": "d",
+              "text": "ponieważ"
+            },
+            {
+              "key": "e",
+              "text": "a może"
+            },
+            {
+              "key": "f",
+              "text": "dopiero"
+            },
+            {
+              "key": "g",
+              "text": "w takim razie"
+            },
+            {
+              "key": "h",
+              "text": "z przyjemnością"
+            },
+            {
+              "key": "i",
+              "text": "jeszcze"
+            },
+            {
+              "key": "j",
+              "text": "dziękuję bardzo"
+            }
+          ],
+          "text": "Pracownik: Wypożyczalnia samochodów „AutoMax”, {{42}}.\nKlient: Dzień dobry, {{43}} wynająć samochód na najbliższy weekend.\nPracownik: Chętnie pomogę. {{44}} datę odbioru i zwrotu.\nKlient: Odbiór w piątek rano, zwrot w niedzielę wieczorem. Jadę z rodziną nad morze, więc potrzebuję dużego auta.\nPracownik: Polecam kombi, {{45}} jest tańsze, a miejsca ma dość dużo. Doba kosztuje sto osiemdziesiąt złotych.\nKlient: Dobrze. {{46}} są jakieś zniżki?\nPracownik: Zniżkę dajemy {{47}} przy wynajmie na trzy dni lub dłużej.\nKlient: To za długo, {{48}} wezmę kombi tylko na dwie doby.\nPracownik: {{49}} muszę pana uprzedzić, że kaucja wynosi pięćset złotych i trzeba ją wpłacić przy odbiorze.",
+          "gaps": [
+            {
+              "id": "el1-42",
+              "n": 42,
+              "kind": "bank",
+              "answer": "a"
+            },
+            {
+              "id": "el1-43",
+              "n": 43,
+              "kind": "bank",
+              "answer": "b"
+            },
+            {
+              "id": "el1-44",
+              "n": 44,
+              "kind": "bank",
+              "answer": "c"
+            },
+            {
+              "id": "el1-45",
+              "n": 45,
+              "kind": "bank",
+              "answer": "d"
+            },
+            {
+              "id": "el1-46",
+              "n": 46,
+              "kind": "bank",
+              "answer": "e"
+            },
+            {
+              "id": "el1-47",
+              "n": 47,
+              "kind": "bank",
+              "answer": "f"
+            },
+            {
+              "id": "el1-48",
+              "n": 48,
+              "kind": "bank",
+              "answer": "g"
+            },
+            {
+              "id": "el1-49",
+              "n": 49,
+              "kind": "bank",
+              "answer": "i"
+            }
+          ]
+        },
+        {
+          "id": "el2",
+          "title": "Część 2 · e-mail do właściciela mieszkania",
+          "layout": "cloze",
+          "points_per_item": 1,
+          "instruction": "Przeczytaj e-mail i wybierz właściwe słowo lub wyrażenie do każdej luki (50–59).",
+          "passage_title": "Awaria ogrzewania",
+          "text": "Szanowny Panie Janie,\n\n{{50}} do Pana w sprawie awarii w wynajmowanym przeze mnie mieszkaniu przy ulicy Klonowej 8. Od {{51}} dni nie działa ogrzewanie w sypialni, a jest tak zimno, że nie mogę tam spać. Próbowałam odkręcić kaloryfer, ale to nic nie {{52}}.\n\nChciałabym {{53}}, żeby jak najszybciej przysłał Pan fachowca. Mogę wpuścić pracownika do mieszkania {{54}} czwartek lub piątek po godzinie 16:00. Jeśli to {{55}}, mogę też zostawić klucze sąsiadce.\n\nProszę również o informację, {{56}} koszty naprawy poniesie Pan, czy muszę zapłacić z własnej kieszeni. W umowie jest zapis, {{57}} drobne naprawy płaci najemca, ale ogrzewanie nie jest drobną naprawą.\n\nMam nadzieję, że uda się to załatwić {{58}} weekendem. Czekam na szybką {{59}}.\n\nZ poważaniem\nAgnieszka Mróz",
+          "gaps": [
+            {
+              "id": "el2-50",
+              "n": 50,
+              "kind": "options",
+              "options": [
+                "Piszę",
+                "Piszą",
+                "Pisać"
+              ],
+              "answer": "Piszę"
+            },
+            {
+              "id": "el2-51",
+              "n": 51,
+              "kind": "options",
+              "options": [
+                "trzech",
+                "trzy",
+                "trzecim"
+              ],
+              "answer": "trzech"
+            },
+            {
+              "id": "el2-52",
+              "n": 52,
+              "kind": "options",
+              "options": [
+                "pomogło",
+                "pomagać",
+                "pomocy"
+              ],
+              "answer": "pomogło"
+            },
+            {
+              "id": "el2-53",
+              "n": 53,
+              "kind": "options",
+              "options": [
+                "prosić",
+                "prosi",
+                "proszę"
+              ],
+              "answer": "prosić"
+            },
+            {
+              "id": "el2-54",
+              "n": 54,
+              "kind": "options",
+              "options": [
+                "w",
+                "na",
+                "do"
+              ],
+              "answer": "w"
+            },
+            {
+              "id": "el2-55",
+              "n": 55,
+              "kind": "options",
+              "options": [
+                "konieczne",
+                "koniecznie",
+                "koniecznością"
+              ],
+              "answer": "konieczne"
+            },
+            {
+              "id": "el2-56",
+              "n": 56,
+              "kind": "options",
+              "options": [
+                "czy",
+                "że",
+                "aby"
+              ],
+              "answer": "czy"
+            },
+            {
+              "id": "el2-57",
+              "n": 57,
+              "kind": "options",
+              "options": [
+                "że",
+                "żeby",
+                "który"
+              ],
+              "answer": "że"
+            },
+            {
+              "id": "el2-58",
+              "n": 58,
+              "kind": "options",
+              "options": [
+                "przed",
+                "po",
+                "przez"
+              ],
+              "answer": "przed"
+            },
+            {
+              "id": "el2-59",
+              "n": 59,
+              "kind": "options",
+              "options": [
+                "odpowiedź",
+                "odpowiedzi",
+                "odpowiadać"
+              ],
+              "answer": "odpowiedź"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pi",
+      "tab": "Pisanie",
+      "title": "Wypowiedź pisemna",
+      "minutes": 30,
+      "manual": true,
+      "manual_points": 45,
+      "tasks": [
+        {
+          "id": "pi1",
+          "title": "Wypowiedź pisemna · e-mail półformalny",
+          "layout": "writing",
+          "points_per_item": 0,
+          "instruction": "Wybierz jeden temat (A lub B) i napisz e-mail. Odnieś się do wszystkich trzech punktów. Czas: 30 minut.",
+          "choices": [
+            {
+              "id": "A",
+              "label": "Temat A · praca zdalna",
+              "intro": "E-mail do szefa, pana Marka Zielińskiego",
+              "parts": [
+                {
+                  "id": "A",
+                  "label": "E-mail do pana Zielińskiego",
+                  "prompt": "Chciałbyś/Chciałabyś pracować zdalnie jeden dzień w tygodniu.\nNapisz e-mail do szefa, pana Marka Zielińskiego. Odnieś się do trzech punktów:\n- dlaczego chcesz pracować w domu i w który dzień,\n- jak zapewnisz, że praca będzie wykonana tak samo dobrze,\n- co proponujesz na początek (np. okres próbny).\nZacznij i zakończ e-mail w odpowiedni sposób. Napisz ok. 150 słów."
+                }
+              ]
+            },
+            {
+              "id": "B",
+              "label": "Temat B · zmiana grupy",
+              "intro": "E-mail do szkoły językowej „Lingua”",
+              "parts": [
+                {
+                  "id": "B",
+                  "label": "E-mail do szkoły językowej",
+                  "prompt": "Chodzisz na kurs języka polskiego w szkole „Lingua”, ale zajęcia w Twojej grupie kończą się za późno.\nNapisz e-mail do sekretariatu szkoły. Odnieś się do trzech punktów:\n- w której grupie jesteś i dlaczego obecne godziny ci nie odpowiadają,\n- w jakich dniach i godzinach mógłbyś/mogłabyś chodzić na zajęcia,\n- o co jeszcze chcesz zapytać (np. koszty, wolne miejsca, zmiana podręcznika).\nZacznij i zakończ e-mail w odpowiedni sposób. Napisz ok. 150 słów."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
