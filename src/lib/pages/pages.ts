@@ -15,6 +15,8 @@ export type PageMeta = {
   level?: string;
   number?: number;
   module?: string;
+  /** людська назва курсу (як у Notion) */
+  moduleTitle?: string;
   cover?: string;
   notion?: string;
 };
@@ -40,7 +42,7 @@ export type ParsedPage = {
   goal: string | null;
   sections: PageSection[];
   /** змістом лекції є лише lecture-секції */
-  toc: { id: string; label: string }[];
+  toc: { id: string; label: string; num: string | null }[];
   hasHomework: boolean;
 };
 
@@ -104,7 +106,10 @@ marked.use({
   renderer: {
     heading(text: string, depth: number) {
       const plain = text.replace(/<[^>]+>/g, '');
-      return `<h${depth} id="${slugify(plain)}">${text}</h${depth}>\n`;
+      // «1. Czytanie» — розділи лекції йдуть по черзі: номер виноситься в кружечок
+      const num = depth === 2 ? text.match(/^(\d+)\.\s+([\s\S]*)$/) : null;
+      const inner = num ? `<span class="lp-num" aria-hidden="true">${num[1]}</span><span>${num[2]}</span>` : text;
+      return `<h${depth} id="${slugify(plain)}">${inner}</h${depth}>\n`;
     },
     image(href: string, _title: string | null, text: string) {
       const alt = (text ?? '').replace(/"/g, '&quot;');
@@ -126,6 +131,7 @@ export function parsePage(slug: string, raw: string): ParsedPage {
     level: data.level,
     number: data.number ? Number(data.number) : undefined,
     module: data.module,
+    moduleTitle: data.moduleTitle,
     cover: data.cover,
     notion: data.notion,
   };
@@ -152,7 +158,12 @@ export function parsePage(slug: string, raw: string): ParsedPage {
     };
   });
 
-  const toc = sections.filter((x) => x.kind === 'lecture' && x.label).map((x) => ({ id: x.id, label: x.label }));
+  const toc = sections
+    .filter((x) => x.kind === 'lecture' && x.label)
+    .map((x) => {
+      const n = x.label.match(/^(\d+)\.\s+(.*)$/);
+      return { id: x.id, label: n ? n[2] : x.label, num: n ? n[1] : null };
+    });
   return { meta, goal, sections, toc, hasHomework: sections.some((x) => x.kind === 'homework') };
 }
 

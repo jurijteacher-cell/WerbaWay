@@ -4,6 +4,7 @@ icon: ⚙️
 level: B1
 number: 31
 module: pl-b1-group
+moduleTitle: Польська B1
 cover: /content/pl-b1-group-01-wynalazki/header.jpg
 notion: https://app.notion.com/p/3d896e03c7c880bdaf61de7a488b1ea6
 ---

@@ -1,53 +1,166 @@
-/* Сторінка-лекція (перенесена з Notion): кремовий зошит, польський текст — Literata */
-.lp-root { color: #1b2a4a; }
-.lp-head { margin-top: 1.25rem; }
-.lp-cover { width: 100%; height: 190px; object-fit: cover; border-radius: 14px; border: 1px solid #ddd5c2; }
-.lp-kicker { display: flex; gap: .6rem; align-items: center; margin: 1.1rem 0 .3rem; font: 500 .8rem var(--font-plex-mono), monospace; letter-spacing: .08em; text-transform: uppercase; color: #74622f; }
-.lp-badge { background: #ffe168; color: #1b2a4a; border-radius: 6px; padding: .1rem .5rem; }
-.lp-head h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.15; margin: 0 0 1.4rem; }
+/* Сторінка-лекція у стилі Notion, у кольорах «кремового зошита».
+   Головний акцент — шапка: обкладинка на всю ширину, смужка бренду, іконка-наліпка. Решта — тиха. */
+.lp-root {
+  --lp-ink: #1b2a4a;
+  --lp-muted: #52607a;
+  --lp-paper: #fbf9f4;
+  --lp-line: #ddd5c2;
+  --lp-soft: #f3eee3;
+  --lp-marker: #ffe168;
+  --lp-gold: #8a5f17;
+  --lp-mint: #a9dcc6;
+  --lp-sky: #bcdcf2;
+  --lp-peach: #f6c2af;
+  --lp-lilac: #d8cff0;
+  color: var(--lp-ink);
+  padding-bottom: 6rem;
+}
 
-.lp-goal { background: #fbf9f4; border: 1px solid #ddd5c2; border-left: 6px solid #ffe168; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1.4rem; font-family: var(--font-literata), Georgia, serif; }
-.lp-goal ul { list-style: none; padding: 0; margin: .5rem 0 0; }
-.lp-goal li { margin: .35rem 0; }
+/* ── шапка ── */
+.lp-cover-wrap { position: relative; }
+.lp-cover { display: block; width: 100%; height: clamp(170px, 28vw, 300px); object-fit: cover; }
+.lp-cover-empty { background: linear-gradient(120deg, var(--lp-sky), var(--lp-lilac)); }
+.lp-stripe { height: 5px; background: linear-gradient(90deg, var(--lp-marker) 0 20%, var(--lp-mint) 20% 40%, var(--lp-sky) 40% 60%, var(--lp-peach) 60% 80%, var(--lp-lilac) 80% 100%); }
 
-.lp-toc { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 2rem; }
-.lp-toc a { font-size: .82rem; padding: .25rem .7rem; border: 1px solid #ddd5c2; border-radius: 999px; background: #fbf9f4; color: #52607a; text-decoration: none; }
-.lp-toc a:hover { border-color: #8a5f17; color: #8a5f17; }
+.lp-hero-body { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; }
+@media (min-width: 1100px) { .lp-hero-body { padding-right: calc(15rem + 3rem); } }
+.lp-icon {
+  display: inline-grid; place-items: center;
+  width: 5.25rem; height: 5.25rem; margin-top: -2.9rem;
+  font-size: 3rem; line-height: 1;
+  background: var(--lp-paper); border: 1px solid var(--lp-line); border-radius: 1.25rem;
+  box-shadow: 0 1px 0 var(--lp-line), 0 10px 24px -14px rgba(27, 42, 74, .45);
+  transform: rotate(-4deg);
+  position: relative;
+}
+.lp-hero-body h1 {
+  font-family: var(--font-onest), system-ui, sans-serif;
+  font-weight: 800; letter-spacing: -.025em;
+  font-size: clamp(2rem, 5.2vw, 3.1rem); line-height: 1.06;
+  margin: 1.1rem 0 1.2rem; max-width: 22ch; text-wrap: balance;
+}
 
-.lp-prose { font-family: var(--font-literata), Georgia, serif; font-size: 1.06rem; line-height: 1.75; }
-.lp-prose h2 { font: 700 1.6rem/1.25 var(--font-onest), system-ui, sans-serif; letter-spacing: -.015em; margin: 2.6rem 0 1rem; scroll-margin-top: 1rem; }
-.lp-prose h3 { font: 700 1.2rem/1.3 var(--font-onest), system-ui, sans-serif; margin: 1.8rem 0 .6rem; scroll-margin-top: 1rem; }
-.lp-prose p { margin: 0 0 1rem; }
+.lp-props { display: grid; gap: .15rem; margin: 0 0 2rem; max-width: 46rem; font-size: .95rem; }
+.lp-props > div { display: grid; grid-template-columns: 7.5rem 1fr; align-items: baseline; padding: .3rem 0; }
+.lp-props dt { color: var(--lp-muted); }
+.lp-props dd { margin: 0; }
+.lp-props a { color: var(--lp-gold); text-decoration: underline; text-decoration-color: rgba(138, 95, 23, .35); text-underline-offset: 3px; }
+.lp-props a:hover { text-decoration-color: currentColor; }
+.lp-muted { color: var(--lp-muted); }
+.lp-chip { display: inline-block; border-radius: .4rem; padding: .05rem .5rem; font-weight: 600; font-size: .88rem; }
+.lp-chip-level { background: var(--lp-marker); }
+.lp-badge-hw { background: var(--lp-peach); }
+
+/* ── сітка: колонка тексту + липкий зміст праворуч ── */
+.lp-layout { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; display: grid; gap: 3rem; }
+@media (min-width: 1100px) { .lp-layout { grid-template-columns: minmax(0, 1fr) 15rem; } }
+.lp-col { min-width: 0; max-width: 46rem; }
+.lp-rail { display: none; }
+@media (min-width: 1100px) {
+  .lp-rail { display: block; }
+  .lp-rail .lp-outline { position: sticky; top: 1.5rem; max-height: calc(100vh - 3rem); overflow-y: auto; }
+  .lp-outline-mobile { display: none; }
+}
+
+.lp-outline-title { font-weight: 600; font-size: .85rem; color: var(--lp-muted); margin: 0 0 .5rem; }
+.lp-outline ol { list-style: none; margin: 0; padding: 0; }
+.lp-outline a {
+  display: grid; grid-template-columns: 1.6rem 1fr; gap: .4rem; align-items: baseline;
+  padding: .32rem .5rem; border-radius: .5rem; font-size: .88rem; line-height: 1.35;
+  color: var(--lp-muted); text-decoration: none; border-left: 2px solid transparent;
+}
+.lp-outline a:hover { background: var(--lp-soft); color: var(--lp-ink); }
+.lp-outline a[aria-current] { color: var(--lp-ink); font-weight: 600; background: rgba(255, 225, 104, .45); }
+.lp-outline-num { font-variant-numeric: tabular-nums; color: var(--lp-gold); }
+
+/* на вузькому екрані зміст — горизонтальний ряд */
+.lp-outline-mobile { margin: 0 0 1.5rem; }
+.lp-outline-mobile .lp-outline-title { display: none; }
+.lp-outline-mobile ol { display: flex; gap: .4rem; overflow-x: auto; padding-bottom: .4rem; scrollbar-width: thin; }
+.lp-outline-mobile a { display: flex; white-space: nowrap; border: 1px solid var(--lp-line); background: var(--lp-paper); border-radius: 999px; padding: .3rem .75rem; }
+
+/* ── цілі — callout як у Notion ── */
+.lp-goal {
+  display: grid; grid-template-columns: 2rem 1fr; gap: .5rem;
+  background: var(--lp-paper); border: 1px solid var(--lp-line); border-radius: .9rem;
+  padding: 1rem 1.2rem; margin: 0 0 2rem;
+  font-family: var(--font-literata), Georgia, serif;
+}
+.lp-goal-icon { font-size: 1.35rem; line-height: 1.6; }
+.lp-goal p { margin: 0 0 .4rem; }
+.lp-goal ul { margin: 0; padding-left: 1.1rem; list-style: disc; }
+.lp-goal li { margin: .3rem 0; }
+.lp-goal li::marker { color: var(--lp-gold); }
+
+/* ── текст ── */
+.lp-prose { font-family: var(--font-literata), Georgia, serif; font-size: 1.08rem; line-height: 1.78; }
+.lp-prose h2 {
+  display: flex; align-items: center; gap: .7rem;
+  font: 800 1.65rem/1.2 var(--font-onest), system-ui, sans-serif; letter-spacing: -.02em;
+  margin: 3.2rem 0 1rem; scroll-margin-top: 1.2rem;
+}
+.lp-prose > div:first-child h2:first-child { margin-top: .5rem; }
+.lp-num {
+  flex: none; display: inline-grid; place-items: center;
+  width: 2.1rem; height: 2.1rem; border-radius: 50%;
+  background: var(--lp-marker); font-size: 1rem; font-weight: 800;
+}
+.lp-prose h3 { font: 700 1.22rem/1.3 var(--font-onest), system-ui, sans-serif; margin: 2rem 0 .6rem; scroll-margin-top: 1.2rem; }
+.lp-prose p { margin: 0 0 1.05rem; }
 .lp-prose ul, .lp-prose ol { margin: 0 0 1.2rem; padding-left: 1.4rem; }
-.lp-prose li { margin: .35rem 0; }
-.lp-prose hr { border: 0; border-top: 1px dashed #c9bfa8; margin: 2.4rem 0; }
-.lp-prose a { color: #8a5f17; text-decoration: underline; text-underline-offset: 3px; }
+.lp-prose ul { list-style: disc; }
+.lp-prose ol { list-style: decimal; }
+.lp-prose li { margin: .38rem 0; padding-left: .2rem; }
+.lp-prose li::marker { color: var(--lp-gold); }
+.lp-prose hr { display: none; }
+.lp-prose a { color: var(--lp-gold); text-decoration: underline; text-decoration-color: rgba(138, 95, 23, .35); text-underline-offset: 3px; }
+.lp-prose a:hover { text-decoration-color: currentColor; }
 .lp-prose b, .lp-prose strong { font-weight: 700; }
+.lp-img { width: 100%; border-radius: .9rem; display: block; margin: 1.6rem 0; box-shadow: 0 14px 30px -22px rgba(27, 42, 74, .6); }
 
-.lp-img { width: 100%; border-radius: 12px; border: 1px solid #ddd5c2; display: block; margin: 1.4rem 0; }
+.lp-prose table { width: 100%; border-collapse: collapse; table-layout: fixed; margin: .4rem 0 1.8rem; font-size: .97rem; }
+/* слівник: однакові колонки в усіх таблицях */
+.lp-prose th:nth-child(1) { width: 26%; }
+.lp-prose th:nth-child(2) { width: 27%; }
+.lp-prose th { text-align: left; font: 600 .85rem var(--font-onest), sans-serif; color: var(--lp-muted); border-bottom: 2px solid var(--lp-line); padding: .5rem .7rem; }
+.lp-prose td { padding: .55rem .7rem; border-bottom: 1px solid #e8e1d0; vertical-align: top; }
+.lp-prose tbody tr:hover { background: rgba(255, 225, 104, .18); }
+@media (max-width: 640px) { .lp-prose table { table-layout: auto; display: block; overflow-x: auto; } .lp-prose td { min-width: 8rem; } }
 
-.lp-prose table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 0 0 1.6rem; font-size: .96rem; background: #fbf9f4; border: 1px solid #ddd5c2; border-radius: 12px; overflow: hidden; }
-.lp-prose th { text-align: left; background: #f3eee3; font: 600 .8rem var(--font-onest), sans-serif; text-transform: uppercase; letter-spacing: .06em; color: #52607a; }
-.lp-prose th, .lp-prose td { padding: .55rem .8rem; border-bottom: 1px solid #ece5d4; vertical-align: top; }
-.lp-prose tr:last-child td { border-bottom: 0; }
-@media (max-width: 640px) { .lp-prose table { display: block; overflow-x: auto; } }
-
-.lp-embed { margin: 1.6rem 0; border: 1px solid #ddd5c2; border-radius: 14px; background: #fbf9f4; overflow: hidden; font-family: var(--font-onest), system-ui, sans-serif; }
-.lp-embed figcaption { display: flex; align-items: center; gap: .6rem; padding: .55rem .9rem; border-bottom: 1px solid #ece5d4; font-size: .85rem; color: #52607a; }
-.lp-embed-tag { background: #ffe168; color: #1b2a4a; font-weight: 600; border-radius: 6px; padding: .1rem .5rem; font-size: .75rem; }
-.lp-embed-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.lp-embed-open { color: #8a5f17; text-decoration: none; white-space: nowrap; }
+/* ── вікна вправ: колір мітки = тип ── */
+.lp-embed { margin: 1.8rem 0; border: 1px solid var(--lp-line); border-radius: 1rem; background: var(--lp-paper); overflow: hidden; font-family: var(--font-onest), system-ui, sans-serif; box-shadow: 0 1px 0 var(--lp-line); }
+.lp-embed figcaption { display: flex; align-items: center; gap: .65rem; padding: .6rem .9rem; border-bottom: 1px solid #ebe4d3; font-size: .88rem; color: var(--lp-muted); }
+.lp-embed-tag { background: #e7dfcc; color: var(--lp-ink); font-weight: 600; border-radius: .4rem; padding: .12rem .55rem; font-size: .78rem; white-space: nowrap; }
+.lp-embed[data-kind='grammar'] .lp-embed-tag { background: var(--lp-sky); }
+.lp-embed[data-kind='exam'] .lp-embed-tag,
+.lp-embed[data-kind='hw'] .lp-embed-tag { background: var(--lp-peach); }
+.lp-embed[data-kind='slides'] .lp-embed-tag,
+.lp-embed[data-kind='video'] .lp-embed-tag { background: var(--lp-lilac); }
+.lp-embed[data-kind='comm-tasks'] .lp-embed-tag { background: var(--lp-mint); }
+.lp-embed[data-kind='vocab'] .lp-embed-tag,
+.lp-embed[data-kind='quizlet'] .lp-embed-tag { background: var(--lp-marker); }
+.lp-embed-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--lp-ink); }
+.lp-embed-open { color: var(--lp-muted); text-decoration: none; white-space: nowrap; font-size: .82rem; }
+.lp-embed-open:hover { color: var(--lp-gold); }
 .lp-embed-frame { position: relative; background: #efeae0; }
 .lp-embed-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.lp-embed-skel { position: absolute; inset: 0; display: grid; place-items: center; color: #52607a; font-size: .9rem; }
+.lp-embed-skel { position: absolute; inset: 0; display: grid; place-items: center; color: var(--lp-muted); font-size: .9rem; }
 .lp-video { position: relative; aspect-ratio: 16 / 9; background: #000; }
 .lp-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
-.lp-badge-hw { background: #f6c2af; }
-.lp-hwlink { display: inline-block; margin: 0 0 1.2rem; padding: .6rem 1rem; border: 1px solid #ddd5c2; border-radius: 10px; background: #fbf9f4; color: #8a5f17; font-weight: 600; text-decoration: none; }
-.lp-hwlink:hover { border-color: #8a5f17; }
-.lp-hwdone { margin-top: 2rem; padding: 1.1rem 1.25rem; border: 1px solid #ddd5c2; border-radius: 12px; background: #fbf9f4; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-family: var(--font-onest), sans-serif; }
-.lp-hwdone button { background: #ffe168; color: #1b2a4a; font-weight: 600; border: 0; border-radius: 10px; padding: .6rem 1.1rem; cursor: pointer; }
+/* ── «Далі: домашка» ── */
+.lp-next { display: grid; gap: .15rem; margin-top: 3rem; padding: 1.1rem 1.3rem; border: 1px solid var(--lp-line); border-radius: 1rem; background: var(--lp-paper); text-decoration: none; color: var(--lp-ink); font-family: var(--font-onest), sans-serif; }
+.lp-next:hover { border-color: var(--lp-gold); }
+.lp-next-label { font-size: .85rem; color: var(--lp-muted); }
+.lp-next-title { font-weight: 700; font-size: 1.15rem; }
+
+/* ── позначка домашки ── */
+.lp-hwdone { margin-top: 2rem; padding: 1.1rem 1.25rem; border: 1px solid var(--lp-line); border-radius: 1rem; background: var(--lp-paper); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-family: var(--font-onest), sans-serif; }
+.lp-hwdone button { background: var(--lp-marker); color: var(--lp-ink); font-weight: 600; border: 0; border-radius: .7rem; padding: .6rem 1.1rem; cursor: pointer; }
 .lp-hwdone button:hover { background: #ffd84a; }
 .lp-hwdone button:disabled { opacity: .6; cursor: default; }
-.lp-prose > div > h2:first-child { margin-top: 0; }
+
+/* ── крок у класі (без шапки) ── */
+.lp-step { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+
+.lp-root :focus-visible { outline: 3px solid var(--lp-marker); outline-offset: 2px; border-radius: .3rem; }

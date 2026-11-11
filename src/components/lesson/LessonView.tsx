@@ -3,6 +3,7 @@ import type { PageBlock, ParsedPage } from '@/lib/pages/pages';
 import { ClassAgent } from '@/components/class/ClassAgent';
 import { EmbedFrame } from './EmbedFrame';
 import { HomeworkDone } from './HomeworkDone';
+import { LessonOutline } from './LessonOutline';
 import './lesson.css';
 
 /** embeds: 'all' | 'none' | 'external' (у кроці класу локальні вправи — окремі кроки, зовнішні лишаються в тексті) */
@@ -54,9 +55,16 @@ export function LessonView({ page, mode, step, hw }: Props) {
   if (mode === 'step') {
     const sec = step === 'goal' ? null : sections.find((s) => s.id === step);
     return (
-      <main className="lp-root mx-auto max-w-3xl px-5 pb-16 pt-6">
+      <main className="lp-root lp-step">
         <style dangerouslySetInnerHTML={{ __html: 'body > header{display:none!important}' }} />
-        {step === 'goal' && goal && <section className="lp-goal" dangerouslySetInnerHTML={{ __html: goal }} />}
+        {step === 'goal' && goal && (
+          <section className="lp-goal" aria-label="Цілі лекції">
+            <span className="lp-goal-icon" aria-hidden="true">
+              🎯
+            </span>
+            <div dangerouslySetInnerHTML={{ __html: goal.replace(/🎯\s*/g, '') }} />
+          </section>
+        )}
         {sec && (
           <article className="lp-prose">
             <Blocks blocks={sec.blocks} embeds="external" />
@@ -67,65 +75,121 @@ export function LessonView({ page, mode, step, hw }: Props) {
     );
   }
 
-  return (
-    <main className="lp-root mx-auto max-w-3xl px-4 pb-24 pt-10">
-      <Link
-        href={mode === 'homework' ? `/learn/${meta.slug}` : '/learn'}
-        className="text-sm text-paper-muted transition-colors hover:text-gold"
-      >
-        {mode === 'homework' ? '← До лекції' : '← Усі уроки'}
-      </Link>
+  const exercises = lecture.reduce((n, s) => n + s.blocks.filter((b) => b.k === 'embed').length, 0);
 
-      <header className="lp-head">
-        {meta.cover && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={meta.cover} alt="" className="lp-cover" />
-        )}
-        <p className="lp-kicker">
-          {meta.level && <span className="lp-badge">{meta.level}</span>}
-          {meta.number != null && <span>урок {meta.number}</span>}
-          {mode === 'homework' && <span className="lp-badge lp-badge-hw">домашка</span>}
-        </p>
-        <h1>
-          {meta.icon && <span aria-hidden>{meta.icon} </span>}
-          {meta.title}
-        </h1>
+  return (
+    <main className="lp-root">
+      {/* Шапка як у Notion: обкладинка на всю ширину, іконка-наліпка, заголовок, властивості */}
+      <header className="lp-hero">
+        <div className="lp-cover-wrap">
+          {meta.cover ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={meta.cover} alt="" className="lp-cover" />
+          ) : (
+            <div className="lp-cover lp-cover-empty" />
+          )}
+          <div className="lp-stripe" aria-hidden="true" />
+        </div>
+        <div className="lp-hero-body">
+          <div className="lp-icon" aria-hidden="true">
+            {meta.icon ?? '📘'}
+          </div>
+          <h1>{meta.title}</h1>
+          <dl className="lp-props">
+            {mode === 'homework' && (
+              <div>
+                <dt>Сторінка</dt>
+                <dd>
+                  <span className="lp-chip lp-badge-hw">Домашнє завдання</span>
+                </dd>
+              </div>
+            )}
+            {meta.level && (
+              <div>
+                <dt>Рівень</dt>
+                <dd>
+                  <span className="lp-chip lp-chip-level">{meta.level}</span>
+                </dd>
+              </div>
+            )}
+            {meta.moduleTitle && (
+              <div>
+                <dt>Курс</dt>
+                <dd>
+                  {meta.moduleTitle}
+                  {meta.number != null && <span className="lp-muted">, урок {meta.number}</span>}
+                </dd>
+              </div>
+            )}
+            {mode === 'lecture' && exercises > 0 && (
+              <div>
+                <dt>Вправи</dt>
+                <dd>{exercises} інтерактивних вікон</dd>
+              </div>
+            )}
+            {page.hasHomework && (
+              <div>
+                <dt>{mode === 'homework' ? 'Лекція' : 'Домашка'}</dt>
+                <dd>
+                  {mode === 'homework' ? (
+                    <Link href={`/learn/${meta.slug}`}>Повернутися до лекції</Link>
+                  ) : (
+                    <Link href={`/learn/${meta.slug}/hw`}>Відкрити домашнє завдання</Link>
+                  )}
+                </dd>
+              </div>
+            )}
+          </dl>
+        </div>
       </header>
 
       {mode === 'lecture' && (
-        <>
-          {goal && <section className="lp-goal" dangerouslySetInnerHTML={{ __html: goal }} />}
-          {page.hasHomework && (
-            <Link href={`/learn/${meta.slug}/hw`} className="lp-hwlink">
-              📝 Домашнє завдання до цієї лекції →
-            </Link>
-          )}
-          {toc.length > 1 && (
-            <nav className="lp-toc" aria-label="Зміст">
-              {toc.map((t) => (
-                <a key={t.id} href={`#${t.id}`}>
-                  {t.label}
-                </a>
+        <div className="lp-layout">
+          <div className="lp-col">
+            {goal && (
+              <section className="lp-goal" aria-label="Цілі лекції">
+                <span className="lp-goal-icon" aria-hidden="true">
+                  🎯
+                </span>
+                <div dangerouslySetInnerHTML={{ __html: goal.replace(/🎯\s*/g, '') }} />
+              </section>
+            )}
+            {toc.length > 1 && (
+              <div className="lp-outline-mobile">
+                <LessonOutline items={toc} />
+              </div>
+            )}
+            <article className="lp-prose">
+              {lecture.map((s) => (
+                <Blocks key={s.id} blocks={s.blocks} />
               ))}
-            </nav>
+            </article>
+            {page.hasHomework && (
+              <Link href={`/learn/${meta.slug}/hw`} className="lp-next">
+                <span className="lp-next-label">Далі</span>
+                <span className="lp-next-title">Домашнє завдання до цієї лекції</span>
+              </Link>
+            )}
+          </div>
+          {toc.length > 1 && (
+            <aside className="lp-rail">
+              <LessonOutline items={toc} />
+            </aside>
           )}
-          <article className="lp-prose">
-            {lecture.map((s) => (
-              <Blocks key={s.id} blocks={s.blocks} />
-            ))}
-          </article>
-        </>
+        </div>
       )}
 
       {mode === 'homework' && (
-        <>
-          <article className="lp-prose">
-            {homework.map((s) => (
-              <Blocks key={s.id} blocks={s.blocks} />
-            ))}
-          </article>
-          {hw && <HomeworkDone slug={meta.slug} assigned={hw.assigned} done={hw.done} />}
-        </>
+        <div className="lp-layout">
+          <div className="lp-col">
+            <article className="lp-prose">
+              {homework.map((s) => (
+                <Blocks key={s.id} blocks={s.blocks} />
+              ))}
+            </article>
+            {hw && <HomeworkDone slug={meta.slug} assigned={hw.assigned} done={hw.done} />}
+          </div>
+        </div>
       )}
     </main>
   );
