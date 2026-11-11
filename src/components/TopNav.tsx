@@ -22,10 +22,10 @@ export async function TopNav() {
         style={{ background: 'linear-gradient(90deg,#ffe168 0,#a9dcc6 25%,#bcdcf2 50%,#f6c2af 75%,#d8cff0 100%)' }}
       />
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
-        <Link href="/" className="font-display text-lg text-gold">
+        <Link href="/" className="whitespace-nowrap font-display text-lg text-gold">
           Werba Way
         </Link>
-        <nav className="flex items-center gap-5 text-sm">
+        <nav className="flex flex-wrap items-center justify-end gap-x-4 gap-y-1 text-sm">
           <Link href="/" className="text-paper-muted transition-colors hover:text-gold">
             Уроки
           </Link>
