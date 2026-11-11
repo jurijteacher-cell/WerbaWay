@@ -1,0 +1,45 @@
+/* Сторінка-лекція (перенесена з Notion): кремовий зошит, польський текст — Literata */
+.lp-root { color: #1b2a4a; }
+.lp-head { margin-top: 1.25rem; }
+.lp-cover { width: 100%; height: 190px; object-fit: cover; border-radius: 14px; border: 1px solid #ddd5c2; }
+.lp-kicker { display: flex; gap: .6rem; align-items: center; margin: 1.1rem 0 .3rem; font: 500 .8rem var(--font-plex-mono), monospace; letter-spacing: .08em; text-transform: uppercase; color: #74622f; }
+.lp-badge { background: #ffe168; color: #1b2a4a; border-radius: 6px; padding: .1rem .5rem; }
+.lp-head h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.15; margin: 0 0 1.4rem; }
+
+.lp-goal { background: #fbf9f4; border: 1px solid #ddd5c2; border-left: 6px solid #ffe168; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1.4rem; font-family: var(--font-literata), Georgia, serif; }
+.lp-goal ul { list-style: none; padding: 0; margin: .5rem 0 0; }
+.lp-goal li { margin: .35rem 0; }
+
+.lp-toc { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 2rem; }
+.lp-toc a { font-size: .82rem; padding: .25rem .7rem; border: 1px solid #ddd5c2; border-radius: 999px; background: #fbf9f4; color: #52607a; text-decoration: none; }
+.lp-toc a:hover { border-color: #8a5f17; color: #8a5f17; }
+
+.lp-prose { font-family: var(--font-literata), Georgia, serif; font-size: 1.06rem; line-height: 1.75; }
+.lp-prose h2 { font: 700 1.6rem/1.25 var(--font-onest), system-ui, sans-serif; letter-spacing: -.015em; margin: 2.6rem 0 1rem; scroll-margin-top: 1rem; }
+.lp-prose h3 { font: 700 1.2rem/1.3 var(--font-onest), system-ui, sans-serif; margin: 1.8rem 0 .6rem; scroll-margin-top: 1rem; }
+.lp-prose p { margin: 0 0 1rem; }
+.lp-prose ul, .lp-prose ol { margin: 0 0 1.2rem; padding-left: 1.4rem; }
+.lp-prose li { margin: .35rem 0; }
+.lp-prose hr { border: 0; border-top: 1px dashed #c9bfa8; margin: 2.4rem 0; }
+.lp-prose a { color: #8a5f17; text-decoration: underline; text-underline-offset: 3px; }
+.lp-prose b, .lp-prose strong { font-weight: 700; }
+
+.lp-fig { margin: 1.4rem 0; }
+.lp-fig img { width: 100%; border-radius: 12px; border: 1px solid #ddd5c2; display: block; }
+
+.lp-prose table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 0 0 1.6rem; font-size: .96rem; background: #fbf9f4; border: 1px solid #ddd5c2; border-radius: 12px; overflow: hidden; }
+.lp-prose th { text-align: left; background: #f3eee3; font: 600 .8rem var(--font-onest), sans-serif; text-transform: uppercase; letter-spacing: .06em; color: #52607a; }
+.lp-prose th, .lp-prose td { padding: .55rem .8rem; border-bottom: 1px solid #ece5d4; vertical-align: top; }
+.lp-prose tr:last-child td { border-bottom: 0; }
+@media (max-width: 640px) { .lp-prose table { display: block; overflow-x: auto; } }
+
+.lp-embed { margin: 1.6rem 0; border: 1px solid #ddd5c2; border-radius: 14px; background: #fbf9f4; overflow: hidden; font-family: var(--font-onest), system-ui, sans-serif; }
+.lp-embed figcaption { display: flex; align-items: center; gap: .6rem; padding: .55rem .9rem; border-bottom: 1px solid #ece5d4; font-size: .85rem; color: #52607a; }
+.lp-embed-tag { background: #ffe168; color: #1b2a4a; font-weight: 600; border-radius: 6px; padding: .1rem .5rem; font-size: .75rem; }
+.lp-embed-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lp-embed-open { color: #8a5f17; text-decoration: none; white-space: nowrap; }
+.lp-embed-frame { position: relative; background: #efeae0; }
+.lp-embed-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.lp-embed-skel { position: absolute; inset: 0; display: grid; place-items: center; color: #52607a; font-size: .9rem; }
+.lp-video { position: relative; aspect-ratio: 16 / 9; background: #000; }
+.lp-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }

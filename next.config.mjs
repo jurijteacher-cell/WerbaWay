@@ -1,5 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    // Сторінки-лекції читаються з диска (fs) — без цього Vercel не покладе .md у серверну функцію
+    outputFileTracingIncludes: {
+      '/learn': ['./src/content/pages/**/*'],
+      '/learn/[slug]': ['./src/content/pages/**/*'],
+    },
+  },
   async headers() {
     return [
       {
