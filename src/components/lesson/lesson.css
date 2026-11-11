@@ -280,11 +280,19 @@
   /* корінець блокнота зліва */
   background-image: linear-gradient(90deg, rgba(27, 42, 74, .07), rgba(27, 42, 74, 0) 1.4rem);
 }
-.lp-sheet::before { /* дірочки під пружину */
-  content: ''; position: absolute; left: .45rem; top: 1.2rem; bottom: 1.2rem; width: .5rem;
-  background: radial-gradient(circle at 50% 50%, #e6dfcf 0 .18rem, transparent .2rem) 0 0 / .5rem 1.6rem repeat-y;
-  opacity: .9; pointer-events: none;
+.lp-sheet::before { /* дірочки під пружину: крок 26px, як у кілець */
+  content: ''; position: absolute; left: 6px; top: 18px; bottom: 18px; width: 10px;
+  background: radial-gradient(circle at 5px 13px, #cfc5ae 0 3.4px, rgba(207, 197, 174, .35) 4.4px, transparent 5px) 0 0 / 10px 26px repeat-y;
+  pointer-events: none;
 }
+/* пружина — частина блокнота, а не аркуша: під час перегортання стоїть на місці */
+.lp-book::before, .lp-sheet-class::after {
+  content: ''; position: absolute; z-index: 5; pointer-events: none;
+  left: -15px; top: 18px; bottom: 18px; width: 36px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='26' viewBox='0 0 36 26'%3E%3Cdefs%3E%3ClinearGradient id='m' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='.35' stop-color='%23c9ced6'/%3E%3Cstop offset='.75' stop-color='%23858c98'/%3E%3Cstop offset='1' stop-color='%23565c67'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M26 13.6 C 25 5.5, 6 3.2, 3.6 9.6 C 2 14.4, 9 17.6, 16 17.2' fill='none' stroke='%23000' stroke-opacity='.16' stroke-width='3.6' stroke-linecap='round' transform='translate(.8 1.6)'/%3E%3Cpath d='M26 13.6 C 25 5.5, 6 3.2, 3.6 9.6 C 2 14.4, 9 17.6, 16 17.2' fill='none' stroke='url(%23m)' stroke-width='3.2' stroke-linecap='round'/%3E%3Cpath d='M22 8.6 C 16 5.6, 8 5.4, 6 8.4' fill='none' stroke='%23fff' stroke-opacity='.7' stroke-width='.9' stroke-linecap='round'/%3E%3C/svg%3E") 0 0 / 36px 26px repeat-y;
+}
+.lp-sheet-class::after { opacity: 1; border-radius: 0; inset: auto; left: -15px; top: 18px; bottom: 18px; width: 36px; }
+@media (max-width: 560px) { .lp-book::before { left: -12px; } }
 .lp-sheet::after { /* тінь, що набігає під час перегортання */
   content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0;
   background: linear-gradient(90deg, rgba(27, 42, 74, .28), rgba(27, 42, 74, .04) 55%, rgba(255, 255, 255, .25));
