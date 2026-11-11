@@ -50,41 +50,50 @@ export function ClassTeacher({ studentId, studentName, lessons, initialRoom }: P
     mount.style.height = `${vp.h * k}px`;
   }, []);
 
-  const resetReplayer = useCallback(async () => {
-    const mount = mountRef.current;
-    if (!mount) return;
-    repRef.current?.destroy?.();
-    mount.innerHTML = '';
-    const { Replayer } = await import('rrweb');
-    const rep = new Replayer([], {
-      root: mount,
-      liveMode: true,
-      showWarning: false,
-      mouseTail: { strokeStyle: '#d4a843', lineWidth: 3 },
-    }) as unknown as Rep;
-    rep.on('resize', ({ width, height }) => {
-      viewport.current = { w: width, h: height };
-      fit();
-    });
-    rep.startLive();
-    repRef.current = rep;
-  }, [fit]);
+  const resetReplayer = useCallback(
+    async (rrweb: typeof import('rrweb')) => {
+      const mount = mountRef.current;
+      if (!mount) return;
+      repRef.current?.destroy?.();
+      mount.innerHTML = '';
+      const rep = new rrweb.Replayer([], {
+        root: mount,
+        liveMode: true,
+        showWarning: false,
+        mouseTail: { strokeStyle: '#d4a843', lineWidth: 3 },
+      }) as unknown as Rep;
+      rep.on('resize', ({ width, height }) => {
+        viewport.current = { w: width, h: height };
+        fit();
+      });
+      rep.startLive();
+      repRef.current = rep;
+    },
+    [fit]
+  );
 
+  // Batches must be applied strictly one after another: a snapshot rebuilds the replayer, and events of the
+  // next batch that sneak in meanwhile would be lost (the picture and the element ids then drift apart).
+  const queue = useRef<Promise<void>>(Promise.resolve());
   const onRR = useCallback(
-    async (packed: string[]) => {
-      const { unpack } = await import('@rrweb/packer');
-      let t = Date.now();
-      for (const p of packed) {
-        const ev = unpack(p) as { type: number; timestamp: number };
-        // a new document (Meta) → a fresh replayer; timestamps are re-stamped locally (clocks differ)
-        if (ev.type === 4) await resetReplayer();
-        ev.timestamp = t++;
-        repRef.current?.addEvent(ev);
-        if (ev.type === 2 && !gotFrame.current) {
-          gotFrame.current = true;
-          setHasFrame(true);
-        }
-      }
+    (packed: string[]) => {
+      queue.current = queue.current
+        .then(async () => {
+          const [rrweb, { unpack }] = await Promise.all([import('rrweb'), import('@rrweb/packer')]);
+          let t = Date.now();
+          for (const p of packed) {
+            const ev = unpack(p) as { type: number; timestamp: number };
+            // a new document (Meta) → a fresh replayer; timestamps are re-stamped locally (clocks differ)
+            if (ev.type === 4) await resetReplayer(rrweb);
+            ev.timestamp = t++;
+            repRef.current?.addEvent(ev);
+            if (ev.type === 2 && !gotFrame.current) {
+              gotFrame.current = true;
+              setHasFrame(true);
+            }
+          }
+        })
+        .catch(() => undefined);
     },
     [resetReplayer]
   );
@@ -93,7 +102,7 @@ export function ClassTeacher({ studentId, studentName, lessons, initialRoom }: P
     studentId,
     presence: () => ({ role: 'teacher', at: Date.now() }),
     onMessage: (m) => {
-      if (m.k === 'rr') void onRR(m.d);
+      if (m.k === 'rr') onRR(m.d);
     },
     onPresence: (all) => {
       const s = all.find((p) => p.role === 'student') ?? null;
