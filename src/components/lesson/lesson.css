@@ -23,7 +23,6 @@
 .lp-stripe { height: 5px; background: linear-gradient(90deg, var(--lp-marker) 0 20%, var(--lp-mint) 20% 40%, var(--lp-sky) 40% 60%, var(--lp-peach) 60% 80%, var(--lp-lilac) 80% 100%); }
 
 .lp-hero-body { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; }
-@media (min-width: 1100px) { .lp-hero-body { padding-right: calc(15rem + 3rem); } }
 .lp-icon {
   display: inline-grid; place-items: center;
   width: 5.25rem; height: 5.25rem; margin-top: -2.9rem;
@@ -219,3 +218,138 @@
 
 /* на вузькому екрані закріплена стрічка змісту не повинна закривати заголовок після переходу */
 @media (max-width: 1099px) { .lp-prose h2, .lp-prose h3 { scroll-margin-top: 6rem; } }
+
+
+/* ═════════ Блокнот: лекція сторінками ═════════ */
+.lp-pager { max-width: 74rem; margin: 0 auto; padding: 0 1.25rem; display: grid; gap: 2rem; align-items: start; }
+@media (min-width: 1000px) { .lp-pager { grid-template-columns: 16.5rem minmax(0, 1fr); } }
+.lp-pager-main { min-width: 0; }
+.lp-pager-rail { display: none; }
+@media (min-width: 1000px) {
+  .lp-pager-rail { display: block; position: sticky; top: 1.25rem; max-height: calc(100vh - 2.5rem); overflow-y: auto; scrollbar-width: thin; }
+  .lp-pagebar { display: none !important; }
+}
+
+/* список сторінок */
+.lp-pagelist-body { position: relative; }
+.lp-pagelist-group + .lp-pagelist-group { margin-top: .35rem; }
+.lp-pagelist-section { display: grid; grid-template-columns: 1.7rem 1fr; gap: .35rem; margin: .5rem 0 .1rem; padding: 0 .5rem; font-size: .8rem; font-weight: 650; color: var(--lp-ink); }
+.lp-pagelist-section .lp-outline-num { color: var(--lp-gold); }
+.lp-pagelist-item {
+  position: relative; z-index: 1; width: 100%; text-align: left; background: none; border: 0; cursor: pointer; font: inherit;
+  display: grid; grid-template-columns: 1.7rem 1fr; gap: .35rem; align-items: baseline;
+  padding: .36rem .5rem; border-radius: .6rem; font-size: .86rem; line-height: 1.35; color: var(--lp-muted);
+  transition: color .2s ease, transform .2s ease;
+}
+.lp-pagelist-item:not(.is-top) { padding-left: 1.6rem; grid-template-columns: 1.4rem 1fr; }
+.lp-pagelist-item:hover { color: var(--lp-ink); transform: translateX(3px); }
+.lp-pagelist-item[aria-current] { color: var(--lp-ink); font-weight: 650; }
+.lp-pagelist-item.is-top .lp-outline-n { color: var(--lp-gold); }
+.lp-pagelist-item[data-passed] .lp-outline-n { opacity: 0; transform: scale(.4); }
+.lp-pagelist-item[data-passed] .lp-outline-check { opacity: 1; transform: none; }
+.lp-pagelist-item[data-passed] .lp-outline-label { color: #7b8599; }
+.lp-pagelist.is-compact { box-shadow: none; animation: none; border: 0; padding: .3rem 0 0; background: transparent; }
+
+/* телефон: панель гортання */
+.lp-pagebar {
+  position: sticky; top: .5rem; z-index: 6; margin: 0 0 1rem;
+  display: grid; grid-template-columns: 2.6rem 1fr 2.6rem; gap: .4rem; align-items: center;
+  background: var(--lp-paper); border: 1px solid var(--lp-line); border-radius: 1rem; padding: .45rem;
+  box-shadow: 0 10px 24px -18px rgba(27, 42, 74, .55); font-family: var(--font-onest), sans-serif;
+}
+.lp-pagebar > button { height: 2.4rem; border: 1px solid var(--lp-line); background: #fff; border-radius: .7rem; font-size: 1.35rem; line-height: 1; color: var(--lp-ink); cursor: pointer; }
+.lp-pagebar > button:disabled { opacity: .35; cursor: default; }
+.lp-pagebar .lp-pagebar-title { display: flex; align-items: center; gap: .5rem; min-width: 0; font-size: .9rem; padding: 0 .6rem; text-align: left; }
+.lp-pagebar-count { flex: none; font-variant-numeric: tabular-nums; background: var(--lp-marker); border-radius: .4rem; padding: .05rem .4rem; font-weight: 700; font-size: .8rem; }
+.lp-pagebar-label { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lp-pagebar-progress { grid-column: 1 / -1; margin: .1rem .1rem 0; }
+.lp-pagebar-list { grid-column: 1 / -1; max-height: 60vh; overflow-y: auto; border-top: 1px solid #ebe4d3; margin-top: .2rem; }
+
+/* аркуш */
+.lp-book { position: relative; perspective: 2400px; perspective-origin: 0% 50%; }
+.lp-book.is-turning { overflow-y: clip; }
+.lp-sheet {
+  position: relative;
+  background: #fffdf8;
+  border: 1px solid var(--lp-line);
+  border-radius: .45rem 1.1rem 1.1rem .45rem;
+  padding: 1.6rem clamp(1.1rem, 3.4vw, 2.6rem) 2.2rem clamp(1.4rem, 4vw, 3.2rem);
+  box-shadow: 0 1px 0 var(--lp-line), 0 22px 40px -32px rgba(27, 42, 74, .6);
+  transform-origin: left center;
+  backface-visibility: hidden;
+  /* корінець блокнота зліва */
+  background-image: linear-gradient(90deg, rgba(27, 42, 74, .07), rgba(27, 42, 74, 0) 1.4rem);
+}
+.lp-sheet::before { /* дірочки під пружину */
+  content: ''; position: absolute; left: .45rem; top: 1.2rem; bottom: 1.2rem; width: .5rem;
+  background: radial-gradient(circle at 50% 50%, #e6dfcf 0 .18rem, transparent .2rem) 0 0 / .5rem 1.6rem repeat-y;
+  opacity: .9; pointer-events: none;
+}
+.lp-sheet::after { /* тінь, що набігає під час перегортання */
+  content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0;
+  background: linear-gradient(90deg, rgba(27, 42, 74, .28), rgba(27, 42, 74, .04) 55%, rgba(255, 255, 255, .25));
+}
+.lp-sheet.is-leaving, .lp-sheet.is-under { position: absolute; top: 0; left: 0; right: 0; }
+/* аркуш, що гортається, має чисту зворотну сторону: вміст ховається, папір лишається */
+.lp-sheet.is-leaving, .lp-sheet.is-entering { transform-style: preserve-3d; backface-visibility: visible; }
+.lp-sheet.is-leaving > *, .lp-sheet.is-entering > * { backface-visibility: hidden; }
+.lp-sheet.is-leaving { z-index: 3; animation: lp-turn-out .76s cubic-bezier(.45, .05, .25, 1) forwards; }
+.lp-sheet.is-leaving::after { animation: lp-shade-in .76s ease forwards; }
+.lp-sheet.is-entering { z-index: 3; animation: lp-turn-in .76s cubic-bezier(.45, .05, .25, 1) both; }
+.lp-sheet.is-entering::after { animation: lp-shade-out .76s ease both; }
+.lp-sheet.is-under { z-index: 1; }
+.lp-sheet.is-current { z-index: 2; }
+.lp-book.is-turning .lp-sheet.is-current { animation: lp-settle .76s ease both; }
+
+@keyframes lp-turn-out {
+  0% { transform: rotateY(0) translateZ(0); }
+  60% { box-shadow: 30px 20px 50px -20px rgba(27, 42, 74, .45); }
+  100% { transform: rotateY(-178deg) translateZ(0); box-shadow: none; }
+}
+@keyframes lp-turn-in {
+  0% { transform: rotateY(-178deg); }
+  40% { box-shadow: 30px 20px 50px -20px rgba(27, 42, 74, .45); }
+  100% { transform: rotateY(0); }
+}
+@keyframes lp-shade-in { to { opacity: 1; } }
+@keyframes lp-shade-out { from { opacity: 1; } to { opacity: 0; } }
+/* сторінка під аркушем трохи «підсвічується», коли на неї падає світло */
+@keyframes lp-settle { 0% { filter: brightness(.94); } 100% { filter: none; } }
+
+/* шапка сторінки */
+.lp-sheet-head { display: flex; align-items: center; gap: .8rem; margin: 0 0 1.3rem; padding-bottom: 1rem; border-bottom: 1px dashed #ddd3bd; }
+.lp-sheet-titles { flex: 1; min-width: 0; }
+.lp-sheet-head h2 { font: 800 1.55rem/1.2 var(--font-onest), system-ui, sans-serif; letter-spacing: -.02em; margin: 0; }
+.lp-sheet-sub { margin: .15rem 0 0; color: var(--lp-muted); font-family: var(--font-onest), sans-serif; font-size: .92rem; }
+.lp-sheet-folio { flex: none; align-self: flex-start; font-family: var(--font-onest), sans-serif; font-size: .8rem; color: var(--lp-muted); font-variant-numeric: tabular-nums; }
+.lp-num-soft { background: var(--lp-soft); }
+.lp-sheet .lp-prose > div:first-child > *:first-child { margin-top: 0; }
+.lp-goal-page ul { list-style: none; padding: 0; }
+.lp-goal-page li { position: relative; padding: .55rem .8rem .55rem 2.4rem; margin: .45rem 0; background: var(--lp-paper); border: 1px solid #ebe4d3; border-radius: .7rem; }
+.lp-goal-page li::before { content: '✓'; position: absolute; left: .85rem; top: .55rem; color: #17704a; font-weight: 700; font-family: var(--font-onest), sans-serif; }
+.lp-goal-page li { font-size: 1.02rem; }
+
+/* гортання внизу */
+.lp-turn { display: grid; grid-template-columns: 1fr 1.6fr; gap: .8rem; margin-top: 1.4rem; font-family: var(--font-onest), sans-serif; }
+.lp-turn > * {
+  display: grid; gap: .1rem; text-align: left; padding: .85rem 1.1rem; border-radius: 1rem; cursor: pointer; text-decoration: none;
+  border: 1px solid var(--lp-line); background: var(--lp-paper); color: var(--lp-ink); font: inherit;
+  transition: transform .15s ease, border-color .2s ease, background .2s ease;
+}
+.lp-turn > *:hover:not(:disabled) { border-color: var(--lp-gold); transform: translateY(-1px); }
+.lp-turn > *:active:not(:disabled) { transform: translateY(1px); }
+.lp-turn > *:disabled { opacity: .45; cursor: default; }
+.lp-turn-next { text-align: right !important; background: var(--lp-marker) !important; border-color: #f2c94c !important; }
+.lp-turn-next:hover { background: #ffd84a !important; }
+.lp-turn-k { font-size: .8rem; color: var(--lp-muted); }
+.lp-turn-next .lp-turn-k { color: #6b5512; }
+.lp-turn-t { font-weight: 700; font-size: 1rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 560px) { .lp-turn { grid-template-columns: 1fr 1.8fr; } .lp-turn-t { font-size: .92rem; } }
+
+/* крок у класі: аркуш без перегортання */
+.lp-sheet-class { margin-top: .25rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .lp-sheet, .lp-sheet::after, .lp-book.is-turning .lp-sheet.is-current { animation: none !important; }
+  .lp-pagelist-item, .lp-turn > * { transition: none !important; }
+}

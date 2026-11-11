@@ -190,21 +190,91 @@ function parseBlocks(md: string): PageBlock[] {
   return blocks;
 }
 
-/** Кроки заняття в класі: «Cele» → для кожного lecture-розділу текст + кожна вправа окремим кроком */
-export function buildSteps(page: ParsedPage): ClassStep[] {
+/**
+ * Сторінка «блокнота». Лекція гортається сторінками: вступний текст розділу + вправа = одна сторінка,
+ * текст без вправи — окрема сторінка. Ці самі сторінки — кроки заняття в класі.
+ */
+export type BookPage = {
+  key: string;
+  /** назва розділу без номера */
+  section: string;
+  /** номер розділу («1»…), null для Słowniczek / Źródła / цілей */
+  num: string | null;
+  /** підпис у навігації: «Текст» або назва вправи */
+  label: string;
+  kind: 'goal' | 'text' | EmbedKind | 'video';
+  /** що відкривати в iframe класу: текст — /learn/…?step=, вправа — сам embed (так його видно викладачеві) */
+  url: string;
+  blocks: PageBlock[];
+};
+
+const isLocalEmbed = (b: PageBlock) => b.k === 'embed' && !/^https?:/.test(b.src);
+const hasContent = (bs: PageBlock[]) =>
+  bs.some((b) => b.k !== 'html' || b.html.replace(/<[^>]+>/g, '').trim().length > 0);
+
+export function buildPages(page: ParsedPage): BookPage[] {
   const base = `/learn/${page.meta.slug}`;
-  const steps: ClassStep[] = [];
-  if (page.goal) steps.push({ key: 'goal', section: 'Cele', label: 'Cele lekcji', kind: 'goal', url: `${base}?step=goal` });
-  for (const sec of page.sections) {
-    if (sec.kind !== 'lecture' || !sec.label) continue;
-    const hasText = sec.blocks.some((b) => b.k === 'html' || b.k === 'video');
-    if (hasText) steps.push({ key: `t:${sec.id}`, section: sec.label, label: 'Текст', kind: 'text', url: `${base}?step=${sec.id}` });
-    sec.blocks.forEach((b) => {
-      // зовнішні вікна (Quizlet) показуються всередині текстового кроку: у iframe класу їх не відзеркалити
-      if (b.k === 'embed' && !/^https?:/.test(b.src)) steps.push({ key: `e:${b.src}`, section: sec.label, label: b.title, kind: b.kind, url: b.src });
+  const out: BookPage[] = [];
+  if (page.goal) {
+    out.push({
+      key: 'goal',
+      section: 'Po tej lekcji potrafisz',
+      num: null,
+      label: 'Cele lekcji',
+      kind: 'goal',
+      url: `${base}?step=goal`,
+      // заголовок і 🎯 малює сама сторінка
+      blocks: [
+        {
+          k: 'html',
+          html: page.goal.replace(/<p>\s*<b>[^<]*potrafisz[^<]*<\/b>\s*<\/p>\s*/i, '').replace(/🎯\s*/g, ''),
+        },
+      ],
     });
   }
-  return steps;
+  for (const sec of page.sections) {
+    if (sec.kind !== 'lecture' || !sec.label) continue;
+    const n = sec.label.match(/^(\d+)\.\s+(.*)$/);
+    const num = n ? n[1] : null;
+    const title = n ? n[2] : sec.label;
+    // заголовок розділу малює сама сторінка — з тексту його прибираємо
+    const blocks = sec.blocks
+      .map((b) => (b.k === 'html' ? { ...b, html: b.html.replace(/<h2\b[^>]*>[\s\S]*?<\/h2>\s*/g, '') } : b))
+      .filter((b) => b.k !== 'html' || b.html.trim());
+    let buf: PageBlock[] = [];
+    let i = 0;
+    for (const b of blocks) {
+      if (isLocalEmbed(b) && b.k === 'embed') {
+        const key = `${sec.id}~${i++}`;
+        out.push({ key, section: title, num, label: b.title, kind: b.kind, url: b.src, blocks: [...buf, b] });
+        buf = [];
+      } else buf.push(b);
+    }
+    if (hasContent(buf)) {
+      const key = `${sec.id}~${i++}`;
+      out.push({
+        key,
+        section: title,
+        num,
+        label: buf.some((b) => b.k === 'video') ? 'Текст і відео' : 'Текст',
+        kind: 'text',
+        url: `${base}?step=${encodeURIComponent(key)}`,
+        blocks: buf,
+      });
+    }
+  }
+  return out;
+}
+
+/** Кроки заняття в класі = сторінки лекції */
+export function buildSteps(page: ParsedPage): ClassStep[] {
+  return buildPages(page).map(({ key, section, num, label, kind, url }) => ({
+    key,
+    section: num ? `${num}. ${section}` : section,
+    label,
+    kind,
+    url,
+  }));
 }
 
 export function listPages(): PageMeta[] {

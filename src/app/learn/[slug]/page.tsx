@@ -15,7 +15,7 @@ export default async function LearnPage({
   searchParams,
 }: {
   params: { slug: string };
-  searchParams?: { step?: string };
+  searchParams?: { step?: string; p?: string };
 }) {
   const supabase = createClient();
   const {
@@ -26,5 +26,8 @@ export default async function LearnPage({
   const page = loadPage(params.slug);
   if (!page) notFound();
   const step = searchParams?.step;
-  return <LessonView page={page} mode={step ? 'step' : 'lecture'} step={step} />;
+  const p = Number(searchParams?.p);
+  return (
+    <LessonView page={page} mode={step ? 'step' : 'lecture'} step={step} pageIndex={Number.isFinite(p) && p > 0 ? p - 1 : 0} />
+  );
 }

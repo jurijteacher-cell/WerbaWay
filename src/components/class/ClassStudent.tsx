@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { FRAME_TAG, isCourseRoom, roomUrl, type ClassMsg, type RoomState } from '@/lib/class/protocol';
 import { StepNav, useSteps } from './StepNav';
+import './class.css';
 import { useClassChannel } from './useClassChannel';
 
 type Props = { userId: string; name: string; initialRoom: RoomState };
@@ -12,7 +13,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
   const [room, setRoom] = useState<RoomState>(initialRoom);
   const roomRef = useRef(room);
   roomRef.current = room;
-  const frameRef = useRef<HTMLIFrameElement>(null);
+  const frameRef = useRef<HTMLIFrameElement | null>(null);
   const buf = useRef<string[]>([]);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const sendRef = useRef<(m: ClassMsg) => boolean>(() => false);
@@ -77,6 +78,61 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
 
   const url = roomUrl(room);
   const course = useSteps(isCourseRoom(room) && room.active ? room.lesson_id : null);
+
+  /* ── перегортання сторінок: нова сторінка вантажиться під поточною, потім стара перегортається ── */
+  type Sheet = { id: number; url: string; role: 'current' | 'incoming' | 'leaving' | 'entering' | 'under' };
+  const [sheets, setSheets] = useState<Sheet[]>(() => (url ? [{ id: 0, url, role: 'current' }] : []));
+  const seq = useRef(1);
+  const dirRef = useRef<'next' | 'prev'>('next');
+  const prevBlocks = useRef<string | null>(room.blocks);
+  const stepsRef = useRef(course?.steps);
+  stepsRef.current = course?.steps;
+
+  useEffect(() => {
+    // напрям — за порядком сторінок лекції (назад = аркуш повертається)
+    const steps = stepsRef.current;
+    if (steps && prevBlocks.current && room.blocks) {
+      const a = steps.findIndex((s) => s.url === prevBlocks.current);
+      const b = steps.findIndex((s) => s.url === room.blocks);
+      dirRef.current = a >= 0 && b >= 0 && b < a ? 'prev' : 'next';
+    } else dirRef.current = 'next';
+    prevBlocks.current = room.blocks;
+
+    if (!url) {
+      setSheets([]);
+      return;
+    }
+    setSheets((fs) => {
+      const top = fs[fs.length - 1];
+      if (top && top.url === url) return fs;
+      const cur = fs.filter((f) => f.role === 'current').slice(-1);
+      const id = seq.current++;
+      return cur.length ? [...cur, { id, url, role: 'incoming' }] : [{ id, url, role: 'current' }];
+    });
+  }, [url, room.blocks]);
+
+  const turnTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const onSheetLoad = (id: number) => {
+    setSheets((fs) => {
+      const me = fs.find((f) => f.id === id);
+      if (!me || me.role !== 'incoming') return fs;
+      const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+      if (reduce) return [{ ...me, role: 'current' }];
+      const next = dirRef.current === 'next';
+      return fs
+        .filter((f) => f.role === 'current' || f.id === id)
+        .map((f) => (f.id === id ? { ...f, role: next ? 'current' : 'entering' } : { ...f, role: next ? 'leaving' : 'under' }));
+    });
+    if (turnTimer.current) clearTimeout(turnTimer.current);
+    turnTimer.current = setTimeout(() => {
+      setSheets((fs) => {
+        const top = fs.find((f) => f.id === id);
+        return top && top.role !== 'incoming' ? [{ ...top, role: 'current' }] : fs;
+      });
+    }, 780);
+  };
+  useEffect(() => () => void (turnTimer.current && clearTimeout(turnTimer.current)), []);
+  const newestId = sheets.length ? sheets[sheets.length - 1].id : -1;
   const dot = link === 'online' ? 'bg-correct' : link === 'connecting' ? 'bg-gold-fill' : 'bg-incorrect';
   const label = link === 'online' ? 'на зв’язку' : link === 'connecting' ? 'підключаюсь…' : 'немає зв’язку, пробую знову';
 
@@ -97,14 +153,24 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
               <StepNav steps={course.steps} currentUrl={room.blocks} />
             </aside>
           )}
-          <iframe
-            key={url}
-            ref={frameRef}
-            src={url}
-            title="Заняття"
-            className="w-full flex-1 border-0 bg-white"
-            style={{ minHeight: 'calc(100vh - 56px)' }}
-          />
+          <div className="cls-book" style={{ minHeight: 'calc(100vh - 56px)' }}>
+            {sheets.map((sh) => (
+              <div key={sh.id} className={`cls-sheet is-${sh.role}`}>
+                <iframe
+                  ref={
+                    sh.id === newestId
+                      ? (el) => {
+                          frameRef.current = el;
+                        }
+                      : undefined
+                  }
+                  src={sh.url}
+                  title="Заняття"
+                  onLoad={() => onSheetLoad(sh.id)}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       ) : (
         <div className="flex flex-1 items-center justify-center px-6 text-center">

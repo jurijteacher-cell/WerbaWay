@@ -1,0 +1,30 @@
+/* Клас: сторінки заняття перегортаються як аркуші блокнота (корінець зліва) */
+.cls-book { position: relative; flex: 1; perspective: 2600px; perspective-origin: 0% 50%; overflow: hidden; background: #efeae0; }
+.cls-sheet {
+  position: absolute; inset: 0; background: #fff;
+  transform-origin: left center; backface-visibility: hidden;
+  border-left: 1px solid #ddd5c2;
+}
+.cls-sheet iframe { display: block; width: 100%; height: 100%; border: 0; background: #fff; }
+.cls-sheet.is-current { z-index: 2; }
+.cls-sheet.is-incoming { z-index: 1; }
+.cls-sheet.is-under { z-index: 1; }
+.cls-sheet.is-leaving { z-index: 3; animation: cls-turn-out .76s cubic-bezier(.45, .05, .25, 1) forwards; }
+.cls-sheet.is-entering { z-index: 3; animation: cls-turn-in .76s cubic-bezier(.45, .05, .25, 1) both; }
+.cls-sheet.is-leaving::after, .cls-sheet.is-entering::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(90deg, rgba(27, 42, 74, .3), rgba(27, 42, 74, .05) 55%, rgba(255, 255, 255, .2));
+  animation: cls-shade .76s ease both;
+}
+.cls-sheet.is-entering::after { animation-direction: reverse; }
+@keyframes cls-turn-out { from { transform: rotateY(0); } to { transform: rotateY(-100deg); opacity: .6; } }
+@keyframes cls-turn-in { from { transform: rotateY(-100deg); opacity: .6; } to { transform: rotateY(0); opacity: 1; } }
+@keyframes cls-shade { from { opacity: 0; } to { opacity: 1; } }
+
+/* екран викладача: дзеркало учня «перегортається», коли в учня відкрилась нова сторінка */
+.cls-mirror-turn { transform-origin: left center; animation: cls-mirror .6s cubic-bezier(.3, .8, .3, 1) both; }
+@keyframes cls-mirror { from { transform: perspective(2000px) rotateY(-28deg); opacity: .25; } to { transform: none; opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .cls-sheet.is-leaving, .cls-sheet.is-entering, .cls-sheet::after, .cls-mirror-turn { animation: none !important; }
+}
