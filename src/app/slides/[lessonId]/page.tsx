@@ -3,6 +3,7 @@ import { existsSync, readFileSync } from 'fs';
 import path from 'path';
 import { GrammarSlides, type GrammarSlide } from '@/components/exercises/GrammarSlides';
 import { NotebookShell } from '@/components/exercises/NotebookShell';
+import { ClassAgent } from '@/components/class/ClassAgent';
 import '@/components/exercises/notebook.css';
 
 type Props = {
@@ -55,6 +56,7 @@ export default function SlidesPage({ params, searchParams }: Props) {
           teacherMode={teacher}
         />
       </NotebookShell>
+      <ClassAgent />
     </main>
   );
 }

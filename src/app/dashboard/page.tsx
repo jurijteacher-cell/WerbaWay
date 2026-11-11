@@ -33,10 +33,19 @@ export default async function DashboardPage() {
         </div>
         <div className="flex gap-4 text-sm">
           {isTeacher ? (
-            <Link href="/teacher/analytics" className="text-gold hover:text-gold-bright">
-              Аналітика класу →
+            <>
+              <Link href="/teacher/class" className="text-gold hover:text-gold-bright">
+                Клас наживо →
+              </Link>
+              <Link href="/teacher/analytics" className="text-gold hover:text-gold-bright">
+                Аналітика класу →
+              </Link>
+            </>
+          ) : (
+            <Link href="/class" className="text-gold hover:text-gold-bright">
+              Увійти в клас →
             </Link>
-          ) : null}
+          )}
           <Link href="/forgot-password" className="text-paper-muted hover:text-gold">
             Змінити пароль
           </Link>
