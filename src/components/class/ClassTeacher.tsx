@@ -2,7 +2,15 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import 'rrweb/dist/style.css';
-import { CLASS_EMBEDS, EMPTY_ROOM, type ClassMsg, type Presence, type RoomState } from '@/lib/class/protocol';
+import {
+  CLASS_EMBEDS,
+  EMPTY_ROOM,
+  elementPath,
+  shortText,
+  type ClassMsg,
+  type Presence,
+  type RoomState,
+} from '@/lib/class/protocol';
 import { useClassChannel } from './useClassChannel';
 
 type Lesson = { id: string; title: string };
@@ -68,6 +76,7 @@ export function ClassTeacher({ studentId, studentName, lessons, initialRoom }: P
       });
       rep.startLive();
       repRef.current = rep;
+      (window as unknown as { __wwRep?: unknown }).__wwRep = rep;
     },
     [fit]
   );
@@ -164,11 +173,11 @@ export function ClassTeacher({ studentId, studentName, lessons, initialRoom }: P
     const el = doc?.elementFromPoint((e.clientX - r.left) / k, (e.clientY - r.top) / k);
     if (!el) return;
     const id = rep.getMirror().getId(el);
-    if (id > 0) send({ k: 'click', id });
+    if (id > 0) send({ k: 'click', id, tag: el.tagName, text: shortText(el), path: elementPath(el) });
   }
 
   const where = !student ? 'не в мережі' : student.mode === 'class' ? 'у класі' : 'у залі очікування';
-  const dot = !student ? 'bg-paper-muted' : student.mode === 'class' ? 'bg-correct' : 'bg-gold';
+  const dot = !student ? 'bg-paper-muted' : student.mode === 'class' ? 'bg-correct' : 'bg-gold-fill';
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
@@ -226,7 +235,7 @@ export function ClassTeacher({ studentId, studentName, lessons, initialRoom }: P
           type="button"
           onClick={enter}
           disabled={busy || !lessonId}
-          className="rounded-lg bg-gold px-5 py-2 text-sm font-medium text-ink hover:bg-gold-bright disabled:opacity-50"
+          className="rounded-lg bg-gold-fill px-5 py-2 text-sm font-medium text-paper hover:bg-gold-fillHover disabled:opacity-50"
         >
           {room.active ? 'Перейти до цього' : 'У клас'}
         </button>
@@ -247,7 +256,7 @@ export function ClassTeacher({ studentId, studentName, lessons, initialRoom }: P
       </div>
       {err && <p className="mb-3 text-incorrect">Не вдалося: {err}</p>}
 
-      <div ref={stageRef} className="rounded-lg border border-ink-line bg-black/20 p-2">
+      <div ref={stageRef} className="rounded-lg border border-ink-line bg-ink-soft p-2">
         <div className="relative mx-auto" style={{ width: 'fit-content' }}>
           <div ref={mountRef} className="relative overflow-hidden bg-white" />
           {pult && hasFrame && (

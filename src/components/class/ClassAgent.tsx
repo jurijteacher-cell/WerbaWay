@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import { FRAME_TAG } from '@/lib/class/protocol';
+import { FRAME_TAG, elementAtPath, shortText } from '@/lib/class/protocol';
 
 /**
  * Class mode inside an exercise/slides page. Active only when the page is opened by /class
@@ -47,10 +47,13 @@ export function ClassAgent() {
       if (m.k === 'need-snap') {
         rec.takeFullSnapshot(true);
       } else if (m.k === 'click' && Number.isInteger(m.id)) {
-        const node = rec.mirror.getNode(m.id);
-        const el = node instanceof HTMLElement ? node : (node?.parentElement ?? null);
-        console.info('[class] click', m.id, node ? node.nodeName : 'no node', el ? el.className : '');
-        el?.click();
+        const fits = (e: Element | null | undefined) =>
+          !!e && (!m.tag || e.tagName === m.tag) && (!m.text || shortText(e) === m.text);
+        const byId = rec.mirror.getNode(m.id);
+        let el: Element | null = byId instanceof Element ? byId : (byId?.parentElement ?? null);
+        if (!fits(el) && Array.isArray(m.path)) el = elementAtPath(document, m.path);
+        console.info('[class] click', m.id, el ? el.tagName : 'no element', fits(el) ? 'ok' : 'unverified');
+        if (el && fits(el)) (el as HTMLElement).click();
       }
     };
     window.addEventListener('message', onMessage);

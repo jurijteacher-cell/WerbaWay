@@ -49,7 +49,7 @@ export type ClassMsg =
   | { k: 'rr'; d: string[] }
   | { k: 'need-snap' }
   | { k: 'room'; room: RoomState }
-  | { k: 'click'; id: number };
+  | { k: 'click'; id: number; tag?: string; text?: string; path?: number[] };
 
 export type Presence = { role: 'student' | 'teacher'; name?: string; mode?: 'lobby' | 'class'; at: number };
 
@@ -92,3 +92,30 @@ function parse(json: string): ClassMsg | null {
     return null;
   }
 }
+
+/* ── locating an element on both sides (rrweb ids can drift; tag + text + path are the safety net) ── */
+
+const SKIP = /^(SCRIPT|STYLE|LINK|NOSCRIPT|META|TEMPLATE)$/;
+
+/** Child-element indexes from <html> down to `el`, ignoring tags that rrweb replays differently */
+export function elementPath(el: Element): number[] {
+  const path: number[] = [];
+  let cur: Element | null = el;
+  while (cur && cur.parentElement) {
+    const kids = Array.from(cur.parentElement.children).filter((c) => !SKIP.test(c.tagName));
+    path.unshift(kids.indexOf(cur));
+    cur = cur.parentElement;
+  }
+  return path;
+}
+
+export function elementAtPath(doc: Document, path: number[]): Element | null {
+  let cur: Element | null = doc.documentElement;
+  for (const i of path) {
+    if (!cur) return null;
+    cur = Array.from(cur.children).filter((c) => !SKIP.test(c.tagName))[i] ?? null;
+  }
+  return cur;
+}
+
+export const shortText = (el: Element) => (el.textContent ?? '').replace(/\s+/g, ' ').trim().slice(0, 40);
