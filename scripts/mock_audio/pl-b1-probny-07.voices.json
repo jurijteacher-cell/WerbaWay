@@ -1,0 +1,144 @@
+{
+  "model": "eleven_v4",
+  "cast": {
+    "NAR": "uPeXyAUvljDRLYs8zgwt",
+    "W1": "mQq2zdGT1zEfDbh8W95l",
+    "W2": "gHGjEjdr2LBds0XHTsvg",
+    "W3": "hq1SDzCP9HutY7Ea9PAW",
+    "W4": "2AI3SLYKkKZsvZEiHd3D",
+    "W5": "AwWFxYalAvioLDuxV9WV",
+    "M1": "p0KQaxqGrT7xcRWSJiHp",
+    "M2": "bwhymd1UcFEihyvPSEoR",
+    "M3": "ihTsqWCgsTDbANOCuZD2",
+    "M4": "e3WIS9BUv6I0HZ9v36L2"
+  },
+  "tasks": {
+    "rs1": {
+      "block_gap": 3.0,
+      "voices": {
+        "Lektor": "NAR"
+      },
+      "segments": [
+        {
+          "Nagranie": "W1"
+        },
+        {
+          "Nagranie": "W3"
+        },
+        {
+          "Nagranie": "M1"
+        },
+        {
+          "Nagranie": "W2"
+        },
+        {
+          "Nagranie": "M3"
+        },
+        {
+          "Nagranie": "W4"
+        },
+        {
+          "Nagranie": "M2"
+        },
+        {
+          "Nagranie": "W5"
+        },
+        {
+          "Nagranie": "M4"
+        },
+        {
+          "Nagranie": "W1"
+        },
+        {
+          "Nagranie": "M3"
+        },
+        {
+          "Nagranie": "W2"
+        },
+        {
+          "Nagranie": "M1"
+        },
+        {
+          "Nagranie": "W3"
+        },
+        {
+          "Nagranie": "M2"
+        }
+      ],
+      "tags": {
+        "1": "[angry]",
+        "3": "[warmly]",
+        "5": "[surprised]",
+        "7": "[cautiously]",
+        "8": "[warmly]",
+        "9": "[sad]",
+        "11": "[cautiously]",
+        "13": "[sarcastic]"
+      }
+    },
+    "rs2": {
+      "block_gap": 2.0,
+      "voices": {
+        "Lektor": "NAR"
+      },
+      "segments": [
+        {
+          "Kobieta": "W2",
+          "Mężczyzna": "M2"
+        },
+        {
+          "Klientka": "W3",
+          "Fryzjer": "M1"
+        },
+        {
+          "Koleżanka": "W1",
+          "Kolega": "M3"
+        },
+        {
+          "Żona": "W2",
+          "Mąż": "M2"
+        },
+        {
+          "Pasażerka": "W5",
+          "Konduktor": "M4"
+        },
+        {
+          "Córka": "W3",
+          "Ojciec": "M2"
+        },
+        {
+          "Klientka": "W4",
+          "Sprzedawca": "M3"
+        },
+        {
+          "Sąsiadka": "W1",
+          "Sąsiad": "M1"
+        }
+      ]
+    },
+    "rs3": {
+      "voices": {
+        "Lektor": "NAR",
+        "Dziennikarz": "M4",
+        "Paweł Sowa": "M3"
+      }
+    },
+    "rs4": {
+      "block_gap": 1.5,
+      "voices": {
+        "Lektor": "NAR",
+        "Pani Danuta": "W2",
+        "Kuba": "M1",
+        "Pan Zbigniew": "M2",
+        "Weronika": "W3"
+      }
+    },
+    "rs5": {
+      "block_gap": 2.5,
+      "voices": {
+        "Lektor": "NAR",
+        "Stewardesa": "W3"
+      }
+    }
+  }
+}
