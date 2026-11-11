@@ -5,12 +5,16 @@ import { EmbedFrame } from './EmbedFrame';
 import { HomeworkDone } from './HomeworkDone';
 import './lesson.css';
 
-function Blocks({ blocks, embeds = true }: { blocks: PageBlock[]; embeds?: boolean }) {
+/** embeds: 'all' | 'none' | 'external' (у кроці класу локальні вправи — окремі кроки, зовнішні лишаються в тексті) */
+function Blocks({ blocks, embeds = 'all' }: { blocks: PageBlock[]; embeds?: 'all' | 'none' | 'external' }) {
   return (
     <>
       {blocks.map((b, i) => {
         if (b.k === 'html') return <div key={i} dangerouslySetInnerHTML={{ __html: b.html }} />;
-        if (b.k === 'embed') return embeds ? <EmbedFrame key={i} src={b.src} title={b.title} kind={b.kind} /> : null;
+        if (b.k === 'embed') {
+          const show = embeds === 'all' || (embeds === 'external' && /^https?:/.test(b.src));
+          return show ? <EmbedFrame key={i} src={b.src} title={b.title} kind={b.kind} /> : null;
+        }
         return (
           <figure key={i} className="lp-embed" data-kind="video">
             <figcaption>
@@ -55,7 +59,7 @@ export function LessonView({ page, mode, step, hw }: Props) {
         {step === 'goal' && goal && <section className="lp-goal" dangerouslySetInnerHTML={{ __html: goal }} />}
         {sec && (
           <article className="lp-prose">
-            <Blocks blocks={sec.blocks} embeds={false} />
+            <Blocks blocks={sec.blocks} embeds="external" />
           </article>
         )}
         <ClassAgent />

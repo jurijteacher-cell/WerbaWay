@@ -189,7 +189,8 @@ export function buildSteps(page: ParsedPage): ClassStep[] {
     const hasText = sec.blocks.some((b) => b.k === 'html' || b.k === 'video');
     if (hasText) steps.push({ key: `t:${sec.id}`, section: sec.label, label: 'Текст', kind: 'text', url: `${base}?step=${sec.id}` });
     sec.blocks.forEach((b) => {
-      if (b.k === 'embed') steps.push({ key: `e:${b.src}`, section: sec.label, label: b.title, kind: b.kind, url: b.src });
+      // зовнішні вікна (Quizlet) показуються всередині текстового кроку: у iframe класу їх не відзеркалити
+      if (b.k === 'embed' && !/^https?:/.test(b.src)) steps.push({ key: `e:${b.src}`, section: sec.label, label: b.title, kind: b.kind, url: b.src });
     });
   }
   return steps;
