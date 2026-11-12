@@ -58,7 +58,7 @@ export function ClassRoster({ students }: { students: Student[] }) {
               </span>
             </Link>
             <Link href={`/teacher/students/${s.id}`} className="shrink-0 px-4 py-3 text-sm text-gold hover:text-gold-bright">
-              Доступ
+              Профіль
             </Link>
           </li>
         );

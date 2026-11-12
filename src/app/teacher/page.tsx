@@ -49,6 +49,9 @@ export default async function TeacherPage() {
         <Link href="/teacher/class" className="ww-btn ww-btn-primary ww-btn-lg">
           Учні й клас наживо
         </Link>
+        <Link href="/teacher/students" className="ww-btn ww-btn-secondary ww-btn-lg">
+          Учні й прогрес
+        </Link>
         <Link href="/learn" className="ww-btn ww-btn-secondary ww-btn-lg">
           Лекції курсу
         </Link>

@@ -335,3 +335,17 @@ export function listTeacherPages(): PageMeta[] {
     .filter((f) => f.endsWith('.md'))
     .map((f) => parsePage(f.replace(/\.md$/, ''), readFileSync(path.join(TEACHER_DIR, f), 'utf8')).meta);
 }
+
+/** Лекції по курсах: курси з більшою кількістю лекцій — вище, «Без курсу» — завжди внизу; всередині — порядок курсу */
+export function groupByCourse<T extends PageMeta>(pages: T[]): { code: string; title: string; pages: T[] }[] {
+  const map = new Map<string, { code: string; title: string; pages: T[] }>();
+  for (const p of pages) {
+    const code = p.module ?? '';
+    const g = map.get(code) ?? { code, title: p.moduleTitle ?? (p.module || 'Без курсу'), pages: [] };
+    g.pages.push(p);
+    map.set(code, g);
+  }
+  return [...map.values()].sort(
+    (a, b) => Number(!a.code) - Number(!b.code) || b.pages.length - a.pages.length || a.title.localeCompare(b.title, 'uk')
+  );
+}

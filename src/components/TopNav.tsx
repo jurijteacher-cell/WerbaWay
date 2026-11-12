@@ -19,6 +19,7 @@ export async function TopNav() {
   const items: NavItem[] = [
     { href: '/learn', label: 'Курс' },
     { href: isTeacher ? '/teacher/class' : '/class', label: 'Клас' },
+    ...(isTeacher ? [{ href: '/teacher/students', label: 'Учні' }] : []),
     { href: '/words', label: 'Слова' },
     { href: '/dashboard', label: 'Прогрес' },
     ...(isTeacher ? [{ href: '/teacher', label: 'Кабінет викладача' }] : []),

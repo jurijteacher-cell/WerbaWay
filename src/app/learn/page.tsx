@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
-import { listPages } from '@/lib/pages/pages';
+import { groupByCourse, listPages } from '@/lib/pages/pages';
 import { canSee, getAccess } from '@/lib/pages/access';
 import { lectures } from '@/content/lectures';
 
@@ -20,15 +20,8 @@ export default async function LearnIndex() {
   const { data: assigned } = await supabase.from('assignments').select('lecture_slug').eq('student_id', user.id);
   const assignedSet = new Set((assigned ?? []).map((a) => a.lecture_slug as string));
   const extraLectures = lectures.filter((l) => access.isTeacher || assignedSet.has(l.slug));
-  // по курсах (модулях з Notion), всередині — порядок курсу
-  const groupMap = new Map<string, typeof pages>();
-  for (const p of pages) {
-    const k = p.moduleTitle ?? 'Інші лекції';
-    groupMap.set(k, [...(groupMap.get(k) ?? []), p]);
-  }
-  const groups = [...groupMap.entries()]
-    .map(([title, ps]) => ({ title, pages: ps }))
-    .sort((a, b) => a.title.localeCompare(b.title, 'uk'));
+  // по курсах: де більше лекцій — вище
+  const groups = groupByCourse(pages);
   return (
     <main className="mx-auto max-w-5xl px-4 py-14">
       <h1 className="mb-2 font-display text-4xl text-paper">Курс</h1>

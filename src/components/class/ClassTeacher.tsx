@@ -24,8 +24,8 @@ type Props = {
   studentId: string;
   studentName: string;
   lessons: Lesson[];
-  /** Лекції курсу (нові сторінки /learn) */
-  pages: Lesson[];
+  /** Лекції курсу (нові сторінки /learn), у порядку курсів */
+  pages: (Lesson & { group?: string })[];
   initialRoom: RoomState;
 };
 
@@ -285,8 +285,8 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     <div className="mx-auto max-w-6xl px-4 py-8">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <h1 className="font-display text-3xl text-paper">{studentName}</h1>
-        <a href={`/teacher/students/${studentId}`} className="text-sm text-gold hover:text-gold-bright">
-          Доступ до лекцій
+        <a href={`/teacher/students/${studentId}`} className="ww-btn ww-btn-secondary ww-btn-sm">
+          Профіль учня
         </a>
         <div className="flex items-center gap-4 text-sm text-paper-muted">
           <span className="flex items-center gap-2">
@@ -309,10 +309,16 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             className="rounded-md border border-ink-line bg-ink px-3 py-2 text-sm text-paper"
           >
             <option value="">Окрема вправа (без лекції)</option>
-            {pages.map((p) => (
-              <option key={p.id} value={p.id}>
-                Лекція: {p.title}
-              </option>
+            {[...new Set(pages.map((p) => p.group ?? 'Лекції'))].map((g) => (
+              <optgroup key={g} label={g}>
+                {pages
+                  .filter((p) => (p.group ?? 'Лекції') === g)
+                  .map((p) => (
+                    <option key={p.id} value={p.id}>
+                      {p.title}
+                    </option>
+                  ))}
+              </optgroup>
             ))}
           </select>
         </label>

@@ -5,7 +5,7 @@ import { ClassTeacher } from '@/components/class/ClassTeacher';
 import { EMPTY_ROOM, type RoomState } from '@/lib/class/protocol';
 import { listPublishedLessonIds } from '@/content/queue-loader';
 import { lessonTitle } from '@/lib/lesson-titles';
-import { listPages } from '@/lib/pages/pages';
+import { groupByCourse, listPages } from '@/lib/pages/pages';
 
 export const dynamic = 'force-dynamic';
 
@@ -25,7 +25,8 @@ export default async function TeacherClassPage({ params }: { params: { studentId
     .map((id) => ({ id, title: `${lessonTitle(id)} · ${id}` }))
     .sort((a, b) => a.id.localeCompare(b.id));
 
-  const pages = listPages().map((p) => ({ id: p.slug, title: `${p.level ?? ''} · ${p.title}` }));
+  // лекції по курсах: де більше лекцій — вище
+  const pages = groupByCourse(listPages()).flatMap((g) => g.pages.map((p) => ({ id: p.slug, title: p.title, group: g.title })));
 
   return (
     <main>
