@@ -33,18 +33,24 @@ export async function TopNav() {
         style={{ background: 'linear-gradient(90deg,#ffe168 0,#a9dcc6 25%,#bcdcf2 50%,#f6c2af 75%,#d8cff0 100%)' }}
       />
       <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-3 px-4 py-3">
-        <Link href="/learn" className="group flex shrink-0 items-center gap-3" aria-label="Werba Way — на головну">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/brand/werba-logo.jpg"
-            alt=""
-            width={44}
-            height={44}
-            className="h-11 w-11 rounded-full border border-ink-line bg-white shadow-sm transition-transform duration-300 group-hover:-rotate-6"
-          />
-          <span className="leading-tight">
-            <span className="block font-display text-lg text-paper">Werba Way</span>
-            <span className="block text-[11px] text-paper-muted">Language school</span>
+        <Link href="/learn" className="group flex shrink-0 items-center gap-3" aria-label="Werba Way Language School — на головну">
+          {/* знак з лого в кільці того ж градієнта, що й на лого */}
+          <span
+            className="grid h-12 w-12 place-items-center rounded-full p-[2px] shadow-sm transition-transform duration-300 group-hover:-rotate-6"
+            style={{ background: 'linear-gradient(135deg,#1d3a8a 0%,#6b2c91 35%,#e2363f 68%,#f6b53a 100%)' }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/brand/werba-mark.png" alt="" width={44} height={44} className="h-full w-full rounded-full bg-white" />
+          </span>
+          <span className="leading-none" aria-hidden="true">
+            <span className="block text-[17px] font-semibold tracking-[0.16em]">
+              <span style={{ color: '#13213f' }}>WERBA</span> <span style={{ color: '#b8964f' }}>WAY</span>
+            </span>
+            <span className="mt-1.5 flex items-center gap-1.5 text-[9px] font-medium tracking-[0.24em] text-paper-muted">
+              <span className="h-px w-3 bg-[#b8964f]" />
+              LANGUAGE SCHOOL
+              <span className="h-px w-3 bg-[#b8964f]" />
+            </span>
           </span>
         </Link>
         <div className="flex min-w-0 flex-1 items-center justify-end gap-3">
