@@ -50,7 +50,7 @@ export function NotebookShell({
     <div className={`nb-wrap ${onest.variable} ${literata.variable} ${nunito.variable}`}>
       <div className="nb-brandbar">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/brand/werba-logo.jpg" alt="" width={38} height={38} />
+        <img src="/brand/werba-mark.png" alt="" width={38} height={38} />
         <div>
           <b>{brandLabel}</b>
           {levelHint ? <span>{levelHint}</span> : null}
