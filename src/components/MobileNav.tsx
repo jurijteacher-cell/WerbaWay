@@ -26,8 +26,6 @@ export function MobileNav({ tabs, more }: { tabs: Tab[]; more: Tab[] }) {
 
   return (
     <>
-      {/* місце під панеллю, щоб вона не закривала низ сторінки */}
-      <div className="ww-tabbar-spacer md:hidden" aria-hidden="true" />
       <nav className="ww-tabbar md:hidden" aria-label="Головне меню">
         {tabs.map((t) => (
           <Link key={t.href} href={t.href} className="ww-tab" aria-current={t.href === active ? 'page' : undefined}>

@@ -39,7 +39,7 @@ export function SearchPalette({ teacher }: { teacher: boolean }) {
         aria-keyshortcuts="Control+K Meta+K /"
       >
         <SearchIcon />
-        <span className="hidden sm:inline">{teacher ? 'Учень, лекція, слово…' : 'Лекція, слово…'}</span>
+        <span className="hidden md:inline">{teacher ? 'Учень, лекція, слово…' : 'Лекція, слово…'}</span>
         <kbd className="hidden md:inline">{mac ? '⌘K' : 'Ctrl K'}</kbd>
       </button>
       {open && createPortal(<Palette teacher={teacher} onClose={() => setOpen(false)} />, document.body)}
