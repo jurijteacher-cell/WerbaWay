@@ -308,7 +308,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             }}
             className="rounded-md border border-ink-line bg-ink px-3 py-2 text-sm text-paper"
           >
-            <option value="">Окрема вправа (старий формат)</option>
+            <option value="">Окрема вправа (без лекції)</option>
             {pages.map((p) => (
               <option key={p.id} value={p.id}>
                 Лекція: {p.title}

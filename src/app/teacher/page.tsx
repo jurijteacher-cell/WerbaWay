@@ -45,31 +45,25 @@ export default async function TeacherPage() {
     <main className="mx-auto max-w-4xl px-4 py-16">
       <h1 className="mb-8 font-display text-3xl text-paper">Кабінет викладача</h1>
 
-      <section className="mb-12">
-        <Link
-          href="/teacher/class"
-          className="ww-btn ww-btn-primary ww-btn-lg"
-        >
-          Клас наживо →
-        </Link>{' '}
-        <Link
-          href="/teacher/results"
-          className="ww-btn ww-btn-ghost ww-btn-lg"
-        >
-          Результати учнів з Notion →
-        </Link>{' '}
-        <Link
-          href="/teacher/analytics"
-          className="ww-btn ww-btn-ghost ww-btn-lg"
-        >
-          Аналітика класу →
+      <section className="mb-12 flex flex-wrap gap-3">
+        <Link href="/teacher/class" className="ww-btn ww-btn-primary ww-btn-lg">
+          Учні й клас наживо
+        </Link>
+        <Link href="/learn" className="ww-btn ww-btn-secondary ww-btn-lg">
+          Лекції курсу
+        </Link>
+        <Link href="/teacher/results" className="ww-btn ww-btn-secondary ww-btn-lg">
+          Результати вправ
+        </Link>
+        <Link href="/teacher/analytics" className="ww-btn ww-btn-secondary ww-btn-lg">
+          Аналітика
         </Link>
       </section>
 
       {error && <p className="text-incorrect">Помилка завантаження: {error.message}</p>}
 
       <section className="mb-12">
-        <h2 className="mb-4 font-display text-xl text-paper">Лекції наживо</h2>
+        <h2 className="mb-4 font-display text-xl text-paper">Інтерактивні лекції наживо</h2>
         <div className="flex flex-wrap gap-2">
           {lectures.map((lecture) => (
             <Link
@@ -81,32 +75,6 @@ export default async function TeacherPage() {
             </Link>
           ))}
           {lectures.length === 0 && <p className="text-sm text-paper-muted">Ще немає жодної лекції.</p>}
-        </div>
-      </section>
-
-      <section className="mb-12">
-        <h2 className="mb-4 font-display text-xl text-paper">Наживо</h2>
-        <div className="flex flex-col gap-3">
-          {Array.from(new Set(lessons.filter((l) => !l.hideFromBrowse).map((l) => l.category || 'Інше'))).map(
-            (category) => (
-              <div key={category}>
-                <p className="mb-1.5 font-mono text-[11px] uppercase tracking-widest text-stone-600">{category}</p>
-                <div className="flex flex-wrap gap-2">
-                  {lessons
-                    .filter((l) => !l.hideFromBrowse && (l.category || 'Інше') === category)
-                    .map((lesson) => (
-                      <Link
-                        key={lesson.slug}
-                        href={`/teacher/live/${lesson.slug}`}
-                        className="ww-btn ww-btn-ghost"
-                      >
-                        {lesson.title} →
-                      </Link>
-                    ))}
-                </div>
-              </div>
-            )
-          )}
         </div>
       </section>
 

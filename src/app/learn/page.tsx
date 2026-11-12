@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { listPages } from '@/lib/pages/pages';
 import { canSee, getAccess } from '@/lib/pages/access';
+import { lectures } from '@/content/lectures';
 
 export const dynamic = 'force-dynamic';
 
@@ -15,6 +16,10 @@ export default async function LearnIndex() {
 
   const access = await getAccess(supabase, user.id);
   const pages = listPages().filter((p) => canSee(p, access));
+  // старі інтерактивні лекції («Кіно») — тільки призначені учневі
+  const { data: assigned } = await supabase.from('assignments').select('lecture_slug').eq('student_id', user.id);
+  const assignedSet = new Set((assigned ?? []).map((a) => a.lecture_slug as string));
+  const extraLectures = lectures.filter((l) => access.isTeacher || assignedSet.has(l.slug));
   // по курсах (модулях з Notion), всередині — порядок курсу
   const groupMap = new Map<string, typeof pages>();
   for (const p of pages) {
@@ -28,7 +33,21 @@ export default async function LearnIndex() {
     <main className="mx-auto max-w-5xl px-4 py-14">
       <h1 className="mb-2 font-display text-4xl text-paper">Уроки</h1>
       <p className="mb-10 text-paper-muted">Лекції з текстами, вправами й домашкою.</p>
-      {pages.length === 0 && <p className="text-paper-muted">Тут з’являться лекції, щойно викладач відкриє тобі курс.</p>}
+      {pages.length === 0 && extraLectures.length === 0 && (
+        <p className="text-paper-muted">Тут з’являться лекції, щойно викладач відкриє тобі курс.</p>
+      )}
+      {extraLectures.length > 0 && (
+        <section className="mb-12">
+          <h2 className="mb-4 font-display text-2xl text-paper">Інтерактивні лекції</h2>
+          <div className="flex flex-wrap gap-3">
+            {extraLectures.map((l) => (
+              <Link key={l.slug} href={`/lectures/${l.slug}`} className="ww-btn ww-btn-secondary ww-btn-lg">
+                {l.title}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
       {groups.map((g) => (
         <section key={g.title} className="mb-12">
           <h2 className="mb-4 font-display text-2xl text-paper">

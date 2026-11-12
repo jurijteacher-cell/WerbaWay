@@ -21,8 +21,6 @@ export async function TopNav() {
     { href: isTeacher ? '/teacher/class' : '/class', label: 'Клас' },
     { href: '/words', label: 'Слова' },
     { href: '/dashboard', label: 'Прогрес' },
-    { href: '/', label: 'Уроки', exact: true },
-    { href: '/lectures', label: 'Лекції' },
     ...(isTeacher ? [{ href: '/teacher', label: 'Кабінет викладача' }] : []),
   ];
 
