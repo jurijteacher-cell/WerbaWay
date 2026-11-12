@@ -8,7 +8,27 @@
  * that code's history onto the account (embed_claim_code) and forgets the code.
  */
 
+import type { SupabaseClient } from '@supabase/supabase-js';
 import { embedSupabase } from '@/lib/supabase/embed-client';
+import { createClient as createSiteClient } from '@/lib/supabase/client';
+
+/**
+ * Два режими:
+ * - site: вправа відкрита на werbaway.com (лекція, клас, домашка, або всередині них) і учень уже увійшов на сайт —
+ *   використовуємо ту саму сесію сайту (cookie). Окремий вхід не потрібен, результати пишуться в його акаунт.
+ * - embed: вправа в Notion (сторонній сайт) — власний вхід, сесія в localStorage, як і раніше.
+ */
+let active: SupabaseClient | null = null;
+const sb = () => active ?? embedSupabase();
+
+/** вправа на нашому сайті: верхнє вікно або батьківська сторінка того ж походження */
+function onSite(): boolean {
+  try {
+    return window.parent === window || window.parent.location.origin === window.location.origin;
+  } catch {
+    return false; // батько — інший сайт (Notion)
+  }
+}
 
 export type AuthState = {
   /** false until the stored session has been read */
@@ -21,6 +41,8 @@ export type AuthState = {
   busy: boolean;
   error: string | null;
   info: string | null;
+  /** site — вхід через сайт (кнопки «вийти» у вправі немає), embed — власний вхід вправи */
+  mode: 'site' | 'embed';
 };
 
 const LEGACY_CODE = 'ww_student_code';
@@ -35,6 +57,7 @@ let state: AuthState = {
   busy: false,
   error: null,
   info: null,
+  mode: 'embed',
 };
 const serverState = state;
 const listeners = new Set<() => void>();
@@ -74,11 +97,11 @@ function human(msg: string | undefined) {
 }
 
 async function loadProfile(userId: string, email: string | null) {
-  const sb = embedSupabase();
+  const client = sb();
   // creates the student row on first use and tells the display name
-  const me = await sb.rpc('embed_me');
+  const me = await client.rpc('embed_me');
   const row = Array.isArray(me.data) ? me.data[0] : null;
-  const prof = await sb.from('profiles').select('role, full_name').eq('id', userId).maybeSingle();
+  const prof = await client.from('profiles').select('role, full_name').eq('id', userId).maybeSingle();
   ls('set', UID_KEY, userId);
   emit({
     userId,
@@ -96,7 +119,7 @@ async function claimLegacyCode() {
     ls('del', LEGACY_NAME);
     return;
   }
-  const { data, error } = await embedSupabase().rpc('embed_claim_code', { p_code: code });
+  const { data, error } = await sb().rpc('embed_claim_code', { p_code: code });
   if (error) return; // try again next time
   ls('del', LEGACY_CODE);
   ls('del', LEGACY_NAME);
@@ -107,8 +130,37 @@ async function claimLegacyCode() {
 function start() {
   if (started || typeof window === 'undefined') return;
   started = true;
-  const sb = embedSupabase();
-  void sb.auth.getSession().then(async ({ data }) => {
+  void (async () => {
+    if (onSite()) {
+      try {
+        const site = createSiteClient();
+        const { data } = await site.auth.getSession();
+        const u = data.session?.user;
+        if (u) {
+          active = site;
+          emit({ mode: 'site' });
+          await loadProfile(u.id, u.email ?? null);
+          void claimLegacyCode();
+          emit({ ready: true });
+          site.auth.onAuthStateChange((event) => {
+            if (event === 'SIGNED_OUT') {
+              ls('del', UID_KEY);
+              emit({ userId: null, email: null, name: null, role: null });
+            }
+          });
+          return;
+        }
+      } catch {
+        /* немає сесії сайту — звичайний вхід вправи */
+      }
+    }
+    startEmbed();
+  })();
+}
+
+function startEmbed() {
+  const embed = embedSupabase();
+  void embed.auth.getSession().then(async ({ data }) => {
     const u = data.session?.user;
     if (u) {
       await loadProfile(u.id, u.email ?? null);
@@ -116,7 +168,7 @@ function start() {
     }
     emit({ ready: true });
   });
-  sb.auth.onAuthStateChange((event, session) => {
+  embed.auth.onAuthStateChange((event, session) => {
     if (event === 'SIGNED_OUT') {
       ls('del', UID_KEY);
       emit({ userId: null, email: null, name: null, role: null });
@@ -147,13 +199,13 @@ export function getServerState() {
 
 /** Fresh access token for API calls (refreshes when expired), or null. */
 export async function getAccessToken(): Promise<string | null> {
-  const { data } = await embedSupabase().auth.getSession();
+  const { data } = await sb().auth.getSession();
   return data.session?.access_token ?? null;
 }
 
 export async function signIn(email: string, password: string): Promise<boolean> {
   emit({ busy: true, error: null, info: null });
-  const { error } = await embedSupabase().auth.signInWithPassword({ email: email.trim(), password });
+  const { error } = await sb().auth.signInWithPassword({ email: email.trim(), password });
   emit({ busy: false, error: error ? human(error.message) : null });
   return !error;
 }
@@ -184,7 +236,7 @@ export async function signUp(input: { email: string; password: string; firstName
 
 export async function requestPasswordReset(email: string): Promise<boolean> {
   emit({ busy: true, error: null, info: null });
-  const { error } = await embedSupabase().auth.resetPasswordForEmail(email.trim(), {
+  const { error } = await sb().auth.resetPasswordForEmail(email.trim(), {
     redirectTo: `${window.location.origin}/auth/confirm?next=/reset-password`,
   });
   emit({ busy: false, error: error ? human(error.message) : null });
@@ -192,6 +244,8 @@ export async function requestPasswordReset(email: string): Promise<boolean> {
 }
 
 export async function signOut() {
+  // у режимі сайту виходять через меню сайту, а не з вправи
+  if (state.mode === 'site') return;
   await embedSupabase().auth.signOut();
 }
 

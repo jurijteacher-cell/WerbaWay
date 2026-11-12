@@ -66,9 +66,11 @@ export function AccountBar() {
       </span>
       {a.info ? <span className="nb-codebar-hint">{a.info}</span> : null}
       {t.error ? <span className="nb-codebar-err">{t.error}</span> : null}
-      <button type="button" className="nb-codebar-link" onClick={() => void signOut()}>
-        {a.role === 'teacher' ? 'wyjdź' : 'wyloguj'}
-      </button>
+      {a.mode === 'embed' && (
+        <button type="button" className="nb-codebar-link" onClick={() => void signOut()}>
+          {a.role === 'teacher' ? 'wyjdź' : 'wyloguj'}
+        </button>
+      )}
     </div>
   );
 }
