@@ -36,7 +36,8 @@ export function ShareButton({ slug, title, compact }: { slug: string; title: str
 
 function ShareDialog({ slug, title, onClose }: { slug: string; title: string; onClose: () => void }) {
   const [tab, setTab] = useState<Tab>('student');
-  const [data, setData] = useState<{ link: string | null; students: Student[] } | null>(null);
+  const [data, setData] = useState<{ link: { url: string; opens: number } | null; students: Student[] } | null>(null);
+  const [linkBusy, setLinkBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
   const [q, setQ] = useState('');
   const [busy, setBusy] = useState<string | null>(null);
@@ -66,7 +67,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
     };
   }, [onClose]);
 
-  const url = data?.link && typeof window !== 'undefined' ? `${window.location.origin}${data.link}` : '';
+  const url = data?.link && typeof window !== 'undefined' ? `${window.location.origin}${data.link.url}` : '';
   const list = useMemo(() => {
     const n = q.trim().toLowerCase();
     return (data?.students ?? []).filter((s) => !n || s.name.toLowerCase().includes(n));
@@ -84,6 +85,20 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
     setBusy(null);
     if (!r?.ok) return setErr('Не вдалося зберегти. Спробуйте ще раз.');
     setData((d) => d && { ...d, students: d.students.map((x) => (x.id === s.id ? { ...x, lesson: on } : x)) });
+  }
+
+  async function linkAction(action: 'create' | 'revoke') {
+    setLinkBusy(true);
+    setErr(null);
+    const r = await fetch('/api/learn/share', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ slug, link: action }),
+    }).catch(() => null);
+    setLinkBusy(false);
+    if (!r?.ok) return setErr('Не вдалося змінити посилання. Спробуйте ще раз.');
+    const d = (await r.json()) as { link: { url: string; opens: number } | null };
+    setData((x) => x && { ...x, link: d.link });
   }
 
   async function copy() {
@@ -187,29 +202,34 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
               Будь-хто з цим посиланням відкриє лекцію й домашку без входу та реєстрації. Відповіді у вправах збережуться, лише
               якщо учень увійде в акаунт.
             </p>
-            {data && !data.link ? (
-              <p className="rounded-xl bg-ink-soft px-3 py-2 text-sm text-incorrect">Посилання вимкнені: на сервері не задано секрет SHARE_SECRET.</p>
+            {!data ? (
+              <p className="py-4 text-center text-sm text-paper-muted">Завантажую…</p>
+            ) : !data.link ? (
+              <button type="button" disabled={linkBusy} onClick={() => void linkAction('create')} className="ww-btn ww-btn-primary">
+                {linkBusy ? 'Створюю…' : 'Створити посилання'}
+              </button>
             ) : (
               <>
                 <div className="flex gap-2">
                   <input
                     id="ww-share-url"
                     readOnly
-                    value={url || 'Готую посилання…'}
+                    value={url}
                     onFocus={(e) => e.currentTarget.select()}
                     className="min-w-0 flex-1 rounded-xl border border-ink-line bg-ink-soft px-3 py-2 text-sm text-paper"
                   />
-                  <button type="button" disabled={!url} onClick={() => void copy()} className="ww-btn ww-btn-primary ww-btn-sm">
+                  <button type="button" onClick={() => void copy()} className="ww-btn ww-btn-primary ww-btn-sm">
                     {copied ? 'Скопійовано ✓' : 'Копіювати'}
                   </button>
                 </div>
+                <p className="mt-2 text-xs text-paper-muted">
+                  {data.link.opens ? `Відкрили ${data.link.opens} раз(и)` : 'Ще ніхто не відкривав'}
+                </p>
                 <div className="mt-3 flex flex-wrap gap-2">
-                  {url && (
-                    <a href={url} target="_blank" rel="noreferrer" className="ww-btn ww-btn-ghost ww-btn-sm">
-                      Відкрити як учень
-                    </a>
-                  )}
-                  {url && typeof navigator !== 'undefined' && 'share' in navigator && (
+                  <a href={url} target="_blank" rel="noreferrer" className="ww-btn ww-btn-ghost ww-btn-sm">
+                    Відкрити як гість
+                  </a>
+                  {typeof navigator !== 'undefined' && 'share' in navigator && (
                     <button
                       type="button"
                       className="ww-btn ww-btn-ghost ww-btn-sm"
@@ -218,6 +238,15 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
                       Надіслати…
                     </button>
                   )}
+                  <button
+                    type="button"
+                    disabled={linkBusy}
+                    onClick={() => void linkAction('revoke')}
+                    className="ww-btn ww-btn-danger ww-btn-sm ml-auto"
+                    title="Старе посилання перестане відкриватися"
+                  >
+                    Вимкнути посилання
+                  </button>
                 </div>
               </>
             )}

@@ -85,7 +85,8 @@ export async function GET(req: Request) {
       if (s.user_id) continue; // акаунт без імені в профілі — пропускаємо
       people.push({ title: s.name as string, sub: 'лише Notion', href: `/teacher/students/${s.id}`, icon: '👤' });
     }
-    if (people.length) groups.push({ label: 'Учні', items: people.slice(0, 6) });
+    // учні — найчастіший пошук викладача, тож першими
+    if (people.length) groups.unshift({ label: 'Учні', items: people.slice(0, 6) });
 
     const notes = teacherNotes()
       .filter((t) => all(t.n))
