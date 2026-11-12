@@ -1,0 +1,87 @@
+{
+  "lesson_id": "pl-a2-65-zdrowy-styl-zycia",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: pierwszy trening i rada dla kolegi",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę. Potem zamieńcie się rolami.",
+  "estimated_minutes": 14,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "play",
+      "front_title": "Pierwszy trening",
+      "back_scenario": "Najpierw posłuchaj rozmowy i odpowiedz na pytania (ćwiczenie „Słuchanie” pod kartami). Potem Twoja kolej: przychodzisz pierwszy raz na siłownię albo na basen. Nauczyciel to trener. Zapytaj, od czego zacząć, i zapisz się na dwa dni w tygodniu.",
+      "back_checklist": [
+        "Przywitaj się i powiedz, po co przyszedłeś / przyszłaś: Mam dziś pierwszy trening.",
+        "Powiedz, jak było wcześniej: Ćwiczyłem / ćwiczyłam…, ale potem przestałem / przestałam.",
+        "Zapytaj: Od czego zaczynamy? Jak często mam przychodzić?",
+        "Poproś o powtórzenie, jeśli trener mówi szybko: Proszę powtórzyć wolniej.",
+        "Umów się na konkretne dni i podziękuj: To wtorek i sobota, dobrze? Dziękuję!"
+      ],
+      "model_dialogue": [
+        {
+          "speaker": "Olena",
+          "voice": "W1",
+          "line": "Dzień dobry, jestem Olena. Umówiłam się dziś na pierwszy trening."
+        },
+        {
+          "speaker": "Trener Marek",
+          "voice": "M1",
+          "line": "Dzień dobry. Proszę zostawić kurtkę w szatni po lewej stronie i wrócić tutaj."
+        },
+        {
+          "speaker": "Olena",
+          "voice": "W1",
+          "line": "Już jestem. Od czego zaczynamy?"
+        },
+        {
+          "speaker": "Trener Marek",
+          "voice": "M1",
+          "line": "Na sali jesteśmy na ty, dobrze? Zacznijmy od rozgrzewki — dziesięć minut na rowerze. I nigdy nie zaczynaj od ciężarów."
+        },
+        {
+          "speaker": "Olena",
+          "voice": "W1",
+          "line": "Dziesięć minut? Koleżanka mówiła, że pięć wystarczy."
+        },
+        {
+          "speaker": "Trener Marek",
+          "voice": "M1",
+          "line": "Na zimne mięśnie pięć to za mało. I oddychaj spokojnie, nie trzymaj oddechu."
+        },
+        {
+          "speaker": "Olena",
+          "voice": "W1",
+          "line": "Dobrze. A jak często mam tu przychodzić?"
+        },
+        {
+          "speaker": "Trener Marek",
+          "voice": "M1",
+          "line": "Na początku dwa razy w tygodniu, nie trzy. I nie przychodź dwa dni pod rząd, mięśnie muszą odpocząć."
+        },
+        {
+          "speaker": "Olena",
+          "voice": "W1",
+          "line": "To może wtorek i sobota?"
+        },
+        {
+          "speaker": "Trener Marek",
+          "voice": "M1",
+          "line": "We wtorek mam grupę… nie, przepraszam, grupa jest w poniedziałek. Wtorek jest wolny. Zapiszę cię na wtorek i sobotę, a w domu pij więcej wody."
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Kolega bez energii",
+      "back_scenario": "Twój kolega z pracy (nauczyciel) ciągle mówi, że jest zmęczony: śpi pięć godzin, pije sześć kaw dziennie i cały dzień siedzi przy biurku. Daj mu cztery rady, powiedz, czego nie robić, i zaproponuj coś razem.",
+      "back_checklist": [
+        "Zapytaj, co się dzieje: Co u ciebie? Od kiedy tak jest?",
+        "Daj trzy rady w formie na ty: Kładź się…, Pij…, Rób przerwę…",
+        "Powiedz, czego nie robić: Nie pij kawy po…, Nie siedź…",
+        "Zaproponuj coś razem (forma na my): Chodźmy…, Zróbmy…, Zacznijmy od…",
+        "Zakończ ciepło: Nie zmieniaj wszystkiego naraz. Trzymam kciuki!"
+      ]
+    }
+  ]
+}

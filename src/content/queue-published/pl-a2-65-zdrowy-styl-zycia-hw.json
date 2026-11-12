@@ -1,0 +1,186 @@
+{
+  "lesson_id": "pl-a2-65-zdrowy-styl-zycia",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: rady w domu, w szkole i w podróży",
+  "instruction": "Trzy bloki ćwiczeń. Potem napisz wiadomość — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz formę rozkazującą",
+      "instruction": "Wstaw formę rozkazującą czasownika z nawiasu. Uwaga na osobę.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Marku, ___ (zamknąć) okno, dzieci śpią.",
+          "answer": "zamknij",
+          "grammar_point": "rozkaznik-pelny"
+        },
+        {
+          "id": "h1-2",
+          "text": "Dzieci, ___ (umyć) ręce przed obiadem!",
+          "answer": "umyjcie",
+          "grammar_point": "rozkaznik-pelny",
+          "explanation": "Mówimy do kilku osób: końcówka -cie."
+        },
+        {
+          "id": "h1-3",
+          "text": "Jest ładna pogoda. ___ (chodzić) dziś pieszo, a nie autobusem.",
+          "answer": "Chodźmy",
+          "accept": [
+            "Idźmy",
+            "Pójdźmy"
+          ],
+          "grammar_point": "rozkaznik-pelny",
+          "explanation": "Propozycja dla nas: forma na my. Idźmy i pójdźmy też są poprawne."
+        },
+        {
+          "id": "h1-4",
+          "text": "___ (być) cierpliwy, nauka języka trwa.",
+          "answer": "Bądź",
+          "grammar_point": "rozkaznik-pelny",
+          "explanation": "być → bądź."
+        },
+        {
+          "id": "h1-5",
+          "text": "Niech pan ___ (podpisać) formularz na dole strony.",
+          "answer": "podpisze",
+          "grammar_point": "rozkaznik-pelny",
+          "explanation": "Po niech zwykła forma on / ona: podpisze."
+        },
+        {
+          "id": "h1-6",
+          "text": "Przed podróżą ___ (sprawdzić) godzinę odjazdu, rozkład się zmienił.",
+          "answer": "sprawdź",
+          "grammar_point": "rozkaznik-pelny"
+        },
+        {
+          "id": "h1-7",
+          "text": "___ (dać) mi znać, kiedy dojedziesz na miejsce.",
+          "answer": "Daj",
+          "grammar_point": "rozkaznik-pelny",
+          "explanation": "dać → daj."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd — typowy dla osób mówiących po ukraińsku. Napisz zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Dawaj zrobimy to razem w sobotę.",
+          "answer": "Zróbmy to razem w sobotę.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Polska propozycja to forma na my z końcówką -my, bez „dawaj”.",
+          "accept": [
+            "Zróbmy to w sobotę razem."
+          ]
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Proszę poczekajcie chwilę w korytarzu.",
+          "answer": "Proszę poczekać chwilę w korytarzu.",
+          "accept": [
+            "Poczekajcie chwilę w korytarzu."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Po proszę stoi bezokolicznik. Bez proszę forma na wy jest poprawna."
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Niech pan poczekaj jeszcze pięć minut.",
+          "answer": "Niech pan poczeka jeszcze pięć minut.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Po niech zawsze forma on / ona: poczeka."
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Kładź spać wcześniej, jutro masz egzamin.",
+          "answer": "Kładź się spać wcześniej, jutro masz egzamin.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Polskie kłaść się ma zawsze się.",
+          "accept": [
+            "Kładź się wcześniej spać, jutro masz egzamin."
+          ]
+        },
+        {
+          "id": "h2-5",
+          "prompt": "Weźmij ze sobą parasol, zapowiadali deszcz.",
+          "answer": "Weź ze sobą parasol, zapowiadali deszcz.",
+          "grammar_point": "kalki-uk",
+          "explanation": "wziąć → weź, forma krótka i nieregularna.",
+          "accept": [
+            "Weź parasol ze sobą, zapowiadali deszcz."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Co powiesz w tej sytuacji?",
+      "instruction": "Wybierz formę, która pasuje do sytuacji.",
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Kolega boi się pierwszego treningu. Mówisz: Nie ___, wszyscy kiedyś zaczynali.",
+          "options": [
+            "bój się",
+            "bój"
+          ],
+          "answer": "bój się",
+          "grammar_point": "rozkaznik-pelny",
+          "explanation": "bać się zawsze z się: nie bój się."
+        },
+        {
+          "id": "h3-2",
+          "text": "Siostra uczy się do egzaminu trzy godziny bez przerwy. Mówisz: ___ dziesięć minut przerwy.",
+          "options": [
+            "Zrób",
+            "Rób"
+          ],
+          "answer": "Zrób",
+          "grammar_point": "rozkaznik-pelny",
+          "explanation": "Jedna konkretna przerwa teraz: forma dokonana."
+        },
+        {
+          "id": "h3-3",
+          "text": "Kolega codziennie zasypia o drugiej w nocy. Mówisz: Nie ___ telefonu do łóżka.",
+          "options": [
+            "bierz",
+            "weź"
+          ],
+          "answer": "bierz",
+          "grammar_point": "rozkaznik-pelny",
+          "explanation": "Po nie forma niedokonana: nie bierz."
+        },
+        {
+          "id": "h3-4",
+          "text": "Jesteście w parku i oboje macie wolne popołudnie. Mówisz: ___ jeszcze jedno kółko wokół stawu.",
+          "options": [
+            "Zróbmy",
+            "Zrób"
+          ],
+          "answer": "Zróbmy",
+          "grammar_point": "rozkaznik-pelny",
+          "explanation": "Oboje: forma na my."
+        },
+        {
+          "id": "h3-5",
+          "text": "Pacjentkę bolą plecy od siedzenia. Lekarka mówi: Proszę ___ co godzinę na kilka kroków.",
+          "options": [
+            "wstawać",
+            "wstawaj"
+          ],
+          "answer": "wstawać",
+          "grammar_point": "rozkaznik-pelny",
+          "explanation": "Po proszę bezokolicznik: proszę wstawać."
+        }
+      ]
+    }
+  ]
+}

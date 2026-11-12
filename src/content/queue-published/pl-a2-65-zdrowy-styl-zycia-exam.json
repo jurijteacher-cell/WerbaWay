@@ -1,0 +1,114 @@
+{
+  "lesson_id": "pl-a2-65-zdrowy-styl-zycia",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 8,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o tekście „Trzy tygodnie bez wymówek”. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Olena chodzi na siłownię dwa razy w tygodniu.",
+          "answer": true,
+          "grammar_point": "czytanie",
+          "explanation": "W tekście: od września chodzi na siłownię dwa razy w tygodniu."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Kartkę z radami napisała Olenie lekarka.",
+          "answer": false,
+          "grammar_point": "czytanie",
+          "explanation": "Kartka jest od trenerki i wisi na lodówce."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Na kartce jest rada, żeby zmienić wszystko w jednym tygodniu.",
+          "answer": false,
+          "grammar_point": "czytanie",
+          "explanation": "Na kartce jest odwrotnie: nie rób wszystkiego naraz, wybierz jedną rzecz na tydzień."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Tomek i Olena umawiają się na basen w czwartek po pracy.",
+          "answer": true,
+          "grammar_point": "czytanie",
+          "explanation": "Olena mówi: w czwartek po pracy idziemy na basen."
+        },
+        {
+          "id": "e1-5",
+          "statement": "W pierwszym tygodniu Tomek rezygnuje z całej kawy.",
+          "answer": false,
+          "grammar_point": "czytanie",
+          "explanation": "Zamienia tylko trzecią kawę na wodę."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "pl-a2-65-zdrowy-styl-zycia-comm-tasks.json#c1.model_dialogue",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-65-zdrowy-styl-zycia-e2-dialog.mp3",
+      "title": "Słuchanie: pierwszy trening",
+      "instruction": "Usłyszysz rozmowę Oleny i trenera dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Od czego Olena ma zacząć trening?",
+          "options": [
+            "od pięciu minut rozgrzewki",
+            "od dziesięciu minut na rowerze",
+            "od ćwiczeń z ciężarami"
+          ],
+          "answer": "od dziesięciu minut na rowerze",
+          "grammar_point": "listening:szczegol",
+          "explanation": "Trener mówi: zacznijmy od rozgrzewki, dziesięć minut na rowerze. Pięć minut to słowa koleżanki, nie trenera."
+        },
+        {
+          "id": "e2-2",
+          "question": "Ile razy w tygodniu Olena ma przychodzić na początku?",
+          "options": [
+            "dwa razy",
+            "trzy razy",
+            "codziennie"
+          ],
+          "answer": "dwa razy",
+          "grammar_point": "listening:liczby",
+          "explanation": "Dwa razy w tygodniu, nie trzy — trener mówi to wprost."
+        },
+        {
+          "id": "e2-3",
+          "question": "W które dni Olena będzie ćwiczyć?",
+          "options": [
+            "w poniedziałek i sobotę",
+            "we wtorek i sobotę",
+            "w poniedziałek i wtorek"
+          ],
+          "answer": "we wtorek i sobotę",
+          "grammar_point": "listening:szczegol",
+          "explanation": "Trener najpierw się myli, a potem poprawia: grupa jest w poniedziałek, wtorek jest wolny."
+        },
+        {
+          "id": "e2-4",
+          "question": "Czego trener nie radzi?",
+          "options": [
+            "pić więcej wody",
+            "robić rozgrzewki",
+            "zaczynać od ciężarów"
+          ],
+          "answer": "zaczynać od ciężarów",
+          "grammar_point": "listening:intencja",
+          "explanation": "Trener mówi: nigdy nie zaczynaj od ciężarów. Wodę i rozgrzewkę radzi."
+        }
+      ]
+    }
+  ]
+}
