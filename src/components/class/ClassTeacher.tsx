@@ -21,6 +21,13 @@ import { StepNav, useSteps } from './StepNav';
 import './class.css';
 import '@/components/lesson/lesson.css';
 
+let CANVAS: CanvasRenderingContext2D | null | undefined;
+/** одна канва на сторінку — лише щоб виміряти ширину набраного тексту */
+function measureCtx() {
+  if (CANVAS === undefined) CANVAS = document.createElement('canvas').getContext('2d');
+  return CANVAS;
+}
+
 /** Межі масштабу дзеркала: 1 = екран учня один в один */
 const ZOOM_MIN = 0.3;
 const ZOOM_MAX = 3;
@@ -40,7 +47,7 @@ type Rep = {
   addEvent: (e: unknown) => void;
   startLive: (t?: number) => void;
   destroy?: () => void;
-  getMirror: () => { getId: (n: unknown) => number };
+  getMirror: () => { getId: (n: unknown) => number; getNode: (id: number) => unknown };
   wrapper: HTMLElement;
   iframe: HTMLIFrameElement;
   on: (ev: string, cb: (p: { width: number; height: number }) => void) => void;
@@ -67,6 +74,9 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
   const [big, setBig] = useState(false);
   /** куди пішов останній клік пульта — видно лише викладачеві */
   const [hit, setHit] = useState<string | null>(null);
+  /** поле учня, у якому зараз стоїть курсор: малюємо рамку й миготливу риску */
+  const [caret, setCaret] = useState<{ x: number; y: number; h: number; box: DOMRect } | null>(null);
+  const focusId = useRef<number | null>(null);
 
   const stageRef = useRef<HTMLDivElement>(null);
   const mountRef = useRef<HTMLDivElement>(null);
@@ -184,6 +194,8 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     presence: () => ({ role: 'teacher', at: Date.now() }),
     onMessage: (m) => {
       if (m.k === 'hit') {
+        focusId.current = m.ok && (m.tag === 'INPUT' || m.tag === 'TEXTAREA') ? (m.id ?? null) : null;
+        if (!focusId.current) setCaret(null);
         setHit(
           m.ok
             ? `клік → ${m.tag ?? '?'}${m.deep ? ' у вправі' : ''}`
@@ -251,6 +263,50 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
   useEffect(() => {
     fit();
   }, [zoom, fit]);
+
+  // пульт увімкнено — учень лише дивиться; вимкнено — керування повертається йому
+  useEffect(() => {
+    send({ k: 'lock', on: pult });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pult, link, hasFrame, student?.mode]);
+
+  // де в учня стоїть курсор: рахуємо за самим полем у дзеркалі, бо каретку кадр не показує
+  useEffect(() => {
+    if (!pult || !hasFrame) {
+      setCaret(null);
+      return;
+    }
+    const tick = () => {
+      const id = focusId.current;
+      const rep = repRef.current;
+      const vp = viewport.current;
+      if (!id || !rep || !vp) return setCaret(null);
+      const node = rep.getMirror().getNode(id) as HTMLInputElement | null;
+      if (!node || !node.getBoundingClientRect) return setCaret(null);
+      const box = node.getBoundingClientRect();
+      if (!box.width) return setCaret(null);
+      const win = node.ownerDocument?.defaultView;
+      const cs = win?.getComputedStyle(node);
+      const size = parseFloat(cs?.fontSize ?? '16') || 16;
+      const padL = parseFloat(cs?.paddingLeft ?? '0') || 0;
+      const padR = parseFloat(cs?.paddingRight ?? '0') || 0;
+      let w = 0;
+      const ctx = measureCtx();
+      if (ctx && cs) {
+        ctx.font = `${cs.fontStyle} ${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
+        w = ctx.measureText(node.value ?? '').width;
+      }
+      const inner = Math.max(0, box.width - padL - padR);
+      const align = cs?.textAlign ?? 'start';
+      let x = box.left + padL + w;
+      if (align === 'center') x = box.left + padL + inner / 2 + w / 2;
+      else if (align === 'right' || align === 'end') x = box.right - padR;
+      setCaret({ x: Math.min(x + 1, box.right - 2), y: box.top + box.height / 2, h: size * 1.25, box });
+    };
+    tick();
+    const t = setInterval(tick, 140);
+    return () => clearInterval(t);
+  }, [pult, hasFrame, zoom]);
 
   // великий екран: дзеркало переїжджає в інший контейнер, тому просимо намалювати заново
   useEffect(() => {
@@ -655,6 +711,26 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     >
         <div ref={turnRef} className={`relative mx-auto ${hasFrame ? '' : 'hidden'}`} style={{ width: 'fit-content' }}>
           <div ref={mountRef} className="cls-mirror relative overflow-hidden" />
+          {pult && hasFrame && caret && (() => {
+            const k = lastK.current || 1;
+            return (
+              <>
+                <span
+                  className="cls-field"
+                  style={{
+                    left: caret.box.left * k,
+                    top: caret.box.top * k,
+                    width: caret.box.width * k,
+                    height: caret.box.height * k,
+                  }}
+                />
+                <span
+                  className="cls-caret"
+                  style={{ left: caret.x * k, top: (caret.y - caret.h / 2) * k, height: caret.h * k }}
+                />
+              </>
+            );
+          })()}
           {pult && hasFrame && (
             <div
               ref={pultRef}

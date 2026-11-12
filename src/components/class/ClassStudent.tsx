@@ -11,6 +11,8 @@ type Props = { userId: string; name: string; initialRoom: RoomState };
 /** Student side of the class: waiting room → the lesson the teacher opened, mirrored live to the teacher. */
 export function ClassStudent({ userId, name, initialRoom }: Props) {
   const [room, setRoom] = useState<RoomState>(initialRoom);
+  /** викладач увімкнув пульт — учень лише дивиться */
+  const [locked, setLocked] = useState(false);
   const roomRef = useRef(room);
   roomRef.current = room;
   const frameRef = useRef<HTMLIFrameElement | null>(null);
@@ -29,6 +31,10 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
     presence: () => ({ role: 'student', name, mode: roomRef.current.active ? 'class' : 'lobby', at: Date.now() }),
     onMessage: (m) => {
       if (m.k === 'room') setRoom(m.room);
+      else if (m.k === 'lock') {
+        setLocked(m.on);
+        toFrame({ k: 'lock', on: m.on });
+      }
       else if (m.k === 'need-snap') toFrame({ k: 'need-snap' });
       else if (m.k === 'click') toFrame({ k: 'click', id: m.id, tag: m.tag, text: m.text, path: m.path });
       else if (m.k === 'scroll') toFrame({ k: 'scroll', dy: m.dy });
@@ -79,7 +85,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
         buf.current.push(m.e);
         if (!timer.current) timer.current = setTimeout(flush, 40);
       } else if (m.k === 'hit') {
-        sendRef.current({ k: 'hit', ok: !!m.ok, tag: m.tag, deep: !!m.deep });
+        sendRef.current({ k: 'hit', ok: !!m.ok, tag: m.tag, deep: !!m.deep, id: m.id });
       } else if (m.k === 'go' && typeof m.url === 'string') {
         // учень сам обрав сторінку — просимо викладача відкрити її обом
         sendRef.current({ k: 'go', url: m.url });
@@ -199,7 +205,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
   return (
     <div ref={rootRef} className="cls-root">
       {url ? (
-        <div className="cls-book">
+        <div className={`cls-book${locked ? ' is-locked' : ''}`}>
           {sheets.map((sh) => (
             <div key={sh.id} className={`cls-sheet is-${sh.role}`}>
               <iframe
@@ -233,7 +239,12 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
           </div>
         </div>
       )}
-      {url && steps && sIdx >= 0 && (
+      {locked && url && (
+        <p className="cls-lock" role="status">
+          Веде викладач
+        </p>
+      )}
+      {url && steps && sIdx >= 0 && !locked && (
         <nav className="cls-pager" aria-label="Сторінки заняття">
           <button type="button" onClick={() => goStep(-1)} disabled={sIdx <= 0} aria-label="Попередня сторінка">
             ‹

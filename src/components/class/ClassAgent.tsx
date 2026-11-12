@@ -82,6 +82,36 @@ export function ClassAgent() {
     let stop: (() => void) | null | undefined;
     // вікно, у якому викладач востаннє клікнув: туди йдуть прокрутка й набір
     let lastWin: Window | null = null;
+    // пульт у викладача: учень лише дивиться. Події самого учня мають isTrusted === true,
+    // а те, що надсилає викладач, диспатчиться програмно — тож проходить далі.
+    let locked = false;
+    const block = (e: Event) => {
+      if (!locked || !e.isTrusted) return;
+      e.preventDefault();
+      e.stopPropagation();
+    };
+    const EVENTS = ['keydown', 'keypress', 'beforeinput', 'pointerdown', 'mousedown', 'click', 'wheel', 'touchstart'];
+    /** вправа живе у вкладеному кадрі — блокувати треба і там */
+    const guard = () => {
+      const docs: Document[] = [document];
+      for (const f of Array.from(document.querySelectorAll('iframe'))) {
+        try {
+          const d = (f as HTMLIFrameElement).contentDocument;
+          if (d) docs.push(d);
+        } catch {
+          /* чужий домен */
+        }
+      }
+      for (const d of docs) {
+        const tagged = d as Document & { __wwLock?: boolean };
+        if (!tagged.__wwLock) {
+          tagged.__wwLock = true;
+          for (const ev of EVENTS) d.addEventListener(ev, block, { capture: true, passive: false });
+        }
+        d.documentElement?.classList.toggle('ww-locked', locked);
+      }
+    };
+    const guardTimer = setInterval(guard, 500);
     let rec: typeof import('rrweb').record | null = null;
     let cancelled = false;
     const origin = window.location.origin;
@@ -106,7 +136,15 @@ export function ClassAgent() {
       if (ev.origin !== origin || ev.source !== window.parent) return;
       const m = ev.data;
       if (!m || m.ww !== FRAME_TAG || !rec) return;
-      if (m.k === 'key' && typeof m.key === 'string') {
+      if (m.k === 'lock' && typeof m.on === 'boolean') {
+        locked = m.on;
+        guard();
+        if (locked) {
+          // прибираємо курсор з поля, щоб учень не дописував з клавіатури
+          const a = document.activeElement as HTMLElement | null;
+          if (a && a !== document.body) a.blur?.();
+        }
+      } else if (m.k === 'key' && typeof m.key === 'string') {
         typeKey(m.key);
       } else if (m.k === 'scroll' && typeof m.dy === 'number') {
         // гортаємо той кадр, у якому викладач працює (вправа у вкладеному iframe має власну прокрутку)
@@ -132,7 +170,8 @@ export function ClassAgent() {
         let el: Element | null =
           byId && byId.nodeType === 1 ? (byId as Element) : ((byId as ChildNode | null)?.parentElement ?? null);
         if (!fits(el) && Array.isArray(m.path)) el = elementAtPath(document, m.path);
-        post({ k: 'hit', ok: !!(el && fits(el)), tag: el?.tagName, deep: !!el && el.ownerDocument !== document });
+        const good = !!(el && fits(el));
+        post({ k: 'hit', ok: good, tag: el?.tagName, deep: !!el && el.ownerDocument !== document, id: good ? m.id : undefined });
         if (el && fits(el)) {
           lastWin = el.ownerDocument?.defaultView ?? null;
           // поле вводу спершу отримує фокус, щоб викладач міг у нього писати (клік фокус не ставить),
@@ -153,6 +192,9 @@ export function ClassAgent() {
 
     return () => {
       cancelled = true;
+      clearInterval(guardTimer);
+      locked = false;
+      guard();
       window.removeEventListener('message', onMessage);
       stop?.();
     };

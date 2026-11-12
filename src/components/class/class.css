@@ -83,3 +83,25 @@
 @media (prefers-reduced-motion: reduce) {
   .cls-sheet.is-leaving, .cls-sheet.is-entering, .cls-sheet::after, .cls-mirror-turn { animation: none !important; }
 }
+
+/* кадр викладача: де в учня стоїть курсор */
+.cls-field {
+  position: absolute; z-index: 4; pointer-events: none; border-radius: 8px;
+  box-shadow: 0 0 0 2px #7a4fe0, 0 0 0 6px rgba(122, 79, 224, .18);
+}
+.cls-caret {
+  position: absolute; z-index: 5; width: 2px; pointer-events: none; background: #7a4fe0;
+  animation: cls-blink 1.06s steps(1, end) infinite;
+}
+@keyframes cls-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+
+/* учень: поки веде викладач */
+.cls-book.is-locked iframe { pointer-events: none; }
+.cls-lock {
+  position: fixed; left: 50%; bottom: .9rem; transform: translateX(-50%); z-index: 16; margin: 0;
+  display: flex; align-items: center; gap: .45rem;
+  background: #e4d9ff; color: #5433bd; border: 1px solid #c3aef5; border-radius: 999px;
+  padding: .3rem .9rem; font: 600 .85rem/1.3 var(--font-onest), system-ui, sans-serif;
+}
+.cls-lock::before { content: '●'; color: #7a4fe0; font-size: .7em; }
+@media (prefers-reduced-motion: reduce) { .cls-caret { animation: none; } }

@@ -70,7 +70,9 @@ export type ClassMsg =
   /** учень сам перейшов на іншу сторінку лекції — викладач відкриває її обом */
   | { k: 'go'; url: string }
   /** підтвердження кліка: чи знайшовся елемент у учня (видно у викладача в рядку стану) */
-  | { k: 'hit'; ok: boolean; tag?: string; deep?: boolean };
+  | { k: 'hit'; ok: boolean; tag?: string; deep?: boolean; id?: number }
+  /** пульт увімкнено — учень лише дивиться; вимкнено — керування повертається йому */
+  | { k: 'lock'; on: boolean };
 
 /** mode: site — учень просто десь на сайті; lobby — у залі очікування; class — у відкритому уроці */
 export type Presence = { role: 'student' | 'teacher'; name?: string; mode?: 'site' | 'lobby' | 'class'; at: number };
