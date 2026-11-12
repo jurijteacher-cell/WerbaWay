@@ -1,0 +1,171 @@
+{
+  "lesson_id": "pl-a2-66-co-powinnam-zrobic",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: rady w domu, w pracy i w podróży",
+  "instruction": "Trzy bloki ćwiczeń. Potem napisz wiadomość — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Forma czasownika powinien",
+      "instruction": "Wstaw formę dla osoby w nawiasie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "(ty — kobieta) ___ odpowiedzieć na ten mail jeszcze dzisiaj.",
+          "answer": "Powinnaś",
+          "grammar_point": "modalne-obowiazek"
+        },
+        {
+          "id": "h1-2",
+          "text": "(ja — mężczyzna) ___ częściej dzwonić do rodziców.",
+          "answer": "Powinienem",
+          "grammar_point": "modalne-obowiazek"
+        },
+        {
+          "id": "h1-3",
+          "text": "Sąsiedzi ___ naprawić ten dzwonek, nie działa od miesiąca.",
+          "answer": "powinni",
+          "grammar_point": "modalne-obowiazek"
+        },
+        {
+          "id": "h1-4",
+          "text": "(my — same kobiety) ___ wyjść teraz, inaczej nie zdążymy.",
+          "answer": "Powinnyśmy",
+          "grammar_point": "modalne-obowiazek",
+          "explanation": "Same kobiety: powinnyśmy. Z mężczyzną w grupie: powinniśmy."
+        },
+        {
+          "id": "h1-5",
+          "text": "Ten film ___ się skończyć o dwudziestej drugiej.",
+          "answer": "powinien",
+          "grammar_point": "modalne-obowiazek",
+          "explanation": "Film to on, więc powinien."
+        },
+        {
+          "id": "h1-6",
+          "text": "(wy) ___ zapytać nauczyciela, zanim zrobicie to zadanie.",
+          "answer": "Powinniście",
+          "grammar_point": "modalne-obowiazek"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Trzeba, nie wolno, nie musisz czy warto",
+      "instruction": "Wybierz wyrażenie, które pasuje do sytuacji.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "W bibliotece ___ głośno rozmawiać.",
+          "options": [
+            "nie wolno",
+            "nie musisz"
+          ],
+          "answer": "nie wolno",
+          "grammar_point": "modalne-obowiazek"
+        },
+        {
+          "id": "h2-2",
+          "text": "Masz jeszcze bilet z wczoraj, ___ kupować nowego.",
+          "options": [
+            "nie musisz",
+            "nie wolno"
+          ],
+          "answer": "nie musisz",
+          "grammar_point": "modalne-obowiazek"
+        },
+        {
+          "id": "h2-3",
+          "text": "Przed wizytą w urzędzie ___ zabrać dowód osobisty.",
+          "options": [
+            "trzeba",
+            "warto"
+          ],
+          "answer": "trzeba",
+          "grammar_point": "modalne-obowiazek",
+          "explanation": "Bez dokumentu sprawy nie załatwisz — to obowiązek, nie rada."
+        },
+        {
+          "id": "h2-4",
+          "text": "Nikt tego nie wymaga, ale ___ przyjść dziesięć minut wcześniej.",
+          "options": [
+            "warto",
+            "trzeba"
+          ],
+          "answer": "warto",
+          "grammar_point": "modalne-obowiazek"
+        },
+        {
+          "id": "h2-5",
+          "text": "Mam jutro egzamin, więc dziś ___ się uczyć.",
+          "options": [
+            "muszę",
+            "nie muszę"
+          ],
+          "answer": "muszę",
+          "grammar_point": "modalne-obowiazek"
+        },
+        {
+          "id": "h2-6",
+          "text": "Ten film jest dla dorosłych, dzieciom ___ go oglądać.",
+          "options": [
+            "nie wolno",
+            "nie trzeba"
+          ],
+          "answer": "nie wolno",
+          "grammar_point": "modalne-obowiazek"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Daj radę",
+      "instruction": "Przeczytaj sytuację i napisz jedno zdanie z czasownikiem powinien.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Kolega spóźnia się na każde spotkanie. (do kolegi)",
+          "answer": "Powinieneś wychodzić wcześniej.",
+          "accept": [
+            "Powinieneś wcześniej wychodzić.",
+            "Powinieneś wyjść wcześniej."
+          ],
+          "grammar_point": "modalne-obowiazek",
+          "explanation": "Każde poprawne zdanie z powinieneś + bezokolicznik jest dobre; tu sprawdzamy formę."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Koleżanka nie rozumie zadania i siedzi nad nim trzy godziny. (do koleżanki)",
+          "answer": "Powinnaś zapytać nauczyciela.",
+          "accept": [
+            "Powinnaś zapytać o to nauczyciela."
+          ],
+          "grammar_point": "modalne-obowiazek"
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Wasz pociąg jest za czterdzieści minut, a wy jeszcze się nie spakowaliście. (o was)",
+          "answer": "Powinniśmy się spakować teraz.",
+          "accept": [
+            "Powinniśmy spakować się teraz.",
+            "Powinniśmy się już spakować."
+          ],
+          "grammar_point": "modalne-obowiazek"
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Sąsiad codziennie parkuje przed Twoją bramą. (o sąsiedzie)",
+          "answer": "Sąsiad powinien parkować gdzie indziej.",
+          "accept": [
+            "Sąsiad nie powinien parkować przed bramą."
+          ],
+          "grammar_point": "modalne-obowiazek"
+        }
+      ]
+    }
+  ]
+}
