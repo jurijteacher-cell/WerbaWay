@@ -9,7 +9,7 @@ teacherOf: pl-a2-mow-07-praca
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">ℹ️</span><div class="lp-callout-body">
 
-Сторінка учня: <a href="https://app.notion.com/p/40d96e03c7c881eba45cd6a201fe9548">07 · Moja praca to moja pasja! Zawody, warunki i rozmowa o pracę</a>. Рівень A2, шаблон light-60 (розмовний), модуль pl-a2-mow. Тема — розділ «Moja praca to moja pasja» з «Mówię po polsku A1–A2» (с. 91–96), але всі тексти та вправи написані заново.
+Сторінка учня: <a href="/learn/pl-a2-mow-07-praca">07 · Moja praca to moja pasja! Zawody, warunki i rozmowa o pracę</a>. Рівень A2, шаблон light-60 (розмовний), модуль pl-a2-mow. Тема — розділ «Moja praca to moja pasja» з «Mówię po polsku A1–A2» (с. 91–96), але всі тексти та вправи написані заново.
 
 </div></aside>
 

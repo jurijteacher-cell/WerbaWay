@@ -11,7 +11,7 @@ teacherOf: pl-a2-49-szukam-pracy
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🧭</span><div class="lp-callout-body">
 
-<b>Урок 49 (M1 · Praca, 1.1) курсу «Польська A2».</b> Індивідуально, 60 хв, шаблон light-60 A2. Сторінка учня: <a href="https://app.notion.com/p/40e96e03c7c881b0b5a4f0cfc314ff2f">49 · Szukam pracy</a>
+<b>Урок 49 (M1 · Praca, 1.1) курсу «Польська A2».</b> Індивідуально, 60 хв, шаблон light-60 A2. Сторінка учня: <a href="/learn/pl-a2-49-szukam-pracy">49 · Szukam pracy</a>
 
 <b>Нове:</b> родовий після прийменників <i>do, od, z, u, bez, dla, obok</i> і після <i>szukać, potrzebować, uczyć się</i>. <b>Повтор:</b> родовий кількості й заперечення з уроку 48. Граматика за мотивами <i>pl-preg-07</i>, тема й усі речення нові.
 

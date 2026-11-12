@@ -1,5 +1,5 @@
 ---
-teacherOf: pl-b1-group-03-rodzina-trzy-pokolenia-przy-
+teacherOf: pl-b1-group-03-rodzina
 title: Rodzina dawniej i dziś (B1)
 icon: 🧑‍🏫
 number: 3
@@ -10,7 +10,7 @@ notion: https://app.notion.com/p/TEACHER-Rodzina-dawniej-i-dzi-B1-40d96e03c7c881
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📋</span><div class="lp-callout-body">
 
-<b>Курс B1-група, лекція №3 у курсі.</b> Граматика: множина — чоловічо-особова (<i>oni</i>) / нечоловічо-особова (<i>one</i>), відмінки множини, <i>ludzie, dzieci, pieniądze, bracia, przyjaciele</i>. Тема: родина раніше і зараз, покоління, сімейні свята. Тривалість: 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="https://app.notion.com/p/40d96e03c7c881de9293c91a11a10628">Trzy pokolenia przy jednym stole: rodzina dawniej i dziś</a><br>Обкладинка: Sweet Life / Unsplash — <a href="https://unsplash.com/photos/a-group-of-people-sitting-around-a-wooden-table-4q44RjJkeuM">https://unsplash.com/photos/a-group-of-people-sitting-around-a-wooden-table-4q44RjJkeuM</a>
+<b>Курс B1-група, лекція №3 у курсі.</b> Граматика: множина — чоловічо-особова (<i>oni</i>) / нечоловічо-особова (<i>one</i>), відмінки множини, <i>ludzie, dzieci, pieniądze, bracia, przyjaciele</i>. Тема: родина раніше і зараз, покоління, сімейні свята. Тривалість: 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-03-rodzina">Trzy pokolenia przy jednym stole: rodzina dawniej i dziś</a><br>Обкладинка: Sweet Life / Unsplash — <a href="https://unsplash.com/photos/a-group-of-people-sitting-around-a-wooden-table-4q44RjJkeuM">https://unsplash.com/photos/a-group-of-people-sitting-around-a-wooden-table-4q44RjJkeuM</a>
 
 </div></aside>
 

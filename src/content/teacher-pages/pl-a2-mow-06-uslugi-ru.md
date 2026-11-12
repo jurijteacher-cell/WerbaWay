@@ -8,7 +8,7 @@ teacherOf: pl-a2-mow-06-uslugi-ru
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">ℹ️</span><div class="lp-callout-body">
 
-Сторінка учня: <a href="https://app.notion.com/p/41396e03c7c881d693d0dd7b174dae3b">06 · Muszę wysłać paczkę! Poczta, bank i naprawy · RU</a>. Російська версія уроку 06 для російськомовного учня: словничок і картки — російською, пастки та вправа g6 «Popraw zdanie» перероблені під кальки з російської. Тексти, діалоги і ДЗ польською ті самі, що в оригіналі: <a href="https://app.notion.com/p/40696e03c7c88141a386f2b9f2df5757">06 · Muszę wysłać paczkę! Poczta, bank i naprawy</a>. Рівень A2, шаблон light-60.
+Сторінка учня: <a href="/learn/pl-a2-mow-06-uslugi-ru">06 · Muszę wysłać paczkę! Poczta, bank i naprawy · RU</a>. Російська версія уроку 06 для російськомовного учня: словничок і картки — російською, пастки та вправа g6 «Popraw zdanie» перероблені під кальки з російської. Тексти, діалоги і ДЗ польською ті самі, що в оригіналі: <a href="/learn/pl-a2-mow-06-uslugi">06 · Muszę wysłać paczkę! Poczta, bank i naprawy</a>. Рівень A2, шаблон light-60.
 
 </div></aside>
 

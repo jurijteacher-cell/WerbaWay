@@ -10,7 +10,7 @@ teacherOf: pl-b1-group-02-u-lekarza
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📋</span><div class="lp-callout-body">
 
-<b>Курс B1-група, лекція №2 у курсі.</b> Граматика: родовий — заперечення, кількість, дієслова з родовим (<i>szukać, potrzebować, bać się, unikać, używać</i>), прийменники. Тема: здоров'я, поліклініка, аптека. Тривалість: 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="https://app.notion.com/p/40696e03c7c881269215fb8c5ae2542e">U lekarza: plecy, czyli męska duma</a><br>Обкладинка: Vitaly Gariev / Unsplash — <a href="https://unsplash.com/photos/doctor-checks-patients-blood-pressure-with-stethoscope-NDOYHZ_98Rw">https://unsplash.com/photos/doctor-checks-patients-blood-pressure-with-stethoscope-NDOYHZ&#95;98Rw</a>
+<b>Курс B1-група, лекція №2 у курсі.</b> Граматика: родовий — заперечення, кількість, дієслова з родовим (<i>szukać, potrzebować, bać się, unikać, używać</i>), прийменники. Тема: здоров'я, поліклініка, аптека. Тривалість: 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-02-u-lekarza">U lekarza: plecy, czyli męska duma</a><br>Обкладинка: Vitaly Gariev / Unsplash — <a href="https://unsplash.com/photos/doctor-checks-patients-blood-pressure-with-stethoscope-NDOYHZ_98Rw">https://unsplash.com/photos/doctor-checks-patients-blood-pressure-with-stethoscope-NDOYHZ&#95;98Rw</a>
 
 </div></aside>
 

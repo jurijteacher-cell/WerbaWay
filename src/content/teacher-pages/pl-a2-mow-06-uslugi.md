@@ -9,7 +9,7 @@ teacherOf: pl-a2-mow-06-uslugi
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">ℹ️</span><div class="lp-callout-body">
 
-Сторінка учня: <a href="https://app.notion.com/p/40696e03c7c88141a386f2b9f2df5757">06 · Muszę wysłać paczkę! Poczta, bank i naprawy</a>. Рівень A2, шаблон light-60 (розмовний), модуль pl-a2-mow. Тема — розділ «Muszę wysłać paczkę» з «Mówię po polsku A1–A2» (с. 83–90), але всі тексти та вправи написані заново.
+Сторінка учня: <a href="/learn/pl-a2-mow-06-uslugi">06 · Muszę wysłać paczkę! Poczta, bank i naprawy</a>. Рівень A2, шаблон light-60 (розмовний), модуль pl-a2-mow. Тема — розділ «Muszę wysłać paczkę» з «Mówię po polsku A1–A2» (с. 83–90), але всі тексти та вправи написані заново.
 
 </div></aside>
 

@@ -11,7 +11,7 @@ teacherOf: pl-b1-group-08-przyjazn
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📋</span><div class="lp-callout-body">
 
-<b>Курс «Польська B1», лекція №8 у курсі (закриває блок 1).</b> Граматика: особові займенники в усіх відмінках (<i>go / jego / niego</i>, короткі й довгі форми, n- після прийменника), <i>ktoś / coś / gdzieś</i>, подвійне заперечення <i>nikt nie / nic nie</i>. Тема: дружба на відстані, сварки й примирення, нові знайомства. Формат: індивідуально, 2 × 90 хв (або 3 × 60); другу роль у задачах граєш ти. Сторінка учня: <a href="https://app.notion.com/p/40f96e03c7c881ecbd83cfc7254fe80d">Przyjaźń na odległość: kawa o ósmej, kawa o czternastej</a><br>Обкладинка: Vitaly Gariev / Unsplash — <a href="https://unsplash.com/photos/two-women-laughing-at-a-cafe-table-uwZ-dOjw8Bo">https://unsplash.com/photos/two-women-laughing-at-a-cafe-table-uwZ-dOjw8Bo</a>
+<b>Курс «Польська B1», лекція №8 у курсі (закриває блок 1).</b> Граматика: особові займенники в усіх відмінках (<i>go / jego / niego</i>, короткі й довгі форми, n- після прийменника), <i>ktoś / coś / gdzieś</i>, подвійне заперечення <i>nikt nie / nic nie</i>. Тема: дружба на відстані, сварки й примирення, нові знайомства. Формат: індивідуально, 2 × 90 хв (або 3 × 60); другу роль у задачах граєш ти. Сторінка учня: <a href="/learn/pl-b1-group-08-przyjazn">Przyjaźń na odległość: kawa o ósmej, kawa o czternastej</a><br>Обкладинка: Vitaly Gariev / Unsplash — <a href="https://unsplash.com/photos/two-women-laughing-at-a-cafe-table-uwZ-dOjw8Bo">https://unsplash.com/photos/two-women-laughing-at-a-cafe-table-uwZ-dOjw8Bo</a>
 
 </div></aside>
 

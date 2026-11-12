@@ -9,7 +9,7 @@ teacherOf: pl-a2-mow-05-mieszkanie-ru
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">ℹ️</span><div class="lp-callout-body">
 
-Українська версія: <a href="https://app.notion.com/p/40596e03c7c881f1ae7df73b6ce3a246">05 · Szukam mieszkania! Dom, pokoje i okolica</a>. <b>Це версія для російськомовних учнів</b> — переклади й пастки з російської, вправи <code>pl-a2-mow-05-mieszkanie-ru</code>. Сторінка учня: <a href="https://app.notion.com/p/40b96e03c7c88180b479fe6197e4eea9">05 · Szukam mieszkania! Dom, pokoje i okolica · RU</a>. Рівень A2, шаблон light-60 (розмовний), модуль pl-a2-mow. Тема — розділ «Gdzie mieszkasz?» з «Mówię po polsku A1–A2» (с. 77–82), але всі тексти та вправи написані заново.
+Українська версія: <a href="/learn/pl-a2-mow-05-mieszkanie">05 · Szukam mieszkania! Dom, pokoje i okolica</a>. <b>Це версія для російськомовних учнів</b> — переклади й пастки з російської, вправи <code>pl-a2-mow-05-mieszkanie-ru</code>. Сторінка учня: <a href="/learn/pl-a2-mow-05-mieszkanie-ru">05 · Szukam mieszkania! Dom, pokoje i okolica · RU</a>. Рівень A2, шаблон light-60 (розмовний), модуль pl-a2-mow. Тема — розділ «Gdzie mieszkasz?» з «Mówię po polsku A1–A2» (с. 77–82), але всі тексти та вправи написані заново.
 
 </div></aside>
 

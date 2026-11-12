@@ -71,7 +71,7 @@ export type ClassStep = {
   url: string;
 };
 
-const HOMEWORK_RE = /praca\s+domowa|домашн|homework/i;
+const HOMEWORK_RE = /praca\s+domowa|zadani[ea]\s+domow|домашн|homework/i;
 
 /** «1. Czytanie», «📖 1. Czytanie» → { num: '1', title: '📖 Czytanie' } */
 export function splitNumbered(label: string): { num: string | null; title: string } {

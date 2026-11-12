@@ -46,4 +46,4 @@ teacherOf: pl-telc-b1-01-praca
 1. <i>Jestem zmęczonym</i> → <b>jestem zmęczony</b>
 1. <i>stać lekarzem</i> → <b>zostać lekarzem</b>
 
-Студентська сторінка: <a href="https://app.notion.com/p/3ec96e03c7c881299d33c7d82b76718f">Kim jesteś z zawodu?</a>
+Студентська сторінка: <a href="/learn/pl-telc-b1-01-praca">Kim jesteś z zawodu?</a>

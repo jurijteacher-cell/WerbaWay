@@ -7,7 +7,7 @@ moduleTitle: Іспит A2
 notion: https://app.notion.com/p/Teacher-Czas-wolny-i-pasje-3fa96e03c7c88101b5d1d7206aa8fe9f
 ---
 
-Сторінка <b>тільки для викладача</b>. Учнівська: <a href="https://app.notion.com/p/3fa96e03c7c881e0bde9f67a0b25d27e">01 · Czas wolny i pasje</a>.
+Сторінка <b>тільки для викладача</b>. Учнівська: <a href="/learn/pl-exam-01-pasje">01 · Czas wolny i pasje</a>.
 
 Перший урок блоку 1 — спільне ядро для telc B1·B2 і державного іспиту B1. Учень стартує з A1. Урок одночасно служить діагностикою: на розминці й на слайді s1 слухай, якими формами він говорить про себе.
 

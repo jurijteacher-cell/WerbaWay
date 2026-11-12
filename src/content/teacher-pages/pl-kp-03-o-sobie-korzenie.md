@@ -7,7 +7,7 @@ notion: https://app.notion.com/p/TEACHER-03-Nazywam-si-Ja-i-moje-polskie-korzeni
 teacherOf: pl-kp-03-o-sobie-korzenie
 ---
 
-Сторінка учня: <a href="https://app.notion.com/p/40696e03c7c881a8ae0de296c9a5249d">03 · Nazywam się… Ja i moje polskie korzenie</a>
+Сторінка учня: <a href="/learn/pl-kp-03-o-sobie-korzenie">03 · Nazywam się… Ja i moje polskie korzenie</a>
 
 Рівень A1+ · 90 хв · модуль pl-kp (Karta Polaka, розмова з консулом). Мета уроку — блок «про себе і польське коріння», з якого консул зазвичай починає розмову.
 

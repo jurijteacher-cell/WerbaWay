@@ -10,7 +10,7 @@ teacherOf: pl-b1-group-01-mieszkanie
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📋</span><div class="lp-callout-body">
 
-<b>Курс B1-група, лекція №1 у курсі.</b> Граматика: орудний (<i>kim? czym? z kim?</i>), місцевий з прийменниками, <i>gdzie / dokąd / skąd</i> (<i>nad morzem / nad morze</i>). Тривалість: 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="https://app.notion.com/p/40496e03c7c881c7b9b2fa1ac549dd4c">Mieszkanie i sąsiedzi: trzecie piętro bez windy</a><br>Обкладинка: Alina Perekatenkova / Unsplash — <a href="https://unsplash.com/photos/yellow-concrete-building-near-green-trees-under-blue-sky-during-daytime-fDYUqiGKe7g">https://unsplash.com/photos/yellow-concrete-building-near-green-trees-under-blue-sky-during-daytime-fDYUqiGKe7g</a>
+<b>Курс B1-група, лекція №1 у курсі.</b> Граматика: орудний (<i>kim? czym? z kim?</i>), місцевий з прийменниками, <i>gdzie / dokąd / skąd</i> (<i>nad morzem / nad morze</i>). Тривалість: 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-01-mieszkanie">Mieszkanie i sąsiedzi: trzecie piętro bez windy</a><br>Обкладинка: Alina Perekatenkova / Unsplash — <a href="https://unsplash.com/photos/yellow-concrete-building-near-green-trees-under-blue-sky-during-daytime-fDYUqiGKe7g">https://unsplash.com/photos/yellow-concrete-building-near-green-trees-under-blue-sky-during-daytime-fDYUqiGKe7g</a>
 
 </div></aside>
 

@@ -11,7 +11,7 @@ teacherOf: pl-a2-52-poznaje-zespol
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🧭</span><div class="lp-callout-body">
 
-<b>Урок 52 (M1 · Praca, 1.4) курсу «Польська A2».</b> Індивідуально, 60 хв, шаблон light-60 A2. Сторінка учня: <a href="https://app.notion.com/p/41396e03c7c881d2ad81e516203b511e">52 · Poznaję zespół</a>
+<b>Урок 52 (M1 · Praca, 1.4) курсу «Польська A2».</b> Індивідуально, 60 хв, шаблон light-60 A2. Сторінка учня: <a href="/learn/pl-a2-52-poznaje-zespol">52 · Poznaję zespół</a>
 
 <b>Нове:</b> особові займенники в відмінках (<code>zaimki-osobowe-przypadki</code>): знахідний (<i>mnie, cię, go, ją, nas, was, ich, je</i>), давальний (<i>mi, ci, mu, jej, nam, wam, im</i>), форми після прийменника з <i>n-</i>, коротка / довга форма, <i>ją → jej</i> після заперечення. <b>Повтор:</b> знахідний іменників (<code>biernik-rzeczownik</code>: g2-1, g2-3, g2-7), відмінки <i>Pan / Pani</i> (<code>pan-pani</code>: блок g4, g5-3, h2-3, h3-4). Давальний іменників (<i>Tomkowi</i>) свідомо не вживається — він у уроці 67; тут лише займенники.
 

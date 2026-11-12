@@ -7,7 +7,7 @@ moduleTitle: Polski, krok po kroku 1
 notion: https://app.notion.com/p/Teacher-R2-Powt-rka-lekcje-1-5-40596e03c7c881628d09fe99eb3ff741
 ---
 
-Сторінка тільки для викладача. Учнівська: <a href="https://app.notion.com/p/40596e03c7c88102a79df03bed7cab21">Kim jesteś? Jaki jesteś? Powtórka: lekcje 1–5</a>
+Сторінка тільки для викладача. Учнівська: <a href="/learn/pl-kpk1-r02-powtorka">Kim jesteś? Jaki jesteś? Powtórka: lekcje 1–5</a>
 
 Учень: «Polski, krok po kroku 1», пройдено уроки 1–5 (R1 уже повторив 1–3). Нової граматики немає. Фокус — уроки 4–5: дієслова <i>-ę, -isz / -ysz</i>, <i>Kim jesteś? — lekarzem</i> (narzędnik однини, також із прикметником), <i>interesuję się + czym</i>, вік <i>rok / lata / lat</i>, числа 20–100, опис людини, мови <i>po polsku</i>, <i>Myślę, że… / chyba</i>. Мета — учень говорить про себе й про інших у 3-й особі: «To jest Marco. Jest kucharzem. Ma 33 lata…».
 

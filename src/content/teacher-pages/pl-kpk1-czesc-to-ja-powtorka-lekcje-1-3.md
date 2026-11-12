@@ -7,7 +7,7 @@ moduleTitle: Polski, krok po kroku 1
 notion: https://app.notion.com/p/Teacher-R1-Powt-rka-lekcje-1-3-40096e03c7c8816f93a9f3b1069de783
 ---
 
-Сторінка тільки для викладача. Учнівська: <a href="https://app.notion.com/p/40096e03c7c881eebdc5f2f79dc139cd"> Cześć, to ja! Powtórka: lekcje 1–3</a>
+Сторінка тільки для викладача. Учнівська: <a href="/learn/pl-kpk1-czesc-to-ja-powtorka-lekcje-1-3"> Cześć, to ja! Powtórka: lekcje 1–3</a>
 
 Учень: «Polski, krok po kroku 1», пройдено уроки 1–3. Нової граматики немає. Мета — учень виходить з відчуттям «я вже говорю»: вимірюваний прогрес (хвилина про себе на початку й у кінці), багато мовлення, мінімум пояснень.
 

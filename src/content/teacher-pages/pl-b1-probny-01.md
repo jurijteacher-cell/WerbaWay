@@ -11,7 +11,7 @@ notion: https://app.notion.com/p/TEACHER-Egzamin-pr-bny-B1-1-i-2-40f96e03c7c8813
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">📊</span><div class="lp-callout-body">
 
-Результати учнів — у базі <a href="https://app.notion.com/p/8e2ceb755dc1451cada978409be51369">Wyniki — egzamin próbny</a>: один рядок на спробу, усередині — кожна помилка (що відповів учень → як правильно).
+Результати учнів — у базі Wyniki — egzamin próbny: один рядок на спробу, усередині — кожна помилка (що відповів учень → як правильно).
 
 </div></aside>
 

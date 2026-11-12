@@ -11,7 +11,7 @@ teacherOf: pl-ksieg-04-vat-i-jpk
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🔒</span><div class="lp-callout-body">
 
-Сторінка викладача до уроку <a href="https://app.notion.com/p/41296e03c7c8817284b7c6193ba3ba09">04 · VAT i JPK: liczby bez stresu</a>. Шаблон light-60, B1. Навичка впевненості: <b>цифри вголос без паузи</b>.
+Сторінка викладача до уроку <a href="/learn/pl-ksieg-04-vat-i-jpk">04 · VAT i JPK: liczby bez stresu</a>. Шаблон light-60, B1. Навичка впевненості: <b>цифри вголос без паузи</b>.
 
 </div></aside>
 

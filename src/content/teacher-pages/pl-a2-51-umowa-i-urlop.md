@@ -11,7 +11,7 @@ teacherOf: pl-a2-51-umowa-i-urlop
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🧭</span><div class="lp-callout-body">
 
-<b>Урок 51 (M1 · Praca, 1.3) курсу «Польська A2».</b> Індивідуально, 60 хв, шаблон light-60 A2. Сторінка учня: <a href="https://app.notion.com/p/40f96e03c7c881bcab39ce31951499c2">51 · Umowa i urlop</a>
+<b>Урок 51 (M1 · Praca, 1.3) курсу «Польська A2».</b> Індивідуально, 60 хв, шаблон light-60 A2. Сторінка учня: <a href="/learn/pl-a2-51-umowa-i-urlop">51 · Umowa i urlop</a>
 
 <b>Нове:</b> порядкові числівники (<code>liczebniki-porzadkowe</code>), повна дата з роком і <i>od … do …</i> (<code>data-pelna</code>). <b>Повтор:</b> прийменники часу з уроку 50 (<i>od, przez, za, temu</i>), години (<i>o dziewiątej, od dziewiątej do siedemnastej</i>). Граматика за мотивами <i>Wydarzenia</i> (B1), спрощена до A2: без віків, десятиліть, <i>podczas / przed / po</i>. Тема й усі речення нові.
 
