@@ -31,7 +31,7 @@ export default async function LearnIndex() {
     .sort((a, b) => a.title.localeCompare(b.title, 'uk'));
   return (
     <main className="mx-auto max-w-5xl px-4 py-14">
-      <h1 className="mb-2 font-display text-4xl text-paper">Уроки</h1>
+      <h1 className="mb-2 font-display text-4xl text-paper">Курс</h1>
       <p className="mb-10 text-paper-muted">Лекції з текстами, вправами й домашкою.</p>
       {pages.length === 0 && extraLectures.length === 0 && (
         <p className="text-paper-muted">Тут з’являться лекції, щойно викладач відкриє тобі курс.</p>
