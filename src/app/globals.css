@@ -2,11 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ═══ Токени Werba Way ═══ Правила і повний опис — docs/DESIGN_SYSTEM.md.
+   Ті самі значення є в tailwind.config.ts (класи) і в notebook.css (--nb-*, вправи). */
+:root {
+  --ww-desk: #f3f5fc;
+  --ww-paper: #ffffff;
+  --ww-soft: #eef2fb;
+  --ww-line: #dde3f3;
+  --ww-edge: #c7d0e8;
+
+  --ww-ink: #1c2348;
+  --ww-muted: #5d6689;
+  --ww-faint: #8d95b2;
+
+  --ww-violet: #6b46d6;
+  --ww-violet-dark: #5433bd;
+  --ww-violet-solid: #7a4fe0;
+  --ww-violet-solid-hover: #6a3ed6;
+  --ww-violet-fill: #e4d9ff;
+  --ww-violet-fill-hover: #d7c8ff;
+  --ww-violet-shadow: #b79ced;
+
+  --ww-sky: #2f9fe0;
+  --ww-sky-fill: #d3e9fb;
+  --ww-pink: #d1397f;
+  --ww-pink-fill: #ffdff0;
+
+  --ww-ok: #0f7a55;
+  --ww-ok-fill: #e3f6ee;
+  --ww-no: #cf3a57;
+  --ww-no-fill: #ffe8ed;
+
+  --ww-r-sm: 10px;
+  --ww-r: 14px;
+  --ww-r-lg: 18px;
+  --ww-r-xl: 24px;
+  --ww-shadow-card: 0 1px 0 var(--ww-line), 0 18px 34px -28px rgba(28, 35, 72, .5);
+  --ww-ease: cubic-bezier(.2, .8, .2, 1);
+  --ww-spring: cubic-bezier(.2, .9, .3, 1.3);
+}
+
 @layer base {
   body {
     @apply bg-ink text-paper antialiased;
     /* зошитова «клітинка-крапка» як у вправ */
-    background-image: radial-gradient(circle at 1px 1px, rgba(27, 42, 74, 0.05) 1px, transparent 0);
+    background-image: radial-gradient(circle at 1px 1px, rgba(107, 70, 214, 0.07) 1px, transparent 0);
     background-size: 22px 22px;
   }
 
@@ -36,6 +76,15 @@
   @media (max-width: 767px) {
     input:not([type='checkbox']):not([type='radio']), select, textarea { font-size: 16px !important; }
   }
+
+  /* системні контроли в кольорах платформи; будь-який клас вправи це перекриває */
+  input[type='checkbox'], input[type='radio'], progress { accent-color: #7a4fe0; }
+  select {
+    border: 1px solid var(--ww-line); border-radius: var(--ww-r-sm); background-color: var(--ww-paper);
+    color: var(--ww-ink); padding: .45rem .6rem;
+  }
+  select:focus-visible { outline: none; border-color: var(--ww-violet); box-shadow: 0 0 0 3px rgba(122, 79, 224, .18); }
+  ::selection { background: var(--ww-violet-fill); color: var(--ww-violet-dark); }
 }
 
 @layer components {
@@ -51,52 +100,179 @@
   .ww-btn-lg { @apply px-6 py-3 text-base; }
 
   .ww-btn-primary {
-    background: #ffe168; border-color: #f2c94c; color: #1b2a4a;
-    box-shadow: 0 3px 0 #e0b93a;
+    background: var(--ww-violet-solid); border-color: var(--ww-violet-dark); color: #fff;
+    box-shadow: 0 3px 0 var(--ww-violet-dark);
   }
-  .ww-btn-primary:hover:not(:disabled) { background: #ffd84a; box-shadow: 0 4px 0 #d9ae2c; }
+  .ww-btn-primary:hover:not(:disabled) { background: var(--ww-violet-solid-hover); box-shadow: 0 4px 0 #4e2bb0; }
+
+  /* світла «наліпка» акценту: там, де суцільний фіолет був би надто важкий */
+  .ww-btn-accent {
+    background: var(--ww-violet-fill); border-color: #c3aef5; color: var(--ww-violet-dark);
+    box-shadow: 0 3px 0 var(--ww-violet-shadow);
+  }
+  .ww-btn-accent:hover:not(:disabled) { background: var(--ww-violet-fill-hover); box-shadow: 0 4px 0 #a98bea; }
 
   .ww-btn-secondary {
-    background: #fbf9f4; border-color: #ddd5c2; color: #1b2a4a;
-    box-shadow: 0 2px 0 #e6dfcd;
+    background: #ffffff; border-color: #dde3f3; color: #1c2348;
+    box-shadow: 0 2px 0 #e6ebf8;
   }
-  .ww-btn-secondary:hover:not(:disabled) { border-color: #c9a64a; box-shadow: 0 3px 0 #ddd3bb; }
+  .ww-btn-secondary:hover:not(:disabled) { border-color: #a98bea; box-shadow: 0 3px 0 #d7dff1; }
 
-  .ww-btn-ghost { background: transparent; border-color: rgba(138, 95, 23, 0.35); color: #8a5f17; }
-  .ww-btn-ghost:hover:not(:disabled) { background: rgba(255, 225, 104, 0.25); border-color: #8a5f17; }
+  .ww-btn-ghost { background: transparent; border-color: rgba(107, 70, 214, 0.35); color: #6b46d6; }
+  .ww-btn-ghost:hover:not(:disabled) { background: rgba(122, 79, 224, 0.25); border-color: #6b46d6; }
 
-  .ww-btn-success { background: #e8f5ee; border-color: #b9dcc8; color: #17704a; box-shadow: 0 2px 0 #cfe6d8; }
-  .ww-btn-success:hover:not(:disabled) { background: #d9efe2; border-color: #17704a; }
+  .ww-btn-success { background: #e3f6ee; border-color: #9adcc3; color: #0f7a55; box-shadow: 0 2px 0 #cdeedf; }
+  .ww-btn-success:hover:not(:disabled) { background: #d2f1e4; border-color: #0f7a55; }
 
-  .ww-btn-danger { background: #fdecea; border-color: #f0c2ba; color: #b83a27; box-shadow: 0 2px 0 #f3d3cd; }
-  .ww-btn-danger:hover:not(:disabled) { background: #fbdcd7; border-color: #b83a27; }
+  .ww-btn-danger { background: #ffe8ed; border-color: #f4b7c5; color: #cf3a57; box-shadow: 0 2px 0 #f7cdd6; }
+  .ww-btn-danger:hover:not(:disabled) { background: #ffdbe3; border-color: #cf3a57; }
+
+  /* ── перемикач (замість системного чекбокса) ── */
+  .ww-switch {
+    display: inline-flex; align-items: center; gap: .55rem; padding: .3rem .6rem .3rem .35rem;
+    border-radius: 999px; border: 1px solid var(--ww-line); background: var(--ww-paper);
+    color: var(--ww-ink); font: 600 13px/1.2 var(--font-onest), system-ui, sans-serif; white-space: nowrap;
+    box-shadow: 0 2px 0 #e6ebf8; transition: border-color .2s var(--ww-ease), box-shadow .2s var(--ww-ease);
+  }
+  .ww-switch:hover:not(:disabled) { border-color: var(--ww-violet); }
+  .ww-switch:disabled { opacity: .45; cursor: not-allowed; }
+  .ww-switch-track {
+    position: relative; flex: none; width: 36px; height: 21px; border-radius: 999px;
+    background: #dfe5f3; transition: background-color .2s var(--ww-ease);
+  }
+  .ww-switch-knob {
+    position: absolute; top: 2px; left: 2px; width: 17px; height: 17px; border-radius: 50%;
+    background: #fff; box-shadow: 0 1px 3px rgba(28, 35, 72, .35);
+    transition: transform .22s var(--ww-spring);
+  }
+  .ww-switch[aria-checked='true'] { border-color: #c3aef5; background: var(--ww-violet-fill); color: var(--ww-violet-dark); }
+  .ww-switch[aria-checked='true'] .ww-switch-track { background: var(--ww-violet-solid); }
+  .ww-switch[aria-checked='true'] .ww-switch-knob { transform: translateX(15px); }
+
+  /* ── панель інструментів: нічого не зникає, зайве йде в «Ще» ── */
+  .ww-toolbar { position: relative; display: flex; align-items: center; gap: 8px; min-width: 0; flex: 1; }
+  .ww-toolbar-item { flex: none; }
+  .ww-toolbar-measure {
+    position: absolute; top: 0; left: 0; display: flex; gap: 8px; visibility: hidden; pointer-events: none;
+    height: 0; overflow: hidden; white-space: nowrap;
+  }
+  .ww-toolbar-more { position: relative; flex: none; margin-left: auto; }
+  .ww-toolbar-count {
+    display: inline-grid; place-items: center; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 999px;
+    background: var(--ww-violet-fill); color: var(--ww-violet-dark); font-size: 11px; font-weight: 700;
+  }
+  .ww-btn-accent .ww-toolbar-count { background: #fff; }
+
+  /* ── поле з підписом ── */
+  .ww-field { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+  .ww-field > span {
+    padding-left: 2px; color: var(--ww-faint);
+    font: 700 10.5px/1.3 var(--font-onest), system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase;
+  }
+  .ww-field select, .ww-field input, .ww-input {
+    width: 100%; min-width: 0; padding: .5rem .7rem; border-radius: var(--ww-r-sm);
+    border: 1px solid var(--ww-line); background: var(--ww-paper); color: var(--ww-ink);
+    font: 500 14px/1.3 var(--font-onest), system-ui, sans-serif;
+    transition: border-color .2s var(--ww-ease), box-shadow .2s var(--ww-ease);
+  }
+  .ww-field select:hover, .ww-field input:hover, .ww-input:hover { border-color: var(--ww-edge); }
+  .ww-field select:focus, .ww-field input:focus, .ww-input:focus {
+    outline: none; border-color: var(--ww-violet); box-shadow: 0 0 0 3px rgba(122, 79, 224, .18);
+  }
+
+  /* ── група масштабу ── */
+  .ww-zoom {
+    display: inline-flex; align-items: center; gap: 4px; padding: 3px 6px 3px 10px;
+    border: 1px solid var(--ww-line); border-radius: 999px; background: var(--ww-soft);
+  }
+  .ww-zoom-label {
+    margin-right: 2px; color: var(--ww-muted);
+    font: 700 10.5px/1.3 var(--font-onest), system-ui, sans-serif; letter-spacing: .1em; text-transform: uppercase;
+  }
+  .ww-zoom .ww-btn { box-shadow: none; }
+
+  /* ── спливне меню ── */
+  .ww-menu {
+    position: absolute; top: calc(100% + 8px); right: 0; z-index: 70; min-width: 15rem; padding: 6px;
+    display: flex; flex-direction: column; gap: 2px;
+    background: var(--ww-paper); border: 1px solid var(--ww-line); border-radius: var(--ww-r-lg);
+    box-shadow: 0 24px 48px -28px rgba(28, 35, 72, .55), 0 2px 0 #e6ebf8;
+    animation: ww-rise .16s var(--ww-ease);
+  }
+  .ww-menu-row {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    padding: 6px 8px; border-radius: var(--ww-r-sm);
+  }
+  .ww-menu-row:hover { background: var(--ww-soft); }
+  .ww-menu-label {
+    min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    color: var(--ww-muted); font: 600 13px/1.2 var(--font-onest), system-ui, sans-serif;
+  }
+
+  /* ── смуга інструментів заняття ── */
+  .ww-bar {
+    display: flex; align-items: center; gap: 10px; min-width: 0; padding: 8px 10px;
+    background: var(--ww-paper); border: 1px solid var(--ww-line); border-radius: var(--ww-r-lg);
+    box-shadow: var(--ww-shadow-card);
+  }
+
+  /* ── бокові кроки заняття ── */
+  .ww-steps { display: flex; flex-direction: column; gap: 14px; }
+  .ww-steps-group { display: flex; flex-direction: column; gap: 4px; }
+  .ww-steps-head {
+    display: flex; align-items: center; gap: 8px; margin: 0 0 2px; padding: 0 2px;
+    font: 700 10.5px/1.3 var(--font-onest), system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--ww-faint);
+  }
+  .ww-steps-head::after { content: ''; flex: 1; height: 1px; background: var(--ww-line); }
+  .ww-step {
+    position: relative; display: grid; grid-template-columns: 22px minmax(0, 1fr); align-items: center; gap: 9px;
+    width: 100%; padding: 7px 10px; border: 1px solid transparent; border-radius: var(--ww-r);
+    background: transparent; color: var(--ww-muted); text-align: left;
+    font: 500 13.5px/1.3 var(--font-onest), system-ui, sans-serif;
+    transition: background-color .18s var(--ww-ease), color .18s var(--ww-ease), border-color .18s var(--ww-ease), transform .15s var(--ww-ease);
+  }
+  .ww-step-ic {
+    display: grid; place-items: center; width: 22px; height: 22px; border-radius: 7px; flex: none;
+    background: var(--ww-soft); font-size: 12px; line-height: 1;
+  }
+  .ww-step-label { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ww-step:hover:not(:disabled):not([aria-current='true']) {
+    background: var(--ww-soft); color: var(--ww-ink); transform: translateX(2px);
+  }
+  .ww-step[aria-current='true'] {
+    background: var(--ww-violet-fill); border-color: #c3aef5; color: var(--ww-violet-dark); font-weight: 700;
+  }
+  .ww-step[aria-current='true'] .ww-step-ic { background: #fff; }
+  .ww-step[data-done='1'] .ww-step-ic { background: var(--ww-ok-fill); }
+  .ww-step:disabled { opacity: .5; cursor: default; }
 
   /* ── меню в шапці ── */
-  .ww-nav { @apply flex items-center gap-1 rounded-2xl border p-1; background: #fbf9f4; border-color: #e3dccb; }
+  .ww-nav { @apply flex items-center gap-1 rounded-2xl border p-1; background: #ffffff; border-color: #e2e8f6; }
   .ww-nav-link {
     @apply relative inline-flex items-center gap-1.5 whitespace-nowrap rounded-xl px-3 py-1.5 text-sm font-medium;
-    color: #52607a;
+    color: #5d6689;
     transition: color 0.2s ease, background-color 0.25s ease, transform 0.15s ease;
   }
   /* маркер, що «прокреслюється» знизу при наведенні */
   .ww-nav-link::after {
     content: ''; position: absolute; left: 0.75rem; right: 0.75rem; bottom: 0.3rem; height: 3px; border-radius: 3px;
-    background: #ffe168; transform: scaleX(0); transform-origin: left center; transition: transform 0.25s ease;
+    background: #e4d9ff; transform: scaleX(0); transform-origin: left center; transition: transform 0.25s ease;
   }
-  .ww-nav-link:hover { color: #1b2a4a; transform: translateY(-1px); }
+  .ww-nav-link:hover { color: #1c2348; transform: translateY(-1px); }
   .ww-nav-link:hover::after { transform: scaleX(1); }
-  .ww-nav-link[aria-current='page'] { color: #1b2a4a; font-weight: 650; background: #ffe168; box-shadow: 0 2px 0 #e0b93a; }
+  .ww-nav-link[aria-current='page'] { color: var(--ww-violet-dark); font-weight: 650; background: var(--ww-violet-fill); box-shadow: 0 2px 0 var(--ww-violet-shadow); }
   .ww-nav-link[aria-current='page']::after { display: none; }
 
   /* модальні вікна (поділитися, пошук): аркуш над затемненим столом */
   .ww-modal {
     position: fixed; inset: 0; z-index: 80; display: flex; align-items: flex-start; justify-content: center;
-    padding: 10vh 16px 16px; background: rgba(27, 42, 74, 0.38); backdrop-filter: blur(3px);
+    padding: 10vh 16px 16px; background: rgba(28, 35, 72, 0.38); backdrop-filter: blur(3px);
     animation: ww-fade 0.18s ease-out;
   }
   .ww-modal-box {
     width: 100%; max-width: 560px; max-height: 80vh; overflow: auto; border-radius: 18px;
-    background: #fbf9f4; border: 1px solid #ddd5c2; box-shadow: 0 30px 60px -30px rgba(27, 42, 74, 0.55), 0 3px 0 #e6dfcd;
+    background: #ffffff; border: 1px solid #dde3f3; box-shadow: 0 30px 60px -30px rgba(28, 35, 72, 0.55), 0 3px 0 #e6ebf8;
     animation: ww-rise 0.22s cubic-bezier(0.2, 0.9, 0.3, 1.2);
   }
   @keyframes ww-fade { from { opacity: 0; } }
@@ -106,23 +282,23 @@
   /* кругла кнопка «поділитися» на картці лекції */
   .ww-share-fab {
     display: grid; place-items: center; width: 36px; height: 36px; border-radius: 999px;
-    background: rgba(251, 249, 244, 0.94); border: 1px solid #ddd5c2; color: #1b2a4a;
-    box-shadow: 0 2px 0 #e6dfcd; transition: transform 0.15s ease, background-color 0.2s ease;
+    background: rgba(255, 255, 255, 0.94); border: 1px solid #dde3f3; color: #1c2348;
+    box-shadow: 0 2px 0 #e6ebf8; transition: transform 0.15s ease, background-color 0.2s ease;
   }
-  .ww-share-fab:hover { background: #ffe168; border-color: #f2c94c; transform: translateY(-1px) rotate(-8deg); }
-  .ww-share-fab:focus-visible { outline: 2px solid #8a5f17; outline-offset: 2px; }
+  .ww-share-fab:hover { background: #e4d9ff; border-color: #c3aef5; transform: translateY(-1px) rotate(-8deg); }
+  .ww-share-fab:focus-visible { outline: 2px solid #6b46d6; outline-offset: 2px; }
 
   /* кнопка пошуку в шапці */
   .ww-search-trigger {
     display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 0 12px; border-radius: 12px;
-    border: 1px solid #ddd5c2; background: #fbf9f4; color: #52607a; font-size: 13px;
-    box-shadow: inset 0 1px 0 #fff, 0 2px 0 #e6dfcd; transition: border-color 0.2s ease, transform 0.15s ease, color 0.2s ease;
+    border: 1px solid #dde3f3; background: #ffffff; color: #5d6689; font-size: 13px;
+    box-shadow: inset 0 1px 0 #fff, 0 2px 0 #e6ebf8; transition: border-color 0.2s ease, transform 0.15s ease, color 0.2s ease;
   }
-  .ww-search-trigger:hover { border-color: #c9a64a; color: #1b2a4a; transform: translateY(-1px); }
-  .ww-search-trigger:focus-visible { outline: 2px solid #8a5f17; outline-offset: 2px; }
+  .ww-search-trigger:hover { border-color: #a98bea; color: #1c2348; transform: translateY(-1px); }
+  .ww-search-trigger:focus-visible { outline: 2px solid #6b46d6; outline-offset: 2px; }
   .ww-search-trigger kbd, .ww-kbd {
-    display: inline-block; min-width: 20px; padding: 1px 6px; border-radius: 6px; border: 1px solid #ddd5c2;
-    background: #f3eee3; color: #52607a; font: 600 11px/1.5 var(--font-onest), system-ui, sans-serif; text-align: center;
+    display: inline-block; min-width: 20px; padding: 1px 6px; border-radius: 6px; border: 1px solid #dde3f3;
+    background: #eef2fb; color: #5d6689; font: 600 11px/1.5 var(--font-onest), system-ui, sans-serif; text-align: center;
   }
 
   /* ── телефон: нижня панель вкладок ── */
@@ -130,8 +306,8 @@
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
     display: grid; grid-template-columns: repeat(5, 1fr);
     padding: 6px 6px calc(6px + env(safe-area-inset-bottom));
-    background: rgba(251, 249, 244, 0.94); backdrop-filter: blur(12px) saturate(1.2);
-    border-top: 1px solid #ddd5c2; box-shadow: 0 -8px 24px -18px rgba(27, 42, 74, 0.45);
+    background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(12px) saturate(1.2);
+    border-top: 1px solid #dde3f3; box-shadow: 0 -8px 24px -18px rgba(28, 35, 72, 0.45);
   }
   /* місце під панеллю внизу сторінки, щоб вона не закривала кінець вмісту */
   @media (max-width: 1023px) {
@@ -141,33 +317,33 @@
   }
   .ww-tab {
     position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px;
-    padding: 6px 2px 4px; border-radius: 14px; color: #52607a; font-size: 11px; font-weight: 600; line-height: 1.1;
+    padding: 6px 2px 4px; border-radius: 14px; color: #5d6689; font-size: 11px; font-weight: 600; line-height: 1.1;
     -webkit-tap-highlight-color: transparent; transition: color 0.2s ease, transform 0.15s ease;
   }
   .ww-tab:active { transform: scale(0.94); }
   .ww-tab svg { transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.3, 1.4); }
-  .ww-tab[aria-current='page'] { color: #1b2a4a; }
+  .ww-tab[aria-current='page'] { color: #1c2348; }
   .ww-tab[aria-current='page'] svg { transform: translateY(-1px); }
   /* маркер-«наліпка» під активною іконкою */
   .ww-tab::before {
     content: ''; position: absolute; top: 3px; left: 50%; width: 46px; height: 30px; margin-left: -23px; border-radius: 10px;
-    background: #ffe168; box-shadow: 0 2px 0 #e0b93a; transform: scale(0.4); opacity: 0; z-index: -1;
+    background: #e4d9ff; box-shadow: 0 2px 0 #b79ced; transform: scale(0.4); opacity: 0; z-index: -1;
     transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.3, 1.4), opacity 0.2s ease;
   }
   .ww-tab[aria-current='page']::before { transform: none; opacity: 1; }
   .ww-tab { isolation: isolate; }
 
-  .ww-sheet-backdrop { position: fixed; inset: 0; z-index: 85; background: rgba(27, 42, 74, 0.38); animation: ww-fade 0.18s ease-out; }
+  .ww-sheet-backdrop { position: fixed; inset: 0; z-index: 85; background: rgba(28, 35, 72, 0.38); animation: ww-fade 0.18s ease-out; }
   .ww-sheet {
     position: absolute; left: 0; right: 0; bottom: 0; padding: 10px 16px calc(24px + env(safe-area-inset-bottom));
-    background: #fbf9f4; border-radius: 22px 22px 0 0; border-top: 1px solid #ddd5c2;
+    background: #ffffff; border-radius: 22px 22px 0 0; border-top: 1px solid #dde3f3;
     animation: ww-sheet-up 0.26s cubic-bezier(0.2, 0.9, 0.3, 1);
   }
-  .ww-sheet-grip { display: block; width: 42px; height: 5px; margin: 0 auto 12px; border-radius: 9px; background: #ddd5c2; }
+  .ww-sheet-grip { display: block; width: 42px; height: 5px; margin: 0 auto 12px; border-radius: 9px; background: #dde3f3; }
   .ww-sheet-link {
-    display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 14px; font-weight: 600; color: #1b2a4a;
+    display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 14px; font-weight: 600; color: #1c2348;
   }
-  .ww-sheet-link:active, .ww-sheet-link[aria-current='page'] { background: #fff3b8; }
+  .ww-sheet-link:active, .ww-sheet-link[aria-current='page'] { background: #efe8ff; }
   @keyframes ww-sheet-up { from { transform: translateY(100%); } }
   @media (prefers-reduced-motion: reduce) { .ww-sheet, .ww-sheet-backdrop, .ww-tab::before, .ww-tab svg { animation: none; transition: none; } }
 
@@ -183,20 +359,20 @@
   .ww-burger {
     display: inline-flex; flex-direction: column; justify-content: center; gap: 4.5px;
     width: 42px; height: 42px; padding: 0 11px; margin-right: -12px; flex: none;
-    border-radius: 12px; border: 1px solid #ddd5c2; background: #fbf9f4; box-shadow: 0 2px 0 #e6dfcd;
+    border-radius: 12px; border: 1px solid #dde3f3; background: #ffffff; box-shadow: 0 2px 0 #e6ebf8;
     transition: transform 0.15s ease, border-color 0.2s ease;
   }
-  .ww-burger span { display: block; height: 2px; border-radius: 2px; background: #1b2a4a; transition: transform 0.25s ease, width 0.25s ease; }
+  .ww-burger span { display: block; height: 2px; border-radius: 2px; background: #1c2348; transition: transform 0.25s ease, width 0.25s ease; }
   .ww-burger span:nth-child(2) { width: 70%; }
-  .ww-burger:hover { border-color: #c9a64a; transform: translateY(-1px); }
+  .ww-burger:hover { border-color: #a98bea; transform: translateY(-1px); }
   .ww-burger:hover span:nth-child(2) { width: 100%; }
-  .ww-burger:focus-visible { outline: 2px solid #8a5f17; outline-offset: 2px; }
+  .ww-burger:focus-visible { outline: 2px solid #6b46d6; outline-offset: 2px; }
 
-  .ww-drawer-backdrop { position: fixed; inset: 0; z-index: 90; background: rgba(27, 42, 74, 0.38); animation: ww-fade 0.18s ease-out; }
+  .ww-drawer-backdrop { position: fixed; inset: 0; z-index: 90; background: rgba(28, 35, 72, 0.38); animation: ww-fade 0.18s ease-out; }
   .ww-drawer {
     position: absolute; top: 0; bottom: 0; left: 0; width: min(300px, 84vw); display: flex; flex-direction: column;
     padding: calc(16px + env(safe-area-inset-top)) 14px calc(20px + env(safe-area-inset-bottom));
-    background: #fbf9f4; border-right: 1px solid #ddd5c2; box-shadow: 18px 0 40px -24px rgba(27, 42, 74, 0.5);
+    background: #ffffff; border-right: 1px solid #dde3f3; box-shadow: 18px 0 40px -24px rgba(28, 35, 72, 0.5);
     animation: ww-drawer-in 0.26s cubic-bezier(0.2, 0.9, 0.3, 1); overflow-y: auto;
   }
   .ww-drawer-item { animation: ww-drawer-item 0.3s ease-out both; }

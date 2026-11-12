@@ -61,41 +61,43 @@ export function StepNav({
   }
   const idx = steps.findIndex((s) => s.url === currentUrl);
   return (
-    <nav aria-label="Кроки заняття" className="flex flex-col gap-3 text-sm">
+    <nav aria-label="Кроки заняття" className="ww-steps">
       {groups.map((g) => (
-        <div key={g.section}>
-          <p className="mb-1 font-mono text-[11px] uppercase tracking-widest text-gold-dim">{g.section}</p>
-          <ul className="flex flex-col gap-1">
-            {g.items.map((s) => {
-              const here = s.url === currentUrl;
-              const cls = `flex w-full items-start gap-2 rounded-lg border px-2.5 py-1.5 text-left transition-colors ${
-                here ? 'border-gold bg-gold-fill/60 font-semibold text-paper' : 'border-ink-line bg-ink-raised text-paper-muted'
-              } ${onPick && !disabled && !here ? 'hover:border-gold/60 hover:text-paper' : ''}`;
-              const body = (
-                <>
-                  <span aria-hidden>{ICON[s.kind] ?? '•'}</span>
-                  <span className="min-w-0">{s.label}</span>
-                </>
-              );
-              return (
-                <li key={s.key}>
-                  {onPick ? (
-                    <button type="button" disabled={disabled} onClick={() => onPick(s)} className={cls} aria-current={here}>
-                      {body}
-                    </button>
-                  ) : (
-                    <div className={cls} aria-current={here}>
-                      {body}
-                    </div>
-                  )}
-                </li>
-              );
-            })}
-          </ul>
+        <div key={g.section} className="ww-steps-group">
+          <p className="ww-steps-head">{g.section}</p>
+          {g.items.map((s) => {
+            const here = s.url === currentUrl;
+            const done = idx >= 0 && steps.indexOf(s) < idx;
+            const body = (
+              <>
+                <span className="ww-step-ic" aria-hidden>
+                  {done && !here ? '✓' : (ICON[s.kind] ?? '•')}
+                </span>
+                <span className="ww-step-label">{s.label}</span>
+              </>
+            );
+            return onPick ? (
+              <button
+                key={s.key}
+                type="button"
+                disabled={disabled}
+                onClick={() => onPick(s)}
+                className="ww-step"
+                aria-current={here}
+                data-done={done ? '1' : undefined}
+              >
+                {body}
+              </button>
+            ) : (
+              <div key={s.key} className="ww-step" aria-current={here} data-done={done ? '1' : undefined}>
+                {body}
+              </div>
+            );
+          })}
         </div>
       ))}
       {idx >= 0 && (
-        <p className="text-xs text-paper-muted">
+        <p className="px-1 text-[11px] font-semibold uppercase tracking-widest text-paper-faint">
           Крок {idx + 1} з {steps.length}
         </p>
       )}

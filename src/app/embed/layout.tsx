@@ -13,7 +13,7 @@ const EMBED_CSS = `
   body > header { display: none !important; }
   /* нижня панель сайту не має лізти всередину вправи в Notion чи в класі */
   .ww-tabbar { display: none !important; }
-  body { background: #efeae0 !important; padding-bottom: 0 !important; }
+  body { background: #f3f5fc !important; padding-bottom: 0 !important; }
 `;
 
 /** Notebook chrome for Notion iframes — hide root TopNav. */
@@ -22,8 +22,8 @@ export default function EmbedLayout({ children }: { children: ReactNode }) {
     <div
       className="embed-shell min-h-screen"
       style={{
-        background: '#efeae0',
-        backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(27,42,74,.045) 1px, transparent 0)',
+        background: '#f3f5fc',
+        backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(28,35,72,.045) 1px, transparent 0)',
         backgroundSize: '22px 22px',
       }}
     >

@@ -5,27 +5,43 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // «Кремовий зошит» — ті самі кольори, що у вправах (notebook.css --nb-*).
-        // Назви токенів лишилися від темної теми: ink = поверхні, paper = текст.
+        // Werba Way, світла ретро-гама: прохолодний папір + фіолет, рожевий і блакитний.
+        // Єдине джерело правди — docs/DESIGN_SYSTEM.md. Ті самі значення продубльовані
+        // як --ww-* у globals.css і як --nb-* у notebook.css (для вправ).
+        // Назви токенів історичні: ink = поверхні, paper = текст, gold = акцент.
         ink: {
-          DEFAULT: '#efeae0', // фон-«стіл»
-          raised: '#fbf9f4', // картки-аркуші
-          soft: '#f3eee3', // другорядні поверхні
-          line: '#ddd5c2', // тонкі роздільники
+          DEFAULT: '#f3f5fc', // фон-«стіл»
+          raised: '#ffffff', // картки-аркуші
+          soft: '#eef2fb', // другорядні поверхні
+          line: '#dde3f3', // тонкі роздільники
+          edge: '#c7d0e8', // виразніша межа
         },
         gold: {
-          DEFAULT: '#8a5f17', // текст і рамки акценту (контраст ≥4.7 на кремовому)
-          bright: '#6e4a0f', // наведення на текст/посилання
-          dim: '#74622f', // дрібні підписи
-          fill: '#ffe168', // заливка кнопок-«маркер»
-          fillHover: '#ffd84a',
+          DEFAULT: '#6b46d6', // акцент: текст, рамки, іконки
+          bright: '#5433bd', // наведення
+          dim: '#6f6a94', // дрібні підписи
+          fill: '#e4d9ff', // світла «наліпка» акценту (текст лишається темним)
+          fillHover: '#d7c8ff',
+          solid: '#7a4fe0', // головна кнопка, білий текст
+          solidHover: '#6a3ed6',
+        },
+        sky: {
+          DEFAULT: '#2f9fe0',
+          fill: '#d3e9fb',
+          line: '#a9d6f4',
+        },
+        punch: {
+          DEFAULT: '#d1397f', // ретро-рожевий: другорядний акцент, виділення
+          fill: '#ffdff0',
+          line: '#f4b7c5',
         },
         paper: {
-          DEFAULT: '#1b2a4a', // основний текст — синє чорнило
-          muted: '#52607a',
+          DEFAULT: '#1c2348', // основний текст
+          muted: '#5d6689',
+          faint: '#8d95b2',
         },
-        correct: '#17704a',
-        incorrect: '#b83a27',
+        correct: '#0f7a55',
+        incorrect: '#cf3a57',
       },
       fontFamily: {
         display: ['var(--font-onest)', 'system-ui', 'sans-serif'],

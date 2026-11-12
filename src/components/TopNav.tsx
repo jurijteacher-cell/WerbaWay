@@ -57,7 +57,7 @@ export async function TopNav() {
     <header className="border-b border-ink-line bg-ink-raised/85 backdrop-blur">
       <div
         className="h-1"
-        style={{ background: 'linear-gradient(90deg,#ffe168 0,#a9dcc6 25%,#bcdcf2 50%,#f6c2af 75%,#d8cff0 100%)' }}
+        style={{ background: 'linear-gradient(90deg,#e4d9ff 0,#9adcc3 25%,#d3e9fb 50%,#f4b7c5 75%,#ded1ff 100%)' }}
       />
       <div className="mx-auto flex max-w-6xl items-center gap-x-6 gap-y-3 px-4 py-2.5 lg:flex-wrap lg:py-3">
         <MenuDrawer items={[...tabs, ...more]} />
@@ -72,12 +72,12 @@ export async function TopNav() {
           </span>
           <span className="leading-none" aria-hidden="true">
             <span className="block text-[15px] font-semibold tracking-[0.14em] md:text-[17px] md:tracking-[0.16em]">
-              <span style={{ color: '#13213f' }}>WERBA</span> <span style={{ color: '#b8964f' }}>WAY</span>
+              <span style={{ color: '#151c3c' }}>WERBA</span> <span style={{ color: '#a98bea' }}>WAY</span>
             </span>
             <span className="mt-1.5 hidden items-center gap-1.5 text-[9px] sm:flex font-medium tracking-[0.24em] text-paper-muted">
-              <span className="h-px w-3 bg-[#b8964f]" />
+              <span className="h-px w-3 bg-[#a98bea]" />
               LANGUAGE SCHOOL
-              <span className="h-px w-3 bg-[#b8964f]" />
+              <span className="h-px w-3 bg-[#a98bea]" />
             </span>
           </span>
         </Link>

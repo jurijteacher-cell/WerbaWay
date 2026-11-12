@@ -55,7 +55,7 @@ export function Progress({ done, total, label = 'poprawnie' }: { done: number; t
 }
 
 /* ── «level complete» banner with a small confetti burst ──────────────────── */
-const CONFETTI = ['#ffe168', '#6cc39c', '#74b0dd', '#ea9277', '#a796da', '#1d7f55'];
+const CONFETTI = ['#e4d9ff', '#4cc49a', '#2f9fe0', '#e88aa2', '#8f6ce8', '#0f7a55'];
 
 export function LevelDone({
   title = 'Poziom zaliczony!',

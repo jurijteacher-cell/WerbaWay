@@ -16,7 +16,7 @@ const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 function Tile({ value, label, tone }: { value: string | number; label: string; tone?: string }) {
   return (
-    <div className="rounded-2xl border border-ink-line bg-ink-raised px-4 py-3 shadow-[0_1px_0_#e6dfcd]">
+    <div className="rounded-2xl border border-ink-line bg-ink-raised px-4 py-3 shadow-[0_1px_0_#e6ebf8]">
       <p className={`font-display text-3xl leading-none ${tone ?? 'text-paper'}`}>{value}</p>
       <p className="mt-1.5 text-sm text-paper-muted">{label}</p>
     </div>
@@ -96,7 +96,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
       </Link>
 
       {/* шапка профілю */}
-      <header className="mt-4 flex flex-wrap items-center gap-5 rounded-3xl border border-ink-line bg-ink-raised p-5 shadow-[0_1px_0_#e6dfcd]">
+      <header className="mt-4 flex flex-wrap items-center gap-5 rounded-3xl border border-ink-line bg-ink-raised p-5 shadow-[0_1px_0_#e6ebf8]">
         <span
           className="grid h-20 w-20 shrink-0 place-items-center rounded-full text-2xl font-bold text-paper shadow-sm"
           style={{ background: avatarColor(name) }}

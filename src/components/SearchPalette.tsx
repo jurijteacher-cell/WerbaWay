@@ -159,7 +159,7 @@ function Palette({ teacher, onClose }: { teacher: boolean; onClose: () => void }
                     onMouseMove={() => setActive(n)}
                     onClick={() => go(it)}
                     className={`flex w-full items-center gap-3 rounded-xl px-3 py-2 text-left transition-colors ${
-                      n === active ? 'bg-[#fff3b8]' : ''
+                      n === active ? 'bg-[#efe8ff]' : ''
                     }`}
                   >
                     <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-ink-line bg-ink-raised text-base" aria-hidden="true">

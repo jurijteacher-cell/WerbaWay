@@ -15,6 +15,8 @@ import {
   type StepDTO,
 } from '@/lib/class/protocol';
 import { useClassChannel } from './useClassChannel';
+import { Toolbar, type ToolbarItem } from '@/components/ui/Toolbar';
+import { Switch } from '@/components/ui/Switch';
 import { StepNav, useSteps } from './StepNav';
 import './class.css';
 import '@/components/lesson/lesson.css';
@@ -511,8 +513,8 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
   const dot = !student ? 'bg-paper-muted' : student.mode === 'class' ? 'bg-correct' : 'bg-gold-fill';
 
   const zoomControls = (
-          <div className={`flex items-center gap-1 text-sm text-paper-muted ${hasFrame ? '' : 'hidden'}`}>
-            <span className="mr-1">Масштаб</span>
+          <div className="ww-zoom">
+            <span className="ww-zoom-label">Масштаб</span>
             <button
               type="button"
               onClick={() => setZoom((z) => Math.max(ZOOM_MIN, (typeof z === 'number' ? z : zoomNow()) / ZOOM_STEP))}
@@ -546,6 +548,85 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             </button>
           </div>
   );
+
+  /** Кнопки панелі в порядку важливості: те, що не влізло, Toolbar ховає в «Ще» */
+  const barItems = (inBig: boolean): ToolbarItem[] => {
+    const list: ToolbarItem[] = [];
+    const showPrimary = courseSlug ? !inCourse : true;
+    if (!inBig && showPrimary)
+      list.push({
+        id: 'enter',
+        label: room.active ? 'Перейти' : 'У клас',
+        node: (
+          <button
+            type="button"
+            onClick={courseSlug ? startCourse : enter}
+            disabled={busy || (courseSlug ? !course : !lessonId)}
+            className="ww-btn ww-btn-primary ww-btn-sm"
+          >
+            {room.active ? 'Перейти сюди' : 'У клас'}
+          </button>
+        ),
+      });
+    list.push({
+      id: 'pult',
+      label: 'Пульт',
+      node: (
+        <Switch
+          checked={pult}
+          onChange={setPult}
+          label="Пульт"
+          hint="Клік по екрану = клік в учня, колесо = прокрутка, набір з клавіатури — у поле учня"
+        />
+      ),
+    });
+    if (hasFrame) list.push({ id: 'zoom', label: 'Масштаб', node: zoomControls });
+    list.push({
+      id: 'big',
+      label: inBig ? 'Згорнути' : 'Великий екран',
+      node: (
+        <button type="button" onClick={() => setBig(!inBig)} className="ww-btn ww-btn-secondary ww-btn-sm">
+          {inBig ? 'Згорнути (Esc)' : '⤢ Великий екран'}
+        </button>
+      ),
+    });
+    if (!inBig && courseSlug)
+      list.push({
+        id: 'finish',
+        label: 'Завершити лекцію',
+        node: (
+          <button type="button" onClick={finishLecture} disabled={busy || !course} className="ww-btn ww-btn-success ww-btn-sm">
+            Завершити лекцію
+          </button>
+        ),
+      });
+    if (!inBig && room.active)
+      list.push({
+        id: 'lobby',
+        label: 'У зал очікування',
+        node: (
+          <button type="button" onClick={leave} disabled={busy} className="ww-btn ww-btn-ghost ww-btn-sm">
+            У зал очікування
+          </button>
+        ),
+      });
+    if (!inBig && courseSlug && notes)
+      list.push({
+        id: 'notes',
+        label: 'Нотатки викладача',
+        node: (
+          <button
+            type="button"
+            onClick={() => setNotesOpen((o) => !o)}
+            aria-expanded={notesOpen}
+            className={`ww-btn ww-btn-sm ${notesOpen ? 'ww-btn-accent' : 'ww-btn-secondary'}`}
+          >
+            📋 Нотатки
+          </button>
+        ),
+      });
+    return list;
+  };
 
   const stageBox = (
     <div
@@ -600,132 +681,64 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
         </div>
       </div>
 
-      <div className="mb-4 flex flex-wrap items-end gap-3 rounded-lg border border-ink-line p-4">
-        <label className="flex min-w-[16rem] flex-1 flex-col gap-1 text-xs text-paper-muted">
-          Що проводимо
-          <select
-            value={courseSlug}
-            onChange={(e) => {
-              setCourseSlug(e.target.value);
-              setDone(null);
-            }}
-            className="rounded-md border border-ink-line bg-ink px-3 py-2 text-sm text-paper"
-          >
-            <option value="">Окрема вправа (без лекції)</option>
-            {[...new Set(pages.map((p) => p.group ?? 'Лекції'))].map((g) => (
-              <optgroup key={g} label={g}>
-                {pages
-                  .filter((p) => (p.group ?? 'Лекції') === g)
-                  .map((p) => (
-                    <option key={p.id} value={p.id}>
-                      {p.title}
+      <div className="mb-3 flex flex-col gap-2">
+        <div className="ww-bar flex-wrap">
+          <label className="ww-field min-w-[16rem] flex-1">
+            <span>Що проводимо</span>
+            <select
+              value={courseSlug}
+              onChange={(e) => {
+                setCourseSlug(e.target.value);
+                setDone(null);
+              }}
+            >
+              <option value="">Окрема вправа (без лекції)</option>
+              {[...new Set(pages.map((p) => p.group ?? 'Лекції'))].map((g) => (
+                <optgroup key={g} label={g}>
+                  {pages
+                    .filter((p) => (p.group ?? 'Лекції') === g)
+                    .map((p) => (
+                      <option key={p.id} value={p.id}>
+                        {p.title}
+                      </option>
+                    ))}
+                </optgroup>
+              ))}
+            </select>
+          </label>
+          {!courseSlug && (
+            <>
+              <label className="ww-field min-w-[14rem] flex-1">
+                <span>Урок</span>
+                <select value={lessonId} onChange={(e) => setLessonId(e.target.value)}>
+                  {lessons.map((l) => (
+                    <option key={l.id} value={l.id}>
+                      {l.title}
                     </option>
                   ))}
-              </optgroup>
-            ))}
-          </select>
-        </label>
-        {!courseSlug && (
-        <>
-        <label className="flex min-w-[16rem] flex-1 flex-col gap-1 text-xs text-paper-muted">
-          Урок
-          <select
-            value={lessonId}
-            onChange={(e) => setLessonId(e.target.value)}
-            className="rounded-md border border-ink-line bg-ink px-3 py-2 text-sm text-paper"
-          >
-            {lessons.map((l) => (
-              <option key={l.id} value={l.id}>
-                {l.title}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label className="flex flex-col gap-1 text-xs text-paper-muted">
-          Що відкрити
-          <select
-            value={embed}
-            onChange={(e) => setEmbed(e.target.value)}
-            className="rounded-md border border-ink-line bg-ink px-3 py-2 text-sm text-paper"
-          >
-            {CLASS_EMBEDS.map((o) => (
-              <option key={o.id} value={o.id}>
-                {o.label}
-              </option>
-            ))}
-          </select>
-        </label>
-        {embed === 'grammar' && (
-          <label className="flex flex-col gap-1 text-xs text-paper-muted">
-            Блоки (напр. g2-g5)
-            <input
-              value={blocks}
-              onChange={(e) => setBlocks(e.target.value)}
-              className="w-32 rounded-md border border-ink-line bg-ink px-3 py-2 text-sm text-paper"
-            />
-          </label>
-        )}
-        <button
-          type="button"
-          onClick={enter}
-          disabled={busy || !lessonId}
-          className="ww-btn ww-btn-primary"
-        >
-          {room.active ? 'Перейти до цього' : 'У клас'}
-        </button>
-        {room.active && (
-          <button
-            type="button"
-            onClick={leave}
-            disabled={busy}
-            className="ww-btn ww-btn-ghost"
-          >
-            У зал очікування
-          </button>
-        )}
-        </>
-        )}
-        {courseSlug && (
-          <>
-            {!inCourse && (
-              <button
-                type="button"
-                onClick={startCourse}
-                disabled={busy || !course}
-                className="ww-btn ww-btn-primary"
-              >
-                {room.active ? 'Перейти до цієї лекції' : 'У клас'}
-              </button>
-            )}
-            {room.active && (
-              <button
-                type="button"
-                onClick={leave}
-                disabled={busy}
-                className="ww-btn ww-btn-ghost"
-              >
-                У зал очікування
-              </button>
-            )}
-            <button
-              type="button"
-              onClick={finishLecture}
-              disabled={busy || !course}
-              className="ww-btn ww-btn-success"
-            >
-              Завершити лекцію
-            </button>
-          </>
-        )}
-        <div className="ml-auto flex items-center gap-4">
-          {!big && zoomControls}
-          <label className="flex items-center gap-2 text-sm text-paper-muted">
-            <input type="checkbox" checked={pult} onChange={(e) => setPult(e.target.checked)} />
-            Пульт: клік, прокрутка й набір — в учня
-          </label>
-          <button type="button" onClick={() => setBig(true)} className="ww-btn ww-btn-secondary ww-btn-sm">
-            ⤢ Великий екран
-          </button>
+                </select>
+              </label>
+              <label className="ww-field min-w-[11rem]">
+                <span>Що відкрити</span>
+                <select value={embed} onChange={(e) => setEmbed(e.target.value)}>
+                  {CLASS_EMBEDS.map((o) => (
+                    <option key={o.id} value={o.id}>
+                      {o.label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              {embed === 'grammar' && (
+                <label className="ww-field w-36">
+                  <span>Блоки (g2-g5)</span>
+                  <input value={blocks} onChange={(e) => setBlocks(e.target.value)} />
+                </label>
+              )}
+            </>
+          )}
+        </div>
+        <div className="ww-bar">
+          <Toolbar items={barItems(false)} />
         </div>
       </div>
       {inCourse && (
@@ -737,18 +750,6 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
       {err && <p className="mb-3 text-incorrect">Не вдалося: {err}</p>}
       {done && <p className="mb-3 text-correct">{done}</p>}
 
-      {courseSlug && notes && (
-        <div className="mb-2 flex justify-end">
-          <button
-            type="button"
-            onClick={() => setNotesOpen((o) => !o)}
-            aria-expanded={notesOpen}
-            className="ww-btn ww-btn-secondary ww-btn-sm"
-          >
-            📋 {notesOpen ? 'Сховати нотатки викладача' : 'Нотатки викладача'}
-          </button>
-        </div>
-      )}
       <div
         className={
           courseSlug && course
@@ -832,16 +833,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
                 </button>
               </>
             )}
-            <div className="ml-auto flex flex-wrap items-center gap-3">
-              {zoomControls}
-              <label className="flex items-center gap-2 text-sm text-paper-muted">
-                <input type="checkbox" checked={pult} onChange={(e) => setPult(e.target.checked)} />
-                Пульт
-              </label>
-              <button type="button" onClick={() => setBig(false)} className="ww-btn ww-btn-secondary ww-btn-sm">
-                Згорнути (Esc)
-              </button>
-            </div>
+            <Toolbar items={barItems(true)} className="ml-auto" />
           </div>
           {stageBox}
         </div>

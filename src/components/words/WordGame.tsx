@@ -255,9 +255,9 @@ function Cards({ pool, dir, update, onAgain }: Common) {
           transform: dx ? `translateX(${dx}px) rotate(${dx / 18}deg)` : undefined,
           transition: dx ? 'none' : 'transform .25s ease',
           touchAction: 'pan-y',
-          borderColor: dx > 60 ? '#17704a' : dx < -60 ? '#b83a27' : undefined,
+          borderColor: dx > 60 ? '#0f7a55' : dx < -60 ? '#cf3a57' : undefined,
         }}
-        className="flex min-h-[18rem] w-full select-none flex-col items-center justify-center gap-3 rounded-3xl border-2 border-ink-line bg-ink-raised p-8 text-center shadow-[0_6px_0_#ddd5c2] transition-colors hover:border-gold/60"
+        className="flex min-h-[18rem] w-full select-none flex-col items-center justify-center gap-3 rounded-3xl border-2 border-ink-line bg-ink-raised p-8 text-center shadow-[0_6px_0_#dde3f3] transition-colors hover:border-gold/60"
         aria-label="Перевернути картку"
       >
         {!flipped ? (
@@ -423,7 +423,7 @@ function Quiz({ pool, all, dir, update, onAgain }: Common & { all: Word[] }) {
       <p className="mb-3 text-sm text-paper-muted">
         Питання {i + 1} з {pool.length} · правильно: {score}
       </p>
-      <div className="mb-4 rounded-3xl border-2 border-ink-line bg-ink-raised p-8 text-center shadow-[0_6px_0_#ddd5c2]">
+      <div className="mb-4 rounded-3xl border-2 border-ink-line bg-ink-raised p-8 text-center shadow-[0_6px_0_#dde3f3]">
         <span className="font-serif text-4xl text-paper">{ask}</span>
         {dir === 'pl' && w.pos && <p className="mt-2 text-sm text-paper-muted">{w.pos}</p>}
       </div>

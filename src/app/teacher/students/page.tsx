@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic';
 
 function Tile({ value, label, hint }: { value: string | number; label: string; hint?: string }) {
   return (
-    <div className="rounded-2xl border border-ink-line bg-ink-raised px-4 py-3 shadow-[0_1px_0_#e6dfcd]">
+    <div className="rounded-2xl border border-ink-line bg-ink-raised px-4 py-3 shadow-[0_1px_0_#e6ebf8]">
       <p className="font-display text-3xl leading-none text-paper">{value}</p>
       <p className="mt-1.5 text-sm text-paper-muted">{label}</p>
       {hint && <p className="text-xs text-paper-muted/80">{hint}</p>}

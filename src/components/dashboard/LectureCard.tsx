@@ -15,9 +15,9 @@ type Props = {
 };
 
 const TONE = {
-  good: { ring: '#17704a', chip: 'bg-correct/10 text-correct' },
-  ok: { ring: '#8a5f17', chip: 'bg-gold-fill/60 text-paper' },
-  weak: { ring: '#b83a27', chip: 'bg-incorrect/10 text-incorrect' },
+  good: { ring: '#0f7a55', chip: 'bg-correct/10 text-correct' },
+  ok: { ring: '#6b46d6', chip: 'bg-gold-fill/60 text-paper' },
+  weak: { ring: '#cf3a57', chip: 'bg-incorrect/10 text-incorrect' },
   none: { ring: '#9aa3b5', chip: 'bg-ink-soft text-paper-muted' },
 } as const;
 
@@ -28,7 +28,7 @@ function Ring({ value, color }: { value: number | null; color: string }) {
   const v = value ?? 0;
   return (
     <svg viewBox="0 0 76 76" width="76" height="76" role="img" aria-label={value == null ? 'не оцінено' : `оцінка ${value}%`}>
-      <circle cx="38" cy="38" r={r} fill="none" stroke="#e7dfcc" strokeWidth="8" />
+      <circle cx="38" cy="38" r={r} fill="none" stroke="#e4e9f7" strokeWidth="8" />
       {value != null && (
         <circle
           cx="38"
@@ -42,7 +42,7 @@ function Ring({ value, color }: { value: number | null; color: string }) {
           transform="rotate(-90 38 38)"
         />
       )}
-      <text x="38" y="43" textAnchor="middle" fontSize="17" fontWeight="700" fill="#1b2a4a">
+      <text x="38" y="43" textAnchor="middle" fontSize="17" fontWeight="700" fill="#1c2348">
         {value == null ? '—' : `${value}%`}
       </text>
     </svg>
@@ -79,7 +79,7 @@ export function LectureCard({ slug, title, level, icon, cover, stats, completedA
       : { text: '📝 домашка чекає', cls: 'bg-gold-fill/70 text-paper' };
 
   return (
-    <article className="overflow-hidden rounded-2xl border border-ink-line bg-ink-raised shadow-[0_1px_0_rgba(27,42,74,.04)]">
+    <article className="overflow-hidden rounded-2xl border border-ink-line bg-ink-raised shadow-[0_1px_0_rgba(28,35,72,.04)]">
       {cover && (
         // eslint-disable-next-line @next/next/no-img-element
         <img src={cover} alt="" className="h-20 w-full object-cover" loading="lazy" />

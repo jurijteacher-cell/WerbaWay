@@ -64,7 +64,7 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
               onClick={() => toggle(d.slug)}
               aria-pressed={on}
               className={`overflow-hidden rounded-2xl border bg-ink-raised text-left transition-all ${
-                on ? 'border-gold shadow-[0_0_0_3px_rgba(255,225,104,.7)]' : 'border-ink-line hover:border-gold/50'
+                on ? 'border-gold shadow-[0_0_0_3px_rgba(122,79,224,.7)]' : 'border-ink-line hover:border-gold/50'
               }`}
             >
               {d.cover && (

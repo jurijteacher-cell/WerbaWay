@@ -5,7 +5,7 @@ const html = `<!doctype html><html lang="uk"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Werba Way · діагностика</title>
 <style>
-body{margin:0;padding:16px;background:#FFF6C9;color:#1B2A4A;font:16px/1.5 -apple-system,system-ui,sans-serif}
+body{margin:0;padding:16px;background:#FFF6C9;color:#1c2348;font:16px/1.5 -apple-system,system-ui,sans-serif}
 h1{font-size:20px;margin:0 0 10px}.row{padding:6px 0;border-bottom:1px dashed #c9b97a}
 .ok{color:#1d7a4f;font-weight:700}.no{color:#b23b28;font-weight:700}code{font-size:12px;word-break:break-all}
 </style></head><body>

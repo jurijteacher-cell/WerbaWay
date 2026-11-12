@@ -47,7 +47,7 @@ export default function SlidesPage({ params, searchParams }: Props) {
   }
 
   return (
-    <main style={{ background: '#efeae0', minHeight: '100vh' }}>
+    <main style={{ background: '#f3f5fc', minHeight: '100vh' }}>
       {/* презентацію відкривають у Notion і в класі — меню сайту туди лізти не має */}
       <style
         dangerouslySetInnerHTML={{

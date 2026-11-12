@@ -23,7 +23,7 @@ function Spark({ data }: { data: number[] }) {
           className="w-full rounded-sm"
           style={{
             height: n ? `${Math.max(14, (n / max) * 100)}%` : '3px',
-            background: n ? (i >= data.length - 7 ? '#f2c94c' : '#f6dd8a') : '#e3dccb',
+            background: n ? (i >= data.length - 7 ? '#c3aef5' : '#f6dd8a') : '#e2e8f6',
           }}
         />
       ))}
@@ -79,7 +79,7 @@ export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
             <Link
               key={r.key}
               href={`/teacher/students/${r.key}`}
-              className="group flex flex-col gap-4 rounded-2xl border border-ink-line bg-ink-raised p-4 shadow-[0_1px_0_#e6dfcd] transition-all hover:-translate-y-0.5 hover:border-gold/60 hover:shadow-[0_10px_24px_-18px_rgba(27,42,74,.55)]"
+              className="group flex flex-col gap-4 rounded-2xl border border-ink-line bg-ink-raised p-4 shadow-[0_1px_0_#e6ebf8] transition-all hover:-translate-y-0.5 hover:border-gold/60 hover:shadow-[0_10px_24px_-18px_rgba(28,35,72,.55)]"
             >
               <div className="flex items-center gap-3">
                 <span
@@ -97,7 +97,7 @@ export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
                   </p>
                 </div>
                 {r.homeworkTodo > 0 && (
-                  <span className="shrink-0 rounded-full bg-[#f6c2af] px-2 py-0.5 text-[11px] font-semibold text-paper" title="Домашка чекає">
+                  <span className="shrink-0 rounded-full bg-[#f4b7c5] px-2 py-0.5 text-[11px] font-semibold text-paper" title="Домашка чекає">
                     📝 {r.homeworkTodo}
                   </span>
                 )}

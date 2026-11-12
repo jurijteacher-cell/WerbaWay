@@ -6,27 +6,27 @@
    (hand-cut look). Gold stays the Werba accent. Uses only --nb-* vars and nb-* classes (embed guard).
    ───────────────────────────────────────────────────────────────────────────── */
 .nb-wrap[data-nb-style='paper'] {
-  --nb-desk: #f4f3ef;
-  --nb-paper: #f4f3ef;
+  --nb-desk: #f1f4fc;
+  --nb-paper: #f1f4fc;
   --nb-paper-2: #ebe9e1;
   --nb-card: #ffffff;
-  --nb-edge: #14140f;
-  --nb-edge-strong: #14140f;
+  --nb-edge: #1c2348;
+  --nb-edge-strong: #1c2348;
   --nb-rule: #d9d6ca;
-  --nb-ink: #14140f;
+  --nb-ink: #1c2348;
   --nb-ink-2: #2a2a22;
   --nb-ink-soft: #55554a;
   --nb-ink-faint: #8b8a7d;
   --nb-gold: #a8740a;
   --nb-yellow: #f2c31a;
-  --nb-yellow-soft: #f8e08a;
-  --nb-ok: #1d7f55;
+  --nb-yellow-soft: #d7c8ff;
+  --nb-ok: #0f7a55;
   --nb-ok-bg: #dff3e8;
-  --nb-ok-line: #1d7f55;
-  --nb-no: #c0342a;
+  --nb-ok-line: #0f7a55;
+  --nb-no: #cf3a57;
   --nb-no-bg: #fbe3df;
-  --nb-no-line: #c0342a;
-  --nb-hint-bg: #f8e08a;
+  --nb-no-line: #cf3a57;
+  --nb-hint-bg: #d7c8ff;
   --nb-display: var(--font-nunito), 'Nunito', var(--font-onest), system-ui, sans-serif;
   --nb-body: var(--font-nunito), 'Nunito', var(--font-onest), system-ui, sans-serif;
   --nb-text: var(--font-nunito), 'Nunito', var(--font-onest), system-ui, sans-serif;
@@ -43,10 +43,10 @@
 
 /* page background (embed layout sets an inline colour + dots) */
 .embed-shell:has(.nb-wrap[data-nb-style='paper']) {
-  background: #f4f3ef !important;
+  background: #f1f4fc !important;
 }
 body:has(.nb-wrap[data-nb-style='paper']) {
-  background: #f4f3ef !important;
+  background: #f1f4fc !important;
 }
 
 /* brand bar */
@@ -81,9 +81,9 @@ body:has(.nb-wrap[data-nb-style='paper']) {
   font-size: 13px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #f4f3ef;
+  color: #f1f4fc;
   background: var(--nb-ink);
-  border: 2.5px solid #f4f3ef;
+  border: 2.5px solid #f1f4fc;
   border-radius: var(--pp-cut);
   box-shadow: var(--pp-hard);
   min-height: 44px;
@@ -309,7 +309,7 @@ body:has(.nb-wrap[data-nb-style='paper']) {
 .nb-wrap[data-nb-style='paper'] .nb-idx button[aria-selected='true'] {
   background: var(--nb-ink);
   border-color: var(--nb-ink);
-  color: #f4f3ef;
+  color: #f1f4fc;
   box-shadow: 2px 3px 0 0 var(--nb-yellow);
 }
 .nb-wrap[data-nb-style='paper'] .nb-tab-badge {
@@ -321,7 +321,7 @@ body:has(.nb-wrap[data-nb-style='paper']) {
 .nb-wrap[data-nb-style='paper'] .nb-idx button[aria-selected='true'] .nb-tab-badge {
   background: var(--nb-yellow);
   color: var(--nb-ink);
-  border-color: #f4f3ef;
+  border-color: #f1f4fc;
 }
 .nb-wrap[data-nb-style='paper'] .nb-tab-badge.done {
   background: var(--nb-ok);
@@ -333,7 +333,7 @@ body:has(.nb-wrap[data-nb-style='paper']) {
   font-weight: 800;
 }
 .nb-wrap[data-nb-style='paper'] .nb-idx button[aria-selected='true'] .nb-tab-count {
-  color: #f4f3ef;
+  color: #f1f4fc;
 }
 
 /* headings */

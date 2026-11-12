@@ -155,7 +155,7 @@ function Drawer({ items, active, onClose }: { items: Tab[]; active?: string; onC
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/brand/werba-mark.png" alt="" width={36} height={36} className="rounded-full" />
             <span className="text-[15px] font-semibold tracking-[0.14em]">
-              <span style={{ color: '#13213f' }}>WERBA</span> <span style={{ color: '#b8964f' }}>WAY</span>
+              <span style={{ color: '#151c3c' }}>WERBA</span> <span style={{ color: '#a98bea' }}>WAY</span>
             </span>
           </span>
           <button type="button" onClick={close} className="ww-btn ww-btn-ghost ww-btn-sm" aria-label="Закрити меню">

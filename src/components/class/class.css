@@ -1,26 +1,26 @@
 /* Клас: сторінки заняття перегортаються як аркуші блокнота (корінець зліва) */
-.cls-root { display: flex; flex-direction: column; min-height: calc(100dvh - var(--cls-top, 4.5rem)); background: #fbf9f4; }
+.cls-root { display: flex; flex-direction: column; min-height: calc(100dvh - var(--cls-top, 4.5rem)); background: #ffffff; }
 @media (max-width: 1023px) { .cls-root { min-height: calc(100dvh - var(--cls-top, 4rem) - 68px); } }
 /* перспектива вмикається лише на час перегортання: постійний 3D-шар змушував деякі браузери
    лишати сліди закріпленого рядка вгорі сторінки (він ніби дублювався при прокрутці) */
-.cls-book { position: relative; flex: 1; min-height: 0; overflow: hidden; background: #fbf9f4; }
+.cls-book { position: relative; flex: 1; min-height: 0; overflow: hidden; background: #ffffff; }
 .cls-book.is-turning { perspective: 2600px; perspective-origin: 0% 50%; }
 
 /* зал очікування */
-.cls-wait { flex: 1; display: grid; place-items: center; padding: 2.5rem 1.5rem; text-align: center; color: #1b2a4a; }
+.cls-wait { flex: 1; display: grid; place-items: center; padding: 2.5rem 1.5rem; text-align: center; color: #1c2348; }
 .cls-wait-card {
-  max-width: 34rem; background: #fffdf8; border: 1px solid #ddd5c2; border-radius: 1.4rem;
-  padding: 2.2rem 2rem; box-shadow: 0 1px 0 #ddd5c2, 0 22px 40px -34px rgba(27, 42, 74, .6);
+  max-width: 34rem; background: #ffffff; border: 1px solid #dde3f3; border-radius: 1.4rem;
+  padding: 2.2rem 2rem; box-shadow: 0 1px 0 #dde3f3, 0 22px 40px -34px rgba(28, 35, 72, .6);
 }
 .cls-wait-title { font-family: var(--font-onest), system-ui, sans-serif; font-weight: 800; font-size: clamp(1.4rem, 3.4vw, 2rem); margin: .9rem 0 .5rem; }
-.cls-wait-sub { color: #52607a; margin: 0; }
-.cls-wait-dot { display: inline-grid; place-items: center; width: 3.2rem; height: 3.2rem; border-radius: 50%; background: #ffe168; font-size: 1.5rem; animation: cls-breathe 2.4s ease-in-out infinite; }
+.cls-wait-sub { color: #5d6689; margin: 0; }
+.cls-wait-dot { display: inline-grid; place-items: center; width: 3.2rem; height: 3.2rem; border-radius: 50%; background: #e4d9ff; font-size: 1.5rem; animation: cls-breathe 2.4s ease-in-out infinite; }
 .cls-wait-links { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin: 1.6rem 0 0; }
 .cls-wait-links a {
-  border: 1px solid #ddd5c2; border-radius: 999px; padding: .4rem 1rem; font-size: .9rem;
-  color: #1b2a4a; text-decoration: none; background: #fbf9f4;
+  border: 1px solid #dde3f3; border-radius: 999px; padding: .4rem 1rem; font-size: .9rem;
+  color: #1c2348; text-decoration: none; background: #ffffff;
 }
-.cls-wait-links a:hover { border-color: #c9a64a; }
+.cls-wait-links a:hover { border-color: #a98bea; }
 @keyframes cls-breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.09); } }
 @media (prefers-reduced-motion: reduce) { .cls-wait-dot { animation: none; } }
 
@@ -28,36 +28,36 @@
 .cls-pager {
   position: fixed; left: 50%; bottom: .9rem; transform: translateX(-50%); z-index: 15;
   display: flex; align-items: center; gap: .5rem; max-width: min(92vw, 34rem);
-  background: #fffdf8; border: 1px solid #ddd5c2; border-radius: 999px; padding: .3rem .5rem;
-  box-shadow: 0 12px 28px -18px rgba(27, 42, 74, .7);
-  font-family: var(--font-onest), system-ui, sans-serif; font-size: .85rem; color: #1b2a4a;
+  background: #ffffff; border: 1px solid #dde3f3; border-radius: 999px; padding: .3rem .5rem;
+  box-shadow: 0 12px 28px -18px rgba(28, 35, 72, .7);
+  font-family: var(--font-onest), system-ui, sans-serif; font-size: .85rem; color: #1c2348;
 }
 .cls-pager > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 0 .2rem; }
 .cls-pager button {
-  flex: none; width: 2rem; height: 2rem; border-radius: 999px; border: 1px solid #ddd5c2;
-  background: #fbf9f4; color: #1b2a4a; font-size: 1.1rem; line-height: 1; cursor: pointer;
+  flex: none; width: 2rem; height: 2rem; border-radius: 999px; border: 1px solid #dde3f3;
+  background: #ffffff; color: #1c2348; font-size: 1.1rem; line-height: 1; cursor: pointer;
 }
 .cls-pager button:disabled { opacity: .35; cursor: default; }
-.cls-pager button:not(:disabled):hover { border-color: #c9a64a; }
+.cls-pager button:not(:disabled):hover { border-color: #a98bea; }
 @media (max-width: 560px) { .cls-pager { bottom: .6rem; font-size: .8rem; } }
 
 /* тихий рядок стану: видно, лише коли зв'язку немає */
 .cls-link {
   position: fixed; right: .9rem; bottom: .9rem; z-index: 20; margin: 0;
-  background: #1b2a4a; color: #fbf9f4; border-radius: 999px; padding: .3rem .8rem; font-size: .8rem;
-  box-shadow: 0 10px 24px -16px rgba(27, 42, 74, .8);
+  background: #1c2348; color: #ffffff; border-radius: 999px; padding: .3rem .8rem; font-size: .8rem;
+  box-shadow: 0 10px 24px -16px rgba(28, 35, 72, .8);
 }
 .cls-sheet {
-  position: absolute; inset: 0; background: #fbf9f4;
+  position: absolute; inset: 0; background: #ffffff;
   transform-origin: left center; backface-visibility: hidden;
-  border-left: 1px solid #ddd5c2;
+  border-left: 1px solid #dde3f3;
   /* малювання аркуша не виходить за його межі — жодних «хвостів» від сусіднього аркуша */
   isolation: isolate; contain: paint;
 }
 /* кадр викладача: тло таке саме, як у лекції, тож вільне місце читається як аркуш, а не порожня рамка */
-.cls-stage { background: #fbf9f4; scrollbar-gutter: stable; }
-.cls-stage .cls-mirror { background: #fbf9f4; }
-.cls-sheet iframe { display: block; width: 100%; height: 100%; border: 0; background: #fbf9f4; }
+.cls-stage { background: #ffffff; scrollbar-gutter: stable; }
+.cls-stage .cls-mirror { background: #ffffff; }
+.cls-sheet iframe { display: block; width: 100%; height: 100%; border: 0; background: #ffffff; }
 .cls-sheet.is-current { z-index: 2; }
 .cls-sheet.is-incoming { z-index: 1; }
 .cls-sheet.is-under { z-index: 1; }
@@ -65,7 +65,7 @@
 .cls-sheet.is-entering { z-index: 3; animation: cls-turn-in .76s cubic-bezier(.45, .05, .25, 1) both; }
 .cls-sheet.is-leaving::after, .cls-sheet.is-entering::after {
   content: ''; position: absolute; inset: 0; pointer-events: none;
-  background: linear-gradient(90deg, rgba(27, 42, 74, .3), rgba(27, 42, 74, .05) 55%, rgba(255, 255, 255, .2));
+  background: linear-gradient(90deg, rgba(28, 35, 72, .3), rgba(28, 35, 72, .05) 55%, rgba(255, 255, 255, .2));
   animation: cls-shade .76s ease both;
 }
 .cls-sheet.is-entering::after { animation-direction: reverse; }

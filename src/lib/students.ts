@@ -111,7 +111,7 @@ export async function loadStudents(supabase: SupabaseClient): Promise<{ rows: St
 }
 
 /** пастельний колір аватарки зі сталого хешу імені */
-const AVATAR = ['#ffe168', '#a9dcc6', '#bcdcf2', '#f6c2af', '#d8cff0', '#f3d9a4'];
+const AVATAR = ['#e4d9ff', '#9adcc3', '#d3e9fb', '#f4b7c5', '#ded1ff', '#f3d9a4'];
 export function avatarColor(seed: string) {
   let h = 0;
   for (const c of seed) h = (h * 31 + c.charCodeAt(0)) >>> 0;
