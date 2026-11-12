@@ -39,8 +39,13 @@ export function LessonPager({
   pages,
   initial,
   hasHomework,
+  base,
+  doneHref = '/learn',
 }: {
   slug: string;
+  /** адреса лекції: /learn/<slug> або публічне /s/<токен> */
+  base?: string;
+  doneHref?: string | null;
   pages: BookPage[];
   initial: number;
   hasHomework: boolean;
@@ -181,15 +186,20 @@ export function LessonPager({
               <span className="lp-turn-t">{next.kind === 'text' || next.kind === 'goal' ? next.section : next.label}</span>
             </button>
           ) : hasHomework ? (
-            <Link href={`/learn/${slug}/hw`} className="lp-turn-next">
+            <Link href={`${base ?? `/learn/${slug}`}/hw`} className="lp-turn-next">
               <span className="lp-turn-k">Лекцію завершено</span>
               <span className="lp-turn-t">Перейти до домашнього завдання</span>
             </Link>
-          ) : (
-            <Link href="/learn" className="lp-turn-next">
+          ) : doneHref ? (
+            <Link href={doneHref} className="lp-turn-next">
               <span className="lp-turn-k">Лекцію завершено</span>
               <span className="lp-turn-t">До списку уроків</span>
             </Link>
+          ) : (
+            <span className="lp-turn-next" aria-disabled="true">
+              <span className="lp-turn-k">Лекцію завершено</span>
+              <span className="lp-turn-t">Dziękuję! Дякуємо!</span>
+            </span>
           )}
         </nav>
       </div>

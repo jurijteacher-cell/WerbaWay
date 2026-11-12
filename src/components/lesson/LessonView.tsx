@@ -4,6 +4,7 @@ import { ClassAgent } from '@/components/class/ClassAgent';
 import { HomeworkDone } from './HomeworkDone';
 import { Blocks, SheetBody } from './LessonBlocks';
 import { LessonPager } from './LessonPager';
+import { ShareButton } from './ShareButton';
 import './lesson.css';
 
 type Props = {
@@ -17,9 +18,14 @@ type Props = {
   teacherNotes?: boolean;
   /** homework mode: стан із lesson_progress */
   hw?: { assigned: boolean; done: boolean } | null;
+  /** публічне посилання: адреса лекції /s/<токен>, без меню сайту */
+  publicBase?: string;
+  /** викладач: кнопка «Поділитися» */
+  canShare?: boolean;
 };
 
-export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes }: Props) {
+export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes, publicBase, canShare }: Props) {
+  const base = publicBase ?? `/learn/${page.meta.slug}`;
   const { meta, sections } = page;
   const book = buildPages(page);
   const lecture = sections.filter((s) => s.kind === 'lecture');
@@ -65,6 +71,11 @@ export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes }
             {meta.icon ?? '📘'}
           </div>
           <h1>{meta.title}</h1>
+          {canShare && (
+            <div className="mb-4">
+              <ShareButton slug={meta.slug} title={meta.title} />
+            </div>
+          )}
           <dl className="lp-props">
             {mode === 'homework' && (
               <div>
@@ -110,9 +121,9 @@ export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes }
                 <dt>{mode === 'homework' ? 'Лекція' : 'Домашка'}</dt>
                 <dd>
                   {mode === 'homework' ? (
-                    <Link href={`/learn/${meta.slug}`}>Повернутися до лекції</Link>
+                    <Link href={base}>Повернутися до лекції</Link>
                   ) : (
-                    <Link href={`/learn/${meta.slug}/hw`}>Відкрити домашнє завдання</Link>
+                    <Link href={`${base}/hw`}>Відкрити домашнє завдання</Link>
                   )}
                 </dd>
               </div>
@@ -122,7 +133,14 @@ export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes }
       </header>
 
       {mode === 'lecture' && (
-        <LessonPager slug={meta.slug} pages={book} initial={pageIndex} hasHomework={page.hasHomework} />
+        <LessonPager
+          slug={meta.slug}
+          pages={book}
+          initial={pageIndex}
+          hasHomework={page.hasHomework}
+          base={base}
+          doneHref={publicBase ? null : '/learn'}
+        />
       )}
 
       {mode === 'homework' && (

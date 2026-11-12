@@ -4,6 +4,10 @@ const nextConfig = {
     // Сторінки-лекції читаються з диска (fs) — без цього Vercel не покладе .md у серверну функцію
     outputFileTracingIncludes: {
       '/learn': ['./src/content/pages/**/*'],
+      '/api/learn/share': ['./src/content/pages/**/*'],
+      '/s/[token]': ['./src/content/pages/**/*'],
+      '/s/[token]/hw': ['./src/content/pages/**/*'],
+      '/api/search': ['./src/content/pages/**/*', './src/content/teacher-pages/**/*', './src/content/queue-published/**/*'],
       '/teacher/students/[id]': ['./src/content/pages/**/*', './src/content/queue-published/**/*'],
       '/teacher/lesson/[slug]': ['./src/content/pages/**/*', './src/content/teacher-pages/**/*'],
       '/api/learn/teacher-notes': ['./src/content/teacher-pages/**/*'],

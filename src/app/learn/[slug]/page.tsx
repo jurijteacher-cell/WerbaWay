@@ -41,6 +41,7 @@ export default async function LearnPage({
       step={step}
       pageIndex={Number.isFinite(p) && p > 0 ? p - 1 : 0}
       teacherNotes={access.isTeacher && !!loadTeacherPage(params.slug)}
+      canShare={access.isTeacher && !step}
     />
   );
 }

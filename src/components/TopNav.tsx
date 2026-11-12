@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
 import { LogoutButton } from './LogoutButton';
 import { NavLinks, type NavItem } from './NavLinks';
+import { SearchPalette } from './SearchPalette';
 
 export async function TopNav() {
   // Preview deployments without Supabase env: render no nav instead of crashing every page.
@@ -53,6 +54,7 @@ export async function TopNav() {
           </span>
         </Link>
         <div className="flex min-w-0 flex-1 items-center justify-end gap-3">
+          <SearchPalette teacher={isTeacher} />
           <NavLinks items={items} />
           <LogoutButton />
         </div>
