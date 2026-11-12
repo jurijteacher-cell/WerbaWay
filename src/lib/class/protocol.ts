@@ -62,7 +62,8 @@ export type ClassMsg =
   | { k: 'rr'; d: string[] }
   | { k: 'need-snap' }
   | { k: 'room'; room: RoomState }
-  | { k: 'click'; id: number; tag?: string; text?: string; path?: number[] };
+  | { k: 'click'; id: number; tag?: string; text?: string; path?: number[] }
+  | { k: 'scroll'; dy: number };
 
 /** mode: site — учень просто десь на сайті; lobby — у залі очікування; class — у відкритому уроці */
 export type Presence = { role: 'student' | 'teacher'; name?: string; mode?: 'site' | 'lobby' | 'class'; at: number };

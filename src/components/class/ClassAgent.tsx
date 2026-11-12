@@ -44,7 +44,9 @@ export function ClassAgent() {
       if (ev.origin !== origin || ev.source !== window.parent) return;
       const m = ev.data;
       if (!m || m.ww !== FRAME_TAG || !rec) return;
-      if (m.k === 'need-snap') {
+      if (m.k === 'scroll' && typeof m.dy === 'number') {
+        window.scrollBy({ top: m.dy, behavior: 'auto' });
+      } else if (m.k === 'need-snap') {
         rec.takeFullSnapshot(true);
       } else if (m.k === 'click' && Number.isInteger(m.id)) {
         const fits = (e: Element | null | undefined) =>

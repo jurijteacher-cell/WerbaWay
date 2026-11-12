@@ -1,11 +1,25 @@
 /* Клас: сторінки заняття перегортаються як аркуші блокнота (корінець зліва) */
-.cls-root { display: flex; flex-direction: column; min-height: calc(100dvh - 4.5rem); background: #fbf9f4; }
+.cls-root { display: flex; flex-direction: column; min-height: calc(100dvh - var(--cls-top, 4.5rem)); background: #fbf9f4; }
+@media (max-width: 1023px) { .cls-root { min-height: calc(100dvh - var(--cls-top, 4rem) - 68px); } }
 .cls-book { position: relative; flex: 1; min-height: 0; perspective: 2600px; perspective-origin: 0% 50%; overflow: hidden; background: #fbf9f4; }
 
 /* зал очікування */
-.cls-wait { flex: 1; display: grid; place-items: center; padding: 3rem 1.5rem; text-align: center; color: #1b2a4a; }
-.cls-wait-title { font-family: var(--font-onest), system-ui, sans-serif; font-weight: 800; font-size: clamp(1.6rem, 4vw, 2.4rem); margin: 0 0 .5rem; }
+.cls-wait { flex: 1; display: grid; place-items: center; padding: 2.5rem 1.5rem; text-align: center; color: #1b2a4a; }
+.cls-wait-card {
+  max-width: 34rem; background: #fffdf8; border: 1px solid #ddd5c2; border-radius: 1.4rem;
+  padding: 2.2rem 2rem; box-shadow: 0 1px 0 #ddd5c2, 0 22px 40px -34px rgba(27, 42, 74, .6);
+}
+.cls-wait-title { font-family: var(--font-onest), system-ui, sans-serif; font-weight: 800; font-size: clamp(1.4rem, 3.4vw, 2rem); margin: .9rem 0 .5rem; }
 .cls-wait-sub { color: #52607a; margin: 0; }
+.cls-wait-dot { display: inline-grid; place-items: center; width: 3.2rem; height: 3.2rem; border-radius: 50%; background: #ffe168; font-size: 1.5rem; animation: cls-breathe 2.4s ease-in-out infinite; }
+.cls-wait-links { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin: 1.6rem 0 0; }
+.cls-wait-links a {
+  border: 1px solid #ddd5c2; border-radius: 999px; padding: .4rem 1rem; font-size: .9rem;
+  color: #1b2a4a; text-decoration: none; background: #fbf9f4;
+}
+.cls-wait-links a:hover { border-color: #c9a64a; }
+@keyframes cls-breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.09); } }
+@media (prefers-reduced-motion: reduce) { .cls-wait-dot { animation: none; } }
 
 /* тихий рядок стану: видно, лише коли зв'язку немає */
 .cls-link {

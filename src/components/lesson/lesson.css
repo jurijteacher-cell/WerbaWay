@@ -208,8 +208,16 @@
 /* ── позначка домашки ── */
 .lp-hwdone { margin-top: 2rem; padding: 1.1rem 1.25rem; border: 1px solid var(--lp-line); border-radius: 1rem; background: var(--lp-paper); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-family: var(--font-onest), sans-serif; }
 
-/* ── сторінка у класі: та сама лекція, лише гортає викладач ── */
-.lp-class { padding-bottom: 3rem; }
+/* ── сторінка у класі: та сама лекція, але шапка компактна ──
+   сторінки гортає викладач, тож обкладинка не має щоразу з'їдати екран */
+.lp-class { padding-bottom: 2rem; }
+.lp-class .lp-cover { height: clamp(84px, 12vh, 130px); }
+.lp-class .lp-icon { width: 3.1rem; height: 3.1rem; margin-top: -1.65rem; font-size: 1.7rem; border-radius: .9rem; }
+.lp-class .lp-hero-body { max-width: 74rem; }
+.lp-class .lp-hero-body h1 { font-size: clamp(1.2rem, 2.1vw, 1.7rem); margin: .5rem 0 .45rem; max-width: none; }
+.lp-class .lp-props { display: flex; flex-wrap: wrap; gap: .2rem 1.1rem; margin: 0 0 1rem; max-width: none; font-size: .85rem; }
+.lp-class .lp-props > div { display: flex; gap: .45rem; padding: 0; }
+.lp-class .lp-pager-rail { top: .6rem; max-height: calc(100vh - 1.2rem); }
 .lp-pagelist-item.is-static { cursor: default; }
 .lp-pagelist-item.is-static:hover { color: var(--lp-muted); transform: none; }
 .lp-pagelist-item.is-static[aria-current] { color: var(--lp-ink); }

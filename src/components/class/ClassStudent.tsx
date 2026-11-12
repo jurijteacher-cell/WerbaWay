@@ -29,6 +29,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
       if (m.k === 'room') setRoom(m.room);
       else if (m.k === 'need-snap') toFrame({ k: 'need-snap' });
       else if (m.k === 'click') toFrame({ k: 'click', id: m.id, tag: m.tag, text: m.text, path: m.path });
+      else if (m.k === 'scroll') toFrame({ k: 'scroll', dy: m.dy });
     },
     onSubscribed: () => {
       // after (re)connecting: pick up the room from the database and give the teacher a fresh picture
@@ -136,8 +137,38 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
   const newestId = sheets.length ? sheets[sheets.length - 1].id : -1;
   const waiting = link !== 'online';
 
+  // позначка «ця вкладка щойно була в класі» — щоб сайт не затягував назад, коли учень вийшов сам
+  useEffect(() => {
+    const mark = () => {
+      try {
+        sessionStorage.setItem('ww_class_at', String(Date.now()));
+      } catch {
+        /* немає сховища — не страшно */
+      }
+    };
+    mark();
+    const id = setInterval(mark, 20_000);
+    return () => {
+      clearInterval(id);
+      mark();
+    };
+  }, []);
+
+  // точна висота: від низу шапки сайту до низу екрана (шапка різна на телефоні й комп'ютері)
+  const rootRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const set = () => {
+      const el = rootRef.current;
+      if (!el) return;
+      el.style.setProperty('--cls-top', `${Math.max(0, Math.round(el.getBoundingClientRect().top + window.scrollY))}px`);
+    };
+    set();
+    window.addEventListener('resize', set);
+    return () => window.removeEventListener('resize', set);
+  }, []);
+
   return (
-    <div className="cls-root">
+    <div ref={rootRef} className="cls-root">
       {url ? (
         <div className="cls-book">
           {sheets.map((sh) => (
@@ -159,9 +190,17 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
         </div>
       ) : (
         <div className="cls-wait">
-          <div>
-            <p className="cls-wait-title">Чекаємо на викладача</p>
-            <p className="cls-wait-sub">Коли урок почнеться, він відкриється тут сам. Нічого натискати не треба.</p>
+          <div className="cls-wait-card">
+            <span className="cls-wait-dot" aria-hidden="true">
+              📘
+            </span>
+            <p className="cls-wait-title">{name.split(' ')[0]}, чекаємо на викладача</p>
+            <p className="cls-wait-sub">Урок відкриється тут сам — нічого натискати не треба. Сторінку можна не оновлювати.</p>
+            <p className="cls-wait-links">
+              <a href="/learn">Мої лекції</a>
+              <a href="/words">Слова</a>
+              <a href="/dashboard">Прогрес</a>
+            </p>
           </div>
         </div>
       )}
