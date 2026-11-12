@@ -15,7 +15,7 @@ export function ArchiveButton({ studentId, archived }: { studentId: string; arch
           await setArchived(studentId, !archived);
         });
       }}
-      className="rounded-lg border border-ink-line px-3 py-1.5 text-sm text-paper-muted hover:border-gold/40 hover:text-gold disabled:opacity-50"
+      className="ww-btn ww-btn-secondary ww-btn-sm"
     >
       {archived ? 'Повернути з архіву' : 'В архів'}
     </button>

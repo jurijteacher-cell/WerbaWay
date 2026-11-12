@@ -48,19 +48,19 @@ export default async function TeacherPage() {
       <section className="mb-12">
         <Link
           href="/teacher/class"
-          className="inline-block rounded-lg bg-gold-fill px-5 py-3 text-sm font-medium text-paper hover:bg-gold-fillHover"
+          className="ww-btn ww-btn-primary ww-btn-lg"
         >
           Клас наживо →
         </Link>{' '}
         <Link
           href="/teacher/results"
-          className="inline-block rounded-lg border border-gold/40 px-5 py-3 text-sm font-medium text-gold hover:bg-gold/10"
+          className="ww-btn ww-btn-ghost ww-btn-lg"
         >
           Результати учнів з Notion →
         </Link>{' '}
         <Link
           href="/teacher/analytics"
-          className="inline-block rounded-lg border border-gold/40 px-5 py-3 text-sm font-medium text-gold hover:bg-gold/10"
+          className="ww-btn ww-btn-ghost ww-btn-lg"
         >
           Аналітика класу →
         </Link>
@@ -75,7 +75,7 @@ export default async function TeacherPage() {
             <Link
               key={lecture.slug}
               href={`/teacher/live/lectures/${lecture.slug}`}
-              className="rounded-lg border border-gold/40 px-4 py-2 text-sm text-gold hover:bg-gold/10"
+              className="ww-btn ww-btn-ghost"
             >
               {lecture.title} →
             </Link>
@@ -98,7 +98,7 @@ export default async function TeacherPage() {
                       <Link
                         key={lesson.slug}
                         href={`/teacher/live/${lesson.slug}`}
-                        className="rounded-lg border border-gold/40 px-4 py-2 text-sm text-gold hover:bg-gold/10"
+                        className="ww-btn ww-btn-ghost"
                       >
                         {lesson.title} →
                       </Link>

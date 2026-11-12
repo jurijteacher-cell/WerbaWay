@@ -191,7 +191,7 @@ export function LectureLiveBoard({
           <button
             onClick={handleAssign}
             disabled={!assignSelection || isPending}
-            className="rounded-lg bg-gold-fill px-4 py-2 text-sm font-medium text-paper hover:bg-gold-fillHover disabled:opacity-50"
+            className="ww-btn ww-btn-primary"
           >
             Призначити
           </button>

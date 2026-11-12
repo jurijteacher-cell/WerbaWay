@@ -360,7 +360,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
           type="button"
           onClick={enter}
           disabled={busy || !lessonId}
-          className="rounded-lg bg-gold-fill px-5 py-2 text-sm font-medium text-paper hover:bg-gold-fillHover disabled:opacity-50"
+          className="ww-btn ww-btn-primary"
         >
           {room.active ? 'Перейти до цього' : 'У клас'}
         </button>
@@ -369,7 +369,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             type="button"
             onClick={leave}
             disabled={busy}
-            className="rounded-lg border border-gold/40 px-4 py-2 text-sm text-gold hover:bg-gold/10 disabled:opacity-50"
+            className="ww-btn ww-btn-ghost"
           >
             У зал очікування
           </button>
@@ -383,7 +383,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
                 type="button"
                 onClick={startCourse}
                 disabled={busy || !course}
-                className="rounded-lg bg-gold-fill px-5 py-2 text-sm font-medium text-paper hover:bg-gold-fillHover disabled:opacity-50"
+                className="ww-btn ww-btn-primary"
               >
                 {room.active ? 'Перейти до цієї лекції' : 'У клас'}
               </button>
@@ -393,7 +393,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
                 type="button"
                 onClick={leave}
                 disabled={busy}
-                className="rounded-lg border border-gold/40 px-4 py-2 text-sm text-gold hover:bg-gold/10 disabled:opacity-50"
+                className="ww-btn ww-btn-ghost"
               >
                 У зал очікування
               </button>
@@ -402,7 +402,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
               type="button"
               onClick={finishLecture}
               disabled={busy || !course}
-              className="rounded-lg border border-correct/50 px-4 py-2 text-sm font-medium text-correct hover:bg-correct/10 disabled:opacity-50"
+              className="ww-btn ww-btn-success"
             >
               Завершити лекцію
             </button>
@@ -422,7 +422,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             type="button"
             onClick={() => setNotesOpen((o) => !o)}
             aria-expanded={notesOpen}
-            className="rounded-lg border border-ink-line bg-ink-raised px-3 py-1.5 text-sm text-paper hover:border-gold"
+            className="ww-btn ww-btn-secondary ww-btn-sm"
           >
             📋 {notesOpen ? 'Сховати нотатки викладача' : 'Нотатки викладача'}
           </button>
@@ -450,7 +450,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             type="button"
             onClick={() => goStep(-1)}
             disabled={busy || stepIdx <= 0}
-            className="rounded-lg border border-ink-line bg-ink-raised px-3 py-2 text-sm text-paper hover:border-gold disabled:opacity-40"
+            className="ww-btn ww-btn-secondary"
           >
             ‹ Назад
           </button>
@@ -465,7 +465,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             type="button"
             onClick={() => goStep(1)}
             disabled={busy || stepIdx >= course.steps.length - 1}
-            className="rounded-lg bg-gold-fill px-4 py-2 text-sm font-semibold text-paper hover:bg-gold-fillHover disabled:opacity-40"
+            className="ww-btn ww-btn-primary"
           >
             Далі ›
           </button>

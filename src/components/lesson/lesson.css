@@ -207,9 +207,6 @@
 
 /* ── позначка домашки ── */
 .lp-hwdone { margin-top: 2rem; padding: 1.1rem 1.25rem; border: 1px solid var(--lp-line); border-radius: 1rem; background: var(--lp-paper); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-family: var(--font-onest), sans-serif; }
-.lp-hwdone button { background: var(--lp-marker); color: var(--lp-ink); font-weight: 600; border: 0; border-radius: .7rem; padding: .6rem 1.1rem; cursor: pointer; }
-.lp-hwdone button:hover { background: #ffd84a; }
-.lp-hwdone button:disabled { opacity: .6; cursor: default; }
 
 /* ── крок у класі (без шапки) ── */
 .lp-step { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
@@ -342,12 +339,14 @@
 .lp-turn > * {
   display: grid; gap: .1rem; text-align: left; padding: .85rem 1.1rem; border-radius: 1rem; cursor: pointer; text-decoration: none;
   border: 1px solid var(--lp-line); background: var(--lp-paper); color: var(--lp-ink); font: inherit;
-  transition: transform .15s ease, border-color .2s ease, background .2s ease;
+  box-shadow: 0 2px 0 #e6dfcd;
+  transition: transform .15s ease, border-color .2s ease, background .2s ease, box-shadow .15s ease;
 }
 .lp-turn > *:hover:not(:disabled) { border-color: var(--lp-gold); transform: translateY(-1px); }
 .lp-turn > *:active:not(:disabled) { transform: translateY(1px); }
 .lp-turn > *:disabled { opacity: .45; cursor: default; }
-.lp-turn-next { text-align: right !important; background: var(--lp-marker) !important; border-color: #f2c94c !important; }
+.lp-turn-next { text-align: right !important; background: var(--lp-marker) !important; border-color: #f2c94c !important; box-shadow: 0 3px 0 #e0b93a !important; }
+.lp-turn > *:active:not(:disabled) { box-shadow: none !important; }
 .lp-turn-next:hover { background: #ffd84a !important; }
 .lp-turn-k { font-size: .8rem; color: var(--lp-muted); }
 .lp-turn-next .lp-turn-k { color: #6b5512; }

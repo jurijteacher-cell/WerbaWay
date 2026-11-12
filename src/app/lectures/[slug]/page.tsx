@@ -34,7 +34,7 @@ export default async function LecturePage({ params }: { params: { slug: string }
       {lecture.slug === 'kino' && (
         <Link
           href="/lectures/kino/movies"
-          className="mb-8 inline-flex items-center gap-2 rounded-lg border border-gold/40 px-4 py-2 text-sm text-gold transition-colors hover:bg-gold/10"
+          className="ww-btn ww-btn-ghost mb-8 inline-flex items-center gap-2"
         >
           🎬 Практика: обговорення фільмів →
         </Link>

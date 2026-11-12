@@ -143,7 +143,7 @@ export function AnswerCell({
             <button
               onClick={save}
               disabled={isPending}
-              className="rounded-lg bg-gold-fill px-4 py-1.5 text-sm font-medium text-paper hover:bg-gold-fillHover disabled:opacity-50"
+              className="ww-btn ww-btn-primary"
             >
               {isPending ? 'Зберігаю…' : 'Зберегти'}
             </button>

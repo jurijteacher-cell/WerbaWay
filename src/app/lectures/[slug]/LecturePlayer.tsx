@@ -144,14 +144,14 @@ export function LecturePlayer({
           <button
             onClick={() => setActiveIndex((i) => Math.max(0, i - 1))}
             disabled={activeIndex === 0}
-            className="rounded-lg border border-ink-line px-4 py-2 text-sm text-paper-muted transition-colors hover:border-gold hover:text-gold disabled:cursor-not-allowed disabled:opacity-30"
+            className="ww-btn ww-btn-secondary"
           >
             ← Попередня
           </button>
           <button
             onClick={() => setActiveIndex((i) => Math.min(flat.length - 1, i + 1))}
             disabled={activeIndex === flat.length - 1}
-            className="rounded-lg border border-ink-line px-4 py-2 text-sm text-paper-muted transition-colors hover:border-gold hover:text-gold disabled:cursor-not-allowed disabled:opacity-30"
+            className="ww-btn ww-btn-secondary"
           >
             Наступна →
           </button>

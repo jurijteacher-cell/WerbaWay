@@ -106,13 +106,14 @@ export function WordGame({
             {words.length} слів · запам’ятано <b className="text-paper">{knownCount}</b>
           </p>
         </div>
-        <div className="flex gap-1 rounded-xl border border-ink-line bg-ink-raised p-1 text-sm">
+        <div className="ww-nav">
           {(['cards', 'match', 'quiz'] as const).map((m) => (
             <button
               key={m}
               type="button"
               onClick={() => setMode(m)}
-              className={`rounded-lg px-3 py-1.5 ${mode === m ? 'bg-gold-fill font-semibold text-paper' : 'text-paper-muted hover:text-paper'}`}
+              className="ww-nav-link"
+              aria-current={mode === m ? 'page' : undefined}
             >
               {m === 'cards' ? 'Картки' : m === 'match' ? 'Пари' : 'Тест'}
             </button>
@@ -160,7 +161,7 @@ function Done({ title, sub, onAgain, again }: { title: string; sub?: string; onA
     <div className="rounded-2xl border border-ink-line bg-ink-raised p-8 text-center">
       <p className="font-display text-2xl text-paper">{title}</p>
       {sub && <p className="mt-2 text-paper-muted">{sub}</p>}
-      <button type="button" onClick={onAgain} className="mt-5 rounded-lg bg-gold-fill px-5 py-2 font-semibold text-paper hover:bg-gold-fillHover">
+      <button type="button" onClick={onAgain} className="ww-btn ww-btn-primary mt-5">
         {again ?? 'Ще раз'}
       </button>
     </div>
@@ -237,14 +238,14 @@ function Cards({ pool, dir, update, onAgain }: Common) {
         <button
           type="button"
           onClick={() => answer(false)}
-          className="rounded-xl border-2 border-incorrect/40 bg-incorrect/5 py-3 font-semibold text-incorrect hover:bg-incorrect/10"
+          className="ww-btn ww-btn-danger ww-btn-lg"
         >
           ← Ще вчу
         </button>
         <button
           type="button"
           onClick={() => answer(true)}
-          className="rounded-xl border-2 border-correct/40 bg-correct/5 py-3 font-semibold text-correct hover:bg-correct/10"
+          className="ww-btn ww-btn-success ww-btn-lg"
         >
           Знаю ✓ →
         </button>
@@ -416,7 +417,7 @@ function Quiz({ pool, all, dir, update, onAgain }: Common & { all: Word[] }) {
             setPicked(null);
             setI((n) => n + 1);
           }}
-          className="mt-4 w-full rounded-xl bg-gold-fill py-3 font-semibold text-paper hover:bg-gold-fillHover"
+          className="ww-btn ww-btn-primary ww-btn-lg mt-4 w-full"
         >
           Далі →
         </button>

@@ -32,7 +32,7 @@ export function HomeworkDone({ slug, assigned, done }: { slug: string; assigned:
     <div className="lp-hwdone">
       <span>{isDone ? '✅ Домашку здано' : 'Зробив(ла) усе? Познач, щоб викладач побачив.'}</span>
       {!isDone && (
-        <button onClick={mark} disabled={busy}>
+        <button type="button" className="ww-btn ww-btn-primary" onClick={mark} disabled={busy}>
           {busy ? '…' : 'Домашку виконано'}
         </button>
       )}

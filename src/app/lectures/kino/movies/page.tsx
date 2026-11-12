@@ -206,7 +206,7 @@ export default function MoviesPracticePage() {
             <div className="mt-5 flex justify-end">
               <button
                 onClick={nextQuestion}
-                className="flex items-center gap-1.5 rounded-lg bg-gold-fill px-4 py-2 text-sm font-medium text-paper hover:bg-gold-fillHover"
+                className="ww-btn ww-btn-primary flex items-center gap-1.5"
               >
                 {questionIdx + 1 < active.questions.length ? (
                   'Далі →'

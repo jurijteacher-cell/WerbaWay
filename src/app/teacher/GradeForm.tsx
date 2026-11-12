@@ -36,14 +36,14 @@ export function GradeForm({ submissionId }: { submissionId: string }) {
         <button
           onClick={() => send(true)}
           disabled={isPending}
-          className="rounded-lg border border-correct px-3 py-1.5 text-sm text-correct transition-colors hover:bg-correct/10 disabled:opacity-50"
+          className="ww-btn ww-btn-success ww-btn-sm"
         >
           Зарахувати
         </button>
         <button
           onClick={() => send(false)}
           disabled={isPending}
-          className="rounded-lg border border-incorrect px-3 py-1.5 text-sm text-incorrect transition-colors hover:bg-incorrect/10 disabled:opacity-50"
+          className="ww-btn ww-btn-danger ww-btn-sm"
         >
           Не зарахувати
         </button>

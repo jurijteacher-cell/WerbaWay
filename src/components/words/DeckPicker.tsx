@@ -115,7 +115,7 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
                 key={m.id}
                 href={href(m.id)}
                 title={m.hint}
-                className="rounded-lg bg-gold-fill px-4 py-2 text-sm font-semibold text-paper hover:bg-gold-fillHover"
+                className="ww-btn ww-btn-primary"
               >
                 {m.label}
               </Link>

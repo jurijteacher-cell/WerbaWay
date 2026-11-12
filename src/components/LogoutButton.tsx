@@ -14,7 +14,7 @@ export function LogoutButton() {
   };
 
   return (
-    <button onClick={onClick} className="text-sm text-paper-muted transition-colors hover:text-gold">
+    <button type="button" onClick={onClick} className="ww-btn ww-btn-secondary ww-btn-sm shrink-0">
       Вийти
     </button>
   );

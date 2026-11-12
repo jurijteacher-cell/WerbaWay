@@ -28,3 +28,56 @@
     }
   }
 }
+
+/* ═══ Єдині кнопки платформи ═══
+   ww-btn + один з варіантів: primary (жовта «наліпка»), secondary (папір), ghost (контур), danger; розмір: ww-btn-sm. */
+@layer components {
+  .ww-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border px-4 py-2 text-sm font-semibold leading-tight no-underline;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .ww-btn:hover:not(:disabled):not([aria-disabled='true']) { transform: translateY(-1px); }
+  .ww-btn:active:not(:disabled):not([aria-disabled='true']) { transform: translateY(1px); box-shadow: none; }
+  .ww-btn:disabled, .ww-btn[aria-disabled='true'] { opacity: 0.45; cursor: not-allowed; }
+  .ww-btn-sm { @apply rounded-lg px-3 py-1.5 text-[13px]; }
+  .ww-btn-lg { @apply px-6 py-3 text-base; }
+
+  .ww-btn-primary {
+    background: #ffe168; border-color: #f2c94c; color: #1b2a4a;
+    box-shadow: 0 3px 0 #e0b93a;
+  }
+  .ww-btn-primary:hover:not(:disabled) { background: #ffd84a; box-shadow: 0 4px 0 #d9ae2c; }
+
+  .ww-btn-secondary {
+    background: #fbf9f4; border-color: #ddd5c2; color: #1b2a4a;
+    box-shadow: 0 2px 0 #e6dfcd;
+  }
+  .ww-btn-secondary:hover:not(:disabled) { border-color: #c9a64a; box-shadow: 0 3px 0 #ddd3bb; }
+
+  .ww-btn-ghost { background: transparent; border-color: rgba(138, 95, 23, 0.35); color: #8a5f17; }
+  .ww-btn-ghost:hover:not(:disabled) { background: rgba(255, 225, 104, 0.25); border-color: #8a5f17; }
+
+  .ww-btn-success { background: #e8f5ee; border-color: #b9dcc8; color: #17704a; box-shadow: 0 2px 0 #cfe6d8; }
+  .ww-btn-success:hover:not(:disabled) { background: #d9efe2; border-color: #17704a; }
+
+  .ww-btn-danger { background: #fdecea; border-color: #f0c2ba; color: #b83a27; box-shadow: 0 2px 0 #f3d3cd; }
+  .ww-btn-danger:hover:not(:disabled) { background: #fbdcd7; border-color: #b83a27; }
+
+  /* ── меню в шапці ── */
+  .ww-nav { @apply flex items-center gap-1 rounded-2xl border p-1; background: #fbf9f4; border-color: #e3dccb; }
+  .ww-nav-link {
+    @apply relative inline-flex items-center gap-1.5 whitespace-nowrap rounded-xl px-3 py-1.5 text-sm font-medium;
+    color: #52607a;
+    transition: color 0.2s ease, background-color 0.25s ease, transform 0.15s ease;
+  }
+  /* маркер, що «прокреслюється» знизу при наведенні */
+  .ww-nav-link::after {
+    content: ''; position: absolute; left: 0.75rem; right: 0.75rem; bottom: 0.3rem; height: 3px; border-radius: 3px;
+    background: #ffe168; transform: scaleX(0); transform-origin: left center; transition: transform 0.25s ease;
+  }
+  .ww-nav-link:hover { color: #1b2a4a; transform: translateY(-1px); }
+  .ww-nav-link:hover::after { transform: scaleX(1); }
+  .ww-nav-link[aria-current='page'] { color: #1b2a4a; font-weight: 650; background: #ffe168; box-shadow: 0 2px 0 #e0b93a; }
+  .ww-nav-link[aria-current='page']::after { display: none; }
+}

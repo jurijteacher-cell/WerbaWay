@@ -75,7 +75,7 @@ export function AccessEditor({
                   відкрито {lessonsOn} з {m.lessons.length}
                 </p>
               </div>
-              <button type="button" onClick={() => setOpen(isOpen ? null : m.code)} className="text-sm text-gold hover:text-gold-bright" aria-expanded={isOpen}>
+              <button type="button" onClick={() => setOpen(isOpen ? null : m.code)} className="ww-btn ww-btn-ghost ww-btn-sm" aria-expanded={isOpen}>
                 {isOpen ? 'Сховати лекції' : 'Окремі лекції'}
               </button>
             </div>

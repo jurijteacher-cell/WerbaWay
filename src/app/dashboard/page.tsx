@@ -122,7 +122,7 @@ export default async function DashboardPage() {
                 запам’ятано {wordsKnown} з {wordsTotal}
               </p>
             </div>
-            <span className="rounded-lg bg-gold-fill px-4 py-2 text-sm font-semibold text-paper">Тренувати →</span>
+            <span className="ww-btn ww-btn-primary">Тренувати →</span>
           </Link>
         </Section>
       )}
