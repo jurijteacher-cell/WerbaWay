@@ -11,7 +11,9 @@ import '@/components/exercises/notebook-paper.css';
    on the server, which broke hydration on every embed (whole page re-rendered on load). */
 const EMBED_CSS = `
   body > header { display: none !important; }
-  body { background: #efeae0 !important; }
+  /* нижня панель сайту не має лізти всередину вправи в Notion чи в класі */
+  .ww-tabbar { display: none !important; }
+  body { background: #efeae0 !important; padding-bottom: 0 !important; }
 `;
 
 /** Notebook chrome for Notion iframes — hide root TopNav. */

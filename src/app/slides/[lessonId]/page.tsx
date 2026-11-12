@@ -48,6 +48,12 @@ export default function SlidesPage({ params, searchParams }: Props) {
 
   return (
     <main style={{ background: '#efeae0', minHeight: '100vh' }}>
+      {/* презентацію відкривають у Notion і в класі — меню сайту туди лізти не має */}
+      <style
+        dangerouslySetInnerHTML={{
+          __html: 'body > header{display:none!important}.ww-tabbar{display:none!important}body{padding-bottom:0!important}',
+        }}
+      />
       <NotebookShell levelHint="gramatyka · prezentacja">
         <GrammarSlides
           title={raw.title ?? 'Slajdy'}

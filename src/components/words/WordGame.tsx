@@ -90,6 +90,11 @@ export function WordGame({
 
   const knownCount = words.filter((w) => stats[w.key]?.known).length;
 
+  // Тасуємо лише в браузері: на сервері порядок інший, і React сварився на розбіжність
+  // (сторінка перемальовувалась із нуля). До монтування показуємо коротку заглушку.
+  const [ready, setReady] = useState(false);
+  useEffect(() => setReady(true), []);
+
   // пул цієї сесії: фіксується при старті/перетасуванні, а не «пливе» разом із відмітками
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const pool = useMemo(() => shuffle(onlyUnknown ? words.filter((w) => !statsRef.current[w.key]?.known) : words), [words, onlyUnknown, round, mode]);
@@ -135,7 +140,9 @@ export function WordGame({
         {saveErr && <span className="text-incorrect">не вдалося зберегти, спробую ще</span>}
       </div>
 
-      {pool.length === 0 ? (
+      {!ready ? (
+        <p className="rounded-2xl border border-ink-line bg-ink-raised p-8 text-center text-paper-muted">Готуємо картки…</p>
+      ) : pool.length === 0 ? (
         <Done title="Усі слова вже запам’ятані 🎉" onAgain={() => setOnlyUnknown(false)} again="Тренувати всі слова" />
       ) : mode === 'cards' ? (
         <Cards key={`c${round}${onlyUnknown}`} pool={pool} dir={dir} update={update} stat={stat} onAgain={() => setRound((r) => r + 1)} />

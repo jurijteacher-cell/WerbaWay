@@ -200,11 +200,14 @@ export function NotebookLesson(props: Props) {
   const goalsMatch = body.match(
     /## Cele lekcji\s+([\s\S]*?)(?=\n## )/
   );
+  // цілі пишуть і списком «- », і нумерованим «1. » — приймаємо обидва
   const goalLines = goalsMatch
     ? goalsMatch[1]
         .split('\n')
-        .filter((l) => l.trim().startsWith('-'))
-        .map((l) => l.replace(/^-\s*/, '').trim())
+        .map((l) => l.trim())
+        .filter((l) => /^([-*•]|\d+[.)])\s+\S/.test(l))
+        .map((l) => l.replace(/^([-*•]|\d+[.)])\s+/, '').replace(/[;.]$/, '').trim())
+        .filter(Boolean)
     : [];
 
   const slotForImage = (keywords?: string): ImageLockSlot | undefined => {

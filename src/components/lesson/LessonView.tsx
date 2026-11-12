@@ -42,7 +42,12 @@ export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes, 
     // у класі сторінка виглядає так само, як лекція: шапка з обкладинкою, список сторінок збоку, аркуш
     return (
       <main className="lp-root lp-class">
-        <style dangerouslySetInnerHTML={{ __html: 'body > header{display:none!important}' }} />
+        <style
+          dangerouslySetInnerHTML={{
+            // всередині класу сторінка займає весь кадр: без шапки сайту й без нижньої панелі
+            __html: 'body > header{display:none!important}.ww-tabbar{display:none!important}body{padding-bottom:0!important}',
+          }}
+        />
         <LessonHero meta={meta}>
           <dl className="lp-props">
             {meta.level && (

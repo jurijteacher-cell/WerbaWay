@@ -8,6 +8,15 @@ type Props = {
   mode?: 'intro' | 'summary';
 };
 
+/** У цілях пишуть **жирним** — показуємо жирним, а не зірочками (решту тексту екрануємо) */
+function inline(src: string): string {
+  const esc = src
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+  return esc.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/`([^`]+)`/g, '<code>$1</code>');
+}
+
 export function GoalsChecklist({ goals, mode = 'intro' }: Props) {
   const [checked, setChecked] = useState<Record<number, boolean>>({});
   const [reviewed, setReviewed] = useState(false);
@@ -26,7 +35,7 @@ export function GoalsChecklist({ goals, mode = 'intro' }: Props) {
                 checked={!!checked[i]}
                 onChange={() => setChecked((c) => ({ ...c, [i]: !c[i] }))}
               />
-              <span>{g.replace(/^🎯\s*/, '')}</span>
+              <span dangerouslySetInnerHTML={{ __html: inline(g.replace(/^🎯\s*/, '')) }} />
             </label>
           </li>
         ))}

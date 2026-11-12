@@ -1131,6 +1131,8 @@
 .nb-flip {
   --acc: var(--nb-yellow);
   --acc-bg: #fff6d6;
+  /* той самий акцент, але достатньо темний, щоб цифру було видно на світлій картці */
+  --acc-ink: #9a7508;
   position: relative;
   perspective: 1200px;
   display: flex;
@@ -1139,18 +1141,22 @@
 .nb-flip.c-m {
   --acc: #6cc39c;
   --acc-bg: #e3f4ec;
+  --acc-ink: #2f7f5d;
 }
 .nb-flip.c-s {
   --acc: #74b0dd;
   --acc-bg: #e2effa;
+  --acc-ink: #2c6a99;
 }
 .nb-flip.c-c {
   --acc: #ea9277;
   --acc-bg: #fce6dd;
+  --acc-ink: #ab4f31;
 }
 .nb-flip.c-l {
   --acc: #a796da;
   --acc-bg: #eee9f9;
+  --acc-ink: #5f4b96;
 }
 .nb-flip-in {
   position: relative;
@@ -1208,7 +1214,7 @@
   font-weight: 800;
   font-size: 40px;
   line-height: 1;
-  color: var(--acc);
+  color: var(--acc-ink, var(--acc));
   margin-bottom: 8px;
 }
 .nb-face.back {
@@ -1290,7 +1296,7 @@
   margin-bottom: 3px;
 }
 .nb-face li::marker {
-  color: var(--acc);
+  color: var(--acc-ink, var(--acc));
 }
 .nb-face.front .nb-known {
   position: absolute;
