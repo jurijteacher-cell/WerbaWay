@@ -19,9 +19,24 @@ export type PageMeta = {
   moduleTitle?: string;
   cover?: string;
   notion?: string;
+  /** сторінка викладача: slug учнівської лекції, до якої вона належить */
+  teacherOf?: string;
 };
 
-export type EmbedKind = 'exam' | 'comm-tasks' | 'slides' | 'grammar' | 'hw' | 'vocab' | 'quizlet' | 'other';
+export type EmbedKind =
+  | 'exam'
+  | 'comm-tasks'
+  | 'slides'
+  | 'grammar'
+  | 'grammar-board'
+  | 'hw'
+  | 'vocab'
+  | 'notes'
+  | 'pictures'
+  | 'mock-exam'
+  | 'placement'
+  | 'quizlet'
+  | 'other';
 
 export type PageBlock =
   | { k: 'html'; html: string }
@@ -59,6 +74,7 @@ export type ClassStep = {
 const HOMEWORK_RE = /praca\s+domowa|домашн|homework/i;
 
 const DIR = path.join(process.cwd(), 'src/content/pages');
+const TEACHER_DIR = path.join(process.cwd(), 'src/content/teacher-pages');
 const SLUG_RE = /^[a-z0-9][a-z0-9-]*$/;
 
 function slugify(s: string): string {
@@ -87,8 +103,8 @@ function embedKind(src: string): EmbedKind {
   const m = src.match(/\/embed\/[^/]+\/([a-z-]+)/) || src.match(/\/slides\//);
   if (src.includes('/slides/')) return 'slides';
   const k = m?.[1];
-  if (k === 'slides' || k === 'exam' || k === 'comm-tasks' || k === 'grammar' || k === 'hw' || k === 'vocab') return k;
-  return 'other';
+  const known: EmbedKind[] = ['slides', 'exam', 'comm-tasks', 'grammar', 'grammar-board', 'hw', 'vocab', 'notes', 'pictures', 'mock-exam', 'placement'];
+  return known.includes(k as EmbedKind) ? (k as EmbedKind) : 'other';
 }
 
 /** Наші вправи лежать на цьому ж сайті: https://werba-way.vercel.app/embed/… → /embed/… */
@@ -134,6 +150,7 @@ export function parsePage(slug: string, raw: string): ParsedPage {
     moduleTitle: data.moduleTitle,
     cover: data.cover,
     notion: data.notion,
+    teacherOf: data.teacherOf,
   };
 
   // «Po tej lekcji potrafisz» — все до першого ---
@@ -233,10 +250,12 @@ export function buildPages(page: ParsedPage): BookPage[] {
     });
   }
   for (const sec of page.sections) {
-    if (sec.kind !== 'lecture' || !sec.label) continue;
-    const n = sec.label.match(/^(\d+)\.\s+(.*)$/);
-    const num = n ? n[1] : null;
-    const title = n ? n[2] : sec.label;
+    if (sec.kind !== 'lecture') continue;
+    // текст до першого заголовка (пробні іспити, короткі сторінки) — сторінка з назвою уроку
+    const label = sec.label || page.meta.title;
+    const n = label.match(/^(\d+)\.\s+(.*)$/);
+    const num = sec.label && n ? n[1] : null;
+    const title = sec.label && n ? n[2] : label;
     // заголовок розділу малює сама сторінка — з тексту його прибираємо
     const blocks = sec.blocks
       .map((b) => (b.k === 'html' ? { ...b, html: b.html.replace(/<h2\b[^>]*>[\s\S]*?<\/h2>\s*/g, '') } : b))
@@ -293,4 +312,19 @@ export function loadPage(slug: string): ParsedPage | null {
   const file = path.join(DIR, `${slug}.md`);
   if (!existsSync(file)) return null;
   return parsePage(slug, readFileSync(file, 'utf8'));
+}
+
+/** Сторінка «TEACHER · …» до лекції (лише для викладача) — файл з тим самим slug */
+export function loadTeacherPage(slug: string): ParsedPage | null {
+  if (!SLUG_RE.test(slug)) return null;
+  const file = path.join(TEACHER_DIR, `${slug}.md`);
+  if (!existsSync(file)) return null;
+  return parsePage(slug, readFileSync(file, 'utf8'));
+}
+
+export function listTeacherPages(): PageMeta[] {
+  if (!existsSync(TEACHER_DIR)) return [];
+  return readdirSync(TEACHER_DIR)
+    .filter((f) => f.endsWith('.md'))
+    .map((f) => parsePage(f.replace(/\.md$/, ''), readFileSync(path.join(TEACHER_DIR, f), 'utf8')).meta);
 }

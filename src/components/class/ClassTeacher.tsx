@@ -17,6 +17,7 @@ import {
 import { useClassChannel } from './useClassChannel';
 import { StepNav, useSteps } from './StepNav';
 import './class.css';
+import '@/components/lesson/lesson.css';
 
 type Lesson = { id: string; title: string };
 type Props = {
@@ -183,6 +184,22 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
   }
 
   const course = useSteps(courseSlug || null);
+
+  // нотатки викладача (сторінка «TEACHER · …») для обраної лекції
+  const [notesOpen, setNotesOpen] = useState(false);
+  const [notes, setNotes] = useState<{ title: string; html: string } | null>(null);
+  useEffect(() => {
+    setNotes(null);
+    if (!courseSlug) return;
+    let dead = false;
+    fetch(`/api/learn/teacher-notes?slug=${encodeURIComponent(courseSlug)}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => !dead && setNotes(d?.notes ?? null))
+      .catch(() => undefined);
+    return () => {
+      dead = true;
+    };
+  }, [courseSlug]);
   const inCourse = isCourseRoom(room) && room.active && room.lesson_id === courseSlug;
 
   const stepIdx = inCourse && course ? course.steps.findIndex((s) => s.url === room.blocks) : -1;
@@ -268,6 +285,9 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     <div className="mx-auto max-w-6xl px-4 py-8">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <h1 className="font-display text-3xl text-paper">{studentName}</h1>
+        <a href={`/teacher/students/${studentId}`} className="text-sm text-gold hover:text-gold-bright">
+          Доступ до лекцій
+        </a>
         <div className="flex items-center gap-4 text-sm text-paper-muted">
           <span className="flex items-center gap-2">
             <span className={`inline-block h-2.5 w-2.5 rounded-full ${dot}`} />
@@ -396,7 +416,27 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
       {err && <p className="mb-3 text-incorrect">Не вдалося: {err}</p>}
       {done && <p className="mb-3 text-correct">{done}</p>}
 
-      <div className={courseSlug && course ? 'grid gap-4 md:grid-cols-[16rem_minmax(0,1fr)]' : ''}>
+      {courseSlug && notes && (
+        <div className="mb-2 flex justify-end">
+          <button
+            type="button"
+            onClick={() => setNotesOpen((o) => !o)}
+            aria-expanded={notesOpen}
+            className="rounded-lg border border-ink-line bg-ink-raised px-3 py-1.5 text-sm text-paper hover:border-gold"
+          >
+            📋 {notesOpen ? 'Сховати нотатки викладача' : 'Нотатки викладача'}
+          </button>
+        </div>
+      )}
+      <div
+        className={
+          courseSlug && course
+            ? notesOpen && notes
+              ? 'grid gap-4 md:grid-cols-[14rem_minmax(0,1fr)] xl:grid-cols-[14rem_minmax(0,1fr)_24rem]'
+              : 'grid gap-4 md:grid-cols-[16rem_minmax(0,1fr)]'
+            : ''
+        }
+      >
       {courseSlug && course && (
         <aside className="md:max-h-[80vh] md:overflow-y-auto">
           <p className="mb-3 font-display text-base text-paper">{course.title}</p>
@@ -453,6 +493,13 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
         )}
       </div>
       </div>
+      {notesOpen && notes && (
+        <aside className="lp-root min-w-0 rounded-lg border border-ink-line bg-ink-raised p-4 xl:max-h-[85vh] xl:overflow-y-auto" aria-label="Нотатки викладача">
+          <p className="mb-2 text-xs text-paper-muted">Бачиш лише ти</p>
+          <p className="mb-3 font-display text-base text-paper">{notes.title}</p>
+          <div className="lp-prose" style={{ fontSize: '.95rem' }} dangerouslySetInnerHTML={{ __html: notes.html }} />
+        </aside>
+      )}
       </div>
     </div>
   );

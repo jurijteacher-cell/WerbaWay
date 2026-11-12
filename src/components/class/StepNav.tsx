@@ -32,6 +32,11 @@ const ICON: Record<string, string> = {
   grammar: '✏️',
   hw: '🏠',
   vocab: '🔤',
+  'grammar-board': '✏️',
+  notes: '🗒️',
+  pictures: '🖼️',
+  'mock-exam': '📝',
+  placement: '🎯',
   quizlet: '🔤',
   video: '▶️',
 };

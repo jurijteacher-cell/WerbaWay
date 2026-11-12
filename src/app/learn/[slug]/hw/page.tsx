@@ -1,6 +1,7 @@
 import { notFound, redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { loadPage } from '@/lib/pages/pages';
+import { canSee, getAccess } from '@/lib/pages/access';
 import { LessonView } from '@/components/lesson/LessonView';
 
 export const dynamic = 'force-dynamic';
@@ -22,8 +23,9 @@ export default async function HomeworkPage({ params }: { params: { slug: string 
     .eq('lesson_slug', params.slug)
     .maybeSingle();
 
-  const { data: profile } = await supabase.from('profiles').select('role').eq('id', user.id).single();
+  const access = await getAccess(supabase, user.id);
+  if (!canSee(page.meta, access) && !row) notFound();
   // Викладач бачить сторінку без кнопки «виконано»
-  const hw = profile?.role === 'teacher' ? null : { assigned: !!row?.homework_assigned_at, done: !!row?.homework_done_at };
+  const hw = access.isTeacher ? null : { assigned: !!row?.homework_assigned_at, done: !!row?.homework_done_at };
   return <LessonView page={page} mode="homework" hw={hw} />;
 }

@@ -13,11 +13,13 @@ type Props = {
   step?: string;
   /** lecture mode: номер сторінки (з 0) */
   pageIndex?: number;
+  /** показати викладачеві посилання на його нотатки */
+  teacherNotes?: boolean;
   /** homework mode: стан із lesson_progress */
   hw?: { assigned: boolean; done: boolean } | null;
 };
 
-export function LessonView({ page, mode, step, hw, pageIndex = 0 }: Props) {
+export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes }: Props) {
   const { meta, sections } = page;
   const book = buildPages(page);
   const lecture = sections.filter((s) => s.kind === 'lecture');
@@ -93,6 +95,14 @@ export function LessonView({ page, mode, step, hw, pageIndex = 0 }: Props) {
               <div>
                 <dt>Вправи</dt>
                 <dd>{exercises} інтерактивних вікон</dd>
+              </div>
+            )}
+            {teacherNotes && (
+              <div>
+                <dt>Викладачеві</dt>
+                <dd>
+                  <Link href={`/teacher/lesson/${meta.slug}`}>Нотатки до уроку</Link>
+                </dd>
               </div>
             )}
             {page.hasHomework && (

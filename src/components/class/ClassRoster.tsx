@@ -49,13 +49,16 @@ export function ClassRoster({ students }: { students: Student[] }) {
       {rows.map((s) => {
         const w = where[s.id] ?? 'offline';
         return (
-          <li key={s.id}>
-            <Link href={`/teacher/class/${s.id}`} className="flex items-center justify-between gap-4 px-4 py-3 hover:bg-gold/5">
+          <li key={s.id} className="flex items-center">
+            <Link href={`/teacher/class/${s.id}`} className="flex min-w-0 flex-1 items-center justify-between gap-4 px-4 py-3 hover:bg-gold/5">
               <span className="text-paper">{s.name}</span>
               <span className="flex items-center gap-2 text-sm text-paper-muted">
                 <span className={`inline-block h-2.5 w-2.5 rounded-full ${dot[w]}`} />
                 {label[w]}
               </span>
+            </Link>
+            <Link href={`/teacher/students/${s.id}`} className="shrink-0 px-4 py-3 text-sm text-gold hover:text-gold-bright">
+              Доступ
             </Link>
           </li>
         );

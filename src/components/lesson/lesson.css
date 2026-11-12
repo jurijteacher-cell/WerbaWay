@@ -361,3 +361,28 @@
   .lp-sheet, .lp-sheet::after, .lp-book.is-turning .lp-sheet.is-current { animation: none !important; }
   .lp-pagelist-item, .lp-turn > * { transition: none !important; }
 }
+
+/* ── сторінка викладача ── */
+.lp-teacher-kicker { font-family: var(--font-onest), sans-serif; color: var(--lp-muted); margin: 1.5rem 0 .3rem; }
+.lp-teacher-kicker a { color: var(--lp-gold); }
+.lp-teacher-title { font: 800 clamp(1.7rem, 4vw, 2.4rem)/1.15 var(--font-onest), sans-serif; letter-spacing: -.02em; margin: 0 0 1.4rem; }
+.lp-notes-embed { font-family: var(--font-onest), sans-serif; font-size: .95rem; }
+
+/* ── callout і тогли з Notion ── */
+.lp-callout { display: grid; grid-template-columns: 1.8rem 1fr; gap: .4rem; margin: 1.2rem 0; padding: .9rem 1.1rem; border-radius: .9rem; background: var(--lp-paper); border: 1px solid var(--lp-line); }
+.lp-callout[data-tone='yellow'] { background: #fff7d1; border-color: #f3e3a0; }
+.lp-callout[data-tone='blue'] { background: #e9f3fb; border-color: #c9e0f2; }
+.lp-callout[data-tone='green'] { background: #e8f5ee; border-color: #c4e3d2; }
+.lp-callout[data-tone='red'], .lp-callout[data-tone='pink'] { background: #fdecea; border-color: #f4ccc5; }
+.lp-callout[data-tone='purple'] { background: #f1edfb; border-color: #dcd3f3; }
+.lp-callout[data-tone='orange'], .lp-callout[data-tone='brown'] { background: #fdf0e3; border-color: #f2d8bd; }
+.lp-callout[data-tone='gray'] { background: var(--lp-soft); }
+.lp-callout-icon { font-size: 1.25rem; line-height: 1.7; }
+.lp-callout-body > :first-child { margin-top: 0; }
+.lp-callout-body > :last-child { margin-bottom: 0; }
+.lp-toggle { margin: .8rem 0; border: 1px solid var(--lp-line); border-radius: .8rem; background: var(--lp-paper); padding: .55rem .9rem; }
+.lp-toggle > summary { cursor: pointer; font-family: var(--font-onest), sans-serif; font-weight: 600; }
+.lp-toggle[open] > summary { margin-bottom: .6rem; }
+.lp-prose audio { width: 100%; margin: .6rem 0 1rem; }
+.lp-prose blockquote { margin: 1rem 0; padding: .3rem 1rem; border-left: 4px solid var(--lp-marker); color: var(--lp-ink); background: rgba(255, 225, 104, .12); border-radius: 0 .6rem .6rem 0; }
+.lp-prose code { font-size: .9em; background: var(--lp-soft); padding: .05rem .3rem; border-radius: .3rem; }

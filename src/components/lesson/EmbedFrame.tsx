@@ -11,6 +11,11 @@ const HEIGHT: Record<EmbedKind, number> = {
   grammar: 900,
   hw: 900,
   vocab: 760,
+  'grammar-board': 900,
+  notes: 760,
+  pictures: 820,
+  'mock-exam': 1100,
+  placement: 1000,
   quizlet: 520,
   other: 760,
 };
@@ -22,6 +27,11 @@ const LABEL: Record<EmbedKind, string> = {
   grammar: 'Ćwiczenia',
   hw: 'Praca domowa',
   vocab: 'Słownictwo',
+  'grammar-board': 'Gramatyka',
+  notes: 'Notatki',
+  pictures: 'Obrazki',
+  'mock-exam': 'Egzamin próbny',
+  placement: 'Test',
   quizlet: 'Fiszki',
   other: 'Ćwiczenie',
 };

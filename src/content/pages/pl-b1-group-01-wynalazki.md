@@ -6,7 +6,7 @@ number: 31
 module: pl-b1-group
 moduleTitle: Польська B1
 cover: /content/pl-b1-group-01-wynalazki/header.jpg
-notion: https://app.notion.com/p/3d896e03c7c880bdaf61de7a488b1ea6
+notion: https://app.notion.com/p/Wynalazki-kt-re-zmieni-y-histori-ludzko-ci-3d896e03c7c880bdaf61de7a488b1ea6
 ---
 
 <b>Po tej lekcji potrafisz:</b>
@@ -47,9 +47,9 @@ Pięć wynalazków, pięć różnych historii. Łączy je jedno: żaden z nich n
 ## 2. Pytania do tekstu
 
 1. Dlaczego autor tekstu twierdzi, że obraz „samotnego geniusza” jest nieprawdziwy?
-2. Na czym polegała „wojna prądów” i dlaczego prąd zmienny okazał się ważniejszy dla miast?
-3. Jak autor ocenia bombę atomową? Znajdź w tekście zdanie, które najlepiej wyraża tę ocenę.
-4. Dlaczego silnik Diesla trafił do ciężarówek, a nie do samochodów osobowych?
+1. Na czym polegała „wojna prądów” i dlaczego prąd zmienny okazał się ważniejszy dla miast?
+1. Jak autor ocenia bombę atomową? Znajdź w tekście zdanie, które najlepiej wyraża tę ocenę.
+1. Dlaczego silnik Diesla trafił do ciężarówek, a nie do samochodów osobowych?
 
 <b>Jak na egzaminie:</b> sześć zdań — prawda czy fałsz?
 
@@ -63,7 +63,7 @@ Jak na egzaminie — czytanie
 
 <b>40 słów</b> w sześciu grupach: wynalazki i nauka, elektryczność i energia, radio i internet, silniki i transport, usterki i reklamacje, zwiedzanie z grupą. Dwie ostatnie grupy przydadzą się w zadaniach komunikacyjnych. Pełna lista z tłumaczeniami jest na końcu lekcji, na stronie <b>Słowniczek</b>.
 
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-01-wynalazki/vocab">
+<embed source="/embed/pl-b1-group-01-wynalazki/vocab">
 Słownictwo — fiszki
 </embed>
 
@@ -162,12 +162,12 @@ Obejrzyj film <b>„10 wynalazków, które zmieniły życie ludzi”</b>:
 Odpowiedz pisemnie (po 1–2 zdania):
 
 1. Które wynalazki z filmu pojawiły się też na naszej lekcji?
-2. Wybierz jeden wynalazek, o którym nie mówiliśmy, i opisz go jednym zdaniem w stronie biernej.
-3. Czy zgadzasz się z kolejnością zaproponowaną w filmie? Co przesunąłbyś na pierwsze miejsce?
+1. Wybierz jeden wynalazek, o którym nie mówiliśmy, i opisz go jednym zdaniem w stronie biernej.
+1. Czy zgadzasz się z kolejnością zaproponowaną w filmie? Co przesunąłbyś na pierwsze miejsce?
 
 ### Do czytania
 
-Portal <b>„Giganci nauki”</b> Instytutu Pamięci Narodowej: [https://www.gigancinauki.pl](https://www.gigancinauki.pl)
+Portal <b>„Giganci nauki”</b> Instytutu Pamięci Narodowej: <a href="https://www.gigancinauki.pl/">https://www.gigancinauki.pl</a>
 
 Wybierz trzech polskich wynalazców albo odkrywców. O każdym napisz dwa zdania: co i kiedy zostało przez niego (albo przez nią) wynalezione lub odkryte — w stronie biernej albo w formie <i>-no / -to</i> — oraz do czego to służyło.
 
@@ -193,78 +193,78 @@ Wszystkie 40 słów lekcji w jednym miejscu. Wracaj tu przed pracą domową i pr
 ### Wynalazki i nauka
 
 | Słowo | Tłumaczenie | W zdaniu |
-|---|---|---|
-| **wynalazek** | винахід | Koło to prawdopodobnie najważniejszy wynalazek w historii. |
-| **wynalazca** | винахідник | Mój dziadek był wynalazcą-amatorem i miał w garażu własny warsztat. |
-| **odkrycie** | відкриття | To odkrycie zmieniło sposób leczenia wielu chorób. |
-| **urządzenie** | пристрій | To urządzenie działa na baterie. |
-| **przełomowy** | проривний, переломний | To była przełomowa decyzja dla całej firmy. |
-| **opatentować** | запатентувати | Moja koleżanka opatentowała nowy rodzaj zamka do roweru. |
-| **upowszechnić się** | поширитися | Płatności telefonem upowszechniły się bardzo szybko. |
+| --- | --- | --- |
+| <b>wynalazek</b> | винахід | Koło to prawdopodobnie najważniejszy wynalazek w historii. |
+| <b>wynalazca</b> | винахідник | Mój dziadek był wynalazcą-amatorem i miał w garażu własny warsztat. |
+| <b>odkrycie</b> | відкриття | To odkrycie zmieniło sposób leczenia wielu chorób. |
+| <b>urządzenie</b> | пристрій | To urządzenie działa na baterie. |
+| <b>przełomowy</b> | проривний, переломний | To była przełomowa decyzja dla całej firmy. |
+| <b>opatentować</b> | запатентувати | Moja koleżanka opatentowała nowy rodzaj zamka do roweru. |
+| <b>upowszechnić się</b> | поширитися | Płatności telefonem upowszechniły się bardzo szybko. |
 
 ### Elektryczność i energia
 
 | Słowo | Tłumaczenie | W zdaniu |
-|---|---|---|
-| **prąd zmienny** | змінний струм | W gniazdku w domu płynie prąd zmienny. |
-| **prąd stały** | постійний струм | Bateria daje prąd stały. |
-| **elektrownia** | електростанція | Za miastem budowana jest nowa elektrownia słoneczna. |
-| **energia jądrowa** | ядерна енергія | We Francji energia jądrowa daje większość prądu. |
-| **zasilać** | живити (енергією) | Lampka w ogrodzie jest zasilana panelem słonecznym. |
-| **przesyłać** | передавати | Pliki są przesyłane do chmury w kilka sekund. |
+| --- | --- | --- |
+| <b>prąd zmienny</b> | змінний струм | W gniazdku w domu płynie prąd zmienny. |
+| <b>prąd stały</b> | постійний струм | Bateria daje prąd stały. |
+| <b>elektrownia</b> | електростанція | Za miastem budowana jest nowa elektrownia słoneczna. |
+| <b>energia jądrowa</b> | ядерна енергія | We Francji energia jądrowa daje większość prądu. |
+| <b>zasilać</b> | живити (енергією) | Lampka w ogrodzie jest zasilana panelem słonecznym. |
+| <b>przesyłać</b> | передавати | Pliki są przesyłane do chmury w kilka sekund. |
 
 ### Radio i internet
 
 | Słowo | Tłumaczenie | W zdaniu |
-|---|---|---|
-| **fale radiowe** | радіохвилі | Fale radiowe słabo przechodzą przez grube betonowe ściany. |
-| **nadajnik** | передавач | Nadajnik na wzgórzu obsługuje całą okolicę. |
-| **sygnał** | сигнал | W windzie sygnał często znika. |
-| **zasięg** | покриття, зона зв'язку | W górach nie mam zasięgu, więc zadzwonię wieczorem. |
-| **sieć** | мережа | Hasło do sieci jest napisane na routerze. |
-| **przeglądarka** | браузер | Zaktualizuj przeglądarkę, bo strona się nie ładuje. |
+| --- | --- | --- |
+| <b>fale radiowe</b> | радіохвилі | Fale radiowe słabo przechodzą przez grube betonowe ściany. |
+| <b>nadajnik</b> | передавач | Nadajnik na wzgórzu obsługuje całą okolicę. |
+| <b>sygnał</b> | сигнал | W windzie sygnał często znika. |
+| <b>zasięg</b> | покриття, зона зв'язку | W górach nie mam zasięgu, więc zadzwonię wieczorem. |
+| <b>sieć</b> | мережа | Hasło do sieci jest napisane na routerze. |
+| <b>przeglądarka</b> | браузер | Zaktualizuj przeglądarkę, bo strona się nie ładuje. |
 
 ### Silniki i transport
 
 | Słowo | Tłumaczenie | W zdaniu |
-|---|---|---|
-| **silnik spalinowy** | двигун внутрішнього згоряння | Kosiarka z silnikiem spalinowym jest głośniejsza niż elektryczna. |
-| **silnik wysokoprężny** | дизельний двигун | Traktory mają zwykle silniki wysokoprężne. |
-| **paliwo** | паливо | Ceny paliwa znowu poszły w górę. |
-| **napędzać** | приводити в рух | Ten tramwaj jest napędzany prądem. |
-| **wydajny** | ефективний, продуктивний | Nowa pompa ciepła jest bardzo wydajna. |
+| --- | --- | --- |
+| <b>silnik spalinowy</b> | двигун внутрішнього згоряння | Kosiarka z silnikiem spalinowym jest głośniejsza niż elektryczna. |
+| <b>silnik wysokoprężny</b> | дизельний двигун | Traktory mają zwykle silniki wysokoprężne. |
+| <b>paliwo</b> | паливо | Ceny paliwa znowu poszły w górę. |
+| <b>napędzać</b> | приводити в рух | Ten tramwaj jest napędzany prądem. |
+| <b>wydajny</b> | ефективний, продуктивний | Nowa pompa ciepła jest bardzo wydajna. |
 
 ### Usterki i reklamacje
 
 | Słowo | Tłumaczenie | W zdaniu |
-|---|---|---|
-| **awaria** | аварія, збій | Z powodu awarii całe osiedle nie ma wody. |
-| **usterka** | несправність, дефект | Mechanik szybko znalazł usterkę w hamulcach. |
-| **zgłoszenie** | заявка, звернення | Proszę podać numer zgłoszenia. |
-| **naprawa** | ремонт | Naprawa potrwa dwa dni. |
-| **części zamienne** | запчастини | Części zamienne do tego modelu trzeba zamówić z Niemiec. |
-| **gwarancja** | гарантія | Telefon jest jeszcze na gwarancji. |
-| **reklamacja** | рекламація, скарга | Reklamację trzeba złożyć na piśmie. |
-| **paragon** | чек | Bez paragonu sklep nie przyjmie zwrotu. |
-| **zwrot pieniędzy** | повернення грошей | Zamiast naprawy poprosiłam o zwrot pieniędzy. |
-| **wymiana** | обмін, заміна | Sklep zaproponował wymianę na nowy model. |
-| **rozpatrzyć** | розглянути | Wniosek zostanie rozpatrzony w ciągu czternastu dni. |
+| --- | --- | --- |
+| <b>awaria</b> | аварія, збій | Z powodu awarii całe osiedle nie ma wody. |
+| <b>usterka</b> | несправність, дефект | Mechanik szybko znalazł usterkę w hamulcach. |
+| <b>zgłoszenie</b> | заявка, звернення | Proszę podać numer zgłoszenia. |
+| <b>naprawa</b> | ремонт | Naprawa potrwa dwa dni. |
+| <b>części zamienne</b> | запчастини | Części zamienne do tego modelu trzeba zamówić z Niemiec. |
+| <b>gwarancja</b> | гарантія | Telefon jest jeszcze na gwarancji. |
+| <b>reklamacja</b> | рекламація, скарга | Reklamację trzeba złożyć na piśmie. |
+| <b>paragon</b> | чек | Bez paragonu sklep nie przyjmie zwrotu. |
+| <b>zwrot pieniędzy</b> | повернення грошей | Zamiast naprawy poprosiłam o zwrot pieniędzy. |
+| <b>wymiana</b> | обмін, заміна | Sklep zaproponował wymianę na nowy model. |
+| <b>rozpatrzyć</b> | розглянути | Wniosek zostanie rozpatrzony w ciągu czternastu dni. |
 
 ### Zwiedzanie z grupą
 
 | Słowo | Tłumaczenie | W zdaniu |
-|---|---|---|
-| **bilet grupowy** | груповий квиток | Bilet grupowy jest tańszy niż dziesięć zwykłych. |
-| **zniżka** | знижка | Studenci mają zniżkę na wstęp. |
-| **przewodnik** | екскурсовод | Przewodnik mówił po polsku i po angielsku. |
-| **zwiedzanie** | огляд, екскурсія | Zwiedzanie zamku trwa półtorej godziny. |
-| **rezerwacja** | бронювання | Dla grup powyżej dziesięciu osób rezerwacja jest obowiązkowa. |
+| --- | --- | --- |
+| <b>bilet grupowy</b> | груповий квиток | Bilet grupowy jest tańszy niż dziesięć zwykłych. |
+| <b>zniżka</b> | знижка | Studenci mają zniżkę na wstęp. |
+| <b>przewodnik</b> | екскурсовод | Przewodnik mówił po polsku i po angielsku. |
+| <b>zwiedzanie</b> | огляд, екскурсія | Zwiedzanie zamku trwa półtorej godziny. |
+| <b>rezerwacja</b> | бронювання | Dla grup powyżej dziesięciu osób rezerwacja jest obowiązkowa. |
 
 ---
 
 ## Źródła
 
-- [A short history of the Web — CERN](https://home.cern/science/computing/the-birth-of-the-web/short-history-web/) — propozycja WWW (1989) i pierwsza strona internetowa.
-- [The Nobel Prize in Physics 1909 — NobelPrize.org](https://www.nobelprize.org/prizes/physics/1909/summary/) — Nagroda Nobla dla Marconiego i Brauna.
-- [Trinity Site — World's First Nuclear Explosion — U.S. Department of Energy](https://www.energy.gov/management/trinity-site-worlds-first-nuclear-explosion) — próba atomowa 16 lipca 1945 r.
-- [Giganci nauki — Instytut Pamięci Narodowej](https://www.gigancinauki.pl) — portal do pracy domowej.
+- <a href="https://home.cern/science/computing/the-birth-of-the-web/short-history-web/">A short history of the Web — CERN</a> — propozycja WWW (1989) i pierwsza strona internetowa.
+- <a href="https://www.nobelprize.org/prizes/physics/1909/summary/">The Nobel Prize in Physics 1909 — NobelPrize.org</a> — Nagroda Nobla dla Marconiego i Brauna.
+- <a href="https://www.energy.gov/management/trinity-site-worlds-first-nuclear-explosion">Trinity Site — World's First Nuclear Explosion — U.S. Department of Energy</a> — próba atomowa 16 lipca 1945 r.
+- <a href="https://www.gigancinauki.pl/">Giganci nauki — Instytut Pamięci Narodowej</a> — portal do pracy domowej.
