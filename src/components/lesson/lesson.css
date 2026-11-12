@@ -274,8 +274,10 @@
 .lp-pagebar-list { grid-column: 1 / -1; max-height: 60vh; overflow-y: auto; border-top: 1px solid #ebe4d3; margin-top: .2rem; }
 
 /* аркуш */
-.lp-book { position: relative; perspective: 2400px; perspective-origin: 0% 50%; }
-.lp-book.is-turning { overflow-y: clip; }
+.lp-book { position: relative; }
+/* перспектива лише на час перегортання: інакше постійний 3D-шар у деяких браузерах лишав
+   сліди закріпленої панелі вгорі — вона ніби дублювалась при прокрутці */
+.lp-book.is-turning { perspective: 2400px; perspective-origin: 0% 50%; overflow-y: clip; }
 .lp-sheet {
   position: relative;
   background: #fffdf8;
@@ -306,6 +308,7 @@
   background: linear-gradient(90deg, rgba(27, 42, 74, .28), rgba(27, 42, 74, .04) 55%, rgba(255, 255, 255, .25));
 }
 .lp-sheet.is-leaving, .lp-sheet.is-under { position: absolute; top: 0; left: 0; right: 0; }
+.lp-sheet.is-leaving, .lp-sheet.is-entering, .lp-sheet.is-under { isolation: isolate; }
 /* аркуш, що гортається, має чисту зворотну сторону: вміст ховається, папір лишається */
 .lp-sheet.is-leaving, .lp-sheet.is-entering { transform-style: preserve-3d; backface-visibility: visible; }
 .lp-sheet.is-leaving > *, .lp-sheet.is-entering > * { backface-visibility: hidden; }

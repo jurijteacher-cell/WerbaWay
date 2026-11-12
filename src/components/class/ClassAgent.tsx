@@ -9,17 +9,40 @@ import { FRAME_TAG, elementAtPath, shortText } from '@/lib/class/protocol';
  * movement) and hands every event to the parent; applies the teacher's commands (take a fresh snapshot, click an element).
  * Renders nothing. Outside class mode it does nothing and loads nothing.
  */
+/**
+ * Вправа лекції живе у своєму iframe усередині сторінки лекції, тому «те, де стоїть курсор»
+ * треба шукати крізь вкладені кадри: document.activeElement самої лекції — це сам iframe.
+ */
+function deepActive(): Element | null {
+  let el: Element | null = document.activeElement;
+  for (let i = 0; i < 4 && el && el.tagName === 'IFRAME'; i++) {
+    let doc: Document | null = null;
+    try {
+      doc = (el as HTMLIFrameElement).contentDocument;
+    } catch {
+      return el; // чужий домен — глибше не йдемо
+    }
+    const inner = doc?.activeElement ?? null;
+    if (!inner || inner === doc?.body || inner === doc?.documentElement) return el;
+    el = inner;
+  }
+  return el;
+}
+
+/** Поле вводу — перевіряємо за тегом: елемент із вкладеного кадру не є instanceof нашого вікна */
+const isField = (el: Element | null | undefined): el is HTMLInputElement | HTMLTextAreaElement =>
+  !!el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA');
+
 /** Набір за учня: пишемо в поле, де стоїть курсор, так, щоб React побачив зміну */
 function typeKey(key: string) {
-  const el = document.activeElement as HTMLInputElement | HTMLTextAreaElement | null;
-  const field = el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement;
-  if (!field) {
-    (document.activeElement as HTMLElement | null)?.dispatchEvent(
-      new KeyboardEvent('keydown', { key, bubbles: true })
-    );
+  const el = deepActive();
+  // події створюємо у вікні того кадру, де лежить поле, — інакше React там їх не впізнає
+  const win = (el?.ownerDocument?.defaultView ?? window) as Window & typeof globalThis;
+  if (!isField(el)) {
+    (el as HTMLElement | null)?.dispatchEvent(new win.KeyboardEvent('keydown', { key, bubbles: true }));
     return;
   }
-  el.dispatchEvent(new KeyboardEvent('keydown', { key, bubbles: true }));
+  el.dispatchEvent(new win.KeyboardEvent('keydown', { key, bubbles: true }));
   if (key === 'Enter') return; // саму відповідь перевіряє обробник Enter у вправі
   const start = el.selectionStart ?? el.value.length;
   const end = el.selectionEnd ?? start;
@@ -35,7 +58,7 @@ function typeKey(key: string) {
     value = value.slice(0, start) + key + value.slice(end);
     caret = start + key.length;
   } else return;
-  const proto = el instanceof HTMLTextAreaElement ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
+  const proto = el.tagName === 'TEXTAREA' ? win.HTMLTextAreaElement.prototype : win.HTMLInputElement.prototype;
   const setter = Object.getOwnPropertyDescriptor(proto, 'value')?.set;
   setter ? setter.call(el, value) : (el.value = value);
   try {
@@ -43,7 +66,7 @@ function typeKey(key: string) {
   } catch {
     /* поле без каретки (number тощо) */
   }
-  el.dispatchEvent(new Event('input', { bubbles: true }));
+  el.dispatchEvent(new win.Event('input', { bubbles: true }));
 }
 
 export function ClassAgent() {
@@ -57,6 +80,8 @@ export function ClassAgent() {
     if (!inClass) return;
 
     let stop: (() => void) | null | undefined;
+    // вікно, у якому викладач востаннє клікнув: туди йдуть прокрутка й набір
+    let lastWin: Window | null = null;
     let rec: typeof import('rrweb').record | null = null;
     let cancelled = false;
     const origin = window.location.origin;
@@ -84,7 +109,18 @@ export function ClassAgent() {
       if (m.k === 'key' && typeof m.key === 'string') {
         typeKey(m.key);
       } else if (m.k === 'scroll' && typeof m.dy === 'number') {
-        window.scrollBy({ top: m.dy, behavior: 'auto' });
+        // гортаємо той кадр, у якому викладач працює (вправа у вкладеному iframe має власну прокрутку)
+        const inner = lastWin;
+        const canScroll = (w: Window | null) => {
+          if (!w) return false;
+          try {
+            const d = w.document.scrollingElement;
+            return !!d && d.scrollHeight - d.clientHeight > 2;
+          } catch {
+            return false;
+          }
+        };
+        (canScroll(inner) ? (inner as Window) : window).scrollBy({ top: m.dy, behavior: 'auto' });
       } else if (m.k === 'need-snap') {
         rec.takeFullSnapshot(true);
       } else if (m.k === 'click' && Number.isInteger(m.id)) {
@@ -94,8 +130,17 @@ export function ClassAgent() {
         let el: Element | null = byId instanceof Element ? byId : (byId?.parentElement ?? null);
         if (!fits(el) && Array.isArray(m.path)) el = elementAtPath(document, m.path);
         if (el && fits(el)) {
-          // поле вводу спершу отримує фокус, щоб викладач міг у нього писати
-          if (el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement) el.focus();
+          lastWin = el.ownerDocument?.defaultView ?? null;
+          // поле вводу спершу отримує фокус, щоб викладач міг у нього писати (клік фокус не ставить),
+          // а разом із ним — і сам вкладений кадр, інакше курсор лишиться в лекції
+          if (isField(el)) {
+            try {
+              (el.ownerDocument?.defaultView?.frameElement as HTMLElement | null)?.focus();
+            } catch {
+              /* кадр з іншого домену — пропускаємо */
+            }
+            (el as HTMLInputElement).focus({ preventScroll: true });
+          }
           (el as HTMLElement).click();
         }
       }

@@ -143,8 +143,12 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
     if (turnTimer.current) clearTimeout(turnTimer.current);
     turnTimer.current = setTimeout(() => {
       setSheets((fs) => {
-        const top = fs.find((f) => f.id === id);
-        return top && top.role !== 'incoming' ? [{ ...top, role: 'current' }] : fs;
+        // лишаємо тільки найсвіжіший аркуш: якщо за цей час учитель гортнув ще раз,
+        // прибирати треба новий стан, а не підміняти його старим
+        const top = fs[fs.length - 1];
+        if (!top) return fs;
+        if (top.role === 'incoming') return fs.length > 1 ? fs.slice(-2) : fs;
+        return fs.length === 1 && top.role === 'current' ? fs : [{ ...top, role: 'current' }];
       });
     }, 780);
   };

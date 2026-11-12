@@ -19,6 +19,11 @@ import { StepNav, useSteps } from './StepNav';
 import './class.css';
 import '@/components/lesson/lesson.css';
 
+/** Межі масштабу дзеркала: 1 = екран учня один в один */
+const ZOOM_MIN = 0.3;
+const ZOOM_MAX = 3;
+const ZOOM_STEP = 1.1;
+
 type Lesson = { id: string; title: string };
 type Props = {
   studentId: string;
@@ -67,22 +72,34 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
   const sendRef = useRef<(m: ClassMsg) => Promise<boolean>>(() => Promise.resolve(false));
   const gotFrame = useRef(false);
 
+  const lastK = useRef(0);
   const fit = useCallback(() => {
     const stage = stageRef.current;
     const mount = mountRef.current;
     const vp = viewport.current;
     const rep = repRef.current;
     if (!stage || !mount || !vp || !rep) return;
-    // «по ширині»: екран учня займає всю ширину — так само, як лекція в нього самого;
+    // «по ширині»: екран учня займає всю ширину кадру, без пустих полів — рівно те, що бачить учень;
     // «вмістити» — щоб уся сторінка учня влазила без прокрутки
     const z = zoomRef.current;
-    const byW = (stage.clientWidth - 18) / vp.w;
-    const byH = (stage.clientHeight - 18) / vp.h;
-    const k = z === 'fit' ? Math.min(2, byW) : z === 'all' ? Math.min(2, byW, byH) : z;
+    const byW = stage.clientWidth / vp.w;
+    const byH = stage.clientHeight / vp.h;
+    // 1 = один в один з екраном учня; ширший кадр викладача картинку НЕ роздуває
+    const k = z === 'fit' ? Math.min(1, byW) : z === 'all' ? Math.min(1, byW, byH) : z;
+    // точка сторінки учня, що зараз у центрі кадру: після зміни масштабу вона лишається в центрі,
+    // інакше картинка «тікала» вправо й униз (бо збільшується від лівого верхнього кута)
+    const prev = lastK.current;
+    const cx = prev ? (stage.scrollLeft + stage.clientWidth / 2) / prev : vp.w / 2;
+    const cy = prev ? (stage.scrollTop + stage.clientHeight / 2) / prev : 0;
     rep.wrapper.style.transform = `scale(${k})`;
     rep.wrapper.style.transformOrigin = 'top left';
     mount.style.width = `${vp.w * k}px`;
     mount.style.height = `${vp.h * k}px`;
+    lastK.current = k;
+    if (prev && Math.abs(k - prev) > 0.001) {
+      stage.scrollLeft = Math.max(0, cx * k - stage.clientWidth / 2);
+      stage.scrollTop = Math.max(0, cy * k - stage.clientHeight / 2);
+    }
   }, []);
 
   const resetReplayer = useCallback(
@@ -261,9 +278,9 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     const stage = stageRef.current;
     const vp = viewport.current;
     if (!stage || !vp) return 1;
-    const byW = (stage.clientWidth - 18) / vp.w;
-    if (zoomRef.current === 'all') return Math.min(2, byW, (stage.clientHeight - 18) / vp.h);
-    return Math.min(2, byW);
+    const byW = stage.clientWidth / vp.w;
+    if (zoomRef.current === 'all') return Math.min(1, byW, stage.clientHeight / vp.h);
+    return Math.min(1, byW);
   };
 
   const course = useSteps(courseSlug || null);
@@ -467,7 +484,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             <span className="mr-1">Масштаб</span>
             <button
               type="button"
-              onClick={() => setZoom((z) => Math.max(0.3, (typeof z === 'number' ? z : zoomNow()) - 0.1))}
+              onClick={() => setZoom((z) => Math.max(ZOOM_MIN, (typeof z === 'number' ? z : zoomNow()) / ZOOM_STEP))}
               className="ww-btn ww-btn-secondary ww-btn-sm"
               aria-label="Зменшити"
             >
@@ -475,7 +492,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             </button>
             <button
               type="button"
-              onClick={() => setZoom((z) => Math.min(2, (typeof z === 'number' ? z : zoomNow()) + 0.1))}
+              onClick={() => setZoom((z) => Math.min(ZOOM_MAX, (typeof z === 'number' ? z : zoomNow()) * ZOOM_STEP))}
               className="ww-btn ww-btn-secondary ww-btn-sm"
               aria-label="Збільшити"
             >
@@ -485,8 +502,9 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
               type="button"
               onClick={() => setZoom('fit')}
               className={`ww-btn ww-btn-sm ${zoom === 'fit' ? 'ww-btn-primary' : 'ww-btn-secondary'}`}
+              title="Як на екрані учня"
             >
-              по ширині
+              як в учня
             </button>
             <button
               type="button"
@@ -503,12 +521,12 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
       ref={stageRef}
       className={
         big
-          ? 'min-w-0 flex-1 overflow-auto bg-ink-soft p-2'
-          : 'min-w-0 overflow-auto rounded-lg border border-ink-line bg-ink-soft p-2 md:max-h-[calc(100vh-13rem)]'
+          ? 'cls-stage min-w-0 flex-1 overflow-auto'
+          : 'cls-stage min-w-0 overflow-auto rounded-lg border border-ink-line md:max-h-[calc(100vh-11rem)]'
       }
     >
         <div ref={turnRef} className={`relative mx-auto ${hasFrame ? '' : 'hidden'}`} style={{ width: 'fit-content' }}>
-          <div ref={mountRef} className="cls-mirror relative overflow-hidden bg-white" />
+          <div ref={mountRef} className="cls-mirror relative overflow-hidden" />
           {pult && hasFrame && (
             <div
               ref={pultRef}
@@ -534,7 +552,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
   );
 
   return (
-    <div className="mx-auto max-w-[1700px] px-4 py-8">
+    <div className="mx-auto max-w-[2200px] px-3 py-6">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <div className="flex flex-wrap items-center gap-3">
           <h1 className="font-display text-3xl text-paper">{studentName}</h1>
@@ -704,13 +722,13 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
         className={
           courseSlug && course
             ? notesOpen && notes
-              ? 'grid gap-4 md:grid-cols-[14rem_minmax(0,1fr)] xl:grid-cols-[14rem_minmax(0,1fr)_24rem]'
-              : 'grid gap-4 md:grid-cols-[16rem_minmax(0,1fr)]'
+              ? 'grid gap-3 md:grid-cols-[12rem_minmax(0,1fr)] xl:grid-cols-[12rem_minmax(0,1fr)_22rem]'
+              : 'grid gap-3 md:grid-cols-[13rem_minmax(0,1fr)]'
             : ''
         }
       >
       {courseSlug && course && (
-        <aside className="md:sticky md:top-4 md:max-h-[calc(100vh-13rem)] md:self-start md:overflow-y-auto">
+        <aside className="md:sticky md:top-4 md:max-h-[calc(100vh-11rem)] md:self-start md:overflow-y-auto">
           <p className="mb-3 font-display text-base text-paper">{course.title}</p>
           <StepNav steps={course.steps} currentUrl={inCourse ? room.blocks : null} onPick={pickStep} disabled={busy} />
         </aside>
