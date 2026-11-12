@@ -134,7 +134,7 @@
     border-top: 1px solid #ddd5c2; box-shadow: 0 -8px 24px -18px rgba(27, 42, 74, 0.45);
   }
   /* місце під панеллю внизу сторінки, щоб вона не закривала кінець вмісту */
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     body:has(.ww-tabbar) { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
     .ww-search-trigger kbd { display: none; }
     .ww-search-trigger { width: 42px; padding: 0; justify-content: center; }

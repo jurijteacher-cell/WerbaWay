@@ -97,7 +97,7 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
         })}
       </div>
 
-      <div className="fixed inset-x-0 bottom-[calc(68px+env(safe-area-inset-bottom))] z-10 border-t md:bottom-0 border-ink-line bg-ink-raised/95 px-4 py-3 backdrop-blur">
+      <div className="fixed inset-x-0 bottom-[calc(68px+env(safe-area-inset-bottom))] z-10 border-t lg:bottom-0 border-ink-line bg-ink-raised/95 px-4 py-3 backdrop-blur">
         <div className="mx-auto flex max-w-4xl flex-wrap items-center gap-3">
           <p className="min-w-0 flex-1 text-sm text-paper-muted">
             {sel.length === 0 ? (

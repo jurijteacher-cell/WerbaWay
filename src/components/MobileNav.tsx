@@ -26,7 +26,7 @@ export function MobileNav({ tabs, more }: { tabs: Tab[]; more: Tab[] }) {
 
   return (
     <>
-      <nav className="ww-tabbar md:hidden" aria-label="Головне меню">
+      <nav className="ww-tabbar lg:hidden" aria-label="Головне меню">
         {tabs.map((t) => (
           <Link key={t.href} href={t.href} className="ww-tab" aria-current={t.href === active ? 'page' : undefined}>
             <Icon name={t.icon} />
