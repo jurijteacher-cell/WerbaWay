@@ -73,6 +73,13 @@ export type ClassStep = {
 
 const HOMEWORK_RE = /praca\s+domowa|домашн|homework/i;
 
+/** «1. Czytanie», «📖 1. Czytanie» → { num: '1', title: '📖 Czytanie' } */
+export function splitNumbered(label: string): { num: string | null; title: string } {
+  const m = label.match(/^((?:\p{Extended_Pictographic}|\uFE0F|\u200D)+\s*)?(\d+)\.\s+([\s\S]+)$/u);
+  if (!m) return { num: null, title: label };
+  return { num: m[2], title: `${m[1] ? m[1].trim() + ' ' : ''}${m[3]}` };
+}
+
 const DIR = path.join(process.cwd(), 'src/content/pages');
 const TEACHER_DIR = path.join(process.cwd(), 'src/content/teacher-pages');
 const SLUG_RE = /^[a-z0-9][a-z0-9-]*$/;
@@ -123,8 +130,8 @@ marked.use({
     heading(text: string, depth: number) {
       const plain = text.replace(/<[^>]+>/g, '');
       // «1. Czytanie» — розділи лекції йдуть по черзі: номер виноситься в кружечок
-      const num = depth === 2 ? text.match(/^(\d+)\.\s+([\s\S]*)$/) : null;
-      const inner = num ? `<span class="lp-num" aria-hidden="true">${num[1]}</span><span>${num[2]}</span>` : text;
+      const sp = depth === 2 ? splitNumbered(text) : { num: null, title: text };
+      const inner = sp.num ? `<span class="lp-num" aria-hidden="true">${sp.num}</span><span>${sp.title}</span>` : text;
       return `<h${depth} id="${slugify(plain)}">${inner}</h${depth}>\n`;
     },
     image(href: string, _title: string | null, text: string) {
@@ -178,8 +185,8 @@ export function parsePage(slug: string, raw: string): ParsedPage {
   const toc = sections
     .filter((x) => x.kind === 'lecture' && x.label)
     .map((x) => {
-      const n = x.label.match(/^(\d+)\.\s+(.*)$/);
-      return { id: x.id, label: n ? n[2] : x.label, num: n ? n[1] : null };
+      const sp = splitNumbered(x.label);
+      return { id: x.id, label: sp.title, num: sp.num };
     });
   return { meta, goal, sections, toc, hasHomework: sections.some((x) => x.kind === 'homework') };
 }
@@ -253,9 +260,9 @@ export function buildPages(page: ParsedPage): BookPage[] {
     if (sec.kind !== 'lecture') continue;
     // текст до першого заголовка (пробні іспити, короткі сторінки) — сторінка з назвою уроку
     const label = sec.label || page.meta.title;
-    const n = label.match(/^(\d+)\.\s+(.*)$/);
-    const num = sec.label && n ? n[1] : null;
-    const title = sec.label && n ? n[2] : label;
+    const sp = sec.label ? splitNumbered(label) : { num: null, title: label };
+    const num = sp.num;
+    const title = sp.title;
     // заголовок розділу малює сама сторінка — з тексту його прибираємо
     const blocks = sec.blocks
       .map((b) => (b.k === 'html' ? { ...b, html: b.html.replace(/<h2\b[^>]*>[\s\S]*?<\/h2>\s*/g, '') } : b))
