@@ -3,7 +3,7 @@ import { createClient } from '@/lib/supabase/server';
 import { LogoutButton } from './LogoutButton';
 import { NavLinks, type NavItem } from './NavLinks';
 import { SearchPalette } from './SearchPalette';
-import { MobileNav, type Tab } from './MobileNav';
+import { MenuDrawer, MobileNav, type Tab } from './MobileNav';
 
 export async function TopNav() {
   // Preview deployments without Supabase env: render no nav instead of crashing every page.
@@ -57,6 +57,7 @@ export async function TopNav() {
         style={{ background: 'linear-gradient(90deg,#ffe168 0,#a9dcc6 25%,#bcdcf2 50%,#f6c2af 75%,#d8cff0 100%)' }}
       />
       <div className="mx-auto flex max-w-6xl items-center gap-x-6 gap-y-3 px-4 py-2.5 lg:flex-wrap lg:py-3">
+        <MenuDrawer items={[...tabs, ...more]} />
         <Link href="/learn" className="group flex shrink-0 items-center gap-3" aria-label="Werba Way Language School — на головну">
           {/* знак з лого в кільці того ж градієнта, що й на лого */}
           <span

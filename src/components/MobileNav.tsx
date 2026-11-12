@@ -86,6 +86,102 @@ function MoreSheet({ items, active, onClose }: { items: Tab[]; active?: string; 
   );
 }
 
+/**
+ * Кнопка ☰ зліва в шапці (коли повне меню не вміщується) і бічна панель з усіма розділами.
+ */
+export function MenuDrawer({ items }: { items: Tab[] }) {
+  const path = usePathname() ?? '/';
+  const [open, setOpen] = useState(false);
+  const active = items
+    .filter((t) => path === t.href || path.startsWith(`${t.href}/`))
+    .sort((a, b) => b.href.length - a.href.length)[0]?.href;
+
+  useEffect(() => setOpen(false), [path]);
+
+  return (
+    <>
+      <button
+        type="button"
+        className="ww-burger lg:hidden"
+        aria-label="Відкрити меню"
+        aria-expanded={open}
+        onClick={() => setOpen(true)}
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+      {open && createPortal(<Drawer items={items} active={active} onClose={() => setOpen(false)} />, document.body)}
+    </>
+  );
+}
+
+function Drawer({ items, active, onClose }: { items: Tab[]; active?: string; onClose: () => void }) {
+  const router = useRouter();
+  const [closing, setClosing] = useState(false);
+  const close = () => {
+    setClosing(true);
+    setTimeout(onClose, 200);
+  };
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose();
+    window.addEventListener('keydown', onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    document.querySelector<HTMLElement>('.ww-drawer a')?.focus();
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [onClose]);
+
+  async function logout() {
+    await createClient().auth.signOut();
+    onClose();
+    router.push('/login');
+    router.refresh();
+  }
+
+  return (
+    <div
+      className={`ww-drawer-backdrop${closing ? ' is-closing' : ''}`}
+      role="presentation"
+      onMouseDown={(e) => e.target === e.currentTarget && close()}
+    >
+      <aside className="ww-drawer" role="dialog" aria-modal="true" aria-label="Меню">
+        <div className="mb-5 flex items-center justify-between">
+          <span className="flex items-center gap-2.5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/brand/werba-mark.png" alt="" width={36} height={36} className="rounded-full" />
+            <span className="text-[15px] font-semibold tracking-[0.14em]">
+              <span style={{ color: '#13213f' }}>WERBA</span> <span style={{ color: '#b8964f' }}>WAY</span>
+            </span>
+          </span>
+          <button type="button" onClick={close} className="ww-btn ww-btn-ghost ww-btn-sm" aria-label="Закрити меню">
+            ✕
+          </button>
+        </div>
+        <nav aria-label="Головне меню">
+          <ul className="space-y-1">
+            {items.map((t, i) => (
+              <li key={t.href} style={{ animationDelay: `${60 + i * 35}ms` }} className="ww-drawer-item">
+                <Link href={t.href} className="ww-sheet-link" aria-current={t.href === active ? 'page' : undefined} onClick={onClose}>
+                  <Icon name={t.icon} />
+                  {t.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <button type="button" onClick={() => void logout()} className="ww-btn ww-btn-secondary mt-auto w-full">
+          Вийти з акаунта
+        </button>
+      </aside>
+    </div>
+  );
+}
+
 const PATHS: Record<TabIcon | 'more', JSX.Element> = {
   book: (
     <>

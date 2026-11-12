@@ -178,4 +178,33 @@
     .ww-modal-top .ww-modal-box { border-radius: 18px; animation: ww-rise 0.22s ease-out; max-height: 70vh; }
     .ww-modal-box { max-width: none !important; max-height: 88vh; border-radius: 22px 22px 0 0; padding-bottom: env(safe-area-inset-bottom); animation: ww-sheet-up 0.26s cubic-bezier(0.2, 0.9, 0.3, 1); }
   }
+
+  /* ☰ — три смужки зліва в шапці */
+  .ww-burger {
+    display: inline-flex; flex-direction: column; justify-content: center; gap: 4.5px;
+    width: 42px; height: 42px; padding: 0 11px; margin-right: -12px; flex: none;
+    border-radius: 12px; border: 1px solid #ddd5c2; background: #fbf9f4; box-shadow: 0 2px 0 #e6dfcd;
+    transition: transform 0.15s ease, border-color 0.2s ease;
+  }
+  .ww-burger span { display: block; height: 2px; border-radius: 2px; background: #1b2a4a; transition: transform 0.25s ease, width 0.25s ease; }
+  .ww-burger span:nth-child(2) { width: 70%; }
+  .ww-burger:hover { border-color: #c9a64a; transform: translateY(-1px); }
+  .ww-burger:hover span:nth-child(2) { width: 100%; }
+  .ww-burger:focus-visible { outline: 2px solid #8a5f17; outline-offset: 2px; }
+
+  .ww-drawer-backdrop { position: fixed; inset: 0; z-index: 90; background: rgba(27, 42, 74, 0.38); animation: ww-fade 0.18s ease-out; }
+  .ww-drawer {
+    position: absolute; top: 0; bottom: 0; left: 0; width: min(300px, 84vw); display: flex; flex-direction: column;
+    padding: calc(16px + env(safe-area-inset-top)) 14px calc(20px + env(safe-area-inset-bottom));
+    background: #fbf9f4; border-right: 1px solid #ddd5c2; box-shadow: 18px 0 40px -24px rgba(27, 42, 74, 0.5);
+    animation: ww-drawer-in 0.26s cubic-bezier(0.2, 0.9, 0.3, 1); overflow-y: auto;
+  }
+  .ww-drawer-item { animation: ww-drawer-item 0.3s ease-out both; }
+  .ww-drawer-backdrop.is-closing { animation: ww-fade-out 0.2s ease-in forwards; }
+  .ww-drawer-backdrop.is-closing .ww-drawer { animation: ww-drawer-out 0.2s ease-in forwards; }
+  @keyframes ww-drawer-in { from { transform: translateX(-100%); } }
+  @keyframes ww-drawer-out { to { transform: translateX(-100%); } }
+  @keyframes ww-fade-out { to { opacity: 0; } }
+  @keyframes ww-drawer-item { from { opacity: 0; transform: translateX(-10px); } }
+  @media (prefers-reduced-motion: reduce) { .ww-drawer, .ww-drawer-item, .ww-drawer-backdrop { animation: none !important; } }
 }
