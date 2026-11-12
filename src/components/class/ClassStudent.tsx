@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { FRAME_TAG, isCourseRoom, roomUrl, type ClassMsg, type RoomState } from '@/lib/class/protocol';
-import { StepNav, useSteps } from './StepNav';
+import { useSteps } from './StepNav';
 import './class.css';
 import { useClassChannel } from './useClassChannel';
 
@@ -77,6 +77,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
   }, [toFrame]);
 
   const url = roomUrl(room);
+  // кроки потрібні лише для напрямку перегортання — список сторінок малює сама лекція
   const course = useSteps(isCourseRoom(room) && room.active ? room.lesson_id : null);
 
   /* ── перегортання сторінок: нова сторінка вантажиться під поточною, потім стара перегортається ── */
@@ -133,52 +134,41 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
   };
   useEffect(() => () => void (turnTimer.current && clearTimeout(turnTimer.current)), []);
   const newestId = sheets.length ? sheets[sheets.length - 1].id : -1;
-  const dot = link === 'online' ? 'bg-correct' : link === 'connecting' ? 'bg-gold-fill' : 'bg-incorrect';
-  const label = link === 'online' ? 'на зв’язку' : link === 'connecting' ? 'підключаюсь…' : 'немає зв’язку, пробую знову';
+  const waiting = link !== 'online';
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <header className="flex items-center justify-between gap-3 border-b border-ink-line px-4 py-3">
-        <span className="font-display text-lg text-paper">Клас · {name}</span>
-        <span className="flex items-center gap-2 text-sm text-paper-muted">
-          <span className={`inline-block h-2.5 w-2.5 rounded-full ${dot}`} />
-          {label}
-        </span>
-      </header>
+    <div className="cls-root">
       {url ? (
-        <div className="flex flex-1 flex-col md:flex-row">
-          {course && (
-            <aside className="shrink-0 border-b border-ink-line p-3 md:w-64 md:overflow-y-auto md:border-b-0 md:border-r">
-              <p className="mb-3 font-display text-base text-paper">{course.title}</p>
-              <StepNav steps={course.steps} currentUrl={room.blocks} />
-            </aside>
-          )}
-          <div className="cls-book" style={{ minHeight: 'calc(100vh - 56px)' }}>
-            {sheets.map((sh) => (
-              <div key={sh.id} className={`cls-sheet is-${sh.role}`}>
-                <iframe
-                  ref={
-                    sh.id === newestId
-                      ? (el) => {
-                          frameRef.current = el;
-                        }
-                      : undefined
-                  }
-                  src={sh.url}
-                  title="Заняття"
-                  onLoad={() => onSheetLoad(sh.id)}
-                />
-              </div>
-            ))}
-          </div>
+        <div className="cls-book">
+          {sheets.map((sh) => (
+            <div key={sh.id} className={`cls-sheet is-${sh.role}`}>
+              <iframe
+                ref={
+                  sh.id === newestId
+                    ? (el) => {
+                        frameRef.current = el;
+                      }
+                    : undefined
+                }
+                src={sh.url}
+                title="Заняття"
+                onLoad={() => onSheetLoad(sh.id)}
+              />
+            </div>
+          ))}
         </div>
       ) : (
-        <div className="flex flex-1 items-center justify-center px-6 text-center">
+        <div className="cls-wait">
           <div>
-            <p className="mb-2 font-display text-3xl text-paper">Чекаємо на викладача</p>
-            <p className="text-paper-muted">Коли урок почнеться, він відкриється тут сам. Нічого натискати не треба.</p>
+            <p className="cls-wait-title">Чекаємо на викладача</p>
+            <p className="cls-wait-sub">Коли урок почнеться, він відкриється тут сам. Нічого натискати не треба.</p>
           </div>
         </div>
+      )}
+      {waiting && (
+        <p className="cls-link" role="status">
+          {link === 'connecting' ? 'підключаюсь…' : 'немає зв’язку, пробую знову'}
+        </p>
       )}
     </div>
   );

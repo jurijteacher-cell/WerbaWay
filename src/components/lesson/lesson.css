@@ -208,8 +208,11 @@
 /* ── позначка домашки ── */
 .lp-hwdone { margin-top: 2rem; padding: 1.1rem 1.25rem; border: 1px solid var(--lp-line); border-radius: 1rem; background: var(--lp-paper); display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-family: var(--font-onest), sans-serif; }
 
-/* ── крок у класі (без шапки) ── */
-.lp-step { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+/* ── сторінка у класі: та сама лекція, лише гортає викладач ── */
+.lp-class { padding-bottom: 3rem; }
+.lp-pagelist-item.is-static { cursor: default; }
+.lp-pagelist-item.is-static:hover { color: var(--lp-muted); transform: none; }
+.lp-pagelist-item.is-static[aria-current] { color: var(--lp-ink); }
 
 .lp-root :focus-visible { outline: 3px solid var(--lp-marker); outline-offset: 2px; border-radius: .3rem; }
 

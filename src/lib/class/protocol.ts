@@ -64,7 +64,8 @@ export type ClassMsg =
   | { k: 'room'; room: RoomState }
   | { k: 'click'; id: number; tag?: string; text?: string; path?: number[] };
 
-export type Presence = { role: 'student' | 'teacher'; name?: string; mode?: 'lobby' | 'class'; at: number };
+/** mode: site — учень просто десь на сайті; lobby — у залі очікування; class — у відкритому уроці */
+export type Presence = { role: 'student' | 'teacher'; name?: string; mode?: 'site' | 'lobby' | 'class'; at: number };
 
 /* ── chunking: a Realtime message is capped (256 KB on the free plan), a snapshot can be bigger ── */
 

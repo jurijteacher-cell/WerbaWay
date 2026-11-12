@@ -5,8 +5,8 @@ import { FRAME_TAG, elementAtPath, shortText } from '@/lib/class/protocol';
 
 /**
  * Class mode inside an exercise/slides page. Active only when the page is opened by /class
- * (`?class=1`, inside an iframe of the same site). Records the page DOM with rrweb and hands every
- * event to the parent; applies the teacher's commands (take a fresh snapshot, click an element).
+ * (`?class=1`, inside an iframe of the same site). Records the page DOM with rrweb (without mouse
+ * movement) and hands every event to the parent; applies the teacher's commands (take a fresh snapshot, click an element).
  * Renders nothing. Outside class mode it does nothing and loads nothing.
  */
 export function ClassAgent() {
@@ -34,7 +34,8 @@ export function ClassAgent() {
         packFn: pack,
         inlineStylesheet: true,
         recordCanvas: false,
-        sampling: { mousemove: 60, scroll: 120, input: 'last' },
+        // курсор учня викладачеві не потрібен — пишемо лише те, що він вибрав або ввів
+        sampling: { mousemove: false, scroll: 120, input: 'last' },
       });
       post({ k: 'ready' });
     })();

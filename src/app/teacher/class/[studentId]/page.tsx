@@ -30,7 +30,7 @@ export default async function TeacherClassPage({ params }: { params: { studentId
 
   return (
     <main>
-      <div className="mx-auto max-w-6xl px-4 pt-8">
+      <div className="mx-auto max-w-[1700px] px-4 pt-8">
         <Link href="/teacher/class" className="text-sm text-paper-muted hover:text-gold">
           ← Усі учні
         </Link>

@@ -1,11 +1,24 @@
 /* Клас: сторінки заняття перегортаються як аркуші блокнота (корінець зліва) */
-.cls-book { position: relative; flex: 1; perspective: 2600px; perspective-origin: 0% 50%; overflow: hidden; background: #efeae0; }
+.cls-root { display: flex; flex-direction: column; min-height: calc(100dvh - 4.5rem); background: #fbf9f4; }
+.cls-book { position: relative; flex: 1; min-height: 0; perspective: 2600px; perspective-origin: 0% 50%; overflow: hidden; background: #fbf9f4; }
+
+/* зал очікування */
+.cls-wait { flex: 1; display: grid; place-items: center; padding: 3rem 1.5rem; text-align: center; color: #1b2a4a; }
+.cls-wait-title { font-family: var(--font-onest), system-ui, sans-serif; font-weight: 800; font-size: clamp(1.6rem, 4vw, 2.4rem); margin: 0 0 .5rem; }
+.cls-wait-sub { color: #52607a; margin: 0; }
+
+/* тихий рядок стану: видно, лише коли зв'язку немає */
+.cls-link {
+  position: fixed; right: .9rem; bottom: .9rem; z-index: 20; margin: 0;
+  background: #1b2a4a; color: #fbf9f4; border-radius: 999px; padding: .3rem .8rem; font-size: .8rem;
+  box-shadow: 0 10px 24px -16px rgba(27, 42, 74, .8);
+}
 .cls-sheet {
-  position: absolute; inset: 0; background: #fff;
+  position: absolute; inset: 0; background: #fbf9f4;
   transform-origin: left center; backface-visibility: hidden;
   border-left: 1px solid #ddd5c2;
 }
-.cls-sheet iframe { display: block; width: 100%; height: 100%; border: 0; background: #fff; }
+.cls-sheet iframe { display: block; width: 100%; height: 100%; border: 0; background: #fbf9f4; }
 .cls-sheet.is-current { z-index: 2; }
 .cls-sheet.is-incoming { z-index: 1; }
 .cls-sheet.is-under { z-index: 1; }
@@ -20,6 +33,9 @@
 @keyframes cls-turn-out { from { transform: rotateY(0); } to { transform: rotateY(-100deg); opacity: .6; } }
 @keyframes cls-turn-in { from { transform: rotateY(-100deg); opacity: .6; } to { transform: rotateY(0); opacity: 1; } }
 @keyframes cls-shade { from { opacity: 0; } to { opacity: 1; } }
+
+/* екран викладача: курсор учня не показуємо — видно лише те, що він вибрав чи написав */
+.cls-mirror .replayer-mouse, .cls-mirror .replayer-mouse-tail { display: none !important; }
 
 /* екран викладача: дзеркало учня «перегортається», коли в учня відкрилась нова сторінка */
 .cls-mirror-turn { transform-origin: left center; animation: cls-mirror .6s cubic-bezier(.3, .8, .3, 1) both; }

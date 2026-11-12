@@ -4,6 +4,7 @@ import { LogoutButton } from './LogoutButton';
 import { NavLinks, type NavItem } from './NavLinks';
 import { SearchPalette } from './SearchPalette';
 import { MenuDrawer, MobileNav, type Tab } from './MobileNav';
+import { ClassWatcher } from './class/ClassWatcher';
 
 export async function TopNav() {
   // Preview deployments without Supabase env: render no nav instead of crashing every page.
@@ -15,7 +16,7 @@ export async function TopNav() {
 
   if (!user) return null;
 
-  const { data: profile } = await supabase.from('profiles').select('role').eq('id', user.id).single();
+  const { data: profile } = await supabase.from('profiles').select('role, full_name').eq('id', user.id).single();
   const isTeacher = profile?.role === 'teacher';
 
   const items: NavItem[] = [
@@ -51,6 +52,8 @@ export async function TopNav() {
 
   return (
     <>
+    {/* учень онлайн з будь-якої сторінки; коли викладач відкриє урок — сайт сам переведе в клас */}
+    {!isTeacher && <ClassWatcher studentId={user.id} name={(profile?.full_name as string | null) ?? undefined} />}
     <header className="border-b border-ink-line bg-ink-raised/85 backdrop-blur">
       <div
         className="h-1"

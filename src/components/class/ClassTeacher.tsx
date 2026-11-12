@@ -52,6 +52,9 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
   const [done, setDone] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
+  const [zoom, setZoom] = useState<'fit' | number>('fit');
+  const zoomRef = useRef<'fit' | number>('fit');
+  zoomRef.current = zoom;
 
   const stageRef = useRef<HTMLDivElement>(null);
   const mountRef = useRef<HTMLDivElement>(null);
@@ -67,7 +70,9 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     const vp = viewport.current;
     const rep = repRef.current;
     if (!stage || !mount || !vp || !rep) return;
-    const k = Math.min(1, stage.clientWidth / vp.w);
+    // «по ширині»: екран учня займає всю ширину — так само, як лекція в нього самого
+    const z = zoomRef.current;
+    const k = z === 'fit' ? Math.min(2, (stage.clientWidth - 8) / vp.w) : z;
     rep.wrapper.style.transform = `scale(${k})`;
     rep.wrapper.style.transformOrigin = 'top left';
     mount.style.width = `${vp.w * k}px`;
@@ -84,7 +89,8 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
         root: mount,
         liveMode: true,
         showWarning: false,
-        mouseTail: { strokeStyle: '#d4a843', lineWidth: 3 },
+        // курсор учня і слід за ним не показуємо (.cls-mirror ховає й сам маркер)
+        mouseTail: false,
       }) as unknown as Rep;
       rep.on('resize', ({ width, height }) => {
         viewport.current = { w: width, h: height };
@@ -138,7 +144,9 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
       if (m.k === 'rr') onRR(m.d);
     },
     onPresence: (all) => {
-      const s = all.find((p) => p.role === 'student') ?? null;
+      const stu = all.filter((p) => p.role === 'student');
+      // учень може бути в кількох вкладках: головна — та, що вже в класі
+      const s = stu.find((p) => p.mode === 'class') ?? stu.find((p) => p.mode === 'lobby') ?? stu[0] ?? null;
       setStudent(s);
       if (!s) {
         gotFrame.current = false;
@@ -164,6 +172,11 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     return () => window.removeEventListener('resize', on);
   }, [fit]);
 
+  // зміна зуму — одразу перемальовуємо
+  useEffect(() => {
+    fit();
+  }, [zoom, fit]);
+
   useEffect(() => () => repRef.current?.destroy?.(), []);
 
   async function setRoomState(next: RoomState) {
@@ -182,6 +195,13 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     setHasFrame(false);
     send({ k: 'room', room: next });
   }
+
+  const zoomNow = () => {
+    const stage = stageRef.current;
+    const vp = viewport.current;
+    if (!stage || !vp) return 1;
+    return Math.min(2, (stage.clientWidth - 8) / vp.w);
+  };
 
   const course = useSteps(courseSlug || null);
 
@@ -278,11 +298,17 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     if (id > 0) send({ k: 'click', id, tag: el.tagName, text: shortText(el), path: elementPath(el) });
   }
 
-  const where = !student ? 'не в мережі' : student.mode === 'class' ? 'у класі' : 'у залі очікування';
+  const where = !student
+    ? 'не в мережі'
+    : student.mode === 'class'
+      ? 'у класі'
+      : student.mode === 'site'
+        ? 'на сайті'
+        : 'у залі очікування';
   const dot = !student ? 'bg-paper-muted' : student.mode === 'class' ? 'bg-correct' : 'bg-gold-fill';
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8">
+    <div className="mx-auto max-w-[1700px] px-4 py-8">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <h1 className="font-display text-3xl text-paper">{studentName}</h1>
         <a href={`/teacher/students/${studentId}`} className="ww-btn ww-btn-secondary ww-btn-sm">
@@ -414,10 +440,38 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             </button>
           </>
         )}
-        <label className="ml-auto flex items-center gap-2 text-sm text-paper-muted">
-          <input type="checkbox" checked={pult} onChange={(e) => setPult(e.target.checked)} />
-          Пульт: клік по екрану = клік у учня
-        </label>
+        <div className="ml-auto flex items-center gap-4">
+          <div className="flex items-center gap-1 text-sm text-paper-muted">
+            <span className="mr-1">Масштаб</span>
+            <button
+              type="button"
+              onClick={() => setZoom((z) => Math.max(0.3, (z === 'fit' ? zoomNow() : z) - 0.1))}
+              className="ww-btn ww-btn-secondary ww-btn-sm"
+              aria-label="Зменшити"
+            >
+              −
+            </button>
+            <button
+              type="button"
+              onClick={() => setZoom((z) => Math.min(2, (z === 'fit' ? zoomNow() : z) + 0.1))}
+              className="ww-btn ww-btn-secondary ww-btn-sm"
+              aria-label="Збільшити"
+            >
+              +
+            </button>
+            <button
+              type="button"
+              onClick={() => setZoom('fit')}
+              className={`ww-btn ww-btn-sm ${zoom === 'fit' ? 'ww-btn-primary' : 'ww-btn-secondary'}`}
+            >
+              по ширині
+            </button>
+          </div>
+          <label className="flex items-center gap-2 text-sm text-paper-muted">
+            <input type="checkbox" checked={pult} onChange={(e) => setPult(e.target.checked)} />
+            Пульт: клік по екрану = клік у учня
+          </label>
+        </div>
       </div>
       {err && <p className="mb-3 text-incorrect">Не вдалося: {err}</p>}
       {done && <p className="mb-3 text-correct">{done}</p>}
@@ -477,9 +531,9 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
           </button>
         </div>
       )}
-      <div ref={stageRef} className="min-w-0 rounded-lg border border-ink-line bg-ink-soft p-2">
+      <div ref={stageRef} className="min-w-0 overflow-auto rounded-lg border border-ink-line bg-ink-soft p-2">
         <div ref={turnRef} className="relative mx-auto" style={{ width: 'fit-content' }}>
-          <div ref={mountRef} className="relative overflow-hidden bg-white" />
+          <div ref={mountRef} className="cls-mirror relative overflow-hidden bg-white" />
           {pult && hasFrame && (
             <div
               onClick={onStageClick}
@@ -491,9 +545,9 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
         {!hasFrame && (
           <p className="px-4 py-16 text-center text-paper-muted">
             {!student
-              ? 'Учня немає в мережі. Він має відкрити сторінку «Клас» після входу.'
+              ? 'Учня немає в мережі. Він має увійти на сайт.'
               : student.mode !== 'class'
-                ? 'Учень у залі очікування. Оберіть урок і натисніть «У клас».'
+                ? 'Учень на сайті. Оберіть урок і натисніть «У клас» — його перекине сюди.'
                 : 'Чекаю на екран учня…'}
           </p>
         )}

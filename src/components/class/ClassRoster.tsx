@@ -6,7 +6,7 @@ import { createClient } from '@/lib/supabase/client';
 import { classTopic, type Presence } from '@/lib/class/protocol';
 
 type Student = { id: string; name: string };
-type Where = 'offline' | 'lobby' | 'class';
+type Where = 'offline' | 'site' | 'lobby' | 'class';
 
 /** Teacher's list of students with who is online right now (presence on each class channel). */
 export function ClassRoster({ students }: { students: Student[] }) {
@@ -24,8 +24,13 @@ export function ClassRoster({ students }: { students: Student[] }) {
         const ch = supabase.channel(classTopic(s.id), { config: { private: true, presence: { key: `roster-${s.id}` } } });
         ch.on('presence', { event: 'sync' }, () => {
           const st = Object.values(ch.presenceState<Presence>()).flat();
-          const stu = st.find((p) => p.role === 'student');
-          setWhere((w) => ({ ...w, [s.id]: stu ? (stu.mode === 'class' ? 'class' : 'lobby') : 'offline' }));
+          const all = st.filter((p) => p.role === 'student');
+          // учень може мати кілька вкладок: показуємо найближчий до уроку стан
+          const stu = all.find((p) => p.mode === 'class') ?? all.find((p) => p.mode === 'lobby') ?? all[0];
+          setWhere((w) => ({
+            ...w,
+            [s.id]: stu ? (stu.mode === 'class' ? 'class' : stu.mode === 'site' ? 'site' : 'lobby') : 'offline',
+          }));
         });
         ch.subscribe();
         channels.push(ch);
@@ -37,9 +42,19 @@ export function ClassRoster({ students }: { students: Student[] }) {
     };
   }, [students]);
 
-  const label: Record<Where, string> = { offline: 'не в мережі', lobby: 'у залі очікування', class: 'у класі' };
-  const dot: Record<Where, string> = { offline: 'bg-paper-muted', lobby: 'bg-gold-fill', class: 'bg-correct' };
-  const order: Record<Where, number> = { class: 0, lobby: 1, offline: 2 };
+  const label: Record<Where, string> = {
+    offline: 'не в мережі',
+    site: 'на сайті',
+    lobby: 'у залі очікування',
+    class: 'у класі',
+  };
+  const dot: Record<Where, string> = {
+    offline: 'bg-paper-muted',
+    site: 'bg-gold-fill',
+    lobby: 'bg-gold-fill',
+    class: 'bg-correct',
+  };
+  const order: Record<Where, number> = { class: 0, lobby: 1, site: 2, offline: 3 };
   const rows = [...students].sort(
     (a, b) => order[where[a.id] ?? 'offline'] - order[where[b.id] ?? 'offline'] || a.name.localeCompare(b.name)
   );
