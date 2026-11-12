@@ -85,9 +85,9 @@ export function useClassChannel(opts: Opts) {
   // шматки одного повідомлення шлемо по черзі: паралельна відправка плутала порядок,
   // а загублений шматок означав, що весь пакет змін до викладача не доїде
   const queue = useRef<Promise<void>>(Promise.resolve());
-  const send = (m: ClassMsg) => {
+  const send = (m: ClassMsg): Promise<boolean> => {
     const ch = chRef.current;
-    if (!ch || !readyRef.current) return false;
+    if (!ch || !readyRef.current) return Promise.resolve(false);
     const chunks = toChunks(m);
     queue.current = queue.current
       .then(async () => {
@@ -97,7 +97,7 @@ export function useClassChannel(opts: Opts) {
         }
       })
       .catch(() => undefined);
-    return true;
+    return queue.current.then(() => true);
   };
 
   const track = (p: Presence) => {

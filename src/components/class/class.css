@@ -21,6 +21,23 @@
 @keyframes cls-breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.09); } }
 @media (prefers-reduced-motion: reduce) { .cls-wait-dot { animation: none; } }
 
+/* гортачка учня: тонка панель унизу кадру */
+.cls-pager {
+  position: fixed; left: 50%; bottom: .9rem; transform: translateX(-50%); z-index: 15;
+  display: flex; align-items: center; gap: .5rem; max-width: min(92vw, 34rem);
+  background: #fffdf8; border: 1px solid #ddd5c2; border-radius: 999px; padding: .3rem .5rem;
+  box-shadow: 0 12px 28px -18px rgba(27, 42, 74, .7);
+  font-family: var(--font-onest), system-ui, sans-serif; font-size: .85rem; color: #1b2a4a;
+}
+.cls-pager > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 0 .2rem; }
+.cls-pager button {
+  flex: none; width: 2rem; height: 2rem; border-radius: 999px; border: 1px solid #ddd5c2;
+  background: #fbf9f4; color: #1b2a4a; font-size: 1.1rem; line-height: 1; cursor: pointer;
+}
+.cls-pager button:disabled { opacity: .35; cursor: default; }
+.cls-pager button:not(:disabled):hover { border-color: #c9a64a; }
+@media (max-width: 560px) { .cls-pager { bottom: .6rem; font-size: .8rem; } }
+
 /* тихий рядок стану: видно, лише коли зв'язку немає */
 .cls-link {
   position: fixed; right: .9rem; bottom: .9rem; z-index: 20; margin: 0;

@@ -2,6 +2,7 @@
 
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import type { BookPage } from '@/lib/pages/pages';
+import { FRAME_TAG } from '@/lib/class/protocol';
 
 const useIsoLayout = typeof window === 'undefined' ? useEffect : useLayoutEffect;
 
@@ -32,15 +33,27 @@ export function PageList({
   pages,
   idx,
   visited,
-  go,
+  go: goProp,
   compact,
+  classNav,
 }: {
   pages: BookPage[];
   idx: number;
   visited: Set<number>;
   go?: (n: number) => void;
   compact?: boolean;
+  /** у класі: клік просить викладача відкрити цю сторінку (обом одразу) */
+  classNav?: boolean;
 }) {
+  const go = classNav
+    ? (n: number) => {
+        try {
+          window.parent.postMessage({ ww: FRAME_TAG, k: 'go', url: pages[n].url }, window.location.origin);
+        } catch {
+          /* не в класі — нічого не робимо */
+        }
+      }
+    : goProp;
   const listRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<(HTMLElement | null)[]>([]);
   const [pill, setPill] = useState<{ top: number; height: number } | null>(null);

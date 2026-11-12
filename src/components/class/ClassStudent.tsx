@@ -17,7 +17,8 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
   const buf = useRef<string[]>([]);
   const batchNo = useRef(0);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const sendRef = useRef<(m: ClassMsg) => boolean>(() => false);
+  const sendRef = useRef<(m: ClassMsg) => Promise<boolean>>(() => Promise.resolve(false));
+  const inFlight = useRef(false);
 
   const toFrame = useCallback((m: Record<string, unknown>) => {
     frameRef.current?.contentWindow?.postMessage({ ww: FRAME_TAG, ...m }, window.location.origin);
@@ -31,6 +32,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
       else if (m.k === 'need-snap') toFrame({ k: 'need-snap' });
       else if (m.k === 'click') toFrame({ k: 'click', id: m.id, tag: m.tag, text: m.text, path: m.path });
       else if (m.k === 'scroll') toFrame({ k: 'scroll', dy: m.dy });
+      else if (m.k === 'key') toFrame({ k: 'key', key: m.key });
     },
     onSubscribed: () => {
       // after (re)connecting: pick up the room from the database and give the teacher a fresh picture
@@ -51,14 +53,23 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [room.active, link]);
 
-  // events from the exercise iframe → batched to the teacher (≈2 messages a second at most)
+  // події з вправи → викладачеві: відправляємо майже одразу, наступну порцію —
+  // щойно попередня пішла (так немає ні затримки, ні лавини повідомлень)
   useEffect(() => {
     const flush = () => {
       timer.current = null;
       if (!buf.current.length) return;
+      if (inFlight.current) {
+        timer.current = setTimeout(flush, 60);
+        return;
+      }
       const batch = buf.current;
       buf.current = [];
-      sendRef.current({ k: 'rr', d: batch, n: ++batchNo.current });
+      inFlight.current = true;
+      void sendRef.current({ k: 'rr', d: batch, n: ++batchNo.current }).finally(() => {
+        inFlight.current = false;
+        if (buf.current.length && !timer.current) timer.current = setTimeout(flush, 0);
+      });
     };
     const onMsg = (ev: MessageEvent) => {
       if (ev.origin !== window.location.origin || ev.source !== frameRef.current?.contentWindow) return;
@@ -66,7 +77,10 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
       if (!m || m.ww !== FRAME_TAG) return;
       if (m.k === 'ev' && typeof m.e === 'string') {
         buf.current.push(m.e);
-        if (!timer.current) timer.current = setTimeout(flush, 450);
+        if (!timer.current) timer.current = setTimeout(flush, 40);
+      } else if (m.k === 'go' && typeof m.url === 'string') {
+        // учень сам обрав сторінку — просимо викладача відкрити її обом
+        sendRef.current({ k: 'go', url: m.url });
       } else if (m.k === 'ready') {
         toFrame({ k: 'need-snap' });
       }
@@ -138,6 +152,14 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
   const newestId = sheets.length ? sheets[sheets.length - 1].id : -1;
   const waiting = link !== 'online';
 
+  // гортання самим учнем: працює на будь-якому кроці, зокрема на вправах
+  const steps = course?.steps;
+  const sIdx = steps ? steps.findIndex((st) => st.url === room.blocks) : -1;
+  const goStep = (d: 1 | -1) => {
+    const st = steps && sIdx >= 0 ? steps[sIdx + d] : undefined;
+    if (st) sendRef.current({ k: 'go', url: st.url });
+  };
+
   // позначка «ця вкладка щойно була в класі» — щоб сайт не затягував назад, коли учень вийшов сам
   useEffect(() => {
     const mark = () => {
@@ -204,6 +226,22 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
             </p>
           </div>
         </div>
+      )}
+      {url && steps && sIdx >= 0 && (
+        <nav className="cls-pager" aria-label="Сторінки заняття">
+          <button type="button" onClick={() => goStep(-1)} disabled={sIdx <= 0} aria-label="Попередня сторінка">
+            ‹
+          </button>
+          <span>
+            <b>
+              {sIdx + 1} / {steps.length}
+            </b>{' '}
+            {steps[sIdx].section}
+          </span>
+          <button type="button" onClick={() => goStep(1)} disabled={sIdx >= steps.length - 1} aria-label="Наступна сторінка">
+            ›
+          </button>
+        </nav>
       )}
       {waiting && (
         <p className="cls-link" role="status">

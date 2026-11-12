@@ -9,6 +9,43 @@ import { FRAME_TAG, elementAtPath, shortText } from '@/lib/class/protocol';
  * movement) and hands every event to the parent; applies the teacher's commands (take a fresh snapshot, click an element).
  * Renders nothing. Outside class mode it does nothing and loads nothing.
  */
+/** Набір за учня: пишемо в поле, де стоїть курсор, так, щоб React побачив зміну */
+function typeKey(key: string) {
+  const el = document.activeElement as HTMLInputElement | HTMLTextAreaElement | null;
+  const field = el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement;
+  if (!field) {
+    (document.activeElement as HTMLElement | null)?.dispatchEvent(
+      new KeyboardEvent('keydown', { key, bubbles: true })
+    );
+    return;
+  }
+  el.dispatchEvent(new KeyboardEvent('keydown', { key, bubbles: true }));
+  if (key === 'Enter') return; // саму відповідь перевіряє обробник Enter у вправі
+  const start = el.selectionStart ?? el.value.length;
+  const end = el.selectionEnd ?? start;
+  let value = el.value;
+  let caret = start;
+  if (key === 'Backspace') {
+    if (start !== end) value = value.slice(0, start) + value.slice(end);
+    else if (start > 0) {
+      value = value.slice(0, start - 1) + value.slice(end);
+      caret = start - 1;
+    } else return;
+  } else if ([...key].length === 1) {
+    value = value.slice(0, start) + key + value.slice(end);
+    caret = start + key.length;
+  } else return;
+  const proto = el instanceof HTMLTextAreaElement ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
+  const setter = Object.getOwnPropertyDescriptor(proto, 'value')?.set;
+  setter ? setter.call(el, value) : (el.value = value);
+  try {
+    el.setSelectionRange(caret, caret);
+  } catch {
+    /* поле без каретки (number тощо) */
+  }
+  el.dispatchEvent(new Event('input', { bubbles: true }));
+}
+
 export function ClassAgent() {
   useEffect(() => {
     let inClass = false;
@@ -44,7 +81,9 @@ export function ClassAgent() {
       if (ev.origin !== origin || ev.source !== window.parent) return;
       const m = ev.data;
       if (!m || m.ww !== FRAME_TAG || !rec) return;
-      if (m.k === 'scroll' && typeof m.dy === 'number') {
+      if (m.k === 'key' && typeof m.key === 'string') {
+        typeKey(m.key);
+      } else if (m.k === 'scroll' && typeof m.dy === 'number') {
         window.scrollBy({ top: m.dy, behavior: 'auto' });
       } else if (m.k === 'need-snap') {
         rec.takeFullSnapshot(true);
@@ -54,7 +93,11 @@ export function ClassAgent() {
         const byId = rec.mirror.getNode(m.id);
         let el: Element | null = byId instanceof Element ? byId : (byId?.parentElement ?? null);
         if (!fits(el) && Array.isArray(m.path)) el = elementAtPath(document, m.path);
-        if (el && fits(el)) (el as HTMLElement).click();
+        if (el && fits(el)) {
+          // поле вводу спершу отримує фокус, щоб викладач міг у нього писати
+          if (el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement) el.focus();
+          (el as HTMLElement).click();
+        }
       }
     };
     window.addEventListener('message', onMessage);

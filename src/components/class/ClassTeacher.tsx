@@ -48,6 +48,8 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
   const [student, setStudent] = useState<Presence | null>(null);
   const [hasFrame, setHasFrame] = useState(false);
   const [pult, setPult] = useState(false);
+  const pultOn = useRef(false);
+  pultOn.current = pult;
   const [courseSlug, setCourseSlug] = useState<string>(isCourseRoom(initialRoom) ? initialRoom.lesson_id ?? '' : '');
   const [done, setDone] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
@@ -62,7 +64,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
   const turnRef = useRef<HTMLDivElement>(null);
   const repRef = useRef<Rep | null>(null);
   const viewport = useRef<{ w: number; h: number } | null>(null);
-  const sendRef = useRef<(m: ClassMsg) => boolean>(() => false);
+  const sendRef = useRef<(m: ClassMsg) => Promise<boolean>>(() => Promise.resolve(false));
   const gotFrame = useRef(false);
 
   const fit = useCallback(() => {
@@ -109,11 +111,13 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
   // Batches must be applied strictly one after another: a snapshot rebuilds the replayer, and events of the
   // next batch that sneak in meanwhile would be lost (the picture and the element ids then drift apart).
   const queue = useRef<Promise<void>>(Promise.resolve());
+  const mods = useRef<Promise<[typeof import('rrweb'), typeof import('@rrweb/packer')]> | null>(null);
   const onRR = useCallback(
     (packed: string[]) => {
       queue.current = queue.current
         .then(async () => {
-          const [rrweb, { unpack }] = await Promise.all([import('rrweb'), import('@rrweb/packer')]);
+          mods.current ??= Promise.all([import('rrweb'), import('@rrweb/packer')]);
+          const [rrweb, { unpack }] = await mods.current;
           let t = Date.now();
           for (const p of packed) {
             const ev = unpack(p) as { type: number; timestamp: number };
@@ -146,6 +150,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
   const lastAsk = useRef(0);
   const lastMsgAt = useRef(Date.now());
   const askedIdle = useRef(false);
+  const goUrlRef = useRef<(url: string) => void>(() => {});
   const askSnap = useCallback(() => {
     const now = Date.now();
     if (now - lastAsk.current < 1500) return;
@@ -157,6 +162,11 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     studentId,
     presence: () => ({ role: 'teacher', at: Date.now() }),
     onMessage: (m) => {
+      if (m.k === 'go') {
+        // учень сам перегорнув сторінку — відкриваємо її обом
+        goUrlRef.current(m.url);
+        return;
+      }
       if (m.k !== 'rr') return;
       lastMsgAt.current = Date.now();
       askedIdle.current = false;
@@ -298,6 +308,13 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
 
   const pickStep = (st: StepDTO) =>
     setRoomState({ active: true, lesson_id: courseSlug, embed: COURSE_EMBED, blocks: st.url });
+
+  // учень може гортати сам: беремо лише кроки поточної лекції
+  goUrlRef.current = (urlFromStudent: string) => {
+    if (!course || !room.active || busy) return;
+    const st = course.steps.find((x) => x.url === urlFromStudent);
+    if (st && st.url !== room.blocks) void pickStep(st);
+  };
   const startCourse = () => {
     if (!course) return;
     // з залу очікування повертаємось туди, де зупинились, а не на початок
@@ -363,7 +380,67 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     };
   }, [pult, hasFrame]);
 
+  // з пультом набір з клавіатури йде в поле учня (← → лишаються гортанням сторінок)
+  const onKeyRef = useRef<(e: KeyboardEvent) => void>(() => {});
+  onKeyRef.current = (e: KeyboardEvent) => {
+    if (!pultOn.current) return;
+    const t = e.target as HTMLElement | null;
+    if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName)) && t.ownerDocument === document) return;
+    // AltGr (Ctrl+Alt) дає польські літери — їх пропускаємо, справжні комбінації — ні
+    if (e.metaKey) return;
+    if (e.ctrlKey && !e.altKey) return;
+    if (e.altKey && !e.ctrlKey && [...e.key].length !== 1) return;
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') return;
+    if ([...e.key].length === 1 || e.key === 'Backspace' || e.key === 'Enter') {
+      e.preventDefault();
+      void sendRef.current({ k: 'key', key: e.key });
+    }
+  };
+
+  // символи, що приходять не клавішею (мертві клавіші, підказки, вставка)
+  const onInputRef = useRef<(e: Event) => void>(() => {});
+  onInputRef.current = (ev: Event) => {
+    const e = ev as InputEvent;
+    if (!pultOn.current || !e.data) return;
+    const t = e.target as HTMLElement | null;
+    if (t && t.ownerDocument === document) return; // викладач пише у своє поле
+    if (e.inputType !== 'insertText' && e.inputType !== 'insertCompositionText') return;
+    e.preventDefault();
+    for (const ch of e.data) void sendRef.current({ k: 'key', key: ch });
+  };
+
+  useEffect(() => {
+    if (!pult || !hasFrame) return;
+    const onKey = (e: KeyboardEvent) => onKeyRef.current(e);
+    const onInput = (e: Event) => onInputRef.current(e);
+    pultRef.current?.focus();
+    window.addEventListener('keydown', onKey);
+    window.addEventListener('beforeinput', onInput, true);
+    // дзеркало повторює фокус учня і забирає клавіатуру собі: слухаємо клавіші й усередині нього
+    const hook = setInterval(() => {
+      const doc = repRef.current?.iframe?.contentDocument as (Document & { __wwKeys?: boolean }) | null | undefined;
+      if (doc && !doc.__wwKeys) {
+        doc.__wwKeys = true;
+        doc.addEventListener('keydown', onKey, true);
+        doc.addEventListener('beforeinput', onInput, true);
+      }
+    }, 300);
+    return () => {
+      clearInterval(hook);
+      window.removeEventListener('keydown', onKey);
+      window.removeEventListener('beforeinput', onInput, true);
+      const doc = repRef.current?.iframe?.contentDocument as (Document & { __wwKeys?: boolean }) | null | undefined;
+      if (doc) {
+        doc.__wwKeys = false;
+        doc.removeEventListener('keydown', onKey, true);
+        doc.removeEventListener('beforeinput', onInput, true);
+      }
+    };
+  }, [pult, hasFrame]);
+
   function onStageClick(e: React.MouseEvent<HTMLDivElement>) {
+    // тримаємо фокус на накладці: інакше клавіші йдуть у дзеркало й не доходять до учня
+    e.currentTarget.focus();
     const rep = repRef.current;
     const vp = viewport.current;
     if (!pult || !rep || !vp) return;
@@ -436,8 +513,9 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             <div
               ref={pultRef}
               onClick={onStageClick}
-              className="absolute inset-0 cursor-pointer ring-2 ring-gold/60"
-              title="Пульт: клік = клік в учня, колесо = прокрутка в учня"
+              tabIndex={-1}
+              className="absolute inset-0 cursor-pointer outline-none ring-2 ring-gold/60"
+              title="Пульт: клік = клік в учня, колесо = прокрутка, набір з клавіатури = у поле учня"
             />
           )}
         </div>
@@ -594,7 +672,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
           {!big && zoomControls}
           <label className="flex items-center gap-2 text-sm text-paper-muted">
             <input type="checkbox" checked={pult} onChange={(e) => setPult(e.target.checked)} />
-            Пульт: клік і прокрутка — в учня
+            Пульт: клік, прокрутка й набір — в учня
           </label>
           <button type="button" onClick={() => setBig(true)} className="ww-btn ww-btn-secondary ww-btn-sm">
             ⤢ Великий екран
@@ -603,7 +681,8 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
       </div>
       {inCourse && (
         <p className="mb-3 text-xs text-paper-muted">
-          ← → гортають сторінки в учня. З пультом: клік по екрану = клік в учня, колесо = прокрутка в учня.
+          ← → гортають сторінки в учня. З пультом: клік по екрану = клік в учня, колесо = прокрутка, а те, що
+          набираєш на клавіатурі, пишеться в поле учня.
         </p>
       )}
       {err && <p className="mb-3 text-incorrect">Не вдалося: {err}</p>}

@@ -71,7 +71,7 @@ export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes, 
         </LessonHero>
         <div className="lp-pager">
           <aside className="lp-pager-rail" aria-label="Сторінки лекції">
-            <PageList pages={book} idx={i} visited={new Set(Array.from({ length: i }, (_, n) => n))} />
+            <PageList pages={book} idx={i} visited={new Set(Array.from({ length: i }, (_, n) => n))} classNav />
           </aside>
           <div className="lp-pager-main">
             <div className="lp-book">
