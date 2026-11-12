@@ -126,9 +126,13 @@ export function ClassAgent() {
       } else if (m.k === 'click' && Number.isInteger(m.id)) {
         const fits = (e: Element | null | undefined) =>
           !!e && (!m.tag || e.tagName === m.tag) && (!m.text || shortText(e) === m.text);
-        const byId = rec.mirror.getNode(m.id);
-        let el: Element | null = byId instanceof Element ? byId : (byId?.parentElement ?? null);
+        // nodeType, а не instanceof: вузол із кадру вправи належить ІНШОМУ вікну,
+        // тож `byId instanceof Element` там завжди false — і клік далі просто не йшов
+        const byId = rec.mirror.getNode(m.id) as Node | null;
+        let el: Element | null =
+          byId && byId.nodeType === 1 ? (byId as Element) : ((byId as ChildNode | null)?.parentElement ?? null);
         if (!fits(el) && Array.isArray(m.path)) el = elementAtPath(document, m.path);
+        post({ k: 'hit', ok: !!(el && fits(el)), tag: el?.tagName, deep: !!el && el.ownerDocument !== document });
         if (el && fits(el)) {
           lastWin = el.ownerDocument?.defaultView ?? null;
           // поле вводу спершу отримує фокус, щоб викладач міг у нього писати (клік фокус не ставить),

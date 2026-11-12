@@ -68,7 +68,9 @@ export type ClassMsg =
   /** викладач друкує за учня: один символ, Backspace або Enter у поле, де стоїть курсор */
   | { k: 'key'; key: string }
   /** учень сам перейшов на іншу сторінку лекції — викладач відкриває її обом */
-  | { k: 'go'; url: string };
+  | { k: 'go'; url: string }
+  /** підтвердження кліка: чи знайшовся елемент у учня (видно у викладача в рядку стану) */
+  | { k: 'hit'; ok: boolean; tag?: string; deep?: boolean };
 
 /** mode: site — учень просто десь на сайті; lobby — у залі очікування; class — у відкритому уроці */
 export type Presence = { role: 'student' | 'teacher'; name?: string; mode?: 'site' | 'lobby' | 'class'; at: number };

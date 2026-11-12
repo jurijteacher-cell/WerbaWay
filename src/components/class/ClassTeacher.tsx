@@ -65,6 +65,8 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
   const zoomRef = useRef<'fit' | 'all' | number>('fit');
   zoomRef.current = zoom;
   const [big, setBig] = useState(false);
+  /** куди пішов останній клік пульта — видно лише викладачеві */
+  const [hit, setHit] = useState<string | null>(null);
 
   const stageRef = useRef<HTMLDivElement>(null);
   const mountRef = useRef<HTMLDivElement>(null);
@@ -181,6 +183,14 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     studentId,
     presence: () => ({ role: 'teacher', at: Date.now() }),
     onMessage: (m) => {
+      if (m.k === 'hit') {
+        setHit(
+          m.ok
+            ? `клік → ${m.tag ?? '?'}${m.deep ? ' у вправі' : ''}`
+            : `клік не знайшов елемент${m.tag ? ` (${m.tag})` : ''}`
+        );
+        return;
+      }
       if (m.k === 'go') {
         // учень сам перегорнув сторінку — відкриваємо її обом
         goUrlRef.current(m.url);
@@ -567,6 +577,12 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             {room.active ? 'Перейти сюди' : 'У клас'}
           </button>
         ),
+      });
+    if (pult && hit)
+      list.push({
+        id: 'hit',
+        label: 'Останній клік',
+        node: <span className="ww-hint">{hit}</span>,
       });
     list.push({
       id: 'pult',

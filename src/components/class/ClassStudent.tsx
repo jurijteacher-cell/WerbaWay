@@ -78,6 +78,8 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
       if (m.k === 'ev' && typeof m.e === 'string') {
         buf.current.push(m.e);
         if (!timer.current) timer.current = setTimeout(flush, 40);
+      } else if (m.k === 'hit') {
+        sendRef.current({ k: 'hit', ok: !!m.ok, tag: m.tag, deep: !!m.deep });
       } else if (m.k === 'go' && typeof m.url === 'string') {
         // учень сам обрав сторінку — просимо викладача відкрити її обом
         sendRef.current({ k: 'go', url: m.url });
