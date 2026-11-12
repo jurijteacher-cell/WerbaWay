@@ -55,7 +55,7 @@ export async function GET(req: Request) {
     })),
     ...byText.slice(0, Math.max(0, 8 - byTitle.length)).map((l) => ({
       title: l.meta.title,
-      sub: snippet(l.text, q),
+      sub: snippet(l, q),
       href: `/learn/${l.meta.slug}`,
       icon: l.meta.icon ?? '📘',
     })),

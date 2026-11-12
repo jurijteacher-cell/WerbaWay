@@ -1,21 +1,28 @@
 import { listPages, listTeacherPages, loadPage, groupByCourse, type PageMeta } from '@/lib/pages/pages';
 import { loadDeck, type Word } from '@/lib/words';
 
-/** «Łódź», «LODZ» і «лодзь» шукаються однаково: малі літери, без діакритики */
-export function norm(s: string): string {
+/** текст без розмітки: теги й сутності → пробіли, пробіли стиснуті */
+function plain(s: string): string {
   return s
-    .toLowerCase()
-    .replace(/ł/g, 'l')
-    .replace(/ё/g, 'е')
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
     .replace(/<[^>]+>/g, ' ')
     .replace(/&[a-z#0-9]+;/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 }
 
-type LectureDoc = { meta: PageMeta; title: string; text: string };
+/** посимвольне згортання (довжина зберігається): малі літери, без діакритики */
+function fold(s: string): string {
+  return [...s]
+    .map((c) => c.toLowerCase().replace('ł', 'l').replace('ё', 'е').normalize('NFD').replace(/[̀-ͯ]/g, '')[0] ?? c)
+    .join('');
+}
+
+/** «Łódź», «LODZ» і «lodz» шукаються однаково */
+export function norm(s: string): string {
+  return fold(plain(s));
+}
+
+type LectureDoc = { meta: PageMeta; title: string; text: string; raw: string };
 type DeckDoc = { slug: string; words: (Word & { n: string })[] };
 
 // індекс будується раз на інстанс сервера: контент лежить у репо й змінюється лише з деплоєм
@@ -27,7 +34,8 @@ export function lectures(): LectureDoc[] {
     lectureIndex = listPages().map((meta) => {
       const page = loadPage(meta.slug);
       const html = page ? [page.goal ?? '', ...page.sections.flatMap((s) => s.blocks.map((b) => (b.k === 'html' ? b.html : b.title)))].join(' ') : '';
-      return { meta, title: norm(`${meta.title} ${meta.moduleTitle ?? ''} ${meta.level ?? ''}`), text: norm(html) };
+      const raw = plain(html);
+      return { meta, title: norm(`${meta.title} ${meta.moduleTitle ?? ''} ${meta.level ?? ''}`), text: fold(raw), raw };
     });
   }
   return lectureIndex;
@@ -46,10 +54,12 @@ export function decks(): DeckDoc[] {
 export const courses = () => groupByCourse(listPages());
 export const teacherNotes = () => listTeacherPages().map((m) => ({ meta: m, n: norm(m.title) }));
 
-/** уривок тексту навколо збігу */
-export function snippet(text: string, q: string, len = 90): string {
-  const i = text.indexOf(q);
+/** уривок оригінального тексту навколо збігу (fold зберігає позиції символів) */
+export function snippet(doc: { text: string; raw: string }, q: string, len = 90): string {
+  const i = doc.text.indexOf(q);
   if (i < 0) return '';
-  const start = Math.max(0, i - 35);
-  return (start > 0 ? '…' : '') + text.slice(start, start + len).trim() + '…';
+  const chars = [...doc.raw];
+  const at = [...doc.text.slice(0, i)].length;
+  const start = Math.max(0, at - 35);
+  return (start > 0 ? '…' : '') + chars.slice(start, start + len).join('').trim() + '…';
 }
