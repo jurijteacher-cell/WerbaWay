@@ -57,9 +57,10 @@ export function roomUrl(r: RoomState | null | undefined): string | null {
   return `/embed/${id}/${encodeURIComponent(r.embed)}?class=1${blocks}`;
 }
 
-/** Messages on the channel. `rr` = batch of rrweb events (packed strings) student → teacher. */
+/** Messages on the channel. `rr` = batch of rrweb events (packed strings) student → teacher.
+ *  `n` — номер пакета за порядком: якщо у викладача розрив, він просить свіжий знімок екрана. */
 export type ClassMsg =
-  | { k: 'rr'; d: string[] }
+  | { k: 'rr'; d: string[]; n?: number }
   | { k: 'need-snap' }
   | { k: 'room'; room: RoomState }
   | { k: 'click'; id: number; tag?: string; text?: string; path?: number[] }

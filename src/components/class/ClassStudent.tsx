@@ -15,6 +15,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
   roomRef.current = room;
   const frameRef = useRef<HTMLIFrameElement | null>(null);
   const buf = useRef<string[]>([]);
+  const batchNo = useRef(0);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const sendRef = useRef<(m: ClassMsg) => boolean>(() => false);
 
@@ -57,7 +58,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
       if (!buf.current.length) return;
       const batch = buf.current;
       buf.current = [];
-      sendRef.current({ k: 'rr', d: batch });
+      sendRef.current({ k: 'rr', d: batch, n: ++batchNo.current });
     };
     const onMsg = (ev: MessageEvent) => {
       if (ev.origin !== window.location.origin || ev.source !== frameRef.current?.contentWindow) return;

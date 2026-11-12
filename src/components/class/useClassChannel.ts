@@ -82,10 +82,21 @@ export function useClassChannel(opts: Opts) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [opts.studentId, supabase]);
 
+  // шматки одного повідомлення шлемо по черзі: паралельна відправка плутала порядок,
+  // а загублений шматок означав, що весь пакет змін до викладача не доїде
+  const queue = useRef<Promise<void>>(Promise.resolve());
   const send = (m: ClassMsg) => {
     const ch = chRef.current;
     if (!ch || !readyRef.current) return false;
-    for (const c of toChunks(m)) void ch.send({ type: 'broadcast', event: CLASS_EVENT, payload: c });
+    const chunks = toChunks(m);
+    queue.current = queue.current
+      .then(async () => {
+        for (const c of chunks) {
+          if (!readyRef.current) return;
+          await ch.send({ type: 'broadcast', event: CLASS_EVENT, payload: c });
+        }
+      })
+      .catch(() => undefined);
     return true;
   };
 

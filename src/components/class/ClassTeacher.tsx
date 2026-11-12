@@ -52,9 +52,10 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
   const [done, setDone] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
-  const [zoom, setZoom] = useState<'fit' | number>('fit');
-  const zoomRef = useRef<'fit' | number>('fit');
+  const [zoom, setZoom] = useState<'fit' | 'all' | number>('fit');
+  const zoomRef = useRef<'fit' | 'all' | number>('fit');
   zoomRef.current = zoom;
+  const [big, setBig] = useState(false);
 
   const stageRef = useRef<HTMLDivElement>(null);
   const mountRef = useRef<HTMLDivElement>(null);
@@ -70,9 +71,12 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     const vp = viewport.current;
     const rep = repRef.current;
     if (!stage || !mount || !vp || !rep) return;
-    // «по ширині»: екран учня займає всю ширину — так само, як лекція в нього самого
+    // «по ширині»: екран учня займає всю ширину — так само, як лекція в нього самого;
+    // «вмістити» — щоб уся сторінка учня влазила без прокрутки
     const z = zoomRef.current;
-    const k = z === 'fit' ? Math.min(2, (stage.clientWidth - 18) / vp.w) : z;
+    const byW = (stage.clientWidth - 18) / vp.w;
+    const byH = (stage.clientHeight - 18) / vp.h;
+    const k = z === 'fit' ? Math.min(2, byW) : z === 'all' ? Math.min(2, byW, byH) : z;
     rep.wrapper.style.transform = `scale(${k})`;
     rep.wrapper.style.transformOrigin = 'top left';
     mount.style.width = `${vp.w * k}px`;
@@ -137,11 +141,31 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     [resetReplayer]
   );
 
+  // номер наступного очікуваного пакета і час останнього запиту знімка
+  const expectSeq = useRef(0);
+  const lastAsk = useRef(0);
+  const lastMsgAt = useRef(Date.now());
+  const askedIdle = useRef(false);
+  const askSnap = useCallback(() => {
+    const now = Date.now();
+    if (now - lastAsk.current < 1500) return;
+    lastAsk.current = now;
+    sendRef.current({ k: 'need-snap' });
+  }, []);
+
   const { link, send, supabase } = useClassChannel({
     studentId,
     presence: () => ({ role: 'teacher', at: Date.now() }),
     onMessage: (m) => {
-      if (m.k === 'rr') onRR(m.d);
+      if (m.k !== 'rr') return;
+      lastMsgAt.current = Date.now();
+      askedIdle.current = false;
+      // пакет загубився по дорозі — далі картинка була б застарілою, тому просимо свіжий знімок
+      if (typeof m.n === 'number') {
+        if (expectSeq.current && m.n !== expectSeq.current) askSnap();
+        expectSeq.current = m.n + 1;
+      }
+      onRR(m.d);
     },
     onPresence: (all) => {
       const stu = all.filter((p) => p.role === 'student');
@@ -151,6 +175,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
       if (!s) {
         gotFrame.current = false;
         setHasFrame(false);
+        expectSeq.current = 0;
       }
     },
     onSubscribed: () => sendRef.current({ k: 'need-snap' }),
@@ -172,10 +197,35 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     return () => window.removeEventListener('resize', on);
   }, [fit]);
 
+  // якщо останній пакет не доїхав, а учень сидить тихо — картинка залишилась би старою назавжди
+  useEffect(() => {
+    if (!hasFrame) return;
+    const id = setInterval(() => {
+      if (askedIdle.current || Date.now() - lastMsgAt.current < 15_000) return;
+      askedIdle.current = true;
+      askSnap();
+    }, 5000);
+    return () => clearInterval(id);
+  }, [hasFrame, askSnap]);
+
   // зміна зуму — одразу перемальовуємо
   useEffect(() => {
     fit();
   }, [zoom, fit]);
+
+  // великий екран: дзеркало переїжджає в інший контейнер, тому просимо намалювати заново
+  useEffect(() => {
+    gotFrame.current = false;
+    setHasFrame(false);
+    repRef.current?.destroy?.();
+    repRef.current = null;
+    sendRef.current({ k: 'need-snap' });
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setBig(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [big]);
 
   useEffect(() => () => repRef.current?.destroy?.(), []);
 
@@ -193,6 +243,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     setRoom(next);
     gotFrame.current = false;
     setHasFrame(false);
+    expectSeq.current = 0;
     send({ k: 'room', room: next });
   }
 
@@ -200,7 +251,9 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     const stage = stageRef.current;
     const vp = viewport.current;
     if (!stage || !vp) return 1;
-    return Math.min(2, (stage.clientWidth - 18) / vp.w);
+    const byW = (stage.clientWidth - 18) / vp.w;
+    if (zoomRef.current === 'all') return Math.min(2, byW, (stage.clientHeight - 18) / vp.h);
+    return Math.min(2, byW);
   };
 
   const course = useSteps(courseSlug || null);
@@ -331,6 +384,76 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
         ? 'на сайті'
         : 'у залі очікування';
   const dot = !student ? 'bg-paper-muted' : student.mode === 'class' ? 'bg-correct' : 'bg-gold-fill';
+
+  const zoomControls = (
+          <div className={`flex items-center gap-1 text-sm text-paper-muted ${hasFrame ? '' : 'hidden'}`}>
+            <span className="mr-1">Масштаб</span>
+            <button
+              type="button"
+              onClick={() => setZoom((z) => Math.max(0.3, (typeof z === 'number' ? z : zoomNow()) - 0.1))}
+              className="ww-btn ww-btn-secondary ww-btn-sm"
+              aria-label="Зменшити"
+            >
+              −
+            </button>
+            <button
+              type="button"
+              onClick={() => setZoom((z) => Math.min(2, (typeof z === 'number' ? z : zoomNow()) + 0.1))}
+              className="ww-btn ww-btn-secondary ww-btn-sm"
+              aria-label="Збільшити"
+            >
+              +
+            </button>
+            <button
+              type="button"
+              onClick={() => setZoom('fit')}
+              className={`ww-btn ww-btn-sm ${zoom === 'fit' ? 'ww-btn-primary' : 'ww-btn-secondary'}`}
+            >
+              по ширині
+            </button>
+            <button
+              type="button"
+              onClick={() => setZoom('all')}
+              className={`ww-btn ww-btn-sm ${zoom === 'all' ? 'ww-btn-primary' : 'ww-btn-secondary'}`}
+            >
+              вмістити
+            </button>
+          </div>
+  );
+
+  const stageBox = (
+    <div
+      ref={stageRef}
+      className={
+        big
+          ? 'min-w-0 flex-1 overflow-auto bg-ink-soft p-2'
+          : 'min-w-0 overflow-auto rounded-lg border border-ink-line bg-ink-soft p-2 md:max-h-[calc(100vh-13rem)]'
+      }
+    >
+        <div ref={turnRef} className={`relative mx-auto ${hasFrame ? '' : 'hidden'}`} style={{ width: 'fit-content' }}>
+          <div ref={mountRef} className="cls-mirror relative overflow-hidden bg-white" />
+          {pult && hasFrame && (
+            <div
+              ref={pultRef}
+              onClick={onStageClick}
+              className="absolute inset-0 cursor-pointer ring-2 ring-gold/60"
+              title="Пульт: клік = клік в учня, колесо = прокрутка в учня"
+            />
+          )}
+        </div>
+        {!hasFrame && (
+          <p className="px-4 py-16 text-center text-paper-muted">
+            {!student
+              ? 'Учня немає в мережі. Він має увійти на сайт.'
+              : student.mode === 'site'
+                ? 'Учень на сайті. Оберіть урок і натисніть «У клас» — його перекине сюди.'
+                : student.mode !== 'class'
+                  ? 'Учень у класі й чекає. Оберіть урок і натисніть «У клас».'
+                : 'Чекаю на екран учня…'}
+          </p>
+        )}
+    </div>
+  );
 
   return (
     <div className="mx-auto max-w-[1700px] px-4 py-8">
@@ -468,36 +591,14 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
           </>
         )}
         <div className="ml-auto flex items-center gap-4">
-          <div className={`flex items-center gap-1 text-sm text-paper-muted ${hasFrame ? '' : 'hidden'}`}>
-            <span className="mr-1">Масштаб</span>
-            <button
-              type="button"
-              onClick={() => setZoom((z) => Math.max(0.3, (z === 'fit' ? zoomNow() : z) - 0.1))}
-              className="ww-btn ww-btn-secondary ww-btn-sm"
-              aria-label="Зменшити"
-            >
-              −
-            </button>
-            <button
-              type="button"
-              onClick={() => setZoom((z) => Math.min(2, (z === 'fit' ? zoomNow() : z) + 0.1))}
-              className="ww-btn ww-btn-secondary ww-btn-sm"
-              aria-label="Збільшити"
-            >
-              +
-            </button>
-            <button
-              type="button"
-              onClick={() => setZoom('fit')}
-              className={`ww-btn ww-btn-sm ${zoom === 'fit' ? 'ww-btn-primary' : 'ww-btn-secondary'}`}
-            >
-              по ширині
-            </button>
-          </div>
+          {!big && zoomControls}
           <label className="flex items-center gap-2 text-sm text-paper-muted">
             <input type="checkbox" checked={pult} onChange={(e) => setPult(e.target.checked)} />
             Пульт: клік і прокрутка — в учня
           </label>
+          <button type="button" onClick={() => setBig(true)} className="ww-btn ww-btn-secondary ww-btn-sm">
+            ⤢ Великий екран
+          </button>
         </div>
       </div>
       {inCourse && (
@@ -563,30 +664,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
           </button>
         </div>
       )}
-      <div ref={stageRef} className="min-w-0 overflow-auto rounded-lg border border-ink-line bg-ink-soft p-2">
-        <div ref={turnRef} className={`relative mx-auto ${hasFrame ? '' : 'hidden'}`} style={{ width: 'fit-content' }}>
-          <div ref={mountRef} className="cls-mirror relative overflow-hidden bg-white" />
-          {pult && hasFrame && (
-            <div
-              ref={pultRef}
-              onClick={onStageClick}
-              className="absolute inset-0 cursor-pointer ring-2 ring-gold/60"
-              title="Пульт: клік = клік в учня, колесо = прокрутка в учня"
-            />
-          )}
-        </div>
-        {!hasFrame && (
-          <p className="px-4 py-16 text-center text-paper-muted">
-            {!student
-              ? 'Учня немає в мережі. Він має увійти на сайт.'
-              : student.mode === 'site'
-                ? 'Учень на сайті. Оберіть урок і натисніть «У клас» — його перекине сюди.'
-                : student.mode !== 'class'
-                  ? 'Учень у класі й чекає. Оберіть урок і натисніть «У клас».'
-                : 'Чекаю на екран учня…'}
-          </p>
-        )}
-      </div>
+      {!big && stageBox}
       </div>
       {notesOpen && notes && (
         <aside className="lp-root min-w-0 rounded-lg border border-ink-line bg-ink-raised p-4 xl:max-h-[85vh] xl:overflow-y-auto" aria-label="Нотатки викладача">
@@ -596,6 +674,50 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
         </aside>
       )}
       </div>
+      {big && (
+        <div className="fixed inset-0 z-50 flex flex-col bg-ink">
+          <div className="flex flex-wrap items-center gap-2 border-b border-ink-line px-3 py-2">
+            <span className="truncate font-display text-paper">{studentName}</span>
+            {inCourse && course && stepIdx >= 0 && (
+              <>
+                <button
+                  type="button"
+                  onClick={() => goStep(-1)}
+                  disabled={busy || stepIdx <= 0}
+                  className="ww-btn ww-btn-secondary ww-btn-sm"
+                >
+                  ‹ Назад
+                </button>
+                <span className="min-w-0 truncate text-sm text-paper-muted">
+                  <b className="text-paper">
+                    {stepIdx + 1} / {course.steps.length}
+                  </b>{' '}
+                  {course.steps[stepIdx].section}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => goStep(1)}
+                  disabled={busy || stepIdx >= course.steps.length - 1}
+                  className="ww-btn ww-btn-primary ww-btn-sm"
+                >
+                  Далі ›
+                </button>
+              </>
+            )}
+            <div className="ml-auto flex flex-wrap items-center gap-3">
+              {zoomControls}
+              <label className="flex items-center gap-2 text-sm text-paper-muted">
+                <input type="checkbox" checked={pult} onChange={(e) => setPult(e.target.checked)} />
+                Пульт
+              </label>
+              <button type="button" onClick={() => setBig(false)} className="ww-btn ww-btn-secondary ww-btn-sm">
+                Згорнути (Esc)
+              </button>
+            </div>
+          </div>
+          {stageBox}
+        </div>
+      )}
     </div>
   );
 }
