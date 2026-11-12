@@ -385,3 +385,16 @@
 .lp-prose audio { width: 100%; margin: .6rem 0 1rem; }
 .lp-prose blockquote { margin: 1rem 0; padding: .3rem 1rem; border-left: 4px solid var(--lp-marker); color: var(--lp-ink); background: rgba(255, 225, 104, .12); border-radius: 0 .6rem .6rem 0; }
 .lp-prose code { font-size: .9em; background: var(--lp-soft); padding: .05rem .3rem; border-radius: .3rem; }
+
+/* ── телефон: компактна шапка й ширший аркуш ── */
+@media (max-width: 560px) {
+  .lp-cover { height: 140px; }
+  .lp-hero-body { padding: 0 1rem; }
+  .lp-icon { width: 4rem; height: 4rem; margin-top: -2.2rem; font-size: 2.3rem; border-radius: 1rem; }
+  .lp-hero-body h1 { font-size: 1.75rem; margin: .8rem 0 .9rem; }
+  .lp-props { margin-bottom: 1.3rem; font-size: .9rem; }
+  .lp-props > div { grid-template-columns: 5.6rem 1fr; padding: .2rem 0; }
+  .lp-pager, .lp-layout { padding: 0 .6rem 0 1rem; }
+  .lp-sheet { padding: 1.2rem .85rem 1.6rem 1.35rem; }
+  .lp-callout-body { min-width: 0; overflow-x: auto; }
+}

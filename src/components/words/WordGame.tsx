@@ -173,6 +173,9 @@ function Cards({ pool, dir, update, onAgain }: Common) {
   const [queue, setQueue] = useState<Word[]>(pool);
   const [flipped, setFlipped] = useState(false);
   const [done, setDone] = useState(0);
+  // свайп на телефоні: вправо — «знаю», вліво — «ще вчу»
+  const [dx, setDx] = useState(0);
+  const drag = useRef<{ x: number; y: number; moved: boolean } | null>(null);
   const w = queue[0];
 
   const answer = useCallback(
@@ -216,15 +219,46 @@ function Cards({ pool, dir, update, onAgain }: Common) {
       </div>
       <button
         type="button"
-        onClick={() => setFlipped((f) => !f)}
-        className="flex min-h-[18rem] w-full flex-col items-center justify-center gap-3 rounded-3xl border-2 border-ink-line bg-ink-raised p-8 text-center shadow-[0_6px_0_#ddd5c2] transition-colors hover:border-gold/60"
+        onClick={() => {
+          if (drag.current?.moved) return;
+          setFlipped((f) => !f);
+        }}
+        onPointerDown={(e) => {
+          if (e.pointerType === 'mouse') return;
+          drag.current = { x: e.clientX, y: e.clientY, moved: false };
+        }}
+        onPointerMove={(e) => {
+          const d = drag.current;
+          if (!d) return;
+          const ddx = e.clientX - d.x;
+          if (!d.moved && Math.abs(ddx) > 10 && Math.abs(ddx) > Math.abs(e.clientY - d.y)) d.moved = true;
+          if (d.moved) setDx(ddx);
+        }}
+        onPointerUp={() => {
+          const d = drag.current;
+          if (d?.moved && Math.abs(dx) > 90) answer(dx > 0);
+          setDx(0);
+          setTimeout(() => (drag.current = null), 0);
+        }}
+        onPointerCancel={() => {
+          drag.current = null;
+          setDx(0);
+        }}
+        style={{
+          transform: dx ? `translateX(${dx}px) rotate(${dx / 18}deg)` : undefined,
+          transition: dx ? 'none' : 'transform .25s ease',
+          touchAction: 'pan-y',
+          borderColor: dx > 60 ? '#17704a' : dx < -60 ? '#b83a27' : undefined,
+        }}
+        className="flex min-h-[18rem] w-full select-none flex-col items-center justify-center gap-3 rounded-3xl border-2 border-ink-line bg-ink-raised p-8 text-center shadow-[0_6px_0_#ddd5c2] transition-colors hover:border-gold/60"
         aria-label="Перевернути картку"
       >
         {!flipped ? (
           <>
             <span className="font-serif text-4xl text-paper">{front}</span>
             {dir === 'pl' && w.pos && <span className="text-sm text-paper-muted">{w.pos}</span>}
-            <span className="mt-4 text-xs text-gold-dim">натисни, щоб перевернути · пробіл</span>
+            <span className="mt-4 hidden text-xs text-gold-dim md:inline">натисни, щоб перевернути · пробіл</span>
+            <span className="mt-4 text-xs text-gold-dim md:hidden">торкнись, щоб перевернути · свайп вправо — знаю, вліво — ще вчу</span>
           </>
         ) : (
           <>

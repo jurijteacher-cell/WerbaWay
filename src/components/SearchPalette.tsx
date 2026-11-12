@@ -118,7 +118,7 @@ function Palette({ teacher, onClose }: { teacher: boolean; onClose: () => void }
 
   let i = -1;
   return (
-    <div className="ww-modal" role="presentation" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
+    <div className="ww-modal ww-modal-top" role="presentation" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
       <div className="ww-modal-box !max-w-[640px]" role="dialog" aria-modal="true" aria-label="Пошук по сайту" onKeyDown={onKey}>
         <div className="flex items-center gap-3 border-b border-ink-line px-4 py-3">
           <SearchIcon />

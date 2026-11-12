@@ -149,7 +149,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
         <Tile value={userId ? `${hwDone}/${hwDone + hwTodo}` : '—'} label="домашок здано" tone={hwTodo ? 'text-gold' : undefined} />
       </div>
 
-      <div className="mt-10 grid gap-8 lg:grid-cols-2">
+      <div className="mt-10 grid gap-8 [&>*]:min-w-0 lg:grid-cols-2">
         <Section title="Активність (28 днів)">
           <Activity daily={s.daily} />
         </Section>

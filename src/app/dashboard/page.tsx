@@ -172,7 +172,7 @@ export default async function DashboardPage() {
             </div>
           </Section>
 
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-8 [&>*]:min-w-0 md:grid-cols-2">
             <Section title="Слабкі теми">
               <WeakList weak={s.weak} />
             </Section>

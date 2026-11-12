@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Onest, Literata, IBM_Plex_Mono } from 'next/font/google';
 import './globals.css';
 import { TopNav } from '@/components/TopNav';
@@ -29,6 +29,13 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: 'Werba Way',
   description: 'Польська мова для українців — уроки та вправи',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover', // нижня панель враховує «чубчик» і смугу жестів
+  themeColor: '#fbf9f4',
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

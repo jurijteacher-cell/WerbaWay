@@ -3,6 +3,7 @@ import { createClient } from '@/lib/supabase/server';
 import { LogoutButton } from './LogoutButton';
 import { NavLinks, type NavItem } from './NavLinks';
 import { SearchPalette } from './SearchPalette';
+import { MobileNav, type Tab } from './MobileNav';
 
 export async function TopNav() {
   // Preview deployments without Supabase env: render no nav instead of crashing every page.
@@ -26,27 +27,50 @@ export async function TopNav() {
     ...(isTeacher ? [{ href: '/teacher', label: 'Кабінет викладача' }] : []),
   ];
 
+  // телефон: 4 головні вкладки внизу, решта — у «Ще»
+  const tabs: Tab[] = isTeacher
+    ? [
+        { href: '/learn', label: 'Курс', icon: 'book' },
+        { href: '/teacher/class', label: 'Клас', icon: 'class' },
+        { href: '/teacher/students', label: 'Учні', icon: 'users' },
+        { href: '/words', label: 'Слова', icon: 'cards' },
+      ]
+    : [
+        { href: '/learn', label: 'Курс', icon: 'book' },
+        { href: '/class', label: 'Клас', icon: 'class' },
+        { href: '/words', label: 'Слова', icon: 'cards' },
+        { href: '/dashboard', label: 'Прогрес', icon: 'chart' },
+      ];
+  const more: Tab[] = isTeacher
+    ? [
+        { href: '/dashboard', label: 'Прогрес', icon: 'chart' },
+        { href: '/teacher', label: 'Кабінет викладача', icon: 'desk' },
+        { href: '/forgot-password', label: 'Змінити пароль', icon: 'key' },
+      ]
+    : [{ href: '/forgot-password', label: 'Змінити пароль', icon: 'key' }];
+
   return (
+    <>
     <header className="border-b border-ink-line bg-ink-raised/85 backdrop-blur">
       <div
         className="h-1"
         style={{ background: 'linear-gradient(90deg,#ffe168 0,#a9dcc6 25%,#bcdcf2 50%,#f6c2af 75%,#d8cff0 100%)' }}
       />
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-3 px-4 py-3">
+      <div className="mx-auto flex max-w-6xl items-center gap-x-6 gap-y-3 px-4 py-2.5 md:flex-wrap md:py-3">
         <Link href="/learn" className="group flex shrink-0 items-center gap-3" aria-label="Werba Way Language School — на головну">
           {/* знак з лого в кільці того ж градієнта, що й на лого */}
           <span
-            className="grid h-12 w-12 place-items-center rounded-full p-[2px] shadow-sm transition-transform duration-300 group-hover:-rotate-6"
+            className="grid h-10 w-10 place-items-center md:h-12 md:w-12 rounded-full p-[2px] shadow-sm transition-transform duration-300 group-hover:-rotate-6"
             style={{ background: 'linear-gradient(135deg,#1d3a8a 0%,#6b2c91 35%,#e2363f 68%,#f6b53a 100%)' }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/brand/werba-mark.png" alt="" width={44} height={44} className="h-full w-full rounded-full bg-white" />
           </span>
           <span className="leading-none" aria-hidden="true">
-            <span className="block text-[17px] font-semibold tracking-[0.16em]">
+            <span className="block text-[15px] font-semibold tracking-[0.14em] md:text-[17px] md:tracking-[0.16em]">
               <span style={{ color: '#13213f' }}>WERBA</span> <span style={{ color: '#b8964f' }}>WAY</span>
             </span>
-            <span className="mt-1.5 flex items-center gap-1.5 text-[9px] font-medium tracking-[0.24em] text-paper-muted">
+            <span className="mt-1.5 hidden items-center gap-1.5 text-[9px] sm:flex font-medium tracking-[0.24em] text-paper-muted">
               <span className="h-px w-3 bg-[#b8964f]" />
               LANGUAGE SCHOOL
               <span className="h-px w-3 bg-[#b8964f]" />
@@ -55,10 +79,14 @@ export async function TopNav() {
         </Link>
         <div className="flex min-w-0 flex-1 items-center justify-end gap-3">
           <SearchPalette teacher={isTeacher} />
-          <NavLinks items={items} />
-          <LogoutButton />
+          <div className="hidden min-w-0 items-center gap-3 md:flex">
+            <NavLinks items={items} />
+            <LogoutButton />
+          </div>
         </div>
       </div>
     </header>
+    <MobileNav tabs={tabs} more={more} />
+    </>
   );
 }
