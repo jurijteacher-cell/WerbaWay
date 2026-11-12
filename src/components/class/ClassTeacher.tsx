@@ -464,10 +464,41 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     const r = e.currentTarget.getBoundingClientRect();
     const k = r.width / vp.w;
     const doc = rep.iframe?.contentDocument;
-    const el = doc?.elementFromPoint((e.clientX - r.left) / k, (e.clientY - r.top) / k);
+    if (!doc) return;
+    // вправа лекції — це ще один iframe усередині сторінки: elementFromPoint крізь кадри не бачить
+    // і повертає сам кадр, тому в учня «клікало» по кадру, а не по полю. Спускаємось усередину.
+    let hitDoc: Document = doc;
+    let x = (e.clientX - r.left) / k;
+    let y = (e.clientY - r.top) / k;
+    let el = hitDoc.elementFromPoint(x, y);
+    let deep = false;
+    for (let i = 0; i < 4 && el && el.tagName === 'IFRAME'; i++) {
+      const frame = el as HTMLIFrameElement;
+      let inner: Document | null = null;
+      try {
+        inner = frame.contentDocument;
+      } catch {
+        inner = null;
+      }
+      if (!inner) break;
+      const fr = frame.getBoundingClientRect();
+      const bx = parseFloat(getComputedStyle(frame).borderLeftWidth) || 0;
+      const by = parseFloat(getComputedStyle(frame).borderTopWidth) || 0;
+      const nx = x - fr.left - bx;
+      const ny = y - fr.top - by;
+      const next = inner.elementFromPoint(nx, ny);
+      if (!next) break;
+      hitDoc = inner;
+      x = nx;
+      y = ny;
+      el = next;
+      deep = true;
+    }
     if (!el) return;
     const id = rep.getMirror().getId(el);
-    if (id > 0) send({ k: 'click', id, tag: el.tagName, text: shortText(el), path: elementPath(el) });
+    // запасний шлях по дереву годиться лише для верхнього документа: у вкладеному кадрі
+    // такий самий шлях привів би в учня до зовсім іншого елемента
+    if (id > 0) send({ k: 'click', id, tag: el.tagName, text: shortText(el), path: deep ? undefined : elementPath(el) });
   }
 
   const where = !student
