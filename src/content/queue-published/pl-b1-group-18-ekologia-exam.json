@@ -1,0 +1,98 @@
+{
+  "lesson_id": "pl-b1-group-18-ekologia",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Pięćdziesiąt groszy za butelkę”. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Żeby dostać pieniądze za butelkę, trzeba pokazać paragon.",
+          "answer": false,
+          "explanation": "Paragonu nie trzeba; butelka musi być pusta i cała."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Karton po soku powinien trafić do pojemnika na papier.",
+          "answer": false,
+          "explanation": "Maksym mówi: karton po soku do żółtego, a nie do niebieskiego."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Taras jeździ do pracy autem, chociaż ma niedaleko.",
+          "answer": true,
+          "explanation": "Jeździ skodą, mimo że do biura ma tylko pięć kilometrów."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Pani Monika po dyżurze wraca do domu rowerem.",
+          "answer": false,
+          "explanation": "Po dwunastu godzinach w szpitalu nie ma siły na rower."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Nie wszyscy mieszkańcy chcieli ogródka na podwórku.",
+          "answer": true,
+          "explanation": "Spółdzielnia zgodziła się mimo protestów kilku kierowców."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Na końcu tekstu Taras pojechał do pracy trolejbusem.",
+          "answer": true,
+          "explanation": "Rano pierwszy raz od miesiąca pojechał trolejbusem."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: reportaż radiowy",
+      "instruction": "Nauczyciel przeczyta krótki reportaż o kawiarence naprawczej — tak jak w zadaniu „tak / nie” na egzaminie państwowym B1. Najpierw przeczytaj zdania. Reportaż usłyszysz dwa razy. Zdecyduj: prawda czy fałsz?",
+      "source": "teacher:p3-reportaz",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Kawiarenka naprawcza działa w każdą sobotę.",
+          "answer": false,
+          "explanation": "Tylko w pierwszą sobotę miesiąca."
+        },
+        {
+          "id": "e2-2",
+          "statement": "Za naprawę nie trzeba płacić.",
+          "answer": true,
+          "explanation": "Wolontariusze naprawiają za darmo; do puszki można coś wrzucić, ale nie trzeba."
+        },
+        {
+          "id": "e2-3",
+          "statement": "Na pierwsze spotkanie przyszło mniej osób, niż pani Beata myślała.",
+          "answer": false,
+          "explanation": "Myślała, że przyjdzie kilka osób, a przyszło czterdzieści."
+        },
+        {
+          "id": "e2-4",
+          "statement": "Ludzie przynoszą więcej lamp niż rowerów.",
+          "answer": true,
+          "explanation": "Najwięcej jest lamp i czajników, rowerów mniej."
+        },
+        {
+          "id": "e2-5",
+          "statement": "W sklepie pan Zbigniew usłyszał, że lepiej kupić nowe radio.",
+          "answer": true,
+          "explanation": "W sklepie powiedzieli, że naprawa się nie opłaca."
+        },
+        {
+          "id": "e2-6",
+          "statement": "W kawiarence naprawia się też telefony.",
+          "answer": false,
+          "explanation": "Telefonów nie naprawiają z powodu baterii, które mogą być niebezpieczne."
+        }
+      ]
+    }
+  ]
+}

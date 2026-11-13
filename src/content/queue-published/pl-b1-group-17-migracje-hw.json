@@ -1,0 +1,228 @@
+{
+  "lesson_id": "pl-b1-group-17-migracje",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: przyczyna i skutek w nowych zdaniach",
+  "instruction": "Trzy bloki. Zrób je przed napisaniem opinii na forum.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz właściwą formę",
+      "instruction": "Wpisz słowo z nawiasu w odpowiedniej formie po przyimku.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Z powodu ___ (gorączka) córka została w domu.",
+          "answer": "gorączki",
+          "grammar_point": "z-powodu-dopelniacz"
+        },
+        {
+          "id": "h1-2",
+          "text": "Dzięki ___ (ta aplikacja) wiem, kiedy przyjedzie tramwaj.",
+          "answer": "tej aplikacji",
+          "grammar_point": "dzieki-celownik"
+        },
+        {
+          "id": "h1-3",
+          "text": "Przez ___ (głośna muzyka) nie słyszałem telefonu.",
+          "answer": "głośną muzykę",
+          "grammar_point": "przez-biernik"
+        },
+        {
+          "id": "h1-4",
+          "text": "Kawiarnia jest dziś zamknięta z powodu ___ (urlop) właściciela.",
+          "answer": "urlopu",
+          "grammar_point": "z-powodu-dopelniacz"
+        },
+        {
+          "id": "h1-5",
+          "text": "Dzięki ___ (mój dziadek) nauczyłem się łowić ryby.",
+          "answer": "mojemu dziadkowi",
+          "grammar_point": "dzieki-celownik"
+        },
+        {
+          "id": "h1-6",
+          "text": "Przez ___ (te schody) sąsiad z czwartego piętra prawie nie wychodzi z domu.",
+          "answer": "te schody",
+          "grammar_point": "przez-biernik"
+        },
+        {
+          "id": "h1-7",
+          "text": "Dzięki ___ (koleżanki) z pracy nie czułam się samotna.",
+          "answer": "koleżankom",
+          "grammar_point": "dzieki-celownik"
+        },
+        {
+          "id": "h1-8",
+          "text": "Z powodu ___ (duże zainteresowanie) muzeum przedłużyło wystawę.",
+          "answer": "dużego zainteresowania",
+          "grammar_point": "z-powodu-dopelniacz"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdania",
+      "instruction": "Klikaj słowa w dobrej kolejności.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "z",
+            "powodu",
+            "mgły",
+            "samolot",
+            "nie",
+            "wystartował"
+          ],
+          "answer": "Samolot nie wystartował z powodu mgły.",
+          "grammar_point": "dzieki-przez-z-powodu",
+          "accept": [
+            "Z powodu mgły samolot nie wystartował."
+          ]
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "przez",
+            "korki",
+            "spóźniłem",
+            "się"
+          ],
+          "answer": "Spóźniłem się przez korki.",
+          "grammar_point": "dzieki-przez-z-powodu",
+          "accept": [
+            "Przez korki się spóźniłem."
+          ]
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "dzięki",
+            "tobie",
+            "zdałem",
+            "egzamin"
+          ],
+          "answer": "Dzięki tobie zdałem egzamin.",
+          "grammar_point": "dzieki-przez-z-powodu",
+          "accept": [
+            "Zdałem egzamin dzięki tobie."
+          ]
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "dlaczego",
+            "przeprowadziliście",
+            "się",
+            "na",
+            "wieś"
+          ],
+          "answer": "Dlaczego przeprowadziliście się na wieś?",
+          "grammar_point": "dlaczego-po-co",
+          "accept": [
+            "Dlaczego się przeprowadziliście na wieś?"
+          ]
+        },
+        {
+          "id": "h2-5",
+          "words": [
+            "po",
+            "co",
+            "ci",
+            "drugi",
+            "telefon"
+          ],
+          "answer": "Po co ci drugi telefon?",
+          "grammar_point": "dlaczego-po-co"
+        },
+        {
+          "id": "h2-6",
+          "words": [
+            "dzięki",
+            "temu",
+            "mam",
+            "więcej",
+            "czasu"
+          ],
+          "answer": "Dzięki temu mam więcej czasu.",
+          "grammar_point": "dzieki-przez-z-powodu",
+          "accept": [
+            "Mam dzięki temu więcej czasu."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Bo zaspałam, spóźniłam się do pracy.",
+          "answer": "Ponieważ zaspałam, spóźniłam się do pracy.",
+          "grammar_point": "bo-ponieważ",
+          "accept": [
+            "Spóźniłam się do pracy, bo zaspałam.",
+            "Spóźniłam się do pracy, ponieważ zaspałam."
+          ],
+          "explanation": "Na początku zdania — ponieważ; „bo” przesuń do środka."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Dzięki burzy nie mieliśmy prądu całą noc.",
+          "answer": "Przez burzę nie mieliśmy prądu całą noc.",
+          "grammar_point": "dzieki-przez-z-powodu",
+          "accept": [
+            "Z powodu burzy nie mieliśmy prądu całą noc."
+          ],
+          "explanation": "Zła przyczyna → przez burzę albo z powodu burzy."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Dzięki mojej mamy mam dom na wsi.",
+          "answer": "Dzięki mojej mamie mam dom na wsi.",
+          "grammar_point": "dzieki-celownik",
+          "explanation": "Dzięki + celownik: mojej mamie.",
+          "accept": [
+            "Mam dom na wsi dzięki mojej mamie."
+          ]
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Wyjechał zza braku pracy.",
+          "answer": "Wyjechał z powodu braku pracy.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Wyjechał przez brak pracy."
+          ],
+          "explanation": "„Zza” = з-за (miejsce). Przyczyna → z powodu."
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Gdybym miał więcej pieniędzy, kupiłem dom na wsi.",
+          "answer": "Gdybym miał więcej pieniędzy, kupiłbym dom na wsi.",
+          "grammar_point": "tryb-przypuszczajacy",
+          "explanation": "Gdyby… → kupiłbym (tryb przypuszczający).",
+          "accept": [
+            "Gdybym miał więcej pieniędzy, to kupiłbym dom na wsi."
+          ]
+        },
+        {
+          "id": "h3-6",
+          "prompt": "Zadzwoniłam do sołtysa, że pomógł mi z formularzem.",
+          "answer": "Zadzwoniłam do sołtysa, żeby pomógł mi z formularzem.",
+          "grammar_point": "zeby-cel",
+          "explanation": "Prośba, cel telefonu → żeby.",
+          "accept": [
+            "Zadzwoniłam do sołtysa, żeby mi pomógł z formularzem."
+          ]
+        }
+      ]
+    }
+  ]
+}

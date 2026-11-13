@@ -1,0 +1,203 @@
+{
+  "lesson_id": "pl-b1-group-20-pieniadze",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: czasowniki i przypadki w nowych zdaniach",
+  "instruction": "Trzy bloki. Zrób je przed napisaniem reklamacji.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz właściwą formę",
+      "instruction": "Wpisz słowo z nawiasu w dobrej formie po czasowniku.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Pamiętaj o ___ (urodziny) mamy!",
+          "answer": "urodzinach",
+          "grammar_point": "o-miejscownik"
+        },
+        {
+          "id": "h1-2",
+          "text": "Dziękujemy za ___ (szybka odpowiedź).",
+          "answer": "szybką odpowiedź",
+          "grammar_point": "za-biernik"
+        },
+        {
+          "id": "h1-3",
+          "text": "Nie przyzwyczaiłem się jeszcze do ___ (nowa praca).",
+          "answer": "nowej pracy",
+          "grammar_point": "do-dopelniacz"
+        },
+        {
+          "id": "h1-4",
+          "text": "Liczę na ___ (twoja pomoc).",
+          "answer": "twoją pomoc",
+          "grammar_point": "na-biernik"
+        },
+        {
+          "id": "h1-5",
+          "text": "Nasz kot boi się ___ (odkurzacz).",
+          "answer": "odkurzacza",
+          "grammar_point": "bez-przyimka-dopelniacz"
+        },
+        {
+          "id": "h1-6",
+          "text": "Ufam ___ (mój lekarz).",
+          "answer": "mojemu lekarzowi",
+          "grammar_point": "bez-przyimka-celownik"
+        },
+        {
+          "id": "h1-7",
+          "text": "Siostra interesuje się ___ (astronomia).",
+          "answer": "astronomią",
+          "grammar_point": "bez-przyimka-narzednik"
+        },
+        {
+          "id": "h1-8",
+          "text": "Wszyscy skarżą się na ___ (głośni sąsiedzi).",
+          "answer": "głośnych sąsiadów",
+          "grammar_point": "na-biernik"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdania",
+      "instruction": "Klikaj słowa w dobrej kolejności.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "na",
+            "czym",
+            "ci",
+            "zależy"
+          ],
+          "answer": "Na czym ci zależy?",
+          "grammar_point": "pytanie-z-przyimkiem"
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "dziękuję",
+            "za",
+            "pomoc"
+          ],
+          "answer": "Dziękuję za pomoc.",
+          "grammar_point": "za-biernik",
+          "accept": [
+            "Za pomoc dziękuję."
+          ]
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "zrezygnowałem",
+            "z",
+            "siłowni"
+          ],
+          "answer": "Zrezygnowałem z siłowni.",
+          "grammar_point": "z-dopelniacz",
+          "accept": [
+            "Z siłowni zrezygnowałem."
+          ]
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "martwię",
+            "się",
+            "o",
+            "ciebie"
+          ],
+          "answer": "Martwię się o ciebie.",
+          "grammar_point": "o-biernik",
+          "accept": [
+            "O ciebie się martwię."
+          ]
+        },
+        {
+          "id": "h2-5",
+          "words": [
+            "czekamy",
+            "na",
+            "autobus",
+            "od",
+            "godziny"
+          ],
+          "answer": "Czekamy na autobus od godziny.",
+          "grammar_point": "na-biernik",
+          "accept": [
+            "Od godziny czekamy na autobus.",
+            "Na autobus czekamy od godziny."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Szukam klucze od samochodu.",
+          "answer": "Szukam kluczy od samochodu.",
+          "grammar_point": "bez-przyimka-dopelniacz"
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Babcia poprosiła, że kupiłem jej leki.",
+          "answer": "Babcia poprosiła, żebym kupił jej leki.",
+          "grammar_point": "mowa-zalezna",
+          "accept": [
+            "Babcia poprosiła, żebym jej kupił leki.",
+            "Babcia poprosiła, żebym kupiła jej leki.",
+            "Babcia poprosiła, żebym jej kupiła leki."
+          ],
+          "explanation": "Prośba → żebym (lekcja o świętach)."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Chociaż mało zarabia, ale dużo oszczędza.",
+          "answer": "Chociaż mało zarabia, dużo oszczędza.",
+          "grammar_point": "chociaz-mimo-ze",
+          "accept": [
+            "Mało zarabia, ale dużo oszczędza.",
+            "Dużo oszczędza, chociaż mało zarabia.",
+            "Mimo że mało zarabia, dużo oszczędza."
+          ],
+          "explanation": "Po „chociaż” bez „ale” (lekcja o ekologii)."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Pomagam mojego brata w nauce.",
+          "answer": "Pomagam mojemu bratu w nauce.",
+          "grammar_point": "bez-przyimka-celownik"
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Zapytałam o tym doradcę.",
+          "answer": "Zapytałam o to doradcę.",
+          "grammar_point": "o-biernik",
+          "accept": [
+            "Zapytałam doradcę o to."
+          ],
+          "explanation": "Pytać o + biernik: o to."
+        },
+        {
+          "id": "h3-6",
+          "prompt": "Dziękuję ci o pomoc.",
+          "answer": "Dziękuję ci za pomoc.",
+          "grammar_point": "za-biernik",
+          "accept": [
+            "Dziękuję za pomoc."
+          ]
+        }
+      ]
+    }
+  ]
+}

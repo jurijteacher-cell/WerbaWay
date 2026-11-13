@@ -1,0 +1,140 @@
+{
+  "lesson_id": "pl-b1-group-19-swieta",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 18,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Opłatek, karp i telefon z Toronto”. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "W tym roku Taras musiał wziąć urlop na Wigilię.",
+          "answer": false,
+          "explanation": "Od zeszłego roku 24 grudnia jest dniem wolnym od pracy, więc nie musiał."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Babcia chciała, żeby Taras przyjechał po nią wcześnie rano.",
+          "answer": false,
+          "explanation": "Poprosiła, żeby przyjechał po nią przed trzecią po południu, a rano tylko zadzwoniła."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Pani Monika poradziła, żeby na stole był jeden talerz więcej.",
+          "answer": true,
+          "explanation": "Dla niespodziewanego gościa — żeby nikt w święta nie był sam."
+        },
+        {
+          "id": "e1-4",
+          "statement": "W Toronto w czasie Wigilii padał deszcz.",
+          "answer": false,
+          "explanation": "W Toronto spadło pół metra śniegu; deszcz padał w Lublinie."
+        },
+        {
+          "id": "e1-5",
+          "statement": "W tym roku Kuba mógł zjeść wszystkie wigilijne potrawy.",
+          "answer": true,
+          "explanation": "Jego babcia zamiast karpia zrobiła kotlety z grzybów."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Olena nie poszła na pasterkę.",
+          "answer": true,
+          "explanation": "Na pasterkę poszły babcia i pani Monika, a rodzina została w domu."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: cztery rozmowy — prawda czy fałsz?",
+      "instruction": "Nauczyciel przeczyta cztery krótkie rozmowy — tak jak w drugiej części słuchania na egzaminie telc. Każdą rozmowę usłyszysz dwa razy. Do każdej rozmowy jest jedno zdanie: prawda czy fałsz?",
+      "source": "teacher:t2-rozmowy",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Rozmowa 1. Sklep będzie otwarty w Wigilię.",
+          "answer": false,
+          "explanation": "Sprzedawca mówi, że w Wigilię sklep jest zamknięty."
+        },
+        {
+          "id": "e2-2",
+          "statement": "Rozmowa 2. Kobieta spędzi święta u rodziców.",
+          "answer": false,
+          "explanation": "W tym roku to rodzice przyjeżdżają do niej."
+        },
+        {
+          "id": "e2-3",
+          "statement": "Rozmowa 3. Ira dzwoni z Kanady wcześnie rano.",
+          "answer": true,
+          "explanation": "U niej jest siódma rano."
+        },
+        {
+          "id": "e2-4",
+          "statement": "Rozmowa 4. Babcia prosi, żeby Kuba niczego nie przywoził.",
+          "answer": true,
+          "explanation": "Maksym przekazuje: babcia prosi, żebyś niczego nie przywoził."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: cztery rozmowy — wybierz odpowiedź",
+      "instruction": "Te same cztery rozmowy. Do każdej wybierz poprawną odpowiedź: a, b albo c.",
+      "source": "teacher:t2-rozmowy",
+      "max_plays": 2,
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Rozmowa 1. Klientka…",
+          "options": [
+            "kupi dziś żywego karpia.",
+            "zamówi filety na dwudziestego trzeciego grudnia.",
+            "odbierze rybę w Wigilię rano."
+          ],
+          "answer": "zamówi filety na dwudziestego trzeciego grudnia.",
+          "explanation": "Żywych karpi już nie ma; zamawia filety, odbiór 23 grudnia do czternastej."
+        },
+        {
+          "id": "e3-2",
+          "question": "Rozmowa 2. Mama poprosiła kobietę, żeby…",
+          "options": [
+            "kupiła gotowe pierogi.",
+            "przyjechała dzień wcześniej.",
+            "zrobiła pierogi według jej przepisu."
+          ],
+          "answer": "zrobiła pierogi według jej przepisu.",
+          "explanation": "Mama kazała jej zrobić pierogi „tak jak ja”, nie kupować gotowych."
+        },
+        {
+          "id": "e3-3",
+          "question": "Rozmowa 3. Ira mówi, że…",
+          "options": [
+            "przyleci pod koniec czerwca, bo wtedy bilety są tańsze.",
+            "przyleci w lipcu, tak jak planowała.",
+            "w tym roku nie przyleci do Polski."
+          ],
+          "answer": "przyleci pod koniec czerwca, bo wtedy bilety są tańsze.",
+          "explanation": "Miała przylecieć w lipcu, ale zmieniła plan: koniec czerwca, bo bilety są o połowę tańsze."
+        },
+        {
+          "id": "e3-4",
+          "question": "Rozmowa 4. Kuba przywiezie…",
+          "options": [
+            "nic, bo babcia tak prosiła.",
+            "sernik od mamy.",
+            "hummus, który sam zrobi."
+          ],
+          "answer": "sernik od mamy.",
+          "explanation": "Mama kazała mu przywieźć sernik — mimo prośby babci."
+        }
+      ]
+    }
+  ]
+}

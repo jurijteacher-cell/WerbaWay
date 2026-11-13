@@ -1,0 +1,596 @@
+{
+  "lesson_id": "pl-b1-group-20-pieniadze",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: czasownik i jego przypadek",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 60,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "Słowa: co to znaczy?",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "saldo",
+          "right": "ile pieniędzy jest teraz na koncie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "zlecenie stałe",
+          "right": "przelew, który bank robi automatycznie co miesiąc",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "kieszonkowe",
+          "right": "pieniądze od rodziców na drobne wydatki",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "kupić na raty",
+          "right": "płacić za coś małymi częściami co miesiąc",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "wyłudzić",
+          "right": "zdobyć coś od kogoś kłamstwem",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "zablokować kartę",
+          "right": "sprawić, żeby kartą nie dało się płacić",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "pobrać opłatę",
+          "right": "zabrać pieniądze z konta za usługę",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "niesłusznie",
+          "right": "bez powodu, niezgodnie z prawdą",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Który przyimek?",
+      "instruction": "Każdy czasownik ma „swój” przyimek. Wybierz.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Zależy mi ___ dobrej opinii w pracy.",
+          "answer": "na",
+          "grammar_point": "przyimek-wybor",
+          "options": [
+            "na",
+            "o"
+          ],
+          "explanation": "Zależeć komuś NA czymś (miejscownik)."
+        },
+        {
+          "id": "g2-2",
+          "text": "Ciągle myślę ___ tym kredycie.",
+          "answer": "o",
+          "grammar_point": "przyimek-wybor",
+          "options": [
+            "na",
+            "o"
+          ],
+          "explanation": "Myśleć O kimś, o czymś (miejscownik)."
+        },
+        {
+          "id": "g2-3",
+          "text": "Dziękuję ___ pomoc z formularzem.",
+          "answer": "za",
+          "grammar_point": "przyimek-wybor",
+          "options": [
+            "za",
+            "o"
+          ],
+          "explanation": "Dziękować ZA coś (biernik)."
+        },
+        {
+          "id": "g2-4",
+          "text": "Od roku korzystam ___ aplikacji banku.",
+          "answer": "z",
+          "grammar_point": "przyimek-wybor",
+          "options": [
+            "w",
+            "z"
+          ],
+          "explanation": "Korzystać Z czegoś (dopełniacz)."
+        },
+        {
+          "id": "g2-5",
+          "text": "Czekamy ___ odpowiedź z banku.",
+          "answer": "na",
+          "grammar_point": "przyimek-wybor",
+          "options": [
+            "na",
+            "za"
+          ],
+          "explanation": "Czekać NA coś (biernik)."
+        },
+        {
+          "id": "g2-6",
+          "text": "Rodzice martwią się ___ syna.",
+          "answer": "o",
+          "grammar_point": "przyimek-wybor",
+          "options": [
+            "za",
+            "o"
+          ],
+          "explanation": "Укр. «хвилюватися за» → martwić się O kogoś (biernik)."
+        },
+        {
+          "id": "g2-7",
+          "text": "Przyzwyczaiłam się już ___ płacenia telefonem.",
+          "answer": "do",
+          "grammar_point": "przyimek-wybor",
+          "options": [
+            "do",
+            "z"
+          ],
+          "explanation": "Przyzwyczaić się DO czegoś (dopełniacz)."
+        },
+        {
+          "id": "g2-8",
+          "text": "Zrezygnowałem ___ karty kredytowej.",
+          "answer": "z",
+          "grammar_point": "przyimek-wybor",
+          "options": [
+            "od",
+            "z"
+          ],
+          "explanation": "Укр. «відмовитися від» → zrezygnować Z czegoś."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Jaka forma po przyimku?",
+      "instruction": "Wpisz słowa z nawiasu w dobrej formie. Na / o + miejscownik albo biernik, za + biernik, z / do + dopełniacz.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Zależy mi na ___ (twoja opinia).",
+          "answer": "twojej opinii",
+          "grammar_point": "na-miejscownik"
+        },
+        {
+          "id": "g3-2",
+          "text": "Wczoraj rozmawialiśmy o ___ (wspólne wakacje).",
+          "answer": "wspólnych wakacjach",
+          "grammar_point": "o-miejscownik"
+        },
+        {
+          "id": "g3-3",
+          "text": "Martwię się o ___ (moja córka).",
+          "answer": "moją córkę",
+          "grammar_point": "o-biernik",
+          "explanation": "Martwić się o + biernik."
+        },
+        {
+          "id": "g3-4",
+          "text": "Zapłaciłam już za ___ (nowa pralka).",
+          "answer": "nową pralkę",
+          "grammar_point": "za-biernik"
+        },
+        {
+          "id": "g3-5",
+          "text": "Od dawna korzystamy z ___ (bankowość internetowa).",
+          "answer": "bankowości internetowej",
+          "grammar_point": "z-dopelniacz"
+        },
+        {
+          "id": "g3-6",
+          "text": "Czekam na ___ (wypłata) do dziesiątego.",
+          "answer": "wypłatę",
+          "grammar_point": "na-biernik"
+        },
+        {
+          "id": "g3-7",
+          "text": "Oszczędzamy na ___ (wycieczka) do Rzymu.",
+          "answer": "wycieczkę",
+          "grammar_point": "na-biernik",
+          "explanation": "Oszczędzać na coś (cel) → biernik."
+        },
+        {
+          "id": "g3-8",
+          "text": "Pamiętaj o ___ (rachunek) za telefon!",
+          "answer": "rachunku",
+          "grammar_point": "o-miejscownik"
+        },
+        {
+          "id": "g3-9",
+          "text": "Siostra zrezygnowała z ___ (drogie konto).",
+          "answer": "drogiego konta",
+          "grammar_point": "z-dopelniacz"
+        },
+        {
+          "id": "g3-10",
+          "text": "Dziękuję za ___ (twoja cierpliwość).",
+          "answer": "twoją cierpliwość",
+          "grammar_point": "za-biernik"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "4. Zadaj pytanie",
+      "instruction": "Zapytaj o rzecz albo osobę po przyimku. Pytanie zaczyna się od przyimka: Na czym…? O kim…? Mów do kolegi (ty).",
+      "items": [
+        {
+          "id": "g4-1",
+          "prompt": "Myślę o urlopie.",
+          "answer": "O czym myślisz?",
+          "grammar_point": "pytanie-z-przyimkiem",
+          "accept": [
+            "O czym ty myślisz?"
+          ]
+        },
+        {
+          "id": "g4-2",
+          "prompt": "Czekam na kuriera.",
+          "answer": "Na kogo czekasz?",
+          "grammar_point": "pytanie-z-przyimkiem",
+          "accept": [
+            "Na kogo ty czekasz?"
+          ]
+        },
+        {
+          "id": "g4-3",
+          "prompt": "Zależy mi na dobrej pracy.",
+          "answer": "Na czym ci zależy?",
+          "grammar_point": "pytanie-z-przyimkiem",
+          "accept": [
+            "Na czym tobie zależy?"
+          ]
+        },
+        {
+          "id": "g4-4",
+          "prompt": "Dziękuję za prezent.",
+          "answer": "Za co dziękujesz?",
+          "grammar_point": "pytanie-z-przyimkiem",
+          "accept": [
+            "Za co ty dziękujesz?"
+          ]
+        },
+        {
+          "id": "g4-5",
+          "prompt": "Korzystam z karty kredytowej.",
+          "answer": "Z czego korzystasz?",
+          "grammar_point": "pytanie-z-przyimkiem",
+          "accept": [
+            "Z czego ty korzystasz?"
+          ]
+        },
+        {
+          "id": "g4-6",
+          "prompt": "Martwię się o mamę.",
+          "answer": "O kogo się martwisz?",
+          "grammar_point": "pytanie-z-przyimkiem",
+          "accept": [
+            "O kogo martwisz się?",
+            "O kogo ty się martwisz?"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Bez przyimka: jaki przypadek?",
+      "instruction": "Niektóre czasowniki łączą się z dopełniaczem (szukać, używać, słuchać…), celownikiem (ufać, pomagać, wierzyć) albo narzędnikiem (interesować się, zajmować się). Wpisz formę.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Szukam ___ (tani kredyt).",
+          "answer": "taniego kredytu",
+          "grammar_point": "bez-przyimka-dopelniacz"
+        },
+        {
+          "id": "g5-2",
+          "text": "Ufam ___ (mój doradca) w banku.",
+          "answer": "mojemu doradcy",
+          "grammar_point": "bez-przyimka-celownik"
+        },
+        {
+          "id": "g5-3",
+          "text": "Interesuję się ___ (inwestycje).",
+          "answer": "inwestycjami",
+          "grammar_point": "bez-przyimka-narzednik"
+        },
+        {
+          "id": "g5-4",
+          "text": "Potrzebuję ___ (nowa karta).",
+          "answer": "nowej karty",
+          "grammar_point": "bez-przyimka-dopelniacz"
+        },
+        {
+          "id": "g5-5",
+          "text": "Pomagam ___ (moja siostra) w opłatach.",
+          "answer": "mojej siostrze",
+          "grammar_point": "bez-przyimka-celownik"
+        },
+        {
+          "id": "g5-6",
+          "text": "Używam ___ (ta aplikacja) codziennie.",
+          "answer": "tej aplikacji",
+          "grammar_point": "bez-przyimka-dopelniacz"
+        },
+        {
+          "id": "g5-7",
+          "text": "W firmie zajmuję się ___ (finanse).",
+          "answer": "finansami",
+          "grammar_point": "bez-przyimka-narzednik"
+        },
+        {
+          "id": "g5-8",
+          "text": "Unikaj ___ (podejrzane linki)!",
+          "answer": "podejrzanych linków",
+          "grammar_point": "bez-przyimka-dopelniacz"
+        },
+        {
+          "id": "g5-9",
+          "text": "Wierzę ___ (moi rodzice).",
+          "answer": "moim rodzicom",
+          "grammar_point": "bez-przyimka-celownik"
+        },
+        {
+          "id": "g5-10",
+          "text": "W pracy słucham ___ (podcasty) o pieniądzach.",
+          "answer": "podcastów",
+          "grammar_point": "bez-przyimka-dopelniacz"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Wybierz formę",
+      "instruction": "Uważaj: po ukraińsku często jest inny przypadek. Wybierz formę, którą powie Polak.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "W samochodzie zawsze słucham ___.",
+          "answer": "radia",
+          "grammar_point": "bez-przyimka-dopelniacz",
+          "options": [
+            "radio",
+            "radia"
+          ],
+          "explanation": "Słuchać + dopełniacz: radia."
+        },
+        {
+          "id": "g6-2",
+          "text": "Możesz mi wierzyć, ufam ___.",
+          "answer": "tobie",
+          "grammar_point": "bez-przyimka-celownik",
+          "options": [
+            "tobie",
+            "ciebie"
+          ],
+          "explanation": "Ufać + celownik: tobie."
+        },
+        {
+          "id": "g6-3",
+          "text": "Pilnuj ___ w tramwaju!",
+          "answer": "portfela",
+          "grammar_point": "bez-przyimka-dopelniacz",
+          "options": [
+            "portfela",
+            "portfel"
+          ],
+          "explanation": "Pilnować + dopełniacz."
+        },
+        {
+          "id": "g6-4",
+          "text": "Kiedy sąsiadka wyjeżdża, opiekuję się ___.",
+          "answer": "jej psem",
+          "grammar_point": "bez-przyimka-narzednik",
+          "options": [
+            "jej psa",
+            "jej psem"
+          ],
+          "explanation": "Opiekować się + narzędnik."
+        },
+        {
+          "id": "g6-5",
+          "text": "Nie bój się ___ w banku!",
+          "answer": "pytań",
+          "grammar_point": "bez-przyimka-dopelniacz",
+          "options": [
+            "pytań",
+            "pytaniami"
+          ],
+          "explanation": "Bać się + dopełniacz."
+        },
+        {
+          "id": "g6-6",
+          "text": "Szukam ___ od mieszkania.",
+          "answer": "kluczy",
+          "grammar_point": "bez-przyimka-dopelniacz",
+          "options": [
+            "klucze",
+            "kluczy"
+          ],
+          "explanation": "Szukać + dopełniacz: kluczy."
+        },
+        {
+          "id": "g6-7",
+          "text": "Pomogłam ___ w przeprowadzce.",
+          "answer": "koleżance",
+          "grammar_point": "bez-przyimka-celownik",
+          "options": [
+            "koleżankę",
+            "koleżance"
+          ],
+          "explanation": "Pomagać + celownik."
+        },
+        {
+          "id": "g6-8",
+          "text": "W naszej rodzinie ___ zarządza mama.",
+          "answer": "budżetem",
+          "grammar_point": "bez-przyimka-narzednik",
+          "options": [
+            "budżet",
+            "budżetem"
+          ],
+          "explanation": "Zarządzać + narzędnik: budżetem."
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "7. Popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd w formie po czasowniku. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g7-1",
+          "prompt": "Myślę o tobie i o naszą przyszłość.",
+          "answer": "Myślę o tobie i o naszej przyszłości.",
+          "grammar_point": "o-miejscownik",
+          "explanation": "Myśleć o + miejscownik.",
+          "accept": [
+            "Myślę o tobie i naszej przyszłości."
+          ]
+        },
+        {
+          "id": "g7-2",
+          "prompt": "Korzystam kartą tylko w internecie.",
+          "answer": "Korzystam z karty tylko w internecie.",
+          "grammar_point": "z-dopelniacz",
+          "accept": [
+            "Używam karty tylko w internecie.",
+            "Płacę kartą tylko w internecie."
+          ],
+          "explanation": "Korzystać z + dopełniacz."
+        },
+        {
+          "id": "g7-3",
+          "prompt": "Słucham muzykę, kiedy liczę rachunki.",
+          "answer": "Słucham muzyki, kiedy liczę rachunki.",
+          "grammar_point": "bez-przyimka-dopelniacz"
+        },
+        {
+          "id": "g7-4",
+          "prompt": "Zrezygnowałam od konta w tym banku.",
+          "answer": "Zrezygnowałam z konta w tym banku.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g7-5",
+          "prompt": "Mama martwi się za mnie.",
+          "answer": "Mama martwi się o mnie.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Mama się o mnie martwi."
+          ]
+        },
+        {
+          "id": "g7-6",
+          "prompt": "Szukam pracę z lepszą pensją.",
+          "answer": "Szukam pracy z lepszą pensją.",
+          "grammar_point": "bez-przyimka-dopelniacz"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Pułapki z ukraińskiego",
+      "instruction": "Wybierz wersję, którą powie Polak. Po każdej odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Ciągle myślę ___.",
+          "answer": "o pieniądzach",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "o pieniądze",
+            "o pieniądzach"
+          ],
+          "explanation": "«думаю про гроші» (знахідний) → myślę o pieniądzach (miejscownik)."
+        },
+        {
+          "id": "g8-2",
+          "text": "Od roku ___.",
+          "answer": "korzystam z aplikacji banku",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "korzystam aplikacją banku",
+            "korzystam z aplikacji banku"
+          ],
+          "explanation": "«користуюся додатком» (орудний) → korzystam z aplikacji (dopełniacz)."
+        },
+        {
+          "id": "g8-3",
+          "text": "W autobusie zawsze słucham ___.",
+          "answer": "muzyki",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "muzykę",
+            "muzyki"
+          ],
+          "explanation": "«слухаю музику» (знахідний) → słucham muzyki (dopełniacz)."
+        },
+        {
+          "id": "g8-4",
+          "text": "Nie chcę ___ tego mieszkania.",
+          "answer": "zrezygnować z",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "zrezygnować od",
+            "zrezygnować z"
+          ],
+          "explanation": "«відмовитися від» → zrezygnować z."
+        },
+        {
+          "id": "g8-5",
+          "text": "«Для мене важлива добра робота.» → ___",
+          "answer": "Zależy mi na dobrej pracy.",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "Zależy mi od dobrej pracy.",
+            "Zależy mi na dobrej pracy."
+          ],
+          "explanation": "Zależy mi NA = мені важливо. Zależy OD = залежить від."
+        },
+        {
+          "id": "g8-6",
+          "text": "Jestem ___.",
+          "answer": "pewny sukcesu",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "pewny w sukcesie",
+            "pewny sukcesu"
+          ],
+          "explanation": "«впевнений в успіху» → pewny / pewien sukcesu (dopełniacz)."
+        }
+      ]
+    }
+  ]
+}

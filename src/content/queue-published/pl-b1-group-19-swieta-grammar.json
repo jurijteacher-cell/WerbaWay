@@ -1,0 +1,576 @@
+{
+  "lesson_id": "pl-b1-group-19-swieta",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: mowa zależna — że, czy, żeby",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 60,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "Słowa: co to znaczy?",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "opłatek",
+          "right": "cienki wafel, którym dzielimy się w Wigilię",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "pasterka",
+          "right": "msza o północy w Wigilię",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "kolęda",
+          "right": "piosenka na Boże Narodzenie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "makowiec",
+          "right": "ciasto z makiem",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "kompot z suszu",
+          "right": "napój z suszonych owoców",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "dodatkowe nakrycie",
+          "right": "talerz dla niespodziewanego gościa",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "niedziela handlowa",
+          "right": "niedziela, w którą sklepy są otwarte",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "tęsknić",
+          "right": "czuć smutek, bo kogoś nie ma blisko",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Że, czy czy gdzie?",
+      "instruction": "Przekaż cudze słowa. Informacja → że. Pytanie tak/nie → czy. Pytanie z gdzie, kiedy, ile… → to samo słowo. Wybierz.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "„Przyjdę o szóstej.” → Ira powiedziała, ___ przyjdzie o szóstej.",
+          "answer": "że",
+          "grammar_point": "mowa-zalezna-ze",
+          "options": [
+            "że",
+            "czy"
+          ]
+        },
+        {
+          "id": "g2-2",
+          "text": "„Lubisz karpia?” → Babcia zapytała Kubę, ___ lubi karpia.",
+          "answer": "czy",
+          "grammar_point": "pytanie-zalezne-czy",
+          "options": [
+            "że",
+            "czy"
+          ],
+          "explanation": "Pytanie tak/nie → czy."
+        },
+        {
+          "id": "g2-3",
+          "text": "„Gdzie jest opłatek?” → Mama zapytała, ___ jest opłatek.",
+          "answer": "gdzie",
+          "grammar_point": "pytanie-zalezne-zaimek",
+          "options": [
+            "czy",
+            "gdzie"
+          ],
+          "explanation": "Pytanie z „gdzie” → zostaje gdzie."
+        },
+        {
+          "id": "g2-4",
+          "text": "„Kiedy wracacie?” → Sąsiadka zapytała, ___ wracamy.",
+          "answer": "kiedy",
+          "grammar_point": "pytanie-zalezne-zaimek",
+          "options": [
+            "kiedy",
+            "czy"
+          ]
+        },
+        {
+          "id": "g2-5",
+          "text": "„Nie jem ryb.” → Kuba przypomniał, ___ nie je ryb.",
+          "answer": "że",
+          "grammar_point": "mowa-zalezna-ze",
+          "options": [
+            "żeby",
+            "że"
+          ],
+          "explanation": "Informacja, nie prośba → że."
+        },
+        {
+          "id": "g2-6",
+          "text": "„Ile osób przyjdzie?” → Taras zapytał, ___ osób przyjdzie.",
+          "answer": "ile",
+          "grammar_point": "pytanie-zalezne-zaimek",
+          "options": [
+            "czy",
+            "ile"
+          ]
+        },
+        {
+          "id": "g2-7",
+          "text": "„Pomóż mi!” → Babcia poprosiła mnie, ___ jej pomogła.",
+          "answer": "żebym",
+          "grammar_point": "prosba-zeby",
+          "options": [
+            "żebym",
+            "że"
+          ],
+          "explanation": "Prośba (tryb rozkazujący) → żebym + forma przeszła."
+        },
+        {
+          "id": "g2-8",
+          "text": "„Mogę przyjść z psem?” → Pani Monika zapytała, ___ może przyjść z psem.",
+          "answer": "czy",
+          "grammar_point": "pytanie-zalezne-czy",
+          "options": [
+            "czy",
+            "że"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Kto mówi? Zmień osobę",
+      "instruction": "Czas zostaje taki sam, ale zmienia się osoba. Wpisz czasownik albo zaimek w dobrej formie.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Ira: „Tęsknię za wami.” → Ira napisała, że ___ (tęsknić) za nami.",
+          "answer": "tęskni",
+          "grammar_point": "zmiana-osoby"
+        },
+        {
+          "id": "g3-2",
+          "text": "Maksym: „Ubiorę choinkę.” → Maksym obiecał, że ___ (ubrać) choinkę.",
+          "answer": "ubierze",
+          "grammar_point": "zmiana-osoby"
+        },
+        {
+          "id": "g3-3",
+          "text": "Babcia do mnie: „Jesteś zmęczona.” → Babcia powiedziała, że ___ (być) zmęczona.",
+          "answer": "jestem",
+          "grammar_point": "zmiana-osoby",
+          "explanation": "Babcia mówi o mnie → ja jestem."
+        },
+        {
+          "id": "g3-4",
+          "text": "Pani Monika: „Mam dyżur w święta.” → Pani Monika powiedziała, że ___ (mieć) dyżur w święta.",
+          "answer": "ma",
+          "grammar_point": "zmiana-osoby"
+        },
+        {
+          "id": "g3-5",
+          "text": "Kuba do Maksyma: „Przyjadę do ciebie w ferie.” → Kuba napisał Maksymowi, że ___ (przyjechać) do niego w ferie.",
+          "answer": "przyjedzie",
+          "grammar_point": "zmiana-osoby"
+        },
+        {
+          "id": "g3-6",
+          "text": "Mama do nas: „Kocham was.” → Mama powiedziała, że nas ___ (kochać).",
+          "answer": "kocha",
+          "grammar_point": "zmiana-osoby"
+        },
+        {
+          "id": "g3-7",
+          "text": "Ja do babci: „Pomożemy ci.” → Obiecałam babci, że jej ___ (pomóc).",
+          "answer": "pomożemy",
+          "grammar_point": "zmiana-osoby",
+          "explanation": "My (ja i rodzina) → pomożemy."
+        },
+        {
+          "id": "g3-8",
+          "text": "Taras do mnie: „Twoja mama dzwoniła.” → Taras powiedział, że dzwoniła ___ mama.",
+          "answer": "moja",
+          "grammar_point": "zmiana-osoby",
+          "explanation": "Twoja (z ust Tarasa) = moja (z moich ust)."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "4. Przekaż pytanie",
+      "instruction": "Jesteś Oleną. Przekaż pytanie całym zdaniem. Uważaj: „wy” w pytaniu to często „my” w Twojej relacji.",
+      "items": [
+        {
+          "id": "g4-1",
+          "prompt": "Babcia zapytała: „Czy wszyscy przyjdą?”",
+          "answer": "Babcia zapytała, czy wszyscy przyjdą.",
+          "grammar_point": "pytanie-zalezne-czy",
+          "accept": [
+            "Babcia zapytała, czy przyjdą wszyscy."
+          ]
+        },
+        {
+          "id": "g4-2",
+          "prompt": "Kuba zapytał: „Gdzie kupiliście choinkę?”",
+          "answer": "Kuba zapytał, gdzie kupiliśmy choinkę.",
+          "grammar_point": "pytanie-zalezne-zaimek",
+          "explanation": "Kupiliście (wy) → kupiliśmy (my, moja rodzina)."
+        },
+        {
+          "id": "g4-3",
+          "prompt": "Maksym zapytał: „O której zaczyna się pasterka?”",
+          "answer": "Maksym zapytał, o której zaczyna się pasterka.",
+          "grammar_point": "pytanie-zalezne-zaimek",
+          "accept": [
+            "Maksym zapytał, o której się zaczyna pasterka."
+          ]
+        },
+        {
+          "id": "g4-4",
+          "prompt": "Pani Monika zapytała mnie: „Ile ryb kupiłaś?”",
+          "answer": "Pani Monika zapytała mnie, ile ryb kupiłam.",
+          "grammar_point": "zmiana-osoby",
+          "accept": [
+            "Pani Monika zapytała mnie, ile kupiłam ryb."
+          ]
+        },
+        {
+          "id": "g4-5",
+          "prompt": "Ira zapytała: „Czy u was pada śnieg?”",
+          "answer": "Ira zapytała, czy u nas pada śnieg.",
+          "grammar_point": "pytanie-zalezne-czy",
+          "accept": [
+            "Ira zapytała, czy pada u nas śnieg."
+          ]
+        },
+        {
+          "id": "g4-6",
+          "prompt": "Taras zapytał mnie: „Dlaczego nie zadzwoniłaś do mamy?”",
+          "answer": "Taras zapytał mnie, dlaczego nie zadzwoniłam do mamy.",
+          "grammar_point": "pytanie-zalezne-zaimek",
+          "accept": [
+            "Taras zapytał mnie, czemu nie zadzwoniłam do mamy."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Że czy żeby?",
+      "instruction": "Informacja → że. Prośba, rada, polecenie → żeby (+ końcówka osoby). Wybierz.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Mama powiedziała, ___ wróci późno.",
+          "answer": "że",
+          "grammar_point": "ze-czy-zeby",
+          "options": [
+            "że",
+            "żeby"
+          ],
+          "explanation": "Informacja o tym, co zrobi → że."
+        },
+        {
+          "id": "g5-2",
+          "text": "Mama powiedziała, ___ nie czekali na nią z kolacją.",
+          "answer": "żebyśmy",
+          "grammar_point": "ze-czy-zeby",
+          "options": [
+            "żebyśmy",
+            "że"
+          ],
+          "explanation": "Prośba → żebyśmy + forma przeszła."
+        },
+        {
+          "id": "g5-3",
+          "text": "Lekarz poradził mi, ___ więcej spacerował.",
+          "answer": "żebym",
+          "grammar_point": "ze-czy-zeby",
+          "options": [
+            "że",
+            "żebym"
+          ],
+          "explanation": "Rada → żebym."
+        },
+        {
+          "id": "g5-4",
+          "text": "Babcia przypomniała, ___ w Wigilię tradycyjnie nie je się mięsa.",
+          "answer": "że",
+          "grammar_point": "ze-czy-zeby",
+          "options": [
+            "że",
+            "żeby"
+          ],
+          "explanation": "Przypomina fakt → że."
+        },
+        {
+          "id": "g5-5",
+          "text": "Babcia przypomniała, ___ kupić sianko.",
+          "answer": "żeby",
+          "grammar_point": "ze-czy-zeby",
+          "options": [
+            "żeby",
+            "że"
+          ],
+          "explanation": "Przypomina, co zrobić (z bezokolicznikiem) → żeby."
+        },
+        {
+          "id": "g5-6",
+          "text": "Szef napisał, ___ w Wigilię wszyscy mają wolne.",
+          "answer": "że",
+          "grammar_point": "ze-czy-zeby",
+          "options": [
+            "żeby",
+            "że"
+          ],
+          "explanation": "Informacja → że."
+        },
+        {
+          "id": "g5-7",
+          "text": "Sąsiad poprosił, ___ ściszyli muzykę.",
+          "answer": "żebyśmy",
+          "grammar_point": "ze-czy-zeby",
+          "options": [
+            "że",
+            "żebyśmy"
+          ],
+          "explanation": "Prośba → żebyśmy."
+        },
+        {
+          "id": "g5-8",
+          "text": "Ira obiecała, ___ przyleci latem.",
+          "answer": "że",
+          "grammar_point": "ze-czy-zeby",
+          "options": [
+            "że",
+            "żeby"
+          ],
+          "explanation": "Obiecać, że… — informacja o przyszłości."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Prośba → żeby + forma przeszła",
+      "instruction": "Zamień prośbę na mowę zależną. Wpisz żeby z końcówką i czasownik (tak jak w lekcji o wolontariacie).",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "„Zadzwoń do babci!” — mówi mama do Maksyma. → Mama prosi Maksyma, ___ (zadzwonić) do babci.",
+          "answer": "żeby zadzwonił",
+          "grammar_point": "prosba-zeby"
+        },
+        {
+          "id": "g6-2",
+          "text": "„Nie spóźnijcie się!” — mówi babcia do nas. → Babcia prosi, ___ (nie spóźnić się).",
+          "answer": "żebyśmy się nie spóźnili",
+          "grammar_point": "prosba-zeby",
+          "accept": [
+            "żebyśmy nie spóźnili się"
+          ]
+        },
+        {
+          "id": "g6-3",
+          "text": "„Przynieś sałatkę.” — mówi Olena do pani Moniki. → Olena prosi panią Monikę, ___ (przynieść) sałatkę.",
+          "answer": "żeby przyniosła",
+          "grammar_point": "prosba-zeby"
+        },
+        {
+          "id": "g6-4",
+          "text": "„Kup karpia!” — mówi Taras do mnie (jestem kobietą). → Taras prosi mnie, ___ (kupić) karpia.",
+          "answer": "żebym kupiła",
+          "grammar_point": "prosba-zeby"
+        },
+        {
+          "id": "g6-5",
+          "text": "„Pomóżcie mi w kuchni!” — mówi mama do córek. → Mama prosi córki, ___ (pomóc) jej w kuchni.",
+          "answer": "żeby pomogły",
+          "grammar_point": "prosba-zeby",
+          "explanation": "Córki = one (niemęskoosobowe) → pomogły."
+        },
+        {
+          "id": "g6-6",
+          "text": "„Nie otwierajcie prezentów przed kolacją!” — mówi babcia do wnuków. → Babcia prosi wnuków, ___ (nie otwierać) prezentów przed kolacją.",
+          "answer": "żeby nie otwierali",
+          "grammar_point": "prosba-zeby"
+        },
+        {
+          "id": "g6-7",
+          "text": "„Zostań na noc.” — mówi Olena do Kuby. → Olena prosi Kubę, ___ (zostać) na noc.",
+          "answer": "żeby został",
+          "grammar_point": "prosba-zeby"
+        },
+        {
+          "id": "g6-8",
+          "text": "„Przyjdź na pasterkę.” — mówi pani Monika do mnie (jestem mężczyzną). → Pani Monika prosi mnie, ___ (przyjść) na pasterkę.",
+          "answer": "żebym przyszedł",
+          "grammar_point": "prosba-zeby"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "7. Przekaż całe zdanie",
+      "instruction": "Napisz, co powiedziała albo o co zapytała ta osoba. Uważaj na że / czy / żeby i na osobę.",
+      "items": [
+        {
+          "id": "g7-1",
+          "prompt": "Babcia powiedziała: „Jutro upiekę makowiec.”",
+          "answer": "Babcia powiedziała, że jutro upiecze makowiec.",
+          "grammar_point": "mowa-zalezna-ze",
+          "accept": [
+            "Babcia powiedziała, że upiecze jutro makowiec.",
+            "Babcia powiedziała, że następnego dnia upiecze makowiec."
+          ]
+        },
+        {
+          "id": "g7-2",
+          "prompt": "Taras poprosił Maksyma: „Przynieś choinkę z balkonu.”",
+          "answer": "Taras poprosił Maksyma, żeby przyniósł choinkę z balkonu.",
+          "grammar_point": "prosba-zeby",
+          "accept": [
+            "Taras poprosił Maksyma, żeby przyniósł z balkonu choinkę."
+          ]
+        },
+        {
+          "id": "g7-3",
+          "prompt": "Kuba zapytał: „Czy mogę przyjechać w drugi dzień świąt?”",
+          "answer": "Kuba zapytał, czy może przyjechać w drugi dzień świąt.",
+          "grammar_point": "pytanie-zalezne-czy",
+          "accept": [
+            "Kuba zapytał, czy w drugi dzień świąt może przyjechać."
+          ]
+        },
+        {
+          "id": "g7-4",
+          "prompt": "Mama powiedziała do mnie: „Nie zapomnij o opłatku.” (jestem kobietą)",
+          "answer": "Mama powiedziała, żebym nie zapomniała o opłatku.",
+          "grammar_point": "prosba-zeby",
+          "accept": [
+            "Mama powiedziała mi, żebym nie zapomniała o opłatku.",
+            "Mama poprosiła, żebym nie zapomniała o opłatku.",
+            "Mama przypomniała mi, żebym nie zapomniała o opłatku."
+          ]
+        },
+        {
+          "id": "g7-5",
+          "prompt": "Ira zapytała: „Kiedy otwieracie prezenty?”",
+          "answer": "Ira zapytała, kiedy otwieramy prezenty.",
+          "grammar_point": "pytanie-zalezne-zaimek"
+        },
+        {
+          "id": "g7-6",
+          "prompt": "Pani Monika powiedziała: „Mam dyżur w Wigilię.”",
+          "answer": "Pani Monika powiedziała, że ma dyżur w Wigilię.",
+          "grammar_point": "mowa-zalezna-ze",
+          "accept": [
+            "Pani Monika powiedziała, że w Wigilię ma dyżur."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Pułapki z ukraińskiego",
+      "instruction": "Wybierz wersję, którą powie Polak. Po każdej odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Babcia poprosiła, ___ do niej zadzwonił.",
+          "answer": "żebym",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "żeby ja",
+            "żebym"
+          ],
+          "explanation": "«щоб я подзвонив» → żebym zadzwonił. Osoba jest w końcówce -m."
+        },
+        {
+          "id": "g8-2",
+          "text": "Mama ___ wcześniej.",
+          "answer": "kazała mi przyjść",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "powiedziała mi przyjść",
+            "kazała mi przyjść"
+          ],
+          "explanation": "«сказала мені прийти» → kazała mi przyjść / powiedziała, żebym przyszedł."
+        },
+        {
+          "id": "g8-3",
+          "text": "Muszę ___, gdzie są ozdoby.",
+          "answer": "zapytać mamę",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "zapytać u mamy",
+            "zapytać mamę"
+          ],
+          "explanation": "«запитати в мами» → zapytać mamę (biernik)."
+        },
+        {
+          "id": "g8-4",
+          "text": "Poszłam ___ o mąkę.",
+          "answer": "poprosić sąsiadkę",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "poprosić u sąsiadki",
+            "poprosić sąsiadkę"
+          ],
+          "explanation": "«попросити в сусідки» → poprosić sąsiadkę o coś."
+        },
+        {
+          "id": "g8-5",
+          "text": "Zadzwoniłam do cioci, żeby ___.",
+          "answer": "złożyć jej życzenia",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "przywitać ją ze świętami",
+            "złożyć jej życzenia"
+          ],
+          "explanation": "«привітати зі святами» → złożyć życzenia. „Przywitać” = сказати «добрий день»."
+        },
+        {
+          "id": "g8-6",
+          "text": "Powiedz Tarasowi, ___ kupił chleb.",
+          "answer": "żeby",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "że",
+            "żeby"
+          ],
+          "explanation": "«скажи йому, щоб купив» → żeby kupił. „Że kupił” = що він уже купив."
+        }
+      ]
+    }
+  ]
+}

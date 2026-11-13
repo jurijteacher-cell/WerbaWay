@@ -1,0 +1,107 @@
+{
+  "lesson_id": "pl-b1-group-20-pieniadze",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Ile naprawdę kosztuje nasza skoda?”. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Według Tarasa samochód kosztuje rodzinę mniej niż bilet miesięczny.",
+          "answer": false,
+          "explanation": "Auto to ponad pięćset złotych miesięcznie, a bilet kosztuje dużo mniej."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Od stycznia Taras nie będzie jeździł autem do pracy.",
+          "answer": true,
+          "explanation": "Obiecał, że będzie jeździł trolejbusem, a autem tylko w weekendy."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Maksym założył konto w banku bez rodziców.",
+          "answer": false,
+          "explanation": "Potrzebna była zgoda rodzica — Olena poszła z nim i podpisała dokumenty."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Pani Monika kliknęła w link z fałszywego SMS-a.",
+          "answer": false,
+          "explanation": "Prawie kliknęła, ale przypomniała sobie rady Maksyma."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Doradca powiedział, że kodu BLIK nie wolno nikomu podawać.",
+          "answer": true,
+          "explanation": "Usłyszała, że nikomu nie wolno podawać kodu BLIK ani hasła."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Bank oddał Olenie pieniądze za podwójną opłatę.",
+          "answer": true,
+          "explanation": "Przeprosili za błąd i oddali pieniądze po tygodniu."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: cztery krótkie dialogi",
+      "instruction": "Nauczyciel przeczyta cztery krótkie dialogi — tak jak na egzaminie państwowym B1. Każdy usłyszysz dwa razy. Najpierw przeczytaj pytania. Do każdego dialogu wybierz poprawną odpowiedź.",
+      "source": "teacher:p2-dialogi",
+      "max_plays": 2,
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Dialog 1. Z rozmowy wynika, że klient…",
+          "options": [
+            "wypłaci pieniądze przy kasie w sklepie.",
+            "pójdzie do bankomatu przy poczcie.",
+            "poczeka, aż bankomat zacznie działać."
+          ],
+          "answer": "wypłaci pieniądze przy kasie w sklepie.",
+          "explanation": "Bankomat przy poczcie bierze prowizję, a naprawa potrwa do jutra; w sklepie obok można wypłacić gotówkę przy kasie bez opłaty."
+        },
+        {
+          "id": "e2-2",
+          "question": "Dialog 2. Kobieta…",
+          "options": [
+            "dostanie nową kartę jutro.",
+            "do czasu nowej karty może płacić telefonem.",
+            "musi przyjść do oddziału z dowodem."
+          ],
+          "answer": "do czasu nowej karty może płacić telefonem.",
+          "explanation": "Karta zablokowana, nowa za siedem dni roboczych; w tym czasie BLIK w aplikacji."
+        },
+        {
+          "id": "e2-3",
+          "question": "Dialog 3. Klient zapłaci…",
+          "options": [
+            "gotówką.",
+            "kartą, kiedy terminal zacznie działać.",
+            "przelewem na telefon."
+          ],
+          "answer": "przelewem na telefon.",
+          "explanation": "Terminal nie działa, gotówki nie ma — sprzedawczyni podaje numer telefonu do przelewu."
+        },
+        {
+          "id": "e2-4",
+          "question": "Dialog 4. Kobieta pożyczy koledze…",
+          "options": [
+            "dwieście złotych do piątku.",
+            "sto złotych.",
+            "nic, bo sama nie ma pieniędzy."
+          ],
+          "answer": "sto złotych.",
+          "explanation": "Prosi o dwieście, ale ona może dać tylko sto."
+        }
+      ]
+    }
+  ]
+}

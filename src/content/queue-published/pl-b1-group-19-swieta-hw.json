@@ -1,0 +1,196 @@
+{
+  "lesson_id": "pl-b1-group-19-swieta",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: cudze słowa w nowych zdaniach",
+  "instruction": "Trzy bloki. Zrób je przed pisaniem.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Przekaż cudze słowa",
+      "instruction": "Wpisz brakujące słowa: że / czy / gdzie… / żeby + czasownik w dobrej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "„Czy jest wolny stolik?” → Zapytałem kelnera, ___ wolny stolik.",
+          "answer": "czy jest",
+          "grammar_point": "pytanie-zalezne-czy"
+        },
+        {
+          "id": "h1-2",
+          "text": "„Zamknij okno.” (do mnie, jestem kobietą) → Kolega poprosił, ___ okno.",
+          "answer": "żebym zamknęła",
+          "grammar_point": "prosba-zeby"
+        },
+        {
+          "id": "h1-3",
+          "text": "„Spóźnię się dziesięć minut.” → Ania napisała, ___ dziesięć minut.",
+          "answer": "że się spóźni",
+          "grammar_point": "mowa-zalezna-ze",
+          "accept": [
+            "że spóźni się"
+          ]
+        },
+        {
+          "id": "h1-4",
+          "text": "„Gdzie jest najbliższa apteka?” → Turysta zapytał, ___ najbliższa apteka.",
+          "answer": "gdzie jest",
+          "grammar_point": "pytanie-zalezne-zaimek"
+        },
+        {
+          "id": "h1-5",
+          "text": "„Nie parkujcie przed bramą!” → Dozorca poprosił, ___ przed bramą.",
+          "answer": "żebyśmy nie parkowali",
+          "grammar_point": "prosba-zeby"
+        },
+        {
+          "id": "h1-6",
+          "text": "„Wyślę ci zdjęcia.” → Tomek obiecał, ___ mi zdjęcia.",
+          "answer": "że wyśle",
+          "grammar_point": "mowa-zalezna-ze"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdania",
+      "instruction": "Klikaj słowa w dobrej kolejności.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "zapytała,",
+            "czy",
+            "przyjdziemy",
+            "na",
+            "obiad",
+            "ciocia"
+          ],
+          "answer": "Ciocia zapytała, czy przyjdziemy na obiad.",
+          "grammar_point": "pytanie-zalezne-czy"
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "poprosił,",
+            "żebym",
+            "mu",
+            "pomogła",
+            "brat"
+          ],
+          "answer": "Brat poprosił, żebym mu pomogła.",
+          "grammar_point": "prosba-zeby"
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "kazała",
+            "nam",
+            "czekać",
+            "pani"
+          ],
+          "answer": "Pani kazała nam czekać.",
+          "grammar_point": "czasowniki-mowienia"
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "powiedział,",
+            "że",
+            "nie",
+            "ma",
+            "czasu",
+            "szef"
+          ],
+          "answer": "Szef powiedział, że nie ma czasu.",
+          "grammar_point": "mowa-zalezna-ze"
+        },
+        {
+          "id": "h2-5",
+          "words": [
+            "zapytał,",
+            "ile",
+            "kosztuje",
+            "bilet",
+            "turysta"
+          ],
+          "answer": "Turysta zapytał, ile kosztuje bilet.",
+          "grammar_point": "pytanie-zalezne-zaimek"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Zapytałam u lekarza, czy mogę pływać.",
+          "answer": "Zapytałam lekarza, czy mogę pływać.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Zapytać kogoś (biernik), bez „u”."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Szefowa powiedziała mi przyjść jutro wcześniej.",
+          "answer": "Szefowa kazała mi przyjść jutro wcześniej.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Szefowa powiedziała, żebym przyszedł jutro wcześniej.",
+            "Szefowa powiedziała, żebym przyszła jutro wcześniej.",
+            "Szefowa powiedziała mi, żebym przyszedł jutro wcześniej.",
+            "Szefowa powiedziała mi, żebym przyszła jutro wcześniej.",
+            "Szefowa kazała mi jutro przyjść wcześniej."
+          ],
+          "explanation": "«сказала мені прийти» → kazała mi przyjść / powiedziała, żebym przyszedł."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Sąsiad zapytał, że mamy drabinę.",
+          "answer": "Sąsiad zapytał, czy mamy drabinę.",
+          "grammar_point": "pytanie-zalezne-czy",
+          "explanation": "Pytanie tak/nie → czy."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Mama prosiła, że kupiłem chleb.",
+          "answer": "Mama prosiła, żebym kupił chleb.",
+          "grammar_point": "prosba-zeby",
+          "explanation": "Prośba → żebym kupił.",
+          "accept": [
+            "Mama prosiła, żebym kupiła chleb."
+          ]
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Chociaż padał śnieg, ale poszliśmy na pasterkę.",
+          "answer": "Chociaż padał śnieg, poszliśmy na pasterkę.",
+          "grammar_point": "chociaz-mimo-ze",
+          "accept": [
+            "Padał śnieg, ale poszliśmy na pasterkę.",
+            "Poszliśmy na pasterkę, chociaż padał śnieg.",
+            "Mimo że padał śnieg, poszliśmy na pasterkę.",
+            "Mimo śniegu poszliśmy na pasterkę."
+          ],
+          "explanation": "Po „chociaż” bez „ale” (lekcja o ekologii)."
+        },
+        {
+          "id": "h3-6",
+          "prompt": "Nie przyszła na kolację z powodu, że była chora.",
+          "answer": "Nie przyszła na kolację, bo była chora.",
+          "grammar_point": "przyczyna-skutek",
+          "accept": [
+            "Nie przyszła na kolację, ponieważ była chora.",
+            "Nie przyszła na kolację z powodu choroby.",
+            "Nie przyszła na kolację, dlatego że była chora."
+          ],
+          "explanation": "Z całym zdaniem: bo / ponieważ (lekcja o wsi)."
+        }
+      ]
+    }
+  ]
+}

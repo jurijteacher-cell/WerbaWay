@@ -1,0 +1,628 @@
+{
+  "lesson_id": "pl-b1-group-18-ekologia",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: chociaż, mimo że, a, natomiast, jednak",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 60,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "Słowa: co to znaczy?",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "kaucja",
+          "right": "pieniądze, które odzyskujesz, kiedy oddasz opakowanie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "butelkomat",
+          "right": "automat na puste butelki i puszki",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "spaliny",
+          "right": "brudny dym z silnika",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "deszczówka",
+          "right": "woda z deszczu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "elektrośmieci",
+          "right": "zepsute urządzenia elektryczne",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "z drugiej ręki",
+          "right": "używany, kupiony od kogoś",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "przesadzać",
+          "right": "mówić albo robić mocniej, niż trzeba",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "kompromis",
+          "right": "rozwiązanie, w którym każdy trochę ustępuje",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. I, a czy ale?",
+      "instruction": "„I” — dodajemy. „A” — zestawiamy dwie różne rzeczy albo osoby. „Ale” — coś jest wbrew oczekiwaniom. Wybierz.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Ja jeżdżę do pracy rowerem, ___ mąż jeździ autem.",
+          "answer": "a",
+          "grammar_point": "a-ale-i",
+          "options": [
+            "a",
+            "ale"
+          ],
+          "explanation": "Dwie osoby, dwa różne sposoby → zestawienie → a."
+        },
+        {
+          "id": "g2-2",
+          "text": "Jestem zmęczona, ___ pójdę z tobą na spacer.",
+          "answer": "ale",
+          "grammar_point": "a-ale-i",
+          "options": [
+            "ale",
+            "a"
+          ],
+          "explanation": "Ta sama osoba, decyzja wbrew zmęczeniu → ale."
+        },
+        {
+          "id": "g2-3",
+          "text": "Na targu kupiłam warzywa ___ owoce.",
+          "answer": "i",
+          "grammar_point": "a-ale-i",
+          "options": [
+            "i",
+            "a"
+          ],
+          "explanation": "Po prostu dodajemy → i."
+        },
+        {
+          "id": "g2-4",
+          "text": "Butelki oddajemy do butelkomatu, ___ słoiki wyrzucamy do zielonego pojemnika.",
+          "answer": "a",
+          "grammar_point": "a-ale-i",
+          "options": [
+            "ale",
+            "a"
+          ],
+          "explanation": "Dwie różne rzeczy, dwa różne miejsca → a."
+        },
+        {
+          "id": "g2-5",
+          "text": "Chciałam sama naprawić czajnik, ___ nie umiałam.",
+          "answer": "ale",
+          "grammar_point": "a-ale-i",
+          "options": [
+            "a",
+            "ale"
+          ],
+          "explanation": "Plan się nie udał — wbrew oczekiwaniu → ale."
+        },
+        {
+          "id": "g2-6",
+          "text": "W Lublinie jeżdżą trolejbusy, ___ w Krakowie ich nie ma.",
+          "answer": "a",
+          "grammar_point": "a-ale-i",
+          "options": [
+            "i",
+            "a"
+          ],
+          "explanation": "Zestawiamy dwa miasta → a."
+        },
+        {
+          "id": "g2-7",
+          "text": "Bilet miesięczny jest drogi, ___ szybko się opłaca.",
+          "answer": "ale",
+          "grammar_point": "a-ale-i",
+          "options": [
+            "ale",
+            "a"
+          ],
+          "explanation": "Ta sama rzecz: minus, a potem niespodziewany plus → ale."
+        },
+        {
+          "id": "g2-8",
+          "text": "Mama segreguje śmieci od lat, ___ tata dopiero od tego roku.",
+          "answer": "a",
+          "grammar_point": "a-ale-i",
+          "options": [
+            "a",
+            "i"
+          ],
+          "explanation": "Zestawiamy dwie osoby → a. „I” nie pokazuje różnicy."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Natomiast, za to, jednak, mimo to",
+      "instruction": "Natomiast — zestawienie. Za to — plus zamiast minusa. Jednak, mimo to — coś dzieje się wbrew czemuś. Wybierz.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Warszawa ma metro. Lublin ___ ma trolejbusy.",
+          "answer": "natomiast",
+          "grammar_point": "natomiast-jednak",
+          "options": [
+            "natomiast",
+            "mimo to"
+          ],
+          "explanation": "Zestawiamy dwa miasta → natomiast."
+        },
+        {
+          "id": "g3-2",
+          "text": "Rower jest wolniejszy niż auto. ___ nie stoisz w korkach.",
+          "answer": "Za to",
+          "grammar_point": "natomiast-jednak",
+          "options": [
+            "Za to",
+            "Mimo to"
+          ],
+          "explanation": "Minus → plus, który go równoważy → za to."
+        },
+        {
+          "id": "g3-3",
+          "text": "Padało cały dzień. ___ poszliśmy na spacer.",
+          "answer": "Mimo to",
+          "grammar_point": "natomiast-jednak",
+          "options": [
+            "Dlatego",
+            "Mimo to"
+          ],
+          "explanation": "Spacer wbrew deszczowi → mimo to. „Dlatego” = skutek (lekcja o wsi)."
+        },
+        {
+          "id": "g3-4",
+          "text": "Wiem, że plastik szkodzi. Kupuję ___ wodę w butelkach, bo w pracy nie ma kranu.",
+          "answer": "jednak",
+          "grammar_point": "natomiast-jednak",
+          "options": [
+            "jednak",
+            "dlatego"
+          ],
+          "explanation": "Robię coś wbrew temu, co wiem → jednak."
+        },
+        {
+          "id": "g3-5",
+          "text": "Film był bardzo długi. Nie nudziłam się ___.",
+          "answer": "jednak",
+          "grammar_point": "natomiast-jednak",
+          "options": [
+            "natomiast",
+            "jednak"
+          ],
+          "explanation": "Wbrew oczekiwaniu → jednak (może stać na końcu zdania)."
+        },
+        {
+          "id": "g3-6",
+          "text": "Babcia nie ma smartfona, ___ zna wszystkie wiadomości z radia.",
+          "answer": "za to",
+          "grammar_point": "natomiast-jednak",
+          "options": [
+            "za to",
+            "mimo to"
+          ],
+          "explanation": "Minus (brak smartfona) i plus, który go równoważy → za to."
+        },
+        {
+          "id": "g3-7",
+          "text": "Chcieliśmy jechać pociągiem, ___ bilety się skończyły.",
+          "answer": "ale",
+          "grammar_point": "natomiast-jednak",
+          "options": [
+            "a",
+            "ale"
+          ],
+          "explanation": "Plan się nie udał → ale."
+        },
+        {
+          "id": "g3-8",
+          "text": "Kierowcy chcą parkingu. Mieszkańcy ___ chcą parku.",
+          "answer": "natomiast",
+          "grammar_point": "natomiast-jednak",
+          "options": [
+            "natomiast",
+            "za to"
+          ],
+          "explanation": "Dwie grupy, dwa różne zdania → natomiast."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "4. Połącz zdania",
+      "instruction": "Połącz dwa zdania słowem z nawiasu. Napisz całe zdanie. Pamiętaj o przecinku.",
+      "items": [
+        {
+          "id": "g4-1",
+          "prompt": "Ja segreguję śmieci. Mój sąsiad nie segreguje. (a)",
+          "answer": "Ja segreguję śmieci, a mój sąsiad nie segreguje.",
+          "grammar_point": "a-ale-i",
+          "accept": [
+            "Ja segreguję śmieci, a mój sąsiad nie.",
+            "Segreguję śmieci, a mój sąsiad nie segreguje.",
+            "Segreguję śmieci, a mój sąsiad nie."
+          ]
+        },
+        {
+          "id": "g4-2",
+          "prompt": "Było zimno. Poszliśmy nad rzekę. (mimo to)",
+          "answer": "Było zimno. Mimo to poszliśmy nad rzekę.",
+          "grammar_point": "natomiast-jednak",
+          "accept": [
+            "Było zimno, mimo to poszliśmy nad rzekę."
+          ]
+        },
+        {
+          "id": "g4-3",
+          "prompt": "Maksym jeździ rowerem. Taras jeździ autem. (natomiast)",
+          "answer": "Maksym jeździ rowerem, natomiast Taras jeździ autem.",
+          "grammar_point": "natomiast-jednak",
+          "accept": [
+            "Maksym jeździ rowerem. Taras natomiast jeździ autem.",
+            "Maksym jeździ rowerem, Taras natomiast jeździ autem.",
+            "Maksym jeździ rowerem. Natomiast Taras jeździ autem.",
+            "Maksym jeździ rowerem, natomiast Taras autem.",
+            "Maksym jeździ rowerem, Taras natomiast autem."
+          ]
+        },
+        {
+          "id": "g4-4",
+          "prompt": "Ten telefon jest stary. Działa bez problemu. (ale)",
+          "answer": "Ten telefon jest stary, ale działa bez problemu.",
+          "grammar_point": "a-ale-i"
+        },
+        {
+          "id": "g4-5",
+          "prompt": "Nie lubię gotować. Codziennie robię obiad dla dzieci. (jednak)",
+          "answer": "Nie lubię gotować, jednak codziennie robię obiad dla dzieci.",
+          "grammar_point": "natomiast-jednak",
+          "accept": [
+            "Nie lubię gotować. Jednak codziennie robię obiad dla dzieci.",
+            "Nie lubię gotować. Codziennie jednak robię obiad dla dzieci.",
+            "Nie lubię gotować, codziennie jednak robię obiad dla dzieci."
+          ]
+        },
+        {
+          "id": "g4-6",
+          "prompt": "Hulajnoga jest szybsza. Rower jest zdrowszy. (za to)",
+          "answer": "Hulajnoga jest szybsza, za to rower jest zdrowszy.",
+          "grammar_point": "natomiast-jednak",
+          "accept": [
+            "Hulajnoga jest szybsza. Za to rower jest zdrowszy.",
+            "Hulajnoga jest szybsza, za to rower zdrowszy."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Chociaż, mimo że czy mimo?",
+      "instruction": "Chociaż / mimo że + całe zdanie (z czasownikiem). Mimo / pomimo + rzeczownik w dopełniaczu. Wybierz.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "___ pada, idziemy na spacer.",
+          "answer": "Chociaż",
+          "grammar_point": "chociaz-mimo-ze",
+          "options": [
+            "Chociaż",
+            "Mimo"
+          ],
+          "explanation": "Dalej jest czasownik (pada) → chociaż."
+        },
+        {
+          "id": "g5-2",
+          "text": "___ deszczu idziemy na spacer.",
+          "answer": "Mimo",
+          "grammar_point": "chociaz-mimo-ze",
+          "options": [
+            "Mimo",
+            "Chociaż"
+          ],
+          "explanation": "Dalej jest rzeczownik w dopełniaczu → mimo."
+        },
+        {
+          "id": "g5-3",
+          "text": "Jeździ rowerem, ___ ma samochód.",
+          "answer": "mimo że",
+          "grammar_point": "chociaz-mimo-ze",
+          "options": [
+            "mimo że",
+            "mimo"
+          ],
+          "explanation": "Dalej jest czasownik (ma) → mimo że."
+        },
+        {
+          "id": "g5-4",
+          "text": "Wyszedł bez kurtki ___ zimna.",
+          "answer": "mimo",
+          "grammar_point": "chociaz-mimo-ze",
+          "options": [
+            "chociaż",
+            "mimo"
+          ],
+          "explanation": "Rzeczownik (zimna) → mimo."
+        },
+        {
+          "id": "g5-5",
+          "text": "___ wszystko warto próbować.",
+          "answer": "Mimo",
+          "grammar_point": "chociaz-mimo-ze",
+          "options": [
+            "Mimo że",
+            "Mimo"
+          ],
+          "explanation": "Stałe wyrażenie: mimo wszystko."
+        },
+        {
+          "id": "g5-6",
+          "text": "Kupił nowy telefon, ___ stary jeszcze działał.",
+          "answer": "chociaż",
+          "grammar_point": "chociaz-mimo-ze",
+          "options": [
+            "chociaż",
+            "pomimo"
+          ],
+          "explanation": "Całe zdanie (stary działał) → chociaż."
+        },
+        {
+          "id": "g5-7",
+          "text": "___ protestów mieszkańców gmina wycięła drzewa.",
+          "answer": "Pomimo",
+          "grammar_point": "chociaz-mimo-ze",
+          "options": [
+            "Pomimo że",
+            "Pomimo"
+          ],
+          "explanation": "Rzeczownik (protestów) → pomimo."
+        },
+        {
+          "id": "g5-8",
+          "text": "Nie zrezygnowała z tej pracy, ___ mało zarabiała.",
+          "answer": "chociaż",
+          "grammar_point": "chociaz-czy-bo",
+          "options": [
+            "bo",
+            "chociaż"
+          ],
+          "explanation": "Zostaje wbrew niskiej pensji → chociaż. „Bo” = przyczyna — tu nie ma sensu."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Mimo + dopełniacz",
+      "instruction": "Wpisz rzeczownik z nawiasu w dopełniaczu (kogo? czego?).",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Mimo ___ (zmęczenie) skończyła raport przed północą.",
+          "answer": "zmęczenia",
+          "grammar_point": "mimo-dopelniacz"
+        },
+        {
+          "id": "g6-2",
+          "text": "Mimo ___ (zła pogoda) koncert odbył się w parku.",
+          "answer": "złej pogody",
+          "grammar_point": "mimo-dopelniacz"
+        },
+        {
+          "id": "g6-3",
+          "text": "Pomimo ___ (wysokie ceny) ludzie ciągle kupują nowe telefony.",
+          "answer": "wysokich cen",
+          "grammar_point": "mimo-dopelniacz"
+        },
+        {
+          "id": "g6-4",
+          "text": "Mimo ___ (korki) dojechaliśmy na czas.",
+          "answer": "korków",
+          "grammar_point": "mimo-dopelniacz"
+        },
+        {
+          "id": "g6-5",
+          "text": "Pomimo ___ (wiek) dziadek codziennie pływa w jeziorze.",
+          "answer": "wieku",
+          "grammar_point": "mimo-dopelniacz"
+        },
+        {
+          "id": "g6-6",
+          "text": "Mimo ___ (ostrzeżenia) lekarza dalej pali papierosy.",
+          "answer": "ostrzeżeń",
+          "grammar_point": "mimo-dopelniacz",
+          "accept": [
+            "ostrzeżenia"
+          ],
+          "explanation": "Liczba mnoga: ostrzeżeń; pojedyncza: ostrzeżenia — obie są dobre."
+        },
+        {
+          "id": "g6-7",
+          "text": "Mimo ___ (ból) poszedł do pracy.",
+          "answer": "bólu",
+          "grammar_point": "mimo-dopelniacz"
+        },
+        {
+          "id": "g6-8",
+          "text": "Pomimo ___ (duży ruch) na drodze jechał bardzo szybko.",
+          "answer": "dużego ruchu",
+          "grammar_point": "mimo-dopelniacz"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "7. Chociaż → mimo, mimo → chociaż",
+      "instruction": "Powiedz to samo inaczej. Użyj słów z nawiasu.",
+      "items": [
+        {
+          "id": "g7-1",
+          "prompt": "Chociaż padał deszcz, poszliśmy na spacer. (mimo + deszcz)",
+          "answer": "Mimo deszczu poszliśmy na spacer.",
+          "grammar_point": "zdanie-rzeczownik-przyzwolenie",
+          "accept": [
+            "Poszliśmy na spacer mimo deszczu."
+          ]
+        },
+        {
+          "id": "g7-2",
+          "prompt": "Chociaż był zmęczony, pomógł mi. (mimo + zmęczenie)",
+          "answer": "Mimo zmęczenia pomógł mi.",
+          "grammar_point": "zdanie-rzeczownik-przyzwolenie",
+          "accept": [
+            "Pomógł mi mimo zmęczenia."
+          ]
+        },
+        {
+          "id": "g7-3",
+          "prompt": "Chociaż sąsiedzi protestowali, drzewo wycięto. (mimo + protesty sąsiadów)",
+          "answer": "Mimo protestów sąsiadów drzewo wycięto.",
+          "grammar_point": "zdanie-rzeczownik-przyzwolenie",
+          "accept": [
+            "Drzewo wycięto mimo protestów sąsiadów.",
+            "Mimo protestów sąsiadów wycięto drzewo.",
+            "Wycięto drzewo mimo protestów sąsiadów."
+          ]
+        },
+        {
+          "id": "g7-4",
+          "prompt": "Mimo upału pracowali w ogrodzie. (chociaż + było gorąco)",
+          "answer": "Chociaż było gorąco, pracowali w ogrodzie.",
+          "grammar_point": "zdanie-rzeczownik-przyzwolenie",
+          "accept": [
+            "Pracowali w ogrodzie, chociaż było gorąco."
+          ]
+        },
+        {
+          "id": "g7-5",
+          "prompt": "Kupiła rower elektryczny mimo wysokiej ceny. (mimo że + był drogi)",
+          "answer": "Kupiła rower elektryczny, mimo że był drogi.",
+          "grammar_point": "zdanie-rzeczownik-przyzwolenie",
+          "accept": [
+            "Mimo że rower elektryczny był drogi, kupiła go."
+          ]
+        },
+        {
+          "id": "g7-6",
+          "prompt": "Chociaż ma alergię, trzyma w domu kota. (mimo + alergia)",
+          "answer": "Mimo alergii trzyma w domu kota.",
+          "grammar_point": "zdanie-rzeczownik-przyzwolenie",
+          "accept": [
+            "Trzyma w domu kota mimo alergii.",
+            "Mimo alergii trzyma kota w domu."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Pułapki z ukraińskiego",
+      "instruction": "Wybierz wersję, którą powie Polak. Po każdej odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "«Хоча було холодно, ми пішли до річки». Po polsku: ___",
+          "answer": "Chociaż było zimno, poszliśmy nad rzekę.",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "Chociaż było zimno, ale poszliśmy nad rzekę.",
+            "Chociaż było zimno, poszliśmy nad rzekę."
+          ],
+          "explanation": "Po „chociaż” nie dodajemy „ale”. Jedno słowo wystarczy."
+        },
+        {
+          "id": "g8-2",
+          "text": "Kupił bilet, ___ był bardzo drogi.",
+          "answer": "mimo że",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "nie patrząc na to, że",
+            "mimo że"
+          ],
+          "explanation": "«Не дивлячись на те, що» → mimo że / chociaż. „Nie patrząc” = нe дивлячись (очима)."
+        },
+        {
+          "id": "g8-3",
+          "text": "Poszli na spacer mimo ___.",
+          "answer": "deszczu",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "deszcz",
+            "deszczu"
+          ],
+          "explanation": "Mimo + dopełniacz → deszczu."
+        },
+        {
+          "id": "g8-4",
+          "text": "Było drogo, ale ___ kupiłam te buty.",
+          "answer": "i tak",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "wszystko jedno",
+            "i tak"
+          ],
+          "explanation": "«Все одно купила» → i tak kupiłam. „Wszystko jedno” = «мені байдуже»."
+        },
+        {
+          "id": "g8-5",
+          "text": "Plan był dobry. ___ nikt go nie poparł.",
+          "answer": "Mimo to",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "Tym nie mniej",
+            "Mimo to"
+          ],
+          "explanation": "«Тим не менш» → mimo to / niemniej (razem). „Tym nie mniej” osobno — błąd."
+        },
+        {
+          "id": "g8-6",
+          "text": "Ja pracuję w biurze, ___ mąż pracuje z domu.",
+          "answer": "podczas gdy",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "w tym czasie jak",
+            "podczas gdy"
+          ],
+          "explanation": "«В той час як» → podczas gdy albo „a”."
+        }
+      ]
+    }
+  ]
+}

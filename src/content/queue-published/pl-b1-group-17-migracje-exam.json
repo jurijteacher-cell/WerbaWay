@@ -1,0 +1,107 @@
+{
+  "lesson_id": "pl-b1-group-17-migracje",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie i słuchanie.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Ostatni autobus z Zalesia”. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Do wsi babci Hanny łatwo dziś dojechać autobusem.",
+          "answer": false,
+          "explanation": "Autobus kursuje tylko dwa razy dziennie, więc bez samochodu trudno tam dojechać."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Sklep w Zalesiu zamknięto, bo przychodziło do niego za mało ludzi.",
+          "answer": true,
+          "explanation": "Sklep zamknięto z powodu braku klientów."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Bartek wyjechał do Warszawy na studia.",
+          "answer": false,
+          "explanation": "Wyjechał, bo we wsi nie było dla niego pracy. Jest informatykiem."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Bartkowi na wsi brakuje towarzystwa.",
+          "answer": true,
+          "explanation": "Znajomi wyjechali, więc w weekend nie ma z kim wyjść."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Pani Ewa przeprowadziła się na wieś, bo w mieście miała problemy ze zdrowiem.",
+          "answer": true,
+          "explanation": "Przeniosła się z powodu zdrowia: w mieście chorowała przez smog."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Według pani Ewy ludzie z miast chętnie przeprowadzają się do Zalesia.",
+          "answer": false,
+          "explanation": "Wybierają wsie pod dużymi miastami; do Zalesia mało kto przyjeżdża."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: cztery wiadomości głosowe",
+      "instruction": "Nauczyciel przeczyta cztery wiadomości głosowe — tak jak w pierwszej części egzaminu telc. Najpierw przeczytaj pytania. Każdą wiadomość usłyszysz dwa razy. Wybierz poprawną odpowiedź.",
+      "source": "teacher:t1-wiadomosci",
+      "max_plays": 2,
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Wiadomość 1. Urzędniczka dzwoni, żeby powiedzieć, że…",
+          "options": [
+            "w soboty autobus będzie jeździł częściej.",
+            "od grudnia w dni robocze będzie więcej kursów.",
+            "trzeba jeszcze raz napisać pismo w sprawie autobusu."
+          ],
+          "answer": "od grudnia w dni robocze będzie więcej kursów.",
+          "explanation": "Od grudnia trzy kursy dziennie zamiast dwóch; w soboty nic się nie zmienia."
+        },
+        {
+          "id": "e2-2",
+          "question": "Wiadomość 2. Bartek dzwoni do mamy, ponieważ…",
+          "options": [
+            "przyjedzie do domu w innym terminie.",
+            "wziął urlop na cały tydzień.",
+            "chce, żeby mama przywiozła mu gwoździe do Warszawy."
+          ],
+          "answer": "przyjedzie do domu w innym terminie.",
+          "explanation": "Nie przyjedzie w ten weekend, tylko za tydzień. Urlop — dwa dni; gwoździe mama ma kupić dla taty."
+        },
+        {
+          "id": "e2-3",
+          "question": "Wiadomość 3. Dla pani Krystyny najważniejsze jest to, czy…",
+          "options": [
+            "dom ma duży ogród.",
+            "właściciel może się spotkać w sobotę.",
+            "w domu jest szybki internet."
+          ],
+          "answer": "w domu jest szybki internet.",
+          "explanation": "Będzie pracować zdalnie i martwi ją internet: pyta o światłowód. Ogród już jej się podoba, sobota to tylko plan B."
+        },
+        {
+          "id": "e2-4",
+          "question": "Wiadomość 4. Babcia dzwoni, żeby…",
+          "options": [
+            "powiedzieć, że gmina sprzedała starą szkołę.",
+            "poprosić, żeby ktoś zawiózł ją na zebranie.",
+            "poinformować, że zebranie zaczyna się o osiemnastej."
+          ],
+          "answer": "poprosić, żeby ktoś zawiózł ją na zebranie.",
+          "explanation": "Przez kolano nie dojdzie; pyta, czy Taras ją zawiezie. Gmina dopiero chce sprzedać szkołę; zebranie jest o siedemnastej."
+        }
+      ]
+    }
+  ]
+}
