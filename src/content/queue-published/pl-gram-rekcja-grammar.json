@@ -1,0 +1,616 @@
+{
+  "lesson_id": "pl-gram-rekcja",
+  "exercise_type": "fill-in-blank",
+  "title": "Tęsknię za tobą: czasowniki z przyimkami i przypadkami",
+  "instruction": "Najpierw tekst, potem dwie części gramatyki — po każdej ćwiczenia.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "g0",
+      "part": 1,
+      "exercise_type": "true-false",
+      "title": "0. Na start: rok na odległość",
+      "instruction": "Prawda czy fałsz? Uważaj na czasowniki i przyimki w tekście.",
+      "items": [
+        {
+          "id": "g0-1",
+          "statement": "Narrator zakochał się w Ani dopiero po kilku spotkaniach.",
+          "answer": false,
+          "explanation": "„Zakochałem się w niej już przy pierwszym tańcu”. Zakochać się w kim? — w niej.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g0-2",
+          "statement": "Na weselu Ania śmiała się z jego krawata.",
+          "answer": true,
+          "explanation": "„Śmiała się z moich żartów i z mojego krawata”. Śmiać się z + dopełniacz.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g0-3",
+          "statement": "Kłócili się głównie o poważne sprawy, na przykład o pieniądze.",
+          "answer": false,
+          "explanation": "Kłócili się o drobiazgi: kto ma zadzwonić pierwszy, kto nie odpisał. Kłócić się o + biernik.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g0-4",
+          "statement": "Ania gniewała się na niego, bo zapomniał pogratulować jej awansu.",
+          "answer": true,
+          "explanation": "Gratulować komu? czego? — jej awansu.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g0-5",
+          "statement": "Mama narratora w ogóle się o niego nie martwiła.",
+          "answer": false,
+          "explanation": "„Mama martwiła się o mnie”. Martwić się o + biernik.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g0-6",
+          "statement": "Na lotnisku to Ania czekała na narratora.",
+          "answer": false,
+          "explanation": "To on czekał na Anię z kwiatami. Czekać na + biernik.",
+          "grammar_point": "rekcja"
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Za kim? Na kogo? Z kim?",
+      "instruction": "Wybierz poprawną wersję.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Kiedy jesteś w delegacji, bardzo tęsknię ___.",
+          "answer": "za tobą",
+          "options": [
+            "za tobą",
+            "po tobie"
+          ],
+          "explanation": "Скучать по кому → tęsknić za kim (narzędnik).",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g1-2",
+          "text": "Wczoraj na przystanku czekałem ___ pół godziny.",
+          "answer": "na autobus",
+          "options": [
+            "na autobus",
+            "autobusu"
+          ],
+          "explanation": "Ждать автобуса → czekać na + biernik.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g1-3",
+          "text": "Mój brat ożenił się ___.",
+          "answer": "z Włoszką",
+          "options": [
+            "z Włoszką",
+            "na Włoszce"
+          ],
+          "explanation": "Жениться на ком → ożenić się z kim (narzędnik).",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g1-4",
+          "text": "Ola wyszła za mąż ___.",
+          "answer": "za Francuza",
+          "options": [
+            "za Francuza",
+            "z Francuzem"
+          ],
+          "explanation": "Выйти замуж за кого → wyjść za mąż za + biernik. Z + narzędnik jest przy „ożenić się”.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g1-5",
+          "text": "Zakochałam się ___ od pierwszego dnia.",
+          "answer": "w tym mieście",
+          "options": [
+            "w tym mieście",
+            "w to miasto"
+          ],
+          "explanation": "Влюбиться в (вин.) → zakochać się w + miejscownik.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g1-6",
+          "text": "Dzieci głośno śmiały się ___.",
+          "answer": "z klauna",
+          "options": [
+            "z klauna",
+            "nad klaunem"
+          ],
+          "explanation": "Смеяться над кем → śmiać się z + dopełniacz.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g1-7",
+          "text": "Po przeprowadzce długo przyzwyczajałem się ___.",
+          "answer": "do polskiej pogody",
+          "options": [
+            "do polskiej pogody",
+            "polskiej pogodzie"
+          ],
+          "explanation": "Привыкать к чему → przyzwyczajać się do + dopełniacz.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g1-8",
+          "text": "Nie żartuj ___ — on się łatwo obraża.",
+          "answer": "z niego",
+          "options": [
+            "z niego",
+            "nad nim"
+          ],
+          "explanation": "Шутить над кем → żartować z + dopełniacz.",
+          "grammar_point": "rekcja"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. O kim? czy o kogo?",
+      "instruction": "Wpisz słowa z nawiasu w dobrym przypadku. Mówić, myśleć, marzyć o → miejscownik. Martwić się, prosić, pytać, chodzi o → biernik.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Rodzice ciągle martwią się o ___. (moja praca)",
+          "answer": "moją pracę",
+          "explanation": "Martwić się o kogo? o co? → biernik.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g2-2",
+          "text": "Wczoraj długo rozmawialiśmy o ___. (nasz ślub)",
+          "answer": "naszym ślubie",
+          "explanation": "Rozmawiać o kim? o czym? → miejscownik.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g2-3",
+          "text": "Dzieci pokłóciły się o ___. (ostatnia kanapka)",
+          "answer": "ostatnią kanapkę",
+          "explanation": "Kłócić się o co? → biernik.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g2-4",
+          "text": "Od lat marzę o ___ nad morzem. (własna kawiarnia)",
+          "answer": "własnej kawiarni",
+          "explanation": "Marzyć o czym? → miejscownik.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g2-5",
+          "text": "Poprosiłam sąsiada o ___. (mała przysługa)",
+          "answer": "małą przysługę",
+          "explanation": "Prosić o co? → biernik.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g2-6",
+          "text": "Całą noc myślałem o ___. (ta rozmowa)",
+          "answer": "tej rozmowie",
+          "explanation": "Myśleć o czym? → miejscownik.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g2-7",
+          "text": "Stary, nie chodzi o ___, tylko o zasady. (kasa)",
+          "answer": "kasę",
+          "explanation": "Chodzi o co? → biernik: o kasę.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g2-8",
+          "text": "Zapytaj recepcjonistkę o ___. (najbliższa apteka)",
+          "answer": "najbliższą aptekę",
+          "explanation": "Pytać o co? → biernik.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g2-9",
+          "text": "Opowiedz mi coś o ___. (twoja siostra)",
+          "answer": "twojej siostrze",
+          "explanation": "Opowiadać o kim? → miejscownik.",
+          "grammar_point": "rekcja"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Za nim, do niej, jej, ją",
+      "instruction": "Wpisz zaimek z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Kiedy wyjechałaś, bardzo tęskniłem za ___. (ty)",
+          "answer": "tobą",
+          "explanation": "Tęsknić za + narzędnik: za tobą.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g3-2",
+          "text": "Zakochała się w ___ na studiach. (on)",
+          "answer": "nim",
+          "explanation": "W + miejscownik; po przyimku „n-”: w nim.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g3-3",
+          "text": "Ożenił się z ___ po roku znajomości. (ona)",
+          "answer": "nią",
+          "explanation": "Ożenić się z + narzędnik: z nią.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g3-4",
+          "text": "Ola wyszła za ___ w zeszłym roku. (on)",
+          "answer": "niego",
+          "explanation": "Wyjść za + biernik: za niego.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g3-5",
+          "text": "Dlaczego śmiejesz się ze ___? (ja)",
+          "answer": "mnie",
+          "explanation": "Śmiać się z + dopełniacz: ze mnie.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g3-6",
+          "text": "Szef jest na ___ zły, bo zawaliliśmy projekt. (my)",
+          "answer": "nas",
+          "explanation": "Być złym na + biernik: na nas.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g3-7",
+          "text": "Jeśli coś się stanie, zadzwoń do ___. (on)",
+          "answer": "niego",
+          "explanation": "Dzwonić do + dopełniacz: do niego.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g3-8",
+          "text": "Podziękuj ___ za kwiaty! (ona)",
+          "answer": "jej",
+          "explanation": "Dziękować komu? → celownik: jej.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g3-9",
+          "text": "Spóźniłeś się. Przeproś ___! (ona)",
+          "answer": "ją",
+          "explanation": "Przepraszać kogo? → biernik: ją (не «перед ней»).",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g3-10",
+          "text": "Wygrali mecz. Pogratuluj ___ zwycięstwa! (oni)",
+          "answer": "im",
+          "explanation": "Gratulować komu? → im; czego? → zwycięstwa.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g3-11",
+          "text": "Nikt na ___ nie czekał na dworcu. (wy)",
+          "answer": "was",
+          "explanation": "Czekać na + biernik: na was. Nikt… nie — jak w poprzedniej lekcji.",
+          "grammar_point": "negacja-podwojna"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Szukam czego?",
+      "instruction": "Dopełniacz czy biernik? Wybierz.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Od miesiąca szukam ___.",
+          "answer": "nowej pracy",
+          "options": [
+            "nowej pracy",
+            "nową pracę"
+          ],
+          "explanation": "Szukać + dopełniacz (искать работу → szukać pracy).",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g4-2",
+          "text": "Często słuchasz ___ w samochodzie?",
+          "answer": "tego podcastu",
+          "options": [
+            "tego podcastu",
+            "ten podcast"
+          ],
+          "explanation": "Słuchać + dopełniacz.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g4-3",
+          "text": "W kuchni używam ___ tylko do chleba.",
+          "answer": "tego noża",
+          "options": [
+            "tego noża",
+            "ten nóż"
+          ],
+          "explanation": "Używać + dopełniacz.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g4-4",
+          "text": "Od roku uczę się ___.",
+          "answer": "hiszpańskiego",
+          "options": [
+            "hiszpańskiego",
+            "hiszpański"
+          ],
+          "explanation": "Uczyć się + dopełniacz (учу испанский → uczę się hiszpańskiego).",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g4-5",
+          "text": "Na lotnisku zawsze pilnuj ___!",
+          "answer": "swojej walizki",
+          "options": [
+            "swojej walizki",
+            "za swoją walizką"
+          ],
+          "explanation": "Следить за → pilnować + dopełniacz, bez przyimka.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g4-6",
+          "text": "Bardzo żałuję ___.",
+          "answer": "tej decyzji",
+          "options": [
+            "tej decyzji",
+            "o tej decyzji"
+          ],
+          "explanation": "Жалеть о чём → żałować + dopełniacz, bez „o”.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g4-7",
+          "text": "Wykorzystaj ___ — taka okazja się nie powtórzy!",
+          "answer": "tę szansę",
+          "options": [
+            "tę szansę",
+            "tej szansy"
+          ],
+          "explanation": "Wykorzystać + biernik (inaczej niż używać czego).",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g4-8",
+          "text": "Kupiłam ___ na wyprzedaży.",
+          "answer": "nową kurtkę",
+          "options": [
+            "nową kurtkę",
+            "nowej kurtki"
+          ],
+          "explanation": "Kupić + biernik — zwykły czasownik.",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g4-9",
+          "text": "Trochę zazdroszczę ci ___.",
+          "answer": "tego wyjazdu",
+          "options": [
+            "tego wyjazdu",
+            "ten wyjazd"
+          ],
+          "explanation": "Zazdrościć komu? czego? → dopełniacz.",
+          "grammar_point": "rekcja"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "5. Z rosyjskiego na polski",
+      "instruction": "Przetłumacz na polski.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Я очень скучаю по тебе.",
+          "answer": "Bardzo za tobą tęsknię.",
+          "accept": [
+            "Bardzo tęsknię za tobą.",
+            "Tęsknię za tobą bardzo.",
+            "Ja bardzo tęsknię za tobą.",
+            "Ja bardzo za tobą tęsknię.",
+            "Strasznie za tobą tęsknię.",
+            "Strasznie tęsknię za tobą."
+          ],
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Позвони мне вечером.",
+          "answer": "Zadzwoń do mnie wieczorem.",
+          "accept": [
+            "Wieczorem zadzwoń do mnie.",
+            "Zadzwoń wieczorem do mnie."
+          ],
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Он женился на моей сестре.",
+          "answer": "Ożenił się z moją siostrą.",
+          "accept": [
+            "On ożenił się z moją siostrą."
+          ],
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Поздравляю тебя с новой работой!",
+          "answer": "Gratuluję ci nowej pracy!",
+          "accept": [
+            "Gratuluję nowej pracy!"
+          ],
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Мне очень важна эта работа.",
+          "answer": "Bardzo mi zależy na tej pracy.",
+          "accept": [
+            "Bardzo zależy mi na tej pracy.",
+            "Zależy mi bardzo na tej pracy.",
+            "Na tej pracy bardzo mi zależy.",
+            "Bardzo mi na tej pracy zależy."
+          ],
+          "grammar_point": "zalezy-chodzi"
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Речь идёт о наших деньгах.",
+          "answer": "Chodzi o nasze pieniądze.",
+          "accept": [
+            "Tu chodzi o nasze pieniądze.",
+            "Chodzi tu o nasze pieniądze."
+          ],
+          "grammar_point": "zalezy-chodzi"
+        },
+        {
+          "id": "g5-7",
+          "prompt": "Не волнуйся за меня.",
+          "answer": "Nie martw się o mnie.",
+          "accept": [
+            "Nie martw się o mnie!",
+            "Nie przejmuj się mną."
+          ],
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "g5-8",
+          "prompt": "Никто меня не ждал.",
+          "answer": "Nikt na mnie nie czekał.",
+          "accept": [
+            "Nikt nie czekał na mnie."
+          ],
+          "grammar_point": "negacja-podwojna"
+        },
+        {
+          "id": "g5-9",
+          "prompt": "Я ищу квартиру в центре.",
+          "answer": "Szukam mieszkania w centrum.",
+          "accept": [
+            "Ja szukam mieszkania w centrum.",
+            "Szukam mieszkania w centrum miasta.",
+            "Szukam mieszkania w śródmieściu."
+          ],
+          "grammar_point": "rekcja"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "6. Popraw kalkę z rosyjskiego",
+      "instruction": "Każde zdanie ma jeden błąd. Napisz je poprawnie.",
+      "items": [
+        {
+          "id": "g6-1",
+          "prompt": "Wczoraj zadzwoniłem mamie.",
+          "answer": "Wczoraj zadzwoniłem do mamy.",
+          "accept": [
+            "Zadzwoniłem wczoraj do mamy."
+          ],
+          "explanation": "Dzwonić do + dopełniacz.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g6-2",
+          "prompt": "Zakochała się w niego od pierwszego wejrzenia.",
+          "answer": "Zakochała się w nim od pierwszego wejrzenia.",
+          "accept": [
+            "Od pierwszego wejrzenia zakochała się w nim."
+          ],
+          "explanation": "Zakochać się w + miejscownik: w nim.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g6-3",
+          "prompt": "Szukamy opiekunkę do dziecka.",
+          "answer": "Szukamy opiekunki do dziecka.",
+          "accept": [
+            "Szukamy opiekunki dla dziecka."
+          ],
+          "explanation": "Szukać + dopełniacz.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g6-4",
+          "prompt": "Wszyscy śmiali się nad moim akcentem.",
+          "answer": "Wszyscy śmiali się z mojego akcentu.",
+          "accept": [
+            "Wszyscy się śmiali z mojego akcentu.",
+            "Z mojego akcentu śmiali się wszyscy."
+          ],
+          "explanation": "Смеяться над → śmiać się z + dopełniacz.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g6-5",
+          "prompt": "Dziękuję cię za wszystko.",
+          "answer": "Dziękuję ci za wszystko.",
+          "explanation": "Благодарю тебя → dziękuję ci (celownik).",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g6-6",
+          "prompt": "Zapytałem u sąsiada o klucze.",
+          "answer": "Zapytałem sąsiada o klucze.",
+          "accept": [
+            "Spytałem sąsiada o klucze."
+          ],
+          "explanation": "Спросить у кого → zapytać kogo (biernik), bez „u”.",
+          "grammar_point": "kalki-ru"
+        },
+        {
+          "id": "g6-7",
+          "prompt": "Na dworcu czekałem na trzy kolegów.",
+          "answer": "Na dworcu czekałem na trzech kolegów.",
+          "accept": [
+            "Czekałem na trzech kolegów na dworcu.",
+            "Czekałem na dworcu na trzech kolegów."
+          ],
+          "explanation": "Koledzy to mężczyźni → trzech kolegów (jak w lekcji o slangu).",
+          "grammar_point": "meskoosobowe-forma"
+        },
+        {
+          "id": "g6-8",
+          "prompt": "Mama martwi się za mnie.",
+          "answer": "Mama martwi się o mnie.",
+          "accept": [
+            "Mama się o mnie martwi.",
+            "Mama martwi się mną.",
+            "Mama się mną martwi."
+          ],
+          "explanation": "Волноваться за → martwić się o + biernik.",
+          "grammar_point": "kalki-ru"
+        }
+      ]
+    }
+  ]
+}

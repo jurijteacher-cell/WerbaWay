@@ -2280,6 +2280,32 @@
       "status": "published",
       "published_by": "claude",
       "notes": "Module pl-trener, n=5 of 16. No exam/listening embed (as lessons 1–2); model dialogue read by teacher. check_answers 0 ERR 4 WARN (single-answer corrections)."
+    },
+    {
+      "lesson_id": "pl-gram-rekcja",
+      "module": "pl-gram-ind",
+      "title": "Tęsknię za tobą: czasowniki z przyimkami i przypadkami (rekcja)",
+      "published_at": "2026-11-13T13:00:00Z",
+      "template": "grammar-60",
+      "embeds": {
+        "vocab": "https://werba-way.vercel.app/embed/pl-gram-rekcja/vocab",
+        "grammar": "https://werba-way.vercel.app/embed/pl-gram-rekcja/grammar?blocks=g0-g6",
+        "comm_tasks": "https://werba-way.vercel.app/embed/pl-gram-rekcja/comm-tasks",
+        "hw": "https://werba-way.vercel.app/embed/pl-gram-rekcja/hw"
+      },
+      "images": {
+        "header": "ok",
+        "img1": "ok"
+      },
+      "audio": [],
+      "status": "published",
+      "published_by": "claude",
+      "notion_parent_id": "40e96e03-c7c8-819f-8cc4-c06a99e84aef",
+      "notion_page_id": "41796e03-c7c8-8161-8063-d632fdc85f69",
+      "notion_page_url": "https://app.notion.com/p/41796e03c7c881618063d632fdc85f69",
+      "notion_teacher_page_id": "41796e03-c7c8-81cb-9dce-f5d7b75d074a",
+      "notion_teacher_page_url": "https://app.notion.com/p/41796e03c7c881cb9dcef5d7b75d074a",
+      "notes": "individual student (Belarusian, Russian-speaking); seventh in pl-gram-ru series after pl-gram-zaimki and pl-b1-group-03-slang-ru; tags rekcja, zalezy-chodzi, kalki-ru (+ repetition negacja-podwojna, meskoosobowe-forma); 60 grammar + 31 hw items; check_answers 0 ERR, 2 WARN deliberate"
     }
   ]
 }
