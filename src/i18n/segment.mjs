@@ -86,7 +86,8 @@ export function walkMarkdown(raw, fn) {
         const out = fn(part.trim(), { kind: 'cell', context });
         if (out == null) return part;
         changed = true;
-        return ` ${out} `;
+        // «|» і переноси в перекладі розірвали б таблицю — знешкоджуємо
+        return ` ${String(out).replace(/\|/g, ' / ').replace(/[\r\n]+/g, ' ')} `;
       });
       return changed ? next.join('|') : line;
     }
@@ -94,7 +95,8 @@ export function walkMarkdown(raw, fn) {
     if (!CYR.test(line)) return line;
     const out = fn(line.trim(), { kind: 'line', context: '' });
     if (out == null) return line;
-    return line.replace(line.trim(), out);
+    // переклад не має права додавати рядки: структура сторінки має лишитися тією самою
+    return line.replace(line.trim(), String(out).replace(/[\r\n]+/g, ' '));
   });
 
   return newHead + outLines.join('\n');
