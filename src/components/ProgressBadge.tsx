@@ -8,7 +8,7 @@ export function ProgressBadge({ done, total }: { done: number; total: number }) 
         complete ? 'text-correct' : 'text-gold-dim'
       }`}
     >
-      {complete ? t("✓ Завершено") : `Прогрес: ${done} / ${total}`}
+      {complete ? t("✓ Завершено") : t('Прогрес: {done} / {total}', { done, total })}
     </span>
   );
 }

@@ -28,7 +28,7 @@ function Ring({ value, color }: { value: number | null; color: string }) {
   const c = 2 * Math.PI * r;
   const v = value ?? 0;
   return (
-    <svg viewBox="0 0 76 76" width="76" height="76" role="img" aria-label={value == null ? t("не оцінено") : `оцінка ${value}%`}>
+    <svg viewBox="0 0 76 76" width="76" height="76" role="img" aria-label={value == null ? t("не оцінено") : t('оцінка {value}%', { value })}>
       <circle cx="38" cy="38" r={r} fill="none" stroke="#e4e9f7" strokeWidth="8" />
       {value != null && (
         <circle

@@ -110,7 +110,7 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
       <h1 className="font-display text-3xl text-paper">{row.exam_label ?? row.lesson_id}</h1>
       <p className="mt-1 text-sm text-paper-muted">
         {studentName ?? tr("Учень")} · {fmt(row.created_at)}
-        {row.minutes ? ` · ${num(row.minutes)} хв` : ''}
+        {row.minutes ? ` · ${num(row.minutes)} ${tr('хв')}` : ''}
       </p>
 
       <section className="mt-8 grid gap-3 sm:grid-cols-4">
@@ -156,7 +156,7 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
                     <tr key={s.id} className="border-t border-ink-line first:border-t-0">
                       <td className="px-4 py-3 text-paper">{s.title}</td>
                       <td className="px-4 py-3 font-mono text-paper">
-                        {s.manual ? (s.manual_points ? `макс. ${s.manual_points} (вручну)` : tr("вручну")) : `${num(s.points)}/${num(s.max)}`}
+                        {s.manual ? (s.manual_points ? tr('макс. {n} (вручну)', { n: s.manual_points }) : tr("вручну")) : `${num(s.points)}/${num(s.max)}`}
                       </td>
                       <td className={`px-4 py-3 font-mono ${s.manual ? 'text-paper-muted' : pctClass(p)}`}>
                         {s.manual || p == null ? '' : `${p}%`}
@@ -285,7 +285,7 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
                             <p className="text-xs text-paper-muted">
                               <span className="text-gold">{p.label}</span> ·{' '}
                               <span className={off ? 'text-incorrect' : 'text-paper'}>{p.words} слів</span>
-                              {p.target ? ` · ліміт ${p.target} (±10%)` : ''}
+                              {p.target ? ` · ${tr('ліміт {n} (±10%)', { n: p.target })}` : ''}
                             </p>
                             <p className="mt-1 border-l-2 border-ink-line pl-3 text-xs italic text-paper-muted">
                               {p.prompt}

@@ -323,7 +323,7 @@ export default async function StudentResultsPage({ params }: { params: { student
                                         <span className="mx-2 text-paper-muted">→</span>
                                         <span className="text-correct">{m.expected}</span>
                                         <span className="ml-2 text-xs text-paper-muted">
-                                          {m.solved ? `виправив(ла) з ${m.versions}-ї спроби` : t("не розв’язано")}
+                                          {m.solved ? t('виправив(ла) з {n}-ї спроби', { n: m.versions }) : t("не розв’язано")}
                                         </span>
                                         {m.grammarPoint ? (
                                           <span className="ml-2 font-mono text-[11px] text-paper-muted">
@@ -342,7 +342,7 @@ export default async function StudentResultsPage({ params }: { params: { student
                                   <p className="whitespace-pre-wrap text-sm text-paper">{o.lastAnswer}</p>
                                   <p className="mt-1 text-xs text-paper-muted">
                                     {fmt(o.lastAt)}
-                                    {o.versions > 1 ? ` · версія ${o.versions}` : ''}
+                                    {o.versions > 1 ? ` · ${t('версія {n}', { n: o.versions })}` : ''}
                                   </p>
                                 </div>
                               ))}

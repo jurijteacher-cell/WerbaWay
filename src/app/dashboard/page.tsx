@@ -90,7 +90,7 @@ export default async function DashboardPage() {
       ) : null}
 
       {homeworkTodo.length > 0 && (
-        <Section title={`Домашка (${homeworkTodo.length})`}>
+        <Section title={t('Домашка ({n})', { n: homeworkTodo.length })}>
           <div className="flex flex-col gap-2">
             {homeworkTodo.map((h) => (
               <Link
@@ -160,11 +160,11 @@ export default async function DashboardPage() {
               label={t("З першої спроби")}
               value={s.accuracy == null ? '—' : `${s.accuracy}%`}
               tone={pctClass(s.accuracy)}
-              hint={`${s.firstOk} з ${s.firstTotal}`}
+              hint={t('{ok} з {total}', { ok: s.firstOk, total: s.firstTotal })}
             />
-            <Kpi label={t("Вправ")} value={s.exercises} hint={`${s.attempts} перевірок`} />
+            <Kpi label={t("Вправ")} value={s.exercises} hint={t('{n} перевірок', { n: s.attempts })} />
             <Kpi label={t("Уроків")} value={s.lessons} />
-            <Kpi label={t("Серія днів")} value={s.streak} hint={`активних днів: ${s.activeDays}`} />
+            <Kpi label={t("Серія днів")} value={s.streak} hint={t('активних днів: {n}', { n: s.activeDays })} />
           </div>
 
           <Section title={t("Активність (28 днів)")}>

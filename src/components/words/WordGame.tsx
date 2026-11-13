@@ -109,7 +109,7 @@ export function WordGame({
       </Link>
       <div className="mt-3 flex flex-wrap items-end justify-between gap-3">
         <div className="min-w-0">
-          <h1 className="font-display text-2xl text-paper">{deckNames.length === 1 ? deckNames[0] : `${deckNames.length} колоди разом`}</h1>
+          <h1 className="font-display text-2xl text-paper">{deckNames.length === 1 ? deckNames[0] : t('{n} колоди разом', { n: deckNames.length })}</h1>
           <p className="text-sm text-paper-muted">
             {words.length} слів · запам’ятано <b className="text-paper">{knownCount}</b>
           </p>
@@ -217,7 +217,7 @@ function Cards({ pool, dir, update, onAgain }: Common) {
     return () => window.removeEventListener('keydown', onKey);
   }, [answer]);
 
-  if (!w) return <Done title={t("Колоду пройдено")} sub={`${done} слів позначено «знаю»`} onAgain={onAgain} again={t("Перемішати й ще раз")} />;
+  if (!w) return <Done title={t("Колоду пройдено")} sub={t('{n} слів позначено «знаю»', { n: done })} onAgain={onAgain} again={t("Перемішати й ще раз")} />;
 
   const front = dir === 'pl' ? w.term : w.tr;
   const back = dir === 'pl' ? w.tr : w.term;
@@ -328,7 +328,7 @@ function Match({ pool, dir, update, onAgain }: Common) {
     return (
       <Done
         title={t("Усі пари з’єднано")}
-        sub={`${pool.length} слів · помилок: ${mistakes} · ${Math.round((Date.now() - t0) / 1000)} с`}
+        sub={t('{n} слів · помилок: {errors} · {sec} с', { n: pool.length, errors: mistakes, sec: Math.round((Date.now() - t0) / 1000) })}
         onAgain={onAgain}
         again={t("Перемішати й ще раз")}
       />
@@ -406,7 +406,7 @@ function Quiz({ pool, all, dir, update, onAgain }: Common & { all: Word[] }) {
 
   if (!w)
     return (
-      <Done title={`Результат: ${score} з ${pool.length}`} sub={`${Math.round((score / pool.length) * 100)}% правильно з першого разу`} onAgain={onAgain} again={t("Перемішати й ще раз")} />
+      <Done title={t('Результат: {score} з {total}', { score, total: pool.length })} sub={t('{pct}% правильно з першого разу', { pct: Math.round((score / pool.length) * 100) })} onAgain={onAgain} again={t("Перемішати й ще раз")} />
     );
 
   const ask = dir === 'pl' ? w.term : w.tr;

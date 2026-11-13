@@ -66,7 +66,7 @@ export function AccessEditor({
                 disabled={busy === `module:${m.code}`}
                 onClick={() => void toggle('module', m.code)}
                 className={`relative h-6 w-11 shrink-0 rounded-full transition-colors ${modOn ? 'bg-correct' : 'bg-ink-line'}`}
-                aria-label={`Курс «${m.title}»`}
+                aria-label={t('Курс «{title}»', { title: m.title })}
               >
                 <span
                   className={`absolute top-0.5 h-5 w-5 rounded-full bg-white shadow transition-transform ${modOn ? 'translate-x-[1.35rem]' : 'translate-x-0.5'}`}

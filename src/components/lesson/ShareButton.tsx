@@ -26,7 +26,7 @@ export function ShareButton({ slug, title, compact }: { slug: string; title: str
           setOpen(true);
         }}
         className={compact ? 'ww-share-fab' : 'ww-btn ww-btn-secondary ww-btn-sm'}
-        aria-label={`Поділитися лекцією «${title}»`}
+        aria-label={t('Поділитися лекцією «{title}»', { title })}
         title={t("Поділитися")}
       >
         <ShareIcon />
@@ -227,7 +227,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
                   </button>
                 </div>
                 <p className="mt-2 text-xs text-paper-muted">
-                  {data.link.opens ? `Відкрили ${data.link.opens} раз(и)` : t("Ще ніхто не відкривав")}
+                  {data.link.opens ? t('Відкрили {n} раз(и)', { n: data.link.opens }) : t("Ще ніхто не відкривав")}
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <a href={url} target="_blank" rel="noreferrer" className="ww-btn ww-btn-ghost ww-btn-sm">

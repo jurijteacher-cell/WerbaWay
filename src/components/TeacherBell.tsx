@@ -105,7 +105,7 @@ export function TeacherBell() {
         className="ww-bell"
         aria-expanded={open}
         aria-haspopup="menu"
-        aria-label={fresh.length ? `Домашки: ${fresh.length} нових` : t("Домашки")}
+        aria-label={fresh.length ? t('Домашки: {n} нових', { n: fresh.length }) : t('Домашки')}
         title={t("Здані домашки")}
       >
         <span aria-hidden="true">🔔</span>

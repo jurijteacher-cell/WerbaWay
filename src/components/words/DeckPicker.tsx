@@ -107,7 +107,7 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
               t("Обери колоду (або кілька — вони зіллються в одну)")
             ) : (
               <>
-                <b className="text-paper">{sel.length === 1 ? chosen[0].title : `${sel.length} колоди разом`}</b> · {words} слів,{' '}
+                <b className="text-paper">{sel.length === 1 ? chosen[0].title : t('{n} колоди разом', { n: sel.length })}</b> · {words} слів,{' '}
                 {known} запам’ятано
               </>
             )}

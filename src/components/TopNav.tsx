@@ -67,7 +67,7 @@ export async function TopNav() {
       />
       <div className="mx-auto flex max-w-6xl items-center gap-x-6 gap-y-3 px-4 py-2.5 lg:flex-wrap lg:py-3">
         <MenuDrawer items={[...tabs, ...more]} />
-        <Link href="/learn" className="group flex shrink-0 items-center gap-3" aria-label={`Werba Way Language School — ${t('на головну')}`}>
+        <Link href="/learn" className="group flex shrink-0 items-center gap-3" aria-label={t('Werba Way Language School — на головну')}>
           {/* знак з лого в кільці того ж градієнта, що й на лого */}
           <span
             className="grid h-10 w-10 place-items-center md:h-12 md:w-12 rounded-full p-[2px] shadow-sm transition-transform duration-300 group-hover:-rotate-6"

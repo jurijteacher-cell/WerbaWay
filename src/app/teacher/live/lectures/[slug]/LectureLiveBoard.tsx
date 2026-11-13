@@ -298,7 +298,7 @@ function StudentLectureRow({
                 return (
                   <AnswerCell
                     key={exerciseId}
-                    label={`${info.sectionLabel} · Завдання ${info.indexInSection + 1}`}
+                    label={`${info.sectionLabel} · ${t('Завдання {n}', { n: info.indexInSection + 1 })}`}
                     exercise={info.exercise}
                     lessonSlug={info.lessonSlug}
                     studentId={row.studentId}

@@ -161,7 +161,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
 
       {userId && (
         <div className="mt-10">
-          <Section title={`Лекції, пройдені разом (${together.length})`}>
+          <Section title={t('Лекції, пройдені разом ({n})', { n: together.length })}>
             {together.length ? (
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 {together.map(({ row, page }) => (
@@ -190,7 +190,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
 
       {solo.length > 0 && (
         <div className="mt-10">
-          <Section title={`Займався сам (${solo.length})`}>
+          <Section title={t('Займався сам ({n})', { n: solo.length })}>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {solo.map(({ page, stats }) => (
                 <LectureCard
