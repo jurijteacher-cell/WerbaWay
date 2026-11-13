@@ -6,6 +6,7 @@ import { SearchPalette } from './SearchPalette';
 import { MenuDrawer, MobileNav, type Tab } from './MobileNav';
 import { ClassWatcher } from './class/ClassWatcher';
 import { Mark } from '@/components/Mark';
+import { TeacherBell } from '@/components/TeacherBell';
 
 export async function TopNav() {
   // Preview deployments without Supabase env: render no nav instead of crashing every page.
@@ -27,6 +28,7 @@ export async function TopNav() {
     { href: '/words', label: 'Слова' },
     { href: '/dashboard', label: 'Прогрес' },
     ...(isTeacher ? [{ href: '/teacher', label: 'Кабінет викладача' }] : []),
+    ...(isTeacher ? [{ href: '/teacher/reports', label: 'Повідомлення про помилки' }] : []),
   ];
 
   // телефон: 4 головні вкладки внизу, решта — у «Ще»
@@ -83,6 +85,7 @@ export async function TopNav() {
         </Link>
         <div className="flex min-w-0 flex-1 items-center justify-end gap-3">
           <SearchPalette teacher={isTeacher} />
+          {isTeacher && <TeacherBell />}
           <div className="hidden min-w-0 items-center gap-3 lg:flex">
             <NavLinks items={items} />
             <LogoutButton />

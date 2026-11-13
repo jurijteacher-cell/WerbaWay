@@ -13,6 +13,7 @@ const EMBED_CSS = `
   body > header { display: none !important; }
   /* нижня панель сайту не має лізти всередину вправи в Notion чи в класі */
   .ww-tabbar { display: none !important; }
+  .ww-report-btn { display: none !important; }
   body { background: #f3f5fc !important; padding-bottom: 0 !important; }
 `;
 

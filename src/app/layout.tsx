@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Onest, Literata, IBM_Plex_Mono } from 'next/font/google';
 import './globals.css';
+import { ReportBug } from '@/components/ReportBug';
 import { TopNav } from '@/components/TopNav';
 
 // Ті самі шрифти, що у вправах: Onest — інтерфейс, Literata — польський текст. Обидва мають латиницю з діакритикою й кирилицю.
@@ -47,6 +48,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body className="font-sans">
         <TopNav />
         {children}
+        <ReportBug />
       </body>
     </html>
   );
