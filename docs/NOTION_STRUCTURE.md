@@ -1,4 +1,6 @@
-# Werba Way — NOTION_STRUCTURE (v1.4, 2026-11-12)
+# Werba Way — NOTION_STRUCTURE (v1.5, 2026-11-13)
+
+> **v1.5 (13.11.2026):** Claude робить усі кроки сам — Юрі нічого не доручається (00_START_HERE §0, LESSON_PROTOCOL v3.16). Якщо крок неможливий у сесії — один рядок факту в чаті й запис у 00_START_HERE §8 як відкритий для Claude.
 
 Як влаштований Notion школи і як у нього додаються нові лекції та модулі. Обов'язково для кожної публікації. Вигляд самої сторінки лекції — `claude/NOTION_PAGE_STYLE.md`; цей файл — про те, **куди** і **з якими полями** сторінка кладеться.
 
@@ -71,7 +73,7 @@ SELECT url, "Name" FROM "collection://b3674841-5c54-47f3-be9a-8c9ae01fc1b1" WHER
    - `№ у курсі` — номер уроку в курсі, якщо модуль має план із наскрізною нумерацією (A2: 47–88). Галерея такого модуля сортує спершу за цим полем, потім за назвою; урок без номера стане в кінець;
    - `icon` — емодзі теми, `cover` — фото Unsplash (LESSON_PROTOCOL «Фото»). **Без обкладинки картка в галереї порожня — урок не готовий.**
    - після створення — `update_properties` з `full_width: true`.
-   - **висота вікон вправ:** `create-pages` ставить embed висотою 320 px (вікно ледь видно). Якщо Юра залогінений у вбудованому браузері — тим самим `saveTransactionsFanout` на кожен embed-блок: `format.block_height` 760–930, `block_full_width: true`, `block_page_width: false`, `block_width: 1680` (як в еталоні «04 · Poproszę pierogi!»). id блоків — через `syncRecordValuesMain` сторінки. Інакше — сказати Юрі в чаті, що вікна треба розтягнути вручну.
+   - **висота вікон вправ:** `create-pages` ставить embed висотою 320 px (вікно ледь видно). Claude ставить висоту сам: через вбудований браузер / Claude in Chrome (сесія Юри на `app.notion.com` уже залогінена) — `saveTransactionsFanout` на кожен embed-блок: `format.block_height` 760–930, `block_full_width: true`, `block_page_width: false`, `block_width: 1680` (як в еталоні «04 · Poproszę pierogi!»). id блоків — через `syncRecordValuesMain` сторінки. Якщо браузерного інструмента в сесії немає — один рядок факту в чаті й запис у 00_START_HERE §8 (відкрите для Claude); Юру не просити.
 3. **Сторінка викладача** — так само в базі «Уроки»: `Name` = `TEACHER · {назва}`, той самий `Модуль`, **`Тип` = `Викладач`**. Без `Тип = Викладач` сторінка вчителя потрапить у галерею учня.
 4. **Ніколи** не створюй урок дочірньою сторінкою модуля чи будь-якої іншої сторінки: він не з'явиться в галереї.
 5. **Сторінка на сайті.** Notion — не кінець: урок відкривається в `/learn` і в класі лише тоді, коли в репо є
@@ -107,8 +109,7 @@ SELECT url, "Name" FROM "collection://b3674841-5c54-47f3-be9a-8c9ae01fc1b1" WHER
    - курсам з повним планом під галереєю додається розділ `## 🗺️ План курсу`: тогли по модулях/блоках, готові уроки — `<mention>`, майбутні — сірі рядки `<li color="gray">`, наприкінці кожного тогла — рядок «🎯 Potrafię…». Після публікації уроку — точково замінити його сірий рядок посиланням.
 4. `insert_content` у кінець: `## 🔒 Для викладача`, потім `create-view` типу `list`: `FILTER "Модуль" = "{id}"; FILTER "Тип" = "Викладач"; SORT BY "Name" ASC`.
 5. **Фото на картках галереї** (Card preview → Page cover) через Notion MCP не вмикається: директива `COVER` приймає лише властивість. Варіанти:
-   - попросити Юру: у галереї «⋯ → Layout → Card preview → Page cover»;
-   - або, якщо Юра залогінений у вбудованому браузері, — з його сесії на `app.notion.com` запит `POST /api/v3/saveTransactionsFanout` з операцією `set` на `collection_view` `{view id}`, шлях `["format","gallery_cover"]`, `args: {type: "page_cover"}` (+ `["format","gallery_cover_aspect"]` = `"cover"`). Перевірка — `fetch view://{id}`: має бути `"cover":{"type":"page_cover"}`.
+   - Claude робить це сам через вбудований браузер / Claude in Chrome — з сесії Юри на `app.notion.com` запит `POST /api/v3/saveTransactionsFanout` з операцією `set` на `collection_view` `{view id}`, шлях `["format","gallery_cover"]`, `args: {type: "page_cover"}` (+ `["format","gallery_cover_aspect"]` = `"cover"`). Перевірка — `fetch view://{id}`: має бути `"cover":{"type":"page_cover"}`.
 6. Новий модуль сам з'являється в галереї на головній. Додай рядок у таблицю §3.
 
 ## 6. Інші розділи
