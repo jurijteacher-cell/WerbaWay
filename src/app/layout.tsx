@@ -41,6 +41,9 @@ export const viewport: Viewport = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="uk" className={`${onest.variable} ${literata.variable} ${plexMono.variable}`}>
+      <head>
+        <link rel="preload" as="image" href="/brand/werba-mark-128.webp" />
+      </head>
       <body className="font-sans">
         <TopNav />
         {children}

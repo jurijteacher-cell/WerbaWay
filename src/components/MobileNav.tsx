@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { createClient } from '@/lib/supabase/client';
+import { Mark } from '@/components/Mark';
 
 export type TabIcon = 'book' | 'class' | 'users' | 'cards' | 'chart' | 'desk' | 'key';
 export type Tab = { href: string; label: string; icon: TabIcon };
@@ -153,7 +154,7 @@ function Drawer({ items, active, onClose }: { items: Tab[]; active?: string; onC
         <div className="mb-5 flex items-center justify-between">
           <span className="flex items-center gap-2.5">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/brand/werba-mark.png" alt="" width={36} height={36} className="rounded-full" />
+            <Mark size={36} className="rounded-full" />
             <span className="text-[15px] font-semibold tracking-[0.14em]">
               <span style={{ color: '#151c3c' }}>WERBA</span> <span style={{ color: '#a98bea' }}>WAY</span>
             </span>

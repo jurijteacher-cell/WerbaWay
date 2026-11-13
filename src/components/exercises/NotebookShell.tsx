@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { Onest, Literata, Nunito } from 'next/font/google';
+import { Mark } from '@/components/Mark';
 
 /**
  * Fonts for every notebook surface (embeds, slides, lesson pages).
@@ -50,7 +51,7 @@ export function NotebookShell({
     <div className={`nb-wrap ${onest.variable} ${literata.variable} ${nunito.variable}`}>
       <div className="nb-brandbar">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/brand/werba-mark.png" alt="" width={38} height={38} />
+        <Mark size={38} />
         <div>
           <b>{brandLabel}</b>
           {levelHint ? <span>{levelHint}</span> : null}

@@ -5,6 +5,7 @@ import { NavLinks, type NavItem } from './NavLinks';
 import { SearchPalette } from './SearchPalette';
 import { MenuDrawer, MobileNav, type Tab } from './MobileNav';
 import { ClassWatcher } from './class/ClassWatcher';
+import { Mark } from '@/components/Mark';
 
 export async function TopNav() {
   // Preview deployments without Supabase env: render no nav instead of crashing every page.
@@ -67,8 +68,7 @@ export async function TopNav() {
             className="grid h-10 w-10 place-items-center md:h-12 md:w-12 rounded-full p-[2px] shadow-sm transition-transform duration-300 group-hover:-rotate-6"
             style={{ background: 'linear-gradient(135deg,#1d3a8a 0%,#6b2c91 35%,#e2363f 68%,#f6b53a 100%)' }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/brand/werba-mark.png" alt="" width={44} height={44} className="h-full w-full rounded-full bg-white" />
+            <Mark size={44} className="h-full w-full rounded-full bg-white" />
           </span>
           <span className="leading-none" aria-hidden="true">
             <span className="block text-[15px] font-semibold tracking-[0.14em] md:text-[17px] md:tracking-[0.16em]">

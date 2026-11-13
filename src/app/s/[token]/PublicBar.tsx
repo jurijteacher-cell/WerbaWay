@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
+import { Mark } from '@/components/Mark';
 
 /** Смужка бренду для гостя; учень з акаунтом бачить звичайне меню сайту (TopNav) */
 export async function PublicBar() {
@@ -13,7 +14,7 @@ export async function PublicBar() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2.5">
         <span className="flex items-center gap-2.5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/werba-mark.png" alt="" width={34} height={34} className="rounded-full" />
+          <Mark size={34} className="rounded-full" />
           <span className="text-[15px] font-semibold tracking-[0.16em]">
             <span style={{ color: '#151c3c' }}>WERBA</span> <span style={{ color: '#a98bea' }}>WAY</span>
           </span>
