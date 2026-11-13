@@ -1,0 +1,615 @@
+{
+  "lesson_id": "pl-trener-04-nogi-i-posladki",
+  "exercise_type": "fill-in-blank",
+  "title": "Z czym, czym, gdzie i dokąd: polecenia na dzień nóg",
+  "instruction": "Osiem ćwiczeń w dwóch częściach: narzędnik i różnica gdzie? / dokąd?",
+  "estimated_minutes": 40,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "1. Połącz ćwiczenie z opisem",
+      "instruction": "Kliknij słowo po lewej i jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "przysiad bułgarski",
+          "right": "tylna stopa leży na ławce",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "wykrok",
+          "right": "duży krok i zejście w dół",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "unoszenie bioder",
+          "right": "plecy na ławce, biodra w górę",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "rumuński martwy ciąg",
+          "right": "biodra do tyłu, kolana lekko ugięte",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "wspięcia na palce",
+          "right": "pięty w górę, pracują łydki",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "odwodzenie nogi",
+          "right": "noga idzie w bok",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "przywodziciele",
+          "right": "mięśnie z wewnętrznej strony uda",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "suwnica",
+          "right": "maszyna, na której pchasz ciężar nogami",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Z czym ćwiczymy?",
+      "instruction": "Wpisz słowa z nawiasu w narzędniku.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Dziś robimy wykroki z ___ (hantle).",
+          "answer": "hantlami",
+          "grammar_point": "z-narzednik"
+        },
+        {
+          "id": "g2-2",
+          "text": "Przysiad ze ___ (sztanga) zrobimy dopiero za miesiąc.",
+          "answer": "sztangą",
+          "grammar_point": "z-narzednik",
+          "explanation": "Przed sz- mówimy „ze”: ze sztangą."
+        },
+        {
+          "id": "g2-3",
+          "text": "Odwodzenie nogi robimy z ___ (mini-guma).",
+          "answer": "mini-gumą",
+          "grammar_point": "z-narzednik",
+          "accept": [
+            "minigumą"
+          ]
+        },
+        {
+          "id": "g2-4",
+          "text": "Przysiad z ___ (kettlebell) to dobry początek.",
+          "answer": "kettlebellem",
+          "grammar_point": "z-narzednik"
+        },
+        {
+          "id": "g2-5",
+          "text": "Od dziś pani Ewa trenuje z ___ (nowa grupa).",
+          "answer": "nową grupą",
+          "grammar_point": "z-narzednik",
+          "explanation": "Przymiotnik i rzeczownik w narzędniku: nową grupą."
+        },
+        {
+          "id": "g2-6",
+          "text": "Unoszenie bioder robimy z ___ (talerz) na biodrach.",
+          "answer": "talerzem",
+          "grammar_point": "z-narzednik"
+        },
+        {
+          "id": "g2-7",
+          "text": "Na rowerku jedziemy z ___ (lekki opór).",
+          "answer": "lekkim oporem",
+          "grammar_point": "z-narzednik"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Czym? Gdzie?",
+      "instruction": "Wybierz dobrą formę.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Odepchnij się ___ od podłogi.",
+          "answer": "piętami",
+          "grammar_point": "narzednik-bez-przyimka",
+          "options": [
+            "piętami",
+            "z piętami",
+            "pięty"
+          ],
+          "explanation": "Czym? → narzędnik bez „z”: piętami."
+        },
+        {
+          "id": "g3-2",
+          "text": "Pracuj ___, nie plecami.",
+          "answer": "pośladkami",
+          "grammar_point": "narzednik-bez-przyimka",
+          "options": [
+            "pośladkami",
+            "z pośladkami",
+            "pośladki"
+          ]
+        },
+        {
+          "id": "g3-3",
+          "text": "Kolana mają być nad ___.",
+          "answer": "palcami",
+          "grammar_point": "przyimki-miejsca-narzednik",
+          "options": [
+            "palcami",
+            "palce",
+            "palców"
+          ]
+        },
+        {
+          "id": "g3-4",
+          "text": "Trzymaj kettlebell przed ___.",
+          "answer": "sobą",
+          "grammar_point": "przyimki-miejsca-narzednik",
+          "options": [
+            "sobą",
+            "siebie",
+            "sobie"
+          ],
+          "explanation": "Gdzie? (pozycja) → przed sobą."
+        },
+        {
+          "id": "g3-5",
+          "text": "Stopy stoją pod ___.",
+          "answer": "biodrami",
+          "grammar_point": "przyimki-miejsca-narzednik",
+          "options": [
+            "biodrami",
+            "biodra",
+            "biodrach"
+          ]
+        },
+        {
+          "id": "g3-6",
+          "text": "Trzymaj piłkę między ___.",
+          "answer": "kolanami",
+          "grammar_point": "przyimki-miejsca-narzednik",
+          "options": [
+            "kolanami",
+            "kolana",
+            "kolanach"
+          ]
+        },
+        {
+          "id": "g3-7",
+          "text": "Druga noga zostaje za ___.",
+          "answer": "tobą",
+          "grammar_point": "przyimki-miejsca-narzednik",
+          "options": [
+            "tobą",
+            "ciebie",
+            "tobie"
+          ]
+        },
+        {
+          "id": "g3-8",
+          "text": "Złap sztangę obiema ___.",
+          "answer": [
+            "rękami",
+            "rękoma"
+          ],
+          "grammar_point": "narzednik-koncowki",
+          "options": [
+            "rękami",
+            "rękoma",
+            "ręce"
+          ],
+          "explanation": "Obie formy są poprawne: rękami i rękoma."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Końcówki narzędnika",
+      "instruction": "Wpisz słowo z nawiasu w narzędniku.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Pchaj podłogę całą ___ (stopa).",
+          "answer": "stopą",
+          "grammar_point": "narzednik-koncowki",
+          "explanation": "Żeński: -a → -ą."
+        },
+        {
+          "id": "g4-2",
+          "text": "Dotknij ___ (kolano) maty i wróć do góry.",
+          "answer": "kolanem",
+          "grammar_point": "narzednik-koncowki",
+          "explanation": "Nijaki: -o → -em."
+        },
+        {
+          "id": "g4-3",
+          "text": "Ruszaj tylko ___ (biodra), tułów stoi.",
+          "answer": "biodrami",
+          "grammar_point": "narzednik-koncowki"
+        },
+        {
+          "id": "g4-4",
+          "text": "Nie pomagaj sobie ___ (ręce).",
+          "answer": "rękami",
+          "grammar_point": "narzednik-koncowki",
+          "accept": [
+            "rękoma"
+          ]
+        },
+        {
+          "id": "g4-5",
+          "text": "Pchaj ___ (pięty), nie palcami.",
+          "answer": "piętami",
+          "grammar_point": "narzednik-koncowki"
+        },
+        {
+          "id": "g4-6",
+          "text": "Krąż powoli ___ (kostka).",
+          "answer": "kostką",
+          "grammar_point": "narzednik-koncowki"
+        },
+        {
+          "id": "g4-7",
+          "text": "Ruszaj tylko jedną ___ (noga).",
+          "answer": "nogą",
+          "grammar_point": "narzednik-koncowki"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Gdzie czy dokąd?",
+      "instruction": "Wybierz dobrą formę. Zapytaj siebie: jest ruch do celu czy pozycja?",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Wejdź na ___.",
+          "answer": "skrzynię",
+          "grammar_point": "gdzie-dokad-na",
+          "options": [
+            "skrzynię",
+            "skrzyni",
+            "skrzynią"
+          ],
+          "explanation": "Dokąd? Ruch do celu → na + biernik."
+        },
+        {
+          "id": "g5-2",
+          "text": "Postój na ___ dwie sekundy.",
+          "answer": "stopniu",
+          "grammar_point": "gdzie-dokad-na",
+          "options": [
+            "stopniu",
+            "stopień",
+            "stopniem"
+          ],
+          "explanation": "Gdzie? Już tam jesteś → na + miejscownik."
+        },
+        {
+          "id": "g5-3",
+          "text": "Przenieś ciężar na ___.",
+          "answer": "pięty",
+          "grammar_point": "gdzie-dokad-na",
+          "options": [
+            "pięty",
+            "piętach",
+            "piętami"
+          ]
+        },
+        {
+          "id": "g5-4",
+          "text": "Ciężar ciała zostaje na ___.",
+          "answer": "przedniej nodze",
+          "grammar_point": "gdzie-dokad-na",
+          "options": [
+            "przedniej nodze",
+            "przednią nogę",
+            "przednią nogą"
+          ]
+        },
+        {
+          "id": "g5-5",
+          "text": "Wspnij się na ___.",
+          "answer": "palce",
+          "grammar_point": "gdzie-dokad-na",
+          "options": [
+            "palce",
+            "palcach",
+            "palcami"
+          ]
+        },
+        {
+          "id": "g5-6",
+          "text": "Opuść kolano na ___.",
+          "answer": "matę",
+          "grammar_point": "gdzie-dokad-na",
+          "options": [
+            "matę",
+            "macie",
+            "matą"
+          ]
+        },
+        {
+          "id": "g5-7",
+          "text": "Załóż ręce za ___.",
+          "answer": "głowę",
+          "grammar_point": "gdzie-dokad-za-pod-przed",
+          "options": [
+            "głowę",
+            "głową",
+            "głowie"
+          ],
+          "explanation": "Ruch → za + biernik. Pozycja: ręce są za głową."
+        },
+        {
+          "id": "g5-8",
+          "text": "Mata leży pod ___.",
+          "answer": "kolanem",
+          "grammar_point": "gdzie-dokad-za-pod-przed",
+          "options": [
+            "kolanem",
+            "kolano",
+            "kolanie"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Skąd, gdzie, dokąd?",
+      "instruction": "Wpisz przyimek i słowo z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Zejdź ___ (skrzynia) powoli.",
+          "answer": "ze skrzyni",
+          "grammar_point": "skad-z-od",
+          "explanation": "Skąd? → z / ze + dopełniacz."
+        },
+        {
+          "id": "g6-2",
+          "text": "Wstań ___ (ławka) bez pomocy rąk.",
+          "answer": "z ławki",
+          "grammar_point": "skad-z-od"
+        },
+        {
+          "id": "g6-3",
+          "text": "Nie odrywaj pięt ___ (podłoga).",
+          "answer": "od podłogi",
+          "grammar_point": "skad-z-od",
+          "explanation": "Odrywać od + dopełniacz."
+        },
+        {
+          "id": "g6-4",
+          "text": "Połóż hantle ___ (podłoga), nie rzucaj ich.",
+          "answer": "na podłodze",
+          "grammar_point": "gdzie-dokad-na",
+          "accept": [
+            "na podłogę"
+          ],
+          "explanation": "Po „położyć, postawić” zwykle mówimy gdzie?: na podłodze. W mowie słychać też „na podłogę”."
+        },
+        {
+          "id": "g6-5",
+          "text": "Usiądź ___ (ławka) i oprzyj plecy.",
+          "answer": "na ławce",
+          "grammar_point": "gdzie-dokad-na",
+          "explanation": "Usiąść na + miejscownik."
+        },
+        {
+          "id": "g6-6",
+          "text": "Wyciągnij ręce przed ___ (zaimek „się”).",
+          "answer": "siebie",
+          "grammar_point": "gdzie-dokad-za-pod-przed",
+          "explanation": "Ruch → przed siebie."
+        },
+        {
+          "id": "g6-7",
+          "text": "Trzymaj ręce przed ___ (zaimek „się”).",
+          "answer": "sobą",
+          "grammar_point": "gdzie-dokad-za-pod-przed",
+          "explanation": "Pozycja → przed sobą."
+        },
+        {
+          "id": "g6-8",
+          "text": "W przysiadzie bułgarskim postaw tylną stopę ___ (ławka).",
+          "answer": "na ławce",
+          "grammar_point": "gdzie-dokad-na",
+          "accept": [
+            "na ławkę"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "7. Ułóż polecenie",
+      "instruction": "Klikaj fragmenty w dobrej kolejności.",
+      "items": [
+        {
+          "id": "g7-1",
+          "words": [
+            "na skrzynię",
+            "wejdź",
+            "prawą nogą"
+          ],
+          "answer": "Wejdź na skrzynię prawą nogą.",
+          "grammar_point": "gdzie-dokad-na",
+          "accept": [
+            "Wejdź prawą nogą na skrzynię.",
+            "Prawą nogą wejdź na skrzynię."
+          ]
+        },
+        {
+          "id": "g7-2",
+          "words": [
+            "ręce",
+            "przed siebie",
+            "wyciągnij"
+          ],
+          "answer": "Wyciągnij ręce przed siebie.",
+          "grammar_point": "gdzie-dokad-za-pod-przed",
+          "accept": [
+            "Wyciągnij przed siebie ręce."
+          ]
+        },
+        {
+          "id": "g7-3",
+          "words": [
+            "od podłogi",
+            "piętami",
+            "odepchnij się"
+          ],
+          "answer": "Odepchnij się piętami od podłogi.",
+          "grammar_point": "narzednik-bez-przyimka",
+          "accept": [
+            "Odepchnij się od podłogi piętami."
+          ]
+        },
+        {
+          "id": "g7-4",
+          "words": [
+            "kolanami",
+            "trzymaj",
+            "między",
+            "piłkę"
+          ],
+          "answer": "Trzymaj piłkę między kolanami.",
+          "grammar_point": "przyimki-miejsca-narzednik",
+          "accept": [
+            "Między kolanami trzymaj piłkę."
+          ]
+        },
+        {
+          "id": "g7-5",
+          "words": [
+            "miednicę",
+            "pośladek średni",
+            "stabilizuje"
+          ],
+          "answer": "Pośladek średni stabilizuje miednicę.",
+          "grammar_point": "nazwy-miesni-dopelniacz",
+          "accept": [
+            "Miednicę stabilizuje pośladek średni."
+          ]
+        },
+        {
+          "id": "g7-6",
+          "words": [
+            "z hantlami",
+            "rumuński martwy ciąg",
+            "robimy"
+          ],
+          "answer": "Robimy rumuński martwy ciąg z hantlami.",
+          "grammar_point": "z-narzednik",
+          "accept": [
+            "Rumuński martwy ciąg robimy z hantlami.",
+            "Z hantlami robimy rumuński martwy ciąg."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "8. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "prompt": "Teraz trenujemy sidnice.",
+          "answer": "Teraz trenujemy pośladki.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Укр. «сідниці» → pośladki.",
+          "accept": [
+            "Teraz ćwiczymy pośladki."
+          ]
+        },
+        {
+          "id": "g8-2",
+          "prompt": "Zrób przysiad z sztangą.",
+          "answer": "Zrób przysiad ze sztangą.",
+          "grammar_point": "z-narzednik",
+          "explanation": "Przed sz- → ze."
+        },
+        {
+          "id": "g8-3",
+          "prompt": "Zrób dziesięć wypadów w tył.",
+          "answer": "Zrób dziesięć wykroków w tył.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Укр. «випад» → wykrok. Wypad to wyjazd: wypad za miasto.",
+          "accept": [
+            "Zrób dziesięć wykroków do tyłu."
+          ]
+        },
+        {
+          "id": "g8-4",
+          "prompt": "Podnieś się na noski.",
+          "answer": "Wspnij się na palce.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Stań na palcach.",
+            "Podnieś się na palce.",
+            "Wspinaj się na palce."
+          ],
+          "explanation": "Укр. «на носки» → na palce."
+        },
+        {
+          "id": "g8-5",
+          "prompt": "Przenieś ciężar na piętach.",
+          "answer": "Przenieś ciężar na pięty.",
+          "grammar_point": "gdzie-dokad-na",
+          "explanation": "Ruch → na + biernik: na pięty.",
+          "accept": [
+            "Przenieś ciężar ciała na pięty."
+          ]
+        },
+        {
+          "id": "g8-6",
+          "prompt": "Robimy wykroki z hantlemi.",
+          "answer": "Robimy wykroki z hantlami.",
+          "grammar_point": "z-narzednik",
+          "explanation": "Narzędnik lm.: -ami → hantlami.",
+          "accept": [
+            "Wykroki robimy z hantlami."
+          ]
+        },
+        {
+          "id": "g8-7",
+          "prompt": "Wejdź na skrzyni.",
+          "answer": "Wejdź na skrzynię.",
+          "grammar_point": "gdzie-dokad-na",
+          "explanation": "Dokąd? → na skrzynię."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,554 @@
+{
+  "lesson_id": "pl-trener-05-plecy",
+  "exercise_type": "fill-in-blank",
+  "title": "Szerzej, wolniej, zanim, aż: poprawiam technikę",
+  "instruction": "Osiem ćwiczeń w dwóch częściach: stopień wyższy i zdania z zanim / aż / jeśli / kiedy.",
+  "estimated_minutes": 40,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "1. Połącz słowo z opisem",
+      "instruction": "Kliknij słowo po lewej i jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "nachwyt",
+          "right": "dłonie patrzą w dół albo od ciebie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "podchwyt",
+          "right": "dłonie patrzą w twoją stronę",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "chwyt neutralny",
+          "right": "dłonie patrzą na siebie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "odcinek lędźwiowy",
+          "right": "dolna część kręgosłupa",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "mięsień czworoboczny",
+          "right": "„kaptur” między szyją a barkami",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "prostownik grzbietu",
+          "right": "trzyma plecy prosto wzdłuż kręgosłupa",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "„ptak-pies”",
+          "right": "na czworakach: ręka do przodu, noga do tyłu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "martwy ciąg",
+          "right": "podnosisz sztangę z podłogi",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Trochę szerzej!",
+      "instruction": "Wpisz przysłówek z nawiasu w stopniu wyższym.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Rozstaw ręce trochę ___ (szeroko).",
+          "answer": "szerzej",
+          "grammar_point": "stopien-wyzszy-przyslowek",
+          "explanation": "szeroko → szerzej (zmienia się spółgłoska)."
+        },
+        {
+          "id": "g2-2",
+          "text": "Opuszczaj ciężar ___ (wolno).",
+          "answer": "wolniej",
+          "grammar_point": "stopien-wyzszy-przyslowek"
+        },
+        {
+          "id": "g2-3",
+          "text": "Chwyć drążek ___ (wąsko).",
+          "answer": "węziej",
+          "grammar_point": "stopien-wyzszy-przyslowek",
+          "accept": [
+            "wężej"
+          ]
+        },
+        {
+          "id": "g2-4",
+          "text": "Ściągnij łopatki ___ (mocno).",
+          "answer": "mocniej",
+          "grammar_point": "stopien-wyzszy-przyslowek"
+        },
+        {
+          "id": "g2-5",
+          "text": "Łokieć prowadź ___ (blisko) ciała.",
+          "answer": "bliżej",
+          "grammar_point": "stopien-wyzszy-nieregularny"
+        },
+        {
+          "id": "g2-6",
+          "text": "Teraz jest dużo ___ (dobrze)!",
+          "answer": "lepiej",
+          "grammar_point": "stopien-wyzszy-nieregularny"
+        },
+        {
+          "id": "g2-7",
+          "text": "Nie unoś nogi ___ (wysoko) niż biodro.",
+          "answer": "wyżej",
+          "grammar_point": "stopien-wyzszy-nieregularny"
+        },
+        {
+          "id": "g2-8",
+          "text": "Zejdź trochę ___ (nisko).",
+          "answer": "niżej",
+          "grammar_point": "stopien-wyzszy-nieregularny"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Lżejszy, cięższy, lepiej",
+      "instruction": "Wybierz dobrą formę.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Weź ___ hantlę.",
+          "answer": "lżejszą",
+          "grammar_point": "stopien-wyzszy-przymiotnik",
+          "options": [
+            "lżejszą",
+            "lżejszy",
+            "lżejsze"
+          ],
+          "explanation": "Hantla (ż.) w bierniku → lżejszą."
+        },
+        {
+          "id": "g3-2",
+          "text": "Ten talerz jest ___ od tamtego.",
+          "answer": "cięższy",
+          "grammar_point": "stopien-wyzszy-przymiotnik",
+          "options": [
+            "cięższy",
+            "cięższa",
+            "ciężej"
+          ]
+        },
+        {
+          "id": "g3-3",
+          "text": "Spróbuj ___ chwytu.",
+          "answer": "węższego",
+          "grammar_point": "stopien-wyzszy-przymiotnik",
+          "options": [
+            "węższego",
+            "węższy",
+            "węziej"
+          ],
+          "explanation": "Spróbować + dopełniacz: węższego chwytu."
+        },
+        {
+          "id": "g3-4",
+          "text": "Dziś zrobimy ___ przerwy między seriami.",
+          "answer": "krótsze",
+          "grammar_point": "stopien-wyzszy-przymiotnik",
+          "options": [
+            "krótsze",
+            "krótszy",
+            "krócej"
+          ]
+        },
+        {
+          "id": "g3-5",
+          "text": "Ten drążek jest ___ niż tamten.",
+          "answer": "dłuższy",
+          "grammar_point": "stopien-wyzszy-przymiotnik",
+          "options": [
+            "dłuższy",
+            "dłuższa",
+            "dłużej"
+          ]
+        },
+        {
+          "id": "g3-6",
+          "text": "Twoja postawa jest dziś ___.",
+          "answer": "lepsza",
+          "grammar_point": "stopien-wyzszy-nieregularny",
+          "options": [
+            "lepsza",
+            "lepszy",
+            "lepiej"
+          ],
+          "explanation": "Postawa (ż.) jaka? → lepsza (przymiotnik)."
+        },
+        {
+          "id": "g3-7",
+          "text": "Wczoraj było ___ niż dziś.",
+          "answer": "gorzej",
+          "grammar_point": "stopien-wyzszy-nieregularny",
+          "options": [
+            "gorzej",
+            "gorszy",
+            "gorsza"
+          ],
+          "explanation": "Po „było” — przysłówek: gorzej."
+        },
+        {
+          "id": "g3-8",
+          "text": "Plecy są ___ sztywne niż rano.",
+          "answer": "mniej",
+          "grammar_point": "porownanie-niz",
+          "options": [
+            "mniej",
+            "mniejsze",
+            "mniejsza"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Porównaj",
+      "instruction": "Wpisz brakujące słowo albo formę słowa z nawiasu.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Ciągniesz już lepiej ___ tydzień temu.",
+          "answer": "niż",
+          "grammar_point": "porownanie-niz",
+          "explanation": "Porównanie → niż (nie *jak)."
+        },
+        {
+          "id": "g4-2",
+          "text": "Ten ciężar jest dla ciebie za duży. Weź ___ (lekki).",
+          "answer": "lżejszy",
+          "grammar_point": "stopien-wyzszy-przymiotnik"
+        },
+        {
+          "id": "g4-3",
+          "text": "Z każdym tygodniem ciągniesz ___ więcej.",
+          "answer": "coraz",
+          "grammar_point": "porownanie-niz"
+        },
+        {
+          "id": "g4-4",
+          "text": "Ruszaj się ___ (płynnie).",
+          "answer": "płynniej",
+          "grammar_point": "stopien-wyzszy-przyslowek",
+          "accept": [
+            "bardziej płynnie"
+          ]
+        },
+        {
+          "id": "g4-5",
+          "text": "Ten chwyt jest ___ (wygodny) niż nachwyt.",
+          "answer": "wygodniejszy",
+          "grammar_point": "stopien-wyzszy-przymiotnik",
+          "accept": [
+            "bardziej wygodny"
+          ]
+        },
+        {
+          "id": "g4-6",
+          "text": "Odchylasz się za bardzo — odchylaj się ___ (mało).",
+          "answer": "mniej",
+          "grammar_point": "stopien-wyzszy-nieregularny"
+        },
+        {
+          "id": "g4-7",
+          "text": "Podciąganie jest ___ (trudne) niż ściąganie drążka.",
+          "answer": "trudniejsze",
+          "grammar_point": "stopien-wyzszy-przymiotnik"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "matching",
+      "title": "5. Połącz początek i koniec polecenia",
+      "instruction": "Kliknij początek po lewej i dobry koniec po prawej.",
+      "items": [
+        {
+          "id": "g5-1",
+          "left": "Napnij brzuch,",
+          "right": "zanim podniesiesz sztangę.",
+          "grammar_point": "zanim"
+        },
+        {
+          "id": "g5-2",
+          "left": "Ciągnij drążek,",
+          "right": "aż dotknie górnej części klatki.",
+          "grammar_point": "az-dopoki"
+        },
+        {
+          "id": "g5-3",
+          "left": "Jeśli poczujesz ból w krzyżu,",
+          "right": "od razu przerwij serię.",
+          "grammar_point": "jesli-warunek"
+        },
+        {
+          "id": "g5-4",
+          "left": "Opuszczaj hantlę powoli,",
+          "right": "aż ręka będzie zupełnie prosta.",
+          "grammar_point": "az-dopoki"
+        },
+        {
+          "id": "g5-5",
+          "left": "Kiedy skończysz serię,",
+          "right": "odłóż hantlę na miejsce.",
+          "grammar_point": "kiedy-aspekt"
+        },
+        {
+          "id": "g5-6",
+          "left": "Jeżeli ciężar jest za duży,",
+          "right": "weź lżejszy.",
+          "grammar_point": "jesli-warunek"
+        },
+        {
+          "id": "g5-7",
+          "left": "Zanim zaczniesz ćwiczyć,",
+          "right": "ustaw wysokość siedziska.",
+          "grammar_point": "zanim"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Zanim, aż, jeśli, dopóki",
+      "instruction": "Wpisz spójnik. W nawiasie jest podpowiedź.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "___ zaczniesz, ustaw siedzisko. (przed czynnością)",
+          "answer": "Zanim",
+          "grammar_point": "zanim"
+        },
+        {
+          "id": "g6-2",
+          "text": "Ciągnij, ___ łopatki się zejdą. (do momentu)",
+          "answer": "aż",
+          "grammar_point": "az-dopoki"
+        },
+        {
+          "id": "g6-3",
+          "text": "___ boli cię nadgarstek, zmień chwyt na neutralny. (warunek)",
+          "answer": "Jeśli",
+          "grammar_point": "jesli-warunek",
+          "accept": [
+            "Jeżeli",
+            "Kiedy",
+            "Gdy"
+          ]
+        },
+        {
+          "id": "g6-4",
+          "text": "Pochylaj się powoli, ___ poczujesz rozciąganie. (do momentu)",
+          "answer": "aż",
+          "grammar_point": "az-dopoki"
+        },
+        {
+          "id": "g6-5",
+          "text": "Nie bierz cięższego ciężaru, ___ nie poprawisz techniki. (do momentu, z „nie”)",
+          "answer": "dopóki",
+          "grammar_point": "az-dopoki",
+          "explanation": "dopóki nie + dk. = aż: dopóki nie poprawisz."
+        },
+        {
+          "id": "g6-6",
+          "text": "___ będziesz ćwiczyć regularnie, plecy będą silniejsze. (warunek)",
+          "answer": "Jeśli",
+          "grammar_point": "jesli-warunek",
+          "accept": [
+            "Jeżeli",
+            "Kiedy",
+            "Gdy"
+          ]
+        },
+        {
+          "id": "g6-7",
+          "text": "Rozgrzej się, ___ weźmiesz sztangę. (przed czynnością)",
+          "answer": "zanim",
+          "grammar_point": "zanim"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Dokonany czy niedokonany?",
+      "instruction": "Wybierz dobrą formę czasownika.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Zanim ___ sztangę, napnij brzuch.",
+          "answer": "podniesiesz",
+          "grammar_point": "zanim",
+          "options": [
+            "podniesiesz",
+            "podnosisz",
+            "podnieś"
+          ],
+          "explanation": "zanim + dokonany, czas przyszły."
+        },
+        {
+          "id": "g7-2",
+          "text": "Ciągnij, aż drążek ___ klatki piersiowej.",
+          "answer": "dotknie",
+          "grammar_point": "az-dopoki",
+          "options": [
+            "dotknie",
+            "dotyka",
+            "dotknij"
+          ]
+        },
+        {
+          "id": "g7-3",
+          "text": "Kiedy ___ serię, odpocznij minutę.",
+          "answer": "skończysz",
+          "grammar_point": "kiedy-aspekt",
+          "options": [
+            "skończysz",
+            "kończysz",
+            "skończ"
+          ],
+          "explanation": "Najpierw jedno, potem drugie → dokonany."
+        },
+        {
+          "id": "g7-4",
+          "text": "Kiedy ___ drążek, patrz przed siebie.",
+          "answer": "ciągniesz",
+          "grammar_point": "kiedy-aspekt",
+          "options": [
+            "ciągniesz",
+            "pociągniesz",
+            "ciągnij"
+          ],
+          "explanation": "Dwie rzeczy w tym samym czasie → niedokonany."
+        },
+        {
+          "id": "g7-5",
+          "text": "Jeśli ___ ból, przerwij.",
+          "answer": [
+            "poczujesz",
+            "czujesz"
+          ],
+          "grammar_point": "jesli-warunek",
+          "options": [
+            "poczujesz",
+            "czujesz",
+            "poczuj"
+          ],
+          "explanation": "Obie formy są poprawne: jeśli poczujesz (przyszłość) / jeśli czujesz (teraz)."
+        },
+        {
+          "id": "g7-6",
+          "text": "___ wolniej, aż poczujesz łopatki.",
+          "answer": "Ciągnij",
+          "grammar_point": "kiedy-aspekt",
+          "options": [
+            "Ciągnij",
+            "Pociągnij",
+            "Ciągniesz"
+          ],
+          "explanation": "Ruch trwa → niedokonany: ciągnij."
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "8. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "prompt": "Rozstaw ręce szersze.",
+          "answer": "Rozstaw ręce szerzej.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Укр. «ширше» → przysłówek szerzej. Szersze to przymiotnik."
+        },
+        {
+          "id": "g8-2",
+          "prompt": "Opuszczaj hantlę powolniej.",
+          "answer": "Opuszczaj hantlę wolniej.",
+          "grammar_point": "stopien-wyzszy-przyslowek",
+          "accept": [
+            "Opuszczaj wolniej hantlę."
+          ],
+          "explanation": "powoli / wolno → wolniej."
+        },
+        {
+          "id": "g8-3",
+          "prompt": "Ciągniesz lepiej jak wczoraj.",
+          "answer": "Ciągniesz lepiej niż wczoraj.",
+          "grammar_point": "porownanie-niz",
+          "explanation": "Po stopniu wyższym → niż."
+        },
+        {
+          "id": "g8-4",
+          "prompt": "Boli mnie poperek.",
+          "answer": "Boli mnie krzyż.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Boli mnie dolna część pleców.",
+            "Bolą mnie plecy."
+          ],
+          "explanation": "Укр. «поперек» → krzyż."
+        },
+        {
+          "id": "g8-5",
+          "prompt": "Zwiedź łopatki.",
+          "answer": "Ściągnij łopatki.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Ściągnij łopatki do siebie.",
+            "Ściągnij łopatki razem."
+          ],
+          "explanation": "Укр. «звести» → ściągnąć. Zwiedzić = оглядати місто."
+        },
+        {
+          "id": "g8-6",
+          "prompt": "Przed tym jak podniesiesz sztangę, napnij brzuch.",
+          "answer": "Zanim podniesiesz sztangę, napnij brzuch.",
+          "grammar_point": "zanim",
+          "accept": [
+            "Napnij brzuch, zanim podniesiesz sztangę."
+          ],
+          "explanation": "Укр. «перш ніж» → zanim."
+        },
+        {
+          "id": "g8-7",
+          "prompt": "Weź lekszy ciężar.",
+          "answer": "Weź lżejszy ciężar.",
+          "grammar_point": "stopien-wyzszy-przymiotnik",
+          "explanation": "lekki → lżejszy."
+        }
+      ]
+    }
+  ]
+}

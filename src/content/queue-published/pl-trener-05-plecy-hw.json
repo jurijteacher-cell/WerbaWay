@@ -1,0 +1,203 @@
+{
+  "lesson_id": "pl-trener-05-plecy",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: plecy w codziennym życiu",
+  "instruction": "Trzy bloki. Zrób je przed napisaniem e-maila do kolegi.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz dobrą formę",
+      "instruction": "Wpisz słowo z nawiasu w stopniu wyższym albo spójnik.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Na basenie płyń trochę ___ (wolno), ale dłużej.",
+          "answer": "wolniej",
+          "grammar_point": "stopien-wyzszy-przyslowek"
+        },
+        {
+          "id": "h1-2",
+          "text": "Monitor ustaw ___ (wysoko), na wysokości oczu.",
+          "answer": "wyżej",
+          "grammar_point": "stopien-wyzszy-nieregularny"
+        },
+        {
+          "id": "h1-3",
+          "text": "Jeśli plecak jest za ciężki, spakuj ___ (mało) rzeczy.",
+          "answer": "mniej",
+          "grammar_point": "stopien-wyzszy-nieregularny"
+        },
+        {
+          "id": "h1-4",
+          "text": "Dziecko noś ___ (blisko) siebie.",
+          "answer": "bliżej",
+          "grammar_point": "stopien-wyzszy-nieregularny"
+        },
+        {
+          "id": "h1-5",
+          "text": "Ta poduszka jest ___ (wygodna) niż stara.",
+          "answer": "wygodniejsza",
+          "grammar_point": "stopien-wyzszy-przymiotnik",
+          "accept": [
+            "bardziej wygodna"
+          ]
+        },
+        {
+          "id": "h1-6",
+          "text": "Po tygodniu ćwiczeń czuję się dużo ___ (dobrze).",
+          "answer": "lepiej",
+          "grammar_point": "stopien-wyzszy-nieregularny"
+        },
+        {
+          "id": "h1-7",
+          "text": "___ usiądziesz do komputera, ustaw krzesło. (przed czynnością)",
+          "answer": "Zanim",
+          "grammar_point": "zanim"
+        },
+        {
+          "id": "h1-8",
+          "text": "Wchodź po schodach, ___ poczujesz pracę ud. (do momentu)",
+          "answer": "aż",
+          "grammar_point": "az-dopoki"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdania",
+      "instruction": "Klikaj fragmenty w dobrej kolejności.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "ustaw monitor",
+            "wyżej",
+            "trochę"
+          ],
+          "answer": "Ustaw monitor trochę wyżej.",
+          "grammar_point": "stopien-wyzszy-nieregularny",
+          "accept": [
+            "Trochę wyżej ustaw monitor."
+          ]
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "czuję się",
+            "lepiej niż wczoraj",
+            "dziś"
+          ],
+          "answer": "Dziś czuję się lepiej niż wczoraj.",
+          "grammar_point": "porownanie-niz",
+          "accept": [
+            "Czuję się dziś lepiej niż wczoraj."
+          ]
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "noś",
+            "bliżej ciała",
+            "zakupy"
+          ],
+          "answer": "Noś zakupy bliżej ciała.",
+          "grammar_point": "stopien-wyzszy-nieregularny",
+          "accept": [
+            "Zakupy noś bliżej ciała."
+          ]
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "coraz wyżej",
+            "wspinasz się",
+            "z każdym tygodniem"
+          ],
+          "answer": "Z każdym tygodniem wspinasz się coraz wyżej.",
+          "grammar_point": "porownanie-niz",
+          "accept": [
+            "Wspinasz się coraz wyżej z każdym tygodniem."
+          ]
+        },
+        {
+          "id": "h2-5",
+          "words": [
+            "lżejszą torbę",
+            "weź",
+            "na zakupy"
+          ],
+          "answer": "Weź na zakupy lżejszą torbę.",
+          "grammar_point": "stopien-wyzszy-przymiotnik",
+          "accept": [
+            "Weź lżejszą torbę na zakupy.",
+            "Na zakupy weź lżejszą torbę."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Usiądź prosto, przed tym jak zaczniesz pisać.",
+          "answer": "Usiądź prosto, zanim zaczniesz pisać.",
+          "grammar_point": "zanim",
+          "accept": [
+            "Zanim zaczniesz pisać, usiądź prosto."
+          ]
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Ta mata jest wygodniejsza jak tamta.",
+          "answer": "Ta mata jest wygodniejsza niż tamta.",
+          "grammar_point": "porownanie-niz",
+          "accept": [
+            "Ta mata jest wygodniejsza od tamtej."
+          ]
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Po pracy boli mnie poperek.",
+          "answer": "Po pracy boli mnie krzyż.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Po pracy bolą mnie plecy.",
+            "Po pracy boli mnie dolna część pleców."
+          ]
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Postaw nogi szersze.",
+          "answer": "Postaw nogi szerzej.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Rozstaw nogi szerzej."
+          ]
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Pływaj powolniej, ale dłużej.",
+          "answer": "Pływaj wolniej, ale dłużej.",
+          "grammar_point": "stopien-wyzszy-przyslowek"
+        },
+        {
+          "id": "h3-6",
+          "prompt": "Pływaj kraulem, aż czujesz zmęczenie w barkach.",
+          "answer": "Pływaj kraulem, aż poczujesz zmęczenie w barkach.",
+          "grammar_point": "az-dopoki",
+          "accept": [
+            "Pływaj kraulem, dopóki nie poczujesz zmęczenia w barkach."
+          ],
+          "explanation": "aż + dokonany: aż poczujesz."
+        }
+      ]
+    }
+  ]
+}

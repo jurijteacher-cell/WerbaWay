@@ -14,11 +14,11 @@
 |---|---|---|
 | **Блок A. Основа** | | |
 | 01 | Zawód trenera i siłownia | опубліковано 11.11.2026 (`pl-trener-01-zawod-trenera`) |
-| 02 | Ciało i ruch: części ciała, stawy, ruchy | план |
-| 03 | Mięśnie i ich praca: budowa, skurcz, agoniści i antagoniści | план |
+| 02 | Ciało i ruch: części ciała, stawy, ruchy | Notion 12.11.2026 (`pl-trener-02-cialo-i-ruch`); JSON вправ у репо немає — вікна 404 |
+| 03 | Mięśnie i ich praca: budowa, skurcz, agoniści i antagoniści | опубліковано 13.11.2026 (`pl-trener-03-miesnie-i-ich-praca`) |
 | **Блок B. М'язи й вправи по групах** | | |
-| 04 | Nogi i pośladki | план |
-| 05 | Plecy | план |
+| 04 | Nogi i pośladki | опубліковано 13.11.2026 (`pl-trener-04-nogi-i-posladki`) |
+| 05 | Plecy | опубліковано 13.11.2026 (`pl-trener-05-plecy`) |
 | 06 | Klatka piersiowa i barki | план |
 | 07 | Ramiona i przedramiona | план |
 | 08 | Brzuch i core | план |
@@ -38,6 +38,13 @@
 - Граматика: pan / pani / państwo; chciałbym / chciałabym; mógłby pan / mogłaby pani; proszę і bezokolicznik (dk / ndk); propozycje; пастки з української. 8 блоків g1–g8.
 - Комунікативні задачі c1–c3 (flip-task), ДЗ h1–h3, письмо 120–140 слів.
 - Фото: Vitaly Gariev / Unsplash (обкладинка і фото в тексті).
+
+## Лекції 03–05: що зроблено (13.11.2026)
+- 03 · Mięśnie i ich praca — 34 слова / 5 груп; граматика: назви м'язів (mięsień + jaki + czego), родовий одн./множ., z przodu / z tyłu / wokół / wzdłuż + D., odmiana „mięsień”; czasowniki z „się”, trzy rodzaje skurczu, kiedy / a / podczas gdy, bo / ponieważ / dlatego / więc.
+- 04 · Nogi i pośladki — 34 слова; граматика: narzędnik (z + N., czym? bez przyimka, nad/pod/przed/za/między + N.), gdzie? / dokąd? / skąd? (na skrzyni / na skrzynię / ze skrzyni, przed sobą / przed siebie), wyjątki usiąść / położyć / postawić.
+- 05 · Plecy — 34 слова; граматика: stopień wyższy przysłówków i przymiotników (szerzej, wolniej, lżejszy, niż / od / coraz), zanim / aż (dopóki nie) / jeśli, kiedy + dk./ndk.
+- Сюжет: Danylo, klub „Forma”, pani Ewa (kolano), Marek (kierowca, ból krzyża), kierowniczka pani Karolina.
+- Без e1/e2 і аудіо, як у 01–02; діалог-зразок c1 читає викладач.
 
 ## Відкриті питання
 - Блок «🎧 Słuchanie jak na egzaminie» (AUDIO_EXAM_SPEC): embed `listening` ще не існує. У лекції 1 діалог-зразок читає викладач.

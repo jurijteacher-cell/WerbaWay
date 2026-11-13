@@ -1,0 +1,635 @@
+{
+  "lesson_id": "pl-trener-03-miesnie-i-ich-praca",
+  "exercise_type": "fill-in-blank",
+  "title": "Mięśnie po polsku: nazwy, praca i przyczyny",
+  "instruction": "Osiem ćwiczeń w dwóch częściach: nazwy mięśni z dopełniaczem i opis pracy mięśnia.",
+  "estimated_minutes": 40,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "1. Połącz słowo z opisem",
+      "instruction": "Kliknij słowo po lewej i jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "ścięgno",
+          "right": "łączy mięsień z kością",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "więzadło",
+          "right": "łączy kość z kością w stawie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "przyczep",
+          "right": "miejsce na kości, gdzie zaczyna się mięsień",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "włókno mięśniowe",
+          "right": "długa, cienka komórka mięśnia",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "agonista",
+          "right": "wykonuje główny ruch",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "antagonista",
+          "right": "robi ruch przeciwny",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "synergista",
+          "right": "pomaga, ale nie prowadzi ruchu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "zakwasy",
+          "right": "ból mięśni dzień po treningu",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Mięsień czego?",
+      "instruction": "Wpisz słowo z nawiasu w dopełniaczu.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Biceps to mięsień dwugłowy ___ (ramię).",
+          "answer": "ramienia",
+          "grammar_point": "nazwy-miesni-dopelniacz",
+          "explanation": "ramię → ramienia, jak imię → imienia."
+        },
+        {
+          "id": "g2-2",
+          "text": "Mięsień czworogłowy ___ (udo) prostuje nogę w kolanie.",
+          "answer": "uda",
+          "grammar_point": "nazwy-miesni-dopelniacz"
+        },
+        {
+          "id": "g2-3",
+          "text": "Mięsień brzuchaty ___ (łydka) pracuje przy wspięciach na palce.",
+          "answer": "łydki",
+          "grammar_point": "nazwy-miesni-dopelniacz"
+        },
+        {
+          "id": "g2-4",
+          "text": "Mięsień najszerszy ___ (grzbiet) ciągnie ramię w dół.",
+          "answer": "grzbietu",
+          "grammar_point": "nazwy-miesni-dopelniacz"
+        },
+        {
+          "id": "g2-5",
+          "text": "Przy unoszeniu nóg w leżeniu mocno pracują mięśnie ___ (brzuch).",
+          "answer": "brzucha",
+          "grammar_point": "dopelniacz-czesci-ciala"
+        },
+        {
+          "id": "g2-6",
+          "text": "Po malowaniu sufitu bolał mnie przód ___ (bark).",
+          "answer": "barku",
+          "grammar_point": "dopelniacz-czesci-ciala",
+          "explanation": "bark → barku (-u), a brzuch → brzucha (-a). Końcówkę trzeba zapamiętać."
+        },
+        {
+          "id": "g2-7",
+          "text": "Mięsień piersiowy leży z przodu ___ (klatka piersiowa).",
+          "answer": "klatki piersiowej",
+          "grammar_point": "dopelniacz-czesci-ciala"
+        },
+        {
+          "id": "g2-8",
+          "text": "Mięśnie ___ (przedramię) pracują, kiedy mocno trzymasz drążek.",
+          "answer": "przedramienia",
+          "grammar_point": "dopelniacz-czesci-ciala",
+          "accept": [
+            "przedramion"
+          ],
+          "explanation": "przedramię odmienia się jak ramię: przedramienia, lm. przedramion."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Mięśnie czego? Liczba mnoga",
+      "instruction": "Wybierz dobrą formę.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Dziś trenujemy mięśnie ___ (pośladki).",
+          "answer": "pośladków",
+          "grammar_point": "dopelniacz-lm",
+          "options": [
+            "pośladków",
+            "pośladki",
+            "pośladkach"
+          ]
+        },
+        {
+          "id": "g3-2",
+          "text": "Przy bieganiu pod górę czujesz pracę ___ (łydki).",
+          "answer": "łydek",
+          "grammar_point": "dopelniacz-lm",
+          "options": [
+            "łydek",
+            "łydków",
+            "łydkach"
+          ],
+          "explanation": "Żeńskie na -ka: łydka → łydek (jak matka → matek)."
+        },
+        {
+          "id": "g3-3",
+          "text": "Ten trening jest tylko dla ___ (nogi).",
+          "answer": "nóg",
+          "grammar_point": "dopelniacz-lm",
+          "options": [
+            "nóg",
+            "nogów",
+            "nogi"
+          ],
+          "explanation": "noga → nóg: o zmienia się w ó."
+        },
+        {
+          "id": "g3-4",
+          "text": "Siła ___ (ręce) przyda się przy podciąganiu.",
+          "answer": "rąk",
+          "grammar_point": "dopelniacz-lm",
+          "options": [
+            "rąk",
+            "ręków",
+            "rękach"
+          ],
+          "explanation": "ręka → rąk: ę zmienia się w ą."
+        },
+        {
+          "id": "g3-5",
+          "text": "Rozciąganie ___ (uda) robimy na końcu treningu.",
+          "answer": "ud",
+          "grammar_point": "dopelniacz-lm",
+          "options": [
+            "ud",
+            "udów",
+            "udach"
+          ],
+          "explanation": "Nijakie: udo → ud (bez końcówki)."
+        },
+        {
+          "id": "g3-6",
+          "text": "Ból ___ (plecy) to częsty problem kierowców.",
+          "answer": "pleców",
+          "grammar_point": "dopelniacz-lm",
+          "options": [
+            "pleców",
+            "plec",
+            "plecami"
+          ]
+        },
+        {
+          "id": "g3-7",
+          "text": "Praca ___ (mięśnie) zależy od sygnału z nerwu.",
+          "answer": "mięśni",
+          "grammar_point": "dopelniacz-lm",
+          "options": [
+            "mięśni",
+            "mięśniów",
+            "mięśniom"
+          ],
+          "explanation": "mięsień → mięśni, nie *mięśniów."
+        },
+        {
+          "id": "g3-8",
+          "text": "Zakres ruchu ___ (barki) jest u niego bardzo mały.",
+          "answer": "barków",
+          "grammar_point": "dopelniacz-lm",
+          "options": [
+            "barków",
+            "bark",
+            "barkami"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Mięsień, mięśnia, mięśni… i gdzie leży",
+      "instruction": "Wpisz słowo z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Rozmawiamy dziś o ___ (mięsień) dwugłowym.",
+          "answer": "mięśniu",
+          "grammar_point": "odmiana-miesien",
+          "explanation": "o + miejscownik: o mięśniu. „ę” znika: mięsień → mięśnia, mięśniu."
+        },
+        {
+          "id": "g4-2",
+          "text": "Nie ma ___ (mięsień), który umie pchać.",
+          "answer": "mięśnia",
+          "grammar_point": "odmiana-miesien",
+          "explanation": "Po „nie ma” — dopełniacz."
+        },
+        {
+          "id": "g4-3",
+          "text": "Pracujemy dziś nad ___ (mięśnie) brzucha.",
+          "answer": "mięśniami",
+          "grammar_point": "odmiana-miesien"
+        },
+        {
+          "id": "g4-4",
+          "text": "Na tej planszy widać kilkanaście ___ (mięsień).",
+          "answer": "mięśni",
+          "grammar_point": "odmiana-miesien",
+          "explanation": "kilkanaście + dopełniacz lm.: mięśni."
+        },
+        {
+          "id": "g4-5",
+          "text": "Silne mięśnie wokół ___ (kolano) stabilizują staw.",
+          "answer": "kolana",
+          "grammar_point": "przyimki-z-dopelniaczem",
+          "explanation": "wokół + dopełniacz."
+        },
+        {
+          "id": "g4-6",
+          "text": "Ścięgno biegnie od mięśnia do ___ (kość).",
+          "answer": "kości",
+          "grammar_point": "przyimki-z-dopelniaczem",
+          "explanation": "do + dopełniacz."
+        },
+        {
+          "id": "g4-7",
+          "text": "Wzdłuż ___ (kręgosłup) biegnie prostownik grzbietu.",
+          "answer": "kręgosłupa",
+          "grammar_point": "przyimki-z-dopelniaczem",
+          "explanation": "wzdłuż + dopełniacz."
+        },
+        {
+          "id": "g4-8",
+          "text": "Z ___ (tył) uda leżą mięśnie kulszowo-goleniowe.",
+          "answer": "tyłu",
+          "grammar_point": "przyimki-z-dopelniaczem",
+          "explanation": "z tyłu, z przodu — stałe wyrażenia."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Z „się” czy bez?",
+      "instruction": "Wybierz dobrą formę. Uważaj: mięsień robi coś sam czy ktoś robi coś z mięśniem?",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Kiedy robisz przysiad, mięśnie ud ___.",
+          "answer": "się kurczą",
+          "grammar_point": "czasowniki-z-sie",
+          "options": [
+            "się kurczą",
+            "kurczą",
+            "się kurczy"
+          ],
+          "explanation": "Mięsień kurczy się sam: czasownik z „się”. Mięśnie (lm.) → kurczą się."
+        },
+        {
+          "id": "g5-2",
+          "text": "Po treningu ___ łydki przez dwie minuty. (ty)",
+          "answer": "rozciągnij",
+          "grammar_point": "czasowniki-z-sie",
+          "options": [
+            "rozciągnij",
+            "rozciągnij się",
+            "rozciągnijcie"
+          ],
+          "explanation": "Rozciągasz coś (łydki) → bez „się”."
+        },
+        {
+          "id": "g5-3",
+          "text": "Przy schodzeniu ze schodów mięśnie ud ___ pod obciążeniem.",
+          "answer": "wydłużają się",
+          "grammar_point": "czasowniki-z-sie",
+          "options": [
+            "wydłużają się",
+            "wydłużają",
+            "wydłuża się"
+          ]
+        },
+        {
+          "id": "g5-4",
+          "text": "Na koniec treningu ___ mięśnie karku. (wy)",
+          "answer": "rozluźnijcie",
+          "grammar_point": "czasowniki-z-sie",
+          "options": [
+            "rozluźnijcie",
+            "rozluźnijcie się",
+            "rozluźnij"
+          ],
+          "explanation": "Rozluźniacie coś (mięśnie) → bez „się”."
+        },
+        {
+          "id": "g5-5",
+          "text": "Kiedy prostujesz rękę wbrew oporowi, triceps ___.",
+          "answer": "się skraca",
+          "grammar_point": "czasowniki-z-sie",
+          "options": [
+            "się skraca",
+            "skraca",
+            "się skracają"
+          ]
+        },
+        {
+          "id": "g5-6",
+          "text": "Trener ___ klientce nogę, bo ona sama nie daje rady.",
+          "answer": "rozciąga",
+          "grammar_point": "czasowniki-z-sie",
+          "options": [
+            "rozciąga",
+            "rozciąga się",
+            "rozciągają się"
+          ],
+          "explanation": "Trener rozciąga komuś nogę → bez „się”."
+        },
+        {
+          "id": "g5-7",
+          "text": "Zimne mięśnie gorzej ___.",
+          "answer": "się rozciągają",
+          "grammar_point": "czasowniki-z-sie",
+          "options": [
+            "się rozciągają",
+            "rozciągają",
+            "się rozciąga"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Kiedy, a, bo, dlatego…",
+      "instruction": "Wpisz spójnik. W nawiasie jest podpowiedź, co on wprowadza.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Mięśnie są jeszcze zimne, ___ zaczynamy od marszu. (skutek)",
+          "answer": "dlatego",
+          "grammar_point": "przyczyna-skutek",
+          "accept": [
+            "więc"
+          ]
+        },
+        {
+          "id": "g6-2",
+          "text": "Ćwiczymy uda, ___ silne mięśnie stabilizują kolano. (przyczyna)",
+          "answer": "bo",
+          "grammar_point": "przyczyna-skutek",
+          "accept": [
+            "ponieważ"
+          ]
+        },
+        {
+          "id": "g6-3",
+          "text": "___ mięśnie są zimne, zaczynamy od rozgrzewki. (przyczyna na początku zdania)",
+          "answer": "Ponieważ",
+          "grammar_point": "przyczyna-skutek",
+          "accept": [
+            "Skoro"
+          ],
+          "explanation": "Na początku zdania — ponieważ. „Bo” zwykle nie zaczyna zdania."
+        },
+        {
+          "id": "g6-4",
+          "text": "___ zginasz rękę, biceps się skraca. (czas)",
+          "answer": "Kiedy",
+          "grammar_point": "spojniki-czasu-kontrastu",
+          "accept": [
+            "Gdy"
+          ]
+        },
+        {
+          "id": "g6-5",
+          "text": "Biceps się kurczy, ___ triceps się rozciąga. (kontrast, krótko)",
+          "answer": "a",
+          "grammar_point": "spojniki-czasu-kontrastu",
+          "accept": [
+            "podczas gdy"
+          ]
+        },
+        {
+          "id": "g6-6",
+          "text": "Agonista wykonuje ruch, ___ antagonista go kontroluje. (kontrast, oficjalnie)",
+          "answer": "podczas gdy",
+          "grammar_point": "spojniki-czasu-kontrastu",
+          "accept": [
+            "a"
+          ]
+        },
+        {
+          "id": "g6-7",
+          "text": "Klient źle spał, ___ dziś robimy lżejszy trening. (skutek, potocznie)",
+          "answer": "więc",
+          "grammar_point": "przyczyna-skutek",
+          "accept": [
+            "dlatego"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "7. Ułóż zdanie",
+      "instruction": "Klikaj fragmenty w dobrej kolejności.",
+      "items": [
+        {
+          "id": "g7-1",
+          "words": [
+            "się kurczy",
+            "przy zginaniu",
+            "biceps",
+            "ręki"
+          ],
+          "answer": "Biceps się kurczy przy zginaniu ręki.",
+          "grammar_point": "czasowniki-z-sie",
+          "accept": [
+            "Przy zginaniu ręki biceps się kurczy."
+          ]
+        },
+        {
+          "id": "g7-2",
+          "words": [
+            "jest z tyłu",
+            "mięsień trójgłowy",
+            "ramienia"
+          ],
+          "answer": "Mięsień trójgłowy jest z tyłu ramienia.",
+          "grammar_point": "nazwy-miesni-dopelniacz",
+          "accept": [
+            "Z tyłu ramienia jest mięsień trójgłowy."
+          ]
+        },
+        {
+          "id": "g7-3",
+          "words": [
+            "mięśnie ud",
+            "pod obciążeniem",
+            "wydłużają się",
+            "przy schodzeniu"
+          ],
+          "answer": "Przy schodzeniu mięśnie ud wydłużają się pod obciążeniem.",
+          "grammar_point": "czasowniki-z-sie",
+          "accept": [
+            "Mięśnie ud wydłużają się pod obciążeniem przy schodzeniu."
+          ]
+        },
+        {
+          "id": "g7-4",
+          "words": [
+            "hantlę",
+            "powoli",
+            "opuszczaj"
+          ],
+          "answer": "Opuszczaj hantlę powoli.",
+          "grammar_point": "tryb-rozkazujacy",
+          "accept": [
+            "Powoli opuszczaj hantlę.",
+            "Opuszczaj powoli hantlę."
+          ],
+          "explanation": "Ruch trwa → niedokonany: opuszczaj."
+        },
+        {
+          "id": "g7-5",
+          "words": [
+            "pracuje",
+            "w desce",
+            "izometrycznie",
+            "brzuch"
+          ],
+          "answer": "W desce brzuch pracuje izometrycznie.",
+          "grammar_point": "czasowniki-z-sie",
+          "accept": [
+            "Brzuch pracuje izometrycznie w desce.",
+            "W desce brzuch pracuje izometrycznie."
+          ]
+        },
+        {
+          "id": "g7-6",
+          "words": [
+            "z kością",
+            "łączy",
+            "ścięgno",
+            "mięsień"
+          ],
+          "answer": "Ścięgno łączy mięsień z kością.",
+          "grammar_point": "nazwy-miesni-dopelniacz",
+          "accept": [
+            "Mięsień z kością łączy ścięgno."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "8. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "prompt": "Po treningu bolą mnie mięśnie stegna.",
+          "answer": "Po treningu bolą mnie mięśnie uda.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Po treningu bolą mnie mięśnie ud."
+          ],
+          "explanation": "Укр. «стегно» → po polsku udo."
+        },
+        {
+          "id": "g8-2",
+          "prompt": "Kiedy zginasz rękę, biceps skraca.",
+          "answer": "Kiedy zginasz rękę, biceps się skraca.",
+          "grammar_point": "czasowniki-z-sie",
+          "accept": [
+            "Kiedy zginasz rękę, biceps skraca się.",
+            "Kiedy zginasz rękę, biceps się kurczy.",
+            "Kiedy zginasz rękę, biceps kurczy się.",
+            "Gdy zginasz rękę, biceps się skraca.",
+            "Gdy zginasz rękę, biceps się kurczy."
+          ],
+          "explanation": "Mięsień skraca się sam → potrzebne „się”."
+        },
+        {
+          "id": "g8-3",
+          "prompt": "Mam krepaturę po wczorajszym treningu.",
+          "answer": "Mam zakwasy po wczorajszym treningu.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Po wczorajszym treningu mam zakwasy."
+          ],
+          "explanation": "Укр. «крепатура» → po polsku zakwasy."
+        },
+        {
+          "id": "g8-4",
+          "prompt": "Zerwał związkę w kolanie.",
+          "answer": "Zerwał więzadło w kolanie.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Zerwał więzadło kolana."
+          ],
+          "explanation": "Укр. «зв'язка» → więzadło. Związek to зв'язок / союз."
+        },
+        {
+          "id": "g8-5",
+          "prompt": "Ma zapalenie suchożylia.",
+          "answer": "Ma zapalenie ścięgna.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Укр. «сухожилля» → ścięgno."
+        },
+        {
+          "id": "g8-6",
+          "prompt": "Mięśnie są zimne. Bo zaczynamy od rozgrzewki.",
+          "answer": "Mięśnie są zimne, dlatego zaczynamy od rozgrzewki.",
+          "grammar_point": "przyczyna-skutek",
+          "accept": [
+            "Mięśnie są zimne, więc zaczynamy od rozgrzewki.",
+            "Mięśnie są zimne. Dlatego zaczynamy od rozgrzewki.",
+            "Zaczynamy od rozgrzewki, bo mięśnie są zimne.",
+            "Zaczynamy od rozgrzewki, ponieważ mięśnie są zimne."
+          ],
+          "explanation": "Skutek → dlatego / więc. „Bo” wprowadza przyczynę, nie skutek."
+        },
+        {
+          "id": "g8-7",
+          "prompt": "To jest trening dla mięśniów nóg.",
+          "answer": "To jest trening dla mięśni nóg.",
+          "grammar_point": "dopelniacz-lm",
+          "explanation": "Dopełniacz lm.: mięśni, nie *mięśniów.",
+          "accept": [
+            "To trening dla mięśni nóg."
+          ]
+        }
+      ]
+    }
+  ]
+}

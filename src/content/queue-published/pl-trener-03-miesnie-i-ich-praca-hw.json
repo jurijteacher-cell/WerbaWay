@@ -1,0 +1,215 @@
+{
+  "lesson_id": "pl-trener-03-miesnie-i-ich-praca",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: mięśnie w nowych sytuacjach",
+  "instruction": "Trzy bloki. Zrób je przed napisaniem tekstu do newslettera.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz dopełniacz",
+      "instruction": "Wpisz słowo z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Przy wiosłowaniu w kajaku mocno pracują mięśnie ___ (plecy).",
+          "answer": "pleców",
+          "grammar_point": "dopelniacz-lm"
+        },
+        {
+          "id": "h1-2",
+          "text": "Wspinacze mają bardzo silne mięśnie ___ (przedramiona).",
+          "answer": "przedramion",
+          "grammar_point": "dopelniacz-lm",
+          "explanation": "przedramię → lm. przedramiona → dopełniacz przedramion."
+        },
+        {
+          "id": "h1-3",
+          "text": "Mięsień naramienny okrywa staw ___ (bark).",
+          "answer": "barku",
+          "grammar_point": "dopelniacz-czesci-ciala"
+        },
+        {
+          "id": "h1-4",
+          "text": "Po maratonie bolały go mięśnie ___ (łydki).",
+          "answer": "łydek",
+          "grammar_point": "dopelniacz-lm"
+        },
+        {
+          "id": "h1-5",
+          "text": "Masażystka długo pracowała nad mięśniami ___ (kark).",
+          "answer": "karku",
+          "grammar_point": "dopelniacz-czesci-ciala"
+        },
+        {
+          "id": "h1-6",
+          "text": "Przy pływaniu żabką mocno pracują przywodziciele ___ (uda).",
+          "answer": "uda",
+          "grammar_point": "nazwy-miesni-dopelniacz",
+          "accept": [
+            "ud"
+          ]
+        },
+        {
+          "id": "h1-7",
+          "text": "Fizjoterapeutka sprawdziła zakres ruchu obu ___ (biodra).",
+          "answer": "bioder",
+          "grammar_point": "dopelniacz-lm",
+          "explanation": "biodro → bioder (jak biodro, wiadro → wiader)."
+        },
+        {
+          "id": "h1-8",
+          "text": "Rower stacjonarny z oporem dobrze wzmacnia mięśnie ___ (pośladki).",
+          "answer": "pośladków",
+          "grammar_point": "dopelniacz-lm"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdania",
+      "instruction": "Klikaj fragmenty w dobrej kolejności.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "unosi rękę",
+            "mięsień naramienny",
+            "w bok"
+          ],
+          "answer": "Mięsień naramienny unosi rękę w bok.",
+          "grammar_point": "nazwy-miesni-dopelniacz",
+          "accept": [
+            "W bok rękę unosi mięsień naramienny."
+          ]
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "rozciągają się",
+            "mięśnie kulszowo-goleniowe",
+            "przy skłonie"
+          ],
+          "answer": "Przy skłonie rozciągają się mięśnie kulszowo-goleniowe.",
+          "grammar_point": "czasowniki-z-sie",
+          "accept": [
+            "Mięśnie kulszowo-goleniowe rozciągają się przy skłonie."
+          ]
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "w łydce",
+            "złapał mnie",
+            "w nocy",
+            "skurcz"
+          ],
+          "answer": "W nocy złapał mnie skurcz w łydce.",
+          "grammar_point": "slownictwo",
+          "accept": [
+            "Złapał mnie w nocy skurcz w łydce.",
+            "W nocy złapał mnie w łydce skurcz."
+          ]
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "są antagonistami",
+            "mięśnia czworogłowego",
+            "mięśnie kulszowo-goleniowe"
+          ],
+          "answer": "Mięśnie kulszowo-goleniowe są antagonistami mięśnia czworogłowego.",
+          "grammar_point": "nazwy-miesni-dopelniacz",
+          "accept": [
+            "Antagonistami mięśnia czworogłowego są mięśnie kulszowo-goleniowe."
+          ]
+        },
+        {
+          "id": "h2-5",
+          "words": [
+            "na podłogę",
+            "ciężaru",
+            "nie rzucaj"
+          ],
+          "answer": "Nie rzucaj ciężaru na podłogę.",
+          "grammar_point": "tryb-rozkazujacy",
+          "accept": [
+            "Na podłogę nie rzucaj ciężaru.",
+            "Nie rzucaj na podłogę ciężaru."
+          ],
+          "explanation": "Zakaz → niedokonany; po „nie” — dopełniacz: ciężaru."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Po wspinaczce bolą mnie mięśnie przedramieni.",
+          "answer": "Po wspinaczce bolą mnie mięśnie przedramion.",
+          "grammar_point": "dopelniacz-lm",
+          "explanation": "przedramię → przedramion (dopełniacz lm.).",
+          "accept": [
+            "Po wspinaczce mięśnie przedramion mnie bolą."
+          ]
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Kiedy biegniesz pod górę, łydki mocno kurczą.",
+          "answer": "Kiedy biegniesz pod górę, łydki mocno się kurczą.",
+          "grammar_point": "czasowniki-z-sie",
+          "accept": [
+            "Kiedy biegniesz pod górę, łydki kurczą się mocno.",
+            "Kiedy biegniesz pod górę, łydki mocno kurczą się.",
+            "Gdy biegniesz pod górę, łydki mocno się kurczą.",
+            "Kiedy biegniesz pod górę, łydki mocno pracują."
+          ]
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Nie trenuj dziś pleców. Bo wczoraj był trening pleców.",
+          "answer": "Nie trenuj dziś pleców, bo wczoraj był trening pleców.",
+          "grammar_point": "przyczyna-skutek",
+          "accept": [
+            "Nie trenuj dziś pleców, ponieważ wczoraj był trening pleców.",
+            "Wczoraj był trening pleców, dlatego nie trenuj dziś pleców.",
+            "Wczoraj był trening pleców, więc nie trenuj dziś pleców."
+          ],
+          "explanation": "„Bo” łączy dwie części jednego zdania — przed nim przecinek, nie kropka."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Fizjoterapeuta powiedział, że mam uszkodzoną związkę w kostce.",
+          "answer": "Fizjoterapeuta powiedział, że mam uszkodzone więzadło w kostce.",
+          "grammar_point": "kalki-uk",
+          "explanation": "зв'язка → więzadło (rodzaj nijaki: uszkodzone)."
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Mam krepaturę w łydkach.",
+          "answer": "Mam zakwasy w łydkach.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "W łydkach mam zakwasy."
+          ]
+        },
+        {
+          "id": "h3-6",
+          "prompt": "Masażysta pracował nad mięśniami mojego pleca.",
+          "answer": "Masażysta pracował nad mięśniami moich pleców.",
+          "grammar_point": "dopelniacz-lm",
+          "accept": [
+            "Masażysta pracował nad moimi mięśniami pleców."
+          ],
+          "explanation": "Plecy — tylko liczba mnoga: moich pleców."
+        }
+      ]
+    }
+  ]
+}
