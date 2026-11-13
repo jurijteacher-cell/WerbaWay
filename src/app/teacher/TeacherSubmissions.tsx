@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useMemo, useState } from 'react';
 import { GradeForm } from './GradeForm';
 
@@ -19,13 +21,14 @@ type Props = {
 };
 
 export function TeacherSubmissions({ submissions, lessonTitles }: Props) {
+  const t = useT();
   const [lessonFilter, setLessonFilter] = useState('all');
   const [studentFilter, setStudentFilter] = useState('all');
 
   const students = useMemo(() => {
     const names = new Map<string, string>();
     for (const s of submissions) {
-      const name = s.profiles?.full_name ?? 'Учень';
+      const name = s.profiles?.full_name ?? t("Учень");
       names.set(name, name);
     }
     return Array.from(names.values()).sort((a, b) => a.localeCompare(b, 'uk'));
@@ -38,7 +41,7 @@ export function TeacherSubmissions({ submissions, lessonTitles }: Props) {
 
   const filtered = useMemo(() => {
     return submissions.filter((s) => {
-      const name = s.profiles?.full_name ?? 'Учень';
+      const name = s.profiles?.full_name ?? t("Учень");
       if (lessonFilter !== 'all' && s.lesson_slug !== lessonFilter) return false;
       if (studentFilter !== 'all' && name !== studentFilter) return false;
       return true;
@@ -58,7 +61,7 @@ export function TeacherSubmissions({ submissions, lessonTitles }: Props) {
             onChange={(e) => setLessonFilter(e.target.value)}
             className="min-w-[12rem] rounded-lg border border-ink-line bg-ink px-3 py-2 text-paper outline-none focus:border-gold"
           >
-            <option value="all">Усі уроки</option>
+            <option value="all">{t("Усі уроки")}</option>
             {lessons.map((l) => (
               <option key={l.slug} value={l.slug}>
                 {l.title}
@@ -73,7 +76,7 @@ export function TeacherSubmissions({ submissions, lessonTitles }: Props) {
             onChange={(e) => setStudentFilter(e.target.value)}
             className="min-w-[12rem] rounded-lg border border-ink-line bg-ink px-3 py-2 text-paper outline-none focus:border-gold"
           >
-            <option value="all">Усі учні</option>
+            <option value="all">{t("Усі учні")}</option>
             {students.map((name) => (
               <option key={name} value={name}>
                 {name}
@@ -86,11 +89,11 @@ export function TeacherSubmissions({ submissions, lessonTitles }: Props) {
       <section className="mb-12">
         <h2 className="mb-4 font-display text-xl text-gold">Очікують перевірки ({pendingReview.length})</h2>
         <div className="flex flex-col gap-4">
-          {pendingReview.length === 0 && <p className="text-paper-muted">Порожньо — усе перевірено.</p>}
+          {pendingReview.length === 0 && <p className="text-paper-muted">{t("Порожньо — усе перевірено.")}</p>}
           {pendingReview.map((s) => (
             <div key={s.id} className="rounded-xl border border-gold/30 bg-ink-raised p-5">
               <p className="text-sm text-paper-muted">
-                {s.profiles?.full_name ?? 'Учень'} · {lessonTitles[s.lesson_slug] ?? s.lesson_slug} · {s.exercise_id}
+                {s.profiles?.full_name ?? t("Учень")} · {lessonTitles[s.lesson_slug] ?? s.lesson_slug} · {s.exercise_id}
               </p>
               <p className="mt-2 text-paper">{s.answer?.text}</p>
               <div className="mt-4">
@@ -104,17 +107,17 @@ export function TeacherSubmissions({ submissions, lessonTitles }: Props) {
       <section>
         <h2 className="mb-4 font-display text-xl text-paper">Уже перевірено ({rest.length})</h2>
         <div className="flex flex-col gap-2">
-          {rest.length === 0 && <p className="text-paper-muted">Немає записів за цими фільтрами.</p>}
+          {rest.length === 0 && <p className="text-paper-muted">{t("Немає записів за цими фільтрами.")}</p>}
           {rest.map((s) => (
             <div
               key={s.id}
               className="flex items-center justify-between rounded-lg border border-ink-line px-4 py-3 text-sm"
             >
               <span className="text-paper-muted">
-                {s.profiles?.full_name ?? 'Учень'} · {lessonTitles[s.lesson_slug] ?? s.lesson_slug} · {s.exercise_id}
+                {s.profiles?.full_name ?? t("Учень")} · {lessonTitles[s.lesson_slug] ?? s.lesson_slug} · {s.exercise_id}
               </span>
               <span className={s.is_correct ? 'text-correct' : 'text-incorrect'}>
-                {s.is_correct ? '✓ вірно' : '✕ невірно'}
+                {s.is_correct ? t("✓ вірно") : t("✕ невірно")}
               </span>
             </div>
           ))}

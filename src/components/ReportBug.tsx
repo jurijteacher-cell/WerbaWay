@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useEffect, useState } from 'react';
 
 /**
@@ -7,6 +9,7 @@ import { useEffect, useState } from 'react';
  * До тексту сама додає адресу сторінки й урок — щоб не питати учня, де саме зламалось.
  */
 export function ReportBug() {
+  const t = useT();
   const [open, setOpen] = useState(false);
   const [text, setText] = useState('');
   const [state, setState] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
@@ -46,15 +49,15 @@ export function ReportBug() {
 
   return (
     <>
-      <button type="button" className="ww-report-btn" onClick={() => setOpen(true)} title="Повідомити про помилку">
+      <button type="button" className="ww-report-btn" onClick={() => setOpen(true)} title={t("Повідомити про помилку")}>
         <span aria-hidden="true">⚑</span>
-        <span className="ww-report-btn-text">Помилка?</span>
+        <span className="ww-report-btn-text">{t("Помилка?")}</span>
       </button>
 
       {open && (
-        <div className="ww-report-back" role="dialog" aria-modal="true" aria-label="Повідомити про помилку">
+        <div className="ww-report-back" role="dialog" aria-modal="true" aria-label={t("Повідомити про помилку")}>
           <div className="ww-report-card">
-            <p className="ww-report-head">Що не так на цій сторінці?</p>
+            <p className="ww-report-head">{t("Що не так на цій сторінці?")}</p>
             <p className="ww-report-sub">
               Напиши своїми словами — що робив і що пішло не так. Адресу сторінки додам сам.
             </p>
@@ -62,12 +65,12 @@ export function ReportBug() {
               className="ww-input ww-report-text"
               value={text}
               onChange={(e) => setText(e.target.value)}
-              placeholder="Напр.: у вправі 3 не зараховує правильну відповідь «chciałbym»"
+              placeholder={t("Напр.: у вправі 3 не зараховує правильну відповідь «chciałbym»")}
               rows={4}
               autoFocus
             />
-            {state === 'error' && <p className="ww-report-err">Не вдалось надіслати. Спробуй ще раз.</p>}
-            {state === 'sent' && <p className="ww-report-ok">Дякую, надіслано.</p>}
+            {state === 'error' && <p className="ww-report-err">{t("Не вдалось надіслати. Спробуй ще раз.")}</p>}
+            {state === 'sent' && <p className="ww-report-ok">{t("Дякую, надіслано.")}</p>}
             <div className="ww-report-row">
               <button type="button" className="ww-btn ww-btn-ghost ww-btn-sm" onClick={() => setOpen(false)}>
                 Закрити
@@ -78,7 +81,7 @@ export function ReportBug() {
                 onClick={send}
                 disabled={!text.trim() || state === 'sending' || state === 'sent'}
               >
-                {state === 'sending' ? 'Надсилаю…' : 'Надіслати'}
+                {state === 'sending' ? t("Надсилаю…") : t("Надіслати")}
               </button>
             </div>
           </div>

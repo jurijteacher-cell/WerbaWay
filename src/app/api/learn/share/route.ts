@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 import { loadPage } from '@/lib/pages/pages';
 import { randomBytes } from 'crypto';
+import { t as tr } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
 
@@ -43,7 +44,7 @@ export async function GET(req: Request) {
       const mine = (grants ?? []).filter((g) => g.student_id === p.id);
       const lesson = mine.some((g) => g.kind === 'lesson' && g.ref === slug);
       const viaCourse = !!page.meta.module && mine.some((g) => g.kind === 'module' && g.ref === page.meta.module);
-      return { id: p.id as string, name: (p.full_name as string) || 'Учень без імені', lesson, viaCourse, done: doneSet.has(p.id as string) };
+      return { id: p.id as string, name: (p.full_name as string) || tr("Учень без імені"), lesson, viaCourse, done: doneSet.has(p.id as string) };
     })
     .sort((a, b) => a.name.localeCompare(b.name, 'uk'));
 

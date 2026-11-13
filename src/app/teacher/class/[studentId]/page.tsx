@@ -6,6 +6,7 @@ import { EMPTY_ROOM, type RoomState } from '@/lib/class/protocol';
 import { listPublishedLessonIds } from '@/content/queue-loader';
 import { lessonTitle } from '@/lib/lesson-titles';
 import { groupByCourse, listPages } from '@/lib/pages/pages';
+import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
 
@@ -37,7 +38,7 @@ export default async function TeacherClassPage({ params }: { params: { studentId
       </div>
       <ClassTeacher
         studentId={student.id as string}
-        studentName={(student.full_name as string | null) || 'Учень'}
+        studentName={(student.full_name as string | null) || t("Учень")}
         lessons={lessons}
         pages={pages}
         initialRoom={(room as RoomState | null) ?? EMPTY_ROOM}

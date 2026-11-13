@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { requireTeacher } from '../../results/requireTeacher';
 import { fmt, pctClass } from '../../results/format';
 import type { ItemResult, SectionResult, TaskResult, WritingResult } from '@/lib/mock-exam/core';
+import { t as tr } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
 
@@ -41,7 +42,7 @@ const num = (n: number | string) => {
 function ItemRow({ r }: { r: ItemResult }) {
   const tone =
     r.status === 'ok' ? 'border-correct/50' : r.status === 'check' ? 'border-gold/60' : 'border-incorrect/60';
-  const given = r.status === 'empty' || !r.given ? '— (без відповіді)' : r.given;
+  const given = r.status === 'empty' || !r.given ? tr("— (без відповіді)") : r.given;
   const givenCls =
     r.status === 'ok' ? 'text-correct' : r.status === 'check' ? 'text-gold' : 'text-incorrect';
   return (
@@ -51,16 +52,16 @@ function ItemRow({ r }: { r: ItemResult }) {
         {r.label}
       </p>
       <p className="mt-0.5">
-        <span className="text-xs text-paper-muted">учень: </span>
+        <span className="text-xs text-paper-muted">{tr("учень:")} </span>
         <span className={givenCls}>{given}</span>
         {r.status !== 'ok' ? (
           <>
             <span className="mx-2 text-paper-muted">→</span>
-            <span className="text-xs text-paper-muted">{r.status === 'check' ? 'зразок: ' : 'правильно: '}</span>
+            <span className="text-xs text-paper-muted">{r.status === 'check' ? tr("зразок: ") : tr("правильно: ")}</span>
             <span className="text-correct">{r.expected}</span>
           </>
         ) : null}
-        {r.status === 'check' ? <span className="ml-2 text-xs text-gold">перевірити вручну</span> : null}
+        {r.status === 'check' ? <span className="ml-2 text-xs text-gold">{tr("перевірити вручну")}</span> : null}
         {r.note ? <span className="ml-2 text-xs text-paper-muted">({r.note})</span> : null}
       </p>
     </li>
@@ -103,30 +104,30 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
     <main className="mx-auto max-w-5xl px-4 py-16">
       <p className="mb-2 text-sm">
         <Link href={backHref} className="text-paper-muted hover:text-gold">
-          ← {student ? studentName : 'Аналітика'}
+          ← {student ? studentName : tr("Аналітика")}
         </Link>
       </p>
       <h1 className="font-display text-3xl text-paper">{row.exam_label ?? row.lesson_id}</h1>
       <p className="mt-1 text-sm text-paper-muted">
-        {studentName ?? 'Учень'} · {fmt(row.created_at)}
+        {studentName ?? tr("Учень")} · {fmt(row.created_at)}
         {row.minutes ? ` · ${num(row.minutes)} хв` : ''}
       </p>
 
       <section className="mt-8 grid gap-3 sm:grid-cols-4">
         <div className="rounded-xl border border-ink-line bg-ink-raised p-4">
-          <p className="text-xs uppercase tracking-wider text-paper-muted">Бали</p>
+          <p className="text-xs uppercase tracking-wider text-paper-muted">{tr("Бали")}</p>
           <p className="mt-1 font-display text-3xl text-paper">
             {num(row.total)}/{num(row.max_total)}
           </p>
         </div>
         <div className="rounded-xl border border-ink-line bg-ink-raised p-4">
-          <p className="text-xs uppercase tracking-wider text-paper-muted">Результат</p>
+          <p className="text-xs uppercase tracking-wider text-paper-muted">{tr("Результат")}</p>
           <p className={`mt-1 font-display text-3xl ${row.passed ? 'text-correct' : 'text-incorrect'}`}>
             {row.level ?? (row.passed ? 'zdane' : 'poniżej progu')}
           </p>
         </div>
         <div className="rounded-xl border border-ink-line bg-ink-raised p-4">
-          <p className="text-xs uppercase tracking-wider text-paper-muted">Помилок</p>
+          <p className="text-xs uppercase tracking-wider text-paper-muted">{tr("Помилок")}</p>
           <p className={`mt-1 font-display text-3xl ${wrongCount + emptyCount ? 'text-incorrect' : 'text-correct'}`}>
             {hasDetail ? wrongCount + emptyCount : '—'}
           </p>
@@ -135,7 +136,7 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
           ) : null}
         </div>
         <div className="rounded-xl border border-ink-line bg-ink-raised p-4">
-          <p className="text-xs uppercase tracking-wider text-paper-muted">Перевірити вручну</p>
+          <p className="text-xs uppercase tracking-wider text-paper-muted">{tr("Перевірити вручну")}</p>
           <p className={`mt-1 font-display text-3xl ${row.score?.pending ? 'text-gold' : 'text-paper'}`}>
             {row.score?.pending ?? 0}
           </p>
@@ -145,7 +146,7 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
 
       {sections.length > 0 && (
         <section className="mt-8">
-          <h2 className="mb-3 font-display text-xl text-paper">Секції</h2>
+          <h2 className="mb-3 font-display text-xl text-paper">{tr("Секції")}</h2>
           <div className="overflow-x-auto rounded-xl border border-ink-line">
             <table className="w-full text-left text-sm">
               <tbody>
@@ -155,7 +156,7 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
                     <tr key={s.id} className="border-t border-ink-line first:border-t-0">
                       <td className="px-4 py-3 text-paper">{s.title}</td>
                       <td className="px-4 py-3 font-mono text-paper">
-                        {s.manual ? (s.manual_points ? `макс. ${s.manual_points} (вручну)` : 'вручну') : `${num(s.points)}/${num(s.max)}`}
+                        {s.manual ? (s.manual_points ? `макс. ${s.manual_points} (вручну)` : tr("вручну")) : `${num(s.points)}/${num(s.max)}`}
                       </td>
                       <td className={`px-4 py-3 font-mono ${s.manual ? 'text-paper-muted' : pctClass(p)}`}>
                         {s.manual || p == null ? '' : `${p}%`}
@@ -186,7 +187,7 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
 
       {hasDetail && (
         <section className="mt-10">
-          <h2 className="mb-1 font-display text-xl text-paper">Помилки по завданнях</h2>
+          <h2 className="mb-1 font-display text-xl text-paper">{tr("Помилки по завданнях")}</h2>
           <p className="mb-4 text-xs text-paper-muted">
             Червоне — неправильно або порожньо, золоте — відкрита відповідь для ручної перевірки. Правильні відповіді
             згорнуті під кожним завданням.
@@ -217,7 +218,7 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
                               </span>
                             </p>
                             {bad.length === 0 ? (
-                              <p className="mt-2 text-sm text-correct">Без помилок</p>
+                              <p className="mt-2 text-sm text-correct">{tr("Без помилок")}</p>
                             ) : (
                               <ul className="mt-3 flex flex-col gap-2.5 text-sm">
                                 {bad.map((r) => (
@@ -250,7 +251,7 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
 
       {(score.weak?.length ?? 0) > 0 && (
         <section className="mt-10">
-          <h2 className="mb-3 font-display text-xl text-paper">Слабкі теми</h2>
+          <h2 className="mb-3 font-display text-xl text-paper">{tr("Слабкі теми")}</h2>
           <div className="flex flex-wrap gap-2">
             {score.weak!.map((w) => (
               <span key={w} className="rounded-lg border border-ink-line bg-ink-raised px-3 py-1.5 text-sm text-paper">
@@ -263,9 +264,9 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
 
       {hasDetail && (
         <section className="mt-10">
-          <h2 className="mb-3 font-display text-xl text-paper">Письмові тексти</h2>
+          <h2 className="mb-3 font-display text-xl text-paper">{tr("Письмові тексти")}</h2>
           {writing.length === 0 || writing.every((w) => !w.parts.some((p) => p.text)) ? (
-            <p className="text-sm text-paper-muted">Учень не написав жодного тексту.</p>
+            <p className="text-sm text-paper-muted">{tr("Учень не написав жодного тексту.")}</p>
           ) : (
             <div className="flex flex-col gap-5">
               {writing.map((w) =>
@@ -290,7 +291,7 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
                               {p.prompt}
                             </p>
                             <p className="mt-2 whitespace-pre-wrap rounded-lg bg-ink-soft p-3 text-sm leading-relaxed text-paper">
-                              {p.text || '— (немає тексту)'}
+                              {p.text || tr("— (немає тексту)")}
                             </p>
                           </div>
                         );

@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 
@@ -12,6 +14,7 @@ type Tab = 'student' | 'link';
  *  • за посиланням — /s/<токен>, відкривається без входу й реєстрації.
  */
 export function ShareButton({ slug, title, compact }: { slug: string; title: string; compact?: boolean }) {
+  const t = useT();
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -24,10 +27,10 @@ export function ShareButton({ slug, title, compact }: { slug: string; title: str
         }}
         className={compact ? 'ww-share-fab' : 'ww-btn ww-btn-secondary ww-btn-sm'}
         aria-label={`Поділитися лекцією «${title}»`}
-        title="Поділитися"
+        title={t("Поділитися")}
       >
         <ShareIcon />
-        {!compact && <span>Поділитися</span>}
+        {!compact && <span>{t("Поділитися")}</span>}
       </button>
       {open && createPortal(<ShareDialog slug={slug} title={title} onClose={() => setOpen(false)} />, document.body)}
     </>
@@ -35,6 +38,7 @@ export function ShareButton({ slug, title, compact }: { slug: string; title: str
 }
 
 function ShareDialog({ slug, title, onClose }: { slug: string; title: string; onClose: () => void }) {
+  const t = useT();
   const [tab, setTab] = useState<Tab>('student');
   const [data, setData] = useState<{ link: { url: string; opens: number } | null; students: Student[] } | null>(null);
   const [linkBusy, setLinkBusy] = useState(false);
@@ -49,7 +53,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
     fetch(`/api/learn/share?slug=${encodeURIComponent(slug)}`)
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
       .then((d) => alive && setData(d))
-      .catch(() => alive && setErr('Не вдалося завантажити учнів. Оновіть сторінку й спробуйте ще раз.'));
+      .catch(() => alive && setErr(t("Не вдалося завантажити учнів. Оновіть сторінку й спробуйте ще раз.")));
     return () => {
       alive = false;
     };
@@ -83,7 +87,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
       body: JSON.stringify({ slug, studentId: s.id, on }),
     }).catch(() => null);
     setBusy(null);
-    if (!r?.ok) return setErr('Не вдалося зберегти. Спробуйте ще раз.');
+    if (!r?.ok) return setErr(t("Не вдалося зберегти. Спробуйте ще раз."));
     setData((d) => d && { ...d, students: d.students.map((x) => (x.id === s.id ? { ...x, lesson: on } : x)) });
   }
 
@@ -96,7 +100,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
       body: JSON.stringify({ slug, link: action }),
     }).catch(() => null);
     setLinkBusy(false);
-    if (!r?.ok) return setErr('Не вдалося змінити посилання. Спробуйте ще раз.');
+    if (!r?.ok) return setErr(t("Не вдалося змінити посилання. Спробуйте ще раз."));
     const d = (await r.json()) as { link: { url: string; opens: number } | null };
     setData((x) => x && { ...x, link: d.link });
   }
@@ -124,7 +128,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
             </h2>
             <p className="truncate text-sm text-paper-muted">{title}</p>
           </div>
-          <button type="button" onClick={onClose} className="ww-btn ww-btn-ghost ww-btn-sm" aria-label="Закрити">
+          <button type="button" onClick={onClose} className="ww-btn ww-btn-ghost ww-btn-sm" aria-label={t("Закрити")}>
             ✕
           </button>
         </div>
@@ -132,8 +136,8 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
         <div className="flex gap-1 px-5 pt-3" role="tablist">
           {(
             [
-              ['student', 'Учню'],
-              ['link', 'За посиланням'],
+              ['student', t("Учню")],
+              ['link', t("За посиланням")],
             ] as const
           ).map(([k, label]) => (
             <button
@@ -153,18 +157,18 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
 
         {tab === 'student' ? (
           <div className="px-5 pb-5 pt-3">
-            <p className="mb-3 text-sm text-paper-muted">Лекція одразу з’явиться в розділі «Курс» учня.</p>
+            <p className="mb-3 text-sm text-paper-muted">{t("Лекція одразу з’явиться в розділі «Курс» учня.")}</p>
             <input
               value={q}
               onChange={(e) => setQ(e.target.value)}
-              placeholder="Знайти учня"
+              placeholder={t("Знайти учня")}
               className="mb-3 w-full rounded-xl border border-ink-line bg-ink-raised px-3 py-2 text-sm outline-none focus:border-gold"
             />
             <div className="max-h-[46vh] overflow-y-auto pr-1">
-              {!data && !err && <p className="py-6 text-center text-sm text-paper-muted">Завантажую учнів…</p>}
+              {!data && !err && <p className="py-6 text-center text-sm text-paper-muted">{t("Завантажую учнів…")}</p>}
               {data && list.length === 0 && (
                 <p className="py-6 text-center text-sm text-paper-muted">
-                  {data.students.length ? 'Нікого не знайдено.' : 'Ще немає учнів з акаунтом. Надішліть посилання.'}
+                  {data.students.length ? t("Нікого не знайдено.") : t("Ще немає учнів з акаунтом. Надішліть посилання.")}
                 </p>
               )}
               <ul className="space-y-1">
@@ -175,11 +179,11 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
                       <span className="min-w-0 flex-1">
                         <span className="block truncate text-sm text-paper">{s.name}</span>
                         <span className="block text-xs text-paper-muted">
-                          {s.done ? 'пройдено разом' : s.viaCourse ? 'відкрито через курс' : s.lesson ? 'відкрито' : 'ще не відкрито'}
+                          {s.done ? t("пройдено разом") : s.viaCourse ? t("відкрито через курс") : s.lesson ? t("відкрито") : t("ще не відкрито")}
                         </span>
                       </span>
                       {s.viaCourse && !s.lesson ? (
-                        <span className="text-xs font-medium text-correct">✓ курс</span>
+                        <span className="text-xs font-medium text-correct">{t("✓ курс")}</span>
                       ) : (
                         <button
                           type="button"
@@ -187,7 +191,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
                           onClick={() => void toggle(s)}
                           className={`ww-btn ww-btn-sm ${has ? 'ww-btn-success' : 'ww-btn-primary'}`}
                         >
-                          {busy === s.id ? '…' : s.lesson ? '✓ Відкрито' : 'Відкрити'}
+                          {busy === s.id ? '…' : s.lesson ? t("✓ Відкрито") : t("Відкрити")}
                         </button>
                       )}
                     </li>
@@ -203,10 +207,10 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
               якщо учень увійде в акаунт.
             </p>
             {!data ? (
-              <p className="py-4 text-center text-sm text-paper-muted">Завантажую…</p>
+              <p className="py-4 text-center text-sm text-paper-muted">{t("Завантажую…")}</p>
             ) : !data.link ? (
               <button type="button" disabled={linkBusy} onClick={() => void linkAction('create')} className="ww-btn ww-btn-primary">
-                {linkBusy ? 'Створюю…' : 'Створити посилання'}
+                {linkBusy ? t("Створюю…") : t("Створити посилання")}
               </button>
             ) : (
               <>
@@ -219,11 +223,11 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
                     className="min-w-0 flex-1 rounded-xl border border-ink-line bg-ink-soft px-3 py-2 text-sm text-paper"
                   />
                   <button type="button" onClick={() => void copy()} className="ww-btn ww-btn-primary ww-btn-sm">
-                    {copied ? 'Скопійовано ✓' : 'Копіювати'}
+                    {copied ? t("Скопійовано ✓") : t("Копіювати")}
                   </button>
                 </div>
                 <p className="mt-2 text-xs text-paper-muted">
-                  {data.link.opens ? `Відкрили ${data.link.opens} раз(и)` : 'Ще ніхто не відкривав'}
+                  {data.link.opens ? `Відкрили ${data.link.opens} раз(и)` : t("Ще ніхто не відкривав")}
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <a href={url} target="_blank" rel="noreferrer" className="ww-btn ww-btn-ghost ww-btn-sm">
@@ -243,7 +247,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
                     disabled={linkBusy}
                     onClick={() => void linkAction('revoke')}
                     className="ww-btn ww-btn-danger ww-btn-sm ml-auto"
-                    title="Старе посилання перестане відкриватися"
+                    title={t("Старе посилання перестане відкриватися")}
                   >
                     Вимкнути посилання
                   </button>

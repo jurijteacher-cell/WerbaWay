@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useEffect, useMemo, useState } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import type { Lesson } from '@/content/types';

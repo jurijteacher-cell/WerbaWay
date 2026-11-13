@@ -1,11 +1,12 @@
 import { notFound } from 'next/navigation';
 import { getQueueBundle } from '@/content/queue-loader';
+import { getLocale } from '@/i18n/server';
 import { HomeworkEmbed } from '@/components/exercises/HomeworkEmbed';
 
 type Props = { params: { lessonId: string } };
 
 export default function EmbedHwPage({ params }: Props) {
-  const bundle = getQueueBundle(params.lessonId);
+  const bundle = getQueueBundle(params.lessonId, getLocale());
   if (!bundle) notFound();
   return <HomeworkEmbed data={bundle.hw} />;
 }

@@ -104,12 +104,17 @@ export type MockExam = {
   sections: MockSection[];
 };
 
+import { localizeExercise } from '@/lib/content-locale';
+import { DEFAULT_LOCALE, type Locale } from '@/i18n/config';
+
 const ROOT = path.join(process.cwd(), 'src/content/queue-published');
 
-export function loadMockExam(lessonId: string): MockExam | null {
-  const full = path.join(ROOT, `${path.basename(lessonId)}-mock.json`);
+export function loadMockExam(lessonId: string, locale: Locale = DEFAULT_LOCALE): MockExam | null {
+  const file = `${path.basename(lessonId)}-mock.json`;
+  const full = path.join(ROOT, file);
   if (!existsSync(full)) return null;
-  return JSON.parse(readFileSync(full, 'utf8')) as MockExam;
+  // польські завдання лишаються польськими — мовою йдуть лише інструкції й підказки
+  return localizeExercise(file, JSON.parse(readFileSync(full, 'utf8')) as MockExam, locale);
 }
 
 /** Client-safe copy: no answer / accept / model on scored items (examples keep theirs). */

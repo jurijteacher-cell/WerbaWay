@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { requireTeacher } from '../results/requireTeacher';
 import { dayKey, fetchAttempts, fmtDate, pct, pctClass, summarize, type MockRow } from '@/lib/analytics';
 import { Kpi, Section, WeakList } from '@/components/dashboard/parts';
+import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
 
@@ -72,7 +73,7 @@ export default async function TeacherAnalyticsPage() {
           ← Кабінет
         </Link>
       </p>
-      <h1 className="mb-2 font-display text-3xl text-paper">Аналітика класу</h1>
+      <h1 className="mb-2 font-display text-3xl text-paper">{t("Аналітика класу")}</h1>
       <p className="mb-8 text-sm text-paper-muted">
         Дані з вправ у Notion за останні 60 днів; «тиждень» — останні 7 днів. % — правильно з першої спроби.{' '}
         <Link href="/teacher/results" className="text-gold hover:underline">
@@ -81,30 +82,30 @@ export default async function TeacherAnalyticsPage() {
       </p>
 
       <div className="mb-8 grid grid-cols-2 gap-3 md:grid-cols-4">
-        <Kpi label="Активні за тиждень" value={`${active}/${rows.length}`} hint="учнів із відповідями" />
-        <Kpi label="Перевірок за тиждень" value={classWeek.attempts} />
+        <Kpi label={t("Активні за тиждень")} value={`${active}/${rows.length}`} hint={t("учнів із відповідями")} />
+        <Kpi label={t("Перевірок за тиждень")} value={classWeek.attempts} />
         <Kpi
-          label="З першої (тиждень)"
+          label={t("З першої (тиждень)")}
           value={classWeek.accuracy == null ? '—' : `${classWeek.accuracy}%`}
           tone={pctClass(classWeek.accuracy)}
         />
-        <Kpi label="Без активності 7+ днів" value={inactive.length} tone={inactive.length ? 'text-incorrect' : 'text-paper'} />
+        <Kpi label={t("Без активності 7+ днів")} value={inactive.length} tone={inactive.length ? 'text-incorrect' : 'text-paper'} />
       </div>
 
-      <Section title="Учні">
+      <Section title={t("Учні")}>
         {rows.length === 0 ? (
-          <p className="text-sm text-paper-muted">Поки нікого.</p>
+          <p className="text-sm text-paper-muted">{t("Поки нікого.")}</p>
         ) : (
           <div className="overflow-x-auto rounded-xl border border-ink-line">
             <table className="w-full text-left text-sm">
               <thead className="bg-ink-raised text-paper-muted">
                 <tr>
-                  <th className="px-4 py-3 font-normal">Учень</th>
-                  <th className="px-4 py-3 font-normal">Тиждень: перевірок</th>
-                  <th className="px-4 py-3 font-normal">Днів</th>
-                  <th className="px-4 py-3 font-normal">З першої (тиждень)</th>
-                  <th className="px-4 py-3 font-normal">З першої (всього)</th>
-                  <th className="px-4 py-3 font-normal">Остання активність</th>
+                  <th className="px-4 py-3 font-normal">{t("Учень")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Тиждень: перевірок")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Днів")}</th>
+                  <th className="px-4 py-3 font-normal">{t("З першої (тиждень)")}</th>
+                  <th className="px-4 py-3 font-normal">{t("З першої (всього)")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Остання активність")}</th>
                 </tr>
               </thead>
               <tbody>
@@ -114,7 +115,7 @@ export default async function TeacherAnalyticsPage() {
                       <Link href={`/teacher/results/${s.id}`} className="text-paper hover:text-gold">
                         {s.name}
                       </Link>
-                      {!s.user_id ? <p className="text-xs text-paper-muted">ще без акаунта</p> : null}
+                      {!s.user_id ? <p className="text-xs text-paper-muted">{t("ще без акаунта")}</p> : null}
                     </td>
                     <td className="px-4 py-3 text-paper">{n7 || '—'}</td>
                     <td className="px-4 py-3 text-paper-muted">{days7 || '—'}</td>
@@ -129,23 +130,23 @@ export default async function TeacherAnalyticsPage() {
         )}
       </Section>
 
-      <Section title="Слабкі теми класу">
+      <Section title={t("Слабкі теми класу")}>
         <WeakList weak={classAll.weak} />
       </Section>
 
-      <Section title="Пробні іспити">
+      <Section title={t("Пробні іспити")}>
         {!mockRows || mockRows.length === 0 ? (
-          <p className="text-sm text-paper-muted">Ще немає результатів, збережених в акаунтах.</p>
+          <p className="text-sm text-paper-muted">{t("Ще немає результатів, збережених в акаунтах.")}</p>
         ) : (
           <div className="overflow-x-auto rounded-xl border border-ink-line">
             <table className="w-full text-left text-sm">
               <thead className="bg-ink-raised text-paper-muted">
                 <tr>
-                  <th className="px-4 py-3 font-normal">Учень</th>
-                  <th className="px-4 py-3 font-normal">Іспит</th>
-                  <th className="px-4 py-3 font-normal">Бали</th>
-                  <th className="px-4 py-3 font-normal">Результат</th>
-                  <th className="px-4 py-3 font-normal">Коли</th>
+                  <th className="px-4 py-3 font-normal">{t("Учень")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Іспит")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Бали")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Результат")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Коли")}</th>
                   <th className="px-4 py-3 font-normal"></th>
                 </tr>
               </thead>

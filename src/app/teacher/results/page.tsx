@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { requireTeacher } from './requireTeacher';
 import { fmt, pct, pctClass } from './format';
+import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
 
@@ -44,9 +45,9 @@ export default async function ResultsPage({ searchParams }: { searchParams?: { a
           ← Кабінет
         </Link>
       </p>
-      <h1 className="mb-2 font-display text-3xl text-paper">Результати учнів</h1>
+      <h1 className="mb-2 font-display text-3xl text-paper">{t("Результати учнів")}</h1>
       <p className="mb-8 text-sm text-paper-muted">
-        Усі «Sprawdź» з ембедів у Notion (граматика, домашка, egzamin). % — правильно з першої спроби. Учні реєструються самі на сайті; <Link href="/teacher/analytics" className="text-gold hover:underline">аналітика класу →</Link>
+        Усі «Sprawdź» з ембедів у Notion (граматика, домашка, egzamin). % — правильно з першої спроби. Учні реєструються самі на сайті; <Link href="/teacher/analytics" className="text-gold hover:underline">{t("аналітика класу →")}</Link>
       </p>
 
       {error && (
@@ -57,28 +58,28 @@ export default async function ResultsPage({ searchParams }: { searchParams?: { a
 
       <section>
         <div className="mb-3 flex items-baseline justify-between">
-          <h2 className="font-display text-xl text-paper">{showArchived ? 'Архів' : 'Учні'}</h2>
+          <h2 className="font-display text-xl text-paper">{showArchived ? t("Архів") : t("Учні")}</h2>
           <Link
             href={showArchived ? '/teacher/results' : '/teacher/results?archived=1'}
             className="text-sm text-paper-muted hover:text-gold"
           >
-            {showArchived ? 'Активні →' : 'Архів →'}
+            {showArchived ? t("Активні →") : t("Архів →")}
           </Link>
         </div>
 
         {rows.length === 0 ? (
-          <p className="text-sm text-paper-muted">Поки нікого.</p>
+          <p className="text-sm text-paper-muted">{t("Поки нікого.")}</p>
         ) : (
           <div className="overflow-x-auto rounded-xl border border-ink-line">
             <table className="w-full text-left text-sm">
               <thead className="bg-ink-raised text-paper-muted">
                 <tr>
-                  <th className="px-4 py-3 font-normal">Учень</th>
-                  <th className="px-4 py-3 font-normal">Акаунт</th>
-                  <th className="px-4 py-3 font-normal">Уроків</th>
-                  <th className="px-4 py-3 font-normal">З першої спроби</th>
-                  <th className="px-4 py-3 font-normal">Письмо</th>
-                  <th className="px-4 py-3 font-normal">Остання активність</th>
+                  <th className="px-4 py-3 font-normal">{t("Учень")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Акаунт")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Уроків")}</th>
+                  <th className="px-4 py-3 font-normal">{t("З першої спроби")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Письмо")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Остання активність")}</th>
                 </tr>
               </thead>
               <tbody>
@@ -91,7 +92,7 @@ export default async function ResultsPage({ searchParams }: { searchParams?: { a
                       {r.note ? <p className="text-xs text-paper-muted">{r.note}</p> : null}
                                           </td>
                     <td className="px-4 py-3 text-xs text-paper-muted">
-                      {r.user_id ? '✓ акаунт' : r.code ? <span className="font-mono text-gold">{r.code} · старий код</span> : '—'}
+                      {r.user_id ? t("✓ акаунт") : r.code ? <span className="font-mono text-gold">{r.code} · старий код</span> : '—'}
                     </td>
                     <td className="px-4 py-3 text-paper">{r.lessons}</td>
                     <td className="px-4 py-3">

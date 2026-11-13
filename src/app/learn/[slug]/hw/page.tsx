@@ -1,6 +1,7 @@
 import { notFound, redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { loadPage } from '@/lib/pages/pages';
+import { getLocale } from '@/i18n/server';
 import { canSee, getAccess } from '@/lib/pages/access';
 import { LessonView } from '@/components/lesson/LessonView';
 
@@ -13,7 +14,7 @@ export default async function HomeworkPage({ params }: { params: { slug: string 
   } = await supabase.auth.getUser();
   if (!user) redirect(`/login?next=/learn/${params.slug}/hw`);
 
-  const page = loadPage(params.slug);
+  const page = loadPage(params.slug, getLocale());
   if (!page || !page.hasHomework) notFound();
 
   const { data: row } = await supabase

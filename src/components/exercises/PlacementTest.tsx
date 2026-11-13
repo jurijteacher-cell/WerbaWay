@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { clearProgress, loadProgress, saveProgress } from '@/lib/embed-progress';
 import { ResetControl, RestoredNote } from './nb-ui';
+import { useLocale, withLang, useT } from '@/i18n/client';
 
 type PublicItem = {
   id: string;
@@ -84,6 +85,8 @@ function insertAtCursor(
 type Props = { lessonId: string; introMd?: { title: string; bodyHtml?: string } };
 
 export function PlacementTest({ lessonId }: Props) {
+  const t = useT();
+  const locale = useLocale();
   const [test, setTest] = useState<PublicTest | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [imie, setImie] = useState('');
@@ -180,16 +183,16 @@ export function PlacementTest({ lessonId }: Props) {
   }, []);
 
   useEffect(() => {
-    fetch(`/api/placement/${lessonId}`)
+    fetch(withLang(`/api/placement/${lessonId}`, locale))
       .then(async (r) => {
         if (!r.ok) throw new Error('load failed');
         return r.json();
       })
       .then((data: PublicTest) => setTest(data))
       .catch(() => setLoadError('Nie udało się wczytać testu.'));
-  }, [lessonId]);
+  }, [lessonId, locale]);
 
-  const dontKnow = test?.scoring.dont_know_option ?? 'Nie wiem / Не знаю';
+  const dontKnow = test?.scoring.dont_know_option ?? t("Nie wiem / Не знаю");
 
   const writingPrompt = test?.blocks.find((b) => b.part === 'pisanie')?.variants?.[
     writingVariant
@@ -222,7 +225,7 @@ export function PlacementTest({ lessonId }: Props) {
     }
     setBusy(true);
     try {
-      const res = await fetch(`/api/placement/${lessonId}/level`, {
+      const res = await fetch(withLang(`/api/placement/${lessonId}/level`, locale), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -257,7 +260,7 @@ export function PlacementTest({ lessonId }: Props) {
     setBusy(true);
     try {
       const minutes = (Date.now() - startedAt) / 60000;
-      const res = await fetch(`/api/placement/${lessonId}/finish`, {
+      const res = await fetch(withLang(`/api/placement/${lessonId}/finish`, locale), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

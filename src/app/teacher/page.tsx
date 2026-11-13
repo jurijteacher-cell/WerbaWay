@@ -4,6 +4,7 @@ import { createClient } from '@/lib/supabase/server';
 import { lessons } from '@/content/lessons';
 import { lectures } from '@/content/lectures';
 import { TeacherSubmissions } from './TeacherSubmissions';
+import { t } from '@/i18n/server';
 
 export default async function TeacherPage() {
   const supabase = createClient();
@@ -43,7 +44,7 @@ export default async function TeacherPage() {
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-16">
-      <h1 className="mb-8 font-display text-3xl text-paper">Кабінет викладача</h1>
+      <h1 className="mb-8 font-display text-3xl text-paper">{t("Кабінет викладача")}</h1>
 
       <section className="mb-12 flex flex-wrap gap-3">
         <Link href="/teacher/class" className="ww-btn ww-btn-primary ww-btn-lg">
@@ -66,7 +67,7 @@ export default async function TeacherPage() {
       {error && <p className="text-incorrect">Помилка завантаження: {error.message}</p>}
 
       <section className="mb-12">
-        <h2 className="mb-4 font-display text-xl text-paper">Інтерактивні лекції наживо</h2>
+        <h2 className="mb-4 font-display text-xl text-paper">{t("Інтерактивні лекції наживо")}</h2>
         <div className="flex flex-wrap gap-2">
           {lectures.map((lecture) => (
             <Link
@@ -77,7 +78,7 @@ export default async function TeacherPage() {
               {lecture.title} →
             </Link>
           ))}
-          {lectures.length === 0 && <p className="text-sm text-paper-muted">Ще немає жодної лекції.</p>}
+          {lectures.length === 0 && <p className="text-sm text-paper-muted">{t("Ще немає жодної лекції.")}</p>}
         </div>
       </section>
 

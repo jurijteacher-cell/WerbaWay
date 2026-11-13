@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import 'rrweb/dist/style.css';
 import {
@@ -55,6 +57,7 @@ type Rep = {
 
 /** Teacher side: pick a lesson, move the student in, watch the student's screen live and click on it. */
 export function ClassTeacher({ studentId, studentName, lessons, pages, initialRoom }: Props) {
+  const t = useT();
   const [room, setRoom] = useState<RoomState>(initialRoom);
   const [lessonId, setLessonId] = useState(isCourseRoom(initialRoom) ? lessons[0]?.id ?? '' : initialRoom.lesson_id ?? lessons[0]?.id ?? '');
   const [embed, setEmbed] = useState(isCourseRoom(initialRoom) ? 'slides' : initialRoom.embed ?? 'slides');
@@ -198,7 +201,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
         if (!focusId.current) setCaret(null);
         setHit(
           m.ok
-            ? `клік → ${m.tag ?? '?'}${m.deep ? ' у вправі' : ''}`
+            ? `клік → ${m.tag ?? '?'}${m.deep ? t(" у вправі") : ''}`
             : `клік не знайшов елемент${m.tag ? ` (${m.tag})` : ''}`
         );
         return;
@@ -433,7 +436,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
       setErr(error.message);
       return;
     }
-    setDone(course.hasHomework ? 'Лекцію завершено, домашку задано.' : 'Лекцію завершено (домашки в цьому уроці немає).');
+    setDone(course.hasHomework ? t("Лекцію завершено, домашку задано.") : t("Лекцію завершено (домашки в цьому уроці немає)."));
   }
 
   const enter = () =>
@@ -570,22 +573,22 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
   }
 
   const where = !student
-    ? 'не в мережі'
+    ? t("не в мережі")
     : student.mode === 'class'
-      ? 'у класі'
+      ? t("у класі")
       : student.mode === 'site'
-        ? 'на сайті'
-        : 'у залі очікування';
+        ? t("на сайті")
+        : t("у залі очікування");
   const dot = !student ? 'bg-paper-muted' : student.mode === 'class' ? 'bg-correct' : 'bg-gold-fill';
 
   const zoomControls = (
           <div className="ww-zoom">
-            <span className="ww-zoom-label">Масштаб</span>
+            <span className="ww-zoom-label">{t("Масштаб")}</span>
             <button
               type="button"
               onClick={() => setZoom((z) => Math.max(ZOOM_MIN, (typeof z === 'number' ? z : zoomNow()) / ZOOM_STEP))}
               className="ww-btn ww-btn-secondary ww-btn-sm"
-              aria-label="Зменшити"
+              aria-label={t("Зменшити")}
             >
               −
             </button>
@@ -593,7 +596,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
               type="button"
               onClick={() => setZoom((z) => Math.min(ZOOM_MAX, (typeof z === 'number' ? z : zoomNow()) * ZOOM_STEP))}
               className="ww-btn ww-btn-secondary ww-btn-sm"
-              aria-label="Збільшити"
+              aria-label={t("Збільшити")}
             >
               +
             </button>
@@ -601,7 +604,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
               type="button"
               onClick={() => setZoom('fit')}
               className={`ww-btn ww-btn-sm ${zoom === 'fit' ? 'ww-btn-primary' : 'ww-btn-secondary'}`}
-              title="Як на екрані учня"
+              title={t("Як на екрані учня")}
             >
               як в учня
             </button>
@@ -622,7 +625,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     if (!inBig && showPrimary)
       list.push({
         id: 'enter',
-        label: room.active ? 'Перейти' : 'У клас',
+        label: room.active ? t("Перейти") : t("У клас"),
         node: (
           <button
             type="button"
@@ -630,42 +633,42 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             disabled={busy || (courseSlug ? !course : !lessonId)}
             className="ww-btn ww-btn-primary ww-btn-sm"
           >
-            {room.active ? 'Перейти сюди' : 'У клас'}
+            {room.active ? t("Перейти сюди") : t("У клас")}
           </button>
         ),
       });
     if (pult && hit)
       list.push({
         id: 'hit',
-        label: 'Останній клік',
+        label: t("Останній клік"),
         node: <span className="ww-hint">{hit}</span>,
       });
     list.push({
       id: 'pult',
-      label: 'Пульт',
+      label: t("Пульт"),
       node: (
         <Switch
           checked={pult}
           onChange={setPult}
-          label="Пульт"
-          hint="Клік по екрану = клік в учня, колесо = прокрутка, набір з клавіатури — у поле учня"
+          label={t("Пульт")}
+          hint={t("Клік по екрану = клік в учня, колесо = прокрутка, набір з клавіатури — у поле учня")}
         />
       ),
     });
-    if (hasFrame) list.push({ id: 'zoom', label: 'Масштаб', node: zoomControls });
+    if (hasFrame) list.push({ id: 'zoom', label: t("Масштаб"), node: zoomControls });
     list.push({
       id: 'big',
-      label: inBig ? 'Згорнути' : 'Великий екран',
+      label: inBig ? t("Згорнути") : t("Великий екран"),
       node: (
         <button type="button" onClick={() => setBig(!inBig)} className="ww-btn ww-btn-secondary ww-btn-sm">
-          {inBig ? 'Згорнути (Esc)' : '⤢ Великий екран'}
+          {inBig ? t("Згорнути (Esc)") : t("⤢ Великий екран")}
         </button>
       ),
     });
     if (!inBig && courseSlug)
       list.push({
         id: 'finish',
-        label: 'Завершити лекцію',
+        label: t("Завершити лекцію"),
         node: (
           <button type="button" onClick={finishLecture} disabled={busy || !course} className="ww-btn ww-btn-success ww-btn-sm">
             Завершити лекцію
@@ -675,7 +678,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     if (!inBig && room.active)
       list.push({
         id: 'lobby',
-        label: 'У зал очікування',
+        label: t("У зал очікування"),
         node: (
           <button type="button" onClick={leave} disabled={busy} className="ww-btn ww-btn-ghost ww-btn-sm">
             У зал очікування
@@ -685,7 +688,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     if (!inBig && courseSlug && notes)
       list.push({
         id: 'notes',
-        label: 'Нотатки викладача',
+        label: t("Нотатки викладача"),
         node: (
           <button
             type="button"
@@ -737,19 +740,19 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
               onClick={onStageClick}
               tabIndex={-1}
               className="absolute inset-0 cursor-pointer outline-none ring-2 ring-gold/60"
-              title="Пульт: клік = клік в учня, колесо = прокрутка, набір з клавіатури = у поле учня"
+              title={t("Пульт: клік = клік в учня, колесо = прокрутка, набір з клавіатури = у поле учня")}
             />
           )}
         </div>
         {!hasFrame && (
           <p className="px-4 py-16 text-center text-paper-muted">
             {!student
-              ? 'Учня немає в мережі. Він має увійти на сайт.'
+              ? t("Учня немає в мережі. Він має увійти на сайт.")
               : student.mode === 'site'
-                ? 'Учень на сайті. Оберіть урок і натисніть «У клас» — його перекине сюди.'
+                ? t("Учень на сайті. Оберіть урок і натисніть «У клас» — його перекине сюди.")
                 : student.mode !== 'class'
-                  ? 'Учень у класі й чекає. Оберіть урок і натисніть «У клас».'
-                : 'Чекаю на екран учня…'}
+                  ? t("Учень у класі й чекає. Оберіть урок і натисніть «У клас».")
+                : t("Чекаю на екран учня…")}
           </p>
         )}
     </div>
@@ -769,14 +772,14 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             <span className={`inline-block h-2.5 w-2.5 rounded-full ${dot}`} />
             {where}
           </span>
-          <span>{link === 'online' ? 'канал: ок' : link === 'connecting' ? 'канал: підключення…' : 'канал: немає зв’язку'}</span>
+          <span>{link === 'online' ? t("канал: ок") : link === 'connecting' ? t("канал: підключення…") : t("канал: немає зв’язку")}</span>
         </div>
       </div>
 
       <div className="mb-3 flex flex-col gap-2">
         <div className="ww-bar flex-wrap">
           <label className="ww-field min-w-[16rem] flex-1">
-            <span>Що проводимо</span>
+            <span>{t("Що проводимо")}</span>
             <select
               value={courseSlug}
               onChange={(e) => {
@@ -784,11 +787,11 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
                 setDone(null);
               }}
             >
-              <option value="">Окрема вправа (без лекції)</option>
-              {[...new Set(pages.map((p) => p.group ?? 'Лекції'))].map((g) => (
+              <option value="">{t("Окрема вправа (без лекції)")}</option>
+              {[...new Set(pages.map((p) => p.group ?? t("Лекції")))].map((g) => (
                 <optgroup key={g} label={g}>
                   {pages
-                    .filter((p) => (p.group ?? 'Лекції') === g)
+                    .filter((p) => (p.group ?? t("Лекції")) === g)
                     .map((p) => (
                       <option key={p.id} value={p.id}>
                         {p.title}
@@ -801,7 +804,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
           {!courseSlug && (
             <>
               <label className="ww-field min-w-[14rem] flex-1">
-                <span>Урок</span>
+                <span>{t("Урок")}</span>
                 <select value={lessonId} onChange={(e) => setLessonId(e.target.value)}>
                   {lessons.map((l) => (
                     <option key={l.id} value={l.id}>
@@ -811,7 +814,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
                 </select>
               </label>
               <label className="ww-field min-w-[11rem]">
-                <span>Що відкрити</span>
+                <span>{t("Що відкрити")}</span>
                 <select value={embed} onChange={(e) => setEmbed(e.target.value)}>
                   {CLASS_EMBEDS.map((o) => (
                     <option key={o.id} value={o.id}>
@@ -822,7 +825,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
               </label>
               {embed === 'grammar' && (
                 <label className="ww-field w-36">
-                  <span>Блоки (g2-g5)</span>
+                  <span>{t("Блоки (g2-g5)")}</span>
                   <input value={blocks} onChange={(e) => setBlocks(e.target.value)} />
                 </label>
               )}
@@ -888,8 +891,8 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
       {!big && stageBox}
       </div>
       {notesOpen && notes && (
-        <aside className="lp-root min-w-0 rounded-lg border border-ink-line bg-ink-raised p-4 xl:max-h-[85vh] xl:overflow-y-auto" aria-label="Нотатки викладача">
-          <p className="mb-2 text-xs text-paper-muted">Бачиш лише ти</p>
+        <aside className="lp-root min-w-0 rounded-lg border border-ink-line bg-ink-raised p-4 xl:max-h-[85vh] xl:overflow-y-auto" aria-label={t("Нотатки викладача")}>
+          <p className="mb-2 text-xs text-paper-muted">{t("Бачиш лише ти")}</p>
           <p className="mb-3 font-display text-base text-paper">{notes.title}</p>
           <div className="lp-prose" style={{ fontSize: '.95rem' }} dangerouslySetInnerHTML={{ __html: notes.html }} />
         </aside>

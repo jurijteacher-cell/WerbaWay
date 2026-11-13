@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { BookPage } from '@/lib/pages/pages';
@@ -31,6 +33,7 @@ export function LessonPager({
   initial: number;
   hasHomework: boolean;
 }) {
+  const t = useT();
   const [idx, setIdx] = useState(() => Math.min(Math.max(initial, 0), pages.length - 1));
   const [turn, setTurn] = useState<Turn | null>(null);
   const [visited, setVisited] = useState<Set<number>>(() => new Set([initial]));
@@ -113,14 +116,14 @@ export function LessonPager({
 
   return (
     <div className="lp-pager">
-      <aside className="lp-pager-rail" aria-label="Сторінки лекції">
+      <aside className="lp-pager-rail" aria-label={t("Сторінки лекції")}>
         <PageList pages={pages} idx={idx} visited={visited} go={go} />
       </aside>
 
       <div className="lp-pager-main">
         {/* телефон: компактна панель гортання */}
         <div className="lp-pagebar">
-          <button type="button" onClick={() => go(idx - 1)} disabled={!prev} aria-label="Попередня сторінка">
+          <button type="button" onClick={() => go(idx - 1)} disabled={!prev} aria-label={t("Попередня сторінка")}>
             ‹
           </button>
           <button type="button" className="lp-pagebar-title" onClick={() => setListOpen((o) => !o)} aria-expanded={listOpen}>
@@ -130,7 +133,7 @@ export function LessonPager({
             <span className="lp-pagebar-label">{page.section}</span>
             <span aria-hidden="true">{listOpen ? '▴' : '▾'}</span>
           </button>
-          <button type="button" onClick={() => go(idx + 1)} disabled={!next} aria-label="Наступна сторінка">
+          <button type="button" onClick={() => go(idx + 1)} disabled={!next} aria-label={t("Наступна сторінка")}>
             ›
           </button>
           <div className="lp-outline-bar lp-pagebar-progress" aria-hidden="true">
@@ -156,30 +159,30 @@ export function LessonPager({
           ))}
         </div>
 
-        <nav className="lp-turn" aria-label="Гортання">
+        <nav className="lp-turn" aria-label={t("Гортання")}>
           <button type="button" className="lp-turn-prev" onClick={() => go(idx - 1)} disabled={!prev}>
-            <span className="lp-turn-k">Назад</span>
-            <span className="lp-turn-t">{prev ? (prev.kind === 'text' || prev.kind === 'goal' ? prev.section : prev.label) : 'Початок'}</span>
+            <span className="lp-turn-k">{t("Назад")}</span>
+            <span className="lp-turn-t">{prev ? (prev.kind === 'text' || prev.kind === 'goal' ? prev.section : prev.label) : t("Початок")}</span>
           </button>
           {next ? (
             <button type="button" className="lp-turn-next" onClick={() => go(idx + 1)}>
-              <span className="lp-turn-k">Далі</span>
+              <span className="lp-turn-k">{t("Далі")}</span>
               <span className="lp-turn-t">{next.kind === 'text' || next.kind === 'goal' ? next.section : next.label}</span>
             </button>
           ) : hasHomework ? (
             <Link href={`${base ?? `/learn/${slug}`}/hw`} className="lp-turn-next">
-              <span className="lp-turn-k">Лекцію завершено</span>
-              <span className="lp-turn-t">Перейти до домашнього завдання</span>
+              <span className="lp-turn-k">{t("Лекцію завершено")}</span>
+              <span className="lp-turn-t">{t("Перейти до домашнього завдання")}</span>
             </Link>
           ) : doneHref ? (
             <Link href={doneHref} className="lp-turn-next">
-              <span className="lp-turn-k">Лекцію завершено</span>
-              <span className="lp-turn-t">До списку уроків</span>
+              <span className="lp-turn-k">{t("Лекцію завершено")}</span>
+              <span className="lp-turn-t">{t("До списку уроків")}</span>
             </Link>
           ) : (
             <span className="lp-turn-next" aria-disabled="true">
-              <span className="lp-turn-k">Лекцію завершено</span>
-              <span className="lp-turn-t">Dziękuję! Дякуємо!</span>
+              <span className="lp-turn-k">{t("Лекцію завершено")}</span>
+              <span className="lp-turn-t">{t("Dziękuję! Дякуємо!")}</span>
             </span>
           )}
         </nav>

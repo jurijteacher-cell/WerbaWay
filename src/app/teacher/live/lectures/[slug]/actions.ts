@@ -2,13 +2,14 @@
 
 import { revalidatePath } from 'next/cache';
 import { createClient } from '@/lib/supabase/server';
+import { t } from '@/i18n/server';
 
 export async function assignLecture(lectureSlug: string, studentId: string) {
   const supabase = createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) return { ok: false as const, error: 'Потрібна авторизація' };
+  if (!user) return { ok: false as const, error: t("Потрібна авторизація") };
 
   // RLS дозволяє insert лише role='teacher' (0003_lectures.sql)
   const { error } = await supabase

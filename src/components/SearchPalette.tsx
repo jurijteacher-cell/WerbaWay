@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { useRouter } from 'next/navigation';
@@ -9,6 +11,7 @@ type Group = { label: string; items: Item[] };
 
 /** Глобальний пошук: кнопка в шапці, Ctrl/⌘+K або «/» відкривають палітру */
 export function SearchPalette({ teacher }: { teacher: boolean }) {
+  const t = useT();
   const [open, setOpen] = useState(false);
   const [mac, setMac] = useState(false);
 
@@ -35,11 +38,11 @@ export function SearchPalette({ teacher }: { teacher: boolean }) {
         type="button"
         onClick={() => setOpen(true)}
         className="ww-search-trigger"
-        aria-label="Пошук по сайту"
+        aria-label={t("Пошук по сайту")}
         aria-keyshortcuts="Control+K Meta+K /"
       >
         <SearchIcon />
-        <span className="hidden xl:inline">{teacher ? 'Учень, лекція, слово…' : 'Лекція, слово…'}</span>
+        <span className="hidden xl:inline">{teacher ? t("Учень, лекція, слово…") : t("Лекція, слово…")}</span>
         <kbd className="hidden lg:inline">{mac ? '⌘K' : 'Ctrl K'}</kbd>
       </button>
       {open && createPortal(<Palette teacher={teacher} onClose={() => setOpen(false)} />, document.body)}
@@ -48,6 +51,7 @@ export function SearchPalette({ teacher }: { teacher: boolean }) {
 }
 
 function Palette({ teacher, onClose }: { teacher: boolean; onClose: () => void }) {
+  const t = useT();
   const router = useRouter();
   const [q, setQ] = useState('');
   const [groups, setGroups] = useState<Group[] | null>(null);
@@ -119,21 +123,21 @@ function Palette({ teacher, onClose }: { teacher: boolean; onClose: () => void }
   let i = -1;
   return (
     <div className="ww-modal ww-modal-top" role="presentation" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
-      <div className="ww-modal-box !max-w-[640px]" role="dialog" aria-modal="true" aria-label="Пошук по сайту" onKeyDown={onKey}>
+      <div className="ww-modal-box !max-w-[640px]" role="dialog" aria-modal="true" aria-label={t("Пошук по сайту")} onKeyDown={onKey}>
         <div className="flex items-center gap-3 border-b border-ink-line px-4 py-3">
           <SearchIcon />
           <input
             ref={inputRef}
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder={teacher ? 'Знайти учня, лекцію, курс, слово…' : 'Знайти лекцію, курс, слово…'}
+            placeholder={teacher ? t("Знайти учня, лекцію, курс, слово…") : t("Знайти лекцію, курс, слово…")}
             className="min-w-0 flex-1 bg-transparent text-base text-paper outline-none placeholder:text-paper-muted"
             role="combobox"
             aria-expanded="true"
             aria-controls="ww-search-list"
             aria-activedescendant={flat.length ? `ww-s-${active}` : undefined}
           />
-          {loading && <span className="text-xs text-paper-muted">шукаю…</span>}
+          {loading && <span className="text-xs text-paper-muted">{t("шукаю…")}</span>}
           <kbd className="ww-kbd">Esc</kbd>
         </div>
         <div ref={listRef} id="ww-search-list" role="listbox" className="max-h-[58vh] overflow-y-auto px-2 py-2">
@@ -178,10 +182,10 @@ function Palette({ teacher, onClose }: { teacher: boolean; onClose: () => void }
         </div>
         <div className="flex gap-4 border-t border-ink-line px-4 py-2 text-xs text-paper-muted">
           <span>
-            <kbd className="ww-kbd">↑</kbd> <kbd className="ww-kbd">↓</kbd> вибрати
+            <kbd className="ww-kbd">↑</kbd> <kbd className="ww-kbd">↓</kbd> {t("вибрати")}
           </span>
           <span>
-            <kbd className="ww-kbd">↵</kbd> відкрити
+            <kbd className="ww-kbd">↵</kbd> {t("відкрити")}
           </span>
         </div>
       </div>

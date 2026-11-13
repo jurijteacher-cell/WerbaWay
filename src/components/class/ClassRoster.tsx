@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { createClient } from '@/lib/supabase/client';
@@ -10,6 +12,7 @@ type Where = 'offline' | 'site' | 'lobby' | 'class';
 
 /** Teacher's list of students with who is online right now (presence on each class channel). */
 export function ClassRoster({ students }: { students: Student[] }) {
+  const t = useT();
   const [where, setWhere] = useState<Record<string, Where>>({});
 
   useEffect(() => {
@@ -43,10 +46,10 @@ export function ClassRoster({ students }: { students: Student[] }) {
   }, [students]);
 
   const label: Record<Where, string> = {
-    offline: 'не в мережі',
-    site: 'на сайті',
-    lobby: 'у залі очікування',
-    class: 'у класі',
+    offline: t("не в мережі"),
+    site: t("на сайті"),
+    lobby: t("у залі очікування"),
+    class: t("у класі"),
   };
   const dot: Record<Where, string> = {
     offline: 'bg-paper-muted',
@@ -78,7 +81,7 @@ export function ClassRoster({ students }: { students: Student[] }) {
           </li>
         );
       })}
-      {rows.length === 0 && <li className="px-4 py-6 text-paper-muted">Поки немає учнів з акаунтами.</li>}
+      {rows.length === 0 && <li className="px-4 py-6 text-paper-muted">{t("Поки немає учнів з акаунтами.")}</li>}
     </ul>
   );
 }

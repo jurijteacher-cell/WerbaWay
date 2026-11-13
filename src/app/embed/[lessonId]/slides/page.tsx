@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import { existsSync, readFileSync } from 'fs';
 import path from 'path';
 import { GrammarSlides } from '@/components/exercises/GrammarSlides';
+import { localizeExercise } from '@/lib/content-locale';
+import { getLocale } from '@/i18n/server';
 
 type Props = {
   params: { lessonId: string };
@@ -15,7 +17,7 @@ export default function EmbedSlidesPage({ params, searchParams }: Props) {
     `${params.lessonId}-slides.json`
   );
   if (!existsSync(file)) notFound();
-  const raw = JSON.parse(readFileSync(file, 'utf8'));
+  const raw = localizeExercise(`${params.lessonId}-slides.json`, JSON.parse(readFileSync(file, 'utf8')), getLocale());
   const partRaw = searchParams?.part;
   const part = partRaw != null && partRaw !== '' ? Number(partRaw) : undefined;
   return (

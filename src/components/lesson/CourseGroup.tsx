@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { useState } from 'react';
 import { ShareButton } from './ShareButton';
@@ -45,6 +47,7 @@ function Card({ p, canShare }: { p: CourseCard; canShare?: boolean }) {
 
 /** Курс: перші три лекції видно одразу, решта розгортається кнопкою */
 export function CourseGroup({ id, title, pages, canShare }: { id: string; title: string; pages: CourseCard[]; canShare?: boolean }) {
+  const t = useT();
   const [open, setOpen] = useState(false);
   const rest = pages.slice(VISIBLE);
   return (
@@ -73,7 +76,7 @@ export function CourseGroup({ id, title, pages, canShare }: { id: string; title:
           </div>
           <div className="mt-4 flex justify-center">
             <button type="button" onClick={() => setOpen((o) => !o)} className="ww-btn ww-btn-secondary" aria-expanded={open}>
-              {open ? 'Згорнути ↑' : `Показати ще ${rest.length} ↓`}
+              {open ? t("Згорнути ↑") : `Показати ще ${rest.length} ↓`}
             </button>
           </div>
         </>

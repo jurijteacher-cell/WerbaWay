@@ -1,5 +1,7 @@
 import { readFileSync, existsSync, readdirSync } from 'fs';
 import path from 'path';
+import { localizeExercise } from '@/lib/content-locale';
+import { DEFAULT_LOCALE, type Locale } from '@/i18n/config';
 import type {
   FlipTaskExercise,
   GrammarBoardExercise,
@@ -12,11 +14,10 @@ import type {
 } from './queue-types';
 
 const ROOT = path.join(process.cwd(), 'src/content/queue-published');
-
-function readJson<T>(file: string): T | null {
+function readJson<T>(file: string, locale: Locale = DEFAULT_LOCALE): T | null {
   const full = path.join(ROOT, file);
   if (!existsSync(full)) return null;
-  return JSON.parse(readFileSync(full, 'utf8')) as T;
+  return localizeExercise(file, JSON.parse(readFileSync(full, 'utf8')) as T, locale);
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -334,13 +335,13 @@ function normalizeHw(raw: any): HomeworkExercise {
   };
 }
 
-export function getQueueBundle(lessonId: string): QueueExerciseBundle | null {
-  const vocabRaw = readJson<unknown>(`${lessonId}-vocab.json`);
-  const picturesRaw = readJson<unknown>(`${lessonId}-pictures.json`);
-  const commRaw = readJson<unknown>(`${lessonId}-comm-tasks.json`);
-  const grammarBoardRaw = readJson<unknown>(`${lessonId}-grammar-board.json`);
-  const grammarRaw = readJson<unknown>(`${lessonId}-grammar.json`);
-  const hwRaw = readJson<unknown>(`${lessonId}-hw.json`);
+export function getQueueBundle(lessonId: string, locale: Locale = DEFAULT_LOCALE): QueueExerciseBundle | null {
+  const vocabRaw = readJson<unknown>(`${lessonId}-vocab.json`, locale);
+  const picturesRaw = readJson<unknown>(`${lessonId}-pictures.json`, locale);
+  const commRaw = readJson<unknown>(`${lessonId}-comm-tasks.json`, locale);
+  const grammarBoardRaw = readJson<unknown>(`${lessonId}-grammar-board.json`, locale);
+  const grammarRaw = readJson<unknown>(`${lessonId}-grammar.json`, locale);
+  const hwRaw = readJson<unknown>(`${lessonId}-hw.json`, locale);
   // pictures + grammar(+board) optional (e.g. RU copies without tryb rozkazujący)
   if (!vocabRaw || !commRaw || !hwRaw) return null;
   return {

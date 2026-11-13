@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
 
@@ -9,8 +10,8 @@ export default function ConfirmedPage({ searchParams }: { searchParams?: { error
       <div className="max-w-sm">
         {failed ? (
           <>
-            <h1 className="mb-2 font-display text-2xl text-paper">Посилання не спрацювало</h1>
-            <p className="text-paper-muted">Воно застаріло або вже використане. Спробуй увійти або запроси новий лист.</p>
+            <h1 className="mb-2 font-display text-2xl text-paper">{t("Посилання не спрацювало")}</h1>
+            <p className="text-paper-muted">{t("Воно застаріло або вже використане. Спробуй увійти або запроси новий лист.")}</p>
             <div className="mt-6 flex justify-center gap-6">
               <Link href="/login" className="text-gold hover:text-gold-bright">
                 Увійти
@@ -22,7 +23,7 @@ export default function ConfirmedPage({ searchParams }: { searchParams?: { error
           </>
         ) : (
           <>
-            <h1 className="mb-2 font-display text-2xl text-paper">Пошту підтверджено</h1>
+            <h1 className="mb-2 font-display text-2xl text-paper">{t("Пошту підтверджено")}</h1>
             <p className="text-paper-muted">
               Готово. Можна входити — на сайті або у вправах у Notion (там введи ті самі email і пароль).
             </p>

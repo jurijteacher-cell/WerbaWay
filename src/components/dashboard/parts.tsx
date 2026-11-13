@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { EMBED_LABEL, pctClass, type Summary } from '@/lib/analytics';
+import { t } from '@/i18n/server';
 
 export function Kpi({ label, value, hint, tone }: { label: string; value: ReactNode; hint?: string; tone?: string }) {
   return (
@@ -15,7 +16,7 @@ export function Activity({ daily }: { daily: Summary['daily'] }) {
   const max = Math.max(1, ...daily.map((d) => d.n));
   return (
     <div>
-      <div className="flex h-24 items-end gap-[3px]" role="img" aria-label="Активність за 28 днів">
+      <div className="flex h-24 items-end gap-[3px]" role="img" aria-label={t("Активність за 28 днів")}>
         {daily.map((d) => (
           <div
             key={d.date}
@@ -26,8 +27,8 @@ export function Activity({ daily }: { daily: Summary['daily'] }) {
         ))}
       </div>
       <div className="mt-1 flex justify-between text-xs text-paper-muted">
-        <span>28 днів тому</span>
-        <span>сьогодні</span>
+        <span>{t("28 днів тому")}</span>
+        <span>{t("сьогодні")}</span>
       </div>
     </div>
   );
@@ -35,7 +36,7 @@ export function Activity({ daily }: { daily: Summary['daily'] }) {
 
 export function WeakList({ weak }: { weak: Summary['weak'] }) {
   if (!weak.length) {
-    return <p className="text-sm text-paper-muted">Поки замало даних: тема з’являється після 3 відповідей з першої спроби.</p>;
+    return <p className="text-sm text-paper-muted">{t("Поки замало даних: тема з’являється після 3 відповідей з першої спроби.")}</p>;
   }
   return (
     <ul className="flex flex-col gap-2">

@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { Word, WordStat } from '@/lib/words';
@@ -27,6 +29,7 @@ export function WordGame({
   initialStats: Record<string, WordStat>;
   initialMode: Mode;
 }) {
+  const t = useT();
   const [mode, setMode] = useState<Mode>(initialMode);
   const [dir, setDir] = useState<Dir>('pl');
   const [onlyUnknown, setOnlyUnknown] = useState(false);
@@ -120,7 +123,7 @@ export function WordGame({
               className="ww-nav-link"
               aria-current={mode === m ? 'page' : undefined}
             >
-              {m === 'cards' ? 'Картки' : m === 'match' ? 'Пари' : 'Тест'}
+              {m === 'cards' ? t("Картки") : m === 'match' ? t("Пари") : t("Тест")}
             </button>
           ))}
         </div>
@@ -132,18 +135,18 @@ export function WordGame({
           тільки невивчені
         </label>
         <button type="button" className="text-gold hover:text-gold-bright" onClick={() => setDir(dir === 'pl' ? 'uk' : 'pl')}>
-          Спершу: {dir === 'pl' ? 'польське слово' : 'переклад'} ⇄
+          Спершу: {dir === 'pl' ? t("польське слово") : t("переклад")} ⇄
         </button>
         <button type="button" className="text-gold hover:text-gold-bright" onClick={() => setRound((r) => r + 1)}>
           🔀 Перемішати
         </button>
-        {saveErr && <span className="text-incorrect">не вдалося зберегти, спробую ще</span>}
+        {saveErr && <span className="text-incorrect">{t("не вдалося зберегти, спробую ще")}</span>}
       </div>
 
       {!ready ? (
-        <p className="rounded-2xl border border-ink-line bg-ink-raised p-8 text-center text-paper-muted">Готуємо картки…</p>
+        <p className="rounded-2xl border border-ink-line bg-ink-raised p-8 text-center text-paper-muted">{t("Готуємо картки…")}</p>
       ) : pool.length === 0 ? (
-        <Done title="Усі слова вже запам’ятані 🎉" onAgain={() => setOnlyUnknown(false)} again="Тренувати всі слова" />
+        <Done title={t("Усі слова вже запам’ятані 🎉")} onAgain={() => setOnlyUnknown(false)} again={t("Тренувати всі слова")} />
       ) : mode === 'cards' ? (
         <Cards key={`c${round}${onlyUnknown}`} pool={pool} dir={dir} update={update} stat={stat} onAgain={() => setRound((r) => r + 1)} />
       ) : mode === 'match' ? (
@@ -164,12 +167,13 @@ type Common = {
 };
 
 function Done({ title, sub, onAgain, again }: { title: string; sub?: string; onAgain: () => void; again?: string }) {
+  const t = useT();
   return (
     <div className="rounded-2xl border border-ink-line bg-ink-raised p-8 text-center">
       <p className="font-display text-2xl text-paper">{title}</p>
       {sub && <p className="mt-2 text-paper-muted">{sub}</p>}
       <button type="button" onClick={onAgain} className="ww-btn ww-btn-primary mt-5">
-        {again ?? 'Ще раз'}
+        {again ?? t("Ще раз")}
       </button>
     </div>
   );
@@ -177,6 +181,7 @@ function Done({ title, sub, onAgain, again }: { title: string; sub?: string; onA
 
 /* ───────────── Картки ───────────── */
 function Cards({ pool, dir, update, onAgain }: Common) {
+  const t = useT();
   const [queue, setQueue] = useState<Word[]>(pool);
   const [flipped, setFlipped] = useState(false);
   const [done, setDone] = useState(0);
@@ -212,7 +217,7 @@ function Cards({ pool, dir, update, onAgain }: Common) {
     return () => window.removeEventListener('keydown', onKey);
   }, [answer]);
 
-  if (!w) return <Done title="Колоду пройдено" sub={`${done} слів позначено «знаю»`} onAgain={onAgain} again="Перемішати й ще раз" />;
+  if (!w) return <Done title={t("Колоду пройдено")} sub={`${done} слів позначено «знаю»`} onAgain={onAgain} again={t("Перемішати й ще раз")} />;
 
   const front = dir === 'pl' ? w.term : w.tr;
   const back = dir === 'pl' ? w.tr : w.term;
@@ -258,14 +263,14 @@ function Cards({ pool, dir, update, onAgain }: Common) {
           borderColor: dx > 60 ? '#0f7a55' : dx < -60 ? '#cf3a57' : undefined,
         }}
         className="flex min-h-[18rem] w-full select-none flex-col items-center justify-center gap-3 rounded-3xl border-2 border-ink-line bg-ink-raised p-8 text-center shadow-[0_6px_0_#dde3f3] transition-colors hover:border-gold/60"
-        aria-label="Перевернути картку"
+        aria-label={t("Перевернути картку")}
       >
         {!flipped ? (
           <>
             <span className="font-serif text-4xl text-paper">{front}</span>
             {dir === 'pl' && w.pos && <span className="text-sm text-paper-muted">{w.pos}</span>}
-            <span className="mt-4 hidden text-xs text-gold-dim md:inline">натисни, щоб перевернути · пробіл</span>
-            <span className="mt-4 text-xs text-gold-dim md:hidden">торкнись, щоб перевернути · свайп вправо — знаю, вліво — ще вчу</span>
+            <span className="mt-4 hidden text-xs text-gold-dim md:inline">{t("натисни, щоб перевернути · пробіл")}</span>
+            <span className="mt-4 text-xs text-gold-dim md:hidden">{t("торкнись, щоб перевернути · свайп вправо — знаю, вліво — ще вчу")}</span>
           </>
         ) : (
           <>
@@ -298,6 +303,7 @@ function Cards({ pool, dir, update, onAgain }: Common) {
 /* ───────────── Пари ───────────── */
 const PAIRS = 6;
 function Match({ pool, dir, update, onAgain }: Common) {
+  const t = useT();
   const [idx, setIdx] = useState(0); // початок поточного раунду
   const [mistakes, setMistakes] = useState(0);
   const [matched, setMatched] = useState<string[]>([]);
@@ -321,10 +327,10 @@ function Match({ pool, dir, update, onAgain }: Common) {
   if (!round.length)
     return (
       <Done
-        title="Усі пари з’єднано"
+        title={t("Усі пари з’єднано")}
         sub={`${pool.length} слів · помилок: ${mistakes} · ${Math.round((Date.now() - t0) / 1000)} с`}
         onAgain={onAgain}
-        again="Перемішати й ще раз"
+        again={t("Перемішати й ще раз")}
       />
     );
 
@@ -385,6 +391,7 @@ function Match({ pool, dir, update, onAgain }: Common) {
 
 /* ───────────── Тест ───────────── */
 function Quiz({ pool, all, dir, update, onAgain }: Common & { all: Word[] }) {
+  const t = useT();
   const [i, setI] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
   const [score, setScore] = useState(0);
@@ -399,7 +406,7 @@ function Quiz({ pool, all, dir, update, onAgain }: Common & { all: Word[] }) {
 
   if (!w)
     return (
-      <Done title={`Результат: ${score} з ${pool.length}`} sub={`${Math.round((score / pool.length) * 100)}% правильно з першого разу`} onAgain={onAgain} again="Перемішати й ще раз" />
+      <Done title={`Результат: ${score} з ${pool.length}`} sub={`${Math.round((score / pool.length) * 100)}% правильно з першого разу`} onAgain={onAgain} again={t("Перемішати й ще раз")} />
     );
 
   const ask = dir === 'pl' ? w.term : w.tr;

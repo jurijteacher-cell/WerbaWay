@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -55,6 +57,7 @@ function loadViewCounts(): number[] {
 }
 
 export default function MoviesPracticePage() {
+  const t = useT();
   const [viewCounts, setViewCounts] = useState<number[]>(defaultViewCounts);
   const [storageReady, setStorageReady] = useState(false);
   const [activeIdx, setActiveIdx] = useState<number | null>(null);
@@ -184,7 +187,7 @@ export default function MoviesPracticePage() {
             <textarea
               value={answer}
               onChange={(e) => setAnswer(e.target.value)}
-              placeholder="Напиши відповідь польською (або відповідай усно)…"
+              placeholder={t("Напиши відповідь польською (або відповідай усно)…")}
               rows={4}
               className="w-full resize-none rounded-lg border border-ink-line bg-ink px-3 py-2 text-sm text-paper outline-none focus:border-gold"
             />
@@ -194,12 +197,12 @@ export default function MoviesPracticePage() {
                 onClick={() => setShowSample(true)}
                 className="mt-2 inline-flex items-center gap-1.5 text-xs text-paper-muted hover:text-gold"
               >
-                <Lightbulb size={13} /> Показати приклад відповіді
+                <Lightbulb size={13} /> {t("Показати приклад відповіді")}
               </button>
             )}
             {showSample && question.sample && (
               <p className="mt-2 rounded-lg border border-gold/30 bg-gold/5 px-3 py-2 text-sm text-paper-muted">
-                <span className="font-medium text-gold">Приклад:</span> {question.sample}
+                <span className="font-medium text-gold">{t("Приклад:")}</span> {question.sample}
               </p>
             )}
 
@@ -209,10 +212,10 @@ export default function MoviesPracticePage() {
                 className="ww-btn ww-btn-primary flex items-center gap-1.5"
               >
                 {questionIdx + 1 < active.questions.length ? (
-                  'Далі →'
+                  t("Далі →")
                 ) : (
                   <>
-                    <Check size={15} /> Завершити
+                    <Check size={15} /> {t("Завершити")}
                   </>
                 )}
               </button>

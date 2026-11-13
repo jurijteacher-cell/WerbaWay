@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { fetchAttempts, fmtDate, pctClass, summarize, type MockRow } from '@/lib/analytics';
 import { listPages } from '@/lib/pages/pages';
+import { getLocale, t } from '@/i18n/server';
 import { loadDeck } from '@/lib/words';
 import { lectureStats } from '@/lib/lecture-stats';
 import { LectureCard } from '@/components/dashboard/LectureCard';
@@ -31,7 +32,7 @@ export default async function DashboardPage() {
     .order('completed_at', { ascending: false });
   const progressBySlug = new Map((progressRows ?? []).map((r) => [r.lesson_slug as string, r]));
   // Картка лекції — для кожного уроку курсу, де є запис про проходження або хоч одна відповідь
-  const allPages = listPages();
+  const allPages = listPages(getLocale());
   const lectureCards = allPages
     .map((p) => ({ page: p, stats: lectureStats(p.slug, attempts), row: progressBySlug.get(p.slug) }))
     .filter((x) => x.row || x.stats.touched)
@@ -57,7 +58,7 @@ export default async function DashboardPage() {
     <main className="mx-auto max-w-4xl px-4 py-16">
       <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="text-sm uppercase tracking-widest text-gold-dim">Мій прогрес</p>
+          <p className="text-sm uppercase tracking-widest text-gold-dim">{t("Мій прогрес")}</p>
           <h1 className="font-display text-3xl text-paper">{name}</h1>
           <p className="mt-1 text-sm text-paper-muted">{user.email}</p>
         </div>
@@ -106,14 +107,14 @@ export default async function DashboardPage() {
       )}
 
       {wordDecks.length > 0 && (
-        <Section title="Слова">
+        <Section title={t("Слова")}>
           <Link
             href="/words"
             className="flex flex-wrap items-center gap-4 rounded-2xl border border-ink-line bg-ink-raised px-5 py-4 transition-colors hover:border-gold"
           >
             <div className="min-w-0 flex-1">
               <p className="font-display text-lg text-paper">
-                {wordDecks.length} {wordDecks.length === 1 ? 'колода' : 'колод'} · {wordsTotal} слів
+                {wordDecks.length} {wordDecks.length === 1 ? t("колода") : t("колод")} · {wordsTotal} слів
               </p>
               <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-ink-line/70">
                 <div className="h-full rounded-full bg-gold-fill" style={{ width: `${wordsTotal ? Math.round((wordsKnown / wordsTotal) * 100) : 0}%` }} />
@@ -122,13 +123,13 @@ export default async function DashboardPage() {
                 запам’ятано {wordsKnown} з {wordsTotal}
               </p>
             </div>
-            <span className="ww-btn ww-btn-primary">Тренувати →</span>
+            <span className="ww-btn ww-btn-primary">{t("Тренувати →")}</span>
           </Link>
         </Section>
       )}
 
       {lectureCards.length > 0 && (
-        <Section title="Мої лекції">
+        <Section title={t("Мої лекції")}>
           <div className="grid gap-4 md:grid-cols-2">
             {lectureCards.map(({ page, stats, row }) => (
               <LectureCard
@@ -156,40 +157,40 @@ export default async function DashboardPage() {
         <>
           <div className="mb-8 grid grid-cols-2 gap-3 md:grid-cols-4">
             <Kpi
-              label="З першої спроби"
+              label={t("З першої спроби")}
               value={s.accuracy == null ? '—' : `${s.accuracy}%`}
               tone={pctClass(s.accuracy)}
               hint={`${s.firstOk} з ${s.firstTotal}`}
             />
-            <Kpi label="Вправ" value={s.exercises} hint={`${s.attempts} перевірок`} />
-            <Kpi label="Уроків" value={s.lessons} />
-            <Kpi label="Серія днів" value={s.streak} hint={`активних днів: ${s.activeDays}`} />
+            <Kpi label={t("Вправ")} value={s.exercises} hint={`${s.attempts} перевірок`} />
+            <Kpi label={t("Уроків")} value={s.lessons} />
+            <Kpi label={t("Серія днів")} value={s.streak} hint={`активних днів: ${s.activeDays}`} />
           </div>
 
-          <Section title="Активність (28 днів)">
+          <Section title={t("Активність (28 днів)")}>
             <div className="rounded-xl border border-ink-line bg-ink-raised p-4">
               <Activity daily={s.daily} />
             </div>
           </Section>
 
           <div className="grid gap-8 [&>*]:min-w-0 md:grid-cols-2">
-            <Section title="Слабкі теми">
+            <Section title={t("Слабкі теми")}>
               <WeakList weak={s.weak} />
             </Section>
-            <Section title="За типом вправ">
+            <Section title={t("За типом вправ")}>
               <EmbedBreakdown byEmbed={s.byEmbed} />
             </Section>
           </div>
 
-          <Section title="Останні уроки">
+          <Section title={t("Останні уроки")}>
             <div className="overflow-x-auto rounded-xl border border-ink-line">
               <table className="w-full text-left text-sm">
                 <thead className="bg-ink-raised text-paper-muted">
                   <tr>
-                    <th className="px-4 py-3 font-normal">Урок</th>
-                    <th className="px-4 py-3 font-normal">Спроб</th>
-                    <th className="px-4 py-3 font-normal">З першої</th>
-                    <th className="px-4 py-3 font-normal">Коли</th>
+                    <th className="px-4 py-3 font-normal">{t("Урок")}</th>
+                    <th className="px-4 py-3 font-normal">{t("Спроб")}</th>
+                    <th className="px-4 py-3 font-normal">{t("З першої")}</th>
+                    <th className="px-4 py-3 font-normal">{t("Коли")}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -209,16 +210,16 @@ export default async function DashboardPage() {
       )}
 
       {mocks && mocks.length > 0 ? (
-        <Section title="Пробні іспити">
+        <Section title={t("Пробні іспити")}>
           <div className="overflow-x-auto rounded-xl border border-ink-line">
             <table className="w-full text-left text-sm">
               <thead className="bg-ink-raised text-paper-muted">
                 <tr>
-                  <th className="px-4 py-3 font-normal">Іспит</th>
-                  <th className="px-4 py-3 font-normal">Бали</th>
-                  <th className="px-4 py-3 font-normal">Результат</th>
-                  <th className="px-4 py-3 font-normal">Хв</th>
-                  <th className="px-4 py-3 font-normal">Коли</th>
+                  <th className="px-4 py-3 font-normal">{t("Іспит")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Бали")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Результат")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Хв")}</th>
+                  <th className="px-4 py-3 font-normal">{t("Коли")}</th>
                 </tr>
               </thead>
               <tbody>

@@ -1,3 +1,4 @@
+import { t } from '@/i18n/server';
 export function ProgressBadge({ done, total }: { done: number; total: number }) {
   if (total === 0) return null;
   const complete = done >= total;
@@ -7,7 +8,7 @@ export function ProgressBadge({ done, total }: { done: number; total: number }) 
         complete ? 'text-correct' : 'text-gold-dim'
       }`}
     >
-      {complete ? '✓ Завершено' : `Прогрес: ${done} / ${total}`}
+      {complete ? t("✓ Завершено") : `Прогрес: ${done} / ${total}`}
     </span>
   );
 }

@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useMemo, useState } from 'react';
 import { createClient } from '@/lib/supabase/client';
 
@@ -21,6 +23,7 @@ export function AccessEditor({
   initial: string[];
   done: string[];
 }) {
+  const t = useT();
   const supabase = useMemo(() => createClient(), []);
   const [granted, setGranted] = useState(() => new Set(initial));
   const [busy, setBusy] = useState<string | null>(null);
@@ -76,7 +79,7 @@ export function AccessEditor({
                 </p>
               </div>
               <button type="button" onClick={() => setOpen(isOpen ? null : m.code)} className="ww-btn ww-btn-ghost ww-btn-sm" aria-expanded={isOpen}>
-                {isOpen ? 'Сховати лекції' : 'Окремі лекції'}
+                {isOpen ? t("Сховати лекції") : t("Окремі лекції")}
               </button>
             </div>
             {isOpen && (
@@ -99,7 +102,7 @@ export function AccessEditor({
                         {l.title}
                       </label>
                       <span className="text-xs text-paper-muted">
-                        {passed ? 'пройдено' : modOn ? 'через курс' : l.number != null ? `№ ${l.number}` : ''}
+                        {passed ? t("пройдено") : modOn ? t("через курс") : l.number != null ? `№ ${l.number}` : ''}
                       </span>
                     </li>
                   );

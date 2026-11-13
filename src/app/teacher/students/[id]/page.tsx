@@ -9,6 +9,7 @@ import { avatarColor, initials, relDay } from '@/lib/students';
 import { LectureCard } from '@/components/dashboard/LectureCard';
 import { Activity, Section, WeakList } from '@/components/dashboard/parts';
 import { AccessEditor, type ModuleInfo } from '@/components/teacher/AccessEditor';
+import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
 
@@ -35,7 +36,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
   const userId = (profile?.id as string | undefined) ?? ((embedRows ?? []).find((e) => e.user_id)?.user_id as string | undefined) ?? null;
   const embeds = (embedRows ?? []).filter((e) => e.id === params.id || (userId && e.user_id === userId));
   if (!profile && !embeds.length) notFound();
-  const name = (profile?.full_name as string) || (embeds[0]?.name as string) || 'Учень';
+  const name = (profile?.full_name as string) || (embeds[0]?.name as string) || t("Учень");
 
   const embedIds = embeds.map((e) => e.id as string);
   const attempts: AttemptRow[] = (
@@ -108,8 +109,8 @@ export default async function StudentProfilePage({ params }: { params: { id: str
           <h1 className="font-display text-3xl text-paper">{name}</h1>
           <p className="mt-1 text-sm text-paper-muted">
             Остання активність: <b className="text-paper">{relDay(lastAt)}</b>
-            {room?.active && <span className="ml-2 rounded-full bg-correct/10 px-2 py-0.5 text-correct">зараз у класі</span>}
-            {!userId && <span className="ml-2 rounded bg-ink-soft px-1.5 py-0.5">лише Notion, без акаунта</span>}
+            {room?.active && <span className="ml-2 rounded-full bg-correct/10 px-2 py-0.5 text-correct">{t("зараз у класі")}</span>}
+            {!userId && <span className="ml-2 rounded bg-ink-soft px-1.5 py-0.5">{t("лише Notion, без акаунта")}</span>}
           </p>
           {courseTitles.length > 0 && (
             <p className="mt-2 flex flex-wrap gap-1.5">
@@ -137,24 +138,24 @@ export default async function StudentProfilePage({ params }: { params: { id: str
 
       {/* підсумки */}
       <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
-        <Tile value={userId ? done.length : '—'} label="лекцій разом" />
+        <Tile value={userId ? done.length : '—'} label={t("лекцій разом")} />
         <Tile
           value={acc == null ? '—' : `${acc}%`}
-          label="оцінка"
+          label={t("оцінка")}
           tone={acc == null ? undefined : acc >= 80 ? 'text-correct' : acc >= 60 ? 'text-gold' : 'text-incorrect'}
         />
-        <Tile value={s.attempts} label="відповідей" />
-        <Tile value={s.activeDays} label="активних днів" />
-        <Tile value={userId ? `${wordsKnown}/${wordsTotal}` : '—'} label="слів запам’ятав" />
-        <Tile value={userId ? `${hwDone}/${hwDone + hwTodo}` : '—'} label="домашок здано" tone={hwTodo ? 'text-gold' : undefined} />
+        <Tile value={s.attempts} label={t("відповідей")} />
+        <Tile value={s.activeDays} label={t("активних днів")} />
+        <Tile value={userId ? `${wordsKnown}/${wordsTotal}` : '—'} label={t("слів запам’ятав")} />
+        <Tile value={userId ? `${hwDone}/${hwDone + hwTodo}` : '—'} label={t("домашок здано")} tone={hwTodo ? 'text-gold' : undefined} />
       </div>
 
       <div className="mt-10 grid gap-8 [&>*]:min-w-0 lg:grid-cols-2">
-        <Section title="Активність (28 днів)">
+        <Section title={t("Активність (28 днів)")}>
           <Activity daily={s.daily} />
         </Section>
-        <Section title="Слабкі теми">
-          {s.weak.length ? <WeakList weak={s.weak} /> : <p className="text-paper-muted">Поки замало відповідей, щоб бачити слабкі теми.</p>}
+        <Section title={t("Слабкі теми")}>
+          {s.weak.length ? <WeakList weak={s.weak} /> : <p className="text-paper-muted">{t("Поки замало відповідей, щоб бачити слабкі теми.")}</p>}
         </Section>
       </div>
 
@@ -212,7 +213,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
 
       {s.recentLessons.length > 0 && (
         <div className="mt-10">
-          <Section title="Останні вправи">
+          <Section title={t("Останні вправи")}>
             <ul className="divide-y divide-ink-line overflow-hidden rounded-2xl border border-ink-line bg-ink-raised">
               {s.recentLessons.slice(0, 8).map((l) => (
                 <li key={l.lessonId} className="flex items-center gap-3 px-4 py-2.5 text-sm">
@@ -231,7 +232,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
 
       {(mocks ?? []).length > 0 && (
         <div className="mt-10">
-          <Section title="Пробні іспити">
+          <Section title={t("Пробні іспити")}>
             <ul className="divide-y divide-ink-line overflow-hidden rounded-2xl border border-ink-line bg-ink-raised">
               {((mocks ?? []) as MockRow[]).map((m) => (
                 <li key={m.id} className="flex items-center gap-3 px-4 py-2.5 text-sm">
@@ -239,7 +240,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
                   <span className="font-semibold text-paper">
                     {m.total}/{m.max_total}
                   </span>
-                  <span className={m.passed ? 'text-correct' : 'text-incorrect'}>{m.passed ? 'склав' : 'не склав'}</span>
+                  <span className={m.passed ? 'text-correct' : 'text-incorrect'}>{m.passed ? t("склав") : t("не склав")}</span>
                   <span className="w-24 text-right text-paper-muted">{fmtDate(m.created_at)}</span>
                 </li>
               ))}
@@ -250,7 +251,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
 
       {userId && (
         <div className="mt-12" id="access">
-          <Section title="Доступ до лекцій">
+          <Section title={t("Доступ до лекцій")}>
             <p className="mb-4 text-sm text-paper-muted">
               Що учень бачить у «Курсі». Курс відкриває всі його лекції, зокрема майбутні. Лекції, пройдені в класі, відкриваються самі.
             </p>

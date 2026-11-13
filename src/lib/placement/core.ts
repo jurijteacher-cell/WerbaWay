@@ -59,12 +59,16 @@ export type PlacementTest = {
   blocks: PlacementBlock[];
 };
 
+import { localizeExercise } from '@/lib/content-locale';
+import { DEFAULT_LOCALE, type Locale } from '@/i18n/config';
+
 const ROOT = path.join(process.cwd(), 'src/content/queue-published');
 
-export function loadPlacementTest(lessonId: string): PlacementTest | null {
-  const full = path.join(ROOT, `${lessonId}-test.json`);
+export function loadPlacementTest(lessonId: string, locale: Locale = DEFAULT_LOCALE): PlacementTest | null {
+  const file = `${path.basename(lessonId)}-test.json`;
+  const full = path.join(ROOT, file);
   if (!existsSync(full)) return null;
-  return JSON.parse(readFileSync(full, 'utf8')) as PlacementTest;
+  return localizeExercise(file, JSON.parse(readFileSync(full, 'utf8')) as PlacementTest, locale);
 }
 
 /** Client-safe copy: no answer / accept / trap / explanation. */

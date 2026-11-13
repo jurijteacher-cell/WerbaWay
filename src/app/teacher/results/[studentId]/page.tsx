@@ -4,6 +4,7 @@ import { requireTeacher } from '../requireTeacher';
 import { fmt, pct, pctClass } from '../format';
 import { lessonTitle } from '@/lib/lesson-titles';
 import { ArchiveButton, DeleteLessonButton } from './StudentActions';
+import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
 
@@ -161,9 +162,9 @@ export default async function StudentResultsPage({ params }: { params: { student
         <div>
           <h1 className="font-display text-3xl text-paper">{student.name}</h1>
           <p className="mt-1 text-sm text-paper-muted">
-            {student.user_id ? 'Акаунт' : student.code ? <>Код <span className="font-mono text-gold">{student.code}</span></> : '—'}
+            {student.user_id ? t("Акаунт") : student.code ? <>{t("Код")} <span className="font-mono text-gold">{student.code}</span></> : '—'}
             {student.note ? ` · ${student.note}` : ''}
-            {student.archived_at ? ' · в архіві' : ''}
+            {student.archived_at ? t(" · в архіві") : ''}
           </p>
         </div>
         <ArchiveButton studentId={student.id} archived={Boolean(student.archived_at)} />
@@ -173,14 +174,14 @@ export default async function StudentResultsPage({ params }: { params: { student
 
       <section className="mb-10 grid gap-3 sm:grid-cols-4">
         {[
-          { label: 'Уроків', value: String(student.lessons) },
+          { label: t("Уроків"), value: String(student.lessons) },
           {
-            label: 'З першої спроби',
+            label: t("З першої спроби"),
             value: overall == null ? '—' : `${overall}%`,
             cls: pctClass(overall),
           },
-          { label: 'Завдань перевірено', value: String(student.first_total) },
-          { label: 'Письмових відповідей', value: String(student.open_answers) },
+          { label: t("Завдань перевірено"), value: String(student.first_total) },
+          { label: t("Письмових відповідей"), value: String(student.open_answers) },
         ].map((c) => (
           <div key={c.label} className="rounded-xl border border-ink-line bg-ink-raised p-4">
             <p className="text-xs text-paper-muted">{c.label}</p>
@@ -191,7 +192,7 @@ export default async function StudentResultsPage({ params }: { params: { student
 
       {weak.some((w) => w.p < 80) && (
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-xl text-paper">Слабкі місця</h2>
+          <h2 className="mb-3 font-display text-xl text-paper">{t("Слабкі місця")}</h2>
           <p className="mb-3 text-xs text-paper-muted">
             Теги граматики, де з першої спроби менше 80% (щонайменше 3 завдання).
           </p>
@@ -214,7 +215,7 @@ export default async function StudentResultsPage({ params }: { params: { student
 
       {exams.length > 0 && (
         <section className="mb-10">
-          <h2 className="mb-3 font-display text-xl text-paper">Пробні іспити</h2>
+          <h2 className="mb-3 font-display text-xl text-paper">{t("Пробні іспити")}</h2>
           <div className="overflow-x-auto rounded-xl border border-ink-line">
             <table className="w-full text-left text-sm">
               <tbody>
@@ -242,7 +243,7 @@ export default async function StudentResultsPage({ params }: { params: { student
       )}
 
       <section>
-        <h2 className="mb-3 font-display text-xl text-paper">Уроки</h2>
+        <h2 className="mb-3 font-display text-xl text-paper">{t("Уроки")}</h2>
         {lessons.length === 0 && (
           <p className="text-sm text-paper-muted">
             Ще немає жодної спроби. Учень має увійти в акаунт над вправами в Notion.
@@ -322,7 +323,7 @@ export default async function StudentResultsPage({ params }: { params: { student
                                         <span className="mx-2 text-paper-muted">→</span>
                                         <span className="text-correct">{m.expected}</span>
                                         <span className="ml-2 text-xs text-paper-muted">
-                                          {m.solved ? `виправив(ла) з ${m.versions}-ї спроби` : 'не розв’язано'}
+                                          {m.solved ? `виправив(ла) з ${m.versions}-ї спроби` : t("не розв’язано")}
                                         </span>
                                         {m.grammarPoint ? (
                                           <span className="ml-2 font-mono text-[11px] text-paper-muted">
