@@ -20,7 +20,8 @@ import sys
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 QP = "src/content/queue-published"
-EMBED_RE = re.compile(r"werba-way\.vercel\.app/embed/([a-z0-9-]+)/([a-z-]+)(?:\?blocks=([a-z0-9,\-]+))?")
+# повна адреса (werba-way.vercel.app / werbaway.com) або відносна /embed/… — сайт рендерить обидві
+EMBED_RE = re.compile(r"(?:werba-way\.vercel\.app|werbaway\.com|[\"'(])/embed/([a-z0-9-]+)/([a-z-]+)(?:\?blocks=([a-z0-9,\-]+))?")
 REQUIRED = ("vocab", "comm-tasks", "hw")  # without any of these no window of the lesson opens
 ALL_BLOCKS_SEEN = {}
 FILE_OF = {"mock-exam": "mock"}  # embed kind -> file suffix when they differ

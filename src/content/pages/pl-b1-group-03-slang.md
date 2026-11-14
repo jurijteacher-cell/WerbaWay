@@ -95,6 +95,20 @@ Porozmawiajmy. Używaj słów z lekcji i liczebników: <i>dwóch, troje, pięcio
 
 ---
 
+## 5. Zadania komunikacyjne
+
+Najpierw posłuchaj, jak znajomi planują wypad na weekend. Odpowiedz na cztery pytania. Nauczyciel przeczyta rozmowę dwa razy — bez tekstu przed oczami.
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-group-03-slang/exam?blocks=e2">
+Jak na egzaminie — słuchanie
+</embed>
+
+Teraz Twoja kolej. Trzy sytuacje: plan wypadu, zrzutka na prezent i rozmowa po sesji. Odwróć kartę i odegraj rozmowę. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-group-03-slang/comm-tasks">
+Zadania komunikacyjne
+</embed>
+
 ---
 
 ## 6. Gramatyka: liczebniki — część 1
