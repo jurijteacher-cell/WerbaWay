@@ -13,8 +13,7 @@
   --lp-peach: #f4b7c5;
   --lp-lilac: #ded1ff;
   color: var(--lp-ink);
-  padding-bottom: 6rem;
-}
+  padding-bottom: 6rem; overflow-x: clip; /* зсув нової сторінки не дає горизонтальної прокрутки; clip не ламає sticky */ }
 
 /* ── шапка ── */
 .lp-cover-wrap { position: relative; }
@@ -41,8 +40,10 @@
   margin: 1.1rem 0 1.2rem; max-width: 22ch; text-wrap: balance;
 }
 
-.lp-props { display: grid; gap: .15rem; margin: 0 0 2rem; max-width: 46rem; font-size: .95rem; }
-.lp-props > div { display: grid; grid-template-columns: 7.5rem 1fr; align-items: baseline; padding: .3rem 0; }
+/* стовпчик міток — за найдовшою міткою (рос. «Преподавателю» не влазило у фіксовані 7.5rem / 5.6rem) */
+.lp-props { display: grid; grid-template-columns: max-content minmax(0, 1fr); column-gap: 1.4rem; align-items: baseline; margin: 0 0 2rem; max-width: 46rem; font-size: .95rem; }
+.lp-props > div { display: contents; }
+.lp-props dt, .lp-props dd { padding: .3rem 0; }
 .lp-props dt { color: var(--lp-muted); }
 .lp-props dd { margin: 0; }
 .lp-props a { color: var(--lp-gold); text-decoration: underline; text-decoration-color: rgba(107, 70, 214, .35); text-underline-offset: 3px; }
@@ -184,7 +185,19 @@
 .lp-prose th { text-align: left; font: 600 .85rem var(--font-onest), sans-serif; color: var(--lp-muted); border-bottom: 2px solid var(--lp-line); padding: .5rem .7rem; }
 .lp-prose td { padding: .55rem .7rem; border-bottom: 1px solid var(--lp-line); vertical-align: top; }
 .lp-prose tbody tr:hover { background: rgba(122, 79, 224, .18); }
-@media (max-width: 640px) { .lp-prose table { table-layout: auto; display: block; overflow-x: auto; } .lp-prose td { min-width: 8rem; } }
+/* телефон: таблиця прокручується вбік; тіні по краях показують, що там є ще стовпчики
+   (смугу прокрутки на телефоні не видно). Клітинки вужчі — 3 стовпчики влазять без прокрутки */
+@media (max-width: 640px) {
+  .lp-prose table {
+    table-layout: auto; display: block; overflow-x: auto;
+    background:
+      linear-gradient(90deg, #fff 30%, rgba(255, 255, 255, 0)) left / 2rem 100% no-repeat local,
+      linear-gradient(270deg, #fff 30%, rgba(255, 255, 255, 0)) right / 2rem 100% no-repeat local,
+      radial-gradient(farthest-side at 0 50%, rgba(28, 35, 72, .2), transparent) left / .7rem 100% no-repeat scroll,
+      radial-gradient(farthest-side at 100% 50%, rgba(28, 35, 72, .2), transparent) right / .7rem 100% no-repeat scroll;
+  }
+  .lp-prose td { min-width: 6rem; }
+}
 
 /* ── вікна вправ: колір мітки = тип ── */
 .lp-embed { margin: 1.8rem 0; border: 1px solid var(--lp-line); border-radius: 1rem; background: var(--lp-paper); overflow: hidden; font-family: var(--font-onest), system-ui, sans-serif; box-shadow: 0 1px 0 var(--lp-line); }
@@ -225,6 +238,7 @@
 .lp-class .lp-hero-body h1 { font-size: clamp(1.2rem, 2.1vw, 1.7rem); margin: .5rem 0 .45rem; max-width: none; }
 .lp-class .lp-props { display: flex; flex-wrap: wrap; gap: .2rem 1.1rem; margin: 0 0 1rem; max-width: none; font-size: .85rem; }
 .lp-class .lp-props > div { display: flex; gap: .45rem; padding: 0; }
+.lp-class .lp-props dt, .lp-class .lp-props dd { padding: 0; }
 .lp-class .lp-pager-rail { top: .6rem; max-height: calc(100vh - 1.2rem); }
 .lp-pagelist-item.is-static { cursor: default; }
 .lp-pagelist-item.is-static:hover { color: var(--lp-muted); transform: none; }
@@ -287,9 +301,6 @@
 
 /* аркуш */
 .lp-book { position: relative; }
-/* перспектива лише на час перегортання: інакше постійний 3D-шар у деяких браузерах лишав
-   сліди закріпленої панелі вгорі — вона ніби дублювалась при прокрутці */
-.lp-book.is-turning { perspective: 2400px; perspective-origin: 0% 50%; overflow-y: clip; }
 .lp-sheet {
   position: relative;
   background: #ffffff;
@@ -299,8 +310,6 @@
   --lp-pad-r: clamp(1.1rem, 3.4vw, 2.6rem);
   padding: 1.6rem var(--lp-pad-r) 2.2rem var(--lp-pad-l);
   box-shadow: 0 1px 0 var(--lp-line), 0 22px 40px -32px rgba(28, 35, 72, .6);
-  transform-origin: left center;
-  backface-visibility: hidden;
   /* корінець блокнота зліва */
   background-image: linear-gradient(90deg, rgba(28, 35, 72, .07), rgba(28, 35, 72, 0) 1.4rem);
 }
@@ -317,37 +326,11 @@
 }
 .lp-sheet-class::after { opacity: 1; border-radius: 0; inset: auto; left: -15px; top: 18px; bottom: 18px; width: 36px; }
 @media (max-width: 560px) { .lp-book::before { left: -12px; } }
-.lp-sheet::after { /* тінь, що набігає під час перегортання */
-  content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0;
-  background: linear-gradient(90deg, rgba(28, 35, 72, .28), rgba(28, 35, 72, .04) 55%, rgba(255, 255, 255, .25));
-}
-.lp-sheet.is-leaving, .lp-sheet.is-under { position: absolute; top: 0; left: 0; right: 0; }
-.lp-sheet.is-leaving, .lp-sheet.is-entering, .lp-sheet.is-under { isolation: isolate; }
-/* аркуш, що гортається, має чисту зворотну сторону: вміст ховається, папір лишається */
-.lp-sheet.is-leaving, .lp-sheet.is-entering { transform-style: preserve-3d; backface-visibility: visible; }
-.lp-sheet.is-leaving > *, .lp-sheet.is-entering > * { backface-visibility: hidden; }
-.lp-sheet.is-leaving { z-index: 3; animation: lp-turn-out .76s cubic-bezier(.45, .05, .25, 1) forwards; }
-.lp-sheet.is-leaving::after { animation: lp-shade-in .76s ease forwards; }
-.lp-sheet.is-entering { z-index: 3; animation: lp-turn-in .76s cubic-bezier(.45, .05, .25, 1) both; }
-.lp-sheet.is-entering::after { animation: lp-shade-out .76s ease both; }
-.lp-sheet.is-under { z-index: 1; }
-.lp-sheet.is-current { z-index: 2; }
-.lp-book.is-turning .lp-sheet.is-current { animation: lp-settle .76s ease both; }
-
-@keyframes lp-turn-out {
-  0% { transform: rotateY(0) translateZ(0); }
-  60% { box-shadow: 30px 20px 50px -20px rgba(28, 35, 72, .45); }
-  100% { transform: rotateY(-178deg) translateZ(0); box-shadow: none; }
-}
-@keyframes lp-turn-in {
-  0% { transform: rotateY(-178deg); }
-  40% { box-shadow: 30px 20px 50px -20px rgba(28, 35, 72, .45); }
-  100% { transform: rotateY(0); }
-}
-@keyframes lp-shade-in { to { opacity: 1; } }
-@keyframes lp-shade-out { from { opacity: 1; } to { opacity: 0; } }
-/* сторінка під аркушем трохи «підсвічується», коли на неї падає світло */
-@keyframes lp-settle { 0% { filter: brightness(.94); } 100% { filter: none; } }
+/* поява нової сторінки: короткий зсув у бік гортання, без 3D і без двох аркушів одночасно */
+.lp-sheet.enter-next { animation: lp-page-in-next .28s cubic-bezier(.2, .8, .2, 1) both; }
+.lp-sheet.enter-prev { animation: lp-page-in-prev .28s cubic-bezier(.2, .8, .2, 1) both; }
+@keyframes lp-page-in-next { from { opacity: 0; transform: translateX(18px); } to { opacity: 1; transform: none; } }
+@keyframes lp-page-in-prev { from { opacity: 0; transform: translateX(-18px); } to { opacity: 1; transform: none; } }
 
 /* шапка сторінки */
 .lp-sheet-head { display: flex; align-items: center; gap: .8rem; margin: 0 0 1.3rem; padding-bottom: 1rem; border-bottom: 1px dashed var(--lp-line); }
@@ -393,7 +376,7 @@
 .lp-sheet-class { margin-top: .25rem; }
 
 @media (prefers-reduced-motion: reduce) {
-  .lp-sheet, .lp-sheet::after, .lp-book.is-turning .lp-sheet.is-current { animation: none !important; }
+  .lp-sheet { animation: none !important; }
   .lp-pagelist-item, .lp-turn > * { transition: none !important; }
 }
 
@@ -429,7 +412,8 @@
   .lp-icon { width: 4rem; height: 4rem; margin-top: -2.2rem; font-size: 2.3rem; border-radius: 1rem; }
   .lp-hero-body h1 { font-size: 1.75rem; margin: .8rem 0 .9rem; }
   .lp-props { margin-bottom: 1.3rem; font-size: .9rem; }
-  .lp-props > div { grid-template-columns: 5.6rem 1fr; padding: .2rem 0; }
+  .lp-props { column-gap: .9rem; }
+  .lp-props dt, .lp-props dd { padding: .2rem 0; }
   .lp-pager, .lp-layout { padding: 0 .6rem 0 1rem; }
   .lp-sheet { --lp-pad-l: 1.35rem; --lp-pad-r: .85rem; padding: 1.2rem var(--lp-pad-r) 1.6rem var(--lp-pad-l); }
   .lp-callout-body { min-width: 0; overflow-x: auto; }

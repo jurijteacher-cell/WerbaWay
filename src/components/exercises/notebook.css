@@ -789,8 +789,11 @@
 }
 .nb-match-col .nb-chip {
   width: 100%;
+  min-width: 0;
   text-align: left;
   font-size: 15.5px;
+  /* довге слово (rodzeństwo, teściowie) у вузькій колонці переноситься, а не вилазить за картку */
+  overflow-wrap: anywhere;
 }
 .nb-match-col.left .nb-chip {
   font-weight: 600;
@@ -2048,21 +2051,16 @@
   .nb-q {
     font-size: 17px;
   }
+  /* розділи вправи переносяться в рядки, а не ховаються за невидимою прокруткою */
   .nb-idx {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    margin: 0 -16px 16px;
-    padding: 2px 16px 6px;
-    scroll-snap-type: x proximity;
-    scrollbar-width: none;
+    margin: 0 0 14px;
+    gap: 6px;
   }
   .nb-idx::-webkit-scrollbar {
     display: none;
   }
   .nb-idx button {
-    flex: none;
-    scroll-snap-align: start;
-    max-width: 78vw;
+    max-width: 100%;
   }
   .nb-match {
     grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);

@@ -343,6 +343,18 @@
   .ww-nav-link:hover::after { transform: scaleX(1); }
   .ww-nav-link[aria-current='page'] { color: var(--ww-violet-dark); font-weight: 650; background: var(--ww-violet-fill); box-shadow: 0 2px 0 var(--ww-violet-shadow); }
   .ww-nav-link[aria-current='page']::after { display: none; }
+  /* прихований дубль пунктів меню для вимірювання (NavLinks) */
+  .ww-nav-measure {
+    position: absolute; top: 0; left: 0; display: flex; gap: 4px; visibility: hidden; pointer-events: none;
+    height: 0; overflow: hidden; white-space: nowrap;
+  }
+  /* пункт-посилання у спливному меню (.ww-menu): «Ще» в шапці */
+  .ww-menu-link {
+    display: block; padding: 8px 10px; border-radius: var(--ww-r-sm); white-space: nowrap;
+    color: var(--ww-ink); font: 600 14px/1.3 var(--font-onest), system-ui, sans-serif; text-decoration: none;
+  }
+  .ww-menu-link:hover { background: var(--ww-soft); }
+  .ww-menu-link[aria-current='page'] { background: var(--ww-violet-fill); color: var(--ww-violet-dark); }
 
   /* модальні вікна (поділитися, пошук): аркуш над затемненим столом */
   .ww-modal {
@@ -370,6 +382,7 @@
 
   /* кнопка пошуку в шапці */
   .ww-search-trigger {
+    flex: none; white-space: nowrap; /* не стискається в кілька рядків, коли шапка тісна */
     display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 0 12px; border-radius: 12px;
     border: 1px solid #dde3f3; background: #ffffff; color: #5d6689; font-size: 13px;
     box-shadow: inset 0 1px 0 #fff, 0 2px 0 #e6ebf8; transition: border-color 0.2s ease, transform 0.15s ease, color 0.2s ease;

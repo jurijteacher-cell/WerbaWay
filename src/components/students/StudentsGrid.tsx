@@ -68,7 +68,7 @@ export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
           placeholder={t("Пошук за іменем")}
           className="ww-input min-w-0 flex-1 basis-56 px-4 py-2 placeholder:text-paper-muted"
         />
-        <div className="ww-nav max-w-full overflow-x-auto [scrollbar-width:none]">
+        <div className="ww-nav max-w-full flex-wrap">
           {FILTERS.map((x) => (
             <button key={x.id} type="button" onClick={() => setF(x.id)} className="ww-nav-link" aria-current={f === x.id ? 'page' : undefined}>
               {t(x.label)}
