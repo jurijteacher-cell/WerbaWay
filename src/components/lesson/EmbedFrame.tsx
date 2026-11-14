@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import type { EmbedKind } from '@/lib/pages/pages';
+import { useLocale, useT, withLang } from '@/i18n/client';
 
 /** Висота вікна вправи: фіксована за типом (як у Notion), далі скрол усередині. */
 const HEIGHT: Record<EmbedKind, number> = {
@@ -36,8 +37,12 @@ const LABEL: Record<EmbedKind, string> = {
   other: 'Ćwiczenie',
 };
 
-export function EmbedFrame({ src, title, kind }: { src: string; title: string; kind: EmbedKind }) {
+export function EmbedFrame({ src: rawSrc, title, kind }: { src: string; title: string; kind: EmbedKind }) {
   const [loaded, setLoaded] = useState(false);
+  const locale = useLocale();
+  const t = useT();
+  // вправа живе в iframe: куки туди не доходять, тож мову передаємо параметром
+  const src = withLang(rawSrc, locale);
   const h = HEIGHT[kind];
   return (
     <figure className="lp-embed" data-kind={kind}>
@@ -45,11 +50,11 @@ export function EmbedFrame({ src, title, kind }: { src: string; title: string; k
         <span className="lp-embed-tag">{LABEL[kind]}</span>
         <span className="lp-embed-title">{title}</span>
         <a href={src} target="_blank" rel="noopener noreferrer" className="lp-embed-open">
-          відкрити окремо ↗
+          {t('відкрити окремо')} ↗
         </a>
       </figcaption>
       <div className="lp-embed-frame" style={{ height: `min(${h}px, 88vh)` }}>
-        {!loaded && <div className="lp-embed-skel">Завантаження…</div>}
+        {!loaded && <div className="lp-embed-skel">{t('Завантаження…')}</div>}
         <iframe
           src={src}
           title={title}

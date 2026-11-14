@@ -7,6 +7,7 @@ import { LessonPager } from './LessonPager';
 import { PageList } from './PageList';
 import { ShareButton } from './ShareButton';
 import './lesson.css';
+import { t } from '@/i18n/server';
 
 type Props = {
   page: ParsedPage;
@@ -52,7 +53,7 @@ export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes, 
           <dl className="lp-props">
             {meta.level && (
               <div>
-                <dt>Рівень</dt>
+                <dt>{t("Рівень")}</dt>
                 <dd>
                   <span className="lp-chip lp-chip-level">{meta.level}</span>
                 </dd>
@@ -60,7 +61,7 @@ export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes, 
             )}
             {meta.moduleTitle && (
               <div>
-                <dt>Курс</dt>
+                <dt>{t("Курс")}</dt>
                 <dd>
                   {meta.moduleTitle}
                   {meta.number != null && <span className="lp-muted">, урок {meta.number}</span>}
@@ -70,7 +71,7 @@ export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes, 
           </dl>
         </LessonHero>
         <div className="lp-pager">
-          <aside className="lp-pager-rail" aria-label="Сторінки лекції">
+          <aside className="lp-pager-rail" aria-label={t("Сторінки лекції")}>
             <PageList pages={book} idx={i} visited={new Set(Array.from({ length: i }, (_, n) => n))} classNav />
           </aside>
           <div className="lp-pager-main">
@@ -101,15 +102,15 @@ export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes, 
         <dl className="lp-props">
           {mode === 'homework' && (
             <div>
-              <dt>Сторінка</dt>
+              <dt>{t("Сторінка")}</dt>
               <dd>
-                <span className="lp-chip lp-badge-hw">Домашнє завдання</span>
+                <span className="lp-chip lp-badge-hw">{t("Домашнє завдання")}</span>
               </dd>
             </div>
           )}
           {meta.level && (
             <div>
-              <dt>Рівень</dt>
+              <dt>{t("Рівень")}</dt>
               <dd>
                 <span className="lp-chip lp-chip-level">{meta.level}</span>
               </dd>
@@ -117,7 +118,7 @@ export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes, 
           )}
           {meta.moduleTitle && (
             <div>
-              <dt>Курс</dt>
+              <dt>{t("Курс")}</dt>
               <dd>
                 {meta.moduleTitle}
                 {meta.number != null && <span className="lp-muted">, урок {meta.number}</span>}
@@ -126,26 +127,26 @@ export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes, 
           )}
           {mode === 'lecture' && exercises > 0 && (
             <div>
-              <dt>Вправи</dt>
+              <dt>{t("Вправи")}</dt>
               <dd>{exercises} інтерактивних вікон</dd>
             </div>
           )}
           {teacherNotes && (
             <div>
-              <dt>Викладачеві</dt>
+              <dt>{t("Викладачеві")}</dt>
               <dd>
-                <Link href={`/teacher/lesson/${meta.slug}`}>Нотатки до уроку</Link>
+                <Link href={`/teacher/lesson/${meta.slug}`}>{t("Нотатки до уроку")}</Link>
               </dd>
             </div>
           )}
           {page.hasHomework && (
             <div>
-              <dt>{mode === 'homework' ? 'Лекція' : 'Домашка'}</dt>
+              <dt>{mode === 'homework' ? t("Лекція") : t("Домашка")}</dt>
               <dd>
                 {mode === 'homework' ? (
-                  <Link href={base}>Повернутися до лекції</Link>
+                  <Link href={base}>{t("Повернутися до лекції")}</Link>
                 ) : (
-                  <Link href={`${base}/hw`}>Відкрити домашнє завдання</Link>
+                  <Link href={`${base}/hw`}>{t("Відкрити домашнє завдання")}</Link>
                 )}
               </dd>
             </div>

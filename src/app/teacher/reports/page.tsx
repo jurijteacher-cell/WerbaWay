@@ -1,6 +1,7 @@
 import { requireTeacher } from '../results/requireTeacher';
 import { lessonTitle } from '@/lib/lesson-titles';
 import { ResolveButton } from './ResolveButton';
+import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
 
@@ -27,7 +28,7 @@ export default async function ReportsPage() {
 
   const card = (r: Row) => {
     const p = r.profiles;
-    const name = p?.full_name?.trim() || [p?.first_name, p?.last_name].filter(Boolean).join(' ').trim() || 'Учень';
+    const name = p?.full_name?.trim() || [p?.first_name, p?.last_name].filter(Boolean).join(' ').trim() || t("Учень");
     return (
       <li key={r.id} className="rounded-2xl border border-ink-line bg-ink-raised p-4 shadow-sm">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -56,14 +57,14 @@ export default async function ReportsPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-8">
-      <h1 className="font-display text-2xl font-bold text-paper">Повідомлення про помилки</h1>
-      <p className="mt-1 text-sm text-paper-muted">Те, що учні надсилають кнопкою «Помилка?» з будь-якої сторінки.</p>
+      <h1 className="font-display text-2xl font-bold text-paper">{t("Повідомлення про помилки")}</h1>
+      <p className="mt-1 text-sm text-paper-muted">{t("Те, що учні надсилають кнопкою «Помилка?» з будь-якої сторінки.")}</p>
 
       <h2 className="mt-7 text-[11px] font-bold uppercase tracking-[0.14em] text-paper-faint">
         Нерозібрані · {open.length}
       </h2>
       {open.length === 0 ? (
-        <p className="mt-2 text-sm text-paper-muted">Порожньо.</p>
+        <p className="mt-2 text-sm text-paper-muted">{t("Порожньо.")}</p>
       ) : (
         <ul className="mt-3 flex flex-col gap-3">{open.map(card)}</ul>
       )}

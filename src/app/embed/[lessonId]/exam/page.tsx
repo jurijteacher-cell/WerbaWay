@@ -3,6 +3,8 @@ import { existsSync, readFileSync } from 'fs';
 import path from 'path';
 import { ExamTasks, type ExamExercise, type ExamBlock } from '@/components/exercises/ExamTasks';
 import { parseBlockIds } from '@/lib/block-ids';
+import { localizeExercise } from '@/lib/content-locale';
+import { getLocale } from '@/i18n/server';
 
 type Props = {
   params: { lessonId: string };
@@ -18,7 +20,7 @@ function loadTranscript(lessonId: string, source?: string): ExamBlock['transcrip
   const full = path.join(process.cwd(), 'src/content/queue-published', path.basename(file));
   if (!existsSync(full)) return undefined;
   try {
-    const raw = JSON.parse(readFileSync(full, 'utf8'));
+    const raw = localizeExercise(file, JSON.parse(readFileSync(full, 'utf8')), getLocale());
     const [itemId, field] = frag.split('.');
     const item = (raw.items ?? []).find(
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -41,7 +43,7 @@ export default function EmbedExamPage({ params, searchParams }: Props) {
   );
   if (!existsSync(file)) notFound();
 
-  const raw = JSON.parse(readFileSync(file, 'utf8'));
+  const raw = localizeExercise(`${params.lessonId}-exam.json`, JSON.parse(readFileSync(file, 'utf8')), getLocale());
   const blocks: ExamBlock[] = (raw.blocks ?? []).map(
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (b: any) => ({

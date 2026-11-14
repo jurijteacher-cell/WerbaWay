@@ -1,6 +1,8 @@
 import { existsSync, readdirSync, readFileSync } from 'fs';
 import path from 'path';
 import { Marked } from 'marked';
+import { applyMarkdown } from '@/i18n/segment.mjs';
+import { DEFAULT_LOCALE, type Locale } from '@/i18n/config';
 
 /**
  * Сторінки-лекції, перенесені з Notion: src/content/pages/<slug>.md
@@ -82,7 +84,39 @@ export function splitNumbered(label: string): { num: string | null; title: strin
 
 const DIR = path.join(process.cwd(), 'src/content/pages');
 const TEACHER_DIR = path.join(process.cwd(), 'src/content/teacher-pages');
+const I18N_DIR = path.join(process.cwd(), 'src/content/i18n/pages');
 const SLUG_RE = /^[a-z0-9][a-z0-9-]*$/;
+
+/**
+ * Переклади пояснень лежать окремо від лекції: { ключ: "переклад" }, де ключ
+ * рахується з тексту джерела. Польське тіло лекції одне на всі мови — правка в ньому
+ * не вимагає перекладати лекцію заново, а неперекладена глоса просто лишається
+ * мовою джерела.
+ */
+const i18nCache = new Map<string, Record<string, string> | null>();
+
+function pageTranslations(slug: string, locale: Locale): Record<string, string> | null {
+  if (locale === DEFAULT_LOCALE) return null;
+  const cacheKey = `${slug}:${locale}`;
+  if (i18nCache.has(cacheKey)) return i18nCache.get(cacheKey) ?? null;
+  const file = path.join(I18N_DIR, `${slug}.${locale}.json`);
+  let map: Record<string, string> | null = null;
+  if (existsSync(file)) {
+    try {
+      map = JSON.parse(readFileSync(file, 'utf8')) as Record<string, string>;
+    } catch {
+      map = null;
+    }
+  }
+  i18nCache.set(cacheKey, map);
+  return map;
+}
+
+/** Текст лекції мовою пояснень: польський матеріал не змінюється ніколи. */
+function localized(slug: string, raw: string, locale: Locale): string {
+  const map = pageTranslations(slug, locale);
+  return map ? applyMarkdown(raw, map) : raw;
+}
 
 function slugify(s: string): string {
   return s
@@ -303,22 +337,23 @@ export function buildSteps(page: ParsedPage): ClassStep[] {
   }));
 }
 
-export function listPages(): PageMeta[] {
+export function listPages(locale: Locale = DEFAULT_LOCALE): PageMeta[] {
   if (!existsSync(DIR)) return [];
   return readdirSync(DIR)
     .filter((f) => f.endsWith('.md'))
     .map((f) => {
       const slug = f.replace(/\.md$/, '');
-      return parsePage(slug, readFileSync(path.join(DIR, f), 'utf8')).meta;
+      const raw = localized(slug, readFileSync(path.join(DIR, f), 'utf8'), locale);
+      return parsePage(slug, raw).meta;
     })
     .sort((a, b) => (a.number ?? 1e9) - (b.number ?? 1e9) || a.title.localeCompare(b.title, 'pl'));
 }
 
-export function loadPage(slug: string): ParsedPage | null {
+export function loadPage(slug: string, locale: Locale = DEFAULT_LOCALE): ParsedPage | null {
   if (!SLUG_RE.test(slug)) return null;
   const file = path.join(DIR, `${slug}.md`);
   if (!existsSync(file)) return null;
-  return parsePage(slug, readFileSync(file, 'utf8'));
+  return parsePage(slug, localized(slug, readFileSync(file, 'utf8'), locale));
 }
 
 /** Сторінка «TEACHER · …» до лекції (лише для викладача) — файл з тим самим slug */

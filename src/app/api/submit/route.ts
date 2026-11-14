@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 import { getLessonBySlug } from '@/content/lessons';
 import { evaluateExercise } from '@/lib/evaluate-exercise';
+import { t } from '@/i18n/server';
 
 export async function POST(req: NextRequest) {
   const supabase = createClient();
@@ -10,21 +11,21 @@ export async function POST(req: NextRequest) {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    return NextResponse.json({ error: 'Потрібна авторизація' }, { status: 401 });
+    return NextResponse.json({ error: t("Потрібна авторизація") }, { status: 401 });
   }
 
   const body = await req.json();
   const { lessonSlug, exerciseId, exerciseType, answer } = body ?? {};
 
   if (!lessonSlug || !exerciseId || !exerciseType) {
-    return NextResponse.json({ error: 'Некоректний запит' }, { status: 400 });
+    return NextResponse.json({ error: t("Некоректний запит") }, { status: 400 });
   }
 
   const lesson = getLessonBySlug(lessonSlug);
   const exercise = lesson?.exercises.find((e) => e.id === exerciseId);
 
   if (!lesson || !exercise) {
-    return NextResponse.json({ error: 'Урок або вправу не знайдено' }, { status: 404 });
+    return NextResponse.json({ error: t("Урок або вправу не знайдено") }, { status: 404 });
   }
 
   const { isCorrect, autoGraded, feedback } = await evaluateExercise(exercise, answer);

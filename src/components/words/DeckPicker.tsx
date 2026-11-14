@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -22,6 +24,7 @@ const MODES = [
 ] as const;
 
 export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
+  const t = useT();
   const [sel, setSel] = useState<string[]>([]);
   const toggle = (s: string) => setSel((x) => (x.includes(s) ? x.filter((y) => y !== s) : [...x, s]));
   const chosen = decks.filter((d) => sel.includes(d.slug));
@@ -42,14 +45,14 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
     <>
       <div className="mb-3 flex items-center justify-between text-sm text-paper-muted">
         <span>
-          {decks.length} {decks.length === 1 ? 'колода' : 'колод'}
+          {decks.length} {decks.length === 1 ? t("колода") : t("колод")}
         </span>
         <button
           type="button"
           className="text-gold hover:text-gold-bright"
           onClick={() => setSel(sel.length === decks.length ? [] : decks.map((d) => d.slug))}
         >
-          {sel.length === decks.length ? 'Зняти вибір' : 'Вибрати всі'}
+          {sel.length === decks.length ? t("Зняти вибір") : t("Вибрати всі")}
         </button>
       </div>
 
@@ -82,7 +85,7 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
                 </p>
                 <div className="mt-3">
                   <div className="mb-1 flex justify-between text-xs text-paper-muted">
-                    <span>запам’ятав</span>
+                    <span>{t("запам’ятав")}</span>
                     <span className="font-mono text-paper">
                       {d.known}/{d.total}
                     </span>
@@ -101,10 +104,10 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
         <div className="mx-auto flex max-w-4xl flex-wrap items-center gap-3">
           <p className="min-w-0 flex-1 text-sm text-paper-muted">
             {sel.length === 0 ? (
-              'Обери колоду (або кілька — вони зіллються в одну)'
+              t("Обери колоду (або кілька — вони зіллються в одну)")
             ) : (
               <>
-                <b className="text-paper">{sel.length === 1 ? chosen[0].title : `${sel.length} колоди разом`}</b> · {words} слів,{' '}
+                <b className="text-paper">{sel.length === 1 ? chosen[0].title : t('{n} колоди разом', { n: sel.length })}</b> · {words} слів,{' '}
                 {known} запам’ятано
               </>
             )}
@@ -114,14 +117,14 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
               <Link
                 key={m.id}
                 href={href(m.id)}
-                title={m.hint}
+                title={t(m.hint)}
                 className="ww-btn ww-btn-primary"
               >
-                {m.label}
+                {t(m.label)}
               </Link>
             ) : (
               <span key={m.id} className="rounded-lg bg-ink-soft px-4 py-2 text-sm text-paper-muted opacity-60">
-                {m.label}
+                {t(m.label)}
               </span>
             )
           )}

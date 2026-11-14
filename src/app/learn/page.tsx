@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { groupByCourse, listPages } from '@/lib/pages/pages';
+import { getLocale, t } from '@/i18n/server';
 import { canSee, getAccess } from '@/lib/pages/access';
 import { lectures } from '@/content/lectures';
 import { CourseGroup } from '@/components/lesson/CourseGroup';
@@ -16,7 +17,7 @@ export default async function LearnIndex() {
   if (!user) redirect('/login?next=/learn');
 
   const access = await getAccess(supabase, user.id);
-  const pages = listPages().filter((p) => canSee(p, access));
+  const pages = listPages(getLocale()).filter((p) => canSee(p, access));
   // старі інтерактивні лекції («Кіно») — тільки призначені учневі
   const { data: assigned } = await supabase.from('assignments').select('lecture_slug').eq('student_id', user.id);
   const assignedSet = new Set((assigned ?? []).map((a) => a.lecture_slug as string));
@@ -25,14 +26,14 @@ export default async function LearnIndex() {
   const groups = groupByCourse(pages);
   return (
     <main className="mx-auto max-w-5xl px-4 py-14">
-      <h1 className="mb-2 font-display text-4xl text-paper">Курс</h1>
-      <p className="mb-10 text-paper-muted">Лекції з текстами, вправами й домашкою.</p>
+      <h1 className="mb-2 font-display text-4xl text-paper">{t("Курс")}</h1>
+      <p className="mb-10 text-paper-muted">{t("Лекції з текстами, вправами й домашкою.")}</p>
       {pages.length === 0 && extraLectures.length === 0 && (
-        <p className="text-paper-muted">Тут з’являться лекції, щойно викладач відкриє тобі курс.</p>
+        <p className="text-paper-muted">{t("Тут з’являться лекції, щойно викладач відкриє тобі курс.")}</p>
       )}
       {extraLectures.length > 0 && (
         <section className="mb-12">
-          <h2 className="mb-4 font-display text-2xl text-paper">Інтерактивні лекції</h2>
+          <h2 className="mb-4 font-display text-2xl text-paper">{t("Інтерактивні лекції")}</h2>
           <div className="flex flex-wrap gap-3">
             {extraLectures.map((l) => (
               <Link key={l.slug} href={`/lectures/${l.slug}`} className="ww-btn ww-btn-secondary ww-btn-lg">

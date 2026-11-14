@@ -10,3 +10,10 @@ node_modules
 __pycache__/
 *.pyc
 .audio-cache/
+
+# Проміжні файли перекладу: каталоги витягу й сирі пакети.
+# Карти перекладів (src/content/i18n/pages, /exercises) у репозиторії — їх читає сайт.
+src/content/i18n/_source/
+src/content/i18n/_batches/
+src/content/i18n/_t/
+_work/

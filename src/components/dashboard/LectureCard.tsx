@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { gradeLabel, type LectureStats } from '@/lib/lecture-stats';
+import { t } from '@/i18n/server';
 
 type Props = {
   slug: string;
@@ -27,7 +28,7 @@ function Ring({ value, color }: { value: number | null; color: string }) {
   const c = 2 * Math.PI * r;
   const v = value ?? 0;
   return (
-    <svg viewBox="0 0 76 76" width="76" height="76" role="img" aria-label={value == null ? 'не оцінено' : `оцінка ${value}%`}>
+    <svg viewBox="0 0 76 76" width="76" height="76" role="img" aria-label={value == null ? t("не оцінено") : t('оцінка {value}%', { value })}>
       <circle cx="38" cy="38" r={r} fill="none" stroke="#e4e9f7" strokeWidth="8" />
       {value != null && (
         <circle
@@ -75,8 +76,8 @@ export function LectureCard({ slug, title, level, icon, cover, stats, completedA
   const hwState = !homework?.assigned
     ? null
     : homework.done
-      ? { text: '✓ домашку здано', cls: 'bg-correct/10 text-correct' }
-      : { text: '📝 домашка чекає', cls: 'bg-gold-fill/70 text-paper' };
+      ? { text: t("✓ домашку здано"), cls: 'bg-correct/10 text-correct' }
+      : { text: t("📝 домашка чекає"), cls: 'bg-gold-fill/70 text-paper' };
 
   return (
     <article className="overflow-hidden rounded-2xl border border-ink-line bg-ink-raised shadow-[0_1px_0_rgba(28,35,72,.04)]">
@@ -89,7 +90,7 @@ export function LectureCard({ slug, title, level, icon, cover, stats, completedA
           <div className="min-w-0 flex-1">
             <p className="mb-1 flex flex-wrap items-center gap-2 font-mono text-[11px] uppercase tracking-widest text-gold-dim">
               {level && <span className="rounded bg-gold-fill px-1.5 py-0.5 text-paper">{level}</span>}
-              {completedAt ? <span>пройдено {fmt(completedAt)}</span> : stats.touched ? <span>в процесі</span> : null}
+              {completedAt ? <span>пройдено {fmt(completedAt)}</span> : stats.touched ? <span>{t("в процесі")}</span> : null}
             </p>
             <Link href={`/learn/${slug}`} className="font-display text-lg leading-snug text-paper hover:text-gold">
               {icon} {title}
@@ -102,9 +103,9 @@ export function LectureCard({ slug, title, level, icon, cover, stats, completedA
         </div>
 
         <div className="flex flex-col gap-3">
-          <Bar label="Лекція — пройдено" p={stats.lecture.pct} done={stats.lecture.done} total={stats.lecture.total} />
+          <Bar label={t("Лекція — пройдено")} p={stats.lecture.pct} done={stats.lecture.done} total={stats.lecture.total} />
           {stats.homework.total > 0 && (
-            <Bar label="Домашка — виконано" p={stats.homework.pct} done={stats.homework.done} total={stats.homework.total} />
+            <Bar label={t("Домашка — виконано")} p={stats.homework.pct} done={stats.homework.done} total={stats.homework.total} />
           )}
         </div>
 

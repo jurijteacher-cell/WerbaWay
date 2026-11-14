@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import type { StudentRow } from '@/lib/students';
@@ -14,9 +16,10 @@ const FILTERS: { id: Filter; label: string }[] = [
 ];
 
 function Spark({ data }: { data: number[] }) {
+  const t = useT();
   const max = Math.max(1, ...data);
   return (
-    <div className="flex h-9 items-end gap-[3px]" aria-label="Активність за 14 днів">
+    <div className="flex h-9 items-end gap-[3px]" aria-label={t("Активність за 14 днів")}>
       {data.map((n, i) => (
         <span
           key={i}
@@ -42,6 +45,7 @@ function Stat({ label, value, tone }: { label: string; value: string | number; t
 }
 
 export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
+  const t = useT();
   const [q, setQ] = useState('');
   const [f, setF] = useState<Filter>('all');
   const list = useMemo(() => {
@@ -60,13 +64,13 @@ export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
           type="search"
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="Пошук за іменем"
+          placeholder={t("Пошук за іменем")}
           className="min-w-0 flex-1 basis-56 rounded-xl border border-ink-line bg-ink-raised px-4 py-2 text-paper outline-none placeholder:text-paper-muted focus:border-gold"
         />
         <div className="ww-nav max-w-full overflow-x-auto [scrollbar-width:none]">
           {FILTERS.map((x) => (
             <button key={x.id} type="button" onClick={() => setF(x.id)} className="ww-nav-link" aria-current={f === x.id ? 'page' : undefined}>
-              {x.label}
+              {t(x.label)}
             </button>
           ))}
         </div>
@@ -93,27 +97,27 @@ export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
                   <p className="truncate font-display text-lg leading-tight text-paper group-hover:text-gold-bright">{r.name}</p>
                   <p className="text-xs text-paper-muted">
                     {relDay(r.lastAt)}
-                    {!r.hasAccount && <span className="ml-2 rounded bg-ink-soft px-1.5 py-0.5">лише Notion</span>}
+                    {!r.hasAccount && <span className="ml-2 rounded bg-ink-soft px-1.5 py-0.5">{t("лише Notion")}</span>}
                   </p>
                 </div>
                 {r.homeworkTodo > 0 && (
-                  <span className="shrink-0 rounded-full bg-[#f4b7c5] px-2 py-0.5 text-[11px] font-semibold text-paper" title="Домашка чекає">
+                  <span className="shrink-0 rounded-full bg-[#f4b7c5] px-2 py-0.5 text-[11px] font-semibold text-paper" title={t("Домашка чекає")}>
                     📝 {r.homeworkTodo}
                   </span>
                 )}
               </div>
               <Spark data={r.spark} />
               <div className="grid grid-cols-4 gap-2 border-t border-dashed border-ink-line pt-3">
-                <Stat label="лекцій" value={r.hasAccount ? r.lecturesDone : '—'} />
-                <Stat label="оцінка" value={acc == null ? '—' : `${acc}%`} tone={acc == null ? undefined : acc >= 80 ? 'good' : acc >= 60 ? 'warn' : 'bad'} />
-                <Stat label="відповідей" value={r.attempts} />
-                <Stat label="слів" value={r.hasAccount ? r.wordsKnown : '—'} />
+                <Stat label={t("лекцій")} value={r.hasAccount ? r.lecturesDone : '—'} />
+                <Stat label={t("оцінка")} value={acc == null ? '—' : `${acc}%`} tone={acc == null ? undefined : acc >= 80 ? 'good' : acc >= 60 ? 'warn' : 'bad'} />
+                <Stat label={t("відповідей")} value={r.attempts} />
+                <Stat label={t("слів")} value={r.hasAccount ? r.wordsKnown : '—'} />
               </div>
             </Link>
           );
         })}
       </div>
-      {list.length === 0 && <p className="py-10 text-center text-paper-muted">Нікого не знайдено.</p>}
+      {list.length === 0 && <p className="py-10 text-center text-paper-muted">{t("Нікого не знайдено.")}</p>}
     </>
   );
 }

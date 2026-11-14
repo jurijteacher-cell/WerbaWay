@@ -7,6 +7,8 @@ import { MenuDrawer, MobileNav, type Tab } from './MobileNav';
 import { ClassWatcher } from './class/ClassWatcher';
 import { Mark } from '@/components/Mark';
 import { TeacherBell } from '@/components/TeacherBell';
+import { LangSwitch } from '@/components/LangSwitch';
+import { getT } from '@/i18n/server';
 
 export async function TopNav() {
   // Preview deployments without Supabase env: render no nav instead of crashing every page.
@@ -20,38 +22,39 @@ export async function TopNav() {
 
   const { data: profile } = await supabase.from('profiles').select('role, full_name').eq('id', user.id).single();
   const isTeacher = profile?.role === 'teacher';
+  const t = getT();
 
   const items: NavItem[] = [
-    { href: '/learn', label: 'Курс' },
-    { href: isTeacher ? '/teacher/class' : '/class', label: 'Клас' },
-    ...(isTeacher ? [{ href: '/teacher/students', label: 'Учні' }] : []),
-    { href: '/words', label: 'Слова' },
-    { href: '/dashboard', label: 'Прогрес' },
-    ...(isTeacher ? [{ href: '/teacher', label: 'Кабінет викладача' }] : []),
-    ...(isTeacher ? [{ href: '/teacher/reports', label: 'Повідомлення про помилки' }] : []),
+    { href: '/learn', label: t('Курс') },
+    { href: isTeacher ? '/teacher/class' : '/class', label: t('Клас') },
+    ...(isTeacher ? [{ href: '/teacher/students', label: t('Учні') }] : []),
+    { href: '/words', label: t('Слова') },
+    { href: '/dashboard', label: t('Прогрес') },
+    ...(isTeacher ? [{ href: '/teacher', label: t('Кабінет викладача') }] : []),
+    ...(isTeacher ? [{ href: '/teacher/reports', label: t('Повідомлення про помилки') }] : []),
   ];
 
   // телефон: 4 головні вкладки внизу, решта — у «Ще»
   const tabs: Tab[] = isTeacher
     ? [
-        { href: '/learn', label: 'Курс', icon: 'book' },
-        { href: '/teacher/class', label: 'Клас', icon: 'class' },
-        { href: '/teacher/students', label: 'Учні', icon: 'users' },
-        { href: '/words', label: 'Слова', icon: 'cards' },
+        { href: '/learn', label: t('Курс'), icon: 'book' },
+        { href: '/teacher/class', label: t('Клас'), icon: 'class' },
+        { href: '/teacher/students', label: t('Учні'), icon: 'users' },
+        { href: '/words', label: t('Слова'), icon: 'cards' },
       ]
     : [
-        { href: '/learn', label: 'Курс', icon: 'book' },
-        { href: '/class', label: 'Клас', icon: 'class' },
-        { href: '/words', label: 'Слова', icon: 'cards' },
-        { href: '/dashboard', label: 'Прогрес', icon: 'chart' },
+        { href: '/learn', label: t('Курс'), icon: 'book' },
+        { href: '/class', label: t('Клас'), icon: 'class' },
+        { href: '/words', label: t('Слова'), icon: 'cards' },
+        { href: '/dashboard', label: t('Прогрес'), icon: 'chart' },
       ];
   const more: Tab[] = isTeacher
     ? [
-        { href: '/dashboard', label: 'Прогрес', icon: 'chart' },
-        { href: '/teacher', label: 'Кабінет викладача', icon: 'desk' },
-        { href: '/forgot-password', label: 'Змінити пароль', icon: 'key' },
+        { href: '/dashboard', label: t('Прогрес'), icon: 'chart' },
+        { href: '/teacher', label: t('Кабінет викладача'), icon: 'desk' },
+        { href: '/forgot-password', label: t('Змінити пароль'), icon: 'key' },
       ]
-    : [{ href: '/forgot-password', label: 'Змінити пароль', icon: 'key' }];
+    : [{ href: '/forgot-password', label: t('Змінити пароль'), icon: 'key' }];
 
   return (
     <>
@@ -64,7 +67,7 @@ export async function TopNav() {
       />
       <div className="mx-auto flex max-w-6xl items-center gap-x-6 gap-y-3 px-4 py-2.5 lg:flex-wrap lg:py-3">
         <MenuDrawer items={[...tabs, ...more]} />
-        <Link href="/learn" className="group flex shrink-0 items-center gap-3" aria-label="Werba Way Language School — на головну">
+        <Link href="/learn" className="group flex shrink-0 items-center gap-3" aria-label={t('Werba Way Language School — на головну')}>
           {/* знак з лого в кільці того ж градієнта, що й на лого */}
           <span
             className="grid h-10 w-10 place-items-center md:h-12 md:w-12 rounded-full p-[2px] shadow-sm transition-transform duration-300 group-hover:-rotate-6"
@@ -85,6 +88,7 @@ export async function TopNav() {
         </Link>
         <div className="flex min-w-0 flex-1 items-center justify-end gap-3">
           <SearchPalette teacher={isTeacher} />
+          <LangSwitch />
           {isTeacher && <TeacherBell />}
           <div className="hidden min-w-0 items-center gap-3 lg:flex">
             <NavLinks items={items} />

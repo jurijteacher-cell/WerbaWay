@@ -3,6 +3,9 @@ import { Onest, Literata, IBM_Plex_Mono } from 'next/font/google';
 import './globals.css';
 import { ReportBug } from '@/components/ReportBug';
 import { TopNav } from '@/components/TopNav';
+import { I18nProvider } from '@/i18n/client';
+import { getDictionary, getLocale, getT } from '@/i18n/server';
+import { HTML_LANG } from '@/i18n/config';
 
 // Ті самі шрифти, що у вправах: Onest — інтерфейс, Literata — польський текст. Обидва мають латиницю з діакритикою й кирилицю.
 const onest = Onest({
@@ -27,10 +30,13 @@ const plexMono = IBM_Plex_Mono({
   display: 'swap',
 });
 
-export const metadata: Metadata = {
-  title: 'Werba Way',
-  description: 'Польська мова для українців — уроки та вправи',
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = getT(getLocale());
+  return {
+    title: 'Werba Way',
+    description: t('Польська мова — уроки та вправи'),
+  };
+}
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -40,15 +46,19 @@ export const viewport: Viewport = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale = getLocale();
+  const dict = getDictionary(locale);
   return (
-    <html lang="uk" className={`${onest.variable} ${literata.variable} ${plexMono.variable}`}>
+    <html lang={HTML_LANG[locale]} className={`${onest.variable} ${literata.variable} ${plexMono.variable}`}>
       <head>
         <link rel="preload" as="image" href="/brand/werba-mark-128.webp" />
       </head>
       <body className="font-sans">
-        <TopNav />
-        {children}
-        <ReportBug />
+        <I18nProvider locale={locale} dict={dict}>
+          <TopNav />
+          {children}
+          <ReportBug />
+        </I18nProvider>
       </body>
     </html>
   );

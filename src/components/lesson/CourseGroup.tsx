@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { useState } from 'react';
 import { ShareButton } from './ShareButton';
@@ -9,6 +11,7 @@ export type CourseCard = { slug: string; title: string; icon?: string; cover?: s
 const VISIBLE = 3;
 
 function Card({ p, canShare }: { p: CourseCard; canShare?: boolean }) {
+  const t = useT();
   return (
     <div className="relative">
     <Link
@@ -31,7 +34,7 @@ function Card({ p, canShare }: { p: CourseCard; canShare?: boolean }) {
       </div>
       <div className="px-4 pb-4 pt-7">
         <h3 className="font-display text-lg leading-snug text-paper group-hover:text-gold-bright">{p.title}</h3>
-        <p className="mt-1 text-sm text-paper-muted">{[p.level, p.number != null ? `урок ${p.number}` : null].filter(Boolean).join(', ')}</p>
+        <p className="mt-1 text-sm text-paper-muted">{[p.level, p.number != null ? t('урок {n}', { n: p.number }) : null].filter(Boolean).join(', ')}</p>
       </div>
     </Link>
       {canShare && (
@@ -45,6 +48,7 @@ function Card({ p, canShare }: { p: CourseCard; canShare?: boolean }) {
 
 /** Курс: перші три лекції видно одразу, решта розгортається кнопкою */
 export function CourseGroup({ id, title, pages, canShare }: { id: string; title: string; pages: CourseCard[]; canShare?: boolean }) {
+  const t = useT();
   const [open, setOpen] = useState(false);
   const rest = pages.slice(VISIBLE);
   return (
@@ -73,7 +77,7 @@ export function CourseGroup({ id, title, pages, canShare }: { id: string; title:
           </div>
           <div className="mt-4 flex justify-center">
             <button type="button" onClick={() => setOpen((o) => !o)} className="ww-btn ww-btn-secondary" aria-expanded={open}>
-              {open ? 'Згорнути ↑' : `Показати ще ${rest.length} ↓`}
+              {open ? t("Згорнути ↑") : t('Показати ще {n} ↓', { n: rest.length })}
             </button>
           </div>
         </>

@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useEffect, useMemo, useState, useTransition } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import type { Lecture } from '@/content/types';
@@ -49,6 +51,7 @@ export function LectureLiveBoard({
   initialAssignments: InitialAssignment[];
   initialSubmissions: InitialSubmission[];
 }) {
+  const t = useT();
   const flatByExerciseId = useMemo(() => {
     const map: Record<string, { exercise: Lecture['sections'][number]['exercises'][number]; sectionLabel: string; lessonSlug: string; indexInSection: number }> = {};
     lecture.sections.forEach((section) => {
@@ -154,7 +157,7 @@ export function LectureLiveBoard({
           ...prev,
           [assignSelection]: prev[assignSelection]
             ? { ...prev[assignSelection], isAssigned: true }
-            : { studentId: assignSelection, studentName: student?.full_name || 'Учень', isAssigned: true, cells: {} },
+            : { studentId: assignSelection, studentName: student?.full_name || t("Учень"), isAssigned: true, cells: {} },
         }));
         setAssignSelection('');
       }
@@ -174,14 +177,14 @@ export function LectureLiveBoard({
     <div className="flex flex-col gap-8">
       {/* Призначення */}
       <div className="rounded-xl border border-ink-line bg-ink-raised/40 p-5">
-        <h2 className="mb-3 font-mono text-xs uppercase tracking-widest text-gold-dim">Призначити лекцію</h2>
+        <h2 className="mb-3 font-mono text-xs uppercase tracking-widest text-gold-dim">{t("Призначити лекцію")}</h2>
         <div className="flex flex-wrap items-center gap-2">
           <select
             value={assignSelection}
             onChange={(e) => setAssignSelection(e.target.value)}
             className="rounded-lg border border-ink-line bg-ink px-3 py-2 text-sm text-paper outline-none focus:border-gold"
           >
-            <option value="">Обери учня…</option>
+            <option value="">{t("Обери учня…")}</option>
             {assignableStudents.map((s) => (
               <option key={s.id} value={s.id}>
                 {s.full_name || s.id}
@@ -246,6 +249,7 @@ function StudentLectureRow({
   flatByExerciseId: Record<string, { exercise: any; sectionLabel: string; lessonSlug: string; indexInSection: number }>;
   onSaved: (exerciseId: string, cell: AnswerCellState) => void;
 }) {
+  const t = useT();
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const current = row.position ? flatByExerciseId[row.position.exerciseId] : undefined;
 
@@ -262,7 +266,7 @@ function StudentLectureRow({
         )}
       </div>
 
-      {!row.position && <p className="text-sm text-paper-muted">Ще не заходив(-ла) у цю лекцію.</p>}
+      {!row.position && <p className="text-sm text-paper-muted">{t("Ще не заходив(-ла) у цю лекцію.")}</p>}
 
       {current && (
         <div className="mb-4">
@@ -294,7 +298,7 @@ function StudentLectureRow({
                 return (
                   <AnswerCell
                     key={exerciseId}
-                    label={`${info.sectionLabel} · Завдання ${info.indexInSection + 1}`}
+                    label={`${info.sectionLabel} · ${t('Завдання {n}', { n: info.indexInSection + 1 })}`}
                     exercise={info.exercise}
                     lessonSlug={info.lessonSlug}
                     studentId={row.studentId}

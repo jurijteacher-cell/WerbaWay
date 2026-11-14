@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useEffect, useRef, useState } from 'react';
 import type { RealtimeChannel } from '@supabase/supabase-js';
 import { createClient } from '@/lib/supabase/client';
@@ -38,6 +40,7 @@ export function ExerciseCard({
   channelName,
   initialSubmission,
 }: Props) {
+  const t = useT();
   const hydrated = initialSubmission ? hydrateAnswerState(exercise, initialSubmission) : null;
   const [mcValue, setMcValue] = useState<number | null>(hydrated?.mcValue ?? null);
   const [textValue, setTextValue] = useState(hydrated?.textValue ?? '');
@@ -140,7 +143,7 @@ export function ExerciseCard({
       });
       const data = await res.json();
       if (!res.ok) {
-        setResult({ ok: false, error: data.error ?? 'Помилка відправки' });
+        setResult({ ok: false, error: data.error ?? t("Помилка відправки") });
       } else {
         const finalResult: SubmitResult = {
           ok: true,
@@ -152,7 +155,7 @@ export function ExerciseCard({
         broadcastDraft(true, finalResult);
       }
     } catch {
-      setResult({ ok: false, error: 'Немає з\'єднання із сервером' });
+      setResult({ ok: false, error: t('Немає зʼєднання із сервером') });
     } finally {
       setStatus('idle');
     }
@@ -217,7 +220,7 @@ export function ExerciseCard({
             disabled={!isAnswered() || status === 'submitting'}
             className="rounded-lg bg-gold-fill px-5 py-2 font-medium text-paper transition-colors hover:bg-gold-fillHover disabled:cursor-not-allowed disabled:opacity-40"
           >
-            {status === 'submitting' ? 'Надсилаю…' : initialSubmission ? 'Оновити відповідь' : 'Відповісти'}
+            {status === 'submitting' ? t("Надсилаю…") : initialSubmission ? t("Оновити відповідь") : t("Відповісти")}
           </button>
         )}
 
@@ -236,22 +239,22 @@ export function ExerciseCard({
         {result?.ok === true && result.autoGraded && (
           <div className="flex flex-col gap-1">
             <p className={`text-sm font-medium ${result.isCorrect ? 'text-correct' : 'text-incorrect'}`}>
-              {result.isCorrect ? '✓ Правильно' : '✕ Неправильно'}
+              {result.isCorrect ? t("✓ Правильно") : t("✕ Неправильно")}
             </p>
             {result.feedback && <p className="text-sm text-paper-muted">{result.feedback}</p>}
           </div>
         )}
         {result?.ok === true && !result.autoGraded && result.isCorrect === null && (
-          <p className="text-sm text-gold-dim">Прийнято, очікує перевірки викладачем</p>
+          <p className="text-sm text-gold-dim">{t("Прийнято, очікує перевірки викладачем")}</p>
         )}
         {result?.ok === true && !result.autoGraded && result.isCorrect !== null && (
           <div className="flex flex-col gap-1">
             <p className={`text-sm font-medium ${result.isCorrect ? 'text-correct' : 'text-incorrect'}`}>
-              {result.isCorrect ? '✓ Зараховано викладачем' : '✕ Не зараховано викладачем'}
+              {result.isCorrect ? t("✓ Зараховано викладачем") : t("✕ Не зараховано викладачем")}
             </p>
             {result.feedback && (
               <p className="text-sm text-paper-muted">
-                <span className="font-medium text-gold">Коментар:</span> {result.feedback}
+                <span className="font-medium text-gold">{t("Коментар:")}</span> {result.feedback}
               </p>
             )}
           </div>

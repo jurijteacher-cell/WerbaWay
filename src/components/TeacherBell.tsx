@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
@@ -35,6 +37,7 @@ function when(iso: string) {
  * тож на іншому пристрої лічильник почнеться заново.
  */
 export function TeacherBell() {
+  const t = useT();
   const [items, setItems] = useState<Item[]>([]);
   const [seen, setSeen] = useState('');
   const [open, setOpen] = useState(false);
@@ -102,8 +105,8 @@ export function TeacherBell() {
         className="ww-bell"
         aria-expanded={open}
         aria-haspopup="menu"
-        aria-label={fresh.length ? `Домашки: ${fresh.length} нових` : 'Домашки'}
-        title="Здані домашки"
+        aria-label={fresh.length ? t('Домашки: {n} нових', { n: fresh.length }) : t('Домашки')}
+        title={t("Здані домашки")}
       >
         <span aria-hidden="true">🔔</span>
         {fresh.length > 0 && <span className="ww-bell-dot">{fresh.length > 9 ? '9+' : fresh.length}</span>}
@@ -111,8 +114,8 @@ export function TeacherBell() {
 
       {open && (
         <div className="ww-menu ww-bell-menu" role="menu">
-          <p className="ww-bell-head">Домашки й повідомлення про помилки</p>
-          {items.length === 0 && <p className="ww-bell-empty">Поки нічого. Тут з&apos;являтимуться здані домашки й повідомлення про помилки.</p>}
+          <p className="ww-bell-head">{t("Домашки й повідомлення про помилки")}</p>
+          {items.length === 0 && <p className="ww-bell-empty">{t("Поки нічого. Тут з&apos;являтимуться здані домашки й повідомлення про помилки.")}</p>}
           {items.slice(0, 12).map((i) => (
             <Link
               key={i.id}

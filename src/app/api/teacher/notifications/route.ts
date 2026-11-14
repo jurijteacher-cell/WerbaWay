@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 import { lessonTitle } from '@/lib/lesson-titles';
+import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
 
@@ -42,7 +43,7 @@ export async function GET() {
   const items = ((data ?? []) as unknown as Row[]).map((r) => {
     const p = r.profiles;
     const name =
-      p?.full_name?.trim() || [p?.first_name, p?.last_name].filter(Boolean).join(' ').trim() || 'Учень';
+      p?.full_name?.trim() || [p?.first_name, p?.last_name].filter(Boolean).join(' ').trim() || t("Учень");
     return {
       kind: 'hw' as const,
       id: `${r.student_id}:${r.lesson_slug}:${r.homework_done_at}`,
@@ -64,7 +65,7 @@ export async function GET() {
   };
   const bugItems = ((bugs ?? []) as unknown as Bug[]).map((b) => {
     const p = b.profiles;
-    const name = p?.full_name?.trim() || [p?.first_name, p?.last_name].filter(Boolean).join(' ').trim() || 'Учень';
+    const name = p?.full_name?.trim() || [p?.first_name, p?.last_name].filter(Boolean).join(' ').trim() || t("Учень");
     return {
       kind: 'bug' as const,
       id: b.id,

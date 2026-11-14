@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
@@ -7,6 +9,7 @@ import { createClient } from '@/lib/supabase/client';
 import { AuthShell, buttonClass, humanAuthError, inputClass } from '@/components/auth/AuthShell';
 
 export default function RegisterPage() {
+  const t = useT();
   const router = useRouter();
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -20,8 +23,8 @@ export default function RegisterPage() {
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
-    if (password.length < 8) return setError('Пароль має містити щонайменше 8 символів');
-    if (password !== password2) return setError('Паролі не збігаються');
+    if (password.length < 8) return setError(t("Пароль має містити щонайменше 8 символів"));
+    if (password !== password2) return setError(t("Паролі не збігаються"));
     setLoading(true);
     const supabase = createClient();
     const { data, error } = await supabase.auth.signUp({
@@ -33,9 +36,9 @@ export default function RegisterPage() {
       },
     });
     setLoading(false);
-    if (error) return setError(humanAuthError(error.message));
+    if (error) return setError(t(humanAuthError(error.message)));
     // already registered + confirmation on: Supabase returns a user without identities
-    if (data.user?.identities?.length === 0) return setError(humanAuthError('User already registered'));
+    if (data.user?.identities?.length === 0) return setError(t(humanAuthError('User already registered')));
     if (data.session) {
       router.push('/dashboard');
       router.refresh();
@@ -48,10 +51,9 @@ export default function RegisterPage() {
     return (
       <main className="flex min-h-screen items-center justify-center px-4 text-center">
         <div className="max-w-sm">
-          <h1 className="mb-2 font-display text-2xl text-paper">Перевір пошту</h1>
+          <h1 className="mb-2 font-display text-2xl text-paper">{t("Перевір пошту")}</h1>
           <p className="text-paper-muted">
-            Ми надіслали лист на <span className="text-paper">{email}</span>. Натисни посилання в ньому, щоб
-            підтвердити акаунт. Якщо листа немає — зазирни у «Спам».
+            Ми надіслали лист на <span className="text-paper">{email}</span>{t(". Натисни посилання в ньому, щоб\n            підтвердити акаунт. Якщо листа немає — зазирни у «Спам».")}
           </p>
           <Link href="/login" className="mt-6 inline-block text-gold hover:text-gold-bright">
             До входу
@@ -62,14 +64,14 @@ export default function RegisterPage() {
   }
 
   return (
-    <AuthShell title="Реєстрація" lead="Створи акаунт у Werba Way">
+    <AuthShell title={t("Реєстрація")} lead={t("Створи акаунт у Werba Way")}>
       <form onSubmit={onSubmit} className="flex flex-col gap-4">
         <div className="grid grid-cols-2 gap-3">
           <input
             type="text"
             required
             autoComplete="given-name"
-            placeholder="Ім'я"
+            placeholder={t("Ім'я")}
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
             className={inputClass}
@@ -78,7 +80,7 @@ export default function RegisterPage() {
             type="text"
             required
             autoComplete="family-name"
-            placeholder="Прізвище"
+            placeholder={t("Прізвище")}
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
             className={inputClass}
@@ -98,7 +100,7 @@ export default function RegisterPage() {
           required
           minLength={8}
           autoComplete="new-password"
-          placeholder="Пароль (мінімум 8 символів)"
+          placeholder={t("Пароль (мінімум 8 символів)")}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           className={inputClass}
@@ -107,14 +109,14 @@ export default function RegisterPage() {
           type="password"
           required
           autoComplete="new-password"
-          placeholder="Повтори пароль"
+          placeholder={t("Повтори пароль")}
           value={password2}
           onChange={(e) => setPassword2(e.target.value)}
           className={inputClass}
         />
         {error && <p className="text-sm text-incorrect">{error}</p>}
         <button type="submit" disabled={loading} className={buttonClass}>
-          {loading ? 'Створюю…' : 'Зареєструватись'}
+          {loading ? t("Створюю…") : t("Зареєструватись")}
         </button>
       </form>
 

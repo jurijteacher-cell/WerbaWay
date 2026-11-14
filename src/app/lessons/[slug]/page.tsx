@@ -8,6 +8,7 @@ import { getSubmissionsForLessons, submissionKey } from '@/lib/submissions';
 import { hasQueueLesson, loadQueueLesson } from '@/lib/queue-lesson';
 import { NotebookLesson } from '@/components/exercises/NotebookLesson';
 import '@/components/exercises/notebook.css';
+import { t } from '@/i18n/server';
 
 export default async function LessonPage({ params }: { params: { slug: string } }) {
   // Content-queue notebook lessons are public (e2e + LMS embeds)
@@ -50,7 +51,7 @@ export default async function LessonPage({ params }: { params: { slug: string } 
   if (!user) redirect('/login');
 
   const { data: profile } = await supabase.from('profiles').select('full_name').eq('id', user.id).single();
-  const studentName = profile?.full_name || user.email || 'Учень';
+  const studentName = profile?.full_name || user.email || t("Учень");
 
   const submissions = await getSubmissionsForLessons(user.id, [lesson.slug]);
   const publicLesson = toPublicLesson(lesson);
@@ -72,7 +73,7 @@ export default async function LessonPage({ params }: { params: { slug: string } 
         ))}
       </div>
 
-      <h2 className="mb-4 font-display text-2xl text-paper">Завдання</h2>
+      <h2 className="mb-4 font-display text-2xl text-paper">{t("Завдання")}</h2>
       <div className="flex flex-col gap-4">
         {publicLesson.exercises.map((exercise, i) => (
           <ExerciseCard

@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useState, useTransition } from 'react';
 import type { Exercise } from '@/content/types';
 import { MultipleChoice } from '@/components/exercises/MultipleChoice';
@@ -50,6 +52,7 @@ export function AnswerCell({
   revalidatePath?: string;
   onSaved: (cell: AnswerCellState) => void;
 }) {
+  const t = useT();
   const [editing, setEditing] = useState(false);
   const [mcValue, setMcValue] = useState<number | null>(cell?.answer?.selectedIndex ?? null);
   const [textValue, setTextValue] = useState<string>(cell?.answer?.text ?? '');
@@ -81,13 +84,13 @@ export function AnswerCell({
   };
 
   const statusBadge = () => {
-    if (!cell) return <span className="text-xs text-paper-muted">порожньо</span>;
-    if (!cell.submitted) return <span className="text-xs text-gold animate-pulse">друкує…</span>;
-    if (cell.editedByTeacher) return <span className="text-xs text-gold-dim">виправлено вчителем</span>;
-    if (cell.isCorrect === null) return <span className="text-xs text-gold-dim">на перевірці</span>;
+    if (!cell) return <span className="text-xs text-paper-muted">{t("порожньо")}</span>;
+    if (!cell.submitted) return <span className="text-xs text-gold animate-pulse">{t("друкує…")}</span>;
+    if (cell.editedByTeacher) return <span className="text-xs text-gold-dim">{t("виправлено вчителем")}</span>;
+    if (cell.isCorrect === null) return <span className="text-xs text-gold-dim">{t("на перевірці")}</span>;
     return (
       <span className={`text-xs font-medium ${cell.isCorrect ? 'text-correct' : 'text-incorrect'}`}>
-        {cell.isCorrect ? '✓ вірно' : '✕ невірно'}
+        {cell.isCorrect ? t("✓ вірно") : t("✕ невірно")}
       </span>
     );
   };
@@ -145,7 +148,7 @@ export function AnswerCell({
               disabled={isPending}
               className="ww-btn ww-btn-primary"
             >
-              {isPending ? 'Зберігаю…' : 'Зберегти'}
+              {isPending ? t("Зберігаю…") : t("Зберегти")}
             </button>
             <button
               onClick={() => setEditing(false)}

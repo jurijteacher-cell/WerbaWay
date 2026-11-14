@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useEffect, useState } from 'react';
 import type { StepDTO } from '@/lib/class/protocol';
 
@@ -53,6 +55,7 @@ export function StepNav({
   onPick?: (s: StepDTO) => void;
   disabled?: boolean;
 }) {
+  const t = useT();
   const groups: { section: string; items: StepDTO[] }[] = [];
   for (const s of steps) {
     const g = groups[groups.length - 1];
@@ -61,7 +64,7 @@ export function StepNav({
   }
   const idx = steps.findIndex((s) => s.url === currentUrl);
   return (
-    <nav aria-label="Кроки заняття" className="ww-steps">
+    <nav aria-label={t("Кроки заняття")} className="ww-steps">
       {groups.map((g) => (
         <div key={g.section} className="ww-steps-group">
           <p className="ww-steps-head">{g.section}</p>

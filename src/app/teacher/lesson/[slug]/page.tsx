@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { requireTeacher } from '@/app/teacher/results/requireTeacher';
 import { loadPage, loadTeacherPage } from '@/lib/pages/pages';
+import { getLocale } from '@/i18n/server';
 import { TeacherNotes } from '@/components/lesson/TeacherNotes';
 
 export const dynamic = 'force-dynamic';
@@ -9,6 +10,6 @@ export default async function TeacherLessonPage({ params }: { params: { slug: st
   await requireTeacher();
   const notes = loadTeacherPage(params.slug);
   if (!notes) notFound();
-  const lesson = loadPage(params.slug);
+  const lesson = loadPage(params.slug, getLocale());
   return <TeacherNotes page={notes} lessonSlug={params.slug} lessonTitle={lesson?.meta.title} />;
 }

@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useState } from 'react';
 import { Lightbulb } from 'lucide-react';
 
@@ -12,6 +14,7 @@ type Props = {
 };
 
 export function OpenText({ placeholder, value, onChange, disabled, sampleAnswer }: Props) {
+  const t = useT();
   const [showSample, setShowSample] = useState(false);
 
   return (
@@ -30,12 +33,12 @@ export function OpenText({ placeholder, value, onChange, disabled, sampleAnswer 
           onClick={() => setShowSample(true)}
           className="mt-2 inline-flex items-center gap-1.5 text-xs text-paper-muted transition-colors hover:text-gold"
         >
-          <Lightbulb size={13} /> Показати приклад відповіді
+          <Lightbulb size={13} /> {t("Показати приклад відповіді")}
         </button>
       )}
       {showSample && sampleAnswer && (
         <p className="mt-2 rounded-lg border border-gold/30 bg-gold/5 px-3 py-2 text-sm text-paper-muted">
-          <span className="font-medium text-gold">Приклад:</span> {sampleAnswer}
+          <span className="font-medium text-gold">{t("Приклад:")}</span> {sampleAnswer}
         </p>
       )}
     </div>

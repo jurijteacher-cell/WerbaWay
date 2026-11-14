@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useEffect, useMemo, useState } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import type { Lesson } from '@/content/types';
@@ -28,6 +30,7 @@ function nameOf(p: InitialSubmission['profiles']): string {
 }
 
 export function LiveBoard({ lesson, initialSubmissions }: { lesson: Lesson; initialSubmissions: InitialSubmission[] }) {
+  const t = useT();
   const [rows, setRows] = useState<Record<string, StudentRow>>(() => {
     const map: Record<string, StudentRow> = {};
     for (const s of initialSubmissions) {
@@ -103,7 +106,7 @@ export function LiveBoard({ lesson, initialSubmissions }: { lesson: Lesson; init
             {lesson.exercises.map((exercise, i) => (
               <AnswerCell
                 key={exercise.id}
-                label={`Завдання ${i + 1}`}
+                label={t('Завдання {n}', { n: i + 1 })}
                 exercise={exercise}
                 lessonSlug={lesson.slug}
                 studentId={row.studentId}

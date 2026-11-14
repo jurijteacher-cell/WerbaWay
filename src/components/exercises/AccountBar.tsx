@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useState, useSyncExternalStore } from 'react';
 import { usePathname } from 'next/navigation';
 import {
@@ -76,6 +78,7 @@ export function AccountBar() {
 }
 
 function LoginWall({ onClose }: { onClose?: () => void }) {
+  const t = useT();
   const a = useSyncExternalStore(subscribe, getState, getServerState);
   const [mode, setMode] = useState<Mode>('login');
   const [email, setEmail] = useState('');
@@ -100,24 +103,24 @@ function LoginWall({ onClose }: { onClose?: () => void }) {
       await signIn(email, password);
     } else if (mode === 'forgot') {
       if (await requestPasswordReset(email)) {
-        setDone('Wysłaliśmy link do zmiany hasła. Sprawdź pocztę (także spam). / Надіслали посилання для зміни пароля — перевір пошту (і спам).');
+        setDone(t("Wysłaliśmy link do zmiany hasła. Sprawdź pocztę (także spam). / Надіслали посилання для зміни пароля — перевір пошту (і спам)."));
       }
     } else {
       if (!firstName.trim() || !lastName.trim()) {
-        setLocalErr('Podaj imię i nazwisko. / Вкажи ім’я та прізвище.');
+        setLocalErr(t("Podaj imię i nazwisko. / Вкажи ім’я та прізвище."));
         return;
       }
       if (password.length < 8) {
-        setLocalErr('Hasło: minimum 8 znaków. / Пароль: мінімум 8 символів.');
+        setLocalErr(t("Hasło: minimum 8 znaków. / Пароль: мінімум 8 символів."));
         return;
       }
       if (password !== password2) {
-        setLocalErr('Hasła nie są takie same. / Паролі не збігаються.');
+        setLocalErr(t("Hasła nie są takie same. / Паролі не збігаються."));
         return;
       }
       const r = await signUp({ email, password, firstName, lastName });
       if (r === 'confirm-mail') {
-        setDone('Wysłaliśmy link potwierdzający. Kliknij go, potem wróć tutaj i zaloguj się. / Надіслали лист із посиланням — підтверди пошту, потім повернись і увійди.');
+        setDone(t("Wysłaliśmy link potwierdzający. Kliknij go, potem wróć tutaj i zaloguj się. / Надіслали лист із посиланням — підтверди пошту, потім повернись і увійди."));
         setMode('login');
       }
     }
@@ -150,15 +153,15 @@ function LoginWall({ onClose }: { onClose?: () => void }) {
         </h2>
         <p className="nb-authlead">
           {mode === 'forgot'
-            ? 'Podaj e-mail — wyślemy link do ustawienia nowego hasła. / Вкажи e-mail — надішлемо посилання для нового пароля.'
-            : 'Twoje wyniki zapisują się na koncie, a nauczyciel widzi postępy. / Результати зберігаються в акаунті, викладач бачить прогрес.'}
+            ? t("Podaj e-mail — wyślemy link do ustawienia nowego hasła. / Вкажи e-mail — надішлемо посилання для нового пароля.")
+            : t("Twoje wyniki zapisują się na koncie, a nauczyciel widzi postępy. / Результати зберігаються в акаунті, викладач бачить прогрес.")}
         </p>
 
         {mode === 'register' ? (
           <div className="nb-authrow">
             <input
               className="nb-blank"
-              placeholder="Imię / Ім’я"
+              placeholder={t("Imię / Ім’я")}
               autoComplete="given-name"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
@@ -166,7 +169,7 @@ function LoginWall({ onClose }: { onClose?: () => void }) {
             />
             <input
               className="nb-blank"
-              placeholder="Nazwisko / Прізвище"
+              placeholder={t("Nazwisko / Прізвище")}
               autoComplete="family-name"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
@@ -191,7 +194,7 @@ function LoginWall({ onClose }: { onClose?: () => void }) {
           <input
             className="nb-blank"
             type="password"
-            placeholder={mode === 'register' ? 'Hasło (min. 8) / Пароль' : 'Hasło / Пароль'}
+            placeholder={mode === 'register' ? t("Hasło (min. 8) / Пароль") : t("Hasło / Пароль")}
             autoComplete={mode === 'register' ? 'new-password' : 'current-password'}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -202,7 +205,7 @@ function LoginWall({ onClose }: { onClose?: () => void }) {
           <input
             className="nb-blank"
             type="password"
-            placeholder="Powtórz hasło / Повтори пароль"
+            placeholder={t("Powtórz hasło / Повтори пароль")}
             autoComplete="new-password"
             value={password2}
             onChange={(e) => setPassword2(e.target.value)}

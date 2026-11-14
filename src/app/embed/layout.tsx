@@ -1,4 +1,6 @@
 import type { ReactNode } from 'react';
+import { I18nProvider } from '@/i18n/client';
+import { getDictionary, getLocale } from '@/i18n/server';
 import { NotebookShell } from '@/components/exercises/NotebookShell';
 import { AccountBar } from '@/components/exercises/AccountBar';
 import { FocusKeeper } from '@/components/exercises/FocusKeeper';
@@ -19,6 +21,9 @@ const EMBED_CSS = `
 
 /** Notebook chrome for Notion iframes — hide root TopNav. */
 export default function EmbedLayout({ children }: { children: ReactNode }) {
+  // мова ембеда приходить параметром ?lang=: у iframe (Notion, клас) куки сайту
+  // недоступні. Параметр кладе в заголовок middleware — layout не бачить searchParams.
+  const locale = getLocale();
   return (
     <div
       className="embed-shell min-h-screen"
@@ -29,12 +34,14 @@ export default function EmbedLayout({ children }: { children: ReactNode }) {
       }}
     >
       <style dangerouslySetInnerHTML={{ __html: EMBED_CSS }} />
-      <NotebookShell levelHint="lekcja · ćwiczenia" aside={<AccountBar />}>
-        {children}
-        <FocusKeeper />
-        <StyleFlag />
-        <ClassAgent />
-      </NotebookShell>
+      <I18nProvider locale={locale} dict={getDictionary(locale)}>
+        <NotebookShell levelHint="lekcja · ćwiczenia" aside={<AccountBar />}>
+          {children}
+          <FocusKeeper />
+          <StyleFlag />
+          <ClassAgent />
+        </NotebookShell>
+      </I18nProvider>
     </div>
   );
 }

@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import type { BookPage } from '@/lib/pages/pages';
 import { FRAME_TAG } from '@/lib/class/protocol';
@@ -45,6 +47,7 @@ export function PageList({
   /** у класі: клік просить викладача відкрити цю сторінку (обом одразу) */
   classNav?: boolean;
 }) {
+  const t = useT();
   const go = classNav
     ? (n: number) => {
         try {
@@ -77,7 +80,7 @@ export function PageList({
       {!compact && (
         <>
           <div className="lp-outline-head">
-            <span className="lp-outline-title">Сторінки</span>
+            <span className="lp-outline-title">{t("Сторінки")}</span>
             <span className="lp-outline-pct">
               {idx + 1} з {pages.length}
             </span>

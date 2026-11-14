@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -15,6 +17,7 @@ export type Tab = { href: string; label: string; icon: TabIcon };
  * На ширших екранах не показується — там меню в шапці.
  */
 export function MobileNav({ tabs, more }: { tabs: Tab[]; more: Tab[] }) {
+  const t = useT();
   const path = usePathname() ?? '/';
   const [open, setOpen] = useState(false);
   const all = [...tabs, ...more];
@@ -27,7 +30,7 @@ export function MobileNav({ tabs, more }: { tabs: Tab[]; more: Tab[] }) {
 
   return (
     <>
-      <nav className="ww-tabbar lg:hidden" aria-label="Головне меню">
+      <nav className="ww-tabbar lg:hidden" aria-label={t("Головне меню")}>
         {tabs.map((t) => (
           <Link key={t.href} href={t.href} className="ww-tab" aria-current={t.href === active ? 'page' : undefined}>
             <Icon name={t.icon} />
@@ -42,7 +45,7 @@ export function MobileNav({ tabs, more }: { tabs: Tab[]; more: Tab[] }) {
           onClick={() => setOpen(true)}
         >
           <Icon name="more" />
-          <span>Ще</span>
+          <span>{t("Ще")}</span>
         </button>
       </nav>
       {open && createPortal(<MoreSheet items={more} active={active} onClose={() => setOpen(false)} />, document.body)}
@@ -51,6 +54,7 @@ export function MobileNav({ tabs, more }: { tabs: Tab[]; more: Tab[] }) {
 }
 
 function MoreSheet({ items, active, onClose }: { items: Tab[]; active?: string; onClose: () => void }) {
+  const t = useT();
   const router = useRouter();
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose();
@@ -67,7 +71,7 @@ function MoreSheet({ items, active, onClose }: { items: Tab[]; active?: string; 
 
   return (
     <div className="ww-sheet-backdrop" role="presentation" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
-      <div className="ww-sheet" role="dialog" aria-modal="true" aria-label="Інші розділи">
+      <div className="ww-sheet" role="dialog" aria-modal="true" aria-label={t("Інші розділи")}>
         <span className="ww-sheet-grip" aria-hidden="true" />
         <ul className="space-y-1">
           {items.map((t) => (
@@ -91,6 +95,7 @@ function MoreSheet({ items, active, onClose }: { items: Tab[]; active?: string; 
  * Кнопка ☰ зліва в шапці (коли повне меню не вміщується) і бічна панель з усіма розділами.
  */
 export function MenuDrawer({ items }: { items: Tab[] }) {
+  const t = useT();
   const path = usePathname() ?? '/';
   const [open, setOpen] = useState(false);
   const active = items
@@ -104,7 +109,7 @@ export function MenuDrawer({ items }: { items: Tab[] }) {
       <button
         type="button"
         className="ww-burger lg:hidden"
-        aria-label="Відкрити меню"
+        aria-label={t("Відкрити меню")}
         aria-expanded={open}
         onClick={() => setOpen(true)}
       >
@@ -118,6 +123,7 @@ export function MenuDrawer({ items }: { items: Tab[] }) {
 }
 
 function Drawer({ items, active, onClose }: { items: Tab[]; active?: string; onClose: () => void }) {
+  const t = useT();
   const router = useRouter();
   const [closing, setClosing] = useState(false);
   const close = () => {
@@ -150,7 +156,7 @@ function Drawer({ items, active, onClose }: { items: Tab[]; active?: string; onC
       role="presentation"
       onMouseDown={(e) => e.target === e.currentTarget && close()}
     >
-      <aside className="ww-drawer" role="dialog" aria-modal="true" aria-label="Меню">
+      <aside className="ww-drawer" role="dialog" aria-modal="true" aria-label={t("Меню")}>
         <div className="mb-5 flex items-center justify-between">
           <span className="flex items-center gap-2.5">
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -159,11 +165,11 @@ function Drawer({ items, active, onClose }: { items: Tab[]; active?: string; onC
               <span style={{ color: '#151c3c' }}>WERBA</span> <span style={{ color: '#a98bea' }}>WAY</span>
             </span>
           </span>
-          <button type="button" onClick={close} className="ww-btn ww-btn-ghost ww-btn-sm" aria-label="Закрити меню">
+          <button type="button" onClick={close} className="ww-btn ww-btn-ghost ww-btn-sm" aria-label={t("Закрити меню")}>
             ✕
           </button>
         </div>
-        <nav aria-label="Головне меню">
+        <nav aria-label={t("Головне меню")}>
           <ul className="space-y-1">
             {items.map((t, i) => (
               <li key={t.href} style={{ animationDelay: `${60 + i * 35}ms` }} className="ww-drawer-item">

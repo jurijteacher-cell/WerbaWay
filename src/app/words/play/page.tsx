@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { listPages } from '@/lib/pages/pages';
+import { getLocale } from '@/i18n/server';
 import { loadDeck, type Word, type WordStat } from '@/lib/words';
 import { WordGame } from '@/components/words/WordGame';
 
@@ -21,7 +22,7 @@ export default async function PlayPage({ searchParams }: { searchParams?: { deck
   ]);
   const allowed = new Set((done ?? []).map((r) => r.lesson_slug as string));
   const slugs = profile?.role === 'teacher' ? asked : asked.filter((s) => allowed.has(s));
-  const titles = new Map(listPages().map((p) => [p.slug, p.title]));
+  const titles = new Map(listPages(getLocale()).map((p) => [p.slug, p.title]));
   const words: Word[] = [];
   const names: string[] = [];
   for (const s of slugs) {

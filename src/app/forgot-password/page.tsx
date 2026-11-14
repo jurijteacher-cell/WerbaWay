@@ -1,11 +1,14 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useState } from 'react';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/client';
 import { AuthShell, buttonClass, humanAuthError, inputClass } from '@/components/auth/AuthShell';
 
 export default function ForgotPasswordPage() {
+  const t = useT();
   const [email, setEmail] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [sent, setSent] = useState(false);
@@ -19,16 +22,15 @@ export default function ForgotPasswordPage() {
       redirectTo: `${window.location.origin}/auth/confirm?next=/reset-password`,
     });
     setLoading(false);
-    if (error) return setError(humanAuthError(error.message));
+    if (error) return setError(t(humanAuthError(error.message)));
     setSent(true);
   };
 
   return (
-    <AuthShell title="Скидання пароля" lead="Вкажи email — надішлемо посилання для нового пароля">
+    <AuthShell title={t("Скидання пароля")} lead={t("Вкажи email — надішлемо посилання для нового пароля")}>
       {sent ? (
         <p className="text-paper-muted">
-          Якщо акаунт із адресою <span className="text-paper">{email}</span> існує, лист уже в дорозі. Посилання
-          діє обмежений час. Перевір і «Спам».
+          Якщо акаунт із адресою <span className="text-paper">{email}</span> {t("існує, лист уже в дорозі. Посилання\n          діє обмежений час. Перевір і «Спам».")}
         </p>
       ) : (
         <form onSubmit={onSubmit} className="flex flex-col gap-4">
@@ -43,7 +45,7 @@ export default function ForgotPasswordPage() {
           />
           {error && <p className="text-sm text-incorrect">{error}</p>}
           <button type="submit" disabled={loading} className={buttonClass}>
-            {loading ? 'Надсилаю…' : 'Надіслати посилання'}
+            {loading ? t("Надсилаю…") : t("Надіслати посилання")}
           </button>
         </form>
       )}

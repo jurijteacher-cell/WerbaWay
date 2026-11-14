@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { listPages } from '@/lib/pages/pages';
+import { getLocale, t } from '@/i18n/server';
 import { loadDeck } from '@/lib/words';
 import { DeckPicker, type DeckInfo } from '@/components/words/DeckPicker';
 
@@ -21,7 +22,7 @@ export default async function WordsPage() {
   const isTeacher = profile?.role === 'teacher';
 
   // Колода з'являється в папці учня, коли викладач завершив лекцію (викладач бачить усі — щоб перевіряти)
-  const pages = listPages();
+  const pages = listPages(getLocale());
   const doneAt = new Map((done ?? []).map((r) => [r.lesson_slug as string, r.completed_at as string]));
   const known = new Map<string, number>();
   for (const r of vp ?? []) if (r.known) known.set(r.lesson_slug as string, (known.get(r.lesson_slug as string) ?? 0) + 1);
@@ -48,7 +49,7 @@ export default async function WordsPage() {
   return (
     <main className="mx-auto max-w-4xl px-4 py-14">
       <p className="font-mono text-xs uppercase tracking-widest text-gold-dim">Werba Way</p>
-      <h1 className="mb-2 font-display text-4xl text-paper">Слова</h1>
+      <h1 className="mb-2 font-display text-4xl text-paper">{t("Слова")}</h1>
       <p className="mb-8 max-w-2xl text-paper-muted">
         Колоди з пройдених лекцій. Обери одну чи кілька, перемішай, злий в одну й тренуй: картки, пари або тест. Познач слова, які
         вже запам’ятав, — вони не заважатимуть.

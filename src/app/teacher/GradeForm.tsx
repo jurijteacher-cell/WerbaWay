@@ -1,9 +1,12 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useState, useTransition } from 'react';
 import { gradeSubmission } from './actions';
 
 export function GradeForm({ submissionId }: { submissionId: string }) {
+  const t = useT();
   const [feedback, setFeedback] = useState('');
   const [isPending, startTransition] = useTransition();
   const [done, setDone] = useState<'correct' | 'incorrect' | null>(null);
@@ -18,7 +21,7 @@ export function GradeForm({ submissionId }: { submissionId: string }) {
   if (done) {
     return (
       <p className={`text-sm font-medium ${done === 'correct' ? 'text-correct' : 'text-incorrect'}`}>
-        Перевірено: {done === 'correct' ? 'зараховано' : 'не зараховано'}
+        Перевірено: {done === 'correct' ? t("зараховано") : t("не зараховано")}
       </p>
     );
   }
@@ -28,7 +31,7 @@ export function GradeForm({ submissionId }: { submissionId: string }) {
       <textarea
         value={feedback}
         onChange={(e) => setFeedback(e.target.value)}
-        placeholder="Коментар для учня (необовʼязково)"
+        placeholder={t("Коментар для учня (необовʼязково)")}
         rows={2}
         className="w-full resize-none rounded-lg border border-ink-line bg-ink px-3 py-2 text-sm text-paper placeholder:text-paper-muted outline-none focus:border-gold"
       />

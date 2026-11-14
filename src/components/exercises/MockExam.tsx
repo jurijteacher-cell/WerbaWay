@@ -4,6 +4,7 @@ import { Fragment, useEffect, useMemo, useRef, useState, useSyncExternalStore, t
 import { AudioTransport } from './AudioTransport';
 import { getAccessToken, getServerState, getState, subscribe } from '@/lib/embed-auth';
 import type { PublicMockExam, MockScore, ItemResult } from '@/lib/mock-exam/core';
+import { useLocale, withLang, useT } from '@/i18n/client';
 
 type Section = PublicMockExam['sections'][number];
 type Task = Section['tasks'][number];
@@ -76,6 +77,7 @@ export function MockExam({ lessonId }: { lessonId: string }) {
 }
 
 function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storageId: string; imie: string }) {
+  const locale = useLocale();
   const [exam, setExam] = useState<PublicMockExam | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>('start');
@@ -95,14 +97,14 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
   const topRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    fetch(`/api/mock-exam/${lessonId}`)
+    fetch(withLang(`/api/mock-exam/${lessonId}`, locale))
       .then((r) => {
         if (!r.ok) throw new Error('load');
         return r.json();
       })
       .then((d: PublicMockExam) => setExam(d))
       .catch(() => setLoadError('Nie udało się wczytać egzaminu. Odśwież stronę.'));
-  }, [lessonId]);
+  }, [lessonId, locale]);
 
   // Attempt state lives in this browser: unfinished answers, the open tab and, after sending,
   // the result itself — so closing the embed by accident never loses work or the score.
@@ -225,7 +227,7 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
     try {
       const token = await getAccessToken();
       if (!token) throw new Error('login');
-      const res = await fetch(`/api/mock-exam/${lessonId}/finish`, {
+      const res = await fetch(withLang(`/api/mock-exam/${lessonId}/finish`, locale), {
         method: 'POST',
         headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
         body: JSON.stringify({
@@ -1208,6 +1210,7 @@ function PromptText({ text }: { text: string }) {
 }
 
 function Writing({ task, ctx }: { task: Task; ctx: Ctx }) {
+  const t = useT();
   const choiceKey = `${task.id}:choice`;
   const choiceId = ctx.answers[choiceKey] ?? '';
   const choice = task.choices?.find((c) => c.id === choiceId);
@@ -1227,7 +1230,7 @@ function Writing({ task, ctx }: { task: Task; ctx: Ctx }) {
           </button>
         ))}
       </div>
-      {!choice && !ctx.locked ? <p className="nb-note">Wybierz jeden temat. / Обери одну тему.</p> : null}
+      {!choice && !ctx.locked ? <p className="nb-note">{t("Wybierz jeden temat. / Обери одну тему.")}</p> : null}
       {choice?.parts.map((p) => {
         const id = `${task.id}:${p.id}`;
         const v = ctx.answers[id] ?? '';
@@ -1256,7 +1259,7 @@ function Writing({ task, ctx }: { task: Task; ctx: Ctx }) {
           </div>
         );
       })}
-      {ctx.locked ? <p className="mx-check-note">Tekst oceni nauczyciel. / Текст оцінить викладач.</p> : null}
+      {ctx.locked ? <p className="mx-check-note">{t("Tekst oceni nauczyciel. / Текст оцінить викладач.")}</p> : null}
     </div>
   );
 }
@@ -1278,6 +1281,7 @@ function ResultView({
   onOpen: (t: Tab) => void;
   onRetake: () => void;
 }) {
+  const t = useT();
   const [askRetake, setAskRetake] = useState(false);
     const auto = score.sections.filter((s) => !s.manual);
   const manual = exam.sections.filter((s) => s.manual);
@@ -1383,7 +1387,7 @@ function ResultView({
       <p className="nb-note">
         {saved === false
           ? 'Wynik nie zapisał się u nauczyciela. Zrób zrzut ekranu i wyślij go.'
-          : 'Wynik wysłany do nauczyciela. / Результат надіслано викладачеві.'}
+          : t("Wynik wysłany do nauczyciela. / Результат надіслано викладачеві.")}
       </p>
       <div className="nb-row mx-center">
         {askRetake ? (

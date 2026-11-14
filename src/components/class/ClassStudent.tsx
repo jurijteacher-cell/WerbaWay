@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { FRAME_TAG, isCourseRoom, roomUrl, type ClassMsg, type RoomState } from '@/lib/class/protocol';
 import { useSteps } from './StepNav';
@@ -10,6 +12,7 @@ type Props = { userId: string; name: string; initialRoom: RoomState };
 
 /** Student side of the class: waiting room → the lesson the teacher opened, mirrored live to the teacher. */
 export function ClassStudent({ userId, name, initialRoom }: Props) {
+  const t = useT();
   const [room, setRoom] = useState<RoomState>(initialRoom);
   /** викладач увімкнув пульт — учень лише дивиться */
   const [locked, setLocked] = useState(false);
@@ -217,7 +220,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
                     : undefined
                 }
                 src={sh.url}
-                title="Заняття"
+                title={t("Заняття")}
                 onLoad={() => onSheetLoad(sh.id)}
               />
             </div>
@@ -230,11 +233,11 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
               📘
             </span>
             <p className="cls-wait-title">{name.split(' ')[0]}, чекаємо на викладача</p>
-            <p className="cls-wait-sub">Урок відкриється тут сам — нічого натискати не треба. Сторінку можна не оновлювати.</p>
+            <p className="cls-wait-sub">{t("Урок відкриється тут сам — нічого натискати не треба. Сторінку можна не оновлювати.")}</p>
             <p className="cls-wait-links">
-              <a href="/learn">Мої лекції</a>
-              <a href="/words">Слова</a>
-              <a href="/dashboard">Прогрес</a>
+              <a href="/learn">{t("Мої лекції")}</a>
+              <a href="/words">{t("Слова")}</a>
+              <a href="/dashboard">{t("Прогрес")}</a>
             </p>
           </div>
         </div>
@@ -245,8 +248,8 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
         </p>
       )}
       {url && steps && sIdx >= 0 && !locked && (
-        <nav className="cls-pager" aria-label="Сторінки заняття">
-          <button type="button" onClick={() => goStep(-1)} disabled={sIdx <= 0} aria-label="Попередня сторінка">
+        <nav className="cls-pager" aria-label={t("Сторінки заняття")}>
+          <button type="button" onClick={() => goStep(-1)} disabled={sIdx <= 0} aria-label={t("Попередня сторінка")}>
             ‹
           </button>
           <span>
@@ -255,14 +258,14 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
             </b>{' '}
             {steps[sIdx].section}
           </span>
-          <button type="button" onClick={() => goStep(1)} disabled={sIdx >= steps.length - 1} aria-label="Наступна сторінка">
+          <button type="button" onClick={() => goStep(1)} disabled={sIdx >= steps.length - 1} aria-label={t("Наступна сторінка")}>
             ›
           </button>
         </nav>
       )}
       {waiting && (
         <p className="cls-link" role="status">
-          {link === 'connecting' ? 'підключаюсь…' : 'немає зв’язку, пробую знову'}
+          {link === 'connecting' ? t("підключаюсь…") : t("немає зв’язку, пробую знову")}
         </p>
       )}
     </div>

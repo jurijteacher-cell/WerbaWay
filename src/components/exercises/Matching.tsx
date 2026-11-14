@@ -1,5 +1,7 @@
 'use client';
 
+
+import { useT } from '@/i18n/client';
 import { useRef, useState } from 'react';
 
 type Item = { pairId: string; label: string };
@@ -17,6 +19,7 @@ type Props = {
 // але без ручного DOM-клонування: React сам перемальовує "плаваючу" фішку.
 // Працює однаково мишею й дотиком, на відміну від застарілого HTML5 dragstart/dragend.
 export function Matching({ words, definitions, value, onChange, disabled }: Props) {
+  const t = useT();
   const [dragId, setDragId] = useState<string | null>(null);
   const [dragLabel, setDragLabel] = useState('');
   const [pos, setPos] = useState({ x: 0, y: 0 });
@@ -65,7 +68,7 @@ export function Matching({ words, definitions, value, onChange, disabled }: Prop
     <div>
       {/* Банк слів для перетягування */}
       <div className="mb-4 flex min-h-[52px] flex-wrap gap-2 rounded-lg border border-dashed border-ink-line bg-ink/40 p-3">
-        {remainingWords.length === 0 && <span className="text-sm text-paper-muted">Усі слова розставлені 🎉</span>}
+        {remainingWords.length === 0 && <span className="text-sm text-paper-muted">{t("Усі слова розставлені 🎉")}</span>}
         {remainingWords.map((w) => (
           <div
             key={w.pairId}
