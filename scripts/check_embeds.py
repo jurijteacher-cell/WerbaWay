@@ -21,6 +21,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 QP = "src/content/queue-published"
 EMBED_RE = re.compile(r"werba-way\.vercel\.app/embed/([a-z0-9-]+)/([a-z-]+)(?:\?blocks=([a-z0-9,\-]+))?")
 REQUIRED = ("vocab", "comm-tasks", "hw")  # without any of these no window of the lesson opens
+FILE_OF = {"mock-exam": "mock"}  # embed kind -> file suffix when they differ
 
 
 def expand(spec):
@@ -77,7 +78,7 @@ def main(argv):
         problems = []
         standalone = any(load(f"{QP}/{lid}-{s}.json", remote) is not None for s in ("test", "mock"))
         for k in (set() if standalone else set(REQUIRED)) | set(kinds):
-            path = f"{QP}/{lid}-{k}.json"
+            path = f"{QP}/{lid}-{FILE_OF.get(k, k)}.json"
             if remote and path not in files:
                 problems.append(f"немає {k}.json")
                 continue
