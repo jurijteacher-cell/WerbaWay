@@ -48,7 +48,7 @@ export default async function WordsPage() {
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-14">
-      <p className="font-mono text-xs uppercase tracking-widest text-gold-dim">Werba Way</p>
+      <p className="ww-label">Werba Way</p>
       <h1 className="mb-2 font-display text-4xl text-paper">{t("Слова")}</h1>
       <p className="mb-8 max-w-2xl text-paper-muted">
         Колоди з пройдених лекцій. Обери одну чи кілька, перемішай, злий в одну й тренуй: картки, пари або тест. Познач слова, які

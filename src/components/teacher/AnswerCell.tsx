@@ -98,7 +98,7 @@ export function AnswerCell({
   return (
     <div className="rounded-lg border border-ink-line bg-ink px-4 py-3">
       <div className="mb-1 flex items-center justify-between gap-3">
-        <span className="text-xs uppercase tracking-wide text-paper-muted">{label}</span>
+        <span className="ww-label">{label}</span>
         {statusBadge()}
       </div>
 

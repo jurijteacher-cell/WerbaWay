@@ -63,7 +63,9 @@
 - Заголовки й інтерфейс — **Onest** (`font-display`, `--font-onest`).
 - Текст лекцій і вправ — **Literata** (`font-serif`).
 - Код і дрібні мітки — **IBM Plex Mono** (`font-mono`).
-- Мітки розділів: 10.5px, `700`, `uppercase`, `letter-spacing: .12em`, колір `paper-faint`.
+- Мітки розділів: 10.5px, `700`, `uppercase`, `letter-spacing: .12em`, колір `paper-faint` — **клас `.ww-label`**
+  (акцентна мітка — `ww-label text-gold`). Не збирати мітку з `font-mono text-xs uppercase tracking-widest…` вручну.
+- Словесний знак у шапці: WERBA — `--ww-ink`, WAY — `--ww-violet` (6.1:1; лавандовий `#a98bea` був 2.8:1).
 - Заголовки мають `letter-spacing: -0.015em` (задано в `@layer base`).
 
 ## 3. Радіуси, тіні, рух

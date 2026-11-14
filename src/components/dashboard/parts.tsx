@@ -5,7 +5,7 @@ import { t } from '@/i18n/server';
 export function Kpi({ label, value, hint, tone }: { label: string; value: ReactNode; hint?: string; tone?: string }) {
   return (
     <div className="rounded-xl border border-ink-line bg-ink-raised p-4">
-      <p className="text-xs uppercase tracking-wider text-paper-muted">{label}</p>
+      <p className="ww-label">{label}</p>
       <p className={`mt-1 font-display text-3xl ${tone ?? 'text-paper'}`}>{value}</p>
       {hint ? <p className="mt-1 text-xs text-paper-muted">{hint}</p> : null}
     </div>

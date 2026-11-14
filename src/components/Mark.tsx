@@ -11,7 +11,7 @@ export function Mark({ size = 44, className = '' }: { size?: number; className?:
   if (step > 1)
     return (
       <span
-        className={`grid place-items-center rounded-full bg-white font-display font-bold text-[#151c3c] ${className}`}
+        className={`grid place-items-center rounded-full bg-white font-display font-bold text-paper ${className}`}
         style={{ width: size, height: size, fontSize: size * 0.52 }}
         aria-hidden="true"
       >

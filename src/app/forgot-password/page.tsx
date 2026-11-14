@@ -34,15 +34,17 @@ export default function ForgotPasswordPage() {
         </p>
       ) : (
         <form onSubmit={onSubmit} className="flex flex-col gap-4">
-          <input
-            type="email"
-            required
-            autoComplete="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className={inputClass}
-          />
+          <label className="ww-field">
+            <span>Email</span>
+            <input
+              type="email"
+              required
+              autoComplete="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className={inputClass}
+            />
+          </label>
           {error && <p className="text-sm text-incorrect">{error}</p>}
           <button type="submit" disabled={loading} className={buttonClass}>
             {loading ? t("Надсилаю…") : t("Надіслати посилання")}

@@ -117,7 +117,7 @@ export default function MoviesPracticePage() {
         Клікни картку фільму й відповідай польською на 5 питань про персонажів — письмово тут або усно з
         викладачем. Кожен фільм можна пройти 3 рази.
       </p>
-      <p className="mb-8 font-mono text-xs uppercase tracking-widest text-gold-dim">
+      <p className="mb-8 ww-label">
         Прогрес: {totalDone} / {totalTarget}
       </p>
 

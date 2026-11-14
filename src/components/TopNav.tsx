@@ -79,12 +79,12 @@ export async function TopNav() {
           </span>
           <span className="leading-none" aria-hidden="true">
             <span className="block text-[15px] font-semibold tracking-[0.14em] md:text-[17px] md:tracking-[0.16em]">
-              <span style={{ color: '#151c3c' }}>WERBA</span> <span style={{ color: '#a98bea' }}>WAY</span>
+              <span style={{ color: 'var(--ww-ink)' }}>WERBA</span> <span style={{ color: 'var(--ww-violet)' }}>WAY</span>
             </span>
             <span className="mt-1.5 hidden items-center gap-1.5 text-[9px] sm:flex font-medium tracking-[0.24em] text-paper-muted">
-              <span className="h-px w-3 bg-[#a98bea]" />
+              <span className="h-px w-3 bg-gold" />
               LANGUAGE SCHOOL
-              <span className="h-px w-3 bg-[#a98bea]" />
+              <span className="h-px w-3 bg-gold" />
             </span>
           </span>
         </Link>

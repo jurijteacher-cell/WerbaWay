@@ -88,7 +88,7 @@ export function LectureCard({ slug, title, level, icon, cover, stats, completedA
       <div className="p-4">
         <div className="mb-3 flex items-start gap-3">
           <div className="min-w-0 flex-1">
-            <p className="mb-1 flex flex-wrap items-center gap-2 font-mono text-[11px] uppercase tracking-widest text-gold-dim">
+            <p className="mb-1 flex flex-wrap items-center gap-2 ww-label">
               {level && <span className="rounded bg-gold-fill px-1.5 py-0.5 text-paper">{level}</span>}
               {completedAt ? <span>пройдено {fmt(completedAt)}</span> : stats.touched ? <span>{t("в процесі")}</span> : null}
             </p>

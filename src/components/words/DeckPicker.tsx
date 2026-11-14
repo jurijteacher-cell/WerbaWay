@@ -75,7 +75,7 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
                 <img src={d.cover} alt="" className="h-16 w-full object-cover" loading="lazy" />
               )}
               <div className="p-4">
-                <div className="mb-1 flex items-center gap-2 font-mono text-[11px] uppercase tracking-widest text-gold-dim">
+                <div className="mb-1 flex items-center gap-2 ww-label">
                   {d.level && <span className="rounded bg-gold-fill px-1.5 py-0.5 text-paper">{d.level}</span>}
                   <span>{d.total} слів</span>
                   <span className="ml-auto text-sm">{on ? '☑' : '☐'}</span>

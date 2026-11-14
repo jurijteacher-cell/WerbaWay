@@ -177,7 +177,7 @@ export function LectureLiveBoard({
     <div className="flex flex-col gap-8">
       {/* Призначення */}
       <div className="rounded-xl border border-ink-line bg-ink-raised/40 p-5">
-        <h2 className="mb-3 font-mono text-xs uppercase tracking-widest text-gold-dim">{t("Призначити лекцію")}</h2>
+        <h2 className="mb-3 ww-label">{t("Призначити лекцію")}</h2>
         <div className="flex flex-wrap items-center gap-2">
           <select
             value={assignSelection}
@@ -270,7 +270,7 @@ function StudentLectureRow({
 
       {current && (
         <div className="mb-4">
-          <p className="mb-1.5 font-mono text-[11px] uppercase tracking-widest text-gold">
+          <p className="mb-1.5 text-gold ww-label">
             Зараз тут · {current.sectionLabel} · Завдання {current.indexInSection + 1}
           </p>
           <AnswerCell
