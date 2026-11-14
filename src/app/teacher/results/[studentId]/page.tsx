@@ -155,7 +155,7 @@ export default async function StudentResultsPage({ params }: { params: { student
     <main className="mx-auto max-w-5xl px-4 py-16">
       <p className="mb-2 text-sm">
         <Link href="/teacher/results" className="text-paper-muted hover:text-gold">
-          ← Усі учні
+          {t("← Усі учні")}
         </Link>
       </p>
       <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
@@ -194,7 +194,7 @@ export default async function StudentResultsPage({ params }: { params: { student
         <section className="mb-10">
           <h2 className="mb-3 font-display text-xl text-paper">{t("Слабкі місця")}</h2>
           <p className="mb-3 text-xs text-paper-muted">
-            Теги граматики, де з першої спроби менше 80% (щонайменше 3 завдання).
+            {t("Теги граматики, де з першої спроби менше 80% (щонайменше 3 завдання).")}
           </p>
           <div className="flex flex-wrap gap-2">
             {weak
@@ -231,7 +231,7 @@ export default async function StudentResultsPage({ params }: { params: { student
                     <td className="px-4 py-3 text-paper-muted">{fmt(m.created_at)}</td>
                     <td className="px-4 py-3">
                       <Link href={`/teacher/exams/${m.id}`} className="text-gold hover:underline">
-                        Помилки й тексти →
+                        {t("Помилки й тексти →")}
                       </Link>
                     </td>
                   </tr>
@@ -246,7 +246,7 @@ export default async function StudentResultsPage({ params }: { params: { student
         <h2 className="mb-3 font-display text-xl text-paper">{t("Уроки")}</h2>
         {lessons.length === 0 && (
           <p className="text-sm text-paper-muted">
-            Ще немає жодної спроби. Учень має увійти в акаунт над вправами в Notion.
+            {t("Ще немає жодної спроби. Учень має увійти в акаунт над вправами в Notion.")}
           </p>
         )}
         <div className="flex flex-col gap-4">

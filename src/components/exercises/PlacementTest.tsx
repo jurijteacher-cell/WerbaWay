@@ -338,8 +338,7 @@ export function PlacementTest({ lessonId }: Props) {
             „oblać”.
           </p>
           <p className="nb-note">
-            Цей тест покаже, з чого почнемо навчання. Це не іспит — його неможливо
-            «завалити».
+            {t("Цей тест покаже, з чого почнемо навчання. Це не іспит — його неможливо «завалити».")}
           </p>
           <ul className="placement-rules">
             <li>Bez słownika i tłumacza.</li>

@@ -68,13 +68,13 @@ function LoginForm() {
 
       <p className="mt-4 text-sm">
         <Link href="/forgot-password" className="text-paper-muted hover:text-gold">
-          Забув(ла) пароль?
+          {t("Забув(ла) пароль?")}
         </Link>
       </p>
       <p className="mt-3 text-sm text-paper-muted">
-        Немає акаунта?{' '}
+        {t("Немає акаунта?")}{' '}
         <Link href="/register" className="text-gold hover:text-gold-bright">
-          Зареєструватись
+          {t("Зареєструватись")}
         </Link>
       </p>
     </AuthShell>

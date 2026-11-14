@@ -133,7 +133,7 @@ export function TeacherBell() {
           ))}
           {items.length > 0 && (
             <Link href="/teacher/students" onClick={() => setOpen(false)} className="ww-bell-all">
-              Усі учні →
+              {t("Усі учні →")}
             </Link>
           )}
         </div>

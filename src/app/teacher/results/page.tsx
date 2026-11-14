@@ -42,7 +42,7 @@ export default async function ResultsPage({ searchParams }: { searchParams?: { a
     <main className="mx-auto max-w-5xl px-4 py-16">
       <p className="mb-2 text-sm">
         <Link href="/teacher" className="text-paper-muted hover:text-gold">
-          ← Кабінет
+          {t("← Кабінет")}
         </Link>
       </p>
       <h1 className="mb-2 font-display text-3xl text-paper">{t("Результати учнів")}</h1>

@@ -40,7 +40,7 @@ export function DeleteLessonButton({ studentId, lessonId }: { studentId: string;
       }}
       className="text-xs text-paper-muted underline hover:text-incorrect disabled:opacity-50"
     >
-      видалити результати уроку
+      {t("видалити результати уроку")}
     </button>
   );
 }

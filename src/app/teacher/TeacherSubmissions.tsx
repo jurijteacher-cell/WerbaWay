@@ -55,7 +55,7 @@ export function TeacherSubmissions({ submissions, lessonTitles }: Props) {
     <>
       <div className="mb-8 flex flex-wrap gap-3">
         <label className="flex flex-col gap-1 text-sm text-paper-muted">
-          Урок
+          {t("Урок")}
           <select
             value={lessonFilter}
             onChange={(e) => setLessonFilter(e.target.value)}
@@ -70,7 +70,7 @@ export function TeacherSubmissions({ submissions, lessonTitles }: Props) {
           </select>
         </label>
         <label className="flex flex-col gap-1 text-sm text-paper-muted">
-          Учень
+          {t("Учень")}
           <select
             value={studentFilter}
             onChange={(e) => setStudentFilter(e.target.value)}

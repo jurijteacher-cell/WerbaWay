@@ -124,7 +124,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
         <div className="flex items-start justify-between gap-4 border-b border-ink-line px-5 pb-3 pt-4">
           <div className="min-w-0">
             <h2 id="ww-share-title" className="font-display text-xl text-paper">
-              Поділитися лекцією
+              {t("Поділитися лекцією")}
             </h2>
             <p className="truncate text-sm text-paper-muted">{title}</p>
           </div>
@@ -203,8 +203,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
         ) : (
           <div className="px-5 pb-5 pt-3">
             <p className="mb-3 text-sm text-paper-muted">
-              Будь-хто з цим посиланням відкриє лекцію й домашку без входу та реєстрації. Відповіді у вправах збережуться, лише
-              якщо учень увійде в акаунт.
+              {t("Будь-хто з цим посиланням відкриє лекцію й домашку без входу та реєстрації. Відповіді у вправах збережуться, лише якщо учень увійде в акаунт.")}
             </p>
             {!data ? (
               <p className="py-4 text-center text-sm text-paper-muted">{t("Завантажую…")}</p>
@@ -231,7 +230,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   <a href={url} target="_blank" rel="noreferrer" className="ww-btn ww-btn-ghost ww-btn-sm">
-                    Відкрити як гість
+                    {t("Відкрити як гість")}
                   </a>
                   {typeof navigator !== 'undefined' && 'share' in navigator && (
                     <button
@@ -239,7 +238,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
                       className="ww-btn ww-btn-ghost ww-btn-sm"
                       onClick={() => void navigator.share({ title, url }).catch(() => {})}
                     >
-                      Надіслати…
+                      {t("Надіслати…")}
                     </button>
                   )}
                   <button
@@ -249,7 +248,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
                     className="ww-btn ww-btn-danger ww-btn-sm ml-auto"
                     title={t("Старе посилання перестане відкриватися")}
                   >
-                    Вимкнути посилання
+                    {t("Вимкнути посилання")}
                   </button>
                 </div>
               </>

@@ -1,5 +1,6 @@
 'use client';
 
+import { useT } from '@/i18n/client';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import type { RealtimeChannel } from '@supabase/supabase-js';
@@ -29,6 +30,7 @@ export function LecturePlayer({
   studentName: string;
   initialSubmissions?: Record<string, SavedSubmission>;
 }) {
+  const t = useT();
   const flat = useMemo<FlatItem[]>(() => {
     let gi = 0;
     return lecture.sections.flatMap((section) =>
@@ -126,7 +128,7 @@ export function LecturePlayer({
       <div className="min-w-0 flex-1">
         <p className="mb-1 ww-label">{active.sectionLabel}</p>
         <p className="mb-4 text-sm text-paper-muted">
-          Вправа {activeIndex + 1} з {flat.length}
+          {t("Вправа {n} з {total}", { n: activeIndex + 1, total: flat.length })}
         </p>
 
         <ExerciseCard
@@ -146,14 +148,14 @@ export function LecturePlayer({
             disabled={activeIndex === 0}
             className="ww-btn ww-btn-secondary"
           >
-            ← Попередня
+            {t("← Попередня")}
           </button>
           <button
             onClick={() => setActiveIndex((i) => Math.min(flat.length - 1, i + 1))}
             disabled={activeIndex === flat.length - 1}
             className="ww-btn ww-btn-secondary"
           >
-            Наступна →
+            {t("Наступна →")}
           </button>
         </div>
       </div>

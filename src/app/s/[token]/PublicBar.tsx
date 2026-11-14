@@ -1,3 +1,4 @@
+import { t } from '@/i18n/server';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
 import { Mark } from '@/components/Mark';
@@ -20,7 +21,7 @@ export async function PublicBar() {
           </span>
         </span>
         <Link href="/login" className="ww-btn ww-btn-ghost ww-btn-sm">
-          Увійти
+          {t("Увійти")}
         </Link>
       </div>
     </header>

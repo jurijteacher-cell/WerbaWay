@@ -53,7 +53,7 @@ export default function ResetPasswordPage() {
       <AuthShell title={t("Посилання не діє")}>
         <p className="text-paper-muted">{t("Посилання застаріло або вже використане. Запроси нове.")}</p>
         <Link href="/forgot-password" className="mt-6 inline-block text-gold hover:text-gold-bright">
-          Надіслати нове посилання
+          {t("Надіслати нове посилання")}
         </Link>
       </AuthShell>
     );

@@ -41,14 +41,14 @@ export function GradeForm({ submissionId }: { submissionId: string }) {
           disabled={isPending}
           className="ww-btn ww-btn-success ww-btn-sm"
         >
-          Зарахувати
+          {t("Зарахувати")}
         </button>
         <button
           onClick={() => send(false)}
           disabled={isPending}
           className="ww-btn ww-btn-danger ww-btn-sm"
         >
-          Не зарахувати
+          {t("Не зарахувати")}
         </button>
       </div>
     </div>

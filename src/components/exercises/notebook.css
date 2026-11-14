@@ -1922,6 +1922,11 @@
   flex: 1;
   min-width: 0;
 }
+/* телефон: «Zacznij od nowa» не влазило між «Poprzedni» і «Następny» і налазило на кнопку —
+   скидання йде окремим рядком під ними */
+@media (max-width: 520px) {
+  .nb-nav-mid { order: 3; flex: 1 0 100%; }
+}
 
 /* ── focus lost to the host page (Notion) — FocusKeeper ───────────────────── */
 .nb-wrap [data-nb-paused] {

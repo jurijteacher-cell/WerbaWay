@@ -66,26 +66,26 @@ export default async function DashboardPage() {
           {isTeacher ? (
             <>
               <Link href="/teacher/class" className="text-gold hover:text-gold-bright">
-                Клас наживо →
+                {t("Клас наживо →")}
               </Link>
               <Link href="/teacher/analytics" className="text-gold hover:text-gold-bright">
-                Аналітика класу →
+                {t("Аналітика класу →")}
               </Link>
             </>
           ) : (
             <Link href="/class" className="text-gold hover:text-gold-bright">
-              Увійти в клас →
+              {t("Увійти в клас →")}
             </Link>
           )}
           <Link href="/forgot-password" className="text-paper-muted hover:text-gold">
-            Змінити пароль
+            {t("Змінити пароль")}
           </Link>
         </div>
       </div>
 
       {isTeacher ? (
         <p className="mb-8 rounded-lg border border-ink-line p-4 text-sm text-paper-muted">
-          Це особистий прогрес. Відповіді з акаунта викладача не записуються — дивись результати учнів в аналітиці класу.
+          {t("Це особистий прогрес. Відповіді з акаунта викладача не записуються — дивись результати учнів в аналітиці класу.")}
         </p>
       ) : null}
 
@@ -120,7 +120,7 @@ export default async function DashboardPage() {
                 <div className="h-full rounded-full bg-gold-solid" style={{ width: `${wordsTotal ? Math.round((wordsKnown / wordsTotal) * 100) : 0}%` }} />
               </div>
               <p className="mt-1 text-xs text-paper-muted">
-                запам’ятано {wordsKnown} з {wordsTotal}
+                {t("запам’ятано {n} з {total}", { n: wordsKnown, total: wordsTotal })}
               </p>
             </div>
             <span className="ww-btn ww-btn-primary">{t("Тренувати →")}</span>
@@ -151,7 +151,7 @@ export default async function DashboardPage() {
 
       {s.attempts === 0 ? (
         <p className="rounded-xl border border-ink-line bg-ink-raised p-6 text-paper-muted">
-          Поки немає жодної відповіді. Виконай вправи у Notion, увійшовши з цим email, — і тут з’явиться прогрес.
+          {t("Поки немає жодної відповіді. Виконай вправи у Notion, увійшовши з цим email, — і тут з’явиться прогрес.")}
         </p>
       ) : (
         <>

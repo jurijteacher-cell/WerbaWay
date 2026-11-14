@@ -255,7 +255,10 @@
     transition: opacity .2s var(--ww-ease), border-color .2s var(--ww-ease), transform .15s var(--ww-ease);
   }
   .ww-report-btn:hover { opacity: 1; border-color: var(--ww-violet); color: var(--ww-violet); transform: translateY(-1px); }
-  @media (max-width: 767px) { .ww-report-btn { bottom: 70px; } .ww-report-btn-text { display: none; } }
+  @media (max-width: 767px) { .ww-report-btn-text { display: none; } }
+  /* де є нижня панель вкладок, плаваюча кнопка перекривала вміст (таблиці, кільця оцінок, «›» гортання):
+     там «Повідомити про помилку» — у меню «Ще» */
+  @media (max-width: 1023px) { body:has(.ww-tabbar) .ww-report-btn { display: none; } }
   .ww-report-back {
     position: fixed; inset: 0; z-index: 80; display: grid; place-items: center; padding: 1rem;
     background: rgba(28, 35, 72, .35); animation: ww-rise .16s var(--ww-ease);

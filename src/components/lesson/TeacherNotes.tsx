@@ -1,3 +1,4 @@
+import { t } from '@/i18n/server';
 import Link from 'next/link';
 import type { ParsedPage } from '@/lib/pages/pages';
 import { Blocks } from './LessonBlocks';
@@ -8,11 +9,11 @@ export function TeacherNotes({ page, lessonSlug, lessonTitle }: { page: ParsedPa
   return (
     <main className="lp-root lp-step" style={{ maxWidth: '52rem' }}>
       <p className="lp-teacher-kicker">
-        Для викладача
+        {t("Для викладача")}
         {lessonTitle && (
           <>
             {' '}
-            до лекції <Link href={`/learn/${lessonSlug}`}>{lessonTitle}</Link>
+            {t("до лекції")} <Link href={`/learn/${lessonSlug}`}>{lessonTitle}</Link>
           </>
         )}
       </p>

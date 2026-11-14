@@ -606,14 +606,14 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
               className={`ww-btn ww-btn-sm ${zoom === 'fit' ? 'ww-btn-primary' : 'ww-btn-secondary'}`}
               title={t("Як на екрані учня")}
             >
-              як в учня
+              {t("як в учня")}
             </button>
             <button
               type="button"
               onClick={() => setZoom('all')}
               className={`ww-btn ww-btn-sm ${zoom === 'all' ? 'ww-btn-primary' : 'ww-btn-secondary'}`}
             >
-              вмістити
+              {t("вмістити")}
             </button>
           </div>
   );
@@ -671,7 +671,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
         label: t("Завершити лекцію"),
         node: (
           <button type="button" onClick={finishLecture} disabled={busy || !course} className="ww-btn ww-btn-success ww-btn-sm">
-            Завершити лекцію
+            {t("Завершити лекцію")}
           </button>
         ),
       });
@@ -681,7 +681,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
         label: t("У зал очікування"),
         node: (
           <button type="button" onClick={leave} disabled={busy} className="ww-btn ww-btn-ghost ww-btn-sm">
-            У зал очікування
+            {t("У зал очікування")}
           </button>
         ),
       });
@@ -696,7 +696,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             aria-expanded={notesOpen}
             className={`ww-btn ww-btn-sm ${notesOpen ? 'ww-btn-accent' : 'ww-btn-secondary'}`}
           >
-            📋 Нотатки
+            {t("📋 Нотатки")}
           </button>
         ),
       });
@@ -764,7 +764,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
         <div className="flex flex-wrap items-center gap-3">
           <h1 className="font-display text-3xl text-paper">{studentName}</h1>
           <a href={`/teacher/students/${studentId}`} className="ww-btn ww-btn-secondary ww-btn-sm">
-            Профіль учня
+            {t("Профіль учня")}
           </a>
         </div>
         <div className="flex items-center gap-4 text-sm text-paper-muted">
@@ -838,8 +838,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
       </div>
       {inCourse && (
         <p className="mb-3 text-xs text-paper-muted">
-          ← → гортають сторінки в учня. З пультом: клік по екрану = клік в учня, колесо = прокрутка, а те, що
-          набираєш на клавіатурі, пишеться в поле учня.
+          {t("← → гортають сторінки в учня. З пультом: клік по екрану = клік в учня, колесо = прокрутка, а те, що набираєш на клавіатурі, пишеться в поле учня.")}
         </p>
       )}
       {err && <p className="mb-3 text-incorrect">Не вдалося: {err}</p>}
@@ -869,7 +868,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             disabled={busy || stepIdx <= 0}
             className="ww-btn ww-btn-secondary"
           >
-            ‹ Назад
+            {t("‹ Назад")}
           </button>
           <p className="min-w-0 flex-1 truncate text-center text-sm text-paper-muted">
             <b className="text-paper">
@@ -884,7 +883,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
             disabled={busy || stepIdx >= course.steps.length - 1}
             className="ww-btn ww-btn-primary"
           >
-            Далі ›
+            {t("Далі ›")}
           </button>
         </div>
       )}
@@ -910,7 +909,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
                   disabled={busy || stepIdx <= 0}
                   className="ww-btn ww-btn-secondary ww-btn-sm"
                 >
-                  ‹ Назад
+                  {t("‹ Назад")}
                 </button>
                 <span className="min-w-0 truncate text-sm text-paper-muted">
                   <b className="text-paper">
@@ -924,7 +923,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
                   disabled={busy || stepIdx >= course.steps.length - 1}
                   className="ww-btn ww-btn-primary ww-btn-sm"
                 >
-                  Далі ›
+                  {t("Далі ›")}
                 </button>
               </>
             )}

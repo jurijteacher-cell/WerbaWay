@@ -244,7 +244,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
       )}
       {locked && url && (
         <p className="cls-lock" role="status">
-          Веде викладач
+          {t("Веде викладач")}
         </p>
       )}
       {url && steps && sIdx >= 0 && !locked && (

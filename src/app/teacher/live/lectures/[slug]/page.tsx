@@ -1,3 +1,4 @@
+import { t } from '@/i18n/server';
 import { notFound, redirect } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
@@ -31,11 +32,11 @@ export default async function LectureLivePage({ params }: { params: { slug: stri
   return (
     <main className="mx-auto max-w-6xl px-4 py-16">
       <Link href="/teacher" className="text-sm text-paper-muted transition-colors hover:text-gold">
-        ← Кабінет викладача
+        {t("← Кабінет викладача")}
       </Link>
       <h1 className="mb-1 mt-4 font-display text-3xl text-paper">Наживо: {lecture.title}</h1>
       <p className="mb-8 text-paper-muted">
-        Бачиш, на якій вправі зараз кожен учень, і що він там пише — оновлюється в реальному часі.
+        {t("Бачиш, на якій вправі зараз кожен учень, і що він там пише — оновлюється в реальному часі.")}
       </p>
 
       <LectureLiveBoard

@@ -101,7 +101,7 @@ export function StepNav({
       ))}
       {idx >= 0 && (
         <p className="px-1 ww-label">
-          Крок {idx + 1} з {steps.length}
+          {t("Крок {n} з {total}", { n: idx + 1, total: steps.length })}
         </p>
       )}
     </nav>
