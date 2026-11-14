@@ -2,6 +2,7 @@ import { existsSync, readFileSync } from 'fs';
 import path from 'path';
 import { applyJson } from '@/i18n/segment.mjs';
 import { DEFAULT_LOCALE, type Locale } from '@/i18n/config';
+import { applyUkMap } from '@/i18n/explicit';
 
 /**
  * Вправи мовою пояснень. Самі файли вправ одні на всі мови — польський матеріал
@@ -16,7 +17,7 @@ const I18N = path.join(process.cwd(), 'src/content/i18n/exercises');
 const cache = new Map<string, Record<string, string> | null>();
 
 function translations(fileName: string, locale: Locale): Record<string, string> | null {
-  if (locale === DEFAULT_LOCALE) return null;
+  // uk теж шукає карту: `.uk.json` є лише у вправ, написаних російською; для решти файлу немає.
   const base = path.basename(fileName).replace(/\.json$/, '');
   const cacheKey = `${base}:${locale}`;
   if (cache.has(cacheKey)) return cache.get(cacheKey) ?? null;
@@ -35,6 +36,7 @@ function translations(fileName: string, locale: Locale): Record<string, string> 
 
 /** Підставляє переклади в уже прочитаний JSON вправи. */
 export function localizeExercise<T>(fileName: string, raw: T, locale: Locale = DEFAULT_LOCALE): T {
+  if (!applyUkMap(locale)) return raw;
   const map = translations(fileName, locale);
   return map ? (applyJson(raw, map) as T) : raw;
 }

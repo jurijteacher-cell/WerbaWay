@@ -6,6 +6,7 @@ module: pl-gram-ru
 moduleTitle: Граматика B1
 cover: https://images.unsplash.com/photo-1762094769338-f08bab7738ad?fm=jpg&q=80&w=1600&fit=max
 notion: https://app.notion.com/p/41796e03c7c881618063d632fdc85f69
+glossLang: ru
 ---
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🎯</span><div class="lp-callout-body">

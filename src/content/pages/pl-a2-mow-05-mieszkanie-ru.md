@@ -6,6 +6,7 @@ module: pl-a2
 moduleTitle: Польська A2
 cover: https://images.unsplash.com/photo-1741156386380-0236c72eb6f9?fm=jpg&q=80&w=1600&fit=max
 notion: https://app.notion.com/p/05-Szukam-mieszkania-Dom-pokoje-i-okolica-RU-40b96e03c7c88180b479fe6197e4eea9
+glossLang: ru
 ---
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🎯</span><div class="lp-callout-body">

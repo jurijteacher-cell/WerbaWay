@@ -11,6 +11,7 @@ export type TranslationMap = Record<string, string>;
 
 export function unitKey(text: string): string;
 export function hasCyrillic(s: string): boolean;
+export function isUnitText(s: string, opts?: { h2?: boolean }): boolean;
 export const SKIP_GLOSS_LANG: RegExp;
 export function pageGlossLang(raw: string): string | null;
 export function walkMarkdown(

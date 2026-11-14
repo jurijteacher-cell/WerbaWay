@@ -23,6 +23,8 @@ export const LOCALE_COOKIE = 'ww_lang';
 export const LOCALE_PARAM = 'lang';
 /** Middleware зводить ?lang= і куку в цей заголовок, щоб мову бачив і layout. */
 export const LOCALE_HEADER = 'x-ww-lang';
+/** '1', якщо мову обрано явно (?lang= або кука), '0' — якщо спрацювала типова. */
+export const LOCALE_EXPLICIT_HEADER = 'x-ww-lang-explicit';
 
 export function isLocale(x: unknown): x is Locale {
   return typeof x === 'string' && (LOCALES as readonly string[]).includes(x);

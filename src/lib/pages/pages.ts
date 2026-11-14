@@ -3,6 +3,7 @@ import path from 'path';
 import { Marked } from 'marked';
 import { applyMarkdown } from '@/i18n/segment.mjs';
 import { DEFAULT_LOCALE, type Locale } from '@/i18n/config';
+import { applyUkMap } from '@/i18n/explicit';
 
 /**
  * Сторінки-лекції, перенесені з Notion: src/content/pages/<slug>.md
@@ -96,7 +97,8 @@ const SLUG_RE = /^[a-z0-9][a-z0-9-]*$/;
 const i18nCache = new Map<string, Record<string, string> | null>();
 
 function pageTranslations(slug: string, locale: Locale): Record<string, string> | null {
-  if (locale === DEFAULT_LOCALE) return null;
+  // uk — мова за замовчуванням: карта `.uk.json` є лише в лекцій, написаних російською (pl-gram-ru, -ru, telc);
+  // для решти файлу немає, і текст лишається як у джерелі.
   const cacheKey = `${slug}:${locale}`;
   if (i18nCache.has(cacheKey)) return i18nCache.get(cacheKey) ?? null;
   const file = path.join(I18N_DIR, `${slug}.${locale}.json`);
@@ -114,6 +116,7 @@ function pageTranslations(slug: string, locale: Locale): Record<string, string> 
 
 /** Текст лекції мовою пояснень: польський матеріал не змінюється ніколи. */
 function localized(slug: string, raw: string, locale: Locale): string {
+  if (!applyUkMap(locale)) return raw;
   const map = pageTranslations(slug, locale);
   return map ? applyMarkdown(raw, map) : raw;
 }
