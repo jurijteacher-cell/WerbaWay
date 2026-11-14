@@ -1,0 +1,354 @@
+{
+  "lesson_id": "pl-a2-57-robilam-czy-zrobilam",
+  "exercise_type": "fill-in-blank",
+  "title": "Robiłam czy zrobiłam? Sygnały, pary i zacząć / skończyć",
+  "instruction": "Pięć krótkich bloków. Na lekcji robimy bloki 1–3, bloki 4 i 5 — jeśli zostanie czas albo w domu.",
+  "estimated_minutes": 18,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "1. Znajdź parę",
+      "instruction": "Kliknij czasownik niedokonany po lewej, a potem jego parę — dokonany — po prawej. Uwaga: niektóre pary to dwa różne słowa.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "brać",
+          "right": "wziąć",
+          "grammar_point": "aspekt-przeszly"
+        },
+        {
+          "id": "g1-2",
+          "left": "mówić",
+          "right": "powiedzieć",
+          "grammar_point": "aspekt-przeszly"
+        },
+        {
+          "id": "g1-3",
+          "left": "oglądać",
+          "right": "obejrzeć",
+          "grammar_point": "aspekt-przeszly"
+        },
+        {
+          "id": "g1-4",
+          "left": "widzieć",
+          "right": "zobaczyć",
+          "grammar_point": "aspekt-przeszly"
+        },
+        {
+          "id": "g1-5",
+          "left": "odpisywać",
+          "right": "odpisać",
+          "grammar_point": "aspekt-przeszly"
+        },
+        {
+          "id": "g1-6",
+          "left": "przygotowywać",
+          "right": "przygotować",
+          "grammar_point": "aspekt-przeszly"
+        },
+        {
+          "id": "g1-7",
+          "left": "zaczynać",
+          "right": "zacząć",
+          "grammar_point": "aspekt-przeszly"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Regularnie czy raz?",
+      "instruction": "Znajdź w zdaniu słowo-sygnał i wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Zwykle ___ do mamy w niedzielę wieczorem.",
+          "answer": "dzwoniłam",
+          "options": [
+            "dzwoniłam",
+            "zadzwoniłam"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "„Zwykle” — regularnie: niedokonany."
+        },
+        {
+          "id": "g2-2",
+          "text": "W środę wreszcie ___ list z urzędu.",
+          "answer": "dostałem",
+          "options": [
+            "dostałem",
+            "dostawałem"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "„Wreszcie” — wynik: dokonany."
+        },
+        {
+          "id": "g2-3",
+          "text": "Przez trzy dni ___ do egzaminu.",
+          "answer": "uczyłam się",
+          "options": [
+            "uczyłam się",
+            "nauczyłam się"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "„Przez trzy dni” — proces: niedokonany."
+        },
+        {
+          "id": "g2-4",
+          "text": "Nagle ___ za oknem sarnę.",
+          "answer": "zobaczyliśmy",
+          "options": [
+            "zobaczyliśmy",
+            "widzieliśmy"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "„Nagle” — jedno zdarzenie: zobaczyć."
+        },
+        {
+          "id": "g2-5",
+          "text": "Babcia co tydzień ___ z biblioteki dwie książki.",
+          "answer": "brała",
+          "options": [
+            "brała",
+            "wzięła"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "„Co tydzień” — powtarzanie: brać."
+        },
+        {
+          "id": "g2-6",
+          "text": "Kiedy byłem dzieckiem, często ___ bajki w telewizji.",
+          "answer": "oglądałem",
+          "options": [
+            "oglądałem",
+            "obejrzałem"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "„Często” — powtarzanie: oglądać."
+        },
+        {
+          "id": "g2-7",
+          "text": "Wczoraj wieczorem siostra wreszcie ___ rodzicom o ślubie.",
+          "answer": "powiedziała",
+          "options": [
+            "powiedziała",
+            "mówiła"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "„Wreszcie” — wynik, jedna rozmowa: powiedzieć."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Zwykle tak, ale raz…",
+      "instruction": "Wpisz czasownik dokonany w tej samej osobie co w pierwszej części zdania.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Zwykle brałam do pracy kanapki, ale w piątek ___ sałatkę.",
+          "answer": "wzięłam",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "brać → wziąć; ja (kobieta): wzięłam — z ę."
+        },
+        {
+          "id": "g3-2",
+          "text": "Tomek zwykle oglądał mecze w barze, ale ostatni mecz ___ w domu.",
+          "answer": "obejrzał",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "oglądać → obejrzeć; on: obejrzał."
+        },
+        {
+          "id": "g3-3",
+          "text": "Codziennie odbieraliśmy dzieci o czwartej, ale w poniedziałek ___ je o drugiej.",
+          "answer": "odebraliśmy",
+          "accept": [
+            "odebrałyśmy"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "odbierać → odebrać; my: odebraliśmy."
+        },
+        {
+          "id": "g3-4",
+          "text": "Dziadek często mówił o wojnie, ale tylko raz ___ nam o swoim bracie.",
+          "answer": "powiedział",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "mówić → powiedzieć; „tylko raz” — dokonany."
+        },
+        {
+          "id": "g3-5",
+          "text": "Klienci zwykle płacili kartą, ale jeden pan ___ gotówką.",
+          "answer": "zapłacił",
+          "grammar_point": "aspekt-podstawy",
+          "explanation": "płacić → zapłacić; on: zapłacił."
+        },
+        {
+          "id": "g3-6",
+          "text": "Od ___ do piętnastego stycznia codziennie pracowałam do późna, ale w sobotę wreszcie odpoczęłam. (11.01)",
+          "answer": "jedenastego",
+          "grammar_point": "data-pelna",
+          "explanation": "Od kiedy? — dopełniacz: od jedenastego."
+        },
+        {
+          "id": "g3-7",
+          "text": "Zwykle przygotowywała obiad sama, ale na urodziny ___ go z mężem.",
+          "answer": "przygotowała",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "przygotowywać → przygotować; ona: przygotowała."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Zacząć, skończyć, jeszcze nie",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "W styczniu mój syn zaczął ___ na basen.",
+          "answer": "chodzić",
+          "options": [
+            "chodzić",
+            "pójść",
+            "chodził"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Po „zacząć” — bezokolicznik niedokonany."
+        },
+        {
+          "id": "g4-2",
+          "text": "Skończyłaś już ___ ten list? Możemy iść?",
+          "answer": "pisać",
+          "options": [
+            "pisać",
+            "napisać",
+            "pisała"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Po „skończyć” — niedokonany: skończyć pisać."
+        },
+        {
+          "id": "g4-3",
+          "text": "Mój mąż przestał ___ słodycze.",
+          "answer": "jeść",
+          "options": [
+            "jeść",
+            "zjeść",
+            "zjadł"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Po „przestać” — niedokonany: przestać jeść."
+        },
+        {
+          "id": "g4-4",
+          "text": "Nigdy nie ___ sushi.",
+          "answer": "jadłam",
+          "options": [
+            "jadłam",
+            "zjadłam"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "„Nigdy nie” — zwykle niedokonany."
+        },
+        {
+          "id": "g4-5",
+          "text": "Sąsiad jeszcze nie ___ mi pieniędzy.",
+          "answer": "oddał",
+          "options": [
+            "oddał",
+            "oddawał"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "„Jeszcze nie” — czekamy na wynik: dokonany."
+        },
+        {
+          "id": "g4-6",
+          "text": "Rano nie zdążyłem ___ zębów!",
+          "answer": "umyć",
+          "options": [
+            "umyć",
+            "myć"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Po „nie zdążyć” — bezokolicznik dokonany."
+        },
+        {
+          "id": "g4-7",
+          "text": "Nie skończyliśmy jeszcze ___ w łazience.",
+          "answer": "remontu",
+          "options": [
+            "remontu",
+            "remont"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Po przeczeniu — dopełniacz: remontu."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "5. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Codziennie kupiłam chleb w tej piekarni.",
+          "answer": "Codziennie kupowałam chleb w tej piekarni.",
+          "accept": [
+            "Kupowałam codziennie chleb w tej piekarni.",
+            "W tej piekarni codziennie kupowałam chleb."
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "„Codziennie” — powtarzanie: kupowałam."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Zaczął napisać książkę o górach.",
+          "answer": "Zaczął pisać książkę o górach.",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Po „zacząć” — niedokonany: pisać."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Wczoraj skazałam szefowi, że jestem chora.",
+          "answer": "Wczoraj powiedziałam szefowi, że jestem chora.",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Skazać = засудити. Сказати = powiedzieć."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "W sobotę popatrzyliśmy dobry film.",
+          "answer": "W sobotę obejrzeliśmy dobry film.",
+          "accept": [
+            "W sobotę oglądaliśmy dobry film."
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Film — obejrzeć (albo oglądać)."
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Ania wziąła moją ładowarkę.",
+          "answer": "Ania wzięła moją ładowarkę.",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Ona: wzięła — z ę. Ą tylko w formie on: wziął."
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Nie zdążyłem skończyć projekt.",
+          "answer": "Nie zdążyłem skończyć projektu.",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Po przeczeniu — dopełniacz: projektu."
+        }
+      ]
+    }
+  ]
+}

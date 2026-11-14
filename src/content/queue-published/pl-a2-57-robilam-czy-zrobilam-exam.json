@@ -1,0 +1,111 @@
+{
+  "lesson_id": "pl-a2-57-robilam-czy-zrobilam",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o raporcie Oleny. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Olena codziennie odbierała telefony od klientów.",
+          "answer": true,
+          "explanation": "W tekście: codziennie odpisywałam na maile i odbierałam telefony."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Olena przygotowywała ofertę dla szkoły przez cały tydzień.",
+          "answer": false,
+          "explanation": "Przygotowywała ją w poniedziałek i we wtorek, a w środę skończyła."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Dyrektorka szkoły odpisała Olenie w piątek.",
+          "answer": false,
+          "explanation": "Dyrektorka jeszcze nie odpisała — w piątek zadzwoniła sekretarka."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Olena i Tomek skończyli nowy tekst na stronę internetową.",
+          "answer": false,
+          "explanation": "Zaczęli go pisać, ale jeszcze go nie skończyli."
+        },
+        {
+          "id": "e1-5",
+          "statement": "W tym tygodniu nikt nie kupił biletów do Wiednia.",
+          "answer": true,
+          "explanation": "W tekście: nikt nie kupił biletów, bo ceny są wysokie."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-57-robilam-czy-zrobilam-e2-dialog.mp3",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: prawda czy fałsz?",
+      "instruction": "Usłyszysz rozmowę Oleny z Tomkiem dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Tomek był na szkoleniu we wtorek i w środę.",
+          "answer": false,
+          "explanation": "Był na szkoleniu w środę i w czwartek; „od wtorku” Olena go nie widziała."
+        },
+        {
+          "id": "e2-2",
+          "statement": "Tomek skończył tekst na stronę w pociągu.",
+          "answer": false,
+          "explanation": "Zaczął go pisać w pociągu, ale nie zdążył skończyć."
+        },
+        {
+          "id": "e2-3",
+          "statement": "Katalogi od Magdy leżą na biurku Oleny.",
+          "answer": true,
+          "explanation": "Tomek: Leżą na twoim biurku."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-57-robilam-czy-zrobilam-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: a, b czy c?",
+      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Jaką część tekstu napisał Tomek?",
+          "options": [
+            "połowę",
+            "jedną trzecią",
+            "cały tekst"
+          ],
+          "answer": "jedną trzecią",
+          "explanation": "Tomek się poprawia: połowę… nie, może jedną trzecią."
+        },
+        {
+          "id": "e3-2",
+          "question": "Kiedy Tomek powiedział panu Piotrowi o urlopie?",
+          "options": [
+            "w poniedziałek",
+            "w czwartek",
+            "w piątek"
+          ],
+          "answer": "w poniedziałek",
+          "explanation": "Powiedziałem mu w poniedziałek."
+        }
+      ]
+    }
+  ]
+}

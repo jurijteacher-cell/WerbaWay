@@ -1,0 +1,65 @@
+{
+  "lesson_id": "pl-a2-55-kontrolna-praca",
+  "exercise_type": "true-false",
+  "title": "Kontrolna: czytanie i słuchanie",
+  "instruction": "Część C — czytanie, część D — słuchanie.",
+  "estimated_minutes": 12,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Część C. Czytanie: prawda czy fałsz?",
+      "instruction": "Trzy zdania o wiadomości Tarasa. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Taras pracuje teraz w restauracji.",
+          "answer": false
+        },
+        {
+          "id": "e1-2",
+          "statement": "Taras ma doświadczenie jako kierowca turystów.",
+          "answer": true
+        },
+        {
+          "id": "e1-3",
+          "statement": "Taras chce zadzwonić do Oleny jeszcze dzisiaj.",
+          "answer": true
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-55-kontrolna-praca-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Część D. Słuchanie: a, b czy c?",
+      "instruction": "Usłyszysz rozmowę Tarasa z Oleną dwa razy. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Do kogo Taras ma wysłać CV?",
+          "options": [
+            "do pana Piotra",
+            "do Oleny",
+            "do pani Agnieszki"
+          ],
+          "answer": "do pani Agnieszki"
+        },
+        {
+          "id": "e2-2",
+          "question": "Do kiedy Taras ma wysłać CV?",
+          "options": [
+            "do piętnastego lutego",
+            "do dwunastego lutego",
+            "do końca lutego"
+          ],
+          "answer": "do dwunastego lutego"
+        }
+      ]
+    }
+  ]
+}

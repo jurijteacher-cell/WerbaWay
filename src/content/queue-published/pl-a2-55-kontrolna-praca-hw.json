@@ -1,0 +1,160 @@
+{
+  "lesson_id": "pl-a2-55-kontrolna-praca",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: typowe błędy modułu „Praca”",
+  "instruction": "Dwa bloki ćwiczeń na typowe błędy. Potem powtórz słowa modułu i napisz list motywacyjny — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Typowe błędy: wybierz",
+      "instruction": "Wybierz poprawną formę. Każde zdanie to jeden typowy błąd z testu.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "W nowym mieście długo szukaliśmy ___.",
+          "answer": "przedszkola",
+          "options": [
+            "przedszkola",
+            "przedszkole",
+            "przedszkolem"
+          ],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Szukać czego? — dopełniacz: przedszkola."
+        },
+        {
+          "id": "h1-2",
+          "text": "Mieszkam na tej ulicy ___ i znam wszystkich sąsiadów.",
+          "answer": "od roku",
+          "options": [
+            "od roku",
+            "przez rok",
+            "rok temu"
+          ],
+          "grammar_point": "przyimki-czasu",
+          "explanation": "Coś trwa do dziś — od roku."
+        },
+        {
+          "id": "h1-3",
+          "text": "Pociąg do Gdyni odjeżdża ___.",
+          "answer": "za pół godziny",
+          "options": [
+            "za pół godziny",
+            "przez pół godziny",
+            "pół godziny temu"
+          ],
+          "grammar_point": "przyimki-czasu",
+          "explanation": "„Через пів години” = za pół godziny."
+        },
+        {
+          "id": "h1-4",
+          "text": "Moja córka urodziła się ___ stycznia.",
+          "answer": "drugiego",
+          "options": [
+            "drugiego",
+            "drugi",
+            "druga"
+          ],
+          "grammar_point": "data-pelna",
+          "explanation": "Kiedy? — dopełniacz: drugiego stycznia."
+        },
+        {
+          "id": "h1-5",
+          "text": "Mój wujek jest ___ w Gdańsku.",
+          "answer": "znanym architektem",
+          "options": [
+            "znanym architektem",
+            "znany architekt",
+            "znanego architekta"
+          ],
+          "grammar_point": "narzednik-zawod-z",
+          "explanation": "Być kim? — narzędnik."
+        },
+        {
+          "id": "h1-6",
+          "text": "Dziadek nie słyszy dobrze, więc często ___ pomagamy.",
+          "answer": "mu",
+          "options": [
+            "mu",
+            "go",
+            "niego"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Pomagać komu? — mu."
+        },
+        {
+          "id": "h1-7",
+          "text": "To jest moja nowa koleżanka. Jutro idę z ___ na basen.",
+          "answer": "nią",
+          "options": [
+            "nią",
+            "ją",
+            "jej"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Po przyimku „z” — z nią."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Mój syn szuka dobry prezent dla dziewczyny.",
+          "answer": "Mój syn szuka dobrego prezentu dla dziewczyny.",
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Szukać czego? — dopełniacz."
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Przez tydzień lecimy do Rzymu.",
+          "answer": "Za tydzień lecimy do Rzymu.",
+          "accept": [
+            "Lecimy do Rzymu za tydzień."
+          ],
+          "grammar_point": "przyimki-czasu",
+          "explanation": "„Через тиждень” = za tydzień."
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Wesele mojej siostry jest szósty czerwca.",
+          "answer": "Wesele mojej siostry jest szóstego czerwca.",
+          "grammar_point": "data-pelna",
+          "explanation": "Kiedy? — szóstego czerwca."
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Pani Ola jest naszą sąsiadka.",
+          "answer": "Pani Ola jest naszą sąsiadką.",
+          "accept": [
+            "Pani Ola to nasza sąsiadka."
+          ],
+          "grammar_point": "narzednik-zawod-z",
+          "explanation": "Być kim? — oba słowa w narzędniku."
+        },
+        {
+          "id": "h2-5",
+          "prompt": "Mam dla jego bilet na mecz.",
+          "answer": "Mam dla niego bilet na mecz.",
+          "accept": [
+            "Mam bilet na mecz dla niego."
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Po przyimku — forma z n-: dla niego."
+        },
+        {
+          "id": "h2-6",
+          "prompt": "Rozmawiałem z dyrektor szkoły.",
+          "answer": "Rozmawiałem z dyrektorem szkoły.",
+          "grammar_point": "narzednik-pelny",
+          "explanation": "Z kim? — narzędnik: z dyrektorem."
+        }
+      ]
+    }
+  ]
+}

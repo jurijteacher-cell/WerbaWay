@@ -1,0 +1,117 @@
+{
+  "lesson_id": "pl-a2-56-co-sie-stalo",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Sześć zdań o tekście „Gdzie jest paszport?”. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Pan Zieliński przyszedł do biura, bo zgubił bilet.",
+          "answer": false,
+          "explanation": "Bilet był — nie miał paszportu."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Pan Zieliński pakował walizkę wczoraj wieczorem.",
+          "answer": true,
+          "explanation": "W tekście: Wczoraj pakowałem walizkę przez cały wieczór."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Olena zadzwoniła do żony pana Zielińskiego.",
+          "answer": false,
+          "explanation": "To pan Zieliński dzwonił do żony."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Rezerwacja w systemie była w porządku.",
+          "answer": true,
+          "explanation": "W tekście: Wszystko było w porządku: bilet był, hotel był."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Olena i pan Zieliński czekali na telefon dwie godziny.",
+          "answer": false,
+          "explanation": "Czekali pół godziny."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Wieczorem pan Zieliński napisał do Oleny z Rzymu.",
+          "answer": true,
+          "explanation": "Napisał SMS-a: „Jestem w Rzymie! Dziękuję!”."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-56-co-sie-stalo-e2-dialog.mp3",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: prawda czy fałsz?",
+      "instruction": "Usłyszysz rozmowę Oleny z Tomkiem dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Autobus zepsuł się w Zakopanem.",
+          "answer": false,
+          "explanation": "Autobus zepsuł się pod Krakowem."
+        },
+        {
+          "id": "e2-2",
+          "statement": "Grupa czekała na mechanika półtorej godziny.",
+          "answer": true,
+          "explanation": "Tomek najpierw mówi „godzinę”, ale poprawia się: półtorej godziny."
+        },
+        {
+          "id": "e2-3",
+          "statement": "Mechanik naprawił autobus.",
+          "answer": false,
+          "explanation": "Nie naprawił — Tomek zamówił drugi autobus."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-56-co-sie-stalo-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: a, b czy c?",
+      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "O której grupa była w Zakopanem?",
+          "options": [
+            "o dziesiątej",
+            "o pierwszej",
+            "wieczorem"
+          ],
+          "answer": "o pierwszej",
+          "explanation": "O dziesiątej mieli być według planu, ale byli o pierwszej."
+        },
+        {
+          "id": "e3-2",
+          "question": "Kiedy grupa pojechała na Gubałówkę?",
+          "options": [
+            "w sobotę",
+            "w niedzielę",
+            "w poniedziałek"
+          ],
+          "answer": "w niedzielę",
+          "explanation": "Zrobili wycieczkę w niedzielę, zamiast w sobotę."
+        }
+      ]
+    }
+  ]
+}

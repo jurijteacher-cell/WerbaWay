@@ -1,0 +1,123 @@
+{
+  "lesson_id": "pl-a2-54-powtorka-praca",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Sześć zdań o e-mailu Oleny „Miesiąc w biurze podróży”. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Biuro podróży, w którym pracuje Olena, jest na Kazimierzu.",
+          "answer": true,
+          "explanation": "W tekście: Pracuję w biurze podróży na Kazimierzu."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Olena ma już umowę na czas nieokreślony.",
+          "answer": false,
+          "explanation": "Chce ją podpisać dopiero po okresie próbnym."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Biurko Oleny stoi przy oknie.",
+          "answer": true,
+          "explanation": "Stoi między oknem a drukarką."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Olena pracuje z Tomkiem nad stroną internetową codziennie.",
+          "answer": false,
+          "explanation": "Pracują nad nią w środy."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Pan Piotr pochwalił Olenę na wigilii firmowej.",
+          "answer": true,
+          "explanation": "Powiedział: „Jest Pani bardzo dobrą konsultantką”."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Olena wcale nie boi się rozmowy w dziale HR.",
+          "answer": false,
+          "explanation": "Pisze: Trochę się boję."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-54-powtorka-praca-e2-dialog.mp3",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: prawda czy fałsz?",
+      "instruction": "Usłyszysz rozmowę Oleny z panią Agnieszką dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Pan Piotr jest zadowolony z Oleny.",
+          "answer": true,
+          "explanation": "Pani Agnieszka: Pan Piotr jest z Pani bardzo zadowolony."
+        },
+        {
+          "id": "e2-2",
+          "statement": "Szkolenie z systemu rezerwacji jest dziesiątego lutego.",
+          "answer": false,
+          "explanation": "Nie dziesiątego, tylko siedemnastego lutego."
+        },
+        {
+          "id": "e2-3",
+          "statement": "Szkolenie jest w biurze.",
+          "answer": false,
+          "explanation": "Jest w hotelu obok dworca."
+        },
+        {
+          "id": "e2-4",
+          "statement": "Olena jedzie na szkolenie z Magdą.",
+          "answer": true,
+          "explanation": "Jedzie tam Pani razem z Magdą."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-54-powtorka-praca-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: a, b czy c?",
+      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Jak długo trwa szkolenie?",
+          "options": [
+            "dwie godziny",
+            "cztery godziny",
+            "cały dzień"
+          ],
+          "answer": "cztery godziny",
+          "explanation": "Od dziewiątej do trzynastej — cztery godziny."
+        },
+        {
+          "id": "e3-2",
+          "question": "Kiedy pan Piotr chce rozmawiać z Oleną o umowie?",
+          "options": [
+            "dwudziestego ósmego lutego",
+            "w połowie lutego",
+            "siedemnastego lutego"
+          ],
+          "answer": "w połowie lutego",
+          "explanation": "Dwudziestego ósmego lutego kończy się okres próbny, a siedemnastego jest szkolenie."
+        }
+      ]
+    }
+  ]
+}
