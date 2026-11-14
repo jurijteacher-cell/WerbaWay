@@ -161,7 +161,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
         if (top.role === 'incoming') return fs.length > 1 ? fs.slice(-2) : fs;
         return fs.length === 1 && top.role === 'current' ? fs : [{ ...top, role: 'current' }];
       });
-    }, 780);
+    }, 320); // перехід триває 0.28s (class.css)
   };
   useEffect(() => () => void (turnTimer.current && clearTimeout(turnTimer.current)), []);
   const newestId = sheets.length ? sheets[sheets.length - 1].id : -1;

@@ -92,7 +92,7 @@ export async function TopNav() {
           <SearchPalette teacher={isTeacher} />
           <LangSwitch />
           {isTeacher && <TeacherBell />}
-          <div className="hidden min-w-0 items-center gap-3 lg:flex">
+          <div className="hidden min-w-0 flex-1 items-center justify-end gap-3 lg:flex">
             <NavLinks items={items} />
             <LogoutButton />
           </div>

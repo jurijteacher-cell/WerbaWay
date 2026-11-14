@@ -8,14 +8,13 @@ import type { BookPage } from '@/lib/pages/pages';
 import { SheetBody } from './LessonBlocks';
 import { PageList } from './PageList';
 
-const TURN_MS = 760;
-
-type Turn = { from: number; dir: 'next' | 'prev' };
+type Dir = 'next' | 'prev';
 
 /**
  * Лекція як блокнот: одна сторінка на екрані, навігація збоку, «Далі» внизу.
- * Перехід — аркуш перегортається навколо корінця (лівого краю); вправи на сторінці, що відлітає,
- * не перезавантажуються (React зберігає той самий елемент за ключем).
+ * Перехід: старий аркуш зникає одразу, сторінка без прокрутки-анімації стає на початок блокнота,
+ * новий аркуш з'являється коротким зсувом у бік гортання (0.28s). Жодних двох аркушів одночасно:
+ * 3D-перегортання високого аркуша разом із плавною прокруткою виглядало як збій.
  */
 export function LessonPager({
   slug,
@@ -35,11 +34,10 @@ export function LessonPager({
 }) {
   const t = useT();
   const [idx, setIdx] = useState(() => Math.min(Math.max(initial, 0), pages.length - 1));
-  const [turn, setTurn] = useState<Turn | null>(null);
+  const [dir, setDir] = useState<Dir | null>(null);
   const [visited, setVisited] = useState<Set<number>>(() => new Set([initial]));
   const [listOpen, setListOpen] = useState(false);
   const bookRef = useRef<HTMLDivElement>(null);
-  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const storeKey = `ww_book_v1|${slug}`;
 
   // відвідані сторінки — лише зручність на цьому пристрої
@@ -56,9 +54,7 @@ export function LessonPager({
   const go = useCallback(
     (n: number) => {
       if (n < 0 || n >= pages.length || n === idx) return;
-      const reduce = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-      if (timer.current) clearTimeout(timer.current);
-      setTurn(reduce ? null : { from: idx, dir: n > idx ? 'next' : 'prev' });
+      setDir(n > idx ? 'next' : 'prev');
       setIdx(n);
       setListOpen(false);
       setVisited((v) => {
@@ -77,9 +73,15 @@ export function LessonPager({
       } catch {
         /* ignore */
       }
-      if (!reduce) timer.current = setTimeout(() => setTurn(null), TURN_MS);
-      const top = bookRef.current?.getBoundingClientRect().top ?? 0;
-      if (top < 0) bookRef.current?.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+      // на початок нової сторінки — миттєво: плавна прокрутка разом зі зміною аркуша смикає екран
+      const book = bookRef.current;
+      if (book) {
+        const top = book.getBoundingClientRect().top;
+        // на вузьких екранах над аркушем прилипає панель гортання — лишаємо під неї місце
+        const bar = book.parentElement?.querySelector<HTMLElement>('.lp-pagebar');
+        const sticky = bar && bar.offsetParent ? bar.offsetHeight + 24 : 16;
+        if (top < sticky) window.scrollTo({ top: window.scrollY + top - sticky, behavior: 'auto' });
+      }
     },
     [idx, pages.length, storeKey]
   );
@@ -97,22 +99,9 @@ export function LessonPager({
     return () => window.removeEventListener('keydown', onKey);
   }, [go, idx]);
 
-  useEffect(() => () => void (timer.current && clearTimeout(timer.current)), []);
-
   const page = pages[idx];
   const next = pages[idx + 1];
   const prev = pages[idx - 1];
-
-  // аркуші: поточний у потоці; під час перегортання — ще й попередній (той самий key → iframe не перевантажується)
-  const sheets: { i: number; role: 'current' | 'leaving' | 'entering' | 'under' }[] = [];
-  if (turn) {
-    if (turn.dir === 'next') {
-      sheets.push({ i: idx, role: 'current' }, { i: turn.from, role: 'leaving' });
-    } else {
-      sheets.push({ i: idx, role: 'entering' }, { i: turn.from, role: 'under' });
-    }
-  } else sheets.push({ i: idx, role: 'current' });
-  sheets.sort((a, b) => a.i - b.i); // стабільний порядок у DOM → React не переставляє iframe
 
   return (
     <div className="lp-pager">
@@ -146,17 +135,15 @@ export function LessonPager({
           )}
         </div>
 
-        <div ref={bookRef} className={`lp-book${turn ? ' is-turning' : ''}`}>
-          {sheets.map(({ i, role }) => (
-            <section
-              key={pages[i].key}
-              className={`lp-sheet is-${role}`}
-              aria-hidden={role === 'leaving' || role === 'under' ? true : undefined}
-              data-kind={pages[i].kind}
-            >
-              <SheetBody page={pages[i]} index={i} total={pages.length} />
-            </section>
-          ))}
+        <div ref={bookRef} className="lp-book">
+          {/* новий key → аркуш монтується заново, і анімація появи програється сама */}
+          <section
+            key={page.key}
+            className={`lp-sheet is-current${dir ? ` enter-${dir}` : ''}`}
+            data-kind={page.kind}
+          >
+            <SheetBody page={page} index={idx} total={pages.length} />
+          </section>
         </div>
 
         <nav className="lp-turn" aria-label={t("Гортання")}>
