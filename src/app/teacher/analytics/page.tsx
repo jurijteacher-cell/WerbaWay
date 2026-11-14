@@ -70,14 +70,14 @@ export default async function TeacherAnalyticsPage() {
     <main className="mx-auto max-w-5xl px-4 py-16">
       <p className="mb-2 text-sm">
         <Link href="/teacher" className="text-paper-muted hover:text-gold">
-          ← Кабінет
+          {t("← Кабінет")}
         </Link>
       </p>
       <h1 className="mb-2 font-display text-3xl text-paper">{t("Аналітика класу")}</h1>
       <p className="mb-8 text-sm text-paper-muted">
-        Дані з вправ у Notion за останні 60 днів; «тиждень» — останні 7 днів. % — правильно з першої спроби.{' '}
+        {t("Дані з вправ у Notion за останні 60 днів; «тиждень» — останні 7 днів. % — правильно з першої спроби.")}{' '}
         <Link href="/teacher/results" className="text-gold hover:underline">
-          Детальні результати →
+          {t("Детальні результати →")}
         </Link>
       </p>
 
@@ -174,7 +174,7 @@ export default async function TeacherAnalyticsPage() {
                       <td className="px-4 py-3 text-paper-muted">{fmtDate(m.created_at)}</td>
                       <td className="px-4 py-3">
                         <Link href={`/teacher/exams/${m.id}`} className="text-gold hover:underline">
-                          Деталі, помилки й тексти →
+                          {t("Деталі, помилки й тексти →")}
                         </Link>
                       </td>
                     </tr>

@@ -48,19 +48,19 @@ export default async function TeacherPage() {
 
       <section className="mb-12 flex flex-wrap gap-3">
         <Link href="/teacher/class" className="ww-btn ww-btn-primary ww-btn-lg">
-          Учні й клас наживо
+          {t("Учні й клас наживо")}
         </Link>
         <Link href="/teacher/students" className="ww-btn ww-btn-secondary ww-btn-lg">
-          Учні й прогрес
+          {t("Учні й прогрес")}
         </Link>
         <Link href="/learn" className="ww-btn ww-btn-secondary ww-btn-lg">
-          Лекції курсу
+          {t("Лекції курсу")}
         </Link>
         <Link href="/teacher/results" className="ww-btn ww-btn-secondary ww-btn-lg">
-          Результати вправ
+          {t("Результати вправ")}
         </Link>
         <Link href="/teacher/analytics" className="ww-btn ww-btn-secondary ww-btn-lg">
-          Аналітика
+          {t("Аналітика")}
         </Link>
       </section>
 

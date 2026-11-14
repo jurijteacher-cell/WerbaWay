@@ -92,7 +92,7 @@ export function LiveBoard({ lesson, initialSubmissions }: { lesson: Lesson; init
   if (studentList.length === 0) {
     return (
       <p className="rounded-xl border border-ink-line bg-ink-raised/50 p-6 text-paper-muted">
-        Поки що ніхто не відкривав цей урок. Список зʼявиться, щойно учень зайде і почне відповідати.
+        {t("Поки що ніхто не відкривав цей урок. Список зʼявиться, щойно учень зайде і почне відповідати.")}
       </p>
     );
   }

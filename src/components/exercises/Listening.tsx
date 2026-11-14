@@ -1,5 +1,6 @@
 'use client';
 
+import { useT } from '@/i18n/client';
 import { MultipleChoice } from './MultipleChoice';
 
 type Props = {
@@ -11,10 +12,11 @@ type Props = {
 };
 
 export function Listening({ audioUrl, options, value, onChange, disabled }: Props) {
+  const t = useT();
   return (
     <div className="flex flex-col gap-4">
       <audio controls src={audioUrl} className="w-full">
-        Твій браузер не підтримує аудіо-плеєр.
+        {t("Твій браузер не підтримує аудіо-плеєр.")}
       </audio>
       <MultipleChoice options={options} value={value} onChange={onChange} disabled={disabled} />
     </div>

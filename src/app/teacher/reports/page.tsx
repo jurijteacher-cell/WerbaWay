@@ -42,7 +42,7 @@ export default async function ReportsPage() {
           {r.lesson_slug ? `${lessonTitle(r.lesson_slug) ?? r.lesson_slug} · ` : ''}
           {r.page_url ? (
             <a href={r.page_url} className="text-gold underline-offset-2 hover:underline">
-              відкрити сторінку
+              {t("відкрити сторінку")}
             </a>
           ) : null}
         </p>
@@ -61,7 +61,7 @@ export default async function ReportsPage() {
       <p className="mt-1 text-sm text-paper-muted">{t("Те, що учні надсилають кнопкою «Помилка?» з будь-якої сторінки.")}</p>
 
       <h2 className="mt-7 ww-label">
-        Нерозібрані · {open.length}
+        {t("Нерозібрані · {n}", { n: open.length })}
       </h2>
       {open.length === 0 ? (
         <p className="mt-2 text-sm text-paper-muted">{t("Порожньо.")}</p>
@@ -72,7 +72,7 @@ export default async function ReportsPage() {
       {closed.length > 0 && (
         <>
           <h2 className="mt-9 ww-label">
-            Розібрані · {closed.length}
+            {t("Розібрані · {n}", { n: closed.length })}
           </h2>
           <ul className="mt-3 flex flex-col gap-3 opacity-70">{closed.map(card)}</ul>
         </>

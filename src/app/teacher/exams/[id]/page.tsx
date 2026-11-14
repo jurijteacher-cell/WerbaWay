@@ -172,16 +172,13 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
 
       {!hasDetail && (
         <section className="mt-8 rounded-xl border border-gold/30 p-4 text-sm text-paper-muted">
-          Для цього результату деталі (відповіді по завданнях і тексти) не збережені в акаунті: його здано до оновлення
-          дашборда. Повний розбір цього іспиту є в Notion, в базі «Wyniki — egzamin próbny». Нові іспити зберігаються з
-          деталями.
+          {tr("Для цього результату деталі (відповіді по завданнях і тексти) не збережені в акаунті: його здано до оновлення дашборда. Повний розбір цього іспиту є в Notion, в базі «Wyniki — egzamin próbny». Нові іспити зберігаються з деталями.")}
         </section>
       )}
 
       {score.backfilled && (
         <section className="mt-8 rounded-xl border border-ink-line p-4 text-sm text-paper-muted">
-          Деталі відновлено зі сторінки результату в Notion: показано лише помилки (правильні відповіді не збережені), а
-          розриви рядків у текстах можуть трохи відрізнятися від того, що ввів учень.
+          {tr("Деталі відновлено зі сторінки результату в Notion: показано лише помилки (правильні відповіді не збережені), а розриви рядків у текстах можуть трохи відрізнятися від того, що ввів учень.")}
         </section>
       )}
 
@@ -189,8 +186,7 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
         <section className="mt-10">
           <h2 className="mb-1 font-display text-xl text-paper">{tr("Помилки по завданнях")}</h2>
           <p className="mb-4 text-xs text-paper-muted">
-            Червоне — неправильно або порожньо, золоте — відкрита відповідь для ручної перевірки. Правильні відповіді
-            згорнуті під кожним завданням.
+            {tr("Червоне — неправильно або порожньо, золоте — відкрита відповідь для ручної перевірки. Правильні відповіді згорнуті під кожним завданням.")}
           </p>
           <div className="flex flex-col gap-6">
             {sections
@@ -229,7 +225,7 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
                             {good.length > 0 && (
                               <details className="mt-3">
                                 <summary className="cursor-pointer text-xs text-paper-muted hover:text-gold">
-                                  Правильні ({good.length})
+                                  {tr("Правильні ({n})", { n: good.length })}
                                 </summary>
                                 <ul className="mt-2 flex flex-col gap-2 text-sm">
                                   {good.map((r) => (

@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { createClient } from '@/lib/supabase/client';
 import { Mark } from '@/components/Mark';
+import { openReport } from '@/components/ReportBug';
 
 export type TabIcon = 'book' | 'class' | 'users' | 'cards' | 'chart' | 'desk' | 'key';
 export type Tab = { href: string; label: string; icon: TabIcon };
@@ -82,9 +83,22 @@ function MoreSheet({ items, active, onClose }: { items: Tab[]; active?: string; 
               </Link>
             </li>
           ))}
+          <li>
+            <button
+              type="button"
+              className="ww-sheet-link w-full"
+              onClick={() => {
+                onClose();
+                openReport();
+              }}
+            >
+              <span aria-hidden="true" className="grid h-6 w-6 place-items-center">⚑</span>
+              {t("Повідомити про помилку")}
+            </button>
+          </li>
         </ul>
         <button type="button" onClick={() => void logout()} className="ww-btn ww-btn-secondary mt-3 w-full">
-          Вийти з акаунта
+          {t("Вийти з акаунта")}
         </button>
       </div>
     </div>
@@ -182,7 +196,7 @@ function Drawer({ items, active, onClose }: { items: Tab[]; active?: string; onC
           </ul>
         </nav>
         <button type="button" onClick={() => void logout()} className="ww-btn ww-btn-secondary mt-auto w-full">
-          Вийти з акаунта
+          {t("Вийти з акаунта")}
         </button>
       </aside>
     </div>

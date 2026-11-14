@@ -230,7 +230,7 @@ export function ExerciseCard({
             onClick={retry}
             className="rounded-lg border border-ink-line px-4 py-2 text-sm text-paper-muted transition-colors hover:border-gold hover:text-gold"
           >
-            Спробувати знову
+            {t("Спробувати знову")}
           </button>
         )}
 

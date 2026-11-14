@@ -56,7 +56,7 @@ export default function RegisterPage() {
             Ми надіслали лист на <span className="text-paper">{email}</span>{t(". Натисни посилання в ньому, щоб\n            підтвердити акаунт. Якщо листа немає — зазирни у «Спам».")}
           </p>
           <Link href="/login" className="mt-6 inline-block text-gold hover:text-gold-bright">
-            До входу
+            {t("До входу")}
           </Link>
         </div>
       </main>
@@ -131,9 +131,9 @@ export default function RegisterPage() {
       </form>
 
       <p className="mt-6 text-sm text-paper-muted">
-        Вже маєш акаунт?{' '}
+        {t("Вже маєш акаунт?")}{' '}
         <Link href="/login" className="text-gold hover:text-gold-bright">
-          Увійти
+          {t("Увійти")}
         </Link>
       </p>
     </AuthShell>

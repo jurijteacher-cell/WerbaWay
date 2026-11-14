@@ -106,7 +106,7 @@ export function AnswerCell({
         <div className="flex items-center justify-between gap-3">
           <p className="text-paper/90">{formatAnswer(exercise, cell?.answer)}</p>
           <button onClick={openEdit} className="shrink-0 text-xs text-gold hover:text-gold-bright">
-            Редагувати
+            {t("Редагувати")}
           </button>
         </div>
       )}
@@ -155,7 +155,7 @@ export function AnswerCell({
               disabled={isPending}
               className="ww-btn ww-btn-ghost"
             >
-              Скасувати
+              {t("Скасувати")}
             </button>
           </div>
         </div>

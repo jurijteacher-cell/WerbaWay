@@ -143,7 +143,7 @@ function Palette({ teacher, onClose }: { teacher: boolean; onClose: () => void }
         <div ref={listRef} id="ww-search-list" role="listbox" className="max-h-[58vh] overflow-y-auto px-2 py-2">
           {groups && flat.length === 0 && !loading && (
             <p className="px-3 py-8 text-center text-sm text-paper-muted">
-              Нічого не знайдено за «{q}». Спробуйте інше слово або частину назви.
+              {t("Нічого не знайдено за «{q}». Спробуйте інше слово або частину назви.", { q })}
             </p>
           )}
           {(groups ?? []).map((g) => (

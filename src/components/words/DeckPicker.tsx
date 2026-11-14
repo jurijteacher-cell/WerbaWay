@@ -34,7 +34,7 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
   if (!decks.length) {
     return (
       <div className="rounded-2xl border border-ink-line bg-ink-raised p-8 text-center text-paper-muted">
-        Тут з’являтимуться слова з кожної пройденої лекції. Поки лекцій немає.
+        {t("Тут з’являтимуться слова з кожної пройденої лекції. Поки лекцій немає.")}
       </div>
     );
   }

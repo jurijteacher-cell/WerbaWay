@@ -110,12 +110,11 @@ export default function MoviesPracticePage() {
   return (
     <main className="mx-auto max-w-4xl px-4 py-16">
       <Link href="/lectures/kino" className="text-sm text-paper-muted transition-colors hover:text-gold">
-        ← Кіно
+        {t("← Кіно")}
       </Link>
       <h1 className="mb-1 mt-4 font-display text-4xl text-paper">Popularne filmy</h1>
       <p className="mb-2 text-paper-muted">
-        Клікни картку фільму й відповідай польською на 5 питань про персонажів — письмово тут або усно з
-        викладачем. Кожен фільм можна пройти 3 рази.
+        {t("Клікни картку фільму й відповідай польською на 5 питань про персонажів — письмово тут або усно з викладачем. Кожен фільм можна пройти 3 рази.")}
       </p>
       <p className="mb-8 ww-label">
         Прогрес: {totalDone} / {totalTarget}
@@ -178,7 +177,7 @@ export default function MoviesPracticePage() {
                   </button>
                 </div>
                 <p className="mt-1 font-mono text-xs text-paper-muted">
-                  Питання {questionIdx + 1} / {active.questions.length}
+                  {t("Питання {n} / {total}", { n: questionIdx + 1, total: active.questions.length })}
                 </p>
               </div>
             </div>

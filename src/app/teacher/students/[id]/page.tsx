@@ -93,7 +93,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
       <Link href="/teacher/students" className="text-sm text-paper-muted hover:text-gold">
-        ← Учні
+        {t("← Учні")}
       </Link>
 
       {/* шапка профілю */}
@@ -108,7 +108,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
         <div className="min-w-0 flex-1">
           <h1 className="font-display text-3xl text-paper">{name}</h1>
           <p className="mt-1 text-sm text-paper-muted">
-            Остання активність: <b className="text-paper">{relDay(lastAt)}</b>
+            {t("Остання активність:")} <b className="text-paper">{relDay(lastAt)}</b>
             {room?.active && <span className="ml-2 rounded-full bg-correct/10 px-2 py-0.5 text-correct">{t("зараз у класі")}</span>}
             {!userId && <span className="ml-2 rounded bg-ink-soft px-1.5 py-0.5">{t("лише Notion, без акаунта")}</span>}
           </p>
@@ -125,12 +125,12 @@ export default async function StudentProfilePage({ params }: { params: { id: str
         <div className="flex flex-wrap gap-2">
           {userId && (
             <Link href={`/teacher/class/${userId}`} className="ww-btn ww-btn-primary">
-              Заняття з учнем
+              {t("Заняття з учнем")}
             </Link>
           )}
           {embedIds[0] && (
             <Link href={`/teacher/results/${embedIds[0]}`} className="ww-btn ww-btn-secondary">
-              Усі відповіді у вправах
+              {t("Усі відповіді у вправах")}
             </Link>
           )}
         </div>
@@ -181,7 +181,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
               </div>
             ) : (
               <p className="text-paper-muted">
-                Ще жодної. Лекція з’явиться тут, коли в класі натиснеш «Завершити лекцію».
+                {t("Ще жодної. Лекція з’явиться тут, коли в класі натиснеш «Завершити лекцію».")}
               </p>
             )}
           </Section>
@@ -253,7 +253,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
         <div className="mt-12" id="access">
           <Section title={t("Доступ до лекцій")}>
             <p className="mb-4 text-sm text-paper-muted">
-              Що учень бачить у «Курсі». Курс відкриває всі його лекції, зокрема майбутні. Лекції, пройдені в класі, відкриваються самі.
+              {t("Що учень бачить у «Курсі». Курс відкриває всі його лекції, зокрема майбутні. Лекції, пройдені в класі, відкриваються самі.")}
             </p>
             <AccessEditor
               studentId={userId}

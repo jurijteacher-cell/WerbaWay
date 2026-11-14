@@ -1,9 +1,11 @@
 'use client';
 
+import { useT } from '@/i18n/client';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 export function ResolveButton({ id }: { id: string }) {
+  const t = useT();
   const [busy, setBusy] = useState(false);
   const router = useRouter();
   return (
@@ -22,7 +24,7 @@ export function ResolveButton({ id }: { id: string }) {
         setBusy(false);
       }}
     >
-      Розібрано
+      {t("Розібрано")}
     </button>
   );
 }

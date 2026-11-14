@@ -77,6 +77,7 @@ export function MockExam({ lessonId }: { lessonId: string }) {
 }
 
 function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storageId: string; imie: string }) {
+  const t = useT();
   const locale = useLocale();
   const [exam, setExam] = useState<PublicMockExam | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -330,7 +331,7 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
             <li>Po wysłaniu zobaczysz wynik i poprawne odpowiedzi.</li>
           </ul>
           <p className="nb-note">
-            Без словника й перекладача. Після відправлення побачиш результат і правильні відповіді.
+            {t("Без словника й перекладача. Після відправлення побачиш результат і правильні відповіді.")}
           </p>
           <p className="mx-saved-note">
             Odpowiedzi zapisują się same. Jeśli zamkniesz okno, wrócisz w to samo miejsce. / Відповіді
@@ -364,8 +365,7 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
                 momentu wznowienia.
               </p>
               <p className="nb-note">
-                Іспит на паузі: час не йде, відповіді збережені. Повернись, коли буде час, — завдання
-                приховані до відновлення.
+                {t("Іспит на паузі: час не йде, відповіді збережені. Повернись, коли буде час, — завдання приховані до відновлення.")}
               </p>
               <div className="nb-row">
                 <button type="button" className="nb-btn" onClick={() => setPaused(false)}>

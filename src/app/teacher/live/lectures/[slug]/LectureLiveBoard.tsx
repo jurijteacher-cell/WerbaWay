@@ -196,7 +196,7 @@ export function LectureLiveBoard({
             disabled={!assignSelection || isPending}
             className="ww-btn ww-btn-primary"
           >
-            Призначити
+            {t("Призначити")}
           </button>
         </div>
         {rosterList.some((r) => r.isAssigned) && (
@@ -221,7 +221,7 @@ export function LectureLiveBoard({
       {/* Ростер */}
       {rosterList.length === 0 && (
         <p className="rounded-xl border border-ink-line bg-ink-raised/50 p-6 text-paper-muted">
-          Ще ніхто не призначений і не заходив у цю лекцію.
+          {t("Ще ніхто не призначений і не заходив у цю лекцію.")}
         </p>
       )}
 
@@ -261,7 +261,7 @@ function StudentLectureRow({
         <h3 className="font-display text-lg text-gold-bright">{row.studentName}</h3>
         {row.isAssigned && (
           <span className="rounded-full border border-gold/30 px-2 py-0.5 text-[10px] uppercase tracking-wide text-gold-dim">
-            призначено
+            {t("призначено")}
           </span>
         )}
       </div>
@@ -271,7 +271,7 @@ function StudentLectureRow({
       {current && (
         <div className="mb-4">
           <p className="mb-1.5 text-gold ww-label">
-            Зараз тут · {current.sectionLabel} · Завдання {current.indexInSection + 1}
+            {t("Зараз тут · {section} · Завдання {n}", { section: current.sectionLabel, n: current.indexInSection + 1 })}
           </p>
           <AnswerCell
             label={current.exercise.prompt}
@@ -288,7 +288,7 @@ function StudentLectureRow({
       {otherEntries.length > 0 && (
         <details className="group">
           <summary className="cursor-pointer text-xs text-paper-muted hover:text-gold">
-            Інші відповіді в цій лекції ({otherEntries.length})
+            {t("Інші відповіді в цій лекції ({n})", { n: otherEntries.length })}
           </summary>
           <div className="mt-3 flex flex-col gap-2">
             {otherEntries.map(([exerciseId, cell]) => {
@@ -321,7 +321,7 @@ function StudentLectureRow({
                     <span className="text-paper/90">{formatAnswer(info.exercise, cell.answer)}</span>
                   </span>
                   <button onClick={() => setExpandedId(exerciseId)} className="shrink-0 text-xs text-gold hover:text-gold-bright">
-                    Редагувати
+                    {t("Редагувати")}
                   </button>
                 </div>
               );

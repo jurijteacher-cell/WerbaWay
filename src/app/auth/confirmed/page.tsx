@@ -14,10 +14,10 @@ export default function ConfirmedPage({ searchParams }: { searchParams?: { error
             <p className="text-paper-muted">{t("Воно застаріло або вже використане. Спробуй увійти або запроси новий лист.")}</p>
             <div className="mt-6 flex justify-center gap-6">
               <Link href="/login" className="text-gold hover:text-gold-bright">
-                Увійти
+                {t("Увійти")}
               </Link>
               <Link href="/forgot-password" className="text-gold hover:text-gold-bright">
-                Скинути пароль
+                {t("Скинути пароль")}
               </Link>
             </div>
           </>
@@ -25,10 +25,10 @@ export default function ConfirmedPage({ searchParams }: { searchParams?: { error
           <>
             <h1 className="mb-2 font-display text-2xl text-paper">{t("Пошту підтверджено")}</h1>
             <p className="text-paper-muted">
-              Готово. Можна входити — на сайті або у вправах у Notion (там введи ті самі email і пароль).
+              {t("Готово. Можна входити — на сайті або у вправах у Notion (там введи ті самі email і пароль).")}
             </p>
             <Link href="/login?next=/dashboard" className="mt-6 inline-block text-gold hover:text-gold-bright">
-              Увійти
+              {t("Увійти")}
             </Link>
           </>
         )}

@@ -53,7 +53,7 @@ export default function ForgotPasswordPage() {
       )}
       <p className="mt-6 text-sm">
         <Link href="/login" className="text-gold hover:text-gold-bright">
-          ← До входу
+          {t("← До входу")}
         </Link>
       </p>
     </AuthShell>

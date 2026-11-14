@@ -27,7 +27,7 @@ export default async function LecturePage({ params }: { params: { slug: string }
   return (
     <main className="mx-auto max-w-4xl px-4 py-16">
       <Link href="/lectures" className="text-sm text-paper-muted transition-colors hover:text-gold">
-        ← Усі лекції
+        {t("← Усі лекції")}
       </Link>
       <h1 className="mb-1 mt-4 font-display text-4xl text-paper">{lecture.title}</h1>
       {lecture.subtitle && <p className="mb-4 text-lg text-paper-muted">{lecture.subtitle}</p>}
@@ -37,7 +37,7 @@ export default async function LecturePage({ params }: { params: { slug: string }
           href="/lectures/kino/movies"
           className="ww-btn ww-btn-ghost mb-8 inline-flex items-center gap-2"
         >
-          🎬 Практика: обговорення фільмів →
+          {t("🎬 Практика: обговорення фільмів →")}
         </Link>
       )}
 

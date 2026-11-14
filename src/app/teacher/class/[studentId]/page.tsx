@@ -33,7 +33,7 @@ export default async function TeacherClassPage({ params }: { params: { studentId
     <main>
       <div className="mx-auto max-w-[1700px] px-4 pt-8">
         <Link href="/teacher/class" className="text-sm text-paper-muted hover:text-gold">
-          ← Усі учні
+          {t("← Усі учні")}
         </Link>
       </div>
       <ClassTeacher

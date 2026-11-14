@@ -1,5 +1,6 @@
 'use client';
 
+import { useT } from '@/i18n/client';
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 
 export type ToolbarItem = {
@@ -18,6 +19,7 @@ export type ToolbarItem = {
  * тож кількість видимих кнопок перераховується на кожну зміну розміру вікна.
  */
 export function Toolbar({ items, className = '' }: { items: ToolbarItem[]; className?: string }) {
+  const t = useT();
   const wrapRef = useRef<HTMLDivElement>(null);
   const measureRef = useRef<HTMLDivElement>(null);
   const moreRef = useRef<HTMLDivElement>(null);
@@ -92,7 +94,7 @@ export function Toolbar({ items, className = '' }: { items: ToolbarItem[]; class
             aria-haspopup="menu"
             className={`ww-btn ww-btn-sm ${open ? 'ww-btn-accent' : 'ww-btn-secondary'}`}
           >
-            Ще
+            {t("Ще")}
             <span className="ww-toolbar-count">{hidden.length}</span>
           </button>
           {open && (

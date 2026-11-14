@@ -106,7 +106,7 @@ export function WordGame({
   return (
     <main className="mx-auto max-w-3xl px-4 py-8">
       <Link href="/words" className="text-sm text-paper-muted hover:text-gold">
-        ← До колод
+        {t("← До колод")}
       </Link>
       <div className="mt-3 flex flex-wrap items-end justify-between gap-3">
         <div className="min-w-0">
@@ -136,7 +136,7 @@ export function WordGame({
           Спершу: {dir === 'pl' ? t("польське слово") : t("переклад")} ⇄
         </button>
         <button type="button" className="text-gold hover:text-gold-bright" onClick={() => setRound((r) => r + 1)}>
-          🔀 Перемішати
+          {t("🔀 Перемішати")}
         </button>
         {saveErr && <span className="text-incorrect">{t("не вдалося зберегти, спробую ще")}</span>}
       </div>
@@ -224,7 +224,7 @@ function Cards({ pool, dir, update, onAgain }: Common) {
       <div className="mb-2 flex justify-between text-xs text-paper-muted">
         <span>{w.group}</span>
         <span>
-          лишилось {queue.length} · знаю {done}
+          {t("лишилось {n} · знаю {done}", { n: queue.length, done })}
         </span>
       </div>
       <button
@@ -284,14 +284,14 @@ function Cards({ pool, dir, update, onAgain }: Common) {
           onClick={() => answer(false)}
           className="ww-btn ww-btn-danger ww-btn-lg"
         >
-          ← Ще вчу
+          {t("← Ще вчу")}
         </button>
         <button
           type="button"
           onClick={() => answer(true)}
           className="ww-btn ww-btn-success ww-btn-lg"
         >
-          Знаю ✓ →
+          {t("Знаю ✓ →")}
         </button>
       </div>
     </div>
@@ -377,7 +377,7 @@ function Match({ pool, dir, update, onAgain }: Common) {
   return (
     <div>
       <p className="mb-3 text-sm text-paper-muted">
-        Раунд {Math.floor(idx / PAIRS) + 1} з {Math.ceil(pool.length / PAIRS)} · помилок: {mistakes}
+        {t("Раунд {n} з {total} · помилок: {m}", { n: Math.floor(idx / PAIRS) + 1, total: Math.ceil(pool.length / PAIRS), m: mistakes })}
       </p>
       <div className="grid grid-cols-2 gap-3">
         <div className="flex flex-col gap-2">{cols.a.map((w) => cell(w, 'a'))}</div>
@@ -426,7 +426,7 @@ function Quiz({ pool, all, dir, update, onAgain }: Common & { all: Word[] }) {
   return (
     <div>
       <p className="mb-3 text-sm text-paper-muted">
-        Питання {i + 1} з {pool.length} · правильно: {score}
+        {t("Питання {n} з {total} · правильно: {ok}", { n: i + 1, total: pool.length, ok: score })}
       </p>
       <div className="mb-4 rounded-3xl border-2 border-ink-line bg-ink-raised p-8 text-center shadow-[0_6px_0_#dde3f3]">
         <span className="font-serif text-4xl text-paper">{ask}</span>
@@ -465,7 +465,7 @@ function Quiz({ pool, all, dir, update, onAgain }: Common & { all: Word[] }) {
           }}
           className="ww-btn ww-btn-primary ww-btn-lg mt-4 w-full"
         >
-          Далі →
+          {t("Далі →")}
         </button>
       )}
     </div>

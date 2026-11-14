@@ -4,6 +4,10 @@
 import { useT } from '@/i18n/client';
 import { useEffect, useState } from 'react';
 
+/** Подія, якою меню «Ще» на телефоні відкриває діалог */
+export const REPORT_EVENT = 'ww:report';
+export const openReport = () => window.dispatchEvent(new Event(REPORT_EVENT));
+
 /**
  * Кнопка «Повідомити про помилку» на кожній сторінці.
  * До тексту сама додає адресу сторінки й урок — щоб не питати учня, де саме зламалось.
@@ -13,6 +17,13 @@ export function ReportBug() {
   const [open, setOpen] = useState(false);
   const [text, setText] = useState('');
   const [state, setState] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+
+  // на телефоні кнопки немає (вона перекривала вміст) — діалог відкривається з меню «Ще» нижньої панелі
+  useEffect(() => {
+    const onOpen = () => setOpen(true);
+    window.addEventListener(REPORT_EVENT, onOpen);
+    return () => window.removeEventListener(REPORT_EVENT, onOpen);
+  }, []);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false);
@@ -59,7 +70,7 @@ export function ReportBug() {
           <div className="ww-report-card">
             <p className="ww-report-head">{t("Що не так на цій сторінці?")}</p>
             <p className="ww-report-sub">
-              Напиши своїми словами — що робив і що пішло не так. Адресу сторінки додам сам.
+              {t("Напиши своїми словами — що робив і що пішло не так. Адресу сторінки додам сам.")}
             </p>
             <textarea
               className="ww-input ww-report-text"
@@ -73,7 +84,7 @@ export function ReportBug() {
             {state === 'sent' && <p className="ww-report-ok">{t("Дякую, надіслано.")}</p>}
             <div className="ww-report-row">
               <button type="button" className="ww-btn ww-btn-ghost ww-btn-sm" onClick={() => setOpen(false)}>
-                Закрити
+                {t("Закрити")}
               </button>
               <button
                 type="button"

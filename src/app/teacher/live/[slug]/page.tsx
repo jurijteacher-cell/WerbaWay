@@ -1,3 +1,4 @@
+import { t } from '@/i18n/server';
 import { notFound, redirect } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
@@ -27,11 +28,11 @@ export default async function LiveLessonPage({ params }: { params: { slug: strin
   return (
     <main className="mx-auto max-w-5xl px-4 py-16">
       <Link href="/teacher" className="text-sm text-paper-muted transition-colors hover:text-gold">
-        ← Кабінет викладача
+        {t("← Кабінет викладача")}
       </Link>
       <h1 className="mb-1 mt-4 font-display text-3xl text-paper">Наживо: {lesson.title}</h1>
       <p className="mb-8 text-paper-muted">
-        Оновлюється в реальному часі, поки учні друкують/обирають відповіді.
+        {t("Оновлюється в реальному часі, поки учні друкують/обирають відповіді.")}
       </p>
 
       <LiveBoard lesson={lesson} initialSubmissions={existing ?? []} />

@@ -75,7 +75,7 @@ export function AccessEditor({
               <div className="min-w-0 flex-1">
                 <p className="font-display text-lg leading-tight text-paper">{m.title}</p>
                 <p className="text-sm text-paper-muted">
-                  відкрито {lessonsOn} з {m.lessons.length}
+                  {t("відкрито {n} з {total}", { n: lessonsOn, total: m.lessons.length })}
                 </p>
               </div>
               <button type="button" onClick={() => setOpen(isOpen ? null : m.code)} className="ww-btn ww-btn-ghost ww-btn-sm" aria-expanded={isOpen}>

@@ -112,14 +112,16 @@ export function LectureCard({ slug, title, level, icon, cover, stats, completedA
         <div className="mt-4 flex flex-wrap items-center gap-2 text-xs">
           {stats.grade != null && (
             <span className="text-paper-muted">
-              Оцінка = правильно з першої спроби: {stats.lecture.gradedOk + stats.homework.gradedOk} з{' '}
-              {stats.lecture.gradedTotal + stats.homework.gradedTotal}
+              {t("Оцінка = правильно з першої спроби: {ok} з {total}", {
+                ok: stats.lecture.gradedOk + stats.homework.gradedOk,
+                total: stats.lecture.gradedTotal + stats.homework.gradedTotal,
+              })}
             </span>
           )}
           {hwState && <span className={`ml-auto rounded-full px-2.5 py-1 font-medium ${hwState.cls}`}>{hwState.text}</span>}
           {homework?.assigned && !homework.done && (
             <Link href={`/learn/${slug}/hw`} className="font-medium text-gold hover:text-gold-bright">
-              виконати →
+              {t("виконати →")}
             </Link>
           )}
         </div>
