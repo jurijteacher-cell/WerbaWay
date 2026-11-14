@@ -9,6 +9,7 @@ Usage:
   python3 scripts/check_embeds.py --manifest             # every lesson in content-queue/_manifest.json
   add --remote to check origin/main (git ls-tree) instead of the working tree
 
+--page also reports JSON that exists but has no window on the page (e.g. comm-tasks or exam e2 never embedded).
 Exit code 1 if anything is missing → restore the JSON and push before saying «готово».
 """
 import json
@@ -21,6 +22,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 QP = "src/content/queue-published"
 EMBED_RE = re.compile(r"werba-way\.vercel\.app/embed/([a-z0-9-]+)/([a-z-]+)(?:\?blocks=([a-z0-9,\-]+))?")
 REQUIRED = ("vocab", "comm-tasks", "hw")  # without any of these no window of the lesson opens
+ALL_BLOCKS_SEEN = {}
 FILE_OF = {"mock-exam": "mock"}  # embed kind -> file suffix when they differ
 
 
@@ -58,6 +60,8 @@ def main(argv):
         text = open(argv[1], encoding="utf-8").read()
         for lid, kind, blocks in EMBED_RE.findall(text):
             wanted.setdefault(lid, {}).setdefault(kind, set()).update(expand(blocks) if blocks else [])
+            if not blocks:
+                ALL_BLOCKS_SEEN.setdefault(lid, set()).add(kind)
     elif argv and argv[0] == "--manifest":
         man = json.load(open(os.path.join(ROOT, "content-queue/_manifest.json"), encoding="utf-8"))
         items = man if isinstance(man, list) else man.get("lessons", man.get("items", []))
@@ -90,6 +94,19 @@ def main(argv):
             miss = sorted(kinds.get(k, set()) - have)
             if miss:
                 problems.append(f"{k}.json без блоків {','.join(miss)}")
+        if kinds:  # --page: exercises that exist in JSON but have no window on the page
+            for k in ("vocab", "grammar", "comm-tasks", "hw", "exam"):
+                d = load(f"{QP}/{lid}-{k}.json", remote)
+                if d is None:
+                    continue
+                if k not in kinds:
+                    problems.append(f"{k}.json є, а вікна на сторінці немає")
+                    continue
+                shown = kinds[k]
+                if shown:  # only ?blocks= windows; a window without ?blocks shows everything
+                    lost = [b.get("block_id") for b in d.get("blocks", []) if b.get("block_id") not in shown]
+                    if lost and k not in ALL_BLOCKS_SEEN.get(lid, set()):
+                        problems.append(f"{k}: блоки {','.join(lost)} без вікна")
         if problems:
             bad += 1
             print(f"✗ {lid}: " + "; ".join(problems))
