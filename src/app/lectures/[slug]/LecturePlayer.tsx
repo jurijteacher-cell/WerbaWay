@@ -20,7 +20,6 @@ type FlatItem = {
 };
 
 export function LecturePlayer({
-  const t = useT();
   lecture,
   studentId,
   studentName,
@@ -31,6 +30,7 @@ export function LecturePlayer({
   studentName: string;
   initialSubmissions?: Record<string, SavedSubmission>;
 }) {
+  const t = useT();
   const flat = useMemo<FlatItem[]>(() => {
     let gi = 0;
     return lecture.sections.flatMap((section) =>
