@@ -60,7 +60,9 @@ export async function TopNav() {
     <>
     {/* учень онлайн з будь-якої сторінки; коли викладач відкриє урок — сайт сам переведе в клас */}
     {!isTeacher && <ClassWatcher studentId={user.id} name={(profile?.full_name as string | null) ?? undefined} />}
-    <header className="border-b border-ink-line bg-ink-raised/85 backdrop-blur">
+    {/* relative z-40: backdrop-blur робить шапку окремим шаром, без z-index її меню (мова, пошук)
+        ховаються під обкладинку лекції. 40 — вище контенту, нижче повноекранних вікон (z-50+). */}
+    <header className="relative z-40 border-b border-ink-line bg-ink-raised/85 backdrop-blur">
       <div
         className="h-1"
         style={{ background: 'linear-gradient(90deg,#e4d9ff 0,#9adcc3 25%,#d3e9fb 50%,#f4b7c5 75%,#ded1ff 100%)' }}
