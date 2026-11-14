@@ -105,7 +105,7 @@ export function ExamTasks({ data, blockIds }: Props) {
       <RestoredNote show={prog.restored} onDismiss={prog.dismissRestored} />
 
       {blocks.map((block) => (
-        <section key={block.block_id} style={{ marginBottom: 28 }}>
+        <section key={block.block_id} data-block-id={block.block_id} style={{ marginBottom: 28 }}>
           <div className="nb-tape">{block.title}</div>
           {block.instruction ? <p className="nb-note">{block.instruction}</p> : null}
 
@@ -214,6 +214,8 @@ export function ExamTasks({ data, blockIds }: Props) {
             return (
               <div
                 key={item.id}
+                data-item-id={item.id}
+                data-state={ok === true ? 'correct' : ok === false ? 'wrong' : 'pending'}
                 className={`nb-panel nb-item${ok === true ? ' is-ok' : ok === false ? ' is-no' : ''}`}
               >
                 <span className="nb-item-num" aria-hidden>
@@ -235,6 +237,8 @@ export function ExamTasks({ data, blockIds }: Props) {
                           <button
                             key={opt.v}
                             type="button"
+                            data-role="option"
+                            data-value={opt.v}
                             aria-pressed={sel}
                             className={`nb-tf${sel ? ' sel' : ''}${sel && ok === true ? ' ok' : ''}${sel && ok === false ? ' no' : ''}`}
                             onClick={() => check(opt.v)}
@@ -252,6 +256,8 @@ export function ExamTasks({ data, blockIds }: Props) {
                           <button
                             key={opt}
                             type="button"
+                            data-role="option"
+                            data-value={opt}
                             aria-pressed={sel}
                             className={`nb-choice${sel ? ' sel' : ''}${sel && ok === true ? ' ok' : ''}${sel && ok === false ? ' no' : ''}`}
                             onClick={() => check(opt)}

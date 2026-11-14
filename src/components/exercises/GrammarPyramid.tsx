@@ -452,6 +452,7 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
 
       <div
         className="nb-list"
+        data-block-id={String(level.level)}
         key={`${level.level}-${epoch}`}
         ref={listRef}
         onPointerDown={() => {
@@ -470,6 +471,9 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
                     <button
                       key={k}
                       type="button"
+                      data-role="match-left"
+                      data-item-id={k}
+                      data-state={paired ? 'correct' : 'pending'}
                       disabled={Boolean(paired)}
                       className={`nb-chip${selected ? ' sel' : ''}${paired ? ' ok' : ''}`}
                       aria-pressed={selected}
@@ -493,6 +497,9 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
                     <button
                       key={right}
                       type="button"
+                      data-role="option"
+                      data-value={right}
+                      data-used={used || undefined}
                       className={`nb-chip${used ? ' used' : ''}${matchWrong === right ? ' no' : ''}`}
                       disabled={used}
                       onClick={() => {
@@ -569,7 +576,13 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
             );
 
             return (
-              <div key={k} className={`nb-panel nb-item${state}`} style={{ '--i': idx } as CSSProperties}>
+              <div
+                key={k}
+                data-item-id={k}
+                data-state={fb === true ? 'correct' : fb === false ? 'wrong' : 'pending'}
+                className={`nb-panel nb-item${state}`}
+                style={{ '--i': idx } as CSSProperties}
+              >
                 <Num n={idx + 1} ok={fb === true} />
                 <div>
                   <ItemPhoto item={item} />
@@ -690,6 +703,8 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
             return (
               <div
                 key={k}
+                data-item-id={k}
+                data-state={sbOk[k] ? 'correct' : 'pending'}
                 className={`nb-panel nb-item${sbOk[k] ? ' is-ok' : ''}`}
                 style={{ '--i': idx } as CSSProperties}
               >
@@ -724,6 +739,8 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
             return (
               <div
                 key={k}
+                data-item-id={k}
+                data-state={fb === true ? 'correct' : fb === false ? 'wrong' : 'pending'}
                 className={`nb-panel nb-item${fb === true ? ' is-ok' : fb === false ? ' is-no' : ''}`}
                 style={{ '--i': idx } as CSSProperties}
               >

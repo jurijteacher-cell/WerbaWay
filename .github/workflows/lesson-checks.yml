@@ -1,0 +1,43 @@
+# Гейт перед мерджем у main (SITE_PUBLISHING §11): Vercel деплоїть main автоматично,
+# тому півлекції в main = зламана лекція в продакшені. Перевірки йдуть на PR,
+# і лише по лекціях, які цей PR змінив — спадщина не блокує роботу.
+name: lesson checks
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    env:
+      # білд не має потребувати справжніх секретів: усі сторінки серверні й динамічні
+      NEXT_PUBLIC_SUPABASE_URL: https://example.supabase.co
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: dummy.dummy.dummy
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # merge-base для --changed
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      # лекції, яких торкнувся цей PR: є сторінка учня, сторінка викладача,
+      # усі JSON вправ, module серед відомих кодів курсів
+      - name: лекції цього PR
+        run: python3 scripts/check_embeds.py --changed origin/${{ github.base_ref }}
+
+      # темні токени в компонентах embed роблять текст невидимим (баг 2026-11-04)
+      - name: кольори в embed
+        run: npm run check:embed-theme
+
+      - name: типи
+        run: npx tsc --noEmit
+
+      - name: білд
+        run: npm run build
