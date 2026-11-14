@@ -44,7 +44,7 @@ export function WeakList({ weak }: { weak: Summary['weak'] }) {
         <li key={w.point} className="flex items-center gap-3 text-sm">
           <span className="min-w-0 flex-1 truncate text-paper">{w.point}</span>
           <span className="h-2 w-24 shrink-0 overflow-hidden rounded bg-ink-line">
-            <span className="block h-full bg-gold-fill" style={{ width: `${w.pct}%` }} />
+            <span className="block h-full bg-gold-solid" style={{ width: `${w.pct}%` }} />
           </span>
           <span className={`w-12 shrink-0 text-right font-mono ${pctClass(w.pct)}`}>{w.pct}%</span>
           <span className="w-10 shrink-0 text-right text-xs text-paper-muted">{w.ok}/{w.total}</span>

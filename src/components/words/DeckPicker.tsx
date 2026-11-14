@@ -91,7 +91,7 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
                     </span>
                   </div>
                   <div className="h-2.5 overflow-hidden rounded-full bg-ink-line/70">
-                    <div className="h-full rounded-full bg-gold-fill" style={{ width: `${pct}%` }} />
+                    <div className="h-full rounded-full bg-gold-solid" style={{ width: `${pct}%` }} />
                   </div>
                 </div>
               </div>

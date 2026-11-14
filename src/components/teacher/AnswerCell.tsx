@@ -153,7 +153,7 @@ export function AnswerCell({
             <button
               onClick={() => setEditing(false)}
               disabled={isPending}
-              className="rounded-lg border border-ink-line px-4 py-1.5 text-sm text-paper-muted hover:text-paper"
+              className="ww-btn ww-btn-ghost"
             >
               Скасувати
             </button>

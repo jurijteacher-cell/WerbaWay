@@ -189,7 +189,7 @@ export default function MoviesPracticePage() {
               onChange={(e) => setAnswer(e.target.value)}
               placeholder={t("Напиши відповідь польською (або відповідай усно)…")}
               rows={4}
-              className="w-full resize-none rounded-lg border border-ink-line bg-ink px-3 py-2 text-sm text-paper outline-none focus:border-gold"
+              className="ww-input resize-none placeholder:text-paper-muted"
             />
 
             {question.sample && !showSample && (

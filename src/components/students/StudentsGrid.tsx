@@ -26,7 +26,8 @@ function Spark({ data }: { data: number[] }) {
           className="w-full rounded-sm"
           style={{
             height: n ? `${Math.max(14, (n / max) * 100)}%` : '3px',
-            background: n ? (i >= data.length - 7 ? '#c3aef5' : '#f6dd8a') : '#e2e8f6',
+            // цей тиждень — суцільний фіолет, попередній — світліший; різниця в яскравості, не лише в тоні
+            background: n ? (i >= data.length - 7 ? 'var(--ww-violet-solid)' : 'var(--ww-violet-shadow)') : 'var(--ww-line)',
           }}
         />
       ))}
@@ -65,7 +66,7 @@ export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder={t("Пошук за іменем")}
-          className="min-w-0 flex-1 basis-56 rounded-xl border border-ink-line bg-ink-raised px-4 py-2 text-paper outline-none placeholder:text-paper-muted focus:border-gold"
+          className="ww-input min-w-0 flex-1 basis-56 px-4 py-2 placeholder:text-paper-muted"
         />
         <div className="ww-nav max-w-full overflow-x-auto [scrollbar-width:none]">
           {FILTERS.map((x) => (

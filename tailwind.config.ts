@@ -38,7 +38,7 @@ const config: Config = {
         paper: {
           DEFAULT: '#1c2348', // основний текст
           muted: '#5d6689',
-          faint: '#8d95b2',
+          faint: '#6b7494',
         },
         correct: '#0f7a55',
         incorrect: '#cf3a57',

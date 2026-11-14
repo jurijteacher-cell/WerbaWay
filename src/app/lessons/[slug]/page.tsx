@@ -23,7 +23,7 @@ export default async function LessonPage({ params }: { params: { slug: string } 
         `%%MK:${kind}:${Buffer.from(attrs, 'utf8').toString('base64url')}%%`
     );
     return (
-      <main style={{ background: '#E7E2D7', minHeight: '100vh' }}>
+      <main style={{ background: 'var(--ww-desk)', minHeight: '100vh' }}>
         <NotebookLesson
           lessonId={bundle.lessonId}
           title={title}

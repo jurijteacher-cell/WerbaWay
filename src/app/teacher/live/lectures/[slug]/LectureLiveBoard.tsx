@@ -182,7 +182,7 @@ export function LectureLiveBoard({
           <select
             value={assignSelection}
             onChange={(e) => setAssignSelection(e.target.value)}
-            className="rounded-lg border border-ink-line bg-ink px-3 py-2 text-sm text-paper outline-none focus:border-gold"
+            className="ww-input w-auto"
           >
             <option value="">{t("Обери учня…")}</option>
             {assignableStudents.map((s) => (
