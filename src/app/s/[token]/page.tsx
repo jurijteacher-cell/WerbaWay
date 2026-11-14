@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { loadPage } from '@/lib/pages/pages';
 import { getLocale } from '@/i18n/server';
-import { sharedSlug } from '@/lib/share';
+import { createClient } from '@/lib/supabase/server';
+import { claimSharedLesson, sharedSlug } from '@/lib/share';
 import { LessonView } from '@/components/lesson/LessonView';
 import { PublicBar } from './PublicBar';
 
@@ -14,8 +15,27 @@ export async function generateMetadata({ params }: { params: { token: string } }
   return { title: page ? `${page.meta.title} — Werba Way` : 'Werba Way', robots: { index: false, follow: false } };
 }
 
-/** Лекція за публічним посиланням: без входу, без меню сайту */
+/**
+ * Лекція за публічним посиланням.
+ * Гість читає її тут: без входу, без меню сайту, відповіді лишаються в браузері.
+ * Той, хто вже увійшов, отримує лекцію собі в курс і далі читає її як свою — на /learn/<slug>,
+ * де пишеться прогрес, задається домашка й результати вправ ідуть на його акаунт.
+ */
 export default async function SharedLecture({ params, searchParams }: { params: { token: string }; searchParams?: { p?: string } }) {
+  const {
+    data: { user },
+  } = await createClient().auth.getUser();
+  if (user) {
+    const known = await sharedSlug(params.token); // без лічильника: його збільшить claim
+    if (!known) notFound();
+    const claimed = await claimSharedLesson(params.token, loadPage(known)?.meta.module);
+    if (claimed) {
+      const n = Number(searchParams?.p);
+      redirect(`/learn/${claimed}${Number.isFinite(n) && n > 0 ? `?p=${n}` : ''}`);
+    }
+    // доступ видати не вдалося — лекцію все одно показуємо, як гостю
+  }
+
   const slug = await sharedSlug(params.token, true);
   const page = slug ? loadPage(slug, getLocale()) : null;
   if (!page) notFound();
