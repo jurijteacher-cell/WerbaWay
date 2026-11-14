@@ -5,6 +5,7 @@ module: pl-telc-b1
 moduleTitle: Іспит telc B1
 cover: https://images.unsplash.com/photo-1550592704-6c76defa9985?w=1600&q=80&fm=jpg&fit=max
 notion: https://app.notion.com/p/Popraw-mnie-B-dy-z-Twoich-e-maili-40396e03c7c8816ebc3cec762a8f593b
+glossLang: ru
 ---
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🎯</span><div class="lp-callout-body">

@@ -6,6 +6,7 @@ module: pl-gram-ru
 moduleTitle: Граматика B1
 cover: https://images.unsplash.com/photo-1741156386380-0236c72eb6f9?fm=jpg&q=80&w=1600&fit=max
 notion: https://app.notion.com/p/gramatyka-kto-co-nikt-zaimki-nieokre-lone-41096e03c7c881ba8415d00d5c93fc1a
+glossLang: ru
 ---
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🎯</span><div class="lp-callout-body">

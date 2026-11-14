@@ -1,6 +1,6 @@
 import { createServerClient, type CookieOptions } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
-import { DEFAULT_LOCALE, LOCALE_COOKIE, LOCALE_HEADER, LOCALE_PARAM, LOCALES } from '@/i18n/config';
+import { DEFAULT_LOCALE, LOCALE_COOKIE, LOCALE_EXPLICIT_HEADER, LOCALE_HEADER, LOCALE_PARAM, LOCALES } from '@/i18n/config';
 
 /**
  * Мова запиту: ?lang= (ембед у iframe куки не бачить) → кука → типова.
@@ -10,9 +10,11 @@ import { DEFAULT_LOCALE, LOCALE_COOKIE, LOCALE_HEADER, LOCALE_PARAM, LOCALES } f
 function localeHeaders(request: NextRequest) {
   const param = request.nextUrl.searchParams.get(LOCALE_PARAM);
   const cookie = request.cookies.get(LOCALE_COOKIE)?.value;
-  const locale = [param, cookie].find((x) => x && (LOCALES as readonly string[]).includes(x)) ?? DEFAULT_LOCALE;
+  const chosen = [param, cookie].find((x) => x && (LOCALES as readonly string[]).includes(x));
+  const locale = chosen ?? DEFAULT_LOCALE;
   const headers = new Headers(request.headers);
   headers.set(LOCALE_HEADER, locale);
+  headers.set(LOCALE_EXPLICIT_HEADER, chosen ? '1' : '0');
   return headers;
 }
 

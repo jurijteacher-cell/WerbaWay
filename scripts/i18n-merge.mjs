@@ -6,7 +6,7 @@
  *
  *   node scripts/i18n-extract.mjs                 # оновити _source (каталоги одиниць)
  *   # переклади → src/content/i18n/_t/<loc>/<будь-яка-назва>.json  { ключ: "переклад" }
- *   node scripts/i18n-merge.mjs                   # ru pl en
+ *   node scripts/i18n-merge.mjs                   # ru pl en uk (uk — лише для лекцій російською)
  *   node scripts/i18n-coverage.mjs <lesson_id>    # має бути ✓
  *
  * Ключ, якого немає в _t, береться з уже наявних перекладів інших лекцій (той самий
@@ -20,7 +20,7 @@ const SRC = path.join(ROOT, 'src/content/i18n/_source');
 const T = path.join(ROOT, 'src/content/i18n/_t');
 const OUT = path.join(ROOT, 'src/content/i18n');
 const args = process.argv.slice(2).filter((x) => !x.startsWith('-'));
-const LOCALES = args.length ? args : ['ru', 'pl', 'en'];
+const LOCALES = args.length ? args : ['ru', 'pl', 'en', 'uk'];
 
 if (!existsSync(SRC)) {
   console.error('Немає _source — спершу node scripts/i18n-extract.mjs');

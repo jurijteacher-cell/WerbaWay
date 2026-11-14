@@ -22,6 +22,6 @@ node scripts/i18n-merge.mjs                         # докладає, нічо
 node scripts/i18n-coverage.mjs <lesson_id>          # ✓ — інакше лекція не готова
 ```
 
-Деталі — `docs/SITE_PUBLISHING.md` §8.
+Лекція, написана російською (`glossLang: ru` у шапці), має ще й `uk`-карти. Підписи `Pułapki z ukraińskiego` / `Po ukraińsku` — теж одиниці перекладу (ru → `z rosyjskiego`, pl/en → `Typowe błędy`). Деталі — `docs/SITE_PUBLISHING.md` §8.
 
 Ключ Notion API — у Supabase; із shell хмарної сесії `api.notion.com` і Supabase недоступні (проксі 403), тому Notion читати/писати через Notion MCP.

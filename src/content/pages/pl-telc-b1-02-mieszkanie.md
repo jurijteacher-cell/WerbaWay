@@ -7,6 +7,7 @@ module: pl-telc-b1
 moduleTitle: Іспит telc B1
 cover: https://images.unsplash.com/photo-1772797583328-f83bc3f94f80?w=1600&q=80&fm=jpg&fit=max
 notion: https://app.notion.com/p/05-Kto-mieszka-nad-nami-Mieszkanie-i-s-siedzi-41496e03c7c8818a9569f21e60acaa3f
+glossLang: ru
 ---
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🎯</span><div class="lp-callout-body">

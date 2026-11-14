@@ -4,6 +4,7 @@ icon: 📦
 level: A2
 cover: https://images.unsplash.com/photo-1607166452427-7e4477079cb9?fm=jpg&q=80&w=1600&fit=max
 notion: https://app.notion.com/p/06-Musz-wys-a-paczk-Poczta-bank-i-naprawy-RU-41396e03c7c881d693d0dd7b174dae3b
+glossLang: ru
 ---
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🎯</span><div class="lp-callout-body">

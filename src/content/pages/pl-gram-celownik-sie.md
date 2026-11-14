@@ -5,6 +5,7 @@ module: pl-gram-ru
 moduleTitle: Граматика B1
 cover: https://images.unsplash.com/photo-1578651714116-2a1645b70c0f?fm=jpg&q=80&w=1600&fit=max
 notion: https://app.notion.com/p/gramatyka-celownik-si-zepsu-mi-si-telefon-40c96e03c7c8819bb972eb06d9137334
+glossLang: ru
 ---
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🎯</span><div class="lp-callout-body">

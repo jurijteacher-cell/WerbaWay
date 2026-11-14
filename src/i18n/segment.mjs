@@ -22,6 +22,18 @@ export function unitKey(text) {
   return (h1.toString(16).padStart(8, '0') + h2.toString(16).padStart(8, '0')).slice(0, 12);
 }
 
+/**
+ * Польські підписи, що називають мову учня («Pułapki z ukraińskiego», колонка «Po ukraińsku»).
+ * Кирилиці в них немає, але для інших мов вони мусять змінитися («z rosyjskiego»…), тому це
+ * теж одиниці перекладу. Заголовки «## …» сюди не входять: з них рахуються ключі кроків заняття.
+ */
+const LANG_LABEL = /[Pp]ułapk\p{L}* z (ukraińskiego|rosyjskiego)|kalk\p{L}* z (ukraińskiego|rosyjskiego)|^[Pp]o (ukraińsku|rosyjsku)$/u;
+
+/** Чи рядок — одиниця перекладу: кирилиця або підпис мови учня. */
+export function isUnitText(s, { h2 = false } = {}) {
+  return CYR.test(s) || (!h2 && LANG_LABEL.test(s.trim()));
+}
+
 export function hasCyrillic(s) {
   return CYR.test(s);
 }
@@ -69,7 +81,7 @@ export function walkMarkdown(raw, fn) {
     // назва вправи/відео всередині тега — перекладаємо лише текст, тег лишається
     const tag = line.match(/^(\s*<(embed|video)\s+source="[^"]*"\s*>)([\s\S]*?)(<\/\2>\s*)$/);
     if (tag) {
-      if (!CYR.test(tag[3])) return line;
+      if (!isUnitText(tag[3])) return line;
       const out = fn(tag[3], { kind: 'embed-title', context: '' });
       return out == null ? line : `${tag[1]}${out}${tag[4]}`;
     }
@@ -81,7 +93,7 @@ export function walkMarkdown(raw, fn) {
       let changed = false;
       const next = parts.map((part, i) => {
         if (i === 0 || i === parts.length - 1) return part;
-        if (!CYR.test(part)) return part;
+        if (!isUnitText(part)) return part;
         const context = cells.filter((c) => c !== part.trim()).join(' | ');
         const out = fn(part.trim(), { kind: 'cell', context });
         if (out == null) return part;
@@ -92,7 +104,7 @@ export function walkMarkdown(raw, fn) {
       return changed ? next.join('|') : line;
     }
 
-    if (!CYR.test(line)) return line;
+    if (!isUnitText(line, { h2: /^##\s/.test(line) })) return line;
     const out = fn(line.trim(), { kind: 'line', context: '' });
     if (out == null) return line;
     // переклад не має права додавати рядки: структура сторінки має лишитися тією самою
@@ -161,7 +173,7 @@ const JSON_SKIP_KEYS = new Set([
 export function walkJson(node, fn, path = [], root = null) {
   const top = root ?? node;
   if (typeof node === 'string') {
-    if (!CYR.test(node)) return node;
+    if (!isUnitText(node)) return node;
     const field = path[path.length - 1];
     const parentPath = path.slice(0, -1);
     const parent = parentPath.reduce((acc, k) => (acc == null ? acc : acc[k]), top);
