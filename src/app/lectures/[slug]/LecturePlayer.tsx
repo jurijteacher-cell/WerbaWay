@@ -90,7 +90,7 @@ export function LecturePlayer({
         <div className="sticky top-6 flex flex-col gap-4">
           {lecture.sections.map((section) => (
             <div key={section.id}>
-              <p className="mb-1.5 font-mono text-[11px] uppercase tracking-widest text-gold-dim">{section.label}</p>
+              <p className="mb-1.5 ww-label">{section.label}</p>
               <div className="flex flex-wrap gap-1.5 md:flex-col">
                 {section.exercises.map((_, i) => {
                   const item = flat.find((f) => f.sectionId === section.id && f.indexInSection === i)!;
@@ -124,7 +124,7 @@ export function LecturePlayer({
 
       {/* Активна вправа */}
       <div className="min-w-0 flex-1">
-        <p className="mb-1 font-mono text-xs uppercase tracking-widest text-gold-dim">{active.sectionLabel}</p>
+        <p className="mb-1 ww-label">{active.sectionLabel}</p>
         <p className="mb-4 text-sm text-paper-muted">
           Вправа {activeIndex + 1} з {flat.length}
         </p>

@@ -75,7 +75,7 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
                 <img src={d.cover} alt="" className="h-16 w-full object-cover" loading="lazy" />
               )}
               <div className="p-4">
-                <div className="mb-1 flex items-center gap-2 font-mono text-[11px] uppercase tracking-widest text-gold-dim">
+                <div className="mb-1 flex items-center gap-2 ww-label">
                   {d.level && <span className="rounded bg-gold-fill px-1.5 py-0.5 text-paper">{d.level}</span>}
                   <span>{d.total} слів</span>
                   <span className="ml-auto text-sm">{on ? '☑' : '☐'}</span>
@@ -91,7 +91,7 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
                     </span>
                   </div>
                   <div className="h-2.5 overflow-hidden rounded-full bg-ink-line/70">
-                    <div className="h-full rounded-full bg-gold-fill" style={{ width: `${pct}%` }} />
+                    <div className="h-full rounded-full bg-gold-solid" style={{ width: `${pct}%` }} />
                   </div>
                 </div>
               </div>

@@ -286,7 +286,7 @@ export default async function StudentResultsPage({ params }: { params: { student
                 <div className="border-t border-ink-line px-5 py-4">
                   {embeds.map(([embed, blocks]) => (
                     <div key={embed} className="mb-6 last:mb-2">
-                      <h3 className="mb-2 font-mono text-[11px] uppercase tracking-widest text-gold">
+                      <h3 className="mb-2 text-gold ww-label">
                         {EMBED_LABEL[embed] ?? embed}
                       </h3>
                       <div className="flex flex-col gap-3">

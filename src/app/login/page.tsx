@@ -38,24 +38,28 @@ function LoginForm() {
     <AuthShell title="Werba Way" lead={t("Увійди, щоб продовжити навчання")}>
       {reset ? <p className="mb-4 text-sm text-correct">{t("Пароль змінено. Увійди з новим паролем.")}</p> : null}
       <form onSubmit={onSubmit} className="flex flex-col gap-4">
-        <input
-          type="email"
-          required
-          autoComplete="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className={inputClass}
-        />
-        <input
-          type="password"
-          required
-          autoComplete="current-password"
-          placeholder={t("Пароль")}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className={inputClass}
-        />
+        <label className="ww-field">
+          <span>Email</span>
+          <input
+            type="email"
+            required
+            autoComplete="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className={inputClass}
+          />
+        </label>
+        <label className="ww-field">
+          <span>{t("Пароль")}</span>
+          <input
+            type="password"
+            required
+            autoComplete="current-password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className={inputClass}
+          />
+        </label>
         {error && <p className="text-sm text-incorrect">{error}</p>}
         <button type="submit" disabled={loading} className={buttonClass}>
           {loading ? t("Входжу…") : t("Увійти")}

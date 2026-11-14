@@ -16,10 +16,10 @@ type Props = {
 };
 
 const TONE = {
-  good: { ring: '#0f7a55', chip: 'bg-correct/10 text-correct' },
-  ok: { ring: '#6b46d6', chip: 'bg-gold-fill/60 text-paper' },
-  weak: { ring: '#cf3a57', chip: 'bg-incorrect/10 text-incorrect' },
-  none: { ring: '#9aa3b5', chip: 'bg-ink-soft text-paper-muted' },
+  good: { ring: 'var(--ww-ok)', chip: 'bg-correct/10 text-correct' },
+  ok: { ring: 'var(--ww-violet)', chip: 'bg-gold-fill/60 text-paper' },
+  weak: { ring: 'var(--ww-no)', chip: 'bg-incorrect/10 text-incorrect' },
+  none: { ring: 'var(--ww-edge)', chip: 'bg-ink-soft text-paper-muted' },
 } as const;
 
 /** Кільце оцінки: заповнена дуга = відсоток, у центрі число */
@@ -29,21 +29,21 @@ function Ring({ value, color }: { value: number | null; color: string }) {
   const v = value ?? 0;
   return (
     <svg viewBox="0 0 76 76" width="76" height="76" role="img" aria-label={value == null ? t("не оцінено") : t('оцінка {value}%', { value })}>
-      <circle cx="38" cy="38" r={r} fill="none" stroke="#e4e9f7" strokeWidth="8" />
+      <circle cx="38" cy="38" r={r} fill="none" style={{ stroke: 'var(--ww-line)' }} strokeWidth="8" />
       {value != null && (
         <circle
           cx="38"
           cy="38"
           r={r}
           fill="none"
-          stroke={color}
+          style={{ stroke: color }}
           strokeWidth="8"
           strokeLinecap="round"
           strokeDasharray={`${(v / 100) * c} ${c}`}
           transform="rotate(-90 38 38)"
         />
       )}
-      <text x="38" y="43" textAnchor="middle" fontSize="17" fontWeight="700" fill="#1c2348">
+      <text x="38" y="43" textAnchor="middle" fontSize="17" fontWeight="700" style={{ fill: 'var(--ww-ink)' }}>
         {value == null ? '—' : `${value}%`}
       </text>
     </svg>
@@ -62,8 +62,8 @@ function Bar({ label, p, done, total }: { label: string; p: number | null; done:
       </div>
       <div className="h-2.5 overflow-hidden rounded-full bg-ink-line/70">
         <div
-          className="h-full rounded-full bg-gold-fill"
-          style={{ width: `${p ?? 0}%`, boxShadow: p ? 'inset 0 -2px 0 rgba(138,95,23,.25)' : undefined }}
+          className="h-full rounded-full bg-gold-solid"
+          style={{ width: `${p ?? 0}%` }}
         />
       </div>
     </div>
@@ -88,7 +88,7 @@ export function LectureCard({ slug, title, level, icon, cover, stats, completedA
       <div className="p-4">
         <div className="mb-3 flex items-start gap-3">
           <div className="min-w-0 flex-1">
-            <p className="mb-1 flex flex-wrap items-center gap-2 font-mono text-[11px] uppercase tracking-widest text-gold-dim">
+            <p className="mb-1 flex flex-wrap items-center gap-2 ww-label">
               {level && <span className="rounded bg-gold-fill px-1.5 py-0.5 text-paper">{level}</span>}
               {completedAt ? <span>пройдено {fmt(completedAt)}</span> : stats.touched ? <span>{t("в процесі")}</span> : null}
             </p>

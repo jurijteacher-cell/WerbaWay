@@ -115,19 +115,19 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
 
       <section className="mt-8 grid gap-3 sm:grid-cols-4">
         <div className="rounded-xl border border-ink-line bg-ink-raised p-4">
-          <p className="text-xs uppercase tracking-wider text-paper-muted">{tr("Бали")}</p>
+          <p className="ww-label">{tr("Бали")}</p>
           <p className="mt-1 font-display text-3xl text-paper">
             {num(row.total)}/{num(row.max_total)}
           </p>
         </div>
         <div className="rounded-xl border border-ink-line bg-ink-raised p-4">
-          <p className="text-xs uppercase tracking-wider text-paper-muted">{tr("Результат")}</p>
+          <p className="ww-label">{tr("Результат")}</p>
           <p className={`mt-1 font-display text-3xl ${row.passed ? 'text-correct' : 'text-incorrect'}`}>
             {row.level ?? (row.passed ? 'zdane' : 'poniżej progu')}
           </p>
         </div>
         <div className="rounded-xl border border-ink-line bg-ink-raised p-4">
-          <p className="text-xs uppercase tracking-wider text-paper-muted">{tr("Помилок")}</p>
+          <p className="ww-label">{tr("Помилок")}</p>
           <p className={`mt-1 font-display text-3xl ${wrongCount + emptyCount ? 'text-incorrect' : 'text-correct'}`}>
             {hasDetail ? wrongCount + emptyCount : '—'}
           </p>
@@ -136,7 +136,7 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
           ) : null}
         </div>
         <div className="rounded-xl border border-ink-line bg-ink-raised p-4">
-          <p className="text-xs uppercase tracking-wider text-paper-muted">{tr("Перевірити вручну")}</p>
+          <p className="ww-label">{tr("Перевірити вручну")}</p>
           <p className={`mt-1 font-display text-3xl ${row.score?.pending ? 'text-gold' : 'text-paper'}`}>
             {row.score?.pending ?? 0}
           </p>
@@ -200,7 +200,7 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
                 if (!secTasks.length) return null;
                 return (
                   <div key={s.id}>
-                    <h3 className="mb-2 font-mono text-[11px] uppercase tracking-widest text-gold">{s.title}</h3>
+                    <h3 className="mb-2 text-gold ww-label">{s.title}</h3>
                     <div className="flex flex-col gap-3">
                       {secTasks.map((t) => {
                         const bad = t.items.filter((r) => r.status !== 'ok');
