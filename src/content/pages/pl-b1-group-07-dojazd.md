@@ -79,6 +79,14 @@ Porozmawiajmy. Zwracaj uwagę na czasowniki: <b>idę</b> czy <b>chodzę</b>, <b>
 
 ---
 
+## 5. Zadania komunikacyjne
+
+Najpierw posłuchaj rozmowy w punkcie obsługi pasażera. Odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-group-07-dojazd/exam?blocks=e2">
+Jak na egzaminie — słuchanie
+</embed>
+
 Teraz Twoja kolej. Cztery sytuacje: bilet i połączenie, droga dla gościa, spóźnienie i opowieść o dojeździe. Odwróć kartę i odegraj rozmowę. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-07-dojazd/comm-tasks">

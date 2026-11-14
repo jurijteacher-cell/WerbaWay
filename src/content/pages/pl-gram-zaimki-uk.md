@@ -244,6 +244,10 @@ Odpowiadaj pełnym zdaniem: <i>…ktoś… · …coś ciekawego… · …nikt ni
 
 👉 <b>Teraz Twoja kolej.</b> Trzy sytuacje — odwróć kartę i mów według planu.
 
+<embed source="https://werba-way.vercel.app/embed/pl-gram-zaimki-uk/comm-tasks">
+Zadania komunikacyjne
+</embed>
+
 ---
 
 ## ✅ 5. Podsumowanie

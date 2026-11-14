@@ -120,6 +120,10 @@ Słownictwo — karty
 
 🎧 <b>Najpierw posłuchaj:</b> pacjent dzwoni do przychodni. Nauczyciel przeczyta rozmowę dwa razy — słuchaj bez tekstu i odpowiedz na cztery pytania.
 
+<embed source="https://werba-way.vercel.app/embed/pl-b1-group-02-u-lekarza/exam?blocks=e2">
+Jak na egzaminie — słuchanie
+</embed>
+
 👉 <b>Teraz Twoja kolej.</b> Cztery sytuacje: rejestracja, gabinet, apteka i telefon do szefa. Odwróć kartę, przeczytaj sytuację i odegraj rozmowę w parze.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-02-u-lekarza/comm-tasks">
