@@ -1,0 +1,111 @@
+{
+  "lesson_id": "pl-a2-59-kiedy-zanim-po-tym-jak",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o programie wycieczki. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Grupa pojedzie do Wrocławia autobusem.",
+          "answer": true,
+          "explanation": "Zanim wsiądziemy do autobusu…"
+        },
+        {
+          "id": "e1-2",
+          "statement": "Podczas podróży nie będzie przerwy.",
+          "answer": false,
+          "explanation": "Podczas podróży będzie krótka przerwa na kawę."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Po przyjeździe grupa najpierw zje obiad.",
+          "answer": false,
+          "explanation": "Najpierw pojadą do hotelu, obiad będzie potem."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Latarnik zapala lampy, kiedy robi się ciemno.",
+          "answer": true,
+          "explanation": "Wieczorem, gdy zrobi się ciemno, zobaczymy latarnika."
+        },
+        {
+          "id": "e1-5",
+          "statement": "W czwartek grupa wróci do Krakowa rano.",
+          "answer": false,
+          "explanation": "Wrócą około dziewiętnastej."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-59-kiedy-zanim-po-tym-jak-e2-dialog.mp3",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: prawda czy fałsz?",
+      "instruction": "Usłyszysz rozmowę Tomka z Oleną dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Tomek pojedzie do Wrocławia jako kierowca.",
+          "answer": false,
+          "explanation": "Pojedzie jako przewodnik."
+        },
+        {
+          "id": "e2-2",
+          "statement": "Zbiórka jest o siódmej.",
+          "answer": false,
+          "explanation": "Olena się poprawia: o wpół do siódmej."
+        },
+        {
+          "id": "e2-3",
+          "statement": "Tomek musi jeszcze kupić bilety na rejs.",
+          "answer": false,
+          "explanation": "Olena kupiła je już przez internet."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-59-kiedy-zanim-po-tym-jak-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: a, b czy c?",
+      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Kiedy grupa zobaczy latarnika?",
+          "options": [
+            "przed obiadem",
+            "po obiedzie",
+            "wieczorem"
+          ],
+          "answer": "wieczorem",
+          "explanation": "Po obiedzie — Ostrów Tumski; latarnik — wieczorem, gdy będzie ciemno."
+        },
+        {
+          "id": "e3-2",
+          "question": "Co zrobi Tomek podczas rejsu?",
+          "options": [
+            "zrobi zdjęcia grupy",
+            "opowie o historii miasta",
+            "kupi bilety"
+          ],
+          "answer": "opowie o historii miasta",
+          "explanation": "Zdjęcia zrobi Olena, a bilety już są."
+        }
+      ]
+    }
+  ]
+}

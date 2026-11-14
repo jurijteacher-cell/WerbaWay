@@ -1,0 +1,111 @@
+{
+  "lesson_id": "pl-a2-58-jutro-to-zrobie",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o wiadomości Oleny do mamy. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Olena wiedziała o delegacji od tygodnia.",
+          "answer": false,
+          "explanation": "Pan Piotr powiedział jej o tym dopiero dzisiaj rano."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Jutro Olena wstanie o piątej.",
+          "answer": true,
+          "explanation": "W tekście: jutro wstanę o piątej."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Pani Zofia pracuje w hotelu we Wrocławiu.",
+          "answer": false,
+          "explanation": "Pani Zofia jest z biura partnerskiego."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Olena wyśle raport w czwartek.",
+          "answer": false,
+          "explanation": "Raport może być dopiero w poniedziałek."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Olena wróci w piątek po południu.",
+          "answer": true,
+          "explanation": "W tekście: Wrócę w piątek po południu."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-58-jutro-to-zrobie-e2-dialog.mp3",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: prawda czy fałsz?",
+      "instruction": "Usłyszysz rozmowę pana Piotra z Oleną dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Olena nie ma jeszcze biletu na pociąg.",
+          "answer": false,
+          "explanation": "Olena: Bilet już mam."
+        },
+        {
+          "id": "e2-2",
+          "statement": "Pani Zofia będzie czekała w hotelu o jedenastej.",
+          "answer": false,
+          "explanation": "Pan Piotr się poprawia: o dziesiątej."
+        },
+        {
+          "id": "e2-3",
+          "statement": "Olena zapyta w hotelu o salę na kolację.",
+          "answer": true,
+          "explanation": "Pan Piotr prosi zapytać o salę dla czterdziestu osób."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-58-jutro-to-zrobie-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: a, b czy c?",
+      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "O jakie ceny zapyta Olena?",
+          "options": [
+            "o ceny na maj",
+            "o ceny na luty",
+            "o ceny dla czterdziestu osób"
+          ],
+          "answer": "o ceny na maj",
+          "explanation": "Olena: zapytam o ceny na maj. Czterdzieści osób — to sala na kolację."
+        },
+        {
+          "id": "e3-2",
+          "question": "Kiedy Olena wyśle raport?",
+          "options": [
+            "w czwartek wieczorem",
+            "w poniedziałek rano",
+            "w piątek po południu"
+          ],
+          "answer": "w poniedziałek rano",
+          "explanation": "Najpierw mówi o czwartku, ale pan Piotr zmienia plan."
+        }
+      ]
+    }
+  ]
+}

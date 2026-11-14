@@ -1,0 +1,308 @@
+{
+  "lesson_id": "pl-a2-59-kiedy-zanim-po-tym-jak",
+  "exercise_type": "fill-in-blank",
+  "title": "Kiedy, zanim, po tym, jak, podczas — kolejność zdarzeń",
+  "instruction": "Pięć krótkich bloków. Na lekcji robimy bloki 1–3, bloki 4 i 5 — jeśli zostanie czas albo w domu.",
+  "estimated_minutes": 18,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "1. Połącz zdania",
+      "instruction": "Kliknij początek zdania po lewej, a potem jego koniec po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "Zanim wyjdę z domu,",
+          "right": "zamknę wszystkie okna.",
+          "grammar_point": "zdania-czasowe"
+        },
+        {
+          "id": "g1-2",
+          "left": "Kiedy skończę studia,",
+          "right": "poszukam pracy w Gdańsku.",
+          "grammar_point": "zdania-czasowe"
+        },
+        {
+          "id": "g1-3",
+          "left": "Po tym, jak zjedliśmy kolację,",
+          "right": "poszliśmy na spacer.",
+          "grammar_point": "zdania-czasowe"
+        },
+        {
+          "id": "g1-4",
+          "left": "Podczas lekcji",
+          "right": "telefony muszą być wyłączone.",
+          "grammar_point": "zdania-czasowe"
+        },
+        {
+          "id": "g1-5",
+          "left": "Gdy byłam mała,",
+          "right": "mieszkałam u babci na wsi.",
+          "grammar_point": "zdania-czasowe"
+        },
+        {
+          "id": "g1-6",
+          "left": "Kiedy pada deszcz,",
+          "right": "jeżdżę do pracy tramwajem.",
+          "grammar_point": "zdania-czasowe"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "drag-and-drop",
+      "title": "2. Które słowo?",
+      "instruction": "Przeciągnij słowo w lukę. Dwa wyrażenia w banku są błędne — nie pasują nigdzie.",
+      "bank": [
+        "Zanim",
+        "Podczas",
+        "Po tym, jak",
+        "Kiedy",
+        "potem",
+        "na końcu",
+        "Pod czas",
+        "Po tego, jak"
+      ],
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "___ wyjdę z domu, zawsze sprawdzam, czy mam klucze.",
+          "answer": "Zanim",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Najpierw klucze, potem wyjście — zanim."
+        },
+        {
+          "id": "g2-2",
+          "text": "___ obiadu dziadek zawsze ogląda wiadomości.",
+          "answer": "Podczas",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Po luce jest rzeczownik (obiadu) — podczas + dopełniacz."
+        },
+        {
+          "id": "g2-3",
+          "text": "___ skończyliśmy remont, zaprosiliśmy przyjaciół na kolację.",
+          "answer": "Po tym, jak",
+          "accept": [
+            "Kiedy"
+          ],
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Najpierw remont, potem kolacja — po tym, jak."
+        },
+        {
+          "id": "g2-4",
+          "text": "___ pociąg wjedzie na peron, wsiądziemy do pierwszego wagonu.",
+          "answer": "Kiedy",
+          "accept": [
+            "Po tym, jak"
+          ],
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Kiedy + czas przyszły: kiedy pociąg wjedzie…"
+        },
+        {
+          "id": "g2-5",
+          "text": "Najpierw zwiedzimy zamek, ___ pójdziemy na obiad, a na końcu wrócimy do hotelu.",
+          "answer": "potem",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Najpierw → potem → na końcu."
+        },
+        {
+          "id": "g2-6",
+          "text": "Najpierw sprawdzę listę, potem dam każdemu bilet, a ___ wsiądziemy do autobusu.",
+          "answer": "na końcu",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Ostatnia rzecz — na końcu."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Jaki czas po kiedy?",
+      "instruction": "Wpisz czasownik z nawiasu w dobrym czasie. Uważaj: przyszłość, przeszłość czy regularnie?",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Kiedy ___ do domu, zadzwonię do ciebie. (wrócić, ja)",
+          "answer": "wrócę",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Przyszłość w obu częściach: kiedy wrócę, zadzwonię."
+        },
+        {
+          "id": "g3-2",
+          "text": "Kiedy ___ ten film, powiem ci, czy jest dobry. (obejrzeć, ja)",
+          "answer": "obejrzę",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Przyszłość, wynik — obejrzę."
+        },
+        {
+          "id": "g3-3",
+          "text": "Gdy byłem w Gdańsku, ___ Westerplatte. (zwiedzić, ja – mężczyzna)",
+          "answer": "zwiedziłem",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Przeszłość w obu częściach: gdy byłem, zwiedziłem."
+        },
+        {
+          "id": "g3-4",
+          "text": "Kiedy ___ ładna pogoda, zawsze jeździmy nad jezioro. (być)",
+          "answer": "jest",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Regularnie (zawsze) — czas teraźniejszy."
+        },
+        {
+          "id": "g3-5",
+          "text": "Zanim ___ do autobusu, kupimy bilety. (wsiąść, my)",
+          "answer": "wsiądziemy",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Po „zanim” o przyszłości — dokonany: wsiądziemy."
+        },
+        {
+          "id": "g3-6",
+          "text": "Po tym, jak ___ z pociągu, poszliśmy prosto do hotelu. (wysiąść, my)",
+          "answer": "wysiedliśmy",
+          "accept": [
+            "wysiadłyśmy"
+          ],
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Przeszłość: wysiedliśmy (same kobiety: wysiadłyśmy)."
+        },
+        {
+          "id": "g3-7",
+          "text": "Kiedy dzieci ___ lekcje, pójdą na plac zabaw. (skończyć)",
+          "answer": "skończą",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Przyszłość w obu częściach: skończą, pójdą."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Podczas, przed, po — czego? czym?",
+      "instruction": "Wpisz rzeczownik z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Podczas ___ cały czas padał deszcz. (wycieczka)",
+          "answer": "wycieczki",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Podczas + dopełniacz: wycieczki."
+        },
+        {
+          "id": "g4-2",
+          "text": "Podczas ___ nie wolno rozmawiać przez telefon. (egzamin)",
+          "answer": "egzaminu",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Podczas + dopełniacz: egzaminu."
+        },
+        {
+          "id": "g4-3",
+          "text": "Przed ___ zawsze piję kawę. (praca)",
+          "answer": "pracą",
+          "grammar_point": "przyimki-czasu",
+          "explanation": "Przed + narzędnik: pracą."
+        },
+        {
+          "id": "g4-4",
+          "text": "Po ___ poszliśmy na lody. (koncert)",
+          "answer": "koncercie",
+          "grammar_point": "przyimki-czasu",
+          "explanation": "Po + miejscownik: koncercie."
+        },
+        {
+          "id": "g4-5",
+          "text": "Podczas ___ w Chorwacji widzieliśmy delfiny. (urlop)",
+          "answer": "urlopu",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Podczas + dopełniacz: urlopu."
+        },
+        {
+          "id": "g4-6",
+          "text": "Przed ___ musimy kupić prezenty. (święta)",
+          "answer": "świętami",
+          "grammar_point": "przyimki-czasu",
+          "explanation": "Przed + narzędnik, liczba mnoga: świętami."
+        },
+        {
+          "id": "g4-7",
+          "text": "Po ___ pójdę do kina z koleżanką. (zajęcia)",
+          "answer": "zajęciach",
+          "grammar_point": "przyimki-czasu",
+          "explanation": "Po + miejscownik, liczba mnoga: zajęciach."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "5. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Kiedy przyjeżdżam jutro, zadzwonię do ciebie.",
+          "answer": "Kiedy jutro przyjadę, zadzwonię do ciebie.",
+          "accept": [
+            "Kiedy przyjadę jutro, zadzwonię do ciebie.",
+            "Zadzwonię do ciebie, kiedy jutro przyjadę.",
+            "Zadzwonię do ciebie, kiedy przyjadę jutro."
+          ],
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Przyszłość — dokonany: kiedy przyjadę."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Podczas jedliśmy, kot spał na krześle.",
+          "answer": "Kiedy jedliśmy, kot spał na krześle.",
+          "accept": [
+            "Gdy jedliśmy, kot spał na krześle.",
+            "Podczas obiadu kot spał na krześle.",
+            "Podczas kolacji kot spał na krześle.",
+            "Podczas jedzenia kot spał na krześle."
+          ],
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Po „podczas” nie ma czasownika. Z czasownikiem — kiedy."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Po tego, jak wróciłam z pracy, ugotowałam obiad.",
+          "answer": "Po tym, jak wróciłam z pracy, ugotowałam obiad.",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Po + miejscownik: po tym, jak."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Zawsze piję kawę przed śniadanie.",
+          "answer": "Zawsze piję kawę przed śniadaniem.",
+          "accept": [
+            "Przed śniadaniem zawsze piję kawę."
+          ],
+          "grammar_point": "przyimki-czasu",
+          "explanation": "Przed + narzędnik: śniadaniem."
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Pod czas lotu oglądałam film.",
+          "answer": "Podczas lotu oglądałam film.",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Podczas — jedno słowo."
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Gdy jest zbiórka?",
+          "answer": "Kiedy jest zbiórka?",
+          "accept": [
+            "O której jest zbiórka?"
+          ],
+          "grammar_point": "zdania-czasowe",
+          "explanation": "W pytaniu — kiedy, nie gdy."
+        }
+      ]
+    }
+  ]
+}

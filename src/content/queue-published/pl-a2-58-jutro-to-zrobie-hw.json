@@ -1,0 +1,209 @@
+{
+  "lesson_id": "pl-a2-58-jutro-to-zrobie",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: plany na weekend — zrobię czy będę robić?",
+  "instruction": "Trzy bloki ćwiczeń. Potem napisz wiadomość o planach — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wynik czy proces?",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "W niedzielę cały dzień ___ w łóżku.",
+          "answer": "będę leżeć",
+          "options": [
+            "będę leżeć",
+            "położę się"
+          ],
+          "grammar_point": "czas-przyszly-bede",
+          "explanation": "„Cały dzień” — proces."
+        },
+        {
+          "id": "h1-2",
+          "text": "Nie martw się, jutro ___ ci twoją ładowarkę.",
+          "answer": "oddam",
+          "options": [
+            "oddam",
+            "będę oddawać"
+          ],
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Jedna akcja z wynikiem — oddam."
+        },
+        {
+          "id": "h1-3",
+          "text": "Właśnie ___ okna, zadzwonię później.",
+          "answer": "myję",
+          "options": [
+            "myję",
+            "umyję"
+          ],
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "„Właśnie”, teraz — niedokonany."
+        },
+        {
+          "id": "h1-4",
+          "text": "Mój syn w przyszłym roku ___ do szkoły.",
+          "answer": "pójdzie",
+          "options": [
+            "pójdzie",
+            "będzie pójść"
+          ],
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Pójść — dokonany: pójdzie. „Będzie pójść” nie istnieje."
+        },
+        {
+          "id": "h1-5",
+          "text": "Od poniedziałku codziennie ___ rano w parku.",
+          "answer": "będę biegać",
+          "options": [
+            "będę biegać",
+            "pobiegnę"
+          ],
+          "grammar_point": "czas-przyszly-bede",
+          "explanation": "„Codziennie” — będę biegać."
+        },
+        {
+          "id": "h1-6",
+          "text": "Jutro ___ ciasto na urodziny taty.",
+          "answer": "upiekę",
+          "options": [
+            "upiekę",
+            "będę upiec"
+          ],
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Wynik — upiekę. Po „będę” tylko niedokonany."
+        },
+        {
+          "id": "h1-7",
+          "text": "Myślisz, że on przyjdzie? — Nie wiem, ___.",
+          "answer": "chyba tak",
+          "options": [
+            "chyba tak",
+            "na pewno tak"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Nie wiem → chyba. „Na pewno” = точно."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Wpisz formę",
+      "instruction": "Wpisz czasownik dokonany w czasie przyszłym. W nawiasie: bezokolicznik i osoba.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Czy ___ psa na spacer? (wziąć, ty)",
+          "answer": "weźmiesz",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Ty: weźmiesz — z ź. Ja: wezmę."
+        },
+        {
+          "id": "h2-2",
+          "text": "W sierpniu dzieci ___ do babci na wieś. (pojechać, oni)",
+          "answer": "pojadą",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Oni: pojadą."
+        },
+        {
+          "id": "h2-3",
+          "text": "Kiedy ___ do nas na kawę? (przyjść, wy)",
+          "answer": "przyjdziecie",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Wy: przyjdziecie."
+        },
+        {
+          "id": "h2-4",
+          "text": "Jak ___ to szefowi? (powiedzieć, ty)",
+          "answer": "powiesz",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Ty: powiesz."
+        },
+        {
+          "id": "h2-5",
+          "text": "Na kolację ___ pierogi z grzybami. (zjeść, my)",
+          "answer": "zjemy",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "My: zjemy."
+        },
+        {
+          "id": "h2-6",
+          "text": "Jutro siostra ___ o szóstej, bo ma pociąg. (wstać, ona)",
+          "answer": "wstanie",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Ona: wstanie."
+        },
+        {
+          "id": "h2-7",
+          "text": "Po egzaminie ___ w górach. (odpocząć, ja)",
+          "answer": "odpocznę",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Ja: odpocznę."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "W sobotę będę ugotować bigos.",
+          "answer": "W sobotę ugotuję bigos.",
+          "accept": [
+            "W sobotę będę gotować bigos.",
+            "W sobotę będę gotowała bigos.",
+            "W sobotę będę gotował bigos."
+          ],
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Po „będę” nie ma dokonanego."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Na wakacje weźmę dwie walizki.",
+          "answer": "Na wakacje wezmę dwie walizki.",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Ja: wezmę."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Przyjedę po ciebie o ósmej.",
+          "answer": "Przyjadę po ciebie o ósmej.",
+          "accept": [
+            "O ósmej przyjadę po ciebie."
+          ],
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Ja: przyjadę."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Powiedzę mu o tym jutro.",
+          "answer": "Powiem mu o tym jutro.",
+          "accept": [
+            "Jutro mu o tym powiem.",
+            "Jutro powiem mu o tym."
+          ],
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Ja: powiem."
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Na pewno będzie padać, ale nie wiem.",
+          "answer": "Chyba będzie padać, ale nie wiem.",
+          "accept": [
+            "Może będzie padać, ale nie wiem."
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "„Nie wiem” → chyba / może. „Na pewno” = точно."
+        }
+      ]
+    }
+  ]
+}
