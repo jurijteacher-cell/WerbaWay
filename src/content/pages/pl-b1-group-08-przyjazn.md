@@ -122,7 +122,15 @@ Słownictwo — karty
 
 🎧 <b>Najpierw posłuchaj:</b> do Oleny dzwoni koleżanka, z którą od dawna nie miała kontaktu. Nauczyciel przeczyta rozmowę dwa razy — słuchaj bez tekstu i odpowiedz na cztery pytania.
 
+<embed source="https://werba-way.vercel.app/embed/pl-b1-group-08-przyjazn/exam?blocks=e2">
+Jak na egzaminie — słuchanie
+</embed>
+
 👉 <b>Teraz Twoja kolej.</b> Cztery sytuacje: telefon po latach, przeprosiny, nowe miasto i monolog o przyjaźni w internecie. Odwróć kartę, przeczytaj sytuację i odegraj rozmowę z nauczycielem.
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-group-08-przyjazn/comm-tasks">
+Zadania komunikacyjne
+</embed>
 
 ---
 
