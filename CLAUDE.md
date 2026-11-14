@@ -11,4 +11,17 @@
 3. Стану «коміти лише локально» чи «патч для іншої сесії» не існує: хто закомітив — той пушить і перевіряє `--remote` у тому ж ході. Не вийшло — урок не готовий, сторінку в Notion не публікувати.
 4. Наприкінці: fetch сторінки учня → `check_embeds.py --page … --remote` → WebFetch `https://werba-way.vercel.app/embed/{lesson_id}/hw` показує завдання.
 
+## Усі мови сайту — в тому ж пуші (Юра, 14.11.2026)
+
+Сайт працює укр · рос · пол · англ. **Коли пушиш нову лекцію (або правиш пояснення в старій) — одразу пуш і всі переклади**: `src/content/i18n/pages/<slug>.{ru,pl,en}.json` і `src/content/i18n/exercises/<lesson_id>-*.{ru,pl,en}.json`. «Переклади потім» не буває.
+
+```bash
+node scripts/i18n-extract.mjs                       # одиниці перекладу → _source/
+# переклад за docs/I18N_TRANSLATION_BRIEF.md → src/content/i18n/_t/{ru,pl,en}/<slug>.json
+node scripts/i18n-merge.mjs                         # докладає, нічого не видаляє (не i18n-apply!)
+node scripts/i18n-coverage.mjs <lesson_id>          # ✓ — інакше лекція не готова
+```
+
+Деталі — `docs/SITE_PUBLISHING.md` §8.
+
 Ключ Notion API — у Supabase; із shell хмарної сесії `api.notion.com` і Supabase недоступні (проксі 403), тому Notion читати/писати через Notion MCP.
