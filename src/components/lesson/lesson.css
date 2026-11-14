@@ -23,6 +23,8 @@
 .lp-stripe { height: 5px; background: linear-gradient(90deg, var(--lp-marker) 0 20%, var(--lp-mint) 20% 40%, var(--lp-sky) 40% 60%, var(--lp-peach) 60% 80%, var(--lp-lilac) 80% 100%); }
 
 .lp-hero-body { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; }
+/* над блокнотом шапка така ж широка, як і він, щоб ліві краї збігались */
+.lp-root:has(> .lp-pager) .lp-hero-body { max-width: 84rem; }
 .lp-icon {
   display: inline-grid; place-items: center;
   width: 5.25rem; height: 5.25rem; margin-top: -2.9rem;
@@ -52,8 +54,14 @@
 
 /* ── сітка: колонка тексту + липкий зміст праворуч ── */
 .lp-layout { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; display: grid; gap: 3rem; }
-@media (min-width: 1100px) { .lp-layout { grid-template-columns: minmax(0, 1fr) 15rem; } }
-.lp-col { min-width: 0; max-width: 46rem; }
+/* колонку під зміст резервуємо лише тоді, коли зміст справді є (у домашці його немає) */
+@media (min-width: 1100px) { .lp-layout:has(> .lp-rail) { grid-template-columns: minmax(0, 1fr) 15rem; } }
+/* колонка широка, щоб вікна вправ не опускались нижче 820px (див. «вікна вправ» нижче);
+   рядки тексту обмежені окремо — 46rem, як і раніше */
+.lp-col { min-width: 0; }
+.lp-col .lp-prose > div { max-width: 46rem; }
+/* вміст вправи сам не ширший за 980px (.nb-wrap) — ширше вікно дало б лише порожні поля */
+.lp-col .lp-prose > .lp-embed { max-width: 64rem; }
 .lp-rail { display: none; }
 @media (min-width: 1100px) {
   .lp-rail { display: block; }
@@ -213,7 +221,7 @@
 .lp-class { padding-bottom: 2rem; }
 .lp-class .lp-cover { height: clamp(84px, 12vh, 130px); }
 .lp-class .lp-icon { width: 3.1rem; height: 3.1rem; margin-top: -1.65rem; font-size: 1.7rem; border-radius: .9rem; }
-.lp-class .lp-hero-body { max-width: 74rem; }
+.lp-class .lp-hero-body { max-width: 84rem; }
 .lp-class .lp-hero-body h1 { font-size: clamp(1.2rem, 2.1vw, 1.7rem); margin: .5rem 0 .45rem; max-width: none; }
 .lp-class .lp-props { display: flex; flex-wrap: wrap; gap: .2rem 1.1rem; margin: 0 0 1rem; max-width: none; font-size: .85rem; }
 .lp-class .lp-props > div { display: flex; gap: .45rem; padding: 0; }
@@ -225,15 +233,18 @@
 .lp-root :focus-visible { outline: 3px solid var(--lp-marker); outline-offset: 2px; border-radius: .3rem; }
 
 /* на вузькому екрані закріплена стрічка змісту не повинна закривати заголовок після переходу */
-@media (max-width: 1099px) { .lp-prose h2, .lp-prose h3 { scroll-margin-top: 6rem; } }
+@media (max-width: 1239px) { .lp-prose h2, .lp-prose h3 { scroll-margin-top: 6rem; } }
 
 
 /* ═════════ Блокнот: лекція сторінками ═════════ */
-.lp-pager { max-width: 74rem; margin: 0 auto; padding: 0 1.25rem; display: grid; gap: 2rem; align-items: start; }
-@media (min-width: 1000px) { .lp-pager { grid-template-columns: 16.5rem minmax(0, 1fr); } }
+/* Бічний список сторінок з'являється лише там, де поряд з ним вікно вправи лишається ≥ 820px:
+   вужче — і вправа всередині перебудовується в «телефонну» колонку (@media max-width: 820px у notebook.css).
+   Раніше поріг був 1000px, і саме на 1000–1240px вікно стискалося до ~590–790px. */
+.lp-pager { max-width: 84rem; margin: 0 auto; padding: 0 1.25rem; display: grid; gap: 2rem; align-items: start; }
+@media (min-width: 1240px) { .lp-pager { grid-template-columns: 16.5rem minmax(0, 1fr); } }
 .lp-pager-main { min-width: 0; }
 .lp-pager-rail { display: none; }
-@media (min-width: 1000px) {
+@media (min-width: 1240px) {
   .lp-pager-rail { display: block; position: sticky; top: 1.25rem; max-height: calc(100vh - 2.5rem); overflow-y: auto; scrollbar-width: thin; }
   .lp-pagebar { display: none !important; }
 }
@@ -283,7 +294,9 @@
   background: #ffffff;
   border: 1px solid var(--lp-line);
   border-radius: .45rem 1.1rem 1.1rem .45rem;
-  padding: 1.6rem clamp(1.1rem, 3.4vw, 2.6rem) 2.2rem clamp(1.4rem, 4vw, 3.2rem);
+  --lp-pad-l: clamp(1.4rem, 4vw, 3.2rem);
+  --lp-pad-r: clamp(1.1rem, 3.4vw, 2.6rem);
+  padding: 1.6rem var(--lp-pad-r) 2.2rem var(--lp-pad-l);
   box-shadow: 0 1px 0 var(--lp-line), 0 22px 40px -32px rgba(28, 35, 72, .6);
   transform-origin: left center;
   backface-visibility: hidden;
@@ -343,6 +356,14 @@
 .lp-sheet-folio { flex: none; align-self: flex-start; font-family: var(--font-onest), sans-serif; font-size: .8rem; color: var(--lp-muted); font-variant-numeric: tabular-nums; }
 .lp-num-soft { background: var(--lp-soft); }
 .lp-sheet .lp-prose > div:first-child > *:first-child { margin-top: 0; }
+/* текст аркуша тримає зручну довжину рядка (≈ як раніше, коли аркуш був вужчим)… */
+.lp-sheet .lp-prose > div { max-width: 48rem; }
+/* …а вікно вправи й відео беруть усю ширину аркуша й заходять у його поля:
+   зліва до дірочок під пружину (1.5rem), справа майже до краю (.6rem) */
+.lp-sheet .lp-prose > .lp-embed {
+  margin-left: min(0px, calc(1.5rem - var(--lp-pad-l)));
+  margin-right: min(0px, calc(.6rem - var(--lp-pad-r)));
+}
 .lp-goal-page ul { list-style: none; padding: 0; }
 .lp-goal-page li { position: relative; padding: .55rem .8rem .55rem 2.4rem; margin: .45rem 0; background: var(--lp-paper); border: 1px solid #e4e9f7; border-radius: .7rem; }
 .lp-goal-page li::before { content: '✓'; position: absolute; left: .85rem; top: .55rem; color: #0f7a55; font-weight: 700; font-family: var(--font-onest), sans-serif; }
@@ -409,6 +430,6 @@
   .lp-props { margin-bottom: 1.3rem; font-size: .9rem; }
   .lp-props > div { grid-template-columns: 5.6rem 1fr; padding: .2rem 0; }
   .lp-pager, .lp-layout { padding: 0 .6rem 0 1rem; }
-  .lp-sheet { padding: 1.2rem .85rem 1.6rem 1.35rem; }
+  .lp-sheet { --lp-pad-l: 1.35rem; --lp-pad-r: .85rem; padding: 1.2rem var(--lp-pad-r) 1.6rem var(--lp-pad-l); }
   .lp-callout-body { min-width: 0; overflow-x: auto; }
 }
