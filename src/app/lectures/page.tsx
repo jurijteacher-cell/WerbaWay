@@ -43,7 +43,7 @@ export default async function LecturesPage() {
     >
       <h3 className="font-display text-xl text-paper group-hover:text-gold-bright">{lecture.title}</h3>
       {lecture.subtitle && <p className="mt-1 text-paper-muted">{lecture.subtitle}</p>}
-      <p className="mt-2 font-mono text-xs uppercase tracking-widest text-gold-dim">
+      <p className="mt-2 ww-label">
         {lecture.sections.length} {lecture.sections.length === 1 ? t("секція") : t("секцій")} ·{' '}
         {progress.total} вправ
       </p>
@@ -55,13 +55,13 @@ export default async function LecturesPage() {
   return (
     <main className="mx-auto max-w-3xl px-4 py-16">
       <div className="mb-12">
-        <p className="text-sm uppercase tracking-widest text-gold-dim">Werba Way</p>
+        <p className="ww-label">Werba Way</p>
         <h1 className="font-display text-3xl text-paper">{t("Лекції")}</h1>
       </div>
 
       {assigned.length > 0 && (
         <section className="mb-10">
-          <h2 className="mb-3 font-mono text-xs uppercase tracking-widest text-gold">{t("Призначено тобі")}</h2>
+          <h2 className="mb-3 text-gold ww-label">{t("Призначено тобі")}</h2>
           <div className="flex flex-col gap-3">{assigned.map(Card)}</div>
         </section>
       )}
@@ -69,7 +69,7 @@ export default async function LecturesPage() {
       {rest.length > 0 && (
         <section>
           {assigned.length > 0 && (
-            <h2 className="mb-3 font-mono text-xs uppercase tracking-widest text-paper-muted">{t("Інші лекції")}</h2>
+            <h2 className="mb-3 ww-label">{t("Інші лекції")}</h2>
           )}
           <div className="flex flex-col gap-3">{rest.map(Card)}</div>
         </section>

@@ -16,7 +16,7 @@ export async function PublicBar() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <Mark size={34} className="rounded-full" />
           <span className="text-[15px] font-semibold tracking-[0.16em]">
-            <span style={{ color: '#151c3c' }}>WERBA</span> <span style={{ color: '#a98bea' }}>WAY</span>
+            <span style={{ color: 'var(--ww-ink)' }}>WERBA</span> <span style={{ color: 'var(--ww-violet)' }}>WAY</span>
           </span>
         </span>
         <Link href="/login" className="ww-btn ww-btn-ghost ww-btn-sm">

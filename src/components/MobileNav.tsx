@@ -162,7 +162,7 @@ function Drawer({ items, active, onClose }: { items: Tab[]; active?: string; onC
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <Mark size={36} className="rounded-full" />
             <span className="text-[15px] font-semibold tracking-[0.14em]">
-              <span style={{ color: '#151c3c' }}>WERBA</span> <span style={{ color: '#a98bea' }}>WAY</span>
+              <span style={{ color: 'var(--ww-ink)' }}>WERBA</span> <span style={{ color: 'var(--ww-violet)' }}>WAY</span>
             </span>
           </span>
           <button type="button" onClick={close} className="ww-btn ww-btn-ghost ww-btn-sm" aria-label={t("Закрити меню")}>

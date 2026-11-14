@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 import { useT } from '@/i18n/client';
 
 export const inputClass =
-  'rounded-lg border border-ink-line bg-ink-raised px-4 py-3 text-paper placeholder:text-paper-muted outline-none focus:border-gold';
+  'ww-input px-4 py-3 text-base placeholder:text-paper-muted';
 export const buttonClass =
   'ww-btn ww-btn-primary ww-btn-lg w-full';
 

@@ -100,7 +100,7 @@ export function StepNav({
         </div>
       ))}
       {idx >= 0 && (
-        <p className="px-1 text-[11px] font-semibold uppercase tracking-widest text-paper-faint">
+        <p className="px-1 ww-label">
           Крок {idx + 1} з {steps.length}
         </p>
       )}

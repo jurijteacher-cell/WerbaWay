@@ -33,7 +33,7 @@ export function GradeForm({ submissionId }: { submissionId: string }) {
         onChange={(e) => setFeedback(e.target.value)}
         placeholder={t("Коментар для учня (необовʼязково)")}
         rows={2}
-        className="w-full resize-none rounded-lg border border-ink-line bg-ink px-3 py-2 text-sm text-paper placeholder:text-paper-muted outline-none focus:border-gold"
+        className="ww-input resize-none placeholder:text-paper-muted"
       />
       <div className="flex gap-2">
         <button

@@ -67,53 +67,63 @@ export default function RegisterPage() {
     <AuthShell title={t("Реєстрація")} lead={t("Створи акаунт у Werba Way")}>
       <form onSubmit={onSubmit} className="flex flex-col gap-4">
         <div className="grid grid-cols-2 gap-3">
-          <input
-            type="text"
-            required
-            autoComplete="given-name"
-            placeholder={t("Ім'я")}
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-            className={inputClass}
-          />
-          <input
-            type="text"
-            required
-            autoComplete="family-name"
-            placeholder={t("Прізвище")}
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-            className={inputClass}
-          />
+          <label className="ww-field">
+            <span>{t("Ім'я")}</span>
+            <input
+              type="text"
+              required
+              autoComplete="given-name"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              className={inputClass}
+            />
+          </label>
+          <label className="ww-field">
+            <span>{t("Прізвище")}</span>
+            <input
+              type="text"
+              required
+              autoComplete="family-name"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              className={inputClass}
+            />
+          </label>
         </div>
-        <input
-          type="email"
-          required
-          autoComplete="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className={inputClass}
-        />
-        <input
-          type="password"
-          required
-          minLength={8}
-          autoComplete="new-password"
-          placeholder={t("Пароль (мінімум 8 символів)")}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className={inputClass}
-        />
-        <input
-          type="password"
-          required
-          autoComplete="new-password"
-          placeholder={t("Повтори пароль")}
-          value={password2}
-          onChange={(e) => setPassword2(e.target.value)}
-          className={inputClass}
-        />
+        <label className="ww-field">
+          <span>Email</span>
+          <input
+            type="email"
+            required
+            autoComplete="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className={inputClass}
+          />
+        </label>
+        <label className="ww-field">
+          <span>{t("Пароль (мінімум 8 символів)")}</span>
+          <input
+            type="password"
+            required
+            minLength={8}
+            autoComplete="new-password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className={inputClass}
+          />
+        </label>
+        <label className="ww-field">
+          <span>{t("Повтори пароль")}</span>
+          <input
+            type="password"
+            required
+            autoComplete="new-password"
+            value={password2}
+            onChange={(e) => setPassword2(e.target.value)}
+            className={inputClass}
+          />
+        </label>
         {error && <p className="text-sm text-incorrect">{error}</p>}
         <button type="submit" disabled={loading} className={buttonClass}>
           {loading ? t("Створюю…") : t("Зареєструватись")}

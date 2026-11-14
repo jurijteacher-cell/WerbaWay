@@ -162,7 +162,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
               value={q}
               onChange={(e) => setQ(e.target.value)}
               placeholder={t("Знайти учня")}
-              className="mb-3 w-full rounded-xl border border-ink-line bg-ink-raised px-3 py-2 text-sm outline-none focus:border-gold"
+              className="ww-input mb-3 placeholder:text-paper-muted"
             />
             <div className="max-h-[46vh] overflow-y-auto pr-1">
               {!data && !err && <p className="py-6 text-center text-sm text-paper-muted">{t("Завантажую учнів…")}</p>}
@@ -220,7 +220,7 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
                     readOnly
                     value={url}
                     onFocus={(e) => e.currentTarget.select()}
-                    className="min-w-0 flex-1 rounded-xl border border-ink-line bg-ink-soft px-3 py-2 text-sm text-paper"
+                    className="ww-input min-w-0 flex-1 bg-ink-soft"
                   />
                   <button type="button" onClick={() => void copy()} className="ww-btn ww-btn-primary ww-btn-sm">
                     {copied ? t("Скопійовано ✓") : t("Копіювати")}

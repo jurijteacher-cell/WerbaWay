@@ -5,6 +5,7 @@ import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { Word, WordStat } from '@/lib/words';
+import { Switch } from '@/components/ui/Switch';
 
 type Mode = 'cards' | 'match' | 'quiz';
 type Dir = 'pl' | 'uk'; // що показуємо спершу
@@ -130,10 +131,7 @@ export function WordGame({
       </div>
 
       <div className="mb-5 mt-4 flex flex-wrap items-center gap-4 text-sm text-paper-muted">
-        <label className="flex items-center gap-2">
-          <input type="checkbox" checked={onlyUnknown} onChange={(e) => setOnlyUnknown(e.target.checked)} />
-          тільки невивчені
-        </label>
+        <Switch checked={onlyUnknown} onChange={setOnlyUnknown} label={t("тільки невивчені")} />
         <button type="button" className="text-gold hover:text-gold-bright" onClick={() => setDir(dir === 'pl' ? 'uk' : 'pl')}>
           Спершу: {dir === 'pl' ? t("польське слово") : t("переклад")} ⇄
         </button>

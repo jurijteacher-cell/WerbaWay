@@ -117,7 +117,7 @@ export default function MoviesPracticePage() {
         Клікни картку фільму й відповідай польською на 5 питань про персонажів — письмово тут або усно з
         викладачем. Кожен фільм можна пройти 3 рази.
       </p>
-      <p className="mb-8 font-mono text-xs uppercase tracking-widest text-gold-dim">
+      <p className="mb-8 ww-label">
         Прогрес: {totalDone} / {totalTarget}
       </p>
 
@@ -189,7 +189,7 @@ export default function MoviesPracticePage() {
               onChange={(e) => setAnswer(e.target.value)}
               placeholder={t("Напиши відповідь польською (або відповідай усно)…")}
               rows={4}
-              className="w-full resize-none rounded-lg border border-ink-line bg-ink px-3 py-2 text-sm text-paper outline-none focus:border-gold"
+              className="ww-input resize-none placeholder:text-paper-muted"
             />
 
             {question.sample && !showSample && (

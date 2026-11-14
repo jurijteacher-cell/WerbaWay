@@ -60,7 +60,7 @@ export default async function ReportsPage() {
       <h1 className="font-display text-2xl font-bold text-paper">{t("Повідомлення про помилки")}</h1>
       <p className="mt-1 text-sm text-paper-muted">{t("Те, що учні надсилають кнопкою «Помилка?» з будь-якої сторінки.")}</p>
 
-      <h2 className="mt-7 text-[11px] font-bold uppercase tracking-[0.14em] text-paper-faint">
+      <h2 className="mt-7 ww-label">
         Нерозібрані · {open.length}
       </h2>
       {open.length === 0 ? (
@@ -71,7 +71,7 @@ export default async function ReportsPage() {
 
       {closed.length > 0 && (
         <>
-          <h2 className="mt-9 text-[11px] font-bold uppercase tracking-[0.14em] text-paper-faint">
+          <h2 className="mt-9 ww-label">
             Розібрані · {closed.length}
           </h2>
           <ul className="mt-3 flex flex-col gap-3 opacity-70">{closed.map(card)}</ul>

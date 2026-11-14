@@ -58,7 +58,7 @@ export default async function DashboardPage() {
     <main className="mx-auto max-w-4xl px-4 py-16">
       <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="text-sm uppercase tracking-widest text-gold-dim">{t("Мій прогрес")}</p>
+          <p className="ww-label">{t("Мій прогрес")}</p>
           <h1 className="font-display text-3xl text-paper">{name}</h1>
           <p className="mt-1 text-sm text-paper-muted">{user.email}</p>
         </div>
@@ -117,7 +117,7 @@ export default async function DashboardPage() {
                 {wordDecks.length} {wordDecks.length === 1 ? t("колода") : t("колод")} · {wordsTotal} слів
               </p>
               <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-ink-line/70">
-                <div className="h-full rounded-full bg-gold-fill" style={{ width: `${wordsTotal ? Math.round((wordsKnown / wordsTotal) * 100) : 0}%` }} />
+                <div className="h-full rounded-full bg-gold-solid" style={{ width: `${wordsTotal ? Math.round((wordsKnown / wordsTotal) * 100) : 0}%` }} />
               </div>
               <p className="mt-1 text-xs text-paper-muted">
                 запам’ятано {wordsKnown} з {wordsTotal}

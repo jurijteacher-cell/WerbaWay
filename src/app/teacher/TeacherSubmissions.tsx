@@ -59,7 +59,7 @@ export function TeacherSubmissions({ submissions, lessonTitles }: Props) {
           <select
             value={lessonFilter}
             onChange={(e) => setLessonFilter(e.target.value)}
-            className="min-w-[12rem] rounded-lg border border-ink-line bg-ink px-3 py-2 text-paper outline-none focus:border-gold"
+            className="ww-input min-w-[12rem]"
           >
             <option value="all">{t("Усі уроки")}</option>
             {lessons.map((l) => (
@@ -74,7 +74,7 @@ export function TeacherSubmissions({ submissions, lessonTitles }: Props) {
           <select
             value={studentFilter}
             onChange={(e) => setStudentFilter(e.target.value)}
-            className="min-w-[12rem] rounded-lg border border-ink-line bg-ink px-3 py-2 text-paper outline-none focus:border-gold"
+            className="ww-input min-w-[12rem]"
           >
             <option value="all">{t("Усі учні")}</option>
             {students.map((name) => (

@@ -62,25 +62,29 @@ export default function ResetPasswordPage() {
   return (
     <AuthShell title={t("Новий пароль")} lead={t("Придумай пароль для входу")}>
       <form onSubmit={onSubmit} className="flex flex-col gap-4">
-        <input
-          type="password"
-          required
-          minLength={8}
-          autoComplete="new-password"
-          placeholder={t("Новий пароль (мінімум 8 символів)")}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className={inputClass}
-        />
-        <input
-          type="password"
-          required
-          autoComplete="new-password"
-          placeholder={t("Повтори пароль")}
-          value={password2}
-          onChange={(e) => setPassword2(e.target.value)}
-          className={inputClass}
-        />
+        <label className="ww-field">
+          <span>{t("Новий пароль (мінімум 8 символів)")}</span>
+          <input
+            type="password"
+            required
+            minLength={8}
+            autoComplete="new-password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className={inputClass}
+          />
+        </label>
+        <label className="ww-field">
+          <span>{t("Повтори пароль")}</span>
+          <input
+            type="password"
+            required
+            autoComplete="new-password"
+            value={password2}
+            onChange={(e) => setPassword2(e.target.value)}
+            className={inputClass}
+          />
+        </label>
         {error && <p className="text-sm text-incorrect">{error}</p>}
         <button type="submit" disabled={loading} className={buttonClass}>
           {loading ? t("Зберігаю…") : t("Зберегти пароль")}
