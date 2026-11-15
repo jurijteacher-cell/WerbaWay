@@ -35,7 +35,7 @@ function LoginForm() {
   };
 
   return (
-    <AuthShell title="Werba Way" lead={t("Увійди, щоб продовжити навчання")}>
+    <AuthShell logo title="Werba Way" lead={t("Увійди, щоб продовжити навчання")}>
       {reset ? <p className="mb-4 text-sm text-correct">{t("Пароль змінено. Увійди з новим паролем.")}</p> : null}
       <form onSubmit={onSubmit} className="flex flex-col gap-4">
         <label className="ww-field">
