@@ -15,7 +15,7 @@ export function createClient() {
       // викладача губляться. Серцебиття у Web Worker браузер не душить.
       worker: true,
       // запасний шлях: якщо серцебиття все ж зірвалось — одразу перепідключаємось, а не чекаємо хвилину
-      heartbeatCallback: (status) => {
+      heartbeatCallback: (status: string) => {
         if (status === 'disconnected' || status === 'timeout') client?.realtime.connect();
       },
     },
