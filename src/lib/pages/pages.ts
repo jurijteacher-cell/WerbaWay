@@ -182,7 +182,8 @@ marked.use({
   },
 });
 
-export function parsePage(slug: string, raw: string): ParsedPage {
+/** `goal` — чи є зачин карткою цілей; для перекладу береться з оригіналу, щоб сторінки не розходилися */
+export function parsePage(slug: string, raw: string, opts: { goal?: boolean } = {}): ParsedPage {
   const { data, body } = parseFrontmatter(raw);
   const meta: PageMeta = {
     slug,
@@ -201,7 +202,7 @@ export function parsePage(slug: string, raw: string): ParsedPage {
   let goal: string | null = null;
   let rest = body.trimStart();
   const hr = rest.search(/^---\s*$/m);
-  if (hr > 0 && /potrafisz/i.test(rest.slice(0, hr))) {
+  if (hr > 0 && (opts.goal ?? /potrafisz/i.test(rest.slice(0, hr)))) {
     goal = marked.parse(rest.slice(0, hr)) as string;
     rest = rest.slice(hr).replace(/^---\s*\n/, '');
   }
@@ -356,7 +357,26 @@ export function loadPage(slug: string, locale: Locale = DEFAULT_LOCALE): ParsedP
   if (!SLUG_RE.test(slug)) return null;
   const file = path.join(DIR, `${slug}.md`);
   if (!existsSync(file)) return null;
-  return parsePage(slug, localized(slug, readFileSync(file, 'utf8'), locale));
+  const src = readFileSync(file, 'utf8');
+  const loc = localized(slug, src, locale);
+  if (loc === src) return parsePage(slug, src);
+  const source = parsePage(slug, src);
+  const page = parsePage(slug, loc, { goal: !!source.goal });
+  keepSourceIds(page, source);
+  return page;
+}
+
+/**
+ * Ключі кроків (`?step=розділ~n`) рахуються з id розділу, а id — із заголовка. У перекладі заголовок
+ * інший, тож у викладача й учня з різними мовами кроки розходилися: клас відкривав учневі не ту сторінку,
+ * а його власне гортання викладач не впізнавав. Тому id розділів (і саму картку цілей) беремо з оригіналу, за порядком.
+ * Якорі змісту (`toc`) лишаються як є — вони ведуть на заголовки в перекладеному тексті.
+ */
+function keepSourceIds(page: ParsedPage, source: ParsedPage) {
+  if (source.sections.length !== page.sections.length) return;
+  page.sections.forEach((s, i) => {
+    s.id = source.sections[i].id;
+  });
 }
 
 /** Сторінка «TEACHER · …» до лекції (лише для викладача) — файл з тим самим slug */
