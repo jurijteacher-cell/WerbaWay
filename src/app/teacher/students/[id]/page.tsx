@@ -9,6 +9,7 @@ import { avatarColor, initials, relDay } from '@/lib/students';
 import { LectureCard } from '@/components/dashboard/LectureCard';
 import { Activity, Section, WeakList } from '@/components/dashboard/parts';
 import { AccessEditor, type ModuleInfo } from '@/components/teacher/AccessEditor';
+import { EmailStudent } from '@/components/teacher/EmailStudent';
 import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
@@ -123,6 +124,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
           )}
         </div>
         <div className="flex flex-wrap gap-2">
+          {userId && <EmailStudent studentId={userId} name={name} />}
           {userId && (
             <Link href={`/teacher/class/${userId}`} className="ww-btn ww-btn-primary">
               {t("Заняття з учнем")}
