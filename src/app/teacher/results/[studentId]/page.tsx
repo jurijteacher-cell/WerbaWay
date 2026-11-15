@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { requireTeacher } from '../requireTeacher';
 import { fmt, pct, pctClass } from '../format';
 import { lessonTitle } from '@/lib/lesson-titles';
@@ -56,6 +56,7 @@ const EMBED_LABEL: Record<string, string> = {
   'grammar-board': 'Tablica',
 };
 const EMBED_ORDER = ['grammar', 'grammar-board', 'hw', 'exam'];
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 function summarize(attempts: Attempt[]) {
   const lessons = new Map<
@@ -117,14 +118,30 @@ function weakPoints(attempts: Attempt[]) {
 }
 
 export default async function StudentResultsPage({ params }: { params: { studentId: string } }) {
-  const supabase = await requireTeacher();
+  const supabase = await requireTeacher(`/teacher/results/${params.studentId}`);
 
-  const { data: student } = await supabase
+  // Сюди ведуть і id запису з кодом (embed_students.id), і id акаунта учня
+  // (profiles.id — дзвіночок «здані домашки», lesson_progress.student_id).
+  // Раніше шукали лише за embed_students.id → акаунтні посилання давали 404.
+  if (!UUID_RE.test(params.studentId)) notFound();
+  const { data: matches } = await supabase
     .from('embed_student_stats')
     .select('*')
-    .eq('id', params.studentId)
-    .maybeSingle();
-  if (!student) notFound();
+    .or(`id.eq.${params.studentId},user_id.eq.${params.studentId}`)
+    .order('last_at', { ascending: false, nullsFirst: false });
+  const student =
+    (matches ?? []).find((s) => s.id === params.studentId) ?? (matches ?? [])[0] ?? null;
+  if (!student) {
+    // Акаунт є, а запису для вправ ще немає — показуємо сторінку учня, не 404.
+    const { data: profile } = await supabase
+      .from('profiles')
+      .select('id')
+      .eq('id', params.studentId)
+      .maybeSingle();
+    if (profile) redirect(`/teacher/students/${params.studentId}`);
+    notFound();
+  }
+  if (student.id !== params.studentId) redirect(`/teacher/results/${student.id}`);
 
   const { data, error } = await supabase
     .from('embed_attempts')
