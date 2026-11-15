@@ -1,7 +1,6 @@
 import { createBrowserClient } from '@supabase/ssr';
-import type { SupabaseClient } from '@supabase/supabase-js';
-
-let client: SupabaseClient | null = null;
+// тип — від самого createBrowserClient: @supabase/ssr і supabase-js мають різну кількість generic-параметрів
+let client: ReturnType<typeof createBrowserClient> | null = null;
 
 export function createClient() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL!;
