@@ -37,7 +37,7 @@ export default async function StudentsPage() {
       <div className="mb-10 grid grid-cols-2 gap-3 md:grid-cols-5">
         <Tile value={rows.length} label={t("учнів")} hint={t('{n} з акаунтом', { n: rows.filter((r) => r.hasAccount).length })} />
         <Tile value={active} label={t("активні за тиждень")} />
-        <Tile value={lectures} label={t("лекцій пройдено в класі")} />
+        <Tile value={lectures} label={t("лекцій пройдено")} />
         <Tile value={hw} label={t("домашок чекає")} />
         <Tile value={avg == null ? '—' : `${avg}%`} label={t("середня оцінка")} hint={t("правильно з першої спроби")} />
       </div>

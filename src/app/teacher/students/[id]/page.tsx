@@ -273,7 +273,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
         <div className="mt-12" id="access">
           <Section title={t("Доступ до лекцій")}>
             <p className="mb-4 text-sm text-paper-muted">
-              {t("Що учень бачить у «Курсі». Курс відкриває всі його лекції, зокрема майбутні. Лекції, пройдені в класі, відкриваються самі.")}
+              {t("Що учень бачить у «Курсі». Курс відкриває всі його лекції, зокрема майбутні. Лекції, позначені пройденими, відкриваються самі.")}
             </p>
             <AccessEditor
               studentId={userId}
