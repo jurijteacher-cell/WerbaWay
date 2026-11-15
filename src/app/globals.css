@@ -273,6 +273,23 @@
   .ww-report-row { display: flex; justify-content: flex-end; gap: .5rem; margin-top: .7rem; }
   .ww-report-err { margin: .5rem 0 0; color: var(--ww-no); font-size: 13px; }
   .ww-report-ok { margin: .5rem 0 0; color: var(--ww-ok); font-size: 13px; font-weight: 600; }
+  /* «Дивитися учня»: позначка в учня й кадр з його екраном у викладача */
+  .ww-live-badge {
+    position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom) + .75rem); z-index: 70; transform: translateX(-50%);
+    display: inline-flex; align-items: center; gap: .4rem; padding: .3rem .75rem; border-radius: 999px;
+    background: var(--ww-paper); border: 1px solid var(--ww-line); color: var(--ww-muted); font-size: 12px;
+    box-shadow: 0 8px 20px -14px rgba(28, 35, 72, .6); pointer-events: none;
+  }
+  @media (max-width: 1023px) { body:has(.ww-tabbar) .ww-live-badge { bottom: calc(env(safe-area-inset-bottom) + 4.5rem); } }
+  .ww-live-stage {
+    position: relative; min-height: 60vh; overflow: auto; border-radius: var(--ww-r-xl);
+    border: 1px solid var(--ww-line); background: var(--ww-paper);
+  }
+  .ww-live-status { margin: 0; padding: 3rem 1.5rem; text-align: center; color: var(--ww-muted); }
+  .ww-live-mount { position: relative; overflow: hidden; margin: 0 auto; }
+  /* лише перегляд: у кадр учня не клікаємо */
+  .ww-live-mount iframe { pointer-events: none; border: 0; }
+  .ww-live-mount .replayer-mouse, .ww-live-mount .replayer-mouse-tail { display: none; }
 
   /* ── спливне меню ── */
   .ww-menu {

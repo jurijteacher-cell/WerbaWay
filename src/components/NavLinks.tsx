@@ -24,7 +24,7 @@ export function NavLinks({ items }: { items: NavItem[] }) {
   const t = useT();
   const path = usePathname() ?? '/';
   const isOn = (it: NavItem) => (it.exact ? path === it.href : path === it.href || path.startsWith(`${it.href}/`));
-  // якщо підходить кілька пунктів (/teacher і /teacher/class) — підсвічуємо найдовший
+  // якщо підходить кілька пунктів (/teacher і /teacher/students) — підсвічуємо найдовший
   const active = items.filter(isOn).sort((a, b) => b.href.length - a.href.length)[0]?.href;
 
   const wrapRef = useRef<HTMLDivElement>(null);

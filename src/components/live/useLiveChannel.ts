@@ -11,7 +11,7 @@ import {
   type Chunk,
   type ClassMsg,
   type Presence,
-} from '@/lib/class/protocol';
+} from '@/lib/live/protocol';
 
 export type LinkState = 'connecting' | 'online' | 'offline';
 
@@ -26,10 +26,10 @@ type Opts = {
 };
 
 /**
- * One private Realtime channel `class:<studentId>` shared by the student page and the teacher page.
+ * One private Realtime channel `class:<studentId>` shared by the student (LiveBeacon) and the teacher (LiveWatch).
  * Messages are split into chunks and put back together; `send` is a no-op until subscribed.
  */
-export function useClassChannel(opts: Opts) {
+export function useLiveChannel(opts: Opts) {
   const supabase = useMemo(() => createClient(), []);
   const [link, setLink] = useState<LinkState>('connecting');
   const chRef = useRef<RealtimeChannel | null>(null);

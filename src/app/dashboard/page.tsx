@@ -65,16 +65,16 @@ export default async function DashboardPage() {
         <div className="flex gap-4 text-sm">
           {isTeacher ? (
             <>
-              <Link href="/teacher/class" className="text-gold hover:text-gold-bright">
-                {t("Клас наживо →")}
+              <Link href="/teacher/students" className="text-gold hover:text-gold-bright">
+                {t("Учні →")}
               </Link>
               <Link href="/teacher/analytics" className="text-gold hover:text-gold-bright">
                 {t("Аналітика класу →")}
               </Link>
             </>
           ) : (
-            <Link href="/class" className="text-gold hover:text-gold-bright">
-              {t("Увійти в клас →")}
+            <Link href="/learn" className="text-gold hover:text-gold-bright">
+              {t("До курсу →")}
             </Link>
           )}
           <Link href="/forgot-password" className="text-paper-muted hover:text-gold">

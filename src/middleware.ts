@@ -18,7 +18,7 @@ function localeHeaders(request: NextRequest) {
   return headers;
 }
 
-const PROTECTED_PREFIXES = ['/lessons', '/lectures', '/teacher', '/dashboard', '/class', '/learn', '/words'];
+const PROTECTED_PREFIXES = ['/lessons', '/lectures', '/teacher', '/dashboard', '/learn', '/words'];
 
 /** Public surfaces opened from Notion iframes — no auth, no Supabase round-trip. */
 const PUBLIC_PREFIXES = ['/embed', '/slides', '/brand', '/api/embed'];

@@ -4,7 +4,7 @@ import { LogoutButton } from './LogoutButton';
 import { NavLinks, type NavItem } from './NavLinks';
 import { SearchPalette } from './SearchPalette';
 import { MenuDrawer, MobileNav, type Tab } from './MobileNav';
-import { ClassWatcher } from './class/ClassWatcher';
+import { LiveBeacon } from './live/LiveBeacon';
 import { Mark } from '@/components/Mark';
 import { TeacherBell } from '@/components/TeacherBell';
 import { LangSwitch } from '@/components/LangSwitch';
@@ -26,7 +26,6 @@ export async function TopNav() {
 
   const items: NavItem[] = [
     { href: '/learn', label: t('Курс') },
-    { href: isTeacher ? '/teacher/class' : '/class', label: t('Клас') },
     ...(isTeacher ? [{ href: '/teacher/students', label: t('Учні') }] : []),
     { href: '/words', label: t('Слова') },
     { href: '/dashboard', label: t('Прогрес') },
@@ -34,23 +33,21 @@ export async function TopNav() {
     ...(isTeacher ? [{ href: '/teacher/reports', label: t('Повідомлення про помилки') }] : []),
   ];
 
-  // телефон: 4 головні вкладки внизу, решта — у «Ще»
+  // телефон: головні вкладки внизу, решта — у «Ще»
   const tabs: Tab[] = isTeacher
     ? [
         { href: '/learn', label: t('Курс'), icon: 'book' },
-        { href: '/teacher/class', label: t('Клас'), icon: 'class' },
         { href: '/teacher/students', label: t('Учні'), icon: 'users' },
         { href: '/words', label: t('Слова'), icon: 'cards' },
+        { href: '/dashboard', label: t('Прогрес'), icon: 'chart' },
       ]
     : [
         { href: '/learn', label: t('Курс'), icon: 'book' },
-        { href: '/class', label: t('Клас'), icon: 'class' },
         { href: '/words', label: t('Слова'), icon: 'cards' },
         { href: '/dashboard', label: t('Прогрес'), icon: 'chart' },
       ];
   const more: Tab[] = isTeacher
     ? [
-        { href: '/dashboard', label: t('Прогрес'), icon: 'chart' },
         { href: '/teacher', label: t('Кабінет викладача'), icon: 'desk' },
         { href: '/forgot-password', label: t('Змінити пароль'), icon: 'key' },
       ]
@@ -58,8 +55,8 @@ export async function TopNav() {
 
   return (
     <>
-    {/* учень онлайн з будь-якої сторінки; коли викладач відкриє урок — сайт сам переведе в клас */}
-    {!isTeacher && <ClassWatcher studentId={user.id} name={(profile?.full_name as string | null) ?? undefined} />}
+    {/* учень онлайн з будь-якої сторінки; коли викладач натисне «Дивитися» — у лекції йому видно екран учня */}
+    {!isTeacher && <LiveBeacon studentId={user.id} name={(profile?.full_name as string | null) ?? undefined} />}
     {/* relative z-40: backdrop-blur робить шапку окремим шаром, без z-index її меню (мова, пошук)
         ховаються під обкладинку лекції. 40 — вище контенту, нижче повноекранних вікон (z-50+). */}
     <header className="relative z-40 border-b border-ink-line bg-ink-raised/85 backdrop-blur">

@@ -44,11 +44,7 @@ export function ReportBug() {
   async function send() {
     if (!text.trim() || state === 'sending') return;
     setState('sending');
-    // у класі адреса сторінки — /class, а урок відкрито в кадрі: беремо адресу кадру
-    const frame = location.pathname.startsWith('/class')
-      ? document.querySelector<HTMLIFrameElement>('.cls-sheet:last-child iframe')?.src ?? null
-      : null;
-    const where = frame ? new URL(frame, location.href) : location;
+    const where = location;
     const slug = /\/(?:learn|embed|s|slides)\/([a-z0-9-]+)/.exec(where.pathname)?.[1] ?? null;
     try {
       const r = await fetch('/api/report', {
@@ -56,7 +52,7 @@ export function ReportBug() {
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({
           message: text.trim(),
-          pageUrl: frame ? `${location.href} → ${where.href}` : location.href,
+          pageUrl: location.href,
           lessonSlug: slug,
           context: { ua: navigator.userAgent, w: innerWidth, h: innerHeight },
         }),

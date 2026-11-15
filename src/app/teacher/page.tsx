@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { lessons } from '@/content/lessons';
-import { lectures } from '@/content/lectures';
 import { TeacherSubmissions } from './TeacherSubmissions';
 import { t } from '@/i18n/server';
 
@@ -47,10 +46,7 @@ export default async function TeacherPage() {
       <h1 className="mb-8 font-display text-3xl text-paper">{t("Кабінет викладача")}</h1>
 
       <section className="mb-12 flex flex-wrap gap-3">
-        <Link href="/teacher/class" className="ww-btn ww-btn-primary ww-btn-lg">
-          {t("Учні й клас наживо")}
-        </Link>
-        <Link href="/teacher/students" className="ww-btn ww-btn-secondary ww-btn-lg">
+        <Link href="/teacher/students" className="ww-btn ww-btn-primary ww-btn-lg">
           {t("Учні й прогрес")}
         </Link>
         <Link href="/learn" className="ww-btn ww-btn-secondary ww-btn-lg">
@@ -65,22 +61,6 @@ export default async function TeacherPage() {
       </section>
 
       {error && <p className="text-incorrect">Помилка завантаження: {error.message}</p>}
-
-      <section className="mb-12">
-        <h2 className="mb-4 font-display text-xl text-paper">{t("Інтерактивні лекції наживо")}</h2>
-        <div className="flex flex-wrap gap-2">
-          {lectures.map((lecture) => (
-            <Link
-              key={lecture.slug}
-              href={`/teacher/live/lectures/${lecture.slug}`}
-              className="ww-btn ww-btn-ghost"
-            >
-              {lecture.title} →
-            </Link>
-          ))}
-          {lectures.length === 0 && <p className="text-sm text-paper-muted">{t("Ще немає жодної лекції.")}</p>}
-        </div>
-      </section>
 
       <TeacherSubmissions submissions={normalizedSubmissions} lessonTitles={lessonTitles} />
     </main>
