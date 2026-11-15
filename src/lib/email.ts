@@ -27,6 +27,24 @@ ${paras}
 </div></body></html>`;
 }
 
+/**
+ * Лист із кнопкою (запрошення тощо) — у тому ж стилі, що й шаблони Supabase Auth:
+ * українською, з коротким польським дублем під рискою. Усі тексти екрануються, посилання — теж.
+ */
+export function buttonLetterHtml(p: { title: string; lead: string; button: string; link: string; note: string; pl: string }): string {
+  return `<!doctype html><html><body style="margin:0;background:#f3f5fc;padding:24px 12px;font-family:Arial,Helvetica,sans-serif;color:#1c2348">
+<div style="max-width:560px;margin:0 auto;background:#ffffff;border:1px solid #dde3f3;border-radius:16px;padding:28px 24px 20px;font-size:16px;line-height:1.55">
+<p style="margin:0 0 8px;font-size:13px;letter-spacing:0.12em;color:#7a4fe0;font-weight:bold">WERBA WAY</p>
+<h1 style="margin:0 0 14px;font-size:22px;line-height:1.3">${esc(p.title)}</h1>
+<p style="margin:0 0 20px">${esc(p.lead)}</p>
+<p style="margin:0 0 22px"><a href="${esc(p.link)}" style="display:inline-block;background:#7a4fe0;color:#ffffff;text-decoration:none;font-weight:bold;padding:12px 22px;border-radius:12px">${esc(p.button)}</a></p>
+<p style="margin:0 0 16px;font-size:14px;color:#5d6689">${esc(p.note)}</p>
+<hr style="border:none;border-top:1px solid #dde3f3;margin:18px 0">
+<p style="margin:0;font-size:14px;color:#5d6689"><b>PL:</b> ${esc(p.pl)}</p>
+<p style="margin:18px 0 0;font-size:14px;color:#5d6689">Werba Way · <a href="https://www.werbaway.com" style="color:#7a4fe0">werbaway.com</a></p>
+</div></body></html>`;
+}
+
 export type SendResult = { ok: true; id: string } | { ok: false; error: string };
 
 export async function sendEmail(msg: { to: string; subject: string; text: string; html?: string; replyTo?: string }): Promise<SendResult> {

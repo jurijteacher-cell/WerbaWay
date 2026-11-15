@@ -2,6 +2,7 @@ import { requireTeacher } from '@/app/teacher/results/requireTeacher';
 import { loadStudents } from '@/lib/students';
 import { StudentsGrid } from '@/components/students/StudentsGrid';
 import { t } from '@/i18n/server';
+import { InviteStudent } from '@/components/teacher/InviteStudent';
 
 export const dynamic = 'force-dynamic';
 
@@ -27,7 +28,10 @@ export default async function StudentsPage() {
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-12">
-      <h1 className="mb-1 font-display text-4xl text-paper">{t("Учні")}</h1>
+      <div className="mb-1 flex flex-wrap items-center justify-between gap-3">
+        <h1 className="font-display text-4xl text-paper">{t("Учні")}</h1>
+        <InviteStudent />
+      </div>
       <p className="mb-8 text-paper-muted">{t("Хто як займається. Відкрий учня, щоб побачити прогрес, пройдені з ним лекції й доступи.")}</p>
 
       <div className="mb-10 grid grid-cols-2 gap-3 md:grid-cols-5">
