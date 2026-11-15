@@ -21,6 +21,9 @@ const literata = Literata({
   style: ['normal', 'italic'],
   variable: '--font-literata',
   display: 'swap',
+  // текст лекцій: 8 файлів (2 накреслення × 4 набори) не тягнемо наперед на кожну сторінку —
+  // браузер візьме потрібні, коли на сторінці з'явиться польський текст
+  preload: false,
 });
 
 const plexMono = IBM_Plex_Mono({
@@ -28,6 +31,7 @@ const plexMono = IBM_Plex_Mono({
   weight: ['500'],
   variable: '--font-plex-mono',
   display: 'swap',
+  preload: false,
 });
 
 export async function generateMetadata(): Promise<Metadata> {

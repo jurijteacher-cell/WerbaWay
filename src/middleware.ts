@@ -75,6 +75,16 @@ export async function middleware(request: NextRequest) {
   // Content-queue notebook lessons are public (LMS + Playwright)
   const isPublicQueueLesson = /^\/lessons\/pl-/.test(path);
 
+  // Головна: одразу сюди, без зайвого заходу на сервер (page.tsx робив те саме ще одним запитом)
+  if (path === '/') {
+    const url = request.nextUrl.clone();
+    url.pathname = user ? '/learn' : '/login';
+    const redirect = NextResponse.redirect(url);
+    // оновлені куки сесії (refresh) мають дійти до браузера й тут
+    response.cookies.getAll().forEach((c) => redirect.cookies.set(c));
+    return redirect;
+  }
+
   const isProtected =
     !isPublicQueueLesson &&
     PROTECTED_PREFIXES.some((p) => path.startsWith(p));
@@ -90,5 +100,9 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon.ico).*)'],
+  // Файли з /public (обкладинки, аудіо, шрифти, слайди) не потребують ні сесії, ні мови:
+  // без цього кожна картинка лекції чекала на запит до Supabase Auth.
+  matcher: [
+    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:png|jpe?g|gif|webp|avif|svg|ico|mp3|m4a|ogg|wav|mp4|webm|woff2?|ttf|pdf|txt|xml|webmanifest)$).*)',
+  ],
 };
