@@ -137,9 +137,12 @@ export function ClassAgent() {
       const m = ev.data;
       if (!m || m.ww !== FRAME_TAG || !rec) return;
       if (m.k === 'lock' && typeof m.on === 'boolean') {
+        const was = locked;
         locked = m.on;
         guard();
-        if (locked) {
+        // лише в момент, коли пульт увімкнули: викладач шле lock повторно (перепідключення, новий знімок),
+        // і кожен повтор вибивав курсор із поля, у яке він саме друкує за учня
+        if (locked && !was) {
           // прибираємо курсор з поля, щоб учень не дописував з клавіатури
           const a = document.activeElement as HTMLElement | null;
           if (a && a !== document.body) a.blur?.();

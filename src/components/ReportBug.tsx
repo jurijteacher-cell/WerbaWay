@@ -17,6 +17,16 @@ export function ReportBug() {
   const [open, setOpen] = useState(false);
   const [text, setText] = useState('');
   const [state, setState] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+  // сторінка в кадрі нашого ж сайту (клас, вправа всередині лекції): кнопка вже є на сторінці навколо,
+  // друга лягала поверх першої. У Notion (чужий домен) кнопка лишається.
+  const [inSiteFrame, setInSiteFrame] = useState(false);
+  useEffect(() => {
+    try {
+      setInSiteFrame(window.parent !== window && window.parent.location.origin === window.location.origin);
+    } catch {
+      /* батько з іншого домену — це Notion чи інший сайт, кнопку лишаємо */
+    }
+  }, []);
 
   // на телефоні кнопки немає (вона перекривала вміст) — діалог відкривається з меню «Ще» нижньої панелі
   useEffect(() => {
@@ -34,14 +44,19 @@ export function ReportBug() {
   async function send() {
     if (!text.trim() || state === 'sending') return;
     setState('sending');
-    const slug = /\/(?:learn|embed|s)\/([a-z0-9-]+)/.exec(location.pathname)?.[1] ?? null;
+    // у класі адреса сторінки — /class, а урок відкрито в кадрі: беремо адресу кадру
+    const frame = location.pathname.startsWith('/class')
+      ? document.querySelector<HTMLIFrameElement>('.cls-sheet:last-child iframe')?.src ?? null
+      : null;
+    const where = frame ? new URL(frame, location.href) : location;
+    const slug = /\/(?:learn|embed|s|slides)\/([a-z0-9-]+)/.exec(where.pathname)?.[1] ?? null;
     try {
       const r = await fetch('/api/report', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({
           message: text.trim(),
-          pageUrl: location.href,
+          pageUrl: frame ? `${location.href} → ${where.href}` : location.href,
           lessonSlug: slug,
           context: { ua: navigator.userAgent, w: innerWidth, h: innerHeight },
         }),
@@ -57,6 +72,8 @@ export function ReportBug() {
       setState('error');
     }
   }
+
+  if (inSiteFrame) return null;
 
   return (
     <>

@@ -232,7 +232,7 @@ export function ClassStudent({ userId, name, initialRoom }: Props) {
             <span className="cls-wait-dot" aria-hidden="true">
               📘
             </span>
-            <p className="cls-wait-title">{name.split(' ')[0]}, чекаємо на викладача</p>
+            <p className="cls-wait-title">{t("{name}, чекаємо на викладача", { name: name.split(' ')[0] })}</p>
             <p className="cls-wait-sub">{t("Урок відкриється тут сам — нічого натискати не треба. Сторінку можна не оновлювати.")}</p>
             <p className="cls-wait-links">
               <a href="/learn">{t("Мої лекції")}</a>

@@ -46,7 +46,10 @@ export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes, 
         <style
           dangerouslySetInnerHTML={{
             // всередині класу сторінка займає весь кадр: без шапки сайту й без нижньої панелі
-            __html: 'body > header{display:none!important}.ww-tabbar{display:none!important}body{padding-bottom:0!important}',
+            // номер аркуша «2 / 10» рахує сторінки лекції, а клас має свої кроки (текст і вправа окремо) —
+            // у класі номер показує панель під кадром, тож тут його ховаємо, щоб цифри не розходились
+            __html:
+              'body > header{display:none!important}.ww-tabbar{display:none!important}body{padding-bottom:0!important}.lp-class .lp-sheet-folio{display:none}',
           }}
         />
         <LessonHero meta={meta}>

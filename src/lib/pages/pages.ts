@@ -226,6 +226,14 @@ export function parsePage(slug: string, raw: string, opts: { goal?: boolean } = 
       const sp = splitNumbered(x.label);
       return { id: x.id, label: sp.title, num: sp.num };
     });
+  // id розділу — основа ключа кроку (?step=розділ~n). Заголовки кирилицею дають порожній slug → «intro»,
+  // і кілька розділів отримували той самий id: клас відкривав не ту сторінку. Перший лишається як був.
+  const used = new Map<string, number>();
+  for (const sec of sections) {
+    const n = (used.get(sec.id) ?? 0) + 1;
+    used.set(sec.id, n);
+    if (n > 1) sec.id = `${sec.id}-${n}`;
+  }
   return { meta, goal, sections, toc, hasHomework: sections.some((x) => x.kind === 'homework') };
 }
 
@@ -331,14 +339,51 @@ export function buildPages(page: ParsedPage): BookPage[] {
 }
 
 /** Кроки заняття в класі = сторінки лекції */
+/** Скільки тексту перед вправою робить його окремим кроком класу (менше — це просто підпис до вправи) */
+const LEAD_MIN_CHARS = 200;
+
+/** Текст перед вправою вартий окремої сторінки: читання, теорія, таблиця, фото чи відео */
+function hasLead(blocks: PageBlock[]): boolean {
+  const lead = blocks.filter((b) => !isLocalEmbed(b));
+  if (lead.some((b) => b.k !== 'html')) return true; // відео або зовнішнє вікно
+  const html = lead.map((b) => (b.k === 'html' ? b.html : '')).join('');
+  if (/<(img|table)\b/i.test(html)) return true;
+  return html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().length >= LEAD_MIN_CHARS;
+}
+
+/**
+ * Кроки заняття в класі. Вправа відкривається в класі окремим вікном (так її стабільно видно в дзеркалі
+ * викладача — вкладений кадр rrweb губить після перезнімка), тож текст перед нею — читання, теорія,
+ * таблиця — йде окремим кроком «Текст» прямо перед вправою. Раніше цього кроку не було, і в класі учень
+ * не бачив, наприклад, листа, на який відповідав у «prawda czy fałsz».
+ */
 export function buildSteps(page: ParsedPage): ClassStep[] {
-  return buildPages(page).map(({ key, section, num, label, kind, url }) => ({
-    key,
-    section: num ? `${num}. ${section}` : section,
-    label,
-    kind,
-    url,
-  }));
+  const base = `/learn/${page.meta.slug}`;
+  const out: ClassStep[] = [];
+  for (const { key, section, num, label, kind, url, blocks } of buildPages(page)) {
+    const sec = num ? `${num}. ${section}` : section;
+    const exercise = kind !== 'text' && kind !== 'goal';
+    if (exercise && hasLead(blocks)) {
+      out.push({
+        key: `${key}~text`,
+        section: sec,
+        label: blocks.some((b) => b.k === 'video') ? 'Текст і відео' : 'Текст',
+        kind: 'text',
+        // сторінка кроку показує текст цієї сторінки без її вправи (embeds="external")
+        url: `${base}?step=${encodeURIComponent(key)}`,
+      });
+    }
+    out.push({ key, section: sec, label, kind, url });
+  }
+  // та сама вправа двічі (напр. два вікна vocab поспіль): з однаковою адресою «Далі» стояло на місці,
+  // бо поточний крок шукається за адресою. Повторам додаємо параметр, який сторінка вправи ігнорує.
+  const seen = new Map<string, number>();
+  for (const st of out) {
+    const n = (seen.get(st.url) ?? 0) + 1;
+    seen.set(st.url, n);
+    if (n > 1) st.url = `${st.url}${st.url.includes('?') ? '&' : '?'}n=${n}`;
+  }
+  return out;
 }
 
 export function listPages(locale: Locale = DEFAULT_LOCALE): PageMeta[] {
