@@ -183,9 +183,8 @@ marked.use({
 });
 
 /** `goal` — чи є зачин карткою цілей; для перекладу береться з оригіналу, щоб сторінки не розходилися */
-export function parsePage(slug: string, raw: string, opts: { goal?: boolean } = {}): ParsedPage {
-  const { data, body } = parseFrontmatter(raw);
-  const meta: PageMeta = {
+function metaFromData(slug: string, data: Record<string, string>): PageMeta {
+  return {
     slug,
     title: data.title || slug,
     icon: data.icon,
@@ -197,6 +196,11 @@ export function parsePage(slug: string, raw: string, opts: { goal?: boolean } = 
     notion: data.notion,
     teacherOf: data.teacherOf,
   };
+}
+
+export function parsePage(slug: string, raw: string, opts: { goal?: boolean } = {}): ParsedPage {
+  const { data, body } = parseFrontmatter(raw);
+  const meta = metaFromData(slug, data);
 
   // «Po tej lekcji potrafisz» — все до першого ---
   let goal: string | null = null;
@@ -386,16 +390,29 @@ export function buildSteps(page: ParsedPage): ClassStep[] {
   return out;
 }
 
+/**
+ * Список лекцій (лише шапки). Раніше кожен виклик повністю розбирав усі лекції (markdown → HTML,
+ * блоки, вправи) заради назви й обкладинки — /learn, /dashboard, /words чекали на це щоразу.
+ * Тепер читаємо тільки frontmatter, а результат тримаємо в пам'яті: у продакшні файли лекцій
+ * незмінні в межах деплою. Ключ кешу — мова й те, чи діє `.uk.json` (applyUkMap залежить від запиту).
+ */
+const listCache = new Map<string, PageMeta[]>();
+
 export function listPages(locale: Locale = DEFAULT_LOCALE): PageMeta[] {
   if (!existsSync(DIR)) return [];
-  return readdirSync(DIR)
+  const key = `${locale}:${applyUkMap(locale) ? 1 : 0}`;
+  const cached = process.env.NODE_ENV === 'production' ? listCache.get(key) : undefined;
+  if (cached) return [...cached];
+  const list = readdirSync(DIR)
     .filter((f) => f.endsWith('.md'))
     .map((f) => {
       const slug = f.replace(/\.md$/, '');
       const raw = localized(slug, readFileSync(path.join(DIR, f), 'utf8'), locale);
-      return parsePage(slug, raw).meta;
+      return metaFromData(slug, parseFrontmatter(raw).data);
     })
     .sort((a, b) => (a.number ?? 1e9) - (b.number ?? 1e9) || a.title.localeCompare(b.title, 'pl'));
+  listCache.set(key, list);
+  return [...list];
 }
 
 export function loadPage(slug: string, locale: Locale = DEFAULT_LOCALE): ParsedPage | null {
