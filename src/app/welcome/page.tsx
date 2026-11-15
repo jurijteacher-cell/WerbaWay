@@ -89,7 +89,7 @@ export default function WelcomePage() {
   }
 
   return (
-    <AuthShell title={t("Вітаємо у Werba Way!")} lead={t("Ще крок: напиши, як тебе звати, і придумай пароль для входу")}>
+    <AuthShell logo title={t("Вітаємо у Werba Way!")} lead={t("Ще крок: напиши, як тебе звати, і придумай пароль для входу")}>
       <form onSubmit={onSubmit} className="flex flex-col gap-4">
         {email && (
           <p className="text-sm text-paper-muted">

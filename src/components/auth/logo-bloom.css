@@ -1,0 +1,19 @@
+/* Логотип на вході й реєстрації: стебло проростає з W, прапорці розкриваються по черзі (~2 с).
+   Макет: полотно «Анімація логотипа — вхід і реєстрація», варіант В. */
+.ww-bloom { display: block; margin: 0 auto 14px; width: 124px; height: 124px; }
+@media (min-width: 768px) { .ww-bloom { width: 148px; height: 148px; } }
+.ww-bloom svg { display: block; overflow: visible; }
+.ww-bloom .w { font-family: var(--font-playfair), Georgia, 'Times New Roman', serif; animation: ww-bloom-w .45s ease-out both; }
+@keyframes ww-bloom-w { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.ww-bloom .stem { stroke-dasharray: 1; stroke-dashoffset: 1; animation: ww-bloom-draw .36s cubic-bezier(.4, 0, .6, 1) forwards; }
+.ww-bloom .stem0 { animation-delay: .2s; } .ww-bloom .stem1 { animation-delay: .52s; } .ww-bloom .stem2 { animation-delay: .84s; }
+@keyframes ww-bloom-draw { to { stroke-dashoffset: 0; } }
+.ww-bloom .lf { transform-box: view-box; animation: ww-bloom-pop .75s cubic-bezier(.2, .8, .2, 1) both; }
+@keyframes ww-bloom-pop { 0% { transform: scale(0) rotate(-38deg); opacity: 0; } 50% { transform: scale(1.1) rotate(9deg); opacity: 1; } 75% { transform: scale(.96) rotate(-3deg); } 100% { transform: none; opacity: 1; } }
+.ww-bloom .lf-ua { animation-delay: 0.46s; }
+.ww-bloom .lf-uk { animation-delay: 0.74s; }
+.ww-bloom .lf-es { animation-delay: 0.86s; }
+.ww-bloom .lf-de { animation-delay: 1.04s; }
+.ww-bloom .lf-fr { animation-delay: 1.14s; }
+.ww-bloom .lf-pl { animation-delay: 1.24s; }
+@media (prefers-reduced-motion: reduce) { .ww-bloom *, .ww-bloom .stem { animation: none !important; stroke-dashoffset: 0; opacity: 1; } }

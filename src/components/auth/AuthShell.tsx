@@ -2,19 +2,34 @@
 
 import type { ReactNode } from 'react';
 import { useT } from '@/i18n/client';
+import { LogoBloom } from './LogoBloom';
 
 export const inputClass =
   'ww-input px-4 py-3 text-base placeholder:text-paper-muted';
 export const buttonClass =
   'ww-btn ww-btn-primary ww-btn-lg w-full';
 
-export function AuthShell({ title, lead, children }: { title: string; lead?: string; children: ReactNode }) {
+export function AuthShell({
+  title,
+  lead,
+  logo = false,
+  children,
+}: {
+  title: string;
+  lead?: string;
+  /** анімований логотип над заголовком (вхід, реєстрація, перший вхід за запрошенням) */
+  logo?: boolean;
+  children: ReactNode;
+}) {
   const t = useT();
   return (
     <main className="flex min-h-screen items-center justify-center px-4 py-16">
       <div className="w-full max-w-sm">
-        <h1 className="mb-1 font-display text-3xl text-paper">{title}</h1>
-        {lead ? <p className="mb-8 text-paper-muted">{lead}</p> : <div className="mb-8" />}
+        <div className={logo ? 'text-center' : undefined}>
+          {logo ? <LogoBloom /> : null}
+          <h1 className="mb-1 font-display text-3xl text-paper">{title}</h1>
+          {lead ? <p className="mb-8 text-paper-muted">{lead}</p> : <div className="mb-8" />}
+        </div>
         {children}
       </div>
     </main>

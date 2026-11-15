@@ -64,7 +64,7 @@ export default function RegisterPage() {
   }
 
   return (
-    <AuthShell title={t("Реєстрація")} lead={t("Створи акаунт у Werba Way")}>
+    <AuthShell logo title={t("Реєстрація")} lead={t("Створи акаунт у Werba Way")}>
       <form onSubmit={onSubmit} className="flex flex-col gap-4">
         <div className="grid grid-cols-2 gap-3">
           <label className="ww-field">
