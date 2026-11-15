@@ -10,6 +10,8 @@ import { LectureCard } from '@/components/dashboard/LectureCard';
 import { Activity, Section, WeakList } from '@/components/dashboard/parts';
 import { AccessEditor, type ModuleInfo } from '@/components/teacher/AccessEditor';
 import { EmailStudent } from '@/components/teacher/EmailStudent';
+import { LiveBadgeFor } from '@/components/live/LiveBadge';
+import { MarkLessonDone } from '@/components/live/MarkLessonDone';
 import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
@@ -44,7 +46,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
     await Promise.all(embedIds.map((id) => fetchAttempts(supabase, { studentId: id })))
   ).flat();
 
-  const [{ data: progress }, { data: grants }, { data: vocab }, { data: mocks }, { data: room }] = await Promise.all([
+  const [{ data: progress }, { data: grants }, { data: vocab }, { data: mocks }] = await Promise.all([
     userId
       ? supabase.from('lesson_progress').select('lesson_slug, completed_at, homework_assigned_at, homework_done_at').eq('student_id', userId).order('completed_at', { ascending: false })
       : Promise.resolve({ data: [] as never[] }),
@@ -53,7 +55,6 @@ export default async function StudentProfilePage({ params }: { params: { id: str
     userId
       ? supabase.from('mock_results').select('*').eq('user_id', userId).order('created_at', { ascending: false }).limit(10)
       : Promise.resolve({ data: [] as never[] }),
-    userId ? supabase.from('class_rooms').select('active, lesson_id, updated_at').eq('student_id', userId).maybeSingle() : Promise.resolve({ data: null }),
   ]);
 
   const s = summarize(attempts);
@@ -71,6 +72,14 @@ export default async function StudentProfilePage({ params }: { params: { id: str
     .map((p) => ({ page: p, stats: lectureStats(p.slug, attempts) }))
     .filter((x) => x.stats.touched)
     .sort((a, b) => (b.stats.lastAt ?? '').localeCompare(a.stats.lastAt ?? ''));
+
+  // що можна позначити пройденим: спершу те, з чим учень уже працював сам, далі відкриті йому лекції
+  const grantMods = new Set((grants ?? []).filter((g) => g.kind === 'module').map((g) => g.ref as string));
+  const grantLessons = new Set((grants ?? []).filter((g) => g.kind === 'lesson').map((g) => g.ref as string));
+  const soloSet = new Set(solo.map((x) => x.page.slug));
+  const open = pages.filter((p) => !doneSet.has(p.slug) && !soloSet.has(p.slug) && ((p.module && grantMods.has(p.module)) || grantLessons.has(p.slug)));
+  const markable = [...solo.map((x) => x.page), ...open];
+  const markList = (markable.length ? markable : pages.filter((p) => !doneSet.has(p.slug))).map((p) => ({ slug: p.slug, title: p.title }));
 
   const decks = done.map((r) => loadDeck(r.lesson_slug as string)).filter((d): d is NonNullable<typeof d> => !!d && d.words.length > 0);
   const wordsTotal = decks.reduce((n, d) => n + d.words.length, 0);
@@ -110,9 +119,13 @@ export default async function StudentProfilePage({ params }: { params: { id: str
           <h1 className="font-display text-3xl text-paper">{name}</h1>
           <p className="mt-1 text-sm text-paper-muted">
             {t("Остання активність:")} <b className="text-paper">{relDay(lastAt)}</b>
-            {room?.active && <span className="ml-2 rounded-full bg-correct/10 px-2 py-0.5 text-correct">{t("зараз у класі")}</span>}
             {!userId && <span className="ml-2 rounded bg-ink-soft px-1.5 py-0.5">{t("лише Notion, без акаунта")}</span>}
           </p>
+          {userId && (
+            <div className="mt-2">
+              <LiveBadgeFor studentId={userId} />
+            </div>
+          )}
           {courseTitles.length > 0 && (
             <p className="mt-2 flex flex-wrap gap-1.5">
               {courseTitles.map((t) => (
@@ -126,8 +139,8 @@ export default async function StudentProfilePage({ params }: { params: { id: str
         <div className="flex flex-wrap gap-2">
           {userId && <EmailStudent studentId={userId} name={name} />}
           {userId && (
-            <Link href={`/teacher/class/${userId}`} className="ww-btn ww-btn-primary">
-              {t("Заняття з учнем")}
+            <Link href={`/teacher/students/${userId}/watch`} className="ww-btn ww-btn-primary">
+              {t("👁 Дивитися екран")}
             </Link>
           )}
           {embedIds[0] && (
@@ -164,6 +177,11 @@ export default async function StudentProfilePage({ params }: { params: { id: str
       {userId && (
         <div className="mt-10">
           <Section title={t('Лекції, пройдені разом ({n})', { n: together.length })}>
+            {markList.length > 0 && (
+              <div className="mb-5">
+                <MarkLessonDone studentId={userId} lessons={markList} compact />
+              </div>
+            )}
             {together.length ? (
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 {together.map(({ row, page }) => (
@@ -183,7 +201,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
               </div>
             ) : (
               <p className="text-paper-muted">
-                {t("Ще жодної. Лекція з’явиться тут, коли в класі натиснеш «Завершити лекцію».")}
+                {t("Ще жодної. Обери лекцію вище й натисни «Пройдено, задати домашку».")}
               </p>
             )}
           </Section>

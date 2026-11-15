@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import { buildPages, type ParsedPage } from '@/lib/pages/pages';
-import { ClassAgent } from '@/components/class/ClassAgent';
 import { HomeworkDone } from './HomeworkDone';
-import { Blocks, SheetBody } from './LessonBlocks';
+import { Blocks } from './LessonBlocks';
 import { LessonPager } from './LessonPager';
 import { PageList } from './PageList';
 import { ShareButton } from './ShareButton';
@@ -11,9 +10,7 @@ import { t } from '@/i18n/server';
 
 type Props = {
   page: ParsedPage;
-  mode: 'lecture' | 'homework' | 'step';
-  /** step mode: ключ сторінки (goal, «розділ~n») */
-  step?: string;
+  mode: 'lecture' | 'homework';
   /** lecture mode: номер сторінки (з 0) */
   pageIndex?: number;
   /** показати викладачеві посилання на його нотатки */
@@ -26,71 +23,12 @@ type Props = {
   canShare?: boolean;
 };
 
-export function LessonView({ page, mode, step, hw, pageIndex = 0, teacherNotes, publicBase, canShare }: Props) {
+export function LessonView({ page, mode, hw, pageIndex = 0, teacherNotes, publicBase, canShare }: Props) {
   const base = publicBase ?? `/learn/${page.meta.slug}`;
   const { meta, sections } = page;
   const book = buildPages(page);
   const lecture = sections.filter((s) => s.kind === 'lecture');
   const homework = sections.filter((s) => s.kind === 'homework');
-
-  if (mode === 'step') {
-    // старі посилання з класу вели на id розділу — тоді беремо першу сторінку розділу
-    const i = Math.max(
-      0,
-      book.findIndex((p) => p.key === step || p.key.startsWith(`${step}~`))
-    );
-    const sheet = book[i];
-    // у класі сторінка виглядає так само, як лекція: шапка з обкладинкою, список сторінок збоку, аркуш
-    return (
-      <main className="lp-root lp-class">
-        <style
-          dangerouslySetInnerHTML={{
-            // всередині класу сторінка займає весь кадр: без шапки сайту й без нижньої панелі
-            // номер аркуша «2 / 10» рахує сторінки лекції, а клас має свої кроки (текст і вправа окремо) —
-            // у класі номер показує панель під кадром, тож тут його ховаємо, щоб цифри не розходились
-            __html:
-              'body > header{display:none!important}.ww-tabbar{display:none!important}body{padding-bottom:0!important}.lp-class .lp-sheet-folio{display:none}',
-          }}
-        />
-        <LessonHero meta={meta}>
-          <dl className="lp-props">
-            {meta.level && (
-              <div>
-                <dt>{t("Рівень")}</dt>
-                <dd>
-                  <span className="lp-chip lp-chip-level">{meta.level}</span>
-                </dd>
-              </div>
-            )}
-            {meta.moduleTitle && (
-              <div>
-                <dt>{t("Курс")}</dt>
-                <dd>
-                  {meta.moduleTitle}
-                  {meta.number != null && <span className="lp-muted">, урок {meta.number}</span>}
-                </dd>
-              </div>
-            )}
-          </dl>
-        </LessonHero>
-        <div className="lp-pager">
-          <aside className="lp-pager-rail" aria-label={t("Сторінки лекції")}>
-            <PageList pages={book} idx={i} visited={new Set(Array.from({ length: i }, (_, n) => n))} classNav />
-          </aside>
-          <div className="lp-pager-main">
-            <div className="lp-book">
-              {sheet && (
-                <section className="lp-sheet is-current" data-kind={sheet.kind}>
-                  <SheetBody page={sheet} index={i} total={book.length} embeds="external" />
-                </section>
-              )}
-            </div>
-          </div>
-        </div>
-        <ClassAgent />
-      </main>
-    );
-  }
 
   const exercises = lecture.reduce((n, s) => n + s.blocks.filter((b) => b.k === 'embed').length, 0);
 

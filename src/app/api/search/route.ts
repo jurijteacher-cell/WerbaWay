@@ -13,7 +13,6 @@ const SECTIONS = (teacher: boolean): Item[] => [
   { title: t("Курс"), sub: t("усі лекції"), href: '/learn', icon: '📚' },
   { title: t("Слова"), sub: t("колоди й тренування"), href: '/words', icon: '🔤' },
   { title: t("Прогрес"), sub: teacher ? t("мій дашборд") : t("мої результати"), href: '/dashboard', icon: '📈' },
-  { title: t("Клас"), sub: teacher ? t("учні й заняття наживо") : t("заняття з викладачем"), href: teacher ? '/teacher/class' : '/class', icon: '🧑‍🏫' },
   ...(teacher
     ? [
         { title: t("Учні"), sub: t("дашборд і профілі"), href: '/teacher/students', icon: '👥' },

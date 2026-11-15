@@ -17,7 +17,7 @@ export default async function LearnPage({
   searchParams,
 }: {
   params: { slug: string };
-  searchParams?: { step?: string; p?: string };
+  searchParams?: { p?: string };
 }) {
   const supabase = createClient();
   const {
@@ -29,21 +29,15 @@ export default async function LearnPage({
   const page = loadPage(params.slug, locale);
   if (!page) notFound();
   const access = await getAccess(supabase, user.id);
-  if (!canSee(page.meta, access)) {
-    // у класі учень бачить ту лекцію, яку відкрив викладач
-    const { data: room } = await supabase.from('class_rooms').select('lesson_id, active').eq('student_id', user.id).maybeSingle();
-    if (!(searchParams?.step && room?.active && room.lesson_id === params.slug)) notFound();
-  }
-  const step = searchParams?.step;
+  if (!canSee(page.meta, access)) notFound();
   const p = Number(searchParams?.p);
   return (
     <LessonView
       page={page}
-      mode={step ? 'step' : 'lecture'}
-      step={step}
+      mode="lecture"
       pageIndex={Number.isFinite(p) && p > 0 ? p - 1 : 0}
       teacherNotes={access.isTeacher && !!loadTeacherPage(params.slug)}
-      canShare={access.isTeacher && !step}
+      canShare={access.isTeacher}
     />
   );
 }

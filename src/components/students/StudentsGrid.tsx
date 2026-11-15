@@ -6,6 +6,9 @@ import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import type { StudentRow } from '@/lib/students';
 import { avatarColor, initials, relDay } from '@/lib/students';
+import { LiveBadge } from '@/components/live/LiveBadge';
+import { useLiveStatuses } from '@/components/live/useLiveStatuses';
+import { isLessonPath } from '@/lib/live/protocol';
 
 type Filter = 'all' | 'active' | 'account' | 'notion';
 const FILTERS: { id: Filter; label: string }[] = [
@@ -49,14 +52,25 @@ export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
   const t = useT();
   const [q, setQ] = useState('');
   const [f, setF] = useState<Filter>('all');
+  // хто зараз на сайті й у якій лекції (наживо)
+  const live = useLiveStatuses(rows.map((r) => r.userId).filter((x): x is string => !!x));
   const list = useMemo(() => {
     const s = q.trim().toLowerCase();
-    return rows.filter(
-      (r) =>
-        (!s || r.name.toLowerCase().includes(s)) &&
-        (f === 'all' || (f === 'active' && r.activeDays7 > 0) || (f === 'account' && r.hasAccount) || (f === 'notion' && !r.hasAccount))
-    );
-  }, [rows, q, f]);
+    const rank = (r: StudentRow) => {
+      const p = r.userId ? live[r.userId] : null;
+      return p ? (p.mode === 'lesson' && isLessonPath(p.path) ? 0 : 1) : 2;
+    };
+    return rows
+      .filter(
+        (r) =>
+          (!s || r.name.toLowerCase().includes(s)) &&
+          (f === 'all' || (f === 'active' && r.activeDays7 > 0) || (f === 'account' && r.hasAccount) || (f === 'notion' && !r.hasAccount))
+      )
+      .map((r, i) => ({ r, i }))
+      // хто зараз у лекції — нагорі, далі ті, хто на сайті; решта в звичному порядку
+      .sort((a, b) => rank(a.r) - rank(b.r) || a.i - b.i)
+      .map((x) => x.r);
+  }, [rows, q, f, live]);
 
   return (
     <>
@@ -81,10 +95,9 @@ export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
         {list.map((r) => {
           const acc = r.accuracy;
           return (
-            <Link
+            <div
               key={r.key}
-              href={`/teacher/students/${r.key}`}
-              className="group flex flex-col gap-4 rounded-2xl border border-ink-line bg-ink-raised p-4 shadow-[0_1px_0_#e6ebf8] transition-all hover:-translate-y-0.5 hover:border-gold/60 hover:shadow-[0_10px_24px_-18px_rgba(28,35,72,.55)]"
+              className="group relative flex flex-col gap-4 rounded-2xl border border-ink-line bg-ink-raised p-4 shadow-[0_1px_0_#e6ebf8] transition-all hover:-translate-y-0.5 hover:border-gold/60 hover:shadow-[0_10px_24px_-18px_rgba(28,35,72,.55)]"
             >
               <div className="flex items-center gap-3">
                 <span
@@ -95,7 +108,13 @@ export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
                   {initials(r.name)}
                 </span>
                 <div className="min-w-0 flex-1">
-                  <p className="truncate font-display text-lg leading-tight text-paper group-hover:text-gold-bright">{r.name}</p>
+                  {/* уся картка веде на учня (розтягнуте посилання), а «Дивитися» — окрема кнопка поверх */}
+                  <Link
+                    href={`/teacher/students/${r.key}`}
+                    className="block truncate font-display text-lg leading-tight text-paper after:absolute after:inset-0 after:content-[''] group-hover:text-gold-bright"
+                  >
+                    {r.name}
+                  </Link>
                   <p className="text-xs text-paper-muted">
                     {relDay(r.lastAt)}
                     {!r.hasAccount && <span className="ml-2 rounded bg-ink-soft px-1.5 py-0.5">{t("лише Notion")}</span>}
@@ -107,6 +126,7 @@ export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
                   </span>
                 )}
               </div>
+              {r.userId && live[r.userId] && <LiveBadge studentId={r.userId} status={live[r.userId]} />}
               <Spark data={r.spark} />
               <div className="grid grid-cols-4 gap-2 border-t border-dashed border-ink-line pt-3">
                 <Stat label={t("лекцій")} value={r.hasAccount ? r.lecturesDone : '—'} />
@@ -114,7 +134,7 @@ export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
                 <Stat label={t("відповідей")} value={r.attempts} />
                 <Stat label={t("слів")} value={r.hasAccount ? r.wordsKnown : '—'} />
               </div>
-            </Link>
+            </div>
           );
         })}
       </div>
