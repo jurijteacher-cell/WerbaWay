@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { t } from '@/i18n/server';
+import { LogoBloom } from '@/components/auth/LogoBloom';
 
 export const dynamic = 'force-dynamic';
 
@@ -23,6 +24,7 @@ export default function ConfirmedPage({ searchParams }: { searchParams?: { error
           </>
         ) : (
           <>
+            <LogoBloom />
             <h1 className="mb-2 font-display text-2xl text-paper">{t("Пошту підтверджено")}</h1>
             <p className="text-paper-muted">
               {t("Готово. Можна входити — на сайті або у вправах у Notion (там введи ті самі email і пароль).")}
