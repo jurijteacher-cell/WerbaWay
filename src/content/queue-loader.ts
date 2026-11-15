@@ -364,3 +364,21 @@ export function listPublishedLessonIds(): string[] {
   }
   return [...ids];
 }
+
+/**
+ * Що з уроку можна відкрити в класі як окрему вправу. Слайди лежать у трьох місцях (як шукає /slides).
+ * Без цього клас пропонував «Слайди» кожному уроку, і учень бачив 404.
+ */
+export function classEmbedsFor(lessonId: string): string[] {
+  const has = (f: string) => existsSync(path.join(ROOT, f));
+  const out: string[] = [];
+  const slides =
+    has(`${lessonId}-slides.json`) ||
+    existsSync(path.join(process.cwd(), 'public/slides', `${lessonId}.json`)) ||
+    ['pending', 'published'].some((d) =>
+      existsSync(path.join(process.cwd(), 'content-queue/lectures', d, lessonId, `${lessonId}-slides.json`))
+    );
+  if (slides) out.push('slides');
+  for (const t of ['grammar', 'vocab', 'comm-tasks', 'hw', 'exam']) if (has(`${lessonId}-${t}.json`)) out.push(t);
+  return out;
+}

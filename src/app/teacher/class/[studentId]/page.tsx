@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { requireTeacher } from '../../results/requireTeacher';
 import { ClassTeacher } from '@/components/class/ClassTeacher';
 import { EMPTY_ROOM, type RoomState } from '@/lib/class/protocol';
-import { listPublishedLessonIds } from '@/content/queue-loader';
+import { classEmbedsFor, listPublishedLessonIds } from '@/content/queue-loader';
 import { lessonTitle } from '@/lib/lesson-titles';
 import { groupByCourse, listPages } from '@/lib/pages/pages';
 import { t } from '@/i18n/server';
@@ -23,7 +23,7 @@ export default async function TeacherClassPage({ params }: { params: { studentId
   if (!student) notFound();
 
   const lessons = listPublishedLessonIds()
-    .map((id) => ({ id, title: `${lessonTitle(id)} · ${id}` }))
+    .map((id) => ({ id, title: `${lessonTitle(id)} · ${id}`, embeds: classEmbedsFor(id) }))
     .sort((a, b) => a.id.localeCompare(b.id));
 
   // лекції по курсах: де більше лекцій — вище

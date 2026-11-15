@@ -35,7 +35,8 @@ const ZOOM_MIN = 0.3;
 const ZOOM_MAX = 3;
 const ZOOM_STEP = 1.1;
 
-type Lesson = { id: string; title: string };
+/** embeds — що з уроку реально існує (слайди є не в усіх) */
+type Lesson = { id: string; title: string; embeds?: string[] };
 type Props = {
   studentId: string;
   studentName: string;
@@ -131,6 +132,9 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
         showWarning: false,
         // курсор учня і слід за ним не показуємо (.cls-mirror ховає й сам маркер)
         mouseTail: false,
+        // анімації появи (nb-rise тощо) у дзеркалі застигали на першому кадрі з opacity 0:
+        // викладач не бачив заголовка вправи й підказок після «Sprawdź». Дзеркалу анімації не потрібні.
+        insertStyleRules: ['*,*::before,*::after{animation:none!important;transition:none!important}'],
       }) as unknown as Rep;
       rep.on('resize', ({ width, height }) => {
         viewport.current = { w: width, h: height };
@@ -356,6 +360,13 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
 
   const course = useSteps(courseSlug || null);
 
+  // «Що відкрити» — лише те, що є в цьому уроці: інакше учень отримував 404 (слайди є в ~30 уроках з 90+)
+  const avail = lessons.find((l) => l.id === lessonId)?.embeds;
+  const embedOptions = avail ? CLASS_EMBEDS.filter((o) => avail.includes(o.id)) : CLASS_EMBEDS;
+  useEffect(() => {
+    if (avail && avail.length && !avail.includes(embed)) setEmbed(avail[0]);
+  }, [lessonId, avail, embed]);
+
   // нотатки викладача (сторінка «TEACHER · …») для обраної лекції
   const [notesOpen, setNotesOpen] = useState(false);
   const [notes, setNotes] = useState<{ title: string; html: string } | null>(null);
@@ -412,9 +423,22 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
     if (st) pickStep(st);
   };
 
+  /** «Завершити лекцію» — у два кліки: скасувати запис в історію й задану домашку з інтерфейсу не можна */
+  const [confirmFinish, setConfirmFinish] = useState(false);
+  useEffect(() => {
+    if (!confirmFinish) return;
+    const id = setTimeout(() => setConfirmFinish(false), 4000);
+    return () => clearTimeout(id);
+  }, [confirmFinish]);
+
   /** Завершити лекцію: запис в історію учня + автоматично задається домашка */
   async function finishLecture() {
     if (!courseSlug || !course) return;
+    if (!confirmFinish) {
+      setConfirmFinish(true);
+      return;
+    }
+    setConfirmFinish(false);
     setBusy(true);
     setErr(null);
     const { data: prev } = await supabase
@@ -671,7 +695,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
         label: t("Завершити лекцію"),
         node: (
           <button type="button" onClick={finishLecture} disabled={busy || !course} className="ww-btn ww-btn-success ww-btn-sm">
-            {t("Завершити лекцію")}
+            {confirmFinish ? (course?.hasHomework ? t("Точно завершити? Задасть домашку") : t("Точно завершити?")) : t("Завершити лекцію")}
           </button>
         ),
       });
@@ -816,7 +840,7 @@ export function ClassTeacher({ studentId, studentName, lessons, pages, initialRo
               <label className="ww-field min-w-[11rem]">
                 <span>{t("Що відкрити")}</span>
                 <select value={embed} onChange={(e) => setEmbed(e.target.value)}>
-                  {CLASS_EMBEDS.map((o) => (
+                  {embedOptions.map((o) => (
                     <option key={o.id} value={o.id}>
                       {o.label}
                     </option>
