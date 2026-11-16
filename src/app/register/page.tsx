@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/client';
 import { AuthShell, buttonClass, humanAuthError, inputClass } from '@/components/auth/AuthShell';
+import { GoogleButton, OrDivider } from '@/components/auth/GoogleButton';
 
 export default function RegisterPage() {
   const t = useT();
@@ -65,6 +66,8 @@ export default function RegisterPage() {
 
   return (
     <AuthShell logo title={t("Реєстрація")} lead={t("Створи акаунт у Werba Way")}>
+      <GoogleButton />
+      <OrDivider />
       <form onSubmit={onSubmit} className="flex flex-col gap-4">
         <div className="grid grid-cols-2 gap-3">
           <label className="ww-field">
@@ -134,6 +137,11 @@ export default function RegisterPage() {
         {t("Вже маєш акаунт?")}{' '}
         <Link href="/login" className="text-gold hover:text-gold-bright">
           {t("Увійти")}
+        </Link>
+      </p>
+      <p className="mt-8 text-xs">
+        <Link href="/privacy" className="text-paper-muted hover:text-gold">
+          {t("Політика конфіденційності")}
         </Link>
       </p>
     </AuthShell>
