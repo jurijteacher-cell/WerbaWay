@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { useT } from '@/i18n/client';
 import { createClient } from '@/lib/supabase/client';
 import { safeNext } from '@/lib/safe-next';
@@ -10,7 +11,9 @@ import { safeNext } from '@/lib/safe-next';
  * Supabase його створить (роль — учень), якщо є — прив'яже Google до наявного.
  * Повертаємось на /auth/callback, яке міняє код на сесію й веде на `next`.
  */
-export function GoogleButton({ next }: { next?: string | null }) {
+const GOOGLE_G = 'https://developers.google.com/static/identity/images/g-logo.png';
+
+export function GoogleButton({ next, label }: { next?: string | null; label?: string }) {
   const t = useT();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -36,8 +39,10 @@ export function GoogleButton({ next }: { next?: string | null }) {
 
   return (
     <div>
-      <button type="button" onClick={go} disabled={busy} className="ww-btn ww-btn-secondary ww-btn-lg w-full">
-        {busy ? t("Переходжу до Google…") : t("Увійти через Google")}
+      <button type="button" onClick={go} disabled={busy} className="ww-btn ww-btn-secondary ww-btn-lg w-full gap-3">
+        {/* офіційний значок Google з їхніх правил оформлення кнопки (developers.google.com/identity/branding-guidelines) */}
+        <Image src={GOOGLE_G} alt="" width={20} height={20} className="h-5 w-5 flex-none object-contain" aria-hidden="true" />
+        <span>{busy ? t("Переходжу до Google…") : label ?? t("Увійти через Google")}</span>
       </button>
       {error && <p className="mt-2 text-sm text-incorrect">{error}</p>}
     </div>
