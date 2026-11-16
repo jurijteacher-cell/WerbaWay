@@ -9,11 +9,31 @@ import { useLiveChannel } from './useLiveChannel';
 type Recorder = typeof import('rrweb').record;
 
 /**
+ * Маячок працює лише у вікні верхнього рівня. Вправи в лекції — це iframe з того самого сайту,
+ * і кожен з них рендерить шапку (схована CSS) разом із маячком: виходило по з'єднанню на кожну
+ * вправу з присутністю «на сайті» (/embed/…), а паралельні оновлення токена в цих вікнах обривали
+ * канал самої лекції — і викладач бачив «на сайті» замість «у лекції».
+ */
+export function LiveBeacon(props: { studentId: string; name?: string }) {
+  const pathname = usePathname();
+  const [topLevel, setTopLevel] = useState(false);
+  useEffect(() => {
+    try {
+      setTopLevel(window.self === window.top);
+    } catch {
+      setTopLevel(false); // доступу до top немає — значить, ми в чужому iframe
+    }
+  }, []);
+  if (!topLevel || /^\/(embed|slides)(\/|$)/.test(pathname ?? '')) return null;
+  return <LiveBeaconInner {...props} />;
+}
+
+/**
  * Учень на сайті: тримає присутність на своєму каналі class:<uid> (онлайн, яка лекція відкрита),
  * а коли викладач відкрив «Дивитися» і учень у лекції — пише екран (rrweb) і шле викладачеві.
  * Учень бачить маленьку позначку «Викладач дивиться». Нічого не блокує й не перехоплює.
  */
-export function LiveBeacon({ studentId, name }: { studentId: string; name?: string }) {
+function LiveBeaconInner({ studentId, name }: { studentId: string; name?: string }) {
   const t = useT();
   const pathname = usePathname();
   const [watched, setWatched] = useState(false);

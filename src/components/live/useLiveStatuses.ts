@@ -11,12 +11,15 @@ import { classTopic, pickStudent, type Presence } from '@/lib/live/protocol';
 export function useLiveStatuses(ids: string[]): Record<string, Presence | null> {
   const [state, setState] = useState<Record<string, Presence | null>>({});
   const key = [...new Set(ids)].sort().join(',');
+  // канал закрився (протух токен, мережа) — перепідписуємось на всіх через паузу
+  const [gen, setGen] = useState(0);
 
   useEffect(() => {
     const list = key ? key.split(',') : [];
     if (!list.length) return;
     const supabase = createClient();
     let alive = true;
+    let retry: ReturnType<typeof setTimeout> | null = null;
     const channels: ReturnType<typeof supabase.channel>[] = [];
     (async () => {
       const { data } = await supabase.auth.getSession();
@@ -28,15 +31,19 @@ export function useLiveStatuses(ids: string[]): Record<string, Presence | null> 
           const s = pickStudent(Object.values(ch.presenceState<Presence>()).flat());
           setState((cur) => ({ ...cur, [id]: s }));
         });
-        ch.subscribe();
+        ch.subscribe((status) => {
+          if (!alive || retry || (status !== 'CLOSED' && status !== 'CHANNEL_ERROR')) return;
+          retry = setTimeout(() => alive && setGen((g) => g + 1), 5_000);
+        });
         channels.push(ch);
       }
     })();
     return () => {
       alive = false;
+      if (retry) clearTimeout(retry);
       channels.forEach((c) => void supabase.removeChannel(c));
     };
-  }, [key]);
+  }, [key, gen]);
 
   return state;
 }

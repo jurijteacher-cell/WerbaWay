@@ -36,9 +36,14 @@ export function useLiveChannel(opts: Opts) {
   const optsRef = useRef(opts);
   optsRef.current = opts;
   const readyRef = useRef(false);
+  // канал закрився (сервер викинув: протух токен, мережа) — сам supabase-js його не відновлює,
+  // тож створюємо заново: gen++ перезапускає ефект; пауза росте 2 → 4 → … → 30 с
+  const [gen, setGen] = useState(0);
+  const failsRef = useRef(0);
 
   useEffect(() => {
     let alive = true;
+    let retry: ReturnType<typeof setTimeout> | null = null;
     const asm = new ChunkAssembler();
     const key = `${optsRef.current.presence().role}-${Math.random().toString(36).slice(2, 8)}`;
     let ch: RealtimeChannel | null = null;
@@ -61,6 +66,7 @@ export function useLiveChannel(opts: Opts) {
       ch.subscribe(async (status) => {
         if (!alive) return;
         if (status === 'SUBSCRIBED') {
+          failsRef.current = 0;
           readyRef.current = true;
           setLink('online');
           await ch?.track(optsRef.current.presence());
@@ -68,6 +74,10 @@ export function useLiveChannel(opts: Opts) {
         } else if (status === 'CHANNEL_ERROR' || status === 'TIMED_OUT' || status === 'CLOSED') {
           readyRef.current = false;
           setLink('offline');
+          if ((status === 'CLOSED' || status === 'CHANNEL_ERROR') && !retry) {
+            const wait = Math.min(30_000, 2_000 * 2 ** failsRef.current++);
+            retry = setTimeout(() => alive && setGen((g) => g + 1), wait);
+          }
         }
       });
       chRef.current = ch;
@@ -75,12 +85,13 @@ export function useLiveChannel(opts: Opts) {
 
     return () => {
       alive = false;
+      if (retry) clearTimeout(retry);
       readyRef.current = false;
       if (ch) void supabase.removeChannel(ch);
       chRef.current = null;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [opts.studentId, supabase]);
+  }, [opts.studentId, supabase, gen]);
 
   // шматки одного повідомлення шлемо по черзі: паралельна відправка плутала порядок,
   // а загублений шматок означав, що весь пакет змін до викладача не доїде
