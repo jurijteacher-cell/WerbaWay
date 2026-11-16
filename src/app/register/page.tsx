@@ -139,6 +139,11 @@ export default function RegisterPage() {
           {t("Увійти")}
         </Link>
       </p>
+      <p className="mt-8 text-xs">
+        <Link href="/privacy" className="text-paper-muted hover:text-gold">
+          {t("Політика конфіденційності")}
+        </Link>
+      </p>
     </AuthShell>
   );
 }
