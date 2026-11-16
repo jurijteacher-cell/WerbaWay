@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { requireTeacher } from '../results/requireTeacher';
 import { dayKey, fetchAttempts, fmtDate, pct, pctClass, summarize, type MockRow } from '@/lib/analytics';
-import { Kpi, Section, WeakList } from '@/components/dashboard/parts';
+import { Kpi, Section, TopicMastery, WeakList } from '@/components/dashboard/parts';
 import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
@@ -132,6 +132,10 @@ export default async function TeacherAnalyticsPage() {
 
       <Section title={t("Слабкі теми класу")}>
         <WeakList weak={classAll.weak} />
+      </Section>
+
+      <Section title={t("Теми граматики класу")}>
+        <TopicMastery topics={classAll.topics} mastered={classAll.mastered} />
       </Section>
 
       <Section title={t("Пробні іспити")}>

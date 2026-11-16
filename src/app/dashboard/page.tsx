@@ -7,7 +7,7 @@ import { getLocale, t } from '@/i18n/server';
 import { loadDeck } from '@/lib/words';
 import { lectureStats } from '@/lib/lecture-stats';
 import { LectureCard } from '@/components/dashboard/LectureCard';
-import { Activity, EmbedBreakdown, Kpi, Section, WeakList } from '@/components/dashboard/parts';
+import { Activity, EmbedBreakdown, Kpi, Section, TopicMastery, WeakList } from '@/components/dashboard/parts';
 
 export const dynamic = 'force-dynamic';
 
@@ -164,8 +164,18 @@ export default async function DashboardPage() {
             />
             <Kpi label={t("Вправ")} value={s.exercises} hint={t('{n} перевірок', { n: s.attempts })} />
             <Kpi label={t("Уроків")} value={s.lessons} />
+            <Kpi
+              label={t("Засвоєно тем")}
+              value={s.mastered}
+              hint={t('тем у роботі: {n}', { n: s.topicsTouched - s.mastered })}
+              tone={s.mastered ? 'text-correct' : 'text-paper'}
+            />
             <Kpi label={t("Серія днів")} value={s.streak} hint={t('активних днів: {n}', { n: s.activeDays })} />
           </div>
+
+          <Section title={t("Теми граматики")}>
+            <TopicMastery topics={s.topics} mastered={s.mastered} />
+          </Section>
 
           <Section title={t("Активність (28 днів)")}>
             <div className="rounded-xl border border-ink-line bg-ink-raised p-4">

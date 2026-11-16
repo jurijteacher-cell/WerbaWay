@@ -3,6 +3,7 @@ import { notFound, redirect } from 'next/navigation';
 import { requireTeacher } from '../requireTeacher';
 import { fmt, pct, pctClass } from '../format';
 import { lessonTitle } from '@/lib/lesson-titles';
+import { canonPoint, isServicePoint, pointLabel } from '@/lib/grammar-registry';
 import { ArchiveButton, DeleteLessonButton } from './StudentActions';
 import { t } from '@/i18n/server';
 
@@ -105,14 +106,16 @@ function summarize(attempts: Attempt[]) {
 function weakPoints(attempts: Attempt[]) {
   const m = new Map<string, { ok: number; total: number }>();
   for (const a of attempts) {
-    if (a.attempt_no !== 1 || a.is_correct === null || !a.grammar_point) continue;
-    const s = m.get(a.grammar_point) ?? { ok: 0, total: 0 };
+    if (a.attempt_no !== 1 || a.is_correct === null) continue;
+    const gp = canonPoint(a.grammar_point);
+    if (!gp || isServicePoint(gp)) continue;
+    const s = m.get(gp) ?? { ok: 0, total: 0 };
     s.total++;
     if (a.is_correct) s.ok++;
-    m.set(a.grammar_point, s);
+    m.set(gp, s);
   }
   return Array.from(m.entries())
-    .map(([tag, s]) => ({ tag, ...s, p: pct(s.ok, s.total)! }))
+    .map(([tag, s]) => ({ tag, label: pointLabel(tag), ...s, p: pct(s.ok, s.total)! }))
     .filter((x) => x.total >= 3)
     .sort((a, b) => a.p - b.p || b.total - a.total);
 }
@@ -219,7 +222,7 @@ export default async function StudentResultsPage({ params }: { params: { student
               .slice(0, 12)
               .map((w) => (
                 <span key={w.tag} className="rounded-lg border border-ink-line bg-ink-raised px-3 py-1.5 text-sm">
-                  <span className="text-paper">{w.tag}</span>{' '}
+                  <span className="text-paper" title={w.tag}>{w.label}</span>{' '}
                   <span className={`font-mono ${pctClass(w.p)}`}>{w.p}%</span>{' '}
                   <span className="text-xs text-paper-muted">
                     ({w.ok}/{w.total})
@@ -343,8 +346,8 @@ export default async function StudentResultsPage({ params }: { params: { student
                                           {m.solved ? t('виправив(ла) з {n}-ї спроби', { n: m.versions }) : t("не розв’язано")}
                                         </span>
                                         {m.grammarPoint ? (
-                                          <span className="ml-2 font-mono text-[11px] text-paper-muted">
-                                            {m.grammarPoint}
+                                          <span className="ml-2 text-[11px] text-paper-muted" title={canonPoint(m.grammarPoint) ?? undefined}>
+                                            {pointLabel(canonPoint(m.grammarPoint))}
                                           </span>
                                         ) : null}
                                       </p>

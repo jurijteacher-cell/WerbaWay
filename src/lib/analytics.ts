@@ -1,5 +1,6 @@
 import type { SupabaseClient } from '@supabase/supabase-js';
 import { lessonTitle } from '@/lib/lesson-titles';
+import { canonPoint, isMastered, isServicePoint, levelRank, pointLevel } from '@/lib/grammar-registry';
 
 export type AttemptRow = {
   student_id: string;
@@ -54,6 +55,16 @@ export const dayKey = (d: Date | string) => dayFmt.format(typeof d === 'string' 
 
 export const pct = (ok: number, total: number) => (total ? Math.round((ok / total) * 100) : null);
 
+export type Topic = {
+  point: string;
+  level: string | null;
+  ok: number;
+  total: number;
+  pct: number;
+  lessons: number;
+  mastered: boolean;
+};
+
 export type Summary = {
   attempts: number;
   firstTotal: number;
@@ -68,14 +79,19 @@ export type Summary = {
   /** last 28 days, oldest first */
   daily: { date: string; n: number }[];
   /** grammar points with ≥3 first attempts, weakest first */
-  weak: { point: string; ok: number; total: number; pct: number }[];
+  weak: Topic[];
+  /** усі теми (канонічні теги реєстру), сильні спершу */
+  topics: Topic[];
+  /** скільки тем засвоєно / в роботі (≥80% з першої спроби і тег у ≥2 уроках) */
+  mastered: number;
+  topicsTouched: number;
   byEmbed: { embed: string; ok: number; total: number; pct: number | null; attempts: number }[];
   recentLessons: { lessonId: string; title: string; attempts: number; ok: number; total: number; pct: number | null; lastAt: string }[];
 };
 
 export function summarize(rows: AttemptRow[], now = new Date()): Summary {
   const days = new Map<string, number>();
-  const points = new Map<string, { ok: number; total: number }>();
+  const points = new Map<string, { ok: number; total: number; lessons: Set<string> }>();
   const embeds = new Map<string, { ok: number; total: number; attempts: number }>();
   const lessons = new Map<string, { attempts: number; ok: number; total: number; lastAt: string }>();
   const items = new Set<string>();
@@ -105,11 +121,13 @@ export function summarize(rows: AttemptRow[], now = new Date()): Summary {
         E.ok++;
         L.ok++;
       }
-      if (r.grammar_point) {
-        const P = points.get(r.grammar_point) ?? { ok: 0, total: 0 };
+      const gp = canonPoint(r.grammar_point);
+      if (gp && !isServicePoint(gp)) {
+        const P = points.get(gp) ?? { ok: 0, total: 0, lessons: new Set<string>() };
         P.total++;
         if (r.is_correct) P.ok++;
-        points.set(r.grammar_point, P);
+        P.lessons.add(r.lesson_id);
+        points.set(gp, P);
       }
     }
     embeds.set(r.embed, E);
@@ -133,6 +151,21 @@ export function summarize(rows: AttemptRow[], now = new Date()): Summary {
     daily.push({ date: k, n: days.get(k) ?? 0 });
   }
 
+  const topics: Topic[] = [...points.entries()]
+    .map(([point, v]) => {
+      const p = Math.round((v.ok / v.total) * 100);
+      return {
+        point,
+        level: pointLevel(point),
+        ok: v.ok,
+        total: v.total,
+        pct: p,
+        lessons: v.lessons.size,
+        mastered: isMastered(p, v.lessons.size),
+      };
+    })
+    .sort((a, b) => levelRank(a.level) - levelRank(b.level) || b.pct - a.pct || b.total - a.total);
+
   return {
     attempts: rows.length,
     firstTotal,
@@ -145,11 +178,10 @@ export function summarize(rows: AttemptRow[], now = new Date()): Summary {
     streak,
     lastAt,
     daily,
-    weak: [...points.entries()]
-      .filter(([, v]) => v.total >= 3)
-      .map(([point, v]) => ({ point, ...v, pct: Math.round((v.ok / v.total) * 100) }))
-      .sort((a, b) => a.pct - b.pct || b.total - a.total)
-      .slice(0, 8),
+    weak: topics.filter((tp) => tp.total >= 3 && !tp.mastered).sort((a, b) => a.pct - b.pct || b.total - a.total).slice(0, 8),
+    topics,
+    mastered: topics.filter((tp) => tp.mastered).length,
+    topicsTouched: topics.length,
     byEmbed: [...embeds.entries()]
       .map(([embed, v]) => ({ embed, ...v, pct: pct(v.ok, v.total) }))
       .sort((a, b) => b.attempts - a.attempts),

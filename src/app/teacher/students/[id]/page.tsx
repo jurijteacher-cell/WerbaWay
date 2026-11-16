@@ -7,7 +7,7 @@ import { lectureStats } from '@/lib/lecture-stats';
 import { loadDeck } from '@/lib/words';
 import { avatarColor, initials, relDay } from '@/lib/students';
 import { LectureCard } from '@/components/dashboard/LectureCard';
-import { Activity, Section, WeakList } from '@/components/dashboard/parts';
+import { Activity, Section, TopicMastery, WeakList } from '@/components/dashboard/parts';
 import { AccessEditor, type ModuleInfo } from '@/components/teacher/AccessEditor';
 import { EmailStudent } from '@/components/teacher/EmailStudent';
 import { LiveBadgeFor } from '@/components/live/LiveBadge';
@@ -171,6 +171,9 @@ export default async function StudentProfilePage({ params }: { params: { id: str
         </Section>
         <Section title={t("Слабкі теми")}>
           {s.weak.length ? <WeakList weak={s.weak} /> : <p className="text-paper-muted">{t("Поки замало відповідей, щоб бачити слабкі теми.")}</p>}
+        </Section>
+        <Section title={t("Теми граматики")}>
+          <TopicMastery topics={s.topics} mastered={s.mastered} />
         </Section>
       </div>
 
