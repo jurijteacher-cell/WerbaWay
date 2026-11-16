@@ -1,0 +1,1125 @@
+{
+  "version": "1.0",
+  "updated": "2026-11-16",
+  "note": "Канонічний реєстр grammar_point Werba Way. Джерело істини — claude/GRAMMAR_REGISTRY.md і таблиці course_grammar_points / course_grammar_aliases у Supabase. Цей файл — копія для перевірки в CI.",
+  "service": [
+    "slownictwo",
+    "kalki-uk",
+    "kalki-ru",
+    "kalki-en",
+    "czytanie",
+    "sluchanie",
+    "powtorka"
+  ],
+  "points": {
+    "slownictwo": {
+      "level": null,
+      "pl": "Słownictwo",
+      "uk": "лексика"
+    },
+    "kalki-uk": {
+      "level": null,
+      "pl": "Pułapki z ukraińskiego",
+      "uk": "кальки з української"
+    },
+    "kalki-ru": {
+      "level": null,
+      "pl": "Pułapki z rosyjskiego",
+      "uk": "кальки з російської"
+    },
+    "kalki-en": {
+      "level": null,
+      "pl": "Pułapki z angielskiego",
+      "uk": "кальки з англійської"
+    },
+    "czytanie": {
+      "level": null,
+      "pl": "Czytanie ze zrozumieniem",
+      "uk": "читання"
+    },
+    "sluchanie": {
+      "level": null,
+      "pl": "Słuchanie",
+      "uk": "слухання"
+    },
+    "powtorka": {
+      "level": null,
+      "pl": "Powtórka materiału",
+      "uk": "повторення"
+    },
+    "wymowa-glosek": {
+      "level": "A0",
+      "pl": "Głoski i dwuznaki",
+      "uk": "звуки й диграфи"
+    },
+    "akcent": {
+      "level": "A0",
+      "pl": "Akcent",
+      "uk": "наголос"
+    },
+    "pisownia": {
+      "level": "A0",
+      "pl": "Pisownia: ą/ę, rz/ż, ó/u, ch/h",
+      "uk": "правопис"
+    },
+    "byc": {
+      "level": "A0",
+      "pl": "Być w czasie teraźniejszym",
+      "uk": "być"
+    },
+    "pan-pani": {
+      "level": "A0",
+      "pl": "Pan / Pani + 3. osoba",
+      "uk": "ввічливі форми"
+    },
+    "miec": {
+      "level": "A0",
+      "pl": "Mieć",
+      "uk": "mieć"
+    },
+    "liczebniki-glowne": {
+      "level": "A0",
+      "pl": "Liczebniki główne",
+      "uk": "кількісні числівники"
+    },
+    "pytajniki": {
+      "level": "A1",
+      "pl": "Pytania: kto, co, gdzie, skąd, czy, ile",
+      "uk": "питальні слова"
+    },
+    "rodzaj-rzeczownika": {
+      "level": "A1",
+      "pl": "Rodzaj rzeczownika",
+      "uk": "рід іменника"
+    },
+    "narzednik-zawod-z": {
+      "level": "A1",
+      "pl": "Narzędnik: zawód, z kim, czym",
+      "uk": "орудний: професія, з ким, чим"
+    },
+    "zaimek-dzierzawczy": {
+      "level": "A1",
+      "pl": "Zaimki dzierżawcze",
+      "uk": "присвійні займенники"
+    },
+    "przymiotnik-mianownik": {
+      "level": "A1",
+      "pl": "Przymiotnik w mianowniku",
+      "uk": "прикметник у називному"
+    },
+    "koniugacja-am-asz": {
+      "level": "A1",
+      "pl": "Koniugacja -am/-asz, -em/-esz",
+      "uk": "дієвідміна -am/-asz"
+    },
+    "godzina": {
+      "level": "A1",
+      "pl": "Godzina",
+      "uk": "години"
+    },
+    "koniugacja-e-isz": {
+      "level": "A1",
+      "pl": "Koniugacja -ę/-isz/-ysz",
+      "uk": "дієвідміна -ę/-isz"
+    },
+    "czasownik-sie": {
+      "level": "A1",
+      "pl": "Czasowniki z się",
+      "uk": "дієслова з się"
+    },
+    "koniugacja-e-esz": {
+      "level": "A1",
+      "pl": "Koniugacja -ę/-esz, -uję",
+      "uk": "дієвідміна -ę/-esz"
+    },
+    "modalne-bezokolicznik": {
+      "level": "A1",
+      "pl": "Chcieć, móc, musieć + bezokolicznik",
+      "uk": "модальні + інфінітив"
+    },
+    "lubic-podobac": {
+      "level": "A1",
+      "pl": "Lubić i podobać się",
+      "uk": "lubić і podobać się"
+    },
+    "miejscownik-miejsce": {
+      "level": "A1",
+      "pl": "Miejscownik: w / na",
+      "uk": "місцевий: де"
+    },
+    "isc-jechac": {
+      "level": "A1",
+      "pl": "Iść i jechać",
+      "uk": "iść / jechać"
+    },
+    "biernik-rzeczownik": {
+      "level": "A1",
+      "pl": "Biernik rzeczowników",
+      "uk": "знахідний іменників"
+    },
+    "ceny-zloty": {
+      "level": "A1",
+      "pl": "Ceny: złoty, złote, złotych",
+      "uk": "ціни"
+    },
+    "biernik-przymiotnik": {
+      "level": "A1",
+      "pl": "Biernik przymiotników",
+      "uk": "знахідний прикметників"
+    },
+    "grzecznosc-chcialbym": {
+      "level": "A1",
+      "pl": "Chciałbym / chciałabym, proszę + bezokolicznik",
+      "uk": "ввічливі прохання"
+    },
+    "wolacz": {
+      "level": "A1",
+      "pl": "Wołacz: Pani Ewo, Panie Adamie, Kasiu",
+      "uk": "кличний відмінок"
+    },
+    "jesc-pic": {
+      "level": "A1",
+      "pl": "Jeść i pić",
+      "uk": "jeść / pić"
+    },
+    "dopelniacz-ilosc": {
+      "level": "A1",
+      "pl": "Dopełniacz: bez, ilość",
+      "uk": "родовий: без, кількість"
+    },
+    "dopelniacz-nie-ma": {
+      "level": "A1",
+      "pl": "Nie ma + dopełniacz",
+      "uk": "nie ma + родовий"
+    },
+    "przeczenie-dopelniacz": {
+      "level": "A1",
+      "pl": "Przeczenie: biernik → dopełniacz",
+      "uk": "заперечення → родовий"
+    },
+    "liczba-mnoga-mianownik": {
+      "level": "A1",
+      "pl": "Liczba mnoga w mianowniku",
+      "uk": "множина в називному"
+    },
+    "liczebnik-rzeczownik": {
+      "level": "A1",
+      "pl": "Dwa pokoje, pięć pokoi",
+      "uk": "числівник + іменник"
+    },
+    "czas-przeszly": {
+      "level": "A1",
+      "pl": "Czas przeszły",
+      "uk": "минулий час"
+    },
+    "czas-przeszly-nieregularny": {
+      "level": "A1",
+      "pl": "Czas przeszły: formy nieregularne",
+      "uk": "минулий: неправильні"
+    },
+    "czas-przyszly-bede": {
+      "level": "A1",
+      "pl": "Będę + bezokolicznik",
+      "uk": "майбутній час"
+    },
+    "grac-w-na": {
+      "level": "A1",
+      "pl": "Grać w / na",
+      "uk": "grać w / na"
+    },
+    "data-podstawowa": {
+      "level": "A1",
+      "pl": "Data: piątego maja",
+      "uk": "дата"
+    },
+    "boli-mnie": {
+      "level": "A1",
+      "pl": "Boli mnie",
+      "uk": "boli mnie"
+    },
+    "potrzebowac-dopelniacz": {
+      "level": "A1",
+      "pl": "Potrzebuję + dopełniacz",
+      "uk": "potrzebować + родовий"
+    },
+    "rozkaznik-podstawowy": {
+      "level": "A1",
+      "pl": "Tryb rozkazujący: powtórz, zadzwoń",
+      "uk": "наказовий спосіб"
+    },
+    "pogoda-pory-roku": {
+      "level": "A1",
+      "pl": "Pogoda i pory roku",
+      "uk": "погода й пори року"
+    },
+    "dopelniacz-przyimki": {
+      "level": "A2",
+      "pl": "Dopełniacz po przyimkach: do, od, z, u, bez, dla, obok",
+      "uk": "родовий після прийменників"
+    },
+    "celownik-osoby": {
+      "level": "A2",
+      "pl": "Celownik: komu? dać, pomóc, powiedzieć",
+      "uk": "давальний: кому"
+    },
+    "celownik-bezosobowe": {
+      "level": "A2",
+      "pl": "Jest mi zimno, chce mi się, smakuje mi, podoba mi się",
+      "uk": "безособові з давальним"
+    },
+    "zaimki-osobowe-przypadki": {
+      "level": "A2",
+      "pl": "Zaimki osobowe: mnie, cię, go, ją; mi, ci, mu, jej",
+      "uk": "особові займенники у відмінках"
+    },
+    "narzednik-pelny": {
+      "level": "A2",
+      "pl": "Narzędnik z przymiotnikiem; przed, nad, pod, za, między",
+      "uk": "орудний з прикметником"
+    },
+    "liczebniki-porzadkowe": {
+      "level": "A2",
+      "pl": "Liczebniki porządkowe",
+      "uk": "порядкові числівники"
+    },
+    "data-pelna": {
+      "level": "A2",
+      "pl": "Data z rokiem; od … do …",
+      "uk": "повна дата"
+    },
+    "aspekt-podstawy": {
+      "level": "A2",
+      "pl": "Aspekt: pary dk / ndk",
+      "uk": "вид: пари"
+    },
+    "aspekt-przeszly": {
+      "level": "A2",
+      "pl": "Aspekt w czasie przeszłym",
+      "uk": "вид у минулому"
+    },
+    "czas-przyszly-dk": {
+      "level": "A2",
+      "pl": "Czas przyszły dokonany: zrobię",
+      "uk": "майбутній доконаний"
+    },
+    "zdania-czasowe": {
+      "level": "A2",
+      "pl": "Kiedy, gdy, zanim, po tym jak, podczas",
+      "uk": "підрядні часу"
+    },
+    "przyimki-czasu": {
+      "level": "A2",
+      "pl": "Przyimki czasu: w, na, za, przez, od, do, temu, po, przed",
+      "uk": "прийменники часу"
+    },
+    "miejscownik-pelny": {
+      "level": "A2",
+      "pl": "Miejscownik: o kim? o czym? przy, po",
+      "uk": "місцевий: про кого/що"
+    },
+    "rozkaznik-pelny": {
+      "level": "A2",
+      "pl": "Tryb rozkazujący: ty, wy, my; nie + ndk",
+      "uk": "наказовий спосіб повністю"
+    },
+    "modalne-obowiazek": {
+      "level": "A2",
+      "pl": "Powinienem, trzeba, nie wolno, warto",
+      "uk": "обов'язок і заборона"
+    },
+    "biernik-osobowy": {
+      "level": "A2",
+      "pl": "Biernik osobowy: znam brata, widzę kolegów",
+      "uk": "знахідний для істот"
+    },
+    "przymiotnik-przypadki": {
+      "level": "A2",
+      "pl": "Przymiotnik w przypadkach (liczba pojedyncza)",
+      "uk": "прикметник у відмінках"
+    },
+    "przyimki-kierunku": {
+      "level": "A2",
+      "pl": "Gdzie? dokąd? skąd?: w / na / do / z / od",
+      "uk": "де, куди, звідки"
+    },
+    "isc-jechac-przedrostki": {
+      "level": "A2",
+      "pl": "Przyjść, wyjść, przejść, dojechać (podstawy)",
+      "uk": "префікси руху: основи"
+    },
+    "warunkowy-prosby": {
+      "level": "A2",
+      "pl": "Mógłbyś…? Chciałbym… Czy mógłby Pan…?",
+      "uk": "ввічливі прохання"
+    },
+    "stopniowanie": {
+      "level": "A2",
+      "pl": "Stopniowanie przymiotników i przysłówków",
+      "uk": "ступені порівняння"
+    },
+    "porownania": {
+      "level": "A2",
+      "pl": "Niż, tak samo jak, im… tym, najlepszy",
+      "uk": "порівняння"
+    },
+    "ktory-podstawy": {
+      "level": "A2",
+      "pl": "Który w mianowniku i bierniku",
+      "uk": "який: називний, знахідний"
+    },
+    "zdania-zlozone-ze": {
+      "level": "A2",
+      "pl": "Że, bo, ponieważ, dlatego, więc",
+      "uk": "причина й наслідок"
+    },
+    "zdania-celu-zeby": {
+      "level": "A2",
+      "pl": "Żeby + bezokolicznik",
+      "uk": "щоб + інфінітив"
+    },
+    "mowa-zalezna-podstawy": {
+      "level": "A2",
+      "pl": "Powiedział, że… Zapytała, czy…",
+      "uk": "непряма мова: основи"
+    },
+    "zaimki-wskazujace": {
+      "level": "A2",
+      "pl": "Ten, tamten, taki, ktoś, coś, nikt, nic",
+      "uk": "вказівні й неозначені"
+    },
+    "mnoga-przypadki": {
+      "level": "A2",
+      "pl": "Liczba mnoga: biernik, dopełniacz, narzędnik (wybrane)",
+      "uk": "множина: ключові відмінки"
+    },
+    "rejestr-formalny": {
+      "level": "A2",
+      "pl": "Formalny e-mail: Szanowny Panie, w sprawie, z poważaniem",
+      "uk": "офіційний лист"
+    },
+    "spojniki-narracyjne": {
+      "level": "A2",
+      "pl": "Najpierw, potem, w końcu, poza tym, na przykład",
+      "uk": "сполучні слова розповіді"
+    },
+    "przypadki-funkcje": {
+      "level": "B1",
+      "pl": "7 przypadków: pytania, funkcje, czasowniki",
+      "uk": "функції відмінків"
+    },
+    "przypadki-przyimki": {
+      "level": "B1",
+      "pl": "Przyimek → przypadek; gdzie? vs dokąd?",
+      "uk": "прийменник і відмінок"
+    },
+    "rzecz-lp-meski": {
+      "level": "B1",
+      "pl": "Rzeczowniki męskie, liczba pojedyncza",
+      "uk": "іменники ч.р. однини"
+    },
+    "rzecz-lp-zenski": {
+      "level": "B1",
+      "pl": "Rzeczowniki żeńskie, liczba pojedyncza",
+      "uk": "іменники ж.р. однини"
+    },
+    "rzecz-lp-nijaki": {
+      "level": "B1",
+      "pl": "Rzeczowniki nijakie, liczba pojedyncza",
+      "uk": "іменники с.р. однини"
+    },
+    "przym-lp": {
+      "level": "B1",
+      "pl": "Przymiotnik + rzeczownik w liczbie pojedynczej",
+      "uk": "прикметник в однині"
+    },
+    "zaimki-przym": {
+      "level": "B1",
+      "pl": "Ten, mój, swój, jaki, który w liczbie pojedynczej",
+      "uk": "займенники-прикметники"
+    },
+    "mn-mianownik-mos": {
+      "level": "B1",
+      "pl": "Mianownik mnogi: męskoosobowy / niemęskoosobowy",
+      "uk": "називний множини"
+    },
+    "mn-przypadki": {
+      "level": "B1",
+      "pl": "Dopełniacz, celownik, narzędnik, miejscownik mnogi",
+      "uk": "відмінки множини"
+    },
+    "rzecz-nieregularne": {
+      "level": "B1",
+      "pl": "Ludzie, dzieci, ręce, oczy, pieniądze",
+      "uk": "нерегулярні іменники"
+    },
+    "koniugacje": {
+      "level": "B1",
+      "pl": "Czas teraźniejszy: wszystkie koniugacje",
+      "uk": "дієвідміни разом"
+    },
+    "czasowniki-nieregularne": {
+      "level": "B1",
+      "pl": "Być, mieć, jeść, wiedzieć, móc, chcieć, iść, brać",
+      "uk": "неправильні дієслова"
+    },
+    "aspekt-tworzenie": {
+      "level": "B1",
+      "pl": "Pary aspektowe: przedrostki, -ywać/-iwać, supletywne",
+      "uk": "творення пар виду"
+    },
+    "aspekt-uzycie": {
+      "level": "B1",
+      "pl": "Proces/rezultat, powtarzalność, czasowniki fazowe",
+      "uk": "вживання виду"
+    },
+    "ruch-przedrostki": {
+      "level": "B1",
+      "pl": "Przy-, wy-, w-, do-, od-, prze-, ob-, z-, roz-",
+      "uk": "префікси руху"
+    },
+    "ruch-iterat": {
+      "level": "B1",
+      "pl": "Iść/chodzić, jechać/jeździć, nieść/nosić",
+      "uk": "кратність руху"
+    },
+    "zaimki-formy": {
+      "level": "B1",
+      "pl": "Formy krótkie, długie i po przyimku (go/jego/niego)",
+      "uk": "форми займенників"
+    },
+    "enklityki-zaimki": {
+      "level": "B1",
+      "pl": "Pozycja mi, go, cię w zdaniu",
+      "uk": "позиція енклітик"
+    },
+    "ktory-przypadki": {
+      "level": "B1",
+      "pl": "Który we wszystkich przypadkach i rodzajach",
+      "uk": "який у всіх відмінках"
+    },
+    "wzgledne-inne": {
+      "level": "B1",
+      "pl": "Co, jaki, czyj, gdzie, dokąd jako wyrazy względne",
+      "uk": "інші відносні слова"
+    },
+    "przyczyna-skutek": {
+      "level": "B1",
+      "pl": "Bo, ponieważ, gdyż, więc, dlatego, zatem, tak że",
+      "uk": "причина й наслідок"
+    },
+    "przyimki-przyczyny": {
+      "level": "B1",
+      "pl": "Z powodu, dzięki, przez, ze (strachu)",
+      "uk": "прийменники причини"
+    },
+    "przyzwolenie": {
+      "level": "B1",
+      "pl": "Chociaż, choć, mimo że, mimo + dopełniacz",
+      "uk": "допустові речення"
+    },
+    "przeciwstawienie": {
+      "level": "B1",
+      "pl": "Ale, a, natomiast, zaś, jednak, mimo to",
+      "uk": "протиставлення"
+    },
+    "zeby-cel": {
+      "level": "B1",
+      "pl": "Żeby/aby: bezokolicznik vs forma na -ł",
+      "uk": "żeby: мета"
+    },
+    "zeby-zyczenie": {
+      "level": "B1",
+      "pl": "Chcieć / prosić / zależeć, żeby",
+      "uk": "żeby: бажання і прохання"
+    },
+    "niech": {
+      "level": "B1",
+      "pl": "Niech + 3. osoba",
+      "uk": "niech"
+    },
+    "mowa-zalezna": {
+      "level": "B1",
+      "pl": "Mowa zależna: że, żeby, zmiana osób",
+      "uk": "непряма мова"
+    },
+    "pytania-zalezne": {
+      "level": "B1",
+      "pl": "Czy, gdzie, kiedy, jak w pytaniu zależnym",
+      "uk": "непрямі питання"
+    },
+    "przypuszczajacy-formy": {
+      "level": "B1",
+      "pl": "Tryb przypuszczający: osoby, rodzaje, -by-",
+      "uk": "форми умовного способу"
+    },
+    "by-ruchome": {
+      "level": "B1",
+      "pl": "Gdybym, żebyś, chociażby — ruchome -by",
+      "uk": "рухоме -by"
+    },
+    "warunek-realny": {
+      "level": "B1",
+      "pl": "Jeśli/jeżeli, o ile, chyba że, pod warunkiem że",
+      "uk": "реальна умова"
+    },
+    "warunek-nierealny": {
+      "level": "B1",
+      "pl": "Gdyby + tryb przypuszczający",
+      "uk": "нереальна умова"
+    },
+    "modalne": {
+      "level": "B1",
+      "pl": "Musieć, mieć + bezokolicznik, powinien, należy, wolno, da się",
+      "uk": "модальні повністю"
+    },
+    "rozkazujacy": {
+      "level": "B1",
+      "pl": "Tryb rozkazujący: wszystkie osoby, proszę + bezokolicznik",
+      "uk": "наказовий повністю"
+    },
+    "rozkazujacy-aspekt": {
+      "level": "B1",
+      "pl": "Dk w rozkazie, ndk w zakazie",
+      "uk": "вид у наказі"
+    },
+    "bierna-byc-zostac": {
+      "level": "B2",
+      "pl": "Być vs zostać + imiesłów, agent przez",
+      "uk": "пасив: być / zostać"
+    },
+    "bierna-czasy": {
+      "level": "B2",
+      "pl": "Strona bierna w czasach i trybie przypuszczającym",
+      "uk": "пасив у часах"
+    },
+    "bezosobowe-no-to": {
+      "level": "B2",
+      "pl": "-no / -to (zbudowano, zrobiono)",
+      "uk": "форми на -no/-to"
+    },
+    "bezosobowe-sie": {
+      "level": "B2",
+      "pl": "Mówi się, buduje się, można, trzeba",
+      "uk": "безособове się"
+    },
+    "imieslow-czynny": {
+      "level": "B2",
+      "pl": "Imiesłów czynny -ący, zamiana „który”",
+      "uk": "дієприкметник активний"
+    },
+    "imieslow-bierny": {
+      "level": "B2",
+      "pl": "Imiesłów bierny -ny/-ony/-ty",
+      "uk": "дієприкметник пасивний"
+    },
+    "imieslow-ac": {
+      "level": "B2",
+      "pl": "Imiesłów -ąc: jednoczesność",
+      "uk": "дієприслівник на -ąc"
+    },
+    "imieslow-wszy": {
+      "level": "B2",
+      "pl": "Imiesłów -wszy/-łszy: uprzedniość",
+      "uk": "дієприслівник на -wszy"
+    },
+    "odczasownikowe": {
+      "level": "B2",
+      "pl": "Rzeczowniki odczasownikowe -nie/-cie",
+      "uk": "віддієслівні іменники"
+    },
+    "liczebniki-odmiana": {
+      "level": "B2",
+      "pl": "Odmiana liczebników 1–1000",
+      "uk": "відмінювання числівників"
+    },
+    "liczebniki-skladnia": {
+      "level": "B2",
+      "pl": "Dwaj/dwóch, pięciu + dopełniacz + czasownik w lp.",
+      "uk": "синтаксис числівників"
+    },
+    "liczebniki-zbiorowe": {
+      "level": "B2",
+      "pl": "Dwoje, troje, oboje/obaj/obie",
+      "uk": "збірні числівники"
+    },
+    "liczebniki-daty": {
+      "level": "B2",
+      "pl": "Liczebniki w datach, latach, godzinach",
+      "uk": "числівники в датах"
+    },
+    "przyimki-zlozone": {
+      "level": "B2",
+      "pl": "W ciągu, podczas, w wyniku, zgodnie z, wbrew",
+      "uk": "складені прийменники"
+    },
+    "rekcja": {
+      "level": "B2",
+      "pl": "Rekcja czasowników i przymiotników",
+      "uk": "керування"
+    },
+    "zaimki-nieokreslone": {
+      "level": "B2",
+      "pl": "-ś, -kolwiek, byle, mało kto, nikt/nic/nigdzie",
+      "uk": "неозначені займенники"
+    },
+    "negacja-podwojna": {
+      "level": "B2",
+      "pl": "Nikt nie, nigdy nic",
+      "uk": "подвійне заперечення"
+    },
+    "slowotworstwo": {
+      "level": "B2",
+      "pl": "-ość, -anie, -nik, -arz, -owy, -alny, zdrobnienia",
+      "uk": "словотвір"
+    },
+    "sie-znaczenia": {
+      "level": "B2",
+      "pl": "Się: zwrotne, wzajemne, bezosobowe, nieumyślne",
+      "uk": "значення się"
+    },
+    "szyk": {
+      "level": "B2",
+      "pl": "Szyk wyrazów: temat–remat, „to” dla wyróżnienia",
+      "uk": "порядок слів"
+    },
+    "partykuly": {
+      "level": "B2",
+      "pl": "-że, przecież, chyba, właśnie, nawet, aż, dopiero",
+      "uk": "частки"
+    }
+  },
+  "aliases": {
+    "21-jeden": "liczebniki-glowne",
+    "a-ale-i": "przeciwstawienie",
+    "a-e": "pisownia",
+    "aby-by-po-to": "zeby-cel",
+    "aspekt": "aspekt-podstawy",
+    "aspekt-jedna-czynnosc": "aspekt-przeszly",
+    "aspekt-pary": "aspekt-podstawy",
+    "aspekt-pary-nieregularne": "aspekt-tworzenie",
+    "aspekt-pary-przedrostki": "aspekt-tworzenie",
+    "aspekt-pary-przyrostki": "aspekt-tworzenie",
+    "aspekt-po-nie": "aspekt-uzycie",
+    "aspekt-polecenia": "rozkazujacy-aspekt",
+    "aspekt-proces": "aspekt-podstawy",
+    "aspekt-przyszly": "czas-przyszly-dk",
+    "aspekt-rozkaz": "rozkazujacy-aspekt",
+    "aspekt-rzeczownik": "odczasownikowe",
+    "aspekt-sygnaly": "aspekt-uzycie",
+    "aspekt-teraz": "aspekt-uzycie",
+    "aspekt-tlo-akcja": "aspekt-przeszly",
+    "aspekt-zaczac-przestac": "aspekt-uzycie",
+    "aspekt-znaczenie": "aspekt-podstawy",
+    "az-dopoki": "zdania-czasowe",
+    "bardziej-mniej": "stopniowanie",
+    "bardziej-najbardziej": "stopniowanie",
+    "bez-biernej": "bierna-byc-zostac",
+    "bez-przyimka-celownik": "celownik-osoby",
+    "bez-przyimka-dopelniacz": "dopelniacz-przyimki",
+    "bez-przyimka-narzednik": "narzednik-pelny",
+    "bezosobowe-czasy": "bezosobowe-no-to",
+    "bezosobowe-wybor": "bezosobowe-no-to",
+    "bierna-aspekt": "bierna-byc-zostac",
+    "bierna-brak": "bierna-byc-zostac",
+    "bierna-czynna": "bierna-byc-zostac",
+    "bierna-meskoosobowa": "bierna-byc-zostac",
+    "bierna-przeksztalcenie": "bierna-byc-zostac",
+    "bierna-przez": "bierna-byc-zostac",
+    "bierna-wykonawca": "bierna-byc-zostac",
+    "bierna-zgoda": "bierna-byc-zostac",
+    "biernik": "biernik-rzeczownik",
+    "biernik-a-e": "biernik-rzeczownik",
+    "biernik-m-nieżywotny": "biernik-rzeczownik",
+    "biernik-m-zywotny": "biernik-osobowy",
+    "biernik-nijaki": "biernik-rzeczownik",
+    "biernik-to-jest": "biernik-rzeczownik",
+    "biernik-zamawianie": "biernik-rzeczownik",
+    "bo-ponieważ": "przyczyna-skutek",
+    "bo-vs-zeby": "zeby-cel",
+    "bo-zeby": "zeby-cel",
+    "byc-kims": "narzednik-zawod-z",
+    "byc-narodowosc-narzednik": "narzednik-zawod-z",
+    "byc-narzednik": "narzednik-zawod-z",
+    "byc-przymiotnik": "byc",
+    "byl-vs-zostal": "bierna-byc-zostac",
+    "celownik": "celownik-osoby",
+    "celownik-podoba-sie": "celownik-bezosobowe",
+    "celownik-rzeczowniki": "celownik-osoby",
+    "celownik-sie": "celownik-bezosobowe",
+    "celownik-szyk": "enklityki-zaimki",
+    "celownik-zaimki": "zaimki-osobowe-przypadki",
+    "ch-h": "pisownia",
+    "chce-bo": "przyczyna-skutek",
+    "chce-mi-sie": "celownik-bezosobowe",
+    "chcialbym": "grzecznosc-chcialbym",
+    "chociaz-czy-bo": "przyzwolenie",
+    "chociaz-mimo-ze": "przyzwolenie",
+    "chodzic-do-na": "przyimki-kierunku",
+    "ci-te": "mn-mianownik-mos",
+    "czas-przeszly-rodzaj": "czas-przeszly",
+    "czas-przyszly": "czas-przyszly-bede",
+    "czasowniki-dopelniacz": "dopelniacz-przyimki",
+    "czasowniki-mowienia": "mowa-zalezna",
+    "czasowniki-narzednik": "narzednik-pelny",
+    "czasowniki-z-dopelniaczem": "dopelniacz-przyimki",
+    "czasowniki-z-narzednikiem": "narzednik-pelny",
+    "czasowniki-z-sie": "czasownik-sie",
+    "czasowniki-z-zeby": "zeby-zyczenie",
+    "czy": "pytajniki",
+    "data-dokument": "data-pelna",
+    "data-dopelniacz": "data-pelna",
+    "data-kiedy": "data-podstawowa",
+    "data-mianownik": "data-pelna",
+    "dekady": "data-pelna",
+    "dialog": "sluchanie",
+    "dla-do-na": "dopelniacz-przyimki",
+    "dla-na-do": "dopelniacz-przyimki",
+    "dlaczego-po-co": "przyczyna-skutek",
+    "do-dopelniacz": "dopelniacz-przyimki",
+    "dopelniacz": "dopelniacz-przyimki",
+    "dopelniacz-brakuje": "dopelniacz-nie-ma",
+    "dopelniacz-czesci-ciala": "przypadki-funkcje",
+    "dopelniacz-lm": "mn-przypadki",
+    "dopelniacz-lp": "dopelniacz-przyimki",
+    "dopelniacz-m-a-u": "dopelniacz-przyimki",
+    "dopelniacz-mnoga": "mn-przypadki",
+    "dopelniacz-popraw": "dopelniacz-przyimki",
+    "dopelniacz-przeczenie": "przeczenie-dopelniacz",
+    "dopelniacz-przymiotnik": "przymiotnik-przypadki",
+    "dopelniacz-rzeczownik": "dopelniacz-przyimki",
+    "dopelniacz-tekst": "dopelniacz-przyimki",
+    "dopelniacz-zdanie": "dopelniacz-przyimki",
+    "dwa-tysiace": "liczebniki-odmiana",
+    "dzialania": "liczebniki-odmiana",
+    "dzieki-celownik": "celownik-osoby",
+    "dzieki-przez-z-powodu": "przyimki-przyczyny",
+    "ec-liczba-mnoga": "mn-mianownik-mos",
+    "ec-meskoosobowe": "mn-mianownik-mos",
+    "ec-narracja": "czas-przeszly",
+    "ec-wyjatki": "czas-przeszly-nieregularny",
+    "ec-wzor": "czas-przeszly",
+    "ec-z-a": "czas-przeszly",
+    "forma-no-to": "bezosobowe-no-to",
+    "gdzie-dokad": "przyimki-kierunku",
+    "gdzie-dokad-na": "przyimki-kierunku",
+    "gdzie-dokad-uslugi": "przyimki-kierunku",
+    "gdzie-dokad-za-pod-przed": "przyimki-kierunku",
+    "godzina-o": "godzina",
+    "i-y-j": "pisownia",
+    "ia-ja": "pisownia",
+    "ile-razy": "przyimki-czasu",
+    "ilosc-dopelniacz": "dopelniacz-ilosc",
+    "ilu-ile": "liczebniki-skladnia",
+    "im-tym": "porownania",
+    "imieslow-koncowki": "imieslow-czynny",
+    "imieslow-nieregularny": "imieslow-bierny",
+    "imieslow-odmiana": "imieslow-czynny",
+    "imieslow-wymiany": "imieslow-bierny",
+    "interesowac-sie-grac": "grac-w-na",
+    "jak-dlugo": "przyimki-czasu",
+    "jako-mianownik": "narzednik-zawod-z",
+    "jednostki": "slownictwo",
+    "jego-czy-niego": "zaimki-formy",
+    "jesli-vs-gdyby": "warunek-nierealny",
+    "jesli-warunek": "warunek-realny",
+    "jest-kim-to-jest": "narzednik-zawod-z",
+    "jest-vs-zostaje": "bierna-byc-zostac",
+    "jestem-narzednik": "narzednik-zawod-z",
+    "kiedy-aspekt": "zdania-czasowe",
+    "kierunek-przyczyna-skutek": "przyczyna-skutek",
+    "kolejnosc": "spojniki-narracyjne",
+    "konc-e": "pisownia",
+    "konc-y-i": "pisownia",
+    "koniugacja-chunk": "koniugacja-am-asz",
+    "koniugacja-e-ysz": "koniugacja-e-isz",
+    "koniugacja-em-esz": "koniugacja-am-asz",
+    "koniugacja-m-sz": "koniugacja-am-asz",
+    "ktory-czyj": "wzgledne-inne",
+    "ktory-liczba-mnoga": "ktory-przypadki",
+    "ktory-mianownik": "ktory-podstawy",
+    "ktory-przyimki": "ktory-przypadki",
+    "ktory-zgoda": "ktory-podstawy",
+    "ktos-cos": "zaimki-nieokreslone",
+    "kwota-na-glos": "liczebniki-odmiana",
+    "l-l": "pisownia",
+    "liczebnik-dopelniacz": "liczebnik-rzeczownik",
+    "liczebnik-dopelniacz-przyimek": "liczebnik-rzeczownik",
+    "liczebnik-grosz": "ceny-zloty",
+    "liczebnik-jednostka": "liczebnik-rzeczownik",
+    "liczebnik-przypadki": "liczebniki-odmiana",
+    "liczebnik-tysiac": "liczebniki-odmiana",
+    "liczebnik-zloty": "ceny-zloty",
+    "liczebniki": "liczebniki-glowne",
+    "liczebniki-0-100": "liczebniki-glowne",
+    "liczebniki-2-3-4": "liczebnik-rzeczownik",
+    "listening:intencja": "sluchanie",
+    "listening:liczby": "sluchanie",
+    "listening:szczegol": "sluchanie",
+    "lm-biernik": "mn-przypadki",
+    "lm-celownik": "mn-przypadki",
+    "lm-dopelniacz": "mn-przypadki",
+    "lm-meskoosobowe": "mn-mianownik-mos",
+    "lm-miejscownik": "mn-przypadki",
+    "lm-narzednik": "mn-przypadki",
+    "lm-niemeskoosobowe": "mn-mianownik-mos",
+    "lm-popraw": "mn-przypadki",
+    "lm-przymiotniki": "mn-przypadki",
+    "lm-transformacja": "mn-przypadki",
+    "lm-wyjatki": "rzecz-nieregularne",
+    "lm-zdanie": "mn-przypadki",
+    "lubic-uwielbiac": "lubic-podobac",
+    "lubie-smakuje-podoba": "lubic-podobac",
+    "mam-dosc": "dopelniacz-nie-ma",
+    "meskoosobowe-forma": "mn-mianownik-mos",
+    "meskoosobowe-vs-reszta": "mn-mianownik-mos",
+    "meskoosobowe-vs-zbiorowe": "liczebniki-zbiorowe",
+    "miec-bezokolicznik": "modalne",
+    "miejscownik": "miejscownik-miejsce",
+    "miejscownik-alternacje": "miejscownik-miejsce",
+    "miejscownik-f": "miejscownik-miejsce",
+    "miejscownik-formy": "miejscownik-miejsce",
+    "miejscownik-l-mn": "mn-przypadki",
+    "miejscownik-m-n": "miejscownik-miejsce",
+    "miejscownik-mnoga": "mn-przypadki",
+    "miejscownik-przymiotnik": "przymiotnik-przypadki",
+    "miejscownik-rzeczownik": "miejscownik-miejsce",
+    "miejscownik-wyjatki": "miejscownik-miejsce",
+    "miekkie": "wymowa-glosek",
+    "miesiac-z-dniem": "data-podstawowa",
+    "mimo-dopelniacz": "przyzwolenie",
+    "mix": "slownictwo",
+    "mn-mianownik": "mn-mianownik-mos",
+    "moc": "modalne-bezokolicznik",
+    "moc-odmiana": "modalne-bezokolicznik",
+    "modalne-czas": "modalne",
+    "modalne-formy": "modalne",
+    "modalne-przeszly": "modalne",
+    "modalne-przyszly": "modalne",
+    "modalne-test": "modalne",
+    "moglbym": "warunkowy-prosby",
+    "most": "powtorka",
+    "mowa-zalezna-ze": "mowa-zalezna",
+    "musiec": "modalne-bezokolicznik",
+    "musiec-czasy": "modalne",
+    "musiec-odmiana": "modalne-bezokolicznik",
+    "na-biernik": "biernik-rzeczownik",
+    "na-lekcji": "slownictwo",
+    "na-miejscownik": "miejscownik-miejsce",
+    "na-twoim-miejscu": "warunkowy-prosby",
+    "nad-pod-przed-za": "narzednik-pelny",
+    "narzednik": "narzednik-pelny",
+    "narzednik-bez-przyimka": "narzednik-pelny",
+    "narzednik-formy": "narzednik-pelny",
+    "narzednik-kim": "narzednik-pelny",
+    "narzednik-koncowki": "narzednik-pelny",
+    "narzednik-lm": "mn-przypadki",
+    "narzednik-lp": "narzednik-pelny",
+    "narzednik-mianownik": "narzednik-pelny",
+    "narzednik-mnoga": "mn-przypadki",
+    "narzednik-narzedzie": "narzednik-pelny",
+    "narzednik-przymiotnik": "narzednik-pelny",
+    "narzednik-rzeczownik": "narzednik-pelny",
+    "narzednik-wyjatki": "narzednik-pelny",
+    "narzednik-z": "narzednik-pelny",
+    "natomiast-jednak": "przeciwstawienie",
+    "nazwy-miesni-dopelniacz": "przypadki-funkcje",
+    "negacja-dopelniacz": "przeczenie-dopelniacz",
+    "nie-celownik-narzednik": "celownik-osoby",
+    "nie-musisz-nie-mozesz": "modalne-obowiazek",
+    "nie-musisz-nie-wolno": "modalne-obowiazek",
+    "nijaki-a": "rodzaj-rzeczownika",
+    "nikt-nic-odmiana": "zaimki-nieokreslone",
+    "nikt-popraw": "zaimki-nieokreslone",
+    "niz-od": "porownania",
+    "o-biernik": "biernik-rzeczownik",
+    "o-kim-o-czym": "miejscownik-pelny",
+    "o-miejscownik": "miejscownik-pelny",
+    "o-u": "pisownia",
+    "odmiana-miesien": "przypadki-funkcje",
+    "odsetki": "slownictwo",
+    "oni-one": "mn-mianownik-mos",
+    "oni-one-czasownik": "mn-mianownik-mos",
+    "opis-osoby": "przymiotnik-mianownik",
+    "osoby-koncowki": "zaimki-osobowe-przypadki",
+    "osoby-nas-ich": "zaimki-osobowe-przypadki",
+    "pary-aspektowe": "aspekt-tworzenie",
+    "pierwszenstwo-test": "slownictwo",
+    "podwojne-przeczenie": "negacja-podwojna",
+    "polecac-przypadek": "celownik-osoby",
+    "polecenia": "rozkaznik-pelny",
+    "ponad-biernik": "biernik-rzeczownik",
+    "porownanie-niz": "porownania",
+    "porownanie-niz-od": "porownania",
+    "powinien-odmiana": "modalne-obowiazek",
+    "powtorka-swieta": "powtorka",
+    "procent": "liczebniki-odmiana",
+    "procent-liczebnik": "liczebniki-odmiana",
+    "propozycje": "modalne-bezokolicznik",
+    "prosba-grzeczna": "warunkowy-prosby",
+    "prosba-zeby": "zeby-zyczenie",
+    "prosze-bezokolicznik": "rozkaznik-pelny",
+    "przecinek": "pisownia",
+    "przed-po-podczas": "przyimki-czasu",
+    "przedstawianie": "byc",
+    "przeprosiny": "slownictwo",
+    "przeszly-3-osoba": "czas-przeszly",
+    "przeszly-li-ly": "mn-mianownik-mos",
+    "przez-biernik": "biernik-rzeczownik",
+    "przy-o-po": "miejscownik-pelny",
+    "przyimek-wybor": "rekcja",
+    "przyimki-dopelniacz": "dopelniacz-przyimki",
+    "przyimki-dopelniacz-miejsce": "dopelniacz-przyimki",
+    "przyimki-liczby": "liczebniki-skladnia",
+    "przyimki-miejsca-narzednik": "narzednik-pelny",
+    "przyimki-miejsce": "miejscownik-miejsce",
+    "przyimki-miejscownik": "miejscownik-pelny",
+    "przyimki-miejscownik-wybor": "przypadki-przyimki",
+    "przyimki-narzednik": "narzednik-pelny",
+    "przyimki-narzednik-miejsce": "narzednik-pelny",
+    "przyimki-z-dopelniaczem": "dopelniacz-przyimki",
+    "przymiotnik-i": "przymiotnik-mianownik",
+    "przymiotnik-miejscownik": "przymiotnik-przypadki",
+    "przymiotnik-zgoda": "przymiotnik-mianownik",
+    "przypadki-razem": "przypadki-funkcje",
+    "przyslowki-stopniowanie": "stopniowanie",
+    "pulapka-na-o": "kalki-uk",
+    "pulapka-przypadek": "kalki-uk",
+    "pulapka-wysokosc": "kalki-uk",
+    "pulapki": "kalki-uk",
+    "pulapki-en": "kalki-en",
+    "pulapki-uk": "kalki-uk",
+    "pytania": "pytajniki",
+    "pytanie-z-przyimkiem": "pytajniki",
+    "pytanie-zalezne-czy": "pytania-zalezne",
+    "pytanie-zalezne-zaimek": "pytania-zalezne",
+    "rada-powinien": "modalne-obowiazek",
+    "rady": "modalne-obowiazek",
+    "razem-osobno": "pisownia",
+    "ro-aspekt": "odczasownikowe",
+    "ro-czynnosc-rzecz": "odczasownikowe",
+    "ro-dopelniacz": "odczasownikowe",
+    "ro-leksykalizacja": "odczasownikowe",
+    "ro-przyimki": "odczasownikowe",
+    "ro-pulapki": "odczasownikowe",
+    "ro-rekcja-sie": "odczasownikowe",
+    "ro-wzor": "odczasownikowe",
+    "rodzaj": "rodzaj-rzeczownika",
+    "rodzaj-wyjatki": "rodzaj-rzeczownika",
+    "rodzina-dopelniacz": "przypadki-funkcje",
+    "rok-miejscownik": "data-pelna",
+    "rownania-na-glos": "liczebniki-odmiana",
+    "rozkazujacy-formy": "rozkazujacy",
+    "rozkazujacy-my": "rozkazujacy",
+    "rozkazujacy-przeczenie": "rozkazujacy",
+    "ruch-czym": "isc-jechac",
+    "ruch-dokad-skad": "przyimki-kierunku",
+    "ruch-inne-pary": "ruch-iterat",
+    "ruch-kierunek": "przyimki-kierunku",
+    "ruch-odmiana": "ruch-iterat",
+    "ruch-pieszo-pojazdem": "isc-jechac",
+    "ruch-przedrostki-aspekt": "ruch-przedrostki",
+    "ruch-przenosne": "ruch-przedrostki",
+    "ruch-przeszly": "ruch-iterat",
+    "rz-wyjatki": "pisownia",
+    "rz-z": "pisownia",
+    "rzeczownik-zamiast-zdania": "odczasownikowe",
+    "rzeczowniki-odczasownikowe": "odczasownikowe",
+    "sie-bezosobowe": "bezosobowe-sie",
+    "skad": "przyimki-kierunku",
+    "skad-z-od": "przyimki-kierunku",
+    "slownictwo-dokumenty": "slownictwo",
+    "slownictwo-kawiarnia": "slownictwo",
+    "slownictwo-rodzina": "slownictwo",
+    "slychac-widac-czuc": "bezosobowe-sie",
+    "smakuje-zgoda": "celownik-bezosobowe",
+    "spojniki-czasu-kontrastu": "zdania-czasowe",
+    "stany-celownik": "celownik-bezosobowe",
+    "stopien-najwyzszy": "stopniowanie",
+    "stopien-wyzszy": "stopniowanie",
+    "stopien-wyzszy-nieregularny": "stopniowanie",
+    "stopien-wyzszy-przymiotnik": "stopniowanie",
+    "stopien-wyzszy-przyslowek": "stopniowanie",
+    "stopniowanie-formy": "stopniowanie",
+    "stopniowanie-nieregularne": "stopniowanie",
+    "stopniowanie-wymiany": "stopniowanie",
+    "superlatyw-im-tym": "porownania",
+    "tak-jak": "porownania",
+    "temu-za": "przyimki-czasu",
+    "tp-gdyby": "warunek-nierealny",
+    "tp-grzecznosc": "warunkowy-prosby",
+    "tp-koncowki": "przypuszczajacy-formy",
+    "tp-osoba": "przypuszczajacy-formy",
+    "tp-rodzaj": "przypuszczajacy-formy",
+    "tr-funkcja": "rozkaznik-pelny",
+    "tr-nieregularne": "rozkaznik-pelny",
+    "tr-osoby": "rozkaznik-pelny",
+    "tr-praktyka": "rozkaznik-pelny",
+    "tr-przeczenie": "rozkaznik-pelny",
+    "tr-pulapki": "rozkaznik-pelny",
+    "tr-ton": "rozkaznik-pelny",
+    "tr-wzor": "rozkaznik-pelny",
+    "tryb-przypuszczajacy": "przypuszczajacy-formy",
+    "tryb-rozkazujacy": "rozkazujacy",
+    "trzeba-mozna-warto": "modalne-obowiazek",
+    "u-do-od": "dopelniacz-przyimki",
+    "ulamki": "liczebniki-odmiana",
+    "ulamki-przecinek": "liczebniki-odmiana",
+    "umiec-moc": "modalne-bezokolicznik",
+    "w-celu": "zeby-cel",
+    "w-czy-na": "miejscownik-miejsce",
+    "w-miejscownik": "miejscownik-miejsce",
+    "w-vs-na": "miejscownik-miejsce",
+    "w-wysokosci": "slownictwo",
+    "wiec-dlatego": "przyczyna-skutek",
+    "wiedziec-widziec-znac": "czasowniki-nieregularne",
+    "wiek": "liczebnik-rzeczownik",
+    "wiek-lat-lata": "liczebnik-rzeczownik",
+    "wielka-litera": "pisownia",
+    "wolec-niz-od": "porownania",
+    "wolec-odmiana": "porownania",
+    "wyjatki": "pisownia",
+    "wyjatki-miejscownik": "miejscownik-miejsce",
+    "wyjatki-stopniowania": "stopniowanie",
+    "wymiary-porownanie": "porownania",
+    "wynosic": "slownictwo",
+    "wzgledne-co-kto": "wzgledne-inne",
+    "wzgledne-gdzie-dokad": "wzgledne-inne",
+    "wzgledne-jaki": "wzgledne-inne",
+    "wzory-na-glos": "liczebniki-odmiana",
+    "z-dopelniacz": "dopelniacz-przyimki",
+    "z-kim": "narzednik-pelny",
+    "z-narzednik": "narzednik-pelny",
+    "z-powodu-dopelniacz": "przyimki-przyczyny",
+    "za-biernik": "biernik-rzeczownik",
+    "zaimki-celownik": "zaimki-osobowe-przypadki",
+    "zaimki-krotkie-dlugie": "zaimki-formy",
+    "zaimki-narzednik": "zaimki-osobowe-przypadki",
+    "zaimki-po-przyimku": "zaimki-formy",
+    "zaimki-popraw": "zaimki-osobowe-przypadki",
+    "zakaz-dopelniacz": "przeczenie-dopelniacz",
+    "zalezy-chodzi": "rekcja",
+    "zamiana-na-zaimek": "zaimki-osobowe-przypadki",
+    "zanim": "zdania-czasowe",
+    "zapis-dat": "data-pelna",
+    "zawod-narzednik": "narzednik-zawod-z",
+    "zawody-forma-zenska": "rodzaj-rzeczownika",
+    "zbiorowe-forma": "liczebniki-zbiorowe",
+    "zdanie-modalne": "modalne-obowiazek",
+    "zdanie-rzeczownik-przyzwolenie": "przyzwolenie",
+    "zdanie-zaimki": "zaimki-osobowe-przypadki",
+    "ze-czy-zeby": "zeby-cel",
+    "ze-vs-zeby": "zeby-cel",
+    "zeby-bezokolicznik": "zeby-cel",
+    "zeby-bierna": "zeby-cel",
+    "zeby-forma": "zeby-cel",
+    "zeby-forma-osobowa": "zeby-cel",
+    "zeby-koncowki": "zeby-cel",
+    "zeby-nie": "zeby-cel",
+    "zgoda": "przymiotnik-mianownik",
+    "zmiana-o": "pisownia",
+    "zmiana-osoby": "mowa-zalezna",
+    "zmiana-z-do": "przyimki-kierunku",
+    "zmiany-wyjatki": "pisownia",
+    "zostac-jako": "narzednik-zawod-z"
+  }
+}

@@ -2,7 +2,7 @@
 title: Etat, zlecenie czy własna firma? Praca w Polsce
 icon: 💼
 level: B1
-number: 32
+number: 22
 module: pl-b1-group
 moduleTitle: Польська B1
 cover: /content/pl-b1-group-02-praca/header.jpg

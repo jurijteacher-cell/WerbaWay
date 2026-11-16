@@ -1,7 +1,17 @@
-# Werba Way — курс A2 (v1.4, 2026-11-12)
+# Werba Way — курс A2 (v1.5, 2026-11-16)
 
 Модуль: `pl-a2` · формат: **індивідуально, 60 хв** на урок (шаблон `light-60 A2`, нижче) · id нового уроку: `pl-a2-{n}-{slug}`, `n` наскрізний від 47 (продовження A1: уроки 1–46)
 Запит у новому чаті: «Урок 2.3» (або «Урок 58»).
+Теги `grammar_point` — лише з `docs/GRAMMAR_REGISTRY.md`. Власного реєстру ця карта більше не тримає.
+
+**Готово на 2026-11-16: 17 уроків** — 47–59, 65, 66, 70, 71 (+ RU-версія 70). Залишилось 25: 60–64, 67–69, 72–88.
+
+**v1.5 (2026-11-16)** — після аудиту сходинки:
+- карта була застаріла: 54–59 стояли як 🆕, хоча вже опубліковані;
+- **множина у відмінках переїхала з 81 у 72**, а ступені порівняння — з 72 у 81: `mnoga-przypadki` на 81-му уроці з 88 стояв після всіх місць, де множина вже потрібна (63 *znam kolegów*, 70 *dwa pokoje*, 73 поїздка), а бронювання готелю й квитків — природний контекст для множини;
+- виправлено два теги в `rec`, яких не існує в реєстрі: `lubic-uwielbiac` (47) → `lubic-podobac`, `czas-przeszly-rodzaj` (71) → `czas-przeszly`;
+- давальний: 52 дає **форми** займенників (*mi, ci, mu, jej*), 67 — **вживання** відмінка; це два свідомі кроки, 67 починається з повторення форм із 52;
+- прикметник у відмінках (64) приходить після 53 і 60, де закінчення вже бачили всередині одного відмінка; переставити не можна (53 опублікований), тому 64 збирає їх у систему.
 
 **v1.4 (2026-11-12)** — готовий 66, зроблений одразу після 65 на прохання Юри. M3 тепер має готову пару 65 → 66: наказовий спосіб і модальні значення обов'язку; блок g5 уроку 66 прямо переводить розказ із 65 у пораду. 54–55 (повторення й контрольна M1) лишаються незакритими — тримати в голові, бо на них висить орудний з 53.
 
@@ -76,7 +86,7 @@ Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 
 | n | cid | Статус | Урок | Джерело | new | rec | Тема |
 |---|---|---|---|---|---|---|---|
-| 47 | 0.1 | ✅ | 03 · Uwielbiam tańczyć! Czas wolny i pasje | `pl-a2-mow-03-wolny-czas` | (вступ) *woleć … niż / od*, *interesować się*, *chodzić na* | теперішній час, `lubic-uwielbiac` | вільний час, хобі |
+| 47 | 0.1 | ✅ | 03 · Uwielbiam tańczyć! Czas wolny i pasje | `pl-a2-mow-03-wolny-czas` | `porownania` (вступ: *woleć … niż / od*), `grac-w-na` | `lubic-podobac`, теперішній час | вільний час, хобі |
 | 48 | 0.2 | ✅ | 04 · Poproszę pierogi! Jedzenie i restauracja | `pl-a2-mow-04-jedzenie` | (вступ) знахідний при замовленні, родовий кількості й заперечення, *smakuje mi* | `biernik-rzeczownik`, `dopelniacz-nie-ma` | їжа, ресторан |
 
 ### M1 · Praca (49–55)
@@ -88,17 +98,17 @@ Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 | 51 | 1.3 | ✅ | 51 · Umowa i urlop | `pl-a2-51-umowa-i-urlop` (2026-11-05); граматика `pl-b1-group-02-wydarzenia`, спрощена до A2 (порядкові, повна дата, *od … do*) | `liczebniki-porzadkowe`, `data-pelna` | `przyimki-czasu`, `godzina` | договір, графік, відпустка |
 | 52 | 1.4 | ✅ | 52 · Poznaję zespół | `pl-a2-52-poznaje-zespol` (2026-11-09) | `zaimki-osobowe-przypadki` | `biernik-rzeczownik`, `pan-pani` | перший день, офіс, колеги |
 | 53 | 1.5 | ✅ | Z kim pracuję | `pl-a2-53-z-kim-pracuje` (2026-11-10); граматика `pl-preg-06-wizyta-po-pologu` (орудний: прикметник, *być kimś*, прийменники) | `narzednik-pelny` | `zaimki-osobowe-przypadki`, `narzednik-zawod-z` | відділи, посади, наради |
-| 54 | 1.6 | 🆕 | Powtórka: praca | — | — | теги M1 | перший місяць у фірмі |
-| 55 | 1.7 | 🆕 | Kontrolna: praca | — | — | теги M1 | Taras питає про роботу |
+| 54 | 1.6 | ✅ | 54 · Powtórka: praca | — | — | теги M1 | перший місяць у фірмі |
+| 55 | 1.7 | ✅ | 55 · Kontrolna: praca | — | — | теги M1 | Taras питає про роботу |
 
 ### M2 · Opowiadam (56–62)
 
 | n | cid | Статус | Урок | Джерело | new | rec | Тема |
 |---|---|---|---|---|---|---|---|
-| 56 | 2.1 | ♻️ | Co się stało? | граматика `pl-preg-02-kolejne-badania`, блоки 1–3 (процес чи результат, пари) | `aspekt-podstawy` | `czas-przeszly`, `czas-przeszly-nieregularny` | події, пригоди |
-| 57 | 2.2 | ♻️ | Robiłam czy zrobiłam? | граматика `pl-preg-02`, блоки 4, 7–8 (регулярно → вчора, *zacząć / skończyć*) | `aspekt-przeszly` | `aspekt-podstawy`, `data-pelna` | справи за тиждень |
-| 58 | 2.3 | ♻️ | Jutro to zrobię | граматика `pl-preg-02`, блок 5 (плани) + нові блоки | `czas-przyszly-dk` | `aspekt-przeszly`, `czas-przyszly-bede` | плани, відрядження |
-| 59 | 2.4 | 🆕 | Kiedy, zanim, po tym jak | — | `zdania-czasowe` | `przyimki-czasu`, `czas-przyszly-dk` | порядок подій, розклад |
+| 56 | 2.1 | ✅ | 56 · Co się stało? | граматика `pl-preg-02-kolejne-badania`, блоки 1–3 (процес чи результат, пари) | `aspekt-podstawy` | `czas-przeszly`, `czas-przeszly-nieregularny` | події, пригоди |
+| 57 | 2.2 | ✅ | 57 · Robiłam czy zrobiłam? | граматика `pl-preg-02`, блоки 4, 7–8 (регулярно → вчора, *zacząć / skończyć*) | `aspekt-przeszly` | `aspekt-podstawy`, `data-pelna` | справи за тиждень |
+| 58 | 2.3 | ✅ | 58 · Jutro to zrobię | граматика `pl-preg-02`, блок 5 (плани) + нові блоки | `czas-przyszly-dk` | `aspekt-przeszly`, `czas-przyszly-bede` | плани, відрядження |
+| 59 | 2.4 | ✅ | 59 · Kiedy, zanim, po tym jak | — | `zdania-czasowe` | `przyimki-czasu`, `czas-przyszly-dk` | порядок подій, розклад |
 | 60 | 2.5 | ♻️ | Wspomnienia | граматика `pl-preg-05-pierwsze-wyjscia` (місцевий: *o kim / o czym*, *po, przy*, прикметник) | `miejscownik-pelny` | `miejscownik-miejsce`, `aspekt-przeszly` | спогади, люди, місця |
 | 61 | 2.6 | 🆕 | Powtórka: opowiadam | — | — | теги M2 | щоденник Олени |
 | 62 | 2.7 | 🆕 | Kontrolna: opowiadam | — | — | теги M2 | Kasia просить переказати подію |
@@ -120,10 +130,10 @@ Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 | n | cid | Статус | Урок | Джерело | new | rec | Тема |
 |---|---|---|---|---|---|---|---|
 | 70 | 4.1 | ✅ | 05 · Szukam mieszkania! Dom, pokoje i okolica | `pl-a2-mow-05-mieszkanie` (+ версія RU) | `przyimki-kierunku` (*gdzie / dokąd*, *obok, nad, w*) | `miejscownik-pelny`, `przymiotnik-przypadki` | житло, район |
-| 71 | 4.2 | ✅ | 06 · Muszę wysłać paczkę! Poczta, bank i naprawy | `pl-a2-mow-06-uslugi` | `warunkowy-prosby` (ввічливе прохання) | `czas-przeszly-rodzaj`, `przyimki-kierunku` | пошта, банк, сервіс |
-| 72 | 4.3 | 🆕 | Tańszy, lepszy, najlepszy | — | `stopniowanie`, `porownania` | *woleć … niż* з 47, `warunkowy-prosby` | готель, квитки, ціни |
+| 71 | 4.2 | ✅ | 06 · Muszę wysłać paczkę! Poczta, bank i naprawy | `pl-a2-mow-06-uslugi` | `warunkowy-prosby` (ввічливе прохання) | `czas-przeszly`, `przyimki-kierunku` | пошта, банк, сервіс |
+| 72 | 4.3 | ♻️ | **Rezerwacja: ile osób, ile nocy** | граматика множини з `pl-preg-05`, `-06`, `-07` (місцевий, орудний, родовий множини) | `mnoga-przypadki` | `liczba-mnoga-mianownik`, `liczebnik-rzeczownik`, `przyimki-kierunku` | готель, квитки, бронювання |
 | 73 | 4.4 | 🆕 | Przyjechał, wyszedł | — | `isc-jechac-przedrostki` | `przyimki-kierunku`, `aspekt-przeszly` | поїзд до Zakopanego |
-| 74 | 4.5 | 🆕 | Miejsce, które lubię | — | `ktory-podstawy` | `miejscownik-pelny`, `stopniowanie` | місто, пам'ятки |
+| 74 | 4.5 | 🆕 | Miejsce, które lubię | — | `ktory-podstawy` | `miejscownik-pelny`, `mnoga-przypadki` | місто, пам'ятки |
 | 75 | 4.6 | 🆕 | Powtórka: podróże | — | — | теги M4 | — |
 | 76 | 4.7 | 🆕 | Kontrolna: podróże | — | — | теги M4 | — |
 
@@ -135,7 +145,7 @@ Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 | 78 | 5.2 | 🆕 | Żeby… | — | `zdania-celu-zeby` | `zdania-zlozone-ze`, `modalne-obowiazek` | прохання про послугу |
 | 79 | 5.3 | 🆕 | Powiedział, że… | — | `mowa-zalezna-podstawy` | `zdania-zlozone-ze`, `aspekt-przeszly` | переказ розмови з pan Piotrem |
 | 80 | 5.4 | 🆕 | Ten, tamten, ktoś | — | `zaimki-wskazujace` | `zaimki-osobowe-przypadki`, `ktory-podstawy` | речі й люди в офісі |
-| 81 | 5.5 | ♻️ | Ludzie i dzieci | граматика блоків множини з `pl-preg-05`, `-06`, `-07` (місцевий, орудний, родовий множини) | `mnoga-przypadki` | `liczba-mnoga-mianownik`, `liczebnik-rzeczownik` | дитяче свято з Kasią |
+| 81 | 5.5 | 🆕 | **Kto starszy, kto lepszy** | — | `stopniowanie`, `porownania` | `przymiotnik-przypadki`, `mnoga-przypadki` | люди, діти, порівняння думок |
 | 82 | 5.6 | 🆕 | Powtórka: ludzie i opinie | — | — | теги M5 | — |
 | 83 | 5.7 | 🆕 | Kontrolna: ludzie i opinie | — | — | теги M5 | — |
 
@@ -149,7 +159,7 @@ Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 | 87 | 6.4 | 🆕 | Powtórka generalna | — | — | усі A2 | Olena допомагає новачку |
 | 88 | 6.5 | 🆕 | Egzamin A2 (2 × 60 хв) | — | — | усі A2 | — |
 
-**Разом:** 42 одиниці = 5 ✅ · 11 ♻️ · 26 🆕 (план v1.0). Готово на 2026-11-12: 11 (47, 48, 49, 50, 51, 52, 53, 65, 66, 70, 71). Контакт 43 год (42 уроки × 60 хв + друге заняття іспиту) + домашка ~0,5 год на урок ≈ 64 год. Темп 2 уроки на тиждень — 21 тиждень.
+**Разом:** 42 одиниці. Готово на 2026-11-16: 17 (47–59, 65, 66, 70, 71). Контакт 43 год (42 уроки × 60 хв + друге заняття іспиту) + домашка ~0,5 год на урок ≈ 64 год. Темп 2 уроки на тиждень — 21 тиждень.
 
 ## 5. Як переробляти уроки ♻️
 
@@ -161,45 +171,9 @@ Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 
 Уроки ✅ не перейменовуються і не переробляються: номер у курсі ≠ номер у назві (як у B1). Порядок курсу — за полем `n` у цій карті.
 
-## 6. Реєстр тегів A2
+## 6. Теги
 
-Реєстр глобальний і закритий. Кожен тег A2 вносить у `grammar_points` з `level: A2`. Зміни v1.0: `celownik-osoby` перенесено з M1 у 67 (разом з `celownik-bezosobowe`); `przyimki-czasu` вперше з'являється в 50 (з готового уроку), у 59 лише повторюється.
-
-```yaml
-grammar_points_a2:
-  dopelniacz-przyimki:       {level: A2, pl: "Dopełniacz po przyimkach: do, od, z, u, bez, dla, obok", uk: "родовий після прийменників"}
-  celownik-osoby:            {level: A2, pl: "Celownik: komu? dać, pomóc, powiedzieć", uk: "давальний: кому"}
-  zaimki-osobowe-przypadki:  {level: A2, pl: "Zaimki osobowe: mnie, cię, go, ją, nas, ich; mi, ci, mu, jej", uk: "особові займенники в відмінках"}
-  narzednik-pelny:           {level: A2, pl: "Narzędnik z przymiotnikiem; przed, nad, pod, za, między", uk: "орудний з прикметником"}
-  liczebniki-porzadkowe:     {level: A2, pl: "Liczebniki porządkowe", uk: "порядкові числівники"}
-  data-pelna:                {level: A2, pl: "Data z rokiem; od … do …", uk: "повна дата"}
-  aspekt-podstawy:           {level: A2, pl: "Aspekt: pary dk / ndk", uk: "вид: пари"}
-  aspekt-przeszly:           {level: A2, pl: "Aspekt w czasie przeszłym", uk: "вид у минулому"}
-  czas-przyszly-dk:          {level: A2, pl: "Czas przyszły dokonany: zrobię", uk: "майбутній доконаний"}
-  zdania-czasowe:            {level: A2, pl: "Kiedy, gdy, zanim, po tym jak, podczas", uk: "підрядні часу"}
-  przyimki-czasu:            {level: A2, pl: "Przyimki czasu: w, na, za, przez, od, do, temu, po, przed", uk: "прийменники часу"}
-  miejscownik-pelny:         {level: A2, pl: "Miejscownik: o kim? o czym? przy, po", uk: "місцевий: про кого/що"}
-  rozkaznik-pelny:           {level: A2, pl: "Tryb rozkazujący: ty, wy, my; nie + ndk", uk: "наказовий спосіб повністю"}
-  modalne-obowiazek:         {level: A2, pl: "Powinienem, trzeba, nie wolno, warto", uk: "обов'язок і заборона"}
-  biernik-osobowy:           {level: A2, pl: "Biernik osobowy: znam brata, widzę Marka", uk: "знахідний для істот"}
-  przymiotnik-przypadki:     {level: A2, pl: "Przymiotnik w przypadkach (liczba pojedyncza)", uk: "прикметник у відмінках"}
-  celownik-bezosobowe:       {level: A2, pl: "Jest mi zimno, chce mi się, smakuje mi", uk: "безособові з давальним"}
-  przyimki-kierunku:         {level: A2, pl: "Gdzie? dokąd? skąd?: w / na / do / z / od", uk: "де, куди, звідки"}
-  isc-jechac-przedrostki:    {level: A2, pl: "Przyjść, wyjść, przejść, dojechać (podstawy)", uk: "префікси руху: основи"}
-  warunkowy-prosby:          {level: A2, pl: "Mógłbyś…? Chciałbym… Czy mógłby Pan…?", uk: "ввічливі прохання"}
-  stopniowanie:              {level: A2, pl: "Stopniowanie przymiotników i przysłówków", uk: "ступені порівняння"}
-  porownania:                {level: A2, pl: "Niż, tak samo jak, najlepszy", uk: "порівняння"}
-  ktory-podstawy:            {level: A2, pl: "Który w mianowniku i bierniku", uk: "який: називний, знахідний"}
-  zdania-zlozone-ze:         {level: A2, pl: "Że, bo, ponieważ, dlatego, więc", uk: "причина й наслідок"}
-  zdania-celu-zeby:          {level: A2, pl: "Żeby + bezokolicznik", uk: "щоб + інфінітив"}
-  mowa-zalezna-podstawy:     {level: A2, pl: "Powiedział, że… Zapytała, czy…", uk: "непряма мова: основи"}
-  zaimki-wskazujace:         {level: A2, pl: "Ten, tamten, taki, ktoś, coś, nikt, nic", uk: "вказівні й неозначені"}
-  mnoga-przypadki:           {level: A2, pl: "Liczba mnoga: biernik, dopełniacz, narzędnik (wybrane)", uk: "множина: ключові відмінки"}
-  rejestr-formalny:          {level: A2, pl: "Formalny e-mail: Szanowny Panie, w sprawie, z poważaniem; wołacz", uk: "офіційний лист; кличний"}
-  spojniki-narracyjne:       {level: A2, pl: "Najpierw, potem, w końcu, poza tym, na przykład", uk: "сполучні слова розповіді"}
-```
-
-Готові уроки ✅ мають власні теги в JSON (`wolec-niz-od`, `biernik-zamawianie`, `ilosc-dopelniacz`, `zawod-narzednik`, `gdzie-dokad`, `prosba-grzeczna`…). Їх не змінюємо; при внесенні тегів A2 у реєстр додати мапінг «старий тег → тег A2», щоб mastery рахувався разом.
+Канон і мапінг старих тегів — `docs/GRAMMAR_REGISTRY.md` + таблиці `course_grammar_points` і `course_grammar_aliases` у Supabase. Готові уроки ✅ несуть власні теги в JSON (`wolec-niz-od`, `biernik-zamawianie`, `ilosc-dopelniacz`, `zawod-narzednik`, `gdzie-dokad`, `prosba-grzeczna` тощо) — вони **не правляться**, їх розв'язує мапінг. Нові уроки беруть тег лише з канону; перевірка — `python3 scripts/check_tags.py --changed`.
 
 ## 7. Can-do
 
@@ -209,26 +183,23 @@ grammar_points_a2:
 | M1 | Potrafię przejść rozmowę kwalifikacyjną na proste pytania. | Potrafię napisać CV i list motywacyjny (80 słów). | `dopelniacz-przyimki`, `zaimki-osobowe-przypadki`, `narzednik-pelny`, `przyimki-czasu`, `data-pelna` |
 | M2 | Potrafię opowiedzieć, co się stało i co zrobię. | Potrafię napisać relację z tygodnia (80 słów). | `aspekt-podstawy`, `aspekt-przeszly`, `czas-przyszly-dk`, `zdania-czasowe`, `miejscownik-pelny` |
 | M3 | Potrafię dać radę i opisać problem zdrowotny. | Potrafię napisać wiadomość z prośbą o radę (90 słów). | `rozkaznik-pelny`, `modalne-obowiazek`, `biernik-osobowy`, `przymiotnik-przypadki`, `celownik-osoby`, `celownik-bezosobowe` |
-| M4 | Potrafię zarezerwować, zmienić rezerwację, załatwić sprawę na poczcie i zapytać o drogę. | Potrafię napisać e-mail do hotelu (100 słów). | `przyimki-kierunku`, `isc-jechac-przedrostki`, `warunkowy-prosby`, `stopniowanie`, `ktory-podstawy` |
-| M5 | Potrafię uzasadnić swoje zdanie i przekazać cudze słowa. | Potrafię napisać wiadomość z prośbą i uzasadnieniem (100 słów). | `zdania-zlozone-ze`, `zdania-celu-zeby`, `mowa-zalezna-podstawy`, `zaimki-wskazujace`, `mnoga-przypadki` |
+| M4 | Potrafię zarezerwować nocleg i bilety, zmienić rezerwację i opowiedzieć o podróży. | Potrafię napisać e-mail do hotelu (100 słów). | `przyimki-kierunku`, `mnoga-przypadki`, `isc-jechac-przedrostki`, `warunkowy-prosby`, `ktory-podstawy` |
+| M5 | Potrafię uzasadnić swoje zdanie, porównać i przekazać cudze słowa. | Potrafię napisać wiadomość z prośbą i uzasadnieniem (100 słów). | `zdania-zlozone-ze`, `zdania-celu-zeby`, `mowa-zalezna-podstawy`, `zaimki-wskazujace`, `stopniowanie`, `porownania` |
 | M6 | Potrafię mówić 4 minuty o minionym roku. | Potrafię napisać formalny e-mail (120 słów). | `rejestr-formalny`, `spojniki-narracyjne` + powtórka |
 
 ## 8. Черга виробництва
 
-Курс іде по порядку, тому черга = порядок курсу без готових уроків:
-
 | Черга | Уроки | Що робити |
 |---|---|---|
-| 1 | ~~49 Szukam pracy~~ | ✅ 2026-11-04; модуль «Польська A2» (`pl-a2`) створено |
-| 2 | ~~51~~, ~~52~~, ~~53~~ | ✅ 51 (2026-11-05); ✅ 52 (2026-11-09, перший урок з аудіо e2 ElevenLabs); ✅ 53 (2026-11-10) |
-| 3 | 54, 55 | повторення й контрольна M1 |
-| 4 | 56–62 | M2: вид (♻️ `pl-preg-02` на три уроки), *kiedy / zanim*, місцевий (♻️ `pl-preg-05`) |
-| 5 | 63, 64, 67–69 | M3 (65 і 66 готові, зроблені поза чергою 12.11) |
-| 6 | 72–76 | M4 (70 і 71 готові) |
-| 7 | 77–83 | M5 |
-| 8 | 84–88 | M6 та іспит |
+| 1 | 60 | місцевий повністю (♻️ `pl-preg-05`) |
+| 2 | 61, 62 | повторення й контрольна M2 |
+| 3 | 63, 64 | знахідний істот і прикметник у відмінках |
+| 4 | 67, 68, 69 | давальний (♻️ `pl-preg-04`) + повторення й контрольна M3 |
+| 5 | 72–76 | M4: множина (♻️ `pl-preg-05/06/07`), префікси руху, *który* |
+| 6 | 77–83 | M5 |
+| 7 | 84–88 | M6 та іспит |
 
-Перед кожним уроком: розписати його поля `core`, `chunks`, `traps`, `comm`, `write` у цій карті (формат — `CURRICULUM_A0-A1.md`, розділ 7) або прямо в рядку уроку, якщо коротко.
+Перед кожним уроком: розписати його поля `core`, `chunks`, `traps`, `comm`, `write` у цій карті (формат — `CURRICULUM_A0-A1.md`, розділ 7).
 
 ## 9. Notion
 

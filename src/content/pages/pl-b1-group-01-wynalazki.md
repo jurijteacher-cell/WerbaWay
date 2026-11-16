@@ -2,7 +2,7 @@
 title: Wynalazki, które zmieniły historię ludzkości
 icon: ⚙️
 level: B1
-number: 31
+number: 21
 module: pl-b1-group
 moduleTitle: Польська B1
 cover: /content/pl-b1-group-01-wynalazki/header.jpg
