@@ -54,6 +54,10 @@ export function LiveWatch({ studentId, name }: { studentId: string; name: string
       const rep = new rrweb.Replayer([], {
         root: mount,
         liveMode: true,
+        // Віртуальний DOM rrweb застосовує зміни лише при play(), а в живому режимі play() немає:
+        // мутації, що прийшли разом зі знімком (isSync), вмикали віртуальний DOM — і всі наступні
+        // зміни осідали в ньому, не доходячи до екрана. Картинка «стояла» на першому кадрі.
+        useVirtualDom: false,
         showWarning: false,
         mouseTail: false,
         // анімації появи застигали на першому кадрі з opacity 0 — у перегляді вони не потрібні
