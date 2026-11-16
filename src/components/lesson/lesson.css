@@ -414,7 +414,11 @@
   .lp-props { margin-bottom: 1.3rem; font-size: .9rem; }
   .lp-props { column-gap: .9rem; }
   .lp-props dt, .lp-props dd { padding: .2rem 0; }
-  .lp-pager, .lp-layout { padding: 0 .6rem 0 1rem; }
-  .lp-sheet { --lp-pad-l: 1.35rem; --lp-pad-r: .85rem; padding: 1.2rem var(--lp-pad-r) 1.6rem var(--lp-pad-l); }
+  .lp-pager, .lp-layout { padding: 0 .5rem; }
+  /* телефон: без пружини й дірочок — вони з'їдали ~1.5rem ширини, і вікна вправ вилазили за край */
+  .lp-book::before, .lp-sheet-class::after, .lp-sheet::before { display: none; }
+  .lp-sheet { --lp-pad-l: .95rem; --lp-pad-r: .85rem; padding: 1.2rem var(--lp-pad-r) 1.6rem var(--lp-pad-l); border-radius: 1rem; background-image: none; }
+  /* вікно вправи — майже на всю ширину аркуша */
+  .lp-sheet .lp-prose > .lp-embed { margin-left: calc(.35rem - var(--lp-pad-l)); margin-right: calc(.35rem - var(--lp-pad-r)); }
   .lp-callout-body { min-width: 0; overflow-x: auto; }
 }

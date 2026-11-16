@@ -2489,6 +2489,31 @@
   margin-top: 16px; background: var(--nb-yellow); padding: 10px 12px;
   border-radius: 3px; transform: rotate(-1.2deg); display: inline-block;
 }
+/* телефон: слайд не ширший за екран — вужчі поля, менший шрифт, довге слово переноситься, а не вилазить */
+.nb-slide-table td { overflow-wrap: anywhere; }
+.nb-slide-stage { max-width: 100%; overflow-x: auto; }
+@media (max-width: 600px) {
+  .nb-slide-stage { padding: 12px 10px 20px; min-height: 0; }
+  .nb-slide-title { font-size: 22px; gap: 10px; margin-bottom: 12px; }
+  .nb-slide-num { width: 34px; height: 34px; font-size: 15px; }
+  .nb-slide-q { font-size: 20px; }
+  .nb-slide-table { font-size: 15px; }
+  .nb-slide-table th { font-size: 14px; padding: 6px 5px; }
+  .nb-slide-table td { padding: 6px 5px; }
+  .nb-brick { font-size: 16px; padding: 8px 11px; }
+  .nb-brick-result { font-size: 19px; }
+  .nb-slide-compare { grid-template-columns: 1fr; }
+  .nb-ex-row { flex-wrap: wrap; gap: 2px 8px; }
+  .nb-ex-pl { font-size: 17px; }
+  .nb-slide-note { transform: none; display: block; }
+}
+/* вузький телефон (і вікно вправи всередині лекції): менше вкладених полів */
+@media (max-width: 420px) {
+  .nb-wrap { padding-left: 4px; padding-right: 4px; }
+  .nb-sheet { padding-left: 12px; padding-right: 12px; }
+  .nb-slide-table th { font-size: 13px; padding: 6px 4px; }
+  .nb-slide-table td { padding: 6px 4px; }
+}
 .nb-teacher-note {
   margin-top: 14px; background: #fff; border: 1px solid var(--nb-edge);
   padding: 12px 14px; border-radius: 3px; font-size: 14px; line-height: 1.45;
