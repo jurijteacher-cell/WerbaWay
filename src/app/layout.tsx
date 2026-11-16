@@ -6,6 +6,7 @@ import { TopNav } from '@/components/TopNav';
 import { I18nProvider } from '@/i18n/client';
 import { getDictionary, getLocale, getT } from '@/i18n/server';
 import { HTML_LANG } from '@/i18n/config';
+import { SITE_DESCRIPTION_KEY, SITE_URL } from '@/lib/site';
 
 // Ті самі шрифти, що у вправах: Onest — інтерфейс, Literata — польський текст. Обидва мають латиницю з діакритикою й кирилицю.
 const onest = Onest({
@@ -36,9 +37,22 @@ const plexMono = IBM_Plex_Mono({
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = getT(getLocale());
+  const title = t('Werba Way — польська мова онлайн');
+  const description = t(SITE_DESCRIPTION_KEY);
   return {
-    title: 'Werba Way',
-    description: t('Польська мова — уроки та вправи'),
+    metadataBase: new URL(SITE_URL),
+    applicationName: 'Werba Way',
+    title,
+    description,
+    openGraph: {
+      type: 'website',
+      siteName: 'Werba Way',
+      title,
+      description,
+      url: '/',
+      images: [{ url: '/brand/werba-logo-full.jpg', width: 1024, height: 1024, alt: 'Werba Way' }],
+    },
+    twitter: { card: 'summary', title, description, images: ['/brand/werba-logo-full.jpg'] },
   };
 }
 
