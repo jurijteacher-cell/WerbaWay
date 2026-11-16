@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    // офіційний значок «G» для кнопки «Увійти через Google» (правила Google: лише їхній файл);
+    // віддається через /_next/image з нашого домену — браузер учня до Google не ходить
+    remotePatterns: [{ protocol: 'https', hostname: 'developers.google.com', pathname: '/static/identity/images/**' }],
+  },
   experimental: {
     // Лекції, вправи й карти перекладів читаються з диска (fs) — без цього Vercel
     // не покладе ці файли у серверну функцію

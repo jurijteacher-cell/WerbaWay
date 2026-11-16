@@ -66,7 +66,7 @@ export default function RegisterPage() {
 
   return (
     <AuthShell logo title={t("Реєстрація")} lead={t("Створи акаунт у Werba Way")}>
-      <GoogleButton />
+      <GoogleButton label={t("Зареєструватися через Google")} />
       <OrDivider />
       <form onSubmit={onSubmit} className="flex flex-col gap-4">
         <div className="grid grid-cols-2 gap-3">
