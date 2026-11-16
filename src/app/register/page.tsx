@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { createClient } from '@/lib/supabase/client';
 import { AuthShell, buttonClass, humanAuthError, inputClass } from '@/components/auth/AuthShell';
 import { GoogleButton, OrDivider } from '@/components/auth/GoogleButton';
+import { LegalLinks } from '@/components/auth/LegalLinks';
 
 export default function RegisterPage() {
   const t = useT();
@@ -139,11 +140,7 @@ export default function RegisterPage() {
           {t("Увійти")}
         </Link>
       </p>
-      <p className="mt-8 text-xs">
-        <Link href="/privacy" className="text-paper-muted hover:text-gold">
-          {t("Політика конфіденційності")}
-        </Link>
-      </p>
+      <LegalLinks consent />
     </AuthShell>
   );
 }

@@ -9,6 +9,7 @@ import { createClient } from '@/lib/supabase/client';
 import { safeNext } from '@/lib/safe-next';
 import { AuthShell, buttonClass, humanAuthError, inputClass } from '@/components/auth/AuthShell';
 import { GoogleButton, OrDivider } from '@/components/auth/GoogleButton';
+import { LegalLinks } from '@/components/auth/LegalLinks';
 
 function LoginForm() {
   const t = useT();
@@ -82,11 +83,7 @@ function LoginForm() {
           {t("Зареєструватись")}
         </Link>
       </p>
-      <p className="mt-8 text-xs">
-        <Link href="/privacy" className="text-paper-muted hover:text-gold">
-          {t("Політика конфіденційності")}
-        </Link>
-      </p>
+      <LegalLinks />
     </AuthShell>
   );
 }
