@@ -42,7 +42,13 @@ const nextConfig = {
     },
   },
   async headers() {
+    // вправи, слайди, share-посилання й кабінет — не для пошуку: вправа без лекції у видачі лише плутає
+    const noindex = ['/embed/:path*', '/slides/:path*', '/s/:path*', '/teacher/:path*'].map((source) => ({
+      source,
+      headers: [{ key: 'X-Robots-Tag', value: 'noindex' }],
+    }));
     return [
+      ...noindex,
       {
         source: '/embed/:path*',
         headers: [

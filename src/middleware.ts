@@ -76,13 +76,15 @@ export async function middleware(request: NextRequest) {
   const isPublicQueueLesson = /^\/lessons\/pl-/.test(path);
 
   // Головна: одразу сюди, без зайвого заходу на сервер (page.tsx робив те саме ще одним запитом)
+  // Гість бачить вхід прямо на «/» (rewrite): так Google індексує головну з її назвою й описом,
+  // а не «перенаправлення на /login» з текстом форми у видачі.
   if (path === '/') {
     const url = request.nextUrl.clone();
     url.pathname = user ? '/learn' : '/login';
-    const redirect = NextResponse.redirect(url);
+    const next = user ? NextResponse.redirect(url) : NextResponse.rewrite(url, { request: { headers } });
     // оновлені куки сесії (refresh) мають дійти до браузера й тут
-    response.cookies.getAll().forEach((c) => redirect.cookies.set(c));
-    return redirect;
+    response.cookies.getAll().forEach((c) => next.cookies.set(c));
+    return next;
   }
 
   const isProtected =
