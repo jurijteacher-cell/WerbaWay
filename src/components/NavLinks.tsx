@@ -92,8 +92,10 @@ export function NavLinks({ items }: { items: NavItem[] }) {
       </div>
 
       <nav aria-label={t("Головне меню")} className="ww-nav min-w-0">
-        {/* overflow-hidden — лише запобіжник до першого виміру; меню «Ще» лежить поза ним */}
-        <div className="flex min-w-0 items-center gap-1 overflow-hidden">
+        {/* overflow-hidden — лише запобіжник до першого виміру; меню «Ще» лежить поза ним.
+            py-0.5 — запас по висоті: тінь активного пункту (2px знизу) і підскок при наведенні (1px вгору)
+            інакше обрізаються цим overflow */}
+        <div className="flex min-w-0 items-center gap-1 overflow-hidden py-0.5">
           {shown.map((it) => (
             <Link key={it.href} href={it.href} className="ww-nav-link" aria-current={it.href === active ? 'page' : undefined}>
               {it.label}
