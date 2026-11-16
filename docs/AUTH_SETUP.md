@@ -46,6 +46,20 @@
 5. Скільки живе посилання — Supabase → Authentication → Sign In / Providers → Email → **Email OTP Expiration** (максимум 86400 с = 24 год).
 6. Доступ до курсу дається як і раніше — на сторінці учня (AccessEditor); можна одразу після запрошення.
 
+## Вхід через Google
+Кнопка «Увійти через Google» — на /login і /register (`src/components/auth/GoogleButton.tsx`).
+Повернення — `/auth/callback` (код → сесія; новому акаунту ім'я й прізвище з Google) → `next` або /dashboard.
+Новий акаунт отримує роль учня (тригер `handle_new_user`); якщо акаунт з цією поштою вже є — Supabase прив'язує Google до нього.
+
+Налаштування (одноразово):
+1. Google Cloud Console → APIs & Services → OAuth consent screen: застосунок «Werba Way», домен `werbaway.com`, статус **In production**.
+2. Credentials → Create OAuth client ID → Web application.
+   Authorized JavaScript origins: `https://www.werbaway.com`, `https://werbaway.com`.
+   Authorized redirect URI: `https://eucmiszjnaquqcsobbui.supabase.co/auth/v1/callback`.
+3. Supabase → Authentication → Sign In / Providers → Google: увімкнути, вставити Client ID і Client Secret.
+4. Supabase → Authentication → URL Configuration → Redirect URLs: `https://www.werbaway.com/**`, `https://werbaway.com/**`
+   (без цього Supabase поверне на Site URL, а не на /auth/callback сайту).
+
 ## Обмеження, про які варто знати
 - Сесія в ембеді (Notion iframe) окрема від сесії на сайті: учень входить окремо в кожному місці (один раз на браузер).
 - Старий код можна «забрати» на свій акаунт, знаючи код (коди короткі) — ризик малий, бо переноситься лише історія вправ.

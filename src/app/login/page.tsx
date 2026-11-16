@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { createClient } from '@/lib/supabase/client';
 import { safeNext } from '@/lib/safe-next';
 import { AuthShell, buttonClass, humanAuthError, inputClass } from '@/components/auth/AuthShell';
+import { GoogleButton, OrDivider } from '@/components/auth/GoogleButton';
 
 function LoginForm() {
   const t = useT();
@@ -18,6 +19,7 @@ function LoginForm() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const reset = searchParams.get('reset') === '1';
+  const googleFailed = searchParams.get('error') === 'google';
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,6 +39,9 @@ function LoginForm() {
   return (
     <AuthShell logo title="Werba Way" lead={t("Увійди, щоб продовжити навчання")}>
       {reset ? <p className="mb-4 text-sm text-correct">{t("Пароль змінено. Увійди з новим паролем.")}</p> : null}
+      {googleFailed ? <p className="mb-4 text-sm text-incorrect">{t("Не вдалося увійти через Google. Спробуй ще раз або увійди поштою")}</p> : null}
+      <GoogleButton next={searchParams.get('next')} />
+      <OrDivider />
       <form onSubmit={onSubmit} className="flex flex-col gap-4">
         <label className="ww-field">
           <span>Email</span>
