@@ -72,6 +72,7 @@
 | 18 | ✅ | Ekologia w mieście: pięćdziesiąt groszy za butelkę · `18-ekologia` | допуст і протиставлення: *chociaż, mimo że, a / natomiast / jednak* | лист до мерії |
 | 19 | ✅ | Święta w polskim domu: opłatek, karp i telefon z Toronto · `19-swieta` | непряма мова: *że, czy, żeby*, непрямі питання | переказ розмови з родиною |
 | 20 | ✅ | Pieniądze i bank: ile naprawdę kosztuje nasza skoda? · `20-pieniadze` | керування дієслів (*zależy mi na, myśleć o, dziękować za*) | скарга на рахунок |
+
 ### Блок 5 — Styl bezosobowy i praca (екзаменаційний мінімум)
 
 | № | Статус | Лекція | Граматика | Письмо (ДЗ) |
