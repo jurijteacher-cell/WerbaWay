@@ -5,12 +5,13 @@ level: A2
 number: 62
 module: pl-a2
 moduleTitle: Польська A2
+notion: https://app.notion.com/p/41b96e03c7c881c5931dc3e9837edfc2
 teacherOf: pl-a2-62-kontrolna-opowiadam
 ---
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📋</span><div class="lp-callout-body">
 
-<b>Курс «Польська A2», урок 62 (M2 · Opowiadam, cid 2.7, тип <i>kontrolna</i>).</b> Тест 15 завдань (граматика 7, слова 3, читання 3, слухання 2) + усне 10 хв + письмо вдома. Теорії й підказок на сторінці учня немає; у вправах тесту немає <i>explanation</i>, щоб тест не підказував. Сюжет: Kasia не була на днях народження Томка (з 61) і просить Олену все розповісти. Сторінка учня: <a href="/learn/pl-a2-62-kontrolna-opowiadam">62 · Kontrolna: opowiadam</a><br>Обкладинка: Brooke Cagle / Unsplash (photo-1653762378248). Фото в тексті: Priscilla Du Preez / Unsplash.
+<b>Курс «Польська A2», урок 62 (M2 · Opowiadam, cid 2.7, тип <i>kontrolna</i>).</b> Тест 15 завдань (граматика 7, слова 3, читання 3, слухання 2) + усне 10 хв + письмо вдома. Теорії й підказок на сторінці учня немає; у вправах тесту немає <i>explanation</i>, щоб тест не підказував. Сюжет: Kasia не була на дні народження Томка (з 61) і просить Олену все розповісти. Сторінка учня: <a href="/learn/pl-a2-62-kontrolna-opowiadam">62 · Kontrolna: opowiadam</a><br>Обкладинка: Brooke Cagle / Unsplash (photo-1653762378248). Фото в тексті: Priscilla Du Preez / Unsplash.
 
 </div></aside>
 

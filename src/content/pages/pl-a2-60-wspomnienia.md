@@ -5,6 +5,7 @@ level: A2
 number: 60
 module: pl-a2
 moduleTitle: Польська A2
+notion: https://app.notion.com/p/41b96e03c7c88123b0f3e5e117dc88b1
 cover: https://images.unsplash.com/photo-1528569937393-ee892b976859?w=1600&h=900&fit=crop&q=80&fm=jpg
 ---
 
@@ -117,8 +118,9 @@ Miejscownik znasz z pytania <b>gdzie?</b>: <i>w Krakowie, na poczcie</i>. Dziś 
 
 | Rodzaj | Kto? Co? | O kim? O czym? |
 | --- | --- | --- |
-| męski, nijaki | sklep, okno | w sklep<b>ie</b>, w okn<b>ie</b> |
+| męski, nijaki (najczęściej) | sklep, okno | w sklep<b>ie</b>, w okn<b>ie</b> |
 | męski, nijaki na -k, -g, -ch | park, dziadek | w park<b>u</b>, o dziadk<b>u</b> |
+| męski na -l, -j · nijaki na -e | hotel, zdjęcie | w hotel<b>u</b>, na zdjęci<b>u</b> |
 | żeński | szkoła, kawa | w szkol<b>e</b>, przy kaw<b>ie</b> |
 | żeński na -cia, -nia, -ja | babcia, kuchnia | o babc<b>i</b>, w kuchn<b>i</b> |
 | żeński na -ca, -cza, -rza | ulica, praca | na ulic<b>y</b>, po prac<b>y</b> |
