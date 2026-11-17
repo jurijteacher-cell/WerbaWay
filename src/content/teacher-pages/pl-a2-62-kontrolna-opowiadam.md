@@ -55,7 +55,7 @@ teacherOf: pl-a2-62-kontrolna-opowiadam
 
 ## 🎧 Транскрипт слухання (частина D)
 
-Аудіо ще немає — <b>читай діалог сам, двічі</b>, з паузою 10 с. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): Olena — W1 <code>mQq2zdGT1zEfDbh8W95l</code>; для Kasi окремого голосу в касті ще немає — підібрати при озвученні. Файл для плеєра LMS: <code>public/audio/pl-a2-62-kontrolna-opowiadam-e2-dialog.mp3</code> (ще не покладено).
+Озвучено 18.11.2026 (ElevenLabs, ≈46 с): аудіо лежить на <a href="https://app.notion.com/p/41b96e03c7c881c5931dc3e9837edfc2">сторінці TEACHER у Notion</a>; вмикай двічі, з паузою 10 с. Плеєр у вікні тесту мовчить, поки mp3 немає в репо. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): Olena — W1 <code>mQq2zdGT1zEfDbh8W95l</code>; Kasia — «Ania» <code>F4S1QHSHuBfGEaPzx8aN</code>. Файл для плеєра LMS: <code>public/audio/pl-a2-62-kontrolna-opowiadam-e2-dialog.mp3</code> (ще не покладено).
 
 <aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
 

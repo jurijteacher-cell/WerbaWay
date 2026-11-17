@@ -49,7 +49,7 @@ teacherOf: pl-a2-60-wspomnienia
 
 ## 🎧 e2–e3: транскрипт і ключ
 
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Аудіо ще немає — <b>читай діалог сам, двічі</b>, у природному темпі. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): Olena — W1 <code>mQq2zdGT1zEfDbh8W95l</code>, Tomek — M3 <code>ihTsqWCgsTDbANOCuZD2</code>. Файл для плеєра LMS: <code>public/audio/pl-a2-60-wspomnienia-e2-dialog.mp3</code> (ще не покладено).
+Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Озвучено 18.11.2026 (ElevenLabs, 52 с): аудіо лежить на <a href="https://app.notion.com/p/41b96e03c7c8812a81f1db5f7bc7b909">сторінці TEACHER у Notion</a>. Плеєр у вікні вправи мовчить, поки mp3 немає в репо — тоді вмикай запис із Notion або читай діалог сам, двічі. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): Olena — W1 <code>mQq2zdGT1zEfDbh8W95l</code>, Tomek — M3 <code>ihTsqWCgsTDbANOCuZD2</code>. Файл для плеєра LMS: <code>public/audio/pl-a2-60-wspomnienia-e2-dialog.mp3</code> (ще не покладено).
 
 <aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
 
