@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { EmbedKind } from '@/lib/pages/pages';
 import { useLocale, useT, withLang } from '@/i18n/client';
 
@@ -37,13 +37,36 @@ const LABEL: Record<EmbedKind, string> = {
   other: 'Ćwiczenie',
 };
 
+/** стеля на випадок, якщо вправа колись повідомить абсурдну висоту */
+const MAX_HEIGHT = 6000;
+
 export function EmbedFrame({ src: rawSrc, title, kind }: { src: string; title: string; kind: EmbedKind }) {
   const [loaded, setLoaded] = useState(false);
+  const [auto, setAuto] = useState<number | null>(null);
+  const frame = useRef<HTMLIFrameElement>(null);
   const locale = useLocale();
   const t = useT();
   // вправа живе в iframe: куки туди не доходять, тож мову передаємо параметром
   const src = withLang(rawSrc, locale);
   const h = HEIGHT[kind];
+
+  // вправа сама каже, якої вона висоти (див. HeightReporter) — інакше на телефоні
+  // виходив скрол усередині скролу: вміст під 1700 px у вікні на 715 px
+  useEffect(() => {
+    const onMessage = (e: MessageEvent) => {
+      if (e.origin !== window.location.origin) return;
+      if (e.source !== frame.current?.contentWindow) return;
+      const d = e.data as { type?: string; height?: number };
+      if (d?.type !== 'ww:embed-height' || typeof d.height !== 'number') return;
+      setAuto(Math.min(Math.max(Math.ceil(d.height), 240), MAX_HEIGHT));
+    };
+    window.addEventListener('message', onMessage);
+    return () => window.removeEventListener('message', onMessage);
+  }, []);
+
+  // поки висота не приїхала — тримаємо колишню, щоб сторінка не стрибала
+  const height = auto ? `${auto}px` : `min(${h}px, 88vh)`;
+
   return (
     <figure className="lp-embed" data-kind={kind}>
       <figcaption>
@@ -53,9 +76,10 @@ export function EmbedFrame({ src: rawSrc, title, kind }: { src: string; title: s
           {t('відкрити окремо')} ↗
         </a>
       </figcaption>
-      <div className="lp-embed-frame" style={{ height: `min(${h}px, 88vh)` }}>
+      <div className="lp-embed-frame" style={{ height }}>
         {!loaded && <div className="lp-embed-skel">{t('Завантаження…')}</div>}
         <iframe
+          ref={frame}
           src={src}
           title={title}
           loading="lazy"

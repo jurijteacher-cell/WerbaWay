@@ -47,7 +47,29 @@ const nextConfig = {
       source,
       headers: [{ key: 'X-Robots-Tag', value: 'noindex' }],
     }));
+
+    // базовий захист на всіх сторінках
+    const baseline = {
+      source: '/:path*',
+      headers: [
+        // браузер не вгадує тип файлу всупереч Content-Type
+        { key: 'X-Content-Type-Options', value: 'nosniff' },
+        // на чужі сайти не йде повна адреса сторінки учня
+        { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+        // сайт не користується камерою, мікрофоном і геолокацією — вимикаємо й для вбудованих вправ
+        { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()' },
+        { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
+      ],
+    };
+
     return [
+      baseline,
+      // усе, крім /embed: сторінку не можна засунути в чужий iframe (захист від клікджекінгу
+      // на формі входу). /embed свідомо лишається відкритим — на ньому тримаються вправи в Notion.
+      {
+        source: '/:path((?!embed/).*)',
+        headers: [{ key: 'X-Frame-Options', value: 'SAMEORIGIN' }],
+      },
       ...noindex,
       {
         source: '/embed/:path*',

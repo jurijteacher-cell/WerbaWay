@@ -43,9 +43,15 @@ export function TeacherBell() {
   const [open, setOpen] = useState(false);
   const box = useRef<HTMLDivElement>(null);
 
-  const load = useCallback(async () => {
+  const lastLoad = useRef(0);
+
+  // запит до бази коштує ~0.3 с, а список домашок майже не змінюється:
+  // частіше ніж раз на 60 с не питаємо, і даємо браузеру скористатись кешем
+  const load = useCallback(async (force = false) => {
+    if (!force && Date.now() - lastLoad.current < 60_000) return;
+    lastLoad.current = Date.now();
     try {
-      const r = await fetch('/api/teacher/notifications', { cache: 'no-store' });
+      const r = await fetch('/api/teacher/notifications');
       if (!r.ok) return;
       const j = (await r.json()) as { items?: Item[] };
       setItems(j.items ?? []);
@@ -56,8 +62,9 @@ export function TeacherBell() {
 
   useEffect(() => {
     setSeen(readSeen());
-    load();
-    const t = setInterval(load, 60_000);
+    load(true);
+    const t = setInterval(() => load(true), 180_000);
+    // повернулись на вкладку — оновлюємо, але не частіше ніж раз на хвилину
     const onFocus = () => load();
     window.addEventListener('focus', onFocus);
     return () => {

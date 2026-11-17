@@ -5,6 +5,7 @@ import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { useState } from 'react';
 import { ShareButton } from './ShareButton';
+import { imgProps } from '@/lib/img';
 
 export type CourseCard = { slug: string; title: string; icon?: string; cover?: string; level?: string; number?: number };
 
@@ -21,7 +22,13 @@ function Card({ p, canShare }: { p: CourseCard; canShare?: boolean }) {
       <div className="relative">
         {p.cover ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={p.cover} alt="" loading="lazy" className="h-36 w-full object-cover" />
+          <img
+            {...imgProps(p.cover, { width: 400, height: 144, sizes: '(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw' })}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            className="h-36 w-full object-cover"
+          />
         ) : (
           <div className="h-36 w-full bg-ink-soft" />
         )}

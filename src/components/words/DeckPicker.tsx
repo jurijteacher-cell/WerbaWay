@@ -4,6 +4,7 @@
 import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { useState } from 'react';
+import { imgProps } from '@/lib/img';
 
 export type DeckInfo = {
   slug: string;
@@ -72,7 +73,13 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
             >
               {d.cover && (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img src={d.cover} alt="" className="h-16 w-full object-cover" loading="lazy" />
+                <img
+                  {...imgProps(d.cover, { width: 448, height: 64, sizes: '(min-width: 768px) 448px, 100vw' })}
+                  alt=""
+                  className="h-16 w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
               )}
               <div className="p-4">
                 <div className="mb-1 flex items-center gap-2 ww-label">
