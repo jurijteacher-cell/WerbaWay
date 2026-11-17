@@ -1,0 +1,198 @@
+{
+  "lesson_id": "pl-a2-60-wspomnienia",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: miejscownik w nowych zdaniach",
+  "instruction": "Trzy bloki ćwiczeń. Potem napisz wiadomość o swoim pierwszym domu — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Gdzie?",
+      "instruction": "Wpisz słowa z nawiasu w miejscowniku.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Mój dziadek urodził się w ___. (mała wieś)",
+          "answer": "małej wsi",
+          "grammar_point": "miejscownik-pelny"
+        },
+        {
+          "id": "h1-2",
+          "text": "Spotkamy się przy ___. (stara fontanna)",
+          "answer": "starej fontannie",
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Fontanna → przy fontannie, przymiotnik żeński -ej."
+        },
+        {
+          "id": "h1-3",
+          "text": "Po ___ zawsze jestem głodny. (długi spacer)",
+          "answer": "długim spacerze",
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Spacer → po spacerze (r → rz), długi → długim."
+        },
+        {
+          "id": "h1-4",
+          "text": "Kot śpi na ___. (zielony fotel)",
+          "answer": "zielonym fotelu",
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Fotel kończy się na -l → na fotelu."
+        },
+        {
+          "id": "h1-5",
+          "text": "W ___ otworzyli nową bibliotekę. (nasze miasto)",
+          "answer": "naszym mieście",
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Miasto → w mieście (st → ści)."
+        },
+        {
+          "id": "h1-6",
+          "text": "Mieszkam na ___. (trzecie piętro)",
+          "answer": "trzecim piętrze",
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Piętro → na piętrze (r → rz)."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Miejscownik czy biernik?",
+      "instruction": "Wybierz dobrą formę.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Idę do piekarni po ___.",
+          "answer": "chleb",
+          "options": [
+            "chleb",
+            "chlebie",
+            "chleba"
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Po + biernik = cel (po co idę?): po chleb."
+        },
+        {
+          "id": "h2-2",
+          "text": "Po ___ obejrzymy film.",
+          "answer": "kolacji",
+          "options": [
+            "kolacji",
+            "kolację",
+            "kolacja"
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Po + miejscownik = potem: po kolacji."
+        },
+        {
+          "id": "h2-3",
+          "text": "Przepraszam, zapomniałam o ___ mamy!",
+          "answer": "urodzinach",
+          "options": [
+            "urodzinach",
+            "urodziny",
+            "urodzin"
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Zapomnieć o czym? — miejscownik. Urodziny to liczba mnoga: o urodzinach."
+        },
+        {
+          "id": "h2-4",
+          "text": "Klientka pytała o ___ do Zakopanego.",
+          "answer": "bilet",
+          "options": [
+            "bilet",
+            "bilecie",
+            "biletu"
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Pytać o + biernik: o bilet."
+        },
+        {
+          "id": "h2-5",
+          "text": "Przy kolacji znowu rozmawialiśmy o ___.",
+          "answer": "polityce",
+          "options": [
+            "polityce",
+            "politykę",
+            "polityka"
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Rozmawiać o czym? — miejscownik: o polityce (k → c)."
+        },
+        {
+          "id": "h2-6",
+          "text": "Pamiętaj o ___, kiedy będziesz wychodzić!",
+          "answer": "kluczach",
+          "options": [
+            "kluczach",
+            "klucze",
+            "kluczy"
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Pamiętać o = nie zapomnieć → miejscownik, w liczbie mnogiej -ach."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Kiedy byłam dzieckiem, codziennie poszłam do szkoły pieszo.",
+          "answer": "Kiedy byłam dzieckiem, codziennie chodziłam do szkoły pieszo.",
+          "accept": [
+            "Kiedy byłam dzieckiem, codziennie chodziłam pieszo do szkoły."
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Codziennie = regularnie → chodziłam."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Mój tata pracował w fabryka przez dwadzieścia lat.",
+          "answer": "Mój tata pracował w fabryce przez dwadzieścia lat.",
+          "accept": [
+            "Mój tata przez dwadzieścia lat pracował w fabryce.",
+            "Przez dwadzieścia lat mój tata pracował w fabryce."
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "W + miejscownik: w fabryce (k → c)."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Zanim wyjechaliśmy, długo rozmawialiśmy o przeprowadzkę.",
+          "answer": "Zanim wyjechaliśmy, długo rozmawialiśmy o przeprowadzce.",
+          "accept": [
+            "Zanim wyjechaliśmy, rozmawialiśmy długo o przeprowadzce."
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Rozmawiać o + miejscownik: o przeprowadzce."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Moja przyjaciółka mieszka w Warszawie, ale często myśli o Charków.",
+          "answer": "Moja przyjaciółka mieszka w Warszawie, ale często myśli o Charkowie.",
+          "accept": [
+            "Moja przyjaciółka mieszka w Warszawie, ale myśli często o Charkowie."
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Charków → o Charkowie (ó → o, jak Kraków → w Krakowie)."
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Wczoraj przy śniadanie przeczytałem ciekawy artykuł.",
+          "answer": "Wczoraj przy śniadaniu przeczytałem ciekawy artykuł.",
+          "accept": [
+            "Przy śniadaniu wczoraj przeczytałem ciekawy artykuł.",
+            "Wczoraj przy śniadaniu przeczytałam ciekawy artykuł."
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Przy + miejscownik: przy śniadaniu."
+        }
+      ]
+    }
+  ]
+}

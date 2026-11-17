@@ -1,0 +1,120 @@
+{
+  "lesson_id": "pl-a2-61-powtorka-opowiadam",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: powtórka modułu „Opowiadam”",
+  "instruction": "Dwa bloki ćwiczeń. Potem napisz nową wersję swojego tekstu z modułu — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 18,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz formę",
+      "instruction": "Wpisz słowo z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Zanim ___ do Polski, moja ciocia pracowała w szkole. (przyjechać, ona)",
+          "answer": "przyjechała",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Przeszłość, jedno zdarzenie → dokonany: przyjechała."
+        },
+        {
+          "id": "h1-2",
+          "text": "Po tym, jak ___ obiad, umyjemy naczynia. (zjeść, my)",
+          "answer": "zjemy",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Umyjemy — przyszłość, więc po tym, jak zjemy."
+        },
+        {
+          "id": "h1-3",
+          "text": "Przez całe wakacje codziennie ___ w jeziorze. (pływać, my)",
+          "answer": "pływaliśmy",
+          "accept": [
+            "pływałyśmy"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Codziennie → niedokonany: pływaliśmy."
+        },
+        {
+          "id": "h1-4",
+          "text": "Moi rodzice poznali się na ___ w Poznaniu. (studenckie wesele)",
+          "answer": "studenckim weselu",
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Wesele → na weselu, studenckie → studenckim."
+        },
+        {
+          "id": "h1-5",
+          "text": "W przyszłym miesiącu ___ prawo jazdy. (zrobić, ja)",
+          "answer": "zrobię",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Wynik w przyszłości → zrobię."
+        },
+        {
+          "id": "h1-6",
+          "text": "Wnuczka napisała wypracowanie o ___. (swój dziadek)",
+          "answer": "swoim dziadku",
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Dziadek → o dziadku (po -k → -u)."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Wczoraj cały dzień napisałam pracę magisterską.",
+          "answer": "Wczoraj cały dzień pisałam pracę magisterską.",
+          "accept": [
+            "Cały dzień wczoraj pisałam pracę magisterską."
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Cały dzień = proces → niedokonany: pisałam."
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Kiedy będę mieć urlop, pojadę w Bieszczady i będę odpocząć.",
+          "answer": "Kiedy będę mieć urlop, pojadę w Bieszczady i odpocznę.",
+          "accept": [
+            "Kiedy będę mieć urlop, pojadę w Bieszczady i będę odpoczywać.",
+            "Kiedy będę miała urlop, pojadę w Bieszczady i odpocznę.",
+            "Kiedy będę miał urlop, pojadę w Bieszczady i odpocznę."
+          ],
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Będę + niedokonany (będę odpoczywać) albo sam dokonany: odpocznę."
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Pod czas meczu kibice głośno śpiewali.",
+          "answer": "Podczas meczu kibice głośno śpiewali.",
+          "accept": [
+            "Podczas meczu kibice śpiewali głośno."
+          ],
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Podczas piszemy razem."
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Mój brat mieszka w Wrocławiu od pięciu lat.",
+          "answer": "Mój brat mieszka we Wrocławiu od pięciu lat.",
+          "accept": [
+            "Mój brat od pięciu lat mieszka we Wrocławiu.",
+            "Od pięciu lat mój brat mieszka we Wrocławiu."
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Przed w- + spółgłoska: we Wrocławiu."
+        },
+        {
+          "id": "h2-5",
+          "prompt": "Sąsiadka zapytała o naszym mieszkaniu.",
+          "answer": "Sąsiadka zapytała o nasze mieszkanie.",
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Zapytać o + biernik: o nasze mieszkanie. Rozmawiać o + miejscownik: o naszym mieszkaniu."
+        }
+      ]
+    }
+  ]
+}

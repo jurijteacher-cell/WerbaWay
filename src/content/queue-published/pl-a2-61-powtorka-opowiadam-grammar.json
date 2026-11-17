@@ -1,0 +1,281 @@
+{
+  "lesson_id": "pl-a2-61-powtorka-opowiadam",
+  "exercise_type": "fill-in-blank",
+  "title": "Opowiadam: ćwiczenia mieszane",
+  "instruction": "Cztery bloki. W każdym zdaniu kilka tematów modułu naraz. Na lekcji robimy bloki 1–3, blok 4 — jeśli zostanie czas.",
+  "estimated_minutes": 18,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wybierz formę",
+      "instruction": "Wybierz poprawną formę. Patrz na słowa obok luki: codziennie, jutro, zanim, po…",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Kiedy byłam na studiach, ___ do mamy co wieczór.",
+          "answer": "dzwoniłam",
+          "options": [
+            "dzwoniłam",
+            "zadzwoniłam",
+            "zadzwonię"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Co wieczór = regularnie → niedokonany: dzwoniłam."
+        },
+        {
+          "id": "g1-2",
+          "text": "Nie martw się, jutro na pewno ___ ten raport.",
+          "answer": "skończę",
+          "options": [
+            "skończę",
+            "skończyłam",
+            "kończyłam"
+          ],
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Jutro + wynik → przyszły dokonany: skończę."
+        },
+        {
+          "id": "g1-3",
+          "text": "___ obiadu rozmawialiśmy o pracy.",
+          "answer": "Podczas",
+          "options": [
+            "Podczas",
+            "Kiedy",
+            "Zanim"
+          ],
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Po luce jest rzeczownik (obiadu) → podczas. Kiedy i zanim łączą się z czasownikiem."
+        },
+        {
+          "id": "g1-4",
+          "text": "Spotkamy się w kawiarni przy ___.",
+          "answer": "rynku",
+          "options": [
+            "rynku",
+            "rynek",
+            "rynkiem"
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Przy + miejscownik. Po -k → -u: przy rynku."
+        },
+        {
+          "id": "g1-5",
+          "text": "Zanim ___ z domu, sprawdzę, czy mam bilet.",
+          "answer": "wyjdę",
+          "options": [
+            "wyjdę",
+            "wychodzę",
+            "wyszłam"
+          ],
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Cała sytuacja jest w przyszłości (sprawdzę) → zanim wyjdę."
+        },
+        {
+          "id": "g1-6",
+          "text": "Po tym, jak ___ list, od razu go wysłała.",
+          "answer": "napisała",
+          "options": [
+            "napisała",
+            "pisała",
+            "napisze"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Najpierw skończyła pisać, potem wysłała → dokonany: napisała."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Wpisz formę",
+      "instruction": "Wpisz słowo z nawiasu w dobrej formie. W nawiasie jest podpowiedź: kto i jaki czas.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "W zeszłym tygodniu wreszcie ___ nowe mieszkanie. (znaleźć, my)",
+          "answer": "znaleźliśmy",
+          "accept": [
+            "znalazłyśmy"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Wreszcie = wynik → dokonany: znaleźliśmy (grupa kobiet: znalazłyśmy)."
+        },
+        {
+          "id": "g2-2",
+          "text": "Kiedy ___ do domu, zadzwonię do ciebie. (wrócić, ja)",
+          "answer": "wrócę",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Kiedy + przyszłość: wrócę, nie „wracam”."
+        },
+        {
+          "id": "g2-3",
+          "text": "Kiedy mieszkała na wsi, codziennie rano ___ mleko od sąsiadki. (pić, ona)",
+          "answer": "piła",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Codziennie → niedokonany: piła."
+        },
+        {
+          "id": "g2-4",
+          "text": "Przepraszam, ___ o twoich urodzinach! (zapomnieć, ja, kobieta)",
+          "answer": "zapomniałam",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Zapomnieć → zapomniałam (e → a)."
+        },
+        {
+          "id": "g2-5",
+          "text": "Podczas ___ dzieci były bardzo spokojne. (lekcja)",
+          "answer": "lekcji",
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Podczas + dopełniacz: podczas lekcji."
+        },
+        {
+          "id": "g2-6",
+          "text": "Mama długo opowiadała o ___. (swoja podróż)",
+          "answer": "swojej podróży",
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Opowiadać o + miejscownik: o swojej podróży."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g3-1",
+          "prompt": "Jutro będę zrobić zakupy po pracy.",
+          "answer": "Jutro zrobię zakupy po pracy.",
+          "accept": [
+            "Jutro po pracy zrobię zakupy.",
+            "Jutro będę robić zakupy po pracy.",
+            "Jutro będę robiła zakupy po pracy.",
+            "Jutro będę robił zakupy po pracy."
+          ],
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Będę + tylko niedokonany (będę robić). Wynik → zrobię."
+        },
+        {
+          "id": "g3-2",
+          "prompt": "Kiedy przyjeżdżam w sobotę, pójdziemy do kina.",
+          "answer": "Kiedy przyjadę w sobotę, pójdziemy do kina.",
+          "accept": [
+            "Kiedy w sobotę przyjadę, pójdziemy do kina.",
+            "Pójdziemy do kina, kiedy przyjadę w sobotę.",
+            "Pójdziemy do kina, kiedy w sobotę przyjadę."
+          ],
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Kiedy + przyszłość dokonana: kiedy przyjadę."
+        },
+        {
+          "id": "g3-3",
+          "prompt": "Wczoraj wieczorem długo myślałam o ciebie.",
+          "answer": "Wczoraj wieczorem długo myślałam o tobie.",
+          "accept": [
+            "Wczoraj wieczorem myślałam długo o tobie."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Myśleć o + miejscownik: o tobie."
+        },
+        {
+          "id": "g3-4",
+          "prompt": "Zawsze w piątki zjadłam pizzę z koleżankami.",
+          "answer": "Zawsze w piątki jadłam pizzę z koleżankami.",
+          "accept": [
+            "W piątki zawsze jadłam pizzę z koleżankami."
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Zawsze w piątki = regularnie → niedokonany: jadłam."
+        },
+        {
+          "id": "g3-5",
+          "prompt": "Po lekcja poszliśmy na spacer.",
+          "answer": "Po lekcji poszliśmy na spacer.",
+          "accept": [
+            "Po lekcjach poszliśmy na spacer."
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Po + miejscownik: po lekcji (albo po lekcjach)."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "4. Ułóż zdanie",
+      "instruction": "Ułóż zdanie z kafelków.",
+      "items": [
+        {
+          "id": "g4-1",
+          "words": [
+            "po",
+            "koncercie",
+            "poszliśmy",
+            "na",
+            "kolację"
+          ],
+          "answer": "Po koncercie poszliśmy na kolację.",
+          "accept": [
+            "Poszliśmy na kolację po koncercie."
+          ],
+          "grammar_point": "miejscownik-pelny"
+        },
+        {
+          "id": "g4-2",
+          "words": [
+            "jutro",
+            "wreszcie",
+            "oddam",
+            "ci",
+            "tę",
+            "książkę"
+          ],
+          "answer": "Jutro wreszcie oddam ci tę książkę.",
+          "accept": [
+            "Jutro oddam ci wreszcie tę książkę.",
+            "Wreszcie jutro oddam ci tę książkę.",
+            "Jutro wreszcie ci oddam tę książkę."
+          ],
+          "grammar_point": "czas-przyszly-dk"
+        },
+        {
+          "id": "g4-3",
+          "words": [
+            "dziadek",
+            "codziennie",
+            "opowiadał",
+            "nam",
+            "o",
+            "wojsku"
+          ],
+          "answer": "Dziadek codziennie opowiadał nam o wojsku.",
+          "accept": [
+            "Codziennie dziadek opowiadał nam o wojsku.",
+            "Dziadek opowiadał nam codziennie o wojsku."
+          ],
+          "grammar_point": "aspekt-przeszly"
+        },
+        {
+          "id": "g4-4",
+          "words": [
+            "podczas",
+            "podróży",
+            "czytałam",
+            "kryminał"
+          ],
+          "answer": "Podczas podróży czytałam kryminał.",
+          "accept": [
+            "Czytałam kryminał podczas podróży."
+          ],
+          "grammar_point": "zdania-czasowe"
+        }
+      ]
+    }
+  ]
+}

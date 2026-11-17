@@ -2486,6 +2486,84 @@
       "status": "published",
       "published_by": "claude",
       "notes": "CURRICULUM_A2 n=59; zdania-czasowe. JSON вправ відновлено 14.11.2026 за сторінками Notion (оригінальні коміти не потрапили в main). Аудіо e2 — лише на TEACHER у Notion, mp3 у репо ще немає."
+    },
+    {
+      "lesson_id": "pl-a2-60-wspomnienia",
+      "module": "pl-a2",
+      "course_order": 60,
+      "level": "A2",
+      "title": "Wspomnienia",
+      "published_at": "2026-11-18T12:00:00Z",
+      "template": "light-60 A2",
+      "embeds": {
+        "vocab": "https://werba-way.vercel.app/embed/pl-a2-60-wspomnienia/vocab",
+        "grammar": "https://werba-way.vercel.app/embed/pl-a2-60-wspomnienia/grammar",
+        "comm_tasks": "https://werba-way.vercel.app/embed/pl-a2-60-wspomnienia/comm-tasks",
+        "hw": "https://werba-way.vercel.app/embed/pl-a2-60-wspomnienia/hw",
+        "exam": "https://werba-way.vercel.app/embed/pl-a2-60-wspomnienia/exam"
+      },
+      "audio": [
+        "/audio/pl-a2-60-wspomnienia-e2-dialog.mp3"
+      ],
+      "images": {
+        "cover": "https://images.unsplash.com/photo-1528569937393-ee892b976859?w=1600&h=900&fit=crop&q=80&fm=jpg",
+        "cover_credit": "Laura Fuhrman / Unsplash"
+      },
+      "status": "published",
+      "published_by": "claude",
+      "notes": "CURRICULUM_A2 n=60; miejscownik-pelny (♻️ граматика pl-preg-05). Аудіо e2 ще немає — викладач читає діалог."
+    },
+    {
+      "lesson_id": "pl-a2-61-powtorka-opowiadam",
+      "module": "pl-a2",
+      "course_order": 61,
+      "level": "A2",
+      "title": "Powtórka: opowiadam",
+      "published_at": "2026-11-18T12:00:00Z",
+      "template": "light-60 A2 · review",
+      "embeds": {
+        "vocab": "https://werba-way.vercel.app/embed/pl-a2-61-powtorka-opowiadam/vocab",
+        "grammar": "https://werba-way.vercel.app/embed/pl-a2-61-powtorka-opowiadam/grammar",
+        "comm_tasks": "https://werba-way.vercel.app/embed/pl-a2-61-powtorka-opowiadam/comm-tasks",
+        "hw": "https://werba-way.vercel.app/embed/pl-a2-61-powtorka-opowiadam/hw",
+        "exam": "https://werba-way.vercel.app/embed/pl-a2-61-powtorka-opowiadam/exam"
+      },
+      "audio": [
+        "/audio/pl-a2-61-powtorka-opowiadam-e2-dialog.mp3"
+      ],
+      "images": {
+        "cover": "https://images.unsplash.com/photo-1579017308347-e53e0d2fc5e9?w=1600&h=900&fit=crop&q=80&fm=jpg",
+        "cover_credit": "Marcos Paulo Prado / Unsplash"
+      },
+      "status": "published",
+      "published_by": "claude",
+      "notes": "CURRICULUM_A2 n=61; powtórka M2. Аудіо e2 ще немає."
+    },
+    {
+      "lesson_id": "pl-a2-62-kontrolna-opowiadam",
+      "module": "pl-a2",
+      "course_order": 62,
+      "level": "A2",
+      "title": "Kontrolna: opowiadam",
+      "published_at": "2026-11-18T12:00:00Z",
+      "template": "light-60 A2 · checkpoint",
+      "embeds": {
+        "vocab": "https://werba-way.vercel.app/embed/pl-a2-62-kontrolna-opowiadam/vocab",
+        "grammar": "https://werba-way.vercel.app/embed/pl-a2-62-kontrolna-opowiadam/grammar",
+        "comm_tasks": "https://werba-way.vercel.app/embed/pl-a2-62-kontrolna-opowiadam/comm-tasks",
+        "hw": "https://werba-way.vercel.app/embed/pl-a2-62-kontrolna-opowiadam/hw",
+        "exam": "https://werba-way.vercel.app/embed/pl-a2-62-kontrolna-opowiadam/exam"
+      },
+      "audio": [
+        "/audio/pl-a2-62-kontrolna-opowiadam-e2-dialog.mp3"
+      ],
+      "images": {
+        "cover": "https://images.unsplash.com/photo-1653762378248-db45a1285697?w=1600&h=900&fit=crop&q=80&fm=jpg",
+        "cover_credit": "Brooke Cagle / Unsplash"
+      },
+      "status": "published",
+      "published_by": "claude",
+      "notes": "CURRICULUM_A2 n=62; kontrolna M2 (15 завдань). Аудіо e2 ще немає."
     }
   ]
 }

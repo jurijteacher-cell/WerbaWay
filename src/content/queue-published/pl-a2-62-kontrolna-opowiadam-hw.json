@@ -1,0 +1,167 @@
+{
+  "lesson_id": "pl-a2-62-kontrolna-opowiadam",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: typowe błędy modułu „Opowiadam”",
+  "instruction": "Dwa bloki ćwiczeń na typowe błędy. Potem powtórz słowa modułu i napisz e-mail do Kasi — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Typowe błędy: wybierz",
+      "instruction": "Wybierz poprawną formę. Każde zdanie to jeden typowy błąd z modułu.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Przez całe studia ___ w akademiku.",
+          "answer": "mieszkałem",
+          "options": [
+            "mieszkałem",
+            "zamieszkałem",
+            "zamieszkam"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Przez całe studia = proces, długo → niedokonany: mieszkałem."
+        },
+        {
+          "id": "h1-2",
+          "text": "W końcu ___ klucze pod kanapą.",
+          "answer": "znalazłam",
+          "options": [
+            "znalazłam",
+            "szukałam",
+            "znajdowałam"
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "W końcu = wynik → dokonany: znalazłam."
+        },
+        {
+          "id": "h1-3",
+          "text": "Za tydzień ___ wszystkie dokumenty.",
+          "answer": "wyślę",
+          "options": [
+            "wyślę",
+            "będę wysłać",
+            "wysłałam"
+          ],
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Wynik w przyszłości → wyślę. „Będę” łączy się tylko z niedokonanym."
+        },
+        {
+          "id": "h1-4",
+          "text": "Gdy ___ do domu, napiszę do ciebie.",
+          "answer": "wrócę",
+          "options": [
+            "wrócę",
+            "wracam",
+            "wróciłam"
+          ],
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Gdy + przyszłość: wrócę, nie „wracam”."
+        },
+        {
+          "id": "h1-5",
+          "text": "___ spaceru zaczął padać śnieg.",
+          "answer": "Podczas",
+          "options": [
+            "Podczas",
+            "Zanim",
+            "Kiedy"
+          ],
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Po luce jest rzeczownik (spaceru) → podczas."
+        },
+        {
+          "id": "h1-6",
+          "text": "Nasi goście długo rozmawiali o ___.",
+          "answer": "pogodzie",
+          "options": [
+            "pogodzie",
+            "pogodę",
+            "pogoda"
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Rozmawiać o + miejscownik: o pogodzie (d → dzi)."
+        },
+        {
+          "id": "h1-7",
+          "text": "Moja kuzynka studiuje we ___.",
+          "answer": "Wrocławiu",
+          "options": [
+            "Wrocławiu",
+            "Wrocław",
+            "Wrocławie"
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Wrocław → we Wrocławiu (po -w → -iu)."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Co niedzielę zrobiliśmy z tatą naleśniki.",
+          "answer": "Co niedzielę robiliśmy z tatą naleśniki.",
+          "accept": [
+            "Co niedzielę robiłyśmy z tatą naleśniki.",
+            "Z tatą co niedzielę robiliśmy naleśniki."
+          ],
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Co niedzielę = regularnie → niedokonany: robiliśmy."
+        },
+        {
+          "id": "h2-2",
+          "prompt": "W przyszłym roku będę zdać egzamin na prawo jazdy.",
+          "answer": "W przyszłym roku zdam egzamin na prawo jazdy.",
+          "accept": [
+            "W przyszłym roku będę zdawać egzamin na prawo jazdy."
+          ],
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Będę + niedokonany (będę zdawać) albo sam dokonany: zdam."
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Po tym, jak skończę pracę, poszłam na basen.",
+          "answer": "Po tym, jak skończyłam pracę, poszłam na basen.",
+          "accept": [
+            "Po tym, jak skończę pracę, pójdę na basen."
+          ],
+          "grammar_point": "zdania-czasowe",
+          "explanation": "Obie części w tym samym czasie: skończyłam → poszłam (albo skończę → pójdę)."
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Mój mąż często myśli o swoja pierwsza praca.",
+          "answer": "Mój mąż często myśli o swojej pierwszej pracy.",
+          "accept": [
+            "Mój mąż myśli często o swojej pierwszej pracy."
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Myśleć o + miejscownik: o swojej pierwszej pracy."
+        },
+        {
+          "id": "h2-5",
+          "prompt": "Czekam na ciebie przy wielkie drzewo.",
+          "answer": "Czekam na ciebie przy wielkim drzewie.",
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Przy + miejscownik: przy wielkim drzewie (w → wi + e)."
+        },
+        {
+          "id": "h2-6",
+          "prompt": "Klient zapytał o nowej ofercie.",
+          "answer": "Klient zapytał o nową ofertę.",
+          "accept": [
+            "Klient pytał o nową ofertę."
+          ],
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Zapytać o + biernik: o nową ofertę. Ale: rozmawiać o nowej ofercie."
+        }
+      ]
+    }
+  ]
+}

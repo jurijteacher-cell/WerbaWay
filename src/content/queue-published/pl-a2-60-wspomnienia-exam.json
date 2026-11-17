@@ -1,0 +1,128 @@
+{
+  "lesson_id": "pl-a2-60-wspomnienia",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o tekście „Stare zdjęcie”. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Olena znalazła zdjęcie, kiedy sprzątała szafę.",
+          "answer": true,
+          "explanation": "W niedzielę Olena sprzątała szafę i nagle znalazła… zdjęcie."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Na zdjęciu Olena siedzi z mamą.",
+          "answer": false,
+          "explanation": "To Olena i jej babcia Wira."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Zdjęcie zrobił dziadek po obiedzie.",
+          "answer": true,
+          "explanation": "Zrobił je dziadek po niedzielnym obiedzie."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Babcia mieszkała w dużym domu w centrum miasta.",
+          "answer": false,
+          "explanation": "W małym domu na cichej ulicy przy parku."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Olena i mama chcą razem upiec sernik.",
+          "answer": true,
+          "explanation": "…upieczemy razem sernik babci."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-60-wspomnienia-e2-dialog.mp3",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: prawda czy fałsz?",
+      "instruction": "Usłyszysz rozmowę Oleny z Tomkiem dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Na zdjęciu Tomek ma dziesięć lat.",
+          "answer": true,
+          "explanation": "To ja, mam tu dziesięć lat."
+        },
+        {
+          "id": "e2-2",
+          "statement": "Dziadkowie Tomka mieszkali na wsi pod Krakowem.",
+          "answer": false,
+          "explanation": "Na wsi pod Nowym Sączem."
+        },
+        {
+          "id": "e2-3",
+          "statement": "Po obiedzie Tomek chodził z kolegami nad rzekę.",
+          "answer": true,
+          "explanation": "…a po obiedzie chodziłem z kolegami nad rzekę."
+        },
+        {
+          "id": "e2-4",
+          "statement": "Babcia Tomka była lekarką.",
+          "answer": false,
+          "explanation": "Była nauczycielką w szkole w Krynicy."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-60-wspomnienia-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: a, b czy c?",
+      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Gdzie zwykle siedziała babcia Tomka?",
+          "options": [
+            "na ławce przed domem",
+            "w kuchni przy oknie",
+            "w ogrodzie pod drzewem"
+          ],
+          "answer": "na ławce przed domem",
+          "explanation": "Babcia siedziała na ławce przed domem i opowiadała o swojej młodości."
+        },
+        {
+          "id": "e3-2",
+          "question": "Co się stało pewnego dnia?",
+          "options": [
+            "Tomek zgubił się w lesie",
+            "Tomek zgubił kompas dziadka",
+            "Tomek spóźnił się na kolację"
+          ],
+          "answer": "Tomek zgubił się w lesie",
+          "explanation": "Raz zgubiłem się w lesie. Kompas dziadek kupił mu następnego dnia."
+        },
+        {
+          "id": "e3-3",
+          "question": "Co zrobi Olena jutro?",
+          "options": [
+            "pokaże mu swoje zdjęcie z babcią",
+            "zadzwoni do babci",
+            "pojedzie do Lwowa"
+          ],
+          "answer": "pokaże mu swoje zdjęcie z babcią",
+          "explanation": "Mam podobne zdjęcie z babcią… Jutro ci je pokażę."
+        }
+      ]
+    }
+  ]
+}
