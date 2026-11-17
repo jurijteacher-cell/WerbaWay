@@ -4,6 +4,7 @@ import { Marked } from 'marked';
 import { applyMarkdown } from '@/i18n/segment.mjs';
 import { DEFAULT_LOCALE, type Locale } from '@/i18n/config';
 import { applyUkMap } from '@/i18n/explicit';
+import { imgProps } from '@/lib/img';
 
 /**
  * Сторінки-лекції, перенесені з Notion: src/content/pages/<slug>.md
@@ -173,7 +174,10 @@ marked.use({
     },
     image(href: string, _title: string | null, text: string) {
       const alt = (text ?? '').replace(/"/g, '&quot;');
-      return `<img class="lp-img" src="${href}" alt="${alt}" loading="lazy" />`;
+      // колонка тексту лекції — ~760 px; без цього з контенту тягнулись оригінали на 1400–1600 px
+      const p = imgProps(href, { width: 760, sizes: '(min-width: 840px) 760px, 100vw' });
+      const srcSet = p.srcSet ? ` srcset="${p.srcSet}" sizes="${p.sizes}"` : '';
+      return `<img class="lp-img" src="${p.src}" alt="${alt}"${srcSet} loading="lazy" decoding="async" />`;
     },
     link(href: string, _title: string | null | undefined, text: string) {
       const ext = /^https?:\/\//.test(href);

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { gradeLabel, type LectureStats } from '@/lib/lecture-stats';
 import { t } from '@/i18n/server';
+import { imgProps } from '@/lib/img';
 
 type Props = {
   slug: string;
@@ -83,7 +84,13 @@ export function LectureCard({ slug, title, level, icon, cover, stats, completedA
     <article className="overflow-hidden rounded-2xl border border-ink-line bg-ink-raised shadow-[0_1px_0_rgba(28,35,72,.04)]">
       {cover && (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={cover} alt="" className="h-20 w-full object-cover" loading="lazy" />
+        <img
+          {...imgProps(cover, { width: 448, height: 80, sizes: '(min-width: 768px) 448px, 100vw' })}
+          alt=""
+          className="h-20 w-full object-cover"
+          loading="lazy"
+          decoding="async"
+        />
       )}
       <div className="p-4">
         <div className="mb-3 flex items-start gap-3">

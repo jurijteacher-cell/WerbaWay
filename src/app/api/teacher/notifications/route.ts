@@ -17,13 +17,24 @@ export async function GET() {
   if (me?.role !== 'teacher') return NextResponse.json({ error: 'forbidden' }, { status: 403 });
 
   const since = new Date(Date.now() - 30 * 24 * 3600 * 1000).toISOString();
-  const { data, error } = await supabase
-    .from('lesson_progress')
-    .select('student_id, lesson_slug, homework_done_at, profiles(full_name, first_name, last_name)')
-    .not('homework_done_at', 'is', null)
-    .gte('homework_done_at', since)
-    .order('homework_done_at', { ascending: false })
-    .limit(30);
+  // домашки й баг-репорти не залежать одне від одного — беремо одним заходом,
+  // інакше два послідовні рейси до бази складаються в ~300 мс на кожне відкриття сторінки
+  const [{ data, error }, { data: bugs }] = await Promise.all([
+    supabase
+      .from('lesson_progress')
+      .select('student_id, lesson_slug, homework_done_at, profiles(full_name, first_name, last_name)')
+      .not('homework_done_at', 'is', null)
+      .gte('homework_done_at', since)
+      .order('homework_done_at', { ascending: false })
+      .limit(30),
+    supabase
+      .from('bug_reports')
+      .select('id, created_at, message, lesson_slug, page_url, reporter_id, resolved_at, profiles:reporter_id(full_name, first_name, last_name)')
+      .is('resolved_at', null)
+      .gte('created_at', since)
+      .order('created_at', { ascending: false })
+      .limit(20),
+  ]);
   if (error) return NextResponse.json({ error: error.message }, { status: 400 });
 
   type Row = {
@@ -32,14 +43,6 @@ export async function GET() {
     homework_done_at: string;
     profiles: { full_name: string | null; first_name: string | null; last_name: string | null } | null;
   };
-  const { data: bugs } = await supabase
-    .from('bug_reports')
-    .select('id, created_at, message, lesson_slug, page_url, reporter_id, resolved_at, profiles:reporter_id(full_name, first_name, last_name)')
-    .is('resolved_at', null)
-    .gte('created_at', since)
-    .order('created_at', { ascending: false })
-    .limit(20);
-
   const items = ((data ?? []) as unknown as Row[]).map((r) => {
     const p = r.profiles;
     const name =
@@ -78,5 +81,10 @@ export async function GET() {
   });
 
   const all = [...items, ...bugItems].sort((a, b) => (a.at < b.at ? 1 : -1));
-  return NextResponse.json({ items: all });
+  return NextResponse.json(
+    { items: all },
+    // список здаваних домашок не змінюється щосекунди: 30 с у кеші браузера знімають
+    // повторні запити при переходах між сторінками й поверненні на вкладку
+    { headers: { 'Cache-Control': 'private, max-age=30' } }
+  );
 }

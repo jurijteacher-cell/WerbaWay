@@ -5,6 +5,7 @@ import { NotebookShell } from '@/components/exercises/NotebookShell';
 import { AccountBar } from '@/components/exercises/AccountBar';
 import { FocusKeeper } from '@/components/exercises/FocusKeeper';
 import { StyleFlag } from '@/components/exercises/StyleFlag';
+import { HeightReporter } from '@/components/exercises/HeightReporter';
 import '@/components/exercises/notebook.css';
 import '@/components/exercises/notebook-paper.css';
 
@@ -38,6 +39,7 @@ export default function EmbedLayout({ children }: { children: ReactNode }) {
           {children}
           <FocusKeeper />
           <StyleFlag />
+          <HeightReporter />
         </NotebookShell>
       </I18nProvider>
     </div>

@@ -7,6 +7,7 @@ import { PageList } from './PageList';
 import { ShareButton } from './ShareButton';
 import './lesson.css';
 import { t } from '@/i18n/server';
+import { imgProps } from '@/lib/img';
 
 type Props = {
   page: ParsedPage;
@@ -129,7 +130,13 @@ function LessonHero({ meta, children }: { meta: ParsedPage['meta']; children: Re
       <div className="lp-cover-wrap">
         {meta.cover ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={meta.cover} alt="" className="lp-cover" />
+          <img
+            {...imgProps(meta.cover, { width: 1280, height: 300, sizes: '100vw' })}
+            alt=""
+            className="lp-cover"
+            fetchPriority="high"
+            decoding="async"
+          />
         ) : (
           <div className="lp-cover lp-cover-empty" />
         )}
