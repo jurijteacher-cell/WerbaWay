@@ -70,7 +70,7 @@
 - `03_examples/b1-14-w-urzedzie/` — повна лекція B1 (180 хв, 2 частини граматики, e1 + e2 з аудіо, 40 слів, Źródła). **Найсвіжіший і найповніший зразок B1.**
 - `03_examples/en-a1-01-czas-terazniejszy/` — **EN-формат** (для англомовних учнів): переклади сірим, тогл «🇬🇧 Translation», paste-blocks на TEACHER.
 - `03_examples/a2-52-poznaje-zespol/` — JSON уроку A2 (`light-60 A2`, з e2-аудіо).
-- Для A2 найсвіжіші живі зразки — уроки 53–59 у Notion (id у розділі 8): звичайний урок (53, 56–59), `powtórka` (54), `kontrolna` (55); з аудіо на TEACHER — 53–56; з розділом Źródła — 59. JSON — у репо (`src/content/queue-published/pl-a2-5[3-9]-*`).
+- Для A2 найсвіжіші живі зразки — уроки 53–59 у Notion (id у розділі 8): звичайний урок (53, 56–59), `powtórka` (54), `kontrolna` (55); з аудіо на TEACHER — 53–62; з розділом Źródła — 59. JSON — у репо (`src/content/queue-published/pl-a2-5[3-9]-*`).
 - `03_examples/mock-exam-telc/` — повний пробний іспит telc із транскриптами слухання (еталон сценаріїв аудіо B1·B2).
 - Граматичні лекції `grammar-60` (модуль `pl-gram-ru`): найсвіжіший зразок — `pl-gram-rekcja` (Notion, id у розділі 8; сайт — `src/content/pages/pl-gram-rekcja.md`).
 
@@ -231,14 +231,14 @@ Embed-адреси завжди за шаблоном `https://werba-way.vercel.
 | 54 | `pl-a2-54-powtorka-praca` | `41696e03c7c8818cbeb0eae83f009625` | `41696e03c7c881b09d03f76aaec74ff0` | ✅ 55 с | ✅ 14.11 (відновлено) |
 | 55 | `pl-a2-55-kontrolna-praca` | `41696e03c7c881aaa892dd28c0f47f8a` | `41696e03c7c881a3bc0cddce32411fef` | ✅ 43 с | ✅ 14.11 (відновлено) |
 | 56 | `pl-a2-56-co-sie-stalo` | `41696e03c7c881b1bb8cd727ddcfc35a` | `41696e03c7c881e9bb7ee227318da342` | ✅ 50 с | ✅ 14.11 (відновлено) |
-| 57 | `pl-a2-57-robilam-czy-zrobilam` | `41796e03c7c8812ea111d6f87d63aa9c` | `41796e03c7c8819ea470e61c67c31016` | ⏳ 617 симв. (Olena + Tomek) | ✅ 14.11 (відновлено) |
-| 58 | `pl-a2-58-jutro-to-zrobie` | `41796e03c7c881efadb9f556f43d04b1` | `41796e03c7c8811cb065e89e1887990a` | ⏳ 612 симв. (pan Piotr + Olena) | ✅ 14.11 (відновлено) |
-| 59 | `pl-a2-59-kiedy-zanim-po-tym-jak` | `41796e03c7c88125ba91c91c6198b8ad` | `41796e03c7c881bb8e5bfec0588411c7` | ⏳ 636 симв. (Tomek + Olena) | ✅ 14.11 (відновлено) |
+| 57 | `pl-a2-57-robilam-czy-zrobilam` | `41796e03c7c8812ea111d6f87d63aa9c` | `41796e03c7c8819ea470e61c67c31016` | ✅ 49 с (18.11) | ✅ 14.11 (відновлено) |
+| 58 | `pl-a2-58-jutro-to-zrobie` | `41796e03c7c881efadb9f556f43d04b1` | `41796e03c7c8811cb065e89e1887990a` | ✅ 47 с (18.11) | ✅ 14.11 (відновлено) |
+| 59 | `pl-a2-59-kiedy-zanim-po-tym-jak` | `41796e03c7c88125ba91c91c6198b8ad` | `41796e03c7c881bb8e5bfec0588411c7` | ✅ 50 с (18.11) | ✅ 14.11 (відновлено) |
 | 60 | `pl-a2-60-wspomnienia` | `41b96e03c7c88123b0f3e5e117dc88b1` | `41b96e03c7c8812a81f1db5f7bc7b909` | ✅ 52 с (18.11) | ✅ 18.11 (`ea2537b`), сторінки сайту й переклади — у тому ж пуші |
 | 61 | `pl-a2-61-powtorka-opowiadam` | `41b96e03c7c881a49755c5af05b959e5` | `41b96e03c7c8817c97f1df5fb382ef47` | ✅ ≈45 с (18.11) | ✅ 18.11 |
 | 62 | `pl-a2-62-kontrolna-opowiadam` | `41b96e03c7c8810ea41dc1ff88e6c7f6` | `41b96e03c7c881c5931dc3e9837edfc2` | ✅ ≈46 с (18.11) | ✅ 18.11 |
 
-Сторінки TEACHER 53–56 мають аудіо-блоки `notion-file-block://…` — **правити тільки точково (`update_content`), не `replace_content`**, інакше аудіо зникне. На TEACHER 57–59 стоїть рядок «Поки аудіо немає — читай діалог сам, двічі.» — його замінювати при озвученні (як у 54–56). Озвучення 57–59 ≈ 1 865 кредитів — **ще не погоджено** (питати лише, коли Юра замовить озвучення).
+Сторінки TEACHER 53–62 мають аудіо-блоки `notion-file-block://…` — **правити тільки точково (`update_content`), не `replace_content`**, інакше аудіо зникне. Озвучено всі діалоги A2 53–62 (57–59 — 18.11). Для нових уроків рядок «Поки аудіо немає — читай діалог сам, двічі.» замінювати при озвученні так само.
 
 Відновлені 14.11 JSON 54–59: ті самі `lesson_id` і `block_id`, що в embed на сторінках; ключі e1–e3 і тест 55 — з TEACHER; решта пунктів (g, h, картки, comm-tasks) написана наново за темою кожного блоку. Пунктів g/h на TEACHER немає — якщо Юра колись знайде старі, **не накладати їх поверх**: з 14.11 на нових `item_id` можуть бути спроби учнів.
 
@@ -255,6 +255,7 @@ Embed-адреси завжди за шаблоном `https://werba-way.vercel.
 - Маршрут A (ElevenLabs → `notion-create-attachment(source_url=full_res_url)` → `<audio>` на сторінці) працює; діалог склеюється вузлом `composition` **з однією доріжкою** і `gap_before` 0,45 с (за замовчуванням composition накладає репліки!).
 - Каст голосів (`eleven_v4`): Olena W1 `mQq2zdGT1zEfDbh8W95l` · pani Agnieszka W2 `gHGjEjdr2LBds0XHTsvg` · Taras M1 `p0KQaxqGrT7xcRWSJiHp` · pan Piotr M2 `bwhymd1UcFEihyvPSEoR` · Tomek M3 `ihTsqWCgsTDbANOCuZD2` · NAR `uPeXyAUvljDRLYs8zgwt` · мама (pani Halina) «Seniora Ola» `cnYygtdARUZ1LhB2crKx` · Kasia «Ania» `F4S1QHSHuBfGEaPzx8aN` (обидві додано 18.11).
 - Ціни: озвучення ≈ 1 кредит/символ; composition — 0; **`creative_transcribe_audio` списав 285 за 52 с при оцінці 17** — транскрибувати лише вибірково й закладати в бюджет.
+- Витрачено 18.11 (2): 1 865 кредитів (діалоги A2 57–59, 30 реплік по 1 дублю). Flows: 57 `pVLlDmMW7Ym2OQO1FrK1`, 58 `GzodPf7DexDleRSyPTNp`, 59 `YqWVldzq53zMCQSz4zZL`. Одна репліка впала в ліміт паралельності — ElevenLabs сам повторив, без доплати.
 - Витрачено 18.11: 1 810 кредитів (діалоги A2 60–62, 33 репліки по 1 дублю; composition — 0; транскрипцію не запускали). Composition тепер вимагає в кожному кліпі поле `"modality": "audio"`. Flows: 60 `IdYcCxnBmaUrwiGnJRUp`, 61 `ulzPxl6SxG6KTqUHaZDx`, 62 `XHBiNHhacZDzyPDcOhzU`.
 - Витрачено 13.11: ≈ 2 857 кредитів (тест 102 + 53–56 2 470 + транскрипція 285).
 - Маршрут B (mp3 у `public/audio/` для плеєра LMS) — не зроблено, чекає ключа ElevenLabs у скрипті. У `exam.json` 53–59 `audio_url` уже вказує на `/audio/{lesson_id}-e2-dialog.mp3` — файл треба лише покласти.
