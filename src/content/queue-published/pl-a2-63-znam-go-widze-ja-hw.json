@@ -1,0 +1,199 @@
+{
+  "lesson_id": "pl-a2-63-znam-go-widze-ja",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: kogo znam, kogo widzę",
+  "instruction": "Trzy bloki ćwiczeń. Potem napisz wiadomość o swojej rodzinie — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Kogo? Co?",
+      "instruction": "Wpisz słowa z nawiasu w bierniku.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Na dworcu czekam na ___. (mój tata)",
+          "answer": "mojego tatę",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Tata ma -ę jak mama, ale to mężczyzna → mojego tatę."
+        },
+        {
+          "id": "h1-2",
+          "text": "Znasz ___? (ten wysoki chłopak)",
+          "answer": "tego wysokiego chłopaka",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Chłopak to osoba → tego wysokiego chłopaka."
+        },
+        {
+          "id": "h1-3",
+          "text": "W niedzielę odwiedzamy ___. (nasza babcia)",
+          "answer": "naszą babcię",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Rodzaj żeński → naszą babcię."
+        },
+        {
+          "id": "h1-4",
+          "text": "Kasia ma ___. (czarny kot)",
+          "answer": "czarnego kota",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Kot to zwierzę → czarnego kota."
+        },
+        {
+          "id": "h1-5",
+          "text": "Olena zaprosiła na kolację ___. (nowy kolega)",
+          "answer": "nowego kolegę",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Kolega: rzeczownik -ę, przymiotnik -ego: nowego kolegę."
+        },
+        {
+          "id": "h1-6",
+          "text": "Chcemy kupić do kuchni ___. (duży stół)",
+          "answer": "duży stół",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "Stół to rzecz → bez zmiany: duży stół."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Osoba czy rzecz?",
+      "instruction": "Wybierz dobrą formę.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Szukam ___ przewodnika po Krakowie.",
+          "answer": "dobrego",
+          "options": [
+            "dobrego",
+            "dobry",
+            "dobrym"
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Przewodnik to osoba → dobrego przewodnika."
+        },
+        {
+          "id": "h2-2",
+          "text": "Mama ma nowy ___.",
+          "answer": "telefon",
+          "options": [
+            "telefon",
+            "telefonu",
+            "telefonie"
+          ],
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "Telefon to rzecz → biernik = mianownik."
+        },
+        {
+          "id": "h2-3",
+          "text": "Na urodziny zaprosiłam ___ i jego żonę.",
+          "answer": "Pawła",
+          "options": [
+            "Pawła",
+            "Paweł",
+            "Pawłem"
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Paweł → Pawła: -e- znika."
+        },
+        {
+          "id": "h2-4",
+          "text": "Na tym zdjęciu widać ___.",
+          "answer": "mojego dziadka",
+          "options": [
+            "mojego dziadka",
+            "mój dziadek",
+            "moim dziadkiem"
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Widać kogo? — mojego dziadka."
+        },
+        {
+          "id": "h2-5",
+          "text": "Czy zna Pani ___ Zielińskiego?",
+          "answer": "pana",
+          "options": [
+            "pana",
+            "pan",
+            "panem"
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Znać kogo? — pana Zielińskiego."
+        },
+        {
+          "id": "h2-6",
+          "text": "Masz w pracy dwie nowe koleżanki. Lubisz ___?",
+          "answer": "je",
+          "options": [
+            "je",
+            "ich",
+            "nich"
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Koleżanki to same kobiety → je. Ich — grupa z mężczyzną."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Odebrałam syn ze szkoły o trzeciej.",
+          "answer": "Odebrałam syna ze szkoły o trzeciej.",
+          "accept": [
+            "O trzeciej odebrałam syna ze szkoły.",
+            "Odebrałem syna ze szkoły o trzeciej."
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Syn to osoba → syna."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Wczoraj poznałam nowy sąsiad.",
+          "answer": "Wczoraj poznałam nowego sąsiada.",
+          "accept": [
+            "Poznałam wczoraj nowego sąsiada.",
+            "Wczoraj poznałem nowego sąsiada."
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Sąsiad to osoba → nowego sąsiada."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Masz kot albo pies?",
+          "answer": "Masz kota albo psa?",
+          "accept": [
+            "Masz psa albo kota?"
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Zwierzęta też mają -a: kota, psa."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Kasia jest miła, bardzo lubię jej.",
+          "answer": "Kasia jest miła, bardzo ją lubię.",
+          "accept": [
+            "Kasia jest miła, bardzo lubię ją."
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Lubić kogo? — biernik: ją. Jej to dopełniacz albo celownik."
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Mamo, poznaj mój przyjaciel Marek.",
+          "answer": "Mamo, poznaj mojego przyjaciela Marka.",
+          "accept": [
+            "Mamo, poznaj Marka, mojego przyjaciela."
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Poznać kogo? — mojego przyjaciela Marka: wszystkie trzy słowa zmieniają formę."
+        }
+      ]
+    }
+  ]
+}

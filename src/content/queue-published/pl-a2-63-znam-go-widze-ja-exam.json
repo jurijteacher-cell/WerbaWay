@@ -1,0 +1,128 @@
+{
+  "lesson_id": "pl-a2-63-znam-go-widze-ja",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o tekście „Mama poznaje zespół”. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Pani Halina przyjechała do Krakowa pociągiem.",
+          "answer": false,
+          "explanation": "Olena odebrała mamę z dworca autobusowego."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Mama wcześniej widziała pana Piotra na zdjęciu.",
+          "answer": true,
+          "explanation": "…widziała go na zdjęciu z wycieczki."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Pan Piotr ma małą córkę.",
+          "answer": false,
+          "explanation": "Pan Piotr ma małego syna."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Brat pani Haliny mieszka w Gdańsku.",
+          "answer": true,
+          "explanation": "…rzadko go widzi, bo mieszka w Gdańsku."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Mama nie lubi pana Piotra.",
+          "answer": false,
+          "explanation": "Lubi go, ale trochę się go boi."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-63-znam-go-widze-ja-e2-dialog.mp3",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: prawda czy fałsz?",
+      "instruction": "Usłyszysz rozmowę Kasi z panią Haliną dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Pani Halina zostanie w Krakowie dwa tygodnie.",
+          "answer": true,
+          "explanation": "Dwa tygodnie. Dłużej nie mogę…"
+        },
+        {
+          "id": "e2-2",
+          "statement": "Mąż pani Haliny przyjechał z nią do Krakowa.",
+          "answer": false,
+          "explanation": "…zostawiłam męża samego z kotem."
+        },
+        {
+          "id": "e2-3",
+          "statement": "Syn pani Haliny ma żonę i małego syna.",
+          "answer": true,
+          "explanation": "Mieszka w Kijowie z żoną i synkiem."
+        },
+        {
+          "id": "e2-4",
+          "statement": "Pani Halina często odwiedza wnuka.",
+          "answer": false,
+          "explanation": "Niestety widzę go tylko przez internet."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-63-znam-go-widze-ja-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: a, b czy c?",
+      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Ile lat ma wnuk pani Haliny?",
+          "options": [
+            "trzy lata",
+            "dwa lata",
+            "pięć lat"
+          ],
+          "answer": "trzy lata",
+          "explanation": "Małego Marka. Ma trzy lata."
+        },
+        {
+          "id": "e3-2",
+          "question": "Z kim mąż pani Haliny został w domu?",
+          "options": [
+            "z kotem",
+            "z psem",
+            "z synem"
+          ],
+          "answer": "z kotem",
+          "explanation": "…zostawiłam męża samego z kotem. Psa ma pan Piotr."
+        },
+        {
+          "id": "e3-3",
+          "question": "Co pokazał pan Piotr w biurze?",
+          "options": [
+            "zdjęcie swojego psa",
+            "zdjęcie swojego syna",
+            "nowe biuro"
+          ],
+          "answer": "zdjęcie swojego psa",
+          "explanation": "…pokazał mi zdjęcie swojego psa i rozmawialiśmy pół godziny."
+        }
+      ]
+    }
+  ]
+}

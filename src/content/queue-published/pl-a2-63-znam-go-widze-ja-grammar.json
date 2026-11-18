@@ -1,0 +1,349 @@
+{
+  "lesson_id": "pl-a2-63-znam-go-widze-ja",
+  "exercise_type": "fill-in-blank",
+  "title": "Biernik osobowy: znam brata, widzę go",
+  "instruction": "Pięć krótkich bloków. Na lekcji robimy bloki 1–3, bloki 4 i 5 — jeśli zostanie czas albo w domu.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "1. Połącz słowo z opisem",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "rodzeństwo",
+          "right": "bracia i siostry",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "wnuczka",
+          "right": "córka mojego dziecka",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "kuzyn",
+          "right": "syn wujka albo cioci",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "odebrać kogoś",
+          "right": "przyjechać po kogoś i razem wrócić",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "polubić",
+          "right": "zacząć kogoś lubić",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "podobno",
+          "right": "tak mówią, ale nie wiem na pewno",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "przedstawić się",
+          "right": "powiedzieć swoje imię nowej osobie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "Czuj się jak u siebie.",
+          "right": "jesteś tu jak w swoim domu",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Kogo? Co?",
+      "instruction": "Wpisz słowo z nawiasu w bierniku. Uważaj: osoba i zwierzę czy rzecz?",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "W sobotę odbieram ___ z lotniska. (brat)",
+          "answer": "brata",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Brat to osoba, rodzaj męski → -a: brata."
+        },
+        {
+          "id": "g2-2",
+          "text": "Znasz ___ z działu IT? (Marek)",
+          "answer": "Marka",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Marek → Marka: -e- znika, jak Tomek → Tomka."
+        },
+        {
+          "id": "g2-3",
+          "text": "Nasza córka bardzo chce mieć ___. (pies)",
+          "answer": "psa",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Zwierzę też ma -a. Pies → psa: -ie- znika."
+        },
+        {
+          "id": "g2-4",
+          "text": "Jutro odwiedzamy ___ w szpitalu. (dziadek)",
+          "answer": "dziadka",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Dziadek → dziadka: -e- znika."
+        },
+        {
+          "id": "g2-5",
+          "text": "Olena kupiła do biura nowy ___. (laptop)",
+          "answer": "laptop",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "Laptop to rzecz. Rzecz męska w bierniku = mianownik: nowy laptop."
+        },
+        {
+          "id": "g2-6",
+          "text": "Na weselu poznałam ___ Kasi. (kuzyn)",
+          "answer": "kuzyna",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Kuzyn to osoba → kuzyna."
+        },
+        {
+          "id": "g2-7",
+          "text": "Zaprosiłam na urodziny ___ z pracy. (kolega)",
+          "answer": "kolegę",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Kolega kończy się na -a, więc odmienia się jak mama: kolegę."
+        },
+        {
+          "id": "g2-8",
+          "text": "Pani Halina zostawiła ___ we Lwowie. (mąż)",
+          "answer": "męża",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Mąż → męża: ą zmienia się w ę."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Przymiotnik i zaimek: -ego",
+      "instruction": "Wybierz dobrą formę.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Mam ___ brata i młodszą siostrę.",
+          "answer": "starszego",
+          "options": [
+            "starszego",
+            "starszy",
+            "starszą"
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Brat to osoba, rodzaj męski → przymiotnik -ego: starszego brata."
+        },
+        {
+          "id": "g3-2",
+          "text": "Znasz już ___ szefa?",
+          "answer": "naszego",
+          "options": [
+            "naszego",
+            "nasz",
+            "naszą"
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Szef to osoba → naszego szefa."
+        },
+        {
+          "id": "g3-3",
+          "text": "Wczoraj kupiłam ___ rower.",
+          "answer": "nowy",
+          "options": [
+            "nowy",
+            "nowego",
+            "nową"
+          ],
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "Rower to rzecz → biernik = mianownik: nowy rower."
+        },
+        {
+          "id": "g3-4",
+          "text": "Na zdjęciu widzę ___ mężczyznę w okularach.",
+          "answer": "wysokiego",
+          "options": [
+            "wysokiego",
+            "wysoki",
+            "wysoką"
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Mężczyzna ma -ę jak mama, ale to osoba męska, więc przymiotnik ma -ego: wysokiego mężczyznę."
+        },
+        {
+          "id": "g3-5",
+          "text": "Bardzo kocham ___ męża.",
+          "answer": "mojego",
+          "options": [
+            "mojego",
+            "mój",
+            "moim"
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Mąż to osoba → mojego męża."
+        },
+        {
+          "id": "g3-6",
+          "text": "Mama bardzo polubiła ___ koleżankę.",
+          "answer": "twoją",
+          "options": [
+            "twoją",
+            "twojego",
+            "twoja"
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Koleżanka — rodzaj żeński → -ą: twoją koleżankę. Tu nic nowego."
+        },
+        {
+          "id": "g3-7",
+          "text": "Przepraszam, kto zna ___ pana?",
+          "answer": "tego",
+          "options": [
+            "tego",
+            "ten",
+            "tę"
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Pan to osoba → tego pana."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Go, jego, niego, ich, je",
+      "instruction": "Wpisz zaimek w bierniku.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Tomek? Tak, znam ___ od roku.",
+          "answer": "go",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "W środku zdania — krótka forma: znam go."
+        },
+        {
+          "id": "g4-2",
+          "text": "Marek się spóźnia. Czekam na ___ już pół godziny.",
+          "answer": "niego",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Po przyimku (na, za, przez) — forma z n-: na niego."
+        },
+        {
+          "id": "g4-3",
+          "text": "— Zaprosiłaś Tomka? — Nie, nie ___, tylko Kasię.",
+          "answer": "jego",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Kiedy porównujemy osoby (nie jego, tylko ją) — długa forma: jego."
+        },
+        {
+          "id": "g4-4",
+          "text": "Kasia? Widzę ___ codziennie w tramwaju.",
+          "answer": "ją",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Ona → ją."
+        },
+        {
+          "id": "g4-5",
+          "text": "Moi rodzice mieszkają we Lwowie. Odwiedzam ___ dwa razy w roku.",
+          "answer": "ich",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Rodzice to grupa z mężczyzną → ich."
+        },
+        {
+          "id": "g4-6",
+          "text": "Dzieci bawią się w ogrodzie. Widzę ___ przez okno.",
+          "answer": "je",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Dzieci, kobiety, zwierzęta i rzeczy w liczbie mnogiej → je. Ich — tylko grupa z mężczyzną."
+        },
+        {
+          "id": "g4-7",
+          "text": "Mama przyjeżdża o siódmej. Idę po ___ na dworzec.",
+          "answer": "nią",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Po przyimku: ją → nią. Iść po kogo = iść, żeby kogoś odebrać."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "5. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Mam brat w Gdańsku.",
+          "answer": "Mam brata w Gdańsku.",
+          "accept": [
+            "W Gdańsku mam brata."
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Mieć kogo? — osoba męska → brata."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Znasz pan Piotr?",
+          "answer": "Znasz pana Piotra?",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Pan Piotr → pana Piotra: oba słowa mają -a."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Mamy w domu mały pies.",
+          "answer": "Mamy w domu małego psa.",
+          "accept": [
+            "W domu mamy małego psa."
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Pies to zwierzę → małego psa."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Bardzo kocham mój mąż.",
+          "answer": "Bardzo kocham mojego męża.",
+          "accept": [
+            "Bardzo kocham swojego męża.",
+            "Kocham bardzo mojego męża."
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Mąż to osoba → mojego męża."
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Znam jego od dawna.",
+          "answer": "Znam go od dawna.",
+          "accept": [
+            "Od dawna go znam."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Укр. «знаю його» — ale po polsku w środku zdania krótka forma: znam go."
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Widzę nowa koleżanka przy recepcji.",
+          "answer": "Widzę nową koleżankę przy recepcji.",
+          "accept": [
+            "Przy recepcji widzę nową koleżankę."
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Rodzaj żeński: nową koleżankę (-ą, -ę)."
+        }
+      ]
+    }
+  ]
+}
