@@ -1,0 +1,110 @@
+{
+  "lesson_id": "pl-b1-group-r2-powtorka",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Czytanie i słuchanie.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Ranking w naszym salonie”. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Do Oleny przyszło sześcioro nastolatków.",
+          "answer": true,
+          "explanation": "Czterech kolegów i dwie koleżanki — sześcioro."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Maksym chciał obejrzeć horror.",
+          "answer": false,
+          "explanation": "Horror chciał Szymon, Maksym — serial kryminalny."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Za pizzę zapłacił tata Maksyma.",
+          "answer": false,
+          "explanation": "Taras chciał dołożyć, ale chłopaki odmówili — zrzucili się sami."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Kacprowi pierogi babci smakowały bardziej niż pizza.",
+          "answer": true,
+          "explanation": "Te pierogi smakują mi bardziej niż pizza."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Szymon chce jechać w Bieszczady, bo tam telefon zawsze ma zasięg.",
+          "answer": false,
+          "explanation": "Chce jechać właśnie tam, gdzie telefon często nie ma zasięgu."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Tarasowi brakuje takich wieczorów, jakie miał, kiedy był młody.",
+          "answer": true,
+          "explanation": "Brakuje mu takich wieczorów z czasów, kiedy sam był nastolatkiem."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "teacher:e2-dialogi",
+      "max_plays": 2,
+      "title": "Słuchanie: cztery krótkie dialogi",
+      "instruction": "Nauczyciel przeczyta cztery krótkie dialogi — tak jak na egzaminie państwowym B1. Każdy usłyszysz dwa razy. Najpierw przeczytaj pytania. Do każdego dialogu wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Dialog 1. Gdzie będzie siedział klient?",
+          "options": [
+            "w dziesiątym rzędzie, w środku",
+            "w pierwszym rzędzie, z boku",
+            "w ostatnim rzędzie, przy wyjściu"
+          ],
+          "answer": "w dziesiątym rzędzie, w środku",
+          "explanation": "Kasjerka proponuje rząd dziesiąty, w środku, i klient się zgadza."
+        },
+        {
+          "id": "e2-2",
+          "question": "Dialog 2. Jakie pierogi babcia ma zrobić następnym razem?",
+          "options": [
+            "więcej ruskich",
+            "więcej z kapustą i grzybami",
+            "tylko z mięsem"
+          ],
+          "answer": "więcej ruskich",
+          "explanation": "Dziewczynom smakowały ruskie i Maksym prosi o więcej ruskich."
+        },
+        {
+          "id": "e2-3",
+          "question": "Dialog 3. Ile kosztuje pokój, który wybiera klientka?",
+          "options": [
+            "dwieście pięćdziesiąt złotych",
+            "dwieście dwadzieścia złotych",
+            "trzysta złotych"
+          ],
+          "answer": "dwieście pięćdziesiąt złotych",
+          "explanation": "Trzyosobowy jest o trzydzieści złotych droższy od dwuosobowego za dwieście dwadzieścia."
+        },
+        {
+          "id": "e2-4",
+          "question": "Dialog 4. Ile osób przyjdzie w sobotę?",
+          "options": [
+            "siedem",
+            "pięć",
+            "dziewięć"
+          ],
+          "answer": "siedem",
+          "explanation": "Pięciu chłopaków i dwie dziewczyny."
+        }
+      ]
+    }
+  ]
+}

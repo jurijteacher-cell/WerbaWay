@@ -1,0 +1,187 @@
+{
+  "lesson_id": "pl-b1-group-r2-powtorka",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: powtórka bloku 2",
+  "instruction": "Trzy bloki ćwiczeń. Potem napisz nową wersję swojego tekstu — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz formę",
+      "instruction": "Wpisz słowa z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Mój nowy laptop jest dużo ___ od starego. (szybki)",
+          "answer": "szybszy",
+          "grammar_point": "stopniowanie",
+          "explanation": "Szybki — szybszy (-k- znika przed -szy)."
+        },
+        {
+          "id": "h1-2",
+          "text": "Pokażę ci kawiarnię, ___ pracuje moja siostra. (w + która)",
+          "answer": "w której",
+          "accept": [
+            "gdzie"
+          ],
+          "grammar_point": "ktory-przypadki",
+          "explanation": "Kawiarnia (ż.), w + miejscownik → w której."
+        },
+        {
+          "id": "h1-3",
+          "text": "Na zebraniu było tylko ___ panów. (4)",
+          "answer": "czterech",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Panowie → forma męskoosobowa: czterech panów."
+        },
+        {
+          "id": "h1-4",
+          "text": "___ nigdy nie chce się wstawać wcześnie. (mój mąż)",
+          "answer": "Mojemu mężowi",
+          "grammar_point": "celownik-osoby",
+          "explanation": "Komu? — mojemu mężowi (mąż → mężowi)."
+        },
+        {
+          "id": "h1-5",
+          "text": "Im ___ jest film, tym szybciej zasypiam. (nudny)",
+          "answer": "nudniejszy",
+          "grammar_point": "porownania",
+          "explanation": "Im + stopień wyższy: nudniejszy."
+        },
+        {
+          "id": "h1-6",
+          "text": "Pod drzwiami czekało ___ dzieci sąsiadów. (5 — liczebnik zbiorowy)",
+          "answer": "pięcioro",
+          "grammar_point": "liczebniki-zbiorowe",
+          "explanation": "Dzieci → pięcioro dzieci."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "To jest najbardziej ładny park w mieście.",
+          "answer": "To jest najładniejszy park w mieście.",
+          "accept": [
+            "To najładniejszy park w mieście."
+          ],
+          "grammar_point": "stopniowanie",
+          "explanation": "Ładny — ładniejszy — najładniejszy, bez „najbardziej”."
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Dziewczyna, który siedzi obok mnie, jest z Gdańska.",
+          "answer": "Dziewczyna, która siedzi obok mnie, jest z Gdańska.",
+          "grammar_point": "ktory-przypadki",
+          "explanation": "Dziewczyna (ż.) → która."
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Mi się nie chce dziś pracować.",
+          "answer": "Nie chce mi się dziś pracować.",
+          "accept": [
+            "Dziś nie chce mi się pracować.",
+            "Mnie się dziś nie chce pracować.",
+            "Mnie się nie chce dziś pracować."
+          ],
+          "grammar_point": "enklityki-zaimki",
+          "explanation": "Krótkie „mi” nie zaczyna zdania. Na początku — „mnie” albo „Nie chce mi się…”."
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Dwa studenci czekają przed salą.",
+          "answer": "Dwaj studenci czekają przed salą.",
+          "accept": [
+            "Dwóch studentów czeka przed salą."
+          ],
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Studenci → dwaj studenci albo dwóch studentów (wtedy: czeka)."
+        },
+        {
+          "id": "h2-5",
+          "prompt": "Pomagam mojego brata w lekcjach.",
+          "answer": "Pomagam mojemu bratu w lekcjach.",
+          "accept": [
+            "Pomagam bratu w lekcjach."
+          ],
+          "grammar_point": "celownik-osoby",
+          "explanation": "Pomagać komu? — celownik: mojemu bratu."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Wybierz formę",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Ten fotel jest ___ wygodny niż kanapa.",
+          "answer": "mniej",
+          "options": [
+            "mniej",
+            "mniejszy",
+            "najmniej"
+          ],
+          "grammar_point": "stopniowanie",
+          "explanation": "Mniej + przymiotnik = słabszy stopień: mniej wygodny niż."
+        },
+        {
+          "id": "h3-2",
+          "text": "Mam dwóch braci, z ___ jeden mieszka w Anglii.",
+          "answer": "których",
+          "options": [
+            "których",
+            "którzy",
+            "którymi"
+          ],
+          "grammar_point": "ktory-przypadki",
+          "explanation": "Z + dopełniacz lm.: z których."
+        },
+        {
+          "id": "h3-3",
+          "text": "Babcia ma ___ wnuków: trzech chłopców i dwie dziewczynki.",
+          "answer": "pięcioro",
+          "options": [
+            "pięcioro",
+            "pięciu",
+            "pięć"
+          ],
+          "grammar_point": "liczebniki-zbiorowe",
+          "explanation": "Wnuki różnej płci → liczebnik zbiorowy: pięcioro wnuków."
+        },
+        {
+          "id": "h3-4",
+          "text": "Dzieciom bardzo ___ się nowe zabawki.",
+          "answer": "podobają",
+          "options": [
+            "podobają",
+            "podoba",
+            "podobało"
+          ],
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Co się podoba? — zabawki (lm.) → podobają się."
+        },
+        {
+          "id": "h3-5",
+          "text": "W listopadzie dni są coraz ___.",
+          "answer": "krótsze",
+          "options": [
+            "krótsze",
+            "krótszy",
+            "najkrótsze"
+          ],
+          "grammar_point": "porownania",
+          "explanation": "Coraz + stopień wyższy; dni (lm.) → krótsze."
+        }
+      ]
+    }
+  ]
+}

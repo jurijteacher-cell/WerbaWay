@@ -1,0 +1,180 @@
+{
+  "lesson_id": "pl-b1-group-r1-powtorka",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: powtórka bloku 1",
+  "instruction": "Trzy bloki ćwiczeń. Potem napisz nową wersję swojego tekstu — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz formę",
+      "instruction": "Wpisz słowa z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Po lekcjach zawsze graliśmy w piłkę na ___. (szkolne boisko)",
+          "answer": "szkolnym boisku",
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Gdzie? — na + miejscownik: na szkolnym boisku."
+        },
+        {
+          "id": "h1-2",
+          "text": "Kiedy byłam mała, nie miałam ___. (własny pokój)",
+          "answer": "własnego pokoju",
+          "grammar_point": "przeczenie-dopelniacz",
+          "explanation": "Nie miałam + dopełniacz: własnego pokoju."
+        },
+        {
+          "id": "h1-3",
+          "text": "W sobotę moi koledzy z pracy ___ na ryby. (pojechać)",
+          "answer": "pojechali",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Koledzy → forma męskoosobowa: pojechali."
+        },
+        {
+          "id": "h1-4",
+          "text": "W autobusie spotkałam ___. (moja dawna wychowawczyni)",
+          "answer": "moją dawną wychowawczynię",
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Spotkać kogo? — biernik: moją dawną wychowawczynię."
+        },
+        {
+          "id": "h1-5",
+          "text": "Brat mieszka w Dublinie i nie widziałam ___ od dziesięciu lat. (on)",
+          "answer": "go",
+          "grammar_point": "zaimki-formy",
+          "explanation": "Bez przyimka i bez akcentu — krótka forma: go."
+        },
+        {
+          "id": "h1-6",
+          "text": "Za dwa tygodnie ___ nocnym pociągiem z Gdańska do Krakowa. (pojechać, my)",
+          "answer": "pojedziemy",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Za dwa tygodnie, jeden raz → pojedziemy."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Moja siostra wyszła za mąż z Polakiem.",
+          "answer": "Moja siostra wyszła za mąż za Polaka.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Wyjść za mąż za kogo? — za + biernik: za Polaka."
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Zapisałam się na lekarza na poniedziałek.",
+          "answer": "Zapisałam się do lekarza na poniedziałek.",
+          "accept": [
+            "Na poniedziałek zapisałam się do lekarza."
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Zapisać się do lekarza (do osoby), na wizytę (na termin)."
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Wszyscy studenci były na wykładzie.",
+          "answer": "Wszyscy studenci byli na wykładzie.",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Studenci → byli."
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Nikt nie zadzwonił do nią.",
+          "answer": "Nikt nie zadzwonił do niej.",
+          "accept": [
+            "Do niej nikt nie zadzwonił."
+          ],
+          "grammar_point": "zaimki-formy",
+          "explanation": "Do + dopełniacz: do niej."
+        },
+        {
+          "id": "h2-5",
+          "prompt": "Codziennie zrobiłam zakupy w sklepie pod blokiem.",
+          "answer": "Codziennie robiłam zakupy w sklepie pod blokiem.",
+          "accept": [
+            "Robiłam codziennie zakupy w sklepie pod blokiem.",
+            "W sklepie pod blokiem codziennie robiłam zakupy."
+          ],
+          "grammar_point": "aspekt-uzycie",
+          "explanation": "Codziennie = wiele razy → niedokonany: robiłam."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Wybierz formę",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Babcia mieszka ___ lasem, w małym drewnianym domu.",
+          "answer": "pod",
+          "options": [
+            "pod",
+            "w",
+            "na"
+          ],
+          "grammar_point": "narzednik-pelny",
+          "explanation": "Gdzie? — pod + narzędnik: pod lasem."
+        },
+        {
+          "id": "h3-2",
+          "text": "W końcu ___ całą książkę po polsku!",
+          "answer": "przeczytałam",
+          "options": [
+            "przeczytałam",
+            "czytałam",
+            "czytam"
+          ],
+          "grammar_point": "aspekt-uzycie",
+          "explanation": "W końcu = wynik → dokonany: przeczytałam."
+        },
+        {
+          "id": "h3-3",
+          "text": "Tramwaj się zepsuł, więc do pracy ___ pieszo.",
+          "answer": "doszłam",
+          "options": [
+            "doszłam",
+            "dojechałam",
+            "wyjechałam"
+          ],
+          "grammar_point": "ruch-przedrostki",
+          "explanation": "Pieszo → iść: doszłam (do- = do celu)."
+        },
+        {
+          "id": "h3-4",
+          "text": "Nikt z moich znajomych ___ tego filmu.",
+          "answer": "nie widział",
+          "options": [
+            "nie widział",
+            "widział",
+            "nie widzieli"
+          ],
+          "grammar_point": "negacja-podwojna",
+          "explanation": "Nikt + nie; nikt = on → nie widział."
+        },
+        {
+          "id": "h3-5",
+          "text": "Pani Monika ma dwóch dorosłych ___.",
+          "answer": "synów",
+          "options": [
+            "synów",
+            "syny",
+            "synowie"
+          ],
+          "grammar_point": "mn-przypadki",
+          "explanation": "Dwóch + dopełniacz liczby mnogiej: synów."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "lesson_id": "pl-b1-group-r3-powtorka",
+  "exercise_type": "fill-in-blank",
+  "title": "Powtórka bloku 3: ćwiczenia mieszane",
+  "instruction": "Pięć bloków. W każdym zdaniu spotykają się tematy z lekcji 13–16.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wybierz formę",
+      "instruction": "Wybierz poprawną formę. Patrz na całe zdanie.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Jeśli jutro będzie padać, ___ w domu.",
+          "answer": "zostaniemy",
+          "options": [
+            "zostaniemy",
+            "zostalibyśmy",
+            "zostawaliśmy"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Jeśli + realna przyszłość → czas przyszły: zostaniemy."
+        },
+        {
+          "id": "g1-2",
+          "text": "Gdybym miała więcej czasu, ___ się na wolontariat.",
+          "answer": "zapisałabym",
+          "options": [
+            "zapisałabym",
+            "zapiszę",
+            "zapisuję"
+          ],
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Gdyby → w drugiej części tryb przypuszczający: zapisałabym."
+        },
+        {
+          "id": "g1-3",
+          "text": "Proszę ___ drzwi, bo pies ucieknie.",
+          "answer": "zamknąć",
+          "options": [
+            "zamknąć",
+            "zamyka",
+            "zamknęła"
+          ],
+          "grammar_point": "rozkazujacy",
+          "explanation": "Proszę + bezokolicznik: proszę zamknąć."
+        },
+        {
+          "id": "g1-4",
+          "text": "Tu jest zakaz: na plac zabaw nie ___ wprowadzać psów.",
+          "answer": "wolno",
+          "options": [
+            "wolno",
+            "musi",
+            "trzeba"
+          ],
+          "grammar_point": "modalne",
+          "explanation": "Zakaz = nie wolno. „Nie trzeba” znaczy tylko, że nie jest to konieczne."
+        },
+        {
+          "id": "g1-5",
+          "text": "Szefowa poprosiła mnie, ___ przyszła jutro wcześniej.",
+          "answer": "żebym",
+          "options": [
+            "żebym",
+            "że",
+            "jeśli"
+          ],
+          "grammar_point": "zeby-zyczenie",
+          "explanation": "Prośba → żeby + forma osobowa: żebym przyszła."
+        },
+        {
+          "id": "g1-6",
+          "text": "Nie ___ telefonów w czasie egzaminu!",
+          "answer": "używajcie",
+          "options": [
+            "używajcie",
+            "użyjcie",
+            "używacie"
+          ],
+          "grammar_point": "rozkazujacy-aspekt",
+          "explanation": "Zakaz w trybie rozkazującym → nie + niedokonany: nie używajcie."
+        },
+        {
+          "id": "g1-7",
+          "text": "Wczoraj nie ___ płacić za parking, bo była niedziela.",
+          "answer": "trzeba było",
+          "options": [
+            "trzeba było",
+            "wolno było",
+            "trzeba będzie"
+          ],
+          "grammar_point": "modalne",
+          "explanation": "Wczoraj → czas przeszły: trzeba było. „Nie wolno było” = był zakaz."
+        },
+        {
+          "id": "g1-8",
+          "text": "Kupiłam większy worek, ___ zapłacić mniej za kilogram.",
+          "answer": "żeby",
+          "options": [
+            "żeby",
+            "bo",
+            "gdyby"
+          ],
+          "grammar_point": "zeby-cel",
+          "explanation": "Cel (po co?) → żeby + bezokolicznik."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Wpisz formę",
+      "instruction": "Wpisz słowa z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "___ mi, proszę, tę torbę z półki. (podać, ty)",
+          "answer": "Podaj",
+          "grammar_point": "rozkazujacy",
+          "explanation": "Podać → podaj (ty)."
+        },
+        {
+          "id": "g2-2",
+          "text": "Gdyby autobus się nie spóźnił, ___ na pociąg. (zdążyć, my)",
+          "answer": "zdążylibyśmy",
+          "accept": [
+            "zdążyłybyśmy"
+          ],
+          "grammar_point": "przypuszczajacy-formy",
+          "explanation": "My (grupa z mężczyzną) → zdążylibyśmy."
+        },
+        {
+          "id": "g2-3",
+          "text": "Przed wyjazdem ___ zrobić kopię paszportu. (powinien, ty — kobieta)",
+          "answer": "powinnaś",
+          "grammar_point": "modalne",
+          "explanation": "Powinien → powinnaś (ty, kobieta)."
+        },
+        {
+          "id": "g2-4",
+          "text": "Nie ___ się martwić, wszystko załatwię sama. (musieć, ty)",
+          "answer": "musisz",
+          "grammar_point": "modalne",
+          "explanation": "Nie musisz = to nie jest konieczne."
+        },
+        {
+          "id": "g2-5",
+          "text": "Mama chce, ___ zadzwonił do niej po egzaminie. (żeby + ja, mężczyzna)",
+          "answer": "żebym",
+          "grammar_point": "zeby-zyczenie",
+          "explanation": "Mama chce, a dzwonię ja → żebym zadzwonił."
+        },
+        {
+          "id": "g2-6",
+          "text": "Jeśli ___ czas w sobotę, pomożesz mi przy przeprowadzce? (mieć, ty)",
+          "answer": "będziesz miał",
+          "accept": [
+            "będziesz miała",
+            "będziesz mieć",
+            "masz"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Jeśli + przyszłość: będziesz miał / miała (potocznie też: masz)."
+        },
+        {
+          "id": "g2-7",
+          "text": "___ dziś na obiad pierogi! (zrobić, my)",
+          "answer": "Zróbmy",
+          "grammar_point": "rozkazujacy",
+          "explanation": "Propozycja dla nas → tryb rozkazujący 1 os. lm.: zróbmy."
+        },
+        {
+          "id": "g2-8",
+          "text": "Lekarz powiedział, ___ muszę więcej spacerować. (że / żeby)",
+          "answer": "że",
+          "grammar_point": "zeby-cel",
+          "explanation": "Lekarz przekazuje informację (muszę) → że. Prośba bez „muszę” → żebym więcej spacerował."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g3-1",
+          "prompt": "Gdybym mam pieniądze, kupiłbym dom.",
+          "answer": "Gdybym miał pieniądze, kupiłbym dom.",
+          "accept": [
+            "Gdybym miał pieniądze, to kupiłbym dom.",
+            "Kupiłbym dom, gdybym miał pieniądze."
+          ],
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Po gdyby — forma na -ł: gdybym miał."
+        },
+        {
+          "id": "g3-2",
+          "prompt": "Nie zrób tego!",
+          "answer": "Nie rób tego!",
+          "grammar_point": "rozkazujacy-aspekt",
+          "explanation": "Zakaz → nie + niedokonany: nie rób."
+        },
+        {
+          "id": "g3-3",
+          "prompt": "Nie umiem przyjść jutro, bo pracuję.",
+          "answer": "Nie mogę przyjść jutro, bo pracuję.",
+          "accept": [
+            "Jutro nie mogę przyjść, bo pracuję.",
+            "Nie mogę jutro przyjść, bo pracuję."
+          ],
+          "grammar_point": "modalne",
+          "explanation": "Umieć = mieć umiejętność. Brak czasu, okoliczności → móc: nie mogę."
+        },
+        {
+          "id": "g3-4",
+          "prompt": "Poprosiłam go, że kupił chleb.",
+          "answer": "Poprosiłam go, żeby kupił chleb.",
+          "accept": [
+            "Poprosiłam go, żeby kupił chleba."
+          ],
+          "grammar_point": "zeby-zyczenie",
+          "explanation": "Prosić → żeby."
+        },
+        {
+          "id": "g3-5",
+          "prompt": "Jeśli bym wygrał w lotto, pojechałbym do Australii.",
+          "answer": "Gdybym wygrał w lotto, pojechałbym do Australii.",
+          "accept": [
+            "Jeśli wygram w lotto, pojadę do Australii.",
+            "Gdybym wygrał w lotka, pojechałbym do Australii."
+          ],
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Mało realne → gdybym + -ł. Realne → jeśli wygram, pojadę."
+        },
+        {
+          "id": "g3-6",
+          "prompt": "Trzeba jest wypełnić ten wniosek.",
+          "answer": "Trzeba wypełnić ten wniosek.",
+          "accept": [
+            "Ten wniosek trzeba wypełnić."
+          ],
+          "grammar_point": "modalne",
+          "explanation": "Trzeba stoi samo, bez „jest”: trzeba wypełnić."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "4. Ułóż zdanie",
+      "instruction": "Ułóż zdanie z kafelków.",
+      "items": [
+        {
+          "id": "g4-1",
+          "words": [
+            "żeby",
+            "chcę,",
+            "pojechał",
+            "tata",
+            "z nami"
+          ],
+          "answer": "Chcę, żeby tata pojechał z nami.",
+          "accept": [
+            "Chcę, żeby tata z nami pojechał."
+          ],
+          "grammar_point": "zeby-zyczenie",
+          "explanation": "Chcę, a jedzie tata → żeby + forma na -ł."
+        },
+        {
+          "id": "g4-2",
+          "words": [
+            "niemiecki,",
+            "gdybym",
+            "w Berlinie",
+            "znała",
+            "pracowałabym"
+          ],
+          "answer": "Gdybym znała niemiecki, pracowałabym w Berlinie.",
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Gdybym + -ła, pracowałabym (końcówka -łabym)."
+        },
+        {
+          "id": "g4-3",
+          "words": [
+            "palić",
+            "w parku",
+            "nie wolno"
+          ],
+          "answer": "W parku nie wolno palić.",
+          "accept": [
+            "Nie wolno palić w parku.",
+            "Palić w parku nie wolno."
+          ],
+          "grammar_point": "modalne",
+          "explanation": "Nie wolno + bezokolicznik = zakaz."
+        },
+        {
+          "id": "g4-4",
+          "words": [
+            "karmić",
+            "proszę",
+            "chlebem",
+            "nie",
+            "psa"
+          ],
+          "answer": "Proszę nie karmić psa chlebem.",
+          "accept": [
+            "Proszę psa nie karmić chlebem.",
+            "Proszę nie karmić chlebem psa."
+          ],
+          "grammar_point": "rozkazujacy",
+          "explanation": "Grzeczny zakaz: proszę nie + bezokolicznik."
+        },
+        {
+          "id": "g4-5",
+          "words": [
+            "samochód",
+            "oszczędzam,",
+            "kupić",
+            "żeby",
+            "w przyszłym roku"
+          ],
+          "answer": "Oszczędzam, żeby kupić samochód w przyszłym roku.",
+          "accept": [
+            "Oszczędzam, żeby w przyszłym roku kupić samochód."
+          ],
+          "grammar_point": "zeby-cel",
+          "explanation": "Cel, ta sama osoba → żeby + bezokolicznik."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "drag-and-drop",
+      "title": "5. Ogłoszenie pani Moniki",
+      "instruction": "Pani Monika napisała ogłoszenie do sąsiadów. Przeciągnij słowa w luki. Cztery słowa w banku nie pasują nigdzie.",
+      "bank": [
+        "Przynoście",
+        "Przynieście",
+        "wolno",
+        "trzeba",
+        "musicie",
+        "możecie",
+        "żeby",
+        "że",
+        "Gdyby",
+        "Jeśli"
+      ],
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Kochani, zbiórka trwa do piątku. ___ dary codziennie od ósmej do dwudziestej.",
+          "answer": "Przynoście",
+          "grammar_point": "rozkazujacy-aspekt",
+          "explanation": "Codziennie, wiele razy → niedokonany: przynoście."
+        },
+        {
+          "id": "g5-2",
+          "text": "Karmy nie ___ zostawiać w otwartych workach — myszy też ją lubią!",
+          "answer": "wolno",
+          "grammar_point": "modalne",
+          "explanation": "Zakaz → nie wolno."
+        },
+        {
+          "id": "g5-3",
+          "text": "Nie ___ kupować drogiej karmy: schronisko przyjmie każdą.",
+          "answer": "musicie",
+          "grammar_point": "modalne",
+          "explanation": "To nie jest konieczne → nie musicie."
+        },
+        {
+          "id": "g5-4",
+          "text": "Prosimy, ___ koce były czyste i suche.",
+          "answer": "żeby",
+          "grammar_point": "zeby-zyczenie",
+          "explanation": "Prośba → żeby + forma na -ł: żeby były."
+        },
+        {
+          "id": "g5-5",
+          "text": "___ ktoś miał stary transporter dla psa, schronisko bardzo o niego prosi.",
+          "answer": "Gdyby",
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Ktoś miał (forma -ł) → gdyby. Z „jeśli” byłoby: jeśli ktoś ma."
+        },
+        {
+          "id": "g5-6",
+          "text": "Dziękujemy wszystkim, ___ pomagacie!",
+          "answer": "że",
+          "grammar_point": "zeby-cel",
+          "explanation": "Informacja, fakt → że."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "lesson_id": "pl-b1-group-r1-powtorka",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Czytanie, słuchanie i mini-test z lekcji 1–8.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Kawa bez ekranu”. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "O podróży do Toronto Olena powiedziała tylko mężowi.",
+          "answer": true,
+          "explanation": "Nikomu nic nie powiedziałam — oprócz Tarasa."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Na lotnisku w Toronto czekała na Olenę przyjaciółka.",
+          "answer": false,
+          "explanation": "Nikt na mnie nie czekał — Olena pojechała taksówką."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Kiedy Ira zobaczyła Olenę, od razu zaczęła krzyczeć.",
+          "answer": false,
+          "explanation": "Najpierw przez pół minuty stała i nic nie mówiła."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Ira chodzi na zajęcia z ceramiki od dwóch lat.",
+          "answer": true,
+          "explanation": "Od dwóch lat chodzi na warsztaty ceramiki."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Ira jeździ do pracy samochodem.",
+          "answer": false,
+          "explanation": "Dojeżdża pociągiem podmiejskim z przesiadką na metro."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Przyjaciółki zdecydowały, że następnym razem to Ira przyleci do Polski.",
+          "answer": true,
+          "explanation": "Umówiłyśmy się: następnym razem to ona przyleci do nas."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "teacher:e2-rozmowa",
+      "max_plays": 2,
+      "title": "Słuchanie: rozmowa przez telefon",
+      "instruction": "Nauczyciel przeczyta rozmowę Oleny z Tarasem. Usłyszysz ją dwa razy. Najpierw przeczytaj pytania, potem wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Kto przywiózł Olenę na lotnisko?",
+          "options": [
+            "przyjaciółka",
+            "mąż",
+            "taksówkarz"
+          ],
+          "answer": "przyjaciółka",
+          "explanation": "Ira mnie przywiozła."
+        },
+        {
+          "id": "e2-2",
+          "question": "Jaka jest zła wiadomość?",
+          "options": [
+            "Nocny autobus z lotniska do Lublina nie pojedzie.",
+            "Samolot z Toronto ma opóźnienie.",
+            "Maksym jest chory i nie poszedł do szkoły."
+          ],
+          "answer": "Nocny autobus z lotniska do Lublina nie pojedzie.",
+          "explanation": "Nocny autobus z lotniska jest odwołany."
+        },
+        {
+          "id": "e2-3",
+          "question": "Dlaczego Piotrek i tak jedzie do Warszawy?",
+          "options": [
+            "Chce kupić sprzęt na ryby.",
+            "Ma tam spotkanie w pracy.",
+            "Odbiera z lotniska swojego brata."
+          ],
+          "answer": "Chce kupić sprzęt na ryby.",
+          "explanation": "Jedzie po nowy sprzęt na ryby."
+        },
+        {
+          "id": "e2-4",
+          "question": "Co się stało wczoraj?",
+          "options": [
+            "Rodzina jadła obiad u sąsiadki.",
+            "Maksym ugotował zupę dla taty.",
+            "Taras zrobił kanapki dla pani Moniki."
+          ],
+          "answer": "Rodzina jadła obiad u sąsiadki.",
+          "explanation": "Pani Monika zaprosiła nas na obiad."
+        },
+        {
+          "id": "e2-5",
+          "question": "Kiedy Olena będzie w Warszawie?",
+          "options": [
+            "jutro o ósmej rano",
+            "dziś o osiemnastej",
+            "jutro o szóstej wieczorem"
+          ],
+          "answer": "jutro o ósmej rano",
+          "explanation": "Samolot startuje o osiemnastej, w Warszawie będę rano, o ósmej."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "gramatyka",
+      "exercise_type": "multiple-choice",
+      "title": "Mini-test: lekcje 1–8",
+      "instruction": "Dziesięć zdań. Wybierz poprawną formę. Pracuj sam / sama, bez notatek.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Nie lubię kawy ___ cukru.",
+          "options": [
+            "bez",
+            "z",
+            "przy"
+          ],
+          "answer": "bez"
+        },
+        {
+          "id": "e3-2",
+          "question": "Wczoraj byłem u ___ rodzinnego.",
+          "options": [
+            "lekarza",
+            "lekarzem",
+            "lekarz"
+          ],
+          "answer": "lekarza"
+        },
+        {
+          "id": "e3-3",
+          "question": "Twoi kuzyni są bardzo ___.",
+          "options": [
+            "mili",
+            "miłe",
+            "miły"
+          ],
+          "answer": "mili"
+        },
+        {
+          "id": "e3-4",
+          "question": "Po lekcjach dzieci ___ dużo czasu na boisku.",
+          "options": [
+            "miały",
+            "mieli",
+            "miał"
+          ],
+          "answer": "miały"
+        },
+        {
+          "id": "e3-5",
+          "question": "Mój dziadek urodził się w ___ roku.",
+          "options": [
+            "tysiąc dziewięćset pięćdziesiątym",
+            "tysiąc dziewięćset pięćdziesiąty",
+            "tysiącu dziewięćset pięćdziesięciu"
+          ],
+          "answer": "tysiąc dziewięćset pięćdziesiątym"
+        },
+        {
+          "id": "e3-6",
+          "question": "Cały wieczór ___ list do babci, ale go nie skończyłam.",
+          "options": [
+            "pisałam",
+            "napisałam",
+            "napiszę"
+          ],
+          "answer": "pisałam"
+        },
+        {
+          "id": "e3-7",
+          "question": "Autobus się zatrzymał i wszyscy szybko ___.",
+          "options": [
+            "wysiedli",
+            "wsiadają",
+            "wyjeżdżali"
+          ],
+          "answer": "wysiedli"
+        },
+        {
+          "id": "e3-8",
+          "question": "Kuzyn przyjechał i przywiózł ___ prezent.",
+          "options": [
+            "nam",
+            "nas",
+            "nami"
+          ],
+          "answer": "nam"
+        },
+        {
+          "id": "e3-9",
+          "question": "Na imprezie ___ nie znałam.",
+          "options": [
+            "nikogo",
+            "nikt",
+            "nikomu"
+          ],
+          "answer": "nikogo"
+        },
+        {
+          "id": "e3-10",
+          "question": "Kasia przyjechała do ___ prosto z pracy.",
+          "options": [
+            "niego",
+            "jego",
+            "go"
+          ],
+          "answer": "niego"
+        }
+      ]
+    }
+  ]
+}

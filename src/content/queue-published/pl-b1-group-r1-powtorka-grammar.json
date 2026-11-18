@@ -1,0 +1,402 @@
+{
+  "lesson_id": "pl-b1-group-r1-powtorka",
+  "exercise_type": "fill-in-blank",
+  "title": "Powtórka bloku 1: ćwiczenia mieszane",
+  "instruction": "Pięć bloków. W każdym zdaniu spotykają się dwa tematy z lekcji 1–8.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wybierz formę",
+      "instruction": "Wybierz poprawną formę. Patrz na całe zdanie, nie tylko na lukę.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Wczoraj nikt ___ nie zadzwonił, więc wieczorem sama zadzwoniłam do mamy.",
+          "answer": "do mnie",
+          "options": [
+            "do mnie",
+            "mnie",
+            "mi"
+          ],
+          "grammar_point": "zaimki-formy",
+          "explanation": "Dzwonić do kogo? — do mnie. Po przyimku zawsze długa forma."
+        },
+        {
+          "id": "g1-2",
+          "text": "Moi dziadkowie ___ w małym domu pod Łuckiem.",
+          "answer": "mieszkali",
+          "options": [
+            "mieszkali",
+            "mieszkały",
+            "mieszkał"
+          ],
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Dziadkowie = babcia i dziadek, w grupie jest mężczyzna → mieszkali."
+        },
+        {
+          "id": "g1-3",
+          "text": "Pięć lat ___ przeprowadziliśmy się z Łucka do Lublina.",
+          "answer": "temu",
+          "options": [
+            "temu",
+            "za",
+            "przed"
+          ],
+          "grammar_point": "przyimki-czasu",
+          "explanation": "Przeszłość liczona od dziś: pięć lat temu. Za pięć lat — przyszłość."
+        },
+        {
+          "id": "g1-4",
+          "text": "Codziennie ___ do pracy rowerem, ale dziś pojechałam autobusem.",
+          "answer": "jeździłam",
+          "options": [
+            "jeździłam",
+            "pojechałam",
+            "jechałam"
+          ],
+          "grammar_point": "ruch-iterat",
+          "explanation": "Codziennie = wiele razy → jeździć: jeździłam."
+        },
+        {
+          "id": "g1-5",
+          "text": "W tej przychodni nie ma ___, więc pacjenci chodzą po schodach.",
+          "answer": "windy",
+          "options": [
+            "windy",
+            "winda",
+            "windę"
+          ],
+          "grammar_point": "przeczenie-dopelniacz",
+          "explanation": "Nie ma + dopełniacz: nie ma windy."
+        },
+        {
+          "id": "g1-6",
+          "text": "Wieczorem idę z sąsiadką ___ zebranie wspólnoty.",
+          "answer": "na",
+          "options": [
+            "na",
+            "do",
+            "w"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Dokąd? — na zebranie (jak na lekcję, na koncert)."
+        },
+        {
+          "id": "g1-7",
+          "text": "Kiedy ___ z pracy, zadzwonię do ciebie.",
+          "answer": "wrócę",
+          "options": [
+            "wrócę",
+            "wracam",
+            "wróciłam"
+          ],
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Zadzwonię = przyszłość, więc w obu częściach przyszły dokonany: kiedy wrócę."
+        },
+        {
+          "id": "g1-8",
+          "text": "Dziewczyny z mojej klasy ___ wszystko o wszystkich.",
+          "answer": "wiedziały",
+          "options": [
+            "wiedziały",
+            "wiedzieli",
+            "wiedziała"
+          ],
+          "grammar_point": "czas-przeszly",
+          "explanation": "Same dziewczyny → forma niemęskoosobowa: wiedziały (wiedzieć → wiedział-, -eć → -ał-)."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Wpisz formę",
+      "instruction": "Wpisz słowa z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Od miesiąca dojeżdżam do pracy ___. (nowy pociąg podmiejski)",
+          "answer": "nowym pociągiem podmiejskim",
+          "accept": [
+            "nowym podmiejskim pociągiem"
+          ],
+          "grammar_point": "narzednik-pelny",
+          "explanation": "Czym jadę? — narzędnik: nowym pociągiem podmiejskim."
+        },
+        {
+          "id": "g2-2",
+          "text": "W niedzielę pojechaliśmy całą rodziną ___ na grzyby. (las — dokąd?)",
+          "answer": "do lasu",
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Dokąd? — do + dopełniacz: do lasu."
+        },
+        {
+          "id": "g2-3",
+          "text": "W naszym miasteczku nie było ___, więc jeździliśmy do Kijowa. (dobry neurolog)",
+          "answer": "dobrego neurologa",
+          "grammar_point": "przeczenie-dopelniacz",
+          "explanation": "Nie było + dopełniacz: dobrego neurologa."
+        },
+        {
+          "id": "g2-4",
+          "text": "Sąsiedzi z parteru ___ nam pomóc przy przeprowadzce. (chcieć, czas przeszły)",
+          "answer": "chcieli",
+          "grammar_point": "czas-przeszly",
+          "explanation": "Sąsiedzi — osoby, wśród nich mężczyźni → chcieli (chcieć → chcieli)."
+        },
+        {
+          "id": "g2-5",
+          "text": "Babcia urodziła się w ___ roku. (1939 — napisz słowami)",
+          "answer": "tysiąc dziewięćset trzydziestym dziewiątym",
+          "grammar_point": "data-pelna",
+          "explanation": "W którym roku? — miejscownik liczebnika porządkowego: w tysiąc dziewięćset trzydziestym dziewiątym."
+        },
+        {
+          "id": "g2-6",
+          "text": "Ira nie odezwała się ___ od tygodnia. (ja)",
+          "answer": "do mnie",
+          "grammar_point": "zaimki-formy",
+          "explanation": "Odezwać się do kogo? — do mnie."
+        },
+        {
+          "id": "g2-7",
+          "text": "Zanim zacznie się sezon, Piotrek ___ nowe wędki. (kupić, czas przyszły)",
+          "answer": "kupi",
+          "grammar_point": "aspekt-uzycie",
+          "explanation": "Jeden wynik w przyszłości → dokonany: kupi."
+        },
+        {
+          "id": "g2-8",
+          "text": "Całe lato ___ z Iryną na rowerach nad zalew. (jeździć, my — dwie kobiety)",
+          "answer": "jeździłyśmy",
+          "grammar_point": "ruch-iterat",
+          "explanation": "Wiele razy → jeździć; dwie kobiety → jeździłyśmy."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g3-1",
+          "prompt": "Myślę o ciebie codziennie.",
+          "answer": "Myślę o tobie codziennie.",
+          "accept": [
+            "Codziennie myślę o tobie."
+          ],
+          "grammar_point": "zaimki-formy",
+          "explanation": "Myśleć o + miejscownik: o tobie."
+        },
+        {
+          "id": "g3-2",
+          "prompt": "Pani Monika jest pielęgniarka w szpitalu.",
+          "answer": "Pani Monika jest pielęgniarką w szpitalu.",
+          "accept": [
+            "Pani Monika pracuje jako pielęgniarka w szpitalu."
+          ],
+          "grammar_point": "narzednik-pelny",
+          "explanation": "Być + zawód → narzędnik: jest pielęgniarką."
+        },
+        {
+          "id": "g3-3",
+          "prompt": "Moi koledzy z klasy były bardzo mili.",
+          "answer": "Moi koledzy z klasy byli bardzo mili.",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Koledzy — mężczyźni → byli."
+        },
+        {
+          "id": "g3-4",
+          "prompt": "Nie mam czas na lekarza.",
+          "answer": "Nie mam czasu na lekarza.",
+          "accept": [
+            "Na lekarza nie mam czasu."
+          ],
+          "grammar_point": "przeczenie-dopelniacz",
+          "explanation": "Nie mam + dopełniacz: czasu."
+        },
+        {
+          "id": "g3-5",
+          "prompt": "Za dwa tygodnie temu byłam w Toronto.",
+          "answer": "Dwa tygodnie temu byłam w Toronto.",
+          "accept": [
+            "Byłam w Toronto dwa tygodnie temu."
+          ],
+          "grammar_point": "przyimki-czasu",
+          "explanation": "Przeszłość: dwa tygodnie temu. „Za” — tylko o przyszłości."
+        },
+        {
+          "id": "g3-6",
+          "prompt": "Jutro będę napisać do ciebie e-mail.",
+          "answer": "Jutro napiszę do ciebie e-mail.",
+          "accept": [
+            "Jutro napiszę do ciebie e-maila.",
+            "Jutro będę pisać do ciebie e-mail.",
+            "Jutro będę pisała do ciebie e-mail.",
+            "Jutro będę pisał do ciebie e-mail."
+          ],
+          "grammar_point": "aspekt-uzycie",
+          "explanation": "Po „będę” — tylko niedokonany (będę pisać). Wynik: napiszę."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "4. Ułóż zdanie",
+      "instruction": "Ułóż zdanie z kafelków.",
+      "items": [
+        {
+          "id": "g4-1",
+          "words": [
+            "na lotnisko",
+            "odprowadził",
+            "mnie",
+            "brat"
+          ],
+          "answer": "Brat odprowadził mnie na lotnisko.",
+          "accept": [
+            "Brat mnie odprowadził na lotnisko.",
+            "Na lotnisko odprowadził mnie brat."
+          ],
+          "grammar_point": "zaimki-formy",
+          "explanation": "Krótka forma „mnie” stoi blisko czasownika; na lotnisko — dokąd?"
+        },
+        {
+          "id": "g4-2",
+          "words": [
+            "o niej",
+            "nie",
+            "nikt",
+            "pamiętał"
+          ],
+          "answer": "Nikt o niej nie pamiętał.",
+          "accept": [
+            "O niej nikt nie pamiętał."
+          ],
+          "grammar_point": "negacja-podwojna",
+          "explanation": "Nikt + nie przed czasownikiem; po przyimku — o niej."
+        },
+        {
+          "id": "g4-3",
+          "words": [
+            "od trzech lat",
+            "kuzynów",
+            "nie widziałam",
+            "moich"
+          ],
+          "answer": "Od trzech lat nie widziałam moich kuzynów.",
+          "accept": [
+            "Moich kuzynów nie widziałam od trzech lat.",
+            "Nie widziałam moich kuzynów od trzech lat."
+          ],
+          "grammar_point": "przeczenie-dopelniacz",
+          "explanation": "Nie widziałam + dopełniacz: moich kuzynów."
+        },
+        {
+          "id": "g4-4",
+          "words": [
+            "w Poznaniu",
+            "na pociąg",
+            "przesiadłam się",
+            "do Szczecina"
+          ],
+          "answer": "W Poznaniu przesiadłam się na pociąg do Szczecina.",
+          "accept": [
+            "Przesiadłam się w Poznaniu na pociąg do Szczecina.",
+            "Przesiadłam się na pociąg do Szczecina w Poznaniu."
+          ],
+          "grammar_point": "ruch-przedrostki",
+          "explanation": "Przesiąść się na co? — na pociąg; gdzie? — w Poznaniu."
+        },
+        {
+          "id": "g4-5",
+          "words": [
+            "podczas studiów",
+            "w akademiku",
+            "mieszkali",
+            "moi rodzice"
+          ],
+          "answer": "Podczas studiów moi rodzice mieszkali w akademiku.",
+          "accept": [
+            "Moi rodzice mieszkali w akademiku podczas studiów.",
+            "Moi rodzice podczas studiów mieszkali w akademiku."
+          ],
+          "grammar_point": "przyimki-czasu",
+          "explanation": "Podczas + dopełniacz; rodzice → mieszkali."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "drag-and-drop",
+      "title": "5. Kartka na lodówce",
+      "instruction": "Przed wyjazdem Olena zostawiła Tarasowi kartkę. Przeciągnij słowa w luki. Cztery słowa w banku nie pasują nigdzie.",
+      "bank": [
+        "mnie",
+        "mi",
+        "Maksymem",
+        "Maksyma",
+        "nikogo",
+        "nic",
+        "Wrócę",
+        "Wracam",
+        "w",
+        "na"
+      ],
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Kochany, nie martw się o ___ — będę pisać codziennie.",
+          "answer": "mnie",
+          "grammar_point": "zaimki-formy",
+          "explanation": "Martwić się o + biernik: o mnie."
+        },
+        {
+          "id": "g5-2",
+          "text": "W czwartek idziesz z ___ do dentysty.",
+          "answer": "Maksymem",
+          "grammar_point": "narzednik-pelny",
+          "explanation": "Z kim? — narzędnik: z Maksymem."
+        },
+        {
+          "id": "g5-3",
+          "text": "W sobotę nie zapraszaj ___, bo w domu ma być porządek!",
+          "answer": "nikogo",
+          "grammar_point": "negacja-podwojna",
+          "explanation": "Nie zapraszaj kogo? — nikogo (dopełniacz po przeczeniu)."
+        },
+        {
+          "id": "g5-4",
+          "text": "___ dwudziestego siódmego, w piątek wieczorem.",
+          "answer": "Wrócę",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Jeden raz w przyszłości → wrócę."
+        },
+        {
+          "id": "g5-5",
+          "text": "Ira jeszcze ___ nie wie o moim przyjeździe.",
+          "answer": "nic",
+          "grammar_point": "negacja-podwojna",
+          "explanation": "Nic + nie wie — podwójne przeczenie."
+        },
+        {
+          "id": "g5-6",
+          "text": "Klucze do piwnicy są ___ szufladzie w przedpokoju.",
+          "answer": "w",
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Gdzie? — w szufladzie (miejscownik)."
+        }
+      ]
+    }
+  ]
+}
