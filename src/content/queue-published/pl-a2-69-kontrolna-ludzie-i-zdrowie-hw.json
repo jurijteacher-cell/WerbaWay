@@ -1,0 +1,168 @@
+{
+  "lesson_id": "pl-a2-69-kontrolna-ludzie-i-zdrowie",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: typowe błędy modułu „Mama w Krakowie”",
+  "instruction": "Dwa bloki. Każde zdanie to jeden typowy błąd z modułu.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Typowe błędy: wybierz",
+      "instruction": "Wybierz poprawną formę. Każde zdanie to jeden typowy błąd z modułu.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "W sobotę odbieram ___ z lotniska.",
+          "answer": "tatę",
+          "options": [
+            "tatę",
+            "tata",
+            "tacie"
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Odebrać kogo? — tata → tatę (jak mama → mamę)."
+        },
+        {
+          "id": "h1-2",
+          "text": "Pani w ___ sukience to moja szefowa.",
+          "answer": "czerwonej",
+          "options": [
+            "czerwonej",
+            "czerwoną",
+            "czerwona"
+          ],
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Być w czym? — miejscownik: w czerwonej sukience."
+        },
+        {
+          "id": "h1-3",
+          "text": "Nie ___ tyle kawy, to niezdrowe!",
+          "answer": "pij",
+          "options": [
+            "pij",
+            "wypij",
+            "pijesz"
+          ],
+          "grammar_point": "rozkaznik-pelny",
+          "explanation": "Zakaz: nie + niedokonany — nie pij."
+        },
+        {
+          "id": "h1-4",
+          "text": "Jutro jest niedziela, nie ___ wstawać wcześnie.",
+          "answer": "musisz",
+          "options": [
+            "musisz",
+            "wolno",
+            "powinna"
+          ],
+          "grammar_point": "modalne-obowiazek",
+          "explanation": "Nie ma obowiązku — nie musisz."
+        },
+        {
+          "id": "h1-5",
+          "text": "Kupiłam ___ nowy telefon.",
+          "answer": "bratu",
+          "options": [
+            "bratu",
+            "bratowi",
+            "brata"
+          ],
+          "grammar_point": "celownik-osoby",
+          "explanation": "Brat to wyjątek w celowniku: bratu."
+        },
+        {
+          "id": "h1-6",
+          "text": "Otwórz okno, jest ___ bardzo gorąco.",
+          "answer": "nam",
+          "options": [
+            "nam",
+            "nas",
+            "my"
+          ],
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Jest komu gorąco? — nam."
+        },
+        {
+          "id": "h1-7",
+          "text": "Kasia? Bardzo ___ lubię.",
+          "answer": "ją",
+          "options": [
+            "ją",
+            "jej",
+            "nią"
+          ],
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "explanation": "Lubić kogo? — biernik: ją."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Mam brat i siostrę.",
+          "answer": "Mam brata i siostrę.",
+          "accept": [
+            "Mam siostrę i brata."
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Mieć kogo? — brata."
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Mój tata nosi szary płaszcza.",
+          "answer": "Mój tata nosi szary płaszcz.",
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Płaszcz to rzecz → biernik = mianownik."
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Proszę siadać się tutaj.",
+          "answer": "Proszę usiąść tutaj.",
+          "accept": [
+            "Proszę tutaj usiąść.",
+            "Proszę tu usiąść.",
+            "Proszę usiąść tu."
+          ],
+          "grammar_point": "rozkaznik-pelny",
+          "explanation": "Proszę + bezokolicznik: proszę usiąść."
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Mi trzeba kupić syrop.",
+          "answer": "Muszę kupić syrop.",
+          "accept": [
+            "Trzeba kupić syrop."
+          ],
+          "grammar_point": "modalne-obowiazek",
+          "explanation": "„Trzeba” nie ma osoby: muszę albo trzeba."
+        },
+        {
+          "id": "h2-5",
+          "prompt": "Zadzwonię mamie jutro.",
+          "answer": "Zadzwonię do mamy jutro.",
+          "accept": [
+            "Jutro zadzwonię do mamy."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Укр. «подзвоню мамі» — po polsku: zadzwonić do kogo."
+        },
+        {
+          "id": "h2-6",
+          "prompt": "Boli mi noga od wczoraj.",
+          "answer": "Boli mnie noga od wczoraj.",
+          "accept": [
+            "Od wczoraj boli mnie noga."
+          ],
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Boli kogo? — biernik: boli mnie."
+        }
+      ]
+    }
+  ]
+}

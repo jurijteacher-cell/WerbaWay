@@ -1,0 +1,65 @@
+{
+  "lesson_id": "pl-a2-69-kontrolna-ludzie-i-zdrowie",
+  "exercise_type": "true-false",
+  "title": "Kontrolna: czytanie i słuchanie",
+  "instruction": "Część C — czytanie, część D — słuchanie.",
+  "estimated_minutes": 12,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Część C. Czytanie: prawda czy fałsz?",
+      "instruction": "Trzy zdania o wiadomości mamy. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Tata czekał na mamę na dworcu.",
+          "answer": true
+        },
+        {
+          "id": "e1-2",
+          "statement": "Mamę dalej boli gardło.",
+          "answer": false
+        },
+        {
+          "id": "e1-3",
+          "statement": "Sąsiadka widziała zdjęcia z Krakowa.",
+          "answer": true
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-69-kontrolna-ludzie-i-zdrowie-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Część D. Słuchanie: a, b czy c?",
+      "instruction": "Usłyszysz rozmowę Tomka z Oleną dwa razy. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Jak długo mama musi jeszcze odpoczywać?",
+          "options": [
+            "tydzień",
+            "dwa tygodnie",
+            "trzy dni"
+          ],
+          "answer": "tydzień"
+        },
+        {
+          "id": "e2-2",
+          "question": "Jaki prezent chce dostać Tomek?",
+          "options": [
+            "zielony szalik",
+            "zieloną kurtkę",
+            "ciepłą czapkę"
+          ],
+          "answer": "zielony szalik"
+        }
+      ]
+    }
+  ]
+}
