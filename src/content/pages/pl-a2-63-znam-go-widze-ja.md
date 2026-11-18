@@ -162,7 +162,7 @@ Biernik znasz z rzeczy: <i>mam nowy telefon, piję kawę</i>. Dziś — <b>osoby
 | mieć | Mam <b>syna</b> i <b>psa</b>. |
 | czekać na, iść po | Czekam na <b>Tomka</b>. Idę po <b>syna</b> do szkoły. |
 
-📌 <i>Czekać na</i> i <i>iść po</i> (= żeby kogoś odebrać) też mają biernik: <i>czekam na niego, idę po nią</i>.
+📌 <i>Czekać na</i> i <i>iść po</i> (= iść i odebrać kogoś) też mają biernik: <i>czekam na niego, idę po nią</i>.
 
 ### 👥 Liczba mnoga: ich czy je?
 
