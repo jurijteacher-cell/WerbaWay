@@ -60,7 +60,7 @@ teacherOf: pl-a2-64-jak-wyglada
 
 ## 🎧 e2–e3: транскрипт і ключ
 
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): pani Halina (mama) — <code>cnYygtdARUZ1LhB2crKx</code>, pracownik biura — M1 <code>p0KQaxqGrT7xcRWSJiHp</code>. Файл для плеєра LMS: <code>public/audio/pl-a2-64-jak-wyglada-e2-dialog.mp3</code> (ще не покладено). Поки аудіо немає — читай діалог сам, двічі.
+Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): pani Halina (mama) — <code>cnYygtdARUZ1LhB2crKx</code>, pracownik biura — M1 <code>p0KQaxqGrT7xcRWSJiHp</code>. Аудіо згенеровано 19.11.2026 (58 с) і стоїть на сторінці TEACHER у Notion; файл для плеєра LMS: <code>public/audio/pl-a2-64-jak-wyglada-e2-dialog.mp3</code>.
 
 <aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
 

@@ -60,7 +60,7 @@ teacherOf: pl-a2-67-jest-mi-zimno
 
 ## 🎧 e2–e3: транскрипт і ключ
 
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): Olena — W1 <code>mQq2zdGT1zEfDbh8W95l</code>, farmaceutka — W2 <code>gHGjEjdr2LBds0XHTsvg</code>. Файл для плеєра LMS: <code>public/audio/pl-a2-67-jest-mi-zimno-e2-dialog.mp3</code> (ще не покладено). Поки аудіо немає — читай діалог сам, двічі.
+Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): Olena — W1 <code>mQq2zdGT1zEfDbh8W95l</code>, farmaceutka — W2 <code>gHGjEjdr2LBds0XHTsvg</code>. Аудіо згенеровано 19.11.2026 (53 с) і стоїть на сторінці TEACHER у Notion; файл для плеєра LMS: <code>public/audio/pl-a2-67-jest-mi-zimno-e2-dialog.mp3</code>.
 
 <aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
 
