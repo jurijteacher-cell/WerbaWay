@@ -237,7 +237,7 @@ Embed-адреси завжди за шаблоном `https://werba-way.vercel.
 | 60 | `pl-a2-60-wspomnienia` | `41b96e03c7c88123b0f3e5e117dc88b1` | `41b96e03c7c8812a81f1db5f7bc7b909` | ✅ 52 с (18.11) | ✅ 18.11 (`ea2537b`), сторінки сайту й переклади — у тому ж пуші |
 | 61 | `pl-a2-61-powtorka-opowiadam` | `41b96e03c7c881a49755c5af05b959e5` | `41b96e03c7c8817c97f1df5fb382ef47` | ✅ ≈45 с (18.11) | ✅ 18.11 |
 | 62 | `pl-a2-62-kontrolna-opowiadam` | `41b96e03c7c8810ea41dc1ff88e6c7f6` | `41b96e03c7c881c5931dc3e9837edfc2` | ✅ ≈46 с (18.11) | ✅ 18.11 |
-| 63 | `pl-a2-63-znam-go-widze-ja` | `41c96e03c7c88188a334cf1eecac7c97` | `41c96e03c7c881e3a57dfa6c2d906e35` | ⏳ Kasia + mama | ✅ 18.11 (``), сайт + переклади в тому ж пуші |
+| 63 | `pl-a2-63-znam-go-widze-ja` | `41c96e03c7c88188a334cf1eecac7c97` | `41c96e03c7c881e3a57dfa6c2d906e35` | ⏳ Kasia + mama | ✅ 18.11, сайт + переклади в тому ж пуші |
 | 64 | `pl-a2-64-jak-wyglada` | `41c96e03c7c881e39688e14457da72c1` | `41c96e03c7c88110a866e823c4e4fc45` | ⏳ mama + pracownik (M1) | ✅ 18.11 |
 | 67 | `pl-a2-67-jest-mi-zimno` | `41c96e03c7c8815cab1cdb76ca44b0a9` | `41c96e03c7c881a6a993e3c2b44ae922` | ⏳ Olena + farmaceutka (W2) | ✅ 18.11 |
 
