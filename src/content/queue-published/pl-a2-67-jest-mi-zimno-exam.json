@@ -1,0 +1,128 @@
+{
+  "lesson_id": "pl-a2-67-jest-mi-zimno",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o tekście „Mamie jest zimno”. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Pani Halina zachorowała w sobotę w górach.",
+          "answer": false,
+          "explanation": "W sobotę wróciła szczęśliwa. Źle się czuła w niedzielę rano."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Tomek obiecał, że powie o wszystkim panu Piotrowi.",
+          "answer": true,
+          "explanation": "Jasne, powiem mu rano."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Doktor Nowicka przepisała mamie antybiotyk.",
+          "answer": false,
+          "explanation": "Przepisała syrop i tabletki na gardło."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Mama ma leżeć w łóżku trzy dni.",
+          "answer": true,
+          "explanation": "Proszę dużo pić i leżeć w łóżku trzy dni."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Mama nie rozumiała lekarki.",
+          "answer": false,
+          "explanation": "…mama wszystko rozumiała."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-67-jest-mi-zimno-e2-dialog.mp3",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: prawda czy fałsz?",
+      "instruction": "Usłyszysz rozmowę Oleny z farmaceutką dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Olena ma receptę dla siebie.",
+          "answer": false,
+          "explanation": "Mam receptę dla mamy."
+        },
+        {
+          "id": "e2-2",
+          "statement": "Tabletek na gardło dziś nie ma.",
+          "answer": true,
+          "explanation": "…tabletek dziś nie ma. Będą jutro po dwunastej."
+        },
+        {
+          "id": "e2-3",
+          "statement": "Farmaceutka poleca pastylki z miodem.",
+          "answer": true,
+          "explanation": "Polecam te pastylki z miodem."
+        },
+        {
+          "id": "e2-4",
+          "statement": "Mama nie może pić herbaty.",
+          "answer": false,
+          "explanation": "Ciepła herbata dobrze jej zrobi. Ale nie gorąca!"
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-67-jest-mi-zimno-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: a, b czy c?",
+      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Kiedy będą tabletki?",
+          "options": [
+            "jutro po dwunastej",
+            "dziś po dwunastej",
+            "jutro rano"
+          ],
+          "answer": "jutro po dwunastej",
+          "explanation": "Będą jutro po dwunastej."
+        },
+        {
+          "id": "e3-2",
+          "question": "Jak mama ma pić syrop?",
+          "options": [
+            "trzy razy dziennie, po jedzeniu",
+            "dwa razy dziennie, przed jedzeniem",
+            "trzy razy dziennie, przed snem"
+          ],
+          "answer": "trzy razy dziennie, po jedzeniu",
+          "explanation": "Trzy razy dziennie po jedzeniu."
+        },
+        {
+          "id": "e3-3",
+          "question": "Co Olena ma robić rano i wieczorem?",
+          "options": [
+            "mierzyć mamie temperaturę",
+            "dawać mamie pastylki",
+            "robić mamie herbatę"
+          ],
+          "answer": "mierzyć mamie temperaturę",
+          "explanation": "To proszę jej mierzyć temperaturę rano i wieczorem."
+        }
+      ]
+    }
+  ]
+}

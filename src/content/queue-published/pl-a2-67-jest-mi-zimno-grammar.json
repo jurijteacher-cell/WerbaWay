@@ -1,0 +1,350 @@
+{
+  "lesson_id": "pl-a2-67-jest-mi-zimno",
+  "exercise_type": "fill-in-blank",
+  "title": "Celownik: komu? Jest mi zimno",
+  "instruction": "Pięć krótkich bloków. Na lekcji robimy bloki 1–3, bloki 4 i 5 — jeśli zostanie czas albo w domu.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "1. Połącz słowo z opisem",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "przeziębienie",
+          "right": "mała choroba: katar, kaszel",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "gorączka",
+          "right": "za wysoka temperatura ciała",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "recepta",
+          "right": "kartka od lekarza na lekarstwo",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "przychodnia",
+          "right": "miejsce, gdzie pracują lekarze rodzinni",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "zbadać",
+          "right": "sprawdzić, co komuś jest",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "polecić",
+          "right": "powiedzieć, że coś jest dobre",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "Jest mi słabo.",
+          "right": "nie mam siły",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "Wracaj do zdrowia!",
+          "right": "szybko bądź znowu zdrowy",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Komu?",
+      "instruction": "Wpisz słowo z nawiasu w celowniku.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Olena zrobiła ___ herbatę z miodem. (mama)",
+          "answer": "mamie",
+          "grammar_point": "celownik-osoby",
+          "explanation": "Rodzaj żeński: celownik = miejscownik. Mama → mamie (jak o mamie)."
+        },
+        {
+          "id": "g2-2",
+          "text": "Jutro powiem o tym ___. (pan Piotr)",
+          "answer": "panu Piotrowi",
+          "grammar_point": "celownik-osoby",
+          "explanation": "Pan → panu (wyjątek), Piotr → Piotrowi (-owi)."
+        },
+        {
+          "id": "g2-3",
+          "text": "Na urodziny kupiłam ___ nowy plecak. (syn)",
+          "answer": "synowi",
+          "grammar_point": "celownik-osoby",
+          "explanation": "Rodzaj męski → -owi: synowi."
+        },
+        {
+          "id": "g2-4",
+          "text": "Codziennie pomagam ___ w lekcjach. (brat)",
+          "answer": "bratu",
+          "grammar_point": "celownik-osoby",
+          "explanation": "Brat to wyjątek: bratu (jak panu, ojcu, psu)."
+        },
+        {
+          "id": "g2-5",
+          "text": "Daj ___ wody, jest bardzo gorąco. (dziecko)",
+          "answer": "dziecku",
+          "grammar_point": "celownik-osoby",
+          "explanation": "Rodzaj nijaki → -u: dziecku."
+        },
+        {
+          "id": "g2-6",
+          "text": "Wysłałam ___ zdjęcie z gór. (Kasia)",
+          "answer": "Kasi",
+          "grammar_point": "celownik-osoby",
+          "explanation": "Kasia → Kasi (jak babcia → babci)."
+        },
+        {
+          "id": "g2-7",
+          "text": "Dziękuję ___ za pomoc! (Tomek)",
+          "answer": "Tomkowi",
+          "grammar_point": "celownik-osoby",
+          "explanation": "Tomek → Tomkowi: -e- znika, potem -owi."
+        },
+        {
+          "id": "g2-8",
+          "text": "W lipcu pokażę ___ nowe mieszkanie. (rodzice)",
+          "answer": "rodzicom",
+          "grammar_point": "celownik-osoby",
+          "explanation": "Liczba mnoga zawsze -om: rodzicom, dzieciom."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Zaimek i przymiotnik",
+      "instruction": "Wybierz dobrą formę.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Mama jest chora. Kupię ___ syrop.",
+          "answer": "jej",
+          "options": [
+            "jej",
+            "ją",
+            "niej"
+          ],
+          "grammar_point": "celownik-osoby",
+          "explanation": "Kupić komu? — jej. Ją to biernik (widzę ją)."
+        },
+        {
+          "id": "g3-2",
+          "text": "Tomek ma urodziny. Co ___ kupimy?",
+          "answer": "mu",
+          "options": [
+            "mu",
+            "go",
+            "niego"
+          ],
+          "grammar_point": "celownik-osoby",
+          "explanation": "Kupić komu? — mu. Go to biernik (znam go)."
+        },
+        {
+          "id": "g3-3",
+          "text": "Napisałam ___ bratu długą wiadomość.",
+          "answer": "mojemu",
+          "options": [
+            "mojemu",
+            "mojego",
+            "moim"
+          ],
+          "grammar_point": "celownik-osoby",
+          "explanation": "Celownik, rodzaj męski: mojemu bratu (-emu)."
+        },
+        {
+          "id": "g3-4",
+          "text": "Pomóż ___ koleżance, ona jeszcze wszystkiego nie wie.",
+          "answer": "nowej",
+          "options": [
+            "nowej",
+            "nową",
+            "nowa"
+          ],
+          "grammar_point": "celownik-osoby",
+          "explanation": "Pomagać komu? — rodzaj żeński: nowej koleżance (-ej)."
+        },
+        {
+          "id": "g3-5",
+          "text": "Dziękujemy ___ panu za pomoc.",
+          "answer": "temu",
+          "options": [
+            "temu",
+            "tego",
+            "tym"
+          ],
+          "grammar_point": "celownik-osoby",
+          "explanation": "Dziękować komu? — temu panu."
+        },
+        {
+          "id": "g3-6",
+          "text": "Kasiu, co ___ dolega?",
+          "answer": "ci",
+          "options": [
+            "ci",
+            "cię",
+            "ciebie"
+          ],
+          "grammar_point": "celownik-osoby",
+          "explanation": "Dolegać komu? — ci. Cię to biernik (widzę cię)."
+        },
+        {
+          "id": "g3-7",
+          "text": "Przepraszam, podaj ___ sól.",
+          "answer": "mi",
+          "options": [
+            "mi",
+            "mnie",
+            "mną"
+          ],
+          "grammar_point": "celownik-osoby",
+          "explanation": "W środku zdania — krótka forma: podaj mi."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Jest mi zimno, chce mi się spać",
+      "instruction": "Wpisz zaimek z nawiasu w dobrej formie. Uważaj na „boli”.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Otwórz okno, jest ___ gorąco. (ja)",
+          "answer": "mi",
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Jest komu gorąco? — mi."
+        },
+        {
+          "id": "g4-2",
+          "text": "Mama nic nie je, bo nie chce ___ się jeść. (ona)",
+          "answer": "jej",
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Chce się komu? — jej."
+        },
+        {
+          "id": "g4-3",
+          "text": "Weź sweter, jeśli jest ___ zimno. (ty)",
+          "answer": "ci",
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Jest komu zimno? — ci."
+        },
+        {
+          "id": "g4-4",
+          "text": "Ten sernik bardzo ___ smakuje. (my)",
+          "answer": "nam",
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Smakuje komu? — nam."
+        },
+        {
+          "id": "g4-5",
+          "text": "Dzieci są w nowym parku i bardzo ___ się tam podoba. (one)",
+          "answer": "im",
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Podoba się komu? — im (oni i one mają ten sam celownik)."
+        },
+        {
+          "id": "g4-6",
+          "text": "Od rana boli ___ głowa. (ja)",
+          "answer": "mnie",
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Uwaga: boli kogo? — biernik: boli mnie. Ale: jest mi zimno."
+        },
+        {
+          "id": "g4-7",
+          "text": "Pan Piotr wypił dwie kawy, ale dalej chce ___ się spać. (on)",
+          "answer": "mu",
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Chce się komu? — mu."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "5. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Ja jestem zimno.",
+          "answer": "Jest mi zimno.",
+          "accept": [
+            "Mnie jest zimno.",
+            "Zimno mi."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Укр. «мені холодно» — po polsku też celownik: jest mi zimno. Bez „ja”."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Boli mi gardło.",
+          "answer": "Boli mnie gardło.",
+          "accept": [
+            "Gardło mnie boli."
+          ],
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Boli kogo? — biernik: boli mnie. „Boli mi” słychać czasem w mowie, ale poprawnie: boli mnie."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Dziękuję cię za pomoc.",
+          "answer": "Dziękuję ci za pomoc.",
+          "grammar_point": "celownik-osoby",
+          "explanation": "Dziękować komu? — ci."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Zadzwonię mamie wieczorem.",
+          "answer": "Zadzwonię do mamy wieczorem.",
+          "accept": [
+            "Wieczorem zadzwonię do mamy."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Укр. «подзвоню мамі» — ale po polsku: zadzwonić do kogo (dopełniacz)."
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Pomagam mój brat w kuchni.",
+          "answer": "Pomagam mojemu bratu w kuchni.",
+          "accept": [
+            "W kuchni pomagam mojemu bratu."
+          ],
+          "grammar_point": "celownik-osoby",
+          "explanation": "Pomagać komu? — mojemu bratu."
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Kupiłam prezent dla Tomkowi.",
+          "answer": "Kupiłam prezent dla Tomka.",
+          "accept": [
+            "Kupiłam Tomkowi prezent.",
+            "Kupiłam prezent Tomkowi."
+          ],
+          "grammar_point": "celownik-osoby",
+          "explanation": "Dla + dopełniacz: dla Tomka. Albo bez „dla”: kupiłam Tomkowi prezent."
+        }
+      ]
+    }
+  ]
+}
