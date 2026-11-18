@@ -10,7 +10,7 @@ teacherOf: pl-b1-group-r2-powtorka
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📋</span><div class="lp-callout-body">
 
-<b>Курс «Польська B1», повторення R2 — блок 2 (лекції 9–12).</b> Нової граматики немає: ступені порівняння й <i>niż / od / im…tym / coraz</i> → <i>który</i> в усіх відмінках і <i>gdzie / dokąd / co / kto</i> → чоловічо-особові та збірні числівники, <i>ilu / ile</i> → давальний (<i>smakuje mi, podoba mi się, chce mi się, brakuje mi</i>, порядок <i>mi / się</i>). Нових слів 4 (група «Piątkowy wieczór»). Формат: індивідуально, 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-r2-powtorka">R2 · Powtórka: opisać, porównać, policzyć</a><br>Обкладинка: Priscilla Du Preez / Unsplash — https://images.unsplash.com/photo-1528605248644-14dd04022da1<br>Фото в тексті: Zoshua Colah / Unsplash, Anthony Da Cruz / Unsplash. Слухання e2 (4 діалоги у форматі державного іспиту, P2) читаєш ти, двічі.
+<b>Курс «Польська B1», повторення R2 — блок 2 (лекції 9–12).</b> Нової граматики немає: ступені порівняння й <i>niż / od / im…tym / coraz</i> → <i>który</i> в усіх відмінках і <i>gdzie / dokąd / co / kto</i> → чоловічо-особові та збірні числівники, <i>ilu / ile</i> → давальний (<i>smakuje mi, podoba mi się, chce mi się, brakuje mi</i>, порядок <i>mi / się</i>). Нових слів 4 (група «Piątkowy wieczór»). Формат: індивідуально, 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-r2-powtorka">R2 · Powtórka: opisać, porównać, policzyć</a><br>Обкладинка: Priscilla Du Preez / Unsplash — https://images.unsplash.com/photo-1528605248644-14dd04022da1<br>Фото в тексті: Zoshua Colah / Unsplash, Anthony Da Cruz / Unsplash. Слухання e2 (4 діалоги у форматі державного іспиту, P2) озвучено (ElevenLabs, ≈50 с, з оголошеннями «Dialog pierwszy…»): аудіо — на сторінці Notion «TEACHER · R2» https://app.notion.com/p/41c96e03c7c881b09e9dd8e177d61da4, вмикай двічі.
 
 </div></aside>
 
@@ -33,7 +33,7 @@ teacherOf: pl-b1-group-r2-powtorka
 | --- | --- | --- |
 | 0–5 | Розігрів | «Ilu? Ile?»: ти питаєш про родину, роботу, клас учня, учень відповідає з правильним числівником. |
 | 5–25 | 3. Mapa: давальний + ćw. 3–5 | Вправи 3–5. На ćw. 5 учень читає весь чат уголос. |
-| 25–35 | 4. Słuchanie (e2) | 1 хв на питання; кожен діалог — двічі, двома голосами. Потім — транскрипт. |
+| 25–35 | 4. Słuchanie (e2) | 1 хв на питання; вмикаєш аудіо з Notion двічі. Потім — транскрипт. |
 | 35–70 | 5. Speaking marathon | 6 карток × 1 хв + 2–3 хв розбору (записуй помилки, не перебивай). |
 | 70–80 | Міні-перевірка усно | 10 швидких питань з мапи (ти кажеш, учень трансформує): <i>tani → ?</i>, <i>kopalnia, w … ?</i>, <i>5 + kolega → ?</i>, <i>ja + smakować → ?</i>. |
 | 80–90 | 6–7. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити письмо. |
@@ -57,9 +57,10 @@ teacherOf: pl-b1-group-r2-powtorka
 
 ---
 
-## 🎧 Транскрипт e2 (читаєш ти, двічі кожен діалог)
+## 🎧 Транскрипт e2 (аудіо в Notion)
 
 <b>Dialog 1</b>
+— Dzień dobry. W czym mogę pomóc?
 — Dzień dobry, poproszę dwa bilety ulgowe na seans o dziewiętnastej.
 — W pierwszym rzędzie zostały już tylko miejsca z boku. Może rząd dziesiąty? Tam są dwa miejsca w środku i dużo lepiej widać.
 — Dobrze, to poproszę dziesiąty.

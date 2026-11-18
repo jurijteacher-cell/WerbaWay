@@ -10,7 +10,7 @@ teacherOf: pl-b1-group-r1-powtorka
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📋</span><div class="lp-callout-body">
 
-<b>Курс «Польська B1», повторення R1 — блок 1 (лекції 1–8) + міні-тест.</b> Нової граматики немає: місце (<i>gdzie / dokąd / skąd</i>, орудний, місцевий) → родовий → множина й чоловічо-особові форми → минулий на <i>-eć</i> → дати й <i>temu / za</i> → вид → дієслова руху з префіксами → займенники й <i>nikt nie / nic nie</i>. Нових слів 5 (група «Podróż i niespodzianka»). Формат: індивідуально, 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-r1-powtorka">R1 · Powtórka: dom, ludzie, wspomnienia</a><br>Обкладинка: Priscilla Du Preez / Unsplash — https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1<br>Фото в тексті: Yuma Solar / Unsplash, Emmanuel M / Unsplash. Слухання e2 читаєш ти, двома голосами, двічі.
+<b>Курс «Польська B1», повторення R1 — блок 1 (лекції 1–8) + міні-тест.</b> Нової граматики немає: місце (<i>gdzie / dokąd / skąd</i>, орудний, місцевий) → родовий → множина й чоловічо-особові форми → минулий на <i>-eć</i> → дати й <i>temu / za</i> → вид → дієслова руху з префіксами → займенники й <i>nikt nie / nic nie</i>. Нових слів 5 (група «Podróż i niespodzianka»). Формат: індивідуально, 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-r1-powtorka">R1 · Powtórka: dom, ludzie, wspomnienia</a><br>Обкладинка: Priscilla Du Preez / Unsplash — https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1<br>Фото в тексті: Yuma Solar / Unsplash, Emmanuel M / Unsplash. Слухання e2 озвучено (ElevenLabs, ≈52 с): аудіо — на сторінці Notion «TEACHER · R1» https://app.notion.com/p/41c96e03c7c881499cbed5e90d7e9341, вмикай двічі. Немає доступу до Notion — читай сам за транскриптом нижче.
 
 </div></aside>
 
@@ -33,7 +33,7 @@ teacherOf: pl-b1-group-r1-powtorka
 | --- | --- | --- |
 | 0–5 | Розігрів | «Temu / za»: ти називаєш подію (переїзд, школа, наступна відпустка), учень відповідає з <i>temu</i> або <i>za</i>. |
 | 5–25 | 3. Mapa: вид, рух, займенники + ćw. 3–5 | Вправи 3–5. На ćw. 5 учень читає записку вголос цілою. |
-| 25–35 | 4. Słuchanie (e2) | 1 хв на питання; читаєш діалог двічі. Потім — транскрипт. |
+| 25–35 | 4. Słuchanie (e2) | 1 хв на питання; вмикаєш аудіо з Notion двічі. Потім — транскрипт. |
 | 35–65 | 5. Speaking marathon | 6 карток × 1 хв + 2–3 хв розбору після кожної (записуй помилки, не перебивай). |
 | 65–77 | 6. Mini-test (e3) | 10 хв без нотаток, 2 хв — розбір. |
 | 77–90 | 7–8. Podsumowanie + ДЗ | Чекліст «umiem / jeszcze nie», повернення до слова з розминки, пояснити письмо. |
@@ -60,7 +60,7 @@ teacherOf: pl-b1-group-r1-powtorka
 
 ---
 
-## 🎧 Транскрипт e2 (читаєш ти, двічі)
+## 🎧 Транскрипт e2 (аудіо в Notion; голоси: Olena — Agnieszka, Taras — Marcel)
 
 <b>Taras:</b> Halo, Olenko? Jesteś już na lotnisku?
 <b>Olena:</b> Tak, Ira mnie przywiozła. Obie płakałyśmy przy wejściu jak dzieci.

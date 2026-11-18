@@ -10,7 +10,7 @@ teacherOf: pl-b1-group-r3-powtorka
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📋</span><div class="lp-callout-body">
 
-<b>Курс «Польська B1», повторення R3 — блок 3 (лекції 13–16).</b> Нової граматики немає: наказовий спосіб (форми, <i>proszę +</i> інф., <i>niech</i>, вид у наказі й забороні) → модальні (<i>musieć, móc, umieć / potrafić, powinien (był)</i>; <i>trzeba, można, wolno, należy, warto</i> у 3 часах; <i>nie musisz / nie wolno</i>) → умовний спосіб (форми, <i>-by</i>, <i>jeśli / gdyby</i>, ввічливі прохання) → <i>żeby</i> (мета, прохання, <i>że / żeby</i>). Нових слів 5 (група «Zbiórka w bloku»). Формат: індивідуально, 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-r3-powtorka">R3 · Powtórka: prośby, rady, warunki</a><br>Обкладинка: Yosuke Ota / Unsplash — https://images.unsplash.com/photo-1714999497019-937047a5b5f4<br>Фото в тексті: Kelly Sikkema / Unsplash, Joshua Rawson-Harris / Unsplash. Слухання e2 читаєш ти, двома голосами, двічі.
+<b>Курс «Польська B1», повторення R3 — блок 3 (лекції 13–16).</b> Нової граматики немає: наказовий спосіб (форми, <i>proszę +</i> інф., <i>niech</i>, вид у наказі й забороні) → модальні (<i>musieć, móc, umieć / potrafić, powinien (był)</i>; <i>trzeba, można, wolno, należy, warto</i> у 3 часах; <i>nie musisz / nie wolno</i>) → умовний спосіб (форми, <i>-by</i>, <i>jeśli / gdyby</i>, ввічливі прохання) → <i>żeby</i> (мета, прохання, <i>że / żeby</i>). Нових слів 5 (група «Zbiórka w bloku»). Формат: індивідуально, 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-r3-powtorka">R3 · Powtórka: prośby, rady, warunki</a><br>Обкладинка: Yosuke Ota / Unsplash — https://images.unsplash.com/photo-1714999497019-937047a5b5f4<br>Фото в тексті: Kelly Sikkema / Unsplash, Joshua Rawson-Harris / Unsplash. Слухання e2 озвучено (ElevenLabs, ≈55 с): аудіо — на сторінці Notion «TEACHER · R3» https://app.notion.com/p/41c96e03c7c881a59461e2ff3c8a62a8, вмикай двічі.
 
 </div></aside>
 
@@ -33,7 +33,7 @@ teacherOf: pl-b1-group-r3-powtorka
 | --- | --- | --- |
 | 0–5 | Розігрів | Ланцюжок «Gdybym…»: ти починаєш (<i>Gdybym miał psa…</i>), учень продовжує наслідком, потім робить з нього нову умову. |
 | 5–25 | 3. Mapa: <i>jeśli / gdyby</i>, <i>żeby</i> + ćw. 3–5 | Вправи 3–5. На ćw. 5 учень читає оголошення цілим. |
-| 25–35 | 4. Słuchanie (e2) | 1 хв на питання; читаєш діалог двічі. Потім — транскрипт. |
+| 25–35 | 4. Słuchanie (e2) | 1 хв на питання; вмикаєш аудіо з Notion двічі. Потім — транскрипт. |
 | 35–70 | 5. Speaking marathon | 6 карток × 1 хв + 2–3 хв розбору. У c1, c2, c5, c6 ти граєш другу роль (у c5 — впертий продавець). |
 | 70–80 | Міні-перевірка усно | 10 трансформацій: <i>kupić → (wy)?</i>, <i>nie + przynieść → ?</i>, <i>trzeba → (wczoraj)?</i>, <i>ja + zrobić → (by)?</i>, <i>prosić + że/żeby?</i>. |
 | 80–90 | 6–7. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити письмо. |
@@ -57,7 +57,7 @@ teacherOf: pl-b1-group-r3-powtorka
 
 ---
 
-## 🎧 Транскрипт e2 (читаєш ти, двічі)
+## 🎧 Транскрипт e2 (аудіо в Notion; голоси: Olena — Agnieszka, pracownik — Friday)
 
 <b>Pracownik:</b> Schronisko dla zwierząt, dzień dobry.
 <b>Olena:</b> Dzień dobry, mówi Olena. Byłam u państwa w sobotę ze zbiórką z naszego bloku.
