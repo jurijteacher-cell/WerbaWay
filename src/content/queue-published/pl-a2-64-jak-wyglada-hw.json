@@ -1,0 +1,195 @@
+{
+  "lesson_id": "pl-a2-64-jak-wyglada",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: przymiotnik w zdaniu",
+  "instruction": "Trzy bloki ćwiczeń. Potem napisz zgłoszenie do Biura Rzeczy Znalezionych — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Przymiotnik i rzeczownik",
+      "instruction": "Wpisz słowa z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Olena czeka na mamę przed ___. (stara kamienica)",
+          "answer": "starą kamienicą",
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Przed + narzędnik: przed starą kamienicą."
+        },
+        {
+          "id": "h1-2",
+          "text": "W ___ nie ma windy. (nasz blok)",
+          "answer": "naszym bloku",
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "W + miejscownik: w naszym bloku (-k → -u)."
+        },
+        {
+          "id": "h1-3",
+          "text": "Nie lubię ___. (zimna kawa)",
+          "answer": "zimnej kawy",
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Nie lubię + dopełniacz: zimnej kawy."
+        },
+        {
+          "id": "h1-4",
+          "text": "Mieszkamy obok ___. (duży park)",
+          "answer": "dużego parku",
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Obok + dopełniacz: dużego parku."
+        },
+        {
+          "id": "h1-5",
+          "text": "W sobotę pojechaliśmy nad jezioro ___. (nowy samochód)",
+          "answer": "nowym samochodem",
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Jechać czym? — narzędnik: nowym samochodem."
+        },
+        {
+          "id": "h1-6",
+          "text": "Ta pani w ___ to nasza sąsiadka. (czerwony sweter)",
+          "answer": "czerwonym swetrze",
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "W + miejscownik: w czerwonym swetrze (sweter → swetrze)."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Wybierz formę",
+      "instruction": "Wybierz dobrą formę przymiotnika.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Mama przyjechała z ___ walizką.",
+          "answer": "małą",
+          "options": [
+            "małą",
+            "małej",
+            "mała"
+          ],
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Z + narzędnik: z małą walizką."
+        },
+        {
+          "id": "h2-2",
+          "text": "Biuro jest obok ___ apteki.",
+          "answer": "nowej",
+          "options": [
+            "nowej",
+            "nową",
+            "nowa"
+          ],
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Obok + dopełniacz: obok nowej apteki."
+        },
+        {
+          "id": "h2-3",
+          "text": "Kot śpi na ___ fotelu.",
+          "answer": "starym",
+          "options": [
+            "starym",
+            "starego",
+            "stary"
+          ],
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Na + miejscownik (gdzie?): na starym fotelu."
+        },
+        {
+          "id": "h2-4",
+          "text": "Przepraszam, nie mam tu ___ długopisu.",
+          "answer": "żadnego",
+          "options": [
+            "żadnego",
+            "żadnym",
+            "żaden"
+          ],
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Nie mam + dopełniacz: żadnego długopisu."
+        },
+        {
+          "id": "h2-5",
+          "text": "Wieczorem lubię słuchać ___ muzyki.",
+          "answer": "spokojnej",
+          "options": [
+            "spokojnej",
+            "spokojną",
+            "spokojna"
+          ],
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Słuchać + dopełniacz: spokojnej muzyki."
+        },
+        {
+          "id": "h2-6",
+          "text": "Kupiłam bilet i ___ przewodnik po Krakowie.",
+          "answer": "dobry",
+          "options": [
+            "dobry",
+            "dobrego",
+            "dobrym"
+          ],
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Przewodnik tu to książka, rzecz → biernik = mianownik: dobry przewodnik."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "On jest wysoki, ma krótki włosy i niebieskie oczy.",
+          "answer": "On jest wysoki, ma krótkie włosy i niebieskie oczy.",
+          "accept": [
+            "Jest wysoki, ma krótkie włosy i niebieskie oczy."
+          ],
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Włosy — liczba mnoga: krótkie włosy."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Przyszłam na spotkanie w nowej sukienkę.",
+          "answer": "Przyszłam na spotkanie w nowej sukience.",
+          "accept": [
+            "Na spotkanie przyszłam w nowej sukience."
+          ],
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Być w czym? — miejscownik: w nowej sukience (k → c)."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Kupiłam bilet dla moja mama.",
+          "answer": "Kupiłam bilet dla mojej mamy.",
+          "accept": [
+            "Kupiłem bilet dla mojej mamy.",
+            "Dla mojej mamy kupiłam bilet."
+          ],
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Dla + dopełniacz: dla mojej mamy."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Pracuję w duży sklep obok dworca.",
+          "answer": "Pracuję w dużym sklepie obok dworca.",
+          "accept": [
+            "Obok dworca pracuję w dużym sklepie."
+          ],
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Gdzie? — w + miejscownik: w dużym sklepie."
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Interesuję się polska historia.",
+          "answer": "Interesuję się polską historią.",
+          "grammar_point": "narzednik-pelny",
+          "explanation": "Interesować się + narzędnik: polską historią."
+        }
+      ]
+    }
+  ]
+}
