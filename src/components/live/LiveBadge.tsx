@@ -2,11 +2,22 @@
 
 import Link from 'next/link';
 import { useT } from '@/i18n/client';
-import { isLessonPath, lessonSlugOf, type Presence } from '@/lib/live/protocol';
+import { classTopic, isLessonPath, lessonSlugOf, type Presence } from '@/lib/live/protocol';
 import { useLiveStatuses } from './useLiveStatuses';
 
-/** Позначка біля учня: «у лекції …» з кнопкою «Дивитися» / «на сайті» / нічого, якщо офлайн */
-export function LiveBadge({ studentId, status, withButton = true }: { studentId: string; status: Presence | null | undefined; withButton?: boolean }) {
+/**
+ * Позначка біля учня чи гостя: «у лекції …» з кнопкою «Дивитися» / «на сайті» / нічого, якщо офлайн.
+ * `watchHref` — куди веде «Дивитися» (/teacher/students/<id>/watch або /teacher/guests/<vid>/watch).
+ */
+export function LiveBadge({
+  watchHref,
+  status,
+  withButton = true,
+}: {
+  watchHref: string;
+  status: Presence | null | undefined;
+  withButton?: boolean;
+}) {
   const t = useT();
   if (!status) return null;
   const inLesson = status.mode === 'lesson' && isLessonPath(status.path);
@@ -17,7 +28,7 @@ export function LiveBadge({ studentId, status, withButton = true }: { studentId:
         {inLesson ? t("у лекції: {title}", { title: status.title || lessonSlugOf(status.path) || '' }) : t("на сайті")}
       </span>
       {inLesson && withButton && (
-        <Link href={`/teacher/students/${studentId}/watch`} className="ww-btn ww-btn-primary ww-btn-sm">
+        <Link href={watchHref} className="ww-btn ww-btn-primary ww-btn-sm">
           {t("👁 Дивитися")}
         </Link>
       )}
@@ -27,6 +38,7 @@ export function LiveBadge({ studentId, status, withButton = true }: { studentId:
 
 /** Те саме для одного учня (сторінка учня): сам підписується на присутність */
 export function LiveBadgeFor({ studentId }: { studentId: string }) {
-  const s = useLiveStatuses([studentId]);
-  return <LiveBadge studentId={studentId} status={s[studentId]} />;
+  const topic = classTopic(studentId);
+  const s = useLiveStatuses([topic]);
+  return <LiveBadge watchHref={`/teacher/students/${studentId}/watch`} status={s[topic]} />;
 }

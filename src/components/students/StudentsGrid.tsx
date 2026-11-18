@@ -8,7 +8,7 @@ import type { StudentRow } from '@/lib/students';
 import { avatarColor, initials, relDay } from '@/lib/students';
 import { LiveBadge } from '@/components/live/LiveBadge';
 import { useLiveStatuses } from '@/components/live/useLiveStatuses';
-import { isLessonPath } from '@/lib/live/protocol';
+import { classTopic, isLessonPath } from '@/lib/live/protocol';
 
 type Filter = 'all' | 'active' | 'account' | 'notion';
 const FILTERS: { id: Filter; label: string }[] = [
@@ -53,11 +53,11 @@ export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
   const [q, setQ] = useState('');
   const [f, setF] = useState<Filter>('all');
   // хто зараз на сайті й у якій лекції (наживо)
-  const live = useLiveStatuses(rows.map((r) => r.userId).filter((x): x is string => !!x));
+  const live = useLiveStatuses(rows.map((r) => r.userId).filter((x): x is string => !!x).map(classTopic));
   const list = useMemo(() => {
     const s = q.trim().toLowerCase();
     const rank = (r: StudentRow) => {
-      const p = r.userId ? live[r.userId] : null;
+      const p = r.userId ? live[classTopic(r.userId)] : null;
       return p ? (p.mode === 'lesson' && isLessonPath(p.path) ? 0 : 1) : 2;
     };
     return rows
@@ -126,7 +126,9 @@ export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
                   </span>
                 )}
               </div>
-              {r.userId && live[r.userId] && <LiveBadge studentId={r.userId} status={live[r.userId]} />}
+              {r.userId && live[classTopic(r.userId)] && (
+                <LiveBadge watchHref={`/teacher/students/${r.userId}/watch`} status={live[classTopic(r.userId)]} />
+              )}
               <Spark data={r.spark} />
               <div className="grid grid-cols-4 gap-2 border-t border-dashed border-ink-line pt-3">
                 <Stat label={t("лекцій")} value={r.hasAccount ? r.lecturesDone : '—'} />

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { useT } from '@/i18n/client';
-import { isLessonPath, type ClassMsg, type Presence } from '@/lib/live/protocol';
+import { classTopic, guestTopic, isLessonPath, type ClassMsg, type Presence } from '@/lib/live/protocol';
 import { useLiveChannel } from './useLiveChannel';
 
 type Recorder = typeof import('rrweb').record;
@@ -14,7 +14,7 @@ type Recorder = typeof import('rrweb').record;
  * вправу з присутністю «на сайті» (/embed/…), а паралельні оновлення токена в цих вікнах обривали
  * канал самої лекції — і викладач бачив «на сайті» замість «у лекції».
  */
-export function LiveBeacon(props: { studentId: string; name?: string }) {
+function Beacon({ topic, name }: { topic: string; name?: string }) {
   const pathname = usePathname();
   const [topLevel, setTopLevel] = useState(false);
   useEffect(() => {
@@ -25,15 +25,25 @@ export function LiveBeacon(props: { studentId: string; name?: string }) {
     }
   }, []);
   if (!topLevel || /^\/(embed|slides)(\/|$)/.test(pathname ?? '')) return null;
-  return <LiveBeaconInner {...props} />;
+  return <BeaconInner topic={topic} name={name} />;
+}
+
+/** Учень з акаунтом: канал class:<uid> */
+export function LiveBeacon({ studentId, name }: { studentId: string; name?: string }) {
+  return <Beacon topic={classTopic(studentId)} name={name} />;
+}
+
+/** Гість за публічним посиланням: канал guest:<vid> (акаунта ще немає) */
+export function GuestBeacon({ visitorId, name }: { visitorId: string; name?: string }) {
+  return <Beacon topic={guestTopic(visitorId)} name={name} />;
 }
 
 /**
- * Учень на сайті: тримає присутність на своєму каналі class:<uid> (онлайн, яка лекція відкрита),
+ * Учень на сайті: тримає присутність на своєму каналі (онлайн, яка лекція відкрита),
  * а коли викладач відкрив «Дивитися» і учень у лекції — пише екран (rrweb) і шле викладачеві.
  * Учень бачить маленьку позначку «Викладач дивиться». Нічого не блокує й не перехоплює.
  */
-function LiveBeaconInner({ studentId, name }: { studentId: string; name?: string }) {
+function BeaconInner({ topic, name }: { topic: string; name?: string }) {
   const t = useT();
   const pathname = usePathname();
   const [watched, setWatched] = useState(false);
@@ -54,7 +64,7 @@ function LiveBeaconInner({ studentId, name }: { studentId: string; name?: string
   const sendRef = useRef<(m: ClassMsg) => Promise<boolean>>(() => Promise.resolve(false));
 
   const { send, track, link } = useLiveChannel({
-    studentId,
+    topic,
     presence,
     onMessage: (m) => {
       if (m.k === 'need-snap') recRef.current?.record.takeFullSnapshot(true);

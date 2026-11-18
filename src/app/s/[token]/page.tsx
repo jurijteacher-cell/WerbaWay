@@ -22,7 +22,7 @@ export default async function SharedLecture({ params, searchParams }: { params: 
   const p = Number(searchParams?.p);
   return (
     <>
-      <PublicBar />
+      <PublicBar token={params.token} />
       <LessonView page={page} mode="lecture" pageIndex={Number.isFinite(p) && p > 0 ? p - 1 : 0} publicBase={`/s/${params.token}`} />
     </>
   );

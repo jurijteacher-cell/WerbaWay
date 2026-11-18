@@ -20,6 +20,8 @@ export type StudentRow = {
   firstTotal: number;
   lastAt: string | null;
   lecturesDone: number;
+  /** переглянув сам за публічним посиланням до реєстрації (lesson_progress.completed_via='share') */
+  lecturesShared: number;
   lecturesTouched: number;
   homeworkTodo: number;
   homeworkDone: number;
@@ -41,7 +43,7 @@ export async function loadStudents(supabase: SupabaseClient): Promise<{ rows: St
     supabase.from('embed_student_stats').select('id, name, user_id, archived_at'),
     supabase.from('profiles').select('id, full_name, role'),
     fetchAttempts(supabase),
-    supabase.from('lesson_progress').select('student_id, lesson_slug, completed_at, homework_assigned_at, homework_done_at'),
+    supabase.from('lesson_progress').select('student_id, lesson_slug, completed_at, completed_via, homework_assigned_at, homework_done_at'),
     supabase.from('vocab_progress').select('student_id, known'),
     supabase.from('student_access').select('student_id, kind'),
   ]);
@@ -96,7 +98,8 @@ export async function loadStudents(supabase: SupabaseClient): Promise<{ rows: St
       accuracy: pct(ok, first.length),
       firstTotal: first.length,
       lastAt: [lastAttempt, lastLesson].filter(Boolean).sort().pop() ?? null,
-      lecturesDone: prog.length,
+      lecturesDone: prog.filter((p) => p.completed_via !== 'share').length,
+      lecturesShared: prog.filter((p) => p.completed_via === 'share').length,
       lecturesTouched: new Set(mine.map((a) => a.lesson_id)).size,
       homeworkTodo: prog.filter((p) => p.homework_assigned_at && !p.homework_done_at).length,
       homeworkDone: prog.filter((p) => p.homework_done_at).length,

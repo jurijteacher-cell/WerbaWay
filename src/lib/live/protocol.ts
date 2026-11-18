@@ -11,6 +11,9 @@
 
 export const classTopic = (studentId: string) => `class:${studentId}`;
 
+/** Канал гостя за публічним посиланням: id — кука ww_vid (uuid), а не акаунт (0016_guests.sql) */
+export const guestTopic = (visitorId: string) => `guest:${visitorId}`;
+
 /** Realtime broadcast event name for every message */
 export const CLASS_EVENT = 'c';
 
@@ -32,10 +35,12 @@ export type Presence = {
   at: number;
 };
 
-/** Сторінки, які викладач може дивитися: лекція і її домашка */
-export const isLessonPath = (p: string | null | undefined) => !!p && /^\/learn\/[a-z0-9][a-z0-9-]*(\/hw)?\/?$/.test(p);
+/** Сторінки, які викладач може дивитися: лекція і її домашка — свої (/learn) і за посиланням (/s) */
+const LEARN_PATH = /^\/learn\/[a-z0-9][a-z0-9-]*(\/hw)?\/?$/;
+const SHARED_PATH = /^\/s\/[A-Za-z0-9_-]{8,40}(\/hw)?\/?$/;
+export const isLessonPath = (p: string | null | undefined) => !!p && (LEARN_PATH.test(p) || SHARED_PATH.test(p));
 
-/** slug лекції з шляху /learn/<slug>[/hw] */
+/** slug лекції з шляху /learn/<slug>[/hw]; у гостя в шляху токен, а не slug — тоді null */
 export const lessonSlugOf = (p: string | null | undefined) => (p && /^\/learn\/([a-z0-9][a-z0-9-]*)/.exec(p)?.[1]) || null;
 
 /** Із кількох вкладок учня беремо ту, що в лекції, потім найсвіжішу */

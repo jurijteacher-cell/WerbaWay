@@ -3,20 +3,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { RealtimeChannel } from '@supabase/supabase-js';
 import { createClient } from '@/lib/supabase/client';
-import {
-  CLASS_EVENT,
-  ChunkAssembler,
-  classTopic,
-  toChunks,
-  type Chunk,
-  type ClassMsg,
-  type Presence,
-} from '@/lib/live/protocol';
+import { CLASS_EVENT, ChunkAssembler, toChunks, type Chunk, type ClassMsg, type Presence } from '@/lib/live/protocol';
 
 export type LinkState = 'connecting' | 'online' | 'offline';
 
 type Opts = {
-  studentId: string;
+  /** назва каналу: classTopic(uid) для учня з акаунтом, guestTopic(vid) для гостя */
+  topic: string;
   /** what this side announces in presence */
   presence: () => Presence;
   onMessage: (m: ClassMsg) => void;
@@ -26,7 +19,8 @@ type Opts = {
 };
 
 /**
- * One private Realtime channel `class:<studentId>` shared by the student (LiveBeacon) and the teacher (LiveWatch).
+ * One private Realtime channel shared by the learner (LiveBeacon / GuestBeacon) and the teacher (LiveWatch):
+ * `class:<uid>` for a student with an account, `guest:<vid>` for a guest on a public link.
  * Messages are split into chunks and put back together; `send` is a no-op until subscribed.
  */
 export function useLiveChannel(opts: Opts) {
@@ -50,9 +44,12 @@ export function useLiveChannel(opts: Opts) {
 
     (async () => {
       const { data } = await supabase.auth.getSession();
-      if (data.session?.access_token) supabase.realtime.setAuth(data.session.access_token);
+      // гість за посиланням сесії не має: приватний канал guest:<vid> підписуємо анонімним
+      // ключем (він і так публічний) — інакше join пішов би без токена й сервер відмовив
+      const token = data.session?.access_token ?? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+      if (token) supabase.realtime.setAuth(token);
       if (!alive) return;
-      ch = supabase.channel(classTopic(opts.studentId), {
+      ch = supabase.channel(opts.topic, {
         config: { private: true, presence: { key }, broadcast: { self: false } },
       });
       ch.on('broadcast', { event: CLASS_EVENT }, ({ payload }) => {
@@ -91,7 +88,7 @@ export function useLiveChannel(opts: Opts) {
       chRef.current = null;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [opts.studentId, supabase, gen]);
+  }, [opts.topic, supabase, gen]);
 
   // шматки одного повідомлення шлемо по черзі: паралельна відправка плутала порядок,
   // а загублений шматок означав, що весь пакет змін до викладача не доїде

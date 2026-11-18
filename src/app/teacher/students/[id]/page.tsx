@@ -48,7 +48,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
 
   const [{ data: progress }, { data: grants }, { data: vocab }, { data: mocks }] = await Promise.all([
     userId
-      ? supabase.from('lesson_progress').select('lesson_slug, completed_at, homework_assigned_at, homework_done_at').eq('student_id', userId).order('completed_at', { ascending: false })
+      ? supabase.from('lesson_progress').select('lesson_slug, completed_at, completed_via, homework_assigned_at, homework_done_at').eq('student_id', userId).order('completed_at', { ascending: false })
       : Promise.resolve({ data: [] as never[] }),
     userId ? supabase.from('student_access').select('kind, ref').eq('student_id', userId) : Promise.resolve({ data: [] as never[] }),
     userId ? supabase.from('vocab_progress').select('lesson_slug, known').eq('student_id', userId) : Promise.resolve({ data: [] as never[] }),
@@ -63,10 +63,11 @@ export default async function StudentProfilePage({ params }: { params: { id: str
   const done = progress ?? [];
   const doneSet = new Set(done.map((r) => r.lesson_slug as string));
 
-  // пройдені в класі — у порядку від свіжих; «займався сам» — лекції з відповідями без проходження в класі
-  const together = done
-    .map((r) => ({ row: r, page: pageBySlug.get(r.lesson_slug as string) }))
-    .filter((x) => x.page);
+  // пройдені в класі — у порядку від свіжих; «займався сам» — лекції з відповідями без проходження в класі;
+  // completed_via='share' — те, що учень подивився за публічним посиланням ще до реєстрації (claim_guest)
+  const card = (r: (typeof done)[number]) => ({ row: r, page: pageBySlug.get(r.lesson_slug as string) });
+  const together = done.filter((r) => r.completed_via !== 'share').map(card).filter((x) => x.page);
+  const viaLink = done.filter((r) => r.completed_via === 'share').map(card).filter((x) => x.page);
   const solo = pages
     .filter((p) => !doneSet.has(p.slug))
     .map((p) => ({ page: p, stats: lectureStats(p.slug, attempts) }))
@@ -77,9 +78,11 @@ export default async function StudentProfilePage({ params }: { params: { id: str
   const grantMods = new Set((grants ?? []).filter((g) => g.kind === 'module').map((g) => g.ref as string));
   const grantLessons = new Set((grants ?? []).filter((g) => g.kind === 'lesson').map((g) => g.ref as string));
   const soloSet = new Set(solo.map((x) => x.page.slug));
+  const togetherSet = new Set(together.map((x) => x.page!.slug));
   const open = pages.filter((p) => !doneSet.has(p.slug) && !soloSet.has(p.slug) && ((p.module && grantMods.has(p.module)) || grantLessons.has(p.slug)));
-  const markable = [...solo.map((x) => x.page), ...open];
-  const markList = (markable.length ? markable : pages.filter((p) => !doneSet.has(p.slug))).map((p) => ({ slug: p.slug, title: p.title }));
+  // переглянуте за посиланням теж можна потім пройти разом, тому воно в списку для позначення
+  const markable = [...solo.map((x) => x.page), ...viaLink.map((x) => x.page!), ...open];
+  const markList = (markable.length ? markable : pages.filter((p) => !togetherSet.has(p.slug))).map((p) => ({ slug: p.slug, title: p.title }));
 
   const decks = done.map((r) => loadDeck(r.lesson_slug as string)).filter((d): d is NonNullable<typeof d> => !!d && d.words.length > 0);
   const wordsTotal = decks.reduce((n, d) => n + d.words.length, 0);
@@ -207,6 +210,32 @@ export default async function StudentProfilePage({ params }: { params: { id: str
                 {t("Ще жодної. Обери лекцію вище й натисни «Пройдено, задати домашку».")}
               </p>
             )}
+          </Section>
+        </div>
+      )}
+
+      {viaLink.length > 0 && (
+        <div className="mt-10">
+          <Section title={t('Переглянув за посиланням ({n})', { n: viaLink.length })}>
+            <p className="mb-4 text-sm text-paper-muted">
+              {t("Відкривав ці лекції за публічним посиланням до реєстрації — історія переїхала на акаунт.")}
+            </p>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {viaLink.map(({ row, page }) => (
+                <LectureCard
+                  key={page!.slug}
+                  slug={page!.slug}
+                  title={page!.title}
+                  level={page!.level}
+                  icon={page!.icon}
+                  cover={page!.cover}
+                  stats={lectureStats(page!.slug, attempts)}
+                  completedAt={row.completed_at as string}
+                  homework={null}
+                  fmt={fmtDate}
+                />
+              ))}
+            </div>
           </Section>
         </div>
       )}

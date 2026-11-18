@@ -1,7 +1,9 @@
 import { requireTeacher } from '@/app/teacher/results/requireTeacher';
 import { loadStudents } from '@/lib/students';
 import { StudentsGrid } from '@/components/students/StudentsGrid';
-import { t } from '@/i18n/server';
+import { loadGuests } from '@/lib/guests';
+import { GuestsPanel } from '@/components/teacher/GuestsPanel';
+import { getLocale, t } from '@/i18n/server';
 import { InviteStudent } from '@/components/teacher/InviteStudent';
 
 export const dynamic = 'force-dynamic';
@@ -18,7 +20,7 @@ function Tile({ value, label, hint }: { value: string | number; label: string; h
 
 export default async function StudentsPage() {
   const supabase = await requireTeacher('/teacher/students');
-  const { rows } = await loadStudents(supabase);
+  const [{ rows }, guests] = await Promise.all([loadStudents(supabase), loadGuests(supabase, getLocale())]);
 
   const active = rows.filter((r) => r.activeDays7 > 0).length;
   const lectures = rows.reduce((n, r) => n + r.lecturesDone, 0);
@@ -43,6 +45,7 @@ export default async function StudentsPage() {
       </div>
 
       <StudentsGrid rows={rows} />
+      <GuestsPanel rows={guests} />
     </main>
   );
 }

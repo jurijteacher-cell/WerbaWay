@@ -2,18 +2,24 @@ import { t } from '@/i18n/server';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
 import { Mark } from '@/components/Mark';
+import { GuestSession } from '@/components/guest/GuestSession';
 
-/** Смужка бренду для гостя; учень з акаунтом бачить звичайне меню сайту (TopNav) */
-export async function PublicBar() {
+/**
+ * Смужка бренду для гостя; учень з акаунтом бачить звичайне меню сайту (TopNav).
+ * Тут же вмикаємо облік гостя й канал для «Дивитися» — лише коли справді немає акаунта.
+ */
+export async function PublicBar({ token }: { token: string }) {
   const {
     data: { user },
   } = await createClient().auth.getUser();
   if (user) return null;
   return (
-    <header className="border-b border-ink-line bg-ink-raised/85">
-      <div className="h-1" style={{ background: 'linear-gradient(90deg,#e4d9ff 0,#9adcc3 25%,#d3e9fb 50%,#f4b7c5 75%,#ded1ff 100%)' }} />
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2.5">
-        <span className="flex items-center gap-2.5">
+    <>
+      <GuestSession token={token} />
+      <header className="border-b border-ink-line bg-ink-raised/85">
+        <div className="h-1" style={{ background: 'linear-gradient(90deg,#e4d9ff 0,#9adcc3 25%,#d3e9fb 50%,#f4b7c5 75%,#ded1ff 100%)' }} />
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2.5">
+          <span className="flex items-center gap-2.5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <Mark size={34} className="rounded-full" />
           <span className="text-[15px] font-semibold tracking-[0.16em]">
@@ -23,7 +29,8 @@ export async function PublicBar() {
         <Link href="/login" className="ww-btn ww-btn-ghost ww-btn-sm">
           {t("Увійти")}
         </Link>
-      </div>
-    </header>
+        </div>
+      </header>
+    </>
   );
 }

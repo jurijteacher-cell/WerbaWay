@@ -22,10 +22,12 @@ type ViewMode = 'desk' | 'mirror';
 const MODE_KEY = 'ww.live.viewMode';
 
 /**
- * Викладач дивиться екран учня наживо — рівно те, що бачить учень у курсі. Лише перегляд:
- * кліки й клавіші сюди не доходять, учневі нічого не надсилається, крім прохання про свіжий знімок.
+ * Викладач дивиться екран наживо — рівно те, що бачить учень. Лише перегляд: кліки й клавіші
+ * сюди не доходять, учневі нічого не надсилається, крім прохання про свіжий знімок.
+ * `topic` — classTopic(uid) для учня з акаунтом або guestTopic(vid) для гостя за посиланням;
+ * `studentId` є лише в учня з акаунтом (кнопка «Пройдено, задати домашку»).
  */
-export function LiveWatch({ studentId, name }: { studentId: string; name: string }) {
+export function LiveWatch({ topic, name, studentId }: { topic: string; name: string; studentId?: string }) {
   const t = useT();
   const [student, setStudent] = useState<Presence | null>(null);
   const [hasFrame, setHasFrame] = useState(false);
@@ -170,7 +172,7 @@ export function LiveWatch({ studentId, name }: { studentId: string; name: string
   }, []);
 
   const { link, send } = useLiveChannel({
-    studentId,
+    topic,
     presence: () => ({ role: 'teacher', mode: 'watch', at: Date.now() }),
     onMessage: (m) => {
       if (m.k !== 'rr') return;
@@ -251,7 +253,7 @@ export function LiveWatch({ studentId, name }: { studentId: string; name: string
             {t('Як на екрані учня')}
           </button>
         </span>
-        {slug && (
+        {slug && studentId && (
           <>
             <Link href={`/learn/${slug}`} className="ww-btn ww-btn-ghost" target="_blank">
               {t("Відкрити лекцію ↗")}

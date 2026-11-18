@@ -1,10 +1,13 @@
 import Link from 'next/link';
+import { cookies } from 'next/headers';
 import { createClient } from '@/lib/supabase/server';
 import { LogoutButton } from './LogoutButton';
 import { NavLinks, type NavItem } from './NavLinks';
 import { SearchPalette } from './SearchPalette';
 import { MenuDrawer, MobileNav, type Tab } from './MobileNav';
 import { LiveBeacon } from './live/LiveBeacon';
+import { GuestClaim } from '@/components/guest/GuestClaim';
+import { VID_COOKIE } from '@/lib/guest';
 import { Mark } from '@/components/Mark';
 import { TeacherBell } from '@/components/TeacherBell';
 import { LangSwitch } from '@/components/LangSwitch';
@@ -57,6 +60,8 @@ export async function TopNav() {
     <>
     {/* учень онлайн з будь-якої сторінки; коли викладач натисне «Дивитися» — у лекції йому видно екран учня */}
     {!isTeacher && <LiveBeacon studentId={user.id} name={(profile?.full_name as string | null) ?? undefined} />}
+    {/* до цього браузера вже заходив гість за посиланням — переносимо його лекції на цей акаунт */}
+    {!isTeacher && !!cookies().get(VID_COOKIE)?.value && <GuestClaim />}
     {/* relative z-40: backdrop-blur робить шапку окремим шаром, без z-index її меню (мова, пошук)
         ховаються під обкладинку лекції. 40 — вище контенту, нижче повноекранних вікон (z-50+). */}
     <header className="relative z-40 border-b border-ink-line bg-ink-raised/85 backdrop-blur">

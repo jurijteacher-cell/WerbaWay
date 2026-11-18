@@ -4,9 +4,14 @@
  * Records every «Sprawdź» in Notion embeds to Supabase under the logged-in account
  * (see embed-auth.ts). Attempts made before login wait in memory and are sent right after it.
  * Teacher accounts record nothing — for clicking through exercises on a screen share.
+ *
+ * Гість за публічним посиланням /s/<token> акаунта не має: його відповіді пишуться під куку
+ * ww_vid (lib/guest.ts), а після реєстрації переїжджають на акаунт (claim_guest). Куку видає
+ * лише наш сайт, тому у вправі в Notion (чужий сайт) гостьового запису не буває.
  */
 
 import { getAccessToken, getState as authState, subscribe as authSubscribe } from '@/lib/embed-auth';
+import { readVid } from '@/lib/guest';
 
 export type AttemptInput = {
   embed?: string;
@@ -58,9 +63,15 @@ let retryMs = 0;
 
 async function flush() {
   const a = authState();
-  if (!a.userId || a.role === 'teacher' || !queue.length || sending) return;
-  const token = await getAccessToken();
-  if (!token) return;
+  if (a.role === 'teacher' || !queue.length || sending) return;
+  // акаунт — пишемо під токен; інакше гість за посиланням — під куку ww_vid
+  let token: string | null = null;
+  if (a.userId) {
+    token = await getAccessToken();
+    if (!token) return;
+  } else if (!a.ready || !readVid()) {
+    return;
+  }
   sending = true;
   const batch = queue.slice(0, 50);
   let failed = false;
@@ -69,7 +80,7 @@ async function flush() {
       method: 'POST',
       keepalive: true,
       headers: { 'Content-Type': 'text/plain' },
-      body: JSON.stringify({ token, attempts: batch }),
+      body: JSON.stringify(token ? { token, attempts: batch } : { guest: true, attempts: batch }),
     });
     if (r.ok) {
       queue = queue.slice(batch.length);

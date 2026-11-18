@@ -16,7 +16,58 @@ async function teacher() {
   return data?.role === 'teacher' ? { supabase, user } : null;
 }
 
-/** GET ?slug= — публічне посилання + учні з акаунтом і чи відкрита їм ця лекція */
+export type ShareGuest = {
+  vid: string;
+  num: number;
+  ua: string | null;
+  firstAt: string;
+  lastAt: string;
+  opens: number;
+  seconds: number;
+  attempts: number;
+  accuracy: number | null;
+  /** якщо гість уже зареєструвався — під яким ім'ям */
+  claimedName: string | null;
+};
+
+/** Гості, що відкривали цю лекцію за посиланням (по браузерах, кука ww_vid) */
+async function guestsOf(supabase: ReturnType<typeof createClient>, slug: string): Promise<ShareGuest[]> {
+  const { data: views } = await supabase
+    .from('guest_views')
+    .select('visitor_id, first_at, last_at, opens, seconds')
+    .eq('lesson_slug', slug)
+    .order('last_at', { ascending: false })
+    .limit(60);
+  if (!views?.length) return [];
+  const ids = views.map((v) => v.visitor_id as string);
+  const [{ data: stats }, { data: profiles }] = await Promise.all([
+    supabase.from('guest_visitor_stats').select('id, num, ua, claimed_by, attempts, first_total, first_ok').in('id', ids),
+    supabase.from('profiles').select('id, full_name'),
+  ]);
+  const byId = new Map((stats ?? []).map((g) => [g.id as string, g]));
+  const nameOf = new Map((profiles ?? []).map((p) => [p.id as string, (p.full_name as string) || null]));
+  return views.flatMap((v) => {
+    const g = byId.get(v.visitor_id as string);
+    if (!g) return [];
+    const total = (g.first_total as number) ?? 0;
+    return [
+      {
+        vid: v.visitor_id as string,
+        num: g.num as number,
+        ua: (g.ua as string) ?? null,
+        firstAt: v.first_at as string,
+        lastAt: v.last_at as string,
+        opens: (v.opens as number) ?? 1,
+        seconds: (v.seconds as number) ?? 0,
+        attempts: (g.attempts as number) ?? 0,
+        accuracy: total ? Math.round((((g.first_ok as number) ?? 0) / total) * 100) : null,
+        claimedName: g.claimed_by ? (nameOf.get(g.claimed_by as string) ?? tr("Учень без імені")) : null,
+      },
+    ];
+  });
+}
+
+/** GET ?slug= — публічне посилання, гості за ним + учні з акаунтом і чи відкрита їм ця лекція */
 export async function GET(req: Request) {
   const t = await teacher();
   if (!t) return NextResponse.json({ error: 'forbidden' }, { status: 403 });
@@ -24,10 +75,10 @@ export async function GET(req: Request) {
   const page = loadPage(slug);
   if (!page) return NextResponse.json({ error: 'not found' }, { status: 404 });
 
-  const [{ data: profiles }, { data: grants }, { data: done }, { data: share }] = await Promise.all([
+  const [{ data: profiles }, { data: grants }, { data: done }, { data: share }, guests] = await Promise.all([
     t.supabase.from('profiles').select('id, full_name, role'),
     t.supabase.from('student_access').select('student_id, kind, ref'),
-    t.supabase.from('lesson_progress').select('student_id').eq('lesson_slug', slug),
+    t.supabase.from('lesson_progress').select('student_id, completed_via').eq('lesson_slug', slug),
     t.supabase
       .from('lecture_shares')
       .select('token, opens, created_at')
@@ -36,8 +87,10 @@ export async function GET(req: Request) {
       .order('created_at', { ascending: false })
       .limit(1)
       .maybeSingle(),
+    guestsOf(t.supabase, slug),
   ]);
-  const doneSet = new Set((done ?? []).map((d) => d.student_id as string));
+  // «пройдено разом» — лише те, що позначив викладач; 'share' — учень дивився сам за посиланням
+  const doneSet = new Set((done ?? []).filter((d) => d.completed_via !== 'share').map((d) => d.student_id as string));
   const students = (profiles ?? [])
     .filter((p) => p.role !== 'teacher')
     .map((p) => {
@@ -48,7 +101,7 @@ export async function GET(req: Request) {
     })
     .sort((a, b) => a.name.localeCompare(b.name, 'uk'));
 
-  return NextResponse.json({ link: share ? { url: `/s/${share.token}`, opens: share.opens } : null, students });
+  return NextResponse.json({ link: share ? { url: `/s/${share.token}`, opens: share.opens } : null, students, guests });
 }
 
 /**

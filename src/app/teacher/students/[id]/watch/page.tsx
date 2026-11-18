@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { requireTeacher } from '@/app/teacher/results/requireTeacher';
 import { LiveWatch } from '@/components/live/LiveWatch';
+import { classTopic } from '@/lib/live/protocol';
 import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
@@ -25,7 +26,7 @@ export default async function WatchStudentPage({ params }: { params: { id: strin
         <h1 className="font-display text-2xl text-paper">{t('Екран учня: {name}', { name })}</h1>
         <p className="text-sm text-paper-muted">{t('Лише перегляд — учень бачить позначку «Викладач бачить твій екран».')}</p>
       </div>
-      <LiveWatch studentId={params.id} name={name} />
+      <LiveWatch topic={classTopic(params.id)} studentId={params.id} name={name} />
     </main>
   );
 }

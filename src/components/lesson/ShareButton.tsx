@@ -4,6 +4,12 @@
 import { useT } from '@/i18n/client';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
+import type { ShareGuest } from '@/app/api/learn/share/route';
+import { LiveBadge } from '@/components/live/LiveBadge';
+import { useLiveStatuses } from '@/components/live/useLiveStatuses';
+import { guestTopic } from '@/lib/live/protocol';
+import { guestLabel } from '@/lib/guest';
+import { relDay } from '@/lib/students';
 
 type Student = { id: string; name: string; lesson: boolean; viaCourse: boolean; done: boolean };
 type Tab = 'student' | 'link';
@@ -40,7 +46,7 @@ export function ShareButton({ slug, title, compact }: { slug: string; title: str
 function ShareDialog({ slug, title, onClose }: { slug: string; title: string; onClose: () => void }) {
   const t = useT();
   const [tab, setTab] = useState<Tab>('student');
-  const [data, setData] = useState<{ link: { url: string; opens: number } | null; students: Student[] } | null>(null);
+  const [data, setData] = useState<{ link: { url: string; opens: number } | null; students: Student[]; guests: ShareGuest[] } | null>(null);
   const [linkBusy, setLinkBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
   const [q, setQ] = useState('');
@@ -253,10 +259,56 @@ function ShareDialog({ slug, title, onClose }: { slug: string; title: string; on
                 </div>
               </>
             )}
+            {data && <Guests list={data.guests ?? []} />}
           </div>
         )}
         {err && <p className="px-5 pb-4 text-sm text-incorrect">{err}</p>}
       </div>
+    </div>
+  );
+}
+
+/**
+ * Хто відкривав це посилання — по браузерах (кука ww_vid). Хто зараз у лекції, того
+ * можна дивитися наживо, як учня з акаунтом. Після реєстрації поряд з'являється ім'я акаунта.
+ */
+function Guests({ list }: { list: ShareGuest[] }) {
+  const t = useT();
+  const topics = useMemo(() => list.map((g) => guestTopic(g.vid)), [list]);
+  const live = useLiveStatuses(topics);
+
+  return (
+    <div className="mt-4 border-t border-dashed border-ink-line pt-3">
+      <p className="mb-2 text-sm font-medium text-paper">{t("Хто відкривав")}</p>
+      {!list.length ? (
+        <p className="text-xs text-paper-muted">{t("Ще ніхто не відкривав це посилання.")}</p>
+      ) : (
+        <ul className="max-h-[32vh] space-y-1 overflow-y-auto pr-1">
+          {list.map((g) => {
+            const mins = Math.round(g.seconds / 60);
+            const facts = [
+              g.ua,
+              relDay(g.lastAt),
+              g.opens > 1 ? t('{n} заходи', { n: g.opens }) : null,
+              mins >= 1 ? t('{n} хв у лекції', { n: mins }) : null,
+              g.attempts ? t('{n} відповідей', { n: g.attempts }) : null,
+              g.accuracy == null ? null : `${g.accuracy}%`,
+            ].filter(Boolean);
+            return (
+              <li key={g.vid} className="flex flex-wrap items-center gap-x-3 gap-y-1 rounded-xl px-2 py-1.5 hover:bg-ink-soft">
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate text-sm text-paper">
+                    {guestLabel(g.num)}
+                    {g.claimedName && <span className="text-paper-muted"> → {g.claimedName}</span>}
+                  </span>
+                  <span className="block truncate text-xs text-paper-muted">{facts.join(' · ')}</span>
+                </span>
+                <LiveBadge watchHref={`/teacher/guests/${g.vid}/watch`} status={live[guestTopic(g.vid)]} />
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </div>
   );
 }

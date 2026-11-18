@@ -1,6 +1,7 @@
 import { createServerClient, type CookieOptions } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
 import { DEFAULT_LOCALE, LOCALE_COOKIE, LOCALE_EXPLICIT_HEADER, LOCALE_HEADER, LOCALE_PARAM, LOCALES } from '@/i18n/config';
+import { VID_COOKIE, VID_MAX_AGE } from '@/lib/guest';
 
 /**
  * Мова запиту: ?lang= (ембед у iframe куки не бачить) → кука → типова.
@@ -85,6 +86,21 @@ export async function middleware(request: NextRequest) {
     // оновлені куки сесії (refresh) мають дійти до браузера й тут
     response.cookies.getAll().forEach((c) => next.cookies.set(c));
     return next;
+  }
+
+  // Гість за публічним посиланням: стала «особистість» браузера на рік. Потрібна, щоб викладач
+  // бачив його екран наживо (канал guest:<vid>), щоб зберігалися відповіді у вправах і щоб після
+  // реєстрації переглянуті лекції переїхали на акаунт (claim_guest). Залогіненому — не треба.
+  if (!user && /^\/s\/[A-Za-z0-9_-]{8,40}(\/|$)/.test(path) && !request.cookies.get(VID_COOKIE)?.value) {
+    response.cookies.set({
+      name: VID_COOKIE,
+      value: crypto.randomUUID(),
+      path: '/',
+      maxAge: VID_MAX_AGE,
+      sameSite: 'lax',
+      httpOnly: false, // читає клієнт: назва каналу Realtime
+      secure: process.env.NODE_ENV === 'production',
+    });
   }
 
   const isProtected =

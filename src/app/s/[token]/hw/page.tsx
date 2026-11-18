@@ -16,7 +16,7 @@ export default async function SharedHomework({ params }: { params: { token: stri
   if (!page || !page.hasHomework) notFound();
   return (
     <>
-      <PublicBar />
+      <PublicBar token={params.token} />
       <LessonView page={page} mode="homework" hw={null} publicBase={`/s/${params.token}`} />
     </>
   );
