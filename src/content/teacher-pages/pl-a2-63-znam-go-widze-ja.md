@@ -5,6 +5,7 @@ level: A2
 number: 63
 module: pl-a2
 moduleTitle: Польська A2
+notion: https://app.notion.com/p/41c96e03c7c881e3a57dfa6c2d906e35
 teacherOf: pl-a2-63-znam-go-widze-ja
 ---
 

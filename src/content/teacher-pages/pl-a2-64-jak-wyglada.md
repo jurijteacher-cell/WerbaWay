@@ -5,6 +5,7 @@ level: A2
 number: 64
 module: pl-a2
 moduleTitle: Польська A2
+notion: https://app.notion.com/p/41c96e03c7c88110a866e823c4e4fc45
 teacherOf: pl-a2-64-jak-wyglada
 ---
 

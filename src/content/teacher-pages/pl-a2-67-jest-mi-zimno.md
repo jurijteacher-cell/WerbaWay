@@ -5,6 +5,7 @@ level: A2
 number: 67
 module: pl-a2
 moduleTitle: Польська A2
+notion: https://app.notion.com/p/41c96e03c7c881a6a993e3c2b44ae922
 teacherOf: pl-a2-67-jest-mi-zimno
 ---
 

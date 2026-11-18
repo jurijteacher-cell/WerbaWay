@@ -5,6 +5,7 @@ level: A2
 number: 63
 module: pl-a2
 moduleTitle: Польська A2
+notion: https://app.notion.com/p/41c96e03c7c88188a334cf1eecac7c97
 cover: https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&h=900&fit=crop&q=80&fm=jpg
 ---
 
