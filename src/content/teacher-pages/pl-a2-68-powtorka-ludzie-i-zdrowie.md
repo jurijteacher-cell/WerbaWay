@@ -5,6 +5,7 @@ level: A2
 number: 68
 module: pl-a2
 moduleTitle: Польська A2
+notion: https://app.notion.com/p/41c96e03c7c881679351f73f76b1fc93
 teacherOf: pl-a2-68-powtorka-ludzie-i-zdrowie
 ---
 

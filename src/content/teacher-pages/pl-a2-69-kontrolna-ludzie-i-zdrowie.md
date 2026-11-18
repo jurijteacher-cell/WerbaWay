@@ -5,6 +5,7 @@ level: A2
 number: 69
 module: pl-a2
 moduleTitle: Польська A2
+notion: https://app.notion.com/p/41c96e03c7c8812dae79e8380cf262d4
 teacherOf: pl-a2-69-kontrolna-ludzie-i-zdrowie
 ---
 

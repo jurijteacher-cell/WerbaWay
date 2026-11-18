@@ -5,6 +5,7 @@ level: A2
 number: 72
 module: pl-a2
 moduleTitle: Польська A2
+notion: https://app.notion.com/p/41c96e03c7c881228d50ddc4919f8cc2
 teacherOf: pl-a2-72-rezerwacja-ile-osob-ile-nocy
 ---
 
@@ -66,7 +67,7 @@ teacherOf: pl-a2-72-rezerwacja-ile-osob-ile-nocy
 
 </div></aside>
 
-<b>Ключ e2:</b> 1 P · 2 F (balkony tylko w dwóch pokojach) · 3 F (parking bezpłatny) · 4 P.<br><b>Ключ e3:</b> 1 pięć · 2 2142 zł · 3 za domem.<br><b>Пастки:</b> e3-1 — <i>dwa</i> звучить про балкони, <i>dziewięć</i> — про людей; e3-2 — 2380 зł — це ціна без знижки (3 × 280 + 350 = 1190 за ніч × 2), 1190 — за одну ніч. Сильному учневі можна дати порахувати.
+<b>Ключ e2:</b> 1 P · 2 F (balkony tylko w dwóch pokojach) · 3 F (parking bezpłatny) · 4 P.<br><b>Ключ e3:</b> 1 pięć · 2 2142 zł · 3 za domem.<br><b>Пастки:</b> e3-1 — <i>dwa</i> звучить про балкони, <i>dziewięć</i> — про людей; e3-2 — 2380 zł — це ціна без знижки (3 × 280 + 350 = 1190 за ніч × 2), 1190 — за одну ніч. Сильному учневі можна дати порахувати.
 
 ---
 
@@ -86,7 +87,7 @@ teacherOf: pl-a2-72-rezerwacja-ile-osob-ile-nocy
 
 - <b>Граматика:</b> ввічливе прохання з 71 — <i>chcielibyśmy, chciałby</i>; <i>przyimki-kierunku</i> з 70 — <i>w góry / w górach, za domem</i>; займенники <i>ich / je</i> з 63 → тепер іменники.
 - <b>Слова 51–71:</b> <i>zespół, wyjazd, przewodnik, zniżka</i>, ціни й числа з 71.
-- <b>Сюжет:</b> після від'їзду мами (68) — новий модуль. Pan Piotr вирішив повезти команду на <i>wyjazd integracyjny</i> до Закопаного 14–16 березня; Олена бронює <i>Pensjonat „Pod Jodłami”</i> (вигаданий): 9 осіб, 3 двомісні + 1 тримісний, ліжечко для синка колеги, 2142 зł зі знижкою. Пес пана Пйотра лишається вдома. Гачок на 73: поїздка потягом.
+- <b>Сюжет:</b> після від'їзду мами (68) — новий модуль. Pan Piotr вирішив повезти команду на <i>wyjazd integracyjny</i> до Закопаного 14–16 березня; Олена бронює <i>Pensjonat „Pod Jodłami”</i> (вигаданий): 9 осіб, 3 двомісні + 1 тримісний, ліжечко для синка колеги, 2142 zł зі знижкою. Пес пана Пйотра лишається вдома. Гачок на 73: поїздка потягом.
 
 ---
 
