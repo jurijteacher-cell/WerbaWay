@@ -14,7 +14,12 @@ type Rep = {
   destroy?: () => void;
   on: (ev: string, cb: (p: { width: number; height: number }) => void) => void;
   wrapper: HTMLElement;
+  iframe?: HTMLIFrameElement;
 };
+
+/** `desk` — кадр по вікну викладача; `mirror` — точно екран учня. */
+type ViewMode = 'desk' | 'mirror';
+const MODE_KEY = 'ww.live.viewMode';
 
 /**
  * Викладач дивиться екран учня наживо — рівно те, що бачить учень у курсі. Лише перегляд:
@@ -24,6 +29,8 @@ export function LiveWatch({ studentId, name }: { studentId: string; name: string
   const t = useT();
   const [student, setStudent] = useState<Presence | null>(null);
   const [hasFrame, setHasFrame] = useState(false);
+  const [mode, setMode] = useState<ViewMode>('desk');
+  const modeRef = useRef<ViewMode>('desk');
   const stageRef = useRef<HTMLDivElement>(null);
   const mountRef = useRef<HTMLDivElement>(null);
   const repRef = useRef<Rep | null>(null);
@@ -31,19 +38,71 @@ export function LiveWatch({ studentId, name }: { studentId: string; name: string
   const gotFrame = useRef(false);
   const sendRef = useRef<(m: ClassMsg) => Promise<boolean>>(() => Promise.resolve(false));
 
-  // екран учня по ширині кадру викладача (не більше 1:1)
+  /**
+   * Два режими кадру:
+   *  `desk`   — ширину й висоту кадру задає вікно викладача. Media queries живуть усередині
+   *             кадру й перераховуються під цю ширину, тож мобільна колонка учня розкладається
+   *             так, як на ноуті (гілок на JS у лекціях немає — лейаут суто на CSS).
+   *  `mirror` — рівно те, що бачить учень, збільшене так, щоб його екран влазив цілком.
+   */
   const fit = useCallback(() => {
     const stage = stageRef.current;
     const mount = mountRef.current;
     const rep = repRef.current;
     if (!stage || !mount || !rep) return;
+    const W = Math.max(320, Math.round(stage.clientWidth));
+    const H = Math.max(520, Math.round(window.innerHeight - stage.getBoundingClientRect().top - 24));
+    const box = (w: number, h: number) => {
+      if (rep.iframe) {
+        rep.iframe.style.width = `${w}px`;
+        rep.iframe.style.height = `${h}px`;
+      }
+      rep.wrapper.style.width = `${w}px`;
+      rep.wrapper.style.height = `${h}px`;
+    };
+    if (modeRef.current === 'desk') {
+      box(W, H);
+      rep.wrapper.style.transform = 'none';
+      mount.style.width = `${W}px`;
+      mount.style.height = `${H}px`;
+      return;
+    }
     const vp = viewport.current;
-    const k = Math.min(1, stage.clientWidth / vp.w);
+    const k = Math.min(W / vp.w, H / vp.h);
+    box(vp.w, vp.h);
     rep.wrapper.style.transform = `scale(${k})`;
     rep.wrapper.style.transformOrigin = 'top left';
-    mount.style.width = `${vp.w * k}px`;
-    mount.style.height = `${vp.h * k}px`;
+    mount.style.width = `${Math.round(vp.w * k)}px`;
+    mount.style.height = `${Math.round(vp.h * k)}px`;
   }, []);
+
+  // вибір режиму тримається між сесіями
+  useEffect(() => {
+    let saved: string | null = null;
+    try {
+      saved = localStorage.getItem(MODE_KEY);
+    } catch {
+      saved = null; // приватний режим — лишаємо типовий
+    }
+    if (saved === 'desk' || saved === 'mirror') {
+      modeRef.current = saved;
+      setMode(saved);
+    }
+  }, []);
+
+  const switchMode = useCallback(
+    (m: ViewMode) => {
+      modeRef.current = m;
+      setMode(m);
+      try {
+        localStorage.setItem(MODE_KEY, m);
+      } catch {
+        /* не критично */
+      }
+      fit();
+    },
+    [fit]
+  );
 
   const resetReplayer = useCallback(
     async (rrweb: typeof import('rrweb')) => {
@@ -69,6 +128,7 @@ export function LiveWatch({ studentId, name }: { studentId: string; name: string
       });
       rep.startLive();
       repRef.current = rep;
+      fit(); // новий програвач приходить із розміром учня — одразу приводимо до вибраного режиму
     },
     [fit]
   );
@@ -93,10 +153,11 @@ export function LiveWatch({ studentId, name }: { studentId: string; name: string
               setHasFrame(true);
             }
           }
+          fit();
         })
         .catch(() => undefined);
     },
-    [resetReplayer]
+    [resetReplayer, fit]
   );
 
   const expectSeq = useRef(0);
@@ -172,6 +233,24 @@ export function LiveWatch({ studentId, name }: { studentId: string; name: string
               : t("не в мережі")}
         </span>
         <span className="flex-1" />
+        <span className="inline-flex gap-1">
+          <button
+            type="button"
+            onClick={() => switchMode('desk')}
+            aria-pressed={mode === 'desk'}
+            className={`ww-btn ww-btn-sm ${mode === 'desk' ? 'ww-btn-accent' : 'ww-btn-ghost'}`}
+          >
+            {t('Мій екран')}
+          </button>
+          <button
+            type="button"
+            onClick={() => switchMode('mirror')}
+            aria-pressed={mode === 'mirror'}
+            className={`ww-btn ww-btn-sm ${mode === 'mirror' ? 'ww-btn-accent' : 'ww-btn-ghost'}`}
+          >
+            {t('Як на екрані учня')}
+          </button>
+        </span>
         {slug && (
           <>
             <Link href={`/learn/${slug}`} className="ww-btn ww-btn-ghost" target="_blank">
