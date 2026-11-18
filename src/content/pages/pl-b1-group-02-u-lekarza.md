@@ -323,11 +323,27 @@ U lekarza dopełniacz jest wszędzie: kiedy czegoś <b>nie ma</b>, kiedy liczymy
 
 ## 🏠 8. Praca domowa
 
-Trzy części: <b>ćwiczenia</b>, <b>czytanie</b> i <b>pisanie</b>.
+Cztery części: <b>ćwiczenia</b>, <b>wideo</b>, <b>czytanie</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-02-u-lekarza/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Jak leczyć przeziębienie? Fakty i mity”</b> (kanał Doktor Michał, 5 minut):
+
+<video source="https://www.youtube.com/watch?v=x2qdVS2nYwQ">
+Jak leczyć przeziębienie? Fakty i mity
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz trzy sposoby leczenia, które według lekarza <b>nie</b> działają. Każdy zapisz z dopełniaczem po „nie” (np. <i>nie ma sensu brać antybiotyku</i>).
+1. Co lekarz radzi robić przy przeziębieniu? Podaj dwie rady.
+1. Czy w Twoim kraju leczy się przeziębienie tak samo? Napisz 2–3 zdania i użyj dwóch form dopełniacza po liczbach (np. <i>pięć dni, dwa razy dziennie</i>).
+
+---
 
 ### 📄 Do czytania
 
@@ -360,6 +376,7 @@ Użyj <b>co najmniej sześciu form dopełniacza</b>, w tym dwóch po „nie”. 
 
 - <b>E-recepta z SMS-a — kod i PESEL, ważność 30 dni, antybiotyk 7 dni:</b> <a href="https://pacjent.gov.pl/e-recepta">pacjent.gov.pl — E-recepta</a>
 - <b>Numery 112 i 999, SOR bez skierowania, kolejność według stanu pacjenta:</b> <a href="https://nfz.gov.pl/dla-pacjenta/na-ratunek/">nfz.gov.pl — Na ratunek</a>
+- <b>Wideo do pracy domowej:</b> <a href="https://www.youtube.com/watch?v=x2qdVS2nYwQ">Jak leczyć przeziębienie? Fakty i mity — Doktor Michał (YouTube)</a>
 
 ---
 

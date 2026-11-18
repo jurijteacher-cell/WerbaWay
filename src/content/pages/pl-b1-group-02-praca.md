@@ -154,17 +154,17 @@ Praca domowa
 
 ### Wideo
 
-Obejrzyj film <b>„Jak negocjować wynagrodzenie na rozmowie kwalifikacyjnej — 4 sposoby”</b> (Career Academy):
+Obejrzyj film <b>„Jak dobrze negocjować pensję i podwyżkę?”</b> (Kammel Czanel, Tomasz Kammel, 4 minuty):
 
-<video source="https://www.youtube.com/watch?v=URVjCmytHkY">
-Jak negocjować wynagrodzenie na rozmowie kwalifikacyjnej — 4 sposoby
+<video source="https://www.youtube.com/watch?v=8Y98sDIIW28">
+Jak dobrze negocjować pensję i podwyżkę?
 </video>
 
 Odpowiedz pisemnie (po 1–2 zdania):
 
-1. Zapisz cztery sposoby z filmu — każdy jako rzeczownik odczasownikowy, np. „przygotowanie…”, „podanie…”.
-1. Który sposób wydaje Ci się najskuteczniejszy? Dlaczego?
-1. Czy któraś rada nie zadziała w Twojej branży albo w Twoim kraju? Uzasadnij.
+1. Zapisz trzy rady z filmu — każdą jako rzeczownik odczasownikowy, np. „przygotowanie…”, „podanie…”, „zapytanie…”.
+1. Która rada wydaje Ci się najskuteczniejsza? Dlaczego?
+1. Czy któraś rada nie zadziała w Twojej branży albo w Twoim kraju? Uzasadnij — użyj <i>przed</i>, <i>po</i> albo <i>w trakcie</i> z rzeczownikiem odczasownikowym.
 
 ### Do czytania
 
@@ -262,3 +262,4 @@ Wszystkie 39 słów lekcji w jednym miejscu. Wracaj tu przed pracą domową i pr
 - <a href="https://powroty.gov.pl/nowosc-w-prawie-pracy/">Działalność gospodarcza i umowa zlecenia wliczone do stażu pracy — Powroty.gov.pl</a> — zmiany od 2026 roku.
 - <a href="https://zielonalinia.gov.pl/praca-zdalna-przydatne-informacje-dla-pracownikow-i-pracodawcow/">Praca zdalna — przydatne informacje — Zielona Linia (gov.pl)</a> — rodzaje pracy zdalnej i limit 24 dni.
 - <a href="https://forsal.pl/artykuly/1120405,konstytucja-biznesu-ulga-na-start-pol-roku-bez-skladek-na-ubezpieczenie-spoleczne.html">Ulga na start — pół roku bez składek — Forsal</a> — ulga dla nowych przedsiębiorców.
+- <a href="https://www.youtube.com/watch?v=8Y98sDIIW28">Jak dobrze negocjować pensję i podwyżkę? — Tomasz Kammel (YouTube)</a> — wideo do pracy domowej.

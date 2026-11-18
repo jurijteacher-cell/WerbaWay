@@ -158,11 +158,27 @@ Wróć do słowa z rozgrzewki. Czy wiesz już, czy to slang, czy zwykłe słowo 
 
 ## 9. Praca domowa
 
-Trzy części — słownictwo i gramatyka, czytanie i pisanie.
+Cztery części — słownictwo i gramatyka, wideo, czytanie i pisanie.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-03-slang/hw">
 Praca domowa
 </embed>
+
+### Wideo
+
+Obejrzyj odcinek <b>„SZPONCIĆ, 67, OKPA — omówienie plebiscytu na Młodzieżowe Słowo Roku”</b> (kanał Mówiąc Inaczej, około 8 minut):
+
+<video source="https://www.youtube.com/watch?v=20eAykakywo">
+SZPONCIĆ, 67, OKPA — Młodzieżowe Słowo Roku
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz trzy słowa, o których mówi autorka, i dopisz, co każde znaczy.
+1. Które z tych słów powiedziałbyś albo powiedziałabyś szefowi, a których nie? Dlaczego?
+1. Zapytaj trzech znajomych, czy znają jedno z tych słów, i opisz wynik jednym zdaniem z liczebnikiem (np. <i>dwóch kolegów znało to słowo, troje nie</i>).
+
+---
 
 ### Do czytania
 

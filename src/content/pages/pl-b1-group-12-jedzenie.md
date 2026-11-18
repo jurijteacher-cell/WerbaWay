@@ -337,11 +337,27 @@ Słuchanie — jak na egzaminie
 
 ## 🏠 9. Praca domowa
 
-Dwie części: <b>ćwiczenia</b> i <b>pisanie</b>.
+Trzy części: <b>ćwiczenia</b>, <b>wideo</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-12-jedzenie/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Co nasza polsko-koreańska rodzina je w Polsce?”</b> (kanał Pierogi z Kimchi, około 15 minut):
+
+<video source="https://www.youtube.com/watch?v=Pn4F8oPDO0s">
+Co nasza polsko-koreańska rodzina je w Polsce?
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz trzy potrawy, które pojawiają się w filmie.
+1. Co smakuje bohaterom, a co im nie smakuje? Napisz dwa zdania z <i>smakuje mu</i> / <i>nie smakuje jej</i>.
+1. Co z polskiej kuchni smakuje Tobie, a czego nie jesz? Napisz 2–3 zdania i użyj <i>smakuje mi</i>, <i>podoba mi się</i>, <i>brakuje mi</i>.
+
+---
 
 ### ✍️ Pisanie — jak na egzaminie
 
@@ -368,6 +384,7 @@ Użyj <b>co najmniej sześciu form</b> z celownikiem (np. <i>smakuje ci, nie chc
 - <b>Warzywa i owoce powinny stanowić połowę talerza (Talerz Zdrowego Żywienia, NIZP PZH):</b> <a href="https://www.gov.pl/web/psse-pyrzyce/talerz-zdrowego-zywienia--trzy-kroki-do-zdrowia">gov.pl — PSSE Pyrzyce: Talerz zdrowego żywienia — trzy kroki do zdrowia</a>
 - <b>Cebularz lubelski jest zarejestrowany w UE jako chronione oznaczenie geograficzne (2014):</b> <a href="https://eur-lex.europa.eu/eli/reg_impl/2014/844/oj">EUR-Lex — rozporządzenie wykonawcze Komisji (UE) nr 844/2014</a>
 - <b>Polskie produkty chronione w UE, wśród nich cebularz lubelski i oscypek:</b> <a href="https://www.gov.pl/rolnictwo/produkty-zarejestrowane-jako-chronione-nazwy-pochodzenia-chronione-oznaczenia-geograficzne-oraz-gwarantowane-tradycyjne-specjalnosci">gov.pl — Produkty zarejestrowane jako ChNP, ChOG i GTS</a>
+- <b>Wideo do pracy domowej:</b> <a href="https://www.youtube.com/watch?v=Pn4F8oPDO0s">Co nasza polsko-koreańska rodzina je w Polsce? — Pierogi z Kimchi (YouTube)</a>
 
 ---
 

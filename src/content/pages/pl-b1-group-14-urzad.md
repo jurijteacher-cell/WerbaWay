@@ -316,11 +316,27 @@ Słuchanie — jak na egzaminie
 
 ## 🏠 9. Praca domowa
 
-Dwie części: <b>ćwiczenia</b> i <b>pisanie</b>.
+Trzy części: <b>ćwiczenia</b>, <b>wideo</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-14-urzad/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film instruktażowy <b>„Instalacja i aktywacja aplikacji mObywatel 2.0”</b> (kanał Ministerstwo Cyfryzacji, 3 minuty):
+
+<video source="https://www.youtube.com/watch?v=klVtDddp5Ko">
+Instalacja i aktywacja aplikacji mObywatel 2.0
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Co trzeba mieć, żeby aktywować aplikację? Wypisz dwie rzeczy — użyj <i>trzeba</i> i <i>musisz</i>.
+1. Jakie dokumenty można mieć w telefonie? Podaj dwa i napisz zdanie z <i>można</i>.
+1. Czy — według filmu — dokument w telefonie wystarczy w urzędzie? Napisz 2–3 zdania i użyj <i>wolno</i> albo <i>nie wolno</i> oraz <i>warto</i>.
+
+---
 
 ### ✍️ Pisanie — jak na egzaminie
 
@@ -348,6 +364,7 @@ Użyj <b>co najmniej sześciu form</b> z lekcji (np. <i>czy możemy, czy trzeba,
 - <b>Podatek od kupna samochodu: 2%, deklaracja PCC-3 w ciągu 14 dni, można ją wysłać przez e-Urząd Skarbowy:</b> <a href="https://www.gov.pl/web/gov/zaplac-podatek-od-czynnosci-cywilnoprawnych">gov.pl — Zapłać podatek od czynności cywilnoprawnych</a>
 - <b>Sprzedający zgłasza zbycie pojazdu, można to zrobić przez internet:</b> <a href="https://www.gov.pl/web/gov/zglos-zbycie-lub-nabycie-pojazdu-na-przyklad-sprzedaz-kupno-darowizne">gov.pl — Zgłoś zbycie lub nabycie pojazdu</a>
 - <b>Szczepienie psa przeciwko wściekliźnie jest obowiązkowe:</b> <a href="https://samorzad.gov.pl/web/gmina-wymiarki/obowiazkowe-szczepienie-psow-przeciwko-wsciekliznie-wazne-informacje-dla-wlascicieli-zwierzat">samorzad.gov.pl — Obowiązkowe szczepienie psów przeciwko wściekliźnie</a>
+- <b>Wideo do pracy domowej:</b> <a href="https://www.youtube.com/watch?v=klVtDddp5Ko">Instalacja i aktywacja aplikacji mObywatel 2.0 — Ministerstwo Cyfryzacji (YouTube)</a>
 
 ---
 

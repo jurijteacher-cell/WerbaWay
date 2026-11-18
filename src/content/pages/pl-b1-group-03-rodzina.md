@@ -316,7 +316,7 @@ W liczbie mnogiej polski ma dwa światy. <b>Oni</b> — grupa, w której jest co
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🏠</span><div class="lp-callout-body">
 
-Praca domowa do lekcji <a href="/learn/pl-b1-group-03-rodzina">Trzy pokolenia przy jednym stole: rodzina dawniej i dziś</a>. Trzy części: <b>ćwiczenia</b>, <b>czytanie</b> i <b>pisanie</b>.
+Praca domowa do lekcji <a href="/learn/pl-b1-group-03-rodzina">Trzy pokolenia przy jednym stole: rodzina dawniej i dziś</a>. Cztery części: <b>ćwiczenia</b>, <b>wideo</b>, <b>czytanie</b> i <b>pisanie</b>.
 
 </div></aside>
 
@@ -328,7 +328,23 @@ Praca domowa
 
 ---
 
-### 📄 2. Do czytania
+### 🎬 2. Wideo
+
+Obejrzyj film <b>„Dlaczego Polacy mają coraz mniej dzieci?”</b> (kanał Kasia Gandor, około 20 minut):
+
+<video source="https://www.youtube.com/watch?v=iqWaEQocBEQ">
+Dlaczego Polacy mają coraz mniej dzieci?
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz trzy przyczyny, o których mówi autorka — każdą jednym zdaniem.
+1. Zapisz dwie liczby albo dwa badania z filmu, których nie było na lekcji.
+1. A jak jest w Twojej rodzinie? Napisz 2–3 zdania o tym, ile dzieci mieli Twoi dziadkowie i ile mają Twoi znajomi. Użyj form <i>oni</i> i <i>one</i>.
+
+---
+
+### 📄 3. Do czytania
 
 Strona <b>„Karta Dużej Rodziny: jak ją otrzymać?”</b> (Ministerstwo Rodziny): <a href="https://www.gov.pl/web/rodzina/karta-duzej-rodziny-jak-ja-otrzymac">https://www.gov.pl/web/rodzina/karta-duzej-rodziny-jak-ja-otrzymac</a><br>Znajdź odpowiedzi i napisz każdą jednym zdaniem:
 
@@ -338,7 +354,7 @@ Strona <b>„Karta Dużej Rodziny: jak ją otrzymać?”</b> (Ministerstwo Rodzi
 
 ---
 
-### ✉️ 3. Pisanie — jak na egzaminie
+### ✉️ 4. Pisanie — jak na egzaminie
 
 <aside class="lp-callout" data-tone="blue"><span class="lp-callout-icon" aria-hidden="true">✉️</span><div class="lp-callout-body">
 
@@ -358,6 +374,7 @@ Użyj <b>co najmniej sześciu form liczby mnogiej</b>: dwóch „oni”, dwóch 
 <i>Skąd są fakty w tekście i w ćwiczeniach. Stan na listopad 2026.</i>
 
 - <b>Współczynnik dzietności 1,99 (1990) i 1,10 (2024); wiek kobiet, które rodzą dzieci (około 26 lat w 1990, 31 w 2024); wiek nowożeńców (mężczyźni 32, kobiety prawie 30):</b> <a href="https://ssgk.stat.gov.pl/01.2026/Ludnosc.html">GUS — Sytuacja społeczno-gospodarcza kraju, Ludność (styczeń 2026)</a>
+- <b>Wideo do pracy domowej:</b> <a href="https://www.youtube.com/watch?v=iqWaEQocBEQ">Dlaczego Polacy mają coraz mniej dzieci? — Kasia Gandor (YouTube)</a>
 
 ---
 

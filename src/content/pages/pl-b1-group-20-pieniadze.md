@@ -302,11 +302,27 @@ Słuchanie — jak na egzaminie
 
 ## 🏠 9. Praca domowa
 
-Dwie części: <b>ćwiczenia</b> i <b>pisanie</b>.
+Trzy części: <b>ćwiczenia</b>, <b>wideo</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-20-pieniadze/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Budżet domowy — jak go ogarnąć?”</b> (kanał Ula Pedantula, około 8 minut):
+
+<video source="https://www.youtube.com/watch?v=tu1zZQuXmZw">
+Budżet domowy — jak go ogarnąć?
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz trzy rady autorki, jak prowadzić budżet domowy.
+1. Z czego autorka korzysta, żeby zapisywać wydatki? Odpowiedz jednym zdaniem z <i>korzystać z…</i>
+1. Na czym Tobie zależy, jeśli chodzi o pieniądze? Napisz trzy zdania i użyj <i>zależy mi na…</i>, <i>myślę o…</i> oraz <i>interesuję się…</i>
+
+---
 
 ### ✍️ Pisanie — reklamacja rachunku
 
@@ -333,6 +349,7 @@ Użyj <b>co najmniej sześciu</b> czasowników z lekcji z dobrym przyimkiem albo
 - <b>Nastolatek od 13 do 18 lat może mieć konto za zgodą rodzica albo opiekuna:</b> [money.pl — Czy osoba niepełnoletnia może posiadać konto bankowe?](https://direct.money.pl/artykuly/porady/czy-osoba-niepelnoletnia-moze-posiadac-konto-bankowe)
 - <b>Kod BLIK to jednorazowy, 6-cyfrowy kod ważny 2 minuty:</b> [blik.com — Jak działa BLIK](https://blik.com/jak-dziala-blik)
 - <b>Kodu BLIK nie podaje się nikomu przez internet ani przez telefon:</b> [mBank — Wyłudzenie kodu BLIK](https://www.mbank.pl/artykuly/wyludzenie-kodu-blik/)
+- <b>Wideo do pracy domowej:</b> [Budżet domowy — jak go ogarnąć? — Ula Pedantula (YouTube)](https://www.youtube.com/watch?v=tu1zZQuXmZw)
 
 ---
 

@@ -312,11 +312,27 @@ Słuchanie — jak na egzaminie
 
 ## 🏠 9. Praca domowa
 
-Dwie części: <b>ćwiczenia</b> i <b>pisanie</b>.
+Trzy części: <b>ćwiczenia</b>, <b>wideo</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-19-swieta/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Tradycje bożonarodzeniowe w Polsce”</b> (kanał bluefingersbywiola, około 13 minut):
+
+<video source="https://www.youtube.com/watch?v=euJxIwVvVl0">
+Tradycje bożonarodzeniowe w Polsce
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz trzy tradycje, o których mówi autorka, i napisz o każdej jedno zdanie.
+1. Przekaż dwie informacje z filmu mową zależną: <i>Autorka powiedziała, że…</i>
+1. Która tradycja jest podobna do Twoich świąt, a która nie? Napisz 2–3 zdania.
+
+---
 
 ### ✍️ Pisanie — e-mail do koleżanki
 
@@ -341,6 +357,7 @@ Użyj <b>co najmniej sześciu</b> form mowy zależnej (np. <i>powiedziała, że;
 
 - <b>24 grudnia — Wigilia Bożego Narodzenia — jest dniem wolnym od pracy od 2025 roku (ustawa z 6 grudnia 2024 r., w życiu od 1 lutego 2025 r.); handel jest dozwolony w trzy niedziele przed Wigilią:</b> [Dziennik Ustaw 2024 poz. 1965 — Ustawa o zmianie ustawy o dniach wolnych od pracy](https://api.sejm.gov.pl/eli/acts/DU/2024/1965/text.html)
 - <b>W Ukrainie Boże Narodzenie obchodzi się 25 grudnia od 2023 roku:</b> [Bankier.pl — Nowa data świąt Bożego Narodzenia w Ukrainie. Prezydent Zełenski podpisał ustawę](https://www.bankier.pl/wiadomosc/Nowa-data-swiat-Bozego-Narodzenia-w-Ukrainie-Prezydent-Zelenski-podpisal-ustawe-8586690.html)
+- <b>Wideo do pracy domowej:</b> [Tradycje bożonarodzeniowe w Polsce — bluefingersbywiola (YouTube)](https://www.youtube.com/watch?v=euJxIwVvVl0)
 
 ---
 

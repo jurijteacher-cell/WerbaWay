@@ -300,11 +300,27 @@ Słuchanie — jak na egzaminie
 
 ## 🏠 9. Praca domowa
 
-Dwie części: <b>ćwiczenia</b> i <b>pisanie</b>.
+Trzy części: <b>ćwiczenia</b>, <b>wideo</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-18-ekologia/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj reportaż <b>„System kaucyjny. Dokąd trafiają nasze pieniądze, jeśli nie oddamy butelki?”</b> (Uwaga! TVN, 4 minuty):
+
+<video source="https://www.youtube.com/watch?v=63fB9oE1zIw">
+System kaucyjny. Dokąd trafiają nasze pieniądze?
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Co trzeba zrobić z butelką, żeby dostać kaucję z powrotem? Wypisz dwie zasady.
+1. Co się dzieje z pieniędzmi, których ludzie nie odbierają? Odpowiedz jednym zdaniem.
+1. Czy oddajesz butelki? Napisz 2–3 zdania i użyj <i>chociaż</i> albo <i>mimo że</i> oraz <i>natomiast</i>.
+
+---
 
 ### ✍️ Pisanie — e-mail do urzędu miasta
 
@@ -331,6 +347,7 @@ Użyj <b>co najmniej sześciu</b> form z lekcji (np. <i>chociaż, mimo że, mimo
 - <b>Kolory pojemników: papier — niebieski, metale i tworzywa sztuczne — żółty, szkło — zielony, bio — brązowy:</b> [gov.pl — Jednolity System Segregacji Odpadów](https://www.gov.pl/web/edukacja-ekologiczna/jsso)
 - <b>Karton po mleku i soku wyrzucamy do pojemnika na metale i tworzywa sztuczne:</b> [Rzeczpospolita — Gdzie wyrzucić karton po mleku?](https://www.rp.pl/biznes/art42153931-gdzie-wyrzucic-karton-po-mleku-nie-wszyscy-znaja-dobra-odpowiedz)
 - <b>Trolejbusy jeżdżą w Lublinie od 1953 roku; w Polsce mają je trzy miasta: Lublin, Gdynia i Tychy:</b> [Wikipedia — Trolleybuses in Poland](https://en.wikipedia.org/wiki/Trolleybuses_in_Poland)
+- <b>Wideo do pracy domowej:</b> [System kaucyjny. Dokąd trafiają nasze pieniądze… — Uwaga! TVN (YouTube)](https://www.youtube.com/watch?v=63fB9oE1zIw)
 
 ---
 

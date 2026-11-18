@@ -154,17 +154,17 @@ Praca domowa
 
 ### Wideo
 
-Obejrzyj film <b>„Jak czytać etykiety na produktach spożywczych?”</b> (MądrzeJEMY z Katarzyną Bosacką):
+Obejrzyj film <b>„Jak czytać i rozumieć etykiety produktów?”</b> (kanał Grupa LUX MED, 7 minut):
 
-<video source="https://www.youtube.com/watch?v=kr_ZdwpQR00">
-Jak czytać etykiety na produktach spożywczych?
+<video source="https://www.youtube.com/watch?v=kGjkKDUCIRQ">
+Jak czytać i rozumieć etykiety produktów?
 </video>
 
 Odpowiedz pisemnie (po 1–2 zdania):
 
-1. Na które trzy rzeczy autorka każe patrzeć najpierw?
-1. Wybierz jeden produkt ze swojej kuchni i opisz jego skład jednym zdaniem.
-1. Dokończ: „Gdybym wiedział o tym wcześniej, …”.
+1. Na które trzy rzeczy na etykiecie trzeba patrzeć najpierw? Wypisz je.
+1. Wybierz jeden produkt ze swojej kuchni, przeczytaj skład i opisz go jednym zdaniem.
+1. Dokończ dwa zdania w trybie przypuszczającym: „Gdybym wiedział albo wiedziała o tym wcześniej, …”, „Gdyby na etykiecie nie było składu, …”.
 
 ### Do czytania
 
@@ -262,3 +262,4 @@ Wszystkie 40 słów lekcji w jednym miejscu. Wracaj tu przed pracą domową i pr
 - <a href="https://www.gov.pl/web/ijhars/polskie-produkty-chnp-chog-gts--raport-i-analizy">Polskie produkty ChNP, ChOG, GTS — IJHARS (gov.pl)</a> — bryndza, oscypek, rogal świętomarciński i inne chronione produkty.
 - <a href="https://www.mp.pl/pacjent/dieta/zasady/176007,pokarmowe-zrodla-blonnika">Pokarmowe źródła błonnika — mp.pl</a> — kiedy produkt jest „źródłem błonnika”.
 - <a href="https://prawakonsumenta.uokik.gov.pl/reklamacja/niezgodnosc/">Niezgodność towaru z umową — UOKiK</a> — reklamacja i prawa konsumenta.
+- <a href="https://www.youtube.com/watch?v=kGjkKDUCIRQ">Jak czytać i rozumieć etykiety produktów? — Grupa LUX MED (YouTube)</a> — wideo do pracy domowej.

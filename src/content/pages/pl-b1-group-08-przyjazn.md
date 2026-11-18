@@ -342,11 +342,27 @@ Z pytania robimy „może tak” albo „na pewno nie”.<br><b>kto? → ktoś �
 
 ## 🏠 8. Praca domowa
 
-Trzy części: <b>ćwiczenia</b>, <b>słuchanie</b> i <b>pisanie</b>.
+Cztery części: <b>ćwiczenia</b>, <b>wideo</b>, <b>słuchanie</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-08-przyjazn/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Jak znaleźć przyjaciół w dorosłym życiu?”</b> (kanał Karolina Gorczyca-Barszczewska, około 14 minut):
+
+<video source="https://www.youtube.com/watch?v=gLpb-jce-F8">
+Jak znaleźć przyjaciół w dorosłym życiu?
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz trzy rady, które daje autorka.
+1. Dlaczego — według autorki — w dorosłym życiu trudniej o przyjaźń? Podaj dwie przyczyny.
+1. Którą radę wypróbujesz? Napisz 2–3 zdania i użyj dwóch zaimków (np. <i>do niej, z nim</i>) oraz jednego słowa z <i>ni-</i>.
+
+---
 
 ### 🎧 Do posłuchania
 
@@ -378,6 +394,7 @@ Użyj <b>co najmniej sześciu zaimków</b> w różnych formach (np. <i>do ciebie
 <i>Skąd są fakty w tekście i w ćwiczeniach. Stan na listopad 2026.</i>
 
 - <b>Najbliższy krąg to około pięciu osób i około 40% wolnego czasu; drugi krąg — około piętnastu osób; cały świat społeczny — około stu pięćdziesięciu osób (Robin Dunbar):</b> <a href="https://www.national-geographic.pl/ludzie/na-nic-nasza-technologia-i-cywilizacyjna-oglada-ewolucja-zawsze-zwyciezy-wywiad-z-prof-robinem-dunbarem/">National Geographic Polska — wywiad z prof. Robinem Dunbarem (14.05.2022)</a>
+- <b>Wideo do pracy domowej:</b> <a href="https://www.youtube.com/watch?v=gLpb-jce-F8">Jak znaleźć przyjaciół w dorosłym życiu? — Karolina Gorczyca-Barszczewska (YouTube)</a>
 
 ---
 

@@ -314,11 +314,27 @@ Słuchanie — jak na egzaminie
 
 ## 🏠 9. Praca domowa
 
-Dwie części: <b>ćwiczenia</b> i <b>pisanie</b>.
+Trzy części: <b>ćwiczenia</b>, <b>wideo</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-17-migracje/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Przeprowadzka na wieś — plusy i minusy”</b> (kanał Ula Pedantula, około 15 minut):
+
+<video source="https://www.youtube.com/watch?v=e2OyMPdmHGw">
+Przeprowadzka na wieś — plusy i minusy
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz trzy plusy i dwa minusy życia na wsi, o których mówi autorka.
+1. Dlaczego autorka przeprowadziła się z miasta na wieś? Napisz dwa zdania — jedno z <i>bo</i>, jedno z <i>dlatego</i>.
+1. A Ty wolisz wieś czy miasto? Napisz trzy zdania i użyj <i>z powodu…</i> oraz <i>dzięki…</i>.
+
+---
 
 ### ✍️ Pisanie — opinia na forum
 
@@ -342,6 +358,7 @@ Użyj <b>co najmniej sześciu</b> słów z lekcji: <i>bo, ponieważ, więc, dlat
 <i>Skąd są fakty w tekście i w ćwiczeniach. Stan na listopad 2026.</i>
 
 - <b>Wsie od ponad dziesięciu lat zyskują mieszkańców w migracjach wewnętrznych; w 2023 roku saldo migracji na wsi wyniosło ponad 46,8 tys. osób (dane GUS):</b> [PAP — GUS: w 2023 r. liczba ludności Polski wyniosła 37 mln 637 tys. osób](https://www.pap.pl/aktualnosci/gus-w-2023-r-liczba-ludnosci-polski-wyniosla-37-mln-637-tys-osob)
+- <b>Wideo do pracy domowej:</b> [Przeprowadzka na wieś — plusy i minusy — Ula Pedantula (YouTube)](https://www.youtube.com/watch?v=e2OyMPdmHGw)
 
 ---
 
