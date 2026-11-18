@@ -1,0 +1,128 @@
+{
+  "lesson_id": "pl-a2-72-rezerwacja-ile-osob-ile-nocy",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o dwóch e-mailach. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Olena rezerwuje noclegi na trzy noce.",
+          "answer": false,
+          "explanation": "…od piątku do niedzieli, czyli na dwie noce."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Jedna osoba przyjedzie z małym dzieckiem.",
+          "answer": true,
+          "explanation": "Jedna koleżanka przyjedzie z małym synkiem — potrzebujemy łóżeczka."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Pokój trzyosobowy kosztuje 280 złotych za noc.",
+          "answer": false,
+          "explanation": "280 zł kosztuje pokój dwuosobowy, trzyosobowy — 350 zł."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Grupa dostanie zniżkę.",
+          "answer": true,
+          "explanation": "Dla grup powyżej ośmiu osób dajemy dziesięć procent zniżki."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Za łóżeczko dla dziecka trzeba zapłacić.",
+          "answer": false,
+          "explanation": "Łóżeczka dla dzieci są bezpłatne."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-72-rezerwacja-ile-osob-ile-nocy-e2-dialog.mp3",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: prawda czy fałsz?",
+      "instruction": "Usłyszysz rozmowę Oleny z recepcją pensjonatu dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Grupa zostanie w pensjonacie dwie noce.",
+          "answer": true,
+          "explanation": "Dziewięć osób, dwie noce…"
+        },
+        {
+          "id": "e2-2",
+          "statement": "Wszystkie pokoje mają balkony.",
+          "answer": false,
+          "explanation": "W dwóch pokojach są balkony. W pozostałych — nie."
+        },
+        {
+          "id": "e2-3",
+          "statement": "Parking jest płatny.",
+          "answer": false,
+          "explanation": "Są bezpłatne."
+        },
+        {
+          "id": "e2-4",
+          "statement": "Do pensjonatu nie można przyjechać z psem.",
+          "answer": true,
+          "explanation": "U nas nie wolno nocować ze zwierzętami."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-72-rezerwacja-ile-osob-ile-nocy-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: a, b czy c?",
+      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Ile miejsc parkingowych ma pensjonat?",
+          "options": [
+            "pięć",
+            "dwa",
+            "dziewięć"
+          ],
+          "answer": "pięć",
+          "explanation": "…mamy pięć miejsc parkingowych za domem."
+        },
+        {
+          "id": "e3-2",
+          "question": "Ile zapłaci grupa za dwie noce?",
+          "options": [
+            "2142 zł",
+            "2380 zł",
+            "1190 zł"
+          ],
+          "answer": "2142 zł",
+          "explanation": "…dwa tysiące sto czterdzieści dwa złote, ze zniżką dla grupy."
+        },
+        {
+          "id": "e3-3",
+          "question": "Gdzie jest parking?",
+          "options": [
+            "za domem",
+            "przed domem",
+            "przy dworcu"
+          ],
+          "answer": "za domem",
+          "explanation": "…za domem."
+        }
+      ]
+    }
+  ]
+}
