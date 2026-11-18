@@ -1,0 +1,118 @@
+{
+  "lesson_id": "pl-a2-68-powtorka-ludzie-i-zdrowie",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: wszystko z modułu „Mama w Krakowie”",
+  "instruction": "Dwa bloki ćwiczeń. Potem napisz e-mail z podziękowaniem — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz dobrą formę",
+      "instruction": "Wpisz słowo z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Na urodziny kupiłam ___ nowy portfel. (mój tata)",
+          "answer": "mojemu tacie",
+          "grammar_point": "celownik-osoby",
+          "explanation": "Komu? — mojemu tacie."
+        },
+        {
+          "id": "h1-2",
+          "text": "Przepraszam, szukam ___ w czerwonej kurtce. (mała dziewczynka)",
+          "answer": "małej dziewczynki",
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Szukać + dopełniacz: małej dziewczynki."
+        },
+        {
+          "id": "h1-3",
+          "text": "Na tym zdjęciu widzę ___. (twój młodszy brat)",
+          "answer": "twojego młodszego brata",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Widzieć kogo? — twojego młodszego brata."
+        },
+        {
+          "id": "h1-4",
+          "text": "Dzieci, ___ ręce przed obiadem! (umyć)",
+          "answer": "umyjcie",
+          "grammar_point": "rozkaznik-pelny",
+          "explanation": "Do grupy — tryb rozkazujący na wy: umyjcie."
+        },
+        {
+          "id": "h1-5",
+          "text": "Jestem zmęczona i nie ___ mi się dziś gotować. (chcieć)",
+          "answer": "chce",
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Nie chce mi się — forma jak on / ona: chce."
+        },
+        {
+          "id": "h1-6",
+          "text": "Mama ___ odpocząć po długiej podróży. (powinien)",
+          "answer": "powinna",
+          "grammar_point": "modalne-obowiazek",
+          "explanation": "Mama — ona: powinna."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Lekarz przepisał mama syrop.",
+          "answer": "Lekarz przepisał mamie syrop.",
+          "accept": [
+            "Lekarz przepisał syrop mamie."
+          ],
+          "grammar_point": "celownik-osoby",
+          "explanation": "Przepisać komu? — mamie."
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Zgubiłem plecak z czarny pasek.",
+          "answer": "Zgubiłem plecak z czarnym paskiem.",
+          "accept": [
+            "Zgubiłam plecak z czarnym paskiem."
+          ],
+          "grammar_point": "przymiotnik-przypadki",
+          "explanation": "Z + narzędnik: z czarnym paskiem."
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Mi trzeba iść do apteki.",
+          "answer": "Muszę iść do apteki.",
+          "accept": [
+            "Trzeba iść do apteki."
+          ],
+          "grammar_point": "modalne-obowiazek",
+          "explanation": "„Trzeba” nie ma osoby: albo muszę, albo trzeba."
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Odebrałam syn z przedszkola.",
+          "answer": "Odebrałam syna z przedszkola.",
+          "accept": [
+            "Odebrałem syna z przedszkola."
+          ],
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Syn to osoba → syna."
+        },
+        {
+          "id": "h2-5",
+          "prompt": "Ja jestem gorąco.",
+          "answer": "Jest mi gorąco.",
+          "accept": [
+            "Mnie jest gorąco.",
+            "Gorąco mi."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Укр. «мені жарко» — po polsku też celownik: jest mi gorąco."
+        }
+      ]
+    }
+  ]
+}

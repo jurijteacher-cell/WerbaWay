@@ -1,0 +1,128 @@
+{
+  "lesson_id": "pl-a2-68-powtorka-ludzie-i-zdrowie",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o e-mailu pani Haliny. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Pani Halina wraca do Lwowa jutro rano.",
+          "answer": true,
+          "explanation": "…jutro rano wracam do Lwowa…"
+        },
+        {
+          "id": "e1-2",
+          "statement": "Mama zgubiła torbę w autobusie.",
+          "answer": false,
+          "explanation": "…zgubiłam w tramwaju moją czarną torbę…"
+        },
+        {
+          "id": "e1-3",
+          "statement": "Mama przeziębiła się po wycieczce w góry.",
+          "answer": true,
+          "explanation": "…po wycieczce w góry było mi tak zimno, że się przeziębiłam."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Według mamy Olena powinna pracować dłużej.",
+          "answer": false,
+          "explanation": "…powinna czasem kończyć pracę o czwartej!"
+        },
+        {
+          "id": "e1-5",
+          "statement": "Mama zaprasza panią Agnieszkę do Lwowa w sierpniu.",
+          "answer": false,
+          "explanation": "W lipcu zapraszam Panią do Lwowa."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-68-powtorka-ludzie-i-zdrowie-e2-dialog.mp3",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: prawda czy fałsz?",
+      "instruction": "Usłyszysz rozmowę na dworcu dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Bilet mamy jest w telefonie.",
+          "answer": true,
+          "explanation": "…a bilet w telefonie."
+        },
+        {
+          "id": "e2-2",
+          "statement": "Paszport jest w dużej kieszeni.",
+          "answer": false,
+          "explanation": "Paszport jest w małej kieszeni."
+        },
+        {
+          "id": "e2-3",
+          "statement": "Olena mówi mamie, że nie musi się martwić.",
+          "answer": true,
+          "explanation": "Mamo, nie musisz się martwić."
+        },
+        {
+          "id": "e2-4",
+          "statement": "Sernik jest dla pani doktor.",
+          "answer": false,
+          "explanation": "A tacie daj ten sernik — to dla niego."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-68-powtorka-ludzie-i-zdrowie-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: a, b czy c?",
+      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Co Olena ma zrobić dla mamy w Krakowie?",
+          "options": [
+            "podziękować pani doktor",
+            "odwiedzić pana Piotra",
+            "zadzwonić do kierowcy"
+          ],
+          "answer": "podziękować pani doktor",
+          "explanation": "I podziękuj jeszcze raz pani doktor. — Podziękuję."
+        },
+        {
+          "id": "e3-2",
+          "question": "Co mama radzi Olenie?",
+          "options": [
+            "nie pracować tak długo",
+            "kupić nową torbę",
+            "przyjechać do Lwowa w sierpniu"
+          ],
+          "answer": "nie pracować tak długo",
+          "explanation": "…nie pracuj tak długo i jedz normalne obiady."
+        },
+        {
+          "id": "e3-3",
+          "question": "Kiedy mama i Olena znowu się zobaczą?",
+          "options": [
+            "w lipcu",
+            "w sierpniu",
+            "za dwa tygodnie"
+          ],
+          "answer": "w lipcu",
+          "explanation": "Do zobaczenia w lipcu!"
+        }
+      ]
+    }
+  ]
+}
