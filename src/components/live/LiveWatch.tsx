@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import 'rrweb/dist/style.css';
 import Link from 'next/link';
 import { useT } from '@/i18n/client';
-import { isLessonPath, lessonSlugOf, pickStudent, type ClassMsg, type Presence } from '@/lib/live/protocol';
+import { isLessonPath, lessonSlugOf, pickStudent, type ClassMsg, type Presence, type ViewAnchor } from '@/lib/live/protocol';
 import { useLiveChannel } from './useLiveChannel';
 import { MarkLessonDone } from './MarkLessonDone';
 
@@ -15,7 +15,10 @@ type Rep = {
   on: (ev: string, cb: (p: { width: number; height: number }) => void) => void;
   wrapper: HTMLElement;
   iframe?: HTMLIFrameElement;
+  getMirror?: () => { getNode: (id: number) => Node | null };
 };
+
+type RREvent = { type: number; timestamp: number; data?: { source?: number; id?: number; x?: number; y?: number; initialOffset?: { top: number; left: number } } };
 
 /** `desk` — кадр по вікну викладача; `mirror` — точно екран учня. */
 type ViewMode = 'desk' | 'mirror';
@@ -39,6 +42,34 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
   const viewport = useRef({ w: 1280, h: 800 });
   const gotFrame = useRef(false);
   const sendRef = useRef<(m: ClassMsg) => Promise<boolean>>(() => Promise.resolve(false));
+  /** що посередині екрана учня (для `desk`) і його піксельна прокрутка сторінки (для `mirror`) */
+  const anchorRef = useRef<ViewAnchor | null>(null);
+  const docScroll = useRef({ x: 0, y: 0 });
+
+  /**
+   * Прокрутка кадру. `mirror` — пікселі учня як є. `desk` — кадр розкладений під ширину викладача,
+   * пікселі учня тут показали б інше місце (у вузькому вікні — лише обкладинку), тому ставимо
+   * в центр кадру той самий фрагмент лекції, що посередині екрана в учня.
+   */
+  const syncScroll = useCallback(() => {
+    const rep = repRef.current;
+    const win = rep?.iframe?.contentWindow;
+    if (!rep || !win) return;
+    let top: number;
+    let left = 0;
+    const a = anchorRef.current;
+    const node = a && modeRef.current === 'desk' ? rep.getMirror?.().getNode(a.id) : null;
+    if (!a || !node || node.nodeType !== 1) {
+      // `mirror`, або якоря ще нема (вузол не доїхав) — пікселі учня
+      top = docScroll.current.y;
+      left = docScroll.current.x;
+    } else {
+      const r = (node as Element).getBoundingClientRect();
+      top = Math.max(0, Math.round(win.scrollY + r.top + a.r * r.height - win.innerHeight / 2));
+    }
+    if (Math.abs(win.scrollY - top) < 2 && Math.abs(win.scrollX - left) < 2) return;
+    win.scrollTo({ top, left, behavior: 'instant' as ScrollBehavior });
+  }, []);
 
   /**
    * Два режими кадру:
@@ -67,6 +98,7 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
       rep.wrapper.style.transform = 'none';
       mount.style.width = `${W}px`;
       mount.style.height = `${H}px`;
+      syncScroll();
       return;
     }
     const vp = viewport.current;
@@ -76,7 +108,8 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
     rep.wrapper.style.transformOrigin = 'top left';
     mount.style.width = `${Math.round(vp.w * k)}px`;
     mount.style.height = `${Math.round(vp.h * k)}px`;
-  }, []);
+    syncScroll();
+  }, [syncScroll]);
 
   // вибір режиму тримається між сесіями
   useEffect(() => {
@@ -146,9 +179,21 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
           const [rrweb, { unpack }] = await mods.current;
           let ts = Date.now();
           for (const p of packed) {
-            const ev = unpack(p) as { type: number; timestamp: number };
+            const ev = unpack(p) as unknown as RREvent;
             if (ev.type === 4) await resetReplayer(rrweb); // новий документ → новий програвач
             ev.timestamp = ts++; // годинники учня й викладача різні
+            if (ev.type === 2 && ev.data?.initialOffset) {
+              docScroll.current = { x: ev.data.initialOffset.left, y: ev.data.initialOffset.top };
+            }
+            // прокрутка всієї сторінки учня: запам'ятовуємо, а застосовуємо самі (syncScroll) —
+            // у `desk` вона б перебивала прокрутку за якорем
+            if (ev.type === 3 && ev.data?.source === 3 && typeof ev.data.id === 'number') {
+              const node = repRef.current?.getMirror?.().getNode(ev.data.id);
+              if (node && node.nodeType === 9) {
+                docScroll.current = { x: ev.data.x ?? 0, y: ev.data.y ?? 0 };
+                continue;
+              }
+            }
             repRef.current?.addEvent(ev);
             if (ev.type === 2 && !gotFrame.current) {
               gotFrame.current = true;
@@ -175,6 +220,14 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
     topic,
     presence: () => ({ role: 'teacher', mode: 'watch', at: Date.now() }),
     onMessage: (m) => {
+      if (m.k === 'vp') {
+        // у ту саму чергу, що й запис: вузол якоря міг прийти в пакеті, який ще застосовується
+        queue.current = queue.current.then(() => {
+          anchorRef.current = m;
+          syncScroll();
+        });
+        return;
+      }
       if (m.k !== 'rr') return;
       // пакет загубився — далі картинка була б застарілою, тому просимо свіжий знімок
       if (typeof m.n === 'number') {
@@ -205,6 +258,13 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
     return () => clearInterval(id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inLesson, hasFrame, link]);
+
+  // картинки й шрифти в кадрі довантажуються й зсувають лейаут — підрівнюємо прокрутку
+  useEffect(() => {
+    if (!hasFrame) return;
+    const id = setInterval(syncScroll, 700);
+    return () => clearInterval(id);
+  }, [hasFrame, syncScroll]);
 
   useEffect(() => {
     const on = () => fit();

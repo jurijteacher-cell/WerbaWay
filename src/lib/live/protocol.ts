@@ -19,7 +19,15 @@ export const CLASS_EVENT = 'c';
 
 /** Messages on the channel. `rr` = batch of rrweb events (packed strings) student → teacher.
  *  `n` — номер пакета за порядком: якщо у викладача розрив, він просить свіжий знімок екрана. */
-export type ClassMsg = { k: 'rr'; d: string[]; n?: number } | { k: 'need-snap' };
+export type ClassMsg = { k: 'rr'; d: string[]; n?: number } | { k: 'need-snap' } | ViewAnchor;
+
+/**
+ * `vp` — що в учня посередині екрана: id вузла з запису rrweb і де саме в ньому (0…1 по висоті).
+ * Прокрутка rrweb іде в пікселях учня, а в режимі «Мій екран» кадр розкладений під ширину
+ * викладача — ті самі пікселі там показують інше місце. За якорем кадр викладача
+ * прокручується до того самого фрагмента лекції.
+ */
+export type ViewAnchor = { k: 'vp'; id: number; r: number };
 
 /**
  * Присутність на каналі.

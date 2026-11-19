@@ -3,10 +3,35 @@
 import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { useT } from '@/i18n/client';
-import { classTopic, guestTopic, isLessonPath, type ClassMsg, type Presence } from '@/lib/live/protocol';
+import { classTopic, guestTopic, isLessonPath, type ClassMsg, type Presence, type ViewAnchor } from '@/lib/live/protocol';
 import { useLiveChannel } from './useLiveChannel';
 
 type Recorder = typeof import('rrweb').record;
+type IdMirror = { getId: (n: Node) => number };
+
+/**
+ * Елемент посередині екрана учня (у колонці лекції) і де в ньому центр екрана, 0…1.
+ * id — той самий, під яким вузол іде в запис rrweb, тож у викладача він знаходиться напряму.
+ */
+function viewAnchor(record: Recorder | undefined): ViewAnchor | null {
+  const mirror = (record as unknown as { mirror?: IdMirror } | undefined)?.mirror;
+  if (!mirror?.getId) return null;
+  const cy = window.innerHeight / 2;
+  const main = document.querySelector('main')?.getBoundingClientRect();
+  const xs = main && main.width > 0
+    ? [0.5, 0.35, 0.65, 0.2, 0.8].map((f) => main.left + main.width * f)
+    : [window.innerWidth / 2];
+  const root = document.documentElement;
+  for (const x of xs) {
+    let el = document.elementFromPoint(x, cy);
+    while (el && el !== root && el !== document.body && !(mirror.getId(el) > 0)) el = el.parentElement;
+    if (!el || el === root || el === document.body) continue;
+    const r = el.getBoundingClientRect();
+    if (r.height < 1) continue;
+    return { k: 'vp', id: mirror.getId(el), r: Math.round(Math.min(1, Math.max(0, (cy - r.top) / r.height)) * 1000) / 1000 };
+  }
+  return null;
+}
 
 /**
  * Маячок працює лише у вікні верхнього рівня. Вправи в лекції — це iframe з того самого сайту,
@@ -134,6 +159,26 @@ function BeaconInner({ topic, name }: { topic: string; name?: string }) {
       recRef.current?.stop();
       recRef.current = null;
     };
+  }, [active]);
+
+  // якір «що посередині екрана» — щоб у режимі «Мій екран» викладач бачив той самий фрагмент
+  useEffect(() => {
+    if (!active) return;
+    let last = '';
+    let lastAt = 0;
+    const tick = () => {
+      const a = viewAnchor(recRef.current?.record);
+      if (!a) return;
+      const key = `${a.id}:${a.r.toFixed(2)}`;
+      const now = Date.now();
+      // змінилось — шлемо одразу; ні — раз на 3 с (викладач міг щойно підключитись)
+      if (key === last && now - lastAt < 3000) return;
+      last = key;
+      lastAt = now;
+      void sendRef.current(a);
+    };
+    const id = setInterval(tick, 250);
+    return () => clearInterval(id);
   }, [active]);
 
   // учень перегорнув на іншу лекцію чи домашку — свіжий знімок, щоб у викладача не лишилось старе
