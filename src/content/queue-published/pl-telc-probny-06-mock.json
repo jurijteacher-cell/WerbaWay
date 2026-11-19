@@ -1,0 +1,848 @@
+{
+ "lesson_id": "pl-telc-probny-06",
+ "exercise_type": "mock-exam",
+ "exam_label": "telc 6",
+ "title": "telc Polski B1·B2 · egzamin próbny 6",
+ "subtitle": "Część pisemna: słuchanie, czytanie, elementy językowe, wypowiedź pisemna",
+ "eyebrow": "egzamin próbny · telc B1·B2",
+ "source": "Materiały własne Werba Way w formacie telc B1·B2.",
+ "pass_ratio": 0.6,
+ "scoring": "telc",
+ "levels": {
+  "B1": 27,
+  "B2": 43
+ },
+ "rules": [
+  "Słuchanie: każdy tekst usłyszysz tylko raz — jak na egzaminie. Teksty czyta nauczyciel, więc tę część rób na lekcji.",
+  "Bez słownika i tłumacza. Możesz przechodzić między częściami.",
+  "Wynik testu (słuchanie + czytanie + elementy językowe, razem 59 p.): od 27 p. — B1, od 43 p. — B2.",
+  "Wypowiedź pisemną oceni nauczyciel. Na certyfikat trzeba zdać też egzamin ustny."
+ ],
+ "sections": [
+  {
+   "id": "sl",
+   "tab": "Słuchanie",
+   "title": "Rozumienie ze słuchu",
+   "minutes": 25,
+   "tasks": [
+    {
+     "id": "sl1",
+     "title": "Część 1 · wiadomości głosowe",
+     "layout": "mc-passages",
+     "points_per_item": 1,
+     "start_n": 1,
+     "instruction": "Usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz.",
+     "transcript": "Lektor: Rozumienie ze słuchu, część pierwsza. Za chwilę usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz. Najpierw przykład.\nPani Gajewska: Dzień dobry, mówi Teresa Gajewska z Biblioteki Miejskiej. Książka, którą pan zarezerwował, „Historia Wrocławia”, czeka na pana w wypożyczalni do piątku. Proszę pamiętać o karcie bibliotecznej. Dziękuję i do widzenia.\n\nLektor: Numer jeden.\nRecepcjonista: Dzień dobry, tu recepcja hotelu „Nad Wisłą”. Dzwonię w sprawie pana rezerwacji na weekend. Niestety w pokoju z widokiem na rzekę zepsuła się klimatyzacja. Możemy dać panu pokój od strony parku w tej samej cenie albo pokój z widokiem na rzekę, ale dopiero od niedzieli. Prosimy o odpowiedź do czwartku.\n\nLektor: Numer dwa.\nMarcin: Cześć Igor, tu Marcin. Jutro nie przyjdę do biura, bo córka jest chora. Spotkanie z klientem o dziesiątej jest aktualne — poprowadzisz je sam? Wszystkie dokumenty wysłałem ci mailem wczoraj wieczorem. Gdybyś miał jakieś pytania, dzwoń, będę pod telefonem cały dzień.\n\nLektor: Numer trzy.\nPani z gabinetu: Dzień dobry, gabinet weterynaryjny „Łapa”. Wyniki badań pani kota są już gotowe. Wszystko jest w porządku, ale kot ma za dużą wagę, więc lekarz zaleca specjalną karmę. Można ją kupić u nas albo w sklepie zoologicznym. Na kontrolę zapraszamy za trzy miesiące.\n\nLektor: Numer cztery.\nKasjerka: Dobry wieczór, kasa biletowa Teatru Miejskiego. Dzwonię w sprawie biletów na sobotni spektakl „Wesele”. Niestety aktor, który gra główną rolę, jest chory i musimy odwołać przedstawienie. Może pani wymienić bilety na spektakl dwudziestego grudnia albo dostać zwrot pieniędzy na konto. Proszę dać nam znać, co pani wybiera.\n\nLektor: Koniec pierwszej części Rozumienia ze słuchu.",
+     "example": {
+      "stem": "Pani Gajewska dzwoni, aby",
+      "options": [
+       "przypomnieć o zwrocie książki.",
+       "poinformować, że zarezerwowana książka czeka na odbiór.",
+       "zaprosić na spotkanie z autorem."
+      ],
+      "answer": "b"
+     },
+     "items": [
+      {
+       "id": "sl1-1",
+       "stem": "Recepcja proponuje gościowi",
+       "options": [
+        "zwrot pieniędzy za rezerwację.",
+        "inny pokój albo późniejszy termin.",
+        "nocleg w innym hotelu."
+       ],
+       "answer": "b"
+      },
+      {
+       "id": "sl1-2",
+       "stem": "Marcin prosi Igora, żeby",
+       "options": [
+        "odwołał spotkanie z klientem.",
+        "wysłał mu dokumenty mailem.",
+        "sam poprowadził spotkanie."
+       ],
+       "answer": "c"
+      },
+      {
+       "id": "sl1-3",
+       "stem": "Według lekarza kot",
+       "options": [
+        "powinien jeść specjalną karmę.",
+        "musi jutro przyjść na badania.",
+        "jest poważnie chory."
+       ],
+       "answer": "a"
+      },
+      {
+       "id": "sl1-4",
+       "stem": "Klientka może",
+       "options": [
+        "obejrzeć spektakl w sobotę z innym aktorem.",
+        "kupić tańsze bilety na grudzień.",
+        "wymienić bilety albo dostać zwrot pieniędzy."
+       ],
+       "answer": "c"
+      }
+     ]
+    },
+    {
+     "id": "sl2",
+     "title": "Część 2 · dialogi",
+     "layout": "mc-passages",
+     "points_per_item": 1,
+     "start_n": 5,
+     "tf_labels": [
+      "prawda",
+      "fałsz"
+     ],
+     "instruction": "Usłyszysz pięć dialogów. Do każdego dialogu są dwa zadania: najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe, potem wybierz a, b lub c. Każdy dialog usłyszysz jeden raz.",
+     "transcript": "Lektor: Rozumienie ze słuchu, część druga. Za chwilę usłyszysz pięć dialogów. Na temat każdego dialogu napisano po dwa zdania. Najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe. Następnie zdecyduj, które zdanie jest najbardziej trafne: a, b czy c. Każdy dialog usłyszysz jeden raz.\n\nLektor: Numer pięć i sześć.\nMężczyzna: Dzień dobry, chciałbym się zameldować na pobyt czasowy.\nUrzędniczka: Proszę bardzo. Ma pan wypełniony formularz?\nMężczyzna: Tak, wypełniłem go w domu. Mam też umowę najmu.\nUrzędniczka: Dobrze, umowa najmu wystarczy, nie potrzebuję podpisu właściciela. Na jak długo?\nMężczyzna: Na rok, do końca przyszłego listopada.\nUrzędniczka: Proszę. Samo zameldowanie jest bezpłatne. Siedemnaście złotych płaci się tylko wtedy, jeśli chce pan dostać zaświadczenie o zameldowaniu.\nMężczyzna: Zaświadczenie nie jest mi potrzebne.\nMężczyzna: Świetnie. A gdzie mogę złożyć wniosek o kartę pobytu?\nUrzędniczka: Nie u nas — w urzędzie wojewódzkim.\n\nLektor: Numer siedem i osiem.\nKelner: Restauracja „Pod Lipami”, słucham.\nKlientka: Dzień dobry, chciałabym zarezerwować stolik na sobotę na dziewiętnastą, dla ośmiu osób. To urodziny mojego męża.\nKelner: Na dziewiętnastą mamy wolną salę na górze, ale wchodzi się tam tylko po schodach. Czy to nie problem?\nKlientka: Niestety tak, teściowa ma chorą nogę. A na dole?\nKelner: Na dole duży stół będzie wolny dopiero od dwudziestej.\nKlientka: W takim razie bierzemy dwudziestą. Czy mogę przynieść własny tort?\nKelner: Oczywiście. Pobieramy tylko dwadzieścia złotych za podanie.\nKlientka: Dobrze. Rezerwacja na nazwisko Wilk.\n\nLektor: Numer dziewięć i dziesięć.\nPasażerka: Dzień dobry, na dworzec główny, proszę. Mam pociąg za dwadzieścia minut.\nKierowca: O tej porze na moście są korki. Pojadę inaczej, przez obwodnicę — kilometrów będzie więcej, ale będzie szybciej.\nPasażerka: Dobrze, ufam panu. Mogę zapłacić kartą?\nKierowca: Przepraszam, terminal się dzisiaj zepsuł. Tylko gotówka albo płatność telefonem.\nPasażerka: To zapłacę telefonem. Ile to będzie mniej więcej?\nKierowca: Około trzydziestu pięciu złotych. Będziemy na miejscu za dwanaście minut.\nPasażerka: Super, zdążę jeszcze kupić kawę.\n\nLektor: Numer jedenaście i dwanaście.\nOla: Kuba, w sobotę jest Noc Muzeów. Idziemy?\nKuba: Chętnie! Wszystkie muzea są wtedy otwarte do późna i wstęp jest za darmo, prawda?\nOla: W większości tak. Ale do Muzeum Narodowego trzeba wcześniej pobrać bezpłatną wejściówkę przez internet. Już wzięłam dwie.\nKuba: Super. A potem może planetarium?\nOla: Tam są ogromne kolejki, ludzie stoją po dwie godziny. Proponuję stary tramwaj — jeździ między muzeami przez całą noc.\nKuba: Dobra. To ja przyniosę kanapki i termos z herbatą.\n\nLektor: Numer trzynaście i czternaście.\nSąsiad: Dzień dobry, pani Danuto. W sobotę robię parapetówkę i chciałem uprzedzić, że może być trochę głośniej.\nSąsiadka: Dziękuję, że pan mówi. Do której?\nSąsiad: Po dwudziestej drugiej muzyka będzie cicho, a goście wyjdą najpóźniej o północy.\nSąsiadka: W porządku. I tak w sobotę jadę do córki do Opola, wracam dopiero w niedzielę.\nSąsiad: To może podleję pani kwiaty?\nSąsiadka: Nie trzeba, podleję je w piątek. Ale mógłby pan w sobotę rano wyjąć gazetę z mojej skrzynki?\nSąsiad: Oczywiście, nie ma sprawy.\n\nLektor: Koniec drugiej części Rozumienia ze słuchu.",
+     "items": [
+      {
+       "id": "sl2-1",
+       "kind": "tf",
+       "stem": "Za zameldowanie trzeba zapłacić.",
+       "answer": "fałsz",
+       "passage": "Rozmowa 1 · zadania 5–6"
+      },
+      {
+       "id": "sl2-2",
+       "stem": "Wniosek o kartę pobytu mężczyzna złoży",
+       "options": [
+        "w tym samym urzędzie.",
+        "w urzędzie wojewódzkim.",
+        "u właściciela mieszkania."
+       ],
+       "answer": "b"
+      },
+      {
+       "id": "sl2-3",
+       "kind": "tf",
+       "stem": "Goście będą siedzieć na górze.",
+       "answer": "fałsz",
+       "passage": "Rozmowa 2 · zadania 7–8"
+      },
+      {
+       "id": "sl2-4",
+       "stem": "Za własny tort klientka",
+       "options": [
+        "nie zapłaci nic.",
+        "musi zamówić deser w restauracji.",
+        "zapłaci dwadzieścia złotych."
+       ],
+       "answer": "c"
+      },
+      {
+       "id": "sl2-5",
+       "kind": "tf",
+       "stem": "Pasażerka ma pociąg za dwadzieścia minut.",
+       "answer": "prawda",
+       "passage": "Rozmowa 3 · zadania 9–10"
+      },
+      {
+       "id": "sl2-6",
+       "stem": "Kierowca jedzie inną drogą, ponieważ",
+       "options": [
+        "na moście są korki.",
+        "most jest zamknięty.",
+        "pasażerka chce kupić kawę."
+       ],
+       "answer": "a"
+      },
+      {
+       "id": "sl2-7",
+       "kind": "tf",
+       "stem": "Ola ma już wejściówki do Muzeum Narodowego.",
+       "answer": "prawda",
+       "passage": "Rozmowa 4 · zadania 11–12"
+      },
+      {
+       "id": "sl2-8",
+       "stem": "Ola nie chce iść do planetarium, ponieważ",
+       "options": [
+        "bilety są za drogie.",
+        "trzeba długo czekać w kolejce.",
+        "w nocy jest zamknięte."
+       ],
+       "answer": "b"
+      },
+      {
+       "id": "sl2-9",
+       "kind": "tf",
+       "stem": "Sąsiadka będzie w sobotę wieczorem w domu.",
+       "answer": "fałsz",
+       "passage": "Rozmowa 5 · zadania 13–14"
+      },
+      {
+       "id": "sl2-10",
+       "stem": "Sąsiad",
+       "options": [
+        "wyjmie gazetę z jej skrzynki.",
+        "podleje sąsiadce kwiaty.",
+        "zaprosi sąsiadkę na parapetówkę."
+       ],
+       "answer": "a"
+      }
+     ]
+    },
+    {
+     "id": "sl3",
+     "title": "Część 3 · wywiad",
+     "layout": "mc-passages",
+     "points_per_item": 1,
+     "start_n": 15,
+     "instruction": "Usłyszysz wywiad radiowy. Wybierz właściwą odpowiedź: a, b lub c. Na początku masz minutę na przeczytanie zadań. Wywiad usłyszysz jeden raz.",
+     "transcript": "Lektor: Rozumienie ze słuchu, część trzecia. Za chwilę usłyszysz wywiad. Najpierw przeczytaj treść punktów od piętnastego do dwudziestego. Masz na to minutę.\n\nLektor: Teraz posłuchaj wywiadu. Usłyszysz go jeden raz.\nPrezenterka: Dzień dobry, w audycji „Ludzie z pasją” gościmy pana Jerzego Malinowskiego, który od trzydziestu lat prowadzi antykwariat w centrum Łodzi. Dzień dobry.\nJerzy: Dzień dobry, dziękuję za zaproszenie.\nPrezenterka: Jak został pan antykwariuszem?\nJerzy: Przypadkiem. Studiowałem chemię i pracowałem w laboratorium. Kiedy zmarł mój wujek, zostawił mi kilka tysięcy książek. Nie miałem ich gdzie trzymać, więc wynająłem mały lokal i zacząłem je sprzedawać. Po roku odszedłem z laboratorium.\nPrezenterka: Kto dziś kupuje stare książki?\nJerzy: Wbrew pozorom dużo młodych ludzi. Studenci szukają tanich podręczników, a młodzi rodzice — książek, które sami czytali w dzieciństwie. Starsi klienci przychodzą raczej po to, żeby sprzedać swoje zbiory.\nPrezenterka: Czy internet panu nie zaszkodził?\nJerzy: Na początku bałem się, że tak. Dziś połowę książek sprzedaję przez internet, klientom w całej Polsce, a nawet w Kanadzie. Ale ludzie wciąż lubią przyjść, poszukać na półkach i porozmawiać.\nPrezenterka: Jaka była najciekawsza książka, która trafiła w pana ręce?\nJerzy: Kiedyś w pudle ze starymi kryminałami znalazłem atlas z tysiąc osiemset dziewięćdziesiątego roku. Ktoś oddał to pudło za darmo, bo myślał, że to śmieci. Sprzedałem atlas do muzeum, a pieniądze oddałem tej osobie. Tak się po prostu robi.\nPrezenterka: Czy ma pan następcę?\nJerzy: Córka pomaga mi w weekendy i prowadzi nasz sklep internetowy. Mam nadzieję, że kiedyś przejmie antykwariat, ale to będzie jej decyzja.\nPrezenterka: Dziękuję za rozmowę.\nJerzy: Dziękuję.\n\nLektor: Koniec trzeciej części Rozumienia ze słuchu.",
+     "items": [
+      {
+       "id": "sl3-1",
+       "stem": "Pan Jerzy został antykwariuszem, ponieważ",
+       "options": [
+        "zawsze marzył o własnej księgarni.",
+        "dostał w spadku dużo książek.",
+        "stracił pracę w laboratorium."
+       ],
+       "answer": "b"
+      },
+      {
+       "id": "sl3-2",
+       "stem": "Według pana Jerzego młodzi ludzie",
+       "options": [
+        "w ogóle nie kupują papierowych książek.",
+        "przychodzą sprzedawać swoje zbiory.",
+        "szukają tanich podręczników i książek z dzieciństwa."
+       ],
+       "answer": "c"
+      },
+      {
+       "id": "sl3-3",
+       "stem": "Internet",
+       "options": [
+        "jest dla antykwariatu ważnym miejscem sprzedaży.",
+        "zabrał panu Jerzemu większość klientów.",
+        "służy mu tylko do kontaktu z klientami z Kanady."
+       ],
+       "answer": "a"
+      },
+      {
+       "id": "sl3-4",
+       "stem": "Stary atlas",
+       "options": [
+        "pan Jerzy kupił za wysoką cenę.",
+        "był w pudle, które ktoś oddał za darmo.",
+        "pan Jerzy znalazł w bibliotece wujka."
+       ],
+       "answer": "b"
+      },
+      {
+       "id": "sl3-5",
+       "stem": "Pieniądze za atlas pan Jerzy",
+       "options": [
+        "zatrzymał dla siebie.",
+        "przekazał muzeum.",
+        "oddał osobie, która przyniosła pudło."
+       ],
+       "answer": "c"
+      },
+      {
+       "id": "sl3-6",
+       "stem": "Córka pana Jerzego",
+       "options": [
+        "na pewno przejmie antykwariat.",
+        "pomaga w weekendy i prowadzi sklep internetowy.",
+        "pracuje w muzeum."
+       ],
+       "answer": "b"
+      }
+     ]
+    },
+    {
+     "id": "sl4",
+     "title": "Część 4 · opinie",
+     "layout": "matching",
+     "points_per_item": 1,
+     "start_n": 21,
+     "instruction": "Usłyszysz audycję radiową „Wakacje — w Polsce czy za granicą?”. Które zdanie (a–f) pasuje do opinii 21–23? Na początku masz pół minuty na przeczytanie zdań. Audycję usłyszysz jeden raz.",
+     "transcript": "Lektor: Rozumienie ze słuchu, część czwarta. Usłyszysz audycję, w której ludzie wyrażają opinie na dany temat. Które zdanie, od a do f, najlepiej pasuje do opinii dwadzieścia jeden, dwadzieścia dwa i dwadzieścia trzy? Masz pół minuty na przeczytanie zdań.\n\nLektor: Teraz posłuchaj audycji.\nPrezenter: Dzień dobry, w programie „Głos słuchaczy” pytamy dziś: gdzie wolą państwo spędzać wakacje — w Polsce czy za granicą?\n\nLektor: Przykład.\nSłuchaczka: Od lat jeździmy z dziećmi nad Bałtyk. Dzieci znają już każdą plażę w okolicy, a ja nie muszę się martwić o lot, obcy język czy lekarza. Jest blisko i bez stresu.\n\nLektor: Numer dwadzieścia jeden.\nSłuchacz: Policzyłem dokładnie: tydzień w Chorwacji z lotem i hotelem kosztował nas mniej niż tydzień w pensjonacie nad polskim morzem w sierpniu. A do tego mieliśmy pewną pogodę.\n\nLektor: Numer dwadzieścia dwa.\nSłuchaczka: Dla mnie wakacje to poznawanie innych ludzi i kultur. Każdego roku wybieram kraj, którego nie znam, i uczę się kilku zdań w jego języku. W restauracji zawsze zamawiam coś, czego nigdy nie jadłam.\n\nLektor: Numer dwadzieścia trzy.\nSłuchacz: Nieważne gdzie, ważne z kim. Najlepsze wakacje w życiu spędziłem pod namiotem na Mazurach, z przyjaciółmi ze studiów. Padało prawie codziennie, a i tak było super.\n\nPrezenter: Dziękujemy za wszystkie telefony. Do usłyszenia za tydzień!\n\nLektor: Koniec Rozumienia ze słuchu. Dziękujemy za uwagę.",
+     "left_label": "Opinie",
+     "right_label": "Zdania a–f",
+     "right": [
+      {
+       "key": "a",
+       "text": "Wakacje w Polsce są wygodne i mniej stresujące."
+      },
+      {
+       "key": "b",
+       "text": "Za granicą zawsze jest lepsza pogoda."
+      },
+      {
+       "key": "c",
+       "text": "Najważniejsze jest towarzystwo, a nie miejsce."
+      },
+      {
+       "key": "d",
+       "text": "Za granicą bywa taniej niż nad polskim morzem."
+      },
+      {
+       "key": "e",
+       "text": "W Polsce brakuje atrakcji dla dzieci."
+      },
+      {
+       "key": "f",
+       "text": "Podróże za granicę pozwalają poznać nowe kultury."
+      }
+     ],
+     "example": {
+      "text": "opinia słuchaczki (jeździ z dziećmi nad Bałtyk)",
+      "answer": "a"
+     },
+     "items": [
+      {
+       "id": "sl4-1",
+       "text": "Opinia 21",
+       "answer": "d"
+      },
+      {
+       "id": "sl4-2",
+       "text": "Opinia 22",
+       "answer": "f"
+      },
+      {
+       "id": "sl4-3",
+       "text": "Opinia 23",
+       "answer": "c"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cz",
+   "tab": "Czytanie",
+   "title": "Rozumienie tekstu czytanego",
+   "minutes": 40,
+   "tasks": [
+    {
+     "id": "cz1",
+     "title": "Część 1 · wiadomości",
+     "layout": "matching",
+     "points_per_item": 1,
+     "start_n": 24,
+     "instruction": "Przeczytaj teksty 24–27 i dopasuj do każdego temat (a–f). Dwa tematy są niepotrzebne.",
+     "left_label": "Teksty 24–27",
+     "right_label": "Tematy a–f",
+     "right": [
+      {
+       "key": "a",
+       "text": "Przeprosiny za nieobecność"
+      },
+      {
+       "key": "b",
+       "text": "Prośba o radę"
+      },
+      {
+       "key": "c",
+       "text": "Zmiana godzin otwarcia"
+      },
+      {
+       "key": "d",
+       "text": "Zaproszenie na wystawę"
+      },
+      {
+       "key": "e",
+       "text": "Podziękowanie za prezent"
+      },
+      {
+       "key": "f",
+       "text": "Oferta sprzedaży samochodu"
+      }
+     ],
+     "items": [
+      {
+       "id": "cz1-1",
+       "answer": "e",
+       "text": "Droga Ciociu,\nbardzo dziękuję za piękny szalik, który przyszedł pocztą na moje urodziny. Ma mój ulubiony kolor i jest bardzo ciepły — noszę go codziennie. Mam nadzieję, że zobaczymy się w święta.\nCałuję\nZosia"
+      },
+      {
+       "id": "cz1-2",
+       "answer": "c",
+       "text": "Szanowni Klienci,\nod 1 grudnia nasza piekarnia będzie otwarta od poniedziałku do soboty w godzinach 6:00–19:00. W niedziele i święta będzie zamknięta. Zamówienia na świąteczne torty przyjmujemy do 15 grudnia.\nPiekarnia „Kłos”"
+      },
+      {
+       "id": "cz1-3",
+       "answer": "a",
+       "text": "Cześć Aniu,\nprzepraszam, że wczoraj nie przyszłam na Twoje spotkanie. Autobus zepsuł się w połowie drogi, a telefon mi się rozładował, więc nie mogłam nawet zadzwonić. Może spotkamy się w czwartek? Kawa na mój koszt!\nBasia"
+      },
+      {
+       "id": "cz1-4",
+       "answer": "b",
+       "text": "Panie Piotrze,\nzastanawiam się, czy zapisać syna na angielski do szkoły językowej, czy na lekcje prywatne. Pana córka chodziła do tej szkoły przez dwa lata — co Pan o niej sądzi? Czy warto? Będę wdzięczna za kilka słów.\nPozdrawiam\nIrena Kos"
+      }
+     ]
+    },
+    {
+     "id": "cz2",
+     "title": "Część 2 · ogłoszenia",
+     "layout": "matching",
+     "points_per_item": 1,
+     "start_n": 28,
+     "reuse_keys": true,
+     "passage_title": "Tablica ogłoszeń na uczelni — praca dorywcza",
+     "instruction": "Przeczytaj sytuacje 28–32 i ogłoszenia a–h. Które ogłoszenie pasuje do której sytuacji? Każde ogłoszenie możesz wybrać tylko raz. Jeśli żadne ogłoszenie nie pasuje, wybierz x.",
+     "left_label": "Sytuacje 28–32",
+     "right_label": "Ogłoszenia a–h",
+     "right": [
+      {
+       "key": "a",
+       "text": "Kawiarnia „Ziarno” zatrudni baristę na weekendy. Doświadczenie nie jest wymagane — przeszkolimy."
+      },
+      {
+       "key": "b",
+       "text": "Rozdawanie ulotek w centrum miasta. Dowolne dni, 2–4 godziny dziennie, wypłata codziennie."
+      },
+      {
+       "key": "c",
+       "text": "Szukam opiekunki do dwóch chłopców (5 i 8 lat) od poniedziałku do piątku, 15:00–18:00. Mile widziany angielski."
+      },
+      {
+       "key": "d",
+       "text": "Tłumaczenia z ukraińskiego i rosyjskiego na polski — praca zdalna, zlecenia kilka razy w miesiącu."
+      },
+      {
+       "key": "e",
+       "text": "Muzeum Miejskie szuka przewodników na sezon letni. Wymagany język niemiecki lub angielski."
+      },
+      {
+       "key": "f",
+       "text": "Sklep sportowy zatrudni sprzedawcę na okres świąteczny: cały grudzień, pełny etat."
+      },
+      {
+       "key": "g",
+       "text": "Hotel „Pod Zamkiem” przyjmie pokojówki i pokojowych, tylko zmiany poranne, także w weekendy."
+      },
+      {
+       "key": "h",
+       "text": "Pomoc w ogrodzie: koszenie trawy, grabienie liści. Soboty, wynagrodzenie do uzgodnienia."
+      },
+      {
+       "key": "x",
+       "text": "Żadne ogłoszenie nie pasuje."
+      }
+     ],
+     "example": {
+      "text": "Studiujesz w tygodniu, a w soboty i niedziele chcesz pracować w kawiarni.",
+      "answer": "a"
+     },
+     "items": [
+      {
+       "id": "cz2-1",
+       "text": "Mówisz płynnie po ukraińsku i chcesz pracować z domu.",
+       "answer": "d"
+      },
+      {
+       "id": "cz2-2",
+       "text": "Dobrze znasz niemiecki i w lipcu chcesz pokazywać turystom miasto.",
+       "answer": "e"
+      },
+      {
+       "id": "cz2-3",
+       "text": "Masz wolne popołudnia i lubisz dzieci.",
+       "answer": "c"
+      },
+      {
+       "id": "cz2-4",
+       "text": "Szukasz pracy na nocną zmianę.",
+       "answer": "x"
+      },
+      {
+       "id": "cz2-5",
+       "text": "Potrzebujesz pieniędzy na święta i w grudniu możesz pracować codziennie po osiem godzin.",
+       "answer": "f"
+      }
+     ]
+    },
+    {
+     "id": "cz3",
+     "title": "Część 3 · artykuły",
+     "layout": "mc-passages",
+     "points_per_item": 1,
+     "start_n": 33,
+     "instruction": "Przeczytaj trzy teksty. Do każdego tekstu są dwa zadania. Wybierz właściwą odpowiedź: a, b lub c.",
+     "items": [
+      {
+       "id": "cz3-1",
+       "stem": "Teatr powstał, ponieważ",
+       "options": [
+        "dom kultury szukał nowych zajęć dla seniorów.",
+        "reżyserka chciała przygotować z seniorami jeden spektakl.",
+        "seniorzy sami założyli grupę teatralną."
+       ],
+       "answer": "b",
+       "passage": "Teatr seniora\n\nOd dwóch lat w Domu Kultury „Arka” działa teatr, w którym grają wyłącznie osoby po sześćdziesiątce. Zaczęło się od ogłoszenia w gazecie: reżyserka Marta Bielska szukała chętnych do jednego przedstawienia. Przyszło czterdzieści osób, a po premierze nikt nie chciał kończyć. Dziś grupa spotyka się dwa razy w tygodniu i gra trzy spektakle w roku. Aktorzy sami szyją kostiumy i robią dekoracje. — Najtrudniejsze jest zapamiętanie tekstu, ale właśnie dlatego to świetny trening dla głowy — mówi pan Zdzisław, który ma osiemdziesiąt dwa lata."
+      },
+      {
+       "id": "cz3-2",
+       "stem": "Według pana Zdzisława gra w teatrze",
+       "options": [
+        "pomaga ćwiczyć pamięć.",
+        "jest dla niego za trudna.",
+        "daje mu dodatkowe pieniądze."
+       ],
+       "answer": "a"
+      },
+      {
+       "id": "cz3-3",
+       "stem": "Rodziny mogą",
+       "options": [
+        "kupić rower cargo taniej.",
+        "przez tydzień bezpłatnie testować rower.",
+        "wypożyczyć rower tylko na weekend."
+       ],
+       "answer": "b",
+       "passage": "Rowerem z dziećmi\n\nMiasto Zalesie wypożycza mieszkańcom rowery towarowe, tak zwane cargo. Na takim rowerze można przewieźć dwoje dzieci albo duże zakupy. Rodziny mogą wypożyczyć rower na tydzień za darmo, żeby sprawdzić, czy taki środek transportu im odpowiada. Miasto chce w ten sposób zmniejszyć liczbę samochodów w centrum. Po roku programu okazało się, że co piąta rodzina, która testowała rower, kupiła potem własny. Uczestnicy najczęściej narzekali na brak bezpiecznych parkingów dla dużych rowerów."
+      },
+      {
+       "id": "cz3-4",
+       "stem": "Największym problemem dla uczestników programu był",
+       "options": [
+        "wysoki koszt wypożyczenia.",
+        "przewóz dzieci.",
+        "brak bezpiecznych miejsc do parkowania."
+       ],
+       "answer": "c"
+      },
+      {
+       "id": "cz3-5",
+       "stem": "Tłumacz przychodzi na spotkanie, jeśli",
+       "options": [
+        "osoba niesłysząca wcześniej zarezerwuje wizytę.",
+        "urzędnik go o to poprosi.",
+        "komputer przy wejściu nie działa."
+       ],
+       "answer": "a",
+       "passage": "Język migowy w urzędzie\n\nOd tego roku w Urzędzie Dzielnicy Północ osoby niesłyszące mogą załatwić swoje sprawy w polskim języku migowym. Wystarczy wcześniej zarezerwować wizytę przez stronę internetową — wtedy na spotkanie przychodzi tłumacz. Bez rezerwacji można połączyć się z tłumaczem przez wideo z komputera przy wejściu. Urzędnicy przeszli też krótki kurs podstawowych zwrotów. — Nie chodzi o to, żeby każdy urzędnik znał język migowy, ale żeby każdy wiedział, jak pomóc — mówi kierowniczka urzędu."
+      },
+      {
+       "id": "cz3-6",
+       "stem": "Według kierowniczki urzędu",
+       "options": [
+        "wszyscy urzędnicy muszą znać język migowy.",
+        "każdy urzędnik powinien wiedzieć, jak pomóc.",
+        "tłumacz przez wideo nie jest potrzebny."
+       ],
+       "answer": "b"
+      }
+     ]
+    },
+    {
+     "id": "cz4",
+     "title": "Część 4 · regulamin",
+     "layout": "true-false",
+     "points_per_item": 1,
+     "start_n": 39,
+     "tf_labels": [
+      "prawda",
+      "fałsz"
+     ],
+     "instruction": "Przeczytaj regulamin i zdecyduj, czy zdania 39–41 są prawdziwe, czy fałszywe.",
+     "passage_title": "Regulamin Biblioteki Miejskiej — wypożyczanie książek",
+     "passage": "§1. Z wypożyczalni mogą korzystać osoby, które mają kartę biblioteczną. Kartę wydajemy bezpłatnie po okazaniu dokumentu tożsamości.\n\n§2. Jednorazowo można wypożyczyć do pięciu książek na okres jednego miesiąca.\n\n§3. Termin zwrotu można przedłużyć jeden raz, o kolejny miesiąc, jeśli na książkę nie czeka inny czytelnik.\n\n§4. Za każdy dzień opóźnienia pobiera się opłatę 20 groszy za każdą książkę.\n\n§5. Zniszczoną lub zgubioną książkę czytelnik musi odkupić albo zapłacić jej równowartość.\n\n§6. Nowości można wypożyczyć tylko na dwa tygodnie, bez możliwości przedłużenia.",
+     "example": {
+      "text": "Karta biblioteczna jest bezpłatna.",
+      "answer": "prawda"
+     },
+     "items": [
+      {
+       "id": "cz4-1",
+       "text": "Termin zwrotu książki można przedłużyć dwa razy.",
+       "answer": "fałsz"
+      },
+      {
+       "id": "cz4-2",
+       "text": "Za trzy dni opóźnienia z jedną książką płaci się 60 groszy.",
+       "answer": "prawda"
+      },
+      {
+       "id": "cz4-3",
+       "text": "Zgubioną książkę można odkupić.",
+       "answer": "prawda"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "el",
+   "tab": "Elementy",
+   "title": "Elementy językowe",
+   "minutes": 20,
+   "tasks": [
+    {
+     "id": "el1",
+     "title": "Część 1 · rozmowa telefoniczna",
+     "layout": "cloze",
+     "points_per_item": 1,
+     "instruction": "Uzupełnij rozmowę (42–49) zwrotami a–j. Dwa zwroty są niepotrzebne.",
+     "passage_title": "Telefon do szkoły tańca",
+     "bank": [
+      {
+       "key": "a",
+       "text": "zależy od"
+      },
+      {
+       "key": "b",
+       "text": "dzwonię w sprawie"
+      },
+      {
+       "key": "c",
+       "text": "z góry"
+      },
+      {
+       "key": "d",
+       "text": "do jutra"
+      },
+      {
+       "key": "e",
+       "text": "chociaż"
+      },
+      {
+       "key": "f",
+       "text": "w takim razie"
+      },
+      {
+       "key": "g",
+       "text": "czy jest"
+      },
+      {
+       "key": "h",
+       "text": "dlatego że"
+      },
+      {
+       "key": "i",
+       "text": "przy okazji"
+      },
+      {
+       "key": "j",
+       "text": "nie ma problemu"
+      }
+     ],
+     "text": "Recepcjonistka: Szkoła Tańca „Rytm”, dzień dobry.\nKlient: Dzień dobry, {{42}} kursu tańca dla par. Za trzy miesiące bierzemy ślub.\nRecepcjonistka: Gratuluję! Kurs dla początkujących zaczyna się w przyszły poniedziałek, zajęcia są raz w tygodniu o dziewiętnastej.\nKlient: W poniedziałki pracuję do dwudziestej. {{43}} jakaś grupa w innym dniu?\nRecepcjonistka: Tak, w czwartki o dwudziestej, ale ta grupa zaczęła tydzień temu.\nKlient: Czy możemy do niej dołączyć, {{44}} jedne zajęcia już się odbyły?\nRecepcjonistka: {{45}}. Przed zajęciami instruktor pokaże państwu kroki z pierwszej lekcji.\nKlient: A ile kosztuje kurs?\nRecepcjonistka: Cena {{46}} liczby zajęć. Osiem lekcji kosztuje czterysta złotych od pary.\nKlient: Płaci się {{47}} czy po każdych zajęciach?\nRecepcjonistka: Za cały kurs na pierwszych zajęciach, ale możemy podzielić płatność na dwie raty.\nKlient: {{48}} zapiszę nas na czwartek. Nazywam się Adam Mróz.\nRecepcjonistka: Dziękuję. {{49}}: proszę przyjść w wygodnych butach na płaskiej podeszwie.",
+     "gaps": [
+      {
+       "id": "el1-42",
+       "n": 42,
+       "kind": "bank",
+       "answer": "b"
+      },
+      {
+       "id": "el1-43",
+       "n": 43,
+       "kind": "bank",
+       "answer": "g"
+      },
+      {
+       "id": "el1-44",
+       "n": 44,
+       "kind": "bank",
+       "answer": "e"
+      },
+      {
+       "id": "el1-45",
+       "n": 45,
+       "kind": "bank",
+       "answer": "j"
+      },
+      {
+       "id": "el1-46",
+       "n": 46,
+       "kind": "bank",
+       "answer": "a"
+      },
+      {
+       "id": "el1-47",
+       "n": 47,
+       "kind": "bank",
+       "answer": "c"
+      },
+      {
+       "id": "el1-48",
+       "n": 48,
+       "kind": "bank",
+       "answer": "f"
+      },
+      {
+       "id": "el1-49",
+       "n": 49,
+       "kind": "bank",
+       "answer": "i"
+      }
+     ]
+    },
+    {
+     "id": "el2",
+     "title": "Część 2 · e-mail do działu kadr",
+     "layout": "cloze",
+     "points_per_item": 1,
+     "instruction": "Przeczytaj e-mail i wybierz właściwe słowo lub wyrażenie do każdej luki (50–59).",
+     "passage_title": "Prośba o zaświadczenie",
+     "text": "Szanowna Pani,\n\n{{50}} się z prośbą o wystawienie zaświadczenia o zatrudnieniu i wysokości zarobków. Dokument jest mi {{51}} w banku, ponieważ chcę wziąć kredyt na mieszkanie.\n\nPracuję w naszej firmie {{52}} marca 2023 roku na stanowisku magazyniera, na umowie o pracę na czas {{53}}.\n\nCzy mogłaby Pani przygotować zaświadczenie do {{54}}? Bank prosi o dokument wystawiony {{55}} ostatnich trzydziestu dni.\n\nJeśli to możliwe, proszę o wersję papierową. Mogę ją odebrać {{56}} w dziale kadr w czwartek po zmianie. {{57}} będzie to niemożliwe, proszę o skan na mój adres e-mail.\n\nZ góry dziękuję za pomoc i przepraszam za {{58}}.\n\nZ {{59}}\nOleh Bondarenko",
+     "gaps": [
+      {
+       "id": "el2-50",
+       "n": 50,
+       "kind": "options",
+       "options": [
+        "Zwracam",
+        "Zwracałem",
+        "Zwrócę"
+       ],
+       "answer": "Zwracam"
+      },
+      {
+       "id": "el2-51",
+       "n": 51,
+       "kind": "options",
+       "options": [
+        "potrzebny",
+        "potrzebne",
+        "potrzebna"
+       ],
+       "answer": "potrzebny"
+      },
+      {
+       "id": "el2-52",
+       "n": 52,
+       "kind": "options",
+       "options": [
+        "od",
+        "przez",
+        "w"
+       ],
+       "answer": "od"
+      },
+      {
+       "id": "el2-53",
+       "n": 53,
+       "kind": "options",
+       "options": [
+        "nieokreślony",
+        "nieokreślonego",
+        "nieokreśloną"
+       ],
+       "answer": "nieokreślony"
+      },
+      {
+       "id": "el2-54",
+       "n": 54,
+       "kind": "options",
+       "options": [
+        "piątku",
+        "piątek",
+        "piątkiem"
+       ],
+       "answer": "piątku"
+      },
+      {
+       "id": "el2-55",
+       "n": 55,
+       "kind": "options",
+       "options": [
+        "w ciągu",
+        "przez",
+        "za"
+       ],
+       "answer": "w ciągu"
+      },
+      {
+       "id": "el2-56",
+       "n": 56,
+       "kind": "options",
+       "options": [
+        "osobiście",
+        "osobisty",
+        "osoby"
+       ],
+       "answer": "osobiście"
+      },
+      {
+       "id": "el2-57",
+       "n": 57,
+       "kind": "options",
+       "options": [
+        "Jeśli",
+        "Chociaż",
+        "Dlatego"
+       ],
+       "answer": "Jeśli"
+      },
+      {
+       "id": "el2-58",
+       "n": 58,
+       "kind": "options",
+       "options": [
+        "kłopot",
+        "kłopotu",
+        "kłopotem"
+       ],
+       "answer": "kłopot"
+      },
+      {
+       "id": "el2-59",
+       "n": 59,
+       "kind": "options",
+       "options": [
+        "poważaniem",
+        "poważanie",
+        "poważaniu"
+       ],
+       "answer": "poważaniem"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pi",
+   "tab": "Pisanie",
+   "title": "Wypowiedź pisemna",
+   "minutes": 30,
+   "manual": true,
+   "manual_points": 45,
+   "tasks": [
+    {
+     "id": "pi1",
+     "title": "Wypowiedź pisemna · e-mail półformalny",
+     "layout": "writing",
+     "points_per_item": 0,
+     "instruction": "Wybierz jeden temat (A lub B) i napisz e-mail. Odnieś się do wszystkich trzech punktów. Czas: 30 minut.",
+     "choices": [
+      {
+       "id": "A",
+       "label": "Temat A · hałas z restauracji",
+       "intro": "E-mail do właściciela restauracji „Pod Kasztanem”",
+       "parts": [
+        {
+         "id": "A",
+         "label": "E-mail do restauracji",
+         "prompt": "Mieszkasz nad restauracją „Pod Kasztanem”. Od maja restauracja ma ogródek na podwórku, a goście siedzą tam do późna w nocy.\nNapisz e-mail do właściciela restauracji. Odnieś się do trzech punktów:\n- kim jesteś i gdzie mieszkasz,\n- jaki jest problem i jak wpływa na Twoje życie,\n- co proponujesz, żeby rozwiązać problem.\nZacznij i zakończ e-mail w odpowiedni sposób. Napisz ok. 150 słów."
+        }
+       ]
+      },
+      {
+       "id": "B",
+       "label": "Temat B · przyjęcie rodzinne",
+       "intro": "E-mail do restauracji „Pod Dębem”",
+       "parts": [
+        {
+         "id": "B",
+         "label": "E-mail do restauracji",
+         "prompt": "Organizujesz przyjęcie rodzinne (np. chrzciny albo urodziny) dla 30 osób.\nNapisz e-mail do restauracji „Pod Dębem”. Odnieś się do trzech punktów:\n- kiedy i dla ilu osób ma być przyjęcie,\n- jakie masz życzenia (np. menu dla dzieci, dania wegetariańskie, tort),\n- o co jeszcze chcesz zapytać (np. cena, zaliczka, parking).\nZacznij i zakończ e-mail w odpowiedni sposób. Napisz ok. 150 słów."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

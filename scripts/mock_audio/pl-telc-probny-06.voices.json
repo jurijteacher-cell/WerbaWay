@@ -1,0 +1,93 @@
+{
+  "model": "eleven_v4",
+  "cast": {
+    "NAR": "uPeXyAUvljDRLYs8zgwt",
+    "W1": "mQq2zdGT1zEfDbh8W95l",
+    "W2": "gHGjEjdr2LBds0XHTsvg",
+    "W3": "hq1SDzCP9HutY7Ea9PAW",
+    "W4": "2AI3SLYKkKZsvZEiHd3D",
+    "W5": "AwWFxYalAvioLDuxV9WV",
+    "M1": "p0KQaxqGrT7xcRWSJiHp",
+    "M2": "bwhymd1UcFEihyvPSEoR",
+    "M3": "ihTsqWCgsTDbANOCuZD2",
+    "M4": "e3WIS9BUv6I0HZ9v36L2"
+  },
+  "tasks": {
+    "sl1": {
+      "block_gap": 2.5,
+      "voices": {
+        "Lektor": "NAR",
+        "Pani Gajewska": "W4",
+        "Recepcjonista": "M2",
+        "Marcin": "M1",
+        "Pani z gabinetu": "W5",
+        "Kasjerka": "W3"
+      }
+    },
+    "sl2": {
+      "block_gap": 2.0,
+      "voices": {
+        "Lektor": "NAR"
+      },
+      "segments": [
+        {},
+        {
+          "Mężczyzna": "M3",
+          "Urzędniczka": "W2"
+        },
+        {
+          "Kelner": "M4",
+          "Klientka": "W1"
+        },
+        {
+          "Pasażerka": "W5",
+          "Kierowca": "M2"
+        },
+        {
+          "Ola": "W3",
+          "Kuba": "M1"
+        },
+        {
+          "Sąsiad": "M3",
+          "Sąsiadka": "W4"
+        }
+      ]
+    },
+    "sl3": {
+      "gaps": {
+        "1": 60
+      },
+      "voices": {
+        "Lektor": "NAR",
+        "Prezenterka": "W1",
+        "Jerzy": "M2"
+      }
+    },
+    "sl4": {
+      "block_gap": 1.5,
+      "gaps": {
+        "1": 30
+      },
+      "voices": {
+        "Lektor": "NAR",
+        "Prezenter": "M4"
+      },
+      "segments": [
+        {},
+        {},
+        {
+          "Słuchaczka": "W2"
+        },
+        {
+          "Słuchacz": "M1"
+        },
+        {
+          "Słuchaczka": "W5"
+        },
+        {
+          "Słuchacz": "M3"
+        }
+      ]
+    }
+  }
+}
