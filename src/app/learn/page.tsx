@@ -26,7 +26,15 @@ export default async function LearnIndex() {
   const groups = groupByCourse(pages);
   return (
     <main className="mx-auto max-w-5xl px-4 py-14">
-      <h1 className="mb-2 font-display text-4xl text-paper">{t("Курс")}</h1>
+      <div className="mb-2 flex flex-wrap items-baseline justify-between gap-3">
+        <h1 className="font-display text-4xl text-paper">{t("Курс")}</h1>
+        {access.isTeacher && (
+          <Link href="/teacher/trash" className="ww-btn ww-btn-ghost ww-btn-sm">
+            🗑 {t("Кошик")}
+            {access.trashed.size > 0 && ` (${access.trashed.size})`}
+          </Link>
+        )}
+      </div>
       <p className="mb-10 text-paper-muted">{t("Лекції з текстами, вправами й домашкою.")}</p>
       {pages.length === 0 && extraLectures.length === 0 && (
         <p className="text-paper-muted">{t("Тут з’являться лекції, щойно викладач відкриє тобі курс.")}</p>

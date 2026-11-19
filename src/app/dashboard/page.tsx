@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { fetchAttempts, fmtDate, pctClass, summarize, type MockRow } from '@/lib/analytics';
 import { listPages } from '@/lib/pages/pages';
+import { fetchHidden } from '@/lib/pages/trash';
 import { getLocale, t } from '@/i18n/server';
 import { loadDeck } from '@/lib/words';
 import { lectureStats } from '@/lib/lecture-stats';
@@ -32,7 +33,8 @@ export default async function DashboardPage() {
     .order('completed_at', { ascending: false });
   const progressBySlug = new Map((progressRows ?? []).map((r) => [r.lesson_slug as string, r]));
   // Картка лекції — для кожного уроку курсу, де є запис про проходження або хоч одна відповідь
-  const allPages = listPages(getLocale());
+  const hidden = await fetchHidden(supabase);
+  const allPages = listPages(getLocale()).filter((p) => !hidden.has(p.slug));
   const lectureCards = allPages
     .map((p) => ({ page: p, stats: lectureStats(p.slug, attempts), row: progressBySlug.get(p.slug) }))
     .filter((x) => x.row || x.stats.touched)

@@ -399,6 +399,8 @@
   }
   .ww-share-fab:hover { background: #e4d9ff; border-color: #c3aef5; transform: translateY(-1px) rotate(-8deg); }
   .ww-share-fab:focus-visible { outline: 2px solid #6b46d6; outline-offset: 2px; }
+  .ww-trash-fab:hover { background: #ffe8ed; border-color: #f4b7c5; color: #cf3a57; transform: translateY(-1px); }
+  .ww-trash-fab:disabled { opacity: 0.5; }
 
   /* кнопка пошуку в шапці */
   .ww-search-trigger {

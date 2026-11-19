@@ -29,7 +29,9 @@ export default async function LearnPage({
   const page = loadPage(params.slug, locale);
   if (!page) notFound();
   const access = await getAccess(supabase, user.id);
-  if (!canSee(page.meta, access)) notFound();
+  // лекцію з кошика викладач може переглянути (відкриває її з /teacher/trash)
+  const inTrash = access.isTeacher && access.trashed.has(page.meta.slug);
+  if (!canSee(page.meta, access) && !inTrash) notFound();
   const p = Number(searchParams?.p);
   return (
     <LessonView
@@ -37,7 +39,8 @@ export default async function LearnPage({
       mode="lecture"
       pageIndex={Number.isFinite(p) && p > 0 ? p - 1 : 0}
       teacherNotes={access.isTeacher && !!loadTeacherPage(params.slug)}
-      canShare={access.isTeacher}
+      canShare={access.isTeacher && !inTrash}
+      inTrash={inTrash}
     />
   );
 }

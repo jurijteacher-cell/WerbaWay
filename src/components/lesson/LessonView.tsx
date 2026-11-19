@@ -5,6 +5,7 @@ import { Blocks } from './LessonBlocks';
 import { LessonPager } from './LessonPager';
 import { PageList } from './PageList';
 import { ShareButton } from './ShareButton';
+import { TrashButton, TrashRowActions } from './TrashButton';
 import './lesson.css';
 import { t } from '@/i18n/server';
 
@@ -19,11 +20,13 @@ type Props = {
   hw?: { assigned: boolean; done: boolean } | null;
   /** публічне посилання: адреса лекції /s/<токен>, без меню сайту */
   publicBase?: string;
-  /** викладач: кнопка «Поділитися» */
+  /** викладач: кнопки «Поділитися» і «У кошик» */
   canShare?: boolean;
+  /** викладач переглядає лекцію з кошика */
+  inTrash?: boolean;
 };
 
-export function LessonView({ page, mode, hw, pageIndex = 0, teacherNotes, publicBase, canShare }: Props) {
+export function LessonView({ page, mode, hw, pageIndex = 0, teacherNotes, publicBase, canShare, inTrash }: Props) {
   const base = publicBase ?? `/learn/${page.meta.slug}`;
   const { meta, sections } = page;
   const book = buildPages(page);
@@ -35,9 +38,18 @@ export function LessonView({ page, mode, hw, pageIndex = 0, teacherNotes, public
   return (
     <main className="lp-root">
       <LessonHero meta={meta}>
+        {inTrash && (
+          <div className="mb-4 rounded-xl border border-[#f4b7c5] bg-[#fff4f6] px-4 py-3">
+            <p className="mb-2 text-sm text-paper">
+              {t("🗑 Ця лекція в кошику — учні її не бачать.")} <Link href="/teacher/trash">{t("Кошик")}</Link>
+            </p>
+            <TrashRowActions slug={meta.slug} title={meta.title} after="/teacher/trash" />
+          </div>
+        )}
         {canShare && (
-          <div className="mb-4">
+          <div className="mb-4 flex flex-wrap gap-2">
             <ShareButton slug={meta.slug} title={meta.title} />
+            {mode === 'lecture' && !publicBase && <TrashButton slug={meta.slug} title={meta.title} after="/learn" />}
           </div>
         )}
         <dl className="lp-props">

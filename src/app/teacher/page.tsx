@@ -58,6 +58,9 @@ export default async function TeacherPage() {
         <Link href="/teacher/analytics" className="ww-btn ww-btn-secondary ww-btn-lg">
           {t("Аналітика")}
         </Link>
+        <Link href="/teacher/trash" className="ww-btn ww-btn-secondary ww-btn-lg">
+          🗑 {t("Кошик лекцій")}
+        </Link>
       </section>
 
       {error && <p className="text-incorrect">Помилка завантаження: {error.message}</p>}

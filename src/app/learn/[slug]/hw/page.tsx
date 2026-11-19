@@ -25,7 +25,8 @@ export default async function HomeworkPage({ params }: { params: { slug: string 
     .maybeSingle();
 
   const access = await getAccess(supabase, user.id);
-  if (!canSee(page.meta, access) && !row) notFound();
+  if (access.trashed.has(page.meta.slug) && !access.isTeacher) notFound();
+  if (!canSee(page.meta, access) && !row && !access.isTeacher) notFound();
   // Викладач бачить сторінку без кнопки «виконано»
   const hw = access.isTeacher ? null : { assigned: !!row?.homework_assigned_at, done: !!row?.homework_done_at };
   return <LessonView page={page} mode="homework" hw={hw} />;

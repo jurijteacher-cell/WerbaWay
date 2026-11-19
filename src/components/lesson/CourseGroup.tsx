@@ -5,6 +5,7 @@ import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { useState } from 'react';
 import { ShareButton } from './ShareButton';
+import { TrashButton } from './TrashButton';
 
 export type CourseCard = { slug: string; title: string; icon?: string; cover?: string; level?: string; number?: number };
 
@@ -38,7 +39,8 @@ function Card({ p, canShare }: { p: CourseCard; canShare?: boolean }) {
       </div>
     </Link>
       {canShare && (
-        <div className="absolute right-3 top-3">
+        <div className="absolute right-3 top-3 flex gap-2">
+          <TrashButton slug={p.slug} title={p.title} compact />
           <ShareButton slug={p.slug} title={p.title} compact />
         </div>
       )}

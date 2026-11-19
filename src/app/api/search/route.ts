@@ -89,7 +89,7 @@ export async function GET(req: Request) {
     if (people.length) groups.unshift({ label: t("Учні"), items: people.slice(0, 6) });
 
     const notes = teacherNotes()
-      .filter((note) => all(note.n))
+      .filter((note) => all(note.n) && !access.trashed.has(note.meta.teacherOf ?? note.meta.slug))
       .slice(0, 5)
       .map((note) => ({
         title: note.meta.title,

@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { listPages } from '@/lib/pages/pages';
+import { fetchHidden } from '@/lib/pages/trash';
 import { getLocale, t } from '@/i18n/server';
 import { loadDeck } from '@/lib/words';
 import { DeckPicker, type DeckInfo } from '@/components/words/DeckPicker';
@@ -22,7 +23,8 @@ export default async function WordsPage() {
   const isTeacher = profile?.role === 'teacher';
 
   // Колода з'являється в папці учня, коли викладач завершив лекцію (викладач бачить усі — щоб перевіряти)
-  const pages = listPages(getLocale());
+  const hidden = await fetchHidden(supabase);
+  const pages = listPages(getLocale()).filter((p) => !hidden.has(p.slug));
   const doneAt = new Map((done ?? []).map((r) => [r.lesson_slug as string, r.completed_at as string]));
   const known = new Map<string, number>();
   for (const r of vp ?? []) if (r.known) known.set(r.lesson_slug as string, (known.get(r.lesson_slug as string) ?? 0) + 1);

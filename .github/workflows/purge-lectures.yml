@@ -1,0 +1,39 @@
+# Кошик лекцій, крок 2: «Видалити назавжди» на /teacher/trash ховає лекцію одразу,
+# а цей запуск прибирає її файли з репо (scripts/purge-lectures.mjs) — після пушу Vercel перезбирає сайт.
+name: Purge deleted lectures
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: purge-lectures
+  cancel-in-progress: false
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Delete files of purged lectures
+        shell: bash
+        run: node scripts/purge-lectures.mjs --from-site | tee /tmp/purge.log
+      - name: Commit and push
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then echo "Нічого видаляти"; exit 0; fi
+          # автор — як в останньому коміті: такі коміти Vercel уже деплоїть
+          git config user.name "$(git log -1 --format=%an)"
+          git config user.email "$(git log -1 --format=%ae)"
+          git add -A
+          git commit -m "Кошик: лекції видалено назавжди" -m "$(head -1 /tmp/purge.log)" -m "Автоматично: .github/workflows/purge-lectures.yml"
+          git pull --rebase origin main
+          git push origin HEAD:main
