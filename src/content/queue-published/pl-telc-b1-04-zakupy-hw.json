@@ -1,0 +1,210 @@
+{
+  "lesson_id": "pl-telc-b1-04-zakupy",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: zakupy i aspekt",
+  "instruction": "Trzy krótkie ćwiczenia. Możesz przerwać i wrócić później.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Które słowo pasuje?",
+      "instruction": "Wybierz słowo.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Daję pięćdziesiąt złotych, a kawa kosztuje dwanaście. Ile dostanę ___?",
+          "answer": "reszty",
+          "grammar_point": "slownictwo",
+          "options": [
+            "reszty",
+            "rabatu",
+            "raty"
+          ]
+        },
+        {
+          "id": "h1-2",
+          "text": "Nie mam czasu czekać na kuriera, więc wybieram odbiór w ___.",
+          "answer": "paczkomacie",
+          "grammar_point": "slownictwo",
+          "options": [
+            "paczkomacie",
+            "przymierzalni",
+            "kasie"
+          ]
+        },
+        {
+          "id": "h1-3",
+          "text": "Spodnie są za krótkie — muszę wziąć większy ___.",
+          "answer": "rozmiar",
+          "grammar_point": "slownictwo",
+          "options": [
+            "rozmiar",
+            "paragon",
+            "zwrot"
+          ]
+        },
+        {
+          "id": "h1-4",
+          "text": "Kubek przyszedł ___ — na uchu jest długa rysa.",
+          "answer": "pęknięty",
+          "grammar_point": "slownictwo",
+          "options": [
+            "pęknięty",
+            "zepsuty",
+            "brakujący"
+          ]
+        },
+        {
+          "id": "h1-5",
+          "text": "Właśnie przeprowadziliśmy się i nie stać nas na nową kanapę od razu, więc kupimy ją na ___.",
+          "answer": "raty",
+          "grammar_point": "slownictwo",
+          "options": [
+            "raty",
+            "wyprzedaż",
+            "gwarancję"
+          ]
+        },
+        {
+          "id": "h1-6",
+          "text": "W pudełku z nową szafą ___ dwóch śrubek, więc nie mogłem jej złożyć.",
+          "answer": "brakowało",
+          "grammar_point": "slownictwo",
+          "options": [
+            "brakowało",
+            "pasowało",
+            "przestało"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Rower z ogłoszenia",
+      "instruction": "Wybierz czasownik: niedokonany czy dokonany?",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Przez cały marzec ___ ogłoszenia z używanymi rowerami.",
+          "answer": "przeglądałem",
+          "grammar_point": "aspekt-uzycie",
+          "options": [
+            "przeglądałem",
+            "przejrzałem"
+          ],
+          "explanation": "Przez cały marzec → proces."
+        },
+        {
+          "id": "h2-2",
+          "text": "W końcu ___ do sprzedawcy z Psiego Pola.",
+          "answer": "zadzwoniłem",
+          "grammar_point": "aspekt-przeszly",
+          "options": [
+            "zadzwoniłem",
+            "dzwoniłem"
+          ],
+          "explanation": "W końcu → dokonany."
+        },
+        {
+          "id": "h2-3",
+          "text": "Kiedy ___ rower na podwórku, zauważyłem, że hamulec nie działa.",
+          "answer": "oglądałem",
+          "grammar_point": "aspekt-przeszly",
+          "options": [
+            "oglądałem",
+            "obejrzałem"
+          ],
+          "explanation": "Tło: kiedy oglądałem — nagle zauważyłem."
+        },
+        {
+          "id": "h2-4",
+          "text": "Sprzedawca od razu ___ cenę o sto złotych.",
+          "answer": "obniżył",
+          "grammar_point": "aspekt-uzycie",
+          "options": [
+            "obniżył",
+            "obniżał"
+          ],
+          "explanation": "Od razu → dokonany."
+        },
+        {
+          "id": "h2-5",
+          "text": "Dziadek, który kiedyś ___ rowery w piwnicy, naprawił hamulec w pół godziny.",
+          "answer": "naprawiał",
+          "grammar_point": "aspekt-uzycie",
+          "options": [
+            "naprawiał",
+            "naprawił"
+          ],
+          "explanation": "Kiedyś, wiele razy → niedokonany."
+        },
+        {
+          "id": "h2-6",
+          "text": "Nigdy wcześniej nie ___ niczego z ogłoszenia — i jestem bardzo zadowolony.",
+          "answer": "kupowałem",
+          "grammar_point": "aspekt-przeszly",
+          "options": [
+            "kupowałem",
+            "kupiłem"
+          ],
+          "explanation": "Nigdy wcześniej — w ogóle tego nie robiłem → nie + niedokonany."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Kiedy… — tło i akcja",
+      "instruction": "Połącz dwie informacje w jedno zdanie z „kiedy”. Pierwsza część to tło (niedokonany), druga — akcja (dokonany).",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "ja ♂: stać w kolejce / zadzwonić szef",
+          "answer": "Kiedy stałem w kolejce, zadzwonił szef.",
+          "accept": [
+            "Kiedy stałem w kolejce, szef zadzwonił."
+          ],
+          "grammar_point": "aspekt-przeszly"
+        },
+        {
+          "id": "h3-2",
+          "prompt": "ona: przymierzać sukienkę / zgasnąć światło",
+          "answer": "Kiedy przymierzała sukienkę, zgasło światło.",
+          "accept": [
+            "Kiedy przymierzała sukienkę, światło zgasło."
+          ],
+          "grammar_point": "aspekt-przeszly"
+        },
+        {
+          "id": "h3-3",
+          "prompt": "my ♂: jechać do sklepu / zepsuć się samochód",
+          "answer": "Kiedy jechaliśmy do sklepu, zepsuł się samochód.",
+          "accept": [
+            "Kiedy jechaliśmy do sklepu, samochód się zepsuł."
+          ],
+          "grammar_point": "aspekt-przeszly"
+        },
+        {
+          "id": "h3-4",
+          "prompt": "ja ♀: rozpakowywać paczkę / zauważyć rysę",
+          "answer": "Kiedy rozpakowywałam paczkę, zauważyłam rysę.",
+          "accept": [
+            "Zauważyłam rysę, kiedy rozpakowywałam paczkę."
+          ],
+          "grammar_point": "aspekt-przeszly"
+        },
+        {
+          "id": "h3-5",
+          "prompt": "oni: płacić przy kasie / przyjść kierowniczka",
+          "answer": "Kiedy płacili przy kasie, przyszła kierowniczka.",
+          "accept": [
+            "Kiedy płacili przy kasie, kierowniczka przyszła."
+          ],
+          "grammar_point": "aspekt-przeszly"
+        }
+      ]
+    }
+  ]
+}

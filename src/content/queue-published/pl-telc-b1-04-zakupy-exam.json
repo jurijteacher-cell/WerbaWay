@@ -1,0 +1,108 @@
+{
+  "lesson_id": "pl-telc-b1-04-zakupy",
+  "exercise_type": "true-false",
+  "title": "W formacie egzaminu: regulamin sklepu i wiadomości głosowe",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie regulaminu i słuchanie krótkich wiadomości.",
+  "estimated_minutes": 14,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "title": "Czytanie: regulamin sklepu — prawda czy fałsz?",
+      "instruction": "Przeczytaj regulamin sklepu i historię Andrija. Zdecyduj, czy zdania są prawdziwe, czy fałszywe. Taki format ma czwarta część czytania na egzaminie.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Nieużywany czajnik w oryginalnym opakowaniu, kupiony w sklepie „ElektroDom”, można oddać po trzech tygodniach.",
+          "answer": true,
+          "explanation": "§ 1: towar ze sklepu stacjonarnego — 30 dni, jeśli jest nieużywany i w opakowaniu."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Za odesłanie towaru kupionego przez internet płaci sklep.",
+          "answer": false,
+          "explanation": "§ 2: koszt odesłania pokrywa klient."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Bez paragonu nie można złożyć reklamacji w tym sklepie.",
+          "answer": false,
+          "explanation": "§ 3: dowodem zakupu może być też faktura albo potwierdzenie płatności kartą."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Przez pierwszy tydzień Andrij codziennie robił kawę w nowym ekspresie.",
+          "answer": true,
+          "explanation": "„Codziennie rano robił sobie cappuccino”."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Andrij poprosił sklep o zwrot pieniędzy za ekspres.",
+          "answer": false,
+          "explanation": "Napisał, że chce wymiany na nowy."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Sklep odpowiedział na reklamację Andrija w terminie.",
+          "answer": true,
+          "explanation": "Odpowiedź przyszła po dziesięciu dniach, a termin to czternaście dni."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "max_plays": 2,
+      "title": "Słuchanie: cztery wiadomości głosowe",
+      "instruction": "Najpierw przeczytaj pytania. Potem posłuchaj czterech wiadomości — maksymalnie dwa razy. Do każdej wiadomości jest jedno pytanie. Na egzaminie usłyszysz nagranie tylko raz.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Wiadomość 1. Gdzie jest teraz paczka?",
+          "options": [
+            "u sąsiada z parteru",
+            "w paczkomacie przy ulicy Kwiatowej",
+            "w punkcie kurierskim na dworcu"
+          ],
+          "answer": "w paczkomacie przy ulicy Kwiatowej",
+          "explanation": "Kurier zostawił paczkę w paczkomacie; sąsiad nie otworzył drzwi."
+        },
+        {
+          "id": "e2-2",
+          "question": "Wiadomość 2. Co musi teraz zrobić klient?",
+          "options": [
+            "zapłacić za nowy filtr",
+            "przynieść paragon do sklepu",
+            "odebrać odkurzacz od czwartku"
+          ],
+          "answer": "odebrać odkurzacz od czwartku",
+          "explanation": "Serwis już naprawił odkurzacz w ramach reklamacji; klient nic nie płaci."
+        },
+        {
+          "id": "e2-3",
+          "question": "Wiadomość 3. Co zrobiła Marta?",
+          "options": [
+            "kupiła czerwone kozaki",
+            "zamówiła czarne kozaki",
+            "zapłaciła za buty"
+          ],
+          "answer": "zamówiła czarne kozaki",
+          "explanation": "Czerwone już sprzedali; zapłacić trzeba dopiero w sobotę, po przymierzeniu."
+        },
+        {
+          "id": "e2-4",
+          "question": "Wiadomość 4. Co zrobiła księgarnia?",
+          "options": [
+            "wysłała książkę",
+            "oddała pieniądze",
+            "zamówiła inną książkę"
+          ],
+          "answer": "oddała pieniądze",
+          "explanation": "Pieniądze wróciły na konto dziś rano; inną książkę mogą zamówić dopiero, jeśli klientka zechce."
+        }
+      ]
+    }
+  ]
+}
