@@ -1,0 +1,183 @@
+{
+  "lesson_id": "pl-telc-b1-03-wspomnienia",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: wspomnienia i czas przeszły",
+  "instruction": "Trzy krótkie ćwiczenia. Możesz przerwać i wrócić później.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Które słowo pasuje?",
+      "instruction": "Wybierz słowo.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Na koniec roku szkolnego każdy uczeń dostaje ___.",
+          "answer": "świadectwo",
+          "grammar_point": "slownictwo",
+          "options": [
+            "świadectwo",
+            "przerwę",
+            "wychowawczynię"
+          ]
+        },
+        {
+          "id": "h1-2",
+          "text": "Moi rodzice często ___ czasy studiów i śmieją się do łez.",
+          "answer": "wspominają",
+          "grammar_point": "slownictwo",
+          "options": [
+            "wspominają",
+            "tęsknią",
+            "dorastają"
+          ]
+        },
+        {
+          "id": "h1-3",
+          "text": "Mieszkam w Polsce od ośmiu lat, ale ciągle ___ za rodzinnym miastem.",
+          "answer": "tęsknię",
+          "grammar_point": "slownictwo",
+          "options": [
+            "tęsknię",
+            "pamiętam",
+            "przypominam"
+          ]
+        },
+        {
+          "id": "h1-4",
+          "text": "Dziewczynki ___ się za drzewem, żeby brat ich nie znalazł.",
+          "answer": "schowały",
+          "grammar_point": "slownictwo",
+          "options": [
+            "schowały",
+            "bawiły",
+            "urodziły"
+          ]
+        },
+        {
+          "id": "h1-5",
+          "text": "W sierpniu nasza rodzina ___ się do większego mieszkania na trzecim piętrze.",
+          "answer": "przeprowadziła",
+          "grammar_point": "slownictwo",
+          "options": [
+            "przeprowadziła",
+            "wychowała",
+            "zmieniła"
+          ]
+        },
+        {
+          "id": "h1-6",
+          "text": "Nie mam ___ — jestem jedynakiem.",
+          "answer": "rodzeństwa",
+          "grammar_point": "slownictwo",
+          "options": [
+            "rodzeństwa",
+            "dziadków",
+            "kuzynów"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Kartka od babci",
+      "instruction": "Babcia pisze do wnuczki. Wpisz czasowniki w czasie przeszłym.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Kochana Zosiu, w niedzielę ___ (my, być) z dziadkiem na festynie w parku.",
+          "answer": "byliśmy",
+          "grammar_point": "czas-przeszly"
+        },
+        {
+          "id": "h2-2",
+          "text": "Dziadek ___ (spotkać) tam kolegę z wojska, którego nie widział czterdzieści lat.",
+          "answer": "spotkał",
+          "grammar_point": "czas-przeszly"
+        },
+        {
+          "id": "h2-3",
+          "text": "Panowie ___ (rozmawiać) do wieczora i zupełnie zapomnieli o mnie!",
+          "answer": "rozmawiali",
+          "grammar_point": "mn-mianownik-mos"
+        },
+        {
+          "id": "h2-4",
+          "text": "Ja w tym czasie ___ (zjeść) dwa kawałki sernika.",
+          "answer": "zjadłam",
+          "grammar_point": "czas-przeszly-nieregularny"
+        },
+        {
+          "id": "h2-5",
+          "text": "Twoje kuzynki ___ (tańczyć) z innymi dziećmi przed sceną.",
+          "answer": "tańczyły",
+          "grammar_point": "mn-mianownik-mos"
+        },
+        {
+          "id": "h2-6",
+          "text": "Wieczorem ___ (my, iść) do domu pieszo, bo autobus nie przyjechał.",
+          "answer": "szliśmy",
+          "grammar_point": "czas-przeszly-nieregularny",
+          "accept": [
+            "poszliśmy"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Dziś → kiedyś",
+      "instruction": "Napisz to samo o przeszłości. Zacznij od słów w nawiasie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Pracuję w biurze na czwartym piętrze. → (Kiedyś …)",
+          "answer": "Kiedyś pracowałem w biurze na czwartym piętrze.",
+          "accept": [
+            "Kiedyś pracowałam w biurze na czwartym piętrze."
+          ],
+          "grammar_point": "czas-przeszly"
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Sąsiedzi mają psa, który szczeka w nocy. → (Kiedyś sąsiedzi …)",
+          "answer": "Kiedyś sąsiedzi mieli psa, który szczekał w nocy.",
+          "accept": [
+            "Kiedyś sąsiedzi mieli psa, który w nocy szczekał."
+          ],
+          "grammar_point": "mn-mianownik-mos"
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Moje córki chodzą na basen w każdą sobotę. → (Kiedyś moje córki …)",
+          "answer": "Kiedyś moje córki chodziły na basen w każdą sobotę.",
+          "accept": [
+            "Kiedyś moje córki w każdą sobotę chodziły na basen."
+          ],
+          "grammar_point": "mn-mianownik-mos"
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Szef nie może przyjść na zebranie. → (Wczoraj szef …)",
+          "answer": "Wczoraj szef nie mógł przyjść na zebranie.",
+          "accept": [
+            "Szef wczoraj nie mógł przyjść na zebranie."
+          ],
+          "grammar_point": "czas-przeszly-nieregularny"
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Mieszkamy w kamienicy w centrum. → (Dziesięć lat temu …)",
+          "answer": "Dziesięć lat temu mieszkaliśmy w kamienicy w centrum.",
+          "accept": [
+            "Dziesięć lat temu mieszkałyśmy w kamienicy w centrum."
+          ],
+          "grammar_point": "przyimki-czasu"
+        }
+      ]
+    }
+  ]
+}

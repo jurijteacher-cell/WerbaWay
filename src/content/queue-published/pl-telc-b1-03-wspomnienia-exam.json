@@ -1,0 +1,119 @@
+{
+  "lesson_id": "pl-telc-b1-03-wspomnienia",
+  "exercise_type": "true-false",
+  "title": "W formacie egzaminu: wspomnienia z dzieciństwa",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie tekstu i słuchanie rozmowy.",
+  "estimated_minutes": 12,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "title": "Czytanie: zegar pana Józefa — prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst jeszcze raz. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Pani Halina znała zegar, zanim Andrij się wprowadził.",
+          "answer": true,
+          "explanation": "Zegar wisiał w tym mieszkaniu, kiedy była małą dziewczynką."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Pan Józef naprawiał zegary w swoim pokoju.",
+          "answer": false,
+          "explanation": "Miał warsztat w piwnicy."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Kiedy pani Halina była dzieckiem, w każdym mieszkaniu w kamienicy był telewizor.",
+          "answer": false,
+          "explanation": "Telewizję oglądali u sąsiadów, bo nie każdy miał telewizor."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Andrij spędzał wakacje w Charkowie, u rodziców.",
+          "answer": false,
+          "explanation": "Urodził się w Charkowie, ale wakacje spędzał u dziadków na wsi."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Andrij wstawał wcześnie, bo chciał sam nakręcać zegar.",
+          "answer": true,
+          "explanation": "„Codziennie wstawałem o szóstej, bo chciałem to robić sam”."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Zegar dziadka jest teraz u brata Andrija.",
+          "answer": true,
+          "explanation": "Zegar wziął brat — wisi w jego domu w Kijowie."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "max_plays": 2,
+      "title": "Słuchanie: stare zdjęcie z obozu",
+      "instruction": "Najpierw przeczytaj pytania. Potem posłuchaj rozmowy — maksymalnie dwa razy. Na egzaminie usłyszysz nagranie tylko raz.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Ile lat miał Tomasz na zdjęciu?",
+          "options": [
+            "dwanaście",
+            "trzy",
+            "cztery"
+          ],
+          "answer": "dwanaście",
+          "explanation": "„Miałem wtedy dwanaście lat”. Trzy — to tygodnie na obozie, cztery — osoby w namiocie."
+        },
+        {
+          "id": "e2-2",
+          "question": "Kim jest wysoki chłopak w czapce?",
+          "options": [
+            "Tomaszem",
+            "kuzynem Tomasza",
+            "instruktorem"
+          ],
+          "answer": "kuzynem Tomasza",
+          "explanation": "Tomasz to mały chłopiec z gitarą, a wysoki — kuzyn Paweł."
+        },
+        {
+          "id": "e2-3",
+          "question": "Gdzie dzieci spały na obozie?",
+          "options": [
+            "w hotelu nad jeziorem",
+            "w namiotach",
+            "w domu instruktora"
+          ],
+          "answer": "w namiotach",
+          "explanation": "„Spaliśmy w namiotach, po cztery osoby”. Hotel — to to, co Tomasz woli dzisiaj."
+        },
+        {
+          "id": "e2-4",
+          "question": "Co się stało z zupą?",
+          "options": [
+            "Tomasz ją przypalił.",
+            "Zjadł ją instruktor.",
+            "Wszystkim bardzo smakowała."
+          ],
+          "answer": "Tomasz ją przypalił.",
+          "explanation": "„Raz przypaliłem zupę i nikt nie chciał jej jeść”."
+        },
+        {
+          "id": "e2-5",
+          "question": "Kiedy Tomasz nauczył się grać na gitarze?",
+          "options": [
+            "w szkole muzycznej",
+            "na obozie, wieczorami przy ognisku",
+            "w Norwegii, u kuzyna"
+          ],
+          "answer": "na obozie, wieczorami przy ognisku",
+          "explanation": "Przed obozem nie umiał; nauczył go instruktor przy ognisku."
+        }
+      ]
+    }
+  ]
+}

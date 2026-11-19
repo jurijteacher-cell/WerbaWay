@@ -1,0 +1,508 @@
+{
+  "lesson_id": "pl-telc-b1-03-wspomnienia",
+  "exercise_type": "fill-in-blank",
+  "title": "Czas przeszły: kto to zrobił i kiedy?",
+  "instruction": "Ćwiczenia do lekcji: najpierw formy, potem wyjątki, pułapki i opowieść.",
+  "estimated_minutes": 40,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "Słowa: połącz słowo z opisem",
+      "instruction": "Kliknij słowo po lewej, potem pasujący opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "rodzeństwo",
+          "right": "bracia i siostry",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "świadectwo",
+          "right": "dokument z ocenami na koniec roku",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "wagarować",
+          "right": "nie iść na lekcje bez powodu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "huśtawka",
+          "right": "na niej dziecko leci do przodu i do tyłu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "obóz",
+          "right": "wyjazd dzieci z opiekunami, np. latem",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "dorastać",
+          "right": "stawać się dorosłym",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "tęsknić",
+          "right": "chcieć znowu być z kimś, kogo nie ma blisko",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "beztroski",
+          "right": "bez problemów i bez stresu",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Ja, ty, on, ona: formy dla kobiety i mężczyzny",
+      "instruction": "Wpisz czasownik z nawiasu w czasie przeszłym. Patrz, kto mówi: kobieta czy mężczyzna.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Kasia: — Wczoraj ___ (pracować) zdalnie do dziewiątej wieczorem.",
+          "answer": "pracowałam",
+          "grammar_point": "czas-przeszly",
+          "explanation": "Kobieta mówi o sobie → -łam."
+        },
+        {
+          "id": "g2-2",
+          "text": "Pan Marek: — W młodości ___ (być) kierowcą autobusu.",
+          "answer": "byłem",
+          "grammar_point": "czas-przeszly",
+          "explanation": "Mężczyzna, ja → -łem."
+        },
+        {
+          "id": "g2-3",
+          "text": "— Basiu, ___ (dzwonić) wczoraj do babci?",
+          "answer": "dzwoniłaś",
+          "grammar_point": "czas-przeszly",
+          "explanation": "Ty + kobieta (Basia) → -łaś."
+        },
+        {
+          "id": "g2-4",
+          "text": "— Tomku, gdzie ___ (mieszkać), zanim przeprowadziłeś się do Wrocławia?",
+          "answer": "mieszkałeś",
+          "grammar_point": "czas-przeszly",
+          "explanation": "Ty + mężczyzna (Tomek) → -łeś."
+        },
+        {
+          "id": "g2-5",
+          "text": "Moja sąsiadka przez trzydzieści lat ___ (uczyć) matematyki w liceum.",
+          "answer": "uczyła",
+          "grammar_point": "czas-przeszly",
+          "explanation": "Ona → -ła."
+        },
+        {
+          "id": "g2-6",
+          "text": "Dziecko całą noc ___ (płakać), bo bolał je ząb.",
+          "answer": "płakało",
+          "grammar_point": "czas-przeszly",
+          "explanation": "Dziecko to rodzaj nijaki → -ło."
+        },
+        {
+          "id": "g2-7",
+          "text": "Mój szef rok temu ___ (zrezygnować) z pracy w banku i otworzył kawiarnię.",
+          "answer": "zrezygnował",
+          "grammar_point": "czas-przeszly",
+          "explanation": "On → sam temat bez końcówki: zrezygnował."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. -li czy -ły?",
+      "instruction": "Wybierz poprawną formę. Pomyśl: czy w grupie jest mężczyzna?",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Chłopcy z naszej kamienicy codziennie ___ w piłkę na podwórku.",
+          "answer": "grali",
+          "grammar_point": "mn-mianownik-mos",
+          "options": [
+            "grali",
+            "grały"
+          ],
+          "explanation": "Chłopcy to mężczyźni → -li."
+        },
+        {
+          "id": "g3-2",
+          "text": "Dzieci ___ w piaskownicy do zmroku.",
+          "answer": "bawiły się",
+          "grammar_point": "mn-mianownik-mos",
+          "options": [
+            "bawiły się",
+            "bawili się"
+          ],
+          "explanation": "Dzieci nie są męskoosobowe → -ły, choć w grupie mogą być chłopcy."
+        },
+        {
+          "id": "g3-3",
+          "text": "Mama i tata ___ w tej samej fabryce.",
+          "answer": "pracowali",
+          "grammar_point": "mn-mianownik-mos",
+          "options": [
+            "pracowali",
+            "pracowały"
+          ],
+          "explanation": "Kobieta + mężczyzna → -li."
+        },
+        {
+          "id": "g3-4",
+          "text": "Moje koleżanki z klasy ___ do mnie na urodziny.",
+          "answer": "przyszły",
+          "grammar_point": "mn-mianownik-mos",
+          "options": [
+            "przyszły",
+            "przyszli"
+          ],
+          "explanation": "Same kobiety → -ły."
+        },
+        {
+          "id": "g3-5",
+          "text": "Psy sąsiadów ___ całą noc i nikt nie mógł spać.",
+          "answer": "szczekały",
+          "grammar_point": "mn-mianownik-mos",
+          "options": [
+            "szczekały",
+            "szczekali"
+          ],
+          "explanation": "Zwierzęta → -ły."
+        },
+        {
+          "id": "g3-6",
+          "text": "Moi dziadkowie ___ dom nad jeziorem.",
+          "answer": "mieli",
+          "grammar_point": "mn-mianownik-mos",
+          "options": [
+            "mieli",
+            "miały",
+            "miali"
+          ],
+          "explanation": "Dziadkowie (babcia + dziadek) → -li; przed -li wraca e: mieli."
+        },
+        {
+          "id": "g3-7",
+          "text": "Stare zdjęcia ___ w pudełku w piwnicy.",
+          "answer": "leżały",
+          "grammar_point": "mn-mianownik-mos",
+          "options": [
+            "leżały",
+            "leżeli"
+          ],
+          "explanation": "Rzeczy → -ły."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Czasowniki na -eć i z „się”",
+      "instruction": "Wpisz czasownik w czasie przeszłym. Pamiętaj o e → a i o „się”.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "W dzieciństwie bardzo ___ (ja ♀, bać się) psów.",
+          "answer": "bałam się",
+          "grammar_point": "czasownik-sie",
+          "explanation": "bać się → bałam się; się zostaje osobno."
+        },
+        {
+          "id": "g4-2",
+          "text": "Mój brat ___ (urodzić się) w szpitalu na drugim piętrze, a ja — w domu.",
+          "answer": "urodził się",
+          "grammar_point": "czasownik-sie",
+          "explanation": "urodzić się → urodził się."
+        },
+        {
+          "id": "g4-3",
+          "text": "Nie ___ (my ♂, wiedzieć), że dziadek kiedyś grał na skrzypcach.",
+          "answer": "wiedzieliśmy",
+          "grammar_point": "czas-przeszly",
+          "explanation": "wiedzieć: wiedział, ale my → wiedzieliśmy (e przed -li)."
+        },
+        {
+          "id": "g4-4",
+          "text": "Kiedy byłam mała, ___ (mieć) psa, który spał w przedpokoju.",
+          "answer": "miałam",
+          "grammar_point": "czas-przeszly",
+          "explanation": "mieć → miał-: miałam."
+        },
+        {
+          "id": "g4-5",
+          "text": "Moi rodzice zawsze ___ (chcieć), żebym była lekarką.",
+          "answer": "chcieli",
+          "grammar_point": "czas-przeszly",
+          "explanation": "chcieć → chciał, ale oni → chcieli."
+        },
+        {
+          "id": "g4-6",
+          "text": "— Gdzie ___ (ty ♂, uczyć się) polskiego, zanim przyjechałeś?",
+          "answer": "uczyłeś się",
+          "grammar_point": "czasownik-sie",
+          "explanation": "uczyć się → uczyłeś się."
+        },
+        {
+          "id": "g4-7",
+          "text": "Studenci ___ (siedzieć) w bibliotece do zamknięcia.",
+          "answer": "siedzieli",
+          "grammar_point": "czas-przeszly",
+          "explanation": "siedzieć → siedział, oni → siedzieli."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Wyjątki: szedł, jadł, mógł",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Dziadek każdego ranka ___ pieszo na pocztę po gazetę.",
+          "answer": "szedł",
+          "grammar_point": "czas-przeszly-nieregularny",
+          "options": [
+            "szedł",
+            "idł",
+            "szłem"
+          ],
+          "explanation": "iść → szedł, szła, szli."
+        },
+        {
+          "id": "g5-2",
+          "text": "Na obozie chłopcy ___ obiad przy ognisku.",
+          "answer": "jedli",
+          "grammar_point": "czas-przeszly-nieregularny",
+          "options": [
+            "jedli",
+            "jadli",
+            "jadły"
+          ],
+          "explanation": "jeść → jadł, ale oni → jedli; chłopcy → -li."
+        },
+        {
+          "id": "g5-3",
+          "text": "Siostra nie ___ przyjść na moje urodziny, bo była chora.",
+          "answer": "mogła",
+          "grammar_point": "czas-przeszly-nieregularny",
+          "options": [
+            "mogła",
+            "mógła",
+            "mogłam"
+          ],
+          "explanation": "móc → mógł (on), ale mogła (ona) — ó tylko w formie on."
+        },
+        {
+          "id": "g5-4",
+          "text": "Kiedy przeprowadzaliśmy się, sąsiad ___ nam nosić meble.",
+          "answer": "pomógł",
+          "grammar_point": "czas-przeszly-nieregularny",
+          "options": [
+            "pomógł",
+            "pomogł",
+            "pomagł"
+          ],
+          "explanation": "pomóc → pomógł, jak móc → mógł."
+        },
+        {
+          "id": "g5-5",
+          "text": "Babcia ___ ze sobą ciasto i przyszła do nas na kawę.",
+          "answer": "wzięła",
+          "grammar_point": "czas-przeszly-nieregularny",
+          "options": [
+            "wzięła",
+            "wziąła",
+            "wziął"
+          ],
+          "explanation": "wziąć → wziął (on), wzięła (ona): ą → ę."
+        },
+        {
+          "id": "g5-6",
+          "text": "Goście ___ dopiero po północy.",
+          "answer": "wyszli",
+          "grammar_point": "czas-przeszly-nieregularny",
+          "options": [
+            "wyszli",
+            "wyszły",
+            "wyszedli"
+          ],
+          "explanation": "wyjść → wyszedł, ale oni → wyszli; goście — mężczyźni lub grupa mieszana."
+        },
+        {
+          "id": "g5-7",
+          "text": "Nasz stary kot ___ w zeszłym roku. Miał osiemnaście lat.",
+          "answer": "umarł",
+          "grammar_point": "czas-przeszly-nieregularny",
+          "options": [
+            "umarł",
+            "umrzał",
+            "umierał"
+          ],
+          "explanation": "umrzeć → umarł, umarła."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "5. Pułapki z rosyjskiego: popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g6-1",
+          "prompt": "Ja był wczoraj u lekarza.",
+          "answer": "Byłem wczoraj u lekarza.",
+          "accept": [
+            "Wczoraj byłem u lekarza.",
+            "Ja byłem wczoraj u lekarza."
+          ],
+          "grammar_point": "kalki-ru",
+          "explanation": "Ros. «я был» → pol. byłem: końcówka -em mówi „ja”."
+        },
+        {
+          "id": "g6-2",
+          "prompt": "Wszystkie dzieci z bloku grali w chowanego.",
+          "answer": "Wszystkie dzieci z bloku grały w chowanego.",
+          "accept": [
+            "Wszystkie dzieci z bloku bawiły się w chowanego."
+          ],
+          "grammar_point": "kalki-ru",
+          "explanation": "Dzieci → -ły: grały, bawiły się."
+        },
+        {
+          "id": "g6-3",
+          "prompt": "Kiedy było mi siedem lat, poszedłem do szkoły.",
+          "answer": "Kiedy miałem siedem lat, poszedłem do szkoły.",
+          "accept": [
+            "Poszedłem do szkoły, kiedy miałem siedem lat."
+          ],
+          "grammar_point": "kalki-ru",
+          "explanation": "Ros. «мне было семь лет» → pol. miałem siedem lat."
+        },
+        {
+          "id": "g6-4",
+          "prompt": "Przyjechałam do Polski pięć lat nazad.",
+          "answer": "Przyjechałam do Polski pięć lat temu.",
+          "accept": [
+            "Pięć lat temu przyjechałam do Polski."
+          ],
+          "grammar_point": "kalki-ru",
+          "explanation": "Ros. «назад» → pol. temu."
+        },
+        {
+          "id": "g6-5",
+          "prompt": "Moja córka rodziła się w Gdańsku.",
+          "answer": "Moja córka urodziła się w Gdańsku.",
+          "accept": [
+            "W Gdańsku urodziła się moja córka."
+          ],
+          "grammar_point": "kalki-ru",
+          "explanation": "Jedno wydarzenie → urodzić się: urodziła się."
+        },
+        {
+          "id": "g6-6",
+          "prompt": "Brat chodził w szkołę muzyczną.",
+          "answer": "Brat chodził do szkoły muzycznej.",
+          "accept": [
+            "Do szkoły muzycznej chodził brat."
+          ],
+          "grammar_point": "kalki-ru",
+          "explanation": "Ros. «ходил в школу» → pol. chodził do szkoły."
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "drag-and-drop",
+      "title": "6. Opowieść: pierwszy dzień w szkole",
+      "instruction": "Przeciągnij właściwe słowo do każdego zdania. Trzy słowa są zbędne.",
+      "bank": [
+        "temu",
+        "najpierw",
+        "potem",
+        "nagle",
+        "w końcu",
+        "wtedy",
+        "byłam",
+        "poszłam",
+        "nazad",
+        "byłem",
+        "poszłem"
+      ],
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Mój pierwszy dzień w szkole był trzydzieści lat ___.",
+          "answer": "temu",
+          "grammar_point": "przyimki-czasu"
+        },
+        {
+          "id": "g7-2",
+          "text": "Rano ___ zjadłam śniadanie, a mama zaplotła mi warkocze.",
+          "answer": "najpierw",
+          "grammar_point": "spojniki-narracyjne"
+        },
+        {
+          "id": "g7-3",
+          "text": "___ razem z mamą poszłyśmy przez park do szkoły.",
+          "answer": "potem",
+          "grammar_point": "spojniki-narracyjne",
+          "accept": [
+            "wtedy"
+          ]
+        },
+        {
+          "id": "g7-4",
+          "text": "W klasie ___ bardzo cicha i nikogo nie znałam.",
+          "answer": "byłam",
+          "grammar_point": "czas-przeszly"
+        },
+        {
+          "id": "g7-5",
+          "text": "Siedziałam sama, aż ___ obok mnie usiadła dziewczynka z rudymi włosami.",
+          "answer": "nagle",
+          "grammar_point": "spojniki-narracyjne"
+        },
+        {
+          "id": "g7-6",
+          "text": "Miała na imię Ola. ___ jeszcze nie wiedziałam, że będzie moją najlepszą przyjaciółką.",
+          "answer": "wtedy",
+          "grammar_point": "przyimki-czasu"
+        },
+        {
+          "id": "g7-7",
+          "text": "Po lekcjach ___ do niej na podwieczorek.",
+          "answer": "poszłam",
+          "grammar_point": "czas-przeszly-nieregularny"
+        },
+        {
+          "id": "g7-8",
+          "text": "Wieczorem ___ wróciłam do domu i powiedziałam mamie: „Szkoła jest super!”.",
+          "answer": "w końcu",
+          "grammar_point": "spojniki-narracyjne",
+          "accept": [
+            "potem"
+          ]
+        }
+      ]
+    }
+  ]
+}
