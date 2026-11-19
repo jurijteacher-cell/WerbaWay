@@ -30,6 +30,9 @@ export function useLiveChannel(opts: Opts) {
   const optsRef = useRef(opts);
   optsRef.current = opts;
   const readyRef = useRef(false);
+  /** коли прийшов останній шматок БАГАТОШМАТКОВОГО повідомлення (знімка) — викладач не просить
+   *  новий знімок, поки йде старий. Дрібні повідомлення (якір прокрутки) сюди не рахуються. */
+  const lastRx = useRef(0);
   // канал закрився (сервер викинув: протух токен, мережа) — сам supabase-js його не відновлює,
   // тож створюємо заново: gen++ перезапускає ефект; пауза росте 2 → 4 → … → 30 с
   const [gen, setGen] = useState(0);
@@ -50,9 +53,13 @@ export function useLiveChannel(opts: Opts) {
       if (token) supabase.realtime.setAuth(token);
       if (!alive) return;
       ch = supabase.channel(opts.topic, {
-        config: { private: true, presence: { key }, broadcast: { self: false } },
+        // ack: send() чекає, доки сервер прийняв шматок. Без нього supabase-js віддає 'ok' одразу,
+        // і весь знімок (десятки шматків) летів у сокет залпом — упирався в ліміт Realtime,
+        // канал обривався, викладач просив новий знімок — і так по колу (зависання).
+        config: { private: true, presence: { key }, broadcast: { self: false, ack: true } },
       });
       ch.on('broadcast', { event: CLASS_EVENT }, ({ payload }) => {
+        if ((payload as Chunk)?.n > 1) lastRx.current = Date.now();
         const m = asm.push(payload as Chunk);
         if (m) optsRef.current.onMessage(m);
       });
@@ -91,26 +98,29 @@ export function useLiveChannel(opts: Opts) {
   }, [opts.topic, supabase, gen]);
 
   // шматки одного повідомлення шлемо по черзі: паралельна відправка плутала порядок,
-  // а загублений шматок означав, що весь пакет змін до викладача не доїде
-  const queue = useRef<Promise<void>>(Promise.resolve());
+  // а загублений шматок означав, що весь пакет змін до викладача не доїде.
+  // Результат — чи дійшло САМЕ це повідомлення: шматок не прийнято → решту не шлемо (без нього
+  // вони марні), а викладач побачить розрив у номерах пакетів і попросить свіжий знімок.
+  const queue = useRef<Promise<unknown>>(Promise.resolve());
   const send = (m: ClassMsg): Promise<boolean> => {
     const ch = chRef.current;
     if (!ch || !readyRef.current) return Promise.resolve(false);
     const chunks = toChunks(m);
-    queue.current = queue.current
-      .then(async () => {
-        for (const c of chunks) {
-          if (!readyRef.current) return;
-          await ch.send({ type: 'broadcast', event: CLASS_EVENT, payload: c });
-        }
-      })
-      .catch(() => undefined);
-    return queue.current.then(() => true);
+    const done = queue.current.then(async () => {
+      for (const c of chunks) {
+        if (!readyRef.current || chRef.current !== ch) return false;
+        const r = await ch.send({ type: 'broadcast', event: CLASS_EVENT, payload: c });
+        if (r !== 'ok') return false;
+      }
+      return true;
+    }).catch(() => false);
+    queue.current = done;
+    return done;
   };
 
   const track = (p: Presence) => {
     if (chRef.current && readyRef.current) void chRef.current.track(p);
   };
 
-  return { link, send, track, supabase };
+  return { link, send, track, supabase, lastRx };
 }

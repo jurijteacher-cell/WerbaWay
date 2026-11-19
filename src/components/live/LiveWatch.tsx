@@ -4,13 +4,13 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import 'rrweb/dist/style.css';
 import Link from 'next/link';
 import { useT } from '@/i18n/client';
-import { isLessonPath, lessonSlugOf, pickStudent, type ClassMsg, type Presence, type ViewAnchor } from '@/lib/live/protocol';
+import { fromWire, isLessonPath, lessonSlugOf, pickStudent, type ClassMsg, type Presence, type ViewAnchor } from '@/lib/live/protocol';
 import { useLiveChannel } from './useLiveChannel';
 import { MarkLessonDone } from './MarkLessonDone';
 
 type Rep = {
   addEvent: (e: unknown) => void;
-  startLive: () => void;
+  startLive: (baselineTime?: number) => void;
   destroy?: () => void;
   on: (ev: string, cb: (p: { width: number; height: number }) => void) => void;
   wrapper: HTMLElement;
@@ -18,7 +18,25 @@ type Rep = {
   getMirror?: () => { getNode: (id: number) => Node | null };
 };
 
-type RREvent = { type: number; timestamp: number; data?: { source?: number; id?: number; x?: number; y?: number; initialOffset?: { top: number; left: number } } };
+type RREvent = {
+  type: number;
+  timestamp: number;
+  data?: { source?: number; id?: number; x?: number; y?: number; node?: { id?: number }; initialOffset?: { top: number; left: number } };
+};
+
+/**
+ * Усі події застосовуємо одразу й строго в порядку надходження («синхронно»): базовий час
+ * програвача — у далекому майбутньому, тож кожна подія для rrweb «вже минула».
+ * Раніше події йшли через таймер rrweb за мітками часу ts++ — великий пакет «залазив у майбутнє»,
+ * наступний пакет вклинювався всередину нього, зміни сторінки застосовувались не в тому порядку,
+ * і картинка розходилась з екраном учня до перезавантаження. До того ж таймер rrweb працює на
+ * requestAnimationFrame і стоїть, поки вкладка викладача схована.
+ */
+const SYNC_BASELINE = Number.MAX_SAFE_INTEGER;
+/** поки картинки нема — просимо знімок не частіше, ніж раз на стільки (і не поки знімок ще йде) */
+const ASK_EVERY_MS = 4000;
+/** самовідновлення: навіть без видимих збоїв раз на стільки беремо свіжий знімок */
+const HEAL_EVERY_MS = 120_000;
 
 /** `desk` — кадр по вікну викладача; `mirror` — точно екран учня. */
 type ViewMode = 'desk' | 'mirror';
@@ -45,6 +63,10 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
   /** що посередині екрана учня (для `desk`) і його піксельна прокрутка сторінки (для `mirror`) */
   const anchorRef = useRef<ViewAnchor | null>(null);
   const docScroll = useRef({ x: 0, y: 0 });
+  /** id вузла-документа сторінки учня у знімку: прокрутка саме його — прокрутка сторінки (а не вправи в iframe) */
+  const docId = useRef<number | null>(null);
+  /** вкладка учня, яку дивимось (у нього їх може бути кілька); її id іде у присутність викладача */
+  const tabRef = useRef<string | undefined>(undefined);
 
   /**
    * Прокрутка кадру. `mirror` — пікселі учня як є. `desk` — кадр розкладений під ширину викладача,
@@ -145,6 +167,9 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
       if (!mount) return;
       repRef.current?.destroy?.();
       mount.innerHTML = '';
+      // id вузлів у новому знімку інші — старий якір вказав би не туди (новий прийде за ¼ с)
+      anchorRef.current = null;
+      docId.current = null;
       const rep = new rrweb.Replayer([], {
         root: mount,
         liveMode: true,
@@ -161,40 +186,54 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
         viewport.current = { w: width, h: height };
         fit();
       });
-      rep.startLive();
+      rep.startLive(SYNC_BASELINE);
       repRef.current = rep;
       fit(); // новий програвач приходить із розміром учня — одразу приводимо до вибраного режиму
     },
     [fit]
   );
 
+  const lastAsk = useRef(0);
+  /** попросити свіжий знімок у вкладки, яку дивимось; force — без паузи між проханнями */
+  const askSnap = useCallback((force = false) => {
+    const now = Date.now();
+    if (!force && now - lastAsk.current < 3000) return;
+    lastAsk.current = now;
+    void sendRef.current({ k: 'need-snap', to: tabRef.current });
+  }, []);
+
   // пакети застосовуємо строго по черзі: знімок перебудовує програвач
   const queue = useRef<Promise<void>>(Promise.resolve());
   const mods = useRef<Promise<[typeof import('rrweb'), typeof import('@rrweb/packer')]> | null>(null);
   const onRR = useCallback(
-    (packed: string[]) => {
+    (packed: string[], enc?: 'b64') => {
       queue.current = queue.current
         .then(async () => {
           mods.current ??= Promise.all([import('rrweb'), import('@rrweb/packer')]);
           const [rrweb, { unpack }] = await mods.current;
-          let ts = Date.now();
           for (const p of packed) {
-            const ev = unpack(p) as unknown as RREvent;
+            let ev: RREvent;
+            try {
+              ev = unpack(fromWire(p, enc)) as unknown as RREvent;
+            } catch {
+              // зіпсована подія: без неї наступні зміни лягли б не туди — беремо свіжий знімок
+              askSnap(true);
+              return;
+            }
             if (ev.type === 4) await resetReplayer(rrweb); // новий документ → новий програвач
-            ev.timestamp = ts++; // годинники учня й викладача різні
-            if (ev.type === 2 && ev.data?.initialOffset) {
-              docScroll.current = { x: ev.data.initialOffset.left, y: ev.data.initialOffset.top };
+            ev.timestamp = Date.now();
+            if (ev.type === 2) {
+              docId.current = typeof ev.data?.node?.id === 'number' ? ev.data.node.id : null;
+              if (ev.data?.initialOffset) docScroll.current = { x: ev.data.initialOffset.left, y: ev.data.initialOffset.top };
             }
             // прокрутка всієї сторінки учня: запам'ятовуємо, а застосовуємо самі (syncScroll) —
-            // у `desk` вона б перебивала прокрутку за якорем
-            if (ev.type === 3 && ev.data?.source === 3 && typeof ev.data.id === 'number') {
-              const node = repRef.current?.getMirror?.().getNode(ev.data.id);
-              if (node && node.nodeType === 9) {
-                docScroll.current = { x: ev.data.x ?? 0, y: ev.data.y ?? 0 };
-                continue;
-              }
+            // у `desk` вона б перебивала прокрутку за якорем. Прокрутка всередині вправ (iframe) — як є.
+            if (ev.type === 3 && ev.data?.source === 3 && docId.current !== null && ev.data.id === docId.current) {
+              docScroll.current = { x: ev.data.x ?? 0, y: ev.data.y ?? 0 };
+              continue;
             }
-            repRef.current?.addEvent(ev);
+            if (!repRef.current) continue; // зміни до першого знімка нікуди застосувати — чекаємо знімок
+            repRef.current.addEvent(ev);
             if (ev.type === 2 && !gotFrame.current) {
               gotFrame.current = true;
               setHasFrame(true);
@@ -202,24 +241,29 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
           }
           fit();
         })
-        .catch(() => undefined);
+        .catch(() => askSnap(true));
     },
-    [resetReplayer, fit]
+    [resetReplayer, fit, askSnap]
   );
 
   const expectSeq = useRef(0);
-  const lastAsk = useRef(0);
-  const askSnap = useCallback(() => {
-    const now = Date.now();
-    if (now - lastAsk.current < 1500) return;
-    lastAsk.current = now;
-    void sendRef.current({ k: 'need-snap' });
+
+  /** вкладку учня змінено (чи він вийшов з лекції) — кадр старий, чекаємо знімок нової */
+  const dropFrame = useCallback(() => {
+    gotFrame.current = false;
+    setHasFrame(false);
+    expectSeq.current = 0;
   }, []);
 
-  const { link, send } = useLiveChannel({
+  // '-' — ще не вибрали вкладку: нові клієнти учня не пишуть, доки не знаємо, яку дивитись
+  const presence = (): Presence => ({ role: 'teacher', mode: 'watch', watch: tabRef.current ?? '-', at: Date.now() });
+  const { link, send, track, lastRx } = useLiveChannel({
     topic,
-    presence: () => ({ role: 'teacher', mode: 'watch', at: Date.now() }),
+    presence,
     onMessage: (m) => {
+      if (m.k === 'need-snap') return;
+      // потік іншої вкладки учня (не тієї, що дивимось) — пропускаємо, інакше картинки змішуються
+      if (m.t && tabRef.current && m.t !== tabRef.current) return;
       if (m.k === 'vp') {
         // у ту саму чергу, що й запис: вузол якоря міг прийти в пакеті, який ще застосовується
         queue.current = queue.current.then(() => {
@@ -228,21 +272,23 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
         });
         return;
       }
-      if (m.k !== 'rr') return;
       // пакет загубився — далі картинка була б застарілою, тому просимо свіжий знімок
       if (typeof m.n === 'number') {
-        if (expectSeq.current && m.n !== expectSeq.current && m.n !== 1) askSnap();
+        if (expectSeq.current && m.n !== expectSeq.current && m.n !== 1) askSnap(true);
         expectSeq.current = m.n + 1;
       }
-      onRR(m.d);
+      onRR(m.d, m.e);
     },
     onPresence: (all) => {
       const s = pickStudent(all);
       setStudent(s);
-      if (!s || s.mode !== 'lesson') {
-        gotFrame.current = false;
-        setHasFrame(false);
-        expectSeq.current = 0;
+      const tab = s?.mode === 'lesson' ? s.tab : undefined;
+      if (tab !== tabRef.current) {
+        tabRef.current = tab;
+        dropFrame();
+        track(presence()); // скажемо учневі, яку вкладку дивимось — пише лише вона
+      } else if (!s || s.mode !== 'lesson') {
+        dropFrame();
       }
     },
   });
@@ -250,14 +296,32 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
 
   const inLesson = !!student && student.mode === 'lesson' && isLessonPath(student.path);
 
-  // просимо картинку, доки не прийде (учень міг почати запис раніше, ніж ми підключились)
+  // просимо картинку, доки не прийде (учень міг почати запис раніше, ніж ми підключились).
+  // Поки шматки знімка ще йдуть — не просимо: кожне прохання — це ще один важкий знімок.
   useEffect(() => {
-    if (!inLesson || hasFrame) return;
-    void send({ k: 'need-snap' });
-    const id = setInterval(() => void send({ k: 'need-snap' }), 3000);
+    if (!inLesson || hasFrame || link !== 'online') return;
+    askSnap(true);
+    const id = setInterval(() => {
+      if (Date.now() - lastRx.current > 2500) askSnap(true);
+    }, ASK_EVERY_MS);
     return () => clearInterval(id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [inLesson, hasFrame, link]);
+  }, [inLesson, hasFrame, link, student?.tab]);
+
+  // зв'язок відновився — за час обриву могли загубитись зміни: свіжий знімок
+  const wasOnline = useRef(false);
+  useEffect(() => {
+    if (link === 'online' && wasOnline.current && gotFrame.current) askSnap(true);
+    if (link === 'online') wasOnline.current = true;
+  }, [link, askSnap]);
+
+  // самовідновлення: rrweb мовчки пропускає зміни, які не зміг застосувати (вузла нема) —
+  // картинка могла б розійтися з учнем. Раз на 2 хв — свіжий знімок, без перезавантаження сторінки.
+  useEffect(() => {
+    if (!hasFrame) return;
+    const id = setInterval(() => askSnap(true), HEAL_EVERY_MS);
+    return () => clearInterval(id);
+  }, [hasFrame, askSnap]);
 
   // картинки й шрифти в кадрі довантажуються й зсувають лейаут — підрівнюємо прокрутку
   useEffect(() => {
@@ -313,6 +377,15 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
             {t('Як на екрані учня')}
           </button>
         </span>
+        <button
+          type="button"
+          onClick={() => askSnap(true)}
+          disabled={!inLesson || link !== 'online'}
+          className="ww-btn ww-btn-sm ww-btn-ghost"
+          title={t('Якщо картинка відстала від екрана учня')}
+        >
+          ⟳ {t('Оновити картинку')}
+        </button>
         {slug && studentId && (
           <>
             <Link href={`/learn/${slug}`} className="ww-btn ww-btn-ghost" target="_blank">

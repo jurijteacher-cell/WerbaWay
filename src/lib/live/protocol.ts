@@ -17,9 +17,18 @@ export const guestTopic = (visitorId: string) => `guest:${visitorId}`;
 /** Realtime broadcast event name for every message */
 export const CLASS_EVENT = 'c';
 
-/** Messages on the channel. `rr` = batch of rrweb events (packed strings) student → teacher.
- *  `n` — номер пакета за порядком: якщо у викладача розрив, він просить свіжий знімок екрана. */
-export type ClassMsg = { k: 'rr'; d: string[]; n?: number } | { k: 'need-snap' } | ViewAnchor;
+/**
+ * Повідомлення на каналі.
+ *  `rr` — пакет подій rrweb від учня. `n` — номер пакета за порядком: розрив → викладач просить
+ *        свіжий знімок. `t` — вкладка учня, з якої пакет (у учня може бути відкрито кілька).
+ *        `e: 'b64'` — події стиснуті й у base64 (у JSON бінарний рядок роздувався вдвічі);
+ *        без `e` — старий формат: бінарний рядок як є (учень зі старою вкладкою).
+ *  `need-snap` — викладач просить свіжий знімок; `to` — у якої вкладки (без `to` — у всіх).
+ */
+export type ClassMsg =
+  | { k: 'rr'; d: string[]; n?: number; t?: string; e?: 'b64' }
+  | { k: 'need-snap'; to?: string }
+  | ViewAnchor;
 
 /**
  * `vp` — що в учня посередині екрана: id вузла з запису rrweb і де саме в ньому (0…1 по висоті).
@@ -27,12 +36,14 @@ export type ClassMsg = { k: 'rr'; d: string[]; n?: number } | { k: 'need-snap' }
  * викладача — ті самі пікселі там показують інше місце. За якорем кадр викладача
  * прокручується до того самого фрагмента лекції.
  */
-export type ViewAnchor = { k: 'vp'; id: number; r: number };
+export type ViewAnchor = { k: 'vp'; id: number; r: number; t?: string };
 
 /**
  * Присутність на каналі.
  *  учень: mode `site` — десь на сайті, `lesson` — у лекції (path = /learn/…, title — назва лекції);
- *  викладач: mode `watch` — зараз дивиться екран учня (лише тоді учень пише запис).
+ *         `tab` — id вкладки, `vis` — вкладка зараз перед очима (не схована за іншою);
+ *  викладач: mode `watch` — зараз дивиться екран учня (лише тоді учень пише запис);
+ *         `watch` — яку саме вкладку учня (пише лише вона; без `watch` — старий клієнт, пишуть усі).
  */
 export type Presence = {
   role: 'student' | 'teacher';
@@ -40,6 +51,9 @@ export type Presence = {
   mode?: 'site' | 'lesson' | 'watch';
   path?: string;
   title?: string;
+  tab?: string;
+  vis?: boolean;
+  watch?: string;
   at: number;
 };
 
@@ -51,13 +65,22 @@ export const isLessonPath = (p: string | null | undefined) => !!p && (LEARN_PATH
 /** slug лекції з шляху /learn/<slug>[/hw]; у гостя в шляху токен, а не slug — тоді null */
 export const lessonSlugOf = (p: string | null | undefined) => (p && /^\/learn\/([a-z0-9][a-z0-9-]*)/.exec(p)?.[1]) || null;
 
-/** Із кількох вкладок учня беремо ту, що в лекції, потім найсвіжішу */
+/**
+ * Із кількох вкладок учня беремо ту, що в лекції; серед них — ту, що перед очима (vis),
+ * потім найсвіжішу. Так викладач бачить саме те вікно, на яке учень зараз дивиться.
+ */
 export function pickStudent(all: Presence[]): Presence | null {
   const stu = all.filter((p) => p.role === 'student');
   if (!stu.length) return null;
-  const inLesson = stu.filter((p) => p.mode === 'lesson').sort((a, b) => b.at - a.at);
-  return inLesson[0] ?? [...stu].sort((a, b) => b.at - a.at)[0];
+  const rank = (p: Presence) => (p.vis === false ? 0 : 1);
+  const newest = (a: Presence, b: Presence) => rank(b) - rank(a) || b.at - a.at;
+  const inLesson = stu.filter((p) => p.mode === 'lesson').sort(newest);
+  return inLesson[0] ?? [...stu].sort(newest)[0];
 }
+
+/** Події rrweb у пакеті: стиснення (packer) → base64. Обидва боки — лише в браузері (btoa/atob). */
+export const toWire = (packed: string) => btoa(packed);
+export const fromWire = (s: string, e?: 'b64') => (e === 'b64' ? atob(s) : s);
 
 /* ── chunking: a Realtime message is capped (256 KB on the free plan), a snapshot can be bigger ── */
 

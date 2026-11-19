@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { useT } from '@/i18n/client';
-import { classTopic, guestTopic, isLessonPath, type ClassMsg, type Presence, type ViewAnchor } from '@/lib/live/protocol';
+import { classTopic, guestTopic, isLessonPath, toWire, type ClassMsg, type Presence, type ViewAnchor } from '@/lib/live/protocol';
 import { useLiveChannel } from './useLiveChannel';
 
 type Recorder = typeof import('rrweb').record;
@@ -63,10 +63,14 @@ export function GuestBeacon({ visitorId, name }: { visitorId: string; name?: str
   return <Beacon topic={guestTopic(visitorId)} name={name} />;
 }
 
+/** знімок екрана — не частіше, ніж раз на стільки, і ніколи, поки попередній ще відправляється */
+const SNAP_GAP_MS = 4000;
+
 /**
- * Учень на сайті: тримає присутність на своєму каналі (онлайн, яка лекція відкрита),
- * а коли викладач відкрив «Дивитися» і учень у лекції — пише екран (rrweb) і шле викладачеві.
- * Учень бачить маленьку позначку «Викладач дивиться». Нічого не блокує й не перехоплює.
+ * Учень на сайті: тримає присутність на своєму каналі (онлайн, яка лекція відкрита, чи вкладка
+ * перед очима), а коли викладач відкрив «Дивитися» саме цю вкладку і учень у лекції — пише екран
+ * (rrweb) і шле викладачеві. Учень бачить маленьку позначку «Викладач дивиться». Нічого не
+ * блокує й не перехоплює.
  */
 function BeaconInner({ topic, name }: { topic: string; name?: string }) {
   const t = useT();
@@ -75,6 +79,11 @@ function BeaconInner({ topic, name }: { topic: string; name?: string }) {
   const pathRef = useRef(pathname);
   pathRef.current = pathname;
   const titleRef = useRef<string | undefined>(undefined);
+  // id цієї вкладки: у учня бувають відкриті дві лекції (чи лекція й домашка) — пише лише та,
+  // яку дивиться викладач, інакше два потоки змішувались і картинка стрибала між ними
+  const tabRef = useRef('');
+  if (!tabRef.current) tabRef.current = Math.random().toString(36).slice(2, 10);
+  const visRef = useRef(true);
 
   const presence = (): Presence => ({
     role: 'student',
@@ -82,19 +91,26 @@ function BeaconInner({ topic, name }: { topic: string; name?: string }) {
     mode: isLessonPath(pathRef.current) ? 'lesson' : 'site',
     path: pathRef.current ?? undefined,
     title: titleRef.current,
+    tab: tabRef.current,
+    vis: visRef.current,
     at: Date.now(),
   });
 
-  const recRef = useRef<{ stop: () => void; record: Recorder } | null>(null);
+  const recRef = useRef<{ record: Recorder } | null>(null);
+  /** попросити свіжий знімок (знімки зливаються: див. requestSnap у записі) */
+  const snapRef = useRef<() => void>(() => undefined);
   const sendRef = useRef<(m: ClassMsg) => Promise<boolean>>(() => Promise.resolve(false));
 
   const { send, track, link } = useLiveChannel({
     topic,
     presence,
     onMessage: (m) => {
-      if (m.k === 'need-snap') recRef.current?.record.takeFullSnapshot(true);
+      if (m.k === 'need-snap' && (!m.to || m.to === tabRef.current)) snapRef.current();
     },
-    onPresence: (all) => setWatched(all.some((p) => p.role === 'teacher' && p.mode === 'watch')),
+    onPresence: (all) =>
+      setWatched(
+        all.some((p) => p.role === 'teacher' && p.mode === 'watch' && (!p.watch || p.watch === tabRef.current))
+      ),
   });
   sendRef.current = send;
 
@@ -110,6 +126,18 @@ function BeaconInner({ topic, name }: { topic: string; name?: string }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname, link]);
 
+  // вкладка перед очима чи схована — викладач іде за тією, на яку учень зараз дивиться
+  useEffect(() => {
+    const on = () => {
+      visRef.current = document.visibilityState !== 'hidden';
+      track(presence());
+    };
+    on();
+    document.addEventListener('visibilitychange', on);
+    return () => document.removeEventListener('visibilitychange', on);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [link]);
+
   const active = watched && isLessonPath(pathname);
 
   // запис екрана: лише поки active
@@ -120,6 +148,37 @@ function BeaconInner({ topic, name }: { topic: string; name?: string }) {
     let timer: ReturnType<typeof setTimeout> | null = null;
     let inFlight = false;
     let seq = 0;
+    // знімки (повна копія сторінки з усіма вправами — це сотні КБ, інколи мегабайти):
+    //  · поки один у буфері чи відправляється, нового не робимо — прохання лише запам'ятовуємо;
+    //  · не частіше, ніж раз на SNAP_GAP_MS. Раніше кожне прохання викладача (раз на 3 с, поки
+    //    картинки нема) робило новий знімок, а відправка тривала довше — черга росла, сторінка
+    //    учня гальмувала, і все зависало.
+    let snapInBuf = false;
+    let snapBusy = false;
+    let lastSnap = 0;
+    let wantSnap = false;
+    let snapTimer: ReturnType<typeof setTimeout> | null = null;
+    let record: Recorder | null = null;
+    let stopRec: (() => void) | undefined;
+
+    const trySnap = () => {
+      if (!wantSnap || cancelled || !record || snapBusy) return;
+      const wait = lastSnap + SNAP_GAP_MS - Date.now();
+      if (wait > 0) {
+        snapTimer ??= setTimeout(() => {
+          snapTimer = null;
+          trySnap();
+        }, wait);
+        return;
+      }
+      wantSnap = false;
+      record.takeFullSnapshot(true);
+    };
+    snapRef.current = () => {
+      wantSnap = true;
+      trySnap();
+    };
+
     // події відправляємо майже одразу, наступну порцію — щойно попередня пішла
     const flush = () => {
       timer = null;
@@ -129,34 +188,58 @@ function BeaconInner({ topic, name }: { topic: string; name?: string }) {
         return;
       }
       const batch = buf;
+      const hadSnap = snapInBuf;
       buf = [];
+      snapInBuf = false;
       inFlight = true;
-      void sendRef.current({ k: 'rr', d: batch, n: ++seq }).finally(() => {
+      void sendRef.current({ k: 'rr', d: batch, n: ++seq, t: tabRef.current, e: 'b64' }).finally(() => {
         inFlight = false;
+        if (hadSnap) {
+          snapBusy = false;
+          trySnap(); // поки цей ішов, викладач міг попросити ще
+        }
         if (buf.length && !timer) timer = setTimeout(flush, 0);
       });
     };
+
     (async () => {
-      const [{ record }, { pack }] = await Promise.all([import('rrweb'), import('@rrweb/packer')]);
+      const [rr, { pack }] = await Promise.all([import('rrweb'), import('@rrweb/packer')]);
       if (cancelled) return;
-      const stop = record({
+      const stop = rr.record({
         emit: (e) => {
-          buf.push(e as unknown as string);
+          if ((e as { type: number }).type === 4) {
+            // Meta — початок нового знімка: усе, що не встигло піти до нього, вже не потрібне — викладач перебудує кадр
+            buf = [];
+            snapInBuf = true;
+            snapBusy = true;
+            lastSnap = Date.now();
+          }
+          buf.push(toWire(pack(e) as string));
           if (!timer) timer = setTimeout(flush, 40);
         },
-        packFn: pack,
         inlineStylesheet: true,
         recordCanvas: false,
+        // скрипти, коментарі, службові <meta> викладачеві не потрібні — знімок менший
+        slimDOMOptions: 'all',
         // поля паролів rrweb маскує сам; курсор учня викладачеві не потрібен
         sampling: { mousemove: false, scroll: 120, input: 'last' },
       });
       if (!stop) return;
-      recRef.current = { stop, record };
+      if (cancelled) {
+        stop();
+        return;
+      }
+      record = rr.record;
+      recRef.current = { record: rr.record };
+      stopRec = stop;
+      trySnap(); // прохання, що прийшло, поки rrweb вантажився
     })();
     return () => {
       cancelled = true;
       if (timer) clearTimeout(timer);
-      recRef.current?.stop();
+      if (snapTimer) clearTimeout(snapTimer);
+      snapRef.current = () => undefined;
+      stopRec?.();
       recRef.current = null;
     };
   }, [active]);
@@ -175,16 +258,26 @@ function BeaconInner({ topic, name }: { topic: string; name?: string }) {
       if (key === last && now - lastAt < 3000) return;
       last = key;
       lastAt = now;
-      void sendRef.current(a);
+      void sendRef.current({ ...a, t: tabRef.current });
     };
     const id = setInterval(tick, 250);
     return () => clearInterval(id);
   }, [active]);
 
-  // учень перегорнув на іншу лекцію чи домашку — свіжий знімок, щоб у викладача не лишилось старе
+  // учень перегорнув на іншу лекцію чи домашку — свіжий знімок, щоб у викладача не лишилось старе.
+  // На старті запису не треба: rrweb сам починає зі знімка.
+  const snapPath = useRef<string | null>(null);
   useEffect(() => {
-    if (!active) return;
-    const id = setTimeout(() => recRef.current?.record.takeFullSnapshot(true), 500);
+    if (!active) {
+      snapPath.current = null;
+      return;
+    }
+    if (snapPath.current === null || snapPath.current === pathname) {
+      snapPath.current = pathname;
+      return;
+    }
+    snapPath.current = pathname;
+    const id = setTimeout(() => snapRef.current(), 500);
     return () => clearTimeout(id);
   }, [pathname, active]);
 
