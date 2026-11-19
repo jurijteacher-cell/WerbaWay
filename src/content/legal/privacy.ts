@@ -383,7 +383,7 @@ export const PRIVACY: Record<Locale, LegalDoc> = {
         id: 'who',
         title: 'Who we are',
         body: [
-          'The controller of your data is a sole proprietor (Ukraine) who owns the Werba Way Polish language school and the website werbaway.com.',
+          'The controller of your data is a sole proprietor (Ukraine) who owns Werba Way and the website werbaway.com.',
           'For any question about your data, to get a copy of it or to delete your account, write to werbaway@gmail.com. We reply within 30 days, usually much sooner.',
         ],
       },

@@ -356,7 +356,7 @@ export const TERMS: Record<Locale, LegalDoc> = {
       {
         id: 'who',
         title: 'Who we are',
-        body: ['werbaway.com belongs to a sole proprietor (Ukraine) who owns the Werba Way Polish language school. Contact: werbaway@gmail.com.'],
+        body: ['werbaway.com belongs to a sole proprietor (Ukraine) who owns Werba Way. Contact: werbaway@gmail.com.'],
       },
       {
         id: 'service',
