@@ -7,6 +7,7 @@ import { I18nProvider } from '@/i18n/client';
 import { getDictionary, getLocale, getT } from '@/i18n/server';
 import { HTML_LANG } from '@/i18n/config';
 import { SITE_DESCRIPTION_KEY, SITE_URL } from '@/lib/site';
+import { BLOOM_SEEN_SCRIPT } from '@/components/auth/logo-bloom-seen';
 
 // Ті самі шрифти, що у вправах: Onest — інтерфейс, Literata — польський текст. Обидва мають латиницю з діакритикою й кирилицю.
 const onest = Onest({
@@ -67,9 +68,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const locale = getLocale();
   const dict = getDictionary(locale);
   return (
-    <html lang={HTML_LANG[locale]} className={`${onest.variable} ${literata.variable} ${plexMono.variable}`}>
+    // suppressHydrationWarning: скрипт нижче може додати data-ww-bloom до гідратації
+    <html lang={HTML_LANG[locale]} className={`${onest.variable} ${literata.variable} ${plexMono.variable}`} suppressHydrationWarning>
       <head>
         <link rel="preload" as="image" href="/brand/werba-mark-128.webp" />
+        {/* анімація логотипа — раз за відвідування: після оновлення сторінки не стартує знову */}
+        <script dangerouslySetInnerHTML={{ __html: BLOOM_SEEN_SCRIPT }} />
       </head>
       <body className="font-sans">
         <I18nProvider locale={locale} dict={dict}>

@@ -17,3 +17,5 @@
 .ww-bloom .lf-fr { animation-delay: 1.14s; }
 .ww-bloom .lf-pl { animation-delay: 1.24s; }
 @media (prefers-reduced-motion: reduce) { .ww-bloom *, .ww-bloom .stem { animation: none !important; stroke-dashoffset: 0; opacity: 1; } }
+/* анімація вже грала в цьому відвідуванні — далі логотип одразу готовий (LogoBloom.tsx) */
+html[data-ww-bloom='seen'] .ww-bloom *, html[data-ww-bloom='seen'] .ww-bloom .stem { animation: none !important; stroke-dashoffset: 0; opacity: 1; }
