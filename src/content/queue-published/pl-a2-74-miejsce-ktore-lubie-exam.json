@@ -1,0 +1,128 @@
+{
+  "lesson_id": "pl-a2-74-miejsce-ktore-lubie",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o wiadomości Kasi. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Kasia zna Zakopane od dziecka.",
+          "answer": true,
+          "explanation": "Zakopane to miasto, które znam od dziecka."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Kawiarnię „Pod Smrekiem” prowadzi babcia Kasi.",
+          "answer": false,
+          "explanation": "…którą prowadzi przyjaciółka mojej babci."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Gubałówkę widać z okna pensjonatu.",
+          "answer": true,
+          "explanation": "To góra, którą widać z okna naszego pensjonatu."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Wieczorem grupa je kolację w restauracji w pensjonacie.",
+          "answer": false,
+          "explanation": "Wieczorem zapraszam na kolację do karczmy…"
+        },
+        {
+          "id": "e1-5",
+          "statement": "Pan Józek jest przewodnikiem.",
+          "answer": true,
+          "explanation": "…pan Józek — przewodnik, którego znam od dziecka."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-74-miejsce-ktore-lubie-e2-dialog.mp3",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: prawda czy fałsz?",
+      "instruction": "Usłyszysz rozmowę Kasi i Oleny dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Pana Józka poznali w karczmie.",
+          "answer": true,
+          "explanation": "To pan Józek, przewodnik, którego poznaliśmy w karczmie."
+        },
+        {
+          "id": "e2-2",
+          "statement": "Na pierwszym zdjęciu z Gubałówki pan Piotr ma zamknięte oczy.",
+          "answer": true,
+          "explanation": "Ale pan Piotr ma zamknięte oczy!"
+        },
+        {
+          "id": "e2-3",
+          "statement": "Do gazetki Olena wybiera zdjęcie, które zrobiła sama.",
+          "answer": false,
+          "explanation": "To może to drugie, które zrobił Tomek?"
+        },
+        {
+          "id": "e2-4",
+          "statement": "Olena wyśle zdjęcie pani Agnieszce.",
+          "answer": true,
+          "explanation": "Dobrze, wyślę je pani Agnieszce."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-74-miejsce-ktore-lubie-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: a, b czy c?",
+      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Gdzie stoi kościół ze zdjęcia?",
+          "options": [
+            "na początku Krupówek",
+            "na Gubałówce",
+            "przy dworcu"
+          ],
+          "answer": "na początku Krupówek",
+          "explanation": "To jest kościół, który stoi na początku Krupówek."
+        },
+        {
+          "id": "e3-2",
+          "question": "Kogo nie ma na zdjęciu do gazetki?",
+          "options": [
+            "Tomka",
+            "pana Piotra",
+            "Kasi"
+          ],
+          "answer": "Tomka",
+          "explanation": "Szkoda, że Tomka na nim nie ma. — To on robił zdjęcie!"
+        },
+        {
+          "id": "e3-3",
+          "question": "Gdzie są oscypki dla mamy?",
+          "options": [
+            "w lodówce w pensjonacie",
+            "w walizce",
+            "w kawiarni"
+          ],
+          "answer": "w lodówce w pensjonacie",
+          "explanation": "Oj, zostały w lodówce w pensjonacie!"
+        }
+      ]
+    }
+  ]
+}
