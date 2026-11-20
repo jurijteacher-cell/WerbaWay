@@ -2,8 +2,11 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import 'rrweb/dist/style.css';
+import '@/components/lesson/lesson.css';
 import Link from 'next/link';
 import { useT } from '@/i18n/client';
+import type { BookPage } from '@/lib/pages/pages';
+import { SheetBody } from '@/components/lesson/LessonBlocks';
 import { fromWire, isLessonPath, lessonSlugOf, pickStudent, type ClassMsg, type Presence, type ViewAnchor } from '@/lib/live/protocol';
 import { useLiveChannel } from './useLiveChannel';
 import { MarkLessonDone } from './MarkLessonDone';
@@ -12,6 +15,7 @@ type Rep = {
   addEvent: (e: unknown) => void;
   startLive: (baselineTime?: number) => void;
   destroy?: () => void;
+  enableInteract?: () => void;
   on: (ev: string, cb: (p: { width: number; height: number }) => void) => void;
   wrapper: HTMLElement;
   iframe?: HTMLIFrameElement;
@@ -37,14 +41,40 @@ const SYNC_BASELINE = Number.MAX_SAFE_INTEGER;
 const ASK_EVERY_MS = 4000;
 /** самовідновлення: навіть без видимих збоїв раз на стільки беремо свіжий знімок */
 const HEAL_EVERY_MS = 120_000;
+const INSTANT = 'instant' as ScrollBehavior;
 
 /** `desk` — кадр по вікну викладача; `mirror` — точно екран учня. */
 type ViewMode = 'desk' | 'mirror';
 const MODE_KEY = 'ww.live.viewMode';
 
+/** що показує сцена: `student` — екран учня наживо; число — сторінка лекції, яку викладач відкрив сам */
+type View = 'student' | number;
+
+/** прокрутка кадру викладача: сторінка і кожне вікно вправи (у порядку на сторінці) */
+type ScrollState = { x: number; y: number; nested: { x: number; y: number }[]; folio: string | null };
+
+/** «3 / 12» з поточного аркуша блокнота учня (у домашці аркушів нема — null) */
+const readFolio = (doc: Document | null | undefined) =>
+  doc?.querySelector('.lp-sheet.is-current .lp-sheet-folio')?.textContent?.replace(/\s+/g, ' ').trim() || null;
+
+/** документ і всі вкладені вікна вправ у кадрі */
+function eachDoc(doc: Document | null | undefined, fn: (d: Document) => void, depth = 0) {
+  if (!doc || depth > 3) return;
+  fn(doc);
+  doc.querySelectorAll('iframe').forEach((f) => {
+    try {
+      eachDoc(f.contentDocument, fn, depth + 1);
+    } catch {
+      /* чужий кадр (YouTube) — не наш */
+    }
+  });
+}
+
 /**
- * Викладач дивиться екран наживо — рівно те, що бачить учень. Лише перегляд: кліки й клавіші
- * сюди не доходять, учневі нічого не надсилається, крім прохання про свіжий знімок.
+ * Викладач дивиться екран учня наживо, але гортає й вибирає вправу сам: прокрутка учня кадр
+ * більше не тягне, а клік по «Далі», «Назад» чи списку сторінок у кадрі відкриває викладачеві
+ * ту сторінку (у вікні учня нічого не відбувається — туди не йде жоден клік).
+ * Кнопка «До учня» повертає туди, де учень зараз.
  * `topic` — classTopic(uid) для учня з акаунтом або guestTopic(vid) для гостя за посиланням;
  * `studentId` є лише в учня з акаунтом (кнопка «Пройдено, задати домашку»).
  */
@@ -54,43 +84,127 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
   const [hasFrame, setHasFrame] = useState(false);
   const [mode, setMode] = useState<ViewMode>('desk');
   const modeRef = useRef<ViewMode>('desk');
+  const [view, setView] = useState<View>('student');
+  const viewRef = useRef<View>('student');
+  const [lesson, setLesson] = useState<{ path: string; title: string; pages: BookPage[] } | null>(null);
+  const [studentIdx, setStudentIdx] = useState<number | null>(null);
+  const studentIdxRef = useRef<number | null>(null);
+  const [stageH, setStageH] = useState<number | null>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const mountRef = useRef<HTMLDivElement>(null);
   const repRef = useRef<Rep | null>(null);
   const viewport = useRef({ w: 1280, h: 800 });
   const gotFrame = useRef(false);
   const sendRef = useRef<(m: ClassMsg) => Promise<boolean>>(() => Promise.resolve(false));
-  /** що посередині екрана учня (для `desk`) і його піксельна прокрутка сторінки (для `mirror`) */
+  /** де учень: що посередині його екрана (для `desk`), піксельна прокрутка сторінки (для `mirror`) і вікон вправ */
   const anchorRef = useRef<ViewAnchor | null>(null);
   const docScroll = useRef({ x: 0, y: 0 });
+  const innerScroll = useRef(new Map<number, { x: number; y: number }>());
   /** id вузла-документа сторінки учня у знімку: прокрутка саме його — прокрутка сторінки (а не вправи в iframe) */
   const docId = useRef<number | null>(null);
   /** вкладка учня, яку дивимось (у нього їх може бути кілька); її id іде у присутність викладача */
   const tabRef = useRef<string | undefined>(undefined);
+  /** прокрутка викладача перед перезнімком / перед переходом на свою сторінку — щоб повернути її */
+  const pendingRestore = useRef<ScrollState | null>(null);
+  const hiddenScroll = useRef<ScrollState | null>(null);
+  const jumpOnShow = useRef(false);
+  const restoreGen = useRef(0);
+  const folioRef = useRef<string | null>(null);
+
+  const frameWin = () => repRef.current?.iframe?.contentWindow ?? null;
+  const frameDoc = () => repRef.current?.iframe?.contentDocument ?? null;
+
+  const captureScroll = useCallback((): ScrollState | null => {
+    const win = frameWin();
+    const doc = frameDoc();
+    if (!win || !doc) return null;
+    const nested = Array.from(doc.querySelectorAll('iframe')).map((f) => {
+      try {
+        const w = f.contentWindow;
+        return w ? { x: w.scrollX, y: w.scrollY } : { x: 0, y: 0 };
+      } catch {
+        return { x: 0, y: 0 };
+      }
+    });
+    return { x: win.scrollX, y: win.scrollY, nested, folio: readFolio(doc) };
+  }, []);
+
+  /** на початок аркуша, якщо викладач нижче (учень перегорнув — старе місце вже нічого не означає) */
+  const toBookTop = useCallback(() => {
+    const win = frameWin();
+    const book = frameDoc()?.querySelector('.lp-book');
+    if (!win || !book) return;
+    const top = book.getBoundingClientRect().top;
+    if (top < 0) win.scrollTo({ top: Math.max(0, win.scrollY + top - 16), left: 0, behavior: INSTANT });
+  }, []);
+
+  const restoreScroll = useCallback(
+    (s: ScrollState) => {
+      const win = frameWin();
+      const doc = frameDoc();
+      if (!win || !doc) return;
+      const now = readFolio(doc);
+      if (s.folio && now && now !== s.folio) {
+        toBookTop();
+        return;
+      }
+      win.scrollTo({ left: s.x, top: s.y, behavior: INSTANT });
+      doc.querySelectorAll('iframe').forEach((f, i) => {
+        const p = s.nested[i];
+        try {
+          if (p) f.contentWindow?.scrollTo({ left: p.x, top: p.y, behavior: INSTANT });
+        } catch {
+          /* чужий кадр */
+        }
+      });
+    },
+    [toBookTop]
+  );
+
+  /** картинки, шрифти й вікна вправ довантажуються й зсувають лейаут — повторюємо ще двічі */
+  const scheduleRestore = useCallback(
+    (s: ScrollState) => {
+      const gen = ++restoreGen.current;
+      restoreScroll(s);
+      for (const ms of [250, 900]) setTimeout(() => gen === restoreGen.current && restoreScroll(s), ms);
+    },
+    [restoreScroll]
+  );
 
   /**
-   * Прокрутка кадру. `mirror` — пікселі учня як є. `desk` — кадр розкладений під ширину викладача,
-   * пікселі учня тут показали б інше місце (у вузькому вікні — лише обкладинку), тому ставимо
-   * в центр кадру той самий фрагмент лекції, що посередині екрана в учня.
+   * Кадр — туди, де зараз учень. `mirror` — пікселі учня як є. `desk` — кадр розкладений під ширину
+   * викладача, пікселі учня тут показали б інше місце, тому ставимо в центр кадру той самий
+   * фрагмент лекції, що посередині екрана в учня. Вікна вправ — за прокруткою учня всередині них.
    */
-  const syncScroll = useCallback(() => {
+  const jumpToStudent = useCallback(() => {
     const rep = repRef.current;
-    const win = rep?.iframe?.contentWindow;
+    const win = frameWin();
     if (!rep || !win) return;
-    let top: number;
-    let left = 0;
+    restoreGen.current++; // відкладені повернення старої прокрутки вже не потрібні
+    const mirror = rep.getMirror?.();
+    let top = docScroll.current.y;
+    let left = docScroll.current.x;
     const a = anchorRef.current;
-    const node = a && modeRef.current === 'desk' ? rep.getMirror?.().getNode(a.id) : null;
-    if (!a || !node || node.nodeType !== 1) {
-      // `mirror`, або якоря ще нема (вузол не доїхав) — пікселі учня
-      top = docScroll.current.y;
-      left = docScroll.current.x;
-    } else {
+    const node = a && modeRef.current === 'desk' ? mirror?.getNode(a.id) : null;
+    if (a && node && node.nodeType === 1) {
       const r = (node as Element).getBoundingClientRect();
       top = Math.max(0, Math.round(win.scrollY + r.top + a.r * r.height - win.innerHeight / 2));
+      left = 0;
     }
-    if (Math.abs(win.scrollY - top) < 2 && Math.abs(win.scrollX - left) < 2) return;
-    win.scrollTo({ top, left, behavior: 'instant' as ScrollBehavior });
+    win.scrollTo({ top, left, behavior: INSTANT });
+    for (const [id, p] of innerScroll.current) {
+      const n = mirror?.getNode(id);
+      if (!n) continue;
+      try {
+        if (n.nodeType === 9) (n as Document).defaultView?.scrollTo({ top: p.y, left: p.x, behavior: INSTANT });
+        else if (n.nodeType === 1) {
+          (n as Element).scrollTop = p.y;
+          (n as Element).scrollLeft = p.x;
+        }
+      } catch {
+        /* вузол уже зник */
+      }
+    }
   }, []);
 
   /**
@@ -99,14 +213,23 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
    *             кадру й перераховуються під цю ширину, тож мобільна колонка учня розкладається
    *             так, як на ноуті (гілок на JS у лекціях немає — лейаут суто на CSS).
    *  `mirror` — рівно те, що бачить учень, збільшене так, щоб його екран влазив цілком.
+   * Прокрутку кадру тут не чіпаємо — її веде сам викладач.
    */
   const fit = useCallback(() => {
     const stage = stageRef.current;
-    const mount = mountRef.current;
-    const rep = repRef.current;
-    if (!stage || !mount || !rep) return;
+    if (!stage) return;
     const W = Math.max(320, Math.round(stage.clientWidth));
     const H = Math.max(520, Math.round(window.innerHeight - stage.getBoundingClientRect().top - 24));
+    setStageH((h) => (h === H ? h : H));
+    const mount = mountRef.current;
+    const rep = repRef.current;
+    if (!mount || !rep) return;
+    // rrweb ставить кадру scrolling="no" і pointer-events: none — викладач гортає сам
+    rep.enableInteract?.();
+    if (rep.iframe) {
+      rep.iframe.style.pointerEvents = 'auto';
+      rep.iframe.setAttribute('scrolling', 'auto');
+    }
     const box = (w: number, h: number) => {
       if (rep.iframe) {
         rep.iframe.style.width = `${w}px`;
@@ -120,7 +243,6 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
       rep.wrapper.style.transform = 'none';
       mount.style.width = `${W}px`;
       mount.style.height = `${H}px`;
-      syncScroll();
       return;
     }
     const vp = viewport.current;
@@ -130,8 +252,7 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
     rep.wrapper.style.transformOrigin = 'top left';
     mount.style.width = `${Math.round(vp.w * k)}px`;
     mount.style.height = `${Math.round(vp.h * k)}px`;
-    syncScroll();
-  }, [syncScroll]);
+  }, []);
 
   // вибір режиму тримається між сесіями
   useEffect(() => {
@@ -157,9 +278,101 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
         /* не критично */
       }
       fit();
+      jumpToStudent(); // інший лейаут — старі пікселі показали б не те місце
     },
-    [fit]
+    [fit, jumpToStudent]
   );
+
+  /* ── що показує сцена: екран учня чи сторінку, яку викладач відкрив сам ── */
+
+  const show = useCallback(
+    (v: View) => {
+      const pages = lesson?.pages.length ?? 0;
+      if (typeof v === 'number') {
+        if (v < 0 || v >= pages) return;
+        if (v === studentIdxRef.current) v = 'student'; // учень саме там — показуємо наживо, з його відповідями
+      }
+      if (v === viewRef.current) return;
+      if (viewRef.current === 'student') hiddenScroll.current = captureScroll();
+      viewRef.current = v;
+      setView(v);
+    },
+    [lesson, captureScroll]
+  );
+  const showRef = useRef(show);
+  showRef.current = show;
+
+  /** ‹ › — від сторінки, яку викладач зараз бачить */
+  const shownIdx = () => (viewRef.current === 'student' ? studentIdxRef.current ?? -1 : viewRef.current);
+  const step = useCallback((d: number) => showRef.current(shownIdx() + d), []);
+
+  const toStudent = useCallback(() => {
+    if (viewRef.current === 'student') {
+      jumpToStudent();
+      return;
+    }
+    jumpOnShow.current = true;
+    viewRef.current = 'student';
+    setView('student');
+  }, [jumpToStudent]);
+
+  // повернулись до екрана учня — кадр знову видно: розмір і прокрутка
+  useEffect(() => {
+    if (view !== 'student') return;
+    const id = requestAnimationFrame(() => {
+      fit();
+      if (jumpOnShow.current) {
+        jumpOnShow.current = false;
+        jumpToStudent();
+      } else if (hiddenScroll.current) scheduleRestore(hiddenScroll.current);
+      hiddenScroll.current = null;
+    });
+    return () => cancelAnimationFrame(id);
+  }, [view, fit, jumpToStudent, scheduleRestore]);
+
+  /**
+   * Кліки викладача в кадрі: у вікно учня вони й так не йдуть (це копія сторінки без скриптів),
+   * але посилання могли б перевести сам кадр деінде. Тому кожен клік гасимо, а «Далі», «Назад»
+   * і пункти списку сторінок відкривають викладачеві відповідну сторінку.
+   */
+  const hooked = useRef(new WeakSet<Element>());
+  const hookDocs = useCallback(() => {
+    eachDoc(frameDoc(), (d) => {
+      const root = d.documentElement;
+      if (!root || hooked.current.has(root)) return;
+      hooked.current.add(root);
+      d.addEventListener(
+        'mousedown',
+        (e) => {
+          // поля вводу не фокусуємо: набране викладачем перебило б картинку
+          const el = e.target as Element | null;
+          if (el?.closest?.('input,textarea,select,[contenteditable]')) e.preventDefault();
+        },
+        true
+      );
+      d.addEventListener(
+        'click',
+        (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const el = e.target as Element | null;
+          if (!el?.closest) return;
+          const item = el.closest('.lp-pagelist-item');
+          if (item) {
+            const all = Array.from(item.closest('.lp-pagelist-body')?.querySelectorAll('.lp-pagelist-item') ?? []);
+            const i = all.indexOf(item);
+            if (i >= 0) showRef.current(i);
+            return;
+          }
+          if (el.closest('.lp-turn-next, .lp-pagebar > button:last-of-type')) step(1);
+          else if (el.closest('.lp-turn-prev, .lp-pagebar > button:first-of-type')) step(-1);
+        },
+        true
+      );
+    });
+  }, [step]);
+
+  /* ── запис учня → кадр ── */
 
   const resetReplayer = useCallback(
     async (rrweb: typeof import('rrweb')) => {
@@ -170,6 +383,7 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
       // id вузлів у новому знімку інші — старий якір вказав би не туди (новий прийде за ¼ с)
       anchorRef.current = null;
       docId.current = null;
+      innerScroll.current.clear();
       const rep = new rrweb.Replayer([], {
         root: mount,
         liveMode: true,
@@ -220,30 +434,45 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
               askSnap(true);
               return;
             }
-            if (ev.type === 4) await resetReplayer(rrweb); // новий документ → новий програвач
+            if (ev.type === 4) {
+              // новий документ → новий програвач; прокрутку викладача переносимо на новий кадр
+              if (gotFrame.current) pendingRestore.current = viewRef.current === 'student' ? captureScroll() : null;
+              await resetReplayer(rrweb);
+            }
             ev.timestamp = Date.now();
             if (ev.type === 2) {
               docId.current = typeof ev.data?.node?.id === 'number' ? ev.data.node.id : null;
               if (ev.data?.initialOffset) docScroll.current = { x: ev.data.initialOffset.left, y: ev.data.initialOffset.top };
             }
-            // прокрутка всієї сторінки учня: запам'ятовуємо, а застосовуємо самі (syncScroll) —
-            // у `desk` вона б перебивала прокрутку за якорем. Прокрутка всередині вправ (iframe) — як є.
-            if (ev.type === 3 && ev.data?.source === 3 && docId.current !== null && ev.data.id === docId.current) {
-              docScroll.current = { x: ev.data.x ?? 0, y: ev.data.y ?? 0 };
+            // прокрутку учня не застосовуємо — кадр гортає викладач; лише запам'ятовуємо для «До учня»
+            if (ev.type === 3 && ev.data?.source === 3 && typeof ev.data.id === 'number') {
+              const pos = { x: ev.data.x ?? 0, y: ev.data.y ?? 0 };
+              if (ev.data.id === docId.current) docScroll.current = pos;
+              else innerScroll.current.set(ev.data.id, pos);
               continue;
             }
             if (!repRef.current) continue; // зміни до першого знімка нікуди застосувати — чекаємо знімок
             repRef.current.addEvent(ev);
-            if (ev.type === 2 && !gotFrame.current) {
-              gotFrame.current = true;
-              setHasFrame(true);
+            if (ev.type === 2) {
+              const saved = pendingRestore.current;
+              pendingRestore.current = null;
+              if (saved) scheduleRestore(saved);
+              else if (viewRef.current === 'student') {
+                // перша картинка — стаємо туди, де учень (якір доїде за мить)
+                for (const ms of [300, 1200]) setTimeout(jumpToStudent, ms);
+              }
+              if (!gotFrame.current) {
+                gotFrame.current = true;
+                setHasFrame(true);
+              }
             }
           }
           fit();
+          hookDocs();
         })
         .catch(() => askSnap(true));
     },
-    [resetReplayer, fit, askSnap]
+    [resetReplayer, fit, askSnap, captureScroll, scheduleRestore, jumpToStudent, hookDocs]
   );
 
   const expectSeq = useRef(0);
@@ -268,7 +497,6 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
         // у ту саму чергу, що й запис: вузол якоря міг прийти в пакеті, який ще застосовується
         queue.current = queue.current.then(() => {
           anchorRef.current = m;
-          syncScroll();
         });
         return;
       }
@@ -295,6 +523,25 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
   sendRef.current = send;
 
   const inLesson = !!student && student.mode === 'lesson' && isLessonPath(student.path);
+
+  // сторінки лекції учня — щоб викладач міг відкрити будь-яку сам (і з домашки теж)
+  const lecturePath = inLesson ? (student?.path ?? '').replace(/\/hw\/?$/, '') : null;
+  useEffect(() => {
+    if (!lecturePath || lesson?.path === lecturePath) return;
+    let off = false;
+    fetch(`/api/teacher/live-lesson?path=${encodeURIComponent(lecturePath)}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d: { title?: string; pages?: BookPage[] } | null) => {
+        if (off || !d?.pages?.length) return;
+        setLesson({ path: lecturePath, title: d.title ?? '', pages: d.pages });
+        viewRef.current = 'student';
+        setView('student');
+      })
+      .catch(() => undefined);
+    return () => {
+      off = true;
+    };
+  }, [lecturePath, lesson?.path]);
 
   // просимо картинку, доки не прийде (учень міг почати запис раніше, ніж ми підключились).
   // Поки шматки знімка ще йдуть — не просимо: кожне прохання — це ще один важкий знімок.
@@ -323,12 +570,27 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
     return () => clearInterval(id);
   }, [hasFrame, askSnap]);
 
-  // картинки й шрифти в кадрі довантажуються й зсувають лейаут — підрівнюємо прокрутку
+  // на якій сторінці блокнота учень; перегорнув, поки викладач дивиться його екран — на початок аркуша.
+  // Заразом чіпляємо кліки до вікон вправ, що з'явились у кадрі.
   useEffect(() => {
-    if (!hasFrame) return;
-    const id = setInterval(syncScroll, 700);
+    if (!hasFrame) {
+      folioRef.current = null;
+      studentIdxRef.current = null;
+      setStudentIdx(null);
+      return;
+    }
+    const id = setInterval(() => {
+      hookDocs();
+      const f = readFolio(frameDoc());
+      const m = f ? /(\d+)\s*\/\s*(\d+)/.exec(f) : null;
+      const idx = m ? Number(m[1]) - 1 : null;
+      studentIdxRef.current = idx;
+      setStudentIdx(idx);
+      if (f && folioRef.current && f !== folioRef.current && viewRef.current === 'student') toBookTop();
+      folioRef.current = f;
+    }, 500);
     return () => clearInterval(id);
-  }, [hasFrame, syncScroll]);
+  }, [hasFrame, hookDocs, toBookTop]);
 
   useEffect(() => {
     const on = () => fit();
@@ -346,6 +608,18 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
         : !hasFrame
           ? t("Отримую екран учня…")
           : null;
+
+  const pages = lesson?.pages ?? [];
+  const own = typeof view === 'number' ? pages[view] : undefined;
+  const cur = typeof view === 'number' ? view : studentIdx ?? -1;
+  const label = (p: BookPage) => (p.kind === 'text' || p.kind === 'goal' ? p.section : p.label);
+  const groups: { title: string; items: number[] }[] = [];
+  pages.forEach((p, i) => {
+    const title = p.num ? `${p.num}. ${p.section}` : p.section;
+    const g = groups[groups.length - 1];
+    if (g && g.title === title) g.items.push(i);
+    else groups.push({ title, items: [i] });
+  });
 
   return (
     <div className="flex flex-col gap-3">
@@ -395,9 +669,77 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
           </>
         )}
       </div>
+
+      {(pages.length > 0 || (hasFrame && inLesson)) && (
+        <div className="ww-live-nav">
+          {pages.length > 0 && (
+            <>
+              <button type="button" className="ww-btn ww-btn-sm ww-btn-ghost" onClick={() => step(-1)} disabled={cur <= 0} aria-label={t('Попередня сторінка')}>
+                ‹
+              </button>
+              <select
+                className="ww-live-select"
+                value={view === 'student' ? 's' : String(view)}
+                onChange={(e) => (e.target.value === 's' ? toStudent() : show(Number(e.target.value)))}
+                aria-label={t('Сторінка лекції')}
+              >
+                <option value="s">
+                  👁 {t('Екран учня наживо')}
+                  {studentIdx !== null ? ` · ${studentIdx + 1}/${pages.length}` : ''}
+                </option>
+                {groups.map((g) => (
+                  <optgroup key={`${g.title}-${g.items[0]}`} label={g.title}>
+                    {g.items.map((i) => (
+                      <option key={pages[i].key} value={i}>
+                        {i + 1}/{pages.length} · {label(pages[i])}
+                        {i === studentIdx ? ' 👁' : ''}
+                      </option>
+                    ))}
+                  </optgroup>
+                ))}
+              </select>
+              <button
+                type="button"
+                className="ww-btn ww-btn-sm ww-btn-ghost"
+                onClick={() => step(1)}
+                disabled={cur >= pages.length - 1}
+                aria-label={t('Наступна сторінка')}
+              >
+                ›
+              </button>
+            </>
+          )}
+          <button type="button" className="ww-btn ww-btn-sm ww-btn-accent" onClick={toStudent} disabled={!hasFrame || !inLesson}>
+            👁 {t('До учня')}
+          </button>
+          <span className="ww-live-hint">
+            {view === 'student'
+              ? t('Гортай і клікай «Далі» чи список сторінок у кадрі — учень лишається, де був.')
+              : studentIdx !== null
+                ? t('Твій перегляд, без відповідей учня. Учень зараз на сторінці {n}.', { n: studentIdx + 1 })
+                : t('Твій перегляд, без відповідей учня.')}
+          </span>
+        </div>
+      )}
+
       <div ref={stageRef} className="ww-live-stage">
-        {status && <p className="ww-live-status">{status}</p>}
-        <div ref={mountRef} className="ww-live-mount" style={{ display: hasFrame && inLesson ? undefined : 'none' }} />
+        {view === 'student' && status && <p className="ww-live-status">{status}</p>}
+        <div
+          ref={mountRef}
+          className="ww-live-mount"
+          style={{ display: view === 'student' && hasFrame && inLesson ? undefined : 'none' }}
+        />
+        {own && typeof view === 'number' && (
+          <div className="ww-live-own" style={{ height: stageH ? `${stageH}px` : '75vh' }}>
+            <div className="lp-root">
+              <div className="lp-book">
+                <section key={own.key} className="lp-sheet is-current" data-kind={own.kind}>
+                  <SheetBody page={own} index={view} total={pages.length} />
+                </section>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

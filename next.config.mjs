@@ -23,6 +23,7 @@ const nextConfig = {
       '/learn/[slug]': ['./src/content/pages/**/*', './src/content/i18n/**/*', './src/content/teacher-pages/**/*'],
       '/learn/[slug]/hw': ['./src/content/pages/**/*', './src/content/i18n/**/*'],
       '/api/learn/steps': ['./src/content/pages/**/*', './src/content/i18n/**/*'],
+      '/api/teacher/live-lesson': ['./src/content/pages/**/*', './src/content/i18n/**/*'],
       '/embed/[lessonId]/comm-tasks': ['./src/content/queue-published/**/*', './src/content/i18n/**/*'],
       '/embed/[lessonId]/exam': ['./src/content/queue-published/**/*', './src/content/i18n/**/*'],
       '/embed/[lessonId]/grammar': ['./src/content/queue-published/**/*', './src/content/i18n/**/*'],

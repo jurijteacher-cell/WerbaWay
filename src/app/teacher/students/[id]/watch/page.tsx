@@ -9,7 +9,7 @@ export const dynamic = 'force-dynamic';
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
-/** «Дивитися» — екран учня наживо, лише перегляд. id = акаунт учня (profiles.id). */
+/** «Дивитися» — екран учня наживо; гортає й вибирає вправу викладач сам. id = акаунт учня (profiles.id). */
 export default async function WatchStudentPage({ params }: { params: { id: string } }) {
   const supabase = await requireTeacher(`/teacher/students/${params.id}/watch`);
   if (!UUID.test(params.id)) notFound();
@@ -24,7 +24,7 @@ export default async function WatchStudentPage({ params }: { params: { id: strin
           {t('← {name}', { name })}
         </Link>
         <h1 className="font-display text-2xl text-paper">{t('Екран учня: {name}', { name })}</h1>
-        <p className="text-sm text-paper-muted">{t('Лише перегляд — учень бачить позначку «Викладач бачить твій екран».')}</p>
+        <p className="text-sm text-paper-muted">{t('Учень бачить позначку «Викладач бачить твій екран». Гортаєш і вибираєш вправу ти сам — в учня нічого не змінюється.')}</p>
       </div>
       <LiveWatch topic={classTopic(params.id)} studentId={params.id} name={name} />
     </main>

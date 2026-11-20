@@ -34,7 +34,7 @@ export default async function WatchGuestPage({ params }: { params: { vid: string
         <h1 className="font-display text-2xl text-paper">{t('Екран гостя: {name}', { name })}</h1>
         <p className="text-sm text-paper-muted">
           {guest.ua ? `${guest.ua} · ` : ''}
-          {t('Лише перегляд — гість бачить позначку «Викладач бачить твій екран».')}
+          {t('Гість бачить позначку «Викладач бачить твій екран». Гортаєш і вибираєш вправу ти сам — у гостя нічого не змінюється.')}
         </p>
       </div>
       <LiveWatch topic={guestTopic(params.vid)} name={name} />
