@@ -1,0 +1,185 @@
+{
+  "lesson_id": "pl-a2-73-przyjechal-wyszedl",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: dokąd, skąd i jak — z przedrostkami",
+  "instruction": "Trzy bloki ćwiczeń. Potem napisz relację z podróży — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz formę",
+      "instruction": "Wpisz czasownik z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Codziennie ___ z pracy o piątej. (wychodzić, ja)",
+          "answer": "wychodzę",
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Codziennie → niedokonany: wychodzę."
+        },
+        {
+          "id": "h1-2",
+          "text": "W sobotę ___ na Gubałówkę pieszo. (wejść, my)",
+          "answer": "weszliśmy",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Wejść → weszliśmy."
+        },
+        {
+          "id": "h1-3",
+          "text": "Autobus ___ i musieliśmy czekać godzinę. (odjechać)",
+          "answer": "odjechał",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Odjechać → odjechał."
+        },
+        {
+          "id": "h1-4",
+          "text": "Kiedy ___ do Gdańska, napisz do mnie! (dojechać, ty)",
+          "answer": "dojedziesz",
+          "grammar_point": "czas-przyszly-dk",
+          "explanation": "Przyszłość dk: dojedziesz."
+        },
+        {
+          "id": "h1-5",
+          "text": "W zeszłą niedzielę babcia ___ do nas na obiad. (przyjść)",
+          "answer": "przyszła",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Ona: przyszła."
+        },
+        {
+          "id": "h1-6",
+          "text": "Ostrożnie ___ z tej góry, jest ślisko! (zejść, wy)",
+          "answer": "zejdźcie",
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Tryb rozkazujący: zejdź, zejdźcie (lekcja 65)."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Wybierz czasownik",
+      "instruction": "Wybierz czasownik, który pasuje do zdania.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Pociąg ___ na peron pierwszy.",
+          "answer": "wjeżdża",
+          "options": [
+            "wjeżdża",
+            "wyjeżdża",
+            "zjeżdża"
+          ],
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Wjechać na peron — do stacji."
+        },
+        {
+          "id": "h2-2",
+          "text": "W Krakowie musimy ___ do pociągu do Gdyni.",
+          "answer": "przesiąść się",
+          "options": [
+            "przesiąść się",
+            "wysiąść",
+            "zejść"
+          ],
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Zmiana pociągu: przesiąść się."
+        },
+        {
+          "id": "h2-3",
+          "text": "Tomek ___ z pokoju bez słowa.",
+          "answer": "wyszedł",
+          "options": [
+            "wyszedł",
+            "wszedł",
+            "doszedł"
+          ],
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Wyjść z pokoju — na zewnątrz."
+        },
+        {
+          "id": "h2-4",
+          "text": "Za mostem trzeba ___ z głównej drogi.",
+          "answer": "zjechać",
+          "options": [
+            "zjechać",
+            "wjechać",
+            "dojechać"
+          ],
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Zjechać z drogi — skręcić z niej."
+        },
+        {
+          "id": "h2-5",
+          "text": "___ do mnie jutro na kawę?",
+          "answer": "Przyjdziesz",
+          "options": [
+            "Przyjdziesz",
+            "Wyjdziesz",
+            "Odejdziesz"
+          ],
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Przyjść do kogoś — odwiedzić."
+        },
+        {
+          "id": "h2-6",
+          "text": "Jak ___ do dworca? Może Pan pokazać na mapie?",
+          "answer": "dojść",
+          "options": [
+            "dojść",
+            "przejść",
+            "zejść"
+          ],
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Dojść do celu: jak dojść do dworca?"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Przyjechałam w Kraków w zeszłym roku.",
+          "answer": "Przyjechałam do Krakowa w zeszłym roku.",
+          "accept": [
+            "W zeszłym roku przyjechałam do Krakowa."
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Do + dopełniacz: do Krakowa."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Wysiądź z autobus na trzecim przystanku.",
+          "answer": "Wysiądź z autobusu na trzecim przystanku.",
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Z + dopełniacz: z autobusu."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Mama wyszedł z domu bez parasola.",
+          "answer": "Mama wyszła z domu bez parasola.",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "Mama → ona: wyszła."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Przejdź ulicę i skręć w lewo.",
+          "answer": "Przejdź przez ulicę i skręć w lewo.",
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Przejść przez ulicę."
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Weszliśmy w kawiarnię na rynku.",
+          "answer": "Weszliśmy do kawiarni na rynku.",
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Wejść do + dopełniacz: do kawiarni."
+        }
+      ]
+    }
+  ]
+}
