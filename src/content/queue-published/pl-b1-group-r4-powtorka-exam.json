@@ -1,0 +1,295 @@
+{
+  "lesson_id": "pl-b1-group-r4-powtorka",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie B1",
+  "instruction": "Czytanie, słuchanie i mini-test.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst „Lord jedzie do Zalesia”. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Lord został adoptowany w dniu, w którym Maksym przyjechał do schroniska.",
+          "answer": false,
+          "explanation": "Lord został adoptowany w środę, a Maksym przyjechał w sobotę."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Taras codziennie jeździ skodą do pracy.",
+          "answer": false,
+          "explanation": "Do pracy dojeżdża trolejbusem, skodą jeżdżą tylko w weekendy."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Bartek przyjechał do Zalesia, kiedy mógł już pracować zdalnie.",
+          "answer": true,
+          "explanation": "Kiedy szef zgodził się, żeby pracował zdalnie, spakował laptop i przyjechał."
+        },
+        {
+          "id": "e1-4",
+          "statement": "W nowej formie pracy Bartek ma płatny urlop.",
+          "answer": false,
+          "explanation": "Nie ma płatnego urlopu, a kiedy choruje, zwykle nie zarabia."
+        },
+        {
+          "id": "e1-5",
+          "statement": "W Zalesiu znowu działa sklep.",
+          "answer": false,
+          "explanation": "Sklepu nadal nie ma — Bartek robi babci zakupy w miasteczku."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Bartek poprosił Maksyma o pomoc.",
+          "answer": true,
+          "explanation": "Poprosił, żeby Maksym pomógł mu zrobić psu budę."
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "source": "teacher:e2-rozmowa",
+      "max_plays": 2,
+      "title": "Słuchanie: rozmowa z rekruterką",
+      "instruction": "Nauczyciel przeczyta rozmowę Oleny z rekruterką. Usłyszysz ją dwa razy. Najpierw przeczytaj pytania, potem wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Ile dni w tygodniu trzeba pracować w biurze?",
+          "options": [
+            "dwa",
+            "trzy",
+            "ani jednego"
+          ],
+          "answer": "dwa",
+          "explanation": "W poniedziałki i w czwartki w biurze, pozostałe trzy dni z domu."
+        },
+        {
+          "id": "e2-2",
+          "question": "Jaką umowę Olena dostanie na początek?",
+          "options": [
+            "umowę o pracę na okres próbny",
+            "umowę zlecenia na trzy miesiące",
+            "umowę o pracę na czas nieokreślony"
+          ],
+          "answer": "umowę o pracę na okres próbny",
+          "explanation": "Na początek umowa o pracę na okres próbny, potem na czas nieokreślony."
+        },
+        {
+          "id": "e2-3",
+          "question": "Co firma da Olenie pierwszego dnia?",
+          "options": [
+            "laptop i słuchawki",
+            "nowy telefon",
+            "kartę parkingową"
+          ],
+          "answer": "laptop i słuchawki",
+          "explanation": "Laptop i słuchawki zostaną przekazane pierwszego dnia."
+        },
+        {
+          "id": "e2-4",
+          "question": "Za co firma płaci część rachunku?",
+          "options": [
+            "za internet",
+            "za benzynę",
+            "za prąd"
+          ],
+          "answer": "za internet",
+          "explanation": "Firma płaci część rachunku za internet."
+        },
+        {
+          "id": "e2-5",
+          "question": "Co Olena ma wziąć na rozmowę kwalifikacyjną?",
+          "options": [
+            "dowód osobisty i dyplom",
+            "dyplom i dwa zdjęcia",
+            "CV i list motywacyjny"
+          ],
+          "answer": "dowód osobisty i dyplom",
+          "explanation": "Proszę wziąć dowód osobisty i dyplom."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "gramatyka",
+      "exercise_type": "multiple-choice",
+      "title": "Mini-test: lekcje 1–22",
+      "instruction": "Piętnaście zdań z całego kursu. Wybierz poprawną formę. Pracuj sam / sama, bez notatek.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Mieszkam razem z ___ siostrą.",
+          "options": [
+            "moją",
+            "moja",
+            "mojej"
+          ],
+          "answer": "moją",
+          "grammar_point": "narzednik-pelny"
+        },
+        {
+          "id": "e3-2",
+          "question": "Nie mamy już ___ w lodówce.",
+          "options": [
+            "mleka",
+            "mleko",
+            "mlekiem"
+          ],
+          "answer": "mleka",
+          "grammar_point": "przeczenie-dopelniacz"
+        },
+        {
+          "id": "e3-3",
+          "question": "Dzieci ___ iść do kina, a nie do muzeum.",
+          "options": [
+            "chciały",
+            "chcieli",
+            "chciało"
+          ],
+          "answer": "chciały",
+          "grammar_point": "czas-przeszly"
+        },
+        {
+          "id": "e3-4",
+          "question": "Przeprowadziłam się do Polski dwa lata ___.",
+          "options": [
+            "temu",
+            "po",
+            "przed"
+          ],
+          "answer": "temu",
+          "grammar_point": "przyimki-czasu"
+        },
+        {
+          "id": "e3-5",
+          "question": "Obiecuję, że jutro ___ ten raport.",
+          "options": [
+            "napiszę",
+            "napisałem",
+            "pisałem"
+          ],
+          "answer": "napiszę",
+          "grammar_point": "aspekt-uzycie"
+        },
+        {
+          "id": "e3-6",
+          "question": "To jest kolega, ___ pożyczyłem rower.",
+          "options": [
+            "któremu",
+            "którego",
+            "który"
+          ],
+          "answer": "któremu",
+          "grammar_point": "ktory-przypadki"
+        },
+        {
+          "id": "e3-7",
+          "question": "___ bardzo podoba się Kraków.",
+          "options": [
+            "Mamie",
+            "Mama",
+            "Mamą"
+          ],
+          "answer": "Mamie",
+          "grammar_point": "lubic-podobac"
+        },
+        {
+          "id": "e3-8",
+          "question": "Nie ___ tego okna, proszę!",
+          "options": [
+            "otwieraj",
+            "otwórz",
+            "otwierasz"
+          ],
+          "answer": "otwieraj",
+          "grammar_point": "rozkazujacy-aspekt"
+        },
+        {
+          "id": "e3-9",
+          "question": "Gdybym ___ więcej pieniędzy, kupiłabym dom.",
+          "options": [
+            "miała",
+            "mam",
+            "będę miała"
+          ],
+          "answer": "miała",
+          "grammar_point": "warunek-nierealny"
+        },
+        {
+          "id": "e3-10",
+          "question": "Mama prosi, ___ wrócił przed dziesiątą.",
+          "options": [
+            "żebyś",
+            "że",
+            "czy"
+          ],
+          "answer": "żebyś",
+          "grammar_point": "zeby-zyczenie"
+        },
+        {
+          "id": "e3-11",
+          "question": "Nie pojechaliśmy na wycieczkę ___ deszczu.",
+          "options": [
+            "z powodu",
+            "dzięki",
+            "przez"
+          ],
+          "answer": "z powodu",
+          "grammar_point": "przyimki-przyczyny"
+        },
+        {
+          "id": "e3-12",
+          "question": "___ był zmęczony, poszedł na długi spacer.",
+          "options": [
+            "Chociaż",
+            "Bo",
+            "Dlatego"
+          ],
+          "answer": "Chociaż",
+          "grammar_point": "przyzwolenie"
+        },
+        {
+          "id": "e3-13",
+          "question": "Bardzo dziękuję ___ pomoc przy przeprowadzce.",
+          "options": [
+            "za",
+            "na",
+            "o"
+          ],
+          "answer": "za",
+          "grammar_point": "rekcja"
+        },
+        {
+          "id": "e3-14",
+          "question": "Ten most ___ zbudowany w 1910 roku.",
+          "options": [
+            "został",
+            "zostanie",
+            "jest"
+          ],
+          "answer": "został",
+          "grammar_point": "bierna-byc-zostac"
+        },
+        {
+          "id": "e3-15",
+          "question": "___ języka obcego zajmuje dużo czasu.",
+          "options": [
+            "Uczenie się",
+            "Uczy się",
+            "Uczony"
+          ],
+          "answer": "Uczenie się",
+          "grammar_point": "odczasownikowe"
+        }
+      ]
+    }
+  ]
+}

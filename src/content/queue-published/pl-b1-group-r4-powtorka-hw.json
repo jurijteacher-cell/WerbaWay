@@ -1,0 +1,188 @@
+{
+  "lesson_id": "pl-b1-group-r4-powtorka",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: powtórka bloków 4 i 5",
+  "instruction": "Trzy bloki ćwiczeń. Potem napisz dwa teksty jak na egzaminie — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz formę",
+      "instruction": "Wpisz słowa z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Telefon ___ (wynaleźć — strona bierna, przeszłość) w XIX wieku.",
+          "answer": "został wynaleziony",
+          "grammar_point": "bierna-byc-zostac",
+          "explanation": "Jednorazowe zdarzenie → zostać + imiesłów: telefon został wynaleziony."
+        },
+        {
+          "id": "h1-2",
+          "text": "„Ma pani prawo jazdy?” → Rekruterka zapytała, ___ (czy + mieć, ja) prawo jazdy.",
+          "answer": "czy mam",
+          "grammar_point": "pytania-zalezne",
+          "explanation": "Pytanie tak / nie → czy; zmienia się osoba: ma pani → mam."
+        },
+        {
+          "id": "h1-3",
+          "text": "Dziękujemy za ___ (wypełnić → rzeczownik) ankiety.",
+          "answer": "wypełnienie",
+          "grammar_point": "odczasownikowe",
+          "explanation": "Wypełnić → wypełnienie; dziękować za + biernik."
+        },
+        {
+          "id": "h1-4",
+          "text": "Z powodu ___ (silny wiatr) odwołano wszystkie loty.",
+          "answer": "silnego wiatru",
+          "grammar_point": "przyimki-przyczyny",
+          "explanation": "Z powodu + dopełniacz: silnego wiatru."
+        },
+        {
+          "id": "h1-5",
+          "text": "Od pięciu lat korzystam z ___ (bankowość internetowa).",
+          "answer": "bankowości internetowej",
+          "grammar_point": "rekcja",
+          "explanation": "Korzystać z + dopełniacz: z bankowości internetowej."
+        },
+        {
+          "id": "h1-6",
+          "text": "W parku ___ (posadzić — forma -no) sto nowych drzew.",
+          "answer": "posadzono",
+          "grammar_point": "bezosobowe-no-to",
+          "explanation": "Forma bez osoby w przeszłości: posadzić → posadzono."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Dzięki chorobie nie przyszłam na egzamin.",
+          "answer": "Przez chorobę nie przyszłam na egzamin.",
+          "accept": [
+            "Z powodu choroby nie przyszłam na egzamin.",
+            "Nie przyszłam na egzamin przez chorobę.",
+            "Nie przyszłam na egzamin z powodu choroby."
+          ],
+          "grammar_point": "przyimki-przyczyny",
+          "explanation": "Zły skutek → przez + biernik albo z powodu + dopełniacz."
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Mimo że zmęczenia, pracowała do nocy.",
+          "answer": "Mimo zmęczenia pracowała do nocy.",
+          "accept": [
+            "Mimo zmęczenia, pracowała do nocy.",
+            "Mimo że była zmęczona, pracowała do nocy.",
+            "Pracowała do nocy mimo zmęczenia."
+          ],
+          "grammar_point": "przyzwolenie",
+          "explanation": "Mimo + rzeczownik; mimo że + całe zdanie."
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Kolega poprosił mnie, że pożyczę mu sto złotych.",
+          "answer": "Kolega poprosił mnie, żebym pożyczył mu sto złotych.",
+          "accept": [
+            "Kolega poprosił mnie, żebym pożyczyła mu sto złotych.",
+            "Kolega poprosił mnie, żebym mu pożyczył sto złotych.",
+            "Kolega poprosił mnie, żebym mu pożyczyła sto złotych."
+          ],
+          "grammar_point": "mowa-zalezna",
+          "explanation": "Prośba → żeby + forma na -ł: żebym pożyczył / pożyczyła."
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Nie możesz ufać takich SMS-ów.",
+          "answer": "Nie możesz ufać takim SMS-om.",
+          "accept": [
+            "Takim SMS-om nie możesz ufać."
+          ],
+          "grammar_point": "rekcja",
+          "explanation": "Ufać + celownik: takim SMS-om."
+        },
+        {
+          "id": "h2-5",
+          "prompt": "Ta piosenka została napisana przez moją ciocią.",
+          "answer": "Ta piosenka została napisana przez moją ciocię.",
+          "grammar_point": "bierna-byc-zostac",
+          "explanation": "Przez + biernik: przez moją ciocię."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Wybierz formę",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Mój mąż lubi święta w górach, ja ___ wolę Wigilię w domu.",
+          "answer": "natomiast",
+          "options": [
+            "natomiast",
+            "czyli",
+            "przecież"
+          ],
+          "grammar_point": "przeciwstawienie",
+          "explanation": "Kontrast dwóch osób → natomiast."
+        },
+        {
+          "id": "h3-2",
+          "text": "Babcia przypomniała nam, ___ kupili karpia.",
+          "answer": "żebyśmy",
+          "options": [
+            "żebyśmy",
+            "że",
+            "czy"
+          ],
+          "grammar_point": "mowa-zalezna",
+          "explanation": "Przypomnieć + prośba → żeby + forma na -ł: żebyśmy kupili."
+        },
+        {
+          "id": "h3-3",
+          "text": "Na zebraniu długo ___ o nowym przystanku.",
+          "answer": "mówiono",
+          "options": [
+            "mówiono",
+            "mówiony",
+            "mówienie"
+          ],
+          "grammar_point": "bezosobowe-no-to",
+          "explanation": "Bez osoby w przeszłości: mówić → mówiono."
+        },
+        {
+          "id": "h3-4",
+          "text": "Wyjechał za granicę, ___ w kraju nie mógł znaleźć pracy.",
+          "answer": "bo",
+          "options": [
+            "bo",
+            "więc",
+            "dlatego"
+          ],
+          "grammar_point": "przyczyna-skutek",
+          "explanation": "Po przecinku przyczyna → bo / ponieważ."
+        },
+        {
+          "id": "h3-5",
+          "text": "Bez ___ umowy nie zaczynaj pracy!",
+          "answer": "podpisania",
+          "options": [
+            "podpisania",
+            "podpisać",
+            "podpisanie"
+          ],
+          "grammar_point": "odczasownikowe",
+          "explanation": "Bez + dopełniacz: podpisanie → bez podpisania."
+        }
+      ]
+    }
+  ]
+}
