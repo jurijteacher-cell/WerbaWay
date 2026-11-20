@@ -228,7 +228,7 @@ export function parsePage(slug: string, raw: string, opts: { goal?: boolean } = 
     .filter((x) => x.kind === 'lecture' && x.label)
     .map((x) => {
       const sp = splitNumbered(x.label);
-      return { id: x.id, label: sp.title, num: sp.num };
+      return { id: x.id, label: stripEmoji(sp.title), num: sp.num };
     });
   // id розділу — основа ключа кроку (?step=розділ~n). Заголовки кирилицею дають порожній slug → «intro»,
   // і кілька розділів отримували той самий id: клас відкривав не ту сторінку. Перший лишається як був.
@@ -312,7 +312,8 @@ export function buildPages(page: ParsedPage): BookPage[] {
     const label = sec.label || page.meta.title;
     const sp = sec.label ? splitNumbered(label) : { num: null, title: label };
     const num = sp.num;
-    const title = sp.title;
+    // емодзі з заголовка розділу лишаються в тексті уроку, а в навігації їх заміняють іконки
+    const title = stripEmoji(sp.title);
     // заголовок розділу малює сама сторінка — з тексту його прибираємо
     const blocks = sec.blocks
       .map((b) => (b.k === 'html' ? { ...b, html: b.html.replace(/<h2\b[^>]*>[\s\S]*?<\/h2>\s*/g, '') } : b))
@@ -322,7 +323,7 @@ export function buildPages(page: ParsedPage): BookPage[] {
     for (const b of blocks) {
       if (isLocalEmbed(b) && b.k === 'embed') {
         const key = `${sec.id}~${i++}`;
-        out.push({ key, section: title, num, label: b.title, kind: b.kind, url: b.src, blocks: [...buf, b] });
+        out.push({ key, section: title, num, label: cleanLabel(b.title), kind: b.kind, url: b.src, blocks: [...buf, b] });
         buf = [];
       } else buf.push(b);
     }
@@ -339,7 +340,44 @@ export function buildPages(page: ParsedPage): BookPage[] {
       });
     }
   }
+  numberRepeats(out);
   return out;
+}
+
+/** «📖 Czytanie» → «Czytanie» */
+export function stripEmoji(s: string): string {
+  return s.replace(/^(?:\p{Extended_Pictographic}|\uFE0F|\u200D|\s)+/u, '').trim() || s;
+}
+
+/**
+ * Підпис вправи для учня: технічні позначки груп («Ćwiczenia gramatyczne — g2-g3», «powtórka g1–g3»)
+ * потрібні авторові, а в навігації виглядають як код.
+ */
+function cleanLabel(s: string): string {
+  const out = s
+    .replace(/\s*(?:[—–-]\s*)?\bg\d+(?:\s*[-–]\s*g\d+)?\s*$/i, '')
+    .replace(/\s*[—–-]\s*$/, '')
+    .trim();
+  return out || s;
+}
+
+/** однакові підписи в межах розділу («Ćwiczenia gramatyczne» двічі) → «… · 1», «… · 2» */
+function numberRepeats(pages: BookPage[]) {
+  let start = 0;
+  for (let i = 1; i <= pages.length; i++) {
+    if (i < pages.length && pages[i].section === pages[start].section && pages[i].num === pages[start].num) continue;
+    const group = pages.slice(start, i).filter((p) => p.kind !== 'text' && p.kind !== 'goal');
+    const count = new Map<string, number>();
+    for (const p of group) count.set(p.label, (count.get(p.label) ?? 0) + 1);
+    const n = new Map<string, number>();
+    for (const p of group) {
+      if ((count.get(p.label) ?? 0) < 2) continue;
+      const k = (n.get(p.label) ?? 0) + 1;
+      n.set(p.label, k);
+      p.label = `${p.label} · ${k}`;
+    }
+    start = i;
+  }
 }
 
 /** Кроки заняття в класі = сторінки лекції */

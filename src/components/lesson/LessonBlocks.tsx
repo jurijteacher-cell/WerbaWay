@@ -1,5 +1,6 @@
 import type { BookPage, PageBlock } from '@/lib/pages/pages';
 import { EmbedFrame } from './EmbedFrame';
+import { PageIcon, pageIcon } from './PageIcon';
 
 /** embeds: 'all' | 'none' | 'external' (у кроці класу вправа відкривається окремо, зовнішні вікна лишаються в тексті) */
 export function Blocks({ blocks, embeds = 'all' }: { blocks: PageBlock[]; embeds?: 'all' | 'none' | 'external' }) {
@@ -55,12 +56,12 @@ export function SheetBody({
           </span>
         ) : (
           <span className="lp-num lp-num-soft" aria-hidden="true">
-            {page.kind === 'goal' ? '🎯' : '§'}
+            <PageIcon name={pageIcon(page)} />
           </span>
         )}
         <div className="lp-sheet-titles">
           <h2>{page.section}</h2>
-          {isExercise && <p className="lp-sheet-sub">{page.label}</p>}
+          {isExercise && page.label !== page.section && <p className="lp-sheet-sub">{page.label}</p>}
         </div>
         <span className="lp-sheet-folio">
           {index + 1} / {total}
