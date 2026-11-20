@@ -95,4 +95,4 @@ Cześć, Marku!<br>Od piętnastego września studiuję logistykę w Poznaniu. Je
 
 ## 🎬 Відео в ДЗ
 
-Відео: Impresyw · 292 tys. переглядів · 7 tys. лайків · 04.01.2025 · ≈4 хв — «Moja Pierwsza PRACA» https://www.youtube.com/watch?v=6plhQCR53H4. Перевірено 21.11.2026: публічне, дозволяє вставку.
+Відео: Impresyw · 292 340 переглядів · 7 244 лайків · 04.01.2025 · ≈4 хв — «Moja Pierwsza PRACA» https://www.youtube.com/watch?v=6plhQCR53H4. Перевірено 21.11.2026: публічне, дозволяє вставку.

@@ -126,4 +126,4 @@ teacherOf: pl-a2-51-umowa-i-urlop
 
 ## 🎬 Відео в ДЗ
 
-Відео: techpilot · 267 tys. переглядів · 6 tys. лайків · 30.01.2026 · ≈18 хв — «Cała prawda o... umowie zlecenia» https://www.youtube.com/watch?v=h77xmkq1SI4. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».
+Відео: techpilot · 266 679 переглядів · 5 667 лайків · 30.01.2026 · ≈18 хв — «Cała prawda o... umowie zlecenia» https://www.youtube.com/watch?v=h77xmkq1SI4. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

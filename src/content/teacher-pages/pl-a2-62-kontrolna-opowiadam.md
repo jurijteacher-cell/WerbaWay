@@ -110,4 +110,4 @@ Cześć, Kasiu!<br>Pytasz o mój tydzień. Codziennie rano chodziłam na kurs, a
 
 ## 🎬 Відео в ДЗ
 
-Відео: Wiktoria Wolak · 26 tys. переглядів · 1 tys. лайків · 01.06.2025 · ≈6 хв — «MOJA PORANNA WEEKENDOWA RUTYNA» https://www.youtube.com/watch?v=U7RjaCIyo_8. Перевірено 21.11.2026: публічне, дозволяє вставку.
+Відео: Wiktoria Wolak · 25 985 переглядів · 970 лайків · 01.06.2025 · ≈6 хв — «MOJA PORANNA WEEKENDOWA RUTYNA» https://www.youtube.com/watch?v=U7RjaCIyo_8. Перевірено 21.11.2026: публічне, дозволяє вставку.

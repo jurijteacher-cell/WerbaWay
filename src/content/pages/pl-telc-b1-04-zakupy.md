@@ -299,11 +299,25 @@ Słuchanie — jak na egzaminie
 
 ## 🏠 9. Praca domowa
 
-Dwie części: <b>ćwiczenia</b> i <b>pisanie</b>.
+Trzy części: <b>ćwiczenia</b>, <b>wideo</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-telc-b1-04-zakupy/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„TESTUJEMY VIRALOWE GADŻETY Z AMAZON.PL (Black Friday Week)”</b> (kanał Dealsy, około 24 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=9Y_l4rHnEEk">
+TESTUJEMY VIRALOWE GADŻETY Z AMAZON.PL (Black Friday Week)
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Które gadżety z filmu działały dobrze, a które rozczarowały autorów? Podaj po dwa przykłady.
+1. Napisz dwa zdania z aspektem: <i>Kupili…, ale…; Próbowali…, aż w końcu…</i>
+1. Kupiłeś / kupiłaś kiedyś rzecz, która nie działała? Napisz, co zrobiłeś / zrobiłaś (zwrot, reklamacja, nic).
 
 ### ✍️ Pisanie — jak na egzaminie
 

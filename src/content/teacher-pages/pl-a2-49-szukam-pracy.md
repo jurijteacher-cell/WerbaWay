@@ -118,4 +118,4 @@ teacherOf: pl-a2-49-szukam-pracy
 
 ## 🎬 Відео в ДЗ
 
-Відео: serio proste · 70 tys. переглядів · 3 tys. лайків · 24.01.2026 · ≈12 хв — «znalezienie (dobrej) pracy jest proste, serio» https://www.youtube.com/watch?v=LRNgl9E7Fpg. Перевірено 21.11.2026: публічне, дозволяє вставку.
+Відео: serio proste · 69 939 переглядів · 3 207 лайків · 24.01.2026 · ≈12 хв — «znalezienie (dobrej) pracy jest proste, serio» https://www.youtube.com/watch?v=LRNgl9E7Fpg. Перевірено 21.11.2026: публічне, дозволяє вставку.

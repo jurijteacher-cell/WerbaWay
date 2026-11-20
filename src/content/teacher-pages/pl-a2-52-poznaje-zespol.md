@@ -128,4 +128,4 @@ teacherOf: pl-a2-52-poznaje-zespol
 
 ## 🎬 Відео в ДЗ
 
-Відео: Karolina Gorczyca-Barszczewska · 44 tys. переглядів · 2 tys. лайків · 01.06.2025 · ≈21 хв — «10 czerwonych flag W PRACY, których NIE MOŻESZ ignorować» https://www.youtube.com/watch?v=sQlCY-ScDU0. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».
+Відео: Karolina Gorczyca-Barszczewska · 43 748 переглядів · 1 580 лайків · 01.06.2025 · ≈21 хв — «10 czerwonych flag W PRACY, których NIE MOŻESZ ignorować» https://www.youtube.com/watch?v=sQlCY-ScDU0. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

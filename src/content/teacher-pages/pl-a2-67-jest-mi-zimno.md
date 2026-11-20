@@ -118,4 +118,4 @@ Cześć, Magda!<br>Mój młodszy syn jest chory. Od wczoraj ma gorączkę, boli 
 
 ## 🎬 Відео в ДЗ
 
-Відео: Michał Wrzosek · 40 tys. переглядів · 1 tys. лайків · 16.10.2024 · ≈10 хв — «Domowe sposoby na PRZEZIĘBIENIE – Dietetyk sprawdza» https://www.youtube.com/watch?v=E98lSSAoEbg. Перевірено 21.11.2026: публічне, дозволяє вставку.
+Відео: Michał Wrzosek · 39 875 переглядів · 1 343 лайків · 16.10.2024 · ≈10 хв — «Domowe sposoby na PRZEZIĘBIENIE – Dietetyk sprawdza» https://www.youtube.com/watch?v=E98lSSAoEbg. Перевірено 21.11.2026: публічне, дозволяє вставку.

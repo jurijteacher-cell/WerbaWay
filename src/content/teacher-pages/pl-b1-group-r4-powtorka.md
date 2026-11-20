@@ -172,4 +172,4 @@ A jak jest u Was? Wolicie biuro czy dom?
 
 ## 🎬 Відео в ДЗ
 
-Відео: Impresyw · 316 tys. переглядів · 7 tys. лайків · 08.02.2025 · ≈3 хв — «MIASTO vs WIEŚ» https://www.youtube.com/watch?v=NZFd1LeJMm8. Перевірено 21.11.2026: публічне, дозволяє вставку.
+Відео: Impresyw · 315 685 переглядів · 7 181 лайків · 08.02.2025 · ≈3 хв — «MIASTO vs WIEŚ» https://www.youtube.com/watch?v=NZFd1LeJMm8. Перевірено 21.11.2026: публічне, дозволяє вставку.

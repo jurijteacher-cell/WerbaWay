@@ -109,4 +109,4 @@ Cześć, Marto!<br>W zeszłym tygodniu przyjechał do mnie mój młodszy brat, I
 
 ## 🎬 Відео в ДЗ
 
-Відео: Polsat · 643 tys. переглядів · 6 tys. лайків · 19.07.2025 · ≈5 хв — «Hrabi – Baba u lekarza» https://www.youtube.com/watch?v=Tft4MP9hKLk. Перевірено 21.11.2026: публічне, дозволяє вставку.
+Відео: Polsat · 643 397 переглядів · 5 751 лайків · 19.07.2025 · ≈5 хв — «Hrabi – Baba u lekarza» https://www.youtube.com/watch?v=Tft4MP9hKLk. Перевірено 21.11.2026: публічне, дозволяє вставку.

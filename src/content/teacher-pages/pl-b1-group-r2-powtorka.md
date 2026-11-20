@@ -132,4 +132,4 @@ A wam co się podoba najbardziej w waszym mieście?
 
 ## 🎬 Відео в ДЗ
 
-Відео: KSIĄŻULO · 1,1 mln переглядів · 33 tys. лайків · 09.09.2025 · ≈28 хв — «NAJLEPSZE PIEROGI W POLSCE, warto stać w kolejce?» https://www.youtube.com/watch?v=zxhUx2FGxMw. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».
+Відео: KSIĄŻULO · 1 141 915 переглядів · 32 597 лайків · 09.09.2025 · ≈28 хв — «NAJLEPSZE PIEROGI W POLSCE, warto stać w kolejce?» https://www.youtube.com/watch?v=zxhUx2FGxMw. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

@@ -132,4 +132,4 @@ Anna z mieszkania nr 12
 
 ## 🎬 Відео в ДЗ
 
-Відео: Warszawa (oficjalny kanał miasta) · 42 tys. переглядів · 0 tys. лайків · 18.03.2025 · ≈3 хв — «Dzień z życia Schroniska Na Paluchu – część 1. Opiekun» https://www.youtube.com/watch?v=rgab9jG06TE. Перевірено 21.11.2026: публічне, дозволяє вставку.
+Відео: Warszawa (oficjalny kanał miasta) · 41 638 переглядів · 52 лайків · 18.03.2025 · ≈3 хв — «Dzień z życia Schroniska Na Paluchu – część 1. Opiekun» https://www.youtube.com/watch?v=rgab9jG06TE. Перевірено 21.11.2026: публічне, дозволяє вставку.

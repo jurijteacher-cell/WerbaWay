@@ -113,4 +113,4 @@ Droga Pani Basiu,<br>bardzo dziękuję Pani za pomoc w zeszłym miesiącu. Kiedy
 
 ## 🎬 Відео в ДЗ
 
-Відео: Polsat · 798 tys. переглядів · 4 tys. лайків · 14.12.2024 · ≈6 хв — «Kabaret Młodych Panów i Goście – Lekarz» https://www.youtube.com/watch?v=rquA858WNsk. Перевірено 21.11.2026: публічне, дозволяє вставку.
+Відео: Polsat · 797 572 переглядів · 4 162 лайків · 14.12.2024 · ≈6 хв — «Kabaret Młodych Panów i Goście – Lekarz» https://www.youtube.com/watch?v=rquA858WNsk. Перевірено 21.11.2026: публічне, дозволяє вставку.

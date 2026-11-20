@@ -103,4 +103,4 @@ teacherOf: pl-a2-65-zdrowy-styl-zycia
 
 ## 🎬 Відео в ДЗ
 
-Відео: Michał Wrzosek · 475 tys. переглядів · 11 tys. лайків · 28.07.2025 · ≈19 хв — «10 zasad zdrowego życia, które KAŻDY musi stosować!» https://www.youtube.com/watch?v=n6X5GthQxto. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».
+Відео: Michał Wrzosek · 475 427 переглядів · 11 054 лайків · 28.07.2025 · ≈19 хв — «10 zasad zdrowego życia, które KAŻDY musi stosować!» https://www.youtube.com/watch?v=n6X5GthQxto. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

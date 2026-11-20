@@ -311,11 +311,25 @@ Słuchanie — jak na egzaminie
 
 ## 🏠 9. Praca domowa
 
-Dwie części: <b>ćwiczenia</b> i <b>pisanie</b>.
+Trzy części: <b>ćwiczenia</b>, <b>wideo</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-telc-b1-03-wspomnienia/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„TYPOWE ZACHOWANIA DZIECIAKÓW LAT 90-TYCH”</b> (kanał ZWARIOWANEBRADERKI, około 16 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=dodeXGJc12k">
+TYPOWE ZACHOWANIA DZIECIAKÓW LAT 90-TYCH
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz pięć rzeczy, które — według filmu — robiły dzieci w latach 90.
+1. Napisz trzy zdania w czasie przeszłym niedokonanym o swoim dzieciństwie: <i>Codziennie…, Zawsze…, Często…</i>
+1. Co z filmu robiłeś / robiłaś też Ty, a czego nie? Napisz 2–3 zdania.
 
 ### ✍️ Pisanie — jak na egzaminie
 

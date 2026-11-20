@@ -118,4 +118,4 @@ Cześć, Aniu!<br>Mam dużą rodzinę. Moi rodzice mieszkają w Odessie, a ja ma
 
 ## 🎬 Відео в ДЗ
 
-Відео: NataliaMagical · 20 tys. переглядів · 0 tys. лайків · 18.11.2026 · ≈30 хв — «Pojechaliśmy na jeden dzień do mojej rodziny» https://www.youtube.com/watch?v=1pHXiKi42sY. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».
+Відео: NataliaMagical · 19 741 переглядів · 372 лайків · 18.11.2026 · ≈30 хв — «Pojechaliśmy na jeden dzień do mojej rodziny» https://www.youtube.com/watch?v=1pHXiKi42sY. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

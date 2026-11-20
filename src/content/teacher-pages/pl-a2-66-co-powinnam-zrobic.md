@@ -102,4 +102,4 @@ teacherOf: pl-a2-66-co-powinnam-zrobic
 
 ## 🎬 Відео в ДЗ
 
-Відео: Na Grani · 76 tys. переглядів · 2 tys. лайків · 02.08.2026 · ≈26 хв — «TATRY: 18 łatwych i krótkich szlaków z GENIALNYMI widokami DLA KAŻDEGO!» https://www.youtube.com/watch?v=tzumzFVXiMs. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».
+Відео: Na Grani · 76 123 переглядів · 1 704 лайків · 02.08.2026 · ≈26 хв — «TATRY: 18 łatwych i krótkich szlaków z GENIALNYMI widokami DLA KAŻDEGO!» https://www.youtube.com/watch?v=tzumzFVXiMs. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

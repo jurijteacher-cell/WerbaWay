@@ -134,4 +134,4 @@ Cześć, Paweł!<br>Pytasz o mój pierwszy dom. Mieszkaliśmy w Odessie, na cich
 
 ## 🎬 Відео в ДЗ
 
-Відео: Fundamenty Architektury · 268 tys. переглядів · 7 tys. лайків · 16.05.2025 · ≈16 хв — «Wielka płyta – okiem architekta» https://www.youtube.com/watch?v=8e9qeTK1aY4. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».
+Відео: Fundamenty Architektury · 267 709 переглядів · 7 295 лайків · 16.05.2025 · ≈16 хв — «Wielka płyta – okiem architekta» https://www.youtube.com/watch?v=8e9qeTK1aY4. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

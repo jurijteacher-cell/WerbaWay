@@ -113,4 +113,4 @@ Czwartek<br>Co za tydzień! W poniedziałek i we wtorek cały dzień pracowałam
 
 ## 🎬 Відео в ДЗ
 
-Відео: Natasza Baszczyj · 67 tys. переглядів · 4 tys. лайків · 31.03.2026 · ≈21 хв — «STWÓRZ SWÓJ PAMIĘTNIK – 10 tipów jak zacząć» https://www.youtube.com/watch?v=nnnwVB6b1Jg. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».
+Відео: Natasza Baszczyj · 67 250 переглядів · 4 448 лайків · 31.03.2026 · ≈21 хв — «STWÓRZ SWÓJ PAMIĘTNIK – 10 tipów jak zacząć» https://www.youtube.com/watch?v=nnnwVB6b1Jg. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».
