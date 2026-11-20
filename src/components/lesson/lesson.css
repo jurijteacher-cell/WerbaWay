@@ -89,8 +89,8 @@
 .lp-outline-bar { height: 4px; border-radius: 99px; background: #e4e9f7; overflow: hidden; margin: 0 .5rem .7rem; }
 .lp-outline-bar span {
   display: block; height: 100%; transform-origin: left center;
-  background: linear-gradient(90deg, var(--lp-marker), var(--lp-mint), var(--lp-sky), var(--lp-peach), var(--lp-lilac));
-  transition: transform .25s ease-out;
+  background: #7a4fe0;
+  transition: transform .45s cubic-bezier(.25, .8, .25, 1);
 }
 
 .lp-outline ol { list-style: none; margin: 0; padding: 0; position: relative; }
@@ -264,25 +264,93 @@
   .lp-pagebar { display: none !important; }
 }
 
-/* список сторінок */
-.lp-pagelist-body { position: relative; }
-.lp-pagelist-group + .lp-pagelist-group { margin-top: .35rem; }
-.lp-pagelist-section { display: grid; grid-template-columns: 1.7rem 1fr; gap: .35rem; margin: .5rem 0 .1rem; padding: 0 .5rem; font-size: .8rem; font-weight: 650; color: var(--lp-ink); }
-.lp-pagelist-section .lp-outline-num { color: var(--lp-gold); }
-.lp-pagelist-item {
-  position: relative; z-index: 1; width: 100%; text-align: left; background: none; border: 0; cursor: pointer; font: inherit;
-  display: grid; grid-template-columns: 1.7rem 1fr; gap: .35rem; align-items: baseline;
-  padding: .36rem .5rem; border-radius: .6rem; font-size: .86rem; line-height: 1.35; color: var(--lp-muted);
-  transition: color .2s ease, transform .2s ease;
+/* ── список сторінок: шкала з вузлами (PageList.tsx) ──
+   колонка вузла 1.75rem; лінія йде через центри вузлів, фіолетова частина — до поточної сторінки */
+.lp-pagelist { --rail-x: calc(.4rem + .875rem); }
+.lp-pagelist .lp-outline-pct b { color: var(--lp-ink); font-weight: 700; }
+.lp-rail-segs { display: flex; gap: 3px; margin: 0 .5rem .85rem; height: 6px; align-items: center; }
+.lp-rail-segs span {
+  flex: 1; height: 4px; border-radius: 99px; background: #e4e9f7;
+  transition: background-color .35s ease, height .35s cubic-bezier(.3, 1.4, .5, 1);
 }
-.lp-pagelist-item:not(.is-top) { padding-left: 1.6rem; grid-template-columns: 1.4rem 1fr; }
-.lp-pagelist-item:hover { color: var(--lp-ink); transform: translateX(3px); }
+.lp-rail-segs span[data-state='done'] { background: #7a4fe0; }
+.lp-rail-segs span[data-state='here'] { background: #7a4fe0; height: 6px; box-shadow: 0 0 0 2px #e4d9ff; }
+
+.lp-pagelist-body { position: relative; }
+.lp-rail-track, .lp-rail-fill {
+  position: absolute; z-index: 1; left: var(--rail-x); width: 2px; margin-left: -1px; top: var(--rail-top, 0);
+  border-radius: 2px; pointer-events: none; opacity: 0; transition: opacity .3s ease;
+}
+.lp-rail-track { height: var(--rail-h, 0); background: var(--lp-line); }
+.lp-rail-fill {
+  height: var(--rail-fill, 0); background: #7a4fe0;
+  transition: opacity .3s ease, height .6s cubic-bezier(.25, .8, .25, 1);
+}
+.lp-pagelist-body.is-measured .lp-rail-track, .lp-pagelist-body.is-measured .lp-rail-fill { opacity: 1; }
+/* підсвітка рядка — пружно їде до поточної сторінки */
+.lp-pagelist .lp-outline-pill { background: #f1ecff; box-shadow: none; border-radius: .7rem; }
+
+.lp-pagelist-group + .lp-pagelist-group { margin-top: .15rem; }
+.lp-pagelist-section, .lp-pagelist-item {
+  position: relative; z-index: 2;
+  display: grid; grid-template-columns: 1.75rem 1fr; gap: .55rem; align-items: center;
+  padding: .32rem .5rem .32rem .4rem; border-radius: .7rem;
+  animation: lp-rail-in .42s cubic-bezier(.2, .7, .2, 1) backwards;
+  animation-delay: calc(var(--i, 0) * 28ms + .18s);
+}
+.lp-pagelist-section { margin: .45rem 0 0; font-size: .82rem; font-weight: 700; color: var(--lp-ink); letter-spacing: -.005em; }
+.lp-pagelist-item {
+  width: 100%; text-align: left; background: none; border: 0; cursor: pointer; font: inherit;
+  font-size: .86rem; line-height: 1.35; color: var(--lp-muted);
+  transition: color .2s ease, transform .25s cubic-bezier(.3, 1.4, .5, 1);
+}
+.lp-pagelist-item.is-top { color: var(--lp-ink); font-weight: 600; font-size: .85rem; margin-top: .3rem; }
+.lp-pagelist-item:hover { color: var(--lp-ink); transform: translateX(2px); }
+.lp-pagelist-item:focus-visible { outline: 2px solid #7a4fe0; outline-offset: 1px; }
 .lp-pagelist-item[aria-current] { color: var(--lp-ink); font-weight: 650; }
-.lp-pagelist-item.is-top .lp-outline-n { color: var(--lp-gold); }
-.lp-pagelist-item[data-passed] .lp-outline-n { opacity: 0; transform: scale(.4); }
-.lp-pagelist-item[data-passed] .lp-outline-check { opacity: 1; transform: none; }
-.lp-pagelist-item[data-passed] .lp-outline-label { color: #6b7494; }
-.lp-pagelist.is-compact { box-shadow: none; animation: none; border: 0; padding: .3rem 0 0; background: transparent; }
+.lp-pagelist-item[data-passed]:not(.is-top) .lp-rail-text { color: #6b7494; }
+.lp-rail-text { min-width: 0; overflow-wrap: anywhere; }
+
+/* вузол: кружечок з іконкою або номером; пройдений — фіолетовий з галочкою */
+.lp-rail-node {
+  position: relative; justify-self: center; display: grid; place-items: center;
+  width: 1.3rem; height: 1.3rem; border-radius: 50%;
+  background: #fff; border: 1.5px solid var(--lp-line); color: #6b7494;
+  transition: background-color .3s ease, border-color .3s ease, color .25s ease, box-shadow .3s ease;
+}
+.lp-rail-node.is-section { width: 1.6rem; height: 1.6rem; border-color: #cfd6ec; color: #5433bd; }
+.lp-rail-node > * { grid-area: 1 / 1; }
+.lp-rail-glyph { transition: opacity .2s ease, transform .3s cubic-bezier(.3, 1.4, .5, 1); }
+.lp-pi.lp-rail-glyph { width: .8rem; height: .8rem; }
+.lp-rail-node.is-section .lp-pi.lp-rail-glyph { width: .9rem; height: .9rem; }
+.lp-rail-numtxt { font-size: .72rem; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1; }
+.lp-check { width: .78rem; height: .78rem; color: #fff; opacity: 0; }
+.lp-rail-node.is-section .lp-check { width: .9rem; height: .9rem; }
+.lp-check path { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset .38s cubic-bezier(.6, 0, .3, 1) .12s; }
+
+.lp-pagelist-item:hover .lp-rail-node { border-color: #b9a2f2; color: #7a4fe0; }
+.lp-pagelist-item.is-static:hover .lp-rail-node { border-color: var(--lp-line); color: #6b7494; }
+
+/* поточна сторінка / розділ */
+.lp-pagelist-item[aria-current] .lp-rail-node,
+.lp-pagelist-section[data-here] .lp-rail-node { background: #e4d9ff; border-color: #7a4fe0; color: #5433bd; }
+.lp-pagelist-item[aria-current] .lp-rail-node { animation: lp-node-pulse 1.8s ease-out 2; }
+
+/* пройдено */
+.lp-pagelist-item[data-passed] .lp-rail-node,
+.lp-pagelist-section[data-passed] .lp-rail-node { background: #7a4fe0; border-color: #7a4fe0; animation: lp-node-pop .45s cubic-bezier(.3, 1.6, .5, 1); }
+[data-passed] > .lp-rail-node > .lp-rail-glyph { opacity: 0; transform: scale(.4); }
+[data-passed] > .lp-rail-node > .lp-check { opacity: 1; }
+[data-passed] > .lp-rail-node > .lp-check path { stroke-dashoffset: 0; }
+
+.lp-pagelist.is-compact { box-shadow: none; animation: none; border: 0; padding: .45rem 0 .2rem; background: transparent; }
+
+@keyframes lp-rail-in { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: none; } }
+@keyframes lp-node-pop { 0% { transform: scale(.7); } 60% { transform: scale(1.12); } 100% { transform: none; } }
+@keyframes lp-node-pulse { 0% { box-shadow: 0 0 0 0 rgba(122, 79, 224, .38); } 100% { box-shadow: 0 0 0 7px rgba(122, 79, 224, 0); } }
+@media (prefers-reduced-motion: reduce) {
+  .lp-pagelist-section, .lp-pagelist-item, .lp-rail-node, .lp-rail-glyph, .lp-rail-fill, .lp-rail-segs span, .lp-check path { animation: none !important; transition: none !important; }
+}
 
 /* телефон: панель гортання */
 .lp-pagebar {
@@ -338,7 +406,8 @@
 .lp-sheet-head h2 { font: 800 1.55rem/1.2 var(--font-onest), system-ui, sans-serif; letter-spacing: -.02em; margin: 0; }
 .lp-sheet-sub { margin: .15rem 0 0; color: var(--lp-muted); font-family: var(--font-onest), sans-serif; font-size: .92rem; }
 .lp-sheet-folio { flex: none; align-self: flex-start; font-family: var(--font-onest), sans-serif; font-size: .8rem; color: var(--lp-muted); font-variant-numeric: tabular-nums; }
-.lp-num-soft { background: var(--lp-soft); }
+.lp-num-soft { background: var(--lp-soft); color: #5433bd; }
+.lp-num-soft .lp-pi { width: 1.1rem; height: 1.1rem; }
 .lp-sheet .lp-prose > div:first-child > *:first-child { margin-top: 0; }
 /* текст аркуша тримає зручну довжину рядка (≈ як раніше, коли аркуш був вужчим)… */
 .lp-sheet .lp-prose > div { max-width: 48rem; }
