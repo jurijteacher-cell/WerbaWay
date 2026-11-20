@@ -1,0 +1,157 @@
+{
+  "lesson_id": "pl-a2-76-kontrolna-podroze",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: typowe błędy modułu „Miasto i podróże”",
+  "instruction": "Dwa bloki na błędy, które najczęściej robimy w tym module.",
+  "estimated_minutes": 15,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wybierz dobrą formę",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "W sobotę idziemy ___ koncert.",
+          "answer": "na",
+          "options": [
+            "na",
+            "do",
+            "w"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Na koncert, na pocztę, na dworzec."
+        },
+        {
+          "id": "h1-2",
+          "text": "Mieszkam ___ Krakowie od roku.",
+          "answer": "w",
+          "options": [
+            "w",
+            "do",
+            "na"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Gdzie? W + miejscownik: w Krakowie."
+        },
+        {
+          "id": "h1-3",
+          "text": "Czy ___ Pan zamknąć okno?",
+          "answer": "mógłby",
+          "options": [
+            "mógłby",
+            "mógłbyś",
+            "mogłaby"
+          ],
+          "grammar_point": "warunkowy-prosby",
+          "explanation": "Do mężczyzny na Pan: mógłby Pan."
+        },
+        {
+          "id": "h1-4",
+          "text": "Mam w telefonie sto ___ z wyjazdu.",
+          "answer": "zdjęć",
+          "options": [
+            "zdjęć",
+            "zdjęcia",
+            "zdjęciach"
+          ],
+          "grammar_point": "mnoga-przypadki",
+          "explanation": "100 + dopełniacz: sto zdjęć."
+        },
+        {
+          "id": "h1-5",
+          "text": "Dziękuję wszystkim ___ za pomoc!",
+          "answer": "kolegom",
+          "options": [
+            "kolegom",
+            "kolegów",
+            "kolegami"
+          ],
+          "grammar_point": "mnoga-przypadki",
+          "explanation": "Dziękuję komu? — kolegom."
+        },
+        {
+          "id": "h1-6",
+          "text": "Wczoraj Olena ___ z pracy bardzo późno.",
+          "answer": "wyszła",
+          "options": [
+            "wyszła",
+            "wyszedła",
+            "wychodzi"
+          ],
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Ona: wyszła."
+        },
+        {
+          "id": "h1-7",
+          "text": "To jest książka, ___ ci polecam.",
+          "answer": "którą",
+          "options": [
+            "którą",
+            "która",
+            "który"
+          ],
+          "grammar_point": "ktory-podstawy",
+          "explanation": "Polecam co? — biernik: którą."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Jedziemy na Wrocław w piątek.",
+          "answer": "Jedziemy do Wrocławia w piątek.",
+          "accept": [
+            "W piątek jedziemy do Wrocławia."
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Do + miasto: do Wrocławia."
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Czy mogłabyś Pani mi pomóc?",
+          "answer": "Czy mogłaby Pani mi pomóc?",
+          "accept": [
+            "Czy mogłaby mi Pani pomóc?"
+          ],
+          "grammar_point": "warunkowy-prosby",
+          "explanation": "Na Pani: mogłaby Pani."
+        },
+        {
+          "id": "h2-3",
+          "prompt": "W hotelu było pięćdziesiąt miejsca.",
+          "answer": "W hotelu było pięćdziesiąt miejsc.",
+          "grammar_point": "mnoga-przypadki",
+          "explanation": "50 + dopełniacz: miejsc."
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Wsiedliśmy w autobus pod hotelem.",
+          "answer": "Wsiedliśmy do autobusu pod hotelem.",
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Wsiąść do + dopełniacz."
+        },
+        {
+          "id": "h2-5",
+          "prompt": "Poznałam ludzi, które mieszkają w górach.",
+          "answer": "Poznałam ludzi, którzy mieszkają w górach.",
+          "grammar_point": "ktory-podstawy",
+          "explanation": "Ludzie — osoby: którzy."
+        },
+        {
+          "id": "h2-6",
+          "prompt": "Kasia przyszedła do nas wieczorem.",
+          "answer": "Kasia przyszła do nas wieczorem.",
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Ona: przyszła."
+        }
+      ]
+    }
+  ]
+}

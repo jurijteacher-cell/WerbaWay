@@ -1,0 +1,105 @@
+{
+  "lesson_id": "pl-a2-75-powtorka-podroze",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: powtórka modułu „Miasto i podróże”",
+  "instruction": "Dwa bloki ćwiczeń. Potem napisz e-mail do hotelu — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz dobrą formę",
+      "instruction": "Wpisz słowo z nawiasu w dobrej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Wczoraj wieczorem ___ do Krakowa. (wrócić, my)",
+          "answer": "wróciliśmy",
+          "grammar_point": "aspekt-przeszly",
+          "explanation": "My (grupa z mężczyznami): wróciliśmy."
+        },
+        {
+          "id": "h1-2",
+          "text": "Kiedy ___ do hotelu, zadzwoń do mnie. (dojechać, ty)",
+          "answer": "dojedziesz",
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Przyszłość dk: dojedziesz."
+        },
+        {
+          "id": "h1-3",
+          "text": "W ___ były czajniki i ręczniki. (pokoje)",
+          "answer": "pokojach",
+          "grammar_point": "mnoga-przypadki",
+          "explanation": "W + miejscownik l.mn.: w pokojach."
+        },
+        {
+          "id": "h1-4",
+          "text": "___ zmienić termin wizyty. (chcieć, ja — kobieta, grzecznie)",
+          "answer": "Chciałabym",
+          "grammar_point": "warunkowy-prosby",
+          "explanation": "Grzecznie: chciałabym."
+        },
+        {
+          "id": "h1-5",
+          "text": "Mieszkam na ulicy, na ___ jest dużo kawiarni. (która)",
+          "answer": "której",
+          "grammar_point": "miejscownik-pelny",
+          "explanation": "Na + miejscownik: na której."
+        },
+        {
+          "id": "h1-6",
+          "text": "Pojechaliśmy na wycieczkę z ___. (dzieci)",
+          "answer": "dziećmi",
+          "grammar_point": "mnoga-przypadki",
+          "explanation": "Wyjątek: z dziećmi."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Wsiadłam w tramwaj numer 8.",
+          "answer": "Wsiadłam do tramwaju numer 8.",
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Wsiąść do + dopełniacz."
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Mieszkam w Krakowie od dwa lata.",
+          "answer": "Mieszkam w Krakowie od dwóch lat.",
+          "accept": [
+            "Od dwóch lat mieszkam w Krakowie."
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Od + dopełniacz: od dwóch lat."
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Czy mógłbyś Pan otworzyć okno?",
+          "answer": "Czy mógłby Pan otworzyć okno?",
+          "grammar_point": "warunkowy-prosby",
+          "explanation": "Na Pan: mógłby Pan."
+        },
+        {
+          "id": "h2-4",
+          "prompt": "To są koleżanki, którzy pracują ze mną.",
+          "answer": "To są koleżanki, które pracują ze mną.",
+          "grammar_point": "ktory-podstawy",
+          "explanation": "Kobiety: które."
+        },
+        {
+          "id": "h2-5",
+          "prompt": "Przeszłam ulicę i weszłam do sklepu.",
+          "answer": "Przeszłam przez ulicę i weszłam do sklepu.",
+          "grammar_point": "isc-jechac-przedrostki",
+          "explanation": "Przejść przez ulicę."
+        }
+      ]
+    }
+  ]
+}
