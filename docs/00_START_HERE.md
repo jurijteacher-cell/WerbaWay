@@ -243,11 +243,11 @@ Embed-адреси завжди за шаблоном `https://werba-way.vercel.
 | 63 | `pl-a2-63-znam-go-widze-ja` | `41c96e03c7c88188a334cf1eecac7c97` | `41c96e03c7c881e3a57dfa6c2d906e35` | ✅ 53 с (19.11) | ✅ 18.11, сайт + переклади в тому ж пуші |
 | 64 | `pl-a2-64-jak-wyglada` | `41c96e03c7c881e39688e14457da72c1` | `41c96e03c7c88110a866e823c4e4fc45` | ✅ 58 с (19.11) | ✅ 18.11 |
 | 67 | `pl-a2-67-jest-mi-zimno` | `41c96e03c7c8815cab1cdb76ca44b0a9` | `41c96e03c7c881a6a993e3c2b44ae922` | ✅ 53 с (19.11) | ✅ 18.11 |
-| 68 | `pl-a2-68-powtorka-ludzie-i-zdrowie` | `41c96e03c7c88168836be6e56197c2fe` | `41c96e03c7c881679351f73f76b1fc93` | ❌ ще немає | ✅ 19.11, сайт + переклади |
-| 69 | `pl-a2-69-kontrolna-ludzie-i-zdrowie` | `41c96e03c7c881a0b0ffe5146132c44a` | `41c96e03c7c8812dae79e8380cf262d4` | ❌ ще немає | ✅ 19.11, сайт + переклади |
-| 72 | `pl-a2-72-rezerwacja-ile-osob-ile-nocy` | `41c96e03c7c881b5bd65e0ac48c551c7` | `41c96e03c7c881228d50ddc4919f8cc2` | ❌ ще немає | ✅ 19.11, сайт + переклади |
+| 68 | `pl-a2-68-powtorka-ludzie-i-zdrowie` | `41c96e03c7c88168836be6e56197c2fe` | `41c96e03c7c881679351f73f76b1fc93` | ✅ 52 с (20.11) | ✅ 19.11, сайт + переклади |
+| 69 | `pl-a2-69-kontrolna-ludzie-i-zdrowie` | `41c96e03c7c881a0b0ffe5146132c44a` | `41c96e03c7c8812dae79e8380cf262d4` | ✅ 42 с (20.11) | ✅ 19.11, сайт + переклади |
+| 72 | `pl-a2-72-rezerwacja-ile-osob-ile-nocy` | `41c96e03c7c881b5bd65e0ac48c551c7` | `41c96e03c7c881228d50ddc4919f8cc2` | ✅ 67 с (20.11) | ✅ 19.11, сайт + переклади |
 
-Сторінки TEACHER 53–62 мають аудіо-блоки `notion-file-block://…` — **правити тільки точково (`update_content`), не `replace_content`**, інакше аудіо зникне. Озвучено всі діалоги A2 53–62 (57–59 — 18.11); 63, 64, 67 — 19.11. Для нових уроків рядок «Поки аудіо немає — читай діалог сам, двічі.» замінювати при озвученні так само.
+Сторінки TEACHER 53–62 мають аудіо-блоки `notion-file-block://…` — **правити тільки точково (`update_content`), не `replace_content`**, інакше аудіо зникне. Озвучено всі діалоги A2 53–62 (57–59 — 18.11); 63, 64, 67 — 19.11; 68, 69, 72 — 20.11. Для нових уроків рядок «Поки аудіо немає — читай діалог сам, двічі.» замінювати при озвученні так само.
 
 Відновлені 14.11 JSON 54–59: ті самі `lesson_id` і `block_id`, що в embed на сторінках; ключі e1–e3 і тест 55 — з TEACHER; решта пунктів (g, h, картки, comm-tasks) написана наново за темою кожного блоку. Пунктів g/h на TEACHER немає — якщо Юра колись знайде старі, **не накладати їх поверх**: з 14.11 на нових `item_id` можуть бути спроби учнів.
 
@@ -268,6 +268,7 @@ Embed-адреси завжди за шаблоном `https://werba-way.vercel.
 - Маршрут A (ElevenLabs → `notion-create-attachment(source_url=full_res_url)` → `<audio>` на сторінці) працює; діалог склеюється вузлом `composition` **з однією доріжкою** і `gap_before` 0,45 с (за замовчуванням composition накладає репліки!).
 - Каст голосів (`eleven_v4`): Olena W1 `mQq2zdGT1zEfDbh8W95l` · pani Agnieszka W2 `gHGjEjdr2LBds0XHTsvg` · Taras M1 `p0KQaxqGrT7xcRWSJiHp` · pan Piotr M2 `bwhymd1UcFEihyvPSEoR` · Tomek M3 `ihTsqWCgsTDbANOCuZD2` · NAR `uPeXyAUvljDRLYs8zgwt` · мама (pani Halina) «Seniora Ola» `cnYygtdARUZ1LhB2crKx` · Kasia «Ania» `F4S1QHSHuBfGEaPzx8aN` (обидві додано 18.11).
 - Ціни: озвучення ≈ 1 кредит/символ; composition — 0; **`creative_transcribe_audio` списав 285 за 52 с при оцінці 17** — транскрибувати лише вибірково й закладати в бюджет.
+- Витрачено 20.11: 1 936 кредитів (діалоги A2 68, 69, 72, 36 реплік по 1 дублю). Flows: 68 `agVcN87JCFXMEnpQkxUJ`, 69 `Cj7xfMaPr6FSREdm0lJr`, 72 `ofvUj4xlLrfpZsT7htbl`. Залишок ≈ 50 700.
 - Витрачено 19.11: 1 908 кредитів (діалоги A2 63, 64, 67, 37 реплік по 1 дублю). Flows: 63 `sZHXsTlP15zWWXOWXaKl`, 64 `NuOP1Z4dn99uPQa9CfSp`, 67 `pqRdZFny3FkmWg9H0xjZ`. Залишок після цього ≈ 52 700.
 - Витрачено 18.11 (2): 1 865 кредитів (діалоги A2 57–59, 30 реплік по 1 дублю). Flows: 57 `pVLlDmMW7Ym2OQO1FrK1`, 58 `GzodPf7DexDleRSyPTNp`, 59 `YqWVldzq53zMCQSz4zZL`. Одна репліка впала в ліміт паралельності — ElevenLabs сам повторив, без доплати.
 - Витрачено 18.11: 1 810 кредитів (діалоги A2 60–62, 33 репліки по 1 дублю; composition — 0; транскрипцію не запускали). Composition тепер вимагає в кожному кліпі поле `"modality": "audio"`. Flows: 60 `IdYcCxnBmaUrwiGnJRUp`, 61 `ulzPxl6SxG6KTqUHaZDx`, 62 `XHBiNHhacZDzyPDcOhzU`.
