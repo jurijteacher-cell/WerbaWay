@@ -106,3 +106,7 @@ Cześć, Marto!<br>W zeszłym tygodniu przyjechał do mnie mój młodszy brat, I
 
 - Обкладинка: Fot. bram naus / Unsplash (photo-1762184521147).
 - Фото в тексті: Fot. Cassidy Phillips / Unsplash (photo-1528467279403).
+
+## 🎬 Відео в ДЗ
+
+Відео: Polsat · 643 tys. переглядів · 6 tys. лайків · 19.07.2025 · ≈5 хв — «Hrabi – Baba u lekarza» https://www.youtube.com/watch?v=Tft4MP9hKLk. Перевірено 21.11.2026: публічне, дозволяє вставку.

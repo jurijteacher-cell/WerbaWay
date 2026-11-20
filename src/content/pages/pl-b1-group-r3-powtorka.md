@@ -273,11 +273,26 @@ Speaking marathon
 
 ## 🏠 7. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>nowa wersja Twojego tekstu</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>nowa wersja Twojego tekstu</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-r3-powtorka/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Dzień z życia Schroniska Na Paluchu – część 1. Opiekun”</b> (kanał Warszawa (oficjalny kanał miasta), około 3 minut):
+
+<video source="https://www.youtube.com/watch?v=rgab9jG06TE">
+Dzień z życia Schroniska Na Paluchu – część 1. Opiekun
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Co robi opiekun w ciągu dnia? Wymień trzy obowiązki: <i>musi…, powinien…</i>
+1. Napisz trzy prośby do sąsiadów w trybie rozkazującym, żeby pomogli schronisku (np. <i>Przynieście…, Nie wyrzucajcie…</i>).
+1. Gdybyś miał / miała wolny dzień, pomógłbyś / pomogłabyś w schronisku? Dlaczego?
+
 
 ### ✍️ Pisanie
 

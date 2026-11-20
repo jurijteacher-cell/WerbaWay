@@ -131,3 +131,7 @@ Cześć, Paweł!<br>Pytasz o mój pierwszy dom. Mieszkaliśmy w Odessie, na cich
 - Обкладинка: Fot. Laura Fuhrman / Unsplash — „person opening photo album displaying grayscale photos” (photo-1528569937393-ee892b976859).
 - Фото в тексті: Fot. Roman Kraft / Unsplash — „old photos in brown wooden chest” (photo-1453828423292-392a660a502f).
 - Обрано за описом зі сторінки пошуку Unsplash: зображення в сесії не відкриваються.
+
+## 🎬 Відео в ДЗ
+
+Відео: Fundamenty Architektury · 268 tys. переглядів · 7 tys. лайків · 16.05.2025 · ≈16 хв — «Wielka płyta – okiem architekta» https://www.youtube.com/watch?v=8e9qeTK1aY4. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

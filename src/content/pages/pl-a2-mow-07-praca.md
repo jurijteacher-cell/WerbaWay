@@ -308,11 +308,25 @@ Odpowiedz pełnymi zdaniami, <b>minimum trzy zdania</b> na każde pytanie:
 
 ## 🏠 8. Praca domowa
 
-Trzy części — <b>ćwiczenia</b>, <b>wiadomość głosowa</b> i <b>pisanie</b>.
+Cztery części — <b>ćwiczenia</b>, <b>wideo</b>, <b>wiadomość głosowa</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-mow-07-praca/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Jak odpowiadać na rozmowie o pracę? – 15 najtrudniejszych pytań na rozmowie kwalifikacyjnej”</b> (kanał Karolina Gorczyca-Barszczewska, około 20 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=_C4WWI0k2kQ">
+Jak odpowiadać na rozmowie o pracę? – 15 najtrudniejszych pytań na rozmowie kwalifikacyjnej
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wybierz z filmu trzy pytania.
+1. Odpowiedz na dwa z nich, np. <i>Z zawodu jestem…, Pracuję jako… od…</i>
+1. Jaką radę daje autorka? Zapisz ją: <i>Na rozmowie powinieneś / powinnaś…</i>
 
 ### 🎙️ Wiadomość głosowa
 

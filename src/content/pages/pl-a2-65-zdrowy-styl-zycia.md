@@ -245,11 +245,25 @@ Zadania komunikacyjne
 
 ## 🏠 7. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>wiadomość do znajomego</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>wiadomość do znajomego</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-65-zdrowy-styl-zycia/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„10 zasad zdrowego życia, które KAŻDY musi stosować!”</b> (kanał Michał Wrzosek, około 19 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=n6X5GthQxto">
+10 zasad zdrowego życia, które KAŻDY musi stosować!
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz pięć zasad z filmu.
+1. Zamień trzy zasady na rady dla zmęczonego znajomego w trybie rozkazującym: <i>Śpij…, Pij…, Nie jedz…</i>
+1. Którą zasadę już stosujesz, a którą chcesz zacząć?
 
 ### ✍️ Pisanie
 

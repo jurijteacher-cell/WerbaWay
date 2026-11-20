@@ -266,11 +266,25 @@ Zadania komunikacyjne
 
 ## 🏠 6. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>wiadomość o pierwszym domu</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>wiadomość o pierwszym domu</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-60-wspomnienia/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Wielka płyta – okiem architekta”</b> (kanał Fundamenty Architektury, około 16 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=8e9qeTK1aY4">
+Wielka płyta – okiem architekta
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Kiedy i dlaczego budowano bloki z wielkiej płyty?
+1. Podaj jedną zaletę i jedną wadę mieszkań w takich blokach.
+1. Czy jako dziecko mieszkałeś / mieszkałaś w bloku? Napisz 2–3 zdania z miejscownikiem: <i>w bloku, na osiedlu, na czwartym piętrze, przy szkole</i>.
 
 ### ✍️ Pisanie
 

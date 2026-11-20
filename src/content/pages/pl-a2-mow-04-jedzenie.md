@@ -231,11 +231,25 @@ Odpowiedz pełnymi zdaniami, <b>minimum trzy zdania</b> na każde pytanie:
 
 ## 🏠 8. Praca domowa
 
-Trzy części — <b>słownictwo i gramatyka</b>, <b>wiadomość głosowa</b> i <b>pisanie</b>.
+Cztery części — <b>słownictwo i gramatyka</b>, <b>wideo</b>, <b>wiadomość głosowa</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-mow-04-jedzenie/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„NAJGORSZY vs NAJLEPSZY BAR MLECZNY W GDAŃSKU!”</b> (kanał Jaworscy Gotują, około 22 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=n1BDuSnFnQI">
+NAJGORSZY vs NAJLEPSZY BAR MLECZNY W GDAŃSKU!
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Co zamawiają autorzy? Wymień trzy dania.
+1. Co im smakuje, a co nie? Napisz dwa zdania: <i>Smakuje im…, Nie smakuje im…</i>
+1. Jesteś w barze mlecznym. Napisz, co zamawiasz: <i>Poproszę…</i>
 
 ### 🎙️ Wiadomość głosowa
 

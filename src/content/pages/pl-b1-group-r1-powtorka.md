@@ -298,11 +298,26 @@ Mini-test — lekcje 1–8
 
 ## 🏠 8. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>nowa wersja Twojego tekstu</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>nowa wersja Twojego tekstu</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-r1-powtorka/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„PRZEPROWADZIŁAM SIĘ”</b> (kanał Klaudia Sadownik, około 22 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=nyc1D3Fb0L4">
+PRZEPROWADZIŁAM SIĘ
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Skąd i dokąd przeprowadziła się autorka? Dlaczego?
+1. Co było najtrudniejsze w przeprowadzce? Napisz dwa zdania z czasownikami dokonanymi (np. <i>spakowała, przewiozła, urządziła</i>).
+1. Opowiedz o swojej przeprowadzce: ile lat temu, skąd, dokąd i kto Ci pomógł.
+
 
 ### ✍️ Pisanie
 

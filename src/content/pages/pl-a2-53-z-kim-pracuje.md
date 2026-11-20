@@ -248,11 +248,25 @@ Zadania komunikacyjne
 
 ## 🏠 6. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>wiadomość do przyjaciela</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>wiadomość do przyjaciela</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-53-z-kim-pracuje/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Zaskakująco prosty sposób na naukę języka obcego w PÓŁ ROKU!”</b> (kanał blvamlkess, około 6 minut):
+
+<video source="https://www.youtube.com/watch?v=x_v1IbJeFKk">
+Zaskakująco prosty sposób na naukę języka obcego w PÓŁ ROKU!
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Jaki sposób na naukę języka pokazuje film? Opisz go jednym zdaniem.
+1. Napisz dwa zdania z narzędnikiem: z kim albo z czym się uczysz, np. <i>z nową nauczycielką, z dobrą aplikacją, z moją grupą</i>.
+1. Czy ten sposób pasuje do Ciebie? Dlaczego tak albo dlaczego nie?
 
 ### ✍️ Pisanie
 

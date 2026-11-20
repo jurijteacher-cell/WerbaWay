@@ -308,11 +308,25 @@ Mini-test — lekcje 1–22
 
 ## 🏠 8. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>pełny blok pisania, jak na egzaminie</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>pełny blok pisania, jak na egzaminie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-r4-powtorka/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„MIASTO vs WIEŚ”</b> (kanał Impresyw, około 3 minut):
+
+<video source="https://www.youtube.com/watch?v=NZFd1LeJMm8">
+MIASTO vs WIEŚ
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Jakie różnice między miastem a wsią pokazuje film? Wymień trzy.
+1. Napisz dwa zdania: <i>W mieście…, natomiast na wsi…</i> oraz <i>Chociaż…, …</i>
+1. Gdzie wolałbyś / wolałabyś mieszkać? Podaj dwa argumenty (<i>dlatego że…, z powodu…</i>).
 
 ### ✍️ Pisanie — jak na egzaminie
 

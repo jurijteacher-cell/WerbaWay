@@ -257,11 +257,25 @@ Zadania komunikacyjne
 
 ## 🏠 6. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>wiadomość o rodzinie</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>wiadomość o rodzinie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-63-znam-go-widze-ja/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Pojechaliśmy na jeden dzień do mojej rodziny”</b> (kanał NataliaMagical, około 30 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=1pHXiKi42sY">
+Pojechaliśmy na jeden dzień do mojej rodziny
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Kogo odwiedza autorka? Wymień trzy osoby.
+1. Napisz dwa zdania z biernikiem osobowym, np. <i>Autorka odwiedza babcię. W filmie widzimy jej brata.</i>
+1. Kogo z rodziny Ty odwiedzasz najczęściej? Dlaczego?
 
 ### ✍️ Pisanie
 

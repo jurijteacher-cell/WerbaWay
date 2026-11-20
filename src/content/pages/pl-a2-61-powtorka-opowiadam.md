@@ -221,11 +221,25 @@ Speaking marathon
 
 ## 🏠 7. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>nowa wersja Twojego tekstu</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>nowa wersja Twojego tekstu</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-61-powtorka-opowiadam/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„STWÓRZ SWÓJ PAMIĘTNIK – 10 tipów jak zacząć”</b> (kanał Natasza Baszczyj, około 21 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=nnnwVB6b1Jg">
+STWÓRZ SWÓJ PAMIĘTNIK – 10 tipów jak zacząć
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz trzy rady z filmu, które Ci się podobają.
+1. Co — oprócz tekstu — można mieć w pamiętniku?
+1. Napisz krótki wpis (3–4 zdania) o wczorajszym dniu: co robiłeś / robiłaś, gdzie byłeś / byłaś i co było najlepsze.
 
 ### ✍️ Pisanie
 

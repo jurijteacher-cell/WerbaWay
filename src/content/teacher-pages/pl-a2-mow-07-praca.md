@@ -120,3 +120,7 @@ teacherOf: pl-a2-mow-07-praca
 
 - Обкладинка: бариста за стійкою — Fot. Nathan Dumlao / Unsplash.
 - У тексті: співбесіда — підпис на сторінці учня (Resume Genius / Unsplash).
+
+## 🎬 Відео в ДЗ
+
+Відео: Karolina Gorczyca-Barszczewska · 62 tys. переглядів · 1 tys. лайків · 15.06.2025 · ≈20 хв — «Jak odpowiadać na rozmowie o pracę? – 15 najtrudniejszych pytań na rozmowie kwalifikacyjnej» https://www.youtube.com/watch?v=_C4WWI0k2kQ. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

@@ -92,3 +92,7 @@ teacherOf: pl-a2-54-powtorka-praca
 Cześć, Marku!<br>Od piętnastego września studiuję logistykę w Poznaniu. Jestem studentką pierwszego roku. Najczęściej pracuję z Ewą — siedzi obok mnie i zawsze mi pomaga. Na początku było trudno: przez tydzień szukałam sali numer sto dwa i nigdy jej nie znalazłam! Teraz jestem zadowolona z grupy i z wykładowców. Dwunastego listopada mam pierwszy egzamin z matematyki. Trochę się go boję, ale mój kolega Adam uczy się ze mną. Napisz, co u ciebie!<br>Ściskam, Ola
 
 </div></aside>
+
+## 🎬 Відео в ДЗ
+
+Відео: Impresyw · 292 tys. переглядів · 7 tys. лайків · 04.01.2025 · ≈4 хв — «Moja Pierwsza PRACA» https://www.youtube.com/watch?v=6plhQCR53H4. Перевірено 21.11.2026: публічне, дозволяє вставку.

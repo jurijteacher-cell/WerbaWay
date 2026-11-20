@@ -219,11 +219,25 @@ Speaking marathon
 
 ## 🏠 7. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>e-mail z podziękowaniem</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>e-mail z podziękowaniem</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-68-powtorka-ludzie-i-zdrowie/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Kabaret Młodych Panów i Goście – Lekarz”</b> (kanał Polsat, około 6 minut):
+
+<video source="https://www.youtube.com/watch?v=rquA858WNsk">
+Kabaret Młodych Panów i Goście – Lekarz
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Co dolega pacjentowi?
+1. Zapisz dwa pytania albo dwie rady lekarza.
+1. Opisz w 3 zdaniach swoją ostatnią wizytę u lekarza: co Ci dolegało i co powiedział lekarz.
 
 ### ✍️ Pisanie
 

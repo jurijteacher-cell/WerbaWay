@@ -129,3 +129,7 @@ Anna z mieszkania nr 12
 ## 🖼️ Фото
 
 Обкладинка: Madeline Bowen / Unsplash («person holding brown and white short coated dog»). Фото в тексті: Cabri Caldwell / Unsplash («Dwie osoby układają jedzenie w podpisanych koszach»), m c / Unsplash («Kobieta w małym sklepie zoologicznym»).
+
+## 🎬 Відео в ДЗ
+
+Відео: Warszawa (oficjalny kanał miasta) · 42 tys. переглядів · 0 tys. лайків · 18.03.2025 · ≈3 хв — «Dzień z życia Schroniska Na Paluchu – część 1. Opiekun» https://www.youtube.com/watch?v=rgab9jG06TE. Перевірено 21.11.2026: публічне, дозволяє вставку.

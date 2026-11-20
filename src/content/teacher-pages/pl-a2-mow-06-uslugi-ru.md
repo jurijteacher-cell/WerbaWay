@@ -122,3 +122,7 @@ teacherOf: pl-a2-mow-06-uslugi-ru
 
 - Обкладинка: коробка — Fot. Christopher Bill / Unsplash.
 - У тексті: ремонт телефону — підпис на сторінці учня (PR MEDIA / Unsplash).
+
+## 🎬 Відео в ДЗ
+
+Відео: Uwaga! TVN · 22 tys. переглядів · 0 tys. лайків · 13.03.2025 · ≈5 хв — «Opóźnienia i niedostarczone awiza. Co dalej z Pocztą Polską?» https://www.youtube.com/watch?v=bh31wTozHyk. Перевірено 21.11.2026: публічне, дозволяє вставку.

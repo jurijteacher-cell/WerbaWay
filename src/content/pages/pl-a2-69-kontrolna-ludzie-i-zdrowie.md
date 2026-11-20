@@ -104,11 +104,25 @@ Koleżanka pyta, co u Ciebie słychać. Napisz do niej wiadomość o tygodniu, k
 
 ## 🏠 4. Praca domowa
 
-Po teście nauczyciel powie, które tematy powtórzyć. Zrób <b>ćwiczenia na typowe błędy</b> i <b>powtórz słowa modułu</b>.
+Po teście nauczyciel powie, które tematy powtórzyć. Zrób <b>ćwiczenia na typowe błędy</b>, <b>powtórz słowa modułu</b> i obejrzyj <b>wideo</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-69-kontrolna-ludzie-i-zdrowie/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Hrabi – Baba u lekarza”</b> (kanał Polsat, około 5 minut):
+
+<video source="https://www.youtube.com/watch?v=Tft4MP9hKLk">
+Hrabi – Baba u lekarza
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Jak wygląda pacjentka? Opisz ją 2 zdaniami.
+1. Na co narzeka? Wypisz trzy rzeczy.
+1. Daj jej dwie rady: <i>Powinna Pani…, Musi Pani…</i>
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-69-kontrolna-ludzie-i-zdrowie/vocab">
 Słownictwo — karty

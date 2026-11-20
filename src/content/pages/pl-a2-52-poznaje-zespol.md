@@ -262,11 +262,25 @@ Zadania komunikacyjne
 
 ## 🏠 6. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>wiadomość do przyjaciela</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>wiadomość do przyjaciela</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-52-poznaje-zespol/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„10 czerwonych flag W PRACY, których NIE MOŻESZ ignorować”</b> (kanał Karolina Gorczyca-Barszczewska, około 21 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=sQlCY-ScDU0">
+10 czerwonych flag W PRACY, których NIE MOŻESZ ignorować
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz trzy „czerwone flagi” z filmu.
+1. Która z nich najbardziej Cię zaskoczyła? Dlaczego?
+1. Opisz dobrego kolegę albo dobrą koleżankę z pracy (2–3 zdania). Użyj zaimków: <i>go / ją, z nim / z nią, mu / jej</i>.
 
 ### ✍️ Pisanie
 

@@ -114,3 +114,7 @@ Dzień dobry,<br>chciałabym zarezerwować noclegi dla pięciu osób od piątku 
 
 - Обкладинка: Fot. Segun Famisa / Unsplash (photo-1744381326084).
 - Фото в тексті: Fot. Anthony Da Cruz / Unsplash (photo-1503789597747).
+
+## 🎬 Відео в ДЗ
+
+Відео: Górskim Szlakiem · 55 tys. переглядів · 1 tys. лайків · 05.09.2025 · ≈18 хв — «ZAKOPANE – Atrakcje Zakopanego – Co warto zobaczyć w Zakopanem?» https://www.youtube.com/watch?v=Fz_LIhYij4A. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

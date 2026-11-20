@@ -223,11 +223,25 @@ Speaking marathon
 
 ## 🏠 7. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>e-mail</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>e-mail</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-54-powtorka-praca/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Moja Pierwsza PRACA”</b> (kanał Impresyw, około 4 minut):
+
+<video source="https://www.youtube.com/watch?v=6plhQCR53H4">
+Moja Pierwsza PRACA
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Gdzie pracował autor filmu i co tam robił?
+1. Co było trudne, a co śmieszne? Podaj dwie rzeczy.
+1. Napisz 3–4 zdania o swojej pierwszej pracy: gdzie, jak długo i z kim pracowałeś / pracowałaś.
 
 ### ✍️ Pisanie
 

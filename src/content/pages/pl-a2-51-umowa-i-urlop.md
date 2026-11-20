@@ -242,11 +242,25 @@ Zadania komunikacyjne
 
 ## 🏠 6. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>wiadomość do przyjaciela</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>wiadomość do przyjaciela</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-51-umowa-i-urlop/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Cała prawda o... umowie zlecenia”</b> (kanał techpilot, około 18 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=h77xmkq1SI4">
+Cała prawda o... umowie zlecenia
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Czym — według filmu — umowa zlecenia różni się od umowy o pracę? Podaj dwie różnice.
+1. Czy na umowie zlecenia masz płatny urlop? Odpowiedz jednym zdaniem.
+1. Napisz, kiedy masz w tym roku urlop albo wolne dni — daty pełnymi słowami, np. <i>od pierwszego do piętnastego lipca</i>.
 
 ### ✍️ Pisanie
 

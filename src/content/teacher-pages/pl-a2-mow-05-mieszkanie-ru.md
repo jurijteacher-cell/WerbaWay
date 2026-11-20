@@ -130,3 +130,7 @@ Mam wielką nowinę: od tygodnia mieszkam w Gdańsku! Przeprowadziłam się, bo 
 - Фото в тексті: <a href="https://unsplash.com/@lisaanna195">Lisa Anna / Unsplash</a> — кредит є в підписі під фото на сторінці учня.
 
 <b>Примітка:</b> ціни в оголошеннях вигадані, але правдоподібні для Познані; Jeżyce й Rataje — реальні райони, вулиця Lipowa в діалозі — умовна.
+
+## 🎬 Відео в ДЗ
+
+Відео: Pierogi z Kimchi · 539 tys. переглядів · 28 tys. лайків · 17.09.2025 · ≈21 хв — «Moje nowe MIESZKANIE W KOREI – house tour» https://www.youtube.com/watch?v=PdIjaM6CO_w. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

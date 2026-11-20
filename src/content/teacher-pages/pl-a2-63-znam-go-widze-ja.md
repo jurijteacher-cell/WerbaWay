@@ -115,3 +115,7 @@ Cześć, Aniu!<br>Mam dużą rodzinę. Moi rodzice mieszkają w Odessie, a ja ma
 
 - Обкладинка: Fot. Dylan Gillis / Unsplash (photo-1517048676732).
 - Фото в тексті: Fot. krakenimages / Unsplash (photo-1601118964938).
+
+## 🎬 Відео в ДЗ
+
+Відео: NataliaMagical · 20 tys. переглядів · 0 tys. лайків · 18.11.2026 · ≈30 хв — «Pojechaliśmy na jeden dzień do mojej rodziny» https://www.youtube.com/watch?v=1pHXiKi42sY. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

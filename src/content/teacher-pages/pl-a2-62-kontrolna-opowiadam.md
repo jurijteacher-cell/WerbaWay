@@ -107,3 +107,7 @@ Cześć, Kasiu!<br>Pytasz o mój tydzień. Codziennie rano chodziłam na kurs, a
 - Обкладинка: Fot. Brooke Cagle / Unsplash — „two women sitting at a table looking at a cell phone” (photo-1653762378248-db45a1285697).
 - Фото в тексті: Fot. Priscilla Du Preez / Unsplash — „two people holding gray mugs at table” (photo-1604881988758-f76ad2f7aac1).
 - Обрано за описом зі сторінки пошуку Unsplash: зображення в сесії не відкриваються.
+
+## 🎬 Відео в ДЗ
+
+Відео: Wiktoria Wolak · 26 tys. переглядів · 1 tys. лайків · 01.06.2025 · ≈6 хв — «MOJA PORANNA WEEKENDOWA RUTYNA» https://www.youtube.com/watch?v=U7RjaCIyo_8. Перевірено 21.11.2026: публічне, дозволяє вставку.

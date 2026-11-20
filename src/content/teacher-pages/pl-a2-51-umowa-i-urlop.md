@@ -123,3 +123,7 @@ teacherOf: pl-a2-51-umowa-i-urlop
 ## 🔗 LMS
 
 <code>pl-a2-51-umowa-i-urlop</code> — vocab, grammar (g1–g5), comm-tasks (c1–c2), hw (h1–h3), exam (e1).
+
+## 🎬 Відео в ДЗ
+
+Відео: techpilot · 267 tys. переглядів · 6 tys. лайків · 30.01.2026 · ≈18 хв — «Cała prawda o... umowie zlecenia» https://www.youtube.com/watch?v=h77xmkq1SI4. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

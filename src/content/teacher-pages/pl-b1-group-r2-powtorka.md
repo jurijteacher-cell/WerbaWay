@@ -129,3 +129,7 @@ A wam co się podoba najbardziej w waszym mieście?
 ## 🖼️ Фото
 
 Обкладинка: Vitaly Gariev / Unsplash («Two smiling young women watching television with popcorn»). Фото в тексті: Jakub Żerdzicki / Unsplash («Surowe pierogi na drewnianych deskach»), Lital Levy / Unsplash («Trzy osoby na górskim szlaku»).
+
+## 🎬 Відео в ДЗ
+
+Відео: KSIĄŻULO · 1,1 mln переглядів · 33 tys. лайків · 09.09.2025 · ≈28 хв — «NAJLEPSZE PIEROGI W POLSCE, warto stać w kolejce?» https://www.youtube.com/watch?v=zxhUx2FGxMw. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

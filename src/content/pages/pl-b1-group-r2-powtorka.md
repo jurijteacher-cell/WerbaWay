@@ -280,11 +280,26 @@ Speaking marathon
 
 ## 🏠 7. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>nowa wersja Twojego tekstu</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>nowa wersja Twojego tekstu</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-r2-powtorka/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„NAJLEPSZE PIEROGI W POLSCE, warto stać w kolejce?”</b> (kanał KSIĄŻULO, około 28 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=zxhUx2FGxMw">
+NAJLEPSZE PIEROGI W POLSCE, warto stać w kolejce?
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Jakie pierogi zamawia autor i które smakują mu najbardziej?
+1. Porównaj dwa rodzaje pierogów z filmu: <i>…są lepsze / gorsze niż…, najlepsze są…</i>
+1. Czy warto stać w kolejce po jedzenie? Napisz 2–3 zdania z celownikiem, np. <i>Mnie nie chce się czekać…</i>
+
 
 ### ✍️ Pisanie
 

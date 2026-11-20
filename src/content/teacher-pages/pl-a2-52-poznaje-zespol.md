@@ -125,3 +125,7 @@ teacherOf: pl-a2-52-poznaje-zespol
 ## 🔗 LMS
 
 <code>pl-a2-52-poznaje-zespol</code> — vocab, grammar (g1–g5), comm-tasks (c1–c2), hw (h1–h3), exam (e1 читання, e2 слухання з mp3). Аудіо: <code>/audio/pl-a2-52-poznaje-zespol-e2-dialog.mp3</code>, flow ElevenLabs «pl-a2-52-poznaje-zespol».
+
+## 🎬 Відео в ДЗ
+
+Відео: Karolina Gorczyca-Barszczewska · 44 tys. переглядів · 2 tys. лайків · 01.06.2025 · ≈21 хв — «10 czerwonych flag W PRACY, których NIE MOŻESZ ignorować» https://www.youtube.com/watch?v=sQlCY-ScDU0. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

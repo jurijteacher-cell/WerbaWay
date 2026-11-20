@@ -362,11 +362,25 @@ Odpowiedz pełnymi zdaniami, <b>minimum trzy zdania</b> na każde pytanie:
 
 ## 🏠 8. Praca domowa
 
-Trzy części — <b>ćwiczenia</b>, <b>wiadomość głosowa</b> i <b>pisanie</b>.
+Cztery części — <b>ćwiczenia</b>, <b>wideo</b>, <b>wiadomość głosowa</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-mow-05-mieszkanie-ru/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Moje nowe MIESZKANIE W KOREI – house tour”</b> (kanał Pierogi z Kimchi, około 21 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=PdIjaM6CO_w">
+Moje nowe MIESZKANIE W KOREI – house tour
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Ile pokoi ma mieszkanie? Co jest w kuchni?
+1. Opisz trzy rzeczy z filmu z przyimkami miejsca: <i>w salonie, obok okna, nad łóżkiem, za drzwiami</i>.
+1. Co w tym mieszkaniu jest inne niż w mieszkaniach w Twoim kraju?
 
 ### 🎙️ Wiadomość głosowa
 

@@ -247,11 +247,25 @@ Zadania komunikacyjne
 
 ## 🏠 7. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>wiadomość z radami</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>wiadomość z radami</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-66-co-powinnam-zrobic/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„TATRY: 18 łatwych i krótkich szlaków z GENIALNYMI widokami DLA KAŻDEGO!”</b> (kanał Na Grani, około 26 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=tzumzFVXiMs">
+TATRY: 18 łatwych i krótkich szlaków z GENIALNYMI widokami DLA KAŻDEGO!
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wybierz jeden szlak z filmu. Skąd się zaczyna i ile mniej więcej trwa?
+1. Napisz trzy rady dla znajomej, która idzie na ten szlak: <i>powinnaś…, musisz…, nie wolno…</i>
+1. Który szlak chcesz przejść Ty i dlaczego?
 
 ### ✍️ Pisanie
 

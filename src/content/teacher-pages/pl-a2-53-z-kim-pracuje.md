@@ -134,3 +134,7 @@ Cześć, Ania!<br>Od września chodzę na kurs fotografii. Nasza nauczycielka je
 ## 📌 Факти
 
 Текст і діалоги побутові, фактів права немає — розділу Źródła на сторінці учня немає. Фірма, люди й графік нарад вигадані. Фото в тексті: Memento Media / Unsplash.
+
+## 🎬 Відео в ДЗ
+
+Відео: blvamlkess · 99 tys. переглядів · 5 tys. лайків · 13.12.2024 · ≈6 хв — «Zaskakująco prosty sposób na naukę języka obcego w PÓŁ ROKU!» https://www.youtube.com/watch?v=x_v1IbJeFKk. Перевірено 21.11.2026: публічне, дозволяє вставку.

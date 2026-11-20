@@ -134,3 +134,7 @@ Olena
 ## 🖼️ Фото
 
 Обкладинка: Brooke Cagle / Unsplash («two women sitting at a table with drinks»). Фото в тексті: Anton Shakirov / Unsplash («Skrzydło samolotu nad oceanem»), Timur Repin / Unsplash («Kobieta rozmawia przez telefon»).
+
+## 🎬 Відео в ДЗ
+
+Відео: Klaudia Sadownik · 243 tys. переглядів · 8 tys. лайків · 23.06.2025 · ≈22 хв — «PRZEPROWADZIŁAM SIĘ» https://www.youtube.com/watch?v=nyc1D3Fb0L4. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

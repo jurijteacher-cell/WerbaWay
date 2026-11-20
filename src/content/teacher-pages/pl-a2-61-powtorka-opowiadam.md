@@ -110,3 +110,7 @@ Czwartek<br>Co za tydzień! W poniedziałek i we wtorek cały dzień pracowałam
 - Обкладинка: Fot. Marcos Paulo Prado / Unsplash — „woman writing in notebook with pen” (photo-1579017308347-e53e0d2fc5e9).
 - Фото в тексті: Fot. Priscilla Du Preez / Unsplash — „a cup of coffee and a notebook on a table” (photo-1643148636637-58b3eb95cdad).
 - Обрано за описом зі сторінки пошуку Unsplash: зображення в сесії не відкриваються.
+
+## 🎬 Відео в ДЗ
+
+Відео: Natasza Baszczyj · 67 tys. переглядів · 4 tys. лайків · 31.03.2026 · ≈21 хв — «STWÓRZ SWÓJ PAMIĘTNIK – 10 tipów jak zacząć» https://www.youtube.com/watch?v=nnnwVB6b1Jg. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

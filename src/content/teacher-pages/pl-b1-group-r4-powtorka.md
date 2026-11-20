@@ -169,3 +169,7 @@ A jak jest u Was? Wolicie biuro czy dom?
 ## 🖼️ Фото
 
 Обкладинка: Phil Hearing / Unsplash («A person walking a dog on a dirt path through a foggy green field»). Фото в тексті: Matthew / Unsplash («Laptop na stole w ogrodzie»), konrad dobosz / Unsplash («Widok z góry na małą wieś wśród lasów i pól»). Фото обрано за описом зі сторінки пошуку Unsplash.
+
+## 🎬 Відео в ДЗ
+
+Відео: Impresyw · 316 tys. переглядів · 7 tys. лайків · 08.02.2025 · ≈3 хв — «MIASTO vs WIEŚ» https://www.youtube.com/watch?v=NZFd1LeJMm8. Перевірено 21.11.2026: публічне, дозволяє вставку.

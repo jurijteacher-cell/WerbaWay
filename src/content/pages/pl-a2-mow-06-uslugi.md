@@ -327,11 +327,25 @@ Odpowiedz pełnymi zdaniami, <b>minimum trzy zdania</b> na każde pytanie:
 
 ## 🏠 8. Praca domowa
 
-Trzy części — <b>ćwiczenia</b>, <b>wiadomość głosowa</b> i <b>pisanie</b>.
+Cztery części — <b>ćwiczenia</b>, <b>wideo</b>, <b>wiadomość głosowa</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-mow-06-uslugi/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Opóźnienia i niedostarczone awiza. Co dalej z Pocztą Polską?”</b> (kanał Uwaga! TVN, około 5 minut):
+
+<video source="https://www.youtube.com/watch?v=bh31wTozHyk">
+Opóźnienia i niedostarczone awiza. Co dalej z Pocztą Polską?
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Na co narzekają klienci w reportażu? Wymień dwie rzeczy.
+1. Co to jest awizo? Wyjaśnij jednym zdaniem.
+1. Gdzie Ty nadajesz paczki: na poczcie czy w paczkomacie? Dlaczego?
 
 ### 🎙️ Wiadomość głosowa
 

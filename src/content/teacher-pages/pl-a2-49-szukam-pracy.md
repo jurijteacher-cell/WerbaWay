@@ -115,3 +115,7 @@ teacherOf: pl-a2-49-szukam-pracy
 ## 🔗 LMS
 
 <code>pl-a2-49-szukam-pracy</code> — vocab, grammar (g1–g5), comm-tasks (c1–c2), hw (h1–h3), exam (e1).
+
+## 🎬 Відео в ДЗ
+
+Відео: serio proste · 70 tys. переглядів · 3 tys. лайків · 24.01.2026 · ≈12 хв — «znalezienie (dobrej) pracy jest proste, serio» https://www.youtube.com/watch?v=LRNgl9E7Fpg. Перевірено 21.11.2026: публічне, дозволяє вставку.

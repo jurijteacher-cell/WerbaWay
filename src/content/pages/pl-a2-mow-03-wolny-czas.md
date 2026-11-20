@@ -161,11 +161,25 @@ Sprawdź, czy umiesz to, co obiecaliśmy na początku:
 
 ## 8. Praca domowa
 
-Trzy części — słownictwo i gramatyka, wiadomość głosowa i pisanie.
+Cztery części — słownictwo i gramatyka, wideo, wiadomość głosowa i pisanie.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-mow-03-wolny-czas/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„10 CIEKAWYCH HOBBY – jak zacząć?”</b> (kanał Natasza Baszczyj, około 20 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=8ZyUye_eack">
+10 CIEKAWYCH HOBBY – jak zacząć?
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz pięć hobby z filmu.
+1. Napisz trzy zdania: <i>Uwielbiam…, Lubię…, Wolę… niż…</i>
+1. Które hobby z filmu chcesz spróbować i dlaczego?
 
 ### Wiadomość głosowa
 

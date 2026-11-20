@@ -99,3 +99,7 @@ teacherOf: pl-a2-66-co-powinnam-zrobic
 - <i>powinienem</i> з уроку 50 — тепер уся парадигма;
 - прийменники часу (50–51): <i>o siódmej, w sobotę, w weekend</i>;
 - слова з 65: <i>zmęczony, odpocząć, warto, przerwa</i>.
+
+## 🎬 Відео в ДЗ
+
+Відео: Na Grani · 76 tys. переглядів · 2 tys. лайків · 02.08.2026 · ≈26 хв — «TATRY: 18 łatwych i krótkich szlaków z GENIALNYMI widokami DLA KAŻDEGO!» https://www.youtube.com/watch?v=tzumzFVXiMs. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

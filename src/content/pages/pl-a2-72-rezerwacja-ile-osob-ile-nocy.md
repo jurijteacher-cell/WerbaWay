@@ -251,11 +251,25 @@ Zadania komunikacyjne
 
 ## 🏠 6. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>e-mail z rezerwacją</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>e-mail z rezerwacją</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-72-rezerwacja-ile-osob-ile-nocy/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„ZAKOPANE – Atrakcje Zakopanego – Co warto zobaczyć w Zakopanem?”</b> (kanał Górskim Szlakiem, około 18 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=Fz_LIhYij4A">
+ZAKOPANE – Atrakcje Zakopanego – Co warto zobaczyć w Zakopanem?
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz pięć atrakcji z filmu.
+1. Napisz dwa zdania w liczbie mnogiej: <i>W Zakopanem jest dużo…</i> (dopełniacz) i <i>Chcę zobaczyć…</i> (biernik).
+1. Planujesz wyjazd do Zakopanego: ile osób, ile nocy i co zobaczycie?
 
 ### ✍️ Pisanie
 

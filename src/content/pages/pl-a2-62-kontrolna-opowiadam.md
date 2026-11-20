@@ -104,11 +104,25 @@ Kasia pyta, jak minął Ci ten tydzień. Napisz do niej e-mail — <b>relację z
 
 ## 🏠 4. Praca domowa
 
-Po teście nauczyciel powie, które tematy powtórzyć. Zrób <b>ćwiczenia na typowe błędy</b> i <b>powtórz słowa modułu</b>.
+Po teście nauczyciel powie, które tematy powtórzyć. Zrób <b>ćwiczenia na typowe błędy</b>, <b>powtórz słowa modułu</b> i obejrzyj <b>wideo</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-62-kontrolna-opowiadam/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„MOJA PORANNA WEEKENDOWA RUTYNA”</b> (kanał Wiktoria Wolak, około 6 minut):
+
+<video source="https://www.youtube.com/watch?v=U7RjaCIyo_8">
+MOJA PORANNA WEEKENDOWA RUTYNA
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Co robi autorka najpierw, a co potem? Wymień trzy rzeczy.
+1. Opisz jej poranek w czasie przeszłym (3 zdania): <i>Wstała…, Zrobiła…, Potem…</i>
+1. Jak wyglądał Twój ostatni sobotni poranek?
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-62-kontrolna-opowiadam/vocab">
 Słownictwo — karty

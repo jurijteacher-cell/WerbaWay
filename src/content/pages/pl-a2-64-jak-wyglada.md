@@ -236,11 +236,25 @@ Zadania komunikacyjne
 
 ## 🏠 6. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>zgłoszenie do Biura Rzeczy Znalezionych</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>zgłoszenie do Biura Rzeczy Znalezionych</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-64-jak-wyglada/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Pracuję w BIURZE RZECZY ZNALEZIONYCH na LOTNISKU – Lost But Found #1”</b> (kanał MISS AGA GRA, około 26 minut; wystarczy obejrzeć pierwsze 10–12 minut):
+
+<video source="https://www.youtube.com/watch?v=sfPd4XHgl6c">
+Pracuję w BIURZE RZECZY ZNALEZIONYCH na LOTNISKU – Lost But Found #1
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Jakie rzeczy ludzie zgubili na lotnisku? Wymień pięć.
+1. Opisz dwie z nich przymiotnikami, np. <i>czarna walizka z małym zamkiem, niebieski plecak bez kieszeni</i>.
+1. Co Ty kiedyś zgubiłeś / zgubiłaś? Opisz tę rzecz w 2–3 zdaniach.
 
 ### ✍️ Pisanie
 

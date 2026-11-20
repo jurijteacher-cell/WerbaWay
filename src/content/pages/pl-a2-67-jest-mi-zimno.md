@@ -261,11 +261,25 @@ Zadania komunikacyjne
 
 ## 🏠 6. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>wiadomość o chorobie</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>wiadomość o chorobie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-67-jest-mi-zimno/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„Domowe sposoby na PRZEZIĘBIENIE – Dietetyk sprawdza”</b> (kanał Michał Wrzosek, około 10 minut):
+
+<video source="https://www.youtube.com/watch?v=E98lSSAoEbg">
+Domowe sposoby na PRZEZIĘBIENIE – Dietetyk sprawdza
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Jakie domowe sposoby sprawdza autor? Wymień trzy.
+1. Które z nich naprawdę pomagają, a które nie?
+1. Napisz dwa zdania z celownikiem, np. <i>Kiedy jest mi zimno, piję herbatę z imbirem. Mojemu synowi pomaga…</i>
 
 ### ✍️ Pisanie
 

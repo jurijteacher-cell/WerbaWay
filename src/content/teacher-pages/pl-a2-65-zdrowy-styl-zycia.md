@@ -100,3 +100,7 @@ teacherOf: pl-a2-65-zdrowy-styl-zycia
 - <i>przyimki czasu</i> (50–51): <i>o tej samej godzinie, po osiemnastej, co godzinę</i>;
 - модальні + інфінітив (A1): <i>muszą odpocząć, mam przychodzić</i>;
 - слова з 52: <i>kolega z pracy, biurko, szef</i>.
+
+## 🎬 Відео в ДЗ
+
+Відео: Michał Wrzosek · 475 tys. переглядів · 11 tys. лайків · 28.07.2025 · ≈19 хв — «10 zasad zdrowego życia, które KAŻDY musi stosować!» https://www.youtube.com/watch?v=n6X5GthQxto. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

@@ -115,3 +115,7 @@ Dzień dobry,<br>w poniedziałek około osiemnastej zostawiłem w autobusie nume
 
 - Обкладинка: Fot. Peter Hong / Unsplash (photo-1569288746471).
 - Фото в тексті: Fot. Vitaly Gariev / Unsplash (photo-1758273705867).
+
+## 🎬 Відео в ДЗ
+
+Відео: MISS AGA GRA · 268 tys. переглядів · 7 tys. лайків · 30.11.2024 · ≈26 хв — «Pracuję w BIURZE RZECZY ZNALEZIONYCH na LOTNISKU – Lost But Found #1» https://www.youtube.com/watch?v=sfPd4XHgl6c. Перевірено 21.11.2026: публічне, дозволяє вставку. Довше за 15 хв — в ДЗ дано «перші 10–12 хвилин».

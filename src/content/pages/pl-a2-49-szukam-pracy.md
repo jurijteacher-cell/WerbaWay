@@ -226,11 +226,25 @@ Zadania komunikacyjne
 
 ## 🏠 6. Praca domowa
 
-Dwie części — <b>ćwiczenia</b> i <b>e-mail do pracodawcy</b>.
+Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>e-mail do pracodawcy</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-49-szukam-pracy/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„znalezienie (dobrej) pracy jest proste, serio”</b> (kanał serio proste, około 12 minut):
+
+<video source="https://www.youtube.com/watch?v=LRNgl9E7Fpg">
+znalezienie (dobrej) pracy jest proste, serio
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Wypisz trzy rady z filmu.
+1. Czego warto szukać, a czego unikać? Napisz dwa zdania z dopełniaczem, np. <i>Szukam pracy blisko domu. Unikam firm bez umowy.</i>
+1. Która rada jest dla Ciebie najważniejsza i dlaczego? Użyj jednego przyimka z dopełniaczem: <i>od, do, dla, bez, obok</i>.
 
 ### ✍️ Pisanie
 
