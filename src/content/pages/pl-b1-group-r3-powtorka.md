@@ -5,7 +5,7 @@ level: B1
 number: 16.5
 module: pl-b1-group
 moduleTitle: Польська B1
-cover: https://images.unsplash.com/photo-1714999497019-937047a5b5f4?w=1600&h=900&fit=crop&q=80&fm=jpg
+cover: https://images.unsplash.com/photo-1594004844563-536a03a6e532?w=1600&h=900&fit=crop&q=80&fm=jpg
 ---
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🎯</span><div class="lp-callout-body">
@@ -44,11 +44,11 @@ Wieczorem Maksym przyniósł plakat. Był bardzo kolorowy i bardzo… rozkazują
 
 — Może dodasz „proszę”? — zaproponowałam. Maksym westchnął, ale dopisał na górze: „Bardzo prosimy o pomoc”.
 
-![Żółte karteczki przyklejone do ściany. Fot. Kelly Sikkema / Unsplash](https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=1400&q=80&fm=jpg&fit=max)
+![Dwie osoby układają jedzenie w podpisanych koszach. Fot. Cabri Caldwell / Unsplash](https://images.unsplash.com/photo-1768875828551-2b7e7472be44?w=1400&q=80&fm=jpg&fit=max)
 
 W sobotę pojechaliśmy na zakupy. W sklepie zoologicznym duży worek karmy był w promocji: piętnaście kilogramów za sto dwadzieścia złotych. — Gdybyśmy kupili trzy worki, czwarty dostalibyśmy gratis — przeczytał Taras. Ale sprawdziłam cenę jednostkową: w markecie obok ta sama karma była tańsza. — Jeśli chcesz oszczędzać, zawsze patrz na cenę za kilogram — powiedziałam. Kupiliśmy w markecie, a paragon schowałam do portfela, żeby pokazać go wspólnocie.
 
-![Kobieta robi zakupy w supermarkecie. Fot. Joshua Rawson-Harris / Unsplash](https://images.unsplash.com/photo-1521566652839-697aa473761a?w=1400&q=80&fm=jpg&fit=max)
+![Kobieta w małym sklepie zoologicznym. Fot. m c / Unsplash](https://images.unsplash.com/photo-1788096787407-261d03799f60?w=1400&q=80&fm=jpg&fit=max)
 
 Przez dwa tygodnie pudło napełniało się szybciej, niż myśleliśmy. Babcia Hanna przysłała pięć koców, które sama zrobiła na drutach. Sąsiadka z parteru, która podobno nie lubi psów, przyniosła dwie miski i smycz. A ktoś zostawił w pudle kartkę: „Przepraszam, że tylko tyle. Gdybym miał więcej pieniędzy, dałbym więcej”.
 

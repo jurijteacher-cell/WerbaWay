@@ -10,7 +10,7 @@ teacherOf: pl-b1-group-r1-powtorka
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📋</span><div class="lp-callout-body">
 
-<b>Курс «Польська B1», повторення R1 — блок 1 (лекції 1–8) + міні-тест.</b> Нової граматики немає: місце (<i>gdzie / dokąd / skąd</i>, орудний, місцевий) → родовий → множина й чоловічо-особові форми → минулий на <i>-eć</i> → дати й <i>temu / za</i> → вид → дієслова руху з префіксами → займенники й <i>nikt nie / nic nie</i>. Нових слів 5 (група «Podróż i niespodzianka»). Формат: індивідуально, 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-r1-powtorka">R1 · Powtórka: dom, ludzie, wspomnienia</a><br>Обкладинка: Priscilla Du Preez / Unsplash — https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1<br>Фото в тексті: Yuma Solar / Unsplash, Emmanuel M / Unsplash. Слухання e2 озвучено (ElevenLabs, ≈52 с): аудіо — на сторінці Notion «TEACHER · R1» https://app.notion.com/p/41c96e03c7c881499cbed5e90d7e9341, вмикай двічі. Немає доступу до Notion — читай сам за транскриптом нижче.
+<b>Курс «Польська B1», повторення R1 — блок 1 (лекції 1–8) + міні-тест.</b> Нової граматики немає: місце (<i>gdzie / dokąd / skąd</i>, орудний, місцевий) → родовий → множина й чоловічо-особові форми → минулий на <i>-eć</i> → дати й <i>temu / za</i> → вид → дієслова руху з префіксами → займенники й <i>nikt nie / nic nie</i>. Нових слів 5 (група «Podróż i niespodzianka»). Формат: індивідуально, 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-r1-powtorka">R1 · Powtórka: dom, ludzie, wspomnienia</a><br>Обкладинка: Brooke Cagle / Unsplash — https://images.unsplash.com/photo-1653762381632-2945469edb7b<br>Фото в тексті: Anton Shakirov / Unsplash, Timur Repin / Unsplash. Слухання e2 озвучено (ElevenLabs, ≈52 с): аудіо — на сторінці Notion «TEACHER · R1» https://app.notion.com/p/41c96e03c7c881499cbed5e90d7e9341, вмикай двічі. Немає доступу до Notion — читай сам за транскриптом нижче.
 
 </div></aside>
 
@@ -133,4 +133,4 @@ Olena
 
 ## 🖼️ Фото
 
-Обкладинка: Priscilla Du Preez / Unsplash. Фото в тексті: Yuma Solar / Unsplash («Blok z balkonami»), Emmanuel M / Unsplash («Wieczorna rozmowa przez telefon»).
+Обкладинка: Brooke Cagle / Unsplash («two women sitting at a table with drinks»). Фото в тексті: Anton Shakirov / Unsplash («Skrzydło samolotu nad oceanem»), Timur Repin / Unsplash («Kobieta rozmawia przez telefon»).

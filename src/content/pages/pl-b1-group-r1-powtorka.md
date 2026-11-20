@@ -5,7 +5,7 @@ level: B1
 number: 8.5
 module: pl-b1-group
 moduleTitle: Польська B1
-cover: https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?w=1600&h=900&fit=crop&q=80&fm=jpg
+cover: https://images.unsplash.com/photo-1653762381632-2945469edb7b?w=1600&h=900&fit=crop&q=80&fm=jpg
 ---
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🎯</span><div class="lp-callout-body">
@@ -38,11 +38,11 @@ cover: https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?w=1600&h=900
 
 Piszę ten wpis w kuchni Iry, w Toronto. Tak, w końcu się udało! Bilet kupiłam miesiąc temu i nikomu nic nie powiedziałam — oprócz Tarasa. W środę o czwartej rano wyszłam z domu. Taras odprowadził mnie na dworzec, stamtąd pojechałam autobusem na lotnisko w Warszawie, a potem był długi lot nad oceanem. Podczas lotu nie spałam ani minuty: czytałam, oglądałam film i myślałam o tym, co powiem Irze.
 
+![Skrzydło samolotu nad oceanem. Fot. Anton Shakirov / Unsplash](https://images.unsplash.com/photo-1782221350129-2cb82e26cc0d?w=1400&q=80&fm=jpg&fit=max)
+
 Na lotnisku w Toronto nikt na mnie nie czekał. Wzięłam taksówkę i podjechałam pod jej dom. Zadzwoniłam do drzwi. Ira otworzyła, popatrzyła na mnie i… nic nie powiedziała. Przez pół minuty tylko stała z kubkiem w ręku. Potem krzyknęła tak głośno, że sąsiedzi wyszli na balkony. — Wariatko! Dlaczego mi nie powiedziałaś? — Bo chciałam zobaczyć twoją minę — odpowiedziałam.
 
 Pierwszy raz od pięciu lat piłyśmy kawę bez ekranu, przy jednym stole. Ira chciała wiedzieć wszystko. Opowiedziałam jej o naszym bloku: o trzecim piętrze bez windy, o pani Monice, która pracuje w szpitalu na nocne zmiany, i o panu Henryku, który wie wszystko o wszystkich. Opowiedziałam o plecach Tarasa: przez trzy dni nie chciał iść do lekarza, a teraz codziennie robi ćwiczenia na kręgosłup. Ira śmiała się, że w Kanadzie mężczyźni są tacy sami.
-
-![Blok z balkonami. Fot. Yuma Solar / Unsplash](https://images.unsplash.com/photo-1762958266438-5fbfffde5234?w=1400&q=80&fm=jpg&fit=max)
 
 Pokazałam jej zdjęcia z wizyty babci Hanny. Ira długo patrzyła na stary album. — Nasi dziadkowie mieli mniej niż my, ale wiedzieli, czego chcą — powiedziała. Przypomniałyśmy sobie naszą szkołę w Łucku: surową wychowawczynię, ściągi na matematyce i dzwonek, na który czekali wszyscy uczniowie.
 
@@ -229,7 +229,7 @@ Olena dzwoni do Tarasa z lotniska w Toronto. Posłuchaj rozmowy <b>dwa razy</b> 
 
 </div></aside>
 
-![Wieczorna rozmowa przez telefon. Fot. Emmanuel M / Unsplash](https://images.unsplash.com/photo-1783408354934-8b40f43077ce?w=1400&q=80&fm=jpg&fit=max)
+![Kobieta rozmawia przez telefon. Fot. Timur Repin / Unsplash](https://images.unsplash.com/photo-1555965435-f88618f05915?w=1400&q=80&fm=jpg&fit=max)
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-r1-powtorka/exam?blocks=e2">
 Słuchanie — jak na egzaminie

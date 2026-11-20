@@ -10,7 +10,7 @@ teacherOf: pl-b1-group-r3-powtorka
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📋</span><div class="lp-callout-body">
 
-<b>Курс «Польська B1», повторення R3 — блок 3 (лекції 13–16).</b> Нової граматики немає: наказовий спосіб (форми, <i>proszę +</i> інф., <i>niech</i>, вид у наказі й забороні) → модальні (<i>musieć, móc, umieć / potrafić, powinien (był)</i>; <i>trzeba, można, wolno, należy, warto</i> у 3 часах; <i>nie musisz / nie wolno</i>) → умовний спосіб (форми, <i>-by</i>, <i>jeśli / gdyby</i>, ввічливі прохання) → <i>żeby</i> (мета, прохання, <i>że / żeby</i>). Нових слів 5 (група «Zbiórka w bloku»). Формат: індивідуально, 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-r3-powtorka">R3 · Powtórka: prośby, rady, warunki</a><br>Обкладинка: Yosuke Ota / Unsplash — https://images.unsplash.com/photo-1714999497019-937047a5b5f4<br>Фото в тексті: Kelly Sikkema / Unsplash, Joshua Rawson-Harris / Unsplash. Слухання e2 озвучено (ElevenLabs, ≈55 с): аудіо — на сторінці Notion «TEACHER · R3» https://app.notion.com/p/41c96e03c7c881a59461e2ff3c8a62a8, вмикай двічі.
+<b>Курс «Польська B1», повторення R3 — блок 3 (лекції 13–16).</b> Нової граматики немає: наказовий спосіб (форми, <i>proszę +</i> інф., <i>niech</i>, вид у наказі й забороні) → модальні (<i>musieć, móc, umieć / potrafić, powinien (był)</i>; <i>trzeba, można, wolno, należy, warto</i> у 3 часах; <i>nie musisz / nie wolno</i>) → умовний спосіб (форми, <i>-by</i>, <i>jeśli / gdyby</i>, ввічливі прохання) → <i>żeby</i> (мета, прохання, <i>że / żeby</i>). Нових слів 5 (група «Zbiórka w bloku»). Формат: індивідуально, 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-r3-powtorka">R3 · Powtórka: prośby, rady, warunki</a><br>Обкладинка: Madeline Bowen / Unsplash — https://images.unsplash.com/photo-1594004844563-536a03a6e532<br>Фото в тексті: Cabri Caldwell / Unsplash, m c / Unsplash. Слухання e2 озвучено (ElevenLabs, ≈55 с): аудіо — на сторінці Notion «TEACHER · R3» https://app.notion.com/p/41c96e03c7c881a59461e2ff3c8a62a8, вмикай двічі.
 
 </div></aside>
 
@@ -128,4 +128,4 @@ Anna z mieszkania nr 12
 
 ## 🖼️ Фото
 
-Обкладинка: Yosuke Ota / Unsplash («Mężczyzna biegnie z psem nad jeziorem»). Фото в тексті: Kelly Sikkema / Unsplash («Żółte karteczki przyklejone do ściany»), Joshua Rawson-Harris / Unsplash («Kobieta robi zakupy w supermarkecie»).
+Обкладинка: Madeline Bowen / Unsplash («person holding brown and white short coated dog»). Фото в тексті: Cabri Caldwell / Unsplash («Dwie osoby układają jedzenie w podpisanych koszach»), m c / Unsplash («Kobieta w małym sklepie zoologicznym»).

@@ -5,7 +5,7 @@ level: B1
 number: 12.5
 module: pl-b1-group
 moduleTitle: Польська B1
-cover: https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=1600&h=900&fit=crop&q=80&fm=jpg
+cover: https://images.unsplash.com/photo-1758525862263-af89b090fb56?w=1600&h=900&fit=crop&q=80&fm=jpg
 ---
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🎯</span><div class="lp-callout-body">
@@ -42,13 +42,13 @@ Pizzę zamówili sami. Każdy dał dychę, a Kacper dorzucił drobne. — Sześ�
 
 W czwartek babcia Hanna przysłała nam dwa słoiki pierogów. Myślałam, że nikt ich nie zje, ale po pizzy dwóch chłopaków poprosiło o dokładkę. — Proszę pani, te pierogi smakują mi bardziej niż pizza — powiedział Kacper. Zuzie najbardziej smakowały ruskie, a Szymonowi — z kapustą i grzybami.
 
-![Pierogi z cebulką na talerzu. Fot. Zoshua Colah / Unsplash](https://images.unsplash.com/photo-1788603377815-fd9f7ed95fd7?w=1400&q=80&fm=jpg&fit=max)
+![Surowe pierogi na drewnianych deskach. Fot. Jakub Żerdzicki / Unsplash](https://images.unsplash.com/photo-1764831257619-24aa3930e02d?w=1400&q=80&fm=jpg&fit=max)
 
 Potem zaczęła się poważna rozmowa. W maju klasa jedzie na trzydniową wycieczkę i to uczniowie wybierają miejsce. Na liście są trzy trasy. Pierwsza to Kraków i Wieliczka — kopalnia soli, w której są kaplice wykute w soli. Ta trasa najbardziej podoba się nauczycielom. Druga to Gdańsk: tam jest morze, a nocleg w schronisku młodzieżowym jest najtańszy. Trzecia to Bieszczady — góry, w których telefon często nie ma zasięgu. — I właśnie dlatego chcę tam jechać! — zawołał Szymon. — Tam nikt nie będzie nam wysyłał wiadomości od rana do wieczora.
 
 Dziewczyny zrobiły na kartce ranking. Na pierwszym miejscu wygrał Gdańsk, bo jest tańszy od Krakowa i bardziej malowniczy. Ale Maksym i Kacper woleli Bieszczady. — Im mniej internetu, tym więcej rozmów — powiedział mój syn. Nie wierzyłam własnym uszom.
 
-![Grupa przyjaciół idzie z plecakami pod górę. Fot. Anthony Da Cruz / Unsplash](https://images.unsplash.com/photo-1503789597747-41de608aca69?w=1400&q=80&fm=jpg&fit=max)
+![Trzy osoby na górskim szlaku. Fot. Lital Levy / Unsplash](https://images.unsplash.com/photo-1566353820666-883ec100f41b?w=1400&q=80&fm=jpg&fit=max)
 
 Kiedy wszyscy wyszli, w salonie było cicho jak w bibliotece. Taras powiedział, że brakuje mu takich wieczorów z czasów, kiedy sam był nastolatkiem. Mnie chciało się już tylko spać. Ale cieszę się, że Maksym ma takich przyjaciół — i że pierogi babci znowu wygrały ranking.
 

@@ -10,7 +10,7 @@ teacherOf: pl-b1-group-r2-powtorka
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📋</span><div class="lp-callout-body">
 
-<b>Курс «Польська B1», повторення R2 — блок 2 (лекції 9–12).</b> Нової граматики немає: ступені порівняння й <i>niż / od / im…tym / coraz</i> → <i>który</i> в усіх відмінках і <i>gdzie / dokąd / co / kto</i> → чоловічо-особові та збірні числівники, <i>ilu / ile</i> → давальний (<i>smakuje mi, podoba mi się, chce mi się, brakuje mi</i>, порядок <i>mi / się</i>). Нових слів 4 (група «Piątkowy wieczór»). Формат: індивідуально, 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-r2-powtorka">R2 · Powtórka: opisać, porównać, policzyć</a><br>Обкладинка: Priscilla Du Preez / Unsplash — https://images.unsplash.com/photo-1528605248644-14dd04022da1<br>Фото в тексті: Zoshua Colah / Unsplash, Anthony Da Cruz / Unsplash. Слухання e2 (4 діалоги у форматі державного іспиту, P2) озвучено (ElevenLabs, ≈50 с, з оголошеннями «Dialog pierwszy…»): аудіо — на сторінці Notion «TEACHER · R2» https://app.notion.com/p/41c96e03c7c881b09e9dd8e177d61da4, вмикай двічі.
+<b>Курс «Польська B1», повторення R2 — блок 2 (лекції 9–12).</b> Нової граматики немає: ступені порівняння й <i>niż / od / im…tym / coraz</i> → <i>który</i> в усіх відмінках і <i>gdzie / dokąd / co / kto</i> → чоловічо-особові та збірні числівники, <i>ilu / ile</i> → давальний (<i>smakuje mi, podoba mi się, chce mi się, brakuje mi</i>, порядок <i>mi / się</i>). Нових слів 4 (група «Piątkowy wieczór»). Формат: індивідуально, 2 × 90 хв (або 3 × 60). Сторінка учня: <a href="/learn/pl-b1-group-r2-powtorka">R2 · Powtórka: opisać, porównać, policzyć</a><br>Обкладинка: Vitaly Gariev / Unsplash — https://images.unsplash.com/photo-1758525862263-af89b090fb56<br>Фото в тексті: Jakub Żerdzicki / Unsplash, Lital Levy / Unsplash. Слухання e2 (4 діалоги у форматі державного іспиту, P2) озвучено (ElevenLabs, ≈50 с, з оголошеннями «Dialog pierwszy…»): аудіо — на сторінці Notion «TEACHER · R2» https://app.notion.com/p/41c96e03c7c881b09e9dd8e177d61da4, вмикай двічі.
 
 </div></aside>
 
@@ -128,4 +128,4 @@ A wam co się podoba najbardziej w waszym mieście?
 
 ## 🖼️ Фото
 
-Обкладинка: Priscilla Du Preez / Unsplash. Фото в тексті: Zoshua Colah / Unsplash («Pierogi z cebulką na talerzu»), Anthony Da Cruz / Unsplash («Grupa przyjaciół idzie z plecakami pod górę»).
+Обкладинка: Vitaly Gariev / Unsplash («Two smiling young women watching television with popcorn»). Фото в тексті: Jakub Żerdzicki / Unsplash («Surowe pierogi na drewnianych deskach»), Lital Levy / Unsplash («Trzy osoby na górskim szlaku»).
