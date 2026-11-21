@@ -5,7 +5,7 @@ import '@/components/lesson/lesson.css';
 import Link from 'next/link';
 import { useT } from '@/i18n/client';
 import type { BookPage } from '@/lib/pages/pages';
-import { SheetBody } from '@/components/lesson/LessonBlocks';
+import { LessonPager } from '@/components/lesson/LessonPager';
 import { isLessonPath, lessonSlugOf, pickStudent, type ClassMsg, type Presence } from '@/lib/live/protocol';
 import { useLiveChannel } from './useLiveChannel';
 import { MarkLessonDone } from './MarkLessonDone';
@@ -29,6 +29,10 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
   const [view, setView] = useState<number | null>(null);
   /** лічильник перемонтування вікон вправ: нова вкладка учня, «Оновити відповіді» */
   const [gen, setGen] = useState(0);
+  /** лічильник перемонтування блокнота: зовнішнє гортання (список, «До учня», учень перейшов) */
+  const [pk, setPk] = useState(0);
+  const viewRef = useRef<number | null>(null);
+  viewRef.current = view;
   const stageRef = useRef<HTMLDivElement>(null);
   const tabRef = useRef<string | undefined>(undefined);
   /** key вікна вправи → scope → стан, який прислав учень */
@@ -133,6 +137,15 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
   const studentPg = typeof student?.pg === 'number' && student.pg >= 0 && student.pg < pages.length ? student.pg : null;
   const cur = pages.length ? Math.min(view ?? studentPg ?? 0, pages.length - 1) : -1;
   const own = cur >= 0 ? pages[cur] : undefined;
+  const following = view === null;
+  const jump = (n: number | null) => {
+    setView(n);
+    setPk((k) => k + 1);
+  };
+  // учень перегорнув сторінку, а викладач його «слідкує» — блокнот іде за ним
+  useEffect(() => {
+    if (viewRef.current === null && studentPg !== null) setPk((k) => k + 1);
+  }, [studentPg]);
   const label = (p: BookPage) => (p.kind === 'text' || p.kind === 'goal' ? p.section : p.label);
 
   const status = link !== 'online'
@@ -188,15 +201,15 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
 
       {pages.length > 0 && inLesson && (
         <div className="ww-live-nav">
-          <button type="button" className="ww-btn ww-btn-sm ww-btn-ghost" onClick={() => setView(cur - 1)} disabled={cur <= 0} aria-label={t('Попередня сторінка')}>
-            ‹
-          </button>
           <select
             className="ww-live-select"
-            value={String(cur)}
-            onChange={(e) => setView(Number(e.target.value))}
+            value={following ? 's' : String(cur)}
+            onChange={(e) => jump(e.target.value === 's' ? null : Number(e.target.value))}
             aria-label={t('Сторінка лекції')}
           >
+            <option value="s">
+              👁 {t('Екран учня наживо')} · {studentPg !== null ? `${studentPg + 1}/${pages.length}` : '—'}
+            </option>
             {groups.map((g) => (
               <optgroup key={`${g.title}-${g.items[0]}`} label={g.title}>
                 {g.items.map((i) => (
@@ -208,23 +221,13 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
               </optgroup>
             ))}
           </select>
-          <button
-            type="button"
-            className="ww-btn ww-btn-sm ww-btn-ghost"
-            onClick={() => setView(cur + 1)}
-            disabled={cur >= pages.length - 1}
-            aria-label={t('Наступна сторінка')}
-          >
-            ›
-          </button>
           {studentPg !== null && (
-            <button type="button" className="ww-btn ww-btn-sm ww-btn-accent" onClick={() => setView(studentPg)} disabled={cur === studentPg}>
-              👁 {t('До учня · стор. {n}', { n: studentPg + 1 })}
+            <button type="button" className="ww-btn ww-btn-sm ww-btn-accent" onClick={() => jump(null)} disabled={following}>
+              👁 {t('До учня')}
             </button>
           )}
           <span className="ww-live-hint">
-            {t('Гортай лекцію сам — учень лишається, де був. У вправах видно, що він обирає й вписує.')}
-            {studentPg !== null ? ` ${t('Учень зараз на сторінці {n}.', { n: studentPg + 1 })}` : ''}
+            {t('Гортай і клікай «Далі» чи список сторінок у кадрі — учень лишається, де був.')}
           </span>
         </div>
       )}
@@ -234,11 +237,16 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
         {own && inLesson && (
           <div ref={stageRef} className="ww-live-own" style={{ height: '80vh' }}>
             <div className="lp-root">
-              <div className="lp-book">
-                <section key={`${own.key}-${gen}`} className="lp-sheet is-current" data-kind={own.kind}>
-                  <SheetBody page={own} index={cur} total={pages.length} watch />
-                </section>
-              </div>
+              <LessonPager
+                key={`${gen}-${pk}-${lecturePath}`}
+                slug={slug ?? ''}
+                pages={pages}
+                initial={cur}
+                hasHomework={false}
+                doneHref={null}
+                watch
+                onPage={(i) => setView(i)}
+              />
             </div>
           </div>
         )}

@@ -23,7 +23,13 @@ export function LessonPager({
   hasHomework,
   base,
   doneHref = '/learn',
+  watch = false,
+  onPage,
 }: {
+  /** режим «Дивитися учня»: вправи лише показують відповіді учня; відвідані/URL/маячок не чіпаємо */
+  watch?: boolean;
+  /** викликається, коли сторінку перегорнули в самому блокноті */
+  onPage?: (i: number) => void;
   slug: string;
   /** адреса лекції: /learn/<slug> або публічне /s/<токен> */
   base?: string;
@@ -53,8 +59,9 @@ export function LessonPager({
 
   // «Дивитися учня»: маячок (LiveBeacon) повідомляє викладачеві, на якій сторінці учень
   useEffect(() => {
+    if (watch) return;
     window.dispatchEvent(new CustomEvent('ww:lesson-page', { detail: idx }));
-  }, [idx]);
+  }, [idx, watch]);
 
   const go = useCallback(
     (n: number) => {
@@ -62,6 +69,8 @@ export function LessonPager({
       setDir(n > idx ? 'next' : 'prev');
       setIdx(n);
       setListOpen(false);
+      onPage?.(n);
+      if (watch) return;
       setVisited((v) => {
         const next = new Set(v).add(n);
         try {
@@ -88,7 +97,7 @@ export function LessonPager({
         if (top < sticky) window.scrollTo({ top: window.scrollY + top - sticky, behavior: 'auto' });
       }
     },
-    [idx, pages.length, storeKey]
+    [idx, pages.length, storeKey, watch, onPage]
   );
 
   // ← → перегортають, якщо фокус не в полі вводу
@@ -147,7 +156,7 @@ export function LessonPager({
             className={`lp-sheet is-current${dir ? ` enter-${dir}` : ''}`}
             data-kind={page.kind}
           >
-            <SheetBody page={page} index={idx} total={pages.length} />
+            <SheetBody page={page} index={idx} total={pages.length} watch={watch} />
           </section>
         </div>
 
