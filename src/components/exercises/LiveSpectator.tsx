@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, type CSSProperties, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react';
 import { hasLiveState, isSpectator, setLiveState } from '@/lib/embed-progress';
 import { liveKey } from '@/lib/live/protocol';
 import { useT } from '@/i18n/client';
@@ -21,6 +21,7 @@ export function LiveSpectator({ children }: { children: ReactNode }) {
   const [blocked, setBlocked] = useState(false);
   const [has, setHas] = useState(false);
   const [gen, setGen] = useState(0);
+  const boxRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!isSpectator()) return;
@@ -34,9 +35,17 @@ export function LiveSpectator({ children }: { children: ReactNode }) {
       timer = setTimeout(() => {
         timer = null;
         const y = window.scrollY;
+        // на час перемонтування тримаємо висоту: інакше сторінка на мить «схлопується» й екран смикається
+        const box = boxRef.current;
+        if (box) box.style.minHeight = `${box.offsetHeight}px`;
         setHas(hasLiveState());
         setGen((g) => g + 1);
-        requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, y)));
+        requestAnimationFrame(() =>
+          requestAnimationFrame(() => {
+            window.scrollTo(0, y);
+            if (box) box.style.minHeight = '';
+          })
+        );
       }, 250);
     };
 
@@ -76,7 +85,9 @@ export function LiveSpectator({ children }: { children: ReactNode }) {
       <p style={note}>
         👁 {has ? t('Відповіді учня · наживо') : t('Учень ще нічого не вписав')}
       </p>
-      <div key={gen}>{children}</div>
+      <div ref={boxRef}>
+        <div key={gen}>{children}</div>
+      </div>
     </>
   );
 }
