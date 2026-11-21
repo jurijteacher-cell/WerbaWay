@@ -34,8 +34,19 @@ function slim(p: any) {
 }
 
 export async function GET(req: NextRequest) {
-  const k = key();
-  if (!k) return NextResponse.json({ error: 'UNSPLASH key is not configured' }, { status: 503 });
+  const raw = key();
+  if (!raw) return NextResponse.json({ error: 'UNSPLASH key is not configured' }, { status: 503 });
+  // значення могли вставити як «Client-ID …», у лапках або з назвою — беремо сам ключ
+  const k = raw.replace(/^["']|["']$/g, '').replace(/^Client-ID\s+/i, '').replace(/^[A-Z_]+\s*=\s*/i, '').trim();
+  if (req.nextUrl.searchParams.has('diag')) {
+    // форма ключа без самого ключа: чи схоже на Access Key (43 знаки, A–Z a–z 0–9 - _)
+    return NextResponse.json({
+      length: k.length,
+      digits_only: /^\d+$/.test(k),
+      access_key_shape: /^[A-Za-z0-9_-]{40,50}$/.test(k),
+      has_space: /\s/.test(k),
+    });
+  }
   const sp = req.nextUrl.searchParams;
   const headers = { Authorization: `Client-ID ${k}`, 'Accept-Version': 'v1' };
   const api = 'https://api.unsplash.com';
