@@ -5,6 +5,7 @@ level: A2
 number: 75
 module: pl-a2
 moduleTitle: Польська A2
+notion: https://app.notion.com/p/41f96e03c7c88146b14ed8a7bb833972
 teacherOf: pl-a2-75-powtorka-podroze
 ---
 

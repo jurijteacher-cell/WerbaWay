@@ -5,6 +5,7 @@ level: A2
 number: 76
 module: pl-a2
 moduleTitle: Польська A2
+notion: https://app.notion.com/p/41f96e03c7c881abb828c5bbebe24cfe
 teacherOf: pl-a2-76-kontrolna-podroze
 ---
 

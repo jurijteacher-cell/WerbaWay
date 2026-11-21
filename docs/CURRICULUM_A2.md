@@ -1,10 +1,10 @@
-# Werba Way — курс A2 (v1.8, 2026-11-19)
+# Werba Way — курс A2 (v1.9, 2026-11-21)
 
 Модуль: `pl-a2` · формат: **індивідуально, 60 хв** на урок (шаблон `light-60 A2`, нижче) · id нового уроку: `pl-a2-{n}-{slug}`, `n` наскрізний від 47 (продовження A1: уроки 1–46)
 Запит у новому чаті: «Урок 2.3» (або «Урок 58»).
 Теги `grammar_point` — лише з `docs/GRAMMAR_REGISTRY.md`. Власного реєстру ця карта більше не тримає.
 
-**Готово на 2026-11-19: 26 уроків** — 47–72 (+ RU-версія 70). M2 і M3 закрито, у M4 готові 70–72. Залишилось 16: 73–88.
+**Готово на 2026-11-21: 30 уроків** — 47–76 (+ RU-версія 70). M2, M3 і M4 закрито. Залишилось 12: 77–88.
 
 **v1.8 (2026-11-19)** — готові 68 (*Powtórka: ludzie i zdrowie*: e-mail мами пані Агнешці, прощання на автовокзалі), 69 (*Kontrolna: ludzie i zdrowie*: мама вже у Львові, Tomek хоче зелений шарф) і 72 (*Rezerwacja: ile osób, ile nocy*: множина у відмінках, ♻️ `pl-preg-05/06/07`). Сюжет M4 для 73: wyjazd integracyjny до Закопаного 14–16 березня, Pensjonat „Pod Jodłami” (вигаданий), 9 осіб, 3 двомісні + 1 тримісний, 2142 zł зі знижкою 10 %, паркінг за домом, тварин не можна (пес пана Пйотра лишається вдома); їдуть потягом. Аудіо e2 для 68, 69, 72 — 20.11.
 
@@ -138,10 +138,10 @@ Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 | 70 | 4.1 | ✅ | 05 · Szukam mieszkania! Dom, pokoje i okolica | `pl-a2-mow-05-mieszkanie` (+ версія RU) | `przyimki-kierunku` (*gdzie / dokąd*, *obok, nad, w*) | `miejscownik-pelny`, `przymiotnik-przypadki` | житло, район |
 | 71 | 4.2 | ✅ | 06 · Muszę wysłać paczkę! Poczta, bank i naprawy | `pl-a2-mow-06-uslugi` | `warunkowy-prosby` (ввічливе прохання) | `czas-przeszly`, `przyimki-kierunku` | пошта, банк, сервіс |
 | 72 | 4.3 | ✅ | Rezerwacja: ile osób, ile nocy | `pl-a2-72-rezerwacja-ile-osob-ile-nocy` (2026-11-19); граматика множини з `pl-preg-05`, `-06`, `-07` (місцевий, орудний, родовий множини) | `mnoga-przypadki` | `liczba-mnoga-mianownik`, `liczebnik-rzeczownik`, `przyimki-kierunku` | готель, квитки, бронювання |
-| 73 | 4.4 | 🆕 | Przyjechał, wyszedł | — | `isc-jechac-przedrostki` | `przyimki-kierunku`, `aspekt-przeszly` | поїзд до Zakopanego |
-| 74 | 4.5 | 🆕 | Miejsce, które lubię | — | `ktory-podstawy` | `miejscownik-pelny`, `mnoga-przypadki` | місто, пам'ятки |
-| 75 | 4.6 | 🆕 | Powtórka: podróże | — | — | теги M4 | — |
-| 76 | 4.7 | 🆕 | Kontrolna: podróże | — | — | теги M4 | — |
+| 73 | 4.4 | ✅ | Przyjechał, wyszedł | `pl-a2-73-przyjechal-wyszedl` (2026-11-21) | `isc-jechac-przedrostki` | `przyimki-kierunku`, `aspekt-przeszly` | поїзд до Zakopanego |
+| 74 | 4.5 | ✅ | Miejsce, które lubię | `pl-a2-74-miejsce-ktore-lubie` (2026-11-21) | `ktory-podstawy` | `miejscownik-pelny`, `mnoga-przypadki` | місто, пам'ятки |
+| 75 | 4.6 | ✅ | Powtórka: podróże | `pl-a2-75-powtorka-podroze` (2026-11-21) | — | теги M4 | — |
+| 76 | 4.7 | ✅ | Kontrolna: podróże | `pl-a2-76-kontrolna-podroze` (2026-11-21) | — | теги M4 | — |
 
 ### M5 · Ludzie i opinie (77–83)
 

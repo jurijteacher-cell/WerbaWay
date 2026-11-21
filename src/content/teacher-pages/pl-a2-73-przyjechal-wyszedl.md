@@ -5,6 +5,7 @@ level: A2
 number: 73
 module: pl-a2
 moduleTitle: Польська A2
+notion: https://app.notion.com/p/41f96e03c7c88171b76ad1ca24aa18b6
 teacherOf: pl-a2-73-przyjechal-wyszedl
 ---
 
