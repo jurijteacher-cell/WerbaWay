@@ -1,0 +1,128 @@
+{
+  "lesson_id": "pl-a2-77-dlaczego",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o e-mailu pana Piotra. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Firma przenosi się, bo stare biuro jest za małe.",
+          "answer": true,
+          "explanation": "…ponieważ nasze stare biuro jest za małe."
+        },
+        {
+          "id": "e1-2",
+          "statement": "W firmie pracuje teraz sześć osób.",
+          "answer": false,
+          "explanation": "…a teraz jest nas dwanaście."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Każdy może pracować z domu trzy dni w tygodniu.",
+          "answer": false,
+          "explanation": "…dwa dni w tygodniu z domu."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Od maja zespół zaczyna pracę o dziewiątej.",
+          "answer": true,
+          "explanation": "…zaczynamy o dziewiątej, a nie o ósmej."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Dni pracy z domu trzeba wybrać do piętnastego kwietnia.",
+          "answer": true,
+          "explanation": "Proszę wybrać dni do piętnastego kwietnia…"
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-77-dlaczego-e2-dialog.mp3",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: prawda czy fałsz?",
+      "instruction": "Usłyszysz rozmowę Kasi i Tomka dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Kasia cieszy się z nowego biura.",
+          "answer": true,
+          "explanation": "Bardzo się cieszę!"
+        },
+        {
+          "id": "e2-2",
+          "statement": "Tomek będzie chodził do pracy pieszo.",
+          "answer": false,
+          "explanation": "Pieszo będzie chodzić Kasia. Tomek będzie jechał z przesiadką."
+        },
+        {
+          "id": "e2-3",
+          "statement": "Tomek chce pracować z domu w poniedziałek i w piątek.",
+          "answer": true,
+          "explanation": "Myślę, że wybiorę poniedziałek i piątek."
+        },
+        {
+          "id": "e2-4",
+          "statement": "Kasia ma w domu biurko.",
+          "answer": false,
+          "explanation": "…w domu nie mam biurka."
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-77-dlaczego-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: a, b czy c?",
+      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Dlaczego Tomek się martwi?",
+          "options": [
+            "bo będzie jechał z przesiadką",
+            "bo biuro jest za małe",
+            "bo nie lubi pracy z domu"
+          ],
+          "answer": "bo będzie jechał z przesiadką",
+          "explanation": "A ja będę jechać z przesiadką. Dlatego trochę się martwię."
+        },
+        {
+          "id": "e3-2",
+          "question": "Dokąd Tomek często jeździ w piątek?",
+          "options": [
+            "do rodziców do Tarnowa",
+            "do Zakopanego",
+            "na narty"
+          ],
+          "answer": "do rodziców do Tarnowa",
+          "explanation": "…w piątek często jadę do rodziców do Tarnowa."
+        },
+        {
+          "id": "e3-3",
+          "question": "Za co płaci firma?",
+          "options": [
+            "za krzesło i lampę",
+            "za bilety na tramwaj",
+            "za biurko i komputer"
+          ],
+          "answer": "za krzesło i lampę",
+          "explanation": "Firma daje sto złotych na krzesło i lampę."
+        }
+      ]
+    }
+  ]
+}

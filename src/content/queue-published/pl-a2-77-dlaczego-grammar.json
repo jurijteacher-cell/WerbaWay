@@ -1,0 +1,383 @@
+{
+  "lesson_id": "pl-a2-77-dlaczego",
+  "exercise_type": "fill-in-blank",
+  "title": "Że, bo, ponieważ, dlatego, więc",
+  "instruction": "Pięć krótkich bloków. Na lekcji robimy bloki 1–3, bloki 4 i 5 — jeśli zostanie czas albo w domu.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "1. Połącz słowo z opisem",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "przeprowadzka",
+          "right": "zmiana miejsca biura albo mieszkania",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "praca zdalna",
+          "right": "praca z domu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "sala konferencyjna",
+          "right": "pokój na spotkania",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "dojeżdżać",
+          "right": "codziennie jeździć do pracy",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "zebranie",
+          "right": "spotkanie całego zespołu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "termin",
+          "right": "data, do kiedy coś trzeba zrobić",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "powód",
+          "right": "odpowiedź na pytanie „dlaczego?”",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "korek",
+          "right": "dużo samochodów, które stoją",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Przyczyna czy skutek?",
+      "instruction": "Wybierz spójnik, który pasuje.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Przenosimy się, ___ stare biuro jest za małe.",
+          "answer": "bo",
+          "options": [
+            "bo",
+            "więc",
+            "że"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Przyczyna (dlaczego?) → bo."
+        },
+        {
+          "id": "g2-2",
+          "text": "Stare biuro jest za małe, ___ przenosimy się.",
+          "answer": "dlatego",
+          "options": [
+            "dlatego",
+            "bo",
+            "ponieważ"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Skutek → dlatego."
+        },
+        {
+          "id": "g2-3",
+          "text": "Wiem, ___ to daleko od twojego domu.",
+          "answer": "że",
+          "options": [
+            "że",
+            "bo",
+            "więc"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Po wiem, myślę, mówi → że."
+        },
+        {
+          "id": "g2-4",
+          "text": "___ wiele osób dojeżdża z daleka, zaczynamy o dziewiątej.",
+          "answer": "Ponieważ",
+          "options": [
+            "Ponieważ",
+            "Bo",
+            "Więc"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Na początku zdania — ponieważ, nie bo."
+        },
+        {
+          "id": "g2-5",
+          "text": "Mieszkam blisko, ___ chodzę do pracy pieszo.",
+          "answer": "więc",
+          "options": [
+            "więc",
+            "bo",
+            "ponieważ"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Skutek → więc."
+        },
+        {
+          "id": "g2-6",
+          "text": "Myślę, ___ to dobra zmiana.",
+          "answer": "że",
+          "options": [
+            "że",
+            "co",
+            "bo"
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Myślę, że… — nie „co”."
+        },
+        {
+          "id": "g2-7",
+          "text": "Nie przyszedłem na zebranie, ___ byłem chory.",
+          "answer": "bo",
+          "options": [
+            "bo",
+            "dlatego",
+            "więc"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Przyczyna → bo."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Wpisz spójnik",
+      "instruction": "Wpisz że, bo, ponieważ, dlatego albo więc.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Tomek się martwi, ___ będzie jechał z przesiadką.",
+          "answer": "bo",
+          "accept": [
+            "ponieważ"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Przyczyna: bo / ponieważ."
+        },
+        {
+          "id": "g3-2",
+          "text": "Kasia mieszka blisko, ___ będzie chodzić pieszo.",
+          "answer": "więc",
+          "accept": [
+            "dlatego"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Skutek: więc / dlatego."
+        },
+        {
+          "id": "g3-3",
+          "text": "Cieszę się, ___ będziemy mieć dużą kuchnię.",
+          "answer": "że",
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Cieszę się, że…"
+        },
+        {
+          "id": "g3-4",
+          "text": "— Dlaczego zostajesz w biurze? — ___ w domu nie mam biurka.",
+          "answer": "Bo",
+          "accept": [
+            "Ponieważ"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Odpowiedź na „dlaczego?” w rozmowie: Bo…"
+        },
+        {
+          "id": "g3-5",
+          "text": "Pan Piotr napisał, ___ zebranie jest w piątek.",
+          "answer": "że",
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Napisał, że…"
+        },
+        {
+          "id": "g3-6",
+          "text": "Jest korek, ___ spóźnię się dziesięć minut.",
+          "answer": "więc",
+          "accept": [
+            "dlatego"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Skutek: więc / dlatego."
+        },
+        {
+          "id": "g3-7",
+          "text": "___ pada deszcz, jedziemy tramwajem.",
+          "answer": "Ponieważ",
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Na początku zdania — ponieważ."
+        },
+        {
+          "id": "g3-8",
+          "text": "Nie wiedziałam, ___ firma za to płaci.",
+          "answer": "że",
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Nie wiedziałam, że…"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Ta sama myśl — dwa razy",
+      "instruction": "Wybierz spójnik. Uwaga na kolejność: przyczyna — skutek.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Spóźniłam się, ___ autobus nie przyjechał.",
+          "answer": "ponieważ",
+          "options": [
+            "ponieważ",
+            "dlatego",
+            "więc"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Najpierw skutek, potem przyczyna → ponieważ."
+        },
+        {
+          "id": "g4-2",
+          "text": "Autobus nie przyjechał, ___ spóźniłam się.",
+          "answer": "więc",
+          "options": [
+            "więc",
+            "ponieważ",
+            "bo"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Najpierw przyczyna, potem skutek → więc."
+        },
+        {
+          "id": "g4-3",
+          "text": "Lubię nowe biuro, ___ że jest blisko domu.",
+          "answer": "dlatego",
+          "options": [
+            "dlatego",
+            "bo",
+            "więc"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Dlatego że = bo."
+        },
+        {
+          "id": "g4-4",
+          "text": "Pracuję z domu, ___ mam małe dziecko.",
+          "answer": "bo",
+          "options": [
+            "bo",
+            "więc",
+            "dlatego"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Przyczyna → bo."
+        },
+        {
+          "id": "g4-5",
+          "text": "Mam małe dziecko, ___ pracuję z domu.",
+          "answer": "dlatego",
+          "options": [
+            "dlatego",
+            "bo",
+            "ponieważ"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Skutek → dlatego."
+        },
+        {
+          "id": "g4-6",
+          "text": "Tomek mówi, ___ nowe biuro jest daleko.",
+          "answer": "że",
+          "options": [
+            "że",
+            "czy",
+            "bo"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Mówi, że…"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "5. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Myślę, co to dobry pomysł.",
+          "answer": "Myślę, że to dobry pomysł.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Myślę, że… — nie „co”."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Bo jestem chory, nie przyjdę.",
+          "answer": "Ponieważ jestem chory, nie przyjdę.",
+          "accept": [
+            "Nie przyjdę, bo jestem chory.",
+            "Nie przyjdę, ponieważ jestem chory."
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Na początku zdania — ponieważ."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Jestem zmęczony, bo idę spać.",
+          "answer": "Jestem zmęczony, więc idę spać.",
+          "accept": [
+            "Jestem zmęczony, dlatego idę spać."
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "To skutek → więc / dlatego."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Więc mieszkam blisko, chodzę pieszo.",
+          "answer": "Mieszkam blisko, więc chodzę pieszo.",
+          "accept": [
+            "Mieszkam blisko, dlatego chodzę pieszo."
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Więc stoi w środku zdania, przed skutkiem."
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Dlatego jest korek, spóźnię się.",
+          "answer": "Jest korek, dlatego się spóźnię.",
+          "accept": [
+            "Jest korek, więc się spóźnię.",
+            "Jest korek, dlatego spóźnię się.",
+            "Jest korek, więc spóźnię się."
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Dlatego stoi przed skutkiem."
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Pan Piotr powiedział, co zebranie jest o trzeciej.",
+          "answer": "Pan Piotr powiedział, że zebranie jest o trzeciej.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Powiedział, że… — nie „co”."
+        }
+      ]
+    }
+  ]
+}
