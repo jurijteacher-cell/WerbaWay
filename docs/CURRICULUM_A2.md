@@ -150,7 +150,7 @@ Pan Adam, Kasia, Marek, pani Ewa, Taras — як у A1.
 | 77 | 5.1 | 🆕 | Dlaczego? | — | `zdania-zlozone-ze` | `zdania-czasowe` | причини змін на роботі |
 | 78 | 5.2 | 🆕 | Żeby… | — | `zdania-celu-zeby` | `zdania-zlozone-ze`, `modalne-obowiazek` | прохання про послугу |
 | 79 | 5.3 | 🆕 | Powiedział, że… | — | `mowa-zalezna-podstawy` | `zdania-zlozone-ze`, `aspekt-przeszly` | переказ розмови з pan Piotrem |
-| 80 | 5.4 | 🆕 | Ten, tamten, ktoś | — | `zaimki-wskazujace` | `zaimki-osobowe-przypadki`, `ktory-podstawy` | речі й люди в офісі |
+| 80 | 5.4 | ✅ | Ten, tamten, ktoś | — | `zaimki-wskazujace` | `zaimki-osobowe-przypadki`, `ktory-podstawy` | речі й люди в офісі |
 | 81 | 5.5 | 🆕 | **Kto starszy, kto lepszy** | — | `stopniowanie`, `porownania` | `przymiotnik-przypadki`, `mnoga-przypadki` | люди, діти, порівняння думок |
 | 82 | 5.6 | 🆕 | Powtórka: ludzie i opinie | — | — | теги M5 | — |
 | 83 | 5.7 | 🆕 | Kontrolna: ludzie i opinie | — | — | теги M5 | — |
