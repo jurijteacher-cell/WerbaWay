@@ -40,10 +40,10 @@ export const PRIVACY: Record<Locale, LegalDoc> = {
       },
       {
         id: 'screen',
-        title: 'Перегляд екрана викладачем',
+        title: 'Перегляд відповідей викладачем',
         body: [
-          'Коли викладач натискає «Дивитися», а ви саме в лекції чи домашньому завданні, він бачить вашу сторінку наживо: те, що на ній показано, і те, що ви вводите у вправи. Поля паролів приховано.',
-          'Поки викладач дивиться, у вас унизу екрана є позначка «Викладач бачить твій екран». Нічого не записується й не зберігається, а поза лекціями перегляд не працює.',
+          'Коли викладач натискає «Дивитися», а ви саме в лекції чи домашньому завданні, він бачить у вправах те, що ви обираєте й вводите. Ваш екран йому не передається: лекцією він гортає сам.',
+          'Поки викладач дивиться, у вас унизу екрана є позначка «Викладач бачить твої відповіді». Нічого не записується й не зберігається, а поза лекціями перегляд не працює.',
         ],
       },
       {
@@ -53,7 +53,7 @@ export const PRIVACY: Record<Locale, LegalDoc> = {
           {
             list: [
               'Надати сайт і курс — акаунт, вправи, прогрес, перевірку завдань, службові листи (підтвердження пошти, новий пароль, запрошення). Підстава — виконання договору, тобто умов користування (ст. 6(1)(b) GDPR).',
-              'Перегляд екрана, повідомлення про помилки й технічні журнали. Підстава — законний інтерес: якісне навчання та стабільна й безпечна робота сайту (ст. 6(1)(f) GDPR).',
+              'Перегляд відповідей у вправах, повідомлення про помилки й технічні журнали. Підстава — законний інтерес: якісне навчання та стабільна й безпечна робота сайту (ст. 6(1)(f) GDPR).',
             ],
           },
           'Ми не продаємо даних, не показуємо реклами, не будуємо маркетингових профілів і не ухвалюємо щодо вас автоматизованих рішень.',
@@ -162,10 +162,10 @@ export const PRIVACY: Record<Locale, LegalDoc> = {
       },
       {
         id: 'screen',
-        title: 'Просмотр экрана преподавателем',
+        title: 'Просмотр ответов преподавателем',
         body: [
-          'Когда преподаватель нажимает «Смотреть», а вы находитесь в лекции или домашнем задании, он видит вашу страницу вживую: то, что на ней показано, и то, что вы вводите в упражнения. Поля паролей скрыты.',
-          'Пока преподаватель смотрит, внизу экрана у вас есть пометка «Преподаватель видит твой экран». Ничего не записывается и не сохраняется, а вне лекций просмотр не работает.',
+          'Когда преподаватель нажимает «Смотреть», а вы находитесь в лекции или домашнем задании, он видит в упражнениях то, что вы выбираете и вводите. Ваш экран ему не передаётся: лекцию он листает сам.',
+          'Пока преподаватель смотрит, внизу экрана у вас есть пометка «Преподаватель видит твои ответы». Ничего не записывается и не сохраняется, а вне лекций просмотр не работает.',
         ],
       },
       {
@@ -175,7 +175,7 @@ export const PRIVACY: Record<Locale, LegalDoc> = {
           {
             list: [
               'Предоставить сайт и курс — аккаунт, упражнения, прогресс, проверку заданий, служебные письма (подтверждение почты, новый пароль, приглашение). Основание — исполнение договора, то есть условий использования (ст. 6(1)(b) GDPR).',
-              'Просмотр экрана, сообщения об ошибках и технические журналы. Основание — законный интерес: качественное обучение и стабильная, безопасная работа сайта (ст. 6(1)(f) GDPR).',
+              'Просмотр ответов в упражнениях, сообщения об ошибках и технические журналы. Основание — законный интерес: качественное обучение и стабильная, безопасная работа сайта (ст. 6(1)(f) GDPR).',
             ],
           },
           'Мы не продаём данные, не показываем рекламу, не строим маркетинговых профилей и не принимаем в отношении вас автоматизированных решений.',
@@ -284,10 +284,10 @@ export const PRIVACY: Record<Locale, LegalDoc> = {
       },
       {
         id: 'screen',
-        title: 'Podgląd ekranu przez nauczyciela',
+        title: 'Podgląd odpowiedzi przez nauczyciela',
         body: [
-          'Gdy nauczyciel kliknie „Podgląd”, a Ty jesteś w lekcji lub pracy domowej, widzi Twoją stronę na żywo: to, co jest na niej wyświetlane, i to, co wpisujesz w ćwiczeniach. Pola haseł są ukryte.',
-          'Dopóki nauczyciel patrzy, na dole ekranu widzisz oznaczenie „Nauczyciel widzi Twój ekran”. Nic nie jest nagrywane ani zapisywane, a poza lekcjami podgląd nie działa.',
+          'Gdy nauczyciel kliknie „Podgląd”, a Ty jesteś w lekcji lub pracy domowej, widzi w ćwiczeniach to, co wybierasz i wpisujesz. Twój ekran nie jest mu przekazywany: lekcję przewija sam.',
+          'Dopóki nauczyciel patrzy, na dole ekranu widzisz oznaczenie „Nauczyciel widzi Twoje odpowiedzi”. Nic nie jest nagrywane ani zapisywane, a poza lekcjami podgląd nie działa.',
         ],
       },
       {
@@ -297,7 +297,7 @@ export const PRIVACY: Record<Locale, LegalDoc> = {
           {
             list: [
               'Udostępnienie serwisu i kursu — konto, ćwiczenia, postępy, sprawdzanie zadań, wiadomości systemowe (potwierdzenie adresu, nowe hasło, zaproszenie). Podstawa: wykonanie umowy, czyli regulaminu (art. 6 ust. 1 lit. b RODO).',
-              'Podgląd ekranu, zgłoszenia błędów i logi techniczne. Podstawa: prawnie uzasadniony interes — skuteczna nauka oraz stabilne i bezpieczne działanie serwisu (art. 6 ust. 1 lit. f RODO).',
+              'Podgląd odpowiedzi w ćwiczeniach, zgłoszenia błędów i logi techniczne. Podstawa: prawnie uzasadniony interes — skuteczna nauka oraz stabilne i bezpieczne działanie serwisu (art. 6 ust. 1 lit. f RODO).',
             ],
           },
           'Nie sprzedajemy danych, nie wyświetlamy reklam, nie tworzymy profili marketingowych i nie podejmujemy wobec Ciebie zautomatyzowanych decyzji.',
@@ -406,10 +406,10 @@ export const PRIVACY: Record<Locale, LegalDoc> = {
       },
       {
         id: 'screen',
-        title: 'Teacher screen view',
+        title: 'Teacher view of your answers',
         body: [
-          'When the teacher clicks “Watch” while you are in a lesson or homework, they see your page live: what is shown on it and what you type into exercises. Password fields are hidden.',
-          'While the teacher is watching, you see a “Your teacher can see your screen” badge at the bottom of the screen. Nothing is recorded or stored, and outside lessons screen view does not work.',
+          'When the teacher clicks “Watch” while you are in a lesson or homework, they see what you choose and type in the exercises. Your screen is not shared: they scroll the lesson themselves.',
+          'While the teacher is watching, you see a “Your teacher can see your answers” badge at the bottom of the screen. Nothing is recorded or stored, and outside lessons the view does not work.',
         ],
       },
       {
@@ -419,7 +419,7 @@ export const PRIVACY: Record<Locale, LegalDoc> = {
           {
             list: [
               'Providing the site and the course — account, exercises, progress, checking work, service emails (email confirmation, new password, invitation). Legal basis: performance of a contract, i.e. the terms of use (Art. 6(1)(b) GDPR).',
-              'Screen view, bug reports and technical logs. Legal basis: legitimate interest — effective teaching and a stable, secure website (Art. 6(1)(f) GDPR).',
+              'Answers view, bug reports and technical logs. Legal basis: legitimate interest — effective teaching and a stable, secure website (Art. 6(1)(f) GDPR).',
             ],
           },
           'We do not sell data, show ads, build marketing profiles or make automated decisions about you.',

@@ -58,7 +58,7 @@ export async function TopNav() {
 
   return (
     <>
-    {/* учень онлайн з будь-якої сторінки; коли викладач натисне «Дивитися» — у лекції йому видно екран учня */}
+    {/* учень онлайн з будь-якої сторінки; коли викладач натисне «Дивитися» — у лекції йому видно відповіді учня */}
     {!isTeacher && <LiveBeacon studentId={user.id} name={(profile?.full_name as string | null) ?? undefined} />}
     {/* до цього браузера вже заходив гість за посиланням — переносимо його лекції на цей акаунт */}
     {!isTeacher && !!cookies().get(VID_COOKIE)?.value && <GuestClaim />}

@@ -80,9 +80,9 @@ export const TERMS: Record<Locale, LegalDoc> = {
       },
       {
         id: 'screen',
-        title: 'Перегляд екрана',
+        title: 'Перегляд відповідей',
         body: [
-          'Під час лекції викладач може дивитися вашу сторінку наживо, щоб допомагати з вправами. Поки він дивиться, ви бачите про це позначку. Нічого не записується. Детальніше — у Політиці конфіденційності.',
+          'Під час лекції викладач може бачити наживо, що ви обираєте й вводите у вправах, щоб допомагати з ними. Екран вам не передається. Поки він дивиться, ви бачите про це позначку. Нічого не записується. Детальніше — у Політиці конфіденційності.',
         ],
       },
       {
@@ -194,9 +194,9 @@ export const TERMS: Record<Locale, LegalDoc> = {
       },
       {
         id: 'screen',
-        title: 'Просмотр экрана',
+        title: 'Просмотр ответов',
         body: [
-          'Во время лекции преподаватель может смотреть вашу страницу вживую, чтобы помогать с упражнениями. Пока он смотрит, вы видите об этом пометку. Ничего не записывается. Подробнее — в Политике конфиденциальности.',
+          'Во время лекции преподаватель может видеть вживую, что вы выбираете и вводите в упражнениях, чтобы помогать с ними. Экран ему не передаётся. Пока он смотрит, вы видите об этом пометку. Ничего не записывается. Подробнее — в Политике конфиденциальности.',
         ],
       },
       {
@@ -308,9 +308,9 @@ export const TERMS: Record<Locale, LegalDoc> = {
       },
       {
         id: 'screen',
-        title: 'Podgląd ekranu',
+        title: 'Podgląd odpowiedzi',
         body: [
-          'Podczas lekcji nauczyciel może oglądać Twoją stronę na żywo, aby pomagać w ćwiczeniach. Dopóki patrzy, widzisz o tym oznaczenie. Nic nie jest nagrywane. Więcej — w Polityce prywatności.',
+          'Podczas lekcji nauczyciel może widzieć na żywo, co wybierasz i wpisujesz w ćwiczeniach, aby w nich pomagać. Ekran nie jest przekazywany. Dopóki patrzy, widzisz o tym oznaczenie. Nic nie jest nagrywane. Więcej — w Polityce prywatności.',
         ],
       },
       {
@@ -422,9 +422,9 @@ export const TERMS: Record<Locale, LegalDoc> = {
       },
       {
         id: 'screen',
-        title: 'Screen view',
+        title: 'Answers view',
         body: [
-          'During a lesson your teacher may view your page live to help with exercises. While they watch, you see a badge saying so. Nothing is recorded. See the Privacy policy for details.',
+          'During a lesson your teacher may see live what you choose and type in exercises to help with them. Your screen is not shared. While they watch, you see a badge saying so. Nothing is recorded. See the Privacy policy for details.',
         ],
       },
       {

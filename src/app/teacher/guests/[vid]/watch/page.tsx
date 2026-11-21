@@ -31,10 +31,10 @@ export default async function WatchGuestPage({ params }: { params: { vid: string
         <Link href="/teacher/students" className="text-sm text-paper-muted hover:text-gold">
           {t("← Учні")}
         </Link>
-        <h1 className="font-display text-2xl text-paper">{t('Екран гостя: {name}', { name })}</h1>
+        <h1 className="font-display text-2xl text-paper">{t('Відповіді гостя: {name}', { name })}</h1>
         <p className="text-sm text-paper-muted">
           {guest.ua ? `${guest.ua} · ` : ''}
-          {t('Гість бачить позначку «Викладач бачить твій екран». Гортаєш і вибираєш вправу ти сам — у гостя нічого не змінюється.')}
+          {t('Гість бачить позначку «Викладач бачить твої відповіді». Ти бачиш, що він обирає й вписує у вправах; лекцію гортаєш сам — у гостя нічого не змінюється.')}
         </p>
       </div>
       <LiveWatch topic={guestTopic(params.vid)} name={name} />
