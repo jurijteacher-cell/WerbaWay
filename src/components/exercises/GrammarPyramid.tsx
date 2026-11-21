@@ -68,6 +68,10 @@ function tipFor(l: Level): TipKind {
       return 'true-false';
     case 'fill-in-blank':
       return l.items.some((it) => it.options?.length) ? 'pick' : 'type';
+    case 'cloze-text':
+      return l.items.every((it) => it.options?.length) ? 'pick' : 'type';
+    case 'ordering':
+      return 'order';
     default:
       return l.items.some((it) => it.answer_hint ?? it.answer) ? 'type-long' : 'write';
   }
@@ -445,7 +449,7 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
             </p>
           ) : null}
           {level.instruction_uk ? <p className="nb-instruction-uk" style={{ margin: '4px 0 0' }}>{level.instruction_uk}</p> : null}
-          {!levelDone && (!level.instruction || ['type', 'type-long', 'build'].includes(tipFor(level))) ? (
+          {!levelDone && (!level.instruction || ['type', 'type-long', 'build', 'order'].includes(tipFor(level))) ? (
             <TaskTip kind={tipFor(level)} />
           ) : null}
         </div>
@@ -713,6 +717,239 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
               </div>
             );
           })}
+
+        {/* ── cloze-text: суцільний текст, пропуски {id} прямо в ньому ─────────── */}
+        {level.task_type === 'cloze-text' && (() => {
+          const byId = new Map(level.items.map((it) => [String(it.id), it]));
+          const order = level.items.map((it) => String(it.id));
+          const usedOk = new Set(
+            level.items.filter((it) => feedback[key(it.id)] === true).map((it) => fillAnswers[key(it.id)] ?? '')
+          );
+          const gapEl = (id: string) => {
+            const item = byId.get(id);
+            if (!item) return <span key={`miss-${id}`}>{`{${id}}`}</span>;
+            const k = key(item.id);
+            const fb = feedback[k];
+            const expected = String(item.answer ?? '');
+            const value = fillAnswers[k] ?? '';
+            const n = order.indexOf(id) + 1;
+            const cls = `nb-blank nb-gap${fb === true ? ' ok' : ''}${fb === false ? ' no' : ''}`;
+            const check = (given = value) => applyCheck(k, given, expected, item.accept, item);
+            return (
+              <span key={k} className="nb-cloze-gap" data-item-id={String(item.id)} data-state={fb === true ? 'correct' : fb === false ? 'wrong' : 'pending'}>
+                <sup className="nb-cloze-n" aria-hidden>{fb === true ? '✓' : n}</sup>
+                {item.options?.length ? (
+                  <select
+                    className={cls}
+                    value={value}
+                    aria-label={`Luka ${n}`}
+                    data-k={k}
+                    data-role="answer-input"
+                    disabled={fb === true}
+                    onChange={(e) => {
+                      const v = e.target.value;
+                      setFillAnswers((a) => ({ ...a, [k]: v }));
+                      if (v) check(v);
+                    }}
+                  >
+                    <option value="">…</option>
+                    {item.options.map((o) => (
+                      <option key={o} value={o}>
+                        {o}
+                      </option>
+                    ))}
+                  </select>
+                ) : (
+                  <input
+                    className={cls}
+                    style={{ width: gapWidth(expected) }}
+                    value={value}
+                    aria-label={`Luka ${n}`}
+                    autoComplete="off"
+                    autoCapitalize="off"
+                    spellCheck={false}
+                    data-k={k}
+                    data-role="answer-input"
+                    enterKeyHint="next"
+                    readOnly={fb === true}
+                    onFocus={() => setFocusKey(k)}
+                    onBlur={() => setFocusKey((f) => (f === k ? null : f))}
+                    onKeyDown={onEnter(k, value, () => check())}
+                    onChange={(e) => {
+                      doneRef.current[k] = false;
+                      setFillAnswers((a) => ({ ...a, [k]: e.target.value }));
+                      setFeedback((f) => ({ ...f, [k]: null }));
+                      setHints((h) => ({ ...h, [k]: null }));
+                    }}
+                  />
+                )}
+                {item.hint ? <span className="nb-cloze-hint">({item.hint})</span> : null}
+              </span>
+            );
+          };
+          const paragraphs = String(level.text ?? '').split(/\n\s*\n/);
+          const pending = level.items.filter((it) => {
+            const k = key(it.id);
+            return (fillAnswers[k] ?? '').trim() && feedback[k] !== true;
+          });
+          const wrong = level.items.filter((it) => feedback[key(it.id)] === false);
+          return (
+            <div className="nb-panel nb-cloze">
+              {level.bank?.length ? (
+                <div className="nb-cloze-bank" aria-label="Słowa do wstawienia">
+                  {level.bank.map((w, i) => (
+                    <span key={`${w}-${i}`} className={`nb-cloze-word${usedOk.has(w) ? ' used' : ''}`}>
+                      {w}
+                    </span>
+                  ))}
+                </div>
+              ) : null}
+              {paragraphs.map((para, pi) => (
+                <p key={pi} className="nb-cloze-p">
+                  {para.split(/(\{[^}\s]+\})/).map((part, i) => {
+                    const m = /^\{([^}\s]+)\}$/.exec(part);
+                    return m ? gapEl(m[1]) : <span key={i}>{part}</span>;
+                  })}
+                </p>
+              ))}
+              {pending.length > 0 ? (
+                <div className="nb-row">
+                  <button
+                    type="button"
+                    className="nb-btn sm nb-appear"
+                    data-role="check"
+                    onClick={() =>
+                      pending.forEach((it) =>
+                        applyCheck(key(it.id), fillAnswers[key(it.id)] ?? '', String(it.answer ?? ''), it.accept, it)
+                      )
+                    }
+                  >
+                    Sprawdź tekst <span className="nb-kbd">Enter</span>
+                  </button>
+                </div>
+              ) : null}
+              {focusKey && level.items.some((it) => key(it.id) === focusKey && !it.options?.length) ? <PolishKeys /> : null}
+              {wrong.map((it) => {
+                const k = key(it.id);
+                const expected = String(it.answer ?? '');
+                return (
+                  <div key={`w-${k}`} className="nb-cloze-note">
+                    <span className="nb-cloze-n">{order.indexOf(String(it.id)) + 1}</span>
+                    {wrongNote(k, it, expected, () => {
+                      setFillAnswers((a) => ({ ...a, [k]: expected }));
+                      setFeedback((f) => ({ ...f, [k]: null }));
+                    })}
+                  </div>
+                );
+              })}
+            </div>
+          );
+        })()}
+
+        {/* ── ordering: розстав події в правильній послідовності ───────────────── */}
+        {level.task_type === 'ordering' && (() => {
+          const ok = key('__order');
+          const n = level.items.length;
+          const slots: string[] = (fillAnswers[ok] ?? '').split('|');
+          while (slots.length < n) slots.push('');
+          const placed = new Set(slots.filter(Boolean));
+          const ids = level.items.map((it) => String(it.id));
+          let mixed = shuffle(ids, `order-${blockId}`);
+          // перемішане не може збігтися з відповіддю (інакше вправа розв'язується «кліками підряд»)
+          if (mixed.every((id, i) => id === ids[i])) mixed = [...mixed.slice(1), mixed[0]];
+          const pool = mixed.filter((id) => !placed.has(id));
+          const byId = new Map(level.items.map((it) => [String(it.id), it]));
+          const save = (next: string[]) => setFillAnswers((a) => ({ ...a, [ok]: next.join('|') }));
+          const full = slots.every(Boolean);
+          const allOk = level.items.every((it) => feedback[key(it.id)] === true);
+          const checkOrder = () => {
+            const expected = level.items.map((it) => String(it.id));
+            const given = slots;
+            level.items.forEach((it, i) => {
+              const good = given[i] === expected[i];
+              const item = byId.get(given[i]);
+              if (!item || !it) return;
+              setFeedback((f) => ({ ...f, [key(item.id)]: good }));
+              if (good) doneRef.current[key(item.id)] = true;
+            });
+            const first = level.items[0];
+            record(
+              first,
+              given.map((id) => byId.get(id)?.prompt ?? id).join(' → '),
+              level.items.map((it) => it.prompt ?? '').join(' → '),
+              given.every((id, i) => id === expected[i])
+            );
+          };
+          return (
+            <div className="nb-panel nb-order">
+              <ol className="nb-order-list">
+                {slots.map((id, i) => {
+                  const item = id ? byId.get(id) : undefined;
+                  const fb = item ? feedback[key(item.id)] : null;
+                  return (
+                    <li
+                      key={`slot-${i}`}
+                      className={`nb-order-slot${item ? ' filled' : ''}${fb === true ? ' ok' : ''}${fb === false ? ' no' : ''}`}
+                      data-item-id={item ? String(item.id) : undefined}
+                      data-state={fb === true ? 'correct' : fb === false ? 'wrong' : 'pending'}
+                    >
+                      <span className="nb-order-n">{fb === true ? <Check strokeWidth={3} /> : i + 1}</span>
+                      {item ? (
+                        <button
+                          type="button"
+                          className="nb-order-text"
+                          disabled={fb === true}
+                          title={fb === true ? undefined : 'Kliknij, żeby zdjąć'}
+                          onClick={() => {
+                            const next = [...slots];
+                            next[i] = '';
+                            save(next);
+                            setFeedback((f) => ({ ...f, [key(item.id)]: null }));
+                          }}
+                        >
+                          {item.prompt}
+                        </button>
+                      ) : (
+                        <span className="nb-order-empty">…</span>
+                      )}
+                    </li>
+                  );
+                })}
+              </ol>
+              {pool.length > 0 ? (
+                <div className="nb-order-pool">
+                  {pool.map((id) => (
+                    <button
+                      key={id}
+                      type="button"
+                      className="nb-chip nb-order-chip"
+                      data-role="option"
+                      onClick={() => {
+                        const next = [...slots];
+                        const free = next.findIndex((x) => !x);
+                        if (free < 0) return;
+                        next[free] = id;
+                        save(next);
+                      }}
+                    >
+                      {byId.get(id)?.prompt}
+                    </button>
+                  ))}
+                </div>
+              ) : null}
+              {full && !allOk ? (
+                <div className="nb-row">
+                  <button type="button" className="nb-btn sm nb-appear" data-role="check" onClick={checkOrder}>
+                    Sprawdź kolejność
+                  </button>
+                </div>
+              ) : null}
+              {full && !allOk && level.items.some((it) => feedback[key(it.id)] === false) ? (
+                <Feedback kind="no">Czerwone są nie na swoim miejscu. Kliknij je, a wrócą na dół — i ułóż jeszcze raz.</Feedback>
+              ) : null}
+            </div>
+          );
+        })()}
 
         {(level.task_type === 'open-answer' || level.task_type === 'text-transform') &&
           level.items.map((item, idx) => {

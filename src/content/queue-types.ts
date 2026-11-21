@@ -87,6 +87,8 @@ export type GrammarPyramidItem = {
   image_alt?: string;
   /** e.g. "Fot. Jan Kowalski / Unsplash" */
   image_credit?: string;
+  /** cloze-text: базова форма в дужках після пропуску (відміни / постав у час) */
+  hint?: string;
 };
 
 export type GrammarPyramidExercise = {
@@ -107,6 +109,10 @@ export type GrammarPyramidExercise = {
     diacritics?: 'strict' | 'lenient';
     /** 'strict': upper/lower case must match (capital-letter spelling exercises) */
     letter_case?: 'strict' | 'lenient';
+    /** cloze-text: суцільний текст із пропусками {id} (абзаци — порожній рядок) */
+    text?: string;
+    /** cloze-text: банк слів над текстом (довідка; правильні закреслюються) */
+    bank?: string[];
     items: GrammarPyramidItem[];
   }[];
 };

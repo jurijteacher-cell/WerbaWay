@@ -194,7 +194,7 @@ export function Key({ children = 'Enter' }: { children?: ReactNode }) {
 }
 
 /* ── «how it works» line under a level heading ────────────────────────────── */
-export type TipKind = 'type' | 'type-long' | 'pick' | 'true-false' | 'match' | 'build' | 'write';
+export type TipKind = 'type' | 'type-long' | 'pick' | 'true-false' | 'match' | 'build' | 'write' | 'order';
 
 export function TaskTip({ kind }: { kind: TipKind }) {
   const kb = (() => {
@@ -221,6 +221,8 @@ export function TaskTip({ kind }: { kind: TipKind }) {
         return <>Klikaj słowa po kolei. Pomyłka? Kliknij słowo w linijce, a wróci na dół.</>;
       case 'write':
         return <>Napisz odpowiedź i wyślij ją nauczycielowi.</>;
+      case 'order':
+        return <>Klikaj zdania po kolei: co było najpierw, co potem. Pomyłka? Kliknij zdanie na liście, a wróci na dół.</>;
     }
   })();
   const touch =

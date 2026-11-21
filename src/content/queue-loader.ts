@@ -108,6 +108,7 @@ function normalizeFlip(raw: any): FlipTaskExercise {
 function normalizeGrammarItem(it: any, i: number): GrammarPyramidItem {
   const base = normalizeGrammarItemCore(it, i);
   if (typeof it?.grammar_point === 'string') base.grammar_point = it.grammar_point;
+  if (typeof it?.hint === 'string') base.hint = it.hint;
   if (it?.image_url) {
     base.image_url = it.image_url;
     base.image_alt = it.image_alt ?? it.alt;
@@ -196,6 +197,9 @@ function normalizeGrammar(raw: any): GrammarPyramidExercise {
         name: l.name,
         task_type: l.task_type,
         instruction: l.instruction,
+        block_id: l.block_id,
+        text: l.text,
+        bank: Array.isArray(l.bank) ? l.bank : undefined,
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         items: (l.items ?? []).map((it: any, j: number) => normalizeGrammarItem(it, j)),
       })),
@@ -219,7 +223,9 @@ function normalizeGrammar(raw: any): GrammarPyramidExercise {
         taskType = 'text-transform';
       }
       // drag bank → chip picker fill-in-blank (same UX as notebook prototype)
-      const isBankBlock = taskType === 'drag-and-drop' || (Array.isArray(b.bank) && b.bank.length > 0);
+      // (cloze-text / ordering мають власний банк і власний вигляд — не перетворюємо)
+      const ownLayout = taskType === 'cloze-text' || taskType === 'ordering';
+      const isBankBlock = !ownLayout && (taskType === 'drag-and-drop' || (Array.isArray(b.bank) && b.bank.length > 0));
       if (taskType === 'drag-and-drop') {
         taskType = 'fill-in-blank';
       }
@@ -244,6 +250,8 @@ function normalizeGrammar(raw: any): GrammarPyramidExercise {
         diacritics: b.diacritics === 'strict' ? 'strict' : undefined,
         letter_case: b.letter_case === 'strict' ? 'strict' : undefined,
         block_id: b.block_id,
+        text: ownLayout ? b.text : undefined,
+        bank: ownLayout && Array.isArray(b.bank) ? b.bank : undefined,
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         items: (b.items ?? []).map((it: any, j: number) => {
           const normalized = normalizeGrammarItem(it, j);

@@ -27,6 +27,29 @@ def answers(it):
     return lst[0] if lst else "", lst[1:] + [str(x) for x in it.get("accept", [])]
 
 
+def check_layout(name, b, errs, warns):
+    """cloze-text: кожна {id} у тексті має пункт і навпаки; ordering: ≥ 4 події."""
+    t = b.get("exercise_type") or b.get("task_type")
+    bid = b.get("block_id", "?")
+    items = b.get("items", [])
+    if t == "cloze-text":
+        gaps = re.findall(r"\{([^}\s]+)\}", b.get("text", ""))
+        ids = [str(it.get("id")) for it in items]
+        for g in gaps:
+            if g not in ids:
+                errs.append(f"{name}:{bid}: luka {{{g}}} w tekście bez pozycji w items")
+        for i in ids:
+            if i not in gaps:
+                errs.append(f"{name}:{bid}:{i}: pozycja bez luki {{{i}}} w tekście")
+        if len(set(gaps)) != len(gaps):
+            errs.append(f"{name}:{bid}: ta sama luka dwa razy w tekście")
+    if t == "ordering":
+        if len(items) < 4:
+            warns.append(f"{name}:{bid}: ordering z {len(items)} zdań — za łatwe (min. 4–6)")
+        if any(not it.get("prompt") for it in items):
+            errs.append(f"{name}:{bid}: ordering — każde zdanie potrzebuje prompt")
+
+
 def blocks_of(d):
     if isinstance(d.get("blocks"), list):
         for b in d["blocks"]:
@@ -45,6 +68,9 @@ def check_file(path, errs, warns):
     if not isinstance(d, dict):
         return
     name = os.path.basename(path).replace(".json", "")
+    for b in (d.get("blocks") or []) + (d.get("levels") or []):
+        if isinstance(b, dict):
+            check_layout(name, b, errs, warns)
     for bid, t, items in blocks_of(d):
         rights = [str(it.get("right")) for it in items if "right" in it]
         for it in items:

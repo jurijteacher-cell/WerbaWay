@@ -40,7 +40,13 @@ const nextConfig = {
       '/api/placement/[lessonId]': ['./src/content/queue-published/**/*', './src/content/i18n/**/*'],
       '/api/placement/[lessonId]/finish': ['./src/content/queue-published/**/*', './src/content/i18n/**/*'],
       '/api/placement/[lessonId]/level': ['./src/content/queue-published/**/*', './src/content/i18n/**/*'],
+      // сценарії озвучення: /audio/<file>.mp3 генерується з них (docs/AUDIO_SITE.md)
+      '/api/audio/[...path]': ['./src/content/audio/**/*'],
     },
+  },
+  async rewrites() {
+    // mp3, якого немає в public/audio/, сайт генерує сам: ElevenLabs → Supabase Storage (src/app/api/audio)
+    return { fallback: [{ source: '/audio/:path*', destination: '/api/audio/:path*' }] };
   },
   async headers() {
     // вправи, слайди, share-посилання й кабінет — не для пошуку: вправа без лекції у видачі лише плутає

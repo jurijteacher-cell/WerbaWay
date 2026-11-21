@@ -22,7 +22,7 @@ function localeHeaders(request: NextRequest) {
 const PROTECTED_PREFIXES = ['/lessons', '/lectures', '/teacher', '/dashboard', '/learn', '/words'];
 
 /** Public surfaces opened from Notion iframes — no auth, no Supabase round-trip. */
-const PUBLIC_PREFIXES = ['/embed', '/slides', '/brand', '/api/embed'];
+const PUBLIC_PREFIXES = ['/embed', '/slides', '/brand', '/api/embed', '/api/audio', '/api/unsplash'];
 
 export async function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
