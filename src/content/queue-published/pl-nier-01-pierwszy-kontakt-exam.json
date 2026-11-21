@@ -1,0 +1,108 @@
+{
+  "lesson_id": "pl-nier-01-pierwszy-kontakt",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie: czytanie i słuchanie",
+  "instruction": "Dwa zadania w formacie egzaminu: czytanie notatki Natalii i słuchanie rozmowy telefonicznej.",
+  "estimated_minutes": 12,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "title": "Czytanie: notatka Natalii — prawda czy fałsz?",
+      "instruction": "Przeczytaj notatkę Natalii. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Natalia mówi „Pan” lub „Pani” tylko do starszych klientów.",
+          "answer": false,
+          "explanation": "„Do klienta mówię zawsze Pan albo Pani, nawet jeśli ma dwadzieścia pięć lat.”"
+        },
+        {
+          "id": "e1-2",
+          "statement": "Natalia zaczyna rozmowę od pytań o życie klienta, a nie o cenę.",
+          "answer": true,
+          "explanation": "Na początku nie pyta o cenę — pyta, co klient robi i jak mieszka."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Dla pana Dawida najważniejszy był duży metraż.",
+          "answer": false,
+          "explanation": "Najbardziej zależało mu na tym, żeby mieć blisko do tramwaju."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Natalia podsumowuje słowa klienta i pyta, czy dobrze go rozumie.",
+          "answer": true,
+          "explanation": "„Czyli szuka Pan… Dobrze rozumiem?”"
+        },
+        {
+          "id": "e1-5",
+          "statement": "Kiedy Natalia nie rozumie, udaje, że wszystko jest jasne.",
+          "answer": false,
+          "explanation": "Pyta: „Przepraszam, nie dosłyszałam…”. Nie udaje."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Natalia od razu zapisuje umówiony termin w notatniku.",
+          "answer": true,
+          "explanation": "„Zapisuję to w notatniku od razu, żeby niczego nie zapomnieć.”"
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "exercise_type": "multiple-choice",
+      "max_plays": 2,
+      "title": "Słuchanie: rozmowa telefoniczna z klientką",
+      "instruction": "Najpierw przeczytaj pytania. Potem posłuchaj rozmowy — maksymalnie dwa razy. Na egzaminie usłyszysz nagranie tylko raz.",
+      "items": [
+        {
+          "id": "e2-1",
+          "question": "Wiadomość: rozmowa z panią Kowalczyk. Dlaczego pani Kowalczyk dzwoni do biura?",
+          "options": [
+            "Chce sprzedać swoje mieszkanie na Wildzie.",
+            "Chce zapytać o ogłoszenie dwupokojowego mieszkania na Wildzie.",
+            "Chce wynająć dwa pokoje dla syna."
+          ],
+          "answer": "Chce zapytać o ogłoszenie dwupokojowego mieszkania na Wildzie.",
+          "explanation": "Dzwoni w sprawie ogłoszenia o dwupokojowym mieszkaniu na Wildzie."
+        },
+        {
+          "id": "e2-2",
+          "question": "Jak pani Kowalczyk zapłaci za mieszkanie?",
+          "options": [
+            "Weźmie kredyt hipoteczny.",
+            "Zapłaci pieniędzmi ze sprzedaży poprzedniego mieszkania.",
+            "Zapłaci wkładem własnym, a resztę w ratach."
+          ],
+          "answer": "Zapłaci pieniędzmi ze sprzedaży poprzedniego mieszkania.",
+          "explanation": "Ma pieniądze ze sprzedaży mieszkania i nie potrzebuje kredytu. Natalia pytała o kredyt, ale klientka go nie bierze."
+        },
+        {
+          "id": "e2-3",
+          "question": "Co Natalia mówi o cenie mieszkania z ogłoszenia?",
+          "options": [
+            "Jest wyższa niż budżet pani Kowalczyk, ale biuro ma podobne oferty.",
+            "Jest niższa niż budżet, więc można negocjować.",
+            "Jest ostateczna i biuro nie ma innych ofert."
+          ],
+          "answer": "Jest wyższa niż budżet pani Kowalczyk, ale biuro ma podobne oferty.",
+          "explanation": "Cena to pięćset dziesięć tysięcy, a budżet — czterysta osiemdziesiąt. Natalia dodaje: „Mamy jednak kilka podobnych ofert”."
+        },
+        {
+          "id": "e2-4",
+          "question": "O której godzinie pani Kowalczyk obejrzy mieszkania w czwartek?",
+          "options": [
+            "o siedemnastej",
+            "o siedemnastej piętnaście",
+            "o dwunastej"
+          ],
+          "answer": "o siedemnastej piętnaście",
+          "explanation": "Klientka ma czas „po siedemnastej”, a Natalia proponuje siedemnastą piętnaście. Dwunasta to godzina, do której Natalia odzwoni z adresami."
+        }
+      ]
+    }
+  ]
+}

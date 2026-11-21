@@ -1,0 +1,342 @@
+{
+  "lesson_id": "pl-nier-01-pierwszy-kontakt",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: rozmowa z klientem",
+  "instruction": "Pięć krótkich ćwiczeń. Możesz przerwać i wrócić później.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Które słowo pasuje?",
+      "instruction": "Wybierz słowo.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Klient napisał do biura e-mail z pytaniem o mieszkanie. W systemie zapisujemy: nowe ___.",
+          "answer": "zapytanie",
+          "grammar_point": "slownictwo",
+          "options": [
+            "ogłoszenie",
+            "zapytanie",
+            "wycena"
+          ]
+        },
+        {
+          "id": "h1-2",
+          "text": "Pani Joanna prosi, żeby każdy klient, który zostawi wiadomość, dostał telefon z biura. Trzeba więc do niego ___.",
+          "answer": "oddzwonić",
+          "grammar_point": "slownictwo",
+          "options": [
+            "dodzwonić się",
+            "oddzwonić",
+            "zadzwonić się"
+          ]
+        },
+        {
+          "id": "h1-3",
+          "text": "To mieszkanie ma trzy pokoje i bardzo wygodny ___: każdy pokój jest osobno, a kuchnia nie jest przechodnia.",
+          "answer": "rozkład",
+          "grammar_point": "slownictwo",
+          "options": [
+            "metraż",
+            "rozkład",
+            "budżet"
+          ]
+        },
+        {
+          "id": "h1-4",
+          "text": "Budynek z cegły, pięć pięter, wysokie sufity, wybudowany w 1910 roku. To typowa ___.",
+          "answer": "kamienica",
+          "grammar_point": "slownictwo",
+          "options": [
+            "osiedle",
+            "kamienica",
+            "blok"
+          ]
+        },
+        {
+          "id": "h1-5",
+          "text": "Pani Ewa sprzedaje mieszkanie, ale nie wie, ile jest ono warte. Prosi biuro o ___.",
+          "answer": "wycenę",
+          "grammar_point": "slownictwo",
+          "options": [
+            "wycenę",
+            "prowizję",
+            "zapytanie"
+          ]
+        },
+        {
+          "id": "h1-6",
+          "text": "Firma, która buduje i sprzedaje nowe osiedle, to ___.",
+          "answer": "deweloper",
+          "grammar_point": "slownictwo",
+          "options": [
+            "właściciel",
+            "pośrednik",
+            "deweloper"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Grzeczna prośba",
+      "instruction": "Wpisz formę czasownika w trybie przypuszczającym.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Czy ___ Pani przesłać mi plan mieszkania? (móc)",
+          "answer": "mogłaby",
+          "grammar_point": "warunkowy-prosby"
+        },
+        {
+          "id": "h2-2",
+          "text": "Dzień dobry, ___ zapytać o cenę miejsca w garażu. (chcieć, ja — mężczyzna)",
+          "answer": "chciałbym",
+          "grammar_point": "grzecznosc-chcialbym"
+        },
+        {
+          "id": "h2-3",
+          "text": "Czy Państwo ___ obejrzeć też mieszkanie na drugim piętrze? (chcieć)",
+          "answer": "chcieliby",
+          "grammar_point": "przypuszczajacy-formy"
+        },
+        {
+          "id": "h2-4",
+          "text": "Czy w sobotę o dziewiątej ___ Państwu wygodnie? (być)",
+          "answer": "byłoby",
+          "grammar_point": "przypuszczajacy-formy"
+        },
+        {
+          "id": "h2-5",
+          "text": "My ___ spotkać się z Panią w biurze. (chcieć, my — dwie koleżanki)",
+          "answer": "chciałybyśmy",
+          "grammar_point": "przypuszczajacy-formy"
+        },
+        {
+          "id": "h2-6",
+          "text": "Ja ___ chciała zapytać o wolny termin w czwartek. (bym / by / byś)",
+          "answer": "bym",
+          "grammar_point": "przypuszczajacy-formy",
+          "explanation": "W języku mówionym „bym” może stać oddzielnie: Ja bym chciała… To też poprawna forma."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Pytania zależne",
+      "instruction": "Ułóż zdanie, w którym pytanie jest wbudowane w prośbę albo informację.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Ułóż zdanie z pytaniem: „Kiedy właściciel wraca z urlopu?”",
+          "answer": "Nie wiem, kiedy właściciel wraca z urlopu.",
+          "grammar_point": "pytania-zalezne",
+          "words": [
+            "nie",
+            "wiem,",
+            "kiedy",
+            "właściciel",
+            "wraca",
+            "z",
+            "urlopu."
+          ],
+          "accept": [
+            "Nie wiem, kiedy wraca właściciel z urlopu.",
+            "Nie wiem, kiedy wraca z urlopu właściciel."
+          ]
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Ułóż zdanie z pytaniem: „Czy mieszkanie ma balkon?”",
+          "answer": "Klient pyta, czy mieszkanie ma balkon.",
+          "grammar_point": "pytania-zalezne",
+          "words": [
+            "klient",
+            "pyta,",
+            "czy",
+            "mieszkanie",
+            "ma",
+            "balkon."
+          ]
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Ułóż zdanie z pytaniem: „Ile kosztuje miejsce parkingowe?”",
+          "answer": "Czy mogłaby mi Pani powiedzieć, ile kosztuje miejsce parkingowe?",
+          "grammar_point": "pytania-zalezne",
+          "words": [
+            "czy",
+            "mogłaby",
+            "mi",
+            "Pani",
+            "powiedzieć,",
+            "ile",
+            "kosztuje",
+            "miejsce",
+            "parkingowe?"
+          ],
+          "accept": [
+            "Czy Pani mogłaby mi powiedzieć, ile kosztuje miejsce parkingowe?",
+            "Czy mogłaby Pani mi powiedzieć, ile kosztuje miejsce parkingowe?"
+          ]
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Ułóż zdanie z pytaniem: „Jak daleko jest przystanek?”",
+          "answer": "Zastanawiam się, jak daleko jest przystanek.",
+          "grammar_point": "pytania-zalezne",
+          "words": [
+            "zastanawiam",
+            "się,",
+            "jak",
+            "daleko",
+            "jest",
+            "przystanek."
+          ]
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Ułóż zdanie z pytaniem: „Czy Państwo mieszkają tu długo?”",
+          "answer": "Chciałabym się dowiedzieć, czy Państwo mieszkają tu długo.",
+          "grammar_point": "pytania-zalezne",
+          "words": [
+            "chciałabym",
+            "się",
+            "dowiedzieć,",
+            "czy",
+            "Państwo",
+            "mieszkają",
+            "tu",
+            "długo."
+          ],
+          "accept": [
+            "Chciałabym dowiedzieć się, czy Państwo mieszkają tu długo.",
+            "Chciałabym się dowiedzieć, czy mieszkają tu Państwo długo."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h4",
+      "exercise_type": "sentence-building",
+      "title": "4. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h4-1",
+          "prompt": "Chciałabym zapisać się na oglądanie mieszkania w sobotę.",
+          "answer": "Chciałabym umówić się na oglądanie mieszkania w sobotę.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Chciałabym umówić się na obejrzenie mieszkania w sobotę.",
+            "Chciałabym umówić się na prezentację mieszkania w sobotę."
+          ],
+          "explanation": "Ukr. «записатися на огляд» → pol. umówić się na oglądanie. „Zapisać się” mówimy o kursie lub liście."
+        },
+        {
+          "id": "h4-2",
+          "prompt": "Czy Pani byłaś już na Jeżycach?",
+          "answer": "Czy Pani była już na Jeżycach?",
+          "grammar_point": "pan-pani",
+          "accept": [
+            "Czy była już Pani na Jeżycach?"
+          ],
+          "explanation": "Pani + 3. osoba: Pani była. „Byłaś” to forma do „ty”."
+        },
+        {
+          "id": "h4-3",
+          "prompt": "Szukamy mieszkanie blisko parku.",
+          "answer": "Szukamy mieszkania blisko parku.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Szukamy mieszkania blisko parku."
+          ],
+          "explanation": "Szukać + dopełniacz."
+        },
+        {
+          "id": "h4-4",
+          "prompt": "Spotkajmy się u wejścia do kamienicy.",
+          "answer": "Spotkajmy się przed wejściem do kamienicy.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Spotkajmy się przy wejściu do kamienicy.",
+            "Spotkajmy się koło wejścia do kamienicy."
+          ],
+          "explanation": "Ukr. «біля входу» → pol. przed / przy wejściu. „U” + dopełniacz mówimy o osobach: u lekarza, u mnie."
+        },
+        {
+          "id": "h4-5",
+          "prompt": "Napisz mi SMS-a, kiedy będzie Pan na miejscu.",
+          "answer": "Proszę napisać do mnie SMS-a, kiedy Pan będzie na miejscu.",
+          "grammar_point": "pan-pani",
+          "accept": [
+            "Proszę napisać mi SMS-a, kiedy Pan będzie na miejscu.",
+            "Proszę mi napisać SMS-a, kiedy Pan będzie na miejscu.",
+            "Proszę napisać SMS-a, kiedy Pan będzie na miejscu."
+          ],
+          "explanation": "Do klienta mówimy „Pan / Pani”, więc rozkaz „napisz” zamieniamy na „Proszę napisać…”."
+        }
+      ]
+    },
+    {
+      "block_id": "h5",
+      "exercise_type": "fill-in-blank",
+      "title": "5. Powtórz słowa klienta",
+      "instruction": "Wybierz fragment, który pasuje do parafrazy.",
+      "items": [
+        {
+          "id": "h5-1",
+          "text": "Klientka mówi: „Nie chcę mieszkać na parterze.” Ty: „Czyli ___ mieszkać na parterze.”",
+          "answer": "nie chce Pani",
+          "grammar_point": "mowa-zalezna",
+          "options": [
+            "nie chcę",
+            "nie chcesz",
+            "nie chce Pani"
+          ],
+          "explanation": "„Ja nie chcę” → „Pani nie chce”."
+        },
+        {
+          "id": "h5-2",
+          "text": "Klient mówi: „Pracuję w domu, więc potrzebuję trzeciego pokoju.” Ty: „Jeśli dobrze rozumiem, ___ trzeci pokój do pracy.”",
+          "answer": "potrzebuje Pan",
+          "grammar_point": "mowa-zalezna",
+          "options": [
+            "potrzebuję",
+            "Pan potrzebujesz",
+            "potrzebuje Pan"
+          ],
+          "explanation": "„Ja potrzebuję” → „Pan potrzebuje”."
+        },
+        {
+          "id": "h5-3",
+          "text": "Klienci mówią: „Nasze dzieci chodzą do szkoły na Wildzie.” Ty: „Czyli ___ dzieci chodzą do szkoły na Wildzie.”",
+          "answer": "Państwa",
+          "grammar_point": "mowa-zalezna",
+          "options": [
+            "nasze",
+            "Pana",
+            "Państwa"
+          ],
+          "explanation": "„Nasze dzieci” → „Państwa dzieci”."
+        },
+        {
+          "id": "h5-4",
+          "text": "Klienci mówią: „Interesuje nas tylko mieszkanie z balkonem.” Ty: „Czyli interesuje ___ tylko mieszkanie z balkonem.”",
+          "answer": "Państwa",
+          "grammar_point": "mowa-zalezna",
+          "options": [
+            "Państwu",
+            "nas",
+            "Państwa"
+          ],
+          "explanation": "Interesować kogo? — biernik: Państwa. „Państwu” to celownik."
+        }
+      ]
+    }
+  ]
+}

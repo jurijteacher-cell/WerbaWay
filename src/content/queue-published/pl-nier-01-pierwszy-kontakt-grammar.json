@@ -1,0 +1,478 @@
+{
+  "lesson_id": "pl-nier-01-pierwszy-kontakt",
+  "exercise_type": "fill-in-blank",
+  "title": "Rozmowa z klientem: grzeczność, pytania zależne i parafraza",
+  "instruction": "Sześć bloków ćwiczeń. Możesz przerwać i wrócić później.",
+  "estimated_minutes": 28,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Które słowo pasuje do sytuacji?",
+      "instruction": "Wybierz słowo.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Państwo Nowakowie sprzedali dom i część ceny mieszkania zapłacą z tych pieniędzy. To ich ___.",
+          "answer": "wkład własny",
+          "grammar_point": "slownictwo",
+          "options": [
+            "wkład własny",
+            "zdolność kredytowa",
+            "prowizja"
+          ],
+          "explanation": "Wkład własny to pieniądze klienta, nie pożyczka z banku."
+        },
+        {
+          "id": "g1-2",
+          "text": "Bank sprawdził wynagrodzenie klienta i powiedział, że pożyczy mu najwyżej trzysta tysięcy. To jego ___.",
+          "answer": "zdolność kredytowa",
+          "grammar_point": "slownictwo",
+          "options": [
+            "wkład własny",
+            "wycena",
+            "zdolność kredytowa"
+          ],
+          "explanation": "Zdolność kredytowa to decyzja banku o tym, ile może pożyczyć."
+        },
+        {
+          "id": "g1-3",
+          "text": "Mieszkanie w nowym osiedlu, kupione od dewelopera, jest z rynku ___.",
+          "answer": "pierwotnego",
+          "grammar_point": "slownictwo",
+          "options": [
+            "pierwszego",
+            "pierwotnego",
+            "wtórnego"
+          ],
+          "explanation": "Rynek pierwotny — od dewelopera; rynek wtórny — od poprzedniego właściciela. „Rynek pierwszy” po polsku nie istnieje."
+        },
+        {
+          "id": "g1-4",
+          "text": "Zanim wystawimy mieszkanie na sprzedaż, robimy ___, żeby ustalić rozsądną cenę.",
+          "answer": "wycenę",
+          "grammar_point": "slownictwo",
+          "options": [
+            "prowizję",
+            "zapytanie",
+            "wycenę"
+          ],
+          "explanation": "Wycena to ocena wartości mieszkania."
+        },
+        {
+          "id": "g1-5",
+          "text": "Właściciel dał nam mieszkanie ___ — nikt inny nie może go sprzedawać.",
+          "answer": "na wyłączność",
+          "grammar_point": "slownictwo",
+          "options": [
+            "z wyłączności",
+            "pod wyłączność",
+            "na wyłączność"
+          ],
+          "explanation": "Stała fraza: na wyłączność."
+        },
+        {
+          "id": "g1-6",
+          "text": "W umowie biuro i właściciel ustalają wysokość ___.",
+          "answer": "prowizji",
+          "grammar_point": "slownictwo",
+          "options": [
+            "metrażu",
+            "prowizji",
+            "budżetu"
+          ],
+          "explanation": "Prowizja to pieniądze dla biura."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Pan, Pani, Państwo, Panie — jaka forma czasownika?",
+      "instruction": "Wybierz formę, która pasuje do osoby, z którą rozmawiasz.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Państwo, czy ___ już kredyt?",
+          "answer": "mają",
+          "grammar_point": "pan-pani",
+          "options": [
+            "ma",
+            "mają",
+            "macie"
+          ],
+          "explanation": "Państwo + 3. osoba liczby mnogiej: Państwo mają. „Macie” to forma do „wy” — za mało formalna."
+        },
+        {
+          "id": "g2-2",
+          "text": "Pani Marto, kiedy ___ Pani czas na oglądanie?",
+          "answer": "ma",
+          "grammar_point": "pan-pani",
+          "options": [
+            "masz",
+            "ma",
+            "mają"
+          ],
+          "explanation": "Pani + 3. osoba liczby pojedynczej: Pani ma. „Pani masz” miesza grzeczność z „ty”."
+        },
+        {
+          "id": "g2-3",
+          "text": "Zadzwoniły dwie koleżanki, Ewa i Anna. Czy Panie ___ już to mieszkanie?",
+          "answer": "oglądały",
+          "grammar_point": "pan-pani",
+          "options": [
+            "oglądali",
+            "oglądały",
+            "oglądała"
+          ],
+          "explanation": "Panie (same kobiety) + forma niemęskoosobowa: oglądały."
+        },
+        {
+          "id": "g2-4",
+          "text": "Panie Pawle, czy Pan ___ wczoraj do biura?",
+          "answer": "dzwonił",
+          "grammar_point": "pan-pani",
+          "options": [
+            "dzwoniłeś",
+            "dzwoniła",
+            "dzwonił"
+          ],
+          "explanation": "Pan + 3. osoba, rodzaj męski: Pan dzwonił. „Dzwoniłeś” to forma do „ty”."
+        },
+        {
+          "id": "g2-5",
+          "text": "Pan Paweł jest z żoną. Czy Państwo ___ już rozmawiali z bankiem?",
+          "answer": "rozmawiali",
+          "grammar_point": "pan-pani",
+          "options": [
+            "rozmawiał",
+            "rozmawiały",
+            "rozmawiali"
+          ],
+          "explanation": "Państwo (mężczyzna i kobieta) → forma męskoosobowa: rozmawiali."
+        },
+        {
+          "id": "g2-6",
+          "text": "Czy Pani ___ moją wiadomość?",
+          "answer": "dostała",
+          "grammar_point": "pan-pani",
+          "options": [
+            "dostał",
+            "dostały",
+            "dostała"
+          ],
+          "explanation": "Pani + rodzaj żeński: dostała."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Grzeczna prośba: mógłby, chciałabym…",
+      "instruction": "Wpisz formę czasownika w trybie przypuszczającym.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Czy ___ Pan zadzwonić po piętnastej? (móc)",
+          "answer": "mógłby",
+          "grammar_point": "warunkowy-prosby",
+          "explanation": "Forma: mógł + by. Prośba w trybie przypuszczającym brzmi grzeczniej niż „Czy może Pan…”."
+        },
+        {
+          "id": "g3-2",
+          "text": "Czy ___ Pani sprawdzić ten adres w internecie? (móc)",
+          "answer": "mogłaby",
+          "grammar_point": "warunkowy-prosby",
+          "explanation": "Pani → mogła + by."
+        },
+        {
+          "id": "g3-3",
+          "text": "Dzień dobry, ___ zapytać o termin oglądania. (chcieć, ja — kobieta)",
+          "answer": "chciałabym",
+          "grammar_point": "grzecznosc-chcialbym",
+          "explanation": "chciała + bym: chciałabym."
+        },
+        {
+          "id": "g3-4",
+          "text": "Czy ___ Państwo przyjść do biura w piątek? (móc)",
+          "answer": "mogliby",
+          "grammar_point": "warunkowy-prosby",
+          "explanation": "Państwo → mogli + by (forma męskoosobowa)."
+        },
+        {
+          "id": "g3-5",
+          "text": "Dzień dobry, ___ obejrzeć to mieszkanie w sobotę. (chcieć, my — mąż i żona)",
+          "answer": "chcielibyśmy",
+          "grammar_point": "przypuszczajacy-formy",
+          "explanation": "my (mieszana grupa) → chcieli + byśmy: chcielibyśmy. Same kobiety: chciałybyśmy."
+        },
+        {
+          "id": "g3-6",
+          "text": "Czy Pan ___ umówić się na czwartek? (chcieć)",
+          "answer": "chciałby",
+          "grammar_point": "przypuszczajacy-formy",
+          "explanation": "Pan → chciał + by."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "4. Pytania zależne: ułóż zdanie",
+      "instruction": "Ułóż z fragmentów zdanie, w którym pytanie jest wbudowane w prośbę albo informację.",
+      "items": [
+        {
+          "id": "g4-1",
+          "prompt": "Ułóż zdanie z pytaniem: „Ile pokoi potrzebują Państwo?”",
+          "answer": "Chciałabym zapytać, ile pokoi potrzebują Państwo.",
+          "grammar_point": "pytania-zalezne",
+          "words": [
+            "chciałabym",
+            "zapytać,",
+            "ile",
+            "pokoi",
+            "potrzebują",
+            "Państwo."
+          ],
+          "accept": [
+            "Chciałabym zapytać, ile pokoi Państwo potrzebują.",
+            "Chciałabym zapytać, ile Państwo potrzebują pokoi.",
+            "Chciałabym zapytać, ile potrzebują Państwo pokoi."
+          ],
+          "explanation": "Pytanie zależne ma przecinek przed pytajnikiem (ile) i szyk jak w zdaniu oznajmującym."
+        },
+        {
+          "id": "g4-2",
+          "prompt": "Ułóż zdanie z pytaniem: „Czy ma Pan wkład własny?”",
+          "answer": "Czy mogłabym się dowiedzieć, czy ma Pan wkład własny?",
+          "grammar_point": "pytania-zalezne",
+          "words": [
+            "czy",
+            "mogłabym",
+            "się",
+            "dowiedzieć,",
+            "czy",
+            "ma",
+            "Pan",
+            "wkład",
+            "własny?"
+          ],
+          "accept": [
+            "Czy mogłabym się dowiedzieć, czy Pan ma wkład własny?",
+            "Czy mogłabym dowiedzieć się, czy ma Pan wkład własny?",
+            "Czy mogłabym dowiedzieć się, czy Pan ma wkład własny?"
+          ],
+          "explanation": "Pytanie tak/nie w zdaniu zależnym zaczyna się od „czy”. Pierwsze „czy” otwiera całą prośbę, drugie — pytanie zależne."
+        },
+        {
+          "id": "g4-3",
+          "prompt": "Ułóż zdanie z pytaniem: „Kiedy może Pan obejrzeć mieszkanie?”",
+          "answer": "Chciałabym wiedzieć, kiedy może Pan obejrzeć mieszkanie.",
+          "grammar_point": "pytania-zalezne",
+          "words": [
+            "chciałabym",
+            "wiedzieć,",
+            "kiedy",
+            "może",
+            "Pan",
+            "obejrzeć",
+            "mieszkanie."
+          ],
+          "accept": [
+            "Chciałabym wiedzieć, kiedy Pan może obejrzeć mieszkanie.",
+            "Chciałabym wiedzieć, kiedy może Pan mieszkanie obejrzeć.",
+            "Chciałabym wiedzieć, kiedy Pan może mieszkanie obejrzeć."
+          ],
+          "explanation": "Pytajnik „kiedy” zostaje, przecinek stoi przed nim."
+        },
+        {
+          "id": "g4-4",
+          "prompt": "Ułóż zdanie z pytaniem: „Czy kupuje Pani na kredyt?”",
+          "answer": "Nie wiem, czy kupuje Pani na kredyt.",
+          "grammar_point": "pytania-zalezne",
+          "words": [
+            "nie",
+            "wiem,",
+            "czy",
+            "kupuje",
+            "Pani",
+            "na",
+            "kredyt."
+          ],
+          "accept": [
+            "Nie wiem, czy Pani kupuje na kredyt."
+          ],
+          "explanation": "Po „nie wiem” pytanie tak/nie przechodzi w „czy”."
+        },
+        {
+          "id": "g4-5",
+          "prompt": "Ułóż zdanie z pytaniem: „Gdzie Państwo teraz mieszkają?”",
+          "answer": "Zastanawiam się, gdzie Państwo teraz mieszkają.",
+          "grammar_point": "pytania-zalezne",
+          "words": [
+            "zastanawiam",
+            "się,",
+            "gdzie",
+            "Państwo",
+            "teraz",
+            "mieszkają."
+          ],
+          "accept": [
+            "Zastanawiam się, gdzie teraz mieszkają Państwo.",
+            "Zastanawiam się, gdzie mieszkają teraz Państwo.",
+            "Zastanawiam się, gdzie mieszkają Państwo teraz."
+          ],
+          "explanation": "Zwrot „zastanawiam się” + pytajnik: przecinek po „się”."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Czyli… — powtórz słowa klienta",
+      "instruction": "Wybierz fragment, który pasuje do parafrazy. Zmień osobę: z „ja” na „Pan / Pani / Państwo”.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Klient mówi: „Mamy dwoje dzieci.” Ty: „Czyli ___ dwoje dzieci.”",
+          "answer": "mają Państwo",
+          "grammar_point": "mowa-zalezna",
+          "options": [
+            "mamy",
+            "macie",
+            "mają Państwo"
+          ],
+          "explanation": "Przy powtarzaniu zmieniasz osobę: „my” → „Państwo mają”."
+        },
+        {
+          "id": "g5-2",
+          "text": "Klient mówi: „Szukam czegoś blisko tramwaju.” Ty: „Czyli ___ czegoś blisko tramwaju.”",
+          "answer": "szuka Pan",
+          "grammar_point": "mowa-zalezna",
+          "options": [
+            "szukam",
+            "szukasz",
+            "szuka Pan"
+          ],
+          "explanation": "„Ja szukam” → „Pan szuka”."
+        },
+        {
+          "id": "g5-3",
+          "text": "Klient mówi: „Moja żona chce balkon.” Ty: „Czyli ___ żona chce balkon.”",
+          "answer": "Pana",
+          "grammar_point": "mowa-zalezna",
+          "options": [
+            "moja",
+            "Pan",
+            "Pana"
+          ],
+          "explanation": "„Moja żona” → „Pana żona” (dopełniacz: czyja?)."
+        },
+        {
+          "id": "g5-4",
+          "text": "Klient mówi: „Interesuje mnie tylko druga kamienica.” Ty: „Czyli ___ tylko druga kamienica.”",
+          "answer": "interesuje Pana",
+          "grammar_point": "mowa-zalezna",
+          "options": [
+            "interesuję Pana",
+            "Pan interesuje",
+            "interesuje Pana"
+          ],
+          "explanation": "Interesować kogo? — biernik: interesuje Pana. „Mnie” → „Pana”."
+        },
+        {
+          "id": "g5-5",
+          "text": "Klienci mówią: „Zależy nam na ciszy.” Ty: „Czyli zależy ___ na ciszy.”",
+          "answer": "Państwu",
+          "grammar_point": "mowa-zalezna",
+          "options": [
+            "nam",
+            "Państwa",
+            "Państwu"
+          ],
+          "explanation": "Zależeć komu? — celownik: zależy Państwu. „Nam” → „Państwu”."
+        },
+        {
+          "id": "g5-6",
+          "text": "Chcesz sprawdzić, czy rozumiesz: „Czy dobrze rozumiem, ___ kupują Państwo na kredyt?”",
+          "answer": "że",
+          "grammar_point": "mowa-zalezna",
+          "options": [
+            "że",
+            "czy",
+            "żeby"
+          ],
+          "explanation": "Po „Czy dobrze rozumiem” stoi „że” + zdanie. „Czy” już jest na początku."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "6. Pułapki z ukraińskiego: popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g6-1",
+          "prompt": "Klient dzwoni po ogłoszeniu z portalu.",
+          "answer": "Klient dzwoni w sprawie ogłoszenia z portalu.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "W sprawie ogłoszenia z portalu klient dzwoni."
+          ],
+          "explanation": "Ukr. «дзвоню щодо оголошення» → pol. w sprawie ogłoszenia. „Po ogłoszeniu” = po jego opublikowaniu."
+        },
+        {
+          "id": "g6-2",
+          "prompt": "Klient szuka mieszkanie z balkonem.",
+          "answer": "Klient szuka mieszkania z balkonem.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Klient szuka mieszkania z balkonem."
+          ],
+          "explanation": "Szukać + dopełniacz: szukam mieszkania, pracy, domu."
+        },
+        {
+          "id": "g6-3",
+          "prompt": "Czy Pan macie czas w środę?",
+          "answer": "Czy Pan ma czas w środę?",
+          "grammar_point": "pan-pani",
+          "accept": [
+            "Czy ma Pan czas w środę?"
+          ],
+          "explanation": "Ukr. «Ви маєте» do jednej osoby → pol. Pan ma. Pan = 3. osoba liczby pojedynczej."
+        },
+        {
+          "id": "g6-4",
+          "prompt": "Przedzwonię do Pani jutro z adresami.",
+          "answer": "Oddzwonię do Pani jutro z adresami.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Oddzwonię jutro do Pani z adresami.",
+            "Oddzwonię Pani jutro z adresami.",
+            "Jutro oddzwonię do Pani z adresami."
+          ],
+          "explanation": "Ukr. «передзвоню» (oddzwonić) → pol. oddzwonić. „Przedzwonić” znaczy po prostu „zadzwonić”."
+        },
+        {
+          "id": "g6-5",
+          "prompt": "Zaprosiliśmy klientów na pokaz mieszkania w sobotę.",
+          "answer": "Zaprosiliśmy klientów na prezentację mieszkania w sobotę.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Zaprosiliśmy klientów na oglądanie mieszkania w sobotę.",
+            "Zaprosiliśmy klientów w sobotę na prezentację mieszkania.",
+            "Zaprosiliśmy klientów w sobotę na oglądanie mieszkania."
+          ],
+          "explanation": "Ukr. «показ» → pol. prezentacja / oglądanie. „Pokaz” to show: pokaz mody, pokaz filmu."
+        }
+      ]
+    }
+  ]
+}
