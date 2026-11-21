@@ -293,6 +293,16 @@ The first word today was <b>вме́сте</b>. Now say three sentences with it:
 Homework
 </embed>
 
+### 🎬 Video
+
+<video source="https://www.youtube.com/watch?v=-dFiOENeKLM">Be Fluent in Russian — Russian conjugation in detail</video>
+
+Watch the video once without stopping, then once more with a pen. Stop when the speaker gives the full table of one verb.
+
+1. Write down the six forms (**я, ты, он, мы, вы, они**) of one verb from the video.
+2. Is it an **-ать** verb or an **-ить / -еть** verb? Compare its **они** ending with today's rule: ты **-ешь** → они **-ют**, ты **-ишь** → они **-ят**.
+3. Pick one verb from the video that you do not know and write one sentence with **мы** and one with **они**.
+
 ### 🎙️ Voice message
 
 <aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">

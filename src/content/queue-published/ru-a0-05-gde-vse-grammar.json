@@ -1,0 +1,708 @@
+{
+  "lesson_id": "ru-a0-05-gde-vse",
+  "exercise_type": "fill-in-blank",
+  "title": "Exercises: где? в / на",
+  "instruction": "Try first, then press Sprawdź (check).",
+  "eyebrow": "exercises",
+  "estimated_minutes": 28,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "Text. Put the sentences in order",
+      "instruction": "Что бы́ло снача́ла, а что пото́м? Кли́кай предложе́ния по о́череди.",
+      "instruction_uk": "Click the sentences in the order of the text «Где все?».",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "Сейча́с ве́чер.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "Я до́ма, в Ри́ге, в це́нтре.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Ма́ма на рабо́те, в кафе́.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Па́па на вокза́ле.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "А́нна в магази́не.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Все в го́роде, а я до́ма и чита́ю.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Text. Edik's evening, retold",
+      "instruction": "Выбери правильный вариант. Choose the right place phrase.",
+      "instruction_uk": "Pick the phrase that fits: в or на, and the ending of the noun.",
+      "text": "Э́дик живёт {t2-1}. Ма́ма сейча́с {t2-2}, в кафе́. Па́па {t2-3}. А́нна {t2-4}. Все {t2-5}, а Э́дик {t2-6} и чита́ет.",
+      "items": [
+        {
+          "id": "t2-1",
+          "answer": "в Ри́ге",
+          "options": [
+            "в Ри́ге",
+            "в Ри́га",
+            "на Ри́ге"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "в / на + the noun in the «where?» form (usually -е). At home is one word: до́ма."
+        },
+        {
+          "id": "t2-2",
+          "answer": "на рабо́те",
+          "options": [
+            "на рабо́те",
+            "в рабо́те",
+            "на рабо́та"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "в / на + the noun in the «where?» form (usually -е). At home is one word: до́ма."
+        },
+        {
+          "id": "t2-3",
+          "answer": "на вокза́ле",
+          "options": [
+            "на вокза́ле",
+            "в вокза́ле",
+            "на вокза́л"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "в / на + the noun in the «where?» form (usually -е). At home is one word: до́ма."
+        },
+        {
+          "id": "t2-4",
+          "answer": "в магази́не",
+          "options": [
+            "в магази́не",
+            "на магази́не",
+            "в магази́н"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "в / на + the noun in the «where?» form (usually -е). At home is one word: до́ма."
+        },
+        {
+          "id": "t2-5",
+          "answer": "в го́роде",
+          "options": [
+            "в го́роде",
+            "на го́роде",
+            "в го́род"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "в / на + the noun in the «where?» form (usually -е). At home is one word: до́ма."
+        },
+        {
+          "id": "t2-6",
+          "answer": "до́ма",
+          "options": [
+            "до́ма",
+            "в до́ме",
+            "на до́ме"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "в / на + the noun in the «where?» form (usually -е). At home is one word: до́ма."
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. The ending -е",
+      "instruction": "Впиши слово в нужной форме.",
+      "instruction_uk": "The noun in brackets is in the dictionary form. Put it after в in the «where?» form.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Я живу́ в ___ (Ри́га).",
+          "answer": "Риге",
+          "accept": [
+            "Ри́ге"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "-а → -е: Рига → в Риге."
+        },
+        {
+          "id": "g1-2",
+          "text": "Па́па рабо́тает в ___ (магази́н).",
+          "answer": "магазине",
+          "accept": [
+            "магази́не"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "consonant → +е: магазин → в магазине."
+        },
+        {
+          "id": "g1-3",
+          "text": "Де́ти в ___ (парк).",
+          "answer": "парке",
+          "accept": [
+            "па́рке"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "consonant → +е: парк → в парке."
+        },
+        {
+          "id": "g1-4",
+          "text": "Мы в ___ (шко́ла).",
+          "answer": "школе",
+          "accept": [
+            "шко́ле"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "-а → -е: школа → в школе."
+        },
+        {
+          "id": "g1-5",
+          "text": "Друг живёт в ___ (Варша́ва).",
+          "answer": "Варшаве",
+          "accept": [
+            "Варша́ве"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "-а → -е: Варшава → в Варшаве."
+        },
+        {
+          "id": "g1-6",
+          "text": "Сестра́ рабо́тает в ___ (о́фис).",
+          "answer": "офисе",
+          "accept": [
+            "о́фисе"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "consonant → +е: офис → в офисе."
+        },
+        {
+          "id": "g1-7",
+          "text": "Мы в ___ (музе́й).",
+          "answer": "музее",
+          "accept": [
+            "музе́е"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "-й → -е: музей → в музее."
+        },
+        {
+          "id": "g1-8",
+          "text": "Они́ живу́т в ___ (Гру́зия).",
+          "answer": "Грузии",
+          "accept": [
+            "Гру́зии"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "-ия → -ии: Грузия → в Грузии."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. The odd ones",
+      "instruction": "Выбери правильную форму.",
+      "instruction_uk": "Stressed -у (аэропорту, саду), a vanishing о (рынке), -ь → -и, and the words that never change.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Друг в ___.",
+          "answer": "аэропорту́",
+          "options": [
+            "аэропорту́",
+            "аэропо́рте",
+            "аэропо́рта"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "аэропорт → в аэропорту (stressed -у)."
+        },
+        {
+          "id": "g2-2",
+          "text": "Роди́тели в ___.",
+          "answer": "саду́",
+          "options": [
+            "саду́",
+            "са́де",
+            "са́да"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "сад → в саду (stressed -у)."
+        },
+        {
+          "id": "g2-3",
+          "text": "Ма́ма на ___.",
+          "answer": "ры́нке",
+          "options": [
+            "ры́нке",
+            "ры́нок",
+            "ры́ноке"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "рынок loses the о: на рынке."
+        },
+        {
+          "id": "g2-4",
+          "text": "Мы на ___.",
+          "answer": "пло́щади",
+          "options": [
+            "пло́щади",
+            "пло́щаде",
+            "пло́щадя"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "площадь (fem. -ь) → на площади."
+        },
+        {
+          "id": "g2-5",
+          "text": "Они́ в ___.",
+          "answer": "кафе́",
+          "options": [
+            "кафе́",
+            "кафе́е",
+            "кафи́"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "кафе never changes: в кафе."
+        },
+        {
+          "id": "g2-6",
+          "text": "Дави́т живёт в ___.",
+          "answer": "Тбили́си",
+          "options": [
+            "Тбили́си",
+            "Тбили́се",
+            "Тбили́сии"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "Тбилиси never changes."
+        },
+        {
+          "id": "g2-7",
+          "text": "Мы вме́сте в ___.",
+          "answer": "кино́",
+          "options": [
+            "кино́",
+            "кине́",
+            "кине́о"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "кино never changes: в кино."
+        },
+        {
+          "id": "g2-8",
+          "text": "Мы в ___.",
+          "answer": "метро́",
+          "options": [
+            "метро́",
+            "метре́",
+            "метри́"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "метро never changes: в метро."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. в or на?",
+      "instruction": "Выбери правильный вариант.",
+      "instruction_uk": "Buildings and cities → в. Open places, stations, events, work → на.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "(Where is dad?) Па́па ___.",
+          "answer": "на вокза́ле",
+          "options": [
+            "на вокза́ле",
+            "в вокза́ле",
+            "на вокза́л"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "вокзал → на вокзале (like Polish na dworcu)."
+        },
+        {
+          "id": "g3-2",
+          "text": "(Where is mum?) Ма́ма ___.",
+          "answer": "на рабо́те",
+          "options": [
+            "на рабо́те",
+            "в рабо́те",
+            "на рабо́та"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "работа → на работе (not Polish w pracy!)."
+        },
+        {
+          "id": "g3-3",
+          "text": "(Where are the children?) Де́ти ___.",
+          "answer": "в шко́ле",
+          "options": [
+            "в шко́ле",
+            "на шко́ле",
+            "в шко́ла"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "школа → в школе."
+        },
+        {
+          "id": "g3-4",
+          "text": "(Where is my brother?) Брат ___.",
+          "answer": "на по́чте",
+          "options": [
+            "на по́чте",
+            "в по́чте",
+            "на по́чта"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "почта → на почте (like Polish na poczcie)."
+        },
+        {
+          "id": "g3-5",
+          "text": "(Where does he work?) Он рабо́тает ___.",
+          "answer": "в ба́нке",
+          "options": [
+            "в ба́нке",
+            "на ба́нке",
+            "в банк"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "банк → в банке."
+        },
+        {
+          "id": "g3-6",
+          "text": "(Where is the shop?) Магази́н ___.",
+          "answer": "на у́лице",
+          "options": [
+            "на у́лице",
+            "в у́лице",
+            "на у́лица"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "улица → на улице."
+        },
+        {
+          "id": "g3-7",
+          "text": "(Where is she?) Она́ ___.",
+          "answer": "в больни́це",
+          "options": [
+            "в больни́це",
+            "на больни́це",
+            "в больни́ца"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "больница → в больнице."
+        },
+        {
+          "id": "g3-8",
+          "text": "(Where are the children?) Де́ти ___.",
+          "answer": "в па́рке",
+          "options": [
+            "в па́рке",
+            "на па́рке",
+            "в парк"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "парк → в парке."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 3,
+      "exercise_type": "cloze-text",
+      "title": "6. A phone call",
+      "instruction": "Впиши в или на и слово в нужной форме. Write в or на and the word in the right form.",
+      "instruction_uk": "In brackets is the dictionary form. Write the whole phrase: preposition + noun, e.g. в Риге.",
+      "text": "— Алло́, Дави́т! Где ты сейча́с? — Я {g4-1} (вокза́л). А ты? — Я {g4-2} (аэропо́рт). — Где А́нна? — Она́ {g4-3} (рабо́та), {g4-4} (кафе́). — А ма́ма? — Ма́ма {g4-5} (по́чта). — А где па́па? — Он {g4-6} (магази́н). — А мы? Мы {g4-7} (Ри́га)!",
+      "items": [
+        {
+          "id": "g4-1",
+          "answer": "на вокзале",
+          "accept": [
+            "на вокза́ле"
+          ],
+          "hint": "вокзал",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "вокзал → на вокзале."
+        },
+        {
+          "id": "g4-2",
+          "answer": "в аэропорту",
+          "accept": [
+            "в аэропорту́"
+          ],
+          "hint": "аэропорт",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "аэропорт → в аэропорту (stressed -у)."
+        },
+        {
+          "id": "g4-3",
+          "answer": "на работе",
+          "accept": [
+            "на рабо́те"
+          ],
+          "hint": "работа",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "работа → на работе."
+        },
+        {
+          "id": "g4-4",
+          "answer": "в кафе",
+          "accept": [
+            "в кафе́"
+          ],
+          "hint": "кафе",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "кафе never changes: в кафе."
+        },
+        {
+          "id": "g4-5",
+          "answer": "на почте",
+          "accept": [
+            "на по́чте"
+          ],
+          "hint": "почта",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "почта → на почте."
+        },
+        {
+          "id": "g4-6",
+          "answer": "в магазине",
+          "accept": [
+            "в магази́не"
+          ],
+          "hint": "магазин",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "магазин → в магазине."
+        },
+        {
+          "id": "g4-7",
+          "answer": "в Риге",
+          "accept": [
+            "в Ри́ге"
+          ],
+          "hint": "Рига",
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "Рига → в Риге."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 3,
+      "exercise_type": "sentence-building",
+      "title": "7. Build the sentence",
+      "instruction": "Составь предложение из слов.",
+      "instruction_uk": "Put the words in order and check each ending.",
+      "items": [
+        {
+          "id": "g5-1",
+          "words": [
+            "па́па",
+            "сейча́с",
+            "на",
+            "вокза́ле"
+          ],
+          "answer": "Па́па сейча́с на вокза́ле.",
+          "accept": [
+            "Папа сейчас на вокзале.",
+            "Сейча́с па́па на вокза́ле.",
+            "Сейчас папа на вокзале."
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "Dad is at the station now."
+        },
+        {
+          "id": "g5-2",
+          "words": [
+            "моя́",
+            "ма́ма",
+            "рабо́тает",
+            "в",
+            "больни́це"
+          ],
+          "answer": "Моя́ ма́ма рабо́тает в больни́це.",
+          "accept": [
+            "Моя мама работает в больнице."
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "My mum works in a hospital."
+        },
+        {
+          "id": "g5-3",
+          "words": [
+            "мы",
+            "вме́сте",
+            "в",
+            "кино́"
+          ],
+          "answer": "Мы вме́сте в кино́.",
+          "accept": [
+            "Мы вместе в кино.",
+            "Мы в кино́ вме́сте.",
+            "Мы в кино вместе."
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "We are at the cinema together."
+        },
+        {
+          "id": "g5-4",
+          "words": [
+            "где",
+            "вы",
+            "рабо́таете"
+          ],
+          "answer": "Где вы рабо́таете?",
+          "accept": [
+            "Где вы работаете?"
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "Where do you work? (вы → -ете)"
+        },
+        {
+          "id": "g5-5",
+          "words": [
+            "друг",
+            "живёт",
+            "в",
+            "Тбили́си"
+          ],
+          "answer": "Друг живёт в Тбили́си.",
+          "accept": [
+            "Друг живёт в Тбилиси."
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "Тбилиси never changes."
+        },
+        {
+          "id": "g5-6",
+          "words": [
+            "все",
+            "в",
+            "го́роде",
+            "а",
+            "я",
+            "до́ма"
+          ],
+          "answer": "Все в го́роде, а я до́ма.",
+          "accept": [
+            "Все в городе, а я дома.",
+            "Все в го́роде а я до́ма.",
+            "Все в городе а я дома."
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "Everyone is in town, but I am at home."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 3,
+      "exercise_type": "sentence-building",
+      "title": "8. Find the mistake",
+      "instruction": "В каждом предложении одна ошибка. Напиши предложение правильно.",
+      "instruction_uk": "One mistake per sentence. Some come from English, some from Polish.",
+      "items": [
+        {
+          "id": "g6-1",
+          "prompt": "Я живу́ в Ри́га.",
+          "answer": "Я живу́ в Ри́ге.",
+          "accept": [
+            "Я живу в Риге."
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "After в the noun changes: Рига → Риге."
+        },
+        {
+          "id": "g6-2",
+          "prompt": "Ма́ма в рабо́те.",
+          "answer": "Ма́ма на рабо́те.",
+          "accept": [
+            "Мама на работе."
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "работа takes на: на работе."
+        },
+        {
+          "id": "g6-3",
+          "prompt": "Сейча́с я в до́ме. (= I am at home.)",
+          "answer": "Сейча́с я до́ма.",
+          "accept": [
+            "Сейчас я дома."
+          ],
+          "grammar_point": "kalki-en",
+          "explanation": "«At home» is one word: дома. в доме means inside the building."
+        },
+        {
+          "id": "g6-4",
+          "prompt": "Па́па в вокза́ле.",
+          "answer": "Па́па на вокза́ле.",
+          "accept": [
+            "Папа на вокзале."
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "вокзал takes на."
+        },
+        {
+          "id": "g6-5",
+          "prompt": "Мой брат рабо́тает в магази́н.",
+          "answer": "Мой брат рабо́тает в магази́не.",
+          "accept": [
+            "Мой брат работает в магазине."
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "в + -е: в магазине."
+        },
+        {
+          "id": "g6-6",
+          "prompt": "Они́ на кафе́.",
+          "answer": "Они́ в кафе́.",
+          "accept": [
+            "Они в кафе."
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "кафе takes в and never changes."
+        },
+        {
+          "id": "g6-7",
+          "prompt": "Мы на аэропорту́.",
+          "answer": "Мы в аэропорту́.",
+          "accept": [
+            "Мы в аэропорту."
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "Polish na lotnisku misleads: Russian says в аэропорту."
+        },
+        {
+          "id": "g6-8",
+          "prompt": "Дави́т живёт в Тбили́се.",
+          "answer": "Дави́т живёт в Тбили́си.",
+          "accept": [
+            "Давит живёт в Тбилиси."
+          ],
+          "grammar_point": "miejscownik-miejsce",
+          "explanation": "Тбилиси never changes."
+        }
+      ]
+    }
+  ]
+}
