@@ -1,0 +1,155 @@
+{
+  "lesson_id": "pl-a2-81-kto-starszy-kto-lepszy",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: stopniowanie i porównania",
+  "instruction": "Trzy ćwiczenia z nowymi zdaniami.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Stopień wyższy i najwyższy",
+      "instruction": "Wpisz poprawną formę przymiotnika z nawiasu.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Zupa pomidorowa jest ___ (smaczny) niż zupa ogórkowa — przynajmniej dla mnie.",
+          "answer": "smaczniejsza",
+          "grammar_point": "stopniowanie"
+        },
+        {
+          "id": "h1-2",
+          "text": "Dzisiaj jest ___ (ciepły) niż wczoraj.",
+          "answer": "cieplej",
+          "accept": [
+            "cieplejszy",
+            "ciepliej"
+          ],
+          "grammar_point": "stopniowanie",
+          "explanation": "Przysłówek: ciepło → cieplej."
+        },
+        {
+          "id": "h1-3",
+          "text": "To był ___ (dobry) film, jaki widziałam w tym roku.",
+          "answer": "najlepszy",
+          "grammar_point": "stopniowanie"
+        },
+        {
+          "id": "h1-4",
+          "text": "Mój nowy telefon jest ___ (mały) niż stary.",
+          "answer": "mniejszy",
+          "grammar_point": "stopniowanie"
+        },
+        {
+          "id": "h1-5",
+          "text": "Ten sklep jest ___ (daleki) od domu niż tamten.",
+          "answer": "dalszy",
+          "grammar_point": "stopniowanie",
+          "explanation": "Daleki → dalszy (nieregularne, jak stary → starszy bez g)."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Niż czy od?",
+      "instruction": "Wybierz poprawne słowo.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Autobus jest wolniejszy ___ pociąg.",
+          "answer": "niż",
+          "options": [
+            "od",
+            "niż"
+          ],
+          "grammar_point": "porownania"
+        },
+        {
+          "id": "h2-2",
+          "text": "Mój kolega jest wyższy ___ mnie o głowę.",
+          "answer": "od",
+          "options": [
+            "od",
+            "niż"
+          ],
+          "grammar_point": "porownania"
+        },
+        {
+          "id": "h2-3",
+          "text": "Ta kawa jest gorsza ___ kawa w tamtej kawiarni.",
+          "answer": "niż",
+          "accept": [
+            "od"
+          ],
+          "options": [
+            "od",
+            "niż"
+          ],
+          "grammar_point": "porownania"
+        },
+        {
+          "id": "h2-4",
+          "text": "Styczeń jest zimniejszy ___ listopad.",
+          "answer": "niż",
+          "options": [
+            "od",
+            "niż"
+          ],
+          "grammar_point": "porownania"
+        },
+        {
+          "id": "h2-5",
+          "text": "Moja szefowa jest młodsza ___ mojego szefa z poprzedniej pracy.",
+          "answer": "od",
+          "options": [
+            "od",
+            "niż"
+          ],
+          "grammar_point": "porownania"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Ta książka jest bardziej dobra niż poprzednia.",
+          "answer": "Ta książka jest lepsza niż poprzednia.",
+          "grammar_point": "stopniowanie"
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Mój syn jest wysoki jak ja, ale moja córka jest najbardziej wysoka w klasie.",
+          "answer": "Mój syn jest wysoki jak ja, ale moja córka jest najwyższa w klasie.",
+          "grammar_point": "stopniowanie"
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Ten plan jest lepszy czym poprzedni.",
+          "answer": "Ten plan jest lepszy niż poprzedni.",
+          "accept": [
+            "Ten plan jest lepszy od poprzedniego."
+          ],
+          "grammar_point": "porownania"
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Moim zdaniu ta decyzja była dobra.",
+          "answer": "Moim zdaniem ta decyzja była dobra.",
+          "grammar_point": "porownania"
+        },
+        {
+          "id": "h3-5",
+          "prompt": "On gotuje tak dobrze tak moja mama.",
+          "answer": "On gotuje tak dobrze jak moja mama.",
+          "grammar_point": "porownania"
+        }
+      ]
+    }
+  ]
+}
