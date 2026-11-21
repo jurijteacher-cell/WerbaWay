@@ -16,7 +16,7 @@ export function envKey(names: string[], pattern: RegExp): string | null {
 }
 
 export const elevenKey = () =>
-  envKey(['ELEVENLABS_API_KEY', 'ELEVEN_LABS_API_KEY', 'ELEVENLABS_KEY', 'XI_API_KEY'], /ELEVEN/i);
+  envKey(['ELEVENLABS_API_KEY', 'ELEVEN_LABS_API_KEY', 'ELEVENLABS_KEY', 'XI_API_KEY', 'Eleven_Labs'], /ELEVEN/i);
 
 export function envNames(pattern: RegExp): string[] {
   return Object.keys(process.env).filter((n) => pattern.test(n));

@@ -11,7 +11,7 @@ import { envKey } from '@/lib/audio/generate';
 export const runtime = 'nodejs';
 
 const key = () =>
-  envKey(['UNSPLASH_ACCESS_KEY', 'UNSPLASH_API_KEY', 'UNSPLASH_KEY', 'NEXT_PUBLIC_UNSPLASH_ACCESS_KEY'], /UNSPLASH.*(ACCESS|API|KEY|CLIENT)/i);
+  envKey(['UNSPLASH_ACCESS_KEY', 'UNSPLASH_API_KEY', 'UNSPLASH_KEY', 'NEXT_PUBLIC_UNSPLASH_ACCESS_KEY', 'Unsplash'], /^(?!.*SECRET).*UNSPLASH/i);
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function slim(p: any) {
