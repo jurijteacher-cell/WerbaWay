@@ -1,0 +1,368 @@
+{
+  "lesson_id": "pl-a2-78-zeby",
+  "exercise_type": "fill-in-blank",
+  "title": "Po co? Żeby + bezokolicznik",
+  "instruction": "Pięć krótkich bloków. Na lekcji robimy bloki 1–3, bloki 4 i 5 — jeśli zostanie czas albo w domu.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "1. Połącz słowo z opisem",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "karton",
+          "right": "pudło z grubego papieru",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "taśma",
+          "right": "tym zaklejamy kartony",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "naklejka",
+          "right": "mała kartka z klejem",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "spakować",
+          "right": "włożyć rzeczy do kartonu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "rozpakować",
+          "right": "wyjąć rzeczy z kartonu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "przysługa",
+          "right": "pomoc, o którą prosimy znajomego",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "pożyczyć",
+          "right": "dać coś komuś na krótko",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "zdążyć",
+          "right": "przyjść na czas",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Żeby, bo czy że?",
+      "instruction": "Wybierz spójnik, który pasuje.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Zostajemy do siódmej, ___ spakować wszystkie rzeczy.",
+          "answer": "żeby",
+          "options": [
+            "żeby",
+            "bo",
+            "że"
+          ],
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel (po co?) → żeby + bezokolicznik."
+        },
+        {
+          "id": "g2-2",
+          "text": "Zostajemy do siódmej, ___ w sobotę przyjedzie firma.",
+          "answer": "bo",
+          "options": [
+            "bo",
+            "żeby",
+            "więc"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Przyczyna (dlaczego?) → bo."
+        },
+        {
+          "id": "g2-3",
+          "text": "___ co kupujesz taśmę? — Żeby zakleić kartony.",
+          "answer": "Po",
+          "options": [
+            "Po",
+            "Dla",
+            "Bo"
+          ],
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Pytanie o cel: Po co?"
+        },
+        {
+          "id": "g2-4",
+          "text": "Idę do sklepu, ___ kupić naklejki.",
+          "answer": "żeby",
+          "options": [
+            "żeby",
+            "że",
+            "bo"
+          ],
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel → żeby kupić."
+        },
+        {
+          "id": "g2-5",
+          "text": "Wiem, ___ jutro jest przeprowadzka.",
+          "answer": "że",
+          "options": [
+            "że",
+            "żeby",
+            "bo"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Wiem, że… — treść, nie cel."
+        },
+        {
+          "id": "g2-6",
+          "text": "Wyszłam wcześniej, ___ się nie spóźnić na pociąg.",
+          "answer": "żeby",
+          "options": [
+            "żeby",
+            "bo",
+            "więc"
+          ],
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel → żeby się nie spóźnić."
+        },
+        {
+          "id": "g2-7",
+          "text": "Dzwonię do ciebie, ___ zapytać o kwiaty.",
+          "answer": "żeby",
+          "options": [
+            "żeby",
+            "że",
+            "dlatego"
+          ],
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel → żeby zapytać."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Cel czy przyczyna?",
+      "instruction": "Wpisz żeby albo bo.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Pracuję dużo, ___ kupić mieszkanie.",
+          "answer": "żeby",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel + bezokolicznik → żeby."
+        },
+        {
+          "id": "g3-2",
+          "text": "Pracuję dużo, ___ mam nowy projekt.",
+          "answer": "bo",
+          "accept": [
+            "ponieważ"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Przyczyna → bo."
+        },
+        {
+          "id": "g3-3",
+          "text": "___ zdążyć na pociąg, wzięłam taksówkę.",
+          "answer": "Żeby",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel na początku zdania → Żeby…"
+        },
+        {
+          "id": "g3-4",
+          "text": "Uczę się polskiego, ___ znaleźć lepszą pracę.",
+          "answer": "żeby",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel → żeby."
+        },
+        {
+          "id": "g3-5",
+          "text": "Uczę się polskiego, ___ mój mąż jest Polakiem.",
+          "answer": "bo",
+          "accept": [
+            "ponieważ"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Przyczyna → bo."
+        },
+        {
+          "id": "g3-6",
+          "text": "Zapiszę to w kalendarzu, ___ nie zapomnieć.",
+          "answer": "żeby",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel → żeby nie zapomnieć."
+        },
+        {
+          "id": "g3-7",
+          "text": "Kasia kupi naklejki, ___ podpisać kartony.",
+          "answer": "żeby",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel → żeby podpisać."
+        },
+        {
+          "id": "g3-8",
+          "text": "— Po co ci taśma? — ___ zakleić kartony.",
+          "answer": "Żeby",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Odpowiedź na „po co?” → Żeby…"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Żeby nie… i grzeczna prośba",
+      "instruction": "Wybierz dobrą formę.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Zapisuję to, żeby nie ___.",
+          "answer": "zapomnieć",
+          "options": [
+            "zapomnieć",
+            "zapominam",
+            "zapomniałam"
+          ],
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Po żeby — bezokolicznik (zwykle dokonany)."
+        },
+        {
+          "id": "g4-2",
+          "text": "Wstaję o szóstej, żeby się nie ___.",
+          "answer": "spóźnić",
+          "options": [
+            "spóźnić",
+            "spóźniam",
+            "spóźnię"
+          ],
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Żeby + bezokolicznik: się nie spóźnić."
+        },
+        {
+          "id": "g4-3",
+          "text": "Pakujemy komputery osobno, żeby ich nie ___.",
+          "answer": "uszkodzić",
+          "options": [
+            "uszkodzić",
+            "uszkodzimy",
+            "uszkodzili"
+          ],
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Żeby + bezokolicznik."
+        },
+        {
+          "id": "g4-4",
+          "text": "Mam do ciebie ___. Pomożesz mi?",
+          "answer": "prośbę",
+          "options": [
+            "prośbę",
+            "prośba",
+            "prośby"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Mam co? — biernik: prośbę."
+        },
+        {
+          "id": "g4-5",
+          "text": "Tomku, czy ___ mi pożyczyć taśmę?",
+          "answer": "mógłbyś",
+          "options": [
+            "mógłbyś",
+            "mógłby Pan",
+            "mogłabyś"
+          ],
+          "grammar_point": "warunkowy-prosby",
+          "explanation": "Do kolegi na ty: mógłbyś."
+        },
+        {
+          "id": "g4-6",
+          "text": "Proszę cię ___ pomoc.",
+          "answer": "o",
+          "options": [
+            "o",
+            "na",
+            "za"
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Prosić kogo? o co? — o pomoc."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "5. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Idę do sklepu, że kupić chleb.",
+          "answer": "Idę do sklepu, żeby kupić chleb.",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel → żeby, nie że."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Przyszłam, żebym pomóc.",
+          "answer": "Przyszłam, żeby pomóc.",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Ta sama osoba → żeby + bezokolicznik."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Proszę cię pomóc mi z kartonami.",
+          "answer": "Proszę cię o pomoc z kartonami.",
+          "accept": [
+            "Proszę, pomóż mi z kartonami."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Prosić o + biernik: o pomoc."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Żeby nie zapominać, zapisałam to.",
+          "answer": "Żeby nie zapomnieć, zapisałam to.",
+          "accept": [
+            "Zapisałam to, żeby nie zapomnieć."
+          ],
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Jedna czynność → dokonany: zapomnieć."
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Wyszedłem wcześniej, bo zdążyć na autobus.",
+          "answer": "Wyszedłem wcześniej, żeby zdążyć na autobus.",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel + bezokolicznik → żeby."
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Uczę się, żeby dobrze zdam egzamin.",
+          "answer": "Uczę się, żeby dobrze zdać egzamin.",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Po żeby — bezokolicznik: zdać."
+        }
+      ]
+    }
+  ]
+}

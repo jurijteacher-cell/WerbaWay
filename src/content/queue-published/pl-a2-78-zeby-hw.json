@@ -1,0 +1,188 @@
+{
+  "lesson_id": "pl-a2-78-zeby",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: po co? — żeby…",
+  "instruction": "Trzy bloki ćwiczeń. Potem napisz wiadomość z prośbą — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Wpisz spójnik",
+      "instruction": "Wpisz żeby, bo albo że.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Oszczędzam pieniądze, ___ pojechać na wakacje.",
+          "answer": "żeby",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel → żeby."
+        },
+        {
+          "id": "h1-2",
+          "text": "Nie piję kawy wieczorem, ___ potem nie mogę spać.",
+          "answer": "bo",
+          "accept": [
+            "ponieważ"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Przyczyna → bo."
+        },
+        {
+          "id": "h1-3",
+          "text": "Mama dzwoni, ___ powiedzieć, że dojechała.",
+          "answer": "żeby",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel → żeby powiedzieć."
+        },
+        {
+          "id": "h1-4",
+          "text": "Myślę, ___ to dobry pomysł.",
+          "answer": "że",
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Myślę, że…"
+        },
+        {
+          "id": "h1-5",
+          "text": "___ nie stać w korku, jeżdżę rowerem.",
+          "answer": "Żeby",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel na początku → Żeby…"
+        },
+        {
+          "id": "h1-6",
+          "text": "Wzięłam parasol, ___ nie zmoknąć.",
+          "answer": "żeby",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel → żeby nie zmoknąć."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Wybierz formę",
+      "instruction": "Wybierz dobrą formę.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "— Po co idziesz na pocztę? — ___ nadać paczkę.",
+          "answer": "Żeby",
+          "options": [
+            "Żeby",
+            "Bo",
+            "Że"
+          ],
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Po co? → Żeby…"
+        },
+        {
+          "id": "h2-2",
+          "text": "— Dlaczego idziesz na pocztę? — ___ muszę nadać paczkę.",
+          "answer": "Bo",
+          "options": [
+            "Bo",
+            "Żeby",
+            "Że"
+          ],
+          "grammar_point": "zdania-zlozone-ze",
+          "explanation": "Dlaczego? → Bo…"
+        },
+        {
+          "id": "h2-3",
+          "text": "Zadzwonię, żeby ___ o godzinę spotkania.",
+          "answer": "zapytać",
+          "options": [
+            "zapytać",
+            "pytam",
+            "zapytam"
+          ],
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Żeby + bezokolicznik."
+        },
+        {
+          "id": "h2-4",
+          "text": "Mam do Pani ___.",
+          "answer": "prośbę",
+          "options": [
+            "prośbę",
+            "pytać",
+            "prosić"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Mam do Pani prośbę."
+        },
+        {
+          "id": "h2-5",
+          "text": "Czy ___ Pani mi pomóc?",
+          "answer": "mogłaby",
+          "options": [
+            "mogłaby",
+            "mógłby",
+            "mogłabyś"
+          ],
+          "grammar_point": "warunkowy-prosby",
+          "explanation": "Do kobiety na Pani: mogłaby Pani."
+        },
+        {
+          "id": "h2-6",
+          "text": "Dziękuję ci ___ pomoc!",
+          "answer": "za",
+          "options": [
+            "za",
+            "o",
+            "na"
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Dziękować za + biernik."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Przyjechałam do Polski, że pracować.",
+          "answer": "Przyjechałam do Polski, żeby pracować.",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel → żeby."
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Uczę się, bo zdać egzamin.",
+          "answer": "Uczę się, żeby zdać egzamin.",
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Cel + bezokolicznik → żeby."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Proszę Panią pomóc.",
+          "answer": "Proszę Panią o pomoc.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Prosić o + biernik."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Wstałam wcześnie, żeby nie spóźniać się.",
+          "answer": "Wstałam wcześnie, żeby się nie spóźnić.",
+          "accept": [
+            "Wstałam wcześnie, żeby nie spóźnić się."
+          ],
+          "grammar_point": "zdania-celu-zeby",
+          "explanation": "Jedna czynność → dokonany: spóźnić się."
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Dziękuję o pomoc.",
+          "answer": "Dziękuję za pomoc.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Dziękować za."
+        }
+      ]
+    }
+  ]
+}

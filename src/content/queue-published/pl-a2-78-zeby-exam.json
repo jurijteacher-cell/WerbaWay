@@ -1,0 +1,128 @@
+{
+  "lesson_id": "pl-a2-78-zeby",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie A2",
+  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "estimated_minutes": 10,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "source": "section:1",
+      "exercise_type": "true-false",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Pięć zdań o wiadomości Oleny. Odpowiadaj tylko na podstawie tekstu.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "W piątek zespół zostaje w pracy do siódmej.",
+          "answer": true,
+          "explanation": "Zostajemy do siódmej, żeby spakować wszystkie rzeczy…"
+        },
+        {
+          "id": "e1-2",
+          "statement": "Kartony przyniesie Kasia.",
+          "answer": false,
+          "explanation": "Tomek przyniesie kartony z supermarketu."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Każdy dział ma naklejki w innym kolorze.",
+          "answer": true,
+          "explanation": "…każdy dział ma swój kolor."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Firma przeprowadzkowa przyjedzie w piątek wieczorem.",
+          "answer": false,
+          "explanation": "…w sobotę rano."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Olena szuka kogoś, kto weźmie kwiaty do domu.",
+          "answer": true,
+          "explanation": "Czy ktoś mógłby wziąć do domu kwiaty z kuchni?"
+        }
+      ]
+    },
+    {
+      "block_id": "e2",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-78-zeby-e2-dialog.mp3",
+      "exercise_type": "true-false",
+      "title": "Słuchanie: prawda czy fałsz?",
+      "instruction": "Usłyszysz rozmowę Oleny z panią Agnieszką dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+      "items": [
+        {
+          "id": "e2-1",
+          "statement": "Pani Agnieszka ma samochód.",
+          "answer": true,
+          "explanation": "Wiem, że ma Pani samochód."
+        },
+        {
+          "id": "e2-2",
+          "statement": "Firma przeprowadzkowa przyjedzie w niedzielę.",
+          "answer": false,
+          "explanation": "Przecież w sobotę przyjedzie firma."
+        },
+        {
+          "id": "e2-3",
+          "statement": "W kuchni są cztery kwiaty.",
+          "answer": true,
+          "explanation": "Trzy duże i jeden mały."
+        },
+        {
+          "id": "e2-4",
+          "statement": "Pani Agnieszka przyjedzie po kwiaty w sobotę.",
+          "answer": false,
+          "explanation": "Przyjadę w piątek o szóstej…"
+        }
+      ]
+    },
+    {
+      "block_id": "e3",
+      "exam_skill": "sluchanie",
+      "max_plays": 2,
+      "audio_url": "/audio/pl-a2-78-zeby-e2-dialog.mp3",
+      "exercise_type": "multiple-choice",
+      "title": "Słuchanie: a, b czy c?",
+      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
+      "items": [
+        {
+          "id": "e3-1",
+          "question": "Co zrobi Olena, żeby podziękować?",
+          "options": [
+            "upiecze sernik",
+            "kupi kwiaty",
+            "zaprosi na obiad"
+          ],
+          "answer": "upiecze sernik",
+          "explanation": "Upiekę sernik, żeby podziękować."
+        },
+        {
+          "id": "e3-2",
+          "question": "Po co Olena ma przyjść wcześniej w poniedziałek?",
+          "options": [
+            "żeby pomóc z dokumentami",
+            "żeby rozpakować komputery",
+            "żeby podlać kwiaty"
+          ],
+          "answer": "żeby pomóc z dokumentami",
+          "explanation": "…żeby pomóc mi z dokumentami."
+        },
+        {
+          "id": "e3-3",
+          "question": "O której Olena ma przyjść w poniedziałek?",
+          "options": [
+            "o 8:30",
+            "o 10:00",
+            "o 6:00"
+          ],
+          "answer": "o 8:30",
+          "explanation": "O wpół do dziewiątej."
+        }
+      ]
+    }
+  ]
+}
