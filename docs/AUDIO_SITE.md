@@ -19,5 +19,11 @@
 3. `/api/audio/_status?lesson={id}` → усі `ready: true`.
 4. У маніфесті `audio[]` — шляхи `/audio/*.mp3`; у TEACHER — транскрипти й ключі, посилання на сайт замість файлу.
 
+## Пастка
+Кілька `/audio/*.mp3` одночасно → 503 (ліміт паралельності ElevenLabs). Запускати **по одному**, з повтором після паузи ~4 с; перший запит після деплою може дати 404, поки не доїде нова збірка — чекати `_status` (`files` не порожній).
+
+## Станом на 21.11.2026
+Озвучено через сайт: A2 73–79 (`-e2-dialog.mp3`) і A2 80 (`-czytanie`, `-e2-dialog`). Notion для нових лекцій не ведемо — лише сайт.
+
 ## Env у Vercel
 `Eleven_Labs` (ключ ElevenLabs), `Unsplash` (Access Key). Пошук ключів — `elevenKey()` у `src/lib/audio/generate.ts`. Станом на 21.11.2026 `api.unsplash.com` повертав 401 для ключа Unsplash — фото обираються через unsplash.com.
