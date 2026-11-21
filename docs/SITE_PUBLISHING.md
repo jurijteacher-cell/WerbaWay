@@ -37,19 +37,12 @@ Notion — `docs/NOTION_STRUCTURE.md`. Пріоритет при супереч�
 
 ## 1a. Джерело правди — сайт
 
-Лекція живе **в репо**. Notion лишається вітриною для вже опублікованих уроків і архівом,
-а не другим місцем, де лекцію правлять.
+Лекція живе **в репо**. Notion не використовується (рішення Юри, 21.11.2026): сторінок там не створювати, не оновлювати й не fetch-ити.
 
-- Нова лекція пишеться одразу під сайт (`src/content/pages/…`). Сторінка в Notion — за потреби,
-  з тими самими embed-ами й посиланням на `/learn/<slug>`.
-- Правка тексту, вправи чи домашки робиться **в репо**. Та сама правка руками в Notion не робиться:
-  інакше через місяць ніхто не знає, де справжня версія.
-- Готові лекції, що вже лежать у Notion, не переписуються масово. Торкаєшся лекції — зводиш
-  її на сайті (маршрут A нижче) і далі правиш тільки тут.
-- `notion:` у frontmatter — вказівник на дзеркало, не на джерело.
-
-Це правило чинне, поки Юра не скаже інакше. Якщо він просить правку саме в Notion —
-роби в Notion і скажи в чаті, що сайт і Notion розійшлися в цій лекції.
+- Нова лекція пишеться одразу під сайт (`src/content/pages/…`, `src/content/teacher-pages/…`).
+- Правка тексту, вправи чи домашки робиться **в репо**.
+- `notion:` у frontmatter старих уроків — лише історичний вказівник; у нових не ставити.
+- Старі уроки, що лежать лише в Notion або застаріли відносно нього, зводяться на сайт окремим замовленням (`STATE.md`).
 
 ---
 
@@ -179,27 +172,12 @@ notion: https://app.notion.com/p/…
 
 ---
 
-## 7. Два маршрути публікації
+## 7. Публікація
 
-### A. Лекція вже в Notion — імпорт
+Пишеш `pages/<slug>.md` і `teacher-pages/<slug>.md` з того самого тексту за форматом §4–§5.
+Еталон структури — найсвіжіша лекція того ж модуля в `src/content/pages/`. Далі — §8 (мови), §10 (перевірка), §11 (пуш).
 
-```bash
-NOTION_TOKEN=… node scripts/notion-import.mjs --only "<фрагмент назви>" --dry   # подивитися
-NOTION_TOKEN=… node scripts/notion-import.mjs --only "<фрагмент назви>"
-node scripts/pair-teacher-pages.mjs      # зв'язати TEACHER-сторінки, яких не зв'язало по вправах
-node scripts/postprocess-pages.mjs       # домашку — в /hw, посилання Notion → адреси сайту
-cat src/content/pages/_import-report.json  # що імпортовано, що пропущено, які пари не знайшлись
-```
-
-Імпорт сам скачує картинки в `public/content/<slug>/` (посилання Notion живуть годину — тягнути
-їх у рендер не можна).
-
-### B. Токена немає або лекція пишеться одразу під сайт
-
-Пишеш `pages/<slug>.md` і `teacher-pages/<slug>.md` руками з того самого тексту, за форматом §4–§5.
-Еталон, з якого беруть структуру: `src/content/pages/pl-a2-53-z-kim-pracuje.md`.
-
-У обох маршрутах далі — §8 (мови), §9 (перевірка), §10 (пуш).
+(Імпорт з Notion — `scripts/notion-import.mjs` — лишається в репо лише для старих уроків і для нових лекцій не використовується.)
 
 ---
 
@@ -295,31 +273,18 @@ LESSON=<lesson_id> npm run test:lesson    # смоук: гортання, кож
 
 ---
 
-## 11. Пуш — через гілку й PR, не в `main`
+## 11. Пуш — один коміт у `main`
 
-`main` деплоїться на werbaway.com автоматично, тому проміжний стан у `main` — це зламана
-лекція в учня. Тому:
-
-```bash
-git checkout -b lesson/<slug>
-git add src/content content-queue
-git commit -m "lesson: <slug> — сторінка учня, TEACHER, вправи"
-git push -u origin lesson/<slug>
-gh pr create --fill                 # або посилання, яке віддав push
-```
-
-На PR `.github/workflows/lesson-checks.yml` проганяє `check:lesson --changed`,
-`check:embed-theme`, `tsc` і білд — лише по лекціях цього PR, спадщина не блокує.
-Vercel на гілку дає preview-адресу: лекцію видно до мерджу.
-
-Мерджити, коли перевірки зелені. Після мерджу — остання перевірка проти прода:
+Рішення Юри (21.11.2026): після локальних перевірок (§10) — **один коміт і один push прямо в `main`**, без гілки й PR. Один коміт = одна лекція цілком (сторінка + TEACHER + вправи + манифест + переклади + статус у карті), тому проміжного стану в `main` немає.
 
 ```bash
-npm run check:lesson <lesson_id> --remote
+git add src/content content-queue docs
+git commit -m "lesson: <slug> — сторінка учня, TEACHER, вправи, переклади"
+git -c push.negotiate=true push origin HEAD:main
 ```
 
-Один PR = одна лекція цілком (сторінка + TEACHER + вправи + манифест + переклади).
-Пушити прямо в `main` — тільки якщо Юра сам про це просить.
+- Push 403 → `add_repo(jurijteacher-cell/WerbaWay, access=push)` (дозвіл Юри постійний, див. `CLAUDE.md`) → повтор. 503 → почекати й повторити.
+- Після деплою: `python3 scripts/check_embeds.py <lesson_id> --remote` = ✓ і WebFetch `https://werba-way.vercel.app/embed/<lesson_id>/hw` показує завдання.
 
 ---
 
@@ -353,8 +318,8 @@ npm run check:lesson <lesson_id> --remote
 [ ] LESSON=<id> npm run test:lesson — зелено
 [ ] очима: обкладинка, порядок розділів, якість вправ, план у TEACHER
 [ ] i18n: extract → переклад ru/pl/en → i18n-merge → npm run check:i18n -- <id> = ✓ (у тому ж PR, без відкладання)
-[ ] гілка lesson/<slug> → PR → перевірки зелені → мердж
-[ ] після мерджу: npm run check:lesson <id> --remote і лекція відкрита на werbaway.com
+[ ] один коміт → push у main
+[ ] після деплою: check_embeds.py <id> --remote = ✓ і лекція відкрита на werbaway.com
 ```
 
 ---
