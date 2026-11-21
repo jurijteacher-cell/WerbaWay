@@ -1,0 +1,958 @@
+{
+  "lesson_id": "ru-a0-04-my-vy-oni",
+  "exercise_type": "fill-in-blank",
+  "title": "Exercises: мы, вы, они",
+  "instruction": "Try first, then press Sprawdź (check).",
+  "eyebrow": "exercises",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "Text. Put the sentences in order",
+      "instruction": "Что бы́ло снача́ла, а что пото́м? Кли́кай предложе́ния по о́череди.",
+      "instruction_uk": "Click the sentences in the order of the text «Моя семья».",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "Э́то моя́ семья́.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "Мы живём в Ри́ге.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Мой па́па рабо́тает в магази́не.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Ма́ма и брат рабо́тают в кафе́.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "Ве́чером мы смо́трим телеви́зор.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Мы гото́вим у́жин вме́сте.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Text. Anna tells it herself",
+      "instruction": "Выбери форму глагола. Choose the right verb form for each gap.",
+      "instruction_uk": "Anna retells her text. Pick the form that fits who is doing it: я, мы, он, они.",
+      "text": "Меня́ зову́т А́нна. Мы {t2-1} в Ри́ге. Мой па́па {t2-2} в магази́не. Ма́ма и брат {t2-3} в кафе́. Они́ о́чень {t2-4} му́зыку. Ве́чером мы {t2-5} телеви́зор и {t2-6} у́жин вме́сте. Мы {t2-7} по-ру́сски и немно́го по-англи́йски.",
+      "items": [
+        {
+          "id": "t2-1",
+          "answer": "живём",
+          "options": [
+            "живём",
+            "живёт",
+            "живу́т"
+          ],
+          "hint": "жить",
+          "grammar_point": "czytanie",
+          "explanation": "Look at the subject: мы → -ем / -им, он → -ет / -ит, они → -ют / -ят."
+        },
+        {
+          "id": "t2-2",
+          "answer": "рабо́тает",
+          "options": [
+            "рабо́тает",
+            "рабо́тают",
+            "рабо́таем"
+          ],
+          "hint": "работать",
+          "grammar_point": "czytanie",
+          "explanation": "Look at the subject: мы → -ем / -им, он → -ет / -ит, они → -ют / -ят."
+        },
+        {
+          "id": "t2-3",
+          "answer": "рабо́тают",
+          "options": [
+            "рабо́тают",
+            "рабо́тает",
+            "рабо́таете"
+          ],
+          "hint": "работать",
+          "grammar_point": "czytanie",
+          "explanation": "Look at the subject: мы → -ем / -им, он → -ет / -ит, они → -ют / -ят."
+        },
+        {
+          "id": "t2-4",
+          "answer": "лю́бят",
+          "options": [
+            "лю́бят",
+            "лю́бит",
+            "лю́бим"
+          ],
+          "hint": "любить",
+          "grammar_point": "czytanie",
+          "explanation": "Look at the subject: мы → -ем / -им, он → -ет / -ит, они → -ют / -ят."
+        },
+        {
+          "id": "t2-5",
+          "answer": "смо́трим",
+          "options": [
+            "смо́трим",
+            "смо́трит",
+            "смо́трят"
+          ],
+          "hint": "смотреть",
+          "grammar_point": "czytanie",
+          "explanation": "Look at the subject: мы → -ем / -им, он → -ет / -ит, они → -ют / -ят."
+        },
+        {
+          "id": "t2-6",
+          "answer": "гото́вим",
+          "options": [
+            "гото́вим",
+            "гото́вит",
+            "гото́вят"
+          ],
+          "hint": "готовить",
+          "grammar_point": "czytanie",
+          "explanation": "Look at the subject: мы → -ем / -им, он → -ет / -ит, они → -ют / -ят."
+        },
+        {
+          "id": "t2-7",
+          "answer": "говори́м",
+          "options": [
+            "говори́м",
+            "говори́те",
+            "говоря́т"
+          ],
+          "hint": "говорить",
+          "grammar_point": "czytanie",
+          "explanation": "Look at the subject: мы → -ем / -им, он → -ет / -ит, они → -ют / -ят."
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. мы, вы, они — verbs in -ать",
+      "instruction": "Впиши глагол в нужной форме.",
+      "instruction_uk": "мы → -ем · вы → -ете · они → -ют. Take off -ть, add the ending.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Мы ___ (чита́ть) журна́л.",
+          "answer": "читаем",
+          "accept": [
+            "чита́ем"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "мы → -ем: читаем."
+        },
+        {
+          "id": "g1-2",
+          "text": "Вы ___ (знать), где кафе́?",
+          "answer": "знаете",
+          "accept": [
+            "зна́ете"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "вы → -ете: знаете."
+        },
+        {
+          "id": "g1-3",
+          "text": "Они́ ___ (рабо́тать) в магази́не.",
+          "answer": "работают",
+          "accept": [
+            "рабо́тают"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "они → -ют: работают."
+        },
+        {
+          "id": "g1-4",
+          "text": "Мы ___ (игра́ть) в футбо́л.",
+          "answer": "играем",
+          "accept": [
+            "игра́ем"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "мы → -ем: играем."
+        },
+        {
+          "id": "g1-5",
+          "text": "Вы ___ (понима́ть) по-англи́йски?",
+          "answer": "понимаете",
+          "accept": [
+            "понима́ете"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "вы → -ете: понимаете."
+        },
+        {
+          "id": "g1-6",
+          "text": "Они́ ___ (слу́шать) ра́дио.",
+          "answer": "слушают",
+          "accept": [
+            "слу́шают"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "они → -ют: слушают."
+        },
+        {
+          "id": "g1-7",
+          "text": "Что вы ___ (де́лать)?",
+          "answer": "делаете",
+          "accept": [
+            "де́лаете"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "вы → -ете: делаете."
+        },
+        {
+          "id": "g1-8",
+          "text": "Роди́тели ча́сто ___ (чита́ть) газе́ту.",
+          "answer": "читают",
+          "accept": [
+            "чита́ют"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "Parents = они → -ют: читают."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. жить — the one that breaks the pattern",
+      "instruction": "Выбери форму глагола жить.",
+      "instruction_uk": "жить: живу́, живёшь, живёт, живём, живёте, живу́т — the они form ends in -ут, not -ют.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Мы ___ в Ри́ге.",
+          "answer": "живём",
+          "options": [
+            "живём",
+            "жива́ем",
+            "живим"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "мы + жить → живём (ё, stressed)."
+        },
+        {
+          "id": "g2-2",
+          "text": "Они́ ___ в Варша́ве.",
+          "answer": "живу́т",
+          "options": [
+            "живу́т",
+            "живют",
+            "живят"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "они + жить → живут: -ут, not -ют."
+        },
+        {
+          "id": "g2-3",
+          "text": "Вы ___ в Ри́ге?",
+          "answer": "живёте",
+          "options": [
+            "живёте",
+            "живите",
+            "жива́ете"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "вы + жить → живёте."
+        },
+        {
+          "id": "g2-4",
+          "text": "Роди́тели ___ в Ри́ге.",
+          "answer": "живу́т",
+          "options": [
+            "живу́т",
+            "живёт",
+            "жива́ют"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "Parents = они → живут."
+        },
+        {
+          "id": "g2-5",
+          "text": "Где вы ___?",
+          "answer": "живёте",
+          "options": [
+            "живёте",
+            "живёшь",
+            "живи́те"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "вы → -ёте; ты would be живёшь."
+        },
+        {
+          "id": "g2-6",
+          "text": "Мы ___ вме́сте.",
+          "answer": "живём",
+          "options": [
+            "живём",
+            "живёт",
+            "живу́т"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "мы → живём."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. мы, вы, они — verbs in -ить and -еть",
+      "instruction": "Впиши глагол в нужной форме.",
+      "instruction_uk": "мы → -им · вы → -ите · они → -ят. And remember: ты -ишь → они -ят.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Мы ___ (говори́ть) по-ру́сски.",
+          "answer": "говорим",
+          "accept": [
+            "говори́м"
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "мы → -им: говорим."
+        },
+        {
+          "id": "g3-2",
+          "text": "Вы ___ (смотре́ть) фильм?",
+          "answer": "смотрите",
+          "accept": [
+            "смо́трите"
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "вы → -ите: смотрите."
+        },
+        {
+          "id": "g3-3",
+          "text": "Они́ ___ (люби́ть) му́зыку.",
+          "answer": "любят",
+          "accept": [
+            "лю́бят"
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "они → -ят: любят. (The л appears only in я: люблю.)"
+        },
+        {
+          "id": "g3-4",
+          "text": "Мы ___ (смотре́ть) футбо́л.",
+          "answer": "смотрим",
+          "accept": [
+            "смо́трим"
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "мы → -им: смотрим."
+        },
+        {
+          "id": "g3-5",
+          "text": "Вы ___ (говори́ть) по-неме́цки?",
+          "answer": "говорите",
+          "accept": [
+            "говори́те"
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "вы → -ите: говорите."
+        },
+        {
+          "id": "g3-6",
+          "text": "Они́ ___ (говори́ть) по-по́льски.",
+          "answer": "говорят",
+          "accept": [
+            "говоря́т"
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "они → -ят: говорят."
+        },
+        {
+          "id": "g3-7",
+          "text": "Мы о́чень ___ (люби́ть) чай.",
+          "answer": "любим",
+          "accept": [
+            "лю́бим"
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "мы → -им: любим."
+        },
+        {
+          "id": "g3-8",
+          "text": "Вы ___ (люби́ть) те́ннис?",
+          "answer": "любите",
+          "accept": [
+            "лю́бите"
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "вы → -ите: любите."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. ты or вы?",
+      "instruction": "Кто говорит и с кем? Выбери правильный вариант.",
+      "instruction_uk": "One friend or relative → ты. One person you don't know or must respect → вы. Two or more people → вы.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "(Your friend Davit.) ___ по-ру́сски?",
+          "answer": "Ты говори́шь",
+          "options": [
+            "Ты говори́шь",
+            "Вы говори́те",
+            "Ты говори́те"
+          ],
+          "grammar_point": "pan-pani",
+          "explanation": "A friend → ты → говоришь."
+        },
+        {
+          "id": "g4-2",
+          "text": "(Your new boss, a woman.) ___ в Ри́ге?",
+          "answer": "Вы живёте",
+          "options": [
+            "Вы живёте",
+            "Ты живёшь",
+            "Вы живёшь"
+          ],
+          "grammar_point": "pan-pani",
+          "explanation": "A boss → вы + the вы-ending: живёте."
+        },
+        {
+          "id": "g4-3",
+          "text": "(You ask two friends.) ___ смо́трите фильм?",
+          "answer": "Вы",
+          "options": [
+            "Вы",
+            "Ты",
+            "Мы"
+          ],
+          "grammar_point": "pan-pani",
+          "explanation": "Two people → вы, even if they are friends."
+        },
+        {
+          "id": "g4-4",
+          "text": "(An older man in a café.) ___ лю́бите чай?",
+          "answer": "Вы",
+          "options": [
+            "Вы",
+            "Ты",
+            "Они́"
+          ],
+          "grammar_point": "pan-pani",
+          "explanation": "An unknown older person → вы."
+        },
+        {
+          "id": "g4-5",
+          "text": "(Your sister.) Где ___ рабо́таешь?",
+          "answer": "ты",
+          "options": [
+            "ты",
+            "он",
+            "мы"
+          ],
+          "grammar_point": "pan-pani",
+          "explanation": "Family → ты; the ending -ешь also says ты."
+        },
+        {
+          "id": "g4-6",
+          "text": "(To a shop assistant you don't know.) Вы ___ в магази́не?",
+          "answer": "рабо́таете",
+          "options": [
+            "рабо́таете",
+            "рабо́таешь",
+            "рабо́тают"
+          ],
+          "grammar_point": "pan-pani",
+          "explanation": "вы + -ете: работаете."
+        },
+        {
+          "id": "g4-7",
+          "text": "(To mum and dad together.) Ма́ма и па́па, ___ ча́сто смо́трите телеви́зор?",
+          "answer": "вы",
+          "options": [
+            "вы",
+            "ты",
+            "я"
+          ],
+          "grammar_point": "pan-pani",
+          "explanation": "Two people, even your parents → вы."
+        },
+        {
+          "id": "g4-8",
+          "text": "(To your mum.) ___ лю́бишь чай?",
+          "answer": "Ты",
+          "options": [
+            "Ты",
+            "Вы",
+            "Она́"
+          ],
+          "grammar_point": "pan-pani",
+          "explanation": "One close person → ты → любишь."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 3,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Mixed — all six persons",
+      "instruction": "Впиши глагол в нужной форме.",
+      "instruction_uk": "Now all six persons and both groups in one exercise. Look at the subject first!",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Я ___ (люби́ть) гото́вить.",
+          "answer": "люблю",
+          "accept": [
+            "люблю́"
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "я → люблю (with the л)."
+        },
+        {
+          "id": "g5-2",
+          "text": "Мы ___ (жить) в Ри́ге.",
+          "answer": "живём",
+          "accept": [
+            "живем"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "мы + жить → живём."
+        },
+        {
+          "id": "g5-3",
+          "text": "Они́ ___ (понима́ть) по-ру́сски.",
+          "answer": "понимают",
+          "accept": [
+            "понима́ют"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "они → -ют."
+        },
+        {
+          "id": "g5-4",
+          "text": "Ты ___ (смотре́ть) фильм?",
+          "answer": "смотришь",
+          "accept": [
+            "смо́тришь"
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "ты → -ишь."
+        },
+        {
+          "id": "g5-5",
+          "text": "Вы ___ (говори́ть) по-англи́йски?",
+          "answer": "говорите",
+          "accept": [
+            "говори́те"
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "вы → -ите."
+        },
+        {
+          "id": "g5-6",
+          "text": "Она́ ___ (чита́ть) журна́л.",
+          "answer": "читает",
+          "accept": [
+            "чита́ет"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "она → -ет."
+        },
+        {
+          "id": "g5-7",
+          "text": "Мы ___ (люби́ть) му́зыку.",
+          "answer": "любим",
+          "accept": [
+            "лю́бим"
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "мы → -им."
+        },
+        {
+          "id": "g5-8",
+          "text": "Они́ ___ (жить) в Варша́ве.",
+          "answer": "живут",
+          "accept": [
+            "живу́т"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "они + жить → живут."
+        },
+        {
+          "id": "g5-9",
+          "text": "Вы ___ (игра́ть) в те́ннис?",
+          "answer": "играете",
+          "accept": [
+            "игра́ете"
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "вы → -ете."
+        },
+        {
+          "id": "g5-10",
+          "text": "Он ___ (говори́ть) по-ру́сски.",
+          "answer": "говорит",
+          "accept": [
+            "говори́т"
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "он → -ит."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 3,
+      "exercise_type": "sentence-building",
+      "title": "8. Build the sentence",
+      "instruction": "Составь предложение из слов.",
+      "instruction_uk": "Put the words in order. The first word of the sentence is not always the subject!",
+      "items": [
+        {
+          "id": "g6-1",
+          "words": [
+            "мы",
+            "вме́сте",
+            "гото́вим",
+            "у́жин"
+          ],
+          "answer": "Мы вме́сте гото́вим у́жин.",
+          "accept": [
+            "Мы вместе готовим ужин.",
+            "Мы гото́вим у́жин вме́сте.",
+            "Вме́сте мы гото́вим у́жин.",
+            "Мы готовим ужин вместе.",
+            "Вместе мы готовим ужин."
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "We cook dinner together."
+        },
+        {
+          "id": "g6-2",
+          "words": [
+            "они́",
+            "живу́т",
+            "в",
+            "Ри́ге"
+          ],
+          "answer": "Они́ живу́т в Ри́ге.",
+          "accept": [
+            "Они живут в Риге.",
+            "В Ри́ге они́ живу́т.",
+            "В Риге они живут."
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "They live in Riga."
+        },
+        {
+          "id": "g6-3",
+          "words": [
+            "вы",
+            "говори́те",
+            "по-ру́сски"
+          ],
+          "answer": "Вы говори́те по-ру́сски?",
+          "accept": [
+            "Вы говорите по-русски?"
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "Do you speak Russian? (вы + -ите)"
+        },
+        {
+          "id": "g6-4",
+          "words": [
+            "мой",
+            "брат",
+            "и",
+            "моя́",
+            "сестра́",
+            "рабо́тают",
+            "в",
+            "кафе́"
+          ],
+          "answer": "Мой брат и моя́ сестра́ рабо́тают в кафе́.",
+          "accept": [
+            "Мой брат и моя сестра работают в кафе."
+          ],
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "Brother and sister = они → работают."
+        },
+        {
+          "id": "g6-5",
+          "words": [
+            "мы",
+            "не",
+            "смо́трим",
+            "телеви́зор"
+          ],
+          "answer": "Мы не смо́трим телеви́зор.",
+          "accept": [
+            "Мы не смотрим телевизор.",
+            "Мы телеви́зор не смо́трим.",
+            "Мы телевизор не смотрим."
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "не goes right before the verb."
+        },
+        {
+          "id": "g6-6",
+          "words": [
+            "они́",
+            "о́чень",
+            "лю́бят",
+            "футбо́л"
+          ],
+          "answer": "Они́ о́чень лю́бят футбо́л.",
+          "accept": [
+            "Они очень любят футбол."
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "They really like football."
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 3,
+      "exercise_type": "sentence-building",
+      "title": "9. Find the mistake",
+      "instruction": "В каждом предложении одна ошибка. Напиши предложение правильно.",
+      "instruction_uk": "One mistake per sentence. Some are typical for English speakers — you will recognise them.",
+      "items": [
+        {
+          "id": "g7-1",
+          "prompt": "Мы есть до́ма.",
+          "answer": "Мы до́ма.",
+          "accept": [
+            "Мы дома."
+          ],
+          "grammar_point": "kalki-en",
+          "explanation": "No «are» in Russian: Мы дома = We are at home."
+        },
+        {
+          "id": "g7-2",
+          "prompt": "Они́ говори́т по-ру́сски.",
+          "answer": "Они́ говоря́т по-ру́сски.",
+          "accept": [
+            "Они говорят по-русски."
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "они + говорить → -ят: говорят."
+        },
+        {
+          "id": "g7-3",
+          "prompt": "Я имею́ брат.",
+          "answer": "У меня́ есть брат.",
+          "accept": [
+            "У меня есть брат."
+          ],
+          "grammar_point": "miec",
+          "explanation": "Russian says «at me there is a brother»: У меня есть брат."
+        },
+        {
+          "id": "g7-4",
+          "prompt": "Моя́ па́па рабо́тает в магази́не.",
+          "answer": "Мой па́па рабо́тает в магази́не.",
+          "accept": [
+            "Мой папа работает в магазине."
+          ],
+          "grammar_point": "zaimek-dzierzawczy",
+          "explanation": "папа is «he» → мой, even though it ends in -а."
+        },
+        {
+          "id": "g7-5",
+          "prompt": "Вы говори́шь по-англи́йски?",
+          "answer": "Вы говори́те по-англи́йски?",
+          "accept": [
+            "Вы говорите по-английски?"
+          ],
+          "grammar_point": "pan-pani",
+          "explanation": "вы always takes the вы-ending: говорите."
+        },
+        {
+          "id": "g7-6",
+          "prompt": "Мы лю́бем му́зыку.",
+          "answer": "Мы лю́бим му́зыку.",
+          "accept": [
+            "Мы любим музыку."
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "любить is an -ить verb: мы → -им."
+        },
+        {
+          "id": "g7-7",
+          "prompt": "Они́ лю́бют му́зыку.",
+          "answer": "Они́ лю́бят му́зыку.",
+          "accept": [
+            "Они любят музыку."
+          ],
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "ты любишь → они любят (-ят)."
+        },
+        {
+          "id": "g7-8",
+          "prompt": "Вы живёшь в Ри́ге? (to two people)",
+          "answer": "Вы живёте в Ри́ге?",
+          "accept": [
+            "Вы живёте в Риге?"
+          ],
+          "grammar_point": "pan-pani",
+          "explanation": "вы + жить → живёте."
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 4,
+      "exercise_type": "matching",
+      "title": "10. Tens: match the number and the word",
+      "instruction": "Соедини цифру и слово.",
+      "instruction_uk": "Click the number on the left, then its word on the right.",
+      "items": [
+        {
+          "id": "g8-1",
+          "left": "20",
+          "right": "два́дцать",
+          "grammar_point": "liczebniki-glowne"
+        },
+        {
+          "id": "g8-2",
+          "left": "30",
+          "right": "три́дцать",
+          "grammar_point": "liczebniki-glowne"
+        },
+        {
+          "id": "g8-3",
+          "left": "40",
+          "right": "со́рок",
+          "grammar_point": "liczebniki-glowne"
+        },
+        {
+          "id": "g8-4",
+          "left": "50",
+          "right": "пятьдеся́т",
+          "grammar_point": "liczebniki-glowne"
+        },
+        {
+          "id": "g8-5",
+          "left": "60",
+          "right": "шестьдеся́т",
+          "grammar_point": "liczebniki-glowne"
+        },
+        {
+          "id": "g8-6",
+          "left": "70",
+          "right": "се́мьдесят",
+          "grammar_point": "liczebniki-glowne"
+        },
+        {
+          "id": "g8-7",
+          "left": "80",
+          "right": "во́семьдесят",
+          "grammar_point": "liczebniki-glowne"
+        },
+        {
+          "id": "g8-8",
+          "left": "90",
+          "right": "девяно́сто",
+          "grammar_point": "liczebniki-glowne"
+        },
+        {
+          "id": "g8-9",
+          "left": "100",
+          "right": "сто",
+          "grammar_point": "liczebniki-glowne"
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 4,
+      "exercise_type": "fill-in-blank",
+      "title": "11. Write the number in words",
+      "instruction": "Напиши число словами.",
+      "instruction_uk": "Tens first, then units: 37 = тридцать семь.",
+      "items": [
+        {
+          "id": "g9-1",
+          "text": "21 = ___",
+          "answer": "двадцать один",
+          "accept": [
+            "два́дцать оди́н"
+          ],
+          "grammar_point": "liczebniki-glowne",
+          "explanation": "20 + 1: двадцать один."
+        },
+        {
+          "id": "g9-2",
+          "text": "37 = ___",
+          "answer": "тридцать семь",
+          "accept": [
+            "три́дцать семь"
+          ],
+          "grammar_point": "liczebniki-glowne",
+          "explanation": "30 + 7: тридцать семь."
+        },
+        {
+          "id": "g9-3",
+          "text": "45 = ___",
+          "answer": "сорок пять",
+          "accept": [
+            "со́рок пять"
+          ],
+          "grammar_point": "liczebniki-glowne",
+          "explanation": "40 is сорок — the odd one out."
+        },
+        {
+          "id": "g9-4",
+          "text": "52 = ___",
+          "answer": "пятьдесят два",
+          "accept": [
+            "пятьдеся́т два"
+          ],
+          "grammar_point": "liczebniki-glowne",
+          "explanation": "50 + 2: пятьдесят два."
+        },
+        {
+          "id": "g9-5",
+          "text": "68 = ___",
+          "answer": "шестьдесят восемь",
+          "accept": [
+            "шестьдеся́т во́семь"
+          ],
+          "grammar_point": "liczebniki-glowne",
+          "explanation": "60 + 8: шестьдесят восемь."
+        },
+        {
+          "id": "g9-6",
+          "text": "99 = ___",
+          "answer": "девяносто девять",
+          "accept": [
+            "девяно́сто де́вять"
+          ],
+          "grammar_point": "liczebniki-glowne",
+          "explanation": "90 is девяносто — the other odd one out."
+        }
+      ]
+    }
+  ]
+}
