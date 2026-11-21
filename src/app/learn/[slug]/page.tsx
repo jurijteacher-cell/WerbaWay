@@ -2,6 +2,7 @@ import { notFound, redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { loadPage, loadTeacherPage } from '@/lib/pages/pages';
 import { canSee, getAccess } from '@/lib/pages/access';
+import { withCourse } from '@/lib/pages/course';
 import { LessonView } from '@/components/lesson/LessonView';
 import { getLocale } from '@/i18n/server';
 
@@ -26,9 +27,10 @@ export default async function LearnPage({
   if (!user) redirect(`/login?next=/learn/${params.slug}`);
 
   const locale = getLocale();
-  const page = loadPage(params.slug, locale);
-  if (!page) notFound();
+  const loaded = loadPage(params.slug, locale);
+  if (!loaded) notFound();
   const access = await getAccess(supabase, user.id);
+  const page = { ...loaded, meta: withCourse(loaded.meta, access.courses) };
   // лекцію з кошика викладач може переглянути (відкриває її з /teacher/trash)
   const inTrash = access.isTeacher && access.trashed.has(page.meta.slug);
   if (!canSee(page.meta, access) && !inTrash) notFound();

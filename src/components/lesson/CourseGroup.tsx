@@ -6,12 +6,13 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { ShareButton } from './ShareButton';
 import { TrashButton } from './TrashButton';
+import { MoveButton, type CourseOption } from './MoveButton';
 
 export type CourseCard = { slug: string; title: string; icon?: string; cover?: string; level?: string; number?: number };
 
 const VISIBLE = 3;
 
-function Card({ p, canShare }: { p: CourseCard; canShare?: boolean }) {
+function Card({ p, canShare, courseOptions, currentCode }: { p: CourseCard; canShare?: boolean; courseOptions?: CourseOption[]; currentCode?: string }) {
   const t = useT();
   return (
     <div className="relative">
@@ -41,6 +42,7 @@ function Card({ p, canShare }: { p: CourseCard; canShare?: boolean }) {
     </Link>
       {canShare && (
         <div className="absolute right-3 top-3 flex gap-2">
+          {courseOptions && <MoveButton slug={p.slug} title={p.title} options={courseOptions} currentCode={currentCode ?? ''} />}
           <TrashButton slug={p.slug} title={p.title} compact />
           <ShareButton slug={p.slug} title={p.title} compact />
         </div>
@@ -50,7 +52,21 @@ function Card({ p, canShare }: { p: CourseCard; canShare?: boolean }) {
 }
 
 /** Курс: перші три лекції видно одразу, решта розгортається кнопкою */
-export function CourseGroup({ id, title, pages, canShare }: { id: string; title: string; pages: CourseCard[]; canShare?: boolean }) {
+export function CourseGroup({
+  id,
+  title,
+  pages,
+  canShare,
+  courseOptions,
+  currentCode,
+}: {
+  id: string;
+  title: string;
+  pages: CourseCard[];
+  canShare?: boolean;
+  courseOptions?: CourseOption[];
+  currentCode?: string;
+}) {
   const t = useT();
   const [open, setOpen] = useState(false);
   const rest = pages.slice(VISIBLE);
@@ -61,7 +77,7 @@ export function CourseGroup({ id, title, pages, canShare }: { id: string; title:
       </h2>
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {pages.slice(0, VISIBLE).map((p) => (
-          <Card key={p.slug} p={p} canShare={canShare} />
+          <Card key={p.slug} p={p} canShare={canShare} courseOptions={courseOptions} currentCode={currentCode} />
         ))}
       </div>
       {rest.length > 0 && (
@@ -74,7 +90,7 @@ export function CourseGroup({ id, title, pages, canShare }: { id: string; title:
           >
             <div className="overflow-hidden">
               <div className="grid gap-5 pt-5 sm:grid-cols-2 lg:grid-cols-3">
-                {open && rest.map((p) => <Card key={p.slug} p={p} canShare={canShare} />)}
+                {open && rest.map((p) => <Card key={p.slug} p={p} canShare={canShare} courseOptions={courseOptions} currentCode={currentCode} />)}
               </div>
             </div>
           </div>

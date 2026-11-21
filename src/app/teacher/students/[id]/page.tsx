@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { requireTeacher } from '@/app/teacher/results/requireTeacher';
 import { fetchAttempts, fmtDate, summarize, type AttemptRow, type MockRow } from '@/lib/analytics';
 import { groupByCourse, listPages } from '@/lib/pages/pages';
+import { applyCourseOverrides, fetchCourseOverrides } from '@/lib/pages/course';
 import { fetchHidden } from '@/lib/pages/trash';
 import { lectureStats } from '@/lib/lecture-stats';
 import { loadDeck } from '@/lib/words';
@@ -60,7 +61,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
 
   const s = summarize(attempts);
   const hidden = await fetchHidden(supabase);
-  const pages = listPages().filter((p) => !hidden.has(p.slug));
+  const pages = applyCourseOverrides(listPages(), await fetchCourseOverrides(supabase)).filter((p) => !hidden.has(p.slug));
   const pageBySlug = new Map(pages.map((p) => [p.slug, p]));
   const done = progress ?? [];
   const doneSet = new Set(done.map((r) => r.lesson_slug as string));

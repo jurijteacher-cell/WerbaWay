@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { groupByCourse, listPages } from '@/lib/pages/pages';
+import { applyCourseOverrides } from '@/lib/pages/course';
 import { getLocale, t } from '@/i18n/server';
 import { canSee, getAccess } from '@/lib/pages/access';
 import { lectures } from '@/content/lectures';
@@ -17,13 +18,15 @@ export default async function LearnIndex() {
   if (!user) redirect('/login?next=/learn');
 
   const access = await getAccess(supabase, user.id);
-  const pages = listPages(getLocale()).filter((p) => canSee(p, access));
+  const pages = applyCourseOverrides(listPages(getLocale()), access.courses).filter((p) => canSee(p, access));
   // старі інтерактивні лекції («Кіно») — тільки призначені учневі
   const { data: assigned } = await supabase.from('assignments').select('lecture_slug').eq('student_id', user.id);
   const assignedSet = new Set((assigned ?? []).map((a) => a.lecture_slug as string));
   const extraLectures = lectures.filter((l) => access.isTeacher || assignedSet.has(l.slug));
   // по курсах: де більше лекцій — вище
   const groups = groupByCourse(pages);
+  // усі категорії — для кнопки «Перенести» (лише викладач; кошик не рахуємо)
+  const courseOptions = access.isTeacher ? groups.map((g) => ({ code: g.code, title: g.title })) : [];
   return (
     <main className="mx-auto max-w-5xl px-4 py-14">
       <div className="mb-2 flex flex-wrap items-baseline justify-between gap-3">
@@ -55,6 +58,8 @@ export default async function LearnIndex() {
         <CourseGroup
           key={g.title}
           canShare={access.isTeacher}
+          courseOptions={courseOptions}
+          currentCode={g.code}
           id={`course-${g.code || 'other'}`}
           title={g.title}
           pages={g.pages.map((p) => ({ slug: p.slug, title: p.title, icon: p.icon, cover: p.cover, level: p.level, number: p.number }))}

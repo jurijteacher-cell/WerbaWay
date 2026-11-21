@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 import { loadPage } from '@/lib/pages/pages';
+import { fetchCourseOverrides, withCourse } from '@/lib/pages/course';
 import { randomBytes } from 'crypto';
 import { t as tr } from '@/i18n/server';
 
@@ -90,13 +91,14 @@ export async function GET(req: Request) {
     guestsOf(t.supabase, slug),
   ]);
   // «пройдено разом» — лише те, що позначив викладач; 'share' — учень дивився сам за посиланням
+  const meta = withCourse(page.meta, await fetchCourseOverrides(t.supabase)); // категорія з урахуванням перенесення
   const doneSet = new Set((done ?? []).filter((d) => d.completed_via !== 'share').map((d) => d.student_id as string));
   const students = (profiles ?? [])
     .filter((p) => p.role !== 'teacher')
     .map((p) => {
       const mine = (grants ?? []).filter((g) => g.student_id === p.id);
       const lesson = mine.some((g) => g.kind === 'lesson' && g.ref === slug);
-      const viaCourse = !!page.meta.module && mine.some((g) => g.kind === 'module' && g.ref === page.meta.module);
+      const viaCourse = !!meta.module && mine.some((g) => g.kind === 'module' && g.ref === meta.module);
       return { id: p.id as string, name: (p.full_name as string) || tr("Учень без імені"), lesson, viaCourse, done: doneSet.has(p.id as string) };
     })
     .sort((a, b) => a.name.localeCompare(b.name, 'uk'));
