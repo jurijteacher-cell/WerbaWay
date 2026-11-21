@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import type { EmbedKind } from '@/lib/pages/pages';
 import { useLocale, useT, withLang } from '@/i18n/client';
+import { liveKey } from '@/lib/live/protocol';
 
 /** Висота вікна вправи: фіксована за типом (як у Notion), далі скрол усередині. */
 const HEIGHT: Record<EmbedKind, number> = {
@@ -37,12 +38,15 @@ const LABEL: Record<EmbedKind, string> = {
   other: 'Ćwiczenie',
 };
 
-export function EmbedFrame({ src: rawSrc, title, kind }: { src: string; title: string; kind: EmbedKind }) {
+/** `watch` — вікно викладача в «Дивитися»: вправа відкривається в режимі спостерігача (?ww_watch=1) */
+export function EmbedFrame({ src: rawSrc, title, kind, watch }: { src: string; title: string; kind: EmbedKind; watch?: boolean }) {
   const [loaded, setLoaded] = useState(false);
   const locale = useLocale();
   const t = useT();
   // вправа живе в iframe: куки туди не доходять, тож мову передаємо параметром
-  const src = withLang(rawSrc, locale);
+  const langSrc = withLang(rawSrc, locale);
+  const spectate = !!watch && langSrc.startsWith('/');
+  const src = spectate ? `${langSrc}${langSrc.includes('?') ? '&' : '?'}ww_watch=1` : langSrc;
   const h = HEIGHT[kind];
   return (
     <figure className="lp-embed" data-kind={kind}>
@@ -58,6 +62,7 @@ export function EmbedFrame({ src: rawSrc, title, kind }: { src: string; title: s
         <iframe
           src={src}
           title={title}
+          data-ww-live={spectate ? liveKey(src) : undefined}
           loading="lazy"
           onLoad={() => setLoaded(true)}
           allow="autoplay; fullscreen; clipboard-write"

@@ -3,14 +3,14 @@ import { EmbedFrame } from './EmbedFrame';
 import { PageIcon, pageIcon } from './PageIcon';
 
 /** embeds: 'all' | 'none' | 'external' (у кроці класу вправа відкривається окремо, зовнішні вікна лишаються в тексті) */
-export function Blocks({ blocks, embeds = 'all' }: { blocks: PageBlock[]; embeds?: 'all' | 'none' | 'external' }) {
+export function Blocks({ blocks, embeds = 'all', watch }: { blocks: PageBlock[]; embeds?: 'all' | 'none' | 'external'; watch?: boolean }) {
   return (
     <>
       {blocks.map((b, i) => {
         if (b.k === 'html') return <div key={i} dangerouslySetInnerHTML={{ __html: b.html }} />;
         if (b.k === 'embed') {
           const show = embeds === 'all' || (embeds === 'external' && /^https?:/.test(b.src));
-          return show ? <EmbedFrame key={i} src={b.src} title={b.title} kind={b.kind} /> : null;
+          return show ? <EmbedFrame key={i} src={b.src} title={b.title} kind={b.kind} watch={watch} /> : null;
         }
         return (
           <figure key={i} className="lp-embed" data-kind="video">
@@ -40,11 +40,13 @@ export function SheetBody({
   index,
   total,
   embeds = 'all',
+  watch,
 }: {
   page: BookPage;
   index: number;
   total: number;
   embeds?: 'all' | 'none' | 'external';
+  watch?: boolean;
 }) {
   const isExercise = page.kind !== 'text' && page.kind !== 'goal';
   return (
@@ -68,7 +70,7 @@ export function SheetBody({
         </span>
       </header>
       <div className={page.kind === 'goal' ? 'lp-prose lp-goal-page' : 'lp-prose'}>
-        <Blocks blocks={page.blocks} embeds={embeds} />
+        <Blocks blocks={page.blocks} embeds={embeds} watch={watch} />
       </div>
     </>
   );

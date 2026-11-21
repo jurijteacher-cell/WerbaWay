@@ -394,8 +394,8 @@ function hasLead(blocks: PageBlock[]): boolean {
 }
 
 /**
- * Кроки заняття в класі. Вправа відкривається в класі окремим вікном (так її стабільно видно в дзеркалі
- * викладача — вкладений кадр rrweb губить після перезнімка), тож текст перед нею — читання, теорія,
+ * Кроки заняття в класі. Вправа відкривається в класі окремим вікном (так її стабільно видно
+ * викладачеві), тож текст перед нею — читання, теорія,
  * таблиця — йде окремим кроком «Текст» прямо перед вправою. Раніше цього кроку не було, і в класі учень
  * не бачив, наприклад, листа, на який відповідав у «prawda czy fałsz».
  */
@@ -506,4 +506,28 @@ export function groupByCourse<T extends PageMeta>(pages: T[]): { code: string; t
   return [...map.values()].sort(
     (a, b) => Number(!a.code) - Number(!b.code) || b.pages.length - a.pages.length || a.title.localeCompare(b.title, 'uk')
   );
+}
+
+/**
+ * Сторінки домашки (/hw): розділи kind 'homework' — для «Дивитися», коли учень у домашці.
+ * Окремої «книжки» в домашки нема, тож кожен розділ — одна сторінка зі своїми вправами.
+ */
+export function buildHomeworkPages(page: ParsedPage): BookPage[] {
+  return page.sections
+    .filter((sec) => sec.kind === 'homework')
+    .map((sec, i) => {
+      const sp = sec.label ? splitNumbered(sec.label) : { num: null, title: page.meta.title };
+      const blocks = sec.blocks
+        .map((b) => (b.k === 'html' ? { ...b, html: b.html.replace(/<h2\b[^>]*>[\s\S]*?<\/h2>\s*/g, '') } : b))
+        .filter((b) => b.k !== 'html' || b.html.trim());
+      return {
+        key: `${sec.id}~hw${i}`,
+        section: stripEmoji(sp.title),
+        num: sp.num,
+        label: 'Praca domowa',
+        kind: 'text' as const,
+        url: `/learn/${page.meta.slug}/hw`,
+        blocks,
+      };
+    });
 }

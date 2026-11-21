@@ -12,6 +12,7 @@
 
 import { getAccessToken, getState as authState, subscribe as authSubscribe } from '@/lib/embed-auth';
 import { readVid } from '@/lib/guest';
+import { isSpectator } from '@/lib/embed-progress';
 
 export type AttemptInput = {
   embed?: string;
@@ -115,6 +116,7 @@ export function trackAttempt(a: AttemptInput) {
   if (!EMBED_RESULTS_ENABLED) return;
   const ctx = context();
   if (!ctx) return;
+  if (isSpectator()) return; // вікно викладача в «Дивитися»: нічого не записуємо
   init();
   if (authState().role === 'teacher') return;
   queue.push({

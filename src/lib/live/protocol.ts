@@ -1,12 +1,15 @@
 /**
- * «Дивитися учня» — викладач бачить екран учня наживо; гортає й вибирає вправу сам, а в учня нічого не міняється.
+ * «Дивитися учня» — викладач бачить, що учень обирає й вписує у вправах; гортає лекцію сам.
+ * Екран учня НЕ передається (раніше йшов запис rrweb — це з'їдало квоту egress Supabase).
  *
- *   учень на сайті (LiveBeacon) ──Realtime: присутність + запис rrweb──▶ викладач (LiveWatch)
- *   викладач ──`need-snap` (дай свіжий знімок)──▶ учень
+ *   учень (LiveBeacon) ──Realtime: присутність + стан вправ (`st`)──▶ викладач (LiveWatch)
+ *   викладач ──`need-st` (дай повний стан вікна)──▶ учень
  *
- * Канал приватний `class:<uid учня>` (назва лишилась від колишнього «Класу», політики RLS —
- * supabase/migrations/0010_class.sql): його бачить лише викладач і сам учень.
- * Запис екрана йде, тільки поки викладач дивиться і учень у лекції (/learn/…).
+ * Стан вправ — це те, що вправи й так пишуть у localStorage учня (lib/embed-progress.ts);
+ * маячок ловить подію `storage` і шле лише змінене, кілобайти замість знімків сторінки.
+ * Канал приватний `class:<uid учня>`: його бачить лише викладач і сам учень
+ * (політики RLS — supabase/migrations/0010_class.sql). Стан шлеться, тільки поки викладач
+ * дивиться і учень у лекції (/learn/…).
  */
 
 export const classTopic = (studentId: string) => `class:${studentId}`;
@@ -19,29 +22,31 @@ export const CLASS_EVENT = 'c';
 
 /**
  * Повідомлення на каналі.
- *  `rr` — пакет подій rrweb від учня. `n` — номер пакета за порядком: розрив → викладач просить
- *        свіжий знімок. `t` — вкладка учня, з якої пакет (у учня може бути відкрито кілька).
- *        `e: 'b64'` — події стиснуті й у base64 (у JSON бінарний рядок роздувався вдвічі);
- *        без `e` — старий формат: бінарний рядок як є (учень зі старою вкладкою).
- *  `need-snap` — викладач просить свіжий знімок; `to` — у якої вкладки (без `to` — у всіх).
+ *  `st` — стан вправ учня: `key` = liveKey(адреса вікна вправи), `s` = scope → збережений стан
+ *        (null — скинуто). `full: true` — повний набір для цього key (замінити), інакше — оновлення.
+ *  `need-st` — викладач просить повний стан вікна `key`; `to` — у якої вкладки (без `to` — у всіх).
  */
 export type ClassMsg =
-  | { k: 'rr'; d: string[]; n?: number; t?: string; e?: 'b64' }
-  | { k: 'need-snap'; to?: string }
-  | ViewAnchor;
+  | { k: 'st'; key: string; s: Record<string, unknown>; full?: boolean }
+  | { k: 'need-st'; key: string; to?: string };
 
-/**
- * `vp` — що в учня посередині екрана: id вузла з запису rrweb і де саме в ньому (0…1 по висоті).
- * Прокрутка rrweb іде в пікселях учня, а в режимі «Мій екран» кадр розкладений під ширину
- * викладача — ті самі пікселі там показують інше місце. За якорем кадр викладача
- * прокручується до того самого фрагмента лекції.
- */
-export type ViewAnchor = { k: 'vp'; id: number; r: number; t?: string };
+/** Ідентичність вікна вправи, однакова в учня й викладача: pathname + відсортовані параметри без службових. */
+const LIVE_SKIP_PARAMS = new Set(['s', 'lang', 'ww_watch']);
+export function liveKey(href: string): string {
+  try {
+    const u = new URL(href, 'http://x');
+    const q = [...u.searchParams.entries()].filter(([k]) => !LIVE_SKIP_PARAMS.has(k)).sort(([a], [b]) => a.localeCompare(b));
+    return u.pathname + (q.length ? `?${q.map(([k, v]) => `${k}=${v}`).join('&')}` : '');
+  } catch {
+    return href;
+  }
+}
 
 /**
  * Присутність на каналі.
  *  учень: mode `site` — десь на сайті, `lesson` — у лекції (path = /learn/…, title — назва лекції);
  *         `tab` — id вкладки, `vis` — вкладка зараз перед очима (не схована за іншою);
+ *         `pg` — індекс сторінки лекції (з 0), на якій учень;
  *  викладач: mode `watch` — зараз дивиться екран учня (лише тоді учень пише запис);
  *         `watch` — яку саме вкладку учня (пише лише вона; без `watch` — старий клієнт, пишуть усі).
  */
@@ -53,6 +58,7 @@ export type Presence = {
   title?: string;
   tab?: string;
   vis?: boolean;
+  pg?: number;
   watch?: string;
   at: number;
 };
@@ -77,10 +83,6 @@ export function pickStudent(all: Presence[]): Presence | null {
   const inLesson = stu.filter((p) => p.mode === 'lesson').sort(newest);
   return inLesson[0] ?? [...stu].sort(newest)[0];
 }
-
-/** Події rrweb у пакеті: стиснення (packer) → base64. Обидва боки — лише в браузері (btoa/atob). */
-export const toWire = (packed: string) => btoa(packed);
-export const fromWire = (s: string, e?: 'b64') => (e === 'b64' ? atob(s) : s);
 
 /* ── chunking: a Realtime message is capped (256 KB on the free plan), a snapshot can be bigger ── */
 

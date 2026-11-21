@@ -5,6 +5,7 @@ import { NotebookShell } from '@/components/exercises/NotebookShell';
 import { AccountBar } from '@/components/exercises/AccountBar';
 import { FocusKeeper } from '@/components/exercises/FocusKeeper';
 import { StyleFlag } from '@/components/exercises/StyleFlag';
+import { LiveSpectator } from '@/components/exercises/LiveSpectator';
 import '@/components/exercises/notebook.css';
 import '@/components/exercises/notebook-paper.css';
 
@@ -35,7 +36,7 @@ export default function EmbedLayout({ children }: { children: ReactNode }) {
       <style dangerouslySetInnerHTML={{ __html: EMBED_CSS }} />
       <I18nProvider locale={locale} dict={getDictionary(locale)}>
         <NotebookShell levelHint="lekcja · ćwiczenia" aside={<AccountBar />}>
-          {children}
+          <LiveSpectator>{children}</LiveSpectator>
           <FocusKeeper />
           <StyleFlag />
         </NotebookShell>

@@ -51,6 +51,11 @@ export function LessonPager({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [storeKey]);
 
+  // «Дивитися учня»: маячок (LiveBeacon) повідомляє викладачеві, на якій сторінці учень
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent('ww:lesson-page', { detail: idx }));
+  }, [idx]);
+
   const go = useCallback(
     (n: number) => {
       if (n < 0 || n >= pages.length || n === idx) return;

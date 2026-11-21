@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
-import { buildPages, loadPage } from '@/lib/pages/pages';
+import { buildHomeworkPages, buildPages, loadPage } from '@/lib/pages/pages';
 import { lessonSlugOf } from '@/lib/live/protocol';
 import { sharedSlug } from '@/lib/share';
 import { getLocale } from '@/i18n/server';
@@ -26,5 +26,7 @@ export async function GET(req: Request) {
   const slug = token ? await sharedSlug(token) : lessonSlugOf(path);
   const page = slug ? loadPage(slug, getLocale()) : null;
   if (!page) return NextResponse.json({ error: 'not found' }, { status: 404 });
-  return NextResponse.json({ slug: page.meta.slug, title: page.meta.title, pages: buildPages(page) });
+  // учень у домашці (/hw) — віддаємо її сторінки, а не лекції
+  const hw = /\/hw\/?$/.test(path);
+  return NextResponse.json({ slug: page.meta.slug, title: page.meta.title, pages: hw ? buildHomeworkPages(page) : buildPages(page) });
 }
