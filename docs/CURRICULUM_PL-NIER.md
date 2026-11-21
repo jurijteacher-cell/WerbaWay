@@ -1,0 +1,248 @@
+# pl-nier — розмовна польська для ріелторки, B1 → B2 (карта модуля)
+
+**Учениця:** ріелторка (pośredniczka w obrocie nieruchomościami), за її словами — польська B1. Мета: **розмовна впевненість саме в роботі** (клієнт, власник, огляд, торг, формальності) і перехід від B1 до B2 у цій сфері.
+**Формат:** індивідуально, **5 × 90 хв**, шаблон модуля `rozmowa-90` (нижче). Мова глос — українська (`Pułapki z ukraińskiego`). TEACHER — українською.
+**Де живе модуль:** **лише сайт** (`module: pl-nier`, «Польська для ріелторки»). У Notion модуль і уроки **не створювалися** (рішення уроку 01: ученицю веде сайт; TEACHER — `src/content/teacher-pages/`). Якщо Юра захоче Notion — окрема задача за NOTION_STRUCTURE §5.
+**LMS:** `lesson_id` = `pl-nier-{NN}-{slug}`; JSON у `src/content/queue-published/`. Порядок — LESSON_PROTOCOL v3.18+: JSON → `check_answers.py` 0 ERR → `check_tags.py` → push у `main` → `check_embeds.py --remote` ✓. Сайт + переклади ru/pl/en (`i18n-extract` → переклад → `i18n-merge` → `i18n-coverage` ✓) — у тому ж пуші (00_START_HERE §0). Запис у `content-queue/_manifest.json` (module `pl-nier`, `course_order` = № уроку).
+**Репо:** карта дзеркалиться в `docs/CURRICULUM_PL-NIER.md` (зроблено в уроці 01). Міняєш карту — міняй обидві копії.
+
+> **Чесна межа.** 5 × 90 хв не дають повного B2. Реальний результат модуля: **B2 у професійному мовленні** (клієнт / власник / огляд / торг / формальності) — довші зв'язні висловлювання, реакція на непередбачене, свідомий вибір регістру, 4 граматичні теми B2 «в роботі». Це й є критерій успіху (урок 05 порівнює з діагностикою уроку 01).
+
+---
+
+## 1. Шаблон уроку `rozmowa-90` (однаковий для всіх 5 уроків)
+
+Розмова ≥ 50 % часу. Граматика — тільки та, що потрібна для мовленнєвої дії уроку (не «граматика заради граматики»).
+
+| № | Розділ | Що всередині | Хв |
+|---|---|---|---|
+| — | **Cele lekcji** | 3–4 цілі «Po tej lekcji potrafisz…», кожна — дія в роботі ріелтора | — |
+| 1 | **Rozgrzewka** | 1 питання з досвіду учениці + słowo dnia (повертаємось у Podsumowaniu). В уроці 01 — ще діагностичний монолог (§4) | 5 |
+| 2 | **Czytanie** | оригінальний текст реального жанру (§3), фото; 4 відкриті питання + `e1` (prawda/fałsz, 5–6 пунктів) | 15 |
+| 3 | **Słownictwo** | вступна плашка з групами + embed `vocab` + `g1` на колокації | 10 |
+| 4 | **Gramatyka** | одна частина: теорія → wyjątki → pułapki → embed `g2–g5/g6` | 20 |
+| 5 | **Mówię płynnie** | зелена плашка: 6–8 дискурсивних маркерів + 1 стратегія розмови (§3, свої для кожного уроку) | 5 |
+| 6 | **Zadania komunikacyjne** | 3 `flip-task`; перша — з діалогом-зразком 12–14 реплік (на TEACHER) + `e2` (3–4 питання); у кожній — **zwrot akcji** (прихована несподіванка, лише на TEACHER); + монолог 2 хв | 30 |
+| 7 | **Podsumowanie** | чекбокс на кожну ціль + słowo dnia | 5 |
+| 8 | **Praca domowa** | embed `hw` (≥ 4 блоки, нові контексти) · `🎬 Wideo` (v3.19) · `🎙️ Nagranie` (голосове 1,5–2 хв) · `✍️ Pisanie` | — |
+| — | **Słowniczek** · **Źródła** | Słowniczek — завжди; Źródła — якщо в уроці є факти (у 04–05 обов'язково) | — |
+
+**Параметри**
+
+| | Уроки 01–02 (B1+) | Уроки 03–05 (B2) |
+|---|---|---|
+| Текст Czytanie | 300–350 слів | 380–450 слів |
+| Цільова граматика в тексті | ≥ 8 | ≥ 10 |
+| Словник | 25–30 слів, 4 групи (1 — колокації, по 1 — на кожну задачу) | те саме |
+| Блоки теорії | 6–8 | 7–8 |
+| Wyjątki · pułapki | 1 блок · 5–6 пасток | 1 блок · 5–6 пасток |
+| Граматичні вправи | g1 + 4–5 (g2–g6) | g1 + 5 (g2–g6) |
+| Комунікаційні задачі | 3 | 3 |
+| e1 + e2 | так | так |
+| Письмо в ДЗ | 130–160 слів | 160–200 слів |
+| Фото | 1 + 1 | 1 + 2 |
+
+**Файли кожного уроку:** `-vocab.json` · `-grammar.json` · `-comm-tasks.json` · `-exam.json` (e1, e2) · `-hw.json` + сторінка учня і `TEACHER · …` + сторінки сайту + i18n.
+
+**TEACHER кожного уроку додатково до LESSON_PROTOCOL:**
+- **картки ролей для викладача**: хто клієнт, чого хоче, що приховує, межі (напр. максимальна ціна), коли вмикати zwrot akcji;
+- **рубрика мовлення B2** (по 0–3): płynność · zakres słownictwa · poprawność · rejestr (Pan/Pani, ввічливість) · reakcja na niespodziankę;
+- що записати в «журнал помилок» учениці (переноситься в наступний урок і в повторення).
+
+---
+
+## 2. Сюжет і персонажі (вигадані, єдині для модуля)
+
+Місто — **Poznań** (Jeżyce, Łazarz). Агенція — **Biuro Nieruchomości „Klucz”** (вигадане). Адреси — вигадані (`ul. Kasztanowa 14/7`).
+
+| Персонаж | Хто | Роль у сюжеті |
+|---|---|---|
+| **Natalia** | pośredniczka з Charkowa, 2 роки в Познані, колега-зразок у текстах | голос текстів Czytanie; у рольових іграх учениця грає **себе** |
+| **pani Joanna Kaczmarek** | szefowa biura | вимоги до звіту, ціни, внутрішні правила |
+| **państwo Marta i Paweł Lisowie** | Marta — nauczycielka, Paweł — logistyk, діти 6 і 9 років; зараз винаймають | купують 3 pokoje: budżet do ok. 720 tys. zł з кредитом; Marta — близько до школи, Paweł хоче miejsce parkingowe (каже про це лише в уроці 03) |
+| **pani Barbara Zielińska** | właścicielka mieszkania na Jeżycach, emerytka, емоційно прив'язана | продає 64 m², 3 pokoje, 3. piętro в kamienicy без windy, częściowo po remoncie, balkon на podwórze, piwnica |
+| **pan Ravi Sharma** | програміст з Bangalore, переїжджає за місяць, польська A2 | винаймає 2 pokoje на Łazarzu до ~3 500 zł — лінія najmu (учениця вчиться **говорити простіше** для іноземця) |
+| **pan Tadeusz Wrona** | właściciel mieszkania на wynajem для Raviego | хоче najem okazjonalny, питає про kaucję |
+
+**Додатково з уроку 01 (використані в текстах, тримати однаково):** pan Dawid (клієнт у нотатці Natalii), pani Anna (діалог e2 «Natalia ↔ pani Anna»; pani Kowalczyk — клієнтка в e2), pani Monika Brzezińska (клієнтка з e-mail у ДЗ 01: кавалерка для доньки-студентки, бюджет до 380 000 zł), pan Marek (голосова пошта в ДЗ 01).
+
+**Ціни:** cena ofertowa Zielińskiej — **749 000 zł** (≈ 11 700 zł/m²), торг закінчується ≈ **720 000 zł**. Перед уроком 02 звірити з поточними оголошеннями (Jeżyce, kamienica, 3 pokoje). Якщо ринок інший — змінити цифри, **зберігши пропорції** (Lisowie пропонують ≈ −6 %, фінал ≈ −4 %). Цифри мають бути однакові в усіх уроках.
+
+**Лінія сюжету:** 01 перший дзвінок Lisów + дзвінок до Zielińskiej → 02 опис квартири й оголошення → 03 огляд із Lisami, заперечення → 04 торг між Lisami й Zielińską, zadatek, umowa przedwstępna → 05 формальності до ключів + najem для Raviego.
+
+---
+
+## 3. Карта уроків
+
+### 01 · Dzwonię w sprawie ogłoszenia — перший контакт і аналіз потреб
+`pl-nier-01-pierwszy-kontakt` · рівень B1+ · **✅ опубліковано (21.11.2026)**
+
+- **Мовленнєва дія:** прийняти дзвінок клієнта, поставити відкриті питання, перефразувати потреби, домовитися про огляд; подзвонити власниці й запропонувати співпрацю.
+- **Граматика (фактичні теги в JSON):** `pan-pani` · `warunkowy-prosby` · `przypuszczajacy-formy` · `grzecznosc-chcialbym` (2 пункти) · `pytania-zalezne` · `mowa-zalezna` (= парафраза, зміна особи) + службові `kalki-uk`, `slownictwo`.
+  Структура вправ: `g1` колокації · `g2–g3` Pan/Pani/Państwo + ввічливий tryb przypuszczający · `g4–g5` pytania zależne + парафраза · `g6` зміна особи («з „ja” на „Pan / Pani / Państwo”»).
+  Блоки теорії на сторінці: ① Pan/Pani/Państwo: яка форма дієслова ② прохання ввічливо: tryb przypuszczający (*mógłby Pan, chciałabym, byłoby*) ③ як збудувати форму (-łbym/-łabym/-łby/-łaby/-libyśmy) ④ pytanie zależne: вбудуй питання в речення ⑤ як почати pytanie zależne (*czy, jaki, ile, kiedy*) ⑥ parafraza: *Czyli…, Jeśli dobrze rozumiem…* ⑦ зміна особи.
+  Wyjątki: *Mogę…? / Czy mogłabym…?* — обидва правильні, різниця — регістр. **Не позначати як помилку** *Ja bym chciała* — це нормальна розмовна форма.
+- **Pułapki z ukraińskiego:** *дзвоню по оголошенню* → dzwonię **w sprawie** ogłoszenia · *шукаю квартиру* → szukam **mieszkania** (dopełniacz) · *Ви* до однієї особи → **Pan / Pani** · *передзвоню (у відповідь)* → **oddzwonię** · *квартира на три кімнати* → **mieszkanie trzypokojowe** · *зустрінемося біля будинку* → spotkajmy się **przed** budynkiem.
+- **Słownictwo (28 слів, 4 групи):** „Pierwszy kontakt” · „Potrzeby klienta” · „Rynek i biuro” · „Współpraca z właścicielem”.
+- **Czytanie:** «Notatka Natalii po pierwszym tygodniu w biurze» (pan Dawid) + `e1` prawda/fałsz (6 пунктів: F·T·F·T·F·T).
+- **Mówię płynnie:** *Jeśli dobrze rozumiem… · Czyli chodzi Państwu o… · Co jest dla Państwa najważniejsze? · Zanotuję sobie… · Przepraszam, nie dosłyszałam…* Стратегія: **питай → перефразуй → підсумуй**.
+- **Zadania komunikacyjne (comm_groups: first, second, fourth):** 1) дзвінок клієнта після оголошення (діалог-зразок + `e2`; zwrot — бюджет нижчий за ціну) · 2) зустріч в офісі: аналіз потреб (zwrot — різні пріоритети подружжя) · 3) дзвінок до pani Zielińskiej (zwrot — «sprzedam sama»). Монолог 2 хв «Kim jestem i jak pracuję» — **діагностика** (§4).
+- **Аудіо:** немає; `e2` читає **викладач** двічі (текст на TEACHER; вікно показує «Słuchaj nauczyciela — bez tekstu»).
+- **ДЗ (фактично):** `hw` (4 блоки, нові ситуації) · 🎬 «Luźno Wyjaśnione: Zakup Mieszkania» (канал Luźno Wyjaśnione, ≈10 хв; 96 тис. переглядів, 15.09.2026) з трьома письмовими завданнями на парафразу й pytania zależne · 🎙️ голосове до клієнта pana Marka (1 хв) · ✍️ **e-mail до pani Brzezińskiej** після дзвінка (130–160 слів; замість запланованого e-mail Lisom — Lisowie залишаються для уроків 02–05).
+- **TEACHER:** діагностика учениці (§5), картки ролей, рубрика B2, журнал помилок.
+
+### 02 · Mieszkanie z duszą — опис нерухомості й оголошення
+`pl-nier-02-opis-i-ogloszenie` · рівень B1+ → B2
+
+- **Мовленнєва дія:** зібрати інформацію від власниці, описати квартиру усно й письмово, порівняти дві пропозиції, вимовляти ціни, метраж і поверхи без паузи.
+- **Граматика:** `new` `imieslow-bierny` · `imieslow-czynny` · `stopniowanie` · `porownania` · `liczebniki-skladnia`; `rec` `przypuszczajacy-formy`, `pytania-zalezne`.
+  Блоки: ① imiesłów bierny -ny/-ony/-ty: *wyremontowany, położony, umeblowany, wyposażony* ② imiesłów czynny -ący: *okna wychodzące na park, sąsiadujący z…* ③ imiesłów замість *który* (*mieszkanie, które zostało wyremontowane* → *wyremontowane mieszkanie*) ④ місце означення: перед / після іменника (*świeżo wyremontowana kuchnia* vs *kuchnia otwarta na salon*) ⑤ stopniowanie: *jaśniejszy, przestronniejszy, bardziej funkcjonalny, lepszy* ⑥ porównania: *niż / od, o wiele, im…, tym…, tak samo… jak* ⑦ **liczby na głos**: ціни (*749 tysięcy złotych*), метри (*64 metry kwadratowe*, *65 metrów*), *2 pokoje / 5 pokoi*, поверхи порядковими.
+  Wyjątki: нерегулярні imiesłowy (*wzięty, zajęty*), *do remontu / do odświeżenia* — не imiesłów, а *do + D*.
+- **Pułapki:** *на третьому поверсі* → лічба інша: **parter** = наш 1-й поверх, *trzecie piętro* = наш 4-й · *60 квадратів* → **60 metrów (kwadratowych)** · *квартира з ремонтом* → **po remoncie / wykończone** · *комуналка* → **opłaty, czynsz administracyjny** (*czynsz* ≠ лише оренда) · *вторинка / новобудова* → **rynek wtórny / pierwotny** · *вікна виходять у двір* → okna **wychodzą na** podwórze.
+- **Słownictwo:** ① pomieszczenia: salon z aneksem kuchennym, sypialnia, przedpokój, garderoba, piwnica, komórka lokatorska ② budynek: kamienica, blok, wielka płyta, winda, klatka schodowa, parter, ogrzewanie miejskie ③ stan i standard: do remontu, do odświeżenia, po remoncie, pod klucz, stan deweloperski, umeblowane ④ atuty: rozkładowe, ustawne, słoneczne, ciche, ekspozycja południowa, w zasięgu spaceru.
+- **Czytanie:** два оголошення (kamienica Zielińskiej і новобудова від dewelopera на Łazarzu) + коментар Natalii, що «продає» в оголошенні. e1 — prawda/fałsz на порівняння.
+- **Mówię płynnie:** *Przede wszystkim… · Co ważne,… · Warto podkreślić, że… · Do tego… · Największym atutem jest… · Jeśli chodzi o…* Стратегія: **від головного атуту до деталей**.
+- **Zadania komunikacyjne:**
+  1. Інтерв'ю з pani Zielińską для оголошення (діалог-зразок + e2). *Zwrot:* власниця замовчує вади (вологість у piwnicy) → дипломатично допитати.
+  2. Презентація оферти телефоном за 90 с. *Zwrot:* клієнт каже, що бачив дешевшу квартиру поруч.
+  3. Порівняння двох оферт для Lisów (дані — на картці). *Zwrot:* клієнт питає «a Pani co by wybrała?» — порадити, не тиснучи.
+  - **Монолог 2 хв:** опис квартири без нотаток.
+- **Факти перевірити:** що **обов'язково** має містити оголошення / що треба мати при продажу й оренді (świadectwo charakterystyki energetycznej — з 2023; чи потрібен показник в оголошенні) — лише після пошуку, з Źródła.
+- **ДЗ:** hw · 🎬 відео-тур квартирою / home staging польською · 🎙️ презентація **іншої** нерухомості (будинок під Познанню) 2 хв · ✍️ оголошення про цей будинок: заголовок + опис (130–160).
+
+### 03 · Zapraszam do środka — огляд і заперечення клієнта
+`pl-nier-03-prezentacja-i-obiekcje` · рівень B2
+
+- **Мовленнєва дія:** провести огляд квартири, спокійно відповісти на заперечення, отримати зворотний зв'язок і домовитися про наступний крок.
+- **Граматика:** `new` `przyzwolenie` · `przeciwstawienie` · `warunek-realny`; `rec` `imieslow-*`, `porownania`.
+  Блоки: ① *chociaż / choć / mimo że* + речення ② *mimo / pomimo* + dopełniacz (*mimo braku windy*) ③ *natomiast / za to / jednak / mimo to* — значення й місце в реченні ④ техніка «tak, ale»: *Rzeczywiście…, ale za to…* ⑤ *jeśli / jeżeli* + майбутній час ⑥ *o ile, pod warunkiem że, chyba że* ⑦ *w razie* + dopełniacz (*w razie problemów*) — номінальний стиль B2.
+  Wyjątki: *chociaż* = «хоча б» (*Chociaż zadzwoń!*); *jednak* може стояти в середині речення.
+- **Pułapki:** *незважаючи на* → **mimo** + D (✗ *mimo na*) · *подивитися квартиру* → **obejrzeć** mieszkanie · *хоча б* → **chociaż / przynajmniej** · *у разі, якщо* → **jeśli / w razie** + D · *магазин поруч* → sklep **w pobliżu / niedaleko** · *за умови, що* → **pod warunkiem, że** (кома!).
+- **Słownictwo:** ① prezentacja: obejrzeć, oprowadzić, zwrócić uwagę na, na pierwszy rzut oka ② wady: zawilgocenie, pęknięcie, nieszczelne okna, hałas, brak windy ③ okolica: infrastruktura, przystanek, plac zabaw, miejsce parkingowe, strefa płatnego parkowania ④ obiekcje: obawa, wątpliwość, zastrzeżenie, rozwiać wątpliwości, przemyśleć, wrócić z decyzją.
+- **Czytanie:** колонка Natalii «Pięć obiekcji, które słyszę na każdej prezentacji» (як відповідати). e1 — prawda/fałsz.
+- **Mówię płynnie:** *Rozumiem Pana obawy, ale… · To dobre pytanie. · Szczerze mówiąc… · Z drugiej strony… · Proszę spojrzeć na to tak:… · Co do…* Стратегія: **визнай → переформулюй → дай факт / вигоду**.
+- **Zadania komunikacyjne:**
+  1. Огляд квартири з Lisami (план квартири на картці; діалог-зразок + e2). *Zwrot:* Marta помічає пляму на стелі.
+  2. «Ogień obiekcji»: 5 заперечень підряд (немає ліфта, високий czynsz, парковка, старі вікна, ціна) — на кожне ≥ 1 конструкція уроку. *Zwrot:* Paweł уперше каже, що парковка — умова.
+  3. Розмова після огляду. *Zwrot:* «Musimy się zastanowić» → домовитися про конкретний термін відповіді, не тиснучи.
+  - **Монолог 2 хв:** «Dlaczego warto kupić to mieszkanie mimo jego wad».
+- **ДЗ:** hw · 🎬 відео про огляд квартири / на що дивитися при купівлі · 🎙️ відповіді на 3 **нові** заперечення (будинок, не квартира) · ✍️ звіт для pani Kaczmarek після огляду: реакції клієнтів, заперечення, наступні кроки (160–200).
+
+### 04 · Ostatnie słowo — торг, zadatek, umowa przedwstępna
+`pl-nier-04-negocjacje` · рівень B2
+
+- **Мовленнєва дія:** передати пропозицію покупців власниці, вести торг як посередник, пом'якшувати категоричність, пояснити клієнту *zadatek* vs *zaliczka* й суть umowy przedwstępnej.
+- **Граматика:** `new` `warunek-nierealny` · `by-ruchome` · `zeby-zyczenie`; пом'якшення — теги **`warunkowy-prosby`** і **`przypuszczajacy-formy`** (тегу `lagodzenie` у реєстрі немає; не створювати); `rec` `przyzwolenie`, `warunek-realny`, `przypuszczajacy-formy` (з 01).
+  Блоки: ① повтор форм tryb przypuszczający (місток до 01) ② *gdyby* + przypuszczający — теперішнє (*Gdyby Pani zeszła z ceny, klienci podpisaliby…*) ③ *gdyby* — минуле (*Gdyby ogłoszenie pojawiło się wcześniej, …*) ④ рухоме -by: *gdybym, gdybyśmy, żebyś* ⑤ пом'якшення: *chyba, raczej, wydaje mi się, nie wiem, czy…* ⑥ безособове *można by, należałoby, warto by* ⑦ *zależy mi na tym, żeby… / klienci proszą, żeby…*
+  Wyjątki: *jeśliby* — книжне й рідкісне, у розмові **gdyby** (не називати *jeśliby* помилкою); *gdyby* не = *якщо б* дослівно.
+- **Pułapki:** *угода* → **umowa / transakcja** (*ugoda* = мирова угода!) · *знизити ціну* → **obniżyć cenę / zejść z ceny** · *укласти договір* → **zawrzeć umowę** · *завдаток* → **zadatek ≠ zaliczka** (різні наслідки) · *мені залежить* → **zależy mi na** + Msc · *пропозиція (ціни)* → **oferta / propozycja cenowa**.
+- **Słownictwo:** ① cena: cena ofertowa / transakcyjna, obniżka, kontroferta, cena ostateczna ② pieniądze: zadatek, zaliczka, przelew, wkład własny, decyzja kredytowa ③ umowa: umowa przedwstępna, umowa przyrzeczona, termin, odstąpić od umowy, forma aktu notarialnego ④ negocjacje: ustępstwo, kompromis, warunki, spotkać się w połowie drogi.
+- **Czytanie:** «Zadatek czy zaliczka? Krótki poradnik dla kupujących» (від імені біура «Klucz»; лише перевірені факти, Źródła обов'язково). e1 — prawda/fałsz.
+- **Mówię płynnie:** *Wydaje mi się, że… · Proponowałabym… · Co by Pani powiedziała na…? · Muszę to skonsultować z klientami. · To nasza ostateczna propozycja. · Spotkajmy się w połowie drogi.* Стратегія: **інтерес, а не позиція** (чому клієнту важлива ціна / термін).
+- **Zadania komunikacyjne:**
+  1. Телефон до pani Zielińskiej: пропозиція Lisów 700 000 zł (діалог-зразок + e2). *Zwrot:* вона ображається — «to za mało, tu jest całe moje życie».
+  2. Посередництво: викладач по черзі грає обидві сторони; приховані межі сторін — **лише на TEACHER** (Lisowie max ≈ 725 000, Zielińska min ≈ 715 000 + хоче лишити меблі кухні). *Zwrot:* Lisowie просять 3 місяці на кредит.
+  3. Пояснити Lisom zadatek / zaliczka й umowę przedwstępną. *Zwrot:* «A jeśli bank nie da nam kredytu?»
+  - **Монолог 2 хв:** «Gdybym była na miejscu sprzedającej, …» — аргументувати ціну.
+- **Факти перевірити (пошуком, у Źródła):** zadatek — art. 394 Kodeksu cywilnego (наслідки невиконання); zaliczka — повертається; форма umowy przedwstępnej (звичайна письмова vs akt notarialny — різні наслідки); як зазвичай ставлять умову про кредит. Нічого з пам'яті.
+- **ДЗ:** hw · 🎬 відео про торг / zadatek vs zaliczka · 🎙️ голосова kontroferta для іншого продавця (1,5 хв) · ✍️ формальний e-mail Zielińskiej з пропозицією покупців і аргументами (160–200).
+
+### 05 · Od umowy do kluczy — формальності, оренда, фінальна симуляція
+`pl-nier-05-formalnosci` · рівень B2
+
+- **Мовленнєва дія:** пояснити клієнту кроки до aktu notarialnego й документи; перекласти офіційну мову на просту (для іноземця); провести повну симуляцію робочого дня.
+- **Граматика:** `new` `bierna-byc-zostac` · `bezosobowe-no-to` · `bezosobowe-sie` · `odczasownikowe`; `rec` `warunek-nierealny`, `warunkowy-prosby`, `przyzwolenie`.
+  Блоки: ① *być* vs *zostać* + imiesłów (стан vs подія: *umowa jest podpisana / została podpisana*) ② агент *przez* (*akt sporządzany przez notariusza*) ③ *-no / -to* (*podpisano, sprawdzono*) ④ *się* (*sprawdza się księgę wieczystą*) ⑤ *należy, trzeba, wymagane jest* ⑥ віддієслівні іменники офіційної мови (*zawarcie umowy, przeniesienie własności, wydanie lokalu*) ⑦ **z urzędowego na prosty**: *Wydanie lokalu nastąpi…* → *Klucze dostanie Pan…*
+  Wyjątki: *zostać* у теперішньому (*umowa zostaje zawarta*) — тільки в описі процедур і в мові права.
+- **Pułapki:** *застава (депозит)* → **kaucja** (*zastaw* = застава майна) · *здати / зняти квартиру* → **wynająć komuś / od kogoś** (одне дієслово!) · *прописка* → **zameldowanie** · *виписка з реєстру* → **odpis z księgi wieczystej** · *нотаріальний договір* → **akt notarialny** · *право власності* → **prawo własności**.
+- **Słownictwo:** ① dokumenty: księga wieczysta, odpis, hipoteka, świadectwo charakterystyki energetycznej, zaświadczenie o braku zaległości, zaświadczenie o osobach zameldowanych ② u notariusza: notariusz, akt notarialny, sporządzić, przenieść własność, taksa notarialna, podatek PCC ③ przekazanie: wydać lokal, protokół zdawczo-odbiorczy, stan liczników, klucze ④ najem: umowa najmu okazjonalnego, oświadczenie o poddaniu się egzekucji, kaucja, okres wypowiedzenia, najemca, wynajmujący.
+- **Czytanie:** «Od umowy przedwstępnej do kluczy — krok po kroku» (путівник біура) + короткий фрагмент офіційної мови (вигаданий пункт договору). e1 — prawda/fałsz. Źródła обов'язково.
+- **Mówię płynnie:** *Najpierw…, następnie…, na koniec… · Chodzi o to, że… · Innymi słowy… · Mówiąc prościej… · Podsumowując…* Стратегія: **один крок — одне речення** для клієнта-іноземця.
+- **Zadania komunikacyjne:**
+  1. Пояснити Lisom шлях до aktu notarialnego й список документів (діалог-зразок + e2). *Zwrot:* у dziale IV KW є hipoteka Zielińskiej — пояснити, що це означає й як вирішується.
+  2. Ravi Sharma (A2): пояснити просто najem okazjonalny, kaucję, protokół. *Zwrot:* «Czy mogę mieć kota? Czy mogę się zameldować?»
+  3. **Symulacja końcowa:** 3 сцени по 4–5 хв (дзвінок → заперечення на огляді → торг), картки zwrotów akcji тягнуться навмання.
+  - **Монолог 2 хв:** повтор діагностики з уроку 01 + порівняння за рубрикою (§4).
+- **Факти перевірити (пошуком, у Źródła):** які документи зазвичай потрібні до продажу квартири на вторинному ринку; PCC (ставка й **чи діє звільнення для першого житла** — актуально для Lisów, які зараз винаймають); хто зазвичай платить taksę notarialną і PCC; najem okazjonalny — що обов'язково (oświadczenie w formie aktu notarialnego, lokal zastępczy, zgłoszenie do urzędu skarbowego — терміни); межа kaucji при najmie. Програми кредитування не згадувати, якщо чинність не перевірено на дату уроку.
+- **ДЗ:** hw · 🎬 відео про купівлю квартири в Польщі крок за кроком / wynajem · 🎙️ пояснення процесу оренди для іноземця простою польською (2 хв) · ✍️ e-mail Raviemu: що підготувати до підписання umowy najmu й дня в'їзду (160–200).
+
+---
+
+## 4. Діагностика й вимірювання прогресу
+
+- **Урок 01, Rozgrzewka:** монолог 2–3 хв «Kim jestem i jak pracuję» → викладач записує (аудіо або нотатки) й оцінює за рубрикою B2 (§1, 0–3 × 5). На TEACHER — таблиця з балами й 5 найчастіших помилок → «журнал помилок».
+- **Кожен урок:** журнал помилок поповнюється; 2–3 помилки з попереднього уроку свідомо «провокуються» в задачах.
+- **Урок 05:** той самий монолог + симуляція → та сама рубрика → у Podsumowaniu учениця бачить різницю (на сторінці учня — лише її самооцінка «umiem / jeszcze ćwiczę», бали — на TEACHER).
+
+## 5. Що з'ясувати на уроці 01 (записати сюди, перед уроком 02)
+
+| Питання | Як впливає на 02–05 |
+|---|---|
+| Де працює: місто, агенція чи своя JDG, як довго | дзвінки й огляди в задачах — з районами її міста; сюжет Познані лишається |
+| Продаж, оренда чи обидва | лише оренда → у 04 торг про czynsz і warunki najmu, у 05 акцент на najem; лише продаж → лінія Raviego скорочується до задачі 2 в 05 |
+| Клієнти: поляки, українці, іноземці | українці → більше завдань «пояснити польською польські правила»; іноземці → більше «mówiąc prościej» |
+| Найважчі ситуації зараз (телефон? торг? формальності?) | на цю тему — +1 задача й домашнє 🎙️ |
+| Чи знає польську процедуру (KW, notariusz, PCC) | не знає → у 05 більше пояснень на TEACHER; знає → більше симуляції |
+| Мова: українська чи російська як рідна | глоси й пастки — під мову (00_START_HERE §5) |
+
+**Результат діагностики:** _(ще не проведено — заповнити після уроку 01 з ученицею: бали рубрики B2 + 5 найчастіших помилок + відповіді на таблицю вище; потім скоригувати уроки 02–05)_
+
+## 6. Реєстр `grammar_point` модуля
+
+Тільки теги з закритого реєстру (`docs/grammar-registry.json`) + службові `kalki-uk`, `slownictwo`. Перед кожним уроком — `python3 scripts/check_tags.py --changed`. **Не вигадувати** `-formy`/`-popraw`/`-wyjatki`.
+
+| Тег | Що покриває | Урок |
+|---|---|---|
+| `pan-pani` | Pan/Pani/Państwo + 3 ос., ввічливі формули | 01 |
+| `warunkowy-prosby` | ввічливе прохання умовним способом (*mógłby Pan…*) | 01 (rec 04–05) |
+| `przypuszczajacy-formy` | форми трибу умовного | 01 (rec 04) |
+| `grzecznosc-chcialbym` | *chciałbym / chciałabym*, ввічливі формули | 01 |
+| `pytania-zalezne` | czy / jaki / ile / kiedy в залежному питанні, порядок слів | 01 |
+| `mowa-zalezna` | парафраза й зміна особи (*Czyli…, Jeśli dobrze rozumiem…*) | 01 |
+| `imieslow-bierny` | -ny/-ony/-ty в описі нерухомості | 02 |
+| `imieslow-czynny` | -ący, заміна *który* | 02 |
+| `stopniowanie` | вищий і найвищий ступінь, нерегулярні | 02 |
+| `porownania` | niż/od, o wiele, im…tym, tak samo jak | 02 |
+| `liczebniki-skladnia` | ціни, метри, кімнати, поверхи; dopełniacz після числівників | 02 |
+| `przyzwolenie` | chociaż, mimo że, mimo + D | 03 |
+| `przeciwstawienie` | natomiast, za to, jednak, mimo to | 03 |
+| `warunek-realny` | jeśli, o ile, pod warunkiem że, chyba że, w razie + D | 03 |
+| `warunek-nierealny` | gdyby — теперішнє й минуле | 04 |
+| `by-ruchome` | gdybym, żebyś, gdybyśmy | 04 |
+| `warunkowy-prosby` + `przypuszczajacy-formy` | пом'якшення: chyba, raczej, wydaje mi się, można by, należałoby (**замість неіснуючого `lagodzenie`**) | 04 |
+| `zeby-zyczenie` | zależy mi na tym, żeby; prosić, żeby | 04 |
+| `bierna-byc-zostac` | być vs zostać + imiesłów, przez | 05 |
+| `bezosobowe-no-to` | podpisano, sprawdzono | 05 |
+| `bezosobowe-sie` | sprawdza się, należy, trzeba | 05 |
+| `odczasownikowe` | zawarcie, przeniesienie, wydanie — офіційний стиль | 05 |
+
+Усі теги, окрім `pan-pani`, `warunkowy-prosby`, `mowa-zalezna`, `grzecznosc-chcialbym` (перевірені `check_tags.py` в уроці 01), звірені з `grammar-registry.json` 21.11.2026 — є в реєстрі. Тегів `grzecznosc-pan-pani`, `parafraza`, `lagodzenie` у реєстрі **немає**.
+
+Кожен урок тихо повторює два попередні: ≥ 6 слів + ≥ 1 граматична тема у вправах (запис на TEACHER). Сюжетний ланцюжок робить це природним.
+
+## 7. Як замовляти урок (для сесії Sonnet)
+
+Промпт: **«Урок 0N для ріелторки (`pl-nier`). Карта — `docs/CURRICULUM_PL-NIER.md` (репо) або `02_curricula/CURRICULUM_PL-NIER.md` (Project), правила — `00_START_HERE.md` + `LESSON_PROTOCOL.md` + `CLAUDE.md`.»** Один урок — одна сесія. Модуль уже існує на сайті (урок 01 створив); Notion не використовується. Фото — Unsplash (`images.unsplash.com`), відео — за v3.19 (YouTube, польською, 3–15 хв, ≥ 50 тис. переглядів, ≤ 2 років, oEmbed 200, статистика на TEACHER).
+
+### Ворота якості — без цього урок не готовий
+
+1. **Тексти — реальні жанри біура** (нотатка, оголошення, колонка, порадник), написані з нуля, з персонажами й цифрами з §2. Ніякого загального «Rynek nieruchomości w Polsce».
+2. **Граматика — B2 там, де карта каже B2.** Не підміняти *gdyby* простим *jeśli*, пасив — безособовими *trzeba*. Кожен блок теорії — приклад із роботи ріелтора, не про погоду.
+3. **Кожна задача має конфлікт або несподіванку** (zwrot akcji на TEACHER). Задача «опишіть квартиру» без опору клієнта — не B2.
+4. **Факти права — тільки після пошуку**, з посиланням у Źródła (isap.sejm.gov.pl, gov.pl, ekw.ms.gov.pl). Неперевірене — не писати, а назвати в чаті. Ринкові звичаї (prowizja, хто платить) — «zwykle», з двох джерел або взагалі не згадувати.
+5. **Пастки — справжні кальки** з української (список у карті — мінімум); правильні розмовні форми (*ja bym chciała*, *jeśliby*, *przedzwonię*) **не називати помилками**.
+6. **Вправи «легко — можна, тупо — ні»**: кожен хибний варіант — реальна помилка україномовної людини; `accept[]` для порядку слів і синонімів (де інший порядок справді природний); `check_answers.py` → 0 ERR.
+7. **Приклади не повторюються** між теорією, словником, вправами й домашкою; домашка — інша нерухомість / інший клієнт.
+8. **Mówię płynnie** — розмовні маркери, які реально кажуть польські pośrednicy, а не книжні звороти.
+9. Цифри сюжету однакові в усіх уроках (§2). Змінив — онови карту.
+10. Наприкінці — статус уроку в таблиці нижче + в обох копіях карти (Project і `docs/`).
+
+## 8. Статус
+
+| # | lesson_id | Тема | Статус |
+|---|---|---|---|
+| 01 | `pl-nier-01-pierwszy-kontakt` | Dzwonię w sprawie ogłoszenia | ✅ на сайті 21.11.2026 (main 757d6dd; embed ✓ --remote; i18n ru/pl/en ✓); Notion — не створювався; діагностику ще не проведено |
+| 02 | `pl-nier-02-opis-i-ogloszenie` | Mieszkanie z duszą | — |
+| 03 | `pl-nier-03-prezentacja-i-obiekcje` | Zapraszam do środka | — |
+| 04 | `pl-nier-04-negocjacje` | Ostatnie słowo | — |
+| 05 | `pl-nier-05-formalnosci` | Od umowy do kluczy | — |
