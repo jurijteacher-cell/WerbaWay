@@ -23,6 +23,10 @@ const SECTIONS = (teacher: boolean): Item[] => [
     : []),
 ];
 
+/** Список учнів для пошуку викладача: кеш у пам'яті на 60 с (пошук викликається на кожне натискання клавіші) */
+let peopleCache: { at: number; stats: unknown[]; profiles: unknown[] } | null = null;
+const PEOPLE_TTL_MS = 60_000;
+
 /** GET /api/search?q= — лекції, курси, учні (викладач), нотатки (викладач), слова, розділи */
 export async function GET(req: Request) {
   const supabase = createClient();
@@ -69,10 +73,15 @@ export async function GET(req: Request) {
   if (courseItems.length) groups.push({ label: t("Курси"), items: courseItems });
 
   if (teacher) {
-    const [{ data: stats }, { data: profiles }] = await Promise.all([
-      supabase.from('embed_student_stats').select('id, name, user_id, archived_at'),
-      supabase.from('profiles').select('id, full_name, role'),
-    ]);
+    if (!peopleCache || Date.now() - peopleCache.at > PEOPLE_TTL_MS) {
+      const [{ data: s }, { data: p }] = await Promise.all([
+        supabase.from('embed_student_stats').select('id, name, user_id, archived_at'),
+        supabase.from('profiles').select('id, full_name, role'),
+      ]);
+      peopleCache = { at: Date.now(), stats: s ?? [], profiles: p ?? [] };
+    }
+    const stats = peopleCache.stats as { id: string; name: string | null; user_id: string | null; archived_at: string | null }[];
+    const profiles = peopleCache.profiles as { id: string; full_name: string | null; role: string | null }[];
     const seen = new Set<string>();
     const people: Item[] = [];
     for (const p of profiles ?? []) {

@@ -92,7 +92,7 @@ export function LectureCard({ slug, title, level, icon, cover, stats, completedA
               {level && <span className="rounded bg-gold-fill px-1.5 py-0.5 text-paper">{level}</span>}
               {completedAt ? <span>пройдено {fmt(completedAt)}</span> : stats.touched ? <span>{t("в процесі")}</span> : null}
             </p>
-            <Link href={`/learn/${slug}`} className="font-display text-lg leading-snug text-paper hover:text-gold">
+            <Link href={`/learn/${slug}`} prefetch={false} className="font-display text-lg leading-snug text-paper hover:text-gold">
               {icon} {title}
             </Link>
           </div>
@@ -120,7 +120,7 @@ export function LectureCard({ slug, title, level, icon, cover, stats, completedA
           )}
           {hwState && <span className={`ml-auto rounded-full px-2.5 py-1 font-medium ${hwState.cls}`}>{hwState.text}</span>}
           {homework?.assigned && !homework.done && (
-            <Link href={`/learn/${slug}/hw`} className="font-medium text-gold hover:text-gold-bright">
+            <Link href={`/learn/${slug}/hw`} prefetch={false} className="font-medium text-gold hover:text-gold-bright">
               {t("виконати →")}
             </Link>
           )}

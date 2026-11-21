@@ -17,6 +17,7 @@ function Card({ p, canShare }: { p: CourseCard; canShare?: boolean }) {
     <div className="relative">
     <Link
       href={`/learn/${p.slug}`}
+      prefetch={false}
       className="group block h-full overflow-hidden rounded-2xl border border-ink-line bg-ink-raised shadow-[0_1px_0_#e6ebf8] transition-all hover:-translate-y-0.5 hover:border-gold/60 hover:shadow-[0_12px_26px_-20px_rgba(28,35,72,.6)]"
     >
       <div className="relative">

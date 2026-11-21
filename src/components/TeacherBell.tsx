@@ -57,7 +57,10 @@ export function TeacherBell() {
   useEffect(() => {
     setSeen(readSeen());
     load();
-    const t = setInterval(load, 60_000);
+    // раз на 5 хв і лише поки вкладка перед очима (кожне опитування — запити до Supabase)
+    const t = setInterval(() => {
+      if (document.visibilityState === 'visible') load();
+    }, 300_000);
     const onFocus = () => load();
     window.addEventListener('focus', onFocus);
     return () => {
