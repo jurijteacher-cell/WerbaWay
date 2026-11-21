@@ -1,0 +1,231 @@
+{
+  "lesson_id": "pl-ksieg-05-pit-cit-formy-opodatkowania",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: warunek i rada w nowych zdaniach",
+  "instruction": "Trzy ćwiczenia. Zrób je przed pisaniem e-maila. Potem obejrzyj wideo i napisz wiadomość do klienta — zadania są na stronie lekcji.",
+  "estimated_minutes": 18,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "cloze-text",
+      "title": "1. E-mail do pani Marty",
+      "instruction": "Tam, gdzie jest lista — wybierz. Tam, gdzie jest nawias lub podpowiedź — wpisz.",
+      "text": "Szanowna Pani Marto,\n\nprzesyłam krótkie podsumowanie. {h1-1} pani przychód w tym roku nie przekroczy 2 mln euro, może pani zostać na ryczałcie. {h1-2} koszty salonu były dużo wyższe, skala byłaby dla pani lepsza, ale pani koszty są niskie. {h1-3} pani zmieni formę, proszę złożyć zgłoszenie do 22 lutego. {h1-4} pani tego nie zrobi, zostanie pani na obecnej formie. Na pani {h1-5} nie zmieniałabym niczego. Gdyby {h1-6} pani jeszcze jakieś pytania, proszę dzwonić.\n\nPozdrawiam\nHalina",
+      "items": [
+        {
+          "id": "h1-1",
+          "answer": "Jeśli",
+          "options": [
+            "Jeśli",
+            "Gdyby",
+            "Czy"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Warunek, który może się spełnić: jeśli + przyszły (nie przekroczy)."
+        },
+        {
+          "id": "h1-2",
+          "answer": "Gdyby",
+          "options": [
+            "Gdyby",
+            "Jeśli",
+            "Chyba że"
+          ],
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Koszty są niskie, więc to sytuacja nierealna: gdyby były wyższe…"
+        },
+        {
+          "id": "h1-3",
+          "answer": "Jeśli",
+          "options": [
+            "Jeśli",
+            "Kiedy",
+            "Czy"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Zmiana formy to warunek, nie czas: jeśli."
+        },
+        {
+          "id": "h1-4",
+          "answer": "Jeśli",
+          "accept": [
+            "Jeżeli"
+          ],
+          "hint": "jeśli / jeżeli",
+          "grammar_point": "warunek-realny",
+          "explanation": "Warunek realny: jeśli + przyszły."
+        },
+        {
+          "id": "h1-5",
+          "answer": "miejscu",
+          "hint": "Na pani …",
+          "grammar_point": "przypuszczajacy-formy",
+          "explanation": "Na pani miejscu + tryb przypuszczający."
+        },
+        {
+          "id": "h1-6",
+          "answer": "miała",
+          "hint": "mieć (pani)",
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Gdyby miała pani: forma na -ł."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdanie",
+      "instruction": "Ułóż słowa w poprawne zdanie. Klikaj w kolejności.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Gdyby pan miał więcej klientów, zapłaciłby pan więcej podatku.",
+          "answer": "Gdyby pan miał więcej klientów, zapłaciłby pan więcej podatku.",
+          "words": [
+            "Gdyby",
+            "pan",
+            "miał",
+            "więcej",
+            "klientów,",
+            "zapłaciłby",
+            "pan",
+            "więcej",
+            "podatku."
+          ],
+          "accept": [
+            "Gdyby miał pan więcej klientów, zapłaciłby pan więcej podatku.",
+            "Gdyby pan miał więcej klientów, pan zapłaciłby więcej podatku."
+          ],
+          "grammar_point": "warunek-nierealny"
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Jeśli pan nic nie zrobi, zostanie pan na skali.",
+          "answer": "Jeśli pan nic nie zrobi, zostanie pan na skali.",
+          "words": [
+            "Jeśli",
+            "pan",
+            "nic",
+            "nie",
+            "zrobi,",
+            "zostanie",
+            "pan",
+            "na",
+            "skali."
+          ],
+          "accept": [
+            "Jeśli pan nic nie zrobi, pan zostanie na skali.",
+            "Jeśli nic pan nie zrobi, zostanie pan na skali."
+          ],
+          "grammar_point": "warunek-realny"
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Na pana miejscu zgłosiłbym zmianę jeszcze dziś.",
+          "answer": "Na pana miejscu zgłosiłbym zmianę jeszcze dziś.",
+          "words": [
+            "Na",
+            "pana",
+            "miejscu",
+            "zgłosiłbym",
+            "zmianę",
+            "jeszcze",
+            "dziś."
+          ],
+          "accept": [
+            "Na pana miejscu jeszcze dziś zgłosiłbym zmianę.",
+            "Na pana miejscu zgłosiłbym jeszcze dziś zmianę."
+          ],
+          "grammar_point": "przypuszczajacy-formy"
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Radzę, żeby pan policzył koszty za cały rok.",
+          "answer": "Radzę, żeby pan policzył koszty za cały rok.",
+          "words": [
+            "Radzę,",
+            "żeby",
+            "pan",
+            "policzył",
+            "koszty",
+            "za",
+            "cały",
+            "rok."
+          ],
+          "accept": [
+            "Radzę, żeby pan policzył za cały rok koszty."
+          ],
+          "grammar_point": "zeby-zyczenie"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Wybierz właściwe słowo",
+      "instruction": "Wybierz słowo, które pasuje do zdania.",
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Pan Marek pyta, ___ ryczałt jest dla niego korzystny.",
+          "answer": "czy",
+          "options": [
+            "czy",
+            "jeśli",
+            "kiedy"
+          ],
+          "grammar_point": "pytania-zalezne",
+          "explanation": "Pytanie pośrednie: pyta, czy…"
+        },
+        {
+          "id": "h3-2",
+          "text": "Pan Marek może zostać na ryczałcie, ___, że jego przychód nie przekroczy limitu.",
+          "answer": "pod warunkiem",
+          "options": [
+            "pod warunkiem",
+            "chyba",
+            "w przeciwnym razie"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Pod warunkiem, że = konieczny warunek."
+        },
+        {
+          "id": "h3-3",
+          "text": "Gdyby pan Marek ___ więcej samochodów, miałby wyższe koszty.",
+          "answer": "kupił",
+          "options": [
+            "kupił",
+            "kupi",
+            "kupowałby"
+          ],
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Gdyby + forma na -ł: kupił."
+        },
+        {
+          "id": "h3-4",
+          "text": "Na jego ___ sprawdziłabym koszty jeszcze raz.",
+          "answer": "miejscu",
+          "options": [
+            "miejscu",
+            "miejsce",
+            "miejsca"
+          ],
+          "grammar_point": "przypadki-przyimki",
+          "explanation": "Na + miejscownik: na jego miejscu."
+        },
+        {
+          "id": "h3-5",
+          "text": "Proszę zapłacić zaliczkę do 20., w przeciwnym ___ będą odsetki.",
+          "answer": "razie",
+          "options": [
+            "razie",
+            "razu",
+            "raz"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Stałe wyrażenie: w przeciwnym razie."
+        }
+      ]
+    }
+  ]
+}

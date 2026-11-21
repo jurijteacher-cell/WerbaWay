@@ -1,0 +1,654 @@
+{
+  "lesson_id": "pl-ksieg-05-pit-cit-formy-opodatkowania",
+  "exercise_type": "fill-in-blank",
+  "title": "Jeśli… to… i gdyby… — tekst i gramatyka",
+  "instruction": "Zadania do tekstu (t1–t2), słowa (g1) i cztery sceny gramatyki (g2–g5). Na lekcji: t1, t2, g1–g5; g6–g7 — jeśli zostanie czas albo w domu.",
+  "estimated_minutes": 30,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "Tekst 1. Ułóż w kolejności",
+      "instruction": "Co było najpierw, a co potem? Klikaj zdania po kolei.",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "Pani Iwona przyszła do Haliny z pytaniem o formę opodatkowania.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "Halina wyjaśniła, czym różni się przychód od dochodu.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Halina pokazała trzy kwoty podatku.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Pani Iwona zapytała, czy skala jest najtańsza.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "Halina podała termin zgłoszenia zmiany formy.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Pani Iwona zdecydowała, że nic nie zmienia.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Tekst 2. Streszczenie rozmowy",
+      "instruction": "Wpisz brakujące słowa. W nawiasie podpowiedź.",
+      "text": "Pani Iwona pyta, jaką formę wybrać od stycznia. Halina liczy: przychód wyniesie {t2-1} 420 000 zł, koszty — {t2-2} 310 000 zł. Różnica to {t2-3}, czyli 110 000 zł. Na {t2-4} podatek wyniesie 9 600 zł, na podatku {t2-5} — 20 900 zł, a na {t2-6} — 12 600 zł. Zmianę formy trzeba {t2-7} do 22 lutego. Jeśli pani Iwona nic nie zrobi, {t2-8} na skali.",
+      "items": [
+        {
+          "id": "t2-1",
+          "answer": "około",
+          "hint": "mniej więcej",
+          "grammar_point": "czytanie",
+          "explanation": "wynosić około: przybliżona kwota."
+        },
+        {
+          "id": "t2-2",
+          "answer": "około",
+          "hint": "mniej więcej",
+          "grammar_point": "czytanie",
+          "explanation": "Znowu przybliżona kwota: około 310 000 zł."
+        },
+        {
+          "id": "t2-3",
+          "answer": "dochód",
+          "hint": "przychód minus koszty",
+          "grammar_point": "czytanie",
+          "explanation": "Dochód to przychód minus koszty."
+        },
+        {
+          "id": "t2-4",
+          "answer": "skali",
+          "hint": "skala (na…)",
+          "grammar_point": "czytanie",
+          "explanation": "Na + miejscownik: na skali."
+        },
+        {
+          "id": "t2-5",
+          "answer": "liniowym",
+          "hint": "liniowy (na podatku…)",
+          "grammar_point": "czytanie",
+          "explanation": "Na podatku liniowym — przymiotnik w miejscowniku."
+        },
+        {
+          "id": "t2-6",
+          "answer": "ryczałcie",
+          "hint": "ryczałt (na…)",
+          "grammar_point": "czytanie",
+          "explanation": "Na + miejscownik: na ryczałcie."
+        },
+        {
+          "id": "t2-7",
+          "answer": "zgłosić",
+          "hint": "zgłosić (bezokolicznik)",
+          "grammar_point": "czytanie",
+          "explanation": "Trzeba + bezokolicznik."
+        },
+        {
+          "id": "t2-8",
+          "answer": "zostanie",
+          "hint": "zostać (ona, czas przyszły)",
+          "grammar_point": "czytanie",
+          "explanation": "Jeśli nic nie zrobi, zostanie na skali (czas przyszły)."
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "exercise_type": "matching",
+      "title": "1. Słowa z rozmowy o podatkach",
+      "instruction": "Kliknij słowo po lewej, a potem jego opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "przychód",
+          "right": "to, co firma zarobiła na sprzedaży",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "dochód",
+          "right": "przychód minus koszty",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "ryczałt",
+          "right": "podatek od przychodu, bez odliczania kosztów",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "kwota wolna",
+          "right": "część dochodu bez podatku",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "zaliczka",
+          "right": "wpłata podatku w ciągu roku",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "zeznanie roczne",
+          "right": "dokument z rozliczeniem za cały rok",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Jeśli + czas: wybierz formę",
+      "instruction": "Wybierz formę czasownika. Pomyśl: czy to zdarzy się w przyszłości, czy to zasada, czy rada?",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Jeśli pani ___ ryczałt, nie odliczy pani kosztów.",
+          "answer": "wybierze",
+          "options": [
+            "wybierze",
+            "będzie wybierać",
+            "wybrałaby"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Warunek realny: jeśli + czas przyszły dokonany. Czynność jest jednorazowa, więc dokonany."
+        },
+        {
+          "id": "g2-2",
+          "text": "Jeśli firma nie ___ zmiany, zostaje na skali.",
+          "answer": "zgłosi",
+          "options": [
+            "zgłosi",
+            "zgłosiła",
+            "zgłaszałaby"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Zasada: jeśli + zgłosi → zostaje. Tryb przypuszczający tu nie pasuje."
+        },
+        {
+          "id": "g2-3",
+          "text": "Jeśli ___ pani wątpliwości, proszę zadzwonić.",
+          "answer": "ma",
+          "options": [
+            "ma",
+            "miałaby",
+            "mieć"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Rada lub prośba: jeśli + czas teraźniejszy, potem tryb rozkazujący."
+        },
+        {
+          "id": "g2-4",
+          "text": "Jeśli pani ___ wniosek wczoraj, nie musi pani nic robić.",
+          "answer": "złożyła",
+          "options": [
+            "złożyła",
+            "złoży",
+            "złożyłaby"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Warunek o przeszłości: jeśli + czas przeszły (złożyła)."
+        },
+        {
+          "id": "g2-5",
+          "text": "Jeśli zapłaci pani zaliczkę na czas, nie ___ pani odsetek.",
+          "answer": "zapłaci",
+          "options": [
+            "zapłaci",
+            "zapłaciłaby",
+            "zapłaciła"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Jeśli + przyszły → przyszły: zapłaci … nie zapłaci."
+        },
+        {
+          "id": "g2-6",
+          "text": "Jeśli koszty ___ wyższe niż 280 000 zł, skala będzie tańsza.",
+          "answer": "będą",
+          "options": [
+            "będą",
+            "byłyby",
+            "były"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Warunek realny o przyszłości: koszty będą wyższe. Czas przeszły i tryb przypuszczający zmieniają sens."
+        },
+        {
+          "id": "g2-7",
+          "text": "Jeśli przejdzie pani na liniowy, ___ pani 19 procent od dochodu.",
+          "answer": "odda",
+          "options": [
+            "odda",
+            "oddałaby",
+            "oddając"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Jeśli + przyszły → przyszły: odda 19 procent."
+        },
+        {
+          "id": "g2-8",
+          "text": "Jeśli pani nic nie ___, zostanie pani na skali.",
+          "answer": "zrobi",
+          "options": [
+            "zrobi",
+            "zrobiłaby",
+            "robiąc"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Po jeśli o przyszłości — czas przyszły dokonany: zrobi."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Jeśli, kiedy, czy, chyba że",
+      "instruction": "Wybierz słowo, które pasuje do sensu zdania.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Nie wiem, ___ mogę zmienić formę w marcu.",
+          "answer": "czy",
+          "options": [
+            "czy",
+            "jeśli",
+            "kiedy"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Pytanie pośrednie: nie wiem, czy… Po „nie wiem” nie używamy jeśli."
+        },
+        {
+          "id": "g3-2",
+          "text": "___ skończy się rok, złożymy PIT.",
+          "answer": "Kiedy",
+          "options": [
+            "Kiedy",
+            "Chyba że",
+            "Czy"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Rok skończy się na pewno — to czas, nie warunek: kiedy / gdy."
+        },
+        {
+          "id": "g3-3",
+          "text": "Zostanie pani na skali, ___ zgłosi pani zmianę.",
+          "answer": "chyba że",
+          "options": [
+            "chyba że",
+            "czy",
+            "pod warunkiem, że"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Chyba że = wyjątek. Zostanie na skali, tylko jeśli nie zgłosi zmiany."
+        },
+        {
+          "id": "g3-4",
+          "text": "Ryczałt jest możliwy ___, że przychód nie przekroczy limitu.",
+          "answer": "pod warunkiem",
+          "options": [
+            "pod warunkiem",
+            "za warunkiem",
+            "w warunku"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Stałe wyrażenie: pod warunkiem, że."
+        },
+        {
+          "id": "g3-5",
+          "text": "Proszę zgłosić zmianę do 22 lutego, ___ zostanie pani na skali.",
+          "answer": "w przeciwnym razie",
+          "options": [
+            "w przeciwnym razie",
+            "chyba że",
+            "czy"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "W przeciwnym razie = inaczej, jeśli nie zgłosi zmiany."
+        },
+        {
+          "id": "g3-6",
+          "text": "___ pani nie zrozumiała, chętnie wyjaśnię jeszcze raz.",
+          "answer": "Jeśli",
+          "options": [
+            "Jeśli",
+            "Czy",
+            "Chyba że"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Warunek, który może się spełnić: jeśli."
+        },
+        {
+          "id": "g3-7",
+          "text": "Zapytam Halinę, ___ mam zgłosić zmianę.",
+          "answer": "czy",
+          "options": [
+            "czy",
+            "jeżeli",
+            "o ile"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "Pytanie pośrednie: zapytam, czy… Jeżeli i o ile wprowadzają warunek, nie pytanie."
+        },
+        {
+          "id": "g3-8",
+          "text": "Zapłacimy dziś, ___ bank nie ma awarii.",
+          "answer": "o ile",
+          "options": [
+            "o ile",
+            "czy",
+            "żeby"
+          ],
+          "grammar_point": "warunek-realny",
+          "explanation": "O ile = jeśli (bardziej formalnie): zapłacimy, o ile bank działa."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "exercise_type": "cloze-text",
+      "title": "4. Co by było, gdyby…?",
+      "instruction": "Wpisz formę czasownika z nawiasu. Pamiętaj: gdyby + forma na -ł.",
+      "text": "Gdyby pani Iwona {g4-1} (mieć) niższe koszty, ryczałt {g4-2} (być) dla niej lepszy. Gdyby {g4-3} (ona: wybrać) podatek liniowy, {g4-4} (ona: zapłacić) w tym roku 20 900 zł. Halina mówi: „Gdybym {g4-5} (ja: mieć) więcej czasu, {g4-6} (ja: policzyć) wszystkie warianty jeszcze raz.” Pan Tomasz pyta: „Co by pani zrobiła, gdyby pani {g4-7} (być) na moim miejscu?” Halina mówi: „Gdybyśmy {g4-8} (my: zacząć) wcześniej, mielibyśmy więcej czasu na decyzję.”",
+      "items": [
+        {
+          "id": "g4-1",
+          "answer": "miała",
+          "hint": "mieć",
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Gdyby + forma na -ł: gdyby miała. Końcówki osobowe są w by, nie w czasowniku."
+        },
+        {
+          "id": "g4-2",
+          "answer": "byłby",
+          "hint": "być (on)",
+          "grammar_point": "warunek-nierealny",
+          "explanation": "W drugiej części by łączy się z czasownikiem: byłby."
+        },
+        {
+          "id": "g4-3",
+          "answer": "wybrała",
+          "hint": "wybrać (ona)",
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Gdyby wybrała — nie „gdyby wybierze”. Po gdyby zawsze forma na -ł."
+        },
+        {
+          "id": "g4-4",
+          "answer": "zapłaciłaby",
+          "hint": "zapłacić (ona)",
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Forma żeńska: zapłaciłaby."
+        },
+        {
+          "id": "g4-5",
+          "answer": "miała",
+          "hint": "mieć (ja = Halina)",
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Gdybym miała — końcówka -m jest w gdybym, czasownik ma tylko -ła."
+        },
+        {
+          "id": "g4-6",
+          "answer": "policzyłabym",
+          "hint": "policzyć (ja = Halina)",
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Policzyłabym: -ła- + -bym."
+        },
+        {
+          "id": "g4-7",
+          "answer": "była",
+          "hint": "być (pani)",
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Gdyby pani była: pani to ona, więc „była”."
+        },
+        {
+          "id": "g4-8",
+          "answer": "zaczęli",
+          "hint": "zacząć (my)",
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Gdybyśmy zaczęli: my + forma -li (męskoosobowa) lub -ły.",
+          "accept": [
+            "zaczęły"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "exercise_type": "fill-in-blank",
+      "title": "5. Rada i uprzejma prośba",
+      "instruction": "Wybierz formę, która pasuje do rady albo prośby.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Na pani miejscu ___ na skali.",
+          "answer": "zostałabym",
+          "options": [
+            "zostałabym",
+            "zostanę",
+            "zostałam"
+          ],
+          "grammar_point": "przypuszczajacy-formy",
+          "explanation": "Rada: na pani miejscu + tryb przypuszczający (zostałabym)."
+        },
+        {
+          "id": "g5-2",
+          "text": "Radzę, żeby pani ___ zmianę do 22 lutego.",
+          "answer": "zgłosiła",
+          "options": [
+            "zgłosiła",
+            "zgłosi",
+            "zgłosić"
+          ],
+          "grammar_point": "przypuszczajacy-formy",
+          "explanation": "Radzę, żeby + forma na -ł; osoba się zmienia (pani), więc nie bezokolicznik."
+        },
+        {
+          "id": "g5-3",
+          "text": "Chciałabym ___ o ryczałt.",
+          "answer": "zapytać",
+          "options": [
+            "zapytać",
+            "zapytam",
+            "zapytałam"
+          ],
+          "grammar_point": "przypuszczajacy-formy",
+          "explanation": "Chciałabym + bezokolicznik: ten sam podmiot."
+        },
+        {
+          "id": "g5-4",
+          "text": "Warto ___ wszystko jeszcze raz.",
+          "answer": "policzyć",
+          "options": [
+            "policzyć",
+            "policzy",
+            "policzyła"
+          ],
+          "grammar_point": "przypuszczajacy-formy",
+          "explanation": "Warto + bezokolicznik."
+        },
+        {
+          "id": "g5-5",
+          "text": "Powinna pani ___ zmianę w urzędzie skarbowym.",
+          "answer": "zgłosić",
+          "options": [
+            "zgłosić",
+            "zgłosiła",
+            "zgłasza"
+          ],
+          "grammar_point": "przypuszczajacy-formy",
+          "explanation": "Powinna + bezokolicznik."
+        },
+        {
+          "id": "g5-6",
+          "text": "Pani Iwona chce, żeby Halina ___ wszystkie koszty.",
+          "answer": "sprawdziła",
+          "options": [
+            "sprawdziła",
+            "sprawdzić",
+            "sprawdzi"
+          ],
+          "grammar_point": "przypuszczajacy-formy",
+          "explanation": "Chce, żeby + forma na -ł, gdy podmioty są różne (pani Iwona / Halina)."
+        },
+        {
+          "id": "g5-7",
+          "text": "Gdyby koszty były niższe, ryczałt ___ lepszy.",
+          "answer": "byłby",
+          "options": [
+            "byłby",
+            "będzie",
+            "jest"
+          ],
+          "grammar_point": "przypuszczajacy-formy",
+          "explanation": "Wracamy do gdyby: w drugiej części — tryb przypuszczający (byłby)."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "exercise_type": "sentence-building",
+      "title": "6. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g6-1",
+          "prompt": "Mój dochód to 420 000 zł przed kosztami.",
+          "answer": "Mój przychód to 420 000 zł przed kosztami.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Przed kosztami to przychód. Dochód = przychód minus koszty."
+        },
+        {
+          "id": "g6-2",
+          "prompt": "Zapłacę podatek z dochodu do 20 listopada.",
+          "answer": "Zapłacę podatek od dochodu do 20 listopada.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Podatek od + dopełniacz: od dochodu, od przychodu."
+        },
+        {
+          "id": "g6-3",
+          "prompt": "Mogę wybrać ryczałt za warunkiem, że przychód będzie niższy niż limit.",
+          "answer": "Mogę wybrać ryczałt pod warunkiem, że przychód będzie niższy niż limit.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Stałe wyrażenie: pod warunkiem."
+        },
+        {
+          "id": "g6-4",
+          "prompt": "Wszystkie wydatki na kwiaty odnieśliśmy do kosztów.",
+          "answer": "Wszystkie wydatki na kwiaty zaliczyliśmy do kosztów.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Wydatek zaliczamy do kosztów. Odnieść znaczy zanieść z powrotem.",
+          "accept": [
+            "Wszystkie wydatki na kwiaty wliczyliśmy w koszty."
+          ]
+        },
+        {
+          "id": "g6-5",
+          "prompt": "Gdybym miałabym więcej klientów, zapłaciłabym więcej.",
+          "answer": "Gdybym miała więcej klientów, zapłaciłabym więcej.",
+          "grammar_point": "by-ruchome",
+          "explanation": "Końcówka -bym jest w gdybym; czasownik po nim ma samą formę na -ł."
+        },
+        {
+          "id": "g6-6",
+          "prompt": "Gdyby pani wiedziałaby, zmieniłaby formę.",
+          "answer": "Gdyby pani wiedziała, zmieniłaby formę.",
+          "grammar_point": "by-ruchome",
+          "explanation": "By stoi raz: gdyby. Po nim forma na -ł bez drugiego -by."
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "exercise_type": "cloze-text",
+      "title": "7. List do pana Tomasza",
+      "instruction": "Uzupełnij list. Użyj słów z lekcji i form z nawiasów.",
+      "text": "Szanowny Panie Tomaszu,\n\npoliczyłam trzy warianty dla Pana sklepu rowerowego. Pana {g7-1} (przychód minus koszty) wyniesie w tym roku około 250 000 zł. {g7-2} Pan zostanie na skali, zapłaci Pan zwykle więcej niż na podatku liniowym. {g7-3} koszty sklepu były dużo wyższe, skala mogłaby być korzystniejsza. Zmianę formy trzeba zgłosić {g7-4} 22 lutego. Zostanie Pan na skali, {g7-5} zgłosi Pan zmianę. Na Pana {g7-6} wybrałabym podatek liniowy, {g7-7}, że koszty będą podobne jak w tym roku. Radzę, żeby Pan {g7-8} (zgłosić) zmianę jeszcze w styczniu. Gdyby {g7-9} Pan jakieś pytania, proszę dzwonić.\n\nZ poważaniem\nHalina",
+      "items": [
+        {
+          "id": "g7-1",
+          "answer": "dochód",
+          "hint": "przychód minus koszty",
+          "grammar_point": "slownictwo",
+          "explanation": "Dochód = przychód minus koszty."
+        },
+        {
+          "id": "g7-2",
+          "answer": "Jeśli",
+          "hint": "warunek realny",
+          "grammar_point": "warunek-realny",
+          "explanation": "Warunek realny: jeśli + czas przyszły (zostanie).",
+          "accept": [
+            "Jeżeli"
+          ]
+        },
+        {
+          "id": "g7-3",
+          "answer": "Gdyby",
+          "hint": "warunek nierealny",
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Mało prawdopodobne: gdyby koszty były…"
+        },
+        {
+          "id": "g7-4",
+          "answer": "do",
+          "hint": "termin: …22 lutego",
+          "grammar_point": "slownictwo",
+          "explanation": "Do + dopełniacz: do 22 lutego."
+        },
+        {
+          "id": "g7-5",
+          "answer": "chyba że",
+          "hint": "wyjątek",
+          "grammar_point": "warunek-realny",
+          "explanation": "Wyjątek: chyba że zgłosi zmianę."
+        },
+        {
+          "id": "g7-6",
+          "answer": "miejscu",
+          "hint": "na Pana …",
+          "grammar_point": "przypuszczajacy-formy",
+          "explanation": "Rada: na Pana miejscu + tryb przypuszczający."
+        },
+        {
+          "id": "g7-7",
+          "answer": "pod warunkiem",
+          "hint": "warunek konieczny",
+          "grammar_point": "warunek-realny",
+          "explanation": "Pod warunkiem, że."
+        },
+        {
+          "id": "g7-8",
+          "answer": "zgłosił",
+          "hint": "zgłosić (Pan)",
+          "grammar_point": "przypuszczajacy-formy",
+          "explanation": "Radzę, żeby + forma na -ł: Pan zgłosił."
+        },
+        {
+          "id": "g7-9",
+          "answer": "miał",
+          "hint": "mieć (Pan)",
+          "grammar_point": "warunek-nierealny",
+          "explanation": "Gdyby Pan miał: forma męska na -ł."
+        }
+      ]
+    }
+  ]
+}
