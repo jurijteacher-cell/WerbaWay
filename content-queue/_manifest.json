@@ -3144,6 +3144,33 @@
       "notion_teacher_page_url": "https://app.notion.com/p/41f96e03c7c881abb828c5bbebe24cfe"
     },
     {
+      "lesson_id": "pl-a2-80-ten-tamten-ktos",
+      "module": "pl-a2",
+      "course_order": 80,
+      "level": "A2",
+      "title": "Ten, tamten, ktoś",
+      "published_at": "2026-11-21T12:00:00Z",
+      "template": "light-60 A2",
+      "embeds": {
+        "vocab": "https://werba-way.vercel.app/embed/pl-a2-80-ten-tamten-ktos/vocab",
+        "grammar": "https://werba-way.vercel.app/embed/pl-a2-80-ten-tamten-ktos/grammar",
+        "comm_tasks": "https://werba-way.vercel.app/embed/pl-a2-80-ten-tamten-ktos/comm-tasks",
+        "hw": "https://werba-way.vercel.app/embed/pl-a2-80-ten-tamten-ktos/hw",
+        "exam": "https://werba-way.vercel.app/embed/pl-a2-80-ten-tamten-ktos/exam"
+      },
+      "audio": [
+        "/audio/pl-a2-80-ten-tamten-ktos-czytanie.mp3",
+        "/audio/pl-a2-80-ten-tamten-ktos-e2-dialog.mp3"
+      ],
+      "images": {
+        "cover": "https://images.unsplash.com/photo-1591382696684-38c427c7547a?w=1600&h=900&fit=crop&q=80&fm=jpg",
+        "cover_credit": "Mikey Harris / Unsplash"
+      },
+      "status": "published",
+      "published_by": "claude",
+      "notes": "CURRICULUM_A2 n=80; ten/tamten/ktoś/czyj. Перший урок за правилом «текст = вправи» (cloze-text, ordering) і з аудіо через сайт (ElevenLabs → Supabase)."
+    },
+    {
       "lesson_id": "pl-nier-01-pierwszy-kontakt",
       "module": "pl-nier",
       "course_order": 1,

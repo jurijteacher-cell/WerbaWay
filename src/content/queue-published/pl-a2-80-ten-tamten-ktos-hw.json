@@ -1,0 +1,259 @@
+{
+  "lesson_id": "pl-a2-80-ten-tamten-ktos",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: czyje to, ktoś, coś",
+  "instruction": "Cztery bloki: list z lukami, kolejność zdarzeń, wybór formy i poprawianie błędów. Potem napisz zagadkę — zadanie jest na stronie lekcji.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "cloze-text",
+      "title": "1. List Oleny do mamy",
+      "instruction": "Uzupełnij list. Tam, gdzie jest lista — wybierz. Tam, gdzie jest nawias — wpisz formę.",
+      "text": "Kochana Mamo!\n\nPierwszy tydzień w nowym pokoju za mną. {h1-1} pokój jest mały, ale jasny. Wiesz, {h1-2} zostawił mi na biurku kaktus! Myślałam, że to Kasia, ale to była pani Agnieszka. Z {h1-3} panią najczęściej piję kawę w kuchni.\n\nW środę przyjechała pani Ewa z Gdańska. Pracujemy razem przy {h1-4} samym biurku. Pani Ewa ma {h1-5} sam kubek jak ja — z kotem!\n\nJutro jedziemy razem do Gdańska. Mam nadzieję, że w pociągu zjem {h1-6} dobrego. Tata pytał, czy {h1-7} panowie z Gdańska są mili. Tak, wszyscy są bardzo mili! Napiszę Ci więcej w {h1-8} weekend.\n\nCałuję, Olena",
+      "items": [
+        {
+          "id": "h1-1",
+          "answer": "Ten",
+          "options": [
+            "Ten",
+            "Ta",
+            "To"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Pokój — rodzaj męski → ten."
+        },
+        {
+          "id": "h1-2",
+          "answer": "ktoś",
+          "options": [
+            "ktoś",
+            "coś",
+            "kogoś"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Osoba, która coś zrobiła → ktoś."
+        },
+        {
+          "id": "h1-3",
+          "answer": "tą",
+          "hint": "ta",
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Z + narzędnik, ż. → z tą panią."
+        },
+        {
+          "id": "h1-4",
+          "answer": "tym",
+          "hint": "to",
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Przy + miejscownik → przy tym biurku."
+        },
+        {
+          "id": "h1-5",
+          "answer": "taki",
+          "options": [
+            "taki",
+            "takie",
+            "taka"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Kubek — m. → taki sam."
+        },
+        {
+          "id": "h1-6",
+          "answer": "coś",
+          "options": [
+            "coś",
+            "czegoś",
+            "ktoś"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Zjem co? → coś dobrego."
+        },
+        {
+          "id": "h1-7",
+          "answer": "ci",
+          "options": [
+            "ci",
+            "te",
+            "tamte"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Panowie — mężczyźni → ci."
+        },
+        {
+          "id": "h1-8",
+          "answer": "ten",
+          "hint": "ten",
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "W + biernik, rzecz (m.) → w ten weekend."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "ordering",
+      "title": "2. Środa pani Ewy",
+      "instruction": "Pani Ewa przyjechała z Gdańska do Krakowa. Ułóż jej dzień w kolejności.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "O szóstej rano pani Ewa wsiadła do pociągu w Gdańsku.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "h2-2",
+          "prompt": "W pociągu przeczytała umowę z klientem i trochę spała.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Na dworcu w Krakowie czekała na nią Olena z kartką „Witamy!”.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Razem pojechały tramwajem na Zabłocie.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "h2-5",
+          "prompt": "W biurze Kasia pokazała jej, które biurko jest jej.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "h2-6",
+          "prompt": "Wieczorem pani Ewa napisała do męża, że ci ludzie z Krakowa są bardzo mili.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Wybierz formę",
+      "instruction": "Wybierz dobrą formę.",
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Ten sklep jest drogi, chodźmy do ___ na rogu.",
+          "answer": "tamtego",
+          "options": [
+            "tamtego",
+            "tamten",
+            "tamtym"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Do + dopełniacz → do tamtego (sklepu)."
+        },
+        {
+          "id": "h3-2",
+          "text": "Rozmawiałeś już z ___ nowym klientem?",
+          "answer": "tym",
+          "options": [
+            "tym",
+            "tego",
+            "ten"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Z + narzędnik, m. → z tym."
+        },
+        {
+          "id": "h3-3",
+          "text": "Mam dla ciebie ___ małego.",
+          "answer": "coś",
+          "options": [
+            "coś",
+            "czegoś",
+            "kogoś"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Mam co? → coś małego."
+        },
+        {
+          "id": "h3-4",
+          "text": "Znasz ___ z działu sprzedaży? Potrzebuję pomocy.",
+          "answer": "kogoś",
+          "options": [
+            "kogoś",
+            "ktoś",
+            "czegoś"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Znać kogo? → kogoś."
+        },
+        {
+          "id": "h3-5",
+          "text": "Nigdy nie miałam ___ wygodnego krzesła!",
+          "answer": "takiego",
+          "options": [
+            "takiego",
+            "takie",
+            "takim"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Nie miałam + dopełniacz → takiego krzesła."
+        },
+        {
+          "id": "h3-6",
+          "text": "Dziękuję ___ panu za pomoc.",
+          "answer": "temu",
+          "options": [
+            "temu",
+            "tego",
+            "tym"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Dziękować komu? → celownik: temu panu."
+        }
+      ]
+    },
+    {
+      "block_id": "h4",
+      "exercise_type": "sentence-building",
+      "title": "4. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h4-1",
+          "prompt": "Ci książki leżą tu od piątku.",
+          "answer": "Te książki leżą tu od piątku.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Książki — nie mężczyźni → te."
+        },
+        {
+          "id": "h4-2",
+          "prompt": "Pracuję z tym koleżanką z Gdańska.",
+          "answer": "Pracuję z tą koleżanką z Gdańska.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Koleżanka — ż.; z + narzędnik → z tą."
+        },
+        {
+          "id": "h4-3",
+          "prompt": "Kupiłam coś słodkie dla dzieci.",
+          "answer": "Kupiłam coś słodkiego dla dzieci.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Coś + przymiotnik z -ego."
+        },
+        {
+          "id": "h4-4",
+          "prompt": "Czyja to jest długopis?",
+          "answer": "Czyj to jest długopis?",
+          "grammar_point": "zaimek-dzierzawczy",
+          "explanation": "Długopis — m. → czyj.",
+          "accept": [
+            "Czyj to długopis?",
+            "Czyj jest ten długopis?"
+          ]
+        },
+        {
+          "id": "h4-5",
+          "prompt": "Widziałaś tamta szafkę w kuchni?",
+          "answer": "Widziałaś tamtą szafkę w kuchni?",
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Biernik, ż.: tamta → tamtą."
+        }
+      ]
+    }
+  ]
+}

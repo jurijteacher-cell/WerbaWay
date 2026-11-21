@@ -1,0 +1,506 @@
+{
+  "lesson_id": "pl-a2-80-ten-tamten-ktos",
+  "exercise_type": "fill-in-blank",
+  "title": "Ten, tamten, ktoś — tekst i gramatyka",
+  "instruction": "Zadania do tekstu i pięć bloków gramatyki. Na lekcji: t1, t2, g1–g3; g4–g5 — jeśli zostanie czas albo w domu.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "Tekst 1. Ułóż w kolejności",
+      "instruction": "Co było najpierw, a co potem? Klikaj zdania po kolei.",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "W piątek w kuchni na oknie stały cztery kwiatki.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "Olena przyszła do nowego pokoju o wpół do dziewiątej.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Olena znalazła na biurku kaktus i kartkę bez podpisu.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Do pokoju przyszła Kasia — też bardzo zdziwiona.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "Olena poszła do kuchni, żeby zrobić kawę.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Olena policzyła kwiatki i zrozumiała, kto to był.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "Tekst 2. Detektyw: kto to był?",
+      "instruction": "Znajdź wskazówki w tekście i wybierz odpowiedź.",
+      "items": [
+        {
+          "id": "t2-1",
+          "text": "Dlaczego to nie mógł być Tomek?",
+          "answer": "W poniedziałki pracuje z domu.",
+          "options": [
+            "W poniedziałki pracuje z domu.",
+            "Nie lubi roślin.",
+            "Przyszedł do pracy o dziewiątej."
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "…bo w poniedziałki pracuje z domu."
+        },
+        {
+          "id": "t2-2",
+          "text": "Dlaczego to nie mógł być pan Piotr?",
+          "answer": "W tym tygodniu jest w Gdańsku.",
+          "options": [
+            "W tym tygodniu jest w Gdańsku.",
+            "Nigdy nie pisze kartek.",
+            "Jest na urlopie w górach."
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "…w tym tygodniu jest w Gdańsku u klienta."
+        },
+        {
+          "id": "t2-3",
+          "text": "Skąd wiemy, że to nie Kasia?",
+          "answer": "Przyszła dopiero o dziewiątej i była zdziwiona.",
+          "options": [
+            "Przyszła dopiero o dziewiątej i była zdziwiona.",
+            "Siedzi na drugim piętrze.",
+            "Ma alergię na kaktusy."
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "Kasia przyszła dopiero o dziewiątej i też była bardzo zdziwiona."
+        },
+        {
+          "id": "t2-4",
+          "text": "Która wskazówka pomogła Olenie?",
+          "answer": "Na oknie w kuchni stoją trzy kwiatki, a były cztery.",
+          "options": [
+            "Na oknie w kuchni stoją trzy kwiatki, a były cztery.",
+            "Pod kartką był podpis.",
+            "Na kartonie była naklejka z imieniem."
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "W piątek na oknie stały cztery. Dziś stoją trzy…"
+        },
+        {
+          "id": "t2-5",
+          "text": "Kto zostawił kaktus na biurku Oleny?",
+          "answer": "pani Agnieszka",
+          "options": [
+            "pani Agnieszka",
+            "Tomek",
+            "pan Piotr",
+            "Kasia"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "Pani Agnieszka dba o kwiatki w kuchni — i jednego kwiatka brakuje."
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Zgadnij znaczenie z tekstu",
+      "instruction": "Przeczytaj zdanie z tekstu. Co znaczy słowo albo wyrażenie?",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "„Przeniosłam się do nowego pokoju.” Przenieść się to…",
+          "answer": "zmienić miejsce",
+          "options": [
+            "zmienić miejsce",
+            "kupić coś nowego",
+            "zamknąć drzwi"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Przenieść się = zmienić pokój, biuro, mieszkanie."
+        },
+        {
+          "id": "g1-2",
+          "text": "„Na półce stoją czyjeś stare książki.” Czyjeś, czyli…",
+          "answer": "kogoś — nie wiemy kogo",
+          "options": [
+            "kogoś — nie wiemy kogo",
+            "moje własne",
+            "nowe, z księgarni"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Czyjś / czyjeś = należy do kogoś, ale nie wiemy do kogo."
+        },
+        {
+          "id": "g1-3",
+          "text": "„Nie było podpisu.” Podpis to…",
+          "answer": "imię i nazwisko napisane ręką",
+          "options": [
+            "imię i nazwisko napisane ręką",
+            "data na górze kartki",
+            "adres na kopercie"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Podpis — piszemy go sami, na dole kartki."
+        },
+        {
+          "id": "g1-4",
+          "text": "„Kasia też była bardzo zdziwiona.” Kasia…",
+          "answer": "nie spodziewała się kaktusa",
+          "options": [
+            "nie spodziewała się kaktusa",
+            "była bardzo zmęczona",
+            "była zła na Olenę"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Zdziwiony = coś nas zaskoczyło."
+        },
+        {
+          "id": "g1-5",
+          "text": "„Pani Agnieszka dba o kwiatki.” Dbać o coś to…",
+          "answer": "opiekować się czymś",
+          "options": [
+            "opiekować się czymś",
+            "kupować coś w sklepie",
+            "nie lubić czegoś"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Dbać o kwiatki = podlewać je, pilnować, żeby rosły."
+        },
+        {
+          "id": "g1-6",
+          "text": "„Wszędzie stały kartony po przeprowadzce.” Po przeprowadzce, czyli…",
+          "answer": "po tym, jak firma zmieniła biuro",
+          "options": [
+            "po tym, jak firma zmieniła biuro",
+            "przed świętami",
+            "po zakupach w supermarkecie"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Przeprowadzka — zmiana biura albo mieszkania (lekcja 78)."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Ten, ta, to, ci, te — czy tamten?",
+      "instruction": "Wybierz formę, która pasuje do rzeczownika.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "___ krzesło jest bardzo wygodne.",
+          "answer": "To",
+          "options": [
+            "To",
+            "Ten",
+            "Te"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Krzesło — rodzaj nijaki → to."
+        },
+        {
+          "id": "g2-2",
+          "text": "___ szafka jest pusta, a tamta — pełna.",
+          "answer": "Ta",
+          "options": [
+            "Ta",
+            "To",
+            "Tę"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Szafka — rodzaj żeński, mianownik → ta."
+        },
+        {
+          "id": "g2-3",
+          "text": "___ panowie są z działu sprzedaży.",
+          "answer": "Ci",
+          "options": [
+            "Ci",
+            "Te",
+            "Ten"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Panowie — mężczyźni → ci."
+        },
+        {
+          "id": "g2-4",
+          "text": "___ kubki są czyste, możesz wziąć.",
+          "answer": "Te",
+          "options": [
+            "Te",
+            "Ci",
+            "Tamta"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Kubki — rzeczy (nie mężczyźni) → te."
+        },
+        {
+          "id": "g2-5",
+          "text": "Ten długopis jest mój, a ___ przy telefonie — Tomka.",
+          "answer": "tamten",
+          "options": [
+            "tamten",
+            "tamta",
+            "tamto"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Długopis — rodzaj męski; daleko → tamten."
+        },
+        {
+          "id": "g2-6",
+          "text": "Widzisz ___ kobiety przy oknie? To nowe koleżanki.",
+          "answer": "te",
+          "options": [
+            "te",
+            "ci",
+            "tę"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Kobiety — nie mężczyźni → te (także w bierniku)."
+        },
+        {
+          "id": "g2-7",
+          "text": "To nie nasze biuro! Nasze jest ___, na końcu korytarza.",
+          "answer": "tamto",
+          "options": [
+            "tamto",
+            "tamci",
+            "tamtą"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Biuro — nijaki; daleko → tamto."
+        },
+        {
+          "id": "g2-8",
+          "text": "___ laptop jest nowy, dostałam go wczoraj.",
+          "answer": "Ten",
+          "options": [
+            "Ten",
+            "Tamte",
+            "Ci"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Laptop — rodzaj męski → ten."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "3. Wiadomość Kasi: odmień ten / ta / to",
+      "instruction": "Wpisz formę zaimka z nawiasu. Pomyśl: jaki przypadek? (w… · z… · nie chciałam… · na… · o… · komu?)",
+      "text": "Cześć, Basiu!\n\nPiszę z pracy. Siedzę teraz w {g3-1} nowym pokoju na trzecim piętrze. Pracuję tu z Oleną — z {g3-2} koleżanką z Ukrainy, o której ci opowiadałam.\n\nNajpierw nie chciałam {g3-3} biurka przy drzwiach, bo z korytarza wszystko słychać. Ale teraz mam widok na {g3-4} starą fabrykę po drugiej stronie ulicy i jestem zadowolona.\n\nDziś rano Olena znalazła na biurku kaktus. Cała firma mówi o {g3-5} kaktusie! Olena już wie, kto go zostawił, ale nic nie mówi. Pokazała tylko na {g3-6} kuchnię na końcu korytarza i się uśmiechnęła.\n\nW środę przychodzi do nas pani Ewa z Gdańska. Kupię {g3-7} nowej koleżance kwiatek — może też kaktus? A ty ucałuj ode mnie {g3-8} małego łobuza, twojego synka!\n\nKasia",
+      "items": [
+        {
+          "id": "g3-1",
+          "answer": "tym",
+          "hint": "ten",
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "W + miejscownik: w tym pokoju."
+        },
+        {
+          "id": "g3-2",
+          "answer": "tą",
+          "hint": "ta",
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Z + narzędnik, rodzaj żeński: z tą koleżanką."
+        },
+        {
+          "id": "g3-3",
+          "answer": "tego",
+          "hint": "to",
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Nie chciałam + dopełniacz: tego biurka."
+        },
+        {
+          "id": "g3-4",
+          "answer": "tę",
+          "hint": "ta",
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Mam widok na + biernik, ż.: tę fabrykę. Na piśmie — tę (w mowie usłyszysz też „tą”)."
+        },
+        {
+          "id": "g3-5",
+          "answer": "tym",
+          "hint": "ten",
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Mówić o + miejscownik: o tym kaktusie."
+        },
+        {
+          "id": "g3-6",
+          "answer": "tamtą",
+          "hint": "tamta",
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Pokazać na + biernik. Uwaga: ta → tę, ale tamta → tamtą."
+        },
+        {
+          "id": "g3-7",
+          "answer": "tej",
+          "hint": "ta",
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Kupić komu? — celownik, ż.: tej koleżance."
+        },
+        {
+          "id": "g3-8",
+          "answer": "tego",
+          "hint": "ten",
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Ucałować kogo? Biernik, osoba (m.): tego łobuza."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Ktoś, coś, taki",
+      "instruction": "Wybierz dobrą formę.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Czy ___ widział mój długopis?",
+          "answer": "ktoś",
+          "options": [
+            "ktoś",
+            "coś",
+            "kogoś"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Pytamy o osobę, podmiot → ktoś."
+        },
+        {
+          "id": "g4-2",
+          "text": "Szukasz ___? Pan Piotr jest dziś w Gdańsku.",
+          "answer": "kogoś",
+          "options": [
+            "kogoś",
+            "ktoś",
+            "czegoś"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Szukać + dopełniacz; osoba → kogoś."
+        },
+        {
+          "id": "g4-3",
+          "text": "Zjem ___ słodkiego do kawy.",
+          "answer": "coś",
+          "options": [
+            "coś",
+            "czegoś",
+            "kogoś"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Zjeść co? → coś; po coś przymiotnik ma -ego: coś słodkiego."
+        },
+        {
+          "id": "g4-4",
+          "text": "Brakuje ci ___ na biurku? Mam drugą lampę.",
+          "answer": "czegoś",
+          "options": [
+            "czegoś",
+            "coś",
+            "ktoś"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Brakuje + dopełniacz → czegoś."
+        },
+        {
+          "id": "g4-5",
+          "text": "Nigdy nie widziałam ___ dużego kaktusa!",
+          "answer": "takiego",
+          "options": [
+            "takiego",
+            "taki",
+            "takim"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Nie widziałam + dopełniacz → takiego kaktusa."
+        },
+        {
+          "id": "g4-6",
+          "text": "Chcę mieć ___ samo biurko jak Kasia.",
+          "answer": "takie",
+          "options": [
+            "takie",
+            "taka",
+            "tacy"
+          ],
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Biurko — nijaki → takie samo."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "5. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Ci kobiety pracują w księgowości.",
+          "answer": "Te kobiety pracują w księgowości.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Ci — tylko mężczyźni. Kobiety → te."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Rozmawiałam z tej nową koleżanką.",
+          "answer": "Rozmawiałam z tą nową koleżanką.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Z + narzędnik, ż. → z tą."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Czyje to jest kubek?",
+          "answer": "Czyj to jest kubek?",
+          "grammar_point": "zaimek-dzierzawczy",
+          "explanation": "Kubek — rodzaj męski → czyj.",
+          "accept": [
+            "Czyj to kubek?",
+            "Czyj jest ten kubek?"
+          ]
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Chcę coś zimne do picia.",
+          "answer": "Chcę coś zimnego do picia.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Coś + przymiotnik z -ego: coś zimnego."
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Te panowie są z Gdańska.",
+          "answer": "Ci panowie są z Gdańska.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Panowie — mężczyźni → ci."
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Widzę ta szafkę przy drzwiach.",
+          "answer": "Widzę tę szafkę przy drzwiach.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Widzę + biernik, ż. → tę szafkę."
+        }
+      ]
+    }
+  ]
+}
