@@ -72,7 +72,11 @@ export async function GET(req: NextRequest) {
   const orientation = sp.get('orientation') ?? 'landscape';
   const url = `${api}/search/photos?query=${encodeURIComponent(q)}&per_page=${n}&orientation=${encodeURIComponent(orientation)}&content_filter=high`;
   const r = await fetch(url, { headers, next: { revalidate: 86400 } });
-  if (!r.ok) return NextResponse.json({ error: `unsplash ${r.status}` }, { status: r.status });
+  if (!r.ok) {
+    // текст помилки Unsplash (напр. «The access token is invalid») — без ключа
+    const detail = (await r.text()).slice(0, 300);
+    return NextResponse.json({ error: `unsplash ${r.status}`, detail }, { status: r.status });
+  }
   const data = await r.json();
   return NextResponse.json({ total: data.total, results: (data.results ?? []).map(slim) });
 }
