@@ -87,7 +87,7 @@
 - **Czytanie:** «Notatka Natalii po pierwszym tygodniu w biurze» (pan Dawid) + `e1` prawda/fałsz (6 пунктів: F·T·F·T·F·T).
 - **Mówię płynnie:** *Jeśli dobrze rozumiem… · Czyli chodzi Państwu o… · Co jest dla Państwa najważniejsze? · Zanotuję sobie… · Przepraszam, nie dosłyszałam…* Стратегія: **питай → перефразуй → підсумуй**.
 - **Zadania komunikacyjne (comm_groups: first, second, fourth):** 1) дзвінок клієнта після оголошення (діалог-зразок + `e2`; zwrot — бюджет нижчий за ціну) · 2) зустріч в офісі: аналіз потреб (zwrot — різні пріоритети подружжя) · 3) дзвінок до pani Zielińskiej (zwrot — «sprzedam sama»). Монолог 2 хв «Kim jestem i jak pracuję» — **діагностика** (§4).
-- **Аудіо:** немає; `e2` читає **викладач** двічі (текст на TEACHER; вікно показує «Słuchaj nauczyciela — bez tekstu»).
+- **Аудіо:** діалог `e2` озвучено в ElevenLabs 21.11.2026 (flow `yAnmT4EjliohPg94UkbD`, 91 с, ≈1 364 кредити; голоси W5 Natalia + W2 Wanda), але **mp3 у репо ще немає** (домен ElevenLabs закритий проксі сесії) — до того e2 на сайті в режимі «читає викладач» двічі. Коли файл ляже в `public/audio/pl-nier-01-pierwszy-kontakt-e2-dialog.mp3`, додати `audio_url` у блок e2 в `-exam.json`.
 - **ДЗ (фактично):** `hw` (4 блоки, нові ситуації) · 🎬 «Luźno Wyjaśnione: Zakup Mieszkania» (канал Luźno Wyjaśnione, ≈10 хв; 96 тис. переглядів, 15.09.2026) з трьома письмовими завданнями на парафразу й pytania zależne · 🎙️ голосове до клієнта pana Marka (1 хв) · ✍️ **e-mail до pani Brzezińskiej** після дзвінка (130–160 слів; замість запланованого e-mail Lisom — Lisowie залишаються для уроків 02–05).
 - **TEACHER:** діагностика учениці (§5), картки ролей, рубрика B2, журнал помилок.
 
