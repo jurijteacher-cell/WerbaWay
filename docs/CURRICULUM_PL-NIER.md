@@ -92,7 +92,7 @@
 - **TEACHER:** діагностика учениці (§5), картки ролей, рубрика B2, журнал помилок.
 
 ### 02 · Mieszkanie z duszą — опис нерухомості й оголошення
-`pl-nier-02-opis-i-ogloszenie` · рівень B1+ → B2
+`pl-nier-02-opis-i-ogloszenie` · рівень B1+ → B2 · **✅ опубліковано (23.11.2026)**
 
 - **Мовленнєва дія:** зібрати інформацію від власниці, описати квартиру усно й письмово, порівняти дві пропозиції, вимовляти ціни, метраж і поверхи без паузи.
 - **Граматика:** `new` `imieslow-bierny` · `imieslow-czynny` · `stopniowanie` · `porownania` · `liczebniki-skladnia`; `rec` `przypuszczajacy-formy`, `pytania-zalezne`.
@@ -109,6 +109,7 @@
   - **Монолог 2 хв:** опис квартири без нотаток.
 - **Факти перевірити:** що **обов'язково** має містити оголошення / що треба мати при продажу й оренді (świadectwo charakterystyki energetycznej — з 2023; чи потрібен показник в оголошенні) — лише після пошуку, з Źródła.
 - **ДЗ:** hw · 🎬 відео-тур квартирою / home staging польською · 🎙️ презентація **іншої** нерухомості (будинок під Познанню) 2 хв · ✍️ оголошення про цей будинок: заголовок + опис (130–160).
+- **Фактично (23.11.2026):** слухання e2 немає (аудіо не замовлялося; діалог-зразок c1 — текст на TEACHER); 29 слів у 4 групах (Pomieszczenia · Budynek i opłaty · Stan i standard · Atuty); граматика — 6 сходинок (bierny + wyjątki, czynny, krócej zamiast «który», stopniowanie + wyjątki, porównania, liczby + wyjątki) + пастки (5) + збірна g12. Нові цифри сюжету: оферта B (Łazarz, 62 m², 842 000 zł), Wilda (61 m², 715 000 zł, лише g12), Grunwald (66 m², 690 000 zł, c3), дім у Komornikach (128 m², 1 190 000 zł, ДЗ). 🎬 «Oglądamy domy marzeń: Małe mieszkanie może być eleganckie» (88 тис. переглядів, 13.03.2026, ≈12 хв); повністю не переглянуто.
 
 ### 03 · Zapraszam do środka — огляд і заперечення клієнта
 `pl-nier-03-prezentacja-i-obiekcje` · рівень B2
@@ -242,7 +243,7 @@
 | # | lesson_id | Тема | Статус |
 |---|---|---|---|
 | 01 | `pl-nier-01-pierwszy-kontakt` | Dzwonię w sprawie ogłoszenia | ✅ на сайті 21.11.2026 (main 757d6dd; embed ✓ --remote; i18n ru/pl/en ✓); Notion — не створювався; діагностику ще не проведено |
-| 02 | `pl-nier-02-opis-i-ogloszenie` | Mieszkanie z duszą | — |
+| 02 | `pl-nier-02-opis-i-ogloszenie` | Mieszkanie z duszą | ✅ на сайті 23.11.2026 (embed ✓; i18n ru/pl/en ✓; без слухання) |
 | 03 | `pl-nier-03-prezentacja-i-obiekcje` | Zapraszam do środka | — |
 | 04 | `pl-nier-04-negocjacje` | Ostatnie słowo | — |
 | 05 | `pl-nier-05-formalnosci` | Od umowy do kluczy | — |

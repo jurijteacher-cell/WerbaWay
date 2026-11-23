@@ -1,0 +1,946 @@
+{
+  "lesson_id": "pl-nier-02-opis-i-ogloszenie",
+  "exercise_type": "fill-in-blank",
+  "title": "Opis oferty: imiesłowy, stopniowanie, porównania i liczby na głos",
+  "instruction": "Czternaście bloków ćwiczeń. Możesz przerwać i wrócić później.",
+  "estimated_minutes": 40,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "Tekst. Ułóż w kolejności",
+      "instruction": "Co Natalia robi najpierw, a co na końcu, gdy przygotowuje ogłoszenie? Klikaj zdania po kolei.",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "Natalia rozmawia z właścicielem i robi zdjęcia.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "Sprawdza metraż, piętro i stan mieszkania.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Wybiera jeden największy atut.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Stawia ten atut na początku opisu.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "Dopisuje cenę, opłaty i wskaźniki energetyczne.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Publikuje ogłoszenie.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Tekst. Uzupełnij streszczenie",
+      "instruction": "Wpisz słowo z tekstu we właściwej formie. W nawiasie jest podstawowa forma albo wskazówka.",
+      "text": "Natalia porównała dwa ogłoszenia. Mieszkanie A jest w {t2-1} z 1911 roku, na trzecim {t2-2}, bez {t2-3}. Mieszkanie B jest nowe, ma {t2-4} i miejsce w {t2-5} podziemnym. Jest droższe o {t2-6} tysiące złotych. Natalia nie pisze „idealne”, jeśli nie ma {t2-7}.",
+      "items": [
+        {
+          "id": "t2-1",
+          "answer": "kamienicy",
+          "hint": "kamienica",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t2-2",
+          "answer": "piętrze",
+          "hint": "piętro",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t2-3",
+          "answer": "windy",
+          "hint": "winda",
+          "grammar_point": "czytanie",
+          "explanation": "„Bez” + dopełniacz: bez windy."
+        },
+        {
+          "id": "t2-4",
+          "answer": "windę",
+          "hint": "winda",
+          "grammar_point": "czytanie",
+          "explanation": "„Ma” + biernik: ma windę."
+        },
+        {
+          "id": "t2-5",
+          "answer": "garażu",
+          "hint": "garaż",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t2-6",
+          "answer": "93",
+          "hint": "liczba",
+          "accept": [
+            "dziewięćdziesiąt trzy"
+          ],
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t2-7",
+          "answer": "dowodu",
+          "hint": "dowód",
+          "grammar_point": "czytanie",
+          "explanation": "„Nie ma” + dopełniacz: nie ma dowodu."
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Które słowo pasuje?",
+      "instruction": "Wybierz słowo, które pasuje do sytuacji.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Mieszkanie ma gołe ściany, tynki i instalacje, ale nie ma podłóg ani płytek w łazience. To stan ___.",
+          "answer": "deweloperski",
+          "grammar_point": "slownictwo",
+          "options": [
+            "deweloperski",
+            "po remoncie",
+            "pod klucz"
+          ],
+          "explanation": "Stan deweloperski: klient wykańcza mieszkanie sam. „Pod klucz” to mieszkanie już wykończone."
+        },
+        {
+          "id": "g1-2",
+          "text": "Klient pyta, ile co miesiąc płaci wspólnocie za sprzątanie klatki i windę. Chodzi o czynsz ___.",
+          "answer": "administracyjny",
+          "grammar_point": "slownictwo",
+          "options": [
+            "administracyjny",
+            "najmu",
+            "miejski"
+          ],
+          "explanation": "Czynsz administracyjny płaci właściciel wspólnocie. Czynsz najmu płaci najemca właścicielowi."
+        },
+        {
+          "id": "g1-3",
+          "text": "Pani Anna wchodzi do mieszkania prosto z ulicy, bez schodów. Mieszka na ___.",
+          "answer": "parterze",
+          "grammar_point": "slownictwo",
+          "options": [
+            "parterze",
+            "pierwszym piętrze",
+            "zerowym piętrze"
+          ],
+          "explanation": "Parter to poziom ulicy. Pierwsze piętro jest nad parterem. Nie ma „zerowego piętra”."
+        },
+        {
+          "id": "g1-4",
+          "text": "Okna wychodzą na południe i do mieszkania wpada dużo światła. W ogłoszeniu piszemy: ___ południowa.",
+          "answer": "ekspozycja",
+          "grammar_point": "slownictwo",
+          "options": [
+            "ekspozycja",
+            "wystawa",
+            "orientacja"
+          ],
+          "explanation": "Po polsku: ekspozycja południowa. „Wystawa” to wystawa w muzeum."
+        },
+        {
+          "id": "g1-5",
+          "text": "Pokoje nie są przechodnie i każdy ma osobne drzwi. Agentka mówi: mieszkanie jest ___.",
+          "answer": "rozkładowe",
+          "grammar_point": "slownictwo",
+          "options": [
+            "rozkładowe",
+            "ustawne",
+            "ciche"
+          ],
+          "explanation": "Rozkładowe = dobry układ pokoi. Ustawne = łatwo ustawić w nim meble."
+        },
+        {
+          "id": "g1-6",
+          "text": "W mieszkaniu wystarczy pomalować ściany i zamontować nowe lampy, reszta jest w dobrym stanie. Mieszkanie jest do ___.",
+          "answer": "odświeżenia",
+          "grammar_point": "slownictwo",
+          "options": [
+            "odświeżenia",
+            "remontu",
+            "zamieszkania"
+          ],
+          "explanation": "Do odświeżenia: drobne prace. Do remontu: duże prace, np. nowa łazienka i instalacja."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Imiesłów bierny: utwórz formę",
+      "instruction": "Wpisz imiesłów bierny (-ny, -ony, -ty) z czasownika w nawiasie. Forma musi pasować do rzeczownika.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Sypialnia jest już ___ i pomalowana na biało. (umeblować)",
+          "answer": "umeblowana",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "-ować → -owany: umeblować → umeblowany, rodzaj żeński: umeblowana."
+        },
+        {
+          "id": "g2-2",
+          "text": "Łazienka jest świeżo ___, płytki są z tego roku. (wykończyć)",
+          "answer": "wykończona",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "Wykończę → wykończ-ony. Rodzaj żeński: wykończona."
+        },
+        {
+          "id": "g2-3",
+          "text": "Salon jest bardzo dobrze ___, bo ma dwa duże okna. (oświetlić)",
+          "answer": "oświetlony",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "Oświetlę → oświetl-ony."
+        },
+        {
+          "id": "g2-4",
+          "text": "Mieszkanie ___ w 2019 roku ma nową instalację. (odnowić)",
+          "answer": "odnowione",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "Odnowię → odnowi-ony. Miękka spółgłoska przed końcówką: -iony."
+        },
+        {
+          "id": "g2-5",
+          "text": "Kamienica jest bardzo dobrze ___: klatka schodowa ma nowe okna. (zadbać)",
+          "answer": "zadbana",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "-ać → -any: zadbać → zadbany."
+        },
+        {
+          "id": "g2-6",
+          "text": "Parking jest ___ i monitorowany. (ogrodzić)",
+          "answer": "ogrodzony",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "Ogrodzę → ogrodz-ony. Zmiana: d → dz."
+        },
+        {
+          "id": "g2-7",
+          "text": "W tym budynku wszystkie okna są już ___. (wymienić)",
+          "answer": "wymienione",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "Wymienię → wymieni-ony. Liczba mnoga rzeczy: wymienione."
+        },
+        {
+          "id": "g2-8",
+          "text": "To mieszkanie jest ___ gazem. (ogrzewać)",
+          "answer": "ogrzewane",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "-ywać / -ować / -ewać → -any: ogrzewać → ogrzewany. Rodzaj nijaki: ogrzewane."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Imiesłów bierny: wyjątki",
+      "instruction": "Wpisz formę z nawiasu. To formy nieregularne (-ty, -ęty, -arty) albo mylące konstrukcje.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Kuchnia nie ma drzwi, jest ___ na salon. (otworzyć)",
+          "answer": "otwarta",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "Otworzyć → otwarty (nie „otworzony”)."
+        },
+        {
+          "id": "g3-2",
+          "text": "Osiedle jest ___: ma bramę i ochronę. (zamknąć)",
+          "answer": "zamknięte",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "Zamknąć → zamknięty."
+        },
+        {
+          "id": "g3-3",
+          "text": "Tego mieszkania nie można obejrzeć, bo jest już ___. (wynająć)",
+          "answer": "wynajęte",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "Wynająć → wynajęty."
+        },
+        {
+          "id": "g3-4",
+          "text": "Na ścianie widać ___ cegłę. (odkryć)",
+          "answer": "odkrytą",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "Odkryć → odkryty. Tu biernik, rodzaj żeński: odkrytą cegłę."
+        },
+        {
+          "id": "g3-5",
+          "text": "Remont jest już ___, ekipa wchodzi w poniedziałek. (rozpocząć)",
+          "answer": "rozpoczęty",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "Rozpocząć → rozpoczęty."
+        },
+        {
+          "id": "g3-6",
+          "text": "Pokój jest ___: stoją w nim cudze meble. (zająć)",
+          "answer": "zajęty",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "Zająć → zajęty."
+        },
+        {
+          "id": "g3-7",
+          "text": "Mieszkanie wymaga dużych prac, więc piszemy: mieszkanie ___ remontu.",
+          "answer": "do",
+          "grammar_point": "slownictwo",
+          "options": [
+            "do",
+            "po",
+            "z"
+          ],
+          "explanation": "„Do remontu” to nie imiesłów, tylko do + dopełniacz. „Po remoncie” znaczy, że remont jest już zrobiony."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Imiesłów czynny: utwórz formę",
+      "instruction": "Wpisz imiesłów czynny (-ący) od czasownika w nawiasie. Forma musi pasować do rzeczownika.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Balkon ___ na podwórze jest mały. (wychodzić)",
+          "answer": "wychodzący",
+          "grammar_point": "imieslow-czynny",
+          "explanation": "Wychodzą → wychodzący: 3. osoba l. mn. + -cy."
+        },
+        {
+          "id": "g4-2",
+          "text": "Mieszkanie ___ z parkiem ma widok na zieleń. (sąsiadować)",
+          "answer": "sąsiadujące",
+          "grammar_point": "imieslow-czynny",
+          "explanation": "Sąsiadują → sąsiadujący; rodzaj nijaki: sąsiadujące. Rekcja zostaje: z + narzędnik."
+        },
+        {
+          "id": "g4-3",
+          "text": "Salon ___ do tarasu ma dwa wyjścia. (przylegać)",
+          "answer": "przylegający",
+          "grammar_point": "imieslow-czynny",
+          "explanation": "Przylegają → przylegający. Rekcja zostaje: do + dopełniacz."
+        },
+        {
+          "id": "g4-4",
+          "text": "Działka ___ z lasem jest bardzo cicha. (graniczyć)",
+          "answer": "granicząca",
+          "grammar_point": "imieslow-czynny",
+          "explanation": "Graniczą → graniczący; rodzaj żeński: granicząca."
+        },
+        {
+          "id": "g4-5",
+          "text": "Schody ___ na strych są strome. (prowadzić)",
+          "answer": "prowadzące",
+          "grammar_point": "imieslow-czynny",
+          "explanation": "Prowadzą → prowadzący; liczba mnoga rzeczy: prowadzące."
+        },
+        {
+          "id": "g4-6",
+          "text": "Kamienica ___ przy rynku jest znana w całym mieście. (leżeć)",
+          "answer": "leżąca",
+          "grammar_point": "imieslow-czynny",
+          "explanation": "Leżą → leżący; rodzaj żeński: leżąca."
+        },
+        {
+          "id": "g4-7",
+          "text": "W budynku jest winda ___ dostęp do wszystkich pięter. (zapewniać)",
+          "answer": "zapewniająca",
+          "grammar_point": "imieslow-czynny",
+          "explanation": "Zapewniają → zapewniający; rodzaj żeński: zapewniająca."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "5. Krócej: imiesłów zamiast „który”",
+      "instruction": "Zamień zdanie ze „który” na krótsze, z imiesłowem. Zachowaj sens.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Zamień: Pani Kowalczyk sprzedaje mieszkanie, które zostało świeżo odmalowane.",
+          "answer": "Pani Kowalczyk sprzedaje świeżo odmalowane mieszkanie.",
+          "grammar_point": "imieslow-bierny",
+          "accept": [
+            "Pani Kowalczyk sprzedaje mieszkanie świeżo odmalowane."
+          ],
+          "explanation": "Imiesłów z przysłówkiem stoi zwykle przed rzeczownikiem: świeżo odmalowane mieszkanie."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Zamień: Szukamy domu, który jest położony blisko szkoły.",
+          "answer": "Szukamy domu położonego blisko szkoły.",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "Imiesłów po rzeczowniku (bo ma dopełnienie) i w tym samym przypadku: szukamy domu (D) położonego (D).",
+          "accept": [
+            "Szukamy domu położonego w pobliżu szkoły.",
+            "Szukamy domu położonego niedaleko szkoły."
+          ]
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Zamień: W salonie są okna, które wychodzą na zachód.",
+          "answer": "W salonie są okna wychodzące na zachód.",
+          "grammar_point": "imieslow-czynny",
+          "explanation": "Który + czas teraźniejszy → imiesłów czynny: które wychodzą → wychodzące.",
+          "accept": [
+            "W salonie są okna, wychodzące na zachód."
+          ]
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Zamień: To kuchnia, która jest wyposażona w zmywarkę i piekarnik.",
+          "answer": "To kuchnia wyposażona w zmywarkę i piekarnik.",
+          "grammar_point": "imieslow-bierny",
+          "explanation": "Imiesłów z dopełnieniem (w + biernik) stoi po rzeczowniku, bez przecinka.",
+          "accept": [
+            "To jest kuchnia wyposażona w zmywarkę i piekarnik.",
+            "To kuchnia, wyposażona w zmywarkę i piekarnik."
+          ]
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Zamień: Kupujący lubią mieszkania, które są dobrze utrzymane.",
+          "answer": "Kupujący lubią dobrze utrzymane mieszkania.",
+          "grammar_point": "imieslow-bierny",
+          "accept": [
+            "Kupujący lubią mieszkania dobrze utrzymane."
+          ],
+          "explanation": "Przysłówek + imiesłów: najczęściej przed rzeczownikiem."
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Zamień: Biuro oferuje apartament, który sąsiaduje ze Starym Rynkiem.",
+          "answer": "Biuro oferuje apartament sąsiadujący ze Starym Rynkiem.",
+          "grammar_point": "imieslow-czynny",
+          "explanation": "Rekcja czasownika zostaje: sąsiadować ze Starym Rynkiem (narzędnik).",
+          "accept": [
+            "Biuro oferuje sąsiadujący ze Starym Rynkiem apartament.",
+            "Biuro oferuje apartament, sąsiadujący ze Starym Rynkiem."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Stopień wyższy i najwyższy",
+      "instruction": "Wpisz stopień wyższy albo najwyższy przymiotnika lub przysłówka z nawiasu. Forma musi pasować do rzeczownika.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Salon jest ___ niż sypialnia. (przestronny)",
+          "answer": "przestronniejszy",
+          "grammar_point": "stopniowanie",
+          "explanation": "Długi przymiotnik na -ny po grupie spółgłosek: -iejszy."
+        },
+        {
+          "id": "g6-2",
+          "text": "Ta ulica jest ___ od głównej. (cichy)",
+          "answer": "cichsza",
+          "grammar_point": "stopniowanie",
+          "explanation": "Cichy → cichszy: -szy bez zmiany rdzenia."
+        },
+        {
+          "id": "g6-3",
+          "text": "Nowy budynek jest ___ niż kamienica. (nowy)",
+          "answer": "nowszy",
+          "grammar_point": "stopniowanie",
+          "explanation": "Nowy → nowszy."
+        },
+        {
+          "id": "g6-4",
+          "text": "Sypialnia jest ___ niż salon. (ciasny)",
+          "answer": "ciaśniejsza",
+          "grammar_point": "stopniowanie",
+          "explanation": "Zmiana s → ś przed -niejszy: ciasny → ciaśniejszy."
+        },
+        {
+          "id": "g6-5",
+          "text": "Ta kuchnia jest ___ niż stara. (funkcjonalny)",
+          "answer": "bardziej funkcjonalna",
+          "grammar_point": "stopniowanie",
+          "accept": [
+            "funkcjonalniejsza"
+          ],
+          "explanation": "Długie przymiotniki zwykle mają „bardziej” + forma podstawowa."
+        },
+        {
+          "id": "g6-6",
+          "text": "To mieszkanie jest ___ od drugiego. (tani)",
+          "answer": "tańsze",
+          "grammar_point": "stopniowanie",
+          "explanation": "Tani → tańszy: zmiana n → ń."
+        },
+        {
+          "id": "g6-7",
+          "text": "W tym salonie jest ___ niż w sypialni. (jasno)",
+          "answer": "jaśniej",
+          "grammar_point": "stopniowanie",
+          "explanation": "Przysłówek: jasno → jaśniej (s → ś)."
+        },
+        {
+          "id": "g6-8",
+          "text": "To jest ___ mieszkanie z całej oferty. (słoneczny, stopień najwyższy)",
+          "answer": "najsłoneczniejsze",
+          "grammar_point": "stopniowanie",
+          "accept": [
+            "najbardziej słoneczne"
+          ],
+          "explanation": "Naj- + stopień wyższy: najsłoneczniejsze."
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Stopniowanie: formy nieregularne",
+      "instruction": "Wpisz formę nieregularną.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Drugie mieszkanie ma ___ powierzchnię: 72 m² zamiast 64. (duży, stopień wyższy, biernik)",
+          "answer": "większą",
+          "grammar_point": "stopniowanie",
+          "explanation": "Duży → większy. Biernik rodzaju żeńskiego: większą."
+        },
+        {
+          "id": "g7-2",
+          "text": "Drugi pokój jest ___ niż pierwszy: tylko 9 m². (mały)",
+          "answer": "mniejszy",
+          "grammar_point": "stopniowanie",
+          "explanation": "Mały → mniejszy."
+        },
+        {
+          "id": "g7-3",
+          "text": "Ten blok jest w ___ stanie niż sąsiedni. (zły, miejscownik)",
+          "answer": "gorszym",
+          "grammar_point": "stopniowanie",
+          "explanation": "Zły → gorszy. Po „w”: miejscownik, gorszym stanie."
+        },
+        {
+          "id": "g7-4",
+          "text": "Cena jest ___ niż w zeszłym roku. (wysoka)",
+          "answer": "wyższa",
+          "grammar_point": "stopniowanie",
+          "explanation": "Wysoki → wyższy: zmiana rdzenia."
+        },
+        {
+          "id": "g7-5",
+          "text": "Przystanek jest ___ niż stacja. (blisko)",
+          "answer": "bliżej",
+          "grammar_point": "stopniowanie",
+          "explanation": "Blisko → bliżej."
+        },
+        {
+          "id": "g7-6",
+          "text": "Dojazd jest ___: 35 minut zamiast 20. (długi)",
+          "answer": "dłuższy",
+          "grammar_point": "stopniowanie",
+          "explanation": "Długi → dłuższy: zmiana g → ż."
+        },
+        {
+          "id": "g7-7",
+          "text": "Przy oknach na południe w mieszkaniu jest ___ słońca. (dużo)",
+          "answer": "więcej",
+          "grammar_point": "stopniowanie",
+          "explanation": "Dużo → więcej."
+        },
+        {
+          "id": "g7-8",
+          "text": "Obejrzeliśmy ___ mieszkanie z całej listy. (dobry, stopień najwyższy)",
+          "answer": "najlepsze",
+          "grammar_point": "stopniowanie",
+          "explanation": "Dobry → lepszy → najlepszy."
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Porównania",
+      "instruction": "Wybierz słowo, które pasuje do porównania.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Kawalerka jest ___ dziesięć metrów mniejsza.",
+          "answer": "o",
+          "grammar_point": "porownania",
+          "options": [
+            "o",
+            "na",
+            "za"
+          ],
+          "explanation": "Różnicę ilościową wprowadza „o” + biernik: o dziesięć metrów."
+        },
+        {
+          "id": "g8-2",
+          "text": "Ta łazienka jest większa ___ tamtej.",
+          "answer": "od",
+          "grammar_point": "porownania",
+          "options": [
+            "niż",
+            "od",
+            "za"
+          ],
+          "explanation": "Od + dopełniacz (tamtej). „Niż” wymaga mianownika: większa niż tamta."
+        },
+        {
+          "id": "g8-3",
+          "text": "Ten blok jest starszy, ___ myślałam.",
+          "answer": "niż",
+          "grammar_point": "porownania",
+          "options": [
+            "od",
+            "niż",
+            "jak"
+          ],
+          "explanation": "Przed zdaniem z czasownikiem stoi „niż” z przecinkiem."
+        },
+        {
+          "id": "g8-4",
+          "text": "___ wyższe piętro, tym ciszej.",
+          "answer": "Im",
+          "grammar_point": "porownania",
+          "options": [
+            "Im",
+            "Czym",
+            "Jak"
+          ],
+          "explanation": "Im … tym … z przecinkiem: Im wyższe piętro, tym ciszej."
+        },
+        {
+          "id": "g8-5",
+          "text": "Salon (24 m²) jest ___ razy większy niż sypialnia (12 m²).",
+          "answer": "dwa",
+          "grammar_point": "porownania",
+          "options": [
+            "dwa",
+            "o dwa",
+            "dwie"
+          ],
+          "explanation": "Mnożnik: dwa razy większy, bez „o”."
+        },
+        {
+          "id": "g8-6",
+          "text": "Ta kuchnia jest tak samo jasna ___ salon.",
+          "answer": "jak",
+          "grammar_point": "porownania",
+          "options": [
+            "jak",
+            "niż",
+            "od"
+          ],
+          "explanation": "Tak samo … jak."
+        },
+        {
+          "id": "g8-7",
+          "text": "W porównaniu ___ centrum na Jeżycach jest ciszej.",
+          "answer": "z",
+          "grammar_point": "porownania",
+          "options": [
+            "z",
+            "do",
+            "od"
+          ],
+          "explanation": "W porównaniu z + narzędnik."
+        },
+        {
+          "id": "g8-8",
+          "text": "To mieszkanie jest podobne ___ tego z ogłoszenia.",
+          "answer": "do",
+          "grammar_point": "porownania",
+          "options": [
+            "do",
+            "na",
+            "z"
+          ],
+          "explanation": "Podobny do + dopełniacz."
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "9. Liczby na głos: ceny, metry, pokoje, piętra",
+      "instruction": "Wpisz rzeczownik z nawiasu w poprawnej formie po liczbie.",
+      "items": [
+        {
+          "id": "g9-1",
+          "text": "To mieszkanie ma 2 ___. (pokój)",
+          "answer": "pokoje",
+          "grammar_point": "liczebniki-skladnia",
+          "explanation": "2, 3, 4 → mianownik liczby mnogiej: dwa pokoje."
+        },
+        {
+          "id": "g9-2",
+          "text": "To mieszkanie ma 5 ___. (pokój)",
+          "answer": "pokoi",
+          "grammar_point": "liczebniki-skladnia",
+          "explanation": "5 i więcej → dopełniacz liczby mnogiej: pięć pokoi."
+        },
+        {
+          "id": "g9-3",
+          "text": "Powierzchnia: sześćdziesiąt cztery ___ kwadratowe. (metr)",
+          "answer": "metry",
+          "grammar_point": "liczebniki-skladnia",
+          "explanation": "Cztery na końcu liczby → mianownik: 64 metry kwadratowe."
+        },
+        {
+          "id": "g9-4",
+          "text": "Cena: pięćset osiemdziesiąt ___ złotych. (tysiąc)",
+          "answer": "tysięcy",
+          "grammar_point": "liczebniki-skladnia",
+          "explanation": "Osiemdziesiąt → dopełniacz: tysięcy. Po „tysięcy” zawsze „złotych”."
+        },
+        {
+          "id": "g9-5",
+          "text": "Czynsz administracyjny to sześćset pięćdziesiąt ___ miesięcznie. (złoty)",
+          "answer": "złotych",
+          "grammar_point": "liczebniki-skladnia",
+          "explanation": "Pięćdziesiąt → dopełniacz: złotych."
+        },
+        {
+          "id": "g9-6",
+          "text": "W tej kamienicy są 4 ___. (piętro)",
+          "answer": "piętra",
+          "grammar_point": "liczebniki-skladnia",
+          "explanation": "Cztery piętra, bo 4 → mianownik l. mn."
+        },
+        {
+          "id": "g9-7",
+          "text": "W tym wieżowcu jest 12 ___. (piętro)",
+          "answer": "pięter",
+          "grammar_point": "liczebniki-skladnia",
+          "explanation": "12 to wyjątek od 2–4: dwanaście pięter (dopełniacz l. mn.)."
+        },
+        {
+          "id": "g9-8",
+          "text": "Mieszkanie jest na trzecim ___. (piętro)",
+          "answer": "piętrze",
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Na + miejscownik: na trzecim piętrze (liczebnik porządkowy odmienia się razem z rzeczownikiem)."
+        }
+      ]
+    },
+    {
+      "block_id": "g10",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "10. Liczby: wyjątki",
+      "instruction": "Wpisz formę. Uważaj na liczby 12–14, 21, 1000 i 1,5.",
+      "items": [
+        {
+          "id": "g10-1",
+          "text": "W kamienicy jest 14 ___. (mieszkanie)",
+          "answer": "mieszkań",
+          "grammar_point": "liczebniki-skladnia",
+          "explanation": "14 → dopełniacz l. mn.: czternaście mieszkań (nie „czternaście mieszkania”)."
+        },
+        {
+          "id": "g10-2",
+          "text": "W salonie są 22 ___ . (okno)",
+          "answer": "okna",
+          "grammar_point": "liczebniki-skladnia",
+          "explanation": "22 → końcówka 2 → mianownik l. mn.: dwadzieścia dwa okna."
+        },
+        {
+          "id": "g10-3",
+          "text": "Wynajem kosztuje ___ złotych miesięcznie. (1 000)",
+          "answer": "tysiąc",
+          "grammar_point": "liczebniki-skladnia",
+          "options": [
+            "tysiąc",
+            "jeden tysiąc",
+            "tysięcy"
+          ],
+          "explanation": "1000 = tysiąc, bez „jeden”."
+        },
+        {
+          "id": "g10-4",
+          "text": "W bloku mieszka 21 ___. (rodzina)",
+          "answer": "rodzin",
+          "grammar_point": "liczebniki-skladnia",
+          "explanation": "21 → dopełniacz l. mn.: dwadzieścia jeden rodzin."
+        },
+        {
+          "id": "g10-5",
+          "text": "Na klatce stoi 33 ___. (rower)",
+          "answer": "rowery",
+          "grammar_point": "liczebniki-skladnia",
+          "explanation": "33 → końcówka 3 → mianownik l. mn.: trzydzieści trzy rowery."
+        },
+        {
+          "id": "g10-6",
+          "text": "Do przystanku jest półtora ___. (kilometr)",
+          "answer": "kilometra",
+          "grammar_point": "liczebniki-skladnia",
+          "explanation": "Półtora + dopełniacz liczby pojedynczej: półtora kilometra."
+        },
+        {
+          "id": "g10-7",
+          "text": "W budynku jest sto dwanaście ___. (garaż)",
+          "answer": "garaży",
+          "grammar_point": "liczebniki-skladnia",
+          "explanation": "Liczba kończąca się na 12 → dopełniacz l. mn.: sto dwanaście garaży."
+        }
+      ]
+    },
+    {
+      "block_id": "g11",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "11. Pułapki z ukraińskiego",
+      "instruction": "Wybierz poprawną polską formę.",
+      "items": [
+        {
+          "id": "g11-1",
+          "text": "Mieszkanie jest ___ remoncie: wszystko jest nowe.",
+          "answer": "po",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "po",
+            "z",
+            "w"
+          ],
+          "explanation": "Ukr. «з ремонтом» → po remoncie. „Z remontem” brzmi, jakby remont miał dopiero nastąpić."
+        },
+        {
+          "id": "g11-2",
+          "text": "Okna wychodzą ___ podwórze.",
+          "answer": "na",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "na",
+            "w",
+            "do"
+          ],
+          "explanation": "Ukr. «виходять у двір» → wychodzą na podwórze."
+        },
+        {
+          "id": "g11-3",
+          "text": "Szukamy ___ mieszkania.",
+          "answer": "dwupokojowego",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "dwupokojowego",
+            "dwukomnatowego",
+            "dwupokoikowego"
+          ],
+          "explanation": "Ukr. «двокімнатна» → dwupokojowe. „Komnata” to wielka sala w zamku."
+        },
+        {
+          "id": "g11-4",
+          "text": "Ukr. «на третьому поверсі» po polsku to: mieszkanie na ___ piętrze.",
+          "answer": "drugim",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "drugim",
+            "trzecim",
+            "czwartym"
+          ],
+          "explanation": "Parter to nasz pierwszy поверх, pierwsze piętro to nasz drugi. «Третій поверх» = drugie piętro."
+        },
+        {
+          "id": "g11-5",
+          "text": "Ukr. «на першому поверсі» po polsku to: mieszkanie na ___.",
+          "answer": "parterze",
+          "grammar_point": "kalki-uk",
+          "options": [
+            "parterze",
+            "pierwszym piętrze",
+            "zerowym piętrze"
+          ],
+          "explanation": "«Перший поверх» = parter. Pierwsze piętro to już «другий поверх»."
+        }
+      ]
+    },
+    {
+      "block_id": "g12",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "12. Zbiorcze: Natalia pokazuje mieszkanie na Wildzie",
+      "instruction": "Wpisz formę słowa z nawiasu. Pamiętaj o imiesłowach, stopniowaniu i liczbach.",
+      "text": "Natalia pokazała państwu Lisom trzypokojowe mieszkanie na Wildzie. To {g12-1} mieszkanie z oknami {g12-2} na park, więc jest {g12-3} niż ich obecne. Kuchnia jest {g12-4} w zmywarkę i piekarnik. Mieszkanie jest na {g12-5} piętrze, a w budynku jest tylko pięć {g12-6}. Cena to siedemset piętnaście {g12-7} złotych. Pan Paweł powiedział: „Jest {g12-8} niż mieszkanie z Jeżyc, ale ma wadę: pokoje są mniejsze.”",
+      "items": [
+        {
+          "id": "g12-1",
+          "answer": "wyremontowane",
+          "hint": "wyremontować",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g12-2",
+          "answer": "wychodzącymi",
+          "hint": "wychodzić",
+          "grammar_point": "imieslow-czynny",
+          "explanation": "Z + narzędnik l. mn.: z oknami wychodzącymi."
+        },
+        {
+          "id": "g12-3",
+          "answer": "jaśniejsze",
+          "hint": "jasny",
+          "accept": [
+            "bardziej jasne"
+          ],
+          "grammar_point": "stopniowanie"
+        },
+        {
+          "id": "g12-4",
+          "answer": "wyposażona",
+          "hint": "wyposażyć",
+          "grammar_point": "imieslow-bierny"
+        },
+        {
+          "id": "g12-5",
+          "answer": "drugim",
+          "hint": "2.",
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Na drugim piętrze (miejscownik)."
+        },
+        {
+          "id": "g12-6",
+          "answer": "pięter",
+          "hint": "piętro",
+          "grammar_point": "liczebniki-skladnia"
+        },
+        {
+          "id": "g12-7",
+          "answer": "tysięcy",
+          "hint": "tysiąc",
+          "grammar_point": "liczebniki-skladnia"
+        },
+        {
+          "id": "g12-8",
+          "answer": "tańsze",
+          "hint": "tani",
+          "grammar_point": "stopniowanie"
+        }
+      ]
+    }
+  ]
+}
