@@ -6,7 +6,9 @@
 **LMS:** `lesson_id` = `pl-nier-{NN}-{slug}`; JSON у `src/content/queue-published/`. Порядок — LESSON_PROTOCOL v3.18+: JSON → `check_answers.py` 0 ERR → `check_tags.py` → push у `main` → `check_embeds.py --remote` ✓. Сайт + переклади ru/pl/en (`i18n-extract` → переклад → `i18n-merge` → `i18n-coverage` ✓) — у тому ж пуші (00_START_HERE §0). Запис у `content-queue/_manifest.json` (module `pl-nier`, `course_order` = № уроку).
 **Репо:** карта дзеркалиться в `docs/CURRICULUM_PL-NIER.md` (зроблено в уроці 01). Міняєш карту — міняй обидві копії.
 
-> **Чесна межа.** 5 × 90 хв не дають повного B2. Реальний результат модуля: **B2 у професійному мовленні** (клієнт / власник / огляд / торг / формальності) — довші зв'язні висловлювання, реакція на непередбачене, свідомий вибір регістру, 4 граматичні теми B2 «в роботі». Це й є критерій успіху (урок 05 порівнює з діагностикою уроку 01).
+> **Зміна планів (24.11.2026, Юра).** Учениця розмовляє на рівні близько B1, але граматична база слабка. Тому між уроками 02 і B2-блоком додано **граматичний мінімум з 10 уроків (03–12)**: усе, що треба для вільної повсякденної розмови в роботі, до автоматизму; розмовна частина лишається ≥ 50% часу. Колишні B2-уроки 03–05 стали **13–15** (їхні `lesson_id` перейменовані в тексті карти, поки уроки не написано). Модуль тепер із 15 уроків. Теми 03–12 нижче, §3a.
+
+> **Чесна межа.** 5 × 90 хв не дають повного B2. Реальний результат модуля: **B2 у професійному мовленні** (клієнт / власник / огляд / торг / формальності) — довші зв'язні висловлювання, реакція на непередбачене, свідомий вибір регістру, 4 граматичні теми B2 «в роботі». Це й є критерій успіху (урок 15 порівнює з діагностикою уроку 01).
 
 ---
 
@@ -25,11 +27,11 @@
 | 6 | **Zadania komunikacyjne** | 3 `flip-task`; перша — з діалогом-зразком 12–14 реплік (на TEACHER) + `e2` (3–4 питання); у кожній — **zwrot akcji** (прихована несподіванка, лише на TEACHER); + монолог 2 хв | 30 |
 | 7 | **Podsumowanie** | чекбокс на кожну ціль + słowo dnia | 5 |
 | 8 | **Praca domowa** | embed `hw` (≥ 4 блоки, нові контексти) · `🎬 Wideo` (v3.19) · `🎙️ Nagranie` (голосове 1,5–2 хв) · `✍️ Pisanie` | — |
-| — | **Słowniczek** · **Źródła** | Słowniczek — завжди; Źródła — якщо в уроці є факти (у 04–05 обов'язково) | — |
+| — | **Słowniczek** · **Źródła** | Słowniczek — завжди; Źródła — якщо в уроці є факти (у 14–15 обов'язково) | — |
 
 **Параметри**
 
-| | Уроки 01–02 (B1+) | Уроки 03–05 (B2) |
+| | Уроки 01–02 (B1+) | Уроки 13–15 (B2) |
 |---|---|---|
 | Текст Czytanie | 300–350 слів | 380–450 слів |
 | Цільова граматика в тексті | ≥ 8 | ≥ 10 |
@@ -68,7 +70,7 @@
 
 **Ціни:** cena ofertowa Zielińskiej — **749 000 zł** (≈ 11 700 zł/m²), торг закінчується ≈ **720 000 zł**. Перед уроком 02 звірити з поточними оголошеннями (Jeżyce, kamienica, 3 pokoje). Якщо ринок інший — змінити цифри, **зберігши пропорції** (Lisowie пропонують ≈ −6 %, фінал ≈ −4 %). Цифри мають бути однакові в усіх уроках.
 
-**Лінія сюжету:** 01 перший дзвінок Lisów + дзвінок до Zielińskiej → 02 опис квартири й оголошення → 03 огляд із Lisami, заперечення → 04 торг між Lisami й Zielińską, zadatek, umowa przedwstępna → 05 формальності до ключів + najem для Raviego.
+**Лінія сюжету:** 01 перший дзвінок Lisów + дзвінок до Zielińskiej → 02 опис квартири й оголошення → 03–12 граматичний блок на тих самих персонажах (графік, клієнти, опис, ціни, люди) → 13 огляд із Lisami, заперечення → 14 торг між Lisami й Zielińską, zadatek, umowa przedwstępna → 15 формальності до ключів + najem для Raviego.
 
 ---
 
@@ -111,8 +113,27 @@
 - **ДЗ:** hw · 🎬 відео-тур квартирою / home staging польською · 🎙️ презентація **іншої** нерухомості (будинок під Познанню) 2 хв · ✍️ оголошення про цей будинок: заголовок + опис (130–160).
 - **Фактично (23.11.2026):** слухання e2 немає (аудіо не замовлялося; діалог-зразок c1 — текст на TEACHER); 29 слів у 4 групах (Pomieszczenia · Budynek i opłaty · Stan i standard · Atuty); граматика — 6 сходинок (bierny + wyjątki, czynny, krócej zamiast «który», stopniowanie + wyjątki, porównania, liczby + wyjątki) + пастки (5) + збірна g12. Нові цифри сюжету: оферта B (Łazarz, 62 m², 842 000 zł), Wilda (61 m², 715 000 zł, лише g12), Grunwald (66 m², 690 000 zł, c3), дім у Komornikach (128 m², 1 190 000 zł, ДЗ). 🎬 «Oglądamy domy marzeń: Małe mieszkanie może być eleganckie» (88 тис. переглядів, 13.03.2026, ≈12 хв); повністю не переглянуто.
 
-### 03 · Zapraszam do środka — огляд і заперечення клієнта
-`pl-nier-03-prezentacja-i-obiekcje` · рівень B2
+### 3a. Граматичний мінімум: уроки 03–12 (додано 24.11.2026)
+
+Кожен урок: 25 слів (дієслова/іменники з робочого контексту), 6–10 блоків вправ (`t1–t2` до тексту + `g1–gN`), 3 рольові ситуації, ДЗ (hw + відео + награння + письмо). Розмовна частина ≥ 50%. Швидкість: усна «гумка» (інфінітив + особа → форма за 2 с) і блок «szybka runda». Теги тільки з реєстру.
+
+| № | `lesson_id` | Тема | Що закриваємо | Робочий контекст |
+|---|---|---|---|---|
+| 03 | `pl-nier-03-czas-terazniejszy` | Mój dzień w biurze | теперішній час (4 групи + шість нерегулярних), Pan/Pani/Państwo + 3 ос., *chcę/mogę/muszę + bezokolicznik*, *wiem ≠ znam* | ранкова нарада, зустріч із Lisami, дзвінок до Zielińskiej |
+| 04 | `pl-nier-04-…` | Рід, число, прикметник | рід (m/ż/n), множина, узгодження *ładne mieszkanie, ładni klienci* | опис об'єкта |
+| 05 | `pl-nier-05-…` | Biernik | *szukam mieszkania / kawalerki; widzę klienta*, істоти й неістоти | запит клієнта |
+| 06 | `pl-nier-06-…` | Dopełniacz | *nie ma windy, pięć pokoi, dużo osób, bez balkonu* | характеристики, чого немає |
+| 07 | `pl-nier-07-…` | Liczebniki i ceny | ціни, метраж, поверхи, дати, години | назвати ціну вголос |
+| 08 | `pl-nier-08-…` | Miejscownik i przyimki | *w centrum, na trzecim piętrze*, *gdzie / dokąd / skąd* | розташування, район |
+| 09 | `pl-nier-09-…` | Narzędnik, celownik, wołacz | *z właścicielem, dzwonię do Pana, Panie Pawle* | люди й контакти |
+| 10 | `pl-nier-10-…` | Czas przeszły i przyszły, aspekt | *zadzwoniłam / zadzwonię*, dk vs ndk | підтвердження, плани |
+| 11 | `pl-nier-11-…` | Prośby i polecenia | *proszę + bezokolicznik, niech Pan…, żeby* | інструкції клієнтам |
+| 12 | `pl-nier-12-…` | Zdania złożone | *bo, dlatego, chociaż, jeśli, kiedy, który* + порівняння | аргументація, торг |
+
+Уроки 03–12 **не повторюють** 01–02: 01 (ввічливість, залежні питання, парафраза) лишається; 02 (дієприкметники, ступінь) відкладено до 13–15 як «для B2», числівники з 02 переходять у 07. Порядок 04–12 коригується за журналом помилок з 03.
+
+### 13 · Zapraszam do środka — огляд і заперечення клієнта
+`pl-nier-13-prezentacja-i-obiekcje` · рівень B2
 
 - **Мовленнєва дія:** провести огляд квартири, спокійно відповісти на заперечення, отримати зворотний зв'язок і домовитися про наступний крок.
 - **Граматика:** `new` `przyzwolenie` · `przeciwstawienie` · `warunek-realny`; `rec` `imieslow-*`, `porownania`.
@@ -129,8 +150,8 @@
   - **Монолог 2 хв:** «Dlaczego warto kupić to mieszkanie mimo jego wad».
 - **ДЗ:** hw · 🎬 відео про огляд квартири / на що дивитися при купівлі · 🎙️ відповіді на 3 **нові** заперечення (будинок, не квартира) · ✍️ звіт для pani Kaczmarek після огляду: реакції клієнтів, заперечення, наступні кроки (160–200).
 
-### 04 · Ostatnie słowo — торг, zadatek, umowa przedwstępna
-`pl-nier-04-negocjacje` · рівень B2
+### 14 · Ostatnie słowo — торг, zadatek, umowa przedwstępna
+`pl-nier-14-negocjacje` · рівень B2
 
 - **Мовленнєва дія:** передати пропозицію покупців власниці, вести торг як посередник, пом'якшувати категоричність, пояснити клієнту *zadatek* vs *zaliczka* й суть umowy przedwstępnej.
 - **Граматика:** `new` `warunek-nierealny` · `by-ruchome` · `zeby-zyczenie`; пом'якшення — теги **`warunkowy-prosby`** і **`przypuszczajacy-formy`** (тегу `lagodzenie` у реєстрі немає; не створювати); `rec` `przyzwolenie`, `warunek-realny`, `przypuszczajacy-formy` (з 01).
@@ -148,8 +169,8 @@
 - **Факти перевірити (пошуком, у Źródła):** zadatek — art. 394 Kodeksu cywilnego (наслідки невиконання); zaliczka — повертається; форма umowy przedwstępnej (звичайна письмова vs akt notarialny — різні наслідки); як зазвичай ставлять умову про кредит. Нічого з пам'яті.
 - **ДЗ:** hw · 🎬 відео про торг / zadatek vs zaliczka · 🎙️ голосова kontroferta для іншого продавця (1,5 хв) · ✍️ формальний e-mail Zielińskiej з пропозицією покупців і аргументами (160–200).
 
-### 05 · Od umowy do kluczy — формальності, оренда, фінальна симуляція
-`pl-nier-05-formalnosci` · рівень B2
+### 15 · Od umowy do kluczy — формальності, оренда, фінальна симуляція
+`pl-nier-15-formalnosci` · рівень B2
 
 - **Мовленнєва дія:** пояснити клієнту кроки до aktu notarialnego й документи; перекласти офіційну мову на просту (для іноземця); провести повну симуляцію робочого дня.
 - **Граматика:** `new` `bierna-byc-zostac` · `bezosobowe-no-to` · `bezosobowe-sie` · `odczasownikowe`; `rec` `warunek-nierealny`, `warunkowy-prosby`, `przyzwolenie`.
@@ -173,7 +194,7 @@
 
 - **Урок 01, Rozgrzewka:** монолог 2–3 хв «Kim jestem i jak pracuję» → викладач записує (аудіо або нотатки) й оцінює за рубрикою B2 (§1, 0–3 × 5). На TEACHER — таблиця з балами й 5 найчастіших помилок → «журнал помилок».
 - **Кожен урок:** журнал помилок поповнюється; 2–3 помилки з попереднього уроку свідомо «провокуються» в задачах.
-- **Урок 05:** той самий монолог + симуляція → та сама рубрика → у Podsumowaniu учениця бачить різницю (на сторінці учня — лише її самооцінка «umiem / jeszcze ćwiczę», бали — на TEACHER).
+- **Урок 15:** той самий монолог + симуляція → та сама рубрика → у Podsumowaniu учениця бачить різницю (на сторінці учня — лише її самооцінка «umiem / jeszcze ćwiczę», бали — на TEACHER).
 
 ## 5. Що з'ясувати на уроці 01 (записати сюди, перед уроком 02)
 
@@ -186,7 +207,7 @@
 | Чи знає польську процедуру (KW, notariusz, PCC) | не знає → у 05 більше пояснень на TEACHER; знає → більше симуляції |
 | Мова: українська чи російська як рідна | глоси й пастки — під мову (00_START_HERE §5) |
 
-**Результат діагностики:** _(ще не проведено — заповнити після уроку 01 з ученицею: бали рубрики B2 + 5 найчастіших помилок + відповіді на таблицю вище; потім скоригувати уроки 02–05)_
+**Результат діагностики:** _(ще не проведено — заповнити після уроку 01 з ученицею: бали рубрики B2 + 5 найчастіших помилок + відповіді на таблицю вище; потім скоригувати уроки 02–15)_
 
 ## 6. Реєстр `grammar_point` модуля
 
@@ -195,8 +216,8 @@
 | Тег | Що покриває | Урок |
 |---|---|---|
 | `pan-pani` | Pan/Pani/Państwo + 3 ос., ввічливі формули | 01 |
-| `warunkowy-prosby` | ввічливе прохання умовним способом (*mógłby Pan…*) | 01 (rec 04–05) |
-| `przypuszczajacy-formy` | форми трибу умовного | 01 (rec 04) |
+| `warunkowy-prosby` | ввічливе прохання умовним способом (*mógłby Pan…*) | 01 (rec 14–15) |
+| `przypuszczajacy-formy` | форми трибу умовного | 01 (rec 14) |
 | `grzecznosc-chcialbym` | *chciałbym / chciałabym*, ввічливі формули | 01 |
 | `pytania-zalezne` | czy / jaki / ile / kiedy в залежному питанні, порядок слів | 01 |
 | `mowa-zalezna` | парафраза й зміна особи (*Czyli…, Jeśli dobrze rozumiem…*) | 01 |
@@ -205,17 +226,18 @@
 | `stopniowanie` | вищий і найвищий ступінь, нерегулярні | 02 |
 | `porownania` | niż/od, o wiele, im…tym, tak samo jak | 02 |
 | `liczebniki-skladnia` | ціни, метри, кімнати, поверхи; dopełniacz після числівників | 02 |
-| `przyzwolenie` | chociaż, mimo że, mimo + D | 03 |
-| `przeciwstawienie` | natomiast, za to, jednak, mimo to | 03 |
-| `warunek-realny` | jeśli, o ile, pod warunkiem że, chyba że, w razie + D | 03 |
-| `warunek-nierealny` | gdyby — теперішнє й минуле | 04 |
-| `by-ruchome` | gdybym, żebyś, gdybyśmy | 04 |
-| `warunkowy-prosby` + `przypuszczajacy-formy` | пом'якшення: chyba, raczej, wydaje mi się, można by, należałoby (**замість неіснуючого `lagodzenie`**) | 04 |
-| `zeby-zyczenie` | zależy mi na tym, żeby; prosić, żeby | 04 |
-| `bierna-byc-zostac` | być vs zostać + imiesłów, przez | 05 |
-| `bezosobowe-no-to` | podpisano, sprawdzono | 05 |
-| `bezosobowe-sie` | sprawdza się, należy, trzeba | 05 |
-| `odczasownikowe` | zawarcie, przeniesienie, wydanie — офіційний стиль | 05 |
+| `koniugacja-am-asz` · `koniugacja-e-esz` · `koniugacja-e-isz` · `koniugacje` · `czasowniki-nieregularne` · `byc` · `miec` · `modalne-bezokolicznik` | теперішній час, нерегулярні, chcę/mogę/muszę + bezokolicznik | 03 |
+| `przyzwolenie` | chociaż, mimo że, mimo + D | 13 |
+| `przeciwstawienie` | natomiast, za to, jednak, mimo to | 13 |
+| `warunek-realny` | jeśli, o ile, pod warunkiem że, chyba że, w razie + D | 13 |
+| `warunek-nierealny` | gdyby — теперішнє й минуле | 14 |
+| `by-ruchome` | gdybym, żebyś, gdybyśmy | 14 |
+| `warunkowy-prosby` + `przypuszczajacy-formy` | пом'якшення: chyba, raczej, wydaje mi się, można by, należałoby (**замість неіснуючого `lagodzenie`**) | 14 |
+| `zeby-zyczenie` | zależy mi na tym, żeby; prosić, żeby | 14 |
+| `bierna-byc-zostac` | być vs zostać + imiesłów, przez | 15 |
+| `bezosobowe-no-to` | podpisano, sprawdzono | 15 |
+| `bezosobowe-sie` | sprawdza się, należy, trzeba | 15 |
+| `odczasownikowe` | zawarcie, przeniesienie, wydanie — офіційний стиль | 15 |
 
 Усі теги, окрім `pan-pani`, `warunkowy-prosby`, `mowa-zalezna`, `grzecznosc-chcialbym` (перевірені `check_tags.py` в уроці 01), звірені з `grammar-registry.json` 21.11.2026 — є в реєстрі. Тегів `grzecznosc-pan-pani`, `parafraza`, `lagodzenie` у реєстрі **немає**.
 
@@ -244,6 +266,8 @@
 |---|---|---|---|
 | 01 | `pl-nier-01-pierwszy-kontakt` | Dzwonię w sprawie ogłoszenia | ✅ на сайті 21.11.2026 (main 757d6dd; embed ✓ --remote; i18n ru/pl/en ✓); Notion — не створювався; діагностику ще не проведено |
 | 02 | `pl-nier-02-opis-i-ogloszenie` | Mieszkanie z duszą | ✅ на сайті 23.11.2026 (embed ✓; i18n ru/pl/en ✓; без слухання) |
-| 03 | `pl-nier-03-prezentacja-i-obiekcje` | Zapraszam do środka | — |
-| 04 | `pl-nier-04-negocjacje` | Ostatnie słowo | — |
-| 05 | `pl-nier-05-formalnosci` | Od umowy do kluczy | — |
+| 03 | `pl-nier-03-czas-terazniejszy` | Mój dzień w biurze | ✅ на сайті 24.11.2026 (embed ✓ щойно запушено; i18n ru/pl/en ✓) |
+| 04–12 | _див. §3a_ | граматичний мінімум | — |
+| 13 | `pl-nier-13-prezentacja-i-obiekcje` | Zapraszam do środka | — (було 03) |
+| 14 | `pl-nier-14-negocjacje` | Ostatnie słowo | — (було 04) |
+| 15 | `pl-nier-15-formalnosci` | Od umowy do kluczy | — (було 05) |

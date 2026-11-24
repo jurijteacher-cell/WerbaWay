@@ -1,0 +1,607 @@
+{
+  "lesson_id": "pl-nier-03-czas-terazniejszy",
+  "exercise_type": "fill-in-blank",
+  "title": "Czas teraźniejszy w pracy pośrednika: odmiana do automatyzmu",
+  "instruction": "Dziesięć bloków ćwiczeń. Możesz przerwać i wrócić później.",
+  "estimated_minutes": 35,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "Tekst. Ułóż w kolejności",
+      "instruction": "Co Natalia robi najpierw, a co na końcu poniedziałku? Klikaj zdania po kolei.",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "Przychodzi do biura, robi kawę i sprawdza wiadomości.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "Odpisuje na nowe zapytania z portali.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Rozmawia z szefową o planie dnia.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Spotyka się z państwem Lisami i pyta o budżet.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "Dzwoni do pani Zielińskiej i proponuje bezpłatną wycenę.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Wieczorem pisze raport dla szefowej.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Tekst. Uzupełnij streszczenie",
+      "instruction": "Wpisz czasownik w czasie teraźniejszym. W nawiasie jest forma podstawowa.",
+      "text": "Natalia opowiada o poniedziałku. Rano {t2-1} do biura i {t2-2} wiadomości. Państwo Lisowie {t2-3} mieszkania i {t2-4} mieć trzy pokoje blisko szkoły. Natalia {t2-5} im oglądanie w czwartek. Pani Zielińska się {t2-6} i {t2-7}, że musi porozmawiać z synem.",
+      "items": [
+        {
+          "id": "t2-1",
+          "answer": "przychodzi",
+          "hint": "przychodzić",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t2-2",
+          "answer": "sprawdza",
+          "hint": "sprawdzać",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t2-3",
+          "answer": "szukają",
+          "hint": "szukać",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t2-4",
+          "answer": "chcą",
+          "hint": "chcieć",
+          "grammar_point": "czytanie",
+          "explanation": "Chcieć jest nieregularne: chcę, chcesz, chce, chcemy, chcecie, chcą."
+        },
+        {
+          "id": "t2-5",
+          "answer": "proponuje",
+          "hint": "proponować",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t2-6",
+          "answer": "zastanawia",
+          "hint": "zastanawiać",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t2-7",
+          "answer": "mówi",
+          "hint": "mówić",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Które słowo pasuje do sytuacji?",
+      "instruction": "Wybierz czasownik.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Dzwonię do klienta i ___ termin oglądania.",
+          "answer": "potwierdzam",
+          "grammar_point": "slownictwo",
+          "options": [
+            "potwierdzam",
+            "podpisuję",
+            "prowadzę"
+          ],
+          "explanation": "Potwierdzać termin = powiedzieć „tak, to jest pewne”."
+        },
+        {
+          "id": "g1-2",
+          "text": "Natalia ___ klientów po mieszkaniu i pokazuje pokoje.",
+          "answer": "oprowadza",
+          "grammar_point": "slownictwo",
+          "options": [
+            "oprowadza",
+            "zapisuje",
+            "negocjuje"
+          ],
+          "explanation": "Oprowadzać kogoś po mieszkaniu = chodzić z nim i pokazywać."
+        },
+        {
+          "id": "g1-3",
+          "text": "Zawsze ___ wszystkie ustalenia w notatniku.",
+          "answer": "zapisuję",
+          "grammar_point": "slownictwo",
+          "options": [
+            "zapisuję",
+            "otwieram",
+            "zapraszam"
+          ]
+        },
+        {
+          "id": "g1-4",
+          "text": "Klient jeszcze nie decyduje. On się ___.",
+          "answer": "zastanawia",
+          "grammar_point": "slownictwo",
+          "options": [
+            "zastanawia",
+            "zgadza",
+            "wybiera"
+          ],
+          "explanation": "Zastanawiać się = myśleć o decyzji, ale jej jeszcze nie podejmować."
+        },
+        {
+          "id": "g1-5",
+          "text": "Pan Paweł ___ dwie oferty i szuka różnic.",
+          "answer": "porównuje",
+          "grammar_point": "slownictwo",
+          "options": [
+            "porównuje",
+            "podpisuje",
+            "potwierdza"
+          ]
+        },
+        {
+          "id": "g1-6",
+          "text": "Właścicielka ___ się na wizytę naszego biura.",
+          "answer": "zgadza",
+          "grammar_point": "slownictwo",
+          "options": [
+            "zgadza",
+            "zastanawia",
+            "rezygnuje"
+          ],
+          "explanation": "Zgadzać się na + biernik: zgadza się na wizytę."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Czasowniki na -am / -asz i -uję / -ujesz",
+      "instruction": "Wpisz formę czasownika w czasie teraźniejszym.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Natalia codziennie ___ nowe zapytania. (sprawdzać)",
+          "answer": "sprawdza",
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "Sprawdzać: sprawdzam, sprawdzasz, sprawdza, sprawdzamy, sprawdzacie, sprawdzają."
+        },
+        {
+          "id": "g2-2",
+          "text": "Ja zawsze ___ klienta o budżet. (pytać)",
+          "answer": "pytam",
+          "grammar_point": "koniugacja-am-asz"
+        },
+        {
+          "id": "g2-3",
+          "text": "My ___ klientom nowe oferty w piątek. (pokazywać)",
+          "answer": "pokazujemy",
+          "grammar_point": "koniugacja-e-esz",
+          "explanation": "Pokazywać → pokazuję, pokazujesz, pokazuje, pokazujemy, pokazujecie, pokazują."
+        },
+        {
+          "id": "g2-4",
+          "text": "Czy Państwo ___ już termin? (potwierdzać)",
+          "answer": "potwierdzają",
+          "grammar_point": "koniugacja-am-asz",
+          "explanation": "Państwo + 3. osoba liczby mnogiej: potwierdzają."
+        },
+        {
+          "id": "g2-5",
+          "text": "Ty szybko ___ na wiadomości. (odpisywać)",
+          "answer": "odpisujesz",
+          "grammar_point": "koniugacja-e-esz"
+        },
+        {
+          "id": "g2-6",
+          "text": "Państwo Lisowie ___ cenę z właścicielką. (negocjować)",
+          "answer": "negocjują",
+          "grammar_point": "koniugacja-e-esz"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Czasowniki na -ę / -esz i -ę / -isz / -ysz",
+      "instruction": "Wpisz formę czasownika w czasie teraźniejszym.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Ja ___ raport każdego wieczoru. (pisać)",
+          "answer": "piszę",
+          "grammar_point": "koniugacja-e-esz",
+          "explanation": "Pisać → piszę, piszesz, pisze, piszemy, piszecie, piszą (c → sz)."
+        },
+        {
+          "id": "g3-2",
+          "text": "Marta ___ do mnie rano. (dzwonić)",
+          "answer": "dzwoni",
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "Dzwonić → dzwonię, dzwonisz, dzwoni, dzwonimy, dzwonicie, dzwonią."
+        },
+        {
+          "id": "g3-3",
+          "text": "My ___ rozmowę po polsku. (prowadzić)",
+          "answer": "prowadzimy",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g3-4",
+          "text": "Czy Pan ___ po polsku? (mówić)",
+          "answer": "mówi",
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "Pan + 3. osoba liczby pojedynczej: mówi."
+        },
+        {
+          "id": "g3-5",
+          "text": "Ty ___ bardzo dużo notatek. (robić)",
+          "answer": "robisz",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g3-6",
+          "text": "Ja ___ pani Zielińskiej, jak wygląda umowa. (tłumaczyć)",
+          "answer": "tłumaczę",
+          "grammar_point": "koniugacja-e-isz",
+          "explanation": "Tłumaczyć → tłumaczę, tłumaczysz, tłumaczy, tłumaczymy, tłumaczycie, tłumaczą."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Czasowniki nieregularne: być, mieć, chcieć, móc, wiedzieć, musieć",
+      "instruction": "Wpisz formę czasownika w czasie teraźniejszym.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Czy Pan ___ już budżet? (mieć)",
+          "answer": "ma",
+          "grammar_point": "miec"
+        },
+        {
+          "id": "g4-2",
+          "text": "My ___ dziś trzy oglądania. (mieć)",
+          "answer": "mamy",
+          "grammar_point": "miec"
+        },
+        {
+          "id": "g4-3",
+          "text": "Państwo ___ mieszkanie blisko szkoły. (chcieć)",
+          "answer": "chcą",
+          "grammar_point": "czasowniki-nieregularne",
+          "explanation": "Chcieć: chcę, chcesz, chce, chcemy, chcecie, chcą."
+        },
+        {
+          "id": "g4-4",
+          "text": "Czy ja ___ zadzwonić po piętnastej? (móc)",
+          "answer": "mogę",
+          "grammar_point": "czasowniki-nieregularne",
+          "explanation": "Móc: mogę, możesz, może, możemy, możecie, mogą (g → ż w środku)."
+        },
+        {
+          "id": "g4-5",
+          "text": "Czy Pani ___ przyjść w piątek? (móc)",
+          "answer": "może",
+          "grammar_point": "czasowniki-nieregularne"
+        },
+        {
+          "id": "g4-6",
+          "text": "Ja nie ___, ile to kosztuje. (wiedzieć)",
+          "answer": "wiem",
+          "grammar_point": "czasowniki-nieregularne",
+          "explanation": "Wiedzieć: wiem, wiesz, wie, wiemy, wiecie, wiedzą."
+        },
+        {
+          "id": "g4-7",
+          "text": "Czy Państwo ___, że to mieszkanie jest po remoncie? (wiedzieć)",
+          "answer": "wiedzą",
+          "grammar_point": "czasowniki-nieregularne"
+        },
+        {
+          "id": "g4-8",
+          "text": "Ty ___ dziś zadzwonić do właścicielki. (musieć)",
+          "answer": "musisz",
+          "grammar_point": "czasowniki-nieregularne",
+          "explanation": "Musieć: muszę, musisz, musi, musimy, musicie, muszą."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Pan, Pani, Państwo, Panie — czasownik w czasie teraźniejszym",
+      "instruction": "Pan / Pani / Państwo / Panie to zawsze trzecia osoba. Wpisz właściwą formę.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Pan Paweł jest z żoną. Czy Państwo ___ już oferty? (mieć)",
+          "answer": "mają",
+          "grammar_point": "pan-pani",
+          "explanation": "Państwo = trzecia osoba liczby mnogiej: mają."
+        },
+        {
+          "id": "g5-2",
+          "text": "Pani Marto, czy Pani ___ czas w czwartek? (mieć)",
+          "answer": "ma",
+          "grammar_point": "pan-pani"
+        },
+        {
+          "id": "g5-3",
+          "text": "Panie Pawle, co Pan ___ o tym mieszkaniu? (myśleć)",
+          "answer": "myśli",
+          "grammar_point": "pan-pani"
+        },
+        {
+          "id": "g5-4",
+          "text": "Czy Panie ___ po polsku? (mówić)",
+          "answer": "mówią",
+          "grammar_point": "pan-pani",
+          "explanation": "Panie (same kobiety) + 3. osoba liczby mnogiej: mówią."
+        },
+        {
+          "id": "g5-5",
+          "text": "Czy Państwo ___ z Poznania? (być)",
+          "answer": "są",
+          "grammar_point": "pan-pani",
+          "explanation": "Być: jestem, jesteś, jest, jesteśmy, jesteście, są."
+        },
+        {
+          "id": "g5-6",
+          "text": "Czy Pani ___ na kredyt? (kupować)",
+          "answer": "kupuje",
+          "grammar_point": "pan-pani"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "6. Chcę, mogę, muszę + bezokolicznik: ułóż zdanie",
+      "instruction": "Ułóż zdanie. Drugi czasownik zostaje w bezokoliczniku.",
+      "items": [
+        {
+          "id": "g6-1",
+          "prompt": "Ułóż pytanie o możliwość przyjścia w piątek.",
+          "answer": "Czy Pan może przyjść w piątek?",
+          "grammar_point": "modalne-bezokolicznik",
+          "words": [
+            "czy",
+            "Pan",
+            "może",
+            "przyjść",
+            "w",
+            "piątek?"
+          ],
+          "accept": [
+            "Czy może Pan przyjść w piątek?"
+          ],
+          "explanation": "Może + bezokolicznik: może przyjść. Po „może” czasownik się nie odmienia."
+        },
+        {
+          "id": "g6-2",
+          "prompt": "Powiedz, że klienci nie mają obowiązku przychodzić do biura.",
+          "answer": "Państwo nie muszą przychodzić do biura.",
+          "grammar_point": "modalne-bezokolicznik",
+          "words": [
+            "Państwo",
+            "nie",
+            "muszą",
+            "przychodzić",
+            "do",
+            "biura."
+          ],
+          "accept": [
+            "Nie muszą Państwo przychodzić do biura.",
+            "Państwo nie muszą do biura przychodzić."
+          ]
+        },
+        {
+          "id": "g6-3",
+          "prompt": "Powiedz, że chcecie obejrzeć mieszkanie jeszcze dziś.",
+          "answer": "Chcemy obejrzeć to mieszkanie jeszcze dziś.",
+          "grammar_point": "modalne-bezokolicznik",
+          "words": [
+            "chcemy",
+            "obejrzeć",
+            "to",
+            "mieszkanie",
+            "jeszcze",
+            "dziś."
+          ],
+          "accept": [
+            "Jeszcze dziś chcemy obejrzeć to mieszkanie.",
+            "Chcemy jeszcze dziś obejrzeć to mieszkanie."
+          ]
+        },
+        {
+          "id": "g6-4",
+          "prompt": "Powiedz, że dziś nie możesz rozmawiać, bo jesteś na oglądaniu.",
+          "answer": "Nie mogę dziś rozmawiać, bo jestem na oglądaniu.",
+          "grammar_point": "modalne-bezokolicznik",
+          "words": [
+            "nie",
+            "mogę",
+            "dziś",
+            "rozmawiać,",
+            "bo",
+            "jestem",
+            "na",
+            "oglądaniu."
+          ],
+          "accept": [
+            "Dziś nie mogę rozmawiać, bo jestem na oglądaniu.",
+            "Nie mogę rozmawiać dziś, bo jestem na oglądaniu."
+          ]
+        },
+        {
+          "id": "g6-5",
+          "prompt": "Zapytaj klienta, czy możecie się umówić na czwartek.",
+          "answer": "Czy możemy się umówić na czwartek?",
+          "grammar_point": "modalne-bezokolicznik",
+          "words": [
+            "czy",
+            "możemy",
+            "się",
+            "umówić",
+            "na",
+            "czwartek?"
+          ],
+          "accept": [
+            "Czy możemy umówić się na czwartek?"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Szybka runda: wszystkie grupy razem",
+      "instruction": "Wpisz formę czasownika. Staraj się odpowiadać szybko, bez zastanawiania się.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Ja ___ w biurze nieruchomości. (pracować)",
+          "answer": "pracuję",
+          "grammar_point": "koniugacje"
+        },
+        {
+          "id": "g7-2",
+          "text": "Pan ___ klientów do salonu. (zapraszać)",
+          "answer": "zaprasza",
+          "grammar_point": "koniugacje"
+        },
+        {
+          "id": "g7-3",
+          "text": "My ___ dziś w biurze do osiemnastej. (być)",
+          "answer": "jesteśmy",
+          "grammar_point": "byc"
+        },
+        {
+          "id": "g7-4",
+          "text": "Oni ___ dwie oferty. (porównywać)",
+          "answer": "porównują",
+          "grammar_point": "koniugacje"
+        },
+        {
+          "id": "g7-5",
+          "text": "Ona ___ rozmawiać dłużej. (nie chcieć)",
+          "answer": "nie chce",
+          "grammar_point": "czasowniki-nieregularne"
+        },
+        {
+          "id": "g7-6",
+          "text": "Czy Pani ___ pana Lisa? (znać)",
+          "answer": "zna",
+          "grammar_point": "koniugacje"
+        },
+        {
+          "id": "g7-7",
+          "text": "Klienci ___ wiadomości codziennie. (wysyłać)",
+          "answer": "wysyłają",
+          "grammar_point": "koniugacje"
+        },
+        {
+          "id": "g7-8",
+          "text": "W czwartek ___ się o szesnastej. (my, spotykać)",
+          "answer": "spotykamy",
+          "grammar_point": "koniugacje"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "8. Pułapki z ukraińskiego: popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "prompt": "Ja znam, ile kosztuje to mieszkanie.",
+          "answer": "Ja wiem, ile kosztuje to mieszkanie.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Wiem, ile kosztuje to mieszkanie.",
+            "Ja wiem, ile to mieszkanie kosztuje."
+          ],
+          "explanation": "Ukr. «знаю, скільки коштує» → pol. wiem, ile kosztuje. Znać = znać kogoś albo coś (znam pana Lisa); wiedzieć = mieć informację."
+        },
+        {
+          "id": "g8-2",
+          "prompt": "Czy Pan macie jeszcze pytania?",
+          "answer": "Czy Pan ma jeszcze pytania?",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Czy Pan ma jeszcze jakieś pytania?",
+            "Czy ma Pan jeszcze pytania?"
+          ],
+          "explanation": "Ukr. «Ви маєте» do jednej osoby → pol. Pan ma. Pan = trzecia osoba liczby pojedynczej."
+        },
+        {
+          "id": "g8-3",
+          "prompt": "Mi trzeba zadzwonić do właścicielki.",
+          "answer": "Muszę zadzwonić do właścicielki.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Trzeba zadzwonić do właścicielki.",
+            "Trzeba mi zadzwonić do właścicielki."
+          ],
+          "explanation": "Ukr. «мені треба» → pol. muszę albo trzeba. Krótkie „mi” nie stoi na początku zdania."
+        },
+        {
+          "id": "g8-4",
+          "prompt": "Pracuję w tym biurze trzy lata.",
+          "answer": "Pracuję w tym biurze od trzech lat.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Od trzech lat pracuję w tym biurze.",
+            "Pracuję w tym biurze od 3 lat."
+          ],
+          "explanation": "Ukr. «працюю три роки» → pol. od trzech lat (od + dopełniacz). Czas trwa do dzisiaj, więc czas teraźniejszy + od."
+        },
+        {
+          "id": "g8-5",
+          "prompt": "Czekam klienta przed budynkiem.",
+          "answer": "Czekam na klienta przed budynkiem.",
+          "grammar_point": "kalki-uk",
+          "accept": [
+            "Czekam przed budynkiem na klienta.",
+            "Przed budynkiem czekam na klienta."
+          ],
+          "explanation": "Ukr. «чекаю клієнта» → pol. czekam na klienta. Czekać na + biernik."
+        }
+      ]
+    }
+  ]
+}
