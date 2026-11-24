@@ -12,13 +12,15 @@
 | 3 | Документи: faktura, korekta, KSeF | родовий відмінок, дати | читання документа | ✅ `pl-ksieg-03-faktura-i-korekta` (2026-10-25) |
 | 4 | VAT і JPK | числівники, суми, відсотки | цифри вголос без паузи | ✅ `pl-ksieg-04-vat-i-jpk` (2026-11-08) |
 | 5 | PIT/CIT, форми оподаткування JDG | умовні речення (jeśli/gdyby) | порадити клієнту | ✅ `pl-ksieg-05-pit-cit-formy-opodatkowania` (2026-11-21) |
-| 6 | Типи договорів, складки ZUS, lista płac | пасивний стан | пояснити працівнику зарплату | — |
+| 6 | Типи договорів, складки ZUS, lista płac | пасивний стан | пояснити працівнику зарплату | ✅ `pl-ksieg-06-umowy-zus-lista-plac` (2026-11-24) |
 | 7 | Urlop, L4, chorobowe | непряма мова | відповідь на питання працівника | — |
 | 8 | E-mail клієнту чи в установу | ввічливі форми, умовний спосіб | формальний лист | — |
 | 9 | Телефон: попросити документи, нагадати про термін | підрядні (że, żeby, który) | розмова з клієнтом | — |
 | 10 | Листи з US і тексти законів | дієприкметники, -no/-to | зрозуміти офіційний текст | — |
 | 11 | CV і лист мотиваційний | віддієслівні іменники | описати компетенції | — |
 | 12 | Симуляція співбесіди | повтор часів і виду | співбесіда від початку до кінця | — |
+
+**Для уроку 06:** повторити з 04–05 — слова (termin, wynosić, około, składka zdrowotna, zaliczka, pod warunkiem, że) і граматику (do + родовий, дати й числівники, gdyby). Сюжет: pani Iwona наймає pani Natalię на свята (umowa o pracę, 4 806 zł brutto = płaca minimalna 2026); окремо — student на zleceniu. Терміни для JDG-pracodawcy: składki ZUS і zaliczka PIT до 20., wypłata до 10.
 
 **Для уроку 05:** повторити з 03–04 — слова (KSeF, korekta, VAT należny / naliczony, mikrorachunek, JPK_V7M, termin, wynosi, ponad / około) і граматику (liczebnik po przyimku, o ile / do ilu, dopełniacz po liczebnikach). Урок 04 уже дав: VAT до 25-го на mikrorachunek, ліміт zwolnienia 240 000 zł з 2026, nadwyżka (przeniesienie / zwrot ~60 dni), split payment >15 000 zł brutto (зал. 15). Сюжет: pani Iwona (kwiaciarnia, JDG) — природне продовження в 05: вона питає, чи змінити форму оподаткування з січня (умовні речення). Ставку VAT на квіти не називати без перевірки.
 

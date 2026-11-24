@@ -1,0 +1,238 @@
+{
+  "lesson_id": "pl-ksieg-06-umowy-zus-lista-plac",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: strona bierna w wyjaśnieniu dla pracownika",
+  "instruction": "Trzy ćwiczenia. Zrób je przed pisaniem wiadomości. Potem obejrzyj wideo i napisz wiadomość do pracownicy — zadania są na stronie lekcji.",
+  "estimated_minutes": 18,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "cloze-text",
+      "title": "1. Wyjaśnienie dla pani Natalii",
+      "instruction": "Tam, gdzie jest lista — wybierz właściwą formę.",
+      "text": "Szanowna Pani Natalio,\n\nprzesyłam krótkie wyjaśnienie. Umowa o pracę {h1-1} przed pierwszym dniem pracy. Pracownica {h1-2} do ZUS w ciągu siedmiu dni. Z wynagrodzenia brutto {h1-3} składki. Składki {h1-4} przez pracodawcę. Co miesiąc {h1-5} lista płac. Wynagrodzenie netto {h1-6} do 10. dnia następnego miesiąca.\n\nPozdrawiam\nHalina",
+      "items": [
+        {
+          "id": "h1-1",
+          "answer": "powinna być podpisana",
+          "options": [
+            "powinna być podpisana",
+            "powinien być podpisany",
+            "powinno być podpisana"
+          ],
+          "grammar_point": "bierna-byc-zostac",
+          "explanation": "Umowa — rodzaj żeński: powinna być podpisana."
+        },
+        {
+          "id": "h1-2",
+          "answer": "zostanie zgłoszona",
+          "options": [
+            "zostanie zgłoszona",
+            "zostanie zgłaszana",
+            "zostanie zgłoszony"
+          ],
+          "grammar_point": "bierna-byc-zostac",
+          "explanation": "Zostanie + imiesłów dokonany; pracownica — żeński."
+        },
+        {
+          "id": "h1-3",
+          "answer": "są potrącane",
+          "options": [
+            "są potrącane",
+            "jest potrącane",
+            "zostało potrącane"
+          ],
+          "grammar_point": "bierna-byc-zostac",
+          "explanation": "Składki — liczba mnoga; regularnie → są potrącane."
+        },
+        {
+          "id": "h1-4",
+          "answer": "są odprowadzane",
+          "options": [
+            "są odprowadzane",
+            "są odprowadzani",
+            "jest odprowadzane"
+          ],
+          "grammar_point": "bierna-byc-zostac",
+          "explanation": "Składki — liczba mnoga, rzecz; regularnie → są odprowadzane."
+        },
+        {
+          "id": "h1-5",
+          "answer": "jest sporządzana",
+          "options": [
+            "jest sporządzana",
+            "została sporządzana",
+            "zostanie sporządzony"
+          ],
+          "grammar_point": "bierna-byc-zostac",
+          "explanation": "Lista płac — rodzaj żeński; co miesiąc → jest sporządzana."
+        },
+        {
+          "id": "h1-6",
+          "answer": "jest przelewane",
+          "options": [
+            "jest przelewane",
+            "jest przelewany",
+            "zostało przelewane"
+          ],
+          "grammar_point": "bierna-byc-zostac",
+          "explanation": "Wynagrodzenie — nijaki; regularnie → jest przelewane."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdanie",
+      "instruction": "Ułóż słowa w poprawne zdanie. Klikaj w kolejności.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Umowa została podpisana przez panią Iwonę wczoraj.",
+          "answer": "Umowa została podpisana przez panią Iwonę wczoraj.",
+          "words": [
+            "Umowa",
+            "została",
+            "podpisana",
+            "przez",
+            "panią",
+            "Iwonę",
+            "wczoraj."
+          ],
+          "accept": [
+            "Wczoraj umowa została podpisana przez panią Iwonę.",
+            "Umowa została wczoraj podpisana przez panią Iwonę."
+          ],
+          "grammar_point": "bierna-byc-zostac"
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Składki płaci się do 20. dnia następnego miesiąca.",
+          "answer": "Składki płaci się do 20. dnia następnego miesiąca.",
+          "words": [
+            "Składki",
+            "płaci",
+            "się",
+            "do",
+            "20.",
+            "dnia",
+            "następnego",
+            "miesiąca."
+          ],
+          "accept": [
+            "Do 20. dnia następnego miesiąca składki płaci się.",
+            "Składki do 20. dnia następnego miesiąca płaci się."
+          ],
+          "grammar_point": "bezosobowe-sie"
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Pracownicę należy zgłosić do ZUS w ciągu siedmiu dni.",
+          "answer": "Pracownicę należy zgłosić do ZUS w ciągu siedmiu dni.",
+          "words": [
+            "Pracownicę",
+            "należy",
+            "zgłosić",
+            "do",
+            "ZUS",
+            "w",
+            "ciągu",
+            "siedmiu",
+            "dni."
+          ],
+          "accept": [
+            "Należy zgłosić pracownicę do ZUS w ciągu siedmiu dni."
+          ],
+          "grammar_point": "bezosobowe-sie"
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Wypłata zostanie przelana na konto do 10. dnia.",
+          "answer": "Wypłata zostanie przelana na konto do 10. dnia.",
+          "words": [
+            "Wypłata",
+            "zostanie",
+            "przelana",
+            "na",
+            "konto",
+            "do",
+            "10.",
+            "dnia."
+          ],
+          "accept": [
+            "Wypłata zostanie przelana do 10. dnia na konto."
+          ],
+          "grammar_point": "bierna-byc-zostac"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Wybierz właściwe słowo",
+      "instruction": "Wybierz słowo, które pasuje do zdania.",
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Pensja minimalna w tym roku to 4 806 zł ___.",
+          "answer": "brutto",
+          "options": [
+            "brutto",
+            "netto",
+            "na rękę"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Pensja minimalna jest podawana w kwocie brutto."
+        },
+        {
+          "id": "h3-2",
+          "text": "Pracodawca ___ składki z wynagrodzenia pracownika.",
+          "answer": "potrąca",
+          "options": [
+            "potrąca",
+            "potrącony",
+            "potrącają się"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Pracodawca potrąca składki — strona czynna."
+        },
+        {
+          "id": "h3-3",
+          "text": "Umowa na okres próbny może trwać ___ trzy miesiące.",
+          "answer": "najwyżej",
+          "options": [
+            "najwyżej",
+            "najmniej",
+            "co najmniej"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Najwyżej trzy = nie więcej niż trzy."
+        },
+        {
+          "id": "h3-4",
+          "text": "Pani Natalia dostanie 3 605,85 zł ___.",
+          "answer": "na rękę",
+          "options": [
+            "na rękę",
+            "z ręki",
+            "od ręki"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Na rękę = netto, kwota dla pracownika."
+        },
+        {
+          "id": "h3-5",
+          "text": "Składki płaci się ___ 20. dnia następnego miesiąca.",
+          "answer": "do",
+          "options": [
+            "do",
+            "od",
+            "po"
+          ],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Termin: do + dopełniacz (do 20. dnia)."
+        }
+      ]
+    }
+  ]
+}
