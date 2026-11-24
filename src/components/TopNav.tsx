@@ -34,6 +34,7 @@ export async function TopNav() {
     { href: '/words', label: t('Слова') },
     { href: '/dashboard', label: t('Прогрес') },
     ...(isTeacher ? [{ href: '/teacher', label: t('Кабінет викладача') }] : []),
+    ...(isTeacher ? [{ href: '/teacher/board', label: t('Дошка') }] : []),
     ...(isTeacher ? [{ href: '/teacher/reports', label: t('Повідомлення про помилки') }] : []),
   ];
 
@@ -53,6 +54,7 @@ export async function TopNav() {
   const more: Tab[] = isTeacher
     ? [
         { href: '/teacher', label: t('Кабінет викладача'), icon: 'desk' },
+        { href: '/teacher/board', label: t('Дошка'), icon: 'desk' },
         { href: '/forgot-password', label: t('Змінити пароль'), icon: 'key' },
       ]
     : [{ href: '/forgot-password', label: t('Змінити пароль'), icon: 'key' }];

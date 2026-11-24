@@ -7,6 +7,7 @@ import { lessonSlugOf } from '@/lib/live/protocol';
 import { DockChannelProvider, useDock } from './DockChannel';
 import { DockBoundary } from './DockBoundary';
 import { ClassDock } from './ClassDock';
+import { StudentBoard } from '@/components/board/StudentBoard';
 
 /** сторінка лекції з ?p= (1-based) — поки подія ww:lesson-page ще не прийшла */
 function pageFromUrl(): number | undefined {
@@ -69,6 +70,7 @@ function StudentDockInner({ studentId, name }: { studentId: string; name?: strin
   return (
     <DockChannelProvider topic={dockTopic(studentId)} presence={presence}>
       <PresenceSync pathname={pathname} pg={pg} presence={presence} />
+      <StudentBoard studentId={studentId} name={name} />
       <ClassDock role="student" studentId={studentId} lesson={slug ? { slug, pg: pg ?? pageFromUrl() ?? null } : null} />
     </DockChannelProvider>
   );
