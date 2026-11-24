@@ -17,22 +17,20 @@
 |---|---|
 | **Нова лекція** | `LESSON_PROTOCOL.md` (~8k) · `GRAMMAR_METHOD.md` (~3k) · карта модуля · `ref/<тема>.md` |
 | Схеми JSON вправ | `CONTENT_SPEC.md` (~4k; лише потрібні типи) |
-| Слухання, озвучення | `AUDIO_SITE.md` |
+| Слухання, озвучення | `AUDIO_SITE.md` · формати іспитів: `AUDIO_EXAM_SPEC.md` |
 | Новий тег граматики | `GRAMMAR_REGISTRY.md` |
 | Публікація не пройшла / новий агент | `SITE_PUBLISHING.md` (~3k) |
+| Багатомовність сайту й лекцій | `I18N.md` |
 | Переклад (для субагента) | `I18N_TRANSLATION_BRIEF.md` |
 | Вигляд UI, код компонентів | `DESIGN_SYSTEM.md` |
-| Клас, чат, дошка | `CLASS_TOOLS_CHANGELOG.md` |
+| Клас, чат, дошка | `CLASS_TOOLS_SPEC.md` · `CLASS_TOOLS_CHANGELOG.md` |
 | Результати вправ, акаунти | `EMBED_RESULTS.md` · `AUTH_SETUP.md` · `PROGRESS_SPEC.md` |
-| Пробні іспити, placement | `MOCK_EXAM_SPEC.md` · `PLACEMENT_SPEC.md` |
+| Пробні іспити, placement | `MOCK_EXAM_SPEC.md` · `PLACEMENT_SPEC.md` · `EXAMS_TELC_vs_PANSTWOWY_B1.md` |
+| Стартові курси A0–A1, формат «Podróż» | `LESSON_PROTOCOL_A0-A1.md` · `IMMERSION_QUEST.md` |
 
 ## Карти курсів
 
 `CURRICULUM_MASTER_A0-B2.md` (головна) · `CURRICULUM_A0-A1.md` · `CURRICULUM_A2.md` · `CURRICULUM_GROUP_B1.md` · `CURRICULUM_GROUP_B2.md` · `CURRICULUM_GRAMMAR_B1-B2.md` · `CURRICULUM_TELC_B1.md` · індивідуальні: `CURRICULUM_PL-KSIEG`, `PL-TRENER`, `PL-NIER`, `PL-REMONT`, `MODULE_PL-KP`.
-
-## Ще не перенесено з claude.ai Project (читати там, перенести в `docs/`)
-
-`LESSON_PROTOCOL_A0-A1` · `IMMERSION_QUEST` · `CLASS_TOOLS_SPEC` · `AUDIO_EXAM_SPEC` · `I18N` · `EXAMS_TELC_vs_PANSTWOWY_B1`. Агент, що в сесії бачить їх у Project, копіює файл у `docs/` дослівно (`project_read` → запис у репо → коміт) і прибирає рядок звідси.
 
 ## Довідники по темах (`ref/`)
 
