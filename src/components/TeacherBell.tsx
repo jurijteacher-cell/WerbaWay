@@ -5,7 +5,7 @@ import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-type Item = { kind: 'hw' | 'bug'; id: string; studentId: string; name: string; title: string; at: string; href: string };
+type Item = { kind: 'hw' | 'bug' | 'chat'; n?: number; id: string; studentId: string; name: string; title: string; at: string; href: string };
 
 const SEEN_KEY = 'ww.hwSeenAt';
 
@@ -61,10 +61,23 @@ export function TeacherBell() {
     const t = setInterval(() => {
       if (document.visibilityState === 'visible') load();
     }, 300_000);
+    // чат: частіше й дешевше (лише непрочитані повідомлення), поки вкладка перед очима
+    const chatPoll = setInterval(async () => {
+      if (document.visibilityState !== 'visible') return;
+      try {
+        const r = await fetch('/api/teacher/notifications?only=chat', { cache: 'no-store' });
+        if (!r.ok) return;
+        const j = (await r.json()) as { items?: Item[] };
+        setItems((prev) => [...prev.filter((i) => i.kind !== 'chat'), ...(j.items ?? [])].sort((a, b) => (a.at < b.at ? 1 : -1)));
+      } catch {
+        /* мережа впала — наступного разу */
+      }
+    }, 30_000);
     const onFocus = () => load();
     window.addEventListener('focus', onFocus);
     return () => {
       clearInterval(t);
+      clearInterval(chatPoll);
       window.removeEventListener('focus', onFocus);
     };
   }, [load]);
@@ -83,7 +96,8 @@ export function TeacherBell() {
     };
   }, [open]);
 
-  const fresh = items.filter((i) => i.at > seen);
+  // чат лишається «новим», доки повідомлення не прочитано (воно саме зникає зі списку)
+  const fresh = items.filter((i) => i.kind === 'chat' || i.at > seen);
 
   function toggle() {
     const next = !open;
@@ -124,11 +138,11 @@ export function TeacherBell() {
               key={i.id}
               href={i.href}
               onClick={() => setOpen(false)}
-              className={`ww-bell-row${i.at > seen ? ' is-new' : ''}`}
+              className={`ww-bell-row${i.kind === 'chat' || i.at > seen ? ' is-new' : ''}`}
             >
               <span className="ww-bell-name">
-                {i.kind === 'bug' ? '⚑ ' : '✅ '}
-                {i.name}
+                {i.kind === 'bug' ? '⚑ ' : i.kind === 'chat' ? '💬 ' : '✅ '}
+                {i.name}{i.kind === 'chat' && (i.n ?? 0) > 1 ? ` (${i.n})` : ''}
               </span>
               <span className="ww-bell-lesson">{i.title}</span>
               <span className="ww-bell-when">{when(i.at)}</span>

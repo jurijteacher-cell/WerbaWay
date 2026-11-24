@@ -120,6 +120,11 @@ export function StudentsGrid({ rows }: { rows: StudentRow[] }) {
                     {!r.hasAccount && <span className="ml-2 rounded bg-ink-soft px-1.5 py-0.5">{t("лише Notion")}</span>}
                   </p>
                 </div>
+                {r.chatUnread > 0 && (
+                  <span className="shrink-0 rounded-full bg-punch px-2 py-0.5 text-[11px] font-semibold text-white" title={t("Непрочитані повідомлення")}>
+                    💬 {r.chatUnread}
+                  </span>
+                )}
                 {r.homeworkTodo > 0 && (
                   <span className="shrink-0 rounded-full bg-[#f4b7c5] px-2 py-0.5 text-[11px] font-semibold text-paper" title={t("Домашка чекає")}>
                     📝 {r.homeworkTodo}
