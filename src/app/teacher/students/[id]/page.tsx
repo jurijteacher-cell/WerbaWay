@@ -13,7 +13,6 @@ import { Activity, Section, TopicMastery, WeakList } from '@/components/dashboar
 import { AccessEditor, type ModuleInfo } from '@/components/teacher/AccessEditor';
 import { EmailStudent } from '@/components/teacher/EmailStudent';
 import { LiveBadgeFor } from '@/components/live/LiveBadge';
-import { TeacherDock } from '@/components/dock/TeacherDock';
 import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
@@ -325,14 +324,6 @@ export default async function StudentProfilePage({ params, searchParams }: { par
             />
           </Section>
         </div>
-      )}
-      {userId && (
-        <TeacherDock
-          studentId={userId}
-          name={name}
-          defaultOpen={searchParams.dock === '1'}
-          initialFilterLesson={/^[a-z0-9][a-z0-9-]*$/.test(searchParams.lesson ?? '') ? searchParams.lesson : undefined}
-        />
       )}
     </main>
   );

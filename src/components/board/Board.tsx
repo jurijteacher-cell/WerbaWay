@@ -1,7 +1,8 @@
 'use client';
 
-import { memo, useCallback, useEffect, useRef, useState } from 'react';
+import { memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { FS_PX, MAX_TEXT, clampZoom, elH, type BoardEl, type Viewport } from '@/lib/board/types';
+import { domToMarkup, plainLen, toHtml } from '@/lib/board/rich';
 
 type Gesture =
   | { kind: 'pan'; sx: number; sy: number; vx: number; vy: number; moved: boolean; onEmpty: boolean }
@@ -10,7 +11,10 @@ type Gesture =
   | { kind: 'resize'; id: string; sx: number; sy: number; w0: number; h0: number }
   | { kind: 'band'; sx: number; sy: number };
 
-const DBL_MS = 350;
+const DBL_MS = 400;
+
+// на сервері layout-ефект не потрібен (і лише лякає попередженням)
+const useIsoLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
 
 type ItemProps = {
   el: BoardEl;
@@ -19,11 +23,133 @@ type ItemProps = {
   editable: boolean;
   onText: (id: string, text: string) => void;
   onDone: () => void;
+  onGrow: (id: string, h: number) => void;
 };
 
+function caretToEnd(n: HTMLElement) {
+  const sel = window.getSelection();
+  if (!sel) return;
+  const r = document.createRange();
+  r.selectNodeContents(n);
+  r.collapse(false);
+  sel.removeAllRanges();
+  sel.addRange(r);
+}
+
+/**
+ * Поле редагування на місці стікера (як у Miro): займає весь прямокутник, текст переноситься в його межах,
+ * а коли не вміщується — стікер сам росте вниз. Ctrl/⌘+B і Ctrl/⌘+I — жирний і курсив.
+ */
+function Editor({ el, onText, onDone, onGrow }: { el: BoardEl; onText: (id: string, text: string) => void; onDone: () => void; onGrow: (id: string, h: number) => void }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const startedAt = useRef(Date.now());
+  const elRef = useRef(el);
+  elRef.current = el;
+
+  const grow = useCallback(() => {
+    const n = ref.current;
+    const cur = elRef.current;
+    if (!n || cur.t !== 'note') return;
+    if (n.scrollHeight > cur.h + 1) onGrow(cur.id, Math.ceil(n.scrollHeight));
+  }, [onGrow]);
+
+  // поле некероване: вміст виставляємо один раз, далі ним керує браузер
+  useIsoLayoutEffect(() => {
+    const n = ref.current;
+    if (!n) return;
+    n.innerHTML = toHtml(elRef.current.text);
+    n.focus();
+    caretToEnd(n);
+    grow();
+    // після подвійного кліку браузер ще може забрати фокус (mousedown) — повертаємо
+    const again = () => {
+      if (document.activeElement !== n) {
+        n.focus();
+        caretToEnd(n);
+      }
+    };
+    const t1 = setTimeout(again, 0);
+    const t2 = setTimeout(again, 160);
+    return () => {
+      clearTimeout(t1);
+      clearTimeout(t2);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // ліміт символів: не даємо вводити понад MAX_TEXT
+  useEffect(() => {
+    const n = ref.current;
+    if (!n) return;
+    const onBefore = (e: InputEvent) => {
+      if (!e.inputType.startsWith('insert')) return;
+      const sel = window.getSelection();
+      const selected = sel && !sel.isCollapsed ? sel.toString().length : 0;
+      if (plainLen(domToMarkup(n)) - selected >= MAX_TEXT) e.preventDefault();
+    };
+    n.addEventListener('beforeinput', onBefore);
+    return () => n.removeEventListener('beforeinput', onBefore);
+  }, []);
+
+  const read = () => {
+    const n = ref.current;
+    if (!n) return;
+    onText(elRef.current.id, domToMarkup(n));
+    grow();
+  };
+
+  return (
+    <div
+      ref={ref}
+      className="ww-bel-edit"
+      contentEditable
+      suppressContentEditableWarning
+      role="textbox"
+      aria-multiline="true"
+      spellCheck={false}
+      style={{ fontSize: Math.max(16, FS_PX[el.fs]) }}
+      onInput={read}
+      onBlur={() => {
+        // фокус, який щойно забрав сам клік по стікеру, — не вихід із редагування
+        if (Date.now() - startedAt.current < 300) {
+          const n = ref.current;
+          if (n) setTimeout(() => (n.focus(), caretToEnd(n)), 0);
+          return;
+        }
+        onDone();
+      }}
+      onPaste={(e) => {
+        e.preventDefault();
+        const txt = e.clipboardData.getData('text/plain');
+        const n = ref.current;
+        const room = n ? Math.max(0, MAX_TEXT - plainLen(domToMarkup(n))) : 0;
+        if (txt && room) document.execCommand('insertText', false, txt.slice(0, room));
+      }}
+      onDrop={(e) => e.preventDefault()}
+      onKeyDown={(e) => {
+        e.stopPropagation();
+        const mod = e.ctrlKey || e.metaKey;
+        const k = e.key.toLowerCase();
+        if (e.key === 'Escape') {
+          e.preventDefault();
+          onDone();
+        } else if (mod && !e.shiftKey && !e.altKey && (k === 'b' || k === 'i')) {
+          e.preventDefault();
+          document.execCommand(k === 'b' ? 'bold' : 'italic');
+        } else if (e.key === 'Enter' && !e.nativeEvent.isComposing) {
+          e.preventDefault();
+          document.execCommand('insertLineBreak');
+        }
+      }}
+    />
+  );
+}
+
 /** Один елемент; перемальовується лише тоді, коли змінився він сам (React.memo) */
-const Item = memo(function Item({ el, selected, editing, editable, onText, onDone }: ItemProps) {
+const Item = memo(function Item({ el, selected, editing, editable, onText, onDone, onGrow }: ItemProps) {
   const fs = FS_PX[el.fs];
+  const textRef = useRef<HTMLDivElement>(null);
+  const html = useMemo(() => toHtml(el.text), [el.text]);
   const style: React.CSSProperties = {
     transform: `translate(${el.x}px, ${el.y}px)`,
     width: el.w,
@@ -31,26 +157,26 @@ const Item = memo(function Item({ el, selected, editing, editable, onText, onDon
     zIndex: el.z,
     ...(el.t === 'note' ? { height: el.h, background: `var(--ww-note-${el.c})` } : {}),
   };
+
+  // текст не вміщується в стікер (змінили шрифт, ширину) — стікер підростає
+  const noteH = el.t === 'note' ? el.h : 0;
+  useIsoLayoutEffect(() => {
+    if (!editable || editing || el.t !== 'note') return;
+    const n = textRef.current;
+    if (!n) return;
+    const need = Math.ceil(n.scrollHeight) + 20;
+    if (need > noteH + 1) onGrow(el.id, need);
+  }, [editable, editing, el.t, noteH, el.w, el.fs, el.text, el.id, onGrow]);
+
   const body = editing ? (
-    <textarea
-      className="ww-bel-edit"
-      autoFocus
-      value={el.text}
-      maxLength={MAX_TEXT}
-      style={{ fontSize: Math.max(16, fs) }}
-      onChange={(e) => onText(el.id, e.target.value)}
-      onBlur={onDone}
-      onKeyDown={(e) => {
-        if (e.key === 'Escape') onDone();
-        e.stopPropagation();
-      }}
-      onFocus={(e) => e.currentTarget.setSelectionRange(e.currentTarget.value.length, e.currentTarget.value.length)}
-    />
+    <Editor el={el} onText={onText} onDone={onDone} onGrow={onGrow} />
+  ) : html ? (
+    <div ref={textRef} className="ww-bel-text" dangerouslySetInnerHTML={{ __html: html }} />
   ) : (
-    <div className="ww-bel-text">{el.text || (editable ? '…' : '')}</div>
+    <div ref={textRef} className="ww-bel-text">{editable ? '…' : ''}</div>
   );
   return (
-    <div data-el={el.id} className={`ww-bel is-${el.t}${selected ? ' is-sel' : ''}`} style={style}>
+    <div data-el={el.id} className={`ww-bel is-${el.t}${selected ? ' is-sel' : ''}${editing ? ' is-editing' : ''}`} style={style}>
       {body}
       {editable && selected && el.t === 'note' && !editing && <span data-resize="1" className="ww-bel-resize" aria-hidden="true" />}
     </div>
@@ -69,6 +195,12 @@ export type BoardProps = {
   /** commit=false — промітний рух (перетягування), true — фінал (потрапляє в історію) */
   onChange?: (next: BoardEl[], commit: boolean) => void;
   onAddAt?: (x: number, y: number) => void;
+  /** режим «стікер на курсорі» (клавіша N): колір привида; null — вимкнено */
+  placing?: string | null;
+  /** клік на дошці в режимі розміщення (світові координати центру нового стікера) */
+  onPlace?: (x: number, y: number) => void;
+  /** правий клік у режимі розміщення */
+  onCancelPlace?: () => void;
   /** плавний рух в'юпорта (учень «за викладачем») */
   smooth?: boolean;
   /** заборонити рух полем (учень, що слідує за викладачем) */
@@ -81,13 +213,16 @@ export type BoardProps = {
  * Лише pointer events (миша, палець, стилус): 1 вказівник — рух/перетягування, 2 — пінч-масштаб,
  * Shift+рамка — виділення, подвійний клік/тап по порожньому — новий стікер, по елементу — редагування.
  */
-export function Board({ els, vp, onVp, editable, sel, setSel, editing, setEditing, onChange, onAddAt, smooth, lockView, onSize }: BoardProps) {
+export function Board({ els, vp, onVp, editable, sel, setSel, editing, setEditing, onChange, onAddAt, placing, onPlace, onCancelPlace, smooth, lockView, onSize }: BoardProps) {
   const stageRef = useRef<HTMLDivElement>(null);
   const ptrs = useRef(new Map<number, { x: number; y: number }>());
   const gest = useRef<Gesture | null>(null);
   const last = useRef({ id: '', t: 0, x: 0, y: 0 });
-  const live = useRef({ els, vp, sel, editing, onChange, onVp, onAddAt, setSel, setEditing, lockView, editable });
-  live.current = { els, vp, sel, editing, onChange, onVp, onAddAt, setSel, setEditing, lockView, editable };
+  const live = useRef({ els, vp, sel, editing, onChange, onVp, onAddAt, setSel, setEditing, lockView, editable, placing, onPlace, onCancelPlace });
+  live.current = { els, vp, sel, editing, onChange, onVp, onAddAt, setSel, setEditing, lockView, editable, placing, onPlace, onCancelPlace };
+  // «привид» стікера під курсором (локальні координати поля) і остання відома позиція курсора
+  const hover = useRef<{ x: number; y: number } | null>(null);
+  const [ghost, setGhost] = useState<{ x: number; y: number } | null>(null);
   const [band, setBand] = useState<{ x: number; y: number; w: number; h: number } | null>(null);
   const [panning, setPanning] = useState(false);
 
@@ -131,10 +266,31 @@ export function Board({ els, vp, onVp, editable, sel, setSel, editing, setEditin
     gest.current = { kind: 'pan', sx: p.x, sy: p.y, vx: live.current.vp.x, vy: live.current.vp.y, moved: false, onEmpty };
   };
 
+  // вийти з редагування кліком повз поле: браузер не завжди шле blur, тож фіксуємо правку самі
+  const endEdit = () => {
+    const L = live.current;
+    L.setEditing(null);
+    L.onChange?.(L.els, true);
+  };
+
+  useEffect(() => {
+    setGhost(placing ? hover.current : null);
+  }, [placing]);
+
   const down = (e: React.PointerEvent) => {
     const L = live.current;
     const target = e.target as HTMLElement;
-    if (target.tagName === 'TEXTAREA') return;
+    if (L.placing && L.editable) {
+      // режим «стікер на курсорі»: лівий клік кладе стікер, правий скасовує
+      e.preventDefault();
+      if (e.pointerType === 'mouse' && e.button === 2) return L.onCancelPlace?.();
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      const w = toWorld(toLocal(e), L.vp);
+      last.current = { id: '', t: 0, x: 0, y: 0 };
+      L.onPlace?.(w.x, w.y);
+      return;
+    }
+    if (target.closest('[contenteditable="true"]')) return;
     if (e.pointerType === 'mouse' && e.button !== 0 && e.button !== 1) return;
     stageRef.current!.setPointerCapture(e.pointerId);
     const p = toLocal(e);
@@ -161,6 +317,7 @@ export function Board({ els, vp, onVp, editable, sel, setSel, editing, setEditin
     last.current = { id: id ?? '', t: now, x: p.x, y: p.y };
     if (isDbl && L.editable) {
       last.current.t = 0;
+      e.preventDefault();
       if (id) {
         L.setSel(new Set([id]));
         L.setEditing(id);
@@ -186,7 +343,7 @@ export function Board({ els, vp, onVp, editable, sel, setSel, editing, setEditin
         L.setSel(new Set([id]));
         ids = [id];
       }
-      if (L.editing && L.editing !== id) L.setEditing(null);
+      if (L.editing && L.editing !== id) endEdit();
       const orig = new Map(L.els.filter((x) => ids.includes(x.id)).map((x) => [x.id, { x: x.x, y: x.y }]));
       gest.current = { kind: 'drag', ids, sx: p.x, sy: p.y, orig, moved: false };
       return;
@@ -195,13 +352,18 @@ export function Board({ els, vp, onVp, editable, sel, setSel, editing, setEditin
       gest.current = { kind: 'band', sx: p.x, sy: p.y };
       return;
     }
-    if (L.editing) L.setEditing(null);
+    if (L.editing) endEdit();
     if (L.lockView) return;
     startPan(p, !id);
     setPanning(true);
   };
 
   const move = (e: React.PointerEvent) => {
+    if (e.pointerType === 'mouse' || live.current.placing) {
+      const h = toLocal(e);
+      hover.current = h;
+      if (live.current.placing) setGhost(h);
+    }
     if (!ptrs.current.has(e.pointerId)) return;
     const L = live.current;
     const p = toLocal(e);
@@ -278,14 +440,44 @@ export function Board({ els, vp, onVp, editable, sel, setSel, editing, setEditin
     L.setEditing(null);
     L.onChange?.(L.els, true);
   }, []);
+  // кілька стікерів можуть захотіти вирости в одному кадрі — збираємо й застосовуємо разом
+  const growQ = useRef(new Map<string, number>());
+  const onGrow = useCallback((id: string, h: number) => {
+    const q = growQ.current;
+    const first = q.size === 0;
+    q.set(id, h);
+    if (!first) return;
+    queueMicrotask(() => {
+      const L = live.current;
+      const m = new Map(q);
+      q.clear();
+      let changed = false;
+      const next = L.els.map((x) => {
+        const nh = m.get(x.id);
+        if (x.t === 'note' && nh !== undefined && nh > x.h) {
+          changed = true;
+          return { ...x, h: nh };
+        }
+        return x;
+      });
+      if (changed) L.onChange?.(next, false);
+    });
+  }, []);
 
   const sorted = [...els].sort((a, b) => a.z - b.z);
   return (
     <div
       ref={stageRef}
-      className={`ww-board-stage${panning ? ' is-panning' : ''}${editable ? ' is-editable' : ''}`}
+      className={`ww-board-stage${panning ? ' is-panning' : ''}${editable ? ' is-editable' : ''}${placing ? ' is-placing' : ''}`}
       onPointerDown={down}
       onPointerMove={move}
+      onPointerLeave={() => {
+        hover.current = null;
+        setGhost(null);
+      }}
+      onContextMenu={(e) => {
+        if (live.current.placing) e.preventDefault();
+      }}
       onPointerUp={up}
       onPointerCancel={up}
       data-testid="board-stage"
@@ -295,9 +487,17 @@ export function Board({ els, vp, onVp, editable, sel, setSel, editing, setEditin
         style={{ transform: `translate(${vp.x}px, ${vp.y}px) scale(${vp.zoom})` }}
       >
         {sorted.map((el) => (
-          <Item key={el.id} el={el} selected={sel.has(el.id)} editing={editing === el.id} editable={editable} onText={onText} onDone={onDone} />
+          <Item key={el.id} el={el} selected={sel.has(el.id)} editing={editing === el.id} editable={editable} onText={onText} onDone={onDone} onGrow={onGrow} />
         ))}
       </div>
+      {placing && ghost && (
+        <div
+          className="ww-board-ghost"
+          aria-hidden="true"
+          data-testid="board-ghost"
+          style={{ left: ghost.x - 90 * vp.zoom, top: ghost.y - 65 * vp.zoom, width: 180 * vp.zoom, height: 130 * vp.zoom, background: `var(--ww-note-${placing})` }}
+        />
+      )}
       {band && <div className="ww-board-band" style={{ left: band.x, top: band.y, width: band.w, height: band.h }} />}
     </div>
   );

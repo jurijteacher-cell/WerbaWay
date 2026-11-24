@@ -7,6 +7,7 @@ import { SearchPalette } from './SearchPalette';
 import { MenuDrawer, MobileNav, type Tab } from './MobileNav';
 import { LiveBeacon } from './live/LiveBeacon';
 import { StudentDock } from './dock/StudentDock';
+import { TeacherDockHost } from './dock/TeacherDockHost';
 import { GuestClaim } from '@/components/guest/GuestClaim';
 import { VID_COOKIE } from '@/lib/guest';
 import { Mark } from '@/components/Mark';
@@ -63,6 +64,8 @@ export async function TopNav() {
     <>
     {/* учень онлайн з будь-якої сторінки; коли викладач натисне «Дивитися» — у лекції йому видно відповіді учня */}
     {!isTeacher && <LiveBeacon studentId={user.id} name={(profile?.full_name as string | null) ?? undefined} />}
+    {/* викладач: чат (усі розмови або розмова з учнем у класі) і дошка — на кожній сторінці */}
+    {isTeacher && <TeacherDockHost />}
     {!isTeacher && <StudentDock studentId={user.id} name={(profile?.full_name as string | null) ?? undefined} />}
     {/* до цього браузера вже заходив гість за посиланням — переносимо його лекції на цей акаунт */}
     {!isTeacher && !!cookies().get(VID_COOKIE)?.value && <GuestClaim />}

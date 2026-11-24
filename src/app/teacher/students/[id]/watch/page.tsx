@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import { requireTeacher } from '@/app/teacher/results/requireTeacher';
 import { LiveWatch } from '@/components/live/LiveWatch';
 import { classTopic } from '@/lib/live/protocol';
-import { TeacherDock } from '@/components/dock/TeacherDock';
 import { t } from '@/i18n/server';
 import { InfoSticker } from '@/components/ui/InfoSticker';
 
@@ -38,7 +37,6 @@ export default async function WatchStudentPage({ params, searchParams }: { param
         />
       </div>
       <LiveWatch topic={classTopic(params.id)} studentId={params.id} name={name} />
-      <TeacherDock studentId={params.id} name={name} defaultOpen={searchParams.dock === '1'} />
     </main>
   );
 }
