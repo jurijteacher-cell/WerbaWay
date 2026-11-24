@@ -35,7 +35,10 @@ export type DockMsg =
   | { k: 'chat'; m: ChatRow }
   | { k: 'chat-del'; id: string }
   /** одержувач прочитав усе (відправник прибирає позначку «не прочитано») */
-  | { k: 'chat-read'; by: 'teacher' | 'student'; at: string };
+  | { k: 'chat-read'; by: 'teacher' | 'student'; at: string }
+  /** викладач додав / прибрав учня з глядачів дошки */
+  | { k: 'bd-invite' }
+  | { k: 'bd-kick' };
 
 /** Присутність у dock: лише учень — щоб чат знав, у якій він лекції */
 export type DockPresence = {

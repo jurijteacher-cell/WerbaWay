@@ -543,10 +543,10 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
             <span className="ww-dock-toggle-text">{t('Слово')}</span>
           </button>
           {role === 'teacher' && (
-            <button type="button" className="ww-dock-toggle is-soon" aria-disabled="true" onClick={(e) => e.preventDefault()} aria-label={t('Дошка — скоро')} title={t('Дошка — буде в наступному оновленні')} data-testid="dock-board">
+            <a href={`/teacher/board?add=${studentId}`} target="_blank" rel="noopener" className="ww-dock-toggle" aria-label={t('Дошка')} title={t('Дошка: відкрити й додати цього учня глядачем')} data-testid="dock-board">
               <LayoutDashboard size={20} aria-hidden="true" />
               <span className="ww-dock-toggle-text">{t('Дошка')}</span>
-            </button>
+            </a>
           )}
         </div>
       )}
