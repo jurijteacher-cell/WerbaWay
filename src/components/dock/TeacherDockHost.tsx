@@ -15,6 +15,12 @@ const W_MAX = 560;
 const W_DEF = 380;
 const CLASS_RE = /^\/teacher\/students\/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})(?:\/|$)/i;
 
+/** Alt/AltGr+C — це польське «ć»: у полі вводу гаряча клавіша не спрацьовує (так само ctrl+alt = AltGr на Windows) */
+function isTyping(t: EventTarget | null) {
+  const el = t as HTMLElement | null;
+  return !!el && (el.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName));
+}
+
 function readSaved(): { open?: boolean; w?: number; at?: number } {
   try {
     return JSON.parse(localStorage.getItem(LS_KEY) ?? '{}') ?? {};
@@ -191,7 +197,7 @@ function ChatList({
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.altKey && e.code === 'KeyC') {
+      if (e.altKey && e.code === 'KeyC' && !e.ctrlKey && !e.metaKey && !e.getModifierState?.('AltGraph') && !isTyping(e.target)) {
         e.preventDefault();
         toggle(!open);
       } else if (e.key === 'Escape' && open && !desktop && (e.target as Element | null)?.closest?.('.ww-dock')) toggle(false);
