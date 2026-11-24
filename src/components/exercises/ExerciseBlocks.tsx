@@ -86,20 +86,24 @@ export function ExerciseBlocks({
   const [slotFilled, setSlotFilled] = useState<Record<string, string>>({});
   const [usedWords, setUsedWords] = useState<Record<string, boolean>>({});
 
-  const setState = (id: string, state: ItemState) =>
+  /** After this many wrong tries the right answer is shown (and the item stays «not solved»). */
+  const MAX_TRIES = 3;
+
+  const setState = (id: string, state: ItemState) => {
     setStates((s) => ({ ...s, [id]: state }));
+    if (state === 'wrong') {
+      setFails((f) => {
+        const n = (f[id] ?? 0) + 1;
+        if (n >= MAX_TRIES) setShowAns((sa) => ({ ...sa, [id]: true }));
+        return { ...f, [id]: n };
+      });
+    }
+  };
 
   const checkText = (item: BlockItem, given: string) => {
     const expected = String(item.answer ?? '');
     const result = answersMatch(given, expected, item.accept);
     setState(item.id, result.state);
-    if (!result.ok) {
-      setFails((f) => {
-        const n = (f[item.id] ?? 0) + 1;
-        if (n >= 2) setShowAns((sa) => ({ ...sa, [item.id]: true }));
-        return { ...f, [item.id]: n };
-      });
-    }
     return result;
   };
 
@@ -416,22 +420,14 @@ export function ExerciseBlocks({
                         >
                           Sprawdź
                         </button>
-                        {showAns[item.id] ? (
-                          <button
-                            type="button"
-                            className="nb-btn ghost"
-                            onClick={() =>
-                              setValues((val) => ({
-                                ...val,
-                                [item.id]: String(item.answer ?? ''),
-                              }))
-                            }
-                          >
-                            Pokaż
-                          </button>
-                        ) : null}
                       </div>
                     )}
+
+                    {showAns[item.id] && st === 'wrong' && item.answer != null && typeof item.answer !== 'object' ? (
+                      <p className="nb-note" data-role="explanation">
+                        ↳ Poprawna odpowiedź: <span className="pl">{String(item.answer)}</span>. Nie liczy się do wyniku — idziemy dalej.
+                      </p>
+                    ) : null}
 
                     {st === 'correct-no-diacritics' ? (
                       <p className="nb-note" data-role="explanation">

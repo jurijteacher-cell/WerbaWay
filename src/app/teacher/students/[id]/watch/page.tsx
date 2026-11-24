@@ -5,6 +5,7 @@ import { LiveWatch } from '@/components/live/LiveWatch';
 import { classTopic } from '@/lib/live/protocol';
 import { TeacherDock } from '@/components/dock/TeacherDock';
 import { t } from '@/i18n/server';
+import { InfoSticker } from '@/components/ui/InfoSticker';
 
 export const dynamic = 'force-dynamic';
 
@@ -20,12 +21,21 @@ export default async function WatchStudentPage({ params, searchParams }: { param
 
   return (
     <main className="mx-auto max-w-[1400px] px-4 py-6">
-      <div className="mb-4 flex flex-wrap items-baseline gap-x-4 gap-y-1">
+      <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-2">
         <Link href={`/teacher/students/${params.id}`} className="text-sm text-paper-muted hover:text-gold">
           {t('← {name}', { name })}
         </Link>
         <h1 className="font-display text-2xl text-paper">{t('Відповіді учня: {name}', { name })}</h1>
-        <p className="text-sm text-paper-muted">{t('Учень бачить позначку «Викладач бачить твої відповіді». Ти бачиш, що він обирає й вписує у вправах; лекцію гортаєш сам — в учня нічого не змінюється.')}</p>
+        <InfoSticker
+          icon="eye"
+          label={t('Що бачить учень і що бачиш ти')}
+          title={t('Як працює «Дивитися»')}
+          items={[
+            t('Учень бачить стікер «Викладач бачить твої відповіді».'),
+            t('Ти бачиш, що він обирає й вписує у вправах.'),
+            t('Лекцією гортаєш сам — в учня нічого не змінюється.'),
+          ]}
+        />
       </div>
       <LiveWatch topic={classTopic(params.id)} studentId={params.id} name={name} />
       <TeacherDock studentId={params.id} name={name} defaultOpen={searchParams.dock === '1'} />

@@ -287,6 +287,49 @@
     box-shadow: 0 8px 20px -14px rgba(28, 35, 72, .6); pointer-events: none;
   }
   @media (max-width: 1023px) { body:has(.ww-tabbar) .ww-live-badge { bottom: calc(env(safe-area-inset-bottom) + 4.5rem); } }
+  /* ── стікер-підказка (InfoSticker): око/«i» + підказка при наведенні ── */
+  .ww-sticker { position: relative; display: inline-flex; flex: none; }
+  .ww-sticker-btn {
+    display: inline-grid; place-items: center; width: 2.35rem; height: 2.35rem; padding: 0;
+    border-radius: 12px; border: 1.5px solid var(--ww-violet); background: var(--ww-violet-fill); color: var(--ww-violet);
+    box-shadow: 0 3px 0 var(--ww-edge); transform: rotate(-4deg); cursor: help;
+    transition: transform .22s var(--ww-spring), box-shadow .16s var(--ww-ease);
+  }
+  .ww-sticker-btn[data-tone='sky'] { border-color: var(--ww-sky); background: var(--ww-sky-fill); color: var(--ww-sky); }
+  .ww-sticker-btn[data-tone='pink'] { border-color: var(--ww-pink); background: var(--ww-pink-fill); color: var(--ww-pink); }
+  .ww-sticker-btn:hover, .ww-sticker:focus-within .ww-sticker-btn, .ww-sticker[data-open] .ww-sticker-btn {
+    transform: rotate(0deg) translateY(-1px); box-shadow: 0 4px 0 var(--ww-edge);
+  }
+  .ww-sticker-btn svg { width: 1.45rem; height: 1.45rem; overflow: visible; }
+  .ww-eye-lid { transform-box: fill-box; transform-origin: center; animation: ww-eye-blink 5s infinite; }
+  .ww-eye-pupil { animation: ww-eye-look 6s ease-in-out infinite; }
+  .ww-info-ring { transform-box: fill-box; transform-origin: center; animation: ww-info-pulse 2.8s ease-in-out infinite; }
+  @keyframes ww-eye-blink { 0%, 91%, 100% { transform: scaleY(1); } 95% { transform: scaleY(.12); } }
+  @keyframes ww-eye-look { 0%, 100% { transform: translateX(0); } 28% { transform: translateX(2.6px); } 62% { transform: translateX(-2.6px); } }
+  @keyframes ww-info-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.09); } }
+  .ww-sticker-tip {
+    position: absolute; z-index: 80; width: min(21rem, 82vw); padding: .75rem .9rem .8rem; text-align: left;
+    background: var(--ww-paper); border: 1px solid var(--ww-line); border-radius: var(--ww-r-lg);
+    box-shadow: 0 24px 48px -28px rgba(28, 35, 72, .55), 0 2px 0 var(--ww-line); color: var(--ww-ink);
+    opacity: 0; visibility: hidden; transform: translateY(4px); pointer-events: none;
+    transition: opacity .16s var(--ww-ease), transform .16s var(--ww-ease), visibility .16s;
+  }
+  .ww-sticker[data-place='down-start'] .ww-sticker-tip { top: calc(100% + 10px); left: 0; }
+  .ww-sticker[data-place='down-end'] .ww-sticker-tip { top: calc(100% + 10px); right: 0; }
+  .ww-sticker[data-place='up-center'] .ww-sticker-tip { bottom: calc(100% + 10px); left: 50%; margin-left: calc(min(21rem, 82vw) / -2); }
+  .ww-sticker:hover .ww-sticker-tip, .ww-sticker:focus-within .ww-sticker-tip, .ww-sticker[data-open] .ww-sticker-tip {
+    opacity: 1; visibility: visible; transform: none; pointer-events: auto;
+  }
+  .ww-sticker-tip-title { display: block; margin-bottom: .45rem; font: 700 14px/1.3 var(--font-onest), system-ui, sans-serif; }
+  .ww-sticker-tip ol { margin: 0; padding: 0; list-style: none; counter-reset: tip; display: flex; flex-direction: column; gap: .4rem; }
+  .ww-sticker-tip li { counter-increment: tip; display: flex; gap: .55rem; font-size: 13px; line-height: 1.4; color: var(--ww-muted); }
+  .ww-sticker-tip li::before {
+    content: counter(tip); flex: none; display: inline-grid; place-items: center; width: 1.2rem; height: 1.2rem; margin-top: .05rem;
+    border-radius: 999px; background: var(--ww-violet-fill); color: var(--ww-violet); font: 700 11px/1 var(--font-onest), system-ui, sans-serif;
+  }
+  /* позначка «Викладач бачить твої відповіді» — той самий стікер, закріплений унизу */
+  .ww-live-sticker { position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom) + .75rem); z-index: 70; transform: translateX(-50%); }
+  @media (max-width: 1023px) { body:has(.ww-tabbar) .ww-live-sticker { bottom: calc(env(safe-area-inset-bottom) + 4.5rem); } }
   .ww-live-stage {
     position: relative; min-height: 60vh; overflow: auto; border-radius: var(--ww-r-xl);
     border: 1px solid var(--ww-line); background: var(--ww-paper);

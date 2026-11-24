@@ -14,7 +14,6 @@ import { AccessEditor, type ModuleInfo } from '@/components/teacher/AccessEditor
 import { EmailStudent } from '@/components/teacher/EmailStudent';
 import { LiveBadgeFor } from '@/components/live/LiveBadge';
 import { TeacherDock } from '@/components/dock/TeacherDock';
-import { MarkLessonDone } from '@/components/live/MarkLessonDone';
 import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
@@ -96,15 +95,6 @@ export default async function StudentProfilePage({ params, searchParams }: { par
     .filter((x) => x.stats.touched)
     .sort((a, b) => (b.stats.lastAt ?? '').localeCompare(a.stats.lastAt ?? ''));
 
-  // що можна позначити пройденим: спершу те, з чим учень уже працював сам, далі відкриті йому лекції
-  const grantMods = new Set((grants ?? []).filter((g) => g.kind === 'module').map((g) => g.ref as string));
-  const grantLessons = new Set((grants ?? []).filter((g) => g.kind === 'lesson').map((g) => g.ref as string));
-  const soloSet = new Set(solo.map((x) => x.page.slug));
-  const togetherSet = new Set(together.map((x) => x.page!.slug));
-  const open = pages.filter((p) => !doneSet.has(p.slug) && !soloSet.has(p.slug) && ((p.module && grantMods.has(p.module)) || grantLessons.has(p.slug)));
-  // переглянуте за посиланням теж можна потім пройти разом, тому воно в списку для позначення
-  const markable = [...solo.map((x) => x.page), ...viaLink.map((x) => x.page!), ...open];
-  const markList = (markable.length ? markable : pages.filter((p) => !togetherSet.has(p.slug))).map((p) => ({ slug: p.slug, title: p.title }));
 
   const decks = done.map((r) => loadDeck(r.lesson_slug as string)).filter((d): d is NonNullable<typeof d> => !!d && d.words.length > 0);
   const wordsTotal = decks.reduce((n, d) => n + d.words.length, 0);
@@ -205,11 +195,6 @@ export default async function StudentProfilePage({ params, searchParams }: { par
       {userId && (
         <div className="mt-10">
           <Section title={t('Лекції, пройдені разом ({n})', { n: together.length })}>
-            {markList.length > 0 && (
-              <div className="mb-5">
-                <MarkLessonDone studentId={userId} lessons={markList} compact />
-              </div>
-            )}
             {together.length ? (
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 {together.map(({ row, page }) => (
@@ -230,7 +215,7 @@ export default async function StudentProfilePage({ params, searchParams }: { par
               </div>
             ) : (
               <p className="text-paper-muted">
-                {t("Ще жодної. Обери лекцію вище й натисни «Пройдено, задати домашку».")}
+                {t("Ще жодної. Лекція з’явиться тут сама, щойно учень пройде хоча б 20% сторінок.")}
               </p>
             )}
           </Section>

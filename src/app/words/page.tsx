@@ -6,6 +6,7 @@ import { getLocale, t } from '@/i18n/server';
 import { loadDeck } from '@/lib/words';
 import { loadMyDecks } from '@/lib/my-words';
 import { DeckPicker, type DeckInfo } from '@/components/words/DeckPicker';
+import { RefreshOnShow } from '@/components/ui/RefreshOnShow';
 
 export const dynamic = 'force-dynamic';
 
@@ -65,6 +66,7 @@ export default async function WordsPage() {
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-14">
+      <RefreshOnShow />
       <p className="ww-label">Werba Way</p>
       <h1 className="mb-2 font-display text-4xl text-paper">{t("Слова")}</h1>
       <p className="mb-8 max-w-2xl text-paper-muted">

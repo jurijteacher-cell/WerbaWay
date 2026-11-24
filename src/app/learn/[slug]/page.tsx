@@ -34,6 +34,16 @@ export default async function LearnPage({
   // лекцію з кошика викладач може переглянути (відкриває її з /teacher/trash)
   const inTrash = access.isTeacher && access.trashed.has(page.meta.slug);
   if (!canSee(page.meta, access) && !inTrash) notFound();
+  // сторінки, позначені учнем «Пройдено» (викладач і лекція з кошика прогрес не ведуть)
+  let progressDone: string[] | null = null;
+  if (!access.isTeacher && !inTrash) {
+    const { data: rows } = await supabase
+      .from('page_progress')
+      .select('page_key')
+      .eq('student_id', user.id)
+      .eq('lesson_slug', params.slug);
+    progressDone = (rows ?? []).map((r) => r.page_key as string);
+  }
   const p = Number(searchParams?.p);
   return (
     <LessonView
@@ -43,6 +53,7 @@ export default async function LearnPage({
       teacherNotes={access.isTeacher && !!loadTeacherPage(params.slug)}
       canShare={access.isTeacher && !inTrash}
       inTrash={inTrash}
+      progressDone={progressDone}
     />
   );
 }

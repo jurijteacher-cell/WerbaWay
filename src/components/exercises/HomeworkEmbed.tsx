@@ -20,9 +20,13 @@ export function HomeworkEmbed({ data }: Props) {
     feedback: Record<number, boolean | null>;
     writing: string;
     open: Record<number, string>;
+    fails?: Record<number, number>;
   };
-  const prog = usePersistentState<HwSnap>('hw-legacy', { fills: {}, feedback: {}, writing: '', open: {} });
+  const prog = usePersistentState<HwSnap>('hw-legacy', { fills: {}, feedback: {}, writing: '', open: {}, fails: {} });
   const { fills, feedback, writing, open } = prog.value;
+  const fails = prog.value.fails ?? {};
+  const setFails = (fn: (v: Record<number, number>) => Record<number, number>) =>
+    prog.setValue((v) => ({ ...v, fails: fn(v.fails ?? {}) }));
   const setFills = (fn: (v: HwSnap['fills']) => HwSnap['fills']) => prog.setValue((v) => ({ ...v, fills: fn(v.fills) }));
   const setFeedback = (fn: (v: HwSnap['feedback']) => HwSnap['feedback']) =>
     prog.setValue((v) => ({ ...v, feedback: fn(v.feedback) }));
@@ -116,6 +120,7 @@ export function HomeworkEmbed({ data }: Props) {
                       onClick={() => {
                         const ok = normalize(fills[ex.id] ?? '') === normalize(ex.answer ?? '');
                         setFeedback((f) => ({ ...f, [ex.id]: ok }));
+                        if (!ok) setFails((c) => ({ ...c, [ex.id]: (c[ex.id] ?? 0) + 1 }));
                         trackAttempt({
                           blockId: 'gramatyka',
                           itemId: `hw:${ex.id}`,
@@ -132,7 +137,15 @@ export function HomeworkEmbed({ data }: Props) {
                     </button>
                   </div>
                   {fb === true && <Feedback kind="ok"><b>Dobra robota!</b></Feedback>}
-                  {fb === false && <Feedback kind="no">Jeszcze nie. Spróbuj ponownie.</Feedback>}
+                  {fb === false && (fails[ex.id] ?? 0) >= 3 ? (
+                    <Feedback kind="info">
+                      Poprawna odpowiedź: <span className="pl">{ex.answer}</span>. Nie liczy się do wyniku — idziemy dalej.
+                    </Feedback>
+                  ) : fb === false ? (
+                    <Feedback kind="no">
+                      Jeszcze nie. Spróbuj ponownie. {3 - (fails[ex.id] ?? 0) === 1 ? 'Ostatnia próba.' : `Zostały ${3 - (fails[ex.id] ?? 0)} próby.`}
+                    </Feedback>
+                  ) : null}
                 </div>
               );
             }

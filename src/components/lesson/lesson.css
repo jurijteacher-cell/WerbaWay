@@ -491,3 +491,40 @@
   .lp-sheet .lp-prose > .lp-embed { margin-left: calc(.35rem - var(--lp-pad-l)); margin-right: calc(.35rem - var(--lp-pad-r)); }
   .lp-callout-body { min-width: 0; overflow-x: auto; }
 }
+
+/* ── «Пройдено»: позначка внизу сторінки й запит при виході (LessonPager) ── */
+.lp-donebar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .6rem .9rem; margin-top: 1rem; padding: .7rem 1rem;
+  border: 1px solid var(--lp-line); border-radius: 1rem; background: #fff; font-family: var(--font-onest), sans-serif;
+}
+.lp-donebar-q { flex: 1 1 12rem; color: var(--lp-muted, #5d6689); font-size: .95rem; }
+.lp-donebar[data-done] { background: #eaf7f1; border-color: #bfe6d4; color: #0f7a55; }
+.lp-donebar[data-done] b { font-weight: 700; }
+.lp-donebar-check { width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 24; animation: lp-donebar-draw .45s ease-out; }
+.lp-donebar-note { flex: 1 1 100%; color: var(--lp-muted, #5d6689); font-size: .88rem; }
+.lp-donebar-err { flex: 1 1 100%; margin: 0; color: #cf3a57; font-size: .88rem; }
+@keyframes lp-donebar-draw { from { stroke-dashoffset: 24; } to { stroke-dashoffset: 0; } }
+.lp-leave {
+  position: fixed; inset: 0; z-index: 90; display: grid; place-items: center; padding: 1rem;
+  background: rgba(28, 35, 72, .35);
+}
+.lp-leave-card {
+  width: min(28rem, 100%); padding: 1.2rem 1.2rem 1rem; border-radius: 1.5rem; background: #fff;
+  border: 1px solid var(--lp-line); box-shadow: 0 30px 60px -30px rgba(28, 35, 72, .7); font-family: var(--font-onest), sans-serif;
+}
+.lp-leave-title { margin: 0; font-weight: 700; font-size: 1.1rem; color: var(--lp-ink); }
+.lp-leave-text { margin: .35rem 0 .9rem; color: var(--lp-muted, #5d6689); font-size: .95rem; }
+.lp-leave-row { display: flex; flex-wrap: wrap; gap: .5rem; }
+
+/* ── письмова відповідь під текстом лекції (WrittenAnswer) ── */
+.lp-write { margin-top: 1rem; padding: .9rem 1rem 1rem; border: 1px solid var(--lp-line); border-radius: 1rem; background: #fff; font-family: var(--font-onest), sans-serif; }
+.lp-write-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: .15rem .7rem; margin-bottom: .55rem; }
+.lp-write-head b { color: var(--lp-ink); }
+.lp-write-head span { color: var(--lp-muted); font-size: .88rem; }
+.lp-write-text { width: 100%; resize: vertical; font-size: 16px; }
+.lp-write-row { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-top: .6rem; }
+.lp-write-spacer { flex: 1; }
+.lp-write-thumb { position: relative; display: inline-block; }
+.lp-write-thumb img { display: block; height: 2.75rem; width: auto; border-radius: .5rem; border: 1px solid var(--lp-line); }
+.lp-write-thumb button { position: absolute; top: -.4rem; right: -.4rem; width: 1.15rem; height: 1.15rem; border-radius: 999px; border: 1px solid var(--lp-line); background: #fff; color: var(--lp-ink); font-size: .8rem; line-height: 1; cursor: pointer; }
+.lp-write-note { margin: .5rem 0 0; color: #0f7a55; font-size: .88rem; }
