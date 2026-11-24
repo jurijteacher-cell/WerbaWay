@@ -39,6 +39,10 @@ type Props = {
   onBack?: () => void;
 };
 
+type DockSaved = { open?: boolean; w?: number; tab?: 'chat' | 'words'; at?: number };
+/** скільки на телефоні пам'ятаємо, що аркуш був відкритий */
+const SHEET_KEEP_MS = 6 * 3600_000;
+
 function readLS<T>(key: string, fallback: T): T {
   try {
     const v = localStorage.getItem(key);
@@ -137,6 +141,10 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
   openRef.current = open;
   const visRef = useRef(visible);
   visRef.current = visible;
+  useEffect(() => {
+    if (!open) return;
+    writeLS(LS_KEY, { ...readLS<DockSaved>(LS_KEY, {}), tab, at: Date.now() });
+  }, [tab, open]);
   const soundRef = useRef(sound);
   soundRef.current = sound;
   const lessonRef = useRef(lesson);
@@ -149,22 +157,26 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
     const onMq = () => setDesktop(mq.matches);
     onMq();
     mq.addEventListener('change', onMq);
-    const saved = readLS<{ open?: boolean; w?: number }>(LS_KEY, {});
+    const saved = readLS<DockSaved>(LS_KEY, {});
     if (typeof saved.w === 'number') setWidth(Math.min(W_MAX, Math.max(W_MIN, saved.w)));
-    if (!defaultOpen && saved.open && mq.matches) setOpen(true);
+    // панель закриває лише людина: «відкрито» і вкладка переживають перехід між сторінками (на телефоні — 6 год)
+    if (saved.open && (mq.matches || (saved.at ?? 0) > Date.now() - SHEET_KEEP_MS)) {
+      setOpen(true);
+      if (saved.tab === 'words' || saved.tab === 'chat') setTab(saved.tab);
+    }
     setSound(readLS<boolean>(LS_SOUND, role === 'student'));
     return () => mq.removeEventListener('change', onMq);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const persist = (nextOpen: boolean, w = width) => {
-    if (desktop) writeLS(LS_KEY, { open: nextOpen, w });
+    writeLS(LS_KEY, { ...readLS<DockSaved>(LS_KEY, {}), open: nextOpen, w, at: Date.now() });
   };
   const toggle = useCallback(
     (v?: boolean) => {
       setOpen((o) => {
         const n = v ?? !o;
-        if (desktop) writeLS(LS_KEY, { open: n, w: width });
+        writeLS(LS_KEY, { ...readLS<DockSaved>(LS_KEY, {}), open: n, w: width, at: Date.now() });
         return n;
       });
     },
@@ -209,7 +221,7 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
       if (e.altKey && e.code === 'KeyC') {
         e.preventDefault();
         toggle();
-      } else if (e.key === 'Escape' && openRef.current && !desktop) {
+      } else if (e.key === 'Escape' && openRef.current && !desktop && (e.target as Element | null)?.closest?.('.ww-dock')) {
         if (menu) setMenu(null);
         else toggle(false);
       }

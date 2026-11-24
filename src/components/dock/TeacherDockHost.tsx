@@ -15,7 +15,7 @@ const W_MAX = 560;
 const W_DEF = 380;
 const CLASS_RE = /^\/teacher\/students\/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})(?:\/|$)/i;
 
-function readSaved(): { open?: boolean; w?: number } {
+function readSaved(): { open?: boolean; w?: number; at?: number } {
   try {
     return JSON.parse(localStorage.getItem(LS_KEY) ?? '{}') ?? {};
   } catch {
@@ -156,7 +156,7 @@ function ChatList({
     mq.addEventListener('change', on);
     const saved = readSaved();
     if (typeof saved.w === 'number') setWidth(Math.min(W_MAX, Math.max(W_MIN, saved.w)));
-    if (!defaultOpen && saved.open && mq.matches) setOpen(true);
+    if (saved.open && (mq.matches || (saved.at ?? 0) > Date.now() - 6 * 3600_000)) setOpen(true);
     return () => mq.removeEventListener('change', on);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -166,7 +166,7 @@ function ChatList({
       setOpen(v);
       if (v) onReload();
       try {
-        if (desktop) localStorage.setItem(LS_KEY, JSON.stringify({ open: v, w: widthRef.current }));
+        localStorage.setItem(LS_KEY, JSON.stringify({ ...readSaved(), open: v, w: widthRef.current, at: Date.now() }));
       } catch {
         /* приватний режим */
       }
@@ -194,7 +194,7 @@ function ChatList({
       if (e.altKey && e.code === 'KeyC') {
         e.preventDefault();
         toggle(!open);
-      } else if (e.key === 'Escape' && open && !desktop) toggle(false);
+      } else if (e.key === 'Escape' && open && !desktop && (e.target as Element | null)?.closest?.('.ww-dock')) toggle(false);
     };
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);
