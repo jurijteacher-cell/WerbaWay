@@ -136,6 +136,30 @@ export function LessonPager({
     [doGo, idx, pages.length, settled]
   );
 
+  // сторінка, що ≥ 15 с була на екрані, рахується в 40 % для автодомашки (клас: викладач гортає учня),
+  // але в «Пройдено» не потрапляє — це робить лише кнопка
+  const seenRef = useRef<Set<string>>(new Set());
+  useEffect(() => {
+    if (!tracked || !curKey || doneKeys.has(curKey) || seenRef.current.has(curKey)) return;
+    const id = setTimeout(async () => {
+      if (document.visibilityState !== 'visible') return;
+      seenRef.current.add(curKey);
+      try {
+        const supabase = createClient();
+        const { data } = await supabase.rpc('mark_page_seen', {
+          p_slug: slug,
+          p_page_key: curKey,
+          p_total: pagesRef.current.length,
+          p_has_hw: hasHomework,
+        });
+        if ((data as { homework_new?: boolean } | null)?.homework_new) setHwNew(true);
+      } catch {
+        seenRef.current.delete(curKey);
+      }
+    }, 15000);
+    return () => clearTimeout(id);
+  }, [tracked, curKey, doneKeys, slug, hasHomework]);
+
   const markDone = useCallback(
     async (key: string): Promise<boolean> => {
       if (!tracked) return true;

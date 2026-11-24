@@ -41,7 +41,8 @@ export default async function LearnPage({
       .from('page_progress')
       .select('page_key')
       .eq('student_id', user.id)
-      .eq('lesson_slug', params.slug);
+      .eq('lesson_slug', params.slug)
+      .eq('via', 'done');
     progressDone = (rows ?? []).map((r) => r.page_key as string);
   }
   const p = Number(searchParams?.p);
