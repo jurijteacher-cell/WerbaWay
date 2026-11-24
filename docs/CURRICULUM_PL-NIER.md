@@ -266,7 +266,7 @@
 |---|---|---|---|
 | 01 | `pl-nier-01-pierwszy-kontakt` | Dzwonię w sprawie ogłoszenia | ✅ на сайті 21.11.2026 (main 757d6dd; embed ✓ --remote; i18n ru/pl/en ✓); Notion — не створювався; діагностику ще не проведено |
 | 02 | `pl-nier-02-opis-i-ogloszenie` | Mieszkanie z duszą | ✅ на сайті 23.11.2026 (embed ✓; i18n ru/pl/en ✓; без слухання) |
-| 03 | `pl-nier-03-czas-terazniejszy` | Mój dzień w biurze | ✅ на сайті 24.11.2026 (embed ✓ щойно запушено; i18n ru/pl/en ✓) |
+| 03 | `pl-nier-03-czas-terazniejszy` | Mój dzień w biurze | ✅ на сайті 24.11.2026 (main c0a77fe; embed ✓ --remote; i18n ru/pl/en ✓; аудіо читання ready) |
 | 04–12 | _див. §3a_ | граматичний мінімум | — |
 | 13 | `pl-nier-13-prezentacja-i-obiekcje` | Zapraszam do środka | — (було 03) |
 | 14 | `pl-nier-14-negocjacje` | Ostatnie słowo | — (було 04) |
