@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated": "2026-11-16",
+  "updated": "2026-11-24",
   "note": "Канонічний реєстр grammar_point Werba Way. Джерело істини — claude/GRAMMAR_REGISTRY.md і таблиці course_grammar_points / course_grammar_aliases у Supabase. Цей файл — копія для перевірки в CI.",
   "service": [
     "slownictwo",
@@ -491,6 +491,11 @@
       "level": "B1",
       "pl": "Pozycja mi, go, cię w zdaniu",
       "uk": "позиція енклітик"
+    },
+    "zaimek-siebie": {
+      "level": "B1",
+      "pl": "Siebie, sobie, sobą; sobie nawzajem, się wzajemnie",
+      "uk": "займенник siebie; взаємність"
     },
     "ktory-przypadki": {
       "level": "B1",
