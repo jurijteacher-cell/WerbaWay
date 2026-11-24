@@ -43,6 +43,12 @@ type DockSaved = { open?: boolean; w?: number; tab?: 'chat' | 'words'; at?: numb
 /** скільки на телефоні пам'ятаємо, що аркуш був відкритий */
 const SHEET_KEEP_MS = 6 * 3600_000;
 
+/** Alt/AltGr+C — це польське «ć»: у полі вводу гаряча клавіша не спрацьовує (так само ctrl+alt = AltGr на Windows) */
+function isTyping(t: EventTarget | null) {
+  const el = t as HTMLElement | null;
+  return !!el && (el.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName));
+}
+
 function readLS<T>(key: string, fallback: T): T {
   try {
     const v = localStorage.getItem(key);
@@ -218,7 +224,7 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
   /* ── гарячі клавіші ── */
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.altKey && e.code === 'KeyC') {
+      if (e.altKey && e.code === 'KeyC' && !e.ctrlKey && !e.metaKey && !e.getModifierState?.('AltGraph') && !isTyping(e.target)) {
         e.preventDefault();
         toggle();
       } else if (e.key === 'Escape' && openRef.current && !desktop && (e.target as Element | null)?.closest?.('.ww-dock')) {
