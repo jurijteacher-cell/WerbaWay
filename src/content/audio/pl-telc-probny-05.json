@@ -1,0 +1,465 @@
+{
+ "lesson_id": "pl-telc-probny-05",
+ "model": "eleven_v4",
+ "voices": {
+  "NAR": "uPeXyAUvljDRLYs8zgwt",
+  "W1": "mQq2zdGT1zEfDbh8W95l",
+  "W2": "gHGjEjdr2LBds0XHTsvg",
+  "W3": "hq1SDzCP9HutY7Ea9PAW",
+  "W4": "2AI3SLYKkKZsvZEiHd3D",
+  "W5": "AwWFxYalAvioLDuxV9WV",
+  "M1": "p0KQaxqGrT7xcRWSJiHp",
+  "M2": "bwhymd1UcFEihyvPSEoR",
+  "M3": "ihTsqWCgsTDbANOCuZD2",
+  "M4": "e3WIS9BUv6I0HZ9v36L2"
+ },
+ "files": {
+  "pl-telc-probny-05/telc-sluchanie-1.mp3": {
+   "lines": [
+    {
+     "who": "NAR",
+     "text": "Rozumienie ze słuchu, część pierwsza. Za chwilę usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz. Najpierw przykład."
+    },
+    {
+     "who": "W2",
+     "text": "Dzień dobry, mówi Ewa Nowicka z przychodni „Zdrowie” przy ulicy Polnej. Przypominam, że jutro o dziewiątej trzydzieści ma pani wizytę u doktora Kamińskiego. Proszę przyjść dziesięć minut wcześniej i zabrać wyniki badań krwi. Jeśli nie może pani przyjść, proszę do nas zadzwonić. Do widzenia.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer jeden.",
+     "gap": 2.5
+    },
+    {
+     "who": "M2",
+     "text": "Dzień dobry, Wójcik z administracji osiedla „Zielone Tarasy”. W poniedziałek od ósmej rano będziemy malować klatkę schodową w pana budynku. Prace potrwają trzy dni. W tym czasie prosimy nie zostawiać na korytarzu butów, wózków ani rowerów, bo malarze muszą mieć wolne przejście. Winda będzie działać normalnie. Dziękuję.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer dwa.",
+     "gap": 2.5
+    },
+    {
+     "who": "W4",
+     "text": "Dzień dobry, tu rejestracja gabinetu stomatologicznego „Uśmiech”. Niestety doktor Lis jest chora i w czwartek nie przyjmuje. Możemy zaproponować wizytę w piątek o szesnastej albo w przyszły wtorek rano. Proszę oddzwonić i wybrać termin. Jeśli bardzo boli pana ząb, w czwartek do dwunastej przyjmuje doktor Malec, ale tylko w nagłych przypadkach.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer trzy.",
+     "gap": 2.5
+    },
+    {
+     "who": "M1",
+     "text": "Hej Marta, tu Kuba. Mam dwa bilety na koncert w sobotę, ale Ania nie może iść, bo ma dyżur w szpitalu. Chcesz pójść ze mną? Koncert zaczyna się o dwudziestej, ale chcę być wcześniej, bo nie ma miejsc siedzących. Za bilet nic nie płacisz — wygrałem je w konkursie w radiu. Daj znać do jutra, bo inaczej oddam bilet bratu.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer cztery.",
+     "gap": 2.5
+    },
+    {
+     "who": "W5",
+     "text": "Dzień dobry, mówi Olga z klubu fitness „Forma”. Pani karnet kończy się w przyszłą niedzielę. Jeśli przedłuży go pani do piątku, dostanie pani dziesięć procent zniżki na następny miesiąc. I jeszcze jedna informacja: od grudnia zajęcia z jogi przenosimy z sali numer dwa do sali numer pięć, na pierwszym piętrze. Zapraszamy!",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Koniec pierwszej części Rozumienia ze słuchu.",
+     "gap": 2.5
+    }
+   ]
+  },
+  "pl-telc-probny-05/telc-sluchanie-2.mp3": {
+   "lines": [
+    {
+     "who": "NAR",
+     "text": "Rozumienie ze słuchu, część druga. Za chwilę usłyszysz pięć dialogów. Na temat każdego dialogu napisano po dwa zdania. Najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe. Następnie zdecyduj, które zdanie jest najbardziej trafne: a, b czy c. Każdy dialog usłyszysz jeden raz."
+    },
+    {
+     "who": "NAR",
+     "text": "Numer pięć i sześć.",
+     "gap": 2.0
+    },
+    {
+     "who": "M3",
+     "text": "Dzień dobry, poproszę coś na kaszel. Kaszlę od trzech dni, najbardziej w nocy.",
+     "gap": 0.7
+    },
+    {
+     "who": "W1",
+     "text": "Kaszel jest suchy czy mokry?",
+     "gap": 0.45
+    },
+    {
+     "who": "M3",
+     "text": "Suchy. I trochę boli mnie gardło.",
+     "gap": 0.45
+    },
+    {
+     "who": "W1",
+     "text": "Polecam ten syrop. Dorośli biorą jedną łyżkę trzy razy dziennie, po jedzeniu. Do tego tabletki do ssania na gardło.",
+     "gap": 0.45
+    },
+    {
+     "who": "M3",
+     "text": "Czy syrop mogę brać razem z lekami na ciśnienie?",
+     "gap": 0.45
+    },
+    {
+     "who": "W1",
+     "text": "Tak, ten jest bezpieczny. Ale jeśli kaszel nie przejdzie za tydzień, musi pan iść do lekarza.",
+     "gap": 0.45
+    },
+    {
+     "who": "M3",
+     "text": "Dobrze. Ile płacę?",
+     "gap": 0.45
+    },
+    {
+     "who": "W1",
+     "text": "Syrop dwadzieścia cztery złote, tabletki szesnaście. Razem czterdzieści.",
+     "gap": 0.45
+    },
+    {
+     "who": "NAR",
+     "text": "Numer siedem i osiem.",
+     "gap": 2.0
+    },
+    {
+     "who": "W3",
+     "text": "Dzień dobry, chciałabym założyć konto. Niedawno przyjechałam do Polski i od miesiąca tu pracuję.",
+     "gap": 0.7
+    },
+    {
+     "who": "M2",
+     "text": "Oczywiście. Potrzebuję paszportu i numeru PESEL. Ma pani PESEL?",
+     "gap": 0.45
+    },
+    {
+     "who": "W3",
+     "text": "Jeszcze nie. Wniosek złożyłam w urzędzie w zeszłym tygodniu.",
+     "gap": 0.45
+    },
+    {
+     "who": "M2",
+     "text": "Konto możemy otworzyć z samym paszportem, ale bez PESEL-u nie wydamy pani karty kredytowej. Kartę debetową dostanie pani od razu.",
+     "gap": 0.45
+    },
+    {
+     "who": "W3",
+     "text": "Debetowa wystarczy. Czy konto jest płatne?",
+     "gap": 0.45
+    },
+    {
+     "who": "M2",
+     "text": "Jest bezpłatne, jeśli co miesiąc wpływa na nie co najmniej tysiąc złotych. W innym wypadku opłata wynosi dziesięć złotych miesięcznie.",
+     "gap": 0.45
+    },
+    {
+     "who": "W3",
+     "text": "Na konto będzie wpływać pensja, więc wszystko w porządku.",
+     "gap": 0.45
+    },
+    {
+     "who": "NAR",
+     "text": "Numer dziewięć i dziesięć.",
+     "gap": 2.0
+    },
+    {
+     "who": "M4",
+     "text": "Salon „Nożyczki”, dzień dobry.",
+     "gap": 0.7
+    },
+    {
+     "who": "W5",
+     "text": "Dzień dobry, chciałabym się zapisać na strzyżenie i farbowanie. Najlepiej w sobotę.",
+     "gap": 0.45
+    },
+    {
+     "who": "M4",
+     "text": "W sobotę wszystko jest już zajęte. Mogę zaproponować piątek o czternastej albo środę o dziesiątej.",
+     "gap": 0.45
+    },
+    {
+     "who": "W5",
+     "text": "W piątek pracuję do szesnastej… Środa jest dobra, mam wtedy wolne.",
+     "gap": 0.45
+    },
+    {
+     "who": "M4",
+     "text": "Świetnie. Strzyżenie z farbowaniem trwa około dwóch godzin. Proszę nie myć włosów w dniu wizyty.",
+     "gap": 0.45
+    },
+    {
+     "who": "W5",
+     "text": "Dobrze. A ile to kosztuje?",
+     "gap": 0.45
+    },
+    {
+     "who": "M4",
+     "text": "Od dwustu pięćdziesięciu złotych, to zależy od długości włosów.",
+     "gap": 0.45
+    },
+    {
+     "who": "NAR",
+     "text": "Numer jedenaście i dwanaście.",
+     "gap": 2.0
+    },
+    {
+     "who": "W2",
+     "text": "Paweł, jedziemy w sobotę w góry, tak jak planowaliśmy?",
+     "gap": 0.7
+    },
+    {
+     "who": "M1",
+     "text": "Słyszałaś prognozę? W sobotę ma padać cały dzień, a wyżej nawet śnieg.",
+     "gap": 0.45
+    },
+    {
+     "who": "W2",
+     "text": "Szkoda… To może przełożymy na niedzielę?",
+     "gap": 0.45
+    },
+    {
+     "who": "M1",
+     "text": "W niedzielę ma być słońce, ale ja mam wtedy urodziny babci. Nie mogę odmówić.",
+     "gap": 0.45
+    },
+    {
+     "who": "W2",
+     "text": "A za tydzień? Wtedy jest długi weekend.",
+     "gap": 0.45
+    },
+    {
+     "who": "M1",
+     "text": "Dobry pomysł. Tylko trzeba zmienić rezerwację w schronisku. Zadzwonisz?",
+     "gap": 0.45
+    },
+    {
+     "who": "W2",
+     "text": "Zadzwonię jeszcze dziś. A ty kup bilety na pociąg, dobrze?",
+     "gap": 0.45
+    },
+    {
+     "who": "M1",
+     "text": "Jasne, kupię wieczorem.",
+     "gap": 0.45
+    },
+    {
+     "who": "NAR",
+     "text": "Numer trzynaście i czternaście.",
+     "gap": 2.0
+    },
+    {
+     "who": "M3",
+     "text": "Pani Ewo, mam prośbę. Czy w przyszłym tygodniu mogę zamienić się zmianą z Kamilem? On chce pracować rano, a ja wieczorem.",
+     "gap": 0.7
+    },
+    {
+     "who": "W4",
+     "text": "W którym dniu?",
+     "gap": 0.45
+    },
+    {
+     "who": "M3",
+     "text": "W środę. Rano mam wizytę w urzędzie, składam wniosek o kartę pobytu.",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "Rozumiem. Nie mam nic przeciwko, ale Kamil musi to potwierdzić mailem. Wtedy zmienię grafik.",
+     "gap": 0.45
+    },
+    {
+     "who": "M3",
+     "text": "Kamil już się zgodził, napisze jeszcze dziś.",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "Dobrze. Pamięta pan, że w piątek jest szkolenie z bezpieczeństwa? Obowiązkowe dla wszystkich.",
+     "gap": 0.45
+    },
+    {
+     "who": "M3",
+     "text": "Pamiętam, będę.",
+     "gap": 0.45
+    },
+    {
+     "who": "NAR",
+     "text": "Koniec drugiej części Rozumienia ze słuchu.",
+     "gap": 2.0
+    }
+   ]
+  },
+  "pl-telc-probny-05/telc-sluchanie-3.mp3": {
+   "lines": [
+    {
+     "who": "NAR",
+     "text": "Rozumienie ze słuchu, część trzecia. Za chwilę usłyszysz wywiad. Najpierw przeczytaj treść punktów od piętnastego do dwudziestego. Masz na to minutę."
+    },
+    {
+     "who": "NAR",
+     "text": "Teraz posłuchaj wywiadu. Usłyszysz go jeden raz.",
+     "gap": 60.0
+    },
+    {
+     "who": "W1",
+     "text": "Dzień dobry, w audycji „Nigdy nie jest za późno” gościmy dziś panią Barbarę Sowę, emerytowaną nauczycielkę geografii, która w wieku sześćdziesięciu jeden lat przebiegła swój pierwszy maraton. Dzień dobry.",
+     "gap": 0.7
+    },
+    {
+     "who": "W4",
+     "text": "Dzień dobry, bardzo mi miło.",
+     "gap": 0.45
+    },
+    {
+     "who": "W1",
+     "text": "Jak to się zaczęło? Biegała pani w młodości?",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "Wcale nie! W szkole nie znosiłam wuefu. Zaczęłam biegać pięć lat temu, kiedy przeszłam na emeryturę. Lekarz powiedział mi, że mam za wysokie ciśnienie i muszę się więcej ruszać. Najpierw chodziłam z kijkami, potem zaczęłam powoli truchtać.",
+     "gap": 0.45
+    },
+    {
+     "who": "W1",
+     "text": "A skąd pomysł na maraton?",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "Mój wnuk biegł maraton w Poznaniu. Stałam przy trasie i patrzyłam na tych ludzi — byli zmęczeni, ale szczęśliwi. Pomyślałam: ja też chcę to poczuć. Wnuk najpierw się śmiał, ale potem pomógł mi przygotować plan treningów.",
+     "gap": 0.45
+    },
+    {
+     "who": "W1",
+     "text": "Jak wyglądały przygotowania?",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "Trenowałam cztery razy w tygodniu, przez prawie rok. Najtrudniejsze były zimowe poranki — ciemno, zimno, ślisko. Ale biegałam z grupą z osiedla, więc nie było wymówek. Raz w tygodniu chodziłam też na basen, żeby kolana odpoczęły.",
+     "gap": 0.45
+    },
+    {
+     "who": "W1",
+     "text": "A sam bieg?",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "Do trzydziestego kilometra było dobrze. Potem zaczęły mnie boleć nogi i myślałam, że zejdę z trasy. Uratowała mnie nieznajoma kobieta, która biegła obok. Powiedziała: „Pani da radę, biegniemy razem do mety”. I dobiegłyśmy — po pięciu godzinach i dwunastu minutach.",
+     "gap": 0.45
+    },
+    {
+     "who": "W1",
+     "text": "Co zmieniło się w pani życiu?",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "Ciśnienie mam w normie, lepiej śpię, a do tego mam mnóstwo nowych znajomych. Z tą kobietą z trasy przyjaźnimy się do dziś.",
+     "gap": 0.45
+    },
+    {
+     "who": "W1",
+     "text": "Co poradziłaby pani słuchaczom, którzy chcą zacząć?",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "Żeby nie zaczynali od maratonu! Najpierw spacer, potem pięć kilometrów. I najważniejsze: najpierw badania u lekarza, a dopiero potem plan treningów.",
+     "gap": 0.45
+    },
+    {
+     "who": "W1",
+     "text": "Dziękuję za rozmowę.",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "Dziękuję.",
+     "gap": 0.45
+    },
+    {
+     "who": "NAR",
+     "text": "Koniec trzeciej części Rozumienia ze słuchu.",
+     "gap": 2.0
+    }
+   ]
+  },
+  "pl-telc-probny-05/telc-sluchanie-4.mp3": {
+   "lines": [
+    {
+     "who": "NAR",
+     "text": "Rozumienie ze słuchu, część czwarta. Usłyszysz audycję, w której ludzie wyrażają opinie na dany temat. Które zdanie, od a do f, najlepiej pasuje do opinii dwadzieścia jeden, dwadzieścia dwa i dwadzieścia trzy? Masz pół minuty na przeczytanie zdań."
+    },
+    {
+     "who": "NAR",
+     "text": "Teraz posłuchaj audycji.",
+     "gap": 30.0
+    },
+    {
+     "who": "M4",
+     "text": "Dzień dobry, w programie „Głos słuchaczy” pytamy dziś: czy pies w mieście to dobry pomysł? Czekamy na państwa telefony.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Przykład.",
+     "gap": 1.5
+    },
+    {
+     "who": "W3",
+     "text": "Mam psa od dziesięciu lat i dzięki niemu codziennie chodzę na długie spacery, niezależnie od pogody. Bez niego siedziałabym cały dzień przed telewizorem. Pies to najlepszy trener.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer dwadzieścia jeden.",
+     "gap": 1.5
+    },
+    {
+     "who": "M1",
+     "text": "Mieszkam w bloku na ósmym piętrze. Sąsiedzi mają dwa duże psy, które szczekają, kiedy właściciele są w pracy. Rozumiem, że ludzie kochają zwierzęta, ale w małym mieszkaniu duży pies się męczy, a sąsiedzi razem z nim.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer dwadzieścia dwa.",
+     "gap": 1.5
+    },
+    {
+     "who": "W2",
+     "text": "Pracuję w schronisku. Co roku po świętach przychodzą do nas szczeniaki, które ktoś dostał w prezencie. Proszę, zanim kupicie psa, pomyślcie, czy macie dla niego czas na następne piętnaście lat. To nie jest zabawka na jeden miesiąc.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer dwadzieścia trzy.",
+     "gap": 1.5
+    },
+    {
+     "who": "M3",
+     "text": "Mnie najbardziej denerwuje, że niektórzy nie sprzątają po swoich psach. W parku przy moim domu dzieci nie mogą grać w piłkę na trawie. Straż miejska powinna częściej dawać mandaty, wtedy ludzie by się nauczyli.",
+     "gap": 0.7
+    },
+    {
+     "who": "M4",
+     "text": "Dziękujemy za wszystkie telefony. Do usłyszenia za tydzień!",
+     "gap": 1.5
+    },
+    {
+     "who": "NAR",
+     "text": "Koniec Rozumienia ze słuchu. Dziękujemy za uwagę.",
+     "gap": 1.5
+    }
+   ]
+  }
+ }
+}

@@ -101,7 +101,11 @@ export function ensureAudio(f: ResolvedFile): Promise<string> {
     if (await exists(key)) return publicUrl(key)!;
     const apiKey = elevenKey();
     if (!apiKey) throw new Error('ELEVENLABS key is not configured');
-    const clips = await pool(f.clips, 3, (c) => tts(apiKey, c.voiceId, c.text, f.model));
+    // однакова репліка (діалог, який на іспиті звучить двічі) озвучується один раз — звучить ідентично й коштує вдвічі менше
+    const uniq = [...new Map(f.clips.map((c) => [`${c.voiceId}|${c.text}`, c])).values()];
+    const done = await pool(uniq, 3, (c) => tts(apiKey, c.voiceId, c.text, f.model));
+    const byKey = new Map(uniq.map((c, i) => [`${c.voiceId}|${c.text}`, done[i]]));
+    const clips = f.clips.map((c) => byKey.get(`${c.voiceId}|${c.text}`)!);
     const { mp3 } = joinWithGaps(
       clips,
       f.clips.slice(1).map((c) => c.gapBefore)

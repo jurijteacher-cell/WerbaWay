@@ -1,0 +1,806 @@
+{
+ "lesson_id": "pl-b1-probny-06",
+ "model": "eleven_v4",
+ "voices": {
+  "NAR": "uPeXyAUvljDRLYs8zgwt",
+  "W1": "mQq2zdGT1zEfDbh8W95l",
+  "W2": "gHGjEjdr2LBds0XHTsvg",
+  "W3": "hq1SDzCP9HutY7Ea9PAW",
+  "W4": "2AI3SLYKkKZsvZEiHd3D",
+  "W5": "AwWFxYalAvioLDuxV9WV",
+  "M1": "p0KQaxqGrT7xcRWSJiHp",
+  "M2": "bwhymd1UcFEihyvPSEoR",
+  "M3": "ihTsqWCgsTDbANOCuZD2",
+  "M4": "e3WIS9BUv6I0HZ9v36L2"
+ },
+ "files": {
+  "pl-b1-probny-06/b1-sluchanie-1.mp3": {
+   "lines": [
+    {
+     "who": "NAR",
+     "text": "Rozumienie ze słuchu. Zadanie pierwsze. Proszę wysłuchać nagrań i zaznaczyć prawidłową odpowiedź: a, b albo c. Każde nagranie usłyszysz jeden raz. Przykład."
+    },
+    {
+     "who": "W1",
+     "text": "Poproszę dwa bilety ulgowe na seans o dwudziestej. Najlepiej w środkowym rzędzie.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer jeden.",
+     "gap": 3.0
+    },
+    {
+     "who": "M1",
+     "text": "Przepraszam, że dzwonię tak późno, ale wcześniej naprawdę nie mogłem.",
+     "say": "[politely] Przepraszam, że dzwonię tak późno, ale wcześniej naprawdę nie mogłem.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer dwa.",
+     "gap": 3.0
+    },
+    {
+     "who": "M2",
+     "text": "Proszę się nie ruszać i głęboko oddychać. Jeszcze chwileczkę… Dziękuję, może się pan już ubrać.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer trzy.",
+     "gap": 3.0
+    },
+    {
+     "who": "M4",
+     "text": "Prosimy o wyłączenie telefonów komórkowych. Spektakl rozpocznie się za pięć minut.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer cztery.",
+     "gap": 3.0
+    },
+    {
+     "who": "M3",
+     "text": "Na twoim miejscu wziąłbym parasol. W radiu mówili, że po południu będzie lało.",
+     "say": "[warmly] Na twoim miejscu wziąłbym parasol. W radiu mówili, że po południu będzie lało.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer pięć.",
+     "gap": 3.0
+    },
+    {
+     "who": "W3",
+     "text": "Gratuluję! Wiedziałam, że zdasz ten egzamin za pierwszym razem!",
+     "say": "[excited] Gratuluję! Wiedziałam, że zdasz ten egzamin za pierwszym razem!",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer sześć.",
+     "gap": 3.0
+    },
+    {
+     "who": "M1",
+     "text": "Poproszę pięć znaczków na listy do Niemiec. I chciałbym jeszcze wysłać ten list jako polecony.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer siedem.",
+     "gap": 3.0
+    },
+    {
+     "who": "W2",
+     "text": "Nie, nie pożyczę ci samochodu. Ostatnim razem oddałeś go z pustym bakiem.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer osiem.",
+     "gap": 3.0
+    },
+    {
+     "who": "M3",
+     "text": "Bilety do kontroli, proszę. Niestety, pana bilet nie jest skasowany.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer dziewięć.",
+     "gap": 3.0
+    },
+    {
+     "who": "W4",
+     "text": "No nie! Znowu ktoś zaparkował na moim miejscu! Ile razy można to powtarzać?",
+     "say": "[angry] No nie! Znowu ktoś zaparkował na moim miejscu! Ile razy można to powtarzać?",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer dziesięć.",
+     "gap": 3.0
+    },
+    {
+     "who": "W1",
+     "text": "Tę samą sukienkę, ale w rozmiarze trzydzieści osiem? Zaraz sprawdzę, czy mamy ją na zapleczu.",
+     "say": "[politely] Tę samą sukienkę, ale w rozmiarze trzydzieści osiem? Zaraz sprawdzę, czy mamy ją na zapleczu.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer jedenaście.",
+     "gap": 3.0
+    },
+    {
+     "who": "W5",
+     "text": "Może zostaniesz na kolacji? Zrobiłam pierogi, starczy dla wszystkich.",
+     "say": "[warmly] Może zostaniesz na kolacji? Zrobiłam pierogi, starczy dla wszystkich.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer dwanaście.",
+     "gap": 3.0
+    },
+    {
+     "who": "M2",
+     "text": "Czy mógłby pan mówić trochę wolniej? Nie wszystko rozumiem.",
+     "say": "[politely] Czy mógłby pan mówić trochę wolniej? Nie wszystko rozumiem.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer trzynaście.",
+     "gap": 3.0
+    },
+    {
+     "who": "M1",
+     "text": "Ojej, to już jedenasta? Nawet nie zauważyłem, kiedy minął ten czas!",
+     "say": "[surprised] Ojej, to już jedenasta? Nawet nie zauważyłem, kiedy minął ten czas!",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Numer czternaście.",
+     "gap": 3.0
+    },
+    {
+     "who": "W2",
+     "text": "Owoce trzeba zważyć samemu. Waga stoi obok bananów, a naklejkę proszę przykleić na torebkę.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Koniec zadania pierwszego.",
+     "gap": 3.0
+    }
+   ]
+  },
+  "pl-b1-probny-06/b1-sluchanie-2.mp3": {
+   "lines": [
+    {
+     "who": "NAR",
+     "text": "Zadanie drugie. Proszę wysłuchać siedmiu dialogów i zaznaczyć prawidłową odpowiedź. Każdy dialog usłyszysz dwa razy. Przykład."
+    },
+    {
+     "who": "W2",
+     "text": "Kupiłeś chleb?",
+     "gap": 0.7
+    },
+    {
+     "who": "M2",
+     "text": "Nie, piekarnia była już zamknięta. Kupiłem bułki na stacji benzynowej.",
+     "gap": 0.45
+    },
+    {
+     "who": "W2",
+     "text": "Dobrze, na śniadanie wystarczą.",
+     "gap": 0.45
+    },
+    {
+     "who": "W2",
+     "text": "Kupiłeś chleb?",
+     "gap": 2.0
+    },
+    {
+     "who": "M2",
+     "text": "Nie, piekarnia była już zamknięta. Kupiłem bułki na stacji benzynowej.",
+     "gap": 0.45
+    },
+    {
+     "who": "W2",
+     "text": "Dobrze, na śniadanie wystarczą.",
+     "gap": 0.45
+    },
+    {
+     "who": "NAR",
+     "text": "Dialog jeden.",
+     "gap": 2.0
+    },
+    {
+     "who": "W5",
+     "text": "Dzień dobry, chciałabym się zapisać do dermatologa.",
+     "gap": 0.7
+    },
+    {
+     "who": "W1",
+     "text": "Najbliższy wolny termin jest za trzy tygodnie, w czwartek. Ale jeśli ktoś odwoła wizytę, możemy do pani zadzwonić.",
+     "gap": 0.45
+    },
+    {
+     "who": "W5",
+     "text": "To proszę mnie zapisać na ten czwartek. A gdyby coś zwolniło się wcześniej, proszę dać mi znać.",
+     "gap": 0.45
+    },
+    {
+     "who": "W5",
+     "text": "Dzień dobry, chciałabym się zapisać do dermatologa.",
+     "gap": 2.0
+    },
+    {
+     "who": "W1",
+     "text": "Najbliższy wolny termin jest za trzy tygodnie, w czwartek. Ale jeśli ktoś odwoła wizytę, możemy do pani zadzwonić.",
+     "gap": 0.45
+    },
+    {
+     "who": "W5",
+     "text": "To proszę mnie zapisać na ten czwartek. A gdyby coś zwolniło się wcześniej, proszę dać mi znać.",
+     "gap": 0.45
+    },
+    {
+     "who": "NAR",
+     "text": "Dialog dwa.",
+     "gap": 2.0
+    },
+    {
+     "who": "W3",
+     "text": "Idziesz z nami na lunch?",
+     "gap": 0.7
+    },
+    {
+     "who": "M1",
+     "text": "Chętnie, tylko nie do tej pizzerii co zawsze.",
+     "gap": 0.45
+    },
+    {
+     "who": "W3",
+     "text": "To może do baru wegetariańskiego?",
+     "gap": 0.45
+    },
+    {
+     "who": "M1",
+     "text": "Byłem tam wczoraj. Chodźmy do tej nowej tajskiej restauracji na rogu.",
+     "gap": 0.45
+    },
+    {
+     "who": "W3",
+     "text": "Idziesz z nami na lunch?",
+     "gap": 2.0
+    },
+    {
+     "who": "M1",
+     "text": "Chętnie, tylko nie do tej pizzerii co zawsze.",
+     "gap": 0.45
+    },
+    {
+     "who": "W3",
+     "text": "To może do baru wegetariańskiego?",
+     "gap": 0.45
+    },
+    {
+     "who": "M1",
+     "text": "Byłem tam wczoraj. Chodźmy do tej nowej tajskiej restauracji na rogu.",
+     "gap": 0.45
+    },
+    {
+     "who": "NAR",
+     "text": "Dialog trzy.",
+     "gap": 2.0
+    },
+    {
+     "who": "M3",
+     "text": "Dzień dobry, mam rezerwację na nazwisko Wiśniewski. Pokój dwuosobowy.",
+     "gap": 0.7
+    },
+    {
+     "who": "W4",
+     "text": "Tak, widzę. Niestety pokój z widokiem na morze jest jeszcze sprzątany. Mogą państwo zostawić bagaż w recepcji.",
+     "gap": 0.45
+    },
+    {
+     "who": "M3",
+     "text": "W porządku. To pójdziemy na spacer i wrócimy za godzinę.",
+     "gap": 0.45
+    },
+    {
+     "who": "M3",
+     "text": "Dzień dobry, mam rezerwację na nazwisko Wiśniewski. Pokój dwuosobowy.",
+     "gap": 2.0
+    },
+    {
+     "who": "W4",
+     "text": "Tak, widzę. Niestety pokój z widokiem na morze jest jeszcze sprzątany. Mogą państwo zostawić bagaż w recepcji.",
+     "gap": 0.45
+    },
+    {
+     "who": "M3",
+     "text": "W porządku. To pójdziemy na spacer i wrócimy za godzinę.",
+     "gap": 0.45
+    },
+    {
+     "who": "NAR",
+     "text": "Dialog cztery.",
+     "gap": 2.0
+    },
+    {
+     "who": "M1",
+     "text": "Tato, mogę w sobotę pojechać z Kubą na rowerach nad jezioro?",
+     "gap": 0.7
+    },
+    {
+     "who": "M2",
+     "text": "Sami? Przecież to trzydzieści kilometrów.",
+     "gap": 0.45
+    },
+    {
+     "who": "M1",
+     "text": "Pojedzie z nami jego starszy brat.",
+     "gap": 0.45
+    },
+    {
+     "who": "M2",
+     "text": "No dobrze. Ale masz wrócić przed zmrokiem i weź kask.",
+     "gap": 0.45
+    },
+    {
+     "who": "M1",
+     "text": "Tato, mogę w sobotę pojechać z Kubą na rowerach nad jezioro?",
+     "gap": 2.0
+    },
+    {
+     "who": "M2",
+     "text": "Sami? Przecież to trzydzieści kilometrów.",
+     "gap": 0.45
+    },
+    {
+     "who": "M1",
+     "text": "Pojedzie z nami jego starszy brat.",
+     "gap": 0.45
+    },
+    {
+     "who": "M2",
+     "text": "No dobrze. Ale masz wrócić przed zmrokiem i weź kask.",
+     "gap": 0.45
+    },
+    {
+     "who": "NAR",
+     "text": "Dialog pięć.",
+     "gap": 2.0
+    },
+    {
+     "who": "W2",
+     "text": "Dzień dobry, odbieram płaszcz. Numer czterdzieści dwa.",
+     "gap": 0.7
+    },
+    {
+     "who": "M3",
+     "text": "Proszę chwilę poczekać… Przepraszam panią, płaszcz będzie gotowy dopiero jutro. Ta plama okazała się trudniejsza, niż myśleliśmy.",
+     "gap": 0.45
+    },
+    {
+     "who": "W2",
+     "text": "A mogę dzisiaj przynajmniej zapłacić?",
+     "gap": 0.45
+    },
+    {
+     "who": "M3",
+     "text": "Płaci się przy odbiorze.",
+     "gap": 0.45
+    },
+    {
+     "who": "W2",
+     "text": "Dzień dobry, odbieram płaszcz. Numer czterdzieści dwa.",
+     "gap": 2.0
+    },
+    {
+     "who": "M3",
+     "text": "Proszę chwilę poczekać… Przepraszam panią, płaszcz będzie gotowy dopiero jutro. Ta plama okazała się trudniejsza, niż myśleliśmy.",
+     "gap": 0.45
+    },
+    {
+     "who": "W2",
+     "text": "A mogę dzisiaj przynajmniej zapłacić?",
+     "gap": 0.45
+    },
+    {
+     "who": "M3",
+     "text": "Płaci się przy odbiorze.",
+     "gap": 0.45
+    },
+    {
+     "who": "NAR",
+     "text": "Dialog sześć.",
+     "gap": 2.0
+    },
+    {
+     "who": "W4",
+     "text": "Słyszał pan, że w sobotę jest zebranie mieszkańców?",
+     "gap": 0.7
+    },
+    {
+     "who": "M2",
+     "text": "Słyszałem, ale przenieśli je na niedzielę po południu. Na drzwiach wisi nowa kartka.",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "To dobrze, bo w sobotę wyjeżdżam.",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "Słyszał pan, że w sobotę jest zebranie mieszkańców?",
+     "gap": 2.0
+    },
+    {
+     "who": "M2",
+     "text": "Słyszałem, ale przenieśli je na niedzielę po południu. Na drzwiach wisi nowa kartka.",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "To dobrze, bo w sobotę wyjeżdżam.",
+     "gap": 0.45
+    },
+    {
+     "who": "NAR",
+     "text": "Dialog siedem.",
+     "gap": 2.0
+    },
+    {
+     "who": "W1",
+     "text": "Zapisałeś się w końcu na kurs angielskiego?",
+     "gap": 0.7
+    },
+    {
+     "who": "M3",
+     "text": "Chciałem, ale grupa wieczorowa była już pełna.",
+     "gap": 0.45
+    },
+    {
+     "who": "W1",
+     "text": "I co teraz?",
+     "gap": 0.45
+    },
+    {
+     "who": "M3",
+     "text": "Firma zapłaci mi za lekcje z lektorem przez internet. Dwa razy w tygodniu.",
+     "gap": 0.45
+    },
+    {
+     "who": "W1",
+     "text": "Zapisałeś się w końcu na kurs angielskiego?",
+     "gap": 2.0
+    },
+    {
+     "who": "M3",
+     "text": "Chciałem, ale grupa wieczorowa była już pełna.",
+     "gap": 0.45
+    },
+    {
+     "who": "W1",
+     "text": "I co teraz?",
+     "gap": 0.45
+    },
+    {
+     "who": "M3",
+     "text": "Firma zapłaci mi za lekcje z lektorem przez internet. Dwa razy w tygodniu.",
+     "gap": 0.45
+    },
+    {
+     "who": "NAR",
+     "text": "Koniec zadania drugiego.",
+     "gap": 2.0
+    }
+   ]
+  },
+  "pl-b1-probny-06/b1-sluchanie-3.mp3": {
+   "lines": [
+    {
+     "who": "NAR",
+     "text": "Zadanie trzecie. Proszę wysłuchać wywiadu z tłumaczką języka migowego i zaznaczyć: TAK – jeśli zdanie jest zgodne z nagraniem, NIE – jeśli nie jest zgodne. Nagranie usłyszysz dwa razy."
+    },
+    {
+     "who": "M4",
+     "text": "Dzień dobry. Moim gościem jest Karolina Mazur, tłumaczka polskiego języka migowego. Pani Karolino, jak to się zaczęło?",
+     "gap": 0.7
+    },
+    {
+     "who": "W4",
+     "text": "Moi rodzice są głusi, więc język migowy był moim pierwszym językiem. Mówić po polsku nauczyłam się od babci i w przedszkolu. Ale tłumaczką wcale nie chciałam być. Skończyłam ekonomię i przez kilka lat pracowałam w biurze.",
+     "gap": 0.45
+    },
+    {
+     "who": "M4",
+     "text": "Co zmieniło pani zdanie?",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "Kiedyś tata trafił do szpitala, a tam nie było tłumacza. Lekarze rozmawiali z nim, pisząc na kartkach. Wtedy zrozumiałam, jak bardzo ta praca jest potrzebna. Zrobiłam kurs i zdałam egzamin.",
+     "gap": 0.45
+    },
+    {
+     "who": "M4",
+     "text": "Gdzie pani dziś pracuje?",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "Najczęściej w urzędach i w przychodniach, czasem w sądzie. Tłumaczę też wiadomości w telewizji, ale tylko dwa razy w miesiącu.",
+     "gap": 0.45
+    },
+    {
+     "who": "M4",
+     "text": "Czy język migowy jest taki sam na całym świecie?",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "To bardzo popularny mit. Każdy kraj ma swój własny język migowy. Polski różni się na przykład od czeskiego czy od ukraińskiego. A nawet w Polsce są różnice regionalne, trochę jak dialekty.",
+     "gap": 0.45
+    },
+    {
+     "who": "M4",
+     "text": "Co jest w tej pracy najtrudniejsze?",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "Tempo. Ludzie mówią szybko, a ja muszę jednocześnie słuchać, rozumieć i migać. Po godzinie tłumaczenia jestem bardziej zmęczona niż kiedyś po całym dniu w biurze. Dlatego przy dłuższych spotkaniach pracujemy w parach i zmieniamy się co dwadzieścia minut.",
+     "gap": 0.45
+    },
+    {
+     "who": "M4",
+     "text": "Czy osoby słyszące mogą się nauczyć migać?",
+     "gap": 0.45
+    },
+    {
+     "who": "W4",
+     "text": "Oczywiście. Na kursy podstawowe przychodzą na przykład pielęgniarki, sprzedawcy, urzędnicy. Wystarczy kilka zwrotów, żeby głucha osoba poczuła się lepiej.",
+     "gap": 0.45
+    },
+    {
+     "who": "M4",
+     "text": "Dziękuję za rozmowę.",
+     "gap": 0.45
+    }
+   ]
+  },
+  "pl-b1-probny-06/b1-sluchanie-4.mp3": {
+   "lines": [
+    {
+     "who": "NAR",
+     "text": "Zadanie czwarte. Proszę wysłuchać wypowiedzi czterech osób na temat zakazu handlu w niedziele i dopasować do każdej opinii właściwą osobę. Jedna osoba może pasować do kilku opinii. Nagranie usłyszysz dwa razy."
+    },
+    {
+     "who": "NAR",
+     "text": "Osoba pierwsza.",
+     "gap": 1.5
+    },
+    {
+     "who": "W2",
+     "text": "Pracuję w supermarkecie jako kasjerka od piętnastu lat. Kiedyś pracowałam w co drugą niedzielę i prawie nie widziałam swoich dzieci. Teraz niedziela jest dla rodziny. W sobotę w sklepie jest straszny tłok i wieczorem ledwo stoję na nogach, ale i tak wolę to niż pracę w niedzielę.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Osoba druga.",
+     "gap": 1.5
+    },
+    {
+     "who": "M3",
+     "text": "Mam mały sklep na osiedlu i sam w nim stoję, więc w niedzielę mogę go otworzyć. Klientów mam wtedy więcej niż kiedyś, to prawda. Tylko że przez to nie mam wolnego ani jednego dnia w tygodniu. Żona mówi, że w ogóle mnie nie widzi.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Osoba trzecia.",
+     "gap": 1.5
+    },
+    {
+     "who": "W3",
+     "text": "Studiuję w tygodniu, a w weekendy pracowałam w galerii handlowej. Kiedy w niedziele sklepy zamknięto, straciłam część zarobków, dlatego zmieniłam pracę i teraz pracuję w kawiarni. Szczerze mówiąc, wolałabym, żeby sklepy w niedziele były otwarte. Dla studentów to była dobra praca.",
+     "gap": 0.7
+    },
+    {
+     "who": "NAR",
+     "text": "Osoba czwarta.",
+     "gap": 1.5
+    },
+    {
+     "who": "M2",
+     "text": "Mnie to w ogóle nie przeszkadza. Zakupy robię w tygodniu rano, kiedy w sklepie prawie nikogo nie ma. W niedzielę chodzę z wnukami do parku albo do muzeum. Ludzie się do tego przyzwyczaili i dziś mało kto pamięta, jak było wcześniej.",
+     "gap": 0.7
+    }
+   ]
+  },
+  "pl-b1-probny-06/b1-sluchanie-5.mp3": {
+   "lines": [
+    {
+     "who": "NAR",
+     "text": "Zadanie piąte. Pan Marek pierwszy raz jedzie zimą samochodem w góry. Mechanik daje mu rady. Proszę wysłuchać dziesięciu wypowiedzi i do każdej dopasować właściwy obrazek. Jeden obrazek jest niepotrzebny. Każdą wypowiedź usłyszysz dwa razy. Przykład."
+    },
+    {
+     "who": "M3",
+     "text": "Zatankuj do pełna, zanim wyjedziesz z miasta. Na górskich drogach jest mało stacji.",
+     "gap": 0.7
+    },
+    {
+     "who": "M3",
+     "text": "Zatankuj do pełna, zanim wyjedziesz z miasta. Na górskich drogach jest mało stacji.",
+     "gap": 2.5
+    },
+    {
+     "who": "NAR",
+     "text": "Numer jeden.",
+     "gap": 2.5
+    },
+    {
+     "who": "M3",
+     "text": "Przede wszystkim załóż zimowe opony. Na letnich nie wjedziesz nawet pod pierwszą górkę.",
+     "gap": 0.7
+    },
+    {
+     "who": "M3",
+     "text": "Przede wszystkim załóż zimowe opony. Na letnich nie wjedziesz nawet pod pierwszą górkę.",
+     "gap": 2.5
+    },
+    {
+     "who": "NAR",
+     "text": "Numer dwa.",
+     "gap": 2.5
+    },
+    {
+     "who": "M3",
+     "text": "Sprawdź akumulator. Stary akumulator przy dużym mrozie często odmawia posłuszeństwa.",
+     "gap": 0.7
+    },
+    {
+     "who": "M3",
+     "text": "Sprawdź akumulator. Stary akumulator przy dużym mrozie często odmawia posłuszeństwa.",
+     "gap": 2.5
+    },
+    {
+     "who": "NAR",
+     "text": "Numer trzy.",
+     "gap": 2.5
+    },
+    {
+     "who": "M3",
+     "text": "Wlej do zbiornika zimowy płyn do spryskiwaczy. Letni po prostu zamarznie.",
+     "gap": 0.7
+    },
+    {
+     "who": "M3",
+     "text": "Wlej do zbiornika zimowy płyn do spryskiwaczy. Letni po prostu zamarznie.",
+     "gap": 2.5
+    },
+    {
+     "who": "NAR",
+     "text": "Numer cztery.",
+     "gap": 2.5
+    },
+    {
+     "who": "M3",
+     "text": "Weź ze sobą łańcuchy na koła. Na niektórych górskich drogach mogą być potrzebne.",
+     "gap": 0.7
+    },
+    {
+     "who": "M3",
+     "text": "Weź ze sobą łańcuchy na koła. Na niektórych górskich drogach mogą być potrzebne.",
+     "gap": 2.5
+    },
+    {
+     "who": "NAR",
+     "text": "Numer pięć.",
+     "gap": 2.5
+    },
+    {
+     "who": "M3",
+     "text": "Zanim ruszysz, zmieć cały śnieg z dachu samochodu, nie tylko z szyb.",
+     "gap": 0.7
+    },
+    {
+     "who": "M3",
+     "text": "Zanim ruszysz, zmieć cały śnieg z dachu samochodu, nie tylko z szyb.",
+     "gap": 2.5
+    },
+    {
+     "who": "NAR",
+     "text": "Numer sześć.",
+     "gap": 2.5
+    },
+    {
+     "who": "M3",
+     "text": "Wożę w samochodzie skrobaczkę do lodu i tobie też radzę. Rano szyby będą zamarznięte.",
+     "gap": 0.7
+    },
+    {
+     "who": "M3",
+     "text": "Wożę w samochodzie skrobaczkę do lodu i tobie też radzę. Rano szyby będą zamarznięte.",
+     "gap": 2.5
+    },
+    {
+     "who": "NAR",
+     "text": "Numer siedem.",
+     "gap": 2.5
+    },
+    {
+     "who": "M3",
+     "text": "Zabierz koc i ciepłe rzeczy, na wypadek gdybyś musiał długo stać w korku.",
+     "gap": 0.7
+    },
+    {
+     "who": "M3",
+     "text": "Zabierz koc i ciepłe rzeczy, na wypadek gdybyś musiał długo stać w korku.",
+     "gap": 2.5
+    },
+    {
+     "who": "NAR",
+     "text": "Numer osiem.",
+     "gap": 2.5
+    },
+    {
+     "who": "M3",
+     "text": "Przed wyjazdem sprawdź prognozę pogody i komunikaty o stanie dróg.",
+     "gap": 0.7
+    },
+    {
+     "who": "M3",
+     "text": "Przed wyjazdem sprawdź prognozę pogody i komunikaty o stanie dróg.",
+     "gap": 2.5
+    },
+    {
+     "who": "NAR",
+     "text": "Numer dziewięć.",
+     "gap": 2.5
+    },
+    {
+     "who": "M3",
+     "text": "Pamiętaj o ładowarce do telefonu w samochodzie. Na zimnie bateria szybko się rozładowuje.",
+     "gap": 0.7
+    },
+    {
+     "who": "M3",
+     "text": "Pamiętaj o ładowarce do telefonu w samochodzie. Na zimnie bateria szybko się rozładowuje.",
+     "gap": 2.5
+    },
+    {
+     "who": "NAR",
+     "text": "Numer dziesięć.",
+     "gap": 2.5
+    },
+    {
+     "who": "M3",
+     "text": "Jedź wolniej niż zwykle i trzymaj większą odległość od samochodu przed tobą.",
+     "gap": 0.7
+    },
+    {
+     "who": "M3",
+     "text": "Jedź wolniej niż zwykle i trzymaj większą odległość od samochodu przed tobą.",
+     "gap": 2.5
+    },
+    {
+     "who": "NAR",
+     "text": "Koniec rozumienia ze słuchu.",
+     "gap": 2.5
+    }
+   ]
+  }
+ }
+}
