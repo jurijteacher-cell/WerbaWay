@@ -23,7 +23,7 @@ export async function POST(req: Request) {
     if ((count ?? 0) >= DAILY_LIMIT_STUDENT) return NextResponse.json({ draft: null, limited: true, lang: o.lang });
   }
   const ai = getOpenAIClient();
-  if (!ai) return NextResponse.json({ draft: null, lang: o.lang });
+  if (!ai) return NextResponse.json({ draft: null, lang: o.lang, reason: 'no-key' });
   await supabase.from('word_suggest_log').insert({ user_id: o.userId });
 
   try {
@@ -67,7 +67,9 @@ export async function POST(req: Request) {
     );
     const draft = JSON.parse(r.choices[0]?.message?.content ?? 'null');
     return NextResponse.json({ draft, lang: o.lang });
-  } catch {
-    return NextResponse.json({ draft: null, lang: o.lang });
+  } catch (e) {
+    const msg = e instanceof Error ? e.message : String(e);
+    console.error('[words/suggest]', msg);
+    return NextResponse.json({ draft: null, lang: o.lang, reason: msg.slice(0, 160) });
   }
 }

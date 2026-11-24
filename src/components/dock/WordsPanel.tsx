@@ -64,14 +64,18 @@ export function WordsPanel({
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({ studentId: forStudent ? ownerId : undefined, input: v }),
       });
-      const j = (await r.json().catch(() => null)) as { draft?: Draft | null; limited?: boolean } | null;
+      const j = (await r.json().catch(() => null)) as { draft?: Draft | null; limited?: boolean; reason?: string } | null;
       if (j?.draft) {
         setDraft({ ...EMPTY, ...j.draft });
         setSource('ai');
       } else {
         setDraft({ ...EMPTY, term: v });
         setSource('manual');
-        setNote(j?.limited ? t('Ліміт підказок на сьогодні вичерпано — заповни картку вручну.') : t('Підказка недоступна — заповни картку вручну.'));
+        setNote(
+          j?.limited
+            ? t('Ліміт підказок на сьогодні вичерпано — заповни картку вручну.')
+            : `${t('Підказка недоступна — заповни картку вручну.')}${j?.reason ? ` (${j.reason === 'no-key' ? t('на сервері не заданий OPENAI_API_KEY') : j.reason})` : ''}`
+        );
       }
     } catch {
       setDraft({ ...EMPTY, term: v });
