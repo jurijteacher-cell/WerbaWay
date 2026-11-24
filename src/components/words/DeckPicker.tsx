@@ -4,6 +4,8 @@
 import { useT } from '@/i18n/client';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { WordsPanel } from '@/components/dock/WordsPanel';
 
 export type DeckInfo = {
   slug: string;
@@ -15,6 +17,8 @@ export type DeckInfo = {
   known: number;
   groups: string[];
   addedAt: string | null;
+  /** «Мої колоди» — власні слова по 20 у колоді */
+  folder?: 'mine';
 };
 
 const MODES = [
@@ -23,15 +27,18 @@ const MODES = [
   { id: 'quiz', label: 'Тест', hint: 'обери правильний переклад' },
 ] as const;
 
-export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
+export function DeckPicker({ decks: lectureDecks, mine = [], userId }: { decks: DeckInfo[]; mine?: DeckInfo[]; userId?: string }) {
   const t = useT();
+  const router = useRouter();
+  const [manage, setManage] = useState(false);
+  const decks = [...mine, ...lectureDecks];
   const [sel, setSel] = useState<string[]>([]);
   const toggle = (s: string) => setSel((x) => (x.includes(s) ? x.filter((y) => y !== s) : [...x, s]));
   const chosen = decks.filter((d) => sel.includes(d.slug));
   const words = chosen.reduce((n, d) => n + d.total, 0);
   const known = chosen.reduce((n, d) => n + d.known, 0);
 
-  if (!decks.length) {
+  if (!decks.length && !userId) {
     return (
       <div className="rounded-2xl border border-ink-line bg-ink-raised p-8 text-center text-paper-muted">
         {t("Тут з’являтимуться слова з кожної пройденої лекції. Поки лекцій немає.")}
@@ -56,6 +63,33 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
         </button>
       </div>
 
+      {userId && (
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-ink-line bg-ink-raised p-4">
+          <div className="min-w-0">
+            <p className="font-display text-lg text-paper">{t('Мої колоди')}</p>
+            <p className="text-sm text-paper-muted">{t('Свої слова: по 20 у колоді, заповнилась — створюється нова. Тут їх можна правити й видаляти.')}</p>
+          </div>
+          <button type="button" className="ww-btn ww-btn-primary" onClick={() => setManage(true)} data-testid="words-manage">
+            {t('＋ Додати / редагувати слова')}
+          </button>
+        </div>
+      )}
+      {manage && userId && (
+        <div className="ww-wmodal" role="dialog" aria-modal="true" aria-label={t('Мої слова')} onClick={(e) => e.target === e.currentTarget && (setManage(false), router.refresh())}>
+          <div className="ww-wmodal-card">
+            <div className="ww-wmodal-head">
+              <p className="font-display text-lg text-paper">{t('Мої слова')}</p>
+              <button type="button" className="ww-btn ww-btn-ghost ww-btn-sm" onClick={() => { setManage(false); router.refresh(); }}>
+                {t('Закрити')}
+              </button>
+            </div>
+            <div className="ww-wmodal-body">
+              <WordsPanel ownerId={userId} />
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="grid gap-4 pb-32 md:grid-cols-2">
         {decks.map((d) => {
           const on = sel.includes(d.slug);
@@ -77,6 +111,7 @@ export function DeckPicker({ decks }: { decks: DeckInfo[] }) {
               <div className="p-4">
                 <div className="mb-1 flex items-center gap-2 ww-label">
                   {d.level && <span className="rounded bg-gold-fill px-1.5 py-0.5 text-paper">{d.level}</span>}
+                  {d.folder === 'mine' && <span className="rounded bg-sky-fill px-1.5 py-0.5 text-paper">{t('Мої')}</span>}
                   <span>{d.total} слів</span>
                   <span className="ml-auto text-sm">{on ? '☑' : '☐'}</span>
                 </div>

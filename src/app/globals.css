@@ -591,26 +591,58 @@
   .ww-dock-crash p { margin: 0; color: var(--ww-muted); }
 
   /* кнопка відкриття: на ПК — язичок на правому краї, на телефоні — кругла над нижньою панеллю */
+  .ww-dock-launch { position: fixed; z-index: 62; display: flex; }
   .ww-dock-toggle {
-    position: fixed; z-index: 62; display: inline-flex; align-items: center; gap: 6px;
+    position: relative; display: inline-flex; align-items: center; gap: 6px;
     border: 1px solid var(--ww-line); background: var(--ww-paper); color: var(--ww-violet);
     font: 700 13px/1 var(--font-onest), system-ui, sans-serif; box-shadow: var(--ww-shadow-card);
     transition: border-color .2s var(--ww-ease), transform .15s var(--ww-ease);
   }
   .ww-dock-toggle:hover { border-color: var(--ww-violet); }
   @media (min-width: 1024px) {
-    .ww-dock-toggle { right: 0; top: 50%; padding: 12px 10px; border-right: 0; border-radius: var(--ww-r) 0 0 var(--ww-r); writing-mode: vertical-rl; transform: translateY(-50%); }
+    .ww-dock-launch { right: 0; top: 50%; flex-direction: column; gap: 6px; transform: translateY(-50%); }
+    .ww-dock-toggle { padding: 12px 10px; border-right: 0; border-radius: var(--ww-r) 0 0 var(--ww-r); writing-mode: vertical-rl; }
     .ww-dock-toggle svg { transform: rotate(90deg); }
     body.ww-dock-open { padding-right: var(--ww-dock-w, 380px); }
     body.ww-dock-open .ww-report-btn { right: calc(var(--ww-dock-w, 380px) + 14px); }
   }
   @media (max-width: 1023px) {
-    .ww-dock-toggle { right: 14px; bottom: calc(env(safe-area-inset-bottom) + 78px); width: 48px; height: 48px; justify-content: center; border-radius: 99px; }
+    .ww-dock-launch { right: 14px; bottom: calc(env(safe-area-inset-bottom) + 78px); flex-direction: column-reverse; gap: 10px; }
+    .ww-dock-toggle { width: 48px; height: 48px; justify-content: center; border-radius: 99px; }
     .ww-dock-toggle-text { display: none; }
   }
+  .ww-dock-toggle.is-soon { opacity: .5; cursor: not-allowed; }
   .ww-dock-badge {
     position: absolute; top: -6px; left: -6px; min-width: 20px; height: 20px; padding: 0 5px; display: grid; place-items: center;
     border-radius: 99px; background: var(--ww-pink); color: #fff; font: 700 11px/1 var(--font-onest), system-ui, sans-serif; writing-mode: horizontal-tb;
   }
   html.ww-dock-lock, html.ww-dock-lock body { overflow: hidden; }
+}
+
+/* ═══ Слова: додати / колоди власника (панель дока й вікно на /words) ═══ */
+@layer components {
+  .ww-words { display: flex; flex-direction: column; gap: 10px; padding: 12px; font-family: var(--font-onest), system-ui, sans-serif; }
+  .ww-words-add { display: flex; gap: 8px; }
+  .ww-words-add .ww-input { flex: 1; font-size: 16px; }
+  .ww-words-hint, .ww-words-empty { margin: 0; color: var(--ww-muted); font-size: 13px; }
+  .ww-words-note { margin: 0; padding: 6px 10px; border-radius: var(--ww-r-sm); background: var(--ww-pink-fill); color: var(--ww-pink); font-size: 13px; }
+  .ww-words-draft { display: flex; flex-direction: column; gap: 8px; padding: 10px; border: 1px solid var(--ww-line); border-radius: var(--ww-r); background: var(--ww-soft); list-style: none; }
+  .ww-words-draft .ww-input { font-size: 16px; }
+  .ww-words-actions { display: flex; justify-content: flex-end; gap: 8px; }
+  .ww-words-deck ul { margin: 6px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .ww-words-row { display: flex; align-items: center; gap: 6px; padding: 6px 8px; border: 1px solid var(--ww-line); border-radius: var(--ww-r-sm); background: var(--ww-paper); }
+  .ww-words-text { flex: 1; min-width: 0; overflow-wrap: anywhere; font-size: 14px; line-height: 1.35; }
+  .ww-words-text small { display: block; color: var(--ww-muted); font-size: 12.5px; }
+  .ww-words-ico { flex: none; display: grid; place-items: center; width: 32px; height: 32px; border-radius: var(--ww-r-sm); color: var(--ww-muted); }
+  .ww-words-ico:hover { background: var(--ww-soft); color: var(--ww-violet); }
+  .ww-words-ico.is-danger:hover { background: var(--ww-no-fill); color: var(--ww-no); }
+  .ww-wmodal { position: fixed; inset: 0; z-index: 95; display: grid; place-items: center; padding: 16px; background: rgba(28, 35, 72, .45); }
+  .ww-wmodal-card { width: min(34rem, 100%); max-height: min(90dvh, 44rem); display: flex; flex-direction: column; border-radius: var(--ww-r-xl); background: var(--ww-paper); border: 1px solid var(--ww-line); box-shadow: var(--ww-shadow-card); overflow: hidden; }
+  .ww-wmodal-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 16px; border-bottom: 1px solid var(--ww-line); }
+  .ww-wmodal-body { overflow-y: auto; overscroll-behavior: contain; }
+  .ww-dock-tabs { display: flex; gap: 4px; margin: 8px 12px 0; padding: 3px; border-radius: var(--ww-r-sm); background: var(--ww-soft); }
+  .ww-dock-tabs button { flex: 1; padding: 5px 8px; border-radius: 8px; color: var(--ww-muted); font: 600 13px/1.2 var(--font-onest), system-ui, sans-serif; }
+  .ww-dock-tabs button[aria-selected='true'] { background: var(--ww-violet-fill); color: var(--ww-violet-dark); }
+  .ww-dock-scroll { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+  .ww-dock-msg .ww-dock-wordex { display: block; margin-top: 2px; color: var(--ww-muted); font-size: 13px; }
 }

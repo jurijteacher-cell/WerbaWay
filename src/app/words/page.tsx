@@ -4,6 +4,7 @@ import { listPages } from '@/lib/pages/pages';
 import { fetchHidden } from '@/lib/pages/trash';
 import { getLocale, t } from '@/i18n/server';
 import { loadDeck } from '@/lib/words';
+import { loadMyDecks } from '@/lib/my-words';
 import { DeckPicker, type DeckInfo } from '@/components/words/DeckPicker';
 
 export const dynamic = 'force-dynamic';
@@ -48,6 +49,20 @@ export default async function WordsPage() {
   }
   decks.sort((a, b) => (b.addedAt ?? '').localeCompare(a.addedAt ?? ''));
 
+  // «Мої колоди»: власні слова по 20 у колоді (викладач — свої; слова учня він додає з дока в класі)
+  const mine: DeckInfo[] = (await loadMyDecks(supabase, user.id, (n) => t('Мої слова · {n}', { n }))).map((d) => ({
+    slug: d.slug,
+    title: d.title,
+    level: null,
+    icon: null,
+    cover: null,
+    total: d.words.length,
+    known: Math.min(known.get(d.slug) ?? 0, d.words.length),
+    groups: [],
+    addedAt: null,
+    folder: 'mine' as const,
+  }));
+
   return (
     <main className="mx-auto max-w-4xl px-4 py-14">
       <p className="ww-label">Werba Way</p>
@@ -55,7 +70,7 @@ export default async function WordsPage() {
       <p className="mb-8 max-w-2xl text-paper-muted">
         {t("Колоди з пройдених лекцій. Обери одну чи кілька, перемішай, злий в одну й тренуй: картки, пари або тест. Познач слова, які вже запам’ятав, — вони не заважатимуть.")}
       </p>
-      <DeckPicker decks={decks} />
+      <DeckPicker decks={decks} mine={mine} userId={user.id} />
     </main>
   );
 }
