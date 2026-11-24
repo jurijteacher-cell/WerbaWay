@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
+import { User, X } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 import { useT } from '@/i18n/client';
 import { Switch } from '@/components/ui/Switch';
@@ -58,6 +59,7 @@ export function TeacherBoard({
   const [conflict, setConflict] = useState(false);
   const [limitHint, setLimitHint] = useState(false);
   const [fmt, setFmt] = useState({ b: false, i: false });
+  const [placing, setPlacing] = useState(false);
   const [, bump] = useState(0);
 
   const elsRef = useRef(initial.els);
@@ -231,6 +233,7 @@ export function TeacherBoard({
       if (!canAdd()) return;
       const c = wx === undefined ? centerWorld() : { x: wx, y: wy! };
       const el: BoardEl = { id: newId(), t: 'note', x: Math.round(c.x - 90), y: Math.round(c.y - 65), w: 180, h: 130, c: color, text: '', fs: 'M', z: maxZ() + 1 };
+      setPlacing(false);
       change([...elsRef.current, el], true);
       setSel(new Set([el.id]));
       setEditing(el.id);
@@ -311,6 +314,10 @@ export function TeacherBoard({
         if (!sel.size) return;
         e.preventDefault();
         applyFmt(e.key.toLowerCase() as 'b' | 'i');
+      } else if (e.code === 'KeyN' && !mod && !e.altKey && !e.shiftKey && !e.repeat) {
+        // N (будь-яка розкладка): стікер «прилипає» до курсора, клік на дошці кладе його
+        e.preventDefault();
+        setPlacing((p) => !p);
       } else if ((e.key === 'Enter' || e.key === 'F2') && sel.size === 1) {
         // виділений елемент — Enter відкриває текст для правки (те саме, що подвійний клік)
         e.preventDefault();
@@ -329,6 +336,7 @@ export function TeacherBoard({
         e.preventDefault();
         redo();
       } else if (e.key === 'Escape') {
+        setPlacing(false);
         setSel(new Set());
         setPanel(false);
       }
@@ -420,7 +428,7 @@ export function TeacherBoard({
   const fmtB = editing ? fmt.b : picked.length > 0 && picked.every((e) => isAll(e.text, 'b'));
   const fmtI = editing ? fmt.i : picked.length > 0 && picked.every((e) => isAll(e.text, 'i'));
   const items: ToolbarItem[] = [
-    { id: 'note', label: t('Стікер'), node: <button type="button" className="ww-btn ww-btn-primary ww-btn-sm" onClick={() => addNote()} data-testid="board-add-note">{t('＋ Стікер')}</button> },
+    { id: 'note', label: t('Стікер'), node: <button type="button" className="ww-btn ww-btn-primary ww-btn-sm" onClick={() => addNote()} title={`${t('Стікер')} (N)`} data-testid="board-add-note">{t('＋ Стікер')}</button> },
     {
       id: 'colors',
       label: t('Колір стікера'),
@@ -510,8 +518,16 @@ export function TeacherBoard({
           setEditing={setEditing}
           onChange={change}
           onAddAt={addNote}
+          placing={placing ? color : null}
+          onPlace={addNote}
+          onCancelPlace={() => setPlacing(false)}
           onSize={onSize}
         />
+        {placing && (
+          <p className="ww-dock-offline ww-board-placehint" role="status" data-testid="board-place-hint">
+            {t('Клікни на дошці, щоб розмістити стікер. Esc — скасувати')}
+          </p>
+        )}
         {link === 'offline' && <p className="ww-dock-offline" style={{ position: 'absolute', left: 12, bottom: 12 }}>{t('Немає зв’язку — перепідключаюсь. Зміни зберігаються.')}</p>}
         {limitHint && <p className="ww-dock-offline" style={{ position: 'absolute', left: 12, top: 12 }}>{t('Ліміт — 300 елементів. Очистіть дошку.')}</p>}
         {conflict && (
@@ -520,9 +536,27 @@ export function TeacherBoard({
             <button type="button" className="underline" onClick={() => window.location.reload()}>{t('Оновити')}</button>
           </p>
         )}
+        {/* збоку: чоловічок відкриває й згортає меню учнів */}
+        <button
+          type="button"
+          className={`ww-board-people${panel ? ' is-open' : ''}`}
+          aria-expanded={panel}
+          aria-label={t('Учні на дошці')}
+          title={t('Учні на дошці')}
+          onClick={() => setPanel((o) => !o)}
+          data-testid="board-people"
+        >
+          <User size={22} aria-hidden="true" />
+          {viewers.length > 0 && <span className="ww-dock-badge">{viewers.length > 9 ? '9+' : viewers.length}</span>}
+        </button>
         {panel && (
-          <div className="ww-menu ww-board-viewers" style={{ top: 8, right: 10 }} role="dialog" aria-label={t('Глядачі')}>
-            <p className="ww-label" style={{ padding: '4px 8px' }}>{t('Учні на дошці')}</p>
+          <div className="ww-menu ww-board-viewers" style={{ top: 62, right: 10 }} role="dialog" aria-label={t('Глядачі')}>
+            <div className="ww-board-viewers-head">
+              <p className="ww-label">{t('Учні на дошці')}</p>
+              <button type="button" className="ww-btn ww-btn-ghost ww-btn-sm" onClick={() => setPanel(false)} aria-label={t('Згорнути')} title={t('Згорнути')} data-testid="board-people-close">
+                <X size={16} aria-hidden="true" />
+              </button>
+            </div>
             {viewers.length === 0 && <p className="ww-dock-menu-date">{t('Поки нікого. Запроси учня нижче.')}</p>}
             {viewers.map((v) => (
               <div key={v.id} className="ww-board-viewer-row" data-status={v.status}>

@@ -704,6 +704,20 @@
   .ww-bel.is-text .ww-bel-edit { height: auto; min-height: 2.8em; padding: 4px 6px; }
   .ww-bel.is-editing { outline: 2px solid var(--ww-violet); outline-offset: 2px; }
   .ww-bel-resize { position: absolute; right: -7px; bottom: -7px; width: 16px; height: 16px; border-radius: 4px; background: var(--ww-violet-solid); border: 2px solid var(--ww-paper); cursor: nwse-resize; touch-action: none; }
+  .ww-board-stage.is-placing, .ww-board-stage.is-placing .ww-bel { cursor: none; }
+  .ww-board-ghost {
+    position: absolute; z-index: 5; pointer-events: none; border-radius: 6px; opacity: .78; outline: 2px dashed var(--ww-violet); outline-offset: 2px;
+    box-shadow: 0 6px 0 rgba(28, 35, 72, .18); transform: translateZ(0);
+  }
+  .ww-board-placehint { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); margin: 0; z-index: 6; background: var(--ww-paper); color: var(--ww-ink); border: 1px solid var(--ww-line); box-shadow: var(--ww-shadow-card); }
+  .ww-board-people {
+    position: absolute; top: 10px; right: 10px; z-index: 7; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 99px;
+    border: 1px solid var(--ww-line); background: var(--ww-paper); color: var(--ww-violet); box-shadow: var(--ww-shadow-card);
+    transition: border-color .2s var(--ww-ease), background .2s var(--ww-ease);
+  }
+  .ww-board-people:hover, .ww-board-people.is-open { border-color: var(--ww-violet); background: var(--ww-violet-fill); }
+  .ww-board-viewers-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 0 0 8px; }
+  .ww-board-viewers-head .ww-label { margin: 0; }
   .ww-board-band { position: absolute; border: 1.5px dashed var(--ww-violet); background: rgba(122, 79, 224, .08); pointer-events: none; }
 
   .ww-boardscreen { position: fixed; inset: 0; z-index: 80; display: flex; flex-direction: column; background: var(--ww-desk); font-family: var(--font-onest), system-ui, sans-serif; }

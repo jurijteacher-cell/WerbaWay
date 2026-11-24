@@ -195,6 +195,12 @@ export type BoardProps = {
   /** commit=false — промітний рух (перетягування), true — фінал (потрапляє в історію) */
   onChange?: (next: BoardEl[], commit: boolean) => void;
   onAddAt?: (x: number, y: number) => void;
+  /** режим «стікер на курсорі» (клавіша N): колір привида; null — вимкнено */
+  placing?: string | null;
+  /** клік на дошці в режимі розміщення (світові координати центру нового стікера) */
+  onPlace?: (x: number, y: number) => void;
+  /** правий клік у режимі розміщення */
+  onCancelPlace?: () => void;
   /** плавний рух в'юпорта (учень «за викладачем») */
   smooth?: boolean;
   /** заборонити рух полем (учень, що слідує за викладачем) */
@@ -207,13 +213,16 @@ export type BoardProps = {
  * Лише pointer events (миша, палець, стилус): 1 вказівник — рух/перетягування, 2 — пінч-масштаб,
  * Shift+рамка — виділення, подвійний клік/тап по порожньому — новий стікер, по елементу — редагування.
  */
-export function Board({ els, vp, onVp, editable, sel, setSel, editing, setEditing, onChange, onAddAt, smooth, lockView, onSize }: BoardProps) {
+export function Board({ els, vp, onVp, editable, sel, setSel, editing, setEditing, onChange, onAddAt, placing, onPlace, onCancelPlace, smooth, lockView, onSize }: BoardProps) {
   const stageRef = useRef<HTMLDivElement>(null);
   const ptrs = useRef(new Map<number, { x: number; y: number }>());
   const gest = useRef<Gesture | null>(null);
   const last = useRef({ id: '', t: 0, x: 0, y: 0 });
-  const live = useRef({ els, vp, sel, editing, onChange, onVp, onAddAt, setSel, setEditing, lockView, editable });
-  live.current = { els, vp, sel, editing, onChange, onVp, onAddAt, setSel, setEditing, lockView, editable };
+  const live = useRef({ els, vp, sel, editing, onChange, onVp, onAddAt, setSel, setEditing, lockView, editable, placing, onPlace, onCancelPlace });
+  live.current = { els, vp, sel, editing, onChange, onVp, onAddAt, setSel, setEditing, lockView, editable, placing, onPlace, onCancelPlace };
+  // «привид» стікера під курсором (локальні координати поля) і остання відома позиція курсора
+  const hover = useRef<{ x: number; y: number } | null>(null);
+  const [ghost, setGhost] = useState<{ x: number; y: number } | null>(null);
   const [band, setBand] = useState<{ x: number; y: number; w: number; h: number } | null>(null);
   const [panning, setPanning] = useState(false);
 
@@ -264,9 +273,23 @@ export function Board({ els, vp, onVp, editable, sel, setSel, editing, setEditin
     L.onChange?.(L.els, true);
   };
 
+  useEffect(() => {
+    setGhost(placing ? hover.current : null);
+  }, [placing]);
+
   const down = (e: React.PointerEvent) => {
     const L = live.current;
     const target = e.target as HTMLElement;
+    if (L.placing && L.editable) {
+      // режим «стікер на курсорі»: лівий клік кладе стікер, правий скасовує
+      e.preventDefault();
+      if (e.pointerType === 'mouse' && e.button === 2) return L.onCancelPlace?.();
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      const w = toWorld(toLocal(e), L.vp);
+      last.current = { id: '', t: 0, x: 0, y: 0 };
+      L.onPlace?.(w.x, w.y);
+      return;
+    }
     if (target.closest('[contenteditable="true"]')) return;
     if (e.pointerType === 'mouse' && e.button !== 0 && e.button !== 1) return;
     stageRef.current!.setPointerCapture(e.pointerId);
@@ -336,6 +359,11 @@ export function Board({ els, vp, onVp, editable, sel, setSel, editing, setEditin
   };
 
   const move = (e: React.PointerEvent) => {
+    if (e.pointerType === 'mouse' || live.current.placing) {
+      const h = toLocal(e);
+      hover.current = h;
+      if (live.current.placing) setGhost(h);
+    }
     if (!ptrs.current.has(e.pointerId)) return;
     const L = live.current;
     const p = toLocal(e);
@@ -440,9 +468,16 @@ export function Board({ els, vp, onVp, editable, sel, setSel, editing, setEditin
   return (
     <div
       ref={stageRef}
-      className={`ww-board-stage${panning ? ' is-panning' : ''}${editable ? ' is-editable' : ''}`}
+      className={`ww-board-stage${panning ? ' is-panning' : ''}${editable ? ' is-editable' : ''}${placing ? ' is-placing' : ''}`}
       onPointerDown={down}
       onPointerMove={move}
+      onPointerLeave={() => {
+        hover.current = null;
+        setGhost(null);
+      }}
+      onContextMenu={(e) => {
+        if (live.current.placing) e.preventDefault();
+      }}
       onPointerUp={up}
       onPointerCancel={up}
       data-testid="board-stage"
@@ -455,6 +490,14 @@ export function Board({ els, vp, onVp, editable, sel, setSel, editing, setEditin
           <Item key={el.id} el={el} selected={sel.has(el.id)} editing={editing === el.id} editable={editable} onText={onText} onDone={onDone} onGrow={onGrow} />
         ))}
       </div>
+      {placing && ghost && (
+        <div
+          className="ww-board-ghost"
+          aria-hidden="true"
+          data-testid="board-ghost"
+          style={{ left: ghost.x - 90 * vp.zoom, top: ghost.y - 65 * vp.zoom, width: 180 * vp.zoom, height: 130 * vp.zoom, background: `var(--ww-note-${placing})` }}
+        />
+      )}
       {band && <div className="ww-board-band" style={{ left: band.x, top: band.y, width: band.w, height: band.h }} />}
     </div>
   );
