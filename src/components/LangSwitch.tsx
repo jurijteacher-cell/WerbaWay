@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState, useTransition } from 'react';
-import { useRouter } from 'next/navigation';
 import { LOCALES, LOCALE_LABEL, type Locale } from '@/i18n/config';
 import { setLocale } from '@/i18n/actions';
 import { useLocale, useT } from '@/i18n/client';
@@ -13,7 +12,6 @@ import { useLocale, useT } from '@/i18n/client';
 export function LangSwitch({ className = '' }: { className?: string }) {
   const locale = useLocale();
   const t = useT();
-  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [pending, start] = useTransition();
   const box = useRef<HTMLDivElement>(null);
@@ -37,7 +35,9 @@ export function LangSwitch({ className = '' }: { className?: string }) {
     if (next === locale) return;
     start(async () => {
       await setLocale(next);
-      router.refresh();
+      // Повне оновлення: вправи в лекції живуть в iframe з мовою в адресі, а клієнтський стан
+      // (сторінки, вікна, підписи) інакше лишається частково старою мовою. ?p= тримає сторінку лекції.
+      window.location.reload();
     });
   };
 

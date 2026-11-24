@@ -6,6 +6,7 @@ import { useT } from '@/i18n/client';
 import { classTopic, guestTopic, isLessonPath, liveKey, type ClassMsg, type Presence } from '@/lib/live/protocol';
 import { currentProgressCode, parseProgressKey, readAllProgress } from '@/lib/embed-progress';
 import { useLiveChannel } from './useLiveChannel';
+import { InfoSticker } from '@/components/ui/InfoSticker';
 
 /** сторінка лекції з ?p= (1-based; pager тримає його в адресі) — поки подія ww:lesson-page ще не прийшла */
 function pageFromUrl(): number | undefined {
@@ -191,8 +192,18 @@ function BeaconInner({ topic, name }: { topic: string; name?: string }) {
 
   if (!active) return null;
   return (
-    <div className="ww-live-badge" role="status">
-      <span aria-hidden="true">👁</span> {t("Викладач бачить твої відповіді")}
+    <div className="ww-live-sticker" role="status">
+      <InfoSticker
+        icon="eye"
+        place="up-center"
+        label={t('Викладач бачить твої відповіді')}
+        title={t('Викладач бачить твої відповіді')}
+        items={[
+          t('Викладач бачить, що ти обираєш і вписуєш у вправах.'),
+          t('Твій екран не передається — лише відповіді у вправах.'),
+          t('Лекцією ти гортаєш сам: викладач нічого не змінює на твоїй сторінці.'),
+        ]}
+      />
     </div>
   );
 }

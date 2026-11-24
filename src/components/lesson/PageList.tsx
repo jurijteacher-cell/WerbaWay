@@ -23,12 +23,15 @@ export function PageList({
   visited,
   go,
   compact,
+  strict,
 }: {
   pages: BookPage[];
   idx: number;
   visited: Set<number>;
   go?: (n: number) => void;
   compact?: boolean;
+  /** «пройдено» — лише позначене кнопкою (не все, що лишилось позаду поточної сторінки) */
+  strict?: boolean;
 }) {
   const t = useT();
   const bodyRef = useRef<HTMLDivElement>(null);
@@ -94,7 +97,7 @@ export function PageList({
           {pages.length <= MAX_SEGMENTS ? (
             <div className="lp-rail-segs" aria-hidden="true">
               {pages.map((p, i) => (
-                <span key={p.key} data-state={i === idx ? 'here' : done(i) || i < idx ? 'done' : undefined} />
+                <span key={p.key} data-state={i === idx ? 'here' : done(i) || (!strict && i < idx) ? 'done' : undefined} />
               ))}
             </div>
           ) : (

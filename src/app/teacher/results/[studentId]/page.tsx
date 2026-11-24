@@ -6,6 +6,8 @@ import { lessonTitle } from '@/lib/lesson-titles';
 import { canonPoint, isServicePoint, pointLabel } from '@/lib/grammar-registry';
 import { ArchiveButton, DeleteLessonButton } from './StudentActions';
 import { t } from '@/i18n/server';
+import { createAdminClient } from '@/lib/supabase/admin';
+import { PHOTO_BUCKET, splitAnswer } from '@/lib/answer-photos';
 
 export const dynamic = 'force-dynamic';
 
@@ -52,11 +54,12 @@ type ExamRow = {
 
 const EMBED_LABEL: Record<string, string> = {
   grammar: 'Gramatyka',
+  lecture: 'Lekcja — odpowiedzi pisemne',
   hw: 'Praca domowa',
   exam: 'Egzamin',
   'grammar-board': 'Tablica',
 };
-const EMBED_ORDER = ['grammar', 'grammar-board', 'hw', 'exam'];
+const EMBED_ORDER = ['grammar', 'grammar-board', 'hw', 'exam', 'lecture'];
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 function summarize(attempts: Attempt[]) {
@@ -165,6 +168,18 @@ export default async function StudentResultsPage({ params }: { params: { student
   const exams = (examRows ?? []) as ExamRow[];
 
   const attempts = (data ?? []) as Attempt[];
+
+  // фото до письмових відповідей: бакет приватний — віддаємо підписані посилання на годину
+  const photoPaths = Array.from(
+    new Set(attempts.filter((a) => a.is_correct === null).flatMap((a) => splitAnswer(a.answer).photos))
+  );
+  const photoUrl = new Map<string, string>();
+  if (photoPaths.length) {
+    const admin = createAdminClient();
+    const { data: signed } = (await admin?.storage.from(PHOTO_BUCKET).createSignedUrls(photoPaths, 3600)) ?? { data: null };
+    for (const x of signed ?? []) if (x.path && x.signedUrl) photoUrl.set(x.path, x.signedUrl);
+  }
+
   const lessons = Array.from(summarize(attempts).entries()).sort((a, b) =>
     b[1].lastAt.localeCompare(a[1].lastAt)
   );
@@ -359,7 +374,26 @@ export default async function StudentResultsPage({ params }: { params: { student
                               {open.map((o) => (
                                 <div key={o.id} className="mt-3 rounded-lg border border-gold/30 p-3">
                                   {o.prompt ? <p className="mb-1 text-xs text-paper-muted">{o.prompt}</p> : null}
-                                  <p className="whitespace-pre-wrap text-sm text-paper">{o.lastAnswer}</p>
+                                  {(() => {
+                                    const a = splitAnswer(o.lastAnswer);
+                                    return (
+                                      <>
+                                        {a.text ? <p className="whitespace-pre-wrap text-sm text-paper">{a.text}</p> : null}
+                                        {a.photos.length > 0 && (
+                                          <div className="mt-2 flex flex-wrap gap-2">
+                                            {a.photos.map((p) =>
+                                              photoUrl.get(p) ? (
+                                                <a key={p} href={photoUrl.get(p)} target="_blank" rel="noopener noreferrer">
+                                                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                                                  <img src={photoUrl.get(p)} alt={t('Фото відповіді')} className="h-28 w-auto rounded-lg border border-ink-line object-cover" />
+                                                </a>
+                                              ) : null
+                                            )}
+                                          </div>
+                                        )}
+                                      </>
+                                    );
+                                  })()}
                                   <p className="mt-1 text-xs text-paper-muted">
                                     {fmt(o.lastAt)}
                                     {o.versions > 1 ? ` · ${t('версія {n}', { n: o.versions })}` : ''}

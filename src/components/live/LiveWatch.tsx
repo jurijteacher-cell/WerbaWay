@@ -8,7 +8,7 @@ import type { BookPage } from '@/lib/pages/pages';
 import { LessonPager } from '@/components/lesson/LessonPager';
 import { isLessonPath, lessonSlugOf, pickStudent, type ClassMsg, type Presence } from '@/lib/live/protocol';
 import { useLiveChannel } from './useLiveChannel';
-import { MarkLessonDone } from './MarkLessonDone';
+import { InfoSticker } from '@/components/ui/InfoSticker';
 
 /**
  * Викладач бачить, що учень обирає й вписує у вправах; гортає лекцію сам.
@@ -190,12 +190,9 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
           ⟳ {t('Оновити відповіді')}
         </button>
         {slug && studentId && (
-          <>
-            <Link href={`/learn/${slug}`} className="ww-btn ww-btn-ghost" target="_blank">
-              {t('Відкрити лекцію ↗')}
-            </Link>
-            <MarkLessonDone studentId={studentId} lessons={[{ slug, title: student?.title || slug }]} compact />
-          </>
+          <Link href={`/learn/${slug}`} className="ww-btn ww-btn-ghost" target="_blank">
+            {t('Відкрити лекцію ↗')}
+          </Link>
         )}
       </div>
 
@@ -226,9 +223,17 @@ export function LiveWatch({ topic, name, studentId }: { topic: string; name: str
               👁 {t('До учня')}
             </button>
           )}
-          <span className="ww-live-hint">
-            {t('Гортай і клікай «Далі» чи список сторінок у кадрі — учень лишається, де був.')}
-          </span>
+          <InfoSticker
+            label={t('Підказка про гортання')}
+            title={t('Гортання в класі')}
+            items={[
+              t('Гортай і клікай «Далі» чи список сторінок у кадрі — учень лишається, де був.'),
+              t('«👁 Екран учня наживо» — іти за сторінкою учня; «До учня» повертає до нього.'),
+              t('«Оновити відповіді» — якщо відповіді відстали від екрана учня.'),
+            ]}
+            place="down-end"
+            tone="sky"
+          />
         </div>
       )}
 

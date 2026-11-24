@@ -8,6 +8,8 @@ import { getLocale, t } from '@/i18n/server';
 import { loadDeck } from '@/lib/words';
 import { lectureStats } from '@/lib/lecture-stats';
 import { LectureCard } from '@/components/dashboard/LectureCard';
+import { RefreshOnShow } from '@/components/ui/RefreshOnShow';
+import { InfoSticker } from '@/components/ui/InfoSticker';
 import { Activity, EmbedBreakdown, Kpi, Section, TopicMastery, WeakList } from '@/components/dashboard/parts';
 
 export const dynamic = 'force-dynamic';
@@ -58,6 +60,7 @@ export default async function DashboardPage() {
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-16">
+      <RefreshOnShow />
       <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="ww-label">{t("Мій прогрес")}</p>
@@ -86,22 +89,36 @@ export default async function DashboardPage() {
       </div>
 
       {isTeacher ? (
-        <p className="mb-8 rounded-lg border border-ink-line p-4 text-sm text-paper-muted">
-          {t("Це особистий прогрес. Відповіді з акаунта викладача не записуються — дивись результати учнів в аналітиці класу.")}
-        </p>
+        <div className="mb-8">
+          <InfoSticker
+            label={t('Чому тут немає відповідей')}
+            title={t('Це особистий прогрес')}
+            items={[
+              t('Відповіді з акаунта викладача не записуються.'),
+              t('Результати учнів дивись в аналітиці класу.'),
+            ]}
+            tone="sky"
+          />
+        </div>
       ) : null}
 
       {homeworkTodo.length > 0 && (
         <Section title={t('Домашка ({n})', { n: homeworkTodo.length })}>
-          <div className="flex flex-col gap-2">
+          <div className="grid gap-3 md:grid-cols-2">
             {homeworkTodo.map((h) => (
               <Link
                 key={h.lesson_slug as string}
                 href={`/learn/${h.lesson_slug}/hw`}
-                className="flex items-center justify-between gap-3 rounded-xl border border-gold/50 bg-ink-raised px-4 py-3 transition-colors hover:border-gold"
+                className="group flex items-center justify-between gap-4 rounded-2xl border border-ink-line bg-ink-raised p-4 shadow-[var(--ww-shadow-card)] transition-all hover:-translate-y-px hover:border-gold/60"
               >
-                <span className="text-paper">📝 {h.title}</span>
-                <span className="text-sm text-paper-muted">задано {fmtDate(h.homework_assigned_at as string)} →</span>
+                <span className="min-w-0">
+                  <span className="mb-1 inline-block rounded bg-punch-fill px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-punch">
+                    {t('Домашка')}
+                  </span>
+                  <span className="block truncate font-display text-lg leading-snug text-paper">{h.title}</span>
+                  <span className="block text-xs text-paper-muted">{t('задано {date}', { date: fmtDate(h.homework_assigned_at as string) })}</span>
+                </span>
+                <span className="ww-btn ww-btn-primary ww-btn-sm shrink-0">{t('Виконати →')}</span>
               </Link>
             ))}
           </div>

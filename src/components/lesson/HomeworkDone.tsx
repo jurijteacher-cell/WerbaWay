@@ -29,7 +29,7 @@ export function HomeworkDone({ slug, assigned, done }: { slug: string; assigned:
   }
 
   if (!assigned) {
-    return <div className="lp-hwdone">{t("Цю домашку ще не задано: вона з’явиться, коли викладач завершить лекцію.")}</div>;
+    return <div className="lp-hwdone">{t("Домашка відкриється, щойно ти пройдеш хоча б 20% лекції (кнопка «Пройдено» внизу сторінок).")}</div>;
   }
   return (
     <div className="lp-hwdone">

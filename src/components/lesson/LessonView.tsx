@@ -24,9 +24,11 @@ type Props = {
   canShare?: boolean;
   /** викладач переглядає лекцію з кошика */
   inTrash?: boolean;
+  /** учень з акаунтом: сторінки, які він уже позначив «Пройдено» (null — прогрес не ведеться) */
+  progressDone?: string[] | null;
 };
 
-export function LessonView({ page, mode, hw, pageIndex = 0, teacherNotes, publicBase, canShare, inTrash }: Props) {
+export function LessonView({ page, mode, hw, pageIndex = 0, teacherNotes, publicBase, canShare, inTrash, progressDone }: Props) {
   const base = publicBase ?? `/learn/${page.meta.slug}`;
   const { meta, sections } = page;
   const book = buildPages(page);
@@ -115,6 +117,7 @@ export function LessonView({ page, mode, hw, pageIndex = 0, teacherNotes, public
           hasHomework={page.hasHomework}
           base={base}
           doneHref={publicBase ? null : '/learn'}
+          progress={progressDone ? { done: progressDone } : undefined}
         />
       )}
 

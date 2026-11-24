@@ -95,6 +95,8 @@ function ItemPhoto({ item }: { item: { image_url?: string; image_alt?: string; i
   );
 }
 
+const MAX_TRIES = 3;
+
 export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
   const levels = useMemo(() => {
     if (!blockIds?.length) return data.levels;
@@ -117,6 +119,8 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
   const [failCounts, setFailCounts] = useState<Record<string, number>>({});
   const [showAnswer, setShowAnswer] = useState<Record<string, boolean>>({});
   const [sbOk, setSbOk] = useState<Record<string, boolean>>({});
+  /** items closed after MAX_TRIES wrong tries: the right answer was shown, the item counts as not solved */
+  const [revealed, setRevealed] = useState<Record<string, boolean>>({});
   const [focusKey, setFocusKey] = useState<string | null>(null);
   const [also, setAlso] = useState<Record<string, string[]>>({});
   /** «ułóż» order the student got right — to show the solved line again after reopening */
@@ -143,6 +147,7 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
     fails: Record<string, number>;
     showAnswer: Record<string, boolean>;
     sbOk: Record<string, boolean>;
+    revealed?: Record<string, boolean>;
     sbGiven: Record<string, string>;
     also: Record<string, string[]>;
   };
@@ -157,6 +162,7 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
       setFailCounts(snap.fails ?? {});
       setShowAnswer(snap.showAnswer ?? {});
       setSbOk(snap.sbOk ?? {});
+      setRevealed(snap.revealed ?? {});
       setSbGiven(snap.sbGiven ?? {});
       setAlso(snap.also ?? {});
       const done: Record<string, boolean> = {};
@@ -180,10 +186,11 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
       fails: failCounts,
       showAnswer,
       sbOk,
+      revealed,
       sbGiven,
       also,
     });
-  }, [ready, scope, levelIdx, fillAnswers, openAnswers, matchPairs, feedback, hints, failCounts, showAnswer, sbOk, sbGiven, also]);
+  }, [ready, scope, levelIdx, fillAnswers, openAnswers, matchPairs, feedback, hints, failCounts, showAnswer, sbOk, revealed, sbGiven, also]);
 
   /** Drop answers of one level (prefix `${level}-`) or of everything. */
   const resetProgress = (lvl: Level | null) => {
@@ -197,6 +204,7 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
     setFailCounts(drop);
     setShowAnswer(drop);
     setSbOk(drop);
+    setRevealed(drop);
     setSbGiven(drop);
     setAlso(drop);
     setMatchPairs((p) => (lvl ? Object.fromEntries(Object.entries(p).filter(([k]) => k !== String(lvl.level))) : {}));
@@ -222,7 +230,8 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
     if (l.task_type === 'matching') done = Object.keys(matchPairs[String(l.level)] ?? {}).length;
     else if (l.task_type === 'sentence-building') done = items.filter((it) => sbOk[keyFor(l, it.id)]).length;
     else done = items.filter((it) => feedback[keyFor(l, it.id)] === true).length;
-    return { done: Math.min(done, total), total };
+    const missed = items.filter((it) => revealed[keyFor(l, it.id)]).length;
+    return { done: Math.min(done, total), total, missed };
   };
 
   const level = levels[levelIdx];
@@ -286,11 +295,17 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
       [expected, ...(accept ?? [])].some((a) => stripDiacritics(a) === stripDiacritics(given));
     setHints((h) => ({ ...h, [k]: almost ? 'Prawie! Dodaj polskie znaki: ą ć ę ł ń ó ś ź ż.' : result.hint }));
     if (!result.ok) {
-      setFailCounts((c) => {
-        const n = (c[k] ?? 0) + 1;
-        if (n >= 2) setShowAnswer((s) => ({ ...s, [k]: true }));
-        return { ...c, [k]: n };
-      });
+      const n = (failCounts[k] ?? 0) + 1;
+      setFailCounts((c) => ({ ...c, [k]: n }));
+      if (n >= MAX_TRIES) {
+        // 3rd miss: the wrong answer is already recorded above → show the right one, close the item
+        doneRef.current[k] = true;
+        setFillAnswers((a) => ({ ...a, [k]: expected }));
+        setOpenAnswers((a) => ({ ...a, [k]: expected }));
+        setFeedback((f) => ({ ...f, [k]: true }));
+        setHints((h) => ({ ...h, [k]: null }));
+        setRevealed((r) => ({ ...r, [k]: true }));
+      }
     }
     return result.ok;
   };
@@ -361,31 +376,34 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
     </span>
   );
 
-  const wrongNote = (k: string, item: GrammarPyramidItem, expected: string, onShow: () => void) =>
-    hints[k] && !showAnswer[k] ? (
-      <Feedback kind="hint">{hints[k]}</Feedback>
+  const wrongNote = (k: string, item: GrammarPyramidItem, _expected: string, _onShow: () => void) => {
+    const left = Math.max(0, MAX_TRIES - (failCounts[k] ?? 0));
+    const tries = (
+      <span className="nb-tries">
+        {' '}
+        {left === 1 ? 'Ostatnia próba.' : `Zostały ${left} próby.`}
+      </span>
+    );
+    return hints[k] ? (
+      <Feedback kind="hint">
+        {hints[k]}
+        {tries}
+      </Feedback>
     ) : (
-    <Feedback
-      kind="no"
-      action={
-        showAnswer[k] ? (
-          <button type="button" className="nb-btn ghost sm" onClick={onShow}>
-            <Eye aria-hidden /> Pokaż
-          </button>
-        ) : null
-      }
-    >
-      {item.explanation ? (
-        item.explanation
-      ) : showAnswer[k] ? (
-        <>
-          Poprawnie: <span className="pl">{expected}</span>
-        </>
-      ) : (
-        'Jeszcze nie — popraw i sprawdź jeszcze raz.'
-      )}
-    </Feedback>
-  );
+      <Feedback kind="no">
+        {item.explanation ? item.explanation : 'Jeszcze nie — popraw i sprawdź jeszcze raz.'}
+        {tries}
+      </Feedback>
+    );
+  };
+
+  /** Shown under an item that was closed after MAX_TRIES misses. */
+  const revealedNote = (k: string, expected: string) =>
+    revealed[k] ? (
+      <Feedback kind="info">
+        Poprawna odpowiedź: <span className="pl">{expected}</span>. Nie liczy się do wyniku — idziemy dalej.
+      </Feedback>
+    ) : null;
 
   return (
     <div>
@@ -516,6 +534,20 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
                           }));
                           setMatchLeft((m) => ({ ...m, [String(level.level)]: null }));
                         } else {
+                          const mk = key(item.id);
+                          const n = (failCounts[mk] ?? 0) + 1;
+                          setFailCounts((c) => ({ ...c, [mk]: n }));
+                          if (n >= MAX_TRIES) {
+                            // 3rd miss: wrong pick already recorded → pair it correctly, count as not solved
+                            const good = String(item.answer ?? '');
+                            setMatchPairs((p) => ({
+                              ...p,
+                              [String(level.level)]: { ...(p[String(level.level)] ?? {}), [leftId]: good },
+                            }));
+                            setMatchLeft((m) => ({ ...m, [String(level.level)]: null }));
+                            setRevealed((r) => ({ ...r, [mk]: true }));
+                            return;
+                          }
                           setMatchWrong(right);
                           setTimeout(() => setMatchWrong((w) => (w === right ? null : w)), 420);
                         }
@@ -672,6 +704,7 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
                       }
                     />
                   ) : null}
+                  {revealedNote(k, expected)}
                   {fb === true && hints[k] ? <Feedback kind="hint">{hints[k]!.replace(/^↳\s*/, '')}</Feedback> : null}
                   {fb === true && !isTF && !options?.length ? <AlsoCorrect items={also[k] ?? []} /> : null}
                   {fb === true && options?.length && (also[k]?.length ?? 0) > 0 ? (
@@ -710,9 +743,18 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
                       if (ok) {
                         setSbOk((s) => ({ ...s, [k]: true }));
                         setSbGiven((g) => ({ ...g, [k]: given }));
+                      } else {
+                        const n = (failCounts[k] ?? 0) + 1;
+                        setFailCounts((c) => ({ ...c, [k]: n }));
+                        if (n >= MAX_TRIES) {
+                          setSbOk((s) => ({ ...s, [k]: true }));
+                          setSbGiven((g) => ({ ...g, [k]: item.answer ?? '' }));
+                          setRevealed((r) => ({ ...r, [k]: true }));
+                        }
                       }
                     }}
                   />
+                  {revealedNote(k, item.answer ?? '')}
                 </div>
               </div>
             );
@@ -829,6 +871,14 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
                 </div>
               ) : null}
               {focusKey && level.items.some((it) => key(it.id) === focusKey && !it.options?.length) ? <PolishKeys /> : null}
+              {level.items
+                .filter((it) => revealed[key(it.id)])
+                .map((it) => (
+                  <div key={`r-${key(it.id)}`} className="nb-cloze-note">
+                    <span className="nb-cloze-n">{order.indexOf(String(it.id)) + 1}</span>
+                    {revealedNote(key(it.id), String(it.answer ?? ''))}
+                  </div>
+                ))}
               {wrong.map((it) => {
                 const k = key(it.id);
                 const expected = String(it.answer ?? '');
@@ -873,6 +923,19 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
               if (good) doneRef.current[key(item.id)] = true;
             });
             const first = level.items[0];
+            const orderOk = given.every((id, i) => id === expected[i]);
+            if (!orderOk) {
+              const n = (failCounts[ok] ?? 0) + 1;
+              setFailCounts((c) => ({ ...c, [ok]: n }));
+              if (n >= MAX_TRIES) {
+                save(expected);
+                level.items.forEach((it) => {
+                  doneRef.current[key(it.id)] = true;
+                  setFeedback((f) => ({ ...f, [key(it.id)]: true }));
+                });
+                setRevealed((r) => ({ ...r, [ok]: true }));
+              }
+            }
             record(
               first,
               given.map((id) => byId.get(id)?.prompt ?? id).join(' → '),
@@ -945,7 +1008,13 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
                 </div>
               ) : null}
               {full && !allOk && level.items.some((it) => feedback[key(it.id)] === false) ? (
-                <Feedback kind="no">Czerwone są nie na swoim miejscu. Kliknij je, a wrócą na dół — i ułóż jeszcze raz.</Feedback>
+                <Feedback kind="no">
+                  Czerwone są nie na swoim miejscu. Kliknij je, a wrócą na dół — i ułóż jeszcze raz.{' '}
+                  {MAX_TRIES - (failCounts[ok] ?? 0) === 1 ? 'Ostatnia próba.' : `Zostały ${MAX_TRIES - (failCounts[ok] ?? 0)} próby.`}
+                </Feedback>
+              ) : null}
+              {revealed[ok] ? (
+                <Feedback kind="info">Tak wygląda poprawna kolejność. Nie liczy się do wyniku — idziemy dalej.</Feedback>
               ) : null}
             </div>
           );
@@ -1017,7 +1086,8 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
                   ) : null}
                   {expected ? (
                     <>
-                      {fb === true ? (
+                      {revealedNote(k, String(expected))}
+                      {fb === true && !revealed[k] ? (
                         <Feedback kind="ok">
                           <b>Dobra robota!</b>
                           {hints[k] ? <> {hints[k]!.replace(/^↳\s*/, '')}</> : null}
@@ -1060,7 +1130,11 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
       {levelDone && !bare ? (
         isLast || single ? (
           allDone ? (
-            <LevelDone title="Wszystko zrobione!" text="Każde zadanie jest poprawne. Brawo!" />
+            levels.some((l) => stats(l).missed > 0) ? (
+              <LevelDone title="Wszystko zrobione!" text="Zadania zamknięte. Do błędnych wrócimy w powtórce." />
+            ) : (
+              <LevelDone title="Wszystko zrobione!" text="Każde zadanie jest poprawne. Brawo!" />
+            )
           ) : (
             <LevelDone
               text="Ten poziom jest gotowy. Zostały jeszcze inne."
@@ -1069,7 +1143,7 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
             />
           )
         ) : (
-          <LevelDone text={`${cur.total} z ${cur.total} poprawnie.`} onNext={() => goTo(levelIdx + 1)} />
+          <LevelDone text={`${cur.total - cur.missed} z ${cur.total} poprawnie.`} onNext={() => goTo(levelIdx + 1)} />
         )
       ) : null}
 

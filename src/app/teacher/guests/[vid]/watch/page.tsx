@@ -5,6 +5,7 @@ import { LiveWatch } from '@/components/live/LiveWatch';
 import { guestTopic } from '@/lib/live/protocol';
 import { guestLabel } from '@/lib/guest';
 import { t } from '@/i18n/server';
+import { InfoSticker } from '@/components/ui/InfoSticker';
 
 export const dynamic = 'force-dynamic';
 
@@ -27,15 +28,22 @@ export default async function WatchGuestPage({ params }: { params: { vid: string
 
   return (
     <main className="mx-auto max-w-[1400px] px-4 py-6">
-      <div className="mb-4 flex flex-wrap items-baseline gap-x-4 gap-y-1">
+      <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-2">
         <Link href="/teacher/students" className="text-sm text-paper-muted hover:text-gold">
           {t("← Учні")}
         </Link>
         <h1 className="font-display text-2xl text-paper">{t('Відповіді гостя: {name}', { name })}</h1>
-        <p className="text-sm text-paper-muted">
-          {guest.ua ? `${guest.ua} · ` : ''}
-          {t('Гість бачить позначку «Викладач бачить твої відповіді». Ти бачиш, що він обирає й вписує у вправах; лекцію гортаєш сам — у гостя нічого не змінюється.')}
-        </p>
+        <InfoSticker
+          icon="eye"
+          label={t('Що бачить гість і що бачиш ти')}
+          title={t('Як працює «Дивитися»')}
+          items={[
+            ...(guest.ua ? [String(guest.ua)] : []),
+            t('Гість бачить стікер «Викладач бачить твої відповіді».'),
+            t('Ти бачиш, що він обирає й вписує у вправах.'),
+            t('Лекцією гортаєш сам — у гостя нічого не змінюється.'),
+          ]}
+        />
       </div>
       <LiveWatch topic={guestTopic(params.vid)} name={name} />
     </main>

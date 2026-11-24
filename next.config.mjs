@@ -6,6 +6,9 @@ const nextConfig = {
     remotePatterns: [{ protocol: 'https', hostname: 'developers.google.com', pathname: '/static/identity/images/**' }],
   },
   experimental: {
+    // Сторінки кабінету (слова, прогрес, домашка) — завжди свіжі: без клієнтського кешу роутера
+    // учень бачив старий прогрес після повернення з тренування, доки не оновить сторінку
+    staleTimes: { dynamic: 0, static: 30 },
     // Лекції, вправи й карти перекладів читаються з диска (fs) — без цього Vercel
     // не покладе ці файли у серверну функцію
     outputFileTracingIncludes: {
