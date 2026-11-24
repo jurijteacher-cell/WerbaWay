@@ -2,7 +2,7 @@
 
 import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
-import { MessageSquare, X } from 'lucide-react';
+import { LayoutDashboard, MessageSquare, Plus, X } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 import { useLocale, useT } from '@/i18n/client';
 import { HTML_LANG } from '@/i18n/config';
@@ -17,6 +17,7 @@ import {
   type LocalChat,
 } from '@/lib/dock/protocol';
 import { useDock } from './DockChannel';
+import { WordsPanel } from './WordsPanel';
 
 const LS_KEY = 'ww.dock';
 const LS_SOUND = 'ww.dock.sound';
@@ -112,6 +113,7 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
   const { link, send, listen, subscribedTick } = useDock();
 
   const [open, setOpen] = useState(!!defaultOpen);
+  const [tab, setTab] = useState<'chat' | 'words'>('chat');
   const [width, setWidth] = useState(W_DEF);
   const [desktop, setDesktop] = useState(true);
   const [msgs, setMsgs] = useState<LocalChat[]>([]);
@@ -286,7 +288,7 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
     [msgs, role]
   );
   useEffect(() => {
-    if (!open || !visible || unread === 0) return;
+    if (!open || tab !== 'chat' || !visible || unread === 0) return;
     const at = new Date().toISOString();
     (async () => {
       if (role === 'student') await supabase.rpc('mark_chat_read');
@@ -294,7 +296,7 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
       setMsgs((p) => p.map((x) => (x.sender_role !== role && !x.read_at ? { ...x, read_at: at } : x)));
       void send({ k: 'chat-read', by: role, at });
     })();
-  }, [open, visible, unread, role, studentId, supabase, send]);
+  }, [open, tab, visible, unread, role, studentId, supabase, send]);
 
   /* ── прокрутка вниз ── */
   const shown = useMemo(() => {
@@ -364,6 +366,15 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
       void send({ k: 'chat', m: data as ChatRow });
     },
     [getSelf, studentId, role, supabase, send]
+  );
+
+  /** картка слова, яку API вже записав у чат: показуємо в себе й розсилаємо по каналу */
+  const onWordChat = useCallback(
+    (row: ChatRow) => {
+      setMsgs((p) => mergeRows(p, [row]));
+      void send({ k: 'chat', m: row });
+    },
+    [send]
   );
 
   function submit() {
@@ -480,7 +491,8 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
           onPointerLeave={cancelPress}
           onPointerCancel={cancelPress}
         >
-          <p className="ww-dock-body">{del ? t('повідомлення видалено') : <Linkified text={m.body} />}</p>
+          <p className="ww-dock-body">{del ? t('повідомлення видалено') : m.kind === 'word' ? <><b>{t('Нове слово')}:</b> {m.body}</> : <Linkified text={m.body} />}</p>
+          {!del && m.kind === 'word' && typeof m.meta?.example === 'string' && <span className="ww-dock-wordex">{m.meta.example}</span>}
           <p className="ww-dock-meta">
             <time dateTime={m.created_at}>{fmtTime.format(new Date(m.created_at))}</time>
             {own && !m.local && !del && <span aria-label={m.read_at ? t('Прочитано') : t('Надіслано')}>{m.read_at ? ' ✓✓' : ' ✓'}</span>}
@@ -520,11 +532,23 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
   return (
     <div data-testid="class-dock">
       {!open && (
-        <button type="button" className="ww-dock-toggle" onClick={() => toggle(true)} aria-label={unread ? t('Чат: непрочитаних {n}', { n: unread }) : t('Чат')} title={`${t('Чат')} (Alt+C)`} data-testid="dock-open">
-          <MessageSquare size={20} aria-hidden="true" />
-          <span className="ww-dock-toggle-text">{t('Чат')}</span>
-          {unread > 0 && <span className="ww-dock-badge">{unread > 9 ? '9+' : unread}</span>}
-        </button>
+        <div className="ww-dock-launch">
+          <button type="button" className="ww-dock-toggle" onClick={() => { setTab('chat'); toggle(true); }} aria-label={unread ? t('Чат: непрочитаних {n}', { n: unread }) : t('Чат')} title={`${t('Чат')} (Alt+C)`} data-testid="dock-open">
+            <MessageSquare size={20} aria-hidden="true" />
+            <span className="ww-dock-toggle-text">{t('Чат')}</span>
+            {unread > 0 && <span className="ww-dock-badge">{unread > 9 ? '9+' : unread}</span>}
+          </button>
+          <button type="button" className="ww-dock-toggle" onClick={() => { setTab('words'); toggle(true); }} aria-label={t('Додати слово')} title={t('Додати слово')} data-testid="dock-add-word">
+            <Plus size={20} aria-hidden="true" />
+            <span className="ww-dock-toggle-text">{t('Слово')}</span>
+          </button>
+          {role === 'teacher' && (
+            <button type="button" className="ww-dock-toggle is-soon" aria-disabled="true" onClick={(e) => e.preventDefault()} aria-label={t('Дошка — скоро')} title={t('Дошка — буде в наступному оновленні')} data-testid="dock-board">
+              <LayoutDashboard size={20} aria-hidden="true" />
+              <span className="ww-dock-toggle-text">{t('Дошка')}</span>
+            </button>
+          )}
+        </div>
       )}
       {open && (
         <aside
@@ -548,7 +572,23 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
             </button>
           </header>
 
-          {slugForFilter && (
+          <div className="ww-dock-tabs" role="tablist" aria-label={t('Розділи дока')}>
+            <button type="button" role="tab" aria-selected={tab === 'chat'} onClick={() => setTab('chat')}>
+              {t('Чат')}
+              {unread > 0 && tab !== 'chat' ? ` (${unread})` : ''}
+            </button>
+            <button type="button" role="tab" aria-selected={tab === 'words'} onClick={() => setTab('words')}>
+              {t('Слова')}
+            </button>
+          </div>
+
+          {tab === 'words' && (
+            <div className="ww-dock-scroll">
+              <WordsPanel ownerId={studentId} forStudent={role === 'teacher'} onChat={onWordChat} />
+            </div>
+          )}
+
+          {tab === 'chat' && slugForFilter && (
             <div className="ww-dock-filter" role="group" aria-label={t('Фільтр')}>
               <button type="button" aria-pressed={!filterSlug} onClick={() => setFilterSlug(null)}>
                 {t('Усі')}
@@ -559,8 +599,9 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
             </div>
           )}
 
-          {link === 'offline' && <p className="ww-dock-offline">{t('Немає зв’язку — перепідключаюсь. Надіслане збережеться.')}</p>}
+          {tab === 'chat' && link === 'offline' && <p className="ww-dock-offline">{t('Немає зв’язку — перепідключаюсь. Надіслане збережеться.')}</p>}
 
+          {tab === 'chat' && (
           <div
             ref={listRef}
             className="ww-dock-list"
@@ -580,7 +621,9 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
             {shown.length === 0 && <p className="ww-dock-empty">{role === 'student' ? t('Напиши викладачу — він відповість тут.') : t('Поки немає повідомлень. Напиши першим.')}</p>}
             {items}
           </div>
+          )}
 
+          {tab === 'chat' && (
           <form
             className="ww-dock-compose"
             onSubmit={(e) => {
@@ -615,6 +658,7 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
             </button>
             {over && <span className="ww-dock-count">{text.length}/{CHAT_MAX}</span>}
           </form>
+          )}
         </aside>
       )}
     </div>
