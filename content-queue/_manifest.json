@@ -3510,7 +3510,6 @@
         "grammar_part2": "https://werba-way.vercel.app/embed/pl-b1-group-23-internet/grammar?blocks=g5-g8",
         "comm_tasks": "https://werba-way.vercel.app/embed/pl-b1-group-23-internet/comm-tasks",
         "exam_e1": "https://werba-way.vercel.app/embed/pl-b1-group-23-internet/exam?blocks=e1",
-        "exam_e2": "https://werba-way.vercel.app/embed/pl-b1-group-23-internet/exam?blocks=e2",
         "hw": "https://werba-way.vercel.app/embed/pl-b1-group-23-internet/hw"
       },
       "audio": [
@@ -3527,7 +3526,7 @@
       "recycles": [
         "pl-b1-group-20-pieniadze"
       ],
-      "notes": "Лекція 23 (після R4). Граматика: siebie / sobie / sobą, się при зворотних, взаємність (nawzajem) — новий тег zaimek-siebie (B1). Сюжет: бабуся Ганна купила смартфон, Максим і Бартек вчать її інтернету; Іра на відеодзвінку. Аудіо через сайт: -czytanie.mp3 і -e2-dialogi.mp3 (потрібна генерація після деплою). Відео в ДЗ немає (YouTube недоступний у сесії): замість нього голосове повідомлення. Тільки сайт, без Notion.",
+      "notes": "Лекція 23 (після R4). Граматика: siebie / sobie / sobą, się при зворотних, взаємність (nawzajem) — новий тег zaimek-siebie (B1). Сюжет: бабуся Ганна купила смартфон, Максим і Бартек вчать її інтернету; Іра на відеодзвінку. Аудіо через сайт: -czytanie.mp3 і -e2-dialogi.mp3 (потрібна генерація після деплою). Слухання e2 НЕ опубліковано (правило v3.20: без готового аудіо вправу не додаємо): блок лежить у content-queue/audio-pending/pl-b1-group-23-internet-e2-block.json; після ready:true в /api/audio/_status — повернути блок в -exam.json, embed ?blocks=e2 на сторінку (розділ «Słuchanie» перед Podsumowanie) і exam_e2 у цей маніфест. Відео в ДЗ: SprzętoZnawca, «5 rzeczy, które MUSISZ ustawić w telefonie seniora!» (Kh4AeEI_pFs), 3 хв, 106 тис. переглядів, 24.11.2026. Тільки сайт, без Notion.",
       "site_url": "https://werbaway.com/learn/pl-b1-group-23-internet"
     }
   ]

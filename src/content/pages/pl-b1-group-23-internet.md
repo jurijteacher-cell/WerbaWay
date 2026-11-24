@@ -251,21 +251,7 @@ Zadania komunikacyjne
 
 ---
 
-## 🎧 7. Słuchanie jak na egzaminie
-
-<aside class="lp-callout" data-tone="blue"><span class="lp-callout-icon" aria-hidden="true">🎧</span><div class="lp-callout-body">
-
-Cztery krótkie dialogi o internecie — tak jak w zadaniu ze słuchu na egzaminie B1. Najpierw przeczytaj pytania. Każdy dialog usłyszysz <b>dwa razy</b>.
-
-</div></aside>
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-23-internet/exam?blocks=e2">
-Słuchanie — jak na egzaminie
-</embed>
-
----
-
-## ✅ 8. Podsumowanie
+## ✅ 7. Podsumowanie
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🏁</span><div class="lp-callout-body">
 
@@ -281,13 +267,29 @@ Słuchanie — jak na egzaminie
 
 ---
 
-## 🏠 9. Praca domowa
+## 🏠 8. Praca domowa
 
-Trzy części: <b>ćwiczenia</b>, <b>nagranie</b> i <b>pisanie</b>.
+Cztery części: <b>ćwiczenia</b>, <b>film</b>, <b>nagranie</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-23-internet/hw">
 Praca domowa
 </embed>
+
+### 🎬 Wideo
+
+Obejrzyj film <b>„5 rzeczy, które MUSISZ ustawić w telefonie seniora!”</b> (kanał SprzętoZnawca, około 3 minut):
+
+<video source="https://www.youtube.com/watch?v=Kh4AeEI_pFs">
+5 rzeczy, które MUSISZ ustawić w telefonie seniora!
+</video>
+
+Odpowiedz pisemnie (po 1–2 zdania):
+
+1. Które ustawienie z filmu pomogłoby Hannie z naszego tekstu najbardziej? Dlaczego?
+1. Jakie ustawienia chroniące dane i pomagające znaleźć zgubiony telefon pokazuje autor? Napisz, co byś sobie włączył(a).
+1. Kto z Twojej rodziny potrzebuje takich ustawień? Napisz, jak mu pomożesz. Użyj <i>sobie</i>, <i>siebie</i> albo <i>nawzajem</i>.
+
+---
 
 ### 🎙️ Nagranie
 
