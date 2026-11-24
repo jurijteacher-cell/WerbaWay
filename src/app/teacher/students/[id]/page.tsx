@@ -13,6 +13,7 @@ import { Activity, Section, TopicMastery, WeakList } from '@/components/dashboar
 import { AccessEditor, type ModuleInfo } from '@/components/teacher/AccessEditor';
 import { EmailStudent } from '@/components/teacher/EmailStudent';
 import { LiveBadgeFor } from '@/components/live/LiveBadge';
+import { TeacherDock } from '@/components/dock/TeacherDock';
 import { MarkLessonDone } from '@/components/live/MarkLessonDone';
 import { t } from '@/i18n/server';
 
@@ -30,7 +31,7 @@ function Tile({ value, label, tone }: { value: string | number; label: string; t
 }
 
 /** Профіль учня: прогрес, лекції, пройдені разом, слова, пробні іспити, доступ. id = акаунт або embed-учень (лише Notion). */
-export default async function StudentProfilePage({ params }: { params: { id: string } }) {
+export default async function StudentProfilePage({ params, searchParams }: { params: { id: string }; searchParams: { dock?: string; lesson?: string } }) {
   const supabase = await requireTeacher(`/teacher/students/${params.id}`);
   if (!UUID.test(params.id)) notFound();
 
@@ -58,6 +59,24 @@ export default async function StudentProfilePage({ params }: { params: { id: str
       ? supabase.from('mock_results').select('*').eq('user_id', userId).order('created_at', { ascending: false }).limit(10)
       : Promise.resolve({ data: [] as never[] }),
   ]);
+
+  // скільки повідомлень чату прив'язано до кожної лекції (для посилання «Чат цієї лекції»)
+  const chatCounts = new Map<string, number>();
+  if (userId) {
+    const { data: chatRows } = await supabase
+      .from('class_messages')
+      .select('lesson_slug')
+      .eq('student_id', userId)
+      .not('lesson_slug', 'is', null)
+      .is('deleted_at', null)
+      .order('created_at', { ascending: false })
+      .limit(2000);
+    for (const r of chatRows ?? []) chatCounts.set(r.lesson_slug as string, (chatCounts.get(r.lesson_slug as string) ?? 0) + 1);
+  }
+  const chatLink = (slug: string) => {
+    const n = chatCounts.get(slug) ?? 0;
+    return n ? { count: n, href: `/teacher/students/${params.id}?dock=1&lesson=${encodeURIComponent(slug)}` } : null;
+  };
 
   const s = summarize(attempts);
   const hidden = await fetchHidden(supabase);
@@ -205,6 +224,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
                     completedAt={row.completed_at as string}
                     homework={{ assigned: !!row.homework_assigned_at, done: !!row.homework_done_at }}
                     fmt={fmtDate}
+                    chat={chatLink(page!.slug)}
                   />
                 ))}
               </div>
@@ -236,6 +256,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
                   completedAt={row.completed_at as string}
                   homework={null}
                   fmt={fmtDate}
+                  chat={chatLink(page!.slug)}
                 />
               ))}
             </div>
@@ -259,6 +280,7 @@ export default async function StudentProfilePage({ params }: { params: { id: str
                   completedAt={null}
                   homework={null}
                   fmt={fmtDate}
+                  chat={chatLink(page.slug)}
                 />
               ))}
             </div>
@@ -318,6 +340,14 @@ export default async function StudentProfilePage({ params }: { params: { id: str
             />
           </Section>
         </div>
+      )}
+      {userId && (
+        <TeacherDock
+          studentId={userId}
+          name={name}
+          defaultOpen={searchParams.dock === '1'}
+          initialFilterLesson={/^[a-z0-9][a-z0-9-]*$/.test(searchParams.lesson ?? '') ? searchParams.lesson : undefined}
+        />
       )}
     </main>
   );

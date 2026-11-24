@@ -13,6 +13,8 @@ type Props = {
   completedAt?: string | null;
   homework?: { assigned: boolean; done: boolean } | null;
   fmt: (iso: string) => string;
+  /** викладач: скільки повідомлень чату прив'язано до цієї лекції (посилання відкриває чат з фільтром) */
+  chat?: { count: number; href: string } | null;
 };
 
 const TONE = {
@@ -70,7 +72,7 @@ function Bar({ label, p, done, total }: { label: string; p: number | null; done:
   );
 }
 
-export function LectureCard({ slug, title, level, icon, cover, stats, completedAt, homework, fmt }: Props) {
+export function LectureCard({ slug, title, level, icon, cover, stats, completedAt, homework, fmt, chat }: Props) {
   const g = gradeLabel(stats.grade);
   const tone = TONE[g.tone];
   const hwState = !homework?.assigned
@@ -117,6 +119,11 @@ export function LectureCard({ slug, title, level, icon, cover, stats, completedA
                 total: stats.lecture.gradedTotal + stats.homework.gradedTotal,
               })}
             </span>
+          )}
+          {chat && chat.count > 0 && (
+            <Link href={chat.href} prefetch={false} className="font-medium text-gold hover:text-gold-bright">
+              {t("Чат цієї лекції ({n})", { n: chat.count })}
+            </Link>
           )}
           {hwState && <span className={`ml-auto rounded-full px-2.5 py-1 font-medium ${hwState.cls}`}>{hwState.text}</span>}
           {homework?.assigned && !homework.done && (

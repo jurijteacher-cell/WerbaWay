@@ -6,7 +6,7 @@ import { t } from '@/i18n/server';
 export const dynamic = 'force-dynamic';
 
 /** Останні здані домашки — для дзвіночка викладача */
-export async function GET() {
+export async function GET(req: Request) {
   const supabase = createClient();
   const {
     data: { user },
@@ -15,6 +15,42 @@ export async function GET() {
 
   const { data: me } = await supabase.from('profiles').select('role').eq('id', user.id).single();
   if (me?.role !== 'teacher') return NextResponse.json({ error: 'forbidden' }, { status: 403 });
+
+  // непрочитані повідомлення учнів у чаті — по одному рядку на учня
+  const { data: chatRows } = await supabase
+    .from('class_messages')
+    .select('student_id, body, created_at')
+    .eq('sender_role', 'student')
+    .is('read_at', null)
+    .is('deleted_at', null)
+    .order('created_at', { ascending: false })
+    .limit(300);
+  const byStudent = new Map<string, { n: number; body: string; at: string }>();
+  for (const m of chatRows ?? []) {
+    const cur = byStudent.get(m.student_id as string);
+    if (cur) cur.n += 1;
+    else byStudent.set(m.student_id as string, { n: 1, body: m.body as string, at: m.created_at as string });
+  }
+  const chatIds = [...byStudent.keys()];
+  const { data: chatProfiles } = chatIds.length
+    ? await supabase.from('profiles').select('id, full_name, first_name, last_name').in('id', chatIds)
+    : { data: [] as { id: string; full_name: string | null; first_name: string | null; last_name: string | null }[] };
+  const chatItems = chatIds.map((id) => {
+    const p = (chatProfiles ?? []).find((x) => x.id === id);
+    const name = p?.full_name?.trim() || [p?.first_name, p?.last_name].filter(Boolean).join(' ').trim() || t("Учень");
+    const c = byStudent.get(id)!;
+    return {
+      kind: 'chat' as const,
+      id: `chat:${id}`,
+      studentId: id,
+      name,
+      title: c.body.length > 90 ? `${c.body.slice(0, 90)}…` : c.body,
+      at: c.at,
+      n: c.n,
+      href: `/teacher/students/${id}?dock=1`,
+    };
+  });
+  if (new URL(req.url).searchParams.get('only') === 'chat') return NextResponse.json({ items: chatItems });
 
   const since = new Date(Date.now() - 30 * 24 * 3600 * 1000).toISOString();
   const { data, error } = await supabase
@@ -77,6 +113,6 @@ export async function GET() {
     };
   });
 
-  const all = [...items, ...bugItems].sort((a, b) => (a.at < b.at ? 1 : -1));
+  const all = [...items, ...bugItems, ...chatItems].sort((a, b) => (a.at < b.at ? 1 : -1));
   return NextResponse.json({ items: all });
 }

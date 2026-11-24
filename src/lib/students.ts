@@ -30,6 +30,8 @@ export type StudentRow = {
   /** останні 14 днів, найстаріший перший */
   spark: number[];
   activeDays7: number;
+  /** непрочитані повідомлення учня в чаті */
+  chatUnread: number;
 };
 
 const DAY = 24 * 3600 * 1000;
@@ -39,13 +41,14 @@ function lastNDays(n: number, now = new Date()) {
 }
 
 export async function loadStudents(supabase: SupabaseClient): Promise<{ rows: StudentRow[]; attempts: AttemptRow[] }> {
-  const [{ data: stats }, { data: profiles }, attempts, { data: progress }, { data: vocab }, { data: access }] = await Promise.all([
+  const [{ data: stats }, { data: profiles }, attempts, { data: progress }, { data: vocab }, { data: access }, { data: unreadChat }] = await Promise.all([
     supabase.from('embed_student_stats').select('id, name, user_id, archived_at'),
     supabase.from('profiles').select('id, full_name, role'),
     fetchAttempts(supabase),
     supabase.from('lesson_progress').select('student_id, lesson_slug, completed_at, completed_via, homework_assigned_at, homework_done_at'),
     supabase.from('vocab_progress').select('student_id, known'),
     supabase.from('student_access').select('student_id, kind'),
+    supabase.from('class_messages').select('student_id').eq('sender_role', 'student').is('read_at', null).is('deleted_at', null).limit(1000),
   ]);
 
   const teacherIds = new Set((profiles ?? []).filter((p) => p.role === 'teacher').map((p) => p.id as string));
@@ -107,6 +110,7 @@ export async function loadStudents(supabase: SupabaseClient): Promise<{ rows: St
       courses: s.userId ? (access ?? []).filter((a) => a.student_id === s.userId && a.kind === 'module').length : 0,
       spark: days14.map((d) => perDay.get(d) ?? 0),
       activeDays7: [...perDay.keys()].filter((d) => days7.has(d)).length,
+      chatUnread: s.userId ? (unreadChat ?? []).filter((m) => m.student_id === s.userId).length : 0,
     });
   }
   rows.sort((a, b) => (b.lastAt ?? '').localeCompare(a.lastAt ?? '') || a.name.localeCompare(b.name, 'uk'));
