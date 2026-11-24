@@ -2,7 +2,7 @@
 
 import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
-import { LayoutDashboard, MessageSquare, Plus, X } from 'lucide-react';
+import { ArrowLeft, LayoutDashboard, MessageSquare, Plus, X } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
 import { useLocale, useT } from '@/i18n/client';
 import { HTML_LANG } from '@/i18n/config';
@@ -35,6 +35,8 @@ type Props = {
   /** відкрити одразу з фільтром «ця лекція» (посилання з профілю учня) */
   initialFilterLesson?: string;
   studentOnline?: boolean;
+  /** викладач: стрілка «← Усі чати» у шапці (повернутись до списку розмов) */
+  onBack?: () => void;
 };
 
 function readLS<T>(key: string, fallback: T): T {
@@ -105,7 +107,7 @@ function beep() {
   }
 }
 
-export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, initialFilterLesson, studentOnline }: Props) {
+export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, initialFilterLesson, studentOnline, onBack }: Props) {
   const t = useT();
   const locale = useLocale();
   const lang = HTML_LANG[locale];
@@ -559,6 +561,11 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
         >
           {desktop && <div className="ww-dock-resize" onPointerDown={startResize} role="separator" aria-orientation="vertical" aria-label={t('Змінити ширину панелі')} />}
           <header className="ww-dock-head">
+            {onBack && (
+              <button type="button" className="ww-dock-close" onClick={onBack} aria-label={t('Усі чати')} title={t('Усі чати')} data-testid="dock-back">
+                <ArrowLeft size={18} aria-hidden="true" />
+              </button>
+            )}
             <div className="min-w-0">
               <p className="ww-label">{t('Чат')}</p>
               <p className="ww-dock-title">
@@ -567,6 +574,11 @@ export function ClassDock({ role, studentId, studentName, lesson, defaultOpen, i
               </p>
             </div>
             <Switch checked={sound} onChange={(v) => { setSound(v); writeLS(LS_SOUND, v); }} label={t('Звук')} />
+            {role === 'teacher' && (
+              <a href={`/teacher/board?add=${studentId}`} target="_blank" rel="noopener" className="ww-dock-close" aria-label={t('Дошка')} title={t('Дошка: запросити цього учня')} data-testid="dock-head-board">
+                <LayoutDashboard size={18} aria-hidden="true" />
+              </a>
+            )}
             <button type="button" className="ww-dock-close" onClick={() => toggle(false)} aria-label={desktop ? t('Закрити чат') : t('Згорнути')}>
               {desktop ? <X size={18} aria-hidden="true" /> : <span>{t('Згорнути')}</span>}
             </button>

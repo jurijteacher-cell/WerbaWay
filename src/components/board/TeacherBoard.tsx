@@ -21,12 +21,14 @@ import {
   type NoteColor,
   type Viewport,
 } from '@/lib/board/types';
+import { isAll, toggleAll } from '@/lib/board/rich';
 import type { ChatRow } from '@/lib/dock/protocol';
 import { Board } from './Board';
 import { useBoardChannel } from './BoardChannel';
 
 export type ViewerInfo = { id: string; name: string };
-type Viewer = ViewerInfo & { addedAt: string };
+export type ViewerStatus = 'invited' | 'accepted' | 'declined';
+type Viewer = ViewerInfo & { addedAt: string; status: ViewerStatus };
 
 const COLOR_LABEL: Record<NoteColor, string> = { violet: 'Бузковий', sky: 'Блакитний', pink: 'Рожевий', mint: 'М’ятний', lemon: 'Лимонний' };
 const SIZES: FontSize[] = ['S', 'M', 'L', 'XL'];
@@ -55,6 +57,7 @@ export function TeacherBoard({
   const [q, setQ] = useState('');
   const [conflict, setConflict] = useState(false);
   const [limitHint, setLimitHint] = useState(false);
+  const [fmt, setFmt] = useState({ b: false, i: false });
   const [, bump] = useState(0);
 
   const elsRef = useRef(initial.els);
@@ -277,13 +280,42 @@ export function TeacherBoard({
     bump((n) => n + 1);
   };
 
+  /* ── жирний / курсив ── */
+  // у режимі редагування діє на виділений шматок (браузерна команда), інакше — на весь текст виділених елементів
+  const applyFmt = useCallback(
+    (flag: 'b' | 'i') => {
+      if (editing) {
+        document.execCommand(flag === 'b' ? 'bold' : 'italic');
+        setFmt({ b: document.queryCommandState('bold'), i: document.queryCommandState('italic') });
+        return;
+      }
+      if (!sel.size) return;
+      change(elsRef.current.map((e) => (sel.has(e.id) ? { ...e, text: toggleAll(e.text, flag) } : e)), true);
+    },
+    [editing, sel, change]
+  );
+  useEffect(() => {
+    if (!editing) return;
+    const on = () => setFmt({ b: document.queryCommandState('bold'), i: document.queryCommandState('italic') });
+    document.addEventListener('selectionchange', on);
+    return () => document.removeEventListener('selectionchange', on);
+  }, [editing]);
+
   /* ── клавіатура ── */
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const tag = (e.target as HTMLElement)?.tagName;
-      if (editing || tag === 'INPUT' || tag === 'TEXTAREA') return;
+      if (editing || tag === 'INPUT' || tag === 'TEXTAREA' || (e.target as HTMLElement)?.isContentEditable) return;
       const mod = e.ctrlKey || e.metaKey;
-      if (e.key === 'Delete' || e.key === 'Backspace') {
+      if (mod && !e.shiftKey && !e.altKey && (e.key.toLowerCase() === 'b' || e.key.toLowerCase() === 'i')) {
+        if (!sel.size) return;
+        e.preventDefault();
+        applyFmt(e.key.toLowerCase() as 'b' | 'i');
+      } else if ((e.key === 'Enter' || e.key === 'F2') && sel.size === 1) {
+        // виділений елемент — Enter відкриває текст для правки (те саме, що подвійний клік)
+        e.preventDefault();
+        setEditing([...sel][0]);
+      } else if (e.key === 'Delete' || e.key === 'Backspace') {
         e.preventDefault();
         remove();
       } else if (mod && e.key.toLowerCase() === 'd') {
@@ -303,20 +335,27 @@ export function TeacherBoard({
     };
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);
-  }, [editing, remove, duplicate, undo, redo]);
+  }, [editing, sel, remove, duplicate, undo, redo, applyFmt]);
 
   /* ── глядачі ── */
-  const addViewer = useCallback(
+  // Запрошення, а не примусове відкриття: учень бачить «Викладач запрошує вас на дошку» і сам приймає чи відмовляє.
+  // Відмовився — можна запросити знову, і повідомлення прийде ще раз.
+  const invite = useCallback(
     async (s: ViewerInfo) => {
-      const { error } = await supabase.from('board_viewers').upsert({ student_id: s.id });
+      const { error } = await supabase
+        .from('board_viewers')
+        .upsert({ student_id: s.id, status: 'invited', added_at: new Date().toISOString(), responded_at: null });
       if (error) return;
-      setViewers((p) => (p.some((v) => v.id === s.id) ? p : [...p, { ...s, addedAt: new Date().toISOString() }]));
+      setViewers((p) => {
+        const row: Viewer = { ...s, addedAt: new Date().toISOString(), status: 'invited' };
+        return p.some((v) => v.id === s.id) ? p.map((v) => (v.id === s.id ? row : v)) : [...p, row];
+      });
       const { data: me } = await supabase.auth.getUser();
       let chat: ChatRow | null = null;
       if (me.user) {
         const { data } = await supabase
           .from('class_messages')
-          .insert({ student_id: s.id, sender_id: me.user.id, sender_role: 'teacher', kind: 'board', body: t('Викладач відкрив вам дошку'), meta: { action: 'open' } })
+          .insert({ student_id: s.id, sender_id: me.user.id, sender_role: 'teacher', kind: 'board', body: t('Викладач запрошує вас на дошку'), meta: { action: 'invite' } })
           .select()
           .single();
         chat = (data as ChatRow | null) ?? null;
@@ -336,20 +375,50 @@ export function TeacherBoard({
     },
     [supabase]
   );
+
+  // відповіді учнів (прийняв / відмовився) приходять у БД — підтягуємо, поки дошка відкрита
+  const refreshViewers = useCallback(async () => {
+    const { data } = await supabase.from('board_viewers').select('student_id, added_at, status');
+    if (!data) return;
+    const names = new Map(students.map((s) => [s.id, s.name]));
+    setViewers(
+      data.map((v) => ({
+        id: v.student_id as string,
+        name: names.get(v.student_id as string) ?? '—',
+        addedAt: v.added_at as string,
+        status: ((v.status as ViewerStatus | null) ?? 'accepted') as ViewerStatus,
+      }))
+    );
+  }, [supabase, students]);
+  useEffect(() => {
+    const tick = () => document.visibilityState === 'visible' && void refreshViewers();
+    const timer = setInterval(tick, 6000);
+    document.addEventListener('visibilitychange', tick);
+    return () => {
+      clearInterval(timer);
+      document.removeEventListener('visibilitychange', tick);
+    };
+  }, [refreshViewers]);
+
   const addedOnce = useRef(false);
   useEffect(() => {
     if (!addId || addedOnce.current) return;
     addedOnce.current = true;
     const s = students.find((x) => x.id === addId);
-    if (s && !v0.some((v) => v.id === addId)) void addViewer(s);
+    const cur = v0.find((v) => v.id === addId);
+    // «Дошка» з картки учня: запрошуємо, якщо ще не запрошений або раніше відмовився
+    if (s && (!cur || cur.status === 'declined')) void invite(s);
     setPanel(true);
-  }, [addId, students, v0, addViewer]);
+  }, [addId, students, v0, invite]);
 
   const online = new Set(peers.map((p) => p.uid));
   const stale = viewers.filter((v) => Date.now() - new Date(v.addedAt).getTime() > 12 * 3600 * 1000);
   const candidates = students.filter((s) => !viewers.some((v) => v.id === s.id) && s.name.toLowerCase().includes(q.trim().toLowerCase())).slice(0, 30);
 
   const hasSel = sel.size > 0;
+  const picked = selEls();
+  const fmtB = editing ? fmt.b : picked.length > 0 && picked.every((e) => isAll(e.text, 'b'));
+  const fmtI = editing ? fmt.i : picked.length > 0 && picked.every((e) => isAll(e.text, 'i'));
   const items: ToolbarItem[] = [
     { id: 'note', label: t('Стікер'), node: <button type="button" className="ww-btn ww-btn-primary ww-btn-sm" onClick={() => addNote()} data-testid="board-add-note">{t('＋ Стікер')}</button> },
     {
@@ -365,6 +434,44 @@ export function TeacherBoard({
     },
     { id: 'text', label: t('Текст'), node: <button type="button" className="ww-btn ww-btn-secondary ww-btn-sm" onClick={addText}>{t('Т Текст')}</button> },
     { id: 'size', label: t('Розмір шрифту'), node: <button type="button" className="ww-btn ww-btn-secondary ww-btn-sm" disabled={!hasSel} onClick={cycleSize} title={t('Розмір шрифту')}>Aa{hasSel && selEls()[0] ? ` ${selEls()[0].fs}` : ''}</button> },
+    {
+      id: 'bold',
+      label: t('Жирний'),
+      node: (
+        <button
+          type="button"
+          className={`ww-btn ww-btn-sm ${fmtB ? 'ww-btn-accent' : 'ww-btn-secondary'}`}
+          disabled={!editing && !hasSel}
+          aria-pressed={fmtB}
+          title={`${t('Жирний')} (Ctrl+B)`}
+          aria-label={t('Жирний')}
+          onMouseDown={(e) => e.preventDefault()}
+          onClick={() => applyFmt('b')}
+          data-testid="board-bold"
+        >
+          <b>B</b>
+        </button>
+      ),
+    },
+    {
+      id: 'italic',
+      label: t('Курсив'),
+      node: (
+        <button
+          type="button"
+          className={`ww-btn ww-btn-sm ${fmtI ? 'ww-btn-accent' : 'ww-btn-secondary'}`}
+          disabled={!editing && !hasSel}
+          aria-pressed={fmtI}
+          title={`${t('Курсив')} (Ctrl+I)`}
+          aria-label={t('Курсив')}
+          onMouseDown={(e) => e.preventDefault()}
+          onClick={() => applyFmt('i')}
+          data-testid="board-italic"
+        >
+          <i>I</i>
+        </button>
+      ),
+    },
     { id: 'dup', label: t('Дублювати'), node: <button type="button" className="ww-btn ww-btn-secondary ww-btn-sm" disabled={!hasSel} onClick={duplicate}>{t('Дублювати')}</button> },
     { id: 'del', label: t('Видалити'), node: <button type="button" className="ww-btn ww-btn-danger ww-btn-sm" disabled={!hasSel} onClick={remove}>{t('Видалити')}</button> },
     { id: 'undo', label: t('Скасувати дію'), node: <button type="button" className="ww-btn ww-btn-secondary ww-btn-sm" disabled={!hist.current.length} onClick={undo} aria-label={t('Скасувати дію')}>↶</button> },
@@ -415,12 +522,24 @@ export function TeacherBoard({
         )}
         {panel && (
           <div className="ww-menu ww-board-viewers" style={{ top: 8, right: 10 }} role="dialog" aria-label={t('Глядачі')}>
-            <p className="ww-label" style={{ padding: '4px 8px' }}>{t('Бачать дошку')}</p>
-            {viewers.length === 0 && <p className="ww-dock-menu-date">{t('Поки нікого. Додай учня нижче.')}</p>}
+            <p className="ww-label" style={{ padding: '4px 8px' }}>{t('Учні на дошці')}</p>
+            {viewers.length === 0 && <p className="ww-dock-menu-date">{t('Поки нікого. Запроси учня нижче.')}</p>}
             {viewers.map((v) => (
-              <div key={v.id} className="ww-board-viewer-row">
-                <i className={`ww-board-dot${online.has(v.id) ? ' is-on' : ''}`} title={online.has(v.id) ? t('онлайн') : t('не в мережі')} />
-                <span>{v.name}</span>
+              <div key={v.id} className="ww-board-viewer-row" data-status={v.status}>
+                <i
+                  className={`ww-board-dot${v.status === 'accepted' && online.has(v.id) ? ' is-on' : ''}`}
+                  title={v.status === 'accepted' ? (online.has(v.id) ? t('онлайн') : t('не в мережі')) : v.status === 'invited' ? t('Чекає відповіді') : t('Відмовився')}
+                />
+                <span className="min-w-0 flex-1 truncate">
+                  {v.name}
+                  {v.status === 'invited' && <em className="ww-board-state"> · {t('чекає відповіді')}</em>}
+                  {v.status === 'declined' && <em className="ww-board-state is-no"> · {t('відмовився')}</em>}
+                </span>
+                {v.status !== 'accepted' && (
+                  <button type="button" className="ww-btn ww-btn-secondary ww-btn-sm" onClick={() => void invite(v)} data-testid="board-reinvite">
+                    {v.status === 'declined' ? t('Запросити знову') : t('Нагадати')}
+                  </button>
+                )}
                 <button type="button" className="ww-btn ww-btn-ghost ww-btn-sm" onClick={() => void removeViewer(v.id)} aria-label={t('Прибрати {name}', { name: v.name })}>✕</button>
               </div>
             ))}
@@ -428,12 +547,12 @@ export function TeacherBoard({
             {viewers.length > 1 && (
               <button type="button" className="ww-btn ww-btn-ghost ww-btn-sm" onClick={() => viewers.forEach((v) => void removeViewer(v.id))}>{t('Прибрати всіх')}</button>
             )}
-            <p className="ww-label" style={{ padding: '8px 8px 4px' }}>{t('Додати учня')}</p>
+            <p className="ww-label" style={{ padding: '8px 8px 4px' }}>{t('Запросити учня')}</p>
             <input className="ww-input" value={q} onChange={(e) => setQ(e.target.value)} placeholder={t('Пошук за іменем')} aria-label={t('Пошук за іменем')} />
             {candidates.map((s) => (
               <div key={s.id} className="ww-board-viewer-row">
                 <span>{s.name}</span>
-                <button type="button" className="ww-btn ww-btn-secondary ww-btn-sm" onClick={() => void addViewer(s)}>{t('Додати')}</button>
+                <button type="button" className="ww-btn ww-btn-secondary ww-btn-sm" onClick={() => void invite(s)}>{t('Запросити')}</button>
               </div>
             ))}
           </div>

@@ -1,3 +1,5 @@
+import { MAX_PLAIN, clampMarkup, lineCount } from './rich';
+
 /**
  * Дошка викладача (docs/CLASS_TOOLS_SPEC.md §3): одна на всіх; стікери й текст.
  * Зберігається в teacher_board (els/vp/rev); живі зміни йдуть каналом `board:main` (пише лише викладач).
@@ -19,7 +21,10 @@ export type Viewport = { x: number; y: number; zoom: number };
 export const ZOOM_MIN = 0.25;
 export const ZOOM_MAX = 2;
 export const MAX_ELS = 300;
-export const MAX_TEXT = 500;
+/** скільки символів тексту (без тегів жирного/курсиву) вміщує елемент */
+export const MAX_TEXT = MAX_PLAIN;
+/** межа довжини рядка з розміткою, що йде в БД/канал */
+export const MAX_MARKUP = 2000;
 export const HISTORY = 50;
 
 export const boardTopic = 'board:main';
@@ -42,7 +47,7 @@ export const clampZoom = (z: number) => Math.min(ZOOM_MAX, Math.max(ZOOM_MIN, z)
 
 export const newId = () => Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-4);
 
-export const elH = (e: BoardEl) => (e.t === 'note' ? e.h : Math.max(32, FS_PX[e.fs] * 1.4 * Math.max(1, e.text.split('\n').length)));
+export const elH = (e: BoardEl) => (e.t === 'note' ? e.h : Math.max(32, FS_PX[e.fs] * 1.4 * lineCount(e.text)));
 
 /** Що змінилось між двома наборами: нові/змінені → {u}, зниклі → {d} (порівняння за посиланням) */
 export function diffOps(prev: BoardEl[], next: BoardEl[]): BoardOp[] {
@@ -87,7 +92,7 @@ export function sanitizeEls(raw: unknown): BoardEl[] {
     const o = e as Record<string, unknown>;
     if (typeof o.id !== 'string' || typeof o.x !== 'number' || typeof o.y !== 'number' || typeof o.w !== 'number') continue;
     const fs = (['S', 'M', 'L', 'XL'] as const).includes(o.fs as FontSize) ? (o.fs as FontSize) : 'M';
-    const text = typeof o.text === 'string' ? o.text.slice(0, MAX_TEXT) : '';
+    const text = typeof o.text === 'string' ? clampMarkup(o.text.slice(0, MAX_MARKUP), MAX_TEXT) : '';
     const z = typeof o.z === 'number' ? o.z : 0;
     if (o.t === 'note' && typeof o.h === 'number') {
       const c = NOTE_COLORS.includes(o.c as NoteColor) ? (o.c as NoteColor) : 'violet';
