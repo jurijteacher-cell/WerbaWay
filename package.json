@@ -11,7 +11,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "check:tags": "python3 scripts/check_tags.py"
+    "check:tags": "python3 scripts/check_tags.py",
+    "check:lecture": "python3 scripts/check_lecture.py"
   },
   "dependencies": {
     "@rrweb/packer": "2.1.7",

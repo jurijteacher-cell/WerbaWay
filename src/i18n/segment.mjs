@@ -91,16 +91,23 @@ export function walkMarkdown(raw, fn) {
       const parts = line.split('|');
       const cells = parts.map((p) => p.trim()).filter((p, i) => i > 0 && i < parts.length - 1);
       let changed = false;
+      let hideRow = false;
       const next = parts.map((part, i) => {
         if (i === 0 || i === parts.length - 1) return part;
         if (!isUnitText(part)) return part;
         const context = cells.filter((c) => c !== part.trim()).join(' | ');
         const out = fn(part.trim(), { kind: 'cell', context });
         if (out == null) return part;
+        // «@hide» замість перекладу: пастка / виняток не працює для мови цієї локалі — рядок знімається
+        if (String(out).trim() === HIDE_TOKEN) {
+          hideRow = true;
+          return part;
+        }
         changed = true;
         // «|» і переноси в перекладі розірвали б таблицю — знешкоджуємо
         return ` ${String(out).replace(/\|/g, ' / ').replace(/[\r\n]+/g, ' ')} `;
       });
+      if (hideRow) return HIDE_LINE;
       return changed ? next.join('|') : line;
     }
 
@@ -111,7 +118,43 @@ export function walkMarkdown(raw, fn) {
     return line.replace(line.trim(), String(out).replace(/[\r\n]+/g, ' '));
   });
 
-  return newHead + outLines.join('\n');
+  return newHead + dropHidden(outLines).join('\n');
+}
+
+/** Значення перекладу, яким знімається рядок таблиці (пастка / виняток, що в цій мові не діє). */
+export const HIDE_TOKEN = '@hide';
+const HIDE_LINE = '\u0000HIDE\u0000';
+
+/**
+ * Прибирає рядки, зняті через «@hide». Якщо в таблиці не лишилось жодного рядка даних —
+ * зникає й вона сама (шапка + розділювач) разом із заголовком «###», що стоїть над нею.
+ */
+function dropHidden(lines) {
+  if (!lines.includes(HIDE_LINE)) return lines;
+  const out = [];
+  let i = 0;
+  while (i < lines.length) {
+    const isRow = (l) => /^\s*\|/.test(l) || l === HIDE_LINE;
+    if (!isRow(lines[i])) {
+      out.push(lines[i++]);
+      continue;
+    }
+    let j = i;
+    while (j < lines.length && isRow(lines[j])) j++;
+    const block = lines.slice(i, j);
+    const header = block.slice(0, 2);
+    const rows = block.slice(2).filter((l) => l !== HIDE_LINE);
+    if (block.slice(2).length > 0 && rows.length === 0) {
+      // таблиця зникла повністю: прибираємо і заголовок над нею
+      let k = out.length - 1;
+      while (k >= 0 && out[k].trim() === '') k--;
+      if (k >= 0 && /^###\s/.test(out[k])) out.length = k;
+    } else {
+      out.push(...header, ...rows);
+    }
+    i = j;
+  }
+  return out;
 }
 
 /** Усі одиниці перекладу сторінки: [{ key, text, kind, context }] */

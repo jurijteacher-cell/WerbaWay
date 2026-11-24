@@ -1,0 +1,46 @@
+# docs/ — карта документації Werba Way
+
+**Це єдине джерело правди.** Інші акаунти Claude беруть документи звідси, не з claude.ai Project.
+Репо публічне: `https://github.com/jurijteacher-cell/WerbaWay` · сирі файли `https://raw.githubusercontent.com/jurijteacher-cell/WerbaWay/main/docs/<ФАЙЛ>.md`
+
+Стара версія документів у Project, Notion і локальних копіях **не чинна**. Суперечність — назви в чаті.
+
+## Старт для нового агента (інший акаунт, без доступу до воркспейсу)
+
+1. `git clone https://github.com/jurijteacher-cell/WerbaWay` (або `WebFetch` raw-посилання нижче) і прочитай `CLAUDE.md`.
+2. Прочитай `docs/LESSON_PROTOCOL.md` і `docs/GRAMMAR_METHOD.md`; решту — за таблицею.
+3. Для запису (push у `main`) потрібен доступ до репо; без нього — віддай готові файли в чат і назви причину.
+
+## Що читати для якого завдання
+
+| Завдання | Файли (≈ токенів) |
+|---|---|
+| **Нова лекція** | `LESSON_PROTOCOL.md` (~8k) · `GRAMMAR_METHOD.md` (~3k) · карта модуля · `ref/<тема>.md` |
+| Схеми JSON вправ | `CONTENT_SPEC.md` (~4k; лише потрібні типи) |
+| Слухання, озвучення | `AUDIO_SITE.md` |
+| Новий тег граматики | `GRAMMAR_REGISTRY.md` |
+| Публікація не пройшла / новий агент | `SITE_PUBLISHING.md` (~3k) |
+| Переклад (для субагента) | `I18N_TRANSLATION_BRIEF.md` |
+| Вигляд UI, код компонентів | `DESIGN_SYSTEM.md` |
+| Клас, чат, дошка | `CLASS_TOOLS_CHANGELOG.md` |
+| Результати вправ, акаунти | `EMBED_RESULTS.md` · `AUTH_SETUP.md` |
+| Пробні іспити, placement | `MOCK_EXAM_SPEC.md` · `PLACEMENT_SPEC.md` |
+
+## Карти курсів
+
+`CURRICULUM_A2.md` · `CURRICULUM_GROUP_B1.md` · `CURRICULUM_TELC_B1.md` · індивідуальні: `CURRICULUM_PL-KSIEG`, `PL-TRENER`, `PL-NIER`, `PL-REMONT`, `MODULE_PL-KP`.
+
+## Ще не перенесено з claude.ai Project (читати там, перенести в `docs/`)
+
+`CURRICULUM_MASTER_A0-B2` · `CURRICULUM_A0-A1` · `CURRICULUM_GROUP_B2` · `CURRICULUM_GRAMMAR_B1-B2` · `PROGRESS_SPEC` · `LESSON_PROTOCOL_A0-A1` · `IMMERSION_QUEST` · `CLASS_TOOLS_SPEC` · `AUDIO_EXAM_SPEC` · `I18N` · `EXAMS_TELC_vs_PANSTWOWY_B1`. Агент, що в сесії бачить їх у Project, копіює файл у `docs/` дослівно (`project_read` → запис у репо → коміт) і прибирає рядок звідси.
+
+## Довідники по темах (`ref/`)
+
+Повні перевірені довідники (відмінки, чергування, дієвідміни…) — складаються один раз пошуком і далі використовуються всіма лекціями. Перед написанням порції граматики: `ls docs/ref/`. Немає — склади, закоміть, потім пиши лекцію. Формат — `ref/README.md`.
+
+## Правила супроводу документації
+
+- Правка правила = правка файлу в `docs/` + коміт у `main`. Копій немає.
+- Файл — без історії патчів («v3.x додав…»): лише чинне правило; дата й причина — одним рядком у шапці. Історія — у git.
+- Новий документ — у таблицю вище. Застарілий — у `archive/`.
+- Документ описує лише те, що існує в репо (команди, скрипти); перевіряй `ls scripts/` і `package.json`.
