@@ -1,0 +1,108 @@
+{
+  "lesson_id": "pl-remont-01-wycena-lazienki",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: rozmowy na remoncie",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę z nauczycielem. Zamieńcie się rolami.",
+  "estimated_minutes": 18,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "listen-then-play",
+      "front_title": "Wycena przedpokoju",
+      "back_scenario": "Najpierw posłuchaj rozmowy pana Marka z panią Ewą. Potem Ty jesteś fachowcem, a nauczyciel — klientką. Klientka chce odnowić przedpokój: pięć metrów kwadratowych podłogi i dwadzieścia osiem metrów kwadratowych ścian. Poprowadź rozmowę z innymi szczegółami.",
+      "back_checklist": [
+        "Zapytaj, co klientka chce zrobić w przedpokoju.",
+        "Powiedz, co trzeba zrobić najpierw, a co potem (użyj trzeba co najmniej trzy razy).",
+        "Podaj ilość materiałów, np. farby albo kleju, i termin: kiedy zaczniesz i kiedy skończysz.",
+        "Powiedz klientce, czego nie wolno robić podczas prac."
+      ],
+      "audio_url": "/audio/pl-remont-01-wycena-lazienki-c1-dialog.mp3",
+      "model_dialogue": [
+        {
+          "speaker": "Ewa",
+          "voice": "W1",
+          "line": "Dzień dobry, panie Marku. Chcę odnowić przedpokój. Ile to będzie kosztować?"
+        },
+        {
+          "speaker": "Marek",
+          "voice": "M1",
+          "line": "Dzień dobry, pani Ewo. Najpierw muszę zobaczyć ściany. Ile metrów kwadratowych ma podłoga?"
+        },
+        {
+          "speaker": "Ewa",
+          "voice": "W1",
+          "line": "Podłoga ma pięć metrów kwadratowych, a ściany około dwudziestu ośmiu."
+        },
+        {
+          "speaker": "Marek",
+          "voice": "M1",
+          "line": "Dobrze. Najpierw trzeba wyrównać podłogę i zagruntować ściany. Potem pomalujemy ściany i położymy płytki."
+        },
+        {
+          "speaker": "Ewa",
+          "voice": "W1",
+          "line": "Ile materiałów pan potrzebuje?"
+        },
+        {
+          "speaker": "Marek",
+          "voice": "M1",
+          "line": "Potrzebujemy jeden worek kleju i dwie puszki farby."
+        },
+        {
+          "speaker": "Ewa",
+          "voice": "W1",
+          "line": "Czy ja muszę coś kupić?"
+        },
+        {
+          "speaker": "Marek",
+          "voice": "M1",
+          "line": "Nie trzeba. Materiały zamówię sam. Potrzebuję tylko zaliczki."
+        },
+        {
+          "speaker": "Ewa",
+          "voice": "W1",
+          "line": "Kiedy pan zaczyna?"
+        },
+        {
+          "speaker": "Marek",
+          "voice": "M1",
+          "line": "Zaczynamy w poniedziałek czternastego grudnia, a kończymy w czwartek siedemnastego grudnia."
+        },
+        {
+          "speaker": "Ewa",
+          "voice": "W1",
+          "line": "Czy muszę być w domu?"
+        },
+        {
+          "speaker": "Marek",
+          "voice": "M1",
+          "line": "Nie trzeba. Ale podczas prac nie wolno wchodzić do przedpokoju, bo podłoga będzie mokra. Wycenę wyślę jutro."
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "W sklepie budowlanym",
+      "back_scenario": "Jesteś w sklepie budowlanym. Potrzebujesz materiałów do remontu małej kuchni. Nauczyciel gra sprzedawcę.",
+      "back_checklist": [
+        "Powiedz, co musisz kupić: farbę, grunt i klej do płytek.",
+        "Podaj ilości: ile puszek, ile litrów i ile worków.",
+        "Zapytaj, ile to będzie kosztować.",
+        "Zapytaj, czy sklep może przywieźć materiały jutro."
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "front_title": "Plan dnia na budowie",
+      "back_scenario": "Pracujesz z kolegą w mieszkaniu klienta. Ustalacie, kto co robi dzisiaj i jutro. Nauczyciel gra kolegę.",
+      "back_checklist": [
+        "Zapytaj kolegę, co musi zrobić dzisiaj.",
+        "Powiedz, co Ty musisz zrobić i co trzeba jeszcze kupić.",
+        "Ostrzeż kolegę: powiedz, czego nie wolno robić (np. przy świeżej fudze).",
+        "Ustal, co będzie trzeba zrobić jutro rano."
+      ]
+    }
+  ]
+}

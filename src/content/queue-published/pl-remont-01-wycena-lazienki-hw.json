@@ -1,0 +1,195 @@
+{
+  "lesson_id": "pl-remont-01-wycena-lazienki",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: remont w praktyce",
+  "instruction": "Trzy zadania. Zrób je po zajęciach, potem napisz wiadomość.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Ile czego? Wpisz właściwą formę",
+      "instruction": "Wpisz słowo z nawiasu we właściwej formie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Do sypialni kupiłem pięć ___ (puszka) farby.",
+          "answer": "puszek",
+          "grammar_point": "liczebnik-rzeczownik"
+        },
+        {
+          "id": "h1-2",
+          "text": "Na małą kuchnię wystarczą dwa ___ (worek) kleju.",
+          "answer": "worki",
+          "grammar_point": "liczebnik-rzeczownik"
+        },
+        {
+          "id": "h1-3",
+          "text": "W sklepie wzięłam sześć ___ (litr) gruntu.",
+          "answer": "litrów",
+          "grammar_point": "dopelniacz-ilosc"
+        },
+        {
+          "id": "h1-4",
+          "text": "Do narożnika potrzebujemy jeszcze cztery ___ (płytka).",
+          "answer": "płytki",
+          "grammar_point": "liczebnik-rzeczownik"
+        },
+        {
+          "id": "h1-5",
+          "text": "Sypialnia ma czternaście metrów ___ (kwadratowy).",
+          "answer": "kwadratowych",
+          "grammar_point": "liczebnik-rzeczownik"
+        },
+        {
+          "id": "h1-6",
+          "text": "Na budowie mamy osiem ___ (worek) cementu.",
+          "answer": "worków",
+          "grammar_point": "liczebnik-rzeczownik"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "sentence-building",
+      "title": "2. Ułóż zdanie",
+      "instruction": "Ułóż zdanie z elementów.",
+      "items": [
+        {
+          "id": "h2-1",
+          "words": [
+            "w sypialni",
+            "powinniśmy",
+            "pomalować",
+            "najpierw",
+            "sufit"
+          ],
+          "answer": "W sypialni powinniśmy najpierw pomalować sufit.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Najpierw powinniśmy pomalować sufit w sypialni.",
+            "Powinniśmy najpierw pomalować sufit w sypialni.",
+            "W sypialni najpierw powinniśmy pomalować sufit."
+          ]
+        },
+        {
+          "id": "h2-2",
+          "words": [
+            "muszę",
+            "zamówić",
+            "jutro",
+            "nową",
+            "wiertarkę"
+          ],
+          "answer": "Jutro muszę zamówić nową wiertarkę.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Muszę jutro zamówić nową wiertarkę.",
+            "Nową wiertarkę muszę zamówić jutro.",
+            "Jutro nową wiertarkę muszę zamówić."
+          ]
+        },
+        {
+          "id": "h2-3",
+          "words": [
+            "nie wolno",
+            "wchodzić",
+            "do kuchni",
+            "podczas remontu"
+          ],
+          "answer": "Podczas remontu nie wolno wchodzić do kuchni.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Nie wolno wchodzić do kuchni podczas remontu."
+          ]
+        },
+        {
+          "id": "h2-4",
+          "words": [
+            "wczoraj",
+            "trzeba było",
+            "wyłączyć",
+            "prąd"
+          ],
+          "answer": "Wczoraj trzeba było wyłączyć prąd.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Trzeba było wczoraj wyłączyć prąd.",
+            "Prąd trzeba było wyłączyć wczoraj.",
+            "Wczoraj prąd trzeba było wyłączyć."
+          ]
+        },
+        {
+          "id": "h2-5",
+          "words": [
+            "w przyszłym tygodniu",
+            "będzie trzeba",
+            "kupić",
+            "nowe drzwi"
+          ],
+          "answer": "W przyszłym tygodniu będzie trzeba kupić nowe drzwi.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Będzie trzeba kupić nowe drzwi w przyszłym tygodniu.",
+            "Nowe drzwi będzie trzeba kupić w przyszłym tygodniu."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h3-1",
+          "prompt": "Mi trzeba kupić nowy klucz.",
+          "answer": "Muszę kupić nowy klucz.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Trzeba kupić nowy klucz."
+          ]
+        },
+        {
+          "id": "h3-2",
+          "prompt": "Na tej drabinie nie trzeba stawać.",
+          "answer": "Na tej drabinie nie wolno stawać.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Nie wolno stawać na tej drabinie."
+          ],
+          "explanation": "Zakaz = nie wolno; nie trzeba znaczy tylko „nie ma potrzeby”."
+        },
+        {
+          "id": "h3-3",
+          "prompt": "Trzeba pofarbować ściany w przedpokoju.",
+          "answer": "Trzeba pomalować ściany w przedpokoju.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Ściany w przedpokoju trzeba pomalować."
+          ],
+          "explanation": "Ściany i sufity się maluje; farbuje się włosy albo tkaniny."
+        },
+        {
+          "id": "h3-4",
+          "prompt": "Podłoga powinien być sucha.",
+          "answer": "Podłoga powinna być sucha.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Powinna być sucha podłoga."
+          ]
+        },
+        {
+          "id": "h3-5",
+          "prompt": "Wczoraj trzeba skuć ściankę.",
+          "answer": "Wczoraj trzeba było skuć ściankę.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Trzeba było wczoraj skuć ściankę."
+          ]
+        }
+      ]
+    }
+  ]
+}

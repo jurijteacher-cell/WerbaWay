@@ -1,0 +1,49 @@
+{
+  "lesson_id": "pl-remont-01-wycena-lazienki",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie: czytanie",
+  "instruction": "Przeczytaj tekst „Pierwsza wizyta w łazience” jeszcze raz i zdecyduj: prawda czy fałsz.",
+  "estimated_minutes": 8,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Zaznacz: prawda albo fałsz.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Łazienka pani Joanny ma sześć metrów kwadratowych.",
+          "answer": true,
+          "explanation": "W tekście: „Łazienka ma sześć metrów kwadratowych.”"
+        },
+        {
+          "id": "e1-2",
+          "statement": "Artur zaczyna pracę od położenia nowych płytek.",
+          "answer": false,
+          "explanation": "Najpierw trzeba skuć stare płytki."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Przy wannie Artur chce położyć hydroizolację.",
+          "answer": true,
+          "explanation": "Hydroizolację kładą przed płytkami, przy wannie."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Prace mają trwać około miesiąca.",
+          "answer": false,
+          "explanation": "Prace mają trwać około dwóch tygodni."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Podczas prac pani Joanna może wchodzić do łazienki.",
+          "answer": false,
+          "explanation": "Nie wolno wchodzić do łazienki, bo podłoga będzie mokra."
+        }
+      ]
+    }
+  ]
+}

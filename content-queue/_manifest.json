@@ -3400,6 +3400,35 @@
       },
       "status": "published",
       "notes": "v4.0: сайт, без Notion; EN-формат; без слухання (аудіо не замовлялось); відео в ДЗ — Easy Russian (-NbTi2_5Gps)"
+    },
+    {
+      "lesson_id": "pl-remont-01-wycena-lazienki",
+      "module": "pl-remont",
+      "course_order": 1,
+      "level": "A2",
+      "title": "Ile to będzie kosztować? Wycena remontu",
+      "published_at": "2026-11-24T12:00:00Z",
+      "template": "light-60 A2",
+      "embeds": {
+        "vocab": "https://werba-way.vercel.app/embed/pl-remont-01-wycena-lazienki/vocab",
+        "grammar": "https://werba-way.vercel.app/embed/pl-remont-01-wycena-lazienki/grammar",
+        "comm_tasks": "https://werba-way.vercel.app/embed/pl-remont-01-wycena-lazienki/comm-tasks",
+        "hw": "https://werba-way.vercel.app/embed/pl-remont-01-wycena-lazienki/hw",
+        "exam": "https://werba-way.vercel.app/embed/pl-remont-01-wycena-lazienki/exam"
+      },
+      "audio": [
+        "/audio/pl-remont-01-wycena-lazienki-czytanie.mp3",
+        "/audio/pl-remont-01-wycena-lazienki-c1-dialog.mp3"
+      ],
+      "images": {
+        "cover": "https://images.unsplash.com/photo-1618832515490-e181c4794a45?w=1600&q=80&fm=jpg&fit=max",
+        "cover_credit": "Immo RENOVATION / Unsplash",
+        "img1": "https://images.unsplash.com/photo-1747729495579-b26ab7b9c3a6?w=1400&q=80&fm=jpg&fit=max",
+        "img1_credit": "Raymond Petrik / Unsplash"
+      },
+      "status": "published",
+      "published_by": "claude",
+      "notes": "Індивідуальний модуль pl-remont (ремонти), урок 1 з 8. Лише сайт, без Notion; текст = вправи (t1 ordering, t2 detektyw, t3 cloze-text); аудіо через сайт (czytanie + c1-dialog); модуль у docs/CURRICULUM_PL-REMONT.md."
     }
   ]
 }

@@ -1,0 +1,624 @@
+{
+  "lesson_id": "pl-remont-01-wycena-lazienki",
+  "exercise_type": "fill-in-blank",
+  "title": "Trzeba, muszę, powinien, nie wolno — tekst i gramatyka",
+  "instruction": "Zadania do tekstu (t1–t3) i siedem bloków gramatyki (g1–g7).",
+  "estimated_minutes": 40,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "Tekst 1. Ułóż w kolejności",
+      "instruction": "Co było najpierw, a co potem? Klikaj zdania po kolei.",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "Pani Joanna Lis kupiła stare mieszkanie w Gdańsku.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "W jej łazience stanął fachowiec, pan Artur.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Najpierw trzeba skuć stare płytki i wymienić zawór.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Potem musimy wyrównać ściany i zagruntować je.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "Przed płytkami powinniśmy położyć hydroizolację przy wannie.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Na końcu zamontujemy umywalkę i uszczelnimy ją silikonem.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "Tekst 2. Detektyw: co mówi fachowiec?",
+      "instruction": "Znajdź wskazówki w tekście i wybierz odpowiedź.",
+      "items": [
+        {
+          "id": "t2-1",
+          "text": "Dlaczego hydroizolację trzeba położyć przy wannie?",
+          "answer": "Bo tam będzie najwięcej wody.",
+          "options": [
+            "Bo tam będzie najwięcej wody.",
+            "Bo wanna jest nowa.",
+            "Bo tam jest najzimniej."
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "…bo tam będzie najwięcej wody."
+        },
+        {
+          "id": "t2-2",
+          "text": "Dlaczego nie wolno wchodzić do łazienki podczas prac?",
+          "answer": "Bo podłoga będzie mokra.",
+          "options": [
+            "Bo podłoga będzie mokra.",
+            "Bo klient jest w pracy.",
+            "Bo drzwi są zamknięte na klucz."
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "…bo podłoga będzie mokra."
+        },
+        {
+          "id": "t2-3",
+          "text": "Ile metrów kwadratowych płytek potrzebuje Artur?",
+          "answer": "trzydzieści pięć",
+          "options": [
+            "trzydzieści pięć",
+            "sześć",
+            "dwadzieścia osiem"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "Potrzebujemy trzydzieści pięć metrów kwadratowych płytek i pięć worków kleju."
+        },
+        {
+          "id": "t2-4",
+          "text": "Kto zamówi materiały?",
+          "answer": "Artur zamówi je sam.",
+          "options": [
+            "Artur zamówi je sam.",
+            "Pani Joanna kupi je w sklepie.",
+            "Zrobi to hydraulik."
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "Nie trzeba. Materiały zamówię sam."
+        },
+        {
+          "id": "t2-5",
+          "text": "Co Artur wyśle klientce jutro?",
+          "answer": "wycenę",
+          "options": [
+            "wycenę",
+            "zaliczkę",
+            "termin",
+            "klej"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "Potrzebuję tylko zaliczki. Wycenę wyślę jutro."
+        }
+      ]
+    },
+    {
+      "block_id": "t3",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Tekst 3. Wiadomość pani Joanny: uzupełnij",
+      "instruction": "Wpisz brakujące słowo: trzeba, forma czasownika musieć, powinien albo wolno. Przy rzeczownikach wpisz formę z nawiasu w dopełniaczu.",
+      "text": "Cześć, Aniu!\n\nDziś w mojej łazience był pan Artur. Mówi, że najpierw {t3-1} skuć stare płytki i wymienić zawór. Potem fachowcy {t3-2} wyrównać ściany i zagruntować je. Przed płytkami {t3-3} położyć hydroizolację przy wannie, bo tam będzie najwięcej wody.\n\nPodczas prac nie {t3-4} wchodzić do łazienki, bo podłoga będzie mokra. Całość potrwa dwa tygodnie.\n\nMateriałów nie {t3-5} kupować, bo Artur zamówi je sam. Potrzebuje trzydzieści pięć {t3-6} kwadratowych płytek i pięć {t3-7} kleju. Ode mnie chce tylko {t3-8}. Wycenę wyśle jutro.\n\nJoanna",
+      "items": [
+        {
+          "id": "t3-1",
+          "answer": "trzeba",
+          "hint": "bez osoby",
+          "grammar_point": "modalne-obowiazek",
+          "explanation": "Najpierw trzeba + bezokolicznik: trzeba skuć."
+        },
+        {
+          "id": "t3-2",
+          "answer": "muszą",
+          "hint": "musieć",
+          "grammar_point": "modalne-obowiazek",
+          "explanation": "Fachowcy = oni → muszą."
+        },
+        {
+          "id": "t3-3",
+          "answer": "powinni",
+          "hint": "powinien",
+          "grammar_point": "modalne-obowiazek",
+          "explanation": "Fachowcy (oni, mężczyźni) → powinni: dobra praktyka, nie przymus."
+        },
+        {
+          "id": "t3-4",
+          "answer": "wolno",
+          "hint": "zakaz",
+          "grammar_point": "modalne-obowiazek",
+          "explanation": "Zakaz: nie wolno + bezokolicznik."
+        },
+        {
+          "id": "t3-5",
+          "answer": "trzeba",
+          "hint": "nie ma potrzeby",
+          "grammar_point": "modalne-obowiazek",
+          "explanation": "Nie ma potrzeby, ale wolno: nie trzeba kupować."
+        },
+        {
+          "id": "t3-6",
+          "answer": "metrów",
+          "hint": "metr",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po 35 — dopełniacz liczby mnogiej: trzydzieści pięć metrów."
+        },
+        {
+          "id": "t3-7",
+          "answer": "worków",
+          "hint": "worek",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po 5 — dopełniacz liczby mnogiej: pięć worków."
+        },
+        {
+          "id": "t3-8",
+          "answer": "zaliczki",
+          "hint": "zaliczka",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Potrzebować + dopełniacz: zaliczki."
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "1. Co z czym? Czasownik i rzecz",
+      "instruction": "Połącz czasownik z tym, co robimy na remoncie.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "skuć",
+          "right": "stary tynk",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "zagruntować",
+          "right": "ścianę przed malowaniem",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "położyć",
+          "right": "nowe płytki na podłodze",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "wymienić",
+          "right": "zepsuty zawór pod zlewem",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "uszczelnić",
+          "right": "połączenie wanny ze ścianą",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "pomalować",
+          "right": "sufit białą farbą",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "2. Trzeba + bezokolicznik",
+      "instruction": "Ułóż zdanie z tych elementów. Zacznij od właściwego miejsca.",
+      "items": [
+        {
+          "id": "g2-1",
+          "words": [
+            "trzeba",
+            "skuć",
+            "stare",
+            "płytki",
+            "najpierw"
+          ],
+          "answer": "Najpierw trzeba skuć stare płytki.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Trzeba najpierw skuć stare płytki.",
+            "Stare płytki trzeba najpierw skuć.",
+            "Stare płytki najpierw trzeba skuć."
+          ]
+        },
+        {
+          "id": "g2-2",
+          "words": [
+            "trzeba",
+            "zagruntować",
+            "ściany",
+            "przed",
+            "malowaniem"
+          ],
+          "answer": "Przed malowaniem trzeba zagruntować ściany.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Trzeba zagruntować ściany przed malowaniem.",
+            "Ściany trzeba zagruntować przed malowaniem.",
+            "Ściany przed malowaniem trzeba zagruntować."
+          ]
+        },
+        {
+          "id": "g2-3",
+          "words": [
+            "trzeba",
+            "wymienić",
+            "stary",
+            "zawór"
+          ],
+          "answer": "Trzeba wymienić stary zawór.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Stary zawór trzeba wymienić."
+          ]
+        },
+        {
+          "id": "g2-4",
+          "words": [
+            "przed",
+            "płytkami",
+            "trzeba",
+            "wyrównać",
+            "podłogę"
+          ],
+          "answer": "Przed płytkami trzeba wyrównać podłogę.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Trzeba wyrównać podłogę przed płytkami.",
+            "Podłogę trzeba wyrównać przed płytkami.",
+            "Podłogę przed płytkami trzeba wyrównać."
+          ]
+        },
+        {
+          "id": "g2-5",
+          "words": [
+            "trzeba",
+            "uszczelnić",
+            "wannę",
+            "silikonem"
+          ],
+          "answer": "Trzeba uszczelnić wannę silikonem.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Wannę trzeba uszczelnić silikonem.",
+            "Silikonem trzeba uszczelnić wannę."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Muszę, musisz, musimy…",
+      "instruction": "Wybierz właściwą formę czasownika musieć.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "My ___ dziś wyrównać ściany.",
+          "answer": "musimy",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "muszę",
+            "musimy",
+            "musicie"
+          ]
+        },
+        {
+          "id": "g3-2",
+          "text": "Ty ___ kupić więcej kleju.",
+          "answer": "musisz",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "musi",
+            "musisz",
+            "muszę"
+          ]
+        },
+        {
+          "id": "g3-3",
+          "text": "Pani Joanna ___ wybrać kolor fugi.",
+          "answer": "musi",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "musisz",
+            "muszą",
+            "musi"
+          ]
+        },
+        {
+          "id": "g3-4",
+          "text": "Ja ___ policzyć materiały.",
+          "answer": "muszę",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "musi",
+            "muszę",
+            "musimy"
+          ]
+        },
+        {
+          "id": "g3-5",
+          "text": "Wy ___ zamówić płytki do piątku.",
+          "answer": "musicie",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "muszą",
+            "musimy",
+            "musicie"
+          ]
+        },
+        {
+          "id": "g3-6",
+          "text": "Fachowcy ___ skończyć łazienkę w piątek.",
+          "answer": "muszą",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "musicie",
+            "muszą",
+            "musi"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Powinien, powinna, powinno",
+      "instruction": "Wybierz formę zgodną z rodzajem i liczbą.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Ściana ___ być sucha przed gruntowaniem.",
+          "answer": "powinna",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "powinien",
+            "powinna",
+            "powinno"
+          ]
+        },
+        {
+          "id": "g4-2",
+          "text": "Okno ___ być otwarte, kiedy schnie farba.",
+          "answer": "powinno",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "powinna",
+            "powinno",
+            "powinien"
+          ]
+        },
+        {
+          "id": "g4-3",
+          "text": "Silikon ___ być elastyczny.",
+          "answer": "powinien",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "powinno",
+            "powinien",
+            "powinna"
+          ]
+        },
+        {
+          "id": "g4-4",
+          "text": "Płytki ___ leżeć równo.",
+          "answer": "powinny",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "powinna",
+            "powinny",
+            "powinni"
+          ]
+        },
+        {
+          "id": "g4-5",
+          "text": "Pani Joanna mówi: „Ja ___ wybrać kolor fugi do piątku.”",
+          "answer": "powinnam",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "powinnaś",
+            "powinienem",
+            "powinnam"
+          ]
+        },
+        {
+          "id": "g4-6",
+          "text": "Artur, ty ___ jeszcze raz zmierzyć łazienkę.",
+          "answer": "powinieneś",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "powinnaś",
+            "powinieneś",
+            "powinien"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Nie trzeba czy nie wolno?",
+      "instruction": "Przeczytaj sytuację i wybierz wyrażenie, które pasuje do sensu.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Uwaga, świeży klej! Na tej podłodze ___ chodzić.",
+          "answer": "nie wolno",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "nie trzeba",
+            "nie wolno"
+          ],
+          "explanation": "Zakaz = nie wolno. Nie trzeba oznacza tylko, że coś nie jest konieczne."
+        },
+        {
+          "id": "g5-2",
+          "text": "Wszystko jest już zamówione, więc ___ dzwonić do sklepu.",
+          "answer": "nie trzeba",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "nie wolno",
+            "nie trzeba"
+          ],
+          "explanation": "Nie trzeba = nie ma takiej potrzeby, ale nie jest to zakaz."
+        },
+        {
+          "id": "g5-3",
+          "text": "Rury są stare i zardzewiałe, więc ___ je wymienić.",
+          "answer": "trzeba",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "nie wolno",
+            "trzeba",
+            "nie trzeba"
+          ],
+          "explanation": "Jest powód, żeby to zrobić, więc trzeba."
+        },
+        {
+          "id": "g5-4",
+          "text": "Fuga jest jeszcze mokra, więc ___ jej dotykać.",
+          "answer": "nie wolno",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "trzeba",
+            "nie wolno"
+          ],
+          "explanation": "Dotykanie mokrej fugi niszczy pracę, więc to zakaz: nie wolno."
+        },
+        {
+          "id": "g5-5",
+          "text": "Płytki są już równe, więc ___ ich poprawiać.",
+          "answer": "nie trzeba",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "nie wolno",
+            "nie trzeba"
+          ],
+          "explanation": "Poprawianie nie jest potrzebne, ale nikt tego nie zabrania."
+        },
+        {
+          "id": "g5-6",
+          "text": "Kabel jest pod napięciem. ___ go dotykać mokrą ręką!",
+          "answer": "Nie wolno",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "Nie trzeba",
+            "Nie wolno"
+          ],
+          "explanation": "Niebezpieczeństwo, czyli zakaz: nie wolno."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Wczoraj, teraz, jutro: trzeba",
+      "instruction": "Wybierz formę pasującą do czasu, a potem zmień zdanie.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Teraz ___ wyrównać ścianę.",
+          "answer": "trzeba",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "trzeba było",
+            "trzeba",
+            "będzie trzeba"
+          ]
+        },
+        {
+          "id": "g6-2",
+          "text": "Wczoraj ___ skuć stare płytki.",
+          "answer": "trzeba było",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "trzeba",
+            "będzie trzeba",
+            "trzeba było"
+          ]
+        },
+        {
+          "id": "g6-3",
+          "text": "W przyszłym tygodniu ___ zamówić nowe drzwi.",
+          "answer": "będzie trzeba",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "trzeba było",
+            "będzie trzeba",
+            "trzeba"
+          ]
+        },
+        {
+          "id": "g6-4",
+          "text": "Dwa tygodnie temu ___ wymienić rury.",
+          "answer": "trzeba było",
+          "grammar_point": "modalne-obowiazek",
+          "options": [
+            "będzie trzeba",
+            "trzeba było",
+            "trzeba"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "7. Zmień czas zdania",
+      "instruction": "Zacznij od podanego słowa i napisz całe zdanie w innym czasie.",
+      "items": [
+        {
+          "id": "g7-1",
+          "prompt": "Zacznij od słowa „Jutro”: Dzisiaj trzeba pomalować sufit.",
+          "answer": "Jutro będzie trzeba pomalować sufit.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Będzie trzeba pomalować sufit jutro."
+          ]
+        },
+        {
+          "id": "g7-2",
+          "prompt": "Zacznij od słowa „Wczoraj”: Teraz trzeba kupić klej.",
+          "answer": "Wczoraj trzeba było kupić klej.",
+          "grammar_point": "modalne-obowiazek",
+          "accept": [
+            "Trzeba było kupić klej wczoraj."
+          ]
+        }
+      ]
+    }
+  ]
+}
