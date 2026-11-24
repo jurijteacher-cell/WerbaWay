@@ -12,22 +12,24 @@ export function TeacherDock({
   name,
   defaultOpen,
   initialFilterLesson,
+  onBack,
 }: {
   studentId: string;
   name: string;
   defaultOpen?: boolean;
   initialFilterLesson?: string;
+  onBack?: () => void;
 }) {
   return (
     <DockBoundary>
       <DockChannelProvider topic={dockTopic(studentId)} presence={null}>
-        <Inner studentId={studentId} name={name} defaultOpen={defaultOpen} initialFilterLesson={initialFilterLesson} />
+        <Inner studentId={studentId} name={name} defaultOpen={defaultOpen} initialFilterLesson={initialFilterLesson} onBack={onBack} />
       </DockChannelProvider>
     </DockBoundary>
   );
 }
 
-function Inner({ studentId, name, defaultOpen, initialFilterLesson }: { studentId: string; name: string; defaultOpen?: boolean; initialFilterLesson?: string }) {
+function Inner({ studentId, name, defaultOpen, initialFilterLesson, onBack }: { studentId: string; name: string; defaultOpen?: boolean; initialFilterLesson?: string; onBack?: () => void }) {
   const { peers } = useDock();
   // лекція, у якій зараз учень: беремо вкладку, що в лекції, найсвіжішу
   const lesson = useMemo(() => {
@@ -45,6 +47,7 @@ function Inner({ studentId, name, defaultOpen, initialFilterLesson }: { studentI
       defaultOpen={defaultOpen}
       initialFilterLesson={initialFilterLesson}
       studentOnline={peers.some((p) => p.role === 'student')}
+      onBack={onBack}
     />
   );
 }

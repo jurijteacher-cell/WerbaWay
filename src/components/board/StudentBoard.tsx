@@ -8,15 +8,19 @@ import { useDock } from '@/components/dock/DockChannel';
 import { Board } from './Board';
 import { useBoardChannel } from './BoardChannel';
 
+type Status = 'none' | 'invited' | 'accepted' | 'declined';
+
 /**
  * Дошка викладача для учня-глядача: лише перегляд. Запрошення/виключення приходять у dock:<uid>
- * (bd-invite / bd-kick), живі зміни — з board:main, знімок — з teacher_board (RLS пускає лише глядачів).
+ * (bd-invite / bd-kick). Учень сам приймає запрошення чи відмовляє (RPC respond_board_invite);
+ * живі зміни — з board:main, знімок — з teacher_board (RLS пускає лише тих, хто прийняв).
  */
 export function StudentBoard({ studentId, name }: { studentId: string; name?: string }) {
   const t = useT();
   const supabase = useMemo(() => createClient(), []);
   const { listen } = useDock();
-  const [isViewer, setIsViewer] = useState(false);
+  const [status, setStatus] = useState<Status>('none');
+  const [busy, setBusy] = useState(false);
   const [open, setOpen] = useState(false);
   const [els, setEls] = useState<BoardEl[]>([]);
   const [tvp, setTvp] = useState<Viewport | null>(null);
@@ -27,8 +31,7 @@ export function StudentBoard({ studentId, name }: { studentId: string; name?: st
   const size = useRef({ w: 0, h: 0 });
   const fitted = useRef(false);
   const loading = useRef(false);
-  const viewerRef = useRef(false);
-  viewerRef.current = isViewer;
+  const isViewer = status === 'accepted';
   const elsRef = useRef<BoardEl[]>([]);
   elsRef.current = els;
 
@@ -39,7 +42,7 @@ export function StudentBoard({ studentId, name }: { studentId: string; name?: st
     loading.current = false;
     if (error || !data) {
       // дошки не видно — значить, права глядача більше немає
-      setIsViewer(false);
+      setStatus('none');
       setOpen(false);
       return;
     }
@@ -54,31 +57,36 @@ export function StudentBoard({ studentId, name }: { studentId: string; name?: st
     }
   }, [supabase]);
 
-  // чи я глядач (при вході на сторінку / перезавантаженні)
-  useEffect(() => {
-    let alive = true;
-    supabase
-      .from('board_viewers')
-      .select('student_id')
-      .eq('student_id', studentId)
-      .maybeSingle()
-      .then(({ data }) => {
-        if (alive && data) setIsViewer(true);
-      });
-    return () => {
-      alive = false;
-    };
+  // чи мене запрошено / чи я вже на дошці (при вході на сторінку / перезавантаженні)
+  const readStatus = useCallback(async () => {
+    const { data } = await supabase.from('board_viewers').select('status').eq('student_id', studentId).maybeSingle();
+    setStatus((data?.status as Status | undefined) ?? 'none');
   }, [supabase, studentId]);
+  useEffect(() => {
+    void readStatus();
+  }, [readStatus]);
+
+  async function respond(accept: boolean) {
+    if (busy) return;
+    setBusy(true);
+    const { data, error } = await supabase.rpc('respond_board_invite', { p_accept: accept });
+    setBusy(false);
+    if (error) return;
+    const next = (data as Status | null) ?? (accept ? 'accepted' : 'declined');
+    setStatus(next);
+    setOpen(next === 'accepted');
+  }
 
   // запрошення / виключення
   useEffect(
     () =>
       listen((m) => {
         if (m.k === 'bd-invite') {
-          setIsViewer(true);
-          setOpen(true);
+          // не відкриваємо дошку силою: показуємо запрошення, рішення за учнем
+          setStatus('invited');
+          setOpen(false);
         } else if (m.k === 'bd-kick') {
-          setIsViewer(false);
+          setStatus('none');
           setOpen(false);
         }
       }),
@@ -96,7 +104,7 @@ export function StudentBoard({ studentId, name }: { studentId: string; name?: st
       else if (m.k === 'bd-follow') setFollow(m.follow);
       else if (m.k === 'bd-full') void load();
       else if (m.k === 'bd-kick' && m.uid === studentId) {
-        setIsViewer(false);
+        setStatus('none');
         setOpen(false);
       }
     },
@@ -139,6 +147,24 @@ export function StudentBoard({ studentId, name }: { studentId: string; name?: st
     []
   );
 
+  if (status === 'invited') {
+    return (
+      <div className="ww-board-invite" role="alertdialog" aria-labelledby="ww-board-invite-t" data-testid="board-invite">
+        <p id="ww-board-invite-t" className="ww-board-invite-title">
+          {t('Викладач запрошує вас на дошку')}
+        </p>
+        <p className="ww-board-invite-sub">{t('Ви лише дивитеся, змінювати нічого не можна. Відмовитись можна будь-коли.')}</p>
+        <div className="ww-board-invite-actions">
+          <button type="button" className="ww-btn ww-btn-primary ww-btn-sm" disabled={busy} onClick={() => void respond(true)} data-testid="board-invite-accept">
+            {t('Прийняти')}
+          </button>
+          <button type="button" className="ww-btn ww-btn-secondary ww-btn-sm" disabled={busy} onClick={() => void respond(false)} data-testid="board-invite-decline">
+            {t('Відмовитись')}
+          </button>
+        </div>
+      </div>
+    );
+  }
   if (!isViewer) return null;
   const following = follow && !!tvp;
   const vp = following ? tvp! : ownVp;

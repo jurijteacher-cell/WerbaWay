@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import { requireTeacher } from '@/app/teacher/results/requireTeacher';
 import { LiveWatch } from '@/components/live/LiveWatch';
 import { classTopic } from '@/lib/live/protocol';
-import { TeacherDock } from '@/components/dock/TeacherDock';
 import { t } from '@/i18n/server';
 
 export const dynamic = 'force-dynamic';
@@ -28,7 +27,6 @@ export default async function WatchStudentPage({ params, searchParams }: { param
         <p className="text-sm text-paper-muted">{t('Учень бачить позначку «Викладач бачить твої відповіді». Ти бачиш, що він обирає й вписує у вправах; лекцію гортаєш сам — в учня нічого не змінюється.')}</p>
       </div>
       <LiveWatch topic={classTopic(params.id)} studentId={params.id} name={name} />
-      <TeacherDock studentId={params.id} name={name} defaultOpen={searchParams.dock === '1'} />
     </main>
   );
 }

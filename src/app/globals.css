@@ -623,6 +623,21 @@
     border-radius: 99px; background: var(--ww-pink); color: #fff; font: 700 11px/1 var(--font-onest), system-ui, sans-serif; writing-mode: horizontal-tb;
   }
   html.ww-dock-lock, html.ww-dock-lock body { overflow: hidden; }
+  /* список усіх чатів викладача */
+  .ww-chatlist-search { padding: 10px 12px 4px; }
+  .ww-chatlist-search .ww-input { width: 100%; font-size: 16px; }
+  .ww-chatlist { margin: 0; padding: 4px 0 8px; list-style: none; }
+  .ww-chatlist-row {
+    display: flex; align-items: center; gap: 10px; width: 100%; padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--ww-line);
+    font-family: var(--font-onest), system-ui, sans-serif; background: transparent;
+  }
+  .ww-chatlist-row:hover, .ww-chatlist-row:focus-visible { background: var(--ww-soft); }
+  .ww-chatlist-row.is-unread { background: var(--ww-violet-fill); }
+  .ww-chatlist-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+  .ww-chatlist-name { font: 700 14.5px/1.3 var(--font-onest), system-ui, sans-serif; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ww-chatlist-last { color: var(--ww-muted); font-size: 13px; line-height: 1.3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ww-chatlist-side { flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; color: var(--ww-faint); font: 500 11px/1.2 var(--font-plex-mono), ui-monospace, monospace; }
+  .ww-chatlist-badge { min-width: 20px; height: 20px; padding: 0 5px; display: grid; place-items: center; border-radius: 99px; background: var(--ww-pink); color: #fff; font: 700 11px/1 var(--font-onest), system-ui, sans-serif; }
 }
 
 /* ═══ Слова: додати / колоди власника (панель дока й вікно на /words) ═══ */
@@ -673,12 +688,21 @@
   .ww-bel.is-text { padding: 4px 6px; min-height: 1.4em; }
   .ww-bel.is-sel { outline: 2px solid var(--ww-violet); outline-offset: 2px; }
   .ww-bel.is-sel.is-note { overflow: visible; }
-  .ww-bel-text { white-space: pre-wrap; overflow-wrap: anywhere; }
+  .ww-bel-text { white-space: normal; overflow-wrap: anywhere; word-break: break-word; }
+  .ww-bel-text b, .ww-bel-edit b { font-weight: 800; }
+  .ww-bel-text i, .ww-bel-edit i { font-style: italic; }
+  /* редагування: поле займає весь прямокутник стікера, як у Miro */
+  .ww-bel.is-editing { cursor: text; }
+  .ww-bel.is-note.is-editing { padding: 0; }
+  .ww-bel.is-text.is-editing { padding: 0; }
   .ww-bel-edit {
-    display: block; width: 100%; height: 100%; min-height: 1.6em; resize: none; border: 0; outline: 0; padding: 0;
-    background: transparent; color: inherit; font: inherit; line-height: inherit;
+    display: block; width: 100%; height: 100%; min-height: 1.6em; box-sizing: border-box; padding: 10px 12px; overflow: hidden;
+    border: 0; outline: 0; background: transparent; color: inherit; font: inherit; line-height: inherit; white-space: normal;
+    overflow-wrap: anywhere; word-break: break-word; cursor: text; caret-color: var(--ww-violet);
+    user-select: text; -webkit-user-select: text; -webkit-touch-callout: default;
   }
-  .ww-bel.is-text .ww-bel-edit { min-height: 2.8em; }
+  .ww-bel.is-text .ww-bel-edit { height: auto; min-height: 2.8em; padding: 4px 6px; }
+  .ww-bel.is-editing { outline: 2px solid var(--ww-violet); outline-offset: 2px; }
   .ww-bel-resize { position: absolute; right: -7px; bottom: -7px; width: 16px; height: 16px; border-radius: 4px; background: var(--ww-violet-solid); border: 2px solid var(--ww-paper); cursor: nwse-resize; touch-action: none; }
   .ww-board-band { position: absolute; border: 1.5px dashed var(--ww-violet); background: rgba(122, 79, 224, .08); pointer-events: none; }
 
@@ -694,6 +718,21 @@
   }
   @media (min-width: 1024px) { .ww-board-chip { bottom: 14px; } }
   .ww-board-chip i { width: 8px; height: 8px; border-radius: 99px; background: var(--ww-ok); }
+  /* запрошення на дошку: лишається, поки учень не відповість; не перекриває лекцію */
+  .ww-board-invite {
+    position: fixed; left: 14px; z-index: 95; bottom: calc(env(safe-area-inset-bottom) + 78px); width: min(22rem, calc(100vw - 28px));
+    padding: 14px 16px; border: 1px solid var(--ww-line); border-radius: var(--ww-r-lg); background: var(--ww-paper); color: var(--ww-ink);
+    box-shadow: var(--ww-shadow-card); font-family: var(--font-onest), system-ui, sans-serif; animation: ww-dock-up .24s var(--ww-ease);
+  }
+  @media (min-width: 1024px) { .ww-board-invite { bottom: 14px; } }
+  .ww-board-invite-title { margin: 0; font: 700 15px/1.3 var(--font-onest), system-ui, sans-serif; }
+  .ww-board-invite-sub { margin: 4px 0 0; color: var(--ww-muted); font-size: 13px; line-height: 1.4; }
+  .ww-board-invite-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .ww-board-state { color: var(--ww-faint); font-style: normal; font-size: 12.5px; }
+  .ww-board-state.is-no { color: var(--ww-no); }
+  /* на сторінці дошки кнопки дока лишаються над нею */
+  body:has(.ww-boardscreen) .ww-dock-launch { z-index: 85; }
+  body:has(.ww-boardscreen) .ww-dock.is-desktop { z-index: 85; }
   .ww-board-colors { display: inline-flex; gap: 6px; padding: 4px; }
   .ww-board-color { width: 28px; height: 28px; border-radius: 8px; border: 1px solid var(--ww-edge); box-shadow: 0 2px 0 rgba(28, 35, 72, .15); }
   .ww-board-color[aria-pressed='true'] { outline: 2px solid var(--ww-violet); outline-offset: 2px; }
