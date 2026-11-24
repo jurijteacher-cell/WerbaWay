@@ -1,0 +1,335 @@
+{
+  "lesson_id": "pl-telc-b1-korekta-02-kalki-i-kolokacje",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: kalki i kolokacje",
+  "instruction": "Cztery krótkie ćwiczenia. Możesz przerwać i wrócić później.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Które słowo pasuje?",
+      "instruction": "Wybierz słowo.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Nasza firma ma kilka ___ w różnych miastach Polski.",
+          "answer": "oddziałów",
+          "grammar_point": "slownictwo",
+          "options": [
+            "oddziałów",
+            "działów",
+            "środków"
+          ],
+          "explanation": "oddział = filia w innym mieście; dział = część jednej firmy."
+        },
+        {
+          "id": "h1-2",
+          "text": "___ osób pracuje w Twoim dziale?",
+          "answer": "Ile",
+          "grammar_point": "slownictwo",
+          "options": [
+            "Ile",
+            "Kilka",
+            "Wiele"
+          ],
+          "explanation": "ile = сколько? tylko w pytaniu."
+        },
+        {
+          "id": "h1-3",
+          "text": "Dziękuję za ___ przy wypełnianiu formularza.",
+          "answer": "pomoc",
+          "grammar_point": "slownictwo",
+          "options": [
+            "pomoc",
+            "pomóc",
+            "pomysł"
+          ],
+          "explanation": "pomoc = rzeczownik: dziękuję za + biernik."
+        },
+        {
+          "id": "h1-4",
+          "text": "Sędzia musi być ___ od polityków.",
+          "answer": "niezależny",
+          "grammar_point": "slownictwo",
+          "options": [
+            "niezależny",
+            "niepodległy",
+            "samotny"
+          ],
+          "explanation": "niezależny od + dopełniacz."
+        },
+        {
+          "id": "h1-5",
+          "text": "Na siłowni nasz ___ pokazuje, jak poprawnie robić przysiad.",
+          "answer": "trener",
+          "grammar_point": "slownictwo",
+          "options": [
+            "trener",
+            "nauczyciel",
+            "wykładowca"
+          ],
+          "explanation": "trener = sport."
+        },
+        {
+          "id": "h1-6",
+          "text": "Przed każdym ćwiczeniem stosujemy podstawowe ___ bezpieczeństwa.",
+          "answer": "środki",
+          "grammar_point": "slownictwo",
+          "options": [
+            "środki",
+            "narzędzia",
+            "oddziały"
+          ],
+          "explanation": "środki bezpieczeństwa — stałe połączenie."
+        },
+        {
+          "id": "h1-7",
+          "text": "W tym programie są przydatne ___ do sprawdzania pisowni.",
+          "answer": "narzędzia",
+          "grammar_point": "slownictwo",
+          "options": [
+            "narzędzia",
+            "środki",
+            "działy"
+          ],
+          "explanation": "narzędzia = инструменты."
+        },
+        {
+          "id": "h1-8",
+          "text": "Klient nie jest zadowolony — musimy jeszcze dziś ___ ten problem.",
+          "answer": "rozwiązać",
+          "grammar_point": "slownictwo",
+          "options": [
+            "rozwiązać",
+            "wzmocnić",
+            "wymienić"
+          ],
+          "explanation": "problem się rozwiązuje."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "2. Popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h2-1",
+          "prompt": "Kupiłem bilety na pociąg za tydzień przed wyjazdem.",
+          "answer": "Kupiłem bilety na pociąg tydzień przed wyjazdem.",
+          "grammar_point": "kalki-ru",
+          "accept": [
+            "Kupiłem bilety na pociąg na tydzień przed wyjazdem."
+          ],
+          "explanation": "«За неделю до» → tydzień przed."
+        },
+        {
+          "id": "h2-2",
+          "prompt": "Obiad w tej restauracji jest tani dla centrum.",
+          "answer": "Obiad w tej restauracji jest tani jak na centrum.",
+          "grammar_point": "kalki-ru",
+          "accept": [
+            "Obiad w tej restauracji jest tani jak na centrum miasta."
+          ],
+          "explanation": "jak na + biernik."
+        },
+        {
+          "id": "h2-3",
+          "prompt": "Po meczu zawsze idziemy po piwo do pubu.",
+          "answer": "Po meczu zawsze idziemy na piwo do pubu.",
+          "grammar_point": "kalki-ru",
+          "accept": [
+            "Po meczu zawsze idziemy do pubu na piwo."
+          ],
+          "explanation": "na piwo = towarzysko."
+        },
+        {
+          "id": "h2-4",
+          "prompt": "Klient dzwonił w piątek o szóstej godzinie.",
+          "answer": "Klient dzwonił w piątek o szóstej.",
+          "grammar_point": "kalki-ru",
+          "accept": [
+            "Klient dzwonił w piątek o godzinie szóstej."
+          ],
+          "explanation": "o + liczebnik porządkowy bez „godzina”."
+        },
+        {
+          "id": "h2-5",
+          "prompt": "Mamy dziś online spotkanie z zespołem.",
+          "answer": "Mamy dziś spotkanie online z zespołem.",
+          "grammar_point": "kalki-ru",
+          "accept": [
+            "Mamy dziś z zespołem spotkanie online."
+          ],
+          "explanation": "online po rzeczowniku."
+        },
+        {
+          "id": "h2-6",
+          "prompt": "Zarezerwowałem parking przy szlaku na sobotę.",
+          "answer": "Zarezerwowałem miejsce parkingowe przy szlaku na sobotę.",
+          "grammar_point": "kalki-ru",
+          "accept": [
+            "Zarezerwowałem miejsce na parkingu przy szlaku na sobotę."
+          ],
+          "explanation": "Rezerwujemy miejsce, nie cały parking."
+        },
+        {
+          "id": "h2-7",
+          "prompt": "Dyrektor chce wzmocnić poziom naszych kwalifikacji.",
+          "answer": "Dyrektor chce podnieść poziom naszych kwalifikacji.",
+          "grammar_point": "slownictwo",
+          "accept": [
+            "Dyrektor chce podnieść nasze kwalifikacje."
+          ],
+          "explanation": "podnieść poziom / kwalifikacje."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "cloze-text",
+      "title": "3. Uzupełnij e-mail",
+      "instruction": "Wybierz w każdej luce właściwe słowo.",
+      "text": "Szanowni Państwo,\n\nod miesiąca korzystam z Państwa aplikacji do zamawiania obiadów do biura i chciałbym {h3-1} swoją opinię. W aplikacji jest {h3-2} restauracji, więc zawsze mogę coś wybrać. Obiad zamawiam zwykle {h3-3} godzin wcześniej, a dostawa odbywa się w {h3-4} dla mnie godzinach.\n\nNiestety kilka razy zamówienie przyszło zimne. Proszę, żeby Państwo szybko {h3-5} ten problem i {h3-6} jakość dostaw. Z góry dziękuję za {h3-7}.\n\nZ poważaniem",
+      "items": [
+        {
+          "id": "h3-1",
+          "options": [
+            "przekazać",
+            "załatwić",
+            "wzmocnić"
+          ],
+          "answer": "przekazać",
+          "grammar_point": "slownictwo",
+          "explanation": "przekazać opinię."
+        },
+        {
+          "id": "h3-2",
+          "options": [
+            "wiele",
+            "ile",
+            "kilka"
+          ],
+          "answer": "wiele",
+          "grammar_point": "slownictwo",
+          "explanation": "wiele restauracji = много ресторанов."
+        },
+        {
+          "id": "h3-3",
+          "options": [
+            "kilka",
+            "ile",
+            "pomoc"
+          ],
+          "answer": "kilka",
+          "grammar_point": "slownictwo",
+          "explanation": "kilka godzin wcześniej = несколько часов заранее."
+        },
+        {
+          "id": "h3-4",
+          "options": [
+            "dogodnych",
+            "niezależnych",
+            "wygodnym"
+          ],
+          "answer": "dogodnych",
+          "grammar_point": "slownictwo",
+          "explanation": "w dogodnych dla mnie godzinach."
+        },
+        {
+          "id": "h3-5",
+          "options": [
+            "rozwiązali",
+            "załatwili",
+            "wzmocnili"
+          ],
+          "answer": "rozwiązali",
+          "grammar_point": "slownictwo",
+          "explanation": "żeby Państwo rozwiązali — forma męskoosobowa po „Państwo”."
+        },
+        {
+          "id": "h3-6",
+          "options": [
+            "podnieśli",
+            "wzmocnili",
+            "wymienili"
+          ],
+          "answer": "podnieśli",
+          "grammar_point": "slownictwo",
+          "explanation": "podnieść jakość."
+        },
+        {
+          "id": "h3-7",
+          "options": [
+            "pomoc",
+            "pomóc",
+            "pomysł"
+          ],
+          "answer": "pomoc",
+          "grammar_point": "slownictwo",
+          "explanation": "dziękuję za + biernik: za pomoc."
+        }
+      ]
+    },
+    {
+      "block_id": "h4",
+      "exercise_type": "matching",
+      "title": "4. Połącz słowo z opisem",
+      "instruction": "Kliknij wyrażenie po lewej, potem pasujący opis po prawej.",
+      "items": [
+        {
+          "id": "h4-1",
+          "left": "iść po piwo",
+          "right": "kupić piwo w sklepie i wrócić do domu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h4-2",
+          "left": "iść na piwo",
+          "right": "spotkać się z kimś w pubie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h4-3",
+          "left": "oddział",
+          "right": "filia banku albo część szpitala",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h4-4",
+          "left": "dział",
+          "right": "część firmy z określonymi zadaniami, np. IT",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h4-5",
+          "left": "niepodległość",
+          "right": "wolność państwa od obcej władzy",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h4-6",
+          "left": "niezależny",
+          "right": "taki, który sam podejmuje decyzje",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h4-7",
+          "left": "narzędzie",
+          "right": "rzecz albo program, którym coś robimy",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "h4-8",
+          "left": "środki finansowe",
+          "right": "pieniądze na jakiś cel",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    }
+  ]
+}

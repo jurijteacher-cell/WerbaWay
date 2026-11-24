@@ -3528,6 +3528,34 @@
       ],
       "notes": "Лекція 23 (після R4). Граматика: siebie / sobie / sobą, się при зворотних, взаємність (nawzajem) — новий тег zaimek-siebie (B1). Сюжет: бабуся Ганна купила смартфон, Максим і Бартек вчать її інтернету; Іра на відеодзвінку. Аудіо через сайт: -czytanie.mp3 і -e2-dialogi.mp3 (потрібна генерація після деплою). Слухання e2 НЕ опубліковано (правило v3.20: без готового аудіо вправу не додаємо): блок лежить у content-queue/audio-pending/pl-b1-group-23-internet-e2-block.json; після ready:true в /api/audio/_status — повернути блок в -exam.json, embed ?blocks=e2 на сторінку (розділ «Słuchanie» перед Podsumowanie) і exam_e2 у цей маніфест. Відео в ДЗ: SprzętoZnawca, «5 rzeczy, które MUSISZ ustawić w telefonie seniora!» (Kh4AeEI_pFs), 3 хв, 106 тис. переглядів, 24.11.2026. Тільки сайт, без Notion.",
       "site_url": "https://werbaway.com/learn/pl-b1-group-23-internet"
+    },
+    {
+      "lesson_id": "pl-telc-b1-korekta-02-kalki-i-kolokacje",
+      "module": "pl-telc-b1",
+      "level": "B1",
+      "title": "Popraw mnie! Kalki i kolokacje z Twoich tekstów",
+      "published_at": "2026-11-24T16:00:00Z",
+      "template": "korekta (indywidualna)",
+      "embeds": {
+        "grammar_part1": "https://werba-way.vercel.app/embed/pl-telc-b1-korekta-02-kalki-i-kolokacje/grammar?blocks=g1-g3",
+        "grammar_part2": "https://werba-way.vercel.app/embed/pl-telc-b1-korekta-02-kalki-i-kolokacje/grammar?blocks=g4-g5",
+        "grammar_part3": "https://werba-way.vercel.app/embed/pl-telc-b1-korekta-02-kalki-i-kolokacje/grammar?blocks=g6-g7",
+        "vocab": "https://werba-way.vercel.app/embed/pl-telc-b1-korekta-02-kalki-i-kolokacje/vocab",
+        "grammar_part4": "https://werba-way.vercel.app/embed/pl-telc-b1-korekta-02-kalki-i-kolokacje/grammar?blocks=g8-g9",
+        "grammar_gz": "https://werba-way.vercel.app/embed/pl-telc-b1-korekta-02-kalki-i-kolokacje/grammar?blocks=gz",
+        "comm_tasks": "https://werba-way.vercel.app/embed/pl-telc-b1-korekta-02-kalki-i-kolokacje/comm-tasks",
+        "hw": "https://werba-way.vercel.app/embed/pl-telc-b1-korekta-02-kalki-i-kolokacje/hw"
+      },
+      "images": {
+        "cover": {
+          "url": "https://images.unsplash.com/photo-1581431886288-e216ea4ccf3f",
+          "credit": "Unsplash (автор не перевірений)"
+        }
+      },
+      "status": "published",
+      "published_by": "claude",
+      "site_url": "https://werbaway.com/learn/pl-telc-b1-korekta-02-kalki-i-kolokacje",
+      "notes": "Тільки сайт (без Notion). Корекція за 7 текстами Андрея: кальки, колокації, слова, що плутаються. Без поля number (корекція без номера в галереї, як popraw-mnie). Відео не додано (не верифіковано)."
     }
   ]
 }
