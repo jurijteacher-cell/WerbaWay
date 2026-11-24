@@ -1,0 +1,29 @@
+{
+  "block_id": "e2",
+  "exam_skill": "sluchanie",
+  "exercise_type": "true-false",
+  "max_plays": 2,
+  "audio_url": "/audio/pl-a2-53-z-kim-pracuje-e2-dialog.mp3",
+  "title": "Słuchanie: prawda czy fałsz?",
+  "instruction": "Usłyszysz rozmowę Oleny z panem Piotrem dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+  "items": [
+    {
+      "id": "e2-1",
+      "statement": "Nad katalogiem zimowym Olena będzie pracować z Tomkiem.",
+      "answer": false,
+      "explanation": "Tomek jest w Zakopanem z grupą — Olena będzie pracować z Magdą."
+    },
+    {
+      "id": "e2-2",
+      "statement": "Biurko Magdy stoi pod dużym kalendarzem.",
+      "answer": true,
+      "explanation": "Pan Piotr: jej biurko stoi między drukarką a oknem, pod dużym kalendarzem."
+    },
+    {
+      "id": "e2-3",
+      "statement": "Teraz stroną internetową zajmuje się Bartek.",
+      "answer": true,
+      "explanation": "Na razie zajmuje się nią Bartek z IT."
+    }
+  ]
+}

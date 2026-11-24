@@ -305,21 +305,7 @@ Zadania komunikacyjne
 
 ---
 
-## 🎧 7. Słuchanie jak na egzaminie
-
-<aside class="lp-callout" data-tone="blue"><span class="lp-callout-icon" aria-hidden="true">🎧</span><div class="lp-callout-body">
-
-Cztery krótkie dialogi o jedzeniu — tak jak w zadaniu ze słuchu na egzaminie państwowym B1. Najpierw przeczytaj pytania. Nauczyciel przeczyta każdy dialog <b>dwa razy</b>.
-
-</div></aside>
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-12-jedzenie/exam?blocks=e2">
-Słuchanie — jak na egzaminie
-</embed>
-
----
-
-## ✅ 8. Podsumowanie
+## ✅ 7. Podsumowanie
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🏁</span><div class="lp-callout-body">
 
@@ -335,7 +321,7 @@ Słuchanie — jak na egzaminie
 
 ---
 
-## 🏠 9. Praca domowa
+## 🏠 8. Praca domowa
 
 Trzy części: <b>ćwiczenia</b>, <b>wideo</b> i <b>pisanie</b>.
 

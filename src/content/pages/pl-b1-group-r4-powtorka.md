@@ -235,21 +235,7 @@ Sześć tematów z lekcji 17–22 na jednej mapie. Każdy blok: zasada, przykła
 
 ---
 
-## 🎧 4. Słuchanie jak na egzaminie
-
-<aside class="lp-callout" data-tone="blue"><span class="lp-callout-icon" aria-hidden="true">🎧</span><div class="lp-callout-body">
-
-Olena rozmawia przez telefon z rekruterką firmy z Lublina. Posłuchaj rozmowy <b>dwa razy</b> — bez tekstu. Najpierw przeczytaj pytania, potem wybierz odpowiedź.
-
-</div></aside>
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-r4-powtorka/exam?blocks=e2">
-Słuchanie — jak na egzaminie
-</embed>
-
----
-
-## ⏱️ 5. Speaking marathon
+## ⏱️ 4. Speaking marathon
 
 <aside class="lp-callout" data-tone="red"><span class="lp-callout-icon" aria-hidden="true">⏱️</span><div class="lp-callout-body">
 
@@ -275,7 +261,7 @@ Speaking marathon
 
 ---
 
-## 📝 6. Mini-test z całego kursu
+## 📝 5. Mini-test z całego kursu
 
 <aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">📝</span><div class="lp-callout-body">
 
@@ -289,7 +275,7 @@ Mini-test — lekcje 1–22
 
 ---
 
-## ✅ 7. Podsumowanie
+## ✅ 6. Podsumowanie
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🏁</span><div class="lp-callout-body">
 
@@ -306,7 +292,7 @@ Mini-test — lekcje 1–22
 
 ---
 
-## 🏠 8. Praca domowa
+## 🏠 7. Praca domowa
 
 Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>pełny blok pisania, jak na egzaminie</b>.
 

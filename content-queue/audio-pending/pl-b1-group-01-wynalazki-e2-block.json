@@ -1,0 +1,55 @@
+{
+  "block_id": "e2",
+  "exam_skill": "sluchanie",
+  "exercise_type": "multiple-choice",
+  "source": "pl-b1-group-01-wynalazki-comm-tasks.json#c1.model_dialogue",
+  "max_plays": 2,
+  "title": "Słuchanie: rozmowa z infolinią",
+  "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+  "items": [
+    {
+      "id": "e2-1",
+      "question": "Gdzie jest problem?",
+      "options": [
+        "w routerze klientki",
+        "w kablu na innej ulicy",
+        "w komputerze klientki"
+      ],
+      "answer": "w kablu na innej ulicy",
+      "explanation": "Konsultant mówi, że uszkodzony został kabel na ulicy Polnej."
+    },
+    {
+      "id": "e2-2",
+      "question": "Do której godziny usterka powinna zostać usunięta?",
+      "options": [
+        "do 20:00",
+        "do 22:00",
+        "do 9:00 następnego dnia"
+      ],
+      "answer": "do 22:00",
+      "explanation": "„Dzisiaj do dwudziestej drugiej”."
+    },
+    {
+      "id": "e2-3",
+      "question": "Co stanie się z opłatą za dni bez internetu?",
+      "options": [
+        "klientka musi napisać reklamację",
+        "rabat zostanie naliczony automatycznie",
+        "opłata się nie zmieni"
+      ],
+      "answer": "rabat zostanie naliczony automatycznie",
+      "explanation": "Rabat pojawi się na następnej fakturze."
+    },
+    {
+      "id": "e2-4",
+      "question": "Jaki jest numer zgłoszenia?",
+      "options": [
+        "471903",
+        "417903",
+        "471930"
+      ],
+      "answer": "471903",
+      "explanation": "Cztery, siedem, jeden, dziewięć, zero, trzy."
+    }
+  ]
+}

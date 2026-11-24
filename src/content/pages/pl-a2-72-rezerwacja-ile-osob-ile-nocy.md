@@ -205,14 +205,6 @@ Mianownik liczby mnogiej już znasz: <i>pokoje, osoby, bilety</i>. Dziś — poz
 
 ## 🎭 4. Zadania komunikacyjne
 
-### 🎧 Słuchanie jak na egzaminie
-
-We wtorek Olena dzwoni do pensjonatu, bo ma jeszcze kilka pytań. Posłuchaj rozmowy dwa razy — bez tekstu. Najpierw zaznacz: prawda czy fałsz, potem odpowiedz na pytania a, b, c.
-
-<embed source="https://werba-way.vercel.app/embed/pl-a2-72-rezerwacja-ile-osob-ile-nocy/exam?blocks=e2-e3">
-Słuchanie — jak na egzaminie
-</embed>
-
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🧰</span><div class="lp-callout-body">
 
 <b>Warto użyć</b>

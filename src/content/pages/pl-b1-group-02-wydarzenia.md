@@ -85,12 +85,6 @@ Porozmawiajmy. Tu nie chodzi o znajomość dat, tylko o argumenty.
 
 ## 5. Zadania komunikacyjne
 
-Najpierw posłuchaj rozmowy z archiwum, w którym ktoś szuka dokumentu pradziadka, i odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-02-wydarzenia/exam?blocks=e2">
-Jak na egzaminie — słuchanie
-</embed>
-
 Teraz Twoja kolej. Cztery sytuacje, w których daty i terminy decydują o wszystkim. Odwróć kartę i wykonaj zadanie. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-02-wydarzenia/comm-tasks">

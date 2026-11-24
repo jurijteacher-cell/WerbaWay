@@ -1,0 +1,55 @@
+{
+  "block_id": "e2",
+  "exam_skill": "sluchanie",
+  "exercise_type": "multiple-choice",
+  "source": "pl-b1-group-02-praca-comm-tasks.json#c1.model_dialogue",
+  "max_plays": 2,
+  "title": "Słuchanie: rozmowa kwalifikacyjna",
+  "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+  "items": [
+    {
+      "id": "e2-1",
+      "question": "Gdzie kandydatka pracuje teraz?",
+      "options": [
+        "w recepcji hotelu w Krakowie",
+        "w biurze podróży w Gdańsku",
+        "w restauracji hotelowej"
+      ],
+      "answer": "w recepcji hotelu w Krakowie",
+      "explanation": "„Od czterech lat pracuję w recepcji hotelu w Krakowie”."
+    },
+    {
+      "id": "e2-2",
+      "question": "Dlaczego szuka nowej pracy?",
+      "options": [
+        "bo nie ma możliwości awansu",
+        "bo ma za niską pensję",
+        "bo ma za długi dojazd"
+      ],
+      "answer": "bo nie ma możliwości awansu",
+      "explanation": "„U nas nie ma możliwości awansu”."
+    },
+    {
+      "id": "e2-3",
+      "question": "Ile trwa okres próbny?",
+      "options": [
+        "dwa tygodnie",
+        "trzy miesiące",
+        "pół roku"
+      ],
+      "answer": "trzy miesiące",
+      "explanation": "Dwa tygodnie trwa tylko wdrożenie. Okres próbny trwa trzy miesiące."
+    },
+    {
+      "id": "e2-4",
+      "question": "Kiedy firma podejmie decyzję?",
+      "options": [
+        "jutro",
+        "do piątku",
+        "za miesiąc"
+      ],
+      "answer": "do piątku",
+      "explanation": "„Po zakończeniu wszystkich rozmów, czyli do piątku”."
+    }
+  ]
+}

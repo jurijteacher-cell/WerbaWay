@@ -50,45 +50,6 @@
           "explanation": "„Zamiast dziesięciu minut jechałem czterdzieści”."
         }
       ]
-    },
-    {
-      "block_id": "e2",
-      "exam_skill": "sluchanie",
-      "exercise_type": "multiple-choice",
-      "source": "pl-b1-group-07-dojazd-comm-tasks.json#c1.model_dialogue",
-      "max_plays": 2,
-      "title": "Słuchanie: w punkcie obsługi pasażera",
-      "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
-      "items": [
-        {
-          "id": "e2-1",
-          "question": "Jaki bilet poleca pracownica?",
-          "options": ["jednorazowy", "miesięczny", "dobowy"],
-          "answer": "miesięczny",
-          "explanation": "Pasażer będzie jeździł codziennie, więc najlepszy jest bilet miesięczny."
-        },
-        {
-          "id": "e2-2",
-          "question": "Czego potrzeba, żeby wyrobić kartę miejską?",
-          "options": ["dokumentu ze zdjęciem", "zaświadczenia z pracy", "dwóch zdjęć"],
-          "answer": "dokumentu ze zdjęciem",
-          "explanation": "Kartę wyrabiają od ręki, wystarczy dokument ze zdjęciem."
-        },
-        {
-          "id": "e2-3",
-          "question": "Gdzie pasażer musi się przesiąść?",
-          "options": ["przy szpitalu", "na pętli przy dworcu", "w strefie przemysłowej"],
-          "answer": "na pętli przy dworcu",
-          "explanation": "Wysiada z autobusu na pętli przy dworcu i przesiada się do tramwaju numer siedem."
-        },
-        {
-          "id": "e2-4",
-          "question": "Dlaczego autobus bez przesiadki nie zawsze pomoże?",
-          "options": ["jest droższy", "jeździ tylko rano", "stoi w korku"],
-          "answer": "jeździ tylko rano",
-          "explanation": "Autobus dwieście piętnaście jeździ tylko do dziewiątej rano."
-        }
-      ]
     }
   ]
 }

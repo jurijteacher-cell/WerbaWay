@@ -82,12 +82,6 @@ Wróć na chwilę do tamtej ławki. Mów długo, nie skracaj.
 
 ## 5. Zadania komunikacyjne
 
-Najpierw posłuchaj rozmowy: klientka dzwoni do szkoły językowej i pyta o kurs niemieckiego. Odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-02-szkola/exam?blocks=e2">
-Jak na egzaminie — słuchanie
-</embed>
-
 Teraz Twoja kolej. Cztery sytuacje, w których trzeba zadzwonić, zapytać i dogadać się po polsku. Odwróć kartę i odegraj rozmowę. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-02-szkola/comm-tasks">

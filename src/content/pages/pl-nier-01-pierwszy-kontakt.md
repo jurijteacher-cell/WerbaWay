@@ -233,18 +233,6 @@ Klient ocenia Cię w pierwszych trzydziestu sekundach. Trzy narzędzia, które r
 
 ## 🎭 5. Zadania komunikacyjne
 
-### 🎧 Najpierw posłuchaj
-
-<aside class="lp-callout" data-tone="blue"><span class="lp-callout-icon" aria-hidden="true">🎧</span><div class="lp-callout-body">
-
-Nauczyciel czyta rozmowę telefoniczną między Natalią a klientką. Najpierw przeczytaj pytania. Rozmowę usłyszysz <b>dwa razy</b>. Na egzaminie — tylko raz.
-
-</div></aside>
-
-<embed source="https://werba-way.vercel.app/embed/pl-nier-01-pierwszy-kontakt/exam?blocks=e2">
-Słuchanie — jak na egzaminie
-</embed>
-
 ### 🧰 Teraz Twoja kolej
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🧰</span><div class="lp-callout-body">

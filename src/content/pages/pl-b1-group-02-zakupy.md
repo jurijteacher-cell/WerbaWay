@@ -86,12 +86,6 @@ Rozmawiamy. Odpowiedź „nie wiem” nie jest zabroniona, ale musi mieć ciąg 
 
 ## 5. Zadania komunikacyjne
 
-Najpierw posłuchaj rozmowy w sklepie: klient reklamuje kurtkę. Odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-02-zakupy/exam?blocks=e2">
-Jak na egzaminie — słuchanie
-</embed>
-
 Teraz Twoja kolej. Cztery sytuacje, w których trzeba zapytać, dopytać i nie dać się zbyć. Odwróć kartę i odegraj rozmowę. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-02-zakupy/comm-tasks">

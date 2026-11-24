@@ -24,9 +24,8 @@ cover: https://images.unsplash.com/photo-1653762378248-db45a1285697?w=1600&h=900
 
 <b>Instrukcja</b>
 
-- Test ma <b>4 części i 15 zadań</b>: gramatyka (7), słowa (3), czytanie (3), słuchanie (2). Każde zadanie — jeden punkt.
+- Test ma <b>3 części i 13 zadań</b>: gramatyka (7), słowa (3), czytanie (3). Każde zadanie — jeden punkt.
 - Masz około <b>25 minut</b>. Pracujesz sam / sama, bez słownika i bez notatek.
-- Rozmowę w części D usłyszysz <b>dwa razy</b>.
 - Potem <b>Mówienie</b> — około 10 minut z nauczycielem. <b>Pisanie</b> robisz w domu.
 
 </div></aside>
@@ -59,14 +58,6 @@ Buziaki, Kasia
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-62-kontrolna-opowiadam/exam?blocks=e1">
 Test — czytanie
-</embed>
-
-### 🎧 Część D. Słuchanie
-
-<b>Wieczorem Kasia dzwoni do Oleny. Posłuchaj rozmowy dwa razy i wybierz poprawną odpowiedź.</b>
-
-<embed source="https://werba-way.vercel.app/embed/pl-a2-62-kontrolna-opowiadam/exam?blocks=e2">
-Test — słuchanie
 </embed>
 
 ---

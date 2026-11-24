@@ -220,14 +220,6 @@ Miejscownik znasz z pytania <b>gdzie?</b>: <i>w Krakowie, na poczcie</i>. Dziś 
 
 ## 🎭 4. Zadania komunikacyjne
 
-### 🎧 Słuchanie jak na egzaminie
-
-W biurze Tomek pokazuje Olenie zdjęcie z dzieciństwa. Posłuchaj rozmowy dwa razy — bez tekstu. Najpierw zaznacz: prawda czy fałsz, potem odpowiedz na pytania a, b, c.
-
-<embed source="https://werba-way.vercel.app/embed/pl-a2-60-wspomnienia/exam?blocks=e2-e3">
-Słuchanie — jak na egzaminie
-</embed>
-
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🧰</span><div class="lp-callout-body">
 
 <b>Warto użyć</b>

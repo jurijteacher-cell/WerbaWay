@@ -1,0 +1,55 @@
+{
+  "block_id": "e2",
+  "exam_skill": "sluchanie",
+  "exercise_type": "multiple-choice",
+  "source": "pl-b1-group-03-slang-comm-tasks.json#c1.model_dialogue",
+  "max_plays": 2,
+  "title": "Słuchanie: plan wypadu",
+  "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+  "items": [
+    {
+      "id": "e2-1",
+      "question": "Gdzie znajduje się chata Adama?",
+      "options": [
+        "w Mikołajkach",
+        "w Zakopanem",
+        "we Wrocławiu"
+      ],
+      "answer": "w Mikołajkach",
+      "explanation": "Ola mówi, że Adam ma chatę w Mikołajkach."
+    },
+    {
+      "id": "e2-2",
+      "question": "Ile osób pojedzie na wypad razem z Bartkiem?",
+      "options": [
+        "pięcioro",
+        "sześcioro",
+        "czworo"
+      ],
+      "answer": "sześcioro",
+      "explanation": "Bez Bartka jest pięcioro osób, z nim będzie sześcioro."
+    },
+    {
+      "id": "e2-3",
+      "question": "O której Bartek odbierze samochód od brata?",
+      "options": [
+        "o siódmej",
+        "o dwudziestej drugiej",
+        "o dwudziestej"
+      ],
+      "answer": "o dwudziestej drugiej",
+      "explanation": "Samochód Bartek odbierze w piątek o dwudziestej drugiej. O siódmej wyjadą w sobotę."
+    },
+    {
+      "id": "e2-4",
+      "question": "Ile kosztuje jedzenie na osobę?",
+      "options": [
+        "sto złotych",
+        "trzydzieści złotych",
+        "pięćdziesiąt złotych"
+      ],
+      "answer": "trzydzieści złotych",
+      "explanation": "Sto złotych kosztuje paliwo na jeden samochód, a jedzenie około trzydzieści złotych na osobę."
+    }
+  ]
+}

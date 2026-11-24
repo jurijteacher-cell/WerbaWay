@@ -83,12 +83,6 @@ Porozmawiajmy. Tu nie ma dobrych i złych odpowiedzi — liczą się argumenty.
 
 ## 5. Zadania komunikacyjne
 
-Najpierw posłuchaj rozmowy: Paweł dzwoni do fundacji, bo chce zostać wolontariuszem w schronisku. Odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-03-wolontariat/exam?blocks=e2">
-Jak na egzaminie — słuchanie
-</embed>
-
 Teraz Twoja kolej. Cztery sytuacje, w których trzeba o coś poprosić, kogoś przekonać albo zadać dobre pytanie. Odwróć kartę i wykonaj zadanie. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-03-wolontariat/comm-tasks">

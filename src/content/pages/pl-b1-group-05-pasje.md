@@ -82,12 +82,6 @@ Porozmawiajmy. Opowiadaj, co <b>robiłeś / robiłaś</b> i co <b>zrobiłeś / z
 
 ## 5. Zadania komunikacyjne
 
-Najpierw posłuchaj rozmowy: klientka dzwoni do pracowni ceramiki i zapisuje się na kurs. Odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-05-pasje/exam?blocks=e2">
-Jak na egzaminie — słuchanie
-</embed>
-
 Teraz Twoja kolej. Cztery sytuacje: zapisy, namawianie, problem z zajęciami i opowieść o pasji. Odwróć kartę i odegraj rozmowę. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-05-pasje/comm-tasks">

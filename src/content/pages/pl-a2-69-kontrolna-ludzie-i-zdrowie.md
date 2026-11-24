@@ -24,9 +24,8 @@ cover: https://images.unsplash.com/photo-1762184521147-a9ab8cbfc7f5?w=1600&h=900
 
 <b>Instrukcja</b>
 
-- Test ma <b>4 części i 15 zadań</b>: gramatyka (7), słowa (3), czytanie (3), słuchanie (2). Każde zadanie — jeden punkt.
+- Test ma <b>3 części i 13 zadań</b>: gramatyka (7), słowa (3), czytanie (3). Każde zadanie — jeden punkt.
 - Masz około <b>25 minut</b>. Pracujesz sam / sama, bez słownika i bez notatek.
-- Rozmowę w części D usłyszysz <b>dwa razy</b>.
 - Potem <b>Mówienie</b> — około 10 minut z nauczycielem. <b>Pisanie</b> robisz w domu.
 
 </div></aside>
@@ -59,14 +58,6 @@ Całuję, mama
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-69-kontrolna-ludzie-i-zdrowie/exam?blocks=e1">
 Test — czytanie
-</embed>
-
-### 🎧 Część D. Słuchanie
-
-<b>W poniedziałek w biurze Tomek pyta Olenę o mamę. Posłuchaj rozmowy dwa razy i wybierz poprawną odpowiedź.</b>
-
-<embed source="https://werba-way.vercel.app/embed/pl-a2-69-kontrolna-ludzie-i-zdrowie/exam?blocks=e2">
-Test — słuchanie
 </embed>
 
 ---

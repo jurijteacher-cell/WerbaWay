@@ -85,12 +85,6 @@ Porozmawiajmy. Nie ma tu dobrych i złych odpowiedzi — jest tylko argument i k
 
 ## 5. Zadania komunikacyjne
 
-Najpierw posłuchaj, jak brzmi rozmowa z infolinią po awarii internetu, i odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-01-wynalazki/exam?blocks=e2">
-Jak na egzaminie — słuchanie
-</embed>
-
 Teraz Twoja kolej. Cztery sytuacje, w których trzeba zadzwonić, zapytać i dogadać się. Odwróć kartę i wykonaj zadanie. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-01-wynalazki/comm-tasks">

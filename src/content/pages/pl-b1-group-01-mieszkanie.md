@@ -110,12 +110,6 @@ Słownictwo — karty
 
 </div></aside>
 
-🎧 <b>Najpierw posłuchaj:</b> lokatorka dzwoni do administracji osiedla. Nauczyciel przeczyta rozmowę dwa razy — słuchaj bez tekstu i odpowiedz na cztery pytania.
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-01-mieszkanie/exam?blocks=e2">
-Jak na egzaminie — słuchanie
-</embed>
-
 👉 <b>Teraz Twoja kolej.</b> Cztery sytuacje z życia w bloku. Odwróć kartę, przeczytaj sytuację i odegraj rozmowę w parze.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-01-mieszkanie/comm-tasks">

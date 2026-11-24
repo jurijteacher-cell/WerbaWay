@@ -86,12 +86,6 @@ Porozmawiajmy. W każdej odpowiedzi porównuj: lepszy, gorszy, ciekawszy, najzab
 
 ## 5. Zadania komunikacyjne
 
-Najpierw posłuchaj rozmowy: klient dzwoni do kina i rezerwuje bilety na sobotę. Odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-04-filmy/exam?blocks=e2">
-Jak na egzaminie — słuchanie
-</embed>
-
 Teraz Twoja kolej. Cztery sytuacje z kina, z kanapy i z rozmowy o filmach. Odwróć kartę i odegraj rozmowę. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-04-filmy/comm-tasks">

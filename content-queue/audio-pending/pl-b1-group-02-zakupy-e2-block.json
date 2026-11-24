@@ -1,0 +1,55 @@
+{
+  "block_id": "e2",
+  "exam_skill": "sluchanie",
+  "exercise_type": "multiple-choice",
+  "source": "pl-b1-group-02-zakupy-comm-tasks.json#c1.model_dialogue",
+  "max_plays": 2,
+  "title": "Słuchanie: reklamacja kurtki",
+  "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+  "items": [
+    {
+      "id": "e2-1",
+      "question": "Kiedy klient kupił kurtkę?",
+      "options": [
+        "miesiąc temu",
+        "tydzień temu",
+        "pięć dni temu"
+      ],
+      "answer": "miesiąc temu",
+      "explanation": "Klient mówi: „Kupiłem tę kurtkę miesiąc temu”."
+    },
+    {
+      "id": "e2-2",
+      "question": "Czym klient potwierdza zakup?",
+      "options": [
+        "paragonem",
+        "potwierdzeniem z aplikacji banku",
+        "protokołem reklamacji"
+      ],
+      "answer": "potwierdzeniem z aplikacji banku",
+      "explanation": "Paragon zginął, więc klient pokazuje potwierdzenie z aplikacji banku."
+    },
+    {
+      "id": "e2-3",
+      "question": "Czego klient chciałby najpierw?",
+      "options": [
+        "zwrotu pieniędzy",
+        "wymiany na nową kurtkę",
+        "naprawy zamka"
+      ],
+      "answer": "wymiany na nową kurtkę",
+      "explanation": "„Najchętniej wymieniłbym ją na nową”. Zwrot to dopiero drugi wybór."
+    },
+    {
+      "id": "e2-4",
+      "question": "Kiedy pieniądze wrócą na kartę?",
+      "options": [
+        "w ciągu pięciu dni roboczych",
+        "od razu",
+        "za miesiąc"
+      ],
+      "answer": "w ciągu pięciu dni roboczych",
+      "explanation": "Sprzedawczyni mówi, że pieniądze wrócą w ciągu pięciu dni roboczych."
+    }
+  ]
+}

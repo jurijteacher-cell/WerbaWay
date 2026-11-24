@@ -92,12 +92,6 @@ Wyobraź sobie, że pies właśnie przyjechał do Twojego domu. Napisz pięć za
 
 ## 5. Zadania komunikacyjne
 
-Najpierw posłuchaj rozmowy: klient dzwoni do schroniska w sprawie suczki Luny. Odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-03-pies/exam?blocks=e2">
-Jak na egzaminie — słuchanie
-</embed>
-
 Teraz Twoja kolej. Cztery rozmowy, które czekają każdego przyszłego właściciela psa: schronisko, weterynarz, sąsiad i opiekun na czas urlopu. Odwróć kartę i wykonaj zadanie. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-03-pies/comm-tasks">

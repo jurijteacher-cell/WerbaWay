@@ -1,0 +1,55 @@
+{
+  "block_id": "e2",
+  "exam_skill": "sluchanie",
+  "exercise_type": "multiple-choice",
+  "source": "pl-b1-group-03-pies-comm-tasks.json#c1.model_dialogue",
+  "max_plays": 2,
+  "title": "Słuchanie: telefon do schroniska",
+  "instruction": "Nauczyciel czyta rozmowę dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
+  "items": [
+    {
+      "id": "e2-1",
+      "question": "Jak długo Luna jest w schronisku?",
+      "options": [
+        "dwa tygodnie",
+        "trzy miesiące",
+        "cztery lata"
+      ],
+      "answer": "trzy miesiące",
+      "explanation": "Cztery lata to wiek Luny. W schronisku jest od trzech miesięcy."
+    },
+    {
+      "id": "e2-2",
+      "question": "Co klient musi zrobić najpierw?",
+      "options": [
+        "wypełnić ankietę na stronie",
+        "przyjść na rozmowę",
+        "podpisać umowę adopcyjną"
+      ],
+      "answer": "wypełnić ankietę na stronie",
+      "explanation": "„Najpierw niech pan wypełni ankietę na naszej stronie”."
+    },
+    {
+      "id": "e2-3",
+      "question": "Jakie zwierzę klient ma w domu?",
+      "options": [
+        "psa",
+        "kota",
+        "królika"
+      ],
+      "answer": "kota",
+      "explanation": "„Mam w domu kota”."
+    },
+    {
+      "id": "e2-4",
+      "question": "Kiedy klient przyjdzie na spacer z Luną?",
+      "options": [
+        "w sobotę o dziesiątej",
+        "w niedzielę rano",
+        "w sobotę po południu"
+      ],
+      "answer": "w sobotę o dziesiątej",
+      "explanation": "„Zapraszam o dziesiątej” — w sobotę rano."
+    }
+  ]
+}

@@ -86,12 +86,6 @@ Tu nie ma dobrych odpowiedzi. Jest stanowisko, argument i kontrargument.
 
 ## 5. Zadania komunikacyjne
 
-Najpierw posłuchaj rozmowy kwalifikacyjnej: kandydatka ubiega się o stanowisko kierowniczki zmiany w hotelu. Odpowiedz na cztery pytania. Nauczyciel przeczyta ją dwa razy — bez tekstu przed oczami.
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-02-praca/exam?blocks=e2">
-Jak na egzaminie — słuchanie
-</embed>
-
 Teraz Twoja kolej. Cztery sytuacje z rozmowy o pracę — od pierwszego pytania rekrutera do ostatecznej oferty. Odwróć kartę i odegraj rozmowę, a potem wyjdź z niej ze wszystkimi informacjami z listy. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-02-praca/comm-tasks">

@@ -103,12 +103,6 @@ Trzy sytuacje z życia ekipy: planujemy wypad, zrzucamy się na prezent, pociesz
 Zadania komunikacyjne
 </embed>
 
-<b>Jak na egzaminie:</b> posłuchaj rozmowy i wybierz poprawną odpowiedź.
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-03-slang-ru/exam?blocks=e2">
-Jak na egzaminie — słuchanie
-</embed>
-
 ---
 
 ## 6. Gramatyka: liczebniki — część 1

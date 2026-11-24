@@ -1,0 +1,35 @@
+{
+  "block_id": "e2",
+  "exam_skill": "sluchanie",
+  "max_plays": 2,
+  "audio_url": "/audio/pl-a2-60-wspomnienia-e2-dialog.mp3",
+  "exercise_type": "true-false",
+  "title": "Słuchanie: prawda czy fałsz?",
+  "instruction": "Usłyszysz rozmowę Oleny z Tomkiem dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
+  "items": [
+    {
+      "id": "e2-1",
+      "statement": "Na zdjęciu Tomek ma dziesięć lat.",
+      "answer": true,
+      "explanation": "To ja, mam tu dziesięć lat."
+    },
+    {
+      "id": "e2-2",
+      "statement": "Dziadkowie Tomka mieszkali na wsi pod Krakowem.",
+      "answer": false,
+      "explanation": "Na wsi pod Nowym Sączem."
+    },
+    {
+      "id": "e2-3",
+      "statement": "Po obiedzie Tomek chodził z kolegami nad rzekę.",
+      "answer": true,
+      "explanation": "…a po obiedzie chodziłem z kolegami nad rzekę."
+    },
+    {
+      "id": "e2-4",
+      "statement": "Babcia Tomka była lekarką.",
+      "answer": false,
+      "explanation": "Była nauczycielką w szkole w Krynicy."
+    }
+  ]
+}

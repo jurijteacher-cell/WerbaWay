@@ -112,16 +112,6 @@ Porozmawiajmy. W odpowiedziach łącz zdania słowami <b>który, gdzie, co</b>.
 
 ## 🎭 5. Zadania komunikacyjne
 
-<aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🎧</span><div class="lp-callout-body">
-
-Najpierw posłuchaj rozmowy: turysta dzwoni do agroturystyki koło Kanału Elbląskiego i rezerwuje nocleg. Odpowiedz na <b>cztery pytania</b>. Nauczyciel przeczyta ją <b>dwa razy</b> — bez tekstu przed oczami.
-
-</div></aside>
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-06-miejsca/exam?blocks=e2">
-Jak na egzaminie — słuchanie
-</embed>
-
 👉 <b>Teraz Twoja kolej.</b> Cztery sytuacje: nocleg, planowanie, odwołany rejs i rada dla znajomego. Odwróć kartę i odegraj rozmowę. Na pierwszej karcie jest tekst rozmowy, której słuchałeś.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-06-miejsca/comm-tasks">

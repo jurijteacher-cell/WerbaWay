@@ -160,21 +160,7 @@ Pięć tematów z ostatnich lekcji na jednej mapie. Każdy blok: zasada, przykł
 
 ---
 
-## 🎧 4. Słuchanie jak na egzaminie
-
-<aside class="lp-callout" data-tone="blue"><span class="lp-callout-icon" aria-hidden="true">🎧</span><div class="lp-callout-body">
-
-W sobotę rano Olena żegna mamę na dworcu autobusowym. Posłuchaj rozmowy <b>dwa razy</b> — bez tekstu. Najpierw zaznacz: prawda czy fałsz, potem odpowiedz na pytania a, b, c.
-
-</div></aside>
-
-<embed source="https://werba-way.vercel.app/embed/pl-a2-68-powtorka-ludzie-i-zdrowie/exam?blocks=e2-e3">
-Słuchanie — jak na egzaminie
-</embed>
-
----
-
-## ⏱️ 5. Speaking marathon
+## ⏱️ 4. Speaking marathon
 
 <aside class="lp-callout" data-tone="red"><span class="lp-callout-icon" aria-hidden="true">⏱️</span><div class="lp-callout-body">
 
@@ -200,7 +186,7 @@ Speaking marathon
 
 ---
 
-## ✅ 6. Podsumowanie
+## ✅ 5. Podsumowanie
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🏁</span><div class="lp-callout-body">
 
@@ -217,7 +203,7 @@ Speaking marathon
 
 ---
 
-## 🏠 7. Praca domowa
+## 🏠 6. Praca domowa
 
 Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>e-mail z podziękowaniem</b>.
 

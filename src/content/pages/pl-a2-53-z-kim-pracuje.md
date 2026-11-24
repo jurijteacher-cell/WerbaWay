@@ -202,14 +202,6 @@ Narzędnik odpowiada na pytania <b>kim? czym?</b> Znasz go już z zawodów: <i>j
 
 ## 🎭 4. Zadania komunikacyjne
 
-### 🎧 Słuchanie jak na egzaminie
-
-Po naradzie Olena pyta pana Piotra o swoje nowe zadania. Posłuchaj rozmowy dwa razy — bez tekstu. Najpierw zaznacz: prawda czy fałsz, potem odpowiedz na pytania a, b, c.
-
-<embed source="https://werba-way.vercel.app/embed/pl-a2-53-z-kim-pracuje/exam?blocks=e2-e3">
-Słuchanie — jak na egzaminie
-</embed>
-
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🧰</span><div class="lp-callout-body">
 
 <b>Warto użyć</b>

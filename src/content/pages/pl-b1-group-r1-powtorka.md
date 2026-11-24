@@ -221,23 +221,7 @@ Osiem tematów z lekcji 1–8 na jednej mapie. Każdy blok: zasada, przykłady i
 
 ---
 
-## 🎧 4. Słuchanie jak na egzaminie
-
-<aside class="lp-callout" data-tone="blue"><span class="lp-callout-icon" aria-hidden="true">🎧</span><div class="lp-callout-body">
-
-Olena dzwoni do Tarasa z lotniska w Toronto. Posłuchaj rozmowy <b>dwa razy</b> — bez tekstu. Najpierw przeczytaj pytania, potem wybierz odpowiedź a, b albo c.
-
-</div></aside>
-
-![Kobieta rozmawia przez telefon. Fot. Timur Repin / Unsplash](https://images.unsplash.com/photo-1555965435-f88618f05915?w=1400&q=80&fm=jpg&fit=max)
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-r1-powtorka/exam?blocks=e2">
-Słuchanie — jak na egzaminie
-</embed>
-
----
-
-## ⏱️ 5. Speaking marathon
+## ⏱️ 4. Speaking marathon
 
 <aside class="lp-callout" data-tone="red"><span class="lp-callout-icon" aria-hidden="true">⏱️</span><div class="lp-callout-body">
 
@@ -264,7 +248,7 @@ Speaking marathon
 
 ---
 
-## 📝 6. Mini-test
+## 📝 5. Mini-test
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">⏳</span><div class="lp-callout-body">
 
@@ -278,7 +262,7 @@ Mini-test — lekcje 1–8
 
 ---
 
-## ✅ 7. Podsumowanie
+## ✅ 6. Podsumowanie
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🏁</span><div class="lp-callout-body">
 
@@ -296,7 +280,7 @@ Mini-test — lekcje 1–8
 
 ---
 
-## 🏠 8. Praca domowa
+## 🏠 7. Praca domowa
 
 Trzy części — <b>ćwiczenia</b>, <b>wideo</b> i <b>nowa wersja Twojego tekstu</b>.
 

@@ -1,0 +1,54 @@
+{
+  "block_id": "e2",
+  "exam_skill": "sluchanie",
+  "exercise_type": "multiple-choice",
+  "max_plays": 2,
+  "title": "Słuchanie: cztery wiadomości głosowe",
+  "instruction": "Najpierw przeczytaj pytania. Potem posłuchaj czterech wiadomości — maksymalnie dwa razy. Do każdej wiadomości jest jedno pytanie. Na egzaminie usłyszysz nagranie tylko raz.",
+  "items": [
+    {
+      "id": "e2-1",
+      "question": "Wiadomość 1. Gdzie jest teraz paczka?",
+      "options": [
+        "u sąsiada z parteru",
+        "w paczkomacie przy ulicy Kwiatowej",
+        "w punkcie kurierskim na dworcu"
+      ],
+      "answer": "w paczkomacie przy ulicy Kwiatowej",
+      "explanation": "Kurier zostawił paczkę w paczkomacie; sąsiad nie otworzył drzwi."
+    },
+    {
+      "id": "e2-2",
+      "question": "Wiadomość 2. Co musi teraz zrobić klient?",
+      "options": [
+        "zapłacić za nowy filtr",
+        "przynieść paragon do sklepu",
+        "odebrać odkurzacz od czwartku"
+      ],
+      "answer": "odebrać odkurzacz od czwartku",
+      "explanation": "Serwis już naprawił odkurzacz w ramach reklamacji; klient nic nie płaci."
+    },
+    {
+      "id": "e2-3",
+      "question": "Wiadomość 3. Co zrobiła Marta?",
+      "options": [
+        "kupiła czerwone kozaki",
+        "zamówiła czarne kozaki",
+        "zapłaciła za buty"
+      ],
+      "answer": "zamówiła czarne kozaki",
+      "explanation": "Czerwone już sprzedali; zapłacić trzeba dopiero w sobotę, po przymierzeniu."
+    },
+    {
+      "id": "e2-4",
+      "question": "Wiadomość 4. Co zrobiła księgarnia?",
+      "options": [
+        "wysłała książkę",
+        "oddała pieniądze",
+        "zamówiła inną książkę"
+      ],
+      "answer": "oddała pieniądze",
+      "explanation": "Pieniądze wróciły na konto dziś rano; inną książkę mogą zamówić dopiero, jeśli klientka zechce."
+    }
+  ]
+}
