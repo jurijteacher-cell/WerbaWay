@@ -120,7 +120,7 @@
 | № | `lesson_id` | Тема | Що закриваємо | Робочий контекст |
 |---|---|---|---|---|
 | 03 | `pl-nier-03-czas-terazniejszy` | Mój dzień w biurze | теперішній час (4 групи + шість нерегулярних), Pan/Pani/Państwo + 3 ос., *chcę/mogę/muszę + bezokolicznik*, *wiem ≠ znam* | ранкова нарада, зустріч із Lisami, дзвінок до Zielińskiej |
-| 04 | `pl-nier-04-…` | Рід, число, прикметник | рід (m/ż/n), множина, узгодження *ładne mieszkanie, ładni klienci* | опис об'єкта |
+| 04 | `pl-nier-04-rodzaj-i-przymiotnik` | Dwie oferty dla państwa Lisów | рід (m/ż/n) + винятки, множина речей/жінок, *drzwi, schody*, мужськоособова множина (*klienci, sąsiedzi, Lisowie*) + винятки (*ludzie, dzieci*), прикметник lp і lm (*ci/te*) | звіт про дві оферти, телефон Lisom, розмова з Zielińską |
 | 05 | `pl-nier-05-…` | Biernik | *szukam mieszkania / kawalerki; widzę klienta*, істоти й неістоти | запит клієнта |
 | 06 | `pl-nier-06-…` | Dopełniacz | *nie ma windy, pięć pokoi, dużo osób, bez balkonu* | характеристики, чого немає |
 | 07 | `pl-nier-07-…` | Liczebniki i ceny | ціни, метраж, поверхи, дати, години | назвати ціну вголос |
@@ -190,6 +190,15 @@
 
 ---
 
+#### Урок 04 — `pl-nier-04-rodzaj-i-przymiotnik` (25.11.2026)
+
+- **Тема:** рід, множина, прикметник; тексти про дві оферти для Lisów (A: Jeżyce, 749 000 zł, без windy; B: Łazarz, 842 000 zł, з miejscem w garażu за доплату).
+- **Граматика (5 порцій + gz):** рід за закінченням → винятки (*mężczyzna, nieruchomość, noc*) → пастка роду (*ліфт m / winda ż* …) · множина речей і жінок → *drzwi, schody, pieniądze* · прикметник lp (*jaki/jaka/jakie*) · мужськоособова множина → *ludzie, dzieci (te!), rodzice, bracia* · прикметник lm (*ci/te*) → пастка *ci чи te* · gz (рециклінг: *Pan/Pani/Państwo, mieć, być*).
+- **Слова (25, 4 групи):** Ludzie w transakcji · Budynek i wnętrze · Papiery i pieniądze · Jaki? Jacy?
+- **Пасток 6** (4 рід + 2 ci/te); довідники — `docs/ref/nouns-gender-plural.md`, `docs/ref/adjectives-nominative.md`.
+- **ДЗ:** hw (h1–h5) · 🎬 Małycha Agency «Jak sprzedać mieszkanie w jeden weekend?» (id 647Zl9ohy7w; вбудову не перевірено) · 🎙️ дім у Komornikach для państwa Nowaków · ✍️ notatka до szefowej 110–140 слів.
+- **Припущення:** мова глос — українська (діагностика §5 ще не проведена).
+
 ## 4. Діагностика й вимірювання прогресу
 
 - **Урок 01, Rozgrzewka:** монолог 2–3 хв «Kim jestem i jak pracuję» → викладач записує (аудіо або нотатки) й оцінює за рубрикою B2 (§1, 0–3 × 5). На TEACHER — таблиця з балами й 5 найчастіших помилок → «журнал помилок».
@@ -227,6 +236,7 @@
 | `porownania` | niż/od, o wiele, im…tym, tak samo jak | 02 |
 | `liczebniki-skladnia` | ціни, метри, кімнати, поверхи; dopełniacz після числівників | 02 |
 | `koniugacja-am-asz` · `koniugacja-e-esz` · `koniugacja-e-isz` · `koniugacje` · `czasowniki-nieregularne` · `byc` · `miec` · `modalne-bezokolicznik` | теперішній час, нерегулярні, chcę/mogę/muszę + bezokolicznik | 03 |
+| `rodzaj-rzeczownika` · `liczba-mnoga-mianownik` · `przymiotnik-mianownik` · `mn-mianownik-mos` · `rzecz-nieregularne` | рід, множина, прикметник lp/lm, ci/te, ludzie/dzieci/rodzice | 04 |
 | `przyzwolenie` | chociaż, mimo że, mimo + D | 13 |
 | `przeciwstawienie` | natomiast, za to, jednak, mimo to | 13 |
 | `warunek-realny` | jeśli, o ile, pod warunkiem że, chyba że, w razie + D | 13 |
@@ -267,7 +277,8 @@
 | 01 | `pl-nier-01-pierwszy-kontakt` | Dzwonię w sprawie ogłoszenia | ✅ на сайті 21.11.2026 (main 757d6dd; embed ✓ --remote; i18n ru/pl/en ✓); Notion — не створювався; діагностику ще не проведено |
 | 02 | `pl-nier-02-opis-i-ogloszenie` | Mieszkanie z duszą | ✅ на сайті 23.11.2026 (embed ✓; i18n ru/pl/en ✓; без слухання) |
 | 03 | `pl-nier-03-czas-terazniejszy` | Mój dzień w biurze | ✅ на сайті 24.11.2026 (main c0a77fe; embed ✓ --remote; i18n ru/pl/en ✓; аудіо читання ready) |
-| 04–12 | _див. §3a_ | граматичний мінімум | — |
+| 04 | `pl-nier-04-rodzaj-i-przymiotnik` | Dwie oferty dla państwa Lisów | ✅ на сайті 25.11.2026 (embed, i18n ru/pl/en ✓; аудіо читання — див. TEACHER «Факти»; 🎬 Małycha Agency 647Zl9ohy7w — вбудову не перевірено; обкладинка й фото в тексті — повтор із 02) |
+| 05–12 | _див. §3a_ | граматичний мінімум | — |
 | 13 | `pl-nier-13-prezentacja-i-obiekcje` | Zapraszam do środka | — (було 03) |
 | 14 | `pl-nier-14-negocjacje` | Ostatnie słowo | — (було 04) |
 | 15 | `pl-nier-15-formalnosci` | Od umowy do kluczy | — (було 05) |

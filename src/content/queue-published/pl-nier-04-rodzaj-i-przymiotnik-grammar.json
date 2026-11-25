@@ -1,0 +1,1148 @@
+{
+  "lesson_id": "pl-nier-04-rodzaj-i-przymiotnik",
+  "exercise_type": "fill-in-blank",
+  "title": "Rodzaj, liczba i przymiotnik: opis mieszkania i klientów",
+  "instruction": "Dwanaście bloków ćwiczeń. Możesz przerwać i wrócić później.",
+  "estimated_minutes": 40,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "Tekst. Ułóż w kolejności",
+      "instruction": "O czym Natalia pisze najpierw, a o czym na końcu notatki? Klikaj zdania po kolei.",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "Pisze, że państwo Lisowie są wymagający, ale mili.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "Opisuje mieszkanie pani Zielińskiej na Jeżycach.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Mówi o wadach: trzecie piętro, brak windy i wilgotna piwnica.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Opisuje nowe mieszkanie na Łazarzu i jego cenę.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "Mówi, kiedy pokaże klientom obie oferty.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Pisze, że klienci nie podjęli jeszcze decyzji.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Tekst. Uzupełnij streszczenie",
+      "instruction": "Wpisz przymiotnik w poprawnej formie. W podpowiedzi jest forma podstawowa (rodzaj męski, liczba pojedyncza).",
+      "text": "Natalia opisuje dwie oferty. Mieszkanie na Jeżycach jest {t2-1}, a kuchnia jest {t2-2}. W kamienicy nie ma windy, a schody są {t2-3}. Piwnica jest {t2-4}. Mieszkanie na Łazarzu jest {t2-5}, a sąsiedzi są {t2-6} i {t2-7}.",
+      "items": [
+        {
+          "id": "t2-1",
+          "answer": "przestronne",
+          "hint": "przestronny",
+          "grammar_point": "czytanie",
+          "explanation": "Mieszkanie jest nijakie: przestronne."
+        },
+        {
+          "id": "t2-2",
+          "answer": "nowa",
+          "hint": "nowy",
+          "grammar_point": "czytanie",
+          "explanation": "Kuchnia jest żeńska: nowa."
+        },
+        {
+          "id": "t2-3",
+          "answer": "strome",
+          "hint": "stromy",
+          "grammar_point": "czytanie",
+          "explanation": "Schody mają liczbę mnogą niemęskoosobową: strome."
+        },
+        {
+          "id": "t2-4",
+          "answer": "wilgotna",
+          "hint": "wilgotny",
+          "grammar_point": "czytanie",
+          "explanation": "Piwnica jest żeńska: wilgotna."
+        },
+        {
+          "id": "t2-5",
+          "answer": "nowe",
+          "hint": "nowy",
+          "grammar_point": "czytanie",
+          "explanation": "Mieszkanie jest nijakie: nowe."
+        },
+        {
+          "id": "t2-6",
+          "answer": "cisi",
+          "hint": "cichy",
+          "grammar_point": "czytanie",
+          "explanation": "Sąsiedzi to mężczyźni (mężczyźni i kobiety razem): cisi."
+        },
+        {
+          "id": "t2-7",
+          "answer": "młodzi",
+          "hint": "młody",
+          "grammar_point": "czytanie",
+          "explanation": "Sąsiedzi: młody → młodzi."
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Które słowo pasuje do sytuacji?",
+      "instruction": "Wybierz słowo, które pasuje do zdania.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Pani Barbara Zielińska sprzedaje mieszkanie. To jest ___ mieszkania.",
+          "answer": "właścicielka",
+          "grammar_point": "slownictwo",
+          "options": [
+            "właścicielka",
+            "najemca",
+            "sąsiadka"
+          ],
+          "explanation": "Właścicielka = kobieta, do której należy mieszkanie."
+        },
+        {
+          "id": "g1-2",
+          "text": "Ten pan wynajmuje mieszkanie i płaci czynsz. To jest ___.",
+          "answer": "najemca",
+          "grammar_point": "slownictwo",
+          "options": [
+            "najemca",
+            "kupujący",
+            "pośrednik"
+          ],
+          "explanation": "Najemca wynajmuje; kupujący kupuje."
+        },
+        {
+          "id": "g1-3",
+          "text": "Biuro dostaje pieniądze po transakcji. To jest ___.",
+          "answer": "prowizja",
+          "grammar_point": "slownictwo",
+          "options": [
+            "prowizja",
+            "rata",
+            "wycena"
+          ]
+        },
+        {
+          "id": "g1-4",
+          "text": "Bank dostaje pieniądze co miesiąc. To jest ___ kredytu.",
+          "answer": "rata",
+          "grammar_point": "slownictwo",
+          "options": [
+            "rata",
+            "umowa",
+            "oferta"
+          ]
+        },
+        {
+          "id": "g1-5",
+          "text": "W tym budynku jest miejsce na samochód. Mieszkanie ma duży ___.",
+          "answer": "garaż",
+          "grammar_point": "slownictwo",
+          "options": [
+            "garaż",
+            "strych",
+            "taras"
+          ]
+        },
+        {
+          "id": "g1-6",
+          "text": "Klient ma duże oczekiwania i sprawdza wszystko. To jest bardzo ___ klient.",
+          "answer": "wymagający",
+          "grammar_point": "slownictwo",
+          "options": [
+            "wymagający",
+            "uczciwy",
+            "wilgotny"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Rodzaj rzeczownika: ten, ta, to",
+      "instruction": "Wybierz ten, ta albo to. Pamiętaj: patrzysz na końcówkę rzeczownika. W dwóch ostatnich zdaniach wpisz słowo.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "___ kamienica jest na Jeżycach.",
+          "answer": "ta",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ],
+          "explanation": "Kamienica kończy się na -a: żeński → ta."
+        },
+        {
+          "id": "g2-2",
+          "text": "___ balkon wychodzi na podwórze.",
+          "answer": "ten",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ],
+          "explanation": "Balkon kończy się na spółgłoskę: męski → ten."
+        },
+        {
+          "id": "g2-3",
+          "text": "Czy ___ piętro ma windę?",
+          "answer": "to",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ],
+          "explanation": "Piętro kończy się na -o: nijaki → to."
+        },
+        {
+          "id": "g2-4",
+          "text": "___ umowa jest w biurze.",
+          "answer": "ta",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ]
+        },
+        {
+          "id": "g2-5",
+          "text": "___ garaż jest w budynku.",
+          "answer": "ten",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ]
+        },
+        {
+          "id": "g2-6",
+          "text": "___ ogłoszenie jest na portalu.",
+          "answer": "to",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ],
+          "explanation": "Końcówka -ie: nijaki → to (to ogłoszenie, to mieszkanie)."
+        },
+        {
+          "id": "g2-7",
+          "text": "___ nieruchomość kosztuje dużo.",
+          "answer": "ta",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ],
+          "explanation": "Końcówka -ość: zawsze żeński → ta."
+        },
+        {
+          "id": "g2-8",
+          "text": "___ kuchnia jest nowa.",
+          "answer": "ta",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ],
+          "explanation": "Końcówka -ia: żeński → ta."
+        },
+        {
+          "id": "g2-9",
+          "text": "Pan Marek to klient, a pani Anna to ___.",
+          "answer": "klientka",
+          "grammar_point": "rodzaj-rzeczownika",
+          "explanation": "Para: klient — klientka."
+        },
+        {
+          "id": "g2-10",
+          "text": "Pan Jan to sąsiad, a pani Ewa to ___.",
+          "answer": "sąsiadka",
+          "grammar_point": "rodzaj-rzeczownika",
+          "explanation": "Para: sąsiad — sąsiadka."
+        },
+        {
+          "id": "g2-11",
+          "text": "Pan Adam to właściciel, a pani Ola to ___.",
+          "answer": "właścicielka",
+          "grammar_point": "rodzaj-rzeczownika",
+          "explanation": "Para: właściciel — właścicielka."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Wyjątki: rodzaj wbrew końcówce",
+      "instruction": "Wybierz ten, ta albo to. Uwaga: te rzeczowniki łamią zasadę o końcówce.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "___ mężczyzna czeka na klienta.",
+          "answer": "ten",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ],
+          "explanation": "Mężczyzna ma -a, ale to mężczyzna: ten."
+        },
+        {
+          "id": "g3-2",
+          "text": "___ nieruchomość jest w centrum.",
+          "answer": "ta",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ],
+          "explanation": "Nieruchomość kończy się spółgłoską, ale -ość to żeński: ta."
+        },
+        {
+          "id": "g3-3",
+          "text": "___ kolega z biura dzwoni do klienta.",
+          "answer": "ten",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ],
+          "explanation": "Kolega: -a, ale mężczyzna: ten."
+        },
+        {
+          "id": "g3-4",
+          "text": "___ część umowy jest na końcu.",
+          "answer": "ta",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ],
+          "explanation": "Część: żeński, mimo spółgłoski na końcu."
+        },
+        {
+          "id": "g3-5",
+          "text": "___ najemca płaci czynsz.",
+          "answer": "ten",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ],
+          "explanation": "Najemca: mężczyzna, mimo -a. Kobieta to najemczyni."
+        },
+        {
+          "id": "g3-6",
+          "text": "___ dentysta mieszka na Wildzie.",
+          "answer": "ten",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ]
+        },
+        {
+          "id": "g3-7",
+          "text": "___ wartość mieszkania rośnie.",
+          "answer": "ta",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ]
+        },
+        {
+          "id": "g3-8",
+          "text": "___ noc w hotelu jest droga.",
+          "answer": "ta",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ],
+          "explanation": "Noc: żeński, bez -a. Zapamiętaj: noc, rzecz, część, sól."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "4. Pułapki: rodzaj po ukraińsku — popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd w rodzaju. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g4-1",
+          "prompt": "Ten winda jest w holu.",
+          "answer": "Ta winda jest w holu.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Ukr. «ліфт» jest męski, a pol. winda jest żeńska: ta winda."
+        },
+        {
+          "id": "g4-2",
+          "prompt": "Ta pokój ma balkon.",
+          "answer": "Ten pokój ma balkon.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Ukr. «кімната» jest żeńska, a pol. pokój jest męski: ten pokój."
+        },
+        {
+          "id": "g4-3",
+          "prompt": "Ta mieszkanie jest na Jeżycach.",
+          "answer": "To mieszkanie jest na Jeżycach.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Ukr. «квартира» jest żeńska, a pol. mieszkanie jest nijakie: to mieszkanie."
+        },
+        {
+          "id": "g4-4",
+          "prompt": "Ten podwórze ma drzewa.",
+          "answer": "To podwórze ma drzewa.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Ukr. «двір» jest męski, a pol. podwórze jest nijakie: to podwórze."
+        },
+        {
+          "id": "g4-5",
+          "prompt": "Ten umowa jest w biurze.",
+          "answer": "Ta umowa jest w biurze.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Ukr. «договір» jest męski, a pol. umowa jest żeńska: ta umowa."
+        },
+        {
+          "id": "g4-6",
+          "prompt": "Ten dzielnica jest na Wildzie.",
+          "answer": "Ta dzielnica jest na Wildzie.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Ukr. «район» jest męski, a pol. dzielnica jest żeńska: ta dzielnica."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Liczba mnoga: rzeczy i kobiety",
+      "instruction": "Wpisz rzeczownik w liczbie mnogiej. W nawiasie jest liczba pojedyncza.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Na stole leżą trzy ___. (umowa)",
+          "answer": "umowy",
+          "grammar_point": "liczba-mnoga-mianownik",
+          "explanation": "Żeński -a → -y: umowa → umowy."
+        },
+        {
+          "id": "g5-2",
+          "text": "W kamienicy są dwie ___. (piwnica)",
+          "answer": "piwnice",
+          "grammar_point": "liczba-mnoga-mianownik",
+          "explanation": "-ica → -ice: piwnica → piwnice."
+        },
+        {
+          "id": "g5-3",
+          "text": "Na portalu są dwie ___. (oferta)",
+          "answer": "oferty",
+          "grammar_point": "liczba-mnoga-mianownik"
+        },
+        {
+          "id": "g5-4",
+          "text": "W biurze mamy cztery ___ do tego mieszkania. (klucz)",
+          "answer": "klucze",
+          "grammar_point": "liczba-mnoga-mianownik",
+          "explanation": "Męski na -cz → -e: klucz → klucze."
+        },
+        {
+          "id": "g5-5",
+          "text": "W mieszkaniu są trzy ___. (pokój)",
+          "answer": "pokoje",
+          "grammar_point": "liczba-mnoga-mianownik",
+          "explanation": "pokój → pokoje (ó → o, końcówka -e)."
+        },
+        {
+          "id": "g5-6",
+          "text": "Na Jeżycach są dwa ___ na podwórze. (balkon)",
+          "answer": "balkony",
+          "grammar_point": "liczba-mnoga-mianownik",
+          "explanation": "Męski (rzecz) na twardą spółgłoskę → -y: balkon → balkony."
+        },
+        {
+          "id": "g5-7",
+          "text": "W biurze oglądamy dwa ___. (mieszkanie)",
+          "answer": "mieszkania",
+          "grammar_point": "liczba-mnoga-mianownik",
+          "explanation": "Nijaki -ie → -ia: mieszkanie → mieszkania."
+        },
+        {
+          "id": "g5-8",
+          "text": "W tym domu są cztery ___. (piętro)",
+          "answer": "piętra",
+          "grammar_point": "liczba-mnoga-mianownik",
+          "explanation": "Nijaki -o → -a: piętro → piętra."
+        },
+        {
+          "id": "g5-9",
+          "text": "W mieszkaniu są dwie ___. (łazienka)",
+          "answer": "łazienki",
+          "grammar_point": "liczba-mnoga-mianownik",
+          "explanation": "-ka → -ki: łazienka → łazienki."
+        },
+        {
+          "id": "g5-10",
+          "text": "Na portalu są trzy ___. (ogłoszenie)",
+          "answer": "ogłoszenia",
+          "grammar_point": "liczba-mnoga-mianownik"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Wyjątki: słowa tylko w liczbie mnogiej",
+      "instruction": "Wybierz ten, ta, to albo te. Drzwi, schody, pieniądze i meble nie mają liczby pojedynczej.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "___ drzwi są w korytarzu.",
+          "answer": "te",
+          "grammar_point": "rzecz-nieregularne",
+          "options": [
+            "ten",
+            "ta",
+            "to",
+            "te"
+          ],
+          "explanation": "Drzwi: tylko liczba mnoga → te drzwi."
+        },
+        {
+          "id": "g6-2",
+          "text": "___ schody prowadzą na strych.",
+          "answer": "te",
+          "grammar_point": "rzecz-nieregularne",
+          "options": [
+            "ten",
+            "ta",
+            "to",
+            "te"
+          ],
+          "explanation": "Schody: tylko liczba mnoga → te schody."
+        },
+        {
+          "id": "g6-3",
+          "text": "___ okno wychodzi na podwórze.",
+          "answer": "to",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to",
+            "te"
+          ],
+          "explanation": "Okno ma liczbę pojedynczą i jest nijakie: to okno."
+        },
+        {
+          "id": "g6-4",
+          "text": "___ pieniądze są na koncie.",
+          "answer": "te",
+          "grammar_point": "rzecz-nieregularne",
+          "options": [
+            "ten",
+            "ta",
+            "to",
+            "te"
+          ]
+        },
+        {
+          "id": "g6-5",
+          "text": "___ meble są w salonie.",
+          "answer": "te",
+          "grammar_point": "rzecz-nieregularne",
+          "options": [
+            "ten",
+            "ta",
+            "to",
+            "te"
+          ]
+        },
+        {
+          "id": "g6-6",
+          "text": "___ winda jest w holu.",
+          "answer": "ta",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to",
+            "te"
+          ]
+        },
+        {
+          "id": "g6-7",
+          "text": "___ klucze leżą w biurze.",
+          "answer": "te",
+          "grammar_point": "liczba-mnoga-mianownik",
+          "options": [
+            "ten",
+            "ta",
+            "to",
+            "te"
+          ],
+          "explanation": "Klucze to liczba mnoga od klucz."
+        },
+        {
+          "id": "g6-8",
+          "text": "___ klucz leży na stole.",
+          "answer": "ten",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to",
+            "te"
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 3,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Przymiotnik: jaki? jaka? jakie?",
+      "instruction": "Wpisz przymiotnik w poprawnej formie. W nawiasie jest forma męska.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Kamienica jest ___. (stary)",
+          "answer": "stara",
+          "grammar_point": "przymiotnik-mianownik",
+          "explanation": "Kamienica jest żeńska: stary → stara."
+        },
+        {
+          "id": "g7-2",
+          "text": "Balkon jest ___. (duży)",
+          "answer": "duży",
+          "grammar_point": "przymiotnik-mianownik",
+          "explanation": "Balkon jest męski: duży."
+        },
+        {
+          "id": "g7-3",
+          "text": "Mieszkanie jest ___. (jasny)",
+          "answer": "jasne",
+          "grammar_point": "przymiotnik-mianownik",
+          "explanation": "Mieszkanie jest nijakie: jasne."
+        },
+        {
+          "id": "g7-4",
+          "text": "Podwórze jest ___. (cichy)",
+          "answer": "ciche",
+          "grammar_point": "przymiotnik-mianownik"
+        },
+        {
+          "id": "g7-5",
+          "text": "Piwnica jest ___. (wilgotny)",
+          "answer": "wilgotna",
+          "grammar_point": "przymiotnik-mianownik"
+        },
+        {
+          "id": "g7-6",
+          "text": "Winda jest ___. (nowy)",
+          "answer": "nowa",
+          "grammar_point": "przymiotnik-mianownik"
+        },
+        {
+          "id": "g7-7",
+          "text": "Mieszkanie na Łazarzu jest ___. (drogi)",
+          "answer": "drogie",
+          "grammar_point": "przymiotnik-mianownik",
+          "explanation": "Po -g- w rodzaju nijakim piszemy -ie: drogi → drogie."
+        },
+        {
+          "id": "g7-8",
+          "text": "Ten pokój jest ___. (wysoki)",
+          "answer": "wysoki",
+          "grammar_point": "przymiotnik-mianownik",
+          "explanation": "Po -k- w rodzaju męskim piszemy -i: wysoki."
+        },
+        {
+          "id": "g7-9",
+          "text": "Ta dzielnica jest ___. (tani)",
+          "answer": "tania",
+          "grammar_point": "przymiotnik-mianownik",
+          "explanation": "Przymiotniki miękkie: tani → tania → tanie."
+        },
+        {
+          "id": "g7-10",
+          "text": "Piętro jest ___. (ostatni)",
+          "answer": "ostatnie",
+          "grammar_point": "przymiotnik-mianownik"
+        },
+        {
+          "id": "g7-11",
+          "text": "___ jest ta kamienica? — Stara.",
+          "answer": "Jaka",
+          "grammar_point": "przymiotnik-mianownik",
+          "options": [
+            "Jaki",
+            "Jaka",
+            "Jakie"
+          ],
+          "explanation": "Kamienica jest żeńska: jaka?"
+        },
+        {
+          "id": "g7-12",
+          "text": "___ jest to mieszkanie? — Przestronne.",
+          "answer": "Jakie",
+          "grammar_point": "przymiotnik-mianownik",
+          "options": [
+            "Jaki",
+            "Jaka",
+            "Jakie"
+          ],
+          "explanation": "Mieszkanie jest nijakie: jakie?"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 4,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Liczba mnoga: mężczyźni (ci)",
+      "instruction": "Wpisz rzeczownik w liczbie mnogiej. Jeśli w grupie jest mężczyzna, mówimy: ci. Kobiety same: te.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Ci ___ czekają w biurze. (klient)",
+          "answer": "klienci",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "-t → -ci: klient → klienci."
+        },
+        {
+          "id": "g8-2",
+          "text": "Ci ___ mieszkają obok. (sąsiad)",
+          "answer": "sąsiedzi",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "-d → -dzi: sąsiad → sąsiedzi."
+        },
+        {
+          "id": "g8-3",
+          "text": "Ci ___ pracują w biurze „Klucz”. (pośrednik)",
+          "answer": "pośrednicy",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "-k → -cy: pośrednik → pośrednicy."
+        },
+        {
+          "id": "g8-4",
+          "text": "Ci ___ sprzedają mieszkania. (właściciel)",
+          "answer": "właściciele",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "-el → -ele: właściciel → właściciele."
+        },
+        {
+          "id": "g8-5",
+          "text": "Ci ___ płacą czynsz. (najemca)",
+          "answer": "najemcy",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "-ca → -cy: najemca → najemcy."
+        },
+        {
+          "id": "g8-6",
+          "text": "Pan Lis i pani Lis to państwo ___. (Lis)",
+          "answer": "Lisowie",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Nazwisko rodziny: -owie."
+        },
+        {
+          "id": "g8-7",
+          "text": "Ci ___ pytają o cenę. (kupujący)",
+          "answer": "kupujący",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Kupujący (rzeczownik z przymiotnika) w liczbie mnogiej się nie zmienia."
+        },
+        {
+          "id": "g8-8",
+          "text": "Te ___ czekają w biurze. (klientka)",
+          "answer": "klientki",
+          "grammar_point": "liczba-mnoga-mianownik",
+          "explanation": "Kobiety same: klientka → klientki (te)."
+        },
+        {
+          "id": "g8-9",
+          "text": "Ci ___ mieszkają na Wildzie. (lekarz)",
+          "answer": "lekarze",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "-arz → -arze: lekarz → lekarze."
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 4,
+      "exercise_type": "fill-in-blank",
+      "title": "9. Wyjątki: ludzie, dzieci, rodzice…",
+      "instruction": "Wpisz formę w liczbie mnogiej albo wybierz ci / te. Te słowa nie mają regularnej liczby mnogiej.",
+      "items": [
+        {
+          "id": "g9-1",
+          "text": "Ci ___ czekają przed biurem. (człowiek)",
+          "answer": "ludzie",
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Człowiek → ludzie (inna podstawa)."
+        },
+        {
+          "id": "g9-2",
+          "text": "Państwo Lisowie mają dwoje ___. (dziecko)",
+          "answer": "dzieci",
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Dziecko → dzieci."
+        },
+        {
+          "id": "g9-3",
+          "text": "Marta i Paweł to ___ Oli i Kuby. (rodzic)",
+          "answer": "rodzice",
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Rodzic → rodzice."
+        },
+        {
+          "id": "g9-4",
+          "text": "Ci ___ mieszkają obok. (brat)",
+          "answer": "bracia",
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Brat → bracia (nie *bracie*, nie *braci*)."
+        },
+        {
+          "id": "g9-5",
+          "text": "Ci ___ pracują w biurze. (kolega)",
+          "answer": "koledzy",
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Kolega → koledzy."
+        },
+        {
+          "id": "g9-6",
+          "text": "Ci ___ czekają przed kamienicą. (mężczyzna)",
+          "answer": "mężczyźni",
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Mężczyzna → mężczyźni."
+        },
+        {
+          "id": "g9-7",
+          "text": "Ci ___ mają dwa mieszkania. (dentysta)",
+          "answer": "dentyści",
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "-ysta → -yści: dentysta → dentyści."
+        },
+        {
+          "id": "g9-8",
+          "text": "___ dzieci czekają w biurze.",
+          "answer": "Te",
+          "grammar_point": "rzecz-nieregularne",
+          "options": [
+            "Ci",
+            "Te"
+          ],
+          "explanation": "Dzieci to grupa niemęskoosobowa: te dzieci."
+        }
+      ]
+    },
+    {
+      "block_id": "g10",
+      "part": 5,
+      "exercise_type": "fill-in-blank",
+      "title": "10. Przymiotnik w liczbie mnogiej: ci i te",
+      "instruction": "Wpisz przymiotnik w liczbie mnogiej. Jeśli w grupie jest mężczyzna (ci), użyj formy męskoosobowej. W nawiasie jest forma męska.",
+      "items": [
+        {
+          "id": "g10-1",
+          "text": "Ci klienci są ___. (zadowolony)",
+          "answer": "zadowoleni",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "-ony → -eni: zadowolony → zadowoleni."
+        },
+        {
+          "id": "g10-2",
+          "text": "Te mieszkania są ___. (nowy)",
+          "answer": "nowe",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Rzeczy: forma jak w rodzaju nijakim: nowe."
+        },
+        {
+          "id": "g10-3",
+          "text": "Ci sąsiedzi są ___. (cichy)",
+          "answer": "cisi",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "-chy → -si: cichy → cisi."
+        },
+        {
+          "id": "g10-4",
+          "text": "Te klientki są ___. (wymagający)",
+          "answer": "wymagające",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Kobiety same: wymagające."
+        },
+        {
+          "id": "g10-5",
+          "text": "Państwo Lisowie są ___. (zdecydowany)",
+          "answer": "zdecydowani",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Państwo (kobieta + mężczyzna): -ny → -ni."
+        },
+        {
+          "id": "g10-6",
+          "text": "Panie są ___. (zadowolony)",
+          "answer": "zadowolone",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Panie (same kobiety): zadowolone."
+        },
+        {
+          "id": "g10-7",
+          "text": "Te pokoje są ___. (przestronny)",
+          "answer": "przestronne",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Pokoje to rzeczy: przestronne."
+        },
+        {
+          "id": "g10-8",
+          "text": "Ci właściciele są ___. (uczciwy)",
+          "answer": "uczciwi",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "-wy → -wi: uczciwy → uczciwi."
+        },
+        {
+          "id": "g10-9",
+          "text": "Ci kupujący są ___. (młody)",
+          "answer": "młodzi",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "-dy → -dzi: młody → młodzi."
+        },
+        {
+          "id": "g10-10",
+          "text": "Te dzieci są ___. (cichy)",
+          "answer": "ciche",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Dzieci to grupa niemęskoosobowa: ciche (nie *cisi*)."
+        },
+        {
+          "id": "g10-11",
+          "text": "Rodzice są ___. (wymagający)",
+          "answer": "wymagający",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "-ący w grupie męskoosobowej się nie zmienia."
+        }
+      ]
+    },
+    {
+      "block_id": "g11",
+      "part": 5,
+      "exercise_type": "sentence-building",
+      "title": "11. Pułapki: ci czy te — popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g11-1",
+          "prompt": "Państwo Lisowie są zadowolone.",
+          "answer": "Państwo Lisowie są zadowoleni.",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "W grupie są mężczyzna i kobieta, więc forma męskoosobowa: zadowoleni."
+        },
+        {
+          "id": "g11-2",
+          "prompt": "Marta i Paweł są zdecydowane.",
+          "answer": "Marta i Paweł są zdecydowani.",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Marta i Paweł = grupa męskoosobowa: zdecydowani."
+        },
+        {
+          "id": "g11-3",
+          "prompt": "Dzieci są cisi.",
+          "answer": "Dzieci są ciche.",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Dzieci to grupa niemęskoosobowa: ciche."
+        },
+        {
+          "id": "g11-4",
+          "prompt": "Te klienci czekają w biurze.",
+          "answer": "Ci klienci czekają w biurze.",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Klienci to mężczyźni: ci klienci."
+        },
+        {
+          "id": "g11-5",
+          "prompt": "Ci sąsiedzi są ciche.",
+          "answer": "Ci sąsiedzi są cisi.",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Sąsiedzi to męskoosobowa liczba mnoga: cisi."
+        },
+        {
+          "id": "g11-6",
+          "prompt": "Panie są zdecydowani.",
+          "answer": "Panie są zdecydowane.",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Panie to same kobiety: zdecydowane."
+        }
+      ]
+    },
+    {
+      "block_id": "gz",
+      "part": 6,
+      "exercise_type": "fill-in-blank",
+      "title": "12. Ćwiczenia zbiorcze: rodzaj, liczba, przymiotnik",
+      "instruction": "Wszystkie porcje razem, bez ściągi. W zadaniu z pytaniem o zdanie wybierz, co widzisz.",
+      "items": [
+        {
+          "id": "gz-1",
+          "text": "Pan Marek to klient, a pani Anna to ___.",
+          "answer": "klientka",
+          "grammar_point": "rodzaj-rzeczownika",
+          "explanation": "Para: klient — klientka."
+        },
+        {
+          "id": "gz-2",
+          "text": "Czy Panie ___ z Poznania? (być)",
+          "answer": "są",
+          "grammar_point": "byc",
+          "explanation": "Powtórka z lekcji 3: Panie + 3. osoba liczby mnogiej: są."
+        },
+        {
+          "id": "gz-3",
+          "text": "Państwo Lisowie mają dwoje ___. (dziecko)",
+          "answer": "dzieci",
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Wyjątek: dziecko → dzieci."
+        },
+        {
+          "id": "gz-4",
+          "text": "Na Jeżycach są dwa ___. (balkon)",
+          "answer": "balkony",
+          "grammar_point": "liczba-mnoga-mianownik",
+          "explanation": "Liczba mnoga: męski (rzecz) → -y."
+        },
+        {
+          "id": "gz-5",
+          "text": "Ci ___ są uczciwi. (właściciel)",
+          "answer": "właściciele",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Męskoosobowa liczba mnoga: -el → -ele."
+        },
+        {
+          "id": "gz-6",
+          "text": "Te mieszkania są ___. (przestronny)",
+          "answer": "przestronne",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Rzeczy w liczbie mnogiej: przestronne."
+        },
+        {
+          "id": "gz-7",
+          "text": "___ nieruchomość jest w Poznaniu.",
+          "answer": "ta",
+          "grammar_point": "rodzaj-rzeczownika",
+          "options": [
+            "ten",
+            "ta",
+            "to"
+          ],
+          "explanation": "Rodzaj: -ość → żeński."
+        },
+        {
+          "id": "gz-8",
+          "text": "___ jest ta winda? — Nowa.",
+          "answer": "Jaka",
+          "grammar_point": "przymiotnik-mianownik",
+          "options": [
+            "Jaki",
+            "Jaka",
+            "Jakie"
+          ],
+          "explanation": "Winda jest żeńska: jaka?"
+        },
+        {
+          "id": "gz-9",
+          "text": "Podwórze jest ___. (cichy)",
+          "answer": "ciche",
+          "grammar_point": "przymiotnik-mianownik",
+          "explanation": "Przymiotnik: podwórze jest nijakie."
+        },
+        {
+          "id": "gz-10",
+          "text": "Czy Państwo ___ już oferty? (mieć)",
+          "answer": "mają",
+          "grammar_point": "miec",
+          "explanation": "Powtórka z lekcji 3: Państwo + 3. osoba liczby mnogiej: mają."
+        },
+        {
+          "id": "gz-11",
+          "text": "W zdaniu „Ci pośrednicy są uczciwi.” widzisz:",
+          "answer": "męskoosobową liczbę mnogą",
+          "grammar_point": "mn-mianownik-mos",
+          "options": [
+            "rodzaj rzeczownika",
+            "liczbę mnogą rzeczy",
+            "przymiotnik w liczbie pojedynczej",
+            "męskoosobową liczbę mnogą"
+          ],
+          "explanation": "Ci pośrednicy (rzeczownik) + uczciwi (przymiotnik): obie formy męskoosobowe."
+        },
+        {
+          "id": "gz-12",
+          "text": "W kamienicy są dwie ___. (piwnica)",
+          "answer": "piwnice",
+          "grammar_point": "liczba-mnoga-mianownik",
+          "explanation": "Liczba mnoga: -ica → -ice."
+        },
+        {
+          "id": "gz-13",
+          "text": "Państwo Lisowie są ___. (zadowolony)",
+          "answer": "zadowoleni",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Przymiotnik w liczbie mnogiej, grupa męskoosobowa."
+        },
+        {
+          "id": "gz-14",
+          "text": "Ci ___ są w biurze. (klient)",
+          "answer": "klienci",
+          "grammar_point": "mn-mianownik-mos",
+          "explanation": "Męskoosobowa liczba mnoga: -t → -ci."
+        }
+      ]
+    }
+  ]
+}
