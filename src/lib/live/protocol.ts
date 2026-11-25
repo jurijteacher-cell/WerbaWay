@@ -35,7 +35,9 @@ const LIVE_SKIP_PARAMS = new Set(['s', 'lang', 'ww_watch']);
 export function liveKey(href: string): string {
   try {
     const u = new URL(href, 'http://x');
-    const q = [...u.searchParams.entries()].filter(([k]) => !LIVE_SKIP_PARAMS.has(k)).sort(([a], [b]) => a.localeCompare(b));
+    // іспит-лекція: усі частини (?part=) ділять один стан, тож ключ без part
+    const skipPart = u.pathname.endsWith('/mock-exam');
+    const q = [...u.searchParams.entries()].filter(([k]) => !LIVE_SKIP_PARAMS.has(k) && !(skipPart && k === 'part')).sort(([a], [b]) => a.localeCompare(b));
     return u.pathname + (q.length ? `?${q.map(([k, v]) => `${k}=${v}`).join('&')}` : '');
   } catch {
     return href;

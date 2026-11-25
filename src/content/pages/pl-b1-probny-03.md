@@ -24,8 +24,48 @@ notion: https://app.notion.com/p/03-Egzamin-pr-bny-B1-3-41396e03c7c88138a8afdac1
 
 ---
 
-<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-03/mock-exam">
-Egzamin próbny B1 — 3
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-03/mock-exam?part=start">
+	Zasady i start
+</embed>
+
+---
+
+## 🎧 Słuchanie
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-03/mock-exam?part=rs">
+	Rozumienie ze słuchu
+</embed>
+
+---
+
+## 📖 Czytanie
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-03/mock-exam?part=rt">
+	Rozumienie tekstów pisanych
+</embed>
+
+---
+
+## 🧩 Gramatyka
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-03/mock-exam?part=pg">
+	Poprawność gramatyczna
+</embed>
+
+---
+
+## ✍️ Pisanie
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-03/mock-exam?part=pi">
+	Wypowiedź pisemna
+</embed>
+
+---
+
+## 🏁 Wynik
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-03/mock-exam?part=wynik">
+	Podsumowanie i wynik
 </embed>
 
 ---

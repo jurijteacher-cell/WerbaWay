@@ -22,6 +22,30 @@ notion: https://app.notion.com/p/02-Egzamin-pr-bny-B1-2-40f96e03c7c881409ee2f0c1
 
 ---
 
-<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-02/mock-exam">
-Egzamin próbny B1 — 2
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-02/mock-exam?part=start">
+	Zasady i start
+</embed>
+
+---
+
+## 📖 Czytanie
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-02/mock-exam?part=rt">
+	Rozumienie tekstów pisanych
+</embed>
+
+---
+
+## 🧩 Gramatyka
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-02/mock-exam?part=pg">
+	Poprawność gramatyczna
+</embed>
+
+---
+
+## 🏁 Wynik
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-02/mock-exam?part=wynik">
+	Podsumowanie i wynik
 </embed>

@@ -120,6 +120,19 @@ export function LessonPager({
     [idx, pages.length, storeKey, watch, onPage]
   );
 
+  // іспит-лекція: частина іспиту (iframe) просить перейти на іншу частину — `ww:mx-go` з id частини (?part=)
+  const goRef = useRef<(n: number) => void>(() => undefined);
+  useEffect(() => {
+    const on = (e: MessageEvent) => {
+      const d = e.data as { type?: string; to?: string } | null;
+      if (!d || d.type !== 'ww:mx-go' || typeof d.to !== 'string') return;
+      const n = pagesRef.current.findIndex((p) => new RegExp(`[?&]part=${d.to}(&|$)`).test(p.url));
+      if (n >= 0) goRef.current(n);
+    };
+    window.addEventListener('message', on);
+    return () => window.removeEventListener('message', on);
+  }, []);
+
   const curKey = pages[idx]?.key;
   const settled = !tracked || (curKey ? doneKeys.has(curKey) || skippedRef.current.has(curKey) : true);
 
@@ -135,6 +148,8 @@ export function LessonPager({
     },
     [doGo, idx, pages.length, settled]
   );
+
+  goRef.current = go;
 
   // сторінка, що ≥ 15 с була на екрані, рахується в 40 % для автодомашки (клас: викладач гортає учня),
   // але в «Пройдено» не потрапляє — це робить лише кнопка

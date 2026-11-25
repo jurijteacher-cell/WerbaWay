@@ -38,6 +38,8 @@
 
 **Вікна вправ — без вікна у вікні** (Юра, 25.11): `/embed/…` самі розтягують iframe на повну висоту (`FrameSync` + `EmbedFrame`), власного скролу немає. Нових контейнерів із `100vh`/`overflow:auto` у вправах не робити; деталі — `DESIGN_SYSTEM.md`.
 
+**Пробні іспити** (telc, державний) — лише за форматом «іспит = лекція» (`MOCK_EXAM_SPEC.md`): сторінка з частинами `?part=`, без імені, наживо зі звуком для викладача.
+
 **Лекція «є на сайті»** = `src/content/pages/<slug>.md` + `teacher-pages/<slug>.md` (`teacherOf`) + усі JSON у `src/content/queue-published/` (мінімум `vocab`, `comm-tasks`, `hw`) + запис у `content-queue/_manifest.json` + переклади `src/content/i18n/**`. `slug` = `lesson_id`, `^[a-z0-9][a-z0-9-]*$`; після публікації `lesson_id` і `id` завдань не змінюються (на них висять спроби учнів). Формат сторінки й frontmatter — `SITE_PUBLISHING.md` §4.
 
 ## 2. Мова

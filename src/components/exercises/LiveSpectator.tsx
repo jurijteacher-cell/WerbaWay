@@ -1,12 +1,13 @@
 'use client';
 
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react';
+import { useEffect, useRef, useState, useSyncExternalStore, type CSSProperties, type ReactNode } from 'react';
+import { applyLiveAudio, liveAudioState, resumeLiveAudio, setLiveAudioMuted, subscribeLiveAudio, type LiveAudioRec } from '@/lib/live-audio';
 import { hasLiveState, isSpectator, setLiveState } from '@/lib/embed-progress';
 import { liveKey } from '@/lib/live/protocol';
 import { useT } from '@/i18n/client';
 
 /** Типи вправ, що наживо не показуються: свій сховище й запити до API на кожному кроці */
-const NOT_LIVE = /^\/embed\/[^/]+\/(mock-exam|placement)(\/|$)/;
+const NOT_LIVE = /^\/embed\/[^/]+\/placement(\/|$)/;
 
 /**
  * Вікно вправи в режимі «Дивитися учня» (iframe викладача з ?ww_watch=1).
@@ -22,6 +23,7 @@ export function LiveSpectator({ children }: { children: ReactNode }) {
   const [has, setHas] = useState(false);
   const [gen, setGen] = useState(0);
   const boxRef = useRef<HTMLDivElement>(null);
+  const au = useSyncExternalStore(subscribeLiveAudio, liveAudioState, liveAudioState);
 
   useEffect(() => {
     if (!isSpectator()) return;
@@ -53,7 +55,11 @@ export function LiveSpectator({ children }: { children: ReactNode }) {
       if (e.origin !== window.location.origin || e.source !== window.parent) return;
       const d = e.data as { type?: string; s?: Record<string, unknown>; full?: boolean } | null;
       if (!d || d.type !== 'ww-live-state') return;
-      setLiveState(d.s ?? {}, !!d.full);
+      const st = d.s ?? {};
+      if ('mx-audio' in st) applyLiveAudio(st['mx-audio'] as LiveAudioRec | null, !!d.full);
+      setLiveState(st, !!d.full);
+      // тільки позиція звуку (раз на кілька секунд) — вправу не перемонтовуємо
+      if (!d.full && Object.keys(st).every((k) => k === 'mx-audio')) return;
       refresh();
     };
 
@@ -84,6 +90,20 @@ export function LiveSpectator({ children }: { children: ReactNode }) {
     <>
       <p style={note}>
         👁 {has ? t('Відповіді учня · наживо') : t('Учень ще нічого не вписав')}
+        {au.active ? (
+          <>
+            {' · '}
+            {au.blocked ? (
+              <button type="button" onClick={resumeLiveAudio} style={{ font: 'inherit', textDecoration: 'underline', cursor: 'pointer', background: 'none', border: 0, color: 'inherit' }}>
+                🔊 {t('Увімкнути звук учня')}
+              </button>
+            ) : (
+              <button type="button" onClick={() => setLiveAudioMuted(!au.muted)} style={{ font: 'inherit', textDecoration: 'underline', cursor: 'pointer', background: 'none', border: 0, color: 'inherit' }}>
+                {au.muted ? `🔇 ${t('Звук учня вимкнено')}` : `🔊 ${t('Чути запис учня')}`}
+              </button>
+            )}
+          </>
+        ) : null}
       </p>
       <div ref={boxRef}>
         <div key={gen}>{children}</div>

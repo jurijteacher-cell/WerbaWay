@@ -3,6 +3,7 @@
 import { Fragment, useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { AudioTransport } from './AudioTransport';
 import { getAccessToken, getServerState, getState, subscribe } from '@/lib/embed-auth';
+import { clearProgress, isSpectator, loadProgress, saveProgress } from '@/lib/embed-progress';
 import type { PublicMockExam, MockScore, ItemResult } from '@/lib/mock-exam/core';
 import type { WritingGrade } from '@/lib/mock-exam/writing-grade';
 import { useLocale, withLang, useT } from '@/i18n/client';
@@ -102,7 +103,14 @@ type Ctx = {
 };
 
 /** Login is required (the AccountBar wall covers the page); progress is stored per account. */
-export function MockExam({ lessonId, reviewId }: { lessonId: string; reviewId?: string }) {
+/** Кеш тексту іспиту: «Дивитися» перемонтовує вправу на кожне оновлення — без кешу вона блимала б «Ładowanie…». */
+const examCache = new Map<string, PublicMockExam>();
+
+/**
+ * `part` — іспит як лекція: кожна частина (start · id розділу · wynik) — окрема сторінка лекції зі своїм iframe.
+ * Без `part` — цілий іспит із боковим меню (розбір спроби, відкриття окремо).
+ */
+export function MockExam({ lessonId, reviewId, part }: { lessonId: string; reviewId?: string; part?: string }) {
   const auth = useSyncExternalStore(subscribe, getState, getServerState);
   if (!auth.ready || !auth.userId) return null;
   return (
@@ -112,6 +120,7 @@ export function MockExam({ lessonId, reviewId }: { lessonId: string; reviewId?: 
       storageId={`${auth.userId}:${lessonId}`}
       imie={auth.name ?? auth.email ?? ''}
       reviewId={reviewId}
+      part={part}
     />
   );
 }
@@ -121,17 +130,22 @@ function MockExamInner({
   storageId,
   imie,
   reviewId,
+  part,
 }: {
   lessonId: string;
   storageId: string;
   imie: string;
   reviewId?: string;
+  part?: string;
 }) {
   const t = useT();
   const locale = useLocale();
-  const [exam, setExam] = useState<PublicMockExam | null>(null);
+  const [exam, setExam] = useState<PublicMockExam | null>(() => examCache.get(`${lessonId}:${locale}`) ?? null);
   const [loadError, setLoadError] = useState<string | null>(null);
-  const [tab, setTab] = useState<Tab>('start');
+  const reviewingNow = Boolean(reviewId);
+  const partMode = Boolean(part) && !reviewingNow;
+  const spectator = isSpectator();
+  const [tab, setTab] = useState<Tab>(partMode ? (part as string) : 'start');
   const [answers, setAnswers] = useState<Answers>({});
   const [startedAt, setStartedAt] = useState<number | null>(null);
   const [elapsed, setElapsed] = useState<Record<string, number>>({});
@@ -187,7 +201,10 @@ function MockExamInner({
         if (!r.ok) throw new Error('load');
         return r.json();
       })
-      .then((d: PublicMockExam) => setExam(d))
+      .then((d: PublicMockExam) => {
+        examCache.set(`${lessonId}:${locale}`, d);
+        setExam(d);
+      })
       .catch(() => setLoadError('Nie udało się wczytać egzaminu. Odśwież stronę.'));
   }, [lessonId, locale]);
 
@@ -197,9 +214,18 @@ function MockExamInner({
   useEffect(() => {
     if (reviewing) return;
     try {
-      const raw = localStorage.getItem(storeKey(storageId));
-      if (raw) {
-        const s = JSON.parse(raw) as Stored;
+      // стан живе в embed-progress (як у всіх вправ) — так його бачить «Дивитися». Чернетку зі старого
+      // ключа (до 25.11) підхоплюємо один раз і переносимо.
+      let s = loadProgress<Stored>('mx');
+      if (!s && !spectator) {
+        const raw = localStorage.getItem(storeKey(storageId));
+        if (raw) {
+          s = JSON.parse(raw) as Stored;
+          saveProgress('mx', s);
+          localStorage.removeItem(storeKey(storageId));
+        }
+      }
+      if (s) {
         if (s.answers) setAnswers(s.answers);
         if (s.startedAt) setStartedAt(s.startedAt);
         if (s.plays) setPlays(s.plays);
@@ -211,8 +237,8 @@ function MockExamInner({
           setSaved(s.result.saved);
           setResultId(s.result.resultId ?? null);
           setWritingAi(s.result.writingAi ?? null);
-          setTab('wynik');
-        } else if (s.tab && s.startedAt) {
+          if (!partMode) setTab('wynik');
+        } else if (s.tab && s.startedAt && !partMode) {
           setTab(s.tab);
         }
       }
@@ -220,7 +246,7 @@ function MockExamInner({
       /* storage unavailable */
     }
     setRestored(true);
-    void loadAttempts();
+    if (!spectator) void loadAttempts();
   }, [storageId, reviewing]);
 
   useEffect(() => {
@@ -257,7 +283,7 @@ function MockExamInner({
   }, [reviewId, exam, lessonId, locale]);
 
   useEffect(() => {
-    if (reviewing || !restored || startedAt == null) return;
+    if (reviewing || spectator || !restored || startedAt == null) return;
     try {
       const data: Stored = {
         answers,
@@ -268,14 +294,20 @@ function MockExamInner({
         paused,
         result: score ? { score, saved: Boolean(saved), transcripts, resultId, writingAi } : undefined,
       };
-      localStorage.setItem(storeKey(storageId), JSON.stringify(data));
+      saveProgress('mx', data);
     } catch {
       /* ignore */
     }
   }, [reviewing, restored, answers, startedAt, tab, score, saved, storageId, plays, transcripts, elapsed, paused, resultId, writingAi]);
 
   // Section timer: counts only while this section is open, the page is visible and the exam is not paused.
-  const timerRunning = restored && startedAt != null && !score && !paused && tab !== 'start' && tab !== 'wynik';
+  const timerRunning = restored && !spectator && startedAt != null && !score && !paused && tab !== 'start' && tab !== 'wynik';
+
+  // іспит-лекція: відкрив будь-яку частину з завданнями — іспит розпочато (окремої кнопки «Start» не вимагаємо)
+  useEffect(() => {
+    if (!partMode || !restored || spectator || startedAt != null || score) return;
+    if (tab !== 'start' && tab !== 'wynik') setStartedAt(Date.now());
+  }, [partMode, restored, spectator, startedAt, score, tab]);
   useEffect(() => {
     if (!timerRunning) return;
     const id = setInterval(() => {
@@ -332,8 +364,20 @@ function MockExamInner({
   };
 
   const go = (t: Tab) => {
-    setTab(t);
     setConfirming(false);
+    if (partMode) {
+      // сторінки іспиту — сторінки лекції: просимо LessonPager перейти; без нього (відкрито окремо) — міняємо ?part=
+      if (t !== tab) {
+        if (window.parent !== window) window.parent.postMessage({ type: 'ww:mx-go', to: t }, '*');
+        else {
+          const u = new URL(window.location.href);
+          u.searchParams.set('part', t);
+          window.location.href = u.toString();
+        }
+      }
+      return;
+    }
+    setTab(t);
     requestAnimationFrame(() => topRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
   };
 
@@ -347,7 +391,7 @@ function MockExamInner({
   const minutes = Math.floor(totalSec / 60);
 
   const submit = async () => {
-    if (busy) return;
+    if (busy || spectator) return;
     setBusy(true);
     setSendError(null);
     try {
@@ -397,6 +441,8 @@ function MockExamInner({
 
   const retake = () => {
     try {
+      clearProgress('mx');
+      clearProgress('mx-audio');
       localStorage.removeItem(storeKey(storageId));
     } catch {
       /* ignore */
@@ -433,11 +479,13 @@ function MockExamInner({
 
   return (
     <div className="mx" ref={topRef}>
-      <header className="nb-head">
-        <p className="nb-eyebrow">{exam.eyebrow ?? 'egzamin próbny · B1'}</p>
-        <h1>{exam.title}</h1>
-        <p>{exam.subtitle}</p>
-      </header>
+      {partMode ? null : (
+        <header className="nb-head">
+          <p className="nb-eyebrow">{exam.eyebrow ?? 'egzamin próbny · B1'}</p>
+          <h1>{exam.title}</h1>
+          <p>{exam.subtitle}</p>
+        </header>
+      )}
 
       {review ? (
         <div className="mx-review-bar" role="status">
@@ -461,7 +509,8 @@ function MockExamInner({
         </div>
       ) : null}
 
-      <div className="mx-body" ref={bodyRef}>
+      <div className={partMode ? 'mx-body mx-single' : 'mx-body'} ref={bodyRef}>
+      {partMode ? null : (
       <nav className="nb-idx mx-rail" aria-label="Części egzaminu">
         {tabs.map((t) => (
           <button
@@ -482,6 +531,7 @@ function MockExamInner({
           </span>
         ) : null}
       </nav>
+      )}
 
       <div className="mx-main">
 
@@ -513,7 +563,6 @@ function MockExamInner({
             Odpowiedzi zapisują się same. Jeśli zamkniesz okno, wrócisz w to samo miejsce. / Відповіді
             зберігаються автоматично: закриєш вікно — повернешся туди ж (у цьому ж браузері).
           </p>
-          <p className="nb-note">Piszesz jako: <b>{imie}</b></p>
           <div className="nb-row">
             {locked && !review ? (
               <>
@@ -577,8 +626,12 @@ function MockExamInner({
               <button type="button" className="nb-btn" onClick={() => go(exam.sections[sIndex + 1].id)}>
                 Dalej: {exam.sections[sIndex + 1].tab} →
               </button>
+            ) : partMode && !locked ? (
+              <button type="button" className="nb-btn" onClick={() => go('wynik')}>
+                Dalej: podsumowanie →
+              </button>
             ) : null}
-            {!locked && sIndex === exam.sections.length - 1 && !confirming ? (
+            {!partMode && !locked && sIndex === exam.sections.length - 1 && !confirming ? (
               <button type="button" className="nb-btn mx-send" onClick={() => setConfirming(true)}>
                 Zakończ i wyślij
               </button>
@@ -609,6 +662,47 @@ function MockExamInner({
           ) : null}
           {sendError ? <p className="mx-error">{sendError}</p> : null}
           </div>
+        </section>
+      ) : null}
+
+      {partMode && tab === 'wynik' && !score ? (
+        <section className="mx-panel">
+          <h2 className="mx-h2">Podsumowanie</h2>
+          <ul className="mx-rules">
+            {exam.sections.map((sc) => (
+              <li key={sc.id}>
+                <b>{sc.title}</b> — {counts[sc.id]?.done ?? 0}/{counts[sc.id]?.total ?? 0}
+              </li>
+            ))}
+          </ul>
+          {startedAt == null ? (
+            <p className="nb-note">Najpierw rozwiąż zadania w częściach egzaminu — potem wróć tutaj i wyślij odpowiedzi.</p>
+          ) : null}
+          {!confirming ? (
+            <div className="nb-row">
+              <button type="button" className="nb-btn mx-send" disabled={startedAt == null || spectator} onClick={() => setConfirming(true)}>
+                Zakończ i wyślij
+              </button>
+            </div>
+          ) : (
+            <div className="mx-confirm" role="alert">
+              <p>
+                {missing
+                  ? `Bez odpowiedzi: ${missing}. Po wysłaniu nie można nic zmienić.`
+                  : 'Wszystko uzupełnione. Po wysłaniu nie można nic zmienić.'}
+              </p>
+              <div className="nb-row">
+                <button type="button" className="nb-btn mx-send" disabled={busy} onClick={submit}>
+                  {busy ? 'Wysyłanie…' : 'Wyślij'}
+                </button>
+                <button type="button" className="nb-btn ghost" disabled={busy} onClick={() => setConfirming(false)}>
+                  Wracam
+                </button>
+              </div>
+            </div>
+          )}
+          {sendError ? <p className="mx-error">{sendError}</p> : null}
+          {attempts.length ? <AttemptList attempts={attempts} current={resultId} /> : null}
         </section>
       ) : null}
 
@@ -1326,6 +1420,35 @@ function AudioPlayer({ task, ctx }: { task: Task; ctx: Ctx }) {
       setState('paused');
     }
   }, [ctx.paused, state]);
+  // «Дивитися учня»: викладач чує те саме — на кожну подію плеєра пишемо позицію (embed-progress → маячок → викладач)
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || ctx.reviewing || ctx.locked || isSpectator()) return;
+    let lastBeat = 0;
+    const send = (playing: boolean) => {
+      saveProgress('mx-audio', { src: audio.src, playing, pos: el.currentTime || 0, n: Date.now() });
+    };
+    const onPlay = () => send(true);
+    const onStop = () => send(false);
+    const onTime = () => {
+      if (el.paused || Date.now() - lastBeat < 3000) return;
+      lastBeat = Date.now();
+      send(true);
+    };
+    el.addEventListener('play', onPlay);
+    el.addEventListener('pause', onStop);
+    el.addEventListener('ended', onStop);
+    el.addEventListener('seeked', onTime);
+    el.addEventListener('timeupdate', onTime);
+    return () => {
+      el.removeEventListener('play', onPlay);
+      el.removeEventListener('pause', onStop);
+      el.removeEventListener('ended', onStop);
+      el.removeEventListener('seeked', onTime);
+      el.removeEventListener('timeupdate', onTime);
+      if (!el.paused) send(false);
+    };
+  }, [audio.src, ctx.locked, ctx.reviewing]);
   if (ctx.locked) {
     return (
       <div className="mx-audio">
@@ -1370,7 +1493,7 @@ function AudioPlayer({ task, ctx }: { task: Task; ctx: Ctx }) {
           setState('idle');
         }}
       />
-      <button type="button" className="nb-btn" disabled={state === 'idle' && left <= 0} onClick={play}>
+      <button type="button" className="nb-btn" disabled={(state === 'idle' && left <= 0) || isSpectator()} onClick={play}>
         {label}
       </button>
       <AudioTransport

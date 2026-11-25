@@ -24,8 +24,48 @@ notion: https://app.notion.com/p/07-Egzamin-pr-bny-B1-7-41596e03c7c881359f13c0d2
 
 ---
 
-<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-07/mock-exam">
-	Egzamin próbny B1 — 7
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-07/mock-exam?part=start">
+	Zasady i start
+</embed>
+
+---
+
+## 🎧 Słuchanie
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-07/mock-exam?part=rs">
+	Rozumienie ze słuchu
+</embed>
+
+---
+
+## 📖 Czytanie
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-07/mock-exam?part=rt">
+	Rozumienie tekstów pisanych
+</embed>
+
+---
+
+## 🧩 Gramatyka
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-07/mock-exam?part=pg">
+	Poprawność gramatyczna
+</embed>
+
+---
+
+## ✍️ Pisanie
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-07/mock-exam?part=pi">
+	Wypowiedź pisemna
+</embed>
+
+---
+
+## 🏁 Wynik
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-probny-07/mock-exam?part=wynik">
+	Podsumowanie i wynik
 </embed>
 
 ---

@@ -29,6 +29,8 @@ function embedPath(): string {
   const url = new URL(window.location.href);
   url.searchParams.delete('s'); // student code in the URL is not part of the exercise identity
   url.searchParams.delete('ww_watch'); // вікно викладача («Дивитися») — не частина ідентичності вправи
+  // іспит-лекція: усі частини (?part=) ділять один стан
+  if (url.pathname.endsWith('/mock-exam')) url.searchParams.delete('part');
   const params = [...url.searchParams.entries()].sort(([a], [b]) => a.localeCompare(b));
   const q = params.map(([k, v]) => `${k}=${v}`).join('&');
   return url.pathname + (q ? `?${q}` : '');

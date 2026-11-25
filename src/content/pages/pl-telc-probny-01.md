@@ -24,8 +24,48 @@ notion: https://app.notion.com/p/03-Egzamin-pr-bny-telc-B1-B2-1-41396e03c7c881f8
 
 ---
 
-<embed source="https://werba-way.vercel.app/embed/pl-telc-probny-01/mock-exam">
-Egzamin próbny telc B1·B2 — 1
+<embed source="https://werba-way.vercel.app/embed/pl-telc-probny-01/mock-exam?part=start">
+	Zasady i start
+</embed>
+
+---
+
+## 🎧 Słuchanie
+
+<embed source="https://werba-way.vercel.app/embed/pl-telc-probny-01/mock-exam?part=sl">
+	Rozumienie ze słuchu
+</embed>
+
+---
+
+## 📖 Czytanie
+
+<embed source="https://werba-way.vercel.app/embed/pl-telc-probny-01/mock-exam?part=cz">
+	Rozumienie tekstu czytanego
+</embed>
+
+---
+
+## 🧩 Elementy
+
+<embed source="https://werba-way.vercel.app/embed/pl-telc-probny-01/mock-exam?part=el">
+	Elementy językowe
+</embed>
+
+---
+
+## ✍️ Pisanie
+
+<embed source="https://werba-way.vercel.app/embed/pl-telc-probny-01/mock-exam?part=pi">
+	Wypowiedź pisemna
+</embed>
+
+---
+
+## 🏁 Wynik
+
+<embed source="https://werba-way.vercel.app/embed/pl-telc-probny-01/mock-exam?part=wynik">
+	Podsumowanie i wynik
 </embed>
 
 ---

@@ -3523,3 +3523,6 @@
 /* вправа в iframe завжди вища за екран: фіксовані елементи прив'язуємо до видимого фрагмента */
 .ww-framed .nb-paused-bar { top: calc(12px + var(--ww-vt, 0px)); }
 .ww-framed .nb-authwall { inset: auto; left: 0; right: 0; top: var(--ww-vt, 0px); height: var(--ww-vh, 100vh); }
+
+/* іспит-лекція: одна частина в iframe — без бокового меню (його роль виконує список сторінок лекції) */
+.mx-body.mx-single { display: block; }
