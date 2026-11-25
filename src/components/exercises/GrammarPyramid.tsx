@@ -838,7 +838,8 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
           const wrong = level.items.filter((it) => feedback[key(it.id)] === false);
           return (
             <div className="nb-panel nb-cloze">
-              {level.bank?.length ? (
+              {/* банк над текстом — лише коли пропуски вписуються; де є випадаючі списки, варіанти вже в них */}
+              {level.bank?.length && !level.items.every((it) => it.options?.length) ? (
                 <div className="nb-cloze-bank" aria-label="Słowa do wstawienia">
                   {level.bank.map((w, i) => (
                     <span key={`${w}-${i}`} className={`nb-cloze-word${usedOk.has(w) ? ' used' : ''}`}>
