@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight, Check, Eye } from 'lucide-react';
 import type { GrammarPyramidExercise, GrammarPyramidItem } from '@/content/queue-types';
 import { answersMatch, stripDiacritics } from '@/lib/answer-match';
 import { trackAttempt } from '@/lib/embed-tracker';
-import { clearProgress, hasAny, loadProgress, saveProgress } from '@/lib/embed-progress';
+import { clearProgress, hasAny, loadProgress, saveProgress, useLiveTick } from '@/lib/embed-progress';
 import { SentenceBuilding } from './SentenceBuilding';
 import { SendToTeacher } from './SendToTeacher';
 import {
@@ -151,6 +151,7 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
     sbGiven: Record<string, string>;
     also: Record<string, string[]>;
   };
+  const liveTick = useLiveTick();
   useEffect(() => {
     const snap = loadProgress<Snap>(scope);
     if (snap) {
@@ -173,7 +174,7 @@ export function GrammarPyramid({ data, blockIds, bare, track }: Props) {
     }
     setReady(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scope]);
+  }, [scope, liveTick]);
   useEffect(() => {
     if (!ready) return;
     saveProgress<Snap>(scope, {

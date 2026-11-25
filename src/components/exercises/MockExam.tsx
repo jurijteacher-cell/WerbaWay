@@ -3,7 +3,7 @@
 import { Fragment, useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { AudioTransport } from './AudioTransport';
 import { getAccessToken, getServerState, getState, subscribe } from '@/lib/embed-auth';
-import { clearProgress, isSpectator, loadProgress, saveProgress } from '@/lib/embed-progress';
+import { clearProgress, isSpectator, loadProgress, saveProgress, useLiveTick } from '@/lib/embed-progress';
 import type { PublicMockExam, MockScore, ItemResult } from '@/lib/mock-exam/core';
 import type { WritingGrade } from '@/lib/mock-exam/writing-grade';
 import { useLocale, withLang, useT } from '@/i18n/client';
@@ -211,6 +211,7 @@ function MockExamInner({
   // Attempt state lives in this browser: unfinished answers, the open tab and, after sending,
   // the result itself — so closing the embed by accident never loses work or the score.
   const [restored, setRestored] = useState(false);
+  const liveTick = useLiveTick();
   useEffect(() => {
     if (reviewing) return;
     try {
@@ -247,7 +248,7 @@ function MockExamInner({
     }
     setRestored(true);
     if (!spectator) void loadAttempts();
-  }, [storageId, reviewing]);
+  }, [storageId, reviewing, liveTick]);
 
   useEffect(() => {
     if (!reviewId || !exam) return;

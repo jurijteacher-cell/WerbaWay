@@ -9,7 +9,7 @@ import type {
   GrammarPyramidItem,
 } from '@/content/queue-types';
 import { GrammarPyramid } from './GrammarPyramid';
-import { clearProgress, loadProgress, saveProgress } from '@/lib/embed-progress';
+import { clearProgress, loadProgress, saveProgress, useLiveTick } from '@/lib/embed-progress';
 import { ResetControl, RestoredNote } from './nb-ui';
 
 /**
@@ -63,17 +63,20 @@ export function GrammarBoard({ data }: Props) {
     [data.cards]
   );
 
+  const liveTick = useLiveTick();
   useEffect(() => {
     const snap = loadProgress<{ cardIdx: number }>('board');
     if (snap && snap.cardIdx > 0 && snap.cardIdx < data.cards.length) {
       setCardIdx(snap.cardIdx);
       setRestored(true);
+    } else if (liveTick > 0) {
+      setCardIdx(0); // «Дивитися»: учень повернувся на першу картку
     }
     const anyTask = cards.some(({ levels }) => levels.some((l) => loadProgress(`pyramid:${l.block_id}`)));
     if (anyTask) setRestored(true);
     setReady(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [liveTick]);
   useEffect(() => {
     if (ready) saveProgress('board', { cardIdx });
   }, [ready, cardIdx]);

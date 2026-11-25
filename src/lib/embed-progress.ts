@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState, useSyncExternalStore } from 'react';
 
 /**
  * Exercise progress kept in the student's browser, so an embed reopens where they left off.
@@ -60,6 +60,29 @@ export function setLiveState(s: Record<string, unknown>, full?: boolean) {
     if (d === null || d === undefined) liveStore.delete(scope);
     else liveStore.set(scope, d);
   }
+  // лише позиція звуку — вправі перечитувати нічого; решта: сповіщаємо вправи, вони оновлюються «на місці»
+  if (full || Object.keys(s).some((k) => k !== 'mx-audio')) {
+    liveTick++;
+    liveListeners.forEach((f) => f());
+  }
+}
+
+let liveTick = 0;
+const liveListeners = new Set<() => void>();
+const subscribeLive = (f: () => void) => {
+  liveListeners.add(f);
+  return () => {
+    liveListeners.delete(f);
+  };
+};
+
+/**
+ * Лічильник оновлень стану від учня (лише у спостерігача; в учня завжди 0).
+ * Вправа додає його у залежності свого «відновлення зі сховища» — тоді значення підставляються
+ * в ту саму вправу, без перемонтування й блимання.
+ */
+export function useLiveTick(): number {
+  return useSyncExternalStore(subscribeLive, () => liveTick, () => 0);
 }
 
 export function hasLiveState(): boolean {
@@ -170,15 +193,18 @@ export function usePersistentState<T extends Record<string, unknown>>(scope: str
   const [ready, setReady] = useState(false);
   const [restored, setRestored] = useState(false);
 
+  const tick = useLiveTick();
   useEffect(() => {
     const saved = loadProgress<T>(scope);
     if (saved && typeof saved === 'object') {
       setValue({ ...initial, ...saved });
       if (Object.values(saved).some((v) => v && typeof v === 'object' && Object.keys(v).length > 0)) setRestored(true);
+    } else if (tick > 0) {
+      setValue(initial); // учень скинув вправу
     }
     setReady(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scope]);
+  }, [scope, tick]);
 
   useEffect(() => {
     if (ready) saveProgress(scope, value);

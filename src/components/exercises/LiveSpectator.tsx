@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, useSyncExternalStore, type CSSProperties, type ReactNode } from 'react';
+import { useEffect, useState, useSyncExternalStore, type CSSProperties, type ReactNode } from 'react';
 import { applyLiveAudio, liveAudioState, resumeLiveAudio, setLiveAudioMuted, subscribeLiveAudio, type LiveAudioRec } from '@/lib/live-audio';
 import { hasLiveState, isSpectator, setLiveState } from '@/lib/embed-progress';
 import { liveKey } from '@/lib/live/protocol';
@@ -13,7 +13,7 @@ const NOT_LIVE = /^\/embed\/[^/]+\/placement(\/|$)/;
  * Вікно вправи в режимі «Дивитися учня» (iframe викладача з ?ww_watch=1).
  * Стан учня приходить від батьківської сторінки (LiveWatch) повідомленням `ww-live-state`;
  * вправи читають його з пам'яті через embed-progress (loadProgress у режимі спостерігача),
- * тому після кожного оновлення вміст просто перемонтовується — зберігши прокрутку.
+ * і самі підставляють нові значення в уже відкриту вправу (useLiveTick) — без перемонтування й блимання.
  * Поза «Дивитися» компонент нічого не робить: віддає children як є.
  */
 export function LiveSpectator({ children }: { children: ReactNode }) {
@@ -21,8 +21,6 @@ export function LiveSpectator({ children }: { children: ReactNode }) {
   const [spec, setSpec] = useState(false);
   const [blocked, setBlocked] = useState(false);
   const [has, setHas] = useState(false);
-  const [gen, setGen] = useState(0);
-  const boxRef = useRef<HTMLDivElement>(null);
   const au = useSyncExternalStore(subscribeLiveAudio, liveAudioState, liveAudioState);
 
   useEffect(() => {
@@ -30,37 +28,15 @@ export function LiveSpectator({ children }: { children: ReactNode }) {
     setSpec(true);
     if (NOT_LIVE.test(window.location.pathname)) setBlocked(true);
     const key = liveKey(window.location.href);
-    let timer: ReturnType<typeof setTimeout> | null = null;
-
-    const refresh = () => {
-      if (timer) return; // кілька оновлень поспіль зливаємо в одне перемонтування
-      timer = setTimeout(() => {
-        timer = null;
-        const y = window.scrollY;
-        // на час перемонтування тримаємо висоту: інакше сторінка на мить «схлопується» й екран смикається
-        const box = boxRef.current;
-        if (box) box.style.minHeight = `${box.offsetHeight}px`;
-        setHas(hasLiveState());
-        setGen((g) => g + 1);
-        requestAnimationFrame(() =>
-          requestAnimationFrame(() => {
-            window.scrollTo(0, y);
-            if (box) box.style.minHeight = '';
-          })
-        );
-      }, 250);
-    };
-
     const onMessage = (e: MessageEvent) => {
       if (e.origin !== window.location.origin || e.source !== window.parent) return;
       const d = e.data as { type?: string; s?: Record<string, unknown>; full?: boolean } | null;
       if (!d || d.type !== 'ww-live-state') return;
       const st = d.s ?? {};
       if ('mx-audio' in st) applyLiveAudio(st['mx-audio'] as LiveAudioRec | null, !!d.full);
+      // вправи самі підхоплюють нове значення (useLiveTick) — без перемонтування, тож нічого не блимає
       setLiveState(st, !!d.full);
-      // тільки позиція звуку (раз на кілька секунд) — вправу не перемонтовуємо
-      if (!d.full && Object.keys(st).every((k) => k === 'mx-audio')) return;
-      refresh();
+      if (d.full || Object.keys(st).some((k) => k !== 'mx-audio')) setHas(hasLiveState());
     };
 
     window.addEventListener('message', onMessage);
@@ -68,7 +44,6 @@ export function LiveSpectator({ children }: { children: ReactNode }) {
     window.parent.postMessage({ type: 'ww-live-hello', key }, window.location.origin);
     return () => {
       window.removeEventListener('message', onMessage);
-      if (timer) clearTimeout(timer);
     };
   }, []);
 
@@ -105,9 +80,7 @@ export function LiveSpectator({ children }: { children: ReactNode }) {
           </>
         ) : null}
       </p>
-      <div ref={boxRef}>
-        <div key={gen}>{children}</div>
-      </div>
+      {children}
     </>
   );
 }
