@@ -27,16 +27,6 @@ teacherOf: pl-preg-r4-powtorka
 | 45–56 | Модельний діалог + c1 (і c2, якщо встигаємо) | c3 можна перенести на початок наступного уроку як розігрів. |
 | 56–60 | Підсумок + ДЗ | Розділ 6 (екзамен) — резерв для швидкої студентки або наступного разу. |
 
-## 🎧 Модельний діалог (читає вчитель)
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true"></span><div class="lp-callout-body">
-
-<b>Pracownica:</b> Dzień dobry, w czym mogę pomóc?<br><b>Olena:</b> Dzień dobry. Chcę złożyć reklamację. Dwa tygodnie temu kupiłam u państwa termometr dla dziecka.<br><b>Pracownica:</b> Co się dzieje z termometrem?<br><b>Olena:</b> Od kilku dni nie pokazuje temperatury. Wymieniłam baterię, ale to nic nie dało.<br><b>Pracownica:</b> Rozumiem. Ma pani paragon?<br><b>Olena:</b> Niestety nie mam paragonu. Mam potwierdzenie płatności kartą w aplikacji banku. Może być?<br><b>Pracownica:</b> Tak, wystarczy. Proszę mi je pokazać… Dziękuję. Woli pani wymianę czy zwrot pieniędzy?<br><b>Olena:</b> Wolę wymianę na taki sam model, jeśli jest.<br><b>Pracownica:</b> Tego modelu nie mamy teraz na półce. Sprowadzimy go w ciągu trzech dni.<br><b>Olena:</b> A kto do mnie zadzwoni?<br><b>Pracownica:</b> Ja osobiście. Proszę zostawić numer telefonu.<br><b>Olena:</b> Dobrze, to mój numer. Dziękuję za pomoc!
-
-</div></aside>
-
-<b>Ключ до питань:</b> 1) termometr dla dziecka — nie pokazuje temperatury; 2) wymieniła baterię; 3) wymianę, trzy dni.
-
 ## 🔑 Ключі до питань до тексту
 
 1. Śpiworek i trzy pary skarpetek; przy sklepie na rogu Polnej, po siedemnastej.

@@ -34,15 +34,14 @@ teacherOf: pl-b1-group-18-ekologia
 | --- | --- | --- |
 | 0–5 | Розігрів | Учень порівнює себе й когось із родини: 3 речення з <i>a</i>, <i>natomiast</i>, <i>za to</i>. |
 | 5–35 | 5. Gramatyka cz. 2 + ćw. 5–8 | <i>chociaż / mimo że</i> → де стоїть, без <i>ale</i> → <i>mimo</i>  • D → речення ↔ іменник → три значення <i>chociaż</i> → винятки → пастки; вправи 5–8. |
-| 35–45 | 7. Słuchanie (e2) | 1 хв на читання тверджень. Читаєш репортаж двічі, різними голосами для журналіста, пані Беати й пана Збігнєва. Після перевірки — транскрипт. |
 | 45–80 | 6. c1–c4 | c1: спершу діалог-зразок, потім гра (ти — сусід, але з новими аргументами: «nie mam miejsca w kuchni»). c2: ти — водій, упертий, але готовий на компроміс наприкінці. c3: ти — подруга, яка хоче купити нову. c4: монолог + питання нижче. |
 | 80–90 | 8–9. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити ДЗ (e-mail про дерева). |
 
-<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1, Praktyka mówienia · ② Gramatyka cz. 1, ćw. 2–4, c1, c3 · ③ Gramatyka cz. 2, ćw. 5–8, e2, c2, c4, Podsumowanie, ДЗ.
+<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1, Praktyka mówienia · ② Gramatyka cz. 1, ćw. 2–4, c1, c3 · ③ Gramatyka cz. 2, ćw. 5–8, c2, c4, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
-- <b>Швидший:</b> e2 — одне прослуховування; у c2 вимагай <i>podczas gdy, wprawdzie… ale, a jednak</i>; у c4 — щонайменше дві різні конструкції допусту.
+- <b>Швидший:</b> у c2 вимагай <i>podczas gdy, wprawdzie… ale, a jednak</i>; у c4 — щонайменше дві різні конструкції допусту.
 - <b>Повільніший:</b> частина 1 — лише <i>a / ale</i> і <i>jednak</i>, <i>natomiast</i> і <i>podczas gdy</i> на розпізнавання; частина 2 — <i>chociaż</i> і <i>mimo</i> + 4–5 частих іменників (<i>deszczu, zimna, zmęczenia, wszystko</i>); c3 і c4 — одна задача на вибір.
 
 ---
@@ -73,29 +72,6 @@ teacherOf: pl-b1-group-18-ekologia
 
 ---
 
-## 🎧 e2: транскрипт і ключ
-
-Формат: державний іспит B1, завдання «tak / nie» (у LMS — кнопки «prawda / fałsz»), запис звучить <b>двічі</b>, твердження в порядку інформації. Читай як радіорепортаж: журналістка, пані Беата, пан Збігнєв — трохи різними голосами.
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Dziennikarka:</b> Magazyn Miejski, mówi Joanna Kret. W każdą pierwszą sobotę miesiąca w bibliotece na osiedlu Słoneczne Wzgórze działa kawiarenka naprawcza. Mieszkańcy przynoszą tu zepsute lampy, czajniki, tostery, a nawet ubrania. Naprawiają je wolontariusze, za darmo. Kto chce, może wrzucić kilka złotych do puszki — na herbatę i drobne części. Pomysł miała pani Beata Lis, emerytowana nauczycielka fizyki.<br><b>Pani Beata:</b> Zaczęliśmy dwa lata temu. Myślałam, że przyjdzie kilka osób, a przyszło czterdzieści! Najwięcej jest lamp i czajników, natomiast rowerów mniej, niż się spodziewałam, bo obok jest serwis rowerowy. Udaje się naprawić mniej więcej dwie rzeczy na trzy. Mimo że nie wszystko się udaje, ludzie wracają, bo tu można po prostu porozmawiać.<br><b>Dziennikarka:</b> Pan Zbigniew przyniósł dziś stare radio po ojcu.<br><b>Pan Zbigniew:</b> W sklepie powiedzieli mi, że naprawa się nie opłaca i że lepiej kupić nowe. A tu pan Marek wymienił jeden kabel i radio gra! Chociaż mam w telefonie wszystkie stacje, i tak wolę słuchać na tym starym radiu.<br><b>Dziennikarka:</b> Wolontariusze naprawiają prawie wszystko. Nie biorą tylko telefonów — z powodu baterii, które mogą być niebezpieczne. Następne spotkanie siódmego grudnia, od dziesiątej do czternastej.
-
-</div></aside>
-
-| № | Ключ | Пастка в записі |
-| --- | --- | --- |
-| 1 | F | «w każdą… sobotę» прозвучало, але «pierwszą sobotę miesiąca» |
-| 2 | P | «puszka» — добровільно, «kto chce» |
-| 3 | F | «kilka osób» — це очікування, прийшло 40 |
-| 4 | P | <i>natomiast rowerów mniej</i> — цільова граматика вирішує пункт |
-| 5 | P | перефраз: «naprawa się nie opłaca» = краще купити нове |
-| 6 | F | «naprawiają prawie wszystko» — але не телефони |
-
-Після перевірки випишіть з транскрипту: <i>a nawet, natomiast, mimo że, chociaż… i tak, z powodu</i> (повторення з №17).
-
----
-
 ## 🎤 c4: твої питання після монологу
 
 1. Co zrobić z osobami, które muszą dojeżdżać do centrum autem, np. do lekarza?
@@ -116,7 +92,7 @@ teacherOf: pl-b1-group-18-ekologia
 3. Тарас: авто 15 хв, тролейбус 40 хв (хоч до роботи 5 км); Максим — велосипед цілий рік, попри дощ і мороз, бо тролейбуси/велосипед без вихлопів.
 4. Пан Весьов — громадський город на подвір'ї (помідори, зелень, полуниця, компостер) попри протести водіїв; пані Моніка — фільтр і багаторазова пляшка замість купованої води; Тарас спитав про місячний квиток і вранці поїхав тролейбусом.
 
-<b>e1:</b> F · F · P · F · P · P. <b>e2:</b> F · P · F · P · P · F.<br><b>Podsumowanie</b> — відкриті відповіді; слухай <i>a</i> vs <i>ale</i>, <i>chociaż</i> без <i>ale</i>, <i>mimo</i> + родовий.
+<b>e1:</b> F · F · P · F · P · P.<br><b>Podsumowanie</b> — відкриті відповіді; слухай <i>a</i> vs <i>ale</i>, <i>chociaż</i> без <i>ale</i>, <i>mimo</i> + родовий.
 
 ---
 
@@ -171,5 +147,4 @@ Szanowni Państwo,<br>nazywam się Olena Kowalenko i mieszkam przy ulicy Lipowej
 - Картон від молока/соку — у жовтий — [Rzeczpospolita, 2025](https://www.rp.pl/biznes/art42153931-gdzie-wyrzucic-karton-po-mleku-nie-wszyscy-znaja-dobra-odpowiedz).
 - Тролейбуси в Любліні з 1953 р.; у Польщі — лише Люблін, Гдиня, Тихи — [Wikipedia](https://en.wikipedia.org/wiki/Trolleybuses_in_Poland) (офіційну сторінку MPK Lublin не відкривав).
 - c1: «оплата може зрости для всіх» — умовна ситуація. Підвищену ставку за несортування гміни реально встановлюють, але суми й процедуру я не перевіряв.
-- e2 вигаданий: osiedle Słoneczne Wzgórze, пані Беата, дати — умовні.
 - Фото в тексті: Nick Fewings, Zoshua Colah / Unsplash.

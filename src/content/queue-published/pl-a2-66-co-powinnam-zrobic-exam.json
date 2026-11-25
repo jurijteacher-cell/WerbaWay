@@ -2,7 +2,7 @@
   "lesson_id": "pl-a2-66-co-powinnam-zrobic",
   "exercise_type": "true-false",
   "title": "Jak na egzaminie A2",
-  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "instruction": "Czytanie w formacie egzaminu.",
   "estimated_minutes": 8,
   "blocks": [
     {
@@ -47,66 +47,6 @@
           "answer": false,
           "grammar_point": "czytanie",
           "explanation": "Zasada jest odwrotna: nie wolno wracać po ciemku, trzeba zacząć schodzić wcześniej."
-        }
-      ]
-    },
-    {
-      "block_id": "e2",
-      "exam_skill": "sluchanie",
-      "exercise_type": "multiple-choice",
-      "source": "pl-a2-66-co-powinnam-zrobic-comm-tasks.json#c1.model_dialogue",
-      "max_plays": 2,
-      "audio_url": "/audio/pl-a2-66-co-powinnam-zrobic-e2-dialog.mp3",
-      "title": "Słuchanie: rada przed wycieczką",
-      "instruction": "Usłyszysz rozmowę Oleny i jej mamy dwa razy. Słuchaj bez tekstu i wybierz poprawną odpowiedź.",
-      "items": [
-        {
-          "id": "e2-1",
-          "question": "Co pani Halina ma zrobić najpierw?",
-          "options": [
-            "kupić nowe buty",
-            "sprawdzić prognozę pogody",
-            "spakować duży plecak"
-          ],
-          "answer": "sprawdzić prognozę pogody",
-          "grammar_point": "listening:szczegol",
-          "explanation": "Olena zaczyna od pogody; buty i plecak są później i w innej formie."
-        },
-        {
-          "id": "e2-2",
-          "question": "Czy pani Halina musi kupić nowe buty?",
-          "options": [
-            "nie, wystarczą wygodne",
-            "tak, specjalne górskie",
-            "tak, bo ma tylko sandały"
-          ],
-          "answer": "nie, wystarczą wygodne",
-          "grammar_point": "listening:intencja",
-          "explanation": "Olena mówi: nie musisz kupować nowych. Sandały są tylko przykładem, czego nie zakładać."
-        },
-        {
-          "id": "e2-3",
-          "question": "O której w sobotę jest pociąg?",
-          "options": [
-            "o siódmej czterdzieści",
-            "o ósmej dziesięć",
-            "o szóstej"
-          ],
-          "answer": "o ósmej dziesięć",
-          "grammar_point": "listening:liczby",
-          "explanation": "Olena poprawia się: siódma czterdzieści to niedziela. O szóstej mama wstaje."
-        },
-        {
-          "id": "e2-4",
-          "question": "O co Olena prosi mamę?",
-          "options": [
-            "żeby nie szła sama",
-            "żeby napisała, który szlak wybiera",
-            "żeby wróciła do domu o piętnastej"
-          ],
-          "answer": "żeby napisała, który szlak wybiera",
-          "grammar_point": "listening:intencja",
-          "explanation": "Samej chodzić wolno. O piętnastej mama ma zacząć schodzić, a nie być w domu."
         }
       ]
     }

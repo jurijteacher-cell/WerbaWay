@@ -10,7 +10,7 @@ cover: https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-4.1
 
 <aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎯</span><div class="lp-callout-body">
 
-<b>Egzamin próbny telc B1·B2</b> — cała część pisemna, jak na prawdziwym egzaminie: słuchanie, czytanie, elementy językowe i e-mail. Teksty do słuchania przeczyta nauczyciel — każdy tylko raz, więc słuchanie rób na lekcji. Zaloguj się na konto Werba Way (e-mail i hasło) — wynik zapisze się na Twoim koncie. Wynik testu zobaczysz od razu, e-mail oceni nauczyciel.
+<b>Egzamin próbny telc B1·B2</b> — cała część pisemna, jak na prawdziwym egzaminie: słuchanie, czytanie, elementy językowe i e-mail. Nagrania do słuchania usłyszysz tylko raz — jak na egzaminie. Zaloguj się na konto Werba Way (e-mail i hasło) — wynik zapisze się na Twoim koncie. Wynik testu zobaczysz od razu, e-mail oceni nauczyciel.
 
 </div></aside>
 

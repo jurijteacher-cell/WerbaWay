@@ -22,10 +22,10 @@ teacherOf: pl-a2-78-zeby
 | 3–12 | 1. Czytanie + e1 | Учень читає план Олени. Після кожного пункту — «Po co?» → учень відповідає <i>Żeby…</i> без тексту. 4 питання усно, потім e1. |
 | 12–18 | 2. Słownictwo + ćw. 1 | Картки по групах; зупинись на <i>pożyczyć komuś / od kogoś</i> і <i>Jestem ci winna</i>. Потім g1. |
 | 18–38 | 3. Gramatyka + g2–g3 | <i>Dlaczego? / Po co?</i> на одній ситуації (5 хв), потім <i>żeby</i> + інфінітив (5 хв), <i>żeby nie</i> — 3 хв. g2–g3 разом. g4–g5 — якщо лишився час. |
-| 38–55 | 4. Słuchanie + c1, c2 | e2–e3 (2 відтворення, пауза 10 с), потім транскрипт: учень знаходить усі <i>żeby</i> і формули прохання. c1 → c2, ти — колега й «допитливий» співрозмовник. |
+| 38–55 | 4. c1, c2 | c1 → c2, ти — колега й «допитливий» співрозмовник. |
 | 55–60 | 5. Podsumowanie + ДЗ | Чекліст, повернення до розминки. Поясни письмо. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, <i>dlaczego / po co</i>, g2 · ② <i>żeby nie</i>, прохання, g3–g5, Słuchanie, c1, c2, Podsumowanie, ДЗ.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, <i>dlaczego / po co</i>, g2 · ② <i>żeby nie</i>, прохання, g3–g5, c1, c2, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -52,20 +52,6 @@ teacherOf: pl-a2-78-zeby
 1. Pyta, czy ktoś mógłby wziąć do domu kwiaty z kuchni. Idzie do sklepu, żeby kupić taśmę.
 
 <b>e1:</b> P · F · P · F · P.
-
----
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, `eleven_v4`): Olena — W1 `mQq2zdGT1zEfDbh8W95l`, pani Agnieszka — W2 `gHGjEjdr2LBds0XHTsvg`. Поки аудіо немає — читай діалог сам, двічі.
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Olena:</b> Pani Agnieszko, mam do Pani prośbę.<br><b>Pani Agnieszka:</b> Słucham, Olena.<br><b>Olena:</b> Czy mogłaby Pani wziąć na weekend kwiaty z kuchni? Wiem, że ma Pani samochód.<br><b>Pani Agnieszka:</b> Mogę, oczywiście. Ale po co je zabierać? Przecież w sobotę przyjedzie firma.<br><b>Olena:</b> Właśnie dlatego. Panowie będą nosić szafy przez kuchnię, więc chcę je zabrać, żeby ich nie zniszczyć.<br><b>Pani Agnieszka:</b> Rozumiem. Ile ich jest?<br><b>Olena:</b> Trzy duże i jeden mały, ten na oknie.<br><b>Pani Agnieszka:</b> Dobrze. Przyjadę w piątek o szóstej, żeby je zabrać. A dostanę coś za to? [laughs]<br><b>Olena:</b> Oczywiście! Upiekę sernik, żeby podziękować.<br><b>Pani Agnieszka:</b> Żartuję! Ale sernik chętnie zjem. A ja też mam prośbę: czy mogłabyś w poniedziałek przyjść wcześniej, żeby pomóc mi z dokumentami?<br><b>Olena:</b> Jasne. O której?<br><b>Pani Agnieszka:</b> O wpół do dziewiątej.
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 P · 2 F (w sobotę) · 3 P (3 + 1) · 4 F (w piątek o szóstej).<br><b>Ключ e3:</b> 1 upiecze sernik · 2 żeby pomóc z dokumentami · 3 o 8:30.<br><b>Пастки:</b> e2-3 — треба порахувати «trzy duże i jeden mały»; e3-3 — <i>o dziesiątej</i> з читання (усі приходять о 10), але Олена — о 8:30.
 
 ---
 

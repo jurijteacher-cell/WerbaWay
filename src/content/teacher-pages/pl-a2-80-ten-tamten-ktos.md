@@ -19,13 +19,13 @@ teacherOf: pl-a2-80-ten-tamten-ktos
 | Хв | Розділ | Що робимо |
 | --- | --- | --- |
 | 0–3 | Cele + розминка | Цілі вголос. Учень записує одну річ у кімнаті, яка не його. |
-| 3–16 | 1. Czytanie + t1, t2, e1 | Перше прослуховування з текстом (аудіо на сторінці, 1:40). Учень читає ще раз уголос перші два абзаци. t1 (хронологія) — сам; t2 (детектив) — разом, учень пояснює кожну відповідь цитатою з тексту. e1. |
+| 3–16 | 1. Czytanie + t1, t2, e1 | Учень читає текст, потім ще раз уголос перші два абзаци. t1 (хронологія) — сам; t2 (детектив) — разом, учень пояснює кожну відповідь цитатою з тексту. e1. |
 | 16–22 | 2. Słownictwo + g1 | Картки по групах; <i>czyj / czyja / czyje</i> — на трьох речах на столі. g1 — значення з контексту. |
 | 22–40 | 3. Gramatyka + g2–g3 | <i>Ten / tamten</i> — показуй речі руками (3 хв). Таблиця відмінків — лише Ms, N, D, B (7 хв), C — одним прикладом. Множина: <i>ci</i> vs <i>te</i> (3 хв). g2 → g3 (лист Касі: учень щоразу називає відмінок). g4–g5 — якщо лишився час. |
-| 40–55 | 4. Słuchanie + c1, c2 | e2–e3 (2 відтворення, пауза 10 с), потім транскрипт. c1 «Czyje to?» з реальними речами з твого столу. c2 «Zgadnij, o kim myślę» — 2 раунди. |
+| 40–55 | 4. c1, c2 | c1 «Czyje to?» з реальними речами з твого столу. c2 «Zgadnij, o kim myślę» — 2 раунди. |
 | 55–60 | 5. Podsumowanie + ДЗ | Чекліст, повернення до речі з розминки. Поясни нові вправи в ДЗ і письмо-загадку. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, t1, t2, e1, Słownictwo, g1, <i>ten / tamten</i>, g2 · ② відмінки, g3–g5, Słuchanie, c1, c2, Podsumowanie, ДЗ.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, t1, t2, e1, Słownictwo, g1, <i>ten / tamten</i>, g2 · ② відмінки, g3–g5, c1, c2, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -48,24 +48,6 @@ teacherOf: pl-a2-80-ten-tamten-ktos
 ## 🔑 Ключі до текстових завдань
 
 <b>t1 (хронологія):</b> 1 у п'ятницю чотири квітки → 2 Олена приходить о 8:30 → 3 кактус і записка → 4 приходить Kasia → 5 кухня, кава → 6 рахує квітки й розуміє.<br><b>t2 (детектив):</b> Томек — працює з дому в понеділки · пан Пйотр — у Гданську цього тижня · Kasia — прийшла о 9:00 і здивувалась · підказка — три квітки замість чотирьох · відповідь — <b>pani Agnieszka</b>.<br><b>e1:</b> F (3 поверх) · P · F · F · P.<br><b>g1:</b> zmienić miejsce · kogoś — nie wiemy kogo · imię i nazwisko napisane ręką · nie spodziewała się kaktusa · opiekować się czymś · po tym, jak firma zmieniła biuro.<br><b>g3 (лист Касі):</b> tym · tą · tego · tę · tym · tamtą · tej · tego.
-
----
-
-## 🎧 Аудіо
-
-<b>Читання</b> озвучено голосом Олени (W1), 6 фрагментів, пауза 0,8 с — плеєр стоїть на сторінці учня над текстом. Генерується сайтом сам: ElevenLabs → Supabase Storage (`src/content/audio/pl-a2-80-ten-tamten-ktos.json`).
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси: Olena — W1 `mQq2zdGT1zEfDbh8W95l`, pani Agnieszka — W2 `gHGjEjdr2LBds0XHTsvg` (ElevenLabs `eleven_v3`, генерує сайт).
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Olena:</b> Pani Agnieszko, mam do pani pytanie. Czy to pani zostawiła ten kaktus na moim biurku?<br><b>Agnieszka:</b> Kaktus? Jaki kaktus? (śmieje się) No dobrze, to ja. Jak pani zgadła?<br><b>Olena:</b> W piątek w kuchni stały cztery kwiatki, a dziś są trzy. I ta kartka była napisana zielonym długopisem.<br><b>Agnieszka:</b> Ach, mój zielony długopis! Wszyscy w biurze wiedzą, że piszę tylko takimi.<br><b>Olena:</b> Bardzo dziękuję. To bardzo miły prezent.<br><b>Agnieszka:</b> Proszę bardzo. Mam ten kaktus już dziesięć lat. Niech teraz pomaga pani w projekcie.<br><b>Olena:</b> Obiecuję, że będę o niego dbać. A czyj jest ten kubek z kotem? Był w kartonie z moimi rzeczami.<br><b>Agnieszka:</b> To kubek Tomka. Jego rzeczy są w tamtym kartonie przy drzwiach.<br><b>Olena:</b> A te dwa nowe krzesła w moim pokoju?<br><b>Agnieszka:</b> Te są dla kogoś nowego. W środę przychodzi do nas ktoś z Gdańska — pani Ewa, nowa koleżanka do pani projektu.<br><b>Olena:</b> Naprawdę? To muszę przygotować dla niej coś miłego.<br><b>Agnieszka:</b> Może drugi kaktus? (śmieje się)
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 F (спершу жартує) · 2 P · 3 F (кухоль Томка) · 4 P.<br><b>Ключ e3:</b> 1 dziesięć lat · 2 w kartonie przy drzwiach · 3 nową koleżanką z Gdańska.<br><b>Пастки:</b> e2-1 — <i>No dobrze, to ja</i> звучить одразу після жарту; e3-1 — <i>w piątek</i> є в діалозі, але про квітки, не про кактус.
 
 ---
 

@@ -45,8 +45,6 @@ Slajdy gramatyczne — część 2
 
 <i>&#91;Młoda kobieta z walizką na peronie — zdjęcie wkrótce&#93;</i>
 
-<i>&#91;Audio — wkrótce&#93;</i>
-
 Dokładnie rok temu wysiadłam z pociągu na dworcu we Wrocławiu z jedną walizką i dużym plecakiem. Nie znałam tu nikogo oprócz koleżanki ze studiów, która obiecała, że pomoże mi na początku. Dziś piszę ten tekst w mojej własnej kuchni, z kubkiem herbaty w ręku, i trochę nie wierzę, że to wszystko wydarzyło się tak szybko.
 
 Pierwszy miesiąc był trudny. Mieszkałam u koleżanki na kanapie i codziennie szukałam pracy i mieszkania. Wysyłałam CV do firm, banków i hoteli, ale długo nikt nie odpowiadał. Wieczorami spacerowałam nad Odrą i liczyłam krasnale — małe figurki z brązu, które stoją w całym mieście. Podobno jest ich już ponad tysiąc, więc szybko przestałam liczyć.

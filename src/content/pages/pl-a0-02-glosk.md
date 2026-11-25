@@ -24,8 +24,6 @@ notion: https://app.notion.com/p/02-Mi-kkie-g-oski-i-3fd96e03c7c8817687f5f2cade6
 
 <b>Rozgrzewka.</b> Przeczytaj na głos: <b>cześć · źle · łóżko</b>. Zapisz jedno słowo: które jest najtrudniejsze? Wrócimy do niego na końcu lekcji.
 
-<audio controls preload="none" src="https://werba-way.vercel.app/audio/pl-a0-02-czytanie.mp3"></audio>
-
 ### Noc w Krakowie
 
 Kraków Główny. Noc. Ciemno i zimno. Pociąg, peron, wyjście. Olena: walizka, siatka, bilet.
@@ -73,7 +71,6 @@ Mów na głos. Wystarczą słowa z lekcji 1 i 2, Twoje imię i dwa zwroty: <b>Je
 
 - Przeczytaj: <b>cześć, źle, dzień, noc, łóżko</b>. Gdzie są miękkie głoski?
 - Powiedz: <b>Jestem …</b> (Twoje imię). Przeliteruj imię.
-- Nauczyciel mówi słowo: <b>tak</b> czy <b>nie</b>? Odpowiedz jednym słowem.
 - Dobrze czy źle? Nauczyciel pokazuje: kawa, herbata, zimno, noc, tramwaj. Ty mówisz: <b>Dobrze!</b> albo <b>Źle!</b>
 - Przeczytaj nazwy miast: <b>Łódź, Poznań, Gdańsk, Kraków, Wrocław</b>. Gdzie jest ł, a gdzie ń?
 - Twoja ulica: przeczytaj nazwę i przeliteruj ją.
@@ -82,9 +79,7 @@ Mów na głos. Wystarczą słowa z lekcji 1 i 2, Twoje imię i dwa zwroty: <b>Je
 
 ## 5. Zadania komunikacyjne
 
-Najpierw posłuchaj rozmowy: Olena pierwszy raz dzwoni do pani Ewy. Nauczyciel zada trzy krótkie pytania.
-
-<audio controls preload="none" src="https://werba-way.vercel.app/audio/pl-a0-02-c1-dialog.mp3"></audio>
+Najpierw przeczytaj rozmowę: Olena pierwszy raz dzwoni do pani Ewy.
 
 Teraz Twoja kolej. Dwie sytuacje: telefon i taksówka. Odwróć kartę: gotowe zwroty są na karcie.
 
@@ -124,19 +119,15 @@ Sprawdź, czy umiesz to, co obiecaliśmy na początku:
 
 ## 8. Praca domowa
 
-Trzy części: ćwiczenia, shadowing i dyktando.
+Dwie części: ćwiczenia i czytanie na głos.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a0-02-glosk/hw">
 Praca domowa
 </embed>
 
-### Shadowing
+### Czytanie na głos
 
-Posłuchaj rozmowy Oleny z panią Ewą (zadanie 1). Słuchaj jednej kwestii, zatrzymaj nagranie i powtórz na głos. Potem nagraj całą rozmowę: Ty mówisz za Olenę, ale ze <b>swoim</b> imieniem i <b>swoją</b> ulicą. Wyślij nagranie nauczycielowi.
-
-### Dyktando
-
-Nauczyciel wyśle Ci nagranie: <b>pięć nowych słów</b>. W każdym słowie jest <b>ś, ć, ź, ń</b> albo <b>ł</b>. Posłuchaj i napisz słowa. Zrób zdjęcie kartki i wyślij nauczycielowi.
+Przeczytaj rozmowę Oleny z panią Ewą (zadanie 1). Czytaj jedną kwestię po drugiej — na głos. Potem nagraj całą rozmowę: Ty mówisz za Olenę, ale ze <b>swoim</b> imieniem i <b>swoją</b> ulicą. Wyślij nagranie nauczycielowi.
 
 ---
 

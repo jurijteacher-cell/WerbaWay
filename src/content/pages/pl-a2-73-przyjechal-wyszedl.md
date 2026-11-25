@@ -185,14 +185,6 @@ Słownictwo — karty
 
 ## 🎭 4. Zadania komunikacyjne
 
-### 🎧 Słuchanie jak na egzaminie
-
-W piątek wieczorem pan Piotr dzwoni do Oleny z samochodu. Posłuchaj rozmowy dwa razy — bez tekstu. Najpierw zaznacz: prawda czy fałsz, potem odpowiedz na pytania a, b, c.
-
-<embed source="https://werba-way.vercel.app/embed/pl-a2-73-przyjechal-wyszedl/exam?blocks=e2-e3">
-Słuchanie — jak na egzaminie
-</embed>
-
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🧰</span><div class="lp-callout-body">
 
 <b>Warto użyć</b>

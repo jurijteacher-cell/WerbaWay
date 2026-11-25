@@ -33,12 +33,11 @@ teacherOf: pl-b1-group-r1-powtorka
 | --- | --- | --- |
 | 0–5 | Розігрів | «Temu / za»: ти називаєш подію (переїзд, школа, наступна відпустка), учень відповідає з <i>temu</i> або <i>za</i>. |
 | 5–25 | 3. Mapa: вид, рух, займенники + ćw. 3–5 | Вправи 3–5. На ćw. 5 учень читає записку вголос цілою. |
-| 25–35 | 4. Słuchanie (e2) | 1 хв на питання; вмикаєш аудіо з Notion двічі. Потім — транскрипт. |
 | 35–65 | 5. Speaking marathon | 6 карток × 1 хв + 2–3 хв розбору після кожної (записуй помилки, не перебивай). |
 | 65–77 | 6. Mini-test (e3) | 10 хв без нотаток, 2 хв — розбір. |
 | 77–90 | 7–8. Podsumowanie + ДЗ | Чекліст «umiem / jeszcze nie», повернення до слова з розминки, пояснити письмо. |
 
-<b>Формат 3 × 60:</b> ① Czytanie, e1, Słownictwo, Mapa (місце, орудний, родовий), ćw. 1 · ② Mapa (множина, <i>-eć</i>, дати, вид, рух, займенники), ćw. 2–5 · ③ e2, Speaking marathon, Mini-test, Podsumowanie, ДЗ.
+<b>Формат 3 × 60:</b> ① Czytanie, e1, Słownictwo, Mapa (місце, орудний, родовий), ćw. 1 · ② Mapa (множина, <i>-eć</i>, дати, вид, рух, займенники), ćw. 2–5 · ③ Speaking marathon, Mini-test, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -57,27 +56,6 @@ teacherOf: pl-b1-group-r1-powtorka
 - <b>Вид.</b> Сигнали на дошці — головне. <i>Będę + dk</i> — найчастіша помилка блоку.
 - <b>Рух.</b> <i>Dojeżdżać</i> (регулярно) vs <i>pojechać</i> (раз). <i>Odprowadzić</i> — нове слово, ним учень назве «провести на вокзал».
 - <b>Займенники.</b> Після прийменника — завжди <i>n-</i>: <i>do niego, z nią, o nich</i>.
-
----
-
-## 🎧 Транскрипт e2 (аудіо в Notion; голоси: Olena — Agnieszka, Taras — Marcel)
-
-<b>Taras:</b> Halo, Olenko? Jesteś już na lotnisku?
-<b>Olena:</b> Tak, Ira mnie przywiozła. Obie płakałyśmy przy wejściu jak dzieci.
-<b>Taras:</b> Wiedziałem! Słuchaj, mam dla ciebie dwie wiadomości: dobrą i złą.
-<b>Olena:</b> Zacznij od złej.
-<b>Taras:</b> Nocny autobus z lotniska do Lublina jest odwołany. Ale nie martw się — Piotrek przyjedzie po ciebie samochodem.
-<b>Olena:</b> Piotrek? Przecież to prawie dwieście kilometrów!
-<b>Taras:</b> Sam zaproponował. I tak jedzie do Warszawy po nowy sprzęt na ryby.
-<b>Olena:</b> Kochany. A dobra wiadomość?
-<b>Taras:</b> Maksym dostał piątkę ze sprawdzianu z matematyki. Pierwszy raz w tym roku!
-<b>Olena:</b> Brawo! A jak wasze kanapki?
-<b>Taras:</b> Wczoraj w ogóle nie gotowaliśmy. Pani Monika zaprosiła nas do siebie na obiad i ugotowała barszcz.
-<b>Olena:</b> Złota kobieta. Kupię jej tu coś na lotnisku.
-<b>Taras:</b> Kup jej syrop klonowy. Mówiła, że nigdy go nie próbowała.
-<b>Olena:</b> Dobrze. Samolot startuje o osiemnastej, w Warszawie będę jutro rano, o ósmej.
-
-<b>Ключі e2:</b> 1 przyjaciółka · 2 nocny autobus nie pojedzie · 3 sprzęt na ryby · 4 obiad u sąsiadki · 5 jutro o ósmej rano.
 
 ---
 

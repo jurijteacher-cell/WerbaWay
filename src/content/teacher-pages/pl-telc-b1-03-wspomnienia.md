@@ -33,15 +33,14 @@ moduleTitle: Іспит telc B1
 | --- | --- | --- |
 | 0–18 | 4. Gramatyka cz. 1 + ćw. 2–4 | Утворення → однина → множина → <i>-li / -ły</i> → <i>-eć</i> → <i>się</i>. Вправи 2–4 разом на екрані. |
 | 18–30 | 5. Gramatyka cz. 2 + ćw. 5–7 | Вирази часу → зв'язки → Pan/Pani → винятки → пастки. Вправи 5–6 разом, 7 (оповідь) — самостійно. |
-| 30–36 | 7. Słuchanie (e2) | 1 хв на питання, ти читаєш діалог нижче двічі, двома голосами. Перевірка + де були пастки. |
 | 36–55 | 6. c1–c3 | c1 — учень описує фото (своє з телефона або будь-яке старе з інтернету); ти питаєш, як у діалозі e2. c2 — ти старий однокласник, запитуй на <i>ty</i>, щоб учень чув <i>-łeś / -łaś</i>. c3 — таймер 1:30, потім 2 питання нижче. |
 | 55–60 | 8–9. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити ДЗ (e-mail Маркові). |
 
-<b>Формат 1 × 90 + ДЗ:</b> Czytanie, e1, Słownictwo, ćw. 1, Praktyka (скорочено) · Gramatyka cz. 1–2, з вправ в уроці лише 3 і 6 (решта — додому), e2, c1, c3. c2 — на наступне заняття.
+<b>Формат 1 × 90 + ДЗ:</b> Czytanie, e1, Słownictwo, ćw. 1, Praktyka (скорочено) · Gramatyka cz. 1–2, з вправ в уроці лише 3 і 6 (решта — додому), c1, c3. c2 — на наступне заняття.
 
 ### Учень швидший / повільніший
 
-- <b>Швидший:</b> e2 — одне прочитання, як на telc; у c2 — проси розповісти історію з <i>najpierw, potem, nagle, w końcu</i>; у c3 — 2 хв і обов'язково порівняння «тоді / тепер».
+- <b>Швидший:</b> у c2 — проси розповісти історію з <i>najpierw, potem, nagle, w końcu</i>; у c3 — 2 хв і обов'язково порівняння «тоді / тепер».
 - <b>Повільніший:</b> блок «Pan, pani, państwo» лише показати; з вправ частини 2 — 5 і 6; c3 — за опорними словами з чекліста, 1 хв.
 
 ---
@@ -58,28 +57,6 @@ moduleTitle: Іспит telc B1
 - <b>Pan / Pani.</b> Місток до формального регістру іспиту: екзаменатор питає <i>Gdzie pani się wychowywała?</i> — учень має почути, що це про неї.
 - <b>Винятки.</b> <i>szedł / szła / szli</i> — найчастіша помилка (<i>idł</i>). <i>jadł → jedli</i> — так само, як <i>miał → mieli</i>.
 - <b>Пастки.</b> <i>ja był</i> і <i>było mi … lat</i> — ловити на слух постійно; <i>urodziłem się</i>, а не <i>rodziłem się</i> — тема виду, яку відкриваємо на наступному уроці.
-
----
-
-## 🎧 e2: діалог (читаєш ти) і ключ
-
-Формат: telc-light, діалог + 5 × MC, два прочитання (блок 1 курсу). Аудіо ElevenLabs ще не згенероване; коли з'явиться — голоси M2 (Tomasz) і W2 (Ola).
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Ola:</b> Co to za zdjęcie? Wygląda na bardzo stare.<br><b>Tomasz:</b> Z obozu harcerskiego nad jeziorem. Miałem wtedy dwanaście lat.<br><b>Ola:</b> Który to ty? Ten wysoki chłopak w czapce?<br><b>Tomasz:</b> Nie, ten mały z gitarą. Wysoki to mój kuzyn Paweł. Pojechaliśmy tam razem.<br><b>Ola:</b> Długo tam byliście?<br><b>Tomasz:</b> Trzy tygodnie. Spaliśmy w namiotach, po cztery osoby.<br><b>Ola:</b> W namiotach? A co jedliście?<br><b>Tomasz:</b> Gotowaliśmy sami, na ognisku. Raz przypaliłem zupę i nikt nie chciał jej jeść.<br><b>Ola:</b> A gitara? Umiałeś już wtedy grać?<br><b>Tomasz:</b> Jeszcze nie. Nauczył mnie instruktor, wieczorami przy ognisku. Teraz gram w zespole.<br><b>Ola:</b> A z Pawłem dalej się przyjaźnicie?<br><b>Tomasz:</b> Tak, ale on mieszka w Norwegii. Widzimy się raz w roku, w święta.<br><b>Ola:</b> Pojechałbyś jeszcze raz na taki obóz?<br><b>Tomasz:</b> Jako dziecko — od razu. Teraz chyba wolę hotel.
-
-</div></aside>
-
-| № | Ключ | Пастка в записі |
-| --- | --- | --- |
-| 1 | dwanaście | «trzy tygodnie», «po cztery osoby» |
-| 2 | kuzynem Tomasza | Томаш — малий з гітарою; інструктор з'являється пізніше |
-| 3 | w namiotach | «wolę hotel» — це про сьогодні |
-| 4 | Tomasz ją przypalił | «nikt nie chciał jej jeść» — тобто не смакувала |
-| 5 | na obozie, przy ognisku | «gram w zespole» — тепер; Норвегія — де живе Павел |
-
-Після перевірки — хай учень перекаже діалог від 3-ї особи: <i>Tomasz miał dwanaście lat. Spali w namiotach…</i> — тренування <i>-li</i>.
 
 ---
 

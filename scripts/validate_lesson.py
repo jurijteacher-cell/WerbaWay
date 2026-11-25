@@ -151,8 +151,8 @@ def main():
             mode = c1.get("mode")
             if mode == "read-then-play":
                 rep.ok("c1 mode: read-then-play (без AUDIO)")
-            elif mode == "listen-then-play" and "[AUDIO:" not in body:
-                rep.warn("c1 mode listen-then-play, але в .md немає [AUDIO:]")
+            elif mode == "listen-then-play":
+                rep.err("c1 mode listen-then-play заборонений: аудіювання лише в екзаменах (ставте read-then-play)")
 
     # ---------- id ----------
     seen_ids = {}

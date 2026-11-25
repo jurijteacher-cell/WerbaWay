@@ -108,24 +108,6 @@ The dictionary gives the masculine form (zmęczony) — always change it for you
 
 ---
 
-## 🎧 Діалог-зразок до c1 (читаєш ти, двічі)
-
-Перед читанням дай 3 питання. Вона не бачить тексту.
-
-<aside class="lp-callout" data-tone="purple"><span class="lp-callout-icon" aria-hidden="true">🟣</span><div class="lp-callout-body">
-
-<b>Właściciel:</b> Halo, słucham?<br><b>Klientka:</b> Dzień dobry, dzwonię w sprawie mieszkania na Krzykach. Czy jest jeszcze wolne?<br><b>Właściciel:</b> Tak, jest wolne.<br><b>Klientka:</b> Jakie jest to mieszkanie? Duże?<br><b>Właściciel:</b> Nie bardzo duże, ma czterdzieści metrów. Ale jest jasne i ciche.<br><b>Klientka:</b> A kuchnia? Jest nowoczesna?<br><b>Właściciel:</b> Tak, kuchnia jest nowa, a łazienka jest po remoncie.<br><b>Klientka:</b> Jest balkon?<br><b>Właściciel:</b> Jest. Mały, ale słoneczny.<br><b>Klientka:</b> A ile wynosi czynsz?<br><b>Właściciel:</b> Dwa tysiące dwieście złotych plus media.<br><b>Klientka:</b> Dobrze. Czy mogę zobaczyć mieszkanie jutro?<br><b>Właściciel:</b> Oczywiście, zapraszam o piątej.
-
-</div></aside>
-
-<b>Питання і ключі:</b>
-
-1. Jakie jest mieszkanie? → <b>nieduże (40 m), jasne i ciche</b>
-1. Ile kosztuje? → <b>2200 zł plus media</b>
-1. Kiedy klientka zobaczy mieszkanie? → <b>jutro o piątej</b>
-
----
-
 ## 🔑 Ключі до Pytań do tekstu
 
 1. Nie jest duże, ale jest jasne i ciepłe; kuchnia jest nowoczesna, sypialnia cicha.

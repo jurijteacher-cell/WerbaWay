@@ -24,15 +24,14 @@ teacherOf: pl-a2-53-z-kim-pracuje
 | 12–17 | Pytania + e1 | 4 питання усно, потім e1 самостійно. |
 | 17–24 | 2. Słownictwo + ćw. 1 | Картки по групах, потім g1 (з'єднати). Зупинись на <i>stanowisko</i> (= посада, не «становище»), <i>prowadzić naradę</i> (= вести, не «водити»), <i>zadowolony z</i> (пастка — повернемось на граматиці). |
 | 24–42 | 3. Gramatyka + g2–g3 | Іменник → прикметник → <i>kim jesteś</i> → прийменники місця → дієслова → займенники → винятки → пастки. g2 і g3 разом на екрані. |
-| 42–48 | 4. Słuchanie (e2–e3) | Аудіо в плеєрі, 2 відтворення, перед цим 30 с на читання пунктів. Після перевірки — транскрипт нижче, шукаємо всі форми орудного. |
 | 48–57 | 4. c1 (+ c2) | c1: ти — керівник, учень — новий працівник. Вигадай конкретику: дві особи, два завдання, нарада переноситься. c2 — якщо лишився час, інакше в ДЗ усно. |
 | 57–60 | 5. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити ДЗ. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, граматика до прийменників місця, g2 · ② решта граматики, g3–g5, Słuchanie, c1, c2, Podsumowanie, ДЗ.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, граматика до прийменників місця, g2 · ② решта граматики, g3–g5, c1, c2, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
-- <b>Швидший:</b> g4–g5 на уроці; e2–e3 — одне відтворення; у c1 говори швидше й додай зміну плану («ale nie z Magdą, tylko z panią Danutą»); c2 з описом трьох людей на справжньому фото з телефону учня.
+- <b>Швидший:</b> g4–g5 на уроці; у c1 говори швидше й додай зміну плану («ale nie z Magdą, tylko z panią Danutą»); c2 з описом трьох людей на справжньому фото з телефону учня.
 - <b>Повільніший:</b> таблицю займенників (<i>z nim, z nią</i>) не пояснюй заново — це повторення з 52, просто прочитай; винятки — лише <i>z kolegą</i>; g4–g5 — у домашку; c2 — пропусти.
 
 ---
@@ -48,29 +47,6 @@ teacherOf: pl-a2-53-z-kim-pracuje
 - <b>Дієслова.</b> <i>Zajmować się / interesować się</i> — як в українській «займатися / цікавитися чим». <i>Jechać czym</i> — пряма паралель.
 - <b>Винятки.</b> <i>Kolega → z kolegą</i> — учні часто кажуть <i>z kolegiem</i>. <i>Księgowa</i> відмінюється як прикметник — у курсі вона ще трапиться.
 - <b>Пастки.</b> Прочитай українську колонку вголос. Найбільше «ого» викликає <i>zadowolona z pracy</i>.
-
----
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: telc-light, частина 2 (діалог → prawda/fałsz + a/b/c), уроки непарні — telc (AUDIO&#95;EXAM&#95;SPEC §3.2). Запис звучить <b>двічі</b>. Голоси: Olena — W1 Agnieszka (<code>mQq2zdGT1zEfDbh8W95l</code>), pan Piotr — M2 Friday (<code>bwhymd1UcFEihyvPSEoR</code>). Файл: <code>public/audio/pl-a2-53-z-kim-pracuje-e2-dialog.mp3</code> — <b>ще не згенерований</b>; поки його немає, читай діалог сам (двічі, у природному темпі).
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Olena:</b> Panie Piotrze, ma Pan chwilę? Mam kilka pytań po naradzie.<br><b>Pan Piotr:</b> Oczywiście, proszę usiąść. O co chodzi?<br><b>Olena:</b> Z kim będę pracować nad zimowym katalogiem? Z Tomkiem?<br><b>Pan Piotr:</b> Nie, Tomek do jutra jest w Zakopanem z grupą. Będzie Pani pracować z Magdą z działu sprzedaży.<br><b>Olena:</b> Dobrze. A gdzie siedzi Magda? Jeszcze nie znam dobrze biura.<br><b>Pan Piotr:</b> Jej biurko stoi między drukarką a oknem, pod dużym kalendarzem.<br><b>Olena:</b> Aha, już wiem. A kto zajmuje się naszą stroną internetową?<br><b>Pan Piotr:</b> Na razie Bartek z IT. Ale od stycznia będzie się nią zajmować Pani.<br><b>Olena:</b> Ja? Super, bardzo się cieszę! A kiedy jest następna narada?<br><b>Pan Piotr:</b> Zwykle w poniedziałek o dziewiątej. Ale w przyszłym tygodniu wyjątkowo we wtorek, bo w poniedziałek mam szkolenie.
-
-</div></aside>
-
-| № | Ключ | Пастка в записі |
-| --- | --- | --- |
-| e2-1 | fałsz — з Магдою | Olena сама пропонує Томка |
-| e2-2 | prawda | «між принтером і вікном» — додаткова деталь |
-| e2-3 | prawda | «od stycznia — Pani» стосується майбутнього |
-| e3-1 | w Zakopanem | dział sprzedaży — Магди; szkolenie — пана Пйотра; «do jutra» |
-| e3-2 | od stycznia | «do jutra» і «w przyszłym tygodniu» прозвучали в інших репліках |
-| e3-3 | we wtorek | «zwykle w poniedziałek o dziewiątej»; «w poniedziałek mam szkolenie» |
-
-Після перевірки випишіть з транскрипту орудний: <i>nad zimowym katalogiem, z Tomkiem, z grupą, z Magdą, między drukarką a oknem, pod dużym kalendarzem, (zajmuje się) naszą stroną, nią</i>. Діалог закриває всі 5 пунктів чекліста c1.
 
 ---
 

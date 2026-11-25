@@ -37,7 +37,7 @@ teacherOf: pl-b1-group-02-u-lekarza
 | 75–85 | 4. Zadania: c3, c4 | Аптека й телефон шефу — тепер зі свідомим родовим: <i>szukam czegoś na…, nie dam rady…, do piątku</i>. |
 | 85–90 | 7–8. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити ДЗ. |
 
-<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1 · ② Praktyka mówienia, e2, c1, c2, Gramatyka cz. 1 · ③ Gramatyka cz. 2, c3, c4, Podsumowanie, ДЗ.
+<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1 · ② Praktyka mówienia, c1, c2, Gramatyka cz. 1 · ③ Gramatyka cz. 2, c3, c4, Podsumowanie, ДЗ.
 
 ### Група швидша / повільніша
 
@@ -59,18 +59,6 @@ teacherOf: pl-b1-group-02-u-lekarza
 - <b>Przyimki.</b> <i>do, z, u, od</i> вже були в минулій лекції в стовпчику «Skąd?» — тут додаємо <i>bez, dla</i>. <i>Z apteki</i> (місце) vs <i>od lekarza</i> (людина).
 - <b>Zaimki.</b> Тільки форми з прийменником: <i>u mnie, dla niego, bez nich</i>. Позицію <i>go / jego / niego</i> не розбираємо — це лекція №8.
 - <b>Pułapki.</b> Прочитай українську колонку вголос — учні самі скажуть, як «просилося». На <i>nudzi mnie / mdli mnie</i> зазвичай сміх — використай його.
-
----
-
-## 🎧 Діалог для e2 (читаєш двічі, учні без тексту)
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Rejestracja:</b> Przychodnia „Zdrowie”, rejestracja, słucham.<br><b>Pacjent:</b> Dzień dobry, nazywam się Iwan Kowalczuk. Chciałbym zapisać się do lekarza rodzinnego.<br><b>Rejestracja:</b> Jest pan naszym pacjentem?<br><b>Pacjent:</b> Tak, jestem zapisany do doktora Malinowskiego.<br><b>Rejestracja:</b> Co panu dolega?<br><b>Pacjent:</b> Od trzech dni mam kaszel i gorączkę, a dziś rano zaczęło mnie boleć ucho.<br><b>Rejestracja:</b> Do doktora Malinowskiego na dziś nie ma już wolnych terminów. Może być doktor Wójcik o jedenastej czterdzieści?<br><b>Pacjent:</b> O jedenastej jestem w pracy… Czy jest coś po piętnastej?<br><b>Rejestracja:</b> Po piętnastej przyjmuje tylko doktor Malinowski, ale dopiero w czwartek.<br><b>Pacjent:</b> To za długo. Wezmę tę wizytę o jedenastej czterdzieści, zwolnię się z pracy.<br><b>Rejestracja:</b> Dobrze. Proszę przyjść dziesięć minut wcześniej i wziąć ze sobą dowód osobisty.<br><b>Pacjent:</b> Czy mam przynieść też stare wyniki badań?<br><b>Rejestracja:</b> Jeśli ma pan wyniki z ostatniego roku, to tak, proszę je zabrać.<br><b>Pacjent:</b> Dobrze, dziękuję bardzo. Do widzenia.
-
-</div></aside>
-
-Ключ e2: kaszel, gorączka i ból ucha · na dziś nie ma u niego terminów · o jedenastej czterdzieści · dowód osobisty i stare wyniki. Після e2 — c1 з іншими деталями (дитина, висипка, вибір між 8:00 і 15:30).
 
 ---
 

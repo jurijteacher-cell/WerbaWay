@@ -201,14 +201,6 @@ W poprzedniej lekcji mówiliśmy wprost: <i>Weź kurtkę!</i> Dziś to samo powi
 
 ## 🎭 5. Zadania komunikacyjne
 
-### 🎧 Słuchanie jak na egzaminie
-
-Pani Halina pyta córkę o radę przed wycieczką. Posłuchaj rozmowy dwa razy — bez tekstu — i odpowiedz na pytania. Tekst rozmowy zobaczysz po sprawdzeniu.
-
-<embed source="https://werba-way.vercel.app/embed/pl-a2-66-co-powinnam-zrobic/exam?blocks=e2">
-Słuchanie — jak na egzaminie
-</embed>
-
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🧰</span><div class="lp-callout-body">
 
 <b>Warto użyć</b>

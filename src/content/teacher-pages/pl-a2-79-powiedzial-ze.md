@@ -22,10 +22,10 @@ teacherOf: pl-a2-79-powiedzial-ze
 | 3–12 | 1. Czytanie + e1 | Учень читає повідомлення Олени. Для кожного <i>powiedział / zapytał</i> — «що він сказав дослівно?» (учень відновлює пряму мову). 4 питання усно, потім e1. |
 | 12–18 | 2. Słownictwo + ćw. 1 | Картки по групах; зупинись на <i>zapytać kogo</i> і <i>kazać komu</i>. Потім g1. |
 | 18–38 | 3. Gramatyka + g2–g3 | <i>Powiedział, że</i> (5 хв, без зміни часу!), <i>zapytał, czy / kiedy</i> (5 хв), зміна особи — таблиця на дошці (5 хв). g2–g3 разом. g4–g5 — якщо лишився час. |
-| 38–55 | 4. Słuchanie + c1, c2 | e2–e3 (2 відтворення, пауза 10 с), потім транскрипт: учень переказує 3 репліки мами в непрямій мові. c1 («głuchy telefon») → c2, ти — друг. |
+| 38–55 | 4. c1, c2 | c1 («głuchy telefon») → c2, ти — друг. |
 | 55–60 | 5. Podsumowanie + ДЗ | Чекліст, повернення до розминки. Поясни письмо. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, <i>powiedział, że</i>, <i>zapytał, czy</i>, g2 · ② зміна особи, дієслова мовлення, g3–g5, Słuchanie, c1, c2, Podsumowanie, ДЗ.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, <i>powiedział, że</i>, <i>zapytał, czy</i>, g2 · ② зміна особи, дієслова мовлення, g3–g5, c1, c2, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -52,20 +52,6 @@ teacherOf: pl-a2-79-powiedzial-ze
 1. Że Olena powinna się zgodzić, bo to świetna szansa.
 
 <b>e1:</b> P · F · F · P · P.
-
----
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, `eleven_v4`): mama (pani Halina) — `cnYygtdARUZ1LhB2crKx`, Olena — W1 `mQq2zdGT1zEfDbh8W95l`. Поки аудіо немає — читай діалог сам, двічі.
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Mama:</b> Olena, czytałam twoją wiadomość! Tata pyta, czy ten projekt jest dobrze płatny.<br><b>Olena:</b> Pan Piotr powiedział, że dostanę dwadzieścia procent więcej.<br><b>Mama:</b> Dwadzieścia procent! A ile razy w miesiącu musisz jeździć do Gdańska?<br><b>Olena:</b> Raz w miesiącu, na dwa dni. Pan Piotr zapytał, czy mi to nie przeszkadza.<br><b>Mama:</b> A przeszkadza?<br><b>Olena:</b> Nie bardzo. Lubię pociągi. Ale boję się, że nie dam rady. To duży projekt.<br><b>Mama:</b> Kochanie, pamiętasz, co zawsze mówiła babcia? Kto nie ryzykuje, ten nie pije szampana!<br><b>Olena:</b> [laughs] Pamiętam.<br><b>Mama:</b> Tata mówi, że jesteś mądra i że sobie poradzisz. I ja też tak myślę.<br><b>Olena:</b> Dziękuję, mamo. Kasia powiedziała to samo.<br><b>Mama:</b> To powiedz panu Piotrowi, że się zgadzasz!<br><b>Olena:</b> Dobrze. Jutro rano mu powiem.
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 P · 2 F (raz w miesiącu) · 3 P · 4 F (jutro rano).<br><b>Ключ e3:</b> 1 20 procent · 2 Kto nie ryzykuje, ten nie pije szampana · 3 że jest mądra i sobie poradzi.<br><b>Пастки:</b> e2-2 — <i>na dwa dni</i> звучить поруч із <i>raz w miesiącu</i>; e3-1 — <i>dwadzieścia</i> легко сплутати з «200 złotych».
 
 ---
 

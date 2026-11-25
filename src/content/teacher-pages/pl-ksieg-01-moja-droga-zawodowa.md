@@ -14,7 +14,7 @@ notion: https://app.notion.com/p/01-Moja-droga-zawodowa-3f696e03c7c881ff9ecaf23c
 | Хв | Розділ | Що робимо |
 | --- | --- | --- |
 | 0–3 | Cele + rozgrzewka | Цілі уроку, слово з розминки |
-| 3–13 | 1. Czytanie | Аудіо → читає сама → 4 питання |
+| 3–13 | 1. Czytanie | Читає сама → 4 питання |
 | 13–20 | 2. Słownictwo | Групи Obowiązki і Doświadczenie |
 | 20–32 | 3. Gramatyka, слайди | s1–s11; довше на s3, s5, s8 |
 | 32–41 | 3. Gramatyka, вправи | g1, g3, g5 (g2/g4 за часом) |

@@ -42,31 +42,6 @@ teacherOf: pl-a2-49-szukam-pracy
 - <b>Szukam pracy — znalazłam pracę.</b> Ключова пастка уроку. 5 швидких пар: szukam… / znalazłam… (mieszkania / mieszkanie, pomocy / pomoc, kolegi / kolegę).
 - <b>Пастки.</b> Учень спершу читає українську колонку й перекладає сам, лише потім дивиться на ✓.
 
-## 🎧 Діалог-зразок до c1 (читаєш ти, двома голосами)
-
-Перед читанням дай учню три питання. Читай один раз у природному темпі, другий — лише якщо учень попросить.
-
-1. — Dzień dobry, dział kadr, Anna Wójcik, słucham.
-1. — Dzień dobry, nazywam się Marek Lis. Dzwonię w sprawie ogłoszenia o pracę w magazynie.
-1. — Tak, szukamy magazyniera od zaraz. Skąd pan wie o ofercie?
-1. — Od kolegi, on pracuje u państwa od roku. Czy to praca zmianowa?
-1. — Tak, od szóstej do czternastej albo od czternastej do dwudziestej drugiej. Ma pan doświadczenie?
-1. — W magazynie nie, ale mam prawo jazdy i dwa lata pracowałem w sklepie.
-1. — To wystarczy, na początku robimy szkolenie. Proszę wysłać CV do mnie, adres jest w ogłoszeniu.
-1. — A do kiedy jest termin?
-1. — Do piątku. Szczegóły i wynagrodzenie omówimy na rozmowie. Odezwiemy się w przyszłym tygodniu.
-1. — Dziękuję bardzo. Do widzenia!
-
-<b>Питання і ключі:</b>
-
-1. Skąd Marek wie o ofercie? — <i>Od kolegi, który pracuje w tej firmie od roku.</i>
-1. Czy Marek ma doświadczenie w magazynie? — <i>Nie, ale ma prawo jazdy i dwa lata pracował w sklepie.</i>
-1. Do kiedy trzeba wysłać CV? — <i>Do piątku.</i>
-
-Далі учень дзвонить у пекарню з картки c1, ти — kierowniczka. Ускладнення: спитай «Ma pan / pani doświadczenie?» і «Od kiedy może pan / pani zacząć?».
-
-<b>c2 (оголошення A–C):</b> «правильної» відповіді немає, але учень має аргументувати родовим. Дай другу роль: «Mam małe dziecko i nie mam prawa jazdy» — тоді логічна B; або «Potrzebuję dużo pieniędzy, wieczory mam wolne» — тоді C.
-
 ## 🔑 Ключі до питань до тексту
 
 1. Має досить змінної роботи: то з ранку, то до півночі, часто без вільної суботи.

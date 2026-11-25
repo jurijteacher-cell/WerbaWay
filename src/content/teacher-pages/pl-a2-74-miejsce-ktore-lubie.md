@@ -23,10 +23,10 @@ teacherOf: pl-a2-74-miejsce-ktore-lubie
 | 3–12 | 1. Czytanie + e1 | Учень читає повідомлення Касі. Для кожного виділеного <i>który</i> — «про що це слово?» (стрілка до іменника). 4 питання усно, потім e1. |
 | 12–18 | 2. Słownictwo + ćw. 1 | Картки по групах; зупинись на <i>pełen ludzi</i> і <i>znany z</i>. Потім g1. |
 | 18–38 | 3. Gramatyka + g2–g3 | Спершу називний (5 хв), потім знахідний (5 хв) через порівняння з <i>nowy</i>: <i>nowego → którego</i>. Алгоритм з 4 кроків — на дошці. g2–g3 разом. g4–g5 — якщо лишився час. |
-| 38–55 | 4. Słuchanie + c1, c2 | e2–e3 (2 відтворення, пауза 10 с), потім транскрипт: учень знаходить усі <i>który</i> і пояснює форму. c1 → c2, ти — колега, що приїжджає. |
+| 38–55 | 4. c1, c2 | c1 → c2, ти — колега, що приїжджає. |
 | 55–60 | 5. Podsumowanie + ДЗ | Чекліст, повернення до розминки (4 речення з <i>który</i>). Поясни письмо. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, називний, g2 · ② знахідний, алгоритм, <i>w którym</i>, g3–g5, Słuchanie, c1, c2, Podsumowanie, ДЗ.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, називний, g2 · ② знахідний, алгоритм, <i>w którym</i>, g3–g5, c1, c2, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -53,20 +53,6 @@ teacherOf: pl-a2-74-miejsce-ktore-lubie
 1. Pan Józek, przewodnik. Kasia proponuje w niedzielę rano łatwy szlak w góry.
 
 <b>e1:</b> P · F · P · F · P.
-
----
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, `eleven_v4`): Kasia — `F4S1QHSHuBfEaPzx8aN`, Olena — W1 `mQq2zdGT1zEfDbh8W95l`. Поки аудіо немає — читай діалог сам, двічі.
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Kasia:</b> Olena, pokaż zdjęcia, które wczoraj zrobiłaś!<br><b>Olena:</b> Proszę. To jest kościół, który stoi na początku Krupówek.<br><b>Kasia:</b> Ładne. A to? Kto to jest, ten pan w kapeluszu?<br><b>Olena:</b> To pan Józek, przewodnik, którego poznaliśmy w karczmie.<br><b>Kasia:</b> Aha! A które zdjęcie dasz do firmowej gazetki?<br><b>Olena:</b> Chyba to, które zrobiłam na Gubałówce. Widać na nim cały zespół i Tatry.<br><b>Kasia:</b> [laughs] Ale pan Piotr ma zamknięte oczy!<br><b>Olena:</b> Faktycznie… To może to drugie, które zrobił Tomek?<br><b>Kasia:</b> Tak, to jest lepsze. Tylko szkoda, że Tomka na nim nie ma.<br><b>Olena:</b> No tak, to on robił zdjęcie! Dobrze, wyślę je pani Agnieszce.<br><b>Kasia:</b> Super. A oscypki, które kupiłaś dla mamy, masz już w walizce?<br><b>Olena:</b> Oj! Zostały w lodówce w pensjonacie!
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 P · 2 P · 3 F (wybiera zdjęcie Tomka) · 4 P.<br><b>Ключ e3:</b> 1 na początku Krupówek · 2 Tomka · 3 w lodówce w pensjonacie.<br><b>Пастки:</b> e2-3 — Олена спершу пропонує своє фото, потім змінює думку; e3-3 — <i>w walizce</i> звучить у питанні Касі, але відповідь — <i>w lodówce</i>.
 
 ---
 

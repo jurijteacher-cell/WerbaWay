@@ -22,10 +22,10 @@ teacherOf: pl-a2-77-dlaczego
 | 3–12 | 1. Czytanie + e1 | Учень читає e-mail пана Пйотра. Для кожного виділеного сполучника — «причина чи наслідок?». 4 питання усно, потім e1. |
 | 12–18 | 2. Słownictwo + ćw. 1 | Картки по групах; зупинись на <i>przecież</i> і <i>cieszyć się, że</i>. Потім g1. |
 | 18–38 | 3. Gramatyka + g2–g3 | Таблиця 5 сполучників (5 хв), потім «причина ↔ наслідок» — одна думка двома способами на дошці (5 хв). <i>że</i> після дієслів — 3 хв. g2–g3 разом. g4–g5 — якщо лишився час. |
-| 38–55 | 4. Słuchanie + c1, c2 | e2–e3 (2 відтворення, пауза 10 с), потім транскрипт: учень підкреслює всі сполучники. c1 → c2, ти — працівник, що питає «dlaczego?». |
+| 38–55 | 4. c1, c2 | c1 → c2, ти — працівник, що питає «dlaczego?». |
 | 55–60 | 5. Podsumowanie + ДЗ | Чекліст, повернення до розминки (3 речення: що, чому, що з цього). Поясни письмо. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, 5 сполучників, g2 · ② причина ↔ наслідок, <i>że</i>, g3–g5, Słuchanie, c1, c2, Podsumowanie, ДЗ.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, 5 сполучників, g2 · ② причина ↔ наслідок, <i>że</i>, g3–g5, c1, c2, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -52,20 +52,6 @@ teacherOf: pl-a2-77-dlaczego
 1. Bo wiele osób dojeżdża z daleka. Zebranie jest w piątek o piętnastej.
 
 <b>e1:</b> P · F · F · P · P.
-
----
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, `eleven_v4`): Kasia — `F4S1QHSHuBfEaPzx8aN`, Tomek — M3 `ihTsqWCgsTDbANOCuZD2`. Поки аудіо немає — читай діалог сам, двічі.
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Tomek:</b> Słyszałaś, że od maja przenosimy się na Zabłocie?<br><b>Kasia:</b> Tak, pan Piotr napisał wczoraj. Bardzo się cieszę!<br><b>Tomek:</b> Dlaczego? Przecież to daleko od centrum.<br><b>Kasia:</b> Dla ciebie może tak, ale ja mieszkam w Podgórzu, więc będę chodzić do pracy pieszo.<br><b>Tomek:</b> A ja będę jechać z przesiadką. Dlatego trochę się martwię.<br><b>Kasia:</b> Ale możesz pracować dwa dni w tygodniu z domu.<br><b>Tomek:</b> To prawda. Myślę, że wybiorę poniedziałek i piątek.<br><b>Kasia:</b> Dlaczego akurat poniedziałek i piątek?<br><b>Tomek:</b> Bo w piątek często jadę do rodziców do Tarnowa. Mogę wyjechać wcześniej.<br><b>Kasia:</b> Sprytnie! A ja chyba zostanę w biurze cały tydzień, ponieważ w domu nie mam biurka.<br><b>Tomek:</b> Nie masz biurka? Przecież firma daje sto złotych na krzesło i lampę.<br><b>Kasia:</b> Naprawdę? Nie wiedziałam, że firma za to płaci!
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 P · 2 F (pieszo — Kasia) · 3 P · 4 F.<br><b>Ключ e3:</b> 1 bo będzie jechał z przesiadką · 2 do rodziców do Tarnowa · 3 za krzesło i lampę.<br><b>Пастки:</b> e2-2 — <i>pieszo</i> звучить, але про Касю; e3-3 — <i>biurko</i> згадується, але фірма платить за крісло й лампу.
 
 ---
 

@@ -25,8 +25,6 @@ notion: https://app.notion.com/p/01-Moja-droga-zawodowa-3f696e03c7c88184b81cddf2
 
 ### Halina wraca do zawodu
 
-<audio controls preload="none" src="https://werba-way.vercel.app/audio/pl-ksieg-01-czytanie.mp3"></audio>
-
 Halina przez czternaście lat pracowała jako księgowa w Dnieprze. Najpierw zajmowała się fakturami w małej firmie handlowej, potem przez sześć lat była główną księgową w spółce, która produkowała meble. Co miesiąc naliczała wynagrodzenia dla osiemdziesięciu pracowników, sporządzała deklaracje i odpowiadała za kontakt z urzędem skarbowym. W 2019 roku przygotowała firmę do kontroli podatkowej i kontrolerzy nie znaleźli żadnych błędów. Była z tego bardzo dumna.
 
 W 2022 roku Halina przyjechała z córką do Wrocławia. Przez pierwszy rok pracowała w magazynie, bo myślała, że jej doświadczenie w Polsce nic nie znaczy. Wieczorami uczyła się polskiego, a w zeszłym roku zdała egzamin na poziomie B1.
@@ -64,9 +62,7 @@ Slajdy gramatyczne
 
 ## 4. Zadania komunikacyjne
 
-Pierwsza karta ma przykładową rozmowę. Posłuchaj jej, a potem opowiedz swoją prawdziwą historię.
-
-<audio controls preload="none" src="https://werba-way.vercel.app/audio/pl-ksieg-01-c1-dialog.mp3"></audio>
+Pierwsza karta ma przykładową rozmowę. Przeczytaj ją, a potem opowiedz swoją prawdziwą historię.
 
 <embed source="https://werba-way.vercel.app/embed/pl-ksieg-01-moja-droga-zawodowa/comm-tasks">
 Zadania komunikacyjne

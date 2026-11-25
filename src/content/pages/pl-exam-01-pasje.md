@@ -24,8 +24,6 @@ notion: https://app.notion.com/p/01-Czas-wolny-i-pasje-3fa96e03c7c881e0bde9f67a0
 
 <b>Na początek.</b> Co robisz wieczorem po pracy? Odpowiedz jednym zdaniem. Potem napisz w zeszycie jedno słowo, które opisuje Twój wieczór.
 
-<audio controls preload="none" src="https://werba-way.vercel.app/audio/pl-exam-01-pasje-czytanie.mp3"></audio>
-
 ### Nowa pasja po trzydziestce
 
 <i>&#91;man playing drums — zdjęcie wkrótce&#93;</i>
@@ -90,12 +88,6 @@ Odpowiedz na pytania. Pod każdym pytaniem masz początek odpowiedzi — użyj g
 Zadania komunikacyjne
 </embed>
 
-<audio controls preload="none" src="https://werba-way.vercel.app/audio/pl-exam-01-pasje-c1-dialog.mp3"></audio>
-
-<embed source="https://werba-way.vercel.app/embed/pl-exam-01-pasje/exam?blocks=e2">
-Jak na egzaminie — e2 (słuchanie)
-</embed>
-
 ---
 
 ## 7. Gramatyka, część 1
@@ -139,7 +131,6 @@ Elementy języka
 1. Opowiedz w trzech zdaniach o swoim hobby: co robisz, gdzie i jak często.
 1. Powiedz formy „ja”, „ty” i „oni” od czasowników: czytać, gotować, mówić.
 1. Powiedz jedno zdanie z „lubię”, jedno z „umiem” i jedno z „chcę”.
-1. Posłuchaj zdania od nauczyciela i powiedz, gdzie można je usłyszeć.
 1. Spójrz na słowo, które napisałeś / napisałaś na początku lekcji. Powiedz o nim dwa zdania: jak często to robisz i czy to lubisz.
 
 ---

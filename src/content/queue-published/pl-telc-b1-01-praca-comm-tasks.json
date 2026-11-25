@@ -7,9 +7,9 @@
   "items": [
     {
       "id": "c1",
-      "mode": "listen-then-play",
+      "mode": "read-then-play",
       "front_title": "Telefon w sprawie ogłoszenia",
-      "back_scenario": "Restauracja „Pod Lipą” szuka kelnera albo kelnerki. Najpierw posłuchaj, jak Oksana dzwoni w sprawie tego ogłoszenia. Potem zadzwoń sam / sama, ale w sprawie innej pracy: kasjer w kinie, recepcjonista w hotelu albo sprzedawca w księgarni. Nauczyciel jest pracodawcą.",
+      "back_scenario": "Restauracja „Pod Lipą” szuka kelnera albo kelnerki. Najpierw przeczytaj, jak Oksana dzwoni w sprawie tego ogłoszenia. Potem zadzwoń sam / sama, ale w sprawie innej pracy: kasjer w kinie, recepcjonista w hotelu albo sprzedawca w księgarni. Nauczyciel jest pracodawcą.",
       "back_checklist": [
         "Przedstaw się i powiedz, w jakiej sprawie dzwonisz.",
         "Opowiedz o swoim doświadczeniu: kim byłeś / byłaś i gdzie pracujesz teraz.",
@@ -17,20 +17,76 @@
         "Ustal dzień i godzinę rozmowy kwalifikacyjnej i zapytaj, czy masz przynieść CV."
       ],
       "model_dialogue": [
-        {"speaker": "Kierownik", "voice": "pl-PL-male", "line": "Restauracja „Pod Lipą”, Tomasz Wrona, słucham."},
-        {"speaker": "Oksana", "voice": "pl-PL-female", "line": "Dzień dobry, nazywam się Oksana Melnyk. Dzwonię w sprawie ogłoszenia. Państwo szukają kelnerki, prawda?"},
-        {"speaker": "Kierownik", "voice": "pl-PL-male", "line": "Tak, zgadza się. Szukamy osoby z doświadczeniem. Czy pani pracowała już w gastronomii?"},
-        {"speaker": "Oksana", "voice": "pl-PL-female", "line": "Tak. W Ukrainie przez trzy lata byłam kelnerką w kawiarni. Teraz w Polsce pracuję jako kasjerka w supermarkecie."},
-        {"speaker": "Kierownik", "voice": "pl-PL-male", "line": "Dobrze. Interesuje panią pełny etat czy pół etatu?"},
-        {"speaker": "Oksana", "voice": "pl-PL-female", "line": "Pełny etat. A jakie są godziny pracy?"},
-        {"speaker": "Kierownik", "voice": "pl-PL-male", "line": "Pracujemy na dwie zmiany: od dziesiątej do szesnastej albo od szesnastej do dwudziestej trzeciej. W soboty restauracja jest czynna do północy."},
-        {"speaker": "Oksana", "voice": "pl-PL-female", "line": "Rozumiem. A ile wynosi pensja?"},
-        {"speaker": "Kierownik", "voice": "pl-PL-male", "line": "Na początek trzydzieści pięć złotych brutto za godzinę plus napiwki. Pierwszy tydzień będzie pani pracować z panem Igorem. On jest naszym najlepszym kelnerem."},
-        {"speaker": "Oksana", "voice": "pl-PL-female", "line": "Świetnie. Od kiedy potrzebują Państwo nowej osoby?"},
-        {"speaker": "Kierownik", "voice": "pl-PL-male", "line": "Od pierwszego listopada. Czy może pani przyjść na rozmowę kwalifikacyjną w czwartek o jedenastej? W piątek niestety mnie nie ma."},
-        {"speaker": "Oksana", "voice": "pl-PL-female", "line": "Tak, czwartek mi pasuje. Czy mam przynieść CV?"},
-        {"speaker": "Kierownik", "voice": "pl-PL-male", "line": "Tak, proszę. I proszę nie parkować przed restauracją, bo tam zawsze jest tłok. Parking jest za budynkiem."},
-        {"speaker": "Oksana", "voice": "pl-PL-female", "line": "Dobrze, dziękuję. Do widzenia!"}
+        {
+          "speaker": "Kierownik",
+          "voice": "pl-PL-male",
+          "line": "Restauracja „Pod Lipą”, Tomasz Wrona, słucham."
+        },
+        {
+          "speaker": "Oksana",
+          "voice": "pl-PL-female",
+          "line": "Dzień dobry, nazywam się Oksana Melnyk. Dzwonię w sprawie ogłoszenia. Państwo szukają kelnerki, prawda?"
+        },
+        {
+          "speaker": "Kierownik",
+          "voice": "pl-PL-male",
+          "line": "Tak, zgadza się. Szukamy osoby z doświadczeniem. Czy pani pracowała już w gastronomii?"
+        },
+        {
+          "speaker": "Oksana",
+          "voice": "pl-PL-female",
+          "line": "Tak. W Ukrainie przez trzy lata byłam kelnerką w kawiarni. Teraz w Polsce pracuję jako kasjerka w supermarkecie."
+        },
+        {
+          "speaker": "Kierownik",
+          "voice": "pl-PL-male",
+          "line": "Dobrze. Interesuje panią pełny etat czy pół etatu?"
+        },
+        {
+          "speaker": "Oksana",
+          "voice": "pl-PL-female",
+          "line": "Pełny etat. A jakie są godziny pracy?"
+        },
+        {
+          "speaker": "Kierownik",
+          "voice": "pl-PL-male",
+          "line": "Pracujemy na dwie zmiany: od dziesiątej do szesnastej albo od szesnastej do dwudziestej trzeciej. W soboty restauracja jest czynna do północy."
+        },
+        {
+          "speaker": "Oksana",
+          "voice": "pl-PL-female",
+          "line": "Rozumiem. A ile wynosi pensja?"
+        },
+        {
+          "speaker": "Kierownik",
+          "voice": "pl-PL-male",
+          "line": "Na początek trzydzieści pięć złotych brutto za godzinę plus napiwki. Pierwszy tydzień będzie pani pracować z panem Igorem. On jest naszym najlepszym kelnerem."
+        },
+        {
+          "speaker": "Oksana",
+          "voice": "pl-PL-female",
+          "line": "Świetnie. Od kiedy potrzebują Państwo nowej osoby?"
+        },
+        {
+          "speaker": "Kierownik",
+          "voice": "pl-PL-male",
+          "line": "Od pierwszego listopada. Czy może pani przyjść na rozmowę kwalifikacyjną w czwartek o jedenastej? W piątek niestety mnie nie ma."
+        },
+        {
+          "speaker": "Oksana",
+          "voice": "pl-PL-female",
+          "line": "Tak, czwartek mi pasuje. Czy mam przynieść CV?"
+        },
+        {
+          "speaker": "Kierownik",
+          "voice": "pl-PL-male",
+          "line": "Tak, proszę. I proszę nie parkować przed restauracją, bo tam zawsze jest tłok. Parking jest za budynkiem."
+        },
+        {
+          "speaker": "Oksana",
+          "voice": "pl-PL-female",
+          "line": "Dobrze, dziękuję. Do widzenia!"
+        }
       ]
     },
     {

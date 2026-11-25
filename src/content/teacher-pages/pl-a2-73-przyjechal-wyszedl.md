@@ -23,10 +23,10 @@ teacherOf: pl-a2-73-przyjechal-wyszedl
 | 3–12 | 1. Czytanie + e1 | Учень читає повідомлення Олени вголос. На кожне виділене дієслово — жест: «всередину / назовні / через / вниз». 4 питання усно, потім e1. |
 | 12–18 | 2. Słownictwo + ćw. 1 | Картки по групах; зупинись на <i>wsiąść / wysiąść</i> і <i>zjechać z drogi</i>. Потім g1. |
 | 18–38 | 3. Gramatyka + g2–g3 | Таблиця префіксів (8 хв, з малюнком стрілок на дошці), потім минулий <i>-szedł / -szła</i> (5 хв), майбутній — одним рядком. g2–g3 разом. g4–g5 — якщо лишився час. |
-| 38–55 | 4. Słuchanie + c1, c2 | e2–e3 (2 відтворення, пауза 10 с), потім транскрипт: учень малює маршрут пана Пйотра. c1 → c2, ти — друг на вокзалі й колега. |
+| 38–55 | 4. c1, c2 | c1 → c2, ти — друг на вокзалі й колега. |
 | 55–60 | 5. Podsumowanie + ДЗ | Чекліст, повернення до розминки (3 речення). Поясни письмо. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, таблиця префіксів, g2 · ② минулий і майбутній, dk / ndk, g3–g5, Słuchanie, c1, c2, Podsumowanie, ДЗ.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, таблиця префіксів, g2 · ② минулий і майбутній, dk / ndk, g3–g5, c1, c2, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -53,20 +53,6 @@ teacherOf: pl-a2-73-przyjechal-wyszedl
 1. Zjechał z drogi w złym miejscu i długo szukał pensjonatu. W sobotę wychodzą w góry, w niedzielę po obiedzie wyjeżdżają i wieczorem przyjeżdżają do Krakowa.
 
 <b>e1:</b> P · F · P · F · P.
-
----
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, `eleven_v4`): pan Piotr — M2 `bwhymd1UcFEihyvPSEoR`, Olena — W1 `mQq2zdGT1zEfDbh8W95l`. Поки аудіо немає — читай діалог сам, двічі.
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Pan Piotr:</b> Olena? Tu Piotr. Słuchaj, chyba się zgubiłem.<br><b>Olena:</b> Dobry wieczór, panie Piotrze! Gdzie Pan jest?<br><b>Pan Piotr:</b> Zjechałem z głównej drogi przy stacji benzynowej i teraz stoję przed jakimś mostem.<br><b>Olena:</b> Dobrze. Niech Pan przejedzie przez most i pojedzie prosto, jakieś dwa kilometry.<br><b>Pan Piotr:</b> Prosto… A potem?<br><b>Olena:</b> Potem zobaczy Pan mały drewniany kościół. Za kościołem trzeba skręcić w prawo.<br><b>Pan Piotr:</b> W prawo za kościołem. I to już pensjonat?<br><b>Olena:</b> Prawie. Pensjonat jest trzeci dom po lewej. Proszę wjechać na parking za domem.<br><b>Pan Piotr:</b> Za domem, dobrze. Kolacja już była?<br><b>Olena:</b> Jeszcze nie, czekamy na Pana. Kolacja jest do ósmej.<br><b>Pan Piotr:</b> To dojadę za dwadzieścia minut. Wyszedłem z biura o czwartej i od tej pory jestem w drodze!<br><b>Olena:</b> Nic się nie stało. Do zobaczenia!
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 P · 2 F (w prawo) · 3 P · 4 F (czekają na niego).<br><b>Ключ e3:</b> 1 przejechać przez most · 2 za domem · 3 za dwadzieścia minut.<br><b>Пастки:</b> e2-2 — <i>w prawo / po lewej</i> звучать поруч, учні плутають; e3-3 — <i>o czwartej</i> — коли він вийшов з офісу, не коли доїде.
 
 ---
 

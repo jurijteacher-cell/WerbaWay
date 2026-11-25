@@ -28,16 +28,6 @@ teacherOf: pl-preg-r5-powtorka
 | 45–56 | Модельний діалог + c1 (і c2, якщо встигаємо) | c3 (розповідь Агати) — на початок наступного уроку як розігрів. |
 | 56–60 | Підсумок + ДЗ | Розділ 6 (екзамен) — резерв. |
 
-## 🎧 Модельний діалог до c1 (читає вчитель)
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true"></span><div class="lp-callout-body">
-
-<b>Dorota:</b> Aniu, masz chwilę? Jestem w siódmym tygodniu ciąży i trochę się boję. Nie wiem, od czego zacząć.<br><b>Ania:</b> Gratulacje! Spokojnie. Najpierw musisz umówić się na wizytę do ginekologa.<br><b>Dorota:</b> Muszę iść prywatnie? To chyba drogie.<br><b>Ania:</b> Nie musisz. Możesz iść na NFZ, tylko czasem trzeba dłużej poczekać na termin.<br><b>Dorota:</b> A co powinnam wziąć na pierwszą wizytę?<br><b>Ania:</b> Weź dowód osobisty i zapisz wszystkie pytania. Ja nie zapisałam i potem żałowałam.<br><b>Dorota:</b> Dobrze. A szkoła rodzenia? Kiedy powinnam się zapisać?<br><b>Ania:</b> Zapisz się wcześniej, bo miejsca szybko się kończą. My chodziliśmy co tydzień przez dwa miesiące.<br><b>Dorota:</b> A czego nie powinnam robić?<br><b>Ania:</b> Nie dźwigaj ciężkich zakupów i nie czytaj wszystkiego w internecie! W razie czego dzwoń do mnie.<br><b>Dorota:</b> Dziękuję, Aniu. A ty czegoś żałujesz?<br><b>Ania:</b> Tak. Powinnam była więcej odpoczywać. Ty odpoczywaj, kiedy tylko możesz!
-
-</div></aside>
-
-<b>Ключ:</b> 1) w siódmym tygodniu; nie wie, od czego zacząć; 2) umówić się do ginekologa; nie musi iść prywatnie; 3) powinna była więcej odpoczywać.
-
 ## 🔑 Ключі до питань до тексту
 
 1. Znaleźć ginekologa i umówić się na pierwszą wizytę; dowód osobisty i pytania zapisane na kartce.

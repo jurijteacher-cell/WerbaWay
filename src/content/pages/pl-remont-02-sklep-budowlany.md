@@ -31,9 +31,7 @@ cover: https://images.unsplash.com/photo-1510016290251-68aaad49723e?w=1600&q=80&
 
 ### 🛒 Lista zakupów do łazienki
 
-<b>Pani Joanna zaakceptowała wycenę, a pan Artur robi z nią listę zakupów. Posłuchaj i czytaj. Zauważ, jak Artur mówi, <i>ile czego</i>: <i>pięć worków kleju, trzy kartusze silikonu</i>.</b>
-
-<audio controls preload="none" src="https://werba-way.vercel.app/audio/pl-remont-02-sklep-budowlany-czytanie.mp3"></audio>
+<b>Pani Joanna zaakceptowała wycenę, a pan Artur robi z nią listę zakupów. Przeczytaj tekst. Zauważ, jak Artur mówi, <i>ile czego</i>: <i>pięć worków kleju, trzy kartusze silikonu</i>.</b>
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📔</span><div class="lp-callout-body">
 

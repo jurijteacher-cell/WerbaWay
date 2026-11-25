@@ -268,19 +268,7 @@ Zadania komunikacyjne
 
 ---
 
-## 🎧 7. Słuchanie jak na egzaminie
-
-<aside class="lp-callout" data-tone="blue"><span class="lp-callout-icon" aria-hidden="true">🎧</span><div class="lp-callout-body">
-
-Krótki reportaż radiowy o kawiarence naprawczej — tak jak w zadaniu „tak / nie” na egzaminie państwowym B1. Najpierw przeczytaj zdania. Reportaż usłyszysz <b>dwa razy</b>. Zdania są w tej samej kolejności co informacje w nagraniu.
-
-</div></aside>
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-18-ekologia/exam?blocks=e2">
-Słuchanie — jak na egzaminie
-</embed>
-
-### 🧩 Elementy języka — jak na egzaminie telc
+## 🧩 7. Elementy języka — jak na egzaminie telc
 
 <b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
 

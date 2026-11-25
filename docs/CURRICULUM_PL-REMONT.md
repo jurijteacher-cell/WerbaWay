@@ -26,7 +26,7 @@
 ## Правила модуля
 
 - Тексти — теж вправи: ordering, detektyw і cloze-text у кожному уроці (CLAUDE.md, 21.11.2026).
-- Аудіо — завжди (сайт озвучує): `-czytanie.mp3` і діалог до c1 (`-c1-dialog.mp3`, `mode: listen-then-play`).
+- Аудіо немає (25.11.2026): діалог до c1 — `mode: read-then-play`, текстом.
 - Голоси: Narrator — `mQq2zdGT1zEfDbh8W95l`, чоловічий (Artur, Marek) — `bwhymd1UcFEihyvPSEoR`, жіночий (Joanna, Ewa) — `gHGjEjdr2LBds0XHTsvg`. Нові ролі — з тих самих трьох голосів, нові голоси — лише з `creative_list_voices`.
 - Персонажі модуля: pani Joanna Lis (клієнтка, Gdańsk), pan Artur (fachowiec, урок 01), pan Marek (fachowiec, c1), pani Ewa (клієнтка, c1), pani Ilona (sprzedawczyni, урок 02, c1). Усі вигадані.
 - Нова граматика, якої немає в реєстрі, вимагає рядка в реєстрі до уроку.

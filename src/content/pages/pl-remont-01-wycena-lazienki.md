@@ -31,9 +31,7 @@ cover: https://images.unsplash.com/photo-1618832515490-e181c4794a45?w=1600&q=80&
 
 ### 🛁 Pierwsza wizyta w łazience
 
-<b>Pani Joanna kupiła stare mieszkanie, a pan Artur ma zrobić wycenę remontu łazienki. Posłuchaj i czytaj. Zauważ, jak Artur mówi, co trzeba zrobić: <i>trzeba, musimy, powinniśmy</i>.</b>
-
-<audio controls preload="none" src="https://werba-way.vercel.app/audio/pl-remont-01-wycena-lazienki-czytanie.mp3"></audio>
+<b>Pani Joanna kupiła stare mieszkanie, a pan Artur ma zrobić wycenę remontu łazienki. Przeczytaj tekst. Zauważ, jak Artur mówi, co trzeba zrobić: <i>trzeba, musimy, powinniśmy</i>.</b>
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📔</span><div class="lp-callout-body">
 

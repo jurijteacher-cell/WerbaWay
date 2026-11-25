@@ -7,16 +7,15 @@
   "items": [
     {
       "id": "c1",
-      "mode": "listen-then-play",
+      "mode": "read-then-play",
       "front_title": "W sklepie budowlanym",
-      "back_scenario": "Najpierw posłuchaj rozmowy pana Marka ze sprzedawczynią. Potem Ty jesteś fachowcem, a nauczyciel — sprzedawczynią. Kupujesz materiały do remontu małej kuchni: płytki, klej, fugę i farbę. Poprowadź rozmowę z innymi ilościami.",
+      "back_scenario": "Najpierw przeczytaj rozmowę pana Marka ze sprzedawczynią. Potem Ty jesteś fachowcem, a nauczyciel — sprzedawczynią. Kupujesz materiały do remontu małej kuchni: płytki, klej, fugę i farbę. Poprowadź rozmowę z innymi ilościami.",
       "back_checklist": [
         "Zapytaj, czy sklep ma na stanie to, czego potrzebujesz.",
         "Podaj ilości: ile worków, paczek, opakowań i litrów (użyj liczb od 2 do 4 i od 5).",
         "Zapytaj o cenę i o dostawę.",
         "Poproś o rabat albo o paragon."
       ],
-      "audio_url": "/audio/pl-remont-02-sklep-budowlany-c1-dialog.mp3",
       "model_dialogue": [
         {
           "speaker": "Ilona",

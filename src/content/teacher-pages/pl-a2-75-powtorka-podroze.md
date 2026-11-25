@@ -23,11 +23,10 @@ teacherOf: pl-a2-75-powtorka-podroze
 | 3–12 | 1. Czytanie + e1 | Учень читає статтю Олени вголос. Після кожного абзацу питай, з якого уроку виділена форма: <i>do Zakopanego</i> — 70, <i>dojechaliśmy</i> — 73, <i>osób, w pokojach</i> — 72, <i>z której</i> — 74, <i>chcielibyśmy, mógłby</i> — 71. 4 питання усно, потім e1. |
 | 12–16 | 2. Słownictwo | Картки — швидко, лише ті, яких учень не пам'ятає. Нові: <i>zmienić rezerwację, dopłacić</i>. |
 | 16–36 | 3. Mapa + g1–g3 | По блоку на тему: 1 хв правило → 1 хв «найчастіша помилка» → блок вправ (g1 — 70 і 73, g2 — 71 і 72, g3 — 74). g4 — якщо лишився час. |
-| 36–42 | 4. Słuchanie (e2–e3) | 2 відтворення, пауза 10 с, потім транскрипт: учень шукає всі ввічливі форми й числа. |
 | 42–56 | 5. Speaking marathon | 4 картки по 1 хв. Ти засікаєш час і записуєш помилки, розбір — після кожної хвилини (30 с). |
 | 56–60 | 6. Podsumowanie + ДЗ | Чекліст, повернення до подорожі з розминки. Поясни e-mail до готелю. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, мапа 70–72, g1, g2 · ② мапа 73–74, g3, g4, Słuchanie, marathon, Podsumowanie, ДЗ.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, мапа 70–72, g1, g2 · ② мапа 73–74, g3, g4, marathon, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -52,20 +51,6 @@ teacherOf: pl-a2-75-powtorka-podroze
 1. Weszli na Nosal i zeszli do schroniska na herbatę, po obiedzie wyjechali. Olena prosi, żeby pan Piotr zarezerwował pensjonat na luty.
 
 <b>e1:</b> P · F · P · F · P.
-
----
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, `eleven_v4`): Olena — W1 `mQq2zdGT1zEfDbh8W95l`, kasjer — M1 `p0KQaxqGrT7xcRWSJiHp`. Поки аудіо немає — читай діалог сам, двічі.
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Olena:</b> Dzień dobry. Mamy bilety na pociąg o szesnastej do Krakowa, ale chcielibyśmy wrócić wcześniej. Czy mogłabym zmienić rezerwację?<br><b>Kasjer:</b> Oczywiście. Na który pociąg?<br><b>Olena:</b> Na ten, który odjeżdża o trzynastej czterdzieści.<br><b>Kasjer:</b> Ile osób?<br><b>Olena:</b> Osiem. Jeden kolega wraca samochodem.<br><b>Kasjer:</b> W tym pociągu mam jeszcze osiem wolnych miejsc, ale w dwóch wagonach: pięć w wagonie numer trzy i trzy w wagonie numer sześć.<br><b>Olena:</b> Nie szkodzi. Czy musimy dopłacić?<br><b>Kasjer:</b> Tak, po cztery złote od osoby. Razem trzydzieści dwa złote.<br><b>Olena:</b> Dobrze. Czy mógłby Pan powiedzieć, z którego peronu odjeżdża pociąg?<br><b>Kasjer:</b> Z peronu pierwszego. Proszę przyjść dziesięć minut wcześniej, bo pociąg stoi na stacji tylko pięć minut.<br><b>Olena:</b> Dziękuję bardzo!<br><b>Kasjer:</b> Proszę. Szczęśliwej podróży!
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 P · 2 F (dwa wagony) · 3 P · 4 F (pięć minut).<br><b>Ключ e3:</b> 1 o 13:40 · 2 32 zł · 3 z pierwszego.<br><b>Пастки:</b> e2-4 — <i>dziesięć minut wcześniej</i> звучить поруч із <i>pięć minut</i>; e3-1 — <i>o szesnastej</i> — старий потяг; e3-3 — <i>trzy</i> і <i>sześć</i> — номери вагонів, не перонів.
 
 ---
 

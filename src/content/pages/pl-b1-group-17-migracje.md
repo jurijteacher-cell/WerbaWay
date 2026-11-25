@@ -282,19 +282,7 @@ Zadania komunikacyjne
 
 ---
 
-## 🎧 7. Słuchanie jak na egzaminie
-
-<aside class="lp-callout" data-tone="blue"><span class="lp-callout-icon" aria-hidden="true">🎧</span><div class="lp-callout-body">
-
-Cztery wiadomości głosowe — tak jak w pierwszej części słuchania na egzaminie telc. Najpierw przeczytaj pytania. Każdą wiadomość usłyszysz <b>dwa razy</b>. Słuchaj, po co ktoś dzwoni i co jest najważniejsze.
-
-</div></aside>
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-17-migracje/exam?blocks=e2">
-Słuchanie — jak na egzaminie
-</embed>
-
-### 🧩 Elementy języka — jak na egzaminie telc
+## 🧩 7. Elementy języka — jak na egzaminie telc
 
 <b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
 

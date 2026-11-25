@@ -286,7 +286,7 @@ Pomyśl o jednej rzeczy w domu, która mogłaby się zepsuć, i nie mów, co to 
 
 </div></aside>
 
-👉 <b>Teraz Twoja kolej.</b> Trzy sytuacje — odwróć kartę i odegraj rozmowę. Przed pierwszą posłuchaj przykładowej rozmowy, którą czyta nauczyciel.
+👉 <b>Teraz Twoja kolej.</b> Trzy sytuacje — odwróć kartę i odegraj rozmowę.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-mow-06-uslugi/comm-tasks">
 Zadania komunikacyjne

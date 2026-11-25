@@ -83,9 +83,9 @@ Słownictwo — karty
 
 ## 5. Zadania komunikacyjne
 
-Najpierw posłuchaj przykładowej rozmowy na wizycie kontrolnej. Potem odegraj swoją — z innymi dolegliwościami i innymi pytaniami.
+Najpierw przeczytaj przykładową rozmowę na wizycie kontrolnej. Potem odegraj swoją — z innymi dolegliwościami i innymi pytaniami.
 
-<b>Po nagraniu odpowiedz ustnie:</b>
+<b>Po przeczytaniu odpowiedz ustnie:</b>
 
 1. Jakie dwie dolegliwości opisała pacjentka?
 1. Skąd według lekarki brało się napięcie w barku?

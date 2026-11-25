@@ -84,12 +84,6 @@ A ja? Mam dwadzieścia dziewięć lat. Z zawodu jestem lekarką, ale w Polsce je
 
 ### ❓ Pytania do tekstu
 
-<aside class="lp-callout" data-tone="orange"><span class="lp-callout-icon" aria-hidden="true">🕵️</span><div class="lp-callout-body">
-
-<b>Najpierw gra: kto to mówi?</b> Nauczyciel mówi jedno zdanie, na przykład <i>Jestem kucharzem.</i> Ty odpowiadasz pełnym zdaniem: <i>To Marco! Marco jest kucharzem.</i>
-
-</div></aside>
-
 1. Kim jest z zawodu Marco? A Tom? A Olena?
 1. Ile lat ma Hanna? A Tom? Jak myślisz, ile lat ma pani Iwona?
 1. Jaki jest Tom? Jaka jest Hanna?
@@ -333,7 +327,7 @@ Kto to jest? Jak myślisz, kim on jest z zawodu? Ile ma lat? Skąd jest? Jaki je
 
 ### 🔢 D. Liczby na szybko
 
-<i>Nauczyciel mówi liczbę — Ty mówisz: „Ma … rok / lata / lat”. Potem matematyka: „Ile to jest?”</i>
+<i>Przeczytaj liczbę z listy i powiedz: „Ma … rok / lata / lat”. Potem matematyka: „Ile to jest?”</i>
 
 - Wiek: 23 · 47 · 12 · 91 · 64 · 1 · 100
 - Matematyka: 33 + 44 · 96 − 12 · 50 + 25 · 81 − 19

@@ -37,7 +37,7 @@ teacherOf: pl-b1-group-01-mieszkanie
 | 75–85 | 4. Zadania: c2, c4 | Повертаємось до карток комунікативних задач: c2 (шум) і c4 (нова сусідка — gdzie/dokąd). |
 | 85–90 | 7–8. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити ДЗ. |
 
-<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1 · ② Praktyka mówienia, e2, c1, c3, Gramatyka cz. 1 · ③ Gramatyka cz. 2, c2, c4, Podsumowanie, ДЗ.
+<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1 · ② Praktyka mówienia, c1, c3, Gramatyka cz. 1 · ③ Gramatyka cz. 2, c2, c4, Podsumowanie, ДЗ.
 
 ### Група швидша / повільніша
 
@@ -59,18 +59,6 @@ teacherOf: pl-b1-group-01-mieszkanie
 - <b>Gdzie / dokąd / skąd.</b> Три питання — три стовпчики. Попроси учнів самих продовжити таблицю на «w szkole / w pracy».
 - <b>Ruch do celu.</b> Тест: є рух у нове місце → dokąd. «Jechać nad morze» vs «być nad morzem».
 - <b>Pułapki.</b> Прочитай українську колонку вголос — учні самі скажуть, як «просилося».
-
----
-
-## 🎧 Діалог для e2 (читаєш двічі, учні без тексту)
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Administrator:</b> Administracja osiedla Zielone Wzgórze, Wiśniewski, słucham.<br><b>Lokatorka:</b> Dzień dobry, mówi Daria Kowal z bloku numer siedem, mieszkanie dwadzieścia trzy. Dzwonię w sprawie awarii w kuchni.<br><b>Administrator:</b> Co się stało?<br><b>Lokatorka:</b> Od rana cieknie woda pod zlewem w kuchni. Postawiłam pod rurą miskę, ale co godzinę muszę ją wylewać.<br><b>Administrator:</b> Zakręciła pani zawór?<br><b>Lokatorka:</b> Tak, ale zawór jest stary i nie trzyma. Boję się, że zaleję sąsiadkę pode mną, panią Nowak z piętnastki.<br><b>Administrator:</b> Rozumiem. Hydraulik jest teraz na drugim osiedlu, za szkołą. Może przyjść do pani o czternastej.<br><b>Lokatorka:</b> O czternastej jestem jeszcze w pracy. Czy może przyjść po szesnastej?<br><b>Administrator:</b> Dobrze, wpiszę szesnastą trzydzieści. Hydraulik przyjdzie z nową uszczelką i z kluczem do zaworu w piwnicy.<br><b>Lokatorka:</b> A kto płaci za naprawę? Mieszkanie wynajmuję.<br><b>Administrator:</b> To proszę ustalić z właścicielem, zgodnie z umową najmu. Ja tylko wysyłam hydraulika.<br><b>Lokatorka:</b> Dobrze, zadzwonię do niego zaraz po rozmowie z panem. Czy dostanę numer zgłoszenia?<br><b>Administrator:</b> Tak, numer zgłoszenia to czterdzieści osiem. Do widzenia.
-
-</div></aside>
-
-Ключ e2: pod zlewem w kuchni · o szesnastej trzydzieści · że zaleje sąsiadkę z dołu · czterdzieści osiem. Після e2 — c1 з іншими деталями (стеля у ванній, сусід зверху не відчиняє).
 
 ---
 

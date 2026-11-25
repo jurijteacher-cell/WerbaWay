@@ -278,12 +278,6 @@ Wylosuj miejsce: <i>park · autobus · galeria · kawiarnia · przychodnia · ba
 
 </div></aside>
 
-🎧 <b>Najpierw posłuchaj.</b> Nauczyciel przeczyta rozmowę Oleny w autobusie i w galerii. Potem odpowiedz ustnie:
-
-1. Którymi drzwiami Olena wsiadła do autobusu i kto jej pomógł?
-1. Na którym piętrze jest pokój dla matki z dzieckiem?
-1. Gdzie Olena czeka na windę i z kim się potem spotka?
-
 👉 <b>Teraz Twoja kolej.</b> Trzy sytuacje — odwróć kartę i odegraj rozmowę, z innymi szczegółami.
 
 <embed source="https://werba-way.vercel.app/embed/pl-preg-r3-powtorka/comm-tasks">

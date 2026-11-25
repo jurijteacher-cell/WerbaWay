@@ -23,10 +23,10 @@ teacherOf: pl-a2-60-wspomnienia
 | 3–12 | 1. Czytanie + e1 | Читає вголос по абзацах. Після кожного: «Gdzie? O kim? O czym?» — учень сам знаходить виділені форми. 4 питання усно, потім e1. |
 | 12–18 | 2. Słownictwo + ćw. 1 | Картки по групах; зупинись на <i>wieś → na wsi</i>, <i>pamiętać / wspominać</i>, <i>tęsknić za</i>. Потім g1. |
 | 18–38 | 3. Gramatyka + g2–g3 | Блоки по 2 хв; зміни приголосних — учень сам дописує 2 приклади з тексту. g2–g3 разом на екрані. g4–g5 — якщо лишився час. |
-| 38–55 | 4. Słuchanie + c1, c2 | e2–e3 (2 відтворення, пауза 10 с), потім транскрипт: учень шукає 4 форми місцевого. c1 → c2, ти граєш колегу й шкільного друга. |
+| 38–55 | 4. c1, c2 | c1 → c2, ти граєш колегу й шкільного друга. |
 | 55–60 | 5. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки (3 речення з місцевим). Поясни письмо. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, Gramatyka до «O kim? Zaimki», g2–g3 · ② решта граматики, g4–g5, Słuchanie, c1, c2, Podsumowanie, ДЗ.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, Gramatyka до «O kim? Zaimki», g2–g3 · ② решта граматики, g4–g5, c1, c2, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -44,22 +44,6 @@ teacherOf: pl-a2-60-wspomnienia
 - <b>Zaimki.</b> Головна пастка — <i>o ciebie</i>. Скажи: «<i>ciebie</i> — це „тебе“ після <i>dla, do, bez</i>; після <i>o</i> + місцевий — <i>tobie</i>».
 - <b>Po i przy.</b> <i>Po</i> + місцевий — «після»; <i>po</i> + знахідний — мета (<i>idę po chleb</i> — у ДЗ, h2). <i>Przy</i> — «біля» і «під час» (<i>przy kawie, przy obiedzie</i>) — дуже живе, розмовне.
 - <b>Pytać o.</b> Контраст на одній парі: <i>Zapytała o mamę</i> (знахідний) / <i>Rozmawiała o mamie</i> (місцевий). Це не помилка підручника — так і є.
-
----
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Озвучено 18.11.2026 (ElevenLabs, 52 с): аудіо лежить на <a href="https://app.notion.com/p/41b96e03c7c8812a81f1db5f7bc7b909">сторінці TEACHER у Notion</a>. Плеєр у вікні вправи мовчить, поки mp3 немає в репо — тоді вмикай запис із Notion або читай діалог сам, двічі. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): Olena — W1 <code>mQq2zdGT1zEfDbh8W95l</code>, Tomek — M3 <code>ihTsqWCgsTDbANOCuZD2</code>. Файл для плеєра LMS: <code>public/audio/pl-a2-60-wspomnienia-e2-dialog.mp3</code> (ще не покладено).
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Olena:</b> Tomek, co to za zdjęcie? Kto stoi przy tym starym samochodzie?<br><b>Tomek:</b> To ja, mam tu dziesięć lat. A obok mnie mój dziadek. Każde wakacje spędzałem u dziadków na wsi pod Nowym Sączem.<br><b>Olena:</b> Ładnie tam! Co tam robiliście?<br><b>Tomek:</b> Rano pracowałem z dziadkiem w ogrodzie, a po obiedzie chodziłem z kolegami nad rzekę.<br><b>Olena:</b> A babcia?<br><b>Tomek:</b> Babcia siedziała na ławce przed domem i opowiadała nam o swojej młodości. Była nauczycielką w szkole w Krynicy.<br><b>Olena:</b> A pamiętasz jakąś przygodę?<br><b>Tomek:</b> Pewnie! Raz zgubiłem się w lesie. Wróciłem do domu dopiero wieczorem.<br><b>Olena:</b> I co powiedział dziadek?<br><b>Tomek:</b> Nic nie powiedział, tylko dał mi kolację. Ale następnego dnia kupił mi kompas.<br><b>Olena:</b> Super! Mam podobne zdjęcie z babcią ze Lwowa. Jutro ci je pokażę.
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 P · 2 F (pod Nowym Sączem) · 3 P · 4 F (nauczycielką).<br><b>Ключ e3:</b> 1 na ławce przed domem · 2 Tomek zgubił się w lesie · 3 pokaże mu swoje zdjęcie z babcią.
-
-Після перевірки: учень шукає в транскрипті щонайменше 4 форми місцевого (<i>przy samochodzie, na wsi, w ogrodzie, o młodości, w lesie</i>) і пояснює <i>w lesie</i> (виняток з таблиці). Потім c1.
 
 ---
 

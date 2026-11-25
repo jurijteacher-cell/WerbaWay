@@ -33,12 +33,11 @@ teacherOf: pl-b1-group-r4-powtorka
 | --- | --- | --- |
 | 0–5 | Розігрів | Ланцюжок «Dziękuję za… / Zależy mi na… / Martwię się o…» — по 2 речення про себе. |
 | 5–30 | 3. Mapa: керування, пасив, <i>-no / -to</i>, іменники + ćw. 3–5 | «Новини з Залесся»: учень переказує текст у пасиві (<i>Przedszkole zostało otwarte…, Dodano autobus…</i>). Вправи 3–5; ćw. 5 учень читає оголошення цілим. |
-| 30–40 | 4. Słuchanie (e2) | 1 хв на питання; читаєш діалог двічі з нормальною швидкістю. Потім — транскрипт. |
 | 40–65 | 5. Speaking marathon | 6 карток × 1 хв + 2–3 хв розбору. У c2, c3, c4, c6 ти граєш другу роль (у c3 спершу читаєш повідомлення бабусі — нижче). |
 | 65–80 | 6. Mini-test (e3) | 12 хв без нотаток, 3 хв — розбір помилок за номерами лекцій (таблиця нижче). |
 | 80–90 | 7–8. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити обидва тексти письма й час 75 хв. |
 
-<b>Формат 3 × 60:</b> ① Czytanie, e1, Słownictwo, Mapa (причина, <i>dzięki / przez</i>), ćw. 1 · ② Mapa (допуст, <i>natomiast</i>, непряма мова, керування, пасив, іменники), ćw. 2–5 · ③ e2, Speaking marathon, Mini-test, Podsumowanie, ДЗ.
+<b>Формат 3 × 60:</b> ① Czytanie, e1, Słownictwo, Mapa (причина, <i>dzięki / przez</i>), ćw. 1 · ② Mapa (допуст, <i>natomiast</i>, непряма мова, керування, пасив, іменники), ćw. 2–5 · ③ Speaking marathon, Mini-test, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -57,26 +56,6 @@ teacherOf: pl-b1-group-r4-powtorka
 - <b>Керування.</b> Порівнюй з українським: <i>dziękować za</i> = «дякувати за» (легко), <i>martwić się o</i> + З ≠ «турбуватися про» (часто «o synu»), <i>szukać</i> + Р ≠ «шукати роботу» (З).
 - <b>Пасив.</b> <i>Zostać</i> — подія («став / був зроблений одного разу»), <i>być</i> — стан або процес зараз. Форми на <i>-no / -to</i> — як укр. «збудовано, відкрито»: тут учням легко, головне — знахідний після них (<i>zamknięto szkołę</i>).
 - <b>Віддієслівні іменники.</b> Від основи дієприкметника: <i>zrobiony → zrobienie</i>, <i>zamknięty → zamknięcie</i>. Після них — родовий.
-
----
-
-## 🎧 Транскрипт e2 (читаєш сам двічі; голоси для озвучення: Olena — W1, rekruterka — W2)
-
-<b>Rekruterka:</b> Dzień dobry, mówi Karolina Wiśniewska z firmy Ekobud w Lublinie. Dzwonię w sprawie pani zgłoszenia do działu obsługi klienta.
-<b>Olena:</b> Dzień dobry! Bardzo się cieszę. Mam kilka pytań. Czy to jest praca zdalna?
-<b>Rekruterka:</b> Hybrydowa. W poniedziałki i w czwartki pracujemy w biurze, a pozostałe trzy dni z domu.
-<b>Olena:</b> A gdybym mieszkała na wsi, czterdzieści kilometrów od Lublina?
-<b>Rekruterka:</b> To nie problem, wiele osób dojeżdża. Chociaż biuro jest w centrum, mamy parking dla pracowników.
-<b>Olena:</b> Jaką umowę państwo proponują?
-<b>Rekruterka:</b> Na początek umowę o pracę na okres próbny, na trzy miesiące. Potem — na czas nieokreślony.
-<b>Olena:</b> A komputer? Muszę mieć własny?
-<b>Rekruterka:</b> Nie, laptop i słuchawki zostaną pani przekazane pierwszego dnia. Firma płaci też część rachunku za internet.
-<b>Olena:</b> Świetnie. A kiedy jest rozmowa kwalifikacyjna?
-<b>Rekruterka:</b> Proponuję wtorek o dziesiątej, w biurze. Proszę wziąć dowód osobisty i dyplom.
-<b>Olena:</b> Wtorek mi pasuje. Dziękuję za telefon!
-<b>Rekruterka:</b> Do zobaczenia we wtorek.
-
-<b>Ключі e2:</b> 1 dwa · 2 umowę o pracę na okres próbny · 3 laptop i słuchawki · 4 za internet · 5 dowód osobisty i dyplom.
 
 ---
 

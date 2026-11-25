@@ -173,7 +173,7 @@ Polecenie i celownik często idą razem: <i>Podaj mi telefon. Pomóż jej. Daj m
 
 <aside class="lp-callout" data-tone="pink"><span class="lp-callout-icon" aria-hidden="true">⚡</span><div class="lp-callout-body">
 
-Nauczyciel czyta sytuację, Ty od razu reagujesz jednym poleceniem albo prośbą — z <i>komu</i>, jeśli się da. Najpierw na <i>ty</i>, potem grzecznie, do pani albo pana.
+Przeczytaj sytuację i od razu zareaguj jednym poleceniem albo prośbą — z <i>komu</i>, jeśli się da. Najpierw na <i>ty</i>, potem grzecznie, do pani albo pana.
 
 </div></aside>
 

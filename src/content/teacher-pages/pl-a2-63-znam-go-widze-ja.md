@@ -23,10 +23,10 @@ teacherOf: pl-a2-63-znam-go-widze-ja
 | 3–12 | 1. Czytanie + e1 | Читає вголос по абзацах. Після кожного: «Kogo?» — учень називає виділені форми й мовчки ділить на «osoba / zwierzę». 4 питання усно, потім e1. |
 | 12–18 | 2. Słownictwo + ćw. 1 | Картки по групах; зупинись на двох значеннях <i>poznać</i> і на <i>odebrać kogo z dworca</i>. Потім g1. |
 | 18–38 | 3. Gramatyka + g2–g3 | «Osoba czy rzecz?» → закінчення → <i>-ego</i> → займенники → дієслова → <i>ich / je</i> → винятки → пастки. g2–g3 разом на екрані. g4–g5 — якщо лишився час. |
-| 38–55 | 4. Słuchanie + c1, c2 | e2–e3 (2 відтворення, пауза 10 с), потім транскрипт: учень шукає 5 форм знахідного істот. c1 → c2, ти граєш шефа й колегу. |
+| 38–55 | 4. c1, c2 | c1 → c2, ти граєш шефа й колегу. |
 | 55–60 | 5. Podsumowanie + ДЗ | Чекліст, повернення до людини з розминки (3 речення). Поясни письмо. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, Gramatyka до «Zaimki», g2–g3 · ② решта граматики, g4–g5, Słuchanie, c1, c2, Podsumowanie, ДЗ.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, Gramatyka до «Zaimki», g2–g3 · ② решта граматики, g4–g5, c1, c2, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -55,20 +55,6 @@ teacherOf: pl-a2-63-znam-go-widze-ja
 4. Tomka od razu polubiła; pana Piotra lubi, ale trochę się go boi. W piątek Olena zaprasza Tomka i Kasię.
 
 <b>e1:</b> F · P · F · P · F.
-
----
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): Kasia — <code>F4S1QHSHuBfGEaPzx8aN</code>, pani Halina (mama) — <code>cnYygtdARUZ1LhB2crKx</code>. Аудіо згенеровано 19.11.2026 (53 с) і стоїть на сторінці TEACHER у Notion; файл для плеєра LMS: <code>public/audio/pl-a2-63-znam-go-widze-ja-e2-dialog.mp3</code>.
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Kasia:</b> Dzień dobry! Jestem Kasia, koleżanka Oleny. Bardzo mi miło Panią poznać!<br><b>Pani Halina:</b> Mnie też, Kasiu! Olena dużo o tobie opowiadała.<br><b>Kasia:</b> Długo zostanie Pani w Krakowie?<br><b>Pani Halina:</b> Dwa tygodnie. Dłużej nie mogę, bo zostawiłam męża samego z kotem.<br><b>Kasia:</b> Ha, ha! A ma Pani jeszcze dzieci?<br><b>Pani Halina:</b> Tak, mam też syna, Andrija. Mieszka w Kijowie z żoną i synkiem.<br><b>Kasia:</b> Czyli ma Pani już wnuka!<br><b>Pani Halina:</b> Tak, małego Marka. Ma trzy lata. Niestety widzę go tylko przez internet.<br><b>Kasia:</b> A Tomka i pana Piotra już Pani poznała?<br><b>Pani Halina:</b> Tak, w poniedziałek. Pan Piotr wygląda bardzo poważnie, ale pokazał mi zdjęcie swojego psa i rozmawialiśmy pół godziny!<br><b>Kasia:</b> Psa? A Olena mówi, że on w ogóle się nie uśmiecha!
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 P · 2 F (męża zostawiła z kotem) · 3 P · 4 F (widzi go tylko przez internet).<br><b>Ключ e3:</b> 1 trzy lata · 2 z kotem · 3 zdjęcie swojego psa.<br><b>Пастки:</b> e3-2 — <i>psa</i> звучить наприкінці, але це пес пана Пйотра; e3-3 — «syn» є в тексті читання (у пана Пйотра малий син), але показав він фото пса.
 
 ---
 

@@ -23,10 +23,10 @@ teacherOf: pl-a2-67-jest-mi-zimno
 | 3–12 | 1. Czytanie + e1 | Читає вголос. Після кожного абзацу: «Komu?» — учень називає, хто що отримує. 4 питання усно, потім e1. |
 | 12–18 | 2. Słownictwo + ćw. 1 | Картки по групах; зупинись на <i>boli mnie</i> (не <i>mi</i>), <i>Co Pani dolega?</i>, <i>pani doktor</i>. Потім g1. |
 | 18–38 | 3. Gramatyka + g2–g3 | «Komu?» → закінчення → <i>-emu / -ej</i> → займенники → дієслова → <i>jest mi zimno</i> → винятки → пастки. g2–g3 разом на екрані. g4–g5 — якщо лишився час. |
-| 38–55 | 4. Słuchanie + c1, c2 | e2–e3 (2 відтворення, пауза 10 с), потім транскрипт: учень шукає всі форми давального (8). c1 → c2, ти граєш лікарку й колегу. |
+| 38–55 | 4. c1, c2 | c1 → c2, ти граєш лікарку й колегу. |
 | 55–60 | 5. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки (<i>robię mu / jej…</i>). Поясни письмо. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, Gramatyka до «Zaimki», g2–g3 · ② решта граматики, g4–g5, Słuchanie, c1, c2, Podsumowanie, ДЗ.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, Gramatyka до «Zaimki», g2–g3 · ② решта граматики, g4–g5, c1, c2, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -55,20 +55,6 @@ teacherOf: pl-a2-67-jest-mi-zimno
 4. Napisała Tomkowi: „Dziękuję ci za pomoc! Mamie jest już trochę lepiej”.
 
 <b>e1:</b> F · P · F · P · F.
-
----
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): Olena — W1 <code>mQq2zdGT1zEfDbh8W95l</code>, farmaceutka — W2 <code>gHGjEjdr2LBds0XHTsvg</code>. Аудіо згенеровано 19.11.2026 (53 с) і стоїть на сторінці TEACHER у Notion; файл для плеєра LMS: <code>public/audio/pl-a2-67-jest-mi-zimno-e2-dialog.mp3</code>.
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Farmaceutka:</b> Dzień dobry, słucham Panią.<br><b>Olena:</b> Dzień dobry. Mam receptę dla mamy. Pani doktor przepisała jej syrop i tabletki na gardło.<br><b>Farmaceutka:</b> Proszę pokazać… Dobrze. Syrop mamy, ale tabletek dziś nie ma. Będą jutro po dwunastej.<br><b>Olena:</b> Szkoda. A może Pani mi coś poleci na dziś? Mamę bardzo boli gardło.<br><b>Farmaceutka:</b> Polecam te pastylki z miodem. Smakują nawet dzieciom.<br><b>Olena:</b> A czy mama może pić herbatę z cytryną?<br><b>Farmaceutka:</b> Oczywiście, ciepła herbata dobrze jej zrobi. Ale nie gorąca!<br><b>Olena:</b> A syrop — ile razy dziennie?<br><b>Farmaceutka:</b> Trzy razy dziennie po jedzeniu. Czy mamie jest zimno?<br><b>Olena:</b> Tak, raz zimno, raz gorąco.<br><b>Farmaceutka:</b> To proszę jej mierzyć temperaturę rano i wieczorem.<br><b>Olena:</b> Dziękuję Pani bardzo!<br><b>Farmaceutka:</b> Nie ma za co. Życzę mamie zdrowia!
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 F (dla mamy) · 2 P · 3 P · 4 F (ciepła herbata — tak, gorąca — nie).<br><b>Ключ e3:</b> 1 jutro po dwunastej · 2 trzy razy dziennie, po jedzeniu · 3 mierzyć mamie temperaturę.<br><b>Пастки:</b> e2-4 — «ale nie gorąca» звучить як заборона; e3-1 — «rano» звучить наприкінці про температуру; e3-2 — «trzy razy» є у двох варіантах.
 
 ---
 

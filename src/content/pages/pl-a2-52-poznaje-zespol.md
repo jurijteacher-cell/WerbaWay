@@ -216,14 +216,6 @@ Zaimki <i>ja, ty, on, ona…</i> zmieniają formę jak rzeczowniki. Dziś trzy p
 
 ## 🎭 4. Zadania komunikacyjne
 
-### 🎧 Słuchanie jak na egzaminie
-
-Olena pyta Tomka o ludzi w biurze. Posłuchaj rozmowy dwa razy — bez tekstu — i odpowiedz na pytania. Tekst rozmowy zobaczysz po sprawdzeniu.
-
-<embed source="https://werba-way.vercel.app/embed/pl-a2-52-poznaje-zespol/exam?blocks=e2">
-Słuchanie — jak na egzaminie
-</embed>
-
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🧰</span><div class="lp-callout-body">
 
 <b>Warto użyć</b>

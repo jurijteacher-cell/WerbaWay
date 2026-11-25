@@ -111,24 +111,6 @@ oni: ja, -ę → -ą → kończą   (czytam → czytają, rozumiem → rozumiej�
 
 ---
 
-## 🎧 Діалог-зразок до c1 (читаєш ти, двічі)
-
-Перед читанням дай 3 питання (нижче). Вона не бачить тексту. Потім вона робить таке саме інтерв'ю з тобою (картка c1).
-
-<aside class="lp-callout" data-tone="purple"><span class="lp-callout-icon" aria-hidden="true">🟣</span><div class="lp-callout-body">
-
-<b>Dziennikarka:</b> Dzień dobry, panie Tomaszu. Pan jest motorniczym, prawda?<br><b>Tomasz:</b> Tak, od dwunastu lat prowadzę tramwaj we Wrocławiu.<br><b>Dziennikarka:</b> O której pan zaczyna pracę?<br><b>Tomasz:</b> Bardzo wcześnie. Wstaję o czwartej, a o piątej już pracuję.<br><b>Dziennikarka:</b> O czwartej! A co pan je na śniadanie?<br><b>Tomasz:</b> Rano nic nie jem, piję tylko kawę. Jem o dziewiątej, na przerwie.<br><b>Dziennikarka:</b> Co pan robi po pracy?<br><b>Tomasz:</b> Zwykle śpię godzinę, a potem pomagam żonie w domu.<br><b>Dziennikarka:</b> Pana żona też pracuje?<br><b>Tomasz:</b> Tak, uczy w szkole. Nasze córki już nie mieszkają z nami — studiują w Krakowie.<br><b>Dziennikarka:</b> A w weekend?<br><b>Tomasz:</b> W weekend nigdy nie wstaję wcześnie! Razem z żoną jeździmy na rowerach.
-
-</div></aside>
-
-<b>Питання на слухання і ключі:</b>
-
-1. O której pan Tomasz wstaje? → <b>o czwartej</b>
-1. Kiedy je pierwszy posiłek? → <b>o dziewiątej, na przerwie</b> (рано тільки кава)
-1. Gdzie są jego córki i co robią? → <b>w Krakowie, studiują</b>. Допитай: «córki — oni czy one?» → <b>one</b>
-
----
-
 ## 🔑 Ключі до Pytań do tekstu
 
 1. Emma jest z Anglii (jest Angielką) i mieszka w Polsce od trzech lat.

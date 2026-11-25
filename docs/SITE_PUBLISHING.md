@@ -17,8 +17,8 @@ src/content/queue-published/<id>-*.json  вправи: vocab, grammar, hw, comm-
 src/content/audio/<id>.json              сценарій озвучення
 src/content/i18n/pages|exercises/…       переклади (ru, pl, en) — карти { ключ: переклад }
 content-queue/_manifest.json             реєстр опублікованих уроків
-content-queue/audio-ready.json           { lesson_id: [audio_id…] } — аудіо з ready: true
-content-queue/audio-pending/             блоки слухання, що чекають аудіо
+content-queue/audio-ready.json           (історичний; аудіювання лише в екзаменах, лекції його не мають)
+content-queue/audio-pending/             (історичний)
 docs/ · scripts/ · supabase/migrations/
 ```
 

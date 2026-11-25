@@ -266,12 +266,6 @@ Wylosuj sygnał: <i>codziennie · wreszcie · przez tydzień · jutro · teraz �
 
 </div></aside>
 
-🎧 <b>Najpierw posłuchaj.</b> Nauczyciel przeczyta rozmowę Doroty i Ani. Potem odpowiedz ustnie:
-
-1. W którym tygodniu ciąży jest Dorota i czego się boi?
-1. Co Ania radzi zrobić najpierw, a czego Dorota nie musi robić?
-1. Czego Ania żałuje ze swojej ciąży?
-
 👉 <b>Teraz Twoja kolej.</b> Trzy sytuacje — odwróć kartę i odegraj rozmowę, z innymi szczegółami.
 
 <embed source="https://werba-way.vercel.app/embed/pl-preg-r5-powtorka/comm-tasks">

@@ -23,10 +23,10 @@ teacherOf: pl-a2-64-jak-wyglada
 | 3–12 | 1. Czytanie + e1 | Читає вголос. Після тексту: учень називає відмінок кожної виділеної форми (<i>bez swojej czarnej torby</i> — dopełniacz…). 4 питання усно, потім e1. |
 | 12–18 | 2. Słownictwo + ćw. 1 | Картки; учень описує тебе: «Jest Pan / Pani w…, ma…». Зупинись на <i>włosy / spodnie / okulary</i> (лише множина) і <i>niebieski ≠ siny</i>. Потім g1. |
 | 18–38 | 3. Gramatyka + g2–g3 | Таблиця «п'ять відмінків» → чотири закінчення → опис особи → опис речі → питання → увага → пастки. g2–g3 разом на екрані. g4–g5 — якщо лишився час. |
-| 38–55 | 4. Słuchanie + c1, c2 | e2–e3 (2 відтворення, пауза 10 с), потім транскрипт: учень підкреслює всі прикметники й називає відмінок. c1 → c2, ти граєш працівника бюро й незнайомця на вокзалі. |
+| 38–55 | 4. c1, c2 | c1 → c2, ти граєш працівника бюро й незнайомця на вокзалі. |
 | 55–60 | 5. Podsumowanie + ДЗ | Чекліст, повернення до речі з розминки (3 речення). Поясни письмо. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, Gramatyka до «Jak ktoś wygląda?», g2–g3 · ② решта граматики, g4–g5, Słuchanie, c1, c2, Podsumowanie, ДЗ.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, Gramatyka до «Jak ktoś wygląda?», g2–g3 · ② решта граматики, g4–g5, c1, c2, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -55,20 +55,6 @@ teacherOf: pl-a2-64-jak-wyglada
 4. Bez swojego ulubionego szalika. Jutro rano pojadą do Biura Rzeczy Znalezionych.
 
 <b>e1:</b> F · P · P · F · P.
-
----
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): pani Halina (mama) — <code>cnYygtdARUZ1LhB2crKx</code>, pracownik biura — M1 <code>p0KQaxqGrT7xcRWSJiHp</code>. Аудіо згенеровано 19.11.2026 (58 с) і стоїть на сторінці TEACHER у Notion; файл для плеєра LMS: <code>public/audio/pl-a2-64-jak-wyglada-e2-dialog.mp3</code>.
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Pracownik:</b> Dzień dobry, w czym mogę pomóc?<br><b>Pani Halina:</b> Dzień dobry. Wczoraj zostawiłam torbę w tramwaju numer osiem.<br><b>Pracownik:</b> Jak wygląda ta torba?<br><b>Pani Halina:</b> Jest czarna, ze skóry, z długim paskiem. Z przodu ma małą złotą kieszeń.<br><b>Pracownik:</b> Mamy tu czarną torbę, ale z krótkim paskiem i bez kieszeni.<br><b>Pani Halina:</b> Nie, to nie moja. Moja jest duża i ma złotą kieszeń.<br><b>Pracownik:</b> A co było w środku?<br><b>Pani Halina:</b> Czerwony portfel, okulary w niebieskim etui i zielony szalik.<br><b>Pracownik:</b> Chwileczkę… Tak, jest! Znalazł ją kierowca. Czarna torba z długim paskiem, a w środku zielony szalik.<br><b>Pani Halina:</b> Dzięki Bogu! A portfel?<br><b>Pracownik:</b> Portfel też jest. Proszę pokazać dowód osobisty albo paszport.<br><b>Pani Halina:</b> Proszę, oto mój paszport.<br><b>Pracownik:</b> Dziękuję. Proszę tu podpisać. I następnym razem proszę uważać na torbę!
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 F (w tramwaju) · 2 P · 3 F (czerwony portfel; niebieskie jest etui) · 4 P.<br><b>Ключ e3:</b> 1 czarna, z długim paskiem i małą kieszenią · 2 okulary · 3 paszport.<br><b>Пастки:</b> e2-3 — «niebieskim» звучить поруч із «portfel»; e3-1 — варіант b — це перша торба, яку показує працівник; e3-3 — працівник називає і <i>dowód osobisty</i>, і <i>paszport</i>.
 
 ---
 

@@ -31,9 +31,7 @@ cover: https://images.unsplash.com/photo-1766792853044-bd397f7b76e9?w=1600&h=900
 
 ### 📋 Notatka Natalii dla pani Joanny
 
-Natalia pisze do szefowej notatkę po spotkaniu z państwem Lisami. Posłuchaj i czytaj. Zauważ: jak Natalia opisuje klientów, mieszkania, pokoje i sąsiadów. Zwróć uwagę na końcówki przymiotników.
-
-<audio controls preload="none" src="https://werba-way.vercel.app/audio/pl-nier-04-rodzaj-i-przymiotnik-czytanie.mp3"></audio>
+Natalia pisze do szefowej notatkę po spotkaniu z państwem Lisami. Przeczytaj tekst. Zauważ: jak Natalia opisuje klientów, mieszkania, pokoje i sąsiadów. Zwróć uwagę na końcówki przymiotników.
 
 Pani Joanno, państwo Lisowie to wymagający klienci, ale bardzo mili. Marta i Paweł są zdecydowani: chcą kupić mieszkanie jeszcze w tym roku. Mają dwoje dzieci, więc potrzebują trzech pokoi i cichej dzielnicy. Paweł chce też mieć miejsce w garażu. Budżet to około siedmiuset dwudziestu tysięcy złotych.
 

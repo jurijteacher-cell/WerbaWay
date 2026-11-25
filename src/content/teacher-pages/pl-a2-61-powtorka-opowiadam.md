@@ -23,11 +23,10 @@ teacherOf: pl-a2-61-powtorka-opowiadam
 | 3–12 | 1. Czytanie + e1 | Читає вголос по днях. Після кожного запису питай: «Proces czy wynik? Kiedy? Gdzie? O czym?» — учень сам називає тему модуля у виділеному. 4 питання усно й e1. |
 | 12–16 | 2. Słownictwo | Картки — швидко; група «Z pamiętnika» (5 нових) — уважно. Решта — «впізнав / не впізнав». |
 | 16–34 | 3. Mapa + g1–g3 | По блоку мапи — 2–3 хв: учень сам формулює правило, ти лише читаєш 📌. Потім g1–g3 на екрані разом. |
-| 34–40 | 4. Słuchanie (e2–e3) | 30 с на читання пунктів, 2 відтворення, перевірка. Потім транскрипт: учень шукає три форми майбутнього доконаного і одне <i>zanim / kiedy</i>. |
 | 40–55 | 5. Speaking marathon | 4 × 1 хв + 2 хв на виправлення після кожної хвилини. Під час хвилини не перебивай — записуй помилки. |
 | 55–60 | 6. Podsumowanie + ДЗ | Чекліст «umiem / jeszcze nie», повернення до слова з розминки. Те, що «jeszcze nie», — записати: це пріоритет перед контрольною 62. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, мапа, g1–g4 · ② Słuchanie, speaking marathon, Podsumowanie, ДЗ + 10 хв на слабкі теги з чекліста.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, мапа, g1–g4 · ② speaking marathon, Podsumowanie, ДЗ + 10 хв на слабкі теги з чекліста.
 
 ### Учень швидший / повільніший
 
@@ -52,22 +51,6 @@ teacherOf: pl-a2-61-powtorka-opowiadam
 1. Kupi Tomkowi prezent (może książkę o Tatrach); myślała o starym mieszkaniu we Lwowie.
 
 <b>e1:</b> 1 P · 2 F (notatki robił Tomek) · 3 P · 4 F (dwa tygodnie temu) · 5 P.
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Озвучено 18.11.2026 (ElevenLabs, ≈45 с): аудіо лежить на <a href="https://app.notion.com/p/41b96e03c7c8817c97f1df5fb382ef47">сторінці TEACHER у Notion</a>. Плеєр у вікні вправи мовчить, поки mp3 немає в репо. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): Olena — W1 <code>mQq2zdGT1zEfDbh8W95l</code>; мама (pani Halina) — «Seniora Ola» <code>cnYygtdARUZ1LhB2crKx</code>. Файл для плеєра LMS: <code>public/audio/pl-a2-61-powtorka-opowiadam-e2-dialog.mp3</code> (ще не покладено).
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Mama:</b> Cześć, córeczko! Masz chwilę?<br><b>Olena:</b> Cześć, mamo! Tak, właśnie wróciłam z pracy. Co słychać?<br><b>Mama:</b> Kupiłam już bilet do Krakowa! Przyjadę za trzy tygodnie, w sobotę, autobusem.<br><b>Olena:</b> Super! Odbiorę cię z dworca. O której przyjedzie autobus?<br><b>Mama:</b> O siódmej rano. Zanim przyjadę, napiszę ci SMS-a.<br><b>Olena:</b> Dobrze. Kiedy odpoczniesz, pójdziemy na spacer po Kazimierzu.<br><b>Mama:</b> A pamiętasz panią Marię z naszego bloku? Wczoraj długo rozmawiałam z nią o tobie.<br><b>Olena:</b> Naprawdę? Co u niej?<br><b>Mama:</b> Wszystko dobrze. Pyta, kiedy przyjedziesz do Lwowa.<br><b>Olena:</b> Powiedz jej, że w lipcu, na wesele mojej przyjaciółki.<br><b>Mama:</b> Dobrze. To do zobaczenia za trzy tygodnie!
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 F (autobusem) · 2 P · 3 P · 4 F (w lipcu).<br><b>Ключ e3:</b> 1 napisze SMS-a · 2 pójdą na spacer po Kazimierzu · 3 sąsiadką z bloku.
-
-Сюжет: поїздка Олени до Львова в липні на весілля подруги — з карти (урлоп 5–16.07.2027). Приїзд мами «za trzy tygodnie» — місток до M3 (63); точної дати навмисно немає.
-
----
 
 ## 👂 Типові помилки, які ловити в marathon
 

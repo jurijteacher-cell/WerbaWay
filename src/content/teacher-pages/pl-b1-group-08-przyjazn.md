@@ -39,7 +39,7 @@ teacherOf: pl-b1-group-08-przyjazn
 | 65–85 | 4. c2, c4 (c3 — за часом) | c2: ти — ображений друг, не прощай одразу. c4: монолог 2–3 хв + твої питання нижче. c3 — якщо лишилося 5+ хв. |
 | 85–90 | 7–8. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити ДЗ. |
 
-<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1, Praktyka mówienia · ② Gramatyka cz. 1, ćw. 2–5, e2, c1, c2 · ③ Gramatyka cz. 2, ćw. 6–9, c3, c4, Podsumowanie, ДЗ.
+<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1, Praktyka mówienia · ② Gramatyka cz. 1, ćw. 2–5, c1, c2 · ③ Gramatyka cz. 2, ćw. 6–9, c3, c4, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -58,18 +58,6 @@ teacherOf: pl-b1-group-08-przyjazn
 - <b>Ktoś / nikt.</b> Тут українська допомагає: <i>-сь → -ś</i>, подвійне заперечення таке саме. Нове: відмінки (<i>nikogo, nikomu, z nikim</i>) і родовий після <i>nie</i> (повторення №2 U lekarza: <i>nie widzę niczego, nie znam jej, nie zostawiłam telefonu</i>).
 - <b>Nikt + czasownik.</b> Лови на слух <i>nikt z nas nie wiedzieliśmy</i> — дуже часта помилка в усному мовленні. Для жіночої групи — <i>żadna z nas</i> (так у тексті).
 - <b>Pułapki.</b> Найбільше «ого» звичайно викликають <i>zadzwonię do niego</i> (а не <i>mu</i>) і <i>on nie ma czasu</i> (а не <i>u niego nie ma czasu</i>). Прочитай українську колонку вголос — хай учень сам скаже, як «просилося».
-
----
-
-## 🎧 Діалог для e2 (читаєш двічі, учень без тексту)
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Oksana:</b> Halo, Olena? Tu Oksana. Pamiętasz mnie jeszcze?<br><b>Olena:</b> Oksana! Oczywiście! Ile lat się nie słyszałyśmy? Chyba pięć?<br><b>Oksana:</b> Sześć. Przepraszam, że się nie odzywałam. Po przeprowadzce do Lizbony miałam w głowie tylko pracę i nowy język.<br><b>Olena:</b> Nic nie szkodzi. Ja też do ciebie nie napisałam. Co u ciebie słychać?<br><b>Oksana:</b> Dobrze. Pracuję w hotelu, a w zeszłym roku wyszłam za mąż. Mój mąż jest Portugalczykiem, ma na imię Rui.<br><b>Olena:</b> Gratulacje! A skąd masz mój numer?<br><b>Oksana:</b> Od Iry. Znalazłam ją w internecie i od razu do niej napisałam.<br><b>Olena:</b> Ira zawsze wszystko wie o wszystkich! Słuchaj, musimy nadrobić zaległości. Może rozmowa wideo w sobotę?<br><b>Oksana:</b> W sobotę pracuję do szesnastej, a potem nie mam sił. Może w niedzielę wieczorem?<br><b>Olena:</b> W niedzielę o dwudziestej?<br><b>Oksana:</b> U nas to będzie dziewiętnasta — idealnie.<br><b>Olena:</b> Super. A przyjedziesz kiedyś do Polski?<br><b>Oksana:</b> W maju lecę do Krakowa na wesele kuzynki. Potem mogę przyjechać do was pociągiem.<br><b>Olena:</b> Cudownie! Czekam na ciebie. Do niedzieli!
-
-</div></aside>
-
-Ключ e2: після переїзду думала лише про роботу і нову мову · від Іри · у неділю о 20:00 часу Олени · на весілля кузини. Після e2 зверни увагу на <i>do ciebie, do niej, ją, do was, na ciebie</i> і <i>nic nie szkodzi</i>. Потім c1 з іншими деталями.
 
 ---
 

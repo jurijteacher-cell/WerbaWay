@@ -284,19 +284,7 @@ Zadania komunikacyjne
 
 ---
 
-## 🎧 7. Słuchanie jak na egzaminie
-
-<aside class="lp-callout" data-tone="blue"><span class="lp-callout-icon" aria-hidden="true">🎧</span><div class="lp-callout-body">
-
-Cztery krótkie dialogi w urzędzie — tak jak w zadaniu ze słuchu na egzaminie państwowym B1. Najpierw przeczytaj pytania. Nagranie możesz odtworzyć <b>dwa razy</b>.
-
-</div></aside>
-
-<embed source="https://werba-way.vercel.app/embed/pl-b1-group-14-urzad/exam?blocks=e2">
-Słuchanie — jak na egzaminie
-</embed>
-
-### 🧩 Elementy języka — jak na egzaminie telc
+## 🧩 7. Elementy języka — jak na egzaminie telc
 
 <b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
 

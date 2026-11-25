@@ -56,12 +56,6 @@ A jak Wy obchodzicie święta? Napisz!<br>Ściskam Cię mocno,<br>babcia Halina
 
 ### ❓ Pytania do tekstu
 
-<aside class="lp-callout" data-tone="orange"><span class="lp-callout-icon" aria-hidden="true">🔢</span><div class="lp-callout-body">
-
-<b>Najpierw zgadnij: co to jest?</b> Zamknij tekst. Nauczyciel mówi liczbę albo datę, a Ty szybko mówisz, co to jest. Na przykład: <i>dwanaście</i> → <i>Dwanaście potraw na stole!</i>
-
-</div></aside>
-
 1. Kiedy jest Wigilia? Co rodzina robi rano, a co wieczorem?
 1. Co Polacy jedzą w Wigilię? Czego nie jedzą?
 1. Po co jest puste miejsce przy stole?

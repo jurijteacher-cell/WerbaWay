@@ -31,9 +31,7 @@ cover: https://images.unsplash.com/photo-1642751652611-bb9a7cad58a3?w=1600&h=900
 
 ### 🌷 Umowa dla pani Natalii
 
-Pani Iwona chce zatrudnić pracownicę na święta. <b>Posłuchaj i czytaj. Przeczytaj też na głos wszystkie kwoty i daty.</b>
-
-<audio controls preload="none" src="https://werba-way.vercel.app/audio/pl-ksieg-06-umowy-zus-lista-plac-czytanie.mp3"></audio>
+Pani Iwona chce zatrudnić pracownicę na święta. <b>Przeczytaj tekst. Wszystkie kwoty i daty przeczytaj też na głos.</b>
 
 Jest poniedziałek, 30 listopada. Pani Iwona przychodzi do biura Haliny z jednym pytaniem.
 
@@ -236,16 +234,6 @@ Umowa <b>jest podpisana</b>.<br>Umowa <b>została podpisana</b> wczoraj.<br>Prac
 ---
 
 ## 🎭 5. Zadania komunikacyjne
-
-### 🎧 Najpierw posłuchaj
-
-Pani Natalia dostała przykładowy pasek wynagrodzenia i prosi Halinę o wyjaśnienie. Posłuchaj rozmowy.
-
-<audio controls preload="none" src="https://werba-way.vercel.app/audio/pl-ksieg-06-umowy-zus-lista-plac-dialog.mp3"></audio>
-
-<embed source="https://werba-way.vercel.app/embed/pl-ksieg-06-umowy-zus-lista-plac/grammar?blocks=l1">
-Słuchanie — pasek wynagrodzenia
-</embed>
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🧰</span><div class="lp-callout-body">
 

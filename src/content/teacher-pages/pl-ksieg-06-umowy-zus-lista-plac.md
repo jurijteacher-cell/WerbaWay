@@ -22,7 +22,7 @@ teacherOf: pl-ksieg-06-umowy-zus-lista-plac
 | 4–14 | 1. Czytanie | Слухає й читає вголос з усіма сумами й датою. Потім t1 і t2 (8 пропусків). 4 питання — усно. |
 | 14–19 | 2. Słownictwo | Картки швидко, лише «не знаю». Вправа g1. |
 | 19–42 | 4. Gramatyka (сходинки) | Сходинка 1 + g2 — 6 хв · сходинка 2 + g3 — 7 хв · сходинка 3 + g4 + g5 — 8 хв · сходинка 4 + g6 — 4 хв (якщо не вміщується — наступне заняття). |
-| 42–56 | 5. Zadania | l1 (слухання) 3 хв, c1 (ти — Halina) 6 хв, c2 (ти — pan Kuba) 5 хв. |
+| 42–56 | 5. Zadania | c1 (ти — Halina) 6 хв, c2 (ти — pan Kuba) 5 хв. |
 | 56–60 | 6–7. Podsumowanie + DZ | Чекліст, повернення до речення з розминки, показати ДЗ. |
 
 Розділ 3 «Praktyka mówienia» — у ДЗ-розмову або вдома. g7–g8 — наступне заняття або вдома.
@@ -64,12 +64,6 @@ teacherOf: pl-ksieg-06-umowy-zus-lista-plac
 - 5 790,28 zł → pięć tysięcy siedemset dziewięćdziesiąt złotych dwadzieścia osiem groszy
 - do 20. dnia → <b>do dwudziestego dnia</b>; do 10. dnia → <b>do dziesiątego dnia</b>
 - 31,40 zł → trzydzieści jeden złotych czterdzieści groszy; 35 zł → trzydzieści pięć złotych
-
-## 🎧 Аудіо та транскрипти
-
-Озвучено сайтом (ElevenLabs): `pl-ksieg-06-umowy-zus-lista-plac-czytanie.mp3` (текст з розділу 1) і `…-dialog.mp3` (розмова Haliny з pani Natalią до вправи l1). Транскрипт діалогу:
-
-<b>Natalia:</b> Pani Halino, dostałam przykładowy pasek wynagrodzenia i nie rozumiem go. W umowie jest 4 806 zł, a na konto przyjdzie mniej.<br><b>Halina:</b> To normalne. 4 806 zł to wynagrodzenie brutto. Z brutto zostały potrącone składki na ZUS, składka zdrowotna i zaliczka na podatek.<br><b>Natalia:</b> Ile tego jest?<br><b>Halina:</b> Składki pracownika to 658,91 zł. Składka zdrowotna to 373,24 zł. Zaliczka na podatek to 168 zł. Na konto zostanie przelane 3 605,85 zł.<br><b>Natalia:</b> A czy to wszystko płacę ja?<br><b>Halina:</b> Tak, ale nie wpłaca pani tego sama. Składki są odprowadzane przez pracodawcę, w pani imieniu. Pracodawca dopłaca jeszcze swoje składki — prawie tysiąc złotych.<br><b>Natalia:</b> Po co są te składki?<br><b>Halina:</b> Dzięki nim jest pani ubezpieczona: ma pani zasiłek chorobowy, emeryturę i opiekę zdrowotną.<br><b>Natalia:</b> A kiedy dostanę pieniądze?<br><b>Halina:</b> Wypłata jest przelewana do dziesiątego dnia następnego miesiąca.<br><b>Natalia:</b> Dziękuję. Teraz to rozumiem.
 
 ## 🎭 Ключі до комунікаційних завдань
 

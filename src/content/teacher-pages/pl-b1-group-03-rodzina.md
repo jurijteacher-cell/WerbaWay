@@ -37,7 +37,7 @@ notion: https://app.notion.com/p/TEACHER-Rodzina-dawniej-i-dzi-B1-40d96e03c7c881
 | 75–85 | 4. Zadania: c3, c4 | Бабуся, яка балує онуків, і поради тому, хто виїжджає — тепер зі свідомою множиною: <i>dzieciom, z wnukami, za rodzicami</i>. |
 | 85–90 | 7–8. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити ДЗ. |
 
-<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1 · ② Praktyka mówienia, e2, c1, c2, Gramatyka cz. 1 · ③ Gramatyka cz. 2, c3, c4, Podsumowanie, ДЗ.
+<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1 · ② Praktyka mówienia, c1, c2, Gramatyka cz. 1 · ③ Gramatyka cz. 2, c3, c4, Podsumowanie, ДЗ.
 
 ### Група швидша / повільніша
 
@@ -59,18 +59,6 @@ notion: https://app.notion.com/p/TEACHER-Rodzina-dawniej-i-dzi-B1-40d96e03c7c881
 - <b>Родовий множини</b> — повторення з №2 U lekarza (<i>tabletek, wizyt</i>) на сімейних словах: <i>sióstr, córek, babć, pokoleń</i>.
 - <b>Винятки.</b> <i>z ludźmi, z dziećmi, z braćmi</i> — нехай запам'ятають як трійку. <i>Mężczyzna</i> в однині відмінюється як <i>kobieta</i>, але в множині — oni.
 - <b>Pułapki.</b> Прочитай українську колонку вголос — учні самі скажуть, як «просилося». <i>Rodzice ≠ родичі</i> і <i>mężowie / mężczyźni</i> зазвичай викликають найбільше «ого».
-
----
-
-## 🎧 Діалог для e2 (читаєш двічі, учні без тексту)
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Ola:</b> Cześć, Paweł! Tu Ola. Masz chwilę?<br><b>Paweł:</b> Cześć! Jasne, co się stało?<br><b>Ola:</b> Nic złego. Pamiętasz, że w czerwcu dziadkowie będą obchodzić pięćdziesiątą rocznicę ślubu?<br><b>Paweł:</b> Złote gody? Pięćdziesiąt lat razem… Niesamowite.<br><b>Ola:</b> Właśnie. Rodzice chcą zrobić przyjęcie w sobotę, czternastego czerwca, w restauracji „Pod Lipami” w Kazimierzu.<br><b>Paweł:</b> Czternastego… Wieczorem mam wesele kolegi z pracy. Ale na obiad na pewno przyjadę.<br><b>Ola:</b> Super. Przyjedziesz sam czy z Martą?<br><b>Paweł:</b> Z Martą i z dziećmi. Dzieci bardzo tęsknią za dziadkami.<br><b>Ola:</b> Świetnie. Mamy jeszcze jeden pomysł: zamiast prezentów od każdego osobno wszystkie wnuki kupują dziadkom wspólny prezent — wycieczkę nad morze.<br><b>Paweł:</b> Dobry pomysł. Ile mam przelać?<br><b>Ola:</b> Jeszcze nie wiemy. Wszyscy dokładamy się po równo, napiszę ci w przyszłym tygodniu.<br><b>Paweł:</b> Dobra. A dziadkowie o tym wiedzą?<br><b>Ola:</b> O przyjęciu tak, o wycieczce nie. To niespodzianka, więc ani słowa!<br><b>Paweł:</b> Obiecuję. Do usłyszenia!
-
-</div></aside>
-
-Ключ e2: pięćdziesiątą rocznicę ślubu · wieczorem idzie na wesele kolegi · z Martą i z dziećmi · wycieczka nad morze od wnuków. Після e2 — c1 з іншими деталями (30-та річниця батьків, дім на селі, сюрприз). У діалозі підкресли пару <i>wszystkie wnuki</i> (one) / <i>wszyscy dokładamy się</i> (oni).
 
 ---
 

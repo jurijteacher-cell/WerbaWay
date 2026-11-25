@@ -61,24 +61,6 @@ teacherOf: pl-a2-mow-05-mieszkanie-ru
 
 ---
 
-## 🎧 Діалог-зразок до c1 (читає викладач)
-
-<b>Перед читанням дайте учню три питання:</b>
-
-1. Na którym piętrze jest mieszkanie? Czy jest winda? — <i>Na trzecim, windy nie ma.</i>
-1. Czego nie ma w kuchni? — <i>Zmywarki.</i>
-1. Ile wynosi kaucja i kiedy Andrij ogląda mieszkanie? — <i>Jeden czynsz, czyli 3100 zł; jutro o osiemnastej.</i>
-
-<aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📞</span><div class="lp-callout-body">
-
-<b>Właścicielka:</b> Halo, słucham?<br><b>Andrij:</b> Dzień dobry, dzwonię w sprawie ogłoszenia. Czy mieszkanie na Wildzie jest jeszcze aktualne?<br><b>Właścicielka:</b> Tak, aktualne. Ma pan jakieś pytania?<br><b>Andrij:</b> Tak. Na którym piętrze jest mieszkanie? Czy w bloku jest winda?<br><b>Właścicielka:</b> Na trzecim. Windy nie ma, ale schody są szerokie i wygodne.<br><b>Andrij:</b> Rozumiem. A jakie meble są w mieszkaniu?<br><b>Właścicielka:</b> W sypialni jest duża szafa i łóżko, a w salonie kanapa i stół. W kuchni jest lodówka i pralka, ale zmywarki niestety nie ma.<br><b>Andrij:</b> A co jest w okolicy?<br><b>Właścicielka:</b> Naprzeciwko bloku jest sklep spożywczy, a obok — przystanek tramwajowy.<br><b>Andrij:</b> Ile wynoszą czynsz i kaucja?<br><b>Właścicielka:</b> Czynsz to trzy tysiące sto złotych, plus prąd i woda, około trzystu złotych. Kaucja — jeden czynsz.<br><b>Andrij:</b> Czy mogę obejrzeć mieszkanie jutro po pracy?<br><b>Właścicielka:</b> Oczywiście. Zapraszam o osiemnastej: ulica Lipowa 12, mieszkanie 8.<br><b>Andrij:</b> Dziękuję, do zobaczenia!
-
-</div></aside>
-
-<b>c2:</b> грайте власника, який все хвалить (<i>To jest najlepsze mieszkanie w Poznaniu!</i>) і не хоче знижувати ціну — учень має тричі вжити <i>przeszkadza mi / brakuje mi</i>. <b>c3:</b> спочатку сусід дивується (<i>Przecież to tylko w piątki!</i>), потім йде на компроміс, якщо учень запропонував конкретне рішення (до 22:00, навушники).
-
----
-
 ## 👂 Типові помилки на слух
 
 | ✗ Чуєте | ✓ Правильно |

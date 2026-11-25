@@ -7,9 +7,9 @@
   "items": [
     {
       "id": "c1",
-      "mode": "listen-then-play",
+      "mode": "read-then-play",
       "front_title": "W kawiarni z wózkiem",
-      "back_scenario": "Jesteś w galerii z dzieckiem i chcesz usiąść na pół godziny w kawiarni. Najpierw posłuchaj przykładowej rozmowy, potem odegraj swoją — z innym zamówieniem i innym stolikiem.",
+      "back_scenario": "Jesteś w galerii z dzieckiem i chcesz usiąść na pół godziny w kawiarni. Najpierw przeczytaj przykładową rozmowę, potem odegraj swoją — z innym zamówieniem i innym stolikiem.",
       "back_checklist": [
         "Poproś o stolik, przy którym zmieści się wózek.",
         "Zapytaj, gdzie w budynku jest przewijak.",
@@ -18,20 +18,76 @@
         "Dowiedz się, czy da się wziąć zamówienie na wynos."
       ],
       "model_dialogue": [
-        { "speaker": "Kelner", "voice": "pl-PL-male", "line": "Dzień dobry, witam w „Pod Lipą”. Stolik dla jednej osoby?" },
-        { "speaker": "Klientka", "voice": "pl-PL-female", "line": "Dzień dobry. Dla jednej, ale jestem z wózkiem. Macie jakiś wolny stolik przy oknie?" },
-        { "speaker": "Kelner", "voice": "pl-PL-male", "line": "Przy oknie wszystkie są zajęte. Mam wolny stolik w głębi sali, obok regału z książkami. Tam jest więcej miejsca." },
-        { "speaker": "Klientka", "voice": "pl-PL-female", "line": "Dobrze, wezmę ten. Mogę zostawić wózek przy stoliku?" },
-        { "speaker": "Kelner", "voice": "pl-PL-male", "line": "Oczywiście. Proszę tylko nie stawiać go w przejściu, bo tam chodzą kelnerzy." },
-        { "speaker": "Klientka", "voice": "pl-PL-female", "line": "Jasne. A macie u siebie przewijak?" },
-        { "speaker": "Kelner", "voice": "pl-PL-male", "line": "W kawiarni nie, ale w galerii na drugim piętrze jest pokój dla matki z dzieckiem. Winda jest zaraz za wejściem." },
-        { "speaker": "Klientka", "voice": "pl-PL-female", "line": "Świetnie, dziękuję. To poproszę herbatę z imbirem i sernik." },
-        { "speaker": "Kelner", "voice": "pl-PL-male", "line": "Herbata duża czy mała?" },
-        { "speaker": "Klientka", "voice": "pl-PL-female", "line": "Duża. I jeszcze jedno — można u was zapłacić kartą?" },
-        { "speaker": "Kelner", "voice": "pl-PL-male", "line": "Tak, kartą i telefonem. Rachunek przyniosę do stolika." },
-        { "speaker": "Klientka", "voice": "pl-PL-female", "line": "A gdybym musiała wyjść szybciej, da się wziąć sernik na wynos?" },
-        { "speaker": "Kelner", "voice": "pl-PL-male", "line": "Da się, zapakujemy go w pudełko. Zamówienie będzie gotowe za jakieś pięć minut." },
-        { "speaker": "Klientka", "voice": "pl-PL-female", "line": "Dziękuję bardzo. To ja już siadam." }
+        {
+          "speaker": "Kelner",
+          "voice": "pl-PL-male",
+          "line": "Dzień dobry, witam w „Pod Lipą”. Stolik dla jednej osoby?"
+        },
+        {
+          "speaker": "Klientka",
+          "voice": "pl-PL-female",
+          "line": "Dzień dobry. Dla jednej, ale jestem z wózkiem. Macie jakiś wolny stolik przy oknie?"
+        },
+        {
+          "speaker": "Kelner",
+          "voice": "pl-PL-male",
+          "line": "Przy oknie wszystkie są zajęte. Mam wolny stolik w głębi sali, obok regału z książkami. Tam jest więcej miejsca."
+        },
+        {
+          "speaker": "Klientka",
+          "voice": "pl-PL-female",
+          "line": "Dobrze, wezmę ten. Mogę zostawić wózek przy stoliku?"
+        },
+        {
+          "speaker": "Kelner",
+          "voice": "pl-PL-male",
+          "line": "Oczywiście. Proszę tylko nie stawiać go w przejściu, bo tam chodzą kelnerzy."
+        },
+        {
+          "speaker": "Klientka",
+          "voice": "pl-PL-female",
+          "line": "Jasne. A macie u siebie przewijak?"
+        },
+        {
+          "speaker": "Kelner",
+          "voice": "pl-PL-male",
+          "line": "W kawiarni nie, ale w galerii na drugim piętrze jest pokój dla matki z dzieckiem. Winda jest zaraz za wejściem."
+        },
+        {
+          "speaker": "Klientka",
+          "voice": "pl-PL-female",
+          "line": "Świetnie, dziękuję. To poproszę herbatę z imbirem i sernik."
+        },
+        {
+          "speaker": "Kelner",
+          "voice": "pl-PL-male",
+          "line": "Herbata duża czy mała?"
+        },
+        {
+          "speaker": "Klientka",
+          "voice": "pl-PL-female",
+          "line": "Duża. I jeszcze jedno — można u was zapłacić kartą?"
+        },
+        {
+          "speaker": "Kelner",
+          "voice": "pl-PL-male",
+          "line": "Tak, kartą i telefonem. Rachunek przyniosę do stolika."
+        },
+        {
+          "speaker": "Klientka",
+          "voice": "pl-PL-female",
+          "line": "A gdybym musiała wyjść szybciej, da się wziąć sernik na wynos?"
+        },
+        {
+          "speaker": "Kelner",
+          "voice": "pl-PL-male",
+          "line": "Da się, zapakujemy go w pudełko. Zamówienie będzie gotowe za jakieś pięć minut."
+        },
+        {
+          "speaker": "Klientka",
+          "voice": "pl-PL-female",
+          "line": "Dziękuję bardzo. To ja już siadam."
+        }
       ]
     },
     {

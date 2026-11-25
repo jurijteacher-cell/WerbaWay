@@ -70,12 +70,6 @@ Hej! Mam na imię Tom. Jestem z Anglii, ale teraz mieszkam w Krakowie z polską 
 
 ### ❓ Pytania do tekstu
 
-<aside class="lp-callout" data-tone="orange"><span class="lp-callout-icon" aria-hidden="true">🕵️</span><div class="lp-callout-body">
-
-<b>Najpierw zgadnij: kto to jest?</b> Nauczyciel czyta jedno zdanie, na przykład <i>Gra w tenisa</i>. Ty odpowiadasz szybko: <i>To jest Marco!</i>
-
-</div></aside>
-
 1. Skąd jest Olena? Gdzie mieszka? Jaki numer telefonu ma Olena?
 1. Dlaczego Marco uczy się polskiego? A Hanna? A Tom?
 1. Kto gra na gitarze? Kto gra w tenisa?
@@ -173,7 +167,7 @@ Odpowiadaj szybko i pełnym zdaniem. Potem zapytaj nauczyciela: <i>A pan? / A pa
 
 ### 🎩 B. Oficjalnie czy nieoficjalnie?
 
-<i>Nauczyciel mówi, kto to jest. Ty mówisz „Dzień dobry” albo „Cześć” i pytasz: co słychać, skąd ta osoba jest i gdzie mieszka.</i>
+<i>Wybierz osobę z listy. Powiedz „Dzień dobry” albo „Cześć” i zapytaj: co słychać, skąd ta osoba jest i gdzie mieszka.</i>
 
 - nauczycielka
 - nowy kolega na kursie
@@ -182,9 +176,9 @@ Odpowiadaj szybko i pełnym zdaniem. Potem zapytaj nauczyciela: <i>A pan? / A pa
 - państwo Kowalscy
 - koleżanka
 
-### 📞 C. Dyktando: litery i cyfry
+### 📞 C. Litery i cyfry
 
-<i>Nauczyciel dyktuje trzy nazwiska i trzy numery telefonu — Ty piszesz. Potem zamiana: Ty literujesz swoje imię, nazwisko i ulicę, a nauczyciel pisze.</i>
+<i>Przeliteruj swoje imię, nazwisko i ulicę, a potem podaj numer telefonu. Nauczyciel zapisuje to, co mówisz.</i>
 
 - Czy wszystko jest dobrze? Sprawdźcie razem.
 - Nie rozumiesz? <i>Proszę powtórzyć!</i>

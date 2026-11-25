@@ -33,15 +33,14 @@ moduleTitle: Іспит telc B1
 | --- | --- | --- |
 | 0–18 | 4. Gramatyka cz. 1 + ćw. 2–4 | Пари з префіксом → з суфіксом → процес/результат → раз/часто → сигнали. Вправи 2–4 разом на екрані. |
 | 18–32 | 5. Gramatyka cz. 2 + ćw. 5–7 | Фон і дія → <i>zacząć / przestać</i> → заперечення → досвід/результат → винятки → пастки. Вправи 5–6 разом; 7 (діалог) — самостійно, 4 хв, як на іспиті. Потім прочитай діалог повністю з правильними фразами — це зразок для c1. |
-| 32–38 | 7. Słuchanie (e2) | 1 хв на питання, ти читаєш чотири повідомлення нижче — кожне двічі, з паузою 5 с. Перевірка + де були пастки. |
 | 38–55 | 6. c1–c3 | c1 — ти працівник магазину; спершу питаєш чек, потім погоджуєшся на підтвердження з банку. c2 — ти консультант гарячої лінії; вимагай номер замовлення. c3 — таймер 1:30, потім 2 питання нижче. |
 | 55–60 | 8–9. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити ДЗ (рекламація навушників). |
 
-<b>Формат 1 × 90 + ДЗ:</b> Czytanie, e1, Słownictwo, ćw. 1, Praktyka (скорочено) · Gramatyka cz. 1–2, з вправ в уроці лише 3, 5 і 7 (решта — додому), e2, c1, c3. c2 — на наступне заняття.
+<b>Формат 1 × 90 + ДЗ:</b> Czytanie, e1, Słownictwo, ćw. 1, Praktyka (скорочено) · Gramatyka cz. 1–2, з вправ в уроці лише 3, 5 і 7 (решта — додому), c1, c3. c2 — на наступне заняття.
 
 ### Учень швидший / повільніший
 
-- <b>Швидший:</b> e2 — одне прочитання, як на telc; у c1 вимагай формальних фраз (<i>Chciałbym złożyć reklamację…, W związku z tym proszę o…</i>); у c3 — 2 хв і порівняння «колись / тепер» (повторення уроку 08).
+- <b>Швидший:</b> у c1 вимагай формальних фраз (<i>Chciałbym złożyć reklamację…, W związku z tym proszę o…</i>); у c3 — 2 хв і порівняння «колись / тепер» (повторення уроку 08).
 - <b>Повільніший:</b> блок «Pytanie o doświadczenie» лише показати; з вправ частини 2 — 5 і 7; c2 пропустити, c3 — за чеклістом, 1 хв.
 
 ---
@@ -68,27 +67,6 @@ moduleTitle: Іспит telc B1
 </div></aside>
 
 Зайві фрази у вправі 7: <i>przestanie działać</i> (майбутній — подія вже сталася) і <i>Za dziesięć dni</i> (калька «за десять днів» = через десять днів).
-
----
-
-## 🎧 e2: чотири повідомлення (читаєш ти) і ключ
-
-Формат: як telc słuchanie ч.1 — коротке голосове повідомлення + 1 питання, у блоці 1 курсу — два прочитання. Аудіо ElevenLabs ще не згенероване; коли з'явиться — голоси M1 (кур'єр), W2 (sklep), W1 (Marta), NAR (księgarnia).
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Wiadomość 1.</b> Dzień dobry, tu kurier firmy Szybka Paczka. Byłem pod pana domem o jedenastej, ale nikt nie otworzył. Dzwoniłem też do sąsiada z parteru, ale jego też nie było. Zostawiłem paczkę w paczkomacie przy ulicy Kwiatowej. Kod dostał pan SMS-em. Paczka czeka czterdzieści osiem godzin.<br><br><b>Wiadomość 2.</b> Dzień dobry, mówi Agata Wróbel ze sklepu Dom i Ogród. Dzwonię w sprawie reklamacji odkurzacza. Serwis już naprawił urządzenie — wymienił filtr w ramach reklamacji, więc nie płaci pan nic. Paragonu też już nie potrzebujemy. Odkurzacz można odebrać od czwartku, od dziesiątej do osiemnastej.<br><br><b>Wiadomość 3.</b> Cześć, tu Marta. Słuchaj, byłam dziś w tym sklepie z butami, o którym ci mówiłam. Te czerwone kozaki już sprzedali, ale zamówiłam dla ciebie czarne, w twoim rozmiarze. Przymierzysz je w sobotę, a zapłacisz dopiero wtedy, jeśli ci się spodobają. Zadzwoń!<br><br><b>Wiadomość 4.</b> Dzień dobry, tu księgarnia „Pod Lipą”. Książka, którą pani zamówiła, niestety w tym roku się nie ukaże. Pieniądze oddaliśmy na pani konto dziś rano. Jeśli pani chce, możemy zamówić inną książkę tego samego autora. Zapraszamy!
-
-</div></aside>
-
-| № | Ключ | Пастка в записі |
-| --- | --- | --- |
-| 1 | w paczkomacie przy Kwiatowej | «sąsiad z parteru» — дзвонив, але не залишив; пункт на вокзалі не згадується |
-| 2 | odebrać odkurzacz od czwartku | «wymienił filtr» — але платити не треба; «paragonu nie potrzebujemy» |
-| 3 | zamówiła czarne kozaki | <i>sprzedali</i> червоні; <i>zapłacisz</i> — майбутнє, ще не заплатила |
-| 4 | oddała pieniądze | <i>możemy zamówić</i> — лише пропозиція |
-
-Після перевірки — хай учень знайде в кожному повідомленні по одному доконаному дієслову й скаже, який результат воно означає (<i>zostawiłem, naprawił, zamówiłam, oddaliśmy</i>).
 
 ---
 

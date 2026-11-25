@@ -34,15 +34,14 @@ notion: https://app.notion.com/p/TEACHER-Kto-mieszka-nad-nami-Mieszkanie-i-s-sie
 | --- | --- | --- |
 | 0–18 | 4. Gramatyka cz. 1 + ćw. 2–4 | -e / -u → чергування → жіночий → прикметник → множина. Вправи 2–4 разом на екрані. |
 | 18–32 | 5. Gramatyka cz. 2 + ćw. 5–8 | w / na → країни → przy / o / po → gdzie / dokąd → винятки → пастки. Вправи 5–7 разом, 8 (оголошення) — самостійно. |
-| 32–38 | 7. Słuchanie (e2) | 1 хв на питання, ти читаєш діалог нижче двічі в нормальному темпі, двома голосами. Перевірка + де були пастки. |
 | 38–55 | 6. c1–c3 | c1 — учень грає ситуацію після діалогу-зразка, але з іншими цифрами (ти вигадуєш їх). c2 — ти сусід, спершу трохи ображений, потім погоджуєшся. c3 — таймер 1:30, потім 2 питання нижче. |
 | 55–60 | 8–9. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити ДЗ (e-mail про домофон). |
 
-<b>Формат 1 × 90 + ДЗ:</b> Czytanie, e1, Słownictwo, ćw. 1, Praktyka (скорочено) · Gramatyka cz. 1–2 без вправ в уроці (вправи 5–8 — додому), e2, c1, c3. c2 — на наступне заняття.
+<b>Формат 1 × 90 + ДЗ:</b> Czytanie, e1, Słownictwo, ćw. 1, Praktyka (скорочено) · Gramatyka cz. 1–2 без вправ в уроці (вправи 5–8 — додому), c1, c3. c2 — на наступне заняття.
 
 ### Учень швидший / повільніший
 
-- <b>Швидший:</b> e2 — одне прочитання, як на telc; у c2 вимагай <i>Czy mógłby pan…?</i>; у c3 — 2 хв замість 1:30 і слова з уроку 1 (<i>praca zdalna, zmiana</i>).
+- <b>Швидший:</b> у c2 вимагай <i>Czy mógłby pan…?</i>; у c3 — 2 хв замість 1:30 і слова з уроку 1 (<i>praca zdalna, zmiana</i>).
 - <b>Повільніший:</b> чергування — лише на розпізнавання; таблицю країн пропусти; з вправ частини 2 — лише 5 і 6; c3 — за опорними словами з чекліста.
 
 ---
@@ -57,28 +56,6 @@ notion: https://app.notion.com/p/TEACHER-Kto-mieszka-nad-nami-Mieszkanie-i-s-sie
 - <b>W / na.</b> Основне правило збігається з російським, але кухня і фабрика — ні. Дільниці міст часто з <i>na</i> (<i>na Krzykach, na Mokotowie</i>). <i>W Ukrainie / na Ukrainie</i> — обидва варіанти нормативні, не виправляти.
 - <b>Gdzie / dokąd.</b> Та сама логіка, що в російській («где / куда»), але в польській «куди» часто <i>do</i> + родовий: <i>do kuchni, do sklepu</i>. Родовий поки не пояснюємо (урок 5 карти), даємо готовими сполученнями.
 - <b>Пастки.</b> Найбільше «ого» — <i>na ulicy zimno</i> і <i>etaż</i>. Дві пастки про орудний (<i>tęsknię za domem, jeżdżę tramwajem</i>) — це повторення уроку 1.
-
----
-
-## 🎧 e2: діалог-зразок c1 (читаєш ти) і ключ
-
-Формат: telc-light, діалог + 5 × MC, два прочитання (блок 1 курсу). Аудіо ElevenLabs ще не згенероване; коли з'явиться — голоси W2 Wanda (власниця) і M1 Marcel (кандидат).
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Właścicielka:</b> Dzień dobry, zapraszam. Mieszkanie jest na drugim piętrze, ale winda działa, więc nie ma problemu.<br><b>Kandydat:</b> Dzień dobry. Ładnie tu. Ile wynosi czynsz?<br><b>Właścicielka:</b> Dwa tysiące czterysta złotych miesięcznie, plus prąd. Kaucja to jeden czynsz.<br><b>Kandydat:</b> A czy w mieszkaniu jest pralka?<br><b>Właścicielka:</b> Pralka stoi w łazience, a zmywarka w kuchni, pod oknem. Wszystko jest nowe.<br><b>Kandydat:</b> Super. A gdzie mogę trzymać rower? Nie chcę go zostawiać na klatce schodowej.<br><b>Właścicielka:</b> W piwnicy jest rowerownia. Klucz wisi w przedpokoju, przy drzwiach.<br><b>Kandydat:</b> A jacy są sąsiedzi? Pracuję na zmiany i czasem śpię w dzień.<br><b>Właścicielka:</b> Spokojni. Obok mieszka starsze małżeństwo, a na górze — studentka. W soboty czasem słychać muzykę, ale tylko do dwudziestej drugiej.<br><b>Kandydat:</b> Rozumiem. Kiedy mogę się wprowadzić?<br><b>Właścicielka:</b> Od pierwszego grudnia. Wcześniej malujemy pokój.<br><b>Kandydat:</b> A nie od piętnastego listopada?<br><b>Właścicielka:</b> Niestety nie, najwcześniej pierwszego grudnia. Umowę możemy podpisać w przyszły piątek.<br><b>Kandydat:</b> Dobrze. W takim razie widzimy się w piątek.
-
-</div></aside>
-
-| № | Ключ | Пастка в записі |
-| --- | --- | --- |
-| 1 | a — 2400 zł, прад окремо | «kaucja to jeden czynsz» — не вища |
-| 2 | b — у ванній | «w kuchni, pod oknem» — це посудомийка |
-| 3 | c — у передпокої | «w piwnicy» — сама велосипедна; «na klatce» — туди він не хоче |
-| 4 | b — студентка | «obok» — літне подружжя |
-| 5 | c — з 1 грудня | 15 листопада — пропозиція кандидата; п'ятниця — підписання договору |
-
-Після перевірки — хай учень назве з пам'яті всі місця в діалозі: <i>na drugim piętrze, w łazience, w kuchni, na klatce schodowej, w piwnicy, w przedpokoju, przy drzwiach</i>.
 
 ---
 

@@ -23,11 +23,10 @@ teacherOf: pl-a2-68-powtorka-ludzie-i-zdrowie
 | 3–12 | 1. Czytanie + e1 | Учень читає e-mail уголос. Після кожного абзацу питай, з якої лекції форма: <i>Tomka</i> — 63, <i>czarną torbę</i> — 64, <i>mi zimno</i> — 67, <i>powinna</i> — 66, <i>niech Pani</i> — 65. 4 питання усно, потім e1. |
 | 12–16 | 2. Słownictwo | Картки — швидко, лише ті, які учень не пам'ятає. |
 | 16–36 | 3. Mapa + g1–g3 | По блоку на тему: 1 хв правило → 1 хв «найчастіша помилка» → відповідний блок вправ (g1 — 63–64, g2 — 65–66, g3 — 67). g4 — якщо лишився час. |
-| 36–42 | 4. Słuchanie (e2–e3) | 2 відтворення, пауза 10 с, потім транскрипт: учень шукає всі накази й форми давального. |
 | 42–56 | 5. Speaking marathon | 4 картки по 1 хв. Ти засікаєш час і записуєш помилки, розбір — після кожної хвилини (30 с). |
 | 56–60 | 6. Podsumowanie + ДЗ | Чекліст, повернення до людини з розминки. Поясни письмо. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, мапа 63–65, g1, g2 · ② мапа 66–67, g3, g4, Słuchanie, marathon, Podsumowanie, ДЗ.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, мапа 63–65, g1, g2 · ② мапа 66–67, g3, g4, marathon, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -52,20 +51,6 @@ teacherOf: pl-a2-68-powtorka-ludzie-i-zdrowie
 4. Pani Agnieszka ma powiedzieć Olenie, że powinna czasem kończyć pracę o czwartej; mama zaprasza ją z mężem do Lwowa w lipcu.
 
 <b>e1:</b> P · F · P · F · F.
-
----
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): Olena — W1 <code>mQq2zdGT1zEfDbh8W95l</code>, pani Halina (mama) — <code>cnYygtdARUZ1LhB2crKx</code>. Файл для плеєра LMS: <code>public/audio/pl-a2-68-powtorka-ludzie-i-zdrowie-e2-dialog.mp3</code> (ще не покладено). Поки аудіо немає — читай діалог сам, двічі.
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Olena:</b> Mamo, masz bilet? I paszport?<br><b>Pani Halina:</b> Mam, mam. Paszport jest w małej kieszeni, a bilet w telefonie.<br><b>Olena:</b> A gdzie jest twoja czarna torba?<br><b>Pani Halina:</b> Tutaj, na ramieniu. Tym razem jej nie zgubię!<br><b>Olena:</b> Zadzwoń do mnie, kiedy będziesz we Lwowie.<br><b>Pani Halina:</b> Dobrze. A ty pamiętaj: nie pracuj tak długo i jedz normalne obiady.<br><b>Olena:</b> Mamo, nie musisz się martwić. Jestem już dorosła.<br><b>Pani Halina:</b> Wiem, wiem. Pozdrów ode mnie Tomka i Kasię. I podziękuj jeszcze raz pani doktor.<br><b>Olena:</b> Podziękuję. A tacie daj ten sernik — to dla niego.<br><b>Pani Halina:</b> Dam mu go od razu. Kot na pewno też będzie chciał!<br><b>Olena:</b> Ha, ha! Kierowca już woła. Szczęśliwej podróży, mamo!<br><b>Pani Halina:</b> Pa, córeczko! Do zobaczenia w lipcu!
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 P · 2 F (w małej kieszeni) · 3 P · 4 F (dla taty).<br><b>Ключ e3:</b> 1 podziękować pani doktor · 2 nie pracować tak długo · 3 w lipcu.<br><b>Пастки:</b> e2-2 — «małej / dużej»; e3-1 — мама називає й <i>Tomka i Kasię</i>, але серед варіантів їх немає; e3-3 — «dwa tygodnie» звучало в тексті 63, не тут.
 
 ---
 

@@ -7,9 +7,9 @@
   "items": [
     {
       "id": "c1",
-      "mode": "listen-then-play",
+      "mode": "read-then-play",
       "front_title": "Na wizycie kontrolnej",
-      "back_scenario": "Jesteś na pierwszej wizycie kontrolnej po połogu. Najpierw posłuchaj przykładowej rozmowy, potem odegraj swoją — z innymi dolegliwościami i innymi pytaniami.",
+      "back_scenario": "Jesteś na pierwszej wizycie kontrolnej po połogu. Najpierw przeczytaj przykładową rozmowę, potem odegraj swoją — z innymi dolegliwościami i innymi pytaniami.",
       "back_checklist": [
         "Opisz dwie dolegliwości, które Cię niepokoją.",
         "Zapytaj, do jakiego wysiłku możesz już wrócić.",
@@ -18,20 +18,76 @@
         "Ustal termin następnej kontroli."
       ],
       "model_dialogue": [
-        { "speaker": "Lekarka", "voice": "pl-PL-female", "line": "Dzień dobry, proszę usiąść. Minęło już sześć tygodni, prawda?" },
-        { "speaker": "Pacjentka", "voice": "pl-PL-female", "line": "Dzień dobry. Sześć i pół. Przyjechałam z córką, mąż czeka z nią przed gabinetem." },
-        { "speaker": "Lekarka", "voice": "pl-PL-female", "line": "Dobrze. Jak się pani czuje?" },
-        { "speaker": "Pacjentka", "voice": "pl-PL-female", "line": "Ogólnie lepiej, ale mam dwie dolegliwości. Blizna czasem boli, a wieczorem czuję napięcie w prawym barku." },
-        { "speaker": "Lekarka", "voice": "pl-PL-female", "line": "Blizna wygląda spokojnie, nic mnie w niej nie niepokoi. A bark — czy nosi pani córkę zawsze tak samo?" },
-        { "speaker": "Pacjentka", "voice": "pl-PL-female", "line": "Chyba tak. Prawą ręką trzymam małą, lewą robię wszystko inne." },
-        { "speaker": "Lekarka", "voice": "pl-PL-female", "line": "To właśnie stąd. Wypiszę pani skierowanie do fizjoterapeutki, która zajmuje się kobietami po porodzie." },
-        { "speaker": "Pacjentka", "voice": "pl-PL-female", "line": "Bardzo dziękuję. A czy mogę już wrócić na basen?" },
-        { "speaker": "Lekarka", "voice": "pl-PL-female", "line": "Spacery i pływanie tak, tylko spokojnie. O ćwiczeniach na brzuch proszę porozmawiać z fizjoterapeutką." },
-        { "speaker": "Pacjentka", "voice": "pl-PL-female", "line": "Jasne. I jeszcze jedno pytanie, o antykoncepcję. Karmię piersią." },
-        { "speaker": "Lekarka", "voice": "pl-PL-female", "line": "Dobrze, że pani pyta. Przy karmieniu piersią są bezpieczne metody. Opowiem o nich, a potem wypiszę receptę." },
-        { "speaker": "Pacjentka", "voice": "pl-PL-female", "line": "Dziękuję. Zapiszę sobie wszystkie zalecenia na kartce." },
-        { "speaker": "Lekarka", "voice": "pl-PL-female", "line": "Następna kontrola za pół roku. Jeśli coś się zmieni, proszę przyjść wcześniej." },
-        { "speaker": "Pacjentka", "voice": "pl-PL-female", "line": "Dobrze. Do widzenia." }
+        {
+          "speaker": "Lekarka",
+          "voice": "pl-PL-female",
+          "line": "Dzień dobry, proszę usiąść. Minęło już sześć tygodni, prawda?"
+        },
+        {
+          "speaker": "Pacjentka",
+          "voice": "pl-PL-female",
+          "line": "Dzień dobry. Sześć i pół. Przyjechałam z córką, mąż czeka z nią przed gabinetem."
+        },
+        {
+          "speaker": "Lekarka",
+          "voice": "pl-PL-female",
+          "line": "Dobrze. Jak się pani czuje?"
+        },
+        {
+          "speaker": "Pacjentka",
+          "voice": "pl-PL-female",
+          "line": "Ogólnie lepiej, ale mam dwie dolegliwości. Blizna czasem boli, a wieczorem czuję napięcie w prawym barku."
+        },
+        {
+          "speaker": "Lekarka",
+          "voice": "pl-PL-female",
+          "line": "Blizna wygląda spokojnie, nic mnie w niej nie niepokoi. A bark — czy nosi pani córkę zawsze tak samo?"
+        },
+        {
+          "speaker": "Pacjentka",
+          "voice": "pl-PL-female",
+          "line": "Chyba tak. Prawą ręką trzymam małą, lewą robię wszystko inne."
+        },
+        {
+          "speaker": "Lekarka",
+          "voice": "pl-PL-female",
+          "line": "To właśnie stąd. Wypiszę pani skierowanie do fizjoterapeutki, która zajmuje się kobietami po porodzie."
+        },
+        {
+          "speaker": "Pacjentka",
+          "voice": "pl-PL-female",
+          "line": "Bardzo dziękuję. A czy mogę już wrócić na basen?"
+        },
+        {
+          "speaker": "Lekarka",
+          "voice": "pl-PL-female",
+          "line": "Spacery i pływanie tak, tylko spokojnie. O ćwiczeniach na brzuch proszę porozmawiać z fizjoterapeutką."
+        },
+        {
+          "speaker": "Pacjentka",
+          "voice": "pl-PL-female",
+          "line": "Jasne. I jeszcze jedno pytanie, o antykoncepcję. Karmię piersią."
+        },
+        {
+          "speaker": "Lekarka",
+          "voice": "pl-PL-female",
+          "line": "Dobrze, że pani pyta. Przy karmieniu piersią są bezpieczne metody. Opowiem o nich, a potem wypiszę receptę."
+        },
+        {
+          "speaker": "Pacjentka",
+          "voice": "pl-PL-female",
+          "line": "Dziękuję. Zapiszę sobie wszystkie zalecenia na kartce."
+        },
+        {
+          "speaker": "Lekarka",
+          "voice": "pl-PL-female",
+          "line": "Następna kontrola za pół roku. Jeśli coś się zmieni, proszę przyjść wcześniej."
+        },
+        {
+          "speaker": "Pacjentka",
+          "voice": "pl-PL-female",
+          "line": "Dobrze. Do widzenia."
+        }
       ]
     },
     {

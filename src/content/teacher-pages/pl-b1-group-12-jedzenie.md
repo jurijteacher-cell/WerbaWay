@@ -34,15 +34,14 @@ teacherOf: pl-b1-group-12-jedzenie
 | --- | --- | --- |
 | 0–5 | Розігрів | Учень каже 3 речення про вчорашній день: <i>smakowało mi…, nie chciało mi się…, pomogłem / pomogłam…</i> |
 | 5–35 | 5. Gramatyka cz. 2 + ćw. 5–8 | Узгодження <i>smakuje / smakują</i> → <i>lubię / smakuje / podoba się</i> → <i>chce mi się</i> → стани → інші конструкції → порядок <i>mi / się</i> → винятки → пастки; вправи 5–8. |
-| 35–45 | 7. Słuchanie (e2) | 1 хв на читання питань, потім ти читаєш 4 діалоги нижче — кожен двічі, природним темпом, різними голосами. Після перевірки — шукаємо пастки. |
 | 45–80 | 6. c1–c4 | c1: спершу прочитай діалог-зразок нижче (учень слухає), потім учень грає зі своїми деталями, ти — офіціант. c2: ти — знайомий з обмеженням у їжі (напр. не їси свинини). c3: ти — втомлений колега, що на все каже «nie chce mi się». c4: монолог 2–3 хв + твої питання нижче. |
 | 80–90 | 8–9. Podsumowanie + ДЗ | Чекліст, повернення до страви з розминки, пояснити ДЗ (запрошення на вечерю). |
 
-<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1, Praktyka mówienia · ② Gramatyka cz. 1, ćw. 2–4, c1, c2 · ③ Gramatyka cz. 2, ćw. 5–8, e2, c3, c4, Podsumowanie, ДЗ.
+<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1, Praktyka mówienia · ② Gramatyka cz. 1, ćw. 2–4, c1, c2 · ③ Gramatyka cz. 2, ćw. 5–8, c3, c4, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
-- <b>Швидший:</b> e2 — кожен діалог лише раз; у c1 вигадай друге ускладнення (немає страви, рахунок неправильний); у монолозі вимагай <i>wydaje mi się, brakuje nam…, podobało mi się, że…</i> і хоча б одну форму з <i>dla kogo</i>.
+- <b>Швидший:</b> у c1 вигадай друге ускладнення (немає страви, рахунок неправильний); у монолозі вимагай <i>wydaje mi się, brakuje nam…, podobało mi się, że…</i> і хоча б одну форму з <i>dla kogo</i>.
 - <b>Повільніший:</b> з іменників — лише чоловічий <i>-owi</i>, жіночий на <i>-a</i> і множина <i>-om</i>; винятки — на розпізнавання; з частини 2 — <i>smakuje, podoba się, chce mi się, brakuje mi</i>, решта таблиці «Inne zdania» — на розпізнавання; c3 і c4 — одна задача на вибір.
 
 ---
@@ -70,45 +69,6 @@ teacherOf: pl-b1-group-12-jedzenie
 </div></aside>
 
 Після слухання: учень називає 4 форми з давальним (<i>ser mi szkodzi, wydaje mi się, pani smakują, dziękuję panu</i>), потім грає свою версію з іншою алергією.
-
----
-
-## 🎧 e2: транскрипт і ключ
-
-Формат: державний іспит B1, короткі діалоги (P2, MC a/b/c), кожен діалог <b>двічі</b>. Читаєш ти; змінюй голос для двох ролей. Коли буде аудіо ElevenLabs — каст за AUDIO&#95;EXAM&#95;SPEC (напр. Marcel / Agnieszka, Jarosław / Kinga, Dr Daria / Friday, Natalia / Adam).
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Dialog 1</b><br><b>Klientka:</b> Dzień dobry, poproszę pierogi ruskie.<br><b>Kelner:</b> Bardzo mi przykro, ruskie właśnie się skończyły. Zostały z mięsem i z kapustą.<br><b>Klientka:</b> Z mięsem nie, jestem wegetarianką. A te z kapustą są z grzybami?<br><b>Kelner:</b> Tak, z kapustą i grzybami. Ale uprzedzam, są dość słone.<br><b>Klientka:</b> Hmm, lekarz kazał mi uważać na sól. To w takim razie wezmę zupę dnia i dużą surówkę.<br><b>Kelner:</b> Dzisiaj jest krem z dyni. Smacznego!
-
-</div></aside>
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Dialog 2</b><br><b>Ania:</b> Cześć, Tomek! W sobotę robimy grilla u nas na działce. Wpadniesz?<br><b>Tomek:</b> Chętnie! O której?<br><b>Ania:</b> Miało być o czwartej, ale Marek kończy pracę później, więc zaczynamy o szóstej.<br><b>Tomek:</b> Okej. Co mam przynieść?<br><b>Ania:</b> Nic nie przynoś… No dobra, jeśli chcesz, weź jakąś sałatkę. Mięsa mamy aż za dużo.<br><b>Tomek:</b> To zrobię sałatkę grecką. Do zobaczenia!
-
-</div></aside>
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Dialog 3</b><br><b>Dietetyczka:</b> Jak się pan czuje na nowej diecie?<br><b>Pacjent:</b> Lepiej, ale wieczorem zawsze chce mi się czegoś słodkiego.<br><b>Dietetyczka:</b> To normalne. Tylko proszę nie jeść słodyczy przed telewizorem. Lepiej zjeść coś słodkiego po obiedzie, w małej ilości.<br><b>Pacjent:</b> A owoce wieczorem? Mogę?<br><b>Dietetyczka:</b> Owoce tak, ale nie cały kilogram winogron! Wszystko z umiarem.
-
-</div></aside>
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Dialog 4</b><br><b>Kasia:</b> Byłeś w tej nowej wegańskiej knajpie przy rynku?<br><b>Paweł:</b> Byłem w piątek. Szczerze? Wnętrze bardzo mi się podobało, ale jedzenie… było mdłe.<br><b>Kasia:</b> Szkoda, myślałam, że tam pójdziemy na urodziny Oli.<br><b>Paweł:</b> Na urodziny lepiej do tej gruzińskiej. Tam wszystko jest ostre, a Ola uwielbia ostre jedzenie.<br><b>Kasia:</b> Racja. To zarezerwuję stolik.
-
-</div></aside>
-
-| № | Ключ | Пастка в записі |
-| --- | --- | --- |
-| 1 | C — zupa i surówka | ruskie прозвучали першими, але закінчилися; з капустою — «солоні», а лікар велів уважати на сіль |
-| 2 | B — przyniesie sałatkę | «о четвертій» — скасований план (тепер о шостій); м'яса й так забагато |
-| 3 | B — trochę słodkiego po obiedzie | «не їсти солодкого» — лише перед телевізором; фрукти — так, але не кілограм |
-| 4 | A — jedzenie mu nie smakowało | «wnętrze mi się podobało» — дистрактор B; день народження — у грузинській |
-
-Після перевірки випишіть з транскрипту всі форми з давальним: <i>mi przykro, kazał mi, chce mi się, mi się podobało</i> — і поясніть <i>bardzo mi przykro</i> (= мені дуже шкода) як ще одну конструкцію типу <i>jest mi…</i>.
 
 ---
 

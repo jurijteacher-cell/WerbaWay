@@ -24,7 +24,7 @@ teacherOf: pl-a2-81-kto-starszy-kto-lepszy
 | 28–55 | 3. Gramatyka, ч.1 + g1–g3 | Регулярне stopniowanie (-szy, bardziej) — 7 хв; nieregularne (dobry/zły/duży/mały/stary/młody) — 10 хв, вимагати вголос усі 6 пар; najwyższy — 3 хв. g1 → g2 → g3 (лист з propuskami — учень щоразу називає відмінок/форму). |
 | — | <i>Перерва / кінець заняття 1</i> | |
 | 0–20 | 3. Gramatyka, ч.2 + g4–g6 | niż/od (+ родовий!) — 8 хв з прикладами на реальних речах; tak samo … jak — 3 хв; im … tym — 4 хв (намалювати графік: більше → гірше). g4 → g5 → g6. |
-| 20–45 | 4. Słuchanie + c1–c3 | e2–e3 (2 відтворення, пауза 10 с), потім транскрипт. c1 «Dwa miasta» — з реальними містами учня; c2 «Dwie osoby» — про родину учня; c3 «Zgadzasz się?» — міні-дебати. |
+| 20–45 | 4. c1–c3 | c1 «Dwa miasta» — з реальними містами учня; c2 «Dwie osoby» — про родину учня; c3 «Zgadzasz się?» — міні-дебати. |
 | 45–60 | 5. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки. Пояснити відео й лист-порівняння. |
 
 ### Учень швидший / повільніший
@@ -54,22 +54,6 @@ teacherOf: pl-a2-81-kto-starszy-kto-lepszy
 
 ---
 
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: телефонна розмова → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси: pani Ewa — W2 `gHGjEjdr2LBds0XHTsvg`, Michał — M2 `bwhymd1UcFEihyvPSEoR` (ElevenLabs `eleven_v3`, генерує сайт за `src/content/audio/pl-a2-81-kto-starszy-kto-lepszy.json`).
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Ewa:</b> Michał, cześć! Jestem już w Krakowie, w nowym biurze.<br><b>Michał:</b> Jak tam? Lepiej niż w Gdańsku?<br><b>Ewa:</b> Inaczej. Biuro jest mniejsze niż nasze, ale zespół jest bardzo sympatyczny.<br><b>Michał:</b> A ten projekt, o którym mówiłaś?<br><b>Ewa:</b> Prowadzi go Olena, kobieta z Ukrainy. Jest młodsza od Kasi, ale ma więcej doświadczenia.<br><b>Michał:</b> A dzieci dzwoniły?<br><b>Ewa:</b> Tak, Marcin pisał, że tęskni bardziej niż Zosia — ale to normalne, jest starszy i bardziej czuły, mimo że wydaje się spokojniejszy.<br><b>Michał:</b> A kiedy wracasz?<br><b>Ewa:</b> W piątek wieczorem. Pociąg jest szybszy niż autobus, więc wybrałam pociąg.<br><b>Michał:</b> Dobrze, to do piątku!<br><b>Ewa:</b> Do zobaczenia, kocham was!
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 F (менше) · 2 P · 3 F (більше тужить Марцін) · 4 F (поїздом).<br>
-<b>Ключ e3:</b> 1 Olena · 2 „Jest młodsza od Kasi, ale ma więcej doświadczenia.” · 3 pociągiem · 4 Marcin.<br>
-<b>Пастки:</b> e2-1 — «mniejsze niż nasze» легко сплутати з «większe»; e3-4 — текст каже «tęskni bardziej», а не прямо «kto bardziej tęskni», потрібна трансформація.
-
----
-
 ## 👂 Типові помилки, які ловити на слух
 
 - «Kraków jest więcej duży» → <i>większy</i>;
@@ -85,7 +69,7 @@ teacherOf: pl-a2-81-kto-starszy-kto-lepszy
 ## ♻️ Що повторено
 
 - <b>Граматика:</b> відмінки прикметника (64) — потрібні для <i>od + родовий</i>; множина (72) — «dzieci», «rodzice» у вправах; <i>powiedział, że</i> (79) у t2.
-- <b>Слова 79–80:</b> <i>projekt, doświadczenie, biuro, koleżanka</i>; M4: <i>pociąg, autobus</i> (e2–e3).
+- <b>Слова 79–80:</b> <i>projekt, doświadczenie, biuro, koleżanka</i>; M4: <i>pociąg, autobus</i>.
 - <b>Сюжет:</b> середа, офіс на Заблоцю. Пані Ева (з Гданська) приєднується до проєкту Олени; суперечка Kraków vs Gdańsk, потім порівняння дітей пані Еви (Marcin 14 років, Zosia 10 років) і братів/сестер Kasi. У п'ятницю пані Ева телефонує чоловікові Міхалу, повертається потягом. Гачок на 82 (повторення M5): команда готується до спільного звіту про проєкт — хто що зробив краще/гірше за місяць.
 
 ---

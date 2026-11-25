@@ -214,7 +214,7 @@ Kwoty, procenty, zmiany — w księgowości liczby są codziennie. Wystarczy kil
 
 </div></aside>
 
-👉 <b>Teraz Twoja kolej.</b> Dwie sytuacje — odwróć kartę i odegraj rozmowę. Przed pierwszą posłuchaj przykładowej rozmowy, którą czyta nauczyciel.
+👉 <b>Teraz Twoja kolej.</b> Dwie sytuacje — odwróć kartę i odegraj rozmowę.
 
 <embed source="https://werba-way.vercel.app/embed/pl-ksieg-04-vat-i-jpk/comm-tasks">
 Zadania komunikacyjne

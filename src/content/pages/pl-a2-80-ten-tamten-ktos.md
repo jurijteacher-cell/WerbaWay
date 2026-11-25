@@ -32,9 +32,7 @@ cover: https://images.unsplash.com/photo-1591382696684-38c427c7547a?w=1600&h=900
 
 ### 🌵 Kto to zostawił?
 
-<b>Olena ma nowy pokój w biurze. Na biurku czeka na nią niespodzianka. Posłuchaj i czytaj. Kto to zrobił?</b>
-
-<audio controls preload="none" src="https://werba-way.vercel.app/audio/pl-a2-80-ten-tamten-ktos-czytanie.mp3"></audio>
+<b>Olena ma nowy pokój w biurze. Na biurku czeka na nią niespodzianka. Przeczytaj tekst. Kto to zrobił?</b>
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">📔</span><div class="lp-callout-body">
 
@@ -184,14 +182,6 @@ Słownictwo — karty
 ---
 
 ## 🎭 4. Zadania komunikacyjne
-
-### 🎧 Słuchanie jak na egzaminie
-
-Olena idzie do kuchni porozmawiać z panią Agnieszką. Posłuchaj rozmowy dwa razy — bez tekstu. Najpierw zaznacz: prawda czy fałsz, potem odpowiedz na pytania a, b, c.
-
-<embed source="https://werba-way.vercel.app/embed/pl-a2-80-ten-tamten-ktos/exam?blocks=e2-e3">
-Słuchanie — jak na egzaminie
-</embed>
 
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🧰</span><div class="lp-callout-body">
 

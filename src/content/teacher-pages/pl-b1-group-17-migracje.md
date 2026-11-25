@@ -34,15 +34,14 @@ teacherOf: pl-b1-group-17-migracje
 | --- | --- | --- |
 | 0–5 | Розігрів | Учень розповідає про свій день трьома реченнями: з <i>bo</i>, з <i>więc</i>, з <i>dlatego</i>. |
 | 5–35 | 5. Gramatyka cz. 2 + ćw. 5–8 | <i>z powodu</i> → <i>dzięki</i> → <i>przez</i> → від речення до іменника → <i>dzięki temu / przez to</i> → винятки → пастки; вправи 5–8. |
-| 35–45 | 7. Słuchanie (e2) | 1 хв на читання питань. Читаєш кожне повідомлення двічі, у нормальному темпі, не підкреслюючи відповідь. Після перевірки — транскрипт нижче, шукаємо пастки. |
 | 45–80 | 6. c1–c4 | c1: спершу прочитай діалог-зразок, потім гра з іншими деталями (ти — друг, що переїжджає). c2: ти — урядник, спершу відмовляєш «z przyczyn finansowych». c3: ти — сусід, перепитуєш «A dlaczego akurat Lublin?». c4: монолог 2–3 хв + питання нижче. |
 | 80–90 | 8–9. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити ДЗ (відповідь на форумі). |
 
-<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1, Praktyka mówienia · ② Gramatyka cz. 1, ćw. 2–4, c1, c3 · ③ Gramatyka cz. 2, ćw. 5–8, e2, c2, c4, Podsumowanie, ДЗ.
+<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1, Praktyka mówienia · ② Gramatyka cz. 1, ćw. 2–4, c1, c3 · ③ Gramatyka cz. 2, ćw. 5–8, c2, c4, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
-- <b>Швидший:</b> e2 — одне прослуховування (як на справжньому telc); у c2 вимагай <i>w związku z tym, z tego powodu</i>; у c4 — <i>dzięki temu, że… / przez to, że…</i> з цілим реченням.
+- <b>Швидший:</b> у c2 вимагай <i>w związku z tym, z tego powodu</i>; у c4 — <i>dzięki temu, że… / przez to, że…</i> з цілим реченням.
 - <b>Повільніший:</b> з першої частини — лише <i>bo / więc / dlatego</i>, <i>gdyż</i> і <i>w związku z tym</i> на розпізнавання; з другої — тільки <i>dzięki</i> і <i>przez</i> з займенниками (<i>dzięki tobie, przez ciebie</i>) і простими іменниками; c3 і c4 — одна задача на вибір.
 
 ---
@@ -72,45 +71,6 @@ teacherOf: pl-b1-group-17-migracje
 
 ---
 
-## 🎧 e2: транскрипт і ключ
-
-Формат: telc Język polski B1·B2, частина 1 (голосові повідомлення, MC a/b/c). На telc кожен запис звучить <b>один раз</b>; це перший telc-блок курсу, тому — двічі. Читай природно, з паузою 1–2 с між повтореннями.
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Wiadomość 1</b> (urzędniczka)<br>Dzień dobry, tu Urząd Gminy, mówi Anna Wójcik. Dzwonię w sprawie pani pisma o autobusie do Lublina. Mam dobrą wiadomość: od pierwszego grudnia autobus będzie kursował trzy razy dziennie, a nie dwa. Pierwszy kurs będzie o szóstej dziesięć… nie, przepraszam, o szóstej piętnaście, żeby uczniowie zdążyli na pociąg. W soboty niestety nic się nie zmienia, ponieważ z powodu małej liczby pasażerów przewoźnik nie chce dodać kursów. Nowy rozkład jazdy będzie na stronie gminy od przyszłego tygodnia. Do usłyszenia.
-
-</div></aside>
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Wiadomość 2</b> (Bartek do mamy)<br>Cześć, mamo, to ja. Słuchaj, nie przyjadę w ten weekend, tak jak obiecałem. Szef poprosił, żebym w sobotę był w biurze, bo kończymy ważny projekt. Ale nie martw się, przyjadę za tydzień, w piątek wieczorem, i zostanę aż do wtorku, bo wziąłem dwa dni urlopu. Dzięki temu w końcu pomogę tacie przy dachu. Kup tylko, proszę, te gwoździe, o których mówił tata, bo ja w Warszawie nie mam gdzie ich kupić. Buziaki!
-
-</div></aside>
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Wiadomość 3</b> (pani Krystyna)<br>Dzień dobry, mówi Krystyna Nowak, dzwonię w sprawie ogłoszenia o domu w Zalesiu. Jestem bardzo zainteresowana, bo od stycznia będę pracować zdalnie i szukam czegoś spokojnego. Ogród na zdjęciach bardzo mi się podoba, ale martwi mnie jedna rzecz: internet. Czy w domu jest światłowód? Bez szybkiego internetu niestety nie mogę pracować. Jeśli jest, chciałabym obejrzeć dom jeszcze w tym tygodniu, najlepiej w czwartek po południu. Gdyby czwartek nie pasował, mogę przyjechać w sobotę rano. Proszę oddzwonić pod numer 604 18 22 75. Dziękuję.
-
-</div></aside>
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Wiadomość 4</b> (babcia Hanna)<br>Olena, tu babcia. Dzwonię, bo pani Ewa mówi, że w sobotę w świetlicy jest zebranie wiejskie. Gmina chce sprzedać budynek starej szkoły, a my chcemy, żeby był tam dom kultury dla młodych i starszych. Sołtys prosi, żeby przyszło jak najwięcej ludzi. Ja bym poszła, ale nie mam jak — przez to kolano nie dojdę tak daleko. Może Taras by mnie zawiózł? Aha, zebranie jest o siedemnastej, a nie o osiemnastej, jak napisali na plakacie. Zadzwoń wieczorem, dobrze?
-
-</div></aside>
-
-| № | Ключ | Пастка в записі |
-| --- | --- | --- |
-| 1 | від грудня більше рейсів у будні | самовиправлення 6:10 → 6:15; «субота» прозвучала, але там нічого не змінюється; «pismo» уже написане, писати знову не треба |
-| 2 | приїде в інший термін | «dwa dni urlopu», а не тиждень; цвяхи купує мама для тата, а не везе до Варшави |
-| 3 | чи є швидкий інтернет | сад їй уже подобається; субота — лише запасний варіант |
-| 4 | просить, щоб хтось відвіз її на збори | гміна лише <i>chce sprzedać</i>; 18:00 — помилка на плакаті, насправді 17:00 |
-
-Після перевірки випишіть з транскрипту всі слова причини й наслідку: <i>ponieważ, z powodu, bo (×4), dzięki temu, przez to kolano</i>.
-
----
-
 ## 🎤 c4: твої питання після монологу
 
 1. Czy dobry autobus naprawdę wystarczy, żeby młodzi zostali? Dlaczego tak albo dlaczego nie?
@@ -131,7 +91,7 @@ teacherOf: pl-b1-group-17-migracje
 3. Через здоров'я (у місті хворіла через смог); віддалена робота + оптоволокно; має тишу, сад, свіже повітря; волонтерить у бібліотеці.
 4. Транспорт: один автобус, немає дитсадка; Максим: «проблема не село, а автобус».
 
-<b>e1:</b> F · P · F · P · P · F. <b>e2:</b> 1 — від грудня більше рейсів · 2 — інший термін · 3 — швидкий інтернет · 4 — відвезти на збори.<br><b>Podsumowanie</b> — відкриті відповіді; слухай кому (на слух — паузу) перед <i>bo / więc</i>, <i>z powodu</i> + родовий, <i>dzięki</i> + давальний.
+<b>e1:</b> F · P · F · P · P · F.<br><b>Podsumowanie</b> — відкриті відповіді; слухай кому (на слух — паузу) перед <i>bo / więc</i>, <i>z powodu</i> + родовий, <i>dzięki</i> + давальний.
 
 ---
 
@@ -152,7 +112,7 @@ teacherOf: pl-b1-group-17-migracje
 
 - <b>Слова з №15 Zakupy:</b> <i>promocja, kasa samoobsługowa</i> (текст). <b>Граматика №15:</b> умовний спосіб — <i>gdybyś miał… wróciłbyś</i> (текст), ćw. 4 п. 8, ДЗ h3-5, c3.
 - <b>Слова з №16 Wolontariat:</b> <i>zależy mi na, wolontariuszka, przekonać</i> (текст); <b>граматика №16:</b> <i>żeby</i> — ćw. 4 (bo czy żeby), ДЗ h3-6, у тексті <i>nikt nie przekona, żeby…</i>
-- <b>З №14 Urząd:</b> <i>kolejka</i> (текст), <i>nie wolno</i> (ćw. 6), <i>gmina, pismo</i> — у c2 й e2.
+- <b>З №14 Urząd:</b> <i>kolejka</i> (текст), <i>nie wolno</i> (ćw. 6), <i>gmina, pismo</i> — у c2.
 - <b>Відмінки:</b> родовий (№2) після <i>z powodu</i>, давальний (№12) після <i>dzięki</i>; збірний числівник <i>dwadzieścioro dzieci</i> (№11) — у тексті.
 - <b>Сюжет:</b> блог Олени; шкода від пана Веслава (№14); село бабусі Ганни тепер має назву Zalesie (40 км від Любліна). Нові персонажі: Бартек (26, інформатик у Варшаві, онук сусідки) і пані Ева (перекладачка, переїхала з Любліна). Пьотрек (друг Тараса, №8) — у діалозі c1, переїжджає під Казімєж Дольни.
 
@@ -185,5 +145,4 @@ Cześć,<br>ja bym się zgodziła, bo dwa lata temu zrobiłam to samo. Przeprowa
 - Сальдо внутрішніх міграцій для сіл: села понад 10 років здобувають мешканців; 2023 — +46,8 тис. (дані GUS) — [PAP, 2024](https://www.pap.pl/aktualnosci/gus-w-2023-r-liczba-ludnosci-polski-wyniosla-37-mln-637-tys-osob). У тексті — «prawie 47 tysięcy».
 - Те, що приріст іде переважно в приміські села, а віддалені села втрачають людей, у тексті подано як думку пані Еви — це загальновідомий тренд (субурбанізація), але окремим джерелом GUS я його не перевіряв.
 - Залесся, школа на 20 дітей, 300 → \<100 мешканців, автобус двічі на день — вигадані деталі сюжету.
-- e2 вигаданий: гміна, номер телефону, години — умовні.
 - Фото в тексті: Alexander Lunyov, bram naus / Unsplash.

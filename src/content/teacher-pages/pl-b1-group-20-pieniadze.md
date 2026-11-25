@@ -34,15 +34,14 @@ teacherOf: pl-b1-group-20-pieniadze
 | --- | --- | --- |
 | 0–5 | Розігрів | «Дієслово → питання»: ти кажеш <i>zależeć, myśleć, czekać, korzystać</i>, учень ставить тобі питання (<i>Na czym ci zależy?</i>) і відповідає сам. |
 | 5–35 | 5. Gramatyka cz. 2 + ćw. 5–8 | Родовий без прийменника → давальний → орудний → винятки → пастки; вправи 5–8. |
-| 35–45 | 7. Słuchanie (e2) | 1 хв на читання питань. Читаєш кожен діалог двічі двома голосами. Потім — транскрипт. |
 | 45–80 | 6. c1–c4 | c1: діалог-зразок, потім гра (ти — дорадник, пропонуєш зайву послугу, учень ввічливо відмовляється: <i>Dziękuję, rezygnuję z…</i>). c2: ти — консультант, питаєш дату, суму, магазин. c3: ти — сусідка, вперта («to tylko 1,99 zł!»). c4: монолог + питання нижче. |
 | 80–90 | 8–9. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити ДЗ (рекламація рахунку за світло). Скажи, що далі — повторення і пробний іспит. |
 
-<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1, Praktyka mówienia · ② Gramatyka cz. 1, ćw. 2–4, c1, c2 · ③ Gramatyka cz. 2, ćw. 5–8, e2, c3, c4, Podsumowanie, ДЗ.
+<b>Формат 3 × 60:</b> ① Czytanie, Pytania, e1, Słownictwo, ćw. 1, Praktyka mówienia · ② Gramatyka cz. 1, ćw. 2–4, c1, c2 · ③ Gramatyka cz. 2, ćw. 5–8, c3, c4, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
-- <b>Швидший:</b> e2 — одне прослуховування; винятки (<i>oszczędzać na rower / na jedzeniu</i>, <i>myśleć nad</i>) — у власних реченнях; у c2 вимагай формальний стиль (<i>Zwracam się z prośbą o…</i>).
+- <b>Швидший:</b> винятки (<i>oszczędzać na rower / na jedzeniu</i>, <i>myśleć nad</i>) — у власних реченнях; у c2 вимагай формальний стиль (<i>Zwracam się z prośbą o…</i>).
 - <b>Повільніший:</b> у частині 1 — лише <i>zależy mi na, myślę o, dziękuję za, czekam na, korzystam z</i> як готові блоки; у частині 2 — <i>szukać, słuchać, ufać, interesować się</i>; c3 і c4 — одна задача.
 
 ---
@@ -70,45 +69,6 @@ teacherOf: pl-b1-group-20-pieniadze
 
 ---
 
-## 🎧 e2: транскрипт і ключ
-
-Формат: державний іспит B1, короткі діалоги (P2, MC a/b/c), запис звучить <b>двічі</b>. Правильна відповідь у перефразуванні, дистрактори прозвучали в записі.
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Dialog 1</b> (przed bankiem)<br><b>Klient:</b> Przepraszam, ten bankomat nie działa. Wie pani, kiedy go naprawią?<br><b>Pracownica banku:</b> Niestety dopiero jutro. Najbliższy bankomat jest przy poczcie, ale tam pobierają prowizję, pięć złotych.<br><b>Klient:</b> Pięć złotych za sto złotych? To przesada.<br><b>Pracownica banku:</b> W sklepie obok może pan wypłacić gotówkę przy kasie. Bez opłaty, tylko trzeba zrobić jakieś zakupy.<br><b>Klient:</b> I tak potrzebuję chleba. Dziękuję pani za radę!
-
-</div></aside>
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Dialog 2</b> (infolinia banku)<br><b>Konsultant:</b> Dzień dobry, w czym mogę pomóc?<br><b>Kobieta:</b> Zgubiłam kartę. Chyba w autobusie. Chcę ją zablokować.<br><b>Konsultant:</b> Już blokuję… Gotowe. Nowa karta przyjdzie pocztą w ciągu siedmiu dni roboczych.<br><b>Kobieta:</b> Tydzień? A jak mam płacić do tego czasu? Nie mam gotówki.<br><b>Konsultant:</b> Może pani korzystać z BLIK-a w aplikacji. Do oddziału nie musi pani przychodzić.<br><b>Kobieta:</b> Całe szczęście. Dziękuję.
-
-</div></aside>
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Dialog 3</b> (w małym sklepie)<br><b>Sprzedawczyni:</b> Czterdzieści dwa złote.<br><b>Klient:</b> Kartą poproszę.<br><b>Sprzedawczyni:</b> Oj, terminal od rana nie działa. Ma pan gotówkę?<br><b>Klient:</b> Niestety nie, mam tylko dziesięć złotych. Może poczekam, aż terminal zacznie działać?<br><b>Sprzedawczyni:</b> To może potrwać. Proszę zrobić przelew na telefon. Numer jest tutaj, na kartce przy kasie.<br><b>Klient:</b> Świetnie, już wysyłam.
-
-</div></aside>
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Dialog 4</b> (dwoje znajomych)<br><b>Marek:</b> Słuchaj, Kasia, możesz mi pożyczyć dwieście złotych do piątku? Pensję dostaję dopiero dziesiątego.<br><b>Kasia:</b> Dwieście? Niestety, tyle nie mam. Oszczędzam na wakacje i w tym miesiącu mam mało.<br><b>Marek:</b> Rozumiem…<br><b>Kasia:</b> Ale sto mogę ci dać. Oddasz mi w poniedziałek, dobrze?<br><b>Marek:</b> Jasne. Dziękuję ci bardzo!
-
-</div></aside>
-
-| № | Ключ | Пастка в записі |
-| --- | --- | --- |
-| 1 | зніме готівку на касі в магазині | банкомат біля пошти прозвучав, але там комісія; ремонт «dopiero jutro» |
-| 2 | до нової картки може платити телефоном | «siedem dni roboczych», а не завтра; у відділення приходити не треба |
-| 3 | переказом на телефон | «poczekam, aż terminal zacznie działać» — лише пропозиція клієнта; готівки тільки 10 zł |
-| 4 | сто злотих | «dwieście» прозвучало двічі; «tyle nie mam» — але не «нічого» |
-
-Після перевірки випишіть з транскрипту керування: <i>pobierają prowizję, dziękuję pani za radę, potrzebuję chleba, korzystać z BLIK-a, oszczędzam na wakacje, dziękuję ci</i>.
-
----
-
 ## 🎤 c4: твої питання після монологу
 
 1. Co zrobisz, jeśli wysiądzie prąd albo internet, a nie masz gotówki?
@@ -129,7 +89,7 @@ teacherOf: pl-b1-group-20-pieniadze
 3. Фальшивий SMS про доплату 1,99 zł за посилку; майже клікнула, згадала поради Максима; у банку: це шахрайство, нікому не давати код BLIK і пароль (код — 6 цифр, 2 хвилини).
 4. Банк двічі зняв плату за картку → рекламація в додатку; банк має 30 днів (у складних справах до 60), інакше рекламація вважається прийнятою; відповідь за тиждень — вибачилися й повернули гроші.
 
-<b>e1:</b> F · P · F · F · P · P. <b>e2:</b> 1 — каса в магазині · 2 — телефоном до нової картки · 3 — переказ на телефон · 4 — сто злотих.<br><b>Podsumowanie</b> — відкриті відповіді; слухай <i>o + Ms</i> після <i>myśleć / mówić</i>, родовий після <i>szukać / słuchać</i>, <i>z</i> після <i>korzystać</i>.
+<b>e1:</b> F · P · F · F · P · P.<br><b>Podsumowanie</b> — відкриті відповіді; слухай <i>o + Ms</i> після <i>myśleć / mówić</i>, родовий після <i>szukać / słuchać</i>, <i>z</i> після <i>korzystać</i>.
 
 ---
 
@@ -148,7 +108,7 @@ teacherOf: pl-b1-group-20-pieniadze
 
 ## 🔁 Повторення
 
-- <b>Слова з №18 Ekologia:</b> <i>bilet miesięczny, z drugiej ręki, oszczędzać</i> (текст), <i>przesada</i> (діалог 1 e2). <b>Граматика №18:</b> <i>chociaż</i> без <i>ale</i> (текст: «Chociaż to było tylko kilka złotych…», ДЗ h3-3).
+- <b>Слова з №18 Ekologia:</b> <i>bilet miesięczny, z drugiej ręki, oszczędzać</i> (текст). <b>Граматика №18:</b> <i>chociaż</i> без <i>ale</i> (текст: «Chociaż to było tylko kilka złotych…», ДЗ h3-3).
 - <b>Слова з №19 Święta:</b> <i>przypomnieć, obiecać, zapytać kogoś o coś</i> (текст), <i>przekazać</i> (c3). <b>Граматика №19:</b> непряма мова — у тексті (<i>zapytał, czy…; odpowiedział, że…; obiecał, że…; tłumaczył, żebym…</i>), ДЗ h3-2 (<i>poprosiła, żebym</i>).
 - <b>№14 Urząd:</b> <i>nie wolno podawać</i> (текст), <i>przelew</i>. <b>№2:</b> родовий після заперечення (<i>nie mam konta</i>) — у теорії. <b>№12:</b> давальний після <i>ufać, pomagać</i>. <b>№1:</b> орудний після <i>interesować się</i>.
 - <b>Сюжет (фінал курсу):</b> Тарас рахує витрати на шкоду (№14) і пересідає на тролейбус (№18); Максиму 16, перший рахунок; пані Моніка — шахрайський SMS; Іра купила квитки на кінець червня (№8, №19) — «nad Bałtyk razem». Добрий матеріал для R4 і пробного іспиту.
@@ -184,5 +144,5 @@ Szanowni Państwo,<br>nazywam się Olena Kowalenko, mój numer klienta to 40 23 
 - Код BLIK: 6 цифр, дійсний 2 хвилини — [blik.com](https://blik.com/jak-dziala-blik); не давати нікому — [mBank](https://www.mbank.pl/artykuly/wyludzenie-kodu-blik/).
 - SMS «доплата 1,99 zł за посилку» — типова схема шахрайства; у тексті без назви фірми.
 - «Понад 500 zł на місяць» за авто й «квиток у кілька разів дешевший» — оцінка персонажа, не перевірена ціна. Ціну місячного квитка в Любліні в текст свідомо не вписував.
-- Умови банку в c1 і діалогах e2 (8 zł за картку, 5 zł комісії, 7 днів на нову картку) — вигадані.
+- Умови банку в c1 (8 zł за картку, 5 zł комісії, 7 днів на нову картку) — вигадані.
 - Фото в тексті: engin akyurt, [CardMapr.nl](http://CardMapr.nl) / Unsplash.

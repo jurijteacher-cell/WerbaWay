@@ -24,9 +24,8 @@ cover: https://images.unsplash.com/photo-1779200534309-9c7d4569cc5a?w=1600&h=900
 
 <b>Instrukcja</b>
 
-- Test ma <b>4 części i 15 zadań</b>: gramatyka (7), słowa (3), czytanie (3), słuchanie (2). Każde zadanie — jeden punkt.
+- Test ma <b>3 części i 13 zadań</b>: gramatyka (7), słowa (3), czytanie (3). Każde zadanie — jeden punkt.
 - Masz około <b>25 minut</b>. Pracujesz sam / sama, bez słownika i bez notatek.
-- Rozmowę w części D usłyszysz <b>dwa razy</b>.
 - Potem <b>Mówienie</b> — około 10 minut z nauczycielem. <b>Pisanie</b> robisz w domu.
 
 </div></aside>
@@ -65,14 +64,6 @@ Pozdrawiam serdecznie<br>Anna Mróz, recepcja
 
 <embed source="https://werba-way.vercel.app/embed/pl-a2-76-kontrolna-podroze/exam?blocks=e1">
 Test — czytanie
-</embed>
-
-### 🎧 Część D. Słuchanie
-
-<b>W poniedziałek w biurze Tomek szuka swojego szalika. Posłuchaj rozmowy dwa razy i wybierz poprawną odpowiedź.</b>
-
-<embed source="https://werba-way.vercel.app/embed/pl-a2-76-kontrolna-podroze/exam?blocks=e2">
-Test — słuchanie
 </embed>
 
 ---

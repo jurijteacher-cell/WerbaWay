@@ -10,7 +10,8 @@
   1. файли: сторінка учня, TEACHER, vocab/comm-tasks/hw, запис у маніфесті (WARN)
   2. цикл граматики: теорія не йде купою без вправ; блок винятків має вправи; є збірний блок `gz`
   3. пастки: ✗ ≠ ✓, укр/рос-колонка з кирилицею, «Dlaczego» непорожнє, ≤ 6 (мінімуму немає)
-  4. слухання: блок з audio_id / exam_skill=sluchanie лише якщо аудіо є в content-queue/audio-ready.json
+  4. слухання: у лекціях його НЕМАЄ (CLAUDE.md п. 6, 25.11): жодних audio_id / audio_url / exam_skill=sluchanie,
+     `<audio>`-плеєрів, mode listen-then-play і «nauczyciel czyta / posłuchaj». Аудіювання — лише в пробних екзаменах
 Виводить лише ERR/WARN (економія токенів).
 """
 import json
@@ -152,19 +153,33 @@ def listening_blocks(lid):
         if not isinstance(d, dict):
             continue
         for b in d.get("blocks", []) or []:
-            if b.get("audio_id") or b.get("exam_skill") == "sluchanie":
+            if b.get("audio_id") or b.get("audio_url") or b.get("exam_skill") == "sluchanie":
                 res.append((fn, b.get("block_id"), b.get("audio_id")))
     return res
 
 
+LISTEN_TXT = re.compile(r"[Pp]osłuchaj|czyta nauczyciel|[Nn]auczyciel (czyta|przeczyta|odczyta|dyktuje)|<audio\b|Słuchanie jak na egzaminie", re.I)
+
+
 def check_audio(lid, errs):
-    ready = (jload(AUDIO_READY) or {}).get(lid, [])
+    """Лекція без аудіювання: ні блоків, ні плеєрів, ні «nauczyciel czyta». Пробні екзамени (`*-probny-*`) — виняток."""
+    if "-probny-" in lid:
+        return
     for fn, bid, aid in listening_blocks(lid):
-        if not aid:
-            errs.append(f"{fn}:{bid}: слухання без audio_id")
-        elif aid not in ready:
-            errs.append(f"{fn}:{bid}: аудіо «{aid}» не позначене готовим у content-queue/audio-ready.json — "
-                        "вправу слухання не публікувати (v3.20): блок у content-queue/audio-pending/")
+        errs.append(f"{fn}:{bid}: у лекції не може бути слухання — аудіювання лише в пробних екзаменах")
+    for fn in sorted(os.listdir(QP)):
+        if not fn.startswith(lid + "-") or not fn.endswith("-comm-tasks.json"):
+            continue
+        d = jload(os.path.join(QP, fn)) or {}
+        for it in d.get("items", []) or []:
+            if it.get("mode") == "listen-then-play" or it.get("audio_url"):
+                errs.append(f"{fn}:{it.get('id')}: mode listen-then-play / audio_url — заборонено, ставте read-then-play")
+            if LISTEN_TXT.search(it.get("back_scenario", "")):
+                errs.append(f"{fn}:{it.get('id')}: у back_scenario «posłuchaj / czyta nauczyciel» — заборонено")
+    page = rd(os.path.join(PAGES, lid + ".md")) or ""
+    m = LISTEN_TXT.search(re.sub(r"<embed.*?</embed>", "", page, flags=re.S))
+    if m:
+        errs.append(f"сторінка: «{m.group(0)}» — у лекції немає слухання й плеєрів")
 
 
 def check_gz(lid, errs):

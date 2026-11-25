@@ -37,31 +37,6 @@ teacherOf: pl-preg-r3-powtorka
 - <b>Jedno miejsce, dwa pytania:</b> показати, що прийменник вирішує відмінок: w windzie / przed windą, na basenie / przed basenem.
 - <b>Пастки:</b> «ustąpić miejsca» — родовий; «przez telefon» — знахідний; обидва не з цих двох відмінків, але це часті помилки в цих самих ситуаціях.
 
-## 🎧 Діалог-зразок для c1 (читає викладач)
-
-<i>Olena jedzie z wózkiem do galerii „Promenada”.</i>
-
-| Хто | Репліка |
-| --- | --- |
-| Olena | Przepraszam, czy ten autobus jedzie do galerii „Promenada”? |
-| Kierowca | Tak, to jest dwudziestka. Proszę wsiadać środkowymi drzwiami, tam jest miejsce na wózek. |
-| Olena | Dziękuję. Wózek jest ciężki, a tu jest wysoki stopień… |
-| Pasażerka | Pomogę pani. Proszę, już jest w środku. |
-| Olena | Bardzo pani dziękuję! |
-| Olena | <i>(w galerii)</i> Dzień dobry. Gdzie jest pokój dla matki z dzieckiem? |
-| Pani w informacji | Na pierwszym piętrze, obok toalet. Jest tam przewijak i fotel do karmienia. |
-| Olena | A gdzie jest winda? Nie chcę jechać z wózkiem ruchomymi schodami. |
-| Pani w informacji | Winda jest za kwiaciarnią, przy wejściu od parkingu. Jest mała, czasem trzeba poczekać. |
-| Olena | Nie szkodzi, poczekam przed windą. Potem spotkam się z mężem przy fontannie. |
-| Pani w informacji | Miłego dnia! |
-| Olena | Dziękuję, nawzajem! |
-
-<b>Ключ до 3 питань на сторінці учениці:</b>
-
-1. Середніми дверима (środkowymi drzwiami); допомогла пасажирка.
-1. На першому поверсі, поруч із туалетами.
-1. Перед ліфтом (przed windą), ліфт — за квітковим магазином; потім зустрінеться з чоловіком біля фонтана.
-
 ## 🔑 Ключі
 
 <b>«Najpierw zgadnij»:</b> без застережень — park (але є поріг від вул. Leśna), kawiarnia, basen. Проблеми — autobus (тісно в годину пік), galeria (один ліфт), przychodnia (мало стільців, вузький ліфт). З кимось: park — z mamą, z sąsiadką; kawiarnia — z koleżanką; przychodnia — z Tomkiem; basen — Agata сама, мама zostaje z małą. Autobus і galeria — сама з малою.

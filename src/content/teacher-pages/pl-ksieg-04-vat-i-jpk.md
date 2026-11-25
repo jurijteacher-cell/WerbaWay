@@ -68,20 +68,6 @@ teacherOf: pl-ksieg-04-vat-i-jpk
 
 ---
 
-## 🎧 Діалог-зразок (читає викладач, один раз)
-
-<aside class="lp-callout" data-tone="blue"><span class="lp-callout-icon" aria-hidden="true">🎧</span><div class="lp-callout-body">
-
-<b>Pan Robert</b> (kawiarnia, JDG): Dzień dobry, pani Halino. Dostałem wiadomość: 3 135,70 zł VAT-u za październik. To chyba pomyłka?<br><b>Halina:</b> Dzień dobry, panie Robercie. Nie, wszystko się zgadza. Zaraz wyjaśnię.<br><b>Pan Robert:</b> We wrześniu płaciłem 2 400 zł. Skąd tyle?<br><b>Halina:</b> W październiku płaci pan o 735,70 zł więcej, czyli około 30 procent.<br><b>Pan Robert:</b> Ale dlaczego? Klientów było tyle samo.<br><b>Halina:</b> Sprzedaż była wyższa. Miał pan dwa duże zamówienia na catering. VAT należny wyniósł 5 520 zł.<br><b>Pan Robert:</b> A moje zakupy? Kupowałem kawę, mleko…<br><b>Halina:</b> To jest VAT naliczony: 2 384,30 zł z dwudziestu sześciu faktur. Płaci pan różnicę.<br><b>Pan Robert:</b> Rozumiem. Do kiedy mam zapłacić?<br><b>Halina:</b> Do 25 listopada, na mikrorachunek podatkowy. Numer wyślę panu e-mailem.<br><b>Pan Robert:</b> A deklaracja?<br><b>Halina:</b> Plik JPK&#95;V7M wyślę do tego samego dnia. Pan musi tylko zapłacić.
-
-</div></aside>
-
-<b>Питання на слух (усно) і ключі:</b>
-
-1. Ile pan Robert ma zapłacić za październik i o ile więcej niż we wrześniu? — <i>3 135,70 zł; o 735,70 zł (około 30%).</i>
-1. Dlaczego VAT należny był wyższy? — <i>Dwa duże zamówienia na catering.</i>
-1. Do kiedy i gdzie trzeba zapłacić? Co wyśle Halina? — <i>Do 25 listopada, na mikrorachunek; JPK&#95;V7M.</i>
-
 ## 🎭 Ключі до комунікаційних задач
 
 <b>c1 · Klient się dziwi</b> (ти — пан Томаш, недовірливий, перебивай питаннями «А скільки це відсотків?», «А до якого?»):

@@ -7,16 +7,15 @@
   "items": [
     {
       "id": "c1",
-      "mode": "listen-then-play",
+      "mode": "read-then-play",
       "front_title": "Wycena przedpokoju",
-      "back_scenario": "Najpierw posłuchaj rozmowy pana Marka z panią Ewą. Potem Ty jesteś fachowcem, a nauczyciel — klientką. Klientka chce odnowić przedpokój: pięć metrów kwadratowych podłogi i dwadzieścia osiem metrów kwadratowych ścian. Poprowadź rozmowę z innymi szczegółami.",
+      "back_scenario": "Najpierw przeczytaj rozmowę pana Marka z panią Ewą. Potem Ty jesteś fachowcem, a nauczyciel — klientką. Klientka chce odnowić przedpokój: pięć metrów kwadratowych podłogi i dwadzieścia osiem metrów kwadratowych ścian. Poprowadź rozmowę z innymi szczegółami.",
       "back_checklist": [
         "Zapytaj, co klientka chce zrobić w przedpokoju.",
         "Powiedz, co trzeba zrobić najpierw, a co potem (użyj trzeba co najmniej trzy razy).",
         "Podaj ilość materiałów, np. farby albo kleju, i termin: kiedy zaczniesz i kiedy skończysz.",
         "Powiedz klientce, czego nie wolno robić podczas prac."
       ],
-      "audio_url": "/audio/pl-remont-01-wycena-lazienki-c1-dialog.mp3",
       "model_dialogue": [
         {
           "speaker": "Ewa",

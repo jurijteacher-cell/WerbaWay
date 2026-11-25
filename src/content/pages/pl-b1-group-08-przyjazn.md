@@ -344,7 +344,7 @@ Elementy języka
 
 ## 🏠 8. Praca domowa
 
-Cztery części: <b>ćwiczenia</b>, <b>wideo</b>, <b>słuchanie</b> i <b>pisanie</b>.
+Trzy części: <b>ćwiczenia</b>, <b>wideo</b> i <b>pisanie</b>.
 
 <embed source="https://werba-way.vercel.app/embed/pl-b1-group-08-przyjazn/hw">
 Praca domowa
@@ -365,14 +365,6 @@ Odpowiedz pisemnie (po 1–2 zdania):
 1. Którą radę wypróbujesz? Napisz 2–3 zdania i użyj dwóch zaimków (np. <i>do niej, z nim</i>) oraz jednego słowa z <i>ni-</i>.
 
 ---
-
-### 🎧 Do posłuchania
-
-Audycja Radia Kraków <b>„Masz przyjaciół… czy tylko ci się wydaje?”</b> (cykl „Wieczorna terapia”): <a href="https://www.radiokrakow.pl/audycje/masz-przyjaciol-czy-tylko-ci-sie-wydaje/">https://www.radiokrakow.pl/audycje/masz-przyjaciol-czy-tylko-ci-sie-wydaje/</a><br>Przeczytaj krótki opis na stronie i posłuchaj początku audycji. Odpowiedz jednym zdaniem:
-
-1. Kto jest gościem audycji i jaki ma zawód?
-1. Jakie elementy przyjaźni wymieniają autorzy? Podaj trzy.
-1. Jak w audycji nazywa się przyjaźń w porównaniu z rodziną?
 
 ### ✍️ Pisanie — jak na egzaminie
 

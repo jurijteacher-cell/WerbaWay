@@ -43,16 +43,6 @@ teacherOf: pl-kp-03-o-sobie-korzenie
 - <b>Минулий час.</b> Тільки 3-тя особа (on/ona/oni). Форми 1-ї особи (urodziłem/urodziłam) — як готові фрази.
 - <b>Dlaczego.</b> Chcę + bezokolicznik, bo + причина. Відповідь має бути особиста, не завчена.
 
-## 🎧 Діалог-зразок до c1 (читаєш ти, в ролях)
-
-> <b>Konsul:</b> Dzień dobry, proszę usiąść. Jak się Pan nazywa?<br><b>Andrij:</b> Dzień dobry. Nazywam się Andrij Kowalczuk.<br><b>Konsul:</b> Ile ma Pan lat?<br><b>Andrij:</b> Mam czterdzieści trzy lata.<br><b>Konsul:</b> Skąd Pan jest?<br><b>Andrij:</b> Jestem z Równego, ale teraz mieszkam w Łucku.<br><b>Konsul:</b> Czym się Pan zajmuje?<br><b>Andrij:</b> Jestem kierowcą. Pracuję jako kierowca autobusu.<br><b>Konsul:</b> Ma Pan rodzinę?<br><b>Andrij:</b> Tak, jestem żonaty. Mam dwie córki.<br><b>Konsul:</b> A dlaczego uczy się Pan polskiego?<br><b>Andrij:</b> Bo mój dziadek był Polakiem. Chcę mówić tak jak on.
-
-<b>3 питання після прослуховування:</b>
-
-1. Ile lat ma Andrij? — <i>Czterdzieści trzy lata.</i>
-1. Gdzie Andrij mieszka teraz? — <i>W Łucku.</i>
-1. Dlaczego Andrij uczy się polskiego? — <i>Bo jego dziadek był Polakiem.</i>
-
 ## 🔑 Ключі до відкритих питань
 
 <b>Pytania do tekstu:</b>

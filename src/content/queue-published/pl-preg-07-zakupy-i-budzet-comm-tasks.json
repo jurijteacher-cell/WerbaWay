@@ -7,9 +7,9 @@
   "items": [
     {
       "id": "c1",
-      "mode": "listen-then-play",
+      "mode": "read-then-play",
       "front_title": "Reklamacja bez paragonu",
-      "back_scenario": "Rzecz kupiona tydzień temu przestała działać, a paragonu nie możesz znaleźć. Najpierw posłuchaj przykładowej rozmowy, potem odegraj swoją — z inną rzeczą i innym problemem.",
+      "back_scenario": "Rzecz kupiona tydzień temu przestała działać, a paragonu nie możesz znaleźć. Najpierw przeczytaj przykładową rozmowę, potem odegraj swoją — z inną rzeczą i innym problemem.",
       "back_checklist": [
         "Powiedz, co kupiłaś i co się zepsuło.",
         "Wyjaśnij, że nie masz paragonu, i pokaż inny dowód zakupu.",
@@ -88,8 +88,7 @@
           "voice": "pl-PL-female",
           "line": "Dziękuję. To zostawiam lampkę i czekam na telefon."
         }
-      ],
-      "audio_url": "/audio/pl-preg-07-c1-dialog.mp3"
+      ]
     },
     {
       "id": "c2",

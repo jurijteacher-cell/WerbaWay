@@ -23,7 +23,6 @@ teacherOf: pl-a2-65-zdrowy-styl-zycia
 | 5–15 | Czytanie | читання вголос по абзацу, 4 питання, e1 самостійно |
 | 15–22 | Słownictwo | картки + вправа g1; вимова <i>wysypiać się, ćwiczyć, wymówka</i> |
 | 22–40 | Gramatyka | таблиці 1–4 + вправи g2–g4; ядро — <i>nie</i> + ndk і <i>proszę</i> + інфінітив |
-| 40–48 | Słuchanie e2 | два відтворення, без підказок між ними |
 | 48–58 | Zadania komunikacyjne | c1 — ти тренер; c2 — ти втомлений колега |
 | 58–60 | Podsumowanie | повернення до слова з розминки + домашка |
 
@@ -38,27 +37,6 @@ teacherOf: pl-a2-65-zdrowy-styl-zycia
 - <b>Nie + ndk.</b> В українській так само, тому помилка рідша; але вона вилазить у перекладі з англійської («не зроби»). Перевір на g5.
 - <b>Proszę / niech.</b> Два способи бути ввічливим: <i>Proszę poczekać</i> — нейтрально, <i>Niech pan poczeka</i> — тепліше, усно.
 - <b>Нерегулярні.</b> Шість форм: bądź, miej, jedz, weź, daj, idź. Варто продиктувати як міні-диктант у кінці уроку.
-
-## 🎧 e2: транскрипт і ключ
-
-Формат: державний іспит A2, два відтворення. Голоси: Agnieszka (W1) — Olena, Marcel (M1) — trener Marek. Тривалість 54 с.
-
-| Хто | Репліка |
-| --- | --- |
-| Olena | Dzień dobry, jestem Olena. Umówiłam się dziś na pierwszy trening. |
-| Marek | Dzień dobry. Proszę zostawić kurtkę w szatni po lewej stronie i wrócić tutaj. |
-| Olena | Już jestem. Od czego zaczynamy? |
-| Marek | Na sali jesteśmy na ty, dobrze? Zacznijmy od rozgrzewki — dziesięć minut na rowerze. I nigdy nie zaczynaj od ciężarów. |
-| Olena | Dziesięć minut? Koleżanka mówiła, że pięć wystarczy. |
-| Marek | Na zimne mięśnie pięć to za mało. I oddychaj spokojnie, nie trzymaj oddechu. |
-| Olena | Dobrze. A jak często mam tu przychodzić? |
-| Marek | Na początku dwa razy w tygodniu, nie trzy. I nie przychodź dwa dni pod rząd, mięśnie muszą odpocząć. |
-| Olena | To może wtorek i sobota? |
-| Marek | We wtorek mam grupę… nie, przepraszam, grupa jest w poniedziałek. Wtorek jest wolny. Zapiszę cię na wtorek i sobotę, a w domu pij więcej wody. |
-
-<b>Ключ:</b> 1 — od dziesięciu minut na rowerze · 2 — dwa razy · 3 — we wtorek i sobotę · 4 — zaczynać od ciężarów.
-
-<b>Пастки в записі:</b> «п'ять хвилин» каже подруга, а не тренер (питання 1); «nie trzy» одразу після «dwa razy» (питання 2); самовиправлення тренера з понеділком (питання 3).
 
 ## 🎭 Комунікаційні задачі
 

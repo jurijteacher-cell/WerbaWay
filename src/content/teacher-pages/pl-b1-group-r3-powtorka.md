@@ -33,12 +33,11 @@ teacherOf: pl-b1-group-r3-powtorka
 | --- | --- | --- |
 | 0–5 | Розігрів | Ланцюжок «Gdybym…»: ти починаєш (<i>Gdybym miał psa…</i>), учень продовжує наслідком, потім робить з нього нову умову. |
 | 5–25 | 3. Mapa: <i>jeśli / gdyby</i>, <i>żeby</i> + ćw. 3–5 | Вправи 3–5. На ćw. 5 учень читає оголошення цілим. |
-| 25–35 | 4. Słuchanie (e2) | 1 хв на питання; вмикаєш аудіо з Notion двічі. Потім — транскрипт. |
 | 35–70 | 5. Speaking marathon | 6 карток × 1 хв + 2–3 хв розбору. У c1, c2, c5, c6 ти граєш другу роль (у c5 — впертий продавець). |
 | 70–80 | Міні-перевірка усно | 10 трансформацій: <i>kupić → (wy)?</i>, <i>nie + przynieść → ?</i>, <i>trzeba → (wczoraj)?</i>, <i>ja + zrobić → (by)?</i>, <i>prosić + że/żeby?</i>. |
 | 80–90 | 6–7. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити письмо. |
 
-<b>Формат 3 × 60:</b> ① Czytanie, e1, Słownictwo, Mapa (наказовий, модальні), ćw. 1 · ② Mapa (<i>trzeba / wolno</i>, умовний, <i>jeśli / gdyby</i>, <i>żeby</i>), ćw. 2–5 · ③ e2, Speaking marathon, усна міні-перевірка, Podsumowanie, ДЗ.
+<b>Формат 3 × 60:</b> ① Czytanie, e1, Słownictwo, Mapa (наказовий, модальні), ćw. 1 · ② Mapa (<i>trzeba / wolno</i>, умовний, <i>jeśli / gdyby</i>, <i>żeby</i>), ćw. 2–5 · ③ Speaking marathon, усна міні-перевірка, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -54,25 +53,6 @@ teacherOf: pl-b1-group-r3-powtorka
 - <b>Nie musisz / nie wolno.</b> Головна пастка блоку: «не можна» ≠ «не треба». Пограйте в «знаки»: ти описуєш знак, учень — <i>tu nie wolno… / tu nie musisz…</i>.
 - <b>Умовний.</b> Форма на <i>-ł</i> + <i>by</i> + особа. <i>Jeśli</i> — реально, <i>gdyby</i> — малоймовірно. Після <i>gdyby</i> — ніколи теперішній.
 - <b>Żeby.</b> <i>Że</i> — інформація, <i>żeby</i> — прохання / мета. Укр. «щоб» = <i>żeby</i>, «що» = <i>że</i> — тут учням легше, ніж англомовним.
-
----
-
-## 🎧 Транскрипт e2 (аудіо в Notion; голоси: Olena — Agnieszka, pracownik — Friday)
-
-<b>Pracownik:</b> Schronisko dla zwierząt, dzień dobry.
-<b>Olena:</b> Dzień dobry, mówi Olena. Byłam u państwa w sobotę ze zbiórką z naszego bloku.
-<b>Pracownik:</b> A, pamiętam! Jeszcze raz dziękujemy za koce.
-<b>Olena:</b> Mój syn chciałby przychodzić na spacery z psami. Co trzeba zrobić?
-<b>Pracownik:</b> Najpierw musi przyjść na szkolenie. Szkolenia są w pierwszą sobotę miesiąca, o dziesiątej. Ile syn ma lat?
-<b>Olena:</b> Piętnaście.
-<b>Pracownik:</b> To potrzebujemy pisemnej zgody rodzica. I na spacery syn musi przychodzić z panią albo z innym dorosłym.
-<b>Olena:</b> Rozumiem. Czy trzeba coś przynieść? Smycz, karmę?
-<b>Pracownik:</b> Nie, smycze mamy swoje, nie musicie nic kupować. Proszę tylko założyć wygodne buty i stare ubranie, bo psy skaczą.
-<b>Olena:</b> A gdybyśmy nie mogli przyjść w sobotę?
-<b>Pracownik:</b> Jeśli nie możecie w sobotę, można przyjść w środę po południu, o szesnastej. Ale wtedy jest mniej wolontariuszy.
-<b>Olena:</b> Dobrze, to przyjdziemy w pierwszą sobotę. Do widzenia!
-
-<b>Ключі e2:</b> 1 w pierwszą sobotę miesiąca o dziesiątej · 2 pisemnej zgody rodzica · 3 wygodne buty i stare ubranie · 4 w środę po południu · 5 przyjdą w pierwszą sobotę.
 
 ---
 

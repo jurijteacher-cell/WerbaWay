@@ -80,21 +80,6 @@ moduleTitle: Польська для ремонтів
 
 <b>h1:</b> puszek · worki · rolek · wałki · litra · piasku · paczki · śrub.<br><b>h2:</b> Wczoraj zamówiłem jedenaście worków gipsu. · W garażu zostały trzy puszki farby. · Wczoraj zabrakło nam kleju.<br><b>h3:</b> W sklepie zostały dwie puszki. · Kupiłem trzydzieści jeden płytek. · Potrzebujemy folii w płynie.
 
-### Аудіо (озвучене сайтом)
-
-Файли: <i>-czytanie.mp3</i> (оповідач, Artur, Joanna) і <i>-c1-dialog.mp3</i> (Marek із sprzedawczynią Iloną). Транскрипт c1 для вчителя:
-
-- <b>Ilona:</b> Dzień dobry, w czym mogę pomóc?
-- <b>Marek:</b> Dzień dobry. Robię remont łazienki i szukam kleju do płytek. Ile kosztuje worek?
-- <b>Ilona:</b> Worek dwadzieścia pięć kilogramów kosztuje pięćdziesiąt pięć złotych.
-- <b>Marek:</b> Biorę pięć worków. Czy macie tyle na stanie?
-- <b>Ilona:</b> Mamy trzy worki na półce, a dwa dowieziemy jutro.
-- <b>Marek:</b> Dobrze. Poproszę jeszcze dziesięć litrów gruntu i trzy kartusze silikonu.
-- <b>Ilona:</b> Grunt jest w pojemnikach po pięć litrów, więc będą dwa pojemniki. Silikon biały czy przezroczysty?
-- <b>Marek:</b> Biały. I jeszcze pół litra rozpuszczalnika.
-- <b>Ilona:</b> Proszę bardzo. Przy takim zamówieniu daję dziesięć procent rabatu.
-- <b>Marek:</b> Świetnie. Czy możecie dowieźć wszystko jutro rano?
-- <b>Ilona:</b> Tak, dostawa kosztuje czterdzieści złotych. Paragon wyślemy mailem.
 
 <b>Питання після прослуховування (усно):</b> 1. Ile worków kleju bierze Marek? (pięć) 2. Ile jest na półce, a ile przyjedzie jutro? (trzy; dwa) 3. Ile pojemników gruntu będzie i dlaczego? (dwa, bo po pięć litrów) 4. Ile kosztuje dostawa? (czterdzieści złotych)
 

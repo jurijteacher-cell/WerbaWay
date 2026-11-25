@@ -27,7 +27,7 @@ teacherOf: pl-a2-52-poznaje-zespol
 | 4–13 | Текст «Pierwszy dzień w zespole» (учень читає вголос першу половину) → 4 питання → e1. |
 | 13–18 | Słownictwo: картки, учень обирає 5 слів і каже речення про своє місце роботи або навчання. |
 | 18–38 | Граматика: 7 блоків + винятки й пастки (&#126;11 хв) → вправи g1–g3 (&#126;9 хв). |
-| 38–55 | Слухання e2 (аудіо, 2 відтворення, &#126;4 хв) → c1 (учень новенький, ти — опікун) → c2, якщо є час. |
+| 38–55 | c1 (учень новенький, ти — опікун) → c2, якщо є час. |
 | 55–60 | Podsumowanie (чекбокси + людина з розминки в трьох реченнях без імені), пояснити ДЗ. |
 
 <b>Швидший учень:</b> g4–g5 на уроці; c2 повністю; гра «без імені» — ти кажеш речення з іменем (<i>Idę na kawę z Magdą. Mam prezent dla Bartka. Nie widzę pani Danuty.</i>), учень швидко замінює на займенник. «Minuta bez przerwy»: <i>Mój zespół</i>.
@@ -45,34 +45,6 @@ teacherOf: pl-a2-52-poznaje-zespol
 - <b>Pan / Pani.</b> Ключові фрази вивчити готовими: <i>Miło mi Pana / Panią poznać. Czy mogę Panu / Pani pomóc? Dzwonię do Pana / Pani w sprawie…</i>
 - <b>Заперечення.</b> Пов'яжи з A1 (<i>nie mam czasu</i> — родовий). У займенниках видно лише <i>ją → jej</i> і <i>je → ich</i>, решта форм збігається.
 - <b>Пастки.</b> Учень спершу сам перекладає українську колонку. «<i>Dzwonię mu</i>» — найчастіша калька; додай, що <i>napisać komuś maila</i> — правильно, так само як <i>napisać do kogoś</i>, але <i>dzwonić</i> — лише <i>do</i>.
-
-## 🎧 Слухання e2 (аудіо у вікні)
-
-Формат — як на державному іспиті A2: короткий діалог, вибір a/b/c, запис звучить <b>двічі</b> (у вікні лічильник 0/2). Текст діалогу учень бачить лише після відповідей на всі 4 питання. Дай учню 30 с на читання питань перед першим відтворенням. Запис 46 с, голоси ElevenLabs: Olena — Agnieszka, Tomek — Marcel. Якщо звук не грає — читай сам, двома голосами, двічі.
-
-1. <b>Olena:</b> Tomek, masz chwilę? Kto to jest, ten pan przy ekspresie?
-1. <b>Tomek:</b> To Bartek z IT. Znam go od trzech lat, jest bardzo miły.
-1. <b>Olena:</b> Super, bo mój laptop nie działa. Mogę do niego zadzwonić?
-1. <b>Tomek:</b> Lepiej napisz do niego maila. Rano ma spotkania, odpisuje dopiero po dziesiątej.
-1. <b>Olena:</b> Dobrze. A ta pani w czerwonym swetrze? Widzę ją pierwszy raz.
-1. <b>Tomek:</b> To pani Danuta z księgowości. Z nią nie jesteśmy na ty, więc mów do niej „pani Danuto”.
-1. <b>Olena:</b> Mam dla niej dokumenty od pani Agnieszki. Mogę iść teraz?
-1. <b>Tomek:</b> Nie teraz, teraz ma rozmowę z szefem. Idź do niej po lunchu.
-1. <b>Olena:</b> Dziękuję ci, Tomek. Pomagasz mi od rana!
-1. <b>Tomek:</b> Nie ma sprawy. Ale jutro kawa ode mnie, a ciastko od ciebie!
-
-<b>Ключі й «гачки» в записі:</b>
-
-| Питання | ✓ | Гачок |
-| --- | --- | --- |
-| 1. Co Olena ma zrobić w sprawie laptopa? | napisać do Bartka maila | «zadzwonić» звучить як питання Олени; «po dziesiątej» → дистрактор «przed dziesiątą» |
-| 2. Jak Olena ma mówić do pani z księgowości? | „pani Danuto” | «na ty» звучить з запереченням; ім'я Agnieszka теж є в записі |
-| 3. Kiedy Olena ma iść do pani Danuty? | po lunchu | «teraz» (скасований план), «po dziesiątej» — про Бартка |
-| 4. Co Olena ma przynieść jutro? | ciastko | «kawa ode mnie» — це Томек; «dokumenty» — з репліки 7 |
-
-Після слухання — c1: учень у ролі новенького, ти — його опікун. Ускладнення: «A do pani Danuty mówisz po imieniu?», «Bartek jest na urlopie. Do kogo teraz napiszesz?», «Wniosek o urlop składasz do mnie czy do działu HR?».
-
-<b>c2 (nowa osoba w zespole):</b> ти починаєш офіційно («Dzień dobry, czy to Pan / Pani jest moim opiekunem?») і тримаєшся «Pan / Pani», доки учень сам не запропонує «na ty». Потрібно чути мінімум 4 займенники в різних відмінках (<i>znam go, możesz do niej pisać, pomogę ci…</i> — останнє не виправляти, але сама не вводь: майбутній доконаний — урок 58).
 
 ## 🔑 Ключі до питань до тексту
 
@@ -101,7 +73,7 @@ teacherOf: pl-a2-52-poznaje-zespol
 
 - <b>Слова 51:</b> dział HR (текст, e1, Warto użyć), grafik (текст, g1-5, c1), urlop (словник, c1), wniosek, przerwa, zaczynać pracę (Warto użyć, c1).
 - <b>Слова 50:</b> szef, kolega z pracy, praca w biurze подорожей (текст).
-- <b>Граматика 50–51:</b> <code>przyimki-czasu</code> — <i>od roku, od trzech lat, od rana, po lunchu, po dziesiątej</i> (g1-1, діалог e2); години і дата — <i>wtorek, pierwszy grudnia, za dwadzieścia dziewiąta, o jedenastej, o trzynastej</i> (текст), <i>pracuje od ósmej</i> (g3-5).
+- <b>Граматика 50–51:</b> <code>przyimki-czasu</code> — <i>od roku, od trzech lat, od rana, po lunchu, po dziesiątej</i> (g1-1); години і дата — <i>wtorek, pierwszy grudnia, za dwadzieścia dziewiąta, o jedenastej, o trzynastej</i> (текст), <i>pracuje od ósmej</i> (g3-5).
 - Майбутній доконаний і давальний іменників свідомо не вживаються. Інфінітиви доконаного виду після <i>mogę, możesz</i> (<i>pomóc, pokazać, zadzwonić</i>) — є.
 
 ## ✍️ Письмо: повідомлення про двох людей (60–80 слів)
@@ -124,7 +96,7 @@ teacherOf: pl-a2-52-poznaje-zespol
 
 ## 🔗 LMS
 
-<code>pl-a2-52-poznaje-zespol</code> — vocab, grammar (g1–g5), comm-tasks (c1–c2), hw (h1–h3), exam (e1 читання, e2 слухання з mp3). Аудіо: <code>/audio/pl-a2-52-poznaje-zespol-e2-dialog.mp3</code>, flow ElevenLabs «pl-a2-52-poznaje-zespol».
+<code>pl-a2-52-poznaje-zespol</code> — vocab, grammar (g1–g5), comm-tasks (c1–c2), hw (h1–h3), exam (e1 читання).
 
 ## 🎬 Відео в ДЗ
 

@@ -1,8 +1,8 @@
 {
   "lesson_id": "pl-a2-76-kontrolna-podroze",
   "exercise_type": "true-false",
-  "title": "Kontrolna: czytanie i słuchanie",
-  "instruction": "Część C — czytanie, część D — słuchanie.",
+  "title": "Kontrolna: czytanie",
+  "instruction": "Część C — czytanie.",
   "estimated_minutes": 12,
   "blocks": [
     {
@@ -27,37 +27,6 @@
           "id": "e1-3",
           "statement": "Pan Piotr zarezerwował pensjonat na luty.",
           "answer": true
-        }
-      ]
-    },
-    {
-      "block_id": "e2",
-      "exam_skill": "sluchanie",
-      "max_plays": 2,
-      "audio_url": "/audio/pl-a2-76-kontrolna-podroze-e2-dialog.mp3",
-      "exercise_type": "multiple-choice",
-      "title": "Część D. Słuchanie: a, b czy c?",
-      "instruction": "Usłyszysz rozmowę Tomka i Oleny dwa razy. Wybierz poprawną odpowiedź.",
-      "items": [
-        {
-          "id": "e2-1",
-          "question": "Od kogo Tomek dostał zielony szalik?",
-          "options": [
-            "od Oleny",
-            "od mamy",
-            "od Kasi"
-          ],
-          "answer": "od Oleny"
-        },
-        {
-          "id": "e2-2",
-          "question": "Co wybiera Tomek?",
-          "options": [
-            "poczeka do lutego",
-            "zapłaci za paczkę",
-            "kupi nowy szalik"
-          ],
-          "answer": "poczeka do lutego"
         }
       ]
     }

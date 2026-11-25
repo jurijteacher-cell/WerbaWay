@@ -31,9 +31,7 @@ cover: https://images.unsplash.com/photo-1771499930542-1dae489be167?w=1600&h=900
 
 ### ☕ Poniedziałek w „Kluczu”
 
-Natalia opowiada nowej koleżance, jak wygląda jej poniedziałek. Posłuchaj i czytaj. Zauważ: jak Natalia mówi o sobie, o szefowej i o klientach. Zwróć uwagę na końcówki czasowników.
-
-<audio controls preload="none" src="https://werba-way.vercel.app/audio/pl-nier-03-czas-terazniejszy-czytanie.mp3"></audio>
+Natalia opowiada nowej koleżance, jak wygląda jej poniedziałek. Przeczytaj tekst. Zauważ: jak Natalia mówi o sobie, o szefowej i o klientach. Zwróć uwagę na końcówki czasowników.
 
 Poniedziałek zaczynam o ósmej. Przychodzę do biura, robię kawę i sprawdzam wiadomości. W weekend na portalach pojawia się kilkanaście zapytań, więc od razu na nie odpisuję: dziękuję, pytam o termin i wysyłam zdjęcia.
 

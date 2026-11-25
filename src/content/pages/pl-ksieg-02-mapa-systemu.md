@@ -225,7 +225,7 @@ Słownictwo — karty
 
 </div></aside>
 
-👉 <b>Teraz Twoja kolej.</b> Dwie sytuacje — odwróć kartę i odegraj rozmowę. Przed pierwszą posłuchaj przykładowej rozmowy, którą czyta nauczyciel.
+👉 <b>Teraz Twoja kolej.</b> Dwie sytuacje — odwróć kartę i odegraj rozmowę.
 
 <embed source="https://werba-way.vercel.app/embed/pl-ksieg-02-mapa-systemu/comm-tasks">
 Zadania komunikacyjne

@@ -283,12 +283,6 @@ Nauczyciel zadaje pytanie, Ty od razu odpowiadasz <b>jednym pełnym zdaniem</b>.
 
 </div></aside>
 
-🎧 <b>Najpierw posłuchaj.</b> Nauczyciel przeczyta rozmowę Oleny w sklepie. Potem odpowiedz ustnie:
-
-1. Co kupiła Olena i co jest z tym nie tak?
-1. Co Olena zrobiła, zanim przyszła do sklepu?
-1. Co wybrała: wymianę czy zwrot pieniędzy? Ile musi czekać?
-
 👉 <b>Teraz Twoja kolej.</b> Trzy sytuacje — odwróć kartę i odegraj rozmowę, z innymi szczegółami.
 
 <embed source="https://werba-way.vercel.app/embed/pl-preg-r4-powtorka/comm-tasks">

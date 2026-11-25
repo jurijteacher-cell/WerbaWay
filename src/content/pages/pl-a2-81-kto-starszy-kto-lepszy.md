@@ -221,14 +221,6 @@ Słownictwo — karty
 
 ## 🎭 4. Zadania komunikacyjne
 
-### 🎧 Słuchanie jak na egzaminie
-
-Pani Ewa dzwoni do męża, Michała, po pierwszym tygodniu w Krakowie. Posłuchaj rozmowy dwa razy — bez tekstu. Najpierw zaznacz: prawda czy fałsz, potem wybierz a, b albo c.
-
-<embed source="https://werba-way.vercel.app/embed/pl-a2-81-kto-starszy-kto-lepszy/exam?blocks=e2-e3">
-Słuchanie — jak na egzaminie
-</embed>
-
 <aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">🧰</span><div class="lp-callout-body">
 
 <b>Warto użyć</b>

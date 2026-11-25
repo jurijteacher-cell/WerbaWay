@@ -23,10 +23,10 @@ teacherOf: pl-a2-72-rezerwacja-ile-osob-ile-nocy
 | 3–12 | 1. Czytanie + e1 | Два e-maile: учень читає лист Олени, ти — відповідь пансіонату. Виділені форми — «який відмінок?» (без термінів: «скільки?», «де?», «з ким?»). 4 питання усно, потім e1. |
 | 12–18 | 2. Słownictwo + ćw. 1 | Картки по групах; зупинись на <i>złoty / złote / złotych</i> і <i>zameldować się</i>. Потім g1. |
 | 18–38 | 3. Gramatyka + g2–g3 | Спершу «три легкі відмінки» (5 хв), потім «Ile?» і родовий (10 хв), прикметник і <i>kolegów</i> — коротко. g2–g3 разом. g4–g5 — якщо лишився час. |
-| 38–55 | 4. Słuchanie + c1, c2 | e2–e3 (2 відтворення, пауза 10 с), потім транскрипт: учень знаходить 5 форм множини. c1 → c2, ти граєш рецепцію й касира. |
+| 38–55 | 4. c1, c2 | c1 → c2, ти граєш рецепцію й касира. |
 | 55–60 | 5. Podsumowanie + ДЗ | Чекліст, повернення до розминки (3 речення). Поясни письмо. |
 
-<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, «Trzy łatwe przypadki», «Ile?», g2 · ② родовий, прикметник, винятки, g3–g5, Słuchanie, c1, c2, Podsumowanie, ДЗ.
+<b>Формат 2 × 45 хв:</b> ① Czytanie, e1, Słownictwo, g1, «Trzy łatwe przypadki», «Ile?», g2 · ② родовий, прикметник, винятки, g3–g5, c1, c2, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -54,20 +54,6 @@ teacherOf: pl-a2-72-rezerwacja-ile-osob-ile-nocy
 4. Dziesięć procent zniżki dla grup powyżej ośmiu osób, bezpłatne łóżeczka, kolacje od 18 do 20. Zameldować się można od czternastej.
 
 <b>e1:</b> F · P · F · P · F.
-
----
-
-## 🎧 e2–e3: транскрипт і ключ
-
-Формат: діалог → prawda/fałsz + a/b/c, звучить <b>двічі</b>, пауза 10 с. Голоси для озвучення (ElevenLabs, <code>eleven_v4</code>): Olena — <code>mQq2zdGT1zEfDbh8W95l</code>, recepcja (pani Anna) — <code>gHGjEjdr2LBds0XHTsvg</code>. Поки аудіо немає — читай діалог сам, двічі.
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Recepcja:</b> Pensjonat „Pod Jodłami”, dzień dobry, słucham.<br><b>Olena:</b> Dzień dobry, tu Olena z Krakowa. Pisałam do Państwa o rezerwacji dla grupy.<br><b>Recepcja:</b> Tak, pamiętam. Dziewięć osób, dwie noce, od czternastego do szesnastego marca.<br><b>Olena:</b> Zgadza się. Mam jeszcze kilka pytań. Czy wszystkie pokoje mają balkony?<br><b>Recepcja:</b> Niestety nie. W dwóch pokojach są balkony z widokiem na Giewont. W pozostałych — nie.<br><b>Olena:</b> Rozumiem. A czy przy pensjonacie jest parking? Przyjedziemy kilkoma samochodami.<br><b>Recepcja:</b> Tak, mamy pięć miejsc parkingowych za domem. Są bezpłatne.<br><b>Olena:</b> Świetnie. I jeszcze jedno: nasz szef chciałby przyjechać z psem.<br><b>Recepcja:</b> Przykro mi, ale u nas nie wolno nocować ze zwierzętami.<br><b>Olena:</b> Szkoda, pan Piotr będzie smutny! Ile zapłacimy razem za dwie noce?<br><b>Recepcja:</b> Dwa tysiące sto czterdzieści dwa złote, ze zniżką dla grupy. Zaliczkę, pięćset złotych, proszę wpłacić do piątku.<br><b>Olena:</b> Dobrze, potwierdzam rezerwację. Dziękuję i do usłyszenia!<br><b>Recepcja:</b> Dziękuję, do widzenia!
-
-</div></aside>
-
-<b>Ключ e2:</b> 1 P · 2 F (balkony tylko w dwóch pokojach) · 3 F (parking bezpłatny) · 4 P.<br><b>Ключ e3:</b> 1 pięć · 2 2142 zł · 3 za domem.<br><b>Пастки:</b> e3-1 — <i>dwa</i> звучить про балкони, <i>dziewięć</i> — про людей; e3-2 — 2380 zł — це ціна без знижки (3 × 280 + 350 = 1190 за ніч × 2), 1190 — за одну ніч. Сильному учневі можна дати порахувати.
 
 ---
 

@@ -8,9 +8,9 @@
   "items": [
     {
       "id": "c1",
-      "mode": "listen-then-play",
+      "mode": "read-then-play",
       "front_title": "Pierwszy telefon",
-      "back_scenario": "Jesteś na dworcu. Dzwonisz pierwszy raz do właścicielki mieszkania. Przedstaw się i zapytaj o ulicę. Najpierw posłuchaj rozmowy Oleny, potem odegraj swoją: Twoje imię, inna ulica. Gotowe zwroty: „Halo, dzień dobry.” „Przepraszam, jestem …” „Ulica, proszę?” „Tak, dobrze.” „Dziękuję.”",
+      "back_scenario": "Jesteś na dworcu. Dzwonisz pierwszy raz do właścicielki mieszkania. Przedstaw się i zapytaj o ulicę. Najpierw przeczytaj rozmowę Oleny, potem odegraj swoją: Twoje imię, inna ulica. Gotowe zwroty: „Halo, dzień dobry.” „Przepraszam, jestem …” „Ulica, proszę?” „Tak, dobrze.” „Dziękuję.”",
       "back_checklist": [
         "Powiedz „Dzień dobry” i przedstaw się: „Jestem …”.",
         "Powiedz, że jesteś na dworcu.",
@@ -70,8 +70,7 @@
           "voice": "pl-PL-female",
           "line": "Dziękuję! Dobranoc."
         }
-      ],
-      "audio_url": "/audio/pl-a0-02-c1-dialog.mp3"
+      ]
     },
     {
       "id": "c2",

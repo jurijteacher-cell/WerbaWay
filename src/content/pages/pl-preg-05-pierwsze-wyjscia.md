@@ -91,9 +91,9 @@ Opisz każde zdjęcie osobno: kto na nim jest, gdzie to się dzieje, co ta osoba
 
 ## 6. Zadania komunikacyjne
 
-Najpierw posłuchaj przykładowej rozmowy w kawiarni. Potem odegraj swoją — z innym zamówieniem i innymi szczegółami.
+Najpierw przeczytaj przykładową rozmowę w kawiarni. Potem odegraj swoją — z innym zamówieniem i innymi szczegółami.
 
-<b>Po nagraniu odpowiedz ustnie:</b>
+<b>Po przeczytaniu odpowiedz ustnie:</b>
 
 1. Jaki stolik dostała klientka i dlaczego akurat ten?
 1. Gdzie w budynku jest przewijak?

@@ -2,7 +2,7 @@
   "lesson_id": "pl-a2-80-ten-tamten-ktos",
   "exercise_type": "true-false",
   "title": "Jak na egzaminie A2",
-  "instruction": "Czytanie i słuchanie w formacie egzaminu.",
+  "instruction": "Czytanie w formacie egzaminu.",
   "estimated_minutes": 10,
   "blocks": [
     {
@@ -42,85 +42,6 @@
           "statement": "W tym tygodniu pan Piotr pracuje w Gdańsku.",
           "answer": true,
           "explanation": "…w tym tygodniu jest w Gdańsku u klienta."
-        }
-      ]
-    },
-    {
-      "block_id": "e2",
-      "exam_skill": "sluchanie",
-      "max_plays": 2,
-      "audio_url": "/audio/pl-a2-80-ten-tamten-ktos-e2-dialog.mp3",
-      "exercise_type": "true-false",
-      "title": "Słuchanie: prawda czy fałsz?",
-      "instruction": "Usłyszysz rozmowę Oleny z panią Agnieszką dwa razy. Słuchaj bez tekstu. Najpierw zaznacz: prawda czy fałsz. Potem przejdź do zakładki z pytaniami a, b, c.",
-      "items": [
-        {
-          "id": "e2-1",
-          "statement": "Pani Agnieszka od razu mówi, że to ona zostawiła kaktus.",
-          "answer": false,
-          "explanation": "Najpierw żartuje: „Kaktus? Jaki kaktus?”"
-        },
-        {
-          "id": "e2-2",
-          "statement": "Pani Agnieszka pisze tylko zielonymi długopisami.",
-          "answer": true,
-          "explanation": "Wszyscy w biurze wiedzą, że piszę tylko takimi."
-        },
-        {
-          "id": "e2-3",
-          "statement": "Kubek z kotem należy do Oleny.",
-          "answer": false,
-          "explanation": "To kubek Tomka."
-        },
-        {
-          "id": "e2-4",
-          "statement": "W środę do biura przyjdzie nowa osoba.",
-          "answer": true,
-          "explanation": "W środę przychodzi ktoś z Gdańska — pani Ewa."
-        }
-      ]
-    },
-    {
-      "block_id": "e3",
-      "exam_skill": "sluchanie",
-      "max_plays": 2,
-      "audio_url": "/audio/pl-a2-80-ten-tamten-ktos-e2-dialog.mp3",
-      "exercise_type": "multiple-choice",
-      "title": "Słuchanie: a, b czy c?",
-      "instruction": "To ta sama rozmowa. Wybierz poprawną odpowiedź.",
-      "items": [
-        {
-          "id": "e3-1",
-          "question": "Jak długo pani Agnieszka ma ten kaktus?",
-          "options": [
-            "dziesięć lat",
-            "dwa lata",
-            "od piątku"
-          ],
-          "answer": "dziesięć lat",
-          "explanation": "Mam ten kaktus już dziesięć lat."
-        },
-        {
-          "id": "e3-2",
-          "question": "Gdzie są rzeczy Tomka?",
-          "options": [
-            "w kartonie przy drzwiach",
-            "na oknie w kuchni",
-            "na biurku Oleny"
-          ],
-          "answer": "w kartonie przy drzwiach",
-          "explanation": "Jego rzeczy są w tamtym kartonie przy drzwiach."
-        },
-        {
-          "id": "e3-3",
-          "question": "Kim jest pani Ewa?",
-          "options": [
-            "nową koleżanką z Gdańska",
-            "nową szefową z Krakowa",
-            "klientką z Katowic"
-          ],
-          "answer": "nową koleżanką z Gdańska",
-          "explanation": "…ktoś z Gdańska — pani Ewa, nowa koleżanka do pani projektu."
         }
       ]
     }

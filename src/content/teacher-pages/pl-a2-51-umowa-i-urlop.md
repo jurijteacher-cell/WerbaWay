@@ -43,33 +43,6 @@ teacherOf: pl-a2-51-umowa-i-urlop
 - <b>Od kiedy do kiedy? O której?</b> Зв'язок з годинами з A1: <i>godzina dziewiąta</i> — жіночий рід, тому <i>o dziewiątej</i>. <i>Na</i> — запланований строк: <i>umowa na trzy miesiące, urlop na tydzień</i>.
 - <b>Пастки.</b> Учень спершу читає українську колонку й перекладає сам. «Перше грудня» — найчастіша помилка українців: в українській «число» середнього роду, у польській <i>dzień</i> — чоловічого.
 
-## 🎧 Діалог-зразок до c1 (читаєш ти, двома голосами)
-
-Перед читанням дай учню три питання. Читай один раз у природному темпі, другий — лише якщо учень попросить.
-
-1. — Panie Piotrze, ma Pan chwilę? Mam pytanie w sprawie urlopu.
-1. — Tak, proszę, panie Tomku. Kiedy chce Pan wziąć urlop?
-1. — W lutym, od piętnastego do dwudziestego szóstego. Jadę z bratem w Alpy na narty.
-1. — Od piętnastego do dwudziestego szóstego lutego… To dziesięć dni roboczych, tak?
-1. — Tak, od poniedziałku do piątku, dwa tygodnie.
-1. — A kto ma wtedy zastępstwo za Pana? W lutym mamy dużo klientów.
-1. — Olena. Pracuje z nami od pierwszego grudnia i zna już naszych stałych klientów.
-1. — Dobrze. Proszę złożyć wniosek do końca stycznia.
-1. — Trzydziestego pierwszego stycznia jest niedziela. Mogę do piątku, do dwudziestego dziewiątego?
-1. — Tak, do piątku. I proszę wrócić wypoczętym w poniedziałek, pierwszego marca!
-
-<b>Питання і ключі:</b>
-
-1. Od kiedy do kiedy Tomek chce urlop i dokąd jedzie? — <i>Od piętnastego do dwudziestego szóstego lutego, w Alpy na narty.</i>
-1. Kto ma za niego zastępstwo i dlaczego ona? — <i>Olena, bo zna już stałych klientów.</i>
-1. Do którego dnia Tomek musi złożyć wniosek? — <i>Do piątku, dwudziestego dziewiątego stycznia.</i>
-
-Даті в діалозі перевірені за календарем 2027 року (15.02 — пн, 26.02 — пт, 31.01 — нд, 01.03 — пн).
-
-Далі учень просить відпустку зі своїми датами, ти — pan Piotr. Ускладнення: «A ile to dni roboczych?», «W tym czasie jest święto — wie Pan / Pani?», «Kto ma zastępstwo za Pana / Panią?».
-
-<b>c2 (urlopy w zespole):</b> 19–30.07.2027 (учень) і 26.07–6.08.2027 (ти) перетинаються з 26 по 30 липня. Розумні рішення: учень бере 12–23 липня; ти починаєш 2 серпня і повертаєшся 13 серпня; хтось скорочує відпустку до одного тижня. Вимагай, щоб наприкінці учень сказав обидва періоди повністю, з роком. Твоя репліка-провокація: «Nie mogę wcześniej, mam ślub siostry trzydziestego pierwszego lipca».
-
 ## 🔑 Ключі до питань до тексту
 
 1. Підписує в п'ятницю, 27 листопада; починає роботу у вівторок, 1 грудня.

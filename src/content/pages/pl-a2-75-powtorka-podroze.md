@@ -167,21 +167,7 @@ Pięć tematów z ostatnich lekcji na jednej mapie. Każdy blok: zasada, przykł
 
 ---
 
-## 🎧 4. Słuchanie jak na egzaminie
-
-<aside class="lp-callout" data-tone="blue"><span class="lp-callout-icon" aria-hidden="true">🎧</span><div class="lp-callout-body">
-
-W niedzielę na dworcu w Zakopanem Olena zmienia bilety w kasie. Posłuchaj rozmowy <b>dwa razy</b> — bez tekstu. Najpierw zaznacz: prawda czy fałsz, potem odpowiedz na pytania a, b, c.
-
-</div></aside>
-
-<embed source="https://werba-way.vercel.app/embed/pl-a2-75-powtorka-podroze/exam?blocks=e2-e3">
-Słuchanie — jak na egzaminie
-</embed>
-
----
-
-## ⏱️ 5. Speaking marathon
+## ⏱️ 4. Speaking marathon
 
 <aside class="lp-callout" data-tone="red"><span class="lp-callout-icon" aria-hidden="true">⏱️</span><div class="lp-callout-body">
 
@@ -215,7 +201,7 @@ Elementy języka
 
 ---
 
-## ✅ 6. Podsumowanie
+## ✅ 5. Podsumowanie
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🏁</span><div class="lp-callout-body">
 
@@ -232,7 +218,7 @@ Elementy języka
 
 ---
 
-## 🏠 7. Praca domowa
+## 🏠 6. Praca domowa
 
 Dwie części — <b>ćwiczenia</b> i <b>e-mail do hotelu</b>.
 

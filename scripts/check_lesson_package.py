@@ -287,7 +287,9 @@ def main(pkg):
     comm = files.get("comm-tasks")
     if comm:
         for it in comm["items"]:
-            if it.get("mode") == "listen-then-play":
+            if it.get("mode") == "listen-then-play" or it.get("audio_url"):
+                err(f"comm {it['id']}: listen-then-play / audio_url заборонені в лекціях (аудіювання лише в екзаменах) — ставте read-then-play")
+            if it.get("mode") in ("listen-then-play", "read-then-play"):
                 n = len(it.get("model_dialogue", []))
                 if not 10 <= n <= 14:
                     err(f"comm {it['id']}: model_dialogue {n} реплік (норма 10–14)")

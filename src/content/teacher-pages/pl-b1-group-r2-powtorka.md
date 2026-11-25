@@ -33,12 +33,11 @@ teacherOf: pl-b1-group-r2-powtorka
 | --- | --- | --- |
 | 0–5 | Розігрів | «Ilu? Ile?»: ти питаєш про родину, роботу, клас учня, учень відповідає з правильним числівником. |
 | 5–25 | 3. Mapa: давальний + ćw. 3–5 | Вправи 3–5. На ćw. 5 учень читає весь чат уголос. |
-| 25–35 | 4. Słuchanie (e2) | 1 хв на питання; вмикаєш аудіо з Notion двічі. Потім — транскрипт. |
 | 35–70 | 5. Speaking marathon | 6 карток × 1 хв + 2–3 хв розбору (записуй помилки, не перебивай). |
 | 70–80 | Міні-перевірка усно | 10 швидких питань з мапи (ти кажеш, учень трансформує): <i>tani → ?</i>, <i>kopalnia, w … ?</i>, <i>5 + kolega → ?</i>, <i>ja + smakować → ?</i>. |
 | 80–90 | 6–7. Podsumowanie + ДЗ | Чекліст, повернення до слова з розминки, пояснити письмо. |
 
-<b>Формат 3 × 60:</b> ① Czytanie, e1, Słownictwo, Mapa (порівняння), ćw. 1 · ② Mapa (<i>który</i>, числівники, давальний), ćw. 2–5 · ③ e2, Speaking marathon, усна міні-перевірка, Podsumowanie, ДЗ.
+<b>Формат 3 × 60:</b> ① Czytanie, e1, Słownictwo, Mapa (порівняння), ćw. 1 · ② Mapa (<i>który</i>, числівники, давальний), ćw. 2–5 · ③ Speaking marathon, усна міні-перевірка, Podsumowanie, ДЗ.
 
 ### Учень швидший / повільніший
 
@@ -54,32 +53,6 @@ teacherOf: pl-b1-group-r2-powtorka
 - <b>Który.</b> Два кроки: рід — з іменника перед комою, відмінок — з дієслова після коми. Покажи на <i>kopalnia, w której…</i> і <i>kolega, któremu…</i>.
 - <b>Числівники.</b> «Чоловіки → <i>-u</i> (<i>pięciu, trzech</i>) + дієслово в середньому роді (<i>przyszło</i>)». Змішана група й діти → збірні (<i>sześcioro, dwoje</i>).
 - <b>Давальний.</b> <i>Smakuje mi</i> — як українське «мені смакує». Важче — <i>podoba mi się</i> (порядок) і <i>brakuje mi + D</i>.
-
----
-
-## 🎧 Транскрипт e2 (аудіо в Notion)
-
-<b>Dialog 1</b>
-— Dzień dobry. W czym mogę pomóc?
-— Dzień dobry, poproszę dwa bilety ulgowe na seans o dziewiętnastej.
-— W pierwszym rzędzie zostały już tylko miejsca z boku. Może rząd dziesiąty? Tam są dwa miejsca w środku i dużo lepiej widać.
-— Dobrze, to poproszę dziesiąty.
-
-<b>Dialog 2</b>
-— Babciu, pierogi były pyszne! Chłopakom najbardziej smakowały te z kapustą i grzybami.
-— A dziewczynom?
-— Ruskie. Zjadły wszystkie. Następnym razem zrób więcej ruskich, dobrze?
-
-<b>Dialog 3</b>
-— Mamy wolny pokój dwuosobowy za dwieście dwadzieścia złotych albo trzyosobowy. Trzyosobowy jest większy i tylko o trzydzieści złotych droższy.
-— To biorę trzyosobowy. Będzie nas troje: ja, mąż i córka.
-
-<b>Dialog 4</b>
-— Ilu was będzie w sobotę?
-— Pięciu chłopaków i dwie dziewczyny.
-— To zamówmy cztery pizze. Chłopaki zawsze jedzą więcej, niż myślisz.
-
-<b>Ключі e2:</b> 1 w dziesiątym rzędzie, w środku · 2 więcej ruskich · 3 dwieście pięćdziesiąt złotych · 4 siedem.
 
 ---
 

@@ -61,26 +61,6 @@ teacherOf: pl-a2-mow-07-praca
 
 ---
 
-## 🎧 Діалог-зразок до c1 (читає викладач)
-
-Прочитайте один раз у нормальному темпі. Перед читанням дайте учню три питання.
-
-> <b>Pani Sowa:</b> Dzień dobry, proszę usiąść. Miło mi pana poznać.<br><b>Taras:</b> Dzień dobry, mnie również.<br><b>Pani Sowa:</b> Przeczytałam pana CV. Jakie ma pan doświadczenie?<br><b>Taras:</b> Od czterech lat pracuję jako kierowca w firmie kurierskiej w Opolu. Wcześniej przez rok pracowałem w magazynie.<br><b>Pani Sowa:</b> A dlaczego chce pan zmienić pracę?<br><b>Taras:</b> W obecnej firmie mam bardzo dużo nadgodzin, często pracuję do dziesiątej wieczorem. Mam małego syna i chciałbym spędzać z nim więcej czasu.<br><b>Pani Sowa:</b> Rozumiem. U nas kierowcy pracują od siódmej do piętnastej. Czy ma pan prawo jazdy kategorii C?<br><b>Taras:</b> Niestety nie, mam tylko kategorię B. Ale w przyszłym miesiącu zaczynam kurs.<br><b>Pani Sowa:</b> To dobrze. Jakie są pana mocne strony?<br><b>Taras:</b> Jestem punktualny i spokojny. Przez cztery lata nie miałem żadnego wypadku.<br><b>Pani Sowa:</b> Świetnie. Czy ma pan jakieś pytania?<br><b>Taras:</b> Tak. Czy to jest umowa o pracę? I kiedy mógłbym zacząć?<br><b>Pani Sowa:</b> Tak, umowa o pracę. Może pan zacząć od pierwszego grudnia.
-
-<b>Питання на слух:</b>
-
-1. Gdzie i jak długo Taras pracuje teraz? — <i>od czterech lat, kierowca w firmie kurierskiej w Opolu.</i>
-1. Dlaczego chce zmienić pracę? — <i>dużo nadgodzin, chce spędzać więcej czasu z synem.</i>
-1. O co pyta Taras na końcu? — <i>czy to umowa o pracę i kiedy może zacząć.</i>
-
-Після цього учень грає c1 зі своїми деталями (recepcja w hotelu або його реальна професія).
-
-<b>c2 — спізнення:</b> ви шеф. Будьте трохи сердитим: <i>To już trzeci raz w tym miesiącu!</i> Запропонуйте відпрацювати в суботу — учень має ввічливо відмовити і запропонувати інший день (<i>przełożyć</i> з уроку 06, <i>czy mógłbym zostać dłużej w czwartek?</i>). Наприкінці — <i>Dobrze, ale to ostatni raz.</i>
-
-<b>c3 — колега має досить:</b> ви колега, хочете звільнитися завтра. Не погоджуйтеся одразу з першою порадою: <i>Ale z szefem nie da się rozmawiać!</i> — хай учень дасть ще одну, з <i>na twoim miejscu</i>. Нова корисна фраза: <i>rzucić pracę</i> = кинути роботу.
-
----
-
 ## 👂 Типові помилки на слух
 
 - <i>Pracuję nauczycielem</i> → <b>pracuję jako nauczyciel / jestem nauczycielem</b>.

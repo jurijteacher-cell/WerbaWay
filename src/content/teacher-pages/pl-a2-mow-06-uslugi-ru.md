@@ -62,26 +62,6 @@ teacherOf: pl-a2-mow-06-uslugi-ru
 
 ---
 
-## 🎧 Діалог-зразок до c1 (читає викладач)
-
-Прочитайте один раз у нормальному темпі. Перед читанням дайте учню три питання.
-
-> <b>Hydraulik:</b> Hydraulik Nowak, słucham.<br><b>Andrij:</b> Dzień dobry, mówi Andrij Bondar. Mieszkam na ulicy Lipowej dwanaście, na trzecim piętrze. Mam awarię.<br><b>Hydraulik:</b> Co się stało?<br><b>Andrij:</b> Spod kaloryfera w sypialni cieknie woda. Na podłodze jest już mała kałuża.<br><b>Hydraulik:</b> Od kiedy?<br><b>Andrij:</b> Od rana. Postawiłem miskę i zakręciłem zawór, ale woda dalej kapie.<br><b>Hydraulik:</b> Rozumiem. Dzisiaj mam bardzo dużo pracy. Mogę przyjechać w czwartek.<br><b>Andrij:</b> W czwartek? Czy mógłby pan przyjechać wcześniej? Sąsiadka z dołu boi się, że woda poleci do niej.<br><b>Hydraulik:</b> Hm… Mogę być jutro o ósmej rano.<br><b>Andrij:</b> Świetnie, pasuje mi. A ile mniej więcej będzie kosztować naprawa?<br><b>Hydraulik:</b> Trudno powiedzieć. Za przyjazd sto złotych, reszta zależy od problemu.<br><b>Andrij:</b> Dobrze, rozumiem. Do zobaczenia jutro.
-
-<b>Питання на слух:</b>
-
-1. Co się zepsuło i gdzie? — <i>kaloryfer w sypialni, cieknie woda.</i>
-1. Co Andrij już zrobił? — <i>postawił miskę, zakręcił zawór.</i>
-1. Kiedy przyjedzie hydraulik i dlaczego nie w czwartek? — <i>jutro o ósmej, bo sąsiadka z dołu się boi.</i>
-
-Після цього учень грає c1 з іншими деталями (zlew, kuchnia, завтра виїжджає).
-
-<b>c2 — рекламація:</b> ви продавець. Спочатку запитайте <i>Czy słuchawki spadły? Czy były w wodzie?</i>, потім попросіть paragon. Якщо учень каже, що paragonu немає, запропонуйте <i>potwierdzenie z karty / wyciąg z konta</i> — нове слово, але корисне. Наприкінці — <i>rozpatrzymy reklamację i odpowiemy SMS-em</i>. Слідкуйте за <i>czek</i> замість <i>paragon</i>.
-
-<b>c3 — пошта:</b> дайте два варіанти — <i>szybciej i drożej</i> або <i>wolniej i taniej</i>. Нехай учень обере й пояснить через <i>bo</i> (урок 04–05 <i>bo / dlatego</i>). Тут часто вилізе <i>posyłka</i> → <b>paczka</b>.
-
----
-
 ## 👂 Типові помилки російськомовного учня
 
 - <i>Złamał mi się telefon</i> (сломался) → <b>zepsuł mi się</b>.

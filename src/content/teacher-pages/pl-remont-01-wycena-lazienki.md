@@ -69,22 +69,6 @@ moduleTitle: Польська для ремонтів
 
 <b>g1:</b> skuć → stary tynk · zagruntować → ścianę przed malowaniem · położyć → nowe płytki na podłodze · wymienić → zepsuty zawór pod zlewem · uszczelnić → połączenie wanny ze ścianą · pomalować → sufit białą farbą.<br><b>g3:</b> musimy, musisz, musi, muszę, musicie, muszą.<br><b>g4:</b> powinna, powinno, powinien, powinny, powinnam, powinieneś.<br><b>g5:</b> nie wolno · nie trzeba · trzeba · nie wolno · nie trzeba · Nie wolno.<br><b>g6:</b> trzeba · trzeba było · będzie trzeba · trzeba było.<br><b>g7:</b> Jutro będzie trzeba pomalować sufit. · Wczoraj trzeba było kupić klej.<br><b>hw1:</b> puszek, worki, litrów, płytki, kwadratowych, worków. Решта ключів — у вправах (кожна має пояснення).
 
-### Аудіо (озвучене сайтом)
-
-Файли: <i>-czytanie.mp3</i> (текст уроку, голоси: оповідач, Artur, Joanna) і <i>-c1-dialog.mp3</i> (розмова Marka з panią Ewą). Транскрипт c1 для вчителя:
-
-- <b>Ewa:</b> Dzień dobry, panie Marku. Chcę odnowić przedpokój. Ile to będzie kosztować?
-- <b>Marek:</b> Dzień dobry, pani Ewo. Najpierw muszę zobaczyć ściany. Ile metrów kwadratowych ma podłoga?
-- <b>Ewa:</b> Podłoga ma pięć metrów kwadratowych, a ściany około dwudziestu ośmiu.
-- <b>Marek:</b> Dobrze. Najpierw trzeba wyrównać podłogę i zagruntować ściany. Potem pomalujemy ściany i położymy płytki.
-- <b>Ewa:</b> Ile materiałów pan potrzebuje?
-- <b>Marek:</b> Potrzebujemy jeden worek kleju i dwie puszki farby.
-- <b>Ewa:</b> Czy ja muszę coś kupić?
-- <b>Marek:</b> Nie trzeba. Materiały zamówię sam. Potrzebuję tylko zaliczki.
-- <b>Ewa:</b> Kiedy pan zaczyna?
-- <b>Marek:</b> Zaczynamy w poniedziałek czternastego grudnia, a kończymy w czwartek siedemnastego grudnia.
-- <b>Ewa:</b> Czy muszę być w domu?
-- <b>Marek:</b> Nie trzeba. Ale podczas prac nie wolno wchodzić do przedpokoju, bo podłoga będzie mokra. Wycenę wyślę jutro.
 
 <b>Питання після прослуховування (усно):</b> 1. Co klientka chce zrobić? (odnowić przedpokój) 2. Co trzeba zrobić najpierw? (wyrównać podłogę i zagruntować ściany) 3. Ile potrzeba materiałów? (jeden worek kleju, dwie puszki farby) 4. Czy klientka musi być w domu? Czego nie wolno robić? (nie trzeba; nie wolno wchodzić do przedpokoju).
 

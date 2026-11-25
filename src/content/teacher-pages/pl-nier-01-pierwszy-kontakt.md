@@ -79,20 +79,6 @@ moduleTitle: Польська для ріелторки
 
 ---
 
-## 🎧 e2 + c1: діалог-зразок (читаєш ти)
-
-<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">🎙️</span><div class="lp-callout-body">
-
-<b>Natalia:</b> Biuro Nieruchomości „Klucz”, dzień dobry, Natalia Wójcik, słucham?<br><b>Pani Anna:</b> Dzień dobry, dzwonię w sprawie ogłoszenia o dwupokojowym mieszkaniu na Wildzie.<br><b>Natalia:</b> Dzień dobry Pani. Czy mogłabym zapytać, jak się Pani nazywa, i czy mogłabym prosić o numer telefonu?<br><b>Pani Anna:</b> Anna Kowalczyk. Numer wyślę Pani SMS-em, bo dzwonię z pracy.<br><b>Natalia:</b> Dziękuję. Chciałabym jeszcze zapytać, jaki ma Pani budżet i czy kupuje Pani na kredyt.<br><b>Pani Anna:</b> Mam czterysta osiemdziesiąt tysięcy ze sprzedaży poprzedniego mieszkania. Kredytu nie potrzebuję.<br><b>Natalia:</b> Czyli kupuje Pani bez kredytu, za pieniądze ze sprzedaży poprzedniego mieszkania. Dobrze rozumiem?<br><b>Pani Anna:</b> Tak. A to mieszkanie z ogłoszenia kosztuje pięćset dziesięć tysięcy, prawda?<br><b>Natalia:</b> Zgadza się, to trochę więcej niż Pani budżet. Mamy jednak kilka podobnych ofert. Chciałabym się dowiedzieć, ile pokoi Pani potrzebuje i na jakiej dzielnicy zależy Pani najbardziej.<br><b>Pani Anna:</b> Dwa pokoje, bo mieszkam z synem, który studiuje. Najlepiej Wilda albo Łazarz, blisko tramwaju.<br><b>Natalia:</b> Jeśli dobrze rozumiem, szuka Pani dwóch pokoi, do czterystu osiemdziesięciu tysięcy, na Wildzie albo Łazarzu, blisko tramwaju. Czy byłoby Pani wygodnie obejrzeć dwa mieszkania w czwartek po południu?<br><b>Pani Anna:</b> Czwartek mi pasuje, ale dopiero po siedemnastej.<br><b>Natalia:</b> Proponuję czwartek o siedemnastej piętnaście. Zanotowałam: pani Kowalczyk, czwartek, siedemnasta piętnaście. Oddzwonię jutro do dwunastej z adresami.<br><b>Pani Anna:</b> Dobrze, dziękuję. Do widzenia.
-
-</div></aside>
-
-Читай двічі: перший раз цілком, другий раз з паузою 5 с після кожної пари реплік. Ключ e2: <b>1 — B</b> (ogłoszenie dwupokojowego mieszkania na Wildzie) · <b>2 — B</b> (pieniądze ze sprzedaży mieszkania, kredytu nie bierze) · <b>3 — A</b> (cena 510 тис., budżet 480 тис., ale są podobne oferty) · <b>4 — B</b> (siedemnasta piętnaście).
-
-Після e2 прочитай діалог ще раз і попроси ученицю знайти: тричі умовний спосіб, двічі залежне питання, двічі парафразу. Це зразок для c1.
-
----
-
 ## 🃏 Картки ролей (c1–c3)
 
 ### c1 — pan Paweł Lis (телефон)
