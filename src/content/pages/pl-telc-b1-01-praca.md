@@ -82,12 +82,6 @@ Opis zdjęć — kiedyś i dziś
 
 ## 6. Zadania komunikacyjne
 
-Najpierw posłuchaj, jak Oksana dzwoni w sprawie ogłoszenia o pracę, i odpowiedz na cztery pytania.
-
-<embed source="https://werba-way.vercel.app/embed/pl-telc-b1-01-praca/exam?blocks=e2">
-Egzamin — słuchanie / wybór
-</embed>
-
 Teraz Twoja kolej. Trzy sytuacje: telefon do pracodawcy, rozmowa ze starym znajomym i dyskusja jak na egzaminie. Odwróć kartę i wykonaj zadanie.
 
 <embed source="https://werba-way.vercel.app/embed/pl-telc-b1-01-praca/comm-tasks">

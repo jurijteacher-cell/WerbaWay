@@ -1,0 +1,56 @@
+{
+  "block_id": "e2",
+  "exam_skill": "sluchanie",
+  "exercise_type": "multiple-choice",
+  "source": "pl-gram-b2-01-przypadki-comm-tasks.json#c1.model_dialogue",
+  "audio_id": "pl-gram-b2-01-przypadki-c1-dialog",
+  "max_plays": 2,
+  "title": "Słuchanie: pokój do wynajęcia",
+  "instruction": "Posłuchaj nagrania dwa razy. Wybierz właściwą odpowiedź.",
+  "items": [
+    {
+      "id": "e2-1",
+      "question": "Ile wynosi czynsz za pokój?",
+      "options": [
+        "sto pięćdziesiąt złotych",
+        "tysiąc dwieście złotych",
+        "tysiąc trzysta pięćdziesiąt złotych"
+      ],
+      "answer": "tysiąc dwieście złotych",
+      "explanation": "Sto pięćdziesiąt złotych to opłaty za prąd i internet."
+    },
+    {
+      "id": "e2-2",
+      "question": "Z kim Marta będzie mieszkać?",
+      "options": [
+        "z właścicielem",
+        "z młodą parą",
+        "z informatykiem i jego bratem"
+      ],
+      "answer": "z młodą parą",
+      "explanation": "Właściciel mieszka piętro niżej."
+    },
+    {
+      "id": "e2-3",
+      "question": "Co jest dwie minuty od bloku?",
+      "options": [
+        "przychodnia",
+        "przystanek autobusowy",
+        "przystanek tramwajowy"
+      ],
+      "answer": "przystanek tramwajowy",
+      "explanation": "Tramwaj zatrzymuje się przy skrzyżowaniu; w przychodni pracuje sąsiadka."
+    },
+    {
+      "id": "e2-4",
+      "question": "Kiedy Marta obejrzy pokój?",
+      "options": [
+        "dziś o osiemnastej",
+        "jutro o osiemnastej",
+        "jutro o ósmej"
+      ],
+      "answer": "jutro o osiemnastej",
+      "explanation": "Umawiają się na jutro na osiemnastą."
+    }
+  ]
+}

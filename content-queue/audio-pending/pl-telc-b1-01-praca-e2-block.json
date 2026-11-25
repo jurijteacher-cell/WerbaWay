@@ -1,0 +1,56 @@
+{
+  "block_id": "e2",
+  "exam_skill": "sluchanie",
+  "exercise_type": "multiple-choice",
+  "source": "pl-telc-b1-01-praca-comm-tasks.json#c1.model_dialogue",
+  "audio_id": "pl-telc-b1-01-praca-c1-dialog",
+  "max_plays": 2,
+  "title": "Słuchanie: telefon do restauracji",
+  "instruction": "Najpierw przeczytaj pytania. Potem posłuchaj rozmowy — maksymalnie dwa razy. Na egzaminie telc usłyszysz nagranie tylko raz.",
+  "items": [
+    {
+      "id": "e2-1",
+      "question": "Gdzie Oksana pracuje teraz?",
+      "options": [
+        "w kawiarni jako kelnerka",
+        "w supermarkecie jako kasjerka",
+        "w restauracji jako pomoc kuchenna"
+      ],
+      "answer": "w supermarkecie jako kasjerka",
+      "explanation": "Kelnerką była w Ukrainie. Teraz pracuje jako kasjerka w supermarkecie."
+    },
+    {
+      "id": "e2-2",
+      "question": "O której kończy się druga zmiana w tygodniu?",
+      "options": [
+        "o szesnastej",
+        "o dwudziestej trzeciej",
+        "o północy"
+      ],
+      "answer": "o dwudziestej trzeciej",
+      "explanation": "Do północy restauracja jest czynna tylko w soboty."
+    },
+    {
+      "id": "e2-3",
+      "question": "Kiedy będzie rozmowa kwalifikacyjna?",
+      "options": [
+        "w czwartek o jedenastej",
+        "w piątek o jedenastej",
+        "w czwartek o dziesiątej"
+      ],
+      "answer": "w czwartek o jedenastej",
+      "explanation": "W piątek kierownika nie ma; o dziesiątej zaczyna się pierwsza zmiana."
+    },
+    {
+      "id": "e2-4",
+      "question": "Gdzie Oksana może zaparkować?",
+      "options": [
+        "przed restauracją",
+        "za budynkiem",
+        "obok supermarketu"
+      ],
+      "answer": "za budynkiem",
+      "explanation": "Przed restauracją jest tłok, parking jest za budynkiem."
+    }
+  ]
+}

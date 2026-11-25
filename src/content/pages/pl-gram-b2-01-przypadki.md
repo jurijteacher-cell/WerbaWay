@@ -92,12 +92,6 @@ Odpowiadaj pełnymi zdaniami. W nawiasie — konstrukcja, której potrzebujesz.
 Zadania komunikacyjne
 </embed>
 
-<i>&#91;Audio — wkrótce&#93;</i>
-
-<embed source="https://werba-way.vercel.app/embed/pl-gram-b2-01-przypadki/exam?blocks=e2">
-Egzamin — wybór
-</embed>
-
 ## 7. Podsumowanie
 
 - 🎯 <b>Siedem przypadków.</b> Wymień je po kolei razem z pytaniami — bez patrzenia na slajdy.
