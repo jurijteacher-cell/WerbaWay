@@ -267,6 +267,292 @@
           "explanation": "Znam kogo? → którego."
         }
       ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Marta: Pensjonat „Pod Smrekiem”, słucham.\n\nOlena: Dzień dobry, mówi Olena. {el1-1} Chciałabym zmienić termin wyjazdu.\n\nMarta: {el1-2} Na kiedy ma Pani rezerwację?\n\nOlena: Na dziewiątego lutego, dla dziewięciu osób.\n\nMarta: {el1-3} Sprawdzę w komputerze.\n\nMarta: Niestety dziewiątego mamy tylko siedem wolnych miejsc. {el1-4}\n\nOlena: {el1-5} Zapytam kolegów i oddzwonię za godzinę.\n\nMarta: {el1-6} Mamy jeszcze dwa pokoje na dziesiątego.\n\nOlena: {el1-7} Jak dojechać z dworca do pensjonatu?\n\nMarta: Najlepiej autobusem numer osiem, z przystanku przed dworcem.\n\nOlena: {el1-8} Do widzenia!",
+      "bank": [
+        "a) Jeszcze jedno pytanie.",
+        "b) Oczywiście, chętnie pomogę.",
+        "c) Nie jestem pewna.",
+        "d) Bardzo dziękuję za pomoc.",
+        "e) Proszę mówić trochę wolniej.",
+        "f) Proszę chwilę poczekać.",
+        "g) Dobrze, rozumiem.",
+        "h) Dzwonię w sprawie rezerwacji.",
+        "i) Czy mogliby Państwo przyjechać dzień później?",
+        "j) Przepraszam, pomyliłam numer."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "h) Dzwonię w sprawie rezerwacji.",
+          "options": [
+            "a) Jeszcze jedno pytanie.",
+            "b) Oczywiście, chętnie pomogę.",
+            "c) Nie jestem pewna.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Proszę mówić trochę wolniej.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, rozumiem.",
+            "h) Dzwonię w sprawie rezerwacji.",
+            "i) Czy mogliby Państwo przyjechać dzień później?",
+            "j) Przepraszam, pomyliłam numer."
+          ],
+          "explanation": "Olena tłumaczy, po co dzwoni. „Dzwonię w sprawie…” to typowa formuła na początku rozmowy telefonicznej.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "b) Oczywiście, chętnie pomogę.",
+          "options": [
+            "a) Jeszcze jedno pytanie.",
+            "b) Oczywiście, chętnie pomogę.",
+            "c) Nie jestem pewna.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Proszę mówić trochę wolniej.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, rozumiem.",
+            "h) Dzwonię w sprawie rezerwacji.",
+            "i) Czy mogliby Państwo przyjechać dzień później?",
+            "j) Przepraszam, pomyliłam numer."
+          ],
+          "explanation": "Pracownica chce pomóc i prosi o termin. „Oczywiście, chętnie pomogę” pasuje do prośby o zmianę rezerwacji.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "f) Proszę chwilę poczekać.",
+          "options": [
+            "a) Jeszcze jedno pytanie.",
+            "b) Oczywiście, chętnie pomogę.",
+            "c) Nie jestem pewna.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Proszę mówić trochę wolniej.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, rozumiem.",
+            "h) Dzwonię w sprawie rezerwacji.",
+            "i) Czy mogliby Państwo przyjechać dzień później?",
+            "j) Przepraszam, pomyliłam numer."
+          ],
+          "explanation": "Marta musi sprawdzić w komputerze, więc prosi o chwilę czekania. „Proszę chwilę poczekać” pasuje do zdania „Sprawdzę…”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "i) Czy mogliby Państwo przyjechać dzień później?",
+          "options": [
+            "a) Jeszcze jedno pytanie.",
+            "b) Oczywiście, chętnie pomogę.",
+            "c) Nie jestem pewna.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Proszę mówić trochę wolniej.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, rozumiem.",
+            "h) Dzwonię w sprawie rezerwacji.",
+            "i) Czy mogliby Państwo przyjechać dzień później?",
+            "j) Przepraszam, pomyliłam numer."
+          ],
+          "explanation": "Po informacji o braku miejsc Marta proponuje inny termin. To pytanie o przyjazd dzień później.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "c) Nie jestem pewna.",
+          "options": [
+            "a) Jeszcze jedno pytanie.",
+            "b) Oczywiście, chętnie pomogę.",
+            "c) Nie jestem pewna.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Proszę mówić trochę wolniej.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, rozumiem.",
+            "h) Dzwonię w sprawie rezerwacji.",
+            "i) Czy mogliby Państwo przyjechać dzień później?",
+            "j) Przepraszam, pomyliłam numer."
+          ],
+          "explanation": "Olena nie może zdecydować sama, bo musi zapytać kolegów. „Nie jestem pewna” pasuje do dalszego zdania.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "g) Dobrze, rozumiem.",
+          "options": [
+            "a) Jeszcze jedno pytanie.",
+            "b) Oczywiście, chętnie pomogę.",
+            "c) Nie jestem pewna.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Proszę mówić trochę wolniej.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, rozumiem.",
+            "h) Dzwonię w sprawie rezerwacji.",
+            "i) Czy mogliby Państwo przyjechać dzień później?",
+            "j) Przepraszam, pomyliłam numer."
+          ],
+          "explanation": "Marta przyjmuje informację od Oleny i podaje nową możliwość. „Dobrze, rozumiem” jest naturalną reakcją.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "a) Jeszcze jedno pytanie.",
+          "options": [
+            "a) Jeszcze jedno pytanie.",
+            "b) Oczywiście, chętnie pomogę.",
+            "c) Nie jestem pewna.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Proszę mówić trochę wolniej.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, rozumiem.",
+            "h) Dzwonię w sprawie rezerwacji.",
+            "i) Czy mogliby Państwo przyjechać dzień później?",
+            "j) Przepraszam, pomyliłam numer."
+          ],
+          "explanation": "Olena chce zadać kolejne pytanie. „Jeszcze jedno pytanie” wprowadza pytanie o dojazd.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "d) Bardzo dziękuję za pomoc.",
+          "options": [
+            "a) Jeszcze jedno pytanie.",
+            "b) Oczywiście, chętnie pomogę.",
+            "c) Nie jestem pewna.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Proszę mówić trochę wolniej.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, rozumiem.",
+            "h) Dzwonię w sprawie rezerwacji.",
+            "i) Czy mogliby Państwo przyjechać dzień później?",
+            "j) Przepraszam, pomyliłam numer."
+          ],
+          "explanation": "Na końcu rozmowy dziękujemy za pomoc. „Bardzo dziękuję za pomoc” pasuje przed „Do widzenia”.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "{el2-1} Państwo,\n\nPiszę {el2-2} rezerwacji na luty. Jesteśmy zespołem z Krakowa i jedziemy na wyjazd integracyjny. Mamy pokoje dla dziewięciu osób od dziewiątego lutego. Czy jest {el2-3} zmiany terminu o jeden dzień? Chcielibyśmy przyjechać dziesiątego.\n\nChciałabym też zapytać {el2-4} dojazd z dworca. Czy jedzie tam autobus, {el2-5} trzeba wziąć taksówkę? Czy możemy zapłacić {el2-6} miejscu, kiedy będziemy w pensjonacie?\n\nProszę {el2-7} odpowiedź do piątku. {el2-8} dziękuję {el2-9} pomoc.\n\n{el2-10},\nOlena Kowalenko",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "b) Szanowni",
+          "options": [
+            "a) Drodzy",
+            "b) Szanowni",
+            "c) Kochani"
+          ],
+          "explanation": "W oficjalnym liście piszemy „Szanowni Państwo”. „Drodzy” i „Kochani” są zbyt prywatne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "a) w sprawie",
+          "options": [
+            "a) w sprawie",
+            "b) o sprawie",
+            "c) na sprawę"
+          ],
+          "explanation": "Formuła „Piszę w sprawie…” oznacza „piszę na temat…”. Inne wyrażenia nie są poprawne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "c) możliwość",
+          "options": [
+            "a) możliwy",
+            "b) możliwie",
+            "c) możliwość"
+          ],
+          "explanation": "Mówimy „jest możliwość zmiany…”. „Możliwy” i „możliwie” nie pasują do tej konstrukcji.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "a) o",
+          "options": [
+            "a) o",
+            "b) za",
+            "c) na"
+          ],
+          "explanation": "Mówimy „zapytać o coś”. Przyimki „za” i „na” nie pasują do tego czasownika.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "b) czy",
+          "options": [
+            "a) że",
+            "b) czy",
+            "c) bo"
+          ],
+          "explanation": "W pytaniu z wyborem używamy „czy … czy …”: „autobus czy taksówka”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "c) na",
+          "options": [
+            "a) w",
+            "b) przy",
+            "c) na"
+          ],
+          "explanation": "Mówimy „zapłacić na miejscu”, czyli w pensjonacie. „W miejscu” brzmi niepoprawnie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "b) o",
+          "options": [
+            "a) na",
+            "b) o",
+            "c) za"
+          ],
+          "explanation": "Mówimy „prosić o odpowiedź”. Inne przyimki nie pasują do czasownika „prosić”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "a) Z góry",
+          "options": [
+            "a) Z góry",
+            "b) Od góry",
+            "c) Na górze"
+          ],
+          "explanation": "„Z góry dziękuję” to stała formuła w e-mailu. Pozostałe wyrażenia mają inne znaczenie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "c) za",
+          "options": [
+            "a) o",
+            "b) na",
+            "c) za"
+          ],
+          "explanation": "Mówimy „dziękować za pomoc”. Przyimek „za” łączy się z czasownikiem „dziękować”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "c) Z poważaniem",
+          "options": [
+            "a) Z uczuciem",
+            "b) Z przyjemnością",
+            "c) Z poważaniem"
+          ],
+          "explanation": "„Z poważaniem” to typowe zakończenie oficjalnego listu. Pozostałe formuły nie pasują do listu do pensjonatu.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
   ]
 }

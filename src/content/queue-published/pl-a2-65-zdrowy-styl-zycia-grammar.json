@@ -378,6 +378,292 @@
           "grammar_point": "rozkaznik-pelny"
         }
       ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Tomek: Cześć, Olena. Jestem dzisiaj bardzo zmęczony.\n\nOlena: {el1-1} Ile godzin spałeś?\n\nTomek: Tylko pięć. I wypiłem już cztery kawy.\n\nOlena: {el1-2} To za dużo.\n\nTomek: Wiem. Ale w pracy mam tyle zadań.\n\nOlena: {el1-3} Zrób krótką przerwę co dwie godziny.\n\nTomek: Dobry pomysł. A co jeszcze mogę zmienić?\n\nOlena: Pij więcej wody. {el1-4}\n\nTomek: Dobrze. {el1-5}\n\nOlena: Chodźmy w czwartek na basen!\n\nTomek: {el1-6} Mogę przyjść po pracy.\n\nOlena: {el1-7} Zapiszę to w kalendarzu.\n\nTomek: {el1-8}",
+      "bank": [
+        "a) Zacznę od jutra.",
+        "b) Nie pij kawy wieczorem.",
+        "c) Oj, to niedobrze.",
+        "d) Nie mam dzisiaj czasu na basen.",
+        "e) Świetny pomysł!",
+        "f) Cztery kawy?!",
+        "g) Dzięki za rady, bardzo mi pomagasz.",
+        "h) Nie siedź tyle przy komputerze.",
+        "i) Umowa stoi.",
+        "j) Dziękuję, nie piję kawy."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "c) Oj, to niedobrze.",
+          "options": [
+            "a) Zacznę od jutra.",
+            "b) Nie pij kawy wieczorem.",
+            "c) Oj, to niedobrze.",
+            "d) Nie mam dzisiaj czasu na basen.",
+            "e) Świetny pomysł!",
+            "f) Cztery kawy?!",
+            "g) Dzięki za rady, bardzo mi pomagasz.",
+            "h) Nie siedź tyle przy komputerze.",
+            "i) Umowa stoi.",
+            "j) Dziękuję, nie piję kawy."
+          ],
+          "explanation": "Olena reaguje na słowa o zmęczeniu: „Oj, to niedobrze”. Dopiero potem pyta o sen.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "f) Cztery kawy?!",
+          "options": [
+            "a) Zacznę od jutra.",
+            "b) Nie pij kawy wieczorem.",
+            "c) Oj, to niedobrze.",
+            "d) Nie mam dzisiaj czasu na basen.",
+            "e) Świetny pomysł!",
+            "f) Cztery kawy?!",
+            "g) Dzięki za rady, bardzo mi pomagasz.",
+            "h) Nie siedź tyle przy komputerze.",
+            "i) Umowa stoi.",
+            "j) Dziękuję, nie piję kawy."
+          ],
+          "explanation": "Tomek wypił cztery kawy, więc Olena jest zdziwiona: „Cztery kawy?!”. Zaraz potem mówi, że to za dużo.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "h) Nie siedź tyle przy komputerze.",
+          "options": [
+            "a) Zacznę od jutra.",
+            "b) Nie pij kawy wieczorem.",
+            "c) Oj, to niedobrze.",
+            "d) Nie mam dzisiaj czasu na basen.",
+            "e) Świetny pomysł!",
+            "f) Cztery kawy?!",
+            "g) Dzięki za rady, bardzo mi pomagasz.",
+            "h) Nie siedź tyle przy komputerze.",
+            "i) Umowa stoi.",
+            "j) Dziękuję, nie piję kawy."
+          ],
+          "explanation": "Tomek ma dużo zadań i siedzi przy komputerze, więc rada „Nie siedź tyle przy komputerze” pasuje. Rada o kawie nie łączy się z przerwą co dwie godziny.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "b) Nie pij kawy wieczorem.",
+          "options": [
+            "a) Zacznę od jutra.",
+            "b) Nie pij kawy wieczorem.",
+            "c) Oj, to niedobrze.",
+            "d) Nie mam dzisiaj czasu na basen.",
+            "e) Świetny pomysł!",
+            "f) Cztery kawy?!",
+            "g) Dzięki za rady, bardzo mi pomagasz.",
+            "h) Nie siedź tyle przy komputerze.",
+            "i) Umowa stoi.",
+            "j) Dziękuję, nie piję kawy."
+          ],
+          "explanation": "Po radzie o wodzie Olena dodaje radę o piciu: „Nie pij kawy wieczorem”. Rada o siedzeniu byłaby tu nie na temat.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "a) Zacznę od jutra.",
+          "options": [
+            "a) Zacznę od jutra.",
+            "b) Nie pij kawy wieczorem.",
+            "c) Oj, to niedobrze.",
+            "d) Nie mam dzisiaj czasu na basen.",
+            "e) Świetny pomysł!",
+            "f) Cztery kawy?!",
+            "g) Dzięki za rady, bardzo mi pomagasz.",
+            "h) Nie siedź tyle przy komputerze.",
+            "i) Umowa stoi.",
+            "j) Dziękuję, nie piję kawy."
+          ],
+          "explanation": "Tomek godzi się na rady i obiecuje zmianę: „Zacznę od jutra”. To naturalna odpowiedź po radach.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "e) Świetny pomysł!",
+          "options": [
+            "a) Zacznę od jutra.",
+            "b) Nie pij kawy wieczorem.",
+            "c) Oj, to niedobrze.",
+            "d) Nie mam dzisiaj czasu na basen.",
+            "e) Świetny pomysł!",
+            "f) Cztery kawy?!",
+            "g) Dzięki za rady, bardzo mi pomagasz.",
+            "h) Nie siedź tyle przy komputerze.",
+            "i) Umowa stoi.",
+            "j) Dziękuję, nie piję kawy."
+          ],
+          "explanation": "Olena zaprasza na basen, a Tomek się zgadza: „Świetny pomysł!”. Zdanie „Nie mam czasu na basen” przeczy temu, że przyjdzie po pracy.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "i) Umowa stoi.",
+          "options": [
+            "a) Zacznę od jutra.",
+            "b) Nie pij kawy wieczorem.",
+            "c) Oj, to niedobrze.",
+            "d) Nie mam dzisiaj czasu na basen.",
+            "e) Świetny pomysł!",
+            "f) Cztery kawy?!",
+            "g) Dzięki za rady, bardzo mi pomagasz.",
+            "h) Nie siedź tyle przy komputerze.",
+            "i) Umowa stoi.",
+            "j) Dziękuję, nie piję kawy."
+          ],
+          "explanation": "Olena potwierdza ustalenie: „Umowa stoi”. Dopiero potem zapisuje termin w kalendarzu.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "g) Dzięki za rady, bardzo mi pomagasz.",
+          "options": [
+            "a) Zacznę od jutra.",
+            "b) Nie pij kawy wieczorem.",
+            "c) Oj, to niedobrze.",
+            "d) Nie mam dzisiaj czasu na basen.",
+            "e) Świetny pomysł!",
+            "f) Cztery kawy?!",
+            "g) Dzięki za rady, bardzo mi pomagasz.",
+            "h) Nie siedź tyle przy komputerze.",
+            "i) Umowa stoi.",
+            "j) Dziękuję, nie piję kawy."
+          ],
+          "explanation": "Tomek dziękuje za pomoc i za rady. „Dziękuję, nie piję kawy” nie pasuje, bo nikt nie proponuje mu kawy.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "{el2-1} Państwo,\n\nPiszę {el2-2} sprawie karnetu na basen. Pracuję w biurze i cały dzień siedzę przy komputerze, {el2-3} potrzebuję więcej ruchu. Chciałbym zapytać {el2-4} cenę karnetu na dwa wejścia w tygodniu. Czy basen jest czynny także {el2-5} weekend? Czy mogę zapłacić {el2-6}? Czy {el2-7} Państwo zniżki dla pracowników firm? Chciałbym też przyjść w czwartek po pracy na lekcję próbną. Będę wdzięczny {el2-8} szybką odpowiedź. Proszę ją przesłać {el2-9} mój adres e-mail.\n\n{el2-10},\nTomasz",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "b) Szanowni",
+          "options": [
+            "a) Mili",
+            "b) Szanowni",
+            "c) Drodzy"
+          ],
+          "explanation": "W oficjalnym e-mailu do firmy piszemy „Szanowni Państwo”. „Mili” i „Drodzy” są zbyt familiarne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "a) w",
+          "options": [
+            "a) w",
+            "b) na",
+            "c) o"
+          ],
+          "explanation": "Mówimy „w sprawie czegoś”. „Na sprawie” i „o sprawie” nie tworzą tej formuły.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "c) dlatego",
+          "options": [
+            "a) chociaż",
+            "b) ponieważ",
+            "c) dlatego"
+          ],
+          "explanation": "„Dlatego” pokazuje skutek: siedzi dużo, więc potrzebuje ruchu. „Chociaż” i „ponieważ” zmieniają sens zdania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "c) o",
+          "options": [
+            "a) za",
+            "b) na",
+            "c) o"
+          ],
+          "explanation": "Pytamy o coś: „zapytać o cenę”. „Za” i „na” nie łączą się z czasownikiem „zapytać”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "a) w",
+          "options": [
+            "a) w",
+            "b) na",
+            "c) po"
+          ],
+          "explanation": "Mówimy „w weekend”. „Na weekend” i „po weekend” nie pasują do pytania o godziny otwarcia.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "b) kartą",
+          "options": [
+            "a) w karcie",
+            "b) kartą",
+            "c) z kartą"
+          ],
+          "explanation": "Płacimy czymś: „zapłacić kartą” (narzędnik bez przyimka). Pozostałe formy są niepoprawne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "b) dają",
+          "options": [
+            "a) robią",
+            "b) dają",
+            "c) stają"
+          ],
+          "explanation": "Firma „daje zniżkę”. „Robią” i „stają” nie pasują do słowa „zniżki”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "c) za",
+          "options": [
+            "a) o",
+            "b) dla",
+            "c) za"
+          ],
+          "explanation": "Jesteśmy wdzięczni za coś: „wdzięczny za odpowiedź”. „O” i „dla” nie pasują do słowa „wdzięczny”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "a) na",
+          "options": [
+            "a) na",
+            "b) w",
+            "c) do"
+          ],
+          "explanation": "Wysyłamy na adres: „przesłać na adres e-mail”. „W” i „do” nie pasują do słowa „adres” w tym zdaniu.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "a) Z poważaniem",
+          "options": [
+            "a) Z poważaniem",
+            "b) Cześć",
+            "c) Do jutra"
+          ],
+          "explanation": "To oficjalne zakończenie e-maila do firmy. „Cześć” i „Do jutra” są potoczne.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
   ]
 }

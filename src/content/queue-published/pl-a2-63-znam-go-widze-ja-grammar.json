@@ -344,6 +344,292 @@
           "explanation": "Rodzaj żeński: nową koleżankę (-ą, -ę)."
         }
       ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Kasia: Cześć, Olena! Dzwonisz w jakiejś sprawie?\n\nOlena: Tak, w piątek zapraszam cię na kolację. {el1-1}\n\nKasia: {el1-2} Kto jeszcze przyjdzie?\n\nOlena: Tomek i moja mama. {el1-3}\n\nKasia: Twojej mamy jeszcze nie znam, ale Tomka znam od lat. {el1-4}\n\nOlena: Super. Przyjdź o siódmej. {el1-5}\n\nKasia: {el1-6} Czy mam coś przynieść?\n\nOlena: {el1-7} Wystarczy dobry humor.\n\nKasia: {el1-8} Do piątku!\n\nOlena: Pa, pa!",
+      "bank": [
+        "a) Mama bardzo chce cię poznać.",
+        "b) Dziękuję za zaproszenie!",
+        "c) Ona już dużo o tobie wie.",
+        "d) Lubię go.",
+        "e) Znasz mój adres?",
+        "f) Tak, wiem, gdzie mieszkasz.",
+        "g) Nie, nic nie trzeba.",
+        "h) W takim razie wszystko jasne.",
+        "i) Niestety w piątek mam pracę do późna.",
+        "j) Nie, nie znam tego pana."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "a) Mama bardzo chce cię poznać.",
+          "options": [
+            "a) Mama bardzo chce cię poznać.",
+            "b) Dziękuję za zaproszenie!",
+            "c) Ona już dużo o tobie wie.",
+            "d) Lubię go.",
+            "e) Znasz mój adres?",
+            "f) Tak, wiem, gdzie mieszkasz.",
+            "g) Nie, nic nie trzeba.",
+            "h) W takim razie wszystko jasne.",
+            "i) Niestety w piątek mam pracę do późna.",
+            "j) Nie, nie znam tego pana."
+          ],
+          "explanation": "Olena zaprasza na kolację i mówi, że mama chce poznać Kasię. „Niestety w piątek mam pracę do późna” nie pasuje, bo Kasia zaraz pyta o gości.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "b) Dziękuję za zaproszenie!",
+          "options": [
+            "a) Mama bardzo chce cię poznać.",
+            "b) Dziękuję za zaproszenie!",
+            "c) Ona już dużo o tobie wie.",
+            "d) Lubię go.",
+            "e) Znasz mój adres?",
+            "f) Tak, wiem, gdzie mieszkasz.",
+            "g) Nie, nic nie trzeba.",
+            "h) W takim razie wszystko jasne.",
+            "i) Niestety w piątek mam pracę do późna.",
+            "j) Nie, nie znam tego pana."
+          ],
+          "explanation": "Kasia dziękuje za zaproszenie i od razu pyta o innych gości. „Nie, nie znam tego pana” nie jest reakcją na zaproszenie.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "c) Ona już dużo o tobie wie.",
+          "options": [
+            "a) Mama bardzo chce cię poznać.",
+            "b) Dziękuję za zaproszenie!",
+            "c) Ona już dużo o tobie wie.",
+            "d) Lubię go.",
+            "e) Znasz mój adres?",
+            "f) Tak, wiem, gdzie mieszkasz.",
+            "g) Nie, nic nie trzeba.",
+            "h) W takim razie wszystko jasne.",
+            "i) Niestety w piątek mam pracę do późna.",
+            "j) Nie, nie znam tego pana."
+          ],
+          "explanation": "Olena mówi, że mama zna już Kasię z opowieści. Fraza „Ona już dużo o tobie wie” łączy się z kolejnym zdaniem Kasi o poznawaniu mamy.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "d) Lubię go.",
+          "options": [
+            "a) Mama bardzo chce cię poznać.",
+            "b) Dziękuję za zaproszenie!",
+            "c) Ona już dużo o tobie wie.",
+            "d) Lubię go.",
+            "e) Znasz mój adres?",
+            "f) Tak, wiem, gdzie mieszkasz.",
+            "g) Nie, nic nie trzeba.",
+            "h) W takim razie wszystko jasne.",
+            "i) Niestety w piątek mam pracę do późna.",
+            "j) Nie, nie znam tego pana."
+          ],
+          "explanation": "Kasia mówi o Tomku, którego zna od lat, i dodaje krótką opinię. Fraza „Lubię go” pasuje do takiej sytuacji.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "e) Znasz mój adres?",
+          "options": [
+            "a) Mama bardzo chce cię poznać.",
+            "b) Dziękuję za zaproszenie!",
+            "c) Ona już dużo o tobie wie.",
+            "d) Lubię go.",
+            "e) Znasz mój adres?",
+            "f) Tak, wiem, gdzie mieszkasz.",
+            "g) Nie, nic nie trzeba.",
+            "h) W takim razie wszystko jasne.",
+            "i) Niestety w piątek mam pracę do późna.",
+            "j) Nie, nie znam tego pana."
+          ],
+          "explanation": "Olena podaje godzinę i pyta, czy Kasia zna adres. Dzięki temu Kasia może odpowiedzieć, że wie, gdzie Olena mieszka.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "f) Tak, wiem, gdzie mieszkasz.",
+          "options": [
+            "a) Mama bardzo chce cię poznać.",
+            "b) Dziękuję za zaproszenie!",
+            "c) Ona już dużo o tobie wie.",
+            "d) Lubię go.",
+            "e) Znasz mój adres?",
+            "f) Tak, wiem, gdzie mieszkasz.",
+            "g) Nie, nic nie trzeba.",
+            "h) W takim razie wszystko jasne.",
+            "i) Niestety w piątek mam pracę do późna.",
+            "j) Nie, nie znam tego pana."
+          ],
+          "explanation": "Kasia odpowiada na pytanie o adres. Dopiero potem pyta, czy ma coś przynieść.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "g) Nie, nic nie trzeba.",
+          "options": [
+            "a) Mama bardzo chce cię poznać.",
+            "b) Dziękuję za zaproszenie!",
+            "c) Ona już dużo o tobie wie.",
+            "d) Lubię go.",
+            "e) Znasz mój adres?",
+            "f) Tak, wiem, gdzie mieszkasz.",
+            "g) Nie, nic nie trzeba.",
+            "h) W takim razie wszystko jasne.",
+            "i) Niestety w piątek mam pracę do późna.",
+            "j) Nie, nie znam tego pana."
+          ],
+          "explanation": "Olena odpowiada na pytanie „Czy mam coś przynieść?” przecząco. Zdanie „Wystarczy dobry humor” to dalszy ciąg tej odpowiedzi.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "h) W takim razie wszystko jasne.",
+          "options": [
+            "a) Mama bardzo chce cię poznać.",
+            "b) Dziękuję za zaproszenie!",
+            "c) Ona już dużo o tobie wie.",
+            "d) Lubię go.",
+            "e) Znasz mój adres?",
+            "f) Tak, wiem, gdzie mieszkasz.",
+            "g) Nie, nic nie trzeba.",
+            "h) W takim razie wszystko jasne.",
+            "i) Niestety w piątek mam pracę do późna.",
+            "j) Nie, nie znam tego pana."
+          ],
+          "explanation": "Kasia kończy rozmowę i potwierdza, że wszystko jest ustalone. Fraza „W takim razie wszystko jasne” zwykle poprzedza pożegnanie.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "Szanowny Panie Piotrze,\n\nchciałabym podziękować {el2-1} miłe przyjęcie mojej mamy w poniedziałek. Mama bardzo cieszyła się z rozmowy z Panem. W piątek wieczorem w moim mieszkaniu spotka się kilka osób z zespołu. Chciałabym zaprosić także Pana {el2-2} kolację. Przyjdą Tomek, Kasia i moja mama, która bardzo chce {el2-3} lepiej poznać. Kolacja zaczyna się {el2-4} dziewiętnej. Mam nadzieję, {el2-5} będzie Pan mógł przyjść. Proszę dać mi znać {el2-6} środy. Mama także {el2-7} Panu pozdrowienia. Czekam {el2-8} Pana odpowiedź. {el2-9} dziękuję za pomoc.\n\n{el2-10},\nOlena Kovalenko",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "a) za",
+          "options": [
+            "a) za",
+            "b) o",
+            "c) na"
+          ],
+          "explanation": "Dziękujemy „za coś”: „podziękować za przyjęcie”. „Dziękować o” i „dziękować na” są niepoprawne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "b) na",
+          "options": [
+            "a) do",
+            "b) na",
+            "c) w"
+          ],
+          "explanation": "Zapraszamy „na kolację”, „na kawę”, „na urodziny”. „Zaprosić do kolację” i „w kolację” są błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "c) Pana",
+          "options": [
+            "a) Panu",
+            "b) Pan",
+            "c) Pana"
+          ],
+          "explanation": "Po „chce poznać” potrzebny jest biernik, czyli „Pana”. „Panu” i „Pan” nie pasują do tego czasownika.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "a) o",
+          "options": [
+            "a) o",
+            "b) w",
+            "c) na"
+          ],
+          "explanation": "Godzinę podajemy przyimkiem „o”: „o dziewiętnej”. „W dziewiętnej” i „na dziewiętnej” są błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "b) że",
+          "options": [
+            "a) czy",
+            "b) że",
+            "c) żeby"
+          ],
+          "explanation": "Po „Mam nadzieję,” stoi „że”. „Czy” zmienia sens na pytanie, a „żeby” nie pasuje do nadziei.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "c) do",
+          "options": [
+            "a) od",
+            "b) za",
+            "c) do"
+          ],
+          "explanation": "Termin podajemy słowem „do”: „do środy” znaczy „najpóźniej w środę”. „Od” i „za” mają inne znaczenie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "a) przesyła",
+          "options": [
+            "a) przesyła",
+            "b) robi",
+            "c) daje"
+          ],
+          "explanation": "Pozdrowienia „przesyłamy”. „Robić pozdrowienia” i „dawać pozdrowienia” nie są poprawne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "b) na",
+          "options": [
+            "a) o",
+            "b) na",
+            "c) za"
+          ],
+          "explanation": "Mówimy „czekać na odpowiedź”. „Czekać o” i „czekać za” są błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "c) Z góry",
+          "options": [
+            "a) Od góry",
+            "b) Na górze",
+            "c) Z góry"
+          ],
+          "explanation": "„Z góry dziękuję” to stała formuła końcowa listu z prośbą. Inne wyrażenia mówią o położeniu.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "a) Z poważaniem",
+          "options": [
+            "a) Z poważaniem",
+            "b) Do zobaczenia",
+            "c) Całuję"
+          ],
+          "explanation": "Do kierownika piszemy oficjalnie i kończymy „Z poważaniem”. „Do zobaczenia” i „Całuję” są zbyt swobodne.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
   ]
 }

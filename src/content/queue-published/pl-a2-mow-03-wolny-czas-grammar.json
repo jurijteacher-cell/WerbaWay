@@ -8,54 +8,545 @@
     {
       "block_id": "g1",
       "part": 1,
-      "covers_slides": ["s3", "s4", "s5"],
+      "covers_slides": [
+        "s3",
+        "s4",
+        "s5"
+      ],
       "exercise_type": "fill-in-blank",
       "title": "1. Woleć: forma i niż / od",
       "instruction": "Wybierz poprawną odpowiedź.",
       "items": [
-        {"id": "g1-1", "text": "Moja siostra ___ herbatę niż kawę.", "options": ["wolę", "woli", "wolą"], "answer": "woli", "grammar_point": "wolec-odmiana"},
-        {"id": "g1-2", "text": "Dzieci zwykle ___ słodycze od warzyw.", "options": ["wolą", "wolimy", "woli"], "answer": "wolą", "grammar_point": "wolec-odmiana"},
-        {"id": "g1-3", "text": "A ty, co ___: kino czy teatr?", "options": ["wolisz", "wolicie", "woli"], "answer": "wolisz", "grammar_point": "wolec-odmiana"},
-        {"id": "g1-4", "text": "My ___ grać w karty niż oglądać telewizję.", "options": ["wolimy", "wolicie", "wolą"], "answer": "wolimy", "grammar_point": "wolec-odmiana"},
-        {"id": "g1-5", "text": "Wolę pływać ___ biegać.", "options": ["niż", "od"], "answer": "niż", "grammar_point": "wolec-niz-od", "explanation": "Z bezokolicznikiem tylko niż."},
-        {"id": "g1-6", "text": "Wolę rower ___ samochodu.", "options": ["niż", "od"], "answer": "od", "grammar_point": "wolec-niz-od", "explanation": "Samochodu to dopełniacz, więc od. Z niż byłoby: niż samochód."},
-        {"id": "g1-7", "text": "Wolę morze niż ___.", "options": ["góry", "gór"], "answer": "góry", "grammar_point": "wolec-niz-od", "explanation": "Po niż ten sam przypadek: morze — góry."},
-        {"id": "g1-8", "text": "Wolę morze od ___.", "options": ["góry", "gór"], "answer": "gór", "grammar_point": "wolec-niz-od", "explanation": "Od + dopełniacz: od gór."}
+        {
+          "id": "g1-1",
+          "text": "Moja siostra ___ herbatę niż kawę.",
+          "options": [
+            "wolę",
+            "woli",
+            "wolą"
+          ],
+          "answer": "woli",
+          "grammar_point": "wolec-odmiana"
+        },
+        {
+          "id": "g1-2",
+          "text": "Dzieci zwykle ___ słodycze od warzyw.",
+          "options": [
+            "wolą",
+            "wolimy",
+            "woli"
+          ],
+          "answer": "wolą",
+          "grammar_point": "wolec-odmiana"
+        },
+        {
+          "id": "g1-3",
+          "text": "A ty, co ___: kino czy teatr?",
+          "options": [
+            "wolisz",
+            "wolicie",
+            "woli"
+          ],
+          "answer": "wolisz",
+          "grammar_point": "wolec-odmiana"
+        },
+        {
+          "id": "g1-4",
+          "text": "My ___ grać w karty niż oglądać telewizję.",
+          "options": [
+            "wolimy",
+            "wolicie",
+            "wolą"
+          ],
+          "answer": "wolimy",
+          "grammar_point": "wolec-odmiana"
+        },
+        {
+          "id": "g1-5",
+          "text": "Wolę pływać ___ biegać.",
+          "options": [
+            "niż",
+            "od"
+          ],
+          "answer": "niż",
+          "grammar_point": "wolec-niz-od",
+          "explanation": "Z bezokolicznikiem tylko niż."
+        },
+        {
+          "id": "g1-6",
+          "text": "Wolę rower ___ samochodu.",
+          "options": [
+            "niż",
+            "od"
+          ],
+          "answer": "od",
+          "grammar_point": "wolec-niz-od",
+          "explanation": "Samochodu to dopełniacz, więc od. Z niż byłoby: niż samochód."
+        },
+        {
+          "id": "g1-7",
+          "text": "Wolę morze niż ___.",
+          "options": [
+            "góry",
+            "gór"
+          ],
+          "answer": "góry",
+          "grammar_point": "wolec-niz-od",
+          "explanation": "Po niż ten sam przypadek: morze — góry."
+        },
+        {
+          "id": "g1-8",
+          "text": "Wolę morze od ___.",
+          "options": [
+            "góry",
+            "gór"
+          ],
+          "answer": "gór",
+          "grammar_point": "wolec-niz-od",
+          "explanation": "Od + dopełniacz: od gór."
+        }
       ]
     },
     {
       "block_id": "g2",
       "part": 1,
-      "covers_slides": ["s6", "s7", "s8"],
+      "covers_slides": [
+        "s6",
+        "s7",
+        "s8"
+      ],
       "exercise_type": "fill-in-blank",
       "title": "2. Interesuję się, gram, chodzę, jeżdżę",
       "instruction": "Wpisz słowo z nawiasu w poprawnej formie.",
       "items": [
-        {"id": "g2-1", "text": "Od lat interesuję się ___ (muzyka klasyczna).", "answer": "muzyką klasyczną", "grammar_point": "interesowac-sie-grac"},
-        {"id": "g2-2", "text": "Mój brat gra w ___ (koszykówka) w drużynie szkolnej.", "answer": "koszykówkę", "grammar_point": "interesowac-sie-grac"},
-        {"id": "g2-3", "text": "Od roku gram na ___ (pianino).", "answer": "pianinie", "grammar_point": "interesowac-sie-grac"},
-        {"id": "g2-4", "text": "Czy uprawiasz jakiś ___ (sport)?", "answer": "sport", "grammar_point": "interesowac-sie-grac"},
-        {"id": "g2-5", "text": "W piątki chodzimy do ___ (teatr).", "answer": "teatru", "grammar_point": "chodzic-do-na"},
-        {"id": "g2-6", "text": "Dwa razy w tygodniu chodzę na ___ (joga).", "answer": "jogę", "grammar_point": "chodzic-do-na"},
-        {"id": "g2-7", "text": "Latem jeżdżę do pracy na ___ (rower).", "answer": "rowerze", "grammar_point": "chodzic-do-na", "explanation": "Na czym jeżdżę? — miejscownik."},
-        {"id": "g2-8", "text": "Zimą jeździmy na ___ (narty) w Alpy.", "answer": "narty", "grammar_point": "chodzic-do-na", "explanation": "Po co jedziemy w Alpy? — biernik: na narty."}
+        {
+          "id": "g2-1",
+          "text": "Od lat interesuję się ___ (muzyka klasyczna).",
+          "answer": "muzyką klasyczną",
+          "grammar_point": "interesowac-sie-grac"
+        },
+        {
+          "id": "g2-2",
+          "text": "Mój brat gra w ___ (koszykówka) w drużynie szkolnej.",
+          "answer": "koszykówkę",
+          "grammar_point": "interesowac-sie-grac"
+        },
+        {
+          "id": "g2-3",
+          "text": "Od roku gram na ___ (pianino).",
+          "answer": "pianinie",
+          "grammar_point": "interesowac-sie-grac"
+        },
+        {
+          "id": "g2-4",
+          "text": "Czy uprawiasz jakiś ___ (sport)?",
+          "answer": "sport",
+          "grammar_point": "interesowac-sie-grac"
+        },
+        {
+          "id": "g2-5",
+          "text": "W piątki chodzimy do ___ (teatr).",
+          "answer": "teatru",
+          "grammar_point": "chodzic-do-na"
+        },
+        {
+          "id": "g2-6",
+          "text": "Dwa razy w tygodniu chodzę na ___ (joga).",
+          "answer": "jogę",
+          "grammar_point": "chodzic-do-na"
+        },
+        {
+          "id": "g2-7",
+          "text": "Latem jeżdżę do pracy na ___ (rower).",
+          "answer": "rowerze",
+          "grammar_point": "chodzic-do-na",
+          "explanation": "Na czym jeżdżę? — miejscownik."
+        },
+        {
+          "id": "g2-8",
+          "text": "Zimą jeździmy na ___ (narty) w Alpy.",
+          "answer": "narty",
+          "grammar_point": "chodzic-do-na",
+          "explanation": "Po co jedziemy w Alpy? — biernik: na narty."
+        }
       ]
     },
     {
       "block_id": "g3",
       "part": 1,
-      "covers_slides": ["s2", "s9", "s10"],
+      "covers_slides": [
+        "s2",
+        "s9",
+        "s10"
+      ],
       "exercise_type": "fill-in-blank",
       "title": "3. Nie lubię… i pułapki z ukraińskiego",
       "instruction": "Wybierz poprawną odpowiedź.",
       "items": [
-        {"id": "g3-1", "text": "Nie lubię ___.", "options": ["zimę", "zimy"], "answer": "zimy", "grammar_point": "lubic-uwielbiac", "explanation": "Po nie — dopełniacz: nie lubię zimy."},
-        {"id": "g3-2", "text": "Uwielbiam ___ w deszczu.", "options": ["spacerować", "spaceruję"], "answer": "spacerować", "grammar_point": "lubic-uwielbiac", "explanation": "Po uwielbiam — bezokolicznik albo rzeczownik w bierniku."},
-        {"id": "g3-3", "text": "W ___ czytam kryminały.", "options": ["wolny czas", "wolnym czasie"], "answer": "wolnym czasie", "grammar_point": "kalki-uk", "explanation": "Kiedy? — w + miejscownik: w wolnym czasie."},
-        {"id": "g3-4", "text": "Mój tata ___ sport od dwudziestu lat.", "options": ["zajmuje się", "uprawia"], "answer": "uprawia", "grammar_point": "kalki-uk", "explanation": "Sport się uprawia. Zajmować się znaczy robić coś zawodowo albo się czymś opiekować."},
-        {"id": "g3-5", "text": "W sobotę idziemy ___ kina.", "options": ["w", "do", "na"], "answer": "do", "grammar_point": "kalki-uk", "explanation": "Do budynku — do + dopełniacz: do kina."},
-        {"id": "g3-6", "text": "Od września ___ na zajęcia z ceramiki.", "options": ["odwiedzam", "chodzę"], "answer": "chodzę", "grammar_point": "kalki-uk", "explanation": "Odwiedzać można ludzi i miasta. Na zajęcia się chodzi."},
-        {"id": "g3-7", "text": "Chodzę ___ siłownię trzy razy w tygodniu.", "options": ["w", "na"], "answer": "na", "grammar_point": "kalki-uk", "explanation": "Na siłownię, na basen, na trening — na + biernik."}
+        {
+          "id": "g3-1",
+          "text": "Nie lubię ___.",
+          "options": [
+            "zimę",
+            "zimy"
+          ],
+          "answer": "zimy",
+          "grammar_point": "lubic-uwielbiac",
+          "explanation": "Po nie — dopełniacz: nie lubię zimy."
+        },
+        {
+          "id": "g3-2",
+          "text": "Uwielbiam ___ w deszczu.",
+          "options": [
+            "spacerować",
+            "spaceruję"
+          ],
+          "answer": "spacerować",
+          "grammar_point": "lubic-uwielbiac",
+          "explanation": "Po uwielbiam — bezokolicznik albo rzeczownik w bierniku."
+        },
+        {
+          "id": "g3-3",
+          "text": "W ___ czytam kryminały.",
+          "options": [
+            "wolny czas",
+            "wolnym czasie"
+          ],
+          "answer": "wolnym czasie",
+          "grammar_point": "kalki-uk",
+          "explanation": "Kiedy? — w + miejscownik: w wolnym czasie."
+        },
+        {
+          "id": "g3-4",
+          "text": "Mój tata ___ sport od dwudziestu lat.",
+          "options": [
+            "zajmuje się",
+            "uprawia"
+          ],
+          "answer": "uprawia",
+          "grammar_point": "kalki-uk",
+          "explanation": "Sport się uprawia. Zajmować się znaczy robić coś zawodowo albo się czymś opiekować."
+        },
+        {
+          "id": "g3-5",
+          "text": "W sobotę idziemy ___ kina.",
+          "options": [
+            "w",
+            "do",
+            "na"
+          ],
+          "answer": "do",
+          "grammar_point": "kalki-uk",
+          "explanation": "Do budynku — do + dopełniacz: do kina."
+        },
+        {
+          "id": "g3-6",
+          "text": "Od września ___ na zajęcia z ceramiki.",
+          "options": [
+            "odwiedzam",
+            "chodzę"
+          ],
+          "answer": "chodzę",
+          "grammar_point": "kalki-uk",
+          "explanation": "Odwiedzać można ludzi i miasta. Na zajęcia się chodzi."
+        },
+        {
+          "id": "g3-7",
+          "text": "Chodzę ___ siłownię trzy razy w tygodniu.",
+          "options": [
+            "w",
+            "na"
+          ],
+          "answer": "na",
+          "grammar_point": "kalki-uk",
+          "explanation": "Na siłownię, na basen, na trening — na + biernik."
+        }
+      ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Ania: Szkoła tańca „Salsa”, słucham.\n\nOla: Dzień dobry. {el1-1} Chciałabym zapisać się na kurs salsy.\n\nAnia: {el1-2} Czy tańczyła Pani już kiedyś?\n\nOla: {el1-3} Dlatego szukam grupy dla początkujących.\n\nAnia: Mamy grupę we wtorki i czwartki o osiemnastej. {el1-4}\n\nOla: {el1-5} Pracuję do szesnastej, więc zdążę.\n\nAnia: Kurs kosztuje dwieście złotych miesięcznie.\n\nOla: {el1-6} Czy są zniżki dla studentów?\n\nAnia: {el1-7} Studenci płacą sto czterdzieści złotych.\n\nOla: {el1-8} Zapisuję się na wtorki i czwartki.",
+      "bank": [
+        "a) Nie, jeszcze nigdy.",
+        "b) Dzwonię w sprawie kursu.",
+        "c) Tak, to dobry termin.",
+        "d) Aha, rozumiem.",
+        "e) Świetnie, bardzo dziękuję.",
+        "f) Bardzo się cieszę.",
+        "g) Czy ten termin Pani pasuje?",
+        "h) Niestety nie lubię tańczyć.",
+        "i) Tak, oczywiście.",
+        "j) Przepraszam, mam teraz mało czasu."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "b) Dzwonię w sprawie kursu.",
+          "options": [
+            "a) Nie, jeszcze nigdy.",
+            "b) Dzwonię w sprawie kursu.",
+            "c) Tak, to dobry termin.",
+            "d) Aha, rozumiem.",
+            "e) Świetnie, bardzo dziękuję.",
+            "f) Bardzo się cieszę.",
+            "g) Czy ten termin Pani pasuje?",
+            "h) Niestety nie lubię tańczyć.",
+            "i) Tak, oczywiście.",
+            "j) Przepraszam, mam teraz mało czasu."
+          ],
+          "explanation": "Ola od razu mówi, po co dzwoni. „Dzwonię w sprawie…” to typowa formuła rozmowy telefonicznej.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "f) Bardzo się cieszę.",
+          "options": [
+            "a) Nie, jeszcze nigdy.",
+            "b) Dzwonię w sprawie kursu.",
+            "c) Tak, to dobry termin.",
+            "d) Aha, rozumiem.",
+            "e) Świetnie, bardzo dziękuję.",
+            "f) Bardzo się cieszę.",
+            "g) Czy ten termin Pani pasuje?",
+            "h) Niestety nie lubię tańczyć.",
+            "i) Tak, oczywiście.",
+            "j) Przepraszam, mam teraz mało czasu."
+          ],
+          "explanation": "Pracownica cieszy się, że Ola chce tańczyć. Potem zadaje pytanie o doświadczenie.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "a) Nie, jeszcze nigdy.",
+          "options": [
+            "a) Nie, jeszcze nigdy.",
+            "b) Dzwonię w sprawie kursu.",
+            "c) Tak, to dobry termin.",
+            "d) Aha, rozumiem.",
+            "e) Świetnie, bardzo dziękuję.",
+            "f) Bardzo się cieszę.",
+            "g) Czy ten termin Pani pasuje?",
+            "h) Niestety nie lubię tańczyć.",
+            "i) Tak, oczywiście.",
+            "j) Przepraszam, mam teraz mało czasu."
+          ],
+          "explanation": "Ola odpowiada na pytanie o doświadczenie. „Nie, jeszcze nigdy” pasuje do zdania „Dlatego szukam grupy dla początkujących”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "g) Czy ten termin Pani pasuje?",
+          "options": [
+            "a) Nie, jeszcze nigdy.",
+            "b) Dzwonię w sprawie kursu.",
+            "c) Tak, to dobry termin.",
+            "d) Aha, rozumiem.",
+            "e) Świetnie, bardzo dziękuję.",
+            "f) Bardzo się cieszę.",
+            "g) Czy ten termin Pani pasuje?",
+            "h) Niestety nie lubię tańczyć.",
+            "i) Tak, oczywiście.",
+            "j) Przepraszam, mam teraz mało czasu."
+          ],
+          "explanation": "Ania podaje termin i pyta, czy Ola może przyjść. To pytanie pasuje do informacji o wtorkach i czwartkach.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "c) Tak, to dobry termin.",
+          "options": [
+            "a) Nie, jeszcze nigdy.",
+            "b) Dzwonię w sprawie kursu.",
+            "c) Tak, to dobry termin.",
+            "d) Aha, rozumiem.",
+            "e) Świetnie, bardzo dziękuję.",
+            "f) Bardzo się cieszę.",
+            "g) Czy ten termin Pani pasuje?",
+            "h) Niestety nie lubię tańczyć.",
+            "i) Tak, oczywiście.",
+            "j) Przepraszam, mam teraz mało czasu."
+          ],
+          "explanation": "Ola odpowiada na pytanie Ani i potwierdza termin. Wyjaśnia: pracuje do szesnastej.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "d) Aha, rozumiem.",
+          "options": [
+            "a) Nie, jeszcze nigdy.",
+            "b) Dzwonię w sprawie kursu.",
+            "c) Tak, to dobry termin.",
+            "d) Aha, rozumiem.",
+            "e) Świetnie, bardzo dziękuję.",
+            "f) Bardzo się cieszę.",
+            "g) Czy ten termin Pani pasuje?",
+            "h) Niestety nie lubię tańczyć.",
+            "i) Tak, oczywiście.",
+            "j) Przepraszam, mam teraz mało czasu."
+          ],
+          "explanation": "Ola słyszy cenę i przyjmuje informację. „Aha, rozumiem” pasuje przed następnym pytaniem.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "i) Tak, oczywiście.",
+          "options": [
+            "a) Nie, jeszcze nigdy.",
+            "b) Dzwonię w sprawie kursu.",
+            "c) Tak, to dobry termin.",
+            "d) Aha, rozumiem.",
+            "e) Świetnie, bardzo dziękuję.",
+            "f) Bardzo się cieszę.",
+            "g) Czy ten termin Pani pasuje?",
+            "h) Niestety nie lubię tańczyć.",
+            "i) Tak, oczywiście.",
+            "j) Przepraszam, mam teraz mało czasu."
+          ],
+          "explanation": "Ola pyta o zniżki, więc Ania odpowiada „Tak, oczywiście” i podaje cenę dla studentów.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "e) Świetnie, bardzo dziękuję.",
+          "options": [
+            "a) Nie, jeszcze nigdy.",
+            "b) Dzwonię w sprawie kursu.",
+            "c) Tak, to dobry termin.",
+            "d) Aha, rozumiem.",
+            "e) Świetnie, bardzo dziękuję.",
+            "f) Bardzo się cieszę.",
+            "g) Czy ten termin Pani pasuje?",
+            "h) Niestety nie lubię tańczyć.",
+            "i) Tak, oczywiście.",
+            "j) Przepraszam, mam teraz mało czasu."
+          ],
+          "explanation": "Ola dziękuje za informację i decyduje się na kurs. „Świetnie, bardzo dziękuję” pasuje przed „Zapisuję się”.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "Szanowni Państwo,\n\n{el2-1} zapytać o kurs salsy dla początkujących. Interesuję się tańcem {el2-2} dziecka, ale nigdy nie byłam na kursie. Czy jest jeszcze wolne miejsce {el2-3} grupie we wtorki? Chciałabym zapisać się {el2-4} zajęcia po południu.\n\nProszę {el2-5} informację, ile kosztuje miesiąc zajęć. Jestem studentką. Czy {el2-6} dostać zniżkę? Czy mogę przyjść na lekcję próbną {el2-7} czwartek?\n\n{el2-8} pytań proszę dzwonić na mój numer telefonu. {el2-9} dziękuję {el2-10} odpowiedź.\n\nZ poważaniem\nOla Nowak",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "c) Piszę, aby",
+          "options": [
+            "a) Piszę, bo",
+            "b) Piszę, że",
+            "c) Piszę, aby"
+          ],
+          "explanation": "Po „aby” używamy bezokolicznika: „aby zapytać”. Po „bo” i „że” potrzebne jest całe zdanie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "a) od",
+          "options": [
+            "a) od",
+            "b) z",
+            "c) dla"
+          ],
+          "explanation": "Mówimy „od dziecka”, czyli od wczesnych lat. Inne przyimki nie pasują do tego wyrażenia.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "b) w",
+          "options": [
+            "a) na",
+            "b) w",
+            "c) do"
+          ],
+          "explanation": "Mówimy „miejsce w grupie”. Przyimki „na” i „do” nie pasują do tego wyrażenia.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "b) na",
+          "options": [
+            "a) do",
+            "b) na",
+            "c) w"
+          ],
+          "explanation": "Mówimy „zapisać się na zajęcia”. Przyimki „do” i „w” nie pasują do tego czasownika.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "c) o",
+          "options": [
+            "a) za",
+            "b) na",
+            "c) o"
+          ],
+          "explanation": "Mówimy „prosić o informację”. Inne przyimki nie pasują do czasownika „prosić”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "a) mogę",
+          "options": [
+            "a) mogę",
+            "b) umiem",
+            "c) wiem"
+          ],
+          "explanation": "Mówimy „mogę dostać zniżkę”, czyli „czy to możliwe”. „Umiem” i „wiem” nie pasują do tego zdania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "a) w",
+          "options": [
+            "a) w",
+            "b) o",
+            "c) do"
+          ],
+          "explanation": "Dzień tygodnia podajemy przyimkiem „w”: „w czwartek”. „O czwartek” i „do czwartek” brzmią niepoprawnie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "b) W razie",
+          "options": [
+            "a) Z powodu",
+            "b) W razie",
+            "c) Na razie"
+          ],
+          "explanation": "„W razie pytań” to stała formuła w e-mailu. „Z powodu” i „na razie” mają inne znaczenie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "c) Z góry",
+          "options": [
+            "a) Od góry",
+            "b) Na górze",
+            "c) Z góry"
+          ],
+          "explanation": "„Z góry dziękuję” to stała formuła w e-mailu. Pozostałe wyrażenia mają inne znaczenie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "a) za",
+          "options": [
+            "a) za",
+            "b) o",
+            "c) na"
+          ],
+          "explanation": "Mówimy „dziękować za odpowiedź”. Przyimek „za” łączy się z czasownikiem „dziękować”.",
+          "grammar_point": "rejestr-formalny"
+        }
       ]
     }
   ]

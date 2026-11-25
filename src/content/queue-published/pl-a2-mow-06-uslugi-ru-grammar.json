@@ -447,6 +447,292 @@
           "grammar_point": "kalki-ru"
         }
       ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Marek: Serwis Marek, słucham.\n\nOlena: Dzień dobry, mówi Olena Kovalenko. {el1-1}\n\nMarek: Co się stało?\n\nOlena: Pralka nie działa i na podłodze jest woda. {el1-2}\n\nMarek: {el1-3} Mogę być u pani jutro rano.\n\nOlena: {el1-4} Wychodzę do pracy o ósmej. {el1-5}\n\nMarek: {el1-6} Ale spróbuję być o wpół do ósmej.\n\nOlena: Bardzo dziękuję. {el1-7}\n\nMarek: {el1-8} Dopiero wtedy będę mógł powiedzieć, ile to kosztuje.\n\nOlena: Rozumiem. Do widzenia.",
+      "bank": [
+        "a) Czy może pan przyjechać dzisiaj?",
+        "b) To zależy od korków.",
+        "c) Najpierw muszę zobaczyć pralkę.",
+        "d) Dziękuję, mam już hydraulika.",
+        "e) W takim razie poproszę na jutro rano.",
+        "f) Czy mogę zapłacić kartą?",
+        "g) Dzwonię w sprawie pralki.",
+        "h) Ile to będzie kosztować?",
+        "i) Niestety dzisiaj nie mogę.",
+        "j) Czy może pan przyjechać przed ósmą?"
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "g) Dzwonię w sprawie pralki.",
+          "options": [
+            "a) Czy może pan przyjechać dzisiaj?",
+            "b) To zależy od korków.",
+            "c) Najpierw muszę zobaczyć pralkę.",
+            "d) Dziękuję, mam już hydraulika.",
+            "e) W takim razie poproszę na jutro rano.",
+            "f) Czy mogę zapłacić kartą?",
+            "g) Dzwonię w sprawie pralki.",
+            "h) Ile to będzie kosztować?",
+            "i) Niestety dzisiaj nie mogę.",
+            "j) Czy może pan przyjechać przed ósmą?"
+          ],
+          "explanation": "Olena podaje powód telefonu, a Marek pyta „Co się stało?”. Pytanie o płatność kartą nie pasuje na początek rozmowy.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "a) Czy może pan przyjechać dzisiaj?",
+          "options": [
+            "a) Czy może pan przyjechać dzisiaj?",
+            "b) To zależy od korków.",
+            "c) Najpierw muszę zobaczyć pralkę.",
+            "d) Dziękuję, mam już hydraulika.",
+            "e) W takim razie poproszę na jutro rano.",
+            "f) Czy mogę zapłacić kartą?",
+            "g) Dzwonię w sprawie pralki.",
+            "h) Ile to będzie kosztować?",
+            "i) Niestety dzisiaj nie mogę.",
+            "j) Czy może pan przyjechać przed ósmą?"
+          ],
+          "explanation": "Po opisie awarii Olena prosi o szybką wizytę, bo woda leje się na podłogę. Fragment „Czy może pan przyjechać przed ósmą?” dotyczy dopiero jutrzejszego poranka.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "i) Niestety dzisiaj nie mogę.",
+          "options": [
+            "a) Czy może pan przyjechać dzisiaj?",
+            "b) To zależy od korków.",
+            "c) Najpierw muszę zobaczyć pralkę.",
+            "d) Dziękuję, mam już hydraulika.",
+            "e) W takim razie poproszę na jutro rano.",
+            "f) Czy mogę zapłacić kartą?",
+            "g) Dzwonię w sprawie pralki.",
+            "h) Ile to będzie kosztować?",
+            "i) Niestety dzisiaj nie mogę.",
+            "j) Czy może pan przyjechać przed ósmą?"
+          ],
+          "explanation": "Marek odmawia na dziś i od razu proponuje jutro. „Czy może pan przyjechać dzisiaj?” to pytanie klienta, a nie odpowiedź fachowca.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "e) W takim razie poproszę na jutro rano.",
+          "options": [
+            "a) Czy może pan przyjechać dzisiaj?",
+            "b) To zależy od korków.",
+            "c) Najpierw muszę zobaczyć pralkę.",
+            "d) Dziękuję, mam już hydraulika.",
+            "e) W takim razie poproszę na jutro rano.",
+            "f) Czy mogę zapłacić kartą?",
+            "g) Dzwonię w sprawie pralki.",
+            "h) Ile to będzie kosztować?",
+            "i) Niestety dzisiaj nie mogę.",
+            "j) Czy może pan przyjechać przed ósmą?"
+          ],
+          "explanation": "Olena przyjmuje propozycję jutrzejszej wizyty. „W takim razie” pokazuje, że rezygnuje z dzisiejszego terminu.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "j) Czy może pan przyjechać przed ósmą?",
+          "options": [
+            "a) Czy może pan przyjechać dzisiaj?",
+            "b) To zależy od korków.",
+            "c) Najpierw muszę zobaczyć pralkę.",
+            "d) Dziękuję, mam już hydraulika.",
+            "e) W takim razie poproszę na jutro rano.",
+            "f) Czy mogę zapłacić kartą?",
+            "g) Dzwonię w sprawie pralki.",
+            "h) Ile to będzie kosztować?",
+            "i) Niestety dzisiaj nie mogę.",
+            "j) Czy może pan przyjechać przed ósmą?"
+          ],
+          "explanation": "Olena wychodzi o ósmej, więc prosi o przyjazd przed tą godziną. Fragment „na jutro rano” już padł w poprzedniej wypowiedzi.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "b) To zależy od korków.",
+          "options": [
+            "a) Czy może pan przyjechać dzisiaj?",
+            "b) To zależy od korków.",
+            "c) Najpierw muszę zobaczyć pralkę.",
+            "d) Dziękuję, mam już hydraulika.",
+            "e) W takim razie poproszę na jutro rano.",
+            "f) Czy mogę zapłacić kartą?",
+            "g) Dzwonię w sprawie pralki.",
+            "h) Ile to będzie kosztować?",
+            "i) Niestety dzisiaj nie mogę.",
+            "j) Czy może pan przyjechać przed ósmą?"
+          ],
+          "explanation": "Marek nie może zagwarantować godziny, bo ruch uliczny jest nieprzewidywalny. Dlatego mówi „To zależy od korków” i dodaje, że spróbuje.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "h) Ile to będzie kosztować?",
+          "options": [
+            "a) Czy może pan przyjechać dzisiaj?",
+            "b) To zależy od korków.",
+            "c) Najpierw muszę zobaczyć pralkę.",
+            "d) Dziękuję, mam już hydraulika.",
+            "e) W takim razie poproszę na jutro rano.",
+            "f) Czy mogę zapłacić kartą?",
+            "g) Dzwonię w sprawie pralki.",
+            "h) Ile to będzie kosztować?",
+            "i) Niestety dzisiaj nie mogę.",
+            "j) Czy może pan przyjechać przed ósmą?"
+          ],
+          "explanation": "Olena chce znać koszt naprawy, a Marek odpowiada, że powie to po obejrzeniu pralki. „Czy mogę zapłacić kartą?” jest innym pytaniem.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "c) Najpierw muszę zobaczyć pralkę.",
+          "options": [
+            "a) Czy może pan przyjechać dzisiaj?",
+            "b) To zależy od korków.",
+            "c) Najpierw muszę zobaczyć pralkę.",
+            "d) Dziękuję, mam już hydraulika.",
+            "e) W takim razie poproszę na jutro rano.",
+            "f) Czy mogę zapłacić kartą?",
+            "g) Dzwonię w sprawie pralki.",
+            "h) Ile to będzie kosztować?",
+            "i) Niestety dzisiaj nie mogę.",
+            "j) Czy może pan przyjechać przed ósmą?"
+          ],
+          "explanation": "Marek tłumaczy, dlaczego nie podaje ceny od razu: najpierw musi sprawdzić, co się zepsuło.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "{el2-1} Państwo,\n\nPiszę {el2-2} reklamacji suszarki do włosów, którą kupiłam w Państwa sklepie 3 listopada. Suszarka działała tylko tydzień, {el2-3} przestała grzać. Zgodnie {el2-4} warunkami gwarancji naprawa jest bezpłatna. Chciałabym zapytać, {el2-5} mogę ją wymienić na nową. Jeżeli to nie jest możliwe, proszę {el2-6} zwrot pieniędzy. Mam paragon i kartę gwarancyjną. Byłabym {el2-7} wdzięczna za szybką odpowiedź. Czekam {el2-8} Państwa wiadomość. Z góry dziękuję {el2-9} pomoc.\n\n{el2-10} poważaniem\nOlena Kovalenko",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "a) Szanowni",
+          "options": [
+            "a) Szanowni",
+            "b) Szanowne",
+            "c) Szanowny"
+          ],
+          "explanation": "Do firmy lub grupy osób piszemy „Szanowni Państwo”. „Szanowne” i „Szanowny” nie pasują do słowa „Państwo”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "a) w sprawie",
+          "options": [
+            "a) w sprawie",
+            "b) o sprawie",
+            "c) do sprawy"
+          ],
+          "explanation": "Formuła „Piszę w sprawie + dopełniacz” to stały zwrot w listach. Pozostałe warianty brzmią nienaturalnie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "a) a potem",
+          "options": [
+            "a) a potem",
+            "b) dlatego",
+            "c) chociaż"
+          ],
+          "explanation": "Zdanie opisuje kolejność zdarzeń: najpierw suszarka działała, później przestała grzać. „Dlatego” i „chociaż” zmieniają sens.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "a) z",
+          "options": [
+            "a) z",
+            "b) na",
+            "c) do"
+          ],
+          "explanation": "Mówimy „zgodnie z warunkami”. Z przyimkami „na” i „do” to wyrażenie jest błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "c) czy",
+          "options": [
+            "a) żeby",
+            "b) bo",
+            "c) czy"
+          ],
+          "explanation": "Pośrednie pytanie zaczynamy od „czy”: „Chciałabym zapytać, czy mogę…”. „Żeby” i „bo” nie tworzą pytania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "b) o",
+          "options": [
+            "a) za",
+            "b) o",
+            "c) na"
+          ],
+          "explanation": "Stały zwrot to „prosić o coś”, np. o zwrot pieniędzy. Przyimki „za” i „na” są niepoprawne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "b) bardzo",
+          "options": [
+            "a) dużo",
+            "b) bardzo",
+            "c) wiele"
+          ],
+          "explanation": "W formule grzecznościowej mówimy „byłabym bardzo wdzięczna”. „Dużo” i „wiele” nie łączą się z tym przymiotnikiem.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "c) na",
+          "options": [
+            "a) do",
+            "b) o",
+            "c) na"
+          ],
+          "explanation": "Czasownik „czekać” łączy się z „na + biernik”: „czekam na wiadomość”. „Do” i „o” są błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "a) za",
+          "options": [
+            "a) za",
+            "b) o",
+            "c) na"
+          ],
+          "explanation": "Dziękujemy „za pomoc”. Przyimki „o” i „na” nie pasują do czasownika „dziękować”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "c) Z",
+          "options": [
+            "a) Pod",
+            "b) Przy",
+            "c) Z"
+          ],
+          "explanation": "Zakończenie oficjalnego listu to „Z poważaniem”. Przyimki „pod” i „przy” nie tworzą tej formuły.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
   ]
 }

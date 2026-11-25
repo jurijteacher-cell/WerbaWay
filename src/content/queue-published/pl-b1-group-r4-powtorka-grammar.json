@@ -397,6 +397,292 @@
           "explanation": "Dziękować za + biernik: za pomoc."
         }
       ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Bartek: Halo?\n\nOlena: Cześć Bartek, tu Olena, mama Maksyma. {el1-1} Chciałabym o coś zapytać.\n\nBartek: {el1-2} Właśnie robię herbatę.\n\nOlena: Pamiętasz, jak opowiadałeś o pracy zdalnej? {el1-3} Zastanawiam się, czy to byłby dobry pomysł także dla mnie.\n\nBartek: {el1-4} Wszystko zależy od tego, czy szef się zgodzi.\n\nOlena: Mój szef mówi, że może się zgodzić, jeśli będę miała stabilny internet.\n\nBartek: {el1-5} U nas we wsi jest światłowód od zeszłego roku.\n\nOlena: To świetnie. {el1-6} Ludzie mówią, że w domu trudno się skupić.\n\nBartek: {el1-7} Muszę tylko pilnować stałych godzin pracy.\n\nOlena: Dziękuję, bardzo mi pomogłeś. {el1-8}\n\nBartek: Dobrze, do usłyszenia!",
+      "bank": [
+        "a) Teraz nie mam czasu, zadzwoń jutro.",
+        "b) Od tamtej pory ciągle o tym myślę.",
+        "c) Czy mogę zająć ci chwilę?",
+        "d) Odezwę się jeszcze w tym tygodniu.",
+        "e) Na początku było trudno, ale się przyzwyczaiłem.",
+        "f) Przepraszam, to chyba pomyłka.",
+        "g) A jak jest z koncentracją?",
+        "h) Jasne, słucham cię.",
+        "i) Tego akurat nie musisz się bać.",
+        "j) To dobre pytanie."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "c) Czy mogę zająć ci chwilę?",
+          "options": [
+            "a) Teraz nie mam czasu, zadzwoń jutro.",
+            "b) Od tamtej pory ciągle o tym myślę.",
+            "c) Czy mogę zająć ci chwilę?",
+            "d) Odezwę się jeszcze w tym tygodniu.",
+            "e) Na początku było trudno, ale się przyzwyczaiłem.",
+            "f) Przepraszam, to chyba pomyłka.",
+            "g) A jak jest z koncentracją?",
+            "h) Jasne, słucham cię.",
+            "i) Tego akurat nie musisz się bać.",
+            "j) To dobre pytanie."
+          ],
+          "explanation": "To grzeczne pytanie na początku rozmowy, gdy chcesz o coś zapytać. Bartek odpowiada na nie w następnej kwestii.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "h) Jasne, słucham cię.",
+          "options": [
+            "a) Teraz nie mam czasu, zadzwoń jutro.",
+            "b) Od tamtej pory ciągle o tym myślę.",
+            "c) Czy mogę zająć ci chwilę?",
+            "d) Odezwę się jeszcze w tym tygodniu.",
+            "e) Na początku było trudno, ale się przyzwyczaiłem.",
+            "f) Przepraszam, to chyba pomyłka.",
+            "g) A jak jest z koncentracją?",
+            "h) Jasne, słucham cię.",
+            "i) Tego akurat nie musisz się bać.",
+            "j) To dobre pytanie."
+          ],
+          "explanation": "To zgoda na rozmowę. „Teraz nie mam czasu” nie pasuje, bo Bartek mówi dalej o herbacie i rozmawia.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "b) Od tamtej pory ciągle o tym myślę.",
+          "options": [
+            "a) Teraz nie mam czasu, zadzwoń jutro.",
+            "b) Od tamtej pory ciągle o tym myślę.",
+            "c) Czy mogę zająć ci chwilę?",
+            "d) Odezwę się jeszcze w tym tygodniu.",
+            "e) Na początku było trudno, ale się przyzwyczaiłem.",
+            "f) Przepraszam, to chyba pomyłka.",
+            "g) A jak jest z koncentracją?",
+            "h) Jasne, słucham cię.",
+            "i) Tego akurat nie musisz się bać.",
+            "j) To dobre pytanie."
+          ],
+          "explanation": "Olena mówi, co się stało po tamtej rozmowie. Zdanie dalej zaczyna się od „Zastanawiam się”, więc pasuje do tej myśli.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "j) To dobre pytanie.",
+          "options": [
+            "a) Teraz nie mam czasu, zadzwoń jutro.",
+            "b) Od tamtej pory ciągle o tym myślę.",
+            "c) Czy mogę zająć ci chwilę?",
+            "d) Odezwę się jeszcze w tym tygodniu.",
+            "e) Na początku było trudno, ale się przyzwyczaiłem.",
+            "f) Przepraszam, to chyba pomyłka.",
+            "g) A jak jest z koncentracją?",
+            "h) Jasne, słucham cię.",
+            "i) Tego akurat nie musisz się bać.",
+            "j) To dobre pytanie."
+          ],
+          "explanation": "Bartek zyskuje chwilę na odpowiedź. Potem tłumaczy: „Wszystko zależy od…”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "i) Tego akurat nie musisz się bać.",
+          "options": [
+            "a) Teraz nie mam czasu, zadzwoń jutro.",
+            "b) Od tamtej pory ciągle o tym myślę.",
+            "c) Czy mogę zająć ci chwilę?",
+            "d) Odezwę się jeszcze w tym tygodniu.",
+            "e) Na początku było trudno, ale się przyzwyczaiłem.",
+            "f) Przepraszam, to chyba pomyłka.",
+            "g) A jak jest z koncentracją?",
+            "h) Jasne, słucham cię.",
+            "i) Tego akurat nie musisz się bać.",
+            "j) To dobre pytanie."
+          ],
+          "explanation": "Olena martwi się o internet, a Bartek ją uspokaja. Zdanie o światłowodzie to powód, dla którego nie trzeba się bać.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "g) A jak jest z koncentracją?",
+          "options": [
+            "a) Teraz nie mam czasu, zadzwoń jutro.",
+            "b) Od tamtej pory ciągle o tym myślę.",
+            "c) Czy mogę zająć ci chwilę?",
+            "d) Odezwę się jeszcze w tym tygodniu.",
+            "e) Na początku było trudno, ale się przyzwyczaiłem.",
+            "f) Przepraszam, to chyba pomyłka.",
+            "g) A jak jest z koncentracją?",
+            "h) Jasne, słucham cię.",
+            "i) Tego akurat nie musisz się bać.",
+            "j) To dobre pytanie."
+          ],
+          "explanation": "Olena przechodzi do kolejnego pytania. Powód to jej zdanie: ludzie mówią, że w domu trudno się skupić.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "e) Na początku było trudno, ale się przyzwyczaiłem.",
+          "options": [
+            "a) Teraz nie mam czasu, zadzwoń jutro.",
+            "b) Od tamtej pory ciągle o tym myślę.",
+            "c) Czy mogę zająć ci chwilę?",
+            "d) Odezwę się jeszcze w tym tygodniu.",
+            "e) Na początku było trudno, ale się przyzwyczaiłem.",
+            "f) Przepraszam, to chyba pomyłka.",
+            "g) A jak jest z koncentracją?",
+            "h) Jasne, słucham cię.",
+            "i) Tego akurat nie musisz się bać.",
+            "j) To dobre pytanie."
+          ],
+          "explanation": "Bartek odpowiada na problem z koncentracją. Dalej mówi, co musi robić: pilnować stałych godzin.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "d) Odezwę się jeszcze w tym tygodniu.",
+          "options": [
+            "a) Teraz nie mam czasu, zadzwoń jutro.",
+            "b) Od tamtej pory ciągle o tym myślę.",
+            "c) Czy mogę zająć ci chwilę?",
+            "d) Odezwę się jeszcze w tym tygodniu.",
+            "e) Na początku było trudno, ale się przyzwyczaiłem.",
+            "f) Przepraszam, to chyba pomyłka.",
+            "g) A jak jest z koncentracją?",
+            "h) Jasne, słucham cię.",
+            "i) Tego akurat nie musisz się bać.",
+            "j) To dobre pytanie."
+          ],
+          "explanation": "To grzeczne zakończenie rozmowy po podziękowaniu. „Do usłyszenia” w następnej linii pasuje do takiego zakończenia.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "Szanowny Panie Dyrektorze,\n\npiszę {el2-1} możliwości pracy zdalnej. Od trzech lat pracuję w dziale sprzedaży i bardzo {el2-2} mi na dalszej współpracy z Państwa firmą. Mieszkam w Lublinie od pięciu lat i zawsze dobrze oceniano moją pracę.\n\nDojazd do biura zajmuje mi prawie dwie godziny dziennie, {el2-3} tracę dużo czasu. {el2-4} pracy w domu mogłabym lepiej planować dzień. Wiem, że część zadań wymaga obecności w biurze, {el2-5} jestem gotowa przyjeżdżać tam dwa razy w tygodniu. Pracowałabym tak samo uczciwie jak dotąd.\n\nChciałabym zapytać, {el2-6} byłoby to możliwe od początku marca. Mogę też przygotować plan pracy, {el2-7} mógł Pan sprawdzić, jak sobie radzę. Jestem pewna, że nowe rozwiązanie będzie korzystne dla obu stron. Z góry dziękuję {el2-8} rozważenie mojej prośby i czekam {el2-9} Pana odpowiedź.\n\n{el2-10}\nOlena",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "c) w sprawie",
+          "options": [
+            "a) z sprawy",
+            "b) do sprawy",
+            "c) w sprawie"
+          ],
+          "explanation": "„W sprawie” to formuła na początku listu urzędowego: piszę w sprawie czegoś.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "b) zależy",
+          "options": [
+            "a) chodzi",
+            "b) zależy",
+            "c) zajmuje"
+          ],
+          "explanation": "Mówimy „zależy mi na czymś”, gdy coś jest dla nas ważne. „Chodzi mi na” jest błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "a) dlatego",
+          "options": [
+            "a) dlatego",
+            "b) ponieważ",
+            "c) chociaż"
+          ],
+          "explanation": "„Dlatego” wprowadza skutek: dojazd trwa długo, więc tracę czas. „Ponieważ” wprowadza przyczynę i tu odwraca sens.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "c) Dzięki",
+          "options": [
+            "a) Mimo",
+            "b) Z powodu",
+            "c) Dzięki"
+          ],
+          "explanation": "„Dzięki” mówi o pozytywnym powodzie: dzięki pracy w domu będzie lepiej. „Mimo” oznacza „wbrew czemuś”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "a) jednak",
+          "options": [
+            "a) jednak",
+            "b) dlatego",
+            "c) ponieważ"
+          ],
+          "explanation": "„Jednak” pokazuje kontrast: część zadań wymaga biura, ale autorka jest gotowa dojeżdżać. „Dlatego” nie mówi o kontraście.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "b) czy",
+          "options": [
+            "a) że",
+            "b) czy",
+            "c) żeby"
+          ],
+          "explanation": "Po „zapytać” używamy „czy”, bo to pytanie pośrednie. „Że” podaje fakt, a nie pyta.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "c) żeby",
+          "options": [
+            "a) że",
+            "b) czy",
+            "c) żeby"
+          ],
+          "explanation": "„Żeby Pan mógł sprawdzić” wyraża cel planu pracy. „Że” i „czy” nie wyrażają celu.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "b) za",
+          "options": [
+            "a) o",
+            "b) za",
+            "c) na"
+          ],
+          "explanation": "Dziękuje się „za coś”: za rozważenie prośby. „Dziękuję o” jest błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "a) na",
+          "options": [
+            "a) na",
+            "b) o",
+            "c) za"
+          ],
+          "explanation": "Czeka się „na coś”: na odpowiedź. To stała kolokacja czasownika „czekać”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "c) Z poważaniem",
+          "options": [
+            "a) Z pozdrowieniem",
+            "b) W poważaniu",
+            "c) Z poważaniem"
+          ],
+          "explanation": "„Z poważaniem” to oficjalne zakończenie listu do przełożonego. Pozostałe wersje nie są poprawną formułą.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
   ]
 }

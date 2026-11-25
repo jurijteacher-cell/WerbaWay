@@ -614,6 +614,292 @@
           "grammar_point": "kalki-uk"
         }
       ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Adam: Kasa biletowa, dzień dobry. Słucham.\n\nKatarzyna: Dzień dobry. Chcę kupić bilet do Krakowa na jutro rano. {el1-1}\n\nAdam: Najbliższy pociąg jest o 5:50 i jedzie bezpośrednio. Drugi, o 6:10, jedzie z przesiadką w Bochni.\n\nKatarzyna: {el1-2}\n\nAdam: Dobrze. Bilet w jedną stronę czy powrotny?\n\nKatarzyna: {el1-3}\n\nAdam: To będzie trzydzieści osiem złotych. Płaci pani gotówką czy kartą?\n\nKatarzyna: {el1-4}\n\nAdam: {el1-5}\n\nKatarzyna: Proszę. {el1-6}\n\nAdam: {el1-7}\n\nKatarzyna: {el1-8}",
+      "bank": [
+        "a) Czy pociągi często mają opóźnienia?",
+        "b) Niestety kasa jest już zamknięta.",
+        "c) Poproszę ten bezpośredni.",
+        "d) Powrotny, bo wracam jeszcze tego samego dnia.",
+        "e) Kartą, jeśli można.",
+        "f) Czasem się zdarzają, ale rzadko.",
+        "g) Nie, dziękuję, już mam bilet.",
+        "h) O której godzinie jest najbliższe połączenie?",
+        "i) W takim razie dziękuję i do widzenia.",
+        "j) Oczywiście, proszę przyłożyć kartę do terminala."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "h) O której godzinie jest najbliższe połączenie?",
+          "options": [
+            "a) Czy pociągi często mają opóźnienia?",
+            "b) Niestety kasa jest już zamknięta.",
+            "c) Poproszę ten bezpośredni.",
+            "d) Powrotny, bo wracam jeszcze tego samego dnia.",
+            "e) Kartą, jeśli można.",
+            "f) Czasem się zdarzają, ale rzadko.",
+            "g) Nie, dziękuję, już mam bilet.",
+            "h) O której godzinie jest najbliższe połączenie?",
+            "i) W takim razie dziękuję i do widzenia.",
+            "j) Oczywiście, proszę przyłożyć kartę do terminala."
+          ],
+          "explanation": "Adam odpowiada, o której odjeżdża najbliższy pociąg, więc Katarzyna pytała o godzinę połączenia.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "c) Poproszę ten bezpośredni.",
+          "options": [
+            "a) Czy pociągi często mają opóźnienia?",
+            "b) Niestety kasa jest już zamknięta.",
+            "c) Poproszę ten bezpośredni.",
+            "d) Powrotny, bo wracam jeszcze tego samego dnia.",
+            "e) Kartą, jeśli można.",
+            "f) Czasem się zdarzają, ale rzadko.",
+            "g) Nie, dziękuję, już mam bilet.",
+            "h) O której godzinie jest najbliższe połączenie?",
+            "i) W takim razie dziękuję i do widzenia.",
+            "j) Oczywiście, proszę przyłożyć kartę do terminala."
+          ],
+          "explanation": "Adam podał dwa pociągi: bezpośredni i z przesiadką. Katarzyna wybiera pierwszy z nich.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "d) Powrotny, bo wracam jeszcze tego samego dnia.",
+          "options": [
+            "a) Czy pociągi często mają opóźnienia?",
+            "b) Niestety kasa jest już zamknięta.",
+            "c) Poproszę ten bezpośredni.",
+            "d) Powrotny, bo wracam jeszcze tego samego dnia.",
+            "e) Kartą, jeśli można.",
+            "f) Czasem się zdarzają, ale rzadko.",
+            "g) Nie, dziękuję, już mam bilet.",
+            "h) O której godzinie jest najbliższe połączenie?",
+            "i) W takim razie dziękuję i do widzenia.",
+            "j) Oczywiście, proszę przyłożyć kartę do terminala."
+          ],
+          "explanation": "Adam pyta o rodzaj biletu. Odpowiedź „Powrotny” z uzasadnieniem jest pełną, naturalną reakcją.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "e) Kartą, jeśli można.",
+          "options": [
+            "a) Czy pociągi często mają opóźnienia?",
+            "b) Niestety kasa jest już zamknięta.",
+            "c) Poproszę ten bezpośredni.",
+            "d) Powrotny, bo wracam jeszcze tego samego dnia.",
+            "e) Kartą, jeśli można.",
+            "f) Czasem się zdarzają, ale rzadko.",
+            "g) Nie, dziękuję, już mam bilet.",
+            "h) O której godzinie jest najbliższe połączenie?",
+            "i) W takim razie dziękuję i do widzenia.",
+            "j) Oczywiście, proszę przyłożyć kartę do terminala."
+          ],
+          "explanation": "Adam pyta, czy płaci gotówką, czy kartą. „Kartą” jest odpowiedzią, a „jeśli można” brzmi grzecznie.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "j) Oczywiście, proszę przyłożyć kartę do terminala.",
+          "options": [
+            "a) Czy pociągi często mają opóźnienia?",
+            "b) Niestety kasa jest już zamknięta.",
+            "c) Poproszę ten bezpośredni.",
+            "d) Powrotny, bo wracam jeszcze tego samego dnia.",
+            "e) Kartą, jeśli można.",
+            "f) Czasem się zdarzają, ale rzadko.",
+            "g) Nie, dziękuję, już mam bilet.",
+            "h) O której godzinie jest najbliższe połączenie?",
+            "i) W takim razie dziękuję i do widzenia.",
+            "j) Oczywiście, proszę przyłożyć kartę do terminala."
+          ],
+          "explanation": "Adam zgadza się na płatność kartą i prosi o przyłożenie jej do terminala. „Niestety kasa jest zamknięta” nie pasuje do sytuacji.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "a) Czy pociągi często mają opóźnienia?",
+          "options": [
+            "a) Czy pociągi często mają opóźnienia?",
+            "b) Niestety kasa jest już zamknięta.",
+            "c) Poproszę ten bezpośredni.",
+            "d) Powrotny, bo wracam jeszcze tego samego dnia.",
+            "e) Kartą, jeśli można.",
+            "f) Czasem się zdarzają, ale rzadko.",
+            "g) Nie, dziękuję, już mam bilet.",
+            "h) O której godzinie jest najbliższe połączenie?",
+            "i) W takim razie dziękuję i do widzenia.",
+            "j) Oczywiście, proszę przyłożyć kartę do terminala."
+          ],
+          "explanation": "Po zapłaceniu Katarzyna pyta o coś, co jest dla niej ważne w dojazdach. Adam odpowiada na pytanie o opóźnienia.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "f) Czasem się zdarzają, ale rzadko.",
+          "options": [
+            "a) Czy pociągi często mają opóźnienia?",
+            "b) Niestety kasa jest już zamknięta.",
+            "c) Poproszę ten bezpośredni.",
+            "d) Powrotny, bo wracam jeszcze tego samego dnia.",
+            "e) Kartą, jeśli można.",
+            "f) Czasem się zdarzają, ale rzadko.",
+            "g) Nie, dziękuję, już mam bilet.",
+            "h) O której godzinie jest najbliższe połączenie?",
+            "i) W takim razie dziękuję i do widzenia.",
+            "j) Oczywiście, proszę przyłożyć kartę do terminala."
+          ],
+          "explanation": "To odpowiedź na pytanie o opóźnienia: czasem są, ale rzadko. Pasuje do poprzedniej repliki Katarzyny.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "i) W takim razie dziękuję i do widzenia.",
+          "options": [
+            "a) Czy pociągi często mają opóźnienia?",
+            "b) Niestety kasa jest już zamknięta.",
+            "c) Poproszę ten bezpośredni.",
+            "d) Powrotny, bo wracam jeszcze tego samego dnia.",
+            "e) Kartą, jeśli można.",
+            "f) Czasem się zdarzają, ale rzadko.",
+            "g) Nie, dziękuję, już mam bilet.",
+            "h) O której godzinie jest najbliższe połączenie?",
+            "i) W takim razie dziękuję i do widzenia.",
+            "j) Oczywiście, proszę przyłożyć kartę do terminala."
+          ],
+          "explanation": "Na koniec Katarzyna dziękuje za informacje i się żegna. „W takim razie” podsumowuje rozmowę.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "Szanowni Państwo,\n\nPiszę {el2-1} pociągu relacji Wieliczka–Kraków Główny, który miał odjechać {el2-2} poniedziałek o godzinie 5:50. Pociąg został odwołany bez wcześniejszej informacji, a {el2-3} stacji nie było żadnego komunikatu. Musiałam wziąć taksówkę, żeby zdążyć do pracy, dlatego {el2-4} o zwrot kosztów przejazdu. Jestem posiadaczką biletu miesięcznego, więc uważam, że należy mi się rekompensata. {el2-5} wniosku dołączam kopię biletu i rachunek za taksówkę. Zależy mi {el2-6} szybkiej odpowiedzi, ponieważ w zeszłym miesiącu podobna sytuacja zdarzyła się już dwa razy. Mieszkam w Wieliczce i codziennie dojeżdżam do pracy w Krakowie, dlatego regularność pociągów jest dla mnie bardzo ważna. Chciałabym też zapytać, {el2-7} Państwo planują zmiany w rozkładzie jazdy. Odpowiedzi oczekuję {el2-8} czternastu dni.\n\n{el2-9} dziękuję za zrozumienie.\n\n{el2-10} poważaniem\n\nKatarzyna Nowak",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "b) w sprawie",
+          "options": [
+            "a) o sprawie",
+            "b) w sprawie",
+            "c) za sprawą"
+          ],
+          "explanation": "„W sprawie” to stała formuła listu: „piszę w sprawie pociągu”. „O sprawie” i „za sprawą” zmieniają sens zdania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "c) w",
+          "options": [
+            "a) od",
+            "b) na",
+            "c) w"
+          ],
+          "explanation": "Dzień tygodnia w dacie podajemy z „w”: „w poniedziałek”. „Od” i „na” nie pasują do odjazdu pociągu.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "a) na",
+          "options": [
+            "a) na",
+            "b) w",
+            "c) przy"
+          ],
+          "explanation": "Mówimy „na stacji”. „W stacji” i „przy stacji” nie brzmią naturalnie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "a) proszę",
+          "options": [
+            "a) proszę",
+            "b) pytam",
+            "c) mówię"
+          ],
+          "explanation": "Prosimy „o zwrot kosztów”. Czasowniki „pytam” i „mówię” nie tworzą tej kolokacji.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "b) Do",
+          "options": [
+            "a) Z",
+            "b) Do",
+            "c) Na"
+          ],
+          "explanation": "Dokumenty dołączamy „do wniosku”. „Z wniosku” i „na wniosku” mają inne znaczenie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "c) na",
+          "options": [
+            "a) o",
+            "b) w",
+            "c) na"
+          ],
+          "explanation": "Mówimy „zależy mi na czymś”. „O” i „w” nie pasują do tego wyrażenia.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "a) czy",
+          "options": [
+            "a) czy",
+            "b) że",
+            "c) żeby"
+          ],
+          "explanation": "Pytanie pośrednie po „zapytać” wymaga „czy”. „Że” i „żeby” nie tworzą pytania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "b) w ciągu",
+          "options": [
+            "a) przez",
+            "b) w ciągu",
+            "c) podczas"
+          ],
+          "explanation": "„W ciągu czternastu dni” oznacza termin odpowiedzi. „Przez” i „podczas” wymagają innych form.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "a) Z góry",
+          "options": [
+            "a) Z góry",
+            "b) Z dołu",
+            "c) Z boku"
+          ],
+          "explanation": "„Z góry dziękuję” to stała formuła, gdy prosimy o pomoc lub rozpatrzenie sprawy. Pozostałe nie są formułami listu.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "c) Z poważaniem",
+          "options": [
+            "a) Za poważaniem",
+            "b) W poważaniu",
+            "c) Z poważaniem"
+          ],
+          "explanation": "List oficjalny kończymy formułą „Z poważaniem”. Pozostałe warianty są błędne.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
   ]
 }

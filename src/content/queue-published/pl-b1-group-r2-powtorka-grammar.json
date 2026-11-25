@@ -391,6 +391,292 @@
           "explanation": "Od + dopełniacz → od której."
         }
       ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Zuza: Cześć, Maksym! Wiesz już, gdzie jedziemy na wycieczkę?\n\nMaksym: Cześć! {el1-1}\n\nZuza: Moim zdaniem Gdańsk jest najlepszy, bo tam jest morze. {el1-2}\n\nMaksym: {el1-3} Ale Kacper i ja wolimy Bieszczady.\n\nZuza: {el1-4}\n\nMaksym: I właśnie o to chodzi. Im mniej internetu, tym więcej rozmów.\n\nZuza: {el1-5} Ale nocleg w Bieszczadach pewnie jest droższy?\n\nMaksym: {el1-6} Mogę zapytać w schronisku.\n\nZuza: Świetny pomysł! Możesz się dowiedzieć też o cenie dla grupy?\n\nMaksym: {el1-7} {el1-8}\n\nZuza: Super, to do jutra w szkole!",
+      "bank": [
+        "a) Dobrze, kupię bilety.",
+        "b) Jasne, napiszę do nich dziś wieczorem.",
+        "c) Dam ci znać, jak tylko odpiszą.",
+        "d) Przykro mi, ale nie mam czasu.",
+        "e) To zależy, ale sprawdzę dokładnie.",
+        "f) Nie mam nic przeciwko Gdańskowi.",
+        "g) Jeszcze nie, ale mam kilka pomysłów.",
+        "h) A ty co o tym myślisz?",
+        "i) Naprawdę? Przecież tam nie ma zasięgu!",
+        "j) Masz rację, o tym nie pomyślałam."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "g) Jeszcze nie, ale mam kilka pomysłów.",
+          "options": [
+            "a) Dobrze, kupię bilety.",
+            "b) Jasne, napiszę do nich dziś wieczorem.",
+            "c) Dam ci znać, jak tylko odpiszą.",
+            "d) Przykro mi, ale nie mam czasu.",
+            "e) To zależy, ale sprawdzę dokładnie.",
+            "f) Nie mam nic przeciwko Gdańskowi.",
+            "g) Jeszcze nie, ale mam kilka pomysłów.",
+            "h) A ty co o tym myślisz?",
+            "i) Naprawdę? Przecież tam nie ma zasięgu!",
+            "j) Masz rację, o tym nie pomyślałam."
+          ],
+          "explanation": "Maksym odpowiada na pytanie o wycieczkę: jeszcze nie zdecydowano, ale są pomysły. „Jeszcze nie” pasuje do pytania „Wiesz już…?”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "h) A ty co o tym myślisz?",
+          "options": [
+            "a) Dobrze, kupię bilety.",
+            "b) Jasne, napiszę do nich dziś wieczorem.",
+            "c) Dam ci znać, jak tylko odpiszą.",
+            "d) Przykro mi, ale nie mam czasu.",
+            "e) To zależy, ale sprawdzę dokładnie.",
+            "f) Nie mam nic przeciwko Gdańskowi.",
+            "g) Jeszcze nie, ale mam kilka pomysłów.",
+            "h) A ty co o tym myślisz?",
+            "i) Naprawdę? Przecież tam nie ma zasięgu!",
+            "j) Masz rację, o tym nie pomyślałam."
+          ],
+          "explanation": "Zuza przedstawia swoją opinię i pyta o opinię Maksyma. To naturalne pytanie w rozmowie o wyborze miejsca.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "f) Nie mam nic przeciwko Gdańskowi.",
+          "options": [
+            "a) Dobrze, kupię bilety.",
+            "b) Jasne, napiszę do nich dziś wieczorem.",
+            "c) Dam ci znać, jak tylko odpiszą.",
+            "d) Przykro mi, ale nie mam czasu.",
+            "e) To zależy, ale sprawdzę dokładnie.",
+            "f) Nie mam nic przeciwko Gdańskowi.",
+            "g) Jeszcze nie, ale mam kilka pomysłów.",
+            "h) A ty co o tym myślisz?",
+            "i) Naprawdę? Przecież tam nie ma zasięgu!",
+            "j) Masz rację, o tym nie pomyślałam."
+          ],
+          "explanation": "Maksym najpierw grzecznie przyznaje, że Gdańsk mu nie przeszkadza, a potem dodaje „Ale…”. Zwrot „Nie mam nic przeciwko” łagodzi sprzeciw.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "i) Naprawdę? Przecież tam nie ma zasięgu!",
+          "options": [
+            "a) Dobrze, kupię bilety.",
+            "b) Jasne, napiszę do nich dziś wieczorem.",
+            "c) Dam ci znać, jak tylko odpiszą.",
+            "d) Przykro mi, ale nie mam czasu.",
+            "e) To zależy, ale sprawdzę dokładnie.",
+            "f) Nie mam nic przeciwko Gdańskowi.",
+            "g) Jeszcze nie, ale mam kilka pomysłów.",
+            "h) A ty co o tym myślisz?",
+            "i) Naprawdę? Przecież tam nie ma zasięgu!",
+            "j) Masz rację, o tym nie pomyślałam."
+          ],
+          "explanation": "Zuza jest zdziwiona, że koledzy wolą góry bez zasięgu. Maksym odpowiada „I właśnie o to chodzi”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "j) Masz rację, o tym nie pomyślałam.",
+          "options": [
+            "a) Dobrze, kupię bilety.",
+            "b) Jasne, napiszę do nich dziś wieczorem.",
+            "c) Dam ci znać, jak tylko odpiszą.",
+            "d) Przykro mi, ale nie mam czasu.",
+            "e) To zależy, ale sprawdzę dokładnie.",
+            "f) Nie mam nic przeciwko Gdańskowi.",
+            "g) Jeszcze nie, ale mam kilka pomysłów.",
+            "h) A ty co o tym myślisz?",
+            "i) Naprawdę? Przecież tam nie ma zasięgu!",
+            "j) Masz rację, o tym nie pomyślałam."
+          ],
+          "explanation": "Zuza przyznaje Maksymowi rację, bo słyszy argument o rozmowach bez internetu. Potem zadaje nowe pytanie o cenę.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "e) To zależy, ale sprawdzę dokładnie.",
+          "options": [
+            "a) Dobrze, kupię bilety.",
+            "b) Jasne, napiszę do nich dziś wieczorem.",
+            "c) Dam ci znać, jak tylko odpiszą.",
+            "d) Przykro mi, ale nie mam czasu.",
+            "e) To zależy, ale sprawdzę dokładnie.",
+            "f) Nie mam nic przeciwko Gdańskowi.",
+            "g) Jeszcze nie, ale mam kilka pomysłów.",
+            "h) A ty co o tym myślisz?",
+            "i) Naprawdę? Przecież tam nie ma zasięgu!",
+            "j) Masz rację, o tym nie pomyślałam."
+          ],
+          "explanation": "Zuza pyta, czy nocleg będzie droższy, a Maksym odpowiada „To zależy”, bo nie zna jeszcze ceny.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "b) Jasne, napiszę do nich dziś wieczorem.",
+          "options": [
+            "a) Dobrze, kupię bilety.",
+            "b) Jasne, napiszę do nich dziś wieczorem.",
+            "c) Dam ci znać, jak tylko odpiszą.",
+            "d) Przykro mi, ale nie mam czasu.",
+            "e) To zależy, ale sprawdzę dokładnie.",
+            "f) Nie mam nic przeciwko Gdańskowi.",
+            "g) Jeszcze nie, ale mam kilka pomysłów.",
+            "h) A ty co o tym myślisz?",
+            "i) Naprawdę? Przecież tam nie ma zasięgu!",
+            "j) Masz rację, o tym nie pomyślałam."
+          ],
+          "explanation": "Zuza prosi o sprawdzenie ceny dla grupy, więc Maksym zgadza się: „Jasne”. „Przykro mi” byłoby odmową.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "c) Dam ci znać, jak tylko odpiszą.",
+          "options": [
+            "a) Dobrze, kupię bilety.",
+            "b) Jasne, napiszę do nich dziś wieczorem.",
+            "c) Dam ci znać, jak tylko odpiszą.",
+            "d) Przykro mi, ale nie mam czasu.",
+            "e) To zależy, ale sprawdzę dokładnie.",
+            "f) Nie mam nic przeciwko Gdańskowi.",
+            "g) Jeszcze nie, ale mam kilka pomysłów.",
+            "h) A ty co o tym myślisz?",
+            "i) Naprawdę? Przecież tam nie ma zasięgu!",
+            "j) Masz rację, o tym nie pomyślałam."
+          ],
+          "explanation": "Maksym obiecuje przekazać odpowiedź ze schroniska, gdy tylko przyjdzie. „Dobrze, kupię bilety” nie pasuje, bo nikt jeszcze nic nie zarezerwował.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "Szanowni Państwo,\n\n{el2-1} w imieniu klasy mojego syna. W maju planujemy trzydniową wycieczkę w Bieszczady i chcielibyśmy {el2-2} u Państwa noclegi dla dwudziestu pięciu uczniów oraz dwóch opiekunów. Interesuje nas termin od piętnastego do siedemnastego maja.\n\nCzy mogliby Państwo {el2-3} , czy w schronisku są wolne miejsca w tym terminie? Chcielibyśmy także dowiedzieć się, {el2-4} kosztuje nocleg ze śniadaniem dla jednej osoby i czy dla grupy {el2-5} zniżka. Zależy nam {el2-6} tym, żeby schronisko znajdowało się blisko szlaku, ponieważ uczniowie bardzo lubią chodzić po górach. Proszę {el2-7} informację, czy w pobliżu działa sklep spożywczy, bo w górach telefon często nie ma zasięgu.\n\n{el2-8} dziękujemy za szybką odpowiedź. Jeżeli to możliwe, prosimy też {el2-9} przesłanie oferty {el2-10} e-mail.\n\nZ poważaniem\nOlena Kowalenko",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "a) Piszę",
+          "options": [
+            "a) Piszę",
+            "b) Odpisuję",
+            "c) Opisuję"
+          ],
+          "explanation": "W e-mailu zaczynamy od „Piszę w imieniu…”. „Odpisuję” znaczy odpowiadam na wiadomość, a „opisuję” ma inny sens.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "b) zarezerwować",
+          "options": [
+            "a) zatrzymać",
+            "b) zarezerwować",
+            "c) zawrzeć"
+          ],
+          "explanation": "Noclegi się „rezerwuje”. „Zatrzymać” i „zawrzeć” nie łączą się z tym rzeczownikiem.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "c) sprawdzić",
+          "options": [
+            "a) zapytać",
+            "b) pytać",
+            "c) sprawdzić"
+          ],
+          "explanation": "Prosimy Państwa, aby „sprawdzili”, czy są wolne miejsca. „Zapytać” i „pytać” oznaczają, że to my pytamy, a nie oni.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "a) ile",
+          "options": [
+            "a) ile",
+            "b) jak",
+            "c) czy"
+          ],
+          "explanation": "Pytamy o cenę: „ile kosztuje”. „Jak kosztuje” jest błędne, a „czy kosztuje” zmienia sens zdania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "c) przysługuje",
+          "options": [
+            "a) należy",
+            "b) ma",
+            "c) przysługuje"
+          ],
+          "explanation": "Zniżka dla grupy „przysługuje”, czyli grupa ma do niej prawo. „Należy zniżka” i „ma zniżka” są błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "b) na",
+          "options": [
+            "a) o",
+            "b) na",
+            "c) w"
+          ],
+          "explanation": "Stałe wyrażenie to „zależy nam na czymś”. „O” i „w” nie pasują do tego wyrażenia.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "a) o",
+          "options": [
+            "a) o",
+            "b) za",
+            "c) na"
+          ],
+          "explanation": "Mówimy „prosić o informację”. „Za” i „na” nie pasują do tego czasownika.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "b) Z góry",
+          "options": [
+            "a) Z początku",
+            "b) Z góry",
+            "c) Od góry"
+          ],
+          "explanation": "„Z góry dziękujemy” to stała formuła w liście, gdy dziękujemy przed odpowiedzią. Pozostałe wyrażenia mają inne znaczenie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "c) o",
+          "options": [
+            "a) za",
+            "b) na",
+            "c) o"
+          ],
+          "explanation": "Mówimy „prosić o coś”, tu o przesłanie oferty. „Za” i „na” nie pasują.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "a) przez",
+          "options": [
+            "a) przez",
+            "b) po",
+            "c) z"
+          ],
+          "explanation": "Ofertę można wysłać „przez e-mail”, czyli za pomocą poczty elektronicznej. „Po e-mail” i „z e-mail” są błędne.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
   ]
 }

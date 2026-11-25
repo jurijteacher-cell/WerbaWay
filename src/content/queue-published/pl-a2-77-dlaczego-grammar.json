@@ -378,6 +378,292 @@
           "explanation": "Powiedział, że… — nie „co”."
         }
       ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Tomek: Cześć, Kasiu! Czytałaś e-mail od pana Piotra o nowym biurze?\n\nKasia: Tak, czytałam. {el1-1} Dla mnie to bardzo daleko.\n\nTomek: {el1-2} Przecież w nowym biurze są dwie sale i duża kuchnia.\n\nKasia: Bo mieszkam na Podgórzu i dojazd zajmie mi prawie godzinę. {el1-3}\n\nTomek: {el1-4} Ale od maja możemy pracować z domu dwa dni w tygodniu.\n\nKasia: {el1-5} Czy każdy może wybrać dni?\n\nTomek: {el1-6} Trzeba tylko napisać do pani Agnieszki do piętnastego.\n\nKasia: {el1-7} Wybieram wtorek i czwartek.\n\nTomek: Dobrze. A w piątek jest zebranie o piętnastej.\n\nKasia: {el1-8} Dziękuję, że mi przypomniałeś.",
+      "bank": [
+        "a) Naprawdę?",
+        "b) Niestety nie mam czasu.",
+        "c) Nie jestem zadowolona.",
+        "d) Przykro mi, to nie moja wina.",
+        "e) Dlaczego tak mówisz?",
+        "f) To dobra wiadomość.",
+        "g) Rozumiem cię.",
+        "h) Tak, każdy.",
+        "i) Szkoda, że nikt nas nie zapytał.",
+        "j) Będę na pewno."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "c) Nie jestem zadowolona.",
+          "options": [
+            "a) Naprawdę?",
+            "b) Niestety nie mam czasu.",
+            "c) Nie jestem zadowolona.",
+            "d) Przykro mi, to nie moja wina.",
+            "e) Dlaczego tak mówisz?",
+            "f) To dobra wiadomość.",
+            "g) Rozumiem cię.",
+            "h) Tak, każdy.",
+            "i) Szkoda, że nikt nas nie zapytał.",
+            "j) Będę na pewno."
+          ],
+          "explanation": "Kasia mówi, że nowe biuro jest dla niej daleko, więc nie jest zadowolona. To pasuje do zdania „Dla mnie to bardzo daleko”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "e) Dlaczego tak mówisz?",
+          "options": [
+            "a) Naprawdę?",
+            "b) Niestety nie mam czasu.",
+            "c) Nie jestem zadowolona.",
+            "d) Przykro mi, to nie moja wina.",
+            "e) Dlaczego tak mówisz?",
+            "f) To dobra wiadomość.",
+            "g) Rozumiem cię.",
+            "h) Tak, każdy.",
+            "i) Szkoda, że nikt nas nie zapytał.",
+            "j) Będę na pewno."
+          ],
+          "explanation": "Tomek pyta o przyczynę, bo nie zgadza się z Kasią. Potem podaje argument: „Przecież…”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "i) Szkoda, że nikt nas nie zapytał.",
+          "options": [
+            "a) Naprawdę?",
+            "b) Niestety nie mam czasu.",
+            "c) Nie jestem zadowolona.",
+            "d) Przykro mi, to nie moja wina.",
+            "e) Dlaczego tak mówisz?",
+            "f) To dobra wiadomość.",
+            "g) Rozumiem cię.",
+            "h) Tak, każdy.",
+            "i) Szkoda, że nikt nas nie zapytał.",
+            "j) Będę na pewno."
+          ],
+          "explanation": "Kasia jest rozczarowana, bo decyzję podjęto bez niej. To reakcja na jej opis problemu z dojazdem.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "g) Rozumiem cię.",
+          "options": [
+            "a) Naprawdę?",
+            "b) Niestety nie mam czasu.",
+            "c) Nie jestem zadowolona.",
+            "d) Przykro mi, to nie moja wina.",
+            "e) Dlaczego tak mówisz?",
+            "f) To dobra wiadomość.",
+            "g) Rozumiem cię.",
+            "h) Tak, każdy.",
+            "i) Szkoda, że nikt nas nie zapytał.",
+            "j) Będę na pewno."
+          ],
+          "explanation": "Tomek okazuje zrozumienie i dodaje „ale” z dobrą informacją. „Rozumiem cię” pasuje do tej struktury.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "a) Naprawdę?",
+          "options": [
+            "a) Naprawdę?",
+            "b) Niestety nie mam czasu.",
+            "c) Nie jestem zadowolona.",
+            "d) Przykro mi, to nie moja wina.",
+            "e) Dlaczego tak mówisz?",
+            "f) To dobra wiadomość.",
+            "g) Rozumiem cię.",
+            "h) Tak, każdy.",
+            "i) Szkoda, że nikt nas nie zapytał.",
+            "j) Będę na pewno."
+          ],
+          "explanation": "Kasia jest zaskoczona informacją o pracy z domu. „Naprawdę?” wprowadza jej pytanie.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "h) Tak, każdy.",
+          "options": [
+            "a) Naprawdę?",
+            "b) Niestety nie mam czasu.",
+            "c) Nie jestem zadowolona.",
+            "d) Przykro mi, to nie moja wina.",
+            "e) Dlaczego tak mówisz?",
+            "f) To dobra wiadomość.",
+            "g) Rozumiem cię.",
+            "h) Tak, każdy.",
+            "i) Szkoda, że nikt nas nie zapytał.",
+            "j) Będę na pewno."
+          ],
+          "explanation": "Tomek odpowiada na pytanie Kasi: każdy może wybrać dni. Wystarczy krótkie „Tak, każdy”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "f) To dobra wiadomość.",
+          "options": [
+            "a) Naprawdę?",
+            "b) Niestety nie mam czasu.",
+            "c) Nie jestem zadowolona.",
+            "d) Przykro mi, to nie moja wina.",
+            "e) Dlaczego tak mówisz?",
+            "f) To dobra wiadomość.",
+            "g) Rozumiem cię.",
+            "h) Tak, każdy.",
+            "i) Szkoda, że nikt nas nie zapytał.",
+            "j) Będę na pewno."
+          ],
+          "explanation": "Kasia ocenia informację o pracy z domu i zaraz wybiera dni. „To dobra wiadomość” pasuje do jej decyzji.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "j) Będę na pewno.",
+          "options": [
+            "a) Naprawdę?",
+            "b) Niestety nie mam czasu.",
+            "c) Nie jestem zadowolona.",
+            "d) Przykro mi, to nie moja wina.",
+            "e) Dlaczego tak mówisz?",
+            "f) To dobra wiadomość.",
+            "g) Rozumiem cię.",
+            "h) Tak, każdy.",
+            "i) Szkoda, że nikt nas nie zapytał.",
+            "j) Będę na pewno."
+          ],
+          "explanation": "Kasia potwierdza, że przyjdzie na zebranie. „Będę na pewno” pasuje do przypomnienia o piątku.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "Szanowna Pani Agnieszko,\n\n{el2-1} poinformować, jakie dni wybrałam na pracę z domu. Pan Piotr pisał, {el2-2} możemy wybrać dwa dni w tygodniu. Chciałabym pracować we wtorek i w czwartek, {el2-3} wtedy mam dużo pracy przy komputerze. Mieszkam daleko od nowego biura, {el2-4} wolę jechać tylko trzy razy w tygodniu.\n\nChciałabym też zapytać {el2-5} jedną rzecz. Czy muszę napisać do pana Piotra, {el2-6} wystarczy e-mail do Pani? Bardzo proszę {el2-7} odpowiedź do piątku, {el2-8} mogła zaplanować kalendarz.\n\n{el2-9} dziękuję za pomoc.\n\n{el2-10},\nKasia Nowak",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "c) Piszę, aby",
+          "options": [
+            "a) Piszę, bo",
+            "b) Piszę, ponieważ",
+            "c) Piszę, aby"
+          ],
+          "explanation": "Po „aby” używamy bezokolicznika: „aby poinformować”. Po „bo” i „ponieważ” potrzebne jest całe zdanie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "a) że",
+          "options": [
+            "a) że",
+            "b) aby",
+            "c) jeśli"
+          ],
+          "explanation": "Po „pisał” przekazujemy treść informacji spójnikiem „że”. „Aby” oznacza cel, a „jeśli” warunek.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "b) ponieważ",
+          "options": [
+            "a) dlatego",
+            "b) ponieważ",
+            "c) więc"
+          ],
+          "explanation": "„Ponieważ” podaje przyczynę: pracuję w domu, bo wtedy mam dużo pracy. „Dlatego” i „więc” pokazują skutek.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "c) dlatego",
+          "options": [
+            "a) ponieważ",
+            "b) chociaż",
+            "c) dlatego"
+          ],
+          "explanation": "Zdanie podaje skutek: mieszkam daleko, „dlatego” wolę jeździć rzadziej. „Ponieważ” odwraca sens zdania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "a) o",
+          "options": [
+            "a) o",
+            "b) za",
+            "c) na"
+          ],
+          "explanation": "Mówimy „zapytać o coś”. Przyimki „za” i „na” nie pasują do czasownika „zapytać”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "b) czy",
+          "options": [
+            "a) że",
+            "b) czy",
+            "c) bo"
+          ],
+          "explanation": "W pytaniu z wyborem używamy „czy … czy …”: napisać do pana Piotra czy wystarczy e-mail.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "a) o",
+          "options": [
+            "a) o",
+            "b) na",
+            "c) za"
+          ],
+          "explanation": "Mówimy „prosić o odpowiedź”. Inne przyimki nie pasują do czasownika „prosić”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "c) żebym",
+          "options": [
+            "a) ponieważ",
+            "b) dlatego",
+            "c) żebym"
+          ],
+          "explanation": "Po „żebym” (cel) następuje „mogła”. „Ponieważ” i „dlatego” nie pasują do konstrukcji celu.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "b) Z góry",
+          "options": [
+            "a) Od góry",
+            "b) Z góry",
+            "c) W górze"
+          ],
+          "explanation": "„Z góry dziękuję za pomoc” to stała formuła w e-mailu. Pozostałe wyrażenia nie mają tego znaczenia.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "b) Z poważaniem",
+          "options": [
+            "a) Z uczuciem",
+            "b) Z poważaniem",
+            "c) Z przyjemnością"
+          ],
+          "explanation": "„Z poważaniem” to typowe zakończenie półoficjalnego e-maila. Pozostałe formuły nie pasują do listu służbowego.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
   ]
 }

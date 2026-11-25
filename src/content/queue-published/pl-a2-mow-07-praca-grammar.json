@@ -478,6 +478,292 @@
           "grammar_point": "kalki-uk"
         }
       ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Agnieszka: Studio Graficzne, Agnieszka Sowa, słucham.\n\nOlena: Dzień dobry, mówi Olena Kovalenko. {el1-1}\n\nAgnieszka: Dzień dobry, pani Oleno. W czym mogę pomóc?\n\nOlena: {el1-2} W piątek muszę niestety pracować do osiemnastej.\n\nAgnieszka: {el1-3} Zaraz sprawdzę kalendarz. W poniedziałek o dziesiątej jestem wolna. {el1-4}\n\nOlena: {el1-5} Bardzo dziękuję.\n\nAgnieszka: Proszę przynieść trzy swoje projekty.\n\nOlena: Oczywiście. {el1-6}\n\nAgnieszka: Nie trzeba, CV już mamy.\n\nOlena: {el1-7} Dziękuję za pomoc.\n\nAgnieszka: {el1-8} Do usłyszenia w poniedziałek!",
+      "bank": [
+        "a) Czy to pani odpowiada?",
+        "b) Dzwonię w sprawie piątkowego spotkania.",
+        "c) Nie ma za co.",
+        "d) Czy mam przynieść też CV?",
+        "e) Niestety nie mogę przyjść w poniedziałek.",
+        "f) Proszę chwilę poczekać.",
+        "g) Dobrze, to wszystko jasne.",
+        "h) Czy można przesunąć spotkanie na poniedziałek?",
+        "i) Mam duże doświadczenie w tej pracy.",
+        "j) Tak, to mi pasuje."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "b) Dzwonię w sprawie piątkowego spotkania.",
+          "options": [
+            "a) Czy to pani odpowiada?",
+            "b) Dzwonię w sprawie piątkowego spotkania.",
+            "c) Nie ma za co.",
+            "d) Czy mam przynieść też CV?",
+            "e) Niestety nie mogę przyjść w poniedziałek.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, to wszystko jasne.",
+            "h) Czy można przesunąć spotkanie na poniedziałek?",
+            "i) Mam duże doświadczenie w tej pracy.",
+            "j) Tak, to mi pasuje."
+          ],
+          "explanation": "Olena podaje powód telefonu, a Agnieszka pyta, w czym może pomóc. „Niestety nie mogę przyjść w poniedziałek” przeczy temu, o co Olena prosi dalej.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "h) Czy można przesunąć spotkanie na poniedziałek?",
+          "options": [
+            "a) Czy to pani odpowiada?",
+            "b) Dzwonię w sprawie piątkowego spotkania.",
+            "c) Nie ma za co.",
+            "d) Czy mam przynieść też CV?",
+            "e) Niestety nie mogę przyjść w poniedziałek.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, to wszystko jasne.",
+            "h) Czy można przesunąć spotkanie na poniedziałek?",
+            "i) Mam duże doświadczenie w tej pracy.",
+            "j) Tak, to mi pasuje."
+          ],
+          "explanation": "Olena nie może przyjść w piątek, więc prosi o nowy termin. Dalej tłumaczy powód: musi pracować do osiemnastej.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "f) Proszę chwilę poczekać.",
+          "options": [
+            "a) Czy to pani odpowiada?",
+            "b) Dzwonię w sprawie piątkowego spotkania.",
+            "c) Nie ma za co.",
+            "d) Czy mam przynieść też CV?",
+            "e) Niestety nie mogę przyjść w poniedziałek.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, to wszystko jasne.",
+            "h) Czy można przesunąć spotkanie na poniedziałek?",
+            "i) Mam duże doświadczenie w tej pracy.",
+            "j) Tak, to mi pasuje."
+          ],
+          "explanation": "Agnieszka prosi o chwilę cierpliwości, bo sprawdza kalendarz. Dalsze zdanie „Zaraz sprawdzę kalendarz” potwierdza ten sens.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "a) Czy to pani odpowiada?",
+          "options": [
+            "a) Czy to pani odpowiada?",
+            "b) Dzwonię w sprawie piątkowego spotkania.",
+            "c) Nie ma za co.",
+            "d) Czy mam przynieść też CV?",
+            "e) Niestety nie mogę przyjść w poniedziałek.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, to wszystko jasne.",
+            "h) Czy można przesunąć spotkanie na poniedziałek?",
+            "i) Mam duże doświadczenie w tej pracy.",
+            "j) Tak, to mi pasuje."
+          ],
+          "explanation": "Agnieszka proponuje poniedziałek i upewnia się, czy termin jest dobry dla Oleny. Odpowiedź „Tak, to mi pasuje” następuje w kolejnej wypowiedzi.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "j) Tak, to mi pasuje.",
+          "options": [
+            "a) Czy to pani odpowiada?",
+            "b) Dzwonię w sprawie piątkowego spotkania.",
+            "c) Nie ma za co.",
+            "d) Czy mam przynieść też CV?",
+            "e) Niestety nie mogę przyjść w poniedziałek.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, to wszystko jasne.",
+            "h) Czy można przesunąć spotkanie na poniedziałek?",
+            "i) Mam duże doświadczenie w tej pracy.",
+            "j) Tak, to mi pasuje."
+          ],
+          "explanation": "Olena odpowiada na pytanie o termin. „Mam duże doświadczenie…” nie jest odpowiedzią na pytanie, czy poniedziałek jej odpowiada.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "d) Czy mam przynieść też CV?",
+          "options": [
+            "a) Czy to pani odpowiada?",
+            "b) Dzwonię w sprawie piątkowego spotkania.",
+            "c) Nie ma za co.",
+            "d) Czy mam przynieść też CV?",
+            "e) Niestety nie mogę przyjść w poniedziałek.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, to wszystko jasne.",
+            "h) Czy można przesunąć spotkanie na poniedziałek?",
+            "i) Mam duże doświadczenie w tej pracy.",
+            "j) Tak, to mi pasuje."
+          ],
+          "explanation": "Olena dopytuje o dokumenty, które ma przynieść. Agnieszka odpowiada „Nie trzeba, CV już mamy”, więc pytanie dotyczy właśnie CV.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "g) Dobrze, to wszystko jasne.",
+          "options": [
+            "a) Czy to pani odpowiada?",
+            "b) Dzwonię w sprawie piątkowego spotkania.",
+            "c) Nie ma za co.",
+            "d) Czy mam przynieść też CV?",
+            "e) Niestety nie mogę przyjść w poniedziałek.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, to wszystko jasne.",
+            "h) Czy można przesunąć spotkanie na poniedziałek?",
+            "i) Mam duże doświadczenie w tej pracy.",
+            "j) Tak, to mi pasuje."
+          ],
+          "explanation": "Po wyjaśnieniu Agnieszki Olena potwierdza, że wszystko rozumie, i dziękuje. Fragment „Tak, to mi pasuje” odpowiada na pytanie o termin, a nie na informację o CV.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "c) Nie ma za co.",
+          "options": [
+            "a) Czy to pani odpowiada?",
+            "b) Dzwonię w sprawie piątkowego spotkania.",
+            "c) Nie ma za co.",
+            "d) Czy mam przynieść też CV?",
+            "e) Niestety nie mogę przyjść w poniedziałek.",
+            "f) Proszę chwilę poczekać.",
+            "g) Dobrze, to wszystko jasne.",
+            "h) Czy można przesunąć spotkanie na poniedziałek?",
+            "i) Mam duże doświadczenie w tej pracy.",
+            "j) Tak, to mi pasuje."
+          ],
+          "explanation": "Na podziękowanie odpowiadamy grzecznie „Nie ma za co”, po czym Agnieszka żegna się i wraca do terminu spotkania.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "{el2-1} Pani Agnieszko,\n\nDziękuję {el2-2} zaproszenie na rozmowę kwalifikacyjną. Bardzo mi przykro, że spóźniłam się {el2-3} dziesięć minut. {el2-4} Pani prośbą przesyłam w załączniku trzy swoje projekty {el2-5} PDF. Pracowałam nad nimi przez dwa lata w agencji reklamowej we Lwowie. Jestem bardzo {el2-6} pracą w Państwa studiu, bo grafika to moja pasja. Chciałabym zapytać, {el2-7} mogę spodziewać się odpowiedzi. Jeśli ma Pani pytania, proszę {el2-8} kontakt. Mam nadzieję, {el2-9} wkrótce się zobaczymy.\n\n{el2-10} poważaniem\nOlena Kovalenko",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "c) Szanowna",
+          "options": [
+            "a) Szanowny",
+            "b) Szanowni",
+            "c) Szanowna"
+          ],
+          "explanation": "Zwracamy się do kobiety, więc używamy formy żeńskiej „Szanowna Pani”. „Szanowny” i „Szanowni” są formami męskimi lub liczby mnogiej.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "a) za",
+          "options": [
+            "a) za",
+            "b) o",
+            "c) na"
+          ],
+          "explanation": "Czasownik „dziękować” łączy się z „za”: „dziękuję za zaproszenie”. „O” i „na” są niepoprawne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "a) o",
+          "options": [
+            "a) o",
+            "b) na",
+            "c) przez"
+          ],
+          "explanation": "Mówimy „spóźnić się o dziesięć minut”. „Na” i „przez” nie pasują do tego czasownika.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "b) Zgodnie z",
+          "options": [
+            "a) Razem z",
+            "b) Zgodnie z",
+            "c) Dzięki z"
+          ],
+          "explanation": "Formuła „Zgodnie z Pani prośbą” oznacza „tak, jak Pani prosiła”. „Razem z” i „Dzięki z” mają inne znaczenie albo są błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "b) w formacie",
+          "options": [
+            "a) na formacie",
+            "b) w formacie",
+            "c) z formatem"
+          ],
+          "explanation": "Piszemy „projekty w formacie PDF”. Pozostałe wyrażenia nie tworzą poprawnej kolokacji.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "a) zainteresowana",
+          "options": [
+            "a) zainteresowana",
+            "b) ciekawa",
+            "c) interesująca"
+          ],
+          "explanation": "Mówimy „być zainteresowanym czymś”, czyli pracą w studiu. „Ciekawa” i „interesująca” nie łączą się z narzędnikiem.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "c) kiedy",
+          "options": [
+            "a) gdzie",
+            "b) dlaczego",
+            "c) kiedy"
+          ],
+          "explanation": "Pytamy o czas odpowiedzi, więc potrzebne jest „kiedy”. „Gdzie” i „dlaczego” nie pasują do sensu zdania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "c) o",
+          "options": [
+            "a) na",
+            "b) w",
+            "c) o"
+          ],
+          "explanation": "Stały zwrot to „prosić o kontakt”. „Na” i „w” są błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "b) że",
+          "options": [
+            "a) aby",
+            "b) że",
+            "c) czy"
+          ],
+          "explanation": "Po „Mam nadzieję” używamy „że”. „Aby” i „czy” nie tworzą poprawnego zdania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "a) Z",
+          "options": [
+            "a) Z",
+            "b) Na",
+            "c) Do"
+          ],
+          "explanation": "Zakończenie oficjalnego listu to „Z poważaniem”. Przyimki „na” i „do” nie tworzą tej formuły.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
   ]
 }

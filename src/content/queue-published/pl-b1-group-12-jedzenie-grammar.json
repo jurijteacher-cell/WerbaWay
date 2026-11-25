@@ -686,6 +686,292 @@
           "explanation": "Укр. «мене нудить» → niedobrze mi. „Nudzi mnie” = мені нудно (з чимось)."
         }
       ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Anna: Halo, słucham.\n\nOlena: Dzień dobry, tu Olena, mama Maksyma. {el1-1}\n\nAnna: {el1-2}\n\nOlena: Chciałabym zaprosić Kubę w niedzielę na obiad. {el1-3}\n\nAnna: {el1-4}\n\nOlena: {el1-5} Może ma jeszcze jakieś alergie?\n\nAnna: {el1-6} Alergii nie ma, ale nie lubi bardzo ostrych potraw.\n\nOlena: Dobrze, zapamiętam. {el1-7}\n\nAnna: {el1-8}\n\nOlena: Do zobaczenia w niedzielę!\n\nAnna: Do widzenia.",
+      "bank": [
+        "a) Niestety Kuba jest chory.",
+        "b) Czy jest coś, czego on nie je?",
+        "c) Zapraszam o dwunastej.",
+        "d) Oczywiście, słucham panią.",
+        "e) Tak, od roku nie je mięsa.",
+        "f) Czy mogę zająć pani chwilę?",
+        "g) Proszę zadzwonić jutro rano.",
+        "h) Bardzo pani dziękuję za zaproszenie.",
+        "i) W takim razie przygotuję coś wegetariańskiego.",
+        "j) Kuba na pewno się ucieszy."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "f) Czy mogę zająć pani chwilę?",
+          "options": [
+            "a) Niestety Kuba jest chory.",
+            "b) Czy jest coś, czego on nie je?",
+            "c) Zapraszam o dwunastej.",
+            "d) Oczywiście, słucham panią.",
+            "e) Tak, od roku nie je mięsa.",
+            "f) Czy mogę zająć pani chwilę?",
+            "g) Proszę zadzwonić jutro rano.",
+            "h) Bardzo pani dziękuję za zaproszenie.",
+            "i) W takim razie przygotuję coś wegetariańskiego.",
+            "j) Kuba na pewno się ucieszy."
+          ],
+          "explanation": "Olena dzwoni do obcej osoby, więc na początku grzecznie pyta o chwilę rozmowy. Anna odpowiada na to pytanie.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "d) Oczywiście, słucham panią.",
+          "options": [
+            "a) Niestety Kuba jest chory.",
+            "b) Czy jest coś, czego on nie je?",
+            "c) Zapraszam o dwunastej.",
+            "d) Oczywiście, słucham panią.",
+            "e) Tak, od roku nie je mięsa.",
+            "f) Czy mogę zająć pani chwilę?",
+            "g) Proszę zadzwonić jutro rano.",
+            "h) Bardzo pani dziękuję za zaproszenie.",
+            "i) W takim razie przygotuję coś wegetariańskiego.",
+            "j) Kuba na pewno się ucieszy."
+          ],
+          "explanation": "To odpowiedź na pytanie o chwilę: Anna zgadza się wysłuchać. „Proszę zadzwonić jutro rano” zablokowałoby dalszą rozmowę.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "b) Czy jest coś, czego on nie je?",
+          "options": [
+            "a) Niestety Kuba jest chory.",
+            "b) Czy jest coś, czego on nie je?",
+            "c) Zapraszam o dwunastej.",
+            "d) Oczywiście, słucham panią.",
+            "e) Tak, od roku nie je mięsa.",
+            "f) Czy mogę zająć pani chwilę?",
+            "g) Proszę zadzwonić jutro rano.",
+            "h) Bardzo pani dziękuję za zaproszenie.",
+            "i) W takim razie przygotuję coś wegetariańskiego.",
+            "j) Kuba na pewno się ucieszy."
+          ],
+          "explanation": "Olena zaprasza chłopca na obiad i od razu pyta o jego dietę. Anna odpowiada na to pytanie.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "e) Tak, od roku nie je mięsa.",
+          "options": [
+            "a) Niestety Kuba jest chory.",
+            "b) Czy jest coś, czego on nie je?",
+            "c) Zapraszam o dwunastej.",
+            "d) Oczywiście, słucham panią.",
+            "e) Tak, od roku nie je mięsa.",
+            "f) Czy mogę zająć pani chwilę?",
+            "g) Proszę zadzwonić jutro rano.",
+            "h) Bardzo pani dziękuję za zaproszenie.",
+            "i) W takim razie przygotuję coś wegetariańskiego.",
+            "j) Kuba na pewno się ucieszy."
+          ],
+          "explanation": "Odpowiedź na pytanie o to, czego Kuba nie je. Informacja o mięsie tłumaczy późniejsze słowa Oleny.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "i) W takim razie przygotuję coś wegetariańskiego.",
+          "options": [
+            "a) Niestety Kuba jest chory.",
+            "b) Czy jest coś, czego on nie je?",
+            "c) Zapraszam o dwunastej.",
+            "d) Oczywiście, słucham panią.",
+            "e) Tak, od roku nie je mięsa.",
+            "f) Czy mogę zająć pani chwilę?",
+            "g) Proszę zadzwonić jutro rano.",
+            "h) Bardzo pani dziękuję za zaproszenie.",
+            "i) W takim razie przygotuję coś wegetariańskiego.",
+            "j) Kuba na pewno się ucieszy."
+          ],
+          "explanation": "Olena reaguje na informację o diecie i mówi, co zrobi. „W takim razie” wskazuje wniosek z wypowiedzi Anny.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "h) Bardzo pani dziękuję za zaproszenie.",
+          "options": [
+            "a) Niestety Kuba jest chory.",
+            "b) Czy jest coś, czego on nie je?",
+            "c) Zapraszam o dwunastej.",
+            "d) Oczywiście, słucham panią.",
+            "e) Tak, od roku nie je mięsa.",
+            "f) Czy mogę zająć pani chwilę?",
+            "g) Proszę zadzwonić jutro rano.",
+            "h) Bardzo pani dziękuję za zaproszenie.",
+            "i) W takim razie przygotuję coś wegetariańskiego.",
+            "j) Kuba na pewno się ucieszy."
+          ],
+          "explanation": "Anna dziękuje za zaproszenie, a potem odpowiada na pytanie o alergie. To grzeczna reakcja na zaproszenie.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "c) Zapraszam o dwunastej.",
+          "options": [
+            "a) Niestety Kuba jest chory.",
+            "b) Czy jest coś, czego on nie je?",
+            "c) Zapraszam o dwunastej.",
+            "d) Oczywiście, słucham panią.",
+            "e) Tak, od roku nie je mięsa.",
+            "f) Czy mogę zająć pani chwilę?",
+            "g) Proszę zadzwonić jutro rano.",
+            "h) Bardzo pani dziękuję za zaproszenie.",
+            "i) W takim razie przygotuję coś wegetariańskiego.",
+            "j) Kuba na pewno się ucieszy."
+          ],
+          "explanation": "Olena kończy ustalenia i podaje godzinę zaproszenia. To praktyczna informacja o obiedzie.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "j) Kuba na pewno się ucieszy.",
+          "options": [
+            "a) Niestety Kuba jest chory.",
+            "b) Czy jest coś, czego on nie je?",
+            "c) Zapraszam o dwunastej.",
+            "d) Oczywiście, słucham panią.",
+            "e) Tak, od roku nie je mięsa.",
+            "f) Czy mogę zająć pani chwilę?",
+            "g) Proszę zadzwonić jutro rano.",
+            "h) Bardzo pani dziękuję za zaproszenie.",
+            "i) W takim razie przygotuję coś wegetariańskiego.",
+            "j) Kuba na pewno się ucieszy."
+          ],
+          "explanation": "Anna jest zadowolona z zaproszenia i mówi o reakcji syna. „Niestety Kuba jest chory” przeczy dalszej rozmowie.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "Szanowni Państwo,\n\nPiszę, {el2-1} złożyć zamówienie na obiad dla sześciu osób w niedzielę 16 listopada. Wśród gości będzie wegetarianin, dlatego proszę {el2-2} przygotowanie osobnego dania bez mięsa. Jedna z osób musi uważać {el2-3} sól i tłuszcz, więc chciałbym zapytać, czy można zamówić zupę {el2-4} dodatku soli. Czy możliwa jest dostawa {el2-5} biura? Pracuję w centrum i nie mogę wyjść w porze obiadowej. Zależy mi {el2-6} tym, aby jedzenie było świeże i ciepłe, ponieważ zamawiam je dla babci, która nie lubi odgrzewanych potraw. Zapłacę {el2-7} odbiorze, gotówką lub kartą. Jeśli któreś z dań nie będzie dostępne, proszę o informację, jakie danie mogą Państwo zaproponować w zamian. Proszę o potwierdzenie zamówienia {el2-8} wiadomość e-mail.\n\n{el2-9} dziękuję za pomoc.\n\n{el2-10} poważaniem\n\nTomasz Kowal",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "a) aby",
+          "options": [
+            "a) aby",
+            "b) ale",
+            "c) lub"
+          ],
+          "explanation": "„Piszę, aby złożyć zamówienie” wyraża cel listu. „Ale” i „lub” nie tworzą takiego zdania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "c) o",
+          "options": [
+            "a) na",
+            "b) za",
+            "c) o"
+          ],
+          "explanation": "Prosimy „o” coś: „proszę o przygotowanie”. „Na” i „za” nie pasują do czasownika „prosić”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "b) na",
+          "options": [
+            "a) z",
+            "b) na",
+            "c) do"
+          ],
+          "explanation": "Mówimy „uważać na sól”. „Z” i „do” nie tworzą poprawnej frazy.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "b) bez",
+          "options": [
+            "a) z",
+            "b) bez",
+            "c) dla"
+          ],
+          "explanation": "„Bez dodatku soli” znaczy, że soli nie ma. Pozostałe przyimki zmieniają sens albo wymagają innej formy.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "a) do",
+          "options": [
+            "a) do",
+            "b) na",
+            "c) w"
+          ],
+          "explanation": "Dostawa jest „do biura”, czyli do miejsca docelowego. „Na biura” i „w biura” są niepoprawne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "b) na",
+          "options": [
+            "a) w",
+            "b) na",
+            "c) o"
+          ],
+          "explanation": "Mówimy „zależy mi na czymś”. „W” i „o” nie pasują do tego wyrażenia.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "c) przy",
+          "options": [
+            "a) po",
+            "b) na",
+            "c) przy"
+          ],
+          "explanation": "Płacimy „przy odbiorze”, czyli w momencie odbioru. „Na odbiorze” i „po odbiorze” nie pasują do tej formuły.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "a) przez",
+          "options": [
+            "a) przez",
+            "b) na",
+            "c) w"
+          ],
+          "explanation": "Potwierdzenie wysyłamy „przez wiadomość e-mail”. „Na wiadomość” i „w wiadomość” brzmią błędnie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "b) Z góry",
+          "options": [
+            "a) Z dołu",
+            "b) Z góry",
+            "c) Z boku"
+          ],
+          "explanation": "„Z góry dziękuję” to stała formuła, gdy prosimy o pomoc. Pozostałe wyrażenia nie są formułami listu.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "c) Z poważaniem",
+          "options": [
+            "a) Za poważaniem",
+            "b) W poważaniu",
+            "c) Z poważaniem"
+          ],
+          "explanation": "List oficjalny kończymy formułą „Z poważaniem”. Pozostałe warianty są błędne.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
   ]
 }

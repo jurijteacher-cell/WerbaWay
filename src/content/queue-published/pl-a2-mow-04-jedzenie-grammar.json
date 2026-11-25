@@ -8,55 +8,552 @@
     {
       "block_id": "g1",
       "part": 1,
-      "covers_slides": ["s2", "s3", "s8"],
+      "covers_slides": [
+        "s2",
+        "s3",
+        "s8"
+      ],
       "exercise_type": "fill-in-blank",
       "title": "1. Poproszę… — biernik",
       "instruction": "Wybierz poprawną odpowiedź.",
       "items": [
-        {"id": "g1-1", "text": "Poproszę ___ pomidorową.", "options": ["zupa", "zupę"], "answer": "zupę", "grammar_point": "biernik-zamawianie"},
-        {"id": "g1-2", "text": "Poproszę jeszcze jedną ___.", "options": ["herbata", "herbatę", "herbaty"], "answer": "herbatę", "grammar_point": "biernik-zamawianie"},
-        {"id": "g1-3", "text": "Na deser biorę ___.", "options": ["szarlotka", "szarlotkę"], "answer": "szarlotkę", "grammar_point": "biernik-zamawianie"},
-        {"id": "g1-4", "text": "Zamawiam sałatkę i ___ pomarańczowy.", "options": ["sok", "soku"], "answer": "sok", "grammar_point": "biernik-zamawianie", "explanation": "Sok to rodzaj męski — w bierniku bez zmian."},
-        {"id": "g1-5", "text": "Poproszę kawę ___.", "options": ["czarna", "czarną"], "answer": "czarną", "grammar_point": "biernik-zamawianie", "explanation": "Przymiotnik też się zmienia: czarna kawa → czarną kawę."},
-        {"id": "g1-6", "text": "Na obiad zamówimy ___ ziemniaczane.", "options": ["placki", "placków"], "answer": "placki", "grammar_point": "biernik-zamawianie", "explanation": "Liczba mnoga rzeczy — w bierniku bez zmian."},
-        {"id": "g1-7", "text": "Dzień dobry, poproszę ___ z różą.", "options": ["pączek", "pączka"], "answer": "pączka", "grammar_point": "biernik-zamawianie", "explanation": "Wiele nazw jedzenia rodzaju męskiego ma w bierniku -a: pączka, banana, ogórka."},
-        {"id": "g1-8", "text": "Poproszę ___ i masło.", "options": ["chleb", "chleba"], "answer": "chleb", "grammar_point": "biernik-zamawianie", "explanation": "Chleb, ser, sok — w bierniku bez zmian. Chleba byłoby po trochę albo kawałek."}
+        {
+          "id": "g1-1",
+          "text": "Poproszę ___ pomidorową.",
+          "options": [
+            "zupa",
+            "zupę"
+          ],
+          "answer": "zupę",
+          "grammar_point": "biernik-zamawianie"
+        },
+        {
+          "id": "g1-2",
+          "text": "Poproszę jeszcze jedną ___.",
+          "options": [
+            "herbata",
+            "herbatę",
+            "herbaty"
+          ],
+          "answer": "herbatę",
+          "grammar_point": "biernik-zamawianie"
+        },
+        {
+          "id": "g1-3",
+          "text": "Na deser biorę ___.",
+          "options": [
+            "szarlotka",
+            "szarlotkę"
+          ],
+          "answer": "szarlotkę",
+          "grammar_point": "biernik-zamawianie"
+        },
+        {
+          "id": "g1-4",
+          "text": "Zamawiam sałatkę i ___ pomarańczowy.",
+          "options": [
+            "sok",
+            "soku"
+          ],
+          "answer": "sok",
+          "grammar_point": "biernik-zamawianie",
+          "explanation": "Sok to rodzaj męski — w bierniku bez zmian."
+        },
+        {
+          "id": "g1-5",
+          "text": "Poproszę kawę ___.",
+          "options": [
+            "czarna",
+            "czarną"
+          ],
+          "answer": "czarną",
+          "grammar_point": "biernik-zamawianie",
+          "explanation": "Przymiotnik też się zmienia: czarna kawa → czarną kawę."
+        },
+        {
+          "id": "g1-6",
+          "text": "Na obiad zamówimy ___ ziemniaczane.",
+          "options": [
+            "placki",
+            "placków"
+          ],
+          "answer": "placki",
+          "grammar_point": "biernik-zamawianie",
+          "explanation": "Liczba mnoga rzeczy — w bierniku bez zmian."
+        },
+        {
+          "id": "g1-7",
+          "text": "Dzień dobry, poproszę ___ z różą.",
+          "options": [
+            "pączek",
+            "pączka"
+          ],
+          "answer": "pączka",
+          "grammar_point": "biernik-zamawianie",
+          "explanation": "Wiele nazw jedzenia rodzaju męskiego ma w bierniku -a: pączka, banana, ogórka."
+        },
+        {
+          "id": "g1-8",
+          "text": "Poproszę ___ i masło.",
+          "options": [
+            "chleb",
+            "chleba"
+          ],
+          "answer": "chleb",
+          "grammar_point": "biernik-zamawianie",
+          "explanation": "Chleb, ser, sok — w bierniku bez zmian. Chleba byłoby po trochę albo kawałek."
+        }
       ]
     },
     {
       "block_id": "g2",
       "part": 1,
-      "covers_slides": ["s4", "s5"],
+      "covers_slides": [
+        "s4",
+        "s5"
+      ],
       "exercise_type": "fill-in-blank",
       "title": "2. Ile? i nie — dopełniacz",
       "instruction": "Wpisz słowo z nawiasu w poprawnej formie.",
       "items": [
-        {"id": "g2-1", "text": "Poproszę szklankę ___ (woda) bez gazu.", "answer": "wody", "grammar_point": "ilosc-dopelniacz"},
-        {"id": "g2-2", "text": "Do ciasta dodaj trochę ___ (cukier).", "answer": "cukru", "grammar_point": "ilosc-dopelniacz"},
-        {"id": "g2-3", "text": "Kupiłam na targu kilo ___ (jabłka).", "answer": "jabłek", "grammar_point": "ilosc-dopelniacz"},
-        {"id": "g2-4", "text": "Zjem jeszcze kawałek ___ (sernik).", "answer": "sernika", "grammar_point": "ilosc-dopelniacz"},
-        {"id": "g2-5", "text": "Herbata bez ___ (mleko), proszę.", "answer": "mleka", "grammar_point": "ilosc-dopelniacz"},
-        {"id": "g2-6", "text": "Mój mąż nie je ___ (ryba).", "answer": "ryby", "grammar_point": "przeczenie-dopelniacz"},
-        {"id": "g2-7", "text": "Przykro mi, nie ma już ___ (żurek).", "answer": "żurku", "grammar_point": "przeczenie-dopelniacz"},
-        {"id": "g2-8", "text": "Dziękuję, nie piję ___ (alkohol).", "answer": "alkoholu", "grammar_point": "przeczenie-dopelniacz"}
+        {
+          "id": "g2-1",
+          "text": "Poproszę szklankę ___ (woda) bez gazu.",
+          "answer": "wody",
+          "grammar_point": "ilosc-dopelniacz"
+        },
+        {
+          "id": "g2-2",
+          "text": "Do ciasta dodaj trochę ___ (cukier).",
+          "answer": "cukru",
+          "grammar_point": "ilosc-dopelniacz"
+        },
+        {
+          "id": "g2-3",
+          "text": "Kupiłam na targu kilo ___ (jabłka).",
+          "answer": "jabłek",
+          "grammar_point": "ilosc-dopelniacz"
+        },
+        {
+          "id": "g2-4",
+          "text": "Zjem jeszcze kawałek ___ (sernik).",
+          "answer": "sernika",
+          "grammar_point": "ilosc-dopelniacz"
+        },
+        {
+          "id": "g2-5",
+          "text": "Herbata bez ___ (mleko), proszę.",
+          "answer": "mleka",
+          "grammar_point": "ilosc-dopelniacz"
+        },
+        {
+          "id": "g2-6",
+          "text": "Mój mąż nie je ___ (ryba).",
+          "answer": "ryby",
+          "grammar_point": "przeczenie-dopelniacz"
+        },
+        {
+          "id": "g2-7",
+          "text": "Przykro mi, nie ma już ___ (żurek).",
+          "answer": "żurku",
+          "grammar_point": "przeczenie-dopelniacz"
+        },
+        {
+          "id": "g2-8",
+          "text": "Dziękuję, nie piję ___ (alkohol).",
+          "answer": "alkoholu",
+          "grammar_point": "przeczenie-dopelniacz"
+        }
       ]
     },
     {
       "block_id": "g3",
       "part": 1,
-      "covers_slides": ["s6", "s7", "s9", "s10"],
+      "covers_slides": [
+        "s6",
+        "s7",
+        "s9",
+        "s10"
+      ],
       "exercise_type": "fill-in-blank",
       "title": "3. Smakuje, do picia i pułapki z ukraińskiego",
       "instruction": "Wybierz poprawną odpowiedź.",
       "items": [
-        {"id": "g3-1", "text": "Czy ___ ci ta zupa?", "options": ["smakuje", "smakują"], "answer": "smakuje", "grammar_point": "celownik-bezosobowe", "explanation": "Zupa — jedna rzecz, więc smakuje."},
-        {"id": "g3-2", "text": "Dzieciom bardzo ___ naleśniki.", "options": ["smakuje", "smakują"], "answer": "smakują", "grammar_point": "celownik-bezosobowe", "explanation": "Czasownik zgadza się z jedzeniem: naleśniki smakują."},
-        {"id": "g3-3", "text": "Mamo, czy ___ smakuje sałatka?", "options": ["ty", "cię", "ci"], "answer": "ci", "grammar_point": "celownik-bezosobowe", "explanation": "Komu smakuje? — tobie, krótko: ci."},
-        {"id": "g3-4", "text": "Coś ___ picia?", "options": ["do", "dla", "na"], "answer": "do", "grammar_point": "dla-do-na"},
-        {"id": "g3-5", "text": "Co zwykle jesz ___ śniadanie?", "options": ["do", "dla", "na"], "answer": "na", "grammar_point": "dla-do-na"},
-        {"id": "g3-6", "text": "Ta zupa jest pyszna, bardzo mi ___.", "options": ["się podoba", "smakuje"], "answer": "smakuje", "grammar_point": "kalki-uk", "explanation": "O jedzeniu mówimy smakować. Podobać się — o tym, co widzisz."},
-        {"id": "g3-7", "text": "Marchewka, kapusta i cebula to ___.", "options": ["owoce", "warzywa"], "answer": "warzywa", "grammar_point": "kalki-uk", "explanation": "Warzywa to овочі, owoce to фрукти."},
-        {"id": "g3-8", "text": "Przepraszam, gdzie jest nasz ___? Czekamy na rachunek.", "options": ["oficjant", "kelner"], "answer": "kelner", "grammar_point": "kalki-uk", "explanation": "Po polsku: kelner, kelnerka."}
+        {
+          "id": "g3-1",
+          "text": "Czy ___ ci ta zupa?",
+          "options": [
+            "smakuje",
+            "smakują"
+          ],
+          "answer": "smakuje",
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Zupa — jedna rzecz, więc smakuje."
+        },
+        {
+          "id": "g3-2",
+          "text": "Dzieciom bardzo ___ naleśniki.",
+          "options": [
+            "smakuje",
+            "smakują"
+          ],
+          "answer": "smakują",
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Czasownik zgadza się z jedzeniem: naleśniki smakują."
+        },
+        {
+          "id": "g3-3",
+          "text": "Mamo, czy ___ smakuje sałatka?",
+          "options": [
+            "ty",
+            "cię",
+            "ci"
+          ],
+          "answer": "ci",
+          "grammar_point": "celownik-bezosobowe",
+          "explanation": "Komu smakuje? — tobie, krótko: ci."
+        },
+        {
+          "id": "g3-4",
+          "text": "Coś ___ picia?",
+          "options": [
+            "do",
+            "dla",
+            "na"
+          ],
+          "answer": "do",
+          "grammar_point": "dla-do-na"
+        },
+        {
+          "id": "g3-5",
+          "text": "Co zwykle jesz ___ śniadanie?",
+          "options": [
+            "do",
+            "dla",
+            "na"
+          ],
+          "answer": "na",
+          "grammar_point": "dla-do-na"
+        },
+        {
+          "id": "g3-6",
+          "text": "Ta zupa jest pyszna, bardzo mi ___.",
+          "options": [
+            "się podoba",
+            "smakuje"
+          ],
+          "answer": "smakuje",
+          "grammar_point": "kalki-uk",
+          "explanation": "O jedzeniu mówimy smakować. Podobać się — o tym, co widzisz."
+        },
+        {
+          "id": "g3-7",
+          "text": "Marchewka, kapusta i cebula to ___.",
+          "options": [
+            "owoce",
+            "warzywa"
+          ],
+          "answer": "warzywa",
+          "grammar_point": "kalki-uk",
+          "explanation": "Warzywa to овочі, owoce to фрукти."
+        },
+        {
+          "id": "g3-8",
+          "text": "Przepraszam, gdzie jest nasz ___? Czekamy na rachunek.",
+          "options": [
+            "oficjant",
+            "kelner"
+          ],
+          "answer": "kelner",
+          "grammar_point": "kalki-uk",
+          "explanation": "Po polsku: kelner, kelnerka."
+        }
+      ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Paweł: Dobry wieczór. Proszę, oto menu.\n\nAnna: Dziękuję. {el1-1} Co dziś Pan poleca?\n\nPaweł: Polecam żurek i pierogi ruskie. {el1-2}\n\nAnna: {el1-3} Czy ruskie są z mięsem?\n\nPaweł: Nie, z serem i ziemniakami. {el1-4}\n\nAnna: {el1-5} A do picia poproszę wodę bez gazu.\n\nPaweł: {el1-6}\n\nAnna: {el1-7} Pierogi są zimne.\n\nPaweł: {el1-8} Zaraz przyniosę gorące.",
+      "bank": [
+        "a) Bardzo przepraszam.",
+        "b) Są dziś bardzo dobre.",
+        "c) Dobrze, zaraz przyniosę.",
+        "d) Dziękuję, jestem już najedzona.",
+        "e) Poproszę rachunek.",
+        "f) Nie wiem, co wybrać.",
+        "g) Mam jedno pytanie.",
+        "h) Na pewno będą Pani smakować.",
+        "i) W takim razie poproszę pierogi.",
+        "j) Przepraszam, mam problem."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "f) Nie wiem, co wybrać.",
+          "options": [
+            "a) Bardzo przepraszam.",
+            "b) Są dziś bardzo dobre.",
+            "c) Dobrze, zaraz przyniosę.",
+            "d) Dziękuję, jestem już najedzona.",
+            "e) Poproszę rachunek.",
+            "f) Nie wiem, co wybrać.",
+            "g) Mam jedno pytanie.",
+            "h) Na pewno będą Pani smakować.",
+            "i) W takim razie poproszę pierogi.",
+            "j) Przepraszam, mam problem."
+          ],
+          "explanation": "Anna czyta menu i nie wie, co zamówić. „Nie wiem, co wybrać” pasuje do pytania „Co dziś Pan poleca?”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "b) Są dziś bardzo dobre.",
+          "options": [
+            "a) Bardzo przepraszam.",
+            "b) Są dziś bardzo dobre.",
+            "c) Dobrze, zaraz przyniosę.",
+            "d) Dziękuję, jestem już najedzona.",
+            "e) Poproszę rachunek.",
+            "f) Nie wiem, co wybrać.",
+            "g) Mam jedno pytanie.",
+            "h) Na pewno będą Pani smakować.",
+            "i) W takim razie poproszę pierogi.",
+            "j) Przepraszam, mam problem."
+          ],
+          "explanation": "Kelner chwali swoją propozycję. „Są dziś bardzo dobre” pasuje do zdania „Polecam…”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "g) Mam jedno pytanie.",
+          "options": [
+            "a) Bardzo przepraszam.",
+            "b) Są dziś bardzo dobre.",
+            "c) Dobrze, zaraz przyniosę.",
+            "d) Dziękuję, jestem już najedzona.",
+            "e) Poproszę rachunek.",
+            "f) Nie wiem, co wybrać.",
+            "g) Mam jedno pytanie.",
+            "h) Na pewno będą Pani smakować.",
+            "i) W takim razie poproszę pierogi.",
+            "j) Przepraszam, mam problem."
+          ],
+          "explanation": "Anna chce zadać pytanie o skład dania. „Mam jedno pytanie” wprowadza pytanie o mięso.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "h) Na pewno będą Pani smakować.",
+          "options": [
+            "a) Bardzo przepraszam.",
+            "b) Są dziś bardzo dobre.",
+            "c) Dobrze, zaraz przyniosę.",
+            "d) Dziękuję, jestem już najedzona.",
+            "e) Poproszę rachunek.",
+            "f) Nie wiem, co wybrać.",
+            "g) Mam jedno pytanie.",
+            "h) Na pewno będą Pani smakować.",
+            "i) W takim razie poproszę pierogi.",
+            "j) Przepraszam, mam problem."
+          ],
+          "explanation": "Kelner uspokaja klientkę i chwali danie. „Na pewno będą Pani smakować” pasuje po opisie pierogów.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "i) W takim razie poproszę pierogi.",
+          "options": [
+            "a) Bardzo przepraszam.",
+            "b) Są dziś bardzo dobre.",
+            "c) Dobrze, zaraz przyniosę.",
+            "d) Dziękuję, jestem już najedzona.",
+            "e) Poproszę rachunek.",
+            "f) Nie wiem, co wybrać.",
+            "g) Mam jedno pytanie.",
+            "h) Na pewno będą Pani smakować.",
+            "i) W takim razie poproszę pierogi.",
+            "j) Przepraszam, mam problem."
+          ],
+          "explanation": "Anna decyduje się na pierogi i zaraz zamawia napój. Reakcja pasuje do zdania „A do picia poproszę…”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "c) Dobrze, zaraz przyniosę.",
+          "options": [
+            "a) Bardzo przepraszam.",
+            "b) Są dziś bardzo dobre.",
+            "c) Dobrze, zaraz przyniosę.",
+            "d) Dziękuję, jestem już najedzona.",
+            "e) Poproszę rachunek.",
+            "f) Nie wiem, co wybrać.",
+            "g) Mam jedno pytanie.",
+            "h) Na pewno będą Pani smakować.",
+            "i) W takim razie poproszę pierogi.",
+            "j) Przepraszam, mam problem."
+          ],
+          "explanation": "Kelner przyjmuje zamówienie. „Dobrze, zaraz przyniosę” to typowa odpowiedź kelnera.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "j) Przepraszam, mam problem.",
+          "options": [
+            "a) Bardzo przepraszam.",
+            "b) Są dziś bardzo dobre.",
+            "c) Dobrze, zaraz przyniosę.",
+            "d) Dziękuję, jestem już najedzona.",
+            "e) Poproszę rachunek.",
+            "f) Nie wiem, co wybrać.",
+            "g) Mam jedno pytanie.",
+            "h) Na pewno będą Pani smakować.",
+            "i) W takim razie poproszę pierogi.",
+            "j) Przepraszam, mam problem."
+          ],
+          "explanation": "Anna zgłasza problem z jedzeniem. „Przepraszam, mam problem” to grzeczny początek skargi.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "a) Bardzo przepraszam.",
+          "options": [
+            "a) Bardzo przepraszam.",
+            "b) Są dziś bardzo dobre.",
+            "c) Dobrze, zaraz przyniosę.",
+            "d) Dziękuję, jestem już najedzona.",
+            "e) Poproszę rachunek.",
+            "f) Nie wiem, co wybrać.",
+            "g) Mam jedno pytanie.",
+            "h) Na pewno będą Pani smakować.",
+            "i) W takim razie poproszę pierogi.",
+            "j) Przepraszam, mam problem."
+          ],
+          "explanation": "Kelner przeprasza za zimne pierogi i obiecuje gorące. „Bardzo przepraszam” pasuje przed „Zaraz przyniosę”.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "Szanowni Państwo,\n\nPiszę, {el2-1} zgłosić problem z wczorajszą kolacją. Zamówiłam zupę, pierogi i wodę {el2-2} gazu, ale dostałam wodę z gazem. Pierogi były zimne, {el2-3} poprosiłam o gorące. Kelner był miły, {el2-4} niestety nie chciał ich wymienić. Na rachunku jest też sałatka, której nie zamawiałam.\n\nProszę {el2-5} zwrot pieniędzy za sałatkę. Mam nadzieję, {el2-6} Państwo rozwiążą ten problem. Czy mogę liczyć {el2-7} odpowiedź do piątku?\n\n{el2-8} dziękuję {el2-9} pomoc.\n\n{el2-10},\nAnna Kowalska",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "b) aby",
+          "options": [
+            "a) bo",
+            "b) aby",
+            "c) że"
+          ],
+          "explanation": "Po „piszę, aby” używamy bezokolicznika: „aby zgłosić”. „Bo” i „że” wymagają całego zdania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "a) bez",
+          "options": [
+            "a) bez",
+            "b) od",
+            "c) do"
+          ],
+          "explanation": "Klientka zamówiła wodę „bez gazu”, ale dostała „z gazem”. „Od” i „do” nie pasują do tego wyrażenia.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "c) dlatego",
+          "options": [
+            "a) ponieważ",
+            "b) chociaż",
+            "c) dlatego"
+          ],
+          "explanation": "Zdanie pokazuje skutek: pierogi były zimne, „dlatego” poprosiła o gorące. „Ponieważ” odwraca sens.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "a) ale",
+          "options": [
+            "a) ale",
+            "b) więc",
+            "c) bo"
+          ],
+          "explanation": "„Ale” łączy dwie przeciwne informacje: kelner był miły, ale nie chciał wymienić pierogów. „Więc” i „bo” nie pasują.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "c) o",
+          "options": [
+            "a) za",
+            "b) na",
+            "c) o"
+          ],
+          "explanation": "Mówimy „prosić o zwrot pieniędzy”. Inne przyimki nie pasują do czasownika „prosić”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "c) że",
+          "options": [
+            "a) czy",
+            "b) żeby",
+            "c) że"
+          ],
+          "explanation": "Po „mam nadzieję” używamy „że”. „Czy” i „żeby” brzmią niepoprawnie w tym zdaniu.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "b) na",
+          "options": [
+            "a) o",
+            "b) na",
+            "c) za"
+          ],
+          "explanation": "Mówimy „liczyć na odpowiedź”. Przyimki „o” i „za” nie pasują do czasownika „liczyć”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "a) Z góry",
+          "options": [
+            "a) Z góry",
+            "b) Od góry",
+            "c) Na górze"
+          ],
+          "explanation": "„Z góry dziękuję” to stała formuła w e-mailu. Pozostałe wyrażenia mają inne znaczenie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "b) za",
+          "options": [
+            "a) o",
+            "b) za",
+            "c) na"
+          ],
+          "explanation": "Mówimy „dziękować za pomoc”. Przyimek „za” łączy się z czasownikiem „dziękować”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "c) Z poważaniem",
+          "options": [
+            "a) Z uczuciem",
+            "b) Z przyjemnością",
+            "c) Z poważaniem"
+          ],
+          "explanation": "„Z poważaniem” to typowe zakończenie oficjalnego listu. Pozostałe formuły nie pasują do reklamacji.",
+          "grammar_point": "rejestr-formalny"
+        }
       ]
     }
   ]

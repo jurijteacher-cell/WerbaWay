@@ -638,6 +638,292 @@
           "grammar_point": "miejscownik-m-n"
         }
       ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Administrator: Administracja budynku Lipowa 12, słucham.\n\nAndrij: Dzień dobry, mówi Andrij z mieszkania numer 9. {el1-1} W łazience cieknie kran.\n\nAdministrator: {el1-2} Od kiedy kran cieknie?\n\nAndrij: Od wtorku. {el1-3} W piwnicy też nie ma światła.\n\nAdministrator: {el1-4} Hydraulik może przyjść jutro rano.\n\nAndrij: {el1-5} Rano jestem w pracy do dwunastej.\n\nAdministrator: {el1-6} Hydraulik przyjdzie po dwunastej, dobrze?\n\nAndrij: {el1-7} Będę w domu od pierwszej.\n\nAdministrator: A światło w piwnicy sprawdzi elektryk w piątek.\n\nAndrij: {el1-8} Do widzenia!",
+      "bank": [
+        "a) Proszę poczekać, już sprawdzam.",
+        "b) Dobrze, zapiszę adres.",
+        "c) Przykro mi to słyszeć.",
+        "d) Niestety rano nie mogę.",
+        "e) Dobrze, dziękuję za pomoc.",
+        "f) Dzwonię w sprawie awarii.",
+        "g) Niestety w tym budynku nie ma windy.",
+        "h) To mi bardzo pasuje.",
+        "i) Mam jeszcze drugi problem.",
+        "j) Rozumiem, to żaden problem."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "f) Dzwonię w sprawie awarii.",
+          "options": [
+            "a) Proszę poczekać, już sprawdzam.",
+            "b) Dobrze, zapiszę adres.",
+            "c) Przykro mi to słyszeć.",
+            "d) Niestety rano nie mogę.",
+            "e) Dobrze, dziękuję za pomoc.",
+            "f) Dzwonię w sprawie awarii.",
+            "g) Niestety w tym budynku nie ma windy.",
+            "h) To mi bardzo pasuje.",
+            "i) Mam jeszcze drugi problem.",
+            "j) Rozumiem, to żaden problem."
+          ],
+          "explanation": "Tak mówimy, gdy dzwonimy z problemem. Następne zdanie wyjaśnia awarię: cieknie kran.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "c) Przykro mi to słyszeć.",
+          "options": [
+            "a) Proszę poczekać, już sprawdzam.",
+            "b) Dobrze, zapiszę adres.",
+            "c) Przykro mi to słyszeć.",
+            "d) Niestety rano nie mogę.",
+            "e) Dobrze, dziękuję za pomoc.",
+            "f) Dzwonię w sprawie awarii.",
+            "g) Niestety w tym budynku nie ma windy.",
+            "h) To mi bardzo pasuje.",
+            "i) Mam jeszcze drugi problem.",
+            "j) Rozumiem, to żaden problem."
+          ],
+          "explanation": "To grzeczna reakcja na czyjś problem. Potem administrator pyta o szczegóły.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "i) Mam jeszcze drugi problem.",
+          "options": [
+            "a) Proszę poczekać, już sprawdzam.",
+            "b) Dobrze, zapiszę adres.",
+            "c) Przykro mi to słyszeć.",
+            "d) Niestety rano nie mogę.",
+            "e) Dobrze, dziękuję za pomoc.",
+            "f) Dzwonię w sprawie awarii.",
+            "g) Niestety w tym budynku nie ma windy.",
+            "h) To mi bardzo pasuje.",
+            "i) Mam jeszcze drugi problem.",
+            "j) Rozumiem, to żaden problem."
+          ],
+          "explanation": "Andrij dodaje drugą sprawę. Potem mówi o piwnicy i braku światła.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "b) Dobrze, zapiszę adres.",
+          "options": [
+            "a) Proszę poczekać, już sprawdzam.",
+            "b) Dobrze, zapiszę adres.",
+            "c) Przykro mi to słyszeć.",
+            "d) Niestety rano nie mogę.",
+            "e) Dobrze, dziękuję za pomoc.",
+            "f) Dzwonię w sprawie awarii.",
+            "g) Niestety w tym budynku nie ma windy.",
+            "h) To mi bardzo pasuje.",
+            "i) Mam jeszcze drugi problem.",
+            "j) Rozumiem, to żaden problem."
+          ],
+          "explanation": "Administrator przyjmuje zgłoszenie i zapisuje dane. Potem proponuje termin.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "d) Niestety rano nie mogę.",
+          "options": [
+            "a) Proszę poczekać, już sprawdzam.",
+            "b) Dobrze, zapiszę adres.",
+            "c) Przykro mi to słyszeć.",
+            "d) Niestety rano nie mogę.",
+            "e) Dobrze, dziękuję za pomoc.",
+            "f) Dzwonię w sprawie awarii.",
+            "g) Niestety w tym budynku nie ma windy.",
+            "h) To mi bardzo pasuje.",
+            "i) Mam jeszcze drugi problem.",
+            "j) Rozumiem, to żaden problem."
+          ],
+          "explanation": "Andrij odmawia grzecznie. Powód podaje w następnym zdaniu: rano jest w pracy.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "j) Rozumiem, to żaden problem.",
+          "options": [
+            "a) Proszę poczekać, już sprawdzam.",
+            "b) Dobrze, zapiszę adres.",
+            "c) Przykro mi to słyszeć.",
+            "d) Niestety rano nie mogę.",
+            "e) Dobrze, dziękuję za pomoc.",
+            "f) Dzwonię w sprawie awarii.",
+            "g) Niestety w tym budynku nie ma windy.",
+            "h) To mi bardzo pasuje.",
+            "i) Mam jeszcze drugi problem.",
+            "j) Rozumiem, to żaden problem."
+          ],
+          "explanation": "Administrator przyjmuje odmowę Andrija i proponuje inną godzinę.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "h) To mi bardzo pasuje.",
+          "options": [
+            "a) Proszę poczekać, już sprawdzam.",
+            "b) Dobrze, zapiszę adres.",
+            "c) Przykro mi to słyszeć.",
+            "d) Niestety rano nie mogę.",
+            "e) Dobrze, dziękuję za pomoc.",
+            "f) Dzwonię w sprawie awarii.",
+            "g) Niestety w tym budynku nie ma windy.",
+            "h) To mi bardzo pasuje.",
+            "i) Mam jeszcze drugi problem.",
+            "j) Rozumiem, to żaden problem."
+          ],
+          "explanation": "Andrij zgadza się na nowy termin po dwunastej.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "e) Dobrze, dziękuję za pomoc.",
+          "options": [
+            "a) Proszę poczekać, już sprawdzam.",
+            "b) Dobrze, zapiszę adres.",
+            "c) Przykro mi to słyszeć.",
+            "d) Niestety rano nie mogę.",
+            "e) Dobrze, dziękuję za pomoc.",
+            "f) Dzwonię w sprawie awarii.",
+            "g) Niestety w tym budynku nie ma windy.",
+            "h) To mi bardzo pasuje.",
+            "i) Mam jeszcze drugi problem.",
+            "j) Rozumiem, to żaden problem."
+          ],
+          "explanation": "Andrij kończy rozmowę po ustaleniu terminów. Po podziękowaniu mówi „Do widzenia”.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "Szanowni {el2-1},\n\npiszę {el2-2} sprawie awarii w budynku przy ulicy Lipowej 12. Mieszkam {el2-3} trzecim piętrze, w mieszkaniu 9. Woda kapie dzień i noc, a rachunek za wodę jest coraz wyższy. Od wtorku {el2-4} kran w łazience. Poza tym {el2-5} piwnicy nie działa światło.\n\nProszę {el2-6} wysłanie hydraulika i elektryka. Bardzo proszę o szybką pomoc. Jestem w domu {el2-7} piętnastej. {el2-8} to możliwe, proszę o informację, kiedy ktoś przyjdzie. Bardzo dziękuję {el2-9} pomoc.\n\n{el2-10}\nAndrij",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "a) Państwo",
+          "options": [
+            "a) Państwo",
+            "b) Państwa",
+            "c) Państwu"
+          ],
+          "explanation": "„Szanowni Państwo” to stała formuła początku listu do kilku osób.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "c) w",
+          "options": [
+            "a) o",
+            "b) na",
+            "c) w"
+          ],
+          "explanation": "Mówimy „w sprawie czegoś”. To stała formuła listu.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "b) na",
+          "options": [
+            "a) w",
+            "b) na",
+            "c) po"
+          ],
+          "explanation": "Mówimy „na trzecim piętrze”. Przy piętrach używamy przyimka „na”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "b) cieknie",
+          "options": [
+            "a) płynie",
+            "b) cieknie",
+            "c) wylewa"
+          ],
+          "explanation": "O kranie mówimy „cieknie”, gdy z niego kapie woda mimo zamknięcia. „Płynie kran” jest błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "c) w",
+          "options": [
+            "a) na",
+            "b) z",
+            "c) w"
+          ],
+          "explanation": "„W piwnicy” to poprawne połączenie. Mówimy „w piwnicy”, a nie „na piwnicy”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "a) o",
+          "options": [
+            "a) o",
+            "b) za",
+            "c) na"
+          ],
+          "explanation": "Prosimy „o coś”: o wysłanie hydraulika. To stała kolokacja.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "b) po",
+          "options": [
+            "a) za",
+            "b) po",
+            "c) przez"
+          ],
+          "explanation": "„Po piętnastej” znaczy: po godzinie piętnastej.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "c) Jeśli",
+          "options": [
+            "a) Czy",
+            "b) Że",
+            "c) Jeśli"
+          ],
+          "explanation": "„Jeśli to możliwe” to grzeczna formuła. „Czy” i „że” nie tworzą takiego warunku.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "a) za",
+          "options": [
+            "a) za",
+            "b) o",
+            "c) na"
+          ],
+          "explanation": "Dziękuje się „za coś”: za pomoc.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "b) Z poważaniem",
+          "options": [
+            "a) Z pozdrowieniami",
+            "b) Z poważaniem",
+            "c) Z szacunku"
+          ],
+          "explanation": "„Z poważaniem” to oficjalne zakończenie listu do administracji. „Z szacunku” nie jest formułą listu.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
   ]
 }

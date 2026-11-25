@@ -351,6 +351,292 @@
           "explanation": "Zdjęcia — liczba mnoga: które."
         }
       ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Kelnerka: Karczma „Pod Gubałką”, dzień dobry.\n\nKasia: Dzień dobry. {el1-1} Chciałabym zarezerwować stolik na dzisiaj wieczorem.\n\nKelnerka: {el1-2} Na ile osób?\n\nKasia: Na dziewięć osób, na dziewiętnastą.\n\nKelnerka: Niestety o dziewiętnastej mamy tylko stolik dla sześciu osób. {el1-3}\n\nKasia: {el1-4} Czy może być o dwudziestej?\n\nKelnerka: Tak, o dwudziestej mamy duży stół. {el1-5}\n\nKasia: Dobrze. A czy dziś gra kapela góralska?\n\nKelnerka: {el1-6} Gra od dwudziestej pierwszej.\n\nKasia: Świetnie. {el1-7}\n\nKelnerka: {el1-8}",
+      "bank": [
+        "a) Niestety dzisiaj jest zamknięte.",
+        "b) Mam do Państwa prośbę.",
+        "c) Mogę zaproponować inną godzinę.",
+        "d) Bardzo dziękuję za pomoc.",
+        "e) Nie lubię takiej muzyki.",
+        "f) Oczywiście, to możliwe.",
+        "g) Niestety to za mało miejsca.",
+        "h) Czekamy na Państwa wieczorem.",
+        "i) Tak, kapela gra dzisiaj.",
+        "j) Proszę przyjść punktualnie."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "b) Mam do Państwa prośbę.",
+          "options": [
+            "a) Niestety dzisiaj jest zamknięte.",
+            "b) Mam do Państwa prośbę.",
+            "c) Mogę zaproponować inną godzinę.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Nie lubię takiej muzyki.",
+            "f) Oczywiście, to możliwe.",
+            "g) Niestety to za mało miejsca.",
+            "h) Czekamy na Państwa wieczorem.",
+            "i) Tak, kapela gra dzisiaj.",
+            "j) Proszę przyjść punktualnie."
+          ],
+          "explanation": "Kasia zaczyna od zapowiedzi prośby: „Mam do Państwa prośbę”. Potem mówi, o co prosi.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "f) Oczywiście, to możliwe.",
+          "options": [
+            "a) Niestety dzisiaj jest zamknięte.",
+            "b) Mam do Państwa prośbę.",
+            "c) Mogę zaproponować inną godzinę.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Nie lubię takiej muzyki.",
+            "f) Oczywiście, to możliwe.",
+            "g) Niestety to za mało miejsca.",
+            "h) Czekamy na Państwa wieczorem.",
+            "i) Tak, kapela gra dzisiaj.",
+            "j) Proszę przyjść punktualnie."
+          ],
+          "explanation": "Kelnerka zgadza się przyjąć rezerwację: „Oczywiście, to możliwe”. Potem pyta o liczbę osób.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "c) Mogę zaproponować inną godzinę.",
+          "options": [
+            "a) Niestety dzisiaj jest zamknięte.",
+            "b) Mam do Państwa prośbę.",
+            "c) Mogę zaproponować inną godzinę.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Nie lubię takiej muzyki.",
+            "f) Oczywiście, to możliwe.",
+            "g) Niestety to za mało miejsca.",
+            "h) Czekamy na Państwa wieczorem.",
+            "i) Tak, kapela gra dzisiaj.",
+            "j) Proszę przyjść punktualnie."
+          ],
+          "explanation": "Kelnerka nie ma stolika dla dziewięciu osób o tej godzinie, więc proponuje inną porę. „Niestety dzisiaj jest zamknięte” przeczy temu, że lokal przyjmuje gości.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "g) Niestety to za mało miejsca.",
+          "options": [
+            "a) Niestety dzisiaj jest zamknięte.",
+            "b) Mam do Państwa prośbę.",
+            "c) Mogę zaproponować inną godzinę.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Nie lubię takiej muzyki.",
+            "f) Oczywiście, to możliwe.",
+            "g) Niestety to za mało miejsca.",
+            "h) Czekamy na Państwa wieczorem.",
+            "i) Tak, kapela gra dzisiaj.",
+            "j) Proszę przyjść punktualnie."
+          ],
+          "explanation": "Kasia odpowiada na ofertę sześciu miejsc: „Niestety to za mało miejsca”. Potem pyta o późniejszą godzinę.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "j) Proszę przyjść punktualnie.",
+          "options": [
+            "a) Niestety dzisiaj jest zamknięte.",
+            "b) Mam do Państwa prośbę.",
+            "c) Mogę zaproponować inną godzinę.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Nie lubię takiej muzyki.",
+            "f) Oczywiście, to możliwe.",
+            "g) Niestety to za mało miejsca.",
+            "h) Czekamy na Państwa wieczorem.",
+            "i) Tak, kapela gra dzisiaj.",
+            "j) Proszę przyjść punktualnie."
+          ],
+          "explanation": "Kelnerka potwierdza stół i dodaje prośbę: „Proszę przyjść punktualnie”. Taka prośba pasuje do rezerwacji.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "i) Tak, kapela gra dzisiaj.",
+          "options": [
+            "a) Niestety dzisiaj jest zamknięte.",
+            "b) Mam do Państwa prośbę.",
+            "c) Mogę zaproponować inną godzinę.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Nie lubię takiej muzyki.",
+            "f) Oczywiście, to możliwe.",
+            "g) Niestety to za mało miejsca.",
+            "h) Czekamy na Państwa wieczorem.",
+            "i) Tak, kapela gra dzisiaj.",
+            "j) Proszę przyjść punktualnie."
+          ],
+          "explanation": "Kasia pyta o kapelę, a kelnerka odpowiada: „Tak, kapela gra dzisiaj”. „Nie lubię takiej muzyki” nie pasuje do roli kelnerki.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "d) Bardzo dziękuję za pomoc.",
+          "options": [
+            "a) Niestety dzisiaj jest zamknięte.",
+            "b) Mam do Państwa prośbę.",
+            "c) Mogę zaproponować inną godzinę.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Nie lubię takiej muzyki.",
+            "f) Oczywiście, to możliwe.",
+            "g) Niestety to za mało miejsca.",
+            "h) Czekamy na Państwa wieczorem.",
+            "i) Tak, kapela gra dzisiaj.",
+            "j) Proszę przyjść punktualnie."
+          ],
+          "explanation": "Kasia dziękuje za pomoc po załatwieniu rezerwacji. To grzeczne zakończenie jej części rozmowy.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "h) Czekamy na Państwa wieczorem.",
+          "options": [
+            "a) Niestety dzisiaj jest zamknięte.",
+            "b) Mam do Państwa prośbę.",
+            "c) Mogę zaproponować inną godzinę.",
+            "d) Bardzo dziękuję za pomoc.",
+            "e) Nie lubię takiej muzyki.",
+            "f) Oczywiście, to możliwe.",
+            "g) Niestety to za mało miejsca.",
+            "h) Czekamy na Państwa wieczorem.",
+            "i) Tak, kapela gra dzisiaj.",
+            "j) Proszę przyjść punktualnie."
+          ],
+          "explanation": "Kelnerka żegna się i zaprasza gości: „Czekamy na Państwa wieczorem”. Kasia nie mogłaby tak powiedzieć o karczmie.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "{el2-1} Panie Józku,\n\nPiszę {el2-2} imieniu zespołu naszej firmy. W sobotę jesteśmy w Zakopanem i chcielibyśmy {el2-3} Pana na kolację w karczmie „Pod Gubałką”. Zaczynamy o dwudziestej. Czy mógłby Pan opowiedzieć nam {el2-4} swoich ulubionych miejscach w mieście? Moja babcia mówi o Panu {el2-5} wielkim szacunkiem. Mam nadzieję, {el2-6} Pan przyjdzie. Proszę o odpowiedź {el2-7} piątku. Z {el2-8} czekamy na Pana decyzję. Z góry {el2-9} za zgodę.\n\n{el2-10},\nKasia",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "a) Szanowny",
+          "options": [
+            "a) Szanowny",
+            "b) Hej",
+            "c) Kochany"
+          ],
+          "explanation": "Do osoby, której nie znamy dobrze, piszemy „Szanowny Panie”. „Hej” i „Kochany” są zbyt prywatne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "c) w",
+          "options": [
+            "a) na",
+            "b) o",
+            "c) w"
+          ],
+          "explanation": "Mówimy „w imieniu zespołu”. „Na imieniu” i „o imieniu” są niepoprawne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "b) zaprosić",
+          "options": [
+            "a) zapytać",
+            "b) zaprosić",
+            "c) zamówić"
+          ],
+          "explanation": "Zapraszamy kogoś na kolację: „zaprosić Pana na kolację”. „Zapytać” i „zamówić” nie pasują do tej konstrukcji.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "b) o",
+          "options": [
+            "a) na",
+            "b) o",
+            "c) za"
+          ],
+          "explanation": "Opowiadamy o czymś: „opowiedzieć o miejscach”. „Na” i „za” nie łączą się z czasownikiem „opowiedzieć”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "a) z",
+          "options": [
+            "a) z",
+            "b) od",
+            "c) na"
+          ],
+          "explanation": "Mówimy „z szacunkiem”. „Od szacunkiem” i „na szacunkiem” są niepoprawne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "c) że",
+          "options": [
+            "a) czy",
+            "b) żeby",
+            "c) że"
+          ],
+          "explanation": "Stała formuła: „Mam nadzieję, że…”. „Czy” i „żeby” nie pasują po słowach „mam nadzieję”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "c) do",
+          "options": [
+            "a) po",
+            "b) od",
+            "c) do"
+          ],
+          "explanation": "Termin odpowiedzi: „do piątku”. „Po piątku” lub „od piątku” oznaczają inny czas.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "b) niecierpliwością",
+          "options": [
+            "a) niecierpliwie",
+            "b) niecierpliwością",
+            "c) niecierpliwy"
+          ],
+          "explanation": "Stała formuła: „z niecierpliwością czekamy”. „Niecierpliwie” i „niecierpliwy” są inną częścią mowy.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "a) dziękuję",
+          "options": [
+            "a) dziękuję",
+            "b) dziękuj",
+            "c) dziękuje"
+          ],
+          "explanation": "Stała formuła: „Z góry dziękuję”. „Dziękuj” to rozkaz, a „dziękuje” to trzecia osoba.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "a) Z wyrazami szacunku",
+          "options": [
+            "a) Z wyrazami szacunku",
+            "b) Do zobaczenia",
+            "c) Cześć"
+          ],
+          "explanation": "To oficjalne zakończenie e-maila do przewodnika. „Do zobaczenia” i „Cześć” są potoczne.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
   ]
 }

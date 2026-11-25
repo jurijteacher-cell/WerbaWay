@@ -1,552 +1,838 @@
 {
- "lesson_id": "pl-b1-group-04-filmy",
- "exercise_type": "fill-in-blank",
- "title": "Stopniowanie przymiotników i przysłówków: od formy do porównania",
- "instruction": "Osiem bloków w dwóch częściach. Bloki 1–4 idą po części 1 prezentacji, bloki 5–8 po części 2.",
- "estimated_minutes": 45,
- "blocks": [
-  {
-   "block_id": "g1",
-   "part": 1,
-   "exercise_type": "fill-in-blank",
-   "title": "1. Rozgrzewka: który stopień?",
-   "instruction": "Porównujemy dwie rzeczy czy wybieramy najlepszą z grupy? Wybierz formę.",
-   "covers_slides": [
-    "s2",
-    "s3"
-   ],
-   "items": [
+  "lesson_id": "pl-b1-group-04-filmy",
+  "exercise_type": "fill-in-blank",
+  "title": "Stopniowanie przymiotników i przysłówków: od formy do porównania",
+  "instruction": "Osiem bloków w dwóch częściach. Bloki 1–4 idą po części 1 prezentacji, bloki 5–8 po części 2.",
+  "estimated_minutes": 45,
+  "blocks": [
     {
-     "id": "g1-1",
-     "text": "Ten film jest ___ niż poprzedni.",
-     "options": [
-      "ciekawszy",
-      "najciekawszy"
-     ],
-     "answer": "ciekawszy",
-     "explanation": "Porównujemy dwa filmy — stopień wyższy.",
-     "grammar_point": "stopniowanie-formy"
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rozgrzewka: który stopień?",
+      "instruction": "Porównujemy dwie rzeczy czy wybieramy najlepszą z grupy? Wybierz formę.",
+      "covers_slides": [
+        "s2",
+        "s3"
+      ],
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Ten film jest ___ niż poprzedni.",
+          "options": [
+            "ciekawszy",
+            "najciekawszy"
+          ],
+          "answer": "ciekawszy",
+          "explanation": "Porównujemy dwa filmy — stopień wyższy.",
+          "grammar_point": "stopniowanie-formy"
+        },
+        {
+          "id": "g1-2",
+          "text": "To ___ komedia, jaką widziałem w tym roku.",
+          "options": [
+            "najzabawniejsza",
+            "zabawniejsza"
+          ],
+          "answer": "najzabawniejsza",
+          "explanation": "Najlepsza z całego roku — stopień najwyższy.",
+          "grammar_point": "stopniowanie-formy"
+        },
+        {
+          "id": "g1-3",
+          "text": "Bilet w środę jest ___ niż w sobotę.",
+          "options": [
+            "tańszy",
+            "najtańszy"
+          ],
+          "answer": "tańszy",
+          "explanation": "Dwa dni, jedno porównanie — stopień wyższy.",
+          "grammar_point": "stopniowanie-formy"
+        },
+        {
+          "id": "g1-4",
+          "text": "Który z trzech seriali jest ___?",
+          "options": [
+            "najdłuższy",
+            "dłuższy"
+          ],
+          "answer": "najdłuższy",
+          "explanation": "Wybieramy jeden z trzech — stopień najwyższy.",
+          "grammar_point": "stopniowanie-formy"
+        },
+        {
+          "id": "g1-5",
+          "text": "Drugi sezon był ___ od pierwszego.",
+          "options": [
+            "nudniejszy",
+            "najnudniejszy"
+          ],
+          "answer": "nudniejszy",
+          "explanation": "„Od pierwszego” — porównanie dwóch rzeczy.",
+          "grammar_point": "stopniowanie-formy"
+        },
+        {
+          "id": "g1-6",
+          "text": "To była ___ scena w całym filmie.",
+          "options": [
+            "najsmutniejsza",
+            "smutniejsza"
+          ],
+          "answer": "najsmutniejsza",
+          "explanation": "„W całym filmie” — najwyższy stopień.",
+          "grammar_point": "stopniowanie-formy"
+        }
+      ]
     },
     {
-     "id": "g1-2",
-     "text": "To ___ komedia, jaką widziałem w tym roku.",
-     "options": [
-      "najzabawniejsza",
-      "zabawniejsza"
-     ],
-     "answer": "najzabawniejsza",
-     "explanation": "Najlepsza z całego roku — stopień najwyższy.",
-     "grammar_point": "stopniowanie-formy"
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "2. Od przymiotnika do stopnia wyższego",
+      "instruction": "Kliknij przymiotnik, potem jego stopień wyższy.",
+      "covers_slides": [
+        "s4",
+        "s5"
+      ],
+      "items": [
+        {
+          "id": "g2-1",
+          "left": "tani",
+          "right": "tańszy",
+          "grammar_point": "stopniowanie-wymiany"
+        },
+        {
+          "id": "g2-2",
+          "left": "młody",
+          "right": "młodszy",
+          "grammar_point": "stopniowanie-formy"
+        },
+        {
+          "id": "g2-3",
+          "left": "łatwy",
+          "right": "łatwiejszy",
+          "grammar_point": "stopniowanie-formy"
+        },
+        {
+          "id": "g2-4",
+          "left": "ciepły",
+          "right": "cieplejszy",
+          "grammar_point": "stopniowanie-wymiany"
+        },
+        {
+          "id": "g2-5",
+          "left": "wysoki",
+          "right": "wyższy",
+          "grammar_point": "stopniowanie-wymiany"
+        },
+        {
+          "id": "g2-6",
+          "left": "krótki",
+          "right": "krótszy",
+          "grammar_point": "stopniowanie-wymiany"
+        },
+        {
+          "id": "g2-7",
+          "left": "bliski",
+          "right": "bliższy",
+          "grammar_point": "stopniowanie-wymiany"
+        },
+        {
+          "id": "g2-8",
+          "left": "szeroki",
+          "right": "szerszy",
+          "grammar_point": "stopniowanie-wymiany"
+        }
+      ]
     },
     {
-     "id": "g1-3",
-     "text": "Bilet w środę jest ___ niż w sobotę.",
-     "options": [
-      "tańszy",
-      "najtańszy"
-     ],
-     "answer": "tańszy",
-     "explanation": "Dwa dni, jedno porównanie — stopień wyższy.",
-     "grammar_point": "stopniowanie-formy"
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. -szy czy bardziej?",
+      "instruction": "Krótki przymiotnik dostaje końcówkę, długi i imiesłów — słowo bardziej. Wybierz poprawną formę.",
+      "covers_slides": [
+        "s6"
+      ],
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Ten aktor jest dziś ___ niż dziesięć lat temu.",
+          "options": [
+            "bardziej znany",
+            "znańszy"
+          ],
+          "answer": "bardziej znany",
+          "explanation": "Znany to imiesłów — stopniujemy przez bardziej.",
+          "grammar_point": "bardziej-najbardziej"
+        },
+        {
+          "id": "g3-2",
+          "text": "Po maratonie serialowym byłam ___ niż po pracy.",
+          "options": [
+            "bardziej zmęczona",
+            "zmęczeńsza"
+          ],
+          "answer": "bardziej zmęczona",
+          "explanation": "Zmęczony to imiesłów — tylko bardziej.",
+          "grammar_point": "bardziej-najbardziej"
+        },
+        {
+          "id": "g3-3",
+          "text": "Ten dokument jest ___ od fabuły.",
+          "options": [
+            "bardziej interesujący",
+            "interesującszy"
+          ],
+          "answer": "bardziej interesujący",
+          "explanation": "Długie słowa na -ący stopniujemy przez bardziej.",
+          "grammar_point": "bardziej-najbardziej"
+        },
+        {
+          "id": "g3-4",
+          "text": "Nowy laptop jest ___ od starego.",
+          "options": [
+            "lżejszy",
+            "bardziej lekki"
+          ],
+          "answer": "lżejszy",
+          "explanation": "Lekki to krótki przymiotnik: lżejszy.",
+          "grammar_point": "stopniowanie-wymiany"
+        },
+        {
+          "id": "g3-5",
+          "text": "W kinie dźwięk jest ___ niż w domu.",
+          "options": [
+            "głośniejszy",
+            "bardziej głośny"
+          ],
+          "answer": "głośniejszy",
+          "explanation": "Głośny to krótki przymiotnik: głośniejszy.",
+          "grammar_point": "stopniowanie-formy"
+        },
+        {
+          "id": "g3-6",
+          "text": "To był ___ odcinek ze wszystkich.",
+          "options": [
+            "najbardziej przerażający",
+            "najprzerażającszy"
+          ],
+          "answer": "najbardziej przerażający",
+          "explanation": "Stopień najwyższy od długiego słowa: najbardziej.",
+          "grammar_point": "bardziej-najbardziej"
+        }
+      ]
     },
     {
-     "id": "g1-4",
-     "text": "Który z trzech seriali jest ___?",
-     "options": [
-      "najdłuższy",
-      "dłuższy"
-     ],
-     "answer": "najdłuższy",
-     "explanation": "Wybieramy jeden z trzech — stopień najwyższy.",
-     "grammar_point": "stopniowanie-formy"
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "drag-and-drop",
+      "title": "4. Lepszy, gorszy, większy, mniejszy",
+      "instruction": "Przeciągnij formę do luki. Dwa słowa w banku nigdzie nie pasują.",
+      "covers_slides": [
+        "s7",
+        "s8"
+      ],
+      "bank": [
+        "mniejszym",
+        "lepsza",
+        "najlepszy",
+        "większy",
+        "lepiej",
+        "gorszy",
+        "mniejsza",
+        "większa"
+      ],
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Książka była ___ niż film.",
+          "answer": "lepsza",
+          "grammar_point": "stopniowanie-nieregularne"
+        },
+        {
+          "id": "g4-2",
+          "text": "Ekran w kinie jest o wiele ___ niż w telefonie.",
+          "answer": "większy",
+          "grammar_point": "stopniowanie-nieregularne"
+        },
+        {
+          "id": "g4-3",
+          "text": "Pierwszy sezon był słaby, a drugi był jeszcze ___.",
+          "answer": "gorszy",
+          "grammar_point": "stopniowanie-nieregularne"
+        },
+        {
+          "id": "g4-4",
+          "text": "Sala numer dwa jest ___ od sali numer jeden.",
+          "answer": "mniejsza",
+          "grammar_point": "stopniowanie-nieregularne"
+        },
+        {
+          "id": "g4-5",
+          "text": "To ___ film Wajdy, jaki znam.",
+          "answer": "najlepszy",
+          "grammar_point": "stopniowanie-nieregularne"
+        },
+        {
+          "id": "g4-6",
+          "text": "Na ___ ekranie trudniej przeczytać napisy.",
+          "answer": "mniejszym",
+          "grammar_point": "stopniowanie-nieregularne"
+        }
+      ]
     },
     {
-     "id": "g1-5",
-     "text": "Drugi sezon był ___ od pierwszego.",
-     "options": [
-      "nudniejszy",
-      "najnudniejszy"
-     ],
-     "answer": "nudniejszy",
-     "explanation": "„Od pierwszego” — porównanie dwóch rzeczy.",
-     "grammar_point": "stopniowanie-formy"
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Jak? Przysłówki w stopniu wyższym",
+      "instruction": "Wpisz przysłówek w stopniu wyższym od słowa w nawiasie.",
+      "covers_slides": [
+        "s9",
+        "s10"
+      ],
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Na ekranie ludzie mówią ___ (szybko) niż w podręczniku.",
+          "answer": "szybciej",
+          "grammar_point": "przyslowki-stopniowanie"
+        },
+        {
+          "id": "g5-2",
+          "text": "Z napisami po polsku uczysz się ___ (skutecznie).",
+          "answer": "skuteczniej",
+          "grammar_point": "przyslowki-stopniowanie"
+        },
+        {
+          "id": "g5-3",
+          "text": "Dziś oglądam seriale ___ (często) niż kiedyś.",
+          "answer": "częściej",
+          "grammar_point": "przyslowki-stopniowanie"
+        },
+        {
+          "id": "g5-4",
+          "text": "W kinie słyszę wszystko ___ (dobrze) niż w domu.",
+          "answer": "lepiej",
+          "grammar_point": "przyslowki-stopniowanie"
+        },
+        {
+          "id": "g5-5",
+          "text": "Po maratonie spałem ___ (źle) niż zwykle.",
+          "answer": "gorzej",
+          "grammar_point": "przyslowki-stopniowanie"
+        },
+        {
+          "id": "g5-6",
+          "text": "Chcę spędzać przed ekranem ___ (mało) czasu.",
+          "answer": "mniej",
+          "grammar_point": "przyslowki-stopniowanie"
+        }
+      ]
     },
     {
-     "id": "g1-6",
-     "text": "To była ___ scena w całym filmie.",
-     "options": [
-      "najsmutniejsza",
-      "smutniejsza"
-     ],
-     "answer": "najsmutniejsza",
-     "explanation": "„W całym filmie” — najwyższy stopień.",
-     "grammar_point": "stopniowanie-formy"
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Niż czy od?",
+      "instruction": "Wybierz poprawną drugą część porównania.",
+      "covers_slides": [
+        "s11"
+      ],
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Ten film jest lepszy ___.",
+          "options": [
+            "od tamtego",
+            "niż tamtego"
+          ],
+          "answer": "od tamtego",
+          "explanation": "Od + dopełniacz: od tamtego. Niż + mianownik: niż tamten.",
+          "grammar_point": "niz-od"
+        },
+        {
+          "id": "g6-2",
+          "text": "Moja siostra ogląda więcej seriali ___.",
+          "options": [
+            "niż ja",
+            "od ja"
+          ],
+          "answer": "niż ja",
+          "explanation": "Po niż zostaje mianownik: niż ja. Z od byłoby: ode mnie.",
+          "grammar_point": "niz-od"
+        },
+        {
+          "id": "g6-3",
+          "text": "Kino jest droższe ___.",
+          "options": [
+            "od platformy",
+            "niż platformy"
+          ],
+          "answer": "od platformy",
+          "explanation": "Od + dopełniacz: od platformy. Albo: niż platforma.",
+          "grammar_point": "niz-od"
+        },
+        {
+          "id": "g6-4",
+          "text": "Wolę oglądać w domu ___ w kinie.",
+          "options": [
+            "niż",
+            "od"
+          ],
+          "answer": "niż",
+          "explanation": "Przed przyimkiem (w kinie) tylko niż.",
+          "grammar_point": "niz-od"
+        },
+        {
+          "id": "g6-5",
+          "text": "Ona jest starsza ___.",
+          "options": [
+            "ode mnie",
+            "od mnie"
+          ],
+          "answer": "ode mnie",
+          "explanation": "Przed mnie mówimy ode: ode mnie.",
+          "grammar_point": "niz-od"
+        },
+        {
+          "id": "g6-6",
+          "text": "Lepiej obejrzeć jeden dobry film ___ pięć słabych.",
+          "options": [
+            "niż",
+            "od"
+          ],
+          "answer": "niż",
+          "explanation": "Przy bezokoliczniku i całym zdaniu tylko niż.",
+          "grammar_point": "niz-od"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "7. Im… tym…, jeden z najlepszych, coraz",
+      "instruction": "Połącz informacje w jedno zdanie. Użyj konstrukcji z nawiasu.",
+      "covers_slides": [
+        "s12",
+        "s13",
+        "s14",
+        "s15"
+      ],
+      "items": [
+        {
+          "id": "g7-1",
+          "prompt": "Oglądam dużo. Śpię mało. (im… tym…)",
+          "answer": "Im więcej oglądam, tym mniej śpię.",
+          "grammar_point": "superlatyw-im-tym"
+        },
+        {
+          "id": "g7-2",
+          "prompt": "Film jest długi. Jest nudny. (im… tym…)",
+          "answer": "Im dłuższy film, tym nudniejszy.",
+          "accept": [
+            "Im film jest dłuższy, tym jest nudniejszy."
+          ],
+          "grammar_point": "superlatyw-im-tym"
+        },
+        {
+          "id": "g7-3",
+          "prompt": "To bardzo dobry film tego roku. (jeden z + najlepszy)",
+          "answer": "To jeden z najlepszych filmów tego roku.",
+          "grammar_point": "superlatyw-im-tym"
+        },
+        {
+          "id": "g7-4",
+          "prompt": "Seriale są popularne. Co roku bardziej. (coraz)",
+          "answer": "Seriale są coraz popularniejsze.",
+          "accept": [
+            "Seriale są coraz bardziej popularne."
+          ],
+          "grammar_point": "superlatyw-im-tym"
+        },
+        {
+          "id": "g7-5",
+          "prompt": "Przyjdź szybko, jak tylko możesz. (jak + naj-)",
+          "answer": "Przyjdź jak najszybciej.",
+          "grammar_point": "superlatyw-im-tym"
+        },
+        {
+          "id": "g7-6",
+          "prompt": "Ten film jest dużo lepszy od tamtego. (o wiele)",
+          "answer": "Ten film jest o wiele lepszy od tamtego.",
+          "accept": [
+            "Ten film jest o wiele lepszy niż tamten."
+          ],
+          "grammar_point": "superlatyw-im-tym"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Pułapki z ukraińskiego",
+      "instruction": "Jedna forma jest poprawna, druga to kalka z ukraińskiego. Wybierz i przeczytaj wyjaśnienie.",
+      "covers_slides": [
+        "s16",
+        "s17"
+      ],
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "To był ___ film roku.",
+          "options": [
+            "najlepszy",
+            "samy najlepszy"
+          ],
+          "answer": "najlepszy",
+          "explanation": "Укр. «самий кращий» — po polsku tylko najlepszy.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-2",
+          "text": "Ten serial jest ___ niż tamten.",
+          "options": [
+            "ciekawszy",
+            "bardziej ciekawszy"
+          ],
+          "answer": "ciekawszy",
+          "explanation": "Albo końcówka, albo bardziej — nigdy oba naraz.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-3",
+          "text": "Bilety były ___ droższe.",
+          "options": [
+            "dwa razy",
+            "w dwa razy"
+          ],
+          "answer": "dwa razy",
+          "explanation": "Укр. «в два рази» — po polsku bez w: dwa razy.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-4",
+          "text": "___ dłużej czekamy, tym bardziej się denerwujemy.",
+          "options": [
+            "Im",
+            "Czym"
+          ],
+          "answer": "Im",
+          "explanation": "Укр. «чим… тим» — po polsku im… tym.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-5",
+          "text": "Mój brat jest wyższy ___.",
+          "options": [
+            "ode mnie",
+            "za mnie"
+          ],
+          "answer": "ode mnie",
+          "explanation": "Укр. «вищий за мене» — po polsku wyższy ode mnie albo niż ja.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g8-6",
+          "text": "Ona gra ___ ze wszystkich aktorek.",
+          "options": [
+            "najlepiej",
+            "najlepsze"
+          ],
+          "answer": "najlepiej",
+          "explanation": "Jak gra? Przysłówek: najlepiej.",
+          "grammar_point": "kalki-uk"
+        }
+      ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Ewa: Kino Orzeł, dzień dobry. Słucham.\n\nMaksym: Dzień dobry. Chciałbym zarezerwować dwa bilety na sobotę. {el1-1}\n\nEwa: Tak, są. Mamy seans o osiemnastej i o dwudziestej trzydzieści.\n\nMaksym: {el1-2}\n\nEwa: Dobrze. Bilety normalne czy ulgowe?\n\nMaksym: Jeden normalny i jeden ulgowy. {el1-3}\n\nEwa: {el1-4}\n\nMaksym: Rozumiem. {el1-5}\n\nEwa: {el1-6}\n\nMaksym: Dobrze, będziemy punktualnie. {el1-7}\n\nEwa: Proszę bardzo. {el1-8}",
+      "bank": [
+        "a) Poproszę ten późniejszy.",
+        "b) Niestety wszystkie miejsca są już zajęte.",
+        "c) Czy są jeszcze wolne miejsca?",
+        "d) Życzę miłego seansu.",
+        "e) Syn ma czternaście lat.",
+        "f) Można, ale proszę przyjść godzinę przed seansem.",
+        "g) Proszę mówić trochę głośniej.",
+        "h) W takim razie wystarczy legitymacja szkolna.",
+        "i) Czy mogę zapłacić na miejscu?",
+        "j) Bardzo dziękuję za pomoc."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "c) Czy są jeszcze wolne miejsca?",
+          "options": [
+            "a) Poproszę ten późniejszy.",
+            "b) Niestety wszystkie miejsca są już zajęte.",
+            "c) Czy są jeszcze wolne miejsca?",
+            "d) Życzę miłego seansu.",
+            "e) Syn ma czternaście lat.",
+            "f) Można, ale proszę przyjść godzinę przed seansem.",
+            "g) Proszę mówić trochę głośniej.",
+            "h) W takim razie wystarczy legitymacja szkolna.",
+            "i) Czy mogę zapłacić na miejscu?",
+            "j) Bardzo dziękuję za pomoc."
+          ],
+          "explanation": "To pytanie o dostępność biletów. Ewa odpowiada „Tak, są”, więc pasuje pytanie o wolne miejsca; „Niestety wszystkie miejsca są już zajęte” zaprzecza jej odpowiedzi.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "a) Poproszę ten późniejszy.",
+          "options": [
+            "a) Poproszę ten późniejszy.",
+            "b) Niestety wszystkie miejsca są już zajęte.",
+            "c) Czy są jeszcze wolne miejsca?",
+            "d) Życzę miłego seansu.",
+            "e) Syn ma czternaście lat.",
+            "f) Można, ale proszę przyjść godzinę przed seansem.",
+            "g) Proszę mówić trochę głośniej.",
+            "h) W takim razie wystarczy legitymacja szkolna.",
+            "i) Czy mogę zapłacić na miejscu?",
+            "j) Bardzo dziękuję za pomoc."
+          ],
+          "explanation": "Ewa podała dwie godziny seansu, więc klient wybiera jedną z nich. „Poproszę ten późniejszy” to naturalny wybór.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "e) Syn ma czternaście lat.",
+          "options": [
+            "a) Poproszę ten późniejszy.",
+            "b) Niestety wszystkie miejsca są już zajęte.",
+            "c) Czy są jeszcze wolne miejsca?",
+            "d) Życzę miłego seansu.",
+            "e) Syn ma czternaście lat.",
+            "f) Można, ale proszę przyjść godzinę przed seansem.",
+            "g) Proszę mówić trochę głośniej.",
+            "h) W takim razie wystarczy legitymacja szkolna.",
+            "i) Czy mogę zapłacić na miejscu?",
+            "j) Bardzo dziękuję za pomoc."
+          ],
+          "explanation": "Klient tłumaczy, dlaczego chce bilet ulgowy: chodzi o wiek syna. Ewa odpowiada na tę informację w następnej replice.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "h) W takim razie wystarczy legitymacja szkolna.",
+          "options": [
+            "a) Poproszę ten późniejszy.",
+            "b) Niestety wszystkie miejsca są już zajęte.",
+            "c) Czy są jeszcze wolne miejsca?",
+            "d) Życzę miłego seansu.",
+            "e) Syn ma czternaście lat.",
+            "f) Można, ale proszę przyjść godzinę przed seansem.",
+            "g) Proszę mówić trochę głośniej.",
+            "h) W takim razie wystarczy legitymacja szkolna.",
+            "i) Czy mogę zapłacić na miejscu?",
+            "j) Bardzo dziękuję za pomoc."
+          ],
+          "explanation": "Bilet ulgowy dla dziecka wymaga dokumentu. „W takim razie” łączy się z informacją o wieku syna.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "i) Czy mogę zapłacić na miejscu?",
+          "options": [
+            "a) Poproszę ten późniejszy.",
+            "b) Niestety wszystkie miejsca są już zajęte.",
+            "c) Czy są jeszcze wolne miejsca?",
+            "d) Życzę miłego seansu.",
+            "e) Syn ma czternaście lat.",
+            "f) Można, ale proszę przyjść godzinę przed seansem.",
+            "g) Proszę mówić trochę głośniej.",
+            "h) W takim razie wystarczy legitymacja szkolna.",
+            "i) Czy mogę zapłacić na miejscu?",
+            "j) Bardzo dziękuję za pomoc."
+          ],
+          "explanation": "Po wyjaśnieniu biletów klient pyta o płatność. Ewa odpowiada na to pytanie w kolejnej replice.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "f) Można, ale proszę przyjść godzinę przed seansem.",
+          "options": [
+            "a) Poproszę ten późniejszy.",
+            "b) Niestety wszystkie miejsca są już zajęte.",
+            "c) Czy są jeszcze wolne miejsca?",
+            "d) Życzę miłego seansu.",
+            "e) Syn ma czternaście lat.",
+            "f) Można, ale proszę przyjść godzinę przed seansem.",
+            "g) Proszę mówić trochę głośniej.",
+            "h) W takim razie wystarczy legitymacja szkolna.",
+            "i) Czy mogę zapłacić na miejscu?",
+            "j) Bardzo dziękuję za pomoc."
+          ],
+          "explanation": "To odpowiedź na pytanie o płatność na miejscu: rezerwację trzeba odebrać wcześniej. „Proszę mówić głośniej” nie pasuje do sensu rozmowy.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "j) Bardzo dziękuję za pomoc.",
+          "options": [
+            "a) Poproszę ten późniejszy.",
+            "b) Niestety wszystkie miejsca są już zajęte.",
+            "c) Czy są jeszcze wolne miejsca?",
+            "d) Życzę miłego seansu.",
+            "e) Syn ma czternaście lat.",
+            "f) Można, ale proszę przyjść godzinę przed seansem.",
+            "g) Proszę mówić trochę głośniej.",
+            "h) W takim razie wystarczy legitymacja szkolna.",
+            "i) Czy mogę zapłacić na miejscu?",
+            "j) Bardzo dziękuję za pomoc."
+          ],
+          "explanation": "Klient kończy załatwianie sprawy i dziękuje. Ewa odpowiada „Proszę bardzo”, czyli reaguje na podziękowanie.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "d) Życzę miłego seansu.",
+          "options": [
+            "a) Poproszę ten późniejszy.",
+            "b) Niestety wszystkie miejsca są już zajęte.",
+            "c) Czy są jeszcze wolne miejsca?",
+            "d) Życzę miłego seansu.",
+            "e) Syn ma czternaście lat.",
+            "f) Można, ale proszę przyjść godzinę przed seansem.",
+            "g) Proszę mówić trochę głośniej.",
+            "h) W takim razie wystarczy legitymacja szkolna.",
+            "i) Czy mogę zapłacić na miejscu?",
+            "j) Bardzo dziękuję za pomoc."
+          ],
+          "explanation": "Na końcu rozmowy w kinie pracownica życzy klientowi przyjemnego seansu. To typowa formuła pożegnalna.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "Szanowni Państwo,\n\nPiszę {el2-1} problemu z dostępem do mojego konta w serwisie Filmoteka+. W zeszłym tygodniu {el2-2} abonament na kolejny miesiąc, ale od środy nie mogę oglądać żadnych filmów ani seriali. Skontaktowałem się {el2-3} infolinią, jednak konsultant poradził mi, abym napisał do Państwa. Dlatego {el2-4} reklamację i proszę o szybkie rozwiązanie sprawy. Jeśli naprawa nie będzie możliwa, proszę {el2-5} zwrot pieniędzy za ten miesiąc. Załączam potwierdzenie płatności. Pieniądze zostały pobrane z mojej karty dwa dni temu, co mogę udokumentować wyciągiem z konta. Jestem klientem serwisu od trzech lat i do tej pory nie miałem żadnych problemów. Zależy mi na tym, {el2-6} odpowiedź otrzymać {el2-7} trzech dni roboczych. Czekam {el2-8} Państwa wiadomość.\n\n{el2-9} dziękuję za pomoc.\n\n{el2-10} poważaniem\n\nMaksym Kowal",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "a) w sprawie",
+          "options": [
+            "a) w sprawie",
+            "b) w sprawę",
+            "c) o sprawie"
+          ],
+          "explanation": "„W sprawie” to stała formuła listu urzędowego: „piszę w sprawie problemu”. Pozostałe formy są niepoprawne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "b) za",
+          "options": [
+            "a) na",
+            "b) za",
+            "c) o"
+          ],
+          "explanation": "Płacimy „za” coś: „zapłaciłem za abonament”. Przyimki „na” i „o” nie tworzą tu poprawnej frazy.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "c) z",
+          "options": [
+            "a) do",
+            "b) na",
+            "c) z"
+          ],
+          "explanation": "Mówimy „skontaktować się z infolinią”, czyli „z” + narzędnik. „Do” i „na” nie pasują do tego czasownika.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "b) składam",
+          "options": [
+            "a) robię",
+            "b) składam",
+            "c) daję"
+          ],
+          "explanation": "Reklamację się „składa”. Czasowniki „robię” i „daję” nie tworzą poprawnej kolokacji.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "b) o",
+          "options": [
+            "a) na",
+            "b) o",
+            "c) za"
+          ],
+          "explanation": "Prosimy „o” coś: „proszę o zwrot pieniędzy”. „Na” i „za” nie pasują do czasownika „prosić”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "c) żeby",
+          "options": [
+            "a) że",
+            "b) bo",
+            "c) żeby"
+          ],
+          "explanation": "Po „zależy mi na tym” używamy „żeby” (cel, oczekiwanie). „Że” i „bo” zmieniają sens zdania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "a) w ciągu",
+          "options": [
+            "a) w ciągu",
+            "b) podczas",
+            "c) przez"
+          ],
+          "explanation": "„W ciągu trzech dni” oznacza „najpóźniej po trzech dniach”. „Podczas” i „przez” wymagają innej formy rzeczownika.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "c) na",
+          "options": [
+            "a) o",
+            "b) za",
+            "c) na"
+          ],
+          "explanation": "Czekamy „na” coś lub kogoś: „czekam na wiadomość”. „O” i „za” nie pasują do tego czasownika.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "b) Z góry",
+          "options": [
+            "a) Z dołu",
+            "b) Z góry",
+            "c) Z boku"
+          ],
+          "explanation": "„Z góry dziękuję” to stała formuła na końcu listu, gdy prosimy o pomoc. Pozostałe wyrażenia nie są formułami grzecznościowymi.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "c) Z poważaniem",
+          "options": [
+            "a) Za poważaniem",
+            "b) W poważaniu",
+            "c) Z poważaniem"
+          ],
+          "explanation": "Oficjalny list kończymy formułą „Z poważaniem”. Pozostałe warianty są błędne albo mają zupełnie inny sens.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
-   ]
-  },
-  {
-   "block_id": "g2",
-   "part": 1,
-   "exercise_type": "matching",
-   "title": "2. Od przymiotnika do stopnia wyższego",
-   "instruction": "Kliknij przymiotnik, potem jego stopień wyższy.",
-   "covers_slides": [
-    "s4",
-    "s5"
-   ],
-   "items": [
-    {
-     "id": "g2-1",
-     "left": "tani",
-     "right": "tańszy",
-     "grammar_point": "stopniowanie-wymiany"
-    },
-    {
-     "id": "g2-2",
-     "left": "młody",
-     "right": "młodszy",
-     "grammar_point": "stopniowanie-formy"
-    },
-    {
-     "id": "g2-3",
-     "left": "łatwy",
-     "right": "łatwiejszy",
-     "grammar_point": "stopniowanie-formy"
-    },
-    {
-     "id": "g2-4",
-     "left": "ciepły",
-     "right": "cieplejszy",
-     "grammar_point": "stopniowanie-wymiany"
-    },
-    {
-     "id": "g2-5",
-     "left": "wysoki",
-     "right": "wyższy",
-     "grammar_point": "stopniowanie-wymiany"
-    },
-    {
-     "id": "g2-6",
-     "left": "krótki",
-     "right": "krótszy",
-     "grammar_point": "stopniowanie-wymiany"
-    },
-    {
-     "id": "g2-7",
-     "left": "bliski",
-     "right": "bliższy",
-     "grammar_point": "stopniowanie-wymiany"
-    },
-    {
-     "id": "g2-8",
-     "left": "szeroki",
-     "right": "szerszy",
-     "grammar_point": "stopniowanie-wymiany"
-    }
-   ]
-  },
-  {
-   "block_id": "g3",
-   "part": 1,
-   "exercise_type": "fill-in-blank",
-   "title": "3. -szy czy bardziej?",
-   "instruction": "Krótki przymiotnik dostaje końcówkę, długi i imiesłów — słowo bardziej. Wybierz poprawną formę.",
-   "covers_slides": [
-    "s6"
-   ],
-   "items": [
-    {
-     "id": "g3-1",
-     "text": "Ten aktor jest dziś ___ niż dziesięć lat temu.",
-     "options": [
-      "bardziej znany",
-      "znańszy"
-     ],
-     "answer": "bardziej znany",
-     "explanation": "Znany to imiesłów — stopniujemy przez bardziej.",
-     "grammar_point": "bardziej-najbardziej"
-    },
-    {
-     "id": "g3-2",
-     "text": "Po maratonie serialowym byłam ___ niż po pracy.",
-     "options": [
-      "bardziej zmęczona",
-      "zmęczeńsza"
-     ],
-     "answer": "bardziej zmęczona",
-     "explanation": "Zmęczony to imiesłów — tylko bardziej.",
-     "grammar_point": "bardziej-najbardziej"
-    },
-    {
-     "id": "g3-3",
-     "text": "Ten dokument jest ___ od fabuły.",
-     "options": [
-      "bardziej interesujący",
-      "interesującszy"
-     ],
-     "answer": "bardziej interesujący",
-     "explanation": "Długie słowa na -ący stopniujemy przez bardziej.",
-     "grammar_point": "bardziej-najbardziej"
-    },
-    {
-     "id": "g3-4",
-     "text": "Nowy laptop jest ___ od starego.",
-     "options": [
-      "lżejszy",
-      "bardziej lekki"
-     ],
-     "answer": "lżejszy",
-     "explanation": "Lekki to krótki przymiotnik: lżejszy.",
-     "grammar_point": "stopniowanie-wymiany"
-    },
-    {
-     "id": "g3-5",
-     "text": "W kinie dźwięk jest ___ niż w domu.",
-     "options": [
-      "głośniejszy",
-      "bardziej głośny"
-     ],
-     "answer": "głośniejszy",
-     "explanation": "Głośny to krótki przymiotnik: głośniejszy.",
-     "grammar_point": "stopniowanie-formy"
-    },
-    {
-     "id": "g3-6",
-     "text": "To był ___ odcinek ze wszystkich.",
-     "options": [
-      "najbardziej przerażający",
-      "najprzerażającszy"
-     ],
-     "answer": "najbardziej przerażający",
-     "explanation": "Stopień najwyższy od długiego słowa: najbardziej.",
-     "grammar_point": "bardziej-najbardziej"
-    }
-   ]
-  },
-  {
-   "block_id": "g4",
-   "part": 1,
-   "exercise_type": "drag-and-drop",
-   "title": "4. Lepszy, gorszy, większy, mniejszy",
-   "instruction": "Przeciągnij formę do luki. Dwa słowa w banku nigdzie nie pasują.",
-   "covers_slides": [
-    "s7",
-    "s8"
-   ],
-   "bank": [
-    "mniejszym",
-    "lepsza",
-    "najlepszy",
-    "większy",
-    "lepiej",
-    "gorszy",
-    "mniejsza",
-    "większa"
-   ],
-   "items": [
-    {
-     "id": "g4-1",
-     "text": "Książka była ___ niż film.",
-     "answer": "lepsza",
-     "grammar_point": "stopniowanie-nieregularne"
-    },
-    {
-     "id": "g4-2",
-     "text": "Ekran w kinie jest o wiele ___ niż w telefonie.",
-     "answer": "większy",
-     "grammar_point": "stopniowanie-nieregularne"
-    },
-    {
-     "id": "g4-3",
-     "text": "Pierwszy sezon był słaby, a drugi był jeszcze ___.",
-     "answer": "gorszy",
-     "grammar_point": "stopniowanie-nieregularne"
-    },
-    {
-     "id": "g4-4",
-     "text": "Sala numer dwa jest ___ od sali numer jeden.",
-     "answer": "mniejsza",
-     "grammar_point": "stopniowanie-nieregularne"
-    },
-    {
-     "id": "g4-5",
-     "text": "To ___ film Wajdy, jaki znam.",
-     "answer": "najlepszy",
-     "grammar_point": "stopniowanie-nieregularne"
-    },
-    {
-     "id": "g4-6",
-     "text": "Na ___ ekranie trudniej przeczytać napisy.",
-     "answer": "mniejszym",
-     "grammar_point": "stopniowanie-nieregularne"
-    }
-   ]
-  },
-  {
-   "block_id": "g5",
-   "part": 2,
-   "exercise_type": "fill-in-blank",
-   "title": "5. Jak? Przysłówki w stopniu wyższym",
-   "instruction": "Wpisz przysłówek w stopniu wyższym od słowa w nawiasie.",
-   "covers_slides": [
-    "s9",
-    "s10"
-   ],
-   "items": [
-    {
-     "id": "g5-1",
-     "text": "Na ekranie ludzie mówią ___ (szybko) niż w podręczniku.",
-     "answer": "szybciej",
-     "grammar_point": "przyslowki-stopniowanie"
-    },
-    {
-     "id": "g5-2",
-     "text": "Z napisami po polsku uczysz się ___ (skutecznie).",
-     "answer": "skuteczniej",
-     "grammar_point": "przyslowki-stopniowanie"
-    },
-    {
-     "id": "g5-3",
-     "text": "Dziś oglądam seriale ___ (często) niż kiedyś.",
-     "answer": "częściej",
-     "grammar_point": "przyslowki-stopniowanie"
-    },
-    {
-     "id": "g5-4",
-     "text": "W kinie słyszę wszystko ___ (dobrze) niż w domu.",
-     "answer": "lepiej",
-     "grammar_point": "przyslowki-stopniowanie"
-    },
-    {
-     "id": "g5-5",
-     "text": "Po maratonie spałem ___ (źle) niż zwykle.",
-     "answer": "gorzej",
-     "grammar_point": "przyslowki-stopniowanie"
-    },
-    {
-     "id": "g5-6",
-     "text": "Chcę spędzać przed ekranem ___ (mało) czasu.",
-     "answer": "mniej",
-     "grammar_point": "przyslowki-stopniowanie"
-    }
-   ]
-  },
-  {
-   "block_id": "g6",
-   "part": 2,
-   "exercise_type": "fill-in-blank",
-   "title": "6. Niż czy od?",
-   "instruction": "Wybierz poprawną drugą część porównania.",
-   "covers_slides": [
-    "s11"
-   ],
-   "items": [
-    {
-     "id": "g6-1",
-     "text": "Ten film jest lepszy ___.",
-     "options": [
-      "od tamtego",
-      "niż tamtego"
-     ],
-     "answer": "od tamtego",
-     "explanation": "Od + dopełniacz: od tamtego. Niż + mianownik: niż tamten.",
-     "grammar_point": "niz-od"
-    },
-    {
-     "id": "g6-2",
-     "text": "Moja siostra ogląda więcej seriali ___.",
-     "options": [
-      "niż ja",
-      "od ja"
-     ],
-     "answer": "niż ja",
-     "explanation": "Po niż zostaje mianownik: niż ja. Z od byłoby: ode mnie.",
-     "grammar_point": "niz-od"
-    },
-    {
-     "id": "g6-3",
-     "text": "Kino jest droższe ___.",
-     "options": [
-      "od platformy",
-      "niż platformy"
-     ],
-     "answer": "od platformy",
-     "explanation": "Od + dopełniacz: od platformy. Albo: niż platforma.",
-     "grammar_point": "niz-od"
-    },
-    {
-     "id": "g6-4",
-     "text": "Wolę oglądać w domu ___ w kinie.",
-     "options": [
-      "niż",
-      "od"
-     ],
-     "answer": "niż",
-     "explanation": "Przed przyimkiem (w kinie) tylko niż.",
-     "grammar_point": "niz-od"
-    },
-    {
-     "id": "g6-5",
-     "text": "Ona jest starsza ___.",
-     "options": [
-      "ode mnie",
-      "od mnie"
-     ],
-     "answer": "ode mnie",
-     "explanation": "Przed mnie mówimy ode: ode mnie.",
-     "grammar_point": "niz-od"
-    },
-    {
-     "id": "g6-6",
-     "text": "Lepiej obejrzeć jeden dobry film ___ pięć słabych.",
-     "options": [
-      "niż",
-      "od"
-     ],
-     "answer": "niż",
-     "explanation": "Przy bezokoliczniku i całym zdaniu tylko niż.",
-     "grammar_point": "niz-od"
-    }
-   ]
-  },
-  {
-   "block_id": "g7",
-   "part": 2,
-   "exercise_type": "sentence-building",
-   "title": "7. Im… tym…, jeden z najlepszych, coraz",
-   "instruction": "Połącz informacje w jedno zdanie. Użyj konstrukcji z nawiasu.",
-   "covers_slides": [
-    "s12",
-    "s13",
-    "s14",
-    "s15"
-   ],
-   "items": [
-    {
-     "id": "g7-1",
-     "prompt": "Oglądam dużo. Śpię mało. (im… tym…)",
-     "answer": "Im więcej oglądam, tym mniej śpię.",
-     "grammar_point": "superlatyw-im-tym"
-    },
-    {
-     "id": "g7-2",
-     "prompt": "Film jest długi. Jest nudny. (im… tym…)",
-     "answer": "Im dłuższy film, tym nudniejszy.",
-     "accept": [
-      "Im film jest dłuższy, tym jest nudniejszy."
-     ],
-     "grammar_point": "superlatyw-im-tym"
-    },
-    {
-     "id": "g7-3",
-     "prompt": "To bardzo dobry film tego roku. (jeden z + najlepszy)",
-     "answer": "To jeden z najlepszych filmów tego roku.",
-     "grammar_point": "superlatyw-im-tym"
-    },
-    {
-     "id": "g7-4",
-     "prompt": "Seriale są popularne. Co roku bardziej. (coraz)",
-     "answer": "Seriale są coraz popularniejsze.",
-     "accept": [
-      "Seriale są coraz bardziej popularne."
-     ],
-     "grammar_point": "superlatyw-im-tym"
-    },
-    {
-     "id": "g7-5",
-     "prompt": "Przyjdź szybko, jak tylko możesz. (jak + naj-)",
-     "answer": "Przyjdź jak najszybciej.",
-     "grammar_point": "superlatyw-im-tym"
-    },
-    {
-     "id": "g7-6",
-     "prompt": "Ten film jest dużo lepszy od tamtego. (o wiele)",
-     "answer": "Ten film jest o wiele lepszy od tamtego.",
-     "accept": [
-      "Ten film jest o wiele lepszy niż tamten."
-     ],
-     "grammar_point": "superlatyw-im-tym"
-    }
-   ]
-  },
-  {
-   "block_id": "g8",
-   "part": 2,
-   "exercise_type": "fill-in-blank",
-   "title": "8. Pułapki z ukraińskiego",
-   "instruction": "Jedna forma jest poprawna, druga to kalka z ukraińskiego. Wybierz i przeczytaj wyjaśnienie.",
-   "covers_slides": [
-    "s16",
-    "s17"
-   ],
-   "items": [
-    {
-     "id": "g8-1",
-     "text": "To był ___ film roku.",
-     "options": [
-      "najlepszy",
-      "samy najlepszy"
-     ],
-     "answer": "najlepszy",
-     "explanation": "Укр. «самий кращий» — po polsku tylko najlepszy.",
-     "grammar_point": "kalki-uk"
-    },
-    {
-     "id": "g8-2",
-     "text": "Ten serial jest ___ niż tamten.",
-     "options": [
-      "ciekawszy",
-      "bardziej ciekawszy"
-     ],
-     "answer": "ciekawszy",
-     "explanation": "Albo końcówka, albo bardziej — nigdy oba naraz.",
-     "grammar_point": "kalki-uk"
-    },
-    {
-     "id": "g8-3",
-     "text": "Bilety były ___ droższe.",
-     "options": [
-      "dwa razy",
-      "w dwa razy"
-     ],
-     "answer": "dwa razy",
-     "explanation": "Укр. «в два рази» — po polsku bez w: dwa razy.",
-     "grammar_point": "kalki-uk"
-    },
-    {
-     "id": "g8-4",
-     "text": "___ dłużej czekamy, tym bardziej się denerwujemy.",
-     "options": [
-      "Im",
-      "Czym"
-     ],
-     "answer": "Im",
-     "explanation": "Укр. «чим… тим» — po polsku im… tym.",
-     "grammar_point": "kalki-uk"
-    },
-    {
-     "id": "g8-5",
-     "text": "Mój brat jest wyższy ___.",
-     "options": [
-      "ode mnie",
-      "za mnie"
-     ],
-     "answer": "ode mnie",
-     "explanation": "Укр. «вищий за мене» — po polsku wyższy ode mnie albo niż ja.",
-     "grammar_point": "kalki-uk"
-    },
-    {
-     "id": "g8-6",
-     "text": "Ona gra ___ ze wszystkich aktorek.",
-     "options": [
-      "najlepiej",
-      "najlepsze"
-     ],
-     "answer": "najlepiej",
-     "explanation": "Jak gra? Przysłówek: najlepiej.",
-     "grammar_point": "kalki-uk"
-    }
-   ]
-  }
- ]
+  ]
 }

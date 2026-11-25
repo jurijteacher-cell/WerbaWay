@@ -370,6 +370,292 @@
           "explanation": "Kolega kończy się na -a, więc w narzędniku: z kolegą."
         }
       ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Magda: Cześć, Olena! Dziś idziemy na obiad do baru mlecznego. Idziesz z nami?\n\nOlena: {el1-1} Z kim idziecie?\n\nMagda: Z Tomkiem i z panią Danutą z księgowości.\n\nOlena: {el1-2} Nie znam jeszcze pani Danuty dobrze.\n\nMagda: {el1-3} Pani Danuta jest bardzo miła.\n\nOlena: {el1-4} O której wychodzicie?\n\nMagda: Za dziesięć minut. {el1-5}\n\nOlena: Niestety jeszcze pracuję nad stroną internetową. {el1-6}\n\nMagda: {el1-7} Zaczekamy na ciebie przy recepcji.\n\nOlena: {el1-8}\n\nMagda: Do zobaczenia za chwilę!",
+      "bank": [
+        "a) Chętnie, dziękuję za zaproszenie.",
+        "b) Chętnie ją poznam.",
+        "c) Niestety jestem dziś na urlopie.",
+        "d) Nie przejmuj się.",
+        "e) Dobrze, w takim razie idę z wami.",
+        "f) Zdążysz skończyć?",
+        "g) Czy możecie chwilę poczekać?",
+        "h) To żaden problem.",
+        "i) Jeszcze raz przepraszam za spóźnienie.",
+        "j) To bardzo miło z waszej strony."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "a) Chętnie, dziękuję za zaproszenie.",
+          "options": [
+            "a) Chętnie, dziękuję za zaproszenie.",
+            "b) Chętnie ją poznam.",
+            "c) Niestety jestem dziś na urlopie.",
+            "d) Nie przejmuj się.",
+            "e) Dobrze, w takim razie idę z wami.",
+            "f) Zdążysz skończyć?",
+            "g) Czy możecie chwilę poczekać?",
+            "h) To żaden problem.",
+            "i) Jeszcze raz przepraszam za spóźnienie.",
+            "j) To bardzo miło z waszej strony."
+          ],
+          "explanation": "Olena przyjmuje zaproszenie na obiad i dziękuje. „Niestety jestem dziś na urlopie” nie pasuje, bo Olena jest w pracy i pyta o towarzystwo.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "b) Chętnie ją poznam.",
+          "options": [
+            "a) Chętnie, dziękuję za zaproszenie.",
+            "b) Chętnie ją poznam.",
+            "c) Niestety jestem dziś na urlopie.",
+            "d) Nie przejmuj się.",
+            "e) Dobrze, w takim razie idę z wami.",
+            "f) Zdążysz skończyć?",
+            "g) Czy możecie chwilę poczekać?",
+            "h) To żaden problem.",
+            "i) Jeszcze raz przepraszam za spóźnienie.",
+            "j) To bardzo miło z waszej strony."
+          ],
+          "explanation": "Olena mówi, że nie zna jeszcze pani Danuty, i dlatego chce ją poznać. Fraza „Chętnie ją poznam” łączy się z tym zdaniem.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "d) Nie przejmuj się.",
+          "options": [
+            "a) Chętnie, dziękuję za zaproszenie.",
+            "b) Chętnie ją poznam.",
+            "c) Niestety jestem dziś na urlopie.",
+            "d) Nie przejmuj się.",
+            "e) Dobrze, w takim razie idę z wami.",
+            "f) Zdążysz skończyć?",
+            "g) Czy możecie chwilę poczekać?",
+            "h) To żaden problem.",
+            "i) Jeszcze raz przepraszam za spóźnienie.",
+            "j) To bardzo miło z waszej strony."
+          ],
+          "explanation": "Magda uspokaja Olenę, bo ta nie zna pani Danuty. „Nie przejmuj się” znaczy „nie martw się”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "e) Dobrze, w takim razie idę z wami.",
+          "options": [
+            "a) Chętnie, dziękuję za zaproszenie.",
+            "b) Chętnie ją poznam.",
+            "c) Niestety jestem dziś na urlopie.",
+            "d) Nie przejmuj się.",
+            "e) Dobrze, w takim razie idę z wami.",
+            "f) Zdążysz skończyć?",
+            "g) Czy możecie chwilę poczekać?",
+            "h) To żaden problem.",
+            "i) Jeszcze raz przepraszam za spóźnienie.",
+            "j) To bardzo miło z waszej strony."
+          ],
+          "explanation": "Olena decyduje, że idzie z koleżankami, i zaraz pyta o godzinę. „Jeszcze raz przepraszam za spóźnienie” nie pasuje, bo nikt się nie spóźnił.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "f) Zdążysz skończyć?",
+          "options": [
+            "a) Chętnie, dziękuję za zaproszenie.",
+            "b) Chętnie ją poznam.",
+            "c) Niestety jestem dziś na urlopie.",
+            "d) Nie przejmuj się.",
+            "e) Dobrze, w takim razie idę z wami.",
+            "f) Zdążysz skończyć?",
+            "g) Czy możecie chwilę poczekać?",
+            "h) To żaden problem.",
+            "i) Jeszcze raz przepraszam za spóźnienie.",
+            "j) To bardzo miło z waszej strony."
+          ],
+          "explanation": "Za dziesięć minut to mało czasu, więc Magda pyta, czy Olena zdąży skończyć pracę. Pytanie „Zdążysz skończyć?” pasuje do dalszej odpowiedzi Oleny.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "g) Czy możecie chwilę poczekać?",
+          "options": [
+            "a) Chętnie, dziękuję za zaproszenie.",
+            "b) Chętnie ją poznam.",
+            "c) Niestety jestem dziś na urlopie.",
+            "d) Nie przejmuj się.",
+            "e) Dobrze, w takim razie idę z wami.",
+            "f) Zdążysz skończyć?",
+            "g) Czy możecie chwilę poczekać?",
+            "h) To żaden problem.",
+            "i) Jeszcze raz przepraszam za spóźnienie.",
+            "j) To bardzo miło z waszej strony."
+          ],
+          "explanation": "Olena nie jest jeszcze gotowa i prosi o chwilę czekania. Fraza „Czy możecie chwilę poczekać?” to grzeczna prośba.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "h) To żaden problem.",
+          "options": [
+            "a) Chętnie, dziękuję za zaproszenie.",
+            "b) Chętnie ją poznam.",
+            "c) Niestety jestem dziś na urlopie.",
+            "d) Nie przejmuj się.",
+            "e) Dobrze, w takim razie idę z wami.",
+            "f) Zdążysz skończyć?",
+            "g) Czy możecie chwilę poczekać?",
+            "h) To żaden problem.",
+            "i) Jeszcze raz przepraszam za spóźnienie.",
+            "j) To bardzo miło z waszej strony."
+          ],
+          "explanation": "Magda się zgadza: czekanie to „żaden problem”. Dopiero potem mówi, gdzie koledzy poczekają.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "j) To bardzo miło z waszej strony.",
+          "options": [
+            "a) Chętnie, dziękuję za zaproszenie.",
+            "b) Chętnie ją poznam.",
+            "c) Niestety jestem dziś na urlopie.",
+            "d) Nie przejmuj się.",
+            "e) Dobrze, w takim razie idę z wami.",
+            "f) Zdążysz skończyć?",
+            "g) Czy możecie chwilę poczekać?",
+            "h) To żaden problem.",
+            "i) Jeszcze raz przepraszam za spóźnienie.",
+            "j) To bardzo miło z waszej strony."
+          ],
+          "explanation": "Olena dziękuje za miły gest kolegów. „To bardzo miło z waszej strony” to częsta reakcja na uprzejmość.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "Szanowna Pani Danuto,\n\nnazywam się Olena Kovalenko, jestem młodszą konsultantką w dziale wycieczek. Piszę do Pani {el2-1} zwrotu kosztów podróży służbowej do Zakopanego. Pan Piotr powiedział, że mogę zwrócić się {el2-2} Pani. W zeszłym tygodniu pojechałam {el2-3} panem Tomkiem na spotkanie z klientem. Chciałabym zapytać, {el2-4} muszę przynieść oryginał biletu. Chodzi o bilet {el2-5} pociąg do Zakopanego. W załączniku {el2-6} kopię biletu i krótki opis podróży. Będę {el2-7} za wszystkie informacje o formularzu. Proszę {el2-8} odpowiedź do czwartku. {el2-9} dziękuję za pomoc.\n\n{el2-10},\nOlena Kovalenko",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "a) w sprawie",
+          "options": [
+            "a) w sprawie",
+            "b) o sprawie",
+            "c) na sprawę"
+          ],
+          "explanation": "Formuła „Piszę do Pani w sprawie + dopełniacz” otwiera półoficjalny list. Pozostałe wyrażenia nie są używane.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "c) do",
+          "options": [
+            "a) na",
+            "b) w",
+            "c) do"
+          ],
+          "explanation": "Mówimy „zwrócić się do kogoś” z prośbą. „Zwrócić się na” i „w” są błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "b) z",
+          "options": [
+            "a) do",
+            "b) z",
+            "c) u"
+          ],
+          "explanation": "Pojechałam „z panem Tomkiem”, czyli razem z nim. „Do” i „u” nie pasują do osoby, z którą jedziemy.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "a) czy",
+          "options": [
+            "a) czy",
+            "b) że",
+            "c) co"
+          ],
+          "explanation": "Pytanie pośrednie zaczyna się od „czy”: „Chciałabym zapytać, czy muszę…”. „Że” i „co” tu nie pasują.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "b) na",
+          "options": [
+            "a) do",
+            "b) na",
+            "c) z"
+          ],
+          "explanation": "Mówimy „bilet na pociąg”. „Bilet do pociąg” i „bilet z pociąg” są niepoprawne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "c) przesyłam",
+          "options": [
+            "a) przynoszę",
+            "b) przyjmuję",
+            "c) przesyłam"
+          ],
+          "explanation": "W e-mailu coś dołączamy i „przesyłamy”. „Przynoszę” i „przyjmuję” nie pasują do załącznika.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "a) wdzięczna",
+          "options": [
+            "a) wdzięczna",
+            "b) zadowolona",
+            "c) miła"
+          ],
+          "explanation": "„Być wdzięcznym za coś” to stała formuła w liście z prośbą. „Zadowolona” łączy się z „z”, a „miła” nie pasuje do tego zdania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "b) o",
+          "options": [
+            "a) za",
+            "b) o",
+            "c) na"
+          ],
+          "explanation": "Prosimy „o coś”: „proszę o odpowiedź”. „Prosić za” ma inne znaczenie, a „prosić na” jest błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "c) Z góry",
+          "options": [
+            "a) Od góry",
+            "b) Na górze",
+            "c) Z góry"
+          ],
+          "explanation": "„Z góry dziękuję” to stała formuła końcowa listu z prośbą. Inne wyrażenia mówią o położeniu.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "a) Z poważaniem",
+          "options": [
+            "a) Z poważaniem",
+            "b) Cześć",
+            "c) Buziaki"
+          ],
+          "explanation": "Pani Danuta jest główną księgową i Olena nie jest z nią na ty, więc list kończymy „Z poważaniem”. „Cześć” i „Buziaki” są za swobodne.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
   ]
 }

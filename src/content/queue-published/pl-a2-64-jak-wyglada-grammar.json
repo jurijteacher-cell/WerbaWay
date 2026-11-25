@@ -330,6 +330,292 @@
           "explanation": "Brat — rodzaj męski: dla mojego młodszego brata."
         }
       ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Pracownik: Biuro Rzeczy Znalezionych, dzień dobry.\n\nOlena: Dzień dobry. {el1-1} Zgubiłam torbę w tramwaju numer 8.\n\nPracownik: {el1-2} Jak ta torba wygląda?\n\nOlena: To duża czarna torba z długim paskiem i małą złotą kieszenią.\n\nPracownik: {el1-3} Co jest w środku?\n\nOlena: Czerwony portfel i zielony szalik. {el1-4}\n\nPracownik: Proszę chwilę poczekać. Sprawdzam… {el1-5}\n\nOlena: Naprawdę? To wspaniale! {el1-6}\n\nPracownik: Od ósmej do szesnastej, ale w piątek tylko do czternastej.\n\nOlena: {el1-7} Czy będę potrzebować jakiegoś dokumentu?\n\nPracownik: Tak, proszę wziąć dowód osobisty. {el1-8}",
+      "bank": [
+        "a) Dobrze, już wszystko zapisałem.",
+        "b) Dziękuję, nie trzeba.",
+        "c) Chciałabym coś zgłosić.",
+        "d) Kiedy mogę ją odebrać?",
+        "e) Mamy taką torbę!",
+        "f) Nie mamy żadnej torby.",
+        "g) Bardzo mi przykro.",
+        "h) W takim razie przyjdę jutro rano.",
+        "i) Nie ma tam żadnych dokumentów.",
+        "j) Do zobaczenia jutro!"
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "c) Chciałabym coś zgłosić.",
+          "options": [
+            "a) Dobrze, już wszystko zapisałem.",
+            "b) Dziękuję, nie trzeba.",
+            "c) Chciałabym coś zgłosić.",
+            "d) Kiedy mogę ją odebrać?",
+            "e) Mamy taką torbę!",
+            "f) Nie mamy żadnej torby.",
+            "g) Bardzo mi przykro.",
+            "h) W takim razie przyjdę jutro rano.",
+            "i) Nie ma tam żadnych dokumentów.",
+            "j) Do zobaczenia jutro!"
+          ],
+          "explanation": "Olena zaczyna rozmowę formułą „Chciałabym coś zgłosić”, bo zaraz mówi o zgubionej torbie. Inne fragmenty nie otwierają rozmowy.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "g) Bardzo mi przykro.",
+          "options": [
+            "a) Dobrze, już wszystko zapisałem.",
+            "b) Dziękuję, nie trzeba.",
+            "c) Chciałabym coś zgłosić.",
+            "d) Kiedy mogę ją odebrać?",
+            "e) Mamy taką torbę!",
+            "f) Nie mamy żadnej torby.",
+            "g) Bardzo mi przykro.",
+            "h) W takim razie przyjdę jutro rano.",
+            "i) Nie ma tam żadnych dokumentów.",
+            "j) Do zobaczenia jutro!"
+          ],
+          "explanation": "Pracownik reaguje na złą wiadomość: „Bardzo mi przykro”. Dopiero potem pyta o wygląd torby.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "a) Dobrze, już wszystko zapisałem.",
+          "options": [
+            "a) Dobrze, już wszystko zapisałem.",
+            "b) Dziękuję, nie trzeba.",
+            "c) Chciałabym coś zgłosić.",
+            "d) Kiedy mogę ją odebrać?",
+            "e) Mamy taką torbę!",
+            "f) Nie mamy żadnej torby.",
+            "g) Bardzo mi przykro.",
+            "h) W takim razie przyjdę jutro rano.",
+            "i) Nie ma tam żadnych dokumentów.",
+            "j) Do zobaczenia jutro!"
+          ],
+          "explanation": "Olena opisała już torbę, więc pracownik mówi, że wszystko zapisał. Dopiero potem pyta o środek.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "i) Nie ma tam żadnych dokumentów.",
+          "options": [
+            "a) Dobrze, już wszystko zapisałem.",
+            "b) Dziękuję, nie trzeba.",
+            "c) Chciałabym coś zgłosić.",
+            "d) Kiedy mogę ją odebrać?",
+            "e) Mamy taką torbę!",
+            "f) Nie mamy żadnej torby.",
+            "g) Bardzo mi przykro.",
+            "h) W takim razie przyjdę jutro rano.",
+            "i) Nie ma tam żadnych dokumentów.",
+            "j) Do zobaczenia jutro!"
+          ],
+          "explanation": "Olena mówi, co jest w torbie, i dodaje, że nie ma tam dokumentów. To pasuje do informacji z portfela.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "e) Mamy taką torbę!",
+          "options": [
+            "a) Dobrze, już wszystko zapisałem.",
+            "b) Dziękuję, nie trzeba.",
+            "c) Chciałabym coś zgłosić.",
+            "d) Kiedy mogę ją odebrać?",
+            "e) Mamy taką torbę!",
+            "f) Nie mamy żadnej torby.",
+            "g) Bardzo mi przykro.",
+            "h) W takim razie przyjdę jutro rano.",
+            "i) Nie ma tam żadnych dokumentów.",
+            "j) Do zobaczenia jutro!"
+          ],
+          "explanation": "Pracownik sprawdził i ma dobrą wiadomość. „Nie mamy żadnej torby” przeczy słowom Oleny „Naprawdę? To wspaniale!”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "d) Kiedy mogę ją odebrać?",
+          "options": [
+            "a) Dobrze, już wszystko zapisałem.",
+            "b) Dziękuję, nie trzeba.",
+            "c) Chciałabym coś zgłosić.",
+            "d) Kiedy mogę ją odebrać?",
+            "e) Mamy taką torbę!",
+            "f) Nie mamy żadnej torby.",
+            "g) Bardzo mi przykro.",
+            "h) W takim razie przyjdę jutro rano.",
+            "i) Nie ma tam żadnych dokumentów.",
+            "j) Do zobaczenia jutro!"
+          ],
+          "explanation": "Olena pyta o termin odbioru, a pracownik odpowiada godzinami otwarcia. Pytanie „Kiedy mogę ją odebrać?” pasuje do tej odpowiedzi.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "h) W takim razie przyjdę jutro rano.",
+          "options": [
+            "a) Dobrze, już wszystko zapisałem.",
+            "b) Dziękuję, nie trzeba.",
+            "c) Chciałabym coś zgłosić.",
+            "d) Kiedy mogę ją odebrać?",
+            "e) Mamy taką torbę!",
+            "f) Nie mamy żadnej torby.",
+            "g) Bardzo mi przykro.",
+            "h) W takim razie przyjdę jutro rano.",
+            "i) Nie ma tam żadnych dokumentów.",
+            "j) Do zobaczenia jutro!"
+          ],
+          "explanation": "Po informacji o godzinach Olena podejmuje decyzję: „W takim razie przyjdę jutro rano”. Taka formuła podsumowuje rozmowę.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "j) Do zobaczenia jutro!",
+          "options": [
+            "a) Dobrze, już wszystko zapisałem.",
+            "b) Dziękuję, nie trzeba.",
+            "c) Chciałabym coś zgłosić.",
+            "d) Kiedy mogę ją odebrać?",
+            "e) Mamy taką torbę!",
+            "f) Nie mamy żadnej torby.",
+            "g) Bardzo mi przykro.",
+            "h) W takim razie przyjdę jutro rano.",
+            "i) Nie ma tam żadnych dokumentów.",
+            "j) Do zobaczenia jutro!"
+          ],
+          "explanation": "To grzeczne pożegnanie po umówieniu wizyty na jutro. „Dziękuję, nie trzeba” nie pasuje do pożegnania.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "{el2-1} Państwo,\n\nPiszę, {el2-2} zgłosić zgubioną torbę. W środę {el2-3} piętnastej zostawiłam ją w tramwaju numer 8. To duża czarna torba {el2-4} długim paskiem. W środku są czerwony portfel i zielony szalik. Bardzo mi zależy na tej torbie.\n\nChciałabym zapytać, {el2-5} ktoś ją znalazł. Proszę {el2-6} kontakt telefoniczny: 600 100 200. Mam nadzieję, {el2-7} torba jest już u Państwa. Można dzwonić do mnie {el2-8} ósmej do osiemnastej. Z góry dziękuję {el2-9} pomoc.\n\n{el2-10},\nOlena",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "a) Szanowni",
+          "options": [
+            "a) Szanowni",
+            "b) Drodzy",
+            "c) Kochani"
+          ],
+          "explanation": "To formalne zwroty do urzędu: „Szanowni Państwo”. „Drodzy” i „Kochani” są zbyt prywatne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "b) aby",
+          "options": [
+            "a) że",
+            "b) aby",
+            "c) bo"
+          ],
+          "explanation": "Po „Piszę” mówimy, w jakim celu piszemy: „aby zgłosić”. „Że” i „bo” nie łączą się z bezokolicznikiem.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "c) około",
+          "options": [
+            "a) obok",
+            "b) wśród",
+            "c) około"
+          ],
+          "explanation": "„Około piętnastej” oznacza mniej więcej o tej godzinie. „Obok” i „wśród” nie mówią o czasie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "a) z",
+          "options": [
+            "a) z",
+            "b) od",
+            "c) przy"
+          ],
+          "explanation": "Torba z paskiem to torba, która ma pasek. „Od” i „przy” nie pasują do takiego opisu.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "b) czy",
+          "options": [
+            "a) że",
+            "b) czy",
+            "c) gdy"
+          ],
+          "explanation": "W pytaniu zależnym „zapytać, czy…” używamy słowa „czy”. „Że” i „gdy” nie tworzą pytania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "c) o",
+          "options": [
+            "a) za",
+            "b) na",
+            "c) o"
+          ],
+          "explanation": "Prosimy o coś: „Proszę o kontakt”. „Za” i „na” nie łączą się z czasownikiem „prosić” w tym znaczeniu.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "a) że",
+          "options": [
+            "a) że",
+            "b) żeby",
+            "c) czy"
+          ],
+          "explanation": "„Mam nadzieję, że…” to stała formuła. „Żeby” i „czy” nie pasują po słowach „mam nadzieję”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "b) od",
+          "options": [
+            "a) z",
+            "b) od",
+            "c) po"
+          ],
+          "explanation": "Zakres godzin: „od ósmej do osiemnastej”. „Z” i „po” nie tworzą takiego zakresu.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "c) za",
+          "options": [
+            "a) o",
+            "b) dla",
+            "c) za"
+          ],
+          "explanation": "Dziękujemy za coś: „dziękuję za pomoc”. „O” i „dla” nie pasują do czasownika „dziękować”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "a) Z poważaniem",
+          "options": [
+            "a) Z poważaniem",
+            "b) Na razie",
+            "c) Buziaki"
+          ],
+          "explanation": "To formalne pożegnanie na końcu listu do urzędu. „Na razie” i „Buziaki” są potoczne.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
   ]
 }

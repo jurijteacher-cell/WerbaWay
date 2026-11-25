@@ -6,102 +6,775 @@
   "estimated_minutes": 35,
   "blocks": [
     {
-      "block_id": "g1", "part": 1, "covers_slides": ["s2", "s3", "s4"],
+      "block_id": "g1",
+      "part": 1,
+      "covers_slides": [
+        "s2",
+        "s3",
+        "s4"
+      ],
       "exercise_type": "fill-in-blank",
       "title": "1. Rozgrzewka: grupa -m, -sz",
       "instruction": "Wpisz właściwą formę czasownika z nawiasu.",
       "items": [
-        { "id": "g1-1", "text": "W weekend Marta ___ w siatkówkę. (grać)", "answer": "gra", "grammar_point": "koniugacja-m-sz" },
-        { "id": "g1-2", "text": "Czy ty ___ grać w szachy? (umieć)", "answer": "umiesz", "grammar_point": "koniugacja-m-sz" },
-        { "id": "g1-3", "text": "My często ___ kryminały. (czytać)", "answer": "czytamy", "grammar_point": "koniugacja-m-sz" },
-        { "id": "g1-4", "text": "Wieczorem ___ muzyki. (ja, słuchać)", "answer": "słucham", "grammar_point": "koniugacja-m-sz" },
-        { "id": "g1-5", "text": "Moi rodzice ___ w ogrodzie. (odpoczywać)", "answer": "odpoczywają", "grammar_point": "koniugacja-m-sz" },
-        { "id": "g1-6", "text": "Czy wy ___ dużo czasu na hobby? (mieć)", "answer": "macie", "grammar_point": "koniugacja-m-sz" }
+        {
+          "id": "g1-1",
+          "text": "W weekend Marta ___ w siatkówkę. (grać)",
+          "answer": "gra",
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "g1-2",
+          "text": "Czy ty ___ grać w szachy? (umieć)",
+          "answer": "umiesz",
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "g1-3",
+          "text": "My często ___ kryminały. (czytać)",
+          "answer": "czytamy",
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "g1-4",
+          "text": "Wieczorem ___ muzyki. (ja, słuchać)",
+          "answer": "słucham",
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "g1-5",
+          "text": "Moi rodzice ___ w ogrodzie. (odpoczywać)",
+          "answer": "odpoczywają",
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "g1-6",
+          "text": "Czy wy ___ dużo czasu na hobby? (mieć)",
+          "answer": "macie",
+          "grammar_point": "koniugacja-m-sz"
+        }
       ]
     },
     {
-      "block_id": "g2", "part": 1, "covers_slides": ["s5"],
+      "block_id": "g2",
+      "part": 1,
+      "covers_slides": [
+        "s5"
+      ],
       "exercise_type": "matching",
       "title": "2. Formy: grupa -ę, -esz",
       "instruction": "Połącz bezokolicznik i osobę z właściwą formą.",
       "items": [
-        { "id": "g2-1", "left": "gotować (ja)", "right": "gotuję", "grammar_point": "koniugacja-e-esz" },
-        { "id": "g2-2", "left": "trenować (oni)", "right": "trenują", "grammar_point": "koniugacja-e-esz" },
-        { "id": "g2-3", "left": "rysować (my)", "right": "rysujemy", "grammar_point": "koniugacja-e-esz" },
-        { "id": "g2-4", "left": "chcieć (ty)", "right": "chcesz", "grammar_point": "koniugacja-e-esz" },
-        { "id": "g2-5", "left": "fotografować (wy)", "right": "fotografujecie", "grammar_point": "koniugacja-e-esz" },
-        { "id": "g2-6", "left": "chcieć (ona)", "right": "chce", "grammar_point": "koniugacja-e-esz" }
+        {
+          "id": "g2-1",
+          "left": "gotować (ja)",
+          "right": "gotuję",
+          "grammar_point": "koniugacja-e-esz"
+        },
+        {
+          "id": "g2-2",
+          "left": "trenować (oni)",
+          "right": "trenują",
+          "grammar_point": "koniugacja-e-esz"
+        },
+        {
+          "id": "g2-3",
+          "left": "rysować (my)",
+          "right": "rysujemy",
+          "grammar_point": "koniugacja-e-esz"
+        },
+        {
+          "id": "g2-4",
+          "left": "chcieć (ty)",
+          "right": "chcesz",
+          "grammar_point": "koniugacja-e-esz"
+        },
+        {
+          "id": "g2-5",
+          "left": "fotografować (wy)",
+          "right": "fotografujecie",
+          "grammar_point": "koniugacja-e-esz"
+        },
+        {
+          "id": "g2-6",
+          "left": "chcieć (ona)",
+          "right": "chce",
+          "grammar_point": "koniugacja-e-esz"
+        }
       ]
     },
     {
-      "block_id": "g3", "part": 1, "covers_slides": ["s6", "s7"],
+      "block_id": "g3",
+      "part": 1,
+      "covers_slides": [
+        "s6",
+        "s7"
+      ],
       "exercise_type": "fill-in-blank",
       "title": "3. Która forma pasuje?",
       "instruction": "Wybierz właściwą formę.",
       "items": [
-        { "id": "g3-1", "text": "Mój brat dobrze ___ po niemiecku.", "options": ["mówi", "mówa", "mówie"], "answer": "mówi", "explanation": "Mówić: grupa -ę, -isz, więc on mówi.", "grammar_point": "koniugacja-e-isz" },
-        { "id": "g3-2", "text": "Często ___ na imprezach?", "options": ["tańczysz", "tańczisz", "tańczesz"], "answer": "tańczysz", "explanation": "Po cz piszemy -y-: tańczysz.", "grammar_point": "koniugacja-e-isz" },
-        { "id": "g3-3", "text": "Oni ___ się grać na skrzypcach.", "options": ["uczą", "uczają", "uczysz"], "answer": "uczą", "explanation": "Uczyć się: oni uczą się.", "grammar_point": "koniugacja-e-isz" },
-        { "id": "g3-4", "text": "Bardzo ___ długie spacery.", "options": ["lubię", "lubiem", "lubisz"], "answer": "lubię", "explanation": "Lubić: ja lubię, końcówka -ę.", "grammar_point": "koniugacja-e-isz" },
-        { "id": "g3-5", "text": "Kasia codziennie ___ w lesie.", "options": ["biega", "biegi", "biegie"], "answer": "biega", "explanation": "-ać zwykle daje -am, -asz: ona biega.", "grammar_point": "koniugacja-m-sz" },
-        { "id": "g3-6", "text": "Czy wy ___ w każdy piątek?", "options": ["trenujecie", "trenowacie", "trenicie"], "answer": "trenujecie", "explanation": "-ować → -uj-: wy trenujecie.", "grammar_point": "koniugacja-e-esz" }
+        {
+          "id": "g3-1",
+          "text": "Mój brat dobrze ___ po niemiecku.",
+          "options": [
+            "mówi",
+            "mówa",
+            "mówie"
+          ],
+          "answer": "mówi",
+          "explanation": "Mówić: grupa -ę, -isz, więc on mówi.",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g3-2",
+          "text": "Często ___ na imprezach?",
+          "options": [
+            "tańczysz",
+            "tańczisz",
+            "tańczesz"
+          ],
+          "answer": "tańczysz",
+          "explanation": "Po cz piszemy -y-: tańczysz.",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g3-3",
+          "text": "Oni ___ się grać na skrzypcach.",
+          "options": [
+            "uczą",
+            "uczają",
+            "uczysz"
+          ],
+          "answer": "uczą",
+          "explanation": "Uczyć się: oni uczą się.",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g3-4",
+          "text": "Bardzo ___ długie spacery.",
+          "options": [
+            "lubię",
+            "lubiem",
+            "lubisz"
+          ],
+          "answer": "lubię",
+          "explanation": "Lubić: ja lubię, końcówka -ę.",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g3-5",
+          "text": "Kasia codziennie ___ w lesie.",
+          "options": [
+            "biega",
+            "biegi",
+            "biegie"
+          ],
+          "answer": "biega",
+          "explanation": "-ać zwykle daje -am, -asz: ona biega.",
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "g3-6",
+          "text": "Czy wy ___ w każdy piątek?",
+          "options": [
+            "trenujecie",
+            "trenowacie",
+            "trenicie"
+          ],
+          "answer": "trenujecie",
+          "explanation": "-ować → -uj-: wy trenujecie.",
+          "grammar_point": "koniugacja-e-esz"
+        }
       ]
     },
     {
-      "block_id": "g4", "part": 2, "covers_slides": ["s9", "s10"],
+      "block_id": "g4",
+      "part": 2,
+      "covers_slides": [
+        "s9",
+        "s10"
+      ],
       "exercise_type": "fill-in-blank",
       "title": "4. Lubię, umiem, mogę czy chcę?",
       "instruction": "Wybierz czasownik, który pasuje do sensu zdania.",
       "items": [
-        { "id": "g4-1", "text": "Nie ___ jeździć na nartach, ale chcę się nauczyć.", "options": ["umiem", "mogę", "lubię"], "answer": "umiem", "explanation": "Nie mam tej umiejętności, więc nie umiem.", "grammar_point": "modalne-bezokolicznik" },
-        { "id": "g4-2", "text": "Dziś nie ___ iść na basen, bo pracuję do wieczora.", "options": ["mogę", "umiem", "lubię"], "answer": "mogę", "explanation": "Nie mam czasu, to brak możliwości: nie mogę.", "grammar_point": "modalne-bezokolicznik" },
-        { "id": "g4-3", "text": "___ grać w planszówki: to mój ulubiony sposób na wieczór.", "options": ["Lubię", "Umiem", "Mogę"], "answer": "Lubię", "explanation": "Coś sprawia mi przyjemność, więc lubię.", "grammar_point": "modalne-bezokolicznik" },
-        { "id": "g4-4", "text": "W przyszłym roku ___ nauczyć się gotować po włosku.", "options": ["chcę", "umiem", "mogę"], "answer": "chcę", "explanation": "To plan na przyszłość, więc chcę.", "grammar_point": "modalne-bezokolicznik" },
-        { "id": "g4-5", "text": "Mój syn ma pięć lat i już ___ czytać.", "options": ["umie", "może", "chce"], "answer": "umie", "explanation": "Czytanie to umiejętność, więc umie.", "grammar_point": "modalne-bezokolicznik" },
-        { "id": "g4-6", "text": "Czy ___ tu grać w piłkę? — Tak, to boisko jest dla wszystkich.", "options": ["możemy", "umiemy", "lubimy"], "answer": "możemy", "explanation": "Pytamy o zgodę, więc możemy.", "grammar_point": "modalne-bezokolicznik" }
+        {
+          "id": "g4-1",
+          "text": "Nie ___ jeździć na nartach, ale chcę się nauczyć.",
+          "options": [
+            "umiem",
+            "mogę",
+            "lubię"
+          ],
+          "answer": "umiem",
+          "explanation": "Nie mam tej umiejętności, więc nie umiem.",
+          "grammar_point": "modalne-bezokolicznik"
+        },
+        {
+          "id": "g4-2",
+          "text": "Dziś nie ___ iść na basen, bo pracuję do wieczora.",
+          "options": [
+            "mogę",
+            "umiem",
+            "lubię"
+          ],
+          "answer": "mogę",
+          "explanation": "Nie mam czasu, to brak możliwości: nie mogę.",
+          "grammar_point": "modalne-bezokolicznik"
+        },
+        {
+          "id": "g4-3",
+          "text": "___ grać w planszówki: to mój ulubiony sposób na wieczór.",
+          "options": [
+            "Lubię",
+            "Umiem",
+            "Mogę"
+          ],
+          "answer": "Lubię",
+          "explanation": "Coś sprawia mi przyjemność, więc lubię.",
+          "grammar_point": "modalne-bezokolicznik"
+        },
+        {
+          "id": "g4-4",
+          "text": "W przyszłym roku ___ nauczyć się gotować po włosku.",
+          "options": [
+            "chcę",
+            "umiem",
+            "mogę"
+          ],
+          "answer": "chcę",
+          "explanation": "To plan na przyszłość, więc chcę.",
+          "grammar_point": "modalne-bezokolicznik"
+        },
+        {
+          "id": "g4-5",
+          "text": "Mój syn ma pięć lat i już ___ czytać.",
+          "options": [
+            "umie",
+            "może",
+            "chce"
+          ],
+          "answer": "umie",
+          "explanation": "Czytanie to umiejętność, więc umie.",
+          "grammar_point": "modalne-bezokolicznik"
+        },
+        {
+          "id": "g4-6",
+          "text": "Czy ___ tu grać w piłkę? — Tak, to boisko jest dla wszystkich.",
+          "options": [
+            "możemy",
+            "umiemy",
+            "lubimy"
+          ],
+          "answer": "możemy",
+          "explanation": "Pytamy o zgodę, więc możemy.",
+          "grammar_point": "modalne-bezokolicznik"
+        }
       ]
     },
     {
-      "block_id": "g5", "part": 2, "covers_slides": ["s11", "s12", "s13"],
+      "block_id": "g5",
+      "part": 2,
+      "covers_slides": [
+        "s11",
+        "s12",
+        "s13"
+      ],
       "exercise_type": "sentence-building",
       "title": "5. Przekształć zdanie",
       "instruction": "Napisz nowe zdanie według wskazówki w nawiasie.",
       "items": [
-        { "id": "g5-1", "prompt": "Gram w tenisa. (przeczenie)", "answer": "Nie gram w tenisa.", "accept": ["Ja nie gram w tenisa."], "grammar_point": "koniugacja-m-sz" },
-        { "id": "g5-2", "prompt": "Często tańczę. (nigdy)", "answer": "Nigdy nie tańczę.", "accept": ["Ja nigdy nie tańczę."], "grammar_point": "koniugacja-e-isz" },
-        { "id": "g5-3", "prompt": "Ola / grać / gitara", "answer": "Ola gra na gitarze.", "accept": ["Na gitarze gra Ola."], "grammar_point": "grac-w-na" },
-        { "id": "g5-4", "prompt": "Piotr / grać / szachy", "answer": "Piotr gra w szachy.", "accept": ["W szachy gra Piotr."], "grammar_point": "grac-w-na" },
-        { "id": "g5-5", "prompt": "Pływasz. (pytanie z „czy”)", "answer": "Czy pływasz?", "accept": ["Czy ty pływasz?"], "grammar_point": "koniugacja-m-sz" },
-        { "id": "g5-6", "prompt": "Rysujemy w parku. (czasami)", "answer": "Czasami rysujemy w parku.", "accept": ["Rysujemy czasami w parku.", "Rysujemy w parku czasami.", "W parku czasami rysujemy."], "grammar_point": "koniugacja-e-esz" }
+        {
+          "id": "g5-1",
+          "prompt": "Gram w tenisa. (przeczenie)",
+          "answer": "Nie gram w tenisa.",
+          "accept": [
+            "Ja nie gram w tenisa."
+          ],
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Często tańczę. (nigdy)",
+          "answer": "Nigdy nie tańczę.",
+          "accept": [
+            "Ja nigdy nie tańczę."
+          ],
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Ola / grać / gitara",
+          "answer": "Ola gra na gitarze.",
+          "accept": [
+            "Na gitarze gra Ola."
+          ],
+          "grammar_point": "grac-w-na"
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Piotr / grać / szachy",
+          "answer": "Piotr gra w szachy.",
+          "accept": [
+            "W szachy gra Piotr."
+          ],
+          "grammar_point": "grac-w-na"
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Pływasz. (pytanie z „czy”)",
+          "answer": "Czy pływasz?",
+          "accept": [
+            "Czy ty pływasz?"
+          ],
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Rysujemy w parku. (czasami)",
+          "answer": "Czasami rysujemy w parku.",
+          "accept": [
+            "Rysujemy czasami w parku.",
+            "Rysujemy w parku czasami.",
+            "W parku czasami rysujemy."
+          ],
+          "grammar_point": "koniugacja-e-esz"
+        }
       ]
     },
     {
-      "block_id": "g6", "part": 2, "covers_slides": ["s14", "s15", "s16", "s17"],
+      "block_id": "g6",
+      "part": 2,
+      "covers_slides": [
+        "s14",
+        "s15",
+        "s16",
+        "s17"
+      ],
       "exercise_type": "fill-in-blank",
       "title": "6. Uwaga: inne formy i pułapki",
       "instruction": "Wybierz właściwą odpowiedź.",
       "items": [
-        { "id": "g6-1", "text": "Codziennie ___ e-maile do klientów. (ja, pisać)", "options": ["piszę", "pisam", "pisuję"], "answer": "piszę", "explanation": "Pisać: ja piszę, ty piszesz.", "grammar_point": "koniugacja-e-esz" },
-        { "id": "g6-2", "text": "W lecie często ___ na rowerze. (ja, jeździć)", "options": ["jeżdżę", "jeździę", "jeżdżam"], "answer": "jeżdżę", "explanation": "Jeździć: ja jeżdżę, ale ty jeździsz.", "grammar_point": "koniugacja-e-isz" },
-        { "id": "g6-3", "text": "Moje dzieci zawsze ___ dużo słodyczy.", "options": ["jedzą", "jeją", "jemią"], "answer": "jedzą", "explanation": "Jeść: ja jem, ale oni jedzą.", "grammar_point": "koniugacja-m-sz" },
-        { "id": "g6-4", "text": "W wolnym czasie ___ seriale.", "options": ["oglądam", "patrzę", "widzę"], "answer": "oglądam", "explanation": "Serial, film, mecz: oglądać.", "grammar_point": "pulapki-uk" },
-        { "id": "g6-5", "text": "Dwa razy w tygodniu chodzę ___ basen.", "options": ["na", "w", "po"], "answer": "na", "explanation": "Basen, siłownia, trening: chodzić na.", "grammar_point": "pulapki-uk" },
-        { "id": "g6-6", "text": "___ ciekawe hobby: robię zdjęcia ptaków.", "options": ["Mam", "U mnie jest", "Jestem"], "answer": "Mam", "explanation": "Gdy coś mamy, mówimy: mieć.", "grammar_point": "pulapki-uk" }
+        {
+          "id": "g6-1",
+          "text": "Codziennie ___ e-maile do klientów. (ja, pisać)",
+          "options": [
+            "piszę",
+            "pisam",
+            "pisuję"
+          ],
+          "answer": "piszę",
+          "explanation": "Pisać: ja piszę, ty piszesz.",
+          "grammar_point": "koniugacja-e-esz"
+        },
+        {
+          "id": "g6-2",
+          "text": "W lecie często ___ na rowerze. (ja, jeździć)",
+          "options": [
+            "jeżdżę",
+            "jeździę",
+            "jeżdżam"
+          ],
+          "answer": "jeżdżę",
+          "explanation": "Jeździć: ja jeżdżę, ale ty jeździsz.",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g6-3",
+          "text": "Moje dzieci zawsze ___ dużo słodyczy.",
+          "options": [
+            "jedzą",
+            "jeją",
+            "jemią"
+          ],
+          "answer": "jedzą",
+          "explanation": "Jeść: ja jem, ale oni jedzą.",
+          "grammar_point": "koniugacja-m-sz"
+        },
+        {
+          "id": "g6-4",
+          "text": "W wolnym czasie ___ seriale.",
+          "options": [
+            "oglądam",
+            "patrzę",
+            "widzę"
+          ],
+          "answer": "oglądam",
+          "explanation": "Serial, film, mecz: oglądać.",
+          "grammar_point": "pulapki-uk"
+        },
+        {
+          "id": "g6-5",
+          "text": "Dwa razy w tygodniu chodzę ___ basen.",
+          "options": [
+            "na",
+            "w",
+            "po"
+          ],
+          "answer": "na",
+          "explanation": "Basen, siłownia, trening: chodzić na.",
+          "grammar_point": "pulapki-uk"
+        },
+        {
+          "id": "g6-6",
+          "text": "___ ciekawe hobby: robię zdjęcia ptaków.",
+          "options": [
+            "Mam",
+            "U mnie jest",
+            "Jestem"
+          ],
+          "answer": "Mam",
+          "explanation": "Gdy coś mamy, mówimy: mieć.",
+          "grammar_point": "pulapki-uk"
+        }
       ]
     },
     {
-      "block_id": "g7", "part": 2, "covers_slides": ["s9", "s11", "s13"],
+      "block_id": "g7",
+      "part": 2,
+      "covers_slides": [
+        "s9",
+        "s11",
+        "s13"
+      ],
       "exercise_type": "drag-and-drop",
       "title": "7. Historia: sobota Pawła",
       "instruction": "Przeciągnij słowa do tekstu. Trzy słowa nie pasują.",
-      "bank": ["śpi", "pije", "umie", "w", "ogląda", "dzwoni", "patrzy", "na", "umi"],
+      "bank": [
+        "śpi",
+        "pije",
+        "umie",
+        "w",
+        "ogląda",
+        "dzwoni",
+        "patrzy",
+        "na",
+        "umi"
+      ],
       "items": [
-        { "id": "g7-1", "text": "W sobotę Paweł ___ do dziesiątej, bo jest zmęczony.", "answer": "śpi", "grammar_point": "koniugacja-e-isz" },
-        { "id": "g7-2", "text": "Rano ___ kawę i czyta wiadomości.", "answer": "pije", "grammar_point": "koniugacja-e-esz" },
-        { "id": "g7-3", "text": "Paweł nie ___ gotować, więc je obiad w mieście.", "answer": "umie", "grammar_point": "modalne-bezokolicznik" },
-        { "id": "g7-4", "text": "Po obiedzie gra ___ piłkę z przyjaciółmi.", "answer": "w", "grammar_point": "grac-w-na" },
-        { "id": "g7-5", "text": "Wieczorem ___ film z dziewczyną.", "answer": "ogląda", "grammar_point": "pulapki-uk" },
-        { "id": "g7-6", "text": "W niedzielę ___ do mamy i długo z nią rozmawia.", "answer": "dzwoni", "grammar_point": "koniugacja-e-isz" }
+        {
+          "id": "g7-1",
+          "text": "W sobotę Paweł ___ do dziesiątej, bo jest zmęczony.",
+          "answer": "śpi",
+          "grammar_point": "koniugacja-e-isz"
+        },
+        {
+          "id": "g7-2",
+          "text": "Rano ___ kawę i czyta wiadomości.",
+          "answer": "pije",
+          "grammar_point": "koniugacja-e-esz"
+        },
+        {
+          "id": "g7-3",
+          "text": "Paweł nie ___ gotować, więc je obiad w mieście.",
+          "answer": "umie",
+          "grammar_point": "modalne-bezokolicznik"
+        },
+        {
+          "id": "g7-4",
+          "text": "Po obiedzie gra ___ piłkę z przyjaciółmi.",
+          "answer": "w",
+          "grammar_point": "grac-w-na"
+        },
+        {
+          "id": "g7-5",
+          "text": "Wieczorem ___ film z dziewczyną.",
+          "answer": "ogląda",
+          "grammar_point": "pulapki-uk"
+        },
+        {
+          "id": "g7-6",
+          "text": "W niedzielę ___ do mamy i długo z nią rozmawia.",
+          "answer": "dzwoni",
+          "grammar_point": "koniugacja-e-isz"
+        }
+      ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Recepcjonistka: Szkoła muzyczna „Rytm”, dzień dobry.\n\nTomek: Dzień dobry. Nazywam się Tomek. {el1-1} Chcę się zapisać na lekcje perkusji.\n\nRecepcjonistka: {el1-2} Czy grał pan już kiedyś?\n\nTomek: Nie, ale od roku uczę się sam w domu. {el1-3}\n\nRecepcjonistka: {el1-4} Mamy wolne miejsce we wtorek o osiemnastej.\n\nTomek: {el1-5} Pracuję do szesnastej, więc mogę przyjść.\n\nRecepcjonistka: Lekcja trwa godzinę i kosztuje sto złotych.\n\nTomek: {el1-6} Czy mogę najpierw przyjść na jedną lekcję próbną?\n\nRecepcjonistka: {el1-7} Pierwsza lekcja jest bezpłatna.\n\nTomek: Wspaniale! Czy mam przynieść pałeczki?\n\nRecepcjonistka: Nie trzeba, mamy je w szkole. {el1-8}",
+      "bank": [
+        "a) Ale jeszcze nie umiem grać szybko.",
+        "b) To nie szkodzi, zaczynamy od początku.",
+        "c) Bardzo dobrze, to świetny instrument.",
+        "d) Dzwonię w sprawie lekcji.",
+        "e) Niestety nie ma już miejsc.",
+        "f) Do zobaczenia we wtorek!",
+        "g) Oczywiście, to możliwe.",
+        "h) Hm, to dość drogo.",
+        "i) To dobry termin dla mnie.",
+        "j) Przepraszam, pomyliłem numer."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "d) Dzwonię w sprawie lekcji.",
+          "options": [
+            "a) Ale jeszcze nie umiem grać szybko.",
+            "b) To nie szkodzi, zaczynamy od początku.",
+            "c) Bardzo dobrze, to świetny instrument.",
+            "d) Dzwonię w sprawie lekcji.",
+            "e) Niestety nie ma już miejsc.",
+            "f) Do zobaczenia we wtorek!",
+            "g) Oczywiście, to możliwe.",
+            "h) Hm, to dość drogo.",
+            "i) To dobry termin dla mnie.",
+            "j) Przepraszam, pomyliłem numer."
+          ],
+          "explanation": "Tak mówimy przez telefon, gdy chcemy powiedzieć, po co dzwonimy. Następne zdanie wyjaśnia, o jaką lekcję chodzi.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "c) Bardzo dobrze, to świetny instrument.",
+          "options": [
+            "a) Ale jeszcze nie umiem grać szybko.",
+            "b) To nie szkodzi, zaczynamy od początku.",
+            "c) Bardzo dobrze, to świetny instrument.",
+            "d) Dzwonię w sprawie lekcji.",
+            "e) Niestety nie ma już miejsc.",
+            "f) Do zobaczenia we wtorek!",
+            "g) Oczywiście, to możliwe.",
+            "h) Hm, to dość drogo.",
+            "i) To dobry termin dla mnie.",
+            "j) Przepraszam, pomyliłem numer."
+          ],
+          "explanation": "Recepcjonistka reaguje na to, że Tomek chce grać na perkusji. „Przepraszam, pomyliłem numer” nie pasuje, bo Tomek dzwoni w dobre miejsce.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "a) Ale jeszcze nie umiem grać szybko.",
+          "options": [
+            "a) Ale jeszcze nie umiem grać szybko.",
+            "b) To nie szkodzi, zaczynamy od początku.",
+            "c) Bardzo dobrze, to świetny instrument.",
+            "d) Dzwonię w sprawie lekcji.",
+            "e) Niestety nie ma już miejsc.",
+            "f) Do zobaczenia we wtorek!",
+            "g) Oczywiście, to możliwe.",
+            "h) Hm, to dość drogo.",
+            "i) To dobry termin dla mnie.",
+            "j) Przepraszam, pomyliłem numer."
+          ],
+          "explanation": "Tomek mówi o swoim poziomie. Słowo „ale” łączy się ze zdaniem, że uczy się sam od roku.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "b) To nie szkodzi, zaczynamy od początku.",
+          "options": [
+            "a) Ale jeszcze nie umiem grać szybko.",
+            "b) To nie szkodzi, zaczynamy od początku.",
+            "c) Bardzo dobrze, to świetny instrument.",
+            "d) Dzwonię w sprawie lekcji.",
+            "e) Niestety nie ma już miejsc.",
+            "f) Do zobaczenia we wtorek!",
+            "g) Oczywiście, to możliwe.",
+            "h) Hm, to dość drogo.",
+            "i) To dobry termin dla mnie.",
+            "j) Przepraszam, pomyliłem numer."
+          ],
+          "explanation": "To miła reakcja na to, że Tomek jest początkujący. Zdanie „Niestety nie ma już miejsc” przeczy temu, że zaraz jest propozycja terminu.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "i) To dobry termin dla mnie.",
+          "options": [
+            "a) Ale jeszcze nie umiem grać szybko.",
+            "b) To nie szkodzi, zaczynamy od początku.",
+            "c) Bardzo dobrze, to świetny instrument.",
+            "d) Dzwonię w sprawie lekcji.",
+            "e) Niestety nie ma już miejsc.",
+            "f) Do zobaczenia we wtorek!",
+            "g) Oczywiście, to możliwe.",
+            "h) Hm, to dość drogo.",
+            "i) To dobry termin dla mnie.",
+            "j) Przepraszam, pomyliłem numer."
+          ],
+          "explanation": "Tomek odpowiada na propozycję terminu. Potem tłumaczy, że pracuje do szesnastej.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "h) Hm, to dość drogo.",
+          "options": [
+            "a) Ale jeszcze nie umiem grać szybko.",
+            "b) To nie szkodzi, zaczynamy od początku.",
+            "c) Bardzo dobrze, to świetny instrument.",
+            "d) Dzwonię w sprawie lekcji.",
+            "e) Niestety nie ma już miejsc.",
+            "f) Do zobaczenia we wtorek!",
+            "g) Oczywiście, to możliwe.",
+            "h) Hm, to dość drogo.",
+            "i) To dobry termin dla mnie.",
+            "j) Przepraszam, pomyliłem numer."
+          ],
+          "explanation": "Tomek reaguje na cenę lekcji. Zaraz potem pyta o lekcję próbną, bo cena jest dla niego wysoka.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "g) Oczywiście, to możliwe.",
+          "options": [
+            "a) Ale jeszcze nie umiem grać szybko.",
+            "b) To nie szkodzi, zaczynamy od początku.",
+            "c) Bardzo dobrze, to świetny instrument.",
+            "d) Dzwonię w sprawie lekcji.",
+            "e) Niestety nie ma już miejsc.",
+            "f) Do zobaczenia we wtorek!",
+            "g) Oczywiście, to możliwe.",
+            "h) Hm, to dość drogo.",
+            "i) To dobry termin dla mnie.",
+            "j) Przepraszam, pomyliłem numer."
+          ],
+          "explanation": "To odpowiedź na pytanie „Czy mogę…?”. Kolejne zdanie dodaje szczegół: pierwsza lekcja jest bezpłatna.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "f) Do zobaczenia we wtorek!",
+          "options": [
+            "a) Ale jeszcze nie umiem grać szybko.",
+            "b) To nie szkodzi, zaczynamy od początku.",
+            "c) Bardzo dobrze, to świetny instrument.",
+            "d) Dzwonię w sprawie lekcji.",
+            "e) Niestety nie ma już miejsc.",
+            "f) Do zobaczenia we wtorek!",
+            "g) Oczywiście, to możliwe.",
+            "h) Hm, to dość drogo.",
+            "i) To dobry termin dla mnie.",
+            "j) Przepraszam, pomyliłem numer."
+          ],
+          "explanation": "To miłe zakończenie rozmowy po ustaleniu terminu wtorkowej lekcji.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "Szanowni Państwo,\n\n{el2-1} w sprawie festiwalu muzycznego w górach. Chciałbym zapytać {el2-2} bilety. Czy są jeszcze bilety {el2-3} sobotę? {el2-4} można kupić bilety przez internet? Chcemy kupić je wcześniej, {el2-5} wtedy są tańsze.\n\nMieszkamy w Gdańsku i chcemy przyjechać pociągiem. Czy blisko festiwalu jest pole namiotowe? Słyszałem, {el2-6} w tym roku zagra kilka dobrych zespołów. Moja żona Ola i ja bardzo się {el2-7} na ten festiwal. Dziękuję {el2-8} informacje i czekam {el2-9} odpowiedź.\n\n{el2-10}\nTomek",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "c) Piszę",
+          "options": [
+            "a) Dzwonię",
+            "b) Mówię",
+            "c) Piszę"
+          ],
+          "explanation": "E-mail zaczynamy od „Piszę w sprawie…”. „Dzwonię” używamy przez telefon.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "a) o",
+          "options": [
+            "a) o",
+            "b) na",
+            "c) w"
+          ],
+          "explanation": "Mówimy „zapytać o coś”: o bilety. „Zapytać na bilety” jest błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "b) na",
+          "options": [
+            "a) w",
+            "b) na",
+            "c) do"
+          ],
+          "explanation": "„Bilety na sobotę” to bilety na dzień w tygodniu. Przy „w sobotę” nie ma słowa „bilety”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "a) Czy",
+          "options": [
+            "a) Czy",
+            "b) Że",
+            "c) Bo"
+          ],
+          "explanation": "Pytanie z „tak / nie” zaczyna się od „czy”. „Że” i „bo” nie otwierają pytania.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "c) bo",
+          "options": [
+            "a) dlatego",
+            "b) ale",
+            "c) bo"
+          ],
+          "explanation": "„Bo” wprowadza powód: kupujemy wcześniej, bo wtedy jest taniej. „Dlatego” stoi przed skutkiem.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "b) że",
+          "options": [
+            "a) czy",
+            "b) że",
+            "c) żeby"
+          ],
+          "explanation": "Po „słyszałem” podajemy informację słowem „że”. „Czy” jest pytaniem, a „żeby” pokazuje cel.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "a) cieszę",
+          "options": [
+            "a) cieszę",
+            "b) lubię",
+            "c) chcę"
+          ],
+          "explanation": "Mówimy „cieszyć się na coś”, gdy czekamy na coś miłego. „Lubię się na” jest błędne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "b) za",
+          "options": [
+            "a) na",
+            "b) za",
+            "c) o"
+          ],
+          "explanation": "Dziękuje się „za coś”: za informacje. „Dziękuję na” nie istnieje.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "c) na",
+          "options": [
+            "a) o",
+            "b) za",
+            "c) na"
+          ],
+          "explanation": "Czeka się „na coś”: na odpowiedź. To stała kolokacja.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "a) Z poważaniem",
+          "options": [
+            "a) Z poważaniem",
+            "b) Z poważaniu",
+            "c) Na poważanie"
+          ],
+          "explanation": "„Z poważaniem” to oficjalne zakończenie e-maila. Pozostałe formy są błędne.",
+          "grammar_point": "rejestr-formalny"
+        }
       ]
     }
   ]

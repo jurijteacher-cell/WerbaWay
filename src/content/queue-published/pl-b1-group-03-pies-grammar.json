@@ -1,433 +1,719 @@
 {
- "lesson_id": "pl-b1-group-03-pies",
- "exercise_type": "fill-in-blank",
- "title": "Tryb rozkazujący: wszystko razem",
- "instruction": "Osiem bloków od najłatwiejszego do najtrudniejszego.",
- "estimated_minutes": 25,
- "blocks": [
-  {
-   "block_id": "g1",
-   "exercise_type": "fill-in-blank",
-   "title": "1. Rozgrzewka: rozkaz czy informacja?",
-   "instruction": "Wybierz formę.",
-   "items": [
+  "lesson_id": "pl-b1-group-03-pies",
+  "exercise_type": "fill-in-blank",
+  "title": "Tryb rozkazujący: wszystko razem",
+  "instruction": "Osiem bloków od najłatwiejszego do najtrudniejszego.",
+  "estimated_minutes": 25,
+  "blocks": [
     {
-     "id": "g1-1",
-     "text": "Kasia codziennie ___ psa o siódmej.",
-     "answer": "wyprowadza",
-     "options": [
-      "wyprowadza",
-      "wyprowadzaj"
-     ],
-     "grammar_point": "tr-funkcja"
+      "block_id": "g1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Rozgrzewka: rozkaz czy informacja?",
+      "instruction": "Wybierz formę.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Kasia codziennie ___ psa o siódmej.",
+          "answer": "wyprowadza",
+          "options": [
+            "wyprowadza",
+            "wyprowadzaj"
+          ],
+          "grammar_point": "tr-funkcja"
+        },
+        {
+          "id": "g1-2",
+          "text": "Marek, ___ psa, zanim zacznie padać!",
+          "answer": "wyprowadź",
+          "options": [
+            "wyprowadź",
+            "wyprowadza"
+          ],
+          "grammar_point": "tr-funkcja"
+        },
+        {
+          "id": "g1-3",
+          "text": "Nasz pies zawsze ___ przy drzwiach.",
+          "answer": "czeka",
+          "options": [
+            "czeka",
+            "czekaj"
+          ],
+          "grammar_point": "tr-funkcja"
+        },
+        {
+          "id": "g1-4",
+          "text": "Reks, ___!",
+          "answer": "czekaj",
+          "options": [
+            "czekaj",
+            "czeka"
+          ],
+          "grammar_point": "tr-funkcja"
+        },
+        {
+          "id": "g1-5",
+          "text": "Proszę ___ psa na smyczy.",
+          "answer": "trzymać",
+          "options": [
+            "trzymać",
+            "trzyma"
+          ],
+          "grammar_point": "tr-funkcja"
+        }
+      ],
+      "covers_slides": [
+        "s2",
+        "s3"
+      ]
     },
     {
-     "id": "g1-2",
-     "text": "Marek, ___ psa, zanim zacznie padać!",
-     "answer": "wyprowadź",
-     "options": [
-      "wyprowadź",
-      "wyprowadza"
-     ],
-     "grammar_point": "tr-funkcja"
+      "block_id": "g2",
+      "exercise_type": "matching",
+      "title": "2. Od bezokolicznika do rozkazu",
+      "instruction": "Połącz bezokolicznik z formą „ty”.",
+      "items": [
+        {
+          "id": "g2-1",
+          "left": "sprzątać",
+          "right": "sprzątaj",
+          "grammar_point": "tr-wzor"
+        },
+        {
+          "id": "g2-2",
+          "left": "wyprowadzać",
+          "right": "wyprowadzaj",
+          "grammar_point": "tr-wzor"
+        },
+        {
+          "id": "g2-3",
+          "left": "uczyć",
+          "right": "ucz",
+          "grammar_point": "tr-wzor"
+        },
+        {
+          "id": "g2-4",
+          "left": "karmić",
+          "right": "karm",
+          "grammar_point": "tr-wzor"
+        },
+        {
+          "id": "g2-5",
+          "left": "czesać",
+          "right": "czesz",
+          "grammar_point": "tr-wzor"
+        },
+        {
+          "id": "g2-6",
+          "left": "dzwonić",
+          "right": "dzwoń",
+          "grammar_point": "tr-wzor"
+        }
+      ],
+      "covers_slides": [
+        "s3",
+        "s5",
+        "s6"
+      ]
     },
     {
-     "id": "g1-3",
-     "text": "Nasz pies zawsze ___ przy drzwiach.",
-     "answer": "czeka",
-     "options": [
-      "czeka",
-      "czekaj"
-     ],
-     "grammar_point": "tr-funkcja"
+      "block_id": "g3",
+      "exercise_type": "sentence-building",
+      "title": "3. Przekształcenia: musisz → rozkaz",
+      "instruction": "Powiedz to samo krócej, w trybie rozkazującym.",
+      "items": [
+        {
+          "id": "g3-1",
+          "prompt": "Musisz kupić smycz.",
+          "answer": "Kup smycz.",
+          "grammar_point": "tr-osoby"
+        },
+        {
+          "id": "g3-2",
+          "prompt": "Musisz zaszczepić psa.",
+          "answer": "Zaszczep psa.",
+          "grammar_point": "tr-osoby"
+        },
+        {
+          "id": "g3-3",
+          "prompt": "Musicie ustalić zasady.",
+          "answer": "Ustalcie zasady.",
+          "grammar_point": "tr-osoby"
+        },
+        {
+          "id": "g3-4",
+          "prompt": "Musimy wyjść z psem.",
+          "answer": "Wyjdźmy z psem.",
+          "grammar_point": "tr-osoby"
+        },
+        {
+          "id": "g3-5",
+          "prompt": "Musisz być cierpliwy.",
+          "answer": "Bądź cierpliwy.",
+          "grammar_point": "tr-osoby"
+        }
+      ],
+      "covers_slides": [
+        "s4",
+        "s5",
+        "s9"
+      ]
     },
     {
-     "id": "g1-4",
-     "text": "Reks, ___!",
-     "answer": "czekaj",
-     "options": [
-      "czekaj",
-      "czeka"
-     ],
-     "grammar_point": "tr-funkcja"
+      "block_id": "g4",
+      "exercise_type": "sentence-building",
+      "title": "4. Przekształcenia: rada → zakaz",
+      "instruction": "Zamień radę na zakaz. Pamiętaj o formie niedokonanej i dopełniaczu.",
+      "items": [
+        {
+          "id": "g4-1",
+          "prompt": "Karm psa przy stole.",
+          "answer": "Nie karm psa przy stole.",
+          "grammar_point": "tr-przeczenie"
+        },
+        {
+          "id": "g4-2",
+          "prompt": "Daj mu słodycze.",
+          "answer": "Nie dawaj mu słodyczy.",
+          "grammar_point": "tr-przeczenie"
+        },
+        {
+          "id": "g4-3",
+          "prompt": "Zostaw go samego na cały dzień.",
+          "answer": "Nie zostawiaj go samego na cały dzień.",
+          "grammar_point": "tr-przeczenie"
+        },
+        {
+          "id": "g4-4",
+          "prompt": "Kupcie psa z ogłoszenia.",
+          "answer": "Nie kupujcie psa z ogłoszenia.",
+          "grammar_point": "tr-przeczenie"
+        },
+        {
+          "id": "g4-5",
+          "prompt": "Krzycz na niego.",
+          "answer": "Nie krzycz na niego.",
+          "grammar_point": "tr-przeczenie"
+        }
+      ],
+      "covers_slides": [
+        "s7",
+        "s8"
+      ]
     },
     {
-     "id": "g1-5",
-     "text": "Proszę ___ psa na smyczy.",
-     "answer": "trzymać",
-     "options": [
-      "trzymać",
-      "trzyma"
-     ],
-     "grammar_point": "tr-funkcja"
+      "block_id": "g5",
+      "exercise_type": "fill-in-blank",
+      "title": "5. Kartka dla opiekuna",
+      "instruction": "Wpisz czasownik w trybie rozkazującym (ty).",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Rano ___ (wyjść) z Reksem o siódmej.",
+          "answer": "wyjdź",
+          "grammar_point": "tr-praktyka"
+        },
+        {
+          "id": "g5-2",
+          "text": "___ (dać) mu pół miski karmy.",
+          "answer": "Daj",
+          "grammar_point": "tr-praktyka"
+        },
+        {
+          "id": "g5-3",
+          "text": "Nie ___ (dawać) mu kości z kurczaka!",
+          "answer": "dawaj",
+          "grammar_point": "tr-praktyka"
+        },
+        {
+          "id": "g5-4",
+          "text": "Po spacerze ___ (wytrzeć) mu łapy.",
+          "answer": "wytrzyj",
+          "grammar_point": "tr-praktyka"
+        },
+        {
+          "id": "g5-5",
+          "text": "Jeśli coś się stanie, ___ (zadzwonić) do mnie albo do weterynarza.",
+          "answer": "zadzwoń",
+          "grammar_point": "tr-praktyka"
+        },
+        {
+          "id": "g5-6",
+          "text": "I ___ (nie martwić się) — on tylko głośno szczeka!",
+          "answer": "nie martw się",
+          "grammar_point": "tr-praktyka"
+        }
+      ],
+      "covers_slides": [
+        "s5",
+        "s6",
+        "s10"
+      ]
+    },
+    {
+      "block_id": "g6",
+      "exercise_type": "fill-in-blank",
+      "title": "6. Kto mówi i do kogo?",
+      "instruction": "Wybierz zdanie, które pasuje do sytuacji.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "W schronisku, do pracownika: ___",
+          "answer": "Proszę mi pokazać tego psa.",
+          "options": [
+            "Proszę mi pokazać tego psa.",
+            "Pokaż mi tego psa."
+          ],
+          "explanation": "Do obcej osoby — proszę + bezokolicznik.",
+          "grammar_point": "tr-ton"
+        },
+        {
+          "id": "g6-2",
+          "text": "Do męża: ___",
+          "answer": "Weź, proszę, psa na spacer.",
+          "options": [
+            "Weź, proszę, psa na spacer.",
+            "Niech pan weźmie psa na spacer."
+          ],
+          "explanation": "Do bliskiej osoby — ty + proszę.",
+          "grammar_point": "tr-ton"
+        },
+        {
+          "id": "g6-3",
+          "text": "Do psa: ___",
+          "answer": "Siad!",
+          "options": [
+            "Siad!",
+            "Proszę usiąść."
+          ],
+          "explanation": "Pies zna krótkie komendy, nie grzeczne formy.",
+          "grammar_point": "tr-ton"
+        },
+        {
+          "id": "g6-4",
+          "text": "Weterynarz do klienta: ___",
+          "answer": "Niech pan przytrzyma psa.",
+          "options": [
+            "Niech pan przytrzyma psa.",
+            "Przytrzymaj psa."
+          ],
+          "explanation": "Lekarz do klienta — forma pan / pani.",
+          "grammar_point": "tr-ton"
+        }
+      ],
+      "covers_slides": [
+        "s11",
+        "s12",
+        "s13",
+        "s14"
+      ]
+    },
+    {
+      "block_id": "g7",
+      "exercise_type": "drag-and-drop",
+      "title": "7. Nieregularne w praktyce",
+      "instruction": "Przeciągnij formę w lukę. Dwie formy nie pasują.",
+      "bank": [
+        "Bądź",
+        "Weź",
+        "Chodź",
+        "Zostań",
+        "Idź",
+        "Będź"
+      ],
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "___ cierpliwy, on dopiero przyjechał!",
+          "answer": "Bądź",
+          "grammar_point": "tr-nieregularne"
+        },
+        {
+          "id": "g7-2",
+          "text": "___ smycz z szafy, wychodzimy!",
+          "answer": "Weź",
+          "grammar_point": "tr-nieregularne"
+        },
+        {
+          "id": "g7-3",
+          "text": "___ tutaj, Reks, do mnie!",
+          "answer": "Chodź",
+          "grammar_point": "tr-nieregularne"
+        },
+        {
+          "id": "g7-4",
+          "text": "___ w domu, dziś nie idziesz z nami!",
+          "answer": "Zostań",
+          "grammar_point": "tr-nieregularne"
+        }
+      ],
+      "covers_slides": [
+        "s9"
+      ]
+    },
+    {
+      "block_id": "g8",
+      "exercise_type": "fill-in-blank",
+      "title": "8. Pułapki",
+      "instruction": "Wybierz poprawną formę. Po odpowiedzi przeczytaj wyjaśnienie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Burek, nie ___ tego, to śmieci!",
+          "answer": "jedz",
+          "options": [
+            "jedz",
+            "jedź"
+          ],
+          "explanation": "Jedz — od jeść. Jedź — od jechać.",
+          "grammar_point": "tr-pulapki"
+        },
+        {
+          "id": "g8-2",
+          "text": "Nie ___ się, to tylko burza.",
+          "answer": "bój",
+          "options": [
+            "bój",
+            "boisz"
+          ],
+          "explanation": "Rozkaz od „bać się”: bój się.",
+          "grammar_point": "tr-pulapki"
+        },
+        {
+          "id": "g8-3",
+          "text": "___ do parku, jest ładna pogoda!",
+          "answer": "Chodźmy",
+          "options": [
+            "Chodźmy",
+            "Dawaj chodźmy"
+          ],
+          "explanation": "Propozycja po polsku: forma -my, bez «давай».",
+          "grammar_point": "tr-pulapki"
+        },
+        {
+          "id": "g8-4",
+          "text": "Nie ___ psu tej karmy, jest dla kotów.",
+          "answer": "dawaj",
+          "options": [
+            "dawaj",
+            "daj"
+          ],
+          "explanation": "Zakaz — forma niedokonana.",
+          "grammar_point": "tr-pulapki"
+        },
+        {
+          "id": "g8-5",
+          "text": "Niech sąsiad ___ do mnie wieczorem.",
+          "answer": "zadzwoni",
+          "options": [
+            "zadzwoni",
+            "zadzwoń"
+          ],
+          "explanation": "Niech + zwykła forma „on”.",
+          "grammar_point": "tr-pulapki"
+        },
+        {
+          "id": "g8-6",
+          "text": "Kasia, ___ drzwi, proszę!",
+          "answer": "zamknij",
+          "options": [
+            "zamknij",
+            "zamknę"
+          ],
+          "explanation": "Tryb rozkazujący: zamknij. Zamknę to czas przyszły.",
+          "grammar_point": "tr-pulapki"
+        }
+      ],
+      "covers_slides": [
+        "s15",
+        "s16"
+      ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Kasia: Dzień dobry, w czym mogę pomóc?\n\nAdam: Dzień dobry. Chciałbym adoptować psa. {el1-1}\n\nKasia: {el1-2} Tu mamy spokojną sukę, Lunę.\n\nAdam: {el1-3}\n\nKasia: Ma cztery lata, jest zaszczepiona i chętnie chodzi na spacery.\n\nAdam: {el1-4}\n\nKasia: {el1-5} Potem zrobimy kilka spacerów zapoznawczych.\n\nAdam: {el1-6}\n\nKasia: Tak, jutro o dziesiątej. {el1-7}\n\nAdam: {el1-8}",
+      "bank": [
+        "a) Proszę zabrać dowód osobisty i smycz.",
+        "b) Niestety schronisko jest dziś nieczynne.",
+        "c) Czy mogę najpierw zobaczyć kilka psów?",
+        "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+        "e) Jaka śliczna! Ile ma lat?",
+        "f) Karma dla psów jest dziś w promocji.",
+        "g) Oczywiście, zapraszam do boksów.",
+        "h) Czy mogę przyjść na spacer już jutro?",
+        "i) To dokładnie taki pies, jakiego szukam.",
+        "j) Dziękuję, do zobaczenia jutro."
+      ],
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "c) Czy mogę najpierw zobaczyć kilka psów?",
+          "options": [
+            "a) Proszę zabrać dowód osobisty i smycz.",
+            "b) Niestety schronisko jest dziś nieczynne.",
+            "c) Czy mogę najpierw zobaczyć kilka psów?",
+            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "e) Jaka śliczna! Ile ma lat?",
+            "f) Karma dla psów jest dziś w promocji.",
+            "g) Oczywiście, zapraszam do boksów.",
+            "h) Czy mogę przyjść na spacer już jutro?",
+            "i) To dokładnie taki pies, jakiego szukam.",
+            "j) Dziękuję, do zobaczenia jutro."
+          ],
+          "explanation": "Adam chce poznać zwierzęta przed decyzją. Kasia odpowiada pozytywnie i prowadzi go do boksów.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "g) Oczywiście, zapraszam do boksów.",
+          "options": [
+            "a) Proszę zabrać dowód osobisty i smycz.",
+            "b) Niestety schronisko jest dziś nieczynne.",
+            "c) Czy mogę najpierw zobaczyć kilka psów?",
+            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "e) Jaka śliczna! Ile ma lat?",
+            "f) Karma dla psów jest dziś w promocji.",
+            "g) Oczywiście, zapraszam do boksów.",
+            "h) Czy mogę przyjść na spacer już jutro?",
+            "i) To dokładnie taki pies, jakiego szukam.",
+            "j) Dziękuję, do zobaczenia jutro."
+          ],
+          "explanation": "„Oczywiście” potwierdza prośbę. Dopiero po tym Kasia pokazuje psa, więc „nieczynne schronisko” do tej rozmowy nie pasuje.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "e) Jaka śliczna! Ile ma lat?",
+          "options": [
+            "a) Proszę zabrać dowód osobisty i smycz.",
+            "b) Niestety schronisko jest dziś nieczynne.",
+            "c) Czy mogę najpierw zobaczyć kilka psów?",
+            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "e) Jaka śliczna! Ile ma lat?",
+            "f) Karma dla psów jest dziś w promocji.",
+            "g) Oczywiście, zapraszam do boksów.",
+            "h) Czy mogę przyjść na spacer już jutro?",
+            "i) To dokładnie taki pies, jakiego szukam.",
+            "j) Dziękuję, do zobaczenia jutro."
+          ],
+          "explanation": "Adam reaguje na widok Luny i pyta o jej wiek. Odpowiedź Kasi zaczyna się od liczby lat.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "i) To dokładnie taki pies, jakiego szukam.",
+          "options": [
+            "a) Proszę zabrać dowód osobisty i smycz.",
+            "b) Niestety schronisko jest dziś nieczynne.",
+            "c) Czy mogę najpierw zobaczyć kilka psów?",
+            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "e) Jaka śliczna! Ile ma lat?",
+            "f) Karma dla psów jest dziś w promocji.",
+            "g) Oczywiście, zapraszam do boksów.",
+            "h) Czy mogę przyjść na spacer już jutro?",
+            "i) To dokładnie taki pies, jakiego szukam.",
+            "j) Dziękuję, do zobaczenia jutro."
+          ],
+          "explanation": "Po opisie Luny Adam mówi, że mu się podoba. To naturalna reakcja po usłyszeniu informacji o psie.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+          "options": [
+            "a) Proszę zabrać dowód osobisty i smycz.",
+            "b) Niestety schronisko jest dziś nieczynne.",
+            "c) Czy mogę najpierw zobaczyć kilka psów?",
+            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "e) Jaka śliczna! Ile ma lat?",
+            "f) Karma dla psów jest dziś w promocji.",
+            "g) Oczywiście, zapraszam do boksów.",
+            "h) Czy mogę przyjść na spacer już jutro?",
+            "i) To dokładnie taki pies, jakiego szukam.",
+            "j) Dziękuję, do zobaczenia jutro."
+          ],
+          "explanation": "Kasia opisuje pierwszy etap adopcji. Następne zdanie zaczyna się od „Potem”, więc poprzednie musi zawierać „najpierw”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "h) Czy mogę przyjść na spacer już jutro?",
+          "options": [
+            "a) Proszę zabrać dowód osobisty i smycz.",
+            "b) Niestety schronisko jest dziś nieczynne.",
+            "c) Czy mogę najpierw zobaczyć kilka psów?",
+            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "e) Jaka śliczna! Ile ma lat?",
+            "f) Karma dla psów jest dziś w promocji.",
+            "g) Oczywiście, zapraszam do boksów.",
+            "h) Czy mogę przyjść na spacer już jutro?",
+            "i) To dokładnie taki pies, jakiego szukam.",
+            "j) Dziękuję, do zobaczenia jutro."
+          ],
+          "explanation": "Po opisie procedury Adam pyta o termin spaceru. Kasia odpowiada: „Tak, jutro o dziesiątej”.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "a) Proszę zabrać dowód osobisty i smycz.",
+          "options": [
+            "a) Proszę zabrać dowód osobisty i smycz.",
+            "b) Niestety schronisko jest dziś nieczynne.",
+            "c) Czy mogę najpierw zobaczyć kilka psów?",
+            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "e) Jaka śliczna! Ile ma lat?",
+            "f) Karma dla psów jest dziś w promocji.",
+            "g) Oczywiście, zapraszam do boksów.",
+            "h) Czy mogę przyjść na spacer już jutro?",
+            "i) To dokładnie taki pies, jakiego szukam.",
+            "j) Dziękuję, do zobaczenia jutro."
+          ],
+          "explanation": "Kasia podaje, co trzeba przynieść na spacer. To prośba grzeczna, w formie „proszę” i bezokolicznika.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "j) Dziękuję, do zobaczenia jutro.",
+          "options": [
+            "a) Proszę zabrać dowód osobisty i smycz.",
+            "b) Niestety schronisko jest dziś nieczynne.",
+            "c) Czy mogę najpierw zobaczyć kilka psów?",
+            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "e) Jaka śliczna! Ile ma lat?",
+            "f) Karma dla psów jest dziś w promocji.",
+            "g) Oczywiście, zapraszam do boksów.",
+            "h) Czy mogę przyjść na spacer już jutro?",
+            "i) To dokładnie taki pies, jakiego szukam.",
+            "j) Dziękuję, do zobaczenia jutro."
+          ],
+          "explanation": "Adam kończy rozmowę, bo ustalili już godzinę spotkania. Informacja o promocji karmy nie pasuje do tej rozmowy.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "Szanowni Państwo,\n\nPiszę, {el2-1} zapytać o adopcję psa. Na Państwa stronie internetowej zobaczyłem suczkę o imieniu Luna. Mieszkam z żoną w dwupokojowym mieszkaniu niedaleko parku, więc codziennie możemy wychodzić na długie spacery. Zależy mi {el2-2} tym, żeby wziąć psa spokojnego, ponieważ mieszkam w bloku. Chciałbym zapytać, {el2-3} Luna jest zaszczepiona i ma czip. Czy mogę przyjść do schroniska w sobotę, żeby ją {el2-4}? Mam duże {el2-5} w opiece nad zwierzętami, bo od dziecka mieszkałem z psami. Jestem gotów wypełnić ankietę adopcyjną i {el2-6} umowę. Proszę także {el2-7} mnie, jakie dokumenty muszę zabrać ze sobą. W razie pytań proszę o {el2-8} telefoniczny pod numerem 600 100 200. Z góry dziękuję {el2-9} odpowiedź.\n\n{el2-10}\nAdam Wójcik",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "a) aby",
+          "options": [
+            "a) aby",
+            "b) bo",
+            "c) więc"
+          ],
+          "explanation": "Po „Piszę” podajemy cel listu: „aby zapytać”. „Bo” i „więc” wprowadzają przyczynę lub skutek, a nie cel.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "b) na",
+          "options": [
+            "a) o",
+            "b) na",
+            "c) w"
+          ],
+          "explanation": "Mówimy „zależy mi na czymś”. Przyimki „o” i „w” nie pasują do czasownika „zależeć”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "c) czy",
+          "options": [
+            "a) jeśli",
+            "b) że",
+            "c) czy"
+          ],
+          "explanation": "Przy pytaniu pośrednim używamy „czy”: „zapytać, czy…”. „Jeśli” oznacza warunek, a „że” wprowadza informację.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "a) poznać",
+          "options": [
+            "a) poznać",
+            "b) znać",
+            "c) wiedzieć"
+          ],
+          "explanation": "„Poznać psa” znaczy spotkać go po raz pierwszy. „Znać” i „wiedzieć” opisują stan, nie pierwsze spotkanie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "c) doświadczenie",
+          "options": [
+            "a) przeżycie",
+            "b) wspomnienie",
+            "c) doświadczenie"
+          ],
+          "explanation": "Mówimy „mieć doświadczenie w czymś”, czyli umieć coś z praktyki. „Przeżycie” i „wspomnienie” nie pasują do opieki nad zwierzętami.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "b) podpisać",
+          "options": [
+            "a) zapisać",
+            "b) podpisać",
+            "c) wpisać"
+          ],
+          "explanation": "Umowę się „podpisuje”. „Zapisać umowę” i „wpisać umowę” nie oznaczają złożenia podpisu.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "b) poinformować",
+          "options": [
+            "a) powiedzieć",
+            "b) poinformować",
+            "c) opowiedzieć"
+          ],
+          "explanation": "„Poinformować kogoś, jakie…” to formalne wyrażenie. „Powiedzieć mnie” i „opowiedzieć mnie” są niepoprawne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "a) kontakt",
+          "options": [
+            "a) kontakt",
+            "b) kontrolę",
+            "c) kontakty"
+          ],
+          "explanation": "„Proszę o kontakt” to częsta formuła w liście. „Kontrola” i „kontakty” nie pasują do prośby o telefon.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "c) za",
+          "options": [
+            "a) o",
+            "b) na",
+            "c) za"
+          ],
+          "explanation": "Mówimy „dziękować za coś”. „Dziękować o” i „dziękować na” są niepoprawne.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "c) Z poważaniem",
+          "options": [
+            "a) Cześć",
+            "b) Na razie",
+            "c) Z poważaniem"
+          ],
+          "explanation": "„Z poważaniem” kończy oficjalny lub półoficjalny e-mail. „Cześć” i „Na razie” są zbyt swobodne.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
     }
-   ],
-   "covers_slides": [
-    "s2",
-    "s3"
-   ]
-  },
-  {
-   "block_id": "g2",
-   "exercise_type": "matching",
-   "title": "2. Od bezokolicznika do rozkazu",
-   "instruction": "Połącz bezokolicznik z formą „ty”.",
-   "items": [
-    {
-     "id": "g2-1",
-     "left": "sprzątać",
-     "right": "sprzątaj",
-     "grammar_point": "tr-wzor"
-    },
-    {
-     "id": "g2-2",
-     "left": "wyprowadzać",
-     "right": "wyprowadzaj",
-     "grammar_point": "tr-wzor"
-    },
-    {
-     "id": "g2-3",
-     "left": "uczyć",
-     "right": "ucz",
-     "grammar_point": "tr-wzor"
-    },
-    {
-     "id": "g2-4",
-     "left": "karmić",
-     "right": "karm",
-     "grammar_point": "tr-wzor"
-    },
-    {
-     "id": "g2-5",
-     "left": "czesać",
-     "right": "czesz",
-     "grammar_point": "tr-wzor"
-    },
-    {
-     "id": "g2-6",
-     "left": "dzwonić",
-     "right": "dzwoń",
-     "grammar_point": "tr-wzor"
-    }
-   ],
-   "covers_slides": [
-    "s3",
-    "s5",
-    "s6"
-   ]
-  },
-  {
-   "block_id": "g3",
-   "exercise_type": "sentence-building",
-   "title": "3. Przekształcenia: musisz → rozkaz",
-   "instruction": "Powiedz to samo krócej, w trybie rozkazującym.",
-   "items": [
-    {
-     "id": "g3-1",
-     "prompt": "Musisz kupić smycz.",
-     "answer": "Kup smycz.",
-     "grammar_point": "tr-osoby"
-    },
-    {
-     "id": "g3-2",
-     "prompt": "Musisz zaszczepić psa.",
-     "answer": "Zaszczep psa.",
-     "grammar_point": "tr-osoby"
-    },
-    {
-     "id": "g3-3",
-     "prompt": "Musicie ustalić zasady.",
-     "answer": "Ustalcie zasady.",
-     "grammar_point": "tr-osoby"
-    },
-    {
-     "id": "g3-4",
-     "prompt": "Musimy wyjść z psem.",
-     "answer": "Wyjdźmy z psem.",
-     "grammar_point": "tr-osoby"
-    },
-    {
-     "id": "g3-5",
-     "prompt": "Musisz być cierpliwy.",
-     "answer": "Bądź cierpliwy.",
-     "grammar_point": "tr-osoby"
-    }
-   ],
-   "covers_slides": [
-    "s4",
-    "s5",
-    "s9"
-   ]
-  },
-  {
-   "block_id": "g4",
-   "exercise_type": "sentence-building",
-   "title": "4. Przekształcenia: rada → zakaz",
-   "instruction": "Zamień radę na zakaz. Pamiętaj o formie niedokonanej i dopełniaczu.",
-   "items": [
-    {
-     "id": "g4-1",
-     "prompt": "Karm psa przy stole.",
-     "answer": "Nie karm psa przy stole.",
-     "grammar_point": "tr-przeczenie"
-    },
-    {
-     "id": "g4-2",
-     "prompt": "Daj mu słodycze.",
-     "answer": "Nie dawaj mu słodyczy.",
-     "grammar_point": "tr-przeczenie"
-    },
-    {
-     "id": "g4-3",
-     "prompt": "Zostaw go samego na cały dzień.",
-     "answer": "Nie zostawiaj go samego na cały dzień.",
-     "grammar_point": "tr-przeczenie"
-    },
-    {
-     "id": "g4-4",
-     "prompt": "Kupcie psa z ogłoszenia.",
-     "answer": "Nie kupujcie psa z ogłoszenia.",
-     "grammar_point": "tr-przeczenie"
-    },
-    {
-     "id": "g4-5",
-     "prompt": "Krzycz na niego.",
-     "answer": "Nie krzycz na niego.",
-     "grammar_point": "tr-przeczenie"
-    }
-   ],
-   "covers_slides": [
-    "s7",
-    "s8"
-   ]
-  },
-  {
-   "block_id": "g5",
-   "exercise_type": "fill-in-blank",
-   "title": "5. Kartka dla opiekuna",
-   "instruction": "Wpisz czasownik w trybie rozkazującym (ty).",
-   "items": [
-    {
-     "id": "g5-1",
-     "text": "Rano ___ (wyjść) z Reksem o siódmej.",
-     "answer": "wyjdź",
-     "grammar_point": "tr-praktyka"
-    },
-    {
-     "id": "g5-2",
-     "text": "___ (dać) mu pół miski karmy.",
-     "answer": "Daj",
-     "grammar_point": "tr-praktyka"
-    },
-    {
-     "id": "g5-3",
-     "text": "Nie ___ (dawać) mu kości z kurczaka!",
-     "answer": "dawaj",
-     "grammar_point": "tr-praktyka"
-    },
-    {
-     "id": "g5-4",
-     "text": "Po spacerze ___ (wytrzeć) mu łapy.",
-     "answer": "wytrzyj",
-     "grammar_point": "tr-praktyka"
-    },
-    {
-     "id": "g5-5",
-     "text": "Jeśli coś się stanie, ___ (zadzwonić) do mnie albo do weterynarza.",
-     "answer": "zadzwoń",
-     "grammar_point": "tr-praktyka"
-    },
-    {
-     "id": "g5-6",
-     "text": "I ___ (nie martwić się) — on tylko głośno szczeka!",
-     "answer": "nie martw się",
-     "grammar_point": "tr-praktyka"
-    }
-   ],
-   "covers_slides": [
-    "s5",
-    "s6",
-    "s10"
-   ]
-  },
-  {
-   "block_id": "g6",
-   "exercise_type": "fill-in-blank",
-   "title": "6. Kto mówi i do kogo?",
-   "instruction": "Wybierz zdanie, które pasuje do sytuacji.",
-   "items": [
-    {
-     "id": "g6-1",
-     "text": "W schronisku, do pracownika: ___",
-     "answer": "Proszę mi pokazać tego psa.",
-     "options": [
-      "Proszę mi pokazać tego psa.",
-      "Pokaż mi tego psa."
-     ],
-     "explanation": "Do obcej osoby — proszę + bezokolicznik.",
-     "grammar_point": "tr-ton"
-    },
-    {
-     "id": "g6-2",
-     "text": "Do męża: ___",
-     "answer": "Weź, proszę, psa na spacer.",
-     "options": [
-      "Weź, proszę, psa na spacer.",
-      "Niech pan weźmie psa na spacer."
-     ],
-     "explanation": "Do bliskiej osoby — ty + proszę.",
-     "grammar_point": "tr-ton"
-    },
-    {
-     "id": "g6-3",
-     "text": "Do psa: ___",
-     "answer": "Siad!",
-     "options": [
-      "Siad!",
-      "Proszę usiąść."
-     ],
-     "explanation": "Pies zna krótkie komendy, nie grzeczne formy.",
-     "grammar_point": "tr-ton"
-    },
-    {
-     "id": "g6-4",
-     "text": "Weterynarz do klienta: ___",
-     "answer": "Niech pan przytrzyma psa.",
-     "options": [
-      "Niech pan przytrzyma psa.",
-      "Przytrzymaj psa."
-     ],
-     "explanation": "Lekarz do klienta — forma pan / pani.",
-     "grammar_point": "tr-ton"
-    }
-   ],
-   "covers_slides": [
-    "s11",
-    "s12",
-    "s13",
-    "s14"
-   ]
-  },
-  {
-   "block_id": "g7",
-   "exercise_type": "drag-and-drop",
-   "title": "7. Nieregularne w praktyce",
-   "instruction": "Przeciągnij formę w lukę. Dwie formy nie pasują.",
-   "bank": [
-    "Bądź",
-    "Weź",
-    "Chodź",
-    "Zostań",
-    "Idź",
-    "Będź"
-   ],
-   "items": [
-    {
-     "id": "g7-1",
-     "text": "___ cierpliwy, on dopiero przyjechał!",
-     "answer": "Bądź",
-     "grammar_point": "tr-nieregularne"
-    },
-    {
-     "id": "g7-2",
-     "text": "___ smycz z szafy, wychodzimy!",
-     "answer": "Weź",
-     "grammar_point": "tr-nieregularne"
-    },
-    {
-     "id": "g7-3",
-     "text": "___ tutaj, Reks, do mnie!",
-     "answer": "Chodź",
-     "grammar_point": "tr-nieregularne"
-    },
-    {
-     "id": "g7-4",
-     "text": "___ w domu, dziś nie idziesz z nami!",
-     "answer": "Zostań",
-     "grammar_point": "tr-nieregularne"
-    }
-   ],
-   "covers_slides": [
-    "s9"
-   ]
-  },
-  {
-   "block_id": "g8",
-   "exercise_type": "fill-in-blank",
-   "title": "8. Pułapki",
-   "instruction": "Wybierz poprawną formę. Po odpowiedzi przeczytaj wyjaśnienie.",
-   "items": [
-    {
-     "id": "g8-1",
-     "text": "Burek, nie ___ tego, to śmieci!",
-     "answer": "jedz",
-     "options": [
-      "jedz",
-      "jedź"
-     ],
-     "explanation": "Jedz — od jeść. Jedź — od jechać.",
-     "grammar_point": "tr-pulapki"
-    },
-    {
-     "id": "g8-2",
-     "text": "Nie ___ się, to tylko burza.",
-     "answer": "bój",
-     "options": [
-      "bój",
-      "boisz"
-     ],
-     "explanation": "Rozkaz od „bać się”: bój się.",
-     "grammar_point": "tr-pulapki"
-    },
-    {
-     "id": "g8-3",
-     "text": "___ do parku, jest ładna pogoda!",
-     "answer": "Chodźmy",
-     "options": [
-      "Chodźmy",
-      "Dawaj chodźmy"
-     ],
-     "explanation": "Propozycja po polsku: forma -my, bez «давай».",
-     "grammar_point": "tr-pulapki"
-    },
-    {
-     "id": "g8-4",
-     "text": "Nie ___ psu tej karmy, jest dla kotów.",
-     "answer": "dawaj",
-     "options": [
-      "dawaj",
-      "daj"
-     ],
-     "explanation": "Zakaz — forma niedokonana.",
-     "grammar_point": "tr-pulapki"
-    },
-    {
-     "id": "g8-5",
-     "text": "Niech sąsiad ___ do mnie wieczorem.",
-     "answer": "zadzwoni",
-     "options": [
-      "zadzwoni",
-      "zadzwoń"
-     ],
-     "explanation": "Niech + zwykła forma „on”.",
-     "grammar_point": "tr-pulapki"
-    },
-    {
-     "id": "g8-6",
-     "text": "Kasia, ___ drzwi, proszę!",
-     "answer": "zamknij",
-     "options": [
-      "zamknij",
-      "zamknę"
-     ],
-     "explanation": "Tryb rozkazujący: zamknij. Zamknę to czas przyszły.",
-     "grammar_point": "tr-pulapki"
-    }
-   ],
-   "covers_slides": [
-    "s15",
-    "s16"
-   ]
-  }
- ]
+  ]
 }
