@@ -206,7 +206,7 @@
 - **Слова (25, 4 групи):** Czasowniki z biernikiem · Z przyimkiem · Ludzie i miejsca · Papiery i terminy.
 - **Пасток 6** (2 Pan/Państwo + 4 прийменники/rekcja); довідник — `docs/ref/accusative.md`.
 - **ДЗ:** hw (h1–h5) · 🎬 Muniak Development «Jak kupić mieszkanie z kredytem hipotecznym — krok po kroku» (id GjQL7xSvF6E, 4:28; вбудову не перевірено) · 🎙️ відповідь на e-mail клієнта (2 хв) · ✍️ e-mail 110–140 слів.
-- **Припущення:** мова глос — українська; вправ зі слухання немає; фото й обкладинка — нові (не повторюють 02, 04).
+- **Припущення:** мова глос — українська; аудіо в лекції немає (протокол 25.11); фото й обкладинка — нові (не повторюють 02, 04).
 
 ## 4. Діагностика й вимірювання прогресу
 
@@ -284,10 +284,10 @@
 | # | lesson_id | Тема | Статус |
 |---|---|---|---|
 | 01 | `pl-nier-01-pierwszy-kontakt` | Dzwonię w sprawie ogłoszenia | ✅ на сайті 21.11.2026 (main 757d6dd; embed ✓ --remote; i18n ru/pl/en ✓); Notion — не створювався; діагностику ще не проведено |
-| 02 | `pl-nier-02-opis-i-ogloszenie` | Mieszkanie z duszą | ✅ на сайті 23.11.2026 (embed ✓; i18n ru/pl/en ✓; без слухання) |
+| 02 | `pl-nier-02-opis-i-ogloszenie` | Mieszkanie z duszą | ✅ на сайті 23.11.2026 (embed ✓; i18n ru/pl/en ✓) |
 | 03 | `pl-nier-03-czas-terazniejszy` | Mój dzień w biurze | ✅ на сайті 24.11.2026 (main c0a77fe; embed ✓ --remote; i18n ru/pl/en ✓; аудіо читання ready) |
 | 04 | `pl-nier-04-rodzaj-i-przymiotnik` | Dwie oferty dla państwa Lisów | ✅ на сайті 25.11.2026 (embed, i18n ru/pl/en ✓; аудіо читання — див. TEACHER «Факти»; 🎬 Małycha Agency 647Zl9ohy7w — вбудову не перевірено; обкладинка й фото в тексті — повтор із 02) |
-| 05 | `pl-nier-05-biernik` | Odpowiadamy na e-mail pani Marty | ✅ на сайті 25.11.2026 (embed, i18n ru/pl/en ✓; аудіо читання — див. STATE; 🎬 Muniak GjQL7xSvF6E — вбудову не перевірено; без слухання) |
+| 05 | `pl-nier-05-biernik` | Odpowiadamy na e-mail pani Marty | ✅ на сайті 25.11.2026 (embed, i18n ru/pl/en ✓; без аудіо; 🎬 Muniak GjQL7xSvF6E — вбудову не перевірено) |
 | 06–12 | _див. §3a_ | граматичний мінімум | — |
 | 13 | `pl-nier-13-prezentacja-i-obiekcje` | Zapraszam do środka | — (було 03) |
 | 14 | `pl-nier-14-negocjacje` | Ostatnie słowo | — (було 04) |

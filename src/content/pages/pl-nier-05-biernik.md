@@ -32,9 +32,7 @@ cover: https://images.unsplash.com/photo-1778604938979-a8d3864ac7dd?w=1600&h=900
 
 ### 📋 Notatka Natalii: e-mail pani Marty
 
-Natalia pisze do szefowej notatkę po e-mailu od klientki. Posłuchaj i czytaj. Zauważ: po jakich czasownikach i przyimkach Natalia używa końcówek <i>-ę</i>, <i>-ą</i>, <i>-a</i>. Czy mówi <i>ofertę</i>, czy <i>oferta</i>?
-
-<audio controls preload="none" src="https://werba-way.vercel.app/audio/pl-nier-05-biernik-czytanie.mp3"></audio>
+Natalia pisze do szefowej notatkę po e-mailu od klientki. Przeczytaj ją na głos. Zauważ: po jakich czasownikach i przyimkach Natalia używa końcówek <i>-ę</i>, <i>-ą</i>, <i>-a</i>. Czy mówi <i>ofertę</i>, czy <i>oferta</i>?
 
 Pani Joanno, dzisiaj rano dostałam e-mail od pani Marty Lis. Piszę Pani, co w nim jest. Pani Marta pisze: „Dzień dobry, widziałam w internecie ofertę pani Zielińskiej na Jeżycach. Obecnie wynajmujemy małe mieszkanie, ale chcemy kupić większe. Szukamy mieszkania z trzema pokojami. Mam męża Pawła i dwoje dzieci. Prosimy też o informację o czynszu i o kosztach remontu.”
 
