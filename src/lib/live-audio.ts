@@ -19,12 +19,17 @@ let muted = false;
 let blocked = false;
 let active = false;
 
-const emit = () => listeners.forEach((l) => l());
+/** Знімок для useSyncExternalStore: той самий об'єкт, доки стан не змінився (інакше React зациклюється) */
+let snap = { muted, blocked, active };
+const emit = () => {
+  snap = { muted, blocked, active };
+  listeners.forEach((l) => l());
+};
 export const subscribeLiveAudio = (l: Listener) => {
   listeners.add(l);
   return () => void listeners.delete(l);
 };
-export const liveAudioState = () => ({ muted, blocked, active });
+export const liveAudioState = () => snap;
 
 function audio(): HTMLAudioElement {
   if (!el) {
