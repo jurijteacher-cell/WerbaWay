@@ -19,6 +19,8 @@ export type MockGap = {
   accept?: string[];
   /** how the correct answer is shown (default: accept[0]) */
   display?: string;
+  /** розбір для учня: чому саме ця відповідь (показується лише після відправлення) */
+  explain?: string;
 };
 
 export type MockItem = {
@@ -38,6 +40,8 @@ export type MockItem = {
   kind?: 'tf';
   /** large picture (emoji) instead of text on the left of a matching task */
   emoji?: string;
+  /** розбір для учня: де в тексті / записі відповідь і чому дистрактори хибні (лише після відправлення) */
+  explain?: string;
 };
 
 export type WritingPart = { id: string; label: string; prompt: string; words?: number };
@@ -226,6 +230,8 @@ export type ItemResult = {
   status: ItemStatus;
   note?: string;
   points: number;
+  /** розбір для учня з JSON (`explain`) */
+  explain?: string;
 };
 
 export type TaskResult = {
@@ -341,6 +347,7 @@ export function scoreMockExam(exam: MockExam, answers: Record<string, string>): 
         if (t.layout === 'mc-passages' && it.kind === 'tf') {
           push({
             id: it.id,
+            explain: it.explain,
             n,
             label: short(it.stem ?? it.text ?? ''),
             given,
@@ -353,6 +360,7 @@ export function scoreMockExam(exam: MockExam, answers: Record<string, string>): 
           const gText = it.options?.[LETTERS.indexOf(given)] ?? '';
           push({
             id: it.id,
+            explain: it.explain,
             n,
             label: short(it.passage || it.stem || ''),
             given: given ? `${given}) ${short(gText, 60)}` : '',
@@ -362,6 +370,7 @@ export function scoreMockExam(exam: MockExam, answers: Record<string, string>): 
         } else if (t.layout === 'true-false') {
           push({
             id: it.id,
+            explain: it.explain,
             n,
             label: it.text ?? '',
             given,
@@ -373,6 +382,7 @@ export function scoreMockExam(exam: MockExam, answers: Record<string, string>): 
           const gRight = t.right?.find((r) => r.key === given);
           push({
             id: it.id,
+            explain: it.explain,
             n,
             label: it.emoji ?? short(it.text ?? '', 90),
             given: given ? `${given} · ${short(gRight?.text ?? '', 50)}` : '',
@@ -383,6 +393,7 @@ export function scoreMockExam(exam: MockExam, answers: Record<string, string>): 
           const m = matchText(given, it.accept ?? [], it.after);
           push({
             id: it.id,
+            explain: it.explain,
             n,
             label: `${(it.sentence ?? '').replace(/__/g, '')} → … ${it.after ?? ''}`,
             given,
@@ -394,6 +405,7 @@ export function scoreMockExam(exam: MockExam, answers: Record<string, string>): 
           const m = matchText(given, it.accept ?? []);
           push({
             id: it.id,
+            explain: it.explain,
             n,
             label: `${it.sentence} (${it.keyword})`,
             given,
@@ -411,6 +423,7 @@ export function scoreMockExam(exam: MockExam, answers: Record<string, string>): 
           const m = matchText(given, g.accept ?? []);
           push({
             id: g.id,
+            explain: g.explain,
             n: g.n,
             label,
             given,
@@ -423,6 +436,7 @@ export function scoreMockExam(exam: MockExam, answers: Record<string, string>): 
           const gb = t.bank.find((b) => b.key === given);
           push({
             id: g.id,
+            explain: g.explain,
             n: g.n,
             label,
             given: given ? `${given} · ${gb?.text ?? ''}` : '',
@@ -434,6 +448,7 @@ export function scoreMockExam(exam: MockExam, answers: Record<string, string>): 
           const ok = given.toLowerCase() === exp.toLowerCase();
           push({
             id: g.id,
+            explain: g.explain,
             n: g.n,
             label,
             given,

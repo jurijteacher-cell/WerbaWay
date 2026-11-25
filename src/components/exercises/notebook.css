@@ -3470,3 +3470,31 @@
 .nb-order-chip {
   text-align: left;
 }
+
+/* mock exam v3: розбір спроби, список спроб, оцінка письма AI (25.11.2026) */
+.mx-review-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; margin: 0 0 12px; padding: 10px 14px; background: var(--nb-yellow-soft); border-radius: var(--nb-r); box-shadow: var(--nb-shadow-xs); font-size: 14px; color: var(--nb-ink); }
+.mx-review-actions { display: flex; align-items: center; gap: 10px; }
+.mx-h3 { font-family: var(--nb-display); font-size: 17px; font-weight: 600; margin: 0 0 4px; color: var(--nb-ink); }
+.mx-attempts { margin-top: 22px; padding-top: 14px; border-top: 1px dashed var(--nb-edge); }
+.mx-attempts ul { list-style: none; margin: 8px 0 0; padding: 0; }
+.mx-attempts li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; padding: 7px 0; border-bottom: 1px dashed var(--nb-edge); font-size: 14px; color: var(--nb-ink); font-variant-numeric: tabular-nums; }
+.mx-attempts li.on { font-weight: 600; }
+.mx-att-date { color: var(--nb-ink-soft); min-width: 130px; }
+.mx-att-score { flex: 1 1 auto; }
+.mx-ai { margin: 14px 0 0; padding: 12px 14px; background: #fff; border-radius: 10px; box-shadow: 1px 2px 0 rgba(28,35,72,.12); color: var(--nb-ink); font-size: 14px; line-height: 1.55; }
+.mx-ai-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; margin-bottom: 8px; }
+.mx-ai-score { font-variant-numeric: tabular-nums; font-weight: 600; }
+.mx-ai-score small { font-weight: 400; color: var(--nb-ink-soft); }
+.mx-ai-part h5 { margin: 12px 0 4px; font-size: 14px; font-weight: 600; }
+.mx-ai-crit { width: 100%; border-collapse: collapse; }
+.mx-ai-crit th, .mx-ai-crit td { padding: 5px 8px 5px 0; border-bottom: 1px dashed var(--nb-edge); vertical-align: top; text-align: left; }
+.mx-ai-crit th { font-weight: 600; white-space: nowrap; width: 1%; }
+.mx-ai-crit td:nth-child(2) { white-space: nowrap; width: 1%; font-variant-numeric: tabular-nums; }
+.mx-ai-comment { margin: 8px 0 0; }
+.mx-ai-fix { margin: 8px 0 0; padding-left: 18px; }
+.mx-ai-fix li { margin: 3px 0; }
+.mx-ai-fix s { color: var(--nb-no); }
+.mx-ai-fix b { color: var(--nb-ok); }
+.mx-ai-fix span { color: var(--nb-ink-soft); }
+.mx-explain { margin: 4px 0 0; font-size: 13.5px; line-height: 1.5; color: var(--nb-ink-soft); }
+.mx-explain-list { margin: 12px 0 0; padding-left: 18px; font-size: 13.5px; line-height: 1.5; color: var(--nb-ink-soft); }

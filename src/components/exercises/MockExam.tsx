@@ -4,6 +4,7 @@ import { Fragment, useEffect, useMemo, useRef, useState, useSyncExternalStore, t
 import { AudioTransport } from './AudioTransport';
 import { getAccessToken, getServerState, getState, subscribe } from '@/lib/embed-auth';
 import type { PublicMockExam, MockScore, ItemResult } from '@/lib/mock-exam/core';
+import type { WritingGrade } from '@/lib/mock-exam/writing-grade';
 import { useLocale, withLang, useT } from '@/i18n/client';
 
 type Section = PublicMockExam['sections'][number];
@@ -47,8 +48,43 @@ type Stored = {
   /** active seconds spent in each section (timer runs only while the exam is open and not paused) */
   elapsed?: Record<string, number>;
   paused?: boolean;
-  result?: { score: MockScore; saved: boolean; transcripts?: Record<string, string> };
+  result?: {
+    score: MockScore;
+    saved: boolean;
+    transcripts?: Record<string, string>;
+    resultId?: string | null;
+    writingAi?: WritingGrade[] | null;
+  };
 };
+
+type Attempt = {
+  id: string;
+  total: number;
+  max: number;
+  level: string | null;
+  passed: boolean | null;
+  minutes: number | null;
+  created_at: string;
+  writing: { points: number; max: number } | null;
+};
+
+type ReviewInfo = { id: string; createdAt: string; isOwner: boolean; student: string };
+
+function fmtDate(iso: string) {
+  try {
+    return new Date(iso).toLocaleString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+  } catch {
+    return iso.slice(0, 10);
+  }
+}
+
+/** Адреса цього ж вікна з розбором спроби (або без нього, `id = null`). */
+function reviewHref(id: string | null) {
+  const u = new URL(window.location.href);
+  if (id) u.searchParams.set('review', id);
+  else u.searchParams.delete('review');
+  return u.toString();
+}
 
 type Ctx = {
   answers: Answers;
@@ -60,23 +96,37 @@ type Ctx = {
   onPlay: (taskId: string) => void;
   transcripts: Record<string, string>;
   paused: boolean;
+  writingAi: WritingGrade[] | null;
+  /** розбір збереженої спроби (свої або учня для викладача): нічого не пишеться в браузер */
+  reviewing: boolean;
 };
 
 /** Login is required (the AccountBar wall covers the page); progress is stored per account. */
-export function MockExam({ lessonId }: { lessonId: string }) {
+export function MockExam({ lessonId, reviewId }: { lessonId: string; reviewId?: string }) {
   const auth = useSyncExternalStore(subscribe, getState, getServerState);
   if (!auth.ready || !auth.userId) return null;
   return (
     <MockExamInner
-      key={auth.userId}
+      key={`${auth.userId}:${reviewId ?? ''}`}
       lessonId={lessonId}
       storageId={`${auth.userId}:${lessonId}`}
       imie={auth.name ?? auth.email ?? ''}
+      reviewId={reviewId}
     />
   );
 }
 
-function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storageId: string; imie: string }) {
+function MockExamInner({
+  lessonId,
+  storageId,
+  imie,
+  reviewId,
+}: {
+  lessonId: string;
+  storageId: string;
+  imie: string;
+  reviewId?: string;
+}) {
   const t = useT();
   const locale = useLocale();
   const [exam, setExam] = useState<PublicMockExam | null>(null);
@@ -95,7 +145,29 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
   const [showKeys, setShowKeys] = useState(false);
   const [plays, setPlays] = useState<Record<string, number>>({});
   const [transcripts, setTranscripts] = useState<Record<string, string>>({});
+  const [writingAi, setWritingAi] = useState<WritingGrade[] | null>(null);
+  const [resultId, setResultId] = useState<string | null>(null);
+  const [attempts, setAttempts] = useState<Attempt[]>([]);
+  const [review, setReview] = useState<ReviewInfo | null>(null);
+  const [reviewError, setReviewError] = useState<string | null>(null);
   const topRef = useRef<HTMLDivElement | null>(null);
+  const reviewing = Boolean(reviewId);
+
+  // збережені спроби з акаунта: розбір будь-якої з них і перездача — з будь-якого пристрою
+  const loadAttempts = async () => {
+    try {
+      const token = await getAccessToken();
+      if (!token) return;
+      const r = await fetch(withLang(`/api/mock-exam/${lessonId}/review`, locale), {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+        body: JSON.stringify({ token }),
+      });
+      if (r.ok) setAttempts(((await r.json()).attempts as Attempt[]) ?? []);
+    } catch {
+      /* offline — список просто порожній */
+    }
+  };
 
   useEffect(() => {
     fetch(withLang(`/api/mock-exam/${lessonId}`, locale))
@@ -111,6 +183,7 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
   // the result itself — so closing the embed by accident never loses work or the score.
   const [restored, setRestored] = useState(false);
   useEffect(() => {
+    if (reviewing) return;
     try {
       const raw = localStorage.getItem(storeKey(storageId));
       if (raw) {
@@ -124,6 +197,8 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
           setScore(s.result.score);
           setTranscripts(s.result.transcripts ?? {});
           setSaved(s.result.saved);
+          setResultId(s.result.resultId ?? null);
+          setWritingAi(s.result.writingAi ?? null);
           setTab('wynik');
         } else if (s.tab && s.startedAt) {
           setTab(s.tab);
@@ -133,10 +208,44 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
       /* storage unavailable */
     }
     setRestored(true);
-  }, [storageId]);
+    void loadAttempts();
+  }, [storageId, reviewing]);
 
   useEffect(() => {
-    if (!restored || startedAt == null) return;
+    if (!reviewId || !exam) return;
+    let alive = true;
+    (async () => {
+      try {
+        const token = await getAccessToken();
+        if (!token) throw new Error('login');
+        const r = await fetch(withLang(`/api/mock-exam/${lessonId}/review`, locale), {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+          body: JSON.stringify({ token, result_id: reviewId }),
+        });
+        const d = await r.json();
+        if (!r.ok) throw new Error(d.error || 'error');
+        if (!alive) return;
+        setAnswers(d.answers ?? {});
+        setScore(d.score as MockScore);
+        setTranscripts(d.transcripts ?? {});
+        setWritingAi((d.writing_ai as WritingGrade[] | null) ?? null);
+        setResultId(d.result_id);
+        setSaved(true);
+        setReview({ id: d.result_id, createdAt: d.created_at, isOwner: Boolean(d.is_owner), student: d.student ?? '' });
+        // як у лекції: відкривається перше завдання вже розв'язаним
+        setTab(exam.sections[0]?.id ?? 'wynik');
+      } catch {
+        if (alive) setReviewError('Nie udało się wczytać tego podejścia.');
+      }
+    })();
+    return () => {
+      alive = false;
+    };
+  }, [reviewId, exam, lessonId, locale]);
+
+  useEffect(() => {
+    if (reviewing || !restored || startedAt == null) return;
     try {
       const data: Stored = {
         answers,
@@ -145,13 +254,13 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
         plays,
         elapsed,
         paused,
-        result: score ? { score, saved: Boolean(saved), transcripts } : undefined,
+        result: score ? { score, saved: Boolean(saved), transcripts, resultId, writingAi } : undefined,
       };
       localStorage.setItem(storeKey(storageId), JSON.stringify(data));
     } catch {
       /* ignore */
     }
-  }, [restored, answers, startedAt, tab, score, saved, storageId, plays, transcripts, elapsed, paused]);
+  }, [reviewing, restored, answers, startedAt, tab, score, saved, storageId, plays, transcripts, elapsed, paused, resultId, writingAi]);
 
   // Section timer: counts only while this section is open, the page is visible and the exam is not paused.
   const timerRunning = restored && startedAt != null && !score && !paused && tab !== 'start' && tab !== 'wynik';
@@ -184,7 +293,9 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
   }, [exam, answers]);
 
   if (loadError) return <p className="nb-note">{loadError}</p>;
+  if (reviewError) return <p className="nb-note">{reviewError}</p>;
   if (!exam) return <p className="nb-note">Ładowanie egzaminu…</p>;
+  if (reviewing && !review) return <p className="nb-note">Ładowanie rozwiązania…</p>;
 
   const locked = Boolean(score);
   const set = (id: string, v: string) => {
@@ -204,6 +315,8 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
     onPlay: (taskId) => setPlays((p) => ({ ...p, [taskId]: (p[taskId] ?? 0) + 1 })),
     transcripts,
     paused,
+    writingAi,
+    reviewing,
   };
 
   const go = (t: Tab) => {
@@ -241,7 +354,10 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
       if (!res.ok) throw new Error(data.error || 'error');
       setScore(data.score as MockScore);
       setTranscripts((data.transcripts as Record<string, string>) ?? {});
-      setSaved(Boolean(data.notionSaved));
+      setSaved(Boolean(data.notionSaved || data.accountSaved));
+      setResultId((data.result_id as string | null) ?? null);
+      setWritingAi((data.writing_ai as WritingGrade[] | null) ?? null);
+      void loadAttempts();
       go('wynik');
     } catch {
       setSendError('Nie udało się wysłać odpowiedzi. Sprawdź internet i spróbuj jeszcze raz.');
@@ -267,6 +383,29 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
     });
   };
 
+  const retake = () => {
+    try {
+      localStorage.removeItem(storeKey(storageId));
+    } catch {
+      /* ignore */
+    }
+    if (reviewing) {
+      window.location.href = reviewHref(null);
+      return;
+    }
+    setScore(null);
+    setSaved(null);
+    setAnswers({});
+    setPlays({});
+    setElapsed({});
+    setPaused(false);
+    setTranscripts({});
+    setWritingAi(null);
+    setResultId(null);
+    setStartedAt(null);
+    go('start');
+  };
+
   const tabs: Array<{ id: Tab; label: string; open: boolean }> = [
     { id: 'start', label: 'Start', open: true },
     ...exam.sections.map((s) => ({
@@ -287,6 +426,28 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
         <h1>{exam.title}</h1>
         <p>{exam.subtitle}</p>
       </header>
+
+      {review ? (
+        <div className="mx-review-bar" role="status">
+          <span>
+            {review.isOwner ? 'Twoje podejście' : `Rozwiązanie: ${review.student || 'uczeń'}`} · {fmtDate(review.createdAt)} ·{' '}
+            <b>
+              {fmt(score?.total ?? 0)}/{fmt(score?.max ?? 0)} p.
+            </b>
+            {score?.level ? ` · ${score.level}` : ''}
+          </span>
+          <span className="mx-review-actions">
+            <button type="button" className="mx-link" onClick={() => go('wynik')}>
+              Wynik
+            </button>
+            {review.isOwner ? (
+              <button type="button" className="nb-btn" onClick={retake}>
+                Rozwiąż ponownie
+              </button>
+            ) : null}
+          </span>
+        </div>
+      ) : null}
 
       <nav className="nb-idx" aria-label="Części egzaminu">
         {tabs.map((t) => (
@@ -339,10 +500,22 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
           </p>
           <p className="nb-note">Piszesz jako: <b>{imie}</b></p>
           <div className="nb-row">
-            <button type="button" className="nb-btn" disabled={locked} onClick={start}>
-              {startedAt != null ? 'Wracam do egzaminu' : 'Zaczynam'}
-            </button>
+            {locked && !review ? (
+              <>
+                <button type="button" className="nb-btn" onClick={() => go('wynik')}>
+                  Twój wynik
+                </button>
+                <button type="button" className="nb-btn ghost" onClick={retake}>
+                  Rozwiąż ponownie
+                </button>
+              </>
+            ) : !review ? (
+              <button type="button" className="nb-btn" onClick={start}>
+                {startedAt != null ? 'Wracam do egzaminu' : attempts.length ? 'Rozwiąż ponownie' : 'Zaczynam'}
+              </button>
+            ) : null}
           </div>
+          {!review && attempts.length ? <AttemptList attempts={attempts} current={resultId} /> : null}
         </section>
       ) : null}
 
@@ -431,18 +604,10 @@ function MockExamInner({ lessonId, storageId, imie }: { lessonId: string; storag
           saved={saved}
           imie={imie}
           onOpen={go}
-          onRetake={() => {
-            try {
-              localStorage.removeItem(storeKey(storageId));
-            } catch {
-              /* ignore */
-            }
-            setScore(null);
-            setSaved(null);
-            setAnswers({});
-            setStartedAt(null);
-            go('start');
-          }}
+          writingAi={writingAi}
+          review={review}
+          canRetake={!review || review.isOwner}
+          onRetake={retake}
         />
       ) : null}
 
@@ -541,6 +706,18 @@ function TaskView({ task, ctx, minutes }: { task: Task; ctx: Ctx; minutes?: numb
       {task.layout === 'questions' ? <Questions task={task} ctx={ctx} /> : null}
       {task.layout === 'transform' ? <Transform task={task} ctx={ctx} /> : null}
       {task.layout === 'writing' ? <Writing task={task} ctx={ctx} /> : null}
+      {ctx.locked && task.gaps?.some((g) => ctx.results.get(g.id)?.explain) ? (
+        <ul className="mx-explain-list">
+          {task.gaps.map((g) => {
+            const r = ctx.results.get(g.id);
+            return r?.explain ? (
+              <li key={g.id}>
+                <b>{g.n}.</b> {r.status === 'ok' ? '✓' : `→ ${r.expected}`} — {r.explain}
+              </li>
+            ) : null;
+          })}
+        </ul>
+      ) : null}
       {ctx.locked && ctx.transcripts[task.id] ? (
         <details className="mx-transcript">
           <summary>Transkrypcja nagrania</summary>
@@ -573,6 +750,15 @@ function Passage({ title, text }: { title?: string; text?: string }) {
 
 function Verdict({ r }: { r?: ItemResult }) {
   if (!r) return null;
+  return (
+    <>
+      <VerdictMark r={r} />
+      {r.explain ? <p className="mx-explain">💡 {r.explain}</p> : null}
+    </>
+  );
+}
+
+function VerdictMark({ r }: { r: ItemResult }) {
   if (r.status === 'ok') return <span className="mx-ok">✓{r.note ? ` (${r.note})` : ''}</span>;
   if (r.status === 'check')
     return (
@@ -1209,6 +1395,65 @@ function PromptText({ text }: { text: string }) {
   return <div className="mx-prompt">{out}</div>;
 }
 
+function WritingAiView({ grade, choiceId }: { grade?: WritingGrade; choiceId: string }) {
+  const t = useT();
+  if (!choiceId) return null;
+  if (!grade || grade.choice !== choiceId)
+    return <p className="mx-check-note">{t("Tekst oceni nauczyciel. / Текст оцінить викладач.")}</p>;
+  return (
+    <div className="mx-ai">
+      <div className="mx-ai-head">
+        <b>Ocena tekstu (AI, orientacyjnie)</b>
+        <span className="mx-ai-score">
+          {fmt(grade.points)}/{fmt(grade.max)} p.
+          {grade.level ? ` · ${grade.level}` : ''}
+          {grade.raw != null ? <small> ({fmt(grade.raw)}/{fmt(grade.raw_max ?? 20)} wg kryteriów telc)</small> : null}
+        </span>
+      </div>
+      {grade.parts.map((p) => (
+        <div key={p.part} className="mx-ai-part">
+          {grade.parts.length > 1 ? (
+            <h5>
+              {p.label} · {fmt(p.points)}/{fmt(p.max)} p.
+            </h5>
+          ) : null}
+          <table className="mx-ai-crit">
+            <tbody>
+              {p.criteria.map((c) => (
+                <tr key={c.id}>
+                  <th>{c.name}</th>
+                  <td className={c.points >= c.max ? 'mx-ok' : c.points <= c.max / 3 ? 'mx-no' : undefined}>
+                    {fmt(c.points)}/{fmt(c.max)}
+                  </td>
+                  <td>{c.comment}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          {p.comment ? <p className="mx-ai-comment">{p.comment}</p> : null}
+          {p.corrections.length ? (
+            <ul className="mx-ai-fix">
+              {p.corrections.map((c, i) => (
+                <li key={i}>
+                  <s>{c.wrong}</s> → <b>{c.right}</b>
+                  {c.why ? <span> — {c.why}</span> : null}
+                </li>
+              ))}
+            </ul>
+          ) : null}
+          {p.improved ? (
+            <details className="mx-transcript">
+              <summary>Poprawiona wersja tekstu</summary>
+              {p.improved.split('\n').map((l, i) => (l.trim() ? <p key={i}>{l}</p> : null))}
+            </details>
+          ) : null}
+        </div>
+      ))}
+      <p className="nb-note">{t("Оцінку зробив AI за критеріями іспиту — вона орієнтовна. Викладач бачить твій текст і може оцінити інакше.")}</p>
+    </div>
+  );
+}
+
 function Writing({ task, ctx }: { task: Task; ctx: Ctx }) {
   const t = useT();
   const choiceKey = `${task.id}:choice`;
@@ -1259,12 +1504,36 @@ function Writing({ task, ctx }: { task: Task; ctx: Ctx }) {
           </div>
         );
       })}
-      {ctx.locked ? <p className="mx-check-note">{t("Tekst oceni nauczyciel. / Текст оцінить викладач.")}</p> : null}
+      {ctx.locked ? <WritingAiView grade={ctx.writingAi?.find((g) => g.task === task.id)} choiceId={choiceId} /> : null}
     </div>
   );
 }
 
 /* ---------- result ---------- */
+
+function AttemptList({ attempts, current }: { attempts: Attempt[]; current: string | null }) {
+  const t = useT();
+  return (
+    <div className="mx-attempts">
+      <h3 className="mx-h3">Twoje podejścia</h3>
+      <p className="nb-note">{t("Кожна спроба зберігається. Відкрий будь-яку — побачиш свої відповіді й правильні прямо в завданнях.")}</p>
+      <ul>
+        {attempts.map((a) => (
+          <li key={a.id} className={a.id === current ? 'on' : undefined}>
+            <span className="mx-att-date">{fmtDate(a.created_at)}</span>
+            <span className="mx-att-score">
+              {fmt(a.total)}/{fmt(a.max)} p.{a.level ? ` · ${a.level}` : a.passed != null ? (a.passed ? ' · zdane' : ' · poniżej progu') : ''}
+              {a.writing ? ` · pisanie ${fmt(a.writing.points)}/${fmt(a.writing.max)}` : ''}
+            </span>
+            <a className="mx-link" href={reviewHref(a.id)}>
+              Zobacz rozwiązanie
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 function ResultView({
   exam,
@@ -1273,6 +1542,9 @@ function ResultView({
   imie,
   onOpen,
   onRetake,
+  writingAi,
+  review,
+  canRetake,
 }: {
   exam: PublicMockExam;
   score: MockScore;
@@ -1280,6 +1552,9 @@ function ResultView({
   imie: string;
   onOpen: (t: Tab) => void;
   onRetake: () => void;
+  writingAi: WritingGrade[] | null;
+  review: ReviewInfo | null;
+  canRetake: boolean;
 }) {
   const t = useT();
   const [askRetake, setAskRetake] = useState(false);
@@ -1291,7 +1566,7 @@ function ResultView({
   const lv = Object.entries(exam.levels ?? { B1: 27, B2: 43 }).sort((a, b) => a[1] - b[1]);
   return (
     <section className="mx-panel mx-result">
-      <p className="nb-eyebrow">{imie}</p>
+      <p className="nb-eyebrow">{review && !review.isOwner ? review.student || 'uczeń' : imie}</p>
       <div className="mx-stamp">
         {fmt(score.total)}
         <small>/{score.max}</small>
@@ -1335,13 +1610,32 @@ function ResultView({
         })}
       </div>
 
+      {writingAi?.length ? (
+        <div className="mx-bars">
+          {writingAi.map((g) => (
+            <div key={g.task} className="mx-bar-row">
+              <div className="mx-bar-head">
+                <b>Pisanie · ocena AI</b>
+                <span>
+                  {fmt(g.points)}/{fmt(g.max)} p.{g.level ? ` · ${g.level}` : ''}
+                </span>
+              </div>
+              <div className="mx-bar">
+                <i style={{ width: `${g.max ? (g.points / g.max) * 100 : 0}%` }} className="pass" />
+              </div>
+            </div>
+          ))}
+          <p className="nb-note">{t("Оцінка письма — орієнтовна, її робить AI за критеріями іспиту. Розбір — під твоїм текстом у вкладці «Pisanie».")}</p>
+        </div>
+      ) : null}
+
       {checks ? (
         <p className="mx-check-note">
           {checks} {checks === 1 ? 'odpowiedź otwartą' : 'odpowiedzi otwarte'} sprawdzi nauczyciel — na razie liczone jako 0
           p.
         </p>
       ) : null}
-      {manual.map((s) => (
+      {(writingAi?.length ? [] : manual).map((s) => (
         <p key={s.id} className="mx-check-note">
           {s.title}: ocenia nauczyciel{s.manual_points ? ` (max ${s.manual_points} p.)` : ''} — tekst wysłany razem z
           wynikiem.
@@ -1380,19 +1674,19 @@ function ResultView({
       <div className="nb-row mx-center">
         {exam.sections.map((s) => (
           <button key={s.id} type="button" className="nb-btn ghost" onClick={() => onOpen(s.id)}>
-            {s.manual ? 'Twój tekst' : 'Zobacz błędy'}: {s.tab}
+            {s.manual ? (writingAi?.length ? 'Ocena tekstu' : 'Twój tekst') : 'Zobacz błędy'}: {s.tab}
           </button>
         ))}
       </div>
-      <p className="nb-note">
+      {review && !review.isOwner ? null : <p className="nb-note">
         {saved === false
           ? 'Wynik nie zapisał się u nauczyciela. Zrób zrzut ekranu i wyślij go.'
           : t("Wynik wysłany do nauczyciela. / Результат надіслано викладачеві.")}
-      </p>
-      <div className="nb-row mx-center">
+      </p>}
+      {canRetake ? <div className="nb-row mx-center">
         {askRetake ? (
           <>
-            <span className="mx-retake-q">Wynik zniknie z tego ekranu (nauczyciel go ma). Zacząć od nowa?</span>
+            <span className="mx-retake-q">Ten wynik zostaje zapisany w «Twoje podejścia». Zacząć nowe podejście?</span>
             <button type="button" className="nb-btn ghost" onClick={onRetake}>
               Tak, od nowa
             </button>
@@ -1401,11 +1695,11 @@ function ResultView({
             </button>
           </>
         ) : (
-          <button type="button" className="mx-link" onClick={() => setAskRetake(true)}>
-            Rozwiąż jeszcze raz
+          <button type="button" className="nb-btn" onClick={() => setAskRetake(true)}>
+            Rozwiąż ponownie
           </button>
         )}
-      </div>
+      </div> : null}
       {exam.source ? <p className="mx-source">Źródło zadań: {exam.source}</p> : null}
     </section>
   );

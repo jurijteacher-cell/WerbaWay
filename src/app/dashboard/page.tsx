@@ -254,7 +254,14 @@ export default async function DashboardPage() {
               <tbody>
                 {(mocks as MockRow[]).map((m) => (
                   <tr key={m.id} className="border-t border-ink-line">
-                    <td className="px-4 py-3 text-paper">{m.exam_label ?? m.lesson_id}</td>
+                    <td className="px-4 py-3 text-paper">
+                      <a
+                        href={`/embed/${m.lesson_id}/mock-exam?review=${m.id}`}
+                        className="underline decoration-ink-line underline-offset-4 hover:text-gold"
+                      >
+                        {m.exam_label ?? m.lesson_id}
+                      </a>
+                    </td>
                     <td className="px-4 py-3 font-mono text-paper">
                       {m.total}/{m.max_total}
                     </td>

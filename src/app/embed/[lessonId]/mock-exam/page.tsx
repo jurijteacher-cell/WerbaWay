@@ -3,9 +3,11 @@ import { loadMockExam } from '@/lib/mock-exam/core';
 import { MockExam } from '@/components/exercises/MockExam';
 import { getLocale } from '@/i18n/server';
 
-type Props = { params: { lessonId: string } };
+type Props = { params: { lessonId: string }; searchParams: { review?: string | string[] } };
 
-export default function EmbedMockExamPage({ params }: Props) {
+/** `?review={mock_results.id}` — розбір спроби: завдання відкриваються вже розв'язаними (учень або викладач). */
+export default function EmbedMockExamPage({ params, searchParams }: Props) {
   if (!loadMockExam(params.lessonId, getLocale())) notFound();
-  return <MockExam lessonId={params.lessonId} />;
+  const review = typeof searchParams.review === 'string' && /^[0-9a-f-]{36}$/i.test(searchParams.review) ? searchParams.review : undefined;
+  return <MockExam lessonId={params.lessonId} reviewId={review} />;
 }

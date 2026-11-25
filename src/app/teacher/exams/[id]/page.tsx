@@ -144,6 +144,25 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
         </div>
       </section>
 
+      <section className="mt-8">
+        <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+          <h2 className="font-display text-xl text-paper">{tr("Розв'язання учня")}</h2>
+          <a
+            href={`/embed/${row.lesson_id}/mock-exam?review=${row.id}`}
+            target="_blank"
+            rel="noreferrer"
+            className="text-sm text-paper-muted underline underline-offset-4 hover:text-gold"
+          >
+            {tr("Відкрити на весь екран")} ↗
+          </a>
+        </div>
+        <iframe
+          src={`/embed/${row.lesson_id}/mock-exam?review=${row.id}`}
+          title={tr("Розв'язання учня")}
+          className="h-[1100px] w-full rounded-xl border border-ink-line bg-white"
+        />
+      </section>
+
       {sections.length > 0 && (
         <section className="mt-8">
           <h2 className="mb-3 font-display text-xl text-paper">{tr("Секції")}</h2>

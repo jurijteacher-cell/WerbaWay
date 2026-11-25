@@ -15,6 +15,7 @@ export function GET() {
     elevenlabs_key: Boolean(elevenKey()),
     unsplash_key: Boolean(envKey(['UNSPLASH_ACCESS_KEY', 'UNSPLASH_API_KEY', 'UNSPLASH_KEY'], /UNSPLASH/i)),
     supabase_service: Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY),
+    openai_key: Boolean((process.env.OPENAI_API_KEY ?? process.env.OpenAI_key)?.trim()),
     now: new Date().toISOString(),
   });
 }

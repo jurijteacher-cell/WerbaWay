@@ -2,6 +2,11 @@ import { NextRequest, NextResponse } from 'next/server';
 import { loadMockExam, scoreMockExam, transcriptsOf } from '@/lib/mock-exam/core';
 import { writeMockResult, weakTopics } from '@/lib/mock-exam/notion';
 import { createUserClient } from '@/lib/supabase/user-token';
+import { gradeExamWriting, hasWritingText } from '@/lib/mock-exam/writing-grade';
+import { getLocale } from '@/i18n/server';
+
+// письмо оцінює OpenAI (до ~50 с), решта — миттєво
+export const maxDuration = 60;
 
 type Ctx = { params: { lessonId: string } };
 
@@ -39,9 +44,10 @@ export async function POST(req: NextRequest, { params }: Ctx) {
   const minutes = Number(body?.minutes ?? 0);
 
   const score = scoreMockExam(exam, answers);
+  const writingAi = hasWritingText(exam, answers) ? await gradeExamWriting(exam, answers, getLocale()) : [];
   const mins = Number.isFinite(minutes) && minutes > 0 ? Math.min(minutes, 600) : 0;
 
-  const { error: dbError } = await supabase.from('mock_results').insert({
+  const { data: inserted, error: dbError } = await supabase.from('mock_results').insert({
     user_id: u.user.id,
     lesson_id: exam.lesson_id,
     exam_label: exam.exam_label,
@@ -58,8 +64,12 @@ export async function POST(req: NextRequest, { params }: Ctx) {
       // per-item breakdown and the student's own texts, so the teacher dashboard can show every mistake
       tasks: score.tasks,
       writing: score.writing,
+      // сирі відповіді: з них розбір відкривається як розв'язане завдання (/embed/{id}/mock-exam?review=…)
+      answers,
+      // null — оцінки AI немає (ключа немає / збій), перерахується при першому відкритті розбору
+      writing_ai: writingAi,
     },
-  });
+  }).select('id').single();
   if (dbError) console.error('[mock-exam] mock_results insert failed', dbError.message);
 
   const notion = await writeMockResult({
@@ -72,6 +82,8 @@ export async function POST(req: NextRequest, { params }: Ctx) {
 
   return NextResponse.json({
     score,
+    result_id: inserted?.id ?? null,
+    writing_ai: writingAi,
     transcripts: transcriptsOf(exam),
     notionSaved: notion.ok,
     accountSaved: !dbError,
