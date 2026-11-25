@@ -5,7 +5,7 @@ level: B1
 number: 4
 module: pl-nier
 moduleTitle: Польська для ріелторки
-cover: https://images.unsplash.com/photo-1769519421572-2e7d656d406f?w=1600&h=900&fit=crop&q=80&fm=jpg
+cover: https://images.unsplash.com/photo-1766792853044-bd397f7b76e9?w=1600&h=900&fit=crop&q=80&fm=jpg
 ---
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🎯</span><div class="lp-callout-body">
@@ -39,9 +39,11 @@ Pani Joanno, państwo Lisowie to wymagający klienci, ale bardzo mili. Marta i P
 
 Oferta A to mieszkanie pani Barbary Zielińskiej na Jeżycach. Kamienica jest stara, ale ładna, a mieszkanie jest przestronne: ma trzy pokoje i sześćdziesiąt cztery metry. Kuchnia jest nowa, a balkon wychodzi na ciche podwórze. Są jednak wady. Mieszkanie jest na trzecim piętrze, w kamienicy nie ma windy, a schody są strome. Piwnica jest wilgotna. Cena to siedemset czterdzieści dziewięć tysięcy złotych.
 
-![Jasny, przestronny salon z drewnianymi dodatkami. Fot. Puscas Adryan / Unsplash](https://images.unsplash.com/photo-1772797583328-f83bc3f94f80?w=1400&q=80&fm=jpg&fit=max)
+![Kamienica z podwórzem i łukowatą bramą z cegły. Fot. Stacy / Unsplash](https://images.unsplash.com/photo-1766232590342-ffdee422e83f?w=1400&q=80&fm=jpg&fit=max)
 
 Oferta B to nowe mieszkanie na Łazarzu. Ma sześćdziesiąt dwa metry, jasne pokoje i garaż w budynku. Drzwi i okna są nowe, w bloku jest winda, a sąsiedzi są młodzi i cisi. Ale mieszkanie kosztuje osiemset czterdzieści dwa tysiące złotych, więc rata kredytu będzie wysoka, a miejsce w garażu kosztuje dodatkowo.
+
+![Jasny salon z dużymi oknami. Fot. Clay Banks / Unsplash](https://images.unsplash.com/photo-1721932423849-e9033192b190?w=1400&q=80&fm=jpg&fit=max)
 
 W czwartek pokazuję państwu Lisom obie oferty. Paweł mówi, że schody to duży problem, bo trzy piętra bez windy z dziećmi i zakupami to wyzwanie. Marta pyta o balkon, bo ciche podwórze to dla dzieci duża zaleta. Myślę, że państwo Lisowie są zadowoleni z obu ofert, ale jeszcze nie są gotowi podjąć decyzji. Wszystko zapiszę w raporcie.
 
@@ -88,6 +90,8 @@ Słownictwo — karty
 
 📌 <b>Schody i drzwi.</b> Te dwa słowa mają tylko liczbę mnogą: <i>te schody, te drzwi</i>. Po ukraińsku «сходи» i «двері» też są w mnogiej, więc nie ma problemu.
 
+![Strome schody między starymi budynkami. Fot. Owen Wei / Unsplash](https://images.unsplash.com/photo-1785250676637-609e899bc733?w=1400&q=80&fm=jpg&fit=max)
+
 ✍️ <b>Ćwiczenie 1</b> — które słowo pasuje do sytuacji?
 
 <embed source="https://werba-way.vercel.app/embed/pl-nier-04-rodzaj-i-przymiotnik/grammar?blocks=g1">
@@ -103,6 +107,8 @@ Słownictwo — karty
 Opis mieszkania składa się z dwóch rzeczy: <b>rzeczownika</b> (<i>balkon, kamienica, mieszkanie</i>) i <b>przymiotnika</b>, który bierze od niego <b>rodzaj</b> i <b>liczbę</b>. Idziemy po kolei:<br><b>rodzaj</b>   ·   <b>liczba mnoga rzeczy</b>   ·   <b>przymiotnik</b>   ·   <b>liczba mnoga osób</b>   ·   <b>przymiotnik w liczbie mnogiej</b>
 
 </div></aside>
+
+![Nowy budynek z wieloma balkonami. Fot. Dennis Zhang / Unsplash](https://images.unsplash.com/photo-1750544520999-82f1318f9f45?w=1400&q=80&fm=jpg&fit=max)
 
 ### 🔤 Porcja 1: rodzaj rzeczownika
 
@@ -347,6 +353,8 @@ Wszystkie porcje razem, bez ściągi. Ustaw w głowie jeden cel: odpowiadać w <
 </div></aside>
 
 👉 Trzy sytuacje: raport dla szefowej o dwóch ofertach, telefon do państwa Lisów i rozmowa z właścicielką mieszkania. Odwróć kartę, przeczytaj sytuację i odegraj rozmowę z nauczycielem.
+
+![Przekazanie kluczy do mieszkania. Fot. Jakub Żerdzicki / Unsplash](https://images.unsplash.com/photo-1729855637715-99192904aac5?w=1400&q=80&fm=jpg&fit=max)
 
 <embed source="https://werba-way.vercel.app/embed/pl-nier-04-rodzaj-i-przymiotnik/comm-tasks">
 Zadania komunikacyjne
