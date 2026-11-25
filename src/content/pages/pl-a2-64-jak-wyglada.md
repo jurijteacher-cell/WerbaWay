@@ -208,6 +208,14 @@ Przymiotnik idzie za rzeczownikiem: <b>ten sam przypadek, ten sam rodzaj</b>. Zn
 Zadania komunikacyjne
 </embed>
 
+### 🧩 Elementy języka — jak na egzaminie telc
+
+<b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
+
+<embed source="https://werba-way.vercel.app/embed/pl-a2-64-jak-wyglada/grammar?blocks=el1-el2">
+Elementy języka
+</embed>
+
 ---
 
 ## ✅ 5. Podsumowanie

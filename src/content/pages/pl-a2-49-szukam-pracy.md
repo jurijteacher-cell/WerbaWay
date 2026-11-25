@@ -206,6 +206,14 @@ Dopełniacz już znasz z lekcji o jedzeniu: <i>nie mam czasu, dużo pierogów</i
 Zadania komunikacyjne
 </embed>
 
+### 🧩 Elementy języka — jak na egzaminie telc
+
+<b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
+
+<embed source="https://werba-way.vercel.app/embed/pl-a2-49-szukam-pracy/grammar?blocks=el1-el2">
+Elementy języka
+</embed>
+
 ---
 
 ## ✅ 5. Podsumowanie

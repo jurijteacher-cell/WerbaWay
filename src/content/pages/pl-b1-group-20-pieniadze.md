@@ -282,6 +282,14 @@ Cztery krótkie dialogi o pieniądzach — tak jak w zadaniu ze słuchu na egzam
 Słuchanie — jak na egzaminie
 </embed>
 
+### 🧩 Elementy języka — jak na egzaminie telc
+
+<b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-group-20-pieniadze/grammar?blocks=el1-el2">
+Elementy języka
+</embed>
+
 ---
 
 ## ✅ 8. Podsumowanie

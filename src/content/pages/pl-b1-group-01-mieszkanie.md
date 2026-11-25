@@ -310,6 +310,14 @@ O mieszkaniu nie opowiesz bez dwóch przypadków: <b>narzędnika</b> (<i>kim? cz
 Ćwiczenia gramatyczne — część 2
 </embed>
 
+### 🧩 Elementy języka — jak na egzaminie telc
+
+<b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-group-01-mieszkanie/grammar?blocks=el1-el2">
+Elementy języka
+</embed>
+
 ---
 
 ## ✅ 7. Podsumowanie

@@ -254,6 +254,14 @@ Być, zostać, pracować.
 Ćwiczenia gramatyczne
 </embed>
 
+### 🧩 Elementy języka — jak na egzaminie telc
+
+<b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
+
+<embed source="https://werba-way.vercel.app/embed/pl-telc-b1-01-praca/grammar?blocks=el1-el2">
+Elementy języka
+</embed>
+
 ---
 
 ## 9. Podsumowanie

@@ -260,6 +260,14 @@ Speaking marathon
 Mini-test — lekcje 1–8
 </embed>
 
+### 🧩 Elementy języka — jak na egzaminie telc
+
+<b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-group-r1-powtorka/grammar?blocks=el1-el2">
+Elementy języka
+</embed>
+
 ---
 
 ## ✅ 6. Podsumowanie

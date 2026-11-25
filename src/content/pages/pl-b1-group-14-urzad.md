@@ -296,6 +296,14 @@ Cztery krótkie dialogi w urzędzie — tak jak w zadaniu ze słuchu na egzamini
 Słuchanie — jak na egzaminie
 </embed>
 
+### 🧩 Elementy języka — jak na egzaminie telc
+
+<b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-group-14-urzad/grammar?blocks=el1-el2">
+Elementy języka
+</embed>
+
 ---
 
 ## ✅ 8. Podsumowanie

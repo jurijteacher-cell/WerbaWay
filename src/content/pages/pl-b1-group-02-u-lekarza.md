@@ -298,6 +298,14 @@ U lekarza dopełniacz jest wszędzie: kiedy czegoś <b>nie ma</b>, kiedy liczymy
 Ćwiczenia gramatyczne — część 2
 </embed>
 
+### 🧩 Elementy języka — jak na egzaminie telc
+
+<b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-group-02-u-lekarza/grammar?blocks=el1-el2">
+Elementy języka
+</embed>
+
 ---
 
 ## ✅ 7. Podsumowanie

@@ -124,6 +124,14 @@ Slajdy gramatyczne — część 2
 Ćwiczenia gramatyczne — g4–g7
 </embed>
 
+### 🧩 Elementy języka — jak na egzaminie telc
+
+<b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
+
+<embed source="https://werba-way.vercel.app/embed/pl-exam-01-pasje/grammar?blocks=el1-el2">
+Elementy języka
+</embed>
+
 ---
 
 ## 9. Podsumowanie

@@ -220,6 +220,14 @@ Narzędnik odpowiada na pytania <b>kim? czym?</b> Znasz go już z zawodów: <i>j
 Zadania komunikacyjne
 </embed>
 
+### 🧩 Elementy języka — jak na egzaminie telc
+
+<b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
+
+<embed source="https://werba-way.vercel.app/embed/pl-a2-53-z-kim-pracuje/grammar?blocks=el1-el2">
+Elementy języka
+</embed>
+
 ---
 
 ## ✅ 5. Podsumowanie

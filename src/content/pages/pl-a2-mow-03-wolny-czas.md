@@ -147,6 +147,14 @@ Odpowiedz pełnymi zdaniami, minimum trzy zdania na każde pytanie:
 
 <b>Minuta bez przerwy:</b> <i>Mój idealny wolny dzień</i> — od rana do wieczora. Gdzie jesteś, z kim, co robisz i dlaczego właśnie to?
 
+### 🧩 Elementy języka — jak na egzaminie telc
+
+<b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
+
+<embed source="https://werba-way.vercel.app/embed/pl-a2-mow-03-wolny-czas/grammar?blocks=el1-el2">
+Elementy języka
+</embed>
+
 ---
 
 ## 7. Podsumowanie

@@ -245,6 +245,14 @@ Cztery tematy z lekcji 9–12 na jednej mapie. Każdy blok: zasada, przykłady i
 Speaking marathon
 </embed>
 
+### 🧩 Elementy języka — jak na egzaminie telc
+
+<b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
+
+<embed source="https://werba-way.vercel.app/embed/pl-b1-group-r2-powtorka/grammar?blocks=el1-el2">
+Elementy języka
+</embed>
+
 ---
 
 ## ✅ 5. Podsumowanie

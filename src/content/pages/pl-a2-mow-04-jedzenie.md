@@ -213,6 +213,14 @@ Odpowiedz pełnymi zdaniami, <b>minimum trzy zdania</b> na każde pytanie:
 
 </div></aside>
 
+### 🧩 Elementy języka — jak na egzaminie telc
+
+<b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
+
+<embed source="https://werba-way.vercel.app/embed/pl-a2-mow-04-jedzenie/grammar?blocks=el1-el2">
+Elementy języka
+</embed>
+
 ---
 
 ## ✅ 7. Podsumowanie

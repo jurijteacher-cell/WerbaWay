@@ -229,6 +229,14 @@ Biernik znasz z rzeczy: <i>mam nowy telefon, piję kawę</i>. Dziś — <b>osoby
 Zadania komunikacyjne
 </embed>
 
+### 🧩 Elementy języka — jak na egzaminie telc
+
+<b>Dwa zadania w formacie egzaminu telc:</b> najpierw rozmowa (fragmenty a–j), potem e-mail (a, b albo c).
+
+<embed source="https://werba-way.vercel.app/embed/pl-a2-63-znam-go-widze-ja/grammar?blocks=el1-el2">
+Elementy języka
+</embed>
+
 ---
 
 ## ✅ 5. Podsumowanie
