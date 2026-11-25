@@ -55,7 +55,8 @@
         "zabrali swoje rzeczy z korytarza.",
         "sami pomalowali drzwi do mieszkań."
        ],
-       "answer": "b"
+       "answer": "b",
+       "explain": "Pan Wójcik mówi: „prosimy nie zostawiać na korytarzu butów, wózków ani rowerów”, bo malarze potrzebują przejścia. Winda „będzie działać normalnie”, więc a) jest błędne."
       },
       {
        "id": "sl1-2",
@@ -65,7 +66,8 @@
         "zapłacić za odwołaną wizytę.",
         "oddzwonić i wybrać nowy termin."
        ],
-       "answer": "c"
+       "answer": "c",
+       "explain": "Recepcjonistka mówi: „Proszę oddzwonić i wybrać termin” (piątek albo wtorek). Doktor Lis w czwartek nie przyjmuje, bo jest chora, a o płaceniu nie ma mowy."
       },
       {
        "id": "sl1-3",
@@ -75,7 +77,8 @@
         "kupiła bilet od Ani.",
         "wzięła udział w konkursie w radiu."
        ],
-       "answer": "a"
+       "answer": "a",
+       "explain": "Kuba pyta: „Chcesz pójść ze mną?” i dodaje: „Za bilet nic nie płacisz”. To on wygrał bilety w konkursie, Marta nie musi brać w nim udziału."
       },
       {
        "id": "sl1-4",
@@ -85,7 +88,8 @@
         "przedłuży karnet do piątku.",
         "zapisze się na zajęcia na pierwszym piętrze."
        ],
-       "answer": "b"
+       "answer": "b",
+       "explain": "Olga mówi: „Jeśli przedłuży go pani do piątku, dostanie pani dziesięć procent zniżki”. Informacja o jodze i sali na pierwszym piętrze nie dotyczy zniżki."
       }
      ]
     },
@@ -111,7 +115,8 @@
        "kind": "tf",
        "stem": "Klient kaszle od tygodnia.",
        "answer": "fałsz",
-       "passage": "Rozmowa 1 · zadania 5–6"
+       "passage": "Rozmowa 1 · zadania 5–6",
+       "explain": "Klient mówi: „Kaszlę od trzech dni”, a nie od tygodnia. O tygodniu mówi farmaceutka: jeśli kaszel nie przejdzie za tydzień, trzeba iść do lekarza."
       },
       {
        "id": "sl2-2",
@@ -121,14 +126,16 @@
         "raz dziennie przed snem.",
         "tylko w nocy, kiedy pojawia się kaszel."
        ],
-       "answer": "a"
+       "answer": "a",
+       "explain": "Farmaceutka mówi: „Dorośli biorą jedną łyżkę trzy razy dziennie, po jedzeniu”. Kaszel jest najsilniejszy w nocy, ale syrop nie jest tylko na noc."
       },
       {
        "id": "sl2-3",
        "kind": "tf",
        "stem": "Klientka ma już numer PESEL.",
        "answer": "fałsz",
-       "passage": "Rozmowa 2 · zadania 7–8"
+       "passage": "Rozmowa 2 · zadania 7–8",
+       "explain": "Na pytanie o PESEL klientka odpowiada: „Jeszcze nie” – wniosek złożyła dopiero w zeszłym tygodniu."
       },
       {
        "id": "sl2-4",
@@ -138,14 +145,16 @@
         "klientka przyniesie numer PESEL.",
         "co miesiąc wpłynie na nie co najmniej tysiąc złotych."
        ],
-       "answer": "c"
+       "answer": "c",
+       "explain": "Doradca mówi, że konto „jest bezpłatne, jeśli co miesiąc wpływa na nie co najmniej tysiąc złotych”. Karta kredytowa i PESEL nie mają wpływu na opłatę."
       },
       {
        "id": "sl2-5",
        "kind": "tf",
        "stem": "Klientka umówiła się na sobotę.",
        "answer": "fałsz",
-       "passage": "Rozmowa 3 · zadania 9–10"
+       "passage": "Rozmowa 3 · zadania 9–10",
+       "explain": "Fryzjer mówi: „W sobotę wszystko jest już zajęte”. Klientka wybiera środę: „Środa jest dobra, mam wtedy wolne”."
       },
       {
        "id": "sl2-6",
@@ -155,14 +164,16 @@
         "nie powinna myć włosów.",
         "powinna kupić farbę."
        ],
-       "answer": "b"
+       "answer": "b",
+       "explain": "Fryzjer prosi: „Proszę nie myć włosów w dniu wizyty”. O zaliczce ani o kupowaniu farby nie ma mowy."
       },
       {
        "id": "sl2-7",
        "kind": "tf",
        "stem": "W niedzielę Paweł jest zajęty.",
        "answer": "prawda",
-       "passage": "Rozmowa 4 · zadania 11–12"
+       "passage": "Rozmowa 4 · zadania 11–12",
+       "explain": "Paweł mówi, że w niedzielę „ma urodziny babci” i nie może odmówić – więc tego dnia jest zajęty."
       },
       {
        "id": "sl2-8",
@@ -172,14 +183,16 @@
         "kupi bilety na pociąg.",
         "pojedzie w góry sama w niedzielę."
        ],
-       "answer": "a"
+       "answer": "a",
+       "explain": "Paweł pyta, kto zmieni rezerwację w schronisku: „Zadzwonisz?”, a Asia odpowiada: „Zadzwonię jeszcze dziś”. Bilety na pociąg kupi Paweł."
       },
       {
        "id": "sl2-9",
        "kind": "tf",
        "stem": "Pracownik chce w środę pracować wieczorem.",
        "answer": "prawda",
-       "passage": "Rozmowa 5 · zadania 13–14"
+       "passage": "Rozmowa 5 · zadania 13–14",
+       "explain": "Pracownik mówi o Kamilu: „On chce pracować rano, a ja wieczorem” – chodzi o środę, bo rano ma wizytę w urzędzie."
       },
       {
        "id": "sl2-10",
@@ -189,7 +202,8 @@
         "skończy się szkolenie z bezpieczeństwa.",
         "Kamil potwierdzi zamianę mailem."
        ],
-       "answer": "c"
+       "answer": "c",
+       "explain": "Kierowniczka mówi: „Kamil musi to potwierdzić mailem. Wtedy zmienię grafik”. Szkolenie w piątek to osobna informacja."
       }
      ]
     },
@@ -215,7 +229,8 @@
         "tak poradził jej lekarz.",
         "chciała pobiec razem z wnukiem."
        ],
-       "answer": "b"
+       "answer": "b",
+       "explain": "Pani Barbara mówi: „Lekarz powiedział mi, że mam za wysokie ciśnienie i muszę się więcej ruszać”. W szkole nie znosiła wuefu, więc a) jest błędne."
       },
       {
        "id": "sl3-2",
@@ -225,7 +240,8 @@
         "przeczytała artykuł w gazecie.",
         "dostała plan treningów od wnuka."
        ],
-       "answer": "a"
+       "answer": "a",
+       "explain": "Pomysł pojawił się, kiedy stała przy trasie maratonu wnuka w Poznaniu i patrzyła na biegaczy. Plan treningów wnuk przygotował dopiero później."
       },
       {
        "id": "sl3-3",
@@ -235,7 +251,8 @@
         "biegała codziennie przez dwa lata.",
         "biegała z grupą i chodziła na basen."
        ],
-       "answer": "c"
+       "answer": "c",
+       "explain": "Mówi: „biegałam z grupą z osiedla” i „Raz w tygodniu chodziłam też na basen”. Trenowała cztery razy w tygodniu przez prawie rok, nie codziennie przez dwa lata."
       },
       {
        "id": "sl3-4",
@@ -245,7 +262,8 @@
         "pomogła jej nieznajoma kobieta.",
         "zadzwoniła do wnuka po pomoc."
        ],
-       "answer": "b"
+       "answer": "b",
+       "explain": "Po trzydziestym kilometrze chciała zejść z trasy, ale „uratowała mnie nieznajoma kobieta”, która biegła obok. Razem dobiegły do mety."
       },
       {
        "id": "sl3-5",
@@ -255,7 +273,8 @@
         "trenuje młodych biegaczy.",
         "nie biega, bo bolą ją kolana."
        ],
-       "answer": "a"
+       "answer": "a",
+       "explain": "Mówi: „Ciśnienie mam w normie, lepiej śpię, a do tego mam mnóstwo nowych znajomych”. Nie ma mowy o trenowaniu młodych ani o bólu kolan."
       },
       {
        "id": "sl3-6",
@@ -265,7 +284,8 @@
         "najpierw zrobili badania.",
         "biegali tylko w grupie."
        ],
-       "answer": "b"
+       "answer": "b",
+       "explain": "Radzi: „najważniejsze: najpierw badania u lekarza, a dopiero potem plan treningów”. Mówi też wprost, żeby nie zaczynać od maratonu."
       }
      ]
     },
@@ -318,17 +338,20 @@
       {
        "id": "sl4-1",
        "text": "Opinia 21",
-       "answer": "c"
+       "answer": "c",
+       "explain": "Słuchacz mówi: „w małym mieszkaniu duży pies się męczy, a sąsiedzi razem z nim”. To opinia c). O kagańcach (d) nikt nie mówi."
       },
       {
        "id": "sl4-2",
        "text": "Opinia 22",
-       "answer": "e"
+       "answer": "e",
+       "explain": "Pracownica schroniska mówi o szczeniakach dawanych w prezencie: „To nie jest zabawka na jeden miesiąc”. Chodzi o decyzję bez zastanowienia (e), a nie o adopcję zamiast kupna (b)."
       },
       {
        "id": "sl4-3",
        "text": "Opinia 23",
-       "answer": "f"
+       "answer": "f",
+       "explain": "Słuchacz mówi, że ludzie nie sprzątają po psach i „Straż miejska powinna częściej dawać mandaty”. Mandat to kara, więc pasuje f)."
       }
      ]
     }
@@ -379,22 +402,26 @@
       {
        "id": "cz1-1",
        "answer": "e",
-       "text": "Cześć Bartek,\nsłyszałam od Kasi, że od poniedziałku pracujesz w firmie, o której tak marzyłeś! Strasznie się cieszę. Wiedziałam, że po tylu rozmowach w końcu się uda. Musimy to uczcić — w piątek ja stawiam kawę.\nŚciskam\nMagda"
+       "text": "Cześć Bartek,\nsłyszałam od Kasi, że od poniedziałku pracujesz w firmie, o której tak marzyłeś! Strasznie się cieszę. Wiedziałam, że po tylu rozmowach w końcu się uda. Musimy to uczcić — w piątek ja stawiam kawę.\nŚciskam\nMagda",
+       "explain": "Magda cieszy się, że Bartek „od poniedziałku pracujesz w firmie, o której tak marzyłeś”, i chce to uczcić. To gratulacje z okazji nowej pracy."
       },
       {
        "id": "cz1-2",
        "answer": "a",
-       "text": "Szanowni Państwo,\nz powodu choroby trenera zajęcia z pilatesu w czwartek 3 grudnia o 18:00 się nie odbędą. Odrobimy je w sobotę 12 grudnia o 10:00. Osoby, które nie mogą przyjść w sobotę, dostaną zwrot pieniędzy za jedne zajęcia.\nStudio Ruchu „Balans”"
+       "text": "Szanowni Państwo,\nz powodu choroby trenera zajęcia z pilatesu w czwartek 3 grudnia o 18:00 się nie odbędą. Odrobimy je w sobotę 12 grudnia o 10:00. Osoby, które nie mogą przyjść w sobotę, dostaną zwrot pieniędzy za jedne zajęcia.\nStudio Ruchu „Balans”",
+       "explain": "Studio pisze, że zajęcia z pilatesu „się nie odbędą” z powodu choroby trenera. To odwołanie zajęć."
       },
       {
        "id": "cz1-3",
        "answer": "d",
-       "text": "Drodzy Sąsiedzi,\nw sobotę na podwórku za blokiem nr 7 zbieramy karmę, koce i stare ręczniki dla schroniska „Przytulisko”. Czekamy od 10:00 do 14:00. Wszystko zawieziemy do schroniska jeszcze tego samego dnia. Dziękujemy za każdą pomoc!\nRada osiedla"
+       "text": "Drodzy Sąsiedzi,\nw sobotę na podwórku za blokiem nr 7 zbieramy karmę, koce i stare ręczniki dla schroniska „Przytulisko”. Czekamy od 10:00 do 14:00. Wszystko zawieziemy do schroniska jeszcze tego samego dnia. Dziękujemy za każdą pomoc!\nRada osiedla",
+       "explain": "Rada osiedla zbiera „karmę, koce i stare ręczniki dla schroniska”. To zbiórka dla schroniska."
       },
       {
        "id": "cz1-4",
        "answer": "b",
-       "text": "Hej Tomek,\nw niedzielę jedziemy z dziećmi nad jezioro, a nasz namiot jest dziurawy. Czy mógłbyś pożyczyć nam swój? Oddamy go w poniedziałek, czysty i suchy. Jeśli się zgodzisz, przyjadę po niego w sobotę wieczorem.\nDzięki!\nRafał"
+       "text": "Hej Tomek,\nw niedzielę jedziemy z dziećmi nad jezioro, a nasz namiot jest dziurawy. Czy mógłbyś pożyczyć nam swój? Oddamy go w poniedziałek, czysty i suchy. Jeśli się zgodzisz, przyjadę po niego w sobotę wieczorem.\nDzięki!\nRafał",
+       "explain": "Rafał pyta: „Czy mógłbyś pożyczyć nam swój?” – chodzi o namiot. To prośba o pożyczenie rzeczy."
       }
      ]
     },
@@ -455,27 +482,32 @@
       {
        "id": "cz2-1",
        "text": "Twój syn chodzi do czwartej klasy i ma problemy z ułamkami.",
-       "answer": "a"
+       "answer": "a",
+       "explain": "Syn jest w czwartej klasie, czyli w szkole podstawowej, i ma problem z matematyką (ułamki). Ogłoszenie a) to korepetycje z matematyki dla takich uczniów."
       },
       {
        "id": "cz2-2",
        "text": "Lubisz zwierzęta, w grudniu masz dużo wolnego czasu i chcesz trochę zarobić.",
-       "answer": "d"
+       "answer": "d",
+       "explain": "Ogłoszenie d): ktoś szuka opieki nad psem od 20 do 27 grudnia i zapłaci. Pasuje do miłości do zwierząt, wolnego czasu w grudniu i chęci zarobku."
       },
       {
        "id": "cz2-3",
        "text": "Urządzasz kuchnię w nowym mieszkaniu i masz mało pieniędzy.",
-       "answer": "e"
+       "answer": "e",
+       "explain": "Ogłoszenie e): ktoś oddaje za darmo meble kuchenne. To dobre rozwiązanie, gdy urządzasz kuchnię i masz mało pieniędzy."
       },
       {
        "id": "cz2-4",
        "text": "Za tydzień przeprowadzasz się do innej dzielnicy, a nie masz samochodu.",
-       "answer": "g"
+       "answer": "g",
+       "explain": "Ogłoszenie g): pomoc w przeprowadzce samochodem dostawczym. Pasuje, bo przeprowadzasz się i nie masz samochodu."
       },
       {
        "id": "cz2-5",
        "text": "Chcesz zapisać sześcioletnią córkę na zajęcia z tańca.",
-       "answer": "x"
+       "answer": "x",
+       "explain": "Żadne ogłoszenie nie dotyczy tańca. Klub szachowy (f) przyjmuje dzieci, a rower (b) jest dla dziecka 5–7 lat, ale to nie są zajęcia z tańca."
       }
      ]
     },
@@ -496,7 +528,8 @@
         "tylko osoby, które pływają w głębokiej wodzie."
        ],
        "answer": "b",
-       "passage": "Lekcje pływania dla dorosłych\n\nPływalnia miejska „Delfin” od października prowadzi bezpłatne lekcje pływania dla dorosłych, którzy nigdy nie nauczyli się pływać. Zajęcia odbywają się w małych grupach, najwyżej po sześć osób, dwa razy w tygodniu przez dwa miesiące. Instruktorzy mówią, że największym problemem nie jest technika, ale strach przed wodą. Dlatego pierwsze lekcje odbywają się w płytkim basenie, gdzie każdy może stać. Chętnych było tak wielu, że od stycznia pływalnia otworzy dwie nowe grupy. Zapisy przyjmuje kasa pływalni."
+       "passage": "Lekcje pływania dla dorosłych\n\nPływalnia miejska „Delfin” od października prowadzi bezpłatne lekcje pływania dla dorosłych, którzy nigdy nie nauczyli się pływać. Zajęcia odbywają się w małych grupach, najwyżej po sześć osób, dwa razy w tygodniu przez dwa miesiące. Instruktorzy mówią, że największym problemem nie jest technika, ale strach przed wodą. Dlatego pierwsze lekcje odbywają się w płytkim basenie, gdzie każdy może stać. Chętnych było tak wielu, że od stycznia pływalnia otworzy dwie nowe grupy. Zapisy przyjmuje kasa pływalni.",
+       "explain": "Tekst mówi o lekcjach „dla dorosłych, którzy nigdy nie nauczyli się pływać”. Dzieci nie są wymienione, a pierwsze lekcje są w płytkim basenie."
       },
       {
        "id": "cz3-2",
@@ -506,7 +539,8 @@
         "nauczenie się techniki.",
         "regularne przychodzenie na zajęcia."
        ],
-       "answer": "a"
+       "answer": "a",
+       "explain": "Instruktorzy mówią, że największym problemem „nie jest technika, ale strach przed wodą”. Dlatego b) jest błędne."
       },
       {
        "id": "cz3-3",
@@ -517,7 +551,8 @@
         "stałą opłatę co miesiąc."
        ],
        "answer": "a",
-       "passage": "Zakupy dla sąsiada\n\nStudenci z wolontariatu „Ręka w rękę” robią zakupy dla starszych osób, które nie mogą same wyjść z domu. Senior dzwoni pod numer akcji i dyktuje listę, a student przynosi zakupy jeszcze tego samego dnia. Za produkty senior płaci przy odbiorze, za pomoc — nic. Wolontariusze mówią, że zakupy to często tylko pretekst. — Wiele osób chce po prostu porozmawiać. Czasem zostaję na herbacie godzinę — opowiada Kinga, studentka farmacji. Akcja działa od dwóch lat i ma ponad stu wolontariuszy."
+       "passage": "Zakupy dla sąsiada\n\nStudenci z wolontariatu „Ręka w rękę” robią zakupy dla starszych osób, które nie mogą same wyjść z domu. Senior dzwoni pod numer akcji i dyktuje listę, a student przynosi zakupy jeszcze tego samego dnia. Za produkty senior płaci przy odbiorze, za pomoc — nic. Wolontariusze mówią, że zakupy to często tylko pretekst. — Wiele osób chce po prostu porozmawiać. Czasem zostaję na herbacie godzinę — opowiada Kinga, studentka farmacji. Akcja działa od dwóch lat i ma ponad stu wolontariuszy.",
+       "explain": "„Za produkty senior płaci przy odbiorze, za pomoc – nic”. Nie ma opłaty za dojazd ani stałej opłaty co miesiąc."
       },
       {
        "id": "cz3-4",
@@ -527,7 +562,8 @@
         "rozmowę z drugim człowiekiem.",
         "pomoc w sprzątaniu mieszkania."
        ],
-       "answer": "b"
+       "answer": "b",
+       "explain": "Wolontariusze mówią, że zakupy to często pretekst: „Wiele osób chce po prostu porozmawiać”."
       },
       {
        "id": "cz3-5",
@@ -538,7 +574,8 @@
         "mamy uczą ojców piec ciasta."
        ],
        "answer": "b",
-       "passage": "Tata w kuchni\n\nSzkoła gotowania „Smaki” od roku organizuje kurs „Tata gotuje”. Przychodzą na niego ojcowie, którzy chcą przygotowywać dla rodziny zdrowe posiłki. Przez sześć sobót uczą się gotować zupy, dania z warzyw i proste ciasta. W ostatnim spotkaniu biorą udział dzieci — razem z tatami przygotowują obiad dla mam. Organizatorzy myśleli, że kurs będzie popularny wśród młodych ojców, ale najwięcej uczestników ma ponad czterdzieści lat. Następna edycja rusza w lutym, a cały kurs kosztuje 480 zł."
+       "passage": "Tata w kuchni\n\nSzkoła gotowania „Smaki” od roku organizuje kurs „Tata gotuje”. Przychodzą na niego ojcowie, którzy chcą przygotowywać dla rodziny zdrowe posiłki. Przez sześć sobót uczą się gotować zupy, dania z warzyw i proste ciasta. W ostatnim spotkaniu biorą udział dzieci — razem z tatami przygotowują obiad dla mam. Organizatorzy myśleli, że kurs będzie popularny wśród młodych ojców, ale najwięcej uczestników ma ponad czterdzieści lat. Następna edycja rusza w lutym, a cały kurs kosztuje 480 zł.",
+       "explain": "Na ostatnim spotkaniu dzieci „razem z tatami przygotowują obiad dla mam”. Obiad nie jest dla dzieci, tylko dla mam."
       },
       {
        "id": "cz3-6",
@@ -548,7 +585,8 @@
         "na zajęcia przyszło mało osób.",
         "uczestnicy są starsi, niż myśleli."
        ],
-       "answer": "c"
+       "answer": "c",
+       "explain": "Organizatorzy myśleli, że kurs będzie popularny wśród młodych ojców, „ale najwięcej uczestników ma ponad czterdzieści lat”. Cena 480 zł jest podana, ale nikt nie mówi, że to za drogo."
       }
      ]
     },
@@ -573,17 +611,20 @@
       {
        "id": "cz4-1",
        "text": "Dwunastoletnie dziecko może ćwiczyć na siłowni samo.",
-       "answer": "fałsz"
+       "answer": "fałsz",
+       "explain": "Według §2 z urządzeń mogą korzystać osoby powyżej 14 lat, a młodsze dzieci „wyłącznie pod opieką osoby dorosłej”. Dziecko 12-letnie nie może ćwiczyć samo."
       },
       {
        "id": "cz4-2",
        "text": "Na jednym urządzeniu mogą ćwiczyć jednocześnie dwie osoby.",
-       "answer": "fałsz"
+       "answer": "fałsz",
+       "explain": "§4 mówi: „Na jednym urządzeniu może ćwiczyć w tym samym czasie tylko jedna osoba”."
       },
       {
        "id": "cz4-3",
        "text": "O 21:30 siłownia jest jeszcze otwarta.",
-       "answer": "prawda"
+       "answer": "prawda",
+       "explain": "Według §1 siłownia jest czynna „od 6:00 do 22:00”, więc o 21:30 jest jeszcze otwarta."
       }
      ]
     }
@@ -650,49 +691,57 @@
        "id": "el1-42",
        "n": 42,
        "kind": "bank",
-       "answer": "c"
+       "answer": "c",
+       "explain": "Standardowe powitanie pracownika firmy przez telefon: „W czym mogę pomóc?”. Pasuje do znaku zapytania na końcu zdania."
       },
       {
        "id": "el1-43",
        "n": 43,
        "kind": "bank",
-       "answer": "f"
+       "answer": "f",
+       "explain": "Klient mówi, czego szuka: „interesuje mnie wyjazd” (wyjazd to podmiot w mianowniku, „mnie” – kogo interesuje). „Ile kosztuje” byłoby pytaniem, a tu jest zdanie oznajmujące."
       },
       {
        "id": "el1-44",
        "n": 44,
        "kind": "bank",
-       "answer": "a"
+       "answer": "a",
+       "explain": "Klient odpowiada: „Dla czterech: dwoje dorosłych i dwoje dzieci”, więc pytanie brzmiało: „Na ile osób?”."
       },
       {
        "id": "el1-45",
        "n": 45,
        "kind": "bank",
-       "answer": "b"
+       "answer": "b",
+       "explain": "Pracownica przekazuje złą wiadomość – hotel jest pełny. Do złych informacji używamy słowa „niestety”."
       },
       {
        "id": "el1-46",
        "n": 46,
        "kind": "bank",
-       "answer": "j"
+       "answer": "j",
+       "explain": "„W takim razie” znaczy „skoro tak” – klient podejmuje decyzję po informacji o busie na stok."
       },
       {
        "id": "el1-47",
        "n": 47,
        "kind": "bank",
-       "answer": "e"
+       "answer": "e",
+       "explain": "Grzeczne pytanie o pozwolenie: „Czy jest możliwość + dopełniacz” (zapłacenia). Po luce jest forma „zapłacenia”, więc pasuje tylko ten zwrot."
       },
       {
        "id": "el1-48",
        "n": 48,
        "kind": "bank",
-       "answer": "i"
+       "answer": "i",
+       "explain": "Pracownica zgadza się i wyjaśnia zasady płatności – „Oczywiście” to uprzejme potwierdzenie „tak”."
       },
       {
        "id": "el1-49",
        "n": 49,
        "kind": "bank",
-       "answer": "g"
+       "answer": "g",
+       "explain": "„Na pewno będzie pan zadowolony” wyraża pewność. „Do zobaczenia” nie łączy się z dalszą częścią zdania."
       }
      ]
     },
@@ -714,7 +763,8 @@
         "Dowiadywałem",
         "Dowiedziałbym"
        ],
-       "answer": "Dowiedziałem"
+       "answer": "Dowiedziałem",
+       "explain": "Mowa o jednorazowym fakcie w przeszłości, więc potrzebny jest aspekt dokonany: „dowiedziałem się”. Forma „dowiadywałem” to proces, a „dowiedziałbym” to tryb przypuszczający."
       },
       {
        "id": "el2-51",
@@ -725,7 +775,8 @@
         "pojedzie",
         "pojechał"
        ],
-       "answer": "pojechać"
+       "answer": "pojechać",
+       "explain": "Po „chciałby” używamy bezokolicznika: „chciałby pojechać”. Formy „pojedzie” i „pojechał” są osobowe."
       },
       {
        "id": "el2-52",
@@ -736,7 +787,8 @@
         "dokąd",
         "skąd"
        ],
-       "answer": "gdzie"
+       "answer": "gdzie",
+       "explain": "Czasownik „mieszkać” odpowiada na pytanie „gdzie?” (miejsce). „Dokąd” to kierunek, „skąd” – punkt wyjścia."
       },
       {
        "id": "el2-53",
@@ -747,7 +799,8 @@
         "od",
         "przez"
        ],
-       "answer": "na"
+       "answer": "na",
+       "explain": "Stała konstrukcja: „być uczulonym na coś” (na + biernik): uczulony na orzechy."
       },
       {
        "id": "el2-54",
@@ -758,7 +811,8 @@
         "specjalnych",
         "specjalnymi"
        ],
-       "answer": "specjalne"
+       "answer": "specjalne",
+       "explain": "Przymiotnik zgadza się z rzeczownikiem „posiłki” (biernik, l. mnoga, rodzaj niemęskoosobowy): „przygotować specjalne posiłki”."
       },
       {
        "id": "el2-55",
@@ -769,7 +823,8 @@
         "musi",
         "może"
        ],
-       "answer": "można"
+       "answer": "można",
+       "explain": "„Czy można + bezokolicznik” to bezosobowe pytanie o możliwość. Formy „musi” i „może” wymagałyby podmiotu."
       },
       {
        "id": "el2-56",
@@ -780,7 +835,8 @@
         "wysoko",
         "wysokie"
        ],
-       "answer": "wysoki"
+       "answer": "wysoki",
+       "explain": "Po „jest” stoi przymiotnik zgodny z podmiotem „koszt” (rodzaj męski, mianownik): „koszt jest wysoki”. „Wysoko” to przysłówek."
       },
       {
        "id": "el2-57",
@@ -791,7 +847,8 @@
         "boją",
         "bać"
        ],
-       "answer": "boi"
+       "answer": "boi",
+       "explain": "Podmiotem jest „syn” (3. osoba l. poj.), więc: „syn trochę się boi”. „Boją” to liczba mnoga, „bać” to bezokolicznik."
       },
       {
        "id": "el2-58",
@@ -802,7 +859,8 @@
         "chociaż",
         "dlatego"
        ],
-       "answer": "ponieważ"
+       "answer": "ponieważ",
+       "explain": "Potrzebny spójnik przyczyny: proszę o szybką odpowiedź, „ponieważ” chcę zarezerwować miejsce. „Chociaż” wyraża kontrast, a „dlatego” – skutek."
       },
       {
        "id": "el2-59",
@@ -813,7 +871,8 @@
         "Ze",
         "Na"
        ],
-       "answer": "Z"
+       "answer": "Z",
+       "explain": "Stała formuła na końcu listu: „Z pozdrowieniami” (z + narzędnik). Forma „ze” stoi przed trudnymi grupami spółgłosek, np. „ze mną”."
       }
      ]
     }

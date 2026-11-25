@@ -55,7 +55,8 @@
                 "zaproponować pilną wymianę opon.",
                 "przełożyć termin naprawy hamulców."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Pan Nowicki mówi: „Naprawa hamulców jest już skończona” i „samochód może pan odebrać jutro”. Wymiana opon „nie jest pilna”, a terminu naprawy nie przekłada."
             },
             {
               "id": "sl1-2",
@@ -65,7 +66,8 @@
                 "przyszła wcześniej niż zwykle.",
                 "pożyczyła jej krzesła."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Ewa pyta: „masz jeszcze te składane krzesła? Weź dwa albo trzy”. Jedzenia Kasia nie ma przynosić („nic nie przynoś”), a godzina zostaje bez zmian."
             },
             {
               "id": "sl1-3",
@@ -75,7 +77,8 @@
                 "przyprowadzić córkę wcześniej niż zwykle.",
                 "zapłacić za bilet do teatru."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Pani Sowa prosi: „przyprowadzić Zosię najpóźniej o ósmej piętnaście, a nie jak zwykle o dziewiątej”. Obiad dzieci zjedzą normalnie po powrocie, o biletach nie ma mowy."
             },
             {
               "id": "sl1-4",
@@ -85,7 +88,8 @@
                 "klientka będzie mieszkać w innym hotelu.",
                 "samolot wyleci później."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Samolot „nie startuje o szóstej czterdzieści, tylko o dziesiątej piętnaście”, czyli później. Lot nie jest odwołany, a „hotel i transfer zostają bez zmian”."
             }
           ]
         },
@@ -111,7 +115,8 @@
               "kind": "tf",
               "stem": "Rower był często używany.",
               "answer": "fałsz",
-              "passage": "Rozmowa 1 · zadania 5–6"
+              "passage": "Rozmowa 1 · zadania 5–6",
+              "explain": "Sprzedająca mówi, że rowerem „jeździł tylko mój mąż, i to rzadko”. Rzadko to przeciwieństwo „często”, więc zdanie jest fałszywe."
             },
             {
               "id": "sl2-2",
@@ -121,14 +126,16 @@
                 "da kupującemu dodatkowe rzeczy.",
                 "chce spotkać się jeszcze dziś wieczorem."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Sprzedająca mówi: „dorzucę kask i lampki” – to dodatkowe rzeczy. Cena to 750 zł, „nie mniej”, a dziś wieczorem jest w pracy, więc a i c są błędne."
             },
             {
               "id": "sl2-3",
               "kind": "tf",
               "stem": "Tomek ma w piątek po południu inne plany.",
               "answer": "prawda",
-              "passage": "Rozmowa 2 · zadania 7–8"
+              "passage": "Rozmowa 2 · zadania 7–8",
+              "explain": "Tomek mówi: „Po południu mam dentystę”. Ma więc w piątek po południu inne plany i dlatego ranna zmiana mu pasuje."
             },
             {
               "id": "sl2-4",
@@ -138,14 +145,16 @@
                 "w sobotę ma dyżur.",
                 "poprosi Ewę o zastępstwo."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Natalia mówi: „Mogę wziąć twoją sobotę, ale tylko do czternastej” – czyli zastąpi Tomka przez część dnia. W sobotę ma wolne, a Ewa i tak przychodzi od 14."
             },
             {
               "id": "sl2-5",
               "kind": "tf",
               "stem": "Klient chce zrezygnować z usług firmy.",
               "answer": "fałsz",
-              "passage": "Rozmowa 3 · zadania 9–10"
+              "passage": "Rozmowa 3 · zadania 9–10",
+              "explain": "Klient nie rezygnuje z usług, tylko chce „przejść na tańszy pakiet” w tej samej firmie. Dlatego zdanie jest fałszywe."
             },
             {
               "id": "sl2-6",
@@ -155,14 +164,16 @@
                 "zapłaci dwieście złotych za zmianę pakietu.",
                 "zmieni pakiet, kiedy skończy się umowa."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Zmiana przed końcem umowy kosztuje 200 zł, więc klient mówi: „To się nie opłaca. Poczekam do marca” – wtedy kończy się umowa. Nie zmieni pakietu od razu i nie zapłaci 200 zł."
             },
             {
               "id": "sl2-7",
               "kind": "tf",
               "stem": "Kolacja firmowa odbędzie się w dużej sali.",
               "answer": "fałsz",
-              "passage": "Rozmowa 4 · zadania 11–12"
+              "passage": "Rozmowa 4 · zadania 11–12",
+              "explain": "Menedżer mówi: „Duża sala jest już zajęta, ale mamy salę na piętrze”. Kolacja odbędzie się więc w sali na piętrze, a nie w dużej sali."
             },
             {
               "id": "sl2-8",
@@ -172,14 +183,16 @@
                 "wybrać dania przed kolacją.",
                 "zarezerwować salę dla dwudziestu osób."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Menedżer: „Menu wyślę pani mailem, a zamówienie potrzebuję do czwartku” – klientka musi wcześniej wybrać dania. Zaliczkę wpłaca do środy, nie do czwartku."
             },
             {
               "id": "sl2-9",
               "kind": "tf",
               "stem": "Sąsiadka rano śpi, bo pracuje w nocy.",
               "answer": "prawda",
-              "passage": "Rozmowa 5 · zadania 13–14"
+              "passage": "Rozmowa 5 · zadania 13–14",
+              "explain": "Sąsiadka mówi: „Pracuję w nocy i śpię do pierwszej”. Rano więc śpi, dlatego prosi, żeby wiercić dopiero po południu."
             },
             {
               "id": "sl2-10",
@@ -189,7 +202,8 @@
                 "ekipa będzie wiercić rano.",
                 "remont zacznie się w przyszłym miesiącu."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Sąsiad: „Ekipa mówi, że dwa tygodnie. Ale znając życie, raczej trzy” – remont potrwa pewnie dłużej. Rano będą tylko malować, a remont zaczyna się od poniedziałku."
             }
           ]
         },
@@ -215,7 +229,8 @@
                 "studiować.",
                 "uczyć się polskiego."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Olena mówi: „Przyjechałam na studia, na ekonomię”. Tłumaczką nie chciała być od początku – zaczęła tłumaczyć przypadkiem."
             },
             {
               "id": "sl3-2",
@@ -225,7 +240,8 @@
                 "w ogóle nie znała polskiego.",
                 "uczyła się polskiego dość krótko."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Olena uczyła się polskiego „w szkole w Łucku, ale tylko dwa lata”, więc krótko. Znała trochę język, ale „rozumiała niewiele”, czyli nie mówiła bardzo dobrze."
             },
             {
               "id": "sl3-3",
@@ -235,7 +251,8 @@
                 "pomagała koleżankom w urzędzie.",
                 "straciła pracę w banku."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Szef poprosił ją o przetłumaczenie umowy „i okazało się, że to jest to, co lubię” – wtedy zdecydowała. Pomoc koleżankom w urzędzie była wcześniej i przypadkowa."
             },
             {
               "id": "sl3-4",
@@ -245,7 +262,8 @@
                 "okazał się łatwiejszy, niż myślała.",
                 "Olena zdała za drugim razem."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Olena mówi: „Za pierwszym razem nie zdałam, udało się dopiero za drugim”. Dwa lata trwały przygotowania, a nie sam egzamin."
             },
             {
               "id": "sl3-5",
@@ -255,7 +273,8 @@
                 "jeden błąd może mieć poważne skutki.",
                 "klienci często się spieszą."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Olena: „Najtrudniejsza jest odpowiedzialność. Jeden błąd w dacie albo w nazwisku i ktoś ma potem poważny problem”. O słownictwie mówi, że można się go nauczyć."
             },
             {
               "id": "sl3-6",
@@ -265,7 +284,8 @@
                 "firmy.",
                 "urzędy."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Olena: „Kiedyś głównie firmy. Dziś najczęściej przychodzą osoby prywatne”. Firmy to dawni klienci, a urzędów nie wymienia jako klientów."
             }
           ]
         },
@@ -318,17 +338,20 @@
             {
               "id": "sl4-1",
               "text": "Opinia 21",
-              "answer": "b"
+              "answer": "b",
+              "explain": "Słuchaczka sprzedała auto i policzyła, że ubezpieczenie, paliwo i parking kosztowały ją „ponad tysiąc złotych miesięcznie” – teraz wydaje te pieniądze na podróże, czyli oszczędza."
             },
             {
               "id": "sl4-2",
               "text": "Opinia 22",
-              "answer": "f"
+              "answer": "f",
+              "explain": "Fizjoterapeuta jeździ do pacjentów, nawet pięć wizyt dziennie, i mówi: „w mojej pracy po prostu nie ma innego wyjścia” – samochód jest potrzebny w jego zawodzie."
             },
             {
               "id": "sl4-3",
               "text": "Opinia 23",
-              "answer": "e"
+              "answer": "e",
+              "explain": "Słuchaczka uważa, że „miasto powinno budować parkingi przy stacjach metra”, żeby ludzie zostawiali auta na obrzeżach – czyli poza centrum."
             }
           ]
         }
@@ -379,22 +402,26 @@
             {
               "id": "cz1-1",
               "answer": "d",
-              "text": "Szanowni Mieszkańcy,\nod 1 grudnia na naszym osiedlu szkło trzeba wyrzucać do zielonych pojemników, a papier – do niebieskich. Plastik i metal wrzucamy razem do żółtych worków, które co tydzień można odebrać w administracji. Odpady wyrzucone do złego pojemnika nie zostaną zabrane przez firmę.\nAdministracja Spółdzielni „Zacisze”"
+              "text": "Szanowni Mieszkańcy,\nod 1 grudnia na naszym osiedlu szkło trzeba wyrzucać do zielonych pojemników, a papier – do niebieskich. Plastik i metal wrzucamy razem do żółtych worków, które co tydzień można odebrać w administracji. Odpady wyrzucone do złego pojemnika nie zostaną zabrane przez firmę.\nAdministracja Spółdzielni „Zacisze”",
+              "explain": "Administracja informuje, gdzie od 1 grudnia wyrzucać szkło, papier, plastik i metal. To nowe zasady segregacji śmieci."
             },
             {
               "id": "cz1-2",
               "answer": "c",
-              "text": "Cześć Kamil,\nw piątek lecimy z Anią na tydzień do Hiszpanii. Mógłbyś raz albo dwa razy zajrzeć do naszego mieszkania? Trzeba podlać kwiaty i wyjąć listy ze skrzynki. Klucze zostawię Ci w czwartek wieczorem. Oczywiście przywieziemy coś dobrego!\nMarek"
+              "text": "Cześć Kamil,\nw piątek lecimy z Anią na tydzień do Hiszpanii. Mógłbyś raz albo dwa razy zajrzeć do naszego mieszkania? Trzeba podlać kwiaty i wyjąć listy ze skrzynki. Klucze zostawię Ci w czwartek wieczorem. Oczywiście przywieziemy coś dobrego!\nMarek",
+              "explain": "Marek wyjeżdża i prosi Kamila, żeby zajrzał do mieszkania, podlał kwiaty i wyjął listy. To prośba o opiekę nad mieszkaniem."
             },
             {
               "id": "cz1-3",
               "answer": "a",
-              "text": "Dzień dobry,\nniestety muszę przesunąć nasze spotkanie w sprawie projektu. Zamiast we wtorek o dziesiątej proponuję środę o tej samej godzinie, w sali konferencyjnej na drugim piętrze. Proszę o krótką informację, czy ten termin Pani odpowiada.\nPozdrawiam\nJoanna Lewandowska"
+              "text": "Dzień dobry,\nniestety muszę przesunąć nasze spotkanie w sprawie projektu. Zamiast we wtorek o dziesiątej proponuję środę o tej samej godzinie, w sali konferencyjnej na drugim piętrze. Proszę o krótką informację, czy ten termin Pani odpowiada.\nPozdrawiam\nJoanna Lewandowska",
+              "explain": "Joanna pisze: „muszę przesunąć nasze spotkanie” i proponuje środę zamiast wtorku. To zmiana terminu spotkania."
             },
             {
               "id": "cz1-4",
               "answer": "f",
-              "text": "Droga Magdo,\ndopiero dziś usłyszałam, że od stycznia będziesz kierować całym działem marketingu! Bardzo się cieszę – nikt nie zasłużył na to bardziej niż Ty. Musimy to koniecznie uczcić. Może kolacja w przyszły piątek? Ja zapraszam!\nŚciskam, Iwona"
+              "text": "Droga Magdo,\ndopiero dziś usłyszałam, że od stycznia będziesz kierować całym działem marketingu! Bardzo się cieszę – nikt nie zasłużył na to bardziej niż Ty. Musimy to koniecznie uczcić. Może kolacja w przyszły piątek? Ja zapraszam!\nŚciskam, Iwona",
+              "explain": "Iwona cieszy się, że Magda „będzie kierować całym działem marketingu” – to awans, więc list to gratulacje."
             }
           ]
         },
@@ -455,27 +482,32 @@
             {
               "id": "cz2-1",
               "text": "Pierwszy raz rozliczasz podatek w Polsce i nie wiesz, jak wypełnić formularz.",
-              "answer": "f"
+              "answer": "f",
+              "explain": "Biuro „Saldo” robi rozliczenia PIT dla osób prywatnych, „także dla obcokrajowców” – pomoże przy pierwszym rozliczeniu podatku w Polsce."
             },
             {
               "id": "cz2-2",
               "text": "Kupiłeś/Kupiłaś przez internet używaną kanapę i musisz przewieźć ją z drugiego końca miasta.",
-              "answer": "h"
+              "answer": "h",
+              "explain": "Ogłoszenie h oferuje bus i pomoc, także przy „małych przewozach, np. jedna szafa” – można więc przewieźć jedną kanapę przez miasto."
             },
             {
               "id": "cz2-3",
               "text": "Twój syn chodzi do liceum i ma problemy z fizyką.",
-              "answer": "x"
+              "answer": "x",
+              "explain": "Jedyne korepetycje (c) są z matematyki i tylko dla szkoły podstawowej, a syn chodzi do liceum i ma problem z fizyką. Żadne ogłoszenie nie pasuje."
             },
             {
               "id": "cz2-4",
               "text": "Na wiosnę chcesz znowu jeździć do pracy rowerem, ale od roku stoi on w piwnicy.",
-              "answer": "d"
+              "answer": "d",
+              "explain": "Rower stał rok w piwnicy, więc przed wiosną potrzebny jest serwis. Ogłoszenie d proponuje „przegląd przed sezonem” i szybkie naprawy."
             },
             {
               "id": "cz2-5",
               "text": "Na weselu przyjaciółki chcesz zatańczyć z partnerem, ale żadne z was nie umie tańczyć.",
-              "answer": "a"
+              "answer": "a",
+              "explain": "Szkoła tańca „Rytm” ma kursy tańca towarzyskiego „dla par”, a pierwsza lekcja jest gratis – dobre dla pary, która nie umie tańczyć."
             }
           ]
         },
@@ -496,7 +528,8 @@
                 "należy do jednego ze sklepów."
               ],
               "answer": "a",
-              "passage": "Lodówka społeczna przy bibliotece w Lesznie\n\nOd października przy wejściu do Biblioteki Miejskiej w Lesznie stoi lodówka społeczna. Każdy może zostawić w niej jedzenie, którego nie zdąży zjeść, i każdy może je wziąć – bez pytania i bez rejestracji. Lodówka jest dostępna przez całą dobę. Nie wolno do niej wkładać surowego mięsa, ryb ani alkoholu. Wolontariusze sprawdzają ją dwa razy dziennie i wyrzucają produkty po terminie. Najwięcej jedzenia przynoszą pobliskie piekarnie, które wieczorem oddają niesprzedany chleb."
+              "passage": "Lodówka społeczna przy bibliotece w Lesznie\n\nOd października przy wejściu do Biblioteki Miejskiej w Lesznie stoi lodówka społeczna. Każdy może zostawić w niej jedzenie, którego nie zdąży zjeść, i każdy może je wziąć – bez pytania i bez rejestracji. Lodówka jest dostępna przez całą dobę. Nie wolno do niej wkładać surowego mięsa, ryb ani alkoholu. Wolontariusze sprawdzają ją dwa razy dziennie i wyrzucają produkty po terminie. Najwięcej jedzenia przynoszą pobliskie piekarnie, które wieczorem oddają niesprzedany chleb.",
+              "explain": "W tekście: „Lodówka jest dostępna przez całą dobę”. Stoi przy bibliotece, a nie przy sklepie, i nie ma mowy o dniach roboczych."
             },
             {
               "id": "cz3-2",
@@ -506,7 +539,8 @@
                 "pracownicy biblioteki.",
                 "lokalne piekarnie."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Tekst mówi: „Najwięcej jedzenia przynoszą pobliskie piekarnie”, które wieczorem oddają niesprzedany chleb."
             },
             {
               "id": "cz3-3",
@@ -517,7 +551,8 @@
                 "połączy osiedle z lotniskiem."
               ],
               "answer": "c",
-              "passage": "Nowy autobus na lotnisko\n\nOd 15 stycznia mieszkańcy osiedla Nowy Dwór dojadą na lotnisko bez przesiadki. Nowa linia 147 będzie kursować co 20 minut w godzinach od 5:00 do 23:00, a w nocy – co godzinę. Podróż potrwa około 35 minut. Autobusy są przystosowane do przewozu dużych walizek: z tyłu znajduje się specjalne miejsce na bagaż. Bilet kosztuje tyle samo co na innych liniach miejskich. Do tej pory pasażerowie musieli przesiadać się w centrum z tramwaju do autobusu."
+              "passage": "Nowy autobus na lotnisko\n\nOd 15 stycznia mieszkańcy osiedla Nowy Dwór dojadą na lotnisko bez przesiadki. Nowa linia 147 będzie kursować co 20 minut w godzinach od 5:00 do 23:00, a w nocy – co godzinę. Podróż potrwa około 35 minut. Autobusy są przystosowane do przewozu dużych walizek: z tyłu znajduje się specjalne miejsce na bagaż. Bilet kosztuje tyle samo co na innych liniach miejskich. Do tej pory pasażerowie musieli przesiadać się w centrum z tramwaju do autobusu.",
+              "explain": "Mieszkańcy Nowego Dworu „dojadą na lotnisko bez przesiadki” – linia łączy osiedle z lotniskiem. Jeździ też w dzień (co 20 minut), a nie tylko w nocy."
             },
             {
               "id": "cz3-4",
@@ -527,7 +562,8 @@
                 "tylko taksówką.",
                 "specjalnym autobusem z bagażnikiem."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Ostatnie zdanie: „Do tej pory pasażerowie musieli przesiadać się w centrum z tramwaju do autobusu” – czyli jechali z przesiadką."
             },
             {
               "id": "cz3-5",
@@ -538,7 +574,8 @@
                 "mogą przyjść tylko osoby, które umieją szyć."
               ],
               "answer": "b",
-              "passage": "Kawiarnia napraw w Domu Kultury „Iskra”\n\nW każdą ostatnią sobotę miesiąca w Domu Kultury „Iskra” działa kawiarnia napraw. Mieszkańcy przynoszą ubrania z dziurami, zepsutymi zamkami czy urwanymi guzikami, a wolontariusze uczą, jak je naprawić. Maszyny do szycia, nici i igły zapewnia dom kultury. Nie trzeba umieć szyć – wystarczą chęci. Udział jest bezpłatny, ale organizatorzy proszą o wcześniejsze zapisy, bo miejsc jest tylko dwadzieścia. Przy kawie i cieście można też wymienić się ubraniami, których już nie nosimy."
+              "passage": "Kawiarnia napraw w Domu Kultury „Iskra”\n\nW każdą ostatnią sobotę miesiąca w Domu Kultury „Iskra” działa kawiarnia napraw. Mieszkańcy przynoszą ubrania z dziurami, zepsutymi zamkami czy urwanymi guzikami, a wolontariusze uczą, jak je naprawić. Maszyny do szycia, nici i igły zapewnia dom kultury. Nie trzeba umieć szyć – wystarczą chęci. Udział jest bezpłatny, ale organizatorzy proszą o wcześniejsze zapisy, bo miejsc jest tylko dwadzieścia. Przy kawie i cieście można też wymienić się ubraniami, których już nie nosimy.",
+              "explain": "Mieszkańcy przynoszą ubrania z dziurami czy zepsutymi zamkami. Maszyny zapewnia dom kultury, a „nie trzeba umieć szyć”, więc a i c są błędne."
             },
             {
               "id": "cz3-6",
@@ -548,7 +585,8 @@
                 "zapłacili za materiały.",
                 "zapisali się przed zajęciami."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Udział jest bezpłatny, ale „organizatorzy proszą o wcześniejsze zapisy”, bo jest tylko dwadzieścia miejsc. Kawa i ciasto są na miejscu, nie trzeba ich przynosić."
             }
           ]
         },
@@ -573,17 +611,20 @@
             {
               "id": "cz4-1",
               "text": "Za pranie można zapłacić gotówką u pracownika.",
-              "answer": "fałsz"
+              "answer": "fałsz",
+              "explain": "§2: płaci się kartą lub telefonem przy automacie, a „pracownik pralni nie przyjmuje gotówki”. Zdanie jest fałszywe."
             },
             {
               "id": "cz4-2",
               "text": "Pranie rozpoczęte o 21:30 jest zgodne z regulaminem.",
-              "answer": "fałsz"
+              "answer": "fałsz",
+              "explain": "§1: „Ostatnie pranie można rozpocząć o 21:00”. Pranie rozpoczęte o 21:30 jest więc niezgodne z regulaminem."
             },
             {
               "id": "cz4-3",
               "text": "Jeśli klient nie wyjmie rzeczy z pralki na czas, może je wyjąć pracownik.",
-              "answer": "prawda"
+              "answer": "prawda",
+              "explain": "§5: rzeczy zostawione w pralce dłużej niż 15 minut po praniu „obsługa może wyjąć i położyć na półce”. Zdanie jest prawdziwe."
             }
           ]
         }
@@ -650,49 +691,57 @@
               "id": "el1-1",
               "n": 42,
               "kind": "bank",
-              "answer": "a"
+              "answer": "a",
+              "explain": "Typowe powitanie w recepcji: „W czym mogę pomóc?”. Zwrot pasuje po przedstawieniu hotelu i przed prośbą klientki."
             },
             {
               "id": "el1-2",
               "n": 43,
               "kind": "bank",
-              "answer": "d"
+              "answer": "d",
+              "explain": "„Proszę chwilę poczekać” to grzeczna prośba, kiedy recepcjonista coś sprawdza. Po „proszę” stoi tu bezokolicznik."
             },
             {
               "id": "el1-3",
               "n": 44,
               "kind": "bank",
-              "answer": "f"
+              "answer": "f",
+              "explain": "Odpowiedź „śniadanie jest wliczone” pokazuje, że klientka pyta, czy śniadanie jest w cenie."
             },
             {
               "id": "el1-4",
               "n": 45,
               "kind": "bank",
-              "answer": "j"
+              "answer": "j",
+              "explain": "„Dopiero” znaczy: później, niż ktoś się spodziewa. Klientka przyjedzie późno, około 23, i dlatego pyta, czy to możliwe."
             },
             {
               "id": "el1-5",
               "n": 46,
               "kind": "bank",
-              "answer": "b"
+              "answer": "b",
+              "explain": "Klientka pyta, czy późny przyjazd jest w porządku: „Czy to możliwe?”. Odpowiedź recepcjonisty potwierdza, że tak."
             },
             {
               "id": "el1-6",
               "n": 47,
               "kind": "bank",
-              "answer": "g"
+              "answer": "g",
+              "explain": "Recepcja działa całą dobę, więc późny przyjazd nie przeszkadza: „Nie ma problemu”. „Niestety” i „szkoda” wyrażają coś negatywnego i tu nie pasują."
             },
             {
               "id": "el1-7",
               "n": 48,
               "kind": "bank",
-              "answer": "i"
+              "answer": "i",
+              "explain": "Klientka odpowiada „Na nazwisko Zielińska”, więc pytanie brzmiało: „Na jakie nazwisko mam zrobić rezerwację?”."
             },
             {
               "id": "el1-8",
               "n": 49,
               "kind": "bank",
-              "answer": "h"
+              "answer": "h",
+              "explain": "Na końcu rozmowy klientka dziękuje: „Bardzo dziękuję!”. To naturalne zakończenie po załatwieniu sprawy."
             }
           ]
         },
@@ -714,7 +763,8 @@
                 "Szukałam",
                 "Znajdowałam"
               ],
-              "answer": "Znalazłam"
+              "answer": "Znalazłam",
+              "explain": "Potrzebny jest czasownik dokonany: znalazła ofertę (jednorazowy efekt) i dlatego jest zainteresowana. „Szukałam” nie mówi, że znalazła, a „znajdowałam” opisuje powtarzanie."
             },
             {
               "id": "el2-2",
@@ -725,7 +775,8 @@
                 "częściej",
                 "najczęściej"
               ],
-              "answer": "częściej"
+              "answer": "częściej",
+              "explain": "„Coraz” łączy się ze stopniem wyższym: coraz częściej, coraz lepiej. Pokazuje, że czegoś jest więcej z czasem."
             },
             {
               "id": "el2-3",
@@ -736,7 +787,8 @@
                 "czy",
                 "jeśli"
               ],
-              "answer": "czy"
+              "answer": "czy",
+              "explain": "W pytaniu zależnym typu tak/nie używamy „czy”: chciałabym wiedzieć, czy… „Że” wprowadza informację, nie pytanie."
             },
             {
               "id": "el2-4",
@@ -747,7 +799,8 @@
                 "więc",
                 "chociaż"
               ],
-              "answer": "więc"
+              "answer": "więc",
+              "explain": "Druga część zdania to skutek: pracuje do 17, więc może przyjść o 18. „Bo” wprowadza przyczynę, a „chociaż” – kontrast."
             },
             {
               "id": "el2-5",
@@ -758,7 +811,8 @@
                 "można",
                 "mogę by"
               ],
-              "answer": "można"
+              "answer": "można",
+              "explain": "„Czy można + bezokolicznik” to bezosobowe pytanie o możliwość: Czy można zrobić test? Forma „mogę by” nie istnieje."
             },
             {
               "id": "el2-6",
@@ -769,7 +823,8 @@
                 "w",
                 "po"
               ],
-              "answer": "w"
+              "answer": "w",
+              "explain": "Stała konstrukcja: płacić w ratach (miejscownik po „w”). Nie mówimy „na ratach” ani „po ratach”."
             },
             {
               "id": "el2-7",
@@ -780,7 +835,8 @@
                 "zgadza",
                 "zgodziła"
               ],
-              "answer": "zgodziła się"
+              "answer": "zgodziła się",
+              "explain": "Potrzebny jest czasownik zwrotny „zgodzić się + bezokolicznik”: firma zgodziła się pokryć koszty. Bez „się” forma jest błędna."
             },
             {
               "id": "el2-8",
@@ -791,7 +847,8 @@
                 "na",
                 "za"
               ],
-              "answer": "na"
+              "answer": "na",
+              "explain": "Fakturę wystawia się „na firmę” (na kogoś = na czyje dane). „Faktura dla firmy” brzmi mniej naturalnie, a „za firmę” zmienia sens."
             },
             {
               "id": "el2-9",
@@ -802,7 +859,8 @@
                 "szybko",
                 "szybkiej"
               ],
-              "answer": "szybką"
+              "answer": "szybką",
+              "explain": "Po „za” w znaczeniu podziękowania stoi biernik: wdzięczna za szybką odpowiedź. Przymiotnik musi pasować do rzeczownika „odpowiedź” (biernik, r. żeński)."
             },
             {
               "id": "el2-10",
@@ -813,7 +871,8 @@
                 "Całuję",
                 "Do zobaczenia"
               ],
-              "answer": "Z poważaniem"
+              "answer": "Z poważaniem",
+              "explain": "To oficjalny e-mail do szkoły („Szanowni Państwo”), więc pasuje formalne zakończenie „Z poważaniem”. „Całuję” i „Do zobaczenia” są nieformalne."
             }
           ]
         }

@@ -39,7 +39,8 @@
                 "wysoka temperatura powoduje, że w greckich lasach panuje susza.",
                 "strażacy walczą z pożarami lasów razem z mieszkańcami."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Tekst mówi: „Obecnie temperatura przekracza 40ºC. W lasach jest bardzo sucho”. Liczba 100 dotyczy strażaków, a nie ofiar – „nie ma ofiar śmiertelnych”. O mieszkańcach tekst nic nie mówi."
             },
             {
               "id": "rt1-2",
@@ -50,7 +51,8 @@
                 "firma Xiaomi sprzedaje smartfony droższe niż Apple.",
                 "tylko jedna firma w drugim kwartale 2021 roku sprzedała więcej smartfonów niż Xiaomi."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Xiaomi była „drugim największym sprzedawcą smartfonów na świecie”, czyli tylko jedna firma sprzedała więcej. Tekst nie porównuje cen z Apple ani nie mówi o dwa razy wyższych zyskach."
             },
             {
               "id": "rt1-3",
@@ -61,7 +63,8 @@
                 "dzisiaj Polacy wolą piwo od wódki.",
                 "w Polsce jest zakaz reklamowania piwa."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "W tekście: piwo jest „obecnie częściej wybierane niż wódka”, czyli Polacy wolą piwo. Produkcja piwa „rośnie”, a reklamy piwa istnieją, więc a) i c) są niezgodne z tekstem."
             },
             {
               "id": "rt1-4",
@@ -72,7 +75,8 @@
                 "Wedel to firma z Warszawy i tutaj ma najwięcej swoich pijalni.",
                 "na początku klienci Wedla wybierali głównie czekoladę do picia."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Wedel to „warszawska firma”, a pijalni czekolady „najwięcej jest w Warszawie”. Tekst nie mówi o kawie ani o tym, że klienci wybierali głównie czekoladę do picia – była to jedna z wielu."
             },
             {
               "id": "rt1-5",
@@ -83,7 +87,8 @@
                 "kupowanie drogich ubrań nie oznacza, że wydajemy więcej pieniędzy.",
                 "ubrania szyte na miarę są lepszej jakości."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Tekst mówi: „Nawet jeśli ubranie jest droższe, dłużej go używamy, więc tak naprawdę wcale nie wydajemy więcej”. Styliści radzą mieć mniej ubrań, nie dużo; o ubraniach na miarę tekst mówi, że są oryginalne i trwałe."
             }
           ]
         },
@@ -97,13 +102,13 @@
           "passage": "Wieczór panieński to impreza, którą organizuje świadkowa panny młodej przed jej ślubem. Zaprasza na nią zwykle najbliższe przyjaciółki i koleżanki. Oto, jak wspomina tę imprezę Ania, świadkowa, i Basia, panna młoda:\n\nAnia: „Pierwszy raz miałam być świadkową, więc bardzo się stresowałam organizacją wieczoru panieńskiego Basi. Chciałam, żeby zapamiętała go jako coś wyjątkowego. Przygotowania zaczęłam miesiąc wcześniej. Najtrudniej było ustalić termin, który pasowałby każdej uczestniczce. Potem pojawiło się bardzo dużo pomysłów na zabawy i atrakcje, ale mogłam wybrać tylko kilka, bo na wszystko nie starczyłoby nam czasu. Zaczęłyśmy imprezę od spotkania w domu. Zorganizowałam nam lekcję makijażu z profesjonalną kosmetyczką. Potem było kilka zabaw, a po ich zakończeniu dałyśmy Basi prezenty i pojechałyśmy potańczyć do klubu. Impreza skończyła się nad ranem. Basia mówiła mi później, że wszystko bardzo jej się podobało”.\n\nBasia: „Byłam zachwycona swoim wieczorem panieńskim. Ania zorganizowała go wspaniale. Lekcja makijażu to było to! Z zabaw najbardziej podobały mi się pytania o moją znajomość z Markiem. Musiałam na nie odpowiedzieć i zgadnąć, co odpowiedział mój narzeczony. Potem dostałam prezenty – bon na bieliznę, album ze zdjęciami z każdą z dziewczyn i kwiaty. W klubie nie schodziłam z parkietu, aż następnego dnia bolały mnie nogi… To był świetny wieczór!”.",
           "example": { "text": "Ania denerwowała się organizacją wieczoru panieńskiego.", "answer": "TAK" },
           "items": [
-            { "id": "rt2-1", "text": "Największy kłopot sprawiło Ani wybranie daty imprezy.", "answer": "TAK" },
-            { "id": "rt2-2", "text": "Ania zaakceptowała wszystkie pomysły na wieczór panieński.", "answer": "NIE" },
-            { "id": "rt2-3", "text": "Na początku imprezy uczestniczki dały przyszłej pannie młodej prezenty.", "answer": "NIE" },
-            { "id": "rt2-4", "text": "Na wieczór panieński została zaproszona kosmetyczka, która pokazywała, jak się malować.", "answer": "TAK" },
-            { "id": "rt2-5", "text": "Dziewczyny bawiły się w klubie do północy.", "answer": "NIE" },
-            { "id": "rt2-6", "text": "Na wieczorze panieńskim Basia odpowiadała na pytania o swój związek.", "answer": "TAK" },
-            { "id": "rt2-7", "text": "Basia będzie mogła sama wybrać sobie bieliznę.", "answer": "TAK" }
+            { "id": "rt2-1", "text": "Największy kłopot sprawiło Ani wybranie daty imprezy.", "answer": "TAK" , "explain": "Ania mówi: „Najtrudniej było ustalić termin, który pasowałby każdej uczestniczce”. Termin to data imprezy, więc zdanie jest zgodne z tekstem."},
+            { "id": "rt2-2", "text": "Ania zaakceptowała wszystkie pomysły na wieczór panieński.", "answer": "NIE" , "explain": "Ania mówi, że pomysłów było dużo, ale „mogłam wybrać tylko kilka, bo na wszystko nie starczyłoby nam czasu”. Nie zaakceptowała więc wszystkich."},
+            { "id": "rt2-3", "text": "Na początku imprezy uczestniczki dały przyszłej pannie młodej prezenty.", "answer": "NIE" , "explain": "Na początku była lekcja makijażu i zabawy. Prezenty dały Basi dopiero „po ich zakończeniu”, przed wyjazdem do klubu."},
+            { "id": "rt2-4", "text": "Na wieczór panieński została zaproszona kosmetyczka, która pokazywała, jak się malować.", "answer": "TAK" , "explain": "Ania: „Zorganizowałam nam lekcję makijażu z profesjonalną kosmetyczką”. Lekcja makijażu to właśnie pokazywanie, jak się malować."},
+            { "id": "rt2-5", "text": "Dziewczyny bawiły się w klubie do północy.", "answer": "NIE" , "explain": "Ania mówi: „Impreza skończyła się nad ranem”, czyli dużo później niż o północy."},
+            { "id": "rt2-6", "text": "Na wieczorze panieńskim Basia odpowiadała na pytania o swój związek.", "answer": "TAK" , "explain": "Basia: „najbardziej podobały mi się pytania o moją znajomość z Markiem”, jej narzeczonym. To pytania o jej związek."},
+            { "id": "rt2-7", "text": "Basia będzie mogła sama wybrać sobie bieliznę.", "answer": "TAK" , "explain": "Basia dostała „bon na bieliznę”. Bon (voucher) pozwala samemu wybrać towar w sklepie, więc zdanie jest zgodne z tekstem."}
           ]
         },
         {
@@ -126,13 +131,13 @@
           "text": "Dzisiejsze tempo życia powoduje, że jesteśmy bardzo zestresowani. Niestety ma to {{ex}}, zwłaszcza jeśli stres jest długotrwały. Możemy wówczas odczuwać silne bóle głowy, zmęczenie, osłabienie, a także cierpieć na bezsenność. {{1}}, że jesteśmy skłonni do kłótni i wybuchowi. W poważniejszych wypadkach {{2}} depresji i nerwic, a także innych chorób. Może na przykład prowadzić do otyłości, problemów z sercem oraz częstszych przeziębień i różnych infekcji wirusowych.\n\nJak radzić sobie ze stresem? Nie jest to łatwe, {{3}}, aby osiągnąć spokój i mieć lepsze samopoczucie. Na pewno trzeba pamiętać o odpoczynku – komuś, {{4}}, trudniej jest walczyć ze stresem. Dobrym pomysłem na zmniejszenie napięcia może być uprawianie sportu. {{5}}, na przykład spacer. Ruch sprawi, że się zrelaksujemy. Ważne jest też utrzymywanie kontaktów z innymi ludźmi. Spotkania towarzyskie, rozmowa z przyjacielem lub przyjaciółką i dawka śmiechu to coś, co {{6}}. Czasem {{7}}, na przykład zmienić pracę na mniej stresującą. To wszystko sprawi, że będziemy spokojniejsi, a więc szczęśliwsi.",
           "example": { "answer": "C" },
           "gaps": [
-            { "id": "rt3-1", "n": 1, "kind": "bank", "answer": "E" },
-            { "id": "rt3-2", "n": 2, "kind": "bank", "answer": "G" },
-            { "id": "rt3-3", "n": 3, "kind": "bank", "answer": "A" },
-            { "id": "rt3-4", "n": 4, "kind": "bank", "answer": "F" },
-            { "id": "rt3-5", "n": 5, "kind": "bank", "answer": "D" },
-            { "id": "rt3-6", "n": 6, "kind": "bank", "answer": "H" },
-            { "id": "rt3-7", "n": 7, "kind": "bank", "answer": "B" }
+            { "id": "rt3-1", "n": 1, "kind": "bank", "answer": "E" , "explain": "Po luce jest „że jesteśmy skłonni do kłótni”. Pasuje tylko „stres powoduje” – po czasowniku „powodować” często stoi „że” + zdanie."},
+            { "id": "rt3-2", "n": 2, "kind": "bank", "answer": "G" , "explain": "Po luce jest dopełniacz „depresji i nerwic”. Wyrażenie „staje się przyczyną czegoś” wymaga właśnie dopełniacza; podmiotem jest stres."},
+            { "id": "rt3-3", "n": 3, "kind": "bank", "answer": "A" , "explain": "„Nie jest to łatwe, ale warto próbować” – spójnik „ale” wprowadza kontrast: coś jest trudne, mimo to warto. Dalsza część „aby osiągnąć spokój” mówi, po co próbować."},
+            { "id": "rt3-4", "n": 4, "kind": "bank", "answer": "F" , "explain": "Przed luką jest „komuś,” – potrzebne jest zdanie względne z „kto”: „komuś, kto jest ciągle zmęczony i zapracowany”. Zmęczenie łączy się z myślą o odpoczynku."},
+            { "id": "rt3-5", "n": 5, "kind": "bank", "answer": "D" , "explain": "Wcześniej mowa o sporcie, po luce jest przykład „na przykład spacer”. Spacer to „prosta aktywność fizyczna”, więc fragment D pasuje logicznie."},
+            { "id": "rt3-6", "n": 6, "kind": "bank", "answer": "H" , "explain": "Po „to coś, co” potrzebny jest czasownik w 3. osobie: „co zmniejsza codzienny stres”. Spotkania i śmiech to sposób na mniej stresu."},
+            { "id": "rt3-7", "n": 7, "kind": "bank", "answer": "B" , "explain": "Po luce jest przykład „zmienić pracę na mniej stresującą”. To duża zmiana, czyli „radykalny krok”; bezokolicznik „zmienić” pasuje po „trzeba”."}
           ]
         },
         {
@@ -154,13 +159,13 @@
           ],
           "example": { "text": "Dla kogo", "answer": "C" },
           "items": [
-            { "id": "rt4-1", "text": "Wybór najlepszych prac", "answer": "G" },
-            { "id": "rt4-2", "text": "Nadrabianie nieobecności", "answer": "E" },
-            { "id": "rt4-3", "text": "Zastosowanie wiedzy w praktyce", "answer": "B" },
-            { "id": "rt4-4", "text": "Nauka rysunku", "answer": "D" },
-            { "id": "rt4-5", "text": "Uroczystość młodych projektantów", "answer": "H" },
-            { "id": "rt4-6", "text": "Podstawowa wiedza", "answer": "A" },
-            { "id": "rt4-7", "text": "Bezpieczeństwo", "answer": "F" }
+            { "id": "rt4-1", "text": "Wybór najlepszych prac", "answer": "G" , "explain": "We fragmencie G prowadząca „wybierze po jednym stroju uszytym przez każdego uczestnika” na pokaz. To wybór najlepszych prac."},
+            { "id": "rt4-2", "text": "Nadrabianie nieobecności", "answer": "E" , "explain": "Fragment E: gdy uczestnik nie przyjdzie na zajęcia, dostanie materiały do nauki w domu i konsultację. Tak nadrabia się nieobecność."},
+            { "id": "rt4-3", "text": "Zastosowanie wiedzy w praktyce", "answer": "B" , "explain": "Fragment B: każdy uczestnik „uszyje w trakcie kursu kilka ubrań”. Szycie ubrań to praktyczne użycie wiedzy z zajęć."},
+            { "id": "rt4-4", "text": "Nauka rysunku", "answer": "D" , "explain": "Fragment D: dzieci będą się uczyły „ilustracji mody”. Ilustracja to rysunek, więc tytuł „Nauka rysunku” pasuje."},
+            { "id": "rt4-5", "text": "Uroczystość młodych projektantów", "answer": "H" , "explain": "Fragment H opisuje „finałowy pokaz mody”, na który można zaprosić rodzinę i przyjaciół. To uroczystość. Fragment G mówi raczej o wyborze strojów."},
+            { "id": "rt4-6", "text": "Podstawowa wiedza", "answer": "A" , "explain": "Fragment A wymienia podstawy: „uniwersalne zasady projektowania”, „podstawy kroju i szycia”, historię sztuki i mody. To podstawowa wiedza."},
+            { "id": "rt4-7", "text": "Bezpieczeństwo", "answer": "F" , "explain": "Fragment F: materiały są „certyfikowane i odpowiednie dla alergików”. To informacja o bezpieczeństwie dzieci."}
           ]
         },
         {
@@ -173,14 +178,14 @@
           "text": "Tłusty czwartek to dzień, kiedy bezkarnie możemy jeść pączki i nikt nie {{ex}} kalorii. Polacy zadają sobie wtedy nawzajem pytanie: „To jak, ile pączków dziś zjadłeś/zjadłaś?”. W najlepszych {{1}} ustawiają się {{2}} po te smakołyki. W firmach {{3}} często fundują pączki swoim pracownikom.\n\nNiewiele osób wie, że kiedyś tego dnia Polacy jedli przede wszystkim mięsne i tłuste potrawy. Dzisiejsze pączki są wprawdzie słodkie, ale też bardzo tłuste. Tradycyjne nadzienie to dżem z róży. Rzadko {{4}} sam próbuje usmażyć pączki, ponieważ ich przygotowanie zajmuje dużo czasu i kosztuje wiele {{5}}. Wiedzą o tym na pewno nasze babcie i prababcie, które zwykle same robiły je w domu.\n\nTłusty czwartek {{6}} zbliżający się koniec karnawału. Podobne tradycje można zaobserwować w innych krajach. We Francji {{7}} tłusty wtorek. Tego dnia Francuzi jedzą naleśniki na słodko i gofry oraz {{8}} na licznych paradach. Naleśniki jedzą też Brytyjczycy, którzy świętują swój „dzień naleśnika”.",
           "example": { "options": ["mierzy", "liczy", "leczy"], "answer": "liczy" },
           "gaps": [
-            { "id": "rt5-1", "n": 1, "kind": "options", "options": ["cukiernicach", "cukierniach", "cukierkach"], "answer": "cukierniach" },
-            { "id": "rt5-2", "n": 2, "kind": "options", "options": ["linie", "kolejki", "rzędy"], "answer": "kolejki" },
-            { "id": "rt5-3", "n": 3, "kind": "options", "options": ["pracodawcy", "pracoholicy", "nadawcy"], "answer": "pracodawcy" },
-            { "id": "rt5-4", "n": 4, "kind": "options", "options": ["wszyscy", "nikt", "ktoś"], "answer": "ktoś" },
-            { "id": "rt5-5", "n": 5, "kind": "options", "options": ["problemu", "wysiłku", "kłopotu"], "answer": "wysiłku" },
-            { "id": "rt5-6", "n": 6, "kind": "options", "options": ["symbolizuje", "podaje", "informuje"], "answer": "symbolizuje" },
-            { "id": "rt5-7", "n": 7, "kind": "options", "options": ["ma się", "robi się", "obchodzi się"], "answer": "obchodzi się" },
-            { "id": "rt5-8", "n": 8, "kind": "options", "options": ["przychodzą", "przyjeżdżają", "bawią się"], "answer": "bawią się" }
+            { "id": "rt5-1", "n": 1, "kind": "options", "options": ["cukiernicach", "cukierniach", "cukierkach"], "answer": "cukierniach" , "explain": "Pączki kupuje się w cukierni; po „w najlepszych” potrzebny jest miejscownik l.mn.: „cukierniach”. „Cukiernicy” to ludzie, a „cukierki” to słodycze, nie sklep."},
+            { "id": "rt5-2", "n": 2, "kind": "options", "options": ["linie", "kolejki", "rzędy"], "answer": "kolejki" , "explain": "Stała kolokacja: „ustawiają się kolejki” (ludzie czekają jeden za drugim). „Linie” i „rzędy” nie opisują czekania w sklepie."},
+            { "id": "rt5-3", "n": 3, "kind": "options", "options": ["pracodawcy", "pracoholicy", "nadawcy"], "answer": "pracodawcy" , "explain": "Pracownikom pączki funduje szef, czyli „pracodawca”. „Pracoholik” to ktoś, kto za dużo pracuje, a „nadawca” wysyła list lub program."},
+            { "id": "rt5-4", "n": 4, "kind": "options", "options": ["wszyscy", "nikt", "ktoś"], "answer": "ktoś" , "explain": "„Rzadko ktoś sam próbuje” = mało osób to robi. Z „nikt” trzeba by dodać „nie”, a „wszyscy” wymaga czasownika w l.mn. (próbują)."},
+            { "id": "rt5-5", "n": 5, "kind": "options", "options": ["problemu", "wysiłku", "kłopotu"], "answer": "wysiłku" , "explain": "Stała kolokacja: „coś kosztuje wiele wysiłku” (dużo pracy, energii). „Kosztować kłopotu/problemu” tak się nie mówi."},
+            { "id": "rt5-6", "n": 6, "kind": "options", "options": ["symbolizuje", "podaje", "informuje"], "answer": "symbolizuje" , "explain": "Tłusty czwartek jest znakiem końca karnawału, czyli go „symbolizuje”. „Informować” wymaga „o czymś”, a „podawać” tu nie ma sensu."},
+            { "id": "rt5-7", "n": 7, "kind": "options", "options": ["ma się", "robi się", "obchodzi się"], "answer": "obchodzi się" , "explain": "O świętach mówimy „obchodzić” (święto, urodziny); forma bezosobowa: „we Francji obchodzi się tłusty wtorek”."},
+            { "id": "rt5-8", "n": 8, "kind": "options", "options": ["przychodzą", "przyjeżdżają", "bawią się"], "answer": "bawią się" , "explain": "Na paradach ludzie się bawią: „bawić się na paradzie”. „Przychodzą/przyjeżdżają” wymagałyby „na parady” (biernik, kierunek), a w tekście jest miejscownik „na licznych paradach”."}
           ]
         }
       ]
@@ -202,16 +207,16 @@
           "text": "Ostatnia klasa szkoły średniej – maturalna – jest {{ex}} etapem w życiu uczniów. Każdy musi podjąć decyzję o wyborze dalszej {{1}} życiowej. Nauka w klasie maturalnej polega na {{2}} przygotowaniu do matury, czyli tak zwanego egzaminu dojrzałości. Na maturze są trzy przedmioty {{3}} na poziomie podstawowym – język polski, matematyka i język obcy. Oprócz tego trzeba zdać egzamin z wybranego przedmiotu {{4}}. Po {{5}} większość uczniów decyduje się na dalszą edukację na {{6}}. Im lepiej zdadzą egzamin dojrzałości, tym łatwiej {{7}} będzie dostać się na wybraną uczelnię.\n\nJednak rok w klasie maturalnej to nie tylko nauka. {{8}} organizują też studniówkę, czyli bal maturalny. To impreza, na {{9}} tańczą poloneza i bawią się do białego rana.\n\nKlasa maturalna jest dla młodych {{10}} stresująca, ale po latach wspominają ją z sentymentem.",
           "example": { "options": ["ważny", "ważnym", "ważnego"], "answer": "ważnym" },
           "gaps": [
-            { "id": "pg1-1", "n": 1, "kind": "options", "options": ["drogą", "drodze", "drogi"], "answer": "drogi" },
-            { "id": "pg1-2", "n": 2, "kind": "options", "options": ["intensywnemu", "intensywnego", "intensywnym"], "answer": "intensywnym" },
-            { "id": "pg1-3", "n": 3, "kind": "options", "options": ["obowiązkowe", "obowiązkowych", "obowiązkowi"], "answer": "obowiązkowe" },
-            { "id": "pg1-4", "n": 4, "kind": "options", "options": ["dodatkowego", "dodatkowym", "dodatkowych"], "answer": "dodatkowego" },
-            { "id": "pg1-5", "n": 5, "kind": "options", "options": ["maturą", "maturze", "maturę"], "answer": "maturze" },
-            { "id": "pg1-6", "n": 6, "kind": "options", "options": ["studiami", "studiach", "studia"], "answer": "studiach" },
-            { "id": "pg1-7", "n": 7, "kind": "options", "options": ["nimi", "im", "ich"], "answer": "im" },
-            { "id": "pg1-8", "n": 8, "kind": "options", "options": ["Uczniowie", "Uczniów", "Uczniami"], "answer": "Uczniowie" },
-            { "id": "pg1-9", "n": 9, "kind": "options", "options": ["którą", "których", "której"], "answer": "której" },
-            { "id": "pg1-10", "n": 10, "kind": "options", "options": ["ludzi", "ludźmi", "ludziach"], "answer": "ludzi" }
+            { "id": "pg1-1", "n": 1, "kind": "options", "options": ["drogą", "drodze", "drogi"], "answer": "drogi" , "explain": "„Wybór czego?” – dopełniacz: „wyborze dalszej drogi”. „Drogą” to narzędnik, a „drodze” – miejscownik lub celownik."},
+            { "id": "pg1-2", "n": 2, "kind": "options", "options": ["intensywnemu", "intensywnego", "intensywnym"], "answer": "intensywnym" , "explain": "Czasownik „polegać na” wymaga miejscownika: „na intensywnym przygotowaniu”."},
+            { "id": "pg1-3", "n": 3, "kind": "options", "options": ["obowiązkowe", "obowiązkowych", "obowiązkowi"], "answer": "obowiązkowe" , "explain": "„Są trzy przedmioty” – mianownik l.mn. rodzaju niemęskoosobowego (przedmioty to rzeczy): „obowiązkowe”. Po liczebniku 3 rzeczownik stoi w mianowniku."},
+            { "id": "pg1-4", "n": 4, "kind": "options", "options": ["dodatkowego", "dodatkowym", "dodatkowych"], "answer": "dodatkowego" , "explain": "„Egzamin z czego?” – po „z” w tym znaczeniu jest dopełniacz: „z wybranego przedmiotu dodatkowego”."},
+            { "id": "pg1-5", "n": 5, "kind": "options", "options": ["maturą", "maturze", "maturę"], "answer": "maturze" , "explain": "„Po” w znaczeniu czasu (później niż) wymaga miejscownika: „po maturze”, jak „po lekcji”, „po pracy”."},
+            { "id": "pg1-6", "n": 6, "kind": "options", "options": ["studiami", "studiach", "studia"], "answer": "studiach" , "explain": "Odpowiada na pytanie „gdzie?”, więc „na” + miejscownik: „na studiach”. „Na studia” (biernik) byłoby przy kierunku: „idę na studia”."},
+            { "id": "pg1-7", "n": 7, "kind": "options", "options": ["nimi", "im", "ich"], "answer": "im" , "explain": "W konstrukcji „łatwo/łatwiej komuś jest” osoba stoi w celowniku: „im będzie łatwiej”."},
+            { "id": "pg1-8", "n": 8, "kind": "options", "options": ["Uczniowie", "Uczniów", "Uczniami"], "answer": "Uczniowie" , "explain": "Brakuje podmiotu zdania „... organizują”, więc mianownik l.mn. męskoosobowy: „uczniowie”."},
+            { "id": "pg1-9", "n": 9, "kind": "options", "options": ["którą", "których", "której"], "answer": "której" , "explain": "„Impreza” to rodzaj żeński, a „na” w znaczeniu miejsca wymaga miejscownika: „na której (imprezie) tańczą”."},
+            { "id": "pg1-10", "n": 10, "kind": "options", "options": ["ludzi", "ludźmi", "ludziach"], "answer": "ludzi" , "explain": "Przyimek „dla” zawsze łączy się z dopełniaczem: „dla młodych ludzi”."}
           ]
         },
         {
@@ -225,11 +230,11 @@
           "text": "Wczoraj okazało się, {{ex}} nie pojedziemy na wakacje, {{1}} nasza córka się rozchorowała. Rano wstała z bólem gardła, potem pojawił się katar, {{2}} nie miała gorączki. Od razu pojechaliśmy z nią do pediatry. Na szczęście lekarka powiedziała, że to tylko zwykłe przeziębienie. {{3}} to nic poważnego, wolimy być ostrożni. Chcemy, {{4}} córka szybko wyzdrowiała, {{5}} zostajemy w domu.",
           "example": { "answer": "że" },
           "gaps": [
-            { "id": "pg2-1", "n": 1, "kind": "bank", "answer": "bo" },
-            { "id": "pg2-2", "n": 2, "kind": "bank", "answer": "ale" },
-            { "id": "pg2-3", "n": 3, "kind": "bank", "answer": "mimo że" },
-            { "id": "pg2-4", "n": 4, "kind": "bank", "answer": "żeby" },
-            { "id": "pg2-5", "n": 5, "kind": "bank", "answer": "więc" }
+            { "id": "pg2-1", "n": 1, "kind": "bank", "answer": "bo" , "explain": "Drugie zdanie podaje przyczynę: nie pojedziemy, bo córka się rozchorowała. „Bo” wprowadza powód."},
+            { "id": "pg2-2", "n": 2, "kind": "bank", "answer": "ale" , "explain": "Kontrast: pojawił się katar, ale gorączki nie było. „Ale” łączy dwie przeciwne informacje."},
+            { "id": "pg2-3", "n": 3, "kind": "bank", "answer": "mimo że" , "explain": "„Mimo że to nic poważnego, wolimy być ostrożni” – „mimo że” wprowadza okoliczność, która nie zmienia decyzji (ustępstwo)."},
+            { "id": "pg2-4", "n": 4, "kind": "bank", "answer": "żeby" , "explain": "Po „chcieć”, gdy chodzi o inną osobę, używamy „żeby” + forma przeszła: „Chcemy, żeby córka wyzdrowiała”."},
+            { "id": "pg2-5", "n": 5, "kind": "bank", "answer": "więc" , "explain": "„Więc” wprowadza skutek: chcemy, żeby córka wyzdrowiała, więc zostajemy w domu."}
           ]
         },
         {
@@ -242,11 +247,11 @@
           "text": "Jakie trendy królują w salonach fryzjerskich? „{{ex}} są fryzury wyglądające po prostu naturalnie – mówi pani Magda, która od wielu lat zajmuje się strzyżeniem kobiet. – Teraz mamy lato i {{1}} klientek chce mieć {{2}} włosy, przede wszystkim z praktycznych powodów. Inny trend, popularny od dawna, to prostowanie {{3}} włosów. Ondulacja jest rzadkością. Prostota i naturalność są też na topie, jeśli chodzi o koki i upięcia. Kobiety {{4}} chcą wyglądać tak, jakbyśmy wcale nie spędziły nad fryzurą dwóch godzin – śmieje się pani Magda. – A my odpowiadamy na te potrzeby, bo pragniemy, żeby nasze klientki wychodziły z salonu jak {{5}} zadowolone”.",
           "example": { "options": ["Najmodniejsze", "Modniej", "Najmodniejszymi"], "answer": "Najmodniejsze" },
           "gaps": [
-            { "id": "pg3-1", "n": 1, "kind": "options", "options": ["więcej", "większe", "większych"], "answer": "więcej" },
-            { "id": "pg3-2", "n": 2, "kind": "options", "options": ["krócej", "krótsze", "krótszymi"], "answer": "krótsze" },
-            { "id": "pg3-3", "n": 3, "kind": "options", "options": ["dłuższymi", "dłuższym", "dłuższych"], "answer": "dłuższych" },
-            { "id": "pg3-4", "n": 4, "kind": "options", "options": ["najczęściej", "częste", "najczęstszy"], "answer": "najczęściej" },
-            { "id": "pg3-5", "n": 5, "kind": "options", "options": ["najbardziej", "bardziej", "bardzo"], "answer": "najbardziej" }
+            { "id": "pg3-1", "n": 1, "kind": "options", "options": ["więcej", "większe", "większych"], "answer": "więcej" , "explain": "„Więcej” + dopełniacz l.mn. oznacza ilość: „więcej klientek”. „Większe/większych” to stopień przymiotnika „duży”, opisuje rozmiar."},
+            { "id": "pg3-2", "n": 2, "kind": "options", "options": ["krócej", "krótsze", "krótszymi"], "answer": "krótsze" , "explain": "Potrzebny jest przymiotnik do „włosy” w bierniku (mieć co?): „krótsze włosy”. „Krócej” to przysłówek, a „krótszymi” – narzędnik."},
+            { "id": "pg3-3", "n": 3, "kind": "options", "options": ["dłuższymi", "dłuższym", "dłuższych"], "answer": "dłuższych" , "explain": "„Prostowanie czego?” – rzeczownik odczasownikowy łączy się z dopełniaczem: „prostowanie dłuższych włosów”."},
+            { "id": "pg3-4", "n": 4, "kind": "options", "options": ["najczęściej", "częste", "najczęstszy"], "answer": "najczęściej" , "explain": "Luka opisuje czasownik „chcą”, więc potrzebny jest przysłówek: „najczęściej chcą”. „Częste” i „najczęstszy” to przymiotniki."},
+            { "id": "pg3-5", "n": 5, "kind": "options", "options": ["najbardziej", "bardziej", "bardzo"], "answer": "najbardziej" , "explain": "Stałe wyrażenie „jak najbardziej” = w możliwie największym stopniu: „jak najbardziej zadowolone”."}
           ]
         },
         {
@@ -259,16 +264,16 @@
           "text": "Jesteś spod znaku Barana? Przeczytaj, co cię {{ex}} (czekać) w tym roku. Być może sam lub sama {{1}} (zadawać – ty) sobie teraz pytanie, czy kolejny rok będzie lepszy, czy gorszy od poprzedniego. Nie masz jednak powodu do zmartwień, bo przed tobą naprawdę dobry okres. W życiu zawodowym {{2}} (pojawić się) dużo nowych możliwości. Być może {{3}} (zmienić – ty) pracę na lepiej płatną lub {{4}} (awansować – ty). Wiele zależy jednak od ciebie – czy znajdziesz w sobie siłę i {{5}} (odważyć się – ty) na poważniejszy krok.\n\nBarany z reguły {{6}} (mieć) skłonność do pracoholizmu, więc w przyszłym roku także będą musiały znaleźć równowagę między życiem zawodowym a osobistym. Dopiero wtedy {{7}} (poczuć się) szczęśliwe. W miłości, podobnie jak w pracy, {{8}} (zdarzyć się) coś nowego. Jeśli jesteś sam lub sama, prawdopodobnie kogoś {{9}} (spotkać). Czas {{10}} (pokazać), czy będzie to ktoś, z kim zwiążesz się na dłużej. Jeśli jesteś w związku, wasza miłość odżyje. Nowy rok przyniesie wiele pozytywnych zmian w twoim życiu.",
           "example": { "answer": "czeka" },
           "gaps": [
-            { "id": "pg4-1", "n": 1, "kind": "input", "accept": ["zadajesz"] },
-            { "id": "pg4-2", "n": 2, "kind": "input", "accept": ["pojawi się", "się pojawi"] },
-            { "id": "pg4-3", "n": 3, "kind": "input", "accept": ["zmienisz"] },
-            { "id": "pg4-4", "n": 4, "kind": "input", "accept": ["awansujesz"] },
-            { "id": "pg4-5", "n": 5, "kind": "input", "accept": ["odważysz się", "się odważysz"] },
-            { "id": "pg4-6", "n": 6, "kind": "input", "accept": ["mają"] },
-            { "id": "pg4-7", "n": 7, "kind": "input", "accept": ["poczują się", "się poczują"] },
-            { "id": "pg4-8", "n": 8, "kind": "input", "accept": ["zdarzy się", "się zdarzy"] },
-            { "id": "pg4-9", "n": 9, "kind": "input", "accept": ["spotkasz"] },
-            { "id": "pg4-10", "n": 10, "kind": "input", "accept": ["pokaże"] }
+            { "id": "pg4-1", "n": 1, "kind": "input", "accept": ["zadajesz"] , "explain": "„Teraz” wskazuje na czas teraźniejszy; „zadawać” jest niedokonane, 2. os. l.poj.: „(ty) zadajesz”."},
+            { "id": "pg4-2", "n": 2, "kind": "input", "accept": ["pojawi się", "się pojawi"] , "explain": "Mowa o przyszłym roku, a „pojawić się” jest dokonane, więc czas przyszły prosty: „pojawi się”. Podmiot „dużo możliwości” łączy się z czasownikiem w 3. os. l.poj."},
+            { "id": "pg4-3", "n": 3, "kind": "input", "accept": ["zmienisz"] , "explain": "Przyszłość i czynność jednorazowa: czasownik dokonany „zmienić” → „(ty) zmienisz”."},
+            { "id": "pg4-4", "n": 4, "kind": "input", "accept": ["awansujesz"] , "explain": "„Awansować” ma koniugację -uję: awansuję, awansujesz. Tu w znaczeniu przyszłym: „awansujesz”."},
+            { "id": "pg4-5", "n": 5, "kind": "input", "accept": ["odważysz się", "się odważysz"] , "explain": "Paralela do „znajdziesz” – czas przyszły dokonany: „odważysz się” (odważyć się na coś)."},
+            { "id": "pg4-6", "n": 6, "kind": "input", "accept": ["mają"] , "explain": "„Z reguły” oznacza coś, co jest zawsze prawdziwe, więc czas teraźniejszy: „Barany mają skłonność”."},
+            { "id": "pg4-7", "n": 7, "kind": "input", "accept": ["poczują się", "się poczują"] , "explain": "„Dopiero wtedy” odnosi się do przyszłości; podmiot to Barany (l.mn., niemęskoosobowe): „poczują się szczęśliwe”."},
+            { "id": "pg4-8", "n": 8, "kind": "input", "accept": ["zdarzy się", "się zdarzy"] , "explain": "Prognoza na przyszłość, czasownik dokonany: „coś nowego się zdarzy” – 3. os. l.poj., bo podmiot to „coś”."},
+            { "id": "pg4-9", "n": 9, "kind": "input", "accept": ["spotkasz"] , "explain": "Przyszłość, 2. os. l.poj., czasownik dokonany: „spotkasz kogoś”."},
+            { "id": "pg4-10", "n": 10, "kind": "input", "accept": ["pokaże"] , "explain": "Stałe wyrażenie „czas pokaże” = w przyszłości będzie wiadomo. Czasownik dokonany w czasie przyszłym, 3. os. l.poj."}
           ]
         },
         {
@@ -280,11 +285,11 @@
           "points_per_item": 0.5,
           "example": { "sentence": "Ten wazon jest zrobiony __z drewna__.", "answer": "Z czego", "after": "jest zrobiony ten wazon?", "reply": "Z drewna." },
           "items": [
-            { "id": "pg5-1", "sentence": "Słucham muzyki __rockowej__.", "after": "muzyki słuchasz?", "reply": "Rockowej.", "accept": ["Jakiej"] },
-            { "id": "pg5-2", "sentence": "__Za dwa tygodnie__ kończę pracę w tej firmie.", "after": "kończysz pracę w tej firmie?", "reply": "Za dwa tygodnie.", "accept": ["Kiedy", "Za ile", "Za ile czasu", "Za ile tygodni", "Za jak długo"] },
-            { "id": "pg5-3", "sentence": "Zaparkowałam __przed domem__.", "after": "zaparkowałaś?", "reply": "Przed domem.", "accept": ["Gdzie"] },
-            { "id": "pg5-4", "sentence": "Zajmuję się __marketingiem internetowym__.", "after": "się zajmujesz?", "reply": "Marketingiem internetowym.", "accept": ["Czym"] },
-            { "id": "pg5-5", "sentence": "Pociąg odjeżdża z peronu __drugiego__.", "after": "peronu odjeżdża pociąg?", "reply": "Z drugiego.", "accept": ["Z którego", "Z jakiego"] }
+            { "id": "pg5-1", "sentence": "Słucham muzyki __rockowej__.", "after": "muzyki słuchasz?", "reply": "Rockowej.", "accept": ["Jakiej"] , "explain": "Pytamy o cechę (rodzaj muzyki), więc zaimek „jaki” w tej samej formie co rzeczownik – dopełniacz ż.: „Jakiej muzyki słuchasz?”."},
+            { "id": "pg5-2", "sentence": "__Za dwa tygodnie__ kończę pracę w tej firmie.", "after": "kończysz pracę w tej firmie?", "reply": "Za dwa tygodnie.", "accept": ["Kiedy", "Za ile", "Za ile czasu", "Za ile tygodni", "Za jak długo"] , "explain": "Pytamy o czas: „Kiedy kończysz pracę?”. Można też zapytać „Za ile (czasu)?”, bo odpowiedź zaczyna się od „za”."},
+            { "id": "pg5-3", "sentence": "Zaparkowałam __przed domem__.", "after": "zaparkowałaś?", "reply": "Przed domem.", "accept": ["Gdzie"] , "explain": "„Przed domem” to miejsce, więc pytamy „Gdzie zaparkowałaś?”."},
+            { "id": "pg5-4", "sentence": "Zajmuję się __marketingiem internetowym__.", "after": "się zajmujesz?", "reply": "Marketingiem internetowym.", "accept": ["Czym"] , "explain": "„Zajmować się” wymaga narzędnika (czym?): „marketingiem”. Dlatego pytanie: „Czym się zajmujesz?”."},
+            { "id": "pg5-5", "sentence": "Pociąg odjeżdża z peronu __drugiego__.", "after": "peronu odjeżdża pociąg?", "reply": "Z drugiego.", "accept": ["Z którego", "Z jakiego"] , "explain": "Pytamy o numer w kolejności: „z którego peronu?”. Przyimek „z” zostaje w pytaniu, a zaimek ma dopełniacz jak „peronu”."}
           ]
         },
         {
@@ -296,11 +301,11 @@
           "points_per_item": 1,
           "example": { "sentence": "Weronika jest uczennicą pierwszej klasy.", "keyword": "chodzi", "answer": "Weronika chodzi do pierwszej klasy." },
           "items": [
-            { "id": "pg6-1", "sentence": "Pamiętasz, kiedy Ola ma imieniny?", "keyword": "datę", "model": "Pamiętasz datę imienin Oli?", "accept": ["Pamiętasz datę imienin Oli", "Czy pamiętasz datę imienin Oli", "Pamiętasz datę Oli imienin"] },
-            { "id": "pg6-2", "sentence": "Nie rozumiem jego pytania.", "keyword": "pyta", "model": "Nie rozumiem, o co on pyta.", "accept": ["Nie rozumiem, o co on pyta", "Nie rozumiem, o co pyta", "Nie rozumiem, o co mnie pyta", "Nie rozumiem, o co on mnie pyta", "Nie rozumiem, o czym on pyta"] },
-            { "id": "pg6-3", "sentence": "Mam nadzieję, że Ela będzie u mnie na urodzinach.", "keyword": "przyjdzie", "model": "Mam nadzieję, że Ela przyjdzie do mnie na urodziny.", "accept": ["Mam nadzieję, że Ela przyjdzie do mnie na urodziny", "Mam nadzieję, że Ela przyjdzie na moje urodziny", "Mam nadzieję, że Ela przyjdzie na urodziny do mnie", "Mam nadzieję, że Ela do mnie przyjdzie na urodziny"] },
-            { "id": "pg6-4", "sentence": "Igor nie ma pieniędzy na kupno mieszkania.", "keyword": "stać", "model": "Igora nie stać na kupno mieszkania.", "accept": ["Igora nie stać na kupno mieszkania", "Igora nie stać na kupienie mieszkania", "Igora nie stać na zakup mieszkania", "Igora nie stać na mieszkanie"] },
-            { "id": "pg6-5", "sentence": "Jestem głodna.", "keyword": "jeść", "model": "Chce mi się jeść.", "accept": ["Chce mi się jeść", "Bardzo chce mi się jeść"] }
+            { "id": "pg6-1", "sentence": "Pamiętasz, kiedy Ola ma imieniny?", "keyword": "datę", "model": "Pamiętasz datę imienin Oli?", "accept": ["Pamiętasz datę imienin Oli", "Czy pamiętasz datę imienin Oli"] , "explain": "„Kiedy Ola ma imieniny” zastępujemy rzeczownikiem: „datę” (biernik po „pamiętać”) + dopełniacz „imienin Oli”."},
+            { "id": "pg6-2", "sentence": "Nie rozumiem jego pytania.", "keyword": "pyta", "model": "Nie rozumiem, o co on pyta.", "accept": ["Nie rozumiem, o co on pyta", "Nie rozumiem, o co pyta", "Nie rozumiem, o co mnie pyta", "Nie rozumiem, o co on mnie pyta"] , "explain": "Zamiast rzeczownika „pytania” używamy zdania podrzędnego: „pytać o coś” → „o co (on) pyta”."},
+            { "id": "pg6-3", "sentence": "Mam nadzieję, że Ela będzie u mnie na urodzinach.", "keyword": "przyjdzie", "model": "Mam nadzieję, że Ela przyjdzie do mnie na urodziny.", "accept": ["Mam nadzieję, że Ela przyjdzie do mnie na urodziny", "Mam nadzieję, że Ela przyjdzie na moje urodziny", "Mam nadzieję, że Ela przyjdzie na urodziny do mnie", "Mam nadzieję, że Ela do mnie przyjdzie na urodziny"] , "explain": "„Przyjść” wymaga kierunku: „przyjść do kogoś na coś” – „do mnie na urodziny” (biernik), a nie „na urodzinach” (miejscownik)."},
+            { "id": "pg6-4", "sentence": "Igor nie ma pieniędzy na kupno mieszkania.", "keyword": "stać", "model": "Igora nie stać na kupno mieszkania.", "accept": ["Igora nie stać na kupno mieszkania", "Igora nie stać na kupienie mieszkania", "Igora nie stać na zakup mieszkania", "Igora nie stać na mieszkanie"] , "explain": "Konstrukcja „kogoś (nie) stać na coś”: osoba w dopełniaczu (po przeczeniu), „na” + biernik: „Igora nie stać na kupno mieszkania”."},
+            { "id": "pg6-5", "sentence": "Jestem głodna.", "keyword": "jeść", "model": "Chce mi się jeść.", "accept": ["Chce mi się jeść", "Bardzo chce mi się jeść"] , "explain": "Konstrukcja bezosobowa „chce mi się + bezokolicznik” (osoba w celowniku): „Chce mi się jeść” = jestem głodna."}
           ]
         },
         {
@@ -313,16 +318,16 @@
           "text": "Oskar: Gdybym {{ex}} lepszą pracę, {{1}} wziąć kredyt na mieszkanie…\nAsia: W takim razie {{2}} pracę!\nOskar: To nie takie proste. Gdyby mój szef się {{3}}, że w ogóle zacząłem szukać, chyba by mnie {{4}}.\nAsia: Tak bardzo cię nie docenia? W takim razie może naprawdę powinieneś odejść? {{5}} większą motywację, żeby szukać czegoś nowego.\nOskar: Nie wiem… Ale gdybym więcej {{6}}, {{7}} sobie lepszy samochód, może też {{8}} w daleką podróż…\nAsia: Ojej, nie {{9}} tyle, tylko {{10}} coś wreszcie ze swoim życiem!",
           "example": { "options": ["mam", "miałby", "miał"], "answer": "miał" },
           "gaps": [
-            { "id": "pg7-1", "n": 1, "kind": "options", "options": ["mogłoby", "mogłabym", "mógłbym"], "answer": "mógłbym" },
-            { "id": "pg7-2", "n": 2, "kind": "options", "options": ["zmieniasz", "zmieniajcie", "zmień"], "answer": "zmień" },
-            { "id": "pg7-3", "n": 3, "kind": "options", "options": ["dowiedział", "dowie", "dowiaduje"], "answer": "dowiedział" },
-            { "id": "pg7-4", "n": 4, "kind": "options", "options": ["zwalniał", "zwolnił", "zwolni"], "answer": "zwolnił" },
-            { "id": "pg7-5", "n": 5, "kind": "options", "options": ["Miałaby", "Miał", "Miałbyś"], "answer": "Miałbyś" },
-            { "id": "pg7-6", "n": 6, "kind": "options", "options": ["zarobi", "zarabiam", "zarabiał"], "answer": "zarabiał" },
-            { "id": "pg7-7", "n": 7, "kind": "options", "options": ["kupił", "kupiłbym", "kupiłbyś"], "answer": "kupiłbym" },
-            { "id": "pg7-8", "n": 8, "kind": "options", "options": ["jechałby", "jechałbym", "pojechałbym"], "answer": "pojechałbym" },
-            { "id": "pg7-9", "n": 9, "kind": "options", "options": ["narzekasz", "narzekaj", "niech narzeka"], "answer": "narzekaj" },
-            { "id": "pg7-10", "n": 10, "kind": "options", "options": ["robi", "niech zrobi", "zrób"], "answer": "zrób" }
+            { "id": "pg7-1", "n": 1, "kind": "options", "options": ["mogłoby", "mogłabym", "mógłbym"], "answer": "mógłbym" , "explain": "Mówi Oskar (mężczyzna), więc tryb przypuszczający 1. os. r.m.: „mógłbym”. „Mogłabym” mówi kobieta."},
+            { "id": "pg7-2", "n": 2, "kind": "options", "options": ["zmieniasz", "zmieniajcie", "zmień"], "answer": "zmień" , "explain": "Asia daje radę, więc tryb rozkazujący 2. os. l.poj.: „zmień!”. „Zmieniajcie” jest w l.mn."},
+            { "id": "pg7-3", "n": 3, "kind": "options", "options": ["dowiedział", "dowie", "dowiaduje"], "answer": "dowiedział" , "explain": "Po „gdyby” stoi forma czasu przeszłego (bez -by): „gdyby szef się dowiedział”. Dokonane, bo chodzi o jednorazowe zdarzenie."},
+            { "id": "pg7-4", "n": 4, "kind": "options", "options": ["zwalniał", "zwolnił", "zwolni"], "answer": "zwolnił" , "explain": "Druga część zdania warunkowego: „by mnie zwolnił” – „by” + forma przeszła, czasownik dokonany (jednorazowa decyzja)."},
+            { "id": "pg7-5", "n": 5, "kind": "options", "options": ["Miałaby", "Miał", "Miałbyś"], "answer": "Miałbyś" , "explain": "Asia mówi do Oskara, więc tryb przypuszczający 2. os. r.m.: „miałbyś”."},
+            { "id": "pg7-6", "n": 6, "kind": "options", "options": ["zarobi", "zarabiam", "zarabiał"], "answer": "zarabiał" , "explain": "Po „gdybym” – forma przeszła: „gdybym zarabiał”. Niedokonane, bo chodzi o stałą sytuację (regularne zarobki)."},
+            { "id": "pg7-7", "n": 7, "kind": "options", "options": ["kupił", "kupiłbym", "kupiłbyś"], "answer": "kupiłbym" , "explain": "Mówi Oskar o sobie: 1. os. r.m. trybu przypuszczającego: „kupiłbym”. „Kupiłbyś” to 2. osoba."},
+            { "id": "pg7-8", "n": 8, "kind": "options", "options": ["jechałby", "jechałbym", "pojechałbym"], "answer": "pojechałbym" , "explain": "Jednorazowy wyjazd, więc dokonane „pojechać”: „pojechałbym w podróż”. „Jechałbym” opisuje sam proces jazdy."},
+            { "id": "pg7-9", "n": 9, "kind": "options", "options": ["narzekasz", "narzekaj", "niech narzeka"], "answer": "narzekaj" , "explain": "Zakaz w trybie rozkazującym tworzymy od czasownika niedokonanego: „nie narzekaj”."},
+            { "id": "pg7-10", "n": 10, "kind": "options", "options": ["robi", "niech zrobi", "zrób"], "answer": "zrób" , "explain": "Asia zwraca się do Oskara: tryb rozkazujący 2. os. l.poj. „zrób”. „Niech zrobi” to 3. osoba."}
           ]
         },
         {
@@ -336,11 +341,11 @@
           "text": "Chyba się zakochałem… Anię poznałem {{ex}} imprezie urodzinowej kolegi. Jest jego koleżanką {{1}} szkoły. Ania {{2}} początku bardzo mi się spodobała. Ma długie blond włosy i niebieskie oczy. Na imprezie była ubrana {{3}} czarną sukienkę. Nie jestem nieśmiały, więc od razu do niej podszedłem. Dobrze nam się rozmawiało – głównie {{4}} muzyce i filmie, które oboje, jak się okazało, uwielbiamy. Potem zaprosiłem ją {{5}} kina. Chciałbym, żeby została moją dziewczyną.",
           "example": { "answer": "na" },
           "gaps": [
-            { "id": "pg8-1", "n": 1, "kind": "bank", "answer": "ze" },
-            { "id": "pg8-2", "n": 2, "kind": "bank", "answer": "od" },
-            { "id": "pg8-3", "n": 3, "kind": "bank", "answer": "w" },
-            { "id": "pg8-4", "n": 4, "kind": "bank", "answer": "o" },
-            { "id": "pg8-5", "n": 5, "kind": "bank", "answer": "do" }
+            { "id": "pg8-1", "n": 1, "kind": "bank", "answer": "ze" , "explain": "„Koleżanka z czego?” – „z” + dopełniacz: „ze szkoły”. Formę „ze” stosujemy przed grupą spółgłosek „sz-k”."},
+            { "id": "pg8-2", "n": 2, "kind": "bank", "answer": "od" , "explain": "Stałe wyrażenie czasowe „od początku” (od samego startu znajomości)."},
+            { "id": "pg8-3", "n": 3, "kind": "bank", "answer": "w" , "explain": "„Być ubranym w coś” – „w” + biernik: „ubrana w czarną sukienkę”."},
+            { "id": "pg8-4", "n": 4, "kind": "bank", "answer": "o" , "explain": "„Rozmawiać o czymś” – „o” + miejscownik: „o muzyce i filmie”."},
+            { "id": "pg8-5", "n": 5, "kind": "bank", "answer": "do" , "explain": "Kierunek: „zaprosić kogoś do kina” – „do” + dopełniacz."}
           ]
         }
       ]

@@ -49,7 +49,8 @@
                 "narzeka na pogodę.",
                 "daje radę."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Osoba mówi: „Weź parasol, bo w radiu mówili, że po południu ma być burza”. To rada dla kogoś innego, a nie prośba o parasol ani narzekanie na pogodę."
             },
             {
               "id": "rs1-2",
@@ -59,7 +60,8 @@
                 "krytyka.",
                 "pytanie o cenę."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "„Ale masz piękną sukienkę! Bardzo ci w niej do twarzy” to pochwała wyglądu, czyli komplement. Nie ma tu krytyki ani pytania o cenę."
             },
             {
               "id": "rs1-3",
@@ -69,7 +71,8 @@
                 "odmawia.",
                 "zaprasza kogoś na sobotę."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "„Bardzo bym chciała, ale w sobotę jadę do rodziców. Może innym razem?” – to grzeczna odmowa. Osoba nie przyjmuje zaproszenia i sama nikogo nie zaprasza."
             },
             {
               "id": "rs1-4",
@@ -79,7 +82,8 @@
                 "sprzedawca w sklepie zoologicznym",
                 "weterynarz"
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Mówi ktoś, kto ocenia zdrowie kota („Kot jest zdrowy, ale trochę za gruby”) i daje zalecenia właścicielowi („Proszę mu dawać mniej jedzenia”). To typowe słowa weterynarza."
             },
             {
               "id": "rs1-5",
@@ -89,7 +93,8 @@
                 "prośba o pomoc.",
                 "informacja o otwarciu sklepu."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "„Może pójdziemy jutro na basen?” – forma „może + my” to propozycja wspólnego wyjścia. Informacja o nowym basenie to tylko dodatek, nie chodzi o sklep."
             },
             {
               "id": "rs1-6",
@@ -99,7 +104,8 @@
                 "na weselu",
                 "na imieninach"
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "„Wznieśmy toast za zdrowie Młodej Pary!” – Młoda Para to nowożeńcy, więc to wesele, a nie urodziny czy imieniny."
             },
             {
               "id": "rs1-7",
@@ -109,7 +115,8 @@
                 "na dworcu kolejowym",
                 "w biurze podróży"
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Słowa „lot do Barcelony”, „wyjście numer dwanaście” i „boarding” wskazują na lotnisko. Na dworcu kolejowym mówi się o peronach i pociągach."
             },
             {
               "id": "rs1-8",
@@ -119,7 +126,8 @@
                 "zaprasza na spotkanie.",
                 "jest niezadowolona z pracownika."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Szef mówi, że raport miał być wczoraj, „to już drugi raz w tym miesiącu” i „tak dalej być nie może”. To wyraźne niezadowolenie, a nie pochwała."
             },
             {
               "id": "rs1-9",
@@ -129,7 +137,8 @@
                 "w kwiaciarni",
                 "na targu"
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Klient pyta „Po ile są te pomidory?” i prosi o kilogram dojrzałych. Warzywa na wagę kupuje się na targu, nie w restauracji ani w kwiaciarni."
             },
             {
               "id": "rs1-10",
@@ -139,7 +148,8 @@
                 "cieszy się.",
                 "zaprasza Kamila."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "„Szkoda, że nie poszedłem…” wyraża żal – osoba żałuje, że nie była na koncercie. Nikogo nie zaprasza i się nie cieszy."
             },
             {
               "id": "rs1-11",
@@ -149,7 +159,8 @@
                 "egzaminator na egzaminie na prawo jazdy",
                 "pasażer taksówki"
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Polecenia „Proszę włączyć kierunkowskaz i… skręcić w prawo” wydaje ktoś, kto siedzi obok kierowcy i ocenia jazdę – egzaminator. Pasażer taksówki nie mówi o kierunkowskazie."
             },
             {
               "id": "rs1-12",
@@ -159,7 +170,8 @@
                 "prośba o pomoc.",
                 "podziękowanie."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "„Dziękuję ci za pomoc przy przeprowadzce” – to podziękowanie za pomoc, która już była. Nie są to przeprosiny ani nowa prośba."
             },
             {
               "id": "rs1-13",
@@ -169,7 +181,8 @@
                 "w banku",
                 "na poczcie"
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Wniosek o meldunek, okienko numer trzy, dowód osobisty i umowa najmu – to sprawy urzędowe, załatwia się je w urzędzie, a nie w banku ani na poczcie."
             },
             {
               "id": "rs1-14",
@@ -179,7 +192,8 @@
                 "ostrzega.",
                 "zaprasza do środka."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "„Uwaga, podłoga jest mokra! Proszę tędy nie przechodzić” – to ostrzeżenie przed niebezpieczeństwem. Osoba nie prosi o sprzątanie."
             }
           ]
         },
@@ -213,7 +227,8 @@
                 "pójdzie na mecz po obiedzie.",
                 "zaprosi rodziców na mecz."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Mężczyzna mówi: „Zadzwonię do Piotrka i powiem, że tym razem nie przyjdę”. Odwołuje więc mecz z kolegami i idzie na obiad do teściów."
             },
             {
               "id": "rs2-2",
@@ -223,7 +238,8 @@
                 "dostała awans w swojej firmie.",
                 "zostanie kierowniczką w firmie konkurencyjnej."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Kobieta odmówiła konkurencji: „Od maja będę kierowniczką działu sprzedaży. Tutaj, u nas”. Dostała awans w swojej firmie, nie przechodzi do innej."
             },
             {
               "id": "rs2-3",
@@ -233,7 +249,8 @@
                 "kupi droższe buty.",
                 "wymieni buty na inny rozmiar."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Sprzedawca mówi, że przecenionego towaru nie można zwrócić, „ale możemy je wymienić na większy rozmiar”. Klientka prosi o rozmiar 38, więc wymienia buty."
             },
             {
               "id": "rs2-4",
@@ -243,7 +260,8 @@
                 "odpoczynek w domu.",
                 "pracę zdalną."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Lekarz mówi „antybiotyk nie jest potrzebny” i „proszę… zostać w domu”, a na pytanie o pracę zdalną odpowiada „Lepiej nie”. Zaleca odpoczynek w domu."
             },
             {
               "id": "rs2-5",
@@ -253,7 +271,8 @@
                 "jedzie bezpośrednio do Krakowa.",
                 "musi kupić nowy bilet."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Konduktor mówi: „Do Krakowa ma pani przesiadkę w Katowicach”. Pociąg nie jedzie bezpośrednio, a o nowym bilecie nikt nie mówi."
             },
             {
               "id": "rs2-6",
@@ -263,7 +282,8 @@
                 "impreza niedługo się skończy.",
                 "zaprasza sąsiadkę na urodziny."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Sąsiad mówi: „Za pół godziny wszyscy wychodzimy do klubu, a muzykę zaraz ściszę”. Impreza w mieszkaniu wkrótce się kończy, nie potrwa do rana."
             },
             {
               "id": "rs2-7",
@@ -273,7 +293,8 @@
                 "nie dostała zgody szefowej.",
                 "zapłaci tylko część kosztów kursu."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Kurs kosztuje dwa tysiące złotych, ale „firma zapłaci połowę”. Kobieta zapłaci więc tylko część, a szefowa się zgodziła."
             }
           ]
         },
@@ -296,27 +317,32 @@
             {
               "id": "rs3-1",
               "text": "Karolina chciała pracować w gabinecie lekarskim.",
-              "answer": "NIE"
+              "answer": "NIE",
+              "explain": "Karolina mówi, że myślała o medycynie, „ale wiedziałam, że nie chcę siedzieć w gabinecie”. Nie chciała więc pracować w gabinecie."
             },
             {
               "id": "rs3-2",
               "text": "Najwięcej wezwań ratownicy mają w nocy.",
-              "answer": "NIE"
+              "answer": "NIE",
+              "explain": "Karolina mówi: „Wiele osób tak myśli, ale to nieprawda. Najwięcej wezwań mamy w ciągu dnia”. W nocy jeżdżą rzadziej."
             },
             {
               "id": "rs3-3",
               "text": "Ratownicy najczęściej pomagają ofiarom wypadków samochodowych.",
-              "answer": "NIE"
+              "answer": "NIE",
+              "explain": "Według Karoliny wypadki widać w telewizji, „a tak naprawdę najczęściej jeździmy do starszych osób” z problemami z sercem lub oddychaniem."
             },
             {
               "id": "rs3-4",
               "text": "Po trudnych wezwaniach ratownicy rozmawiają ze sobą o tym, co się stało.",
-              "answer": "TAK"
+              "answer": "TAK",
+              "explain": "Karolina mówi: „Po trudnym dyżurze zawsze rozmawiamy o tym, co się stało. To bardzo pomaga”. Zdanie jest zgodne z nagraniem."
             },
             {
               "id": "rs3-5",
               "text": "Według Karoliny ten zawód nie jest dla wszystkich.",
-              "answer": "TAK"
+              "answer": "TAK",
+              "explain": "Na pytanie o polecenie zawodu Karolina odpowiada: „Tak, ale nie każdemu”. Trzeba być odpornym psychicznie, więc zawód nie jest dla wszystkich."
             }
           ]
         },
@@ -360,32 +386,38 @@
             {
               "id": "rs4-1",
               "text": "Ta osoba odkłada pieniądze na własne mieszkanie.",
-              "answer": "A"
+              "answer": "A",
+              "explain": "Adam mówi, że nie płaci za wynajem, odkłada prawie połowę pensji i za dwa lata „kupi swoje mieszkanie”."
             },
             {
               "id": "rs4-2",
               "text": "Ta osoba uważa, że samodzielne życie uczy odpowiedzialności.",
-              "answer": "B"
+              "answer": "B",
+              "explain": "Agnieszka kończy słowami: „samodzielne życie uczy odpowiedzialności lepiej niż jakakolwiek szkoła”."
             },
             {
               "id": "rs4-3",
               "text": "Ta osoba rozumie młodych, bo wynajem mieszkania jest bardzo drogi.",
-              "answer": "C"
+              "answer": "C",
+              "explain": "Pan Zbigniew mówi o synu: „Rozumiem go, bo ceny wynajmu w Warszawie są absurdalne”. Rozumie młodych z powodu drogiego wynajmu."
             },
             {
               "id": "rs4-4",
               "text": "Ta osoba pomaga rodzicom w obowiązkach domowych.",
-              "answer": "A"
+              "answer": "A",
+              "explain": "Adam mówi, że nie jest gościem w domu: robi zakupy, w weekendy gotuje i sam wyremontował łazienkę."
             },
             {
               "id": "rs4-5",
               "text": "Tej osobie brakuje prywatności.",
-              "answer": "C"
+              "answer": "C",
+              "explain": "Pan Zbigniew mówi, że z żoną nie mają chwili dla siebie, rano jest kolejka do łazienki: „Brakuje nam prywatności”."
             },
             {
               "id": "rs4-6",
               "text": "Ta osoba wyprowadziła się z domu, kiedy była bardzo młoda.",
-              "answer": "B"
+              "answer": "B",
+              "explain": "Agnieszka wyprowadziła się „zaraz po maturze, miałam dziewiętnaście lat”. To bardzo młody wiek na samodzielne życie."
             }
           ]
         },
@@ -394,7 +426,7 @@
           "title": "Zadanie 5",
           "layout": "matching",
           "points_per_item": 0.5,
-          "instruction": "Grupa przyjaciół jedzie na kilka dni pod namiot nad jezioro. Instruktor daje im rady. Proszę wysłuchać dziesięciu wypowiedzi i do każdej dopasować właściwy obrazek (A–K). Jeden obrazek jest niepotrzebny. Każdą wypowiedź usłyszysz dwa razy.",
+          "instruction": "Grupa przyjaciół jedzie na kilka dni pod namiot nad jezioro. Instruktor daje im rady. Proszę wysłuchać dziesięciu wypowiedzi i do każdej dopasować właściwy obrazek (A–K). Każdą wypowiedź usłyszysz dwa razy.",
           "audio": {
             "src": "/audio/pl-b1-probny-03/b1-sluchanie-5.mp3",
             "max_plays": 1,
@@ -457,52 +489,62 @@
             {
               "id": "rs5-1",
               "text": "Wypowiedź",
-              "answer": "C"
+              "answer": "C",
+              "explain": "Instruktor mówi, że po zmroku nie znajdzie się drogi do toalety: „Każdy musi mieć własną latarkę”. Pasuje obrazek z latarką."
             },
             {
               "id": "rs5-2",
               "text": "Wypowiedź",
-              "answer": "I"
+              "answer": "I",
+              "explain": "Mowa o mocnym słońcu nad jeziorem i o tym, żeby „posmarować się kremem z filtrem”. Pasuje obrazek z kremem."
             },
             {
               "id": "rs5-3",
               "text": "Wypowiedź",
-              "answer": "G"
+              "answer": "G",
+              "explain": "„Wieczorem nad wodą jest dużo komarów. Spray naprawdę się przyda” – chodzi o ochronę przed komarami."
             },
             {
               "id": "rs5-4",
               "text": "Wypowiedź",
-              "answer": "E"
+              "answer": "E",
+              "explain": "Na polu namiotowym nie ma prądu, dlatego do telefonu trzeba wziąć „dodatkową baterię”, czyli powerbank."
             },
             {
               "id": "rs5-5",
               "text": "Wypowiedź",
-              "answer": "K"
+              "answer": "K",
+              "explain": "Woda z jeziora nie nadaje się do picia, więc każdy musi mieć „co najmniej dwa litry” wody pitnej."
             },
             {
               "id": "rs5-6",
               "text": "Wypowiedź",
-              "answer": "B"
+              "answer": "B",
+              "explain": "Noce w lipcu są zimne: „Spakujcie coś ciepłego do ubrania”. Pasuje obrazek z ciepłą kurtką."
             },
             {
               "id": "rs5-7",
               "text": "Wypowiedź",
-              "answer": "D"
+              "answer": "D",
+              "explain": "Mowa o małych skaleczeniach i o tym, że w namiocie musi być „apteczka z plastrami”. Pasuje obrazek z plastrem."
             },
             {
               "id": "rs5-8",
               "text": "Wypowiedź",
-              "answer": "H"
+              "answer": "H",
+              "explain": "Szlak jest kamienisty i śliski, w sandałach nie można iść: „potrzebne są mocne buty”. Pasuje obrazek z butami trekkingowymi."
             },
             {
               "id": "rs5-9",
               "text": "Wypowiedź",
-              "answer": "J"
+              "answer": "J",
+              "explain": "„Kolację będziemy gotować sami, więc weźcie kuchenkę turystyczną i małą patelnię” – pasuje obrazek z patelnią."
             },
             {
               "id": "rs5-10",
               "text": "Wypowiedź",
-              "answer": "F"
+              "answer": "F",
+              "explain": "Prognoza mówi o deszczach, a przyda się „coś, co ochroni was przed wodą z góry”, czyli parasol. To nie woda do picia (K)."
             }
           ]
         }
@@ -540,7 +582,8 @@
                 "Polacy kupują używane ubrania głównie w sklepach."
               ],
               "answer": "b",
-              "passage": "Według najnowszego sondażu już co trzeci Polak kupuje używane ubrania. Najczęściej robimy to przez internet. Pytani o powód, respondenci na pierwszym miejscu wymieniają niską cenę, a dopiero na drugim – ochronę środowiska."
+              "passage": "Według najnowszego sondażu już co trzeci Polak kupuje używane ubrania. Najczęściej robimy to przez internet. Pytani o powód, respondenci na pierwszym miejscu wymieniają niską cenę, a dopiero na drugim – ochronę środowiska.",
+              "explain": "Tekst mówi, że cenę wymienia się „na pierwszym miejscu”. Kupuje „co trzeci Polak”, czyli mniejszość, i najczęściej przez internet, a nie w sklepach."
             },
             {
               "id": "rt1-2",
@@ -551,7 +594,8 @@
                 "krótkie przechowanie bagażu nic nie kosztuje."
               ],
               "answer": "c",
-              "passage": "Na Dworcu Centralnym otwarto nową przechowalnię bagażu. Skrytki działają przez całą dobę. Pierwsze dwie godziny są bezpłatne, za każdą kolejną trzeba zapłacić 5 zł. Za skrytkę można zapłacić tylko kartą lub telefonem."
+              "passage": "Na Dworcu Centralnym otwarto nową przechowalnię bagażu. Skrytki działają przez całą dobę. Pierwsze dwie godziny są bezpłatne, za każdą kolejną trzeba zapłacić 5 zł. Za skrytkę można zapłacić tylko kartą lub telefonem.",
+              "explain": "„Pierwsze dwie godziny są bezpłatne”, więc krótkie przechowanie nic nie kosztuje. Skrytki działają całą dobę, a płacić można tylko kartą lub telefonem."
             },
             {
               "id": "rt1-3",
@@ -562,7 +606,8 @@
                 "dorosłym wystarczy sześć godzin snu."
               ],
               "answer": "a",
-              "passage": "Naukowcy przypominają, że dorosły człowiek potrzebuje od siedmiu do dziewięciu godzin snu. Osoby, które regularnie śpią krócej niż sześć godzin, częściej chorują na serce i mają problemy z koncentracją. Zbyt długi sen też jednak nie jest zdrowy."
+              "passage": "Naukowcy przypominają, że dorosły człowiek potrzebuje od siedmiu do dziewięciu godzin snu. Osoby, które regularnie śpią krócej niż sześć godzin, częściej chorują na serce i mają problemy z koncentracją. Zbyt długi sen też jednak nie jest zdrowy.",
+              "explain": "Osoby, które regularnie śpią krócej niż sześć godzin, częściej chorują na serce. Odpowiedź b) jest błędna, bo „zbyt długi sen też nie jest zdrowy”."
             },
             {
               "id": "rt1-4",
@@ -573,7 +618,8 @@
                 "kandydaci muszą umieć porozumieć się po polsku."
               ],
               "answer": "c",
-              "passage": "Fabryka mebli w Swarzędzu zatrudni od zaraz 20 pracowników produkcji. Firma zapewnia szkolenie, umowę o pracę i bezpłatny dojazd z Poznania. Od kandydatów oczekuje się znajomości języka polskiego w stopniu komunikatywnym. Doświadczenie nie jest wymagane."
+              "passage": "Fabryka mebli w Swarzędzu zatrudni od zaraz 20 pracowników produkcji. Firma zapewnia szkolenie, umowę o pracę i bezpłatny dojazd z Poznania. Od kandydatów oczekuje się znajomości języka polskiego w stopniu komunikatywnym. Doświadczenie nie jest wymagane.",
+              "explain": "Od kandydatów oczekuje się „znajomości języka polskiego w stopniu komunikatywnym”. Doświadczenie nie jest wymagane, a dojazd jest bezpłatny."
             },
             {
               "id": "rt1-5",
@@ -584,7 +630,8 @@
                 "warsztaty kulinarne są przeznaczone dla dorosłych."
               ],
               "answer": "a",
-              "passage": "W ostatni weekend maja na Rynku odbędzie się Festiwal Kuchni Świata. Kucharze z ponad dwudziestu krajów przygotują swoje narodowe potrawy. Wstęp jest wolny, płaci się tylko za jedzenie. Organizatorzy zapraszają też dzieci na warsztaty kulinarne."
+              "passage": "W ostatni weekend maja na Rynku odbędzie się Festiwal Kuchni Świata. Kucharze z ponad dwudziestu krajów przygotują swoje narodowe potrawy. Wstęp jest wolny, płaci się tylko za jedzenie. Organizatorzy zapraszają też dzieci na warsztaty kulinarne.",
+              "explain": "„Kucharze z ponad dwudziestu krajów przygotują swoje narodowe potrawy”. Wstęp jest wolny, a warsztaty są dla dzieci, nie dla dorosłych."
             }
           ]
         },
@@ -604,37 +651,44 @@
             {
               "id": "rt2-1",
               "text": "Oksana przyjechała do Polski, bo dostała pracę w szpitalu.",
-              "answer": "NIE"
+              "answer": "NIE",
+              "explain": "Oksana przyjechała razem z mężem, „który dostał pracę w stoczni”. To on miał pracę, ona na początku pracowała w hotelu."
             },
             {
               "id": "rt2-2",
               "text": "Zaraz po przyjeździe Oksana zaczęła pracować w szpitalu.",
-              "answer": "NIE"
+              "answer": "NIE",
+              "explain": "Na początku Oksana była pokojówką w hotelu, bo bez języka „nie mogła myśleć o pracy w szpitalu”. Do szpitala trafiła dużo później."
             },
             {
               "id": "rt2-3",
               "text": "Oksana uczyła się polskiego na kursie i samodzielnie.",
-              "answer": "TAK"
+              "answer": "TAK",
+              "explain": "Wieczorami chodziła na kurs językowy, a w weekendy uczyła się sama z podręczników medycznych – czyli na kursie i samodzielnie."
             },
             {
               "id": "rt2-4",
               "text": "Za staż adaptacyjny Oksana nie dostawała wynagrodzenia.",
-              "answer": "TAK"
+              "answer": "TAK",
+              "explain": "Oksana mówi, że staż „trwał prawie rok i był bezpłatny”, dlatego dobrze, że mąż dobrze zarabiał. Nie dostawała pieniędzy."
             },
             {
               "id": "rt2-5",
               "text": "Oksana od początku wiedziała, że staż będzie długi i trudny.",
-              "answer": "NIE"
+              "answer": "NIE",
+              "explain": "Oksana mówi: „Myślałam, że to tylko formalność”. Nie spodziewała się więc, że staż będzie długi i trudny."
             },
             {
               "id": "rt2-6",
               "text": "Na początku Oksana miała problem ze skrótami w dokumentach.",
-              "answer": "TAK"
+              "answer": "TAK",
+              "explain": "Koleżanki pomogły jej „szczególnie na początku, kiedy nie rozumiała skrótów w dokumentacji medycznej”. Zdanie jest zgodne z tekstem."
             },
             {
               "id": "rt2-7",
               "text": "Oksana właśnie zaczęła specjalizację.",
-              "answer": "NIE"
+              "answer": "NIE",
+              "explain": "Oksana „chciałaby zrobić specjalizację”, ale „na razie nie ma na to czasu”, bo urodziła syna. Jeszcze jej nie zaczęła."
             }
           ]
         },
@@ -692,43 +746,50 @@
               "id": "rt3-1",
               "n": 1,
               "kind": "bank",
-              "answer": "E"
+              "answer": "E",
+              "explain": "Po „warto” stoi bezokolicznik: „warto zrobić listę zakupów”. Następne zdanie („Kiedy wiemy, czego potrzebujemy”) mówi właśnie o liście."
             },
             {
               "id": "rt3-2",
               "n": 2,
               "kind": "bank",
-              "answer": "H"
+              "answer": "H",
+              "explain": "Zaimek „których” odnosi się do „produkty”: kupujemy produkty, których nie potrzebujemy. Zgadza się z myślą o liście zakupów."
             },
             {
               "id": "rt3-3",
               "n": 3,
               "kind": "bank",
-              "answer": "C"
+              "answer": "C",
+              "explain": "Następne zdanie mówi o głodnym kliencie, więc pasuje „z pustym żołądkiem”. „W dużym supermarkecie” nie łączy się z głodem."
             },
             {
               "id": "rt3-4",
               "n": 4,
               "kind": "bank",
-              "answer": "I"
+              "answer": "I",
+              "explain": "Podmiotem zdania musi być rzeczownik: „pomaga planowanie posiłków na cały tydzień”. Dalej jest mowa o tym, co gotujemy w poniedziałek i czwartek."
             },
             {
               "id": "rt3-5",
               "n": 5,
               "kind": "bank",
-              "answer": "G"
+              "answer": "G",
+              "explain": "Kupując tylko potrzebne składniki, mniej jedzenia wyrzucamy. Następne zdanie mówi o wyrzucaniu żywności przez polskie rodziny."
             },
             {
               "id": "rt3-6",
               "n": 6,
               "kind": "bank",
-              "answer": "B"
+              "answer": "B",
+              "explain": "Po „Trzeba jednak pamiętać, że” jest ograniczenie promocji: nie zawsze się to opłaca, bo produkt może się zepsuć, zanim go zjemy."
             },
             {
               "id": "rt3-7",
               "n": 7,
               "kind": "bank",
-              "answer": "D"
+              "answer": "D",
+              "explain": "Konstrukcja „płacimy za X, a nie za Y” – płacimy za sam produkt, a nie za opakowanie. Spójnik „a nie” wprowadza kontrast."
             }
           ]
         },
@@ -785,37 +846,44 @@
             {
               "id": "rt4-1",
               "text": "Wiedza o pracodawcy",
-              "answer": "C"
+              "answer": "C",
+              "explain": "Fragment C radzi przeczytać stronę pracodawcy i poznać jego produkty i klientów, bo pada pytanie „Co pan wie o naszej firmie?”."
             },
             {
               "id": "rt4-2",
               "text": "Konkretne przykłady",
-              "answer": "G"
+              "answer": "G",
+              "explain": "Fragment G radzi zamiast ogólnych słów „opowiedzieć o konkretnej sytuacji z poprzedniej pracy”. To konkretne przykłady."
             },
             {
               "id": "rt4-3",
               "text": "Twoje pytania",
-              "answer": "I"
+              "answer": "I",
+              "explain": "Fragment I mówi o pytaniu „Czy ma pan jakieś pytania?” i radzi zapytać o pierwsze zadania albo o zespół. To pytania kandydata."
             },
             {
               "id": "rt4-4",
               "text": "Nie spóźnij się",
-              "answer": "F"
+              "answer": "F",
+              "explain": "Fragment F: „Spóźnienie to jeden z najgorszych błędów” – trzeba zaplanować trasę i wyjść z zapasem czasu."
             },
             {
               "id": "rt4-5",
               "text": "Odpowiedni strój",
-              "answer": "H"
+              "answer": "H",
+              "explain": "Fragment H mówi, jak się ubrać: trochę bardziej elegancko niż pracownicy, w banku garnitur, w agencji koszula i ciemne spodnie."
             },
             {
               "id": "rt4-6",
               "text": "Rozmowa przez kamerę",
-              "answer": "A"
+              "answer": "A",
+              "explain": "Fragment A dotyczy rekrutacji przez internet: trzeba sprawdzić kamerę i mikrofon oraz wybrać neutralne tło."
             },
             {
               "id": "rt4-7",
               "text": "Po spotkaniu",
-              "answer": "E"
+              "answer": "E",
+              "explain": "Fragment E: „Kiedy wyjdziesz z biura, Twoja praca się nie kończy” – następnego dnia trzeba wysłać mail z podziękowaniem. Fragment D (o pensji) jest niepotrzebny."
             }
           ]
         },
@@ -845,7 +913,8 @@
                 "wychodzeniu",
                 "prowadzeniu"
               ],
-              "answer": "wyprowadzaniu"
+              "answer": "wyprowadzaniu",
+              "explain": "„Wyprowadzać psa na spacer” to stała kolokacja; po „pomagać w” jest miejscownik: w wyprowadzaniu. „Wychodzić” nie łączy się z dopełnieniem „psów”."
             },
             {
               "id": "rt5-2",
@@ -856,7 +925,8 @@
                 "doświadczenia",
                 "doświadczeniem"
               ],
-              "answer": "doświadczenia"
+              "answer": "doświadczenia",
+              "explain": "Po zaprzeczeniu „nie trzeba mieć” dopełnienie stoi w dopełniaczu: nie mieć doświadczenia (a nie biernik „doświadczenie”)."
             },
             {
               "id": "rt5-3",
@@ -867,7 +937,8 @@
                 "odchodzi",
                 "przechodzi"
               ],
-              "answer": "przechodzi"
+              "answer": "przechodzi",
+              "explain": "„Przechodzić szkolenie” znaczy brać w nim udział od początku do końca. „Przychodzić” i „odchodzić” nie łączą się z biernikiem „szkolenie”."
             },
             {
               "id": "rt5-4",
@@ -878,7 +949,8 @@
                 "wybierają",
                 "wybiorą"
               ],
-              "answer": "wybierają"
+              "answer": "wybierają",
+              "explain": "Podmiotem są „osoby w średnim wieku, które…”, czyli liczba mnoga, a tekst opisuje sytuację obecną: wybierają (czas teraźniejszy)."
             },
             {
               "id": "rt5-5",
@@ -889,7 +961,8 @@
                 "spędzaniem",
                 "spędzaniu"
               ],
-              "answer": "spędzanie"
+              "answer": "spędzanie",
+              "explain": "„Sposób na coś” wymaga biernika: sposób na spędzanie wolnego czasu. Forma „spędzaniu” to miejscownik, „spędzaniem” – narzędnik."
             },
             {
               "id": "rt5-6",
@@ -900,7 +973,8 @@
                 "adoptować",
                 "adoptują"
               ],
-              "answer": "adoptują"
+              "answer": "adoptują",
+              "explain": "Podmiotem jest „ludzie” (liczba mnoga), więc czasownik w 3. osobie l. mn.: ludzie chętniej je adoptują."
             },
             {
               "id": "rt5-7",
@@ -911,7 +985,8 @@
                 "zachęca",
                 "zabrania"
               ],
-              "answer": "zachęca"
+              "answer": "zachęca",
+              "explain": "Schronisko chce odwiedzin, więc „zachęca do odwiedzin”. „Zmuszać” jest za mocne, a „zabraniać” ma przeciwny sens."
             },
             {
               "id": "rt5-8",
@@ -922,7 +997,8 @@
                 "zgubić",
                 "założyć"
               ],
-              "answer": "znaleźć"
+              "answer": "znaleźć",
+              "explain": "Informacje można znaleźć na stronie internetowej. „Zgubić” i „założyć” nie pasują znaczeniowo."
             }
           ]
         }
@@ -961,7 +1037,8 @@
                 "człowiek",
                 "człowieka"
               ],
-              "answer": "człowiekiem"
+              "answer": "człowiekiem",
+              "explain": "Po „być” rzeczownik z przymiotnikiem stoi w narzędniku: jest aktywnym człowiekiem (nie mianownik „człowiek”)."
             },
             {
               "id": "pg1-2",
@@ -972,7 +1049,8 @@
                 "rowerze",
                 "rowerem"
               ],
-              "answer": "rowerze"
+              "answer": "rowerze",
+              "explain": "„Jeździć na rowerze” – po „na” w tym wyrażeniu stoi miejscownik. Forma „rowerem” (narzędnik) nie łączy się z przyimkiem „na”."
             },
             {
               "id": "pg1-3",
@@ -983,7 +1061,8 @@
                 "ptakami",
                 "ptaki"
               ],
-              "answer": "ptaki"
+              "answer": "ptaki",
+              "explain": "„Obserwować” łączy się z biernikiem: obserwować kogo? co? – ptaki. Dopełniacz „ptaków” byłby po zaprzeczeniu."
             },
             {
               "id": "pg1-4",
@@ -994,7 +1073,8 @@
                 "dzieciom",
                 "dziećmi"
               ],
-              "answer": "dzieciom"
+              "answer": "dzieciom",
+              "explain": "„Opowiadać komu?” – osoba, do której mówimy, stoi w celowniku: opowiada dzieciom o przyrodzie."
             },
             {
               "id": "pg1-5",
@@ -1005,7 +1085,8 @@
                 "nauczyciela",
                 "nauczycielem"
               ],
-              "answer": "nauczycielem"
+              "answer": "nauczycielem",
+              "explain": "Po „być” rzeczownik oznaczający zawód stoi w narzędniku: być nauczycielem. Po „niż” zachowujemy ten sam przypadek co „nikim”."
             },
             {
               "id": "pg1-6",
@@ -1016,7 +1097,8 @@
                 "telewizora",
                 "telewizor"
               ],
-              "answer": "telewizorem"
+              "answer": "telewizorem",
+              "explain": "„Przed” w znaczeniu miejsca łączy się z narzędnikiem: siedzieć przed telewizorem."
             },
             {
               "id": "pg1-7",
@@ -1027,7 +1109,8 @@
                 "ludźmi",
                 "ludziom"
               ],
-              "answer": "ludźmi"
+              "answer": "ludźmi",
+              "explain": "„Spotykać się z kim?” – przyimek „z” w znaczeniu towarzystwa wymaga narzędnika: z ludźmi."
             },
             {
               "id": "pg1-8",
@@ -1038,7 +1121,8 @@
                 "wnuczkę",
                 "wnuczką"
               ],
-              "answer": "wnuczką"
+              "answer": "wnuczką",
+              "explain": "„Chodzić z kim?” – „z” + narzędnik: ze swoją wnuczką. Przymiotnik „swoją” też jest w narzędniku."
             },
             {
               "id": "pg1-9",
@@ -1049,7 +1133,8 @@
                 "ją",
                 "niej"
               ],
-              "answer": "jej"
+              "answer": "jej",
+              "explain": "„Kupować komu? co?” – osoba, dla której kupujemy, stoi w celowniku: kupuje jej książki. „Ją” to biernik."
             },
             {
               "id": "pg1-10",
@@ -1060,7 +1145,8 @@
                 "sąsiedzi",
                 "sąsiadami"
               ],
-              "answer": "sąsiedzi"
+              "answer": "sąsiedzi",
+              "explain": "„Sąsiedzi” to podmiot zdania (kto? lubi), więc mianownik l. mn. Forma osobowa: sąsiad – sąsiedzi."
             }
           ]
         },
@@ -1089,31 +1175,36 @@
               "id": "pg2-1",
               "n": 1,
               "kind": "bank",
-              "answer": "chociaż"
+              "answer": "chociaż",
+              "explain": "„Chociaż” wprowadza przeciwieństwo: tęsknię za rodziną, a mimo to nie przyjadę. Zdanie z „chociaż” stoi na początku, przed główną myślą."
             },
             {
               "id": "pg2-2",
               "n": 2,
               "kind": "bank",
-              "answer": "więc"
+              "answer": "więc",
+              "explain": "„Więc” wprowadza skutek: mam dużo pracy, dlatego nie dostanę urlopu."
             },
             {
               "id": "pg2-3",
               "n": 3,
               "kind": "bank",
-              "answer": "żebym"
+              "answer": "żebym",
+              "explain": "Po „potrzebuje mnie, …” jest cel, a podmioty są różne (szef / ja), więc „żeby” + forma przeszła: żebym zastąpiła."
             },
             {
               "id": "pg2-4",
               "n": 4,
               "kind": "bank",
-              "answer": "bo"
+              "answer": "bo",
+              "explain": "„Bo” wprowadza przyczynę: jest mi smutno, ponieważ to pierwsze święta bez rodziny."
             },
             {
               "id": "pg2-5",
               "n": 5,
               "kind": "bank",
-              "answer": "kiedy"
+              "answer": "kiedy",
+              "explain": "„Kiedy tylko” znaczy „zaraz, gdy”: przyjadę od razu po końcu sezonu. Spójnik czasowy łączy się z czasem przyszłym „skończy się”."
             }
           ]
         },
@@ -1144,7 +1235,8 @@
                 "mniej",
                 "najmniej"
               ],
-              "answer": "mniej"
+              "answer": "mniej",
+              "explain": "„Płacić” określa przysłówek, nie przymiotnik: płacę mniej. „Mniejszy” odnosi się do rzeczownika, „najmniej” to stopień najwyższy."
             },
             {
               "id": "pg3-2",
@@ -1155,7 +1247,8 @@
                 "najjaśniejszy",
                 "najjaśniejszym"
               ],
-              "answer": "najjaśniejszym"
+              "answer": "najjaśniejszym",
+              "explain": "„W całym mieszkaniu” wskazuje na stopień najwyższy, a po „być” + rzeczownik przymiotnik stoi w narzędniku: najjaśniejszym pokojem."
             },
             {
               "id": "pg3-3",
@@ -1166,7 +1259,8 @@
                 "daleko",
                 "dalszy"
               ],
-              "answer": "dalej"
+              "answer": "dalej",
+              "explain": "Porównanie z „niż kiedyś” wymaga stopnia wyższego przysłówka: mam dalej. „Dalszy” to przymiotnik."
             },
             {
               "id": "pg3-4",
@@ -1177,7 +1271,8 @@
                 "mniejszy",
                 "mniej"
               ],
-              "answer": "mniej"
+              "answer": "mniej",
+              "explain": "„Mniej” + dopełniacz l. mn.: mniej pieniędzy. Porównanie z sytuacją wcześniej wymaga stopnia wyższego, nie „mało”."
             },
             {
               "id": "pg3-5",
@@ -1188,7 +1283,8 @@
                 "najlepsza",
                 "najlepiej"
               ],
-              "answer": "najlepsza"
+              "answer": "najlepsza",
+              "explain": "„W okolicy” wskazuje na stopień najwyższy. Po „jest” stoi przymiotnik (piekarnia jest jaka?), a nie przysłówek „najlepiej”."
             }
           ]
         },
@@ -1210,7 +1306,8 @@
               "kind": "input",
               "accept": [
                 "zostaniemy"
-              ]
+              ],
+              "explain": "„W tym roku” to jednorazowe postanowienie na przyszłość, więc czas przyszły prosty od czasownika dokonanego: zostaniemy (my)."
             },
             {
               "id": "pg4-2",
@@ -1218,7 +1315,8 @@
               "kind": "input",
               "accept": [
                 "zorganizujemy"
-              ]
+              ],
+              "explain": "Jednorazowa, zakończona czynność w przyszłości: czasownik dokonany „zorganizować” → zorganizujemy."
             },
             {
               "id": "pg4-3",
@@ -1226,7 +1324,8 @@
               "kind": "input",
               "accept": [
                 "planuje"
-              ]
+              ],
+              "explain": "„Właśnie” oznacza czynność trwającą teraz, więc czas teraźniejszy niedokonany: brat planuje."
             },
             {
               "id": "pg4-4",
@@ -1234,7 +1333,8 @@
               "kind": "input",
               "accept": [
                 "pisze"
-              ]
+              ],
+              "explain": "Siostra robi to teraz (jak brat), więc czas teraźniejszy: pisze. Uwaga na wymianę s:sz – pisać → pisze."
             },
             {
               "id": "pg4-5",
@@ -1242,7 +1342,8 @@
               "kind": "input",
               "accept": [
                 "przygotuję"
-              ]
+              ],
+              "explain": "„Jutro” + jedna konkretna czynność z rezultatem: czas przyszły dokonany, 1. osoba: przygotuję."
             },
             {
               "id": "pg4-6",
@@ -1250,7 +1351,8 @@
               "kind": "input",
               "accept": [
                 "upiecze"
-              ]
+              ],
+              "explain": "Mama zrobi to raz i do końca, więc czasownik dokonany: upiec → upiecze (wymiana k:cz)."
             },
             {
               "id": "pg4-7",
@@ -1258,7 +1360,8 @@
               "kind": "input",
               "accept": [
                 "będzie"
-              ]
+              ],
+              "explain": "Przyszłość od „być” tworzymy formą „będzie”: wieczorem będzie ognisko."
             },
             {
               "id": "pg4-8",
@@ -1268,7 +1371,8 @@
                 "będziemy oglądać",
                 "będziemy oglądali",
                 "będziemy oglądały"
-              ]
+              ],
+              "explain": "„Oglądać” jest niedokonany, więc czas przyszły złożony: będziemy oglądać (albo będziemy oglądali/oglądały)."
             },
             {
               "id": "pg4-9",
@@ -1281,7 +1385,8 @@
                 "będziemy się bawiły",
                 "się będziemy bawić",
                 "będziemy bawili się"
-              ]
+              ],
+              "explain": "„Bawić się” jest niedokonany: czas przyszły złożony „będziemy się bawić”. Zaimek „się” może stać w różnych miejscach."
             },
             {
               "id": "pg4-10",
@@ -1290,7 +1395,8 @@
               "accept": [
                 "cieszę",
                 "cieszymy"
-              ]
+              ],
+              "explain": "„Już się cieszę” – radość czuję teraz, więc czas teraźniejszy: cieszę (lub cieszymy, jeśli mówimy o całej rodzinie)."
             }
           ]
         },
@@ -1320,7 +1426,8 @@
                 "Ile lat",
                 "Od ilu lat",
                 "Ile czasu"
-              ]
+              ],
+              "explain": "„Od trzech lat” określa czas trwania do dziś, więc pytamy „Od kiedy…?” albo „Jak długo…?”."
             },
             {
               "id": "pg5-2",
@@ -1329,7 +1436,8 @@
               "reply": "Do babci.",
               "accept": [
                 "Do kogo"
-              ]
+              ],
+              "explain": "„Do babci” to osoba po przyimku „do” (dopełniacz), więc pytamy „Do kogo…?”. „Do czego” dotyczy rzeczy."
             },
             {
               "id": "pg5-3",
@@ -1340,7 +1448,8 @@
                 "O której",
                 "O której godzinie",
                 "Kiedy"
-              ]
+              ],
+              "explain": "Podana jest konkretna godzina „o siódmej piętnaście”, więc pytamy „O której (godzinie)…?”."
             },
             {
               "id": "pg5-4",
@@ -1350,7 +1459,8 @@
               "accept": [
                 "Jaką",
                 "Którą"
-              ]
+              ],
+              "explain": "„Czerwoną” opisuje cechę sukienki, więc pytamy przymiotnikiem pytajnym w bierniku r.ż.: „Jaką…?”."
             },
             {
               "id": "pg5-5",
@@ -1359,7 +1469,8 @@
               "reply": "O pieniądze.",
               "accept": [
                 "O co"
-              ]
+              ],
+              "explain": "„Pokłócić się o coś” – przyimek „o” + biernik rzeczy, więc pytamy „O co…?”."
             }
           ]
         },
@@ -1384,17 +1495,14 @@
               "accept": [
                 "Byłem zachwycony tym filmem",
                 "Byłem tym filmem zachwycony",
-                "Byłem zachwycona tym filmem",
-                "Byłem tym filmem zachwycona",
-                "Byłam zachwycony tym filmem",
-                "Byłam tym filmem zachwycony",
                 "Byłam zachwycona tym filmem",
                 "Byłam tym filmem zachwycona",
                 "Jestem zachwycony tym filmem",
                 "Jestem tym filmem zachwycony",
                 "Jestem zachwycona tym filmem",
                 "Jestem tym filmem zachwycona"
-              ]
+              ],
+              "explain": "„Być zachwyconym czymś” – po „zachwycony” stoi narzędnik: zachwycony tym filmem. Forma czasownika i przymiotnika musi pasować do płci."
             },
             {
               "id": "pg6-2",
@@ -1407,7 +1515,8 @@
                 "Szef pozwolił mi wyjść wcześniej",
                 "Dziś szef pozwolił mi wyjść wcześniej",
                 "Szef dziś pozwolił mi wyjść wcześniej"
-              ]
+              ],
+              "explain": "„Pozwolić komu? na co?” – osoba w celowniku (mi) + bezokolicznik: Szef pozwolił mi wyjść wcześniej."
             },
             {
               "id": "pg6-3",
@@ -1419,7 +1528,8 @@
                 "Moja siostra pracuje jako lekarz",
                 "Siostra pracuje jako lekarka",
                 "Moja siostra pracuje jako pani doktor"
-              ]
+              ],
+              "explain": "„Pracować jako” + mianownik: pracuje jako lekarka. Po „jako” nie używamy narzędnika („jako lekarką” to błąd)."
             },
             {
               "id": "pg6-4",
@@ -1432,7 +1542,8 @@
                 "Kiedy ty się urodziłeś",
                 "Którego dnia się urodziłeś",
                 "Kiedy się ty urodziłeś"
-              ]
+              ],
+              "explain": "Pytanie o datę urodzenia z czasownikiem: „Kiedy się urodziłeś?”. „Urodzić się” jest zwrotny, więc potrzebne jest „się”."
             },
             {
               "id": "pg6-5",
@@ -1445,7 +1556,8 @@
                 "Dojazd do pracy zajmuje godzinę",
                 "Droga do pracy zajmuje godzinę",
                 "Podróż do pracy zajmuje mi godzinę"
-              ]
+              ],
+              "explain": "„Coś zajmuje komuś czas”: podmiotem jest rzeczownik (dojazd, droga), osoba w celowniku (mi): Dojazd do pracy zajmuje mi godzinę."
             }
           ]
         },
@@ -1475,7 +1587,8 @@
                 "Sprzątasz",
                 "Posprzątał"
               ],
-              "answer": "Posprzątaj"
+              "answer": "Posprzątaj",
+              "explain": "Mama wydaje polecenie: tryb rozkazujący od dokonanego „posprzątać” → Posprzątaj. Chodzi o jednorazowy efekt przed przyjściem gości."
             },
             {
               "id": "pg7-2",
@@ -1486,7 +1599,8 @@
                 "Daj",
                 "Dać"
               ],
-              "answer": "Daj"
+              "answer": "Daj",
+              "explain": "Prośba skierowana do mamy (ty) – tryb rozkazujący: Daj mi jeszcze pół godziny. „Dał” to czas przeszły, „dać” bezokolicznik."
             },
             {
               "id": "pg7-3",
@@ -1497,7 +1611,8 @@
                 "sprzątałeś",
                 "sprzątał"
               ],
-              "answer": "sprzątał"
+              "answer": "sprzątał",
+              "explain": "„W każdą sobotę” oznacza czynność powtarzaną, więc czas przyszły złożony od niedokonanego: będziesz sprzątał."
             },
             {
               "id": "pg7-4",
@@ -1508,7 +1623,8 @@
                 "miałbym",
                 "będę mieć"
               ],
-              "answer": "miałbym"
+              "answer": "miałbym",
+              "explain": "Tryb warunkowy nierzeczywisty: „Gdybym…, miałbym”. Mówi Kuba o sobie, więc 1. osoba r.m.: miałbym."
             },
             {
               "id": "pg7-5",
@@ -1519,7 +1635,8 @@
                 "możesz by",
                 "mogłaś"
               ],
-              "answer": "mogłabyś"
+              "answer": "mogłabyś",
+              "explain": "Grzeczna prośba do mamy: tryb przypuszczający 2. osoby r.ż. – mogłabyś. „Możesz by” to forma niepoprawna."
             },
             {
               "id": "pg7-6",
@@ -1530,7 +1647,8 @@
                 "Pomóc",
                 "Pomogę"
               ],
-              "answer": "Pomogę"
+              "answer": "Pomogę",
+              "explain": "Mama obiecuje coś na przyszłość: czas przyszły dokonany „pomogę ci z szafą”."
             },
             {
               "id": "pg7-7",
@@ -1541,7 +1659,8 @@
                 "wynieś",
                 "wynieść"
               ],
-              "answer": "wynieś"
+              "answer": "wynieś",
+              "explain": "Kolejne polecenie dla Kuby: tryb rozkazujący od „wynieść” → wynieś śmieci."
             },
             {
               "id": "pg7-8",
@@ -1552,7 +1671,8 @@
                 "Zróbcie",
                 "Zrobić"
               ],
-              "answer": "Zróbmy"
+              "answer": "Zróbmy",
+              "explain": "Tata proponuje wspólną czynność („razem”), więc tryb rozkazujący 1. osoby l. mn.: Zróbmy."
             },
             {
               "id": "pg7-9",
@@ -1563,7 +1683,8 @@
                 "Nie",
                 "Niech"
               ],
-              "answer": "Niech"
+              "answer": "Niech",
+              "explain": "Polecenie dla trzeciej osoby wyrażamy przez „niech” + czas teraźniejszy/przyszły: Niech Kuba nakryje do stołu."
             },
             {
               "id": "pg7-10",
@@ -1574,7 +1695,8 @@
                 "zamówił",
                 "zamawiałby"
               ],
-              "answer": "zamówił"
+              "answer": "zamówił",
+              "explain": "Po „może by” stoi forma czasu przeszłego (jak w trybie przypuszczającym): może by tata zamówił pizzę."
             }
           ]
         },
@@ -1603,31 +1725,36 @@
               "id": "pg8-1",
               "n": 1,
               "kind": "bank",
-              "answer": "na"
+              "answer": "na",
+              "explain": "„Iść na Rynek” – na plac, rynek idziemy z przyimkiem „na” + biernik (jak „na plac”, „na ulicę”)."
             },
             {
               "id": "pg8-2",
               "n": 2,
               "kind": "bank",
-              "answer": "o"
+              "answer": "o",
+              "explain": "„Opowiadać o czym?” – „o” + miejscownik: o historii miasta."
             },
             {
               "id": "pg8-3",
               "n": 3,
               "kind": "bank",
-              "answer": "przez"
+              "answer": "przez",
+              "explain": "„Iść przez coś” oznacza przejście przez teren od jednego końca do drugiego: szliśmy przez Planty aż do Wawelu."
             },
             {
               "id": "pg8-4",
               "n": 4,
               "kind": "bank",
-              "answer": "z"
+              "answer": "z",
+              "explain": "„Restauracja z widokiem na…” – przyimek „z” + narzędnik opisuje cechę miejsca."
             },
             {
               "id": "pg8-5",
               "n": 5,
               "kind": "bank",
-              "answer": "obok"
+              "answer": "obok",
+              "explain": "„Obok” + dopełniacz oznacza „blisko”: hotel obok dworca. Wyraz „za” jest niepotrzebny."
             }
           ]
         }

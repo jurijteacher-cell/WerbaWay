@@ -55,7 +55,8 @@
                 "zaproponować nowy termin wizyty.",
                 "odwołać wszystkie wizyty w tym tygodniu."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Joanna mówi: „w środę nie przyjmuje. Możemy zaproponować wizytę w piątek o czternastej albo w przyszły poniedziałek”. Wizyta w środę jest odwołana, ale tylko ta jedna, więc c nie pasuje."
             },
             {
               "id": "sl1-2",
@@ -65,7 +66,8 @@
                 "przyszedł prosto pod halę.",
                 "spotkał się z nim w kawiarni."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Marek mówi: „Czekam na ciebie o siódmej w kawiarni naprzeciwko dworca”. Pod halą się nie spotykają, a bilety Marek już ma: „nic nie kupuj”."
             },
             {
               "id": "sl1-3",
@@ -75,7 +77,8 @@
                 "zacznie pracę później niż zwykle.",
                 "musi przyjść do pracy o szóstej."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Kierowniczka mówi, że w poniedziałek i we wtorek Oksana pracuje „od czternastej, a nie od szóstej”, czyli zaczyna później. Nie ma wolnego, tylko inną zmianę."
             },
             {
               "id": "sl1-4",
@@ -85,7 +88,8 @@
                 "nie będą mieli wody przez cały dzień.",
                 "muszą być w domu od ósmej."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "W komunikacie: „nie będzie ciepłej wody, od ósmej do szesnastej. Zimna woda będzie normalnie”. To kilka godzin i tylko ciepła woda, nie cały dzień i nie każda woda."
             }
           ]
         },
@@ -111,7 +115,8 @@
               "kind": "tf",
               "stem": "W aptece był lek, który lekarz zapisał na recepcie.",
               "answer": "fałsz",
-              "passage": "Rozmowa 1 · zadania 5–6"
+              "passage": "Rozmowa 1 · zadania 5–6",
+              "explain": "Farmaceutka mówi: „tego leku w tej chwili nie mamy”. Proponuje zamówienie na jutro albo zamiennik, więc leku z recepty w aptece nie było."
             },
             {
               "id": "sl2-2",
@@ -121,14 +126,16 @@
                 "kupi tańszy lek, który działa tak samo.",
                 "ma brać lek przed jedzeniem."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Zamiennik to „ta sama substancja” i „jest tańszy”, a klient mówi: „poproszę zamiennik. Nie chcę przychodzić drugi raz”. Lek bierze się „po jedzeniu”, nie przed."
             },
             {
               "id": "sl2-3",
               "kind": "tf",
               "stem": "Koledzy kupią szefowi ekspres do kawy.",
               "answer": "fałsz",
-              "passage": "Rozmowa 2 · zadania 7–8"
+              "passage": "Rozmowa 2 · zadania 7–8",
+              "explain": "Ania myślała o ekspresie, ale „szef dostał już jeden od żony”. W końcu decydują: „Weźmy voucher”."
             },
             {
               "id": "sl2-4",
@@ -138,14 +145,16 @@
                 "kupi voucher.",
                 "zbierze pieniądze od kolegów."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Kuba mówi: „Ja mogę zamówić tort w cukierni na dole”, a Ania podsumowuje: „Ja voucher, ty tort”. Voucher kupuje Ania."
             },
             {
               "id": "sl2-5",
               "kind": "tf",
               "stem": "Konto można założyć bez numeru PESEL.",
               "answer": "prawda",
-              "passage": "Rozmowa 3 · zadania 9–10"
+              "passage": "Rozmowa 3 · zadania 9–10",
+              "explain": "Klientka nie ma jeszcze PESEL-u, a pracownik banku mówi: „Konto otworzymy na paszport, a numer dopisze pani później”."
             },
             {
               "id": "sl2-6",
@@ -155,14 +164,16 @@
                 "dopisze numer PESEL.",
                 "co miesiąc wpłynie na nie co najmniej tysiąc złotych."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Pracownik mówi, że konto kosztuje „nic, jeśli co miesiąc wpływa na nie co najmniej tysiąc złotych”. Aplikacja i PESEL nie mają wpływu na cenę."
             },
             {
               "id": "sl2-7",
               "kind": "tf",
               "stem": "W niedzielę rano Filip jest zajęty.",
               "answer": "prawda",
-              "passage": "Rozmowa 4 · zadania 11–12"
+              "passage": "Rozmowa 4 · zadania 11–12",
+              "explain": "Filip mówi: „W niedzielę rano mam trening, do jedenastej”, więc rano jest zajęty."
             },
             {
               "id": "sl2-8",
@@ -172,14 +183,16 @@
                 "odbierze babcię z dworca.",
                 "zrobi zakupy w supermarkecie."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Mama mówi: „w niedzielę po treningu odbierz babcię z dworca”. Na targ Filip nie zdąży, a zakupy w supermarkecie zrobi w sobotę."
             },
             {
               "id": "sl2-9",
               "kind": "tf",
               "stem": "Klient kupił bilety na seans o dwudziestej.",
               "answer": "fałsz",
-              "passage": "Rozmowa 5 · zadania 13–14"
+              "passage": "Rozmowa 5 · zadania 13–14",
+              "explain": "Na dwudziestą były tylko miejsca w pierwszym rzędzie. Klient mówi: „biorę późniejszy”, czyli seans o 21:30."
             },
             {
               "id": "sl2-10",
@@ -189,7 +202,8 @@
                 "sześćdziesiąt cztery złote.",
                 "za jeden bilet normalny i jeden ulgowy."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Kasjerka mówi: „jeden bilet normalny, trzydzieści dwa złote, i jeden ulgowy”, bo żona jest studentką. Razem 56 zł, a nie 64 zł."
             }
           ]
         },
@@ -215,7 +229,8 @@
                 "chciał zmienić styl życia po rozmowie z lekarzem.",
                 "stracił pracę jako informatyk."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Tomasz wrócił do pszczół, „kiedy lekarz powiedział, że muszę mniej siedzieć przed komputerem i więcej się ruszać”. Pasieka dziadka to tylko wspomnienie z dzieciństwa."
             },
             {
               "id": "sl3-2",
@@ -225,7 +240,8 @@
                 "na wsi u dziadka.",
                 "na dachu hotelu."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Tomasz mówi: „Na dachu hotelu w centrum”. O ogródku działkowym myślał, ale sąsiedzi się nie zgodzili."
             },
             {
               "id": "sl3-3",
@@ -235,7 +251,8 @@
                 "są niebezpieczne dla gości hotelu.",
                 "kilka razy użądliły gości."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Według Tomasza pszczoły „latają wysoko, nad ulicami, i nikomu nie przeszkadzają”. Przez trzy lata żaden gość nie został użądlony, tylko on sam."
             },
             {
               "id": "sl3-4",
@@ -245,7 +262,8 @@
                 "pszczoły są wtedy agresywne.",
                 "Tomasz nie może wtedy sprawdzać uli."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Tomasz mówi o zimie: „Uli nie można wtedy otwierać i sprawdzać, trzeba po prostu czekać”. Najwięcej pracy jest latem."
             },
             {
               "id": "sl3-5",
@@ -255,7 +273,8 @@
                 "w większości trafia do hotelu.",
                 "można zamówić przez internet."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Tomasz mówi: „Większość dostaje hotel, a resztę oddaję znajomym”. W sklepie miodu nie ma, a osobom z internetu odmawia."
             },
             {
               "id": "sl3-6",
@@ -265,7 +284,8 @@
                 "postawić więcej uli.",
                 "otworzyć sklep z miodem."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Tomasz chce prowadzić „warsztaty dla uczniów z okolicznych szkół, żeby dzieci wiedziały, że miód nie bierze się z supermarketu”. Więcej uli nie planuje: „cztery wystarczą”."
             }
           ]
         },
@@ -318,17 +338,20 @@
             {
               "id": "sl4-1",
               "text": "Opinia 21",
-              "answer": "b"
+              "answer": "b",
+              "explain": "Słuchaczka mówi: „czułam się bardzo samotna. Brakowało mi zwykłej rozmowy przy kawie”. W domu pracowała szybciej, ale wróciła do biura, więc f nie pasuje."
             },
             {
               "id": "sl4-2",
               "text": "Opinia 22",
-              "answer": "d"
+              "answer": "d",
+              "explain": "Słuchacz pracuje dwa dni w domu i trzy w biurze i mówi: „to idealne rozwiązanie”. O braku wyboru mówi jego brat kierowca, nie on sam, więc e nie pasuje."
             },
             {
               "id": "sl4-3",
               "text": "Opinia 23",
-              "answer": "c"
+              "answer": "c",
+              "explain": "Słuchaczce wzrosły rachunki, a „firma oszczędza na biurze”. Uważa, że „pracodawca powinien oddawać pracownikom choć część tych pieniędzy”."
             }
           ]
         }
@@ -379,22 +402,26 @@
             {
               "id": "cz1-1",
               "answer": "b",
-              "text": "Szanowni Pacjenci,\nod 2 stycznia apteka będzie czynna od poniedziałku do piątku w godzinach 8:00–20:00, a w soboty od 9:00 do 14:00. W niedziele i święta apteka będzie zamknięta. Najbliższa apteka całodobowa znajduje się przy ulicy Kościuszki 12.\nZespół Apteki „Pod Orłem”"
+              "text": "Szanowni Pacjenci,\nod 2 stycznia apteka będzie czynna od poniedziałku do piątku w godzinach 8:00–20:00, a w soboty od 9:00 do 14:00. W niedziele i święta apteka będzie zamknięta. Najbliższa apteka całodobowa znajduje się przy ulicy Kościuszki 12.\nZespół Apteki „Pod Orłem”",
+              "explain": "Apteka informuje, że „od 2 stycznia” będzie czynna w nowych godzinach i w niedziele zamknięta. To zmiana godzin otwarcia."
             },
             {
               "id": "cz1-2",
               "answer": "d",
-              "text": "Cześć Basiu,\nmam do Ciebie wielką prośbę. W sobotę muszę zawieźć mamę do lekarza do Opola, a mój samochód od tygodnia stoi w warsztacie. Czy mogłabym wziąć Twoje auto na jeden dzień? Zatankuję do pełna i oddam wieczorem. Daj znać, czy to możliwe!\nGosia"
+              "text": "Cześć Basiu,\nmam do Ciebie wielką prośbę. W sobotę muszę zawieźć mamę do lekarza do Opola, a mój samochód od tygodnia stoi w warsztacie. Czy mogłabym wziąć Twoje auto na jeden dzień? Zatankuję do pełna i oddam wieczorem. Daj znać, czy to możliwe!\nGosia",
+              "explain": "Gosia pyta: „Czy mogłabym wziąć Twoje auto na jeden dzień?”, bo jej samochód jest w warsztacie. To prośba o pożyczenie samochodu."
             },
             {
               "id": "cz1-3",
               "answer": "e",
-              "text": "Szanowna Pani Dyrektor,\nbardzo przepraszam, że wczoraj nie przyszedłem na zebranie rodziców. W ostatniej chwili musiałem zostać dłużej w pracy, bo zachorował kolega. Czy mógłbym umówić się z wychowawczynią syna na rozmowę w innym terminie?\nZ poważaniem\nAndrzej Bielecki"
+              "text": "Szanowna Pani Dyrektor,\nbardzo przepraszam, że wczoraj nie przyszedłem na zebranie rodziców. W ostatniej chwili musiałem zostać dłużej w pracy, bo zachorował kolega. Czy mógłbym umówić się z wychowawczynią syna na rozmowę w innym terminie?\nZ poważaniem\nAndrzej Bielecki",
+              "explain": "Ojciec pisze: „przepraszam, że wczoraj nie przyszedłem na zebranie”. Został dłużej w pracy, ale o zastępstwo nie prosi, więc c nie pasuje."
             },
             {
               "id": "cz1-4",
               "answer": "a",
-              "text": "Hej wszystkim!\nW przyszłą sobotę kończę trzydzieści lat i chcę to uczcić. Zapraszam do mnie na grilla od 17:00, w ogrodzie za domem. Prezentów nie trzeba, ale jeśli ktoś chce, może przynieść sałatkę albo ciasto. Potwierdźcie do środy, żebym wiedziała, ile kupić kiełbasek!\nIza"
+              "text": "Hej wszystkim!\nW przyszłą sobotę kończę trzydzieści lat i chcę to uczcić. Zapraszam do mnie na grilla od 17:00, w ogrodzie za domem. Prezentów nie trzeba, ale jeśli ktoś chce, może przynieść sałatkę albo ciasto. Potwierdźcie do środy, żebym wiedziała, ile kupić kiełbasek!\nIza",
+              "explain": "Iza kończy trzydzieści lat i pisze: „Zapraszam do mnie na grilla”. Prezentów nie trzeba, więc to nie zbiórka na prezent, tylko zaproszenie na urodziny."
             }
           ]
         },
@@ -455,27 +482,32 @@
             {
               "id": "cz2-1",
               "text": "Wyjeżdżasz na dwa tygodnie do rodziny i nie masz z kim zostawić psa.",
-              "answer": "h"
+              "answer": "h",
+              "explain": "Ogłoszenie h oferuje opiekę nad psem: „zaopiekuję się nim, kiedy wyjedziesz”. To pasuje do wyjazdu na dwa tygodnie."
             },
             {
               "id": "cz2-2",
               "text": "Potrzebujesz oficjalnego tłumaczenia aktu urodzenia na polski.",
-              "answer": "g"
+              "answer": "g",
+              "explain": "Akt urodzenia to akt stanu cywilnego, a oficjalne tłumaczenie robi tłumacz przysięgły, jak w ogłoszeniu g."
             },
             {
               "id": "cz2-3",
               "text": "Chcesz zacząć biegać, ale nie lubisz trenować sam/sama.",
-              "answer": "e"
+              "answer": "e",
+              "explain": "Ogłoszenie e to grupa biegowa, która zaprasza osoby „na każdym poziomie”, więc można zacząć biegać razem z innymi."
             },
             {
               "id": "cz2-4",
               "text": "Twój syn chodzi do trzeciej klasy i ma kłopoty z matematyką.",
-              "answer": "x"
+              "answer": "x",
+              "explain": "Ogłoszenie d dotyczy pomocy z języka polskiego w klasach 1–3, a syn ma problem z matematyką. Żadne inne ogłoszenie nie oferuje korepetycji z matematyki."
             },
             {
               "id": "cz2-5",
               "text": "Wynająłeś/Wynajęłaś puste mieszkanie i masz mało pieniędzy na meble.",
-              "answer": "f"
+              "answer": "f",
+              "explain": "W ogłoszeniu f ktoś oddaje „za darmo kanapę i dwa fotele”. To dobre rozwiązanie dla osoby z pustym mieszkaniem i małym budżetem."
             }
           ]
         },
@@ -496,7 +528,8 @@
                 "kupuje mieszkańcom nasiona."
               ],
               "answer": "b",
-              "passage": "Ogród społeczny na Zatorzu\n\nWiosną na osiedlu Zatorze, na nieużywanym terenie za szkołą, powstał ogród społeczny. Mieszkańcy dostali od miasta ziemię i narzędzia, a nasiona i sadzonki kupują sami. Każdy, kto chce, może dostać jedną grządkę — wystarczy zapisać się u koordynatorki ogrodu, pani Haliny Sroki. Warzywa należą do osób, które je posadziły, ale zioła rosną we wspólnej części i może je zbierać każdy. W soboty o dziesiątej odbywają się wspólne prace, na które zapraszamy także dzieci. Na razie w ogrodzie jest trzydzieści grządek i wszystkie są już zajęte, ale miasto obiecało w przyszłym roku powiększyć teren."
+              "passage": "Ogród społeczny na Zatorzu\n\nWiosną na osiedlu Zatorze, na nieużywanym terenie za szkołą, powstał ogród społeczny. Mieszkańcy dostali od miasta ziemię i narzędzia, a nasiona i sadzonki kupują sami. Każdy, kto chce, może dostać jedną grządkę — wystarczy zapisać się u koordynatorki ogrodu, pani Haliny Sroki. Warzywa należą do osób, które je posadziły, ale zioła rosną we wspólnej części i może je zbierać każdy. W soboty o dziesiątej odbywają się wspólne prace, na które zapraszamy także dzieci. Na razie w ogrodzie jest trzydzieści grządek i wszystkie są już zajęte, ale miasto obiecało w przyszłym roku powiększyć teren.",
+              "explain": "W tekście: „Mieszkańcy dostali od miasta ziemię i narzędzia, a nasiona i sadzonki kupują sami”. Ogród powstał na nieużywanym terenie za szkołą, nie na boisku."
             },
             {
               "id": "cz3-2",
@@ -506,7 +539,8 @@
                 "każdy może zbierać warzywa z każdej grządki.",
                 "pracują tylko dorośli."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "W tekście: „trzydzieści grządek i wszystkie są już zajęte”. Warzywa należą do osób, które je posadziły; wspólne są tylko zioła."
             },
             {
               "id": "cz3-3",
@@ -517,7 +551,8 @@
                 "emerytowani nauczyciele."
               ],
               "answer": "b",
-              "passage": "Smartfon bez tajemnic\n\nW Domu Kultury „Słonecznik” ruszył bezpłatny kurs obsługi smartfona dla osób po sześćdziesiątym piątym roku życia. Uczestnicy uczą się, jak robić zdjęcia, wysyłać wiadomości, rozmawiać przez wideo z rodziną i kupować bilety w aplikacji. Nauczycielami są uczniowie pobliskiego liceum, którzy w ten sposób odbywają wolontariat. Kurs trwa sześć tygodni, zajęcia są raz w tygodniu. Każdy przychodzi z własnym telefonem — dom kultury nie ma sprzętu do wypożyczenia. Zapisy przyjmuje sekretariat, także telefonicznie."
+              "passage": "Smartfon bez tajemnic\n\nW Domu Kultury „Słonecznik” ruszył bezpłatny kurs obsługi smartfona dla osób po sześćdziesiątym piątym roku życia. Uczestnicy uczą się, jak robić zdjęcia, wysyłać wiadomości, rozmawiać przez wideo z rodziną i kupować bilety w aplikacji. Nauczycielami są uczniowie pobliskiego liceum, którzy w ten sposób odbywają wolontariat. Kurs trwa sześć tygodni, zajęcia są raz w tygodniu. Każdy przychodzi z własnym telefonem — dom kultury nie ma sprzętu do wypożyczenia. Zapisy przyjmuje sekretariat, także telefonicznie.",
+              "explain": "W tekście: „Nauczycielami są uczniowie pobliskiego liceum”, czyli licealiści, którzy robią wolontariat."
             },
             {
               "id": "cz3-4",
@@ -527,7 +562,8 @@
                 "płacą za materiały.",
                 "przynoszą na zajęcia swoje telefony."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "W tekście: „Każdy przychodzi z własnym telefonem — dom kultury nie ma sprzętu do wypożyczenia”. Kurs jest bezpłatny."
             },
             {
               "id": "cz3-5",
@@ -538,7 +574,8 @@
                 "przyszedł od dyrekcji."
               ],
               "answer": "a",
-              "passage": "Stołówka bez plastiku\n\nOd nowego semestru w stołówce Szkoły Podstawowej nr 7 nie ma już jednorazowych kubków i sztućców. Dzieci piją wodę z dzbanków stojących na stołach, a każdy uczeń dostał od szkoły metalowy bidon. Pomysł wyszedł od samorządu uczniowskiego, który policzył, że szkoła wyrzucała co miesiąc ponad dwa tysiące plastikowych kubków. Rodzice na początku obawiali się, że naczynia będą źle umyte, dlatego dyrekcja kupiła nową zmywarkę. W przyszłym roku uczniowie chcą zorganizować wymianę używanych podręczników."
+              "passage": "Stołówka bez plastiku\n\nOd nowego semestru w stołówce Szkoły Podstawowej nr 7 nie ma już jednorazowych kubków i sztućców. Dzieci piją wodę z dzbanków stojących na stołach, a każdy uczeń dostał od szkoły metalowy bidon. Pomysł wyszedł od samorządu uczniowskiego, który policzył, że szkoła wyrzucała co miesiąc ponad dwa tysiące plastikowych kubków. Rodzice na początku obawiali się, że naczynia będą źle umyte, dlatego dyrekcja kupiła nową zmywarkę. W przyszłym roku uczniowie chcą zorganizować wymianę używanych podręczników.",
+              "explain": "W tekście: „Pomysł wyszedł od samorządu uczniowskiego”. Rodzice i dyrekcja zajęli się tylko sprawą zmywania naczyń."
             },
             {
               "id": "cz3-6",
@@ -548,7 +585,8 @@
                 "rodzice martwili się o czystość naczyń.",
                 "uczniowie dostali metalowe bidony."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "W tekście: „Rodzice obawiali się, że naczynia będą źle umyte, dlatego dyrekcja kupiła nową zmywarkę”. O zepsutej zmywarce nie ma mowy."
             }
           ]
         },
@@ -573,17 +611,20 @@
             {
               "id": "cz4-1",
               "text": "W sobotę można wejść na halę basenową o 19:30.",
-              "answer": "fałsz"
+              "answer": "fałsz",
+              "explain": "W sobotę pływalnia jest czynna do 20:00, a wejść na halę można „najpóźniej 45 minut przed zamknięciem”, czyli do 19:15. O 19:30 jest za późno."
             },
             {
               "id": "cz4-2",
               "text": "Dziewięcioletnie dziecko może pływać na basenie samo.",
-              "answer": "fałsz"
+              "answer": "fałsz",
+              "explain": "Według §3 „dzieci do lat 10 mogą przebywać na basenie wyłącznie pod opieką osoby dorosłej”. Dziewięciolatek nie może pływać sam."
             },
             {
               "id": "cz4-3",
               "text": "Klient, który był na pływalni 70 minut, musi dopłacić.",
-              "answer": "prawda"
+              "answer": "prawda",
+              "explain": "Bilet jest ważny 60 minut, a za każdą dodatkową minutę płaci się 1 zł (§5). Po 70 minutach klient musi dopłacić."
             }
           ]
         }
@@ -650,49 +691,57 @@
               "id": "el1-1",
               "n": 42,
               "kind": "bank",
-              "answer": "a"
+              "answer": "a",
+              "explain": "„Słucham” to typowa formuła, którą rejestratorka zaczyna rozmowę telefoniczną po nazwie przychodni."
             },
             {
               "id": "el1-2",
               "n": 43,
               "kind": "bank",
-              "answer": "b"
+              "answer": "b",
+              "explain": "Pacjentka mówi, po co dzwoni: „chciałabym się zapisać do lekarza”. Forma żeńska „chciałabym” pasuje do pacjentki."
             },
             {
               "id": "el1-3",
               "n": 44,
               "kind": "bank",
-              "answer": "g"
+              "answer": "g",
+              "explain": "Przed numerem PESEL potrzebna jest prośba: „proszę podać” + biernik. To grzeczna forma w rejestracji."
             },
             {
               "id": "el1-4",
               "n": 45,
               "kind": "bank",
-              "answer": "e"
+              "answer": "e",
+              "explain": "„Najwcześniej w czwartek” znaczy, że wcześniejszego terminu nie ma. Dlatego pacjentka reaguje: „Dopiero w czwartek?”."
             },
             {
               "id": "el1-5",
               "n": 46,
               "kind": "bank",
-              "answer": "d"
+              "answer": "d",
+              "explain": "„A może jest coś w środę?” to grzeczne pytanie o inną możliwość. „Wcześniej” nie pasuje, bo środa i tak jest przed czwartkiem, a pytanie brzmiałoby nienaturalnie."
             },
             {
               "id": "el1-6",
               "n": 47,
               "kind": "bank",
-              "answer": "c"
+              "answer": "c",
+              "explain": "„Niestety” wyraża negatywną informację: w środę nie ma terminu. Rejestratorka zaraz proponuje inną godzinę."
             },
             {
               "id": "el1-7",
               "n": 48,
               "kind": "bank",
-              "answer": "f"
+              "answer": "f",
+              "explain": "„To mi pasuje” to reakcja na proponowany termin; pacjentka wyjaśnia, że kończy pracę o szesnastej."
             },
             {
               "id": "el1-8",
               "n": 49,
               "kind": "bank",
-              "answer": "i"
+              "answer": "i",
+              "explain": "„W porządku” potwierdza ustalenie przed zapisem. „Do widzenia” byłoby za wcześnie, bo rozmowa jeszcze trwa."
             }
           ]
         },
@@ -714,7 +763,8 @@
                 "Zwracałam",
                 "Zwrócę"
               ],
-              "answer": "Zwracam"
+              "answer": "Zwracam",
+              "explain": "„Zwracam się do Państwa w sprawie…” to stała formuła na początku oficjalnego e-maila, w czasie teraźniejszym."
             },
             {
               "id": "el2-2",
@@ -725,7 +775,8 @@
                 "z",
                 "po"
               ],
-              "answer": "od"
+              "answer": "od",
+              "explain": "Przedział czasu wyrażamy parą „od… do…”: od 15:00 do 18:00."
             },
             {
               "id": "el2-3",
@@ -736,7 +787,8 @@
                 "kilka",
                 "kilkoma"
               ],
-              "answer": "kilku"
+              "answer": "kilku",
+              "explain": "„Dorośli” to grupa męskoosobowa, więc po „około” i w parze z „dwunastu dzieci” używamy formy „kilku dorosłych” (dopełniacz)."
             },
             {
               "id": "el2-4",
@@ -747,7 +799,8 @@
                 "czy",
                 "żeby"
               ],
-              "answer": "że"
+              "answer": "że",
+              "explain": "Po „przeczytałam” podajemy fakt, więc spójnik „że”. „Żeby” wyraża cel lub prośbę, a „czy” pytanie."
             },
             {
               "id": "el2-5",
@@ -758,7 +811,8 @@
                 "że",
                 "ile"
               ],
-              "answer": "czy"
+              "answer": "czy",
+              "explain": "Po „chciałabym zapytać” pytanie typu tak/nie wprowadza spójnik „czy”."
             },
             {
               "id": "el2-6",
@@ -769,7 +823,8 @@
                 "osobny",
                 "osobnego"
               ],
-              "answer": "osobno"
+              "answer": "osobno",
+              "explain": "Czasownik „zamówić” określa przysłówek: zamówić go osobno. „Osobny/osobnego” to przymiotniki i wymagają rzeczownika."
             },
             {
               "id": "el2-7",
@@ -780,7 +835,8 @@
                 "od",
                 "do"
               ],
-              "answer": "na"
+              "answer": "na",
+              "explain": "Mówimy „alergia na coś” — przyimek „na” + biernik: alergia na orzechy."
             },
             {
               "id": "el2-8",
@@ -791,7 +847,8 @@
                 "od kiedy",
                 "za ile"
               ],
-              "answer": "do kiedy"
+              "answer": "do kiedy",
+              "explain": "Zaliczkę wpłaca się w określonym terminie, więc pytamy o termin końcowy: „do kiedy trzeba ją wpłacić”."
             },
             {
               "id": "el2-9",
@@ -802,7 +859,8 @@
                 "kontaktuje się",
                 "skontaktował się"
               ],
-              "answer": "kontaktować się"
+              "answer": "kontaktować się",
+              "explain": "Po „najlepiej” w zdaniu bezosobowym używamy bezokolicznika: najlepiej kontaktować się ze mną mailowo."
             },
             {
               "id": "el2-10",
@@ -813,7 +871,8 @@
                 "odpowiedzi",
                 "odpowiadać"
               ],
-              "answer": "odpowiedź"
+              "answer": "odpowiedź",
+              "explain": "Formuła „Z góry dziękuję za odpowiedź”: „dziękować za” + biernik, a biernik od „odpowiedź” ma tę samą formę."
             }
           ]
         }

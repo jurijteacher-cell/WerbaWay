@@ -55,7 +55,8 @@
         "inny pokój albo późniejszy termin.",
         "nocleg w innym hotelu."
        ],
-       "answer": "b"
+       "answer": "b",
+       "explain": "Recepcja mówi: „Możemy dać panu pokój od strony parku w tej samej cenie albo pokój z widokiem na rzekę, ale dopiero od niedzieli”. To inny pokój albo późniejszy termin. O zwrocie pieniędzy ani o innym hotelu nie ma mowy."
       },
       {
        "id": "sl1-2",
@@ -65,7 +66,8 @@
         "wysłał mu dokumenty mailem.",
         "sam poprowadził spotkanie."
        ],
-       "answer": "c"
+       "answer": "c",
+       "explain": "Marcin pyta: „Spotkanie z klientem o dziesiątej jest aktualne — poprowadzisz je sam?”. Spotkanie nie jest odwołane, a dokumenty Marcin już wysłał Igorowi mailem."
       },
       {
        "id": "sl1-3",
@@ -75,7 +77,8 @@
         "musi jutro przyjść na badania.",
         "jest poważnie chory."
        ],
-       "answer": "a"
+       "answer": "a",
+       "explain": "W gabinecie mówią: „kot ma za dużą wagę, więc lekarz zaleca specjalną karmę”. Wyniki są w porządku, więc kot nie jest poważnie chory, a kontrola jest za trzy miesiące, nie jutro."
       },
       {
        "id": "sl1-4",
@@ -85,7 +88,8 @@
         "kupić tańsze bilety na grudzień.",
         "wymienić bilety albo dostać zwrot pieniędzy."
        ],
-       "answer": "c"
+       "answer": "c",
+       "explain": "Kasjerka mówi: „Może pani wymienić bilety na spektakl dwudziestego grudnia albo dostać zwrot pieniędzy na konto”. Sobotni spektakl jest odwołany, a o tańszych biletach nie ma mowy."
       }
      ]
     },
@@ -111,7 +115,8 @@
        "kind": "tf",
        "stem": "Za zameldowanie trzeba zapłacić.",
        "answer": "fałsz",
-       "passage": "Rozmowa 1 · zadania 5–6"
+       "passage": "Rozmowa 1 · zadania 5–6",
+       "explain": "Urzędniczka mówi: „Samo zameldowanie jest bezpłatne”. 17 złotych płaci się tylko za zaświadczenie, a mężczyzna go nie potrzebuje."
       },
       {
        "id": "sl2-2",
@@ -121,14 +126,16 @@
         "w urzędzie wojewódzkim.",
         "u właściciela mieszkania."
        ],
-       "answer": "b"
+       "answer": "b",
+       "explain": "Na pytanie o kartę pobytu urzędniczka odpowiada: „Nie u nas — w urzędzie wojewódzkim”. Dlatego nie w tym samym urzędzie."
       },
       {
        "id": "sl2-3",
        "kind": "tf",
        "stem": "Goście będą siedzieć na górze.",
        "answer": "fałsz",
-       "passage": "Rozmowa 2 · zadania 7–8"
+       "passage": "Rozmowa 2 · zadania 7–8",
+       "explain": "Sala na górze jest tylko po schodach, a teściowa ma chorą nogę. Klientka wybiera stół na dole o dwudziestej: „W takim razie bierzemy dwudziestą”."
       },
       {
        "id": "sl2-4",
@@ -138,14 +145,16 @@
         "musi zamówić deser w restauracji.",
         "zapłaci dwadzieścia złotych."
        ],
-       "answer": "c"
+       "answer": "c",
+       "explain": "Kelner mówi o torcie: „Oczywiście. Pobieramy tylko dwadzieścia złotych za podanie”. Klientka może przynieść własny tort, ale zapłaci 20 zł."
       },
       {
        "id": "sl2-5",
        "kind": "tf",
        "stem": "Pasażerka ma pociąg za dwadzieścia minut.",
        "answer": "prawda",
-       "passage": "Rozmowa 3 · zadania 9–10"
+       "passage": "Rozmowa 3 · zadania 9–10",
+       "explain": "Pasażerka mówi na początku: „Mam pociąg za dwadzieścia minut”. To zdanie jest prawdziwe."
       },
       {
        "id": "sl2-6",
@@ -155,14 +164,16 @@
         "most jest zamknięty.",
         "pasażerka chce kupić kawę."
        ],
-       "answer": "a"
+       "answer": "a",
+       "explain": "Kierowca mówi: „O tej porze na moście są korki. Pojadę inaczej, przez obwodnicę”. Most nie jest zamknięty, a kawa nie jest powodem zmiany drogi."
       },
       {
        "id": "sl2-7",
        "kind": "tf",
        "stem": "Ola ma już wejściówki do Muzeum Narodowego.",
        "answer": "prawda",
-       "passage": "Rozmowa 4 · zadania 11–12"
+       "passage": "Rozmowa 4 · zadania 11–12",
+       "explain": "Ola mówi o wejściówkach do Muzeum Narodowego: „Już wzięłam dwie”. Ma je więc już teraz."
       },
       {
        "id": "sl2-8",
@@ -172,14 +183,16 @@
         "trzeba długo czekać w kolejce.",
         "w nocy jest zamknięte."
        ],
-       "answer": "b"
+       "answer": "b",
+       "explain": "Ola mówi o planetarium: „Tam są ogromne kolejki, ludzie stoją po dwie godziny”. Powodem jest długie czekanie, nie cena ani godziny otwarcia."
       },
       {
        "id": "sl2-9",
        "kind": "tf",
        "stem": "Sąsiadka będzie w sobotę wieczorem w domu.",
        "answer": "fałsz",
-       "passage": "Rozmowa 5 · zadania 13–14"
+       "passage": "Rozmowa 5 · zadania 13–14",
+       "explain": "Sąsiadka mówi: „w sobotę jadę do córki do Opola, wracam dopiero w niedzielę”. W sobotę wieczorem nie będzie w domu."
       },
       {
        "id": "sl2-10",
@@ -189,7 +202,8 @@
         "podleje sąsiadce kwiaty.",
         "zaprosi sąsiadkę na parapetówkę."
        ],
-       "answer": "a"
+       "answer": "a",
+       "explain": "Sąsiadka prosi: „mógłby pan w sobotę rano wyjąć gazetę z mojej skrzynki?”, a sąsiad się zgadza. Kwiatów nie trzeba podlewać — zrobi to sama w piątek."
       }
      ]
     },
@@ -215,7 +229,8 @@
         "dostał w spadku dużo książek.",
         "stracił pracę w laboratorium."
        ],
-       "answer": "b"
+       "answer": "b",
+       "explain": "Pan Jerzy mówi: „Kiedy zmarł mój wujek, zostawił mi kilka tysięcy książek”. To spadek. Nie marzył o księgarni („Przypadkiem”), a z laboratorium odszedł sam."
       },
       {
        "id": "sl3-2",
@@ -225,7 +240,8 @@
         "przychodzą sprzedawać swoje zbiory.",
         "szukają tanich podręczników i książek z dzieciństwa."
        ],
-       "answer": "c"
+       "answer": "c",
+       "explain": "Pan Jerzy mówi: „Studenci szukają tanich podręczników, a młodzi rodzice — książek, które sami czytali w dzieciństwie”. Swoje zbiory sprzedają raczej starsi klienci."
       },
       {
        "id": "sl3-3",
@@ -235,7 +251,8 @@
         "zabrał panu Jerzemu większość klientów.",
         "służy mu tylko do kontaktu z klientami z Kanady."
        ],
-       "answer": "a"
+       "answer": "a",
+       "explain": "Pan Jerzy mówi: „Dziś połowę książek sprzedaję przez internet, klientom w całej Polsce, a nawet w Kanadzie”. Internet to więc ważne miejsce sprzedaży, nie tylko Kanada."
       },
       {
        "id": "sl3-4",
@@ -245,7 +262,8 @@
         "był w pudle, które ktoś oddał za darmo.",
         "pan Jerzy znalazł w bibliotece wujka."
        ],
-       "answer": "b"
+       "answer": "b",
+       "explain": "Atlas był „w pudle ze starymi kryminałami”, a „ktoś oddał to pudło za darmo, bo myślał, że to śmieci”. Pan Jerzy go nie kupił."
       },
       {
        "id": "sl3-5",
@@ -255,7 +273,8 @@
         "przekazał muzeum.",
         "oddał osobie, która przyniosła pudło."
        ],
-       "answer": "c"
+       "answer": "c",
+       "explain": "Pan Jerzy mówi: „Sprzedałem atlas do muzeum, a pieniądze oddałem tej osobie”, czyli osobie, która oddała pudło. Muzeum kupiło atlas, nie dostało pieniędzy."
       },
       {
        "id": "sl3-6",
@@ -265,7 +284,8 @@
         "pomaga w weekendy i prowadzi sklep internetowy.",
         "pracuje w muzeum."
        ],
-       "answer": "b"
+       "answer": "b",
+       "explain": "Pan Jerzy mówi: „Córka pomaga mi w weekendy i prowadzi nasz sklep internetowy”. Czy przejmie antykwariat, nie wiadomo: „to będzie jej decyzja”."
       }
      ]
     },
@@ -318,17 +338,20 @@
       {
        "id": "sl4-1",
        "text": "Opinia 21",
-       "answer": "d"
+       "answer": "d",
+       "explain": "Słuchacz mówi, że tydzień w Chorwacji „kosztował nas mniej niż tydzień w pensjonacie nad polskim morzem”. Zdanie b jest za mocne: mówi tylko o jednym wyjeździe, nie „zawsze”."
       },
       {
        "id": "sl4-2",
        "text": "Opinia 22",
-       "answer": "f"
+       "answer": "f",
+       "explain": "Słuchaczka mówi: „Dla mnie wakacje to poznawanie innych ludzi i kultur” i co roku wybiera kraj, którego nie zna. To pasuje do zdania f."
       },
       {
        "id": "sl4-3",
        "text": "Opinia 23",
-       "answer": "c"
+       "answer": "c",
+       "explain": "Słuchacz mówi: „Nieważne gdzie, ważne z kim”. Było super z przyjaciółmi, chociaż padało — liczy się towarzystwo."
       }
      ]
     }
@@ -379,22 +402,26 @@
       {
        "id": "cz1-1",
        "answer": "e",
-       "text": "Droga Ciociu,\nbardzo dziękuję za piękny szalik, który przyszedł pocztą na moje urodziny. Ma mój ulubiony kolor i jest bardzo ciepły — noszę go codziennie. Mam nadzieję, że zobaczymy się w święta.\nCałuję\nZosia"
+       "text": "Droga Ciociu,\nbardzo dziękuję za piękny szalik, który przyszedł pocztą na moje urodziny. Ma mój ulubiony kolor i jest bardzo ciepły — noszę go codziennie. Mam nadzieję, że zobaczymy się w święta.\nCałuję\nZosia",
+       "explain": "Zosia pisze: „bardzo dziękuję za piękny szalik, który przyszedł pocztą na moje urodziny”. To podziękowanie za prezent."
       },
       {
        "id": "cz1-2",
        "answer": "c",
-       "text": "Szanowni Klienci,\nod 1 grudnia nasza piekarnia będzie otwarta od poniedziałku do soboty w godzinach 6:00–19:00. W niedziele i święta będzie zamknięta. Zamówienia na świąteczne torty przyjmujemy do 15 grudnia.\nPiekarnia „Kłos”"
+       "text": "Szanowni Klienci,\nod 1 grudnia nasza piekarnia będzie otwarta od poniedziałku do soboty w godzinach 6:00–19:00. W niedziele i święta będzie zamknięta. Zamówienia na świąteczne torty przyjmujemy do 15 grudnia.\nPiekarnia „Kłos”",
+       "explain": "Piekarnia informuje, że „od 1 grudnia” będzie otwarta w nowych godzinach (6:00–19:00), a w niedziele zamknięta. To zmiana godzin otwarcia."
       },
       {
        "id": "cz1-3",
        "answer": "a",
-       "text": "Cześć Aniu,\nprzepraszam, że wczoraj nie przyszłam na Twoje spotkanie. Autobus zepsuł się w połowie drogi, a telefon mi się rozładował, więc nie mogłam nawet zadzwonić. Może spotkamy się w czwartek? Kawa na mój koszt!\nBasia"
+       "text": "Cześć Aniu,\nprzepraszam, że wczoraj nie przyszłam na Twoje spotkanie. Autobus zepsuł się w połowie drogi, a telefon mi się rozładował, więc nie mogłam nawet zadzwonić. Może spotkamy się w czwartek? Kawa na mój koszt!\nBasia",
+       "explain": "Basia pisze: „przepraszam, że wczoraj nie przyszłam na Twoje spotkanie” i wyjaśnia dlaczego. To przeprosiny za nieobecność."
       },
       {
        "id": "cz1-4",
        "answer": "b",
-       "text": "Panie Piotrze,\nzastanawiam się, czy zapisać syna na angielski do szkoły językowej, czy na lekcje prywatne. Pana córka chodziła do tej szkoły przez dwa lata — co Pan o niej sądzi? Czy warto? Będę wdzięczna za kilka słów.\nPozdrawiam\nIrena Kos"
+       "text": "Panie Piotrze,\nzastanawiam się, czy zapisać syna na angielski do szkoły językowej, czy na lekcje prywatne. Pana córka chodziła do tej szkoły przez dwa lata — co Pan o niej sądzi? Czy warto? Będę wdzięczna za kilka słów.\nPozdrawiam\nIrena Kos",
+       "explain": "Pani Irena pyta: „co Pan o niej sądzi? Czy warto?”. Prosi o opinię przed decyzją, czyli o radę."
       }
      ]
     },
@@ -455,27 +482,32 @@
       {
        "id": "cz2-1",
        "text": "Mówisz płynnie po ukraińsku i chcesz pracować z domu.",
-       "answer": "d"
+       "answer": "d",
+       "explain": "Ogłoszenie d: tłumaczenia z ukraińskiego na polski i „praca zdalna”, czyli z domu."
       },
       {
        "id": "cz2-2",
        "text": "Dobrze znasz niemiecki i w lipcu chcesz pokazywać turystom miasto.",
-       "answer": "e"
+       "answer": "e",
+       "explain": "Muzeum szuka przewodników „na sezon letni” i wymaga języka niemieckiego lub angielskiego. Lipiec to lato, a przewodnik pokazuje turystom miasto."
       },
       {
        "id": "cz2-3",
        "text": "Masz wolne popołudnia i lubisz dzieci.",
-       "answer": "c"
+       "answer": "c",
+       "explain": "Ogłoszenie c: opieka nad dwoma chłopcami w godzinach 15:00–18:00, czyli po południu."
       },
       {
        "id": "cz2-4",
        "text": "Szukasz pracy na nocną zmianę.",
-       "answer": "x"
+       "answer": "x",
+       "explain": "Żadne ogłoszenie nie proponuje pracy w nocy. Hotel „Pod Zamkiem” przyjmuje ludzi tylko na „zmiany poranne”, dlatego x."
       },
       {
        "id": "cz2-5",
        "text": "Potrzebujesz pieniędzy na święta i w grudniu możesz pracować codziennie po osiem godzin.",
-       "answer": "f"
+       "answer": "f",
+       "explain": "Sklep sportowy szuka sprzedawcy na „cały grudzień, pełny etat”. Pełny etat to około ośmiu godzin dziennie, a grudzień to okres świąteczny."
       }
      ]
     },
@@ -496,7 +528,8 @@
         "seniorzy sami założyli grupę teatralną."
        ],
        "answer": "b",
-       "passage": "Teatr seniora\n\nOd dwóch lat w Domu Kultury „Arka” działa teatr, w którym grają wyłącznie osoby po sześćdziesiątce. Zaczęło się od ogłoszenia w gazecie: reżyserka Marta Bielska szukała chętnych do jednego przedstawienia. Przyszło czterdzieści osób, a po premierze nikt nie chciał kończyć. Dziś grupa spotyka się dwa razy w tygodniu i gra trzy spektakle w roku. Aktorzy sami szyją kostiumy i robią dekoracje. — Najtrudniejsze jest zapamiętanie tekstu, ale właśnie dlatego to świetny trening dla głowy — mówi pan Zdzisław, który ma osiemdziesiąt dwa lata."
+       "passage": "Teatr seniora\n\nOd dwóch lat w Domu Kultury „Arka” działa teatr, w którym grają wyłącznie osoby po sześćdziesiątce. Zaczęło się od ogłoszenia w gazecie: reżyserka Marta Bielska szukała chętnych do jednego przedstawienia. Przyszło czterdzieści osób, a po premierze nikt nie chciał kończyć. Dziś grupa spotyka się dwa razy w tygodniu i gra trzy spektakle w roku. Aktorzy sami szyją kostiumy i robią dekoracje. — Najtrudniejsze jest zapamiętanie tekstu, ale właśnie dlatego to świetny trening dla głowy — mówi pan Zdzisław, który ma osiemdziesiąt dwa lata.",
+       "explain": "W tekście: „reżyserka Marta Bielska szukała chętnych do jednego przedstawienia”. Grupy nie założyli sami seniorzy ani dom kultury — zostali po premierze."
       },
       {
        "id": "cz3-2",
@@ -506,7 +539,8 @@
         "jest dla niego za trudna.",
         "daje mu dodatkowe pieniądze."
        ],
-       "answer": "a"
+       "answer": "a",
+       "explain": "Pan Zdzisław mówi, że trudno zapamiętać tekst, „ale właśnie dlatego to świetny trening dla głowy”. Chodzi o ćwiczenie pamięci, nie o to, że jest za trudno."
       },
       {
        "id": "cz3-3",
@@ -517,7 +551,8 @@
         "wypożyczyć rower tylko na weekend."
        ],
        "answer": "b",
-       "passage": "Rowerem z dziećmi\n\nMiasto Zalesie wypożycza mieszkańcom rowery towarowe, tak zwane cargo. Na takim rowerze można przewieźć dwoje dzieci albo duże zakupy. Rodziny mogą wypożyczyć rower na tydzień za darmo, żeby sprawdzić, czy taki środek transportu im odpowiada. Miasto chce w ten sposób zmniejszyć liczbę samochodów w centrum. Po roku programu okazało się, że co piąta rodzina, która testowała rower, kupiła potem własny. Uczestnicy najczęściej narzekali na brak bezpiecznych parkingów dla dużych rowerów."
+       "passage": "Rowerem z dziećmi\n\nMiasto Zalesie wypożycza mieszkańcom rowery towarowe, tak zwane cargo. Na takim rowerze można przewieźć dwoje dzieci albo duże zakupy. Rodziny mogą wypożyczyć rower na tydzień za darmo, żeby sprawdzić, czy taki środek transportu im odpowiada. Miasto chce w ten sposób zmniejszyć liczbę samochodów w centrum. Po roku programu okazało się, że co piąta rodzina, która testowała rower, kupiła potem własny. Uczestnicy najczęściej narzekali na brak bezpiecznych parkingów dla dużych rowerów.",
+       "explain": "W tekście: „Rodziny mogą wypożyczyć rower na tydzień za darmo”. Nie ma mowy o tańszym zakupie ani o wypożyczeniu tylko na weekend."
       },
       {
        "id": "cz3-4",
@@ -527,7 +562,8 @@
         "przewóz dzieci.",
         "brak bezpiecznych miejsc do parkowania."
        ],
-       "answer": "c"
+       "answer": "c",
+       "explain": "Ostatnie zdanie: „Uczestnicy najczęściej narzekali na brak bezpiecznych parkingów dla dużych rowerów”. Wypożyczenie jest darmowe, więc koszt nie był problemem."
       },
       {
        "id": "cz3-5",
@@ -538,7 +574,8 @@
         "komputer przy wejściu nie działa."
        ],
        "answer": "a",
-       "passage": "Język migowy w urzędzie\n\nOd tego roku w Urzędzie Dzielnicy Północ osoby niesłyszące mogą załatwić swoje sprawy w polskim języku migowym. Wystarczy wcześniej zarezerwować wizytę przez stronę internetową — wtedy na spotkanie przychodzi tłumacz. Bez rezerwacji można połączyć się z tłumaczem przez wideo z komputera przy wejściu. Urzędnicy przeszli też krótki kurs podstawowych zwrotów. — Nie chodzi o to, żeby każdy urzędnik znał język migowy, ale żeby każdy wiedział, jak pomóc — mówi kierowniczka urzędu."
+       "passage": "Język migowy w urzędzie\n\nOd tego roku w Urzędzie Dzielnicy Północ osoby niesłyszące mogą załatwić swoje sprawy w polskim języku migowym. Wystarczy wcześniej zarezerwować wizytę przez stronę internetową — wtedy na spotkanie przychodzi tłumacz. Bez rezerwacji można połączyć się z tłumaczem przez wideo z komputera przy wejściu. Urzędnicy przeszli też krótki kurs podstawowych zwrotów. — Nie chodzi o to, żeby każdy urzędnik znał język migowy, ale żeby każdy wiedział, jak pomóc — mówi kierowniczka urzędu.",
+       "explain": "W tekście: „Wystarczy wcześniej zarezerwować wizytę przez stronę internetową — wtedy na spotkanie przychodzi tłumacz”. Bez rezerwacji jest tylko tłumacz przez wideo."
       },
       {
        "id": "cz3-6",
@@ -548,7 +585,8 @@
         "każdy urzędnik powinien wiedzieć, jak pomóc.",
         "tłumacz przez wideo nie jest potrzebny."
        ],
-       "answer": "b"
+       "answer": "b",
+       "explain": "Kierowniczka mówi: „Nie chodzi o to, żeby każdy urzędnik znał język migowy, ale żeby każdy wiedział, jak pomóc”. Dlatego a jest odwrotnością jej słów."
       }
      ]
     },
@@ -573,17 +611,20 @@
       {
        "id": "cz4-1",
        "text": "Termin zwrotu książki można przedłużyć dwa razy.",
-       "answer": "fałsz"
+       "answer": "fałsz",
+       "explain": "§3: termin można przedłużyć „jeden raz, o kolejny miesiąc”. Dwa razy nie można."
       },
       {
        "id": "cz4-2",
        "text": "Za trzy dni opóźnienia z jedną książką płaci się 60 groszy.",
-       "answer": "prawda"
+       "answer": "prawda",
+       "explain": "§4: 20 groszy za każdy dzień opóźnienia za każdą książkę. Trzy dni × 20 groszy = 60 groszy."
       },
       {
        "id": "cz4-3",
        "text": "Zgubioną książkę można odkupić.",
-       "answer": "prawda"
+       "answer": "prawda",
+       "explain": "§5: zgubioną książkę czytelnik „musi odkupić albo zapłacić jej równowartość”. Odkupienie jest więc możliwe."
       }
      ]
     }
@@ -650,49 +691,57 @@
        "id": "el1-42",
        "n": 42,
        "kind": "bank",
-       "answer": "b"
+       "answer": "b",
+       "explain": "Na początku rozmowy telefonicznej mówimy, po co dzwonimy: „dzwonię w sprawie + dopełniacz” (w sprawie kursu)."
       },
       {
        "id": "el1-43",
        "n": 43,
        "kind": "bank",
-       "answer": "g"
+       "answer": "g",
+       "explain": "Pytanie o istnienie czegoś: „Czy jest jakaś grupa…?”. „Czy” otwiera pytanie typu tak/nie."
       },
       {
        "id": "el1-44",
        "n": 44,
        "kind": "bank",
-       "answer": "e"
+       "answer": "e",
+       "explain": "Klient pyta o dołączenie mimo przeszkody — jedne zajęcia już były. Kontrast wyraża „chociaż”, a nie „dlatego że” (przyczyna)."
       },
       {
        "id": "el1-45",
        "n": 45,
        "kind": "bank",
-       "answer": "j"
+       "answer": "j",
+       "explain": "Recepcjonistka zgadza się i dodaje, że instruktor pokaże kroki. Pasuje uprzejma zgoda: „Nie ma problemu”."
       },
       {
        "id": "el1-46",
        "n": 46,
        "kind": "bank",
-       "answer": "a"
+       "answer": "a",
+       "explain": "Konstrukcja „coś zależy od + dopełniacz”: cena zależy od liczby zajęć."
       },
       {
        "id": "el1-47",
        "n": 47,
        "kind": "bank",
-       "answer": "c"
+       "answer": "c",
+       "explain": "„Płacić z góry” znaczy zapłacić przed zajęciami, za całość. To przeciwieństwo „po każdych zajęciach” w tym samym pytaniu."
       },
       {
        "id": "el1-48",
        "n": 48,
        "kind": "bank",
-       "answer": "f"
+       "answer": "f",
+       "explain": "Klient podejmuje decyzję na podstawie tego, co usłyszał. Taki wniosek wprowadza „w takim razie” (= więc, skoro tak)."
       },
       {
        "id": "el1-49",
        "n": 49,
        "kind": "bank",
-       "answer": "i"
+       "answer": "i",
+       "explain": "Na końcu recepcjonistka dodaje praktyczną informację o butach. Dodatkową uwagę wprowadza „przy okazji”."
       }
      ]
     },
@@ -714,7 +763,8 @@
         "Zwracałem",
         "Zwrócę"
        ],
-       "answer": "Zwracam"
+       "answer": "Zwracam",
+       "explain": "Stała formuła w oficjalnym e-mailu: „Zwracam się z prośbą o…” — czas teraźniejszy, bo prośba jest teraz, w tym liście."
       },
       {
        "id": "el2-51",
@@ -725,7 +775,8 @@
         "potrzebne",
         "potrzebna"
        ],
-       "answer": "potrzebny"
+       "answer": "potrzebny",
+       "explain": "„Dokument” to rodzaj męski, więc „dokument jest mi potrzebny”. „Potrzebne” i „potrzebna” to formy dla rodzaju nijakiego i żeńskiego."
       },
       {
        "id": "el2-52",
@@ -736,7 +787,8 @@
         "przez",
         "w"
        ],
-       "answer": "od"
+       "answer": "od",
+       "explain": "Początek czynności, która trwa do dziś: „pracuję od marca”. „Przez” mówi tylko, jak długo, np. przez dwa lata."
       },
       {
        "id": "el2-53",
@@ -747,7 +799,8 @@
         "nieokreślonego",
         "nieokreśloną"
        ],
-       "answer": "nieokreślony"
+       "answer": "nieokreślony",
+       "explain": "Stałe wyrażenie „umowa na czas nieokreślony”: po „na” biernik, a „czas” to rodzaj męski nieżywotny, więc forma jak mianownik."
       },
       {
        "id": "el2-54",
@@ -758,7 +811,8 @@
         "piątek",
         "piątkiem"
        ],
-       "answer": "piątku"
+       "answer": "piątku",
+       "explain": "Przyimek „do” wymaga dopełniacza: do piątku (kto? co? — piątek; kogo? czego? — piątku)."
       },
       {
        "id": "el2-55",
@@ -769,7 +823,8 @@
         "przez",
         "za"
        ],
-       "answer": "w ciągu"
+       "answer": "w ciągu",
+       "explain": "„W ciągu ostatnich trzydziestu dni” oznacza okres, w którym coś się stało. Po „w ciągu” jest dopełniacz."
       },
       {
        "id": "el2-56",
@@ -780,7 +835,8 @@
         "osobisty",
         "osoby"
        ],
-       "answer": "osobiście"
+       "answer": "osobiście",
+       "explain": "Potrzebny jest przysłówek, bo opisuje czasownik „odebrać”: jak? — osobiście. „Osobisty” to przymiotnik."
       },
       {
        "id": "el2-57",
@@ -791,7 +847,8 @@
         "Chociaż",
         "Dlatego"
        ],
-       "answer": "Jeśli"
+       "answer": "Jeśli",
+       "explain": "To warunek: jeśli coś będzie niemożliwe, to proszę o skan. „Chociaż” wyraża kontrast, a „dlatego” skutek."
       },
       {
        "id": "el2-58",
@@ -802,7 +859,8 @@
         "kłopotu",
         "kłopotem"
        ],
-       "answer": "kłopot"
+       "answer": "kłopot",
+       "explain": "„Przepraszać za + biernik”: przepraszam za kłopot. „Kłopot” to rodzaj męski nieżywotny, więc biernik = mianownik."
       },
       {
        "id": "el2-59",
@@ -813,7 +871,8 @@
         "poważanie",
         "poważaniu"
        ],
-       "answer": "poważaniem"
+       "answer": "poważaniem",
+       "explain": "Oficjalne zakończenie listu: „Z poważaniem” — po „z” w tym znaczeniu jest narzędnik."
       }
      ]
     }

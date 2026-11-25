@@ -55,7 +55,8 @@
                 "zapytać o zgodę na dodatkową naprawę.",
                 "przełożyć przegląd na następny tydzień."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Pan Mazur mówi, że trzeba wymienić klocki hamulcowe za dodatkowe 280 zł, i prosi: „Proszę oddzwonić, czy się pan zgadza”. Auto nie jest jeszcze gotowe — będzie gotowe jutro, jeśli klient się zgodzi."
             },
             {
               "id": "sl1-2",
@@ -65,7 +66,8 @@
                 "zarezerwował stolik w restauracji.",
                 "powiedział mamie o przyjęciu."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Agata mówi: „ty, proszę, odbierz tort z cukierni na Długiej”. Restauracja jest za droga, więc stolika nie rezerwują, a mamie nie wolno nic mówić: „ani słowa”."
             },
             {
               "id": "sl1-3",
@@ -75,7 +77,8 @@
                 "zawieźć dzieci do Krakowa własnym samochodem.",
                 "zapłacić sześćdziesiąt złotych i oddać zgodę do poniedziałku."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Wychowawczyni prosi o podpisanie zgody i wpłatę 60 zł: „Zgodę i pieniądze proszę oddać do przyszłego poniedziałku”. Dzieci jadą autokarem spod szkoły, nie samochodem rodziców."
             },
             {
               "id": "sl1-4",
@@ -85,7 +88,8 @@
                 "zajęcia w środę się nie odbędą.",
                 "lektorka zmieniła salę."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Bartek mówi, że lektorka jest chora, więc „zajęcia w środę się nie odbędą”. Kurs trwa dalej (jest zadanie domowe i spotkanie w sobotę), a o zmianie sali nie ma mowy."
             }
           ]
         },
@@ -111,7 +115,8 @@
               "kind": "tf",
               "stem": "Studentka ma papierową legitymację studencką.",
               "answer": "fałsz",
-              "passage": "Rozmowa 1 · zadania 5–6"
+              "passage": "Rozmowa 1 · zadania 5–6",
+              "explain": "Studentka mówi: „Mam, ale jest już elektroniczna, w telefonie”. Jej legitymacja nie jest papierowa, więc zdanie jest fałszywe."
             },
             {
               "id": "sl2-2",
@@ -121,14 +126,16 @@
                 "kosztuje czterdzieści dziewięć złotych.",
                 "jest tańszy tylko w drugiej klasie."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Kasjer mówi: „Bilet ulgowy kosztuje czterdzieści dziewięć złotych”. 79 zł to cena biletu pełnego (normalnego), nie ulgowego."
             },
             {
               "id": "sl2-3",
               "kind": "tf",
               "stem": "Remont kuchni zacznie się w przyszły wtorek.",
               "answer": "fałsz",
-              "passage": "Rozmowa 2 · zadania 7–8"
+              "passage": "Rozmowa 2 · zadania 7–8",
+              "explain": "Wykonawca mówi, że remont zaczyna się „w przyszły poniedziałek”. We wtorek przyjdzie tylko hydraulik."
             },
             {
               "id": "sl2-4",
@@ -138,14 +145,16 @@
                 "kupi meble w innym sklepie.",
                 "przełoży remont na później."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Wykonawca mówi, że trzeba zakręcić wodę w całym pionie i uprzedzić sąsiadów. Klientka odpowiada: „wywieszę ogłoszenie na klatce schodowej”. Meble przyjadą z magazynu, a remontu nikt nie przekłada."
             },
             {
               "id": "sl2-5",
               "kind": "tf",
               "stem": "Ewa nie może iść dziś na jogę, ponieważ ma zebranie w pracy.",
               "answer": "prawda",
-              "passage": "Rozmowa 3 · zadania 9–10"
+              "passage": "Rozmowa 3 · zadania 9–10",
+              "explain": "Ewa mówi: „Muszę zostać w pracy do szóstej, bo szef wymyślił zebranie”. Zajęcia są o 17:30, więc nie zdąży — zdanie jest prawdziwe."
             },
             {
               "id": "sl2-6",
@@ -155,14 +164,16 @@
                 "nie pójdzie na zajęcia.",
                 "zapłaci za pojedyncze wejście."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Ewa mówi: „Wezmę pojedyncze wejście, zobaczę, czy mi się spodoba”. Karnet miesięczny za 140 zł to tylko propozycja Moniki, a na zajęcia w czwartek Ewa idzie."
             },
             {
               "id": "sl2-7",
               "kind": "tf",
               "stem": "Nowy szef pracuje w firmie Tomka od kilku miesięcy.",
               "answer": "fałsz",
-              "passage": "Rozmowa 4 · zadania 11–12"
+              "passage": "Rozmowa 4 · zadania 11–12",
+              "explain": "Tomek mówi, że nowy szef pracuje „od poniedziałku”, czyli od kilku dni, a nie od kilku miesięcy."
             },
             {
               "id": "sl2-8",
@@ -172,14 +183,16 @@
                 "dostał już podwyżkę.",
                 "chce zmienić pracę."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Szef obiecał Tomkowi, że „będzie mógł pracować dwa dni w tygodniu z domu”, czyli częściowo. Podwyżki jeszcze nie ma — rozmowa o wynagrodzeniach będzie za miesiąc."
             },
             {
               "id": "sl2-9",
               "kind": "tf",
               "stem": "Klient dostanie colę za darmo.",
               "answer": "prawda",
-              "passage": "Rozmowa 5 · zadania 13–14"
+              "passage": "Rozmowa 5 · zadania 13–14",
+              "explain": "Pracownica mówi: „przy dwóch dużych pizzach dostaje pan litr coli gratis”. Gratis znaczy za darmo, a klient zamawia dwie duże pizze."
             },
             {
               "id": "sl2-10",
@@ -189,7 +202,8 @@
                 "około dziewiętnastej czterdzieści.",
                 "dopiero po dwudziestej."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Jest 18:40, a czas oczekiwania to około godziny, więc pizza będzie „około dziewiętnastej czterdzieści”. 18:40 to godzina zamówienia, a 20:00 — przyjście gości."
             }
           ]
         },
@@ -215,7 +229,8 @@
                 "po wypadku kolegi chciał uczyć innych bezpiecznej jazdy.",
                 "stracił prawo jazdy kierowcy ciężarówki."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Pan Roman mówi: „po wypadku kolegi postanowiłem uczyć innych, żeby jeździli bezpieczniej”. Nie mówi o marzeniu z dzieciństwa ani o utracie prawa jazdy."
             },
             {
               "id": "sl3-2",
@@ -225,7 +240,8 @@
                 "boją się jazdy w mieście.",
                 "są bardziej cierpliwi niż starsi."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Instruktor mówi: „Młodzi szybko łapią technikę, ale mają za dużo pewności siebie”. Strach przed ruchem w mieście i cierpliwość to cechy starszych kursantów."
             },
             {
               "id": "sl3-3",
@@ -235,7 +251,8 @@
                 "kursanci nie umieją parkować.",
                 "kursanci się stresują."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Pan Roman mówi, że kursantom „nie brakuje umiejętności, tylko opanowania. Stres robi swoje”. Problem z parkowaniem to skutek stresu (trzęsące się ręce), a nie główna przyczyna."
             },
             {
               "id": "sl3-4",
@@ -245,7 +262,8 @@
                 "parkowanie równoległe.",
                 "ruszanie pod górę."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Instruktor mówi: „najwięcej punktów karnych dostaje się za to, że ktoś nie patrzy w lusterka”. Parkowania i ruszania pod górę ludzie tylko najbardziej się boją."
             },
             {
               "id": "sl3-5",
@@ -255,7 +273,8 @@
                 "trzydzieści godzin jazdy.",
                 "dziewięćdziesiąt godzin jazdy."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "W nagraniu: „Kurs obejmuje trzydzieści godzin jazdy”. Liczba 90 dotyczy ceny jednej godziny (około 90 zł), a nie liczby godzin."
             },
             {
               "id": "sl3-6",
@@ -265,7 +284,8 @@
                 "przestanie pracować.",
                 "będzie uczyć osoby, które boją się prowadzić."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Pan Roman mówi: „nie przestanę zupełnie. Chcę uczyć w weekendy ludzi, którzy po latach boją się wsiąść za kierownicę”. O własnej szkole jazdy nic nie mówi."
             }
           ]
         },
@@ -318,17 +338,20 @@
             {
               "id": "sl4-1",
               "text": "Opinia 21",
-              "answer": "b"
+              "answer": "b",
+              "explain": "Słuchacz mówi, że ubrania woli przymierzyć, bo zamówiona kurtka była za duża: „wolę zobaczyć towar na własne oczy”. To pasuje do zdania b."
             },
             {
               "id": "sl4-2",
               "text": "Opinia 22",
-              "answer": "c"
+              "answer": "c",
+              "explain": "Słuchaczka pracuje w sklepie osiedlowym i apeluje, żeby robić zakupy „u sąsiadów, a nie tylko w wielkich sieciach”, bo to one dają pracę ludziom z okolicy — to wsparcie lokalnych sklepów."
             },
             {
               "id": "sl4-3",
               "text": "Opinia 23",
-              "answer": "d"
+              "answer": "d",
+              "explain": "Słuchacz mówi: „W internecie w kilka minut sprawdzam, gdzie jest najtaniej” i oszczędza na sprzęcie. Chodzi o niższą cenę, a nie o oszczędność czasu i dojazdów."
             }
           ]
         }
@@ -379,22 +402,26 @@
             {
               "id": "cz1-1",
               "answer": "f",
-              "text": "Szanowni Mieszkańcy,\nw czwartek w godzinach 9:00–15:00 nie będzie prądu w budynkach przy ulicy Lipowej 2–10. Wyłączenie jest związane z pracami na stacji transformatorowej. Prosimy o wyłączenie wrażliwych urządzeń i o zabranie z windy osób, które mogą w niej utknąć.\nZakład Energetyczny"
+              "text": "Szanowni Mieszkańcy,\nw czwartek w godzinach 9:00–15:00 nie będzie prądu w budynkach przy ulicy Lipowej 2–10. Wyłączenie jest związane z pracami na stacji transformatorowej. Prosimy o wyłączenie wrażliwych urządzeń i o zabranie z windy osób, które mogą w niej utknąć.\nZakład Energetyczny",
+              "explain": "Zakład Energetyczny informuje, że w czwartek w godzinach 9:00–15:00 „nie będzie prądu” przy ulicy Lipowej, z powodu prac na stacji transformatorowej."
             },
             {
               "id": "cz1-2",
               "answer": "c",
-              "text": "Droga Pani Haniu,\nbardzo dziękuję, że w zeszłym tygodniu zaopiekowała się Pani Burkiem, kiedy musiałam pilnie jechać do szpitala. Pies jest zdrowy i zadowolony, a ja mogłam być spokojna. W piątek wpadnę do Pani z ciastem!\nEwa"
+              "text": "Droga Pani Haniu,\nbardzo dziękuję, że w zeszłym tygodniu zaopiekowała się Pani Burkiem, kiedy musiałam pilnie jechać do szpitala. Pies jest zdrowy i zadowolony, a ja mogłam być spokojna. W piątek wpadnę do Pani z ciastem!\nEwa",
+              "explain": "Ewa pisze: „bardzo dziękuję, że […] zaopiekowała się Pani Burkiem”, kiedy była w szpitalu. To podziękowanie za pomoc, a nie zaproszenie — ciasto to tylko gest wdzięczności."
             },
             {
               "id": "cz1-3",
               "answer": "b",
-              "text": "Cześć Marek,\nniestety muszę przełożyć nasze spotkanie z wtorku na czwartek, bo szef zwołał na wtorek zebranie. Czy w czwartek o 17:00 byłoby Ci pasowało? Jeśli nie, daj znać, znajdziemy inny termin.\nPozdrawiam, Adam"
+              "text": "Cześć Marek,\nniestety muszę przełożyć nasze spotkanie z wtorku na czwartek, bo szef zwołał na wtorek zebranie. Czy w czwartek o 17:00 by Ci pasowało? Jeśli nie, daj znać, znajdziemy inny termin.\nPozdrawiam, Adam",
+              "explain": "Adam pisze: „muszę przełożyć nasze spotkanie z wtorku na czwartek”. Przełożyć znaczy zmienić termin."
             },
             {
               "id": "cz1-4",
               "answer": "d",
-              "text": "Dzień dobry,\nw zeszłym tygodniu kupiłem w Państwa sklepie internetowym czajnik elektryczny, numer zamówienia 4821. Po dwóch dniach przestał działać. Chciałbym go zwrócić i otrzymać pieniądze. Proszę o informację, jak mam odesłać towar.\nZ poważaniem\nJan Kuliński"
+              "text": "Dzień dobry,\nw zeszłym tygodniu kupiłem w Państwa sklepie internetowym czajnik elektryczny, numer zamówienia 4821. Po dwóch dniach przestał działać. Chciałbym go zwrócić i otrzymać pieniądze. Proszę o informację, jak mam odesłać towar.\nZ poważaniem\nJan Kuliński",
+              "explain": "Pan Kuliński pisze, że czajnik „po dwóch dniach przestał działać” i chce go zwrócić i dostać pieniądze. Skarga na zepsuty towar to reklamacja."
             }
           ]
         },
@@ -455,27 +482,32 @@
             {
               "id": "cz2-1",
               "text": "Chcesz urządzić urodziny dla trzydziestu osób i szukasz sali.",
-              "answer": "d"
+              "answer": "d",
+              "explain": "Ogłoszenie d: sala „na urodziny i spotkania rodzinne — do 40 osób”. Trzydzieści osób to mniej niż 40, więc sala wystarczy."
             },
             {
               "id": "cz2-2",
               "text": "Masz 70 lat i nie wiesz, jak napisać odwołanie od decyzji w sprawie emerytury.",
-              "answer": "e"
+              "answer": "e",
+              "explain": "Ogłoszenie e oferuje „bezpłatne porady prawne dla seniorów”. Odwołanie od decyzji w sprawie emerytury to sprawa prawna, a 70-latek jest seniorem."
             },
             {
               "id": "cz2-3",
               "text": "Grasz na perkusji i szukasz zespołu.",
-              "answer": "c"
+              "answer": "c",
+              "explain": "Ogłoszenie c: zespół „Dobre Dni” szuka perkusisty. Chór „Harmonia” (g) szuka śpiewaków, nie muzyków grających na instrumencie."
             },
             {
               "id": "cz2-4",
               "text": "Chcesz tanio kupić kilka książek do czytania na wakacje.",
-              "answer": "h"
+              "answer": "h",
+              "explain": "Ogłoszenie h: wyprzedaż książek z biblioteki, „wszystkie po 2 zł” — to tani sposób, żeby kupić kilka książek."
             },
             {
               "id": "cz2-5",
               "text": "Szukasz kursu języka hiszpańskiego dla początkujących.",
-              "answer": "x"
+              "answer": "x",
+              "explain": "Na tablicy są kursy fotografii, ceramiki i tańca, ale nie ma żadnego kursu języka obcego, więc żadne ogłoszenie nie pasuje."
             }
           ]
         },
@@ -496,7 +528,8 @@
                 "pracują tylko wieczorami."
               ],
               "answer": "b",
-              "passage": "Kasy samoobsługowe w supermarkecie\n\nOd roku w supermarkecie przy ulicy Długiej działa osiem kas samoobsługowych. Klient sam skanuje produkty i płaci kartą lub gotówką. Sieć zapewnia, że nikt nie stracił pracy: kasjerzy zostali przeszkoleni i pracują teraz na sali sprzedaży, gdzie pomagają klientom. Kasy samoobsługowe nie nadają się jednak do dużych zakupów, bo przy kilkudziesięciu produktach klienci wolą tradycyjną kasę. Najchętniej korzystają z nich osoby, które w porze obiadowej kupują kilka rzeczy na szybko. Sklep planuje zainstalować jeszcze cztery kasy do końca roku."
+              "passage": "Kasy samoobsługowe w supermarkecie\n\nOd roku w supermarkecie przy ulicy Długiej działa osiem kas samoobsługowych. Klient sam skanuje produkty i płaci kartą lub gotówką. Sieć zapewnia, że nikt nie stracił pracy: kasjerzy zostali przeszkoleni i pracują teraz na sali sprzedaży, gdzie pomagają klientom. Kasy samoobsługowe nie nadają się jednak do dużych zakupów, bo przy kilkudziesięciu produktach klienci wolą tradycyjną kasę. Najchętniej korzystają z nich osoby, które w porze obiadowej kupują kilka rzeczy na szybko. Sklep planuje zainstalować jeszcze cztery kasy do końca roku.",
+              "explain": "W tekście: kasjerzy „zostali przeszkoleni i pracują teraz na sali sprzedaży, gdzie pomagają klientom”. Sieć zapewnia, że „nikt nie stracił pracy”."
             },
             {
               "id": "cz3-2",
@@ -506,7 +539,8 @@
                 "klienci robiący duże zakupy.",
                 "osoby starsze."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Tekst mówi: „Najchętniej korzystają z nich osoby, które w porze obiadowej kupują kilka rzeczy na szybko”. Przy dużych zakupach klienci wolą tradycyjną kasę."
             },
             {
               "id": "cz3-3",
@@ -517,7 +551,8 @@
                 "bilet jest bezpłatny."
               ],
               "answer": "b",
-              "passage": "Pociągiem do pracy\n\nPan Andrzej mieszka w Kutnie, a pracuje w Warszawie. Codziennie jeździ pociągiem, bo samochodem stałby w korkach przez ponad dwie godziny. W pociągu spędza godzinę i czterdzieści minut w jedną stronę i ten czas wykorzystuje na czytanie i naukę angielskiego. „Na początku byłem zmęczony, ale teraz to mój najspokojniejszy czas w ciągu dnia” — mówi. Bilet miesięczny kosztuje go sto osiemdziesiąt złotych, czyli mniej niż benzyna. Jedyny problem to opóźnienia, zimą pociągi spóźniają się częściej. Wtedy pan Andrzej dzwoni do szefa, a ten rozumie sytuację, bo firma pozwala na elastyczny początek pracy."
+              "passage": "Pociągiem do pracy\n\nPan Andrzej mieszka w Kutnie, a pracuje w Warszawie. Codziennie jeździ pociągiem, bo samochodem stałby w korkach przez ponad dwie godziny. W pociągu spędza godzinę i czterdzieści minut w jedną stronę i ten czas wykorzystuje na czytanie i naukę angielskiego. „Na początku byłem zmęczony, ale teraz to mój najspokojniejszy czas w ciągu dnia” — mówi. Bilet miesięczny kosztuje go sto osiemdziesiąt złotych, czyli mniej niż benzyna. Jedyny problem to opóźnienia, zimą pociągi spóźniają się częściej. Wtedy pan Andrzej dzwoni do szefa, a ten rozumie sytuację, bo firma pozwala na elastyczny początek pracy.",
+              "explain": "Pan Andrzej jeździ pociągiem, „bo samochodem stałby w korkach przez ponad dwie godziny”, a pociąg jedzie godzinę i 40 minut. Bilet nie jest bezpłatny — kosztuje 180 zł."
             },
             {
               "id": "cz3-4",
@@ -527,7 +562,8 @@
                 "jest droższa niż dojazd samochodem.",
                 "daje mu czas na czytanie i naukę."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Czas w pociągu pan Andrzej „wykorzystuje na czytanie i naukę angielskiego”. Zmęczony był tylko na początku, a bilet jest tańszy niż benzyna."
             },
             {
               "id": "cz3-5",
@@ -538,7 +574,8 @@
                 "są zbyt trudne dla początkujących."
               ],
               "answer": "a",
-              "passage": "Aplikacje do nauki języków\n\nAplikacje do nauki języków obcych są bardzo popularne, ale nauczyciele ostrzegają: same aplikacje nie wystarczą. Dziesięć minut dziennie pomaga zapamiętać słówka, ale nie uczy swobodnej rozmowy. W badaniu, w którym wzięło udział dwustu uczniów szkoły językowej, osoby łączące aplikację z lekcjami z nauczycielem robiły większe postępy niż ci, którzy korzystali tylko z telefonu. Eksperci radzą traktować aplikację jako uzupełnienie, a nie zamiennik kursu. Warto też powtarzać słówka na głos, bo wtedy łatwiej je zapamiętać."
+              "passage": "Aplikacje do nauki języków\n\nAplikacje do nauki języków obcych są bardzo popularne, ale nauczyciele ostrzegają: same aplikacje nie wystarczą. Dziesięć minut dziennie pomaga zapamiętać słówka, ale nie uczy swobodnej rozmowy. W badaniu, w którym wzięło udział dwustu uczniów szkoły językowej, osoby łączące aplikację z lekcjami z nauczycielem robiły większe postępy niż ci, którzy korzystali tylko z telefonu. Eksperci radzą traktować aplikację jako uzupełnienie, a nie zamiennik kursu. Warto też powtarzać słówka na głos, bo wtedy łatwiej je zapamiętać.",
+              "explain": "W tekście: „Dziesięć minut dziennie pomaga zapamiętać słówka, ale nie uczy swobodnej rozmowy”. Aplikacja ma być uzupełnieniem, a nie zamiennikiem lekcji."
             },
             {
               "id": "cz3-6",
@@ -548,7 +585,8 @@
                 "zrezygnować z kursów.",
                 "powtarzać słówka na głos."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Ostatnie zdanie: „Warto też powtarzać słówka na głos, bo wtedy łatwiej je zapamiętać”. Eksperci nie radzą rezygnować z kursów ani używać tylko aplikacji."
             }
           ]
         },
@@ -573,17 +611,20 @@
             {
               "id": "cz4-1",
               "text": "Piętnastolatek może wypożyczyć rower samodzielnie.",
-              "answer": "fałsz"
+              "answer": "fałsz",
+              "explain": "§3: rower mogą wypożyczyć osoby, „które ukończyły 16 lat”. Piętnastolatek może jeździć tylko pod opieką dorosłego, który wypożyczył rower."
             },
             {
               "id": "cz4-2",
               "text": "Za rower oddany poza stacją trzeba zapłacić karę.",
-              "answer": "prawda"
+              "answer": "prawda",
+              "explain": "§4: „Zwrot poza stacją skutkuje karą w wysokości 50 zł”. Zdanie jest więc prawdziwe."
             },
             {
               "id": "cz4-3",
               "text": "Dwadzieścia pięć minut jazdy jest bezpłatne.",
-              "answer": "fałsz"
+              "answer": "fałsz",
+              "explain": "§2: bezpłatne jest tylko „pierwsze 20 minut jazdy”. Po 20 minutach zaczyna się kolejna godzina płatna 4 zł, więc 25 minut nie jest za darmo."
             }
           ]
         }
@@ -650,49 +691,57 @@
               "id": "el1-42",
               "n": 42,
               "kind": "bank",
-              "answer": "a"
+              "answer": "a",
+              "explain": "Pracownik odbiera telefon w firmie. Standardowa formuła to nazwa firmy i „słucham” — znaczy: proszę mówić, w czym mogę pomóc."
             },
             {
               "id": "el1-43",
               "n": 43,
               "kind": "bank",
-              "answer": "b"
+              "answer": "b",
+              "explain": "Po „chciałbym” stoi bezokolicznik: „chciałbym wynająć”. To grzeczna forma prośby; klient jest mężczyzną, więc końcówka -łbym."
             },
             {
               "id": "el1-44",
               "n": 44,
               "kind": "bank",
-              "answer": "c"
+              "answer": "c",
+              "explain": "Pracownik prosi o dane, a po luce stoi biernik („datę”). Pasuje „proszę podać datę” — grzeczna prośba o informację."
             },
             {
               "id": "el1-45",
               "n": 45,
               "kind": "bank",
-              "answer": "d"
+              "answer": "d",
+              "explain": "Zdanie podaje przyczynę rekomendacji: polecam kombi, bo jest tańsze. „Ponieważ” wprowadza przyczynę."
             },
             {
               "id": "el1-46",
               "n": 46,
               "kind": "bank",
-              "answer": "e"
+              "answer": "e",
+              "explain": "„A może są jakieś zniżki?” to uprzejme, ostrożne pytanie. Samo „są jakieś zniżki?” brzmi zbyt ostro, a „a może” zmiękcza pytanie."
             },
             {
               "id": "el1-47",
               "n": 47,
               "kind": "bank",
-              "answer": "f"
+              "answer": "f",
+              "explain": "„Dopiero” znaczy: nie wcześniej, tylko od pewnej granicy. Zniżka jest dopiero przy trzech dniach lub dłużej, a klient bierze tylko dwa."
             },
             {
               "id": "el1-48",
               "n": 48,
               "kind": "bank",
-              "answer": "g"
+              "answer": "g",
+              "explain": "„W takim razie” wprowadza decyzję wynikającą z poprzedniej informacji: zniżka jest za trzy dni, to za długo, więc klient bierze auto na dwie doby."
             },
             {
               "id": "el1-49",
               "n": 49,
               "kind": "bank",
-              "answer": "i"
+              "answer": "i",
+              "explain": "Pracownik dodaje jeszcze jedną informację na końcu rozmowy (kaucja). „Jeszcze muszę pana uprzedzić” znaczy: mam dodatkową sprawę."
             }
           ]
         },
@@ -714,7 +763,8 @@
                 "Piszą",
                 "Pisać"
               ],
-              "answer": "Piszę"
+              "answer": "Piszę",
+              "explain": "Autorka pisze o sobie, więc potrzebna jest 1. osoba liczby pojedynczej: „(ja) piszę”. „Piszą” to oni, a „pisać” to bezokolicznik."
             },
             {
               "id": "el2-51",
@@ -725,7 +775,8 @@
                 "trzy",
                 "trzecim"
               ],
-              "answer": "trzech"
+              "answer": "trzech",
+              "explain": "Po „od” stoi dopełniacz: „od trzech dni” (od czego? od dni). „Trzy” to mianownik/biernik, a „trzecim” to liczebnik porządkowy."
             },
             {
               "id": "el2-52",
@@ -736,7 +787,8 @@
                 "pomagać",
                 "pomocy"
               ],
-              "answer": "pomogło"
+              "answer": "pomogło",
+              "explain": "Po „to nic nie” potrzebna jest osobowa forma czasownika w czasie przeszłym, rodzaj nijaki (to): „to nic nie pomogło”."
             },
             {
               "id": "el2-53",
@@ -747,7 +799,8 @@
                 "prosi",
                 "proszę"
               ],
-              "answer": "prosić"
+              "answer": "prosić",
+              "explain": "Po „chciałabym” stoi bezokolicznik: „chciałabym prosić”. Formy „prosi” i „proszę” są osobowe, więc nie mogą stać po „chciałabym”."
             },
             {
               "id": "el2-54",
@@ -758,7 +811,8 @@
                 "na",
                 "do"
               ],
-              "answer": "w"
+              "answer": "w",
+              "explain": "Z dniami tygodnia używamy przyimka „w” + biernik: „w czwartek”, „w piątek”. Nie mówimy „na czwartek” w znaczeniu: w tym dniu."
             },
             {
               "id": "el2-55",
@@ -769,7 +823,8 @@
                 "koniecznie",
                 "koniecznością"
               ],
-              "answer": "konieczne"
+              "answer": "konieczne",
+              "explain": "Po „to” w zdaniu „Jeśli to …” potrzebny jest przymiotnik w rodzaju nijakim: „jeśli to konieczne”. „Koniecznie” to przysłówek."
             },
             {
               "id": "el2-56",
@@ -780,7 +835,8 @@
                 "że",
                 "aby"
               ],
-              "answer": "czy"
+              "answer": "czy",
+              "explain": "Pytanie zależne typu tak/nie z alternatywą („…poniesie Pan, czy muszę…”) zaczyna się od „czy”: „proszę o informację, czy…”."
             },
             {
               "id": "el2-57",
@@ -791,7 +847,8 @@
                 "żeby",
                 "który"
               ],
-              "answer": "że"
+              "answer": "że",
+              "explain": "Po „jest zapis” podajemy treść tego zapisu, czyli fakt — używamy „że”. „Żeby” wyraża cel lub prośbę, a „który” wymagałby innej budowy zdania."
             },
             {
               "id": "el2-58",
@@ -802,7 +859,8 @@
                 "po",
                 "przez"
               ],
-              "answer": "przed"
+              "answer": "przed",
+              "explain": "„Przed weekendem” (przed + narzędnik) znaczy: zanim zacznie się weekend. Autorka chce naprawy szybko, więc „po” nie ma sensu."
             },
             {
               "id": "el2-59",
@@ -813,7 +871,8 @@
                 "odpowiedzi",
                 "odpowiadać"
               ],
-              "answer": "odpowiedź"
+              "answer": "odpowiedź",
+              "explain": "„Czekać na” łączy się z biernikiem: czekam na szybką odpowiedź. Forma biernika rzeczownika „odpowiedź” jest taka sama jak mianownika."
             }
           ]
         }

@@ -55,7 +55,8 @@
                 "poprosić o podanie adresu sąsiadów.",
                 "poinformować, gdzie można odebrać paczkę."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Kurier mówi: „Zostawiłem ją w punkcie odbioru w kiosku przy ulicy Słowackiego dwanaście”. Nie proponuje nowego terminu doręczenia, a o sąsiadach mówi tylko, że nie mógł tam zostawić paczki."
             },
             {
               "id": "sl1-2",
@@ -65,7 +66,8 @@
                 "poinformować o awarii wody w budynku.",
                 "zaprosić na zebranie mieszkańców."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Pan Lis proponuje środę 8–12 albo czwartek po 16 i prosi: „Proszę o informację do poniedziałku, który termin pani wybiera”. Woda zniknie tylko na godzinę podczas wymiany – to nie awaria."
             },
             {
               "id": "sl1-3",
@@ -75,7 +77,8 @@
                 "przynieść umowę na spotkanie.",
                 "odebrać klienta z dworca."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Monika prosi: „weź, proszę, wydrukowaną umowę w dwóch egzemplarzach”. Prezentację ma ona sama, a klient przyjeżdża pociągiem i spotkanie jest w kawiarni – nikt nie musi go odbierać."
             },
             {
               "id": "sl1-4",
@@ -85,7 +88,8 @@
                 "grupa jest już pełna.",
                 "kurs w planowanym terminie nie ruszy."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Pani Duda mówi, że zgłosiły się tylko trzy osoby, „więc kurs we wrześniu się nie odbędzie”. Następna grupa startuje dopiero w lutym, nie we wrześniu."
             }
           ]
         },
@@ -111,7 +115,8 @@
               "kind": "tf",
               "stem": "Mieszkanie znajduje się w budynku z windą.",
               "answer": "fałsz",
-              "passage": "Rozmowa 1 · zadania 5–6"
+              "passage": "Rozmowa 1 · zadania 5–6",
+              "explain": "Na pytanie o windę właściciel odpowiada: „Niestety nie, to stara kamienica”. Budynek nie ma windy, więc zdanie jest fałszywe."
             },
             {
               "id": "sl2-2",
@@ -121,14 +126,16 @@
                 "nie zgadza się na zwierzęta.",
                 "proponuje oglądanie mieszkania jutro rano."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Właściciel mówi o kocie: „Wtedy kaucja byłaby trochę wyższa – półtora czynszu”. Kota akceptuje (nie przyjąłby tylko psa), a oglądanie proponuje jutro po 18 albo w sobotę rano."
             },
             {
               "id": "sl2-3",
               "kind": "tf",
               "stem": "Kasia wyjeżdża na urlop na dwa tygodnie.",
               "answer": "prawda",
-              "passage": "Rozmowa 2 · zadania 7–8"
+              "passage": "Rozmowa 2 · zadania 7–8",
+              "explain": "Kasia mówi: „Od poniedziałku idę na urlop, na dwa tygodnie”. To dokładnie potwierdza zdanie."
             },
             {
               "id": "sl2-4",
@@ -138,14 +145,16 @@
                 "przygotowała już całą ofertę dla firmy Budmax.",
                 "będzie sprawdzać pocztę podczas urlopu."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Kasia mówi: „maile będę sprawdzać wieczorem, raz dziennie”. Nie chce telefonów, bo w górach nie ma zasięgu, a oferta dla Budmaxu jest tylko „prawie gotowa”."
             },
             {
               "id": "sl2-5",
               "kind": "tf",
               "stem": "Klient decyduje się na karnet roczny.",
               "answer": "fałsz",
-              "passage": "Rozmowa 3 · zadania 9–10"
+              "passage": "Rozmowa 3 · zadania 9–10",
+              "explain": "Klient mówi: „na początek wezmę miesięczny”, bo nie wie, czy będzie miał czas. Nie wybiera karnetu rocznego."
             },
             {
               "id": "sl2-6",
@@ -155,14 +164,16 @@
                 "pierwszy trening z trenerem jest darmowy.",
                 "siłownia jest czynna całą dobę."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Recepcjonistka mówi: „Pierwszy trening jest gratis”. Na jogę trzeba się tylko zapisać przez aplikację, a klub jest czynny od 6 do 23, nie całą dobę."
             },
             {
               "id": "sl2-7",
               "kind": "tf",
               "stem": "Klientka ma zdjęcie paragonu.",
               "answer": "prawda",
-              "passage": "Rozmowa 4 · zadania 11–12"
+              "passage": "Rozmowa 4 · zadania 11–12",
+              "explain": "Klientka mówi, że ma paragon „tylko zdjęcie w telefonie”, a sprzedawca odpowiada, że zdjęcie wystarczy. Zdanie jest prawdziwe."
             },
             {
               "id": "sl2-8",
@@ -172,14 +183,16 @@
                 "od razu wymienia słuchawki na nowe.",
                 "zwraca klientce pieniądze."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Sprzedawca mówi: „Mogę za to pożyczyć pani na ten czas słuchawki zastępcze”. Od razu wymienia tylko w ciągu 7 dni od zakupu, a o zwrocie pieniędzy nie ma mowy."
             },
             {
               "id": "sl2-9",
               "kind": "tf",
               "stem": "Ania i Bartek pojadą w góry w sobotę po południu.",
               "answer": "prawda",
-              "passage": "Rozmowa 5 · zadania 13–14"
+              "passage": "Rozmowa 5 · zadania 13–14",
+              "explain": "Ania proponuje: „Może pojedziemy w sobotę po południu, przenocujemy”, a Bartek odpowiada: „Dobry pomysł”. Plan jest więc taki, że jadą w sobotę po południu."
             },
             {
               "id": "sl2-10",
@@ -189,7 +202,8 @@
                 "kupi jedzenie na drogę.",
                 "zadzwoni do cioci w sprawie noclegu."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Ania mówi: „Zadzwonię do niej, na pewno coś znajdzie” – chodzi o ciocię z pensjonatem. Nocleg nie jest jeszcze zarezerwowany, a jedzenie kupi Bartek."
             }
           ]
         },
@@ -215,7 +229,8 @@
                 "pieczenie pomagało jej odpocząć.",
                 "chciała otworzyć własną firmę."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Joanna mówi, że pieczenie to „jedyna rzecz, przy której naprawdę odpoczywam”. Podkreśla też, że praca w banku była w porządku, więc nie chodziło o niezadowolenie."
             },
             {
               "id": "sl3-2",
@@ -225,7 +240,8 @@
                 "zatrudniła pierwszego pracownika.",
                 "pracowała w innej piekarni."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Joanna mówi: „Przez rok robiłam jedno i drugie. W tygodniu bank, w weekendy pieczenie”. O pracy w innej piekarni ani o zatrudnianiu wtedy ludzi nie mówi."
             },
             {
               "id": "sl3-3",
@@ -235,7 +251,8 @@
                 "znalezienie pracowników.",
                 "załatwienie spraw urzędowych i lokalu."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Joanna mówi: „Chyba nie samo pieczenie, tylko formalności. Sanepid, lokal, przepisy…”. Szukanie lokalu trwało cztery miesiące; pieczenie nie było problemem."
             },
             {
               "id": "sl3-4",
@@ -245,7 +262,8 @@
                 "jest tańszy niż w supermarkecie.",
                 "jest pieczony z mąki z zagranicy."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "Joanna mówi: „Nasz chleb jest dobry nawet po trzech, czterech dniach”. Jest droższy niż w supermarkecie, a mąka pochodzi z lokalnych młynów, nie z zagranicy."
             },
             {
               "id": "sl3-5",
@@ -255,7 +273,8 @@
                 "osoby starsze.",
                 "turyści."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "Joanna mówi: „najwięcej kupują u nas starsze osoby”. Młodych ludzi z Krakowa tylko się spodziewała na początku."
             },
             {
               "id": "sl3-6",
@@ -265,7 +284,8 @@
                 "zatrudnić więcej piekarzy.",
                 "prowadzić warsztaty pieczenia."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Joanna mówi: „Raczej myślę o warsztatach – chcę uczyć ludzi, jak piec chleb w domu”. Drugiej piekarni w Krakowie nie chce, bo boi się, że straci jakość."
             }
           ]
         },
@@ -318,17 +338,20 @@
             {
               "id": "sl4-1",
               "text": "Opinia 21",
-              "answer": "c"
+              "answer": "c",
+              "explain": "Pielęgniarka mówi: „W biurze może to działa, ale u nas po prostu się nie da”. W szpitalu brakuje ludzi, więc w jej zawodzie taki system jest niemożliwy."
             },
             {
               "id": "sl4-2",
               "text": "Opinia 22",
-              "answer": "a"
+              "answer": "a",
+              "explain": "Słuchaczka pracowała po dziesięć godzin dziennie i mówi, że była „tak zmęczona i zdenerwowana”, że w piątek tylko odsypiała. Krótszy tydzień dał jej więcej stresu."
             },
             {
               "id": "sl4-3",
               "text": "Opinia 23",
-              "answer": "e"
+              "answer": "e",
+              "explain": "Właściciel drukarni mówi: „przede wszystkim nikt nie odszedł”, a wcześniej tracił pracowników. Wolny dzień pomaga mu więc zatrzymać ludzi w firmie."
             }
           ]
         }
@@ -379,22 +402,26 @@
             {
               "id": "cz1-1",
               "answer": "d",
-              "text": "Szanowni Mieszkańcy,\ninformujemy, że w czwartek 14 listopada w godzinach 9:00–15:00 w budynku przy ul. Lipowej 7 będą prowadzone prace przy wymianie rur w piwnicy. W tym czasie z kranów nie popłynie ani zimna, ani ciepła woda. Prosimy, aby wcześniej zrobić niewielki zapas i nie włączać pralek ani zmywarek. Za utrudnienia przepraszamy.\nAdministracja Osiedla „Lipowe”"
+              "text": "Szanowni Mieszkańcy,\ninformujemy, że w czwartek 14 listopada w godzinach 9:00–15:00 w budynku przy ul. Lipowej 7 będą prowadzone prace przy wymianie rur w piwnicy. W tym czasie z kranów nie popłynie ani zimna, ani ciepła woda. Prosimy, aby wcześniej zrobić niewielki zapas i nie włączać pralek ani zmywarek. Za utrudnienia przepraszamy.\nAdministracja Osiedla „Lipowe”",
+              "explain": "Administracja pisze, że w czwartek w godz. 9–15 „z kranów nie popłynie ani zimna, ani ciepła woda”. To zapowiedź planowanego wyłączenia wody."
             },
             {
               "id": "cz1-2",
               "answer": "a",
-              "text": "Cześć Marta,\nmam do Ciebie ogromną prośbę. W przyszłą sobotę mój brat bierze ślub, a ja mam wtedy dyżur w sklepie od 8 do 16. Kierowniczka zgodzi się na zmianę grafiku, jeśli ktoś przyjdzie za mnie. Mogłabyś? W zamian wezmę Twoją niedzielę 24 listopada. Daj znać do środy, proszę!\nOla"
+              "text": "Cześć Marta,\nmam do Ciebie ogromną prośbę. W przyszłą sobotę mój brat bierze ślub, a ja mam wtedy dyżur w sklepie od 8 do 16. Kierowniczka zgodzi się na zmianę grafiku, jeśli ktoś przyjdzie za mnie. Mogłabyś? W zamian wezmę Twoją niedzielę 24 listopada. Daj znać do środy, proszę!\nOla",
+              "explain": "Ola ma dyżur w sklepie w dniu ślubu brata i pyta Martę, czy przyjdzie za nią: „Mogłabyś?”. To prośba o zastępstwo w pracy."
             },
             {
               "id": "cz1-3",
               "answer": "e",
-              "text": "Cześć Kuba,\njeszcze raz wielkie dzięki za niedzielę! Bez Ciebie i Twojego busa przeprowadzka trwałaby cały tydzień, a tak w jeden dzień wszystko było na miejscu. Szafa stoi, regały wiszą, a kot już znalazł swoje miejsce na parapecie. Jak tylko się rozpakuję, robię parapetówkę – jesteś pierwszy na liście gości!\nPiotrek"
+              "text": "Cześć Kuba,\njeszcze raz wielkie dzięki za niedzielę! Bez Ciebie i Twojego busa przeprowadzka trwałaby cały tydzień, a tak w jeden dzień wszystko było na miejscu. Szafa stoi, regały wiszą, a kot już znalazł swoje miejsce na parapecie. Jak tylko się rozpakuję, robię parapetówkę – jesteś pierwszy na liście gości!\nPiotrek",
+              "explain": "Piotrek pisze: „jeszcze raz wielkie dzięki za niedzielę!” – Kuba pomógł mu busem w przeprowadzce. To podziękowanie za pomoc."
             },
             {
               "id": "cz1-4",
               "answer": "b",
-              "text": "Szanowni Państwo,\nw tym roku firma Transmet obchodzi dziesięciolecie. Z tej okazji serdecznie zapraszamy wszystkich pracowników wraz z osobami towarzyszącymi na uroczystą kolację, która odbędzie się 6 grudnia o godz. 19:00 w restauracji „Pod Lipami”. Prosimy o potwierdzenie obecności w dziale kadr do 25 listopada.\nZarząd firmy Transmet"
+              "text": "Szanowni Państwo,\nw tym roku firma Transmet obchodzi dziesięciolecie. Z tej okazji serdecznie zapraszamy wszystkich pracowników wraz z osobami towarzyszącymi na uroczystą kolację, która odbędzie się 6 grudnia o godz. 19:00 w restauracji „Pod Lipami”. Prosimy o potwierdzenie obecności w dziale kadr do 25 listopada.\nZarząd firmy Transmet",
+              "explain": "Firma Transmet „obchodzi dziesięciolecie” i zaprasza pracowników na uroczystą kolację. Dziesięciolecie to jubileusz firmy."
             }
           ]
         },
@@ -455,27 +482,32 @@
             {
               "id": "cz2-1",
               "text": "Niedawno się przeprowadziłeś/przeprowadziłaś i chcesz w wolnym czasie poznać nowych ludzi.",
-              "answer": "c"
+              "answer": "c",
+              "explain": "Klub „Nowi w mieście” organizuje wieczory gier i wycieczki rowerowe, „każdy jest mile widziany”. To dobre miejsce, żeby w wolnym czasie poznać ludzi."
             },
             {
               "id": "cz2-2",
               "text": "Właściciel mieszkania nie chce oddać Ci kaucji, a Ty nie wiesz, czy pozwala mu na to umowa.",
-              "answer": "e"
+              "answer": "e",
+              "explain": "Ogłoszenie e oferuje bezpłatną pomoc: „sprawdzimy Twoją umowę najmu i pomożemy odzyskać kaucję”. Pasuje dokładnie do problemu z kaucją i umową."
             },
             {
               "id": "cz2-3",
               "text": "Szukasz miejsca w przedszkolu dla pięcioletniej córki od lutego.",
-              "answer": "x"
+              "answer": "x",
+              "explain": "Jedyne ogłoszenie o dzieciach to żłobek dla dzieci od 1 do 3 lat. Córka ma pięć lat i potrzebuje przedszkola, więc żadne ogłoszenie nie pasuje."
             },
             {
               "id": "cz2-4",
               "text": "Pracujesz zdalnie, ale w Twoim bloku trwa remont i w domu jest za głośno.",
-              "answer": "a"
+              "answer": "a",
+              "explain": "W bibliotece są „ciche sale do pracy”, Wi-Fi i gniazdka, a na piętrze coworking. To dobre miejsce do pracy zdalnej, kiedy w domu jest głośno."
             },
             {
               "id": "cz2-5",
               "text": "Od kiedy jeździsz komunikacją miejską, Twój stary samochód tylko stoi na parkingu. Chcesz się go pozbyć.",
-              "answer": "g"
+              "answer": "g",
+              "explain": "Skup aut kupuje auta „każda marka, każdy stan” i płaci gotówką od ręki. Tak można łatwo pozbyć się starego samochodu."
             }
           ]
         },
@@ -496,7 +528,8 @@
                 "trzeba zapłacić za każde wypożyczenie."
               ],
               "answer": "b",
-              "passage": "Biblioteka rzeczy na osiedlu Zielone Wzgórze\n\nNa osiedlu Zielone Wzgórze działa od września pierwsza w mieście biblioteka rzeczy. Zamiast książek można tu wypożyczyć wiertarkę, namiot, maszynę do szycia czy rzutnik. Wszystkie przedmioty podarowali mieszkańcy, którzy mieli w domu rzeczy używane raz w roku. Wypożyczenie jest bezpłatne, ale trzeba się zarejestrować i pokazać dowód osobisty. Rzeczy można zatrzymać najwyżej na tydzień. „Chcemy, żeby ludzie kupowali mniej i więcej się dzielili” – mówi pomysłodawczyni, Anna Lis. Na razie z biblioteki korzysta ponad dwieście rodzin."
+              "passage": "Biblioteka rzeczy na osiedlu Zielone Wzgórze\n\nNa osiedlu Zielone Wzgórze działa od września pierwsza w mieście biblioteka rzeczy. Zamiast książek można tu wypożyczyć wiertarkę, namiot, maszynę do szycia czy rzutnik. Wszystkie przedmioty podarowali mieszkańcy, którzy mieli w domu rzeczy używane raz w roku. Wypożyczenie jest bezpłatne, ale trzeba się zarejestrować i pokazać dowód osobisty. Rzeczy można zatrzymać najwyżej na tydzień. „Chcemy, żeby ludzie kupowali mniej i więcej się dzielili” – mówi pomysłodawczyni, Anna Lis. Na razie z biblioteki korzysta ponad dwieście rodzin.",
+              "explain": "W tekście: „Rzeczy można zatrzymać najwyżej na tydzień”, a wypożyczenie jest bezpłatne. Nic się tu nie kupuje i nie płaci za wypożyczenie."
             },
             {
               "id": "cz3-2",
@@ -506,7 +539,8 @@
                 "kupiło miasto.",
                 "są zupełnie nowe."
               ],
-              "answer": "a"
+              "answer": "a",
+              "explain": "W tekście: „Wszystkie przedmioty podarowali mieszkańcy”, którzy mieli w domu rzeczy używane raz w roku. Nie kupiło ich miasto i nie są nowe."
             },
             {
               "id": "cz3-3",
@@ -517,7 +551,8 @@
                 "pracownicy firmy EkoTrans."
               ],
               "answer": "b",
-              "passage": "Pierwsza pomoc w centrum logistycznym\n\nW ubiegły piątek pracownicy centrum logistycznego firmy EkoTrans w Strykowie wzięli udział w kursie pierwszej pomocy. Zajęcia poprowadzili ratownicy medyczni z łódzkiego pogotowia. Uczestnicy ćwiczyli na fantomach resuscytację i uczyli się obsługi defibrylatora, który od miesiąca wisi przy głównym wejściu. Kurs był dobrowolny, a mimo to zapisało się na niego prawie sto osób – dwa razy więcej, niż planowano. Dlatego firma zorganizuje w styczniu dodatkowy termin."
+              "passage": "Pierwsza pomoc w centrum logistycznym\n\nW ubiegły piątek pracownicy centrum logistycznego firmy EkoTrans w Strykowie wzięli udział w kursie pierwszej pomocy. Zajęcia poprowadzili ratownicy medyczni z łódzkiego pogotowia. Uczestnicy ćwiczyli na fantomach resuscytację i uczyli się obsługi defibrylatora, który od miesiąca wisi przy głównym wejściu. Kurs był dobrowolny, a mimo to zapisało się na niego prawie sto osób – dwa razy więcej, niż planowano. Dlatego firma zorganizuje w styczniu dodatkowy termin.",
+              "explain": "W tekście: „Zajęcia poprowadzili ratownicy medyczni z łódzkiego pogotowia”. Pracownicy EkoTrans byli uczestnikami, a nie prowadzącymi."
             },
             {
               "id": "cz3-4",
@@ -527,7 +562,8 @@
                 "kurs był obowiązkowy dla wszystkich.",
                 "zgłosiło się dużo chętnych."
               ],
-              "answer": "c"
+              "answer": "c",
+              "explain": "Na kurs zapisało się prawie sto osób, „dwa razy więcej, niż planowano. Dlatego firma zorganizuje w styczniu dodatkowy termin”. Kurs był dobrowolny, nie obowiązkowy."
             },
             {
               "id": "cz3-5",
@@ -538,7 +574,8 @@
                 "jest płatna dla obcokrajowców."
               ],
               "answer": "a",
-              "passage": "Dzień otwarty w Szkole Policealnej „Kariera”\n\nSzkoła Policealna „Kariera” zaprasza w sobotę 23 listopada w godzinach 10:00–14:00 na dzień otwarty. Przyszli słuchacze poznają kierunki: technik masażysta, opiekun medyczny, technik administracji i florysta. Nauka w naszej szkole jest bezpłatna – również w trybie zaocznym, w weekendy. W programie dnia otwartego: zajęcia pokazowe w pracowniach oraz rozmowy z nauczycielami i absolwentami. Nie trzeba się wcześniej zapisywać. Obcokrajowcy mogą złożyć dokumenty z tłumaczeniem przysięgłym świadectwa."
+              "passage": "Dzień otwarty w Szkole Policealnej „Kariera”\n\nSzkoła Policealna „Kariera” zaprasza w sobotę 23 listopada w godzinach 10:00–14:00 na dzień otwarty. Przyszli słuchacze poznają kierunki: technik masażysta, opiekun medyczny, technik administracji i florysta. Nauka w naszej szkole jest bezpłatna – również w trybie zaocznym, w weekendy. W programie dnia otwartego: zajęcia pokazowe w pracowniach oraz rozmowy z nauczycielami i absolwentami. Nie trzeba się wcześniej zapisywać. Obcokrajowcy mogą złożyć dokumenty z tłumaczeniem przysięgłym świadectwa.",
+              "explain": "W tekście: „Nauka w naszej szkole jest bezpłatna – również w trybie zaocznym”. Obcokrajowcy potrzebują tylko tłumaczenia świadectwa, nie płacą."
             },
             {
               "id": "cz3-6",
@@ -548,7 +585,8 @@
                 "wziąć udział w zajęciach pokazowych.",
                 "napisać test kwalifikacyjny."
               ],
-              "answer": "b"
+              "answer": "b",
+              "explain": "„W programie dnia otwartego: zajęcia pokazowe w pracowniach” oraz rozmowy z nauczycielami. O egzaminie ani teście w tekście nie ma mowy."
             }
           ]
         },
@@ -573,17 +611,20 @@
             {
               "id": "cz4-1",
               "text": "Goście mieszkańców mogą zostawić samochód na parkingu na cały weekend.",
-              "answer": "fałsz"
+              "answer": "fałsz",
+              "explain": "Według §2 goście mogą parkować „maksymalnie przez 24 godziny”. Cały weekend to więcej niż doba, więc zdanie jest fałszywe."
             },
             {
               "id": "cz4-2",
               "text": "Na miejscu dla osób z niepełnosprawnościami może stanąć tylko samochód z odpowiednią kartą.",
-              "answer": "prawda"
+              "answer": "prawda",
+              "explain": "§3 mówi, że na tych miejscach „mogą parkować wyłącznie pojazdy z ważną kartą parkingową”. „Wyłącznie” znaczy to samo co „tylko”."
             },
             {
               "id": "cz4-3",
               "text": "Mieszkaniec może wynająć swoje miejsce parkingowe znajomemu z innej dzielnicy.",
-              "answer": "fałsz"
+              "answer": "fałsz",
+              "explain": "§4: „Zabrania się wynajmowania miejsc parkingowych osobom, które nie mieszkają na osiedlu”. Znajomy z innej dzielnicy nie mieszka na osiedlu."
             }
           ]
         }
@@ -650,49 +691,57 @@
               "id": "el1-1",
               "n": 42,
               "kind": "bank",
-              "answer": "j"
+              "answer": "j",
+              "explain": "„Mam problem z samochodem” – po „problem” stoi „z” + narzędnik. Klient od razu mówi, po co dzwoni; dalej opisuje, co hałasuje."
             },
             {
               "id": "el1-2",
               "n": 43,
               "kind": "bank",
-              "answer": "b"
+              "answer": "b",
+              "explain": "Recepcjonistka pyta „Kiedy?”, a klient odpowiada „jak najszybciej”, bo codziennie jeździ autem do pracy. „Jak naj- + przysłówek” znaczy: tak bardzo, jak to możliwe."
             },
             {
               "id": "el1-3",
               "n": 44,
               "kind": "bank",
-              "answer": "d"
+              "answer": "d",
+              "explain": "„Chwileczkę” to grzeczna prośba o chwilę czekania przez telefon – recepcjonistka zaraz sprawdza w systemie."
             },
             {
               "id": "el1-4",
               "n": 45,
               "kind": "bank",
-              "answer": "e"
+              "answer": "e",
+              "explain": "„W takim razie” znaczy „jeśli tak jest”: mechanik ma czas po 15, więc klient wybiera czwartek 15:30. To reakcja na informację rozmówcy."
             },
             {
               "id": "el1-5",
               "n": 46,
               "kind": "bank",
-              "answer": "i"
+              "answer": "i",
+              "explain": "„Zależeć od” + dopełniacz: „to zależy od tego, co znajdzie mechanik”. Dlatego dalej stoi „tego” (dopełniacz), a nie „to”."
             },
             {
               "id": "el1-6",
               "n": 47,
               "kind": "bank",
-              "answer": "a"
+              "answer": "a",
+              "explain": "Grzeczna prośba: „Czy mogłaby pani + bezokolicznik” („wysłać mi SMS”). Tryb przypuszczający i forma „pani” są uprzejme wobec obcej osoby."
             },
             {
               "id": "el1-7",
               "n": 48,
               "kind": "bank",
-              "answer": "c"
+              "answer": "c",
+              "explain": "„Nie ma sprawy” to potoczna zgoda na prośbę – recepcjonistka zgadza się wysłać SMS i prosi o numer telefonu."
             },
             {
               "id": "el1-8",
               "n": 49,
               "kind": "bank",
-              "answer": "h"
+              "answer": "h",
+              "explain": "„Do usłyszenia” to typowe pożegnanie w rozmowie telefonicznej: rozmówcy się słyszą, a nie widzą. Pozostałe zwroty z banku nie są pożegnaniem."
             }
           ]
         },
@@ -714,7 +763,8 @@
                 "Piszę w sprawie",
                 "Piszę na sprawę"
               ],
-              "answer": "Piszę w sprawie"
+              "answer": "Piszę w sprawie",
+              "explain": "Stała formuła w listach: „piszę w sprawie” + dopełniacz („problemów”). Konstrukcje „o sprawie” i „na sprawę” nie są poprawne."
             },
             {
               "id": "el2-2",
@@ -725,7 +775,8 @@
                 "zadowolony usługami",
                 "zadowolony na usługi"
               ],
-              "answer": "zadowolony z usług"
+              "answer": "zadowolony z usług",
+              "explain": "„Zadowolony z” + dopełniacz: „zadowolony z usług”. Typowy błąd to kalka „zadowolony usługami” z narzędnikiem."
             },
             {
               "id": "el2-3",
@@ -736,7 +787,8 @@
                 "niezbędnie",
                 "niezbędny"
               ],
-              "answer": "niezbędny"
+              "answer": "niezbędny",
+              "explain": "Po „być” potrzebny jest przymiotnik w mianowniku, zgodny z „internet”: „jest niezbędny”. „Niezbędnie” to przysłówek, a „zbędny” znaczy coś odwrotnego."
             },
             {
               "id": "el2-4",
@@ -747,7 +799,8 @@
                 "słuchałem",
                 "słyszałem"
               ],
-              "answer": "słyszałem"
+              "answer": "słyszałem",
+              "explain": "„Za każdym razem” oznacza powtarzającą się sytuację w przeszłości, dlatego czasownik niedokonany: „słyszałem”. „Usłyszałbym” to tryb przypuszczający."
             },
             {
               "id": "el2-5",
@@ -758,7 +811,8 @@
                 "zadzwonił",
                 "nie zadzwonić"
               ],
-              "answer": "nie zadzwonił"
+              "answer": "nie zadzwonił",
+              "explain": "Po „nikt” w polskim zawsze jest drugie przeczenie: „nikt nie zadzwonił”. Potrzebna jest też osobowa forma czasu przeszłego, nie bezokolicznik."
             },
             {
               "id": "el2-6",
@@ -769,7 +823,8 @@
                 "Z tego powodu",
                 "Mimo to"
               ],
-              "answer": "Z tego powodu"
+              "answer": "Z tego powodu",
+              "explain": "„Z tego powodu” = dlatego: brak internetu jest przyczyną pracy w kawiarni. „Dlatego że” wprowadza przyczynę, a „Mimo to” – kontrast."
             },
             {
               "id": "el2-7",
@@ -780,7 +835,8 @@
                 "przysłanie technikowi",
                 "przysłać technika"
               ],
-              "answer": "przysłanie technika"
+              "answer": "przysłanie technika",
+              "explain": "„Proszę o” + biernik: „proszę o przysłanie technika” (rzeczownik odczasownikowy, a po nim dopełniacz „technika”). Bezokolicznik nie pasuje po „o”."
             },
             {
               "id": "el2-8",
@@ -791,7 +847,8 @@
                 "rachunkiem",
                 "rachunku"
               ],
-              "answer": "rachunku"
+              "answer": "rachunku",
+              "explain": "„Obniżenie” + dopełniacz: „obniżenia rachunku”. Rzeczownik od czasownika łączy się z dopełniaczem (obniżyć rachunek → obniżenie rachunku)."
             },
             {
               "id": "el2-9",
@@ -802,7 +859,8 @@
                 "za którą",
                 "na którą"
               ],
-              "answer": "za którą"
+              "answer": "za którą",
+              "explain": "„Płacić za” + biernik, a „która” odnosi się do „usługi” (rodzaj żeński): „z usługi, za którą płacę”. „Za który” byłoby dla rodzaju męskiego."
             },
             {
               "id": "el2-10",
@@ -813,7 +871,8 @@
                 "Liczę szybką odpowiedź.",
                 "Liczę o szybką odpowiedź."
               ],
-              "answer": "Liczę na szybką odpowiedź."
+              "answer": "Liczę na szybką odpowiedź.",
+              "explain": "„Liczyć na” + biernik: „liczę na szybką odpowiedź”. To typowe zakończenie oficjalnego e-maila; bez przyimka „na” zdanie jest niepoprawne."
             }
           ]
         }
