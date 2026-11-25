@@ -1,0 +1,889 @@
+{
+  "lesson_id": "pl-remont-02-sklep-budowlany",
+  "exercise_type": "fill-in-blank",
+  "title": "Ile czego? Liczebniki i dopełniacz — tekst i gramatyka",
+  "instruction": "Zadania do tekstu (t1–t3), słowa (w1), trzy porcje gramatyki (g1–g8) i zadania zbiorcze (gz).",
+  "estimated_minutes": 40,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "Tekst 1. Ułóż w kolejności",
+      "instruction": "Co było najpierw, a co potem? Klikaj zdania po kolei.",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "Pani Joanna zaakceptowała wycenę i wpłaciła zaliczkę.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "Artur zaczął listę od płytek: dwadzieścia pięć paczek.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Potem dodał pięć worków kleju.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Do tego wpisał dwa pojemniki gruntu i jedno wiadro folii w płynie.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "Potem dodał fugę, silikon i taśmę, a na końcu farbę do sufitu.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Joanna zapytała o dwa stare pędzle i trochę gruntu z garażu.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-7",
+          "prompt": "W sklepie na półce stały tylko trzy worki kleju.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "Tekst 2. Detektyw: ile czego?",
+      "instruction": "Znajdź wskazówki w tekście i wybierz odpowiedź.",
+      "items": [
+        {
+          "id": "t2-1",
+          "text": "Ile paczek płytek kupią Artur i Joanna?",
+          "answer": "Dwadzieścia pięć paczek.",
+          "options": [
+            "Dwadzieścia pięć paczek.",
+            "Trzydzieści pięć paczek.",
+            "Pięć paczek."
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "Artur mówi: razem z zapasem kupimy dwadzieścia pięć paczek."
+        },
+        {
+          "id": "t2-2",
+          "text": "Dlaczego Artur kupuje akurat tyle paczek?",
+          "answer": "Bo w jednej paczce jest półtora metra kwadratowego.",
+          "options": [
+            "Bo w jednej paczce jest półtora metra kwadratowego.",
+            "Bo płytki są bardzo tanie.",
+            "Bo łazienka ma dwadzieścia pięć metrów."
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "…bo w jednej paczce jest półtora metra kwadratowego."
+        },
+        {
+          "id": "t2-3",
+          "text": "Ile kilogramów ma jeden worek kleju?",
+          "answer": "Dwadzieścia pięć kilogramów.",
+          "options": [
+            "Dwadzieścia pięć kilogramów.",
+            "Dwa kilogramy.",
+            "Pięć kilogramów."
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "Każdy worek ma dwadzieścia pięć kilogramów. Dwa kilogramy ma jedno opakowanie fugi."
+        },
+        {
+          "id": "t2-4",
+          "text": "Co zostało w garażu pani Joanny?",
+          "answer": "Dwa stare pędzle i trochę gruntu.",
+          "options": [
+            "Dwa stare pędzle i trochę gruntu.",
+            "Pięć worków kleju.",
+            "Trzy kartusze silikonu."
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "W garażu zostały dwa stare pędzle i trochę gruntu."
+        },
+        {
+          "id": "t2-5",
+          "text": "Dlaczego Artur nie bierze od razu wszystkich worków kleju?",
+          "answer": "Bo na półce stoją tylko trzy worki, a dwa przyjadą jutro.",
+          "options": [
+            "Bo na półce stoją tylko trzy worki, a dwa przyjadą jutro.",
+            "Bo klej jest za drogi.",
+            "Bo pani Joanna nie ma zaliczki."
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "Na półce stoją tylko trzy worki kleju, a pozostałe dwa przyjadą jutro."
+        }
+      ]
+    },
+    {
+      "block_id": "t3",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Tekst 3. Wiadomość pani Joanny: uzupełnij",
+      "instruction": "Wpisz słowo z podpowiedzi we właściwej formie: po liczbie 2–4 w mianowniku mnogim, od 5 w dopełniaczu mnogim, po „trochę” w dopełniaczu liczby pojedynczej.",
+      "text": "Cześć, Aniu!\n\nDziś kupiliśmy w sklepie materiały do łazienki. Artur wziął dwadzieścia pięć {t3-1} płytek, pięć {t3-2} kleju i dwa {t3-3} gruntu. Do wanny i umywalki mamy trzy {t3-4} silikonu. Taśmy uszczelniającej kupiliśmy dziesięć {t3-5}.\n\nFugi jest pięć {t3-6}, każde po dwa kilogramy. W garażu mam jeszcze trochę {t3-7}, ale jest za stary. W sklepie na półce stały tylko trzy {t3-8} kleju, dlatego pozostałe dwa przyjadą jutro.\n\nJoanna",
+      "items": [
+        {
+          "id": "t3-1",
+          "answer": "paczek",
+          "hint": "paczka",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "25 → po „pięć” dopełniacz mnogi: paczka → paczek."
+        },
+        {
+          "id": "t3-2",
+          "answer": "worków",
+          "hint": "worek",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "5 → dopełniacz mnogi: worek → worków."
+        },
+        {
+          "id": "t3-3",
+          "answer": "pojemniki",
+          "hint": "pojemnik",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "2 → mianownik mnogi: pojemnik → pojemniki."
+        },
+        {
+          "id": "t3-4",
+          "answer": "kartusze",
+          "hint": "kartusz",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "3 → mianownik mnogi: kartusz → kartusze."
+        },
+        {
+          "id": "t3-5",
+          "answer": "metrów",
+          "hint": "metr",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "10 → dopełniacz mnogi: metr → metrów."
+        },
+        {
+          "id": "t3-6",
+          "answer": "opakowań",
+          "hint": "opakowanie",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "5 → dopełniacz mnogi: opakowanie → opakowań."
+        },
+        {
+          "id": "t3-7",
+          "answer": "gruntu",
+          "hint": "grunt",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "trochę + materiał → dopełniacz liczby pojedynczej: grunt → gruntu."
+        },
+        {
+          "id": "t3-8",
+          "answer": "worki",
+          "hint": "worek",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "3 → mianownik mnogi: worek → worki."
+        }
+      ]
+    },
+    {
+      "block_id": "w1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "Słowa: co z czym?",
+      "instruction": "Połącz słowo z opisem.",
+      "items": [
+        {
+          "id": "w1-1",
+          "left": "wałek",
+          "right": "do malowania dużych, płaskich ścian",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-2",
+          "left": "pędzel",
+          "right": "do malowania narożników i małych miejsc",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-3",
+          "left": "kartusz",
+          "right": "w nim jest silikon",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-4",
+          "left": "paczka",
+          "right": "w niej leży kilka płytek",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-5",
+          "left": "rabat",
+          "right": "niższa cena przy dużym zamówieniu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-6",
+          "left": "paragon",
+          "right": "kartka ze sklepu z ceną i datą zakupu",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Dwa, dwie, trzy, cztery",
+      "instruction": "Wybierz liczebnik albo wpisz rzeczownik w mianowniku liczby mnogiej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Na półce są ___ worki.",
+          "answer": "dwa",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "dwa",
+            "dwie"
+          ],
+          "explanation": "Worek jest rodzaju męskiego → dwa worki."
+        },
+        {
+          "id": "g1-2",
+          "text": "W kuchni stoją ___ puszki.",
+          "answer": "dwie",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "dwa",
+            "dwie"
+          ],
+          "explanation": "Puszka jest rodzaju żeńskiego → dwie puszki."
+        },
+        {
+          "id": "g1-3",
+          "text": "Przy oknie widzę ___ wiadra.",
+          "answer": "dwa",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "dwa",
+            "dwie"
+          ],
+          "explanation": "Wiadro jest rodzaju nijakiego → dwa wiadra."
+        },
+        {
+          "id": "g1-4",
+          "text": "Mam ___ wiadro.",
+          "answer": "jedno",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "jeden",
+            "jedna",
+            "jedno"
+          ],
+          "explanation": "Wiadro to rodzaj nijaki → jedno wiadro."
+        },
+        {
+          "id": "g1-5",
+          "text": "Kupiłem trzy ___ (kartusz).",
+          "answer": "kartusze",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po trzy: mianownik mnogi. Kartusz → kartusze."
+        },
+        {
+          "id": "g1-6",
+          "text": "W garażu leżą cztery ___ (wałek).",
+          "answer": "wałki",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po cztery: mianownik mnogi. Wałek → wałki."
+        },
+        {
+          "id": "g1-7",
+          "text": "Sprzedawca przyniósł dwie ___ (paczka).",
+          "answer": "paczki",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Paczka → paczki (po k końcówka -i)."
+        },
+        {
+          "id": "g1-8",
+          "text": "Przy ścianie leżą trzy ___ (pędzel).",
+          "answer": "pędzle",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Pędzel → pędzle. Po trzy, cztery używamy mianownika mnogiego."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 3,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Pięć i więcej: dopełniacz mnogi",
+      "instruction": "Wpisz rzeczownik z nawiasu w dopełniaczu liczby mnogiej.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Na półce stoi pięć ___ (worek).",
+          "answer": "worków",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Rodzaj męski, twarda końcówka → -ów, e wypada: worek → worków."
+        },
+        {
+          "id": "g2-2",
+          "text": "W sklepie kupiłem sześć ___ (puszka).",
+          "answer": "puszek",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Rodzaj żeński na -ka → bez końcówki i z e: puszka → puszek."
+        },
+        {
+          "id": "g2-3",
+          "text": "Do wiadra wlałem osiem ___ (litr) wody.",
+          "answer": "litrów",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Rodzaj męski → -ów: litr → litrów."
+        },
+        {
+          "id": "g2-4",
+          "text": "Do łazienki weźmiemy dziesięć ___ (płytka).",
+          "answer": "płytek",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Płytka → płytek (z e przed -k)."
+        },
+        {
+          "id": "g2-5",
+          "text": "Na budowie jest dziewięć ___ (wiadro).",
+          "answer": "wiader",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Rodzaj nijaki na -o → bez końcówki, z e: wiadro → wiader."
+        },
+        {
+          "id": "g2-6",
+          "text": "Zamówiłem siedem ___ (listwa).",
+          "answer": "listew",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Listwa → listew (z e w grupie -tw)."
+        },
+        {
+          "id": "g2-7",
+          "text": "Sprzedawca pokazał siedem ___ (kartusz).",
+          "answer": "kartuszy",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po sz miękka końcówka: kartusz → kartuszy."
+        },
+        {
+          "id": "g2-8",
+          "text": "W kartonie jest jedenaście ___ (opakowanie).",
+          "answer": "opakowań",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Rodzaj nijaki na -ie → -ń: opakowanie → opakowań."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 3,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Dwa czy pięć? Wybierz formę",
+      "instruction": "Wybierz właściwą formę rzeczownika. Patrz na ostatnie słowo liczby.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Zamówiliśmy cztery ___.",
+          "answer": "worki",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "worki",
+            "worków"
+          ],
+          "explanation": "4 → mianownik mnogi."
+        },
+        {
+          "id": "g3-2",
+          "text": "W magazynie jest sześć ___.",
+          "answer": "paczek",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "paczki",
+            "paczek"
+          ],
+          "explanation": "6 → dopełniacz mnogi."
+        },
+        {
+          "id": "g3-3",
+          "text": "Kupiłem dwadzieścia dwa ___.",
+          "answer": "wiadra",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "wiadra",
+            "wiader"
+          ],
+          "explanation": "Patrz na koniec liczby: …dwa → mianownik mnogi."
+        },
+        {
+          "id": "g3-4",
+          "text": "Mamy dwadzieścia pięć ___.",
+          "answer": "puszek",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "puszki",
+            "puszek"
+          ],
+          "explanation": "Koniec liczby: …pięć → dopełniacz mnogi."
+        },
+        {
+          "id": "g3-5",
+          "text": "Kupiłem trzydzieści trzy ___.",
+          "answer": "płytki",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "płytki",
+            "płytek"
+          ],
+          "explanation": "Koniec liczby: …trzy → mianownik mnogi."
+        },
+        {
+          "id": "g3-6",
+          "text": "Weź trzy ___.",
+          "answer": "kartusze",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "kartusze",
+            "kartuszy"
+          ],
+          "explanation": "3 → mianownik mnogi."
+        },
+        {
+          "id": "g3-7",
+          "text": "W sklepie jest sto ___.",
+          "answer": "worków",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "worki",
+            "worków"
+          ],
+          "explanation": "Sto → dopełniacz mnogi."
+        },
+        {
+          "id": "g3-8",
+          "text": "Kupiłem dwadzieścia cztery ___.",
+          "answer": "pędzle",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "pędzle",
+            "pędzli"
+          ],
+          "explanation": "Koniec liczby: …cztery → mianownik mnogi."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 3,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Wyjątki: 12–14, 21 i trudne słowa",
+      "instruction": "Wybierz albo wpisz właściwą formę.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Kupiłem dwanaście ___ (worek).",
+          "answer": "worków",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "worki",
+            "worków"
+          ],
+          "explanation": "12 wygląda jak 2, ale to wyjątek: dwanaście → dopełniacz mnogi."
+        },
+        {
+          "id": "g4-2",
+          "text": "W garażu leży czternaście ___ (puszka).",
+          "answer": "puszek",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "puszki",
+            "puszek"
+          ],
+          "explanation": "14 to wyjątek: dopełniacz mnogi."
+        },
+        {
+          "id": "g4-3",
+          "text": "Zamówiliśmy dwadzieścia jeden ___ (płytka).",
+          "answer": "płytek",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "płytka",
+            "płytki",
+            "płytek"
+          ],
+          "explanation": "Po …jeden stoi dopełniacz mnogi: dwadzieścia jeden płytek (nie liczba pojedyncza)."
+        },
+        {
+          "id": "g4-4",
+          "text": "Mamy sto trzynaście ___ (paczka).",
+          "answer": "paczek",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "paczki",
+            "paczek"
+          ],
+          "explanation": "113 kończy się na 13 → dopełniacz mnogi."
+        },
+        {
+          "id": "g4-5",
+          "text": "W hotelu mamy sześć ___ (wanna).",
+          "answer": "wanien",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Wyjątek: wanna → wanien."
+        },
+        {
+          "id": "g4-6",
+          "text": "W pudełku jest pięćdziesiąt ___ (sztuka).",
+          "answer": "sztuk",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Wyjątek: sztuka → sztuk (nie sztuek)."
+        },
+        {
+          "id": "g4-7",
+          "text": "Ten wałek kosztuje sto ___ (złoty).",
+          "answer": "złotych",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Wyjątek: złoty → złotych."
+        },
+        {
+          "id": "g4-8",
+          "text": "Ten worek waży pięć ___ (kilo).",
+          "answer": "kilo",
+          "grammar_point": "liczebnik-rzeczownik",
+          "accept": [
+            "kilogramów"
+          ],
+          "explanation": "Wyraz kilo jest nieodmienny: pięć kilo. Pełna forma: pięć kilogramów."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 3,
+      "exercise_type": "sentence-building",
+      "title": "5. Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Kupiłem dwadzieścia jeden worek.",
+          "answer": "Kupiłem dwadzieścia jeden worków.",
+          "grammar_point": "liczebnik-rzeczownik",
+          "accept": [
+            "Dwadzieścia jeden worków kupiłem."
+          ],
+          "explanation": "Po dwadzieścia jeden stoi dopełniacz mnogi, a nie liczba pojedyncza."
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Zostało dwie puszki.",
+          "answer": "Zostały dwie puszki.",
+          "grammar_point": "liczebnik-rzeczownik",
+          "accept": [
+            "Dwie puszki zostały."
+          ],
+          "explanation": "Przy 2–4 czasownik jest w liczbie mnogiej: zostały."
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Na półce zostało trzy worki.",
+          "answer": "Na półce zostały trzy worki.",
+          "grammar_point": "liczebnik-rzeczownik",
+          "accept": [
+            "Zostały trzy worki na półce."
+          ],
+          "explanation": "Przy 2–4 czasownik jest w liczbie mnogiej: zostały."
+        },
+        {
+          "id": "g5-4",
+          "prompt": "W magazynie zostały pięć paczek.",
+          "answer": "W magazynie zostało pięć paczek.",
+          "grammar_point": "liczebnik-rzeczownik",
+          "accept": [
+            "Zostało pięć paczek w magazynie."
+          ],
+          "explanation": "Od pięciu czasownik jest w liczbie pojedynczej, rodzaju nijakiego: zostało."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 4,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Ile czego? Dopełniacz liczby pojedynczej",
+      "instruction": "Wpisz albo wybierz rzeczownik w dopełniaczu liczby pojedynczej.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Weź pięć worków ___.",
+          "answer": "kleju",
+          "grammar_point": "dopelniacz-ilosc",
+          "options": [
+            "kleju",
+            "kleja"
+          ],
+          "explanation": "Klej to materiał (substancja) → -u: kleju."
+        },
+        {
+          "id": "g6-2",
+          "text": "W sklepie jest dużo ___ (farba).",
+          "answer": "farby",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Rodzaj żeński na -a → -y: farba → farby."
+        },
+        {
+          "id": "g6-3",
+          "text": "Potrzebujemy trochę ___ (grunt).",
+          "answer": "gruntu",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Materiał → -u: grunt → gruntu."
+        },
+        {
+          "id": "g6-4",
+          "text": "Weź pół ___ (litr) farby.",
+          "answer": "litra",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Miara → -a: litr → litra."
+        },
+        {
+          "id": "g6-5",
+          "text": "To jest trzy metry ___ (kabel).",
+          "answer": "kabla",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Narzędzie, przedmiot → -a: kabel → kabla."
+        },
+        {
+          "id": "g6-6",
+          "text": "Kup jeden worek ___.",
+          "answer": "cementu",
+          "grammar_point": "dopelniacz-ilosc",
+          "options": [
+            "cementu",
+            "cementa"
+          ],
+          "explanation": "Materiał → -u: cement → cementu."
+        },
+        {
+          "id": "g6-7",
+          "text": "W garażu mam mało ___ (silikon).",
+          "answer": "silikonu",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Materiał → -u: silikon → silikonu."
+        },
+        {
+          "id": "g6-8",
+          "text": "Kup dwa kilogramy ___ (fuga).",
+          "answer": "fugi",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Rodzaj żeński po g → -i: fuga → fugi."
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 4,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Wyjątki: kamień, rozpuszczalnik, środek",
+      "instruction": "Wpisz albo wybierz właściwą formę.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Wysypaliśmy pół wiadra ___ (kamień).",
+          "answer": "kamienia",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Wyjątek: kamień to materiał, ale ma -a: kamienia."
+        },
+        {
+          "id": "g7-2",
+          "text": "Do czyszczenia pędzli kupiłem litr ___ (rozpuszczalnik).",
+          "answer": "rozpuszczalnika",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Wyjątek: słowa na -nik mają -a: rozpuszczalnika."
+        },
+        {
+          "id": "g7-3",
+          "text": "W domu zostało mało ___ (środek) do mycia płytek.",
+          "answer": "środka",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Wyjątek: środek → środka."
+        },
+        {
+          "id": "g7-4",
+          "text": "Dolej pół litra ___.",
+          "answer": "rozpuszczalnika",
+          "grammar_point": "dopelniacz-ilosc",
+          "options": [
+            "rozpuszczalnika",
+            "rozpuszczalniku"
+          ],
+          "explanation": "Rozpuszczalnik → rozpuszczalnika."
+        },
+        {
+          "id": "g7-5",
+          "text": "Kup butelkę ___ (środek) do fug.",
+          "answer": "środka",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Środek → środka."
+        },
+        {
+          "id": "g7-6",
+          "text": "W worku jest sześć kilogramów ___ (kamień).",
+          "answer": "kamienia",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Kamień → kamienia."
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 4,
+      "exercise_type": "sentence-building",
+      "title": "8. Popraw błąd: potrzebować + dopełniacz",
+      "instruction": "W każdym zdaniu jest błąd w formie rzeczownika. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g8-1",
+          "prompt": "Potrzebuję klej.",
+          "answer": "Potrzebuję kleju.",
+          "grammar_point": "potrzebowac-dopelniacz",
+          "accept": [
+            "Potrzebuje kleju."
+          ],
+          "explanation": "Po czasowniku potrzebować stoi dopełniacz (czego?)."
+        },
+        {
+          "id": "g8-2",
+          "prompt": "Potrzebujemy farbę do ścian.",
+          "answer": "Potrzebujemy farby do ścian.",
+          "grammar_point": "potrzebowac-dopelniacz",
+          "accept": [
+            "Do ścian potrzebujemy farby."
+          ],
+          "explanation": "Po czasowniku potrzebować stoi dopełniacz (czego?)."
+        },
+        {
+          "id": "g8-3",
+          "prompt": "Czy pan potrzebuje silikon?",
+          "answer": "Czy pan potrzebuje silikonu?",
+          "grammar_point": "potrzebowac-dopelniacz",
+          "accept": [
+            "Czy pan potrzebuje silikonu"
+          ],
+          "explanation": "Po czasowniku potrzebować stoi dopełniacz (czego?)."
+        },
+        {
+          "id": "g8-4",
+          "prompt": "Ona potrzebuje grunt i wałek.",
+          "answer": "Ona potrzebuje gruntu i wałka.",
+          "grammar_point": "potrzebowac-dopelniacz",
+          "accept": [
+            "Potrzebuje gruntu i wałka."
+          ],
+          "explanation": "Po czasowniku potrzebować stoi dopełniacz (czego?)."
+        }
+      ]
+    },
+    {
+      "block_id": "gz",
+      "part": 5,
+      "exercise_type": "fill-in-blank",
+      "title": "Zadania zbiorcze: wszystkie porcje razem",
+      "instruction": "Wybierz albo wpisz właściwą formę. Do każdej porcji jest co najmniej jedno zdanie.",
+      "items": [
+        {
+          "id": "gz-1",
+          "text": "W kuchni są dwie ___.",
+          "answer": "puszki",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "puszki",
+            "puszek"
+          ],
+          "explanation": "2 → mianownik mnogi (porcja 1)."
+        },
+        {
+          "id": "gz-2",
+          "text": "Do łazienki weźmiemy piętnaście ___ (wiadro).",
+          "answer": "wiader",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "15 → dopełniacz mnogi (porcja 2)."
+        },
+        {
+          "id": "gz-3",
+          "text": "Zamówiliśmy trzydzieści dwa ___.",
+          "answer": "worki",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "worki",
+            "worków"
+          ],
+          "explanation": "Koniec liczby …dwa → mianownik mnogi (porcja 2)."
+        },
+        {
+          "id": "gz-4",
+          "text": "Weź pół litra ___ (farba).",
+          "answer": "farby",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Po pół → dopełniacz liczby pojedynczej (porcja 3)."
+        },
+        {
+          "id": "gz-5",
+          "text": "Na budowie jest dużo ___ (cement).",
+          "answer": "cementu",
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Dużo + materiał → dopełniacz liczby pojedynczej (porcja 3)."
+        },
+        {
+          "id": "gz-6",
+          "text": "W hotelu jest dziesięć ___ (wanna).",
+          "answer": "wanien",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Wyjątek: wanna → wanien (porcja 2)."
+        },
+        {
+          "id": "gz-7",
+          "text": "Na półce ___ cztery paczki.",
+          "answer": "zostały",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "zostało",
+            "zostały"
+          ],
+          "explanation": "Przy 2–4 czasownik jest w liczbie mnogiej (porcja 2)."
+        },
+        {
+          "id": "gz-8",
+          "text": "Potrzebuję ___ (tynk).",
+          "answer": "tynku",
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Potrzebować + dopełniacz (porcja 3)."
+        },
+        {
+          "id": "gz-9",
+          "text": "W zdaniu „Kupiliśmy pięć worków kleju” słowo „worków” to:",
+          "answer": "dopełniacz liczby mnogiej",
+          "grammar_point": "liczebnik-rzeczownik",
+          "options": [
+            "mianownik liczby mnogiej",
+            "dopełniacz liczby mnogiej",
+            "dopełniacz liczby pojedynczej"
+          ],
+          "explanation": "Po pięć stoi dopełniacz mnogi (porcja 2)."
+        },
+        {
+          "id": "gz-10",
+          "text": "W zdaniu „Weźmiemy dwa worki kleju” słowo „kleju” to:",
+          "answer": "dopełniacz liczby pojedynczej",
+          "grammar_point": "dopelniacz-ilosc",
+          "options": [
+            "mianownik liczby mnogiej",
+            "dopełniacz liczby mnogiej",
+            "dopełniacz liczby pojedynczej"
+          ],
+          "explanation": "Materiał po ilości stoi w dopełniaczu liczby pojedynczej (porcja 3)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "lesson_id": "pl-remont-02-sklep-budowlany",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: zakupy na remont",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę z nauczycielem. Zamieńcie się rolami.",
+  "estimated_minutes": 18,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "listen-then-play",
+      "front_title": "W sklepie budowlanym",
+      "back_scenario": "Najpierw posłuchaj rozmowy pana Marka ze sprzedawczynią. Potem Ty jesteś fachowcem, a nauczyciel — sprzedawczynią. Kupujesz materiały do remontu małej kuchni: płytki, klej, fugę i farbę. Poprowadź rozmowę z innymi ilościami.",
+      "back_checklist": [
+        "Zapytaj, czy sklep ma na stanie to, czego potrzebujesz.",
+        "Podaj ilości: ile worków, paczek, opakowań i litrów (użyj liczb od 2 do 4 i od 5).",
+        "Zapytaj o cenę i o dostawę.",
+        "Poproś o rabat albo o paragon."
+      ],
+      "audio_url": "/audio/pl-remont-02-sklep-budowlany-c1-dialog.mp3",
+      "model_dialogue": [
+        {
+          "speaker": "Ilona",
+          "voice": "W2",
+          "line": "Dzień dobry, w czym mogę pomóc?"
+        },
+        {
+          "speaker": "Marek",
+          "voice": "M1",
+          "line": "Dzień dobry. Robię remont łazienki i szukam kleju do płytek. Ile kosztuje worek?"
+        },
+        {
+          "speaker": "Ilona",
+          "voice": "W2",
+          "line": "Worek dwadzieścia pięć kilogramów kosztuje pięćdziesiąt pięć złotych."
+        },
+        {
+          "speaker": "Marek",
+          "voice": "M1",
+          "line": "Biorę pięć worków. Czy macie tyle na stanie?"
+        },
+        {
+          "speaker": "Ilona",
+          "voice": "W2",
+          "line": "Mamy trzy worki na półce, a dwa dowieziemy jutro."
+        },
+        {
+          "speaker": "Marek",
+          "voice": "M1",
+          "line": "Dobrze. Poproszę jeszcze dziesięć litrów gruntu i trzy kartusze silikonu."
+        },
+        {
+          "speaker": "Ilona",
+          "voice": "W2",
+          "line": "Grunt jest w pojemnikach po pięć litrów, więc będą dwa pojemniki. Silikon biały czy przezroczysty?"
+        },
+        {
+          "speaker": "Marek",
+          "voice": "M1",
+          "line": "Biały. I jeszcze pół litra rozpuszczalnika."
+        },
+        {
+          "speaker": "Ilona",
+          "voice": "W2",
+          "line": "Proszę bardzo. Przy takim zamówieniu daję dziesięć procent rabatu."
+        },
+        {
+          "speaker": "Marek",
+          "voice": "M1",
+          "line": "Świetnie. Czy możecie dowieźć wszystko jutro rano?"
+        },
+        {
+          "speaker": "Ilona",
+          "voice": "W2",
+          "line": "Tak, dostawa kosztuje czterdzieści złotych. Paragon wyślemy mailem."
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Lista zakupów dla klientki",
+      "back_scenario": "Klientka chce odnowić przedpokój: pięć metrów kwadratowych podłogi i dwadzieścia osiem metrów kwadratowych ścian. Jesteś fachowcem i robisz z nią listę zakupów. Nauczyciel gra klientkę.",
+      "back_checklist": [
+        "Powiedz, ile czego trzeba kupić: płytek, kleju, gruntu, farby.",
+        "Wyjaśnij, po co kupujemy zapas.",
+        "Zapytaj klientkę, co ma już w domu (np. trochę farby, dwa pędzle).",
+        "Powiedz, co zabrakło albo co trzeba jeszcze zamówić."
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "front_title": "Brakuje materiału na budowie",
+      "back_scenario": "Pracujesz w mieszkaniu klienta i okazuje się, że na ostatniej ścianie zabrakło farby. Dzwonisz do sklepu. Nauczyciel gra sprzedawcę.",
+      "back_checklist": [
+        "Powiedz, czego zabrakło i ile jeszcze potrzebujesz.",
+        "Zapytaj, czy sklep ma to na stanie.",
+        "Ustal, czy możecie dowieźć dziś i ile kosztuje dostawa.",
+        "Powiedz, ile czasu zostało i co wtedy zrobisz."
+      ]
+    }
+  ]
+}

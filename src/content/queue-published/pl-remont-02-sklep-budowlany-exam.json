@@ -1,0 +1,49 @@
+{
+  "lesson_id": "pl-remont-02-sklep-budowlany",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie: czytanie",
+  "instruction": "Przeczytaj tekst „Lista zakupów do łazienki” jeszcze raz i zdecyduj: prawda czy fałsz.",
+  "estimated_minutes": 8,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "source": "section:1",
+      "title": "Czytanie: prawda czy fałsz?",
+      "instruction": "Zaznacz: prawda albo fałsz.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "Płytki kupią w paczkach po półtora metra kwadratowego.",
+          "answer": true,
+          "explanation": "W jednej paczce jest półtora metra kwadratowego."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Artur bierze trzy worki kleju.",
+          "answer": false,
+          "explanation": "Artur bierze pięć worków kleju."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Fuga to pięć opakowań po dwa kilogramy.",
+          "answer": true,
+          "explanation": "Jeszcze fuga: pięć opakowań po dwa kilogramy."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Pani Joanna ma w garażu nowy grunt.",
+          "answer": false,
+          "explanation": "W garażu jest trochę starego gruntu; Artur kupi nowy."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Wszystkie pięć worków kleju stoi na półce w sklepie.",
+          "answer": false,
+          "explanation": "Na półce są trzy worki, pozostałe dwa przyjadą jutro."
+        }
+      ]
+    }
+  ]
+}
