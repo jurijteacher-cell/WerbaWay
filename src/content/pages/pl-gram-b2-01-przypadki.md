@@ -1,6 +1,8 @@
 ---
 title: 01 · System przypadków: mapa
 icon: 📐
+level: B1
+number: 1
 module: pl-gram-b2
 moduleTitle: Граматика B1 → B2
 cover: https://images.unsplash.com/photo-1622555063306-9930f396f051?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600

@@ -2,6 +2,7 @@
 title: RU-A0 · Lesson 04 — Мы живём в Риге! We, you and they
 icon: 👨‍👩‍👧
 level: A0
+number: 4
 module: ru-a0
 moduleTitle: Russian from zero
 glossLang: en

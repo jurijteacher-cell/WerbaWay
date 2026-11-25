@@ -1,6 +1,8 @@
 ---
 title: gramatyka → strona czynna i bierna
 icon: 🔄
+level: B1
+number: 1
 module: pl-gram-ru
 moduleTitle: Граматика B1
 cover: https://images.unsplash.com/photo-1685127855461-bb81749e9dd9?fm=jpg&q=80&w=1600&fit=max

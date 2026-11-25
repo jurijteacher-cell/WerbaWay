@@ -2,6 +2,7 @@
 title: 06 · Umowy, ZUS i lista płac: strona bierna
 icon: 🧾
 level: B1
+number: 6
 module: pl-ksieg
 moduleTitle: Польська для бухгалтерки
 cover: https://images.unsplash.com/photo-1642751652611-bb9a7cad58a3?w=1600&h=900&fit=crop&q=80&fm=jpg

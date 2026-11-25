@@ -1,6 +1,8 @@
 ---
 title: PL-A0 · Lesson — Numbers 0–100 & Your First Case
 icon: 🔢
+level: A0
+number: 2
 module: pl-a0-en
 moduleTitle: Polish from zero
 cover: https://images.unsplash.com/photo-1592431913823-7af6b323da9b?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600

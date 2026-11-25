@@ -1,6 +1,7 @@
 ---
 title: 07 · Moja praca to moja pasja! Zawody, warunki i rozmowa o pracę
 icon: 💼
+level: A2
 number: 50
 module: pl-a2
 moduleTitle: Польська A2

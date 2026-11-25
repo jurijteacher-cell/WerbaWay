@@ -2,8 +2,9 @@
 title: Slang na co dzień: ziomek, kasa i dwóch kumpli
 icon: 🗣️
 level: B1
-module: pl-gram-ru
-moduleTitle: Граматика B1
+number: 11.5
+module: pl-b1-group
+moduleTitle: Польська B1
 cover: https://images.unsplash.com/photo-1610269373215-0b733db966f9?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb
 notion: https://app.notion.com/p/Slang-na-co-dzie-ziomek-kasa-i-dw-ch-kumpli-41196e03c7c881ffb841cc81ccae2862
 glossLang: ru

@@ -2,6 +2,7 @@
 title: gramatyka → tęsknię za tobą: czasowniki z przyimkami
 icon: 💌
 level: B1
+number: 6
 module: pl-gram-ru
 moduleTitle: Граматика B1
 cover: https://images.unsplash.com/photo-1762094769338-f08bab7738ad?fm=jpg&q=80&w=1600&fit=max

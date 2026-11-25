@@ -1,6 +1,7 @@
 ---
 title: Dojazd do pracy: miasto w ruchu
 icon: 🚋
+level: B1
 number: 7
 module: pl-b1-group
 moduleTitle: Польська B1

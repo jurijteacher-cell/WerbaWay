@@ -1,6 +1,8 @@
 ---
 title: 02 · Wesołych Świąt! Polskie święta i tradycje
 icon: 🎄
+level: A1
+number: 2
 module: pl-kp
 moduleTitle: Карта поляка
 cover: https://images.unsplash.com/photo-1607116697207-bd21c24e02eb?fm=jpg&q=80&w=1600&fit=max

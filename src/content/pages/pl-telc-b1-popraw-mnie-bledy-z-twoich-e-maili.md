@@ -1,8 +1,10 @@
 ---
 title: Popraw mnie! Błędy z Twoich e-maili
 icon: ✍️
-module: pl-telc-b1
-moduleTitle: Іспит telc B1
+level: B1
+number: 2
+module: pl-bledy
+moduleTitle: Розбір помилок
 cover: https://images.unsplash.com/photo-1550592704-6c76defa9985?w=1600&q=80&fm=jpg&fit=max
 notion: https://app.notion.com/p/Popraw-mnie-B-dy-z-Twoich-e-maili-40396e03c7c8816ebc3cec762a8f593b
 glossLang: ru

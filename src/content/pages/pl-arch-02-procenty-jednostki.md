@@ -1,5 +1,7 @@
 ---
 title: 02 · Procenty, jednostki i równania: liczymy po polsku
+level: B1
+number: 2
 module: pl-arch
 moduleTitle: Математика і архітектура
 cover: https://images.unsplash.com/photo-1648201637025-1c77b9be3013?fm=jpg&q=80&w=1600&fit=max

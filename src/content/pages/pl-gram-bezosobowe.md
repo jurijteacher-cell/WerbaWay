@@ -1,6 +1,8 @@
 ---
 title: gramatyka → konstrukcje bezosobowe
 icon: 👥
+level: B1
+number: 2
 module: pl-gram-ru
 moduleTitle: Граматика B1
 cover: https://images.unsplash.com/photo-1498429152472-9a433d9ddf3b?fm=jpg&q=80&w=1600&fit=max

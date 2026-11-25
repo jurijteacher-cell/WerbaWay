@@ -1,6 +1,7 @@
 ---
 title: Mieszkanie i sąsiedzi: trzecie piętro bez windy
 icon: 🏢
+level: B1
 number: 1
 module: pl-b1-group
 moduleTitle: Польська B1

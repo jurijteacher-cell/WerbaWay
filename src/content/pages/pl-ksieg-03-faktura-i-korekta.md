@@ -1,6 +1,8 @@
 ---
 title: 03 · Faktura, korekta i KSeF
 icon: 🧾
+level: B1
+number: 3
 module: pl-ksieg
 moduleTitle: Польська для бухгалтерки
 cover: https://images.unsplash.com/photo-1758876201660-103984519266?w=1600&q=80&fm=jpg&fit=max

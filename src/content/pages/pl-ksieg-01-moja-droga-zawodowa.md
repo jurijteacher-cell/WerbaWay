@@ -1,6 +1,8 @@
 ---
 title: 01 · Moja droga zawodowa
 icon: 💼
+level: B1
+number: 1
 module: pl-ksieg
 moduleTitle: Польська для бухгалтерки
 cover: https://images.unsplash.com/photo-1554224154-26032ffc0d07?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb

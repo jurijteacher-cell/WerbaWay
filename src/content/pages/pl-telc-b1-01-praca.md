@@ -1,8 +1,10 @@
 ---
-title: Kim jesteś z zawodu?
+title: 01 · Kim jesteś z zawodu?
 icon: 💼
+level: A2
+number: 1
 module: pl-telc-b1
-moduleTitle: Іспит telc B1
+moduleTitle: Підготовка до telc B1·B2
 cover: /content/pl-telc-b1-01-praca/header.jpg
 notion: https://app.notion.com/p/Kim-jeste-z-zawodu-3ec96e03c7c881299d33c7d82b76718f
 ---

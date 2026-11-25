@@ -1,5 +1,7 @@
 ---
 title: 01 · Figury, wymiary i działania: matematyka po polsku
+level: B1
+number: 1
 module: pl-arch
 moduleTitle: Математика і архітектура
 cover: https://images.unsplash.com/photo-1610650394144-a778795cf585?fm=jpg&q=80&w=1600&fit=max

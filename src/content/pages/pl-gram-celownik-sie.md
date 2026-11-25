@@ -1,6 +1,8 @@
 ---
 title: gramatyka → celownik + się: zepsuł mi się telefon
 icon: 🙃
+level: B1
+number: 4
 module: pl-gram-ru
 moduleTitle: Граматика B1
 cover: https://images.unsplash.com/photo-1578651714116-2a1645b70c0f?fm=jpg&q=80&w=1600&fit=max

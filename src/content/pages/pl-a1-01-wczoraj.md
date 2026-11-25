@@ -1,6 +1,8 @@
 ---
 title: Wczoraj o siódmej: czas przeszły i godziny
 icon: 🕖
+level: A1
+number: 33
 module: pl-a1
 moduleTitle: Польська з нуля A0–A1
 cover: /content/pl-a1-01-wczoraj/header.jpg

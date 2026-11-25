@@ -1,6 +1,8 @@
 ---
 title: Kim jesteś? Jaki jesteś? Powtórka: lekcje 1–5
 icon: 🙋
+level: A1
+number: 5
 module: pl-kpk1
 moduleTitle: Polski, krok po kroku 1
 cover: https://images.unsplash.com/photo-1753351057311-8fd3c46bc4e2?fm=jpg&q=80&w=1600&fit=max

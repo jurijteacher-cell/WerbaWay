@@ -1,6 +1,8 @@
 ---
 title: Lekcja 05 · Jesteś instruktorem tanga?
 icon: 📗
+level: A1
+number: 3
 module: pl-kpk1
 moduleTitle: Polski, krok po kroku 1
 cover: https://images.unsplash.com/photo-1744280054674-105cb81e7baa?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600

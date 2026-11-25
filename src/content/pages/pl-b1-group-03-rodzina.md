@@ -1,6 +1,7 @@
 ---
 title: Trzy pokolenia przy jednym stole: rodzina dawniej i dziś
 icon: 👪
+level: B1
 number: 3
 module: pl-b1-group
 moduleTitle: Польська B1

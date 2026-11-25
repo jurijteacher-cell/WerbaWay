@@ -2,6 +2,7 @@
 title: 05 · PIT, CIT i forma opodatkowania: jeśli… to…
 icon: ⚖️
 level: B1
+number: 5
 module: pl-ksieg
 moduleTitle: Польська для бухгалтерки
 cover: https://images.unsplash.com/photo-1639696194673-67b86204b885?w=1600&h=900&fit=crop&q=80&fm=jpg

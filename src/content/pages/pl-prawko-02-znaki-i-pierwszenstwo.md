@@ -1,5 +1,7 @@
 ---
 title: 02 · Znaki i pierwszeństwo: kto jedzie pierwszy?
+level: B1
+number: 2
 module: pl-prawko
 moduleTitle: Права водія
 cover: https://images.unsplash.com/photo-1572670014853-1d3a3f22b40f?fm=jpg&q=80&w=1600&fit=max

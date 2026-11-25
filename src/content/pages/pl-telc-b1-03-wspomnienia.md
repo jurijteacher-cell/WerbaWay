@@ -1,10 +1,10 @@
 ---
-title: 08 · Kiedy byłem mały… Dzieciństwo i wspomnienia
+title: 03 · Kiedy byłem mały… Dzieciństwo i wspomnienia
 icon: 🕰️
 level: A2
-number: 8
+number: 3
 module: pl-telc-b1
-moduleTitle: Іспит telc B1
+moduleTitle: Підготовка до telc B1·B2
 cover: https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=1600&h=900&fit=crop&q=80&fm=jpg
 glossLang: ru
 ---

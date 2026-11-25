@@ -1,6 +1,8 @@
 ---
 title: RU-A0 · Lesson 03 — Я говорю по-русски! First Verbs
 icon: 🗣️
+level: A0
+number: 3
 module: ru-a0
 moduleTitle: Russian from zero
 cover: https://images.unsplash.com/photo-1582298537624-c6a00f906e51?w=1600&q=80&fm=jpg&fit=max

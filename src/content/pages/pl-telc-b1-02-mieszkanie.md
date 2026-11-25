@@ -1,10 +1,10 @@
 ---
-title: 05 · Kto mieszka nad nami? Mieszkanie i sąsiedzi
+title: 02 · Kto mieszka nad nami? Mieszkanie i sąsiedzi
 icon: 🏠
 level: A2
-number: 5
+number: 2
 module: pl-telc-b1
-moduleTitle: Іспит telc B1
+moduleTitle: Підготовка до telc B1·B2
 cover: https://images.unsplash.com/photo-1772797583328-f83bc3f94f80?w=1600&q=80&fm=jpg&fit=max
 notion: https://app.notion.com/p/05-Kto-mieszka-nad-nami-Mieszkanie-i-s-siedzi-41496e03c7c8818a9569f21e60acaa3f
 glossLang: ru

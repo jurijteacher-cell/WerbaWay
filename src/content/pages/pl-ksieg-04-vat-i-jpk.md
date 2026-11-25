@@ -2,6 +2,7 @@
 title: 04 · VAT i JPK: liczby bez stresu
 icon: 🧮
 level: B1
+number: 4
 module: pl-ksieg
 moduleTitle: Польська для бухгалтерки
 cover: https://images.unsplash.com/photo-1626266061368-46a8f578ddd6?w=1600&q=80&fm=jpg&fit=max

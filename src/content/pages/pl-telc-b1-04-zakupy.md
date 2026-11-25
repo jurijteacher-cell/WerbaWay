@@ -1,10 +1,10 @@
 ---
-title: 09 · Kupiłem, ale nie działa. Zakupy i reklamacje
+title: 04 · Kupiłem, ale nie działa. Zakupy i reklamacje
 icon: 🛍️
 level: A2
-number: 9
+number: 4
 module: pl-telc-b1
-moduleTitle: Іспит telc B1
+moduleTitle: Підготовка до telc B1·B2
 cover: https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600&h=900&fit=crop&q=80&fm=jpg
 glossLang: ru
 ---

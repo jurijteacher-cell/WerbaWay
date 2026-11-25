@@ -1,5 +1,6 @@
 ---
 title: 03 · Uwielbiam tańczyć! Czas wolny i pasje
+level: A2
 number: 47
 module: pl-a2
 moduleTitle: Польська A2

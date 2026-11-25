@@ -495,6 +495,19 @@ export function listTeacherPages(): PageMeta[] {
 }
 
 /** Лекції по курсах: курси з більшою кількістю лекцій — вище, «Без курсу» — завжди внизу; всередині — порядок курсу */
+/**
+ * Порядок категорій на /learn (25.11): спершу курси з нуля (A0–A1), далі A2, B1 і граматика,
+ * потім професійні курси, наприкінці — підготовка до іспитів і самі іспити.
+ * Новий модуль: додай код у відповідну групу тут (усередині групи — за кількістю уроків).
+ */
+const COURSE_RANK: Record<string, number> = {
+  'pl-a1': 10, 'pl-a0-en': 11, 'ru-a0': 12, 'pl-a1-en': 13, 'pl-kpk1': 14, 'pl-kp': 15,
+  'pl-a2': 20,
+  'pl-b1-group': 30, 'pl-gram-ru': 31, 'pl-gram-b2': 32, 'pl-bledy': 33,
+  'pl-ksieg': 40, 'pl-nier': 41, 'pl-trener': 42, 'pl-preg': 43, 'pl-remont': 44, 'pl-arch': 45, 'pl-b1-auto': 46, 'pl-prawko': 47,
+  'pl-telc-b1': 50, 'pl-telc-probny': 51, 'pl-b1-cert': 52,
+};
+
 export function groupByCourse<T extends PageMeta>(pages: T[]): { code: string; title: string; pages: T[] }[] {
   const map = new Map<string, { code: string; title: string; pages: T[] }>();
   for (const p of pages) {
@@ -503,8 +516,9 @@ export function groupByCourse<T extends PageMeta>(pages: T[]): { code: string; t
     g.pages.push(p);
     map.set(code, g);
   }
+  const rank = (c: string) => (c ? (COURSE_RANK[c] ?? 90) : 99);
   return [...map.values()].sort(
-    (a, b) => Number(!a.code) - Number(!b.code) || b.pages.length - a.pages.length || a.title.localeCompare(b.title, 'uk')
+    (a, b) => rank(a.code) - rank(b.code) || b.pages.length - a.pages.length || a.title.localeCompare(b.title, 'uk')
   );
 }
 

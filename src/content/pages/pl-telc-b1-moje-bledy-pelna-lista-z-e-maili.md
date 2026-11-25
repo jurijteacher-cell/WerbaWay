@@ -1,8 +1,10 @@
 ---
 title: Moje błędy — pełna lista z e-maili
 icon: 📕
-module: pl-telc-b1
-moduleTitle: Іспит telc B1
+level: B1
+number: 1
+module: pl-bledy
+moduleTitle: Розбір помилок
 cover: https://images.unsplash.com/photo-1550592704-6c76defa9985?w=1600&q=80&fm=jpg&fit=max
 notion: https://app.notion.com/p/Moje-b-dy-pe-na-lista-z-e-maili-40396e03c7c8811ca61ceb76a21ac9d7
 ---

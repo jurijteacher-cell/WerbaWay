@@ -1,6 +1,8 @@
 ---
 title: PL-A0 · Lesson 03 — Poproszę kawę! Café & Biernik
 icon: ☕
+level: A0
+number: 3
 module: pl-a0-en
 moduleTitle: Polish from zero
 cover: https://images.unsplash.com/photo-1542372147193-a7aca54189cd?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600

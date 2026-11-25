@@ -1,6 +1,8 @@
 ---
 title: 02 · Miękkie głoski i ł
 icon: 📞
+level: A0
+number: 2
 module: pl-a1
 moduleTitle: Польська з нуля A0–A1
 cover: https://images.unsplash.com/photo-1731430607085-2b6d4b18fe35?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb

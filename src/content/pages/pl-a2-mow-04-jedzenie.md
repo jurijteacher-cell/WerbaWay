@@ -1,6 +1,7 @@
 ---
 title: 04 · Poproszę pierogi! Jedzenie i restauracja
 icon: 🥟
+level: A2
 number: 48
 module: pl-a2
 moduleTitle: Польська A2

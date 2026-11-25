@@ -2,6 +2,7 @@
 title: gramatyka → ktoś, coś, nikt: zaimki nieokreślone
 icon: 🕵️
 level: B1
+number: 5
 module: pl-gram-ru
 moduleTitle: Граматика B1
 cover: https://images.unsplash.com/photo-1741156386380-0236c72eb6f9?fm=jpg&q=80&w=1600&fit=max

@@ -1,6 +1,8 @@
 ---
 title: RU-A0 · Lesson 02 — Это кофе! First Sentences
 icon: ☕
+level: A0
+number: 2
 module: ru-a0
 moduleTitle: Russian from zero
 cover: https://images.unsplash.com/photo-1637153468029-bd762b3a0b33?w=1600&q=80&fm=jpg&fit=max

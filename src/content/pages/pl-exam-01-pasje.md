@@ -1,8 +1,10 @@
 ---
 title: 01 · Czas wolny i pasje
 icon: 🎸
-module: pl-exam
-moduleTitle: Іспит A2
+level: A2
+number: 47.5
+module: pl-a2
+moduleTitle: Польська A2
 cover: https://images.unsplash.com/photo-1750630443143-3b973f24717c?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600
 notion: https://app.notion.com/p/01-Czas-wolny-i-pasje-3fa96e03c7c881e0bde9f67a0b25d27e
 ---

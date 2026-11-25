@@ -1,10 +1,10 @@
 ---
-title: 03 · Egzamin próbny telc B1·B2 — 1
+title: 01 · Egzamin próbny telc B1·B2 — 1
 icon: 📝
 level: B1
-number: 3
-module: pl-telc-b1
-moduleTitle: Іспит telc B1
+number: 1
+module: pl-telc-probny
+moduleTitle: Пробні іспити telc B1·B2
 cover: https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600
 notion: https://app.notion.com/p/03-Egzamin-pr-bny-telc-B1-B2-1-41396e03c7c881f894a9d2b4d8b7d2c8
 ---

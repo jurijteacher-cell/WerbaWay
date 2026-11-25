@@ -1,5 +1,7 @@
 ---
 title: 01 · Alfabet i czytanie
+level: A0
+number: 1
 module: pl-a1
 moduleTitle: Польська з нуля A0–A1
 cover: https://images.unsplash.com/photo-1661138485147-7aebd5847bc4?fm=jpg&q=80&w=1600&fit=max

@@ -1,6 +1,10 @@
 ---
 title: Praca nad błędami — 3 teksty
 icon: ✍️
+level: B1
+number: 4
+module: pl-bledy
+moduleTitle: Розбір помилок
 cover: https://images.unsplash.com/photo-1675126217708-9f7947119413?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600
 notion: https://app.notion.com/p/Praca-nad-b-dami-3-teksty-3f796e03c7c88121bf39d77d8ac460bf
 ---

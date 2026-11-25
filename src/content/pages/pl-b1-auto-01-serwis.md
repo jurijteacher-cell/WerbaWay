@@ -1,5 +1,7 @@
 ---
 title: 01 · W warsztacie samochodowym
+level: B1
+number: 1
 module: pl-b1-auto
 moduleTitle: Авто і сервіс
 cover: https://images.unsplash.com/photo-1625047509248-ec889cbff17f?fm=jpg&q=80&w=1080&fit=max

@@ -1,6 +1,8 @@
 ---
 title: 02 · Stłuczka na parkingu: naprawa z ubezpieczenia
 icon: 🚙
+level: B1
+number: 2
 module: pl-b1-auto
 moduleTitle: Авто і сервіс
 cover: https://images.unsplash.com/photo-1673187139211-1e7ec3dd60ec?fm=jpg&q=80&w=1600&fit=max

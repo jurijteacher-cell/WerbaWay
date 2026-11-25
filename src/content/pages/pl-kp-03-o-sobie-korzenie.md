@@ -1,6 +1,8 @@
 ---
 title: 03 · Nazywam się… Ja i moje polskie korzenie
 icon: 🌳
+level: A1
+number: 3
 module: pl-kp
 moduleTitle: Карта поляка
 cover: https://images.unsplash.com/photo-1722173205783-d602329f0743?w=1600&q=80&fm=jpg&fit=max

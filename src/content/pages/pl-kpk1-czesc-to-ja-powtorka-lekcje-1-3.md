@@ -1,6 +1,8 @@
 ---
 title: Cześć, to ja! Powtórka: lekcje 1–3
 icon: 👋
+level: A1
+number: 2
 module: pl-kpk1
 moduleTitle: Polski, krok po kroku 1
 cover: https://images.unsplash.com/photo-1787425490439-078c74dca822?fm=jpg&q=80&w=1600&fit=max

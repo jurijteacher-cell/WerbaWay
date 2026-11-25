@@ -2,8 +2,9 @@
 title: Popraw mnie! Kalki i kolokacje z Twoich tekstów
 icon: ✍️
 level: B1
-module: pl-telc-b1
-moduleTitle: Іспит telc B1
+number: 3
+module: pl-bledy
+moduleTitle: Розбір помилок
 cover: https://images.unsplash.com/photo-1581431886288-e216ea4ccf3f?w=1600&h=900&fit=crop&q=80&fm=jpg
 glossLang: ru
 ---

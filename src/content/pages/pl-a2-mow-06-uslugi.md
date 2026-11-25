@@ -1,6 +1,7 @@
 ---
 title: 06 · Muszę wysłać paczkę! Poczta, bank i naprawy
 icon: 📦
+level: A2
 number: 71
 module: pl-a2
 moduleTitle: Польська A2

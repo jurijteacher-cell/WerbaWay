@@ -1,6 +1,8 @@
 ---
 title: gramatyka → imiesłowy: -ący i -ny / -ony / -ty
 icon: 💊
+level: B1
+number: 3
 module: pl-gram-ru
 moduleTitle: Граматика B1
 cover: https://images.unsplash.com/photo-1575468130797-aa950b68aeec?fm=jpg&q=80&w=1600&fit=max

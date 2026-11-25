@@ -1,6 +1,8 @@
 ---
 title: 02 · Mapa systemu: JDG, spółka i trzy drogi
 icon: 🗺️
+level: B1
+number: 2
 module: pl-ksieg
 moduleTitle: Польська для бухгалтерки
 cover: https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?w=1600&q=80&fm=jpg&fit=max

@@ -1,7 +1,7 @@
 ---
 title: Wydarzenia, które zmieniły historię Polski
 icon: 🇵🇱
-level: A2
+level: B1
 number: 5
 module: pl-b1-group
 moduleTitle: Польська B1

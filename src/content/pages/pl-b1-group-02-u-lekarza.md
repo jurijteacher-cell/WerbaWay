@@ -1,6 +1,7 @@
 ---
 title: U lekarza: plecy, czyli męska duma
 icon: 🩺
+level: B1
 number: 2
 module: pl-b1-group
 moduleTitle: Польська B1

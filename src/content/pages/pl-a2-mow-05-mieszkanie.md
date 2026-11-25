@@ -1,6 +1,7 @@
 ---
 title: 05 · Szukam mieszkania! Dom, pokoje i okolica
 icon: 🏠
+level: A2
 number: 70
 module: pl-a2
 moduleTitle: Польська A2

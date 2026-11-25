@@ -1,6 +1,8 @@
 ---
 title: RU-A0 · Lesson 01 — Hello, Alphabet, First Words
 icon: 🔤
+level: A0
+number: 1
 module: ru-a0
 moduleTitle: Russian from zero
 cover: https://images.unsplash.com/photo-1652643105908-d1e6eea8c147?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600

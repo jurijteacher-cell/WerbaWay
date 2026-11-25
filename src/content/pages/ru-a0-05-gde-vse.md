@@ -2,6 +2,7 @@
 title: RU-A0 · Lesson 05 — Где все? Where is everyone? в / на
 icon: 📍
 level: A0
+number: 5
 module: ru-a0
 moduleTitle: Russian from zero
 glossLang: en

@@ -1,6 +1,8 @@
 ---
 title: Lekcja 03 · Mami, kto to jest?
 icon: 📗
+level: A1
+number: 1
 module: pl-kpk1
 moduleTitle: Polski, krok po kroku 1
 cover: https://images.unsplash.com/photo-1528569937393-ee892b976859?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600
