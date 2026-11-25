@@ -121,7 +121,7 @@
 |---|---|---|---|---|
 | 03 | `pl-nier-03-czas-terazniejszy` | Mój dzień w biurze | теперішній час (4 групи + шість нерегулярних), Pan/Pani/Państwo + 3 ос., *chcę/mogę/muszę + bezokolicznik*, *wiem ≠ znam* | ранкова нарада, зустріч із Lisami, дзвінок до Zielińskiej |
 | 04 | `pl-nier-04-rodzaj-i-przymiotnik` | Dwie oferty dla państwa Lisów | рід (m/ż/n) + винятки, множина речей/жінок, *drzwi, schody*, мужськоособова множина (*klienci, sąsiedzi, Lisowie*) + винятки (*ludzie, dzieci*), прикметник lp і lm (*ci/te*) | звіт про дві оферти, телефон Lisom, розмова з Zielińską |
-| 05 | `pl-nier-05-…` | Biernik | *szukam mieszkania / kawalerki; widzę klienta*, істоти й неістоти | запит клієнта |
+| 05 | `pl-nier-05-biernik` | Odpowiadamy na e-mail pani Marty | biernik: żeńskie *-a→-ę*, rzecz / człowiek (*balkon, klienta*), множина (*klientów*), *ten/tego/tę* + прикметник, *Pana/Panią/Państwa*, *go/ją/je/ich*, прийменники *czekać na, pytać o, prosić o, dziękować za, w piątek, za godzinę*; виняток: *szukać, potrzebować, wymagać, słuchać* + dopełniacz (форми — урок 06; рядок плану «*szukam mieszkania*» — це родовий, не biernik) | відповідь на e-mail, запрошення, ключі й документи |
 | 06 | `pl-nier-06-…` | Dopełniacz | *nie ma windy, pięć pokoi, dużo osób, bez balkonu* | характеристики, чого немає |
 | 07 | `pl-nier-07-…` | Liczebniki i ceny | ціни, метраж, поверхи, дати, години | назвати ціну вголос |
 | 08 | `pl-nier-08-…` | Miejscownik i przyimki | *w centrum, na trzecim piętrze*, *gdzie / dokąd / skąd* | розташування, район |
@@ -198,6 +198,15 @@
 - **Пасток 6** (4 рід + 2 ci/te); довідники — `docs/ref/nouns-gender-plural.md`, `docs/ref/adjectives-nominative.md`.
 - **ДЗ:** hw (h1–h5) · 🎬 Małycha Agency «Jak sprzedać mieszkanie w jeden weekend?» (id 647Zl9ohy7w; вбудову не перевірено) · 🎙️ дім у Komornikach для państwa Nowaków · ✍️ notatka до szefowej 110–140 слів.
 - **Припущення:** мова глос — українська (діагностика §5 ще не проведена).
+
+#### Урок 05 — `pl-nier-05-biernik` (25.11.2026)
+
+- **Тема:** biernik; e-mail пані Марти до biura, відповідь Natalii (запрошення Lisów на п'ятницю, ключі до piwnicy, копія umowy, zaświadczenie).
+- **Граматика (7 порцій + gz):** żeńskie -a→-ę → rzecz / człowiek → винятки (*mężczyzna, kolega, doradca* на -a) · множина (*= mianownik / = dopełniacz*) → *ludzi, dzieci, braci* · *ten/tego/tę* + przymiotnik · Pan/Pani/Państwo + *go/ją/je/ich* → пастка «Вас» · дієслова → винятки з родовим · прийменники → пастки (*czekam na, za godzinę, szukam mieszkania, pytam o*).
+- **Слова (25, 4 групи):** Czasowniki z biernikiem · Z przyimkiem · Ludzie i miejsca · Papiery i terminy.
+- **Пасток 6** (2 Pan/Państwo + 4 прийменники/rekcja); довідник — `docs/ref/accusative.md`.
+- **ДЗ:** hw (h1–h5) · 🎬 Muniak Development «Jak kupić mieszkanie z kredytem hipotecznym — krok po kroku» (id GjQL7xSvF6E, 4:28; вбудову не перевірено) · 🎙️ відповідь на e-mail клієнта (2 хв) · ✍️ e-mail 110–140 слів.
+- **Припущення:** мова глос — українська; вправ зі слухання немає; фото й обкладинка — нові (не повторюють 02, 04).
 
 ## 4. Діагностика й вимірювання прогресу
 
@@ -278,7 +287,8 @@
 | 02 | `pl-nier-02-opis-i-ogloszenie` | Mieszkanie z duszą | ✅ на сайті 23.11.2026 (embed ✓; i18n ru/pl/en ✓; без слухання) |
 | 03 | `pl-nier-03-czas-terazniejszy` | Mój dzień w biurze | ✅ на сайті 24.11.2026 (main c0a77fe; embed ✓ --remote; i18n ru/pl/en ✓; аудіо читання ready) |
 | 04 | `pl-nier-04-rodzaj-i-przymiotnik` | Dwie oferty dla państwa Lisów | ✅ на сайті 25.11.2026 (embed, i18n ru/pl/en ✓; аудіо читання — див. TEACHER «Факти»; 🎬 Małycha Agency 647Zl9ohy7w — вбудову не перевірено; обкладинка й фото в тексті — повтор із 02) |
-| 05–12 | _див. §3a_ | граматичний мінімум | — |
+| 05 | `pl-nier-05-biernik` | Odpowiadamy na e-mail pani Marty | ✅ на сайті 25.11.2026 (embed, i18n ru/pl/en ✓; аудіо читання — див. STATE; 🎬 Muniak GjQL7xSvF6E — вбудову не перевірено; без слухання) |
+| 06–12 | _див. §3a_ | граматичний мінімум | — |
 | 13 | `pl-nier-13-prezentacja-i-obiekcje` | Zapraszam do środka | — (було 03) |
 | 14 | `pl-nier-14-negocjacje` | Ostatnie słowo | — (було 04) |
 | 15 | `pl-nier-15-formalnosci` | Od umowy do kluczy | — (було 05) |

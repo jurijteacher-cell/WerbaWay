@@ -1,0 +1,1461 @@
+{
+  "lesson_id": "pl-nier-05-biernik",
+  "exercise_type": "fill-in-blank",
+  "title": "Biernik: klient, umowa, mieszkanie i e-mail",
+  "instruction": "Czternaście bloków ćwiczeń. Możesz przerwać i wrócić później.",
+  "estimated_minutes": 40,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "Tekst. Ułóż w kolejności",
+      "instruction": "Co Natalia robi najpierw, a co na końcu? Klikaj zdania po kolei.",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "Natalia dostaje e-mail od pani Marty.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "Natalia dzwoni do pani Marty i zaprasza państwa Lisów.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Natalia prosi właścicielkę o klucze do piwnicy.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Natalia przygotowuje kopię umowy i listę pytań.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "W piątek Natalia czeka na państwa Lisów w biurze.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Natalia oddzwania do pani Zielińskiej za godzinę.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Tekst. Uzupełnij streszczenie",
+      "instruction": "Wpisz rzeczownik w bierniku. W podpowiedzi jest mianownik.",
+      "text": "Marta Lis widziała w internecie {t2-1} pani Zielińskiej. Mieszkanie ma {t2-2} i {t2-3}. Natalia zaprasza {t2-4} do biura na piątek. Paweł zna dobrego {t2-5}, więc nie pyta o kredyt. Natalia przygotowuje {t2-6} i prosi właścicielkę o {t2-7}.",
+      "items": [
+        {
+          "id": "t2-1",
+          "answer": "ofertę",
+          "hint": "oferta",
+          "grammar_point": "czytanie",
+          "explanation": "Oferta kończy się na -a: biernik -ę → ofertę."
+        },
+        {
+          "id": "t2-2",
+          "answer": "balkon",
+          "hint": "balkon",
+          "grammar_point": "czytanie",
+          "explanation": "Balkon to rzecz rodzaju męskiego: biernik = mianownik."
+        },
+        {
+          "id": "t2-3",
+          "answer": "piwnicę",
+          "hint": "piwnica",
+          "grammar_point": "czytanie",
+          "explanation": "Piwnica kończy się na -ica: biernik -icę → piwnicę."
+        },
+        {
+          "id": "t2-4",
+          "answer": "państwa Lisów",
+          "hint": "państwo Lisowie",
+          "grammar_point": "czytanie",
+          "explanation": "Grupa z mężczyzną: biernik = dopełniacz → państwa Lisów."
+        },
+        {
+          "id": "t2-5",
+          "answer": "doradcę",
+          "hint": "doradca",
+          "grammar_point": "czytanie",
+          "explanation": "Doradca to mężczyzna, ale kończy się na -a: biernik -ę → doradcę."
+        },
+        {
+          "id": "t2-6",
+          "answer": "kopię umowy",
+          "hint": "kopia umowy",
+          "grammar_point": "czytanie",
+          "explanation": "Kopia → kopię (-a → -ę); umowy zostaje w dopełniaczu."
+        },
+        {
+          "id": "t2-7",
+          "answer": "klucze",
+          "hint": "klucz",
+          "grammar_point": "czytanie",
+          "explanation": "Rzecz w liczbie mnogiej: biernik = mianownik → klucze."
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Które słowo pasuje do sytuacji?",
+      "instruction": "Wybierz słowo, które pasuje do zdania.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Pani Zielińska przeprowadza się do syna, więc chce ___ swoje mieszkanie.",
+          "answer": "sprzedać",
+          "grammar_point": "slownictwo",
+          "options": [
+            "sprzedać",
+            "kupić",
+            "podpisać"
+          ],
+          "explanation": "Właścicielka, która wyjeżdża, sprzedaje mieszkanie."
+        },
+        {
+          "id": "g1-2",
+          "text": "Przed kupnem klient chce ___ mieszkanie i zobaczyć każdy pokój.",
+          "answer": "obejrzeć",
+          "grammar_point": "slownictwo",
+          "options": [
+            "wynająć",
+            "obejrzeć",
+            "zaprosić"
+          ],
+          "explanation": "Obejrzeć = przyjść i dokładnie sprawdzić."
+        },
+        {
+          "id": "g1-3",
+          "text": "Ravi nie kupuje, tylko ___ pokój na Łazarzu.",
+          "answer": "wynajmuje",
+          "grammar_point": "slownictwo",
+          "options": [
+            "wynajmuje",
+            "sprzedaje",
+            "podpisuje"
+          ],
+          "explanation": "Wynajmować = brać na czas za czynsz."
+        },
+        {
+          "id": "g1-4",
+          "text": "Notariusz czyta akt, a potem klienci go ___.",
+          "answer": "podpisują",
+          "grammar_point": "slownictwo",
+          "options": [
+            "pokazują",
+            "podpisują",
+            "zapraszają"
+          ],
+          "explanation": "Podpisywać = pisać nazwisko pod dokumentem."
+        },
+        {
+          "id": "g1-5",
+          "text": "Natalia ___ klientom dwie oferty na Jeżycach.",
+          "answer": "pokazuje",
+          "grammar_point": "slownictwo",
+          "options": [
+            "sprzedaje",
+            "podpisuje",
+            "pokazuje"
+          ],
+          "explanation": "Pokazywać = prowadzić klienta i mówić, co widzi."
+        },
+        {
+          "id": "g1-6",
+          "text": "Biuro ___ klientów na prezentację w poniedziałek.",
+          "answer": "zaprasza",
+          "grammar_point": "slownictwo",
+          "options": [
+            "zaprasza",
+            "kupuje",
+            "wynajmuje"
+          ],
+          "explanation": "Zapraszać = mówić «proszę przyjść»."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Żeńskie: -a → -ę, -ia → -ię",
+      "instruction": "Wpisz albo wybierz biernik. W podpowiedzi jest mianownik.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Klienci chcą kupić ___ w centrum. (kawalerka)",
+          "answer": "kawalerkę",
+          "grammar_point": "biernik-rzeczownik",
+          "options": [
+            "kawalerkę",
+            "kawalerka",
+            "kawalerki"
+          ],
+          "explanation": "-ka → -kę: kawalerka → kawalerkę."
+        },
+        {
+          "id": "g2-2",
+          "text": "Natalia pokazuje klientom ___. (kuchnia)",
+          "answer": "kuchnię",
+          "grammar_point": "biernik-rzeczownik",
+          "options": [
+            "kuchnia",
+            "kuchni",
+            "kuchnię"
+          ],
+          "explanation": "-ia → -ię: kuchnia → kuchnię."
+        },
+        {
+          "id": "g2-3",
+          "text": "Pani Zielińska podpisuje ___. (umowa)",
+          "answer": "umowę",
+          "grammar_point": "biernik-rzeczownik",
+          "options": [
+            "umowa",
+            "umowę",
+            "umowy"
+          ],
+          "explanation": "-a → -ę: umowa → umowę."
+        },
+        {
+          "id": "g2-4",
+          "text": "Biuro wysyła klientom ___. (oferta)",
+          "answer": "ofertę",
+          "grammar_point": "biernik-rzeczownik",
+          "options": [
+            "ofertę",
+            "oferta",
+            "oferty"
+          ],
+          "explanation": "-a → -ę: oferta → ofertę."
+        },
+        {
+          "id": "g2-5",
+          "text": "Paweł ogląda ___ w kamienicy. (piwnica)",
+          "answer": "piwnicę",
+          "grammar_point": "biernik-rzeczownik",
+          "options": [
+            "piwnica",
+            "piwnicę",
+            "piwnicy"
+          ],
+          "explanation": "-ica → -icę: piwnica → piwnicę."
+        },
+        {
+          "id": "g2-6",
+          "text": "Marta lubi ___ na Jeżycach. (dzielnica)",
+          "answer": "dzielnicę",
+          "grammar_point": "biernik-rzeczownik",
+          "options": [
+            "dzielnicy",
+            "dzielnicą",
+            "dzielnicę"
+          ],
+          "explanation": "-ica → -icę: dzielnica → dzielnicę."
+        },
+        {
+          "id": "g2-7",
+          "text": "Natalia sprawdza ___ mieszkania. (wartość)",
+          "answer": "wartość",
+          "grammar_point": "biernik-rzeczownik",
+          "options": [
+            "wartość",
+            "wartości",
+            "wartościę"
+          ],
+          "explanation": "Żeński na spółgłoskę (-ość) nie zmienia się: biernik = mianownik."
+        },
+        {
+          "id": "g2-8",
+          "text": "Natalia oblicza ___. (prowizja)",
+          "answer": "prowizję",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "-ja → -ję: prowizja → prowizję."
+        },
+        {
+          "id": "g2-9",
+          "text": "Wysyłam klientce ___. (wycena)",
+          "answer": "wycenę",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "-a → -ę: wycena → wycenę."
+        },
+        {
+          "id": "g2-10",
+          "text": "Sprawdzam ___ kredytu. (rata)",
+          "answer": "ratę",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "-a → -ę: rata → ratę."
+        },
+        {
+          "id": "g2-11",
+          "text": "Pani Marta zna dobrze ___. (okolica)",
+          "answer": "okolicę",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "-ica → -icę: okolica → okolicę."
+        },
+        {
+          "id": "g2-12",
+          "text": "Natalia czyta ___ od klienta. (wiadomość)",
+          "answer": "wiadomość",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "Żeński na spółgłoskę: bez zmian."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Rzecz czy człowiek? Mężczyźni i rzeczy w liczbie pojedynczej",
+      "instruction": "Rzeczy rodzaju męskiego i nijakiego nie zmieniają się, mężczyźni dostają -a. Wpisz albo wybierz biernik.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Klient ogląda ___ w kamienicy. (balkon)",
+          "answer": "balkon",
+          "grammar_point": "biernik-rzeczownik",
+          "options": [
+            "balkon",
+            "balkona",
+            "balkonę"
+          ],
+          "explanation": "Balkon to rzecz: biernik = mianownik."
+        },
+        {
+          "id": "g3-2",
+          "text": "Natalia zna ___ od roku. (klient)",
+          "answer": "klienta",
+          "grammar_point": "biernik-osobowy",
+          "options": [
+            "klient",
+            "klienta",
+            "klientę"
+          ],
+          "explanation": "Klient to człowiek: biernik = dopełniacz, -a."
+        },
+        {
+          "id": "g3-3",
+          "text": "Biuro sprzedaje ___ na Łazarzu. (mieszkanie)",
+          "answer": "mieszkanie",
+          "grammar_point": "biernik-rzeczownik",
+          "options": [
+            "mieszkania",
+            "mieszkanie",
+            "mieszkanią"
+          ],
+          "explanation": "Rodzaj nijaki: biernik = mianownik."
+        },
+        {
+          "id": "g3-4",
+          "text": "Pan Marek wynajmuje ___. (pokój)",
+          "answer": "pokój",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "Pokój to rzecz: bez zmian."
+        },
+        {
+          "id": "g3-5",
+          "text": "Pani Joanna zna ___ z sąsiedztwa. (sąsiad)",
+          "answer": "sąsiada",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Sąsiad to człowiek: sąsiada."
+        },
+        {
+          "id": "g3-6",
+          "text": "Natalia zaprasza ___ na oglądanie. (właściciel)",
+          "answer": "właściciela",
+          "grammar_point": "biernik-osobowy",
+          "options": [
+            "właściciel",
+            "właściciela",
+            "właścicielę"
+          ],
+          "explanation": "Właściciel to człowiek: -a."
+        },
+        {
+          "id": "g3-7",
+          "text": "Marta ogląda ___. (garaż)",
+          "answer": "garaż",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "Garaż to rzecz: bez zmian."
+        },
+        {
+          "id": "g3-8",
+          "text": "Klientka pyta ___ o termin. (notariusz)",
+          "answer": "notariusza",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Notariusz to człowiek: notariusza."
+        },
+        {
+          "id": "g3-9",
+          "text": "Biuro zaprasza ___ na prezentację. (cudzoziemiec)",
+          "answer": "cudzoziemca",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "W -iec znika e: cudzoziemiec → cudzoziemca."
+        },
+        {
+          "id": "g3-10",
+          "text": "Znam ___ od lat. (Marek)",
+          "answer": "Marka",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "W -ek znika e: Marek → Marka."
+        },
+        {
+          "id": "g3-11",
+          "text": "Natalia czyta ___ przed spotkaniem. (dokument)",
+          "answer": "dokument",
+          "grammar_point": "biernik-rzeczownik",
+          "options": [
+            "dokumenta",
+            "dokument",
+            "dokumentu"
+          ],
+          "explanation": "Dokument to rzecz: bez zmian."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Wyjątki: mężczyzna na -a",
+      "instruction": "To mężczyźni, ale końcówka jest jak przy żeńskich. Wpisz albo wybierz biernik.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Widzę ___ przed kamienicą. (mężczyzna)",
+          "answer": "mężczyznę",
+          "grammar_point": "biernik-osobowy",
+          "options": [
+            "mężczyznę",
+            "mężczyzny",
+            "mężczyzna"
+          ],
+          "explanation": "Mężczyzna kończy się na -a: biernik -ę, jak żeńskie."
+        },
+        {
+          "id": "g4-2",
+          "text": "Pani Zielińska zna ___ z drugiego piętra. (kolega)",
+          "answer": "kolegę",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "-a → -ę: kolega → kolegę."
+        },
+        {
+          "id": "g4-3",
+          "text": "Marta pyta ___ o termin. (najemca)",
+          "answer": "najemcę",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "-a → -ę: najemca → najemcę."
+        },
+        {
+          "id": "g4-4",
+          "text": "Klient pyta ___ o cenę. (sprzedawca)",
+          "answer": "sprzedawcę",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "-a → -ę: sprzedawca → sprzedawcę."
+        },
+        {
+          "id": "g4-5",
+          "text": "Paweł zna ___. (doradca)",
+          "answer": "doradcę",
+          "grammar_point": "biernik-osobowy",
+          "options": [
+            "doradca",
+            "doradcy",
+            "doradcę"
+          ],
+          "explanation": "-a → -ę: doradca → doradcę."
+        },
+        {
+          "id": "g4-6",
+          "text": "Biuro poleca ___ z sąsiedztwa. (dentysta)",
+          "answer": "dentystę",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "-a → -ę: dentysta → dentystę."
+        },
+        {
+          "id": "g4-7",
+          "text": "Znam ___ od roku. (Kuba)",
+          "answer": "Kubę",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Imię na -a: biernik -ę."
+        },
+        {
+          "id": "g4-8",
+          "text": "Natalia pokazuje klientom ___. (winda)",
+          "answer": "windę",
+          "grammar_point": "biernik-rzeczownik",
+          "options": [
+            "windę",
+            "winda",
+            "windy"
+          ],
+          "explanation": "Winda to rzecz żeńska: -a → -ę."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 3,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Liczba mnoga: rzeczy, kobiety i mężczyźni",
+      "instruction": "Rzeczy i kobiety: biernik jak mianownik. Mężczyźni i grupy z mężczyzną: końcówka jak w dopełniaczu. Wpisz albo wybierz biernik.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Pani Zielińska podpisuje wszystkie ___. (umowa)",
+          "answer": "umowy",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "Rzecz w mnogiej: biernik = mianownik → umowy."
+        },
+        {
+          "id": "g5-2",
+          "text": "Marta ogląda ___ w kamienicy. (okno)",
+          "answer": "okna",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "-o → -a: okno → okna."
+        },
+        {
+          "id": "g5-3",
+          "text": "Natalia sprawdza wszystkie ___. (dokument)",
+          "answer": "dokumenty",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "dokument → dokumenty."
+        },
+        {
+          "id": "g5-4",
+          "text": "Paweł dostaje ___ do mieszkania. (klucz)",
+          "answer": "klucze",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "klucz → klucze."
+        },
+        {
+          "id": "g5-5",
+          "text": "Biuro zna ___ z osiedla. (sąsiad)",
+          "answer": "sąsiadów",
+          "grammar_point": "biernik-osobowy",
+          "options": [
+            "sąsiedzi",
+            "sąsiadów",
+            "sąsiady"
+          ],
+          "explanation": "Mężczyźni w mnogiej: biernik = dopełniacz → sąsiadów."
+        },
+        {
+          "id": "g5-6",
+          "text": "Biuro zaprasza ___ na oglądanie. (klient)",
+          "answer": "klientów",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "klient → klientów."
+        },
+        {
+          "id": "g5-7",
+          "text": "Pani Joanna zna ___ w Poznaniu. (właściciel)",
+          "answer": "właścicieli",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Po -l: właścicieli."
+        },
+        {
+          "id": "g5-8",
+          "text": "Natalia zaprasza ___ na spotkanie. (inwestor)",
+          "answer": "inwestorów",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "inwestor → inwestorów."
+        },
+        {
+          "id": "g5-9",
+          "text": "Biuro zna dobrze ___ w Poznaniu. (notariusz)",
+          "answer": "notariuszy",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Po -sz: notariuszy."
+        },
+        {
+          "id": "g5-10",
+          "text": "Pośrednik pyta ___ o termin. (najemca)",
+          "answer": "najemców",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "najemca → najemców."
+        },
+        {
+          "id": "g5-11",
+          "text": "Na spotkaniu są same panie. Natalia zaprasza ___. (klientka)",
+          "answer": "klientki",
+          "grammar_point": "biernik-osobowy",
+          "options": [
+            "klientek",
+            "klientów",
+            "klientki"
+          ],
+          "explanation": "Same kobiety: biernik = mianownik → klientki."
+        },
+        {
+          "id": "g5-12",
+          "text": "Na spotkaniu są dwaj panowie i pani. Natalia zaprasza ___. (klient)",
+          "answer": "klientów",
+          "grammar_point": "biernik-osobowy",
+          "options": [
+            "klientki",
+            "klientów",
+            "klienci"
+          ],
+          "explanation": "Jest mężczyzna w grupie → klientów."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 3,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Wyjątki: ludzie, dzieci, bracia…",
+      "instruction": "Te słowa zmieniają się nieregularnie. Wpisz albo wybierz biernik.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Natalia zna dobrze ___ z tego osiedla. (ludzie)",
+          "answer": "ludzi",
+          "grammar_point": "rzecz-nieregularne",
+          "options": [
+            "ludzie",
+            "ludzi",
+            "ludzów"
+          ],
+          "explanation": "Ludzie → biernik ludzi (jak dopełniacz)."
+        },
+        {
+          "id": "g6-2",
+          "text": "Marta odbiera ze szkoły swoje ___. (dzieci)",
+          "answer": "dzieci",
+          "grammar_point": "rzecz-nieregularne",
+          "options": [
+            "dzieci",
+            "dzieciów",
+            "dzieciąt"
+          ],
+          "explanation": "Dzieci mają biernik taki sam jak mianownik: dzieci."
+        },
+        {
+          "id": "g6-3",
+          "text": "Paweł zaprasza na spotkanie ___. (bracia)",
+          "answer": "braci",
+          "grammar_point": "rzecz-nieregularne",
+          "options": [
+            "bracia",
+            "braci",
+            "bratów"
+          ],
+          "explanation": "Bracia → braci."
+        },
+        {
+          "id": "g6-4",
+          "text": "Biuro zaprasza ___ na oglądanie. (rodzice)",
+          "answer": "rodziców",
+          "grammar_point": "rzecz-nieregularne",
+          "options": [
+            "rodzice",
+            "rodziców",
+            "rodzicy"
+          ],
+          "explanation": "Rodzice → rodziców."
+        },
+        {
+          "id": "g6-5",
+          "text": "Pani Zielińska zna ___ z kamienicy. (mężczyźni)",
+          "answer": "mężczyzn",
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Mężczyźni → mężczyzn (bez końcówki)."
+        },
+        {
+          "id": "g6-6",
+          "text": "Pan Marek zaprasza ___ z pracy. (koledzy)",
+          "answer": "kolegów",
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Koledzy → kolegów."
+        },
+        {
+          "id": "g6-7",
+          "text": "Państwo Lisowie mają ___. (dziecko — dwoje)",
+          "answer": "dzieci",
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Dziecko → dzieci."
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 4,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Ten, ta, to i przymiotnik w bierniku",
+      "instruction": "Wybierz albo wpisz formę biernika. W podpowiedzi jest mianownik.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Klienci oglądają ___ balkon. (ten)",
+          "answer": "ten",
+          "grammar_point": "zaimki-wskazujace",
+          "options": [
+            "ten",
+            "tego",
+            "tę"
+          ],
+          "explanation": "Balkon to rzecz rodzaju męskiego: ten balkon."
+        },
+        {
+          "id": "g7-2",
+          "text": "Natalia zna ___ klienta. (ten)",
+          "answer": "tego",
+          "grammar_point": "zaimki-wskazujace",
+          "options": [
+            "tego",
+            "ten",
+            "tą"
+          ],
+          "explanation": "Klient to człowiek: tego klienta."
+        },
+        {
+          "id": "g7-3",
+          "text": "Pani Zielińska podpisuje ___ umowę. (ta)",
+          "answer": "tę",
+          "grammar_point": "zaimki-wskazujace",
+          "options": [
+            "tę",
+            "ta",
+            "tej"
+          ],
+          "explanation": "Rodzaj żeński: ta → tę."
+        },
+        {
+          "id": "g7-4",
+          "text": "Marta chce kupić ___ mieszkanie. (to)",
+          "answer": "to",
+          "grammar_point": "zaimki-wskazujace",
+          "options": [
+            "to",
+            "tego",
+            "tę"
+          ],
+          "explanation": "Rodzaj nijaki: biernik = mianownik: to mieszkanie."
+        },
+        {
+          "id": "g7-5",
+          "text": "Natalia pokazuje ___ oferty. (te)",
+          "answer": "te",
+          "grammar_point": "zaimki-wskazujace",
+          "options": [
+            "te",
+            "tych",
+            "tę"
+          ],
+          "explanation": "Rzeczy w mnogiej: te oferty."
+        },
+        {
+          "id": "g7-6",
+          "text": "Pani Joanna zna ___ klientów. (ci)",
+          "answer": "tych",
+          "grammar_point": "zaimki-wskazujace",
+          "options": [
+            "te",
+            "tych",
+            "ci"
+          ],
+          "explanation": "Mężczyźni w mnogiej: tych klientów."
+        },
+        {
+          "id": "g7-7",
+          "text": "Klienci kupują ___ mieszkanie. (nowy)",
+          "answer": "nowe",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Rodzaj nijaki: nowe."
+        },
+        {
+          "id": "g7-8",
+          "text": "Pani Marta lubi ___ kuchnię. (jasny)",
+          "answer": "jasną",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Rodzaj żeński: -a → -ą: jasną."
+        },
+        {
+          "id": "g7-9",
+          "text": "Biuro zna ___ klienta. (wymagający)",
+          "answer": "wymagającego",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Człowiek: -ego: wymagającego."
+        },
+        {
+          "id": "g7-10",
+          "text": "Natalia lubi ___ sąsiadów. (młody)",
+          "answer": "młodych",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Mężczyźni w mnogiej: -ych: młodych."
+        },
+        {
+          "id": "g7-11",
+          "text": "Marta lubi ___ podwórze. (cichy)",
+          "answer": "ciche",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Rodzaj nijaki: ciche."
+        },
+        {
+          "id": "g7-12",
+          "text": "Natalia sprawdza ___ piwnicę. (wilgotny)",
+          "answer": "wilgotną",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Żeński: wilgotną."
+        },
+        {
+          "id": "g7-13",
+          "text": "Klienci chcą kupić ___ kamienicę. (stary)",
+          "answer": "starą",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Żeński: starą."
+        },
+        {
+          "id": "g7-14",
+          "text": "Biuro sprzedaje ___ kawalerkę. (tani)",
+          "answer": "tanią",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Po miękkim: -ią: tanią."
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 5,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Pan, Pani, Państwo i zaimki osobowe",
+      "instruction": "Wybierz albo wpisz biernik zaimka. W podpowiedzi jest mianownik.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Dzień dobry. Zapraszam ___ do biura. (Pani)",
+          "answer": "Panią",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "options": [
+            "Pani",
+            "Panią",
+            "Panie"
+          ],
+          "explanation": "Pani → Panią."
+        },
+        {
+          "id": "g8-2",
+          "text": "Panie Marku, znam ___ z internetu. (Pan)",
+          "answer": "Pana",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "options": [
+            "Pan",
+            "Pana",
+            "Panu"
+          ],
+          "explanation": "Pan → Pana."
+        },
+        {
+          "id": "g8-3",
+          "text": "Państwo Lisowie, zapraszam ___ do środka. (Państwo)",
+          "answer": "Państwa",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "options": [
+            "Państwo",
+            "Państwa",
+            "Państwu"
+          ],
+          "explanation": "Państwo → Państwa."
+        },
+        {
+          "id": "g8-4",
+          "text": "— Zna Pani tego klienta? — Tak, znam ___. (on)",
+          "answer": "go",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "options": [
+            "go",
+            "mu",
+            "on"
+          ],
+          "explanation": "On → go."
+        },
+        {
+          "id": "g8-5",
+          "text": "— Zna Pan tę kamienicę? — Tak, znam ___ dobrze. (ona)",
+          "answer": "ją",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "options": [
+            "ją",
+            "jej",
+            "ona"
+          ],
+          "explanation": "Ona → ją."
+        },
+        {
+          "id": "g8-6",
+          "text": "— Widzi Pan te mieszkania? — Tak, widzę ___. (one)",
+          "answer": "je",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "options": [
+            "je",
+            "ich",
+            "im"
+          ],
+          "explanation": "One (rzeczy) → je."
+        },
+        {
+          "id": "g8-7",
+          "text": "— Zna Pan państwa Lisów? — Tak, znam ___ od roku. (oni)",
+          "answer": "ich",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "options": [
+            "ich",
+            "je",
+            "im"
+          ],
+          "explanation": "Oni (mężczyźni, grupa z mężczyzną) → ich."
+        },
+        {
+          "id": "g8-8",
+          "text": "Pan Paweł zaprasza ___ na oglądanie. (ja)",
+          "answer": "mnie",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "options": [
+            "mnie",
+            "mi",
+            "ja"
+          ],
+          "explanation": "Ja → mnie."
+        },
+        {
+          "id": "g8-9",
+          "text": "Natalia mówi do Marty: «Znam ___ już od tygodnia.» (ty)",
+          "answer": "cię",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "options": [
+            "cię",
+            "ci",
+            "ty"
+          ],
+          "explanation": "Ty → cię (krótka forma)."
+        },
+        {
+          "id": "g8-10",
+          "text": "Pan Marek zaprasza ___ w piątek. (my)",
+          "answer": "nas",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "options": [
+            "nas",
+            "nam",
+            "my"
+          ],
+          "explanation": "My → nas."
+        },
+        {
+          "id": "g8-11",
+          "text": "Dzieci, zapraszam ___ do środka. (wy)",
+          "answer": "was",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "options": [
+            "was",
+            "wam",
+            "wy"
+          ],
+          "explanation": "Wy → was."
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 5,
+      "exercise_type": "sentence-building",
+      "title": "9. Pułapki: «Pan», «Pani», «Państwo» — popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd w formie zaimka. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g9-1",
+          "prompt": "Zapraszam Pani na oglądanie w czwartek.",
+          "answer": "Zapraszam Panią na oglądanie w czwartek.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Ukr. «Вас» nie zmienia się ze względu na płeć, a po polsku mamy Pan / Pani / Państwo i osobny biernik: Panią.",
+          "accept": [
+            "W czwartek zapraszam Panią na oglądanie.",
+            "Na oglądanie w czwartek zapraszam Panią."
+          ]
+        },
+        {
+          "id": "g9-4",
+          "prompt": "Znam Pani z internetu.",
+          "answer": "Znam Panią z internetu.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Ukr. «Вас» to jedna forma. Po polsku mówisz do kobiety Pani, a w bierniku Panią.",
+          "accept": [
+            "Panią znam z internetu."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "g10",
+      "part": 6,
+      "exercise_type": "fill-in-blank",
+      "title": "10. Czasowniki z biernikiem: kupować, oglądać, zapraszać",
+      "instruction": "Wpisz całą grupę w bierniku. W podpowiedzi jest mianownik.",
+      "items": [
+        {
+          "id": "g10-1",
+          "text": "Natalia podpisuje z klientką ___. (umowa przedwstępna)",
+          "answer": "umowę przedwstępną",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Żeński: -ę, -ą: umowę przedwstępną."
+        },
+        {
+          "id": "g10-2",
+          "text": "Pani Joanna sprzedaje ___. (stara kamienica)",
+          "answer": "starą kamienicę",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Żeński: starą kamienicę."
+        },
+        {
+          "id": "g10-3",
+          "text": "Pan Tadeusz wynajmuje ___. (małe mieszkanie)",
+          "answer": "małe mieszkanie",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Nijaki: bez zmian."
+        },
+        {
+          "id": "g10-4",
+          "text": "Natalia pokazuje klientom ___. (nowy balkon)",
+          "answer": "nowy balkon",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Rzecz męska: bez zmian."
+        },
+        {
+          "id": "g10-5",
+          "text": "Natalia zaprasza ___ na oglądanie. (młody klient)",
+          "answer": "młodego klienta",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Człowiek: -ego, -a."
+        },
+        {
+          "id": "g10-6",
+          "text": "Paweł zna ___. (dobry notariusz)",
+          "answer": "dobrego notariusza",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Człowiek: dobrego notariusza."
+        },
+        {
+          "id": "g10-7",
+          "text": "Marta ogląda ___. (duże okna)",
+          "answer": "duże okna",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Rzeczy w mnogiej: bez zmian."
+        },
+        {
+          "id": "g10-8",
+          "text": "Biuro zaprasza ___ na prezentację. (wymagający klienci)",
+          "answer": "wymagających klientów",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Mężczyźni w mnogiej: -ych, -ów."
+        },
+        {
+          "id": "g10-9",
+          "text": "Pani Zielińska lubi ___. (ciche sąsiadki)",
+          "answer": "ciche sąsiadki",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Kobiety w mnogiej: bez zmian."
+        },
+        {
+          "id": "g10-10",
+          "text": "Natalia czyta ___. (długa umowa)",
+          "answer": "długą umowę",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Żeński: długą umowę."
+        }
+      ]
+    },
+    {
+      "block_id": "g11",
+      "part": 6,
+      "exercise_type": "fill-in-blank",
+      "title": "11. Wyjątki: czasowniki z dopełniaczem",
+      "instruction": "Te czasowniki nie biorą biernika, tylko dopełniacza. Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g11-1",
+          "text": "Pan Marek szuka ___. (mieszkanie / mieszkania)",
+          "answer": "mieszkania",
+          "grammar_point": "rekcja",
+          "options": [
+            "mieszkanie",
+            "mieszkania"
+          ],
+          "explanation": "Szukać + dopełniacz: szuka mieszkania."
+        },
+        {
+          "id": "g11-2",
+          "text": "Marta potrzebuje ___ do kredytu. (kopię / kopii)",
+          "answer": "kopii",
+          "grammar_point": "potrzebowac-dopelniacz",
+          "options": [
+            "kopię",
+            "kopii"
+          ],
+          "explanation": "Potrzebować + dopełniacz: potrzebuje kopii."
+        },
+        {
+          "id": "g11-3",
+          "text": "To mieszkanie wymaga ___. (remont / remontu)",
+          "answer": "remontu",
+          "grammar_point": "rekcja",
+          "options": [
+            "remont",
+            "remontu"
+          ],
+          "explanation": "Wymagać + dopełniacz: wymaga remontu."
+        },
+        {
+          "id": "g11-4",
+          "text": "Klient słucha ___ pośrednika. (radę / rady)",
+          "answer": "rady",
+          "grammar_point": "rekcja",
+          "options": [
+            "radę",
+            "rady"
+          ],
+          "explanation": "Słuchać + dopełniacz: słucha rady."
+        },
+        {
+          "id": "g11-5",
+          "text": "Natalia szuka ___ dla klientów. (kamienicę / kamienicy)",
+          "answer": "kamienicy",
+          "grammar_point": "rekcja",
+          "options": [
+            "kamienicy",
+            "kamienicę"
+          ],
+          "explanation": "Szukać + dopełniacz: szuka kamienicy."
+        },
+        {
+          "id": "g11-6",
+          "text": "Pani Joanna szuka ___ do piwnicy, a potem otwiera drzwi. (klucz / klucza)",
+          "answer": "klucza",
+          "grammar_point": "rekcja",
+          "options": [
+            "klucz",
+            "klucza"
+          ],
+          "explanation": "Szukać + dopełniacz: klucza."
+        }
+      ]
+    },
+    {
+      "block_id": "g12",
+      "part": 7,
+      "exercise_type": "fill-in-blank",
+      "title": "12. Przyimki z biernikiem: na, o, za, przez, w",
+      "instruction": "Wybierz albo wpisz przyimek, który pasuje do zdania.",
+      "items": [
+        {
+          "id": "g12-1",
+          "text": "Klienci czekają ___ odpowiedź.",
+          "answer": "na",
+          "grammar_point": "przypadki-przyimki",
+          "options": [
+            "na",
+            "o",
+            "za"
+          ],
+          "explanation": "Czekać na + biernik."
+        },
+        {
+          "id": "g12-2",
+          "text": "Marta pyta ___ cenę.",
+          "answer": "o",
+          "grammar_point": "przypadki-przyimki",
+          "options": [
+            "na",
+            "za",
+            "o"
+          ],
+          "explanation": "Pytać o + biernik."
+        },
+        {
+          "id": "g12-3",
+          "text": "Paweł prosi ___ kopię umowy.",
+          "answer": "o",
+          "grammar_point": "przypadki-przyimki",
+          "options": [
+            "o",
+            "na",
+            "przez"
+          ],
+          "explanation": "Prosić o + biernik."
+        },
+        {
+          "id": "g12-4",
+          "text": "Dziękuję ___ telefon.",
+          "answer": "za",
+          "grammar_point": "przypadki-przyimki",
+          "options": [
+            "na",
+            "za",
+            "o"
+          ],
+          "explanation": "Dziękować za + biernik."
+        },
+        {
+          "id": "g12-5",
+          "text": "Umawiamy się ___ spotkanie.",
+          "answer": "na",
+          "grammar_point": "przypadki-przyimki",
+          "options": [
+            "za",
+            "o",
+            "na"
+          ],
+          "explanation": "Umówić się na + biernik."
+        },
+        {
+          "id": "g12-6",
+          "text": "Pani Zielińska odpowiada ___ pytanie klienta.",
+          "answer": "na",
+          "grammar_point": "przypadki-przyimki",
+          "options": [
+            "o",
+            "za",
+            "na"
+          ],
+          "explanation": "Odpowiadać na + biernik."
+        },
+        {
+          "id": "g12-7",
+          "text": "Spotkanie jest ___ piątek.",
+          "answer": "w",
+          "grammar_point": "przyimki-czasu",
+          "options": [
+            "w",
+            "na",
+            "za"
+          ],
+          "explanation": "Dzień tygodnia: w + biernik (w piątek)."
+        },
+        {
+          "id": "g12-8",
+          "text": "Oglądamy mieszkanie w ___. (środa)",
+          "answer": "środę",
+          "grammar_point": "przyimki-czasu",
+          "explanation": "w + biernik: w środę."
+        },
+        {
+          "id": "g12-9",
+          "text": "Pan Marek przychodzi w ___. (niedziela)",
+          "answer": "niedzielę",
+          "grammar_point": "przyimki-czasu",
+          "explanation": "w + biernik: w niedzielę."
+        },
+        {
+          "id": "g12-10",
+          "text": "Pani Joanna wysyła dokumenty ___ internet.",
+          "answer": "przez",
+          "grammar_point": "przypadki-przyimki",
+          "options": [
+            "przez",
+            "za",
+            "o"
+          ],
+          "explanation": "Przez + biernik: sposób, środek (przez internet)."
+        },
+        {
+          "id": "g12-11",
+          "text": "Klienci oglądają mieszkanie w ___. (sobota)",
+          "answer": "sobotę",
+          "grammar_point": "przyimki-czasu",
+          "explanation": "w + biernik: w sobotę."
+        }
+      ]
+    },
+    {
+      "block_id": "g13",
+      "part": 7,
+      "exercise_type": "sentence-building",
+      "title": "13. Pułapki: czekam na, szukam mieszkania, za godzinę — popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz całe zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g13-1",
+          "prompt": "Czekamy Państwa w piątek.",
+          "answer": "Czekamy na Państwa w piątek.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Ukr. «чекаємо Вас» bez przyimka, a po polsku czekać wymaga na + biernik.",
+          "accept": [
+            "W piątek czekamy na Państwa."
+          ]
+        },
+        {
+          "id": "g13-2",
+          "prompt": "Oddzwonię do Pani przez godzinę.",
+          "answer": "Oddzwonię do Pani za godzinę.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Ukr. «через годину» to nie przez godzinę: po polsku przez = «протягом», a «через» w czasie = za.",
+          "accept": [
+            "Za godzinę oddzwonię do Pani."
+          ]
+        },
+        {
+          "id": "g13-3",
+          "prompt": "Szukam mieszkanie dla klientów.",
+          "answer": "Szukam mieszkania dla klientów.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Ukr. «шукаю квартиру» (biernik), a po polsku szukać + dopełniacz: mieszkania.",
+          "accept": [
+            "Dla klientów szukam mieszkania."
+          ]
+        },
+        {
+          "id": "g13-4",
+          "prompt": "Pytam klienta budżet.",
+          "answer": "Pytam klienta o budżet.",
+          "grammar_point": "kalki-uk",
+          "explanation": "Po polsku pytać kogoś o co: potrzebny przyimek o + biernik.",
+          "accept": [
+            "Pytam o budżet klienta."
+          ]
+        }
+      ]
+    },
+    {
+      "block_id": "gz",
+      "part": 8,
+      "exercise_type": "fill-in-blank",
+      "title": "14. Ćwiczenia zbiorcze: biernik",
+      "instruction": "Wszystkie porcje razem, bez ściągi. Wybierz albo wpisz właściwą formę.",
+      "items": [
+        {
+          "id": "gz-1",
+          "text": "Klientka podpisuje ___. (umowa)",
+          "answer": "umowę",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "Żeński -a → -ę: umowę."
+        },
+        {
+          "id": "gz-2",
+          "text": "Natalia zaprasza ___ na oglądanie. (państwo Lisowie)",
+          "answer": "państwa Lisów",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Grupa z mężczyzną: państwa Lisów."
+        },
+        {
+          "id": "gz-3",
+          "text": "Wysyłam wszystkie ___ klientom. (dokument)",
+          "answer": "dokumenty",
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "Rzecz w mnogiej: dokumenty."
+        },
+        {
+          "id": "gz-4",
+          "text": "Znam dobrze ___. (ten notariusz)",
+          "answer": "tego notariusza",
+          "grammar_point": "zaimki-wskazujace",
+          "explanation": "Człowiek: tego notariusza."
+        },
+        {
+          "id": "gz-5",
+          "text": "Pani Marta lubi ___ okolicę. (cichy)",
+          "answer": "cichą",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Żeński: cichą."
+        },
+        {
+          "id": "gz-6",
+          "text": "— Zna Pan tę dzielnicę? — Tak, znam ___ dobrze. (ona)",
+          "answer": "ją",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "options": [
+            "ją",
+            "jej",
+            "ona"
+          ],
+          "explanation": "Ona → ją."
+        },
+        {
+          "id": "gz-7",
+          "text": "Pan Marek wynajmuje ___. (małe mieszkanie)",
+          "answer": "małe mieszkanie",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Nijaki: bez zmian."
+        },
+        {
+          "id": "gz-8",
+          "text": "Spotkanie jest ___ czwartek.",
+          "answer": "w",
+          "grammar_point": "przyimki-czasu",
+          "options": [
+            "na",
+            "w",
+            "za"
+          ],
+          "explanation": "Dzień tygodnia: w + biernik."
+        },
+        {
+          "id": "gz-9",
+          "text": "Pani Joanna prosi ___ o kopię dokumentu. (Pan)",
+          "answer": "Pana",
+          "grammar_point": "zaimki-osobowe-przypadki",
+          "options": [
+            "Pan",
+            "Pana",
+            "Panu"
+          ],
+          "explanation": "Pan → Pana."
+        },
+        {
+          "id": "gz-10",
+          "text": "Mam ___. (nowy klient)",
+          "answer": "nowego klienta",
+          "grammar_point": "biernik-przymiotnik",
+          "explanation": "Człowiek: nowego klienta."
+        },
+        {
+          "id": "gz-11",
+          "text": "Znam wszystkich ___ w tym budynku. (ludzie)",
+          "answer": "ludzi",
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Ludzie → ludzi."
+        },
+        {
+          "id": "gz-12",
+          "text": "Natalia czeka ___ klienta przed biurem.",
+          "answer": "na",
+          "grammar_point": "przypadki-przyimki",
+          "options": [
+            "na",
+            "o",
+            "za"
+          ],
+          "explanation": "Czekać na + biernik."
+        },
+        {
+          "id": "gz-13",
+          "text": "Marta zna ___ z przedszkola. (kolega)",
+          "answer": "kolegę",
+          "grammar_point": "biernik-osobowy",
+          "explanation": "Mężczyzna na -a: kolegę."
+        },
+        {
+          "id": "gz-14",
+          "text": "Który wyraz jest bez zmian w bierniku: balkon czy klient?",
+          "answer": "balkon",
+          "grammar_point": "biernik-rzeczownik",
+          "options": [
+            "klient",
+            "balkon"
+          ],
+          "explanation": "Rzecz (balkon) = mianownik; człowiek (klient) → klienta."
+        }
+      ]
+    }
+  ]
+}
