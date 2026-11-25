@@ -5,6 +5,7 @@ import { NotebookShell } from '@/components/exercises/NotebookShell';
 import { AccountBar } from '@/components/exercises/AccountBar';
 import { FocusKeeper } from '@/components/exercises/FocusKeeper';
 import { StyleFlag } from '@/components/exercises/StyleFlag';
+import { FrameSync } from '@/components/exercises/FrameSync';
 import { LiveSpectator } from '@/components/exercises/LiveSpectator';
 import '@/components/exercises/notebook.css';
 import '@/components/exercises/notebook-paper.css';
@@ -17,6 +18,10 @@ const EMBED_CSS = `
   .ww-tabbar { display: none !important; }
   .ww-report-btn { display: none !important; }
   body { background: #f3f5fc !important; padding-bottom: 0 !important; }
+  /* вправа в iframe: без власного скролу й без «мінімум на весь екран» — висоту задає вміст (FrameSync) */
+  html.ww-framed, html.ww-framed body { height: auto !important; overflow: hidden !important; }
+  html.ww-framed .embed-shell { min-height: 0 !important; }
+  html.ww-framed .nb-wrap { padding-top: 0 !important; padding-bottom: 12px !important; }
 `;
 
 /** Notebook chrome for Notion iframes — hide root TopNav. */
@@ -39,6 +44,7 @@ export default function EmbedLayout({ children }: { children: ReactNode }) {
           <LiveSpectator>{children}</LiveSpectator>
           <FocusKeeper />
           <StyleFlag />
+          <FrameSync />
         </NotebookShell>
       </I18nProvider>
     </div>

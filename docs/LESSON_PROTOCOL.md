@@ -36,6 +36,8 @@
 
 Порядок кроків 3→7 не міняти: сторінка з embed не потрапляє в `main` раніше за свій JSON (інакше — порожні вікна). Стану «коміти лише локально» не існує: хто закомітив — той пушить і перевіряє `--remote` у тому ж ході. При 403 на push — `add_repo(jurijteacher-cell, WerbaWay, access=push)`; 503 — повторити. Крок технічно неможливий — зроби решту й одним рядком назви факт.
 
+**Вікна вправ — без вікна у вікні** (Юра, 25.11): `/embed/…` самі розтягують iframe на повну висоту (`FrameSync` + `EmbedFrame`), власного скролу немає. Нових контейнерів із `100vh`/`overflow:auto` у вправах не робити; деталі — `DESIGN_SYSTEM.md`.
+
 **Лекція «є на сайті»** = `src/content/pages/<slug>.md` + `teacher-pages/<slug>.md` (`teacherOf`) + усі JSON у `src/content/queue-published/` (мінімум `vocab`, `comm-tasks`, `hw`) + запис у `content-queue/_manifest.json` + переклади `src/content/i18n/**`. `slug` = `lesson_id`, `^[a-z0-9][a-z0-9-]*$`; після публікації `lesson_id` і `id` завдань не змінюються (на них висять спроби учнів). Формат сторінки й frontmatter — `SITE_PUBLISHING.md` §4.
 
 ## 2. Мова

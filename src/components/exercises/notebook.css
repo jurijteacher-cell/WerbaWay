@@ -3498,3 +3498,28 @@
 .mx-ai-fix span { color: var(--nb-ink-soft); }
 .mx-explain { margin: 4px 0 0; font-size: 13.5px; line-height: 1.5; color: var(--nb-ink-soft); }
 .mx-explain-list { margin: 12px 0 0; padding-left: 18px; font-size: 13.5px; line-height: 1.5; color: var(--nb-ink-soft); }
+
+/* ── бокове меню частин іспиту (як навігація збоку в уроках) ───────────────── */
+.nb-sheet:has(.mx) { overflow: clip; } /* clip, не hidden: інакше sticky не працює */
+.mx-body { display: block; }
+@media (min-width: 820px) {
+  .mx-body { display: grid; grid-template-columns: 196px minmax(0, 1fr); gap: 26px; align-items: start; }
+  .mx-body > .mx-rail {
+    flex-direction: column; flex-wrap: nowrap; gap: 6px; margin: 0;
+    position: sticky; top: 14px;
+    padding: 10px; background: var(--nb-paper-2); border: 1px solid var(--nb-edge); border-radius: var(--nb-r-lg);
+  }
+  .mx-body > .mx-rail button { width: 100%; border-radius: 12px; justify-content: flex-start; }
+  .mx-body > .mx-rail .mx-clock { margin: 6px 4px 2px; align-self: flex-start; }
+  /* у iframe (вікно вправи в уроці) sticky не працює — зсув за видимим фрагментом */
+  .ww-framed .mx-body > .mx-rail {
+    position: relative; top: 0;
+    transform: translateY(max(0px, calc(var(--ww-vt, 0px) - var(--mx-off, 0px) + 14px)));
+    transition: transform .12s linear;
+  }
+}
+.mx-main { min-width: 0; }
+
+/* вправа в iframe завжди вища за екран: фіксовані елементи прив'язуємо до видимого фрагмента */
+.ww-framed .nb-paused-bar { top: calc(12px + var(--ww-vt, 0px)); }
+.ww-framed .nb-authwall { inset: auto; left: 0; right: 0; top: var(--ww-vt, 0px); height: var(--ww-vh, 100vh); }

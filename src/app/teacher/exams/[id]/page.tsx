@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { AutoFrame } from '@/components/lesson/AutoFrame';
 import { notFound } from 'next/navigation';
 import { requireTeacher } from '../../results/requireTeacher';
 import { fmt, pctClass } from '../../results/format';
@@ -156,10 +157,10 @@ export default async function ExamDetailPage({ params }: { params: { id: string 
             {tr("Відкрити на весь екран")} ↗
           </a>
         </div>
-        <iframe
+        <AutoFrame
           src={`/embed/${row.lesson_id}/mock-exam?review=${row.id}`}
           title={tr("Розв'язання учня")}
-          className="h-[1100px] w-full rounded-xl border border-ink-line bg-white"
+          className="w-full rounded-xl border border-ink-line bg-white"
         />
       </section>
 

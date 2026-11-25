@@ -1,11 +1,17 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import { useAutoFrame } from './useAutoFrame';
 import type { EmbedKind } from '@/lib/pages/pages';
 import { useLocale, useT, withLang } from '@/i18n/client';
 import { liveKey } from '@/lib/live/protocol';
 
-/** Висота вікна вправи: фіксована за типом (як у Notion), далі скрол усередині. */
+/**
+ * Початкова (до першого повідомлення вправи) і мінімальна висота вікна вправи.
+ * Власних скролів немає: внутрішні вправи (/embed, /slides) повідомляють свою висоту (FrameSync),
+ * і вікно розтягується на весь вміст. Фіксована висота лишається лише для зовнішніх сайтів (Quizlet тощо),
+ * яких ми не можемо виміряти.
+ */
 const HEIGHT: Record<EmbedKind, number> = {
   exam: 820,
   'comm-tasks': 860,
@@ -47,7 +53,12 @@ export function EmbedFrame({ src: rawSrc, title, kind, watch }: { src: string; t
   const langSrc = withLang(rawSrc, locale);
   const spectate = !!watch && langSrc.startsWith('/');
   const src = spectate ? `${langSrc}${langSrc.includes('?') ? '&' : '?'}ww_watch=1` : langSrc;
-  const h = HEIGHT[kind];
+  const base = HEIGHT[kind];
+  const auto = src.startsWith('/');
+  const frameRef = useRef<HTMLIFrameElement>(null);
+  const { height: h, sendViewport } = useAutoFrame(frameRef, auto, () => setLoaded(true));
+
+  const frameStyle = auto ? { height: h ?? Math.min(base, 520) } : { height: `min(${base}px, 88vh)` };
   return (
     <figure className="lp-embed" data-kind={kind}>
       <figcaption>
@@ -57,14 +68,16 @@ export function EmbedFrame({ src: rawSrc, title, kind, watch }: { src: string; t
           {t('відкрити окремо')} ↗
         </a>
       </figcaption>
-      <div className="lp-embed-frame" style={{ height: `min(${h}px, 88vh)` }}>
+      <div className="lp-embed-frame" data-auto={auto ? '' : undefined} style={frameStyle}>
         {!loaded && <div className="lp-embed-skel">{t('Завантаження…')}</div>}
         <iframe
+          ref={frameRef}
+          scrolling={auto ? 'no' : undefined}
           src={src}
           title={title}
           data-ww-live={spectate ? liveKey(src) : undefined}
           loading="lazy"
-          onLoad={() => setLoaded(true)}
+          onLoad={() => { setLoaded(true); sendViewport(); }}
           allow="autoplay; fullscreen; clipboard-write"
         />
       </div>

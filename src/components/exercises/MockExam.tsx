@@ -151,6 +151,18 @@ function MockExamInner({
   const [review, setReview] = useState<ReviewInfo | null>(null);
   const [reviewError, setReviewError] = useState<string | null>(null);
   const topRef = useRef<HTMLDivElement | null>(null);
+  const bodyRef = useRef<HTMLDivElement | null>(null);
+
+  // у iframe-вікні sticky не діє: бокове меню їде за видимим фрагментом (--ww-vt) від початку блоку
+  useEffect(() => {
+    const el = bodyRef.current;
+    if (!el) return;
+    const set = () => el.style.setProperty('--mx-off', `${Math.round(el.getBoundingClientRect().top + window.scrollY)}px`);
+    set();
+    const ro = new ResizeObserver(set);
+    ro.observe(document.body);
+    return () => ro.disconnect();
+  }, []);
   const reviewing = Boolean(reviewId);
 
   // збережені спроби з акаунта: розбір будь-якої з них і перездача — з будь-якого пристрою
@@ -449,7 +461,8 @@ function MockExamInner({
         </div>
       ) : null}
 
-      <nav className="nb-idx" aria-label="Części egzaminu">
+      <div className="mx-body" ref={bodyRef}>
+      <nav className="nb-idx mx-rail" aria-label="Części egzaminu">
         {tabs.map((t) => (
           <button
             key={t.id}
@@ -469,6 +482,8 @@ function MockExamInner({
           </span>
         ) : null}
       </nav>
+
+      <div className="mx-main">
 
       {tab === 'start' ? (
         <section className="mx-panel">
@@ -620,6 +635,8 @@ function MockExamInner({
           ))}
         </div>
       ) : null}
+      </div>
+      </div>
     </div>
   );
 }
