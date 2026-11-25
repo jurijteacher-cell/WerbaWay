@@ -1,6 +1,7 @@
 # Werba Way — карта курсу «A2 → B1, підготовка до telc Język polski B1·B2»
 
 Модуль: `pl-telc-b1` · формат: індивідуально · id уроків: `pl-telc-b1-{n:02}-{slug}`
+Пробні іспити telc — окремий модуль `pl-telc-probny`; розбір помилок з листів — `pl-bledy` (див. `SITE_PUBLISHING.md`). Кожен урок має `el1`/`el2` — Elementy języka (`LESSON_PROTOCOL.md`).
 
 ## 1. Під що готуємо: формат іспиту telc B1·B2
 
