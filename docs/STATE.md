@@ -1,4 +1,4 @@
-# Werba Way — STATE (поточний стан, 25.11.2026)
+# Werba Way — STATE (поточний стан, 26.11.2026)
 
 Лише те, що діє зараз. Зроблене — видаляти, не дописувати «✅ дата». Джерело правди по готових уроках: `content-queue/_manifest.json` і статуси в `docs/CURRICULUM_*.md`. Цей файл — єдине місце для черги, відкритих пунктів, учнів і голосів (раніше жив у claude.ai Project; там тепер лише вказівник).
 
@@ -24,7 +24,7 @@
 ## 2. Черга нових лекцій (перевірити за `_manifest.json` і картою перед стартом)
 
 - **A2 `pl-a2`:** зроблено 80 і 81. Далі — найменший невиконаний номер серед 73–88 (73 `isc-jechac-przedrostki` → 74 `ktory-podstawy` → 75–76 powtórka / kontrolna M4 → 77–83 M5 → 84–88).
-- **B1 `pl-b1-group`:** лекції 1–22 + R1–R4 готові → **пробний іспит B1 курсу** (`mock-exam`, матеріал 1–22; слухання — лише з ElevenLabs).
+- **B1 `pl-b1-group`:** лекції 1–22, 23 (Internet) і 24 (Wygląd i charakter) + R1–R4 готові → **пробний іспит B1 курсу** (`mock-exam`, матеріал 1–22; слухання — лише з ElevenLabs).
 - **telc B1 `pl-telc-b1`:** далі урок 5 «U lekarza» (`pl-telc-b1-05-zdrowie`, dopełniacz) → 6 powtórka-1 + mini-test. Глоси — російською.
 - **B2:** №3 Media i dezinformacja → №4 → №6 → №10 → №11.
 - **`pl-ksieg`:** 01–05 готові. Далі **06** — типи договорів, składki ZUS, lista płac (пасивний стан). Сюжет: Halina у бюро; клієнти pani Iwona (kwiaciarnia), pan Tomasz (sklep rowerowy), pan Adam (sp. z o.o., 9% CIT).

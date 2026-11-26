@@ -1,0 +1,111 @@
+{
+  "lesson_id": "pl-b1-group-24-charakter",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: opisujemy i oceniamy ludzi",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę z nauczycielem.",
+  "estimated_minutes": 40,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "read-then-play",
+      "front_title": "Szukam współlokatora",
+      "back_scenario": "Najpierw przeczytaj przykładową rozmowę. Potem odegraj swoją: dzwoni kandydat na współlokatora (gra nauczyciel), a Ty wynajmujesz pokój i chcesz wiedzieć, jaki jest ten człowiek.",
+      "back_checklist": [
+        "Zapytaj, czym się zajmuje i o jakich godzinach wraca do domu.",
+        "Dowiedz się, jaki jest w domu: porządny, towarzyski, cichy?",
+        "Powiedz, kogo szukasz: „Szukam kogoś, kto…”",
+        "Powiedz, co jest dla Ciebie najważniejsze: „Ważne jest to, czy…”",
+        "Ustalcie, kiedy kandydat może przyjść zobaczyć pokój."
+      ],
+      "model_dialogue": [
+        {
+          "role": "Kandydat",
+          "text": "Dzień dobry, dzwonię w sprawie pokoju. Czy jest jeszcze wolny?"
+        },
+        {
+          "role": "Ty",
+          "text": "Dzień dobry, tak. Proszę powiedzieć coś o sobie — czym się pan zajmuje?"
+        },
+        {
+          "role": "Kandydat",
+          "text": "Jestem kucharzem. Pracuję na zmiany, więc czasem wracam po dwudziestej trzeciej."
+        },
+        {
+          "role": "Ty",
+          "text": "Rozumiem. Szukam kogoś, kto jest spokojny po dziesiątej wieczorem."
+        },
+        {
+          "role": "Kandydat",
+          "text": "To nie problem. Wracam, biorę prysznic i idę spać."
+        },
+        {
+          "role": "Ty",
+          "text": "A jaki jest pan w kuchni? Mój poprzedni współlokator nie zmywał naczyń."
+        },
+        {
+          "role": "Kandydat",
+          "text": "Jestem raczej drobiazgowy. Dla mnie czysta kuchnia to podstawa."
+        },
+        {
+          "role": "Ty",
+          "text": "Dobrze to brzmi. Ważne jest też to, czy rachunki płacimy w terminie."
+        },
+        {
+          "role": "Kandydat",
+          "text": "Jestem punktualny także w rachunkach. Mogę płacić pierwszego dnia miesiąca."
+        },
+        {
+          "role": "Ty",
+          "text": "Świetnie. Kiedy mógłby pan przyjść i zobaczyć pokój?"
+        },
+        {
+          "role": "Kandydat",
+          "text": "Może w czwartek po szesnastej? Wtedy kończę wcześniej."
+        },
+        {
+          "role": "Ty",
+          "text": "Pasuje. To do czwartku, podam panu kod do klatki SMS-em."
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Zgadnij, o kim mówię",
+      "back_scenario": "Wybierz jedną osobę ze zdjęcia w podręczniku, z filmu albo ze swojej rodziny. Opisz ją tak, żeby nauczyciel zgadł, o kim mówisz. Nauczyciel zadaje pytania.",
+      "back_checklist": [
+        "Opisz wzrost i sylwetkę: „Jest wysoki i barczysty / drobna i szczupła”.",
+        "Opisz twarz i włosy: kręcone, siwe, do ramion, wąsy, broda, piegi.",
+        "Dodaj dwie cechy charakteru i przykład zachowania.",
+        "Powiedz, do kogo ta osoba jest podobna i kogo Ci przypomina.",
+        "Odpowiedz na pytania nauczyciela: „Jaki on jest?”, „Który to jest?”"
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "front_title": "Polecam znajomego",
+      "back_scenario": "Twój znajomy szuka pracy w firmie, w której pracuje nauczyciel. Nauczyciel jest kierownikiem i pyta Cię o tego człowieka. Polecasz go, ale mówisz też uczciwie o jednej wadzie.",
+      "back_checklist": [
+        "Powiedz, kim jest ta osoba i skąd ją znasz.",
+        "Podaj trzy zalety i do każdej jeden przykład z życia.",
+        "Powiedz uczciwie o jednej wadzie i o tym, kiedy ona nie przeszkadza.",
+        "Użyj zdań: „To ktoś, kto…”, „To, co w nim cenię, to…”",
+        "Odpowiedz, czy można mu zaufać i dlaczego tak myślisz."
+      ]
+    },
+    {
+      "id": "c4",
+      "mode": "play",
+      "front_title": "Monolog: jaki człowiek jest dobrym przyjacielem?",
+      "back_scenario": "Mów dwie–trzy minuty bez przerwy. Potem nauczyciel zada Ci cztery pytania.",
+      "back_checklist": [
+        "Powiedz, jakie trzy cechy musi mieć dobry przyjaciel.",
+        "Podaj jeden przykład sytuacji, która to sprawdza.",
+        "Powiedz, jakiej cechy nie wybaczasz nikomu.",
+        "Porównaj: „To, co widać od razu” i „to, co widać po roku”.",
+        "Zakończ zdaniem o sobie: „Sam jestem kimś, kto…”"
+      ]
+    }
+  ]
+}

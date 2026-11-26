@@ -1,0 +1,1127 @@
+{
+  "lesson_id": "pl-b1-group-24-charakter",
+  "exercise_type": "fill-in-blank",
+  "title": "Ćwiczenia: opis osoby, wyrazy względne, jaki/który, swój",
+  "instruction": "Rób ćwiczenia po kolei. Po każdej odpowiedzi kliknij „Sprawdź”.",
+  "estimated_minutes": 65,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "Tekst. Ułóż w kolejności",
+      "instruction": "Co było najpierw, a co potem? Klikaj zdania po kolei.",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "Babcia Hanna przyjechała z Zalesia i przywiozła stary album.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "Maksym wziął łysego pana ze zdjęcia za kogoś obcego.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Wieczorem zadzwonił Bartek i przeczytał swoje ogłoszenie.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Taras opowiedział o współlokatorze z akademika.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "Bartek dopisał do ogłoszenia zdanie o wyglądzie i charakterze.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Po trzech dniach Bartek wybrał osobę, która pytała o rachunki.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Tekst. Uzupełnij luki",
+      "instruction": "Uzupełnij streszczenie tekstu. W każdą lukę wpisz jedno słowo z listy po prawej.",
+      "text": "Babcia Hanna przywiozła stary {t2-1} i opowiadała o ludziach ze zdjęć. Jej ojciec był wysoki i {t2-2}, zawsze z wąsami, a przy tym najcierpliwszy człowiek, jakiego znała. Jej siostra Zofia była drobna i bardzo {t2-3}: robiła to, co postanowiła. Maksym pomylił się i powiedział, że pradziadek jest {t2-4}, a on był tylko krótko ostrzyżony.\n\nWieczorem zadzwonił Bartek, bo szuka {t2-5} na miejsce kolegi, który wyprowadza się z Warszawy. W ogłoszeniu napisał, że szuka spokojnej i {t2-6} osoby. Taras przypomniał, że jego pierwszy współlokator robił dobre {t2-7}, a potem okazał się skąpy. Babcia powiedziała, że charakter poznaje się po {t2-8}, a nie po wyglądzie.",
+      "items": [
+        {
+          "id": "t2-1",
+          "answer": "album",
+          "hint": "(rzeczownik)",
+          "options": [
+            "paszport",
+            "list",
+            "album"
+          ],
+          "explanation": "Babcia przywiozła album ze zdjęciami.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "t2-2",
+          "answer": "barczysty",
+          "hint": "(o ramionach)",
+          "options": [
+            "siwy",
+            "barczysty",
+            "drobny"
+          ],
+          "explanation": "Barczysty = o szerokich ramionach; drobny to przeciwieństwo.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "t2-3",
+          "answer": "uparta",
+          "hint": "(cecha charakteru, ż.)",
+          "options": [
+            "uparta",
+            "leniwa",
+            "nieśmiała"
+          ],
+          "explanation": "Zofia nie zmieniała decyzji — była uparta.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "t2-4",
+          "answer": "łysy",
+          "hint": "(o włosach)",
+          "options": [
+            "łysy",
+            "zadbany",
+            "siwy"
+          ],
+          "explanation": "Maksym powiedział „łysy pan”, a babcia go poprawiła.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "t2-5",
+          "answer": "współlokatora",
+          "hint": "(kogo? dopełniacz)",
+          "options": [
+            "kolegi",
+            "sąsiada",
+            "współlokatora"
+          ],
+          "explanation": "Szukać kogo? — współlokatora, bo poprzedni się wyprowadza.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "t2-6",
+          "answer": "uczciwej",
+          "hint": "(jakiej? dopełniacz)",
+          "options": [
+            "wybuchowej",
+            "towarzyskiej",
+            "uczciwej"
+          ],
+          "explanation": "W ogłoszeniu: „spokojnej, uczciwej osoby”.",
+          "grammar_point": "przym-lp"
+        },
+        {
+          "id": "t2-7",
+          "answer": "wrażenie",
+          "hint": "(robić dobre…)",
+          "options": [
+            "spotkanie",
+            "wrażenie",
+            "zdjęcie"
+          ],
+          "explanation": "Robić dobre wrażenie — stałe połączenie.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "t2-8",
+          "answer": "czynach",
+          "hint": "(po czym? miejscownik)",
+          "options": [
+            "słowach",
+            "czynach",
+            "zdjęciach"
+          ],
+          "explanation": "Babcia mówi, że charakter poznasz po czynach.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "Słowa: kto to taki?",
+      "instruction": "Kliknij cechę po lewej, a potem jej opis po prawej.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "sumienny",
+          "right": "robi swoją pracę dokładnie i do końca",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "wyrozumiały",
+          "right": "rozumie błędy innych i daje drugą szansę",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "opanowany",
+          "right": "w trudnej sytuacji zostaje spokojny",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "zarozumiały",
+          "right": "uważa się za lepszego od innych",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "skąpy",
+          "right": "ma pieniądze, ale nie chce ich wydawać",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "drobiazgowy",
+          "right": "zwraca uwagę na każdy mały szczegół",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "zadbany",
+          "right": "dba o swoje ubranie, włosy i ręce",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "towarzyski",
+          "right": "lubi ludzi i szybko się z nimi poznaje",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Przymiotnik w odpowiedniej formie",
+      "instruction": "Wpisz przymiotnik w formie, której wymaga zdanie. Forma podstawowa jest w nawiasie.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Znam bardzo ___ człowieka — nigdy nie podnosi głosu.",
+          "answer": "cierpliwego",
+          "hint": "(cierpliwy)",
+          "explanation": "Znać kogo? — biernik: cierpliwego człowieka.",
+          "grammar_point": "przym-lp"
+        },
+        {
+          "id": "g2-2",
+          "text": "Szukamy ___ osoby do biura rachunkowego.",
+          "answer": "sumiennej",
+          "hint": "(sumienny)",
+          "explanation": "Szukać kogo? — dopełniacz żeński: sumiennej osoby.",
+          "grammar_point": "przym-lp"
+        },
+        {
+          "id": "g2-3",
+          "text": "Rozmawiałem z ___ ratownikiem o pierwszej pomocy.",
+          "answer": "opanowanym",
+          "hint": "(opanowany)",
+          "explanation": "Z kim? — narzędnik: z opanowanym ratownikiem.",
+          "grammar_point": "przym-lp"
+        },
+        {
+          "id": "g2-4",
+          "text": "Mój brat jest ___ mężczyzną i trenuje zapasy.",
+          "answer": "barczystym",
+          "hint": "(barczysty)",
+          "explanation": "Być kim? + rzeczownik → narzędnik: jest barczystym mężczyzną.",
+          "grammar_point": "przym-lp"
+        },
+        {
+          "id": "g2-5",
+          "text": "Opowiadam ci o ___ koledze z pracy, tym z ostatniej ławki.",
+          "answer": "nieśmiałym",
+          "hint": "(nieśmiały)",
+          "explanation": "O kim? — miejscownik: o nieśmiałym koledze.",
+          "grammar_point": "przym-lp"
+        },
+        {
+          "id": "g2-6",
+          "text": "To zadanie w sam raz dla ___ księgowej.",
+          "answer": "drobiazgowej",
+          "hint": "(drobiazgowy)",
+          "explanation": "Dla kogo? — dopełniacz żeński: dla drobiazgowej księgowej.",
+          "grammar_point": "przym-lp"
+        },
+        {
+          "id": "g2-7",
+          "text": "Nie znoszę ___ szefa, który poprawia wszystkich przy ludziach.",
+          "answer": "zarozumiałego",
+          "hint": "(zarozumiały)",
+          "explanation": "Nie znosić kogo? — dopełniacz po zaprzeczeniu: zarozumiałego szefa.",
+          "grammar_point": "przym-lp"
+        },
+        {
+          "id": "g2-8",
+          "text": "Ich dziecko jest ___ i wesołe, zna całe podwórko.",
+          "answer": "towarzyskie",
+          "hint": "(towarzyski)",
+          "explanation": "Rodzaj nijaki, mianownik: dziecko jest towarzyskie (nie „towarzyski”).",
+          "grammar_point": "przym-lp"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "3. Popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd typowy dla osób mówiących po ukraińsku. Napisz zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g3-1",
+          "prompt": "Ta człowiek jest bardzo miła.",
+          "answer": "Ten człowiek jest bardzo miły.",
+          "accept": [
+            "Ta osoba jest bardzo miła."
+          ],
+          "explanation": "„Człowiek” jest w polskim rodzaju męskiego: ten człowiek, miły. Rodzaj żeński ma słowo „osoba”.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g3-2",
+          "prompt": "Jest podobny na swojego ojca.",
+          "answer": "Jest podobny do swojego ojca.",
+          "accept": [
+            "Jest podobny do ojca."
+          ],
+          "explanation": "Podobny do + dopełniacz. „Podobny na” to kalka z ukraińskiego „схожий на”.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g3-3",
+          "prompt": "U niej jest dobry charakter.",
+          "answer": "Ona ma dobry charakter.",
+          "accept": [
+            "Ma dobry charakter."
+          ],
+          "explanation": "Cechy opisujemy czasownikiem „mieć”, nie konstrukcją „u kogoś jest”.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g3-4",
+          "prompt": "Jaki on na wygląd?",
+          "answer": "Jak on wygląda?",
+          "accept": [
+            "Jak wygląda?"
+          ],
+          "explanation": "O wygląd pytamy czasownikiem „wyglądać”: Jak on wygląda? „Jaki on jest?” pyta o charakter.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g3-5",
+          "prompt": "Nie wiem, jaki on.",
+          "answer": "Nie wiem, jaki on jest.",
+          "accept": [
+            "Nie wiem, jaka ona jest."
+          ],
+          "explanation": "Polskie zdanie potrzebuje formy „jest”; w ukraińskim „є” zwykle się pomija.",
+          "grammar_point": "kalki-uk"
+        },
+        {
+          "id": "g3-6",
+          "prompt": "Ona jest bardzo sympatyczna: ma piękne oczy i długie włosy.",
+          "answer": "Ona jest bardzo ładna: ma piękne oczy i długie włosy.",
+          "accept": [
+            "Ona jest bardzo piękna: ma piękne oczy i długie włosy."
+          ],
+          "explanation": "Fałszywy przyjaciel: „sympatyczny” to miły w kontakcie, a nie „симпатичний” = ładny.",
+          "grammar_point": "kalki-uk"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Ten, kto… To, co…",
+      "instruction": "Wybierz właściwą formę.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "___, kto dużo mówi, nie zawsze dużo wie.",
+          "answer": "Ten",
+          "options": [
+            "To",
+            "Który",
+            "Ten"
+          ],
+          "explanation": "O osobie: ten, kto. „To, co” mówimy o rzeczy albo sytuacji.",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g4-2",
+          "text": "Nie rozumiem ___, co do mnie mówisz.",
+          "answer": "tego",
+          "options": [
+            "tego",
+            "to",
+            "tym"
+          ],
+          "explanation": "Nie rozumieć czego? — dopełniacz po zaprzeczeniu: nie rozumiem tego, co…",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g4-3",
+          "text": "Pomogę ___, kto poprosi mnie pierwszy.",
+          "answer": "temu",
+          "options": [
+            "ten",
+            "temu",
+            "tego"
+          ],
+          "explanation": "Pomagać komu? — celownik: pomogę temu, kto…",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g4-4",
+          "text": "Wszystko, ___ wtedy obiecał, zrobił w ciągu tygodnia.",
+          "answer": "co",
+          "options": [
+            "kto",
+            "jaki",
+            "co"
+          ],
+          "explanation": "Po „wszystko, nic, to” używamy „co”, nie „który”.",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g4-5",
+          "text": "Nie ufam nikomu, ___ obiecuje szybkie pieniądze.",
+          "answer": "kto",
+          "options": [
+            "co",
+            "kto",
+            "którego"
+          ],
+          "explanation": "Po „nikt” o osobie: nikomu, kto…",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g4-6",
+          "text": "Zawsze pamiętam o ___, o czym rozmawialiśmy w samochodzie.",
+          "answer": "tym",
+          "options": [
+            "tym",
+            "tego",
+            "to"
+          ],
+          "explanation": "Pamiętać o czym? — miejscownik: o tym, o czym…",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g4-7",
+          "text": "To jest dokładnie ___, czego się bałem.",
+          "answer": "to",
+          "options": [
+            "to",
+            "tego",
+            "ten"
+          ],
+          "explanation": "„To, czego” — mianownik „to” w zdaniu głównym, a „czego” po „bać się”.",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g4-8",
+          "text": "Nie ma nic, ___ by go zdziwiło.",
+          "answer": "co",
+          "options": [
+            "kto",
+            "co",
+            "jakie"
+          ],
+          "explanation": "Po „nic” zawsze „co”: nic, co by…",
+          "grammar_point": "wzgledne-inne"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Jaki czy który?",
+      "instruction": "Wybierz właściwy wyraz. Podpowiedź: pasuje „ten” → który; pasuje „taki” → jaki.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Wybraliśmy tego kandydata, ___ znał najwięcej języków.",
+          "answer": "który",
+          "options": [
+            "jaki",
+            "co",
+            "który"
+          ],
+          "explanation": "W zdaniu głównym jest „tego” → względne „który”.",
+          "grammar_point": "ktory-przypadki"
+        },
+        {
+          "id": "g5-2",
+          "text": "To najcierpliwszy człowiek, ___ znałam.",
+          "answer": "jakiego",
+          "options": [
+            "którego",
+            "kogo",
+            "jakiego"
+          ],
+          "explanation": "Po stopniu najwyższym („najcierpliwszy”) używamy „jaki”: jakiego znałam.",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g5-3",
+          "text": "___ masz samochód? — Czerwonego kombi.",
+          "answer": "Jaki",
+          "options": [
+            "Czyj",
+            "Jaki",
+            "Który"
+          ],
+          "explanation": "Pytanie o cechę i typ → jaki. „Który” wybiera z konkretnego zbioru.",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g5-4",
+          "text": "___ film wybierasz: ten czy tamten?",
+          "answer": "Który",
+          "options": [
+            "Który",
+            "Czyj",
+            "Jaki"
+          ],
+          "explanation": "Wybór z dwóch znanych rzeczy → który.",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g5-5",
+          "text": "Szukam takiego współlokatora, ___ mieszkał ze mną w akademiku.",
+          "answer": "jaki",
+          "options": [
+            "kto",
+            "który",
+            "jaki"
+          ],
+          "explanation": "W zdaniu głównym jest „takiego” → względne „jaki”.",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g5-6",
+          "text": "Nie wiem, ___ on jest — nigdy z nim nie rozmawiałam.",
+          "answer": "jaki",
+          "options": [
+            "jaki",
+            "czyj",
+            "który"
+          ],
+          "explanation": "Pytanie zależne o charakter → jaki on jest.",
+          "grammar_point": "pytania-zalezne"
+        },
+        {
+          "id": "g5-7",
+          "text": "Nie wiem, ___ z nich jest starszy.",
+          "answer": "który",
+          "options": [
+            "jaki",
+            "który",
+            "czyj"
+          ],
+          "explanation": "Wybór jednej osoby z grupy → który z nich.",
+          "grammar_point": "pytania-zalezne"
+        },
+        {
+          "id": "g5-8",
+          "text": "Miała taką fryzurę, ___ noszą dziś wszystkie nastolatki.",
+          "answer": "jaką",
+          "options": [
+            "którą",
+            "co",
+            "jaką"
+          ],
+          "explanation": "„Taką” w zdaniu głównym → „jaką” w zdaniu podrzędnym.",
+          "grammar_point": "wzgledne-inne"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Czyj, gdzie, dokąd, kiedy",
+      "instruction": "Wybierz właściwy wyraz.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "___ to płaszcz leży na krzesełku w przedpokoju?",
+          "answer": "Czyj",
+          "options": [
+            "Który",
+            "Czyj",
+            "Jaki"
+          ],
+          "explanation": "Pytamy o właściciela → czyj.",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g6-2",
+          "text": "To ten pan, ___ pies biega po całym podwórku.",
+          "answer": "którego",
+          "options": [
+            "czyj",
+            "jakiego",
+            "którego"
+          ],
+          "explanation": "W zdaniu względnym właściciela wyrażamy przez „którego/której”, a nie „czyj”.",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g6-3",
+          "text": "Zalesie to wieś, ___ mieszka babcia mojego kolegi.",
+          "answer": "gdzie",
+          "options": [
+            "skąd",
+            "gdzie",
+            "dokąd"
+          ],
+          "explanation": "Miejsce bez ruchu → gdzie (można też: w której).",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g6-4",
+          "text": "Nie powiedział mi, ___ jedzie na ten weekend.",
+          "answer": "dokąd",
+          "options": [
+            "gdzie",
+            "dokąd",
+            "skąd"
+          ],
+          "explanation": "Kierunek ruchu → dokąd.",
+          "accept": [
+            "gdzie"
+          ],
+          "grammar_point": "przypadki-przyimki"
+        },
+        {
+          "id": "g6-5",
+          "text": "Pamiętam dzień, ___ się poznaliśmy na weselu kuzynki.",
+          "answer": "kiedy",
+          "options": [
+            "jaki",
+            "gdzie",
+            "kiedy"
+          ],
+          "explanation": "O czasie → kiedy (można też: w którym).",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "g6-6",
+          "text": "To miasto, z ___ pochodzi cała rodzina mojej mamy.",
+          "answer": "którego",
+          "options": [
+            "czyjego",
+            "jakiego",
+            "którego"
+          ],
+          "explanation": "Po przyimku używamy „który”, nie „gdzie”: z którego pochodzi.",
+          "grammar_point": "ktory-przypadki"
+        },
+        {
+          "id": "g6-7",
+          "text": "Opowiedz mi jeszcze raz, ___ go właściwie spotkałeś.",
+          "answer": "gdzie",
+          "options": [
+            "gdzie",
+            "czyj",
+            "dokąd"
+          ],
+          "explanation": "Pytanie zależne o miejsce → gdzie.",
+          "grammar_point": "pytania-zalezne"
+        },
+        {
+          "id": "g6-8",
+          "text": "Szukam koleżanki, ___ brat jest fryzjerem.",
+          "answer": "której",
+          "options": [
+            "której",
+            "jakiej",
+            "czyjej"
+          ],
+          "explanation": "Rodzaj żeński: koleżanki, której brat… („czyjej” w zdaniu względnym nie używamy).",
+          "grammar_point": "wzgledne-inne"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Swój czy jego?",
+      "instruction": "Wybierz właściwy zaimek. Pytaj siebie: czy rzecz należy do podmiotu zdania?",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Maksym pokazał babci ___ nowe zdjęcia z wycieczki.",
+          "answer": "swoje",
+          "options": [
+            "swoje",
+            "jego",
+            "jej"
+          ],
+          "explanation": "Zdjęcia należą do podmiotu (Maksym) → swoje.",
+          "grammar_point": "zaimki-przym"
+        },
+        {
+          "id": "g7-2",
+          "text": "Znam ___ siostrę — poznaliśmy się u Bartka na urodzinach.",
+          "answer": "jego",
+          "options": [
+            "swoją",
+            "jej",
+            "jego"
+          ],
+          "explanation": "Podmiotem jestem ja, a siostra należy do Bartka → jego.",
+          "grammar_point": "zaimki-przym"
+        },
+        {
+          "id": "g7-3",
+          "text": "___ samochód się zepsuł, więc dziś jadę autobusem.",
+          "answer": "Mój",
+          "options": [
+            "Swój",
+            "Jego",
+            "Mój"
+          ],
+          "explanation": "W podmiocie zdania „swój” nie występuje — mówimy: mój samochód.",
+          "grammar_point": "zaimki-przym"
+        },
+        {
+          "id": "g7-4",
+          "text": "Ona zgubiła ___ klucze i czekała na mnie pod blokiem.",
+          "answer": "swoje",
+          "options": [
+            "swoje",
+            "jej",
+            "jego"
+          ],
+          "explanation": "Klucze należą do podmiotu (ona) → swoje. „Jej klucze” to klucze innej kobiety.",
+          "grammar_point": "zaimki-przym"
+        },
+        {
+          "id": "g7-5",
+          "text": "Taras opowiada o ___ pracy przez cały wieczór.",
+          "answer": "swojej",
+          "options": [
+            "jego",
+            "swojej",
+            "jej"
+          ],
+          "explanation": "Praca należy do podmiotu (Taras) → o swojej pracy.",
+          "grammar_point": "zaimki-przym"
+        },
+        {
+          "id": "g7-6",
+          "text": "Bartek wybrał tę kandydatkę, bo ___ pytania były bardzo konkretne.",
+          "answer": "jej",
+          "options": [
+            "swoje",
+            "jej",
+            "jego"
+          ],
+          "explanation": "Pytania należą do kandydatki, nie do podmiotu (Bartek) → jej.",
+          "grammar_point": "zaimki-przym"
+        }
+      ]
+    },
+    {
+      "block_id": "gz",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Ćwiczenia zbiorcze",
+      "instruction": "Wszystko z tej lekcji razem. Po każdej odpowiedzi kliknij „Sprawdź”.",
+      "items": [
+        {
+          "id": "gz-1",
+          "text": "Szukam ___ mechanika, który powie od razu, ile to kosztuje.",
+          "answer": "uczciwego",
+          "hint": "(uczciwy)",
+          "explanation": "Szukać kogo? — dopełniacz: uczciwego mechanika.",
+          "grammar_point": "przym-lp"
+        },
+        {
+          "id": "gz-2",
+          "text": "___, co powiedziała wtedy babcia, zapamiętałem na długo.",
+          "answer": "To",
+          "options": [
+            "Ten",
+            "To",
+            "Który"
+          ],
+          "explanation": "O sytuacji i słowach → to, co.",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "gz-3",
+          "text": "To najlepszy film, ___ widziałem w tym roku.",
+          "answer": "jaki",
+          "options": [
+            "który",
+            "co",
+            "jaki"
+          ],
+          "explanation": "Po stopniu najwyższym → jaki.",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "gz-4",
+          "text": "To kawiarnia, ___ zawsze się spotykamy po pracy.",
+          "answer": "gdzie",
+          "options": [
+            "gdzie",
+            "czyja",
+            "dokąd"
+          ],
+          "explanation": "Miejsce bez ruchu → gdzie (albo: w której).",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "gz-5",
+          "text": "Ewa zabrała ___ parasol i wyszła bez słowa.",
+          "answer": "swój",
+          "options": [
+            "jej",
+            "jego",
+            "swój"
+          ],
+          "explanation": "Parasol należy do podmiotu (Ewa) → swój.",
+          "grammar_point": "zaimki-przym"
+        },
+        {
+          "id": "gz-6",
+          "text": "Kupiłem ___ nową koszulę na rozmowę o pracę.",
+          "answer": "sobie",
+          "options": [
+            "się",
+            "sobie",
+            "mi"
+          ],
+          "explanation": "Powtórka z lekcji o internecie: kupić sobie = dla siebie.",
+          "grammar_point": "zaimek-siebie"
+        },
+        {
+          "id": "gz-7",
+          "text": "Kolega, o ___ ci wczoraj mówiłem, jest siwy i bardzo barczysty.",
+          "answer": "którym",
+          "options": [
+            "jakim",
+            "którym",
+            "kim"
+          ],
+          "explanation": "Konkretna osoba + przyimek „o” → o którym.",
+          "grammar_point": "ktory-przypadki"
+        },
+        {
+          "id": "gz-8",
+          "text": "W zdaniu „To ten pan, którego pies biega po podwórku” słowo „którego” odpowiada na pytanie:",
+          "answer": "czyj?",
+          "options": [
+            "czyj?",
+            "jaki?",
+            "gdzie?"
+          ],
+          "explanation": "Mówimy o właścicielu psa, więc „którego” zastępuje pytanie „czyj?”.",
+          "grammar_point": "wzgledne-inne"
+        }
+      ]
+    },
+    {
+      "block_id": "el1",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 1 — rozmowa",
+      "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
+      "text": "Bartek: Cześć, Oleno! {el1-1}\n\nOlena: Cześć! Mów, słucham.\n\nBartek: Napisałem, że szukam osoby, która nie imprezuje w tygodniu. {el1-2}\n\nOlena: Trochę tak. {el1-3}\n\nBartek: Masz rację. {el1-4} Na przykład tak: „{el1-5}”.\n\nOlena: O, to jest konkretne. {el1-6}\n\nBartek: Właściwie nie. Ważniejsze jest dla mnie to, czy można komuś zaufać.\n\nOlena: I jeszcze jedno: napisz, kogo szukasz, a nie kogo nie chcesz.\n\nBartek: {el1-7}\n\nOlena: {el1-8} Trzymam kciuki, żeby odpowiedział ktoś sumienny.",
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "f) Mam do ciebie pytanie o ogłoszenie.",
+          "options": [
+            "a) Szukam kogoś, kto jest spokojny po dziesiątej.",
+            "b) Nie ma sprawy.",
+            "c) A czy wygląd ma dla ciebie znaczenie?",
+            "d) Dzięki, zaraz to poprawię.",
+            "e) Czyj to w ogóle pomysł?",
+            "f) Mam do ciebie pytanie o ogłoszenie.",
+            "g) Czy to dobrze brzmi?",
+            "h) To, co napisałeś, brzmi zbyt surowo.",
+            "i) W takim razie dopiszę jedno zdanie.",
+            "j) Jaki on właściwie jest?"
+          ],
+          "explanation": "Bartek otwiera rozmowę i mówi, w jakiej sprawie dzwoni.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "g) Czy to dobrze brzmi?",
+          "options": [
+            "a) Szukam kogoś, kto jest spokojny po dziesiątej.",
+            "b) Nie ma sprawy.",
+            "c) A czy wygląd ma dla ciebie znaczenie?",
+            "d) Dzięki, zaraz to poprawię.",
+            "e) Czyj to w ogóle pomysł?",
+            "f) Mam do ciebie pytanie o ogłoszenie.",
+            "g) Czy to dobrze brzmi?",
+            "h) To, co napisałeś, brzmi zbyt surowo.",
+            "i) W takim razie dopiszę jedno zdanie.",
+            "j) Jaki on właściwie jest?"
+          ],
+          "explanation": "Bartek czyta fragment ogłoszenia i prosi o ocenę. Odpowiedź Oleny („Trochę tak”) pasuje tylko do pytania.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "h) To, co napisałeś, brzmi zbyt surowo.",
+          "options": [
+            "a) Szukam kogoś, kto jest spokojny po dziesiątej.",
+            "b) Nie ma sprawy.",
+            "c) A czy wygląd ma dla ciebie znaczenie?",
+            "d) Dzięki, zaraz to poprawię.",
+            "e) Czyj to w ogóle pomysł?",
+            "f) Mam do ciebie pytanie o ogłoszenie.",
+            "g) Czy to dobrze brzmi?",
+            "h) To, co napisałeś, brzmi zbyt surowo.",
+            "i) W takim razie dopiszę jedno zdanie.",
+            "j) Jaki on właściwie jest?"
+          ],
+          "explanation": "Olena ocenia tekst ogłoszenia: „to, co napisałeś”.",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "el1-4",
+          "answer": "i) W takim razie dopiszę jedno zdanie.",
+          "options": [
+            "a) Szukam kogoś, kto jest spokojny po dziesiątej.",
+            "b) Nie ma sprawy.",
+            "c) A czy wygląd ma dla ciebie znaczenie?",
+            "d) Dzięki, zaraz to poprawię.",
+            "e) Czyj to w ogóle pomysł?",
+            "f) Mam do ciebie pytanie o ogłoszenie.",
+            "g) Czy to dobrze brzmi?",
+            "h) To, co napisałeś, brzmi zbyt surowo.",
+            "i) W takim razie dopiszę jedno zdanie.",
+            "j) Jaki on właściwie jest?"
+          ],
+          "explanation": "Bartek przyjmuje uwagę i mówi, co zrobi.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "a) Szukam kogoś, kto jest spokojny po dziesiątej.",
+          "options": [
+            "a) Szukam kogoś, kto jest spokojny po dziesiątej.",
+            "b) Nie ma sprawy.",
+            "c) A czy wygląd ma dla ciebie znaczenie?",
+            "d) Dzięki, zaraz to poprawię.",
+            "e) Czyj to w ogóle pomysł?",
+            "f) Mam do ciebie pytanie o ogłoszenie.",
+            "g) Czy to dobrze brzmi?",
+            "h) To, co napisałeś, brzmi zbyt surowo.",
+            "i) W takim razie dopiszę jedno zdanie.",
+            "j) Jaki on właściwie jest?"
+          ],
+          "explanation": "To właśnie zdanie, które Bartek dopisuje do ogłoszenia.",
+          "grammar_point": "wzgledne-inne"
+        },
+        {
+          "id": "el1-6",
+          "answer": "c) A czy wygląd ma dla ciebie znaczenie?",
+          "options": [
+            "a) Szukam kogoś, kto jest spokojny po dziesiątej.",
+            "b) Nie ma sprawy.",
+            "c) A czy wygląd ma dla ciebie znaczenie?",
+            "d) Dzięki, zaraz to poprawię.",
+            "e) Czyj to w ogóle pomysł?",
+            "f) Mam do ciebie pytanie o ogłoszenie.",
+            "g) Czy to dobrze brzmi?",
+            "h) To, co napisałeś, brzmi zbyt surowo.",
+            "i) W takim razie dopiszę jedno zdanie.",
+            "j) Jaki on właściwie jest?"
+          ],
+          "explanation": "Odpowiedź Bartka („Właściwie nie”) dotyczy wyglądu, więc w luce stoi pytanie o wygląd.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "d) Dzięki, zaraz to poprawię.",
+          "options": [
+            "a) Szukam kogoś, kto jest spokojny po dziesiątej.",
+            "b) Nie ma sprawy.",
+            "c) A czy wygląd ma dla ciebie znaczenie?",
+            "d) Dzięki, zaraz to poprawię.",
+            "e) Czyj to w ogóle pomysł?",
+            "f) Mam do ciebie pytanie o ogłoszenie.",
+            "g) Czy to dobrze brzmi?",
+            "h) To, co napisałeś, brzmi zbyt surowo.",
+            "i) W takim razie dopiszę jedno zdanie.",
+            "j) Jaki on właściwie jest?"
+          ],
+          "explanation": "Bartek dziękuje za radę i obiecuje poprawkę.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "b) Nie ma sprawy.",
+          "options": [
+            "a) Szukam kogoś, kto jest spokojny po dziesiątej.",
+            "b) Nie ma sprawy.",
+            "c) A czy wygląd ma dla ciebie znaczenie?",
+            "d) Dzięki, zaraz to poprawię.",
+            "e) Czyj to w ogóle pomysł?",
+            "f) Mam do ciebie pytanie o ogłoszenie.",
+            "g) Czy to dobrze brzmi?",
+            "h) To, co napisałeś, brzmi zbyt surowo.",
+            "i) W takim razie dopiszę jedno zdanie.",
+            "j) Jaki on właściwie jest?"
+          ],
+          "explanation": "Zwykła reakcja na podziękowanie.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka 2 — e-mail",
+      "instruction": "Przeczytaj e-mail. W każdą lukę (1–10) wstaw właściwe słowo lub wyrażenie: a, b albo c.",
+      "text": "Szanowni Państwo,\n\n{el2-1} się do Państwa w sprawie opieki nad moją babcią, która mieszka sama we wsi pod Lublinem. Babcia ma osiemdziesiąt dwa lata i potrzebuje pomocy {el2-2} dwa razy w tygodniu: przy zakupach, sprzątaniu i wizytach u lekarza.\n\nSzukam osoby {el2-3}, cierpliwej i punktualnej. Dla mojej rodziny najważniejsze jest to, {el2-4} można tej osobie zaufać. Babcia jest towarzyska, ale bywa {el2-5}, więc opiekunka powinna być wyrozumiała. Byłabym {el2-6} za przysłanie kilku kandydatur wraz z opisem doświadczenia.\n\nChciałabym też zapytać, {el2-7} Państwo sprawdzają referencje i {el2-8} kosztuje jedna godzina opieki w weekend. {el2-9} pytań jestem do Państwa dyspozycji pod numerem telefonu podanym niżej.\n\n{el2-10}\nOlena Kowal",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "b) Zwracam",
+          "options": [
+            "b) Zwracam",
+            "a) Proszę",
+            "c) Pytam"
+          ],
+          "explanation": "Stałe połączenie: zwracam się do Państwa w sprawie…",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "c) regularnie",
+          "options": [
+            "c) regularnie",
+            "a) nareszcie",
+            "b) dokładnie"
+          ],
+          "explanation": "Pomoc dwa razy w tygodniu to pomoc regularna.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el2-3",
+          "answer": "a) uczciwej",
+          "options": [
+            "c) uczciwą",
+            "a) uczciwej",
+            "b) uczciwa"
+          ],
+          "explanation": "Szukać kogo? — dopełniacz: osoby uczciwej.",
+          "grammar_point": "przym-lp"
+        },
+        {
+          "id": "el2-4",
+          "answer": "c) czy",
+          "options": [
+            "b) jaki",
+            "a) co",
+            "c) czy"
+          ],
+          "explanation": "Pytanie zależne „tak czy nie” → to, czy można zaufać.",
+          "grammar_point": "pytania-zalezne"
+        },
+        {
+          "id": "el2-5",
+          "answer": "b) uparta",
+          "options": [
+            "b) uparta",
+            "a) upartą",
+            "c) uparcie"
+          ],
+          "explanation": "Być jaka? — mianownik po „bywa”: bywa uparta.",
+          "grammar_point": "przym-lp"
+        },
+        {
+          "id": "el2-6",
+          "answer": "a) wdzięczna",
+          "options": [
+            "c) szczęśliwa",
+            "b) zadowolona",
+            "a) wdzięczna"
+          ],
+          "explanation": "W listach: byłabym wdzięczna za…",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "c) czy",
+          "options": [
+            "c) czy",
+            "a) że",
+            "b) jak"
+          ],
+          "explanation": "Zapytać, czy sprawdzają referencje — pytanie zależne.",
+          "grammar_point": "pytania-zalezne"
+        },
+        {
+          "id": "el2-8",
+          "answer": "b) ile",
+          "options": [
+            "c) który",
+            "b) ile",
+            "a) jak"
+          ],
+          "explanation": "O cenę pytamy: ile kosztuje.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el2-9",
+          "answer": "a) W razie",
+          "options": [
+            "b) Na wypadku",
+            "a) W razie",
+            "c) Przy razie"
+          ],
+          "explanation": "Stałe wyrażenie: w razie pytań.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "c) Z poważaniem",
+          "options": [
+            "a) Pozdrawiam serdecznie",
+            "b) Trzymaj się",
+            "c) Z poważaniem"
+          ],
+          "explanation": "List do firmy kończymy formalnie: Z poważaniem.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
+    }
+  ]
+}
