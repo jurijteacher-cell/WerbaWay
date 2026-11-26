@@ -12,7 +12,7 @@ alwaysApply: false
 ## Алгоритм на слот
 
 1. `GET https://api.unsplash.com/search/photos?query={keywords}&orientation=landscape&per_page=5&content_filter=high`, заголовок `Authorization: Client-ID $UNSPLASH_ACCESS_KEY`.
-2. Взяти ПЕРШИЙ результат з `width >= 900`. Кандидатів не переглядати і не порівнювати.
+2. Взяти ПЕРШИЙ результат з `width >= 900`, **який приємний оку**: не обшарпані чи занедбані будівлі, не сірі панельні блоки, не смітники, не будмайданчики, не похмурі порожні вулиці й не темні інтер'єри. Такий кадр пропускаємо й беремо наступний (докладно — `docs/LESSON_PROTOCOL.md` §8). Інакше кандидатів не переглядаємо і не порівнюємо.
 3. Порожньо → один запит з `keywords_alt` / `header_image_keywords_alt`.
 4. Знову порожньо, 403, 429 або таймаут → `status: "missing"`, плейсхолдер, рухатися далі.
 5. Вставити `urls.regular` (хотлінк), один раз викликати `links.download_location`, підпис `Photo: {user.name} / Unsplash` → `user.links.html`.

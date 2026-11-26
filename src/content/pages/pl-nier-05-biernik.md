@@ -5,7 +5,7 @@ level: B1
 number: 5
 module: pl-nier
 moduleTitle: Польська для ріелторки
-cover: https://images.unsplash.com/photo-1778604938979-a8d3864ac7dd?w=1600&h=900&fit=crop&q=80&fm=jpg
+cover: https://images.unsplash.com/photo-1665249934445-1de680641f50?w=1600&h=900&fit=crop&q=80&fm=jpg
 ---
 
 <aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🎯</span><div class="lp-callout-body">
@@ -87,7 +87,7 @@ Słownictwo — karty
 
 📌 <b>Pytać, prosić, dziękować.</b> W każdym z tych czasowników jest przyimek: <i>pytać <b>o</b> cenę</i>, <i>prosić <b>o</b> klucze</i>, <i>dziękować <b>za</b> wiadomość</i>. Zapamiętaj je razem z przyimkiem.
 
-![Okolica i osiedle. Fot. Oleg Zarevennyi / Unsplash](https://images.unsplash.com/photo-1785337954421-ad56dd270c04?w=1400&q=80&fm=jpg&fit=max)
+![Okolica i osiedle. Fot. muaz semih güven / Unsplash](https://images.unsplash.com/photo-1758915361447-bc14dc199b16?w=1400&q=80&fm=jpg&fit=max)
 
 ✍️ <b>Ćwiczenie 1</b> — które słowo pasuje do sytuacji?
 
