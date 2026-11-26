@@ -17,9 +17,9 @@
           "text": "Znasz Bartka z IT? — Tak, znam ___ od roku.",
           "answer": "go",
           "options": [
-            "go",
+            "jej",
             "mu",
-            "jej"
+            "go"
           ],
           "grammar_point": "zaimki-osobowe-przypadki",
           "explanation": "Znać kogo? — biernik: go. Mu odpowiada na pytanie komu?"
@@ -53,9 +53,9 @@
           "text": "Nowa koleżanka jest bardzo miła. Lubię ___.",
           "answer": "ją",
           "options": [
+            "nią",
             "ją",
-            "jej",
-            "nią"
+            "jej"
           ],
           "grammar_point": "zaimki-osobowe-przypadki",
           "explanation": "Lubić kogo? — biernik: ją. Po ukraińsku „її”, ale po polsku w bierniku jest ją."
@@ -66,8 +66,8 @@
           "answer": "im",
           "options": [
             "im",
-            "ich",
-            "nich"
+            "nich",
+            "ich"
           ],
           "grammar_point": "zaimki-osobowe-przypadki",
           "explanation": "Pokazać komu? — celownik liczby mnogiej: im."
@@ -77,9 +77,9 @@
           "text": "Magda jest dziś na szkoleniu. Nie ma ___ w biurze.",
           "answer": "jej",
           "options": [
-            "jej",
             "ją",
-            "niej"
+            "niej",
+            "jej"
           ],
           "grammar_point": "zaimki-osobowe-przypadki",
           "explanation": "Nie ma kogo? — dopełniacz: jej. Po zaprzeczeniu ją zmienia się na jej."
@@ -89,9 +89,9 @@
           "text": "Halo, Olena? Słabo ___ słyszę, jestem w windzie.",
           "answer": "cię",
           "options": [
+            "tobie",
             "cię",
-            "ci",
-            "tobie"
+            "ci"
           ],
           "grammar_point": "zaimki-osobowe-przypadki",
           "explanation": "Słyszeć kogo? — biernik: cię. Ci i tobie to celownik (komu?)."
@@ -171,9 +171,9 @@
           "text": "To jest Tomek. Na lunch zawsze chodzę z ___.",
           "answer": "nim",
           "options": [
-            "nim",
             "go",
-            "nią"
+            "nią",
+            "nim"
           ],
           "grammar_point": "zaimki-osobowe-przypadki",
           "explanation": "Po przyimku z — forma z n-: z nim (on), z nią (ona)."
@@ -183,9 +183,9 @@
           "text": "Magda ma dziś urodziny. Mamy dla ___ tort.",
           "answer": "niej",
           "options": [
-            "niej",
+            "nią",
             "jej",
-            "nią"
+            "niej"
           ],
           "grammar_point": "zaimki-osobowe-przypadki",
           "explanation": "Po przyimku dla — niej. Jej bez n- stoi tylko bez przyimka."
@@ -195,9 +195,9 @@
           "text": "Tomek i Magda są w kuchni. Idę do ___.",
           "answer": "nich",
           "options": [
+            "nimi",
             "nich",
-            "ich",
-            "nimi"
+            "ich"
           ],
           "grammar_point": "zaimki-osobowe-przypadki",
           "explanation": "Po przyimku do — nich. Ich bez n- stoi tylko bez przyimka."
@@ -207,9 +207,9 @@
           "text": "Masz chwilę? Chodź ze ___ do recepcji.",
           "answer": "mną",
           "options": [
-            "mną",
             "mnie",
-            "mi"
+            "mi",
+            "mną"
           ],
           "grammar_point": "zaimki-osobowe-przypadki",
           "explanation": "Z kim? — ze mną (z → ze przed mną)."
@@ -370,50 +370,50 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Bartek: Cześć, tu Bartek z IT.\n\nOlena: Cześć, Bartek! Tu Olena, nowa koleżanka. {el1-1} Drukarka nie działa.\n\nBartek: {el1-2} Czy na ekranie jest jakiś komunikat?\n\nOlena: Nie, tylko czerwone światło. {el1-3}\n\nBartek: {el1-4} Zaraz do ciebie przyjdę. W którym pokoju jesteś?\n\nOlena: W pokoju obok kuchni. {el1-5} Muszę wydrukować umowę.\n\nBartek: Dobrze. {el1-6} Będę za pięć minut.\n\nOlena: Super! {el1-7}\n\nBartek: Nie ma sprawy. {el1-8}\n\nOlena: Dobrze, dzięki. Do zobaczenia!",
       "bank": [
-        "a) Dzwoń, jeśli będzie jeszcze jakiś problem.",
-        "b) Przepraszam, że przeszkadzam.",
-        "c) Niestety dzisiaj mnie nie ma w pracy.",
-        "d) Spokojnie, to się często zdarza.",
+        "a) To dość pilne.",
+        "b) Czy pan Piotr jest w biurze?",
+        "c) Spokojnie, to się często zdarza.",
+        "d) Nic nie wyłączaj.",
         "e) Nie wiem, co robić.",
-        "f) Czy pan Piotr jest w biurze?",
-        "g) To dość pilne.",
-        "h) Nic nie wyłączaj.",
+        "f) Bardzo ci dziękuję za pomoc.",
+        "g) Dzwoń, jeśli będzie jeszcze jakiś problem.",
+        "h) Niestety dzisiaj mnie nie ma w pracy.",
         "i) To znaczy, że jest jakiś błąd.",
-        "j) Bardzo ci dziękuję za pomoc."
+        "j) Przepraszam, że przeszkadzam."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "b) Przepraszam, że przeszkadzam.",
+          "answer": "j) Przepraszam, że przeszkadzam.",
           "options": [
-            "a) Dzwoń, jeśli będzie jeszcze jakiś problem.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Niestety dzisiaj mnie nie ma w pracy.",
-            "d) Spokojnie, to się często zdarza.",
+            "a) To dość pilne.",
+            "b) Czy pan Piotr jest w biurze?",
+            "c) Spokojnie, to się często zdarza.",
+            "d) Nic nie wyłączaj.",
             "e) Nie wiem, co robić.",
-            "f) Czy pan Piotr jest w biurze?",
-            "g) To dość pilne.",
-            "h) Nic nie wyłączaj.",
+            "f) Bardzo ci dziękuję za pomoc.",
+            "g) Dzwoń, jeśli będzie jeszcze jakiś problem.",
+            "h) Niestety dzisiaj mnie nie ma w pracy.",
             "i) To znaczy, że jest jakiś błąd.",
-            "j) Bardzo ci dziękuję za pomoc."
+            "j) Przepraszam, że przeszkadzam."
           ],
           "explanation": "Olena dzwoni do kolegi z innego działu, więc grzecznie przeprasza za kłopot. „Niestety dzisiaj mnie nie ma w pracy” nie pasuje, bo to Bartek odbiera telefon.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "d) Spokojnie, to się często zdarza.",
+          "answer": "c) Spokojnie, to się często zdarza.",
           "options": [
-            "a) Dzwoń, jeśli będzie jeszcze jakiś problem.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Niestety dzisiaj mnie nie ma w pracy.",
-            "d) Spokojnie, to się często zdarza.",
+            "a) To dość pilne.",
+            "b) Czy pan Piotr jest w biurze?",
+            "c) Spokojnie, to się często zdarza.",
+            "d) Nic nie wyłączaj.",
             "e) Nie wiem, co robić.",
-            "f) Czy pan Piotr jest w biurze?",
-            "g) To dość pilne.",
-            "h) Nic nie wyłączaj.",
+            "f) Bardzo ci dziękuję za pomoc.",
+            "g) Dzwoń, jeśli będzie jeszcze jakiś problem.",
+            "h) Niestety dzisiaj mnie nie ma w pracy.",
             "i) To znaczy, że jest jakiś błąd.",
-            "j) Bardzo ci dziękuję za pomoc."
+            "j) Przepraszam, że przeszkadzam."
           ],
           "explanation": "Bartek uspokaja Olenę i od razu pyta o szczegóły. „Czy pan Piotr jest w biurze?” nie pasuje do problemu z drukarką.",
           "grammar_point": "slownictwo"
@@ -422,16 +422,16 @@
           "id": "el1-3",
           "answer": "e) Nie wiem, co robić.",
           "options": [
-            "a) Dzwoń, jeśli będzie jeszcze jakiś problem.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Niestety dzisiaj mnie nie ma w pracy.",
-            "d) Spokojnie, to się często zdarza.",
+            "a) To dość pilne.",
+            "b) Czy pan Piotr jest w biurze?",
+            "c) Spokojnie, to się często zdarza.",
+            "d) Nic nie wyłączaj.",
             "e) Nie wiem, co robić.",
-            "f) Czy pan Piotr jest w biurze?",
-            "g) To dość pilne.",
-            "h) Nic nie wyłączaj.",
+            "f) Bardzo ci dziękuję za pomoc.",
+            "g) Dzwoń, jeśli będzie jeszcze jakiś problem.",
+            "h) Niestety dzisiaj mnie nie ma w pracy.",
             "i) To znaczy, że jest jakiś błąd.",
-            "j) Bardzo ci dziękuję za pomoc."
+            "j) Przepraszam, że przeszkadzam."
           ],
           "explanation": "Olena nie widzi żadnego komunikatu, więc nie wie, jak naprawić urządzenie. Fraza „Nie wiem, co robić” pasuje do tej sytuacji.",
           "grammar_point": "slownictwo"
@@ -440,88 +440,88 @@
           "id": "el1-4",
           "answer": "i) To znaczy, że jest jakiś błąd.",
           "options": [
-            "a) Dzwoń, jeśli będzie jeszcze jakiś problem.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Niestety dzisiaj mnie nie ma w pracy.",
-            "d) Spokojnie, to się często zdarza.",
+            "a) To dość pilne.",
+            "b) Czy pan Piotr jest w biurze?",
+            "c) Spokojnie, to się często zdarza.",
+            "d) Nic nie wyłączaj.",
             "e) Nie wiem, co robić.",
-            "f) Czy pan Piotr jest w biurze?",
-            "g) To dość pilne.",
-            "h) Nic nie wyłączaj.",
+            "f) Bardzo ci dziękuję za pomoc.",
+            "g) Dzwoń, jeśli będzie jeszcze jakiś problem.",
+            "h) Niestety dzisiaj mnie nie ma w pracy.",
             "i) To znaczy, że jest jakiś błąd.",
-            "j) Bardzo ci dziękuję za pomoc."
+            "j) Przepraszam, że przeszkadzam."
           ],
           "explanation": "Czerwone światło bez komunikatu zwykle oznacza błąd, i tak odpowiada Bartek. Potem mówi, że zaraz przyjdzie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "g) To dość pilne.",
+          "answer": "a) To dość pilne.",
           "options": [
-            "a) Dzwoń, jeśli będzie jeszcze jakiś problem.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Niestety dzisiaj mnie nie ma w pracy.",
-            "d) Spokojnie, to się często zdarza.",
+            "a) To dość pilne.",
+            "b) Czy pan Piotr jest w biurze?",
+            "c) Spokojnie, to się często zdarza.",
+            "d) Nic nie wyłączaj.",
             "e) Nie wiem, co robić.",
-            "f) Czy pan Piotr jest w biurze?",
-            "g) To dość pilne.",
-            "h) Nic nie wyłączaj.",
+            "f) Bardzo ci dziękuję za pomoc.",
+            "g) Dzwoń, jeśli będzie jeszcze jakiś problem.",
+            "h) Niestety dzisiaj mnie nie ma w pracy.",
             "i) To znaczy, że jest jakiś błąd.",
-            "j) Bardzo ci dziękuję za pomoc."
+            "j) Przepraszam, że przeszkadzam."
           ],
           "explanation": "Olena tłumaczy, dlaczego prosi o szybką pomoc: musi wydrukować umowę. „To dość pilne” znaczy „to trzeba zrobić szybko”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "h) Nic nie wyłączaj.",
+          "answer": "d) Nic nie wyłączaj.",
           "options": [
-            "a) Dzwoń, jeśli będzie jeszcze jakiś problem.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Niestety dzisiaj mnie nie ma w pracy.",
-            "d) Spokojnie, to się często zdarza.",
+            "a) To dość pilne.",
+            "b) Czy pan Piotr jest w biurze?",
+            "c) Spokojnie, to się często zdarza.",
+            "d) Nic nie wyłączaj.",
             "e) Nie wiem, co robić.",
-            "f) Czy pan Piotr jest w biurze?",
-            "g) To dość pilne.",
-            "h) Nic nie wyłączaj.",
+            "f) Bardzo ci dziękuję za pomoc.",
+            "g) Dzwoń, jeśli będzie jeszcze jakiś problem.",
+            "h) Niestety dzisiaj mnie nie ma w pracy.",
             "i) To znaczy, że jest jakiś błąd.",
-            "j) Bardzo ci dziękuję za pomoc."
+            "j) Przepraszam, że przeszkadzam."
           ],
           "explanation": "Bartek prosi, żeby Olena nic nie zmieniała w drukarce do jego przyjścia. Dopiero potem mówi, kiedy będzie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "j) Bardzo ci dziękuję za pomoc.",
+          "answer": "f) Bardzo ci dziękuję za pomoc.",
           "options": [
-            "a) Dzwoń, jeśli będzie jeszcze jakiś problem.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Niestety dzisiaj mnie nie ma w pracy.",
-            "d) Spokojnie, to się często zdarza.",
+            "a) To dość pilne.",
+            "b) Czy pan Piotr jest w biurze?",
+            "c) Spokojnie, to się często zdarza.",
+            "d) Nic nie wyłączaj.",
             "e) Nie wiem, co robić.",
-            "f) Czy pan Piotr jest w biurze?",
-            "g) To dość pilne.",
-            "h) Nic nie wyłączaj.",
+            "f) Bardzo ci dziękuję za pomoc.",
+            "g) Dzwoń, jeśli będzie jeszcze jakiś problem.",
+            "h) Niestety dzisiaj mnie nie ma w pracy.",
             "i) To znaczy, że jest jakiś błąd.",
-            "j) Bardzo ci dziękuję za pomoc."
+            "j) Przepraszam, że przeszkadzam."
           ],
           "explanation": "Po obietnicy szybkiej pomocy Olena dziękuje. Fraza „Bardzo ci dziękuję za pomoc” to naturalna reakcja koleżanki.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "a) Dzwoń, jeśli będzie jeszcze jakiś problem.",
+          "answer": "g) Dzwoń, jeśli będzie jeszcze jakiś problem.",
           "options": [
-            "a) Dzwoń, jeśli będzie jeszcze jakiś problem.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Niestety dzisiaj mnie nie ma w pracy.",
-            "d) Spokojnie, to się często zdarza.",
+            "a) To dość pilne.",
+            "b) Czy pan Piotr jest w biurze?",
+            "c) Spokojnie, to się często zdarza.",
+            "d) Nic nie wyłączaj.",
             "e) Nie wiem, co robić.",
-            "f) Czy pan Piotr jest w biurze?",
-            "g) To dość pilne.",
-            "h) Nic nie wyłączaj.",
+            "f) Bardzo ci dziękuję za pomoc.",
+            "g) Dzwoń, jeśli będzie jeszcze jakiś problem.",
+            "h) Niestety dzisiaj mnie nie ma w pracy.",
             "i) To znaczy, że jest jakiś błąd.",
-            "j) Bardzo ci dziękuję za pomoc."
+            "j) Przepraszam, że przeszkadzam."
           ],
           "explanation": "Na koniec Bartek zachęca do kolejnego telefonu, gdyby były nowe problemy. „Niestety dzisiaj mnie nie ma w pracy” zaprzeczałoby całej rozmowie.",
           "grammar_point": "slownictwo"
@@ -540,8 +540,8 @@
           "id": "el2-1",
           "answer": "a) za",
           "options": [
-            "a) za",
             "b) o",
+            "a) za",
             "c) na"
           ],
           "explanation": "Dziękujemy „za coś”: „za przyjęcie”. „Dziękować o” i „dziękować na” są niepoprawne.",
@@ -551,9 +551,9 @@
           "id": "el2-2",
           "answer": "b) w sprawie",
           "options": [
+            "c) w sprawę",
             "a) o sprawie",
-            "b) w sprawie",
-            "c) w sprawę"
+            "b) w sprawie"
           ],
           "explanation": "Formuła „Piszę w sprawie + dopełniacz” otwiera półoficjalny list. Pozostałe wyrażenia nie są używane.",
           "grammar_point": "rejestr-formalny"
@@ -562,8 +562,8 @@
           "id": "el2-3",
           "answer": "b) że",
           "options": [
-            "a) żeby",
             "b) że",
+            "a) żeby",
             "c) czy"
           ],
           "explanation": "„Powiedział, że to Pani wydaje hasła” to zdanie oznajmujące. „Czy” zmieniłoby je w pytanie, a „żeby” nie pasuje do czasownika „wydaje”.",
@@ -584,8 +584,8 @@
           "id": "el2-5",
           "answer": "a) z",
           "options": [
-            "a) z",
             "b) na",
+            "a) z",
             "c) o"
           ],
           "explanation": "Mówimy „mieć problem z czymś”. Z „na” i „o” wyrażenie jest błędne.",
@@ -595,9 +595,9 @@
           "id": "el2-6",
           "answer": "a) mi",
           "options": [
-            "a) mi",
             "b) mnie",
-            "c) ja"
+            "c) ja",
+            "a) mi"
           ],
           "explanation": "Po „pomóc” i „wysłać” używamy celownika „mi”. „Mnie” i „ja” w tym miejscu są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -606,9 +606,9 @@
           "id": "el2-7",
           "answer": "c) wdzięczna",
           "options": [
-            "a) zadowolona",
             "b) miła",
-            "c) wdzięczna"
+            "c) wdzięczna",
+            "a) zadowolona"
           ],
           "explanation": "„Być wdzięcznym za coś” to stała formuła w liście z prośbą. „Zadowolona” łączy się z „z”, a „miła” nie pasuje do tego zdania.",
           "grammar_point": "rejestr-formalny"
@@ -617,9 +617,9 @@
           "id": "el2-8",
           "answer": "c) od",
           "options": [
+            "c) od",
             "a) z",
-            "b) do",
-            "c) od"
+            "b) do"
           ],
           "explanation": "Termin odpowiedzi podajemy słowem „do”: „do piątku” znaczy „najpóźniej w piątek”. „Od” i „z” mają inne znaczenie.",
           "grammar_point": "rejestr-formalny"
@@ -628,9 +628,9 @@
           "id": "el2-9",
           "answer": "a) Z góry",
           "options": [
-            "a) Z góry",
             "b) Od góry",
-            "c) Na górze"
+            "c) Na górze",
+            "a) Z góry"
           ],
           "explanation": "„Z góry dziękuję” to stała formuła końcowa listu z prośbą. Inne wyrażenia mówią o położeniu.",
           "grammar_point": "rejestr-formalny"
@@ -639,8 +639,8 @@
           "id": "el2-10",
           "answer": "c) Z poważaniem",
           "options": [
-            "a) Cześć",
             "b) Buziaki",
+            "a) Cześć",
             "c) Z poważaniem"
           ],
           "explanation": "Półoficjalny list kończymy „Z poważaniem”. „Cześć” i „Buziaki” są potoczne.",

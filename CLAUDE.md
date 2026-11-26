@@ -22,6 +22,7 @@
 ## Ворота перед push
 
 ```bash
+python3 scripts/shuffle_options.py <id>   # позиції правильних відповідей: не завжди перша, не по порядку
 python3 scripts/check_answers.py <id> && python3 scripts/check_tags.py --changed \
  && python3 scripts/check_lecture.py <id> && node scripts/i18n-coverage.mjs <id>
 ```

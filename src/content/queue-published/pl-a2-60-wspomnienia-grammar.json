@@ -139,9 +139,9 @@
           "text": "Przez dziesięć lat mieszkaliśmy w ___ domu.",
           "answer": "starym",
           "options": [
+            "stary",
             "starym",
-            "starej",
-            "stary"
+            "starej"
           ],
           "grammar_point": "miejscownik-pelny",
           "explanation": "Dom — rodzaj męski: w starym domu (-ym)."
@@ -151,9 +151,9 @@
           "text": "Babcia czekała na mnie na ___ ławce.",
           "answer": "drewnianej",
           "options": [
-            "drewnianej",
+            "drewniana",
             "drewnianym",
-            "drewniana"
+            "drewnianej"
           ],
           "grammar_point": "miejscownik-pelny",
           "explanation": "Ławka — rodzaj żeński: na drewnianej ławce (-ej)."
@@ -163,8 +163,8 @@
           "text": "Spotkaliśmy się przy ___ wejściu do parku.",
           "answer": "głównym",
           "options": [
-            "głównym",
             "główną",
+            "głównym",
             "głównej"
           ],
           "grammar_point": "miejscownik-pelny",
@@ -175,9 +175,9 @@
           "text": "Długo rozmawialiśmy o ___ szkole.",
           "answer": "naszej",
           "options": [
-            "naszej",
             "naszym",
-            "naszą"
+            "naszą",
+            "naszej"
           ],
           "grammar_point": "miejscownik-pelny",
           "explanation": "Szkoła — rodzaj żeński: o naszej szkole. Naszą to biernik albo narzędnik."
@@ -199,9 +199,9 @@
           "text": "To zdjęcie wisiało w ___ kuchni.",
           "answer": "małej",
           "options": [
-            "małej",
             "małym",
-            "mała"
+            "mała",
+            "małej"
           ],
           "grammar_point": "miejscownik-pelny",
           "explanation": "Kuchnia — rodzaj żeński: w małej kuchni."
@@ -342,31 +342,31 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Olena: Tomek, spójrz! Znalazłam zdjęcie z mojej szkoły we Lwowie.\n\nTomek: {el1-1} Która to ty?\n\nOlena: Ta mała dziewczynka przy oknie. {el1-2}\n\nTomek: {el1-3} Pamiętasz jeszcze swoją nauczycielkę?\n\nOlena: Oczywiście! {el1-4} Pani Maria uczyła nas angielskiego.\n\nTomek: Fajnie. {el1-5} Ja pamiętam tylko pana od WF-u.\n\nOlena: {el1-6} A gdzie ty chodziłeś do szkoły?\n\nTomek: W małej wsi koło Zakopanego. {el1-7}\n\nOlena: {el1-8}\n\nTomek: Jasne, przy kawie w poniedziałek.",
       "bank": [
-        "a) Ale fajne zdjęcie!",
-        "b) To było dawno temu.",
+        "a) Nie, nic nie pamiętam z dzieciństwa.",
+        "b) Ale fajne zdjęcie!",
         "c) Ale się zmieniłaś!",
-        "d) Pamiętam ją bardzo dobrze.",
-        "e) Ja nie miałem takiego szczęścia.",
-        "f) Ha, ha, to bardzo śmieszne.",
-        "g) Wspominam tę szkołę z przyjemnością.",
-        "h) Opowiesz mi o niej kiedyś?",
-        "i) Nie, nic nie pamiętam z dzieciństwa.",
+        "d) Opowiesz mi o niej kiedyś?",
+        "e) To było dawno temu.",
+        "f) Pamiętam ją bardzo dobrze.",
+        "g) Ja nie miałem takiego szczęścia.",
+        "h) Ha, ha, to bardzo śmieszne.",
+        "i) Wspominam tę szkołę z przyjemnością.",
         "j) Dziękuję, nie jestem głodna."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "a) Ale fajne zdjęcie!",
+          "answer": "b) Ale fajne zdjęcie!",
           "options": [
-            "a) Ale fajne zdjęcie!",
-            "b) To było dawno temu.",
+            "a) Nie, nic nie pamiętam z dzieciństwa.",
+            "b) Ale fajne zdjęcie!",
             "c) Ale się zmieniłaś!",
-            "d) Pamiętam ją bardzo dobrze.",
-            "e) Ja nie miałem takiego szczęścia.",
-            "f) Ha, ha, to bardzo śmieszne.",
-            "g) Wspominam tę szkołę z przyjemnością.",
-            "h) Opowiesz mi o niej kiedyś?",
-            "i) Nie, nic nie pamiętam z dzieciństwa.",
+            "d) Opowiesz mi o niej kiedyś?",
+            "e) To było dawno temu.",
+            "f) Pamiętam ją bardzo dobrze.",
+            "g) Ja nie miałem takiego szczęścia.",
+            "h) Ha, ha, to bardzo śmieszne.",
+            "i) Wspominam tę szkołę z przyjemnością.",
             "j) Dziękuję, nie jestem głodna."
           ],
           "explanation": "Tomek reaguje na zdjęcie od razu i chwali je. Dopiero potem pyta, która osoba to Olena.",
@@ -374,17 +374,17 @@
         },
         {
           "id": "el1-2",
-          "answer": "b) To było dawno temu.",
+          "answer": "e) To było dawno temu.",
           "options": [
-            "a) Ale fajne zdjęcie!",
-            "b) To było dawno temu.",
+            "a) Nie, nic nie pamiętam z dzieciństwa.",
+            "b) Ale fajne zdjęcie!",
             "c) Ale się zmieniłaś!",
-            "d) Pamiętam ją bardzo dobrze.",
-            "e) Ja nie miałem takiego szczęścia.",
-            "f) Ha, ha, to bardzo śmieszne.",
-            "g) Wspominam tę szkołę z przyjemnością.",
-            "h) Opowiesz mi o niej kiedyś?",
-            "i) Nie, nic nie pamiętam z dzieciństwa.",
+            "d) Opowiesz mi o niej kiedyś?",
+            "e) To było dawno temu.",
+            "f) Pamiętam ją bardzo dobrze.",
+            "g) Ja nie miałem takiego szczęścia.",
+            "h) Ha, ha, to bardzo śmieszne.",
+            "i) Wspominam tę szkołę z przyjemnością.",
             "j) Dziękuję, nie jestem głodna."
           ],
           "explanation": "Olena mówi, że to ona jest na zdjęciu, i dodaje, że to było dawno. Zdanie „To było dawno temu” pasuje do starego zdjęcia.",
@@ -394,15 +394,15 @@
           "id": "el1-3",
           "answer": "c) Ale się zmieniłaś!",
           "options": [
-            "a) Ale fajne zdjęcie!",
-            "b) To było dawno temu.",
+            "a) Nie, nic nie pamiętam z dzieciństwa.",
+            "b) Ale fajne zdjęcie!",
             "c) Ale się zmieniłaś!",
-            "d) Pamiętam ją bardzo dobrze.",
-            "e) Ja nie miałem takiego szczęścia.",
-            "f) Ha, ha, to bardzo śmieszne.",
-            "g) Wspominam tę szkołę z przyjemnością.",
-            "h) Opowiesz mi o niej kiedyś?",
-            "i) Nie, nic nie pamiętam z dzieciństwa.",
+            "d) Opowiesz mi o niej kiedyś?",
+            "e) To było dawno temu.",
+            "f) Pamiętam ją bardzo dobrze.",
+            "g) Ja nie miałem takiego szczęścia.",
+            "h) Ha, ha, to bardzo śmieszne.",
+            "i) Wspominam tę szkołę z przyjemnością.",
             "j) Dziękuję, nie jestem głodna."
           ],
           "explanation": "Tomek widzi, że dorosła Olena bardzo różni się od dziewczynki na zdjęciu. Dlatego mówi „Ale się zmieniłaś!”",
@@ -410,17 +410,17 @@
         },
         {
           "id": "el1-4",
-          "answer": "d) Pamiętam ją bardzo dobrze.",
+          "answer": "f) Pamiętam ją bardzo dobrze.",
           "options": [
-            "a) Ale fajne zdjęcie!",
-            "b) To było dawno temu.",
+            "a) Nie, nic nie pamiętam z dzieciństwa.",
+            "b) Ale fajne zdjęcie!",
             "c) Ale się zmieniłaś!",
-            "d) Pamiętam ją bardzo dobrze.",
-            "e) Ja nie miałem takiego szczęścia.",
-            "f) Ha, ha, to bardzo śmieszne.",
-            "g) Wspominam tę szkołę z przyjemnością.",
-            "h) Opowiesz mi o niej kiedyś?",
-            "i) Nie, nic nie pamiętam z dzieciństwa.",
+            "d) Opowiesz mi o niej kiedyś?",
+            "e) To było dawno temu.",
+            "f) Pamiętam ją bardzo dobrze.",
+            "g) Ja nie miałem takiego szczęścia.",
+            "h) Ha, ha, to bardzo śmieszne.",
+            "i) Wspominam tę szkołę z przyjemnością.",
             "j) Dziękuję, nie jestem głodna."
           ],
           "explanation": "Olena odpowiada na pytanie o nauczycielkę. „Nie, nic nie pamiętam…” nie pasuje, bo zaraz mówi o pani Marii.",
@@ -428,17 +428,17 @@
         },
         {
           "id": "el1-5",
-          "answer": "e) Ja nie miałem takiego szczęścia.",
+          "answer": "g) Ja nie miałem takiego szczęścia.",
           "options": [
-            "a) Ale fajne zdjęcie!",
-            "b) To było dawno temu.",
+            "a) Nie, nic nie pamiętam z dzieciństwa.",
+            "b) Ale fajne zdjęcie!",
             "c) Ale się zmieniłaś!",
-            "d) Pamiętam ją bardzo dobrze.",
-            "e) Ja nie miałem takiego szczęścia.",
-            "f) Ha, ha, to bardzo śmieszne.",
-            "g) Wspominam tę szkołę z przyjemnością.",
-            "h) Opowiesz mi o niej kiedyś?",
-            "i) Nie, nic nie pamiętam z dzieciństwa.",
+            "d) Opowiesz mi o niej kiedyś?",
+            "e) To było dawno temu.",
+            "f) Pamiętam ją bardzo dobrze.",
+            "g) Ja nie miałem takiego szczęścia.",
+            "h) Ha, ha, to bardzo śmieszne.",
+            "i) Wspominam tę szkołę z przyjemnością.",
             "j) Dziękuję, nie jestem głodna."
           ],
           "explanation": "Tomek ma gorsze wspomnienia ze szkoły i pamięta tylko nauczyciela WF-u. Fraza „Ja nie miałem takiego szczęścia” łączy się z tym zdaniem.",
@@ -446,17 +446,17 @@
         },
         {
           "id": "el1-6",
-          "answer": "f) Ha, ha, to bardzo śmieszne.",
+          "answer": "h) Ha, ha, to bardzo śmieszne.",
           "options": [
-            "a) Ale fajne zdjęcie!",
-            "b) To było dawno temu.",
+            "a) Nie, nic nie pamiętam z dzieciństwa.",
+            "b) Ale fajne zdjęcie!",
             "c) Ale się zmieniłaś!",
-            "d) Pamiętam ją bardzo dobrze.",
-            "e) Ja nie miałem takiego szczęścia.",
-            "f) Ha, ha, to bardzo śmieszne.",
-            "g) Wspominam tę szkołę z przyjemnością.",
-            "h) Opowiesz mi o niej kiedyś?",
-            "i) Nie, nic nie pamiętam z dzieciństwa.",
+            "d) Opowiesz mi o niej kiedyś?",
+            "e) To było dawno temu.",
+            "f) Pamiętam ją bardzo dobrze.",
+            "g) Ja nie miałem takiego szczęścia.",
+            "h) Ha, ha, to bardzo śmieszne.",
+            "i) Wspominam tę szkołę z przyjemnością.",
             "j) Dziękuję, nie jestem głodna."
           ],
           "explanation": "Olena śmieje się z odpowiedzi Tomka i zadaje nowe pytanie. „Dziękuję, nie jestem głodna” nie pasuje do rozmowy o szkole.",
@@ -464,17 +464,17 @@
         },
         {
           "id": "el1-7",
-          "answer": "g) Wspominam tę szkołę z przyjemnością.",
+          "answer": "i) Wspominam tę szkołę z przyjemnością.",
           "options": [
-            "a) Ale fajne zdjęcie!",
-            "b) To było dawno temu.",
+            "a) Nie, nic nie pamiętam z dzieciństwa.",
+            "b) Ale fajne zdjęcie!",
             "c) Ale się zmieniłaś!",
-            "d) Pamiętam ją bardzo dobrze.",
-            "e) Ja nie miałem takiego szczęścia.",
-            "f) Ha, ha, to bardzo śmieszne.",
-            "g) Wspominam tę szkołę z przyjemnością.",
-            "h) Opowiesz mi o niej kiedyś?",
-            "i) Nie, nic nie pamiętam z dzieciństwa.",
+            "d) Opowiesz mi o niej kiedyś?",
+            "e) To było dawno temu.",
+            "f) Pamiętam ją bardzo dobrze.",
+            "g) Ja nie miałem takiego szczęścia.",
+            "h) Ha, ha, to bardzo śmieszne.",
+            "i) Wspominam tę szkołę z przyjemnością.",
             "j) Dziękuję, nie jestem głodna."
           ],
           "explanation": "Tomek mówi o swojej szkole na wsi. Fraza „Wspominam tę szkołę z przyjemnością” znaczy, że myśli o niej miło.",
@@ -482,17 +482,17 @@
         },
         {
           "id": "el1-8",
-          "answer": "h) Opowiesz mi o niej kiedyś?",
+          "answer": "d) Opowiesz mi o niej kiedyś?",
           "options": [
-            "a) Ale fajne zdjęcie!",
-            "b) To było dawno temu.",
+            "a) Nie, nic nie pamiętam z dzieciństwa.",
+            "b) Ale fajne zdjęcie!",
             "c) Ale się zmieniłaś!",
-            "d) Pamiętam ją bardzo dobrze.",
-            "e) Ja nie miałem takiego szczęścia.",
-            "f) Ha, ha, to bardzo śmieszne.",
-            "g) Wspominam tę szkołę z przyjemnością.",
-            "h) Opowiesz mi o niej kiedyś?",
-            "i) Nie, nic nie pamiętam z dzieciństwa.",
+            "d) Opowiesz mi o niej kiedyś?",
+            "e) To było dawno temu.",
+            "f) Pamiętam ją bardzo dobrze.",
+            "g) Ja nie miałem takiego szczęścia.",
+            "h) Ha, ha, to bardzo śmieszne.",
+            "i) Wspominam tę szkołę z przyjemnością.",
             "j) Dziękuję, nie jestem głodna."
           ],
           "explanation": "Olena chce usłyszeć więcej historii. Dlatego pyta: „Opowiesz mi o niej kiedyś?” Tomek odpowiada „Jasne”.",
@@ -512,9 +512,9 @@
           "id": "el2-1",
           "answer": "a) w sprawie",
           "options": [
-            "a) w sprawie",
             "b) o sprawie",
-            "c) na sprawę"
+            "c) na sprawę",
+            "a) w sprawie"
           ],
           "explanation": "Formuła „Piszę w sprawie + dopełniacz” otwiera list urzędowy. Pozostałe wyrażenia nie są stosowane.",
           "grammar_point": "rejestr-formalny"
@@ -534,8 +534,8 @@
           "id": "el2-3",
           "answer": "a) o",
           "options": [
-            "a) o",
             "b) w",
+            "a) o",
             "c) z"
           ],
           "explanation": "Mówimy „myśleć o czymś”: „myślę o dzieciństwie”. „Myśleć w” i „myśleć z” są niepoprawne.",
@@ -545,8 +545,8 @@
           "id": "el2-4",
           "answer": "b) czy",
           "options": [
-            "a) że",
             "b) czy",
+            "a) że",
             "c) kto"
           ],
           "explanation": "Pytanie pośrednie zaczyna się od „czy”. „Że” i „kto” nie pasują do pytania o zdjęcie w archiwum.",
@@ -556,9 +556,9 @@
           "id": "el2-5",
           "answer": "c) o",
           "options": [
+            "c) o",
             "a) za",
-            "b) na",
-            "c) o"
+            "b) na"
           ],
           "explanation": "Prosimy „o coś”: „proszę o kopię”. „Prosić za” i „prosić na” mają inne znaczenie albo są błędne.",
           "grammar_point": "rejestr-formalny"
@@ -568,8 +568,8 @@
           "answer": "c) za",
           "options": [
             "a) o",
-            "b) na",
-            "c) za"
+            "c) za",
+            "b) na"
           ],
           "explanation": "Płacimy „za coś”: „zapłacę za wysyłkę”. „Płacić o” i „płacić na” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -589,9 +589,9 @@
           "id": "el2-8",
           "answer": "a) Za",
           "options": [
-            "a) Za",
             "b) O",
-            "c) Na"
+            "c) Na",
+            "a) Za"
           ],
           "explanation": "Wdzięczni jesteśmy „za coś”: „za szybką odpowiedź”. Z „o” i „na” wyrażenie jest błędne.",
           "grammar_point": "rejestr-formalny"
@@ -600,8 +600,8 @@
           "id": "el2-9",
           "answer": "c) Z góry",
           "options": [
-            "a) Od góry",
             "b) Na górze",
+            "a) Od góry",
             "c) Z góry"
           ],
           "explanation": "„Z góry dziękuję” to stała formuła końcowa listu z prośbą. Inne wyrażenia mówią o położeniu.",
@@ -611,9 +611,9 @@
           "id": "el2-10",
           "answer": "b) Z poważaniem",
           "options": [
-            "a) Cześć",
             "b) Z poważaniem",
-            "c) Pa"
+            "c) Pa",
+            "a) Cześć"
           ],
           "explanation": "Do dyrekcji szkoły piszemy oficjalnie i kończymy „Z poważaniem”. „Cześć” i „Pa” są potoczne.",
           "grammar_point": "rejestr-formalny"

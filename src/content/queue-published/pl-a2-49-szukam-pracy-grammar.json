@@ -17,9 +17,9 @@
           "text": "Codziennie jeżdżę do ___ tramwajem.",
           "answer": "biura",
           "options": [
-            "biuro",
+            "biurze",
             "biura",
-            "biurze"
+            "biuro"
           ],
           "grammar_point": "dopelniacz-przyimki",
           "explanation": "Do + dopełniacz. Biuro (rodzaj nijaki) → biura."
@@ -29,9 +29,9 @@
           "text": "Ten prezent jest dla ___.",
           "answer": "Marka",
           "options": [
-            "Marka",
             "Marek",
-            "Markiem"
+            "Markiem",
+            "Marka"
           ],
           "grammar_point": "dopelniacz-przyimki",
           "explanation": "Dla + dopełniacz. Marek → Marka: e znika."
@@ -41,9 +41,9 @@
           "text": "Kasia wraca z ___ o osiemnastej.",
           "answer": "pracy",
           "options": [
-            "pracą",
             "praca",
-            "pracy"
+            "pracy",
+            "pracą"
           ],
           "grammar_point": "dopelniacz-przyimki",
           "explanation": "Z + dopełniacz. Praca → pracy."
@@ -53,9 +53,9 @@
           "text": "Mieszkamy obok ___.",
           "answer": "parku",
           "options": [
-            "parka",
+            "park",
             "parku",
-            "park"
+            "parka"
           ],
           "grammar_point": "dopelniacz-przyimki",
           "explanation": "Park w dopełniaczu ma -u: obok parku."
@@ -77,9 +77,9 @@
           "text": "Wieczorem byliśmy u ___ na kolacji.",
           "answer": "Ani",
           "options": [
-            "Anię",
             "Ani",
-            "Ania"
+            "Ania",
+            "Anię"
           ],
           "grammar_point": "dopelniacz-przyimki",
           "explanation": "U + dopełniacz. Ania → Ani: po miękkiej spółgłosce -i."
@@ -149,8 +149,8 @@
           "text": "Od tygodnia szukam ___ na pół etatu.",
           "answer": "pracy",
           "options": [
-            "pracy",
-            "pracę"
+            "pracę",
+            "pracy"
           ],
           "grammar_point": "dopelniacz-przyimki",
           "explanation": "Szukać łączy się z dopełniaczem: szukam pracy. Po ukraińsku jest „шукаю роботу”, ale po polsku nie ma tu biernika."
@@ -160,8 +160,8 @@
           "text": "Hura! Znalazłam ___ blisko domu!",
           "answer": "pracę",
           "options": [
-            "pracy",
-            "pracę"
+            "pracę",
+            "pracy"
           ],
           "grammar_point": "dopelniacz-przyimki",
           "explanation": "Znaleźć łączy się z biernikiem: znalazłam pracę. Dopełniacz jest po szukać, nie po znaleźć."
@@ -193,8 +193,8 @@
           "text": "W sobotę jadę ___ na rozmowę.",
           "answer": "do Krakowa",
           "options": [
-            "w Kraków",
             "na Kraków",
+            "w Kraków",
             "do Krakowa"
           ],
           "grammar_point": "dopelniacz-przyimki",
@@ -205,8 +205,8 @@
           "text": "Mam e-mail ___ pani Agnieszki.",
           "answer": "od",
           "options": [
-            "od",
-            "z"
+            "z",
+            "od"
           ],
           "grammar_point": "dopelniacz-przyimki",
           "explanation": "Od osoby — od pani Agnieszki. Z miejsca — z biura."
@@ -216,9 +216,9 @@
           "text": "Jestem teraz ___ Tomka, oddzwonię później.",
           "answer": "u",
           "options": [
-            "w",
             "u",
-            "do"
+            "do",
+            "w"
           ],
           "grammar_point": "dopelniacz-przyimki",
           "explanation": "Gdzie? U osoby: u Tomka. Do Tomka — dokąd idę."
@@ -228,8 +228,8 @@
           "text": "Mam urlop ___ poniedziałku do środy.",
           "answer": "od",
           "options": [
-            "od",
-            "z"
+            "z",
+            "od"
           ],
           "grammar_point": "dopelniacz-przyimki",
           "explanation": "Czas: od … do … Po ukraińsku „з понеділка”, po polsku od poniedziałku."
@@ -382,103 +382,103 @@
       "text": "Agnieszka: Biuro podróży Kazimierz, słucham.\n\nOlena: Dzień dobry, nazywam się Olena Kovalenko. {el1-1} Dzwonię w sprawie ogłoszenia o pracę konsultanta.\n\nAgnieszka: {el1-2} To oferta dla osoby, która zna angielski i polski.\n\nOlena: Czy muszę mieć doświadczenie w turystyce?\n\nAgnieszka: {el1-3} Można się zgłosić także bez doświadczenia.\n\nOlena: {el1-4} Do kiedy mogę wysłać CV?\n\nAgnieszka: Do środy. {el1-5}\n\nOlena: Nie mam jeszcze listu motywacyjnego. {el1-6}\n\nAgnieszka: {el1-7} Wystarczy samo CV.\n\nOlena: Dziękuję bardzo. {el1-8}\n\nAgnieszka: Świetnie. Do widzenia!\n\nOlena: Do widzenia!",
       "bank": [
         "a) Nie szkodzi.",
-        "b) Czy dobrze trafiłam?",
-        "c) Niestety to ogłoszenie jest już nieaktualne.",
-        "d) Proszę wysłać dokumenty mailem.",
-        "e) Doświadczenie jest mile widziane.",
-        "f) Wyślę dokumenty jeszcze dzisiaj.",
-        "g) Tak, ogłoszenie jest nadal aktualne.",
+        "b) Wyślę dokumenty jeszcze dzisiaj.",
+        "c) Doświadczenie jest mile widziane.",
+        "d) To bardzo dobrze.",
+        "e) Tak, ogłoszenie jest nadal aktualne.",
+        "f) Proszę wysłać dokumenty mailem.",
+        "g) Niestety to ogłoszenie jest już nieaktualne.",
         "h) Czy to duży problem?",
-        "i) Bardzo mi przykro.",
-        "j) To bardzo dobrze."
+        "i) Czy dobrze trafiłam?",
+        "j) Bardzo mi przykro."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "b) Czy dobrze trafiłam?",
+          "answer": "i) Czy dobrze trafiłam?",
           "options": [
             "a) Nie szkodzi.",
-            "b) Czy dobrze trafiłam?",
-            "c) Niestety to ogłoszenie jest już nieaktualne.",
-            "d) Proszę wysłać dokumenty mailem.",
-            "e) Doświadczenie jest mile widziane.",
-            "f) Wyślę dokumenty jeszcze dzisiaj.",
-            "g) Tak, ogłoszenie jest nadal aktualne.",
+            "b) Wyślę dokumenty jeszcze dzisiaj.",
+            "c) Doświadczenie jest mile widziane.",
+            "d) To bardzo dobrze.",
+            "e) Tak, ogłoszenie jest nadal aktualne.",
+            "f) Proszę wysłać dokumenty mailem.",
+            "g) Niestety to ogłoszenie jest już nieaktualne.",
             "h) Czy to duży problem?",
-            "i) Bardzo mi przykro.",
-            "j) To bardzo dobrze."
+            "i) Czy dobrze trafiłam?",
+            "j) Bardzo mi przykro."
           ],
           "explanation": "Olena sprawdza, czy zadzwoniła pod właściwy numer, zanim zapyta o ogłoszenie. Fragment „Nie szkodzi.” nie jest pytaniem i tu nie pasuje.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "g) Tak, ogłoszenie jest nadal aktualne.",
+          "answer": "e) Tak, ogłoszenie jest nadal aktualne.",
           "options": [
             "a) Nie szkodzi.",
-            "b) Czy dobrze trafiłam?",
-            "c) Niestety to ogłoszenie jest już nieaktualne.",
-            "d) Proszę wysłać dokumenty mailem.",
-            "e) Doświadczenie jest mile widziane.",
-            "f) Wyślę dokumenty jeszcze dzisiaj.",
-            "g) Tak, ogłoszenie jest nadal aktualne.",
+            "b) Wyślę dokumenty jeszcze dzisiaj.",
+            "c) Doświadczenie jest mile widziane.",
+            "d) To bardzo dobrze.",
+            "e) Tak, ogłoszenie jest nadal aktualne.",
+            "f) Proszę wysłać dokumenty mailem.",
+            "g) Niestety to ogłoszenie jest już nieaktualne.",
             "h) Czy to duży problem?",
-            "i) Bardzo mi przykro.",
-            "j) To bardzo dobrze."
+            "i) Czy dobrze trafiłam?",
+            "j) Bardzo mi przykro."
           ],
           "explanation": "Pani Agnieszka potwierdza, że oferta jest ważna, i dopiero potem opisuje stanowisko. „Niestety… nieaktualne” nie pasuje, bo dalej mówi o ofercie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "e) Doświadczenie jest mile widziane.",
+          "answer": "c) Doświadczenie jest mile widziane.",
           "options": [
             "a) Nie szkodzi.",
-            "b) Czy dobrze trafiłam?",
-            "c) Niestety to ogłoszenie jest już nieaktualne.",
-            "d) Proszę wysłać dokumenty mailem.",
-            "e) Doświadczenie jest mile widziane.",
-            "f) Wyślę dokumenty jeszcze dzisiaj.",
-            "g) Tak, ogłoszenie jest nadal aktualne.",
+            "b) Wyślę dokumenty jeszcze dzisiaj.",
+            "c) Doświadczenie jest mile widziane.",
+            "d) To bardzo dobrze.",
+            "e) Tak, ogłoszenie jest nadal aktualne.",
+            "f) Proszę wysłać dokumenty mailem.",
+            "g) Niestety to ogłoszenie jest już nieaktualne.",
             "h) Czy to duży problem?",
-            "i) Bardzo mi przykro.",
-            "j) To bardzo dobrze."
+            "i) Czy dobrze trafiłam?",
+            "j) Bardzo mi przykro."
           ],
           "explanation": "Olena pyta o doświadczenie, więc odpowiedź to informacja o wymaganiach. Zdanie „Doświadczenie jest mile widziane” pasuje do dalszego „Można się zgłosić także bez doświadczenia”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "j) To bardzo dobrze.",
+          "answer": "d) To bardzo dobrze.",
           "options": [
             "a) Nie szkodzi.",
-            "b) Czy dobrze trafiłam?",
-            "c) Niestety to ogłoszenie jest już nieaktualne.",
-            "d) Proszę wysłać dokumenty mailem.",
-            "e) Doświadczenie jest mile widziane.",
-            "f) Wyślę dokumenty jeszcze dzisiaj.",
-            "g) Tak, ogłoszenie jest nadal aktualne.",
+            "b) Wyślę dokumenty jeszcze dzisiaj.",
+            "c) Doświadczenie jest mile widziane.",
+            "d) To bardzo dobrze.",
+            "e) Tak, ogłoszenie jest nadal aktualne.",
+            "f) Proszę wysłać dokumenty mailem.",
+            "g) Niestety to ogłoszenie jest już nieaktualne.",
             "h) Czy to duży problem?",
-            "i) Bardzo mi przykro.",
-            "j) To bardzo dobrze."
+            "i) Czy dobrze trafiłam?",
+            "j) Bardzo mi przykro."
           ],
           "explanation": "Olena cieszy się, że doświadczenie nie jest konieczne. „Bardzo mi przykro” nie pasuje, bo to dobra wiadomość.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "d) Proszę wysłać dokumenty mailem.",
+          "answer": "f) Proszę wysłać dokumenty mailem.",
           "options": [
             "a) Nie szkodzi.",
-            "b) Czy dobrze trafiłam?",
-            "c) Niestety to ogłoszenie jest już nieaktualne.",
-            "d) Proszę wysłać dokumenty mailem.",
-            "e) Doświadczenie jest mile widziane.",
-            "f) Wyślę dokumenty jeszcze dzisiaj.",
-            "g) Tak, ogłoszenie jest nadal aktualne.",
+            "b) Wyślę dokumenty jeszcze dzisiaj.",
+            "c) Doświadczenie jest mile widziane.",
+            "d) To bardzo dobrze.",
+            "e) Tak, ogłoszenie jest nadal aktualne.",
+            "f) Proszę wysłać dokumenty mailem.",
+            "g) Niestety to ogłoszenie jest już nieaktualne.",
             "h) Czy to duży problem?",
-            "i) Bardzo mi przykro.",
-            "j) To bardzo dobrze."
+            "i) Czy dobrze trafiłam?",
+            "j) Bardzo mi przykro."
           ],
           "explanation": "Po terminie „do środy” pani Agnieszka mówi, jak wysłać dokumenty. „Wyślę dokumenty jeszcze dzisiaj” mówi Olena, a nie pani Agnieszka.",
           "grammar_point": "slownictwo"
@@ -488,15 +488,15 @@
           "answer": "h) Czy to duży problem?",
           "options": [
             "a) Nie szkodzi.",
-            "b) Czy dobrze trafiłam?",
-            "c) Niestety to ogłoszenie jest już nieaktualne.",
-            "d) Proszę wysłać dokumenty mailem.",
-            "e) Doświadczenie jest mile widziane.",
-            "f) Wyślę dokumenty jeszcze dzisiaj.",
-            "g) Tak, ogłoszenie jest nadal aktualne.",
+            "b) Wyślę dokumenty jeszcze dzisiaj.",
+            "c) Doświadczenie jest mile widziane.",
+            "d) To bardzo dobrze.",
+            "e) Tak, ogłoszenie jest nadal aktualne.",
+            "f) Proszę wysłać dokumenty mailem.",
+            "g) Niestety to ogłoszenie jest już nieaktualne.",
             "h) Czy to duży problem?",
-            "i) Bardzo mi przykro.",
-            "j) To bardzo dobrze."
+            "i) Czy dobrze trafiłam?",
+            "j) Bardzo mi przykro."
           ],
           "explanation": "Olena mówi o braku listu motywacyjnego i pyta, czy to kłopot. Pytanie „Czy dobrze trafiłam?” pasuje tylko na początku rozmowy.",
           "grammar_point": "slownictwo"
@@ -506,33 +506,33 @@
           "answer": "a) Nie szkodzi.",
           "options": [
             "a) Nie szkodzi.",
-            "b) Czy dobrze trafiłam?",
-            "c) Niestety to ogłoszenie jest już nieaktualne.",
-            "d) Proszę wysłać dokumenty mailem.",
-            "e) Doświadczenie jest mile widziane.",
-            "f) Wyślę dokumenty jeszcze dzisiaj.",
-            "g) Tak, ogłoszenie jest nadal aktualne.",
+            "b) Wyślę dokumenty jeszcze dzisiaj.",
+            "c) Doświadczenie jest mile widziane.",
+            "d) To bardzo dobrze.",
+            "e) Tak, ogłoszenie jest nadal aktualne.",
+            "f) Proszę wysłać dokumenty mailem.",
+            "g) Niestety to ogłoszenie jest już nieaktualne.",
             "h) Czy to duży problem?",
-            "i) Bardzo mi przykro.",
-            "j) To bardzo dobrze."
+            "i) Czy dobrze trafiłam?",
+            "j) Bardzo mi przykro."
           ],
           "explanation": "„Nie szkodzi” znaczy „to nie jest problem” i dobrze łączy się z „Wystarczy samo CV”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "f) Wyślę dokumenty jeszcze dzisiaj.",
+          "answer": "b) Wyślę dokumenty jeszcze dzisiaj.",
           "options": [
             "a) Nie szkodzi.",
-            "b) Czy dobrze trafiłam?",
-            "c) Niestety to ogłoszenie jest już nieaktualne.",
-            "d) Proszę wysłać dokumenty mailem.",
-            "e) Doświadczenie jest mile widziane.",
-            "f) Wyślę dokumenty jeszcze dzisiaj.",
-            "g) Tak, ogłoszenie jest nadal aktualne.",
+            "b) Wyślę dokumenty jeszcze dzisiaj.",
+            "c) Doświadczenie jest mile widziane.",
+            "d) To bardzo dobrze.",
+            "e) Tak, ogłoszenie jest nadal aktualne.",
+            "f) Proszę wysłać dokumenty mailem.",
+            "g) Niestety to ogłoszenie jest już nieaktualne.",
             "h) Czy to duży problem?",
-            "i) Bardzo mi przykro.",
-            "j) To bardzo dobrze."
+            "i) Czy dobrze trafiłam?",
+            "j) Bardzo mi przykro."
           ],
           "explanation": "Na koniec Olena obiecuje szybko wysłać dokumenty. Fragment „To bardzo dobrze” byłby tu dziwny, bo Olena nie reaguje na nową informację.",
           "grammar_point": "slownictwo"
@@ -562,9 +562,9 @@
           "id": "el2-2",
           "answer": "b) od",
           "options": [
+            "c) do",
             "a) z",
-            "b) od",
-            "c) do"
+            "b) od"
           ],
           "explanation": "Informację o ogłoszeniu dostajemy „od kogoś”, np. od kolegi. „Z kolegi” i „do kolegi” mają inne znaczenie.",
           "grammar_point": "rejestr-formalny"
@@ -574,8 +574,8 @@
           "answer": "a) z",
           "options": [
             "a) z",
-            "b) dla",
-            "c) u"
+            "c) u",
+            "b) dla"
           ],
           "explanation": "Pracujemy „z klientami”, czyli razem z nimi. „Dla klientami” i „u klientami” to niepoprawne połączenia.",
           "grammar_point": "rejestr-formalny"
@@ -585,8 +585,8 @@
           "answer": "a) w",
           "options": [
             "a) w",
-            "b) na",
-            "c) o"
+            "c) o",
+            "b) na"
           ],
           "explanation": "Mówimy „doświadczenie w turystyce”. Przyimki „na” i „o” nie pasują do tego rzeczownika.",
           "grammar_point": "rejestr-formalny"
@@ -596,8 +596,8 @@
           "answer": "c) do",
           "options": [
             "a) na",
-            "b) z",
-            "c) do"
+            "c) do",
+            "b) z"
           ],
           "explanation": "Wyrażenie „od poniedziałku do piątku” opisuje zakres dni. Z „na” i „z” to zdanie nie ma sensu.",
           "grammar_point": "rejestr-formalny"
@@ -606,9 +606,9 @@
           "id": "el2-6",
           "answer": "b) W załączniku",
           "options": [
+            "c) Do załącznika",
             "a) Na załączniku",
-            "b) W załączniku",
-            "c) Do załącznika"
+            "b) W załączniku"
           ],
           "explanation": "W e-mailu piszemy „w załączniku przesyłam…”. Dwie pozostałe formy nie są używane w listach.",
           "grammar_point": "rejestr-formalny"
@@ -617,9 +617,9 @@
           "id": "el2-7",
           "answer": "b) czy",
           "options": [
+            "c) żeby",
             "a) że",
-            "b) czy",
-            "c) żeby"
+            "b) czy"
           ],
           "explanation": "Po „Chciałabym zapytać,” używamy „czy” w pytaniu pośrednim. „Że” i „żeby” nie pasują do pytania.",
           "grammar_point": "rejestr-formalny"
@@ -628,9 +628,9 @@
           "id": "el2-8",
           "answer": "c) na",
           "options": [
-            "a) o",
             "b) za",
-            "c) na"
+            "c) na",
+            "a) o"
           ],
           "explanation": "Mówimy „czekać na odpowiedź”. „Czekać o” i „czekać za” są błędne.",
           "grammar_point": "rejestr-formalny"
@@ -650,9 +650,9 @@
           "id": "el2-10",
           "answer": "c) Z poważaniem",
           "options": [
-            "a) Cześć",
             "b) Pa",
-            "c) Z poważaniem"
+            "c) Z poważaniem",
+            "a) Cześć"
           ],
           "explanation": "W półoficjalnym liście kończymy „Z poważaniem”. „Cześć” i „Pa” są zbyt potoczne.",
           "grammar_point": "rejestr-formalny"

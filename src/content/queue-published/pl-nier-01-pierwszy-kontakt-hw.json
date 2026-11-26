@@ -17,9 +17,9 @@
           "answer": "zapytanie",
           "grammar_point": "slownictwo",
           "options": [
+            "wycena",
             "ogłoszenie",
-            "zapytanie",
-            "wycena"
+            "zapytanie"
           ]
         },
         {
@@ -28,8 +28,8 @@
           "answer": "oddzwonić",
           "grammar_point": "slownictwo",
           "options": [
-            "dodzwonić się",
             "oddzwonić",
+            "dodzwonić się",
             "zadzwonić się"
           ]
         },
@@ -39,9 +39,9 @@
           "answer": "rozkład",
           "grammar_point": "slownictwo",
           "options": [
-            "metraż",
             "rozkład",
-            "budżet"
+            "budżet",
+            "metraż"
           ]
         },
         {
@@ -50,9 +50,9 @@
           "answer": "kamienica",
           "grammar_point": "slownictwo",
           "options": [
-            "osiedle",
+            "blok",
             "kamienica",
-            "blok"
+            "osiedle"
           ]
         },
         {
@@ -61,9 +61,9 @@
           "answer": "wycenę",
           "grammar_point": "slownictwo",
           "options": [
-            "wycenę",
+            "zapytanie",
             "prowizję",
-            "zapytanie"
+            "wycenę"
           ]
         },
         {
@@ -72,9 +72,9 @@
           "answer": "deweloper",
           "grammar_point": "slownictwo",
           "options": [
-            "właściciel",
+            "deweloper",
             "pośrednik",
-            "deweloper"
+            "właściciel"
           ]
         }
       ]
@@ -294,8 +294,8 @@
           "answer": "nie chce Pani",
           "grammar_point": "mowa-zalezna",
           "options": [
-            "nie chcę",
             "nie chcesz",
+            "nie chcę",
             "nie chce Pani"
           ],
           "explanation": "„Ja nie chcę” → „Pani nie chce”."
@@ -306,9 +306,9 @@
           "answer": "potrzebuje Pan",
           "grammar_point": "mowa-zalezna",
           "options": [
+            "potrzebuje Pan",
             "potrzebuję",
-            "Pan potrzebujesz",
-            "potrzebuje Pan"
+            "Pan potrzebujesz"
           ],
           "explanation": "„Ja potrzebuję” → „Pan potrzebuje”."
         },
@@ -319,8 +319,8 @@
           "grammar_point": "mowa-zalezna",
           "options": [
             "nasze",
-            "Pana",
-            "Państwa"
+            "Państwa",
+            "Pana"
           ],
           "explanation": "„Nasze dzieci” → „Państwa dzieci”."
         },
@@ -330,9 +330,9 @@
           "answer": "Państwa",
           "grammar_point": "mowa-zalezna",
           "options": [
+            "Państwa",
             "Państwu",
-            "nas",
-            "Państwa"
+            "nas"
           ],
           "explanation": "Interesować kogo? — biernik: Państwa. „Państwu” to celownik."
         }

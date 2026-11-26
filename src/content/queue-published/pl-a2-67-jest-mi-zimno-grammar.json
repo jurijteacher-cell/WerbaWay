@@ -140,8 +140,8 @@
           "answer": "jej",
           "options": [
             "jej",
-            "ją",
-            "niej"
+            "niej",
+            "ją"
           ],
           "grammar_point": "celownik-osoby",
           "explanation": "Kupić komu? — jej. Ją to biernik (widzę ją)."
@@ -151,9 +151,9 @@
           "text": "Tomek ma urodziny. Co ___ kupimy?",
           "answer": "mu",
           "options": [
-            "mu",
             "go",
-            "niego"
+            "niego",
+            "mu"
           ],
           "grammar_point": "celownik-osoby",
           "explanation": "Kupić komu? — mu. Go to biernik (znam go)."
@@ -175,9 +175,9 @@
           "text": "Pomóż ___ koleżance, ona jeszcze wszystkiego nie wie.",
           "answer": "nowej",
           "options": [
+            "nowa",
             "nowej",
-            "nową",
-            "nowa"
+            "nową"
           ],
           "grammar_point": "celownik-osoby",
           "explanation": "Pomagać komu? — rodzaj żeński: nowej koleżance (-ej)."
@@ -188,8 +188,8 @@
           "answer": "temu",
           "options": [
             "temu",
-            "tego",
-            "tym"
+            "tym",
+            "tego"
           ],
           "grammar_point": "celownik-osoby",
           "explanation": "Dziękować komu? — temu panu."
@@ -199,8 +199,8 @@
           "text": "Kasiu, co ___ dolega?",
           "answer": "ci",
           "options": [
-            "ci",
             "cię",
+            "ci",
             "ciebie"
           ],
           "grammar_point": "celownik-osoby",
@@ -211,9 +211,9 @@
           "text": "Przepraszam, podaj ___ sól.",
           "answer": "mi",
           "options": [
-            "mi",
             "mnie",
-            "mną"
+            "mną",
+            "mi"
           ],
           "grammar_point": "celownik-osoby",
           "explanation": "W środku zdania — krótka forma: podaj mi."
@@ -354,158 +354,158 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Rejestratorka: Przychodnia, rejestracja, słucham.\n\nOlena: Dzień dobry. {el1-1} Moja mama od wczoraj źle się czuje.\n\nRejestratorka: {el1-2} Co jej dolega?\n\nOlena: Boli ją gardło i jest jej zimno.\n\nRejestratorka: Ma gorączkę?\n\nOlena: {el1-3} Wczoraj wieczorem miała trzydzieści osiem.\n\nRejestratorka: Rozumiem. Doktor Nowicka ma jutro wolny termin o dziewiątej. {el1-4}\n\nOlena: {el1-5} Czy mama musi mieć skierowanie?\n\nRejestratorka: {el1-6} Proszę tylko przynieść dokument.\n\nOlena: Dziękuję. {el1-7}\n\nRejestratorka: {el1-8}",
       "bank": [
-        "a) Nie, nie musi.",
-        "b) Życzę mamie szybkiego powrotu do zdrowia.",
-        "c) Chciałabym umówić mamę do lekarza.",
-        "d) Niestety nie mamy wolnych terminów.",
-        "e) Tak, niestety.",
-        "f) Czy ten termin Państwu odpowiada?",
+        "a) Chciałabym umówić mamę do lekarza.",
+        "b) Tak, niestety.",
+        "c) Czy ten termin Państwu odpowiada?",
+        "d) Nie, nie musi.",
+        "e) Przykro mi to słyszeć.",
+        "f) Tak, ten termin jest dobry.",
         "g) Mam dzisiaj dużo pracy.",
-        "h) Do zobaczenia jutro o dziewiątej.",
-        "i) Przykro mi to słyszeć.",
-        "j) Tak, ten termin jest dobry."
+        "h) Życzę mamie szybkiego powrotu do zdrowia.",
+        "i) Do zobaczenia jutro o dziewiątej.",
+        "j) Niestety nie mamy wolnych terminów."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "c) Chciałabym umówić mamę do lekarza.",
+          "answer": "a) Chciałabym umówić mamę do lekarza.",
           "options": [
-            "a) Nie, nie musi.",
-            "b) Życzę mamie szybkiego powrotu do zdrowia.",
-            "c) Chciałabym umówić mamę do lekarza.",
-            "d) Niestety nie mamy wolnych terminów.",
-            "e) Tak, niestety.",
-            "f) Czy ten termin Państwu odpowiada?",
+            "a) Chciałabym umówić mamę do lekarza.",
+            "b) Tak, niestety.",
+            "c) Czy ten termin Państwu odpowiada?",
+            "d) Nie, nie musi.",
+            "e) Przykro mi to słyszeć.",
+            "f) Tak, ten termin jest dobry.",
             "g) Mam dzisiaj dużo pracy.",
-            "h) Do zobaczenia jutro o dziewiątej.",
-            "i) Przykro mi to słyszeć.",
-            "j) Tak, ten termin jest dobry."
+            "h) Życzę mamie szybkiego powrotu do zdrowia.",
+            "i) Do zobaczenia jutro o dziewiątej.",
+            "j) Niestety nie mamy wolnych terminów."
           ],
           "explanation": "Olena dzwoni do rejestracji i mówi, po co: „Chciałabym umówić mamę do lekarza”. Dalej opisuje objawy mamy.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "i) Przykro mi to słyszeć.",
+          "answer": "e) Przykro mi to słyszeć.",
           "options": [
-            "a) Nie, nie musi.",
-            "b) Życzę mamie szybkiego powrotu do zdrowia.",
-            "c) Chciałabym umówić mamę do lekarza.",
-            "d) Niestety nie mamy wolnych terminów.",
-            "e) Tak, niestety.",
-            "f) Czy ten termin Państwu odpowiada?",
+            "a) Chciałabym umówić mamę do lekarza.",
+            "b) Tak, niestety.",
+            "c) Czy ten termin Państwu odpowiada?",
+            "d) Nie, nie musi.",
+            "e) Przykro mi to słyszeć.",
+            "f) Tak, ten termin jest dobry.",
             "g) Mam dzisiaj dużo pracy.",
-            "h) Do zobaczenia jutro o dziewiątej.",
-            "i) Przykro mi to słyszeć.",
-            "j) Tak, ten termin jest dobry."
+            "h) Życzę mamie szybkiego powrotu do zdrowia.",
+            "i) Do zobaczenia jutro o dziewiątej.",
+            "j) Niestety nie mamy wolnych terminów."
           ],
           "explanation": "Rejestratorka reaguje na wiadomość o chorobie: „Przykro mi to słyszeć”. Potem pyta, co mamie dolega.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "e) Tak, niestety.",
+          "answer": "b) Tak, niestety.",
           "options": [
-            "a) Nie, nie musi.",
-            "b) Życzę mamie szybkiego powrotu do zdrowia.",
-            "c) Chciałabym umówić mamę do lekarza.",
-            "d) Niestety nie mamy wolnych terminów.",
-            "e) Tak, niestety.",
-            "f) Czy ten termin Państwu odpowiada?",
+            "a) Chciałabym umówić mamę do lekarza.",
+            "b) Tak, niestety.",
+            "c) Czy ten termin Państwu odpowiada?",
+            "d) Nie, nie musi.",
+            "e) Przykro mi to słyszeć.",
+            "f) Tak, ten termin jest dobry.",
             "g) Mam dzisiaj dużo pracy.",
-            "h) Do zobaczenia jutro o dziewiątej.",
-            "i) Przykro mi to słyszeć.",
-            "j) Tak, ten termin jest dobry."
+            "h) Życzę mamie szybkiego powrotu do zdrowia.",
+            "i) Do zobaczenia jutro o dziewiątej.",
+            "j) Niestety nie mamy wolnych terminów."
           ],
           "explanation": "Rejestratorka pyta o gorączkę. Odpowiedź „Tak, niestety” pasuje do zdania o trzydziestu ośmiu stopniach.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "f) Czy ten termin Państwu odpowiada?",
+          "answer": "c) Czy ten termin Państwu odpowiada?",
           "options": [
-            "a) Nie, nie musi.",
-            "b) Życzę mamie szybkiego powrotu do zdrowia.",
-            "c) Chciałabym umówić mamę do lekarza.",
-            "d) Niestety nie mamy wolnych terminów.",
-            "e) Tak, niestety.",
-            "f) Czy ten termin Państwu odpowiada?",
+            "a) Chciałabym umówić mamę do lekarza.",
+            "b) Tak, niestety.",
+            "c) Czy ten termin Państwu odpowiada?",
+            "d) Nie, nie musi.",
+            "e) Przykro mi to słyszeć.",
+            "f) Tak, ten termin jest dobry.",
             "g) Mam dzisiaj dużo pracy.",
-            "h) Do zobaczenia jutro o dziewiątej.",
-            "i) Przykro mi to słyszeć.",
-            "j) Tak, ten termin jest dobry."
+            "h) Życzę mamie szybkiego powrotu do zdrowia.",
+            "i) Do zobaczenia jutro o dziewiątej.",
+            "j) Niestety nie mamy wolnych terminów."
           ],
           "explanation": "Rejestratorka proponuje termin i pyta, czy pasuje. „Niestety nie mamy wolnych terminów” przeczy temu, że lekarka ma jutro wolny termin.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "j) Tak, ten termin jest dobry.",
+          "answer": "f) Tak, ten termin jest dobry.",
           "options": [
-            "a) Nie, nie musi.",
-            "b) Życzę mamie szybkiego powrotu do zdrowia.",
-            "c) Chciałabym umówić mamę do lekarza.",
-            "d) Niestety nie mamy wolnych terminów.",
-            "e) Tak, niestety.",
-            "f) Czy ten termin Państwu odpowiada?",
+            "a) Chciałabym umówić mamę do lekarza.",
+            "b) Tak, niestety.",
+            "c) Czy ten termin Państwu odpowiada?",
+            "d) Nie, nie musi.",
+            "e) Przykro mi to słyszeć.",
+            "f) Tak, ten termin jest dobry.",
             "g) Mam dzisiaj dużo pracy.",
-            "h) Do zobaczenia jutro o dziewiątej.",
-            "i) Przykro mi to słyszeć.",
-            "j) Tak, ten termin jest dobry."
+            "h) Życzę mamie szybkiego powrotu do zdrowia.",
+            "i) Do zobaczenia jutro o dziewiątej.",
+            "j) Niestety nie mamy wolnych terminów."
           ],
           "explanation": "Olena zgadza się na termin: „Tak, ten termin jest dobry”. Dopiero potem zadaje nowe pytanie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "a) Nie, nie musi.",
+          "answer": "d) Nie, nie musi.",
           "options": [
-            "a) Nie, nie musi.",
-            "b) Życzę mamie szybkiego powrotu do zdrowia.",
-            "c) Chciałabym umówić mamę do lekarza.",
-            "d) Niestety nie mamy wolnych terminów.",
-            "e) Tak, niestety.",
-            "f) Czy ten termin Państwu odpowiada?",
+            "a) Chciałabym umówić mamę do lekarza.",
+            "b) Tak, niestety.",
+            "c) Czy ten termin Państwu odpowiada?",
+            "d) Nie, nie musi.",
+            "e) Przykro mi to słyszeć.",
+            "f) Tak, ten termin jest dobry.",
             "g) Mam dzisiaj dużo pracy.",
-            "h) Do zobaczenia jutro o dziewiątej.",
-            "i) Przykro mi to słyszeć.",
-            "j) Tak, ten termin jest dobry."
+            "h) Życzę mamie szybkiego powrotu do zdrowia.",
+            "i) Do zobaczenia jutro o dziewiątej.",
+            "j) Niestety nie mamy wolnych terminów."
           ],
           "explanation": "Olena pyta, czy mama musi mieć skierowanie. Odpowiedź „Nie, nie musi” pasuje do dalszych słów o dokumencie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "h) Do zobaczenia jutro o dziewiątej.",
+          "answer": "i) Do zobaczenia jutro o dziewiątej.",
           "options": [
-            "a) Nie, nie musi.",
-            "b) Życzę mamie szybkiego powrotu do zdrowia.",
-            "c) Chciałabym umówić mamę do lekarza.",
-            "d) Niestety nie mamy wolnych terminów.",
-            "e) Tak, niestety.",
-            "f) Czy ten termin Państwu odpowiada?",
+            "a) Chciałabym umówić mamę do lekarza.",
+            "b) Tak, niestety.",
+            "c) Czy ten termin Państwu odpowiada?",
+            "d) Nie, nie musi.",
+            "e) Przykro mi to słyszeć.",
+            "f) Tak, ten termin jest dobry.",
             "g) Mam dzisiaj dużo pracy.",
-            "h) Do zobaczenia jutro o dziewiątej.",
-            "i) Przykro mi to słyszeć.",
-            "j) Tak, ten termin jest dobry."
+            "h) Życzę mamie szybkiego powrotu do zdrowia.",
+            "i) Do zobaczenia jutro o dziewiątej.",
+            "j) Niestety nie mamy wolnych terminów."
           ],
           "explanation": "Olena kończy rozmowę umówioną wizytą: „Do zobaczenia jutro o dziewiątej”. To naturalne pożegnanie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "b) Życzę mamie szybkiego powrotu do zdrowia.",
+          "answer": "h) Życzę mamie szybkiego powrotu do zdrowia.",
           "options": [
-            "a) Nie, nie musi.",
-            "b) Życzę mamie szybkiego powrotu do zdrowia.",
-            "c) Chciałabym umówić mamę do lekarza.",
-            "d) Niestety nie mamy wolnych terminów.",
-            "e) Tak, niestety.",
-            "f) Czy ten termin Państwu odpowiada?",
+            "a) Chciałabym umówić mamę do lekarza.",
+            "b) Tak, niestety.",
+            "c) Czy ten termin Państwu odpowiada?",
+            "d) Nie, nie musi.",
+            "e) Przykro mi to słyszeć.",
+            "f) Tak, ten termin jest dobry.",
             "g) Mam dzisiaj dużo pracy.",
-            "h) Do zobaczenia jutro o dziewiątej.",
-            "i) Przykro mi to słyszeć.",
-            "j) Tak, ten termin jest dobry."
+            "h) Życzę mamie szybkiego powrotu do zdrowia.",
+            "i) Do zobaczenia jutro o dziewiątej.",
+            "j) Niestety nie mamy wolnych terminów."
           ],
           "explanation": "Rejestratorka życzy chorej szybko wyzdrowieć: „Życzę mamie szybkiego powrotu do zdrowia”. Taka formuła pasuje do końca rozmowy.",
           "grammar_point": "slownictwo"
@@ -524,9 +524,9 @@
           "id": "el2-1",
           "answer": "a) Szanowny",
           "options": [
-            "a) Szanowny",
+            "c) Cześć",
             "b) Hej",
-            "c) Cześć"
+            "a) Szanowny"
           ],
           "explanation": "W e-mailu do przełożonego piszemy „Szanowny Panie”. „Hej” i „Cześć” są zbyt potoczne.",
           "grammar_point": "rejestr-formalny"
@@ -535,9 +535,9 @@
           "id": "el2-2",
           "answer": "c) w",
           "options": [
-            "a) na",
+            "c) w",
             "b) o",
-            "c) w"
+            "a) na"
           ],
           "explanation": "Mówimy „w sprawie czegoś”. „Na sprawie” i „o sprawie” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -558,8 +558,8 @@
           "answer": "a) o",
           "options": [
             "a) o",
-            "b) za",
-            "c) na"
+            "c) na",
+            "b) za"
           ],
           "explanation": "Prosimy o coś: „prosić o zgodę”. „Za” i „na” nie łączą się z czasownikiem „prosić”.",
           "grammar_point": "rejestr-formalny"
@@ -568,8 +568,8 @@
           "id": "el2-5",
           "answer": "c) do",
           "options": [
-            "a) od",
             "b) po",
+            "a) od",
             "c) do"
           ],
           "explanation": "Termin wykonania: „do południa”. „Od południa” i „po południa” oznaczają inny czas.",
@@ -579,9 +579,9 @@
           "id": "el2-6",
           "answer": "b) Panu",
           "options": [
-            "a) Pan",
             "b) Panu",
-            "c) Pana"
+            "c) Pana",
+            "a) Pan"
           ],
           "explanation": "Dziękujemy komuś: „dziękuję Panu”. To celownik, odpowiada na pytanie „komu?”.",
           "grammar_point": "rejestr-formalny"
@@ -601,9 +601,9 @@
           "id": "el2-8",
           "answer": "a) do",
           "options": [
+            "c) o",
             "a) do",
-            "b) na",
-            "c) o"
+            "b) na"
           ],
           "explanation": "Dzwonimy do kogoś: „zadzwonić do mnie”. „Na mnie” i „o mnie” zmieniają sens.",
           "grammar_point": "rejestr-formalny"
@@ -623,9 +623,9 @@
           "id": "el2-10",
           "answer": "a) Z poważaniem",
           "options": [
-            "a) Z poważaniem",
+            "c) Hej",
             "b) Na razie",
-            "c) Hej"
+            "a) Z poważaniem"
           ],
           "explanation": "To oficjalne zakończenie e-maila do szefa. „Na razie” i „Hej” są potoczne.",
           "grammar_point": "rejestr-formalny"

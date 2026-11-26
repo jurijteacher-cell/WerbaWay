@@ -15,9 +15,9 @@
      "id": "g1-1",
      "text": "Mała śpi w ___, a mama ma wolne ręce.",
      "options": [
+      "gondoli",
       "wózku",
-      "nosidle",
-      "gondoli"
+      "nosidle"
      ],
      "answer": "nosidle",
      "image_url": "https://images.unsplash.com/photo-1772463221461-27d45c11e2bf?fm=jpg&q=80&w=900&fit=max",
@@ -29,9 +29,9 @@
      "id": "g1-2",
      "text": "Zimą trudno jechać wózkiem po ośnieżonym ___.",
      "options": [
+      "podjeździe",
       "chodniku",
-      "przystanku",
-      "podjeździe"
+      "przystanku"
      ],
      "answer": "chodniku",
      "image_url": "https://images.unsplash.com/photo-1706459773588-20591994dca3?fm=jpg&q=80&w=900&fit=max",
@@ -43,8 +43,8 @@
      "id": "g1-3",
      "text": "Mężczyzna czeka na autobus na ___.",
      "options": [
-      "przejściu dla pieszych",
       "przystanku",
+      "przejściu dla pieszych",
       "chodniku"
      ],
      "answer": "przystanku",
@@ -57,9 +57,9 @@
      "id": "g1-4",
      "text": "Tata z wózkiem nie ma czasu siedzieć, więc bierze kawę ___.",
      "options": [
+      "w gondoli",
       "przy oknie",
-      "na wynos",
-      "w gondoli"
+      "na wynos"
      ],
      "answer": "na wynos",
      "image_url": "https://images.unsplash.com/photo-1777464218480-ab26b8617ca4?fm=jpg&q=80&w=900&fit=max",
@@ -85,9 +85,9 @@
      "id": "g1-6",
      "text": "Specjalistka sprawdza, czy pacjentka ma ___ w barku.",
      "options": [
-      "bliznę",
+      "skierowanie",
       "napięcie",
-      "skierowanie"
+      "bliznę"
      ],
      "answer": "napięcie",
      "image_url": "https://images.unsplash.com/photo-1645005512968-0c1fe99f0093?fm=jpg&q=80&w=900&fit=max",
@@ -99,9 +99,9 @@
      "id": "g1-7",
      "text": "Pacjentka ćwiczy na specjalnym łóżku, a obok stoi ___.",
      "options": [
-      "kelnerka",
+      "położna środowiskowa",
       "fizjoterapeutka",
-      "położna środowiskowa"
+      "kelnerka"
      ],
      "answer": "fizjoterapeutka",
      "image_url": "https://images.unsplash.com/photo-1717500251688-1c369ec2ab44?fm=jpg&q=80&w=900&fit=max",
@@ -171,9 +171,9 @@
      "id": "g3-1",
      "text": "Mała śpi w ___ i nie słyszy ulicy.",
      "options": [
-      "gondola",
       "gondoli",
-      "gondolą"
+      "gondolą",
+      "gondola"
      ],
      "answer": "gondoli",
      "explanation": "w + miejscownik: gondola → w gondoli.",
@@ -183,9 +183,9 @@
      "id": "g3-2",
      "text": "Agata siedzi na ___ i pije kawę.",
      "options": [
+      "ławką",
       "ławce",
-      "ławkie",
-      "ławką"
+      "ławkie"
      ],
      "answer": "ławce",
      "explanation": "Przed -e: k → c. Ławka → na ławce.",
@@ -196,8 +196,8 @@
      "text": "Czekamy na tramwaj na ___.",
      "options": [
       "przystanek",
-      "przystanku",
-      "przystankiem"
+      "przystankiem",
+      "przystanku"
      ],
      "answer": "przystanku",
      "explanation": "Po k, g, ch w miejscowniku jest -u: na przystanku.",
@@ -207,9 +207,9 @@
      "id": "g3-4",
      "text": "Pokój dla matki z dzieckiem jest na ___ piętrze.",
      "options": [
-      "drugim",
       "drugiej",
-      "drugiego"
+      "drugiego",
+      "drugim"
      ],
      "answer": "drugim",
      "explanation": "Przymiotnik męski i nijaki w miejscowniku: -ym / -im.",
@@ -219,8 +219,8 @@
      "id": "g3-5",
      "text": "W ___ mieści się tylko jeden wózek.",
      "options": [
-      "windie",
       "windzie",
+      "windie",
       "windą"
      ],
      "answer": "windzie",
@@ -231,9 +231,9 @@
      "id": "g3-6",
      "text": "Długo rozmawiałyśmy o ___ i o pracy.",
      "options": [
+      "dzieckiem",
       "dziecko",
-      "dziecku",
-      "dzieckiem"
+      "dziecku"
      ],
      "answer": "dziecku",
      "explanation": "Rozmawiać o kimś / o czym — miejscownik.",
@@ -243,8 +243,8 @@
      "id": "g3-7",
      "text": "Zapytałam położną o ___.",
      "options": [
-      "szczepienie",
       "szczepieniu",
+      "szczepienie",
       "szczepieniem"
      ],
      "answer": "szczepienie",
@@ -255,9 +255,9 @@
      "id": "g3-8",
      "text": "Po ___ mała od razu zasnęła.",
      "options": [
-      "spacer",
       "spacerze",
-      "spacerem"
+      "spacerem",
+      "spacer"
      ],
      "answer": "spacerze",
      "explanation": "Po = potem, kiedy coś się skończyło: po + miejscownik.",
@@ -267,8 +267,8 @@
      "id": "g3-9",
      "text": "W ___ na naszym osiedlu nie ma podjazdów.",
      "options": [
-      "starych sklepach",
       "starymi sklepami",
+      "starych sklepach",
       "starych sklepami"
      ],
      "answer": "starych sklepach",
@@ -279,9 +279,9 @@
      "id": "g3-10",
      "text": "Moja siostra pracuje ___ poczcie.",
      "options": [
-      "w",
       "na",
-      "o"
+      "o",
+      "w"
      ],
      "answer": "na",
      "explanation": "Niektóre instytucje są z na: na poczcie, na dworcu, na uczelni.",
@@ -299,9 +299,9 @@
      "id": "g4-1",
      "text": "Do przychodni zawsze jadę ___.",
      "options": [
-      "autobusem",
       "autobusie",
-      "autobus"
+      "autobus",
+      "autobusem"
      ],
      "answer": "autobusem",
      "explanation": "Czym jedziesz? Narzędnik: autobus → autobusem.",
@@ -311,8 +311,8 @@
      "id": "g4-2",
      "text": "Mama przyjeżdża do nas ___ z drugiego końca miasta.",
      "options": [
-      "tramwajem",
       "tramwaju",
+      "tramwajem",
       "tramwajom"
      ],
      "answer": "tramwajem",
@@ -323,9 +323,9 @@
      "id": "g4-3",
      "text": "Na basenie jestem po prostu ___, nie tylko mamą.",
      "options": [
-      "pływaczka",
       "pływaczką",
-      "pływaczce"
+      "pływaczce",
+      "pływaczka"
      ],
      "answer": "pływaczką",
      "explanation": "Być kimś: po być rola albo zawód w narzędniku.",
@@ -335,9 +335,9 @@
      "id": "g4-4",
      "text": "To jest ___, która zajmuje się kobietami po porodzie.",
      "options": [
+      "mojej fizjoterapeutce",
       "moja fizjoterapeutka",
-      "moją fizjoterapeutką",
-      "mojej fizjoterapeutce"
+      "moją fizjoterapeutką"
      ],
      "answer": "moja fizjoterapeutka",
      "explanation": "Kiedy w zdaniu jest to, mówimy w mianowniku: to jest moja fizjoterapeutka.",
@@ -347,9 +347,9 @@
      "id": "g4-5",
      "text": "Kiedy mnie nie ma, mama zajmuje się ___.",
      "options": [
-      "małej",
+      "mała",
       "małą",
-      "mała"
+      "małej"
      ],
      "answer": "małą",
      "explanation": "Zajmować się kimś — narzędnik, bez przyimka.",
@@ -359,9 +359,9 @@
      "id": "g4-6",
      "text": "Siedziałam w kawiarni z ___ z kursu.",
      "options": [
-      "koleżanką",
       "koleżanki",
-      "koleżanka"
+      "koleżanka",
+      "koleżanką"
      ],
      "answer": "koleżanką",
      "explanation": "Z kim? z + narzędnik: z koleżanką.",
@@ -371,9 +371,9 @@
      "id": "g4-7",
      "text": "Wózek zostawiłam przed ___.",
      "options": [
-      "gabinecie",
       "gabinetem",
-      "gabinetu"
+      "gabinetu",
+      "gabinecie"
      ],
      "answer": "gabinetem",
      "explanation": "Przed + narzędnik, kiedy mówimy, gdzie coś jest.",
@@ -383,8 +383,8 @@
      "id": "g4-8",
      "text": "W tej kawiarni zawsze siedzą mamy z ___.",
      "options": [
-      "dzieciami",
       "dziećmi",
+      "dzieciami",
       "dzieci"
      ],
      "answer": "dziećmi",
@@ -395,9 +395,9 @@
      "id": "g4-9",
      "text": "Cieszę się każdą wolną ___.",
      "options": [
+      "godzinie",
       "godziną",
-      "godziny",
-      "godzinie"
+      "godziny"
      ],
      "answer": "godziną",
      "explanation": "Cieszyć się czymś — narzędnik: każdą wolną godziną.",
@@ -407,9 +407,9 @@
      "id": "g4-10",
      "text": "Wieczorem rozmawiam z mamą ___.",
      "options": [
-      "po telefonie",
       "przez telefon",
-      "telefonem"
+      "telefonem",
+      "po telefonie"
      ],
      "answer": "przez telefon",
      "explanation": "Kalka z ukraińskiego: по телефону → przez telefon.",

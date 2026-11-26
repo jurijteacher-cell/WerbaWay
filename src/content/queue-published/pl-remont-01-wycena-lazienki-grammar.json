@@ -56,9 +56,9 @@
           "text": "Dlaczego hydroizolację trzeba położyć przy wannie?",
           "answer": "Bo tam będzie najwięcej wody.",
           "options": [
+            "Bo tam jest najzimniej.",
             "Bo tam będzie najwięcej wody.",
-            "Bo wanna jest nowa.",
-            "Bo tam jest najzimniej."
+            "Bo wanna jest nowa."
           ],
           "grammar_point": "czytanie",
           "explanation": "…bo tam będzie najwięcej wody."
@@ -69,8 +69,8 @@
           "answer": "Bo podłoga będzie mokra.",
           "options": [
             "Bo podłoga będzie mokra.",
-            "Bo klient jest w pracy.",
-            "Bo drzwi są zamknięte na klucz."
+            "Bo drzwi są zamknięte na klucz.",
+            "Bo klient jest w pracy."
           ],
           "grammar_point": "czytanie",
           "explanation": "…bo podłoga będzie mokra."
@@ -80,8 +80,8 @@
           "text": "Ile metrów kwadratowych płytek potrzebuje Artur?",
           "answer": "trzydzieści pięć",
           "options": [
-            "trzydzieści pięć",
             "sześć",
+            "trzydzieści pięć",
             "dwadzieścia osiem"
           ],
           "grammar_point": "czytanie",
@@ -93,8 +93,8 @@
           "answer": "Artur zamówi je sam.",
           "options": [
             "Artur zamówi je sam.",
-            "Pani Joanna kupi je w sklepie.",
-            "Zrobi to hydraulik."
+            "Zrobi to hydraulik.",
+            "Pani Joanna kupi je w sklepie."
           ],
           "grammar_point": "czytanie",
           "explanation": "Nie trzeba. Materiały zamówię sam."
@@ -104,10 +104,10 @@
           "text": "Co Artur wyśle klientce jutro?",
           "answer": "wycenę",
           "options": [
-            "wycenę",
             "zaliczkę",
-            "termin",
-            "klej"
+            "klej",
+            "wycenę",
+            "termin"
           ],
           "grammar_point": "czytanie",
           "explanation": "Potrzebuję tylko zaliczki. Wycenę wyślę jutro."
@@ -327,9 +327,9 @@
           "answer": "musimy",
           "grammar_point": "modalne-obowiazek",
           "options": [
-            "muszę",
             "musimy",
-            "musicie"
+            "musicie",
+            "muszę"
           ]
         },
         {
@@ -339,8 +339,8 @@
           "grammar_point": "modalne-obowiazek",
           "options": [
             "musi",
-            "musisz",
-            "muszę"
+            "muszę",
+            "musisz"
           ]
         },
         {
@@ -349,9 +349,9 @@
           "answer": "musi",
           "grammar_point": "modalne-obowiazek",
           "options": [
-            "musisz",
             "muszą",
-            "musi"
+            "musi",
+            "musisz"
           ]
         },
         {
@@ -424,9 +424,9 @@
           "answer": "powinien",
           "grammar_point": "modalne-obowiazek",
           "options": [
-            "powinno",
             "powinien",
-            "powinna"
+            "powinna",
+            "powinno"
           ]
         },
         {
@@ -436,8 +436,8 @@
           "grammar_point": "modalne-obowiazek",
           "options": [
             "powinna",
-            "powinny",
-            "powinni"
+            "powinni",
+            "powinny"
           ]
         },
         {
@@ -446,9 +446,9 @@
           "answer": "powinnam",
           "grammar_point": "modalne-obowiazek",
           "options": [
+            "powinnam",
             "powinnaś",
-            "powinienem",
-            "powinnam"
+            "powinienem"
           ]
         },
         {
@@ -457,9 +457,9 @@
           "answer": "powinieneś",
           "grammar_point": "modalne-obowiazek",
           "options": [
-            "powinnaś",
+            "powinien",
             "powinieneś",
-            "powinien"
+            "powinnaś"
           ]
         }
       ]
@@ -488,8 +488,8 @@
           "answer": "nie trzeba",
           "grammar_point": "modalne-obowiazek",
           "options": [
-            "nie wolno",
-            "nie trzeba"
+            "nie trzeba",
+            "nie wolno"
           ],
           "explanation": "Nie trzeba = nie ma takiej potrzeby, ale nie jest to zakaz."
         },
@@ -500,8 +500,8 @@
           "grammar_point": "modalne-obowiazek",
           "options": [
             "nie wolno",
-            "trzeba",
-            "nie trzeba"
+            "nie trzeba",
+            "trzeba"
           ],
           "explanation": "Jest powód, żeby to zrobić, więc trzeba."
         },
@@ -511,8 +511,8 @@
           "answer": "nie wolno",
           "grammar_point": "modalne-obowiazek",
           "options": [
-            "trzeba",
-            "nie wolno"
+            "nie wolno",
+            "trzeba"
           ],
           "explanation": "Dotykanie mokrej fugi niszczy pracę, więc to zakaz: nie wolno."
         },
@@ -564,8 +564,8 @@
           "answer": "trzeba było",
           "grammar_point": "modalne-obowiazek",
           "options": [
-            "trzeba",
             "będzie trzeba",
+            "trzeba",
             "trzeba było"
           ]
         },
@@ -575,9 +575,9 @@
           "answer": "będzie trzeba",
           "grammar_point": "modalne-obowiazek",
           "options": [
-            "trzeba było",
             "będzie trzeba",
-            "trzeba"
+            "trzeba",
+            "trzeba było"
           ]
         },
         {

@@ -26,8 +26,8 @@
           "text": "Muszę ___ ten formularz do piątku.",
           "answer": "wypełnić",
           "options": [
-            "wypełnienie",
-            "wypełnić"
+            "wypełnić",
+            "wypełnienie"
           ],
           "grammar_point": "ro-czynnosc-rzecz"
         },
@@ -36,8 +36,8 @@
           "text": "Na bramie wisi tablica: „___ tylko dla pracowników”.",
           "answer": "Parkowanie",
           "options": [
-            "Parkowanie",
-            "Parkować"
+            "Parkować",
+            "Parkowanie"
           ],
           "grammar_point": "ro-czynnosc-rzecz"
         },
@@ -46,8 +46,8 @@
           "text": "Wymagamy doświadczenia w ___ zespołem.",
           "answer": "zarządzaniu",
           "options": [
-            "zarządzaniu",
-            "zarządzać"
+            "zarządzać",
+            "zarządzaniu"
           ],
           "grammar_point": "ro-czynnosc-rzecz"
         },
@@ -56,8 +56,8 @@
           "text": "Chcę ___ własną firmę jeszcze w tym roku.",
           "answer": "założyć",
           "options": [
-            "założenie",
-            "założyć"
+            "założyć",
+            "założenie"
           ],
           "grammar_point": "ro-czynnosc-rzecz"
         },
@@ -66,8 +66,8 @@
           "text": "___ umowy odbędzie się w poniedziałek o dziesiątej.",
           "answer": "Podpisanie",
           "options": [
-            "Podpisanie",
-            "Podpisać"
+            "Podpisać",
+            "Podpisanie"
           ],
           "grammar_point": "ro-czynnosc-rzecz"
         }
@@ -342,8 +342,8 @@
           "text": "___ nowego systemu trwało pół roku.",
           "answer": "Wdrażanie",
           "options": [
-            "Wdrażanie",
-            "Wdrożenie"
+            "Wdrożenie",
+            "Wdrażanie"
           ],
           "explanation": "Trwało pół roku — proces, więc niedokonany.",
           "grammar_point": "ro-aspekt"
@@ -426,8 +426,8 @@
           "text": "Po ___ rozmowy rekruter odprowadził mnie do windy.",
           "answer": "zakończeniu",
           "options": [
-            "zakończeniu",
-            "zakończenia"
+            "zakończenia",
+            "zakończeniu"
           ],
           "explanation": "Po + miejscownik. Ukraińskie «після» łączy się z dopełniaczem, polskie „po” — nie.",
           "grammar_point": "ro-pulapki"
@@ -448,8 +448,8 @@
           "text": "Mam trzy lata doświadczenia ___ w logistyce.",
           "answer": "zawodowego",
           "options": [
-            "zawodowego",
-            "pracy"
+            "pracy",
+            "zawodowego"
           ],
           "explanation": "„Doświadczenie pracy” to kalka z «досвід роботи». Po polsku: doświadczenie zawodowe albo doświadczenie w pracy.",
           "grammar_point": "ro-pulapki"
@@ -481,8 +481,8 @@
           "text": "___ się do pracy bez uprzedzenia może skończyć się zwolnieniem.",
           "answer": "Niestawienie",
           "options": [
-            "Niestawienie",
-            "Nie stawienie"
+            "Nie stawienie",
+            "Niestawienie"
           ],
           "explanation": "Rzeczownik z „nie” razem, „się” zostaje osobno.",
           "grammar_point": "ro-pulapki"
@@ -502,86 +502,86 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Nowak: Dzień dobry, pani Marto. Dziękuję, że pani przyszła. Proszę usiąść.\n\nMarta: Dzień dobry. {el1-1}\n\nNowak: Oferujemy pracę na pełen etat, od poniedziałku do piątku.\n\nMarta: {el1-2}\n\nNowak: Na początku umowa zlecenia na trzy miesiące, potem umowa o pracę.\n\nMarta: {el1-3}\n\nNowak: Rozumiem. Pensja wynosi 6000 złotych brutto.\n\nMarta: {el1-4}\n\nNowak: {el1-5} Jeśli szef się zgodzi, dam pani znać.\n\nMarta: {el1-6} To dla mnie ważne ze względu na dojazdy.\n\nNowak: {el1-7}\n\nMarta: {el1-8}\n\nNowak: Odezwiemy się do końca tygodnia.",
       "bank": [
-        "a) Czy firma zapewnia ubezpieczenie zdrowotne?",
-        "b) Liczyłam na trochę więcej, około 6500 złotych.",
-        "c) Dziękuję za zaproszenie.",
-        "d) To możliwe, ale dopiero po okresie próbnym.",
-        "e) Na jakiej umowie byłaby to praca?",
-        "f) Pracuję obecnie w małej agencji reklamowej.",
-        "g) Dobrze, to dla mnie rozsądne rozwiązanie.",
+        "a) Czy mogłabym pracować dwa dni w tygodniu z domu?",
+        "b) Dobrze, to dla mnie rozsądne rozwiązanie.",
+        "c) Pracuję obecnie w małej agencji reklamowej.",
+        "d) To dla mnie ważne, bo potrzebuję stabilności.",
+        "e) Liczyłam na trochę więcej, około 6500 złotych.",
+        "f) Czy firma zapewnia ubezpieczenie zdrowotne?",
+        "g) To możliwe, ale dopiero po okresie próbnym.",
         "h) Muszę to jeszcze omówić z kierownikiem.",
-        "i) To dla mnie ważne, bo potrzebuję stabilności.",
-        "j) Czy mogłabym pracować dwa dni w tygodniu z domu?"
+        "i) Dziękuję za zaproszenie.",
+        "j) Na jakiej umowie byłaby to praca?"
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "c) Dziękuję za zaproszenie.",
+          "answer": "i) Dziękuję za zaproszenie.",
           "options": [
-            "a) Czy firma zapewnia ubezpieczenie zdrowotne?",
-            "b) Liczyłam na trochę więcej, około 6500 złotych.",
-            "c) Dziękuję za zaproszenie.",
-            "d) To możliwe, ale dopiero po okresie próbnym.",
-            "e) Na jakiej umowie byłaby to praca?",
-            "f) Pracuję obecnie w małej agencji reklamowej.",
-            "g) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "a) Czy mogłabym pracować dwa dni w tygodniu z domu?",
+            "b) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "c) Pracuję obecnie w małej agencji reklamowej.",
+            "d) To dla mnie ważne, bo potrzebuję stabilności.",
+            "e) Liczyłam na trochę więcej, około 6500 złotych.",
+            "f) Czy firma zapewnia ubezpieczenie zdrowotne?",
+            "g) To możliwe, ale dopiero po okresie próbnym.",
             "h) Muszę to jeszcze omówić z kierownikiem.",
-            "i) To dla mnie ważne, bo potrzebuję stabilności.",
-            "j) Czy mogłabym pracować dwa dni w tygodniu z domu?"
+            "i) Dziękuję za zaproszenie.",
+            "j) Na jakiej umowie byłaby to praca?"
           ],
           "explanation": "Marta odpowiada na powitanie i podziękowanie rekrutera uprzejmą formułą. „Pracuję obecnie w małej agencji reklamowej.” nie pasuje do tak krótkiej wymiany grzeczności.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "e) Na jakiej umowie byłaby to praca?",
+          "answer": "j) Na jakiej umowie byłaby to praca?",
           "options": [
-            "a) Czy firma zapewnia ubezpieczenie zdrowotne?",
-            "b) Liczyłam na trochę więcej, około 6500 złotych.",
-            "c) Dziękuję za zaproszenie.",
-            "d) To możliwe, ale dopiero po okresie próbnym.",
-            "e) Na jakiej umowie byłaby to praca?",
-            "f) Pracuję obecnie w małej agencji reklamowej.",
-            "g) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "a) Czy mogłabym pracować dwa dni w tygodniu z domu?",
+            "b) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "c) Pracuję obecnie w małej agencji reklamowej.",
+            "d) To dla mnie ważne, bo potrzebuję stabilności.",
+            "e) Liczyłam na trochę więcej, około 6500 złotych.",
+            "f) Czy firma zapewnia ubezpieczenie zdrowotne?",
+            "g) To możliwe, ale dopiero po okresie próbnym.",
             "h) Muszę to jeszcze omówić z kierownikiem.",
-            "i) To dla mnie ważne, bo potrzebuję stabilności.",
-            "j) Czy mogłabym pracować dwa dni w tygodniu z domu?"
+            "i) Dziękuję za zaproszenie.",
+            "j) Na jakiej umowie byłaby to praca?"
           ],
           "explanation": "Rekruter przedstawił wymiar pracy, więc Marta dopytuje o rodzaj umowy. Odpowiedź „umowa zlecenia, potem umowa o pracę” pasuje do tego pytania.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "i) To dla mnie ważne, bo potrzebuję stabilności.",
+          "answer": "d) To dla mnie ważne, bo potrzebuję stabilności.",
           "options": [
-            "a) Czy firma zapewnia ubezpieczenie zdrowotne?",
-            "b) Liczyłam na trochę więcej, około 6500 złotych.",
-            "c) Dziękuję za zaproszenie.",
-            "d) To możliwe, ale dopiero po okresie próbnym.",
-            "e) Na jakiej umowie byłaby to praca?",
-            "f) Pracuję obecnie w małej agencji reklamowej.",
-            "g) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "a) Czy mogłabym pracować dwa dni w tygodniu z domu?",
+            "b) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "c) Pracuję obecnie w małej agencji reklamowej.",
+            "d) To dla mnie ważne, bo potrzebuję stabilności.",
+            "e) Liczyłam na trochę więcej, około 6500 złotych.",
+            "f) Czy firma zapewnia ubezpieczenie zdrowotne?",
+            "g) To możliwe, ale dopiero po okresie próbnym.",
             "h) Muszę to jeszcze omówić z kierownikiem.",
-            "i) To dla mnie ważne, bo potrzebuję stabilności.",
-            "j) Czy mogłabym pracować dwa dni w tygodniu z domu?"
+            "i) Dziękuję za zaproszenie.",
+            "j) Na jakiej umowie byłaby to praca?"
           ],
           "explanation": "Marta reaguje na informację, że na początku będzie umowa zlecenia. Wyjaśnia, że zależy jej na stabilnym zatrudnieniu.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "b) Liczyłam na trochę więcej, około 6500 złotych.",
+          "answer": "e) Liczyłam na trochę więcej, około 6500 złotych.",
           "options": [
-            "a) Czy firma zapewnia ubezpieczenie zdrowotne?",
-            "b) Liczyłam na trochę więcej, około 6500 złotych.",
-            "c) Dziękuję za zaproszenie.",
-            "d) To możliwe, ale dopiero po okresie próbnym.",
-            "e) Na jakiej umowie byłaby to praca?",
-            "f) Pracuję obecnie w małej agencji reklamowej.",
-            "g) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "a) Czy mogłabym pracować dwa dni w tygodniu z domu?",
+            "b) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "c) Pracuję obecnie w małej agencji reklamowej.",
+            "d) To dla mnie ważne, bo potrzebuję stabilności.",
+            "e) Liczyłam na trochę więcej, około 6500 złotych.",
+            "f) Czy firma zapewnia ubezpieczenie zdrowotne?",
+            "g) To możliwe, ale dopiero po okresie próbnym.",
             "h) Muszę to jeszcze omówić z kierownikiem.",
-            "i) To dla mnie ważne, bo potrzebuję stabilności.",
-            "j) Czy mogłabym pracować dwa dni w tygodniu z domu?"
+            "i) Dziękuję za zaproszenie.",
+            "j) Na jakiej umowie byłaby to praca?"
           ],
           "explanation": "Po usłyszeniu pensji Marta delikatnie zaczyna negocjować wyższą stawkę. Czasownik „liczyć na” wyraża oczekiwania, a nie żądanie.",
           "grammar_point": "slownictwo"
@@ -590,70 +590,70 @@
           "id": "el1-5",
           "answer": "h) Muszę to jeszcze omówić z kierownikiem.",
           "options": [
-            "a) Czy firma zapewnia ubezpieczenie zdrowotne?",
-            "b) Liczyłam na trochę więcej, około 6500 złotych.",
-            "c) Dziękuję za zaproszenie.",
-            "d) To możliwe, ale dopiero po okresie próbnym.",
-            "e) Na jakiej umowie byłaby to praca?",
-            "f) Pracuję obecnie w małej agencji reklamowej.",
-            "g) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "a) Czy mogłabym pracować dwa dni w tygodniu z domu?",
+            "b) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "c) Pracuję obecnie w małej agencji reklamowej.",
+            "d) To dla mnie ważne, bo potrzebuję stabilności.",
+            "e) Liczyłam na trochę więcej, około 6500 złotych.",
+            "f) Czy firma zapewnia ubezpieczenie zdrowotne?",
+            "g) To możliwe, ale dopiero po okresie próbnym.",
             "h) Muszę to jeszcze omówić z kierownikiem.",
-            "i) To dla mnie ważne, bo potrzebuję stabilności.",
-            "j) Czy mogłabym pracować dwa dni w tygodniu z domu?"
+            "i) Dziękuję za zaproszenie.",
+            "j) Na jakiej umowie byłaby to praca?"
           ],
           "explanation": "Rekruter nie może od razu zmienić stawki, więc musi skonsultować to z przełożonym. Następne zdanie o zgodzie szefa potwierdza ten sens.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "j) Czy mogłabym pracować dwa dni w tygodniu z domu?",
+          "answer": "a) Czy mogłabym pracować dwa dni w tygodniu z domu?",
           "options": [
-            "a) Czy firma zapewnia ubezpieczenie zdrowotne?",
-            "b) Liczyłam na trochę więcej, około 6500 złotych.",
-            "c) Dziękuję za zaproszenie.",
-            "d) To możliwe, ale dopiero po okresie próbnym.",
-            "e) Na jakiej umowie byłaby to praca?",
-            "f) Pracuję obecnie w małej agencji reklamowej.",
-            "g) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "a) Czy mogłabym pracować dwa dni w tygodniu z domu?",
+            "b) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "c) Pracuję obecnie w małej agencji reklamowej.",
+            "d) To dla mnie ważne, bo potrzebuję stabilności.",
+            "e) Liczyłam na trochę więcej, około 6500 złotych.",
+            "f) Czy firma zapewnia ubezpieczenie zdrowotne?",
+            "g) To możliwe, ale dopiero po okresie próbnym.",
             "h) Muszę to jeszcze omówić z kierownikiem.",
-            "i) To dla mnie ważne, bo potrzebuję stabilności.",
-            "j) Czy mogłabym pracować dwa dni w tygodniu z domu?"
+            "i) Dziękuję za zaproszenie.",
+            "j) Na jakiej umowie byłaby to praca?"
           ],
           "explanation": "Marta przechodzi do kolejnego warunku: pracy zdalnej. Zdanie dodatkowe o dojazdach uzasadnia jej pytanie. Pytanie o ubezpieczenie zdrowotne nie pasuje do tego uzasadnienia.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "d) To możliwe, ale dopiero po okresie próbnym.",
+          "answer": "g) To możliwe, ale dopiero po okresie próbnym.",
           "options": [
-            "a) Czy firma zapewnia ubezpieczenie zdrowotne?",
-            "b) Liczyłam na trochę więcej, około 6500 złotych.",
-            "c) Dziękuję za zaproszenie.",
-            "d) To możliwe, ale dopiero po okresie próbnym.",
-            "e) Na jakiej umowie byłaby to praca?",
-            "f) Pracuję obecnie w małej agencji reklamowej.",
-            "g) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "a) Czy mogłabym pracować dwa dni w tygodniu z domu?",
+            "b) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "c) Pracuję obecnie w małej agencji reklamowej.",
+            "d) To dla mnie ważne, bo potrzebuję stabilności.",
+            "e) Liczyłam na trochę więcej, około 6500 złotych.",
+            "f) Czy firma zapewnia ubezpieczenie zdrowotne?",
+            "g) To możliwe, ale dopiero po okresie próbnym.",
             "h) Muszę to jeszcze omówić z kierownikiem.",
-            "i) To dla mnie ważne, bo potrzebuję stabilności.",
-            "j) Czy mogłabym pracować dwa dni w tygodniu z domu?"
+            "i) Dziękuję za zaproszenie.",
+            "j) Na jakiej umowie byłaby to praca?"
           ],
           "explanation": "Rekruter zgadza się na pracę zdalną, ale z zastrzeżeniem. Spójnik „ale” zapowiada ograniczenie: dopiero po okresie próbnym.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "g) Dobrze, to dla mnie rozsądne rozwiązanie.",
+          "answer": "b) Dobrze, to dla mnie rozsądne rozwiązanie.",
           "options": [
-            "a) Czy firma zapewnia ubezpieczenie zdrowotne?",
-            "b) Liczyłam na trochę więcej, około 6500 złotych.",
-            "c) Dziękuję za zaproszenie.",
-            "d) To możliwe, ale dopiero po okresie próbnym.",
-            "e) Na jakiej umowie byłaby to praca?",
-            "f) Pracuję obecnie w małej agencji reklamowej.",
-            "g) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "a) Czy mogłabym pracować dwa dni w tygodniu z domu?",
+            "b) Dobrze, to dla mnie rozsądne rozwiązanie.",
+            "c) Pracuję obecnie w małej agencji reklamowej.",
+            "d) To dla mnie ważne, bo potrzebuję stabilności.",
+            "e) Liczyłam na trochę więcej, około 6500 złotych.",
+            "f) Czy firma zapewnia ubezpieczenie zdrowotne?",
+            "g) To możliwe, ale dopiero po okresie próbnym.",
             "h) Muszę to jeszcze omówić z kierownikiem.",
-            "i) To dla mnie ważne, bo potrzebuję stabilności.",
-            "j) Czy mogłabym pracować dwa dni w tygodniu z domu?"
+            "i) Dziękuję za zaproszenie.",
+            "j) Na jakiej umowie byłaby to praca?"
           ],
           "explanation": "Marta akceptuje kompromis. Zwrot „to dla mnie rozsądne rozwiązanie” pasuje do zakończenia negocjacji.",
           "grammar_point": "slownictwo"
@@ -672,9 +672,9 @@
           "id": "el2-1",
           "answer": "a) za",
           "options": [
-            "a) za",
+            "c) na",
             "b) o",
-            "c) na"
+            "a) za"
           ],
           "explanation": "Czasownik „dziękować” łączy się z przyimkiem „za”: „dziękuję za rozmowę”. „O” i „na” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -683,9 +683,9 @@
           "id": "el2-2",
           "answer": "b) zainteresowana",
           "options": [
+            "c) interesująca",
             "a) ciekawa",
-            "b) zainteresowana",
-            "c) interesująca"
+            "b) zainteresowana"
           ],
           "explanation": "Mówimy „być zainteresowaną ofertą” — z narzędnikiem. „Ciekawa” i „interesująca” nie łączą się z tym rzeczownikiem w tej konstrukcji.",
           "grammar_point": "rejestr-formalny"
@@ -694,9 +694,9 @@
           "id": "el2-3",
           "answer": "c) Zanim podpiszę",
           "options": [
+            "c) Zanim podpiszę",
             "a) Zanim podpisuję",
-            "b) Dopóki podpiszę",
-            "c) Zanim podpiszę"
+            "b) Dopóki podpiszę"
           ],
           "explanation": "Konstrukcja „Zanim podpiszę umowę” wyraża czynność przed podpisaniem. Pozostałe warianty mają zły aspekt lub spójnik.",
           "grammar_point": "rejestr-formalny"
@@ -705,9 +705,9 @@
           "id": "el2-4",
           "answer": "a) w",
           "options": [
+            "c) za",
             "a) w",
-            "b) na",
-            "c) za"
+            "b) na"
           ],
           "explanation": "Mówimy „okres wypowiedzenia w umowie”, czyli zapisany w dokumencie. „Na” i „za” nie pasują do tego wyrażenia.",
           "grammar_point": "rejestr-formalny"
@@ -716,8 +716,8 @@
           "id": "el2-5",
           "answer": "b) czy",
           "options": [
-            "a) że",
             "b) czy",
+            "a) że",
             "c) aby"
           ],
           "explanation": "Pytanie pośrednie rozpoczynamy od „czy”: „dowiedzieć się, czy mogę…”. „Że” i „aby” nie wprowadzają pytania.",
@@ -727,9 +727,9 @@
           "id": "el2-6",
           "answer": "c) za",
           "options": [
-            "a) o",
             "b) na",
-            "c) za"
+            "c) za",
+            "a) o"
           ],
           "explanation": "Wyrażenie „być wdzięcznym za coś” wymaga przyimka „za”. „O” i „na” są błędne.",
           "grammar_point": "rejestr-formalny"
@@ -749,9 +749,9 @@
           "id": "el2-8",
           "answer": "b) że",
           "options": [
-            "a) aby",
+            "c) czy",
             "b) że",
-            "c) czy"
+            "a) aby"
           ],
           "explanation": "Po „Mam nadzieję” używamy „że”. „Aby” i „czy” nie tworzą poprawnego zdania.",
           "grammar_point": "rejestr-formalny"
@@ -760,9 +760,9 @@
           "id": "el2-9",
           "answer": "c) do",
           "options": [
+            "c) do",
             "a) w",
-            "b) z",
-            "c) do"
+            "b) z"
           ],
           "explanation": "Stały zwrot to „być do dyspozycji”. Pozostałe przyimki nie tworzą tej formuły.",
           "grammar_point": "rejestr-formalny"
@@ -771,9 +771,9 @@
           "id": "el2-10",
           "answer": "a) Z",
           "options": [
+            "c) Dla",
             "a) Z",
-            "b) Pod",
-            "c) Dla"
+            "b) Pod"
           ],
           "explanation": "List oficjalny kończymy formułą „Z poważaniem”. „Pod” i „dla” nie tworzą tego zwrotu.",
           "grammar_point": "rejestr-formalny"

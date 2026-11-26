@@ -141,8 +141,8 @@
           "answer": "do ciebie",
           "grammar_point": "zaimki-krotkie-dlugie",
           "options": [
-            "ci",
-            "do ciebie"
+            "do ciebie",
+            "ci"
           ],
           "explanation": "Dzwonić DO kogoś (укр. «подзвоню тобі»). Po przyimku → długa forma: do ciebie."
         },
@@ -152,8 +152,8 @@
           "answer": "ci",
           "grammar_point": "zaimki-krotkie-dlugie",
           "options": [
-            "ci",
-            "tobie"
+            "tobie",
+            "ci"
           ],
           "explanation": "Komu? Zwykłe pytanie, bez akcentu → ci."
         },
@@ -163,8 +163,8 @@
           "answer": "Mnie",
           "grammar_point": "zaimki-krotkie-dlugie",
           "options": [
-            "Mi",
-            "Mnie"
+            "Mnie",
+            "Mi"
           ],
           "explanation": "Początek zdania i akcent (mnie, a innym tak) → długa forma: mnie."
         },
@@ -701,8 +701,8 @@
           "answer": "zadzwonię do niego",
           "grammar_point": "kalki-uk",
           "options": [
-            "zadzwonię mu",
-            "zadzwonię do niego"
+            "zadzwonię do niego",
+            "zadzwonię mu"
           ],
           "explanation": "Укр. «подзвоню йому», ale po polsku dzwonimy DO kogoś: do niego."
         },
@@ -712,8 +712,8 @@
           "answer": "znam ją",
           "grammar_point": "kalki-uk",
           "options": [
-            "jestem z nią znajoma",
-            "znam ją"
+            "znam ją",
+            "jestem z nią znajoma"
           ],
           "explanation": "Укр. «я з нею знайома» → po polsku: znam ją albo znamy się."
         },
@@ -745,8 +745,8 @@
           "answer": "ze mną",
           "grammar_point": "kalki-uk",
           "options": [
-            "z mną",
-            "ze mną"
+            "ze mną",
+            "z mną"
           ],
           "explanation": "Przed „mną” zawsze ze: ze mną."
         },
@@ -756,8 +756,8 @@
           "answer": "Nikt z nas nie wiedział",
           "grammar_point": "kalki-uk",
           "options": [
-            "Nikt z nas nie wiedzieliśmy",
-            "Nikt z nas nie wiedział"
+            "Nikt z nas nie wiedział",
+            "Nikt z nas nie wiedzieliśmy"
           ],
           "explanation": "Nikt = on: czasownik w 3. osobie liczby pojedynczej."
         }
@@ -771,158 +771,158 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Olena: Ira, cześć. To ja. Dobrze, że odebrałaś.\n\nIra: Cześć. {el1-1} Czekałam na ten telefon dwa tygodnie.\n\nOlena: {el1-2} Zapomniałam o twoich urodzinach i było mi strasznie głupio.\n\nIra: {el1-3} Ale rozumiem, że miałaś dużo pracy.\n\nOlena: {el1-4} Powinnam była zadzwonić od razu.\n\nIra: Nie ma sprawy. {el1-5}\n\nOlena: {el1-6} Może porozmawiamy w niedzielę o czternastej?\n\nIra: {el1-7} O ósmej rano będę już po śniadaniu.\n\nOlena: {el1-8} Do usłyszenia!\n\nIra: Ja też. Do niedzieli!",
       "bank": [
-        "a) Zgoda, to mi odpowiada.",
-        "b) Nie mam teraz czasu na rozmowę.",
-        "c) Przepraszam cię.",
-        "d) Dobrze słyszeć twój głos.",
-        "e) Masz rację.",
-        "f) Cieszę się, że się pogodziłyśmy.",
+        "a) Cieszę się, że się pogodziłyśmy.",
+        "b) Rzeczywiście było mi przykro.",
+        "c) Dobrze słyszeć twój głos.",
+        "d) To dla mnie bardzo ważne.",
+        "e) Przepraszam cię.",
+        "f) Masz rację.",
         "g) Proszę nie dzwonić o tej porze.",
-        "h) To dla mnie bardzo ważne.",
-        "i) Rzeczywiście było mi przykro.",
-        "j) Już się na ciebie nie gniewam."
+        "h) Zgoda, to mi odpowiada.",
+        "i) Już się na ciebie nie gniewam.",
+        "j) Nie mam teraz czasu na rozmowę."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "d) Dobrze słyszeć twój głos.",
+          "answer": "c) Dobrze słyszeć twój głos.",
           "options": [
-            "a) Zgoda, to mi odpowiada.",
-            "b) Nie mam teraz czasu na rozmowę.",
-            "c) Przepraszam cię.",
-            "d) Dobrze słyszeć twój głos.",
-            "e) Masz rację.",
-            "f) Cieszę się, że się pogodziłyśmy.",
+            "a) Cieszę się, że się pogodziłyśmy.",
+            "b) Rzeczywiście było mi przykro.",
+            "c) Dobrze słyszeć twój głos.",
+            "d) To dla mnie bardzo ważne.",
+            "e) Przepraszam cię.",
+            "f) Masz rację.",
             "g) Proszę nie dzwonić o tej porze.",
-            "h) To dla mnie bardzo ważne.",
-            "i) Rzeczywiście było mi przykro.",
-            "j) Już się na ciebie nie gniewam."
+            "h) Zgoda, to mi odpowiada.",
+            "i) Już się na ciebie nie gniewam.",
+            "j) Nie mam teraz czasu na rozmowę."
           ],
           "explanation": "Ira jest zadowolona z telefonu, więc zaczyna od miłej reakcji. „Nie mam czasu na rozmowę” przeczy temu, że czekała na telefon.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "c) Przepraszam cię.",
+          "answer": "e) Przepraszam cię.",
           "options": [
-            "a) Zgoda, to mi odpowiada.",
-            "b) Nie mam teraz czasu na rozmowę.",
-            "c) Przepraszam cię.",
-            "d) Dobrze słyszeć twój głos.",
-            "e) Masz rację.",
-            "f) Cieszę się, że się pogodziłyśmy.",
+            "a) Cieszę się, że się pogodziłyśmy.",
+            "b) Rzeczywiście było mi przykro.",
+            "c) Dobrze słyszeć twój głos.",
+            "d) To dla mnie bardzo ważne.",
+            "e) Przepraszam cię.",
+            "f) Masz rację.",
             "g) Proszę nie dzwonić o tej porze.",
-            "h) To dla mnie bardzo ważne.",
-            "i) Rzeczywiście było mi przykro.",
-            "j) Już się na ciebie nie gniewam."
+            "h) Zgoda, to mi odpowiada.",
+            "i) Już się na ciebie nie gniewam.",
+            "j) Nie mam teraz czasu na rozmowę."
           ],
           "explanation": "Olena mówi, że zapomniała o urodzinach, więc zaczyna od przeprosin. „Przepraszam cię” to najprostsza formuła.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "i) Rzeczywiście było mi przykro.",
+          "answer": "b) Rzeczywiście było mi przykro.",
           "options": [
-            "a) Zgoda, to mi odpowiada.",
-            "b) Nie mam teraz czasu na rozmowę.",
-            "c) Przepraszam cię.",
-            "d) Dobrze słyszeć twój głos.",
-            "e) Masz rację.",
-            "f) Cieszę się, że się pogodziłyśmy.",
+            "a) Cieszę się, że się pogodziłyśmy.",
+            "b) Rzeczywiście było mi przykro.",
+            "c) Dobrze słyszeć twój głos.",
+            "d) To dla mnie bardzo ważne.",
+            "e) Przepraszam cię.",
+            "f) Masz rację.",
             "g) Proszę nie dzwonić o tej porze.",
-            "h) To dla mnie bardzo ważne.",
-            "i) Rzeczywiście było mi przykro.",
-            "j) Już się na ciebie nie gniewam."
+            "h) Zgoda, to mi odpowiada.",
+            "i) Już się na ciebie nie gniewam.",
+            "j) Nie mam teraz czasu na rozmowę."
           ],
           "explanation": "Ira przyznaje, że było jej przykro, a potem mówi, że rozumie sytuację. „Rzeczywiście” potwierdza przeprosiny.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "e) Masz rację.",
+          "answer": "f) Masz rację.",
           "options": [
-            "a) Zgoda, to mi odpowiada.",
-            "b) Nie mam teraz czasu na rozmowę.",
-            "c) Przepraszam cię.",
-            "d) Dobrze słyszeć twój głos.",
-            "e) Masz rację.",
-            "f) Cieszę się, że się pogodziłyśmy.",
+            "a) Cieszę się, że się pogodziłyśmy.",
+            "b) Rzeczywiście było mi przykro.",
+            "c) Dobrze słyszeć twój głos.",
+            "d) To dla mnie bardzo ważne.",
+            "e) Przepraszam cię.",
+            "f) Masz rację.",
             "g) Proszę nie dzwonić o tej porze.",
-            "h) To dla mnie bardzo ważne.",
-            "i) Rzeczywiście było mi przykro.",
-            "j) Już się na ciebie nie gniewam."
+            "h) Zgoda, to mi odpowiada.",
+            "i) Już się na ciebie nie gniewam.",
+            "j) Nie mam teraz czasu na rozmowę."
           ],
           "explanation": "Olena zgadza się z tym, że Ira miała powód do żalu. Potem dodaje, że powinna była zadzwonić wcześniej.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "j) Już się na ciebie nie gniewam.",
+          "answer": "i) Już się na ciebie nie gniewam.",
           "options": [
-            "a) Zgoda, to mi odpowiada.",
-            "b) Nie mam teraz czasu na rozmowę.",
-            "c) Przepraszam cię.",
-            "d) Dobrze słyszeć twój głos.",
-            "e) Masz rację.",
-            "f) Cieszę się, że się pogodziłyśmy.",
+            "a) Cieszę się, że się pogodziłyśmy.",
+            "b) Rzeczywiście było mi przykro.",
+            "c) Dobrze słyszeć twój głos.",
+            "d) To dla mnie bardzo ważne.",
+            "e) Przepraszam cię.",
+            "f) Masz rację.",
             "g) Proszę nie dzwonić o tej porze.",
-            "h) To dla mnie bardzo ważne.",
-            "i) Rzeczywiście było mi przykro.",
-            "j) Już się na ciebie nie gniewam."
+            "h) Zgoda, to mi odpowiada.",
+            "i) Już się na ciebie nie gniewam.",
+            "j) Nie mam teraz czasu na rozmowę."
           ],
           "explanation": "Ira kończy sprawę i mówi, że nie ma już żalu. To zamyka temat kłótni.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "h) To dla mnie bardzo ważne.",
+          "answer": "d) To dla mnie bardzo ważne.",
           "options": [
-            "a) Zgoda, to mi odpowiada.",
-            "b) Nie mam teraz czasu na rozmowę.",
-            "c) Przepraszam cię.",
-            "d) Dobrze słyszeć twój głos.",
-            "e) Masz rację.",
-            "f) Cieszę się, że się pogodziłyśmy.",
+            "a) Cieszę się, że się pogodziłyśmy.",
+            "b) Rzeczywiście było mi przykro.",
+            "c) Dobrze słyszeć twój głos.",
+            "d) To dla mnie bardzo ważne.",
+            "e) Przepraszam cię.",
+            "f) Masz rację.",
             "g) Proszę nie dzwonić o tej porze.",
-            "h) To dla mnie bardzo ważne.",
-            "i) Rzeczywiście było mi przykro.",
-            "j) Już się na ciebie nie gniewam."
+            "h) Zgoda, to mi odpowiada.",
+            "i) Już się na ciebie nie gniewam.",
+            "j) Nie mam teraz czasu na rozmowę."
           ],
           "explanation": "Olena reaguje na słowa Iry i mówi, że ta zgoda jest dla niej ważna. Potem proponuje termin rozmowy.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "a) Zgoda, to mi odpowiada.",
+          "answer": "h) Zgoda, to mi odpowiada.",
           "options": [
-            "a) Zgoda, to mi odpowiada.",
-            "b) Nie mam teraz czasu na rozmowę.",
-            "c) Przepraszam cię.",
-            "d) Dobrze słyszeć twój głos.",
-            "e) Masz rację.",
-            "f) Cieszę się, że się pogodziłyśmy.",
+            "a) Cieszę się, że się pogodziłyśmy.",
+            "b) Rzeczywiście było mi przykro.",
+            "c) Dobrze słyszeć twój głos.",
+            "d) To dla mnie bardzo ważne.",
+            "e) Przepraszam cię.",
+            "f) Masz rację.",
             "g) Proszę nie dzwonić o tej porze.",
-            "h) To dla mnie bardzo ważne.",
-            "i) Rzeczywiście było mi przykro.",
-            "j) Już się na ciebie nie gniewam."
+            "h) Zgoda, to mi odpowiada.",
+            "i) Już się na ciebie nie gniewam.",
+            "j) Nie mam teraz czasu na rozmowę."
           ],
           "explanation": "Ira przyjmuje propozycję terminu i dodaje szczegół o godzinie. „Zgoda” wyraża akceptację.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "f) Cieszę się, że się pogodziłyśmy.",
+          "answer": "a) Cieszę się, że się pogodziłyśmy.",
           "options": [
-            "a) Zgoda, to mi odpowiada.",
-            "b) Nie mam teraz czasu na rozmowę.",
-            "c) Przepraszam cię.",
-            "d) Dobrze słyszeć twój głos.",
-            "e) Masz rację.",
-            "f) Cieszę się, że się pogodziłyśmy.",
+            "a) Cieszę się, że się pogodziłyśmy.",
+            "b) Rzeczywiście było mi przykro.",
+            "c) Dobrze słyszeć twój głos.",
+            "d) To dla mnie bardzo ważne.",
+            "e) Przepraszam cię.",
+            "f) Masz rację.",
             "g) Proszę nie dzwonić o tej porze.",
-            "h) To dla mnie bardzo ważne.",
-            "i) Rzeczywiście było mi przykro.",
-            "j) Już się na ciebie nie gniewam."
+            "h) Zgoda, to mi odpowiada.",
+            "i) Już się na ciebie nie gniewam.",
+            "j) Nie mam teraz czasu na rozmowę."
           ],
           "explanation": "Na końcu Olena cieszy się z pojednania. To naturalna formuła przed pożegnaniem.",
           "grammar_point": "slownictwo"
@@ -941,8 +941,8 @@
           "id": "el2-1",
           "answer": "a) z",
           "options": [
-            "a) z",
             "b) o",
+            "a) z",
             "c) na"
           ],
           "explanation": "Stała fraza: „zwracam się z prośbą o…”. Bez „z” zdanie jest niepoprawne.",
@@ -952,8 +952,8 @@
           "id": "el2-2",
           "answer": "c) od",
           "options": [
-            "a) z",
             "b) przez",
+            "a) z",
             "c) od"
           ],
           "explanation": "„Od wielu lat” oznacza czas trwania do dziś. „Z wielu lat” i „przez wielu lat” są błędne.",
@@ -975,8 +975,8 @@
           "answer": "a) czy",
           "options": [
             "a) czy",
-            "b) żeby",
-            "c) że"
+            "c) że",
+            "b) żeby"
           ],
           "explanation": "Pytanie pośrednie po „zapytać” wymaga „czy”. „Że” i „żeby” nie pasują.",
           "grammar_point": "rejestr-formalny"
@@ -986,8 +986,8 @@
           "answer": "b) na",
           "options": [
             "a) o",
-            "b) na",
-            "c) przed"
+            "c) przed",
+            "b) na"
           ],
           "explanation": "Jesteśmy uczuleni „na” coś: „uczulona na orzechy”. „O” i „przed” nie pasują do tego słowa.",
           "grammar_point": "rejestr-formalny"
@@ -997,8 +997,8 @@
           "answer": "c) W przypadku",
           "options": [
             "a) Na przypadek",
-            "b) Z przypadku",
-            "c) W przypadku"
+            "c) W przypadku",
+            "b) Z przypadku"
           ],
           "explanation": "„W przypadku problemów” znaczy „jeśli będą problemy”. Pozostałe formy są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -1008,8 +1008,8 @@
           "answer": "a) za",
           "options": [
             "a) za",
-            "b) o",
-            "c) na"
+            "c) na",
+            "b) o"
           ],
           "explanation": "Jesteśmy wdzięczni „za” coś. „Wdzięczna o odpowiedź” i „na odpowiedź” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -1029,8 +1029,8 @@
           "id": "el2-9",
           "answer": "c) Z góry",
           "options": [
-            "a) Z dołu",
             "b) Z boku",
+            "a) Z dołu",
             "c) Z góry"
           ],
           "explanation": "„Z góry dziękuję” to stała formuła, gdy prosimy o pomoc. Pozostałe wyrażenia nie są formułami listu.",
@@ -1040,9 +1040,9 @@
           "id": "el2-10",
           "answer": "a) Z poważaniem",
           "options": [
-            "a) Z poważaniem",
+            "c) W poważaniu",
             "b) Za poważaniem",
-            "c) W poważaniu"
+            "a) Z poważaniem"
           ],
           "explanation": "List oficjalny kończymy „Z poważaniem”. Pozostałe warianty są błędne.",
           "grammar_point": "rejestr-formalny"

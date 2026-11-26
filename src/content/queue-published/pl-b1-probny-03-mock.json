@@ -45,33 +45,33 @@
               "id": "rs1-1",
               "stem": "Ta osoba",
               "options": [
-                "prosi o parasol.",
+                "daje radę.",
                 "narzeka na pogodę.",
-                "daje radę."
+                "prosi o parasol."
               ],
-              "answer": "c",
+              "answer": "a",
               "explain": "Osoba mówi: „Weź parasol, bo w radiu mówili, że po południu ma być burza”. To rada dla kogoś innego, a nie prośba o parasol ani narzekanie na pogodę."
             },
             {
               "id": "rs1-2",
               "stem": "To jest",
               "options": [
-                "komplement.",
                 "krytyka.",
-                "pytanie o cenę."
+                "pytanie o cenę.",
+                "komplement."
               ],
-              "answer": "a",
+              "answer": "c",
               "explain": "„Ale masz piękną sukienkę! Bardzo ci w niej do twarzy” to pochwała wyglądu, czyli komplement. Nie ma tu krytyki ani pytania o cenę."
             },
             {
               "id": "rs1-3",
               "stem": "Ta osoba",
               "options": [
-                "przyjmuje zaproszenie.",
                 "odmawia.",
+                "przyjmuje zaproszenie.",
                 "zaprasza kogoś na sobotę."
               ],
-              "answer": "b",
+              "answer": "a",
               "explain": "„Bardzo bym chciała, ale w sobotę jadę do rodziców. Może innym razem?” – to grzeczna odmowa. Osoba nie przyjmuje zaproszenia i sama nikogo nie zaprasza."
             },
             {
@@ -89,44 +89,44 @@
               "id": "rs1-5",
               "stem": "To jest",
               "options": [
-                "propozycja.",
                 "prośba o pomoc.",
+                "propozycja.",
                 "informacja o otwarciu sklepu."
               ],
-              "answer": "a",
+              "answer": "b",
               "explain": "„Może pójdziemy jutro na basen?” – forma „może + my” to propozycja wspólnego wyjścia. Informacja o nowym basenie to tylko dodatek, nie chodzi o sklep."
             },
             {
               "id": "rs1-6",
               "stem": "Gdzie można usłyszeć tę wypowiedź?",
               "options": [
+                "na imieninach",
                 "na urodzinach",
-                "na weselu",
-                "na imieninach"
+                "na weselu"
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "„Wznieśmy toast za zdrowie Młodej Pary!” – Młoda Para to nowożeńcy, więc to wesele, a nie urodziny czy imieniny."
             },
             {
               "id": "rs1-7",
               "stem": "Gdzie można usłyszeć ten komunikat?",
               "options": [
+                "w biurze podróży",
                 "na lotnisku",
-                "na dworcu kolejowym",
-                "w biurze podróży"
+                "na dworcu kolejowym"
               ],
-              "answer": "a",
+              "answer": "b",
               "explain": "Słowa „lot do Barcelony”, „wyjście numer dwanaście” i „boarding” wskazują na lotnisko. Na dworcu kolejowym mówi się o peronach i pociągach."
             },
             {
               "id": "rs1-8",
               "stem": "Ta osoba",
               "options": [
+                "jest niezadowolona z pracownika.",
                 "chwali pracownika.",
-                "zaprasza na spotkanie.",
-                "jest niezadowolona z pracownika."
+                "zaprasza na spotkanie."
               ],
-              "answer": "c",
+              "answer": "a",
               "explain": "Szef mówi, że raport miał być wczoraj, „to już drugi raz w tym miesiącu” i „tak dalej być nie może”. To wyraźne niezadowolenie, a nie pochwała."
             },
             {
@@ -144,55 +144,55 @@
               "id": "rs1-10",
               "stem": "Ta osoba",
               "options": [
-                "żałuje.",
                 "cieszy się.",
-                "zaprasza Kamila."
+                "zaprasza Kamila.",
+                "żałuje."
               ],
-              "answer": "a",
+              "answer": "c",
               "explain": "„Szkoda, że nie poszedłem…” wyraża żal – osoba żałuje, że nie była na koncercie. Nikogo nie zaprasza i się nie cieszy."
             },
             {
               "id": "rs1-11",
               "stem": "Kto mówi?",
               "options": [
-                "policjant",
                 "egzaminator na egzaminie na prawo jazdy",
+                "policjant",
                 "pasażer taksówki"
               ],
-              "answer": "b",
+              "answer": "a",
               "explain": "Polecenia „Proszę włączyć kierunkowskaz i… skręcić w prawo” wydaje ktoś, kto siedzi obok kierowcy i ocenia jazdę – egzaminator. Pasażer taksówki nie mówi o kierunkowskazie."
             },
             {
               "id": "rs1-12",
               "stem": "To jest",
               "options": [
-                "przeprosiny.",
                 "prośba o pomoc.",
-                "podziękowanie."
+                "podziękowanie.",
+                "przeprosiny."
               ],
-              "answer": "c",
+              "answer": "b",
               "explain": "„Dziękuję ci za pomoc przy przeprowadzce” – to podziękowanie za pomoc, która już była. Nie są to przeprosiny ani nowa prośba."
             },
             {
               "id": "rs1-13",
               "stem": "Gdzie można usłyszeć tę wypowiedź?",
               "options": [
-                "w urzędzie",
                 "w banku",
-                "na poczcie"
+                "na poczcie",
+                "w urzędzie"
               ],
-              "answer": "a",
+              "answer": "c",
               "explain": "Wniosek o meldunek, okienko numer trzy, dowód osobisty i umowa najmu – to sprawy urzędowe, załatwia się je w urzędzie, a nie w banku ani na poczcie."
             },
             {
               "id": "rs1-14",
               "stem": "Ta osoba",
               "options": [
-                "prosi o posprzątanie.",
                 "ostrzega.",
+                "prosi o posprzątanie.",
                 "zaprasza do środka."
               ],
-              "answer": "b",
+              "answer": "a",
               "explain": "„Uwaga, podłoga jest mokra! Proszę tędy nie przechodzić” – to ostrzeżenie przed niebezpieczeństwem. Osoba nie prosi o sprzątanie."
             }
           ]
@@ -224,8 +224,8 @@
               "stem": "Mężczyzna",
               "options": [
                 "odwoła spotkanie z kolegami.",
-                "pójdzie na mecz po obiedzie.",
-                "zaprosi rodziców na mecz."
+                "zaprosi rodziców na mecz.",
+                "pójdzie na mecz po obiedzie."
               ],
               "answer": "a",
               "explain": "Mężczyzna mówi: „Zadzwonię do Piotrka i powiem, że tym razem nie przyjdę”. Odwołuje więc mecz z kolegami i idzie na obiad do teściów."
@@ -235,10 +235,10 @@
               "stem": "Kobieta",
               "options": [
                 "przechodzi do innej firmy.",
-                "dostała awans w swojej firmie.",
-                "zostanie kierowniczką w firmie konkurencyjnej."
+                "zostanie kierowniczką w firmie konkurencyjnej.",
+                "dostała awans w swojej firmie."
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "Kobieta odmówiła konkurencji: „Od maja będę kierowniczką działu sprzedaży. Tutaj, u nas”. Dostała awans w swojej firmie, nie przechodzi do innej."
             },
             {
@@ -246,21 +246,21 @@
               "stem": "Klientka",
               "options": [
                 "dostanie zwrot pieniędzy.",
-                "kupi droższe buty.",
-                "wymieni buty na inny rozmiar."
+                "wymieni buty na inny rozmiar.",
+                "kupi droższe buty."
               ],
-              "answer": "c",
+              "answer": "b",
               "explain": "Sprzedawca mówi, że przecenionego towaru nie można zwrócić, „ale możemy je wymienić na większy rozmiar”. Klientka prosi o rozmiar 38, więc wymienia buty."
             },
             {
               "id": "rs2-4",
               "stem": "Lekarz zaleca pacjentowi",
               "options": [
+                "pracę zdalną.",
                 "antybiotyk.",
-                "odpoczynek w domu.",
-                "pracę zdalną."
+                "odpoczynek w domu."
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "Lekarz mówi „antybiotyk nie jest potrzebny” i „proszę… zostać w domu”, a na pytanie o pracę zdalną odpowiada „Lepiej nie”. Zaleca odpoczynek w domu."
             },
             {
@@ -279,10 +279,10 @@
               "stem": "Sąsiad mówi, że",
               "options": [
                 "impreza potrwa do rana.",
-                "impreza niedługo się skończy.",
-                "zaprasza sąsiadkę na urodziny."
+                "zaprasza sąsiadkę na urodziny.",
+                "impreza niedługo się skończy."
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "Sąsiad mówi: „Za pół godziny wszyscy wychodzimy do klubu, a muzykę zaraz ściszę”. Impreza w mieszkaniu wkrótce się kończy, nie potrwa do rana."
             },
             {
@@ -290,10 +290,10 @@
               "stem": "Kobieta",
               "options": [
                 "sama zapłaci za cały kurs.",
-                "nie dostała zgody szefowej.",
-                "zapłaci tylko część kosztów kursu."
+                "zapłaci tylko część kosztów kursu.",
+                "nie dostała zgody szefowej."
               ],
-              "answer": "c",
+              "answer": "b",
               "explain": "Kurs kosztuje dwa tysiące złotych, ale „firma zapłaci połowę”. Kobieta zapłaci więc tylko część, a szefowa się zgodziła."
             }
           ]
@@ -577,9 +577,9 @@
               "id": "rt1-1",
               "stem": "Z tego tekstu wynika, że",
               "options": [
-                "większość Polaków kupuje używane ubrania.",
+                "Polacy kupują używane ubrania głównie w sklepach.",
                 "najważniejszym powodem kupowania używanych ubrań jest cena.",
-                "Polacy kupują używane ubrania głównie w sklepach."
+                "większość Polaków kupuje używane ubrania."
               ],
               "answer": "b",
               "passage": "Według najnowszego sondażu już co trzeci Polak kupuje używane ubrania. Najczęściej robimy to przez internet. Pytani o powód, respondenci na pierwszym miejscu wymieniają niską cenę, a dopiero na drugim – ochronę środowiska.",
@@ -590,10 +590,10 @@
               "stem": "Z tego tekstu wynika, że",
               "options": [
                 "przechowalnia jest czynna tylko w dzień.",
-                "za skrytkę można zapłacić gotówką.",
-                "krótkie przechowanie bagażu nic nie kosztuje."
+                "krótkie przechowanie bagażu nic nie kosztuje.",
+                "za skrytkę można zapłacić gotówką."
               ],
-              "answer": "c",
+              "answer": "b",
               "passage": "Na Dworcu Centralnym otwarto nową przechowalnię bagażu. Skrytki działają przez całą dobę. Pierwsze dwie godziny są bezpłatne, za każdą kolejną trzeba zapłacić 5 zł. Za skrytkę można zapłacić tylko kartą lub telefonem.",
               "explain": "„Pierwsze dwie godziny są bezpłatne”, więc krótkie przechowanie nic nie kosztuje. Skrytki działają całą dobę, a płacić można tylko kartą lub telefonem."
             },
@@ -601,11 +601,11 @@
               "id": "rt1-3",
               "stem": "Z tego tekstu wynika, że",
               "options": [
-                "regularnie zbyt krótki sen szkodzi zdrowiu.",
+                "dorosłym wystarczy sześć godzin snu.",
                 "im dłużej śpimy, tym lepiej dla zdrowia.",
-                "dorosłym wystarczy sześć godzin snu."
+                "regularnie zbyt krótki sen szkodzi zdrowiu."
               ],
-              "answer": "a",
+              "answer": "c",
               "passage": "Naukowcy przypominają, że dorosły człowiek potrzebuje od siedmiu do dziewięciu godzin snu. Osoby, które regularnie śpią krócej niż sześć godzin, częściej chorują na serce i mają problemy z koncentracją. Zbyt długi sen też jednak nie jest zdrowy.",
               "explain": "Osoby, które regularnie śpią krócej niż sześć godzin, częściej chorują na serce. Odpowiedź b) jest błędna, bo „zbyt długi sen też nie jest zdrowy”."
             },
@@ -613,11 +613,11 @@
               "id": "rt1-4",
               "stem": "Z tego tekstu wynika, że",
               "options": [
+                "kandydaci muszą umieć porozumieć się po polsku.",
                 "kandydaci muszą mieć doświadczenie w produkcji mebli.",
-                "pracownicy sami płacą za dojazd z Poznania.",
-                "kandydaci muszą umieć porozumieć się po polsku."
+                "pracownicy sami płacą za dojazd z Poznania."
               ],
-              "answer": "c",
+              "answer": "a",
               "passage": "Fabryka mebli w Swarzędzu zatrudni od zaraz 20 pracowników produkcji. Firma zapewnia szkolenie, umowę o pracę i bezpłatny dojazd z Poznania. Od kandydatów oczekuje się znajomości języka polskiego w stopniu komunikatywnym. Doświadczenie nie jest wymagane.",
               "explain": "Od kandydatów oczekuje się „znajomości języka polskiego w stopniu komunikatywnym”. Doświadczenie nie jest wymagane, a dojazd jest bezpłatny."
             },
@@ -625,11 +625,11 @@
               "id": "rt1-5",
               "stem": "Z tego tekstu wynika, że",
               "options": [
-                "na festiwalu można spróbować dań z różnych krajów.",
+                "warsztaty kulinarne są przeznaczone dla dorosłych.",
                 "za wejście na festiwal trzeba zapłacić.",
-                "warsztaty kulinarne są przeznaczone dla dorosłych."
+                "na festiwalu można spróbować dań z różnych krajów."
               ],
-              "answer": "a",
+              "answer": "c",
               "passage": "W ostatni weekend maja na Rynku odbędzie się Festiwal Kuchni Świata. Kucharze z ponad dwudziestu krajów przygotują swoje narodowe potrawy. Wstęp jest wolny, płaci się tylko za jedzenie. Organizatorzy zapraszają też dzieci na warsztaty kulinarne.",
               "explain": "„Kucharze z ponad dwudziestu krajów przygotują swoje narodowe potrawy”. Wstęp jest wolny, a warsztaty są dla dzieci, nie dla dorosłych."
             }
@@ -702,19 +702,19 @@
           "bank": [
             {
               "key": "A",
-              "text": "szuka sposobów"
-            },
-            {
-              "key": "B",
-              "text": "nie zawsze się to opłaca"
-            },
-            {
-              "key": "C",
               "text": "z pustym żołądkiem"
             },
             {
+              "key": "B",
+              "text": "w dużym supermarkecie"
+            },
+            {
+              "key": "C",
+              "text": "mniej jedzenia wyrzucamy"
+            },
+            {
               "key": "D",
-              "text": "a nie za opakowanie"
+              "text": "planowanie posiłków"
             },
             {
               "key": "E",
@@ -722,19 +722,19 @@
             },
             {
               "key": "F",
-              "text": "w dużym supermarkecie"
-            },
-            {
-              "key": "G",
-              "text": "mniej jedzenia wyrzucamy"
-            },
-            {
-              "key": "H",
               "text": "których nie potrzebujemy"
             },
             {
+              "key": "G",
+              "text": "a nie za opakowanie"
+            },
+            {
+              "key": "H",
+              "text": "szuka sposobów"
+            },
+            {
               "key": "I",
-              "text": "planowanie posiłków"
+              "text": "nie zawsze się to opłaca"
             }
           ],
           "example": {
@@ -753,42 +753,42 @@
               "id": "rt3-2",
               "n": 2,
               "kind": "bank",
-              "answer": "H",
+              "answer": "F",
               "explain": "Zaimek „których” odnosi się do „produkty”: kupujemy produkty, których nie potrzebujemy. Zgadza się z myślą o liście zakupów."
             },
             {
               "id": "rt3-3",
               "n": 3,
               "kind": "bank",
-              "answer": "C",
+              "answer": "A",
               "explain": "Następne zdanie mówi o głodnym kliencie, więc pasuje „z pustym żołądkiem”. „W dużym supermarkecie” nie łączy się z głodem."
             },
             {
               "id": "rt3-4",
               "n": 4,
               "kind": "bank",
-              "answer": "I",
+              "answer": "D",
               "explain": "Podmiotem zdania musi być rzeczownik: „pomaga planowanie posiłków na cały tydzień”. Dalej jest mowa o tym, co gotujemy w poniedziałek i czwartek."
             },
             {
               "id": "rt3-5",
               "n": 5,
               "kind": "bank",
-              "answer": "G",
+              "answer": "C",
               "explain": "Kupując tylko potrzebne składniki, mniej jedzenia wyrzucamy. Następne zdanie mówi o wyrzucaniu żywności przez polskie rodziny."
             },
             {
               "id": "rt3-6",
               "n": 6,
               "kind": "bank",
-              "answer": "B",
+              "answer": "I",
               "explain": "Po „Trzeba jednak pamiętać, że” jest ograniczenie promocji: nie zawsze się to opłaca, bo produkt może się zepsuć, zanim go zjemy."
             },
             {
               "id": "rt3-7",
               "n": 7,
               "kind": "bank",
-              "answer": "D",
+              "answer": "G",
               "explain": "Konstrukcja „płacimy za X, a nie za Y” – płacimy za sam produkt, a nie za opakowanie. Spójnik „a nie” wprowadza kontrast."
             }
           ]

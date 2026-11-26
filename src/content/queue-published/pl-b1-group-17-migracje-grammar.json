@@ -75,8 +75,8 @@
           "answer": "więc",
           "grammar_point": "kierunek-przyczyna-skutek",
           "options": [
-            "więc",
-            "bo"
+            "bo",
+            "więc"
           ],
           "explanation": "Rzadki autobus → skutek: wszyscy mają auta. Skutek → więc."
         },
@@ -86,8 +86,8 @@
           "answer": "bo",
           "grammar_point": "kierunek-przyczyna-skutek",
           "options": [
-            "bo",
-            "więc"
+            "więc",
+            "bo"
           ],
           "explanation": "Druga część mówi, dlaczego mają auta → przyczyna → bo."
         },
@@ -97,8 +97,8 @@
           "answer": "bo",
           "grammar_point": "kierunek-przyczyna-skutek",
           "options": [
-            "więc",
-            "bo"
+            "bo",
+            "więc"
           ],
           "explanation": "Choroba mamy to przyczyna powrotu → bo."
         },
@@ -248,8 +248,8 @@
           "answer": "Bo",
           "grammar_point": "dlaczego-po-co",
           "options": [
-            "Bo",
-            "Żeby"
+            "Żeby",
+            "Bo"
           ],
           "explanation": "Pytanie „dlaczego?” → przyczyna → bo."
         },
@@ -292,8 +292,8 @@
           "answer": "żeby",
           "grammar_point": "dlaczego-po-co",
           "options": [
-            "ponieważ",
-            "żeby"
+            "żeby",
+            "ponieważ"
           ],
           "explanation": "Cel + bezokolicznik → żeby."
         },
@@ -303,8 +303,8 @@
           "answer": "Dlaczego",
           "grammar_point": "dlaczego-po-co",
           "options": [
-            "Dlaczego",
-            "Po co"
+            "Po co",
+            "Dlaczego"
           ],
           "explanation": "Odpowiedź z „bo” → pytanie o przyczynę → dlaczego."
         },
@@ -345,9 +345,9 @@
           "answer": "Dzięki",
           "grammar_point": "dzieki-przez-z-powodu",
           "options": [
+            "Przez",
             "Dzięki",
-            "Z powodu",
-            "Przez"
+            "Z powodu"
           ],
           "explanation": "Dobra przyczyna → dzięki + celownik (pomocy)."
         },
@@ -369,9 +369,9 @@
           "answer": "przez",
           "grammar_point": "dzieki-przez-z-powodu",
           "options": [
-            "dzięki",
+            "przez",
             "z powodu",
-            "przez"
+            "dzięki"
           ],
           "explanation": "Pretensja, zła przyczyna → przez + biernik (ciebie)."
         },
@@ -381,9 +381,9 @@
           "answer": "Dzięki",
           "grammar_point": "dzieki-przez-z-powodu",
           "options": [
-            "Dzięki",
+            "Z powodu",
             "Przez",
-            "Z powodu"
+            "Dzięki"
           ],
           "explanation": "Dobra przyczyna → dzięki pracy (celownik)."
         },
@@ -393,9 +393,9 @@
           "answer": "z powodu",
           "grammar_point": "dzieki-przez-z-powodu",
           "options": [
+            "z powodu",
             "przez",
-            "dzięki",
-            "z powodu"
+            "dzięki"
           ],
           "explanation": "Oficjalna informacja + dopełniacz (złej pogody) → z powodu."
         },
@@ -405,9 +405,9 @@
           "answer": "przez",
           "grammar_point": "dzieki-przez-z-powodu",
           "options": [
-            "z powodu",
             "przez",
-            "dzięki"
+            "dzięki",
+            "z powodu"
           ],
           "explanation": "Biernik (hałas) i zła przyczyna → przez."
         },
@@ -417,8 +417,8 @@
           "answer": "Dzięki",
           "grammar_point": "dzieki-przez-z-powodu",
           "options": [
-            "Przez",
             "Z powodu",
+            "Przez",
             "Dzięki"
           ],
           "explanation": "Celownik (temu) i dobry skutek → dzięki temu, że…"
@@ -429,9 +429,9 @@
           "answer": "przez",
           "grammar_point": "dzieki-przez-z-powodu",
           "options": [
-            "dzięki",
             "przez",
-            "z powodu"
+            "z powodu",
+            "dzięki"
           ],
           "explanation": "Biernik (to) i zła przyczyna → przez to, że…"
         }
@@ -587,8 +587,8 @@
           "answer": "z powodu deszczu",
           "grammar_point": "kalki-uk",
           "options": [
-            "zza deszczu",
-            "z powodu deszczu"
+            "z powodu deszczu",
+            "zza deszczu"
           ],
           "explanation": "„Zza” po polsku = з-за (zza drzewa). Przyczyna → z powodu deszczu albo przez deszcz."
         },
@@ -598,8 +598,8 @@
           "answer": "Ponieważ byłem chory",
           "grammar_point": "kalki-uk",
           "options": [
-            "Bo byłem chory",
-            "Ponieważ byłem chory"
+            "Ponieważ byłem chory",
+            "Bo byłem chory"
           ],
           "explanation": "Na początku zdania złożonego — ponieważ. „Bo” stoi zwykle w środku zdania."
         },
@@ -631,8 +631,8 @@
           "answer": "dzięki bratu",
           "grammar_point": "kalki-uk",
           "options": [
-            "dzięki brata",
-            "dzięki bratu"
+            "dzięki bratu",
+            "dzięki brata"
           ],
           "explanation": "Dzięki + celownik (komu?) → bratu."
         },
@@ -657,158 +657,158 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Adam: Informacja dworca autobusowego, słucham.\n\nOlena: Dzień dobry. {el1-1} Chciałabym zapytać o autobus do Zalesia.\n\nAdam: Proszę bardzo. Kiedy chce pani jechać?\n\nOlena: W niedzielę rano. {el1-2}\n\nAdam: {el1-3} Sprawdzam rozkład. Niestety w niedzielę jest tylko jeden kurs, o szesnastej.\n\nOlena: {el1-4} Moja babcia czeka na nas od południa.\n\nAdam: Rozumiem. A może pojedzie pani w sobotę? Autobus odjeżdża o ósmej.\n\nOlena: {el1-5} {el1-6}\n\nAdam: Tak, ale tylko gotówką. Lepiej kupić bilet przez internet, bo w sobotę jest dużo ludzi.\n\nOlena: Dobrze, kupię przez internet. {el1-7}\n\nAdam: {el1-8} Miłego dnia!\n\nOlena: Do widzenia.",
       "bank": [
-        "a) W takim razie pojedziemy w sobotę.",
-        "b) Proszę chwilę poczekać.",
-        "c) Czy mogę prosić o numer telefonu?",
-        "d) Bardzo dziękuję za pomoc.",
-        "e) Przepraszam, że przeszkadzam.",
-        "f) Z przyjemnością, dziękuję.",
-        "g) Czy można kupić bilet u kierowcy?",
-        "h) Nie ma za co.",
-        "i) Czy jest jakieś połączenie?",
-        "j) To niestety za późno."
+        "a) Z przyjemnością, dziękuję.",
+        "b) W takim razie pojedziemy w sobotę.",
+        "c) Bardzo dziękuję za pomoc.",
+        "d) Czy mogę prosić o numer telefonu?",
+        "e) Czy jest jakieś połączenie?",
+        "f) Nie ma za co.",
+        "g) To niestety za późno.",
+        "h) Przepraszam, że przeszkadzam.",
+        "i) Proszę chwilę poczekać.",
+        "j) Czy można kupić bilet u kierowcy?"
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "e) Przepraszam, że przeszkadzam.",
+          "answer": "h) Przepraszam, że przeszkadzam.",
           "options": [
-            "a) W takim razie pojedziemy w sobotę.",
-            "b) Proszę chwilę poczekać.",
-            "c) Czy mogę prosić o numer telefonu?",
-            "d) Bardzo dziękuję za pomoc.",
-            "e) Przepraszam, że przeszkadzam.",
-            "f) Z przyjemnością, dziękuję.",
-            "g) Czy można kupić bilet u kierowcy?",
-            "h) Nie ma za co.",
-            "i) Czy jest jakieś połączenie?",
-            "j) To niestety za późno."
+            "a) Z przyjemnością, dziękuję.",
+            "b) W takim razie pojedziemy w sobotę.",
+            "c) Bardzo dziękuję za pomoc.",
+            "d) Czy mogę prosić o numer telefonu?",
+            "e) Czy jest jakieś połączenie?",
+            "f) Nie ma za co.",
+            "g) To niestety za późno.",
+            "h) Przepraszam, że przeszkadzam.",
+            "i) Proszę chwilę poczekać.",
+            "j) Czy można kupić bilet u kierowcy?"
           ],
           "explanation": "To grzeczna formuła na początku telefonu, gdy dzwonimy z prośbą o informację. „Proszę chwilę poczekać” mówi pracownik, a nie osoba, która dzwoni.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "i) Czy jest jakieś połączenie?",
+          "answer": "e) Czy jest jakieś połączenie?",
           "options": [
-            "a) W takim razie pojedziemy w sobotę.",
-            "b) Proszę chwilę poczekać.",
-            "c) Czy mogę prosić o numer telefonu?",
-            "d) Bardzo dziękuję za pomoc.",
-            "e) Przepraszam, że przeszkadzam.",
-            "f) Z przyjemnością, dziękuję.",
-            "g) Czy można kupić bilet u kierowcy?",
-            "h) Nie ma za co.",
-            "i) Czy jest jakieś połączenie?",
-            "j) To niestety za późno."
+            "a) Z przyjemnością, dziękuję.",
+            "b) W takim razie pojedziemy w sobotę.",
+            "c) Bardzo dziękuję za pomoc.",
+            "d) Czy mogę prosić o numer telefonu?",
+            "e) Czy jest jakieś połączenie?",
+            "f) Nie ma za co.",
+            "g) To niestety za późno.",
+            "h) Przepraszam, że przeszkadzam.",
+            "i) Proszę chwilę poczekać.",
+            "j) Czy można kupić bilet u kierowcy?"
           ],
           "explanation": "Olena pyta o autobus w niedzielę rano, więc pasuje pytanie o połączenie. Pytanie o bilet byłoby za wcześnie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "b) Proszę chwilę poczekać.",
+          "answer": "i) Proszę chwilę poczekać.",
           "options": [
-            "a) W takim razie pojedziemy w sobotę.",
-            "b) Proszę chwilę poczekać.",
-            "c) Czy mogę prosić o numer telefonu?",
-            "d) Bardzo dziękuję za pomoc.",
-            "e) Przepraszam, że przeszkadzam.",
-            "f) Z przyjemnością, dziękuję.",
-            "g) Czy można kupić bilet u kierowcy?",
-            "h) Nie ma za co.",
-            "i) Czy jest jakieś połączenie?",
-            "j) To niestety za późno."
+            "a) Z przyjemnością, dziękuję.",
+            "b) W takim razie pojedziemy w sobotę.",
+            "c) Bardzo dziękuję za pomoc.",
+            "d) Czy mogę prosić o numer telefonu?",
+            "e) Czy jest jakieś połączenie?",
+            "f) Nie ma za co.",
+            "g) To niestety za późno.",
+            "h) Przepraszam, że przeszkadzam.",
+            "i) Proszę chwilę poczekać.",
+            "j) Czy można kupić bilet u kierowcy?"
           ],
           "explanation": "Pracownik prosi o cierpliwość, bo „sprawdza rozkład”. „Nie ma za co” pasuje dopiero po podziękowaniu.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "j) To niestety za późno.",
+          "answer": "g) To niestety za późno.",
           "options": [
-            "a) W takim razie pojedziemy w sobotę.",
-            "b) Proszę chwilę poczekać.",
-            "c) Czy mogę prosić o numer telefonu?",
-            "d) Bardzo dziękuję za pomoc.",
-            "e) Przepraszam, że przeszkadzam.",
-            "f) Z przyjemnością, dziękuję.",
-            "g) Czy można kupić bilet u kierowcy?",
-            "h) Nie ma za co.",
-            "i) Czy jest jakieś połączenie?",
-            "j) To niestety za późno."
+            "a) Z przyjemnością, dziękuję.",
+            "b) W takim razie pojedziemy w sobotę.",
+            "c) Bardzo dziękuję za pomoc.",
+            "d) Czy mogę prosić o numer telefonu?",
+            "e) Czy jest jakieś połączenie?",
+            "f) Nie ma za co.",
+            "g) To niestety za późno.",
+            "h) Przepraszam, że przeszkadzam.",
+            "i) Proszę chwilę poczekać.",
+            "j) Czy można kupić bilet u kierowcy?"
           ],
           "explanation": "Kurs o szesnastej to dla Oleny zbyt późna godzina, bo babcia czeka od południa. Dlatego mówi, że jest za późno.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "a) W takim razie pojedziemy w sobotę.",
+          "answer": "b) W takim razie pojedziemy w sobotę.",
           "options": [
-            "a) W takim razie pojedziemy w sobotę.",
-            "b) Proszę chwilę poczekać.",
-            "c) Czy mogę prosić o numer telefonu?",
-            "d) Bardzo dziękuję za pomoc.",
-            "e) Przepraszam, że przeszkadzam.",
-            "f) Z przyjemnością, dziękuję.",
-            "g) Czy można kupić bilet u kierowcy?",
-            "h) Nie ma za co.",
-            "i) Czy jest jakieś połączenie?",
-            "j) To niestety za późno."
+            "a) Z przyjemnością, dziękuję.",
+            "b) W takim razie pojedziemy w sobotę.",
+            "c) Bardzo dziękuję za pomoc.",
+            "d) Czy mogę prosić o numer telefonu?",
+            "e) Czy jest jakieś połączenie?",
+            "f) Nie ma za co.",
+            "g) To niestety za późno.",
+            "h) Przepraszam, że przeszkadzam.",
+            "i) Proszę chwilę poczekać.",
+            "j) Czy można kupić bilet u kierowcy?"
           ],
           "explanation": "Pracownik proponuje sobotę, więc Olena się zgadza zwrotem „w takim razie”. „Z przyjemnością” nie pasuje do takiej zmiany planów.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "g) Czy można kupić bilet u kierowcy?",
+          "answer": "j) Czy można kupić bilet u kierowcy?",
           "options": [
-            "a) W takim razie pojedziemy w sobotę.",
-            "b) Proszę chwilę poczekać.",
-            "c) Czy mogę prosić o numer telefonu?",
-            "d) Bardzo dziękuję za pomoc.",
-            "e) Przepraszam, że przeszkadzam.",
-            "f) Z przyjemnością, dziękuję.",
-            "g) Czy można kupić bilet u kierowcy?",
-            "h) Nie ma za co.",
-            "i) Czy jest jakieś połączenie?",
-            "j) To niestety za późno."
+            "a) Z przyjemnością, dziękuję.",
+            "b) W takim razie pojedziemy w sobotę.",
+            "c) Bardzo dziękuję za pomoc.",
+            "d) Czy mogę prosić o numer telefonu?",
+            "e) Czy jest jakieś połączenie?",
+            "f) Nie ma za co.",
+            "g) To niestety za późno.",
+            "h) Przepraszam, że przeszkadzam.",
+            "i) Proszę chwilę poczekać.",
+            "j) Czy można kupić bilet u kierowcy?"
           ],
           "explanation": "Odpowiedź „Tak, ale tylko gotówką” dotyczy płacenia za bilet u kierowcy. Pytanie o numer telefonu nie ma związku z biletem.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "d) Bardzo dziękuję za pomoc.",
+          "answer": "c) Bardzo dziękuję za pomoc.",
           "options": [
-            "a) W takim razie pojedziemy w sobotę.",
-            "b) Proszę chwilę poczekać.",
-            "c) Czy mogę prosić o numer telefonu?",
-            "d) Bardzo dziękuję za pomoc.",
-            "e) Przepraszam, że przeszkadzam.",
-            "f) Z przyjemnością, dziękuję.",
-            "g) Czy można kupić bilet u kierowcy?",
-            "h) Nie ma za co.",
-            "i) Czy jest jakieś połączenie?",
-            "j) To niestety za późno."
+            "a) Z przyjemnością, dziękuję.",
+            "b) W takim razie pojedziemy w sobotę.",
+            "c) Bardzo dziękuję za pomoc.",
+            "d) Czy mogę prosić o numer telefonu?",
+            "e) Czy jest jakieś połączenie?",
+            "f) Nie ma za co.",
+            "g) To niestety za późno.",
+            "h) Przepraszam, że przeszkadzam.",
+            "i) Proszę chwilę poczekać.",
+            "j) Czy można kupić bilet u kierowcy?"
           ],
           "explanation": "Olena kończy rozmowę podziękowaniem za informacje. To naturalne zakończenie telefonu do biura.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "h) Nie ma za co.",
+          "answer": "f) Nie ma za co.",
           "options": [
-            "a) W takim razie pojedziemy w sobotę.",
-            "b) Proszę chwilę poczekać.",
-            "c) Czy mogę prosić o numer telefonu?",
-            "d) Bardzo dziękuję za pomoc.",
-            "e) Przepraszam, że przeszkadzam.",
-            "f) Z przyjemnością, dziękuję.",
-            "g) Czy można kupić bilet u kierowcy?",
-            "h) Nie ma za co.",
-            "i) Czy jest jakieś połączenie?",
-            "j) To niestety za późno."
+            "a) Z przyjemnością, dziękuję.",
+            "b) W takim razie pojedziemy w sobotę.",
+            "c) Bardzo dziękuję za pomoc.",
+            "d) Czy mogę prosić o numer telefonu?",
+            "e) Czy jest jakieś połączenie?",
+            "f) Nie ma za co.",
+            "g) To niestety za późno.",
+            "h) Przepraszam, że przeszkadzam.",
+            "i) Proszę chwilę poczekać.",
+            "j) Czy można kupić bilet u kierowcy?"
           ],
           "explanation": "To zwykła odpowiedź na „Bardzo dziękuję za pomoc”. „Proszę chwilę poczekać” nie pasuje, bo rozmowa się kończy.",
           "grammar_point": "slownictwo"
@@ -827,9 +827,9 @@
           "id": "el2-1",
           "answer": "a) Piszę w sprawie",
           "options": [
-            "a) Piszę w sprawie",
             "b) Piszę o sprawie",
-            "c) Piszę na sprawę"
+            "c) Piszę na sprawę",
+            "a) Piszę w sprawie"
           ],
           "explanation": "W liście pisze się „w sprawie” czegoś, czyli na temat. „Piszę o sprawie” i „na sprawę” to błędne połączenia.",
           "grammar_point": "rejestr-formalny"
@@ -838,8 +838,8 @@
           "id": "el2-2",
           "answer": "b) więc",
           "options": [
-            "a) ponieważ",
             "b) więc",
+            "a) ponieważ",
             "c) chociaż"
           ],
           "explanation": "Rzadkie kursy powodują skutek: trudno dojechać bez auta, więc pasuje „więc”. „Ponieważ” wskazywałoby przyczynę, a nie skutek.",
@@ -860,9 +860,9 @@
           "id": "el2-4",
           "answer": "b) z powodu",
           "options": [
-            "a) przez",
             "b) z powodu",
-            "c) dzięki"
+            "c) dzięki",
+            "a) przez"
           ],
           "explanation": "Po „z powodu” stoi dopełniacz: „z powodu braku”. „Przez” wymaga biernika, a „dzięki” brzmi pozytywnie.",
           "grammar_point": "rejestr-formalny"
@@ -872,8 +872,8 @@
           "answer": "a) czy",
           "options": [
             "a) czy",
-            "b) żeby",
-            "c) że"
+            "c) że",
+            "b) żeby"
           ],
           "explanation": "W pytaniu pośrednim używamy „czy”: „zapytać, czy planują”. „Żeby” i „że” nie tworzą pytania.",
           "grammar_point": "rejestr-formalny"
@@ -882,8 +882,8 @@
           "id": "el2-6",
           "answer": "c) na",
           "options": [
-            "a) o",
             "b) z",
+            "a) o",
             "c) na"
           ],
           "explanation": "Stałe wyrażenie to „zależy mi na czymś”. „O” i „z” nie pasują do tego czasownika.",
@@ -893,9 +893,9 @@
           "id": "el2-7",
           "answer": "b) za",
           "options": [
+            "c) na",
             "a) o",
-            "b) za",
-            "c) na"
+            "b) za"
           ],
           "explanation": "Mówimy „być wdzięcznym za coś”. „O” i „na” tworzą inne wyrażenia.",
           "grammar_point": "rejestr-formalny"
@@ -904,9 +904,9 @@
           "id": "el2-8",
           "answer": "c) w",
           "options": [
-            "a) po",
             "b) na",
-            "c) w"
+            "c) w",
+            "a) po"
           ],
           "explanation": "Pytamy „w jakich dniach?”, czyli kiedy autobus nie jeździ. „Po jakich dniach” i „na jakich dniach” nie mają sensu.",
           "grammar_point": "rejestr-formalny"
@@ -915,8 +915,8 @@
           "id": "el2-9",
           "answer": "a) Z góry",
           "options": [
-            "a) Z góry",
             "b) Z początku",
+            "a) Z góry",
             "c) Od góry"
           ],
           "explanation": "„Z góry dziękuję” to stała formuła w liście, gdy dziękujemy przed otrzymaniem pomocy. Pozostałe wyrażenia nie służą do dziękowania.",
@@ -926,9 +926,9 @@
           "id": "el2-10",
           "answer": "c) przez",
           "options": [
+            "c) przez",
             "a) po",
-            "b) z",
-            "c) przez"
+            "b) z"
           ],
           "explanation": "Odpowiedź można dostać „przez e-mail”, czyli za pomocą poczty elektronicznej. „Po e-mail” i „z e-mail” są błędne.",
           "grammar_point": "rejestr-formalny"

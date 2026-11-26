@@ -16,8 +16,8 @@
           "text": "Kasia codziennie ___ psa o siódmej.",
           "answer": "wyprowadza",
           "options": [
-            "wyprowadza",
-            "wyprowadzaj"
+            "wyprowadzaj",
+            "wyprowadza"
           ],
           "grammar_point": "tr-funkcja"
         },
@@ -36,8 +36,8 @@
           "text": "Nasz pies zawsze ___ przy drzwiach.",
           "answer": "czeka",
           "options": [
-            "czeka",
-            "czekaj"
+            "czekaj",
+            "czeka"
           ],
           "grammar_point": "tr-funkcja"
         },
@@ -261,8 +261,8 @@
           "text": "W schronisku, do pracownika: ___",
           "answer": "Proszę mi pokazać tego psa.",
           "options": [
-            "Proszę mi pokazać tego psa.",
-            "Pokaż mi tego psa."
+            "Pokaż mi tego psa.",
+            "Proszę mi pokazać tego psa."
           ],
           "explanation": "Do obcej osoby — proszę + bezokolicznik.",
           "grammar_point": "tr-ton"
@@ -294,8 +294,8 @@
           "text": "Weterynarz do klienta: ___",
           "answer": "Niech pan przytrzyma psa.",
           "options": [
-            "Niech pan przytrzyma psa.",
-            "Przytrzymaj psa."
+            "Przytrzymaj psa.",
+            "Niech pan przytrzyma psa."
           ],
           "explanation": "Lekarz do klienta — forma pan / pani.",
           "grammar_point": "tr-ton"
@@ -384,8 +384,8 @@
           "text": "___ do parku, jest ładna pogoda!",
           "answer": "Chodźmy",
           "options": [
-            "Chodźmy",
-            "Dawaj chodźmy"
+            "Dawaj chodźmy",
+            "Chodźmy"
           ],
           "explanation": "Propozycja po polsku: forma -my, bez «давай».",
           "grammar_point": "tr-pulapki"
@@ -395,8 +395,8 @@
           "text": "Nie ___ psu tej karmy, jest dla kotów.",
           "answer": "dawaj",
           "options": [
-            "dawaj",
-            "daj"
+            "daj",
+            "dawaj"
           ],
           "explanation": "Zakaz — forma niedokonana.",
           "grammar_point": "tr-pulapki"
@@ -437,158 +437,158 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Kasia: Dzień dobry, w czym mogę pomóc?\n\nAdam: Dzień dobry. Chciałbym adoptować psa. {el1-1}\n\nKasia: {el1-2} Tu mamy spokojną sukę, Lunę.\n\nAdam: {el1-3}\n\nKasia: Ma cztery lata, jest zaszczepiona i chętnie chodzi na spacery.\n\nAdam: {el1-4}\n\nKasia: {el1-5} Potem zrobimy kilka spacerów zapoznawczych.\n\nAdam: {el1-6}\n\nKasia: Tak, jutro o dziesiątej. {el1-7}\n\nAdam: {el1-8}",
       "bank": [
-        "a) Proszę zabrać dowód osobisty i smycz.",
-        "b) Niestety schronisko jest dziś nieczynne.",
-        "c) Czy mogę najpierw zobaczyć kilka psów?",
-        "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
-        "e) Jaka śliczna! Ile ma lat?",
-        "f) Karma dla psów jest dziś w promocji.",
-        "g) Oczywiście, zapraszam do boksów.",
-        "h) Czy mogę przyjść na spacer już jutro?",
-        "i) To dokładnie taki pies, jakiego szukam.",
-        "j) Dziękuję, do zobaczenia jutro."
+        "a) Czy mogę najpierw zobaczyć kilka psów?",
+        "b) Karma dla psów jest dziś w promocji.",
+        "c) Oczywiście, zapraszam do boksów.",
+        "d) To dokładnie taki pies, jakiego szukam.",
+        "e) Dziękuję, do zobaczenia jutro.",
+        "f) Czy mogę przyjść na spacer już jutro?",
+        "g) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+        "h) Jaka śliczna! Ile ma lat?",
+        "i) Niestety schronisko jest dziś nieczynne.",
+        "j) Proszę zabrać dowód osobisty i smycz."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "c) Czy mogę najpierw zobaczyć kilka psów?",
+          "answer": "a) Czy mogę najpierw zobaczyć kilka psów?",
           "options": [
-            "a) Proszę zabrać dowód osobisty i smycz.",
-            "b) Niestety schronisko jest dziś nieczynne.",
-            "c) Czy mogę najpierw zobaczyć kilka psów?",
-            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
-            "e) Jaka śliczna! Ile ma lat?",
-            "f) Karma dla psów jest dziś w promocji.",
-            "g) Oczywiście, zapraszam do boksów.",
-            "h) Czy mogę przyjść na spacer już jutro?",
-            "i) To dokładnie taki pies, jakiego szukam.",
-            "j) Dziękuję, do zobaczenia jutro."
+            "a) Czy mogę najpierw zobaczyć kilka psów?",
+            "b) Karma dla psów jest dziś w promocji.",
+            "c) Oczywiście, zapraszam do boksów.",
+            "d) To dokładnie taki pies, jakiego szukam.",
+            "e) Dziękuję, do zobaczenia jutro.",
+            "f) Czy mogę przyjść na spacer już jutro?",
+            "g) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "h) Jaka śliczna! Ile ma lat?",
+            "i) Niestety schronisko jest dziś nieczynne.",
+            "j) Proszę zabrać dowód osobisty i smycz."
           ],
           "explanation": "Adam chce poznać zwierzęta przed decyzją. Kasia odpowiada pozytywnie i prowadzi go do boksów.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "g) Oczywiście, zapraszam do boksów.",
+          "answer": "c) Oczywiście, zapraszam do boksów.",
           "options": [
-            "a) Proszę zabrać dowód osobisty i smycz.",
-            "b) Niestety schronisko jest dziś nieczynne.",
-            "c) Czy mogę najpierw zobaczyć kilka psów?",
-            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
-            "e) Jaka śliczna! Ile ma lat?",
-            "f) Karma dla psów jest dziś w promocji.",
-            "g) Oczywiście, zapraszam do boksów.",
-            "h) Czy mogę przyjść na spacer już jutro?",
-            "i) To dokładnie taki pies, jakiego szukam.",
-            "j) Dziękuję, do zobaczenia jutro."
+            "a) Czy mogę najpierw zobaczyć kilka psów?",
+            "b) Karma dla psów jest dziś w promocji.",
+            "c) Oczywiście, zapraszam do boksów.",
+            "d) To dokładnie taki pies, jakiego szukam.",
+            "e) Dziękuję, do zobaczenia jutro.",
+            "f) Czy mogę przyjść na spacer już jutro?",
+            "g) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "h) Jaka śliczna! Ile ma lat?",
+            "i) Niestety schronisko jest dziś nieczynne.",
+            "j) Proszę zabrać dowód osobisty i smycz."
           ],
           "explanation": "„Oczywiście” potwierdza prośbę. Dopiero po tym Kasia pokazuje psa, więc „nieczynne schronisko” do tej rozmowy nie pasuje.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "e) Jaka śliczna! Ile ma lat?",
+          "answer": "h) Jaka śliczna! Ile ma lat?",
           "options": [
-            "a) Proszę zabrać dowód osobisty i smycz.",
-            "b) Niestety schronisko jest dziś nieczynne.",
-            "c) Czy mogę najpierw zobaczyć kilka psów?",
-            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
-            "e) Jaka śliczna! Ile ma lat?",
-            "f) Karma dla psów jest dziś w promocji.",
-            "g) Oczywiście, zapraszam do boksów.",
-            "h) Czy mogę przyjść na spacer już jutro?",
-            "i) To dokładnie taki pies, jakiego szukam.",
-            "j) Dziękuję, do zobaczenia jutro."
+            "a) Czy mogę najpierw zobaczyć kilka psów?",
+            "b) Karma dla psów jest dziś w promocji.",
+            "c) Oczywiście, zapraszam do boksów.",
+            "d) To dokładnie taki pies, jakiego szukam.",
+            "e) Dziękuję, do zobaczenia jutro.",
+            "f) Czy mogę przyjść na spacer już jutro?",
+            "g) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "h) Jaka śliczna! Ile ma lat?",
+            "i) Niestety schronisko jest dziś nieczynne.",
+            "j) Proszę zabrać dowód osobisty i smycz."
           ],
           "explanation": "Adam reaguje na widok Luny i pyta o jej wiek. Odpowiedź Kasi zaczyna się od liczby lat.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "i) To dokładnie taki pies, jakiego szukam.",
+          "answer": "d) To dokładnie taki pies, jakiego szukam.",
           "options": [
-            "a) Proszę zabrać dowód osobisty i smycz.",
-            "b) Niestety schronisko jest dziś nieczynne.",
-            "c) Czy mogę najpierw zobaczyć kilka psów?",
-            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
-            "e) Jaka śliczna! Ile ma lat?",
-            "f) Karma dla psów jest dziś w promocji.",
-            "g) Oczywiście, zapraszam do boksów.",
-            "h) Czy mogę przyjść na spacer już jutro?",
-            "i) To dokładnie taki pies, jakiego szukam.",
-            "j) Dziękuję, do zobaczenia jutro."
+            "a) Czy mogę najpierw zobaczyć kilka psów?",
+            "b) Karma dla psów jest dziś w promocji.",
+            "c) Oczywiście, zapraszam do boksów.",
+            "d) To dokładnie taki pies, jakiego szukam.",
+            "e) Dziękuję, do zobaczenia jutro.",
+            "f) Czy mogę przyjść na spacer już jutro?",
+            "g) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "h) Jaka śliczna! Ile ma lat?",
+            "i) Niestety schronisko jest dziś nieczynne.",
+            "j) Proszę zabrać dowód osobisty i smycz."
           ],
           "explanation": "Po opisie Luny Adam mówi, że mu się podoba. To naturalna reakcja po usłyszeniu informacji o psie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+          "answer": "g) Najpierw musi Pan wypełnić ankietę adopcyjną.",
           "options": [
-            "a) Proszę zabrać dowód osobisty i smycz.",
-            "b) Niestety schronisko jest dziś nieczynne.",
-            "c) Czy mogę najpierw zobaczyć kilka psów?",
-            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
-            "e) Jaka śliczna! Ile ma lat?",
-            "f) Karma dla psów jest dziś w promocji.",
-            "g) Oczywiście, zapraszam do boksów.",
-            "h) Czy mogę przyjść na spacer już jutro?",
-            "i) To dokładnie taki pies, jakiego szukam.",
-            "j) Dziękuję, do zobaczenia jutro."
+            "a) Czy mogę najpierw zobaczyć kilka psów?",
+            "b) Karma dla psów jest dziś w promocji.",
+            "c) Oczywiście, zapraszam do boksów.",
+            "d) To dokładnie taki pies, jakiego szukam.",
+            "e) Dziękuję, do zobaczenia jutro.",
+            "f) Czy mogę przyjść na spacer już jutro?",
+            "g) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "h) Jaka śliczna! Ile ma lat?",
+            "i) Niestety schronisko jest dziś nieczynne.",
+            "j) Proszę zabrać dowód osobisty i smycz."
           ],
           "explanation": "Kasia opisuje pierwszy etap adopcji. Następne zdanie zaczyna się od „Potem”, więc poprzednie musi zawierać „najpierw”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "h) Czy mogę przyjść na spacer już jutro?",
+          "answer": "f) Czy mogę przyjść na spacer już jutro?",
           "options": [
-            "a) Proszę zabrać dowód osobisty i smycz.",
-            "b) Niestety schronisko jest dziś nieczynne.",
-            "c) Czy mogę najpierw zobaczyć kilka psów?",
-            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
-            "e) Jaka śliczna! Ile ma lat?",
-            "f) Karma dla psów jest dziś w promocji.",
-            "g) Oczywiście, zapraszam do boksów.",
-            "h) Czy mogę przyjść na spacer już jutro?",
-            "i) To dokładnie taki pies, jakiego szukam.",
-            "j) Dziękuję, do zobaczenia jutro."
+            "a) Czy mogę najpierw zobaczyć kilka psów?",
+            "b) Karma dla psów jest dziś w promocji.",
+            "c) Oczywiście, zapraszam do boksów.",
+            "d) To dokładnie taki pies, jakiego szukam.",
+            "e) Dziękuję, do zobaczenia jutro.",
+            "f) Czy mogę przyjść na spacer już jutro?",
+            "g) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "h) Jaka śliczna! Ile ma lat?",
+            "i) Niestety schronisko jest dziś nieczynne.",
+            "j) Proszę zabrać dowód osobisty i smycz."
           ],
           "explanation": "Po opisie procedury Adam pyta o termin spaceru. Kasia odpowiada: „Tak, jutro o dziesiątej”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "a) Proszę zabrać dowód osobisty i smycz.",
+          "answer": "j) Proszę zabrać dowód osobisty i smycz.",
           "options": [
-            "a) Proszę zabrać dowód osobisty i smycz.",
-            "b) Niestety schronisko jest dziś nieczynne.",
-            "c) Czy mogę najpierw zobaczyć kilka psów?",
-            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
-            "e) Jaka śliczna! Ile ma lat?",
-            "f) Karma dla psów jest dziś w promocji.",
-            "g) Oczywiście, zapraszam do boksów.",
-            "h) Czy mogę przyjść na spacer już jutro?",
-            "i) To dokładnie taki pies, jakiego szukam.",
-            "j) Dziękuję, do zobaczenia jutro."
+            "a) Czy mogę najpierw zobaczyć kilka psów?",
+            "b) Karma dla psów jest dziś w promocji.",
+            "c) Oczywiście, zapraszam do boksów.",
+            "d) To dokładnie taki pies, jakiego szukam.",
+            "e) Dziękuję, do zobaczenia jutro.",
+            "f) Czy mogę przyjść na spacer już jutro?",
+            "g) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "h) Jaka śliczna! Ile ma lat?",
+            "i) Niestety schronisko jest dziś nieczynne.",
+            "j) Proszę zabrać dowód osobisty i smycz."
           ],
           "explanation": "Kasia podaje, co trzeba przynieść na spacer. To prośba grzeczna, w formie „proszę” i bezokolicznika.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "j) Dziękuję, do zobaczenia jutro.",
+          "answer": "e) Dziękuję, do zobaczenia jutro.",
           "options": [
-            "a) Proszę zabrać dowód osobisty i smycz.",
-            "b) Niestety schronisko jest dziś nieczynne.",
-            "c) Czy mogę najpierw zobaczyć kilka psów?",
-            "d) Najpierw musi Pan wypełnić ankietę adopcyjną.",
-            "e) Jaka śliczna! Ile ma lat?",
-            "f) Karma dla psów jest dziś w promocji.",
-            "g) Oczywiście, zapraszam do boksów.",
-            "h) Czy mogę przyjść na spacer już jutro?",
-            "i) To dokładnie taki pies, jakiego szukam.",
-            "j) Dziękuję, do zobaczenia jutro."
+            "a) Czy mogę najpierw zobaczyć kilka psów?",
+            "b) Karma dla psów jest dziś w promocji.",
+            "c) Oczywiście, zapraszam do boksów.",
+            "d) To dokładnie taki pies, jakiego szukam.",
+            "e) Dziękuję, do zobaczenia jutro.",
+            "f) Czy mogę przyjść na spacer już jutro?",
+            "g) Najpierw musi Pan wypełnić ankietę adopcyjną.",
+            "h) Jaka śliczna! Ile ma lat?",
+            "i) Niestety schronisko jest dziś nieczynne.",
+            "j) Proszę zabrać dowód osobisty i smycz."
           ],
           "explanation": "Adam kończy rozmowę, bo ustalili już godzinę spotkania. Informacja o promocji karmy nie pasuje do tej rozmowy.",
           "grammar_point": "slownictwo"
@@ -607,8 +607,8 @@
           "id": "el2-1",
           "answer": "a) aby",
           "options": [
-            "a) aby",
             "b) bo",
+            "a) aby",
             "c) więc"
           ],
           "explanation": "Po „Piszę” podajemy cel listu: „aby zapytać”. „Bo” i „więc” wprowadzają przyczynę lub skutek, a nie cel.",
@@ -618,9 +618,9 @@
           "id": "el2-2",
           "answer": "b) na",
           "options": [
-            "a) o",
             "b) na",
-            "c) w"
+            "c) w",
+            "a) o"
           ],
           "explanation": "Mówimy „zależy mi na czymś”. Przyimki „o” i „w” nie pasują do czasownika „zależeć”.",
           "grammar_point": "rejestr-formalny"
@@ -651,9 +651,9 @@
           "id": "el2-5",
           "answer": "c) doświadczenie",
           "options": [
+            "c) doświadczenie",
             "a) przeżycie",
-            "b) wspomnienie",
-            "c) doświadczenie"
+            "b) wspomnienie"
           ],
           "explanation": "Mówimy „mieć doświadczenie w czymś”, czyli umieć coś z praktyki. „Przeżycie” i „wspomnienie” nie pasują do opieki nad zwierzętami.",
           "grammar_point": "rejestr-formalny"
@@ -663,8 +663,8 @@
           "answer": "b) podpisać",
           "options": [
             "a) zapisać",
-            "b) podpisać",
-            "c) wpisać"
+            "c) wpisać",
+            "b) podpisać"
           ],
           "explanation": "Umowę się „podpisuje”. „Zapisać umowę” i „wpisać umowę” nie oznaczają złożenia podpisu.",
           "grammar_point": "rejestr-formalny"
@@ -684,8 +684,8 @@
           "id": "el2-8",
           "answer": "a) kontakt",
           "options": [
-            "a) kontakt",
             "b) kontrolę",
+            "a) kontakt",
             "c) kontakty"
           ],
           "explanation": "„Proszę o kontakt” to częsta formuła w liście. „Kontrola” i „kontakty” nie pasują do prośby o telefon.",
@@ -695,9 +695,9 @@
           "id": "el2-9",
           "answer": "c) za",
           "options": [
-            "a) o",
+            "c) za",
             "b) na",
-            "c) za"
+            "a) o"
           ],
           "explanation": "Mówimy „dziękować za coś”. „Dziękować o” i „dziękować na” są niepoprawne.",
           "grammar_point": "rejestr-formalny"

@@ -129,8 +129,8 @@
           "text": "Nowa fabryka została ___ w Gdańsku.",
           "options": [
             "zbudowany",
-            "zbudowana",
-            "zbudowane"
+            "zbudowane",
+            "zbudowana"
           ],
           "answer": "zbudowana",
           "explanation": "Fabryka — rodzaj żeński.",
@@ -151,8 +151,8 @@
           "id": "g3-3",
           "text": "Inżynierowie zostali ___ na konferencję.",
           "options": [
-            "zaproszeni",
-            "zaproszone"
+            "zaproszone",
+            "zaproszeni"
           ],
           "answer": "zaproszeni",
           "explanation": "Inżynierowie to mężczyźni lub grupa mieszana — forma męskoosobowa.",
@@ -162,8 +162,8 @@
           "id": "g3-4",
           "text": "Stare radio zostało ___ w piwnicy.",
           "options": [
-            "znaleziony",
-            "znalezione"
+            "znalezione",
+            "znaleziony"
           ],
           "answer": "znalezione",
           "explanation": "Radio — rodzaj nijaki.",
@@ -218,8 +218,8 @@
           "id": "g4-2",
           "text": "Elektrownia ___ oddana do użytku w maju.",
           "options": [
-            "była",
-            "została"
+            "została",
+            "była"
           ],
           "answer": "została",
           "explanation": "Konkretna data, czynność zakończona.",
@@ -229,8 +229,8 @@
           "id": "g4-3",
           "text": "W tej fabryce ___ produkowane silniki.",
           "options": [
-            "były",
-            "zostały"
+            "zostały",
+            "były"
           ],
           "answer": "były",
           "explanation": "Powtarzalność, trwanie latami.",
@@ -262,8 +262,8 @@
           "id": "g4-6",
           "text": "Co roku najlepszy młody wynalazca ___ nagrodzony złotym medalem.",
           "options": [
-            "jest",
-            "zostaje"
+            "zostaje",
+            "jest"
           ],
           "answer": "zostaje",
           "explanation": "Jedno zdarzenie, które powtarza się co roku, z imiesłowem dokonanym.",
@@ -458,8 +458,8 @@
           "id": "g8-1",
           "text": "Drzwi zostały ___ kluczem.",
           "options": [
-            "otworzone",
-            "otwarte"
+            "otwarte",
+            "otworzone"
           ],
           "answer": "otwarte",
           "explanation": "Otworzyć daje otwarty. Formy otworzony nie ma.",
@@ -480,8 +480,8 @@
           "id": "g8-3",
           "text": "W zeszłym roku ___ nową halę.",
           "options": [
-            "było zbudowano",
-            "zbudowano"
+            "zbudowano",
+            "było zbudowano"
           ],
           "answer": "zbudowano",
           "explanation": "Forma -no / -to nie łączy się z było.",
@@ -502,8 +502,8 @@
           "id": "g8-5",
           "text": "Ten telefon ___ dwa tysiące złotych.",
           "options": [
-            "kosztował",
-            "był kosztowany"
+            "był kosztowany",
+            "kosztował"
           ],
           "answer": "kosztował",
           "explanation": "Kosztować nie ma strony biernej.",
@@ -513,8 +513,8 @@
           "id": "g8-6",
           "text": "Ta aplikacja ___ używana przez większość studentów.",
           "options": [
-            "zostaje",
-            "jest"
+            "jest",
+            "zostaje"
           ],
           "answer": "jest",
           "explanation": "Stan, który trwa — jest, nie zostaje.",
@@ -536,158 +536,158 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Joanna: Infolinia serwisu AGD, mówi Joanna. W czym mogę pomóc?\n\nAdam: Dzień dobry. {el1-1}\n\nJoanna: Kiedy kupił pan urządzenie?\n\nAdam: Trzy tygodnie temu. Z ekspresu wycieka woda, a na wyświetlaczu pojawia się błąd. {el1-2}\n\nJoanna: {el1-3} Proszę podać numer seryjny.\n\nAdam: {el1-4} Już mam. To numer 4712.\n\nJoanna: Dziękuję. {el1-5}\n\nAdam: {el1-6}\n\nJoanna: {el1-7}\n\nAdam: {el1-8}\n\nJoanna: Zapisane. Dziękuję za telefon i przepraszam za kłopot.",
       "bank": [
-        "a) Mam paragon i kartę gwarancyjną.",
-        "b) Rozumiem, ale najpierw technik musi sprawdzić urządzenie.",
-        "c) Dzwonię w sprawie reklamacji ekspresu do kawy.",
-        "d) Czy mogę zapłacić za naprawę kartą?",
-        "e) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
-        "f) Wolałbym wymianę, bo używam ekspresu codziennie.",
-        "g) Niestety gwarancja już się skończyła.",
-        "h) Chwileczkę, muszę poszukać.",
-        "i) W takim razie proszę o wizytę w piątek po południu.",
-        "j) Mogę zaproponować wizytę technika albo wymianę."
+        "a) Dzwonię w sprawie reklamacji ekspresu do kawy.",
+        "b) Chwileczkę, muszę poszukać.",
+        "c) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
+        "d) Mogę zaproponować wizytę technika albo wymianę.",
+        "e) Niestety gwarancja już się skończyła.",
+        "f) Czy mogę zapłacić za naprawę kartą?",
+        "g) W takim razie proszę o wizytę w piątek po południu.",
+        "h) Wolałbym wymianę, bo używam ekspresu codziennie.",
+        "i) Mam paragon i kartę gwarancyjną.",
+        "j) Rozumiem, ale najpierw technik musi sprawdzić urządzenie."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "c) Dzwonię w sprawie reklamacji ekspresu do kawy.",
+          "answer": "a) Dzwonię w sprawie reklamacji ekspresu do kawy.",
           "options": [
-            "a) Mam paragon i kartę gwarancyjną.",
-            "b) Rozumiem, ale najpierw technik musi sprawdzić urządzenie.",
-            "c) Dzwonię w sprawie reklamacji ekspresu do kawy.",
-            "d) Czy mogę zapłacić za naprawę kartą?",
-            "e) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
-            "f) Wolałbym wymianę, bo używam ekspresu codziennie.",
-            "g) Niestety gwarancja już się skończyła.",
-            "h) Chwileczkę, muszę poszukać.",
-            "i) W takim razie proszę o wizytę w piątek po południu.",
-            "j) Mogę zaproponować wizytę technika albo wymianę."
+            "a) Dzwonię w sprawie reklamacji ekspresu do kawy.",
+            "b) Chwileczkę, muszę poszukać.",
+            "c) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
+            "d) Mogę zaproponować wizytę technika albo wymianę.",
+            "e) Niestety gwarancja już się skończyła.",
+            "f) Czy mogę zapłacić za naprawę kartą?",
+            "g) W takim razie proszę o wizytę w piątek po południu.",
+            "h) Wolałbym wymianę, bo używam ekspresu codziennie.",
+            "i) Mam paragon i kartę gwarancyjną.",
+            "j) Rozumiem, ale najpierw technik musi sprawdzić urządzenie."
           ],
           "explanation": "Adam przedstawia cel telefonu, a konsultantka od razu pyta o datę zakupu. „Czy mogę zapłacić za naprawę kartą?” nie pasuje do początku rozmowy.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "a) Mam paragon i kartę gwarancyjną.",
+          "answer": "i) Mam paragon i kartę gwarancyjną.",
           "options": [
-            "a) Mam paragon i kartę gwarancyjną.",
-            "b) Rozumiem, ale najpierw technik musi sprawdzić urządzenie.",
-            "c) Dzwonię w sprawie reklamacji ekspresu do kawy.",
-            "d) Czy mogę zapłacić za naprawę kartą?",
-            "e) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
-            "f) Wolałbym wymianę, bo używam ekspresu codziennie.",
-            "g) Niestety gwarancja już się skończyła.",
-            "h) Chwileczkę, muszę poszukać.",
-            "i) W takim razie proszę o wizytę w piątek po południu.",
-            "j) Mogę zaproponować wizytę technika albo wymianę."
+            "a) Dzwonię w sprawie reklamacji ekspresu do kawy.",
+            "b) Chwileczkę, muszę poszukać.",
+            "c) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
+            "d) Mogę zaproponować wizytę technika albo wymianę.",
+            "e) Niestety gwarancja już się skończyła.",
+            "f) Czy mogę zapłacić za naprawę kartą?",
+            "g) W takim razie proszę o wizytę w piątek po południu.",
+            "h) Wolałbym wymianę, bo używam ekspresu codziennie.",
+            "i) Mam paragon i kartę gwarancyjną.",
+            "j) Rozumiem, ale najpierw technik musi sprawdzić urządzenie."
           ],
           "explanation": "Po opisie usterki klient informuje o dokumentach, które potwierdzają zakup i gwarancję. To ważne przy reklamacji.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "e) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
+          "answer": "c) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
           "options": [
-            "a) Mam paragon i kartę gwarancyjną.",
-            "b) Rozumiem, ale najpierw technik musi sprawdzić urządzenie.",
-            "c) Dzwonię w sprawie reklamacji ekspresu do kawy.",
-            "d) Czy mogę zapłacić za naprawę kartą?",
-            "e) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
-            "f) Wolałbym wymianę, bo używam ekspresu codziennie.",
-            "g) Niestety gwarancja już się skończyła.",
-            "h) Chwileczkę, muszę poszukać.",
-            "i) W takim razie proszę o wizytę w piątek po południu.",
-            "j) Mogę zaproponować wizytę technika albo wymianę."
+            "a) Dzwonię w sprawie reklamacji ekspresu do kawy.",
+            "b) Chwileczkę, muszę poszukać.",
+            "c) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
+            "d) Mogę zaproponować wizytę technika albo wymianę.",
+            "e) Niestety gwarancja już się skończyła.",
+            "f) Czy mogę zapłacić za naprawę kartą?",
+            "g) W takim razie proszę o wizytę w piątek po południu.",
+            "h) Wolałbym wymianę, bo używam ekspresu codziennie.",
+            "i) Mam paragon i kartę gwarancyjną.",
+            "j) Rozumiem, ale najpierw technik musi sprawdzić urządzenie."
           ],
           "explanation": "Ekspres kupiono trzy tygodnie temu, więc konsultantka potwierdza, że naprawa będzie bezpłatna. Fragment „Niestety gwarancja już się skończyła.” przeczy temu faktowi.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "h) Chwileczkę, muszę poszukać.",
+          "answer": "b) Chwileczkę, muszę poszukać.",
           "options": [
-            "a) Mam paragon i kartę gwarancyjną.",
-            "b) Rozumiem, ale najpierw technik musi sprawdzić urządzenie.",
-            "c) Dzwonię w sprawie reklamacji ekspresu do kawy.",
-            "d) Czy mogę zapłacić za naprawę kartą?",
-            "e) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
-            "f) Wolałbym wymianę, bo używam ekspresu codziennie.",
-            "g) Niestety gwarancja już się skończyła.",
-            "h) Chwileczkę, muszę poszukać.",
-            "i) W takim razie proszę o wizytę w piątek po południu.",
-            "j) Mogę zaproponować wizytę technika albo wymianę."
+            "a) Dzwonię w sprawie reklamacji ekspresu do kawy.",
+            "b) Chwileczkę, muszę poszukać.",
+            "c) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
+            "d) Mogę zaproponować wizytę technika albo wymianę.",
+            "e) Niestety gwarancja już się skończyła.",
+            "f) Czy mogę zapłacić za naprawę kartą?",
+            "g) W takim razie proszę o wizytę w piątek po południu.",
+            "h) Wolałbym wymianę, bo używam ekspresu codziennie.",
+            "i) Mam paragon i kartę gwarancyjną.",
+            "j) Rozumiem, ale najpierw technik musi sprawdzić urządzenie."
           ],
           "explanation": "Klient musi znaleźć numer seryjny, więc prosi o chwilę. Dalej mówi „Już mam”, co potwierdza ten sens.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "j) Mogę zaproponować wizytę technika albo wymianę.",
+          "answer": "d) Mogę zaproponować wizytę technika albo wymianę.",
           "options": [
-            "a) Mam paragon i kartę gwarancyjną.",
-            "b) Rozumiem, ale najpierw technik musi sprawdzić urządzenie.",
-            "c) Dzwonię w sprawie reklamacji ekspresu do kawy.",
-            "d) Czy mogę zapłacić za naprawę kartą?",
-            "e) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
-            "f) Wolałbym wymianę, bo używam ekspresu codziennie.",
-            "g) Niestety gwarancja już się skończyła.",
-            "h) Chwileczkę, muszę poszukać.",
-            "i) W takim razie proszę o wizytę w piątek po południu.",
-            "j) Mogę zaproponować wizytę technika albo wymianę."
+            "a) Dzwonię w sprawie reklamacji ekspresu do kawy.",
+            "b) Chwileczkę, muszę poszukać.",
+            "c) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
+            "d) Mogę zaproponować wizytę technika albo wymianę.",
+            "e) Niestety gwarancja już się skończyła.",
+            "f) Czy mogę zapłacić za naprawę kartą?",
+            "g) W takim razie proszę o wizytę w piątek po południu.",
+            "h) Wolałbym wymianę, bo używam ekspresu codziennie.",
+            "i) Mam paragon i kartę gwarancyjną.",
+            "j) Rozumiem, ale najpierw technik musi sprawdzić urządzenie."
           ],
           "explanation": "Konsultantka przedstawia dwa rozwiązania: wizytę technika albo wymianę. Klient wybiera jedno z nich w następnej wypowiedzi.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "f) Wolałbym wymianę, bo używam ekspresu codziennie.",
+          "answer": "h) Wolałbym wymianę, bo używam ekspresu codziennie.",
           "options": [
-            "a) Mam paragon i kartę gwarancyjną.",
-            "b) Rozumiem, ale najpierw technik musi sprawdzić urządzenie.",
-            "c) Dzwonię w sprawie reklamacji ekspresu do kawy.",
-            "d) Czy mogę zapłacić za naprawę kartą?",
-            "e) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
-            "f) Wolałbym wymianę, bo używam ekspresu codziennie.",
-            "g) Niestety gwarancja już się skończyła.",
-            "h) Chwileczkę, muszę poszukać.",
-            "i) W takim razie proszę o wizytę w piątek po południu.",
-            "j) Mogę zaproponować wizytę technika albo wymianę."
+            "a) Dzwonię w sprawie reklamacji ekspresu do kawy.",
+            "b) Chwileczkę, muszę poszukać.",
+            "c) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
+            "d) Mogę zaproponować wizytę technika albo wymianę.",
+            "e) Niestety gwarancja już się skończyła.",
+            "f) Czy mogę zapłacić za naprawę kartą?",
+            "g) W takim razie proszę o wizytę w piątek po południu.",
+            "h) Wolałbym wymianę, bo używam ekspresu codziennie.",
+            "i) Mam paragon i kartę gwarancyjną.",
+            "j) Rozumiem, ale najpierw technik musi sprawdzić urządzenie."
           ],
           "explanation": "Klient wyraża preferencję i uzasadnia ją: „Wolałbym… bo…”. Potrzebuje ekspresu codziennie, więc woli wymianę.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "b) Rozumiem, ale najpierw technik musi sprawdzić urządzenie.",
+          "answer": "j) Rozumiem, ale najpierw technik musi sprawdzić urządzenie.",
           "options": [
-            "a) Mam paragon i kartę gwarancyjną.",
-            "b) Rozumiem, ale najpierw technik musi sprawdzić urządzenie.",
-            "c) Dzwonię w sprawie reklamacji ekspresu do kawy.",
-            "d) Czy mogę zapłacić za naprawę kartą?",
-            "e) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
-            "f) Wolałbym wymianę, bo używam ekspresu codziennie.",
-            "g) Niestety gwarancja już się skończyła.",
-            "h) Chwileczkę, muszę poszukać.",
-            "i) W takim razie proszę o wizytę w piątek po południu.",
-            "j) Mogę zaproponować wizytę technika albo wymianę."
+            "a) Dzwonię w sprawie reklamacji ekspresu do kawy.",
+            "b) Chwileczkę, muszę poszukać.",
+            "c) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
+            "d) Mogę zaproponować wizytę technika albo wymianę.",
+            "e) Niestety gwarancja już się skończyła.",
+            "f) Czy mogę zapłacić za naprawę kartą?",
+            "g) W takim razie proszę o wizytę w piątek po południu.",
+            "h) Wolałbym wymianę, bo używam ekspresu codziennie.",
+            "i) Mam paragon i kartę gwarancyjną.",
+            "j) Rozumiem, ale najpierw technik musi sprawdzić urządzenie."
           ],
           "explanation": "Konsultantka grzecznie odmawia natychmiastowej wymiany i wyjaśnia procedurę: najpierw technik musi sprawdzić sprzęt.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "i) W takim razie proszę o wizytę w piątek po południu.",
+          "answer": "g) W takim razie proszę o wizytę w piątek po południu.",
           "options": [
-            "a) Mam paragon i kartę gwarancyjną.",
-            "b) Rozumiem, ale najpierw technik musi sprawdzić urządzenie.",
-            "c) Dzwonię w sprawie reklamacji ekspresu do kawy.",
-            "d) Czy mogę zapłacić za naprawę kartą?",
-            "e) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
-            "f) Wolałbym wymianę, bo używam ekspresu codziennie.",
-            "g) Niestety gwarancja już się skończyła.",
-            "h) Chwileczkę, muszę poszukać.",
-            "i) W takim razie proszę o wizytę w piątek po południu.",
-            "j) Mogę zaproponować wizytę technika albo wymianę."
+            "a) Dzwonię w sprawie reklamacji ekspresu do kawy.",
+            "b) Chwileczkę, muszę poszukać.",
+            "c) To jeszcze okres gwarancji, więc naprawa będzie bezpłatna.",
+            "d) Mogę zaproponować wizytę technika albo wymianę.",
+            "e) Niestety gwarancja już się skończyła.",
+            "f) Czy mogę zapłacić za naprawę kartą?",
+            "g) W takim razie proszę o wizytę w piątek po południu.",
+            "h) Wolałbym wymianę, bo używam ekspresu codziennie.",
+            "i) Mam paragon i kartę gwarancyjną.",
+            "j) Rozumiem, ale najpierw technik musi sprawdzić urządzenie."
           ],
           "explanation": "Klient akceptuje procedurę i podaje termin wizyty. „W takim razie” pokazuje, że wyciąga wniosek z słów konsultantki.",
           "grammar_point": "slownictwo"
@@ -706,9 +706,9 @@
           "id": "el2-1",
           "answer": "a) w sprawie",
           "options": [
-            "a) w sprawie",
+            "c) na sprawę",
             "b) o sprawie",
-            "c) na sprawę"
+            "a) w sprawie"
           ],
           "explanation": "Formuła „Piszę w sprawie + dopełniacz” otwiera wiele oficjalnych listów. Pozostałe warianty nie są poprawnymi kolokacjami.",
           "grammar_point": "rejestr-formalny"
@@ -717,9 +717,9 @@
           "id": "el2-2",
           "answer": "b) a",
           "options": [
+            "c) dlatego",
             "a) żeby",
-            "b) a",
-            "c) dlatego"
+            "b) a"
           ],
           "explanation": "Spójnik „a” łączy dwie równoległe informacje o usterce: wyciek wody i błąd na wyświetlaczu. „Żeby” i „dlatego” zmieniają sens zdania.",
           "grammar_point": "rejestr-formalny"
@@ -728,9 +728,9 @@
           "id": "el2-3",
           "answer": "c) prawo do",
           "options": [
+            "c) prawo do",
             "a) prawo na",
-            "b) prawo o",
-            "c) prawo do"
+            "b) prawo o"
           ],
           "explanation": "Mówimy „przysługuje prawo do wymiany”. Pozostałe przyimki nie pasują do rzeczownika „prawo”.",
           "grammar_point": "rejestr-formalny"
@@ -739,8 +739,8 @@
           "id": "el2-4",
           "answer": "a) z",
           "options": [
-            "a) z",
             "b) na",
+            "a) z",
             "c) po"
           ],
           "explanation": "Stały zwrot to „zwracać się z prośbą”. Przyimki „na” i „po” są błędne.",
@@ -750,9 +750,9 @@
           "id": "el2-5",
           "answer": "b) proszę",
           "options": [
-            "a) chcę",
             "b) proszę",
-            "c) pragnę"
+            "c) pragnę",
+            "a) chcę"
           ],
           "explanation": "W formalnym piśmie zwrot „proszę o coś” jest naturalny i grzeczny. „Chcę” i „pragnę” nie łączą się z przyimkiem „o”.",
           "grammar_point": "rejestr-formalny"
@@ -783,9 +783,9 @@
           "id": "el2-8",
           "answer": "b) pod",
           "options": [
-            "a) przy",
             "b) pod",
-            "c) za"
+            "c) za",
+            "a) przy"
           ],
           "explanation": "Mówimy „pod numerem telefonu”. „Przy” i „za” nie tworzą tej kolokacji.",
           "grammar_point": "rejestr-formalny"
@@ -795,8 +795,8 @@
           "answer": "c) za",
           "options": [
             "a) o",
-            "b) na",
-            "c) za"
+            "c) za",
+            "b) na"
           ],
           "explanation": "Czasownik „dziękować” łączy się z „za”: „dziękuję za zrozumienie”. „O” i „na” są niepoprawne.",
           "grammar_point": "rejestr-formalny"

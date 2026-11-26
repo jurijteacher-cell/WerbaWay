@@ -17,9 +17,9 @@
           "text": "Jeśli jutro będzie padać, ___ w domu.",
           "answer": "zostaniemy",
           "options": [
+            "zostawaliśmy",
             "zostaniemy",
-            "zostalibyśmy",
-            "zostawaliśmy"
+            "zostalibyśmy"
           ],
           "grammar_point": "warunek-realny",
           "explanation": "Jeśli + realna przyszłość → czas przyszły: zostaniemy."
@@ -29,8 +29,8 @@
           "text": "Gdybym miała więcej czasu, ___ się na wolontariat.",
           "answer": "zapisałabym",
           "options": [
-            "zapisałabym",
             "zapiszę",
+            "zapisałabym",
             "zapisuję"
           ],
           "grammar_point": "warunek-nierealny",
@@ -41,9 +41,9 @@
           "text": "Proszę ___ drzwi, bo pies ucieknie.",
           "answer": "zamknąć",
           "options": [
-            "zamknąć",
             "zamyka",
-            "zamknęła"
+            "zamknęła",
+            "zamknąć"
           ],
           "grammar_point": "rozkazujacy",
           "explanation": "Proszę + bezokolicznik: proszę zamknąć."
@@ -53,8 +53,8 @@
           "text": "Tu jest zakaz: na plac zabaw nie ___ wprowadzać psów.",
           "answer": "wolno",
           "options": [
-            "wolno",
             "musi",
+            "wolno",
             "trzeba"
           ],
           "grammar_point": "modalne",
@@ -65,9 +65,9 @@
           "text": "Szefowa poprosiła mnie, ___ przyszła jutro wcześniej.",
           "answer": "żebym",
           "options": [
-            "żebym",
+            "jeśli",
             "że",
-            "jeśli"
+            "żebym"
           ],
           "grammar_point": "zeby-zyczenie",
           "explanation": "Prośba → żeby + forma osobowa: żebym przyszła."
@@ -101,8 +101,8 @@
           "text": "Kupiłam większy worek, ___ zapłacić mniej za kilogram.",
           "answer": "żeby",
           "options": [
-            "żeby",
             "bo",
+            "żeby",
             "gdyby"
           ],
           "grammar_point": "zeby-cel",
@@ -409,50 +409,50 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Ania: Schronisko miejskie, słucham.\n\nOlena: Dzień dobry, mówi Olena, mama Maksyma. {el1-1} Mój syn i sąsiedzi zebrali w bloku karmę i koce.\n\nAnia: {el1-2} Ile tego jest mniej więcej?\n\nOlena: Piętnaście worków karmy i trzydzieści koców. {el1-3}\n\nAnia: {el1-4} Rano mamy spacery z wolontariuszami, więc lepiej przyjechać po jedenastej.\n\nOlena: {el1-5} Mój syn bardzo chce zobaczyć psy. Czy może wejść do boksów?\n\nAnia: {el1-6} Ale jeśli wolontariusz będzie obok, chłopiec może pogłaskać psa przez kratę.\n\nOlena: Wspaniale. {el1-7} Czy potrzebujecie jeszcze czegoś oprócz karmy?\n\nAnia: Przydałyby się miski i smycze, ale to nie jest warunek.\n\nOlena: Zapytam sąsiadów, może ktoś ma w domu stare miski.\n\nAnia: {el1-8} Do zobaczenia w sobotę!",
       "bank": [
-        "a) Bardzo się cieszę, to świetna wiadomość!",
-        "b) Niestety wchodzić do boksów nie wolno.",
-        "c) Rozumiem, dopilnuję tego.",
-        "d) Dzwonię w sprawie zbiórki dla waszych psów.",
-        "e) Niestety schronisko jest dziś zamknięte.",
+        "a) Dzwonię w sprawie zbiórki dla waszych psów.",
+        "b) Byłabym bardzo wdzięczna.",
+        "c) Bardzo się cieszę, to świetna wiadomość!",
+        "d) Proszę zadzwonić jeszcze raz w poniedziałek.",
+        "e) Niestety wchodzić do boksów nie wolno.",
         "f) Dobrze, w takim razie przyjedziemy po jedenastej.",
-        "g) Byłabym bardzo wdzięczna.",
+        "g) Tak, sobota nam odpowiada.",
         "h) Czy moglibyśmy przywieźć to w sobotę?",
-        "i) Proszę zadzwonić jeszcze raz w poniedziałek.",
-        "j) Tak, sobota nam odpowiada."
+        "i) Niestety schronisko jest dziś zamknięte.",
+        "j) Rozumiem, dopilnuję tego."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "d) Dzwonię w sprawie zbiórki dla waszych psów.",
+          "answer": "a) Dzwonię w sprawie zbiórki dla waszych psów.",
           "options": [
-            "a) Bardzo się cieszę, to świetna wiadomość!",
-            "b) Niestety wchodzić do boksów nie wolno.",
-            "c) Rozumiem, dopilnuję tego.",
-            "d) Dzwonię w sprawie zbiórki dla waszych psów.",
-            "e) Niestety schronisko jest dziś zamknięte.",
+            "a) Dzwonię w sprawie zbiórki dla waszych psów.",
+            "b) Byłabym bardzo wdzięczna.",
+            "c) Bardzo się cieszę, to świetna wiadomość!",
+            "d) Proszę zadzwonić jeszcze raz w poniedziałek.",
+            "e) Niestety wchodzić do boksów nie wolno.",
             "f) Dobrze, w takim razie przyjedziemy po jedenastej.",
-            "g) Byłabym bardzo wdzięczna.",
+            "g) Tak, sobota nam odpowiada.",
             "h) Czy moglibyśmy przywieźć to w sobotę?",
-            "i) Proszę zadzwonić jeszcze raz w poniedziałek.",
-            "j) Tak, sobota nam odpowiada."
+            "i) Niestety schronisko jest dziś zamknięte.",
+            "j) Rozumiem, dopilnuję tego."
           ],
           "explanation": "Tak zaczyna się rozmowa telefoniczna: mówisz, po co dzwonisz. Reakcja „Bardzo się cieszę” pasuje dopiero do odpowiedzi pracownicy.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "a) Bardzo się cieszę, to świetna wiadomość!",
+          "answer": "c) Bardzo się cieszę, to świetna wiadomość!",
           "options": [
-            "a) Bardzo się cieszę, to świetna wiadomość!",
-            "b) Niestety wchodzić do boksów nie wolno.",
-            "c) Rozumiem, dopilnuję tego.",
-            "d) Dzwonię w sprawie zbiórki dla waszych psów.",
-            "e) Niestety schronisko jest dziś zamknięte.",
+            "a) Dzwonię w sprawie zbiórki dla waszych psów.",
+            "b) Byłabym bardzo wdzięczna.",
+            "c) Bardzo się cieszę, to świetna wiadomość!",
+            "d) Proszę zadzwonić jeszcze raz w poniedziałek.",
+            "e) Niestety wchodzić do boksów nie wolno.",
             "f) Dobrze, w takim razie przyjedziemy po jedenastej.",
-            "g) Byłabym bardzo wdzięczna.",
+            "g) Tak, sobota nam odpowiada.",
             "h) Czy moglibyśmy przywieźć to w sobotę?",
-            "i) Proszę zadzwonić jeszcze raz w poniedziałek.",
-            "j) Tak, sobota nam odpowiada."
+            "i) Niestety schronisko jest dziś zamknięte.",
+            "j) Rozumiem, dopilnuję tego."
           ],
           "explanation": "Ania reaguje na dobrą wiadomość o zbiórce. „Tak, sobota nam odpowiada” nie pasuje, bo nikt jeszcze nie zaproponował soboty.",
           "grammar_point": "slownictwo"
@@ -461,34 +461,34 @@
           "id": "el1-3",
           "answer": "h) Czy moglibyśmy przywieźć to w sobotę?",
           "options": [
-            "a) Bardzo się cieszę, to świetna wiadomość!",
-            "b) Niestety wchodzić do boksów nie wolno.",
-            "c) Rozumiem, dopilnuję tego.",
-            "d) Dzwonię w sprawie zbiórki dla waszych psów.",
-            "e) Niestety schronisko jest dziś zamknięte.",
+            "a) Dzwonię w sprawie zbiórki dla waszych psów.",
+            "b) Byłabym bardzo wdzięczna.",
+            "c) Bardzo się cieszę, to świetna wiadomość!",
+            "d) Proszę zadzwonić jeszcze raz w poniedziałek.",
+            "e) Niestety wchodzić do boksów nie wolno.",
             "f) Dobrze, w takim razie przyjedziemy po jedenastej.",
-            "g) Byłabym bardzo wdzięczna.",
+            "g) Tak, sobota nam odpowiada.",
             "h) Czy moglibyśmy przywieźć to w sobotę?",
-            "i) Proszę zadzwonić jeszcze raz w poniedziałek.",
-            "j) Tak, sobota nam odpowiada."
+            "i) Niestety schronisko jest dziś zamknięte.",
+            "j) Rozumiem, dopilnuję tego."
           ],
           "explanation": "Olena pyta o termin. Ania odpowiada na to pytanie w następnej kwestii.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "j) Tak, sobota nam odpowiada.",
+          "answer": "g) Tak, sobota nam odpowiada.",
           "options": [
-            "a) Bardzo się cieszę, to świetna wiadomość!",
-            "b) Niestety wchodzić do boksów nie wolno.",
-            "c) Rozumiem, dopilnuję tego.",
-            "d) Dzwonię w sprawie zbiórki dla waszych psów.",
-            "e) Niestety schronisko jest dziś zamknięte.",
+            "a) Dzwonię w sprawie zbiórki dla waszych psów.",
+            "b) Byłabym bardzo wdzięczna.",
+            "c) Bardzo się cieszę, to świetna wiadomość!",
+            "d) Proszę zadzwonić jeszcze raz w poniedziałek.",
+            "e) Niestety wchodzić do boksów nie wolno.",
             "f) Dobrze, w takim razie przyjedziemy po jedenastej.",
-            "g) Byłabym bardzo wdzięczna.",
+            "g) Tak, sobota nam odpowiada.",
             "h) Czy moglibyśmy przywieźć to w sobotę?",
-            "i) Proszę zadzwonić jeszcze raz w poniedziałek.",
-            "j) Tak, sobota nam odpowiada."
+            "i) Niestety schronisko jest dziś zamknięte.",
+            "j) Rozumiem, dopilnuję tego."
           ],
           "explanation": "To zgoda na termin z pytania Oleny. Fragment „Dobrze, w takim razie…” pasuje do odpowiedzi Oleny, a nie do Ani.",
           "grammar_point": "slownictwo"
@@ -497,70 +497,70 @@
           "id": "el1-5",
           "answer": "f) Dobrze, w takim razie przyjedziemy po jedenastej.",
           "options": [
-            "a) Bardzo się cieszę, to świetna wiadomość!",
-            "b) Niestety wchodzić do boksów nie wolno.",
-            "c) Rozumiem, dopilnuję tego.",
-            "d) Dzwonię w sprawie zbiórki dla waszych psów.",
-            "e) Niestety schronisko jest dziś zamknięte.",
+            "a) Dzwonię w sprawie zbiórki dla waszych psów.",
+            "b) Byłabym bardzo wdzięczna.",
+            "c) Bardzo się cieszę, to świetna wiadomość!",
+            "d) Proszę zadzwonić jeszcze raz w poniedziałek.",
+            "e) Niestety wchodzić do boksów nie wolno.",
             "f) Dobrze, w takim razie przyjedziemy po jedenastej.",
-            "g) Byłabym bardzo wdzięczna.",
+            "g) Tak, sobota nam odpowiada.",
             "h) Czy moglibyśmy przywieźć to w sobotę?",
-            "i) Proszę zadzwonić jeszcze raz w poniedziałek.",
-            "j) Tak, sobota nam odpowiada."
+            "i) Niestety schronisko jest dziś zamknięte.",
+            "j) Rozumiem, dopilnuję tego."
           ],
           "explanation": "„W takim razie” oznacza: skoro rano są spacery, przyjedziemy później. Olena przyjmuje propozycję Ani.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "b) Niestety wchodzić do boksów nie wolno.",
+          "answer": "e) Niestety wchodzić do boksów nie wolno.",
           "options": [
-            "a) Bardzo się cieszę, to świetna wiadomość!",
-            "b) Niestety wchodzić do boksów nie wolno.",
-            "c) Rozumiem, dopilnuję tego.",
-            "d) Dzwonię w sprawie zbiórki dla waszych psów.",
-            "e) Niestety schronisko jest dziś zamknięte.",
+            "a) Dzwonię w sprawie zbiórki dla waszych psów.",
+            "b) Byłabym bardzo wdzięczna.",
+            "c) Bardzo się cieszę, to świetna wiadomość!",
+            "d) Proszę zadzwonić jeszcze raz w poniedziałek.",
+            "e) Niestety wchodzić do boksów nie wolno.",
             "f) Dobrze, w takim razie przyjedziemy po jedenastej.",
-            "g) Byłabym bardzo wdzięczna.",
+            "g) Tak, sobota nam odpowiada.",
             "h) Czy moglibyśmy przywieźć to w sobotę?",
-            "i) Proszę zadzwonić jeszcze raz w poniedziałek.",
-            "j) Tak, sobota nam odpowiada."
+            "i) Niestety schronisko jest dziś zamknięte.",
+            "j) Rozumiem, dopilnuję tego."
           ],
           "explanation": "To odpowiedź na pytanie Oleny o boksy. Dalej Ania mówi „Ale…”, więc najpierw musi być odmowa.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "c) Rozumiem, dopilnuję tego.",
+          "answer": "j) Rozumiem, dopilnuję tego.",
           "options": [
-            "a) Bardzo się cieszę, to świetna wiadomość!",
-            "b) Niestety wchodzić do boksów nie wolno.",
-            "c) Rozumiem, dopilnuję tego.",
-            "d) Dzwonię w sprawie zbiórki dla waszych psów.",
-            "e) Niestety schronisko jest dziś zamknięte.",
+            "a) Dzwonię w sprawie zbiórki dla waszych psów.",
+            "b) Byłabym bardzo wdzięczna.",
+            "c) Bardzo się cieszę, to świetna wiadomość!",
+            "d) Proszę zadzwonić jeszcze raz w poniedziałek.",
+            "e) Niestety wchodzić do boksów nie wolno.",
             "f) Dobrze, w takim razie przyjedziemy po jedenastej.",
-            "g) Byłabym bardzo wdzięczna.",
+            "g) Tak, sobota nam odpowiada.",
             "h) Czy moglibyśmy przywieźć to w sobotę?",
-            "i) Proszę zadzwonić jeszcze raz w poniedziałek.",
-            "j) Tak, sobota nam odpowiada."
+            "i) Niestety schronisko jest dziś zamknięte.",
+            "j) Rozumiem, dopilnuję tego."
           ],
           "explanation": "Olena zgadza się z zasadą bezpieczeństwa i obiecuje jej przestrzegać. „Byłabym wdzięczna” pasuje do innej sytuacji.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "g) Byłabym bardzo wdzięczna.",
+          "answer": "b) Byłabym bardzo wdzięczna.",
           "options": [
-            "a) Bardzo się cieszę, to świetna wiadomość!",
-            "b) Niestety wchodzić do boksów nie wolno.",
-            "c) Rozumiem, dopilnuję tego.",
-            "d) Dzwonię w sprawie zbiórki dla waszych psów.",
-            "e) Niestety schronisko jest dziś zamknięte.",
+            "a) Dzwonię w sprawie zbiórki dla waszych psów.",
+            "b) Byłabym bardzo wdzięczna.",
+            "c) Bardzo się cieszę, to świetna wiadomość!",
+            "d) Proszę zadzwonić jeszcze raz w poniedziałek.",
+            "e) Niestety wchodzić do boksów nie wolno.",
             "f) Dobrze, w takim razie przyjedziemy po jedenastej.",
-            "g) Byłabym bardzo wdzięczna.",
+            "g) Tak, sobota nam odpowiada.",
             "h) Czy moglibyśmy przywieźć to w sobotę?",
-            "i) Proszę zadzwonić jeszcze raz w poniedziałek.",
-            "j) Tak, sobota nam odpowiada."
+            "i) Niestety schronisko jest dziś zamknięte.",
+            "j) Rozumiem, dopilnuję tego."
           ],
           "explanation": "Ania reaguje na propozycję Oleny, żeby zapytać sąsiadów o miski. To grzeczna prośba o pomoc.",
           "grammar_point": "slownictwo"
@@ -579,8 +579,8 @@
           "id": "el2-1",
           "answer": "b) w",
           "options": [
-            "a) na",
             "b) w",
+            "a) na",
             "c) o"
           ],
           "explanation": "Mówimy „w sprawie czegoś”. To stała formuła listu: piszę w sprawie zbiórki.",
@@ -591,8 +591,8 @@
           "answer": "a) za",
           "options": [
             "a) za",
-            "b) o",
-            "c) na"
+            "c) na",
+            "b) o"
           ],
           "explanation": "Dziękuje się „za coś”: za zgodę. Z „o” albo „na” to połączenie jest błędne.",
           "grammar_point": "rejestr-formalny"
@@ -601,8 +601,8 @@
           "id": "el2-3",
           "answer": "c) przy",
           "options": [
-            "a) na",
             "b) w",
+            "a) na",
             "c) przy"
           ],
           "explanation": "Pudło stoi przy skrzynkach, czyli obok nich. „W skrzynek” i „na skrzynek” nie mają tu sensu.",
@@ -612,9 +612,9 @@
           "id": "el2-4",
           "answer": "b) czy",
           "options": [
-            "a) że",
+            "c) żeby",
             "b) czy",
-            "c) żeby"
+            "a) że"
           ],
           "explanation": "Po „zapytać” pytamy pośrednio słowem „czy”. „Że” i „żeby” nie tworzą pytania.",
           "grammar_point": "rejestr-formalny"
@@ -623,9 +623,9 @@
           "id": "el2-5",
           "answer": "c) do",
           "options": [
-            "a) od",
+            "c) do",
             "b) na",
-            "c) do"
+            "a) od"
           ],
           "explanation": "„Do ostatniej soboty” to koniec okresu. „Od” oznaczałoby początek.",
           "grammar_point": "rejestr-formalny"
@@ -645,9 +645,9 @@
           "id": "el2-7",
           "answer": "b) po",
           "options": [
-            "a) za",
+            "c) przez",
             "b) po",
-            "c) przez"
+            "a) za"
           ],
           "explanation": "„Po dwóch tygodniach” znaczy: gdy miną dwa tygodnie. Po „za” i „przez” użylibyśmy innej formy: za dwa tygodnie, przez dwa tygodnie.",
           "grammar_point": "rejestr-formalny"
@@ -667,8 +667,8 @@
           "id": "el2-9",
           "answer": "a) Z góry",
           "options": [
-            "a) Z góry",
             "b) Na górze",
+            "a) Z góry",
             "c) Od góry"
           ],
           "explanation": "„Z góry dziękuję” to stała formuła na koniec prośby w liście. Inne wersje nie istnieją w tym znaczeniu.",
@@ -678,9 +678,9 @@
           "id": "el2-10",
           "answer": "b) Z poważaniem",
           "options": [
+            "c) Po poważaniu",
             "a) W poważaniu",
-            "b) Z poważaniem",
-            "c) Po poważaniu"
+            "b) Z poważaniem"
           ],
           "explanation": "„Z poważaniem” to oficjalne zakończenie listu. Pozostałe wersje nie są formułą listu.",
           "grammar_point": "rejestr-formalny"

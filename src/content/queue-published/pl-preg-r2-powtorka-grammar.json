@@ -16,8 +16,8 @@
           "text": "Dziecko jedzie ze szpitala do domu w ___.",
           "options": [
             "sali porodowej",
-            "foteliku samochodowym",
-            "izbie przyjęć"
+            "izbie przyjęć",
+            "foteliku samochodowym"
           ],
           "answer": "foteliku samochodowym",
           "grammar_point": "slownictwo",
@@ -29,9 +29,9 @@
           "id": "g1-2",
           "text": "Torba jest już ___ i czeka przy drzwiach.",
           "options": [
-            "podpisana",
             "spakowana",
-            "urodzona"
+            "urodzona",
+            "podpisana"
           ],
           "answer": "spakowana",
           "grammar_point": "slownictwo",
@@ -43,9 +43,9 @@
           "id": "g1-3",
           "text": "Kobieta stoi spokojnie i głęboko ___ — tak jak w szkole rodzenia.",
           "options": [
-            "oddycha",
             "przewija",
-            "podpisuje"
+            "podpisuje",
+            "oddycha"
           ],
           "answer": "oddycha",
           "grammar_point": "slownictwo",
@@ -57,9 +57,9 @@
           "id": "g1-4",
           "text": "Po porodzie mama z dzieckiem leży dwa albo trzy dni na ___.",
           "options": [
-            "izbie przyjęć",
             "poczekalni",
-            "oddziale położniczym"
+            "oddziale położniczym",
+            "izbie przyjęć"
           ],
           "answer": "oddziale położniczym",
           "grammar_point": "slownictwo",
@@ -71,9 +71,9 @@
           "id": "g1-5",
           "text": "Mama ___ córkę — zmienia jej pieluchę.",
           "options": [
-            "przewija",
             "kąpie",
-            "usypia"
+            "usypia",
+            "przewija"
           ],
           "answer": "przewija",
           "grammar_point": "slownictwo",
@@ -171,9 +171,9 @@
           "id": "g3-1",
           "text": "Instruktorka: „___ spokojnie, nosem!”",
           "options": [
-            "Oddychać",
+            "Oddycha",
             "Oddychaj",
-            "Oddycha"
+            "Oddychać"
           ],
           "answer": "Oddychaj",
           "grammar_point": "tryb-rozkazujacy",
@@ -183,9 +183,9 @@
           "id": "g3-2",
           "text": "Tomku, ___ mi torbę z przedpokoju!",
           "options": [
-            "podaj",
             "podać",
-            "podajesz"
+            "podajesz",
+            "podaj"
           ],
           "answer": "podaj",
           "grammar_point": "tryb-rozkazujacy"
@@ -194,9 +194,9 @@
           "id": "g3-3",
           "text": "Położna do Agaty i Tomka: „___ od razu, jeśli odejdą wody!”",
           "options": [
-            "Przyjedź",
             "Przyjedźmy",
-            "Przyjedźcie"
+            "Przyjedźcie",
+            "Przyjedź"
           ],
           "answer": "Przyjedźcie",
           "grammar_point": "tryb-rozkazujacy",
@@ -206,9 +206,9 @@
           "id": "g3-4",
           "text": "Kochanie, ___ spokojny, wszystko jest gotowe.",
           "options": [
-            "być",
             "jesteś",
-            "bądź"
+            "bądź",
+            "być"
           ],
           "answer": "bądź",
           "grammar_point": "tryb-rozkazujacy",
@@ -218,8 +218,8 @@
           "id": "g3-5",
           "text": "Nie ___ tak szybko po porodzie!",
           "options": [
-            "wstań",
             "wstawaj",
+            "wstań",
             "wstawać"
           ],
           "answer": "wstawaj",
@@ -230,8 +230,8 @@
           "id": "g3-6",
           "text": "Tylko nie ___ dokumentów!",
           "options": [
-            "zapomnij",
             "zapomnieć",
+            "zapomnij",
             "zapomniałaś"
           ],
           "answer": "zapomnij",
@@ -242,8 +242,8 @@
           "id": "g3-7",
           "text": "Rejestratorka: „___ usiąść i chwilę poczekać”.",
           "options": [
-            "Usiądź",
             "Niech",
+            "Usiądź",
             "Proszę"
           ],
           "answer": "Proszę",
@@ -254,9 +254,9 @@
           "id": "g3-8",
           "text": "Niech pan ___ na korytarzu, zaraz pana zawołamy.",
           "options": [
-            "poczeka",
             "poczekaj",
-            "czekać"
+            "czekać",
+            "poczeka"
           ],
           "answer": "poczeka",
           "grammar_point": "tryb-rozkazujacy",
@@ -266,9 +266,9 @@
           "id": "g3-9",
           "text": "Jesteśmy zmęczeni. ___ krótką przerwę!",
           "options": [
-            "Dawaj zrobimy",
             "Zróbmy",
-            "Zrobić"
+            "Zrobić",
+            "Dawaj zrobimy"
           ],
           "answer": "Zróbmy",
           "grammar_point": "tryb-rozkazujacy",
@@ -286,8 +286,8 @@
           "id": "g4-1",
           "text": "Agata dziękuje ___ za pieluchy.",
           "options": [
-            "siostrę",
             "siostry",
+            "siostrę",
             "siostrze"
           ],
           "answer": "siostrze",
@@ -298,9 +298,9 @@
           "id": "g4-2",
           "text": "Podaj ___ ładowarkę, proszę.",
           "options": [
-            "mi",
+            "ja",
             "mnie",
-            "ja"
+            "mi"
           ],
           "answer": "mi",
           "grammar_point": "celownik",
@@ -310,9 +310,9 @@
           "id": "g4-3",
           "text": "Mama ugotowała zupę ___.",
           "options": [
-            "Tomka",
+            "Tomku",
             "Tomkowi",
-            "Tomku"
+            "Tomka"
           ],
           "answer": "Tomkowi",
           "grammar_point": "celownik"
@@ -321,9 +321,9 @@
           "id": "g4-4",
           "text": "Położna pokazała ___, jak przystawiać córkę do piersi.",
           "options": [
+            "Agaty",
             "Agacie",
-            "Agatę",
-            "Agaty"
+            "Agatę"
           ],
           "answer": "Agacie",
           "grammar_point": "celownik",
@@ -333,9 +333,9 @@
           "id": "g4-5",
           "text": "Przynieś ___ ciepły kocyk.",
           "options": [
-            "dziecko",
+            "dziecku",
             "dziecka",
-            "dziecku"
+            "dziecko"
           ],
           "answer": "dziecku",
           "grammar_point": "celownik"
@@ -344,9 +344,9 @@
           "id": "g4-6",
           "text": "Zadzwoniłam do brata i powiedziałam ___ wszystko.",
           "options": [
-            "bratowi",
             "bratu",
-            "brata"
+            "brata",
+            "bratowi"
           ],
           "answer": "bratu",
           "grammar_point": "celownik",
@@ -356,9 +356,9 @@
           "id": "g4-7",
           "text": "Pomóż ___ w nocy, jest bardzo zmęczona.",
           "options": [
+            "niej",
             "ją",
-            "jej",
-            "niej"
+            "jej"
           ],
           "answer": "jej",
           "grammar_point": "celownik",
@@ -368,8 +368,8 @@
           "id": "g4-8",
           "text": "Zadzwoń ___ wieczorem!",
           "options": [
-            "mi",
             "do mnie",
+            "mi",
             "mnie"
           ],
           "answer": "do mnie",
@@ -380,9 +380,9 @@
           "id": "g4-9",
           "text": "Babcia kupiła prezenty ___ i wnuczce.",
           "options": [
+            "rodzice",
             "rodzicom",
-            "rodziców",
-            "rodzice"
+            "rodziców"
           ],
           "answer": "rodzicom",
           "grammar_point": "celownik",
@@ -392,9 +392,9 @@
           "id": "g4-10",
           "text": "Powiedz ___, że wracamy jutro.",
           "options": [
+            "mamie",
             "dla mamy",
-            "mamę",
-            "mamie"
+            "mamę"
           ],
           "answer": "mamie",
           "grammar_point": "celownik",

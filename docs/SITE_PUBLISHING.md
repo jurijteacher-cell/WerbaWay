@@ -82,6 +82,7 @@ JSON за `CONTENT_SPEC.md`; `?blocks=` посилається на існуюч
 ## 9. Публікація — одним комітом у `main`
 
 ```bash
+python3 scripts/shuffle_options.py <id>        # розкидати позиції правильних відповідей
 python3 scripts/check_answers.py <id>          # 0 ERR
 python3 scripts/check_tags.py --changed        # 0 невідомих тегів
 python3 scripts/check_lecture.py <id>          # структура, цикл граматики, пастки, слухання

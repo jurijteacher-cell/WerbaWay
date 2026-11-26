@@ -56,9 +56,9 @@
           "text": "Dlaczego pani Ewa myśli, że Gdańsk jest lepszy od Krakowa?",
           "answer": "Jest starszy i ma morze, a latem jest spokojniejszy.",
           "options": [
+            "Ma lepsze restauracje i tańsze mieszkania.",
             "Jest starszy i ma morze, a latem jest spokojniejszy.",
-            "Jest większy i ma więcej zabytków.",
-            "Ma lepsze restauracje i tańsze mieszkania."
+            "Jest większy i ma więcej zabytków."
           ],
           "grammar_point": "czytanie",
           "explanation": "Pani Ewa: „Jest starszy niż Kraków i ma morze… jest spokojniejszy i mniej zatłoczony.”"
@@ -68,9 +68,9 @@
           "text": "Co Kasia mówi o Wawelu?",
           "answer": "Że jest ładniejszy niż każdy zamek w Gdańsku.",
           "options": [
-            "Że jest ładniejszy niż każdy zamek w Gdańsku.",
             "Że jest najstarszym zamkiem w Polsce.",
-            "Że jest mniej znany niż zamki w Gdańsku."
+            "Że jest mniej znany niż zamki w Gdańsku.",
+            "Że jest ładniejszy niż każdy zamek w Gdańsku."
           ],
           "grammar_point": "czytanie",
           "explanation": "Kasia: „Wawel jest ładniejszy niż każdy zamek w Gdańsku!”"
@@ -80,9 +80,9 @@
           "text": "Kto jest starszy — syn czy córka pani Ewy?",
           "answer": "syn, Marcin",
           "options": [
+            "są bliźniakami",
             "syn, Marcin",
-            "córka, Zosia",
-            "są bliźniakami"
+            "córka, Zosia"
           ],
           "grammar_point": "czytanie",
           "explanation": "Marcin ma czternaście lat, Zosia dziesięć — Marcin jest starszy."
@@ -93,8 +93,8 @@
           "answer": "Marcin jest spokojniejszy, Zosia jest bardziej towarzyska i zdolniejsza z matematyki.",
           "options": [
             "Marcin jest spokojniejszy, Zosia jest bardziej towarzyska i zdolniejsza z matematyki.",
-            "Oboje są bardzo podobni i spokojni.",
-            "Zosia jest wyższa i starsza niż Marcin."
+            "Zosia jest wyższa i starsza niż Marcin.",
+            "Oboje są bardzo podobni i spokojni."
           ],
           "grammar_point": "czytanie",
           "explanation": "„Marcin jest wyższy i spokojniejszy niż Zosia, ale ona jest bardziej towarzyska i zdolniejsza z matematyki.”"
@@ -105,8 +105,8 @@
           "answer": "Kasia",
           "options": [
             "Kasia",
-            "jej brat",
-            "oboje wygrywają razem"
+            "oboje wygrywają razem",
+            "jej brat"
           ],
           "grammar_point": "czytanie",
           "explanation": "Kasia: „ja jestem lepsza w negocjacjach… to ja wygrywam w domu.”"
@@ -468,31 +468,31 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Kasia: Olena, gdzie dzisiaj jemy lunch? W barze mlecznym czy w nowej restauracji?\n\nOlena: {el1-1} Bar jest tańszy niż restauracja.\n\nKasia: {el1-2} Restauracja jest ładniejsza, a jedzenie ciekawsze.\n\nOlena: {el1-3} Ale w barze jest szybciej, a mamy tylko godzinę.\n\nKasia: {el1-4} Ona zna Gdańsk i Kraków najlepiej z nas wszystkich.\n\nOlena: {el1-5} Ona wybierze coś trzeciego!\n\nKasia: {el1-6} Spróbujmy!\n\nEwa: {el1-7} Dla mnie oba miejsca są tak samo dobre. Idźmy do baru, bo jest bliżej.\n\nKasia: {el1-8} Niech będzie bar.",
       "bank": [
-        "a) Nie zgadzam się.",
-        "b) Może masz rację.",
-        "c) No dobrze, zgadzam się.",
-        "d) Zapytajmy panią Ewę.",
-        "e) Nie wiem, czy to dobry pomysł.",
-        "f) Dziękuję za pytanie.",
-        "g) Dlaczego nie?",
-        "h) Przykro mi, nie mam czasu.",
-        "i) Moim zdaniem bar.",
+        "a) Dlaczego nie?",
+        "b) Przykro mi, nie mam czasu.",
+        "c) Nie wiem, czy to dobry pomysł.",
+        "d) Dziękuję za pytanie.",
+        "e) Nie zgadzam się.",
+        "f) Moim zdaniem bar.",
+        "g) Może masz rację.",
+        "h) No dobrze, zgadzam się.",
+        "i) Zapytajmy panią Ewę.",
         "j) Nie, dziękuję, nie jestem głodna."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "i) Moim zdaniem bar.",
+          "answer": "f) Moim zdaniem bar.",
           "options": [
-            "a) Nie zgadzam się.",
-            "b) Może masz rację.",
-            "c) No dobrze, zgadzam się.",
-            "d) Zapytajmy panią Ewę.",
-            "e) Nie wiem, czy to dobry pomysł.",
-            "f) Dziękuję za pytanie.",
-            "g) Dlaczego nie?",
-            "h) Przykro mi, nie mam czasu.",
-            "i) Moim zdaniem bar.",
+            "a) Dlaczego nie?",
+            "b) Przykro mi, nie mam czasu.",
+            "c) Nie wiem, czy to dobry pomysł.",
+            "d) Dziękuję za pytanie.",
+            "e) Nie zgadzam się.",
+            "f) Moim zdaniem bar.",
+            "g) Może masz rację.",
+            "h) No dobrze, zgadzam się.",
+            "i) Zapytajmy panią Ewę.",
             "j) Nie, dziękuję, nie jestem głodna."
           ],
           "explanation": "Olena wyraża swoją opinię i podaje powód: bar jest tańszy. „Moim zdaniem…” wprowadza opinię.",
@@ -500,17 +500,17 @@
         },
         {
           "id": "el1-2",
-          "answer": "a) Nie zgadzam się.",
+          "answer": "e) Nie zgadzam się.",
           "options": [
-            "a) Nie zgadzam się.",
-            "b) Może masz rację.",
-            "c) No dobrze, zgadzam się.",
-            "d) Zapytajmy panią Ewę.",
-            "e) Nie wiem, czy to dobry pomysł.",
-            "f) Dziękuję za pytanie.",
-            "g) Dlaczego nie?",
-            "h) Przykro mi, nie mam czasu.",
-            "i) Moim zdaniem bar.",
+            "a) Dlaczego nie?",
+            "b) Przykro mi, nie mam czasu.",
+            "c) Nie wiem, czy to dobry pomysł.",
+            "d) Dziękuję za pytanie.",
+            "e) Nie zgadzam się.",
+            "f) Moim zdaniem bar.",
+            "g) Może masz rację.",
+            "h) No dobrze, zgadzam się.",
+            "i) Zapytajmy panią Ewę.",
             "j) Nie, dziękuję, nie jestem głodna."
           ],
           "explanation": "Kasia ma inne zdanie niż Olena i podaje argumenty za restauracją. „Nie zgadzam się” pasuje do jej odpowiedzi.",
@@ -518,17 +518,17 @@
         },
         {
           "id": "el1-3",
-          "answer": "b) Może masz rację.",
+          "answer": "g) Może masz rację.",
           "options": [
-            "a) Nie zgadzam się.",
-            "b) Może masz rację.",
-            "c) No dobrze, zgadzam się.",
-            "d) Zapytajmy panią Ewę.",
-            "e) Nie wiem, czy to dobry pomysł.",
-            "f) Dziękuję za pytanie.",
-            "g) Dlaczego nie?",
-            "h) Przykro mi, nie mam czasu.",
-            "i) Moim zdaniem bar.",
+            "a) Dlaczego nie?",
+            "b) Przykro mi, nie mam czasu.",
+            "c) Nie wiem, czy to dobry pomysł.",
+            "d) Dziękuję za pytanie.",
+            "e) Nie zgadzam się.",
+            "f) Moim zdaniem bar.",
+            "g) Może masz rację.",
+            "h) No dobrze, zgadzam się.",
+            "i) Zapytajmy panią Ewę.",
             "j) Nie, dziękuję, nie jestem głodna."
           ],
           "explanation": "Olena częściowo przyznaje rację Kasi, ale dodaje „ale” z argumentem. „Może masz rację” pasuje do tej struktury.",
@@ -536,17 +536,17 @@
         },
         {
           "id": "el1-4",
-          "answer": "d) Zapytajmy panią Ewę.",
+          "answer": "i) Zapytajmy panią Ewę.",
           "options": [
-            "a) Nie zgadzam się.",
-            "b) Może masz rację.",
-            "c) No dobrze, zgadzam się.",
-            "d) Zapytajmy panią Ewę.",
-            "e) Nie wiem, czy to dobry pomysł.",
-            "f) Dziękuję za pytanie.",
-            "g) Dlaczego nie?",
-            "h) Przykro mi, nie mam czasu.",
-            "i) Moim zdaniem bar.",
+            "a) Dlaczego nie?",
+            "b) Przykro mi, nie mam czasu.",
+            "c) Nie wiem, czy to dobry pomysł.",
+            "d) Dziękuję za pytanie.",
+            "e) Nie zgadzam się.",
+            "f) Moim zdaniem bar.",
+            "g) Może masz rację.",
+            "h) No dobrze, zgadzam się.",
+            "i) Zapytajmy panią Ewę.",
             "j) Nie, dziękuję, nie jestem głodna."
           ],
           "explanation": "Kasia proponuje, żeby ktoś rozstrzygnął spór. „Zapytajmy panią Ewę” pasuje do zdania o jej wiedzy.",
@@ -554,17 +554,17 @@
         },
         {
           "id": "el1-5",
-          "answer": "e) Nie wiem, czy to dobry pomysł.",
+          "answer": "c) Nie wiem, czy to dobry pomysł.",
           "options": [
-            "a) Nie zgadzam się.",
-            "b) Może masz rację.",
-            "c) No dobrze, zgadzam się.",
-            "d) Zapytajmy panią Ewę.",
-            "e) Nie wiem, czy to dobry pomysł.",
-            "f) Dziękuję za pytanie.",
-            "g) Dlaczego nie?",
-            "h) Przykro mi, nie mam czasu.",
-            "i) Moim zdaniem bar.",
+            "a) Dlaczego nie?",
+            "b) Przykro mi, nie mam czasu.",
+            "c) Nie wiem, czy to dobry pomysł.",
+            "d) Dziękuję za pytanie.",
+            "e) Nie zgadzam się.",
+            "f) Moim zdaniem bar.",
+            "g) Może masz rację.",
+            "h) No dobrze, zgadzam się.",
+            "i) Zapytajmy panią Ewę.",
             "j) Nie, dziękuję, nie jestem głodna."
           ],
           "explanation": "Olena ma wątpliwości, bo pani Ewa może wybrać trzecie miejsce. „Nie wiem, czy to dobry pomysł” to grzeczne wyrażenie wątpliwości.",
@@ -572,17 +572,17 @@
         },
         {
           "id": "el1-6",
-          "answer": "g) Dlaczego nie?",
+          "answer": "a) Dlaczego nie?",
           "options": [
-            "a) Nie zgadzam się.",
-            "b) Może masz rację.",
-            "c) No dobrze, zgadzam się.",
-            "d) Zapytajmy panią Ewę.",
-            "e) Nie wiem, czy to dobry pomysł.",
-            "f) Dziękuję za pytanie.",
-            "g) Dlaczego nie?",
-            "h) Przykro mi, nie mam czasu.",
-            "i) Moim zdaniem bar.",
+            "a) Dlaczego nie?",
+            "b) Przykro mi, nie mam czasu.",
+            "c) Nie wiem, czy to dobry pomysł.",
+            "d) Dziękuję za pytanie.",
+            "e) Nie zgadzam się.",
+            "f) Moim zdaniem bar.",
+            "g) Może masz rację.",
+            "h) No dobrze, zgadzam się.",
+            "i) Zapytajmy panią Ewę.",
             "j) Nie, dziękuję, nie jestem głodna."
           ],
           "explanation": "Kasia odpowiada na wątpliwości Oleny i zachęca do próby. „Dlaczego nie?” oznacza „zgadzam się”.",
@@ -590,17 +590,17 @@
         },
         {
           "id": "el1-7",
-          "answer": "f) Dziękuję za pytanie.",
+          "answer": "d) Dziękuję za pytanie.",
           "options": [
-            "a) Nie zgadzam się.",
-            "b) Może masz rację.",
-            "c) No dobrze, zgadzam się.",
-            "d) Zapytajmy panią Ewę.",
-            "e) Nie wiem, czy to dobry pomysł.",
-            "f) Dziękuję za pytanie.",
-            "g) Dlaczego nie?",
-            "h) Przykro mi, nie mam czasu.",
-            "i) Moim zdaniem bar.",
+            "a) Dlaczego nie?",
+            "b) Przykro mi, nie mam czasu.",
+            "c) Nie wiem, czy to dobry pomysł.",
+            "d) Dziękuję za pytanie.",
+            "e) Nie zgadzam się.",
+            "f) Moim zdaniem bar.",
+            "g) Może masz rację.",
+            "h) No dobrze, zgadzam się.",
+            "i) Zapytajmy panią Ewę.",
             "j) Nie, dziękuję, nie jestem głodna."
           ],
           "explanation": "Pani Ewa dziękuje za pytanie, a potem wyraża opinię. To grzeczna reakcja na pytanie koleżanek.",
@@ -608,17 +608,17 @@
         },
         {
           "id": "el1-8",
-          "answer": "c) No dobrze, zgadzam się.",
+          "answer": "h) No dobrze, zgadzam się.",
           "options": [
-            "a) Nie zgadzam się.",
-            "b) Może masz rację.",
-            "c) No dobrze, zgadzam się.",
-            "d) Zapytajmy panią Ewę.",
-            "e) Nie wiem, czy to dobry pomysł.",
-            "f) Dziękuję za pytanie.",
-            "g) Dlaczego nie?",
-            "h) Przykro mi, nie mam czasu.",
-            "i) Moim zdaniem bar.",
+            "a) Dlaczego nie?",
+            "b) Przykro mi, nie mam czasu.",
+            "c) Nie wiem, czy to dobry pomysł.",
+            "d) Dziękuję za pytanie.",
+            "e) Nie zgadzam się.",
+            "f) Moim zdaniem bar.",
+            "g) Może masz rację.",
+            "h) No dobrze, zgadzam się.",
+            "i) Zapytajmy panią Ewę.",
             "j) Nie, dziękuję, nie jestem głodna."
           ],
           "explanation": "Kasia na końcu zgadza się z panią Ewą i wybiera bar. „No dobrze, zgadzam się” pasuje do „Niech będzie bar”.",
@@ -638,8 +638,8 @@
           "id": "el2-1",
           "answer": "a) za",
           "options": [
-            "a) za",
             "b) o",
+            "a) za",
             "c) na"
           ],
           "explanation": "Mówimy „dziękować za coś”. Przyimki „o” i „na” nie pasują do czasownika „dziękować”.",
@@ -649,9 +649,9 @@
           "id": "el2-2",
           "answer": "b) w",
           "options": [
-            "a) o",
+            "c) na",
             "b) w",
-            "c) na"
+            "a) o"
           ],
           "explanation": "Formuła „w sprawie” wprowadza temat listu. Pozostałe przyimki nie tworzą tej formuły.",
           "grammar_point": "rejestr-formalny"
@@ -660,9 +660,9 @@
           "id": "el2-3",
           "answer": "c) niż",
           "options": [
+            "c) niż",
             "a) jak",
-            "b) że",
-            "c) niż"
+            "b) że"
           ],
           "explanation": "Po stopniu wyższym używamy „niż” albo „od”: „tańszy niż”. „Jak” i „że” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -693,9 +693,9 @@
           "id": "el2-6",
           "answer": "a) o",
           "options": [
-            "a) o",
+            "c) w",
             "b) na",
-            "c) w"
+            "a) o"
           ],
           "explanation": "Godzinę podajemy przyimkiem „o”: „o dziesiątej”. „Na dziesiątej” i „w dziesiątej” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -705,8 +705,8 @@
           "answer": "a) czy",
           "options": [
             "a) czy",
-            "b) że",
-            "c) bo"
+            "c) bo",
+            "b) że"
           ],
           "explanation": "W pytaniu z wyborem używamy „czy”: o dziesiątej czy później. „Że” i „bo” nie pasują do pytania o wybór.",
           "grammar_point": "rejestr-formalny"
@@ -716,8 +716,8 @@
           "answer": "b) na",
           "options": [
             "a) o",
-            "b) na",
-            "c) za"
+            "c) za",
+            "b) na"
           ],
           "explanation": "Mówimy „czekać na odpowiedź”. Przyimki „o” i „za” nie pasują do czasownika „czekać”.",
           "grammar_point": "rejestr-formalny"
@@ -726,9 +726,9 @@
           "id": "el2-9",
           "answer": "c) Z góry",
           "options": [
-            "a) Od góry",
+            "c) Z góry",
             "b) Na górze",
-            "c) Z góry"
+            "a) Od góry"
           ],
           "explanation": "„Z góry dziękuję” to stała formuła w e-mailu. Pozostałe wyrażenia mają inne znaczenie.",
           "grammar_point": "rejestr-formalny"

@@ -59,8 +59,8 @@
           "id": "t2-1",
           "answer": "живём",
           "options": [
-            "живём",
             "живёт",
+            "живём",
             "живу́т"
           ],
           "hint": "жить",
@@ -71,9 +71,9 @@
           "id": "t2-2",
           "answer": "рабо́тает",
           "options": [
-            "рабо́тает",
             "рабо́тают",
-            "рабо́таем"
+            "рабо́таем",
+            "рабо́тает"
           ],
           "hint": "работать",
           "grammar_point": "czytanie",
@@ -95,9 +95,9 @@
           "id": "t2-4",
           "answer": "лю́бят",
           "options": [
-            "лю́бят",
+            "лю́бим",
             "лю́бит",
-            "лю́бим"
+            "лю́бят"
           ],
           "hint": "любить",
           "grammar_point": "czytanie",
@@ -119,8 +119,8 @@
           "id": "t2-6",
           "answer": "гото́вим",
           "options": [
-            "гото́вим",
             "гото́вит",
+            "гото́вим",
             "гото́вят"
           ],
           "hint": "готовить",
@@ -256,8 +256,8 @@
           "text": "Они́ ___ в Варша́ве.",
           "answer": "живу́т",
           "options": [
-            "живу́т",
             "живют",
+            "живу́т",
             "живят"
           ],
           "grammar_point": "koniugacja-am-asz",
@@ -269,8 +269,8 @@
           "answer": "живёте",
           "options": [
             "живёте",
-            "живите",
-            "жива́ете"
+            "жива́ете",
+            "живите"
           ],
           "grammar_point": "koniugacja-am-asz",
           "explanation": "вы + жить → живёте."
@@ -280,9 +280,9 @@
           "text": "Роди́тели ___ в Ри́ге.",
           "answer": "живу́т",
           "options": [
-            "живу́т",
             "живёт",
-            "жива́ют"
+            "жива́ют",
+            "живу́т"
           ],
           "grammar_point": "koniugacja-am-asz",
           "explanation": "Parents = они → живут."
@@ -292,8 +292,8 @@
           "text": "Где вы ___?",
           "answer": "живёте",
           "options": [
-            "живёте",
             "живёшь",
+            "живёте",
             "живи́те"
           ],
           "grammar_point": "koniugacja-am-asz",
@@ -304,9 +304,9 @@
           "text": "Мы ___ вме́сте.",
           "answer": "живём",
           "options": [
+            "живу́т",
             "живём",
-            "живёт",
-            "живу́т"
+            "живёт"
           ],
           "grammar_point": "koniugacja-am-asz",
           "explanation": "мы → живём."
@@ -416,9 +416,9 @@
           "text": "(Your friend Davit.) ___ по-ру́сски?",
           "answer": "Ты говори́шь",
           "options": [
-            "Ты говори́шь",
+            "Ты говори́те",
             "Вы говори́те",
-            "Ты говори́те"
+            "Ты говори́шь"
           ],
           "grammar_point": "pan-pani",
           "explanation": "A friend → ты → говоришь."
@@ -428,8 +428,8 @@
           "text": "(Your new boss, a woman.) ___ в Ри́ге?",
           "answer": "Вы живёте",
           "options": [
-            "Вы живёте",
             "Ты живёшь",
+            "Вы живёте",
             "Вы живёшь"
           ],
           "grammar_point": "pan-pani",
@@ -440,9 +440,9 @@
           "text": "(You ask two friends.) ___ смо́трите фильм?",
           "answer": "Вы",
           "options": [
+            "Мы",
             "Вы",
-            "Ты",
-            "Мы"
+            "Ты"
           ],
           "grammar_point": "pan-pani",
           "explanation": "Two people → вы, even if they are friends."
@@ -453,8 +453,8 @@
           "answer": "Вы",
           "options": [
             "Вы",
-            "Ты",
-            "Они́"
+            "Они́",
+            "Ты"
           ],
           "grammar_point": "pan-pani",
           "explanation": "An unknown older person → вы."
@@ -464,9 +464,9 @@
           "text": "(Your sister.) Где ___ рабо́таешь?",
           "answer": "ты",
           "options": [
-            "ты",
             "он",
-            "мы"
+            "мы",
+            "ты"
           ],
           "grammar_point": "pan-pani",
           "explanation": "Family → ты; the ending -ешь also says ты."
@@ -476,9 +476,9 @@
           "text": "(To a shop assistant you don't know.) Вы ___ в магази́не?",
           "answer": "рабо́таете",
           "options": [
-            "рабо́таете",
             "рабо́таешь",
-            "рабо́тают"
+            "рабо́тают",
+            "рабо́таете"
           ],
           "grammar_point": "pan-pani",
           "explanation": "вы + -ете: работаете."
@@ -488,9 +488,9 @@
           "text": "(To mum and dad together.) Ма́ма и па́па, ___ ча́сто смо́трите телеви́зор?",
           "answer": "вы",
           "options": [
+            "я",
             "вы",
-            "ты",
-            "я"
+            "ты"
           ],
           "grammar_point": "pan-pani",
           "explanation": "Two people, even your parents → вы."

@@ -136,8 +136,8 @@
           "text": "Dziewczyny ___ wcześniej, gdyby wiedziały o promocji.",
           "answer": "przyszłyby",
           "options": [
-            "przyszliby",
-            "przyszłyby"
+            "przyszłyby",
+            "przyszliby"
           ],
           "explanation": "Same kobiety — rodzaj niemęskoosobowy: przyszłyby.",
           "grammar_point": "tp-rodzaj"
@@ -147,8 +147,8 @@
           "text": "My z żoną ___ raczej kasę samoobsługową.",
           "answer": "wybralibyśmy",
           "options": [
-            "wybralibyśmy",
-            "wybrałybyśmy"
+            "wybrałybyśmy",
+            "wybralibyśmy"
           ],
           "explanation": "W grupie jest mężczyzna, więc forma męskoosobowa: wybralibyśmy.",
           "grammar_point": "tp-rodzaj"
@@ -158,8 +158,8 @@
           "text": "Te buty ___ mi się bardziej w czarnym kolorze.",
           "answer": "podobałyby",
           "options": [
-            "podobaliby",
-            "podobałyby"
+            "podobałyby",
+            "podobaliby"
           ],
           "explanation": "Rzeczy nigdy nie są męskoosobowe: podobałyby się.",
           "grammar_point": "tp-rodzaj"
@@ -275,8 +275,8 @@
           "text": "___ jutro będzie promocja, kupię od razu dwa opakowania.",
           "answer": "Jeśli",
           "options": [
-            "Jeśli",
-            "Gdyby"
+            "Gdyby",
+            "Jeśli"
           ],
           "explanation": "Realny plan na jutro. Po „jeśli” stoi czas przyszły.",
           "grammar_point": "jesli-vs-gdyby"
@@ -297,8 +297,8 @@
           "text": "___ nie zgubił paragonu, cała reklamacja byłaby prostsza.",
           "answer": "Gdybyś",
           "options": [
-            "Jeślibyś",
-            "Gdybyś"
+            "Gdybyś",
+            "Jeślibyś"
           ],
           "explanation": "Paragon już zginął, więc mówimy o czymś, czego nie da się cofnąć.",
           "grammar_point": "jesli-vs-gdyby"
@@ -439,32 +439,32 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Piotr: Dzień dobry. Wczoraj kupiłem u Państwa czajnik, ale nie chce się włączyć. {el1-1}\n\nPracownica: {el1-2}\n\nPiotr: {el1-3} Proszę.\n\nPracownica: Dziękuję. {el1-4}\n\nPiotr: {el1-5}\n\nPracownica: Oczywiście. Zwrot dostanie Pan na kartę, którą Pan płacił. {el1-6}\n\nPiotr: Dobrze. {el1-7}\n\nPracownica: Zwykle trzy do pięciu dni roboczych.\n\nPiotr: {el1-8}\n\nPracownica: Proszę bardzo, do widzenia.",
       "bank": [
-        "a) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
-        "b) Czy zapakować to na prezent?",
+        "a) Proszę podpisać tutaj.",
+        "b) Chciałbym złożyć reklamację.",
         "c) Bardzo mi przykro. Czy ma Pan paragon?",
-        "d) Proszę podpisać tutaj.",
-        "e) Chciałbym złożyć reklamację.",
-        "f) Niestety promocja już się skończyła.",
-        "g) Tak, mam go ze sobą.",
+        "d) Czy zapakować to na prezent?",
+        "e) Mogę wymienić towar na nowy albo oddać pieniądze.",
+        "f) Ile czasu trzeba czekać na pieniądze?",
+        "g) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
         "h) Rozumiem, bardzo dziękuję za pomoc.",
-        "i) Mogę wymienić towar na nowy albo oddać pieniądze.",
-        "j) Ile czasu trzeba czekać na pieniądze?"
+        "i) Niestety promocja już się skończyła.",
+        "j) Tak, mam go ze sobą."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "e) Chciałbym złożyć reklamację.",
+          "answer": "b) Chciałbym złożyć reklamację.",
           "options": [
-            "a) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
-            "b) Czy zapakować to na prezent?",
+            "a) Proszę podpisać tutaj.",
+            "b) Chciałbym złożyć reklamację.",
             "c) Bardzo mi przykro. Czy ma Pan paragon?",
-            "d) Proszę podpisać tutaj.",
-            "e) Chciałbym złożyć reklamację.",
-            "f) Niestety promocja już się skończyła.",
-            "g) Tak, mam go ze sobą.",
+            "d) Czy zapakować to na prezent?",
+            "e) Mogę wymienić towar na nowy albo oddać pieniądze.",
+            "f) Ile czasu trzeba czekać na pieniądze?",
+            "g) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
             "h) Rozumiem, bardzo dziękuję za pomoc.",
-            "i) Mogę wymienić towar na nowy albo oddać pieniądze.",
-            "j) Ile czasu trzeba czekać na pieniądze?"
+            "i) Niestety promocja już się skończyła.",
+            "j) Tak, mam go ze sobą."
           ],
           "explanation": "Klient mówi, po co przyszedł: towar jest wadliwy, więc składa reklamację. To zwykła formuła w sklepie.",
           "grammar_point": "slownictwo"
@@ -473,106 +473,106 @@
           "id": "el1-2",
           "answer": "c) Bardzo mi przykro. Czy ma Pan paragon?",
           "options": [
-            "a) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
-            "b) Czy zapakować to na prezent?",
+            "a) Proszę podpisać tutaj.",
+            "b) Chciałbym złożyć reklamację.",
             "c) Bardzo mi przykro. Czy ma Pan paragon?",
-            "d) Proszę podpisać tutaj.",
-            "e) Chciałbym złożyć reklamację.",
-            "f) Niestety promocja już się skończyła.",
-            "g) Tak, mam go ze sobą.",
+            "d) Czy zapakować to na prezent?",
+            "e) Mogę wymienić towar na nowy albo oddać pieniądze.",
+            "f) Ile czasu trzeba czekać na pieniądze?",
+            "g) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
             "h) Rozumiem, bardzo dziękuję za pomoc.",
-            "i) Mogę wymienić towar na nowy albo oddać pieniądze.",
-            "j) Ile czasu trzeba czekać na pieniądze?"
+            "i) Niestety promocja już się skończyła.",
+            "j) Tak, mam go ze sobą."
           ],
           "explanation": "Pracownica okazuje współczucie i prosi o dowód zakupu. Bez paragonu trudno przyjąć reklamację.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "g) Tak, mam go ze sobą.",
+          "answer": "j) Tak, mam go ze sobą.",
           "options": [
-            "a) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
-            "b) Czy zapakować to na prezent?",
+            "a) Proszę podpisać tutaj.",
+            "b) Chciałbym złożyć reklamację.",
             "c) Bardzo mi przykro. Czy ma Pan paragon?",
-            "d) Proszę podpisać tutaj.",
-            "e) Chciałbym złożyć reklamację.",
-            "f) Niestety promocja już się skończyła.",
-            "g) Tak, mam go ze sobą.",
+            "d) Czy zapakować to na prezent?",
+            "e) Mogę wymienić towar na nowy albo oddać pieniądze.",
+            "f) Ile czasu trzeba czekać na pieniądze?",
+            "g) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
             "h) Rozumiem, bardzo dziękuję za pomoc.",
-            "i) Mogę wymienić towar na nowy albo oddać pieniądze.",
-            "j) Ile czasu trzeba czekać na pieniądze?"
+            "i) Niestety promocja już się skończyła.",
+            "j) Tak, mam go ze sobą."
           ],
           "explanation": "To odpowiedź na pytanie o paragon. Zaraz po niej Piotr mówi „Proszę”, czyli podaje dokument.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "i) Mogę wymienić towar na nowy albo oddać pieniądze.",
+          "answer": "e) Mogę wymienić towar na nowy albo oddać pieniądze.",
           "options": [
-            "a) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
-            "b) Czy zapakować to na prezent?",
+            "a) Proszę podpisać tutaj.",
+            "b) Chciałbym złożyć reklamację.",
             "c) Bardzo mi przykro. Czy ma Pan paragon?",
-            "d) Proszę podpisać tutaj.",
-            "e) Chciałbym złożyć reklamację.",
-            "f) Niestety promocja już się skończyła.",
-            "g) Tak, mam go ze sobą.",
+            "d) Czy zapakować to na prezent?",
+            "e) Mogę wymienić towar na nowy albo oddać pieniądze.",
+            "f) Ile czasu trzeba czekać na pieniądze?",
+            "g) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
             "h) Rozumiem, bardzo dziękuję za pomoc.",
-            "i) Mogę wymienić towar na nowy albo oddać pieniądze.",
-            "j) Ile czasu trzeba czekać na pieniądze?"
+            "i) Niestety promocja już się skończyła.",
+            "j) Tak, mam go ze sobą."
           ],
           "explanation": "Pracownica przedstawia dwie możliwości po reklamacji. Pytanie o prezent dotyczy zupełnie innej sytuacji.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "a) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
+          "answer": "g) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
           "options": [
-            "a) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
-            "b) Czy zapakować to na prezent?",
+            "a) Proszę podpisać tutaj.",
+            "b) Chciałbym złożyć reklamację.",
             "c) Bardzo mi przykro. Czy ma Pan paragon?",
-            "d) Proszę podpisać tutaj.",
-            "e) Chciałbym złożyć reklamację.",
-            "f) Niestety promocja już się skończyła.",
-            "g) Tak, mam go ze sobą.",
+            "d) Czy zapakować to na prezent?",
+            "e) Mogę wymienić towar na nowy albo oddać pieniądze.",
+            "f) Ile czasu trzeba czekać na pieniądze?",
+            "g) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
             "h) Rozumiem, bardzo dziękuję za pomoc.",
-            "i) Mogę wymienić towar na nowy albo oddać pieniądze.",
-            "j) Ile czasu trzeba czekać na pieniądze?"
+            "i) Niestety promocja już się skończyła.",
+            "j) Tak, mam go ze sobą."
           ],
           "explanation": "Klient wybiera jedną z dwóch propozycji i robi to grzecznie („wolałbym”). Dlatego pracownica odpowiada „Oczywiście”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "d) Proszę podpisać tutaj.",
+          "answer": "a) Proszę podpisać tutaj.",
           "options": [
-            "a) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
-            "b) Czy zapakować to na prezent?",
+            "a) Proszę podpisać tutaj.",
+            "b) Chciałbym złożyć reklamację.",
             "c) Bardzo mi przykro. Czy ma Pan paragon?",
-            "d) Proszę podpisać tutaj.",
-            "e) Chciałbym złożyć reklamację.",
-            "f) Niestety promocja już się skończyła.",
-            "g) Tak, mam go ze sobą.",
+            "d) Czy zapakować to na prezent?",
+            "e) Mogę wymienić towar na nowy albo oddać pieniądze.",
+            "f) Ile czasu trzeba czekać na pieniądze?",
+            "g) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
             "h) Rozumiem, bardzo dziękuję za pomoc.",
-            "i) Mogę wymienić towar na nowy albo oddać pieniądze.",
-            "j) Ile czasu trzeba czekać na pieniądze?"
+            "i) Niestety promocja już się skończyła.",
+            "j) Tak, mam go ze sobą."
           ],
           "explanation": "Przy zwrocie pieniędzy trzeba często podpisać formularz. To krótka prośba skierowana do klienta.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "j) Ile czasu trzeba czekać na pieniądze?",
+          "answer": "f) Ile czasu trzeba czekać na pieniądze?",
           "options": [
-            "a) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
-            "b) Czy zapakować to na prezent?",
+            "a) Proszę podpisać tutaj.",
+            "b) Chciałbym złożyć reklamację.",
             "c) Bardzo mi przykro. Czy ma Pan paragon?",
-            "d) Proszę podpisać tutaj.",
-            "e) Chciałbym złożyć reklamację.",
-            "f) Niestety promocja już się skończyła.",
-            "g) Tak, mam go ze sobą.",
+            "d) Czy zapakować to na prezent?",
+            "e) Mogę wymienić towar na nowy albo oddać pieniądze.",
+            "f) Ile czasu trzeba czekać na pieniądze?",
+            "g) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
             "h) Rozumiem, bardzo dziękuję za pomoc.",
-            "i) Mogę wymienić towar na nowy albo oddać pieniądze.",
-            "j) Ile czasu trzeba czekać na pieniądze?"
+            "i) Niestety promocja już się skończyła.",
+            "j) Tak, mam go ze sobą."
           ],
           "explanation": "Piotr pyta o czas oczekiwania. Pracownica odpowiada: „Zwykle trzy do pięciu dni roboczych”.",
           "grammar_point": "slownictwo"
@@ -581,16 +581,16 @@
           "id": "el1-8",
           "answer": "h) Rozumiem, bardzo dziękuję za pomoc.",
           "options": [
-            "a) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
-            "b) Czy zapakować to na prezent?",
+            "a) Proszę podpisać tutaj.",
+            "b) Chciałbym złożyć reklamację.",
             "c) Bardzo mi przykro. Czy ma Pan paragon?",
-            "d) Proszę podpisać tutaj.",
-            "e) Chciałbym złożyć reklamację.",
-            "f) Niestety promocja już się skończyła.",
-            "g) Tak, mam go ze sobą.",
+            "d) Czy zapakować to na prezent?",
+            "e) Mogę wymienić towar na nowy albo oddać pieniądze.",
+            "f) Ile czasu trzeba czekać na pieniądze?",
+            "g) Wolałbym zwrot pieniędzy, jeśli to możliwe.",
             "h) Rozumiem, bardzo dziękuję za pomoc.",
-            "i) Mogę wymienić towar na nowy albo oddać pieniądze.",
-            "j) Ile czasu trzeba czekać na pieniądze?"
+            "i) Niestety promocja już się skończyła.",
+            "j) Tak, mam go ze sobą."
           ],
           "explanation": "Klient kończy rozmowę uprzejmym podziękowaniem. Informacja o końcu promocji nie pasuje do zwrotu towaru.",
           "grammar_point": "slownictwo"
@@ -609,8 +609,8 @@
           "id": "el2-1",
           "answer": "c) złożyć",
           "options": [
-            "a) wykonać",
             "b) dać",
+            "a) wykonać",
             "c) złożyć"
           ],
           "explanation": "Mówimy „złożyć reklamację”. „Wykonać reklamację” i „dać reklamację” nie są naturalnymi połączeniami.",
@@ -620,8 +620,8 @@
           "id": "el2-2",
           "answer": "a) od",
           "options": [
-            "a) od",
             "b) z",
+            "a) od",
             "c) po"
           ],
           "explanation": "„Od dnia dostawy” oznacza, że wada trwa od początku. „Z dnia dostawy” i „po dniu dostawy” nie pasują do zdania.",
@@ -631,9 +631,9 @@
           "id": "el2-3",
           "answer": "c) regulaminem",
           "options": [
-            "a) regułą",
             "b) regulacją",
-            "c) regulaminem"
+            "c) regulaminem",
+            "a) regułą"
           ],
           "explanation": "Sklep ma „regulamin”, czyli zasady dotyczące zwrotów. „Reguła” i „regulacja” brzmią ogólnie i nie łączą się z „sklepu”.",
           "grammar_point": "rejestr-formalny"
@@ -642,9 +642,9 @@
           "id": "el2-4",
           "answer": "a) przesyłam",
           "options": [
-            "a) przesyłam",
+            "c) przywożę",
             "b) przekładam",
-            "c) przywożę"
+            "a) przesyłam"
           ],
           "explanation": "W e-mailu coś „przesyłamy” w załączniku. „Przekładać” i „przywozić” dotyczą innych czynności.",
           "grammar_point": "rejestr-formalny"
@@ -653,9 +653,9 @@
           "id": "el2-5",
           "answer": "b) rozpatrzenie",
           "options": [
-            "a) rozpoczęcie",
             "b) rozpatrzenie",
-            "c) rozliczenie"
+            "c) rozliczenie",
+            "a) rozpoczęcie"
           ],
           "explanation": "Sklep „rozpatruje” reklamację, czyli sprawdza ją i podejmuje decyzję. Pozostałe słowa nie pasują do tej sytuacji.",
           "grammar_point": "rejestr-formalny"
@@ -664,9 +664,9 @@
           "id": "el2-6",
           "answer": "b) zwrot",
           "options": [
+            "c) odwrót",
             "a) powrót",
-            "b) zwrot",
-            "c) odwrót"
+            "b) zwrot"
           ],
           "explanation": "Stała fraza to „zwrot pieniędzy”. „Powrót pieniędzy” i „odwrót pieniędzy” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -676,8 +676,8 @@
           "answer": "a) zgodzić",
           "options": [
             "a) zgodzić",
-            "b) zadowolić",
-            "c) przyzwyczaić"
+            "c) przyzwyczaić",
+            "b) zadowolić"
           ],
           "explanation": "Mówimy „zgodzić się na coś”. „Zadowolić się na wymianę” i „przyzwyczaić się na wymianę” nie istnieją.",
           "grammar_point": "rejestr-formalny"
@@ -686,9 +686,9 @@
           "id": "el2-8",
           "answer": "c) na",
           "options": [
-            "a) o",
+            "c) na",
             "b) w",
-            "c) na"
+            "a) o"
           ],
           "explanation": "Mówimy „zależy mi na czymś”. „O” i „w” nie pasują do tego czasownika.",
           "grammar_point": "rejestr-formalny"
@@ -697,9 +697,9 @@
           "id": "el2-9",
           "answer": "c) Z góry",
           "options": [
-            "a) Z dołu",
             "b) Z boku",
-            "c) Z góry"
+            "c) Z góry",
+            "a) Z dołu"
           ],
           "explanation": "„Z góry dziękuję” to stałe wyrażenie, którym dziękujemy przed otrzymaniem pomocy. Pozostałe warianty nie są używane w listach.",
           "grammar_point": "rejestr-formalny"
@@ -708,9 +708,9 @@
           "id": "el2-10",
           "answer": "c) Z poważaniem",
           "options": [
-            "a) Cześć",
             "b) Na razie",
-            "c) Z poważaniem"
+            "c) Z poważaniem",
+            "a) Cześć"
           ],
           "explanation": "„Z poważaniem” jest właściwe w e-mailu do sklepu. „Cześć” i „Na razie” są zbyt swobodne.",
           "grammar_point": "rejestr-formalny"

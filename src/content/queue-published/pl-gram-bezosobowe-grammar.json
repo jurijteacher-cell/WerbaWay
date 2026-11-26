@@ -67,9 +67,9 @@
           "id": "g1-1",
           "text": "Wczoraj w biurze ___ (zrobić) generalne porządki.",
           "options": [
-            "zrobiło",
+            "zrobione",
             "zrobiono",
-            "zrobione"
+            "zrobiło"
           ],
           "answer": "zrobiono",
           "explanation": "zrobiony → zrobiono. Bez podmiotu nie ma formy „zrobiło”.",
@@ -79,9 +79,9 @@
           "id": "g1-2",
           "text": "O dziewiątej ___ (podać) tort.",
           "options": [
-            "podano",
+            "podało",
             "podane",
-            "podało"
+            "podano"
           ],
           "answer": "podano",
           "explanation": "podany → podano.",
@@ -91,9 +91,9 @@
           "id": "g1-3",
           "text": "Sklep ___ (zamknąć) wcześniej z powodu awarii.",
           "options": [
-            "zamkniono",
             "zamknęło",
-            "zamknięto"
+            "zamknięto",
+            "zamkniono"
           ],
           "answer": "zamknięto",
           "explanation": "zamknięty → zamknięto: -ty daje -to.",
@@ -103,8 +103,8 @@
           "id": "g1-4",
           "text": "Do sali ___ (przynieść) dodatkowe krzesła.",
           "options": [
-            "przyniesiono",
-            "przyniosono"
+            "przyniosono",
+            "przyniesiono"
           ],
           "answer": "przyniesiono",
           "explanation": "przyniesiony → przyniesiono (o → e jak w imiesłowie).",
@@ -114,9 +114,9 @@
           "id": "g1-5",
           "text": "Moich kluczy nie ___ (znaleźć) do dziś.",
           "options": [
+            "znaleźono",
             "znalazło",
-            "znaleziono",
-            "znaleźono"
+            "znaleziono"
           ],
           "answer": "znaleziono",
           "explanation": "znaleziony → znaleziono.",
@@ -137,9 +137,9 @@
           "id": "g1-7",
           "text": "Do samochodu ___ (wziąć) tylko jedną walizkę.",
           "options": [
-            "wziąto",
             "wzięło",
-            "wzięto"
+            "wzięto",
+            "wziąto"
           ],
           "answer": "wzięto",
           "explanation": "wzięty → wzięto.",
@@ -291,8 +291,8 @@
           "id": "g4-1",
           "text": "Ten obraz ___ przez Matejkę.",
           "options": [
-            "namalowano",
-            "został namalowany"
+            "został namalowany",
+            "namalowano"
           ],
           "answer": "został namalowany",
           "explanation": "Jest wykonawca z „przez” — tylko strona bierna.",
@@ -302,8 +302,8 @@
           "id": "g4-2",
           "text": "W naszym mieście ___ nowy basen.",
           "options": [
-            "otwarto",
-            "otwarty"
+            "otwarty",
+            "otwarto"
           ],
           "answer": "otwarto",
           "explanation": "Samo „otwarty” bez czasownika to kalka z ukraińskiego nagłówka.",
@@ -335,8 +335,8 @@
           "id": "g4-5",
           "text": "Kiedy przyszedłem, w kuchni jeszcze ___.",
           "options": [
-            "gotowało",
-            "gotowano"
+            "gotowano",
+            "gotowało"
           ],
           "answer": "gotowano",
           "explanation": "Bez podmiotu: gotowano.",
@@ -346,8 +346,8 @@
           "id": "g4-6",
           "text": "Podobno w przyszłym roku ___ ceny biletów.",
           "options": [
-            "podniosą",
-            "podniesiono"
+            "podniesiono",
+            "podniosą"
           ],
           "answer": "podniosą",
           "explanation": "Przyszłość: 3. osoba liczby mnogiej, nie forma na -no.",
@@ -641,8 +641,8 @@
           "id": "g9-1",
           "text": "W Polsce na powitanie zwykle ___ sobie rękę.",
           "options": [
-            "podano",
             "podaje się",
+            "podano",
             "zostało podane"
           ],
           "answer": "podaje się",
@@ -664,8 +664,8 @@
           "id": "g9-3",
           "text": "Wczoraj na zebraniu ___ nowego kierownika.",
           "options": [
-            "wybrany",
             "wybrało się",
+            "wybrany",
             "wybrano"
           ],
           "answer": "wybrano",
@@ -676,8 +676,8 @@
           "id": "g9-4",
           "text": "Tu ___ parkować, to miejsce dla karetki.",
           "options": [
-            "nie da się",
-            "nie wolno"
+            "nie wolno",
+            "nie da się"
           ],
           "answer": "nie wolno",
           "explanation": "Zakaz.",
@@ -687,8 +687,8 @@
           "id": "g9-5",
           "text": "Spotkanie ___ przez dyrektora.",
           "options": [
-            "odwołano",
-            "zostało odwołane"
+            "zostało odwołane",
+            "odwołano"
           ],
           "answer": "zostało odwołane",
           "explanation": "Jest „przez” — strona bierna.",
@@ -709,8 +709,8 @@
           "id": "g9-7",
           "text": "Żeby wejść do budynku, ___ pokazać przepustkę.",
           "options": [
-            "należy",
-            "należy się"
+            "należy się",
+            "należy"
           ],
           "answer": "należy",
           "explanation": "Należy + bezokolicznik = trzeba. „Należy się” znaczy coś innego: komuś się coś należy.",

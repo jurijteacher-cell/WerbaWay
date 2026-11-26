@@ -118,9 +118,9 @@
           "id": "g3-1",
           "text": "Mój brat dobrze ___ po niemiecku.",
           "options": [
-            "mówi",
             "mówa",
-            "mówie"
+            "mówie",
+            "mówi"
           ],
           "answer": "mówi",
           "explanation": "Mówić: grupa -ę, -isz, więc on mówi.",
@@ -131,8 +131,8 @@
           "text": "Często ___ na imprezach?",
           "options": [
             "tańczysz",
-            "tańczisz",
-            "tańczesz"
+            "tańczesz",
+            "tańczisz"
           ],
           "answer": "tańczysz",
           "explanation": "Po cz piszemy -y-: tańczysz.",
@@ -143,8 +143,8 @@
           "text": "Oni ___ się grać na skrzypcach.",
           "options": [
             "uczą",
-            "uczają",
-            "uczysz"
+            "uczysz",
+            "uczają"
           ],
           "answer": "uczą",
           "explanation": "Uczyć się: oni uczą się.",
@@ -154,9 +154,9 @@
           "id": "g3-4",
           "text": "Bardzo ___ długie spacery.",
           "options": [
+            "lubisz",
             "lubię",
-            "lubiem",
-            "lubisz"
+            "lubiem"
           ],
           "answer": "lubię",
           "explanation": "Lubić: ja lubię, końcówka -ę.",
@@ -167,8 +167,8 @@
           "text": "Kasia codziennie ___ w lesie.",
           "options": [
             "biega",
-            "biegi",
-            "biegie"
+            "biegie",
+            "biegi"
           ],
           "answer": "biega",
           "explanation": "-ać zwykle daje -am, -asz: ona biega.",
@@ -178,8 +178,8 @@
           "id": "g3-6",
           "text": "Czy wy ___ w każdy piątek?",
           "options": [
-            "trenujecie",
             "trenowacie",
+            "trenujecie",
             "trenicie"
           ],
           "answer": "trenujecie",
@@ -203,9 +203,9 @@
           "id": "g4-1",
           "text": "Nie ___ jeździć na nartach, ale chcę się nauczyć.",
           "options": [
-            "umiem",
+            "lubię",
             "mogę",
-            "lubię"
+            "umiem"
           ],
           "answer": "umiem",
           "explanation": "Nie mam tej umiejętności, więc nie umiem.",
@@ -227,9 +227,9 @@
           "id": "g4-3",
           "text": "___ grać w planszówki: to mój ulubiony sposób na wieczór.",
           "options": [
+            "Mogę",
             "Lubię",
-            "Umiem",
-            "Mogę"
+            "Umiem"
           ],
           "answer": "Lubię",
           "explanation": "Coś sprawia mi przyjemność, więc lubię.",
@@ -239,9 +239,9 @@
           "id": "g4-4",
           "text": "W przyszłym roku ___ nauczyć się gotować po włosku.",
           "options": [
-            "chcę",
             "umiem",
-            "mogę"
+            "mogę",
+            "chcę"
           ],
           "answer": "chcę",
           "explanation": "To plan na przyszłość, więc chcę.",
@@ -263,9 +263,9 @@
           "id": "g4-6",
           "text": "Czy ___ tu grać w piłkę? — Tak, to boisko jest dla wszystkich.",
           "options": [
-            "możemy",
+            "lubimy",
             "umiemy",
-            "lubimy"
+            "możemy"
           ],
           "answer": "możemy",
           "explanation": "Pytamy o zgodę, więc możemy.",
@@ -360,9 +360,9 @@
           "id": "g6-1",
           "text": "Codziennie ___ e-maile do klientów. (ja, pisać)",
           "options": [
-            "piszę",
             "pisam",
-            "pisuję"
+            "pisuję",
+            "piszę"
           ],
           "answer": "piszę",
           "explanation": "Pisać: ja piszę, ty piszesz.",
@@ -372,8 +372,8 @@
           "id": "g6-2",
           "text": "W lecie często ___ na rowerze. (ja, jeździć)",
           "options": [
-            "jeżdżę",
             "jeździę",
+            "jeżdżę",
             "jeżdżam"
           ],
           "answer": "jeżdżę",
@@ -385,8 +385,8 @@
           "text": "Moje dzieci zawsze ___ dużo słodyczy.",
           "options": [
             "jedzą",
-            "jeją",
-            "jemią"
+            "jemią",
+            "jeją"
           ],
           "answer": "jedzą",
           "explanation": "Jeść: ja jem, ale oni jedzą.",
@@ -396,9 +396,9 @@
           "id": "g6-4",
           "text": "W wolnym czasie ___ seriale.",
           "options": [
-            "oglądam",
             "patrzę",
-            "widzę"
+            "widzę",
+            "oglądam"
           ],
           "answer": "oglądam",
           "explanation": "Serial, film, mecz: oglądać.",
@@ -408,9 +408,9 @@
           "id": "g6-5",
           "text": "Dwa razy w tygodniu chodzę ___ basen.",
           "options": [
+            "po",
             "na",
-            "w",
-            "po"
+            "w"
           ],
           "answer": "na",
           "explanation": "Basen, siłownia, trening: chodzić na.",
@@ -420,9 +420,9 @@
           "id": "g6-6",
           "text": "___ ciekawe hobby: robię zdjęcia ptaków.",
           "options": [
-            "Mam",
             "U mnie jest",
-            "Jestem"
+            "Jestem",
+            "Mam"
           ],
           "answer": "Mam",
           "explanation": "Gdy coś mamy, mówimy: mieć.",
@@ -499,31 +499,31 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Recepcjonistka: Szkoła muzyczna „Rytm”, dzień dobry.\n\nTomek: Dzień dobry. Nazywam się Tomek. {el1-1} Chcę się zapisać na lekcje perkusji.\n\nRecepcjonistka: {el1-2} Czy grał pan już kiedyś?\n\nTomek: Nie, ale od roku uczę się sam w domu. {el1-3}\n\nRecepcjonistka: {el1-4} Mamy wolne miejsce we wtorek o osiemnastej.\n\nTomek: {el1-5} Pracuję do szesnastej, więc mogę przyjść.\n\nRecepcjonistka: Lekcja trwa godzinę i kosztuje sto złotych.\n\nTomek: {el1-6} Czy mogę najpierw przyjść na jedną lekcję próbną?\n\nRecepcjonistka: {el1-7} Pierwsza lekcja jest bezpłatna.\n\nTomek: Wspaniale! Czy mam przynieść pałeczki?\n\nRecepcjonistka: Nie trzeba, mamy je w szkole. {el1-8}",
       "bank": [
-        "a) Ale jeszcze nie umiem grać szybko.",
+        "a) Do zobaczenia we wtorek!",
         "b) To nie szkodzi, zaczynamy od początku.",
         "c) Bardzo dobrze, to świetny instrument.",
-        "d) Dzwonię w sprawie lekcji.",
-        "e) Niestety nie ma już miejsc.",
-        "f) Do zobaczenia we wtorek!",
+        "d) Ale jeszcze nie umiem grać szybko.",
+        "e) To dobry termin dla mnie.",
+        "f) Niestety nie ma już miejsc.",
         "g) Oczywiście, to możliwe.",
         "h) Hm, to dość drogo.",
-        "i) To dobry termin dla mnie.",
+        "i) Dzwonię w sprawie lekcji.",
         "j) Przepraszam, pomyliłem numer."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "d) Dzwonię w sprawie lekcji.",
+          "answer": "i) Dzwonię w sprawie lekcji.",
           "options": [
-            "a) Ale jeszcze nie umiem grać szybko.",
+            "a) Do zobaczenia we wtorek!",
             "b) To nie szkodzi, zaczynamy od początku.",
             "c) Bardzo dobrze, to świetny instrument.",
-            "d) Dzwonię w sprawie lekcji.",
-            "e) Niestety nie ma już miejsc.",
-            "f) Do zobaczenia we wtorek!",
+            "d) Ale jeszcze nie umiem grać szybko.",
+            "e) To dobry termin dla mnie.",
+            "f) Niestety nie ma już miejsc.",
             "g) Oczywiście, to możliwe.",
             "h) Hm, to dość drogo.",
-            "i) To dobry termin dla mnie.",
+            "i) Dzwonię w sprawie lekcji.",
             "j) Przepraszam, pomyliłem numer."
           ],
           "explanation": "Tak mówimy przez telefon, gdy chcemy powiedzieć, po co dzwonimy. Następne zdanie wyjaśnia, o jaką lekcję chodzi.",
@@ -533,15 +533,15 @@
           "id": "el1-2",
           "answer": "c) Bardzo dobrze, to świetny instrument.",
           "options": [
-            "a) Ale jeszcze nie umiem grać szybko.",
+            "a) Do zobaczenia we wtorek!",
             "b) To nie szkodzi, zaczynamy od początku.",
             "c) Bardzo dobrze, to świetny instrument.",
-            "d) Dzwonię w sprawie lekcji.",
-            "e) Niestety nie ma już miejsc.",
-            "f) Do zobaczenia we wtorek!",
+            "d) Ale jeszcze nie umiem grać szybko.",
+            "e) To dobry termin dla mnie.",
+            "f) Niestety nie ma już miejsc.",
             "g) Oczywiście, to możliwe.",
             "h) Hm, to dość drogo.",
-            "i) To dobry termin dla mnie.",
+            "i) Dzwonię w sprawie lekcji.",
             "j) Przepraszam, pomyliłem numer."
           ],
           "explanation": "Recepcjonistka reaguje na to, że Tomek chce grać na perkusji. „Przepraszam, pomyliłem numer” nie pasuje, bo Tomek dzwoni w dobre miejsce.",
@@ -549,17 +549,17 @@
         },
         {
           "id": "el1-3",
-          "answer": "a) Ale jeszcze nie umiem grać szybko.",
+          "answer": "d) Ale jeszcze nie umiem grać szybko.",
           "options": [
-            "a) Ale jeszcze nie umiem grać szybko.",
+            "a) Do zobaczenia we wtorek!",
             "b) To nie szkodzi, zaczynamy od początku.",
             "c) Bardzo dobrze, to świetny instrument.",
-            "d) Dzwonię w sprawie lekcji.",
-            "e) Niestety nie ma już miejsc.",
-            "f) Do zobaczenia we wtorek!",
+            "d) Ale jeszcze nie umiem grać szybko.",
+            "e) To dobry termin dla mnie.",
+            "f) Niestety nie ma już miejsc.",
             "g) Oczywiście, to możliwe.",
             "h) Hm, to dość drogo.",
-            "i) To dobry termin dla mnie.",
+            "i) Dzwonię w sprawie lekcji.",
             "j) Przepraszam, pomyliłem numer."
           ],
           "explanation": "Tomek mówi o swoim poziomie. Słowo „ale” łączy się ze zdaniem, że uczy się sam od roku.",
@@ -569,15 +569,15 @@
           "id": "el1-4",
           "answer": "b) To nie szkodzi, zaczynamy od początku.",
           "options": [
-            "a) Ale jeszcze nie umiem grać szybko.",
+            "a) Do zobaczenia we wtorek!",
             "b) To nie szkodzi, zaczynamy od początku.",
             "c) Bardzo dobrze, to świetny instrument.",
-            "d) Dzwonię w sprawie lekcji.",
-            "e) Niestety nie ma już miejsc.",
-            "f) Do zobaczenia we wtorek!",
+            "d) Ale jeszcze nie umiem grać szybko.",
+            "e) To dobry termin dla mnie.",
+            "f) Niestety nie ma już miejsc.",
             "g) Oczywiście, to możliwe.",
             "h) Hm, to dość drogo.",
-            "i) To dobry termin dla mnie.",
+            "i) Dzwonię w sprawie lekcji.",
             "j) Przepraszam, pomyliłem numer."
           ],
           "explanation": "To miła reakcja na to, że Tomek jest początkujący. Zdanie „Niestety nie ma już miejsc” przeczy temu, że zaraz jest propozycja terminu.",
@@ -585,17 +585,17 @@
         },
         {
           "id": "el1-5",
-          "answer": "i) To dobry termin dla mnie.",
+          "answer": "e) To dobry termin dla mnie.",
           "options": [
-            "a) Ale jeszcze nie umiem grać szybko.",
+            "a) Do zobaczenia we wtorek!",
             "b) To nie szkodzi, zaczynamy od początku.",
             "c) Bardzo dobrze, to świetny instrument.",
-            "d) Dzwonię w sprawie lekcji.",
-            "e) Niestety nie ma już miejsc.",
-            "f) Do zobaczenia we wtorek!",
+            "d) Ale jeszcze nie umiem grać szybko.",
+            "e) To dobry termin dla mnie.",
+            "f) Niestety nie ma już miejsc.",
             "g) Oczywiście, to możliwe.",
             "h) Hm, to dość drogo.",
-            "i) To dobry termin dla mnie.",
+            "i) Dzwonię w sprawie lekcji.",
             "j) Przepraszam, pomyliłem numer."
           ],
           "explanation": "Tomek odpowiada na propozycję terminu. Potem tłumaczy, że pracuje do szesnastej.",
@@ -605,15 +605,15 @@
           "id": "el1-6",
           "answer": "h) Hm, to dość drogo.",
           "options": [
-            "a) Ale jeszcze nie umiem grać szybko.",
+            "a) Do zobaczenia we wtorek!",
             "b) To nie szkodzi, zaczynamy od początku.",
             "c) Bardzo dobrze, to świetny instrument.",
-            "d) Dzwonię w sprawie lekcji.",
-            "e) Niestety nie ma już miejsc.",
-            "f) Do zobaczenia we wtorek!",
+            "d) Ale jeszcze nie umiem grać szybko.",
+            "e) To dobry termin dla mnie.",
+            "f) Niestety nie ma już miejsc.",
             "g) Oczywiście, to możliwe.",
             "h) Hm, to dość drogo.",
-            "i) To dobry termin dla mnie.",
+            "i) Dzwonię w sprawie lekcji.",
             "j) Przepraszam, pomyliłem numer."
           ],
           "explanation": "Tomek reaguje na cenę lekcji. Zaraz potem pyta o lekcję próbną, bo cena jest dla niego wysoka.",
@@ -623,15 +623,15 @@
           "id": "el1-7",
           "answer": "g) Oczywiście, to możliwe.",
           "options": [
-            "a) Ale jeszcze nie umiem grać szybko.",
+            "a) Do zobaczenia we wtorek!",
             "b) To nie szkodzi, zaczynamy od początku.",
             "c) Bardzo dobrze, to świetny instrument.",
-            "d) Dzwonię w sprawie lekcji.",
-            "e) Niestety nie ma już miejsc.",
-            "f) Do zobaczenia we wtorek!",
+            "d) Ale jeszcze nie umiem grać szybko.",
+            "e) To dobry termin dla mnie.",
+            "f) Niestety nie ma już miejsc.",
             "g) Oczywiście, to możliwe.",
             "h) Hm, to dość drogo.",
-            "i) To dobry termin dla mnie.",
+            "i) Dzwonię w sprawie lekcji.",
             "j) Przepraszam, pomyliłem numer."
           ],
           "explanation": "To odpowiedź na pytanie „Czy mogę…?”. Kolejne zdanie dodaje szczegół: pierwsza lekcja jest bezpłatna.",
@@ -639,17 +639,17 @@
         },
         {
           "id": "el1-8",
-          "answer": "f) Do zobaczenia we wtorek!",
+          "answer": "a) Do zobaczenia we wtorek!",
           "options": [
-            "a) Ale jeszcze nie umiem grać szybko.",
+            "a) Do zobaczenia we wtorek!",
             "b) To nie szkodzi, zaczynamy od początku.",
             "c) Bardzo dobrze, to świetny instrument.",
-            "d) Dzwonię w sprawie lekcji.",
-            "e) Niestety nie ma już miejsc.",
-            "f) Do zobaczenia we wtorek!",
+            "d) Ale jeszcze nie umiem grać szybko.",
+            "e) To dobry termin dla mnie.",
+            "f) Niestety nie ma już miejsc.",
             "g) Oczywiście, to możliwe.",
             "h) Hm, to dość drogo.",
-            "i) To dobry termin dla mnie.",
+            "i) Dzwonię w sprawie lekcji.",
             "j) Przepraszam, pomyliłem numer."
           ],
           "explanation": "To miłe zakończenie rozmowy po ustaleniu terminu wtorkowej lekcji.",
@@ -680,9 +680,9 @@
           "id": "el2-2",
           "answer": "a) o",
           "options": [
-            "a) o",
             "b) na",
-            "c) w"
+            "c) w",
+            "a) o"
           ],
           "explanation": "Mówimy „zapytać o coś”: o bilety. „Zapytać na bilety” jest błędne.",
           "grammar_point": "rejestr-formalny"
@@ -691,8 +691,8 @@
           "id": "el2-3",
           "answer": "b) na",
           "options": [
-            "a) w",
             "b) na",
+            "a) w",
             "c) do"
           ],
           "explanation": "„Bilety na sobotę” to bilety na dzień w tygodniu. Przy „w sobotę” nie ma słowa „bilety”.",
@@ -702,8 +702,8 @@
           "id": "el2-4",
           "answer": "a) Czy",
           "options": [
-            "a) Czy",
             "b) Że",
+            "a) Czy",
             "c) Bo"
           ],
           "explanation": "Pytanie z „tak / nie” zaczyna się od „czy”. „Że” i „bo” nie otwierają pytania.",
@@ -713,9 +713,9 @@
           "id": "el2-5",
           "answer": "c) bo",
           "options": [
-            "a) dlatego",
+            "c) bo",
             "b) ale",
-            "c) bo"
+            "a) dlatego"
           ],
           "explanation": "„Bo” wprowadza powód: kupujemy wcześniej, bo wtedy jest taniej. „Dlatego” stoi przed skutkiem.",
           "grammar_point": "rejestr-formalny"
@@ -746,8 +746,8 @@
           "id": "el2-8",
           "answer": "b) za",
           "options": [
-            "a) na",
             "b) za",
+            "a) na",
             "c) o"
           ],
           "explanation": "Dziękuje się „za coś”: za informacje. „Dziękuję na” nie istnieje.",
@@ -768,9 +768,9 @@
           "id": "el2-10",
           "answer": "a) Z poważaniem",
           "options": [
-            "a) Z poważaniem",
             "b) Z poważaniu",
-            "c) Na poważanie"
+            "c) Na poważanie",
+            "a) Z poważaniem"
           ],
           "explanation": "„Z poważaniem” to oficjalne zakończenie e-maila. Pozostałe formy są błędne.",
           "grammar_point": "rejestr-formalny"

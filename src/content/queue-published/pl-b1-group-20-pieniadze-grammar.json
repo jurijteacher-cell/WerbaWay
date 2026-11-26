@@ -75,8 +75,8 @@
           "answer": "na",
           "grammar_point": "przyimek-wybor",
           "options": [
-            "na",
-            "o"
+            "o",
+            "na"
           ],
           "explanation": "Zależeć komuś NA czymś (miejscownik)."
         },
@@ -86,8 +86,8 @@
           "answer": "o",
           "grammar_point": "przyimek-wybor",
           "options": [
-            "na",
-            "o"
+            "o",
+            "na"
           ],
           "explanation": "Myśleć O kimś, o czymś (miejscownik)."
         },
@@ -97,8 +97,8 @@
           "answer": "za",
           "grammar_point": "przyimek-wybor",
           "options": [
-            "za",
-            "o"
+            "o",
+            "za"
           ],
           "explanation": "Dziękować ZA coś (biernik)."
         },
@@ -108,8 +108,8 @@
           "answer": "z",
           "grammar_point": "przyimek-wybor",
           "options": [
-            "w",
-            "z"
+            "z",
+            "w"
           ],
           "explanation": "Korzystać Z czegoś (dopełniacz)."
         },
@@ -152,8 +152,8 @@
           "answer": "z",
           "grammar_point": "przyimek-wybor",
           "options": [
-            "od",
-            "z"
+            "z",
+            "od"
           ],
           "explanation": "Укр. «відмовитися від» → zrezygnować Z czegoś."
         }
@@ -376,8 +376,8 @@
           "answer": "radia",
           "grammar_point": "bez-przyimka-dopelniacz",
           "options": [
-            "radio",
-            "radia"
+            "radia",
+            "radio"
           ],
           "explanation": "Słuchać + dopełniacz: radia."
         },
@@ -398,8 +398,8 @@
           "answer": "portfela",
           "grammar_point": "bez-przyimka-dopelniacz",
           "options": [
-            "portfela",
-            "portfel"
+            "portfel",
+            "portfela"
           ],
           "explanation": "Pilnować + dopełniacz."
         },
@@ -431,8 +431,8 @@
           "answer": "kluczy",
           "grammar_point": "bez-przyimka-dopelniacz",
           "options": [
-            "klucze",
-            "kluczy"
+            "kluczy",
+            "klucze"
           ],
           "explanation": "Szukać + dopełniacz: kluczy."
         },
@@ -530,8 +530,8 @@
           "answer": "o pieniądzach",
           "grammar_point": "kalki-uk",
           "options": [
-            "o pieniądze",
-            "o pieniądzach"
+            "o pieniądzach",
+            "o pieniądze"
           ],
           "explanation": "«думаю про гроші» (знахідний) → myślę o pieniądzach (miejscownik)."
         },
@@ -552,8 +552,8 @@
           "answer": "muzyki",
           "grammar_point": "kalki-uk",
           "options": [
-            "muzykę",
-            "muzyki"
+            "muzyki",
+            "muzykę"
           ],
           "explanation": "«слухаю музику» (знахідний) → słucham muzyki (dopełniacz)."
         },
@@ -563,8 +563,8 @@
           "answer": "zrezygnować z",
           "grammar_point": "kalki-uk",
           "options": [
-            "zrezygnować od",
-            "zrezygnować z"
+            "zrezygnować z",
+            "zrezygnować od"
           ],
           "explanation": "«відмовитися від» → zrezygnować z."
         },
@@ -585,8 +585,8 @@
           "answer": "pewny sukcesu",
           "grammar_point": "kalki-uk",
           "options": [
-            "pewny w sukcesie",
-            "pewny sukcesu"
+            "pewny sukcesu",
+            "pewny w sukcesie"
           ],
           "explanation": "«впевнений в успіху» → pewny / pewien sukcesu (dopełniacz)."
         }
@@ -600,86 +600,86 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Katarzyna: Dzień dobry, w czym mogę pomóc?\n\nOlena: Dzień dobry. {el1-1} Ma szesnaście lat.\n\nKatarzyna: {el1-2} Potrzebny jest dowód osobisty i zgoda rodzica.\n\nOlena: Zgodę podpiszę na miejscu. {el1-3}\n\nKatarzyna: Dla osób poniżej osiemnastego roku życia konto jest bezpłatne. Karta też.\n\nOlena: {el1-4} {el1-5}\n\nKatarzyna: Tak, wystarczy zainstalować aplikację. Pokażę mu, jak to zrobić.\n\nMaksym: Super! {el1-6}\n\nKatarzyna: Oczywiście, saldo i wszystkie wydatki są w aplikacji. {el1-7}\n\nOlena: {el1-8}\n\nKatarzyna: Proszę bardzo, miłego dnia!",
       "bank": [
-        "a) Proszę tu podpisać.",
-        "b) To bardzo dobra wiadomość.",
-        "c) Nie ma problemu.",
-        "d) Dziękuję za pomoc i do widzenia.",
-        "e) Chciałabym zgłosić reklamację.",
-        "f) Ile kosztuje prowadzenie konta?",
+        "a) Chciałabym zgłosić reklamację.",
+        "b) Chciałabym założyć konto dla syna.",
+        "c) To bardzo dobra wiadomość.",
+        "d) Ile kosztuje prowadzenie konta?",
+        "e) Przykro mi, ale to niemożliwe.",
+        "f) Dziękuję za pomoc i do widzenia.",
         "g) Czy syn może płacić kodem BLIK?",
-        "h) Chciałabym założyć konto dla syna.",
-        "i) Przykro mi, ale to niemożliwe.",
-        "j) A czy w aplikacji będę widział historię rachunku?"
+        "h) Proszę tu podpisać.",
+        "i) A czy w aplikacji będę widział historię rachunku?",
+        "j) Nie ma problemu."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "h) Chciałabym założyć konto dla syna.",
+          "answer": "b) Chciałabym założyć konto dla syna.",
           "options": [
-            "a) Proszę tu podpisać.",
-            "b) To bardzo dobra wiadomość.",
-            "c) Nie ma problemu.",
-            "d) Dziękuję za pomoc i do widzenia.",
-            "e) Chciałabym zgłosić reklamację.",
-            "f) Ile kosztuje prowadzenie konta?",
+            "a) Chciałabym zgłosić reklamację.",
+            "b) Chciałabym założyć konto dla syna.",
+            "c) To bardzo dobra wiadomość.",
+            "d) Ile kosztuje prowadzenie konta?",
+            "e) Przykro mi, ale to niemożliwe.",
+            "f) Dziękuję za pomoc i do widzenia.",
             "g) Czy syn może płacić kodem BLIK?",
-            "h) Chciałabym założyć konto dla syna.",
-            "i) Przykro mi, ale to niemożliwe.",
-            "j) A czy w aplikacji będę widział historię rachunku?"
+            "h) Proszę tu podpisać.",
+            "i) A czy w aplikacji będę widział historię rachunku?",
+            "j) Nie ma problemu."
           ],
           "explanation": "Olena opisuje, po co przyszła do banku. Informacja o wieku syna wyjaśnia, dlaczego potrzebna jest zgoda rodzica.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "c) Nie ma problemu.",
+          "answer": "j) Nie ma problemu.",
           "options": [
-            "a) Proszę tu podpisać.",
-            "b) To bardzo dobra wiadomość.",
-            "c) Nie ma problemu.",
-            "d) Dziękuję za pomoc i do widzenia.",
-            "e) Chciałabym zgłosić reklamację.",
-            "f) Ile kosztuje prowadzenie konta?",
+            "a) Chciałabym zgłosić reklamację.",
+            "b) Chciałabym założyć konto dla syna.",
+            "c) To bardzo dobra wiadomość.",
+            "d) Ile kosztuje prowadzenie konta?",
+            "e) Przykro mi, ale to niemożliwe.",
+            "f) Dziękuję za pomoc i do widzenia.",
             "g) Czy syn może płacić kodem BLIK?",
-            "h) Chciałabym założyć konto dla syna.",
-            "i) Przykro mi, ale to niemożliwe.",
-            "j) A czy w aplikacji będę widział historię rachunku?"
+            "h) Proszę tu podpisać.",
+            "i) A czy w aplikacji będę widział historię rachunku?",
+            "j) Nie ma problemu."
           ],
           "explanation": "Pracownica zgadza się założyć konto i od razu mówi, jakie dokumenty są potrzebne. „Przykro mi, ale to niemożliwe” przeczyłoby dalszym słowom.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "f) Ile kosztuje prowadzenie konta?",
+          "answer": "d) Ile kosztuje prowadzenie konta?",
           "options": [
-            "a) Proszę tu podpisać.",
-            "b) To bardzo dobra wiadomość.",
-            "c) Nie ma problemu.",
-            "d) Dziękuję za pomoc i do widzenia.",
-            "e) Chciałabym zgłosić reklamację.",
-            "f) Ile kosztuje prowadzenie konta?",
+            "a) Chciałabym zgłosić reklamację.",
+            "b) Chciałabym założyć konto dla syna.",
+            "c) To bardzo dobra wiadomość.",
+            "d) Ile kosztuje prowadzenie konta?",
+            "e) Przykro mi, ale to niemożliwe.",
+            "f) Dziękuję za pomoc i do widzenia.",
             "g) Czy syn może płacić kodem BLIK?",
-            "h) Chciałabym założyć konto dla syna.",
-            "i) Przykro mi, ale to niemożliwe.",
-            "j) A czy w aplikacji będę widział historię rachunku?"
+            "h) Proszę tu podpisać.",
+            "i) A czy w aplikacji będę widział historię rachunku?",
+            "j) Nie ma problemu."
           ],
           "explanation": "Olena pyta o koszt, a Katarzyna odpowiada, że konto jest bezpłatne. Pytanie o BLIK pasuje dopiero później.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "b) To bardzo dobra wiadomość.",
+          "answer": "c) To bardzo dobra wiadomość.",
           "options": [
-            "a) Proszę tu podpisać.",
-            "b) To bardzo dobra wiadomość.",
-            "c) Nie ma problemu.",
-            "d) Dziękuję za pomoc i do widzenia.",
-            "e) Chciałabym zgłosić reklamację.",
-            "f) Ile kosztuje prowadzenie konta?",
+            "a) Chciałabym zgłosić reklamację.",
+            "b) Chciałabym założyć konto dla syna.",
+            "c) To bardzo dobra wiadomość.",
+            "d) Ile kosztuje prowadzenie konta?",
+            "e) Przykro mi, ale to niemożliwe.",
+            "f) Dziękuję za pomoc i do widzenia.",
             "g) Czy syn może płacić kodem BLIK?",
-            "h) Chciałabym założyć konto dla syna.",
-            "i) Przykro mi, ale to niemożliwe.",
-            "j) A czy w aplikacji będę widział historię rachunku?"
+            "h) Proszę tu podpisać.",
+            "i) A czy w aplikacji będę widział historię rachunku?",
+            "j) Nie ma problemu."
           ],
           "explanation": "Olena reaguje na dobrą informację o darmowym koncie. To krótka ocena, po której następuje kolejne pytanie.",
           "grammar_point": "slownictwo"
@@ -688,70 +688,70 @@
           "id": "el1-5",
           "answer": "g) Czy syn może płacić kodem BLIK?",
           "options": [
-            "a) Proszę tu podpisać.",
-            "b) To bardzo dobra wiadomość.",
-            "c) Nie ma problemu.",
-            "d) Dziękuję za pomoc i do widzenia.",
-            "e) Chciałabym zgłosić reklamację.",
-            "f) Ile kosztuje prowadzenie konta?",
+            "a) Chciałabym zgłosić reklamację.",
+            "b) Chciałabym założyć konto dla syna.",
+            "c) To bardzo dobra wiadomość.",
+            "d) Ile kosztuje prowadzenie konta?",
+            "e) Przykro mi, ale to niemożliwe.",
+            "f) Dziękuję za pomoc i do widzenia.",
             "g) Czy syn może płacić kodem BLIK?",
-            "h) Chciałabym założyć konto dla syna.",
-            "i) Przykro mi, ale to niemożliwe.",
-            "j) A czy w aplikacji będę widział historię rachunku?"
+            "h) Proszę tu podpisać.",
+            "i) A czy w aplikacji będę widział historię rachunku?",
+            "j) Nie ma problemu."
           ],
           "explanation": "Pracownica odpowiada „Tak, wystarczy zainstalować aplikację”, więc musiało paść pytanie o płatności. „Chciałabym zgłosić reklamację” nie pasuje do otwierania konta.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "j) A czy w aplikacji będę widział historię rachunku?",
+          "answer": "i) A czy w aplikacji będę widział historię rachunku?",
           "options": [
-            "a) Proszę tu podpisać.",
-            "b) To bardzo dobra wiadomość.",
-            "c) Nie ma problemu.",
-            "d) Dziękuję za pomoc i do widzenia.",
-            "e) Chciałabym zgłosić reklamację.",
-            "f) Ile kosztuje prowadzenie konta?",
+            "a) Chciałabym zgłosić reklamację.",
+            "b) Chciałabym założyć konto dla syna.",
+            "c) To bardzo dobra wiadomość.",
+            "d) Ile kosztuje prowadzenie konta?",
+            "e) Przykro mi, ale to niemożliwe.",
+            "f) Dziękuję za pomoc i do widzenia.",
             "g) Czy syn może płacić kodem BLIK?",
-            "h) Chciałabym założyć konto dla syna.",
-            "i) Przykro mi, ale to niemożliwe.",
-            "j) A czy w aplikacji będę widział historię rachunku?"
+            "h) Proszę tu podpisać.",
+            "i) A czy w aplikacji będę widział historię rachunku?",
+            "j) Nie ma problemu."
           ],
           "explanation": "Maksym pyta o historię rachunku, a Katarzyna odpowiada, że saldo i wydatki są w aplikacji.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "a) Proszę tu podpisać.",
+          "answer": "h) Proszę tu podpisać.",
           "options": [
-            "a) Proszę tu podpisać.",
-            "b) To bardzo dobra wiadomość.",
-            "c) Nie ma problemu.",
-            "d) Dziękuję za pomoc i do widzenia.",
-            "e) Chciałabym zgłosić reklamację.",
-            "f) Ile kosztuje prowadzenie konta?",
+            "a) Chciałabym zgłosić reklamację.",
+            "b) Chciałabym założyć konto dla syna.",
+            "c) To bardzo dobra wiadomość.",
+            "d) Ile kosztuje prowadzenie konta?",
+            "e) Przykro mi, ale to niemożliwe.",
+            "f) Dziękuję za pomoc i do widzenia.",
             "g) Czy syn może płacić kodem BLIK?",
-            "h) Chciałabym założyć konto dla syna.",
-            "i) Przykro mi, ale to niemożliwe.",
-            "j) A czy w aplikacji będę widział historię rachunku?"
+            "h) Proszę tu podpisać.",
+            "i) A czy w aplikacji będę widział historię rachunku?",
+            "j) Nie ma problemu."
           ],
           "explanation": "Gdy wszystkie sprawy są wyjaśnione, pracownica prosi o podpis. To typowy ostatni krok przy zakładaniu konta.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "d) Dziękuję za pomoc i do widzenia.",
+          "answer": "f) Dziękuję za pomoc i do widzenia.",
           "options": [
-            "a) Proszę tu podpisać.",
-            "b) To bardzo dobra wiadomość.",
-            "c) Nie ma problemu.",
-            "d) Dziękuję za pomoc i do widzenia.",
-            "e) Chciałabym zgłosić reklamację.",
-            "f) Ile kosztuje prowadzenie konta?",
+            "a) Chciałabym zgłosić reklamację.",
+            "b) Chciałabym założyć konto dla syna.",
+            "c) To bardzo dobra wiadomość.",
+            "d) Ile kosztuje prowadzenie konta?",
+            "e) Przykro mi, ale to niemożliwe.",
+            "f) Dziękuję za pomoc i do widzenia.",
             "g) Czy syn może płacić kodem BLIK?",
-            "h) Chciałabym założyć konto dla syna.",
-            "i) Przykro mi, ale to niemożliwe.",
-            "j) A czy w aplikacji będę widział historię rachunku?"
+            "h) Proszę tu podpisać.",
+            "i) A czy w aplikacji będę widział historię rachunku?",
+            "j) Nie ma problemu."
           ],
           "explanation": "Olena kończy rozmowę podziękowaniem i pożegnaniem. Katarzyna odpowiada „Proszę bardzo”.",
           "grammar_point": "slownictwo"
@@ -770,8 +770,8 @@
           "id": "el2-1",
           "answer": "c) Składam",
           "options": [
-            "a) Zakładam",
             "b) Przekładam",
+            "a) Zakładam",
             "c) Składam"
           ],
           "explanation": "Mówimy „składać reklamację”. „Zakładać” używamy np. przy koncie, a „przekładać” znaczy coś innego.",
@@ -781,8 +781,8 @@
           "id": "el2-2",
           "answer": "a) chociaż",
           "options": [
-            "a) chociaż",
             "b) ponieważ",
+            "a) chociaż",
             "c) dlatego"
           ],
           "explanation": "Druga część zdania jest zaskoczeniem: opłata została pobrana dwa razy, chociaż jest tylko jedna karta. „Ponieważ” i „dlatego” zmieniają sens.",
@@ -803,9 +803,9 @@
           "id": "el2-4",
           "answer": "c) z tych",
           "options": [
+            "c) z tych",
             "a) od tych",
-            "b) o tych",
-            "c) z tych"
+            "b) o tych"
           ],
           "explanation": "Stałe wyrażenie to „rezygnować z czegoś”, tu z pieniędzy. „Od” i „o” nie łączą się z tym czasownikiem.",
           "grammar_point": "rejestr-formalny"
@@ -814,8 +814,8 @@
           "id": "el2-5",
           "answer": "b) o",
           "options": [
-            "a) za",
             "b) o",
+            "a) za",
             "c) na"
           ],
           "explanation": "Mówimy „prosić o coś”, tu o sprawdzenie. „Za” i „na” nie pasują do czasownika „prosić”.",
@@ -825,9 +825,9 @@
           "id": "el2-6",
           "answer": "a) na",
           "options": [
-            "a) na",
             "b) do",
-            "c) za"
+            "c) za",
+            "a) na"
           ],
           "explanation": "Bank ma trzydzieści dni „na odpowiedź”, czyli przeznaczone na nią. „Do odpowiedź” i „za odpowiedź” są błędne.",
           "grammar_point": "rejestr-formalny"
@@ -836,9 +836,9 @@
           "id": "el2-7",
           "answer": "c) na",
           "options": [
-            "a) o",
+            "c) na",
             "b) w",
-            "c) na"
+            "a) o"
           ],
           "explanation": "Stałe wyrażenie to „zależy mi na czymś”. „O” i „w” nie pasują do tego wyrażenia.",
           "grammar_point": "rejestr-formalny"
@@ -847,8 +847,8 @@
           "id": "el2-8",
           "answer": "a) proszę",
           "options": [
-            "a) proszę",
             "b) mogę",
+            "a) proszę",
             "c) chcę"
           ],
           "explanation": "W oficjalnym liście piszemy „proszę się ze mną skontaktować”. „Mogę się ze mną skontaktować” jest błędne, bo zmienia podmiot.",
@@ -869,9 +869,9 @@
           "id": "el2-10",
           "answer": "c) Z",
           "options": [
+            "c) Z",
             "a) Na",
-            "b) W",
-            "c) Z"
+            "b) W"
           ],
           "explanation": "Formuła pożegnalna to „Z poważaniem”. Inne przyimki nie tworzą takiego zwrotu.",
           "grammar_point": "rejestr-formalny"

@@ -29,9 +29,9 @@
           "text": "Pracuję w tej firmie ___ i nadal ją lubię.",
           "answer": "od dwóch lat",
           "options": [
-            "od dwóch lat",
             "przez dwa lata",
-            "dwa lata temu"
+            "dwa lata temu",
+            "od dwóch lat"
           ],
           "grammar_point": "przyimki-czasu",
           "explanation": "Coś trwa do dziś — od: od dwóch lat."
@@ -42,8 +42,8 @@
           "answer": "za tydzień",
           "options": [
             "za tydzień",
-            "przez tydzień",
-            "tydzień temu"
+            "tydzień temu",
+            "przez tydzień"
           ],
           "grammar_point": "przyimki-czasu",
           "explanation": "„Через тиждень” = za tydzień. Przez — jak długo."
@@ -65,9 +65,9 @@
           "text": "Znasz Adama? Często ___ widzę w autobusie.",
           "answer": "go",
           "options": [
-            "go",
             "mu",
-            "jego"
+            "jego",
+            "go"
           ],
           "grammar_point": "zaimki-osobowe-przypadki",
           "explanation": "Widzieć kogo? — go."
@@ -77,8 +77,8 @@
           "text": "Moja szefowa ma dużo pracy, więc w piątki ___ pomagam.",
           "answer": "jej",
           "options": [
-            "jej",
             "ją",
+            "jej",
             "niej"
           ],
           "grammar_point": "zaimki-osobowe-przypadki",
@@ -90,8 +90,8 @@
           "answer": "nauczycielką",
           "options": [
             "nauczycielką",
-            "nauczycielka",
-            "nauczycielkę"
+            "nauczycielkę",
+            "nauczycielka"
           ],
           "grammar_point": "narzednik-zawod-z",
           "explanation": "Być kim? — narzędnik: nauczycielką."
@@ -101,8 +101,8 @@
           "text": "Paweł zaprosił mnie do kina. Idę z ___ w sobotę.",
           "answer": "nim",
           "options": [
-            "nim",
             "niego",
+            "nim",
             "nimi"
           ],
           "grammar_point": "zaimki-osobowe-przypadki",
@@ -336,15 +336,15 @@
       "text": "Kasia: Cześć, Olena! Jak minął pierwszy miesiąc w nowej pracy?\n\nOlena: {el1-1} Ale nie wszystko było łatwe.\n\nKasia: {el1-2} Co było najtrudniejsze?\n\nOlena: Tydzień temu przez godzinę szukałam w systemie rezerwacji dla pani z Gdańska. {el1-3}\n\nKasia: {el1-4} Kto ci pomógł?\n\nOlena: Magda. {el1-5} Bez niej nie mam szans!\n\nKasia: A pan Piotr? Jaki jest szef?\n\nOlena: {el1-6} Dał nam wszystkim prezenty na wigilię. A co u ciebie? Kiedy możesz przyjechać do Krakowa?\n\nKasia: {el1-7} Mam urlop w styczniu.\n\nOlena: {el1-8} Zadzwoń, jak kupisz bilet.\n\nKasia: Na pewno zadzwonię. Ściskam cię!",
       "bank": [
         "a) Bardzo dobrze, jestem zadowolona.",
-        "b) Opowiadaj, jestem ciekawa!",
-        "c) To było naprawdę trudne.",
-        "d) Naprawdę?",
-        "e) To bardzo miła koleżanka.",
+        "b) Niestety nie mam czasu na obiad.",
+        "c) Z przyjemnością przyjadę.",
+        "d) To bardzo miła koleżanka.",
+        "e) Opowiadaj, jestem ciekawa!",
         "f) Jest bardzo sympatyczny.",
-        "g) Z przyjemnością przyjadę.",
-        "h) Wspaniale, bardzo się cieszę!",
-        "i) Niestety nie mam czasu na obiad.",
-        "j) Nie mam pojęcia."
+        "g) Nie mam pojęcia.",
+        "h) Naprawdę?",
+        "i) Wspaniale, bardzo się cieszę!",
+        "j) To było naprawdę trudne."
       ],
       "items": [
         {
@@ -352,87 +352,87 @@
           "answer": "a) Bardzo dobrze, jestem zadowolona.",
           "options": [
             "a) Bardzo dobrze, jestem zadowolona.",
-            "b) Opowiadaj, jestem ciekawa!",
-            "c) To było naprawdę trudne.",
-            "d) Naprawdę?",
-            "e) To bardzo miła koleżanka.",
+            "b) Niestety nie mam czasu na obiad.",
+            "c) Z przyjemnością przyjadę.",
+            "d) To bardzo miła koleżanka.",
+            "e) Opowiadaj, jestem ciekawa!",
             "f) Jest bardzo sympatyczny.",
-            "g) Z przyjemnością przyjadę.",
-            "h) Wspaniale, bardzo się cieszę!",
-            "i) Niestety nie mam czasu na obiad.",
-            "j) Nie mam pojęcia."
+            "g) Nie mam pojęcia.",
+            "h) Naprawdę?",
+            "i) Wspaniale, bardzo się cieszę!",
+            "j) To było naprawdę trudne."
           ],
           "explanation": "Kasia pyta o pierwszy miesiąc, więc Olena zaczyna od ogólnej oceny. Dalej pojawia się „Ale…”, które pasuje do pozytywnego początku.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "b) Opowiadaj, jestem ciekawa!",
+          "answer": "e) Opowiadaj, jestem ciekawa!",
           "options": [
             "a) Bardzo dobrze, jestem zadowolona.",
-            "b) Opowiadaj, jestem ciekawa!",
-            "c) To było naprawdę trudne.",
-            "d) Naprawdę?",
-            "e) To bardzo miła koleżanka.",
+            "b) Niestety nie mam czasu na obiad.",
+            "c) Z przyjemnością przyjadę.",
+            "d) To bardzo miła koleżanka.",
+            "e) Opowiadaj, jestem ciekawa!",
             "f) Jest bardzo sympatyczny.",
-            "g) Z przyjemnością przyjadę.",
-            "h) Wspaniale, bardzo się cieszę!",
-            "i) Niestety nie mam czasu na obiad.",
-            "j) Nie mam pojęcia."
+            "g) Nie mam pojęcia.",
+            "h) Naprawdę?",
+            "i) Wspaniale, bardzo się cieszę!",
+            "j) To było naprawdę trudne."
           ],
           "explanation": "Kasia zachęca przyjaciółkę do opowiadania i zaraz pyta o szczegóły. „Nie mam pojęcia” nie pasuje, bo Olena i tak wie, co było trudne.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "c) To było naprawdę trudne.",
+          "answer": "j) To było naprawdę trudne.",
           "options": [
             "a) Bardzo dobrze, jestem zadowolona.",
-            "b) Opowiadaj, jestem ciekawa!",
-            "c) To było naprawdę trudne.",
-            "d) Naprawdę?",
-            "e) To bardzo miła koleżanka.",
+            "b) Niestety nie mam czasu na obiad.",
+            "c) Z przyjemnością przyjadę.",
+            "d) To bardzo miła koleżanka.",
+            "e) Opowiadaj, jestem ciekawa!",
             "f) Jest bardzo sympatyczny.",
-            "g) Z przyjemnością przyjadę.",
-            "h) Wspaniale, bardzo się cieszę!",
-            "i) Niestety nie mam czasu na obiad.",
-            "j) Nie mam pojęcia."
+            "g) Nie mam pojęcia.",
+            "h) Naprawdę?",
+            "i) Wspaniale, bardzo się cieszę!",
+            "j) To było naprawdę trudne."
           ],
           "explanation": "Olena opisuje długie szukanie w systemie i ocenia sytuację jednym zdaniem. „To było naprawdę trudne” pasuje do słów „przez godzinę szukałam”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "d) Naprawdę?",
+          "answer": "h) Naprawdę?",
           "options": [
             "a) Bardzo dobrze, jestem zadowolona.",
-            "b) Opowiadaj, jestem ciekawa!",
-            "c) To było naprawdę trudne.",
-            "d) Naprawdę?",
-            "e) To bardzo miła koleżanka.",
+            "b) Niestety nie mam czasu na obiad.",
+            "c) Z przyjemnością przyjadę.",
+            "d) To bardzo miła koleżanka.",
+            "e) Opowiadaj, jestem ciekawa!",
             "f) Jest bardzo sympatyczny.",
-            "g) Z przyjemnością przyjadę.",
-            "h) Wspaniale, bardzo się cieszę!",
-            "i) Niestety nie mam czasu na obiad.",
-            "j) Nie mam pojęcia."
+            "g) Nie mam pojęcia.",
+            "h) Naprawdę?",
+            "i) Wspaniale, bardzo się cieszę!",
+            "j) To było naprawdę trudne."
           ],
           "explanation": "Kasia jest zaskoczona i reaguje krótkim pytaniem. Dzięki temu rozmowa płynie dalej: „Kto ci pomógł?”",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "e) To bardzo miła koleżanka.",
+          "answer": "d) To bardzo miła koleżanka.",
           "options": [
             "a) Bardzo dobrze, jestem zadowolona.",
-            "b) Opowiadaj, jestem ciekawa!",
-            "c) To było naprawdę trudne.",
-            "d) Naprawdę?",
-            "e) To bardzo miła koleżanka.",
+            "b) Niestety nie mam czasu na obiad.",
+            "c) Z przyjemnością przyjadę.",
+            "d) To bardzo miła koleżanka.",
+            "e) Opowiadaj, jestem ciekawa!",
             "f) Jest bardzo sympatyczny.",
-            "g) Z przyjemnością przyjadę.",
-            "h) Wspaniale, bardzo się cieszę!",
-            "i) Niestety nie mam czasu na obiad.",
-            "j) Nie mam pojęcia."
+            "g) Nie mam pojęcia.",
+            "h) Naprawdę?",
+            "i) Wspaniale, bardzo się cieszę!",
+            "j) To było naprawdę trudne."
           ],
           "explanation": "Olena mówi o koleżance, która jej pomogła, i chwali ją. Dalej tłumaczy: „Bez niej nie mam szans!”",
           "grammar_point": "slownictwo"
@@ -442,51 +442,51 @@
           "answer": "f) Jest bardzo sympatyczny.",
           "options": [
             "a) Bardzo dobrze, jestem zadowolona.",
-            "b) Opowiadaj, jestem ciekawa!",
-            "c) To było naprawdę trudne.",
-            "d) Naprawdę?",
-            "e) To bardzo miła koleżanka.",
+            "b) Niestety nie mam czasu na obiad.",
+            "c) Z przyjemnością przyjadę.",
+            "d) To bardzo miła koleżanka.",
+            "e) Opowiadaj, jestem ciekawa!",
             "f) Jest bardzo sympatyczny.",
-            "g) Z przyjemnością przyjadę.",
-            "h) Wspaniale, bardzo się cieszę!",
-            "i) Niestety nie mam czasu na obiad.",
-            "j) Nie mam pojęcia."
+            "g) Nie mam pojęcia.",
+            "h) Naprawdę?",
+            "i) Wspaniale, bardzo się cieszę!",
+            "j) To było naprawdę trudne."
           ],
           "explanation": "Na pytanie „Jaki jest szef?” Olena odpowiada krótką opinią. Przykład z prezentem pokazuje, że pan Piotr jest sympatyczny.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "g) Z przyjemnością przyjadę.",
+          "answer": "c) Z przyjemnością przyjadę.",
           "options": [
             "a) Bardzo dobrze, jestem zadowolona.",
-            "b) Opowiadaj, jestem ciekawa!",
-            "c) To było naprawdę trudne.",
-            "d) Naprawdę?",
-            "e) To bardzo miła koleżanka.",
+            "b) Niestety nie mam czasu na obiad.",
+            "c) Z przyjemnością przyjadę.",
+            "d) To bardzo miła koleżanka.",
+            "e) Opowiadaj, jestem ciekawa!",
             "f) Jest bardzo sympatyczny.",
-            "g) Z przyjemnością przyjadę.",
-            "h) Wspaniale, bardzo się cieszę!",
-            "i) Niestety nie mam czasu na obiad.",
-            "j) Nie mam pojęcia."
+            "g) Nie mam pojęcia.",
+            "h) Naprawdę?",
+            "i) Wspaniale, bardzo się cieszę!",
+            "j) To było naprawdę trudne."
           ],
           "explanation": "Kasia odpowiada na zaproszenie do Krakowa. Fraza „Z przyjemnością przyjadę” pasuje do informacji o urlopie w styczniu.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "h) Wspaniale, bardzo się cieszę!",
+          "answer": "i) Wspaniale, bardzo się cieszę!",
           "options": [
             "a) Bardzo dobrze, jestem zadowolona.",
-            "b) Opowiadaj, jestem ciekawa!",
-            "c) To było naprawdę trudne.",
-            "d) Naprawdę?",
-            "e) To bardzo miła koleżanka.",
+            "b) Niestety nie mam czasu na obiad.",
+            "c) Z przyjemnością przyjadę.",
+            "d) To bardzo miła koleżanka.",
+            "e) Opowiadaj, jestem ciekawa!",
             "f) Jest bardzo sympatyczny.",
-            "g) Z przyjemnością przyjadę.",
-            "h) Wspaniale, bardzo się cieszę!",
-            "i) Niestety nie mam czasu na obiad.",
-            "j) Nie mam pojęcia."
+            "g) Nie mam pojęcia.",
+            "h) Naprawdę?",
+            "i) Wspaniale, bardzo się cieszę!",
+            "j) To było naprawdę trudne."
           ],
           "explanation": "Olena cieszy się z wizyty przyjaciółki i prosi o telefon po zakupie biletu. „Niestety nie mam czasu na obiad” nie pasuje do tej sytuacji.",
           "grammar_point": "slownictwo"
@@ -505,9 +505,9 @@
           "id": "el2-1",
           "answer": "a) Dziękuję za",
           "options": [
+            "c) Dziękuję na",
             "a) Dziękuję za",
-            "b) Dziękuję o",
-            "c) Dziękuję na"
+            "b) Dziękuję o"
           ],
           "explanation": "Dziękujemy „za coś”: „dziękuję za życzenia”. „Dziękuję o” i „dziękuję na” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -516,8 +516,8 @@
           "id": "el2-2",
           "answer": "b) Od",
           "options": [
-            "a) Z",
             "b) Od",
+            "a) Z",
             "c) Do"
           ],
           "explanation": "Początek okresu wyrażamy słowem „od”: „od pierwszego grudnia”. „Do” opisuje koniec, a „z” nie pasuje do daty.",
@@ -527,9 +527,9 @@
           "id": "el2-3",
           "answer": "c) aby",
           "options": [
+            "c) aby",
             "a) że",
-            "b) bo",
-            "c) aby"
+            "b) bo"
           ],
           "explanation": "Po „Piszę, aby” stoi bezokolicznik: „aby umówić się”. „Że” i „bo” wymagają zdania z odmienionym czasownikiem.",
           "grammar_point": "rejestr-formalny"
@@ -538,9 +538,9 @@
           "id": "el2-4",
           "answer": "a) W związku z tym",
           "options": [
-            "a) W związku z tym",
+            "c) Z związku z tym",
             "b) W związku na to",
-            "c) Z związku z tym"
+            "a) W związku z tym"
           ],
           "explanation": "„W związku z tym” znaczy „dlatego” i łączy dwa zdania w oficjalnym liście. Pozostałe wyrażenia są błędne.",
           "grammar_point": "rejestr-formalny"
@@ -549,9 +549,9 @@
           "id": "el2-5",
           "answer": "c) na",
           "options": [
+            "c) na",
             "a) do",
-            "b) w",
-            "c) na"
+            "b) w"
           ],
           "explanation": "Mówimy „umowa na czas nieokreślony”. Przyimki „do” i „w” nie tworzą tego wyrażenia.",
           "grammar_point": "rejestr-formalny"
@@ -561,8 +561,8 @@
           "answer": "b) w",
           "options": [
             "a) na",
-            "b) w",
-            "c) za"
+            "c) za",
+            "b) w"
           ],
           "explanation": "Z „tygodniem” używamy „w”: „w przyszłym tygodniu”. „Na przyszłym tygodniu” i „za przyszłym tygodniu” są błędne.",
           "grammar_point": "rejestr-formalny"
@@ -572,8 +572,8 @@
           "answer": "a) o",
           "options": [
             "a) o",
-            "b) za",
-            "c) na"
+            "c) na",
+            "b) za"
           ],
           "explanation": "Prosimy „o coś”: „proszę o potwierdzenie”. „Prosić za” i „prosić na” mają inne znaczenie albo są błędne.",
           "grammar_point": "rejestr-formalny"
@@ -583,8 +583,8 @@
           "answer": "c) wdzięczna",
           "options": [
             "a) zadowolona",
-            "b) miła",
-            "c) wdzięczna"
+            "c) wdzięczna",
+            "b) miła"
           ],
           "explanation": "„Być wdzięcznym za coś” to stała formuła w liście z prośbą. „Zadowolona” łączy się z „z”, a „miła” nie pasuje do zdania.",
           "grammar_point": "rejestr-formalny"
@@ -593,8 +593,8 @@
           "id": "el2-9",
           "answer": "c) Z góry",
           "options": [
-            "a) Od góry",
             "b) Na górze",
+            "a) Od góry",
             "c) Z góry"
           ],
           "explanation": "„Z góry dziękuję” to stała formuła końcowa listu z prośbą. Inne wyrażenia mówią o położeniu.",
@@ -604,9 +604,9 @@
           "id": "el2-10",
           "answer": "a) Z poważaniem",
           "options": [
+            "c) Pa",
             "a) Z poważaniem",
-            "b) Cześć",
-            "c) Pa"
+            "b) Cześć"
           ],
           "explanation": "Do osoby z działu HR piszemy oficjalnie i kończymy „Z poważaniem”. „Cześć” i „Pa” są potoczne.",
           "grammar_point": "rejestr-formalny"

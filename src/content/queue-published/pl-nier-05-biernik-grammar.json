@@ -116,8 +116,8 @@
           "answer": "sprzedać",
           "grammar_point": "slownictwo",
           "options": [
-            "sprzedać",
             "kupić",
+            "sprzedać",
             "podpisać"
           ],
           "explanation": "Właścicielka, która wyjeżdża, sprzedaje mieszkanie."
@@ -128,9 +128,9 @@
           "answer": "obejrzeć",
           "grammar_point": "slownictwo",
           "options": [
+            "zaprosić",
             "wynająć",
-            "obejrzeć",
-            "zaprosić"
+            "obejrzeć"
           ],
           "explanation": "Obejrzeć = przyjść i dokładnie sprawdzić."
         },
@@ -140,9 +140,9 @@
           "answer": "wynajmuje",
           "grammar_point": "slownictwo",
           "options": [
-            "wynajmuje",
             "sprzedaje",
-            "podpisuje"
+            "podpisuje",
+            "wynajmuje"
           ],
           "explanation": "Wynajmować = brać na czas za czynsz."
         },
@@ -152,9 +152,9 @@
           "answer": "podpisują",
           "grammar_point": "slownictwo",
           "options": [
-            "pokazują",
+            "zapraszają",
             "podpisują",
-            "zapraszają"
+            "pokazują"
           ],
           "explanation": "Podpisywać = pisać nazwisko pod dokumentem."
         },
@@ -164,9 +164,9 @@
           "answer": "pokazuje",
           "grammar_point": "slownictwo",
           "options": [
-            "sprzedaje",
+            "pokazuje",
             "podpisuje",
-            "pokazuje"
+            "sprzedaje"
           ],
           "explanation": "Pokazywać = prowadzić klienta i mówić, co widzi."
         },
@@ -176,8 +176,8 @@
           "answer": "zaprasza",
           "grammar_point": "slownictwo",
           "options": [
-            "zaprasza",
             "kupuje",
+            "zaprasza",
             "wynajmuje"
           ],
           "explanation": "Zapraszać = mówić «proszę przyjść»."
@@ -209,9 +209,9 @@
           "answer": "kuchnię",
           "grammar_point": "biernik-rzeczownik",
           "options": [
-            "kuchnia",
             "kuchni",
-            "kuchnię"
+            "kuchnię",
+            "kuchnia"
           ],
           "explanation": "-ia → -ię: kuchnia → kuchnię."
         },
@@ -221,9 +221,9 @@
           "answer": "umowę",
           "grammar_point": "biernik-rzeczownik",
           "options": [
+            "umowy",
             "umowa",
-            "umowę",
-            "umowy"
+            "umowę"
           ],
           "explanation": "-a → -ę: umowa → umowę."
         },
@@ -246,8 +246,8 @@
           "grammar_point": "biernik-rzeczownik",
           "options": [
             "piwnica",
-            "piwnicę",
-            "piwnicy"
+            "piwnicy",
+            "piwnicę"
           ],
           "explanation": "-ica → -icę: piwnica → piwnicę."
         },
@@ -257,9 +257,9 @@
           "answer": "dzielnicę",
           "grammar_point": "biernik-rzeczownik",
           "options": [
-            "dzielnicy",
             "dzielnicą",
-            "dzielnicę"
+            "dzielnicę",
+            "dzielnicy"
           ],
           "explanation": "-ica → -icę: dzielnica → dzielnicę."
         },
@@ -269,9 +269,9 @@
           "answer": "wartość",
           "grammar_point": "biernik-rzeczownik",
           "options": [
-            "wartość",
+            "wartościę",
             "wartości",
-            "wartościę"
+            "wartość"
           ],
           "explanation": "Żeński na spółgłoskę (-ość) nie zmienia się: biernik = mianownik."
         },
@@ -325,9 +325,9 @@
           "answer": "balkon",
           "grammar_point": "biernik-rzeczownik",
           "options": [
+            "balkonę",
             "balkon",
-            "balkona",
-            "balkonę"
+            "balkona"
           ],
           "explanation": "Balkon to rzecz: biernik = mianownik."
         },
@@ -337,9 +337,9 @@
           "answer": "klienta",
           "grammar_point": "biernik-osobowy",
           "options": [
+            "klientę",
             "klient",
-            "klienta",
-            "klientę"
+            "klienta"
           ],
           "explanation": "Klient to człowiek: biernik = dopełniacz, -a."
         },
@@ -349,8 +349,8 @@
           "answer": "mieszkanie",
           "grammar_point": "biernik-rzeczownik",
           "options": [
-            "mieszkania",
             "mieszkanie",
+            "mieszkania",
             "mieszkanią"
           ],
           "explanation": "Rodzaj nijaki: biernik = mianownik."
@@ -375,8 +375,8 @@
           "answer": "właściciela",
           "grammar_point": "biernik-osobowy",
           "options": [
-            "właściciel",
             "właściciela",
+            "właściciel",
             "właścicielę"
           ],
           "explanation": "Właściciel to człowiek: -a."
@@ -415,9 +415,9 @@
           "answer": "dokument",
           "grammar_point": "biernik-rzeczownik",
           "options": [
+            "dokumentu",
             "dokumenta",
-            "dokument",
-            "dokumentu"
+            "dokument"
           ],
           "explanation": "Dokument to rzecz: bez zmian."
         }
@@ -436,9 +436,9 @@
           "answer": "mężczyznę",
           "grammar_point": "biernik-osobowy",
           "options": [
+            "mężczyzna",
             "mężczyznę",
-            "mężczyzny",
-            "mężczyzna"
+            "mężczyzny"
           ],
           "explanation": "Mężczyzna kończy się na -a: biernik -ę, jak żeńskie."
         },
@@ -496,8 +496,8 @@
           "grammar_point": "biernik-rzeczownik",
           "options": [
             "windę",
-            "winda",
-            "windy"
+            "windy",
+            "winda"
           ],
           "explanation": "Winda to rzecz żeńska: -a → -ę."
         }
@@ -544,9 +544,9 @@
           "answer": "sąsiadów",
           "grammar_point": "biernik-osobowy",
           "options": [
-            "sąsiedzi",
+            "sąsiady",
             "sąsiadów",
-            "sąsiady"
+            "sąsiedzi"
           ],
           "explanation": "Mężczyźni w mnogiej: biernik = dopełniacz → sąsiadów."
         },
@@ -591,9 +591,9 @@
           "answer": "klientki",
           "grammar_point": "biernik-osobowy",
           "options": [
+            "klientki",
             "klientek",
-            "klientów",
-            "klientki"
+            "klientów"
           ],
           "explanation": "Same kobiety: biernik = mianownik → klientki."
         },
@@ -603,9 +603,9 @@
           "answer": "klientów",
           "grammar_point": "biernik-osobowy",
           "options": [
+            "klienci",
             "klientki",
-            "klientów",
-            "klienci"
+            "klientów"
           ],
           "explanation": "Jest mężczyzna w grupie → klientów."
         }
@@ -624,9 +624,9 @@
           "answer": "ludzi",
           "grammar_point": "rzecz-nieregularne",
           "options": [
+            "ludzów",
             "ludzie",
-            "ludzi",
-            "ludzów"
+            "ludzi"
           ],
           "explanation": "Ludzie → biernik ludzi (jak dopełniacz)."
         },
@@ -636,9 +636,9 @@
           "answer": "dzieci",
           "grammar_point": "rzecz-nieregularne",
           "options": [
+            "dzieciąt",
             "dzieci",
-            "dzieciów",
-            "dzieciąt"
+            "dzieciów"
           ],
           "explanation": "Dzieci mają biernik taki sam jak mianownik: dzieci."
         },
@@ -648,8 +648,8 @@
           "answer": "braci",
           "grammar_point": "rzecz-nieregularne",
           "options": [
-            "bracia",
             "braci",
+            "bracia",
             "bratów"
           ],
           "explanation": "Bracia → braci."
@@ -660,9 +660,9 @@
           "answer": "rodziców",
           "grammar_point": "rzecz-nieregularne",
           "options": [
+            "rodzicy",
             "rodzice",
-            "rodziców",
-            "rodzicy"
+            "rodziców"
           ],
           "explanation": "Rodzice → rodziców."
         },
@@ -702,9 +702,9 @@
           "answer": "ten",
           "grammar_point": "zaimki-wskazujace",
           "options": [
+            "tę",
             "ten",
-            "tego",
-            "tę"
+            "tego"
           ],
           "explanation": "Balkon to rzecz rodzaju męskiego: ten balkon."
         },
@@ -714,9 +714,9 @@
           "answer": "tego",
           "grammar_point": "zaimki-wskazujace",
           "options": [
-            "tego",
+            "tą",
             "ten",
-            "tą"
+            "tego"
           ],
           "explanation": "Klient to człowiek: tego klienta."
         },
@@ -727,8 +727,8 @@
           "grammar_point": "zaimki-wskazujace",
           "options": [
             "tę",
-            "ta",
-            "tej"
+            "tej",
+            "ta"
           ],
           "explanation": "Rodzaj żeński: ta → tę."
         },
@@ -738,9 +738,9 @@
           "answer": "to",
           "grammar_point": "zaimki-wskazujace",
           "options": [
-            "to",
+            "tę",
             "tego",
-            "tę"
+            "to"
           ],
           "explanation": "Rodzaj nijaki: biernik = mianownik: to mieszkanie."
         },
@@ -751,8 +751,8 @@
           "grammar_point": "zaimki-wskazujace",
           "options": [
             "te",
-            "tych",
-            "tę"
+            "tę",
+            "tych"
           ],
           "explanation": "Rzeczy w mnogiej: te oferty."
         },
@@ -762,9 +762,9 @@
           "answer": "tych",
           "grammar_point": "zaimki-wskazujace",
           "options": [
-            "te",
             "tych",
-            "ci"
+            "ci",
+            "te"
           ],
           "explanation": "Mężczyźni w mnogiej: tych klientów."
         },
@@ -839,9 +839,9 @@
           "answer": "Panią",
           "grammar_point": "zaimki-osobowe-przypadki",
           "options": [
+            "Panie",
             "Pani",
-            "Panią",
-            "Panie"
+            "Panią"
           ],
           "explanation": "Pani → Panią."
         },
@@ -851,9 +851,9 @@
           "answer": "Pana",
           "grammar_point": "zaimki-osobowe-przypadki",
           "options": [
-            "Pan",
             "Pana",
-            "Panu"
+            "Panu",
+            "Pan"
           ],
           "explanation": "Pan → Pana."
         },
@@ -875,8 +875,8 @@
           "answer": "go",
           "grammar_point": "zaimki-osobowe-przypadki",
           "options": [
-            "go",
             "mu",
+            "go",
             "on"
           ],
           "explanation": "On → go."
@@ -899,9 +899,9 @@
           "answer": "je",
           "grammar_point": "zaimki-osobowe-przypadki",
           "options": [
-            "je",
+            "im",
             "ich",
-            "im"
+            "je"
           ],
           "explanation": "One (rzeczy) → je."
         },
@@ -911,9 +911,9 @@
           "answer": "ich",
           "grammar_point": "zaimki-osobowe-przypadki",
           "options": [
-            "ich",
+            "im",
             "je",
-            "im"
+            "ich"
           ],
           "explanation": "Oni (mężczyźni, grupa z mężczyzną) → ich."
         },
@@ -936,8 +936,8 @@
           "grammar_point": "zaimki-osobowe-przypadki",
           "options": [
             "cię",
-            "ci",
-            "ty"
+            "ty",
+            "ci"
           ],
           "explanation": "Ty → cię (krótka forma)."
         },
@@ -947,9 +947,9 @@
           "answer": "nas",
           "grammar_point": "zaimki-osobowe-przypadki",
           "options": [
+            "my",
             "nas",
-            "nam",
-            "my"
+            "nam"
           ],
           "explanation": "My → nas."
         },
@@ -959,9 +959,9 @@
           "answer": "was",
           "grammar_point": "zaimki-osobowe-przypadki",
           "options": [
-            "was",
+            "wy",
             "wam",
-            "wy"
+            "was"
           ],
           "explanation": "Wy → was."
         }
@@ -1100,8 +1100,8 @@
           "answer": "kopii",
           "grammar_point": "potrzebowac-dopelniacz",
           "options": [
-            "kopię",
-            "kopii"
+            "kopii",
+            "kopię"
           ],
           "explanation": "Potrzebować + dopełniacz: potrzebuje kopii."
         },
@@ -1144,8 +1144,8 @@
           "answer": "klucza",
           "grammar_point": "rekcja",
           "options": [
-            "klucz",
-            "klucza"
+            "klucza",
+            "klucz"
           ],
           "explanation": "Szukać + dopełniacz: klucza."
         }
@@ -1164,8 +1164,8 @@
           "answer": "na",
           "grammar_point": "przypadki-przyimki",
           "options": [
-            "na",
             "o",
+            "na",
             "za"
           ],
           "explanation": "Czekać na + biernik."
@@ -1177,8 +1177,8 @@
           "grammar_point": "przypadki-przyimki",
           "options": [
             "na",
-            "za",
-            "o"
+            "o",
+            "za"
           ],
           "explanation": "Pytać o + biernik."
         },
@@ -1188,9 +1188,9 @@
           "answer": "o",
           "grammar_point": "przypadki-przyimki",
           "options": [
-            "o",
+            "przez",
             "na",
-            "przez"
+            "o"
           ],
           "explanation": "Prosić o + biernik."
         },
@@ -1200,9 +1200,9 @@
           "answer": "za",
           "grammar_point": "przypadki-przyimki",
           "options": [
-            "na",
             "za",
-            "o"
+            "o",
+            "na"
           ],
           "explanation": "Dziękować za + biernik."
         },
@@ -1224,9 +1224,9 @@
           "answer": "na",
           "grammar_point": "przypadki-przyimki",
           "options": [
+            "na",
             "o",
-            "za",
-            "na"
+            "za"
           ],
           "explanation": "Odpowiadać na + biernik."
         },
@@ -1236,9 +1236,9 @@
           "answer": "w",
           "grammar_point": "przyimki-czasu",
           "options": [
-            "w",
+            "za",
             "na",
-            "za"
+            "w"
           ],
           "explanation": "Dzień tygodnia: w + biernik (w piątek)."
         },
@@ -1262,8 +1262,8 @@
           "answer": "przez",
           "grammar_point": "przypadki-przyimki",
           "options": [
-            "przez",
             "za",
+            "przez",
             "o"
           ],
           "explanation": "Przez + biernik: sposób, środek (przez internet)."
@@ -1375,8 +1375,8 @@
           "grammar_point": "zaimki-osobowe-przypadki",
           "options": [
             "ją",
-            "jej",
-            "ona"
+            "ona",
+            "jej"
           ],
           "explanation": "Ona → ją."
         },
@@ -1393,9 +1393,9 @@
           "answer": "w",
           "grammar_point": "przyimki-czasu",
           "options": [
+            "za",
             "na",
-            "w",
-            "za"
+            "w"
           ],
           "explanation": "Dzień tygodnia: w + biernik."
         },
@@ -1405,9 +1405,9 @@
           "answer": "Pana",
           "grammar_point": "zaimki-osobowe-przypadki",
           "options": [
-            "Pan",
             "Pana",
-            "Panu"
+            "Panu",
+            "Pan"
           ],
           "explanation": "Pan → Pana."
         },
@@ -1431,9 +1431,9 @@
           "answer": "na",
           "grammar_point": "przypadki-przyimki",
           "options": [
+            "za",
             "na",
-            "o",
-            "za"
+            "o"
           ],
           "explanation": "Czekać na + biernik."
         },

@@ -62,8 +62,8 @@
           "grammar_point": "gdzie-dokad-uslugi",
           "options": [
             "na pocztę",
-            "na poczcie",
-            "do poczty"
+            "do poczty",
+            "na poczcie"
           ],
           "explanation": "Idę dokąd? → na + biernik: na pocztę. Na poczcie — tam, gdzie jestem."
         },
@@ -73,8 +73,8 @@
           "answer": "w banku",
           "grammar_point": "gdzie-dokad-uslugi",
           "options": [
-            "w banku",
             "u banku",
+            "w banku",
             "do banku"
           ],
           "explanation": "Instytucja → w + miejscownik. „U” stawiamy tylko przed osobą: u fryzjera, u lekarza."
@@ -85,9 +85,9 @@
           "answer": "do fryzjera",
           "grammar_point": "gdzie-dokad-uslugi",
           "options": [
-            "do fryzjera",
             "u fryzjera",
-            "na fryzjera"
+            "na fryzjera",
+            "do fryzjera"
           ],
           "explanation": "Dokąd? do osoby → do + dopełniacz: do fryzjera."
         },
@@ -109,9 +109,9 @@
           "answer": "na dworcu",
           "grammar_point": "gdzie-dokad-uslugi",
           "options": [
-            "na dworcu",
             "w dworcu",
-            "na dworzec"
+            "na dworzec",
+            "na dworcu"
           ],
           "explanation": "Dworzec jak poczta: na dworcu (gdzie?), na dworzec (dokąd?)."
         },
@@ -121,8 +121,8 @@
           "answer": "do urzędu",
           "grammar_point": "gdzie-dokad-uslugi",
           "options": [
-            "do urzędu",
             "na urząd",
+            "do urzędu",
             "w urzędzie"
           ],
           "explanation": "Jadę dokąd? → do urzędu. Ale: na pocztę, na dworzec."
@@ -133,9 +133,9 @@
           "answer": "w serwisie",
           "grammar_point": "gdzie-dokad-uslugi",
           "options": [
-            "w serwisie",
             "do serwisu",
-            "na serwisie"
+            "na serwisie",
+            "w serwisie"
           ],
           "explanation": "Zostawiłem gdzie? → w serwisie. Oddałem dokąd? → do serwisu."
         }
@@ -210,9 +210,9 @@
           "answer": "serwisu",
           "grammar_point": "polecac-przypadek",
           "options": [
-            "serwisu",
+            "serwisem",
             "serwis",
-            "serwisem"
+            "serwisu"
           ],
           "explanation": "Nie polecam + dopełniacz — jak „nie lubię”, „nie mam”."
         },
@@ -222,9 +222,9 @@
           "answer": "tę piekarnię",
           "grammar_point": "polecac-przypadek",
           "options": [
+            "ta piekarnia",
             "tę piekarnię",
-            "tej piekarni",
-            "ta piekarnia"
+            "tej piekarni"
           ],
           "explanation": "Polecam + biernik: polecam tę piekarnię."
         },
@@ -235,8 +235,8 @@
           "grammar_point": "polecac-przypadek",
           "options": [
             "nowej fryzjerki",
-            "nową fryzjerką",
-            "nowa fryzjerka"
+            "nowa fryzjerka",
+            "nową fryzjerką"
           ],
           "explanation": "Zadowolony z + dopełniacz: z nowej fryzjerki."
         },
@@ -258,9 +258,9 @@
           "answer": "tę kurtkę",
           "grammar_point": "polecac-przypadek",
           "options": [
-            "tę kurtkę",
+            "ta kurtka",
             "tej kurtki",
-            "ta kurtka"
+            "tę kurtkę"
           ],
           "explanation": "Zareklamować co? → biernik: tę kurtkę."
         },
@@ -271,8 +271,8 @@
           "grammar_point": "polecac-przypadek",
           "options": [
             "paragonu",
-            "paragon",
-            "paragonem"
+            "paragonem",
+            "paragon"
           ],
           "explanation": "Nie mam + dopełniacz: nie mam paragonu."
         }
@@ -457,30 +457,30 @@
       "text": "Marek: Serwis Marek, słucham.\n\nOlena: Dzień dobry, mówi Olena Kovalenko. {el1-1}\n\nMarek: Co się stało?\n\nOlena: Pralka nie działa i na podłodze jest woda. {el1-2}\n\nMarek: {el1-3} Mogę być u pani jutro rano.\n\nOlena: {el1-4} Wychodzę do pracy o ósmej. {el1-5}\n\nMarek: {el1-6} Ale spróbuję być o wpół do ósmej.\n\nOlena: Bardzo dziękuję. {el1-7}\n\nMarek: {el1-8} Dopiero wtedy będę mógł powiedzieć, ile to kosztuje.\n\nOlena: Rozumiem. Do widzenia.",
       "bank": [
         "a) Czy może pan przyjechać dzisiaj?",
-        "b) To zależy od korków.",
-        "c) Najpierw muszę zobaczyć pralkę.",
-        "d) Dziękuję, mam już hydraulika.",
-        "e) W takim razie poproszę na jutro rano.",
-        "f) Czy mogę zapłacić kartą?",
-        "g) Dzwonię w sprawie pralki.",
-        "h) Ile to będzie kosztować?",
-        "i) Niestety dzisiaj nie mogę.",
+        "b) Czy mogę zapłacić kartą?",
+        "c) Dziękuję, mam już hydraulika.",
+        "d) W takim razie poproszę na jutro rano.",
+        "e) To zależy od korków.",
+        "f) Ile to będzie kosztować?",
+        "g) Niestety dzisiaj nie mogę.",
+        "h) Najpierw muszę zobaczyć pralkę.",
+        "i) Dzwonię w sprawie pralki.",
         "j) Czy może pan przyjechać przed ósmą?"
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "g) Dzwonię w sprawie pralki.",
+          "answer": "i) Dzwonię w sprawie pralki.",
           "options": [
             "a) Czy może pan przyjechać dzisiaj?",
-            "b) To zależy od korków.",
-            "c) Najpierw muszę zobaczyć pralkę.",
-            "d) Dziękuję, mam już hydraulika.",
-            "e) W takim razie poproszę na jutro rano.",
-            "f) Czy mogę zapłacić kartą?",
-            "g) Dzwonię w sprawie pralki.",
-            "h) Ile to będzie kosztować?",
-            "i) Niestety dzisiaj nie mogę.",
+            "b) Czy mogę zapłacić kartą?",
+            "c) Dziękuję, mam już hydraulika.",
+            "d) W takim razie poproszę na jutro rano.",
+            "e) To zależy od korków.",
+            "f) Ile to będzie kosztować?",
+            "g) Niestety dzisiaj nie mogę.",
+            "h) Najpierw muszę zobaczyć pralkę.",
+            "i) Dzwonię w sprawie pralki.",
             "j) Czy może pan przyjechać przed ósmą?"
           ],
           "explanation": "Olena podaje powód telefonu, a Marek pyta „Co się stało?”. Pytanie o płatność kartą nie pasuje na początek rozmowy.",
@@ -491,14 +491,14 @@
           "answer": "a) Czy może pan przyjechać dzisiaj?",
           "options": [
             "a) Czy może pan przyjechać dzisiaj?",
-            "b) To zależy od korków.",
-            "c) Najpierw muszę zobaczyć pralkę.",
-            "d) Dziękuję, mam już hydraulika.",
-            "e) W takim razie poproszę na jutro rano.",
-            "f) Czy mogę zapłacić kartą?",
-            "g) Dzwonię w sprawie pralki.",
-            "h) Ile to będzie kosztować?",
-            "i) Niestety dzisiaj nie mogę.",
+            "b) Czy mogę zapłacić kartą?",
+            "c) Dziękuję, mam już hydraulika.",
+            "d) W takim razie poproszę na jutro rano.",
+            "e) To zależy od korków.",
+            "f) Ile to będzie kosztować?",
+            "g) Niestety dzisiaj nie mogę.",
+            "h) Najpierw muszę zobaczyć pralkę.",
+            "i) Dzwonię w sprawie pralki.",
             "j) Czy może pan przyjechać przed ósmą?"
           ],
           "explanation": "Po opisie awarii Olena prosi o szybką wizytę, bo woda leje się na podłogę. Fragment „Czy może pan przyjechać przed ósmą?” dotyczy dopiero jutrzejszego poranka.",
@@ -506,17 +506,17 @@
         },
         {
           "id": "el1-3",
-          "answer": "i) Niestety dzisiaj nie mogę.",
+          "answer": "g) Niestety dzisiaj nie mogę.",
           "options": [
             "a) Czy może pan przyjechać dzisiaj?",
-            "b) To zależy od korków.",
-            "c) Najpierw muszę zobaczyć pralkę.",
-            "d) Dziękuję, mam już hydraulika.",
-            "e) W takim razie poproszę na jutro rano.",
-            "f) Czy mogę zapłacić kartą?",
-            "g) Dzwonię w sprawie pralki.",
-            "h) Ile to będzie kosztować?",
-            "i) Niestety dzisiaj nie mogę.",
+            "b) Czy mogę zapłacić kartą?",
+            "c) Dziękuję, mam już hydraulika.",
+            "d) W takim razie poproszę na jutro rano.",
+            "e) To zależy od korków.",
+            "f) Ile to będzie kosztować?",
+            "g) Niestety dzisiaj nie mogę.",
+            "h) Najpierw muszę zobaczyć pralkę.",
+            "i) Dzwonię w sprawie pralki.",
             "j) Czy może pan przyjechać przed ósmą?"
           ],
           "explanation": "Marek odmawia na dziś i od razu proponuje jutro. „Czy może pan przyjechać dzisiaj?” to pytanie klienta, a nie odpowiedź fachowca.",
@@ -524,17 +524,17 @@
         },
         {
           "id": "el1-4",
-          "answer": "e) W takim razie poproszę na jutro rano.",
+          "answer": "d) W takim razie poproszę na jutro rano.",
           "options": [
             "a) Czy może pan przyjechać dzisiaj?",
-            "b) To zależy od korków.",
-            "c) Najpierw muszę zobaczyć pralkę.",
-            "d) Dziękuję, mam już hydraulika.",
-            "e) W takim razie poproszę na jutro rano.",
-            "f) Czy mogę zapłacić kartą?",
-            "g) Dzwonię w sprawie pralki.",
-            "h) Ile to będzie kosztować?",
-            "i) Niestety dzisiaj nie mogę.",
+            "b) Czy mogę zapłacić kartą?",
+            "c) Dziękuję, mam już hydraulika.",
+            "d) W takim razie poproszę na jutro rano.",
+            "e) To zależy od korków.",
+            "f) Ile to będzie kosztować?",
+            "g) Niestety dzisiaj nie mogę.",
+            "h) Najpierw muszę zobaczyć pralkę.",
+            "i) Dzwonię w sprawie pralki.",
             "j) Czy może pan przyjechać przed ósmą?"
           ],
           "explanation": "Olena przyjmuje propozycję jutrzejszej wizyty. „W takim razie” pokazuje, że rezygnuje z dzisiejszego terminu.",
@@ -545,14 +545,14 @@
           "answer": "j) Czy może pan przyjechać przed ósmą?",
           "options": [
             "a) Czy może pan przyjechać dzisiaj?",
-            "b) To zależy od korków.",
-            "c) Najpierw muszę zobaczyć pralkę.",
-            "d) Dziękuję, mam już hydraulika.",
-            "e) W takim razie poproszę na jutro rano.",
-            "f) Czy mogę zapłacić kartą?",
-            "g) Dzwonię w sprawie pralki.",
-            "h) Ile to będzie kosztować?",
-            "i) Niestety dzisiaj nie mogę.",
+            "b) Czy mogę zapłacić kartą?",
+            "c) Dziękuję, mam już hydraulika.",
+            "d) W takim razie poproszę na jutro rano.",
+            "e) To zależy od korków.",
+            "f) Ile to będzie kosztować?",
+            "g) Niestety dzisiaj nie mogę.",
+            "h) Najpierw muszę zobaczyć pralkę.",
+            "i) Dzwonię w sprawie pralki.",
             "j) Czy może pan przyjechać przed ósmą?"
           ],
           "explanation": "Olena wychodzi o ósmej, więc prosi o przyjazd przed tą godziną. Fragment „na jutro rano” już padł w poprzedniej wypowiedzi.",
@@ -560,17 +560,17 @@
         },
         {
           "id": "el1-6",
-          "answer": "b) To zależy od korków.",
+          "answer": "e) To zależy od korków.",
           "options": [
             "a) Czy może pan przyjechać dzisiaj?",
-            "b) To zależy od korków.",
-            "c) Najpierw muszę zobaczyć pralkę.",
-            "d) Dziękuję, mam już hydraulika.",
-            "e) W takim razie poproszę na jutro rano.",
-            "f) Czy mogę zapłacić kartą?",
-            "g) Dzwonię w sprawie pralki.",
-            "h) Ile to będzie kosztować?",
-            "i) Niestety dzisiaj nie mogę.",
+            "b) Czy mogę zapłacić kartą?",
+            "c) Dziękuję, mam już hydraulika.",
+            "d) W takim razie poproszę na jutro rano.",
+            "e) To zależy od korków.",
+            "f) Ile to będzie kosztować?",
+            "g) Niestety dzisiaj nie mogę.",
+            "h) Najpierw muszę zobaczyć pralkę.",
+            "i) Dzwonię w sprawie pralki.",
             "j) Czy może pan przyjechać przed ósmą?"
           ],
           "explanation": "Marek nie może zagwarantować godziny, bo ruch uliczny jest nieprzewidywalny. Dlatego mówi „To zależy od korków” i dodaje, że spróbuje.",
@@ -578,17 +578,17 @@
         },
         {
           "id": "el1-7",
-          "answer": "h) Ile to będzie kosztować?",
+          "answer": "f) Ile to będzie kosztować?",
           "options": [
             "a) Czy może pan przyjechać dzisiaj?",
-            "b) To zależy od korków.",
-            "c) Najpierw muszę zobaczyć pralkę.",
-            "d) Dziękuję, mam już hydraulika.",
-            "e) W takim razie poproszę na jutro rano.",
-            "f) Czy mogę zapłacić kartą?",
-            "g) Dzwonię w sprawie pralki.",
-            "h) Ile to będzie kosztować?",
-            "i) Niestety dzisiaj nie mogę.",
+            "b) Czy mogę zapłacić kartą?",
+            "c) Dziękuję, mam już hydraulika.",
+            "d) W takim razie poproszę na jutro rano.",
+            "e) To zależy od korków.",
+            "f) Ile to będzie kosztować?",
+            "g) Niestety dzisiaj nie mogę.",
+            "h) Najpierw muszę zobaczyć pralkę.",
+            "i) Dzwonię w sprawie pralki.",
             "j) Czy może pan przyjechać przed ósmą?"
           ],
           "explanation": "Olena chce znać koszt naprawy, a Marek odpowiada, że powie to po obejrzeniu pralki. „Czy mogę zapłacić kartą?” jest innym pytaniem.",
@@ -596,17 +596,17 @@
         },
         {
           "id": "el1-8",
-          "answer": "c) Najpierw muszę zobaczyć pralkę.",
+          "answer": "h) Najpierw muszę zobaczyć pralkę.",
           "options": [
             "a) Czy może pan przyjechać dzisiaj?",
-            "b) To zależy od korków.",
-            "c) Najpierw muszę zobaczyć pralkę.",
-            "d) Dziękuję, mam już hydraulika.",
-            "e) W takim razie poproszę na jutro rano.",
-            "f) Czy mogę zapłacić kartą?",
-            "g) Dzwonię w sprawie pralki.",
-            "h) Ile to będzie kosztować?",
-            "i) Niestety dzisiaj nie mogę.",
+            "b) Czy mogę zapłacić kartą?",
+            "c) Dziękuję, mam już hydraulika.",
+            "d) W takim razie poproszę na jutro rano.",
+            "e) To zależy od korków.",
+            "f) Ile to będzie kosztować?",
+            "g) Niestety dzisiaj nie mogę.",
+            "h) Najpierw muszę zobaczyć pralkę.",
+            "i) Dzwonię w sprawie pralki.",
             "j) Czy może pan przyjechać przed ósmą?"
           ],
           "explanation": "Marek tłumaczy, dlaczego nie podaje ceny od razu: najpierw musi sprawdzić, co się zepsuło.",
@@ -626,8 +626,8 @@
           "id": "el2-1",
           "answer": "a) Szanowni",
           "options": [
-            "a) Szanowni",
             "b) Szanowne",
+            "a) Szanowni",
             "c) Szanowny"
           ],
           "explanation": "Do firmy lub grupy osób piszemy „Szanowni Państwo”. „Szanowne” i „Szanowny” nie pasują do słowa „Państwo”.",
@@ -637,9 +637,9 @@
           "id": "el2-2",
           "answer": "a) w sprawie",
           "options": [
-            "a) w sprawie",
+            "c) do sprawy",
             "b) o sprawie",
-            "c) do sprawy"
+            "a) w sprawie"
           ],
           "explanation": "Formuła „Piszę w sprawie + dopełniacz” to stały zwrot w listach. Pozostałe warianty brzmią nienaturalnie.",
           "grammar_point": "rejestr-formalny"
@@ -660,8 +660,8 @@
           "answer": "a) z",
           "options": [
             "a) z",
-            "b) na",
-            "c) do"
+            "c) do",
+            "b) na"
           ],
           "explanation": "Mówimy „zgodnie z warunkami”. Z przyimkami „na” i „do” to wyrażenie jest błędne.",
           "grammar_point": "rejestr-formalny"
@@ -681,9 +681,9 @@
           "id": "el2-6",
           "answer": "b) o",
           "options": [
-            "a) za",
+            "c) na",
             "b) o",
-            "c) na"
+            "a) za"
           ],
           "explanation": "Stały zwrot to „prosić o coś”, np. o zwrot pieniędzy. Przyimki „za” i „na” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -692,9 +692,9 @@
           "id": "el2-7",
           "answer": "b) bardzo",
           "options": [
+            "c) wiele",
             "a) dużo",
-            "b) bardzo",
-            "c) wiele"
+            "b) bardzo"
           ],
           "explanation": "W formule grzecznościowej mówimy „byłabym bardzo wdzięczna”. „Dużo” i „wiele” nie łączą się z tym przymiotnikiem.",
           "grammar_point": "rejestr-formalny"
@@ -703,9 +703,9 @@
           "id": "el2-8",
           "answer": "c) na",
           "options": [
-            "a) do",
             "b) o",
-            "c) na"
+            "c) na",
+            "a) do"
           ],
           "explanation": "Czasownik „czekać” łączy się z „na + biernik”: „czekam na wiadomość”. „Do” i „o” są błędne.",
           "grammar_point": "rejestr-formalny"
@@ -725,9 +725,9 @@
           "id": "el2-10",
           "answer": "c) Z",
           "options": [
-            "a) Pod",
             "b) Przy",
-            "c) Z"
+            "c) Z",
+            "a) Pod"
           ],
           "explanation": "Zakończenie oficjalnego listu to „Z poważaniem”. Przyimki „pod” i „przy” nie tworzą tej formuły.",
           "grammar_point": "rejestr-formalny"

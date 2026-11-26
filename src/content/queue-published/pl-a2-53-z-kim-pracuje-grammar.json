@@ -62,9 +62,9 @@
           "text": "Mapa Europy wisi nad ___ stołem.",
           "answer": "dużym",
           "options": [
-            "dużym",
+            "duży",
             "dużą",
-            "duży"
+            "dużym"
           ],
           "grammar_point": "narzednik-pelny",
           "explanation": "Stół — rodzaj męski. Nad czym? — narzędnik: dużym stołem."
@@ -74,9 +74,9 @@
           "text": "Pani Danuta jest ___ księgową.",
           "answer": "główną",
           "options": [
-            "główną",
             "główna",
-            "głównym"
+            "głównym",
+            "główną"
           ],
           "grammar_point": "narzednik-pelny",
           "explanation": "Być kim? — narzędnik. Rodzaj żeński: główną księgową, oba słowa na -ą."
@@ -98,8 +98,8 @@
           "text": "Czekam na ciebie przed ___.",
           "answer": "recepcją",
           "options": [
-            "recepcją",
             "recepcji",
+            "recepcją",
             "recepcja"
           ],
           "grammar_point": "narzednik-pelny",
@@ -111,8 +111,8 @@
           "answer": "szafką",
           "options": [
             "szafką",
-            "szafki",
-            "szafkę"
+            "szafkę",
+            "szafki"
           ],
           "grammar_point": "narzednik-pelny",
           "explanation": "Między … a … — oba słowa w narzędniku: między szafką a oknem."
@@ -122,9 +122,9 @@
           "text": "Często rozmawiam z ___ z działu IT.",
           "answer": "nowym kolegą",
           "options": [
-            "nowym kolegą",
+            "nowy kolega",
             "nowym kolegiem",
-            "nowy kolega"
+            "nowym kolegą"
           ],
           "grammar_point": "narzednik-pelny",
           "explanation": "Kolega to rodzaj męski, ale kończy się na -a, więc w narzędniku ma -ą: z kolegą. Przymiotnik — męski: nowym."
@@ -134,9 +134,9 @@
           "text": "Kim chcesz zostać? — Chcę zostać ___.",
           "answer": "dobrym przewodnikiem",
           "options": [
+            "dobry przewodnik",
             "dobrym przewodnikiem",
-            "dobrym przewodnikem",
-            "dobry przewodnik"
+            "dobrym przewodnikem"
           ],
           "grammar_point": "narzednik-pelny",
           "explanation": "Po -k piszemy -iem: przewodnikiem, kierownikiem, Tomkiem."
@@ -220,9 +220,9 @@
           "text": "Kto to jest? — To jest ___, nasz nowy kierownik.",
           "answer": "pan Piotr",
           "options": [
-            "pan Piotr",
+            "pana Piotra",
             "panem Piotrem",
-            "pana Piotra"
+            "pan Piotr"
           ],
           "grammar_point": "narzednik-zawod-z",
           "explanation": "Po „to jest” — mianownik: To jest pan Piotr. Narzędnik stoi po „jest” bez „to”: Pan Piotr jest kierownikiem."
@@ -232,9 +232,9 @@
           "text": "Po pierwszym tygodniu Olena jest bardzo ___.",
           "answer": "zmęczona",
           "options": [
+            "zmęczonej",
             "zmęczona",
-            "zmęczoną",
-            "zmęczonej"
+            "zmęczoną"
           ],
           "grammar_point": "narzednik-zawod-z",
           "explanation": "Sam przymiotnik po „być” — mianownik: jestem zmęczona. Narzędnik — gdy jest rzeczownik: jestem zmęczoną konsultantką."
@@ -256,8 +256,8 @@
           "text": "Wieczorem rozmawiam z mamą ___.",
           "answer": "przez telefon",
           "options": [
-            "przez telefon",
             "telefonem",
+            "przez telefon",
             "po telefonie"
           ],
           "grammar_point": "kalki-uk",
@@ -268,9 +268,9 @@
           "text": "Tomek? Na lunch zawsze chodzę z ___.",
           "answer": "nim",
           "options": [
-            "nim",
+            "jego",
             "go",
-            "jego"
+            "nim"
           ],
           "grammar_point": "zaimki-osobowe-przypadki",
           "explanation": "Po przyimku z — forma z n-: z nim, z nią, z nimi."
@@ -281,8 +281,8 @@
           "answer": "Panią",
           "options": [
             "Panią",
-            "Pani",
-            "Panem"
+            "Panem",
+            "Pani"
           ],
           "grammar_point": "pan-pani",
           "explanation": "Z kim? Do kobiety oficjalnie — z Panią."
@@ -292,8 +292,8 @@
           "text": "Kim jest twój brat? — Jest ___.",
           "answer": "lekarzem",
           "options": [
-            "lekarzem",
             "lekarz",
+            "lekarzem",
             "lekarza"
           ],
           "grammar_point": "narzednik-zawod-z",
@@ -379,158 +379,158 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Magda: Cześć, Olena! Dziś idziemy na obiad do baru mlecznego. Idziesz z nami?\n\nOlena: {el1-1} Z kim idziecie?\n\nMagda: Z Tomkiem i z panią Danutą z księgowości.\n\nOlena: {el1-2} Nie znam jeszcze pani Danuty dobrze.\n\nMagda: {el1-3} Pani Danuta jest bardzo miła.\n\nOlena: {el1-4} O której wychodzicie?\n\nMagda: Za dziesięć minut. {el1-5}\n\nOlena: Niestety jeszcze pracuję nad stroną internetową. {el1-6}\n\nMagda: {el1-7} Zaczekamy na ciebie przy recepcji.\n\nOlena: {el1-8}\n\nMagda: Do zobaczenia za chwilę!",
       "bank": [
-        "a) Chętnie, dziękuję za zaproszenie.",
-        "b) Chętnie ją poznam.",
-        "c) Niestety jestem dziś na urlopie.",
-        "d) Nie przejmuj się.",
-        "e) Dobrze, w takim razie idę z wami.",
-        "f) Zdążysz skończyć?",
-        "g) Czy możecie chwilę poczekać?",
-        "h) To żaden problem.",
-        "i) Jeszcze raz przepraszam za spóźnienie.",
-        "j) To bardzo miło z waszej strony."
+        "a) Niestety jestem dziś na urlopie.",
+        "b) Zdążysz skończyć?",
+        "c) Czy możecie chwilę poczekać?",
+        "d) To żaden problem.",
+        "e) Chętnie ją poznam.",
+        "f) Jeszcze raz przepraszam za spóźnienie.",
+        "g) Dobrze, w takim razie idę z wami.",
+        "h) Chętnie, dziękuję za zaproszenie.",
+        "i) To bardzo miło z waszej strony.",
+        "j) Nie przejmuj się."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "a) Chętnie, dziękuję za zaproszenie.",
+          "answer": "h) Chętnie, dziękuję za zaproszenie.",
           "options": [
-            "a) Chętnie, dziękuję za zaproszenie.",
-            "b) Chętnie ją poznam.",
-            "c) Niestety jestem dziś na urlopie.",
-            "d) Nie przejmuj się.",
-            "e) Dobrze, w takim razie idę z wami.",
-            "f) Zdążysz skończyć?",
-            "g) Czy możecie chwilę poczekać?",
-            "h) To żaden problem.",
-            "i) Jeszcze raz przepraszam za spóźnienie.",
-            "j) To bardzo miło z waszej strony."
+            "a) Niestety jestem dziś na urlopie.",
+            "b) Zdążysz skończyć?",
+            "c) Czy możecie chwilę poczekać?",
+            "d) To żaden problem.",
+            "e) Chętnie ją poznam.",
+            "f) Jeszcze raz przepraszam za spóźnienie.",
+            "g) Dobrze, w takim razie idę z wami.",
+            "h) Chętnie, dziękuję za zaproszenie.",
+            "i) To bardzo miło z waszej strony.",
+            "j) Nie przejmuj się."
           ],
           "explanation": "Olena przyjmuje zaproszenie na obiad i dziękuje. „Niestety jestem dziś na urlopie” nie pasuje, bo Olena jest w pracy i pyta o towarzystwo.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "b) Chętnie ją poznam.",
+          "answer": "e) Chętnie ją poznam.",
           "options": [
-            "a) Chętnie, dziękuję za zaproszenie.",
-            "b) Chętnie ją poznam.",
-            "c) Niestety jestem dziś na urlopie.",
-            "d) Nie przejmuj się.",
-            "e) Dobrze, w takim razie idę z wami.",
-            "f) Zdążysz skończyć?",
-            "g) Czy możecie chwilę poczekać?",
-            "h) To żaden problem.",
-            "i) Jeszcze raz przepraszam za spóźnienie.",
-            "j) To bardzo miło z waszej strony."
+            "a) Niestety jestem dziś na urlopie.",
+            "b) Zdążysz skończyć?",
+            "c) Czy możecie chwilę poczekać?",
+            "d) To żaden problem.",
+            "e) Chętnie ją poznam.",
+            "f) Jeszcze raz przepraszam za spóźnienie.",
+            "g) Dobrze, w takim razie idę z wami.",
+            "h) Chętnie, dziękuję za zaproszenie.",
+            "i) To bardzo miło z waszej strony.",
+            "j) Nie przejmuj się."
           ],
           "explanation": "Olena mówi, że nie zna jeszcze pani Danuty, i dlatego chce ją poznać. Fraza „Chętnie ją poznam” łączy się z tym zdaniem.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "d) Nie przejmuj się.",
+          "answer": "j) Nie przejmuj się.",
           "options": [
-            "a) Chętnie, dziękuję za zaproszenie.",
-            "b) Chętnie ją poznam.",
-            "c) Niestety jestem dziś na urlopie.",
-            "d) Nie przejmuj się.",
-            "e) Dobrze, w takim razie idę z wami.",
-            "f) Zdążysz skończyć?",
-            "g) Czy możecie chwilę poczekać?",
-            "h) To żaden problem.",
-            "i) Jeszcze raz przepraszam za spóźnienie.",
-            "j) To bardzo miło z waszej strony."
+            "a) Niestety jestem dziś na urlopie.",
+            "b) Zdążysz skończyć?",
+            "c) Czy możecie chwilę poczekać?",
+            "d) To żaden problem.",
+            "e) Chętnie ją poznam.",
+            "f) Jeszcze raz przepraszam za spóźnienie.",
+            "g) Dobrze, w takim razie idę z wami.",
+            "h) Chętnie, dziękuję za zaproszenie.",
+            "i) To bardzo miło z waszej strony.",
+            "j) Nie przejmuj się."
           ],
           "explanation": "Magda uspokaja Olenę, bo ta nie zna pani Danuty. „Nie przejmuj się” znaczy „nie martw się”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "e) Dobrze, w takim razie idę z wami.",
+          "answer": "g) Dobrze, w takim razie idę z wami.",
           "options": [
-            "a) Chętnie, dziękuję za zaproszenie.",
-            "b) Chętnie ją poznam.",
-            "c) Niestety jestem dziś na urlopie.",
-            "d) Nie przejmuj się.",
-            "e) Dobrze, w takim razie idę z wami.",
-            "f) Zdążysz skończyć?",
-            "g) Czy możecie chwilę poczekać?",
-            "h) To żaden problem.",
-            "i) Jeszcze raz przepraszam za spóźnienie.",
-            "j) To bardzo miło z waszej strony."
+            "a) Niestety jestem dziś na urlopie.",
+            "b) Zdążysz skończyć?",
+            "c) Czy możecie chwilę poczekać?",
+            "d) To żaden problem.",
+            "e) Chętnie ją poznam.",
+            "f) Jeszcze raz przepraszam za spóźnienie.",
+            "g) Dobrze, w takim razie idę z wami.",
+            "h) Chętnie, dziękuję za zaproszenie.",
+            "i) To bardzo miło z waszej strony.",
+            "j) Nie przejmuj się."
           ],
           "explanation": "Olena decyduje, że idzie z koleżankami, i zaraz pyta o godzinę. „Jeszcze raz przepraszam za spóźnienie” nie pasuje, bo nikt się nie spóźnił.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "f) Zdążysz skończyć?",
+          "answer": "b) Zdążysz skończyć?",
           "options": [
-            "a) Chętnie, dziękuję za zaproszenie.",
-            "b) Chętnie ją poznam.",
-            "c) Niestety jestem dziś na urlopie.",
-            "d) Nie przejmuj się.",
-            "e) Dobrze, w takim razie idę z wami.",
-            "f) Zdążysz skończyć?",
-            "g) Czy możecie chwilę poczekać?",
-            "h) To żaden problem.",
-            "i) Jeszcze raz przepraszam za spóźnienie.",
-            "j) To bardzo miło z waszej strony."
+            "a) Niestety jestem dziś na urlopie.",
+            "b) Zdążysz skończyć?",
+            "c) Czy możecie chwilę poczekać?",
+            "d) To żaden problem.",
+            "e) Chętnie ją poznam.",
+            "f) Jeszcze raz przepraszam za spóźnienie.",
+            "g) Dobrze, w takim razie idę z wami.",
+            "h) Chętnie, dziękuję za zaproszenie.",
+            "i) To bardzo miło z waszej strony.",
+            "j) Nie przejmuj się."
           ],
           "explanation": "Za dziesięć minut to mało czasu, więc Magda pyta, czy Olena zdąży skończyć pracę. Pytanie „Zdążysz skończyć?” pasuje do dalszej odpowiedzi Oleny.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "g) Czy możecie chwilę poczekać?",
+          "answer": "c) Czy możecie chwilę poczekać?",
           "options": [
-            "a) Chętnie, dziękuję za zaproszenie.",
-            "b) Chętnie ją poznam.",
-            "c) Niestety jestem dziś na urlopie.",
-            "d) Nie przejmuj się.",
-            "e) Dobrze, w takim razie idę z wami.",
-            "f) Zdążysz skończyć?",
-            "g) Czy możecie chwilę poczekać?",
-            "h) To żaden problem.",
-            "i) Jeszcze raz przepraszam za spóźnienie.",
-            "j) To bardzo miło z waszej strony."
+            "a) Niestety jestem dziś na urlopie.",
+            "b) Zdążysz skończyć?",
+            "c) Czy możecie chwilę poczekać?",
+            "d) To żaden problem.",
+            "e) Chętnie ją poznam.",
+            "f) Jeszcze raz przepraszam za spóźnienie.",
+            "g) Dobrze, w takim razie idę z wami.",
+            "h) Chętnie, dziękuję za zaproszenie.",
+            "i) To bardzo miło z waszej strony.",
+            "j) Nie przejmuj się."
           ],
           "explanation": "Olena nie jest jeszcze gotowa i prosi o chwilę czekania. Fraza „Czy możecie chwilę poczekać?” to grzeczna prośba.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "h) To żaden problem.",
+          "answer": "d) To żaden problem.",
           "options": [
-            "a) Chętnie, dziękuję za zaproszenie.",
-            "b) Chętnie ją poznam.",
-            "c) Niestety jestem dziś na urlopie.",
-            "d) Nie przejmuj się.",
-            "e) Dobrze, w takim razie idę z wami.",
-            "f) Zdążysz skończyć?",
-            "g) Czy możecie chwilę poczekać?",
-            "h) To żaden problem.",
-            "i) Jeszcze raz przepraszam za spóźnienie.",
-            "j) To bardzo miło z waszej strony."
+            "a) Niestety jestem dziś na urlopie.",
+            "b) Zdążysz skończyć?",
+            "c) Czy możecie chwilę poczekać?",
+            "d) To żaden problem.",
+            "e) Chętnie ją poznam.",
+            "f) Jeszcze raz przepraszam za spóźnienie.",
+            "g) Dobrze, w takim razie idę z wami.",
+            "h) Chętnie, dziękuję za zaproszenie.",
+            "i) To bardzo miło z waszej strony.",
+            "j) Nie przejmuj się."
           ],
           "explanation": "Magda się zgadza: czekanie to „żaden problem”. Dopiero potem mówi, gdzie koledzy poczekają.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "j) To bardzo miło z waszej strony.",
+          "answer": "i) To bardzo miło z waszej strony.",
           "options": [
-            "a) Chętnie, dziękuję za zaproszenie.",
-            "b) Chętnie ją poznam.",
-            "c) Niestety jestem dziś na urlopie.",
-            "d) Nie przejmuj się.",
-            "e) Dobrze, w takim razie idę z wami.",
-            "f) Zdążysz skończyć?",
-            "g) Czy możecie chwilę poczekać?",
-            "h) To żaden problem.",
-            "i) Jeszcze raz przepraszam za spóźnienie.",
-            "j) To bardzo miło z waszej strony."
+            "a) Niestety jestem dziś na urlopie.",
+            "b) Zdążysz skończyć?",
+            "c) Czy możecie chwilę poczekać?",
+            "d) To żaden problem.",
+            "e) Chętnie ją poznam.",
+            "f) Jeszcze raz przepraszam za spóźnienie.",
+            "g) Dobrze, w takim razie idę z wami.",
+            "h) Chętnie, dziękuję za zaproszenie.",
+            "i) To bardzo miło z waszej strony.",
+            "j) Nie przejmuj się."
           ],
           "explanation": "Olena dziękuje za miły gest kolegów. „To bardzo miło z waszej strony” to częsta reakcja na uprzejmość.",
           "grammar_point": "slownictwo"
@@ -549,9 +549,9 @@
           "id": "el2-1",
           "answer": "a) w sprawie",
           "options": [
-            "a) w sprawie",
+            "c) na sprawę",
             "b) o sprawie",
-            "c) na sprawę"
+            "a) w sprawie"
           ],
           "explanation": "Formuła „Piszę do Pani w sprawie + dopełniacz” otwiera półoficjalny list. Pozostałe wyrażenia nie są używane.",
           "grammar_point": "rejestr-formalny"
@@ -560,8 +560,8 @@
           "id": "el2-2",
           "answer": "c) do",
           "options": [
-            "a) na",
             "b) w",
+            "a) na",
             "c) do"
           ],
           "explanation": "Mówimy „zwrócić się do kogoś” z prośbą. „Zwrócić się na” i „w” są błędne.",
@@ -593,9 +593,9 @@
           "id": "el2-5",
           "answer": "b) na",
           "options": [
-            "a) do",
+            "c) z",
             "b) na",
-            "c) z"
+            "a) do"
           ],
           "explanation": "Mówimy „bilet na pociąg”. „Bilet do pociąg” i „bilet z pociąg” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -604,9 +604,9 @@
           "id": "el2-6",
           "answer": "c) przesyłam",
           "options": [
-            "a) przynoszę",
             "b) przyjmuję",
-            "c) przesyłam"
+            "c) przesyłam",
+            "a) przynoszę"
           ],
           "explanation": "W e-mailu coś dołączamy i „przesyłamy”. „Przynoszę” i „przyjmuję” nie pasują do załącznika.",
           "grammar_point": "rejestr-formalny"
@@ -616,8 +616,8 @@
           "answer": "a) wdzięczna",
           "options": [
             "a) wdzięczna",
-            "b) zadowolona",
-            "c) miła"
+            "c) miła",
+            "b) zadowolona"
           ],
           "explanation": "„Być wdzięcznym za coś” to stała formuła w liście z prośbą. „Zadowolona” łączy się z „z”, a „miła” nie pasuje do tego zdania.",
           "grammar_point": "rejestr-formalny"
@@ -627,8 +627,8 @@
           "answer": "b) o",
           "options": [
             "a) za",
-            "b) o",
-            "c) na"
+            "c) na",
+            "b) o"
           ],
           "explanation": "Prosimy „o coś”: „proszę o odpowiedź”. „Prosić za” ma inne znaczenie, a „prosić na” jest błędne.",
           "grammar_point": "rejestr-formalny"
@@ -637,9 +637,9 @@
           "id": "el2-9",
           "answer": "c) Z góry",
           "options": [
-            "a) Od góry",
+            "c) Z góry",
             "b) Na górze",
-            "c) Z góry"
+            "a) Od góry"
           ],
           "explanation": "„Z góry dziękuję” to stała formuła końcowa listu z prośbą. Inne wyrażenia mówią o położeniu.",
           "grammar_point": "rejestr-formalny"

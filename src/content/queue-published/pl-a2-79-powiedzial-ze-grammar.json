@@ -74,9 +74,9 @@
           "text": "Pan Piotr powiedział, ___ jest zadowolony z mojej pracy.",
           "answer": "że",
           "options": [
+            "co",
             "że",
-            "czy",
-            "co"
+            "czy"
           ],
           "grammar_point": "mowa-zalezna-podstawy",
           "explanation": "Informacja → powiedział, że…"
@@ -86,9 +86,9 @@
           "text": "Zapytał, ___ chciałabym prowadzić nowy projekt.",
           "answer": "czy",
           "options": [
-            "czy",
             "że",
-            "co"
+            "co",
+            "czy"
           ],
           "grammar_point": "mowa-zalezna-podstawy",
           "explanation": "Pytanie tak / nie → zapytał, czy…"
@@ -98,9 +98,9 @@
           "text": "„Kiedy możesz zacząć?” → Zapytał, ___ mogę zacząć.",
           "answer": "kiedy",
           "options": [
+            "że",
             "kiedy",
-            "czy",
-            "że"
+            "czy"
           ],
           "grammar_point": "mowa-zalezna-podstawy",
           "explanation": "Pytanie ze słowem → to samo słowo: kiedy."
@@ -110,8 +110,8 @@
           "text": "Mama zapytała, ___ razy w miesiącu jeżdżę do Gdańska.",
           "answer": "ile",
           "options": [
-            "ile",
             "czy",
+            "ile",
             "że"
           ],
           "grammar_point": "mowa-zalezna-podstawy",
@@ -146,9 +146,9 @@
           "text": "Nie wiem, ___ dam radę.",
           "answer": "czy",
           "options": [
-            "czy",
+            "co",
             "że",
-            "co"
+            "czy"
           ],
           "grammar_point": "mowa-zalezna-podstawy",
           "explanation": "Nie wiem + pytanie tak / nie → czy."
@@ -233,8 +233,8 @@
           "answer": "mi",
           "options": [
             "mi",
-            "ci",
-            "mu"
+            "mu",
+            "ci"
           ],
           "grammar_point": "mowa-zalezna-podstawy",
           "explanation": "Ci (do mnie) → mi."
@@ -244,9 +244,9 @@
           "text": "„To mój pokój.” → Kasia powiedziała, że to ___ pokój.",
           "answer": "jej",
           "options": [
+            "jego",
             "jej",
-            "mój",
-            "jego"
+            "mój"
           ],
           "grammar_point": "mowa-zalezna-podstawy",
           "explanation": "Mój (Kasi) → jej."
@@ -256,9 +256,9 @@
           "text": "Pan Piotr ___ mi zadzwonić do klienta.",
           "answer": "kazał",
           "options": [
-            "kazał",
+            "zapytał",
             "powiedział",
-            "zapytał"
+            "kazał"
           ],
           "grammar_point": "mowa-zalezna-podstawy",
           "explanation": "Kazać komu + bezokolicznik."
@@ -268,8 +268,8 @@
           "text": "Klient poprosił ___ szybką odpowiedź.",
           "answer": "o",
           "options": [
-            "o",
             "na",
+            "o",
             "za"
           ],
           "grammar_point": "mowa-zalezna-podstawy",
@@ -280,9 +280,9 @@
           "text": "Mama zapytała ___, czy jestem zdrowa.",
           "answer": "mnie",
           "options": [
-            "mnie",
             "u mnie",
-            "mi"
+            "mi",
+            "mnie"
           ],
           "grammar_point": "kalki-uk",
           "explanation": "Zapytać kogo? — biernik: mnie (nie „u mnie”)."
@@ -292,9 +292,9 @@
           "text": "Tomek ___, że przyjdzie na urodziny.",
           "answer": "obiecał",
           "options": [
+            "kazał",
             "obiecał",
-            "zapytał",
-            "kazał"
+            "zapytał"
           ],
           "grammar_point": "mowa-zalezna-podstawy",
           "explanation": "Obiecać, że…"
@@ -363,68 +363,68 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Piotr: Dzień dobry, Oleno. Czy zastanowiła się Pani nad projektem?\n\nOlena: Dzień dobry, panie Piotrze. {el1-1} Rozmawiałam wczoraj z Kasią i z mamą.\n\nPiotr: {el1-2} Co mówią?\n\nOlena: Kasia mówi, że to świetna szansa. {el1-3}\n\nPiotr: {el1-4} Czy może Pani jeździć do Gdańska raz w miesiącu?\n\nOlena: {el1-5} Tylko muszę wiedzieć, ile dni trwa taki wyjazd.\n\nPiotr: Zwykle dwa dni. {el1-6} Klient zapłaci za hotel.\n\nOlena: {el1-7} Kiedy mogę zacząć?\n\nPiotr: Od przyszłego tygodnia. {el1-8} Proszę jeszcze przeczytać umowę.",
       "bank": [
-        "a) Tak, to nie problem.",
-        "b) Gratuluję decyzji.",
+        "a) Bardzo mnie to interesuje.",
+        "b) Tak, to nie problem.",
         "c) Nie mogę teraz rozmawiać.",
-        "d) Dobrze, zgadzam się.",
-        "e) Mam dobrą wiadomość.",
-        "f) Bardzo mnie to interesuje.",
-        "g) Mama trochę się martwi.",
+        "d) Niestety muszę odmówić.",
+        "e) Mama trochę się martwi.",
+        "f) Tak, długo o tym myślałam.",
+        "g) Dobrze, zgadzam się.",
         "h) Rozumiem.",
-        "i) Tak, długo o tym myślałam.",
-        "j) Niestety muszę odmówić."
+        "i) Mam dobrą wiadomość.",
+        "j) Gratuluję decyzji."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "i) Tak, długo o tym myślałam.",
+          "answer": "f) Tak, długo o tym myślałam.",
           "options": [
-            "a) Tak, to nie problem.",
-            "b) Gratuluję decyzji.",
+            "a) Bardzo mnie to interesuje.",
+            "b) Tak, to nie problem.",
             "c) Nie mogę teraz rozmawiać.",
-            "d) Dobrze, zgadzam się.",
-            "e) Mam dobrą wiadomość.",
-            "f) Bardzo mnie to interesuje.",
-            "g) Mama trochę się martwi.",
+            "d) Niestety muszę odmówić.",
+            "e) Mama trochę się martwi.",
+            "f) Tak, długo o tym myślałam.",
+            "g) Dobrze, zgadzam się.",
             "h) Rozumiem.",
-            "i) Tak, długo o tym myślałam.",
-            "j) Niestety muszę odmówić."
+            "i) Mam dobrą wiadomość.",
+            "j) Gratuluję decyzji."
           ],
           "explanation": "Olena odpowiada na pytanie szefa, czy się zastanowiła. „Tak, długo o tym myślałam” pasuje do jego pytania.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "f) Bardzo mnie to interesuje.",
+          "answer": "a) Bardzo mnie to interesuje.",
           "options": [
-            "a) Tak, to nie problem.",
-            "b) Gratuluję decyzji.",
+            "a) Bardzo mnie to interesuje.",
+            "b) Tak, to nie problem.",
             "c) Nie mogę teraz rozmawiać.",
-            "d) Dobrze, zgadzam się.",
-            "e) Mam dobrą wiadomość.",
-            "f) Bardzo mnie to interesuje.",
-            "g) Mama trochę się martwi.",
+            "d) Niestety muszę odmówić.",
+            "e) Mama trochę się martwi.",
+            "f) Tak, długo o tym myślałam.",
+            "g) Dobrze, zgadzam się.",
             "h) Rozumiem.",
-            "i) Tak, długo o tym myślałam.",
-            "j) Niestety muszę odmówić."
+            "i) Mam dobrą wiadomość.",
+            "j) Gratuluję decyzji."
           ],
           "explanation": "Pan Piotr chce poznać opinię rodziny Oleny i pyta „Co mówią?”. Pierwsze zdanie okazuje jego zainteresowanie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "g) Mama trochę się martwi.",
+          "answer": "e) Mama trochę się martwi.",
           "options": [
-            "a) Tak, to nie problem.",
-            "b) Gratuluję decyzji.",
+            "a) Bardzo mnie to interesuje.",
+            "b) Tak, to nie problem.",
             "c) Nie mogę teraz rozmawiać.",
-            "d) Dobrze, zgadzam się.",
-            "e) Mam dobrą wiadomość.",
-            "f) Bardzo mnie to interesuje.",
-            "g) Mama trochę się martwi.",
+            "d) Niestety muszę odmówić.",
+            "e) Mama trochę się martwi.",
+            "f) Tak, długo o tym myślałam.",
+            "g) Dobrze, zgadzam się.",
             "h) Rozumiem.",
-            "i) Tak, długo o tym myślałam.",
-            "j) Niestety muszę odmówić."
+            "i) Mam dobrą wiadomość.",
+            "j) Gratuluję decyzji."
           ],
           "explanation": "Po opinii Kasi Olena podaje inną reakcję: mama się martwi. To pasuje do kontrastu z poprzednim zdaniem.",
           "grammar_point": "slownictwo"
@@ -433,88 +433,88 @@
           "id": "el1-4",
           "answer": "h) Rozumiem.",
           "options": [
-            "a) Tak, to nie problem.",
-            "b) Gratuluję decyzji.",
+            "a) Bardzo mnie to interesuje.",
+            "b) Tak, to nie problem.",
             "c) Nie mogę teraz rozmawiać.",
-            "d) Dobrze, zgadzam się.",
-            "e) Mam dobrą wiadomość.",
-            "f) Bardzo mnie to interesuje.",
-            "g) Mama trochę się martwi.",
+            "d) Niestety muszę odmówić.",
+            "e) Mama trochę się martwi.",
+            "f) Tak, długo o tym myślałam.",
+            "g) Dobrze, zgadzam się.",
             "h) Rozumiem.",
-            "i) Tak, długo o tym myślałam.",
-            "j) Niestety muszę odmówić."
+            "i) Mam dobrą wiadomość.",
+            "j) Gratuluję decyzji."
           ],
           "explanation": "Pan Piotr reaguje na informację o mamie: „Rozumiem”. Potem zadaje następne pytanie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "a) Tak, to nie problem.",
+          "answer": "b) Tak, to nie problem.",
           "options": [
-            "a) Tak, to nie problem.",
-            "b) Gratuluję decyzji.",
+            "a) Bardzo mnie to interesuje.",
+            "b) Tak, to nie problem.",
             "c) Nie mogę teraz rozmawiać.",
-            "d) Dobrze, zgadzam się.",
-            "e) Mam dobrą wiadomość.",
-            "f) Bardzo mnie to interesuje.",
-            "g) Mama trochę się martwi.",
+            "d) Niestety muszę odmówić.",
+            "e) Mama trochę się martwi.",
+            "f) Tak, długo o tym myślałam.",
+            "g) Dobrze, zgadzam się.",
             "h) Rozumiem.",
-            "i) Tak, długo o tym myślałam.",
-            "j) Niestety muszę odmówić."
+            "i) Mam dobrą wiadomość.",
+            "j) Gratuluję decyzji."
           ],
           "explanation": "Olena potwierdza, że może jeździć do Gdańska. „To nie problem” pasuje do pytania, a „Tylko…” dodaje warunek.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "e) Mam dobrą wiadomość.",
+          "answer": "i) Mam dobrą wiadomość.",
           "options": [
-            "a) Tak, to nie problem.",
-            "b) Gratuluję decyzji.",
+            "a) Bardzo mnie to interesuje.",
+            "b) Tak, to nie problem.",
             "c) Nie mogę teraz rozmawiać.",
-            "d) Dobrze, zgadzam się.",
-            "e) Mam dobrą wiadomość.",
-            "f) Bardzo mnie to interesuje.",
-            "g) Mama trochę się martwi.",
+            "d) Niestety muszę odmówić.",
+            "e) Mama trochę się martwi.",
+            "f) Tak, długo o tym myślałam.",
+            "g) Dobrze, zgadzam się.",
             "h) Rozumiem.",
-            "i) Tak, długo o tym myślałam.",
-            "j) Niestety muszę odmówić."
+            "i) Mam dobrą wiadomość.",
+            "j) Gratuluję decyzji."
           ],
           "explanation": "Pan Piotr podaje dodatkową, dobrą informację: klient zapłaci za hotel. „Mam dobrą wiadomość” ją wprowadza.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "d) Dobrze, zgadzam się.",
+          "answer": "g) Dobrze, zgadzam się.",
           "options": [
-            "a) Tak, to nie problem.",
-            "b) Gratuluję decyzji.",
+            "a) Bardzo mnie to interesuje.",
+            "b) Tak, to nie problem.",
             "c) Nie mogę teraz rozmawiać.",
-            "d) Dobrze, zgadzam się.",
-            "e) Mam dobrą wiadomość.",
-            "f) Bardzo mnie to interesuje.",
-            "g) Mama trochę się martwi.",
+            "d) Niestety muszę odmówić.",
+            "e) Mama trochę się martwi.",
+            "f) Tak, długo o tym myślałam.",
+            "g) Dobrze, zgadzam się.",
             "h) Rozumiem.",
-            "i) Tak, długo o tym myślałam.",
-            "j) Niestety muszę odmówić."
+            "i) Mam dobrą wiadomość.",
+            "j) Gratuluję decyzji."
           ],
           "explanation": "Olena decyduje się na projekt i pyta o termin. „Dobrze, zgadzam się” pasuje do pytania „Kiedy mogę zacząć?”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "b) Gratuluję decyzji.",
+          "answer": "j) Gratuluję decyzji.",
           "options": [
-            "a) Tak, to nie problem.",
-            "b) Gratuluję decyzji.",
+            "a) Bardzo mnie to interesuje.",
+            "b) Tak, to nie problem.",
             "c) Nie mogę teraz rozmawiać.",
-            "d) Dobrze, zgadzam się.",
-            "e) Mam dobrą wiadomość.",
-            "f) Bardzo mnie to interesuje.",
-            "g) Mama trochę się martwi.",
+            "d) Niestety muszę odmówić.",
+            "e) Mama trochę się martwi.",
+            "f) Tak, długo o tym myślałam.",
+            "g) Dobrze, zgadzam się.",
             "h) Rozumiem.",
-            "i) Tak, długo o tym myślałam.",
-            "j) Niestety muszę odmówić."
+            "i) Mam dobrą wiadomość.",
+            "j) Gratuluję decyzji."
           ],
           "explanation": "Pan Piotr cieszy się z decyzji. „Gratuluję decyzji” pasuje do zgody Oleny, a potem dodaje kolejną prośbę.",
           "grammar_point": "slownictwo"
@@ -533,8 +533,8 @@
           "id": "el2-1",
           "answer": "b) od",
           "options": [
-            "a) przez",
             "b) od",
+            "a) przez",
             "c) w"
           ],
           "explanation": "Mówimy „od trzech lat”, gdy coś trwa do dziś. „Przez” wymaga innej formy: „przez trzy lata”.",
@@ -544,9 +544,9 @@
           "id": "el2-2",
           "answer": "c) powiedział",
           "options": [
+            "c) powiedział",
             "a) zapytał",
-            "b) kazał",
-            "c) powiedział"
+            "b) kazał"
           ],
           "explanation": "Po „powiedział” podajemy informację ze spójnikiem „że”. „Zapytał” i „kazał” nie pasują do „że”.",
           "grammar_point": "rejestr-formalny"
@@ -555,9 +555,9 @@
           "id": "el2-3",
           "answer": "a) w sprawie",
           "options": [
-            "a) w sprawie",
+            "c) dla sprawy",
             "b) o sprawie",
-            "c) dla sprawy"
+            "a) w sprawie"
           ],
           "explanation": "Formuła „Piszę w sprawie…” wprowadza temat listu. Inne wyrażenia są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -566,8 +566,8 @@
           "id": "el2-4",
           "answer": "b) o",
           "options": [
-            "a) za",
             "b) o",
+            "a) za",
             "c) na"
           ],
           "explanation": "Mówimy „zapytać o termin”. Przyimki „za” i „na” nie pasują do czasownika „zapytać”.",
@@ -578,8 +578,8 @@
           "answer": "a) w",
           "options": [
             "a) w",
-            "b) na",
-            "c) do"
+            "c) do",
+            "b) na"
           ],
           "explanation": "Mówimy „w biurze”, bo to miejsce. Przyimki „na” i „do” nie pasują do tego rzeczownika.",
           "grammar_point": "rejestr-formalny"
@@ -599,9 +599,9 @@
           "id": "el2-7",
           "answer": "b) o",
           "options": [
+            "c) za",
             "a) na",
-            "b) o",
-            "c) za"
+            "b) o"
           ],
           "explanation": "Mówimy „prosić o potwierdzenie”. Inne przyimki nie pasują do czasownika „prosić”.",
           "grammar_point": "rejestr-formalny"
@@ -610,9 +610,9 @@
           "id": "el2-8",
           "answer": "a) Z góry",
           "options": [
+            "c) Na górze",
             "a) Z góry",
-            "b) Od góry",
-            "c) Na górze"
+            "b) Od góry"
           ],
           "explanation": "„Z góry dziękuję” to stała formuła w e-mailu. Pozostałe wyrażenia mają inne znaczenie.",
           "grammar_point": "rejestr-formalny"
@@ -622,8 +622,8 @@
           "answer": "c) za",
           "options": [
             "a) o",
-            "b) na",
-            "c) za"
+            "c) za",
+            "b) na"
           ],
           "explanation": "Mówimy „dziękować za odpowiedź”. Przyimek „za” łączy się z czasownikiem „dziękować”.",
           "grammar_point": "rejestr-formalny"
@@ -632,9 +632,9 @@
           "id": "el2-10",
           "answer": "a) Z poważaniem",
           "options": [
-            "a) Z poważaniem",
             "b) Z uczuciem",
-            "c) Z przyjemnością"
+            "c) Z przyjemnością",
+            "a) Z poważaniem"
           ],
           "explanation": "„Z poważaniem” to typowe zakończenie oficjalnego listu. Pozostałe formuły nie pasują do listu do klienta.",
           "grammar_point": "rejestr-formalny"

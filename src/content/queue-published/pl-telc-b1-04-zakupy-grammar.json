@@ -155,8 +155,8 @@
           "answer": "czytałem",
           "grammar_point": "aspekt-przeszly",
           "options": [
-            "czytałem",
-            "przeczytałem"
+            "przeczytałem",
+            "czytałem"
           ],
           "explanation": "Cały wieczór, bez rezultatu → niedokonany."
         },
@@ -166,8 +166,8 @@
           "answer": "Napisałam",
           "grammar_point": "aspekt-przeszly",
           "options": [
-            "Napisałam",
-            "Pisałam"
+            "Pisałam",
+            "Napisałam"
           ],
           "explanation": "Mail jest gotowy, potem go wysłałam → dokonany."
         },
@@ -188,8 +188,8 @@
           "answer": "kupiłam",
           "grammar_point": "aspekt-przeszly",
           "options": [
-            "kupiłam",
-            "kupowałam"
+            "kupowałam",
+            "kupiłam"
           ],
           "explanation": "W końcu — rezultat → dokonany."
         },
@@ -199,8 +199,8 @@
           "answer": "posprzątaliśmy",
           "grammar_point": "aspekt-przeszly",
           "options": [
-            "posprzątaliśmy",
-            "sprzątaliśmy"
+            "sprzątaliśmy",
+            "posprzątaliśmy"
           ],
           "explanation": "„Teraz jest czysto” — rezultat → dokonany."
         }
@@ -230,8 +230,8 @@
           "answer": "zapłaciłem",
           "grammar_point": "aspekt-uzycie",
           "options": [
-            "zapłaciłem",
-            "płaciłem"
+            "płaciłem",
+            "zapłaciłem"
           ],
           "explanation": "Jeden raz, gotowe → dokonany."
         },
@@ -252,8 +252,8 @@
           "answer": "zgubiłem",
           "grammar_point": "aspekt-uzycie",
           "options": [
-            "zgubiłem",
-            "gubiłem"
+            "gubiłem",
+            "zgubiłem"
           ],
           "explanation": "Raz → dokonany."
         },
@@ -263,8 +263,8 @@
           "answer": "obiecywał",
           "grammar_point": "aspekt-uzycie",
           "options": [
-            "obiecywał",
-            "obiecał"
+            "obiecał",
+            "obiecywał"
           ],
           "explanation": "Wiele razy → niedokonany."
         },
@@ -285,8 +285,8 @@
           "answer": "płaciliśmy",
           "grammar_point": "aspekt-uzycie",
           "options": [
-            "płaciliśmy",
-            "zapłaciliśmy"
+            "zapłaciliśmy",
+            "płaciliśmy"
           ],
           "explanation": "Przez cały urlop — powtarzanie → niedokonany."
         }
@@ -316,8 +316,8 @@
           "answer": "zrobiliśmy",
           "grammar_point": "aspekt-przeszly",
           "options": [
-            "zrobiliśmy",
-            "robiliśmy"
+            "robiliśmy",
+            "zrobiliśmy"
           ],
           "explanation": "Jedno po drugim → dokonany + dokonany."
         },
@@ -327,8 +327,8 @@
           "answer": "chłodzić",
           "grammar_point": "aspekt-uzycie",
           "options": [
-            "chłodzić",
-            "schłodzić"
+            "schłodzić",
+            "chłodzić"
           ],
           "explanation": "Po przestać → bezokolicznik niedokonany."
         },
@@ -360,8 +360,8 @@
           "answer": "czekałam",
           "grammar_point": "aspekt-przeszly",
           "options": [
-            "czekałam",
-            "poczekałam"
+            "poczekałam",
+            "czekałam"
           ],
           "explanation": "Dwie rzeczy w tym samym czasie → niedokonany + niedokonany."
         },
@@ -371,8 +371,8 @@
           "answer": "Kupiłeś",
           "grammar_point": "aspekt-przeszly",
           "options": [
-            "Kupiłeś",
-            "Kupowałeś"
+            "Kupowałeś",
+            "Kupiłeś"
           ],
           "explanation": "Pytanie o rezultat (już) → dokonany."
         }
@@ -526,158 +526,158 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Pracownik: Sklep internetowy „DomPlus”, słucham.\n\nAndrij: Dzień dobry. {el1-1} Zamówiłem lampkę biurkową, ale w poniedziałek przyszła zepsuta.\n\nPracownik: {el1-2} Czy ma pan numer zamówienia?\n\nAndrij: {el1-3} Numer to 4521.\n\nPracownik: {el1-4} Już widzę pana zamówienie.\n\nAndrij: Nie chcę zwrotu pieniędzy. {el1-5}\n\nPracownik: Dobrze. Czy może pan odesłać paczkę? Sklep pokrywa koszt.\n\nAndrij: {el1-6}\n\nPracownik: {el1-7} Etykietę wyślemy panu e-mailem.\n\nAndrij: Świetnie, dziękuję. {el1-8}\n\nPracownik: Tak, zwykle w ciągu pięciu dni.",
       "bank": [
-        "a) Proszę pokazać dowód osobisty.",
-        "b) Niestety nie mogę teraz rozmawiać.",
-        "c) Proszę chwilę poczekać.",
-        "d) Tak, mam go przed sobą.",
-        "e) Dzwonię w sprawie reklamacji.",
-        "f) Oczywiście, to najprostszy sposób.",
-        "g) Bardzo mi przykro.",
-        "h) Wolałbym wymianę na nową lampkę.",
-        "i) Czy można ją nadać w paczkomacie?",
-        "j) Czy nowa lampka przyjdzie przed weekendem?"
+        "a) Czy nowa lampka przyjdzie przed weekendem?",
+        "b) Oczywiście, to najprostszy sposób.",
+        "c) Proszę pokazać dowód osobisty.",
+        "d) Bardzo mi przykro.",
+        "e) Czy można ją nadać w paczkomacie?",
+        "f) Niestety nie mogę teraz rozmawiać.",
+        "g) Dzwonię w sprawie reklamacji.",
+        "h) Proszę chwilę poczekać.",
+        "i) Wolałbym wymianę na nową lampkę.",
+        "j) Tak, mam go przed sobą."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "e) Dzwonię w sprawie reklamacji.",
+          "answer": "g) Dzwonię w sprawie reklamacji.",
           "options": [
-            "a) Proszę pokazać dowód osobisty.",
-            "b) Niestety nie mogę teraz rozmawiać.",
-            "c) Proszę chwilę poczekać.",
-            "d) Tak, mam go przed sobą.",
-            "e) Dzwonię w sprawie reklamacji.",
-            "f) Oczywiście, to najprostszy sposób.",
-            "g) Bardzo mi przykro.",
-            "h) Wolałbym wymianę na nową lampkę.",
-            "i) Czy można ją nadać w paczkomacie?",
-            "j) Czy nowa lampka przyjdzie przed weekendem?"
+            "a) Czy nowa lampka przyjdzie przed weekendem?",
+            "b) Oczywiście, to najprostszy sposób.",
+            "c) Proszę pokazać dowód osobisty.",
+            "d) Bardzo mi przykro.",
+            "e) Czy można ją nadać w paczkomacie?",
+            "f) Niestety nie mogę teraz rozmawiać.",
+            "g) Dzwonię w sprawie reklamacji.",
+            "h) Proszę chwilę poczekać.",
+            "i) Wolałbym wymianę na nową lampkę.",
+            "j) Tak, mam go przed sobą."
           ],
           "explanation": "Tak zaczynamy rozmowę o problemie z towarem. Następne zdanie opisuje ten problem.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "g) Bardzo mi przykro.",
+          "answer": "d) Bardzo mi przykro.",
           "options": [
-            "a) Proszę pokazać dowód osobisty.",
-            "b) Niestety nie mogę teraz rozmawiać.",
-            "c) Proszę chwilę poczekać.",
-            "d) Tak, mam go przed sobą.",
-            "e) Dzwonię w sprawie reklamacji.",
-            "f) Oczywiście, to najprostszy sposób.",
-            "g) Bardzo mi przykro.",
-            "h) Wolałbym wymianę na nową lampkę.",
-            "i) Czy można ją nadać w paczkomacie?",
-            "j) Czy nowa lampka przyjdzie przed weekendem?"
+            "a) Czy nowa lampka przyjdzie przed weekendem?",
+            "b) Oczywiście, to najprostszy sposób.",
+            "c) Proszę pokazać dowód osobisty.",
+            "d) Bardzo mi przykro.",
+            "e) Czy można ją nadać w paczkomacie?",
+            "f) Niestety nie mogę teraz rozmawiać.",
+            "g) Dzwonię w sprawie reklamacji.",
+            "h) Proszę chwilę poczekać.",
+            "i) Wolałbym wymianę na nową lampkę.",
+            "j) Tak, mam go przed sobą."
           ],
           "explanation": "Pracownik współczuje klientowi. Potem zaczyna rozmowę o zamówieniu.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "d) Tak, mam go przed sobą.",
+          "answer": "j) Tak, mam go przed sobą.",
           "options": [
-            "a) Proszę pokazać dowód osobisty.",
-            "b) Niestety nie mogę teraz rozmawiać.",
-            "c) Proszę chwilę poczekać.",
-            "d) Tak, mam go przed sobą.",
-            "e) Dzwonię w sprawie reklamacji.",
-            "f) Oczywiście, to najprostszy sposób.",
-            "g) Bardzo mi przykro.",
-            "h) Wolałbym wymianę na nową lampkę.",
-            "i) Czy można ją nadać w paczkomacie?",
-            "j) Czy nowa lampka przyjdzie przed weekendem?"
+            "a) Czy nowa lampka przyjdzie przed weekendem?",
+            "b) Oczywiście, to najprostszy sposób.",
+            "c) Proszę pokazać dowód osobisty.",
+            "d) Bardzo mi przykro.",
+            "e) Czy można ją nadać w paczkomacie?",
+            "f) Niestety nie mogę teraz rozmawiać.",
+            "g) Dzwonię w sprawie reklamacji.",
+            "h) Proszę chwilę poczekać.",
+            "i) Wolałbym wymianę na nową lampkę.",
+            "j) Tak, mam go przed sobą."
           ],
           "explanation": "To odpowiedź na pytanie o numer zamówienia. Potem Andrij podaje ten numer.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "c) Proszę chwilę poczekać.",
+          "answer": "h) Proszę chwilę poczekać.",
           "options": [
-            "a) Proszę pokazać dowód osobisty.",
-            "b) Niestety nie mogę teraz rozmawiać.",
-            "c) Proszę chwilę poczekać.",
-            "d) Tak, mam go przed sobą.",
-            "e) Dzwonię w sprawie reklamacji.",
-            "f) Oczywiście, to najprostszy sposób.",
-            "g) Bardzo mi przykro.",
-            "h) Wolałbym wymianę na nową lampkę.",
-            "i) Czy można ją nadać w paczkomacie?",
-            "j) Czy nowa lampka przyjdzie przed weekendem?"
+            "a) Czy nowa lampka przyjdzie przed weekendem?",
+            "b) Oczywiście, to najprostszy sposób.",
+            "c) Proszę pokazać dowód osobisty.",
+            "d) Bardzo mi przykro.",
+            "e) Czy można ją nadać w paczkomacie?",
+            "f) Niestety nie mogę teraz rozmawiać.",
+            "g) Dzwonię w sprawie reklamacji.",
+            "h) Proszę chwilę poczekać.",
+            "i) Wolałbym wymianę na nową lampkę.",
+            "j) Tak, mam go przed sobą."
           ],
           "explanation": "Pracownik prosi o cierpliwość, bo sprawdza zamówienie w systemie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "h) Wolałbym wymianę na nową lampkę.",
+          "answer": "i) Wolałbym wymianę na nową lampkę.",
           "options": [
-            "a) Proszę pokazać dowód osobisty.",
-            "b) Niestety nie mogę teraz rozmawiać.",
-            "c) Proszę chwilę poczekać.",
-            "d) Tak, mam go przed sobą.",
-            "e) Dzwonię w sprawie reklamacji.",
-            "f) Oczywiście, to najprostszy sposób.",
-            "g) Bardzo mi przykro.",
-            "h) Wolałbym wymianę na nową lampkę.",
-            "i) Czy można ją nadać w paczkomacie?",
-            "j) Czy nowa lampka przyjdzie przed weekendem?"
+            "a) Czy nowa lampka przyjdzie przed weekendem?",
+            "b) Oczywiście, to najprostszy sposób.",
+            "c) Proszę pokazać dowód osobisty.",
+            "d) Bardzo mi przykro.",
+            "e) Czy można ją nadać w paczkomacie?",
+            "f) Niestety nie mogę teraz rozmawiać.",
+            "g) Dzwonię w sprawie reklamacji.",
+            "h) Proszę chwilę poczekać.",
+            "i) Wolałbym wymianę na nową lampkę.",
+            "j) Tak, mam go przed sobą."
           ],
           "explanation": "Andrij mówi, czego chce: nie pieniędzy, tylko nowego towaru. „Wolałbym” to grzeczna forma.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "i) Czy można ją nadać w paczkomacie?",
+          "answer": "e) Czy można ją nadać w paczkomacie?",
           "options": [
-            "a) Proszę pokazać dowód osobisty.",
-            "b) Niestety nie mogę teraz rozmawiać.",
-            "c) Proszę chwilę poczekać.",
-            "d) Tak, mam go przed sobą.",
-            "e) Dzwonię w sprawie reklamacji.",
-            "f) Oczywiście, to najprostszy sposób.",
-            "g) Bardzo mi przykro.",
-            "h) Wolałbym wymianę na nową lampkę.",
-            "i) Czy można ją nadać w paczkomacie?",
-            "j) Czy nowa lampka przyjdzie przed weekendem?"
+            "a) Czy nowa lampka przyjdzie przed weekendem?",
+            "b) Oczywiście, to najprostszy sposób.",
+            "c) Proszę pokazać dowód osobisty.",
+            "d) Bardzo mi przykro.",
+            "e) Czy można ją nadać w paczkomacie?",
+            "f) Niestety nie mogę teraz rozmawiać.",
+            "g) Dzwonię w sprawie reklamacji.",
+            "h) Proszę chwilę poczekać.",
+            "i) Wolałbym wymianę na nową lampkę.",
+            "j) Tak, mam go przed sobą."
           ],
           "explanation": "Andrij pyta o sposób odesłania paczki. Pracownik odpowiada: „Oczywiście”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "f) Oczywiście, to najprostszy sposób.",
+          "answer": "b) Oczywiście, to najprostszy sposób.",
           "options": [
-            "a) Proszę pokazać dowód osobisty.",
-            "b) Niestety nie mogę teraz rozmawiać.",
-            "c) Proszę chwilę poczekać.",
-            "d) Tak, mam go przed sobą.",
-            "e) Dzwonię w sprawie reklamacji.",
-            "f) Oczywiście, to najprostszy sposób.",
-            "g) Bardzo mi przykro.",
-            "h) Wolałbym wymianę na nową lampkę.",
-            "i) Czy można ją nadać w paczkomacie?",
-            "j) Czy nowa lampka przyjdzie przed weekendem?"
+            "a) Czy nowa lampka przyjdzie przed weekendem?",
+            "b) Oczywiście, to najprostszy sposób.",
+            "c) Proszę pokazać dowód osobisty.",
+            "d) Bardzo mi przykro.",
+            "e) Czy można ją nadać w paczkomacie?",
+            "f) Niestety nie mogę teraz rozmawiać.",
+            "g) Dzwonię w sprawie reklamacji.",
+            "h) Proszę chwilę poczekać.",
+            "i) Wolałbym wymianę na nową lampkę.",
+            "j) Tak, mam go przed sobą."
           ],
           "explanation": "Pracownik zgadza się na paczkomat i dodaje, że wyśle etykietę.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "j) Czy nowa lampka przyjdzie przed weekendem?",
+          "answer": "a) Czy nowa lampka przyjdzie przed weekendem?",
           "options": [
-            "a) Proszę pokazać dowód osobisty.",
-            "b) Niestety nie mogę teraz rozmawiać.",
-            "c) Proszę chwilę poczekać.",
-            "d) Tak, mam go przed sobą.",
-            "e) Dzwonię w sprawie reklamacji.",
-            "f) Oczywiście, to najprostszy sposób.",
-            "g) Bardzo mi przykro.",
-            "h) Wolałbym wymianę na nową lampkę.",
-            "i) Czy można ją nadać w paczkomacie?",
-            "j) Czy nowa lampka przyjdzie przed weekendem?"
+            "a) Czy nowa lampka przyjdzie przed weekendem?",
+            "b) Oczywiście, to najprostszy sposób.",
+            "c) Proszę pokazać dowód osobisty.",
+            "d) Bardzo mi przykro.",
+            "e) Czy można ją nadać w paczkomacie?",
+            "f) Niestety nie mogę teraz rozmawiać.",
+            "g) Dzwonię w sprawie reklamacji.",
+            "h) Proszę chwilę poczekać.",
+            "i) Wolałbym wymianę na nową lampkę.",
+            "j) Tak, mam go przed sobą."
           ],
           "explanation": "To pytanie o termin nowej lampki. Pracownik odpowiada, ile dni to zajmie.",
           "grammar_point": "slownictwo"
@@ -696,9 +696,9 @@
           "id": "el2-1",
           "answer": "c) w",
           "options": [
-            "a) o",
             "b) na",
-            "c) w"
+            "c) w",
+            "a) o"
           ],
           "explanation": "Mówimy „w sprawie czegoś”. To stała formuła listu.",
           "grammar_point": "rejestr-formalny"
@@ -707,8 +707,8 @@
           "id": "el2-2",
           "answer": "a) w",
           "options": [
-            "a) w",
             "b) na",
+            "a) w",
             "c) z"
           ],
           "explanation": "Kupujemy „w sklepie”, nie „na sklepie”.",
@@ -718,8 +718,8 @@
           "id": "el2-3",
           "answer": "b) prosić",
           "options": [
-            "a) zrobić",
             "b) prosić",
+            "a) zrobić",
             "c) dać"
           ],
           "explanation": "„Prosić o wymianę” to grzeczna prośba w liście. „Zrobić o wymianę” i „dać o wymianę” są błędne.",
@@ -740,9 +740,9 @@
           "id": "el2-5",
           "answer": "b) o",
           "options": [
+            "c) do",
             "a) na",
-            "b) o",
-            "c) do"
+            "b) o"
           ],
           "explanation": "Prosimy „o coś”: o informację.",
           "grammar_point": "rejestr-formalny"
@@ -752,8 +752,8 @@
           "answer": "a) mam",
           "options": [
             "a) mam",
-            "b) jestem",
-            "c) robię"
+            "c) robię",
+            "b) jestem"
           ],
           "explanation": "„Mam potwierdzenie” znaczy, że klient ma ten dokument. „Jestem potwierdzenie” jest błędne.",
           "grammar_point": "rejestr-formalny"
@@ -762,9 +762,9 @@
           "id": "el2-7",
           "answer": "a) że",
           "options": [
+            "c) żeby",
             "a) że",
-            "b) czy",
-            "c) żeby"
+            "b) czy"
           ],
           "explanation": "Po „mam nadzieję” używamy „że”. „Czy” zmienia sens na pytanie.",
           "grammar_point": "rejestr-formalny"
@@ -773,8 +773,8 @@
           "id": "el2-8",
           "answer": "c) za",
           "options": [
-            "a) o",
             "b) na",
+            "a) o",
             "c) za"
           ],
           "explanation": "Dziękuje się „za coś”: za pomoc.",
@@ -785,8 +785,8 @@
           "answer": "b) na",
           "options": [
             "a) o",
-            "b) na",
-            "c) za"
+            "c) za",
+            "b) na"
           ],
           "explanation": "Czeka się „na coś”: na odpowiedź.",
           "grammar_point": "rejestr-formalny"
@@ -795,9 +795,9 @@
           "id": "el2-10",
           "answer": "c) Z poważaniem",
           "options": [
-            "a) Z poważania",
             "b) Za poważaniem",
-            "c) Z poważaniem"
+            "c) Z poważaniem",
+            "a) Z poważania"
           ],
           "explanation": "„Z poważaniem” to oficjalne zakończenie listu.",
           "grammar_point": "rejestr-formalny"

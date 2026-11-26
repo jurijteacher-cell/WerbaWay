@@ -91,8 +91,8 @@
           "id": "g2-2",
           "text": "Dziewczyny, ___ butelki z wodą, na sali jest gorąco.",
           "options": [
-            "weź",
-            "weźcie"
+            "weźcie",
+            "weź"
           ],
           "answer": "weźcie",
           "grammar_point": "rozkaznik-pelny",
@@ -102,8 +102,8 @@
           "id": "g2-3",
           "text": "Oboje jesteśmy zmęczeni. ___ na spacer po lunchu.",
           "options": [
-            "Idźmy",
-            "Idź"
+            "Idź",
+            "Idźmy"
           ],
           "answer": "Idźmy",
           "grammar_point": "rozkaznik-pelny",
@@ -266,8 +266,8 @@
           "id": "g5-1",
           "text": "Nie ___ tak szybko po treningu, usiądź na chwilę.",
           "options": [
-            "wstawaj",
-            "wstań"
+            "wstań",
+            "wstawaj"
           ],
           "answer": "wstawaj",
           "grammar_point": "rozkaznik-pelny",
@@ -277,8 +277,8 @@
           "id": "g5-2",
           "text": "___ wodę regularnie w ciągu dnia, a nie litr naraz wieczorem.",
           "options": [
-            "Pij",
-            "Wypij"
+            "Wypij",
+            "Pij"
           ],
           "answer": "Pij",
           "grammar_point": "rozkaznik-pelny",
@@ -310,8 +310,8 @@
           "id": "g5-5",
           "text": "___ przerwę co godzinę, nie tylko w piątek.",
           "options": [
-            "Rób",
-            "Zrób"
+            "Zrób",
+            "Rób"
           ],
           "answer": "Rób",
           "grammar_point": "rozkaznik-pelny",
@@ -321,8 +321,8 @@
           "id": "g5-6",
           "text": "Nie ___ wszystkiego naraz — wybierz jedną rzecz na tydzień.",
           "options": [
-            "zmieniaj",
-            "zmień"
+            "zmień",
+            "zmieniaj"
           ],
           "answer": "zmieniaj",
           "grammar_point": "rozkaznik-pelny",
@@ -389,29 +389,29 @@
       "bank": [
         "a) Zacznę od jutra.",
         "b) Nie pij kawy wieczorem.",
-        "c) Oj, to niedobrze.",
-        "d) Nie mam dzisiaj czasu na basen.",
-        "e) Świetny pomysł!",
-        "f) Cztery kawy?!",
-        "g) Dzięki za rady, bardzo mi pomagasz.",
-        "h) Nie siedź tyle przy komputerze.",
-        "i) Umowa stoi.",
+        "c) Nie siedź tyle przy komputerze.",
+        "d) Świetny pomysł!",
+        "e) Umowa stoi.",
+        "f) Nie mam dzisiaj czasu na basen.",
+        "g) Cztery kawy?!",
+        "h) Oj, to niedobrze.",
+        "i) Dzięki za rady, bardzo mi pomagasz.",
         "j) Dziękuję, nie piję kawy."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "c) Oj, to niedobrze.",
+          "answer": "h) Oj, to niedobrze.",
           "options": [
             "a) Zacznę od jutra.",
             "b) Nie pij kawy wieczorem.",
-            "c) Oj, to niedobrze.",
-            "d) Nie mam dzisiaj czasu na basen.",
-            "e) Świetny pomysł!",
-            "f) Cztery kawy?!",
-            "g) Dzięki za rady, bardzo mi pomagasz.",
-            "h) Nie siedź tyle przy komputerze.",
-            "i) Umowa stoi.",
+            "c) Nie siedź tyle przy komputerze.",
+            "d) Świetny pomysł!",
+            "e) Umowa stoi.",
+            "f) Nie mam dzisiaj czasu na basen.",
+            "g) Cztery kawy?!",
+            "h) Oj, to niedobrze.",
+            "i) Dzięki za rady, bardzo mi pomagasz.",
             "j) Dziękuję, nie piję kawy."
           ],
           "explanation": "Olena reaguje na słowa o zmęczeniu: „Oj, to niedobrze”. Dopiero potem pyta o sen.",
@@ -419,17 +419,17 @@
         },
         {
           "id": "el1-2",
-          "answer": "f) Cztery kawy?!",
+          "answer": "g) Cztery kawy?!",
           "options": [
             "a) Zacznę od jutra.",
             "b) Nie pij kawy wieczorem.",
-            "c) Oj, to niedobrze.",
-            "d) Nie mam dzisiaj czasu na basen.",
-            "e) Świetny pomysł!",
-            "f) Cztery kawy?!",
-            "g) Dzięki za rady, bardzo mi pomagasz.",
-            "h) Nie siedź tyle przy komputerze.",
-            "i) Umowa stoi.",
+            "c) Nie siedź tyle przy komputerze.",
+            "d) Świetny pomysł!",
+            "e) Umowa stoi.",
+            "f) Nie mam dzisiaj czasu na basen.",
+            "g) Cztery kawy?!",
+            "h) Oj, to niedobrze.",
+            "i) Dzięki za rady, bardzo mi pomagasz.",
             "j) Dziękuję, nie piję kawy."
           ],
           "explanation": "Tomek wypił cztery kawy, więc Olena jest zdziwiona: „Cztery kawy?!”. Zaraz potem mówi, że to za dużo.",
@@ -437,17 +437,17 @@
         },
         {
           "id": "el1-3",
-          "answer": "h) Nie siedź tyle przy komputerze.",
+          "answer": "c) Nie siedź tyle przy komputerze.",
           "options": [
             "a) Zacznę od jutra.",
             "b) Nie pij kawy wieczorem.",
-            "c) Oj, to niedobrze.",
-            "d) Nie mam dzisiaj czasu na basen.",
-            "e) Świetny pomysł!",
-            "f) Cztery kawy?!",
-            "g) Dzięki za rady, bardzo mi pomagasz.",
-            "h) Nie siedź tyle przy komputerze.",
-            "i) Umowa stoi.",
+            "c) Nie siedź tyle przy komputerze.",
+            "d) Świetny pomysł!",
+            "e) Umowa stoi.",
+            "f) Nie mam dzisiaj czasu na basen.",
+            "g) Cztery kawy?!",
+            "h) Oj, to niedobrze.",
+            "i) Dzięki za rady, bardzo mi pomagasz.",
             "j) Dziękuję, nie piję kawy."
           ],
           "explanation": "Tomek ma dużo zadań i siedzi przy komputerze, więc rada „Nie siedź tyle przy komputerze” pasuje. Rada o kawie nie łączy się z przerwą co dwie godziny.",
@@ -459,13 +459,13 @@
           "options": [
             "a) Zacznę od jutra.",
             "b) Nie pij kawy wieczorem.",
-            "c) Oj, to niedobrze.",
-            "d) Nie mam dzisiaj czasu na basen.",
-            "e) Świetny pomysł!",
-            "f) Cztery kawy?!",
-            "g) Dzięki za rady, bardzo mi pomagasz.",
-            "h) Nie siedź tyle przy komputerze.",
-            "i) Umowa stoi.",
+            "c) Nie siedź tyle przy komputerze.",
+            "d) Świetny pomysł!",
+            "e) Umowa stoi.",
+            "f) Nie mam dzisiaj czasu na basen.",
+            "g) Cztery kawy?!",
+            "h) Oj, to niedobrze.",
+            "i) Dzięki za rady, bardzo mi pomagasz.",
             "j) Dziękuję, nie piję kawy."
           ],
           "explanation": "Po radzie o wodzie Olena dodaje radę o piciu: „Nie pij kawy wieczorem”. Rada o siedzeniu byłaby tu nie na temat.",
@@ -477,13 +477,13 @@
           "options": [
             "a) Zacznę od jutra.",
             "b) Nie pij kawy wieczorem.",
-            "c) Oj, to niedobrze.",
-            "d) Nie mam dzisiaj czasu na basen.",
-            "e) Świetny pomysł!",
-            "f) Cztery kawy?!",
-            "g) Dzięki za rady, bardzo mi pomagasz.",
-            "h) Nie siedź tyle przy komputerze.",
-            "i) Umowa stoi.",
+            "c) Nie siedź tyle przy komputerze.",
+            "d) Świetny pomysł!",
+            "e) Umowa stoi.",
+            "f) Nie mam dzisiaj czasu na basen.",
+            "g) Cztery kawy?!",
+            "h) Oj, to niedobrze.",
+            "i) Dzięki za rady, bardzo mi pomagasz.",
             "j) Dziękuję, nie piję kawy."
           ],
           "explanation": "Tomek godzi się na rady i obiecuje zmianę: „Zacznę od jutra”. To naturalna odpowiedź po radach.",
@@ -491,17 +491,17 @@
         },
         {
           "id": "el1-6",
-          "answer": "e) Świetny pomysł!",
+          "answer": "d) Świetny pomysł!",
           "options": [
             "a) Zacznę od jutra.",
             "b) Nie pij kawy wieczorem.",
-            "c) Oj, to niedobrze.",
-            "d) Nie mam dzisiaj czasu na basen.",
-            "e) Świetny pomysł!",
-            "f) Cztery kawy?!",
-            "g) Dzięki za rady, bardzo mi pomagasz.",
-            "h) Nie siedź tyle przy komputerze.",
-            "i) Umowa stoi.",
+            "c) Nie siedź tyle przy komputerze.",
+            "d) Świetny pomysł!",
+            "e) Umowa stoi.",
+            "f) Nie mam dzisiaj czasu na basen.",
+            "g) Cztery kawy?!",
+            "h) Oj, to niedobrze.",
+            "i) Dzięki za rady, bardzo mi pomagasz.",
             "j) Dziękuję, nie piję kawy."
           ],
           "explanation": "Olena zaprasza na basen, a Tomek się zgadza: „Świetny pomysł!”. Zdanie „Nie mam czasu na basen” przeczy temu, że przyjdzie po pracy.",
@@ -509,17 +509,17 @@
         },
         {
           "id": "el1-7",
-          "answer": "i) Umowa stoi.",
+          "answer": "e) Umowa stoi.",
           "options": [
             "a) Zacznę od jutra.",
             "b) Nie pij kawy wieczorem.",
-            "c) Oj, to niedobrze.",
-            "d) Nie mam dzisiaj czasu na basen.",
-            "e) Świetny pomysł!",
-            "f) Cztery kawy?!",
-            "g) Dzięki za rady, bardzo mi pomagasz.",
-            "h) Nie siedź tyle przy komputerze.",
-            "i) Umowa stoi.",
+            "c) Nie siedź tyle przy komputerze.",
+            "d) Świetny pomysł!",
+            "e) Umowa stoi.",
+            "f) Nie mam dzisiaj czasu na basen.",
+            "g) Cztery kawy?!",
+            "h) Oj, to niedobrze.",
+            "i) Dzięki za rady, bardzo mi pomagasz.",
             "j) Dziękuję, nie piję kawy."
           ],
           "explanation": "Olena potwierdza ustalenie: „Umowa stoi”. Dopiero potem zapisuje termin w kalendarzu.",
@@ -527,17 +527,17 @@
         },
         {
           "id": "el1-8",
-          "answer": "g) Dzięki za rady, bardzo mi pomagasz.",
+          "answer": "i) Dzięki za rady, bardzo mi pomagasz.",
           "options": [
             "a) Zacznę od jutra.",
             "b) Nie pij kawy wieczorem.",
-            "c) Oj, to niedobrze.",
-            "d) Nie mam dzisiaj czasu na basen.",
-            "e) Świetny pomysł!",
-            "f) Cztery kawy?!",
-            "g) Dzięki za rady, bardzo mi pomagasz.",
-            "h) Nie siedź tyle przy komputerze.",
-            "i) Umowa stoi.",
+            "c) Nie siedź tyle przy komputerze.",
+            "d) Świetny pomysł!",
+            "e) Umowa stoi.",
+            "f) Nie mam dzisiaj czasu na basen.",
+            "g) Cztery kawy?!",
+            "h) Oj, to niedobrze.",
+            "i) Dzięki za rady, bardzo mi pomagasz.",
             "j) Dziękuję, nie piję kawy."
           ],
           "explanation": "Tomek dziękuje za pomoc i za rady. „Dziękuję, nie piję kawy” nie pasuje, bo nikt nie proponuje mu kawy.",
@@ -558,8 +558,8 @@
           "answer": "b) Szanowni",
           "options": [
             "a) Mili",
-            "b) Szanowni",
-            "c) Drodzy"
+            "c) Drodzy",
+            "b) Szanowni"
           ],
           "explanation": "W oficjalnym e-mailu do firmy piszemy „Szanowni Państwo”. „Mili” i „Drodzy” są zbyt familiarne.",
           "grammar_point": "rejestr-formalny"
@@ -569,8 +569,8 @@
           "answer": "a) w",
           "options": [
             "a) w",
-            "b) na",
-            "c) o"
+            "c) o",
+            "b) na"
           ],
           "explanation": "Mówimy „w sprawie czegoś”. „Na sprawie” i „o sprawie” nie tworzą tej formuły.",
           "grammar_point": "rejestr-formalny"
@@ -590,9 +590,9 @@
           "id": "el2-4",
           "answer": "c) o",
           "options": [
-            "a) za",
+            "c) o",
             "b) na",
-            "c) o"
+            "a) za"
           ],
           "explanation": "Pytamy o coś: „zapytać o cenę”. „Za” i „na” nie łączą się z czasownikiem „zapytać”.",
           "grammar_point": "rejestr-formalny"
@@ -623,9 +623,9 @@
           "id": "el2-7",
           "answer": "b) dają",
           "options": [
+            "c) stają",
             "a) robią",
-            "b) dają",
-            "c) stają"
+            "b) dają"
           ],
           "explanation": "Firma „daje zniżkę”. „Robią” i „stają” nie pasują do słowa „zniżki”.",
           "grammar_point": "rejestr-formalny"
@@ -635,8 +635,8 @@
           "answer": "c) za",
           "options": [
             "a) o",
-            "b) dla",
-            "c) za"
+            "c) za",
+            "b) dla"
           ],
           "explanation": "Jesteśmy wdzięczni za coś: „wdzięczny za odpowiedź”. „O” i „dla” nie pasują do słowa „wdzięczny”.",
           "grammar_point": "rejestr-formalny"
@@ -645,9 +645,9 @@
           "id": "el2-9",
           "answer": "a) na",
           "options": [
+            "c) do",
             "a) na",
-            "b) w",
-            "c) do"
+            "b) w"
           ],
           "explanation": "Wysyłamy na adres: „przesłać na adres e-mail”. „W” i „do” nie pasują do słowa „adres” w tym zdaniu.",
           "grammar_point": "rejestr-formalny"

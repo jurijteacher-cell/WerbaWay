@@ -177,9 +177,9 @@
           "text": "Jeśli firma nie ___ zmiany, zostaje na skali.",
           "answer": "zgłosi",
           "options": [
-            "zgłosi",
+            "zgłaszałaby",
             "zgłosiła",
-            "zgłaszałaby"
+            "zgłosi"
           ],
           "grammar_point": "warunek-realny",
           "explanation": "Zasada: jeśli + zgłosi → zostaje. Tryb przypuszczający tu nie pasuje."
@@ -201,9 +201,9 @@
           "text": "Jeśli pani ___ wniosek wczoraj, nie musi pani nic robić.",
           "answer": "złożyła",
           "options": [
+            "złożyłaby",
             "złożyła",
-            "złoży",
-            "złożyłaby"
+            "złoży"
           ],
           "grammar_point": "warunek-realny",
           "explanation": "Warunek o przeszłości: jeśli + czas przeszły (złożyła)."
@@ -225,9 +225,9 @@
           "text": "Jeśli koszty ___ wyższe niż 280 000 zł, skala będzie tańsza.",
           "answer": "będą",
           "options": [
-            "będą",
             "byłyby",
-            "były"
+            "były",
+            "będą"
           ],
           "grammar_point": "warunek-realny",
           "explanation": "Warunek realny o przyszłości: koszty będą wyższe. Czas przeszły i tryb przypuszczający zmieniają sens."
@@ -237,9 +237,9 @@
           "text": "Jeśli przejdzie pani na liniowy, ___ pani 19 procent od dochodu.",
           "answer": "odda",
           "options": [
-            "odda",
             "oddałaby",
-            "oddając"
+            "oddając",
+            "odda"
           ],
           "grammar_point": "warunek-realny",
           "explanation": "Jeśli + przyszły → przyszły: odda 19 procent."
@@ -249,9 +249,9 @@
           "text": "Jeśli pani nic nie ___, zostanie pani na skali.",
           "answer": "zrobi",
           "options": [
+            "robiąc",
             "zrobi",
-            "zrobiłaby",
-            "robiąc"
+            "zrobiłaby"
           ],
           "grammar_point": "warunek-realny",
           "explanation": "Po jeśli o przyszłości — czas przyszły dokonany: zrobi."
@@ -269,8 +269,8 @@
           "text": "Nie wiem, ___ mogę zmienić formę w marcu.",
           "answer": "czy",
           "options": [
-            "czy",
             "jeśli",
+            "czy",
             "kiedy"
           ],
           "grammar_point": "warunek-realny",
@@ -281,8 +281,8 @@
           "text": "___ skończy się rok, złożymy PIT.",
           "answer": "Kiedy",
           "options": [
-            "Kiedy",
             "Chyba że",
+            "Kiedy",
             "Czy"
           ],
           "grammar_point": "warunek-realny",
@@ -293,9 +293,9 @@
           "text": "Zostanie pani na skali, ___ zgłosi pani zmianę.",
           "answer": "chyba że",
           "options": [
-            "chyba że",
+            "pod warunkiem, że",
             "czy",
-            "pod warunkiem, że"
+            "chyba że"
           ],
           "grammar_point": "warunek-realny",
           "explanation": "Chyba że = wyjątek. Zostanie na skali, tylko jeśli nie zgłosi zmiany."
@@ -305,9 +305,9 @@
           "text": "Ryczałt jest możliwy ___, że przychód nie przekroczy limitu.",
           "answer": "pod warunkiem",
           "options": [
+            "w warunku",
             "pod warunkiem",
-            "za warunkiem",
-            "w warunku"
+            "za warunkiem"
           ],
           "grammar_point": "warunek-realny",
           "explanation": "Stałe wyrażenie: pod warunkiem, że."
@@ -317,9 +317,9 @@
           "text": "Proszę zgłosić zmianę do 22 lutego, ___ zostanie pani na skali.",
           "answer": "w przeciwnym razie",
           "options": [
-            "w przeciwnym razie",
+            "czy",
             "chyba że",
-            "czy"
+            "w przeciwnym razie"
           ],
           "grammar_point": "warunek-realny",
           "explanation": "W przeciwnym razie = inaczej, jeśli nie zgłosi zmiany."
@@ -329,9 +329,9 @@
           "text": "___ pani nie zrozumiała, chętnie wyjaśnię jeszcze raz.",
           "answer": "Jeśli",
           "options": [
-            "Jeśli",
+            "Chyba że",
             "Czy",
-            "Chyba że"
+            "Jeśli"
           ],
           "grammar_point": "warunek-realny",
           "explanation": "Warunek, który może się spełnić: jeśli."
@@ -342,8 +342,8 @@
           "answer": "czy",
           "options": [
             "czy",
-            "jeżeli",
-            "o ile"
+            "o ile",
+            "jeżeli"
           ],
           "grammar_point": "warunek-realny",
           "explanation": "Pytanie pośrednie: zapytam, czy… Jeżeli i o ile wprowadzają warunek, nie pytanie."
@@ -442,8 +442,8 @@
           "answer": "zostałabym",
           "options": [
             "zostałabym",
-            "zostanę",
-            "zostałam"
+            "zostałam",
+            "zostanę"
           ],
           "grammar_point": "przypuszczajacy-formy",
           "explanation": "Rada: na pani miejscu + tryb przypuszczający (zostałabym)."
@@ -453,9 +453,9 @@
           "text": "Radzę, żeby pani ___ zmianę do 22 lutego.",
           "answer": "zgłosiła",
           "options": [
-            "zgłosiła",
             "zgłosi",
-            "zgłosić"
+            "zgłosić",
+            "zgłosiła"
           ],
           "grammar_point": "przypuszczajacy-formy",
           "explanation": "Radzę, żeby + forma na -ł; osoba się zmienia (pani), więc nie bezokolicznik."
@@ -466,8 +466,8 @@
           "answer": "zapytać",
           "options": [
             "zapytać",
-            "zapytam",
-            "zapytałam"
+            "zapytałam",
+            "zapytam"
           ],
           "grammar_point": "przypuszczajacy-formy",
           "explanation": "Chciałabym + bezokolicznik: ten sam podmiot."
@@ -477,9 +477,9 @@
           "text": "Warto ___ wszystko jeszcze raz.",
           "answer": "policzyć",
           "options": [
-            "policzyć",
             "policzy",
-            "policzyła"
+            "policzyła",
+            "policzyć"
           ],
           "grammar_point": "przypuszczajacy-formy",
           "explanation": "Warto + bezokolicznik."
@@ -489,9 +489,9 @@
           "text": "Powinna pani ___ zmianę w urzędzie skarbowym.",
           "answer": "zgłosić",
           "options": [
+            "zgłasza",
             "zgłosić",
-            "zgłosiła",
-            "zgłasza"
+            "zgłosiła"
           ],
           "grammar_point": "przypuszczajacy-formy",
           "explanation": "Powinna + bezokolicznik."
@@ -502,8 +502,8 @@
           "answer": "sprawdziła",
           "options": [
             "sprawdziła",
-            "sprawdzić",
-            "sprawdzi"
+            "sprawdzi",
+            "sprawdzić"
           ],
           "grammar_point": "przypuszczajacy-formy",
           "explanation": "Chce, żeby + forma na -ł, gdy podmioty są różne (pani Iwona / Halina)."
@@ -513,9 +513,9 @@
           "text": "Gdyby koszty były niższe, ryczałt ___ lepszy.",
           "answer": "byłby",
           "options": [
+            "jest",
             "byłby",
-            "będzie",
-            "jest"
+            "będzie"
           ],
           "grammar_point": "przypuszczajacy-formy",
           "explanation": "Wracamy do gdyby: w drugiej części — tryb przypuszczający (byłby)."

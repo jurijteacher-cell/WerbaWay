@@ -56,22 +56,22 @@
               "id": "rs1-2",
               "stem": "Gdzie można usłyszeć tę wypowiedź?",
               "options": [
-                "w restauracji.",
                 "w kinie.",
-                "w księgarni."
+                "w księgarni.",
+                "w restauracji."
               ],
-              "answer": "a",
+              "answer": "c",
               "explain": "„Proszę o rachunek. Zapłacę kartą” – o rachunek prosimy kelnera po jedzeniu, czyli w restauracji. W kinie i w księgarni nie mówi się „proszę o rachunek”."
             },
             {
               "id": "rs1-3",
               "stem": "To jest",
               "options": [
-                "podziękowanie.",
                 "rada.",
-                "skarga."
+                "skarga.",
+                "podziękowanie."
               ],
-              "answer": "b",
+              "answer": "a",
               "explain": "„Weź kurtkę. Wieczorem na pewno się ochłodzi” – osoba mówi, co warto zrobić i dlaczego. To rada, nie skarga ani podziękowanie."
             },
             {
@@ -89,8 +89,8 @@
               "id": "rs1-5",
               "stem": "Ta osoba jest",
               "options": [
-                "zła.",
                 "zmęczona.",
+                "zła.",
                 "zdziwiona i zadowolona."
               ],
               "answer": "c",
@@ -100,11 +100,11 @@
               "id": "rs1-6",
               "stem": "Gdzie można usłyszeć tę wypowiedź?",
               "options": [
-                "na lotnisku",
                 "w szatni",
+                "na lotnisku",
                 "w teatrze"
               ],
-              "answer": "a",
+              "answer": "b",
               "explain": "„Proszę zdjąć pasek i położyć telefon oraz laptop na taśmie” – tak mówi pracownik kontroli bezpieczeństwa na lotnisku."
             },
             {
@@ -122,9 +122,9 @@
               "id": "rs1-8",
               "stem": "Kto to mówi?",
               "options": [
-                "klient",
+                "sąsiad",
                 "kierownik",
-                "sąsiad"
+                "klient"
               ],
               "answer": "b",
               "explain": "Osoba informuje o wynikach sprzedaży i dziękuje „całemu zespołowi” – tak mówi szef, czyli kierownik."
@@ -133,64 +133,64 @@
               "id": "rs1-9",
               "stem": "To jest",
               "options": [
-                "przeprosiny.",
+                "życzenie.",
                 "pochwała.",
-                "życzenie."
+                "przeprosiny."
               ],
-              "answer": "a",
+              "answer": "c",
               "explain": "„Bardzo przepraszam za spóźnienie” – osoba przeprasza i tłumaczy, że zepsuł się autobus."
             },
             {
               "id": "rs1-10",
               "stem": "Kto to mówi?",
               "options": [
+                "kurier",
                 "fryzjer",
-                "policjant",
-                "kurier"
+                "policjant"
               ],
-              "answer": "c",
+              "answer": "a",
               "explain": "„Paczka dla pani Nowak. Proszę podpisać tutaj, na ekranie” – kurier dostarcza paczkę i prosi o podpis."
             },
             {
               "id": "rs1-11",
               "stem": "To jest",
               "options": [
-                "zaproszenie.",
                 "ostrzeżenie.",
+                "zaproszenie.",
                 "pochwała."
               ],
-              "answer": "b",
+              "answer": "a",
               "explain": "„Uważaj na schodach, są mokre” – osoba mówi o niebezpieczeństwie. To ostrzeżenie."
             },
             {
               "id": "rs1-12",
               "stem": "Gdzie można usłyszeć tę wypowiedź?",
               "options": [
-                "w aptece",
                 "w banku",
-                "na poczcie"
+                "na poczcie",
+                "w aptece"
               ],
-              "answer": "a",
+              "answer": "c",
               "explain": "Ktoś tłumaczy, jak brać lek: „dwa razy dziennie po jedzeniu” i bez alkoholu. Tak mówi farmaceuta w aptece."
             },
             {
               "id": "rs1-13",
               "stem": "To jest",
               "options": [
+                "pretensja.",
                 "podziękowanie.",
-                "zaproszenie.",
-                "pretensja."
+                "zaproszenie."
               ],
-              "answer": "c",
+              "answer": "a",
               "explain": "„No pięknie. Znowu zapomniałeś o moich urodzinach” – „no pięknie” jest tu ironiczne, a „znowu” pokazuje żal. To pretensja, nie podziękowanie."
             },
             {
               "id": "rs1-14",
               "stem": "Gdzie można usłyszeć tę wypowiedź?",
               "options": [
-                "w pralni",
+                "w salonie fryzjerskim",
                 "w sklepie z ubraniami",
-                "w salonie fryzjerskim"
+                "w pralni"
               ],
               "answer": "b",
               "explain": "Mowa o swetrze „na przecenie” i o przymierzalniach – przymierzalnie są w sklepie z ubraniami, nie w pralni ani u fryzjera."
@@ -224,21 +224,21 @@
               "stem": "Klientka zapisze się na",
               "options": [
                 "piątek o ósmej.",
-                "sobotę rano.",
-                "sobotę po południu."
+                "sobotę po południu.",
+                "sobotę rano."
               ],
-              "answer": "c",
+              "answer": "b",
               "explain": "Sobota rano jest zajęta, a w piątek o ósmej klientka jest w pracy. Mówi „Zapiszę się na sobotę” – zostaje więc wolny termin w sobotę o szesnastej, czyli po południu."
             },
             {
               "id": "rs2-2",
               "stem": "Prezentem dla Marka będzie",
               "options": [
+                "zestaw garnków.",
                 "książka.",
-                "nóż kuchenny.",
-                "zestaw garnków."
+                "nóż kuchenny."
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "Książka odpada, bo Marek „prawie nie czyta”. Koleżanka proponuje „dobry nóż”, a kolega odpowiada „Świetnie”. O garnkach nikt nie mówi."
             },
             {
@@ -257,21 +257,21 @@
               "stem": "Pasażerka",
               "options": [
                 "musi kupić nowy bilet.",
-                "ma bilet ważny także w pociągu osobowym.",
-                "pojedzie ekspresem."
+                "pojedzie ekspresem.",
+                "ma bilet ważny także w pociągu osobowym."
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "Konduktor mówi: „ten bilet jest ważny w obu pociągach”. Pasażerka nie musi kupować nowego biletu, a ekspres nie zatrzymuje się w Kutnie."
             },
             {
               "id": "rs2-5",
               "stem": "Córka pojedzie nad jezioro",
               "options": [
-                "samochodem ojca.",
+                "pociągiem.",
                 "samochodem koleżanki.",
-                "pociągiem."
+                "samochodem ojca."
               ],
-              "answer": "c",
+              "answer": "a",
               "explain": "Ojciec może dać samochód tylko w niedzielę, ale córka wraca w sobotę. Mówi: „W takim razie pojedziemy pociągiem”."
             },
             {
@@ -279,8 +279,8 @@
               "stem": "Klientka zapłaci",
               "options": [
                 "sto trzydzieści złotych.",
-                "sto pięćdziesiąt złotych.",
-                "sto dwadzieścia złotych."
+                "sto dwadzieścia złotych.",
+                "sto pięćdziesiąt złotych."
               ],
               "answer": "a",
               "explain": "Naprawa kosztowała sto pięćdziesiąt złotych, ale sprzedawca daje zniżkę: „zapłaci pani sto trzydzieści”. Sto dwadzieścia to stara cena z telefonu."
@@ -289,9 +289,9 @@
               "id": "rs2-7",
               "stem": "Sąsiad",
               "options": [
-                "nie zgadza się z sąsiadką.",
+                "zaprasza sąsiadkę na urodziny.",
                 "obiecuje, że będzie ciszej.",
-                "zaprasza sąsiadkę na urodziny."
+                "nie zgadza się z sąsiadką."
               ],
               "answer": "b",
               "explain": "Sąsiad przeprasza i mówi: „Obiecuję, że to się nie powtórzy” oraz „po dwudziestej drugiej będzie cisza”. Nie kłóci się z sąsiadką."
@@ -582,11 +582,11 @@
               "passage": "Schronisko „Pod Smrekiem” przyjmuje rezerwacje od 1 grudnia. Nocleg kosztuje 70 zł, dzieci do 7 lat śpią bezpłatnie. Rezerwację trzeba potwierdzić w ciągu siedmiu dni, inaczej wygasa. Psy mogą nocować tylko w pokojach czteroosobowych.",
               "stem": "Z tego tekstu wynika, że",
               "options": [
-                "Dziecko, które ma sześć lat, nie płaci za nocleg.",
                 "Rezerwacja jest ważna bez potwierdzenia.",
+                "Dziecko, które ma sześć lat, nie płaci za nocleg.",
                 "Psy mogą nocować w każdym pokoju."
               ],
-              "answer": "a",
+              "answer": "b",
               "explain": "Tekst mówi: „dzieci do 7 lat śpią bezpłatnie”, więc sześciolatek nie płaci. Rezerwację trzeba potwierdzić, a psy mogą spać tylko w pokojach czteroosobowych."
             },
             {
@@ -594,11 +594,11 @@
               "passage": "Szanowni Mieszkańcy! W czwartek odbędzie się odbiór odpadów wielkogabarytowych. Meble oraz sprzęt AGD i RTV prosimy wystawić przed bramę do godziny 7:00. Opon, farb i butli z gazem nie zabieramy.",
               "stem": "Z tego tekstu wynika, że",
               "options": [
-                "Farby można wystawić razem z meblami.",
                 "Stary telewizor można oddać w czwartek.",
+                "Farby można wystawić razem z meblami.",
                 "Śmieci trzeba wystawić po godzinie 7:00."
               ],
-              "answer": "b",
+              "answer": "a",
               "explain": "Firma zabiera „meble oraz sprzęt AGD i RTV”, a telewizor to sprzęt RTV. Farb nie zabiera, a śmieci trzeba wystawić do 7:00, nie po 7:00."
             },
             {
@@ -606,8 +606,8 @@
               "passage": "Kurs pierwszej pomocy w Domu Kultury trwa osiem godzin i odbywa się w jedną sobotę. Koszt: 150 zł. Zapisy do 20 listopada. Każdy uczestnik dostaje certyfikat. Prosimy o wygodne ubranie, bo ćwiczenia wykonujemy na podłodze.",
               "stem": "Z tego tekstu wynika, że",
               "options": [
-                "Kurs składa się z kilku spotkań w tygodniu.",
                 "Na kurs można się zapisać jeszcze po 20 listopada.",
+                "Kurs składa się z kilku spotkań w tygodniu.",
                 "Uczestnicy dostają dokument potwierdzający udział."
               ],
               "answer": "c",
@@ -619,10 +619,10 @@
               "stem": "Z tego tekstu wynika, że",
               "options": [
                 "Klient zawsze płaci za odesłanie towaru.",
-                "Wadliwy produkt można odesłać na koszt sklepu.",
-                "Pieniądze wracają do klienta w ciągu 30 dni."
+                "Pieniądze wracają do klienta w ciągu 30 dni.",
+                "Wadliwy produkt można odesłać na koszt sklepu."
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "Koszt odesłania ponosi klient, „chyba że produkt jest wadliwy” – wtedy płaci sklep. Pieniądze wracają w ciągu 14 dni, nie 30."
             },
             {
@@ -630,11 +630,11 @@
               "passage": "Kino „Orzeł” zaprasza we wtorki na „Dzień Seniora”. Bilet dla osób powyżej 60. roku życia kosztuje 12 zł zamiast 24 zł. Seanse zaczynają się o 11:00 i 14:00. Po seansie o 11:00 organizujemy spotkanie przy kawie.",
               "stem": "Z tego tekstu wynika, że",
               "options": [
+                "Promocja obowiązuje przez cały tydzień.",
                 "Bilet seniora jest o połowę tańszy niż normalny.",
-                "Spotkanie przy kawie odbywa się po seansie o 14:00.",
-                "Promocja obowiązuje przez cały tydzień."
+                "Spotkanie przy kawie odbywa się po seansie o 14:00."
               ],
-              "answer": "a",
+              "answer": "b",
               "explain": "Bilet seniora kosztuje 12 zł zamiast 24 zł, czyli połowę ceny. Promocja jest tylko we wtorki, a kawa jest po seansie o 11:00."
             }
           ]
@@ -706,39 +706,39 @@
           "bank": [
             {
               "key": "A",
-              "text": "po jakiej nawierzchni zamierzamy biegać"
-            },
-            {
-              "key": "B",
-              "text": "przyczyną jest najczęściej zbyt ambitny plan"
-            },
-            {
-              "key": "C",
               "text": "co tydzień zwiększa dystans i przypomina o treningu"
             },
             {
-              "key": "D",
-              "text": "po kilku dniach ma bóle w nogach i traci motywację"
-            },
-            {
-              "key": "E",
-              "text": "na tyle drogie, że nie każdy może sobie na nie pozwolić"
-            },
-            {
-              "key": "F",
+              "key": "B",
               "text": "dobrze dopasowane do kształtu stopy"
             },
             {
-              "key": "G",
+              "key": "C",
+              "text": "którą łatwo włączyć do codziennego rytmu dnia"
+            },
+            {
+              "key": "D",
               "text": "rzadziej rezygnują i biegają regularniej"
             },
             {
+              "key": "E",
+              "text": "przyczyną jest najczęściej zbyt ambitny plan"
+            },
+            {
+              "key": "F",
+              "text": "na tyle drogie, że nie każdy może sobie na nie pozwolić"
+            },
+            {
+              "key": "G",
+              "text": "po jakiej nawierzchni zamierzamy biegać"
+            },
+            {
               "key": "H",
-              "text": "żeby organizm miał czas na odpoczynek"
+              "text": "po kilku dniach ma bóle w nogach i traci motywację"
             },
             {
               "key": "I",
-              "text": "którą łatwo włączyć do codziennego rytmu dnia"
+              "text": "żeby organizm miał czas na odpoczynek"
             }
           ],
           "example": {
@@ -750,49 +750,49 @@
               "id": "rt3-1",
               "n": 1,
               "kind": "bank",
-              "answer": "D",
+              "answer": "H",
               "explain": "Zdanie opisuje skutek zbyt szybkiego startu: ktoś chce od razu przebiec pięć kilometrów i po kilku dniach ma bóle w nogach i traci motywację."
             },
             {
               "id": "rt3-2",
               "n": 2,
               "kind": "bank",
-              "answer": "H",
+              "answer": "I",
               "explain": "Trening trzy razy w tygodniu, a nie codziennie – żeby organizm miał czas na odpoczynek. „Żeby” wprowadza cel."
             },
             {
               "id": "rt3-3",
               "n": 3,
               "kind": "bank",
-              "answer": "F",
+              "answer": "B",
               "explain": "Konstrukcja „wygodne, a przy tym…” wymaga drugiej cechy butów: dobrze dopasowane do stopy. E nie pasuje, bo tekst mówi, że buty nie muszą być drogie."
             },
             {
               "id": "rt3-4",
               "n": 4,
               "kind": "bank",
-              "answer": "A",
+              "answer": "G",
               "explain": "Po „zapyta” potrzebne jest pytanie zależne. Sprzedawca pyta, po jakiej nawierzchni zamierzamy biegać – to ważne przy wyborze butów."
             },
             {
               "id": "rt3-5",
               "n": 5,
               "kind": "bank",
-              "answer": "I",
+              "answer": "C",
               "explain": "„Najlepsza pora to ta, którą…” – zaimek „którą” odnosi się do pory. Następne zdanie mówi o dopasowaniu biegania do własnego rytmu dnia."
             },
             {
               "id": "rt3-6",
               "n": 6,
               "kind": "bank",
-              "answer": "G",
+              "answer": "D",
               "explain": "Mowa o zaletach biegania w grupie: takie osoby rzadziej rezygnują i biegają regularniej."
             },
             {
               "id": "rt3-7",
               "n": 7,
               "kind": "bank",
-              "answer": "C",
+              "answer": "A",
               "explain": "„Aplikację, która…” – potrzebny jest opis działania aplikacji: zwiększa dystans i przypomina o treningu. Zastępuje towarzysza."
             }
           ]

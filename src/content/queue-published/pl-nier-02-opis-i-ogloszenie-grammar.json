@@ -115,9 +115,9 @@
           "answer": "deweloperski",
           "grammar_point": "slownictwo",
           "options": [
+            "pod klucz",
             "deweloperski",
-            "po remoncie",
-            "pod klucz"
+            "po remoncie"
           ],
           "explanation": "Stan deweloperski: klient wykańcza mieszkanie sam. „Pod klucz” to mieszkanie już wykończone."
         },
@@ -140,8 +140,8 @@
           "grammar_point": "slownictwo",
           "options": [
             "parterze",
-            "pierwszym piętrze",
-            "zerowym piętrze"
+            "zerowym piętrze",
+            "pierwszym piętrze"
           ],
           "explanation": "Parter to poziom ulicy. Pierwsze piętro jest nad parterem. Nie ma „zerowego piętra”."
         },
@@ -151,9 +151,9 @@
           "answer": "ekspozycja",
           "grammar_point": "slownictwo",
           "options": [
-            "ekspozycja",
+            "orientacja",
             "wystawa",
-            "orientacja"
+            "ekspozycja"
           ],
           "explanation": "Po polsku: ekspozycja południowa. „Wystawa” to wystawa w muzeum."
         },
@@ -163,9 +163,9 @@
           "answer": "rozkładowe",
           "grammar_point": "slownictwo",
           "options": [
-            "rozkładowe",
             "ustawne",
-            "ciche"
+            "ciche",
+            "rozkładowe"
           ],
           "explanation": "Rozkładowe = dobry układ pokoi. Ustawne = łatwo ustawić w nim meble."
         },
@@ -175,8 +175,8 @@
           "answer": "odświeżenia",
           "grammar_point": "slownictwo",
           "options": [
-            "odświeżenia",
             "remontu",
+            "odświeżenia",
             "zamieszkania"
           ],
           "explanation": "Do odświeżenia: drobne prace. Do remontu: duże prace, np. nowa łazienka i instalacja."
@@ -590,8 +590,8 @@
           "answer": "o",
           "grammar_point": "porownania",
           "options": [
-            "o",
             "na",
+            "o",
             "za"
           ],
           "explanation": "Różnicę ilościową wprowadza „o” + biernik: o dziesięć metrów."
@@ -602,9 +602,9 @@
           "answer": "od",
           "grammar_point": "porownania",
           "options": [
+            "za",
             "niż",
-            "od",
-            "za"
+            "od"
           ],
           "explanation": "Od + dopełniacz (tamtej). „Niż” wymaga mianownika: większa niż tamta."
         },
@@ -614,9 +614,9 @@
           "answer": "niż",
           "grammar_point": "porownania",
           "options": [
+            "jak",
             "od",
-            "niż",
-            "jak"
+            "niż"
           ],
           "explanation": "Przed zdaniem z czasownikiem stoi „niż” z przecinkiem."
         },
@@ -638,8 +638,8 @@
           "answer": "dwa",
           "grammar_point": "porownania",
           "options": [
-            "dwa",
             "o dwa",
+            "dwa",
             "dwie"
           ],
           "explanation": "Mnożnik: dwa razy większy, bez „o”."
@@ -650,9 +650,9 @@
           "answer": "jak",
           "grammar_point": "porownania",
           "options": [
-            "jak",
+            "od",
             "niż",
-            "od"
+            "jak"
           ],
           "explanation": "Tak samo … jak."
         },
@@ -662,9 +662,9 @@
           "answer": "z",
           "grammar_point": "porownania",
           "options": [
-            "z",
+            "od",
             "do",
-            "od"
+            "z"
           ],
           "explanation": "W porównaniu z + narzędnik."
         },
@@ -823,9 +823,9 @@
           "answer": "po",
           "grammar_point": "kalki-uk",
           "options": [
+            "w",
             "po",
-            "z",
-            "w"
+            "z"
           ],
           "explanation": "Ukr. «з ремонтом» → po remoncie. „Z remontem” brzmi, jakby remont miał dopiero nastąpić."
         },
@@ -835,9 +835,9 @@
           "answer": "na",
           "grammar_point": "kalki-uk",
           "options": [
-            "na",
             "w",
-            "do"
+            "do",
+            "na"
           ],
           "explanation": "Ukr. «виходять у двір» → wychodzą na podwórze."
         },
@@ -847,9 +847,9 @@
           "answer": "dwupokojowego",
           "grammar_point": "kalki-uk",
           "options": [
-            "dwupokojowego",
+            "dwupokoikowego",
             "dwukomnatowego",
-            "dwupokoikowego"
+            "dwupokojowego"
           ],
           "explanation": "Ukr. «двокімнатна» → dwupokojowe. „Komnata” to wielka sala w zamku."
         },
@@ -860,8 +860,8 @@
           "grammar_point": "kalki-uk",
           "options": [
             "drugim",
-            "trzecim",
-            "czwartym"
+            "czwartym",
+            "trzecim"
           ],
           "explanation": "Parter to nasz pierwszy поверх, pierwsze piętro to nasz drugi. «Третій поверх» = drugie piętro."
         },
@@ -872,8 +872,8 @@
           "grammar_point": "kalki-uk",
           "options": [
             "parterze",
-            "pierwszym piętrze",
-            "zerowym piętrze"
+            "zerowym piętrze",
+            "pierwszym piętrze"
           ],
           "explanation": "«Перший поверх» = parter. Pierwsze piętro to już «другий поверх»."
         }

@@ -75,8 +75,8 @@
           "answer": "że",
           "grammar_point": "mowa-zalezna-ze",
           "options": [
-            "że",
-            "czy"
+            "czy",
+            "że"
           ]
         },
         {
@@ -85,8 +85,8 @@
           "answer": "czy",
           "grammar_point": "pytanie-zalezne-czy",
           "options": [
-            "że",
-            "czy"
+            "czy",
+            "że"
           ],
           "explanation": "Pytanie tak/nie → czy."
         },
@@ -107,8 +107,8 @@
           "answer": "kiedy",
           "grammar_point": "pytanie-zalezne-zaimek",
           "options": [
-            "kiedy",
-            "czy"
+            "czy",
+            "kiedy"
           ]
         },
         {
@@ -117,8 +117,8 @@
           "answer": "że",
           "grammar_point": "mowa-zalezna-ze",
           "options": [
-            "żeby",
-            "że"
+            "że",
+            "żeby"
           ],
           "explanation": "Informacja, nie prośba → że."
         },
@@ -138,8 +138,8 @@
           "answer": "żebym",
           "grammar_point": "prosba-zeby",
           "options": [
-            "żebym",
-            "że"
+            "że",
+            "żebym"
           ],
           "explanation": "Prośba (tryb rozkazujący) → żebym + forma przeszła."
         },
@@ -300,8 +300,8 @@
           "answer": "żebyśmy",
           "grammar_point": "ze-czy-zeby",
           "options": [
-            "żebyśmy",
-            "że"
+            "że",
+            "żebyśmy"
           ],
           "explanation": "Prośba → żebyśmy + forma przeszła."
         },
@@ -311,8 +311,8 @@
           "answer": "żebym",
           "grammar_point": "ze-czy-zeby",
           "options": [
-            "że",
-            "żebym"
+            "żebym",
+            "że"
           ],
           "explanation": "Rada → żebym."
         },
@@ -333,8 +333,8 @@
           "answer": "żeby",
           "grammar_point": "ze-czy-zeby",
           "options": [
-            "żeby",
-            "że"
+            "że",
+            "żeby"
           ],
           "explanation": "Przypomina, co zrobić (z bezokolicznikiem) → żeby."
         },
@@ -344,8 +344,8 @@
           "answer": "że",
           "grammar_point": "ze-czy-zeby",
           "options": [
-            "żeby",
-            "że"
+            "że",
+            "żeby"
           ],
           "explanation": "Informacja → że."
         },
@@ -521,8 +521,8 @@
           "answer": "kazała mi przyjść",
           "grammar_point": "kalki-uk",
           "options": [
-            "powiedziała mi przyjść",
-            "kazała mi przyjść"
+            "kazała mi przyjść",
+            "powiedziała mi przyjść"
           ],
           "explanation": "«сказала мені прийти» → kazała mi przyjść / powiedziała, żebym przyszedł."
         },
@@ -532,8 +532,8 @@
           "answer": "zapytać mamę",
           "grammar_point": "kalki-uk",
           "options": [
-            "zapytać u mamy",
-            "zapytać mamę"
+            "zapytać mamę",
+            "zapytać u mamy"
           ],
           "explanation": "«запитати в мами» → zapytać mamę (biernik)."
         },
@@ -565,8 +565,8 @@
           "answer": "żeby",
           "grammar_point": "kalki-uk",
           "options": [
-            "że",
-            "żeby"
+            "żeby",
+            "że"
           ],
           "explanation": "«скажи йому, щоб купив» → żeby kupił. „Że kupił” = що він уже купив."
         }
@@ -580,50 +580,50 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Halina: Sklep rybny, dzień dobry.\n\nOlena: Dzień dobry. {el1-1} Chciałabym zamówić karpia na Wigilię.\n\nHalina: {el1-2} Na kiedy ma być ryba?\n\nOlena: Na dwudziestego trzeciego grudnia. {el1-3}\n\nHalina: Tak, od ósmej. Chce pani karpia żywego czy już oczyszczonego?\n\nOlena: {el1-4}\n\nHalina: Dobrze. A ile ma ważyć?\n\nOlena: Będzie nas siedem osób. {el1-5}\n\nHalina: Radzę wziąć trzy kilogramy, tak będzie bezpiecznie. Może jeszcze śledzie w oleju?\n\nOlena: {el1-6} {el1-7}\n\nHalina: Oczywiście. Proszę tylko podać imię i numer telefonu.\n\nOlena: {el1-8}\n\nHalina: Nawzajem! Do zobaczenia.",
       "bank": [
-        "a) Co pani radzi?",
+        "a) Dziękuję i życzę wesołych świąt!",
         "b) Czy mogę odebrać go rano?",
-        "c) Przepraszam, pomyliłam numery.",
-        "d) Czy mogę zapłacić przy odbiorze?",
-        "e) Z przyjemnością pomogę.",
-        "f) Dziękuję i życzę wesołych świąt!",
-        "g) Dobry pomysł, poproszę dwa słoiki.",
+        "c) Czy mogę zapłacić przy odbiorze?",
+        "d) Co pani radzi?",
+        "e) Poproszę już oczyszczonego.",
+        "f) Z przyjemnością pomogę.",
+        "g) Przepraszam, pomyliłam numery.",
         "h) Niestety nie lubię ryby.",
-        "i) Mam do pani prośbę.",
-        "j) Poproszę już oczyszczonego."
+        "i) Dobry pomysł, poproszę dwa słoiki.",
+        "j) Mam do pani prośbę."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "i) Mam do pani prośbę.",
+          "answer": "j) Mam do pani prośbę.",
           "options": [
-            "a) Co pani radzi?",
+            "a) Dziękuję i życzę wesołych świąt!",
             "b) Czy mogę odebrać go rano?",
-            "c) Przepraszam, pomyliłam numery.",
-            "d) Czy mogę zapłacić przy odbiorze?",
-            "e) Z przyjemnością pomogę.",
-            "f) Dziękuję i życzę wesołych świąt!",
-            "g) Dobry pomysł, poproszę dwa słoiki.",
+            "c) Czy mogę zapłacić przy odbiorze?",
+            "d) Co pani radzi?",
+            "e) Poproszę już oczyszczonego.",
+            "f) Z przyjemnością pomogę.",
+            "g) Przepraszam, pomyliłam numery.",
             "h) Niestety nie lubię ryby.",
-            "i) Mam do pani prośbę.",
-            "j) Poproszę już oczyszczonego."
+            "i) Dobry pomysł, poproszę dwa słoiki.",
+            "j) Mam do pani prośbę."
           ],
           "explanation": "Olena zaczyna rozmowę prośbą, a potem mówi, co chce zamówić. Zwrot „Mam do pani prośbę” przygotowuje na to zamówienie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "e) Z przyjemnością pomogę.",
+          "answer": "f) Z przyjemnością pomogę.",
           "options": [
-            "a) Co pani radzi?",
+            "a) Dziękuję i życzę wesołych świąt!",
             "b) Czy mogę odebrać go rano?",
-            "c) Przepraszam, pomyliłam numery.",
-            "d) Czy mogę zapłacić przy odbiorze?",
-            "e) Z przyjemnością pomogę.",
-            "f) Dziękuję i życzę wesołych świąt!",
-            "g) Dobry pomysł, poproszę dwa słoiki.",
+            "c) Czy mogę zapłacić przy odbiorze?",
+            "d) Co pani radzi?",
+            "e) Poproszę już oczyszczonego.",
+            "f) Z przyjemnością pomogę.",
+            "g) Przepraszam, pomyliłam numery.",
             "h) Niestety nie lubię ryby.",
-            "i) Mam do pani prośbę.",
-            "j) Poproszę już oczyszczonego."
+            "i) Dobry pomysł, poproszę dwa słoiki.",
+            "j) Mam do pani prośbę."
           ],
           "explanation": "Sprzedawczyni odpowiada na prośbę klientki i od razu pyta o termin. „Z przyjemnością pomogę” to grzeczna zgoda na pomoc.",
           "grammar_point": "slownictwo"
@@ -632,106 +632,106 @@
           "id": "el1-3",
           "answer": "b) Czy mogę odebrać go rano?",
           "options": [
-            "a) Co pani radzi?",
+            "a) Dziękuję i życzę wesołych świąt!",
             "b) Czy mogę odebrać go rano?",
-            "c) Przepraszam, pomyliłam numery.",
-            "d) Czy mogę zapłacić przy odbiorze?",
-            "e) Z przyjemnością pomogę.",
-            "f) Dziękuję i życzę wesołych świąt!",
-            "g) Dobry pomysł, poproszę dwa słoiki.",
+            "c) Czy mogę zapłacić przy odbiorze?",
+            "d) Co pani radzi?",
+            "e) Poproszę już oczyszczonego.",
+            "f) Z przyjemnością pomogę.",
+            "g) Przepraszam, pomyliłam numery.",
             "h) Niestety nie lubię ryby.",
-            "i) Mam do pani prośbę.",
-            "j) Poproszę już oczyszczonego."
+            "i) Dobry pomysł, poproszę dwa słoiki.",
+            "j) Mam do pani prośbę."
           ],
           "explanation": "Halina odpowiada „Tak, od ósmej”, więc Olena musiała zapytać o godzinę odbioru. Pytanie o płatność nie pasuje do tej odpowiedzi.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "j) Poproszę już oczyszczonego.",
+          "answer": "e) Poproszę już oczyszczonego.",
           "options": [
-            "a) Co pani radzi?",
+            "a) Dziękuję i życzę wesołych świąt!",
             "b) Czy mogę odebrać go rano?",
-            "c) Przepraszam, pomyliłam numery.",
-            "d) Czy mogę zapłacić przy odbiorze?",
-            "e) Z przyjemnością pomogę.",
-            "f) Dziękuję i życzę wesołych świąt!",
-            "g) Dobry pomysł, poproszę dwa słoiki.",
+            "c) Czy mogę zapłacić przy odbiorze?",
+            "d) Co pani radzi?",
+            "e) Poproszę już oczyszczonego.",
+            "f) Z przyjemnością pomogę.",
+            "g) Przepraszam, pomyliłam numery.",
             "h) Niestety nie lubię ryby.",
-            "i) Mam do pani prośbę.",
-            "j) Poproszę już oczyszczonego."
+            "i) Dobry pomysł, poproszę dwa słoiki.",
+            "j) Mam do pani prośbę."
           ],
           "explanation": "Halina pyta, czy karp ma być żywy czy oczyszczony. Olena wybiera drugą możliwość.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "a) Co pani radzi?",
+          "answer": "d) Co pani radzi?",
           "options": [
-            "a) Co pani radzi?",
+            "a) Dziękuję i życzę wesołych świąt!",
             "b) Czy mogę odebrać go rano?",
-            "c) Przepraszam, pomyliłam numery.",
-            "d) Czy mogę zapłacić przy odbiorze?",
-            "e) Z przyjemnością pomogę.",
-            "f) Dziękuję i życzę wesołych świąt!",
-            "g) Dobry pomysł, poproszę dwa słoiki.",
+            "c) Czy mogę zapłacić przy odbiorze?",
+            "d) Co pani radzi?",
+            "e) Poproszę już oczyszczonego.",
+            "f) Z przyjemnością pomogę.",
+            "g) Przepraszam, pomyliłam numery.",
             "h) Niestety nie lubię ryby.",
-            "i) Mam do pani prośbę.",
-            "j) Poproszę już oczyszczonego."
+            "i) Dobry pomysł, poproszę dwa słoiki.",
+            "j) Mam do pani prośbę."
           ],
           "explanation": "Olena nie wie, ile ryby kupić dla siedmiu osób, więc prosi o radę. Odpowiedź Haliny zaczyna się od „Radzę”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "g) Dobry pomysł, poproszę dwa słoiki.",
+          "answer": "i) Dobry pomysł, poproszę dwa słoiki.",
           "options": [
-            "a) Co pani radzi?",
+            "a) Dziękuję i życzę wesołych świąt!",
             "b) Czy mogę odebrać go rano?",
-            "c) Przepraszam, pomyliłam numery.",
-            "d) Czy mogę zapłacić przy odbiorze?",
-            "e) Z przyjemnością pomogę.",
-            "f) Dziękuję i życzę wesołych świąt!",
-            "g) Dobry pomysł, poproszę dwa słoiki.",
+            "c) Czy mogę zapłacić przy odbiorze?",
+            "d) Co pani radzi?",
+            "e) Poproszę już oczyszczonego.",
+            "f) Z przyjemnością pomogę.",
+            "g) Przepraszam, pomyliłam numery.",
             "h) Niestety nie lubię ryby.",
-            "i) Mam do pani prośbę.",
-            "j) Poproszę już oczyszczonego."
+            "i) Dobry pomysł, poproszę dwa słoiki.",
+            "j) Mam do pani prośbę."
           ],
           "explanation": "Olena zgadza się na propozycję śledzi i zamawia dwa słoiki. Zdanie zaczyna się od oceny pomysłu.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "d) Czy mogę zapłacić przy odbiorze?",
+          "answer": "c) Czy mogę zapłacić przy odbiorze?",
           "options": [
-            "a) Co pani radzi?",
+            "a) Dziękuję i życzę wesołych świąt!",
             "b) Czy mogę odebrać go rano?",
-            "c) Przepraszam, pomyliłam numery.",
-            "d) Czy mogę zapłacić przy odbiorze?",
-            "e) Z przyjemnością pomogę.",
-            "f) Dziękuję i życzę wesołych świąt!",
-            "g) Dobry pomysł, poproszę dwa słoiki.",
+            "c) Czy mogę zapłacić przy odbiorze?",
+            "d) Co pani radzi?",
+            "e) Poproszę już oczyszczonego.",
+            "f) Z przyjemnością pomogę.",
+            "g) Przepraszam, pomyliłam numery.",
             "h) Niestety nie lubię ryby.",
-            "i) Mam do pani prośbę.",
-            "j) Poproszę już oczyszczonego."
+            "i) Dobry pomysł, poproszę dwa słoiki.",
+            "j) Mam do pani prośbę."
           ],
           "explanation": "Halina odpowiada „Oczywiście”, a zaraz prosi o dane, więc pytanie dotyczy płatności przy odbiorze. Pytanie o godzinę było wcześniej.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "f) Dziękuję i życzę wesołych świąt!",
+          "answer": "a) Dziękuję i życzę wesołych świąt!",
           "options": [
-            "a) Co pani radzi?",
+            "a) Dziękuję i życzę wesołych świąt!",
             "b) Czy mogę odebrać go rano?",
-            "c) Przepraszam, pomyliłam numery.",
-            "d) Czy mogę zapłacić przy odbiorze?",
-            "e) Z przyjemnością pomogę.",
-            "f) Dziękuję i życzę wesołych świąt!",
-            "g) Dobry pomysł, poproszę dwa słoiki.",
+            "c) Czy mogę zapłacić przy odbiorze?",
+            "d) Co pani radzi?",
+            "e) Poproszę już oczyszczonego.",
+            "f) Z przyjemnością pomogę.",
+            "g) Przepraszam, pomyliłam numery.",
             "h) Niestety nie lubię ryby.",
-            "i) Mam do pani prośbę.",
-            "j) Poproszę już oczyszczonego."
+            "i) Dobry pomysł, poproszę dwa słoiki.",
+            "j) Mam do pani prośbę."
           ],
           "explanation": "Olena żegna się i składa życzenia, a Halina odpowiada „Nawzajem!”. „Niestety nie lubię ryby” nie pasuje do wesołego pożegnania.",
           "grammar_point": "slownictwo"
@@ -751,8 +751,8 @@
           "answer": "b) za",
           "options": [
             "a) o",
-            "b) za",
-            "c) na"
+            "c) na",
+            "b) za"
           ],
           "explanation": "Mówimy „dziękować za coś”, tu za zaproszenie. „O” i „na” nie pasują do tego czasownika.",
           "grammar_point": "rejestr-formalny"
@@ -761,9 +761,9 @@
           "id": "el2-2",
           "answer": "c) wezmę udział",
           "options": [
-            "a) wezmę część",
+            "c) wezmę udział",
             "b) będę udział",
-            "c) wezmę udział"
+            "a) wezmę część"
           ],
           "explanation": "Stałe wyrażenie to „wziąć udział w czymś”. „Wziąć część” i „być udział” nie są poprawne.",
           "grammar_point": "rejestr-formalny"
@@ -772,9 +772,9 @@
           "id": "el2-3",
           "answer": "a) o",
           "options": [
-            "a) o",
+            "c) do",
             "b) na",
-            "c) do"
+            "a) o"
           ],
           "explanation": "Godzinę podajemy w formie „o szesnastej”. „Na szesnastej” i „do szesnastej” oznaczają coś innego.",
           "grammar_point": "rejestr-formalny"
@@ -783,8 +783,8 @@
           "id": "el2-4",
           "answer": "b) zapytać",
           "options": [
-            "a) powiedzieć",
             "b) zapytać",
+            "a) powiedzieć",
             "c) odpowiedzieć"
           ],
           "explanation": "Po „czy” w pytaniu pośrednim pasuje „zapytać”: „zapytać, czy możemy…”. „Powiedzieć” i „odpowiedzieć” nie wprowadzają takiego pytania.",
@@ -794,9 +794,9 @@
           "id": "el2-5",
           "answer": "c) o",
           "options": [
-            "a) za",
             "b) na",
-            "c) o"
+            "c) o",
+            "a) za"
           ],
           "explanation": "Mówimy „prosić o coś”, tu o informacje. „Za” i „na” nie łączą się z tym czasownikiem.",
           "grammar_point": "rejestr-formalny"
@@ -805,8 +805,8 @@
           "id": "el2-6",
           "answer": "a) przynosi",
           "options": [
-            "a) przynosi",
             "b) odnosi",
+            "a) przynosi",
             "c) wynosi"
           ],
           "explanation": "Na wspólny stół coś „przynosimy”. „Odnosi” i „wynosi” oznaczają inne czynności.",
@@ -816,9 +816,9 @@
           "id": "el2-7",
           "answer": "a) o",
           "options": [
-            "a) o",
+            "c) z",
             "b) na",
-            "c) z"
+            "a) o"
           ],
           "explanation": "Stałe wyrażenie to „myśleć o czymś”, tu o makowcu. „Na” i „z” nie pasują.",
           "grammar_point": "rejestr-formalny"
@@ -827,9 +827,9 @@
           "id": "el2-8",
           "answer": "c) poinformować",
           "options": [
-            "a) powiedzieć",
+            "c) poinformować",
             "b) wiedzieć",
-            "c) poinformować"
+            "a) powiedzieć"
           ],
           "explanation": "Formuła „Proszę mnie poinformować, co…” jest uprzejma i poprawna. „Proszę mnie powiedzieć” jest błędne, bo trzeba „mi”.",
           "grammar_point": "rejestr-formalny"
@@ -839,8 +839,8 @@
           "answer": "a) z okazji",
           "options": [
             "a) z okazji",
-            "b) na okazji",
-            "c) w okazji"
+            "c) w okazji",
+            "b) na okazji"
           ],
           "explanation": "Życzenia składamy „z okazji” święta. Pozostałe połączenia są błędne.",
           "grammar_point": "rejestr-formalny"
@@ -850,8 +850,8 @@
           "answer": "b) Z góry",
           "options": [
             "a) Z początku",
-            "b) Z góry",
-            "c) Od góry"
+            "c) Od góry",
+            "b) Z góry"
           ],
           "explanation": "„Z góry dziękuję” to stała formuła w liście, gdy dziękujemy przed odpowiedzią. Pozostałe wyrażenia mają inne znaczenie.",
           "grammar_point": "rejestr-formalny"

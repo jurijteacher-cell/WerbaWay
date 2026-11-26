@@ -17,9 +17,9 @@
           "text": "Wczoraj nikt ___ nie zadzwonił, więc wieczorem sama zadzwoniłam do mamy.",
           "answer": "do mnie",
           "options": [
+            "mi",
             "do mnie",
-            "mnie",
-            "mi"
+            "mnie"
           ],
           "grammar_point": "zaimki-formy",
           "explanation": "Dzwonić do kogo? — do mnie. Po przyimku zawsze długa forma."
@@ -30,8 +30,8 @@
           "answer": "mieszkali",
           "options": [
             "mieszkali",
-            "mieszkały",
-            "mieszkał"
+            "mieszkał",
+            "mieszkały"
           ],
           "grammar_point": "mn-mianownik-mos",
           "explanation": "Dziadkowie = babcia i dziadek, w grupie jest mężczyzna → mieszkali."
@@ -42,8 +42,8 @@
           "answer": "temu",
           "options": [
             "temu",
-            "za",
-            "przed"
+            "przed",
+            "za"
           ],
           "grammar_point": "przyimki-czasu",
           "explanation": "Przeszłość liczona od dziś: pięć lat temu. Za pięć lat — przyszłość."
@@ -53,8 +53,8 @@
           "text": "Codziennie ___ do pracy rowerem, ale dziś pojechałam autobusem.",
           "answer": "jeździłam",
           "options": [
-            "jeździłam",
             "pojechałam",
+            "jeździłam",
             "jechałam"
           ],
           "grammar_point": "ruch-iterat",
@@ -65,9 +65,9 @@
           "text": "W tej przychodni nie ma ___, więc pacjenci chodzą po schodach.",
           "answer": "windy",
           "options": [
-            "windy",
+            "windę",
             "winda",
-            "windę"
+            "windy"
           ],
           "grammar_point": "przeczenie-dopelniacz",
           "explanation": "Nie ma + dopełniacz: nie ma windy."
@@ -77,9 +77,9 @@
           "text": "Wieczorem idę z sąsiadką ___ zebranie wspólnoty.",
           "answer": "na",
           "options": [
-            "na",
             "do",
-            "w"
+            "w",
+            "na"
           ],
           "grammar_point": "przyimki-kierunku",
           "explanation": "Dokąd? — na zebranie (jak na lekcję, na koncert)."
@@ -90,8 +90,8 @@
           "answer": "wrócę",
           "options": [
             "wrócę",
-            "wracam",
-            "wróciłam"
+            "wróciłam",
+            "wracam"
           ],
           "grammar_point": "czas-przyszly-dk",
           "explanation": "Zadzwonię = przyszłość, więc w obu częściach przyszły dokonany: kiedy wrócę."
@@ -101,8 +101,8 @@
           "text": "Dziewczyny z mojej klasy ___ wszystko o wszystkich.",
           "answer": "wiedziały",
           "options": [
-            "wiedziały",
             "wiedzieli",
+            "wiedziały",
             "wiedziała"
           ],
           "grammar_point": "czas-przeszly",
@@ -406,15 +406,15 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Kasjer: Dzień dobry, słucham.\n\nOlena: Dzień dobry. {el1-1}\n\nKasjer: {el1-2}\n\nOlena: Na środę, najlepiej rano. {el1-3}\n\nKasjer: Nie, autobus jedzie bezpośrednio z dworca. Odjazd o piątej dziesięć, a bilet kosztuje sześćdziesiąt złotych.\n\nOlena: {el1-4} {el1-5}\n\nKasjer: Oczywiście. Proszę włożyć kartę do terminala.\n\nOlena: Dziękuję. {el1-6}\n\nKasjer: Tak, ale proszę przyjść dziesięć minut wcześniej.\n\nOlena: {el1-7} Do widzenia.\n\nKasjer: {el1-8}",
       "bank": [
-        "a) Czy muszę się przesiadać?",
-        "b) To trochę drogo, ale dobrze.",
+        "a) Czy mogę zapłacić kartą?",
+        "b) Czy w autobusie jest miejsce na duży bagaż?",
         "c) Dobrze, dziękuję za informację.",
-        "d) Chciałabym zwrócić ten bilet.",
+        "d) Do widzenia, szczęśliwej podróży!",
         "e) Poproszę jeden bilet na lotnisko w Warszawie.",
-        "f) Do widzenia, szczęśliwej podróży!",
-        "g) Na który dzień?",
-        "h) Czy mogę zapłacić kartą?",
-        "i) Czy w autobusie jest miejsce na duży bagaż?",
+        "f) Czy muszę się przesiadać?",
+        "g) Chciałabym zwrócić ten bilet.",
+        "h) Na który dzień?",
+        "i) To trochę drogo, ale dobrze.",
         "j) Niestety autobus już odjechał."
       ],
       "items": [
@@ -422,15 +422,15 @@
           "id": "el1-1",
           "answer": "e) Poproszę jeden bilet na lotnisko w Warszawie.",
           "options": [
-            "a) Czy muszę się przesiadać?",
-            "b) To trochę drogo, ale dobrze.",
+            "a) Czy mogę zapłacić kartą?",
+            "b) Czy w autobusie jest miejsce na duży bagaż?",
             "c) Dobrze, dziękuję za informację.",
-            "d) Chciałabym zwrócić ten bilet.",
+            "d) Do widzenia, szczęśliwej podróży!",
             "e) Poproszę jeden bilet na lotnisko w Warszawie.",
-            "f) Do widzenia, szczęśliwej podróży!",
-            "g) Na który dzień?",
-            "h) Czy mogę zapłacić kartą?",
-            "i) Czy w autobusie jest miejsce na duży bagaż?",
+            "f) Czy muszę się przesiadać?",
+            "g) Chciałabym zwrócić ten bilet.",
+            "h) Na który dzień?",
+            "i) To trochę drogo, ale dobrze.",
             "j) Niestety autobus już odjechał."
           ],
           "explanation": "Olena zaczyna od zamówienia biletu na lotnisko, a kasjer dopytuje o szczegóły. To typowy początek rozmowy przy kasie.",
@@ -438,17 +438,17 @@
         },
         {
           "id": "el1-2",
-          "answer": "g) Na który dzień?",
+          "answer": "h) Na który dzień?",
           "options": [
-            "a) Czy muszę się przesiadać?",
-            "b) To trochę drogo, ale dobrze.",
+            "a) Czy mogę zapłacić kartą?",
+            "b) Czy w autobusie jest miejsce na duży bagaż?",
             "c) Dobrze, dziękuję za informację.",
-            "d) Chciałabym zwrócić ten bilet.",
+            "d) Do widzenia, szczęśliwej podróży!",
             "e) Poproszę jeden bilet na lotnisko w Warszawie.",
-            "f) Do widzenia, szczęśliwej podróży!",
-            "g) Na który dzień?",
-            "h) Czy mogę zapłacić kartą?",
-            "i) Czy w autobusie jest miejsce na duży bagaż?",
+            "f) Czy muszę się przesiadać?",
+            "g) Chciałabym zwrócić ten bilet.",
+            "h) Na który dzień?",
+            "i) To trochę drogo, ale dobrze.",
             "j) Niestety autobus już odjechał."
           ],
           "explanation": "Kasjer potrzebuje daty, więc pyta „Na który dzień?”. Olena odpowiada „Na środę”.",
@@ -456,17 +456,17 @@
         },
         {
           "id": "el1-3",
-          "answer": "a) Czy muszę się przesiadać?",
+          "answer": "f) Czy muszę się przesiadać?",
           "options": [
-            "a) Czy muszę się przesiadać?",
-            "b) To trochę drogo, ale dobrze.",
+            "a) Czy mogę zapłacić kartą?",
+            "b) Czy w autobusie jest miejsce na duży bagaż?",
             "c) Dobrze, dziękuję za informację.",
-            "d) Chciałabym zwrócić ten bilet.",
+            "d) Do widzenia, szczęśliwej podróży!",
             "e) Poproszę jeden bilet na lotnisko w Warszawie.",
-            "f) Do widzenia, szczęśliwej podróży!",
-            "g) Na który dzień?",
-            "h) Czy mogę zapłacić kartą?",
-            "i) Czy w autobusie jest miejsce na duży bagaż?",
+            "f) Czy muszę się przesiadać?",
+            "g) Chciałabym zwrócić ten bilet.",
+            "h) Na który dzień?",
+            "i) To trochę drogo, ale dobrze.",
             "j) Niestety autobus już odjechał."
           ],
           "explanation": "Kasjer odpowiada „Nie, autobus jedzie bezpośrednio”, więc Olena zapytała o przesiadkę. Pytanie o kartę pasowałoby dopiero po podaniu ceny.",
@@ -474,17 +474,17 @@
         },
         {
           "id": "el1-4",
-          "answer": "b) To trochę drogo, ale dobrze.",
+          "answer": "i) To trochę drogo, ale dobrze.",
           "options": [
-            "a) Czy muszę się przesiadać?",
-            "b) To trochę drogo, ale dobrze.",
+            "a) Czy mogę zapłacić kartą?",
+            "b) Czy w autobusie jest miejsce na duży bagaż?",
             "c) Dobrze, dziękuję za informację.",
-            "d) Chciałabym zwrócić ten bilet.",
+            "d) Do widzenia, szczęśliwej podróży!",
             "e) Poproszę jeden bilet na lotnisko w Warszawie.",
-            "f) Do widzenia, szczęśliwej podróży!",
-            "g) Na który dzień?",
-            "h) Czy mogę zapłacić kartą?",
-            "i) Czy w autobusie jest miejsce na duży bagaż?",
+            "f) Czy muszę się przesiadać?",
+            "g) Chciałabym zwrócić ten bilet.",
+            "h) Na który dzień?",
+            "i) To trochę drogo, ale dobrze.",
             "j) Niestety autobus już odjechał."
           ],
           "explanation": "Olena reaguje na cenę: uważa, że jest wysoka, ale się zgadza. Zwrot z „ale” pokazuje oba odczucia.",
@@ -492,17 +492,17 @@
         },
         {
           "id": "el1-5",
-          "answer": "h) Czy mogę zapłacić kartą?",
+          "answer": "a) Czy mogę zapłacić kartą?",
           "options": [
-            "a) Czy muszę się przesiadać?",
-            "b) To trochę drogo, ale dobrze.",
+            "a) Czy mogę zapłacić kartą?",
+            "b) Czy w autobusie jest miejsce na duży bagaż?",
             "c) Dobrze, dziękuję za informację.",
-            "d) Chciałabym zwrócić ten bilet.",
+            "d) Do widzenia, szczęśliwej podróży!",
             "e) Poproszę jeden bilet na lotnisko w Warszawie.",
-            "f) Do widzenia, szczęśliwej podróży!",
-            "g) Na który dzień?",
-            "h) Czy mogę zapłacić kartą?",
-            "i) Czy w autobusie jest miejsce na duży bagaż?",
+            "f) Czy muszę się przesiadać?",
+            "g) Chciałabym zwrócić ten bilet.",
+            "h) Na który dzień?",
+            "i) To trochę drogo, ale dobrze.",
             "j) Niestety autobus już odjechał."
           ],
           "explanation": "Kasjer odpowiada „Oczywiście. Proszę włożyć kartę”, więc pytanie dotyczy płacenia kartą. „Chciałabym zwrócić ten bilet” nie pasuje do kupowania biletu.",
@@ -510,17 +510,17 @@
         },
         {
           "id": "el1-6",
-          "answer": "i) Czy w autobusie jest miejsce na duży bagaż?",
+          "answer": "b) Czy w autobusie jest miejsce na duży bagaż?",
           "options": [
-            "a) Czy muszę się przesiadać?",
-            "b) To trochę drogo, ale dobrze.",
+            "a) Czy mogę zapłacić kartą?",
+            "b) Czy w autobusie jest miejsce na duży bagaż?",
             "c) Dobrze, dziękuję za informację.",
-            "d) Chciałabym zwrócić ten bilet.",
+            "d) Do widzenia, szczęśliwej podróży!",
             "e) Poproszę jeden bilet na lotnisko w Warszawie.",
-            "f) Do widzenia, szczęśliwej podróży!",
-            "g) Na który dzień?",
-            "h) Czy mogę zapłacić kartą?",
-            "i) Czy w autobusie jest miejsce na duży bagaż?",
+            "f) Czy muszę się przesiadać?",
+            "g) Chciałabym zwrócić ten bilet.",
+            "h) Na który dzień?",
+            "i) To trochę drogo, ale dobrze.",
             "j) Niestety autobus już odjechał."
           ],
           "explanation": "Kasjer odpowiada „Tak, ale proszę przyjść wcześniej”, więc Olena zapytała o bagaż w autobusie.",
@@ -530,15 +530,15 @@
           "id": "el1-7",
           "answer": "c) Dobrze, dziękuję za informację.",
           "options": [
-            "a) Czy muszę się przesiadać?",
-            "b) To trochę drogo, ale dobrze.",
+            "a) Czy mogę zapłacić kartą?",
+            "b) Czy w autobusie jest miejsce na duży bagaż?",
             "c) Dobrze, dziękuję za informację.",
-            "d) Chciałabym zwrócić ten bilet.",
+            "d) Do widzenia, szczęśliwej podróży!",
             "e) Poproszę jeden bilet na lotnisko w Warszawie.",
-            "f) Do widzenia, szczęśliwej podróży!",
-            "g) Na który dzień?",
-            "h) Czy mogę zapłacić kartą?",
-            "i) Czy w autobusie jest miejsce na duży bagaż?",
+            "f) Czy muszę się przesiadać?",
+            "g) Chciałabym zwrócić ten bilet.",
+            "h) Na który dzień?",
+            "i) To trochę drogo, ale dobrze.",
             "j) Niestety autobus już odjechał."
           ],
           "explanation": "Olena dziękuje za wskazówkę i żegna się. „Niestety autobus już odjechał” nie pasuje do spokojnego zakończenia rozmowy.",
@@ -546,17 +546,17 @@
         },
         {
           "id": "el1-8",
-          "answer": "f) Do widzenia, szczęśliwej podróży!",
+          "answer": "d) Do widzenia, szczęśliwej podróży!",
           "options": [
-            "a) Czy muszę się przesiadać?",
-            "b) To trochę drogo, ale dobrze.",
+            "a) Czy mogę zapłacić kartą?",
+            "b) Czy w autobusie jest miejsce na duży bagaż?",
             "c) Dobrze, dziękuję za informację.",
-            "d) Chciałabym zwrócić ten bilet.",
+            "d) Do widzenia, szczęśliwej podróży!",
             "e) Poproszę jeden bilet na lotnisko w Warszawie.",
-            "f) Do widzenia, szczęśliwej podróży!",
-            "g) Na który dzień?",
-            "h) Czy mogę zapłacić kartą?",
-            "i) Czy w autobusie jest miejsce na duży bagaż?",
+            "f) Czy muszę się przesiadać?",
+            "g) Chciałabym zwrócić ten bilet.",
+            "h) Na który dzień?",
+            "i) To trochę drogo, ale dobrze.",
             "j) Niestety autobus już odjechał."
           ],
           "explanation": "Kasjer odpowiada na pożegnanie i życzy dobrej podróży. To zwykła grzeczna formuła na końcu rozmowy.",
@@ -587,8 +587,8 @@
           "id": "el2-2",
           "answer": "c) zajmuje",
           "options": [
-            "a) pracuje",
             "b) uczy",
+            "a) pracuje",
             "c) zajmuje"
           ],
           "explanation": "Mówimy „zajmować się czymś”, np. ceramiką. „Pracować się” i „uczyć się ceramiką” nie są poprawne.",
@@ -598,9 +598,9 @@
           "id": "el2-3",
           "answer": "a) na",
           "options": [
-            "a) na",
             "b) do",
-            "c) w"
+            "c) w",
+            "a) na"
           ],
           "explanation": "Zapisujemy się „na kurs”. „Do kurs” i „w kurs” są błędne.",
           "grammar_point": "rejestr-formalny"
@@ -610,8 +610,8 @@
           "answer": "a) czy",
           "options": [
             "a) czy",
-            "b) żeby",
-            "c) jak"
+            "c) jak",
+            "b) żeby"
           ],
           "explanation": "W pytaniu pośrednim używamy „czy”: „dowiedzieć się, czy zajęcia odbywają się…”. „Żeby” i „jak” nie pasują.",
           "grammar_point": "rejestr-formalny"
@@ -621,8 +621,8 @@
           "answer": "c) oraz",
           "options": [
             "a) chociaż",
-            "b) zanim",
-            "c) oraz"
+            "c) oraz",
+            "b) zanim"
           ],
           "explanation": "Łączymy dwa pytania o informacje: cenę „oraz” liczbę osób. „Chociaż” i „zanim” zmieniają sens.",
           "grammar_point": "rejestr-formalny"
@@ -631,9 +631,9 @@
           "id": "el2-6",
           "answer": "b) o",
           "options": [
-            "a) za",
             "b) o",
-            "c) na"
+            "c) na",
+            "a) za"
           ],
           "explanation": "Mówimy „prosić o coś”, tu o informację. „Za” i „na” nie pasują.",
           "grammar_point": "rejestr-formalny"
@@ -642,9 +642,9 @@
           "id": "el2-7",
           "answer": "c) za",
           "options": [
-            "a) o",
             "b) na",
-            "c) za"
+            "c) za",
+            "a) o"
           ],
           "explanation": "Stałe wyrażenie to „być wdzięcznym za coś”. „O” i „na” tworzą inne połączenia.",
           "grammar_point": "rejestr-formalny"
@@ -653,8 +653,8 @@
           "id": "el2-8",
           "answer": "a) w ciągu",
           "options": [
-            "a) w ciągu",
             "b) podczas",
+            "a) w ciągu",
             "c) przed"
           ],
           "explanation": "„W ciągu kilku dni” znaczy „najpóźniej za kilka dni”. „Podczas” i „przed” nie pasują do prośby o odpowiedź.",
@@ -664,8 +664,8 @@
           "id": "el2-9",
           "answer": "b) Z góry",
           "options": [
-            "a) Z początku",
             "b) Z góry",
+            "a) Z początku",
             "c) Od góry"
           ],
           "explanation": "„Z góry dziękuję” to stała formuła w liście, gdy dziękujemy przed otrzymaniem pomocy. Pozostałe wyrażenia nie służą do dziękowania.",
@@ -675,9 +675,9 @@
           "id": "el2-10",
           "answer": "a) Z",
           "options": [
-            "a) Z",
             "b) Na",
-            "c) Przy"
+            "c) Przy",
+            "a) Z"
           ],
           "explanation": "Formuła pożegnalna to „Z poważaniem”. Inne przyimki nie tworzą takiego zwrotu.",
           "grammar_point": "rejestr-formalny"

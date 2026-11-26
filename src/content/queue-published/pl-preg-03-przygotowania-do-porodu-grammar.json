@@ -14,42 +14,60 @@
         {
           "id": "g1-1",
           "text": "Aniu, ___ spokojnie i licz do czterech.",
-          "options": ["oddychaj", "oddychajcie"],
+          "options": [
+            "oddychajcie",
+            "oddychaj"
+          ],
           "answer": "oddychaj",
           "explanation": "Mówimy do jednej osoby, więc forma na ty."
         },
         {
           "id": "g1-2",
           "text": "Dziewczyny, ___ teraz wygodną pozycję.",
-          "options": ["znajdź", "znajdźcie"],
+          "options": [
+            "znajdźcie",
+            "znajdź"
+          ],
           "answer": "znajdźcie",
           "explanation": "Zwracamy się do grupy, więc końcówka -cie."
         },
         {
           "id": "g1-3",
           "text": "___ krótką przerwę, wszyscy jesteśmy zmęczeni.",
-          "options": ["Zrób", "Zróbmy"],
+          "options": [
+            "Zróbmy",
+            "Zrób"
+          ],
           "answer": "Zróbmy",
           "explanation": "Propozycja dla całej grupy razem: forma na my."
         },
         {
           "id": "g1-4",
           "text": "Niech pani ___ na tym krześle.",
-          "options": ["usiądzie", "usiądź"],
+          "options": [
+            "usiądź",
+            "usiądzie"
+          ],
           "answer": "usiądzie",
           "explanation": "Po niech stoi zwykła forma on / ona, nie rozkazująca."
         },
         {
           "id": "g1-5",
           "text": "Proszę ___ po prawej stronie korytarza.",
-          "options": ["czekać", "czekaj"],
+          "options": [
+            "czekaj",
+            "czekać"
+          ],
           "answer": "czekać",
           "explanation": "Po proszę zawsze bezokolicznik."
         },
         {
           "id": "g1-6",
           "text": "Tato, ___ torbę do bagażnika.",
-          "options": ["włóż", "włóżcie"],
+          "options": [
+            "włóż",
+            "włóżcie"
+          ],
           "answer": "włóż",
           "explanation": "Jedna osoba, więc forma na ty."
         }
@@ -61,14 +79,46 @@
       "title": "2. Bezokolicznik i rozkaz",
       "instruction": "Połącz czasownik z jego formą rozkazującą dla ty.",
       "items": [
-        { "id": "g2-1", "left": "oddychać", "right": "oddychaj" },
-        { "id": "g2-2", "left": "wziąć", "right": "weź" },
-        { "id": "g2-3", "left": "być", "right": "bądź" },
-        { "id": "g2-4", "left": "jeść", "right": "jedz" },
-        { "id": "g2-5", "left": "pić", "right": "pij" },
-        { "id": "g2-6", "left": "spać", "right": "śpij" },
-        { "id": "g2-7", "left": "dać", "right": "daj" },
-        { "id": "g2-8", "left": "iść", "right": "idź" }
+        {
+          "id": "g2-1",
+          "left": "oddychać",
+          "right": "oddychaj"
+        },
+        {
+          "id": "g2-2",
+          "left": "wziąć",
+          "right": "weź"
+        },
+        {
+          "id": "g2-3",
+          "left": "być",
+          "right": "bądź"
+        },
+        {
+          "id": "g2-4",
+          "left": "jeść",
+          "right": "jedz"
+        },
+        {
+          "id": "g2-5",
+          "left": "pić",
+          "right": "pij"
+        },
+        {
+          "id": "g2-6",
+          "left": "spać",
+          "right": "śpij"
+        },
+        {
+          "id": "g2-7",
+          "left": "dać",
+          "right": "daj"
+        },
+        {
+          "id": "g2-8",
+          "left": "iść",
+          "right": "idź"
+        }
       ]
     },
     {
@@ -77,13 +127,41 @@
       "title": "3. Zbuduj formę",
       "instruction": "Zrób formę rozkazującą dla ty od podanej formy on / ona.",
       "items": [
-        { "id": "g3-1", "text": "ona pisze → ___", "answer": "pisz" },
-        { "id": "g3-2", "text": "on czeka → ___", "answer": "czekaj" },
-        { "id": "g3-3", "text": "ona myje → ___", "answer": "myj" },
-        { "id": "g3-4", "text": "on siada → ___", "answer": "siadaj" },
-        { "id": "g3-5", "text": "ona zamyka → ___", "answer": "zamykaj" },
-        { "id": "g3-6", "text": "on mówi → ___", "answer": "mów" },
-        { "id": "g3-7", "text": "ona wraca → ___", "answer": "wracaj" }
+        {
+          "id": "g3-1",
+          "text": "ona pisze → ___",
+          "answer": "pisz"
+        },
+        {
+          "id": "g3-2",
+          "text": "on czeka → ___",
+          "answer": "czekaj"
+        },
+        {
+          "id": "g3-3",
+          "text": "ona myje → ___",
+          "answer": "myj"
+        },
+        {
+          "id": "g3-4",
+          "text": "on siada → ___",
+          "answer": "siadaj"
+        },
+        {
+          "id": "g3-5",
+          "text": "ona zamyka → ___",
+          "answer": "zamykaj"
+        },
+        {
+          "id": "g3-6",
+          "text": "on mówi → ___",
+          "answer": "mów"
+        },
+        {
+          "id": "g3-7",
+          "text": "ona wraca → ___",
+          "answer": "wracaj"
+        }
       ]
     },
     {
@@ -133,42 +211,60 @@
         {
           "id": "g5-1",
           "text": "___ te ćwiczenia codziennie, nie tylko na zajęciach.",
-          "options": ["Rób", "Zrób"],
+          "options": [
+            "Zrób",
+            "Rób"
+          ],
           "answer": "Rób",
           "explanation": "Codziennie to zwyczaj, więc forma niedokonana."
         },
         {
           "id": "g5-2",
           "text": "___ to teraz, zanim zapomnisz.",
-          "options": ["Rób", "Zrób"],
+          "options": [
+            "Zrób",
+            "Rób"
+          ],
           "answer": "Zrób",
           "explanation": "Jeden raz i od razu: forma dokonana."
         },
         {
           "id": "g5-3",
           "text": "Nie ___ tak szybko, poczekaj chwilę.",
-          "options": ["wstawaj", "wstań"],
+          "options": [
+            "wstawaj",
+            "wstań"
+          ],
           "answer": "wstawaj",
           "explanation": "Po nie zawsze forma niedokonana, nawet gdy chodzi o jeden raz."
         },
         {
           "id": "g5-4",
           "text": "___ dokumenty do foliowej koszulki i odłóż na komodę.",
-          "options": ["Wkładaj", "Włóż"],
+          "options": [
+            "Wkładaj",
+            "Włóż"
+          ],
           "answer": "Włóż",
           "explanation": "Jedna konkretna czynność z wynikiem."
         },
         {
           "id": "g5-5",
           "text": "Nie ___ tego planu jak testu.",
-          "options": ["traktuj", "potraktuj"],
+          "options": [
+            "potraktuj",
+            "traktuj"
+          ],
           "answer": "traktuj",
           "explanation": "Przeczenie plus rada ogólna: forma niedokonana."
         },
         {
           "id": "g5-6",
           "text": "___ ładowarkę zawsze w bocznej kieszeni.",
-          "options": ["Trzymaj", "Potrzymaj"],
+          "options": [
+            "Trzymaj",
+            "Potrzymaj"
+          ],
           "answer": "Trzymaj",
           "explanation": "Zawsze to zwyczaj, nie jednorazowa czynność."
         }
@@ -180,13 +276,41 @@
       "title": "6. Instrukcja od położnej",
       "instruction": "Siedem zdań, jedna instrukcja. Wstaw formę rozkazującą czasownika z nawiasu.",
       "items": [
-        { "id": "g6-1", "text": "___ (spakować) torbę w trzydziestym szóstym tygodniu.", "answer": "Spakuj" },
-        { "id": "g6-2", "text": "___ (postawić) ją przy drzwiach i nie chowaj do szafy.", "answer": "Postaw" },
-        { "id": "g6-3", "text": "Dokumenty ___ (trzymać) osobno, w jednym miejscu.", "answer": "trzymaj" },
-        { "id": "g6-4", "text": "___ (zadzwonić) do nas, kiedy skurcze będą regularne.", "answer": "Zadzwoń" },
-        { "id": "g6-5", "text": "___ (przyjechać) spokojnie, nikt się nie spieszy.", "answer": "Przyjedź" },
-        { "id": "g6-6", "text": "Nie ___ (jeść) dużego posiłku przed wyjazdem.", "answer": "jedz" },
-        { "id": "g6-7", "text": "___ (być) w kontakcie z osobą towarzyszącą.", "answer": "Bądź" }
+        {
+          "id": "g6-1",
+          "text": "___ (spakować) torbę w trzydziestym szóstym tygodniu.",
+          "answer": "Spakuj"
+        },
+        {
+          "id": "g6-2",
+          "text": "___ (postawić) ją przy drzwiach i nie chowaj do szafy.",
+          "answer": "Postaw"
+        },
+        {
+          "id": "g6-3",
+          "text": "Dokumenty ___ (trzymać) osobno, w jednym miejscu.",
+          "answer": "trzymaj"
+        },
+        {
+          "id": "g6-4",
+          "text": "___ (zadzwonić) do nas, kiedy skurcze będą regularne.",
+          "answer": "Zadzwoń"
+        },
+        {
+          "id": "g6-5",
+          "text": "___ (przyjechać) spokojnie, nikt się nie spieszy.",
+          "answer": "Przyjedź"
+        },
+        {
+          "id": "g6-6",
+          "text": "Nie ___ (jeść) dużego posiłku przed wyjazdem.",
+          "answer": "jedz"
+        },
+        {
+          "id": "g6-7",
+          "text": "___ (być) w kontakcie z osobą towarzyszącą.",
+          "answer": "Bądź"
+        }
       ]
     },
     {
@@ -194,13 +318,41 @@
       "exercise_type": "drag-and-drop",
       "title": "7. Kartka na lodówce",
       "instruction": "Przeciągnij właściwą formę w lukę. Dwa słowa nie pasują nigdzie — to bezokoliczniki.",
-      "bank": ["weź", "nie zapomnij", "zamknij", "wyłącz", "napisz", "wziąć", "zamykać"],
+      "bank": [
+        "weź",
+        "nie zapomnij",
+        "zamknij",
+        "wyłącz",
+        "napisz",
+        "wziąć",
+        "zamykać"
+      ],
       "items": [
-        { "id": "g7-1", "text": "___ dowód osobisty i kartę ciąży.", "answer": "weź" },
-        { "id": "g7-2", "text": "___ o ładowarce, leży przy łóżku.", "answer": "nie zapomnij" },
-        { "id": "g7-3", "text": "___ okno w kuchni, zapowiadali deszcz.", "answer": "zamknij" },
-        { "id": "g7-4", "text": "___ żelazko z gniazdka przed wyjściem.", "answer": "wyłącz" },
-        { "id": "g7-5", "text": "___ mi wiadomość, kiedy dojedziesz.", "answer": "napisz" }
+        {
+          "id": "g7-1",
+          "text": "___ dowód osobisty i kartę ciąży.",
+          "answer": "weź"
+        },
+        {
+          "id": "g7-2",
+          "text": "___ o ładowarce, leży przy łóżku.",
+          "answer": "nie zapomnij"
+        },
+        {
+          "id": "g7-3",
+          "text": "___ okno w kuchni, zapowiadali deszcz.",
+          "answer": "zamknij"
+        },
+        {
+          "id": "g7-4",
+          "text": "___ żelazko z gniazdka przed wyjściem.",
+          "answer": "wyłącz"
+        },
+        {
+          "id": "g7-5",
+          "text": "___ mi wiadomość, kiedy dojedziesz.",
+          "answer": "napisz"
+        }
       ]
     },
     {
@@ -212,42 +364,60 @@
         {
           "id": "g8-1",
           "text": "___ oddychać wolniej, może będzie lżej.",
-          "options": ["Spróbuj", "Masz"],
+          "options": [
+            "Spróbuj",
+            "Masz"
+          ],
           "answer": "Spróbuj",
           "explanation": "Spróbuj zamienia polecenie w propozycję."
         },
         {
           "id": "g8-2",
           "text": "___ się, ramiona masz przy uszach.",
-          "options": ["Rozluźnij", "Rozluźnić"],
+          "options": [
+            "Rozluźnić",
+            "Rozluźnij"
+          ],
           "answer": "Rozluźnij",
           "explanation": "Do jednej osoby bez proszę używamy formy rozkazującej."
         },
         {
           "id": "g8-3",
           "text": "Nie ___ się, wszystko idzie normalnie.",
-          "options": ["martw", "zmartw"],
+          "options": [
+            "martw",
+            "zmartw"
+          ],
           "answer": "martw",
           "explanation": "Przeczenie plus forma niedokonana. Się stoi po czasowniku."
         },
         {
           "id": "g8-4",
           "text": "___ się odpocząć między skurczami.",
-          "options": ["Postaraj", "Postarać"],
+          "options": [
+            "Postaraj",
+            "Postarać"
+          ],
           "answer": "Postaraj",
           "explanation": "Postaraj się to łagodna zachęta, częsta na sali porodowej."
         },
         {
           "id": "g8-5",
           "text": "Niech tata ___ na korytarzu jeszcze chwilę.",
-          "options": ["poczeka", "poczekaj"],
+          "options": [
+            "poczekaj",
+            "poczeka"
+          ],
           "answer": "poczeka",
           "explanation": "Po niech zawsze forma on / ona."
         },
         {
           "id": "g8-6",
           "text": "Proszę mi ___, kiedy mam przyjechać.",
-          "options": ["powiedzieć", "powiedz"],
+          "options": [
+            "powiedzieć",
+            "powiedz"
+          ],
           "answer": "powiedzieć",
           "explanation": "Grzeczna prośba do personelu: proszę plus bezokolicznik."
         }

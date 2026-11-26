@@ -116,8 +116,8 @@
           "answer": "właścicielka",
           "grammar_point": "slownictwo",
           "options": [
-            "właścicielka",
             "najemca",
+            "właścicielka",
             "sąsiadka"
           ],
           "explanation": "Właścicielka = kobieta, do której należy mieszkanie."
@@ -128,9 +128,9 @@
           "answer": "najemca",
           "grammar_point": "slownictwo",
           "options": [
-            "najemca",
+            "pośrednik",
             "kupujący",
-            "pośrednik"
+            "najemca"
           ],
           "explanation": "Najemca wynajmuje; kupujący kupuje."
         },
@@ -140,9 +140,9 @@
           "answer": "prowizja",
           "grammar_point": "slownictwo",
           "options": [
-            "prowizja",
             "rata",
-            "wycena"
+            "wycena",
+            "prowizja"
           ]
         },
         {
@@ -162,9 +162,9 @@
           "answer": "garaż",
           "grammar_point": "slownictwo",
           "options": [
-            "garaż",
             "strych",
-            "taras"
+            "taras",
+            "garaż"
           ]
         },
         {
@@ -173,9 +173,9 @@
           "answer": "wymagający",
           "grammar_point": "slownictwo",
           "options": [
+            "wilgotny",
             "wymagający",
-            "uczciwy",
-            "wilgotny"
+            "uczciwy"
           ]
         }
       ]
@@ -317,9 +317,9 @@
           "answer": "ten",
           "grammar_point": "rodzaj-rzeczownika",
           "options": [
+            "to",
             "ten",
-            "ta",
-            "to"
+            "ta"
           ],
           "explanation": "Mężczyzna ma -a, ale to mężczyzna: ten."
         },
@@ -329,9 +329,9 @@
           "answer": "ta",
           "grammar_point": "rodzaj-rzeczownika",
           "options": [
+            "to",
             "ten",
-            "ta",
-            "to"
+            "ta"
           ],
           "explanation": "Nieruchomość kończy się spółgłoską, ale -ość to żeński: ta."
         },
@@ -341,9 +341,9 @@
           "answer": "ten",
           "grammar_point": "rodzaj-rzeczownika",
           "options": [
+            "to",
             "ten",
-            "ta",
-            "to"
+            "ta"
           ],
           "explanation": "Kolega: -a, ale mężczyzna: ten."
         },
@@ -353,9 +353,9 @@
           "answer": "ta",
           "grammar_point": "rodzaj-rzeczownika",
           "options": [
+            "to",
             "ten",
-            "ta",
-            "to"
+            "ta"
           ],
           "explanation": "Część: żeński, mimo spółgłoski na końcu."
         },
@@ -365,9 +365,9 @@
           "answer": "ten",
           "grammar_point": "rodzaj-rzeczownika",
           "options": [
+            "to",
             "ten",
-            "ta",
-            "to"
+            "ta"
           ],
           "explanation": "Najemca: mężczyzna, mimo -a. Kobieta to najemczyni."
         },
@@ -377,9 +377,9 @@
           "answer": "ten",
           "grammar_point": "rodzaj-rzeczownika",
           "options": [
+            "to",
             "ten",
-            "ta",
-            "to"
+            "ta"
           ]
         },
         {
@@ -388,9 +388,9 @@
           "answer": "ta",
           "grammar_point": "rodzaj-rzeczownika",
           "options": [
+            "to",
             "ten",
-            "ta",
-            "to"
+            "ta"
           ]
         },
         {
@@ -399,9 +399,9 @@
           "answer": "ta",
           "grammar_point": "rodzaj-rzeczownika",
           "options": [
+            "to",
             "ten",
-            "ta",
-            "to"
+            "ta"
           ],
           "explanation": "Noc: żeński, bez -a. Zapamiętaj: noc, rzecz, część, sól."
         }
@@ -723,9 +723,9 @@
           "answer": "Jaka",
           "grammar_point": "przymiotnik-mianownik",
           "options": [
-            "Jaki",
+            "Jakie",
             "Jaka",
-            "Jakie"
+            "Jaki"
           ],
           "explanation": "Kamienica jest żeńska: jaka?"
         },
@@ -735,9 +735,9 @@
           "answer": "Jakie",
           "grammar_point": "przymiotnik-mianownik",
           "options": [
-            "Jaki",
+            "Jakie",
             "Jaka",
-            "Jakie"
+            "Jaki"
           ],
           "explanation": "Mieszkanie jest nijakie: jakie?"
         }
@@ -1076,9 +1076,9 @@
           "answer": "ta",
           "grammar_point": "rodzaj-rzeczownika",
           "options": [
-            "ten",
+            "to",
             "ta",
-            "to"
+            "ten"
           ],
           "explanation": "Rodzaj: -ość → żeński."
         },
@@ -1088,9 +1088,9 @@
           "answer": "Jaka",
           "grammar_point": "przymiotnik-mianownik",
           "options": [
-            "Jaki",
             "Jaka",
-            "Jakie"
+            "Jakie",
+            "Jaki"
           ],
           "explanation": "Winda jest żeńska: jaka?"
         },
@@ -1114,10 +1114,10 @@
           "answer": "męskoosobową liczbę mnogą",
           "grammar_point": "mn-mianownik-mos",
           "options": [
-            "rodzaj rzeczownika",
-            "liczbę mnogą rzeczy",
             "przymiotnik w liczbie pojedynczej",
-            "męskoosobową liczbę mnogą"
+            "liczbę mnogą rzeczy",
+            "męskoosobową liczbę mnogą",
+            "rodzaj rzeczownika"
           ],
           "explanation": "Ci pośrednicy (rzeczownik) + uczciwi (przymiotnik): obie formy męskoosobowe."
         },

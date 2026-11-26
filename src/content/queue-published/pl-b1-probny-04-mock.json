@@ -45,33 +45,33 @@
               "id": "rs1-1",
               "stem": "To jest",
               "options": [
-                "prośba.",
                 "rada.",
+                "prośba.",
                 "skarga."
               ],
-              "answer": "b",
+              "answer": "a",
               "explain": "Mówiący zaczyna od „Na twoim miejscu poszedłbym z tym do lekarza” – to typowa forma rady. Nie prosi o nic dla siebie i nie skarży się."
             },
             {
               "id": "rs1-2",
               "stem": "Gdzie można usłyszeć ten komunikat?",
               "options": [
+                "na przystanku autobusowym",
                 "na dworcu kolejowym",
-                "na lotnisku",
-                "na przystanku autobusowym"
+                "na lotnisku"
               ],
-              "answer": "a",
+              "answer": "b",
               "explain": "„Szanowni pasażerowie, pociąg do Gdyni odjedzie z opóźnieniem” – słowo „pociąg” wskazuje na dworzec kolejowy, a nie lotnisko czy przystanek autobusowy."
             },
             {
               "id": "rs1-3",
               "stem": "Ta osoba",
               "options": [
-                "szuka miejsca do parkowania.",
                 "przeprasza sąsiada.",
-                "jest zdenerwowana."
+                "jest zdenerwowana.",
+                "szuka miejsca do parkowania."
               ],
-              "answer": "c",
+              "answer": "b",
               "explain": "„No nie! Znowu ktoś zaparkował na moim miejscu! Ile razy można prosić?” – ton i słowa pokazują złość. Osoba nie szuka miejsca, bo ma swoje, i nikogo nie przeprasza."
             },
             {
@@ -89,9 +89,9 @@
               "id": "rs1-5",
               "stem": "Ta osoba",
               "options": [
-                "szuka pracy.",
+                "jest zmęczona.",
                 "cieszy się.",
-                "jest zmęczona."
+                "szuka pracy."
               ],
               "answer": "b",
               "explain": "„Dostałam tę pracę! Od poniedziałku zaczynam!” – osoba cieszy się z sukcesu. Już nie szuka pracy, bo ją dostała."
@@ -100,41 +100,41 @@
               "id": "rs1-6",
               "stem": "To jest",
               "options": [
-                "zaproszenie.",
+                "przeprosiny.",
                 "komplement.",
-                "przeprosiny."
+                "zaproszenie."
               ],
-              "answer": "c",
+              "answer": "a",
               "explain": "„Przepraszam, nie chciałem cię urazić. To był głupi żart.” – słowo „przepraszam” i przyznanie się do błędu to przeprosiny."
             },
             {
               "id": "rs1-7",
               "stem": "Gdzie można usłyszeć tę wypowiedź?",
               "options": [
-                "na poczcie",
                 "w banku",
-                "w sklepie internetowym"
+                "w sklepie internetowym",
+                "na poczcie"
               ],
-              "answer": "a",
+              "answer": "c",
               "explain": "„Chciałbym nadać tę paczkę priorytetem” – paczki nadaje się na poczcie. W sklepie internetowym nie rozmawia się z pracownikiem przy okienku."
             },
             {
               "id": "rs1-8",
               "stem": "To jest",
               "options": [
-                "informacja o filmie.",
                 "propozycja.",
-                "odmowa."
+                "odmowa.",
+                "informacja o filmie."
               ],
-              "answer": "b",
+              "answer": "a",
               "explain": "„Może pójdziemy w sobotę do kina?” – konstrukcja „Może + czasownik?” to propozycja. Informacja o filmie jest tylko dodatkiem."
             },
             {
               "id": "rs1-9",
               "stem": "Ta osoba",
               "options": [
-                "chwali obsługę.",
                 "zamawia drugą kawę.",
+                "chwali obsługę.",
                 "jest niezadowolona."
               ],
               "answer": "c",
@@ -144,9 +144,9 @@
               "id": "rs1-10",
               "stem": "Kto mówi?",
               "options": [
-                "bibliotekarka",
+                "sprzedawczyni w księgarni",
                 "nauczycielka",
-                "sprzedawczyni w księgarni"
+                "bibliotekarka"
               ],
               "answer": "b",
               "explain": "„Proszę otworzyć podręczniki na stronie czterdziestej i przeczytać tekst” – takie polecenie daje nauczycielka na lekcji."
@@ -155,11 +155,11 @@
               "id": "rs1-11",
               "stem": "To jest",
               "options": [
-                "prośba.",
                 "rada.",
+                "prośba.",
                 "ostrzeżenie."
               ],
-              "answer": "a",
+              "answer": "b",
               "explain": "„Mogłabyś mi pożyczyć ładowarkę?” – grzeczna forma „mogłabyś + bezokolicznik” to prośba. Osoba nie daje rady ani nie ostrzega."
             },
             {
@@ -189,10 +189,10 @@
               "stem": "Gdzie można usłyszeć tę wypowiedź?",
               "options": [
                 "w biurze nieruchomości",
-                "w hotelu",
-                "w restauracji"
+                "w restauracji",
+                "w hotelu"
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "„Pokój dwuosobowy ze śniadaniem, na trzy noce. Czy macie coś wolnego?” – tak rezerwuje się nocleg w hotelu, a nie mieszkanie w biurze nieruchomości."
             }
           ]
@@ -223,33 +223,33 @@
               "id": "rs2-1",
               "stem": "Mężczyzna",
               "options": [
-                "kupił chleb w drodze do domu.",
                 "nie musi iść do piekarni.",
-                "zaraz kupi bułki."
+                "zaraz kupi bułki.",
+                "kupił chleb w drodze do domu."
               ],
-              "answer": "b",
+              "answer": "a",
               "explain": "Mężczyzna chce iść do piekarni („zaraz skoczę”), ale kobieta mówi: „Nie trzeba. W zamrażarce są jeszcze bułki”. Nic nie kupił i nie musi iść."
             },
             {
               "id": "rs2-2",
               "stem": "Pacjentka",
               "options": [
-                "umówi się do doktora Lisa na czwartek.",
                 "przyjdzie do przychodni jutro.",
-                "umówi się do lekarki po jej urlopie."
+                "umówi się do lekarki po jej urlopie.",
+                "umówi się do doktora Lisa na czwartek."
               ],
-              "answer": "c",
+              "answer": "b",
               "explain": "Pacjentka odrzuca termin u doktora Lisa: „wolę poczekać, aż pani doktor wróci”. Umówi się więc do doktor Nowak po urlopie."
             },
             {
               "id": "rs2-3",
               "stem": "Kobieta",
               "options": [
-                "chce się znowu przeprowadzić.",
+                "urządza imprezy w weekendy.",
                 "jest zadowolona z sąsiadów.",
-                "urządza imprezy w weekendy."
+                "chce się znowu przeprowadzić."
               ],
-              "answer": "a",
+              "answer": "c",
               "explain": "Kobieta mówi o głośnych sąsiadach i dodaje: „Już szukam czegoś innego” – chce znowu się przeprowadzić. To sąsiedzi robią imprezy, nie ona."
             },
             {
@@ -257,41 +257,41 @@
               "stem": "Klient",
               "options": [
                 "odzyska swoją kartę jeszcze dziś.",
-                "dostanie nową kartę.",
-                "musi zamknąć konto."
+                "musi zamknąć konto.",
+                "dostanie nową kartę."
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "Pracowniczka banku mówi: „Zablokujemy tę kartę, a nową dostanie pan pocztą za tydzień”. Starej karty klient nie odzyska."
             },
             {
               "id": "rs2-5",
               "stem": "Małżonkowie",
               "options": [
+                "wybiorą tańszy nocleg.",
                 "zarezerwują hotel nad morzem.",
-                "zrezygnują z wyjazdu.",
-                "wybiorą tańszy nocleg."
+                "zrezygnują z wyjazdu."
               ],
-              "answer": "c",
+              "answer": "a",
               "explain": "Żona mówi, że hotel jest za drogi, i proponuje apartament „dwa razy tańszy”. Mąż się zgadza: „Dobra”. Wybierają tańszy nocleg."
             },
             {
               "id": "rs2-6",
               "stem": "Pracownica",
               "options": [
+                "spotka się z klientem o szesnastej.",
                 "proponuje inne rozwiązanie.",
-                "zostanie dziś w pracy dłużej.",
-                "spotka się z klientem o szesnastej."
+                "zostanie dziś w pracy dłużej."
               ],
-              "answer": "a",
+              "answer": "b",
               "explain": "Pracownica odmawia („Dziś nie dam rady”), ale proponuje: „jutro mogę przyjść godzinę wcześniej”. To inne rozwiązanie, a nie zgoda na dziś."
             },
             {
               "id": "rs2-7",
               "stem": "Klientka",
               "options": [
-                "zrezygnuje z kurtki.",
+                "zapłaci za kurtkę pełną cenę.",
                 "zamówi kurtkę w swoim rozmiarze.",
-                "zapłaci za kurtkę pełną cenę."
+                "zrezygnuje z kurtki."
               ],
               "answer": "b",
               "explain": "Sprzedawca proponuje zamówienie kurtki „w tej samej cenie”, a klientka odpowiada: „To poproszę”. Nie rezygnuje i nie płaci pełnej ceny."
@@ -582,8 +582,8 @@
               "stem": "Z tego tekstu wynika, że",
               "options": [
                 "za parkowanie w centrum trzeba będzie płacić także w weekendy.",
-                "parkowanie w centrum będzie tańsze.",
-                "mieszkańcy centrum nie będą płacić za parkowanie."
+                "mieszkańcy centrum nie będą płacić za parkowanie.",
+                "parkowanie w centrum będzie tańsze."
               ],
               "answer": "a",
               "passage": "Od marca zmieniają się zasady parkowania w centrum miasta. Strefa płatnego parkowania będzie działać od poniedziałku do soboty, w godzinach 8:00–20:00. Godzina postoju będzie kosztować 6 zł, czyli złotówkę więcej niż dotąd. Mieszkańcy centrum mogą kupić abonament za 30 zł miesięcznie.",
@@ -593,8 +593,8 @@
               "id": "rt1-2",
               "stem": "Z tego tekstu wynika, że",
               "options": [
-                "apteka przy ulicy Długiej jest czynna całą dobę przez cały rok.",
                 "w nocy lekarstwa można kupić tylko w jednej aptece.",
+                "apteka przy ulicy Długiej jest czynna całą dobę przez cały rok.",
                 "w każdą niedzielę dyżur ma inna apteka."
               ],
               "answer": "c",
@@ -605,9 +605,9 @@
               "id": "rt1-3",
               "stem": "Z tego tekstu wynika, że",
               "options": [
-                "wolontariusze muszą biegać w maratonie.",
+                "wolontariusze dostaną wynagrodzenie.",
                 "wolontariuszem może zostać każdy, kto skończył szesnaście lat.",
-                "wolontariusze dostaną wynagrodzenie."
+                "wolontariusze muszą biegać w maratonie."
               ],
               "answer": "b",
               "passage": "Organizatorzy Maratonu Warszawskiego szukają wolontariuszy. Ich zadaniem będzie podawanie wody biegaczom i pomoc przy mecie. Wystarczy mieć ukończone 16 lat i dobry humor. Każdy wolontariusz dostanie koszulkę, obiad i zaświadczenie o udziale w akcji.",
@@ -617,11 +617,11 @@
               "id": "rt1-4",
               "stem": "Z tego tekstu wynika, że",
               "options": [
+                "trzeba się zarejestrować przez internet.",
                 "seniorzy mogą zaszczepić się bezpłatnie.",
-                "szczepienie jest obowiązkowe dla wszystkich.",
-                "trzeba się zarejestrować przez internet."
+                "szczepienie jest obowiązkowe dla wszystkich."
               ],
-              "answer": "a",
+              "answer": "b",
               "passage": "W przychodni „Zdrowie” można już zaszczepić się przeciw grypie. Dla osób po 65. roku życia szczepienie jest bezpłatne, pozostali pacjenci płacą 50 zł. Nie trzeba się wcześniej zapisywać – wystarczy przyjść w godzinach pracy przychodni z dowodem osobistym.",
               "explain": "„Dla osób po 65. roku życia szczepienie jest bezpłatne”. Nie trzeba się zapisywać, a tekst nie mówi, że szczepienie jest obowiązkowe."
             },
@@ -629,11 +629,11 @@
               "id": "rt1-5",
               "stem": "Z tego tekstu wynika, że",
               "options": [
-                "basen będzie zamknięty przez cały miesiąc.",
                 "karnety kupione wcześniej będą ważne dłużej.",
-                "w czasie remontu można korzystać z sauny."
+                "w czasie remontu można korzystać z sauny.",
+                "basen będzie zamknięty przez cały miesiąc."
               ],
-              "answer": "b",
+              "answer": "a",
               "passage": "Informujemy, że od 1 do 14 lutego basen miejski będzie nieczynny z powodu remontu. Sauna i siłownia również będą zamknięte. Karnety, które są ważne w tym czasie, zostaną automatycznie przedłużone o dwa tygodnie. Przepraszamy za utrudnienia.",
               "explain": "Karnety „zostaną automatycznie przedłużone o dwa tygodnie”. Basen jest zamknięty tylko od 1 do 14 lutego, a sauna też będzie zamknięta."
             }
@@ -706,19 +706,19 @@
           "bank": [
             {
               "key": "A",
-              "text": "nigdy nie jest za późno"
-            },
-            {
-              "key": "B",
               "text": "niż długa lekcja raz w tygodniu"
             },
             {
+              "key": "B",
+              "text": "w drodze do pracy"
+            },
+            {
               "key": "C",
-              "text": "które od razu można wykorzystać"
+              "text": "mają lepszą motywację"
             },
             {
               "key": "D",
-              "text": "bez znajomości gramatyki"
+              "text": "po kilku tygodniach rezygnuje"
             },
             {
               "key": "E",
@@ -726,19 +726,19 @@
             },
             {
               "key": "F",
-              "text": "z rodzimym użytkownikiem języka"
+              "text": "nigdy nie jest za późno"
             },
             {
               "key": "G",
-              "text": "mają lepszą motywację"
+              "text": "z rodzimym użytkownikiem języka"
             },
             {
               "key": "H",
-              "text": "w drodze do pracy"
+              "text": "które od razu można wykorzystać"
             },
             {
               "key": "I",
-              "text": "po kilku tygodniach rezygnuje"
+              "text": "bez znajomości gramatyki"
             }
           ],
           "example": {
@@ -750,35 +750,35 @@
               "id": "rt3-1",
               "n": 1,
               "kind": "bank",
-              "answer": "G",
+              "answer": "C",
               "explain": "Zdanie mówi o tym, dlaczego dorośli dobrze się uczą: „bo wiedzą, do czego język jest im potrzebny” – to opis motywacji."
             },
             {
               "id": "rt3-2",
               "n": 2,
               "kind": "bank",
-              "answer": "B",
+              "answer": "A",
               "explain": "Po „daje więcej” potrzebne jest porównanie z „niż”: piętnaście minut codziennie kontra długa lekcja raz w tygodniu."
             },
             {
               "id": "rt3-3",
               "n": 3,
               "kind": "bank",
-              "answer": "H",
+              "answer": "B",
               "explain": "Dalej w zdaniu są miejsca: „w autobusie czy w tramwaju” – pasuje „w drodze do pracy”."
             },
             {
               "id": "rt3-4",
               "n": 4,
               "kind": "bank",
-              "answer": "I",
+              "answer": "D",
               "explain": "„Zaczyna z entuzjazmem, ale…” wymaga kontrastu: po kilku tygodniach rezygnuje. Czasownik w liczbie pojedynczej pasuje do „dużo osób”."
             },
             {
               "id": "rt3-5",
               "n": 5,
               "kind": "bank",
-              "answer": "C",
+              "answer": "H",
               "explain": "Po „zwrotów” potrzebne jest zdanie z „które”. Przykłady „w sklepie, w pracy, u lekarza” to sytuacje, w których zwroty można od razu wykorzystać."
             },
             {
@@ -792,7 +792,7 @@
               "id": "rt3-7",
               "n": 7,
               "kind": "bank",
-              "answer": "F",
+              "answer": "G",
               "explain": "„Rozmowa” łączy się z „z kim?” – z rodzimym użytkownikiem języka; dalej jest platforma wymiany językowej. Fragment D (bez gramatyki) nie pasuje nigdzie."
             }
           ]

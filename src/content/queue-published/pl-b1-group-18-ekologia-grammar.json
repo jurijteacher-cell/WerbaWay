@@ -75,8 +75,8 @@
           "answer": "a",
           "grammar_point": "a-ale-i",
           "options": [
-            "a",
-            "ale"
+            "ale",
+            "a"
           ],
           "explanation": "Dwie osoby, dwa różne sposoby → zestawienie → a."
         },
@@ -119,8 +119,8 @@
           "answer": "ale",
           "grammar_point": "a-ale-i",
           "options": [
-            "a",
-            "ale"
+            "ale",
+            "a"
           ],
           "explanation": "Plan się nie udał — wbrew oczekiwaniu → ale."
         },
@@ -130,8 +130,8 @@
           "answer": "a",
           "grammar_point": "a-ale-i",
           "options": [
-            "i",
-            "a"
+            "a",
+            "i"
           ],
           "explanation": "Zestawiamy dwa miasta → a."
         },
@@ -141,8 +141,8 @@
           "answer": "ale",
           "grammar_point": "a-ale-i",
           "options": [
-            "ale",
-            "a"
+            "a",
+            "ale"
           ],
           "explanation": "Ta sama rzecz: minus, a potem niespodziewany plus → ale."
         },
@@ -183,8 +183,8 @@
           "answer": "Za to",
           "grammar_point": "natomiast-jednak",
           "options": [
-            "Za to",
-            "Mimo to"
+            "Mimo to",
+            "Za to"
           ],
           "explanation": "Minus → plus, który go równoważy → za to."
         },
@@ -194,8 +194,8 @@
           "answer": "Mimo to",
           "grammar_point": "natomiast-jednak",
           "options": [
-            "Dlatego",
-            "Mimo to"
+            "Mimo to",
+            "Dlatego"
           ],
           "explanation": "Spacer wbrew deszczowi → mimo to. „Dlatego” = skutek (lekcja o wsi)."
         },
@@ -205,8 +205,8 @@
           "answer": "jednak",
           "grammar_point": "natomiast-jednak",
           "options": [
-            "jednak",
-            "dlatego"
+            "dlatego",
+            "jednak"
           ],
           "explanation": "Robię coś wbrew temu, co wiem → jednak."
         },
@@ -238,8 +238,8 @@
           "answer": "ale",
           "grammar_point": "natomiast-jednak",
           "options": [
-            "a",
-            "ale"
+            "ale",
+            "a"
           ],
           "explanation": "Plan się nie udał → ale."
         },
@@ -249,8 +249,8 @@
           "answer": "natomiast",
           "grammar_point": "natomiast-jednak",
           "options": [
-            "natomiast",
-            "za to"
+            "za to",
+            "natomiast"
           ],
           "explanation": "Dwie grupy, dwa różne zdania → natomiast."
         }
@@ -349,8 +349,8 @@
           "answer": "Mimo",
           "grammar_point": "chociaz-mimo-ze",
           "options": [
-            "Mimo",
-            "Chociaż"
+            "Chociaż",
+            "Mimo"
           ],
           "explanation": "Dalej jest rzeczownik w dopełniaczu → mimo."
         },
@@ -562,8 +562,8 @@
           "answer": "Chociaż było zimno, poszliśmy nad rzekę.",
           "grammar_point": "kalki-uk",
           "options": [
-            "Chociaż było zimno, ale poszliśmy nad rzekę.",
-            "Chociaż było zimno, poszliśmy nad rzekę."
+            "Chociaż było zimno, poszliśmy nad rzekę.",
+            "Chociaż było zimno, ale poszliśmy nad rzekę."
           ],
           "explanation": "Po „chociaż” nie dodajemy „ale”. Jedno słowo wystarczy."
         },
@@ -584,8 +584,8 @@
           "answer": "deszczu",
           "grammar_point": "kalki-uk",
           "options": [
-            "deszcz",
-            "deszczu"
+            "deszczu",
+            "deszcz"
           ],
           "explanation": "Mimo + dopełniacz → deszczu."
         },
@@ -595,8 +595,8 @@
           "answer": "i tak",
           "grammar_point": "kalki-uk",
           "options": [
-            "wszystko jedno",
-            "i tak"
+            "i tak",
+            "wszystko jedno"
           ],
           "explanation": "«Все одно купила» → i tak kupiłam. „Wszystko jedno” = «мені байдуже»."
         },
@@ -617,8 +617,8 @@
           "answer": "podczas gdy",
           "grammar_point": "kalki-uk",
           "options": [
-            "w tym czasie jak",
-            "podczas gdy"
+            "podczas gdy",
+            "w tym czasie jak"
           ],
           "explanation": "«В той час як» → podczas gdy albo „a”."
         }
@@ -632,158 +632,158 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Marta: Dzień dobry, w czym mogę pomóc?\n\nOlena: Dzień dobry. {el1-1} Nie przyjmuje moich butelek.\n\nMarta: {el1-2}\n\nOlena: To plastikowe butelki po wodzie. Zwracam je co sobotę i zawsze było dobrze.\n\nMarta: Widzę, że etykieta jest zniszczona. {el1-3}\n\nOlena: Paragonu nie mam, ale butelki są puste i całe. {el1-4}\n\nMarta: {el1-5} Może pani zapytać w biurze obsługi klienta.\n\nOlena: Rozumiem. {el1-6}\n\nMarta: Puszki przyjmujemy bez problemu, tylko muszą być puste.\n\nOlena: {el1-7} {el1-8}\n\nMarta: Nie ma sprawy. Miłego dnia!",
       "bank": [
-        "a) A co z puszkami?",
-        "b) Czy ma pani paragon?",
-        "c) Dziękuję za pomoc, do widzenia!",
-        "d) Proszę pokazać, o jakie butelki chodzi.",
-        "e) Mam problem z butelkomatem.",
-        "f) Niestety nie mam dziś czasu.",
-        "g) Czy mogę zapłacić kartą?",
-        "h) W takim razie przyniosę same puszki.",
-        "i) Niestety nie, automat musi odczytać kod.",
-        "j) To naprawdę nie wystarczy?"
+        "a) W takim razie przyniosę same puszki.",
+        "b) Dziękuję za pomoc, do widzenia!",
+        "c) Mam problem z butelkomatem.",
+        "d) Czy mogę zapłacić kartą?",
+        "e) To naprawdę nie wystarczy?",
+        "f) Czy ma pani paragon?",
+        "g) Proszę pokazać, o jakie butelki chodzi.",
+        "h) Niestety nie, automat musi odczytać kod.",
+        "i) A co z puszkami?",
+        "j) Niestety nie mam dziś czasu."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "e) Mam problem z butelkomatem.",
+          "answer": "c) Mam problem z butelkomatem.",
           "options": [
-            "a) A co z puszkami?",
-            "b) Czy ma pani paragon?",
-            "c) Dziękuję za pomoc, do widzenia!",
-            "d) Proszę pokazać, o jakie butelki chodzi.",
-            "e) Mam problem z butelkomatem.",
-            "f) Niestety nie mam dziś czasu.",
-            "g) Czy mogę zapłacić kartą?",
-            "h) W takim razie przyniosę same puszki.",
-            "i) Niestety nie, automat musi odczytać kod.",
-            "j) To naprawdę nie wystarczy?"
+            "a) W takim razie przyniosę same puszki.",
+            "b) Dziękuję za pomoc, do widzenia!",
+            "c) Mam problem z butelkomatem.",
+            "d) Czy mogę zapłacić kartą?",
+            "e) To naprawdę nie wystarczy?",
+            "f) Czy ma pani paragon?",
+            "g) Proszę pokazać, o jakie butelki chodzi.",
+            "h) Niestety nie, automat musi odczytać kod.",
+            "i) A co z puszkami?",
+            "j) Niestety nie mam dziś czasu."
           ],
           "explanation": "Olena zaczyna od opisu problemu, a dalej mówi, że automat nie przyjmuje butelek. Reszta zdań to pytania lub odpowiedzi pracownika.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "d) Proszę pokazać, o jakie butelki chodzi.",
+          "answer": "g) Proszę pokazać, o jakie butelki chodzi.",
           "options": [
-            "a) A co z puszkami?",
-            "b) Czy ma pani paragon?",
-            "c) Dziękuję za pomoc, do widzenia!",
-            "d) Proszę pokazać, o jakie butelki chodzi.",
-            "e) Mam problem z butelkomatem.",
-            "f) Niestety nie mam dziś czasu.",
-            "g) Czy mogę zapłacić kartą?",
-            "h) W takim razie przyniosę same puszki.",
-            "i) Niestety nie, automat musi odczytać kod.",
-            "j) To naprawdę nie wystarczy?"
+            "a) W takim razie przyniosę same puszki.",
+            "b) Dziękuję za pomoc, do widzenia!",
+            "c) Mam problem z butelkomatem.",
+            "d) Czy mogę zapłacić kartą?",
+            "e) To naprawdę nie wystarczy?",
+            "f) Czy ma pani paragon?",
+            "g) Proszę pokazać, o jakie butelki chodzi.",
+            "h) Niestety nie, automat musi odczytać kod.",
+            "i) A co z puszkami?",
+            "j) Niestety nie mam dziś czasu."
           ],
           "explanation": "Pracownik prosi o pokazanie butelek, a Olena w następnej wypowiedzi je opisuje. Dlatego pasuje prośba, a nie pytanie o paragon.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "b) Czy ma pani paragon?",
+          "answer": "f) Czy ma pani paragon?",
           "options": [
-            "a) A co z puszkami?",
-            "b) Czy ma pani paragon?",
-            "c) Dziękuję za pomoc, do widzenia!",
-            "d) Proszę pokazać, o jakie butelki chodzi.",
-            "e) Mam problem z butelkomatem.",
-            "f) Niestety nie mam dziś czasu.",
-            "g) Czy mogę zapłacić kartą?",
-            "h) W takim razie przyniosę same puszki.",
-            "i) Niestety nie, automat musi odczytać kod.",
-            "j) To naprawdę nie wystarczy?"
+            "a) W takim razie przyniosę same puszki.",
+            "b) Dziękuję za pomoc, do widzenia!",
+            "c) Mam problem z butelkomatem.",
+            "d) Czy mogę zapłacić kartą?",
+            "e) To naprawdę nie wystarczy?",
+            "f) Czy ma pani paragon?",
+            "g) Proszę pokazać, o jakie butelki chodzi.",
+            "h) Niestety nie, automat musi odczytać kod.",
+            "i) A co z puszkami?",
+            "j) Niestety nie mam dziś czasu."
           ],
           "explanation": "Marta zauważa zniszczoną etykietę i pyta o paragon. Olena odpowiada: „Paragonu nie mam”, więc to pytanie pasuje.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "j) To naprawdę nie wystarczy?",
+          "answer": "e) To naprawdę nie wystarczy?",
           "options": [
-            "a) A co z puszkami?",
-            "b) Czy ma pani paragon?",
-            "c) Dziękuję za pomoc, do widzenia!",
-            "d) Proszę pokazać, o jakie butelki chodzi.",
-            "e) Mam problem z butelkomatem.",
-            "f) Niestety nie mam dziś czasu.",
-            "g) Czy mogę zapłacić kartą?",
-            "h) W takim razie przyniosę same puszki.",
-            "i) Niestety nie, automat musi odczytać kod.",
-            "j) To naprawdę nie wystarczy?"
+            "a) W takim razie przyniosę same puszki.",
+            "b) Dziękuję za pomoc, do widzenia!",
+            "c) Mam problem z butelkomatem.",
+            "d) Czy mogę zapłacić kartą?",
+            "e) To naprawdę nie wystarczy?",
+            "f) Czy ma pani paragon?",
+            "g) Proszę pokazać, o jakie butelki chodzi.",
+            "h) Niestety nie, automat musi odczytać kod.",
+            "i) A co z puszkami?",
+            "j) Niestety nie mam dziś czasu."
           ],
           "explanation": "Olena jest zdziwiona, że puste i całe butelki nie wystarczą, i pyta o to wprost. Marta odpowiada „Niestety nie”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "i) Niestety nie, automat musi odczytać kod.",
+          "answer": "h) Niestety nie, automat musi odczytać kod.",
           "options": [
-            "a) A co z puszkami?",
-            "b) Czy ma pani paragon?",
-            "c) Dziękuję za pomoc, do widzenia!",
-            "d) Proszę pokazać, o jakie butelki chodzi.",
-            "e) Mam problem z butelkomatem.",
-            "f) Niestety nie mam dziś czasu.",
-            "g) Czy mogę zapłacić kartą?",
-            "h) W takim razie przyniosę same puszki.",
-            "i) Niestety nie, automat musi odczytać kod.",
-            "j) To naprawdę nie wystarczy?"
+            "a) W takim razie przyniosę same puszki.",
+            "b) Dziękuję za pomoc, do widzenia!",
+            "c) Mam problem z butelkomatem.",
+            "d) Czy mogę zapłacić kartą?",
+            "e) To naprawdę nie wystarczy?",
+            "f) Czy ma pani paragon?",
+            "g) Proszę pokazać, o jakie butelki chodzi.",
+            "h) Niestety nie, automat musi odczytać kod.",
+            "i) A co z puszkami?",
+            "j) Niestety nie mam dziś czasu."
           ],
           "explanation": "Marta zaprzecza i tłumaczy powód: automat czyta kod. „Czy mogę zapłacić kartą?” w ogóle nie pasuje do tej sytuacji.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "a) A co z puszkami?",
+          "answer": "i) A co z puszkami?",
           "options": [
-            "a) A co z puszkami?",
-            "b) Czy ma pani paragon?",
-            "c) Dziękuję za pomoc, do widzenia!",
-            "d) Proszę pokazać, o jakie butelki chodzi.",
-            "e) Mam problem z butelkomatem.",
-            "f) Niestety nie mam dziś czasu.",
-            "g) Czy mogę zapłacić kartą?",
-            "h) W takim razie przyniosę same puszki.",
-            "i) Niestety nie, automat musi odczytać kod.",
-            "j) To naprawdę nie wystarczy?"
+            "a) W takim razie przyniosę same puszki.",
+            "b) Dziękuję za pomoc, do widzenia!",
+            "c) Mam problem z butelkomatem.",
+            "d) Czy mogę zapłacić kartą?",
+            "e) To naprawdę nie wystarczy?",
+            "f) Czy ma pani paragon?",
+            "g) Proszę pokazać, o jakie butelki chodzi.",
+            "h) Niestety nie, automat musi odczytać kod.",
+            "i) A co z puszkami?",
+            "j) Niestety nie mam dziś czasu."
           ],
           "explanation": "Olena kończy temat butelek i pyta o puszki, a Marta odpowiada, że puszki są przyjmowane.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "h) W takim razie przyniosę same puszki.",
+          "answer": "a) W takim razie przyniosę same puszki.",
           "options": [
-            "a) A co z puszkami?",
-            "b) Czy ma pani paragon?",
-            "c) Dziękuję za pomoc, do widzenia!",
-            "d) Proszę pokazać, o jakie butelki chodzi.",
-            "e) Mam problem z butelkomatem.",
-            "f) Niestety nie mam dziś czasu.",
-            "g) Czy mogę zapłacić kartą?",
-            "h) W takim razie przyniosę same puszki.",
-            "i) Niestety nie, automat musi odczytać kod.",
-            "j) To naprawdę nie wystarczy?"
+            "a) W takim razie przyniosę same puszki.",
+            "b) Dziękuję za pomoc, do widzenia!",
+            "c) Mam problem z butelkomatem.",
+            "d) Czy mogę zapłacić kartą?",
+            "e) To naprawdę nie wystarczy?",
+            "f) Czy ma pani paragon?",
+            "g) Proszę pokazać, o jakie butelki chodzi.",
+            "h) Niestety nie, automat musi odczytać kod.",
+            "i) A co z puszkami?",
+            "j) Niestety nie mam dziś czasu."
           ],
           "explanation": "Skoro puszki są przyjmowane, Olena decyduje się przynieść tylko puszki. Zwrot „w takim razie” pokazuje wniosek z rozmowy.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "c) Dziękuję za pomoc, do widzenia!",
+          "answer": "b) Dziękuję za pomoc, do widzenia!",
           "options": [
-            "a) A co z puszkami?",
-            "b) Czy ma pani paragon?",
-            "c) Dziękuję za pomoc, do widzenia!",
-            "d) Proszę pokazać, o jakie butelki chodzi.",
-            "e) Mam problem z butelkomatem.",
-            "f) Niestety nie mam dziś czasu.",
-            "g) Czy mogę zapłacić kartą?",
-            "h) W takim razie przyniosę same puszki.",
-            "i) Niestety nie, automat musi odczytać kod.",
-            "j) To naprawdę nie wystarczy?"
+            "a) W takim razie przyniosę same puszki.",
+            "b) Dziękuję za pomoc, do widzenia!",
+            "c) Mam problem z butelkomatem.",
+            "d) Czy mogę zapłacić kartą?",
+            "e) To naprawdę nie wystarczy?",
+            "f) Czy ma pani paragon?",
+            "g) Proszę pokazać, o jakie butelki chodzi.",
+            "h) Niestety nie, automat musi odczytać kod.",
+            "i) A co z puszkami?",
+            "j) Niestety nie mam dziś czasu."
           ],
           "explanation": "Olena kończy rozmowę podziękowaniem. Marta odpowiada „Nie ma sprawy”, a „Niestety nie mam dziś czasu” nie pasuje do pożegnania.",
           "grammar_point": "slownictwo"
@@ -802,9 +802,9 @@
           "id": "el2-1",
           "answer": "a) W imieniu",
           "options": [
-            "a) W imieniu",
             "b) Z imienia",
-            "c) Od imienia"
+            "c) Od imienia",
+            "a) W imieniu"
           ],
           "explanation": "Formuła „w imieniu kogoś” znaczy „jako przedstawiciel”. Pozostałe połączenia nie istnieją.",
           "grammar_point": "rejestr-formalny"
@@ -813,9 +813,9 @@
           "id": "el2-2",
           "answer": "b) Zwracam się z prośbą",
           "options": [
-            "a) Zwracam się o prośbę",
             "b) Zwracam się z prośbą",
-            "c) Zwracam się na prośbę"
+            "c) Zwracam się na prośbę",
+            "a) Zwracam się o prośbę"
           ],
           "explanation": "W oficjalnym piśmie mówimy „zwracam się z prośbą o coś”. W pozostałych opcjach przyimek nie pasuje.",
           "grammar_point": "rejestr-formalny"
@@ -825,8 +825,8 @@
           "answer": "c) korzysta",
           "options": [
             "a) używa",
-            "b) bierze",
-            "c) korzysta"
+            "c) korzysta",
+            "b) bierze"
           ],
           "explanation": "Mówimy „korzystać z czegoś”, np. z ogródka. „Używać” i „brać” nie łączą się z „z ogródka”.",
           "grammar_point": "rejestr-formalny"
@@ -835,8 +835,8 @@
           "id": "el2-4",
           "answer": "c) przeciwko",
           "options": [
-            "a) o",
             "b) za",
+            "a) o",
             "c) przeciwko"
           ],
           "explanation": "Czasownik „protestować” łączy się z „przeciwko” i dopełniaczem. „Za” oznaczałoby poparcie, a nie protest.",
@@ -846,9 +846,9 @@
           "id": "el2-5",
           "answer": "b) na",
           "options": [
-            "a) o",
             "b) na",
-            "c) w"
+            "c) w",
+            "a) o"
           ],
           "explanation": "Stałe wyrażenie to „zależy nam na czymś”. „O” i „w” nie pasują.",
           "grammar_point": "rejestr-formalny"
@@ -857,9 +857,9 @@
           "id": "el2-6",
           "answer": "a) zapytać",
           "options": [
+            "c) powiedzieć",
             "a) zapytać",
-            "b) poprosić",
-            "c) powiedzieć"
+            "b) poprosić"
           ],
           "explanation": "Pytanie pośrednie z „czy” wprowadza czasownik „zapytać”: „zapytać Państwa, czy…”. Po „poprosić” albo „powiedzieć” nie stawiamy „czy”.",
           "grammar_point": "rejestr-formalny"
@@ -868,9 +868,9 @@
           "id": "el2-7",
           "answer": "b) za",
           "options": [
-            "a) o",
             "b) za",
-            "c) na"
+            "c) na",
+            "a) o"
           ],
           "explanation": "Mówimy „dziękować za coś”, tu za współpracę. „O” i „na” tworzą inne wyrażenia.",
           "grammar_point": "rejestr-formalny"
@@ -879,9 +879,9 @@
           "id": "el2-8",
           "answer": "c) na",
           "options": [
+            "c) na",
             "a) o",
-            "b) za",
-            "c) na"
+            "b) za"
           ],
           "explanation": "Wyrażenie „liczyć na coś” znaczy „spodziewać się”. „O” i „za” nie pasują do tego czasownika.",
           "grammar_point": "rejestr-formalny"
@@ -890,8 +890,8 @@
           "id": "el2-9",
           "answer": "c) W razie",
           "options": [
-            "a) Z powodu",
             "b) Na razie",
+            "a) Z powodu",
             "c) W razie"
           ],
           "explanation": "„W razie pytań” to stała formuła, gdy ktoś może mieć pytania. „Z powodu pytań” zmienia sens, a „na razie” oznacza „teraz”.",
@@ -901,9 +901,9 @@
           "id": "el2-10",
           "answer": "a) Z",
           "options": [
-            "a) Z",
             "b) Na",
-            "c) Pod"
+            "c) Pod",
+            "a) Z"
           ],
           "explanation": "Formuła pożegnalna to „Z poważaniem”. Inne przyimki nie tworzą takiego zwrotu.",
           "grammar_point": "rejestr-formalny"

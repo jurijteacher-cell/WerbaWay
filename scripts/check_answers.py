@@ -6,12 +6,17 @@ Usage:
   python3 scripts/check_answers.py pl-b1-group-01-mieszkanie      # one lesson
   python3 scripts/check_answers.py --all                         # every lesson (summary)
 
-ERR  = the student can get stuck (fix before pushing).
+Also checks where the correct answer sits among options (LESSON_PROTOCOL · «Pozycja poprawnej
+odpowiedzi»): it must not be always first, always the same, in order, or alternating.
+`python3 scripts/shuffle_options.py <id>` fixes the order automatically.
+
+ERR  = the student can get stuck or can guess without knowing the topic (fix before pushing).
 WARN = probably more than one correct answer and no accept[] — add the variants or leave it on purpose.
 Accepted formats: "answer": "x" + "accept": ["y"]  ·  "answer": ["x", "y"] (first = model answer).
 """
 import glob
 import json
+import string
 import os
 import re
 import sys
@@ -27,11 +32,61 @@ def answers(it):
     return lst[0] if lst else "", lst[1:] + [str(x) for x in it.get("accept", [])]
 
 
+def option_positions(b):
+    """Позиції правильної відповіді серед options у блоці: (idxs, sizes, spilny_bank)."""
+    idxs, sizes = [], []
+    opt_sets = set()
+    for it in b.get("items") or []:
+        if not isinstance(it, dict):
+            continue
+        opts = it.get("options")
+        if not isinstance(opts, list) or len(opts) < 2:
+            continue
+        a, _ = answers(it)
+        if a is None or a not in opts:
+            continue
+        idxs.append(opts.index(a))
+        sizes.append(len(opts))
+        opt_sets.add(tuple(opts))
+    return idxs, sizes, len(opt_sets) == 1 and len(idxs) > 1
+
+
+def position_problem(idxs, sizes, shared=False):
+    """Текст проблеми, якщо позицію правильної відповіді можна вгадати без знання теми."""
+    if len(idxs) < 3:
+        return None
+    # Спільний банк на весь блок: керуємо лише порядком банку, а повтори тієї самої
+    # відповіді («się» п'ять разів) задані змістом — перевіряємо тільки порядок.
+    if not shared:
+        if len(set(idxs)) == 1:
+            return ("poprawna zawsze na pozycji %d z %d — uczeń zgadnie bez znania tematu"
+                    % (idxs[0] + 1, sizes[0]))
+        for i in range(len(idxs) - 2):
+            if idxs[i] == idxs[i + 1] == idxs[i + 2]:
+                return "trzy poprawne pod rząd na tej samej pozycji: %s" % idxs
+        if len(idxs) >= 5 and all(idxs[i] == idxs[i + 2] for i in range(len(idxs) - 2)) and idxs[0] != idxs[1]:
+            return "poprawne na przemian (1, 2, 1, 2…): %s" % idxs
+        if len(idxs) >= 4:
+            top = max(idxs.count(p) for p in set(idxs))
+            if top / len(idxs) > 0.7:
+                return "jedna pozycja ciągnie %d z %d poprawnych: %s" % (top, len(idxs), idxs)
+    if len(set(idxs)) > 1:
+        if all(idxs[i] <= idxs[i + 1] for i in range(len(idxs) - 1)):
+            return "poprawne idą po kolei w dół listy: %s" % idxs
+        if all(idxs[i] >= idxs[i + 1] for i in range(len(idxs) - 1)):
+            return "poprawne idą po kolei w górę listy: %s" % idxs
+    return None
+
+
 def check_layout(name, b, errs, warns):
-    """cloze-text: кожна {id} у тексті має пункт і навпаки; ordering: ≥ 4 події."""
+    """cloze-text: кожна {id} у тексті має пункт і навпаки; ordering: ≥ 4 події;
+    позиція правильної відповіді серед options не вгадується."""
     t = b.get("exercise_type") or b.get("task_type")
     bid = b.get("block_id", "?")
     items = b.get("items", [])
+    problem = position_problem(*option_positions(b))
+    if problem:
+        errs.append(f"{name}:{bid}: {problem} — `python3 scripts/shuffle_options.py {name.rsplit('-', 1)[0]}`")
     if t == "cloze-text":
         gaps = re.findall(r"\{([^}\s]+)\}", b.get("text", ""))
         ids = [str(it.get("id")) for it in items]
@@ -59,6 +114,53 @@ def blocks_of(d):
             yield l.get("block_id", f"g{l.get('level')}"), l.get("task_type"), l.get("items", [])
 
 
+
+def mock_positions(t):
+    """Пробний екзамен: позиції правильних відповідей у завданні (idxs, sizes, spilny_bank)."""
+    lay = t.get("layout")
+    if lay == "mc-passages":
+        idxs, sizes = [], []
+        for it in t.get("items") or []:
+            if not isinstance(it, dict):
+                continue
+            a, opts = it.get("answer"), it.get("options")
+            if not isinstance(opts, list) or len(opts) < 2:
+                continue
+            if isinstance(a, str) and len(a) == 1 and a in string.ascii_lowercase:
+                i = string.ascii_lowercase.index(a)
+            elif isinstance(a, str) and a in opts:
+                i = opts.index(a)
+            else:
+                continue
+            if i < len(opts):
+                idxs.append(i)
+                sizes.append(len(opts))
+        return idxs, sizes, False
+    if lay == "cloze":
+        bank = t.get("bank")
+        if not isinstance(bank, list) or not bank or not isinstance(bank[0], dict):
+            return [], [], True
+        keys = [b.get("key") for b in bank]
+        idxs = [keys.index(g["answer"]) for g in (t.get("gaps") or []) if isinstance(g, dict) and g.get("answer") in keys]
+        return idxs, [len(keys)] * len(idxs), True
+    return [], [], False
+
+
+def check_mock(name, d, errs):
+    for sec in d.get("sections") or []:
+        if not isinstance(sec, dict):
+            continue
+        for t in sec.get("tasks") or []:
+            if not isinstance(t, dict):
+                continue
+            problem = position_problem(*mock_positions(t))
+            if problem:
+                errs.append(
+                    f"{name}:{sec.get('id')}/{t.get('id')}: {problem}"
+                    f" — `python3 scripts/shuffle_options.py {name.rsplit('-', 1)[0]}`"
+                )
+
+
 def check_file(path, errs, warns):
     try:
         d = json.load(open(path, encoding="utf-8"))
@@ -68,9 +170,14 @@ def check_file(path, errs, warns):
     if not isinstance(d, dict):
         return
     name = os.path.basename(path).replace(".json", "")
-    for b in (d.get("blocks") or []) + (d.get("levels") or []):
-        if isinstance(b, dict):
-            check_layout(name, b, errs, warns)
+    for key in ("blocks", "levels"):
+        value = d.get(key)
+        if not isinstance(value, list):
+            continue
+        for b in value:
+            if isinstance(b, dict):
+                check_layout(name, b, errs, warns)
+    check_mock(name, d, errs)
     for bid, t, items in blocks_of(d):
         rights = [str(it.get("right")) for it in items if "right" in it]
         for it in items:

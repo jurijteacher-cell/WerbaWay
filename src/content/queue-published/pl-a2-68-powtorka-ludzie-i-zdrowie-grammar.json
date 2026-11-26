@@ -69,8 +69,8 @@
           "answer": "Zostań",
           "options": [
             "Zostań",
-            "Zostajesz",
-            "Zostać"
+            "Zostać",
+            "Zostajesz"
           ],
           "grammar_point": "rozkaznik-pelny",
           "explanation": "Rada dla kolegi — tryb rozkazujący na ty: zostań."
@@ -92,9 +92,9 @@
           "text": "Jutro jest święto, więc nie ___ iść do pracy.",
           "answer": "musisz",
           "options": [
-            "musisz",
             "wolno ci",
-            "warto"
+            "warto",
+            "musisz"
           ],
           "grammar_point": "modalne-obowiazek",
           "explanation": "Nie masz obowiązku — nie musisz."
@@ -104,9 +104,9 @@
           "text": "Mamo, ___ się, wszystko jest dobrze!",
           "answer": "nie martw",
           "options": [
-            "nie martw",
             "nie martwisz",
-            "nie martwić"
+            "nie martwić",
+            "nie martw"
           ],
           "grammar_point": "rozkaznik-pelny",
           "explanation": "Prośba na ty: nie martw się."
@@ -116,9 +116,9 @@
           "text": "Pani Halino, ___ Pani usiądzie, lekarka zaraz przyjdzie.",
           "answer": "niech",
           "options": [
+            "trzeba",
             "niech",
-            "proszę",
-            "trzeba"
+            "proszę"
           ],
           "grammar_point": "rozkaznik-pelny",
           "explanation": "Niech + forma on / ona: niech Pani usiądzie. Ale: proszę usiąść."
@@ -128,9 +128,9 @@
           "text": "Olena dużo pracuje. ___ czasem kończyć pracę o czwartej.",
           "answer": "Powinna",
           "options": [
-            "Powinna",
+            "Powinnam",
             "Powinien",
-            "Powinnam"
+            "Powinna"
           ],
           "grammar_point": "modalne-obowiazek",
           "explanation": "Olena — ona: powinna."
@@ -249,158 +249,158 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Sprzedawca: Cukiernia „Pod Różą”, dzień dobry.\n\nOlena: Dzień dobry. {el1-1} Chciałabym zamówić sernik.\n\nSprzedawca: {el1-2} Na którą godzinę?\n\nOlena: Na jutro rano, na ósmą. Moja mama wyjeżdża do Lwowa i chce podziękować koleżance.\n\nSprzedawca: {el1-3} Jaki ma być rozmiar?\n\nOlena: Dla sześciu osób. {el1-4}\n\nSprzedawca: Sernik dla sześciu osób kosztuje sześćdziesiąt złotych.\n\nOlena: {el1-5} Czy można dopisać życzenia?\n\nSprzedawca: {el1-6} Co mam napisać?\n\nOlena: „Dziękujemy za wszystko!” {el1-7}\n\nSprzedawca: {el1-8}",
       "bank": [
-        "a) To bardzo miły pomysł.",
-        "b) Niestety jutro jesteśmy zamknięci.",
-        "c) I jeszcze podpis: Halina.",
-        "d) Chętnie przyjmę zamówienie.",
-        "e) Ile to kosztuje?",
-        "f) Dobrze, wszystko jest zapisane.",
-        "g) Mam małą prośbę.",
-        "h) To za drogo, dziękuję.",
-        "i) Tak, oczywiście.",
-        "j) Dobrze, biorę."
+        "a) I jeszcze podpis: Halina.",
+        "b) Dobrze, wszystko jest zapisane.",
+        "c) Dobrze, biorę.",
+        "d) To bardzo miły pomysł.",
+        "e) Chętnie przyjmę zamówienie.",
+        "f) To za drogo, dziękuję.",
+        "g) Ile to kosztuje?",
+        "h) Tak, oczywiście.",
+        "i) Mam małą prośbę.",
+        "j) Niestety jutro jesteśmy zamknięci."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "g) Mam małą prośbę.",
+          "answer": "i) Mam małą prośbę.",
           "options": [
-            "a) To bardzo miły pomysł.",
-            "b) Niestety jutro jesteśmy zamknięci.",
-            "c) I jeszcze podpis: Halina.",
-            "d) Chętnie przyjmę zamówienie.",
-            "e) Ile to kosztuje?",
-            "f) Dobrze, wszystko jest zapisane.",
-            "g) Mam małą prośbę.",
-            "h) To za drogo, dziękuję.",
-            "i) Tak, oczywiście.",
-            "j) Dobrze, biorę."
+            "a) I jeszcze podpis: Halina.",
+            "b) Dobrze, wszystko jest zapisane.",
+            "c) Dobrze, biorę.",
+            "d) To bardzo miły pomysł.",
+            "e) Chętnie przyjmę zamówienie.",
+            "f) To za drogo, dziękuję.",
+            "g) Ile to kosztuje?",
+            "h) Tak, oczywiście.",
+            "i) Mam małą prośbę.",
+            "j) Niestety jutro jesteśmy zamknięci."
           ],
           "explanation": "Olena zaczyna od zapowiedzi prośby: „Mam małą prośbę”. Zaraz potem mówi, co chce zamówić.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "d) Chętnie przyjmę zamówienie.",
+          "answer": "e) Chętnie przyjmę zamówienie.",
           "options": [
-            "a) To bardzo miły pomysł.",
-            "b) Niestety jutro jesteśmy zamknięci.",
-            "c) I jeszcze podpis: Halina.",
-            "d) Chętnie przyjmę zamówienie.",
-            "e) Ile to kosztuje?",
-            "f) Dobrze, wszystko jest zapisane.",
-            "g) Mam małą prośbę.",
-            "h) To za drogo, dziękuję.",
-            "i) Tak, oczywiście.",
-            "j) Dobrze, biorę."
+            "a) I jeszcze podpis: Halina.",
+            "b) Dobrze, wszystko jest zapisane.",
+            "c) Dobrze, biorę.",
+            "d) To bardzo miły pomysł.",
+            "e) Chętnie przyjmę zamówienie.",
+            "f) To za drogo, dziękuję.",
+            "g) Ile to kosztuje?",
+            "h) Tak, oczywiście.",
+            "i) Mam małą prośbę.",
+            "j) Niestety jutro jesteśmy zamknięci."
           ],
           "explanation": "Sprzedawca przyjmuje zamówienie: „Chętnie przyjmę zamówienie”. „Niestety jutro jesteśmy zamknięci” przeczy dalszej rozmowie o godzinie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "a) To bardzo miły pomysł.",
+          "answer": "d) To bardzo miły pomysł.",
           "options": [
-            "a) To bardzo miły pomysł.",
-            "b) Niestety jutro jesteśmy zamknięci.",
-            "c) I jeszcze podpis: Halina.",
-            "d) Chętnie przyjmę zamówienie.",
-            "e) Ile to kosztuje?",
-            "f) Dobrze, wszystko jest zapisane.",
-            "g) Mam małą prośbę.",
-            "h) To za drogo, dziękuję.",
-            "i) Tak, oczywiście.",
-            "j) Dobrze, biorę."
+            "a) I jeszcze podpis: Halina.",
+            "b) Dobrze, wszystko jest zapisane.",
+            "c) Dobrze, biorę.",
+            "d) To bardzo miły pomysł.",
+            "e) Chętnie przyjmę zamówienie.",
+            "f) To za drogo, dziękuję.",
+            "g) Ile to kosztuje?",
+            "h) Tak, oczywiście.",
+            "i) Mam małą prośbę.",
+            "j) Niestety jutro jesteśmy zamknięci."
           ],
           "explanation": "Olena mówi, że sernik to podziękowanie dla koleżanki. Sprzedawca reaguje: „To bardzo miły pomysł”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "e) Ile to kosztuje?",
+          "answer": "g) Ile to kosztuje?",
           "options": [
-            "a) To bardzo miły pomysł.",
-            "b) Niestety jutro jesteśmy zamknięci.",
-            "c) I jeszcze podpis: Halina.",
-            "d) Chętnie przyjmę zamówienie.",
-            "e) Ile to kosztuje?",
-            "f) Dobrze, wszystko jest zapisane.",
-            "g) Mam małą prośbę.",
-            "h) To za drogo, dziękuję.",
-            "i) Tak, oczywiście.",
-            "j) Dobrze, biorę."
+            "a) I jeszcze podpis: Halina.",
+            "b) Dobrze, wszystko jest zapisane.",
+            "c) Dobrze, biorę.",
+            "d) To bardzo miły pomysł.",
+            "e) Chętnie przyjmę zamówienie.",
+            "f) To za drogo, dziękuję.",
+            "g) Ile to kosztuje?",
+            "h) Tak, oczywiście.",
+            "i) Mam małą prośbę.",
+            "j) Niestety jutro jesteśmy zamknięci."
           ],
           "explanation": "Po rozmiarze naturalne jest pytanie o cenę: „Ile to kosztuje?”. Sprzedawca od razu podaje kwotę.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "j) Dobrze, biorę.",
+          "answer": "c) Dobrze, biorę.",
           "options": [
-            "a) To bardzo miły pomysł.",
-            "b) Niestety jutro jesteśmy zamknięci.",
-            "c) I jeszcze podpis: Halina.",
-            "d) Chętnie przyjmę zamówienie.",
-            "e) Ile to kosztuje?",
-            "f) Dobrze, wszystko jest zapisane.",
-            "g) Mam małą prośbę.",
-            "h) To za drogo, dziękuję.",
-            "i) Tak, oczywiście.",
-            "j) Dobrze, biorę."
+            "a) I jeszcze podpis: Halina.",
+            "b) Dobrze, wszystko jest zapisane.",
+            "c) Dobrze, biorę.",
+            "d) To bardzo miły pomysł.",
+            "e) Chętnie przyjmę zamówienie.",
+            "f) To za drogo, dziękuję.",
+            "g) Ile to kosztuje?",
+            "h) Tak, oczywiście.",
+            "i) Mam małą prośbę.",
+            "j) Niestety jutro jesteśmy zamknięci."
           ],
           "explanation": "Olena akceptuje cenę: „Dobrze, biorę”. „To za drogo, dziękuję” nie pasuje do dalszych pytań o życzenia.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "i) Tak, oczywiście.",
+          "answer": "h) Tak, oczywiście.",
           "options": [
-            "a) To bardzo miły pomysł.",
-            "b) Niestety jutro jesteśmy zamknięci.",
-            "c) I jeszcze podpis: Halina.",
-            "d) Chętnie przyjmę zamówienie.",
-            "e) Ile to kosztuje?",
-            "f) Dobrze, wszystko jest zapisane.",
-            "g) Mam małą prośbę.",
-            "h) To za drogo, dziękuję.",
-            "i) Tak, oczywiście.",
-            "j) Dobrze, biorę."
+            "a) I jeszcze podpis: Halina.",
+            "b) Dobrze, wszystko jest zapisane.",
+            "c) Dobrze, biorę.",
+            "d) To bardzo miły pomysł.",
+            "e) Chętnie przyjmę zamówienie.",
+            "f) To za drogo, dziękuję.",
+            "g) Ile to kosztuje?",
+            "h) Tak, oczywiście.",
+            "i) Mam małą prośbę.",
+            "j) Niestety jutro jesteśmy zamknięci."
           ],
           "explanation": "Olena pyta, czy można dopisać życzenia. Sprzedawca potwierdza: „Tak, oczywiście”, a potem pyta, co napisać.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "c) I jeszcze podpis: Halina.",
+          "answer": "a) I jeszcze podpis: Halina.",
           "options": [
-            "a) To bardzo miły pomysł.",
-            "b) Niestety jutro jesteśmy zamknięci.",
-            "c) I jeszcze podpis: Halina.",
-            "d) Chętnie przyjmę zamówienie.",
-            "e) Ile to kosztuje?",
-            "f) Dobrze, wszystko jest zapisane.",
-            "g) Mam małą prośbę.",
-            "h) To za drogo, dziękuję.",
-            "i) Tak, oczywiście.",
-            "j) Dobrze, biorę."
+            "a) I jeszcze podpis: Halina.",
+            "b) Dobrze, wszystko jest zapisane.",
+            "c) Dobrze, biorę.",
+            "d) To bardzo miły pomysł.",
+            "e) Chętnie przyjmę zamówienie.",
+            "f) To za drogo, dziękuję.",
+            "g) Ile to kosztuje?",
+            "h) Tak, oczywiście.",
+            "i) Mam małą prośbę.",
+            "j) Niestety jutro jesteśmy zamknięci."
           ],
           "explanation": "Do życzeń Olena dodaje podpis: „I jeszcze podpis: Halina”. To ostatnia informacja do zamówienia.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "f) Dobrze, wszystko jest zapisane.",
+          "answer": "b) Dobrze, wszystko jest zapisane.",
           "options": [
-            "a) To bardzo miły pomysł.",
-            "b) Niestety jutro jesteśmy zamknięci.",
-            "c) I jeszcze podpis: Halina.",
-            "d) Chętnie przyjmę zamówienie.",
-            "e) Ile to kosztuje?",
-            "f) Dobrze, wszystko jest zapisane.",
-            "g) Mam małą prośbę.",
-            "h) To za drogo, dziękuję.",
-            "i) Tak, oczywiście.",
-            "j) Dobrze, biorę."
+            "a) I jeszcze podpis: Halina.",
+            "b) Dobrze, wszystko jest zapisane.",
+            "c) Dobrze, biorę.",
+            "d) To bardzo miły pomysł.",
+            "e) Chętnie przyjmę zamówienie.",
+            "f) To za drogo, dziękuję.",
+            "g) Ile to kosztuje?",
+            "h) Tak, oczywiście.",
+            "i) Mam małą prośbę.",
+            "j) Niestety jutro jesteśmy zamknięci."
           ],
           "explanation": "Sprzedawca kończy rozmowę potwierdzeniem zamówienia: „Dobrze, wszystko jest zapisane”. Taka formuła zamyka rozmowę.",
           "grammar_point": "slownictwo"
@@ -419,8 +419,8 @@
           "id": "el2-1",
           "answer": "b) Szanowna",
           "options": [
-            "a) Szanowny",
             "b) Szanowna",
+            "a) Szanowny",
             "c) Kochana"
           ],
           "explanation": "Zwracamy się do kobiety: „Szanowna Pani”. „Szanowny” jest formą męską, a „Kochana” jest zbyt prywatne.",
@@ -430,9 +430,9 @@
           "id": "el2-2",
           "answer": "a) aby",
           "options": [
-            "a) aby",
+            "c) bo",
             "b) że",
-            "c) bo"
+            "a) aby"
           ],
           "explanation": "Po „piszę” podajemy cel: „aby podziękować”. „Że” i „bo” nie łączą się z bezokolicznikiem.",
           "grammar_point": "rejestr-formalny"
@@ -441,9 +441,9 @@
           "id": "el2-3",
           "answer": "c) do",
           "options": [
-            "a) w",
             "b) z",
-            "c) do"
+            "c) do",
+            "a) w"
           ],
           "explanation": "Wracamy do miasta: „wraca do Lwowa”. „W Lwowa” i „z Lwowa” oznaczają co innego.",
           "grammar_point": "rejestr-formalny"
@@ -452,9 +452,9 @@
           "id": "el2-4",
           "answer": "c) za",
           "options": [
-            "a) o",
+            "c) za",
             "b) na",
-            "c) za"
+            "a) o"
           ],
           "explanation": "Dziękujemy za coś: „podziękować za wszystko”. „O” i „na” nie pasują do czasownika „podziękować”.",
           "grammar_point": "rejestr-formalny"
@@ -463,9 +463,9 @@
           "id": "el2-5",
           "answer": "b) jej",
           "options": [
+            "c) ona",
             "a) ją",
-            "b) jej",
-            "c) ona"
+            "b) jej"
           ],
           "explanation": "Mówimy „podobała jej się kolacja”: czasownik „podobać się” łączy się z celownikiem. „Ją” i „ona” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -475,8 +475,8 @@
           "answer": "a) do",
           "options": [
             "a) do",
-            "b) od",
-            "c) dla"
+            "c) dla",
+            "b) od"
           ],
           "explanation": "Mówimy „mieć prośbę do kogoś”. „Od” i „dla” nie pasują do słowa „prośba”.",
           "grammar_point": "rejestr-formalny"
@@ -485,9 +485,9 @@
           "id": "el2-7",
           "answer": "b) o",
           "options": [
-            "a) od",
+            "c) na",
             "b) o",
-            "c) na"
+            "a) od"
           ],
           "explanation": "Godzinę podajemy przyimkiem „o”: „o piętnastej”. „Od” i „na” nie pasują do jednego momentu.",
           "grammar_point": "rejestr-formalny"
@@ -496,9 +496,9 @@
           "id": "el2-8",
           "answer": "c) na",
           "options": [
-            "a) do",
+            "c) na",
             "b) o",
-            "c) na"
+            "a) do"
           ],
           "explanation": "Zapraszamy na coś: „zaprosić na herbatę”. „Do herbatę” i „o herbatę” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -507,9 +507,9 @@
           "id": "el2-9",
           "answer": "a) żeby",
           "options": [
+            "c) czy",
             "a) żeby",
-            "b) że",
-            "c) czy"
+            "b) że"
           ],
           "explanation": "Po „prosić” używamy „żeby”: „prosi, żeby Pani przyjechała”. „Że” i „czy” zmieniają sens zdania.",
           "grammar_point": "rejestr-formalny"
@@ -518,9 +518,9 @@
           "id": "el2-10",
           "answer": "a) szacunku",
           "options": [
+            "c) smutku",
             "a) szacunku",
-            "b) miłości",
-            "c) smutku"
+            "b) miłości"
           ],
           "explanation": "Formuła zakończenia to „Z wyrazami szacunku”. „Miłości” i „smutku” nie pasują do oficjalnego e-maila.",
           "grammar_point": "rejestr-formalny"

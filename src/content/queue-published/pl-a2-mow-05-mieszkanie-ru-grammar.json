@@ -123,8 +123,8 @@
           "answer": "Poznania",
           "grammar_point": "przyimki-dopelniacz-miejsce",
           "options": [
-            "Poznaniu",
             "Poznań",
+            "Poznaniu",
             "Poznania"
           ],
           "explanation": "Blisko, obok, naprzeciwko + dopełniacz: blisko Poznania."
@@ -135,9 +135,9 @@
           "answer": "stołem",
           "grammar_point": "przyimki-narzednik-miejsce",
           "options": [
+            "stół",
             "stołem",
-            "stole",
-            "stół"
+            "stole"
           ],
           "explanation": "Nad + narzędnik: nad stołem."
         },
@@ -147,9 +147,9 @@
           "answer": "szkoły",
           "grammar_point": "przyimki-dopelniacz-miejsce",
           "options": [
-            "szkoły",
+            "szkole",
             "szkołą",
-            "szkole"
+            "szkoły"
           ]
         },
         {
@@ -158,8 +158,8 @@
           "answer": "blokiem",
           "grammar_point": "przyimki-narzednik-miejsce",
           "options": [
-            "bloku",
-            "blokiem"
+            "blokiem",
+            "bloku"
           ],
           "explanation": "Przed + narzędnik: przed blokiem. Obok bloku — to dopełniacz."
         },
@@ -169,9 +169,9 @@
           "answer": "starym",
           "grammar_point": "przymiotnik-miejscownik",
           "options": [
-            "stary",
+            "starym",
             "starej",
-            "starym"
+            "stary"
           ],
           "explanation": "Dom to on → w starym domu. -ej jest dla ona: w starej kamienicy."
         },
@@ -181,9 +181,9 @@
           "answer": "piątym",
           "grammar_point": "przymiotnik-miejscownik",
           "options": [
-            "piątym",
             "piątej",
-            "piąte"
+            "piąte",
+            "piątym"
           ]
         },
         {
@@ -203,9 +203,9 @@
           "answer": "Krakowem",
           "grammar_point": "przyimki-narzednik-miejsce",
           "options": [
-            "Kraków",
+            "Krakowie",
             "Krakowem",
-            "Krakowie"
+            "Kraków"
           ],
           "explanation": "Pod + miasto w narzędniku = niedaleko miasta: mieszkam pod Krakowem."
         }
@@ -245,8 +245,8 @@
           "answer": "balkon",
           "grammar_point": "gdzie-dokad",
           "options": [
-            "balkonie",
-            "balkon"
+            "balkon",
+            "balkonie"
           ],
           "explanation": "Wychodzę dokąd? → na + biernik: na balkon."
         },
@@ -256,8 +256,8 @@
           "answer": "tarasie",
           "grammar_point": "gdzie-dokad",
           "options": [
-            "tarasie",
-            "taras"
+            "taras",
+            "tarasie"
           ],
           "explanation": "Jemy gdzie? → na + miejscownik: na tarasie."
         },
@@ -267,8 +267,8 @@
           "answer": "na wieś",
           "grammar_point": "gdzie-dokad",
           "options": [
-            "na wsi",
-            "na wieś"
+            "na wieś",
+            "na wsi"
           ],
           "explanation": "Jedziemy dokąd? → na wieś. Mieszkamy gdzie? → na wsi."
         },
@@ -356,158 +356,158 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Ewa: Dzień dobry, słucham.\n\nTomek: Dzień dobry, dzwonię w sprawie ogłoszenia o kawalerce na Jeżycach. {el1-1}\n\nEwa: Tak, jest jeszcze wolna. To czwarte piętro, 28 metrów.\n\nTomek: {el1-2} Czy w kamienicy jest winda?\n\nEwa: Niestety nie ma windy.\n\nTomek: {el1-3} Pracuję w domu, więc potrzebuję biurka. Czy jest w pokoju biurko?\n\nEwa: Tak, stoi przy dużym oknie.\n\nTomek: Świetnie. A ile wynoszą opłaty?\n\nEwa: {el1-4} Zimą jest drożej, latem taniej. Zwykle około trzystu złotych.\n\nTomek: Dobrze. {el1-5}\n\nEwa: {el1-6} Jutro po szesnastej jestem w domu.\n\nTomek: To mi pasuje. {el1-7}\n\nEwa: Ulica Kossaka 8, mieszkanie 12. {el1-8}",
       "bank": [
-        "a) Szkoda, ale to nie problem.",
-        "b) Czy można obejrzeć mieszkanie jutro?",
-        "c) Czy mieszkanie jest jeszcze wolne?",
-        "d) Niestety jest już wynajęte.",
-        "e) Do zobaczenia jutro!",
-        "f) To zależy od miesiąca.",
-        "g) To dobra wiadomość.",
-        "h) Proszę jeszcze o dokładny adres.",
-        "i) Zaraz do pana zadzwonię.",
-        "j) Oczywiście, to możliwe."
+        "a) Czy mieszkanie jest jeszcze wolne?",
+        "b) Proszę jeszcze o dokładny adres.",
+        "c) To zależy od miesiąca.",
+        "d) Do zobaczenia jutro!",
+        "e) Czy można obejrzeć mieszkanie jutro?",
+        "f) Niestety jest już wynajęte.",
+        "g) Szkoda, ale to nie problem.",
+        "h) To dobra wiadomość.",
+        "i) Oczywiście, to możliwe.",
+        "j) Zaraz do pana zadzwonię."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "c) Czy mieszkanie jest jeszcze wolne?",
+          "answer": "a) Czy mieszkanie jest jeszcze wolne?",
           "options": [
-            "a) Szkoda, ale to nie problem.",
-            "b) Czy można obejrzeć mieszkanie jutro?",
-            "c) Czy mieszkanie jest jeszcze wolne?",
-            "d) Niestety jest już wynajęte.",
-            "e) Do zobaczenia jutro!",
-            "f) To zależy od miesiąca.",
-            "g) To dobra wiadomość.",
-            "h) Proszę jeszcze o dokładny adres.",
-            "i) Zaraz do pana zadzwonię.",
-            "j) Oczywiście, to możliwe."
+            "a) Czy mieszkanie jest jeszcze wolne?",
+            "b) Proszę jeszcze o dokładny adres.",
+            "c) To zależy od miesiąca.",
+            "d) Do zobaczenia jutro!",
+            "e) Czy można obejrzeć mieszkanie jutro?",
+            "f) Niestety jest już wynajęte.",
+            "g) Szkoda, ale to nie problem.",
+            "h) To dobra wiadomość.",
+            "i) Oczywiście, to możliwe.",
+            "j) Zaraz do pana zadzwonię."
           ],
           "explanation": "Tomek zaczyna od pytania o ogłoszenie, a Ewa odpowiada „Tak, jest jeszcze wolna”. Fragment „Niestety jest już wynajęte.” przeczy jej odpowiedzi.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "g) To dobra wiadomość.",
+          "answer": "h) To dobra wiadomość.",
           "options": [
-            "a) Szkoda, ale to nie problem.",
-            "b) Czy można obejrzeć mieszkanie jutro?",
-            "c) Czy mieszkanie jest jeszcze wolne?",
-            "d) Niestety jest już wynajęte.",
-            "e) Do zobaczenia jutro!",
-            "f) To zależy od miesiąca.",
-            "g) To dobra wiadomość.",
-            "h) Proszę jeszcze o dokładny adres.",
-            "i) Zaraz do pana zadzwonię.",
-            "j) Oczywiście, to możliwe."
+            "a) Czy mieszkanie jest jeszcze wolne?",
+            "b) Proszę jeszcze o dokładny adres.",
+            "c) To zależy od miesiąca.",
+            "d) Do zobaczenia jutro!",
+            "e) Czy można obejrzeć mieszkanie jutro?",
+            "f) Niestety jest już wynajęte.",
+            "g) Szkoda, ale to nie problem.",
+            "h) To dobra wiadomość.",
+            "i) Oczywiście, to możliwe.",
+            "j) Zaraz do pana zadzwonię."
           ],
           "explanation": "Tomek reaguje na dobrą informację, że mieszkanie jest wolne. „Szkoda, ale to nie problem.” pasuje do złej wiadomości, a tu jej nie ma.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "a) Szkoda, ale to nie problem.",
+          "answer": "g) Szkoda, ale to nie problem.",
           "options": [
-            "a) Szkoda, ale to nie problem.",
-            "b) Czy można obejrzeć mieszkanie jutro?",
-            "c) Czy mieszkanie jest jeszcze wolne?",
-            "d) Niestety jest już wynajęte.",
-            "e) Do zobaczenia jutro!",
-            "f) To zależy od miesiąca.",
-            "g) To dobra wiadomość.",
-            "h) Proszę jeszcze o dokładny adres.",
-            "i) Zaraz do pana zadzwonię.",
-            "j) Oczywiście, to możliwe."
+            "a) Czy mieszkanie jest jeszcze wolne?",
+            "b) Proszę jeszcze o dokładny adres.",
+            "c) To zależy od miesiąca.",
+            "d) Do zobaczenia jutro!",
+            "e) Czy można obejrzeć mieszkanie jutro?",
+            "f) Niestety jest już wynajęte.",
+            "g) Szkoda, ale to nie problem.",
+            "h) To dobra wiadomość.",
+            "i) Oczywiście, to możliwe.",
+            "j) Zaraz do pana zadzwonię."
           ],
           "explanation": "Ewa mówi, że nie ma windy, więc Tomek odpowiada z lekkim żalem, ale spokojnie. „To dobra wiadomość.” nie pasuje do braku windy.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "f) To zależy od miesiąca.",
+          "answer": "c) To zależy od miesiąca.",
           "options": [
-            "a) Szkoda, ale to nie problem.",
-            "b) Czy można obejrzeć mieszkanie jutro?",
-            "c) Czy mieszkanie jest jeszcze wolne?",
-            "d) Niestety jest już wynajęte.",
-            "e) Do zobaczenia jutro!",
-            "f) To zależy od miesiąca.",
-            "g) To dobra wiadomość.",
-            "h) Proszę jeszcze o dokładny adres.",
-            "i) Zaraz do pana zadzwonię.",
-            "j) Oczywiście, to możliwe."
+            "a) Czy mieszkanie jest jeszcze wolne?",
+            "b) Proszę jeszcze o dokładny adres.",
+            "c) To zależy od miesiąca.",
+            "d) Do zobaczenia jutro!",
+            "e) Czy można obejrzeć mieszkanie jutro?",
+            "f) Niestety jest już wynajęte.",
+            "g) Szkoda, ale to nie problem.",
+            "h) To dobra wiadomość.",
+            "i) Oczywiście, to możliwe.",
+            "j) Zaraz do pana zadzwonię."
           ],
           "explanation": "Na pytanie o wysokość opłat Ewa odpowiada „To zależy od miesiąca”, bo zimą płaci się więcej. Dalej wyjaśnia różnicę między zimą a latem.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "b) Czy można obejrzeć mieszkanie jutro?",
+          "answer": "e) Czy można obejrzeć mieszkanie jutro?",
           "options": [
-            "a) Szkoda, ale to nie problem.",
-            "b) Czy można obejrzeć mieszkanie jutro?",
-            "c) Czy mieszkanie jest jeszcze wolne?",
-            "d) Niestety jest już wynajęte.",
-            "e) Do zobaczenia jutro!",
-            "f) To zależy od miesiąca.",
-            "g) To dobra wiadomość.",
-            "h) Proszę jeszcze o dokładny adres.",
-            "i) Zaraz do pana zadzwonię.",
-            "j) Oczywiście, to możliwe."
+            "a) Czy mieszkanie jest jeszcze wolne?",
+            "b) Proszę jeszcze o dokładny adres.",
+            "c) To zależy od miesiąca.",
+            "d) Do zobaczenia jutro!",
+            "e) Czy można obejrzeć mieszkanie jutro?",
+            "f) Niestety jest już wynajęte.",
+            "g) Szkoda, ale to nie problem.",
+            "h) To dobra wiadomość.",
+            "i) Oczywiście, to możliwe.",
+            "j) Zaraz do pana zadzwonię."
           ],
           "explanation": "Tomek chce zobaczyć mieszkanie, więc pyta o oglądanie jutro. Pytanie „Czy mieszkanie jest jeszcze wolne?” już padło na początku rozmowy.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "j) Oczywiście, to możliwe.",
+          "answer": "i) Oczywiście, to możliwe.",
           "options": [
-            "a) Szkoda, ale to nie problem.",
-            "b) Czy można obejrzeć mieszkanie jutro?",
-            "c) Czy mieszkanie jest jeszcze wolne?",
-            "d) Niestety jest już wynajęte.",
-            "e) Do zobaczenia jutro!",
-            "f) To zależy od miesiąca.",
-            "g) To dobra wiadomość.",
-            "h) Proszę jeszcze o dokładny adres.",
-            "i) Zaraz do pana zadzwonię.",
-            "j) Oczywiście, to możliwe."
+            "a) Czy mieszkanie jest jeszcze wolne?",
+            "b) Proszę jeszcze o dokładny adres.",
+            "c) To zależy od miesiąca.",
+            "d) Do zobaczenia jutro!",
+            "e) Czy można obejrzeć mieszkanie jutro?",
+            "f) Niestety jest już wynajęte.",
+            "g) Szkoda, ale to nie problem.",
+            "h) To dobra wiadomość.",
+            "i) Oczywiście, to możliwe.",
+            "j) Zaraz do pana zadzwonię."
           ],
           "explanation": "Ewa zgadza się na oglądanie i podaje godzinę. „Zaraz do pana zadzwonię.” nie pasuje, bo Ewa od razu proponuje termin.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "h) Proszę jeszcze o dokładny adres.",
+          "answer": "b) Proszę jeszcze o dokładny adres.",
           "options": [
-            "a) Szkoda, ale to nie problem.",
-            "b) Czy można obejrzeć mieszkanie jutro?",
-            "c) Czy mieszkanie jest jeszcze wolne?",
-            "d) Niestety jest już wynajęte.",
-            "e) Do zobaczenia jutro!",
-            "f) To zależy od miesiąca.",
-            "g) To dobra wiadomość.",
-            "h) Proszę jeszcze o dokładny adres.",
-            "i) Zaraz do pana zadzwonię.",
-            "j) Oczywiście, to możliwe."
+            "a) Czy mieszkanie jest jeszcze wolne?",
+            "b) Proszę jeszcze o dokładny adres.",
+            "c) To zależy od miesiąca.",
+            "d) Do zobaczenia jutro!",
+            "e) Czy można obejrzeć mieszkanie jutro?",
+            "f) Niestety jest już wynajęte.",
+            "g) Szkoda, ale to nie problem.",
+            "h) To dobra wiadomość.",
+            "i) Oczywiście, to możliwe.",
+            "j) Zaraz do pana zadzwonię."
           ],
           "explanation": "Tomek zgadza się na termin i prosi o adres, który Ewa podaje w następnej wypowiedzi. Bez adresu nie trafi do kamienicy.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "e) Do zobaczenia jutro!",
+          "answer": "d) Do zobaczenia jutro!",
           "options": [
-            "a) Szkoda, ale to nie problem.",
-            "b) Czy można obejrzeć mieszkanie jutro?",
-            "c) Czy mieszkanie jest jeszcze wolne?",
-            "d) Niestety jest już wynajęte.",
-            "e) Do zobaczenia jutro!",
-            "f) To zależy od miesiąca.",
-            "g) To dobra wiadomość.",
-            "h) Proszę jeszcze o dokładny adres.",
-            "i) Zaraz do pana zadzwonię.",
-            "j) Oczywiście, to możliwe."
+            "a) Czy mieszkanie jest jeszcze wolne?",
+            "b) Proszę jeszcze o dokładny adres.",
+            "c) To zależy od miesiąca.",
+            "d) Do zobaczenia jutro!",
+            "e) Czy można obejrzeć mieszkanie jutro?",
+            "f) Niestety jest już wynajęte.",
+            "g) Szkoda, ale to nie problem.",
+            "h) To dobra wiadomość.",
+            "i) Oczywiście, to możliwe.",
+            "j) Zaraz do pana zadzwonię."
           ],
           "explanation": "Ewa podała adres i kończy rozmowę, więc żegna się i przypomina o jutrzejszym spotkaniu.",
           "grammar_point": "slownictwo"
@@ -537,9 +537,9 @@
           "id": "el2-2",
           "answer": "b) aby",
           "options": [
-            "a) bo",
             "b) aby",
-            "c) że"
+            "c) że",
+            "a) bo"
           ],
           "explanation": "Cel pisma wyrażamy formułą „Piszę, aby + bezokolicznik”. „Bo” podaje przyczynę, a „że” wymaga osobnego zdania.",
           "grammar_point": "rejestr-formalny"
@@ -548,8 +548,8 @@
           "id": "el2-3",
           "answer": "c) o",
           "options": [
-            "a) na",
             "b) w",
+            "a) na",
             "c) o"
           ],
           "explanation": "Mówimy „zapytać o coś”, czyli o termin naprawy. Przyimki „na” i „w” nie pasują do tego czasownika.",
@@ -559,9 +559,9 @@
           "id": "el2-4",
           "answer": "a) chociaż",
           "options": [
+            "c) więc",
             "a) chociaż",
-            "b) dlatego",
-            "c) więc"
+            "b) dlatego"
           ],
           "explanation": "Hydraulik nie przyszedł, choć to obiecano, więc potrzebujemy spójnika przeciwstawnego „chociaż”. „Dlatego” i „więc” oznaczają skutek, a tu go nie ma.",
           "grammar_point": "rejestr-formalny"
@@ -581,9 +581,9 @@
           "id": "el2-6",
           "answer": "b) przez",
           "options": [
-            "a) na",
+            "c) w",
             "b) przez",
-            "c) w"
+            "a) na"
           ],
           "explanation": "W listach piszemy „kontakt przez telefon”. Przyimki „na” i „w” nie pasują do tego wyrażenia.",
           "grammar_point": "rejestr-formalny"
@@ -592,8 +592,8 @@
           "id": "el2-7",
           "answer": "a) że",
           "options": [
-            "a) że",
             "b) aby",
+            "a) że",
             "c) czy"
           ],
           "explanation": "Po „Mam nadzieję” używamy spójnika „że”. „Aby” i „czy” nie tworzą poprawnego zdania po tej frazie.",
@@ -603,8 +603,8 @@
           "id": "el2-8",
           "answer": "c) bardzo",
           "options": [
-            "a) dużo",
             "b) wiele",
+            "a) dużo",
             "c) bardzo"
           ],
           "explanation": "Mówimy „będę bardzo wdzięczny”. „Dużo” i „wiele” nie łączą się z przymiotnikiem „wdzięczny”.",
@@ -614,9 +614,9 @@
           "id": "el2-9",
           "answer": "a) za",
           "options": [
-            "a) za",
             "b) o",
-            "c) na"
+            "c) na",
+            "a) za"
           ],
           "explanation": "Czasownik „dziękować” łączy się z przyimkiem „za”: „dziękuję za pomoc”. „O” i „na” są błędne.",
           "grammar_point": "rejestr-formalny"
@@ -625,9 +625,9 @@
           "id": "el2-10",
           "answer": "b) Z",
           "options": [
-            "a) Na",
+            "c) Do",
             "b) Z",
-            "c) Do"
+            "a) Na"
           ],
           "explanation": "Formuła kończąca oficjalny list brzmi „Z poważaniem”. Z innymi przyimkami to wyrażenie nie istnieje.",
           "grammar_point": "rejestr-formalny"

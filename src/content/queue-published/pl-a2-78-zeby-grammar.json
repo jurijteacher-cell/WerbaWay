@@ -74,8 +74,8 @@
           "text": "Zostajemy do siódmej, ___ spakować wszystkie rzeczy.",
           "answer": "żeby",
           "options": [
-            "żeby",
             "bo",
+            "żeby",
             "że"
           ],
           "grammar_point": "zdania-celu-zeby",
@@ -86,9 +86,9 @@
           "text": "Zostajemy do siódmej, ___ w sobotę przyjedzie firma.",
           "answer": "bo",
           "options": [
-            "bo",
+            "więc",
             "żeby",
-            "więc"
+            "bo"
           ],
           "grammar_point": "zdania-zlozone-ze",
           "explanation": "Przyczyna (dlaczego?) → bo."
@@ -99,8 +99,8 @@
           "answer": "Po",
           "options": [
             "Po",
-            "Dla",
-            "Bo"
+            "Bo",
+            "Dla"
           ],
           "grammar_point": "zdania-celu-zeby",
           "explanation": "Pytanie o cel: Po co?"
@@ -122,9 +122,9 @@
           "text": "Wiem, ___ jutro jest przeprowadzka.",
           "answer": "że",
           "options": [
-            "że",
+            "bo",
             "żeby",
-            "bo"
+            "że"
           ],
           "grammar_point": "zdania-zlozone-ze",
           "explanation": "Wiem, że… — treść, nie cel."
@@ -134,9 +134,9 @@
           "text": "Wyszłam wcześniej, ___ się nie spóźnić na pociąg.",
           "answer": "żeby",
           "options": [
+            "więc",
             "żeby",
-            "bo",
-            "więc"
+            "bo"
           ],
           "grammar_point": "zdania-celu-zeby",
           "explanation": "Cel → żeby się nie spóźnić."
@@ -146,8 +146,8 @@
           "text": "Dzwonię do ciebie, ___ zapytać o kwiaty.",
           "answer": "żeby",
           "options": [
-            "żeby",
             "że",
+            "żeby",
             "dlatego"
           ],
           "grammar_point": "zdania-celu-zeby",
@@ -238,9 +238,9 @@
           "text": "Zapisuję to, żeby nie ___.",
           "answer": "zapomnieć",
           "options": [
-            "zapomnieć",
             "zapominam",
-            "zapomniałam"
+            "zapomniałam",
+            "zapomnieć"
           ],
           "grammar_point": "zdania-celu-zeby",
           "explanation": "Po żeby — bezokolicznik (zwykle dokonany)."
@@ -250,9 +250,9 @@
           "text": "Wstaję o szóstej, żeby się nie ___.",
           "answer": "spóźnić",
           "options": [
-            "spóźnić",
             "spóźniam",
-            "spóźnię"
+            "spóźnię",
+            "spóźnić"
           ],
           "grammar_point": "zdania-celu-zeby",
           "explanation": "Żeby + bezokolicznik: się nie spóźnić."
@@ -263,8 +263,8 @@
           "answer": "uszkodzić",
           "options": [
             "uszkodzić",
-            "uszkodzimy",
-            "uszkodzili"
+            "uszkodzili",
+            "uszkodzimy"
           ],
           "grammar_point": "zdania-celu-zeby",
           "explanation": "Żeby + bezokolicznik."
@@ -274,9 +274,9 @@
           "text": "Mam do ciebie ___. Pomożesz mi?",
           "answer": "prośbę",
           "options": [
-            "prośbę",
             "prośba",
-            "prośby"
+            "prośby",
+            "prośbę"
           ],
           "grammar_point": "slownictwo",
           "explanation": "Mam co? — biernik: prośbę."
@@ -286,9 +286,9 @@
           "text": "Tomku, czy ___ mi pożyczyć taśmę?",
           "answer": "mógłbyś",
           "options": [
+            "mogłabyś",
             "mógłbyś",
-            "mógłby Pan",
-            "mogłabyś"
+            "mógłby Pan"
           ],
           "grammar_point": "warunkowy-prosby",
           "explanation": "Do kolegi na ty: mógłbyś."
@@ -298,9 +298,9 @@
           "text": "Proszę cię ___ pomoc.",
           "answer": "o",
           "options": [
+            "za",
             "o",
-            "na",
-            "za"
+            "na"
           ],
           "grammar_point": "kalki-uk",
           "explanation": "Prosić kogo? o co? — o pomoc."
@@ -372,86 +372,86 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Olena: Cześć, Tomek, tu Olena. {el1-1} Mam do Ciebie małą prośbę.\n\nTomek: {el1-2} O co chodzi?\n\nOlena: W piątek pakujemy biuro. Czy mógłbyś przynieść kartony z supermarketu?\n\nTomek: {el1-3} Ile kartonów potrzebujesz?\n\nOlena: {el1-4} Myślę, że z dwadzieścia.\n\nTomek: {el1-5} Mam samochód, więc mogę przywieźć dużo.\n\nOlena: {el1-6} A mógłbyś też wziąć taśmę?\n\nTomek: {el1-7} Ale Kasia kupiła już dwie.\n\nOlena: {el1-8} W takim razie zapytam Kasię.\n\nTomek: Dobrze. Do zobaczenia w piątek!",
       "bank": [
-        "a) Super, dziękuję!",
-        "b) Oczywiście, to nie problem.",
-        "c) Dobrze, nie szkodzi.",
-        "d) Przykro mi, jestem w pracy.",
-        "e) Dziękuję, nie trzeba.",
+        "a) Słucham Cię.",
+        "b) Niestety, taśmy nie mam.",
+        "c) Nie wiem dokładnie.",
+        "d) Przepraszam, że przeszkadzam.",
+        "e) Przykro mi, jestem w pracy.",
         "f) Nie ma sprawy.",
-        "g) Niestety, taśmy nie mam.",
-        "h) Przepraszam, że przeszkadzam.",
-        "i) Nie wiem dokładnie.",
-        "j) Słucham Cię."
+        "g) Super, dziękuję!",
+        "h) Oczywiście, to nie problem.",
+        "i) Dobrze, nie szkodzi.",
+        "j) Dziękuję, nie trzeba."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "h) Przepraszam, że przeszkadzam.",
+          "answer": "d) Przepraszam, że przeszkadzam.",
           "options": [
-            "a) Super, dziękuję!",
-            "b) Oczywiście, to nie problem.",
-            "c) Dobrze, nie szkodzi.",
-            "d) Przykro mi, jestem w pracy.",
-            "e) Dziękuję, nie trzeba.",
+            "a) Słucham Cię.",
+            "b) Niestety, taśmy nie mam.",
+            "c) Nie wiem dokładnie.",
+            "d) Przepraszam, że przeszkadzam.",
+            "e) Przykro mi, jestem w pracy.",
             "f) Nie ma sprawy.",
-            "g) Niestety, taśmy nie mam.",
-            "h) Przepraszam, że przeszkadzam.",
-            "i) Nie wiem dokładnie.",
-            "j) Słucham Cię."
+            "g) Super, dziękuję!",
+            "h) Oczywiście, to nie problem.",
+            "i) Dobrze, nie szkodzi.",
+            "j) Dziękuję, nie trzeba."
           ],
           "explanation": "Olena dzwoni do kolegi i prosi o przysługę. Na początku grzecznie przeprasza za kłopot.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "j) Słucham Cię.",
+          "answer": "a) Słucham Cię.",
           "options": [
-            "a) Super, dziękuję!",
-            "b) Oczywiście, to nie problem.",
-            "c) Dobrze, nie szkodzi.",
-            "d) Przykro mi, jestem w pracy.",
-            "e) Dziękuję, nie trzeba.",
+            "a) Słucham Cię.",
+            "b) Niestety, taśmy nie mam.",
+            "c) Nie wiem dokładnie.",
+            "d) Przepraszam, że przeszkadzam.",
+            "e) Przykro mi, jestem w pracy.",
             "f) Nie ma sprawy.",
-            "g) Niestety, taśmy nie mam.",
-            "h) Przepraszam, że przeszkadzam.",
-            "i) Nie wiem dokładnie.",
-            "j) Słucham Cię."
+            "g) Super, dziękuję!",
+            "h) Oczywiście, to nie problem.",
+            "i) Dobrze, nie szkodzi.",
+            "j) Dziękuję, nie trzeba."
           ],
           "explanation": "Tomek jest gotowy wysłuchać prośby. „Słucham Cię” pasuje do pytania „O co chodzi?”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "b) Oczywiście, to nie problem.",
+          "answer": "h) Oczywiście, to nie problem.",
           "options": [
-            "a) Super, dziękuję!",
-            "b) Oczywiście, to nie problem.",
-            "c) Dobrze, nie szkodzi.",
-            "d) Przykro mi, jestem w pracy.",
-            "e) Dziękuję, nie trzeba.",
+            "a) Słucham Cię.",
+            "b) Niestety, taśmy nie mam.",
+            "c) Nie wiem dokładnie.",
+            "d) Przepraszam, że przeszkadzam.",
+            "e) Przykro mi, jestem w pracy.",
             "f) Nie ma sprawy.",
-            "g) Niestety, taśmy nie mam.",
-            "h) Przepraszam, że przeszkadzam.",
-            "i) Nie wiem dokładnie.",
-            "j) Słucham Cię."
+            "g) Super, dziękuję!",
+            "h) Oczywiście, to nie problem.",
+            "i) Dobrze, nie szkodzi.",
+            "j) Dziękuję, nie trzeba."
           ],
           "explanation": "Tomek zgadza się przynieść kartony. „Oczywiście, to nie problem” to naturalna odpowiedź na prośbę.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "i) Nie wiem dokładnie.",
+          "answer": "c) Nie wiem dokładnie.",
           "options": [
-            "a) Super, dziękuję!",
-            "b) Oczywiście, to nie problem.",
-            "c) Dobrze, nie szkodzi.",
-            "d) Przykro mi, jestem w pracy.",
-            "e) Dziękuję, nie trzeba.",
+            "a) Słucham Cię.",
+            "b) Niestety, taśmy nie mam.",
+            "c) Nie wiem dokładnie.",
+            "d) Przepraszam, że przeszkadzam.",
+            "e) Przykro mi, jestem w pracy.",
             "f) Nie ma sprawy.",
-            "g) Niestety, taśmy nie mam.",
-            "h) Przepraszam, że przeszkadzam.",
-            "i) Nie wiem dokładnie.",
-            "j) Słucham Cię."
+            "g) Super, dziękuję!",
+            "h) Oczywiście, to nie problem.",
+            "i) Dobrze, nie szkodzi.",
+            "j) Dziękuję, nie trzeba."
           ],
           "explanation": "Olena nie zna dokładnej liczby kartonów. Mówi więc „Nie wiem dokładnie” i podaje przybliżenie.",
           "grammar_point": "slownictwo"
@@ -460,70 +460,70 @@
           "id": "el1-5",
           "answer": "f) Nie ma sprawy.",
           "options": [
-            "a) Super, dziękuję!",
-            "b) Oczywiście, to nie problem.",
-            "c) Dobrze, nie szkodzi.",
-            "d) Przykro mi, jestem w pracy.",
-            "e) Dziękuję, nie trzeba.",
+            "a) Słucham Cię.",
+            "b) Niestety, taśmy nie mam.",
+            "c) Nie wiem dokładnie.",
+            "d) Przepraszam, że przeszkadzam.",
+            "e) Przykro mi, jestem w pracy.",
             "f) Nie ma sprawy.",
-            "g) Niestety, taśmy nie mam.",
-            "h) Przepraszam, że przeszkadzam.",
-            "i) Nie wiem dokładnie.",
-            "j) Słucham Cię."
+            "g) Super, dziękuję!",
+            "h) Oczywiście, to nie problem.",
+            "i) Dobrze, nie szkodzi.",
+            "j) Dziękuję, nie trzeba."
           ],
           "explanation": "Tomek uspokaja Olenę: ma samochód, więc przywiezie dużo kartonów. „Nie ma sprawy” pasuje do jego zdania.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "a) Super, dziękuję!",
+          "answer": "g) Super, dziękuję!",
           "options": [
-            "a) Super, dziękuję!",
-            "b) Oczywiście, to nie problem.",
-            "c) Dobrze, nie szkodzi.",
-            "d) Przykro mi, jestem w pracy.",
-            "e) Dziękuję, nie trzeba.",
+            "a) Słucham Cię.",
+            "b) Niestety, taśmy nie mam.",
+            "c) Nie wiem dokładnie.",
+            "d) Przepraszam, że przeszkadzam.",
+            "e) Przykro mi, jestem w pracy.",
             "f) Nie ma sprawy.",
-            "g) Niestety, taśmy nie mam.",
-            "h) Przepraszam, że przeszkadzam.",
-            "i) Nie wiem dokładnie.",
-            "j) Słucham Cię."
+            "g) Super, dziękuję!",
+            "h) Oczywiście, to nie problem.",
+            "i) Dobrze, nie szkodzi.",
+            "j) Dziękuję, nie trzeba."
           ],
           "explanation": "Olena dziękuje za pomoc i zaraz prosi o coś jeszcze. „Super, dziękuję!” pasuje przed drugą prośbą.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "g) Niestety, taśmy nie mam.",
+          "answer": "b) Niestety, taśmy nie mam.",
           "options": [
-            "a) Super, dziękuję!",
-            "b) Oczywiście, to nie problem.",
-            "c) Dobrze, nie szkodzi.",
-            "d) Przykro mi, jestem w pracy.",
-            "e) Dziękuję, nie trzeba.",
+            "a) Słucham Cię.",
+            "b) Niestety, taśmy nie mam.",
+            "c) Nie wiem dokładnie.",
+            "d) Przepraszam, że przeszkadzam.",
+            "e) Przykro mi, jestem w pracy.",
             "f) Nie ma sprawy.",
-            "g) Niestety, taśmy nie mam.",
-            "h) Przepraszam, że przeszkadzam.",
-            "i) Nie wiem dokładnie.",
-            "j) Słucham Cię."
+            "g) Super, dziękuję!",
+            "h) Oczywiście, to nie problem.",
+            "i) Dobrze, nie szkodzi.",
+            "j) Dziękuję, nie trzeba."
           ],
           "explanation": "Tomek odmawia, bo nie ma taśmy, ale podaje inną możliwość. „Niestety” wprowadza odmowę, a „ale” — rozwiązanie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "c) Dobrze, nie szkodzi.",
+          "answer": "i) Dobrze, nie szkodzi.",
           "options": [
-            "a) Super, dziękuję!",
-            "b) Oczywiście, to nie problem.",
-            "c) Dobrze, nie szkodzi.",
-            "d) Przykro mi, jestem w pracy.",
-            "e) Dziękuję, nie trzeba.",
+            "a) Słucham Cię.",
+            "b) Niestety, taśmy nie mam.",
+            "c) Nie wiem dokładnie.",
+            "d) Przepraszam, że przeszkadzam.",
+            "e) Przykro mi, jestem w pracy.",
             "f) Nie ma sprawy.",
-            "g) Niestety, taśmy nie mam.",
-            "h) Przepraszam, że przeszkadzam.",
-            "i) Nie wiem dokładnie.",
-            "j) Słucham Cię."
+            "g) Super, dziękuję!",
+            "h) Oczywiście, to nie problem.",
+            "i) Dobrze, nie szkodzi.",
+            "j) Dziękuję, nie trzeba."
           ],
           "explanation": "Olena nie ma pretensji do Tomka i decyduje się zapytać Kasię. „Nie szkodzi” oznacza „to nic”.",
           "grammar_point": "slownictwo"
@@ -554,8 +554,8 @@
           "answer": "b) o",
           "options": [
             "a) za",
-            "b) o",
-            "c) na"
+            "c) na",
+            "b) o"
           ],
           "explanation": "Mówimy „zapytać o cenę”. Przyimki „za” i „na” nie pasują do czasownika „zapytać”.",
           "grammar_point": "rejestr-formalny"
@@ -565,8 +565,8 @@
           "answer": "c) odbędzie się",
           "options": [
             "a) zrobi się",
-            "b) stanie się",
-            "c) odbędzie się"
+            "c) odbędzie się",
+            "b) stanie się"
           ],
           "explanation": "O wydarzeniu mówimy „odbędzie się”. „Zrobi się” i „stanie się” brzmią niepoprawnie.",
           "grammar_point": "rejestr-formalny"
@@ -575,8 +575,8 @@
           "id": "el2-4",
           "answer": "c) żeby",
           "options": [
-            "a) bo",
             "b) że",
+            "a) bo",
             "c) żeby"
           ],
           "explanation": "„Żeby” wyraża cel i łączy się z bezokolicznikiem: „żeby przewieźć”. „Bo” i „że” wymagają całego zdania.",
@@ -586,9 +586,9 @@
           "id": "el2-5",
           "answer": "a) W razie",
           "options": [
+            "c) Na razie",
             "a) W razie",
-            "b) Z powodu",
-            "c) Na razie"
+            "b) Z powodu"
           ],
           "explanation": "„W razie pytań” to stała formuła w e-mailu. „Z powodu” i „na razie” mają inne znaczenie.",
           "grammar_point": "rejestr-formalny"
@@ -597,9 +597,9 @@
           "id": "el2-6",
           "answer": "b) o",
           "options": [
+            "c) za",
             "a) na",
-            "b) o",
-            "c) za"
+            "b) o"
           ],
           "explanation": "Mówimy „prosić o ofertę”. Inne przyimki nie pasują do czasownika „prosić”.",
           "grammar_point": "rejestr-formalny"
@@ -608,9 +608,9 @@
           "id": "el2-7",
           "answer": "b) za",
           "options": [
-            "a) na",
             "b) za",
-            "c) do"
+            "c) do",
+            "a) na"
           ],
           "explanation": "Cenę podajemy „za godzinę”. Przyimki „na” i „do” nie pasują do tej konstrukcji.",
           "grammar_point": "rejestr-formalny"
@@ -620,8 +620,8 @@
           "answer": "c) Z góry",
           "options": [
             "a) Od góry",
-            "b) Na górę",
-            "c) Z góry"
+            "c) Z góry",
+            "b) Na górę"
           ],
           "explanation": "„Z góry dziękuję” to stała formuła w e-mailu. Pozostałe wyrażenia nie mają tego znaczenia.",
           "grammar_point": "rejestr-formalny"
@@ -630,9 +630,9 @@
           "id": "el2-9",
           "answer": "a) za",
           "options": [
-            "a) za",
             "b) o",
-            "c) na"
+            "c) na",
+            "a) za"
           ],
           "explanation": "Mówimy „dziękować za odpowiedź”. Przyimek „za” łączy się z czasownikiem „dziękować”.",
           "grammar_point": "rejestr-formalny"
@@ -641,9 +641,9 @@
           "id": "el2-10",
           "answer": "c) Z poważaniem",
           "options": [
-            "a) Z uczuciem",
             "b) Z przyjemnością",
-            "c) Z poważaniem"
+            "c) Z poważaniem",
+            "a) Z uczuciem"
           ],
           "explanation": "„Z poważaniem” to typowe zakończenie oficjalnego listu. Pozostałe formuły nie pasują do listu do firmy.",
           "grammar_point": "rejestr-formalny"

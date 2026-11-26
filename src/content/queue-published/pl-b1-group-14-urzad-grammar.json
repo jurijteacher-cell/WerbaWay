@@ -161,8 +161,8 @@
           "answer": "umie",
           "grammar_point": "umiec-moc",
           "options": [
-            "umie",
-            "może"
+            "może",
+            "umie"
           ],
           "explanation": "Umiejętność (nauczył się) → umie."
         },
@@ -183,8 +183,8 @@
           "answer": "może",
           "grammar_point": "umiec-moc",
           "options": [
-            "umie",
-            "może"
+            "może",
+            "umie"
           ],
           "explanation": "Prośba → Czy może pan…?"
         },
@@ -338,8 +338,8 @@
           "answer": "należy",
           "grammar_point": "bezosobowe-wybor",
           "options": [
-            "należy",
-            "warto"
+            "warto",
+            "należy"
           ],
           "explanation": "Oficjalny obowiązek → należy (styl urzędowy) albo trzeba."
         },
@@ -359,8 +359,8 @@
           "answer": "wolno",
           "grammar_point": "bezosobowe-wybor",
           "options": [
-            "wolno",
-            "trzeba"
+            "trzeba",
+            "wolno"
           ],
           "explanation": "Pozwolenie → wolno / można."
         },
@@ -392,8 +392,8 @@
           "answer": "trzeba",
           "grammar_point": "bezosobowe-wybor",
           "options": [
-            "trzeba",
-            "wolno"
+            "wolno",
+            "trzeba"
           ],
           "explanation": "Obowiązek → trzeba / należy."
         },
@@ -403,8 +403,8 @@
           "answer": "trzeba",
           "grammar_point": "bezosobowe-wybor",
           "options": [
-            "trzeba",
-            "wolno"
+            "wolno",
+            "trzeba"
           ],
           "explanation": "Brak potrzeby → nie trzeba."
         }
@@ -526,8 +526,8 @@
           "answer": "nie musisz",
           "grammar_point": "nie-musisz-nie-wolno",
           "options": [
-            "nie musisz",
-            "nie wolno ci"
+            "nie wolno ci",
+            "nie musisz"
           ],
           "explanation": "Nie ma potrzeby → nie musisz."
         },
@@ -537,8 +537,8 @@
           "answer": "nie wolno",
           "grammar_point": "nie-musisz-nie-wolno",
           "options": [
-            "nie trzeba",
-            "nie wolno"
+            "nie wolno",
+            "nie trzeba"
           ],
           "explanation": "Zakaz → nie wolno."
         },
@@ -633,8 +633,8 @@
           "answer": "umiem pływać",
           "grammar_point": "kalki-uk",
           "options": [
-            "mogę pływać",
-            "umiem pływać"
+            "umiem pływać",
+            "mogę pływać"
           ],
           "explanation": "Укр. «я можу плавати» = вмію → umiem pływać."
         },
@@ -655,8 +655,8 @@
           "answer": "mogę",
           "grammar_point": "kalki-uk",
           "options": [
-            "można mi",
-            "mogę"
+            "mogę",
+            "można mi"
           ],
           "explanation": "Укр. «мені можна?» → mogę? albo wolno mi?, nie „można mi”."
         },
@@ -666,8 +666,8 @@
           "answer": "Powinieneś był",
           "grammar_point": "kalki-uk",
           "options": [
-            "Byłeś powinien",
-            "Powinieneś był"
+            "Powinieneś był",
+            "Byłeś powinien"
           ],
           "explanation": "Укр. «ти повинен був» → powinieneś był: najpierw powinien, potem był."
         },
@@ -692,158 +692,158 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Zofia: Wydział Komunikacji, słucham pana.\n\nTaras: Dzień dobry. Kupiłem samochód i chciałbym go zarejestrować. {el1-1}\n\nZofia: Potrzebny jest wniosek, umowa kupna-sprzedaży i dowód rejestracyjny. Ma pan to wszystko?\n\nTaras: {el1-2}\n\nZofia: A potwierdzenie zapłaty podatku od kupna?\n\nTaras: {el1-3}\n\nZofia: {el1-4}\n\nTaras: {el1-5}\n\nZofia: {el1-6}\n\nTaras: {el1-7}\n\nZofia: {el1-8}",
       "bank": [
-        "a) Czy muszę zapłacić za nowe tablice?",
-        "b) Numerek można pobrać przy wejściu.",
-        "c) Tak, mam wszystko w teczce.",
+        "a) W takim razie proszę je dosłać e-mailem.",
+        "b) Czy muszę zapłacić za nowe tablice?",
+        "c) Tak, ale najpóźniej do końca dnia roboczego.",
         "d) Jakie dokumenty muszę przynieść?",
-        "e) Niestety zostawiłem je w domu.",
-        "f) Tak, ale najpóźniej do końca dnia roboczego.",
-        "g) Płacę kartą, bez problemu.",
-        "h) Nie musi pan, jeśli zachowa pan stare.",
-        "i) W takim razie proszę je dosłać e-mailem.",
-        "j) Czy mogę to zrobić jeszcze dzisiaj?"
+        "e) Nie musi pan, jeśli zachowa pan stare.",
+        "f) Niestety zostawiłem je w domu.",
+        "g) Czy mogę to zrobić jeszcze dzisiaj?",
+        "h) Tak, mam wszystko w teczce.",
+        "i) Numerek można pobrać przy wejściu.",
+        "j) Płacę kartą, bez problemu."
       ],
       "items": [
         {
           "id": "el1-1",
           "answer": "d) Jakie dokumenty muszę przynieść?",
           "options": [
-            "a) Czy muszę zapłacić za nowe tablice?",
-            "b) Numerek można pobrać przy wejściu.",
-            "c) Tak, mam wszystko w teczce.",
+            "a) W takim razie proszę je dosłać e-mailem.",
+            "b) Czy muszę zapłacić za nowe tablice?",
+            "c) Tak, ale najpóźniej do końca dnia roboczego.",
             "d) Jakie dokumenty muszę przynieść?",
-            "e) Niestety zostawiłem je w domu.",
-            "f) Tak, ale najpóźniej do końca dnia roboczego.",
-            "g) Płacę kartą, bez problemu.",
-            "h) Nie musi pan, jeśli zachowa pan stare.",
-            "i) W takim razie proszę je dosłać e-mailem.",
-            "j) Czy mogę to zrobić jeszcze dzisiaj?"
+            "e) Nie musi pan, jeśli zachowa pan stare.",
+            "f) Niestety zostawiłem je w domu.",
+            "g) Czy mogę to zrobić jeszcze dzisiaj?",
+            "h) Tak, mam wszystko w teczce.",
+            "i) Numerek można pobrać przy wejściu.",
+            "j) Płacę kartą, bez problemu."
           ],
           "explanation": "Zofia wymienia dokumenty, więc Taras zapytał o to, co ma przynieść. „Numerek można pobrać” nie odpowiada na jej wyliczenie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "c) Tak, mam wszystko w teczce.",
+          "answer": "h) Tak, mam wszystko w teczce.",
           "options": [
-            "a) Czy muszę zapłacić za nowe tablice?",
-            "b) Numerek można pobrać przy wejściu.",
-            "c) Tak, mam wszystko w teczce.",
+            "a) W takim razie proszę je dosłać e-mailem.",
+            "b) Czy muszę zapłacić za nowe tablice?",
+            "c) Tak, ale najpóźniej do końca dnia roboczego.",
             "d) Jakie dokumenty muszę przynieść?",
-            "e) Niestety zostawiłem je w domu.",
-            "f) Tak, ale najpóźniej do końca dnia roboczego.",
-            "g) Płacę kartą, bez problemu.",
-            "h) Nie musi pan, jeśli zachowa pan stare.",
-            "i) W takim razie proszę je dosłać e-mailem.",
-            "j) Czy mogę to zrobić jeszcze dzisiaj?"
+            "e) Nie musi pan, jeśli zachowa pan stare.",
+            "f) Niestety zostawiłem je w domu.",
+            "g) Czy mogę to zrobić jeszcze dzisiaj?",
+            "h) Tak, mam wszystko w teczce.",
+            "i) Numerek można pobrać przy wejściu.",
+            "j) Płacę kartą, bez problemu."
           ],
           "explanation": "Zofia pyta, czy Taras ma wszystkie dokumenty. „Tak, mam wszystko w teczce” bezpośrednio odpowiada na to pytanie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "e) Niestety zostawiłem je w domu.",
+          "answer": "f) Niestety zostawiłem je w domu.",
           "options": [
-            "a) Czy muszę zapłacić za nowe tablice?",
-            "b) Numerek można pobrać przy wejściu.",
-            "c) Tak, mam wszystko w teczce.",
+            "a) W takim razie proszę je dosłać e-mailem.",
+            "b) Czy muszę zapłacić za nowe tablice?",
+            "c) Tak, ale najpóźniej do końca dnia roboczego.",
             "d) Jakie dokumenty muszę przynieść?",
-            "e) Niestety zostawiłem je w domu.",
-            "f) Tak, ale najpóźniej do końca dnia roboczego.",
-            "g) Płacę kartą, bez problemu.",
-            "h) Nie musi pan, jeśli zachowa pan stare.",
-            "i) W takim razie proszę je dosłać e-mailem.",
-            "j) Czy mogę to zrobić jeszcze dzisiaj?"
+            "e) Nie musi pan, jeśli zachowa pan stare.",
+            "f) Niestety zostawiłem je w domu.",
+            "g) Czy mogę to zrobić jeszcze dzisiaj?",
+            "h) Tak, mam wszystko w teczce.",
+            "i) Numerek można pobrać przy wejściu.",
+            "j) Płacę kartą, bez problemu."
           ],
           "explanation": "Taras nie ma potwierdzenia zapłaty podatku. Przyznaje to uprzejmie słowem „niestety”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "i) W takim razie proszę je dosłać e-mailem.",
+          "answer": "a) W takim razie proszę je dosłać e-mailem.",
           "options": [
-            "a) Czy muszę zapłacić za nowe tablice?",
-            "b) Numerek można pobrać przy wejściu.",
-            "c) Tak, mam wszystko w teczce.",
+            "a) W takim razie proszę je dosłać e-mailem.",
+            "b) Czy muszę zapłacić za nowe tablice?",
+            "c) Tak, ale najpóźniej do końca dnia roboczego.",
             "d) Jakie dokumenty muszę przynieść?",
-            "e) Niestety zostawiłem je w domu.",
-            "f) Tak, ale najpóźniej do końca dnia roboczego.",
-            "g) Płacę kartą, bez problemu.",
-            "h) Nie musi pan, jeśli zachowa pan stare.",
-            "i) W takim razie proszę je dosłać e-mailem.",
-            "j) Czy mogę to zrobić jeszcze dzisiaj?"
+            "e) Nie musi pan, jeśli zachowa pan stare.",
+            "f) Niestety zostawiłem je w domu.",
+            "g) Czy mogę to zrobić jeszcze dzisiaj?",
+            "h) Tak, mam wszystko w teczce.",
+            "i) Numerek można pobrać przy wejściu.",
+            "j) Płacę kartą, bez problemu."
           ],
           "explanation": "Zofia reaguje na brak dokumentu i proponuje rozwiązanie. „W takim razie” wskazuje wniosek z poprzedniej wypowiedzi.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "j) Czy mogę to zrobić jeszcze dzisiaj?",
+          "answer": "g) Czy mogę to zrobić jeszcze dzisiaj?",
           "options": [
-            "a) Czy muszę zapłacić za nowe tablice?",
-            "b) Numerek można pobrać przy wejściu.",
-            "c) Tak, mam wszystko w teczce.",
+            "a) W takim razie proszę je dosłać e-mailem.",
+            "b) Czy muszę zapłacić za nowe tablice?",
+            "c) Tak, ale najpóźniej do końca dnia roboczego.",
             "d) Jakie dokumenty muszę przynieść?",
-            "e) Niestety zostawiłem je w domu.",
-            "f) Tak, ale najpóźniej do końca dnia roboczego.",
-            "g) Płacę kartą, bez problemu.",
-            "h) Nie musi pan, jeśli zachowa pan stare.",
-            "i) W takim razie proszę je dosłać e-mailem.",
-            "j) Czy mogę to zrobić jeszcze dzisiaj?"
+            "e) Nie musi pan, jeśli zachowa pan stare.",
+            "f) Niestety zostawiłem je w domu.",
+            "g) Czy mogę to zrobić jeszcze dzisiaj?",
+            "h) Tak, mam wszystko w teczce.",
+            "i) Numerek można pobrać przy wejściu.",
+            "j) Płacę kartą, bez problemu."
           ],
           "explanation": "Taras pyta, czy zdąży dosłać potwierdzenie jeszcze dziś. Zofia odpowiada na to pytanie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "f) Tak, ale najpóźniej do końca dnia roboczego.",
+          "answer": "c) Tak, ale najpóźniej do końca dnia roboczego.",
           "options": [
-            "a) Czy muszę zapłacić za nowe tablice?",
-            "b) Numerek można pobrać przy wejściu.",
-            "c) Tak, mam wszystko w teczce.",
+            "a) W takim razie proszę je dosłać e-mailem.",
+            "b) Czy muszę zapłacić za nowe tablice?",
+            "c) Tak, ale najpóźniej do końca dnia roboczego.",
             "d) Jakie dokumenty muszę przynieść?",
-            "e) Niestety zostawiłem je w domu.",
-            "f) Tak, ale najpóźniej do końca dnia roboczego.",
-            "g) Płacę kartą, bez problemu.",
-            "h) Nie musi pan, jeśli zachowa pan stare.",
-            "i) W takim razie proszę je dosłać e-mailem.",
-            "j) Czy mogę to zrobić jeszcze dzisiaj?"
+            "e) Nie musi pan, jeśli zachowa pan stare.",
+            "f) Niestety zostawiłem je w domu.",
+            "g) Czy mogę to zrobić jeszcze dzisiaj?",
+            "h) Tak, mam wszystko w teczce.",
+            "i) Numerek można pobrać przy wejściu.",
+            "j) Płacę kartą, bez problemu."
           ],
           "explanation": "To odpowiedź na pytanie o dzisiejszy termin: tak, ale z ograniczeniem czasowym. „Płacę kartą” nie pasuje do tej sytuacji.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "a) Czy muszę zapłacić za nowe tablice?",
+          "answer": "b) Czy muszę zapłacić za nowe tablice?",
           "options": [
-            "a) Czy muszę zapłacić za nowe tablice?",
-            "b) Numerek można pobrać przy wejściu.",
-            "c) Tak, mam wszystko w teczce.",
+            "a) W takim razie proszę je dosłać e-mailem.",
+            "b) Czy muszę zapłacić za nowe tablice?",
+            "c) Tak, ale najpóźniej do końca dnia roboczego.",
             "d) Jakie dokumenty muszę przynieść?",
-            "e) Niestety zostawiłem je w domu.",
-            "f) Tak, ale najpóźniej do końca dnia roboczego.",
-            "g) Płacę kartą, bez problemu.",
-            "h) Nie musi pan, jeśli zachowa pan stare.",
-            "i) W takim razie proszę je dosłać e-mailem.",
-            "j) Czy mogę to zrobić jeszcze dzisiaj?"
+            "e) Nie musi pan, jeśli zachowa pan stare.",
+            "f) Niestety zostawiłem je w domu.",
+            "g) Czy mogę to zrobić jeszcze dzisiaj?",
+            "h) Tak, mam wszystko w teczce.",
+            "i) Numerek można pobrać przy wejściu.",
+            "j) Płacę kartą, bez problemu."
           ],
           "explanation": "Taras pyta o koszt tablic rejestracyjnych. Zofia odpowiada na to pytanie w ostatniej replice.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "h) Nie musi pan, jeśli zachowa pan stare.",
+          "answer": "e) Nie musi pan, jeśli zachowa pan stare.",
           "options": [
-            "a) Czy muszę zapłacić za nowe tablice?",
-            "b) Numerek można pobrać przy wejściu.",
-            "c) Tak, mam wszystko w teczce.",
+            "a) W takim razie proszę je dosłać e-mailem.",
+            "b) Czy muszę zapłacić za nowe tablice?",
+            "c) Tak, ale najpóźniej do końca dnia roboczego.",
             "d) Jakie dokumenty muszę przynieść?",
-            "e) Niestety zostawiłem je w domu.",
-            "f) Tak, ale najpóźniej do końca dnia roboczego.",
-            "g) Płacę kartą, bez problemu.",
-            "h) Nie musi pan, jeśli zachowa pan stare.",
-            "i) W takim razie proszę je dosłać e-mailem.",
-            "j) Czy mogę to zrobić jeszcze dzisiaj?"
+            "e) Nie musi pan, jeśli zachowa pan stare.",
+            "f) Niestety zostawiłem je w domu.",
+            "g) Czy mogę to zrobić jeszcze dzisiaj?",
+            "h) Tak, mam wszystko w teczce.",
+            "i) Numerek można pobrać przy wejściu.",
+            "j) Płacę kartą, bez problemu."
           ],
           "explanation": "To odpowiedź na pytanie o opłatę za tablice: nie trzeba płacić, jeśli zostają stare. Zdanie jest zamknięte warunkiem.",
           "grammar_point": "slownictwo"
@@ -862,8 +862,8 @@
           "id": "el2-1",
           "answer": "c) z",
           "options": [
-            "a) o",
             "b) na",
+            "a) o",
             "c) z"
           ],
           "explanation": "Stała fraza: „zwracam się z pytaniem”. Bez „z” zdanie jest niepoprawne.",
@@ -873,8 +873,8 @@
           "id": "el2-2",
           "answer": "a) w ciągu",
           "options": [
-            "a) w ciągu",
             "b) podczas",
+            "a) w ciągu",
             "c) przez"
           ],
           "explanation": "„W ciągu trzydziestu dni” oznacza termin ustawowy. „Podczas” i „przez” nie pasują do tej formy.",
@@ -884,9 +884,9 @@
           "id": "el2-3",
           "answer": "c) umówić",
           "options": [
+            "c) umówić",
             "a) zrobić",
-            "b) wziąć",
-            "c) umówić"
+            "b) wziąć"
           ],
           "explanation": "Wizytę się „umawia”. Czasowniki „zrobić” i „wziąć” nie tworzą poprawnej kolokacji z „wizytą”.",
           "grammar_point": "rejestr-formalny"
@@ -895,8 +895,8 @@
           "id": "el2-4",
           "answer": "a) przez",
           "options": [
-            "a) przez",
             "b) w",
+            "a) przez",
             "c) na"
           ],
           "explanation": "Wniosek składamy „przez internet”. „W internet” i „na internet” są niepoprawne.",
@@ -906,9 +906,9 @@
           "id": "el2-5",
           "answer": "b) za",
           "options": [
-            "a) o",
             "b) za",
-            "c) na"
+            "c) na",
+            "a) o"
           ],
           "explanation": "Płacimy opłatę „za” coś: „opłata za pozwolenie”. „O” i „na” nie pasują.",
           "grammar_point": "rejestr-formalny"
@@ -917,9 +917,9 @@
           "id": "el2-6",
           "answer": "c) za",
           "options": [
-            "a) o",
+            "c) za",
             "b) na",
-            "c) za"
+            "a) o"
           ],
           "explanation": "Jesteśmy wdzięczni „za” coś. „Wdzięczny o odpowiedź” i „na odpowiedź” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -939,9 +939,9 @@
           "id": "el2-8",
           "answer": "a) na",
           "options": [
-            "a) na",
+            "c) za",
             "b) o",
-            "c) za"
+            "a) na"
           ],
           "explanation": "Czekamy „na” coś: „czekam na wiadomość”. „O” i „za” nie pasują do tego czasownika.",
           "grammar_point": "rejestr-formalny"
@@ -961,9 +961,9 @@
           "id": "el2-10",
           "answer": "b) Z poważaniem",
           "options": [
+            "c) W poważaniu",
             "a) Za poważaniem",
-            "b) Z poważaniem",
-            "c) W poważaniu"
+            "b) Z poważaniem"
           ],
           "explanation": "List oficjalny kończymy „Z poważaniem”. Pozostałe warianty są błędne.",
           "grammar_point": "rejestr-formalny"

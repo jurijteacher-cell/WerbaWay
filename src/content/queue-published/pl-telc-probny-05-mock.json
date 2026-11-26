@@ -33,8 +33,8 @@
      "start_n": 1,
      "instruction": "Usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz.",
      "audio": {
-       "src": "/audio/pl-telc-probny-05/telc-sluchanie-1.mp3",
-       "max_plays": 1
+      "src": "/audio/pl-telc-probny-05/telc-sluchanie-1.mp3",
+      "max_plays": 1
      },
      "transcript": "Lektor: Rozumienie ze słuchu, część pierwsza. Za chwilę usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz. Najpierw przykład.\nPani Nowicka: Dzień dobry, mówi Ewa Nowicka z przychodni „Zdrowie” przy ulicy Polnej. Przypominam, że jutro o dziewiątej trzydzieści ma pani wizytę u doktora Kamińskiego. Proszę przyjść dziesięć minut wcześniej i zabrać wyniki badań krwi. Jeśli nie może pani przyjść, proszę do nas zadzwonić. Do widzenia.\n\nLektor: Numer jeden.\nPan Wójcik: Dzień dobry, Wójcik z administracji osiedla „Zielone Tarasy”. W poniedziałek od ósmej rano będziemy malować klatkę schodową w pana budynku. Prace potrwają trzy dni. W tym czasie prosimy nie zostawiać na korytarzu butów, wózków ani rowerów, bo malarze muszą mieć wolne przejście. Winda będzie działać normalnie. Dziękuję.\n\nLektor: Numer dwa.\nRecepcjonistka: Dzień dobry, tu rejestracja gabinetu stomatologicznego „Uśmiech”. Niestety doktor Lis jest chora i w czwartek nie przyjmuje. Możemy zaproponować wizytę w piątek o szesnastej albo w przyszły wtorek rano. Proszę oddzwonić i wybrać termin. Jeśli bardzo boli pana ząb, w czwartek do dwunastej przyjmuje doktor Malec, ale tylko w nagłych przypadkach.\n\nLektor: Numer trzy.\nKuba: Hej Marta, tu Kuba. Mam dwa bilety na koncert w sobotę, ale Ania nie może iść, bo ma dyżur w szpitalu. Chcesz pójść ze mną? Koncert zaczyna się o dwudziestej, ale chcę być wcześniej, bo nie ma miejsc siedzących. Za bilet nic nie płacisz — wygrałem je w konkursie w radiu. Daj znać do jutra, bo inaczej oddam bilet bratu.\n\nLektor: Numer cztery.\nPani Olga: Dzień dobry, mówi Olga z klubu fitness „Forma”. Pani karnet kończy się w przyszłą niedzielę. Jeśli przedłuży go pani do piątku, dostanie pani dziesięć procent zniżki na następny miesiąc. I jeszcze jedna informacja: od grudnia zajęcia z jogi przenosimy z sali numer dwa do sali numer pięć, na pierwszym piętrze. Zapraszamy!\n\nLektor: Koniec pierwszej części Rozumienia ze słuchu.",
      "example": {
@@ -51,11 +51,11 @@
        "id": "sl1-1",
        "stem": "Pan Wójcik prosi mieszkańców, żeby",
        "options": [
-        "przez trzy dni nie korzystali z windy.",
         "zabrali swoje rzeczy z korytarza.",
-        "sami pomalowali drzwi do mieszkań."
+        "sami pomalowali drzwi do mieszkań.",
+        "przez trzy dni nie korzystali z windy."
        ],
-       "answer": "b",
+       "answer": "a",
        "explain": "Pan Wójcik mówi: „prosimy nie zostawiać na korytarzu butów, wózków ani rowerów”, bo malarze potrzebują przejścia. Winda „będzie działać normalnie”, więc a) jest błędne."
       },
       {
@@ -73,22 +73,22 @@
        "id": "sl1-3",
        "stem": "Kuba proponuje Marcie, żeby",
        "options": [
-        "poszła z nim na koncert za darmo.",
         "kupiła bilet od Ani.",
+        "poszła z nim na koncert za darmo.",
         "wzięła udział w konkursie w radiu."
        ],
-       "answer": "a",
+       "answer": "b",
        "explain": "Kuba pyta: „Chcesz pójść ze mną?” i dodaje: „Za bilet nic nie płacisz”. To on wygrał bilety w konkursie, Marta nie musi brać w nim udziału."
       },
       {
        "id": "sl1-4",
        "stem": "Klientka dostanie zniżkę, jeśli",
        "options": [
+        "zapisze się na zajęcia na pierwszym piętrze.",
         "przyjdzie na jogę w niedzielę.",
-        "przedłuży karnet do piątku.",
-        "zapisze się na zajęcia na pierwszym piętrze."
+        "przedłuży karnet do piątku."
        ],
-       "answer": "b",
+       "answer": "c",
        "explain": "Olga mówi: „Jeśli przedłuży go pani do piątku, dostanie pani dziesięć procent zniżki”. Informacja o jodze i sali na pierwszym piętrze nie dotyczy zniżki."
       }
      ]
@@ -105,8 +105,8 @@
      ],
      "instruction": "Usłyszysz pięć dialogów. Do każdego dialogu są dwa zadania: najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe, potem wybierz a, b lub c. Każdy dialog usłyszysz jeden raz.",
      "audio": {
-       "src": "/audio/pl-telc-probny-05/telc-sluchanie-2.mp3",
-       "max_plays": 1
+      "src": "/audio/pl-telc-probny-05/telc-sluchanie-2.mp3",
+      "max_plays": 1
      },
      "transcript": "Lektor: Rozumienie ze słuchu, część druga. Za chwilę usłyszysz pięć dialogów. Na temat każdego dialogu napisano po dwa zdania. Najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe. Następnie zdecyduj, które zdanie jest najbardziej trafne: a, b czy c. Każdy dialog usłyszysz jeden raz.\n\nLektor: Numer pięć i sześć.\nKlient: Dzień dobry, poproszę coś na kaszel. Kaszlę od trzech dni, najbardziej w nocy.\nFarmaceutka: Kaszel jest suchy czy mokry?\nKlient: Suchy. I trochę boli mnie gardło.\nFarmaceutka: Polecam ten syrop. Dorośli biorą jedną łyżkę trzy razy dziennie, po jedzeniu. Do tego tabletki do ssania na gardło.\nKlient: Czy syrop mogę brać razem z lekami na ciśnienie?\nFarmaceutka: Tak, ten jest bezpieczny. Ale jeśli kaszel nie przejdzie za tydzień, musi pan iść do lekarza.\nKlient: Dobrze. Ile płacę?\nFarmaceutka: Syrop dwadzieścia cztery złote, tabletki szesnaście. Razem czterdzieści.\n\nLektor: Numer siedem i osiem.\nKlientka: Dzień dobry, chciałabym założyć konto. Niedawno przyjechałam do Polski i od miesiąca tu pracuję.\nDoradca: Oczywiście. Potrzebuję paszportu i numeru PESEL. Ma pani PESEL?\nKlientka: Jeszcze nie. Wniosek złożyłam w urzędzie w zeszłym tygodniu.\nDoradca: Konto możemy otworzyć z samym paszportem, ale bez PESEL-u nie wydamy pani karty kredytowej. Kartę debetową dostanie pani od razu.\nKlientka: Debetowa wystarczy. Czy konto jest płatne?\nDoradca: Jest bezpłatne, jeśli co miesiąc wpływa na nie co najmniej tysiąc złotych. W innym wypadku opłata wynosi dziesięć złotych miesięcznie.\nKlientka: Na konto będzie wpływać pensja, więc wszystko w porządku.\n\nLektor: Numer dziewięć i dziesięć.\nFryzjer: Salon „Nożyczki”, dzień dobry.\nKlientka: Dzień dobry, chciałabym się zapisać na strzyżenie i farbowanie. Najlepiej w sobotę.\nFryzjer: W sobotę wszystko jest już zajęte. Mogę zaproponować piątek o czternastej albo środę o dziesiątej.\nKlientka: W piątek pracuję do szesnastej… Środa jest dobra, mam wtedy wolne.\nFryzjer: Świetnie. Strzyżenie z farbowaniem trwa około dwóch godzin. Proszę nie myć włosów w dniu wizyty.\nKlientka: Dobrze. A ile to kosztuje?\nFryzjer: Od dwustu pięćdziesięciu złotych, to zależy od długości włosów.\n\nLektor: Numer jedenaście i dwanaście.\nAsia: Paweł, jedziemy w sobotę w góry, tak jak planowaliśmy?\nPaweł: Słyszałaś prognozę? W sobotę ma padać cały dzień, a wyżej nawet śnieg.\nAsia: Szkoda… To może przełożymy na niedzielę?\nPaweł: W niedzielę ma być słońce, ale ja mam wtedy urodziny babci. Nie mogę odmówić.\nAsia: A za tydzień? Wtedy jest długi weekend.\nPaweł: Dobry pomysł. Tylko trzeba zmienić rezerwację w schronisku. Zadzwonisz?\nAsia: Zadzwonię jeszcze dziś. A ty kup bilety na pociąg, dobrze?\nPaweł: Jasne, kupię wieczorem.\n\nLektor: Numer trzynaście i czternaście.\nPracownik: Pani Ewo, mam prośbę. Czy w przyszłym tygodniu mogę zamienić się zmianą z Kamilem? On chce pracować rano, a ja wieczorem.\nKierowniczka: W którym dniu?\nPracownik: W środę. Rano mam wizytę w urzędzie, składam wniosek o kartę pobytu.\nKierowniczka: Rozumiem. Nie mam nic przeciwko, ale Kamil musi to potwierdzić mailem. Wtedy zmienię grafik.\nPracownik: Kamil już się zgodził, napisze jeszcze dziś.\nKierowniczka: Dobrze. Pamięta pan, że w piątek jest szkolenie z bezpieczeństwa? Obowiązkowe dla wszystkich.\nPracownik: Pamiętam, będę.\n\nLektor: Koniec drugiej części Rozumienia ze słuchu.",
      "items": [
@@ -122,11 +122,11 @@
        "id": "sl2-2",
        "stem": "Syrop trzeba brać",
        "options": [
-        "trzy razy dziennie po jedzeniu.",
         "raz dziennie przed snem.",
-        "tylko w nocy, kiedy pojawia się kaszel."
+        "tylko w nocy, kiedy pojawia się kaszel.",
+        "trzy razy dziennie po jedzeniu."
        ],
-       "answer": "a",
+       "answer": "c",
        "explain": "Farmaceutka mówi: „Dorośli biorą jedną łyżkę trzy razy dziennie, po jedzeniu”. Kaszel jest najsilniejszy w nocy, ale syrop nie jest tylko na noc."
       },
       {
@@ -141,11 +141,11 @@
        "id": "sl2-4",
        "stem": "Konto będzie bezpłatne, jeśli",
        "options": [
-        "klientka zamówi kartę kredytową.",
+        "co miesiąc wpłynie na nie co najmniej tysiąc złotych.",
         "klientka przyniesie numer PESEL.",
-        "co miesiąc wpłynie na nie co najmniej tysiąc złotych."
+        "klientka zamówi kartę kredytową."
        ],
-       "answer": "c",
+       "answer": "a",
        "explain": "Doradca mówi, że konto „jest bezpłatne, jeśli co miesiąc wpływa na nie co najmniej tysiąc złotych”. Karta kredytowa i PESEL nie mają wpływu na opłatę."
       },
       {
@@ -160,9 +160,9 @@
        "id": "sl2-6",
        "stem": "Przed wizytą klientka",
        "options": [
-        "musi wpłacić zaliczkę.",
+        "powinna kupić farbę.",
         "nie powinna myć włosów.",
-        "powinna kupić farbę."
+        "musi wpłacić zaliczkę."
        ],
        "answer": "b",
        "explain": "Fryzjer prosi: „Proszę nie myć włosów w dniu wizyty”. O zaliczce ani o kupowaniu farby nie ma mowy."
@@ -179,11 +179,11 @@
        "id": "sl2-8",
        "stem": "Asia",
        "options": [
-        "zadzwoni do schroniska.",
         "kupi bilety na pociąg.",
-        "pojedzie w góry sama w niedzielę."
+        "pojedzie w góry sama w niedzielę.",
+        "zadzwoni do schroniska."
        ],
-       "answer": "a",
+       "answer": "c",
        "explain": "Paweł pyta, kto zmieni rezerwację w schronisku: „Zadzwonisz?”, a Asia odpowiada: „Zadzwonię jeszcze dziś”. Bilety na pociąg kupi Paweł."
       },
       {
@@ -198,11 +198,11 @@
        "id": "sl2-10",
        "stem": "Kierowniczka zmieni grafik, kiedy",
        "options": [
-        "pracownik przyniesie dokument z urzędu.",
+        "Kamil potwierdzi zamianę mailem.",
         "skończy się szkolenie z bezpieczeństwa.",
-        "Kamil potwierdzi zamianę mailem."
+        "pracownik przyniesie dokument z urzędu."
        ],
-       "answer": "c",
+       "answer": "a",
        "explain": "Kierowniczka mówi: „Kamil musi to potwierdzić mailem. Wtedy zmienię grafik”. Szkolenie w piątek to osobna informacja."
       }
      ]
@@ -215,9 +215,9 @@
      "start_n": 15,
      "instruction": "Usłyszysz wywiad radiowy. Wybierz właściwą odpowiedź: a, b lub c. Na początku masz minutę na przeczytanie zadań. Wywiad usłyszysz jeden raz.",
      "audio": {
-       "src": "/audio/pl-telc-probny-05/telc-sluchanie-3.mp3",
-       "max_plays": 1,
-       "note": "Nagranie usłyszysz jeden raz. Pierwsza minuta to cisza na przeczytanie zadań."
+      "src": "/audio/pl-telc-probny-05/telc-sluchanie-3.mp3",
+      "max_plays": 1,
+      "note": "Nagranie usłyszysz jeden raz. Pierwsza minuta to cisza na przeczytanie zadań."
      },
      "transcript": "Lektor: Rozumienie ze słuchu, część trzecia. Za chwilę usłyszysz wywiad. Najpierw przeczytaj treść punktów od piętnastego do dwudziestego. Masz na to minutę.\n\nLektor: Teraz posłuchaj wywiadu. Usłyszysz go jeden raz.\nPrezenterka: Dzień dobry, w audycji „Nigdy nie jest za późno” gościmy dziś panią Barbarę Sowę, emerytowaną nauczycielkę geografii, która w wieku sześćdziesięciu jeden lat przebiegła swój pierwszy maraton. Dzień dobry.\nBarbara: Dzień dobry, bardzo mi miło.\nPrezenterka: Jak to się zaczęło? Biegała pani w młodości?\nBarbara: Wcale nie! W szkole nie znosiłam wuefu. Zaczęłam biegać pięć lat temu, kiedy przeszłam na emeryturę. Lekarz powiedział mi, że mam za wysokie ciśnienie i muszę się więcej ruszać. Najpierw chodziłam z kijkami, potem zaczęłam powoli truchtać.\nPrezenterka: A skąd pomysł na maraton?\nBarbara: Mój wnuk biegł maraton w Poznaniu. Stałam przy trasie i patrzyłam na tych ludzi — byli zmęczeni, ale szczęśliwi. Pomyślałam: ja też chcę to poczuć. Wnuk najpierw się śmiał, ale potem pomógł mi przygotować plan treningów.\nPrezenterka: Jak wyglądały przygotowania?\nBarbara: Trenowałam cztery razy w tygodniu, przez prawie rok. Najtrudniejsze były zimowe poranki — ciemno, zimno, ślisko. Ale biegałam z grupą z osiedla, więc nie było wymówek. Raz w tygodniu chodziłam też na basen, żeby kolana odpoczęły.\nPrezenterka: A sam bieg?\nBarbara: Do trzydziestego kilometra było dobrze. Potem zaczęły mnie boleć nogi i myślałam, że zejdę z trasy. Uratowała mnie nieznajoma kobieta, która biegła obok. Powiedziała: „Pani da radę, biegniemy razem do mety”. I dobiegłyśmy — po pięciu godzinach i dwunastu minutach.\nPrezenterka: Co zmieniło się w pani życiu?\nBarbara: Ciśnienie mam w normie, lepiej śpię, a do tego mam mnóstwo nowych znajomych. Z tą kobietą z trasy przyjaźnimy się do dziś.\nPrezenterka: Co poradziłaby pani słuchaczom, którzy chcą zacząć?\nBarbara: Żeby nie zaczynali od maratonu! Najpierw spacer, potem pięć kilometrów. I najważniejsze: najpierw badania u lekarza, a dopiero potem plan treningów.\nPrezenterka: Dziękuję za rozmowę.\nBarbara: Dziękuję.\n\nLektor: Koniec trzeciej części Rozumienia ze słuchu.",
      "items": [
@@ -226,29 +226,29 @@
        "stem": "Pani Barbara zaczęła biegać, ponieważ",
        "options": [
         "zawsze lubiła sport.",
-        "tak poradził jej lekarz.",
-        "chciała pobiec razem z wnukiem."
+        "chciała pobiec razem z wnukiem.",
+        "tak poradził jej lekarz."
        ],
-       "answer": "b",
+       "answer": "c",
        "explain": "Pani Barbara mówi: „Lekarz powiedział mi, że mam za wysokie ciśnienie i muszę się więcej ruszać”. W szkole nie znosiła wuefu, więc a) jest błędne."
       },
       {
        "id": "sl3-2",
        "stem": "Pomysł na maraton pojawił się, kiedy pani Barbara",
        "options": [
+        "dostała plan treningów od wnuka.",
         "oglądała bieg wnuka w Poznaniu.",
-        "przeczytała artykuł w gazecie.",
-        "dostała plan treningów od wnuka."
+        "przeczytała artykuł w gazecie."
        ],
-       "answer": "a",
+       "answer": "b",
        "explain": "Pomysł pojawił się, kiedy stała przy trasie maratonu wnuka w Poznaniu i patrzyła na biegaczy. Plan treningów wnuk przygotował dopiero później."
       },
       {
        "id": "sl3-3",
        "stem": "Podczas przygotowań pani Barbara",
        "options": [
-        "trenowała sama, wcześnie rano.",
         "biegała codziennie przez dwa lata.",
+        "trenowała sama, wcześnie rano.",
         "biegała z grupą i chodziła na basen."
        ],
        "answer": "c",
@@ -258,9 +258,9 @@
        "id": "sl3-4",
        "stem": "Po trzydziestym kilometrze",
        "options": [
-        "pani Barbara zeszła z trasy.",
+        "zadzwoniła do wnuka po pomoc.",
         "pomogła jej nieznajoma kobieta.",
-        "zadzwoniła do wnuka po pomoc."
+        "pani Barbara zeszła z trasy."
        ],
        "answer": "b",
        "explain": "Po trzydziestym kilometrze chciała zejść z trasy, ale „uratowała mnie nieznajoma kobieta”, która biegła obok. Razem dobiegły do mety."
@@ -269,22 +269,22 @@
        "id": "sl3-5",
        "stem": "Dzisiaj pani Barbara",
        "options": [
-        "ma lepsze zdrowie i nowych znajomych.",
+        "nie biega, bo bolą ją kolana.",
         "trenuje młodych biegaczy.",
-        "nie biega, bo bolą ją kolana."
+        "ma lepsze zdrowie i nowych znajomych."
        ],
-       "answer": "a",
+       "answer": "c",
        "explain": "Mówi: „Ciśnienie mam w normie, lepiej śpię, a do tego mam mnóstwo nowych znajomych”. Nie ma mowy o trenowaniu młodych ani o bólu kolan."
       },
       {
        "id": "sl3-6",
        "stem": "Początkującym pani Barbara radzi, żeby",
        "options": [
-        "od razu zapisali się na maraton.",
         "najpierw zrobili badania.",
-        "biegali tylko w grupie."
+        "biegali tylko w grupie.",
+        "od razu zapisali się na maraton."
        ],
-       "answer": "b",
+       "answer": "a",
        "explain": "Radzi: „najważniejsze: najpierw badania u lekarza, a dopiero potem plan treningów”. Mówi też wprost, żeby nie zaczynać od maratonu."
       }
      ]
@@ -297,9 +297,9 @@
      "start_n": 21,
      "instruction": "Usłyszysz audycję radiową „Pies w mieście — dobry pomysł?”. Które zdanie (a–f) pasuje do opinii 21–23? Na początku masz pół minuty na przeczytanie zdań. Audycję usłyszysz jeden raz.",
      "audio": {
-       "src": "/audio/pl-telc-probny-05/telc-sluchanie-4.mp3",
-       "max_plays": 1,
-       "note": "Nagranie usłyszysz jeden raz. Na początku jest pół minuty ciszy na przeczytanie zdań."
+      "src": "/audio/pl-telc-probny-05/telc-sluchanie-4.mp3",
+      "max_plays": 1,
+      "note": "Nagranie usłyszysz jeden raz. Na początku jest pół minuty ciszy na przeczytanie zdań."
      },
      "transcript": "Lektor: Rozumienie ze słuchu, część czwarta. Usłyszysz audycję, w której ludzie wyrażają opinie na dany temat. Które zdanie, od a do f, najlepiej pasuje do opinii dwadzieścia jeden, dwadzieścia dwa i dwadzieścia trzy? Masz pół minuty na przeczytanie zdań.\n\nLektor: Teraz posłuchaj audycji.\nPrezenter: Dzień dobry, w programie „Głos słuchaczy” pytamy dziś: czy pies w mieście to dobry pomysł? Czekamy na państwa telefony.\n\nLektor: Przykład.\nSłuchaczka: Mam psa od dziesięciu lat i dzięki niemu codziennie chodzę na długie spacery, niezależnie od pogody. Bez niego siedziałabym cały dzień przed telewizorem. Pies to najlepszy trener.\n\nLektor: Numer dwadzieścia jeden.\nSłuchacz: Mieszkam w bloku na ósmym piętrze. Sąsiedzi mają dwa duże psy, które szczekają, kiedy właściciele są w pracy. Rozumiem, że ludzie kochają zwierzęta, ale w małym mieszkaniu duży pies się męczy, a sąsiedzi razem z nim.\n\nLektor: Numer dwadzieścia dwa.\nSłuchaczka: Pracuję w schronisku. Co roku po świętach przychodzą do nas szczeniaki, które ktoś dostał w prezencie. Proszę, zanim kupicie psa, pomyślcie, czy macie dla niego czas na następne piętnaście lat. To nie jest zabawka na jeden miesiąc.\n\nLektor: Numer dwadzieścia trzy.\nSłuchacz: Mnie najbardziej denerwuje, że niektórzy nie sprzątają po swoich psach. W parku przy moim domu dzieci nie mogą grać w piłkę na trawie. Straż miejska powinna częściej dawać mandaty, wtedy ludzie by się nauczyli.\n\nPrezenter: Dziękujemy za wszystkie telefony. Do usłyszenia za tydzień!\n\nLektor: Koniec Rozumienia ze słuchu. Dziękujemy za uwagę.",
      "left_label": "Opinie",
@@ -524,10 +524,10 @@
        "stem": "Na lekcje mogą przyjść",
        "options": [
         "dzieci razem z rodzicami.",
-        "dorośli, którzy nie umieją pływać.",
-        "tylko osoby, które pływają w głębokiej wodzie."
+        "tylko osoby, które pływają w głębokiej wodzie.",
+        "dorośli, którzy nie umieją pływać."
        ],
-       "answer": "b",
+       "answer": "c",
        "passage": "Lekcje pływania dla dorosłych\n\nPływalnia miejska „Delfin” od października prowadzi bezpłatne lekcje pływania dla dorosłych, którzy nigdy nie nauczyli się pływać. Zajęcia odbywają się w małych grupach, najwyżej po sześć osób, dwa razy w tygodniu przez dwa miesiące. Instruktorzy mówią, że największym problemem nie jest technika, ale strach przed wodą. Dlatego pierwsze lekcje odbywają się w płytkim basenie, gdzie każdy może stać. Chętnych było tak wielu, że od stycznia pływalnia otworzy dwie nowe grupy. Zapisy przyjmuje kasa pływalni.",
        "explain": "Tekst mówi o lekcjach „dla dorosłych, którzy nigdy nie nauczyli się pływać”. Dzieci nie są wymienione, a pierwsze lekcje są w płytkim basenie."
       },
@@ -536,8 +536,8 @@
        "stem": "Według instruktorów dla uczestników najtrudniejsze jest",
        "options": [
         "pokonanie strachu przed wodą.",
-        "nauczenie się techniki.",
-        "regularne przychodzenie na zajęcia."
+        "regularne przychodzenie na zajęcia.",
+        "nauczenie się techniki."
        ],
        "answer": "a",
        "explain": "Instruktorzy mówią, że największym problemem „nie jest technika, ale strach przed wodą”. Dlatego b) jest błędne."
@@ -546,11 +546,11 @@
        "id": "cz3-3",
        "stem": "Seniorzy płacą",
        "options": [
-        "tylko za kupione produkty.",
+        "stałą opłatę co miesiąc.",
         "za produkty i za dojazd studenta.",
-        "stałą opłatę co miesiąc."
+        "tylko za kupione produkty."
        ],
-       "answer": "a",
+       "answer": "c",
        "passage": "Zakupy dla sąsiada\n\nStudenci z wolontariatu „Ręka w rękę” robią zakupy dla starszych osób, które nie mogą same wyjść z domu. Senior dzwoni pod numer akcji i dyktuje listę, a student przynosi zakupy jeszcze tego samego dnia. Za produkty senior płaci przy odbiorze, za pomoc — nic. Wolontariusze mówią, że zakupy to często tylko pretekst. — Wiele osób chce po prostu porozmawiać. Czasem zostaję na herbacie godzinę — opowiada Kinga, studentka farmacji. Akcja działa od dwóch lat i ma ponad stu wolontariuszy.",
        "explain": "„Za produkty senior płaci przy odbiorze, za pomoc – nic”. Nie ma opłaty za dojazd ani stałej opłaty co miesiąc."
       },
@@ -558,22 +558,22 @@
        "id": "cz3-4",
        "stem": "Według wolontariuszy wielu seniorom chodzi przede wszystkim o",
        "options": [
-        "tańsze zakupy.",
         "rozmowę z drugim człowiekiem.",
+        "tańsze zakupy.",
         "pomoc w sprzątaniu mieszkania."
        ],
-       "answer": "b",
+       "answer": "a",
        "explain": "Wolontariusze mówią, że zakupy to często pretekst: „Wiele osób chce po prostu porozmawiać”."
       },
       {
        "id": "cz3-5",
        "stem": "Na ostatnich zajęciach",
        "options": [
-        "ojcowie gotują obiad dla dzieci.",
         "dzieci gotują razem z ojcami.",
-        "mamy uczą ojców piec ciasta."
+        "mamy uczą ojców piec ciasta.",
+        "ojcowie gotują obiad dla dzieci."
        ],
-       "answer": "b",
+       "answer": "a",
        "passage": "Tata w kuchni\n\nSzkoła gotowania „Smaki” od roku organizuje kurs „Tata gotuje”. Przychodzą na niego ojcowie, którzy chcą przygotowywać dla rodziny zdrowe posiłki. Przez sześć sobót uczą się gotować zupy, dania z warzyw i proste ciasta. W ostatnim spotkaniu biorą udział dzieci — razem z tatami przygotowują obiad dla mam. Organizatorzy myśleli, że kurs będzie popularny wśród młodych ojców, ale najwięcej uczestników ma ponad czterdzieści lat. Następna edycja rusza w lutym, a cały kurs kosztuje 480 zł.",
        "explain": "Na ostatnim spotkaniu dzieci „razem z tatami przygotowują obiad dla mam”. Obiad nie jest dla dzieci, tylko dla mam."
       },
@@ -581,11 +581,11 @@
        "id": "cz3-6",
        "stem": "Organizatorów zaskoczyło, że",
        "options": [
-        "kurs jest dla wielu osób za drogi.",
         "na zajęcia przyszło mało osób.",
-        "uczestnicy są starsi, niż myśleli."
+        "uczestnicy są starsi, niż myśleli.",
+        "kurs jest dla wielu osób za drogi."
        ],
-       "answer": "c",
+       "answer": "b",
        "explain": "Organizatorzy myśleli, że kurs będzie popularny wśród młodych ojców, „ale najwięcej uczestników ma ponad czterdzieści lat”. Cena 480 zł jest podana, ale nikt nie mówi, że to za drogo."
       }
      ]
@@ -646,43 +646,43 @@
      "bank": [
       {
        "key": "a",
-       "text": "na ile osób"
-      },
-      {
-       "key": "b",
-       "text": "niestety"
-      },
-      {
-       "key": "c",
-       "text": "w czym mogę pomóc"
-      },
-      {
-       "key": "d",
        "text": "ile kosztuje"
       },
       {
-       "key": "e",
-       "text": "czy jest możliwość"
-      },
-      {
-       "key": "f",
+       "key": "b",
        "text": "interesuje mnie"
       },
       {
-       "key": "g",
-       "text": "na pewno"
-      },
-      {
-       "key": "h",
+       "key": "c",
        "text": "do zobaczenia"
       },
       {
-       "key": "i",
+       "key": "d",
+       "text": "w takim razie"
+      },
+      {
+       "key": "e",
+       "text": "na ile osób"
+      },
+      {
+       "key": "f",
        "text": "oczywiście"
       },
       {
+       "key": "g",
+       "text": "niestety"
+      },
+      {
+       "key": "h",
+       "text": "czy jest możliwość"
+      },
+      {
+       "key": "i",
+       "text": "w czym mogę pomóc"
+      },
+      {
        "key": "j",
-       "text": "w takim razie"
+       "text": "na pewno"
       }
      ],
      "text": "Pracownica: Biuro podróży „Horyzont”, dzień dobry, {{42}}?\nKlient: Dzień dobry, {{43}} wyjazd do Zakopanego na ferie zimowe.\nPracownica: Świetnie. {{44}}?\nKlient: Dla czterech: dwoje dorosłych i dwoje dzieci. Od dwudziestego ósmego stycznia, na tydzień.\nPracownica: {{45}} w tym terminie hotel „Pod Giewontem” jest już pełny. Mamy jeszcze miejsca w pensjonacie „Limba”, trochę dalej od centrum.\nKlient: A jak daleko jest stamtąd do wyciągu?\nPracownica: Około dwóch kilometrów, ale pensjonat ma własny bus, który rano zawozi gości na stok.\nKlient: {{46}} wezmę pensjonat. {{47}} zapłacenia w dwóch ratach?\nPracownica: {{48}}. Pierwszą ratę płaci pan przy rezerwacji, drugą — dwa tygodnie przed wyjazdem.\nKlient: Dziękuję. Przyjdę do biura jutro po pracy, żeby podpisać umowę.\nPracownica: Doskonale. {{49}} będzie pan zadowolony z tego pensjonatu. Czekamy do osiemnastej.",
@@ -691,56 +691,56 @@
        "id": "el1-42",
        "n": 42,
        "kind": "bank",
-       "answer": "c",
+       "answer": "i",
        "explain": "Standardowe powitanie pracownika firmy przez telefon: „W czym mogę pomóc?”. Pasuje do znaku zapytania na końcu zdania."
       },
       {
        "id": "el1-43",
        "n": 43,
        "kind": "bank",
-       "answer": "f",
+       "answer": "b",
        "explain": "Klient mówi, czego szuka: „interesuje mnie wyjazd” (wyjazd to podmiot w mianowniku, „mnie” – kogo interesuje). „Ile kosztuje” byłoby pytaniem, a tu jest zdanie oznajmujące."
       },
       {
        "id": "el1-44",
        "n": 44,
        "kind": "bank",
-       "answer": "a",
+       "answer": "e",
        "explain": "Klient odpowiada: „Dla czterech: dwoje dorosłych i dwoje dzieci”, więc pytanie brzmiało: „Na ile osób?”."
       },
       {
        "id": "el1-45",
        "n": 45,
        "kind": "bank",
-       "answer": "b",
+       "answer": "g",
        "explain": "Pracownica przekazuje złą wiadomość – hotel jest pełny. Do złych informacji używamy słowa „niestety”."
       },
       {
        "id": "el1-46",
        "n": 46,
        "kind": "bank",
-       "answer": "j",
+       "answer": "d",
        "explain": "„W takim razie” znaczy „skoro tak” – klient podejmuje decyzję po informacji o busie na stok."
       },
       {
        "id": "el1-47",
        "n": 47,
        "kind": "bank",
-       "answer": "e",
+       "answer": "h",
        "explain": "Grzeczne pytanie o pozwolenie: „Czy jest możliwość + dopełniacz” (zapłacenia). Po luce jest forma „zapłacenia”, więc pasuje tylko ten zwrot."
       },
       {
        "id": "el1-48",
        "n": 48,
        "kind": "bank",
-       "answer": "i",
+       "answer": "f",
        "explain": "Pracownica zgadza się i wyjaśnia zasady płatności – „Oczywiście” to uprzejme potwierdzenie „tak”."
       },
       {
        "id": "el1-49",
        "n": 49,
        "kind": "bank",
-       "answer": "g",
+       "answer": "j",
        "explain": "„Na pewno będzie pan zadowolony” wyraża pewność. „Do zobaczenia” nie łączy się z dalszą częścią zdania."
       }
      ]

@@ -74,9 +74,9 @@
           "text": "Rezerwuję na weekend dwa ___.",
           "answer": "pokoje",
           "options": [
+            "pokój",
             "pokoje",
-            "pokoi",
-            "pokój"
+            "pokoi"
           ],
           "grammar_point": "liczebnik-rzeczownik",
           "explanation": "2, 3, 4 + mianownik liczby mnogiej: dwa pokoje."
@@ -86,9 +86,9 @@
           "text": "W tym hotelu jest pięćdziesiąt ___.",
           "answer": "miejsc",
           "options": [
-            "miejsc",
+            "miejscach",
             "miejsca",
-            "miejscach"
+            "miejsc"
           ],
           "grammar_point": "mnoga-przypadki",
           "explanation": "5 i więcej + dopełniacz liczby mnogiej: miejsc (bez końcówki)."
@@ -98,9 +98,9 @@
           "text": "Zostaniemy w Zakopanem trzy ___.",
           "answer": "noce",
           "options": [
-            "noce",
             "nocy",
-            "nocami"
+            "nocami",
+            "noce"
           ],
           "grammar_point": "liczebnik-rzeczownik",
           "explanation": "3 + mianownik liczby mnogiej: trzy noce. Ale: pięć nocy."
@@ -123,8 +123,8 @@
           "answer": "biletów",
           "options": [
             "biletów",
-            "bilety",
-            "biletach"
+            "biletach",
+            "bilety"
           ],
           "grammar_point": "mnoga-przypadki",
           "explanation": "5 + dopełniacz. Rodzaj męski: -ów — biletów."
@@ -134,9 +134,9 @@
           "text": "Ten pokój kosztuje sto dwadzieścia ___.",
           "answer": "złotych",
           "options": [
-            "złotych",
+            "złoty",
             "złote",
-            "złoty"
+            "złotych"
           ],
           "grammar_point": "liczebnik-rzeczownik",
           "explanation": "120 kończy się na 0 → złotych. Ale: 122 złote."
@@ -146,8 +146,8 @@
           "text": "W sobotę na stoku było dużo ___.",
           "answer": "ludzi",
           "options": [
-            "ludzi",
             "ludzie",
+            "ludzi",
             "ludźmi"
           ],
           "grammar_point": "mnoga-przypadki",
@@ -349,15 +349,15 @@
       "text": "Anna: Pensjonat „Pod Jodłami”, dzień dobry.\n\nOlena: Dzień dobry. {el1-1} Chciałabym zarezerwować pokoje na marzec.\n\nAnna: {el1-2} Na ile osób?\n\nOlena: Na dziewięć osób, na dwie noce.\n\nAnna: Od kiedy do kiedy?\n\nOlena: Od piątku czternastego do niedzieli. {el1-3}\n\nAnna: Chwileczkę, sprawdzam… Tak, mamy wolne pokoje w tym terminie. {el1-4}\n\nOlena: Czy w pokojach są łazienki?\n\nAnna: {el1-5} Śniadanie jest w cenie.\n\nOlena: {el1-6} Czy dają Państwo zniżkę dla grup?\n\nAnna: Tak, dziesięć procent. {el1-7}\n\nOlena: {el1-8}",
       "bank": [
         "a) Dzwonię w sprawie rezerwacji.",
-        "b) Nie, śniadanie jest dodatkowo płatne.",
-        "c) Proszę potwierdzić rezerwację do środy.",
-        "d) Czy mają Państwo wtedy wolne pokoje?",
-        "e) Pokój dwuosobowy kosztuje 280 złotych.",
-        "f) Niestety wszystkie pokoje są zajęte.",
-        "g) Tak, w każdym pokoju.",
-        "h) Bardzo proszę, słucham.",
+        "b) Proszę potwierdzić rezerwację do środy.",
+        "c) Tak, w każdym pokoju.",
+        "d) Niestety wszystkie pokoje są zajęte.",
+        "e) Bardzo proszę, słucham.",
+        "f) Dziękuję za pomoc, do widzenia!",
+        "g) Pokój dwuosobowy kosztuje 280 złotych.",
+        "h) Czy mają Państwo wtedy wolne pokoje?",
         "i) To bardzo dobrze.",
-        "j) Dziękuję za pomoc, do widzenia!"
+        "j) Nie, śniadanie jest dodatkowo płatne."
       ],
       "items": [
         {
@@ -365,87 +365,87 @@
           "answer": "a) Dzwonię w sprawie rezerwacji.",
           "options": [
             "a) Dzwonię w sprawie rezerwacji.",
-            "b) Nie, śniadanie jest dodatkowo płatne.",
-            "c) Proszę potwierdzić rezerwację do środy.",
-            "d) Czy mają Państwo wtedy wolne pokoje?",
-            "e) Pokój dwuosobowy kosztuje 280 złotych.",
-            "f) Niestety wszystkie pokoje są zajęte.",
-            "g) Tak, w każdym pokoju.",
-            "h) Bardzo proszę, słucham.",
+            "b) Proszę potwierdzić rezerwację do środy.",
+            "c) Tak, w każdym pokoju.",
+            "d) Niestety wszystkie pokoje są zajęte.",
+            "e) Bardzo proszę, słucham.",
+            "f) Dziękuję za pomoc, do widzenia!",
+            "g) Pokój dwuosobowy kosztuje 280 złotych.",
+            "h) Czy mają Państwo wtedy wolne pokoje?",
             "i) To bardzo dobrze.",
-            "j) Dziękuję za pomoc, do widzenia!"
+            "j) Nie, śniadanie jest dodatkowo płatne."
           ],
           "explanation": "Olena zaczyna od celu telefonu: „Dzwonię w sprawie rezerwacji”. Dopiero potem mówi, co chce zarezerwować.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "h) Bardzo proszę, słucham.",
+          "answer": "e) Bardzo proszę, słucham.",
           "options": [
             "a) Dzwonię w sprawie rezerwacji.",
-            "b) Nie, śniadanie jest dodatkowo płatne.",
-            "c) Proszę potwierdzić rezerwację do środy.",
-            "d) Czy mają Państwo wtedy wolne pokoje?",
-            "e) Pokój dwuosobowy kosztuje 280 złotych.",
-            "f) Niestety wszystkie pokoje są zajęte.",
-            "g) Tak, w każdym pokoju.",
-            "h) Bardzo proszę, słucham.",
+            "b) Proszę potwierdzić rezerwację do środy.",
+            "c) Tak, w każdym pokoju.",
+            "d) Niestety wszystkie pokoje są zajęte.",
+            "e) Bardzo proszę, słucham.",
+            "f) Dziękuję za pomoc, do widzenia!",
+            "g) Pokój dwuosobowy kosztuje 280 złotych.",
+            "h) Czy mają Państwo wtedy wolne pokoje?",
             "i) To bardzo dobrze.",
-            "j) Dziękuję za pomoc, do widzenia!"
+            "j) Nie, śniadanie jest dodatkowo płatne."
           ],
           "explanation": "Pracownica zaprasza do rozmowy: „Bardzo proszę, słucham”. Potem pyta o liczbę osób.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "d) Czy mają Państwo wtedy wolne pokoje?",
+          "answer": "h) Czy mają Państwo wtedy wolne pokoje?",
           "options": [
             "a) Dzwonię w sprawie rezerwacji.",
-            "b) Nie, śniadanie jest dodatkowo płatne.",
-            "c) Proszę potwierdzić rezerwację do środy.",
-            "d) Czy mają Państwo wtedy wolne pokoje?",
-            "e) Pokój dwuosobowy kosztuje 280 złotych.",
-            "f) Niestety wszystkie pokoje są zajęte.",
-            "g) Tak, w każdym pokoju.",
-            "h) Bardzo proszę, słucham.",
+            "b) Proszę potwierdzić rezerwację do środy.",
+            "c) Tak, w każdym pokoju.",
+            "d) Niestety wszystkie pokoje są zajęte.",
+            "e) Bardzo proszę, słucham.",
+            "f) Dziękuję za pomoc, do widzenia!",
+            "g) Pokój dwuosobowy kosztuje 280 złotych.",
+            "h) Czy mają Państwo wtedy wolne pokoje?",
             "i) To bardzo dobrze.",
-            "j) Dziękuję za pomoc, do widzenia!"
+            "j) Nie, śniadanie jest dodatkowo płatne."
           ],
           "explanation": "Olena podała termin i pyta, czy są wolne pokoje. Anna odpowiada: „Tak, mamy wolne pokoje”. „Niestety wszystkie pokoje są zajęte” przeczy tej odpowiedzi.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "e) Pokój dwuosobowy kosztuje 280 złotych.",
+          "answer": "g) Pokój dwuosobowy kosztuje 280 złotych.",
           "options": [
             "a) Dzwonię w sprawie rezerwacji.",
-            "b) Nie, śniadanie jest dodatkowo płatne.",
-            "c) Proszę potwierdzić rezerwację do środy.",
-            "d) Czy mają Państwo wtedy wolne pokoje?",
-            "e) Pokój dwuosobowy kosztuje 280 złotych.",
-            "f) Niestety wszystkie pokoje są zajęte.",
-            "g) Tak, w każdym pokoju.",
-            "h) Bardzo proszę, słucham.",
+            "b) Proszę potwierdzić rezerwację do środy.",
+            "c) Tak, w każdym pokoju.",
+            "d) Niestety wszystkie pokoje są zajęte.",
+            "e) Bardzo proszę, słucham.",
+            "f) Dziękuję za pomoc, do widzenia!",
+            "g) Pokój dwuosobowy kosztuje 280 złotych.",
+            "h) Czy mają Państwo wtedy wolne pokoje?",
             "i) To bardzo dobrze.",
-            "j) Dziękuję za pomoc, do widzenia!"
+            "j) Nie, śniadanie jest dodatkowo płatne."
           ],
           "explanation": "Anna podaje cenę, bo Olena pewnie o nią zapyta. „Niestety wszystkie pokoje są zajęte” nie pasuje do wolnych pokoi.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "g) Tak, w każdym pokoju.",
+          "answer": "c) Tak, w każdym pokoju.",
           "options": [
             "a) Dzwonię w sprawie rezerwacji.",
-            "b) Nie, śniadanie jest dodatkowo płatne.",
-            "c) Proszę potwierdzić rezerwację do środy.",
-            "d) Czy mają Państwo wtedy wolne pokoje?",
-            "e) Pokój dwuosobowy kosztuje 280 złotych.",
-            "f) Niestety wszystkie pokoje są zajęte.",
-            "g) Tak, w każdym pokoju.",
-            "h) Bardzo proszę, słucham.",
+            "b) Proszę potwierdzić rezerwację do środy.",
+            "c) Tak, w każdym pokoju.",
+            "d) Niestety wszystkie pokoje są zajęte.",
+            "e) Bardzo proszę, słucham.",
+            "f) Dziękuję za pomoc, do widzenia!",
+            "g) Pokój dwuosobowy kosztuje 280 złotych.",
+            "h) Czy mają Państwo wtedy wolne pokoje?",
             "i) To bardzo dobrze.",
-            "j) Dziękuję za pomoc, do widzenia!"
+            "j) Nie, śniadanie jest dodatkowo płatne."
           ],
           "explanation": "Olena pyta o łazienki, więc odpowiedź to „Tak, w każdym pokoju”. „Nie, śniadanie jest dodatkowo płatne” przeczy zdaniu o śniadaniu w cenie.",
           "grammar_point": "slownictwo"
@@ -455,51 +455,51 @@
           "answer": "i) To bardzo dobrze.",
           "options": [
             "a) Dzwonię w sprawie rezerwacji.",
-            "b) Nie, śniadanie jest dodatkowo płatne.",
-            "c) Proszę potwierdzić rezerwację do środy.",
-            "d) Czy mają Państwo wtedy wolne pokoje?",
-            "e) Pokój dwuosobowy kosztuje 280 złotych.",
-            "f) Niestety wszystkie pokoje są zajęte.",
-            "g) Tak, w każdym pokoju.",
-            "h) Bardzo proszę, słucham.",
+            "b) Proszę potwierdzić rezerwację do środy.",
+            "c) Tak, w każdym pokoju.",
+            "d) Niestety wszystkie pokoje są zajęte.",
+            "e) Bardzo proszę, słucham.",
+            "f) Dziękuję za pomoc, do widzenia!",
+            "g) Pokój dwuosobowy kosztuje 280 złotych.",
+            "h) Czy mają Państwo wtedy wolne pokoje?",
             "i) To bardzo dobrze.",
-            "j) Dziękuję za pomoc, do widzenia!"
+            "j) Nie, śniadanie jest dodatkowo płatne."
           ],
           "explanation": "Olena reaguje na dobrą wiadomość o śniadaniu: „To bardzo dobrze”. Potem zadaje następne pytanie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "c) Proszę potwierdzić rezerwację do środy.",
+          "answer": "b) Proszę potwierdzić rezerwację do środy.",
           "options": [
             "a) Dzwonię w sprawie rezerwacji.",
-            "b) Nie, śniadanie jest dodatkowo płatne.",
-            "c) Proszę potwierdzić rezerwację do środy.",
-            "d) Czy mają Państwo wtedy wolne pokoje?",
-            "e) Pokój dwuosobowy kosztuje 280 złotych.",
-            "f) Niestety wszystkie pokoje są zajęte.",
-            "g) Tak, w każdym pokoju.",
-            "h) Bardzo proszę, słucham.",
+            "b) Proszę potwierdzić rezerwację do środy.",
+            "c) Tak, w każdym pokoju.",
+            "d) Niestety wszystkie pokoje są zajęte.",
+            "e) Bardzo proszę, słucham.",
+            "f) Dziękuję za pomoc, do widzenia!",
+            "g) Pokój dwuosobowy kosztuje 280 złotych.",
+            "h) Czy mają Państwo wtedy wolne pokoje?",
             "i) To bardzo dobrze.",
-            "j) Dziękuję za pomoc, do widzenia!"
+            "j) Nie, śniadanie jest dodatkowo płatne."
           ],
           "explanation": "Anna prosi o potwierdzenie rezerwacji z terminem: „do środy”. To praktyczna prośba na koniec rozmowy.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "j) Dziękuję za pomoc, do widzenia!",
+          "answer": "f) Dziękuję za pomoc, do widzenia!",
           "options": [
             "a) Dzwonię w sprawie rezerwacji.",
-            "b) Nie, śniadanie jest dodatkowo płatne.",
-            "c) Proszę potwierdzić rezerwację do środy.",
-            "d) Czy mają Państwo wtedy wolne pokoje?",
-            "e) Pokój dwuosobowy kosztuje 280 złotych.",
-            "f) Niestety wszystkie pokoje są zajęte.",
-            "g) Tak, w każdym pokoju.",
-            "h) Bardzo proszę, słucham.",
+            "b) Proszę potwierdzić rezerwację do środy.",
+            "c) Tak, w każdym pokoju.",
+            "d) Niestety wszystkie pokoje są zajęte.",
+            "e) Bardzo proszę, słucham.",
+            "f) Dziękuję za pomoc, do widzenia!",
+            "g) Pokój dwuosobowy kosztuje 280 złotych.",
+            "h) Czy mają Państwo wtedy wolne pokoje?",
             "i) To bardzo dobrze.",
-            "j) Dziękuję za pomoc, do widzenia!"
+            "j) Nie, śniadanie jest dodatkowo płatne."
           ],
           "explanation": "Olena dziękuje i żegna się. Pasuje to do końca rozmowy.",
           "grammar_point": "slownictwo"
@@ -518,8 +518,8 @@
           "id": "el2-1",
           "answer": "c) Szanowni",
           "options": [
-            "a) Drodzy",
             "b) Mili",
+            "a) Drodzy",
             "c) Szanowni"
           ],
           "explanation": "W e-mailu do pensjonatu piszemy „Szanowni Państwo”. „Drodzy” i „Mili” są zbyt prywatne.",
@@ -529,9 +529,9 @@
           "id": "el2-2",
           "answer": "b) w",
           "options": [
-            "a) na",
+            "c) o",
             "b) w",
-            "c) o"
+            "a) na"
           ],
           "explanation": "Mówimy „w sprawie czegoś”. „Na sprawie” i „o sprawie” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -540,9 +540,9 @@
           "id": "el2-3",
           "answer": "a) mają",
           "options": [
-            "a) mają",
+            "c) robią",
             "b) stają",
-            "c) robią"
+            "a) mają"
           ],
           "explanation": "Pytamy, co ktoś ma: „czy mają Państwo pokój”. „Stają” i „robią” nie pasują do słowa „pokój”.",
           "grammar_point": "rejestr-formalny"
@@ -551,9 +551,9 @@
           "id": "el2-4",
           "answer": "a) o",
           "options": [
+            "c) za",
             "a) o",
-            "b) na",
-            "c) za"
+            "b) na"
           ],
           "explanation": "Pytamy o coś: „zapytać o dodatkową noc”. „Na” i „za” nie łączą się z czasownikiem „zapytać”.",
           "grammar_point": "rejestr-formalny"
@@ -562,9 +562,9 @@
           "id": "el2-5",
           "answer": "c) za",
           "options": [
-            "a) od",
+            "c) za",
             "b) z",
-            "c) za"
+            "a) od"
           ],
           "explanation": "Cena za pokój to stały zwrot. „Od pokój” i „z pokój” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -573,9 +573,9 @@
           "id": "el2-6",
           "answer": "b) o",
           "options": [
+            "c) na",
             "a) w",
-            "b) o",
-            "c) na"
+            "b) o"
           ],
           "explanation": "Godzinę podajemy przyimkiem „o”: „o dziewiętnastej”. „W” i „na” nie pasują do godziny.",
           "grammar_point": "rejestr-formalny"
@@ -584,9 +584,9 @@
           "id": "el2-7",
           "answer": "c) do",
           "options": [
-            "a) od",
+            "c) do",
             "b) po",
-            "c) do"
+            "a) od"
           ],
           "explanation": "Termin: „potwierdzenie do środy”. „Od środy” i „po środzie” mają inny sens.",
           "grammar_point": "rejestr-formalny"
@@ -596,8 +596,8 @@
           "answer": "b) wdzięczna",
           "options": [
             "a) wdzięczność",
-            "b) wdzięczna",
-            "c) wdzięcznie"
+            "c) wdzięcznie",
+            "b) wdzięczna"
           ],
           "explanation": "Mówimy „będę wdzięczna”, bo piszę ja, kobieta. „Wdzięczność” i „wdzięcznie” nie pasują do tego zdania.",
           "grammar_point": "rejestr-formalny"
@@ -617,8 +617,8 @@
           "id": "el2-10",
           "answer": "b) Z poważaniem",
           "options": [
-            "a) Na razie",
             "b) Z poważaniem",
+            "a) Na razie",
             "c) Hej"
           ],
           "explanation": "To oficjalne zakończenie e-maila do pensjonatu. „Na razie” i „Hej” są potoczne.",

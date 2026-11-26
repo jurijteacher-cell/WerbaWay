@@ -17,11 +17,11 @@
           "id": "g1-1",
           "text": "Przepraszam, gdzie ___ toaleta?",
           "options": [
-            "jestem",
-            "jesteś",
-            "jest",
             "jesteśmy",
+            "jest",
+            "jesteś",
             "jesteście",
+            "jestem",
             "są"
           ],
           "answer": "jest",
@@ -31,11 +31,11 @@
           "id": "g1-2",
           "text": "(Ja) ___ z Ukrainy, a ty?",
           "options": [
-            "jestem",
-            "jesteś",
-            "jest",
             "jesteśmy",
+            "jest",
+            "jesteś",
             "jesteście",
+            "jestem",
             "są"
           ],
           "answer": "jestem",
@@ -45,11 +45,11 @@
           "id": "g1-3",
           "text": "Skąd ___, Kasia?",
           "options": [
-            "jestem",
-            "jesteś",
-            "jest",
             "jesteśmy",
+            "jest",
+            "jesteś",
             "jesteście",
+            "jestem",
             "są"
           ],
           "answer": "jesteś",
@@ -59,11 +59,11 @@
           "id": "g1-4",
           "text": "Pan Nowak i pani Nowak ___ w domu.",
           "options": [
-            "jestem",
-            "jesteś",
-            "jest",
             "jesteśmy",
+            "jest",
+            "jesteś",
             "jesteście",
+            "jestem",
             "są"
           ],
           "answer": "są",
@@ -73,11 +73,11 @@
           "id": "g1-5",
           "text": "My ___ w szkole, a wy?",
           "options": [
-            "jestem",
-            "jesteś",
-            "jest",
             "jesteśmy",
+            "jest",
+            "jesteś",
             "jesteście",
+            "jestem",
             "są"
           ],
           "answer": "jesteśmy",
@@ -87,11 +87,11 @@
           "id": "g1-6",
           "text": "Wy też ___ z Polski?",
           "options": [
-            "jestem",
-            "jesteś",
-            "jest",
             "jesteśmy",
+            "jest",
+            "jesteś",
             "jesteście",
+            "jestem",
             "są"
           ],
           "answer": "jesteście",
@@ -101,11 +101,11 @@
           "id": "g1-7",
           "text": "Skąd pani ___?",
           "options": [
-            "jestem",
-            "jesteś",
-            "jest",
             "jesteśmy",
+            "jest",
+            "jesteś",
             "jesteście",
+            "jestem",
             "są"
           ],
           "answer": "jest",
@@ -116,11 +116,11 @@
           "id": "g1-8",
           "text": "Skąd ___ państwo?",
           "options": [
-            "jestem",
-            "jesteś",
-            "jest",
             "jesteśmy",
+            "jest",
+            "jesteś",
             "jesteście",
+            "jestem",
             "są"
           ],
           "answer": "są",
@@ -207,9 +207,9 @@
           "id": "g3-1",
           "text": "___ długopis jest czarny.",
           "options": [
+            "To",
             "Ten",
-            "Ta",
-            "To"
+            "Ta"
           ],
           "answer": "Ten",
           "grammar_point": "rodzaj",
@@ -219,9 +219,9 @@
           "id": "g3-2",
           "text": "___ krzesło jest stare.",
           "options": [
+            "To",
             "Ten",
-            "Ta",
-            "To"
+            "Ta"
           ],
           "answer": "To",
           "grammar_point": "rodzaj",
@@ -231,9 +231,9 @@
           "id": "g3-3",
           "text": "___ kubek jest biały.",
           "options": [
+            "To",
             "Ten",
-            "Ta",
-            "To"
+            "Ta"
           ],
           "answer": "Ten",
           "grammar_point": "rodzaj",
@@ -243,9 +243,9 @@
           "id": "g3-4",
           "text": "___ komórka jest nowa.",
           "options": [
+            "To",
             "Ten",
-            "Ta",
-            "To"
+            "Ta"
           ],
           "answer": "Ta",
           "grammar_point": "rodzaj"
@@ -254,9 +254,9 @@
           "id": "g3-5",
           "text": "___ okno jest duże.",
           "options": [
+            "To",
             "Ten",
-            "Ta",
-            "To"
+            "Ta"
           ],
           "answer": "To",
           "grammar_point": "rodzaj"
@@ -265,9 +265,9 @@
           "id": "g3-6",
           "text": "___ noc jest czarna.",
           "options": [
+            "To",
             "Ten",
-            "Ta",
-            "To"
+            "Ta"
           ],
           "answer": "Ta",
           "grammar_point": "rodzaj",
@@ -277,9 +277,9 @@
           "id": "g3-7",
           "text": "___ kolega jest miły.",
           "options": [
+            "To",
             "Ten",
-            "Ta",
-            "To"
+            "Ta"
           ],
           "answer": "Ten",
           "grammar_point": "rodzaj",
@@ -289,9 +289,9 @@
           "id": "g3-8",
           "text": "___ imię jest fajne.",
           "options": [
+            "To",
             "Ten",
-            "Ta",
-            "To"
+            "Ta"
           ],
           "answer": "To",
           "grammar_point": "rodzaj",
@@ -301,9 +301,9 @@
           "id": "g3-9",
           "text": "___ pani jest sympatyczna.",
           "options": [
+            "To",
             "Ten",
-            "Ta",
-            "To"
+            "Ta"
           ],
           "answer": "Ta",
           "grammar_point": "rodzaj",
@@ -322,9 +322,9 @@
           "id": "g4-1",
           "text": "Ta torba jest ___.",
           "options": [
-            "nowy",
             "nowa",
-            "nowe"
+            "nowe",
+            "nowy"
           ],
           "answer": "nowa",
           "grammar_point": "przymiotnik-zgoda"
@@ -333,9 +333,9 @@
           "id": "g4-2",
           "text": "To krzesło jest ___.",
           "options": [
-            "stary",
             "stara",
-            "stare"
+            "stare",
+            "stary"
           ],
           "answer": "stare",
           "grammar_point": "przymiotnik-zgoda"
@@ -344,8 +344,8 @@
           "id": "g4-3",
           "text": "Ten kubek jest ___.",
           "options": [
-            "biały",
             "biała",
+            "biały",
             "białe"
           ],
           "answer": "biały",
@@ -355,9 +355,9 @@
           "id": "g4-4",
           "text": "Ta komórka jest ___.",
           "options": [
+            "czarne",
             "czarny",
-            "czarna",
-            "czarne"
+            "czarna"
           ],
           "answer": "czarna",
           "grammar_point": "przymiotnik-zgoda"
@@ -377,8 +377,8 @@
           "id": "g4-6",
           "text": "Ten kolega jest ___.",
           "options": [
-            "miły",
             "miła",
+            "miły",
             "miłe"
           ],
           "answer": "miły",
@@ -389,9 +389,9 @@
           "id": "g4-7",
           "text": "To radio jest ___.",
           "options": [
-            "japoński",
+            "japońskie",
             "japońska",
-            "japońskie"
+            "japoński"
           ],
           "answer": "japońskie",
           "grammar_point": "przymiotnik-zgoda",
@@ -402,8 +402,8 @@
           "text": "To jest ___ herbata.",
           "options": [
             "zielony",
-            "zielona",
-            "zielone"
+            "zielone",
+            "zielona"
           ],
           "answer": "zielona",
           "grammar_point": "przymiotnik-zgoda"
@@ -588,8 +588,8 @@
           "id": "g7-1",
           "text": "— Co słychać? — Dziękuję, dobrze, ___",
           "options": [
-            "a ty?",
-            "a u ciebie?"
+            "a u ciebie?",
+            "a ty?"
           ],
           "answer": "a u ciebie?",
           "grammar_point": "kalki-uk",
@@ -610,8 +610,8 @@
           "id": "g7-3",
           "text": "Jak ___ na imię?",
           "options": [
-            "masz",
-            "jesteś"
+            "jesteś",
+            "masz"
           ],
           "answer": "masz",
           "grammar_point": "kalki-uk",
@@ -632,8 +632,8 @@
           "id": "g7-5",
           "text": "___ krzesło jest nowe.",
           "options": [
-            "Ten",
-            "To"
+            "To",
+            "Ten"
           ],
           "answer": "To",
           "grammar_point": "kalki-uk",

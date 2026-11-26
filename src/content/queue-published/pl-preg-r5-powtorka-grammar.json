@@ -15,9 +15,9 @@
      "id": "g1-1",
      "text": "Nie przeszkadzaj — teraz ___ sobie ciśnienie.",
      "options": [
-      "mierzę",
       "mierzyłam",
-      "zmierzyłam"
+      "zmierzyłam",
+      "mierzę"
      ],
      "answer": "mierzę",
      "explanation": "Teraz, w tej chwili → czas teraźniejszy, tylko niedokonany: mierzę.",
@@ -45,9 +45,9 @@
      "id": "g1-3",
      "text": "W izbie przyjęć ___ trzy formularze w pięć minut.",
      "options": [
-      "podpisałam",
+      "podpiszę",
       "podpisywałam",
-      "podpiszę"
+      "podpisałam"
      ],
      "answer": "podpisałam",
      "explanation": "W pięć minut → liczy się wynik → dokonany: podpisałam.",
@@ -60,8 +60,8 @@
      "id": "g1-4",
      "text": "___ go codziennie przed snem — ciepła woda go uspokaja.",
      "options": [
-      "Kąp",
       "Wykąp",
+      "Kąp",
       "Kąpać"
      ],
      "answer": "Kąp",
@@ -76,8 +76,8 @@
      "text": "Uff, wreszcie go ___! Teraz wypiję ciepłą kawę.",
      "options": [
       "uśpiłam",
-      "usypiałam",
-      "uśpię"
+      "uśpię",
+      "usypiałam"
      ],
      "answer": "uśpiłam",
      "explanation": "Wreszcie → wynik → dokonany: uśpiłam.",
@@ -90,9 +90,9 @@
      "id": "g1-6",
      "text": "Jestem zmęczona, ale ___ codziennie wychodzić z małą na spacer.",
      "options": [
-      "powinnam",
       "powinnaś",
-      "powinien"
+      "powinien",
+      "powinnam"
      ],
      "answer": "powinnam",
      "explanation": "Jestem → ja, kobieta → powinnam. Powinnaś — to ty, powinien — on.",
@@ -105,8 +105,8 @@
      "id": "g1-7",
      "text": "Wczoraj na USG ___ czekać prawie godzinę, ale było warto!",
      "options": [
-      "musiałam",
       "muszę",
+      "musiałam",
       "będę musiała"
      ],
      "answer": "musiałam",
@@ -178,8 +178,8 @@
      "id": "g3-1",
      "text": "Na pierwszą wizytę ___ wziąć dowód osobisty — w rejestracji zawsze o niego pytają.",
      "options": [
-      "musisz",
       "możesz",
+      "musisz",
       "nie musisz"
      ],
      "answer": "musisz",
@@ -191,8 +191,8 @@
      "text": "Nowych ubranek ___ kupować — dużo rzeczy pożyczysz ode mnie.",
      "options": [
       "nie musisz",
-      "nie możesz",
-      "musisz"
+      "musisz",
+      "nie możesz"
      ],
      "answer": "nie musisz",
      "explanation": "Nie ma obowiązku, ale wolno → nie musisz. Nie możesz znaczyłoby: zakaz.",
@@ -202,9 +202,9 @@
      "id": "g3-3",
      "text": "Przed krzywą cukrową ___ jeść śniadania.",
      "options": [
-      "nie możesz",
       "nie musisz",
-      "możesz"
+      "możesz",
+      "nie możesz"
      ],
      "answer": "nie możesz",
      "explanation": "Na badanie przychodzisz na czczo → zakaz → nie możesz.",
@@ -215,8 +215,8 @@
      "text": "Zapomniałam ładowarki! ___ spakować torbę wcześniej.",
      "options": [
       "Powinnam była",
-      "Powinnam",
-      "Będę musiała"
+      "Będę musiała",
+      "Powinnam"
      ],
      "answer": "Powinnam była",
      "explanation": "Rada o przeszłości, której już nie zmienisz → powinnam była.",
@@ -227,8 +227,8 @@
      "text": "Wczoraj autobus nie był niskopodłogowy, więc ___ czekać na następny.",
      "options": [
       "musiałam",
-      "muszę",
-      "będę musiała"
+      "będę musiała",
+      "muszę"
      ],
      "answer": "musiałam",
      "explanation": "Wczoraj → czas przeszły: musiałam.",
@@ -238,8 +238,8 @@
      "id": "g3-6",
      "text": "Tomku, ty też ___ chodzić do szkoły rodzenia!",
      "options": [
-      "powinieneś",
       "powinnaś",
+      "powinieneś",
       "powinien"
      ],
      "answer": "powinieneś",
@@ -250,9 +250,9 @@
      "id": "g3-7",
      "text": "Przepraszam, czy ___ tu na chwilę zostawić wózek? Zaraz wrócę.",
      "options": [
-      "mogę",
+      "mogłam",
       "może",
-      "mogłam"
+      "mogę"
      ],
      "answer": "mogę",
      "explanation": "Prosisz o pozwolenie teraz, o sobie → Czy mogę…?",
@@ -282,9 +282,9 @@
      "id": "g4-2",
      "text": "Wczoraj wreszcie ___ wyniki z laboratorium.",
      "options": [
-      "odebrałam",
+      "odbiorę",
       "odbierałam",
-      "odbiorę"
+      "odebrałam"
      ],
      "answer": "odebrałam",
      "explanation": "Wreszcie → wynik → dokonany.",
@@ -294,9 +294,9 @@
      "id": "g4-3",
      "text": "Przez pierwsze dwa tygodnie mała ___ co noc.",
      "options": [
-      "płakała",
       "zapłakała",
-      "zapłacze"
+      "zapłacze",
+      "płakała"
      ],
      "answer": "płakała",
      "explanation": "Co noc → powtarzanie → niedokonany.",
@@ -307,8 +307,8 @@
      "text": "Jutro rano najpierw ___ do przychodni, a potem dam ci znać.",
      "options": [
       "zadzwonię",
-      "będę dzwonić",
-      "dzwoniłam"
+      "dzwoniłam",
+      "będę dzwonić"
      ],
      "answer": "zadzwonię",
      "explanation": "Najpierw jedno, potem drugie → jeden raz, z wynikiem → dokonany: zadzwonię.",
@@ -318,9 +318,9 @@
      "id": "g4-5",
      "text": "Od przyszłego tygodnia będę codziennie ___ ćwiczenia z fizjoterapeutką.",
      "options": [
+      "robiłam",
       "robić",
-      "zrobić",
-      "robiłam"
+      "zrobić"
      ],
      "answer": "robić",
      "explanation": "Będę + tylko niedokonany: będę robić. Będę zrobić — takiej formy nie ma.",
@@ -330,9 +330,9 @@
      "id": "g4-6",
      "text": "Cicho, teraz ___ z położną przez telefon!",
      "options": [
+      "porozmawiałam",
       "rozmawiam",
-      "rozmawiałam",
-      "porozmawiałam"
+      "rozmawiałam"
      ],
      "answer": "rozmawiam",
      "explanation": "Teraz → tylko niedokonany.",
@@ -342,9 +342,9 @@
      "id": "g4-7",
      "text": "Najpierw ___ torbę, a potem pojechaliśmy do szpitala.",
      "options": [
-      "spakowaliśmy",
+      "spakujemy",
       "pakowaliśmy",
-      "spakujemy"
+      "spakowaliśmy"
      ],
      "answer": "spakowaliśmy",
      "explanation": "Najpierw jedno, potem drugie → kolejne wyniki → dokonany.",
@@ -354,8 +354,8 @@
      "id": "g4-8",
      "text": "Kiedy ___ dziecko, nagle zadzwonił kurier.",
      "options": [
-      "przewijałam",
       "przewinęłam",
+      "przewijałam",
       "przewinę"
      ],
      "answer": "przewijałam",
@@ -375,8 +375,8 @@
      "text": "Zosiu, ___ do szkoły rodzenia, póki są wolne miejsca!",
      "options": [
       "zapisz się",
-      "zapisuj się",
-      "zapiszesz się"
+      "zapiszesz się",
+      "zapisuj się"
      ],
      "answer": "zapisz się",
      "explanation": "Jedna konkretna rzecz do zrobienia → dokonany: zapisz się.",
@@ -386,8 +386,8 @@
      "id": "g5-2",
      "text": "Nie ___ ładowarki do telefonu!",
      "options": [
-      "zapomnij",
       "zapominaj",
+      "zapomnij",
       "zapomnisz"
      ],
      "answer": "zapomnij",
@@ -398,8 +398,8 @@
      "id": "g5-3",
      "text": "Nie ___ wszystkiego naraz — po kolei!",
      "options": [
-      "kupuj",
       "kup",
+      "kupuj",
       "kupisz"
      ],
      "answer": "kupuj",
@@ -410,9 +410,9 @@
      "id": "g5-4",
      "text": "___ Marek przewija dziecko w nocy, a ty śpij.",
      "options": [
-      "Niech",
       "Proszę",
-      "Daj"
+      "Daj",
+      "Niech"
      ],
      "answer": "Niech",
      "explanation": "Polecenie dla trzeciej osoby → niech + forma: niech przewija.",
@@ -422,9 +422,9 @@
      "id": "g5-5",
      "text": "Pani Zofio, ___ przyjść na badanie na czczo.",
      "options": [
-      "proszę",
       "niech",
-      "weź"
+      "weź",
+      "proszę"
      ],
      "answer": "proszę",
      "explanation": "Grzecznie, do pani → proszę + bezokolicznik.",
@@ -435,8 +435,8 @@
      "text": "Kochanie, ___ dziś razem na spacer!",
      "options": [
       "chodźmy",
-      "chodźcie",
-      "dawaj pójdziemy"
+      "dawaj pójdziemy",
+      "chodźcie"
      ],
      "answer": "chodźmy",
      "explanation": "My razem → forma na -my: chodźmy. Chodźcie — do kilku osób. Dawaj pójdziemy — kalka z ukraińskiego.",
@@ -446,9 +446,9 @@
      "id": "g5-7",
      "text": "Nie ___ tyle słodyczy, to niezdrowe!",
      "options": [
-      "jedz",
       "jeż",
-      "zjedz"
+      "zjedz",
+      "jedz"
      ],
      "answer": "jedz",
      "explanation": "Jeść → jedz. Jeż to zwierzę! Zakaz → niedokonany.",

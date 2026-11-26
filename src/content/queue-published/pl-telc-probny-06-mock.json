@@ -33,8 +33,8 @@
      "start_n": 1,
      "instruction": "Usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz.",
      "audio": {
-       "src": "/audio/pl-telc-probny-06/telc-sluchanie-1.mp3",
-       "max_plays": 1
+      "src": "/audio/pl-telc-probny-06/telc-sluchanie-1.mp3",
+      "max_plays": 1
      },
      "transcript": "Lektor: Rozumienie ze słuchu, część pierwsza. Za chwilę usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz. Najpierw przykład.\nPani Gajewska: Dzień dobry, mówi Teresa Gajewska z Biblioteki Miejskiej. Książka, którą pan zarezerwował, „Historia Wrocławia”, czeka na pana w wypożyczalni do piątku. Proszę pamiętać o karcie bibliotecznej. Dziękuję i do widzenia.\n\nLektor: Numer jeden.\nRecepcjonista: Dzień dobry, tu recepcja hotelu „Nad Wisłą”. Dzwonię w sprawie pana rezerwacji na weekend. Niestety w pokoju z widokiem na rzekę zepsuła się klimatyzacja. Możemy dać panu pokój od strony parku w tej samej cenie albo pokój z widokiem na rzekę, ale dopiero od niedzieli. Prosimy o odpowiedź do czwartku.\n\nLektor: Numer dwa.\nMarcin: Cześć Igor, tu Marcin. Jutro nie przyjdę do biura, bo córka jest chora. Spotkanie z klientem o dziesiątej jest aktualne — poprowadzisz je sam? Wszystkie dokumenty wysłałem ci mailem wczoraj wieczorem. Gdybyś miał jakieś pytania, dzwoń, będę pod telefonem cały dzień.\n\nLektor: Numer trzy.\nPani z gabinetu: Dzień dobry, gabinet weterynaryjny „Łapa”. Wyniki badań pani kota są już gotowe. Wszystko jest w porządku, ale kot ma za dużą wagę, więc lekarz zaleca specjalną karmę. Można ją kupić u nas albo w sklepie zoologicznym. Na kontrolę zapraszamy za trzy miesiące.\n\nLektor: Numer cztery.\nKasjerka: Dobry wieczór, kasa biletowa Teatru Miejskiego. Dzwonię w sprawie biletów na sobotni spektakl „Wesele”. Niestety aktor, który gra główną rolę, jest chory i musimy odwołać przedstawienie. Może pani wymienić bilety na spektakl dwudziestego grudnia albo dostać zwrot pieniędzy na konto. Proszę dać nam znać, co pani wybiera.\n\nLektor: Koniec pierwszej części Rozumienia ze słuchu.",
      "example": {
@@ -62,11 +62,11 @@
        "id": "sl1-2",
        "stem": "Marcin prosi Igora, żeby",
        "options": [
+        "sam poprowadził spotkanie.",
         "odwołał spotkanie z klientem.",
-        "wysłał mu dokumenty mailem.",
-        "sam poprowadził spotkanie."
+        "wysłał mu dokumenty mailem."
        ],
-       "answer": "c",
+       "answer": "a",
        "explain": "Marcin pyta: „Spotkanie z klientem o dziesiątej jest aktualne — poprowadzisz je sam?”. Spotkanie nie jest odwołane, a dokumenty Marcin już wysłał Igorowi mailem."
       },
       {
@@ -84,8 +84,8 @@
        "id": "sl1-4",
        "stem": "Klientka może",
        "options": [
-        "obejrzeć spektakl w sobotę z innym aktorem.",
         "kupić tańsze bilety na grudzień.",
+        "obejrzeć spektakl w sobotę z innym aktorem.",
         "wymienić bilety albo dostać zwrot pieniędzy."
        ],
        "answer": "c",
@@ -105,8 +105,8 @@
      ],
      "instruction": "Usłyszysz pięć dialogów. Do każdego dialogu są dwa zadania: najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe, potem wybierz a, b lub c. Każdy dialog usłyszysz jeden raz.",
      "audio": {
-       "src": "/audio/pl-telc-probny-06/telc-sluchanie-2.mp3",
-       "max_plays": 1
+      "src": "/audio/pl-telc-probny-06/telc-sluchanie-2.mp3",
+      "max_plays": 1
      },
      "transcript": "Lektor: Rozumienie ze słuchu, część druga. Za chwilę usłyszysz pięć dialogów. Na temat każdego dialogu napisano po dwa zdania. Najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe. Następnie zdecyduj, które zdanie jest najbardziej trafne: a, b czy c. Każdy dialog usłyszysz jeden raz.\n\nLektor: Numer pięć i sześć.\nMężczyzna: Dzień dobry, chciałbym się zameldować na pobyt czasowy.\nUrzędniczka: Proszę bardzo. Ma pan wypełniony formularz?\nMężczyzna: Tak, wypełniłem go w domu. Mam też umowę najmu.\nUrzędniczka: Dobrze, umowa najmu wystarczy, nie potrzebuję podpisu właściciela. Na jak długo?\nMężczyzna: Na rok, do końca przyszłego listopada.\nUrzędniczka: Proszę. Samo zameldowanie jest bezpłatne. Siedemnaście złotych płaci się tylko wtedy, jeśli chce pan dostać zaświadczenie o zameldowaniu.\nMężczyzna: Zaświadczenie nie jest mi potrzebne.\nMężczyzna: Świetnie. A gdzie mogę złożyć wniosek o kartę pobytu?\nUrzędniczka: Nie u nas — w urzędzie wojewódzkim.\n\nLektor: Numer siedem i osiem.\nKelner: Restauracja „Pod Lipami”, słucham.\nKlientka: Dzień dobry, chciałabym zarezerwować stolik na sobotę na dziewiętnastą, dla ośmiu osób. To urodziny mojego męża.\nKelner: Na dziewiętnastą mamy wolną salę na górze, ale wchodzi się tam tylko po schodach. Czy to nie problem?\nKlientka: Niestety tak, teściowa ma chorą nogę. A na dole?\nKelner: Na dole duży stół będzie wolny dopiero od dwudziestej.\nKlientka: W takim razie bierzemy dwudziestą. Czy mogę przynieść własny tort?\nKelner: Oczywiście. Pobieramy tylko dwadzieścia złotych za podanie.\nKlientka: Dobrze. Rezerwacja na nazwisko Wilk.\n\nLektor: Numer dziewięć i dziesięć.\nPasażerka: Dzień dobry, na dworzec główny, proszę. Mam pociąg za dwadzieścia minut.\nKierowca: O tej porze na moście są korki. Pojadę inaczej, przez obwodnicę — kilometrów będzie więcej, ale będzie szybciej.\nPasażerka: Dobrze, ufam panu. Mogę zapłacić kartą?\nKierowca: Przepraszam, terminal się dzisiaj zepsuł. Tylko gotówka albo płatność telefonem.\nPasażerka: To zapłacę telefonem. Ile to będzie mniej więcej?\nKierowca: Około trzydziestu pięciu złotych. Będziemy na miejscu za dwanaście minut.\nPasażerka: Super, zdążę jeszcze kupić kawę.\n\nLektor: Numer jedenaście i dwanaście.\nOla: Kuba, w sobotę jest Noc Muzeów. Idziemy?\nKuba: Chętnie! Wszystkie muzea są wtedy otwarte do późna i wstęp jest za darmo, prawda?\nOla: W większości tak. Ale do Muzeum Narodowego trzeba wcześniej pobrać bezpłatną wejściówkę przez internet. Już wzięłam dwie.\nKuba: Super. A potem może planetarium?\nOla: Tam są ogromne kolejki, ludzie stoją po dwie godziny. Proponuję stary tramwaj — jeździ między muzeami przez całą noc.\nKuba: Dobra. To ja przyniosę kanapki i termos z herbatą.\n\nLektor: Numer trzynaście i czternaście.\nSąsiad: Dzień dobry, pani Danuto. W sobotę robię parapetówkę i chciałem uprzedzić, że może być trochę głośniej.\nSąsiadka: Dziękuję, że pan mówi. Do której?\nSąsiad: Po dwudziestej drugiej muzyka będzie cicho, a goście wyjdą najpóźniej o północy.\nSąsiadka: W porządku. I tak w sobotę jadę do córki do Opola, wracam dopiero w niedzielę.\nSąsiad: To może podleję pani kwiaty?\nSąsiadka: Nie trzeba, podleję je w piątek. Ale mógłby pan w sobotę rano wyjąć gazetę z mojej skrzynki?\nSąsiad: Oczywiście, nie ma sprawy.\n\nLektor: Koniec drugiej części Rozumienia ze słuchu.",
      "items": [
@@ -123,10 +123,10 @@
        "stem": "Wniosek o kartę pobytu mężczyzna złoży",
        "options": [
         "w tym samym urzędzie.",
-        "w urzędzie wojewódzkim.",
-        "u właściciela mieszkania."
+        "u właściciela mieszkania.",
+        "w urzędzie wojewódzkim."
        ],
-       "answer": "b",
+       "answer": "c",
        "explain": "Na pytanie o kartę pobytu urzędniczka odpowiada: „Nie u nas — w urzędzie wojewódzkim”. Dlatego nie w tym samym urzędzie."
       },
       {
@@ -142,10 +142,10 @@
        "stem": "Za własny tort klientka",
        "options": [
         "nie zapłaci nic.",
-        "musi zamówić deser w restauracji.",
-        "zapłaci dwadzieścia złotych."
+        "zapłaci dwadzieścia złotych.",
+        "musi zamówić deser w restauracji."
        ],
-       "answer": "c",
+       "answer": "b",
        "explain": "Kelner mówi o torcie: „Oczywiście. Pobieramy tylko dwadzieścia złotych za podanie”. Klientka może przynieść własny tort, ale zapłaci 20 zł."
       },
       {
@@ -180,10 +180,10 @@
        "stem": "Ola nie chce iść do planetarium, ponieważ",
        "options": [
         "bilety są za drogie.",
-        "trzeba długo czekać w kolejce.",
-        "w nocy jest zamknięte."
+        "w nocy jest zamknięte.",
+        "trzeba długo czekać w kolejce."
        ],
-       "answer": "b",
+       "answer": "c",
        "explain": "Ola mówi o planetarium: „Tam są ogromne kolejki, ludzie stoją po dwie godziny”. Powodem jest długie czekanie, nie cena ani godziny otwarcia."
       },
       {
@@ -199,8 +199,8 @@
        "stem": "Sąsiad",
        "options": [
         "wyjmie gazetę z jej skrzynki.",
-        "podleje sąsiadce kwiaty.",
-        "zaprosi sąsiadkę na parapetówkę."
+        "zaprosi sąsiadkę na parapetówkę.",
+        "podleje sąsiadce kwiaty."
        ],
        "answer": "a",
        "explain": "Sąsiadka prosi: „mógłby pan w sobotę rano wyjąć gazetę z mojej skrzynki?”, a sąsiad się zgadza. Kwiatów nie trzeba podlewać — zrobi to sama w piątek."
@@ -215,9 +215,9 @@
      "start_n": 15,
      "instruction": "Usłyszysz wywiad radiowy. Wybierz właściwą odpowiedź: a, b lub c. Na początku masz minutę na przeczytanie zadań. Wywiad usłyszysz jeden raz.",
      "audio": {
-       "src": "/audio/pl-telc-probny-06/telc-sluchanie-3.mp3",
-       "max_plays": 1,
-       "note": "Nagranie usłyszysz jeden raz. Pierwsza minuta to cisza na przeczytanie zadań."
+      "src": "/audio/pl-telc-probny-06/telc-sluchanie-3.mp3",
+      "max_plays": 1,
+      "note": "Nagranie usłyszysz jeden raz. Pierwsza minuta to cisza na przeczytanie zadań."
      },
      "transcript": "Lektor: Rozumienie ze słuchu, część trzecia. Za chwilę usłyszysz wywiad. Najpierw przeczytaj treść punktów od piętnastego do dwudziestego. Masz na to minutę.\n\nLektor: Teraz posłuchaj wywiadu. Usłyszysz go jeden raz.\nPrezenterka: Dzień dobry, w audycji „Ludzie z pasją” gościmy pana Jerzego Malinowskiego, który od trzydziestu lat prowadzi antykwariat w centrum Łodzi. Dzień dobry.\nJerzy: Dzień dobry, dziękuję za zaproszenie.\nPrezenterka: Jak został pan antykwariuszem?\nJerzy: Przypadkiem. Studiowałem chemię i pracowałem w laboratorium. Kiedy zmarł mój wujek, zostawił mi kilka tysięcy książek. Nie miałem ich gdzie trzymać, więc wynająłem mały lokal i zacząłem je sprzedawać. Po roku odszedłem z laboratorium.\nPrezenterka: Kto dziś kupuje stare książki?\nJerzy: Wbrew pozorom dużo młodych ludzi. Studenci szukają tanich podręczników, a młodzi rodzice — książek, które sami czytali w dzieciństwie. Starsi klienci przychodzą raczej po to, żeby sprzedać swoje zbiory.\nPrezenterka: Czy internet panu nie zaszkodził?\nJerzy: Na początku bałem się, że tak. Dziś połowę książek sprzedaję przez internet, klientom w całej Polsce, a nawet w Kanadzie. Ale ludzie wciąż lubią przyjść, poszukać na półkach i porozmawiać.\nPrezenterka: Jaka była najciekawsza książka, która trafiła w pana ręce?\nJerzy: Kiedyś w pudle ze starymi kryminałami znalazłem atlas z tysiąc osiemset dziewięćdziesiątego roku. Ktoś oddał to pudło za darmo, bo myślał, że to śmieci. Sprzedałem atlas do muzeum, a pieniądze oddałem tej osobie. Tak się po prostu robi.\nPrezenterka: Czy ma pan następcę?\nJerzy: Córka pomaga mi w weekendy i prowadzi nasz sklep internetowy. Mam nadzieję, że kiedyś przejmie antykwariat, ale to będzie jej decyzja.\nPrezenterka: Dziękuję za rozmowę.\nJerzy: Dziękuję.\n\nLektor: Koniec trzeciej części Rozumienia ze słuchu.",
      "items": [
@@ -225,11 +225,11 @@
        "id": "sl3-1",
        "stem": "Pan Jerzy został antykwariuszem, ponieważ",
        "options": [
+        "stracił pracę w laboratorium.",
         "zawsze marzył o własnej księgarni.",
-        "dostał w spadku dużo książek.",
-        "stracił pracę w laboratorium."
+        "dostał w spadku dużo książek."
        ],
-       "answer": "b",
+       "answer": "c",
        "explain": "Pan Jerzy mówi: „Kiedy zmarł mój wujek, zostawił mi kilka tysięcy książek”. To spadek. Nie marzył o księgarni („Przypadkiem”), a z laboratorium odszedł sam."
       },
       {
@@ -237,43 +237,43 @@
        "stem": "Według pana Jerzego młodzi ludzie",
        "options": [
         "w ogóle nie kupują papierowych książek.",
-        "przychodzą sprzedawać swoje zbiory.",
-        "szukają tanich podręczników i książek z dzieciństwa."
+        "szukają tanich podręczników i książek z dzieciństwa.",
+        "przychodzą sprzedawać swoje zbiory."
        ],
-       "answer": "c",
+       "answer": "b",
        "explain": "Pan Jerzy mówi: „Studenci szukają tanich podręczników, a młodzi rodzice — książek, które sami czytali w dzieciństwie”. Swoje zbiory sprzedają raczej starsi klienci."
       },
       {
        "id": "sl3-3",
        "stem": "Internet",
        "options": [
-        "jest dla antykwariatu ważnym miejscem sprzedaży.",
         "zabrał panu Jerzemu większość klientów.",
+        "jest dla antykwariatu ważnym miejscem sprzedaży.",
         "służy mu tylko do kontaktu z klientami z Kanady."
        ],
-       "answer": "a",
+       "answer": "b",
        "explain": "Pan Jerzy mówi: „Dziś połowę książek sprzedaję przez internet, klientom w całej Polsce, a nawet w Kanadzie”. Internet to więc ważne miejsce sprzedaży, nie tylko Kanada."
       },
       {
        "id": "sl3-4",
        "stem": "Stary atlas",
        "options": [
-        "pan Jerzy kupił za wysoką cenę.",
         "był w pudle, które ktoś oddał za darmo.",
-        "pan Jerzy znalazł w bibliotece wujka."
+        "pan Jerzy znalazł w bibliotece wujka.",
+        "pan Jerzy kupił za wysoką cenę."
        ],
-       "answer": "b",
+       "answer": "a",
        "explain": "Atlas był „w pudle ze starymi kryminałami”, a „ktoś oddał to pudło za darmo, bo myślał, że to śmieci”. Pan Jerzy go nie kupił."
       },
       {
        "id": "sl3-5",
        "stem": "Pieniądze za atlas pan Jerzy",
        "options": [
-        "zatrzymał dla siebie.",
         "przekazał muzeum.",
-        "oddał osobie, która przyniosła pudło."
+        "oddał osobie, która przyniosła pudło.",
+        "zatrzymał dla siebie."
        ],
-       "answer": "c",
+       "answer": "b",
        "explain": "Pan Jerzy mówi: „Sprzedałem atlas do muzeum, a pieniądze oddałem tej osobie”, czyli osobie, która oddała pudło. Muzeum kupiło atlas, nie dostało pieniędzy."
       },
       {
@@ -281,10 +281,10 @@
        "stem": "Córka pana Jerzego",
        "options": [
         "na pewno przejmie antykwariat.",
-        "pomaga w weekendy i prowadzi sklep internetowy.",
-        "pracuje w muzeum."
+        "pracuje w muzeum.",
+        "pomaga w weekendy i prowadzi sklep internetowy."
        ],
-       "answer": "b",
+       "answer": "c",
        "explain": "Pan Jerzy mówi: „Córka pomaga mi w weekendy i prowadzi nasz sklep internetowy”. Czy przejmie antykwariat, nie wiadomo: „to będzie jej decyzja”."
       }
      ]
@@ -297,9 +297,9 @@
      "start_n": 21,
      "instruction": "Usłyszysz audycję radiową „Wakacje — w Polsce czy za granicą?”. Które zdanie (a–f) pasuje do opinii 21–23? Na początku masz pół minuty na przeczytanie zdań. Audycję usłyszysz jeden raz.",
      "audio": {
-       "src": "/audio/pl-telc-probny-06/telc-sluchanie-4.mp3",
-       "max_plays": 1,
-       "note": "Nagranie usłyszysz jeden raz. Na początku jest pół minuty ciszy na przeczytanie zdań."
+      "src": "/audio/pl-telc-probny-06/telc-sluchanie-4.mp3",
+      "max_plays": 1,
+      "note": "Nagranie usłyszysz jeden raz. Na początku jest pół minuty ciszy na przeczytanie zdań."
      },
      "transcript": "Lektor: Rozumienie ze słuchu, część czwarta. Usłyszysz audycję, w której ludzie wyrażają opinie na dany temat. Które zdanie, od a do f, najlepiej pasuje do opinii dwadzieścia jeden, dwadzieścia dwa i dwadzieścia trzy? Masz pół minuty na przeczytanie zdań.\n\nLektor: Teraz posłuchaj audycji.\nPrezenter: Dzień dobry, w programie „Głos słuchaczy” pytamy dziś: gdzie wolą państwo spędzać wakacje — w Polsce czy za granicą?\n\nLektor: Przykład.\nSłuchaczka: Od lat jeździmy z dziećmi nad Bałtyk. Dzieci znają już każdą plażę w okolicy, a ja nie muszę się martwić o lot, obcy język czy lekarza. Jest blisko i bez stresu.\n\nLektor: Numer dwadzieścia jeden.\nSłuchacz: Policzyłem dokładnie: tydzień w Chorwacji z lotem i hotelem kosztował nas mniej niż tydzień w pensjonacie nad polskim morzem w sierpniu. A do tego mieliśmy pewną pogodę.\n\nLektor: Numer dwadzieścia dwa.\nSłuchaczka: Dla mnie wakacje to poznawanie innych ludzi i kultur. Każdego roku wybieram kraj, którego nie znam, i uczę się kilku zdań w jego języku. W restauracji zawsze zamawiam coś, czego nigdy nie jadłam.\n\nLektor: Numer dwadzieścia trzy.\nSłuchacz: Nieważne gdzie, ważne z kim. Najlepsze wakacje w życiu spędziłem pod namiotem na Mazurach, z przyjaciółmi ze studiów. Padało prawie codziennie, a i tak było super.\n\nPrezenter: Dziękujemy za wszystkie telefony. Do usłyszenia za tydzień!\n\nLektor: Koniec Rozumienia ze słuchu. Dziękujemy za uwagę.",
      "left_label": "Opinie",
@@ -523,11 +523,11 @@
        "id": "cz3-1",
        "stem": "Teatr powstał, ponieważ",
        "options": [
+        "seniorzy sami założyli grupę teatralną.",
         "dom kultury szukał nowych zajęć dla seniorów.",
-        "reżyserka chciała przygotować z seniorami jeden spektakl.",
-        "seniorzy sami założyli grupę teatralną."
+        "reżyserka chciała przygotować z seniorami jeden spektakl."
        ],
-       "answer": "b",
+       "answer": "c",
        "passage": "Teatr seniora\n\nOd dwóch lat w Domu Kultury „Arka” działa teatr, w którym grają wyłącznie osoby po sześćdziesiątce. Zaczęło się od ogłoszenia w gazecie: reżyserka Marta Bielska szukała chętnych do jednego przedstawienia. Przyszło czterdzieści osób, a po premierze nikt nie chciał kończyć. Dziś grupa spotyka się dwa razy w tygodniu i gra trzy spektakle w roku. Aktorzy sami szyją kostiumy i robią dekoracje. — Najtrudniejsze jest zapamiętanie tekstu, ale właśnie dlatego to świetny trening dla głowy — mówi pan Zdzisław, który ma osiemdziesiąt dwa lata.",
        "explain": "W tekście: „reżyserka Marta Bielska szukała chętnych do jednego przedstawienia”. Grupy nie założyli sami seniorzy ani dom kultury — zostali po premierze."
       },
@@ -535,22 +535,22 @@
        "id": "cz3-2",
        "stem": "Według pana Zdzisława gra w teatrze",
        "options": [
-        "pomaga ćwiczyć pamięć.",
+        "daje mu dodatkowe pieniądze.",
         "jest dla niego za trudna.",
-        "daje mu dodatkowe pieniądze."
+        "pomaga ćwiczyć pamięć."
        ],
-       "answer": "a",
+       "answer": "c",
        "explain": "Pan Zdzisław mówi, że trudno zapamiętać tekst, „ale właśnie dlatego to świetny trening dla głowy”. Chodzi o ćwiczenie pamięci, nie o to, że jest za trudno."
       },
       {
        "id": "cz3-3",
        "stem": "Rodziny mogą",
        "options": [
-        "kupić rower cargo taniej.",
         "przez tydzień bezpłatnie testować rower.",
-        "wypożyczyć rower tylko na weekend."
+        "wypożyczyć rower tylko na weekend.",
+        "kupić rower cargo taniej."
        ],
-       "answer": "b",
+       "answer": "a",
        "passage": "Rowerem z dziećmi\n\nMiasto Zalesie wypożycza mieszkańcom rowery towarowe, tak zwane cargo. Na takim rowerze można przewieźć dwoje dzieci albo duże zakupy. Rodziny mogą wypożyczyć rower na tydzień za darmo, żeby sprawdzić, czy taki środek transportu im odpowiada. Miasto chce w ten sposób zmniejszyć liczbę samochodów w centrum. Po roku programu okazało się, że co piąta rodzina, która testowała rower, kupiła potem własny. Uczestnicy najczęściej narzekali na brak bezpiecznych parkingów dla dużych rowerów.",
        "explain": "W tekście: „Rodziny mogą wypożyczyć rower na tydzień za darmo”. Nie ma mowy o tańszym zakupie ani o wypożyczeniu tylko na weekend."
       },
@@ -570,8 +570,8 @@
        "stem": "Tłumacz przychodzi na spotkanie, jeśli",
        "options": [
         "osoba niesłysząca wcześniej zarezerwuje wizytę.",
-        "urzędnik go o to poprosi.",
-        "komputer przy wejściu nie działa."
+        "komputer przy wejściu nie działa.",
+        "urzędnik go o to poprosi."
        ],
        "answer": "a",
        "passage": "Język migowy w urzędzie\n\nOd tego roku w Urzędzie Dzielnicy Północ osoby niesłyszące mogą załatwić swoje sprawy w polskim języku migowym. Wystarczy wcześniej zarezerwować wizytę przez stronę internetową — wtedy na spotkanie przychodzi tłumacz. Bez rezerwacji można połączyć się z tłumaczem przez wideo z komputera przy wejściu. Urzędnicy przeszli też krótki kurs podstawowych zwrotów. — Nie chodzi o to, żeby każdy urzędnik znał język migowy, ale żeby każdy wiedział, jak pomóc — mówi kierowniczka urzędu.",
@@ -646,7 +646,7 @@
      "bank": [
       {
        "key": "a",
-       "text": "zależy od"
+       "text": "chociaż"
       },
       {
        "key": "b",
@@ -654,7 +654,7 @@
       },
       {
        "key": "c",
-       "text": "z góry"
+       "text": "w takim razie"
       },
       {
        "key": "d",
@@ -662,27 +662,27 @@
       },
       {
        "key": "e",
-       "text": "chociaż"
-      },
-      {
-       "key": "f",
-       "text": "w takim razie"
-      },
-      {
-       "key": "g",
-       "text": "czy jest"
-      },
-      {
-       "key": "h",
-       "text": "dlatego że"
-      },
-      {
-       "key": "i",
        "text": "przy okazji"
       },
       {
-       "key": "j",
+       "key": "f",
+       "text": "z góry"
+      },
+      {
+       "key": "g",
        "text": "nie ma problemu"
+      },
+      {
+       "key": "h",
+       "text": "zależy od"
+      },
+      {
+       "key": "i",
+       "text": "czy jest"
+      },
+      {
+       "key": "j",
+       "text": "dlatego że"
       }
      ],
      "text": "Recepcjonistka: Szkoła Tańca „Rytm”, dzień dobry.\nKlient: Dzień dobry, {{42}} kursu tańca dla par. Za trzy miesiące bierzemy ślub.\nRecepcjonistka: Gratuluję! Kurs dla początkujących zaczyna się w przyszły poniedziałek, zajęcia są raz w tygodniu o dziewiętnastej.\nKlient: W poniedziałki pracuję do dwudziestej. {{43}} jakaś grupa w innym dniu?\nRecepcjonistka: Tak, w czwartki o dwudziestej, ale ta grupa zaczęła tydzień temu.\nKlient: Czy możemy do niej dołączyć, {{44}} jedne zajęcia już się odbyły?\nRecepcjonistka: {{45}}. Przed zajęciami instruktor pokaże państwu kroki z pierwszej lekcji.\nKlient: A ile kosztuje kurs?\nRecepcjonistka: Cena {{46}} liczby zajęć. Osiem lekcji kosztuje czterysta złotych od pary.\nKlient: Płaci się {{47}} czy po każdych zajęciach?\nRecepcjonistka: Za cały kurs na pierwszych zajęciach, ale możemy podzielić płatność na dwie raty.\nKlient: {{48}} zapiszę nas na czwartek. Nazywam się Adam Mróz.\nRecepcjonistka: Dziękuję. {{49}}: proszę przyjść w wygodnych butach na płaskiej podeszwie.",
@@ -698,49 +698,49 @@
        "id": "el1-43",
        "n": 43,
        "kind": "bank",
-       "answer": "g",
+       "answer": "i",
        "explain": "Pytanie o istnienie czegoś: „Czy jest jakaś grupa…?”. „Czy” otwiera pytanie typu tak/nie."
       },
       {
        "id": "el1-44",
        "n": 44,
        "kind": "bank",
-       "answer": "e",
+       "answer": "a",
        "explain": "Klient pyta o dołączenie mimo przeszkody — jedne zajęcia już były. Kontrast wyraża „chociaż”, a nie „dlatego że” (przyczyna)."
       },
       {
        "id": "el1-45",
        "n": 45,
        "kind": "bank",
-       "answer": "j",
+       "answer": "g",
        "explain": "Recepcjonistka zgadza się i dodaje, że instruktor pokaże kroki. Pasuje uprzejma zgoda: „Nie ma problemu”."
       },
       {
        "id": "el1-46",
        "n": 46,
        "kind": "bank",
-       "answer": "a",
+       "answer": "h",
        "explain": "Konstrukcja „coś zależy od + dopełniacz”: cena zależy od liczby zajęć."
       },
       {
        "id": "el1-47",
        "n": 47,
        "kind": "bank",
-       "answer": "c",
+       "answer": "f",
        "explain": "„Płacić z góry” znaczy zapłacić przed zajęciami, za całość. To przeciwieństwo „po każdych zajęciach” w tym samym pytaniu."
       },
       {
        "id": "el1-48",
        "n": 48,
        "kind": "bank",
-       "answer": "f",
+       "answer": "c",
        "explain": "Klient podejmuje decyzję na podstawie tego, co usłyszał. Taki wniosek wprowadza „w takim razie” (= więc, skoro tak)."
       },
       {
        "id": "el1-49",
        "n": 49,
        "kind": "bank",
-       "answer": "i",
+       "answer": "e",
        "explain": "Na końcu recepcjonistka dodaje praktyczną informację o butach. Dodatkową uwagę wprowadza „przy okazji”."
       }
      ]

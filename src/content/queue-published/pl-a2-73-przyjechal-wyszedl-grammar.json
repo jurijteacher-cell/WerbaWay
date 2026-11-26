@@ -75,8 +75,8 @@
           "answer": "wsiadł",
           "options": [
             "wsiadł",
-            "wysiadł",
-            "wyszedł"
+            "wyszedł",
+            "wysiadł"
           ],
           "grammar_point": "isc-jechac-przedrostki",
           "explanation": "Wsiąść do pociągu — wejść do środka. Wysiąść z pociągu — wyjść."
@@ -86,9 +86,9 @@
           "text": "Proszę ___ przez ulicę na zielonym świetle.",
           "answer": "przejść",
           "options": [
+            "zejść",
             "przejść",
-            "wejść",
-            "zejść"
+            "wejść"
           ],
           "grammar_point": "isc-jechac-przedrostki",
           "explanation": "Prze- + przez: przejść przez ulicę — na drugą stronę."
@@ -98,8 +98,8 @@
           "text": "Kiedy ___ do pokoju, zobaczyłam piękny widok.",
           "answer": "weszłam",
           "options": [
-            "weszłam",
             "wyszłam",
+            "weszłam",
             "zeszłam"
           ],
           "grammar_point": "isc-jechac-przedrostki",
@@ -110,9 +110,9 @@
           "text": "Z Kasprowego Wierchu ___ pieszo, bo kolejka nie jeździła.",
           "answer": "zeszliśmy",
           "options": [
-            "zeszliśmy",
             "weszliśmy",
-            "przeszliśmy"
+            "przeszliśmy",
+            "zeszliśmy"
           ],
           "grammar_point": "isc-jechac-przedrostki",
           "explanation": "Z- + z: zejść z góry — w dół."
@@ -123,8 +123,8 @@
           "answer": "wyjedziemy",
           "options": [
             "wyjedziemy",
-            "wjedziemy",
-            "dojedziemy"
+            "dojedziemy",
+            "wjedziemy"
           ],
           "grammar_point": "isc-jechac-przedrostki",
           "explanation": "Wy- + z: wyjechać z miasta — zostawić je."
@@ -146,9 +146,9 @@
           "text": "Autobus ___ z przystanku, zanim do niego dobiegłam.",
           "answer": "odjechał",
           "options": [
-            "odjechał",
+            "wjechał",
             "przyjechał",
-            "wjechał"
+            "odjechał"
           ],
           "grammar_point": "isc-jechac-przedrostki",
           "explanation": "Od-: odjechać z przystanku — zostawić to miejsce."
@@ -254,8 +254,8 @@
           "text": "Pociągi z Krakowa często ___ z opóźnieniem.",
           "answer": "przyjeżdżają",
           "options": [
-            "przyjeżdżają",
-            "przyjadą"
+            "przyjadą",
+            "przyjeżdżają"
           ],
           "grammar_point": "isc-jechac-przedrostki",
           "explanation": "Często → niedokonany: przyjeżdżać."
@@ -276,8 +276,8 @@
           "text": "Codziennie ___ obok tego kościoła w drodze do pracy.",
           "answer": "przejeżdżam",
           "options": [
-            "przejeżdżam",
-            "przejadę"
+            "przejadę",
+            "przejeżdżam"
           ],
           "grammar_point": "isc-jechac-przedrostki",
           "explanation": "Codziennie → niedokonany: przejeżdżać."
@@ -357,32 +357,32 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Kasjerka: Dzień dobry, słucham.\n\nOlena: Dzień dobry. {el1-1} Potrzebuję informacji o pociągu do Krakowa.\n\nKasjerka: {el1-2} Na kiedy?\n\nOlena: Na jutro, po obiedzie. O której pociąg odjeżdża?\n\nKasjerka: O 14:05. {el1-3} Przyjeżdża do Krakowa o 17:40.\n\nOlena: {el1-4} Z którego peronu odjeżdża?\n\nKasjerka: Z peronu drugiego. {el1-5}\n\nOlena: {el1-6} Czy mogę kupić bilet teraz?\n\nKasjerka: Tak, oczywiście. Dla ilu osób?\n\nOlena: Dla dziesięciu osób. {el1-7}\n\nKasjerka: Tak, dwadzieścia procent. {el1-8}",
       "bank": [
-        "a) Niestety pociąg już odjechał.",
-        "b) Przepraszam, że przeszkadzam.",
-        "c) Czy jest zniżka dla grup?",
-        "d) Dobrze, będziemy tam punktualnie.",
+        "a) To dobra godzina dla nas.",
+        "b) Niestety pociąg już odjechał.",
+        "c) Na szczęście nie ma opóźnienia.",
+        "d) Przepraszam, że przeszkadzam.",
         "e) Oczywiście, już sprawdzam.",
         "f) Dziękuję, wolę jechać autobusem.",
-        "g) Na szczęście nie ma opóźnienia.",
-        "h) Proszę przyjść na peron dziesięć minut wcześniej.",
-        "i) To dobra godzina dla nas.",
-        "j) Proszę podać nazwisko do rezerwacji."
+        "g) Dobrze, będziemy tam punktualnie.",
+        "h) Czy jest zniżka dla grup?",
+        "i) Proszę podać nazwisko do rezerwacji.",
+        "j) Proszę przyjść na peron dziesięć minut wcześniej."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "b) Przepraszam, że przeszkadzam.",
+          "answer": "d) Przepraszam, że przeszkadzam.",
           "options": [
-            "a) Niestety pociąg już odjechał.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Czy jest zniżka dla grup?",
-            "d) Dobrze, będziemy tam punktualnie.",
+            "a) To dobra godzina dla nas.",
+            "b) Niestety pociąg już odjechał.",
+            "c) Na szczęście nie ma opóźnienia.",
+            "d) Przepraszam, że przeszkadzam.",
             "e) Oczywiście, już sprawdzam.",
             "f) Dziękuję, wolę jechać autobusem.",
-            "g) Na szczęście nie ma opóźnienia.",
-            "h) Proszę przyjść na peron dziesięć minut wcześniej.",
-            "i) To dobra godzina dla nas.",
-            "j) Proszę podać nazwisko do rezerwacji."
+            "g) Dobrze, będziemy tam punktualnie.",
+            "h) Czy jest zniżka dla grup?",
+            "i) Proszę podać nazwisko do rezerwacji.",
+            "j) Proszę przyjść na peron dziesięć minut wcześniej."
           ],
           "explanation": "Olena zaczyna rozmowę uprzejmą formułą: „Przepraszam, że przeszkadzam”. Potem mówi, czego potrzebuje.",
           "grammar_point": "slownictwo"
@@ -391,124 +391,124 @@
           "id": "el1-2",
           "answer": "e) Oczywiście, już sprawdzam.",
           "options": [
-            "a) Niestety pociąg już odjechał.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Czy jest zniżka dla grup?",
-            "d) Dobrze, będziemy tam punktualnie.",
+            "a) To dobra godzina dla nas.",
+            "b) Niestety pociąg już odjechał.",
+            "c) Na szczęście nie ma opóźnienia.",
+            "d) Przepraszam, że przeszkadzam.",
             "e) Oczywiście, już sprawdzam.",
             "f) Dziękuję, wolę jechać autobusem.",
-            "g) Na szczęście nie ma opóźnienia.",
-            "h) Proszę przyjść na peron dziesięć minut wcześniej.",
-            "i) To dobra godzina dla nas.",
-            "j) Proszę podać nazwisko do rezerwacji."
+            "g) Dobrze, będziemy tam punktualnie.",
+            "h) Czy jest zniżka dla grup?",
+            "i) Proszę podać nazwisko do rezerwacji.",
+            "j) Proszę przyjść na peron dziesięć minut wcześniej."
           ],
           "explanation": "Kasjerka zgadza się pomóc: „Oczywiście, już sprawdzam”. Potem pyta o termin.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "g) Na szczęście nie ma opóźnienia.",
+          "answer": "c) Na szczęście nie ma opóźnienia.",
           "options": [
-            "a) Niestety pociąg już odjechał.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Czy jest zniżka dla grup?",
-            "d) Dobrze, będziemy tam punktualnie.",
+            "a) To dobra godzina dla nas.",
+            "b) Niestety pociąg już odjechał.",
+            "c) Na szczęście nie ma opóźnienia.",
+            "d) Przepraszam, że przeszkadzam.",
             "e) Oczywiście, już sprawdzam.",
             "f) Dziękuję, wolę jechać autobusem.",
-            "g) Na szczęście nie ma opóźnienia.",
-            "h) Proszę przyjść na peron dziesięć minut wcześniej.",
-            "i) To dobra godzina dla nas.",
-            "j) Proszę podać nazwisko do rezerwacji."
+            "g) Dobrze, będziemy tam punktualnie.",
+            "h) Czy jest zniżka dla grup?",
+            "i) Proszę podać nazwisko do rezerwacji.",
+            "j) Proszę przyjść na peron dziesięć minut wcześniej."
           ],
           "explanation": "Kasjerka podaje dobrą informację o pociągu. „Niestety pociąg już odjechał” przeczy zdaniu, że pociąg dopiero przyjeżdża do Krakowa o 17:40.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "i) To dobra godzina dla nas.",
+          "answer": "a) To dobra godzina dla nas.",
           "options": [
-            "a) Niestety pociąg już odjechał.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Czy jest zniżka dla grup?",
-            "d) Dobrze, będziemy tam punktualnie.",
+            "a) To dobra godzina dla nas.",
+            "b) Niestety pociąg już odjechał.",
+            "c) Na szczęście nie ma opóźnienia.",
+            "d) Przepraszam, że przeszkadzam.",
             "e) Oczywiście, już sprawdzam.",
             "f) Dziękuję, wolę jechać autobusem.",
-            "g) Na szczęście nie ma opóźnienia.",
-            "h) Proszę przyjść na peron dziesięć minut wcześniej.",
-            "i) To dobra godzina dla nas.",
-            "j) Proszę podać nazwisko do rezerwacji."
+            "g) Dobrze, będziemy tam punktualnie.",
+            "h) Czy jest zniżka dla grup?",
+            "i) Proszę podać nazwisko do rezerwacji.",
+            "j) Proszę przyjść na peron dziesięć minut wcześniej."
           ],
           "explanation": "Olena reaguje na godzinę odjazdu: „To dobra godzina dla nas”. Potem pyta o peron.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "h) Proszę przyjść na peron dziesięć minut wcześniej.",
+          "answer": "j) Proszę przyjść na peron dziesięć minut wcześniej.",
           "options": [
-            "a) Niestety pociąg już odjechał.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Czy jest zniżka dla grup?",
-            "d) Dobrze, będziemy tam punktualnie.",
+            "a) To dobra godzina dla nas.",
+            "b) Niestety pociąg już odjechał.",
+            "c) Na szczęście nie ma opóźnienia.",
+            "d) Przepraszam, że przeszkadzam.",
             "e) Oczywiście, już sprawdzam.",
             "f) Dziękuję, wolę jechać autobusem.",
-            "g) Na szczęście nie ma opóźnienia.",
-            "h) Proszę przyjść na peron dziesięć minut wcześniej.",
-            "i) To dobra godzina dla nas.",
-            "j) Proszę podać nazwisko do rezerwacji."
+            "g) Dobrze, będziemy tam punktualnie.",
+            "h) Czy jest zniżka dla grup?",
+            "i) Proszę podać nazwisko do rezerwacji.",
+            "j) Proszę przyjść na peron dziesięć minut wcześniej."
           ],
           "explanation": "Kasjerka dodaje praktyczną radę o peronie. Fragment pasuje do informacji, że pociąg odjeżdża z peronu drugiego.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "d) Dobrze, będziemy tam punktualnie.",
+          "answer": "g) Dobrze, będziemy tam punktualnie.",
           "options": [
-            "a) Niestety pociąg już odjechał.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Czy jest zniżka dla grup?",
-            "d) Dobrze, będziemy tam punktualnie.",
+            "a) To dobra godzina dla nas.",
+            "b) Niestety pociąg już odjechał.",
+            "c) Na szczęście nie ma opóźnienia.",
+            "d) Przepraszam, że przeszkadzam.",
             "e) Oczywiście, już sprawdzam.",
             "f) Dziękuję, wolę jechać autobusem.",
-            "g) Na szczęście nie ma opóźnienia.",
-            "h) Proszę przyjść na peron dziesięć minut wcześniej.",
-            "i) To dobra godzina dla nas.",
-            "j) Proszę podać nazwisko do rezerwacji."
+            "g) Dobrze, będziemy tam punktualnie.",
+            "h) Czy jest zniżka dla grup?",
+            "i) Proszę podać nazwisko do rezerwacji.",
+            "j) Proszę przyjść na peron dziesięć minut wcześniej."
           ],
           "explanation": "Olena potwierdza radę kasjerki: „Dobrze, będziemy tam punktualnie”. „Dziękuję, wolę jechać autobusem” nie pasuje do pytania o bilet.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "c) Czy jest zniżka dla grup?",
+          "answer": "h) Czy jest zniżka dla grup?",
           "options": [
-            "a) Niestety pociąg już odjechał.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Czy jest zniżka dla grup?",
-            "d) Dobrze, będziemy tam punktualnie.",
+            "a) To dobra godzina dla nas.",
+            "b) Niestety pociąg już odjechał.",
+            "c) Na szczęście nie ma opóźnienia.",
+            "d) Przepraszam, że przeszkadzam.",
             "e) Oczywiście, już sprawdzam.",
             "f) Dziękuję, wolę jechać autobusem.",
-            "g) Na szczęście nie ma opóźnienia.",
-            "h) Proszę przyjść na peron dziesięć minut wcześniej.",
-            "i) To dobra godzina dla nas.",
-            "j) Proszę podać nazwisko do rezerwacji."
+            "g) Dobrze, będziemy tam punktualnie.",
+            "h) Czy jest zniżka dla grup?",
+            "i) Proszę podać nazwisko do rezerwacji.",
+            "j) Proszę przyjść na peron dziesięć minut wcześniej."
           ],
           "explanation": "Olena jedzie z grupą dziesięciu osób, więc pyta o zniżkę: „Czy jest zniżka dla grup?”. Kasjerka odpowiada na to pytanie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "j) Proszę podać nazwisko do rezerwacji.",
+          "answer": "i) Proszę podać nazwisko do rezerwacji.",
           "options": [
-            "a) Niestety pociąg już odjechał.",
-            "b) Przepraszam, że przeszkadzam.",
-            "c) Czy jest zniżka dla grup?",
-            "d) Dobrze, będziemy tam punktualnie.",
+            "a) To dobra godzina dla nas.",
+            "b) Niestety pociąg już odjechał.",
+            "c) Na szczęście nie ma opóźnienia.",
+            "d) Przepraszam, że przeszkadzam.",
             "e) Oczywiście, już sprawdzam.",
             "f) Dziękuję, wolę jechać autobusem.",
-            "g) Na szczęście nie ma opóźnienia.",
-            "h) Proszę przyjść na peron dziesięć minut wcześniej.",
-            "i) To dobra godzina dla nas.",
-            "j) Proszę podać nazwisko do rezerwacji."
+            "g) Dobrze, będziemy tam punktualnie.",
+            "h) Czy jest zniżka dla grup?",
+            "i) Proszę podać nazwisko do rezerwacji.",
+            "j) Proszę przyjść na peron dziesięć minut wcześniej."
           ],
           "explanation": "Kasjerka potwierdza zniżkę i prosi o dane do rezerwacji. To naturalny krok przed zakupem biletów.",
           "grammar_point": "slownictwo"
@@ -527,9 +527,9 @@
           "id": "el2-1",
           "answer": "b) Szanowni",
           "options": [
-            "a) Drodzy",
+            "c) Mili",
             "b) Szanowni",
-            "c) Mili"
+            "a) Drodzy"
           ],
           "explanation": "W e-mailu do przewoźnika piszemy „Szanowni Państwo”. „Drodzy” i „Mili” są zbyt prywatne.",
           "grammar_point": "rejestr-formalny"
@@ -561,8 +561,8 @@
           "answer": "b) poprosić",
           "options": [
             "a) zapłacić",
-            "b) poprosić",
-            "c) kupić"
+            "c) kupić",
+            "b) poprosić"
           ],
           "explanation": "Mówimy „poprosić o zwrot”. „Zapłacić o zwrot” i „kupić o zwrot” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -571,8 +571,8 @@
           "id": "el2-5",
           "answer": "a) w",
           "options": [
-            "a) w",
             "b) na",
+            "a) w",
             "c) po"
           ],
           "explanation": "Mówimy „w internecie”. „Na internecie” i „po internecie” brzmią niepoprawnie.",
@@ -582,9 +582,9 @@
           "id": "el2-6",
           "answer": "c) z",
           "options": [
-            "a) o",
+            "c) z",
             "b) na",
-            "c) z"
+            "a) o"
           ],
           "explanation": "Skan biletu z numerem to bilet, który ma ten numer. „O numerem” i „na numerem” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -593,9 +593,9 @@
           "id": "el2-7",
           "answer": "c) kiedy",
           "options": [
-            "a) kto",
             "b) który",
-            "c) kiedy"
+            "c) kiedy",
+            "a) kto"
           ],
           "explanation": "Pytamy o czas: „kiedy otrzymam zwrot”. „Kto” i „który” nie pasują do takiego zdania.",
           "grammar_point": "rejestr-formalny"
@@ -605,8 +605,8 @@
           "answer": "a) pod",
           "options": [
             "a) pod",
-            "b) na",
-            "c) z"
+            "c) z",
+            "b) na"
           ],
           "explanation": "Mówimy „pod numerem telefonu”. „Na numerem” i „z numerem” zmieniają sens zdania.",
           "grammar_point": "rejestr-formalny"
@@ -616,8 +616,8 @@
           "answer": "b) góry",
           "options": [
             "a) dołu",
-            "b) góry",
-            "c) bliska"
+            "c) bliska",
+            "b) góry"
           ],
           "explanation": "Stała formuła: „Z góry dziękuję”. „Z dołu” i „z bliska” mają inne znaczenie.",
           "grammar_point": "rejestr-formalny"
@@ -626,9 +626,9 @@
           "id": "el2-10",
           "answer": "a) Z poważaniem",
           "options": [
-            "a) Z poważaniem",
             "b) Całuję",
-            "c) Hej"
+            "c) Hej",
+            "a) Z poważaniem"
           ],
           "explanation": "To oficjalne zakończenie reklamacji. „Całuję” i „Hej” są zbyt prywatne.",
           "grammar_point": "rejestr-formalny"

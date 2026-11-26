@@ -33,9 +33,9 @@
           "id": "g1-2",
           "text": "W naszej ekipie są tylko ___ dziewczyny.",
           "options": [
-            "cztery",
             "czterech",
-            "czworo"
+            "czworo",
+            "cztery"
           ],
           "answer": "cztery",
           "explanation": "Dziewczyny to kobiety: cztery dziewczyny.",
@@ -45,8 +45,8 @@
           "id": "g1-3",
           "text": "Sąsiedzi mają ___ psy i kota.",
           "options": [
-            "dwa",
             "dwóch",
+            "dwa",
             "dwoje"
           ],
           "answer": "dwa",
@@ -57,9 +57,9 @@
           "id": "g1-4",
           "text": "Do pizzerii weszło ___ chłopaków.",
           "options": [
-            "sześć",
             "sześciu",
-            "sześcioro"
+            "sześcioro",
+            "sześć"
           ],
           "answer": "sześciu",
           "explanation": "Chłopaki to mężczyźni: sześciu chłopaków.",
@@ -70,8 +70,8 @@
           "text": "Zamówiliśmy ___ kebsy na wynos.",
           "options": [
             "trzy",
-            "trzech",
-            "troje"
+            "troje",
+            "trzech"
           ],
           "answer": "trzy",
           "explanation": "Kebsy to rzeczy: trzy kebsy.",
@@ -81,9 +81,9 @@
           "id": "g1-6",
           "text": "Na ławce siedzi ___ starszych panów.",
           "options": [
-            "pięciu",
             "pięć",
-            "pięcioro"
+            "pięcioro",
+            "pięciu"
           ],
           "answer": "pięciu",
           "explanation": "Panowie to mężczyźni: pięciu panów.",
@@ -93,9 +93,9 @@
           "id": "g1-7",
           "text": "Zostały nam tylko ___ stówy.",
           "options": [
-            "dwie",
             "dwóch",
-            "dwoje"
+            "dwoje",
+            "dwie"
           ],
           "answer": "dwie",
           "explanation": "Stówa jest rodzaju żeńskiego: dwie stówy.",
@@ -105,9 +105,9 @@
           "id": "g1-8",
           "text": "Na parkingu stoją ___ fury sąsiada.",
           "options": [
+            "czworo",
             "cztery",
-            "czterech",
-            "czworo"
+            "czterech"
           ],
           "answer": "cztery",
           "explanation": "Fury to rzeczy: cztery fury.",
@@ -335,8 +335,8 @@
           "id": "g5-2",
           "text": "Do sklepu weszło ___ facetów w czapkach.",
           "options": [
-            "dwóch",
             "dwoje",
+            "dwóch",
             "dwie"
           ],
           "answer": "dwóch",
@@ -347,9 +347,9 @@
           "id": "g5-3",
           "text": "W naszym mieszkaniu mieszka ___ osób.",
           "options": [
-            "pięć",
+            "pięcioro",
             "pięciu",
-            "pięcioro"
+            "pięć"
           ],
           "answer": "pięć",
           "explanation": "„Osoba” jest rodzaju żeńskiego: pięć osób.",
@@ -360,8 +360,8 @@
           "text": "Na wypad jedzie ___ znajomych: Ewa, Piotr i Ania.",
           "options": [
             "troje",
-            "trzech",
-            "trzy"
+            "trzy",
+            "trzech"
           ],
           "answer": "troje",
           "explanation": "Grupa mieszana: troje znajomych.",
@@ -372,8 +372,8 @@
           "text": "Do kina poszło ___ kolegów, same chłopaki.",
           "options": [
             "czworo",
-            "czterech",
-            "cztery"
+            "cztery",
+            "czterech"
           ],
           "answer": "czterech",
           "explanation": "Sami mężczyźni: czterech kolegów.",
@@ -384,8 +384,8 @@
           "text": "Nasi sąsiedzi mają ___ dzieci i dwa psy.",
           "options": [
             "pięcioro",
-            "pięciu",
-            "pięć"
+            "pięć",
+            "pięciu"
           ],
           "answer": "pięcioro",
           "explanation": "Dzieci liczymy zbiorowo: pięcioro dzieci.",
@@ -395,8 +395,8 @@
           "id": "g5-7",
           "text": "Było nas ___: dwie dziewczyny i dwóch chłopaków.",
           "options": [
-            "czworo",
             "czterech",
+            "czworo",
             "cztery"
           ],
           "answer": "czworo",
@@ -408,8 +408,8 @@
           "text": "Do pokoju kupiliśmy ___ drzwi.",
           "options": [
             "dwoje",
-            "dwa",
-            "dwie"
+            "dwie",
+            "dwa"
           ],
           "answer": "dwoje",
           "explanation": "Drzwi mają tylko liczbę mnogą: dwoje drzwi.",
@@ -626,158 +626,158 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Pracownik: Wypożyczalnia busów, słucham.\n\nMarek: Cześć. Potrzebujemy busa na weekend do Wrocławia. {el1-1}\n\nPracownik: {el1-2} Na kiedy chcieliby Państwo wynająć?\n\nMarek: {el1-3}\n\nPracownik: Dobrze, bus jest wolny. Wynajem na trzy dni kosztuje osiemset złotych.\n\nMarek: {el1-4}\n\nPracownik: {el1-5}\n\nMarek: {el1-6} Czy trzeba zostawić kaucję?\n\nPracownik: Tak, tysiąc złotych. {el1-7}\n\nMarek: {el1-8}",
       "bank": [
-        "a) Ile osób może jechać takim busem?",
-        "b) Bus ma klimatyzację i nawigację.",
-        "c) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
-        "d) Dziewięć osób razem z kierowcą.",
-        "e) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
-        "f) Bus ma już ponad dziesięć lat.",
-        "g) Zwrócimy ją po oddaniu auta.",
-        "h) Od piątku wieczorem do poniedziałku rano.",
-        "i) W takim razie rezerwuję od razu.",
-        "j) Super, ogarniemy to. Dzięki za pomoc!"
+        "a) Super, ogarniemy to. Dzięki za pomoc!",
+        "b) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
+        "c) Zwrócimy ją po oddaniu auta.",
+        "d) Ile osób może jechać takim busem?",
+        "e) Dziewięć osób razem z kierowcą.",
+        "f) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
+        "g) Od piątku wieczorem do poniedziałku rano.",
+        "h) Bus ma już ponad dziesięć lat.",
+        "i) Bus ma klimatyzację i nawigację.",
+        "j) W takim razie rezerwuję od razu."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "a) Ile osób może jechać takim busem?",
+          "answer": "d) Ile osób może jechać takim busem?",
           "options": [
-            "a) Ile osób może jechać takim busem?",
-            "b) Bus ma klimatyzację i nawigację.",
-            "c) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
-            "d) Dziewięć osób razem z kierowcą.",
-            "e) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
-            "f) Bus ma już ponad dziesięć lat.",
-            "g) Zwrócimy ją po oddaniu auta.",
-            "h) Od piątku wieczorem do poniedziałku rano.",
-            "i) W takim razie rezerwuję od razu.",
-            "j) Super, ogarniemy to. Dzięki za pomoc!"
+            "a) Super, ogarniemy to. Dzięki za pomoc!",
+            "b) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
+            "c) Zwrócimy ją po oddaniu auta.",
+            "d) Ile osób może jechać takim busem?",
+            "e) Dziewięć osób razem z kierowcą.",
+            "f) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
+            "g) Od piątku wieczorem do poniedziałku rano.",
+            "h) Bus ma już ponad dziesięć lat.",
+            "i) Bus ma klimatyzację i nawigację.",
+            "j) W takim razie rezerwuję od razu."
           ],
           "explanation": "Marek pyta o pojemność auta, bo jedzie duża ekipa. Odpowiedź pracownika podaje liczbę osób.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "d) Dziewięć osób razem z kierowcą.",
+          "answer": "e) Dziewięć osób razem z kierowcą.",
           "options": [
-            "a) Ile osób może jechać takim busem?",
-            "b) Bus ma klimatyzację i nawigację.",
-            "c) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
-            "d) Dziewięć osób razem z kierowcą.",
-            "e) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
-            "f) Bus ma już ponad dziesięć lat.",
-            "g) Zwrócimy ją po oddaniu auta.",
-            "h) Od piątku wieczorem do poniedziałku rano.",
-            "i) W takim razie rezerwuję od razu.",
-            "j) Super, ogarniemy to. Dzięki za pomoc!"
+            "a) Super, ogarniemy to. Dzięki za pomoc!",
+            "b) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
+            "c) Zwrócimy ją po oddaniu auta.",
+            "d) Ile osób może jechać takim busem?",
+            "e) Dziewięć osób razem z kierowcą.",
+            "f) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
+            "g) Od piątku wieczorem do poniedziałku rano.",
+            "h) Bus ma już ponad dziesięć lat.",
+            "i) Bus ma klimatyzację i nawigację.",
+            "j) W takim razie rezerwuję od razu."
           ],
           "explanation": "To dokładna odpowiedź na pytanie o liczbę miejsc. Zaraz potem pracownik pyta o termin.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "h) Od piątku wieczorem do poniedziałku rano.",
+          "answer": "g) Od piątku wieczorem do poniedziałku rano.",
           "options": [
-            "a) Ile osób może jechać takim busem?",
-            "b) Bus ma klimatyzację i nawigację.",
-            "c) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
-            "d) Dziewięć osób razem z kierowcą.",
-            "e) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
-            "f) Bus ma już ponad dziesięć lat.",
-            "g) Zwrócimy ją po oddaniu auta.",
-            "h) Od piątku wieczorem do poniedziałku rano.",
-            "i) W takim razie rezerwuję od razu.",
-            "j) Super, ogarniemy to. Dzięki za pomoc!"
+            "a) Super, ogarniemy to. Dzięki za pomoc!",
+            "b) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
+            "c) Zwrócimy ją po oddaniu auta.",
+            "d) Ile osób może jechać takim busem?",
+            "e) Dziewięć osób razem z kierowcą.",
+            "f) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
+            "g) Od piątku wieczorem do poniedziałku rano.",
+            "h) Bus ma już ponad dziesięć lat.",
+            "i) Bus ma klimatyzację i nawigację.",
+            "j) W takim razie rezerwuję od razu."
           ],
           "explanation": "Pracownik zapytał „na kiedy”, więc Marek podaje daty i godziny. Pasuje też do wyjazdu na weekend.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "e) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
+          "answer": "f) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
           "options": [
-            "a) Ile osób może jechać takim busem?",
-            "b) Bus ma klimatyzację i nawigację.",
-            "c) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
-            "d) Dziewięć osób razem z kierowcą.",
-            "e) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
-            "f) Bus ma już ponad dziesięć lat.",
-            "g) Zwrócimy ją po oddaniu auta.",
-            "h) Od piątku wieczorem do poniedziałku rano.",
-            "i) W takim razie rezerwuję od razu.",
-            "j) Super, ogarniemy to. Dzięki za pomoc!"
+            "a) Super, ogarniemy to. Dzięki za pomoc!",
+            "b) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
+            "c) Zwrócimy ją po oddaniu auta.",
+            "d) Ile osób może jechać takim busem?",
+            "e) Dziewięć osób razem z kierowcą.",
+            "f) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
+            "g) Od piątku wieczorem do poniedziałku rano.",
+            "h) Bus ma już ponad dziesięć lat.",
+            "i) Bus ma klimatyzację i nawigację.",
+            "j) W takim razie rezerwuję od razu."
           ],
           "explanation": "Po usłyszeniu ceny Marek negocjuje. „Trochę dużo” to łagodny sposób na powiedzenie, że cena jest wysoka.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "c) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
+          "answer": "b) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
           "options": [
-            "a) Ile osób może jechać takim busem?",
-            "b) Bus ma klimatyzację i nawigację.",
-            "c) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
-            "d) Dziewięć osób razem z kierowcą.",
-            "e) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
-            "f) Bus ma już ponad dziesięć lat.",
-            "g) Zwrócimy ją po oddaniu auta.",
-            "h) Od piątku wieczorem do poniedziałku rano.",
-            "i) W takim razie rezerwuję od razu.",
-            "j) Super, ogarniemy to. Dzięki za pomoc!"
+            "a) Super, ogarniemy to. Dzięki za pomoc!",
+            "b) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
+            "c) Zwrócimy ją po oddaniu auta.",
+            "d) Ile osób może jechać takim busem?",
+            "e) Dziewięć osób razem z kierowcą.",
+            "f) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
+            "g) Od piątku wieczorem do poniedziałku rano.",
+            "h) Bus ma już ponad dziesięć lat.",
+            "i) Bus ma klimatyzację i nawigację.",
+            "j) W takim razie rezerwuję od razu."
           ],
           "explanation": "Pracownik odpowiada na pytanie o zniżkę i podaje warunek. Informacja o wieku busa nie jest reakcją na to pytanie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "i) W takim razie rezerwuję od razu.",
+          "answer": "j) W takim razie rezerwuję od razu.",
           "options": [
-            "a) Ile osób może jechać takim busem?",
-            "b) Bus ma klimatyzację i nawigację.",
-            "c) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
-            "d) Dziewięć osób razem z kierowcą.",
-            "e) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
-            "f) Bus ma już ponad dziesięć lat.",
-            "g) Zwrócimy ją po oddaniu auta.",
-            "h) Od piątku wieczorem do poniedziałku rano.",
-            "i) W takim razie rezerwuję od razu.",
-            "j) Super, ogarniemy to. Dzięki za pomoc!"
+            "a) Super, ogarniemy to. Dzięki za pomoc!",
+            "b) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
+            "c) Zwrócimy ją po oddaniu auta.",
+            "d) Ile osób może jechać takim busem?",
+            "e) Dziewięć osób razem z kierowcą.",
+            "f) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
+            "g) Od piątku wieczorem do poniedziałku rano.",
+            "h) Bus ma już ponad dziesięć lat.",
+            "i) Bus ma klimatyzację i nawigację.",
+            "j) W takim razie rezerwuję od razu."
           ],
           "explanation": "„W takim razie” oznacza decyzję po usłyszeniu oferty. Potem Marek pyta jeszcze o kaucję.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "g) Zwrócimy ją po oddaniu auta.",
+          "answer": "c) Zwrócimy ją po oddaniu auta.",
           "options": [
-            "a) Ile osób może jechać takim busem?",
-            "b) Bus ma klimatyzację i nawigację.",
-            "c) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
-            "d) Dziewięć osób razem z kierowcą.",
-            "e) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
-            "f) Bus ma już ponad dziesięć lat.",
-            "g) Zwrócimy ją po oddaniu auta.",
-            "h) Od piątku wieczorem do poniedziałku rano.",
-            "i) W takim razie rezerwuję od razu.",
-            "j) Super, ogarniemy to. Dzięki za pomoc!"
+            "a) Super, ogarniemy to. Dzięki za pomoc!",
+            "b) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
+            "c) Zwrócimy ją po oddaniu auta.",
+            "d) Ile osób może jechać takim busem?",
+            "e) Dziewięć osób razem z kierowcą.",
+            "f) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
+            "g) Od piątku wieczorem do poniedziałku rano.",
+            "h) Bus ma już ponad dziesięć lat.",
+            "i) Bus ma klimatyzację i nawigację.",
+            "j) W takim razie rezerwuję od razu."
           ],
           "explanation": "Pracownik wyjaśnia, co stanie się z kaucją („ją”). To logiczne dopełnienie zdania „Tak, tysiąc złotych”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "j) Super, ogarniemy to. Dzięki za pomoc!",
+          "answer": "a) Super, ogarniemy to. Dzięki za pomoc!",
           "options": [
-            "a) Ile osób może jechać takim busem?",
-            "b) Bus ma klimatyzację i nawigację.",
-            "c) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
-            "d) Dziewięć osób razem z kierowcą.",
-            "e) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
-            "f) Bus ma już ponad dziesięć lat.",
-            "g) Zwrócimy ją po oddaniu auta.",
-            "h) Od piątku wieczorem do poniedziałku rano.",
-            "i) W takim razie rezerwuję od razu.",
-            "j) Super, ogarniemy to. Dzięki za pomoc!"
+            "a) Super, ogarniemy to. Dzięki za pomoc!",
+            "b) Mogę zrobić zniżkę sto złotych, jeśli zarezerwuje Pan przez internet.",
+            "c) Zwrócimy ją po oddaniu auta.",
+            "d) Ile osób może jechać takim busem?",
+            "e) Dziewięć osób razem z kierowcą.",
+            "f) Osiemset to trochę dużo. Czy jest jakaś zniżka?",
+            "g) Od piątku wieczorem do poniedziałku rano.",
+            "h) Bus ma już ponad dziesięć lat.",
+            "i) Bus ma klimatyzację i nawigację.",
+            "j) W takim razie rezerwuję od razu."
           ],
           "explanation": "Marek kończy rozmowę luźno i z podziękowaniem, bo wszystko jest już ustalone. Informacja o klimatyzacji busa nie pasuje do zakończenia rozmowy.",
           "grammar_point": "slownictwo"
@@ -796,9 +796,9 @@
           "id": "el2-1",
           "answer": "a) Zwracam",
           "options": [
-            "a) Zwracam",
+            "c) Piszę się",
             "b) Kieruję",
-            "c) Piszę się"
+            "a) Zwracam"
           ],
           "explanation": "Stała formuła to „zwracam się do Państwa w sprawie…”. „Kieruję się do” i „piszę się do” mają inne znaczenie albo są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -807,9 +807,9 @@
           "id": "el2-2",
           "answer": "b) odebrałem",
           "options": [
-            "a) odwołałem",
             "b) odebrałem",
-            "c) odpowiedziałem"
+            "c) odpowiedziałem",
+            "a) odwołałem"
           ],
           "explanation": "Auto z wypożyczalni się „odbiera”. „Odwołać” oznacza anulować, a „odpowiedzieć” dotyczy rozmowy.",
           "grammar_point": "rejestr-formalny"
@@ -818,9 +818,9 @@
           "id": "el2-3",
           "answer": "b) w terminie",
           "options": [
-            "a) po terminie",
             "b) w terminie",
-            "c) na termin"
+            "c) na termin",
+            "a) po terminie"
           ],
           "explanation": "„W terminie” znaczy zgodnie z umową. Marek podkreśla, że nie spóźnił się z oddaniem auta.",
           "grammar_point": "rejestr-formalny"
@@ -829,9 +829,9 @@
           "id": "el2-4",
           "answer": "a) zgłosił",
           "options": [
+            "c) zaproponował",
             "a) zgłosił",
-            "b) ogłosił",
-            "c) zaproponował"
+            "b) ogłosił"
           ],
           "explanation": "Mówimy „zgłosić uwagi”, czyli powiedzieć o problemach. „Ogłosić uwagi” i „zaproponować uwag” nie pasują do zdania.",
           "grammar_point": "rejestr-formalny"
@@ -841,8 +841,8 @@
           "answer": "c) wpłynęła",
           "options": [
             "a) wypłynęła",
-            "b) wpadła",
-            "c) wpłynęła"
+            "c) wpłynęła",
+            "b) wpadła"
           ],
           "explanation": "Pieniądze „wpływają” na konto. „Wypłynęły” oznacza coś odwrotnego, a „wpadła” jest zbyt potoczne w oficjalnym liście.",
           "grammar_point": "rejestr-formalny"
@@ -851,9 +851,9 @@
           "id": "el2-6",
           "answer": "b) wyjaśnienie",
           "options": [
+            "c) wyjęcie",
             "a) wyjazd",
-            "b) wyjaśnienie",
-            "c) wyjęcie"
+            "b) wyjaśnienie"
           ],
           "explanation": "Prosimy o „wyjaśnienie sprawy”, czyli o wytłumaczenie, dlaczego nie ma pieniędzy. Pozostałe słowa nie pasują do prośby.",
           "grammar_point": "rejestr-formalny"
@@ -862,9 +862,9 @@
           "id": "el2-7",
           "answer": "c) podziękować",
           "options": [
+            "c) podziękować",
             "a) przeprosić",
-            "b) odpowiedzieć",
-            "c) podziękować"
+            "b) odpowiedzieć"
           ],
           "explanation": "Mówimy „podziękować komuś za coś”. „Przeprosić” zmienia sens zdania, a „odpowiedzieć za pomoc” jest niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -873,9 +873,9 @@
           "id": "el2-8",
           "answer": "a) z",
           "options": [
+            "c) w",
             "a) z",
-            "b) na",
-            "c) w"
+            "b) na"
           ],
           "explanation": "Mówimy „skorzystać z czegoś”. „Skorzystać na usług” i „w usług” są błędne.",
           "grammar_point": "rejestr-formalny"
@@ -884,8 +884,8 @@
           "id": "el2-9",
           "answer": "b) Z góry",
           "options": [
-            "a) Z dołu",
             "b) Z góry",
+            "a) Z dołu",
             "c) Z boku"
           ],
           "explanation": "„Z góry dziękuję” to stała formuła grzecznościowa w prośbach. Pozostałe warianty nie istnieją w tym znaczeniu.",
@@ -895,9 +895,9 @@
           "id": "el2-10",
           "answer": "a) Z poważaniem",
           "options": [
+            "c) Do zobaczenia",
             "a) Z poważaniem",
-            "b) Cześć",
-            "c) Do zobaczenia"
+            "b) Cześć"
           ],
           "explanation": "„Z poważaniem” to standardowe zakończenie oficjalnego e-maila. „Cześć” i „Do zobaczenia” są zbyt swobodne.",
           "grammar_point": "rejestr-formalny"

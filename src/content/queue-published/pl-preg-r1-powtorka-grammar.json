@@ -29,8 +29,8 @@
           "id": "g1-2",
           "text": "Pielęgniarka mierzy pacjentce ___.",
           "options": [
-            "tętno dziecka",
             "wagę",
+            "tętno dziecka",
             "ciśnienie"
           ],
           "answer": "ciśnienie",
@@ -57,8 +57,8 @@
           "id": "g1-4",
           "text": "Probówki z krwią są już w ___. Wynik będzie za dwa dni.",
           "options": [
-            "rejestracji",
             "laboratorium",
+            "rejestracji",
             "aptece"
           ],
           "answer": "laboratorium",
@@ -71,9 +71,9 @@
           "id": "g1-5",
           "text": "Na tym aparacie lekarz robi ___ i na ekranie widzi dziecko.",
           "options": [
+            "wywiad",
             "morfologię",
-            "USG",
-            "wywiad"
+            "USG"
           ],
           "answer": "USG",
           "grammar_point": "slownictwo",
@@ -178,9 +178,9 @@
           "id": "g3-1",
           "text": "Na pierwszej wizycie ___ czekać w poczekalni prawie godzinę.",
           "options": [
-            "muszę",
             "musiałam",
-            "będę musiała"
+            "będę musiała",
+            "muszę"
           ],
           "answer": "musiałam",
           "grammar_point": "modalne-przeszly"
@@ -212,9 +212,9 @@
           "id": "g3-4",
           "text": "Za miesiąc ___ zrobić kolejne badanie krwi.",
           "options": [
-            "powinnam będę",
+            "trzeba było",
             "trzeba będzie",
-            "trzeba było"
+            "powinnam będę"
           ],
           "answer": "trzeba będzie",
           "grammar_point": "modalne-przyszly",
@@ -224,8 +224,8 @@
           "id": "g3-5",
           "text": "Mąż nie ___ pójść ze mną na USG, bo był w pracy.",
           "options": [
-            "mogła",
             "mogło",
+            "mogła",
             "mógł"
           ],
           "answer": "mógł",
@@ -236,9 +236,9 @@
           "id": "g3-6",
           "text": "Olena i Kasia ___ długo czekać na wyniki.",
           "options": [
-            "musiały",
             "musieli",
-            "musiała"
+            "musiała",
+            "musiały"
           ],
           "answer": "musiały",
           "grammar_point": "modalne-przeszly",
@@ -279,9 +279,9 @@
           "id": "g4-1",
           "text": "Badanie moczu ___ prawie przed każdą wizytą.",
           "options": [
-            "zrobię",
             "robię",
-            "zrobiłam"
+            "zrobiłam",
+            "zrobię"
           ],
           "answer": "robię",
           "grammar_point": "aspekt",
@@ -291,8 +291,8 @@
           "id": "g4-2",
           "text": "Wczoraj ___ wyniki morfologii z rejestracji.",
           "options": [
-            "odbierałam",
             "odbieram",
+            "odbierałam",
             "odebrałam"
           ],
           "answer": "odebrałam",
@@ -303,9 +303,9 @@
           "id": "g4-3",
           "text": "Przez dwie godziny ___ w laboratorium i czytałam książkę.",
           "options": [
+            "usiadłam",
             "siedziałam",
-            "posiedzę",
-            "usiadłam"
+            "posiedzę"
           ],
           "answer": "siedziałam",
           "grammar_point": "aspekt",
@@ -315,9 +315,9 @@
           "id": "g4-4",
           "text": "Jutro ___ do rejestracji, żeby przełożyć wizytę.",
           "options": [
-            "chodzę",
             "pójdę",
-            "chodziłam"
+            "chodziłam",
+            "chodzę"
           ],
           "answer": "pójdę",
           "grammar_point": "aspekt",
@@ -327,9 +327,9 @@
           "id": "g4-5",
           "text": "Co miesiąc ___ na wizytę kontrolną.",
           "options": [
-            "idę",
             "pójdę",
-            "chodzę"
+            "chodzę",
+            "idę"
           ],
           "answer": "chodzę",
           "grammar_point": "aspekt",
@@ -351,8 +351,8 @@
           "text": "Trzy miesiące temu zaczęłam ___ dziennik ciąży.",
           "options": [
             "poprowadzić",
-            "prowadzić",
-            "prowadzę"
+            "prowadzę",
+            "prowadzić"
           ],
           "answer": "prowadzić",
           "grammar_point": "aspekt",
@@ -362,9 +362,9 @@
           "id": "g4-8",
           "text": "Jeszcze nie ___ skierowania na krzywą cukrową.",
           "options": [
+            "dostaję",
             "dostałam",
-            "dostawałam",
-            "dostaję"
+            "dostawałam"
           ],
           "answer": "dostałam",
           "grammar_point": "aspekt",
@@ -374,9 +374,9 @@
           "id": "g4-9",
           "text": "Wczoraj ___ badanie krwi.",
           "options": [
-            "zdałam",
             "zrobiłam",
-            "robiłam"
+            "robiłam",
+            "zdałam"
           ],
           "answer": "zrobiłam",
           "grammar_point": "kalki-uk",
@@ -387,8 +387,8 @@
           "text": "Jutro ___ lekarza o wyniki.",
           "options": [
             "będę zapytać",
-            "pytałam",
-            "zapytam"
+            "zapytam",
+            "pytałam"
           ],
           "answer": "zapytam",
           "grammar_point": "aspekt",

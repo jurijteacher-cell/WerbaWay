@@ -98,8 +98,8 @@
           "text": "Wiem, ___ to daleko od twojego domu.",
           "answer": "że",
           "options": [
-            "że",
             "bo",
+            "że",
             "więc"
           ],
           "grammar_point": "zdania-zlozone-ze",
@@ -122,8 +122,8 @@
           "text": "Mieszkam blisko, ___ chodzę do pracy pieszo.",
           "answer": "więc",
           "options": [
-            "więc",
             "bo",
+            "więc",
             "ponieważ"
           ],
           "grammar_point": "zdania-zlozone-ze",
@@ -134,9 +134,9 @@
           "text": "Myślę, ___ to dobra zmiana.",
           "answer": "że",
           "options": [
-            "że",
             "co",
-            "bo"
+            "bo",
+            "że"
           ],
           "grammar_point": "kalki-uk",
           "explanation": "Myślę, że… — nie „co”."
@@ -146,9 +146,9 @@
           "text": "Nie przyszedłem na zebranie, ___ byłem chory.",
           "answer": "bo",
           "options": [
-            "bo",
             "dlatego",
-            "więc"
+            "więc",
+            "bo"
           ],
           "grammar_point": "zdania-zlozone-ze",
           "explanation": "Przyczyna → bo."
@@ -244,9 +244,9 @@
           "text": "Spóźniłam się, ___ autobus nie przyjechał.",
           "answer": "ponieważ",
           "options": [
-            "ponieważ",
+            "więc",
             "dlatego",
-            "więc"
+            "ponieważ"
           ],
           "grammar_point": "zdania-zlozone-ze",
           "explanation": "Najpierw skutek, potem przyczyna → ponieważ."
@@ -256,9 +256,9 @@
           "text": "Autobus nie przyjechał, ___ spóźniłam się.",
           "answer": "więc",
           "options": [
+            "bo",
             "więc",
-            "ponieważ",
-            "bo"
+            "ponieważ"
           ],
           "grammar_point": "zdania-zlozone-ze",
           "explanation": "Najpierw przyczyna, potem skutek → więc."
@@ -268,9 +268,9 @@
           "text": "Lubię nowe biuro, ___ że jest blisko domu.",
           "answer": "dlatego",
           "options": [
-            "dlatego",
+            "więc",
             "bo",
-            "więc"
+            "dlatego"
           ],
           "grammar_point": "zdania-zlozone-ze",
           "explanation": "Dlatego że = bo."
@@ -292,8 +292,8 @@
           "text": "Mam małe dziecko, ___ pracuję z domu.",
           "answer": "dlatego",
           "options": [
-            "dlatego",
             "bo",
+            "dlatego",
             "ponieważ"
           ],
           "grammar_point": "zdania-zlozone-ze",
@@ -388,15 +388,15 @@
       "text": "Tomek: Cześć, Kasiu! Czytałaś e-mail od pana Piotra o nowym biurze?\n\nKasia: Tak, czytałam. {el1-1} Dla mnie to bardzo daleko.\n\nTomek: {el1-2} Przecież w nowym biurze są dwie sale i duża kuchnia.\n\nKasia: Bo mieszkam na Podgórzu i dojazd zajmie mi prawie godzinę. {el1-3}\n\nTomek: {el1-4} Ale od maja możemy pracować z domu dwa dni w tygodniu.\n\nKasia: {el1-5} Czy każdy może wybrać dni?\n\nTomek: {el1-6} Trzeba tylko napisać do pani Agnieszki do piętnastego.\n\nKasia: {el1-7} Wybieram wtorek i czwartek.\n\nTomek: Dobrze. A w piątek jest zebranie o piętnastej.\n\nKasia: {el1-8} Dziękuję, że mi przypomniałeś.",
       "bank": [
         "a) Naprawdę?",
-        "b) Niestety nie mam czasu.",
+        "b) Przykro mi, to nie moja wina.",
         "c) Nie jestem zadowolona.",
-        "d) Przykro mi, to nie moja wina.",
+        "d) To dobra wiadomość.",
         "e) Dlaczego tak mówisz?",
-        "f) To dobra wiadomość.",
+        "f) Niestety nie mam czasu.",
         "g) Rozumiem cię.",
-        "h) Tak, każdy.",
+        "h) Będę na pewno.",
         "i) Szkoda, że nikt nas nie zapytał.",
-        "j) Będę na pewno."
+        "j) Tak, każdy."
       ],
       "items": [
         {
@@ -404,15 +404,15 @@
           "answer": "c) Nie jestem zadowolona.",
           "options": [
             "a) Naprawdę?",
-            "b) Niestety nie mam czasu.",
+            "b) Przykro mi, to nie moja wina.",
             "c) Nie jestem zadowolona.",
-            "d) Przykro mi, to nie moja wina.",
+            "d) To dobra wiadomość.",
             "e) Dlaczego tak mówisz?",
-            "f) To dobra wiadomość.",
+            "f) Niestety nie mam czasu.",
             "g) Rozumiem cię.",
-            "h) Tak, każdy.",
+            "h) Będę na pewno.",
             "i) Szkoda, że nikt nas nie zapytał.",
-            "j) Będę na pewno."
+            "j) Tak, każdy."
           ],
           "explanation": "Kasia mówi, że nowe biuro jest dla niej daleko, więc nie jest zadowolona. To pasuje do zdania „Dla mnie to bardzo daleko”.",
           "grammar_point": "slownictwo"
@@ -422,15 +422,15 @@
           "answer": "e) Dlaczego tak mówisz?",
           "options": [
             "a) Naprawdę?",
-            "b) Niestety nie mam czasu.",
+            "b) Przykro mi, to nie moja wina.",
             "c) Nie jestem zadowolona.",
-            "d) Przykro mi, to nie moja wina.",
+            "d) To dobra wiadomość.",
             "e) Dlaczego tak mówisz?",
-            "f) To dobra wiadomość.",
+            "f) Niestety nie mam czasu.",
             "g) Rozumiem cię.",
-            "h) Tak, każdy.",
+            "h) Będę na pewno.",
             "i) Szkoda, że nikt nas nie zapytał.",
-            "j) Będę na pewno."
+            "j) Tak, każdy."
           ],
           "explanation": "Tomek pyta o przyczynę, bo nie zgadza się z Kasią. Potem podaje argument: „Przecież…”.",
           "grammar_point": "slownictwo"
@@ -440,15 +440,15 @@
           "answer": "i) Szkoda, że nikt nas nie zapytał.",
           "options": [
             "a) Naprawdę?",
-            "b) Niestety nie mam czasu.",
+            "b) Przykro mi, to nie moja wina.",
             "c) Nie jestem zadowolona.",
-            "d) Przykro mi, to nie moja wina.",
+            "d) To dobra wiadomość.",
             "e) Dlaczego tak mówisz?",
-            "f) To dobra wiadomość.",
+            "f) Niestety nie mam czasu.",
             "g) Rozumiem cię.",
-            "h) Tak, każdy.",
+            "h) Będę na pewno.",
             "i) Szkoda, że nikt nas nie zapytał.",
-            "j) Będę na pewno."
+            "j) Tak, każdy."
           ],
           "explanation": "Kasia jest rozczarowana, bo decyzję podjęto bez niej. To reakcja na jej opis problemu z dojazdem.",
           "grammar_point": "slownictwo"
@@ -458,15 +458,15 @@
           "answer": "g) Rozumiem cię.",
           "options": [
             "a) Naprawdę?",
-            "b) Niestety nie mam czasu.",
+            "b) Przykro mi, to nie moja wina.",
             "c) Nie jestem zadowolona.",
-            "d) Przykro mi, to nie moja wina.",
+            "d) To dobra wiadomość.",
             "e) Dlaczego tak mówisz?",
-            "f) To dobra wiadomość.",
+            "f) Niestety nie mam czasu.",
             "g) Rozumiem cię.",
-            "h) Tak, każdy.",
+            "h) Będę na pewno.",
             "i) Szkoda, że nikt nas nie zapytał.",
-            "j) Będę na pewno."
+            "j) Tak, każdy."
           ],
           "explanation": "Tomek okazuje zrozumienie i dodaje „ale” z dobrą informacją. „Rozumiem cię” pasuje do tej struktury.",
           "grammar_point": "slownictwo"
@@ -476,69 +476,69 @@
           "answer": "a) Naprawdę?",
           "options": [
             "a) Naprawdę?",
-            "b) Niestety nie mam czasu.",
+            "b) Przykro mi, to nie moja wina.",
             "c) Nie jestem zadowolona.",
-            "d) Przykro mi, to nie moja wina.",
+            "d) To dobra wiadomość.",
             "e) Dlaczego tak mówisz?",
-            "f) To dobra wiadomość.",
+            "f) Niestety nie mam czasu.",
             "g) Rozumiem cię.",
-            "h) Tak, każdy.",
+            "h) Będę na pewno.",
             "i) Szkoda, że nikt nas nie zapytał.",
-            "j) Będę na pewno."
+            "j) Tak, każdy."
           ],
           "explanation": "Kasia jest zaskoczona informacją o pracy z domu. „Naprawdę?” wprowadza jej pytanie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "h) Tak, każdy.",
+          "answer": "j) Tak, każdy.",
           "options": [
             "a) Naprawdę?",
-            "b) Niestety nie mam czasu.",
+            "b) Przykro mi, to nie moja wina.",
             "c) Nie jestem zadowolona.",
-            "d) Przykro mi, to nie moja wina.",
+            "d) To dobra wiadomość.",
             "e) Dlaczego tak mówisz?",
-            "f) To dobra wiadomość.",
+            "f) Niestety nie mam czasu.",
             "g) Rozumiem cię.",
-            "h) Tak, każdy.",
+            "h) Będę na pewno.",
             "i) Szkoda, że nikt nas nie zapytał.",
-            "j) Będę na pewno."
+            "j) Tak, każdy."
           ],
           "explanation": "Tomek odpowiada na pytanie Kasi: każdy może wybrać dni. Wystarczy krótkie „Tak, każdy”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "f) To dobra wiadomość.",
+          "answer": "d) To dobra wiadomość.",
           "options": [
             "a) Naprawdę?",
-            "b) Niestety nie mam czasu.",
+            "b) Przykro mi, to nie moja wina.",
             "c) Nie jestem zadowolona.",
-            "d) Przykro mi, to nie moja wina.",
+            "d) To dobra wiadomość.",
             "e) Dlaczego tak mówisz?",
-            "f) To dobra wiadomość.",
+            "f) Niestety nie mam czasu.",
             "g) Rozumiem cię.",
-            "h) Tak, każdy.",
+            "h) Będę na pewno.",
             "i) Szkoda, że nikt nas nie zapytał.",
-            "j) Będę na pewno."
+            "j) Tak, każdy."
           ],
           "explanation": "Kasia ocenia informację o pracy z domu i zaraz wybiera dni. „To dobra wiadomość” pasuje do jej decyzji.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "j) Będę na pewno.",
+          "answer": "h) Będę na pewno.",
           "options": [
             "a) Naprawdę?",
-            "b) Niestety nie mam czasu.",
+            "b) Przykro mi, to nie moja wina.",
             "c) Nie jestem zadowolona.",
-            "d) Przykro mi, to nie moja wina.",
+            "d) To dobra wiadomość.",
             "e) Dlaczego tak mówisz?",
-            "f) To dobra wiadomość.",
+            "f) Niestety nie mam czasu.",
             "g) Rozumiem cię.",
-            "h) Tak, każdy.",
+            "h) Będę na pewno.",
             "i) Szkoda, że nikt nas nie zapytał.",
-            "j) Będę na pewno."
+            "j) Tak, każdy."
           ],
           "explanation": "Kasia potwierdza, że przyjdzie na zebranie. „Będę na pewno” pasuje do przypomnienia o piątku.",
           "grammar_point": "slownictwo"
@@ -557,8 +557,8 @@
           "id": "el2-1",
           "answer": "c) Piszę, aby",
           "options": [
-            "a) Piszę, bo",
             "b) Piszę, ponieważ",
+            "a) Piszę, bo",
             "c) Piszę, aby"
           ],
           "explanation": "Po „aby” używamy bezokolicznika: „aby poinformować”. Po „bo” i „ponieważ” potrzebne jest całe zdanie.",
@@ -568,9 +568,9 @@
           "id": "el2-2",
           "answer": "a) że",
           "options": [
-            "a) że",
             "b) aby",
-            "c) jeśli"
+            "c) jeśli",
+            "a) że"
           ],
           "explanation": "Po „pisał” przekazujemy treść informacji spójnikiem „że”. „Aby” oznacza cel, a „jeśli” warunek.",
           "grammar_point": "rejestr-formalny"
@@ -579,8 +579,8 @@
           "id": "el2-3",
           "answer": "b) ponieważ",
           "options": [
-            "a) dlatego",
             "b) ponieważ",
+            "a) dlatego",
             "c) więc"
           ],
           "explanation": "„Ponieważ” podaje przyczynę: pracuję w domu, bo wtedy mam dużo pracy. „Dlatego” i „więc” pokazują skutek.",
@@ -591,8 +591,8 @@
           "answer": "c) dlatego",
           "options": [
             "a) ponieważ",
-            "b) chociaż",
-            "c) dlatego"
+            "c) dlatego",
+            "b) chociaż"
           ],
           "explanation": "Zdanie podaje skutek: mieszkam daleko, „dlatego” wolę jeździć rzadziej. „Ponieważ” odwraca sens zdania.",
           "grammar_point": "rejestr-formalny"
@@ -602,8 +602,8 @@
           "answer": "a) o",
           "options": [
             "a) o",
-            "b) za",
-            "c) na"
+            "c) na",
+            "b) za"
           ],
           "explanation": "Mówimy „zapytać o coś”. Przyimki „za” i „na” nie pasują do czasownika „zapytać”.",
           "grammar_point": "rejestr-formalny"
@@ -612,8 +612,8 @@
           "id": "el2-6",
           "answer": "b) czy",
           "options": [
-            "a) że",
             "b) czy",
+            "a) że",
             "c) bo"
           ],
           "explanation": "W pytaniu z wyborem używamy „czy … czy …”: napisać do pana Piotra czy wystarczy e-mail.",
@@ -623,9 +623,9 @@
           "id": "el2-7",
           "answer": "a) o",
           "options": [
-            "a) o",
+            "c) za",
             "b) na",
-            "c) za"
+            "a) o"
           ],
           "explanation": "Mówimy „prosić o odpowiedź”. Inne przyimki nie pasują do czasownika „prosić”.",
           "grammar_point": "rejestr-formalny"
@@ -634,9 +634,9 @@
           "id": "el2-8",
           "answer": "c) żebym",
           "options": [
-            "a) ponieważ",
             "b) dlatego",
-            "c) żebym"
+            "c) żebym",
+            "a) ponieważ"
           ],
           "explanation": "Po „żebym” (cel) następuje „mogła”. „Ponieważ” i „dlatego” nie pasują do konstrukcji celu.",
           "grammar_point": "rejestr-formalny"
@@ -646,8 +646,8 @@
           "answer": "b) Z góry",
           "options": [
             "a) Od góry",
-            "b) Z góry",
-            "c) W górze"
+            "c) W górze",
+            "b) Z góry"
           ],
           "explanation": "„Z góry dziękuję za pomoc” to stała formuła w e-mailu. Pozostałe wyrażenia nie mają tego znaczenia.",
           "grammar_point": "rejestr-formalny"

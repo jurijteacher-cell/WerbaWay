@@ -21,9 +21,9 @@
           "id": "g1-1",
           "text": "Moja siostra ___ herbatę niż kawę.",
           "options": [
-            "wolę",
+            "wolą",
             "woli",
-            "wolą"
+            "wolę"
           ],
           "answer": "woli",
           "grammar_point": "wolec-odmiana"
@@ -32,9 +32,9 @@
           "id": "g1-2",
           "text": "Dzieci zwykle ___ słodycze od warzyw.",
           "options": [
-            "wolą",
             "wolimy",
-            "woli"
+            "woli",
+            "wolą"
           ],
           "answer": "wolą",
           "grammar_point": "wolec-odmiana"
@@ -54,8 +54,8 @@
           "id": "g1-4",
           "text": "My ___ grać w karty niż oglądać telewizję.",
           "options": [
-            "wolimy",
             "wolicie",
+            "wolimy",
             "wolą"
           ],
           "answer": "wolimy",
@@ -76,8 +76,8 @@
           "id": "g1-6",
           "text": "Wolę rower ___ samochodu.",
           "options": [
-            "niż",
-            "od"
+            "od",
+            "niż"
           ],
           "answer": "od",
           "grammar_point": "wolec-niz-od",
@@ -87,8 +87,8 @@
           "id": "g1-7",
           "text": "Wolę morze niż ___.",
           "options": [
-            "góry",
-            "gór"
+            "gór",
+            "góry"
           ],
           "answer": "góry",
           "grammar_point": "wolec-niz-od",
@@ -98,8 +98,8 @@
           "id": "g1-8",
           "text": "Wolę morze od ___.",
           "options": [
-            "góry",
-            "gór"
+            "gór",
+            "góry"
           ],
           "answer": "gór",
           "grammar_point": "wolec-niz-od",
@@ -187,8 +187,8 @@
           "id": "g3-1",
           "text": "Nie lubię ___.",
           "options": [
-            "zimę",
-            "zimy"
+            "zimy",
+            "zimę"
           ],
           "answer": "zimy",
           "grammar_point": "lubic-uwielbiac",
@@ -198,8 +198,8 @@
           "id": "g3-2",
           "text": "Uwielbiam ___ w deszczu.",
           "options": [
-            "spacerować",
-            "spaceruję"
+            "spaceruję",
+            "spacerować"
           ],
           "answer": "spacerować",
           "grammar_point": "lubic-uwielbiac",
@@ -220,8 +220,8 @@
           "id": "g3-4",
           "text": "Mój tata ___ sport od dwudziestu lat.",
           "options": [
-            "zajmuje się",
-            "uprawia"
+            "uprawia",
+            "zajmuje się"
           ],
           "answer": "uprawia",
           "grammar_point": "kalki-uk",
@@ -231,9 +231,9 @@
           "id": "g3-5",
           "text": "W sobotę idziemy ___ kina.",
           "options": [
-            "w",
             "do",
-            "na"
+            "na",
+            "w"
           ],
           "answer": "do",
           "grammar_point": "kalki-uk",
@@ -271,140 +271,140 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Ania: Szkoła tańca „Salsa”, słucham.\n\nOla: Dzień dobry. {el1-1} Chciałabym zapisać się na kurs salsy.\n\nAnia: {el1-2} Czy tańczyła Pani już kiedyś?\n\nOla: {el1-3} Dlatego szukam grupy dla początkujących.\n\nAnia: Mamy grupę we wtorki i czwartki o osiemnastej. {el1-4}\n\nOla: {el1-5} Pracuję do szesnastej, więc zdążę.\n\nAnia: Kurs kosztuje dwieście złotych miesięcznie.\n\nOla: {el1-6} Czy są zniżki dla studentów?\n\nAnia: {el1-7} Studenci płacą sto czterdzieści złotych.\n\nOla: {el1-8} Zapisuję się na wtorki i czwartki.",
       "bank": [
-        "a) Nie, jeszcze nigdy.",
-        "b) Dzwonię w sprawie kursu.",
-        "c) Tak, to dobry termin.",
-        "d) Aha, rozumiem.",
+        "a) Tak, to dobry termin.",
+        "b) Aha, rozumiem.",
+        "c) Czy ten termin Pani pasuje?",
+        "d) Niestety nie lubię tańczyć.",
         "e) Świetnie, bardzo dziękuję.",
-        "f) Bardzo się cieszę.",
-        "g) Czy ten termin Pani pasuje?",
-        "h) Niestety nie lubię tańczyć.",
-        "i) Tak, oczywiście.",
-        "j) Przepraszam, mam teraz mało czasu."
+        "f) Przepraszam, mam teraz mało czasu.",
+        "g) Tak, oczywiście.",
+        "h) Bardzo się cieszę.",
+        "i) Nie, jeszcze nigdy.",
+        "j) Dzwonię w sprawie kursu."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "b) Dzwonię w sprawie kursu.",
+          "answer": "j) Dzwonię w sprawie kursu.",
           "options": [
-            "a) Nie, jeszcze nigdy.",
-            "b) Dzwonię w sprawie kursu.",
-            "c) Tak, to dobry termin.",
-            "d) Aha, rozumiem.",
+            "a) Tak, to dobry termin.",
+            "b) Aha, rozumiem.",
+            "c) Czy ten termin Pani pasuje?",
+            "d) Niestety nie lubię tańczyć.",
             "e) Świetnie, bardzo dziękuję.",
-            "f) Bardzo się cieszę.",
-            "g) Czy ten termin Pani pasuje?",
-            "h) Niestety nie lubię tańczyć.",
-            "i) Tak, oczywiście.",
-            "j) Przepraszam, mam teraz mało czasu."
+            "f) Przepraszam, mam teraz mało czasu.",
+            "g) Tak, oczywiście.",
+            "h) Bardzo się cieszę.",
+            "i) Nie, jeszcze nigdy.",
+            "j) Dzwonię w sprawie kursu."
           ],
           "explanation": "Ola od razu mówi, po co dzwoni. „Dzwonię w sprawie…” to typowa formuła rozmowy telefonicznej.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "f) Bardzo się cieszę.",
+          "answer": "h) Bardzo się cieszę.",
           "options": [
-            "a) Nie, jeszcze nigdy.",
-            "b) Dzwonię w sprawie kursu.",
-            "c) Tak, to dobry termin.",
-            "d) Aha, rozumiem.",
+            "a) Tak, to dobry termin.",
+            "b) Aha, rozumiem.",
+            "c) Czy ten termin Pani pasuje?",
+            "d) Niestety nie lubię tańczyć.",
             "e) Świetnie, bardzo dziękuję.",
-            "f) Bardzo się cieszę.",
-            "g) Czy ten termin Pani pasuje?",
-            "h) Niestety nie lubię tańczyć.",
-            "i) Tak, oczywiście.",
-            "j) Przepraszam, mam teraz mało czasu."
+            "f) Przepraszam, mam teraz mało czasu.",
+            "g) Tak, oczywiście.",
+            "h) Bardzo się cieszę.",
+            "i) Nie, jeszcze nigdy.",
+            "j) Dzwonię w sprawie kursu."
           ],
           "explanation": "Pracownica cieszy się, że Ola chce tańczyć. Potem zadaje pytanie o doświadczenie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "a) Nie, jeszcze nigdy.",
+          "answer": "i) Nie, jeszcze nigdy.",
           "options": [
-            "a) Nie, jeszcze nigdy.",
-            "b) Dzwonię w sprawie kursu.",
-            "c) Tak, to dobry termin.",
-            "d) Aha, rozumiem.",
+            "a) Tak, to dobry termin.",
+            "b) Aha, rozumiem.",
+            "c) Czy ten termin Pani pasuje?",
+            "d) Niestety nie lubię tańczyć.",
             "e) Świetnie, bardzo dziękuję.",
-            "f) Bardzo się cieszę.",
-            "g) Czy ten termin Pani pasuje?",
-            "h) Niestety nie lubię tańczyć.",
-            "i) Tak, oczywiście.",
-            "j) Przepraszam, mam teraz mało czasu."
+            "f) Przepraszam, mam teraz mało czasu.",
+            "g) Tak, oczywiście.",
+            "h) Bardzo się cieszę.",
+            "i) Nie, jeszcze nigdy.",
+            "j) Dzwonię w sprawie kursu."
           ],
           "explanation": "Ola odpowiada na pytanie o doświadczenie. „Nie, jeszcze nigdy” pasuje do zdania „Dlatego szukam grupy dla początkujących”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "g) Czy ten termin Pani pasuje?",
+          "answer": "c) Czy ten termin Pani pasuje?",
           "options": [
-            "a) Nie, jeszcze nigdy.",
-            "b) Dzwonię w sprawie kursu.",
-            "c) Tak, to dobry termin.",
-            "d) Aha, rozumiem.",
+            "a) Tak, to dobry termin.",
+            "b) Aha, rozumiem.",
+            "c) Czy ten termin Pani pasuje?",
+            "d) Niestety nie lubię tańczyć.",
             "e) Świetnie, bardzo dziękuję.",
-            "f) Bardzo się cieszę.",
-            "g) Czy ten termin Pani pasuje?",
-            "h) Niestety nie lubię tańczyć.",
-            "i) Tak, oczywiście.",
-            "j) Przepraszam, mam teraz mało czasu."
+            "f) Przepraszam, mam teraz mało czasu.",
+            "g) Tak, oczywiście.",
+            "h) Bardzo się cieszę.",
+            "i) Nie, jeszcze nigdy.",
+            "j) Dzwonię w sprawie kursu."
           ],
           "explanation": "Ania podaje termin i pyta, czy Ola może przyjść. To pytanie pasuje do informacji o wtorkach i czwartkach.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "c) Tak, to dobry termin.",
+          "answer": "a) Tak, to dobry termin.",
           "options": [
-            "a) Nie, jeszcze nigdy.",
-            "b) Dzwonię w sprawie kursu.",
-            "c) Tak, to dobry termin.",
-            "d) Aha, rozumiem.",
+            "a) Tak, to dobry termin.",
+            "b) Aha, rozumiem.",
+            "c) Czy ten termin Pani pasuje?",
+            "d) Niestety nie lubię tańczyć.",
             "e) Świetnie, bardzo dziękuję.",
-            "f) Bardzo się cieszę.",
-            "g) Czy ten termin Pani pasuje?",
-            "h) Niestety nie lubię tańczyć.",
-            "i) Tak, oczywiście.",
-            "j) Przepraszam, mam teraz mało czasu."
+            "f) Przepraszam, mam teraz mało czasu.",
+            "g) Tak, oczywiście.",
+            "h) Bardzo się cieszę.",
+            "i) Nie, jeszcze nigdy.",
+            "j) Dzwonię w sprawie kursu."
           ],
           "explanation": "Ola odpowiada na pytanie Ani i potwierdza termin. Wyjaśnia: pracuje do szesnastej.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "d) Aha, rozumiem.",
+          "answer": "b) Aha, rozumiem.",
           "options": [
-            "a) Nie, jeszcze nigdy.",
-            "b) Dzwonię w sprawie kursu.",
-            "c) Tak, to dobry termin.",
-            "d) Aha, rozumiem.",
+            "a) Tak, to dobry termin.",
+            "b) Aha, rozumiem.",
+            "c) Czy ten termin Pani pasuje?",
+            "d) Niestety nie lubię tańczyć.",
             "e) Świetnie, bardzo dziękuję.",
-            "f) Bardzo się cieszę.",
-            "g) Czy ten termin Pani pasuje?",
-            "h) Niestety nie lubię tańczyć.",
-            "i) Tak, oczywiście.",
-            "j) Przepraszam, mam teraz mało czasu."
+            "f) Przepraszam, mam teraz mało czasu.",
+            "g) Tak, oczywiście.",
+            "h) Bardzo się cieszę.",
+            "i) Nie, jeszcze nigdy.",
+            "j) Dzwonię w sprawie kursu."
           ],
           "explanation": "Ola słyszy cenę i przyjmuje informację. „Aha, rozumiem” pasuje przed następnym pytaniem.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "i) Tak, oczywiście.",
+          "answer": "g) Tak, oczywiście.",
           "options": [
-            "a) Nie, jeszcze nigdy.",
-            "b) Dzwonię w sprawie kursu.",
-            "c) Tak, to dobry termin.",
-            "d) Aha, rozumiem.",
+            "a) Tak, to dobry termin.",
+            "b) Aha, rozumiem.",
+            "c) Czy ten termin Pani pasuje?",
+            "d) Niestety nie lubię tańczyć.",
             "e) Świetnie, bardzo dziękuję.",
-            "f) Bardzo się cieszę.",
-            "g) Czy ten termin Pani pasuje?",
-            "h) Niestety nie lubię tańczyć.",
-            "i) Tak, oczywiście.",
-            "j) Przepraszam, mam teraz mało czasu."
+            "f) Przepraszam, mam teraz mało czasu.",
+            "g) Tak, oczywiście.",
+            "h) Bardzo się cieszę.",
+            "i) Nie, jeszcze nigdy.",
+            "j) Dzwonię w sprawie kursu."
           ],
           "explanation": "Ola pyta o zniżki, więc Ania odpowiada „Tak, oczywiście” i podaje cenę dla studentów.",
           "grammar_point": "slownictwo"
@@ -413,16 +413,16 @@
           "id": "el1-8",
           "answer": "e) Świetnie, bardzo dziękuję.",
           "options": [
-            "a) Nie, jeszcze nigdy.",
-            "b) Dzwonię w sprawie kursu.",
-            "c) Tak, to dobry termin.",
-            "d) Aha, rozumiem.",
+            "a) Tak, to dobry termin.",
+            "b) Aha, rozumiem.",
+            "c) Czy ten termin Pani pasuje?",
+            "d) Niestety nie lubię tańczyć.",
             "e) Świetnie, bardzo dziękuję.",
-            "f) Bardzo się cieszę.",
-            "g) Czy ten termin Pani pasuje?",
-            "h) Niestety nie lubię tańczyć.",
-            "i) Tak, oczywiście.",
-            "j) Przepraszam, mam teraz mało czasu."
+            "f) Przepraszam, mam teraz mało czasu.",
+            "g) Tak, oczywiście.",
+            "h) Bardzo się cieszę.",
+            "i) Nie, jeszcze nigdy.",
+            "j) Dzwonię w sprawie kursu."
           ],
           "explanation": "Ola dziękuje za informację i decyduje się na kurs. „Świetnie, bardzo dziękuję” pasuje przed „Zapisuję się”.",
           "grammar_point": "slownictwo"
@@ -441,9 +441,9 @@
           "id": "el2-1",
           "answer": "c) Piszę, aby",
           "options": [
-            "a) Piszę, bo",
             "b) Piszę, że",
-            "c) Piszę, aby"
+            "c) Piszę, aby",
+            "a) Piszę, bo"
           ],
           "explanation": "Po „aby” używamy bezokolicznika: „aby zapytać”. Po „bo” i „że” potrzebne jest całe zdanie.",
           "grammar_point": "rejestr-formalny"
@@ -463,9 +463,9 @@
           "id": "el2-3",
           "answer": "b) w",
           "options": [
+            "c) do",
             "a) na",
-            "b) w",
-            "c) do"
+            "b) w"
           ],
           "explanation": "Mówimy „miejsce w grupie”. Przyimki „na” i „do” nie pasują do tego wyrażenia.",
           "grammar_point": "rejestr-formalny"
@@ -475,8 +475,8 @@
           "answer": "b) na",
           "options": [
             "a) do",
-            "b) na",
-            "c) w"
+            "c) w",
+            "b) na"
           ],
           "explanation": "Mówimy „zapisać się na zajęcia”. Przyimki „do” i „w” nie pasują do tego czasownika.",
           "grammar_point": "rejestr-formalny"
@@ -485,9 +485,9 @@
           "id": "el2-5",
           "answer": "c) o",
           "options": [
+            "c) o",
             "a) za",
-            "b) na",
-            "c) o"
+            "b) na"
           ],
           "explanation": "Mówimy „prosić o informację”. Inne przyimki nie pasują do czasownika „prosić”.",
           "grammar_point": "rejestr-formalny"
@@ -496,9 +496,9 @@
           "id": "el2-6",
           "answer": "a) mogę",
           "options": [
+            "c) wiem",
             "a) mogę",
-            "b) umiem",
-            "c) wiem"
+            "b) umiem"
           ],
           "explanation": "Mówimy „mogę dostać zniżkę”, czyli „czy to możliwe”. „Umiem” i „wiem” nie pasują do tego zdania.",
           "grammar_point": "rejestr-formalny"
@@ -507,9 +507,9 @@
           "id": "el2-7",
           "answer": "a) w",
           "options": [
-            "a) w",
             "b) o",
-            "c) do"
+            "c) do",
+            "a) w"
           ],
           "explanation": "Dzień tygodnia podajemy przyimkiem „w”: „w czwartek”. „O czwartek” i „do czwartek” brzmią niepoprawnie.",
           "grammar_point": "rejestr-formalny"
@@ -518,9 +518,9 @@
           "id": "el2-8",
           "answer": "b) W razie",
           "options": [
-            "a) Z powodu",
+            "c) Na razie",
             "b) W razie",
-            "c) Na razie"
+            "a) Z powodu"
           ],
           "explanation": "„W razie pytań” to stała formuła w e-mailu. „Z powodu” i „na razie” mają inne znaczenie.",
           "grammar_point": "rejestr-formalny"
@@ -529,9 +529,9 @@
           "id": "el2-9",
           "answer": "c) Z góry",
           "options": [
-            "a) Od góry",
+            "c) Z góry",
             "b) Na górze",
-            "c) Z góry"
+            "a) Od góry"
           ],
           "explanation": "„Z góry dziękuję” to stała formuła w e-mailu. Pozostałe wyrażenia mają inne znaczenie.",
           "grammar_point": "rejestr-formalny"
@@ -540,9 +540,9 @@
           "id": "el2-10",
           "answer": "a) za",
           "options": [
+            "c) na",
             "a) za",
-            "b) o",
-            "c) na"
+            "b) o"
           ],
           "explanation": "Mówimy „dziękować za odpowiedź”. Przyimek „za” łączy się z czasownikiem „dziękować”.",
           "grammar_point": "rejestr-formalny"

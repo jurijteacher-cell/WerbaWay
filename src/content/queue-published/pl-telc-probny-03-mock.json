@@ -51,9 +51,9 @@
               "id": "sl1-1",
               "stem": "Joanna dzwoni, aby",
               "options": [
-                "potwierdzić wizytę w środę.",
+                "odwołać wszystkie wizyty w tym tygodniu.",
                 "zaproponować nowy termin wizyty.",
-                "odwołać wszystkie wizyty w tym tygodniu."
+                "potwierdzić wizytę w środę."
               ],
               "answer": "b",
               "explain": "Joanna mówi: „w środę nie przyjmuje. Możemy zaproponować wizytę w piątek o czternastej albo w przyszły poniedziałek”. Wizyta w środę jest odwołana, ale tylko ta jedna, więc c nie pasuje."
@@ -62,22 +62,22 @@
               "id": "sl1-2",
               "stem": "Marek chce, żeby Piotrek",
               "options": [
-                "kupił bilety na koncert.",
                 "przyszedł prosto pod halę.",
-                "spotkał się z nim w kawiarni."
+                "spotkał się z nim w kawiarni.",
+                "kupił bilety na koncert."
               ],
-              "answer": "c",
+              "answer": "b",
               "explain": "Marek mówi: „Czekam na ciebie o siódmej w kawiarni naprzeciwko dworca”. Pod halą się nie spotykają, a bilety Marek już ma: „nic nie kupuj”."
             },
             {
               "id": "sl1-3",
               "stem": "W poniedziałek i we wtorek Oksana",
               "options": [
+                "musi przyjść do pracy o szóstej.",
                 "ma wolne.",
-                "zacznie pracę później niż zwykle.",
-                "musi przyjść do pracy o szóstej."
+                "zacznie pracę później niż zwykle."
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "Kierowniczka mówi, że w poniedziałek i we wtorek Oksana pracuje „od czternastej, a nie od szóstej”, czyli zaczyna później. Nie ma wolnego, tylko inną zmianę."
             },
             {
@@ -85,8 +85,8 @@
               "stem": "W czwartek mieszkańcy",
               "options": [
                 "nie będą mieli ciepłej wody przez kilka godzin.",
-                "nie będą mieli wody przez cały dzień.",
-                "muszą być w domu od ósmej."
+                "muszą być w domu od ósmej.",
+                "nie będą mieli wody przez cały dzień."
               ],
               "answer": "a",
               "explain": "W komunikacie: „nie będzie ciepłej wody, od ósmej do szesnastej. Zimna woda będzie normalnie”. To kilka godzin i tylko ciepła woda, nie cały dzień i nie każda woda."
@@ -122,11 +122,11 @@
               "id": "sl2-2",
               "stem": "Klient",
               "options": [
+                "ma brać lek przed jedzeniem.",
                 "przyjdzie po lek jutro.",
-                "kupi tańszy lek, który działa tak samo.",
-                "ma brać lek przed jedzeniem."
+                "kupi tańszy lek, który działa tak samo."
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "Zamiennik to „ta sama substancja” i „jest tańszy”, a klient mówi: „poproszę zamiennik. Nie chcę przychodzić drugi raz”. Lek bierze się „po jedzeniu”, nie przed."
             },
             {
@@ -141,11 +141,11 @@
               "id": "sl2-4",
               "stem": "Kuba",
               "options": [
-                "zamówi tort.",
                 "kupi voucher.",
-                "zbierze pieniądze od kolegów."
+                "zbierze pieniądze od kolegów.",
+                "zamówi tort."
               ],
-              "answer": "a",
+              "answer": "c",
               "explain": "Kuba mówi: „Ja mogę zamówić tort w cukierni na dole”, a Ania podsumowuje: „Ja voucher, ty tort”. Voucher kupuje Ania."
             },
             {
@@ -160,11 +160,11 @@
               "id": "sl2-6",
               "stem": "Konto będzie dla klientki bezpłatne, jeśli",
               "options": [
-                "zainstaluje aplikację banku.",
+                "co miesiąc wpłynie na nie co najmniej tysiąc złotych.",
                 "dopisze numer PESEL.",
-                "co miesiąc wpłynie na nie co najmniej tysiąc złotych."
+                "zainstaluje aplikację banku."
               ],
-              "answer": "c",
+              "answer": "a",
               "explain": "Pracownik mówi, że konto kosztuje „nic, jeśli co miesiąc wpływa na nie co najmniej tysiąc złotych”. Aplikacja i PESEL nie mają wpływu na cenę."
             },
             {
@@ -198,11 +198,11 @@
               "id": "sl2-10",
               "stem": "Klient zapłaci",
               "options": [
-                "za dwa bilety normalne.",
                 "sześćdziesiąt cztery złote.",
-                "za jeden bilet normalny i jeden ulgowy."
+                "za jeden bilet normalny i jeden ulgowy.",
+                "za dwa bilety normalne."
               ],
-              "answer": "c",
+              "answer": "b",
               "explain": "Kasjerka mówi: „jeden bilet normalny, trzydzieści dwa złote, i jeden ulgowy”, bo żona jest studentką. Razem 56 zł, a nie 64 zł."
             }
           ]
@@ -225,22 +225,22 @@
               "id": "sl3-1",
               "stem": "Tomasz zaczął hodować pszczoły, ponieważ",
               "options": [
-                "odziedziczył pasiekę po dziadku.",
                 "chciał zmienić styl życia po rozmowie z lekarzem.",
+                "odziedziczył pasiekę po dziadku.",
                 "stracił pracę jako informatyk."
               ],
-              "answer": "b",
+              "answer": "a",
               "explain": "Tomasz wrócił do pszczół, „kiedy lekarz powiedział, że muszę mniej siedzieć przed komputerem i więcej się ruszać”. Pasieka dziadka to tylko wspomnienie z dzieciństwa."
             },
             {
               "id": "sl3-2",
               "stem": "Ule Tomasza stoją",
               "options": [
-                "na ogródku działkowym.",
                 "na wsi u dziadka.",
-                "na dachu hotelu."
+                "na dachu hotelu.",
+                "na ogródku działkowym."
               ],
-              "answer": "c",
+              "answer": "b",
               "explain": "Tomasz mówi: „Na dachu hotelu w centrum”. O ogródku działkowym myślał, ale sąsiedzi się nie zgodzili."
             },
             {
@@ -248,8 +248,8 @@
               "stem": "Według Tomasza pszczoły",
               "options": [
                 "nie przeszkadzają ludziom w okolicy.",
-                "są niebezpieczne dla gości hotelu.",
-                "kilka razy użądliły gości."
+                "kilka razy użądliły gości.",
+                "są niebezpieczne dla gości hotelu."
               ],
               "answer": "a",
               "explain": "Według Tomasza pszczoły „latają wysoko, nad ulicami, i nikomu nie przeszkadzają”. Przez trzy lata żaden gość nie został użądlony, tylko on sam."
@@ -258,22 +258,22 @@
               "id": "sl3-4",
               "stem": "Zima jest najtrudniejsza, bo",
               "options": [
-                "jest wtedy najwięcej pracy.",
                 "pszczoły są wtedy agresywne.",
-                "Tomasz nie może wtedy sprawdzać uli."
+                "Tomasz nie może wtedy sprawdzać uli.",
+                "jest wtedy najwięcej pracy."
               ],
-              "answer": "c",
+              "answer": "b",
               "explain": "Tomasz mówi o zimie: „Uli nie można wtedy otwierać i sprawdzać, trzeba po prostu czekać”. Najwięcej pracy jest latem."
             },
             {
               "id": "sl3-5",
               "stem": "Miód Tomasza",
               "options": [
+                "można zamówić przez internet.",
                 "można kupić w sklepach w centrum.",
-                "w większości trafia do hotelu.",
-                "można zamówić przez internet."
+                "w większości trafia do hotelu."
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "Tomasz mówi: „Większość dostaje hotel, a resztę oddaję znajomym”. W sklepie miodu nie ma, a osobom z internetu odmawia."
             },
             {
@@ -523,11 +523,11 @@
               "id": "cz3-1",
               "stem": "Ogród społeczny",
               "options": [
-                "powstał na boisku szkoły.",
                 "dostał od miasta teren i narzędzia.",
+                "powstał na boisku szkoły.",
                 "kupuje mieszkańcom nasiona."
               ],
-              "answer": "b",
+              "answer": "a",
               "passage": "Ogród społeczny na Zatorzu\n\nWiosną na osiedlu Zatorze, na nieużywanym terenie za szkołą, powstał ogród społeczny. Mieszkańcy dostali od miasta ziemię i narzędzia, a nasiona i sadzonki kupują sami. Każdy, kto chce, może dostać jedną grządkę — wystarczy zapisać się u koordynatorki ogrodu, pani Haliny Sroki. Warzywa należą do osób, które je posadziły, ale zioła rosną we wspólnej części i może je zbierać każdy. W soboty o dziesiątej odbywają się wspólne prace, na które zapraszamy także dzieci. Na razie w ogrodzie jest trzydzieści grządek i wszystkie są już zajęte, ale miasto obiecało w przyszłym roku powiększyć teren.",
               "explain": "W tekście: „Mieszkańcy dostali od miasta ziemię i narzędzia, a nasiona i sadzonki kupują sami”. Ogród powstał na nieużywanym terenie za szkołą, nie na boisku."
             },
@@ -535,22 +535,22 @@
               "id": "cz3-2",
               "stem": "Teraz w ogrodzie",
               "options": [
-                "nie ma już wolnych grządek.",
+                "pracują tylko dorośli.",
                 "każdy może zbierać warzywa z każdej grządki.",
-                "pracują tylko dorośli."
+                "nie ma już wolnych grządek."
               ],
-              "answer": "a",
+              "answer": "c",
               "explain": "W tekście: „trzydzieści grządek i wszystkie są już zajęte”. Warzywa należą do osób, które je posadziły; wspólne są tylko zioła."
             },
             {
               "id": "cz3-3",
               "stem": "Kurs prowadzą",
               "options": [
-                "pracownicy domu kultury.",
                 "licealiści.",
+                "pracownicy domu kultury.",
                 "emerytowani nauczyciele."
               ],
-              "answer": "b",
+              "answer": "a",
               "passage": "Smartfon bez tajemnic\n\nW Domu Kultury „Słonecznik” ruszył bezpłatny kurs obsługi smartfona dla osób po sześćdziesiątym piątym roku życia. Uczestnicy uczą się, jak robić zdjęcia, wysyłać wiadomości, rozmawiać przez wideo z rodziną i kupować bilety w aplikacji. Nauczycielami są uczniowie pobliskiego liceum, którzy w ten sposób odbywają wolontariat. Kurs trwa sześć tygodni, zajęcia są raz w tygodniu. Każdy przychodzi z własnym telefonem — dom kultury nie ma sprzętu do wypożyczenia. Zapisy przyjmuje sekretariat, także telefonicznie.",
               "explain": "W tekście: „Nauczycielami są uczniowie pobliskiego liceum”, czyli licealiści, którzy robią wolontariat."
             },
@@ -569,11 +569,11 @@
               "id": "cz3-5",
               "stem": "Pomysł, żeby zrezygnować z plastiku,",
               "options": [
-                "wyszedł od uczniów.",
                 "zaproponowali rodzice.",
+                "wyszedł od uczniów.",
                 "przyszedł od dyrekcji."
               ],
-              "answer": "a",
+              "answer": "b",
               "passage": "Stołówka bez plastiku\n\nOd nowego semestru w stołówce Szkoły Podstawowej nr 7 nie ma już jednorazowych kubków i sztućców. Dzieci piją wodę z dzbanków stojących na stołach, a każdy uczeń dostał od szkoły metalowy bidon. Pomysł wyszedł od samorządu uczniowskiego, który policzył, że szkoła wyrzucała co miesiąc ponad dwa tysiące plastikowych kubków. Rodzice na początku obawiali się, że naczynia będą źle umyte, dlatego dyrekcja kupiła nową zmywarkę. W przyszłym roku uczniowie chcą zorganizować wymianę używanych podręczników.",
               "explain": "W tekście: „Pomysł wyszedł od samorządu uczniowskiego”. Rodzice i dyrekcja zajęli się tylko sprawą zmywania naczyń."
             },
@@ -582,10 +582,10 @@
               "stem": "Szkoła kupiła nową zmywarkę, ponieważ",
               "options": [
                 "stara się zepsuła.",
-                "rodzice martwili się o czystość naczyń.",
-                "uczniowie dostali metalowe bidony."
+                "uczniowie dostali metalowe bidony.",
+                "rodzice martwili się o czystość naczyń."
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "W tekście: „Rodzice obawiali się, że naczynia będą źle umyte, dlatego dyrekcja kupiła nową zmywarkę”. O zepsutej zmywarce nie ma mowy."
             }
           ]
@@ -646,11 +646,11 @@
           "bank": [
             {
               "key": "a",
-              "text": "słucham"
+              "text": "proszę podać"
             },
             {
               "key": "b",
-              "text": "chciałabym się zapisać"
+              "text": "do widzenia"
             },
             {
               "key": "c",
@@ -658,31 +658,31 @@
             },
             {
               "key": "d",
-              "text": "a może"
-            },
-            {
-              "key": "e",
               "text": "najwcześniej"
             },
             {
-              "key": "f",
-              "text": "to mi pasuje"
-            },
-            {
-              "key": "g",
-              "text": "proszę podać"
-            },
-            {
-              "key": "h",
-              "text": "do widzenia"
-            },
-            {
-              "key": "i",
+              "key": "e",
               "text": "w porządku"
             },
             {
-              "key": "j",
+              "key": "f",
+              "text": "chciałabym się zapisać"
+            },
+            {
+              "key": "g",
               "text": "wcześniej"
+            },
+            {
+              "key": "h",
+              "text": "a może"
+            },
+            {
+              "key": "i",
+              "text": "to mi pasuje"
+            },
+            {
+              "key": "j",
+              "text": "słucham"
             }
           ],
           "text": "Rejestratorka: Przychodnia „Zdrowie”, rejestracja, {{42}}.\nPacjentka: Dzień dobry, {{43}} do lekarza rodzinnego, do doktora Wójcika.\nRejestratorka: {{44}} numer PESEL… Dziękuję. Doktor Wójcik ma wolny termin {{45}} w czwartek o 11:20.\nPacjentka: Dopiero w czwartek? {{46}} jest coś w środę?\nRejestratorka: W środę {{47}} nie. Ale w czwartek jest jeszcze termin o 16:40.\nPacjentka: O 16:40? Tak, {{48}}, bo kończę pracę o szesnastej.\nRejestratorka: {{49}}. Zapisuję panią na czwartek, 16:40. Proszę przyjść dziesięć minut przed wizytą.\nPacjentka: Dziękuję, do widzenia.",
@@ -691,35 +691,35 @@
               "id": "el1-1",
               "n": 42,
               "kind": "bank",
-              "answer": "a",
+              "answer": "j",
               "explain": "„Słucham” to typowa formuła, którą rejestratorka zaczyna rozmowę telefoniczną po nazwie przychodni."
             },
             {
               "id": "el1-2",
               "n": 43,
               "kind": "bank",
-              "answer": "b",
+              "answer": "f",
               "explain": "Pacjentka mówi, po co dzwoni: „chciałabym się zapisać do lekarza”. Forma żeńska „chciałabym” pasuje do pacjentki."
             },
             {
               "id": "el1-3",
               "n": 44,
               "kind": "bank",
-              "answer": "g",
+              "answer": "a",
               "explain": "Przed numerem PESEL potrzebna jest prośba: „proszę podać” + biernik. To grzeczna forma w rejestracji."
             },
             {
               "id": "el1-4",
               "n": 45,
               "kind": "bank",
-              "answer": "e",
+              "answer": "d",
               "explain": "„Najwcześniej w czwartek” znaczy, że wcześniejszego terminu nie ma. Dlatego pacjentka reaguje: „Dopiero w czwartek?”."
             },
             {
               "id": "el1-5",
               "n": 46,
               "kind": "bank",
-              "answer": "d",
+              "answer": "h",
               "explain": "„A może jest coś w środę?” to grzeczne pytanie o inną możliwość. „Wcześniej” nie pasuje, bo środa i tak jest przed czwartkiem, a pytanie brzmiałoby nienaturalnie."
             },
             {
@@ -733,14 +733,14 @@
               "id": "el1-7",
               "n": 48,
               "kind": "bank",
-              "answer": "f",
+              "answer": "i",
               "explain": "„To mi pasuje” to reakcja na proponowany termin; pacjentka wyjaśnia, że kończy pracę o szesnastej."
             },
             {
               "id": "el1-8",
               "n": 49,
               "kind": "bank",
-              "answer": "i",
+              "answer": "e",
               "explain": "„W porządku” potwierdza ustalenie przed zapisem. „Do widzenia” byłoby za wcześnie, bo rozmowa jeszcze trwa."
             }
           ]

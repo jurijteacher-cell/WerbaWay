@@ -168,8 +168,8 @@
           "id": "g4-1",
           "text": "Masz wygodne buty, są w porządku. ___ kupować nowych.",
           "options": [
-            "Nie musisz",
-            "Nie wolno"
+            "Nie wolno",
+            "Nie musisz"
           ],
           "answer": "Nie musisz",
           "grammar_point": "modalne-obowiazek",
@@ -200,8 +200,8 @@
           "id": "g4-4",
           "text": "Nikt tego nie wymaga, ale ___ zabrać termos z herbatą.",
           "options": [
-            "warto",
-            "trzeba"
+            "trzeba",
+            "warto"
           ],
           "answer": "warto",
           "grammar_point": "modalne-obowiazek",
@@ -221,8 +221,8 @@
           "id": "g4-6",
           "text": "Na tym szlaku są kamienie, ___ na nogi.",
           "options": [
-            "uważaj",
-            "nie wolno"
+            "nie wolno",
+            "uważaj"
           ],
           "answer": "uważaj",
           "grammar_point": "rozkaznik-pelny",
@@ -347,32 +347,32 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Pracownik: Schronisko na Hali, dzień dobry.\n\nHalina: Dzień dobry. {el1-1} Jutro chcę pierwszy raz iść sama w góry.\n\nPracownik: {el1-2} Wyjdzie Pani rano czy po południu?\n\nHalina: Rano, o siódmej. Co powinnam wziąć?\n\nPracownik: Kurtkę przeciwdeszczową, wodę i coś słodkiego. {el1-3}\n\nHalina: A czy muszę kupić nowe buty?\n\nPracownik: {el1-4} Wystarczą wygodne.\n\nHalina: Czy mogę wracać po ciemku, jeśli będzie ładnie?\n\nPracownik: {el1-5} Trzeba zacząć schodzić wcześniej.\n\nHalina: {el1-6} Czy w schronisku można zjeść obiad?\n\nPracownik: Tak, od dwunastej do piętnastej. {el1-7}\n\nHalina: Bardzo dziękuję za radę. {el1-8}",
       "bank": [
-        "a) Niestety nie wolno.",
-        "b) Chciałabym zapytać o radę.",
-        "c) Tak, proszę kupić nowe buty.",
-        "d) Dobrze, zapiszę to na kartce.",
+        "a) Warto też wziąć termos z herbatą.",
+        "b) Do widzenia i do zobaczenia na szlaku!",
+        "c) Nie mam żadnych pytań.",
+        "d) Niestety nie wolno.",
         "e) Świetnie, ale proszę uważać.",
-        "f) Do widzenia i do zobaczenia na szlaku!",
-        "g) Nie, nie musi Pani.",
-        "h) Nie mam żadnych pytań.",
-        "i) Warto też wziąć termos z herbatą.",
-        "j) Proszę zamówić zupę wcześniej."
+        "f) Dobrze, zapiszę to na kartce.",
+        "g) Proszę zamówić zupę wcześniej.",
+        "h) Nie, nie musi Pani.",
+        "i) Chciałabym zapytać o radę.",
+        "j) Tak, proszę kupić nowe buty."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "b) Chciałabym zapytać o radę.",
+          "answer": "i) Chciałabym zapytać o radę.",
           "options": [
-            "a) Niestety nie wolno.",
-            "b) Chciałabym zapytać o radę.",
-            "c) Tak, proszę kupić nowe buty.",
-            "d) Dobrze, zapiszę to na kartce.",
+            "a) Warto też wziąć termos z herbatą.",
+            "b) Do widzenia i do zobaczenia na szlaku!",
+            "c) Nie mam żadnych pytań.",
+            "d) Niestety nie wolno.",
             "e) Świetnie, ale proszę uważać.",
-            "f) Do widzenia i do zobaczenia na szlaku!",
-            "g) Nie, nie musi Pani.",
-            "h) Nie mam żadnych pytań.",
-            "i) Warto też wziąć termos z herbatą.",
-            "j) Proszę zamówić zupę wcześniej."
+            "f) Dobrze, zapiszę to na kartce.",
+            "g) Proszę zamówić zupę wcześniej.",
+            "h) Nie, nie musi Pani.",
+            "i) Chciałabym zapytać o radę.",
+            "j) Tak, proszę kupić nowe buty."
           ],
           "explanation": "Pani Halina zaczyna od prośby o radę: „Chciałabym zapytać o radę”. Pasuje to do jej pytania o plan wyjścia w góry.",
           "grammar_point": "slownictwo"
@@ -381,124 +381,124 @@
           "id": "el1-2",
           "answer": "e) Świetnie, ale proszę uważać.",
           "options": [
-            "a) Niestety nie wolno.",
-            "b) Chciałabym zapytać o radę.",
-            "c) Tak, proszę kupić nowe buty.",
-            "d) Dobrze, zapiszę to na kartce.",
+            "a) Warto też wziąć termos z herbatą.",
+            "b) Do widzenia i do zobaczenia na szlaku!",
+            "c) Nie mam żadnych pytań.",
+            "d) Niestety nie wolno.",
             "e) Świetnie, ale proszę uważać.",
-            "f) Do widzenia i do zobaczenia na szlaku!",
-            "g) Nie, nie musi Pani.",
-            "h) Nie mam żadnych pytań.",
-            "i) Warto też wziąć termos z herbatą.",
-            "j) Proszę zamówić zupę wcześniej."
+            "f) Dobrze, zapiszę to na kartce.",
+            "g) Proszę zamówić zupę wcześniej.",
+            "h) Nie, nie musi Pani.",
+            "i) Chciałabym zapytać o radę.",
+            "j) Tak, proszę kupić nowe buty."
           ],
           "explanation": "Pracownik słyszy, że pani Halina idzie sama pierwszy raz, więc mówi: „Świetnie, ale proszę uważać”. „Nie mam żadnych pytań” nie pasuje do pracownika schroniska.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "i) Warto też wziąć termos z herbatą.",
+          "answer": "a) Warto też wziąć termos z herbatą.",
           "options": [
-            "a) Niestety nie wolno.",
-            "b) Chciałabym zapytać o radę.",
-            "c) Tak, proszę kupić nowe buty.",
-            "d) Dobrze, zapiszę to na kartce.",
+            "a) Warto też wziąć termos z herbatą.",
+            "b) Do widzenia i do zobaczenia na szlaku!",
+            "c) Nie mam żadnych pytań.",
+            "d) Niestety nie wolno.",
             "e) Świetnie, ale proszę uważać.",
-            "f) Do widzenia i do zobaczenia na szlaku!",
-            "g) Nie, nie musi Pani.",
-            "h) Nie mam żadnych pytań.",
-            "i) Warto też wziąć termos z herbatą.",
-            "j) Proszę zamówić zupę wcześniej."
+            "f) Dobrze, zapiszę to na kartce.",
+            "g) Proszę zamówić zupę wcześniej.",
+            "h) Nie, nie musi Pani.",
+            "i) Chciałabym zapytać o radę.",
+            "j) Tak, proszę kupić nowe buty."
           ],
           "explanation": "Pracownik wymienia rzeczy do plecaka i dodaje jeszcze jedną radę: „Warto też wziąć termos”. Słowo „też” łączy się z poprzednią listą.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "g) Nie, nie musi Pani.",
+          "answer": "h) Nie, nie musi Pani.",
           "options": [
-            "a) Niestety nie wolno.",
-            "b) Chciałabym zapytać o radę.",
-            "c) Tak, proszę kupić nowe buty.",
-            "d) Dobrze, zapiszę to na kartce.",
+            "a) Warto też wziąć termos z herbatą.",
+            "b) Do widzenia i do zobaczenia na szlaku!",
+            "c) Nie mam żadnych pytań.",
+            "d) Niestety nie wolno.",
             "e) Świetnie, ale proszę uważać.",
-            "f) Do widzenia i do zobaczenia na szlaku!",
-            "g) Nie, nie musi Pani.",
-            "h) Nie mam żadnych pytań.",
-            "i) Warto też wziąć termos z herbatą.",
-            "j) Proszę zamówić zupę wcześniej."
+            "f) Dobrze, zapiszę to na kartce.",
+            "g) Proszę zamówić zupę wcześniej.",
+            "h) Nie, nie musi Pani.",
+            "i) Chciałabym zapytać o radę.",
+            "j) Tak, proszę kupić nowe buty."
           ],
           "explanation": "Pytanie brzmi: „Czy muszę kupić nowe buty?”. Odpowiedź „Nie, nie musi Pani” pasuje do zdania „Wystarczą wygodne”. „Tak, proszę kupić…” przeczy temu zdaniu.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "a) Niestety nie wolno.",
+          "answer": "d) Niestety nie wolno.",
           "options": [
-            "a) Niestety nie wolno.",
-            "b) Chciałabym zapytać o radę.",
-            "c) Tak, proszę kupić nowe buty.",
-            "d) Dobrze, zapiszę to na kartce.",
+            "a) Warto też wziąć termos z herbatą.",
+            "b) Do widzenia i do zobaczenia na szlaku!",
+            "c) Nie mam żadnych pytań.",
+            "d) Niestety nie wolno.",
             "e) Świetnie, ale proszę uważać.",
-            "f) Do widzenia i do zobaczenia na szlaku!",
-            "g) Nie, nie musi Pani.",
-            "h) Nie mam żadnych pytań.",
-            "i) Warto też wziąć termos z herbatą.",
-            "j) Proszę zamówić zupę wcześniej."
+            "f) Dobrze, zapiszę to na kartce.",
+            "g) Proszę zamówić zupę wcześniej.",
+            "h) Nie, nie musi Pani.",
+            "i) Chciałabym zapytać o radę.",
+            "j) Tak, proszę kupić nowe buty."
           ],
           "explanation": "Pani Halina pyta, czy może wracać po ciemku. Zasada jest jasna: „Niestety nie wolno”, więc trzeba schodzić wcześniej.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "d) Dobrze, zapiszę to na kartce.",
+          "answer": "f) Dobrze, zapiszę to na kartce.",
           "options": [
-            "a) Niestety nie wolno.",
-            "b) Chciałabym zapytać o radę.",
-            "c) Tak, proszę kupić nowe buty.",
-            "d) Dobrze, zapiszę to na kartce.",
+            "a) Warto też wziąć termos z herbatą.",
+            "b) Do widzenia i do zobaczenia na szlaku!",
+            "c) Nie mam żadnych pytań.",
+            "d) Niestety nie wolno.",
             "e) Świetnie, ale proszę uważać.",
-            "f) Do widzenia i do zobaczenia na szlaku!",
-            "g) Nie, nie musi Pani.",
-            "h) Nie mam żadnych pytań.",
-            "i) Warto też wziąć termos z herbatą.",
-            "j) Proszę zamówić zupę wcześniej."
+            "f) Dobrze, zapiszę to na kartce.",
+            "g) Proszę zamówić zupę wcześniej.",
+            "h) Nie, nie musi Pani.",
+            "i) Chciałabym zapytać o radę.",
+            "j) Tak, proszę kupić nowe buty."
           ],
           "explanation": "Pani Halina potwierdza, że zrozumiała zasady: „Dobrze, zapiszę to na kartce”. Potem zadaje nowe pytanie.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "j) Proszę zamówić zupę wcześniej.",
+          "answer": "g) Proszę zamówić zupę wcześniej.",
           "options": [
-            "a) Niestety nie wolno.",
-            "b) Chciałabym zapytać o radę.",
-            "c) Tak, proszę kupić nowe buty.",
-            "d) Dobrze, zapiszę to na kartce.",
+            "a) Warto też wziąć termos z herbatą.",
+            "b) Do widzenia i do zobaczenia na szlaku!",
+            "c) Nie mam żadnych pytań.",
+            "d) Niestety nie wolno.",
             "e) Świetnie, ale proszę uważać.",
-            "f) Do widzenia i do zobaczenia na szlaku!",
-            "g) Nie, nie musi Pani.",
-            "h) Nie mam żadnych pytań.",
-            "i) Warto też wziąć termos z herbatą.",
-            "j) Proszę zamówić zupę wcześniej."
+            "f) Dobrze, zapiszę to na kartce.",
+            "g) Proszę zamówić zupę wcześniej.",
+            "h) Nie, nie musi Pani.",
+            "i) Chciałabym zapytać o radę.",
+            "j) Tak, proszę kupić nowe buty."
           ],
           "explanation": "Pracownik daje jeszcze jedną praktyczną radę o obiedzie. „Proszę zamówić zupę wcześniej” pasuje do słów o godzinach obiadu.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "f) Do widzenia i do zobaczenia na szlaku!",
+          "answer": "b) Do widzenia i do zobaczenia na szlaku!",
           "options": [
-            "a) Niestety nie wolno.",
-            "b) Chciałabym zapytać o radę.",
-            "c) Tak, proszę kupić nowe buty.",
-            "d) Dobrze, zapiszę to na kartce.",
+            "a) Warto też wziąć termos z herbatą.",
+            "b) Do widzenia i do zobaczenia na szlaku!",
+            "c) Nie mam żadnych pytań.",
+            "d) Niestety nie wolno.",
             "e) Świetnie, ale proszę uważać.",
-            "f) Do widzenia i do zobaczenia na szlaku!",
-            "g) Nie, nie musi Pani.",
-            "h) Nie mam żadnych pytań.",
-            "i) Warto też wziąć termos z herbatą.",
-            "j) Proszę zamówić zupę wcześniej."
+            "f) Dobrze, zapiszę to na kartce.",
+            "g) Proszę zamówić zupę wcześniej.",
+            "h) Nie, nie musi Pani.",
+            "i) Chciałabym zapytać o radę.",
+            "j) Tak, proszę kupić nowe buty."
           ],
           "explanation": "To grzeczne pożegnanie po podziękowaniu za radę. „Nie mam żadnych pytań” nie jest pożegnaniem.",
           "grammar_point": "slownictwo"
@@ -528,9 +528,9 @@
           "id": "el2-2",
           "answer": "a) z",
           "options": [
+            "c) o",
             "a) z",
-            "b) na",
-            "c) o"
+            "b) na"
           ],
           "explanation": "Mówimy „zwracać się z prośbą”. „Na prośbą” i „o prośbą” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -539,9 +539,9 @@
           "id": "el2-3",
           "answer": "b) w",
           "options": [
+            "c) od",
             "a) z",
-            "b) w",
-            "c) od"
+            "b) w"
           ],
           "explanation": "Idiom „iść w góry” znaczy „iść na wycieczkę w góry”. „Z góry” i „od góry” mają inne znaczenie.",
           "grammar_point": "rejestr-formalny"
@@ -550,9 +550,9 @@
           "id": "el2-4",
           "answer": "b) powinna",
           "options": [
-            "a) trzeba",
             "b) powinna",
-            "c) warto"
+            "c) warto",
+            "a) trzeba"
           ],
           "explanation": "Przy podmiocie „mama” używamy „powinna zabrać”. „Trzeba” i „warto” są bezosobowe i nie mają podmiotu.",
           "grammar_point": "rejestr-formalny"
@@ -561,8 +561,8 @@
           "id": "el2-5",
           "answer": "c) o",
           "options": [
-            "a) od",
             "b) po",
+            "a) od",
             "c) o"
           ],
           "explanation": "Pytamy o godzinę: „o której godzinie”. „Od” i „po” nie pasują do tego pytania.",
@@ -583,9 +583,9 @@
           "id": "el2-7",
           "answer": "a) nie wolno",
           "options": [
+            "c) nie jest",
             "a) nie wolno",
-            "b) nie ma",
-            "c) nie jest"
+            "b) nie ma"
           ],
           "explanation": "Zakaz to „nie wolno wracać”. „Nie ma wracać” i „nie jest wracać” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -594,9 +594,9 @@
           "id": "el2-8",
           "answer": "c) za",
           "options": [
-            "a) o",
+            "c) za",
             "b) na",
-            "c) za"
+            "a) o"
           ],
           "explanation": "Jesteśmy wdzięczni za coś: „wdzięczna za informację”. „O” i „na” nie pasują do słowa „wdzięczna”.",
           "grammar_point": "rejestr-formalny"
@@ -605,9 +605,9 @@
           "id": "el2-9",
           "answer": "b) do",
           "options": [
+            "c) od",
             "a) po",
-            "b) do",
-            "c) od"
+            "b) do"
           ],
           "explanation": "Termin odpowiedzi: „do piątku”. „Po piątku” byłoby za późno, bo wyjazd jest w sobotę.",
           "grammar_point": "rejestr-formalny"
@@ -617,8 +617,8 @@
           "answer": "a) Z poważaniem",
           "options": [
             "a) Z poważaniem",
-            "b) Na razie",
-            "c) Cześć"
+            "c) Cześć",
+            "b) Na razie"
           ],
           "explanation": "To oficjalne zakończenie e-maila do instytucji. „Na razie” i „Cześć” są potoczne.",
           "grammar_point": "rejestr-formalny"

@@ -46,8 +46,8 @@
               "stem": "To jest",
               "options": [
                 "przeprosiny.",
-                "prośba.",
-                "skarga."
+                "skarga.",
+                "prośba."
               ],
               "answer": "a",
               "explain": "Mówiący zaczyna od „Przepraszam, że dzwonię tak późno” i tłumaczy, dlaczego nie mógł wcześniej. To przeprosiny, a nie prośba ani skarga."
@@ -68,32 +68,32 @@
               "stem": "Gdzie można usłyszeć ten komunikat?",
               "options": [
                 "w kinie",
-                "w samolocie",
-                "w teatrze"
+                "w teatrze",
+                "w samolocie"
               ],
-              "answer": "c",
+              "answer": "b",
               "explain": "Słowo „spektakl” wskazuje na teatr. W kinie mówi się o seansie lub filmie, a w samolocie nie ma spektaklu."
             },
             {
               "id": "rs1-4",
               "stem": "To jest",
               "options": [
+                "rada.",
                 "obietnica.",
-                "pochwała.",
-                "rada."
+                "pochwała."
               ],
-              "answer": "c",
+              "answer": "a",
               "explain": "„Na twoim miejscu wziąłbym parasol” to typowa forma rady (tryb przypuszczający). Mówiący niczego nie obiecuje i nikogo nie chwali."
             },
             {
               "id": "rs1-5",
               "stem": "Ta osoba",
               "options": [
+                "jest zła.",
                 "jest zdziwiona.",
-                "się cieszy.",
-                "jest zła."
+                "się cieszy."
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "„Gratuluję! Wiedziałam, że zdasz” – osoba się cieszy. Nie jest zdziwiona, bo mówi, że wiedziała o sukcesie."
             },
             {
@@ -101,8 +101,8 @@
               "stem": "Gdzie można usłyszeć tę wypowiedź?",
               "options": [
                 "na poczcie",
-                "w urzędzie miasta",
-                "w banku"
+                "w banku",
+                "w urzędzie miasta"
               ],
               "answer": "a",
               "explain": "Znaczki na listy i list polecony kupuje się i wysyła na poczcie. W banku ani w urzędzie miasta nie sprzedaje się znaczków."
@@ -111,8 +111,8 @@
               "id": "rs1-7",
               "stem": "To jest",
               "options": [
-                "propozycja.",
                 "przeprosiny.",
+                "propozycja.",
                 "odmowa."
               ],
               "answer": "c",
@@ -133,11 +133,11 @@
               "id": "rs1-9",
               "stem": "Ta osoba jest",
               "options": [
+                "zaskoczona.",
                 "zdenerwowana.",
-                "smutna.",
-                "zaskoczona."
+                "smutna."
               ],
-              "answer": "a",
+              "answer": "b",
               "explain": "„No nie! Znowu… Ile razy można to powtarzać?” – osoba jest zdenerwowana. Słowo „znowu” pokazuje, że sytuacja się powtarza, więc nie jest zaskoczona."
             },
             {
@@ -145,18 +145,18 @@
               "stem": "Kto to mówi?",
               "options": [
                 "krawcowa",
-                "sprzedawczyni",
-                "projektantka mody"
+                "projektantka mody",
+                "sprzedawczyni"
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "Rozmowa o rozmiarze sukienki i sprawdzanie towaru „na zapleczu” to praca sprzedawczyni w sklepie. Krawcowa szyje lub poprawia ubrania, a nie szuka ich w magazynie."
             },
             {
               "id": "rs1-11",
               "stem": "To jest",
               "options": [
-                "prośba.",
                 "rada.",
+                "prośba.",
                 "zaproszenie."
               ],
               "answer": "c",
@@ -189,10 +189,10 @@
               "stem": "Gdzie można usłyszeć tę wypowiedź?",
               "options": [
                 "na targu",
-                "w supermarkecie",
-                "w piekarni"
+                "w piekarni",
+                "w supermarkecie"
               ],
-              "answer": "b",
+              "answer": "c",
               "explain": "Samodzielne ważenie owoców i naklejka na torebkę to typowa procedura w supermarkecie. Na targu waży sprzedawca, a w piekarni nie ma owoców."
             }
           ]
@@ -223,8 +223,8 @@
               "id": "rs2-1",
               "stem": "Pacjentka",
               "options": [
-                "zrezygnowała z wizyty.",
                 "ma wizytę u lekarza jeszcze w tym tygodniu.",
+                "zrezygnowała z wizyty.",
                 "zapisała się na wizytę za trzy tygodnie."
               ],
               "answer": "c",
@@ -245,52 +245,52 @@
               "id": "rs2-3",
               "stem": "Goście hotelowi",
               "options": [
+                "wrócą do hotelu za godzinę.",
                 "od razu wchodzą do pokoju.",
-                "dostali pokój bez widoku na morze.",
-                "wrócą do hotelu za godzinę."
+                "dostali pokój bez widoku na morze."
               ],
-              "answer": "c",
+              "answer": "a",
               "explain": "Gość mówi: „pójdziemy na spacer i wrócimy za godzinę”. Nie wchodzą od razu, bo pokój jest sprzątany, a pokój z widokiem na morze jest ich."
             },
             {
               "id": "rs2-4",
               "stem": "Ojciec",
               "options": [
-                "pozwala synowi jechać, ale stawia warunki.",
                 "nie zgadza się na wycieczkę.",
+                "pozwala synowi jechać, ale stawia warunki.",
                 "pojedzie razem z chłopcami."
               ],
-              "answer": "a",
+              "answer": "b",
               "explain": "Ojciec mówi „No dobrze”, ale dodaje: „masz wrócić przed zmrokiem i weź kask”. Zgadza się z warunkami; z chłopcami pojedzie starszy brat Kuby, nie ojciec."
             },
             {
               "id": "rs2-5",
               "stem": "Klientka",
               "options": [
-                "odbierze płaszcz następnego dnia.",
                 "zapłaci za usługę dzisiaj.",
+                "odbierze płaszcz następnego dnia.",
                 "odebrała już płaszcz."
               ],
-              "answer": "a",
+              "answer": "b",
               "explain": "Pracownik mówi, że płaszcz „będzie gotowy dopiero jutro”. Dziś klientka nie zapłaci, bo „płaci się przy odbiorze”."
             },
             {
               "id": "rs2-6",
               "stem": "Zebranie mieszkańców odbędzie się",
               "options": [
-                "w sobotę.",
                 "w niedzielę.",
-                "w innym terminie, który nie jest jeszcze znany."
+                "w innym terminie, który nie jest jeszcze znany.",
+                "w sobotę."
               ],
-              "answer": "b",
+              "answer": "a",
               "explain": "Sąsiad mówi: „przenieśli je na niedzielę po południu”. Sobota to stary termin, a nowy jest już znany – wisi kartka na drzwiach."
             },
             {
               "id": "rs2-7",
               "stem": "Mężczyzna",
               "options": [
-                "chodzi na kurs wieczorowy.",
                 "sam płaci za lekcje.",
+                "chodzi na kurs wieczorowy.",
                 "będzie uczył się przez internet."
               ],
               "answer": "c",
@@ -606,8 +606,8 @@
               "passage": "Szanowni Mieszkańcy! Od poniedziałku rowery i wózki można przechowywać wyłącznie w nowej wózkowni na parterze. Rzeczy pozostawione na klatce schodowej po 30 listopada zostaną usunięte. Klucz do wózkowni wydaje biuro administracji w godzinach pracy.",
               "stem": "Z tego tekstu wynika, że",
               "options": [
-                "rowery można trzymać na klatce schodowej do końca roku.",
                 "nowa wózkownia znajduje się w piwnicy.",
+                "rowery można trzymać na klatce schodowej do końca roku.",
                 "klucz do wózkowni trzeba odebrać w administracji."
               ],
               "answer": "c",
@@ -618,8 +618,8 @@
               "passage": "Towar kupiony w naszym sklepie internetowym można zwrócić w ciągu 30 dni bez podawania przyczyny. Zwrot w sklepie stacjonarnym jest bezpłatny, a odesłanie paczki kurierem kosztuje 15 zł. Pieniądze oddajemy w ciągu 14 dni na konto, z którego zapłacono za zamówienie.",
               "stem": "Z tego tekstu wynika, że",
               "options": [
-                "odesłanie towaru kurierem jest bezpłatne.",
                 "klient musi wyjaśnić, dlaczego zwraca towar.",
+                "odesłanie towaru kurierem jest bezpłatne.",
                 "za odesłanie towaru kurierem trzeba zapłacić."
               ],
               "answer": "c",
@@ -630,11 +630,11 @@
               "passage": "Uwaga, Czytelnicy! Z powodu remontu czytelnia będzie nieczynna od 2 do 20 grudnia. Wypożyczalnia działa bez zmian. Książki można też zwracać przez całą dobę do skrzynki przy wejściu do budynku.",
               "stem": "Z tego tekstu wynika, że",
               "options": [
-                "książki można oddawać także w nocy.",
                 "w grudniu nie będzie można wypożyczać książek.",
+                "książki można oddawać także w nocy.",
                 "remont potrwa do końca grudnia."
               ],
-              "answer": "a",
+              "answer": "b",
               "explain": "Książki można zwracać „przez całą dobę” do skrzynki, czyli także w nocy. Wypożyczalnia działa bez zmian, a remont trwa do 20 grudnia."
             }
           ]
@@ -706,23 +706,23 @@
           "bank": [
             {
               "key": "A",
-              "text": "problemy z kręgosłupem mają już nawet dwudziestolatkowie"
+              "text": "które podtrzymuje dolną część pleców"
             },
             {
               "key": "B",
-              "text": "przy których można pracować także na stojąco"
-            },
-            {
-              "key": "C",
               "text": "żeby nie trzeba było pochylać głowy"
             },
             {
-              "key": "D",
+              "key": "C",
               "text": "dlatego warto kupić wygodne buty"
             },
             {
+              "key": "D",
+              "text": "bo ekran laptopa jest zwykle za nisko"
+            },
+            {
               "key": "E",
-              "text": "które podtrzymuje dolną część pleców"
+              "text": "problemy z kręgosłupem mają już nawet dwudziestolatkowie"
             },
             {
               "key": "F",
@@ -730,15 +730,15 @@
             },
             {
               "key": "G",
-              "text": "bo ekran laptopa jest zwykle za nisko"
+              "text": "przy których można pracować także na stojąco"
             },
             {
               "key": "H",
-              "text": "a kolana powinny być zgięte pod kątem prostym"
+              "text": "jeśli siedzimy bez przerwy przez cały dzień"
             },
             {
               "key": "I",
-              "text": "jeśli siedzimy bez przerwy przez cały dzień"
+              "text": "a kolana powinny być zgięte pod kątem prostym"
             }
           ],
           "example": {
@@ -750,35 +750,35 @@
               "id": "rt3-1",
               "n": 1,
               "kind": "bank",
-              "answer": "E",
+              "answer": "A",
               "explain": "Po słowie „oparcie” potrzebne jest zdanie z „które” w rodzaju nijakim: oparcie, „które podtrzymuje dolną część pleców”."
             },
             {
               "id": "rt3-2",
               "n": 2,
               "kind": "bank",
-              "answer": "H",
+              "answer": "I",
               "explain": "Zdanie mówi o pozycji ciała: stopy na podłodze, „a kolana powinny być zgięte pod kątem prostym”. Spójnik „a” łączy dwie podobne rady."
             },
             {
               "id": "rt3-3",
               "n": 3,
               "kind": "bank",
-              "answer": "C",
+              "answer": "B",
               "explain": "Monitor na wysokości oczu jest po to, „żeby nie trzeba było pochylać głowy”. To cel rady, dlatego „żeby”."
             },
             {
               "id": "rt3-4",
               "n": 4,
               "kind": "bank",
-              "answer": "G",
+              "answer": "D",
               "explain": "Osobna klawiatura i podstawka są potrzebne, „bo ekran laptopa jest zwykle za nisko”. Fragment wyjaśnia przyczynę rady dla użytkowników laptopa."
             },
             {
               "id": "rt3-5",
               "n": 5,
               "kind": "bank",
-              "answer": "I",
+              "answer": "H",
               "explain": "„Nawet najlepsze krzesło nie pomoże, jeśli siedzimy bez przerwy” – warunek. Następne zdanie radzi wstawać co godzinę, co potwierdza sens."
             },
             {
@@ -792,7 +792,7 @@
               "id": "rt3-7",
               "n": 7,
               "kind": "bank",
-              "answer": "B",
+              "answer": "G",
               "explain": "Biurka, „przy których można pracować także na stojąco” – zaimek „których” odnosi się do biurek. Fragment o butach (D) nie pasuje do tekstu."
             }
           ]

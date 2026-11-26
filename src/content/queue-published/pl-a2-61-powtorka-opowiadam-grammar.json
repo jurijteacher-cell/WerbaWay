@@ -29,9 +29,9 @@
           "text": "Nie martw się, jutro na pewno ___ ten raport.",
           "answer": "skończę",
           "options": [
-            "skończę",
             "skończyłam",
-            "kończyłam"
+            "kończyłam",
+            "skończę"
           ],
           "grammar_point": "czas-przyszly-dk",
           "explanation": "Jutro + wynik → przyszły dokonany: skończę."
@@ -42,8 +42,8 @@
           "answer": "Podczas",
           "options": [
             "Podczas",
-            "Kiedy",
-            "Zanim"
+            "Zanim",
+            "Kiedy"
           ],
           "grammar_point": "zdania-czasowe",
           "explanation": "Po luce jest rzeczownik (obiadu) → podczas. Kiedy i zanim łączą się z czasownikiem."
@@ -53,8 +53,8 @@
           "text": "Spotkamy się w kawiarni przy ___.",
           "answer": "rynku",
           "options": [
-            "rynku",
             "rynek",
+            "rynku",
             "rynkiem"
           ],
           "grammar_point": "miejscownik-pelny",
@@ -65,9 +65,9 @@
           "text": "Zanim ___ z domu, sprawdzę, czy mam bilet.",
           "answer": "wyjdę",
           "options": [
-            "wyjdę",
+            "wyszłam",
             "wychodzę",
-            "wyszłam"
+            "wyjdę"
           ],
           "grammar_point": "zdania-czasowe",
           "explanation": "Cała sytuacja jest w przyszłości (sprawdzę) → zanim wyjdę."
@@ -77,9 +77,9 @@
           "text": "Po tym, jak ___ list, od razu go wysłała.",
           "answer": "napisała",
           "options": [
-            "napisała",
+            "napisze",
             "pisała",
-            "napisze"
+            "napisała"
           ],
           "grammar_point": "aspekt-przeszly",
           "explanation": "Najpierw skończyła pisać, potem wysłała → dokonany: napisała."
@@ -285,158 +285,158 @@
       "instruction": "Przeczytaj rozmowę. W każdą lukę (1–8) wstaw fragment a–j. Dwa fragmenty nie pasują.",
       "text": "Kasia: Cześć, Olena! Co słychać?\n\nOlena: Dobrze, dzięki. Słuchaj, jutro Tomek ma urodziny. {el1-1}\n\nKasia: {el1-2} Niestety jutro nie mogę. Szef wysłał mnie do Gdańska.\n\nOlena: {el1-3} Na jak długo?\n\nKasia: Na dwa dni. {el1-4} Wracam w niedzielę.\n\nOlena: {el1-5} Może zrobimy małą imprezę w niedzielę?\n\nKasia: {el1-6} Tylko muszę zapytać, czy Tomek ma wtedy czas.\n\nOlena: Zapytam go dzisiaj. {el1-7} Co mam kupić na prezent?\n\nKasia: Może książkę o Tatrach? {el1-8}\n\nOlena: Dobrze, kupię ją jutro rano.\n\nKasia: Super. Pa!",
       "bank": [
-        "a) Zapraszam cię na imprezę.",
-        "b) Dziękuję za zaproszenie.",
-        "c) Szkoda!",
-        "d) Wyjeżdżam o siódmej rano.",
-        "e) Mam pomysł.",
-        "f) To świetny pomysł.",
-        "g) Jeszcze jedno pytanie.",
-        "h) Na pewno mu się spodoba.",
+        "a) Jeszcze jedno pytanie.",
+        "b) Nie szkodzi, już kupiłam.",
+        "c) Dziękuję za zaproszenie.",
+        "d) Szkoda!",
+        "e) Zapraszam cię na imprezę.",
+        "f) Wyjeżdżam o siódmej rano.",
+        "g) Na pewno mu się spodoba.",
+        "h) To świetny pomysł.",
         "i) Zadzwoń do mnie jutro rano.",
-        "j) Nie szkodzi, już kupiłam."
+        "j) Mam pomysł."
       ],
       "items": [
         {
           "id": "el1-1",
-          "answer": "a) Zapraszam cię na imprezę.",
+          "answer": "e) Zapraszam cię na imprezę.",
           "options": [
-            "a) Zapraszam cię na imprezę.",
-            "b) Dziękuję za zaproszenie.",
-            "c) Szkoda!",
-            "d) Wyjeżdżam o siódmej rano.",
-            "e) Mam pomysł.",
-            "f) To świetny pomysł.",
-            "g) Jeszcze jedno pytanie.",
-            "h) Na pewno mu się spodoba.",
+            "a) Jeszcze jedno pytanie.",
+            "b) Nie szkodzi, już kupiłam.",
+            "c) Dziękuję za zaproszenie.",
+            "d) Szkoda!",
+            "e) Zapraszam cię na imprezę.",
+            "f) Wyjeżdżam o siódmej rano.",
+            "g) Na pewno mu się spodoba.",
+            "h) To świetny pomysł.",
             "i) Zadzwoń do mnie jutro rano.",
-            "j) Nie szkodzi, już kupiłam."
+            "j) Mam pomysł."
           ],
           "explanation": "Olena mówi o urodzinach Tomka i od razu zaprasza Kasię. Fraza „Zapraszam cię na imprezę” pasuje do informacji o urodzinach.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-2",
-          "answer": "b) Dziękuję za zaproszenie.",
+          "answer": "c) Dziękuję za zaproszenie.",
           "options": [
-            "a) Zapraszam cię na imprezę.",
-            "b) Dziękuję za zaproszenie.",
-            "c) Szkoda!",
-            "d) Wyjeżdżam o siódmej rano.",
-            "e) Mam pomysł.",
-            "f) To świetny pomysł.",
-            "g) Jeszcze jedno pytanie.",
-            "h) Na pewno mu się spodoba.",
+            "a) Jeszcze jedno pytanie.",
+            "b) Nie szkodzi, już kupiłam.",
+            "c) Dziękuję za zaproszenie.",
+            "d) Szkoda!",
+            "e) Zapraszam cię na imprezę.",
+            "f) Wyjeżdżam o siódmej rano.",
+            "g) Na pewno mu się spodoba.",
+            "h) To świetny pomysł.",
             "i) Zadzwoń do mnie jutro rano.",
-            "j) Nie szkodzi, już kupiłam."
+            "j) Mam pomysł."
           ],
           "explanation": "Kasia dziękuje za zaproszenie i dopiero potem odmawia: „Niestety jutro nie mogę”. „Nie szkodzi, już kupiłam” nie pasuje do zaproszenia.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-3",
-          "answer": "c) Szkoda!",
+          "answer": "d) Szkoda!",
           "options": [
-            "a) Zapraszam cię na imprezę.",
-            "b) Dziękuję za zaproszenie.",
-            "c) Szkoda!",
-            "d) Wyjeżdżam o siódmej rano.",
-            "e) Mam pomysł.",
-            "f) To świetny pomysł.",
-            "g) Jeszcze jedno pytanie.",
-            "h) Na pewno mu się spodoba.",
+            "a) Jeszcze jedno pytanie.",
+            "b) Nie szkodzi, już kupiłam.",
+            "c) Dziękuję za zaproszenie.",
+            "d) Szkoda!",
+            "e) Zapraszam cię na imprezę.",
+            "f) Wyjeżdżam o siódmej rano.",
+            "g) Na pewno mu się spodoba.",
+            "h) To świetny pomysł.",
             "i) Zadzwoń do mnie jutro rano.",
-            "j) Nie szkodzi, już kupiłam."
+            "j) Mam pomysł."
           ],
           "explanation": "Olena jest zawiedziona, że Kasia nie przyjdzie, i mówi „Szkoda!” Potem pyta, na jak długo Kasia wyjeżdża.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-4",
-          "answer": "d) Wyjeżdżam o siódmej rano.",
+          "answer": "f) Wyjeżdżam o siódmej rano.",
           "options": [
-            "a) Zapraszam cię na imprezę.",
-            "b) Dziękuję za zaproszenie.",
-            "c) Szkoda!",
-            "d) Wyjeżdżam o siódmej rano.",
-            "e) Mam pomysł.",
-            "f) To świetny pomysł.",
-            "g) Jeszcze jedno pytanie.",
-            "h) Na pewno mu się spodoba.",
+            "a) Jeszcze jedno pytanie.",
+            "b) Nie szkodzi, już kupiłam.",
+            "c) Dziękuję za zaproszenie.",
+            "d) Szkoda!",
+            "e) Zapraszam cię na imprezę.",
+            "f) Wyjeżdżam o siódmej rano.",
+            "g) Na pewno mu się spodoba.",
+            "h) To świetny pomysł.",
             "i) Zadzwoń do mnie jutro rano.",
-            "j) Nie szkodzi, już kupiłam."
+            "j) Mam pomysł."
           ],
           "explanation": "Kasia opowiada o wyjeździe: wyjeżdża rano i wraca w niedzielę. „Zadzwoń do mnie jutro rano” nie pasuje, bo Kasia będzie wtedy w drodze.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-5",
-          "answer": "e) Mam pomysł.",
+          "answer": "j) Mam pomysł.",
           "options": [
-            "a) Zapraszam cię na imprezę.",
-            "b) Dziękuję za zaproszenie.",
-            "c) Szkoda!",
-            "d) Wyjeżdżam o siódmej rano.",
-            "e) Mam pomysł.",
-            "f) To świetny pomysł.",
-            "g) Jeszcze jedno pytanie.",
-            "h) Na pewno mu się spodoba.",
+            "a) Jeszcze jedno pytanie.",
+            "b) Nie szkodzi, już kupiłam.",
+            "c) Dziękuję za zaproszenie.",
+            "d) Szkoda!",
+            "e) Zapraszam cię na imprezę.",
+            "f) Wyjeżdżam o siódmej rano.",
+            "g) Na pewno mu się spodoba.",
+            "h) To świetny pomysł.",
             "i) Zadzwoń do mnie jutro rano.",
-            "j) Nie szkodzi, już kupiłam."
+            "j) Mam pomysł."
           ],
           "explanation": "Olena wpada na pomysł, co zrobić zamiast urodzin w piątek. Dlatego mówi „Mam pomysł” i proponuje imprezę w niedzielę.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-6",
-          "answer": "f) To świetny pomysł.",
+          "answer": "h) To świetny pomysł.",
           "options": [
-            "a) Zapraszam cię na imprezę.",
-            "b) Dziękuję za zaproszenie.",
-            "c) Szkoda!",
-            "d) Wyjeżdżam o siódmej rano.",
-            "e) Mam pomysł.",
-            "f) To świetny pomysł.",
-            "g) Jeszcze jedno pytanie.",
-            "h) Na pewno mu się spodoba.",
+            "a) Jeszcze jedno pytanie.",
+            "b) Nie szkodzi, już kupiłam.",
+            "c) Dziękuję za zaproszenie.",
+            "d) Szkoda!",
+            "e) Zapraszam cię na imprezę.",
+            "f) Wyjeżdżam o siódmej rano.",
+            "g) Na pewno mu się spodoba.",
+            "h) To świetny pomysł.",
             "i) Zadzwoń do mnie jutro rano.",
-            "j) Nie szkodzi, już kupiłam."
+            "j) Mam pomysł."
           ],
           "explanation": "Kasia ocenia propozycję Oleny jako dobrą i dodaje jedyną wątpliwość. Fraza „To świetny pomysł” pasuje do słów „Tylko muszę zapytać…”.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-7",
-          "answer": "g) Jeszcze jedno pytanie.",
+          "answer": "a) Jeszcze jedno pytanie.",
           "options": [
-            "a) Zapraszam cię na imprezę.",
-            "b) Dziękuję za zaproszenie.",
-            "c) Szkoda!",
-            "d) Wyjeżdżam o siódmej rano.",
-            "e) Mam pomysł.",
-            "f) To świetny pomysł.",
-            "g) Jeszcze jedno pytanie.",
-            "h) Na pewno mu się spodoba.",
+            "a) Jeszcze jedno pytanie.",
+            "b) Nie szkodzi, już kupiłam.",
+            "c) Dziękuję za zaproszenie.",
+            "d) Szkoda!",
+            "e) Zapraszam cię na imprezę.",
+            "f) Wyjeżdżam o siódmej rano.",
+            "g) Na pewno mu się spodoba.",
+            "h) To świetny pomysł.",
             "i) Zadzwoń do mnie jutro rano.",
-            "j) Nie szkodzi, już kupiłam."
+            "j) Mam pomysł."
           ],
           "explanation": "Olena zmienia temat i zadaje następne pytanie. Wyrażenie „Jeszcze jedno pytanie” zapowiada nową sprawę: prezent.",
           "grammar_point": "slownictwo"
         },
         {
           "id": "el1-8",
-          "answer": "h) Na pewno mu się spodoba.",
+          "answer": "g) Na pewno mu się spodoba.",
           "options": [
-            "a) Zapraszam cię na imprezę.",
-            "b) Dziękuję za zaproszenie.",
-            "c) Szkoda!",
-            "d) Wyjeżdżam o siódmej rano.",
-            "e) Mam pomysł.",
-            "f) To świetny pomysł.",
-            "g) Jeszcze jedno pytanie.",
-            "h) Na pewno mu się spodoba.",
+            "a) Jeszcze jedno pytanie.",
+            "b) Nie szkodzi, już kupiłam.",
+            "c) Dziękuję za zaproszenie.",
+            "d) Szkoda!",
+            "e) Zapraszam cię na imprezę.",
+            "f) Wyjeżdżam o siódmej rano.",
+            "g) Na pewno mu się spodoba.",
+            "h) To świetny pomysł.",
             "i) Zadzwoń do mnie jutro rano.",
-            "j) Nie szkodzi, już kupiłam."
+            "j) Mam pomysł."
           ],
           "explanation": "Kasia jest pewna, że książka o Tatrach się spodoba. „Nie szkodzi, już kupiłam” nie pasuje, bo Olena dopiero pyta, co kupić.",
           "grammar_point": "slownictwo"
@@ -455,9 +455,9 @@
           "id": "el2-1",
           "answer": "a) Dziękuję za",
           "options": [
+            "c) Dziękuję na",
             "a) Dziękuję za",
-            "b) Dziękuję o",
-            "c) Dziękuję na"
+            "b) Dziękuję o"
           ],
           "explanation": "Dziękujemy „za coś”: „dziękuję za rozmowę”. „Dziękuję o” i „dziękuję na” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -466,8 +466,8 @@
           "id": "el2-2",
           "answer": "b) w sprawie",
           "options": [
-            "a) o sprawie",
             "b) w sprawie",
+            "a) o sprawie",
             "c) na sprawę"
           ],
           "explanation": "Formuła „Piszę w sprawie + dopełniacz” otwiera list urzędowy. Pozostałe wyrażenia nie są używane.",
@@ -489,8 +489,8 @@
           "answer": "a) czy",
           "options": [
             "a) czy",
-            "b) że",
-            "c) kto"
+            "c) kto",
+            "b) że"
           ],
           "explanation": "Pytanie pośrednie zaczyna się od „czy”. „Że” i „kto” nie pasują do pytania o śniadanie.",
           "grammar_point": "rejestr-formalny"
@@ -499,9 +499,9 @@
           "id": "el2-5",
           "answer": "b) że",
           "options": [
+            "c) żeby",
             "a) czy",
-            "b) że",
-            "c) żeby"
+            "b) że"
           ],
           "explanation": "Po „powiedziała,” przekazujemy informację słowem „że”. „Czy” oznacza pytanie, a „żeby” nie pasuje do czasownika „potrzebuję”.",
           "grammar_point": "rejestr-formalny"
@@ -510,9 +510,9 @@
           "id": "el2-6",
           "answer": "c) o",
           "options": [
-            "a) za",
+            "c) o",
             "b) na",
-            "c) o"
+            "a) za"
           ],
           "explanation": "Prosimy „o coś”: „prosi o informację”. „Prosić za” i „prosić na” są niepoprawne.",
           "grammar_point": "rejestr-formalny"
@@ -521,9 +521,9 @@
           "id": "el2-7",
           "answer": "a) wdzięczna",
           "options": [
+            "c) miła",
             "a) wdzięczna",
-            "b) zadowolona",
-            "c) miła"
+            "b) zadowolona"
           ],
           "explanation": "„Być wdzięcznym za coś” to stała formuła w liście z prośbą. „Zadowolona” łączy się z „z”, a „miła” nie pasuje do zdania.",
           "grammar_point": "rejestr-formalny"
@@ -532,9 +532,9 @@
           "id": "el2-8",
           "answer": "b) do",
           "options": [
-            "a) od",
             "b) do",
-            "c) z"
+            "c) z",
+            "a) od"
           ],
           "explanation": "Termin odpowiedzi podajemy słowem „do”: „do piątku” znaczy „najpóźniej w piątek”. „Od” i „z” mają inne znaczenie.",
           "grammar_point": "rejestr-formalny"
@@ -554,9 +554,9 @@
           "id": "el2-10",
           "answer": "a) Z poważaniem",
           "options": [
-            "a) Z poważaniem",
+            "c) Pa",
             "b) Cześć",
-            "c) Pa"
+            "a) Z poważaniem"
           ],
           "explanation": "Do hotelu piszemy oficjalnie i kończymy „Z poważaniem”. „Cześć” i „Pa” są potoczne.",
           "grammar_point": "rejestr-formalny"
