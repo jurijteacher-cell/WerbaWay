@@ -122,8 +122,8 @@
 | 03 | `pl-nier-03-czas-terazniejszy` | Mój dzień w biurze | теперішній час (4 групи + шість нерегулярних), Pan/Pani/Państwo + 3 ос., *chcę/mogę/muszę + bezokolicznik*, *wiem ≠ znam* | ранкова нарада, зустріч із Lisami, дзвінок до Zielińskiej |
 | 04 | `pl-nier-04-rodzaj-i-przymiotnik` | Dwie oferty dla państwa Lisów | рід (m/ż/n) + винятки, множина речей/жінок, *drzwi, schody*, мужськоособова множина (*klienci, sąsiedzi, Lisowie*) + винятки (*ludzie, dzieci*), прикметник lp і lm (*ci/te*) | звіт про дві оферти, телефон Lisom, розмова з Zielińską |
 | 05 | `pl-nier-05-biernik` | Odpowiadamy na e-mail pani Marty | biernik: żeńskie *-a→-ę*, rzecz / człowiek (*balkon, klienta*), множина (*klientów*), *ten/tego/tę* + прикметник, *Pana/Panią/Państwa*, *go/ją/je/ich*, прийменники *czekać na, pytać o, prosić o, dziękować za, w piątek, za godzinę*; виняток: *szukać, potrzebować, wymagać, słuchać* + dopełniacz (форми — урок 06; рядок плану «*szukam mieszkania*» — це родовий, не biernik) | відповідь на e-mail, запрошення, ключі й документи |
-| 06 | `pl-nier-06-…` | Dopełniacz | *nie ma windy, pięć pokoi, dużo osób, bez balkonu* | характеристики, чого немає |
-| 07 | `pl-nier-07-…` | Liczebniki i ceny | ціни, метраж, поверхи, дати, години | назвати ціну вголос |
+| 06 | `pl-nier-06-dopelniacz` ✅ 27.11 | Czego nie ma w tym mieszkaniu? | функції родового (*nie ma windy, brakuje*, заперечення біерніка), однина ж./с. і ч. (*-a/-u*) + винятки (*pokoju, telefonu, długopisu*), множина + винятки (*złotych, drzwi, ludzi, dzieci, pieniędzy*), кількість (*pięć pokoi, kilka ofert, pół*), прийменники, дієслова з родовим, присвійний родовий | braki, opłaty i papiery: нотатка з Єжиць, телефон клієнта, zarządca, pan Ravi |
+| 07 | `pl-nier-07-liczebniki-i-ceny` ✅ 27.11 | Ile to kosztuje? | числівник + іменник за останньою цифрою, *złoty/złote/złotych*, *tysiąc/milion*, метраж + *pół/półtora/ar*, *procent*, поверхи й порядкові (*parter!*), дати, виняток *dwutysięczny*, години офіційно/розмовно, відмінювання числівника | ціни трьох оферт, prowizja, три оглядання в тижні, клієнт рахує ратy |
 | 08 | `pl-nier-08-…` | Miejscownik i przyimki | *w centrum, na trzecim piętrze*, *gdzie / dokąd / skąd* | розташування, район |
 | 09 | `pl-nier-09-…` | Narzędnik, celownik, wołacz | *z właścicielem, dzwonię do Pana, Panie Pawle* | люди й контакти |
 | 10 | `pl-nier-10-…` | Czas przeszły i przyszły, aspekt | *zadzwoniłam / zadzwonię*, dk vs ndk | підтвердження, плани |
@@ -132,6 +132,7 @@
 
 Уроки 03–12 **не повторюють** 01–02: 01 (ввічливість, залежні питання, парафраза) лишається; 02 (дієприкметники, ступінь) відкладено до 13–15 як «для B2», числівники з 02 переходять у 07. Порядок 04–12 коригується за журналом помилок з 03.
 
+**Зроблено 27.11.2026:** уроки 06 і 07 опубліковано (лише сайт). Для них складено довідники `docs/ref/genitive.md` і `docs/ref/numerals-prices.md` — наступні лекції беруть форми звідти. У 06 і 07 уперше в цьому модулі є блоки `el1`/`el2` («Elementy języka» за LESSON_PROTOCOL §4); уроки 03–05 їх не мають. У ДЗ уроку 06 немає відео: у сесії не відкривалися сторінки YouTube.
 ### 13 · Zapraszam do środka — огляд і заперечення клієнта
 `pl-nier-13-prezentacja-i-obiekcje` · рівень B2
 

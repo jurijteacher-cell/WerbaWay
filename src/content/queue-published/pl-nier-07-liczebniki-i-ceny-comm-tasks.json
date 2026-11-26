@@ -1,0 +1,65 @@
+{
+  "lesson_id": "pl-nier-07-liczebniki-i-ceny",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: ceny, terminy i kalkulator",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę z nauczycielem.",
+  "estimated_minutes": 30,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "read-then-play",
+      "front_title": "📞 „Ile to kosztuje?”",
+      "back_scenario": "Najpierw przeczytaj przykładową rozmowę. Potem odegraj ją jeszcze raz — klienta gra nauczyciel, a Ty podajesz wszystkie liczby na głos, bez pauzy i bez kalkulatora.",
+      "model_dialogue": [
+        "Klient: Dzień dobry, dzwonię w sprawie mieszkania na Jeżycach. Jaka jest cena?",
+        "Ty: Dzień dobry, Natalia Kowal, biuro „Klucz”. Cena ofertowa to siedemset czterdzieści dziewięć tysięcy złotych.",
+        "Klient: A ile to wychodzi za metr?",
+        "Ty: Jedenaście tysięcy siedemset złotych za metr kwadratowy. Mieszkanie ma sześćdziesiąt cztery metry.",
+        "Klient: To dużo czy mało?",
+        "Ty: Średnia w Poznaniu na rynku wtórnym jest wyższa, około trzynastu tysięcy, więc to rozsądna cena za ten adres.",
+        "Klient: Na którym piętrze?",
+        "Ty: Na trzecim, w kamienicy bez windy. Budynek ma cztery piętra.",
+        "Klient: Jakie są opłaty?",
+        "Ty: Czynsz sześćset czterdzieści złotych miesięcznie, w tym fundusz remontowy. Prąd i gaz osobno, według licznika.",
+        "Klient: A Państwa prowizja?",
+        "Ty: Dwa procent ceny transakcyjnej plus VAT. Do ceny dochodzi jeszcze podatek PCC i taksa notarialna.",
+        "Klient: Kiedy można obejrzeć?",
+        "Ty: W czwartek o siedemnastej trzydzieści, czyli o wpół do szóstej. Pasuje Panu ten termin?"
+      ],
+      "back_checklist": [
+        "Podaj cenę całkowitą i cenę za metr, obie słowami.",
+        "Porównaj z dwiema innymi ofertami (Łazarz, Grunwald) i ze średnią dla Poznania.",
+        "Podaj metraż, piętro i liczbę pięter budynku.",
+        "Powiedz, co trzeba doliczyć: prowizja, PCC, taksa notarialna.",
+        "Zaproponuj termin i godzinę w dwóch wersjach: oficjalnej i potocznej.",
+        "Na koniec powtórz najważniejsze trzy liczby."
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "📅 Trzy oglądania w jednym tygodniu",
+      "back_scenario": "Musisz ustawić w kalendarzu trzy oglądania: państwo Lisowie, pani Brzezińska i pan Ravi. Nauczyciel gra po kolei każdego klienta i każdemu nie pasuje pierwszy termin.",
+      "back_checklist": [
+        "Zaproponuj datę i godzinę (dwunastego grudnia o jedenastej).",
+        "Przy odmowie podaj alternatywę w innej części dnia.",
+        "Powiedz, ile trwa oglądanie (kwadrans, pół godziny).",
+        "Potwierdź ustalenia: dzień tygodnia, data, godzina.",
+        "Zapisz i powtórz na głos cały harmonogram."
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "front_title": "🧮 Klient liczy ratę",
+      "back_scenario": "Klient chce wiedzieć, ile w sumie zapłaci przy tej ofercie. Nie jesteś doradcą kredytowym — podajesz liczby, które znasz, i mówisz wprost, co musi policzyć bank. Klienta gra nauczyciel.",
+      "back_checklist": [
+        "Podaj cenę, prowizję w procentach i kwotę podatku jako „około”.",
+        "Powiedz, jaki wkład własny bank zwykle wymaga (dwadzieścia procent).",
+        "Wyjaśnij różnicę: oprocentowanie podaje się rocznie, rata jest miesięczna.",
+        "Powiedz, czego nie policzysz i kto to policzy.",
+        "Zaproponuj, że przyślesz zestawienie z liczbami na piśmie."
+      ]
+    }
+  ]
+}

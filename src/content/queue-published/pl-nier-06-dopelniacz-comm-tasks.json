@@ -1,0 +1,65 @@
+{
+  "lesson_id": "pl-nier-06-dopelniacz",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: braki, opłaty i papiery",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę z nauczycielem.",
+  "estimated_minutes": 30,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "read-then-play",
+      "front_title": "📞 „Czego tam nie ma?”",
+      "back_scenario": "Najpierw przeczytaj przykładową rozmowę. Potem zadzwoń jeszcze raz — tym razem klienta gra nauczyciel, a Ty mówisz o brakach mieszkania pani Zielińskiej i od razu podajesz, co jest w zamian.",
+      "model_dialogue": [
+        "Klient: Dzień dobry, dzwonię w sprawie ogłoszenia z Jeżyc. Czy oferta jest nadal aktualna?",
+        "Ty: Dzień dobry, tak, jest aktualna. Natalia Kowal, biuro „Klucz”. W czym mogę pomóc?",
+        "Klient: Mieszkanie wygląda dobrze, ale chciałbym wiedzieć, czego tam nie ma.",
+        "Ty: Powiem wprost: w kamienicy nie ma windy, a mieszkanie jest na trzecim piętrze.",
+        "Klient: A parking?",
+        "Ty: Nie ma miejsca parkingowego. Na ulicy jest strefa płatnego parkowania, abonament dla mieszkańca kosztuje mniej.",
+        "Klient: Rozumiem. A jakieś pomieszczenie na rowery?",
+        "Ty: Komórki lokatorskiej nie ma, jest za to piwnica, około czterech metrów.",
+        "Klient: Ile wynosi czynsz?",
+        "Ty: Sześćset czterdzieści złotych, w tym fundusz remontowy i wywóz śmieci. Prąd i gaz osobno, według licznika.",
+        "Klient: To niemało. Czego jeszcze mam się spodziewać?",
+        "Ty: Jeden pokój wymaga odświeżenia i jedno okno jest nieszczelne. Nie ukrywam tego, bo to pole do negocjacji ceny.",
+        "Klient: Dobrze, że Pani mówi. A papiery?",
+        "Ty: Numer księgi wieczystej mam, mieszkanie ma dwóch współwłaścicieli, więc do umowy potrzebujemy dwóch podpisów."
+      ],
+      "back_checklist": [
+        "Powiedz, czego nie ma w budynku (nie ma windy, nie ma miejsca parkingowego).",
+        "Po każdym braku podaj atut: jest za to piwnica, jest blisko park.",
+        "Podaj czynsz i powiedz, co obejmuje, a co płaci się osobno.",
+        "Powiedz o usterkach, zanim klient je znajdzie.",
+        "Wyjaśnij sprawę dwóch współwłaścicieli i dwóch podpisów.",
+        "Zapisz, czego klient potrzebuje, i ustal termin kolejnego telefonu."
+      ]
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "🏢 Telefon do zarządcy",
+      "back_scenario": "Dzwonisz do zarządcy budynku pani Zielińskiej. Potrzebujesz liczb do zestawienia dla klientów. Zarządcę gra nauczyciel.",
+      "back_checklist": [
+        "Zapytaj o wysokość czynszu i o to, czego czynsz nie obejmuje.",
+        "Zapytaj o fundusz remontowy i o plan remontu dachu.",
+        "Poproś o zaświadczenie o braku zaległości i ustal termin.",
+        "Zapytaj, czy uchwała o remoncie dotyczy wszystkich lokali.",
+        "Powtórz na głos liczby, które zapisałaś, i poproś o potwierdzenie mailem."
+      ]
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "front_title": "🌍 Pan Ravi i mieszkanie bez wielu rzeczy",
+      "back_scenario": "Pan Ravi Sharma (polski A2) pyta o mieszkanie pana Wrony na Łazarzu. Mów krótkimi zdaniami, bez trudnych konstrukcji. Pana Raviego gra nauczyciel.",
+      "back_checklist": [
+        "Powiedz prostymi słowami, czego w mieszkaniu nie ma (nie ma pralki, nie ma zmywarki).",
+        "Powiedz, co trzeba dopłacić: media, internet, kaucja.",
+        "Sprawdź, czy pan Ravi rozumie, i powtórz kluczowe liczby inaczej.",
+        "Zapytaj, czego potrzebuje najbardziej, i zapisz to.",
+        "Ustal, kiedy możecie obejrzeć mieszkanie."
+      ]
+    }
+  ]
+}

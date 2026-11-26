@@ -1,0 +1,340 @@
+{
+  "lesson_id": "pl-nier-06-dopelniacz",
+  "exercise_type": "fill-in-blank",
+  "title": "Praca domowa: dopełniacz",
+  "instruction": "Pięć krótkich ćwiczeń. Możesz przerwać i wrócić później.",
+  "estimated_minutes": 20,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Nie ma czego?",
+      "instruction": "Wpisz formę w nawiasie.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "W bloku na Naramowicach nie ma ___ (ochrona), ale jest monitoring.",
+          "answer": "ochrony",
+          "accept": [],
+          "grammar_point": "dopelniacz-nie-ma",
+          "explanation": "Po nie ma dopełniacz: ochrona → ochrony."
+        },
+        {
+          "id": "h1-2",
+          "text": "W kawalerce na Dębcu brakuje ___ (balkon).",
+          "answer": "balkonu",
+          "accept": [],
+          "grammar_point": "dopelniacz-nie-ma",
+          "explanation": "Balkon → balkonu (-u)."
+        },
+        {
+          "id": "h1-3",
+          "text": "Na osiedlu w Luboniu nie ma jeszcze ___ (przedszkole).",
+          "answer": "przedszkola",
+          "accept": [],
+          "grammar_point": "rzecz-lp-nijaki",
+          "explanation": "Nijakie -e → -a."
+        },
+        {
+          "id": "h1-4",
+          "text": "W domu w Swarzędzu nie ma ___ (garaż).",
+          "answer": "garażu",
+          "accept": [],
+          "grammar_point": "rzecz-lp-meski",
+          "explanation": "Garaż → garażu."
+        },
+        {
+          "id": "h1-5",
+          "text": "W tej ofercie nie widzę ___ (piwnica).",
+          "answer": "piwnicy",
+          "accept": [],
+          "grammar_point": "przeczenie-dopelniacz",
+          "explanation": "Zaprzeczony biernik → dopełniacz; po c -y."
+        },
+        {
+          "id": "h1-6",
+          "text": "Właściciel nie podał ___ (metraż) tarasu.",
+          "answer": "metrażu",
+          "accept": [],
+          "grammar_point": "rzecz-lp-meski",
+          "explanation": "Metraż → metrażu."
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Ile i czego?",
+      "instruction": "Wybierz formę, która pasuje do liczby.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Dom w Swarzędzu ma ___.",
+          "answer": "pięć pokoi",
+          "options": [
+            "pięć pokoi",
+            "pięć pokoje"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po pięć dopełniacz liczby mnogiej."
+        },
+        {
+          "id": "h2-2",
+          "text": "Działka ma ___.",
+          "answer": "trzy ary",
+          "options": [
+            "trzy arów",
+            "trzy ary"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po trzy mianownik liczby mnogiej."
+        },
+        {
+          "id": "h2-3",
+          "text": "W tym miesiącu podpisałam ___.",
+          "answer": "siedem umów",
+          "options": [
+            "siedem umów",
+            "siedem umowy"
+          ],
+          "grammar_point": "mn-przypadki",
+          "explanation": "Po siedem dopełniacz liczby mnogiej: umów."
+        },
+        {
+          "id": "h2-4",
+          "text": "Na Dębcu zostało ___ w tej cenie.",
+          "answer": "kilka mieszkań",
+          "options": [
+            "kilka mieszkania",
+            "kilka mieszkań"
+          ],
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Kilka + dopełniacz liczby mnogiej."
+        },
+        {
+          "id": "h2-5",
+          "text": "___ dwa zapytania z internetu.",
+          "answer": "Przyszły",
+          "options": [
+            "Przyszły",
+            "Przyszło"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Przy 2–4 czasownik w liczbie mnogiej."
+        },
+        {
+          "id": "h2-6",
+          "text": "___ dwadzieścia zapytań z internetu.",
+          "answer": "Przyszło",
+          "options": [
+            "Przyszło",
+            "Przyszły"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Przy 5+ liczba pojedyncza, rodzaj nijaki."
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. Przyimki",
+      "instruction": "Wpisz formę po przyimku.",
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Dom stoi niedaleko ___ (jezioro) w Kiekrzu.",
+          "answer": "jeziora",
+          "accept": [],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Niedaleko + dopełniacz; nijakie -o → -a."
+        },
+        {
+          "id": "h3-2",
+          "text": "Zestawienie przygotowałam dla ___ (pani Monika).",
+          "answer": "pani Moniki",
+          "accept": [
+            "Moniki"
+          ],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Dla + dopełniacz; po k -i."
+        },
+        {
+          "id": "h3-3",
+          "text": "Oprócz ___ (kaucja) najemca płaci pierwszy czynsz z góry.",
+          "answer": "kaucji",
+          "accept": [],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Kaucja → kaucji."
+        },
+        {
+          "id": "h3-4",
+          "text": "Wracam od ___ (notariusz) po trzeciej.",
+          "answer": "notariusza",
+          "accept": [],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Od + dopełniacz; nazwa zawodu -a."
+        },
+        {
+          "id": "h3-5",
+          "text": "Podczas ___ (remont) klatki winda nie działa.",
+          "answer": "remontu",
+          "accept": [],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Podczas + dopełniacz."
+        },
+        {
+          "id": "h3-6",
+          "text": "Według ___ (zarządca) uchwała wejdzie od stycznia.",
+          "answer": "zarządcy",
+          "accept": [],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Zarządca → zarządcy."
+        }
+      ]
+    },
+    {
+      "block_id": "h4",
+      "exercise_type": "fill-in-blank",
+      "title": "4. Czasownik rządzi",
+      "instruction": "Wybierz formę, której wymaga czasownik.",
+      "items": [
+        {
+          "id": "h4-1",
+          "text": "Pani Monika szuka ___ dla córki.",
+          "answer": "kawalerki",
+          "options": [
+            "kawalerkę",
+            "kawalerki"
+          ],
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Szukać + dopełniacz."
+        },
+        {
+          "id": "h4-2",
+          "text": "Deweloper wymaga ___ w trzy dni.",
+          "answer": "zaliczki",
+          "options": [
+            "zaliczkę",
+            "zaliczki"
+          ],
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Wymagać + dopełniacz."
+        },
+        {
+          "id": "h4-3",
+          "text": "Do zdjęć używam ___ szerokokątnego.",
+          "answer": "obiektywu",
+          "options": [
+            "obiektywu",
+            "obiektyw"
+          ],
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Używać + dopełniacz; obiektyw → obiektywu."
+        },
+        {
+          "id": "h4-4",
+          "text": "Ta zmiana dotyczy ___ na poddaszu.",
+          "answer": "lokatorów",
+          "options": [
+            "lokatorzy",
+            "lokatorów"
+          ],
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Dotyczyć + dopełniacz liczby mnogiej."
+        },
+        {
+          "id": "h4-5",
+          "text": "Unikam ___ bez potwierdzenia na papierze.",
+          "answer": "ustaleń",
+          "options": [
+            "ustalenia",
+            "ustaleń"
+          ],
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Unikać + dopełniacz; ustalenia → ustaleń."
+        },
+        {
+          "id": "h4-6",
+          "text": "Pilnuję ___ ogłoszeń na portalu.",
+          "answer": "terminów",
+          "options": [
+            "terminów",
+            "terminy"
+          ],
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Pilnować + dopełniacz."
+        }
+      ]
+    },
+    {
+      "block_id": "h5",
+      "exercise_type": "sentence-building",
+      "title": "5. Popraw zdanie",
+      "instruction": "W każdym zdaniu jest jeden błąd. Napisz zdanie poprawnie.",
+      "items": [
+        {
+          "id": "h5-1",
+          "prompt": "Klientka szuka kawalerkę blisko uczelni.",
+          "answer": "Klientka szuka kawalerki blisko uczelni.",
+          "accept": [
+            "Klientka szuka kawalerki niedaleko uczelni."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Szukać wymaga dopełniacza."
+        },
+        {
+          "id": "h5-2",
+          "prompt": "W bloku nie ma ochronę.",
+          "answer": "W bloku nie ma ochrony.",
+          "accept": [
+            "Nie ma ochrony w bloku."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Po nie ma dopełniacz."
+        },
+        {
+          "id": "h5-3",
+          "prompt": "To jest dom pan Wrona.",
+          "answer": "To jest dom pana Wrony.",
+          "accept": [
+            "To dom pana Wrony."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Czyj dom? — dopełniacz: pana Wrony."
+        },
+        {
+          "id": "h5-4",
+          "prompt": "Mieszkanie jest przy przystanku, trzy minuty piechotą.",
+          "answer": "Mieszkanie jest obok przystanku, trzy minuty piechotą.",
+          "accept": [
+            "Mieszkanie jest koło przystanku, trzy minuty piechotą.",
+            "Mieszkanie jest niedaleko przystanku, trzy minuty piechotą."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "„Біля” to obok / koło + dopełniacz."
+        },
+        {
+          "id": "h5-5",
+          "prompt": "Kaucja to dwa tysiące złotów.",
+          "answer": "Kaucja to dwa tysiące złotych.",
+          "accept": [
+            "Kaucja wynosi dwa tysiące złotych."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Złoty odmienia się jak przymiotnik: złotych."
+        },
+        {
+          "id": "h5-6",
+          "prompt": "Potrzebuję dwa podpisy współwłaścicieli.",
+          "answer": "Potrzebuję dwóch podpisów współwłaścicieli.",
+          "accept": [
+            "Potrzebuję podpisów dwóch współwłaścicieli."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Potrzebować + dopełniacz, także liczebnik: dwóch podpisów."
+        }
+      ]
+    }
+  ]
+}

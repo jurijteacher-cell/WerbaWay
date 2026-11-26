@@ -1,0 +1,1409 @@
+{
+  "lesson_id": "pl-nier-06-dopelniacz",
+  "exercise_type": "fill-in-blank",
+  "title": "Dopełniacz: czego nie ma, czyje i ile",
+  "instruction": "Czternaście bloków ćwiczeń. Możesz przerwać i wrócić później.",
+  "estimated_minutes": 45,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "Tekst. Ułóż w kolejności",
+      "instruction": "W jakiej kolejności Natalia pisze o mieszkaniu pani Zielińskiej? Klikaj zdania po kolei.",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "Natalia wraca z Jeżyc i zaczyna listę rzeczy, których w mieszkaniu nie ma.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "Pisze o budynku: nie ma windy ani miejsca parkingowego.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Opisuje samo mieszkanie: metraż, pokoje i usterki.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Podaje opłaty: czynsz administracyjny, fundusz remontowy, media.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "Przechodzi do papierów: księga wieczysta i dwóch współwłaścicieli.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Na końcu pisze, czego jeszcze nie wie i o co zapyta w poniedziałek.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Tekst. Uzupełnij streszczenie",
+      "instruction": "Wpisz formę w nawiasie tak, jak pasuje do zdania.",
+      "items": [
+        {
+          "id": "t2-1",
+          "answer": "pani Zielińskiej",
+          "accept": [
+            "Zielińskiej",
+            "pani Barbary Zielińskiej"
+          ],
+          "hint": "(pani Zielińska)",
+          "grammar_point": "przypadki-funkcje",
+          "explanation": "Czyje mieszkanie? — dopełniacz: mieszkanie pani Zielińskiej."
+        },
+        {
+          "id": "t2-2",
+          "answer": "windy",
+          "accept": [],
+          "hint": "(winda)",
+          "grammar_point": "dopelniacz-nie-ma",
+          "explanation": "Po nie ma zawsze dopełniacz: nie ma windy."
+        },
+        {
+          "id": "t2-3",
+          "answer": "miejsca parkingowego",
+          "accept": [
+            "miejsca"
+          ],
+          "hint": "(miejsce parkingowe)",
+          "grammar_point": "dopelniacz-nie-ma",
+          "explanation": "Rzeczownik nijaki -e → -a, przymiotnik -ego: miejsca parkingowego."
+        },
+        {
+          "id": "t2-4",
+          "answer": "komórki lokatorskiej",
+          "accept": [
+            "komórki"
+          ],
+          "hint": "(komórka lokatorska)",
+          "grammar_point": "rzecz-lp-zenski",
+          "explanation": "Brakuje + dopełniacz; żeńskie -ka → -ki, przymiotnik -skiej."
+        },
+        {
+          "id": "t2-5",
+          "answer": "wanny",
+          "accept": [],
+          "hint": "(wanna)",
+          "grammar_point": "dopelniacz-nie-ma",
+          "explanation": "nie ma wanny — dopełniacz żeński -a → -y."
+        },
+        {
+          "id": "t2-6",
+          "answer": "złotych",
+          "accept": [],
+          "hint": "(złoty)",
+          "grammar_point": "ceny-zloty",
+          "explanation": "Po liczbie zakończonej na 0 — złotych: czterdzieści złotych."
+        },
+        {
+          "id": "t2-7",
+          "answer": "współwłaścicieli",
+          "accept": [],
+          "hint": "(współwłaściciel)",
+          "grammar_point": "mn-przypadki",
+          "explanation": "Dwóch + dopełniacz liczby mnogiej; miękka podstawa → -i: współwłaścicieli."
+        },
+        {
+          "id": "t2-8",
+          "answer": "zaświadczenia",
+          "accept": [
+            "tego zaświadczenia"
+          ],
+          "hint": "(zaświadczenie)",
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Bez + dopełniacz; nijakie -ie → -ia."
+        }
+      ],
+      "text": "Natalia była w mieszkaniu {t2-1} na Jeżycach. W kamienicy nie ma {t2-2}, a mieszkanie jest na trzecim piętrze. Nie ma też {t2-3} ani garażu. Brakuje {t2-4}, ale jest mała piwnica. W łazience nie ma {t2-5}. Czynsz administracyjny wynosi sześćset czterdzieści {t2-6}. Mieszkanie ma dwóch {t2-7}, więc potrzebujemy dwóch podpisów. Bez {t2-8} od zarządcy bank nie zacznie sprawy kredytu."
+    },
+    {
+      "block_id": "w1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "Słowa: połącz w pary",
+      "instruction": "Połącz słowo z jego rolą w pracy pośrednika.",
+      "items": [
+        {
+          "id": "w1-1",
+          "left": "fundusz remontowy",
+          "right": "część czynszu na remonty budynku",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-2",
+          "left": "komórka lokatorska",
+          "right": "mały zamykany schowek w budynku",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-3",
+          "left": "księga wieczysta",
+          "right": "rejestr, w którym widać właściciela i obciążenia",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-4",
+          "left": "zaliczka",
+          "right": "kwota płacona z góry, rozliczana później",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-5",
+          "left": "zarządca",
+          "right": "firma, która prowadzi sprawy budynku",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-6",
+          "left": "usterka",
+          "right": "mała wada techniczna do naprawy",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Nie ma, brakuje, nie widzę",
+      "instruction": "Wybierz poprawną formę.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "W tym budynku nie ma ___.",
+          "answer": "windy",
+          "options": [
+            "windy",
+            "windę",
+            "winda"
+          ],
+          "grammar_point": "dopelniacz-nie-ma",
+          "explanation": "Po nie ma — dopełniacz, nigdy mianownik ani biernik."
+        },
+        {
+          "id": "g1-2",
+          "text": "Mam balkon. — Niestety w tej ofercie nie mam ___.",
+          "answer": "balkonu",
+          "options": [
+            "balkonu",
+            "balkonie",
+            "balkon"
+          ],
+          "grammar_point": "przeczenie-dopelniacz",
+          "explanation": "Zdanie twierdzące: mam balkon (biernik). Zaprzeczone: nie mam balkonu (dopełniacz)."
+        },
+        {
+          "id": "g1-3",
+          "text": "W teczce brakuje jednego ___.",
+          "answer": "zaświadczenia",
+          "options": [
+            "zaświadczeniu",
+            "zaświadczenia",
+            "zaświadczenie"
+          ],
+          "grammar_point": "dopelniacz-nie-ma",
+          "explanation": "Brakuje + dopełniacz: zaświadczenia."
+        },
+        {
+          "id": "g1-4",
+          "text": "Widziałam protokół. — Nie widziałam ___.",
+          "answer": "protokołu",
+          "options": [
+            "protokół",
+            "protokołem",
+            "protokołu"
+          ],
+          "grammar_point": "przeczenie-dopelniacz",
+          "explanation": "Zaprzeczony biernik przechodzi w dopełniacz: nie widziałam protokołu."
+        },
+        {
+          "id": "g1-5",
+          "text": "Na klatce nie ma ___, dlatego wieczorem jest ciemno.",
+          "answer": "światła",
+          "options": [
+            "światła",
+            "światłem",
+            "światło"
+          ],
+          "grammar_point": "dopelniacz-nie-ma",
+          "explanation": "Nijakie -o → -a; po nie ma dopełniacz."
+        },
+        {
+          "id": "g1-6",
+          "text": "Pani Zielińska nie ukrywa ___ w sypialni.",
+          "answer": "usterki",
+          "options": [
+            "usterkę",
+            "usterki",
+            "usterka"
+          ],
+          "grammar_point": "przeczenie-dopelniacz",
+          "explanation": "Ukrywa usterkę → nie ukrywa usterki."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Żeńskie i nijakie: wpisz formę",
+      "instruction": "Wpisz rzeczownik w dopełniaczu.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "W bloku nie ma ___ (klatka) z domofonem? To rzadkość.",
+          "answer": "klatki",
+          "accept": [],
+          "grammar_point": "rzecz-lp-zenski",
+          "explanation": "Po k piszemy -i: klatka → klatki."
+        },
+        {
+          "id": "g2-2",
+          "text": "Oferta dotyczy ___ (kamienica) na Jeżycach.",
+          "answer": "kamienicy",
+          "accept": [],
+          "grammar_point": "rzecz-lp-zenski",
+          "explanation": "Po c piszemy -y: kamienica → kamienicy."
+        },
+        {
+          "id": "g2-3",
+          "text": "Klienci pytają o wielkość ___ (kuchnia).",
+          "answer": "kuchni",
+          "accept": [],
+          "grammar_point": "rzecz-lp-zenski",
+          "explanation": "Miękka podstawa -nia → -ni: kuchnia → kuchni."
+        },
+        {
+          "id": "g2-4",
+          "text": "Nie mam jeszcze ___ (wycena) rzeczoznawcy.",
+          "answer": "wyceny",
+          "accept": [],
+          "grammar_point": "rzecz-lp-zenski",
+          "explanation": "Twarda podstawa: -a → -y."
+        },
+        {
+          "id": "g2-5",
+          "text": "Szukamy ___ (mieszkanie) z trzema pokojami.",
+          "answer": "mieszkania",
+          "accept": [],
+          "grammar_point": "rzecz-lp-nijaki",
+          "explanation": "Nijakie -ie → -ia; szukać wymaga dopełniacza."
+        },
+        {
+          "id": "g2-6",
+          "text": "Do ___ (biuro) przyjdą o piątej.",
+          "answer": "biura",
+          "accept": [],
+          "grammar_point": "rzecz-lp-nijaki",
+          "explanation": "Nijakie -o → -a; do + dopełniacz."
+        },
+        {
+          "id": "g2-7",
+          "text": "Hałas słychać z ___ (podwórze).",
+          "answer": "podwórza",
+          "accept": [],
+          "grammar_point": "rzecz-lp-nijaki",
+          "explanation": "Nijakie -e → -a."
+        },
+        {
+          "id": "g2-8",
+          "text": "Nie znam dokładnej wysokości ___ (zaliczka) na ogrzewanie.",
+          "answer": "zaliczki",
+          "accept": [],
+          "grammar_point": "rzecz-lp-zenski",
+          "explanation": "Po k → -i: zaliczka → zaliczki."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Męskie: -a czy -u?",
+      "instruction": "Wybierz końcówkę, która jest w normie.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Mieszkanie jest obok ___.",
+          "answer": "parku",
+          "options": [
+            "parku",
+            "parka"
+          ],
+          "grammar_point": "rzecz-lp-meski",
+          "explanation": "Park — rzeczownik obcego pochodzenia, nieżywotny: parku."
+        },
+        {
+          "id": "g3-2",
+          "text": "Nie ma jeszcze decyzji w sprawie ___.",
+          "answer": "kredytu",
+          "options": [
+            "kredytu",
+            "kredyta"
+          ],
+          "grammar_point": "rzecz-lp-meski",
+          "explanation": "Kredyt — zapożyczenie, abstrakcja: kredytu."
+        },
+        {
+          "id": "g3-3",
+          "text": "Czekam na podpis drugiego ___.",
+          "answer": "właściciela",
+          "options": [
+            "właścicielu",
+            "właściciela"
+          ],
+          "grammar_point": "rzecz-lp-meski",
+          "explanation": "Nazwy osób mają -a: właściciela."
+        },
+        {
+          "id": "g3-4",
+          "text": "Klient pyta o koszt ___ łazienki.",
+          "answer": "remontu",
+          "options": [
+            "remontu",
+            "remonta"
+          ],
+          "grammar_point": "rzecz-lp-meski",
+          "explanation": "Remont — abstrakcyjna nazwa czynności: remontu."
+        },
+        {
+          "id": "g3-5",
+          "text": "Mieszkanie jest niedaleko ___ tramwajowego.",
+          "answer": "przystanku",
+          "options": [
+            "przystanka",
+            "przystanku"
+          ],
+          "grammar_point": "rzecz-lp-meski",
+          "explanation": "Przystanek → przystanku (nie: przystanka)."
+        },
+        {
+          "id": "g3-6",
+          "text": "Do ___ idziemy po akt notarialny.",
+          "answer": "notariusza",
+          "options": [
+            "notariuszu",
+            "notariusza"
+          ],
+          "grammar_point": "rzecz-lp-meski",
+          "explanation": "Nazwa zawodu: -a."
+        },
+        {
+          "id": "g3-7",
+          "text": "Nie znam jeszcze stanu ___ wody.",
+          "answer": "licznika",
+          "options": [
+            "licznika",
+            "licznaku"
+          ],
+          "grammar_point": "rzecz-lp-meski",
+          "explanation": "Urządzenia zwykle mają -a: licznik → licznika."
+        },
+        {
+          "id": "g3-8",
+          "text": "Opłata nie obejmuje ___ i prądu.",
+          "answer": "gazu",
+          "options": [
+            "gazu",
+            "gaza"
+          ],
+          "grammar_point": "rzecz-lp-meski",
+          "explanation": "Nazwy substancji: -u (gazu, prądu)."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Wyjątki: pokój, telefon, długopis",
+      "instruction": "Te słowa łamią regułę z porcji 3. Wpisz formę.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Mieszkanie ma trzy pokoje, ale największego ___ (pokój) nie widziałam.",
+          "answer": "pokoju",
+          "accept": [],
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Pokój to pomieszczenie, więc oczekiwalibyśmy -a; norma ma pokoju."
+        },
+        {
+          "id": "g4-2",
+          "text": "Nie mam przy sobie ___ (telefon) służbowego.",
+          "answer": "telefonu",
+          "accept": [],
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Urządzenia mają -a (licznika), ale telefon → telefonu."
+        },
+        {
+          "id": "g4-3",
+          "text": "Proszę o kartkę i jakiś ___ — chociaż ___ (długopis) też nie mam.",
+          "answer": "długopisu",
+          "accept": [],
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Przedmioty mają -a (młotka), długopis → długopisu."
+        },
+        {
+          "id": "g4-4",
+          "text": "Z ___ (pokój) na podwórze nie słychać ulicy.",
+          "answer": "pokoju",
+          "accept": [],
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Ta sama nieregularna forma: pokoju."
+        },
+        {
+          "id": "g4-5",
+          "text": "Nie używam prywatnego ___ (telefon) do pracy.",
+          "answer": "telefonu",
+          "accept": [],
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Używać + dopełniacz: telefonu."
+        },
+        {
+          "id": "g4-6",
+          "text": "Do protokołu brakuje mi ___ (długopis).",
+          "answer": "długopisu",
+          "accept": [],
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Brakuje + dopełniacz: długopisu."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Liczba mnoga: wpisz formę",
+      "instruction": "Wpisz dopełniacz liczby mnogiej.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Mieszkanie ma trzy pokoje; w ofercie z Wildy jest pięć ___ (pokój).",
+          "answer": "pokoi",
+          "accept": [
+            "pokojów"
+          ],
+          "grammar_point": "mn-przypadki",
+          "explanation": "Miękka podstawa: pokoi (forma pokojów też jest w normie)."
+        },
+        {
+          "id": "g5-2",
+          "text": "W tym tygodniu mam spotkania z czworgiem ___ (klient)? Nie — z czterema klientami.",
+          "answer": "klientów",
+          "accept": [],
+          "grammar_point": "mn-przypadki",
+          "explanation": "Twarda podstawa męska: -ów."
+        },
+        {
+          "id": "g5-3",
+          "text": "Na Jeżycach obejrzałam sześć ___ (mieszkanie).",
+          "answer": "mieszkań",
+          "accept": [],
+          "grammar_point": "mn-przypadki",
+          "explanation": "Nijakie -ie → zero: mieszkań."
+        },
+        {
+          "id": "g5-4",
+          "text": "Kamienica ma cztery piętra, a ten blok dziesięć ___ (piętro).",
+          "answer": "pięter",
+          "accept": [],
+          "grammar_point": "mn-przypadki",
+          "explanation": "Wstawne e: piętro → pięter."
+        },
+        {
+          "id": "g5-5",
+          "text": "Mieszkanie ma sześćdziesiąt pięć ___ (metr).",
+          "answer": "metrów",
+          "accept": [],
+          "grammar_point": "mn-przypadki",
+          "explanation": "Twarda podstawa: metrów."
+        },
+        {
+          "id": "g5-6",
+          "text": "W kuchni nie ma ___ (okno).",
+          "answer": "okien",
+          "accept": [],
+          "grammar_point": "mn-przypadki",
+          "explanation": "Wstawne e: okno → okien."
+        },
+        {
+          "id": "g5-7",
+          "text": "Zebrałam podpisy wszystkich ___ (właścicielka).",
+          "answer": "właścicielek",
+          "accept": [],
+          "grammar_point": "mn-przypadki",
+          "explanation": "Zbieg spółgłosek → wstawne e: właścicielek."
+        },
+        {
+          "id": "g5-8",
+          "text": "Na liście mam kilka ___ (usterka) do protokołu.",
+          "answer": "usterek",
+          "accept": [],
+          "grammar_point": "mn-przypadki",
+          "explanation": "usterka → usterek (wstawne e)."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Wyjątki w liczbie mnogiej",
+      "instruction": "Tu formy nie powstają według reguły z porcji 5. Wybierz poprawną.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Czynsz to sześćset czterdzieści ___.",
+          "answer": "złotych",
+          "options": [
+            "złotów",
+            "złotych"
+          ],
+          "grammar_point": "ceny-zloty",
+          "explanation": "Złoty odmienia się jak przymiotnik: złotych."
+        },
+        {
+          "id": "g6-2",
+          "text": "W mieszkaniu nie ma ___ wejściowych z atestem.",
+          "answer": "drzwi",
+          "options": [
+            "drzwi",
+            "drzwiów"
+          ],
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Drzwi istnieją tylko w liczbie mnogiej i w dopełniaczu brzmią tak samo."
+        },
+        {
+          "id": "g6-3",
+          "text": "Na oglądaniu było dużo ___.",
+          "answer": "ludzi",
+          "options": [
+            "ludziów",
+            "ludzi"
+          ],
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Ludzie → ludzi."
+        },
+        {
+          "id": "g6-4",
+          "text": "Państwo Lisowie mają dwoje ___.",
+          "answer": "dzieci",
+          "options": [
+            "dzieci",
+            "dziecek"
+          ],
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Dzieci → dzieci; po dwoje dopełniacz."
+        },
+        {
+          "id": "g6-5",
+          "text": "Na remont dachu wspólnocie brakuje ___.",
+          "answer": "pieniędzy",
+          "options": [
+            "pieniędzy",
+            "pieniądzów"
+          ],
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Pieniądze → pieniędzy."
+        },
+        {
+          "id": "g6-6",
+          "text": "Mieszkanie ma dwóch ___.",
+          "answer": "współwłaścicieli",
+          "options": [
+            "współwłaścicielów",
+            "współwłaścicieli"
+          ],
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Miękka podstawa -ciel → -cieli, nie -ów."
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Ilość: kilka, dużo, pięć",
+      "instruction": "Wybierz formę, która pasuje do liczby.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "W budynku jest ___ i jeden sklep na parterze.",
+          "answer": "dwanaście mieszkań",
+          "options": [
+            "dwanaście mieszkania",
+            "dwanaście mieszkań"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po 5–21 dopełniacz liczby mnogiej: mieszkań."
+        },
+        {
+          "id": "g7-2",
+          "text": "Oglądanie potrwa ___.",
+          "answer": "dwie godziny",
+          "options": [
+            "dwie godzin",
+            "dwie godziny"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po 2, 3, 4 mianownik liczby mnogiej: dwie godziny."
+        },
+        {
+          "id": "g7-3",
+          "text": "Na liście zostało ___ do obejrzenia.",
+          "answer": "kilka ofert",
+          "options": [
+            "kilka ofert",
+            "kilka oferty"
+          ],
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Kilka + dopełniacz liczby mnogiej."
+        },
+        {
+          "id": "g7-4",
+          "text": "W tej dzielnicy jest ___ na sprzedaż.",
+          "answer": "dużo kamienic",
+          "options": [
+            "dużo kamienic",
+            "dużo kamienice"
+          ],
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Dużo + dopełniacz liczby mnogiej."
+        },
+        {
+          "id": "g7-5",
+          "text": "___ dwie oferty.",
+          "answer": "Zostały",
+          "options": [
+            "Zostało",
+            "Zostały"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Przy 2–4 czasownik w liczbie mnogiej: zostały dwie oferty."
+        },
+        {
+          "id": "g7-6",
+          "text": "___ pięć ofert.",
+          "answer": "Zostało",
+          "options": [
+            "Zostały",
+            "Zostało"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Przy 5+ czasownik w liczbie pojedynczej, rodzaj nijaki: zostało pięć ofert."
+        },
+        {
+          "id": "g7-7",
+          "text": "Piwnica ma ___.",
+          "answer": "cztery metry",
+          "options": [
+            "cztery metry",
+            "cztery metrów"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po cztery mianownik liczby mnogiej."
+        },
+        {
+          "id": "g7-8",
+          "text": "Do końca miesiąca mam ___ na negocjacje.",
+          "answer": "pół tygodnia",
+          "options": [
+            "pół tydzień",
+            "pół tygodnia"
+          ],
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Pół + dopełniacz liczby pojedynczej."
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Przyimki z dopełniaczem",
+      "instruction": "Wpisz formę po przyimku.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Kawa bez ___ (cukier), poproszę — tak zaczynam każde spotkanie.",
+          "answer": "cukru",
+          "accept": [],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Bez + dopełniacz; w podstawie wypada e: cukier → cukru."
+        },
+        {
+          "id": "g8-2",
+          "text": "Mieszkanie jest niedaleko ___ (szkoła) podstawowej.",
+          "answer": "szkoły",
+          "accept": [],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Niedaleko + dopełniacz."
+        },
+        {
+          "id": "g8-3",
+          "text": "Przygotowałam zestawienie dla ___ (klienci).",
+          "answer": "klientów",
+          "accept": [],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Dla + dopełniacz; liczba mnoga: klientów."
+        },
+        {
+          "id": "g8-4",
+          "text": "Oprócz ___ (czynsz) trzeba doliczyć media.",
+          "answer": "czynszu",
+          "accept": [],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Oprócz + dopełniacz; czynsz → czynszu."
+        },
+        {
+          "id": "g8-5",
+          "text": "Podczas ___ (prezentacja) nie odbieram telefonu.",
+          "answer": "prezentacji",
+          "accept": [],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Podczas + dopełniacz; -ja → -ji."
+        },
+        {
+          "id": "g8-6",
+          "text": "Według ___ (umowa) zadatek płaci się w trzy dni.",
+          "answer": "umowy",
+          "accept": [],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Według + dopełniacz."
+        },
+        {
+          "id": "g8-7",
+          "text": "Wracam od ___ (właścicielka) z kluczami.",
+          "answer": "właścicielki",
+          "accept": [],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Od + dopełniacz; po k → -i."
+        },
+        {
+          "id": "g8-8",
+          "text": "Przystanek jest obok ___ (budynek).",
+          "answer": "budynku",
+          "accept": [],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Obok + dopełniacz; budynek → budynku."
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "9. Czasowniki z dopełniaczem",
+      "instruction": "Wybierz formę, której wymaga czasownik.",
+      "items": [
+        {
+          "id": "g9-1",
+          "text": "Państwo Lisowie szukają ___ z trzema pokojami.",
+          "answer": "mieszkania",
+          "options": [
+            "mieszkanie",
+            "mieszkania"
+          ],
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Szukać + dopełniacz, nie biernik."
+        },
+        {
+          "id": "g9-2",
+          "text": "Bank wymaga ___ rzeczoznawcy.",
+          "answer": "wyceny",
+          "options": [
+            "wyceny",
+            "wycenę"
+          ],
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Wymagać + dopełniacz."
+        },
+        {
+          "id": "g9-3",
+          "text": "Do pomiaru używam ___, nie taśmy.",
+          "answer": "dalmierza",
+          "options": [
+            "dalmierza",
+            "dalmierz"
+          ],
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Używać + dopełniacz."
+        },
+        {
+          "id": "g9-4",
+          "text": "Ta uchwała dotyczy tylko ___ na parterze.",
+          "answer": "lokali",
+          "options": [
+            "lokale",
+            "lokali"
+          ],
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Dotyczyć + dopełniacz; miękka podstawa: lokali."
+        },
+        {
+          "id": "g9-5",
+          "text": "Potrzebuję ___ o braku zaległości.",
+          "answer": "zaświadczenia",
+          "options": [
+            "zaświadczenia",
+            "zaświadczenie"
+          ],
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Potrzebować + dopełniacz."
+        },
+        {
+          "id": "g9-6",
+          "text": "Unikam ___, których nie mogę dowieźć.",
+          "answer": "obietnic",
+          "options": [
+            "obietnic",
+            "obietnice"
+          ],
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Unikać + dopełniacz; obietnice → obietnic."
+        },
+        {
+          "id": "g9-7",
+          "text": "Pilnuję ___ płatności.",
+          "answer": "terminu",
+          "options": [
+            "termin",
+            "terminu"
+          ],
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Pilnować + dopełniacz."
+        },
+        {
+          "id": "g9-8",
+          "text": "Życzę Państwu ___ decyzji.",
+          "answer": "spokojnej",
+          "options": [
+            "spokojnej",
+            "spokojną"
+          ],
+          "grammar_point": "przym-lp",
+          "explanation": "Życzyć + dopełniacz; przymiotnik żeński w dopełniaczu: -ej."
+        }
+      ]
+    },
+    {
+      "block_id": "g10",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "10. Czyje? Dopełniacz w opisie",
+      "instruction": "Wpisz formę, która odpowiada na pytanie czyje / czego.",
+      "items": [
+        {
+          "id": "g10-1",
+          "text": "To mieszkanie ___ (pani Zielińska) jest na trzecim piętrze.",
+          "answer": "pani Zielińskiej",
+          "accept": [
+            "Zielińskiej"
+          ],
+          "grammar_point": "przypadki-funkcje",
+          "explanation": "Czyje mieszkanie? — dopełniacz: pani Zielińskiej."
+        },
+        {
+          "id": "g10-2",
+          "text": "Wysokość ___ (czynsz) podaje zarządca.",
+          "answer": "czynszu",
+          "accept": [],
+          "grammar_point": "przypadki-funkcje",
+          "explanation": "Wysokość czego? — czynszu."
+        },
+        {
+          "id": "g10-3",
+          "text": "Numer ___ (księga wieczysta) mam w notatkach.",
+          "answer": "księgi wieczystej",
+          "accept": [
+            "księgi"
+          ],
+          "grammar_point": "przym-lp",
+          "explanation": "Rzeczownik + przymiotnik w dopełniaczu: księgi wieczystej."
+        },
+        {
+          "id": "g10-4",
+          "text": "Klucze od ___ (piwnica) zostały u właścicielki.",
+          "answer": "piwnicy",
+          "accept": [],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Od + dopełniacz; po c → -y."
+        },
+        {
+          "id": "g10-5",
+          "text": "Oferta ___ (biuro) jest ważna dwa tygodnie.",
+          "answer": "biura",
+          "accept": [],
+          "grammar_point": "przypadki-funkcje",
+          "explanation": "Czyja oferta? — biura."
+        },
+        {
+          "id": "g10-6",
+          "text": "Stan ___ (licznik) spisujemy przy kluczach.",
+          "answer": "licznika",
+          "accept": [],
+          "grammar_point": "przypadki-funkcje",
+          "explanation": "Stan czego? — licznika."
+        }
+      ]
+    },
+    {
+      "block_id": "g11",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "11. Pułapki: popraw zdanie",
+      "instruction": "Każde zdanie ma jeden błąd kalkowany z ukraińskiego. Napisz poprawnie całe zdanie.",
+      "items": [
+        {
+          "id": "g11-1",
+          "prompt": "Szukam mieszkanie dla państwa Lisów.",
+          "answer": "Szukam mieszkania dla państwa Lisów.",
+          "accept": [
+            "Szukam mieszkania dla panstwa Lisów.",
+            "Dla państwa Lisów szukam mieszkania."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Ukraińskie „шукаю квартиру” to biernik, polskie szukać wymaga dopełniacza."
+        },
+        {
+          "id": "g11-2",
+          "prompt": "W kamienicy nie ma windę.",
+          "answer": "W kamienicy nie ma windy.",
+          "accept": [
+            "Nie ma windy w kamienicy."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Po nie ma zawsze dopełniacz."
+        },
+        {
+          "id": "g11-3",
+          "prompt": "Potrzebuję dokumenty od zarządcy.",
+          "answer": "Potrzebuję dokumentów od zarządcy.",
+          "accept": [
+            "Od zarządcy potrzebuję dokumentów."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Potrzebować rządzi dopełniaczem, inaczej niż ukraińskie „потребую документи”."
+        },
+        {
+          "id": "g11-4",
+          "prompt": "Mieszkanie jest przy parku, pięć minut piechotą.",
+          "answer": "Mieszkanie jest obok parku, pięć minut piechotą.",
+          "accept": [
+            "Mieszkanie jest koło parku, pięć minut piechotą.",
+            "Mieszkanie jest niedaleko parku, pięć minut piechotą."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "„Біля парку” to obok / koło + dopełniacz; przy ma znaczenie „tuż przy ścianie, przy czymś”."
+        },
+        {
+          "id": "g11-5",
+          "prompt": "To mieszkanie pani Zielińska.",
+          "answer": "To mieszkanie pani Zielińskiej.",
+          "accept": [
+            "To jest mieszkanie pani Zielińskiej."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Czyje? — dopełniacz; druga nazwa w zestawieniu zawsze w dopełniaczu."
+        },
+        {
+          "id": "g11-6",
+          "prompt": "Czynsz to sześćset czterdzieści złotów.",
+          "answer": "Czynsz to sześćset czterdzieści złotych.",
+          "accept": [
+            "Czynsz wynosi sześćset czterdzieści złotych."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Złoty odmienia się jak przymiotnik: złotych, nie złotów."
+        }
+      ]
+    },
+    {
+      "block_id": "gz",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "12. Ćwiczenia zbiorcze",
+      "instruction": "Wszystko razem. Przy każdym zdaniu powiedz na głos, która porcja tu działa.",
+      "items": [
+        {
+          "id": "gz-1",
+          "text": "Niestety w tej kamienicy nie ma ___ (winda) ani ___ (miejsce) parkingowego.",
+          "answer": "windy ani miejsca",
+          "accept": [
+            "windy ani miejsca parkingowego"
+          ],
+          "grammar_point": "dopelniacz-nie-ma",
+          "explanation": "Po nie ma — dopełniacz dla obu rzeczowników."
+        },
+        {
+          "id": "gz-2",
+          "text": "Bank wymaga ___ (zaświadczenie) i ___ (wycena).",
+          "answer": "zaświadczenia i wyceny",
+          "accept": [
+            "zaświadczenia, wyceny"
+          ],
+          "grammar_point": "potrzebowac-dopelniacz",
+          "explanation": "Wymagać + dopełniacz: nijakie -ia, żeńskie -y."
+        },
+        {
+          "id": "gz-3",
+          "text": "Mieszkanie ma trzy ___ i sześćdziesiąt cztery ___.",
+          "answer": "pokoje i metry",
+          "accept": [
+            "pokoje, metry"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po 3 i po 64 (ostatnia cyfra 4) mianownik liczby mnogiej."
+        },
+        {
+          "id": "gz-4",
+          "text": "W tym tygodniu obejrzałam pięć ___ (mieszkanie).",
+          "answer": "mieszkań",
+          "accept": [],
+          "grammar_point": "mn-przypadki",
+          "explanation": "Po pięć dopełniacz liczby mnogiej."
+        },
+        {
+          "id": "gz-5",
+          "text": "Oprócz ___ (czynsz) klient zapłaci za ___ (media).",
+          "answer": "czynszu media",
+          "accept": [
+            "czynszu — media",
+            "czynszu media"
+          ],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Oprócz + dopełniacz; za + biernik (media bez zmiany)."
+        },
+        {
+          "id": "gz-6",
+          "text": "Numer ___ (księga) wieczystej sprawdzam przed każdym spotkaniem.",
+          "answer": "księgi",
+          "accept": [],
+          "grammar_point": "przypadki-funkcje",
+          "explanation": "Numer czego? — dopełniacz."
+        },
+        {
+          "id": "gz-7",
+          "text": "Do ___ (notariusz) idziemy w piątek, a od ___ (zarządca) mam zaświadczenie.",
+          "answer": "notariusza zarządcy",
+          "accept": [
+            "notariusza, zarządcy"
+          ],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "Do i od + dopełniacz; zarządca → zarządcy."
+        },
+        {
+          "id": "gz-8",
+          "text": "Nie ukrywam ___ (usterka) — mówię o niej pierwsza.",
+          "answer": "usterki",
+          "accept": [],
+          "grammar_point": "przeczenie-dopelniacz",
+          "explanation": "Zaprzeczony biernik → dopełniacz."
+        },
+        {
+          "id": "gz-9",
+          "text": "Wspólnocie brakuje ___ (pieniądze) na remont dachu.",
+          "answer": "pieniędzy",
+          "accept": [],
+          "grammar_point": "rzecz-nieregularne",
+          "explanation": "Pieniądze → pieniędzy (forma nieregularna)."
+        },
+        {
+          "id": "gz-10",
+          "text": "Mieszkanie ma dwóch ___ (współwłaściciel), więc potrzebuję dwóch ___ (podpis).",
+          "answer": "współwłaścicieli podpisów",
+          "accept": [
+            "współwłaścicieli, podpisów"
+          ],
+          "grammar_point": "mn-przypadki",
+          "explanation": "Miękka podstawa → -i; twarda → -ów."
+        }
+      ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka: rozmowa telefoniczna",
+      "instruction": "Uzupełnij rozmowę pytaniami. Dwa pytania z listy nie pasują nigdzie.",
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "czy jest winda",
+          "options": [
+            "ile osób tam mieszka",
+            "kto jest właścicielem",
+            "czy jest komórka lokatorska",
+            "czy jest winda",
+            "ile wynosi czynsz",
+            "czego dokładnie brakuje",
+            "gdzie podpisujemy umowę",
+            "jak daleko jest przystanek",
+            "czy mogę zobaczyć rachunki",
+            "kiedy będzie zaświadczenie"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Odpowiedź mówi o braku windy i o trzecim piętrze."
+        },
+        {
+          "id": "el1-2",
+          "answer": "ile wynosi czynsz",
+          "options": [
+            "ile osób tam mieszka",
+            "kto jest właścicielem",
+            "czy jest komórka lokatorska",
+            "czy jest winda",
+            "ile wynosi czynsz",
+            "czego dokładnie brakuje",
+            "gdzie podpisujemy umowę",
+            "jak daleko jest przystanek",
+            "czy mogę zobaczyć rachunki",
+            "kiedy będzie zaświadczenie"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "W odpowiedzi jest kwota i składniki czynszu."
+        },
+        {
+          "id": "el1-3",
+          "answer": "czego dokładnie brakuje",
+          "options": [
+            "ile osób tam mieszka",
+            "kto jest właścicielem",
+            "czy jest komórka lokatorska",
+            "czy jest winda",
+            "ile wynosi czynsz",
+            "czego dokładnie brakuje",
+            "gdzie podpisujemy umowę",
+            "jak daleko jest przystanek",
+            "czy mogę zobaczyć rachunki",
+            "kiedy będzie zaświadczenie"
+          ],
+          "grammar_point": "dopelniacz-nie-ma",
+          "explanation": "Pytanie o braki — po brakować dopełniacz."
+        },
+        {
+          "id": "el1-4",
+          "answer": "kto jest właścicielem",
+          "options": [
+            "ile osób tam mieszka",
+            "kto jest właścicielem",
+            "czy jest komórka lokatorska",
+            "czy jest winda",
+            "ile wynosi czynsz",
+            "czego dokładnie brakuje",
+            "gdzie podpisujemy umowę",
+            "jak daleko jest przystanek",
+            "czy mogę zobaczyć rachunki",
+            "kiedy będzie zaświadczenie"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Odpowiedź podaje dwie osoby i współwłasność."
+        },
+        {
+          "id": "el1-5",
+          "answer": "czy mogę zobaczyć rachunki",
+          "options": [
+            "ile osób tam mieszka",
+            "kto jest właścicielem",
+            "czy jest komórka lokatorska",
+            "czy jest winda",
+            "ile wynosi czynsz",
+            "czego dokładnie brakuje",
+            "gdzie podpisujemy umowę",
+            "jak daleko jest przystanek",
+            "czy mogę zobaczyć rachunki",
+            "kiedy będzie zaświadczenie"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Odpowiedź: mam rachunki za prąd i gaz."
+        },
+        {
+          "id": "el1-6",
+          "answer": "kiedy będzie zaświadczenie",
+          "options": [
+            "ile osób tam mieszka",
+            "kto jest właścicielem",
+            "czy jest komórka lokatorska",
+            "czy jest winda",
+            "ile wynosi czynsz",
+            "czego dokładnie brakuje",
+            "gdzie podpisujemy umowę",
+            "jak daleko jest przystanek",
+            "czy mogę zobaczyć rachunki",
+            "kiedy będzie zaświadczenie"
+          ],
+          "grammar_point": "rejestr-formalny",
+          "explanation": "Odpowiedź podaje termin: do piątku."
+        },
+        {
+          "id": "el1-7",
+          "answer": "jak daleko jest przystanek",
+          "options": [
+            "ile osób tam mieszka",
+            "kto jest właścicielem",
+            "czy jest komórka lokatorska",
+            "czy jest winda",
+            "ile wynosi czynsz",
+            "czego dokładnie brakuje",
+            "gdzie podpisujemy umowę",
+            "jak daleko jest przystanek",
+            "czy mogę zobaczyć rachunki",
+            "kiedy będzie zaświadczenie"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Dwie minuty piechotą — o odległości."
+        },
+        {
+          "id": "el1-8",
+          "answer": "gdzie podpisujemy umowę",
+          "options": [
+            "ile osób tam mieszka",
+            "kto jest właścicielem",
+            "czy jest komórka lokatorska",
+            "czy jest winda",
+            "ile wynosi czynsz",
+            "czego dokładnie brakuje",
+            "gdzie podpisujemy umowę",
+            "jak daleko jest przystanek",
+            "czy mogę zobaczyć rachunki",
+            "kiedy będzie zaświadczenie"
+          ],
+          "grammar_point": "rejestr-formalny",
+          "explanation": "Odpowiedź: u notariusza, wcześniej w biurze."
+        }
+      ],
+      "text": "— Dzień dobry, dzwonię w sprawie mieszkania na Jeżycach. Mam jedno pytanie na początek: {el1-1}?\n— Niestety nie ma. Kamienica jest z lat trzydziestych, mieszkanie na trzecim piętrze.\n— Rozumiem. A {el1-2}?\n— Sześćset czterdzieści złotych, w tym fundusz remontowy i wywóz śmieci. Media osobno.\n— Dobrze. Proszę powiedzieć wprost: {el1-3}?\n— Nie ma miejsca parkingowego i nie ma komórki lokatorskiej. Jest za to piwnica.\n— A {el1-4}?\n— Pani Zielińska i jej brat — mieszkanie ma dwóch współwłaścicieli.\n— Czyli potrzebujemy dwóch podpisów. {el1-5}?\n— Oczywiście, mam rachunki za prąd i gaz z całego roku.\n— Jeszcze jedno: {el1-6}?\n— Zarządca obiecał do piątku. Bez tego zaświadczenia bank nie zacznie sprawy.\n— A {el1-7}?\n— Dwie minuty piechotą, obok parku.\n— Bardzo dziękuję. {el1-8}?\n— U notariusza, ale najpierw umowa przedwstępna w biurze."
+    },
+    {
+      "block_id": "el2",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka: e-mail do klientki",
+      "instruction": "Wybierz formę, która pasuje do zdania.",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "naszą rozmową",
+          "options": [
+            "naszą rozmową",
+            "nasza rozmowa",
+            "naszej rozmowy"
+          ],
+          "grammar_point": "rejestr-formalny",
+          "explanation": "Zgodnie z + narzędnik: zgodnie z naszą rozmową."
+        },
+        {
+          "id": "el2-2",
+          "answer": "metry kwadratowe",
+          "options": [
+            "metry kwadratowe",
+            "metrów kwadratowych",
+            "metra kwadratowego"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "64 kończy się na 4 → mianownik liczby mnogiej."
+        },
+        {
+          "id": "el2-3",
+          "answer": "windy",
+          "options": [
+            "winda",
+            "windy",
+            "windę"
+          ],
+          "grammar_point": "dopelniacz-nie-ma",
+          "explanation": "Po nie ma dopełniacz."
+        },
+        {
+          "id": "el2-4",
+          "answer": "miejsca",
+          "options": [
+            "miejscu",
+            "miejsce",
+            "miejsca"
+          ],
+          "grammar_point": "dopelniacz-nie-ma",
+          "explanation": "Brakuje + dopełniacz: miejsca parkingowego."
+        },
+        {
+          "id": "el2-5",
+          "answer": "złotych",
+          "options": [
+            "złotym",
+            "złote",
+            "złotych"
+          ],
+          "grammar_point": "ceny-zloty",
+          "explanation": "Liczba kończy się na 0 → złotych."
+        },
+        {
+          "id": "el2-6",
+          "answer": "media",
+          "options": [
+            "mediów",
+            "media",
+            "mediami"
+          ],
+          "grammar_point": "biernik-rzeczownik",
+          "explanation": "Opłaty za + biernik: za media."
+        },
+        {
+          "id": "el2-7",
+          "answer": "współwłaścicieli",
+          "options": [
+            "współwłaścicieli",
+            "współwłaściciele",
+            "współwłaścicielom"
+          ],
+          "grammar_point": "mn-przypadki",
+          "explanation": "Dwóch + dopełniacz liczby mnogiej."
+        },
+        {
+          "id": "el2-8",
+          "answer": "księgi",
+          "options": [
+            "księgę",
+            "księga",
+            "księgi"
+          ],
+          "grammar_point": "przypadki-funkcje",
+          "explanation": "Numer czego? — księgi wieczystej."
+        },
+        {
+          "id": "el2-9",
+          "answer": "braku",
+          "options": [
+            "brakiem",
+            "brak",
+            "braku"
+          ],
+          "grammar_point": "dopelniacz-przyimki",
+          "explanation": "O + miejscownik: o braku zaległości."
+        },
+        {
+          "id": "el2-10",
+          "answer": "pytań",
+          "options": [
+            "pytań",
+            "pytaniach",
+            "pytania"
+          ],
+          "grammar_point": "mn-przypadki",
+          "explanation": "W razie + dopełniacz liczby mnogiej: pytań."
+        }
+      ],
+      "text": "Szanowna Pani,\n\ndziękuję za rozmowę telefoniczną. Zgodnie z {el2-1} przesyłam informacje o mieszkaniu na Jeżycach.\nMieszkanie ma sześćdziesiąt cztery {el2-2} i trzy pokoje. W budynku nie ma {el2-3}, a lokal znajduje się na trzecim piętrze. Brakuje również {el2-4} parkingowego.\nCzynsz administracyjny wynosi sześćset czterdzieści {el2-5} i obejmuje fundusz remontowy. Opłaty za {el2-6} rozliczane są osobno, według licznika.\nMieszkanie ma dwóch {el2-7}, dlatego do umowy potrzebujemy dwóch podpisów. Numer {el2-8} wieczystej przekażę w osobnej wiadomości. Zarządca wyda zaświadczenie o {el2-9} zaległości do piątku.\nW razie dalszych {el2-10} jestem do dyspozycji.\n\nZ poważaniem\nNatalia Kowal, Biuro Nieruchomości „Klucz”"
+    }
+  ]
+}

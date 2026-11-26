@@ -1,0 +1,54 @@
+{
+  "lesson_id": "pl-nier-06-dopelniacz",
+  "exercise_type": "true-false",
+  "title": "Jak na egzaminie: czytanie",
+  "instruction": "Przeczytaj notatkę Natalii i zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+  "estimated_minutes": 5,
+  "blocks": [
+    {
+      "block_id": "e1",
+      "exam_skill": "czytanie",
+      "exercise_type": "true-false",
+      "title": "Czytanie: notatka z Jeżyc — prawda czy fałsz?",
+      "instruction": "Przeczytaj tekst. Zdecyduj, czy zdania są prawdziwe, czy fałszywe.",
+      "items": [
+        {
+          "id": "e1-1",
+          "statement": "W kamienicy jest winda, ale nie działa.",
+          "answer": false,
+          "explanation": "W notatce: w kamienicy nie ma windy, a mieszkanie jest na trzecim piętrze."
+        },
+        {
+          "id": "e1-2",
+          "statement": "Do mieszkania należy piwnica, ale nie ma komórki lokatorskiej.",
+          "answer": true,
+          "explanation": "Natalia pisze, że brakuje komórki lokatorskiej, ale jest niewielka piwnica."
+        },
+        {
+          "id": "e1-3",
+          "statement": "Czynsz administracyjny obejmuje fundusz remontowy i wywóz śmieci.",
+          "answer": true,
+          "explanation": "Czynsz to sześćset czterdzieści złotych, w tym fundusz remontowy i wywóz śmieci."
+        },
+        {
+          "id": "e1-4",
+          "statement": "Właścicielka ukrywa, że jeden pokój wymaga odświeżenia.",
+          "answer": false,
+          "explanation": "Pani Zielińska mówi o tym otwarcie i tego nie ukrywa."
+        },
+        {
+          "id": "e1-5",
+          "statement": "Do sprzedaży wystarczy podpis pani Zielińskiej.",
+          "answer": false,
+          "explanation": "Mieszkanie ma dwóch współwłaścicieli, więc potrzebne są dwa podpisy albo pełnomocnictwo."
+        },
+        {
+          "id": "e1-6",
+          "statement": "Natalia nie wie jeszcze, czy wspólnota planuje remont dachu.",
+          "answer": true,
+          "explanation": "Na końcu notatki pisze, że właśnie tego nie wie i zapyta w poniedziałek."
+        }
+      ]
+    }
+  ]
+}

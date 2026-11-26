@@ -1,0 +1,1478 @@
+{
+  "lesson_id": "pl-nier-07-liczebniki-i-ceny",
+  "exercise_type": "fill-in-blank",
+  "title": "Liczebniki i ceny: mówimy liczby na głos",
+  "instruction": "Szesnaście bloków ćwiczeń. Możesz przerwać i wrócić później.",
+  "estimated_minutes": 45,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "Tekst. Ułóż w kolejności",
+      "instruction": "W jakiej kolejności Natalia podaje liczby w swojej notatce? Klikaj zdania po kolei.",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "Natalia pisze, że trenuje liczby na głos, bo przez telefon nie ma czasu na pauzy.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "Podaje metraż i cenę mieszkania pani Zielińskiej.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Porównuje trzy oferty: Jeżyce, Łazarz i Grunwald.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Przechodzi do opłat: czynsz, prowizja, wkład własny i oprocentowanie.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "Podaje terminy: umowa przedwstępna i oglądanie z Lisami.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Na końcu przyznaje, że gubi końcówki, kiedy liczy najpierw po ukraińsku.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Tekst. Uzupełnij streszczenie",
+      "instruction": "Wpisz brakujące słowo. Pisz słowami, nie cyframi.",
+      "items": [
+        {
+          "id": "t2-1",
+          "answer": "metry",
+          "accept": [],
+          "hint": "(metr)",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "64 kończy się na 4 → mianownik liczby mnogiej: metry kwadratowe."
+        },
+        {
+          "id": "t2-2",
+          "answer": "piętrze",
+          "accept": [],
+          "hint": "(piętro)",
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Na trzecim piętrze — miejscownik po na."
+        },
+        {
+          "id": "t2-3",
+          "answer": "tysięcy",
+          "accept": [],
+          "hint": "(tysiąc)",
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Po 749 (ostatnia część: czterdzieści dziewięć) → tysięcy."
+        },
+        {
+          "id": "t2-4",
+          "answer": "złotych",
+          "accept": [],
+          "hint": "(złoty)",
+          "grammar_point": "ceny-zloty",
+          "explanation": "Siedemset kończy liczbę na 0 → złotych."
+        },
+        {
+          "id": "t2-5",
+          "answer": "miesięcznie",
+          "accept": [],
+          "hint": "(co miesiąc)",
+          "grammar_point": "slownictwo",
+          "explanation": "Opłatę podajemy w skali: miesięcznie, rocznie."
+        },
+        {
+          "id": "t2-6",
+          "answer": "procent",
+          "accept": [],
+          "hint": "(procent)",
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po liczebniku forma procent się nie zmienia: dwa procent."
+        },
+        {
+          "id": "t2-7",
+          "answer": "roku",
+          "accept": [],
+          "hint": "(rok)",
+          "grammar_point": "liczebniki-daty",
+          "explanation": "Pełna data: dwunastego grudnia … szóstego roku (dopełniacz)."
+        },
+        {
+          "id": "t2-8",
+          "answer": "trzydzieści",
+          "accept": [
+            "trzydzieści."
+          ],
+          "hint": "(17:30)",
+          "grammar_point": "godzina",
+          "explanation": "Oficjalnie: o siedemnastej trzydzieści."
+        }
+      ],
+      "text": "Mieszkanie pani Zielińskiej ma sześćdziesiąt cztery {t2-1} kwadratowe i jest na trzecim {t2-2}. Cena ofertowa to siedemset czterdzieści dziewięć {t2-3} złotych, czyli jedenaście tysięcy siedemset {t2-4} za metr. Czynsz wynosi sześćset czterdzieści złotych {t2-5}. Prowizja biura to dwa {t2-6}. Umowę przedwstępną planujemy na dwunastego grudnia dwa tysiące dwudziestego szóstego {t2-7}, a oglądanie z Lisami jest w czwartek o siedemnastej {t2-8}."
+    },
+    {
+      "block_id": "w1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "Słowa: połącz w pary",
+      "instruction": "Połącz słowo z jego znaczeniem w rozmowie o cenie.",
+      "items": [
+        {
+          "id": "w1-1",
+          "left": "cena ofertowa",
+          "right": "kwota z ogłoszenia, punkt wyjścia do negocjacji",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-2",
+          "left": "wycena",
+          "right": "oszacowanie wartości dla banku",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-3",
+          "left": "prowizja",
+          "right": "wynagrodzenie biura, procent od transakcji",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-4",
+          "left": "oprocentowanie",
+          "right": "koszt kredytu w procentach rocznie",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-5",
+          "left": "powierzchnia użytkowa",
+          "right": "metraż, który liczy się do ceny",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-6",
+          "left": "ar",
+          "right": "sto metrów kwadratowych działki",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "1. Liczba rządzi rzeczownikiem",
+      "instruction": "Wybierz formę, która pasuje do liczby.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Mieszkanie ma ___.",
+          "answer": "trzy pokoje",
+          "options": [
+            "trzy pokoi",
+            "trzy pokoje"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po 2, 3, 4 mianownik liczby mnogiej."
+        },
+        {
+          "id": "g1-2",
+          "text": "W tej kamienicy jest ___.",
+          "answer": "osiem mieszkań",
+          "options": [
+            "osiem mieszkań",
+            "osiem mieszkania"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po 5 i więcej dopełniacz liczby mnogiej."
+        },
+        {
+          "id": "g1-3",
+          "text": "Dom pod Poznaniem ma ___.",
+          "answer": "sto dwadzieścia osiem metrów",
+          "options": [
+            "sto dwadzieścia osiem metrów",
+            "sto dwadzieścia osiem metry"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Ostatnia cyfra 8 → dopełniacz liczby mnogiej."
+        },
+        {
+          "id": "g1-4",
+          "text": "Oferta B ma ___.",
+          "answer": "sześćdziesiąt dwa metry",
+          "options": [
+            "sześćdziesiąt dwa metrów",
+            "sześćdziesiąt dwa metry"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Ostatnia cyfra 2 → mianownik liczby mnogiej."
+        },
+        {
+          "id": "g1-5",
+          "text": "Mieszkanie na Grunwaldzie ma ___.",
+          "answer": "sześćdziesiąt sześć metrów",
+          "options": [
+            "sześćdziesiąt sześć metrów",
+            "sześćdziesiąt sześć metry"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Ostatnia cyfra 6 → dopełniacz."
+        },
+        {
+          "id": "g1-6",
+          "text": "W kalendarzu mam ___ na ten tydzień.",
+          "answer": "czternaście spotkań",
+          "options": [
+            "czternaście spotkań",
+            "czternaście spotkania"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "12, 13, 14 zawsze dopełniacz, mimo końcówki 2, 3, 4."
+        },
+        {
+          "id": "g1-7",
+          "text": "___ dwie oferty z Jeżyc.",
+          "answer": "Zostały",
+          "options": [
+            "Zostało",
+            "Zostały"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Przy 2–4 czasownik w liczbie mnogiej."
+        },
+        {
+          "id": "g1-8",
+          "text": "___ dwadzieścia jeden zapytań.",
+          "answer": "Przyszło",
+          "options": [
+            "Przyszło",
+            "Przyszły"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Liczba złożona na 1 → dopełniacz mnogi i czasownik w liczbie pojedynczej."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "2. Złoty, złote, złotych",
+      "instruction": "Wpisz poprawną formę słowa złoty.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Czynsz to sześćset czterdzieści ___.",
+          "answer": "złotych",
+          "accept": [],
+          "grammar_point": "ceny-zloty",
+          "explanation": "Liczba kończy się na 0 → złotych."
+        },
+        {
+          "id": "g2-2",
+          "text": "Opłata za wywóz śmieci to dwadzieścia dwa ___.",
+          "answer": "złote",
+          "accept": [],
+          "grammar_point": "ceny-zloty",
+          "explanation": "Ostatnia cyfra 2 → złote."
+        },
+        {
+          "id": "g2-3",
+          "text": "Kserokopia kosztuje jeden ___.",
+          "answer": "złoty",
+          "accept": [],
+          "grammar_point": "ceny-zloty",
+          "explanation": "1 → złoty."
+        },
+        {
+          "id": "g2-4",
+          "text": "Abonament parkingowy to dwadzieścia jeden ___ miesięcznie.",
+          "answer": "złotych",
+          "accept": [],
+          "grammar_point": "ceny-zloty",
+          "explanation": "Liczba złożona na 1 bierze dopełniacz mnogi: złotych."
+        },
+        {
+          "id": "g2-5",
+          "text": "Taksa notarialna to tysiąc czterysta trzy ___.",
+          "answer": "złote",
+          "accept": [],
+          "grammar_point": "ceny-zloty",
+          "explanation": "Ostatnia cyfra 3 → złote."
+        },
+        {
+          "id": "g2-6",
+          "text": "Opłata sądowa to dwieście ___.",
+          "answer": "złotych",
+          "accept": [],
+          "grammar_point": "ceny-zloty",
+          "explanation": "Setki bez jedności → złotych."
+        },
+        {
+          "id": "g2-7",
+          "text": "Różnica to pięć ___ za metr.",
+          "answer": "złotych",
+          "accept": [],
+          "grammar_point": "ceny-zloty",
+          "explanation": "5 → złotych."
+        },
+        {
+          "id": "g2-8",
+          "text": "Zapłaciłam dwa ___ i trzydzieści groszy za wydruk.",
+          "answer": "złote",
+          "accept": [],
+          "grammar_point": "ceny-zloty",
+          "explanation": "2 → złote."
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Wyjątki: jeden, tysiąc, złoty w odmianie",
+      "instruction": "Te przypadki łamią regułę z porcji 2. Wybierz poprawną wersję.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Mieszkanie kosztuje ___ złotych.",
+          "answer": "tysiąc",
+          "options": [
+            "tysiąc",
+            "jeden tysiąc"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Przed tysiąc nie mówimy jeden."
+        },
+        {
+          "id": "g3-2",
+          "text": "Abonament to dwadzieścia jeden ___ — nie „złoty”.",
+          "answer": "złotych",
+          "options": [
+            "złoty",
+            "złotych"
+          ],
+          "grammar_point": "ceny-zloty",
+          "explanation": "W liczbie złożonej jeden nie narzuca liczby pojedynczej."
+        },
+        {
+          "id": "g3-3",
+          "text": "Obniżyliśmy cenę do pięciu ___ za metr.",
+          "answer": "tysięcy",
+          "options": [
+            "tysiąca",
+            "tysięcy"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Pięciu + dopełniacz liczby mnogiej: tysięcy."
+        },
+        {
+          "id": "g3-4",
+          "text": "Brakuje jeszcze dwóch ___ do zadatku.",
+          "answer": "tysięcy",
+          "options": [
+            "tysięcy",
+            "tysiące"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Po dwóch dopełniacz: tysięcy."
+        },
+        {
+          "id": "g3-5",
+          "text": "Cena wyszła około ___ złotych.",
+          "answer": "tysiąca",
+          "options": [
+            "tysiąc",
+            "tysiąca"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Po około dopełniacz: około tysiąca."
+        },
+        {
+          "id": "g3-6",
+          "text": "Do ___ złotych klient zapłaci gotówką.",
+          "answer": "dwóch tysięcy",
+          "options": [
+            "dwóch tysięcy",
+            "dwa tysiące"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Do + dopełniacz, więc liczebnik też się odmienia."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Tysiąc i milion",
+      "instruction": "Wpisz formę słowa tysiąc albo milion.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "Oferta pani Zielińskiej: siedemset czterdzieści dziewięć ___ złotych.",
+          "answer": "tysięcy",
+          "accept": [],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Po 5–9 (tu: czterdzieści dziewięć) → tysięcy."
+        },
+        {
+          "id": "g4-2",
+          "text": "Oferta B na Łazarzu: osiemset czterdzieści dwa ___ złotych.",
+          "answer": "tysiące",
+          "accept": [],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Ostatnia cyfra 2 → tysiące."
+        },
+        {
+          "id": "g4-3",
+          "text": "Dom w Komornikach: ___ sto dziewięćdziesiąt tysięcy złotych.",
+          "answer": "milion",
+          "accept": [],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "1 000 000 → milion, bez jeden."
+        },
+        {
+          "id": "g4-4",
+          "text": "Najdroższa oferta w biurze to dwa ___ złotych.",
+          "answer": "miliony",
+          "accept": [],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "2–4 → miliony."
+        },
+        {
+          "id": "g4-5",
+          "text": "Deweloper sprzedał w tym roku lokale za sześć ___ złotych.",
+          "answer": "milionów",
+          "accept": [],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "5+ → milionów."
+        },
+        {
+          "id": "g4-6",
+          "text": "Mieszkanie na Wildzie: siedemset piętnaście ___ złotych.",
+          "answer": "tysięcy",
+          "accept": [],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Piętnaście → tysięcy."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "5. Metry, pół, półtora, ar",
+      "instruction": "Wybierz formę, która pasuje.",
+      "items": [
+        {
+          "id": "g5-1",
+          "text": "Powierzchnia użytkowa to ___ kwadratowe.",
+          "answer": "sześćdziesiąt cztery metry",
+          "options": [
+            "sześćdziesiąt cztery metrów",
+            "sześćdziesiąt cztery metry"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Ostatnia cyfra 4 → metry kwadratowe."
+        },
+        {
+          "id": "g5-2",
+          "text": "Kawalerka ma ___ kwadratowych.",
+          "answer": "dwadzieścia osiem metrów",
+          "options": [
+            "dwadzieścia osiem metrów",
+            "dwadzieścia osiem metry"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "8 → metrów kwadratowych."
+        },
+        {
+          "id": "g5-3",
+          "text": "Piwnica ma ___ metra.",
+          "answer": "półtora",
+          "options": [
+            "półtorej",
+            "półtora"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Metr jest męski → półtora metra (półtorej godziny — żeńskie)."
+        },
+        {
+          "id": "g5-4",
+          "text": "Oglądanie trwało ___ godziny.",
+          "answer": "półtorej",
+          "options": [
+            "półtorej",
+            "półtora"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Godzina jest żeńska → półtorej."
+        },
+        {
+          "id": "g5-5",
+          "text": "Taras zajmuje ___ metra.",
+          "answer": "pół",
+          "options": [
+            "pół",
+            "połowa"
+          ],
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Pół + dopełniacz liczby pojedynczej."
+        },
+        {
+          "id": "g5-6",
+          "text": "Działka ma ___.",
+          "answer": "osiem arów",
+          "options": [
+            "osiem ary",
+            "osiem arów"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "8 → arów."
+        },
+        {
+          "id": "g5-7",
+          "text": "Druga działka jest mniejsza: ___.",
+          "answer": "trzy ary",
+          "options": [
+            "trzy ary",
+            "trzy arów"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "3 → ary."
+        },
+        {
+          "id": "g5-8",
+          "text": "Cena wychodzi ___ złotych za metr.",
+          "answer": "jedenaście tysięcy siedemset",
+          "options": [
+            "jedenaście tysięcy siedemset",
+            "jedenaście tysiąc siedemset"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Jedenaście → tysięcy."
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "6. Procent",
+      "instruction": "Słowo procent po liczebniku się nie zmienia. Wybierz poprawną wersję.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Nasza prowizja to dwa ___.",
+          "answer": "procent",
+          "options": [
+            "procenty",
+            "procent"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po liczebniku zawsze forma procent."
+        },
+        {
+          "id": "g6-2",
+          "text": "Wkład własny to dwadzieścia ___ ceny.",
+          "answer": "procent",
+          "options": [
+            "procent",
+            "procentów"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Nie procentów — forma pozostaje procent."
+        },
+        {
+          "id": "g6-3",
+          "text": "Klient prosi o obniżkę o ___.",
+          "answer": "sześć procent",
+          "options": [
+            "sześć procentów",
+            "sześć procent"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Tak samo: procent."
+        },
+        {
+          "id": "g6-4",
+          "text": "Oprocentowanie to ___ procent rocznie.",
+          "answer": "sześć i pół",
+          "options": [
+            "sześć i pół",
+            "sześciu i pół"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Mianownik: sześć i pół procent."
+        },
+        {
+          "id": "g6-5",
+          "text": "Nie dostaniemy nawet dwóch ___ obniżki.",
+          "answer": "procent",
+          "options": [
+            "procent",
+            "procentów"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "W dopełniaczu również procent."
+        },
+        {
+          "id": "g6-6",
+          "text": "Stawka wzrosła o ćwierć ___ procentowego.",
+          "answer": "punktu",
+          "options": [
+            "punkt",
+            "punktu"
+          ],
+          "grammar_point": "dopelniacz-ilosc",
+          "explanation": "Ćwierć + dopełniacz: punktu procentowego."
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "7. Piętra i liczebniki porządkowe",
+      "instruction": "Wpisz formę. Pamiętaj: parter to po ukraińsku pierwszy poziom.",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Mieszkanie jest na ___ (trzecie) piętrze.",
+          "answer": "trzecim",
+          "accept": [],
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Na + miejscownik: na trzecim piętrze."
+        },
+        {
+          "id": "g7-2",
+          "text": "Lokal usługowy jest na ___ (parter).",
+          "answer": "parterze",
+          "accept": [],
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Parter to poziom ulicy; na parterze."
+        },
+        {
+          "id": "g7-3",
+          "text": "Kamienica ma cztery ___ (piętro).",
+          "answer": "piętra",
+          "accept": [],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po cztery mianownik liczby mnogiej."
+        },
+        {
+          "id": "g7-4",
+          "text": "Ten blok ma dziesięć ___ (piętro).",
+          "answer": "pięter",
+          "accept": [],
+          "grammar_point": "mn-przypadki",
+          "explanation": "Po dziesięć dopełniacz liczby mnogiej: pięter."
+        },
+        {
+          "id": "g7-5",
+          "text": "Kawalerka jest na ___ (ostatnie) piętrze, czyli na poddaszu.",
+          "answer": "ostatnim",
+          "accept": [],
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Miejscownik przymiotnikowy: ostatnim."
+        },
+        {
+          "id": "g7-6",
+          "text": "Winda zatrzymuje się na ___ (drugie) piętrze.",
+          "answer": "drugim",
+          "accept": [],
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Na drugim piętrze."
+        },
+        {
+          "id": "g7-7",
+          "text": "Komórka lokatorska jest w ___ (piwnica), pod ___ (parter).",
+          "answer": "piwnicy parterem",
+          "accept": [
+            "piwnicy, parterem"
+          ],
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "W + miejscownik, pod + narzędnik: pod parterem."
+        },
+        {
+          "id": "g7-8",
+          "text": "Z ___ (pierwsze) piętra schodzimy pieszo.",
+          "answer": "pierwszego",
+          "accept": [],
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Z + dopełniacz: z pierwszego piętra."
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Daty: którego? w którym roku?",
+      "instruction": "Wpisz formę. Pisz słowami.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "Umowę podpisujemy ___ (12) grudnia.",
+          "answer": "dwunastego",
+          "accept": [],
+          "grammar_point": "data-pelna",
+          "explanation": "Którego dnia? — dopełniacz: dwunastego."
+        },
+        {
+          "id": "g8-2",
+          "text": "Oglądanie mamy ___ (3) stycznia.",
+          "answer": "trzeciego",
+          "accept": [],
+          "grammar_point": "data-pelna",
+          "explanation": "Dopełniacz: trzeciego stycznia."
+        },
+        {
+          "id": "g8-3",
+          "text": "Mieszkanie kupili w ___ (2019) roku.",
+          "answer": "dwa tysiące dziewiętnastym",
+          "accept": [],
+          "grammar_point": "liczebniki-daty",
+          "explanation": "W którym roku? — miejscownik: w dwa tysiące dziewiętnastym roku."
+        },
+        {
+          "id": "g8-4",
+          "text": "Akt notarialny będzie ___ (2026) roku.",
+          "answer": "dwa tysiące dwudziestego szóstego",
+          "accept": [],
+          "grammar_point": "liczebniki-daty",
+          "explanation": "Pełna data: dopełniacz — dwa tysiące dwudziestego szóstego roku."
+        },
+        {
+          "id": "g8-5",
+          "text": "Ogłoszenie wisi od ___ (15) listopada.",
+          "answer": "piętnastego",
+          "accept": [],
+          "grammar_point": "data-pelna",
+          "explanation": "Od + dopełniacz: od piętnastego listopada."
+        },
+        {
+          "id": "g8-6",
+          "text": "Czekamy na decyzję do ___ (koniec) miesiąca.",
+          "answer": "końca",
+          "accept": [],
+          "grammar_point": "przyimki-czasu",
+          "explanation": "Do + dopełniacz: do końca miesiąca."
+        },
+        {
+          "id": "g8-7",
+          "text": "Kamienica jest z ___ (1935) roku.",
+          "answer": "tysiąc dziewięćset trzydziestego piątego",
+          "accept": [],
+          "grammar_point": "liczebniki-daty",
+          "explanation": "Z + dopełniacz; porządkowe tylko na końcu liczby."
+        },
+        {
+          "id": "g8-8",
+          "text": "Zadatek płatny w ciągu ___ (3) dni.",
+          "answer": "trzech",
+          "accept": [],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "W ciągu + dopełniacz: trzech dni."
+        }
+      ]
+    },
+    {
+      "block_id": "g9",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "9. Wyjątek: rok 2000",
+      "instruction": "Forma dwutysięczny dotyczy tylko roku 2000. Wybierz poprawną wersję.",
+      "items": [
+        {
+          "id": "g9-1",
+          "text": "Budynek oddano w ___ roku.",
+          "answer": "dwutysięcznym",
+          "options": [
+            "dwutysięcznym",
+            "dwa tysiące"
+          ],
+          "grammar_point": "liczebniki-daty",
+          "explanation": "Rok 2000 → w dwutysięcznym roku."
+        },
+        {
+          "id": "g9-2",
+          "text": "Remont zrobili w ___ roku.",
+          "answer": "dwa tysiące dziesiątym",
+          "options": [
+            "dwutysięcznym dziesiątym",
+            "dwa tysiące dziesiątym"
+          ],
+          "grammar_point": "liczebniki-daty",
+          "explanation": "Od 2001 wracamy do dwa tysiące + porządkowa końcówka."
+        },
+        {
+          "id": "g9-3",
+          "text": "Właścicielka kupiła mieszkanie w ___ roku.",
+          "answer": "dwa tysiące piątym",
+          "options": [
+            "dwa tysiące piątym",
+            "dwutysięcznym piątym"
+          ],
+          "grammar_point": "liczebniki-daty",
+          "explanation": "Nie dwutysięcznym piątym."
+        },
+        {
+          "id": "g9-4",
+          "text": "Od ___ roku ceny w Poznaniu wzrosły najbardziej.",
+          "answer": "dwa tysiące dwudziestego",
+          "options": [
+            "dwutysięcznego dwudziestego",
+            "dwa tysiące dwudziestego"
+          ],
+          "grammar_point": "liczebniki-daty",
+          "explanation": "Od + dopełniacz: dwa tysiące dwudziestego."
+        },
+        {
+          "id": "g9-5",
+          "text": "Blok jest z ___ roku.",
+          "answer": "tysiąc dziewięćset osiemdziesiątego",
+          "options": [
+            "tysiąc dziewięćset osiemdziesiątego",
+            "tysiącdziewięćsetnego osiemdziesiątego"
+          ],
+          "grammar_point": "liczebniki-daty",
+          "explanation": "Porządkowa tylko ostatnia część liczby."
+        },
+        {
+          "id": "g9-6",
+          "text": "W ___ roku zmieniły się przepisy o świadectwie energetycznym.",
+          "answer": "dwa tysiące dwudziestym trzecim",
+          "options": [
+            "dwa tysiące dwudziestym trzecim",
+            "dwutysięcznym dwudziestym trzecim"
+          ],
+          "grammar_point": "liczebniki-daty",
+          "explanation": "Dziesiątki i jedności w miejscowniku."
+        }
+      ]
+    },
+    {
+      "block_id": "g10",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "10. Godziny: oficjalnie i potocznie",
+      "instruction": "Wybierz wersję, która znaczy to samo co godzina w nawiasie.",
+      "items": [
+        {
+          "id": "g10-1",
+          "text": "(17:30) Spotykamy się o ___.",
+          "answer": "wpół do szóstej",
+          "options": [
+            "wpół do piątej",
+            "wpół do szóstej"
+          ],
+          "grammar_point": "godzina",
+          "explanation": "Wpół do zawsze wskazuje następną godzinę: 17:30 = wpół do szóstej."
+        },
+        {
+          "id": "g10-2",
+          "text": "(17:30) Oficjalnie: o ___.",
+          "answer": "siedemnastej trzydzieści",
+          "options": [
+            "siedemnastej trzydzieści",
+            "siedemnastu trzydzieści"
+          ],
+          "grammar_point": "godzina",
+          "explanation": "Godziny to liczebniki porządkowe żeńskie: siedemnasta."
+        },
+        {
+          "id": "g10-3",
+          "text": "(8:15) Klient dzwonił o ___.",
+          "answer": "kwadrans po ósmej",
+          "options": [
+            "za kwadrans ósma",
+            "kwadrans po ósmej"
+          ],
+          "grammar_point": "godzina",
+          "explanation": "Po + aktualna godzina."
+        },
+        {
+          "id": "g10-4",
+          "text": "(7:45) Wychodzę z domu ___.",
+          "answer": "za kwadrans ósma",
+          "options": [
+            "kwadrans po ósmej",
+            "za kwadrans ósma"
+          ],
+          "grammar_point": "godzina",
+          "explanation": "Za + ile brakuje + następna godzina."
+        },
+        {
+          "id": "g10-5",
+          "text": "(11:00) Notariusz przyjmuje o ___.",
+          "answer": "jedenastej",
+          "options": [
+            "jedenastej",
+            "jedenastą"
+          ],
+          "grammar_point": "godzina",
+          "explanation": "O + miejscownik: o jedenastej."
+        },
+        {
+          "id": "g10-6",
+          "text": "(12:00) Umowa jest w ___.",
+          "answer": "południe",
+          "options": [
+            "południe",
+            "północ"
+          ],
+          "grammar_point": "godzina",
+          "explanation": "12:00 to południe, 24:00 — północ."
+        },
+        {
+          "id": "g10-7",
+          "text": "Oglądanie trwa ___, nie godzinę.",
+          "answer": "kwadrans",
+          "options": [
+            "kwadransa",
+            "kwadrans"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Trwa + biernik: kwadrans."
+        },
+        {
+          "id": "g10-8",
+          "text": "(18:50) Oddzwonię ___.",
+          "answer": "za dziesięć siódma",
+          "options": [
+            "za dziesięć siódma",
+            "dziesięć po siódmej"
+          ],
+          "grammar_point": "godzina",
+          "explanation": "18:50 — brakuje dziesięciu minut do dziewiętnastej (siódmej wieczorem)."
+        }
+      ]
+    },
+    {
+      "block_id": "g11",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "11. Liczebnik też się odmienia",
+      "instruction": "Wybierz formę liczebnika.",
+      "items": [
+        {
+          "id": "g11-1",
+          "text": "Mam dziś spotkania z ___ klientami.",
+          "answer": "dwoma",
+          "options": [
+            "dwoma",
+            "dwóch"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Z + narzędnik: z dwoma klientami."
+        },
+        {
+          "id": "g11-2",
+          "text": "Rozmawiałam z ___ ofertami w ręku.",
+          "answer": "dwiema",
+          "options": [
+            "dwóch",
+            "dwiema"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Oferta jest żeńska: z dwiema ofertami (można też: dwoma)."
+        },
+        {
+          "id": "g11-3",
+          "text": "Zestawienie przygotowałam dla ___ klientów.",
+          "answer": "pięciu",
+          "options": [
+            "pięć",
+            "pięciu"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Dla + dopełniacz: dla pięciu klientów."
+        },
+        {
+          "id": "g11-4",
+          "text": "Mieszkanie ma ___ współwłaścicieli.",
+          "answer": "dwóch",
+          "options": [
+            "dwóch",
+            "dwa"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Osoby męskie: dwóch współwłaścicieli."
+        },
+        {
+          "id": "g11-5",
+          "text": "Mówiłam o ___ ofertach na Jeżycach.",
+          "answer": "trzech",
+          "options": [
+            "trzy",
+            "trzech"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "O + miejscownik: o trzech ofertach."
+        },
+        {
+          "id": "g11-6",
+          "text": "Państwo Lisowie mają ___ dzieci.",
+          "answer": "dwoje",
+          "options": [
+            "dwa",
+            "dwoje"
+          ],
+          "grammar_point": "liczebniki-zbiorowe",
+          "explanation": "Z dzieci używamy liczebnika zbiorowego: dwoje dzieci."
+        }
+      ]
+    },
+    {
+      "block_id": "g12",
+      "part": 1,
+      "exercise_type": "sentence-building",
+      "title": "12. Pułapki: popraw zdanie",
+      "instruction": "Każde zdanie ma jeden błąd. Napisz poprawnie całe zdanie.",
+      "items": [
+        {
+          "id": "g12-1",
+          "prompt": "Mieszkanie jest na trzecim poziomie, czyli na trzecim piętrze po ukraińsku.",
+          "answer": "Mieszkanie jest na trzecim piętrze, czyli na czwartym poziomie po ukraińsku.",
+          "accept": [
+            "Mieszkanie jest na trzecim piętrze, czyli na czwartym poziomie."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Polskie liczenie zaczyna się od parteru: trzecie piętro = ukraiński czwarty поверх."
+        },
+        {
+          "id": "g12-2",
+          "prompt": "Czynsz to sześćset czterdzieści złoty.",
+          "answer": "Czynsz to sześćset czterdzieści złotych.",
+          "accept": [
+            "Czynsz wynosi sześćset czterdzieści złotych."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Liczba kończy się na 0 → złotych."
+        },
+        {
+          "id": "g12-3",
+          "prompt": "Mieszkanie ma sześćdziesiąt cztery metrów kwadratowych.",
+          "answer": "Mieszkanie ma sześćdziesiąt cztery metry kwadratowe.",
+          "accept": [
+            "Mieszkanie ma sześćdziesiąt cztery metry."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Ostatnia cyfra 4 → mianownik liczby mnogiej."
+        },
+        {
+          "id": "g12-4",
+          "prompt": "Prowizja wynosi dwa procenty.",
+          "answer": "Prowizja wynosi dwa procent.",
+          "accept": [
+            "Prowizja to dwa procent."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Po liczebniku forma procent się nie zmienia."
+        },
+        {
+          "id": "g12-5",
+          "prompt": "Umowa będzie w dwutysięcznym dwudziestym szóstym roku.",
+          "answer": "Umowa będzie w dwa tysiące dwudziestym szóstym roku.",
+          "accept": [
+            "Umowa będzie podpisana w dwa tysiące dwudziestym szóstym roku."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Dwutysięczny to tylko rok 2000."
+        },
+        {
+          "id": "g12-6",
+          "prompt": "Spotkanie jest o wpół do piątej, czyli o siedemnastej trzydzieści.",
+          "answer": "Spotkanie jest o wpół do szóstej, czyli o siedemnastej trzydzieści.",
+          "accept": [
+            "Spotkanie jest o siedemnastej trzydzieści, czyli o wpół do szóstej."
+          ],
+          "grammar_point": "kalki-uk",
+          "explanation": "Wpół do wskazuje następną godzinę, a nie poprzednią."
+        }
+      ]
+    },
+    {
+      "block_id": "gz",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "13. Ćwiczenia zbiorcze",
+      "instruction": "Wszystko razem. Każde zdanie czytaj na głos od początku do końca.",
+      "items": [
+        {
+          "id": "gz-1",
+          "text": "Mieszkanie ma ___ (64) metry kwadratowe i trzy ___ (pokój).",
+          "answer": "sześćdziesiąt cztery pokoje",
+          "accept": [
+            "sześćdziesiąt cztery, pokoje"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "64 → metry; po trzy → pokoje."
+        },
+        {
+          "id": "gz-2",
+          "text": "Cena to siedemset czterdzieści dziewięć ___ (tysiąc) ___ (złoty).",
+          "answer": "tysięcy złotych",
+          "accept": [],
+          "grammar_point": "ceny-zloty",
+          "explanation": "Czterdzieści dziewięć → tysięcy; liczba kończy się na 0 → złotych."
+        },
+        {
+          "id": "gz-3",
+          "text": "Prowizja to dwa ___ (procent) ceny transakcyjnej.",
+          "answer": "procent",
+          "accept": [],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Forma procent bez zmian."
+        },
+        {
+          "id": "gz-4",
+          "text": "Mieszkanie jest na ___ (trzecie) piętrze w kamienicy bez windy.",
+          "answer": "trzecim",
+          "accept": [],
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Na + miejscownik."
+        },
+        {
+          "id": "gz-5",
+          "text": "Umowę przedwstępną podpisujemy ___ (12) grudnia ___ (2026) roku.",
+          "answer": "dwunastego dwa tysiące dwudziestego szóstego",
+          "accept": [
+            "dwunastego, dwa tysiące dwudziestego szóstego"
+          ],
+          "grammar_point": "liczebniki-daty",
+          "explanation": "Pełna data w dopełniaczu."
+        },
+        {
+          "id": "gz-6",
+          "text": "Oglądanie jest o ___ (17:30) — potocznie: o wpół do szóstej.",
+          "answer": "siedemnastej trzydzieści",
+          "accept": [],
+          "grammar_point": "godzina",
+          "explanation": "Oficjalna wersja godziny."
+        },
+        {
+          "id": "gz-7",
+          "text": "Zostało ___ (5) ofert w tej cenie.",
+          "answer": "pięć",
+          "accept": [],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Po pięć dopełniacz mnogi; czasownik zostało."
+        },
+        {
+          "id": "gz-8",
+          "text": "Zestawienie zrobiłam dla ___ (3) klientów.",
+          "answer": "trzech",
+          "accept": [],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Dla + dopełniacz: trzech."
+        },
+        {
+          "id": "gz-9",
+          "text": "Działka ma ___ (8) arów, a dom ___ (128) metrów.",
+          "answer": "osiem sto dwadzieścia osiem",
+          "accept": [
+            "osiem, sto dwadzieścia osiem"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "8 → arów; 128 kończy się na 8 → metrów."
+        },
+        {
+          "id": "gz-10",
+          "text": "Właścicielka prosi o ___ (24 h) na decyzję.",
+          "answer": "dobę",
+          "accept": [
+            "jedną dobę"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Prosić o + biernik: o dobę."
+        }
+      ]
+    },
+    {
+      "block_id": "el1",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka: rozmowa o cenie",
+      "instruction": "Uzupełnij rozmowę pytaniami. Dwa pytania z listy nie pasują nigdzie.",
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "jaka jest cena ofertowa",
+          "options": [
+            "czy cena jest do negocjacji",
+            "na którym piętrze jest mieszkanie",
+            "kiedy możemy obejrzeć mieszkanie",
+            "ile wynosi cena za metr",
+            "ile wynosi czynsz",
+            "jaka jest cena ofertowa",
+            "jak duża jest powierzchnia",
+            "o której godzinie",
+            "ile mamy czasu na decyzję",
+            "jaka jest prowizja biura"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Odpowiedź podaje kwotę całości."
+        },
+        {
+          "id": "el1-2",
+          "answer": "ile wynosi cena za metr",
+          "options": [
+            "czy cena jest do negocjacji",
+            "na którym piętrze jest mieszkanie",
+            "kiedy możemy obejrzeć mieszkanie",
+            "ile wynosi cena za metr",
+            "ile wynosi czynsz",
+            "jaka jest cena ofertowa",
+            "jak duża jest powierzchnia",
+            "o której godzinie",
+            "ile mamy czasu na decyzję",
+            "jaka jest prowizja biura"
+          ],
+          "grammar_point": "ceny-zloty",
+          "explanation": "Odpowiedź: jedenaście tysięcy siedemset złotych za metr."
+        },
+        {
+          "id": "el1-3",
+          "answer": "jak duża jest powierzchnia",
+          "options": [
+            "czy cena jest do negocjacji",
+            "na którym piętrze jest mieszkanie",
+            "kiedy możemy obejrzeć mieszkanie",
+            "ile wynosi cena za metr",
+            "ile wynosi czynsz",
+            "jaka jest cena ofertowa",
+            "jak duża jest powierzchnia",
+            "o której godzinie",
+            "ile mamy czasu na decyzję",
+            "jaka jest prowizja biura"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Odpowiedź: sześćdziesiąt cztery metry."
+        },
+        {
+          "id": "el1-4",
+          "answer": "na którym piętrze jest mieszkanie",
+          "options": [
+            "czy cena jest do negocjacji",
+            "na którym piętrze jest mieszkanie",
+            "kiedy możemy obejrzeć mieszkanie",
+            "ile wynosi cena za metr",
+            "ile wynosi czynsz",
+            "jaka jest cena ofertowa",
+            "jak duża jest powierzchnia",
+            "o której godzinie",
+            "ile mamy czasu na decyzję",
+            "jaka jest prowizja biura"
+          ],
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Odpowiedź: na trzecim."
+        },
+        {
+          "id": "el1-5",
+          "answer": "ile wynosi czynsz",
+          "options": [
+            "czy cena jest do negocjacji",
+            "na którym piętrze jest mieszkanie",
+            "kiedy możemy obejrzeć mieszkanie",
+            "ile wynosi cena za metr",
+            "ile wynosi czynsz",
+            "jaka jest cena ofertowa",
+            "jak duża jest powierzchnia",
+            "o której godzinie",
+            "ile mamy czasu na decyzję",
+            "jaka jest prowizja biura"
+          ],
+          "grammar_point": "ceny-zloty",
+          "explanation": "Odpowiedź: sześćset czterdzieści złotych miesięcznie."
+        },
+        {
+          "id": "el1-6",
+          "answer": "jaka jest prowizja biura",
+          "options": [
+            "czy cena jest do negocjacji",
+            "na którym piętrze jest mieszkanie",
+            "kiedy możemy obejrzeć mieszkanie",
+            "ile wynosi cena za metr",
+            "ile wynosi czynsz",
+            "jaka jest cena ofertowa",
+            "jak duża jest powierzchnia",
+            "o której godzinie",
+            "ile mamy czasu na decyzję",
+            "jaka jest prowizja biura"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Odpowiedź: dwa procent plus VAT."
+        },
+        {
+          "id": "el1-7",
+          "answer": "kiedy możemy obejrzeć mieszkanie",
+          "options": [
+            "czy cena jest do negocjacji",
+            "na którym piętrze jest mieszkanie",
+            "kiedy możemy obejrzeć mieszkanie",
+            "ile wynosi cena za metr",
+            "ile wynosi czynsz",
+            "jaka jest cena ofertowa",
+            "jak duża jest powierzchnia",
+            "o której godzinie",
+            "ile mamy czasu na decyzję",
+            "jaka jest prowizja biura"
+          ],
+          "grammar_point": "data-pelna",
+          "explanation": "Odpowiedź podaje dni tygodnia."
+        },
+        {
+          "id": "el1-8",
+          "answer": "o której godzinie",
+          "options": [
+            "czy cena jest do negocjacji",
+            "na którym piętrze jest mieszkanie",
+            "kiedy możemy obejrzeć mieszkanie",
+            "ile wynosi cena za metr",
+            "ile wynosi czynsz",
+            "jaka jest cena ofertowa",
+            "jak duża jest powierzchnia",
+            "o której godzinie",
+            "ile mamy czasu na decyzję",
+            "jaka jest prowizja biura"
+          ],
+          "grammar_point": "godzina",
+          "explanation": "Odpowiedź podaje godzinę w dwóch wersjach."
+        }
+      ],
+      "text": "— Dzień dobry, piszą Państwo o mieszkaniu na Jeżycach. {el1-1}?\n— Siedemset czterdzieści dziewięć tysięcy złotych.\n— A {el1-2}?\n— Jedenaście tysięcy siedemset złotych. Średnia w Poznaniu jest wyższa.\n— Dobrze. {el1-3}?\n— Sześćdziesiąt cztery metry kwadratowe, trzy pokoje.\n— {el1-4}?\n— Na trzecim, w kamienicy bez windy.\n— Rozumiem. {el1-5}?\n— Sześćset czterdzieści złotych miesięcznie, w tym fundusz remontowy.\n— A {el1-6}?\n— Dwa procent ceny transakcyjnej plus VAT.\n— Jasne. {el1-7}?\n— W czwartek albo w piątek po południu.\n— Czwartek pasuje. {el1-8}?\n— O siedemnastej trzydzieści, czyli o wpół do szóstej."
+    },
+    {
+      "block_id": "el2",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Elementy języka: zestawienie ofert w e-mailu",
+      "instruction": "Wybierz formę, która pasuje do zdania.",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "sześćdziesiąt cztery",
+          "options": [
+            "sześćdziesięciu czterech",
+            "sześćdziesiąt czwarte",
+            "sześćdziesiąt cztery"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "64 metry kwadratowe — liczebnik główny."
+        },
+        {
+          "id": "el2-2",
+          "answer": "trzecie",
+          "options": [
+            "trzy",
+            "trzecie",
+            "trzeciego"
+          ],
+          "grammar_point": "liczebniki-porzadkowe",
+          "explanation": "Piętro określa liczebnik porządkowy: trzecie piętro."
+        },
+        {
+          "id": "el2-3",
+          "answer": "tysięcy",
+          "options": [
+            "tysięcy",
+            "tysiąca",
+            "tysiące"
+          ],
+          "grammar_point": "liczebniki-odmiana",
+          "explanation": "Czterdzieści dziewięć → tysięcy."
+        },
+        {
+          "id": "el2-4",
+          "answer": "złotych",
+          "options": [
+            "złotym",
+            "złotych",
+            "złote"
+          ],
+          "grammar_point": "ceny-zloty",
+          "explanation": "Trzynaście → złotych."
+        },
+        {
+          "id": "el2-5",
+          "answer": "metrów",
+          "options": [
+            "metra",
+            "metry",
+            "metrów"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "66 kończy się na 6 → metrów."
+        },
+        {
+          "id": "el2-6",
+          "answer": "procent",
+          "options": [
+            "procent",
+            "procentów",
+            "procenty"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "Forma procent bez zmian."
+        },
+        {
+          "id": "el2-7",
+          "answer": "o",
+          "options": [
+            "na",
+            "o",
+            "w"
+          ],
+          "grammar_point": "godzina",
+          "explanation": "O + godzina: o siedemnastej trzydzieści."
+        },
+        {
+          "id": "el2-8",
+          "answer": "dwunastego",
+          "options": [
+            "dwunastym",
+            "dwunasty",
+            "dwunastego"
+          ],
+          "grammar_point": "data-pelna",
+          "explanation": "Którego? — dopełniacz."
+        },
+        {
+          "id": "el2-9",
+          "answer": "dwa tysiące dwudziestego szóstego",
+          "options": [
+            "dwa tysiące dwudziesty szósty",
+            "dwutysięcznego dwudziestego szóstego",
+            "dwa tysiące dwudziestego szóstego"
+          ],
+          "grammar_point": "liczebniki-daty",
+          "explanation": "Pełna data: rok w dopełniaczu, bez formy dwutysięczny."
+        },
+        {
+          "id": "el2-10",
+          "answer": "tygodnia",
+          "options": [
+            "tydzień",
+            "tygodnia",
+            "tygodniu"
+          ],
+          "grammar_point": "przyimki-czasu",
+          "explanation": "Do końca + dopełniacz."
+        }
+      ],
+      "text": "Szanowni Państwo,\n\nzgodnie z ustaleniami przesyłam zestawienie trzech ofert.\nOferta na Jeżycach: {el2-1} metry kwadratowe, trzy pokoje, {el2-2} piętro, cena siedemset czterdzieści dziewięć {el2-3} złotych.\nOferta na Łazarzu: sześćdziesiąt dwa metry, cena osiemset czterdzieści dwa tysiące złotych, czyli ponad trzynaście tysięcy {el2-4} za metr.\nOferta na Grunwaldzie: sześćdziesiąt sześć {el2-5}, cena sześćset dziewięćdziesiąt tysięcy złotych.\nDo ceny należy doliczyć podatek PCC oraz taksę notarialną. Nasza prowizja wynosi dwa {el2-6} ceny transakcyjnej.\nOglądania proponuję w czwartek {el2-7} siedemnastej trzydzieści oraz w piątek o jedenastej.\nUmowę przedwstępną moglibyśmy podpisać {el2-8} grudnia {el2-9} roku.\nNa odpowiedź czekam do końca {el2-10}.\n\nZ poważaniem\nNatalia Kowal, Biuro Nieruchomości „Klucz”"
+    }
+  ]
+}
