@@ -4,7 +4,7 @@
 
 ## 1. Відкрите для Claude (закривати, Юру не просити)
 
-1. **Аудіо екзаменів.** `pl-telc-probny-05/06` і `pl-b1-probny-06` озвучуються сайтом (ElevenLabs, сценарій у `src/content/audio/`) при першому запиті — після кожного деплою відкрити 4+4+5 mp3 по одному й перевірити `/api/audio/_status?lesson={id}` → `ready: true`. Слухання в лекціях видалено повністю (25.11); у частині TEACHER-сторінок лишились блоки запитань «після слухання» — зачистити при нагоді (`grep -il 'слухан' src/content/teacher-pages/*.md`). Старі спроби учнів по видалених блоках `e2/e3` в `*-exam.json` не мігруємо.
+1. **Аудіо екзаменів.** `pl-telc-probny-05/06` — `ready` (перевірено 27.11); TEACHER 05/06 досі кажуть «аудіо немає» й мають `module: pl-telc-b1` — виправити при нагоді. `pl-b1-probny-06` озвучується сайтом (ElevenLabs, сценарій у `src/content/audio/`) при першому запиті — після кожного деплою відкрити 4+4+5 mp3 по одному й перевірити `/api/audio/_status?lesson={id}` → `ready: true`. Слухання в лекціях видалено повністю (25.11); у частині TEACHER-сторінок лишились блоки запитань «після слухання» — зачистити при нагоді (`grep -il 'слухан' src/content/teacher-pages/*.md`). Старі спроби учнів по видалених блоках `e2/e3` в `*-exam.json` не мігруємо.
 2. **Старі лекції → порції граматики** (GRAMMAR_METHOD) — лише за замовленням Юри. Починати з найбільшої граматики (відмінки: A2 60, 63, 64, 67, 72; telc dopełniacz).
 3. **Відео в ДЗ** відсутнє в старших курсах (A0 / A1-en, граматика RU, księg 01–04, trener, preg, kpk). Список: `for f in src/content/pages/*.md; do grep -q youtube "$f" || echo $f; done`. Метод: Claude in Chrome → вкладка youtube.com (спершу `navigate` на youtube.com, інакше `fetch` блокує CORS) → `fetch('/results?hl=en&gl=US&search_query=…')`, з `ytInitialData` брати `videoId`, далі `fetch('/watch?v=ID')` → `ytInitialPlayerResponse` (перегляди, дата, довжина) і `/oembed` = 200. WebFetch YouTube блокує. Chrome-виклики проходять лише коли Юра писав у чат після останнього `PROVENANCE_REQUIRED`.
 4. **`pl-trener-02-cialo-i-ruch`** — JSON у `main` не було (12.11). Перевірити `check_embeds.py pl-trener-02-cialo-i-ruch --remote`; немає → відновити й запушити.
@@ -29,6 +29,7 @@
 
 - **A2 `pl-a2`:** зроблено 80 і 81. Далі — найменший невиконаний номер серед 73–88 (73 `isc-jechac-przedrostki` → 74 `ktory-podstawy` → 75–76 powtórka / kontrolna M4 → 77–83 M5 → 84–88).
 - **B1 `pl-b1-group`:** лекції 1–22, 23 (Internet) і 24 (Wygląd i charakter) + R1–R4 готові → **пробний іспит B1 курсу** (`mock-exam`, матеріал 1–22; слухання — лише з ElevenLabs).
+- **telc пробні `pl-telc-probny`:** 01–07 готові; далі 08 за `TELC_PLAYBOOK.md`.
 - **telc B1 `pl-telc-b1`:** далі урок 5 «U lekarza» (`pl-telc-b1-05-zdrowie`, dopełniacz) → 6 powtórka-1 + mini-test. Глоси — російською.
 - **B2:** №3 Media i dezinformacja → №4 → №6 → №10 → №11.
 - **`pl-ksieg`:** 01–05 готові. Далі **06** — типи договорів, składki ZUS, lista płac (пасивний стан). Сюжет: Halina у бюро; клієнти pani Iwona (kwiaciarnia), pan Tomasz (sklep rowerowy), pan Adam (sp. z o.o., 9% CIT).

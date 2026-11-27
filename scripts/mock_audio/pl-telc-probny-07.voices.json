@@ -1,0 +1,93 @@
+{
+  "model": "eleven_v4",
+  "cast": {
+    "NAR": "uPeXyAUvljDRLYs8zgwt",
+    "W1": "mQq2zdGT1zEfDbh8W95l",
+    "W2": "gHGjEjdr2LBds0XHTsvg",
+    "W3": "hq1SDzCP9HutY7Ea9PAW",
+    "W4": "2AI3SLYKkKZsvZEiHd3D",
+    "W5": "AwWFxYalAvioLDuxV9WV",
+    "M1": "p0KQaxqGrT7xcRWSJiHp",
+    "M2": "bwhymd1UcFEihyvPSEoR",
+    "M3": "ihTsqWCgsTDbANOCuZD2",
+    "M4": "e3WIS9BUv6I0HZ9v36L2"
+  },
+  "tasks": {
+    "sl1": {
+      "block_gap": 2.5,
+      "voices": {
+        "Lektor": "NAR",
+        "Pani z pralni": "W4",
+        "Kierowca": "M2",
+        "Kasia": "W3",
+        "Administrator": "M4",
+        "Pani z klubu": "W5"
+      }
+    },
+    "sl2": {
+      "block_gap": 2.0,
+      "voices": {
+        "Lektor": "NAR"
+      },
+      "segments": [
+        {},
+        {
+          "Pasażer": "M1",
+          "Pracownica": "W2"
+        },
+        {
+          "Ania": "W3",
+          "Tomek": "M3"
+        },
+        {
+          "Fryzjerka": "W5",
+          "Klient": "M4"
+        },
+        {
+          "Basia": "W1",
+          "Michał": "M2"
+        },
+        {
+          "Mama": "W4",
+          "Sekretarka": "W2"
+        }
+      ]
+    },
+    "sl3": {
+      "gaps": {
+        "1": 60
+      },
+      "voices": {
+        "Lektor": "NAR",
+        "Prezenter": "M4",
+        "Monika": "W1"
+      }
+    },
+    "sl4": {
+      "block_gap": 1.5,
+      "gaps": {
+        "1": 30
+      },
+      "voices": {
+        "Lektor": "NAR",
+        "Prezenterka": "W3"
+      },
+      "segments": [
+        {},
+        {},
+        {
+          "Słuchacz": "M1"
+        },
+        {
+          "Słuchaczka": "W2"
+        },
+        {
+          "Słuchacz": "M3"
+        },
+        {
+          "Słuchaczka": "W5"
+        }
+      ]
+    }
+  }
+}

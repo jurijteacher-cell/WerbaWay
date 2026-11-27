@@ -1,0 +1,465 @@
+{
+  "lesson_id": "pl-telc-probny-07",
+  "model": "eleven_v4",
+  "voices": {
+    "NAR": "uPeXyAUvljDRLYs8zgwt",
+    "W4": "2AI3SLYKkKZsvZEiHd3D",
+    "M2": "bwhymd1UcFEihyvPSEoR",
+    "W3": "hq1SDzCP9HutY7Ea9PAW",
+    "M4": "e3WIS9BUv6I0HZ9v36L2",
+    "W5": "AwWFxYalAvioLDuxV9WV",
+    "M1": "p0KQaxqGrT7xcRWSJiHp",
+    "W2": "gHGjEjdr2LBds0XHTsvg",
+    "M3": "ihTsqWCgsTDbANOCuZD2",
+    "W1": "mQq2zdGT1zEfDbh8W95l"
+  },
+  "files": {
+    "pl-telc-probny-07/telc-sluchanie-1.mp3": {
+      "lines": [
+        {
+          "who": "NAR",
+          "text": "Rozumienie ze słuchu, część pierwsza. Za chwilę usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz. Najpierw przykład."
+        },
+        {
+          "who": "W4",
+          "text": "Dzień dobry, tu pralnia „Śnieżka”. Pana płaszcz jest już gotowy do odbioru. Jesteśmy otwarci od ósmej do dziewiętnastej, w sobotę do czternastej. Proszę zabrać ze sobą kwit. Do widzenia.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Numer jeden.",
+          "gap": 2.5
+        },
+        {
+          "who": "M2",
+          "text": "Dzień dobry, dzwonię ze sklepu meblowego „Dąb”. Mieliśmy przywieźć pani szafę w środę, ale samochód jest w warsztacie. Możemy przyjechać w piątek między ósmą a dwunastą. Jeśli ten termin pani nie pasuje, proszę oddzwonić do jutra.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Numer dwa.",
+          "gap": 2.5
+        },
+        {
+          "who": "W3",
+          "text": "Cześć Marta, tu Kasia. Mam wielką prośbę. Zebranie w pracy przeciągnie się do osiemnastej i nie zdążę do przedszkola po Franka. Mogłabyś go dzisiaj odebrać razem ze swoją Zosią? Kolację zje w domu, przyjadę po niego przed dziewiętnastą.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Numer trzy.",
+          "gap": 2.5
+        },
+        {
+          "who": "M4",
+          "text": "Dzień dobry, mówi Paweł Rutkowski z administracji budynku. W czwartek po południu będziemy spisywać liczniki wody. Ktoś dorosły powinien być w domu od szesnastej do dwudziestej. Jeśli to niemożliwe, może pan wysłać nam zdjęcie licznika mailem.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Numer cztery.",
+          "gap": 2.5
+        },
+        {
+          "who": "W5",
+          "text": "Dzień dobry, dzwonię z klubu fitness „Forma”. Instruktorka jogi złamała rękę, więc w tym miesiącu zamiast jogi we wtorki będzie pilates, o tej samej godzinie. Kto nie chce chodzić na pilates, może przenieść opłatę na następny miesiąc.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Koniec pierwszej części Rozumienia ze słuchu.",
+          "gap": 2.5
+        }
+      ]
+    },
+    "pl-telc-probny-07/telc-sluchanie-2.mp3": {
+      "lines": [
+        {
+          "who": "NAR",
+          "text": "Rozumienie ze słuchu, część druga. Za chwilę usłyszysz pięć dialogów. Na temat każdego dialogu napisano po dwa zdania. Najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe. Następnie zdecyduj, które zdanie jest najbardziej trafne: a, b czy c. Każdy dialog usłyszysz jeden raz."
+        },
+        {
+          "who": "NAR",
+          "text": "Numer pięć i sześć.",
+          "gap": 2.0
+        },
+        {
+          "who": "M1",
+          "text": "Dzień dobry, wczoraj zostawiłem w pociągu z Poznania czarny plecak.",
+          "gap": 0.7
+        },
+        {
+          "who": "W2",
+          "text": "Był tam jakiś dokument z pana nazwiskiem?",
+          "gap": 0.45
+        },
+        {
+          "who": "M1",
+          "text": "Nie, tylko laptop, szalik i kanapki.",
+          "gap": 0.45
+        },
+        {
+          "who": "W2",
+          "text": "W systemie mamy jeden czarny plecak. Jaki to laptop?",
+          "gap": 0.45
+        },
+        {
+          "who": "M1",
+          "text": "Srebrny, z naklejką w kształcie kota.",
+          "gap": 0.45
+        },
+        {
+          "who": "W2",
+          "text": "Zgadza się. Ale plecak jest jeszcze na stacji we Wrocławiu. Przyjedzie do nas jutro po południu.",
+          "gap": 0.45
+        },
+        {
+          "who": "M1",
+          "text": "Czy muszę coś zapłacić?",
+          "gap": 0.45
+        },
+        {
+          "who": "W2",
+          "text": "Nie. Proszę tylko zabrać dowód osobisty.",
+          "gap": 0.45
+        },
+        {
+          "who": "NAR",
+          "text": "Numer siedem i osiem.",
+          "gap": 2.0
+        },
+        {
+          "who": "W3",
+          "text": "Tomek, możesz się ze mną zamienić w sobotę? Mam popołudniową zmianę.",
+          "gap": 0.7
+        },
+        {
+          "who": "M3",
+          "text": "W sobotę niestety nie, jadę na wesele kuzyna.",
+          "gap": 0.45
+        },
+        {
+          "who": "W3",
+          "text": "Szkoda. A gdybym wzięła za ciebie niedzielę?",
+          "gap": 0.45
+        },
+        {
+          "who": "M3",
+          "text": "W niedzielę mam wolne. Zapytaj Roberta, on szuka dodatkowych godzin.",
+          "gap": 0.45
+        },
+        {
+          "who": "W3",
+          "text": "Już pytałam, jest na urlopie.",
+          "gap": 0.45
+        },
+        {
+          "who": "M3",
+          "text": "To idź do kierowniczki. Ona czasem sama układa grafik na nowo.",
+          "gap": 0.45
+        },
+        {
+          "who": "W3",
+          "text": "Dobrze, porozmawiam z nią po przerwie.",
+          "gap": 0.45
+        },
+        {
+          "who": "NAR",
+          "text": "Numer dziewięć i dziesięć.",
+          "gap": 2.0
+        },
+        {
+          "who": "W5",
+          "text": "Salon „Fala”, dzień dobry.",
+          "gap": 0.7
+        },
+        {
+          "who": "M4",
+          "text": "Dzień dobry, chciałbym się zapisać na strzyżenie w piątek.",
+          "gap": 0.45
+        },
+        {
+          "who": "W5",
+          "text": "W piątek mam już komplet. Mogę zaproponować czwartek o siedemnastej albo sobotę o dziewiątej.",
+          "gap": 0.45
+        },
+        {
+          "who": "M4",
+          "text": "W czwartek pracuję do osiemnastej. Niech będzie sobota.",
+          "gap": 0.45
+        },
+        {
+          "who": "W5",
+          "text": "Świetnie. Samo strzyżenie czy też broda?",
+          "gap": 0.45
+        },
+        {
+          "who": "M4",
+          "text": "Tylko włosy. Ile to kosztuje?",
+          "gap": 0.45
+        },
+        {
+          "who": "W5",
+          "text": "Siedemdziesiąt złotych. Można płacić kartą.",
+          "gap": 0.45
+        },
+        {
+          "who": "M4",
+          "text": "Dobrze. Nazywam się Sowiński.",
+          "gap": 0.45
+        },
+        {
+          "who": "NAR",
+          "text": "Numer jedenaście i dwanaście.",
+          "gap": 2.0
+        },
+        {
+          "who": "W1",
+          "text": "Michał, w przyszłą sobotę się przeprowadzamy. Pomożesz nam?",
+          "gap": 0.7
+        },
+        {
+          "who": "M2",
+          "text": "Jasne. Mam przyjechać swoim samochodem?",
+          "gap": 0.45
+        },
+        {
+          "who": "W1",
+          "text": "Nie trzeba, wynajęliśmy furgonetkę. Potrzebujemy rąk do noszenia.",
+          "gap": 0.45
+        },
+        {
+          "who": "M2",
+          "text": "O której zaczynacie?",
+          "gap": 0.45
+        },
+        {
+          "who": "W1",
+          "text": "O dziewiątej. A w południe będzie pizza.",
+          "gap": 0.45
+        },
+        {
+          "who": "M2",
+          "text": "Rano mam trening, mogę być dopiero o jedenastej.",
+          "gap": 0.45
+        },
+        {
+          "who": "W1",
+          "text": "Nie szkodzi. Najcięższe rzeczy zostawimy dla ciebie.",
+          "gap": 0.45
+        },
+        {
+          "who": "M2",
+          "text": "Wiedziałem! Dobrze, przyniosę rękawice.",
+          "gap": 0.45
+        },
+        {
+          "who": "NAR",
+          "text": "Numer trzynaście i czternaście.",
+          "gap": 2.0
+        },
+        {
+          "who": "W4",
+          "text": "Dzień dobry, chciałabym zapisać córkę do świetlicy.",
+          "gap": 0.7
+        },
+        {
+          "who": "W2",
+          "text": "Do której klasy chodzi?",
+          "gap": 0.45
+        },
+        {
+          "who": "W4",
+          "text": "Do drugiej. Kończę pracę o szesnastej trzydzieści.",
+          "gap": 0.45
+        },
+        {
+          "who": "W2",
+          "text": "Świetlica jest czynna do siedemnastej. Proszę wypełnić ten wniosek.",
+          "gap": 0.45
+        },
+        {
+          "who": "W4",
+          "text": "Czy potrzebne jest zaświadczenie z pracy?",
+          "gap": 0.45
+        },
+        {
+          "who": "W2",
+          "text": "Tak, od obojga rodziców. Ma pani czas do końca tygodnia.",
+          "gap": 0.45
+        },
+        {
+          "who": "W4",
+          "text": "A obiady? Można je zamówić tutaj?",
+          "gap": 0.45
+        },
+        {
+          "who": "W2",
+          "text": "Nie, obiady zamawia się przez internet.",
+          "gap": 0.45
+        },
+        {
+          "who": "NAR",
+          "text": "Koniec drugiej części Rozumienia ze słuchu.",
+          "gap": 2.0
+        }
+      ]
+    },
+    "pl-telc-probny-07/telc-sluchanie-3.mp3": {
+      "lines": [
+        {
+          "who": "NAR",
+          "text": "Rozumienie ze słuchu, część trzecia. Za chwilę usłyszysz wywiad. Najpierw przeczytaj treść punktów od piętnastego do dwudziestego. Masz na to minutę."
+        },
+        {
+          "who": "NAR",
+          "text": "Teraz posłuchaj wywiadu. Usłyszysz go jeden raz.",
+          "gap": 60
+        },
+        {
+          "who": "M4",
+          "text": "Dzień dobry. W audycji „Ludzie z pasją” gościmy panią Monikę Zając, która od ośmiu lat prowadzi schronisko w Beskidach. Dzień dobry.",
+          "gap": 0.7
+        },
+        {
+          "who": "W1",
+          "text": "Dzień dobry panu.",
+          "gap": 0.45
+        },
+        {
+          "who": "M4",
+          "text": "Skąd pomysł, żeby zamieszkać w górach?",
+          "gap": 0.45
+        },
+        {
+          "who": "W1",
+          "text": "Pracowałam w agencji reklamowej w Katowicach. Na urlopie trafiłam do tego schroniska i usłyszałam, że poprzedni gospodarze szukają następców. Po miesiącu złożyłam wypowiedzenie.",
+          "gap": 0.45
+        },
+        {
+          "who": "M4",
+          "text": "Co jest w tej pracy najtrudniejsze?",
+          "gap": 0.45
+        },
+        {
+          "who": "W1",
+          "text": "Wiele osób myśli, że samotność albo zima. A dla mnie najtrudniejsze są dostawy. Zimą jedzenie wozimy skuterem śnieżnym, a kiedy się zepsuje, mąż nosi wszystko na plecach.",
+          "gap": 0.45
+        },
+        {
+          "who": "M4",
+          "text": "Kto do państwa przychodzi?",
+          "gap": 0.45
+        },
+        {
+          "who": "W1",
+          "text": "Latem głównie rodziny z dziećmi. Jesienią ludzie, którzy chcą odpocząć od telefonu, bo u nas prawie nie ma zasięgu.",
+          "gap": 0.45
+        },
+        {
+          "who": "M4",
+          "text": "Czy turyści są dobrze przygotowani?",
+          "gap": 0.45
+        },
+        {
+          "who": "W1",
+          "text": "Coraz lepiej, ale ciągle zdarzają się osoby w sportowych butach, które nie sprawdziły pogody.",
+          "gap": 0.45
+        },
+        {
+          "who": "M4",
+          "text": "Co poleciłaby pani komuś, kto marzy o własnym schronisku?",
+          "gap": 0.45
+        },
+        {
+          "who": "W1",
+          "text": "Najpierw przepracować tu cały sezon. Od kwietnia przyjmujemy wolontariuszy: dostają nocleg i posiłki, a w zamian pomagają w kuchni. Po kilku tygodniach wiedzą, czy to życie dla nich.",
+          "gap": 0.45
+        },
+        {
+          "who": "M4",
+          "text": "Dziękuję za rozmowę.",
+          "gap": 0.45
+        },
+        {
+          "who": "W1",
+          "text": "Dziękuję.",
+          "gap": 0.45
+        },
+        {
+          "who": "NAR",
+          "text": "Koniec trzeciej części Rozumienia ze słuchu.",
+          "gap": 1.5
+        }
+      ]
+    },
+    "pl-telc-probny-07/telc-sluchanie-4.mp3": {
+      "lines": [
+        {
+          "who": "NAR",
+          "text": "Rozumienie ze słuchu, część czwarta. Usłyszysz audycję, w której ludzie wyrażają opinie na dany temat. Które zdanie, od a do f, najlepiej pasuje do opinii dwadzieścia jeden, dwadzieścia dwa i dwadzieścia trzy? Masz pół minuty na przeczytanie zdań."
+        },
+        {
+          "who": "NAR",
+          "text": "Teraz posłuchaj audycji.",
+          "gap": 30
+        },
+        {
+          "who": "W3",
+          "text": "Dzień dobry. W programie „Głos słuchaczy” pytamy dziś: czy dzieci powinny mieć obowiązki w domu?",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Przykład.",
+          "gap": 1.5
+        },
+        {
+          "who": "M1",
+          "text": "Moim zdaniem tak, i to od małego. Czterolatek może sam posprzątać zabawki. Im później zaczynamy, tym trudniej dziecko do tego przekonać.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Numer dwadzieścia jeden.",
+          "gap": 1.5
+        },
+        {
+          "who": "W2",
+          "text": "U nas w domu każdy coś robi, ale córka sama wybiera, co. Woli wyprowadzać psa niż zmywać. Kiedy może zdecydować, nie trzeba jej przypominać.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Numer dwadzieścia dwa.",
+          "gap": 1.5
+        },
+        {
+          "who": "M3",
+          "text": "Mój syn ma szkołę, angielski i basen. Wraca o dziewiętnastej i jeszcze odrabia lekcje. Dzieciństwo jest krótkie, niech ma czas na odpoczynek. Naczynia mogę umyć sam.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Numer dwadzieścia trzy.",
+          "gap": 1.5
+        },
+        {
+          "who": "W5",
+          "text": "Dzieci patrzą na nas. Jeśli tata leży na kanapie, a mama sprząta, to żadne prośby nie pomogą. Najpierw dorośli muszą sami dzielić się pracą.",
+          "gap": 0.7
+        },
+        {
+          "who": "W3",
+          "text": "Dziękujemy za wszystkie telefony. Do usłyszenia za tydzień!",
+          "gap": 1.5
+        },
+        {
+          "who": "NAR",
+          "text": "Koniec Rozumienia ze słuchu. Dziękujemy za uwagę.",
+          "gap": 1.5
+        }
+      ]
+    }
+  }
+}
