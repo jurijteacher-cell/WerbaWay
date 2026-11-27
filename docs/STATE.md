@@ -30,6 +30,7 @@
 - **A2 `pl-a2`:** зроблено 80 і 81. Далі — найменший невиконаний номер серед 73–88 (73 `isc-jechac-przedrostki` → 74 `ktory-podstawy` → 75–76 powtórka / kontrolna M4 → 77–83 M5 → 84–88).
 - **B1 `pl-b1-group`:** лекції 1–22, 23 (Internet) і 24 (Wygląd i charakter) + R1–R4 готові → **пробний іспит B1 курсу** (`mock-exam`, матеріал 1–22; слухання — лише з ElevenLabs).
 - **telc пробні `pl-telc-probny`:** 01–07 готові; далі 08 за `TELC_PLAYBOOK.md`.
+- **Державні пробні `pl-b1-cert`:** `pl-b1-probny-01…08` готові (08 — 27.11, озвучено сайтом); далі 09 за `B1_PLAYBOOK.md` («роби б1»).
 - **telc B1 `pl-telc-b1`:** далі урок 5 «U lekarza» (`pl-telc-b1-05-zdrowie`, dopełniacz) → 6 powtórka-1 + mini-test. Глоси — російською.
 - **B2:** №3 Media i dezinformacja → №4 → №6 → №10 → №11.
 - **`pl-ksieg`:** 01–05 готові. Далі **06** — типи договорів, składki ZUS, lista płac (пасивний стан). Сюжет: Halina у бюро; клієнти pani Iwona (kwiaciarnia), pan Tomasz (sklep rowerowy), pan Adam (sp. z o.o., 9% CIT).

@@ -1,0 +1,140 @@
+{
+  "model": "eleven_v4",
+  "cast": {
+    "NAR": "uPeXyAUvljDRLYs8zgwt",
+    "W1": "mQq2zdGT1zEfDbh8W95l",
+    "W2": "gHGjEjdr2LBds0XHTsvg",
+    "W3": "hq1SDzCP9HutY7Ea9PAW",
+    "W4": "2AI3SLYKkKZsvZEiHd3D",
+    "W5": "AwWFxYalAvioLDuxV9WV",
+    "M1": "p0KQaxqGrT7xcRWSJiHp",
+    "M2": "bwhymd1UcFEihyvPSEoR",
+    "M3": "ihTsqWCgsTDbANOCuZD2",
+    "M4": "e3WIS9BUv6I0HZ9v36L2"
+  },
+  "tasks": {
+    "rs1": {
+      "block_gap": 3.0,
+      "voices": {
+        "Lektor": "NAR"
+      },
+      "segments": [
+        {
+          "Nagranie": "W1"
+        },
+        {
+          "Nagranie": "M1"
+        },
+        {
+          "Nagranie": "M2"
+        },
+        {
+          "Nagranie": "M3"
+        },
+        {
+          "Nagranie": "W2"
+        },
+        {
+          "Nagranie": "M4"
+        },
+        {
+          "Nagranie": "W3"
+        },
+        {
+          "Nagranie": "M1"
+        },
+        {
+          "Nagranie": "W4"
+        },
+        {
+          "Nagranie": "M2"
+        },
+        {
+          "Nagranie": "M3"
+        },
+        {
+          "Nagranie": "W5"
+        },
+        {
+          "Nagranie": "W2"
+        },
+        {
+          "Nagranie": "W1"
+        },
+        {
+          "Nagranie": "M4"
+        }
+      ],
+      "tags": {
+        "2": "[angry]",
+        "4": "[warmly]",
+        "10": "[sad]",
+        "14": "[sarcastic]"
+      }
+    },
+    "rs2": {
+      "block_gap": 2.0,
+      "voices": {
+        "Lektor": "NAR"
+      },
+      "segments": [
+        {
+          "Kobieta": "W2",
+          "Mężczyzna": "M2"
+        },
+        {
+          "Pacjentka": "W3",
+          "Rejestrator": "M1"
+        },
+        {
+          "Kolega": "M3",
+          "Koleżanka": "W1"
+        },
+        {
+          "Syn": "M4",
+          "Mama": "W2"
+        },
+        {
+          "Klient": "M2",
+          "Sprzedawczyni": "W5"
+        },
+        {
+          "Studentka": "W3",
+          "Student": "M3"
+        },
+        {
+          "Turysta": "M1",
+          "Recepcjonistka": "W4"
+        },
+        {
+          "Sąsiad": "M2",
+          "Sąsiadka": "W1"
+        }
+      ]
+    },
+    "rs3": {
+      "voices": {
+        "Lektor": "NAR",
+        "Dziennikarz": "M4",
+        "Monika Hajduk": "W3"
+      }
+    },
+    "rs4": {
+      "block_gap": 1.5,
+      "voices": {
+        "Lektor": "NAR",
+        "Pani Halina": "W2",
+        "Bartek": "M1",
+        "Pan Ryszard": "M2",
+        "Ola": "W3"
+      }
+    },
+    "rs5": {
+      "block_gap": 2.5,
+      "voices": {
+        "Lektor": "NAR",
+        "Kolega": "M3"
+      }
+    }
+  }
+}

@@ -216,7 +216,7 @@ def teacher_page(lid, exam, o):
     return fm + "\n" + "\n".join(x for x in out if x)
 
 
-def manifest(lid, o):
+def manifest(lid, o, overrides=None):
     rel = "content-queue/_manifest.json"
     with open(path(rel), encoding="utf-8") as f:
         raw = f.read()
@@ -232,6 +232,7 @@ def manifest(lid, o):
         "audio": {"status": f"generuje strona: src/content/audio/{lid}.json", "max_plays": 1},
         "status": "published", "published_by": "claude", "site_url": f"https://werbaway.com/learn/{lid}",
     }
+    entry.update(overrides or {})
     data = json.loads(raw)
     data["lessons"].append(entry)
     # вставляємо текстом, щоб не переформатувати весь манифест

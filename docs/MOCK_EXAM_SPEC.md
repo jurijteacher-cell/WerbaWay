@@ -38,7 +38,7 @@
 | `pl-b1-probny-03` | **Державний B1 — 3**, повна письмова частина: słuchanie, czytanie, gramatyka, pisanie | 30 + 30 + 30 + письмо (AI, 30) | 50% у кожній частині |
 | `pl-telc-probny-01` | **telc B1·B2 — 1**: słuchanie, czytanie, elementy językowe, e-mail | 23 + 18 + 18 = 59 | рівень: B1 від 27, B2 від 43 |
 | `pl-telc-probny-02…07` | telc B1·B2 — 2–7, той самий формат (як робити новий — `TELC_PLAYBOOK.md`) | 59 + письмо (AI) | B1 від 27, B2 від 43 |
-| `pl-b1-probny-04…07` | Державний B1 — 4–7, повна письмова частина | 30 + 30 + 30 + письмо (AI, 30) | 50% у кожній частині |
+| `pl-b1-probny-04…08` | Державний B1 — 4–8, повна письмова частина (як робити новий — `B1_PLAYBOOK.md`) | 30 + 30 + 30 + письмо (AI, 30) | 50% у кожній частині |
 
 Контент: `src/content/queue-published/{id}-mock.json`. Учень: `https://werba-way.vercel.app/embed/{id}/mock-exam`, **лише з логіном** (результат іде в акаунт).
 
