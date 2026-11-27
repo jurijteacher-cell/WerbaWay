@@ -14,7 +14,7 @@
 ## Пробний іспит: порядок
 
 1. Репо: `add_repo(jurijteacher-cell/WerbaWay, access=push)` → `git clone --depth 1`.
-2. `account_get_usage` (ElevenLabs): потрібно ≈ 6–8 тис. кредитів. Не вистачає → не публікуй слухання, скажи Юрі.
+2. `account_get_usage` (ElevenLabs): 07 коштував ≈ 2 тис. кредитів (6,2 тис. знаків, eleven_v4); май запас ≥ 3 тис. Не вистачає → не публікуй слухання, скажи Юрі.
 3. Подивись теми попередніх номерів і **не повторюй** (скрипт нижче).
 4. Напиши три файли:
    - `src/content/queue-published/{id}-mock.json` — копія структури попереднього номера; `explain` у кожному пункті; транскрипти `Мовець: репліка`, блоки через порожній рядок;
@@ -27,7 +27,7 @@
    ```
    `check_lecture.py` / `check_lesson.py` для іспитів не застосовуються (вимагають vocab / hw).
 6. Коміт і push: `git -c push.negotiate=true push origin HEAD:main`. Vercel деплоїть сам (1–3 хв).
-7. Озвучення (≈ 1 кредит за знак, платиться один раз): `mcp__Vercel__web_fetch_vercel_url` по черзі, **по одному**:
+7. Озвучення (платиться один раз): `mcp__Vercel__web_fetch_vercel_url` по черзі, **по одному**:
    `https://werba-way.vercel.app/audio/{id}/telc-sluchanie-1.mp3` … `-4.mp3` (або вкладка Chrome).
    Потім `https://werba-way.vercel.app/api/audio/_status?lesson={id}` → усі `ready: true`.
 8. `python3 scripts/check_embeds.py {id} --remote` = ✓. Онови таблицю в `MOCK_EXAM_SPEC.md`, `CURRICULUM_TELC_B1.md` §5, `STATE.md`. Push.
