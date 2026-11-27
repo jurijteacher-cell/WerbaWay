@@ -1,0 +1,123 @@
+{
+  "lesson_id": "pl-b1-group-25-podroze",
+  "exercise_type": "flip-task",
+  "title": "Zadania komunikacyjne: planujemy i opowiadamy podróż",
+  "instruction": "Odwróć kartę, przeczytaj sytuację i odegraj rozmowę z nauczycielem.",
+  "estimated_minutes": 40,
+  "items": [
+    {
+      "id": "c1",
+      "mode": "read-then-play",
+      "front_title": "Przy kasie biletowej",
+      "back_scenario": "Najpierw przeczytaj przykładową rozmowę. Potem odegraj swoją: jesteś na dworcu i kupujesz bilety dla dwóch osób, a kasjerką jest nauczyciel. Nie znasz jeszcze dokładnej daty powrotu.",
+      "back_checklist": [
+        "Powiedz, dokąd i kiedy jedziesz, i dla ilu osób kupujesz bilety.",
+        "Zapytaj o przesiadkę: gdzie, o której i ile masz czasu.",
+        "Dowiedz się, czy tańszy jest bilet powrotny, czy dwa w jedną stronę.",
+        "Zapytaj, z którego peronu odjeżdża pociąg i czy ma opóźnienia.",
+        "Ustal, co zrobić z dużym bagażem i rowerem."
+      ],
+      "model_dialogue": [
+        {
+          "role": "Ty",
+          "text": "Dzień dobry, poproszę dwa bilety do Gdyni na piątek, na poranny pociąg."
+        },
+        {
+          "role": "Kasjerka",
+          "text": "Dzień dobry. Mam odjazd o szóstej dwadzieścia i o ósmej pięćdziesiąt. Który?"
+        },
+        {
+          "role": "Ty",
+          "text": "Ten o szóstej dwadzieścia. Czy jest przesiadka?"
+        },
+        {
+          "role": "Kasjerka",
+          "text": "Tak, jedna — w Warszawie Centralnej, ma pan dwadzieścia pięć minut."
+        },
+        {
+          "role": "Ty",
+          "text": "To mało. Czy ten drugi pociąg często się spóźnia?"
+        },
+        {
+          "role": "Kasjerka",
+          "text": "Zdarza się kwadrans opóźnienia, ale przesiadka jest na tym samym peronie."
+        },
+        {
+          "role": "Ty",
+          "text": "Dobrze. A bilet powrotny jest tańszy niż dwa w jedną stronę?"
+        },
+        {
+          "role": "Kasjerka",
+          "text": "Tak, ale musi pan podać datę powrotu już teraz."
+        },
+        {
+          "role": "Ty",
+          "text": "Nie wiem jeszcze, kiedy wracamy. Weźmiemy w jedną stronę."
+        },
+        {
+          "role": "Kasjerka",
+          "text": "Rozumiem. Miejsca przy oknie czy przy przejściu?"
+        },
+        {
+          "role": "Ty",
+          "text": "Przy oknie, proszę. Jedziemy z dwiema walizkami i rowerem."
+        },
+        {
+          "role": "Kasjerka",
+          "text": "Do roweru trzeba dokupić bilet bagażowy. Dodać go?"
+        },
+        {
+          "role": "Ty",
+          "text": "Tak, proszę. Z którego peronu odjeżdżamy?"
+        },
+        {
+          "role": "Kasjerka",
+          "text": "Z trzeciego. Proszę przyjść kwadrans wcześniej, bo peron jest zatłoczony."
+        }
+      ],
+      "grammar_point": "ruch-iterat"
+    },
+    {
+      "id": "c2",
+      "mode": "play",
+      "front_title": "Kwatera nad morzem",
+      "back_scenario": "Dzwonisz zarezerwować nocleg nad morzem na dwa tygodnie w lipcu. Właścicielką kwatery jest nauczyciel. Macie dwie osoby dorosłe i jedno dziecko.",
+      "back_checklist": [
+        "Powiedz, w jakim terminie chcesz przyjechać i na ile dni.",
+        "Zapytaj, jak daleko idzie się do plaży i czym można tam dojechać.",
+        "Dowiedz się, czy w okolicy jest coś do zwiedzania i czy warto.",
+        "Zapytaj o cenę i o to, co trzeba zapłacić z góry.",
+        "Ustal, o której godzinie możecie przyjechać pierwszego dnia."
+      ],
+      "grammar_point": "przypadki-przyimki"
+    },
+    {
+      "id": "c3",
+      "mode": "play",
+      "front_title": "Zmiana planów",
+      "back_scenario": "Dwa dni przed wyjazdem okazuje się, że nie możesz jechać w umówionym terminie. Dzwonisz do znajomego (gra nauczyciel), z którym mieliście jechać razem, i proponujesz nowe rozwiązanie.",
+      "back_checklist": [
+        "Powiedz krótko, co się stało, bez długich tłumaczeń.",
+        "Zaproponuj dwa nowe terminy albo inny sposób podróży.",
+        "Powiedz, co zrobić z już kupionymi biletami i rezerwacją.",
+        "Zapytaj znajomego, co dla niego byłoby wygodniejsze.",
+        "Ustalcie jedną rzecz, którą każdy z was załatwi dzisiaj."
+      ],
+      "grammar_point": "aspekt-uzycie"
+    },
+    {
+      "id": "c4",
+      "mode": "play",
+      "front_title": "Najgorsza podróż w moim życiu",
+      "back_scenario": "Opowiedz nauczycielowi o jednej nieudanej podróży (2–3 minuty). Potem odpowiedz na jego pytania.",
+      "back_checklist": [
+        "Powiedz, dokąd jechałeś, czym i z kim.",
+        "Opowiedz, co poszło nie tak i w którym momencie.",
+        "Użyj co najmniej trzech par: jechać / jeździć, iść / chodzić, wieźć / wozić.",
+        "Powiedz, co zrobiłbyś dzisiaj inaczej.",
+        "Doradź rozmówcy, czego nie robić w podobnej sytuacji."
+      ],
+      "grammar_point": "ruch-iterat"
+    }
+  ]
+}

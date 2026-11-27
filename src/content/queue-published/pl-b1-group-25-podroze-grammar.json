@@ -1,0 +1,1288 @@
+{
+  "lesson_id": "pl-b1-group-25-podroze",
+  "exercise_type": "mixed",
+  "title": "Ćwiczenia: podróże i czasowniki ruchu",
+  "instruction": "Ćwiczenia do tekstu, słownictwa i gramatyki lekcji 25.",
+  "estimated_minutes": 95,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "t1 · Kolejność wydarzeń w tekście",
+      "instruction": "Ułóż zdania w takiej kolejności, w jakiej pojawiają się w tekście.",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "Olena pisze, że co roku jeżdżą nad morze, ale w tym roku jadą pociągiem.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "Maksym pokazuje mamie, od której strony wchodzi się do wagonu.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Babcia Hanna mówi, że nie ma po co latać samolotem.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Bartek obiecuje zawieźć babcię do Kazimierza Dolnego.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "Pani Monika wybiera górski szlak zamiast jednego miejsca na tydzień.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Taras mówi, że chce normalnie pojechać i normalnie wrócić.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "t2 · Luki w streszczeniu",
+      "instruction": "Uzupełnij streszczenie tekstu. Wybierz właściwą formę albo słowo.",
+      "text": "W tym roku rodzina Oleny nie {t2-1} samochodem, bo stara skoda nie nadaje się na daleką drogę. Bilety kupili w kwietniu: {t2-2} z Lublina jest wczesny, a w Warszawie czeka ich jedna {t2-3}. Maksym regularnie {t2-4} do Szczecina, więc zna dworce lepiej niż rodzice. Z Kubą planują wyprawę {t2-5} na Hel. Babcia Hanna nigdy nie {t2-6} samolotem i nie zamierza tego zmieniać. Pani Monika {t2-7} w góry szlakiem, ze schroniska do schroniska. Ira {t2-8} z Toronto pod koniec czerwca.",
+      "items": [
+        {
+          "id": "t2-1",
+          "answer": "jedzie",
+          "options": [
+            "jeździ",
+            "jedzie",
+            "idzie"
+          ],
+          "hint": "(jechać)",
+          "explanation": "Jedna konkretna podróż w tym roku — forma jednokrotna: jedzie.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "t2-2",
+          "answer": "odjazd",
+          "options": [
+            "odjazd",
+            "peron",
+            "przyjazd"
+          ],
+          "hint": "(rzeczownik)",
+          "explanation": "Pociąg rusza z Lublina, więc chodzi o odjazd.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "t2-3",
+          "answer": "przesiadka",
+          "options": [
+            "przesiadka",
+            "walizka",
+            "wycieczka"
+          ],
+          "hint": "(rzeczownik)",
+          "explanation": "W Warszawie zmieniają pociąg — to przesiadka.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "t2-4",
+          "answer": "jeździ",
+          "options": [
+            "wozi",
+            "jedzie",
+            "jeździ"
+          ],
+          "hint": "(jeździć)",
+          "explanation": "„Regularnie” to nawyk — forma wielokrotna: jeździ.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "t2-5",
+          "answer": "promem",
+          "options": [
+            "promem",
+            "na promie",
+            "prom"
+          ],
+          "hint": "(prom)",
+          "explanation": "Środek transportu bez przyimka — narzędnik: promem.",
+          "grammar_point": "przypadki-funkcje"
+        },
+        {
+          "id": "t2-6",
+          "answer": "latała",
+          "options": [
+            "leciała",
+            "chodziła",
+            "latała"
+          ],
+          "hint": "(latać)",
+          "explanation": "„Nigdy” to doświadczenie w ogóle, nie jedna podróż — latała.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "t2-7",
+          "answer": "idzie",
+          "options": [
+            "chodzi",
+            "idzie",
+            "jedzie"
+          ],
+          "hint": "(iść)",
+          "explanation": "Jedna zaplanowana wyprawa pieszo — idzie.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "t2-8",
+          "answer": "przylatuje",
+          "options": [
+            "przyjeżdża",
+            "lata",
+            "przylatuje"
+          ],
+          "hint": "(przylatywać)",
+          "explanation": "Z Toronto do Polski leci samolotem — przylatuje.",
+          "grammar_point": "ruch-przedrostki"
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 1,
+      "exercise_type": "matching",
+      "title": "g1 · Połącz słowo z opisem",
+      "instruction": "Połącz słowo z jego znaczeniem.",
+      "items": [
+        {
+          "id": "g1-1",
+          "left": "peron",
+          "right": "miejsce na dworcu, z którego wsiadamy do pociągu",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-2",
+          "left": "opóźnienie",
+          "right": "sytuacja, kiedy pociąg jest później, niż powinien",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-3",
+          "left": "schronisko",
+          "right": "prosty dom w górach, gdzie nocują turyści",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-4",
+          "left": "kwatera",
+          "right": "tani pokój do wynajęcia u prywatnych ludzi",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-5",
+          "left": "szlak",
+          "right": "oznaczona droga dla turystów",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-6",
+          "left": "zatłoczony",
+          "right": "taki, w którym jest bardzo dużo ludzi",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-7",
+          "left": "zdążyć",
+          "right": "dojechać albo przyjść na czas",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "g1-8",
+          "left": "rozkład jazdy",
+          "right": "spis godzin odjazdów i przyjazdów",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 1,
+      "exercise_type": "fill-in-blank",
+      "title": "g2 · Jadę czy jeżdżę?",
+      "instruction": "Wybierz formę jednokrotną (teraz, jeden kierunek) albo wielokrotną (nawyk, tam i z powrotem, umiejętność).",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Cicho, nie mogę rozmawiać — właśnie ___ do dworca i szukam peronu.",
+          "answer": "idę",
+          "options": [
+            "chodzę",
+            "idę"
+          ],
+          "explanation": "Ruch teraz, w jednym kierunku — iść: idę.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g2-2",
+          "text": "Mój brat ___ na basen trzy razy w tygodniu.",
+          "answer": "chodzi",
+          "options": [
+            "chodzi",
+            "idzie"
+          ],
+          "explanation": "„Trzy razy w tygodniu” to nawyk — chodzić.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g2-3",
+          "text": "W piątek ___ do Gdyni, mamy już bilety.",
+          "answer": "jedziemy",
+          "options": [
+            "jedziemy",
+            "jeździmy"
+          ],
+          "explanation": "Jedna zaplanowana podróż z datą — jechać.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g2-4",
+          "text": "Co roku ___ nad morze na dwa tygodnie.",
+          "answer": "jeździmy",
+          "options": [
+            "jedziemy",
+            "jeździmy"
+          ],
+          "explanation": "„Co roku” — powtarzalność, jeździć.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g2-5",
+          "text": "Wczoraj ___ do lekarza i wróciłam po dwóch godzinach.",
+          "answer": "chodziłam",
+          "options": [
+            "chodziłam",
+            "szłam"
+          ],
+          "explanation": "Jedna wyprawa, ale tam i z powrotem — chodzić.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g2-6",
+          "text": "Cały dzień ___ po Krakowie i nic nie zwiedziliśmy porządnie.",
+          "answer": "chodziliśmy",
+          "options": [
+            "chodziliśmy",
+            "szliśmy"
+          ],
+          "explanation": "Ruch po terenie, bez jednego kierunku — chodzić.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g2-7",
+          "text": "Moja córka ma rok i już ___ sama.",
+          "answer": "chodzi",
+          "options": [
+            "idzie",
+            "chodzi"
+          ],
+          "explanation": "Umiejętność, nie konkretny ruch — chodzić.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g2-8",
+          "text": "Taras nie ___ już skodą do pracy, bo wybrał trolejbus.",
+          "answer": "jeździ",
+          "options": [
+            "jedzie",
+            "jeździ"
+          ],
+          "explanation": "Zwyczaj, którego już nie ma — jeździć.",
+          "grammar_point": "ruch-iterat"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "g3 · Cała rodzina: latać, pływać, biegać, nosić, wozić",
+      "instruction": "Wpisz albo wybierz właściwą formę. Pamiętaj: jednokrotna = teraz i w jednym kierunku.",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "Ira ___ do Polski dwa razy w roku, zawsze w czerwcu i w grudniu.",
+          "answer": "lata",
+          "options": [
+            "leci",
+            "lata"
+          ],
+          "explanation": "Dwa razy w roku — powtarzalność, latać.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g3-2",
+          "text": "Nie dzwoń do niej teraz, ona ___ nad Atlantykiem.",
+          "answer": "leci",
+          "options": [
+            "leci",
+            "lata"
+          ],
+          "explanation": "W tej chwili, w jednym kierunku — lecieć.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g3-3",
+          "text": "Umiem ___, ale boję się głębokiej wody.",
+          "answer": "pływać",
+          "options": [
+            "płynąć",
+            "pływać"
+          ],
+          "explanation": "Umiejętność — pływać.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g3-4",
+          "text": "Prom ___ na Hel czterdzieści minut.",
+          "answer": "płynie",
+          "options": [
+            "płynie",
+            "pływa"
+          ],
+          "explanation": "Jedna konkretna trasa — płynąć.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g3-5",
+          "text": "Maksym ___ w plecaku ładowarkę, bo w Zalesiu słaby zasięg.",
+          "answer": "nosi",
+          "options": [
+            "niesie",
+            "nosi"
+          ],
+          "explanation": "Zawsze, przy każdej podróży — nosić.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g3-6",
+          "text": "Patrz, tata ___ walizki do samochodu, pomóż mu.",
+          "answer": "niesie",
+          "options": [
+            "niesie",
+            "nosi"
+          ],
+          "explanation": "Teraz, w jednym kierunku — nieść.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g3-7",
+          "text": "Bartek co miesiąc ___ babci zakupy z miasta.",
+          "answer": "wozi",
+          "options": [
+            "wiezie",
+            "wozi"
+          ],
+          "explanation": "Co miesiąc — wozić.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g3-8",
+          "text": "Jedziemy do Zalesia i ___ psa do weterynarza.",
+          "answer": "wieziemy",
+          "options": [
+            "wozimy",
+            "wieziemy"
+          ],
+          "explanation": "Ta jedna podróż — wieźć.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g3-9",
+          "text": "Do Gdyni jedziemy ___ (pociąg).",
+          "answer": "pociągiem",
+          "accept": [
+            "pociagiem"
+          ],
+          "hint": "(pociąg)",
+          "explanation": "Środek transportu bez przyimka — narzędnik: pociągiem.",
+          "grammar_point": "przypadki-funkcje"
+        },
+        {
+          "id": "g3-10",
+          "text": "Nad jezioro jeździmy ___ (rower).",
+          "answer": "na rowerze",
+          "accept": [
+            "na rowerze."
+          ],
+          "hint": "(rower)",
+          "explanation": "Rower, motor, narty, łyżwy — wyjątkowo „na” + miejscownik.",
+          "grammar_point": "przypadki-przyimki"
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "g4 · Wyjątki: kiedy te czasowniki nie znaczą ruchu",
+      "instruction": "Te zwroty łamią regułę porcji: czasownik ruchu nie mówi tu o ruchu. Uzupełnij.",
+      "items": [
+        {
+          "id": "g4-1",
+          "text": "W zimie ___ ciepłą kurtkę i czapkę.",
+          "answer": "chodzę w",
+          "accept": [
+            "chodzę w",
+            "noszę"
+          ],
+          "hint": "(chodzić w / nosić)",
+          "explanation": "O ubraniu mówimy „chodzić w czymś” albo „nosić coś” — nigdy „nieść”.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g4-2",
+          "text": "Babcia od lat ___ okulary do czytania.",
+          "answer": "nosi",
+          "options": [
+            "niesie",
+            "nosi"
+          ],
+          "explanation": "Mieć na sobie — nosić, choć to nie ruch.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g4-3",
+          "text": "Nie ___ o pieniądze, chodzi o czas.",
+          "answer": "chodzi",
+          "options": [
+            "chodzi",
+            "idzie"
+          ],
+          "explanation": "„Chodzi o…” = rzecz w tym, że… Forma „idzie o” tu nie działa.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g4-4",
+          "text": "Mój stary zegarek ___ dokładnie od dwudziestu lat.",
+          "answer": "chodzi",
+          "options": [
+            "idzie",
+            "chodzi"
+          ],
+          "explanation": "O działaniu urządzenia mówimy „chodzi”.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g4-5",
+          "text": "Taras ___ samochód spokojnie, nigdy się nie spieszy.",
+          "answer": "prowadzi",
+          "options": [
+            "wozi",
+            "wodzi",
+            "prowadzi"
+          ],
+          "explanation": "Kierować autem — prowadzić. „Wodzić” znaczy prowadzić kogoś za rękę.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g4-6",
+          "text": "Rano ___ dziecko do przedszkola, a po pracy je odbieram.",
+          "answer": "odprowadzam",
+          "accept": [
+            "odprowadzam",
+            "prowadzę"
+          ],
+          "hint": "(odprowadzać)",
+          "explanation": "Zaprowadzić kogoś na miejsce — odprowadzać / prowadzić, nie „wozić” (chyba że autem).",
+          "grammar_point": "ruch-przedrostki"
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 2,
+      "exercise_type": "sentence-building",
+      "title": "g5 · Popraw błąd",
+      "instruction": "W każdym zdaniu jest jeden błąd typowy dla osób mówiących po ukraińsku. Napisz zdanie poprawnie.",
+      "items": [
+        {
+          "id": "g5-1",
+          "prompt": "Mój syn lubi katać się na rowerze.",
+          "answer": "Mój syn lubi jeździć na rowerze.",
+          "accept": [
+            "Moj syn lubi jezdzic na rowerze."
+          ],
+          "explanation": "Po polsku nie ma „katać się” — rower, narty, łyżwy: jeździć na czymś.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g5-2",
+          "prompt": "Mowa idzie o terminie wyjazdu.",
+          "answer": "Chodzi o termin wyjazdu.",
+          "accept": [
+            "Chodzi o termin wyjazdu",
+            "Mowa jest o terminie wyjazdu."
+          ],
+          "explanation": "Ukraińskie „мова йде про” to po polsku „chodzi o” + biernik.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g5-3",
+          "prompt": "Taras wodzi samochód już dwadzieścia lat.",
+          "answer": "Taras prowadzi samochód już dwadzieścia lat.",
+          "accept": [
+            "Taras prowadzi samochod juz dwadziescia lat."
+          ],
+          "explanation": "Kierować autem — prowadzić. „Wodzić” = prowadzić kogoś za rękę.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g5-4",
+          "prompt": "Ona niesie okulary od dziecka.",
+          "answer": "Ona nosi okulary od dziecka.",
+          "accept": [
+            "Ona nosi okulary od dziecka"
+          ],
+          "explanation": "Mieć na sobie — nosić (wielokrotny), nie nieść.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g5-5",
+          "prompt": "Jutro jeżdżę do Warszawy na szkolenie.",
+          "answer": "Jutro jadę do Warszawy na szkolenie.",
+          "accept": [
+            "Jutro jade do Warszawy na szkolenie."
+          ],
+          "explanation": "Jedna podróż z datą — forma jednokrotna: jadę.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g5-6",
+          "prompt": "Co sobotę idziemy na basen.",
+          "answer": "Co sobotę chodzimy na basen.",
+          "accept": [
+            "Co sobote chodzimy na basen."
+          ],
+          "explanation": "„Co sobotę” to nawyk — chodzić.",
+          "grammar_point": "ruch-iterat"
+        }
+      ]
+    },
+    {
+      "block_id": "g6",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "g6 · Szedłem czy chodziłem? Będę jeździć",
+      "instruction": "Uzupełnij formy czasu przeszłego i przyszłego.",
+      "items": [
+        {
+          "id": "g6-1",
+          "text": "Kiedy ___ (iść) na dworzec, zadzwonił kurier.",
+          "answer": "szedłem",
+          "accept": [
+            "szedlem",
+            "szłam",
+            "szlam"
+          ],
+          "hint": "(iść, ja)",
+          "explanation": "Tło jednej drogi — iść: szedłem / szłam.",
+          "grammar_point": "czasowniki-nieregularne"
+        },
+        {
+          "id": "g6-2",
+          "text": "Jako dziecko ___ (chodzić) do szkoły przez las.",
+          "answer": "chodziłem",
+          "accept": [
+            "chodzilem",
+            "chodziłam",
+            "chodzilam"
+          ],
+          "hint": "(chodzić, ja)",
+          "explanation": "Powtarzalność w przeszłości — chodziłem.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "g6-3",
+          "text": "Oni ___ (iść) szlakiem cztery godziny i zdążyli przed zmrokiem.",
+          "answer": "szli",
+          "hint": "(iść, oni)",
+          "explanation": "Forma męskoosobowa od iść — szli.",
+          "grammar_point": "czasowniki-nieregularne"
+        },
+        {
+          "id": "g6-4",
+          "text": "Dziewczyny ___ (nieść) plecaki na zmianę.",
+          "answer": "niosły",
+          "hint": "(nieść, one)",
+          "explanation": "Forma niemęskoosobowa od nieść — niosły.",
+          "grammar_point": "czasowniki-nieregularne"
+        },
+        {
+          "id": "g6-5",
+          "text": "W zeszłym roku ___ (wieźć) rowery na dachu samochodu.",
+          "answer": "wieźliśmy",
+          "accept": [
+            "wiezlismy",
+            "wiozłyśmy",
+            "wiozlysmy"
+          ],
+          "hint": "(wieźć, my)",
+          "explanation": "Męskoosobowa forma od wieźć — wieźliśmy (żeńska: wiozłyśmy).",
+          "grammar_point": "czasowniki-nieregularne"
+        },
+        {
+          "id": "g6-6",
+          "text": "Od września ___ (jeździć) do pracy rowerem — tak postanowiłem.",
+          "answer": "będę jeździć",
+          "accept": [
+            "bede jezdzic",
+            "będę jeździł",
+            "bede jezdzil",
+            "będę jeździła",
+            "bede jezdzila"
+          ],
+          "hint": "(jeździć, ja, przyszły)",
+          "explanation": "Obie formy są poprawne: będę jeździć = będę jeździł / jeździła.",
+          "grammar_point": "koniugacje"
+        },
+        {
+          "id": "g6-7",
+          "text": "Myślę, że w lipcu plaże ___ (być) zatłoczone.",
+          "answer": "będą",
+          "hint": "(być, one)",
+          "explanation": "Zwykły czas przyszły od być — będą.",
+          "grammar_point": "koniugacje"
+        },
+        {
+          "id": "g6-8",
+          "text": "Czy w sierpniu ___ (latać) jeszcze samoloty na tę wyspę?",
+          "answer": "będą latać",
+          "accept": [
+            "beda latac",
+            "będą latały",
+            "beda latały"
+          ],
+          "hint": "(latać, one, przyszły)",
+          "explanation": "Czas przyszły złożony: będą latać albo będą latały.",
+          "grammar_point": "koniugacje"
+        }
+      ]
+    },
+    {
+      "block_id": "g7",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "g7 · Przyjechać czy przyjeżdżać?",
+      "instruction": "Przedrostek + forma jednokrotna = dokonany (jeden raz). Przedrostek + forma wielokrotna = niedokonany (regularnie, w trakcie).",
+      "items": [
+        {
+          "id": "g7-1",
+          "text": "Kuba ___ do nas w piątek i zostaje trzy dni.",
+          "answer": "przyjedzie",
+          "options": [
+            "przyjeżdża",
+            "przyjedzie"
+          ],
+          "explanation": "Jeden konkretny przyjazd w przyszłości — dokonany: przyjedzie.",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "g7-2",
+          "text": "Listonosz ___ do Zalesia codziennie przed dziesiątą.",
+          "answer": "przychodzi",
+          "options": [
+            "przyjdzie",
+            "przychodzi"
+          ],
+          "explanation": "Codziennie — niedokonany od chodzić: przychodzi.",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "g7-3",
+          "text": "Pociąg ___ ze stacji dokładnie o szóstej dwadzieścia.",
+          "answer": "odjeżdża",
+          "options": [
+            "odjeżdża",
+            "odjedzie"
+          ],
+          "explanation": "Rozkład jazdy — forma niedokonana: odjeżdża.",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "g7-4",
+          "text": "Zaraz ___ (wyjść) i wrócę za godzinę.",
+          "answer": "wyjdę",
+          "accept": [
+            "wyjde"
+          ],
+          "hint": "(wyjść, ja)",
+          "explanation": "Jedna czynność teraz — dokonany: wyjdę.",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "g7-5",
+          "text": "Ona ___ z domu zawsze kwadrans przed ósmą.",
+          "answer": "wychodzi",
+          "options": [
+            "wyjdzie",
+            "wychodzi"
+          ],
+          "explanation": "Zawsze — niedokonany: wychodzi.",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "g7-6",
+          "text": "Latem turyści ___ tu z całej Polski.",
+          "answer": "przyjeżdżają",
+          "options": [
+            "przyjeżdżają",
+            "przyjadą"
+          ],
+          "explanation": "Regularnie, każdego lata — przyjeżdżają.",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "g7-7",
+          "text": "Bartek obiecał, że ___ (zawieźć) babcię do Kazimierza.",
+          "answer": "zawiezie",
+          "hint": "(zawieźć, on)",
+          "explanation": "Jeden raz, z rezultatem — zawiezie.",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "g7-8",
+          "text": "Mąż ___ mi kawę do łóżka co niedzielę.",
+          "answer": "przynosi",
+          "options": [
+            "przynosi",
+            "przyniesie"
+          ],
+          "explanation": "Co niedzielę — niedokonany od nosić: przynosi.",
+          "grammar_point": "ruch-przedrostki"
+        }
+      ]
+    },
+    {
+      "block_id": "g8",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "g8 · Dokąd jedziesz? Nad morze, w góry, do Zakopanego",
+      "instruction": "Uzupełnij przyimek albo całe wyrażenie. Uwaga na przypadek.",
+      "items": [
+        {
+          "id": "g8-1",
+          "text": "W lipcu jedziemy ___ morze na dwa tygodnie.",
+          "answer": "nad",
+          "options": [
+            "nad",
+            "w",
+            "na"
+          ],
+          "explanation": "Do wody: nad + biernik — nad morze, nad jezioro.",
+          "grammar_point": "przypadki-przyimki"
+        },
+        {
+          "id": "g8-2",
+          "text": "Pani Monika idzie ___ góry szlakiem.",
+          "answer": "w",
+          "options": [
+            "nad",
+            "w",
+            "na"
+          ],
+          "explanation": "Do gór: w + biernik — w góry, w Tatry.",
+          "grammar_point": "przypadki-przyimki"
+        },
+        {
+          "id": "g8-3",
+          "text": "Maksym jeździ ___ Szczecina do kolegi.",
+          "answer": "do",
+          "options": [
+            "do",
+            "na",
+            "w"
+          ],
+          "explanation": "Miasta i budynki: do + dopełniacz.",
+          "grammar_point": "przypadki-przyimki"
+        },
+        {
+          "id": "g8-4",
+          "text": "W sobotę idę ___ dworzec po bilety.",
+          "answer": "na",
+          "options": [
+            "do",
+            "nad",
+            "na"
+          ],
+          "explanation": "Dworzec, poczta, koncert: na + biernik.",
+          "grammar_point": "przypadki-przyimki"
+        },
+        {
+          "id": "g8-5",
+          "text": "Wyskoczę tylko ___ (chleb) i wracam.",
+          "answer": "po chleb",
+          "hint": "(chleb, cel)",
+          "explanation": "Po co idę — po + biernik: po chleb, po bilety, po lekarza.",
+          "grammar_point": "przypadki-przyimki"
+        },
+        {
+          "id": "g8-6",
+          "text": "Latem jeżdżą ___ (wieś) do rodziny.",
+          "answer": "na wieś",
+          "hint": "(wieś)",
+          "explanation": "Wieś zachowuje się jak miejsce otwarte: na wieś, na wsi.",
+          "grammar_point": "przypadki-przyimki"
+        },
+        {
+          "id": "g8-7",
+          "text": "Wracamy ___ (góry) w niedzielę wieczorem.",
+          "answer": "z gór",
+          "hint": "(góry, skąd)",
+          "explanation": "Skąd — z + dopełniacz: z gór, znad morza.",
+          "grammar_point": "przypadki-przyimki"
+        },
+        {
+          "id": "g8-8",
+          "text": "Oni jeżdżą na urlop ___ granicę raz na kilka lat.",
+          "answer": "za",
+          "options": [
+            "do",
+            "za",
+            "w"
+          ],
+          "explanation": "Za + biernik — za granicę (dokąd), za granicą (gdzie).",
+          "grammar_point": "przypadki-przyimki"
+        },
+        {
+          "id": "g8-9",
+          "text": "Nie mów „jadę na morze” — powiedz ___ morze.",
+          "answer": "nad",
+          "options": [
+            "po",
+            "w",
+            "nad"
+          ],
+          "explanation": "Ukraińskie „на море” to po polsku nad morze.",
+          "grammar_point": "przypadki-przyimki"
+        },
+        {
+          "id": "g8-10",
+          "text": "Dziecko chodzi ___ szkoły od września.",
+          "answer": "do",
+          "options": [
+            "do",
+            "na",
+            "w"
+          ],
+          "explanation": "Ukraińskie „ходить в школу” to po polsku chodzi do szkoły.",
+          "grammar_point": "przypadki-przyimki"
+        }
+      ]
+    },
+    {
+      "block_id": "gz",
+      "part": 2,
+      "exercise_type": "fill-in-blank",
+      "title": "gz · Wszystko razem",
+      "instruction": "Mieszane zadania ze wszystkich porcji. Przy każdym pomyśl, która reguła działa.",
+      "items": [
+        {
+          "id": "gz-1",
+          "text": "Zwykle ___ do pracy pieszo, ale dzisiaj ___ tramwajem, bo pada.",
+          "answer": "chodzę, jadę",
+          "accept": [
+            "chodze, jade",
+            "chodzę jadę",
+            "chodzę, jadę."
+          ],
+          "hint": "(chodzić / jechać)",
+          "explanation": "Nawyk — chodzę; dzisiejszy wyjątek i pojazd — jadę.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "gz-2",
+          "text": "Jutro ___ (polecieć) do Krakowa, a w czwartek wracam pociągiem.",
+          "answer": "lecę",
+          "accept": [
+            "lece",
+            "polecę",
+            "polece"
+          ],
+          "hint": "(lecieć, ja)",
+          "explanation": "Jedna podróż z datą; forma teraźniejsza jednokrotna wyraża tu przyszłość.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "gz-3",
+          "text": "Jak byłem mały, dziadek ___ (wozić) mnie na targ każdą środę.",
+          "answer": "woził",
+          "hint": "(wozić, on)",
+          "explanation": "Powtarzalność w przeszłości — woził.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "gz-4",
+          "text": "Nie ___ o pieniądze, tylko o to, że nikt nie zdążył na przesiadkę.",
+          "answer": "chodzi",
+          "options": [
+            "idzie",
+            "chodzi"
+          ],
+          "explanation": "Wyjątek: „chodzi o…”.",
+          "grammar_point": "ruch-iterat"
+        },
+        {
+          "id": "gz-5",
+          "text": "Gdy ___ (iść) na peron, pociąg już odjeżdżał.",
+          "answer": "szliśmy",
+          "accept": [
+            "szlismy",
+            "szłyśmy",
+            "szlysmy"
+          ],
+          "hint": "(iść, my)",
+          "explanation": "Nieregularna podstawa iść w przeszłości — szliśmy.",
+          "grammar_point": "czasowniki-nieregularne"
+        },
+        {
+          "id": "gz-6",
+          "text": "Autobus ___ (odjeżdżać) co pół godziny, więc nie musisz biec.",
+          "answer": "odjeżdża",
+          "accept": [
+            "odjezdza"
+          ],
+          "hint": "(odjeżdżać)",
+          "explanation": "Rozkład jazdy — niedokonany od jeździć: odjeżdża.",
+          "grammar_point": "ruch-przedrostki"
+        },
+        {
+          "id": "gz-7",
+          "text": "Co roku jeździmy ___ jezioro pod Olsztynem.",
+          "answer": "nad",
+          "options": [
+            "w",
+            "na",
+            "nad"
+          ],
+          "explanation": "Do wody — nad + biernik.",
+          "grammar_point": "przypadki-przyimki"
+        },
+        {
+          "id": "gz-8",
+          "text": "Od stycznia ___ (chodzić) na basen dwa razy w tygodniu — obiecuję sobie to co roku.",
+          "answer": "będę chodzić",
+          "accept": [
+            "bede chodzic",
+            "będę chodził",
+            "bede chodzil",
+            "będę chodziła",
+            "bede chodzila"
+          ],
+          "hint": "(chodzić, ja, przyszły)",
+          "explanation": "Czas przyszły złożony; obie formy poprawne.",
+          "grammar_point": "koniugacje"
+        },
+        {
+          "id": "gz-9",
+          "text": "Ira i Olena piszą do ___ od dwudziestu lat.",
+          "answer": "siebie",
+          "options": [
+            "siebie",
+            "się",
+            "sobie"
+          ],
+          "explanation": "Po przyimku „do” — siebie (powtórka z lekcji 23).",
+          "grammar_point": "zaimek-siebie"
+        },
+        {
+          "id": "gz-10",
+          "text": "To ten pensjonat, o ___ mówiła pani Monika.",
+          "answer": "którym",
+          "options": [
+            "którym",
+            "jakim"
+          ],
+          "explanation": "Konkretny, znany obiekt — który w miejscowniku (powtórka z lekcji 10 i 24).",
+          "grammar_point": "ktory-przypadki"
+        }
+      ]
+    },
+    {
+      "block_id": "el1",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "el1 · Elementy języka: rozmowa",
+      "instruction": "Uzupełnij rozmowę. Wybierz z listy brakujące zdanie. Dwie odpowiedzi są niepotrzebne.",
+      "text": "Olena: Cześć, Bartek! {el1-1}\n\nBartek: Cześć! Mów, co się stało.\n\nOlena: Pociąg do Gdyni ma w piątek inny rozkład. {el1-2}\n\nBartek: Rozumiem. {el1-3}\n\nOlena: Właśnie o to chciałam zapytać. Taras pracuje do czternastej.\n\nBartek: {el1-4} Mam wolne i tak jadę w tamtą stronę.\n\nOlena: Serio? To by nam bardzo pomogło. {el1-5}\n\nBartek: Trzy walizki i plecak zmieszczę bez problemu.\n\nOlena: A babcia? {el1-6}\n\nBartek: Do Kazimierza zawiozę ją w następnym tygodniu, spokojnie.\n\nOlena: {el1-7} Dzięki, naprawdę.\n\nBartek: {el1-8} Napisz tylko dokładną godzinę.",
+      "items": [
+        {
+          "id": "el1-1",
+          "answer": "i) Mam do ciebie jedną prośbę.",
+          "options": [
+            "a) Wolę latać niż jeździć pociągiem.",
+            "b) Nie dziękuj, sąsiedzi są po to.",
+            "c) Kupiłem już bilety powrotne.",
+            "d) Zmieścisz nasze bagaże?",
+            "e) Obiecałeś jej wycieczkę w ten weekend.",
+            "f) To wszystko się układa.",
+            "g) Odjazd jest o szóstej dwadzieścia, a nie o ósmej.",
+            "h) Mogę was zawieźć, nie ma sprawy.",
+            "i) Mam do ciebie jedną prośbę.",
+            "j) Czyli nie macie jak dojechać na dworzec?"
+          ],
+          "explanation": "Olena zaczyna rozmowę i zapowiada prośbę.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-2",
+          "answer": "g) Odjazd jest o szóstej dwadzieścia, a nie o ósmej.",
+          "options": [
+            "a) Wolę latać niż jeździć pociągiem.",
+            "b) Nie dziękuj, sąsiedzi są po to.",
+            "c) Kupiłem już bilety powrotne.",
+            "d) Zmieścisz nasze bagaże?",
+            "e) Obiecałeś jej wycieczkę w ten weekend.",
+            "f) To wszystko się układa.",
+            "g) Odjazd jest o szóstej dwadzieścia, a nie o ósmej.",
+            "h) Mogę was zawieźć, nie ma sprawy.",
+            "i) Mam do ciebie jedną prośbę.",
+            "j) Czyli nie macie jak dojechać na dworzec?"
+          ],
+          "explanation": "Olena podaje konkret: zmienioną godzinę odjazdu.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-3",
+          "answer": "j) Czyli nie macie jak dojechać na dworzec?",
+          "options": [
+            "a) Wolę latać niż jeździć pociągiem.",
+            "b) Nie dziękuj, sąsiedzi są po to.",
+            "c) Kupiłem już bilety powrotne.",
+            "d) Zmieścisz nasze bagaże?",
+            "e) Obiecałeś jej wycieczkę w ten weekend.",
+            "f) To wszystko się układa.",
+            "g) Odjazd jest o szóstej dwadzieścia, a nie o ósmej.",
+            "h) Mogę was zawieźć, nie ma sprawy.",
+            "i) Mam do ciebie jedną prośbę.",
+            "j) Czyli nie macie jak dojechać na dworzec?"
+          ],
+          "explanation": "Bartek domyśla się problemu i pyta o dojazd.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-4",
+          "answer": "h) Mogę was zawieźć, nie ma sprawy.",
+          "options": [
+            "a) Wolę latać niż jeździć pociągiem.",
+            "b) Nie dziękuj, sąsiedzi są po to.",
+            "c) Kupiłem już bilety powrotne.",
+            "d) Zmieścisz nasze bagaże?",
+            "e) Obiecałeś jej wycieczkę w ten weekend.",
+            "f) To wszystko się układa.",
+            "g) Odjazd jest o szóstej dwadzieścia, a nie o ósmej.",
+            "h) Mogę was zawieźć, nie ma sprawy.",
+            "i) Mam do ciebie jedną prośbę.",
+            "j) Czyli nie macie jak dojechać na dworzec?"
+          ],
+          "explanation": "Bartek proponuje pomoc; dalej tłumaczy, że i tak tam jedzie.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-5",
+          "answer": "d) Zmieścisz nasze bagaże?",
+          "options": [
+            "a) Wolę latać niż jeździć pociągiem.",
+            "b) Nie dziękuj, sąsiedzi są po to.",
+            "c) Kupiłem już bilety powrotne.",
+            "d) Zmieścisz nasze bagaże?",
+            "e) Obiecałeś jej wycieczkę w ten weekend.",
+            "f) To wszystko się układa.",
+            "g) Odjazd jest o szóstej dwadzieścia, a nie o ósmej.",
+            "h) Mogę was zawieźć, nie ma sprawy.",
+            "i) Mam do ciebie jedną prośbę.",
+            "j) Czyli nie macie jak dojechać na dworzec?"
+          ],
+          "explanation": "Olena pyta o bagaż — Bartek odpowiada o walizkach.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-6",
+          "answer": "e) Obiecałeś jej wycieczkę w ten weekend.",
+          "options": [
+            "a) Wolę latać niż jeździć pociągiem.",
+            "b) Nie dziękuj, sąsiedzi są po to.",
+            "c) Kupiłem już bilety powrotne.",
+            "d) Zmieścisz nasze bagaże?",
+            "e) Obiecałeś jej wycieczkę w ten weekend.",
+            "f) To wszystko się układa.",
+            "g) Odjazd jest o szóstej dwadzieścia, a nie o ósmej.",
+            "h) Mogę was zawieźć, nie ma sprawy.",
+            "i) Mam do ciebie jedną prośbę.",
+            "j) Czyli nie macie jak dojechać na dworzec?"
+          ],
+          "explanation": "Olena przypomina obietnicę; Bartek mówi o Kazimierzu.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-7",
+          "answer": "f) To wszystko się układa.",
+          "options": [
+            "a) Wolę latać niż jeździć pociągiem.",
+            "b) Nie dziękuj, sąsiedzi są po to.",
+            "c) Kupiłem już bilety powrotne.",
+            "d) Zmieścisz nasze bagaże?",
+            "e) Obiecałeś jej wycieczkę w ten weekend.",
+            "f) To wszystko się układa.",
+            "g) Odjazd jest o szóstej dwadzieścia, a nie o ósmej.",
+            "h) Mogę was zawieźć, nie ma sprawy.",
+            "i) Mam do ciebie jedną prośbę.",
+            "j) Czyli nie macie jak dojechać na dworzec?"
+          ],
+          "explanation": "Olena podsumowuje i dziękuje.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "el1-8",
+          "answer": "b) Nie dziękuj, sąsiedzi są po to.",
+          "options": [
+            "a) Wolę latać niż jeździć pociągiem.",
+            "b) Nie dziękuj, sąsiedzi są po to.",
+            "c) Kupiłem już bilety powrotne.",
+            "d) Zmieścisz nasze bagaże?",
+            "e) Obiecałeś jej wycieczkę w ten weekend.",
+            "f) To wszystko się układa.",
+            "g) Odjazd jest o szóstej dwadzieścia, a nie o ósmej.",
+            "h) Mogę was zawieźć, nie ma sprawy.",
+            "i) Mam do ciebie jedną prośbę.",
+            "j) Czyli nie macie jak dojechać na dworzec?"
+          ],
+          "explanation": "Bartek reaguje na podziękowanie.",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "el2",
+      "part": 2,
+      "exercise_type": "cloze-text",
+      "title": "el2 · Elementy języka: list do właścicielki kwatery",
+      "instruction": "Uzupełnij list. Wybierz a, b albo c.",
+      "text": "Szanowna Pani,\n\npiszę w sprawie rezerwacji kwatery {el2-1} okres od 4 do 18 lipca. Dwa tygodnie temu rozmawialiśmy telefonicznie i Pani {el2-2} nam pokój dla trzech osób z widokiem na ogród.\n\nChciałabym {el2-3} dwie rzeczy. Po pierwsze, w tym roku nie przyjeżdżamy samochodem, tylko {el2-4}. Czy z dworca w Gdyni można {el2-5} do Państwa autobusem, czy lepiej zamówić taksówkę? Po drugie, mój syn {el2-6} ze sobą rower, więc pytam, czy jest miejsce, {el2-7} można go bezpiecznie zostawić.\n\nZaliczkę {el2-8} w tym tygodniu, jak tylko dostanę od Pani numer konta. Bardzo nam {el2-9} na tym terminie, bo w sierpniu plaże są już zatłoczone.\n\nZ góry dziękuję za odpowiedź i {el2-10}\n\nOlena Kowal",
+      "items": [
+        {
+          "id": "el2-1",
+          "answer": "b) na",
+          "options": [
+            "a) do",
+            "b) na",
+            "c) za"
+          ],
+          "explanation": "Rezerwacja na okres — na + biernik.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-2",
+          "answer": "c) zarezerwowała",
+          "options": [
+            "a) zarezerwuje",
+            "b) rezerwuje",
+            "c) zarezerwowała"
+          ],
+          "explanation": "Czynność zakończona w przeszłości — zarezerwowała.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-3",
+          "answer": "b) upewnić się co do",
+          "options": [
+            "a) pewnić się na",
+            "b) upewnić się co do",
+            "c) upewnić o"
+          ],
+          "explanation": "„Upewnić się co do czegoś” — potwierdzić informacje.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-4",
+          "answer": "a) pociągiem",
+          "options": [
+            "a) pociągiem",
+            "b) w pociągu",
+            "c) na pociąg"
+          ],
+          "explanation": "Środek transportu w narzędniku, bez przyimka.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-5",
+          "answer": "b) dojechać",
+          "options": [
+            "a) przejeżdżać",
+            "b) dojechać",
+            "c) dojeżdżać"
+          ],
+          "explanation": "Dotrzeć na miejsce pojazdem — dojechać.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-6",
+          "answer": "a) weźmie",
+          "options": [
+            "a) weźmie",
+            "b) brał",
+            "c) bierze"
+          ],
+          "explanation": "Jeden raz, w przyszłości — weźmie.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-7",
+          "answer": "b) w którym",
+          "options": [
+            "a) jakie",
+            "b) w którym",
+            "c) gdzie by"
+          ],
+          "explanation": "Miejsce + miejscownik: miejsce, w którym…",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-8",
+          "answer": "c) przelejemy",
+          "options": [
+            "a) będziemy przelewać",
+            "b) przelewamy",
+            "c) przelejemy"
+          ],
+          "explanation": "Konkretna czynność w tym tygodniu — forma dokonana.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-9",
+          "answer": "b) zależy",
+          "options": [
+            "a) chodzi",
+            "b) zależy",
+            "c) warto"
+          ],
+          "explanation": "Konstrukcja „zależy nam na czymś”.",
+          "grammar_point": "rejestr-formalny"
+        },
+        {
+          "id": "el2-10",
+          "answer": "b) pozostaję z szacunkiem.",
+          "options": [
+            "a) trzymaj się.",
+            "b) pozostaję z szacunkiem.",
+            "c) na razie."
+          ],
+          "explanation": "Zakończenie listu półoficjalnego.",
+          "grammar_point": "rejestr-formalny"
+        }
+      ]
+    }
+  ]
+}
