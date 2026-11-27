@@ -157,14 +157,15 @@ lessons:
     kind: lesson
     status: done
     title: "Alfabet i czytanie"
-    story: "Olena jedzie pociągiem do Krakowa i czyta nazwy stacji."
+    story: "Pierwszy dzień na kursie: alfabet, liczby, pierwsze rozmowy i podróż Intercity po mapie Polski."
     new: [wymowa-glosek, akcent, pisownia]
     rec: []
-    core: [dzień dobry, dziękuję, przepraszam, pociąg, bilet, dworzec, peron, stacja, Kraków, Wrocław]
-    chunks: ["Dzień dobry.", "Dziękuję.", "Przepraszam."]
-    comm: ["Przeliteruj swoje imię konduktorowi.", "Zapytaj, czy to pociąg do Krakowa."]
+    core: [dzień dobry, dziękuję, proszę, przepraszam, do widzenia, cześć, chleb, woda, kawa, ser, sklep, dom]
+    chunks: ["Dzień dobry.", "Dziękuję.", "Przepraszam.", "Jak się nazywasz?", "Nazywam się…", "Poproszę…"]
+    comm: ["Przedstaw się na kursie i przeliteruj nazwisko.", "Kup chleb w sklepie."]
     write: "Imię, nazwisko i miasto z ogonkami."
     traps: ["ch i h czyta się tak samo", "rz ≠ «рз»", "ę na końcu słowa czyta się prawie jak e"]
+    note: "27.11.2026 перероблено під тренажери A0 (прототип Юри): alfabet, sluchaj-wybierz, liczby 1–10, dialogi, czytanie, mapa-pl, czytaj-glosno + vocab + hw. Числа 1–10 — тепер з уроку 01 (закриті зразки); урок 04 дає 11–100 і номери."
   - n: 2
     cid: "0.2"
     slug: glosk

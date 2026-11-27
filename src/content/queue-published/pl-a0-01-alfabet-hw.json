@@ -1,22 +1,22 @@
 {
   "lesson_id": "pl-a0-01-alfabet",
   "exercise_type": "fill-in-blank",
-  "title": "Praca domowa: pisownia i akcent",
-  "instruction": "Trzy bloki do zrobienia w domu. Shadowing i pisanie znajdziesz na stronie lekcji.",
-  "instruction_uk": "Три блоки для дому. Shadowing і письмове завдання є на сторінці уроку.",
-  "estimated_minutes": 25,
+  "title": "Praca domowa: litery, liczby, zwroty",
+  "instruction": "Trzy krótkie bloki. Tylko klikasz — nic nie piszesz z klawiatury.",
+  "instruction_uk": "Три короткі блоки на 5–7 хвилин. Лише натискаєш — нічого не друкуєш.",
+  "estimated_minutes": 7,
   "blocks": [
     {
       "block_id": "hw1",
       "exercise_type": "fill-in-blank",
-      "title": "1. Jak to napisać?",
+      "title": "1. Jaka litera?",
       "diacritics": "strict",
-      "instruction": "Nowe słowa. Wybierz literę i przeczytaj słowo na głos.",
-      "instruction_uk": "Нові слова. Вибери літеру й прочитай слово вголос.",
+      "instruction": "Wybierz literę i przeczytaj słowo na głos.",
+      "instruction_uk": "Обери літеру, якої бракує, і прочитай слово вголос. Слова — з тренажера «Alfabet».",
       "items": [
         {
           "id": "hw1-1",
-          "text": "g___ra",
+          "text": "s___l",
           "options": [
             "u",
             "ó"
@@ -26,16 +26,36 @@
         },
         {
           "id": "hw1-2",
-          "text": "mo___e",
+          "text": "l___pa",
           "options": [
-            "rz",
-            "ż"
+            "u",
+            "ó"
+          ],
+          "answer": "u",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "hw1-3",
+          "text": "o___eł",
+          "options": [
+            "ż",
+            "rz"
           ],
           "answer": "rz",
           "grammar_point": "pisownia"
         },
         {
-          "id": "hw1-3",
+          "id": "hw1-4",
+          "text": "___aba",
+          "options": [
+            "ż",
+            "rz"
+          ],
+          "answer": "ż",
+          "grammar_point": "pisownia"
+        },
+        {
+          "id": "hw1-5",
           "text": "___leb",
           "options": [
             "h",
@@ -45,8 +65,8 @@
           "grammar_point": "pisownia"
         },
         {
-          "id": "hw1-4",
-          "text": "___otel",
+          "id": "hw1-6",
+          "text": "___erbata",
           "options": [
             "h",
             "ch"
@@ -55,8 +75,8 @@
           "grammar_point": "pisownia"
         },
         {
-          "id": "hw1-5",
-          "text": "ksi___żka",
+          "id": "hw1-7",
+          "text": "w___ż",
           "options": [
             "o",
             "ą"
@@ -65,8 +85,8 @@
           "grammar_point": "pisownia"
         },
         {
-          "id": "hw1-6",
-          "text": "pi___kny",
+          "id": "hw1-8",
+          "text": "g___ś",
           "options": [
             "e",
             "ę"
@@ -79,104 +99,139 @@
     {
       "block_id": "hw2",
       "exercise_type": "fill-in-blank",
-      "title": "2. Gdzie jest akcent?",
-      "instruction": "Przeczytaj słowo na głos i wybierz sylabę z akcentem.",
-      "instruction_uk": "Прочитай слово вголос і вибери наголошений склад.",
+      "title": "2. Ile to jest?",
+      "instruction": "Przeczytaj słowo i wybierz liczbę.",
+      "instruction_uk": "Прочитай число словом і обери цифру.",
       "items": [
         {
           "id": "hw2-1",
-          "text": "ko-le-ga → ___",
+          "text": "pięć = ___",
           "options": [
-            "le",
-            "ga",
-            "ko"
+            "5",
+            "6",
+            "9"
           ],
-          "answer": "le",
-          "grammar_point": "akcent"
+          "answer": "5",
+          "grammar_point": "liczebniki-glowne"
         },
         {
           "id": "hw2-2",
-          "text": "a-pte-ka → ___",
+          "text": "trzy = ___",
           "options": [
-            "pte",
-            "a",
-            "ka"
+            "3",
+            "4",
+            "2"
           ],
-          "answer": "pte",
-          "grammar_point": "akcent"
+          "answer": "3",
+          "grammar_point": "liczebniki-glowne"
         },
         {
           "id": "hw2-3",
-          "text": "te-le-fon → ___",
+          "text": "dziewięć = ___",
           "options": [
-            "fon",
-            "te",
-            "le"
+            "7",
+            "10",
+            "9"
           ],
-          "answer": "le",
-          "grammar_point": "akcent"
+          "answer": "9",
+          "grammar_point": "liczebniki-glowne"
         },
         {
           "id": "hw2-4",
-          "text": "o-kno → ___",
+          "text": "sześć = ___",
           "options": [
-            "kno",
-            "o"
+            "8",
+            "6",
+            "7"
           ],
-          "answer": "o",
-          "grammar_point": "akcent"
+          "answer": "6",
+          "grammar_point": "liczebniki-glowne"
         },
         {
           "id": "hw2-5",
-          "text": "fi-zy-ka → ___",
+          "text": "dziesięć = ___",
           "options": [
-            "zy",
-            "ka",
-            "fi"
+            "1",
+            "9",
+            "10"
           ],
-          "answer": "fi",
-          "grammar_point": "akcent",
-          "explanation": "Słowa na -yka: trzecia sylaba od końca."
+          "answer": "10",
+          "grammar_point": "liczebniki-glowne"
+        },
+        {
+          "id": "hw2-6",
+          "text": "cztery = ___",
+          "options": [
+            "4",
+            "8",
+            "3"
+          ],
+          "answer": "4",
+          "grammar_point": "liczebniki-glowne"
         }
       ]
     },
     {
       "block_id": "hw3",
       "exercise_type": "fill-in-blank",
-      "title": "3. Napisz z ogonkami",
-      "diacritics": "strict",
-      "instruction": "Słowo jest bez ogonków i kresek. Napisz je dobrze.",
-      "instruction_uk": "Слово написане без «хвостиків» і рисок. Напиши його правильно.",
+      "title": "3. Co mówisz?",
+      "instruction": "Wybierz zwrot do sytuacji.",
+      "instruction_uk": "Обери фразу, яку кажуть у цій ситуації.",
       "items": [
         {
           "id": "hw3-1",
-          "text": "zolty → ___",
-          "answer": "żółty",
-          "grammar_point": "pisownia"
+          "text": "Pani w sklepie daje Ci chleb. Mówisz: „___”.",
+          "options": [
+            "Przepraszam",
+            "Dziękuję",
+            "Cześć"
+          ],
+          "answer": "Dziękuję",
+          "grammar_point": "slownictwo"
         },
         {
           "id": "hw3-2",
-          "text": "maz → ___",
-          "answer": "mąż",
-          "grammar_point": "pisownia"
+          "text": "Rano wchodzisz do sklepu. Mówisz: „___”.",
+          "options": [
+            "Dzień dobry",
+            "Do widzenia",
+            "Proszę"
+          ],
+          "answer": "Dzień dobry",
+          "grammar_point": "slownictwo"
         },
         {
           "id": "hw3-3",
-          "text": "wegiel → ___",
-          "answer": "węgiel",
-          "grammar_point": "pisownia"
+          "text": "Wychodzisz ze sklepu. Mówisz: „___”.",
+          "options": [
+            "Dzień dobry",
+            "Do widzenia",
+            "Dziękuję"
+          ],
+          "answer": "Do widzenia",
+          "grammar_point": "slownictwo"
         },
         {
           "id": "hw3-4",
-          "text": "zuraw → ___",
-          "answer": "żuraw",
-          "grammar_point": "pisownia"
+          "text": "Nie wiesz, jak to się pisze. Pytasz: „___, jak to się pisze?”",
+          "options": [
+            "Cześć",
+            "Proszę",
+            "Przepraszam"
+          ],
+          "answer": "Przepraszam",
+          "grammar_point": "slownictwo"
         },
         {
           "id": "hw3-5",
-          "text": "jezyk → ___",
-          "answer": "język",
-          "grammar_point": "pisownia"
+          "text": "Kolega pyta: „Jak się nazywasz?” Mówisz: „___ Marek”.",
+          "options": [
+            "Nazywam się",
+            "Jestem w domu",
+            "Dziękuję"
+          ],
+          "answer": "Nazywam się",
+          "grammar_point": "slownictwo"
         }
       ]
     }

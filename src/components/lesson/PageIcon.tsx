@@ -94,6 +94,13 @@ const BY_KIND: Record<string, PageIconName> = {
   quizlet: 'cards',
   notes: 'note',
   pictures: 'picture',
+  alfabet: 'cards',
+  'sluchaj-wybierz': 'pencil',
+  'czytaj-glosno': 'goal',
+  liczby: 'cards',
+  dialogi: 'chat',
+  czytanie: 'text',
+  'mapa-pl': 'picture',
   video: 'play',
 };
 

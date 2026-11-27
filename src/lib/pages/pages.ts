@@ -38,6 +38,13 @@ export type EmbedKind =
   | 'pictures'
   | 'mock-exam'
   | 'placement'
+  | 'alfabet'
+  | 'sluchaj-wybierz'
+  | 'czytaj-glosno'
+  | 'liczby'
+  | 'dialogi'
+  | 'czytanie'
+  | 'mapa-pl'
   | 'quizlet'
   | 'other';
 
@@ -147,7 +154,7 @@ function embedKind(src: string): EmbedKind {
   const m = src.match(/\/embed\/[^/]+\/([a-z-]+)/) || src.match(/\/slides\//);
   if (src.includes('/slides/')) return 'slides';
   const k = m?.[1];
-  const known: EmbedKind[] = ['slides', 'exam', 'comm-tasks', 'grammar', 'grammar-board', 'hw', 'vocab', 'notes', 'pictures', 'mock-exam', 'placement'];
+  const known: EmbedKind[] = ['slides', 'exam', 'comm-tasks', 'grammar', 'grammar-board', 'hw', 'vocab', 'notes', 'pictures', 'mock-exam', 'placement', 'alfabet', 'sluchaj-wybierz', 'czytaj-glosno', 'liczby', 'dialogi', 'czytanie', 'mapa-pl'];
   return known.includes(k as EmbedKind) ? (k as EmbedKind) : 'other';
 }
 

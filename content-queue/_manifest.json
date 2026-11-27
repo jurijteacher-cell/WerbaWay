@@ -647,34 +647,30 @@
       "course_order": 1,
       "curriculum_id": "0.1",
       "published_at": "2026-10-18T23:12:38Z",
-      "quizlet_set_id": "1223959934",
       "embeds": {
-        "comm_tasks": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/comm-tasks",
-        "grammar": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/grammar?blocks=g1-g4",
+        "alfabet": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/alfabet",
+        "sluchaj_wybierz": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/sluchaj-wybierz",
+        "liczby": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/liczby",
+        "dialogi": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/dialogi",
+        "vocab": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/vocab",
+        "czytanie": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/czytanie",
+        "mapa_pl": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/mapa-pl",
+        "czytaj_glosno": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/czytaj-glosno",
         "hw": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/hw",
-        "slides": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/slides?part=1",
-        "quizlet": "https://quizlet.com/1223959934/flashcards/embed"
+        "comm_tasks": "https://werba-way.vercel.app/embed/pl-a0-01-alfabet/comm-tasks"
       },
       "images": {
-        "header": "https://images.unsplash.com/photo-1661138485147-7aebd5847bc4?fm=jpg&q=80&w=1080&fit=max",
-        "img1": "https://images.unsplash.com/photo-1679888669393-87b874472df2?fm=jpg&q=80&w=1080&fit=max"
+        "header": "https://images.unsplash.com/photo-1661138485147-7aebd5847bc4?fm=jpg&q=80&w=1600&fit=max"
       },
-      "audio": [
-        "pl-a0-01-czytanie",
-        "pl-a0-01-c1-dialog"
-      ],
-      "tts_voices": {
-        "czytanie": "pl-PL-ZofiaNeural",
-        "c1_dialog": [
-          "pl-PL-MarekNeural",
-          "pl-PL-ZofiaNeural"
-        ]
-      },
+      "audio": "public/content/pl-a0-01-alfabet/audio (ElevenLabs, 182 файли: літери, числа, діалоги, мікротексти, карта)",
       "status": "published",
       "notion_parent_id": "3e596e03-c7c8-815b-be7b-d031abb6a836",
       "check_lesson_package": "traps 3 (known A0 WARN); vocab/czytanie WARN ranges",
       "notion_page_id": "3fd96e03-c7c8-81c0-bb80-e16198157eaa",
-      "notion_page_url": "https://app.notion.com/p/3fd96e03c7c881c0bb80e16198157eaa"
+      "notion_page_url": "https://app.notion.com/p/3fd96e03c7c881c0bb80e16198157eaa",
+      "animations": "public/content/pl-a0-01-alfabet/anim (Noto Animated Emoji, CC BY 4.0)",
+      "updated_at": "2026-11-27T12:00:00Z",
+      "notes": "27.11.2026: урок перероблено під прототип-тренажер Юри — 7 вікон A0 (alfabet, sluchaj-wybierz, liczby, dialogi, czytanie, mapa-pl, czytaj-glosno) + vocab + hw; grammar і slides видалено."
     },
     {
       "lesson_id": "pl-a0-02-glosk",

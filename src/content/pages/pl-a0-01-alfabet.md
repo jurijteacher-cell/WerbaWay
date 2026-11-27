@@ -1,198 +1,194 @@
 ---
 title: 01 · Alfabet i czytanie
+icon: 🔤
 level: A0
 number: 1
 module: pl-a1
 moduleTitle: Польська з нуля A0–A1
 cover: https://images.unsplash.com/photo-1661138485147-7aebd5847bc4?fm=jpg&q=80&w=1600&fit=max
-notion: https://app.notion.com/p/01-Alfabet-i-czytanie-3fd96e03c7c881c0bb80e16198157eaa
 ---
 
-## Cele lekcji
+## 🔤 1. Alfabet
 
-🎯 Po tej lekcji potrafisz:
+<b>Dziś przeczytasz na głos każde polskie słowo.</b> Сьогодні ти прочитаєш уголос будь-яке польське слово.
 
-1. przeczytać na głos nazwy stacji i miast: <b>Szczecin, Wrocław, Szczebrzeszyn</b>;
-1. przeczytać <b>sz, cz, szcz, ch, rz, dz</b> i <b>ą, ę, ó</b> w słowach z lekcji;
-1. postawić <b>akcent</b> w polskim słowie;
-1. przeliterować swoje imię i nazwisko i powiedzieć <b>Dzień dobry, Dziękuję, Przepraszam</b>.
+<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">💡</span><div class="lp-callout-body">
 
----
-
-<b>Rozgrzewka.</b> Przeczytaj na głos trzy nazwy: <b>Szczecin · Wrocław · Szczebrzeszyn</b>. Zapisz jedno słowo: najtrudniejszą nazwę. Wrócimy do niej na końcu lekcji.
-
-![](https://images.unsplash.com/photo-1679888669393-87b874472df2?fm=jpg&q=80&w=1080&fit=max)
-
-## 1. Dialog w pociągu (A1)
-
-<aside class="lp-callout" data-tone="gray"><span class="lp-callout-icon" aria-hidden="true">💡</span><div class="lp-callout-body">
-
-<b>Pasażer:</b> Dzień dobry! Czy to miejsce jest wolne?
-
-<b>Pasażerka:</b> Dzień dobry! Tak, proszę usiąść.
-
-<b>Pasażer:</b> Dziękuję. Dokąd pani jedzie?
-
-Pasażerka: Jadę do Krakowa. A pan?
-
-<b>Pasażer:</b> Ja jadę do Warszawy. Czy pociąg jedzie bezpośrednio do Warszawy?
-
-<b>Pasażerka:</b> Nie wiem. Myślę, że trzeba się przesiąść w Krakowie.
-
-<b>Pasażer:</b> Rozumiem. O której godzinie przyjeżdżamy do Krakowa?
-
-<b>Pasażerka:</b> O jedenastej trzydzieści.
-
-<b>Pasażer:</b> Dziękuję. Czy mogę otworzyć okno? Jest trochę gorąco.
-
-<b>Pasażerka:</b> Oczywiście, proszę bardzo.
-
-<b>Pasażer:</b> Czy podróżuje pani często pociągiem?
-
-<b>Pasażerka:</b> Tak, bardzo często. Pociąg jest wygodny i tani.
-
-<b>Pasażer:</b> Rozumiem. Miłej podróży!
-
-<b>Pasażerka:</b> Dziękuję! Wzajemnie!
+<b>Ciekawostka.</b> У польському алфавіті 32 літери, і в ньому немає <b>q, v, x</b> — вони трапляються лише в чужих словах. Зате є дев'ять літер із «хвостиками» й рисками: <b>ą ć ę ł ń ó ś ź ż</b>.
 
 </div></aside>
 
-## 2. Pytania do dialogu
+Почни з зелених літер — вони читаються так само, як українські. Потім сині, рожеві й фіолетові. Після кожної групи — мініперевірка «Sprawdź się».
 
-> Dokąd jedzie pasażerka?
-
-> Dokąd jedzie pasażer?
-
-> Czy miejsce obok pasażerki jest wolne?
-
-> Czy pociąg jedzie bezpośrednio do Warszawy?
-
-> Gdzie pasażer musi się przesiąść?
-
-> O której godzinie przyjeżdżają do Krakowa?
-
-> Dlaczego pasażer chce otworzyć okno?
-
-> Czy pasażerka często podróżuje pociągiem?
-
-> Dlaczego pasażerka lubi podróżować pociągiem?
-
-> Co pasażer mówi na koniec rozmowy?
+<embed source="https://werba-way.vercel.app/embed/pl-a0-01-alfabet/alfabet">
+Trenażer: alfabet polski
+</embed>
 
 ---
 
-### 3. Słownictwo
+## 👂 2. Usłysz i wybierz
 
-<embed source="/embed/pl-a0-01-alfabet/vocab">
+<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">💡</span><div class="lp-callout-body">
+
+<b>Ciekawostka.</b> <b>ó</b> і <b>u</b> сьогодні звучать однаково — як українське «у». Колись <b>ó</b> був довгим «о», тому поляки досі пишуть <i>stół</i>, хоча кажуть «стув». Так само однаково звучать <b>rz</b> і <b>ż</b>, <b>ch</b> і <b>h</b>.
+
+</div></aside>
+
+Звучить слово — вибери літеру, яка в ньому є. 12 питань, рахуються бали й серія правильних відповідей.
+
+<embed source="https://werba-way.vercel.app/embed/pl-a0-01-alfabet/sluchaj-wybierz">
+Gra: usłysz i wybierz literę
+</embed>
+
+---
+
+## 🔢 3. Liczby 1–10
+
+<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">💡</span><div class="lp-callout-body">
+
+<b>Ciekawostka.</b> У <b>trzy</b> після <b>t</b> буквосполучення <b>rz</b> оглушується й звучить як «ш»: «тши». А <b>ę</b> у <b>pięć</b> і <b>dziesięć</b> перед <b>ć</b> читається як «ен»: «пєньч».
+
+</div></aside>
+
+Натисни кожне число, потім увімкни всі по черзі й лічи вголос разом зі зразком.
+
+<embed source="https://werba-way.vercel.app/embed/pl-a0-01-alfabet/liczby">
+Trenażer: liczby 1–10
+</embed>
+
+---
+
+## 💬 4. Pierwsze rozmowy
+
+Дві короткі розмови: на курсі польської й у магазині. Натисни репліку, повтори її вголос, а потім розіграй розмову з викладачем — спершу своїм іменем, потім своїм прізвищем по літерах.
+
+<embed source="https://werba-way.vercel.app/embed/pl-a0-01-alfabet/dialogi">
+Rozmowy: na kursie i w sklepie
+</embed>
+
+---
+
+## 🃏 5. Słownictwo
+
+14 слів і фраз з уроку. Вони потрапляють у твою колоду слів на сайті.
+
+<embed source="https://werba-way.vercel.app/embed/pl-a0-01-alfabet/vocab">
 Słownictwo — fiszki
 </embed>
 
 ---
 
-## 4. Praktyka mówienia
+## 📖 6. Czytanie
 
-Mów na głos. Wystarczą słowa z lekcji i Twoje imię.
+Чотири справжні дрібні тексти: цінник, SMS, список покупок і привітання. Спершу прочитай уголос, тоді натисни картку й перевір себе.
 
-- Przeczytaj: <b>dworzec, peron, stacja, bilet, pociąg</b>. Gdzie jest akcent?
-- Powiedz swoje imię i przeliteruj je: litera po literze.
-- Powiedz „Dzień dobry” nauczycielowi i koledze.
-- Nauczyciel pokazuje sytuację: walizka, herbata, bilet. Ty mówisz jedno słowo: <b>Przepraszam</b> czy <b>Dziękuję</b>?
-- Przeczytaj nazwy stacji: <b>Kraków Główny, Wrocław Główny, Katowice, Opole Główne</b>.
-- Twoje miasto po polsku: przeczytaj nazwę i przeliteruj ją.
-
----
-
-## 5. Zadania komunikacyjne
-
-<embed source="https://werba-way.vercel.app/embed/pl-a0-01-alfabet/comm-tasks">
-Zadania komunikacyjne
+<embed source="https://werba-way.vercel.app/embed/pl-a0-01-alfabet/czytanie">
+Czytanie: krótkie teksty
 </embed>
 
 ---
 
-## 6. Gramatyka: litery, dźwięki i akcent
+## 🗺️ 7. Mapa Polski
 
-Prezentacja krok po kroku: alfabet, dwie litery i jeden dźwięk, ogonki, dwa zapisy jednego dźwięku, akcent, pułapki z ukraińskiego.
+<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">💡</span><div class="lp-callout-body">
 
-<embed source="https://werba-way.vercel.app/embed/pl-a0-01-alfabet/slides?part=1#s1">
-Slajdy gramatyczne
-</embed>
+<b>Ciekawostka.</b> Ще в першій половині XX століття <b>ł</b> у багатьох регіонах вимовляли як українське «л». Тепер це звук, як англійське <b>w</b>: <i>Łódź</i> звучить «Вучь», а <i>Wrocław</i> — «Вроцваф».
 
-<b>Ćwiczenia</b> — litery, nazwy miast, pisownia, akcent i pułapki.
+</div></aside>
 
-<embed source="https://werba-way.vercel.app/embed/pl-a0-01-alfabet/grammar?blocks=g1-g4">
-Ćwiczenia gramatyczne — g1-g4
+Сідай у потяг Intercity: натисни місто — потяг поїде через станції дорогою. На візитівці міста кожне слово можна натиснути. Шукай на карті гори, озера, річки й сусідів Польщі.
+
+<embed source="https://werba-way.vercel.app/embed/pl-a0-01-alfabet/mapa-pl">
+Mapa Polski — Intercity
 </embed>
 
 ---
 
-## 7. Podsumowanie
+## 🏁 8. Wyzwanie
 
-Sprawdź, czy umiesz to, co obiecaliśmy na początku:
+<aside class="lp-callout" data-tone="green"><span class="lp-callout-icon" aria-hidden="true">🏁</span><div class="lp-callout-body">
 
-- Wróć do rozgrzewki: przeczytaj jeszcze raz <b>Szczecin · Wrocław · Szczebrzeszyn</b>. Która nazwa była najtrudniejsza? A teraz?
-- Pokaż w słowach z lekcji: <b>sz, cz, szcz, ch, rz, dz, ą, ę, ó</b>. Przeczytaj każde słowo na głos.
-- Postaw akcent: <b>przepraszam, dworzec, Szczecin, muzyka</b>.
-- Przeliteruj swoje imię i nazwisko. Powiedz: <b>Dzień dobry. Przepraszam. Dziękuję.</b>
-- Bonus dla odważnych: <b>W Szczebrzeszynie chrząszcz brzmi w trzcinie.</b>
+18 слів — від <b>kawa</b> до трьох назв, якими поляки лякають іноземців: <b>Szczecin · Wrocław · Szczebrzeszyn</b>. Читай кожне вголос і тисни «Umiem». Годинник рахує час, рекорд зберігається.
+
+</div></aside>
+
+<aside class="lp-callout" data-tone="yellow"><span class="lp-callout-icon" aria-hidden="true">💡</span><div class="lp-callout-body">
+
+<b>Ciekawostka.</b> <b>Szczebrzeszyn</b> — справжнє містечко на Люблінщині. Його знає кожен поляк завдяки віршу Яна Бжехви про хруща (<i>chrząszcz</i>), а в самому містечку хрущеві поставили пам'ятник.
+
+</div></aside>
+
+<embed source="https://werba-way.vercel.app/embed/pl-a0-01-alfabet/czytaj-glosno">
+Wyzwanie: czytaj na głos
+</embed>
 
 ---
 
-## 8. Praca domowa
+## 🏠 9. Praca domowa
 
-Trzy części: ćwiczenia, shadowing i pisanie.
+5–7 хвилин на день. Три блоки — лише натискаєш, нічого не друкуєш.
 
 <embed source="https://werba-way.vercel.app/embed/pl-a0-01-alfabet/hw">
 Praca domowa
 </embed>
 
+### Shadowing
+
+Щодня відкривай тренажер «Alfabet»: натисни 🔊 на кожній літері групи й одразу повтори слово вголос. Потім пройди «Wyzwanie» ще раз і спробуй побити свій рекорд.
+
 ### Pisanie
 
-Napisz po polsku:
+Напиши від руки й сфотографуй:
 
-- swoje <b>imię</b>;
-- swoje <b>nazwisko</b>;
-- swoje <b>miasto</b>.
+- своє <b>imię</b>;
+- своє <b>nazwisko</b>;
+- своє <b>miasto</b> польськими літерами.
 
-Pisz polskimi literami: <b>sz, cz, szcz, ż, ch, rz, ó, ą, ę</b> tam, gdzie słyszysz te dźwięki. Potem przeliteruj każde słowo na głos.
+Потім прочитай кожне слово по літерах уголос: <i>en, o, wu, a, ka</i>.
 
 ---
 
 ## Słowniczek
 
-Wszystkie 20 słów lekcji w jednym miejscu. Wracaj tu przed pracą domową i przed następnymi zajęciami.
+Усі слова й фрази уроку в одному місці. Повертайся сюди перед домашкою й наступним заняттям.
 
-### W pociągu
-
-| Słowo | Tłumaczenie | Przykład |
-| --- | --- | --- |
-| <b>dzień dobry</b> | добрий день | Dzień dobry! Kawa i herbata. |
-| <b>dziękuję</b> | дякую | Dziękuję, Taras! |
-| <b>przepraszam</b> | перепрошую, вибачте | Przepraszam, walizka! |
-| <b>konduktor</b> | кондуктор, контролер у поїзді | Konduktor: bilet i miejsce. |
-| <b>pasażer</b> | пасажир | Pasażer i walizka. |
-| <b>bilet</b> | квиток | Bilet: Gdańsk — Sopot. |
-| <b>miejsce</b> | місце | Wagon i miejsce. |
-| <b>wagon</b> | вагон | Wagon, okno, miejsce. |
-| <b>walizka</b> | валіза | Walizka i plecak. |
-
-### Na dworcu
+### Pierwsze rozmowy
 
 | Słowo | Tłumaczenie | Przykład |
 | --- | --- | --- |
-| <b>pociąg</b> | поїзд | Pociąg Gdańsk — Sopot. |
-| <b>dworzec</b> | вокзал | Dworzec Poznań Główny. |
-| <b>peron</b> | перон, платформа | Peron, tablica, pociąg. |
-| <b>stacja</b> | станція | Stacja: Gdynia. |
-| <b>kasa</b> | каса | Kasa i bilet. |
-| <b>wyjście</b> | вихід | Wyjście: ulica. |
-| <b>poczekalnia</b> | зала очікування | Poczekalnia i kawa. |
+| <b>dzień dobry</b> | добрий день | Dzień dobry! Poproszę chleb. |
+| <b>dziękuję</b> | дякую | Dziękuję, do widzenia! |
+| <b>proszę</b> | прошу; будь ласка | Proszę. Pięć złotych. |
+| <b>przepraszam</b> | перепрошую, вибачте | Przepraszam, jak to się pisze? |
+| <b>do widzenia</b> | до побачення | Dziękuję, do widzenia! |
+| <b>cześć</b> | привіт | Cześć! Jestem w domu. |
+| <b>Jak się nazywasz?</b> | як тебе звати? | Jak się nazywasz? — Marek. |
+| <b>Nazywam się…</b> | мене звати… | Nazywam się Marek Nowak. |
 
-### Miasta
+### W sklepie
 
 | Słowo | Tłumaczenie | Przykład |
 | --- | --- | --- |
-| <b>Kraków</b> | Краків | Kraków Główny. |
-| <b>Wrocław</b> | Вроцлав | Wrocław Główny. |
-| <b>Szczecin</b> | Щецін | Szczecin Główny. |
-| <b>Szczebrzeszyn</b> | Щебжешин | Szczebrzeszyn i chrząszcz. |
+| <b>chleb</b> | хліб | Poproszę chleb. |
+| <b>woda</b> | вода | Sklep: chleb, ser, woda. |
+| <b>kawa</b> | кава | Kawa — 7 zł. |
+| <b>ser</b> | сир | Chleb i ser. |
+| <b>sklep</b> | магазин | Sklep: chleb, ser, woda. |
+| <b>dom</b> | дім | Cześć! Jestem w domu. |
+
+### Liczby
+
+| Cyfra | Słowo | Jak brzmi |
+| --- | --- | --- |
+| 1 | <b>jeden</b> | єден |
+| 2 | <b>dwa</b> | два |
+| 3 | <b>trzy</b> | тши |
+| 4 | <b>cztery</b> | чтери |
+| 5 | <b>pięć</b> | пєньч |
+| 6 | <b>sześć</b> | шешчь |
+| 7 | <b>siedem</b> | щедем |
+| 8 | <b>osiem</b> | ощем |
+| 9 | <b>dziewięć</b> | дзєвєньч |
+| 10 | <b>dziesięć</b> | дзєщеньч |
+
+Animacje: Noto Animated Emoji (Google), CC BY 4.0. Озвучка: ElevenLabs.

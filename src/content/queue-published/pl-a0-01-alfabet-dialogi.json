@@ -1,0 +1,118 @@
+{
+  "lesson_id": "pl-a0-01-alfabet",
+  "exercise_type": "dialogi",
+  "asset_base": "/content/pl-a0-01-alfabet",
+  "title": "Pierwsze rozmowy",
+  "instruction": "Naciśnij zdanie. Przeczytaj je na głos.",
+  "instruction_uk": "Натисни репліку, щоб почути її, і повтори вголос. Переклад — кнопкою.",
+  "speakers": {
+    "k": "Ona",
+    "m": "On"
+  },
+  "dialogs": [
+    {
+      "id": "d1",
+      "t": "Na kursie polskiego",
+      "lines": [
+        {
+          "id": "d1k1",
+          "s": "k",
+          "pl": "Dzień dobry!",
+          "tr": "Доброго дня!",
+          "a": "d1k1"
+        },
+        {
+          "id": "d1m1",
+          "s": "m",
+          "pl": "Dzień dobry.",
+          "tr": "Доброго дня.",
+          "a": "d1m1"
+        },
+        {
+          "id": "d1k2",
+          "s": "k",
+          "pl": "Jak się nazywasz?",
+          "tr": "Як тебе звати?",
+          "a": "d1k2"
+        },
+        {
+          "id": "d1m2",
+          "s": "m",
+          "pl": "Nazywam się Marek Nowak.",
+          "tr": "Мене звати Марек Новак.",
+          "a": "d1m2"
+        },
+        {
+          "id": "d1k3",
+          "s": "k",
+          "pl": "Przepraszam, jak to się pisze?",
+          "tr": "Перепрошую, як це пишеться?",
+          "a": "d1k3"
+        },
+        {
+          "id": "d1m3",
+          "s": "m",
+          "pl": "En, o, wu, a, ka.",
+          "tr": "Ен, о, ву, а, ка — N-O-W-A-K.",
+          "a": "d1m3"
+        },
+        {
+          "id": "d1k4",
+          "s": "k",
+          "pl": "Dziękuję!",
+          "tr": "Дякую!",
+          "a": "d1k4"
+        },
+        {
+          "id": "d1m4",
+          "s": "m",
+          "pl": "Proszę.",
+          "tr": "Прошу.",
+          "a": "d1m4"
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "t": "W sklepie",
+      "lines": [
+        {
+          "id": "d2k1",
+          "s": "k",
+          "pl": "Dzień dobry. Poproszę chleb.",
+          "tr": "Доброго дня. Будь ласка, хліб.",
+          "a": "d2k1"
+        },
+        {
+          "id": "d2m1",
+          "s": "m",
+          "pl": "Proszę. Pięć złotych.",
+          "tr": "Прошу. П'ять злотих.",
+          "a": "d2m1"
+        },
+        {
+          "id": "d2k2",
+          "s": "k",
+          "pl": "Proszę bardzo.",
+          "tr": "Будь ласка.",
+          "a": "d2k2"
+        },
+        {
+          "id": "d2m2",
+          "s": "m",
+          "pl": "Dziękuję, do widzenia!",
+          "tr": "Дякую, до побачення!",
+          "a": "d2m2"
+        },
+        {
+          "id": "d2k3",
+          "s": "k",
+          "pl": "Do widzenia!",
+          "tr": "До побачення!",
+          "a": "d2k3"
+        }
+      ]
+    }
+  ],
+  "credits": "Озвучка — ElevenLabs: чоловічий рід читає Maciej, жіночий — Melania, середній — дитячий голос. Анімації — Noto Animated Emoji (Google), CC BY 4.0."
+}
