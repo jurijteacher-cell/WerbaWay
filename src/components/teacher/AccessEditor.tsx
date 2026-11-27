@@ -69,7 +69,7 @@ export function AccessEditor({
                 aria-label={t('Курс «{title}»', { title: m.title })}
               >
                 <span
-                  className={`absolute top-0.5 h-5 w-5 rounded-full bg-white shadow transition-transform ${modOn ? 'translate-x-[1.35rem]' : 'translate-x-0.5'}`}
+                  className={`absolute left-0.5 top-0.5 h-5 w-5 rounded-full bg-white shadow transition-transform ${modOn ? 'translate-x-5' : 'translate-x-0'}`}
                 />
               </button>
               <div className="min-w-0 flex-1">
