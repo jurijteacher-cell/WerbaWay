@@ -6,11 +6,12 @@ import { applyCourseOverrides } from '@/lib/pages/course';
 import { getLocale, t } from '@/i18n/server';
 import { canSee, getAccess } from '@/lib/pages/access';
 import { lectures } from '@/content/lectures';
-import { CourseGroup } from '@/components/lesson/CourseGroup';
+import { LearnCategories, type LearnCategory } from '@/components/lesson/LearnCategories';
+import { CATEGORIES, categoryOf, type CategoryId } from '@/lib/pages/categories';
 
 export const dynamic = 'force-dynamic';
 
-export default async function LearnIndex() {
+export default async function LearnIndex({ searchParams }: { searchParams?: { cat?: string } }) {
   const supabase = createClient();
   const {
     data: { user },
@@ -27,6 +28,18 @@ export default async function LearnIndex() {
   const groups = groupByCourse(pages);
   // усі категорії — для кнопки «Перенести» (лише викладач; кошик не рахуємо)
   const courseOptions = access.isTeacher ? groups.map((g) => ({ code: g.code, title: g.title })) : [];
+  // категорії: A0 → B2, далі спеціальні задачі; порожні не показуємо
+  const categories: LearnCategory[] = CATEGORIES.map((c) => ({
+    ...c,
+    groups: groups
+      .filter((g) => categoryOf(g.code, g.pages.map((p) => p.level)) === c.id)
+      .map((g) => ({
+        code: g.code,
+        title: g.title,
+        pages: g.pages.map((p) => ({ slug: p.slug, title: p.title, icon: p.icon, cover: p.cover, level: p.level, number: p.number })),
+      })),
+  })).filter((c) => c.groups.length > 0);
+  const initial = categories.some((c) => c.id === searchParams?.cat) ? (searchParams?.cat as CategoryId) : null;
   return (
     <main className="mx-auto max-w-5xl px-4 py-14">
       <div className="mb-2 flex flex-wrap items-baseline justify-between gap-3">
@@ -38,13 +51,19 @@ export default async function LearnIndex() {
           </Link>
         )}
       </div>
-      <p className="mb-10 text-paper-muted">{t("Лекції з текстами, вправами й домашкою.")}</p>
+      <p className="mb-8 text-paper-muted">{t("Лекції з текстами, вправами й домашкою.")}</p>
       {pages.length === 0 && extraLectures.length === 0 && (
         <p className="text-paper-muted">{t("Тут з’являться лекції, щойно викладач відкриє тобі курс.")}</p>
       )}
+      <LearnCategories
+        categories={categories}
+        initial={initial}
+        canShare={access.isTeacher}
+        courseOptions={courseOptions}
+      />
       {extraLectures.length > 0 && (
-        <section className="mb-12">
-          <h2 className="mb-4 font-display text-2xl text-paper">{t("Інтерактивні лекції")}</h2>
+        <section className="mt-14 border-t border-ink-line pt-8">
+          <h2 className="mb-4 font-display text-xl text-paper">{t("Інтерактивні лекції")}</h2>
           <div className="flex flex-wrap gap-3">
             {extraLectures.map((l) => (
               <Link key={l.slug} href={`/lectures/${l.slug}`} className="ww-btn ww-btn-secondary ww-btn-lg">
@@ -54,17 +73,6 @@ export default async function LearnIndex() {
           </div>
         </section>
       )}
-      {groups.map((g) => (
-        <CourseGroup
-          key={g.title}
-          canShare={access.isTeacher}
-          courseOptions={courseOptions}
-          currentCode={g.code}
-          id={`course-${g.code || 'other'}`}
-          title={g.title}
-          pages={g.pages.map((p) => ({ slug: p.slug, title: p.title, icon: p.icon, cover: p.cover, level: p.level, number: p.number }))}
-        />
-      ))}
     </main>
   );
 }

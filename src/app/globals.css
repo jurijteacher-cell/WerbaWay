@@ -801,3 +801,80 @@
   .ww-board-dot { width: 8px; height: 8px; border-radius: 99px; background: var(--ww-edge); flex: none; }
   .ww-board-dot.is-on { background: var(--ww-ok); }
 }
+
+/* ── Категорії курсу (/learn): плитки-етапи фенікса A0 → B2 і спеціальні задачі ── */
+@layer components {
+  .ww-cats { display: flex; flex-wrap: wrap; gap: 14px 28px; margin-bottom: 40px; }
+  .ww-cats-group { min-width: 0; max-width: 100%; }
+  .ww-cats-group > .ww-label { margin-bottom: 8px; }
+  .ww-cats-row {
+    display: flex; gap: 10px; overflow-x: auto; padding: 4px 2px 8px;
+    scroll-snap-type: x proximity; scrollbar-width: none;
+  }
+  .ww-cats-row::-webkit-scrollbar { display: none; }
+
+  .ww-cat {
+    position: relative; flex: none; width: 112px; scroll-snap-align: start;
+    display: flex; flex-direction: column; align-items: center; gap: 1px;
+    padding: 8px 8px 10px; border-radius: var(--ww-r-lg);
+    background: var(--ww-paper); border: 1px solid var(--ww-line); color: var(--ww-ink);
+    box-shadow: 0 2px 0 #e6ebf8;
+    transition: transform .18s var(--ww-ease), border-color .18s, box-shadow .18s, background .18s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .ww-cat:hover { transform: translateY(-2px); border-color: #a98bea; box-shadow: 0 4px 0 #d7dff1; }
+  .ww-cat[aria-selected='true'] {
+    background: linear-gradient(180deg, #fff 0%, var(--ww-violet-fill) 100%);
+    border-color: var(--ww-violet); box-shadow: 0 3px 0 var(--ww-violet-shadow);
+  }
+  .ww-cat-img { width: 72px; height: 72px; object-fit: contain; transform-origin: 50% 90%; }
+  .ww-cat-label { font-weight: 700; font-size: 17px; line-height: 1.2; letter-spacing: -0.01em; }
+  .ww-cat-hint { font-size: 11px; line-height: 1.25; color: var(--ww-muted); text-align: center; min-height: 2.5em; }
+  .ww-cat[aria-selected='true'] .ww-cat-label { color: var(--ww-violet-dark); }
+  .ww-cat-count {
+    position: absolute; top: 6px; right: 6px; min-width: 22px; padding: 1px 6px; border-radius: 999px;
+    font-size: 11px; font-weight: 600; color: var(--ww-muted); background: var(--ww-soft);
+  }
+  .ww-cat[aria-selected='true'] .ww-cat-count { background: var(--ww-violet-solid); color: #fff; }
+
+  /* рух: вибрана плитка живе постійно, решта — при наведенні */
+  .ww-cat:hover .ww-cat-img, .ww-cat[aria-selected='true'] .ww-cat-img { animation: ww-cat-float 3s ease-in-out infinite; }
+  .ww-cat-a0:hover .ww-cat-img, .ww-cat-a0[aria-selected='true'] .ww-cat-img { animation: ww-cat-rock 2.8s ease-in-out infinite; }
+  .ww-cat-a1:hover .ww-cat-img, .ww-cat-a1[aria-selected='true'] .ww-cat-img { animation: ww-cat-hatch 2.2s ease-in-out infinite; }
+  .ww-cat-a2:hover .ww-cat-img, .ww-cat-a2[aria-selected='true'] .ww-cat-img { animation: ww-cat-hop 1.4s var(--ww-ease) infinite; }
+  .ww-cat-b2:hover .ww-cat-img, .ww-cat-b2[aria-selected='true'] .ww-cat-img { animation: ww-cat-float 3s ease-in-out infinite, ww-cat-blaze 1.6s ease-in-out infinite; }
+
+  @keyframes ww-cat-rock { 0%, 100% { transform: rotate(-5deg); } 50% { transform: rotate(5deg); } }
+  @keyframes ww-cat-hatch {
+    0%, 55%, 100% { transform: rotate(0); }
+    60% { transform: rotate(-7deg); } 65% { transform: rotate(7deg); } 70% { transform: rotate(-6deg); }
+    75% { transform: rotate(5deg); } 80% { transform: rotate(-2deg); } 85% { transform: rotate(0); }
+  }
+  @keyframes ww-cat-hop {
+    0%, 100% { transform: translateY(0) scale(1, 1); }
+    15% { transform: translateY(0) scale(1.06, .94); }
+    45% { transform: translateY(-7px) scale(.97, 1.04); }
+    75% { transform: translateY(0) scale(1.04, .96); }
+  }
+  @keyframes ww-cat-float { 0%, 100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-5px) rotate(-2deg); } }
+  @keyframes ww-cat-blaze {
+    0%, 100% { filter: drop-shadow(0 0 2px rgba(246, 160, 58, .55)); }
+    50% { filter: drop-shadow(0 0 9px rgba(246, 120, 40, .85)) saturate(1.15); }
+  }
+
+  .ww-cat-panel { animation: ww-cat-in .35s var(--ww-ease) both; }
+  @keyframes ww-cat-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  /* телефон: усі плитки групи в один ряд без прокрутки, підпис ховаємо */
+  @media (max-width: 640px) {
+    .ww-cats { gap: 12px; margin-bottom: 28px; }
+    .ww-cats-group { width: 100%; }
+    .ww-cats-row { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 6px; overflow: visible; }
+    .ww-cat { width: auto; padding: 6px 4px 8px; border-radius: 14px; }
+    .ww-cat-img { width: 48px; height: 48px; }
+    .ww-cat-label { font-size: 14px; }
+    .ww-cat-hint { display: none; }
+    .ww-cat-count { top: 3px; right: 3px; min-width: 18px; padding: 0 4px; font-size: 10px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .ww-cat .ww-cat-img, .ww-cat-panel { animation: none !important; } }
+}
