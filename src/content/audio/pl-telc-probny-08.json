@@ -1,0 +1,490 @@
+{
+  "lesson_id": "pl-telc-probny-08",
+  "model": "eleven_v4",
+  "voices": {
+    "NAR": "uPeXyAUvljDRLYs8zgwt",
+    "M2": "bwhymd1UcFEihyvPSEoR",
+    "W4": "2AI3SLYKkKZsvZEiHd3D",
+    "M3": "ihTsqWCgsTDbANOCuZD2",
+    "W2": "gHGjEjdr2LBds0XHTsvg",
+    "W5": "AwWFxYalAvioLDuxV9WV",
+    "M1": "p0KQaxqGrT7xcRWSJiHp",
+    "M4": "e3WIS9BUv6I0HZ9v36L2",
+    "W3": "hq1SDzCP9HutY7Ea9PAW",
+    "W1": "mQq2zdGT1zEfDbh8W95l"
+  },
+  "files": {
+    "pl-telc-probny-08/telc-sluchanie-1.mp3": {
+      "lines": [
+        {
+          "who": "NAR",
+          "text": "Rozumienie ze słuchu, część pierwsza. Za chwilę usłyszysz cztery wiadomości głosowe. Które zdanie jest najbardziej trafne: a, b czy c? Każdą wiadomość usłyszysz jeden raz. Najpierw przykład."
+        },
+        {
+          "who": "M2",
+          "text": "Dzień dobry, tu warsztat samochodowy „Tłok”. Pana samochód jest już po przeglądzie. Wymieniliśmy tylko żarówkę w lewym światle. Może pan odebrać auto dzisiaj do osiemnastej. Do widzenia.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Numer jeden.",
+          "gap": 2.5
+        },
+        {
+          "who": "W4",
+          "text": "Dzień dobry, tu salon optyczny „Soczewka”. Pani okulary miały być gotowe w piątek, ale z fabryki przyszły niewłaściwe szkła. Zamówiliśmy nowe i okulary będą do odbioru w przyszły wtorek. Oczywiście nie musi pani nic dopłacać. Bardzo przepraszamy.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Numer dwa.",
+          "gap": 2.5
+        },
+        {
+          "who": "M3",
+          "text": "Cześć Igor, tu Wiktor. Słuchaj, w niedzielę gramy mecz z drużyną z Opola, a Darek jest chory. Brakuje nam bramkarza. Wiem, że dawno nie grałeś, ale może nam pomożesz? Zaczynamy o jedenastej na boisku przy szkole. Koszulkę ci przyniosę. Odezwij się do soboty.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Numer trzy.",
+          "gap": 2.5
+        },
+        {
+          "who": "W2",
+          "text": "Dzień dobry, mówi recepcja gabinetu stomatologicznego „Uśmiech”. Doktor Wolska jest w przyszłym tygodniu na konferencji, dlatego pana wizyta w środę się nie odbędzie. Możemy zaproponować wizytę u doktora Lisa w tym samym terminie albo u doktor Wolskiej dwudziestego. Proszę oddzwonić i powiedzieć, co pan wybiera.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Numer cztery.",
+          "gap": 2.5
+        },
+        {
+          "who": "W5",
+          "text": "Dzień dobry, tu Dom Kultury „Iskra”. Dzwonię w sprawie warsztatów ceramiki, na które się pani zapisała. Z powodu remontu sali od przyszłego miesiąca zajęcia będą w szkole podstawowej przy ulicy Leśnej. Dzień i godzina się nie zmieniają: środa, osiemnasta. Prosimy tylko przynieść własny fartuch.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Koniec pierwszej części Rozumienia ze słuchu.",
+          "gap": 2.5
+        }
+      ]
+    },
+    "pl-telc-probny-08/telc-sluchanie-2.mp3": {
+      "lines": [
+        {
+          "who": "NAR",
+          "text": "Rozumienie ze słuchu, część druga. Za chwilę usłyszysz pięć dialogów. Na temat każdego dialogu napisano po dwa zdania. Najpierw zdecyduj, czy zdanie jest prawdziwe, czy fałszywe. Następnie zdecyduj, które zdanie jest najbardziej trafne: a, b czy c. Każdy dialog usłyszysz jeden raz."
+        },
+        {
+          "who": "NAR",
+          "text": "Numer pięć i sześć.",
+          "gap": 2.0
+        },
+        {
+          "who": "M1",
+          "text": "Dzień dobry, odbieram rower. Nazwisko Kaczmarek.",
+          "gap": 0.7
+        },
+        {
+          "who": "M4",
+          "text": "Już patrzę. Tak, wymieniliśmy hamulce i łańcuch.",
+          "gap": 0.45
+        },
+        {
+          "who": "M1",
+          "text": "A przednie koło? Prosiłem, żeby je sprawdzić.",
+          "gap": 0.45
+        },
+        {
+          "who": "M4",
+          "text": "Koło jest w porządku, trzeba było je tylko napompować.",
+          "gap": 0.45
+        },
+        {
+          "who": "M1",
+          "text": "To dobrze. Ile płacę?",
+          "gap": 0.45
+        },
+        {
+          "who": "M4",
+          "text": "Hamulce sto dwadzieścia, łańcuch osiemdziesiąt. Razem dwieście złotych.",
+          "gap": 0.45
+        },
+        {
+          "who": "M1",
+          "text": "Mówił pan wcześniej, że wyjdzie około stu pięćdziesięciu.",
+          "gap": 0.45
+        },
+        {
+          "who": "M4",
+          "text": "Tak, ale łańcuch był zupełnie zużyty i musiałem go wymienić. Za pompowanie nic nie liczę.",
+          "gap": 0.45
+        },
+        {
+          "who": "M1",
+          "text": "Rozumiem. Zapłacę kartą.",
+          "gap": 0.45
+        },
+        {
+          "who": "NAR",
+          "text": "Numer siedem i osiem.",
+          "gap": 2.0
+        },
+        {
+          "who": "W3",
+          "text": "Marek, zbieramy pieniądze na prezent dla pani Haliny. Od stycznia idzie na emeryturę.",
+          "gap": 0.7
+        },
+        {
+          "who": "M2",
+          "text": "Wiem. Ile dajemy?",
+          "gap": 0.45
+        },
+        {
+          "who": "W3",
+          "text": "Kto ile może. Myślimy o czytniku e-booków, bo dużo czyta.",
+          "gap": 0.45
+        },
+        {
+          "who": "M2",
+          "text": "Dobry pomysł. A może jeszcze kwiaty?",
+          "gap": 0.45
+        },
+        {
+          "who": "W3",
+          "text": "Kwiaty kupi szef, już mówił.",
+          "gap": 0.45
+        },
+        {
+          "who": "M2",
+          "text": "To ja mogę zamówić tort. Moja siostra ma cukiernię.",
+          "gap": 0.45
+        },
+        {
+          "who": "W3",
+          "text": "Super! Pożegnanie jest w piątek o czternastej, w sali konferencyjnej.",
+          "gap": 0.45
+        },
+        {
+          "who": "M2",
+          "text": "Dobrze, zamówię na piątek rano.",
+          "gap": 0.45
+        },
+        {
+          "who": "NAR",
+          "text": "Numer dziewięć i dziesięć.",
+          "gap": 2.0
+        },
+        {
+          "who": "W5",
+          "text": "Kino „Muza”, w czym mogę pomóc?",
+          "gap": 0.7
+        },
+        {
+          "who": "W1",
+          "text": "Dzień dobry, kupiłam przez internet dwa bilety na sobotę na dwudziestą, ale nie mogę przyjść. Czy można je zwrócić?",
+          "gap": 0.45
+        },
+        {
+          "who": "W5",
+          "text": "Zwrot jest możliwy najpóźniej dzień przed seansem. Dziś jest czwartek, więc jeszcze się da.",
+          "gap": 0.45
+        },
+        {
+          "who": "W1",
+          "text": "A czy mogę zamiast tego zmienić je na niedzielę?",
+          "gap": 0.45
+        },
+        {
+          "who": "W5",
+          "text": "W niedzielę gramy ten film o osiemnastej. Wymiana jest bezpłatna.",
+          "gap": 0.45
+        },
+        {
+          "who": "W1",
+          "text": "Osiemnasta mi pasuje. Poproszę te same miejsca, jeśli są wolne.",
+          "gap": 0.45
+        },
+        {
+          "who": "W5",
+          "text": "Te są już zajęte, ale mam dwa miejsca obok siebie w piątym rzędzie.",
+          "gap": 0.45
+        },
+        {
+          "who": "W1",
+          "text": "Dobrze, biorę.",
+          "gap": 0.45
+        },
+        {
+          "who": "NAR",
+          "text": "Numer jedenaście i dwanaście.",
+          "gap": 2.0
+        },
+        {
+          "who": "M3",
+          "text": "Kasia, jedziemy w końcu w góry pociągiem czy samochodem?",
+          "gap": 0.7
+        },
+        {
+          "who": "W4",
+          "text": "Pociągiem. Bilety już kupiłam, były w promocji.",
+          "gap": 0.45
+        },
+        {
+          "who": "M3",
+          "text": "Super. O której odjazd?",
+          "gap": 0.45
+        },
+        {
+          "who": "W4",
+          "text": "O szóstej dziesięć z dworca głównego.",
+          "gap": 0.45
+        },
+        {
+          "who": "M3",
+          "text": "Tak wcześnie? To muszę zamówić taksówkę, autobusy jeszcze nie jeżdżą.",
+          "gap": 0.45
+        },
+        {
+          "who": "W4",
+          "text": "Nie trzeba, podwiozę cię. Mama i tak zawozi mnie na dworzec.",
+          "gap": 0.45
+        },
+        {
+          "who": "M3",
+          "text": "Byłoby świetnie. A co z noclegiem?",
+          "gap": 0.45
+        },
+        {
+          "who": "W4",
+          "text": "Pierwszą noc śpimy w schronisku, a drugą u mojej cioci w Zakopanem.",
+          "gap": 0.45
+        },
+        {
+          "who": "NAR",
+          "text": "Numer trzynaście i czternaście.",
+          "gap": 2.0
+        },
+        {
+          "who": "W2",
+          "text": "Dzień dobry, w czym mogę pomóc?",
+          "gap": 0.7
+        },
+        {
+          "who": "M1",
+          "text": "Chciałbym wyrobić Kartę Mieszkańca. Dzięki niej bilety komunikacji miejskiej są tańsze, prawda?",
+          "gap": 0.45
+        },
+        {
+          "who": "W2",
+          "text": "Tak, o połowę. Ale musi pan płacić podatki w naszym mieście.",
+          "gap": 0.45
+        },
+        {
+          "who": "M1",
+          "text": "Płacę, od zeszłego roku.",
+          "gap": 0.45
+        },
+        {
+          "who": "W2",
+          "text": "To proszę wypełnić wniosek i przynieść pierwszą stronę zeznania podatkowego.",
+          "gap": 0.45
+        },
+        {
+          "who": "M1",
+          "text": "Nie mam jej przy sobie. Mogę ją przysłać mailem?",
+          "gap": 0.45
+        },
+        {
+          "who": "W2",
+          "text": "Niestety nie, trzeba przynieść oryginał. Wniosek może pan zostawić już dziś.",
+          "gap": 0.45
+        },
+        {
+          "who": "M1",
+          "text": "A ile czeka się na kartę?",
+          "gap": 0.45
+        },
+        {
+          "who": "W2",
+          "text": "Około dwóch tygodni. Dostanie pan SMS.",
+          "gap": 0.45
+        },
+        {
+          "who": "NAR",
+          "text": "Koniec drugiej części Rozumienia ze słuchu.",
+          "gap": 2.0
+        }
+      ]
+    },
+    "pl-telc-probny-08/telc-sluchanie-3.mp3": {
+      "lines": [
+        {
+          "who": "NAR",
+          "text": "Rozumienie ze słuchu, część trzecia. Za chwilę usłyszysz wywiad. Najpierw przeczytaj treść punktów od piętnastego do dwudziestego. Masz na to minutę."
+        },
+        {
+          "who": "NAR",
+          "text": "Teraz posłuchaj wywiadu. Usłyszysz go jeden raz.",
+          "gap": 60
+        },
+        {
+          "who": "W5",
+          "text": "Dzień dobry. W audycji „Zawody z duszą” gościmy pana Krzysztofa Lisa, zegarmistrza z Torunia. Dzień dobry.",
+          "gap": 0.7
+        },
+        {
+          "who": "M2",
+          "text": "Dzień dobry, miło mi.",
+          "gap": 0.45
+        },
+        {
+          "who": "W5",
+          "text": "Zawsze chciał pan naprawiać zegarki?",
+          "gap": 0.45
+        },
+        {
+          "who": "M2",
+          "text": "Wcale nie. Warsztat założył mój ojciec, a ja po studiach pracowałem jako informatyk. Kiedy tata zachorował, przyszedłem mu pomóc na kilka tygodni. I tak zostałem już dwanaście lat.",
+          "gap": 0.45
+        },
+        {
+          "who": "W5",
+          "text": "Kto dziś przynosi zegarki do naprawy? Przecież wszyscy mają telefony.",
+          "gap": 0.45
+        },
+        {
+          "who": "M2",
+          "text": "Klientów jest więcej, niż się wydaje. Ludzie przynoszą zegarki po dziadkach, bo mają dla nich wartość rodzinną, a nie dlatego, że są drogie. Często słyszę: „Ten zegarek pamięta wojnę”.",
+          "gap": 0.45
+        },
+        {
+          "who": "W5",
+          "text": "Co jest najtrudniejsze w pańskiej pracy?",
+          "gap": 0.45
+        },
+        {
+          "who": "M2",
+          "text": "Części. Do starych zegarków nikt ich już nie produkuje. Czasem szukam małego kółka przez pół roku na giełdach i w internecie. Czasem robię je sam, ale to trwa kilka dni.",
+          "gap": 0.45
+        },
+        {
+          "who": "W5",
+          "text": "Czy pomaga panu wykształcenie informatyczne?",
+          "gap": 0.45
+        },
+        {
+          "who": "M2",
+          "text": "Trochę tak. Zrobiłem stronę internetową i prowadzę kanał, na którym pokazuję naprawy. Dzięki temu przesyłki przychodzą do mnie z całej Polski, a nawet z Niemiec.",
+          "gap": 0.45
+        },
+        {
+          "who": "W5",
+          "text": "Ile kosztuje taka naprawa?",
+          "gap": 0.45
+        },
+        {
+          "who": "M2",
+          "text": "Zwykle od stu do trzystu złotych. Zawsze najpierw oglądam zegarek i podaję cenę. Jeśli ktoś się nie zgadza, nic nie płaci za wycenę.",
+          "gap": 0.45
+        },
+        {
+          "who": "W5",
+          "text": "Czy ktoś przejmie kiedyś pański warsztat?",
+          "gap": 0.45
+        },
+        {
+          "who": "M2",
+          "text": "Mam nadzieję. Od września uczy się u mnie praktykant z technikum. Ma dopiero osiemnaście lat, ale bardzo spokojne ręce. Mój syn woli piłkę nożną.",
+          "gap": 0.45
+        },
+        {
+          "who": "W5",
+          "text": "Dziękuję za rozmowę.",
+          "gap": 0.45
+        },
+        {
+          "who": "M2",
+          "text": "Dziękuję bardzo.",
+          "gap": 0.45
+        },
+        {
+          "who": "NAR",
+          "text": "Koniec trzeciej części Rozumienia ze słuchu.",
+          "gap": 1.5
+        }
+      ]
+    },
+    "pl-telc-probny-08/telc-sluchanie-4.mp3": {
+      "lines": [
+        {
+          "who": "NAR",
+          "text": "Rozumienie ze słuchu, część czwarta. Usłyszysz audycję, w której ludzie wyrażają opinie na dany temat. Które zdanie, od a do f, najlepiej pasuje do opinii dwadzieścia jeden, dwadzieścia dwa i dwadzieścia trzy? Masz pół minuty na przeczytanie zdań."
+        },
+        {
+          "who": "NAR",
+          "text": "Teraz posłuchaj audycji.",
+          "gap": 30
+        },
+        {
+          "who": "W3",
+          "text": "Dzień dobry. W programie „Głos słuchaczy” pytamy dziś: czy warto kupować rzeczy używane?",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Przykład.",
+          "gap": 1.5
+        },
+        {
+          "who": "M1",
+          "text": "Wózek, ubranka, łóżeczko — wszystko dla córki kupiliśmy używane. Po trzech miesiącach i tak było za małe. Nowe kosztowałoby majątek, a mała nosiłaby je kilka tygodni.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Numer dwadzieścia jeden.",
+          "gap": 1.5
+        },
+        {
+          "who": "W2",
+          "text": "Kupuję prawie wszystko z drugiej ręki, ale nigdy butów do biegania ani kasku rowerowego. Buty są już ułożone pod czyjąś stopę, a kask po wypadku może mieć pęknięcie, którego nie widać.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Numer dwadzieścia dwa.",
+          "gap": 1.5
+        },
+        {
+          "who": "M3",
+          "text": "Raz zapłaciłem z góry za telefon z ogłoszenia w internecie. Paczka nie przyszła, a sprzedawca zniknął. Teraz kupuję tylko osobiście, kiedy mogę rzecz zobaczyć i sprawdzić.",
+          "gap": 0.7
+        },
+        {
+          "who": "NAR",
+          "text": "Numer dwadzieścia trzy.",
+          "gap": 1.5
+        },
+        {
+          "who": "W5",
+          "text": "Żeby wyprodukować jedną koszulkę, zużywa się tysiące litrów wody. Jeśli noszę rzeczy po kimś, nikt nie musi szyć nowych. Dla mnie to nie jest kwestia pieniędzy, tylko naszej planety.",
+          "gap": 0.7
+        },
+        {
+          "who": "W3",
+          "text": "Dziękujemy za wszystkie telefony. Do usłyszenia za tydzień!",
+          "gap": 1.5
+        },
+        {
+          "who": "NAR",
+          "text": "Koniec Rozumienia ze słuchu. Dziękujemy za uwagę.",
+          "gap": 1.5
+        }
+      ]
+    }
+  }
+}
