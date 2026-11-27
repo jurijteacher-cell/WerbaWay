@@ -29,7 +29,7 @@ Telc — інший формат і інша команда: `TELC_PLAYBOOK.md`.
    python3 scripts/build_b1_exam.py {id}        # перевірка формату + аудіосценарій, обидві сторінки, мови, манифест
    python3 scripts/check_answers.py {id} && node scripts/i18n-coverage.mjs {id} && python3 scripts/check_embeds.py --page src/content/pages/{id}.md
    ```
-   `check_lecture.py` для іспитів не застосовується (вимагає vocab / hw). Ключ у TEACHER будується з JSON — після будь-якої правки JSON запусти build ще раз.
+   `check_lecture.py` для іспитів не застосовується (вимагає vocab / hw). Ключ у TEACHER будується з JSON — після будь-якої правки JSON (і після `shuffle_options`, він переставляє й літери банків) запусти build ще раз і звір літери в `traps` з ключем.
 6. Коміт і push: `git fetch --depth=50 origin main && git rebase origin/main && git -c push.negotiate=true push origin HEAD:main`. Vercel деплоїть сам (1–3 хв).
 7. Озвучення (платиться один раз): `mcp__Vercel__web_fetch_vercel_url` **по одному**:
    `https://werba-way.vercel.app/audio/{id}/b1-sluchanie-1.mp3` … `-5.mp3` (очікуй 302).
