@@ -19,15 +19,15 @@ cover: https://images.unsplash.com/photo-1484788984921-03950022c9ef?ixlib=rb-4.1
 
 | Część | Odpowiedzi |
 | --- | --- |
-| Słuchanie 1 | 1 b · 2 a · 3 c · 4 a |
-| Słuchanie 2 | 5 fałsz · 6 a · 7 prawda · 8 c · 9 prawda · 10 b · 11 fałsz · 12 c · 13 prawda · 14 a |
-| Słuchanie 3 | 15 b · 16 a · 17 c · 18 b · 19 a · 20 c |
+| Słuchanie 1 | 1 b · 2 b · 3 c · 4 a |
+| Słuchanie 2 | 5 fałsz · 6 c · 7 prawda · 8 c · 9 prawda · 10 b · 11 fałsz · 12 a · 13 prawda · 14 b |
+| Słuchanie 3 | 15 c · 16 c · 17 b · 18 c · 19 b · 20 a |
 | Słuchanie 4 | 21 c · 22 e · 23 b |
 | Czytanie 1 | 24 b · 25 f · 26 c · 27 a |
 | Czytanie 2 | 28 c · 29 g · 30 x · 31 e · 32 h |
-| Czytanie 3 | 33 b · 34 c · 35 b · 36 a · 37 c · 38 a |
+| Czytanie 3 | 33 a · 34 b · 35 a · 36 a · 37 c · 38 b |
 | Czytanie 4 | 39 fałsz · 40 fałsz · 41 prawda |
-| Elementy 1 | 42 a · 43 h · 44 b · 45 j · 46 c · 47 g · 48 i · 49 d |
+| Elementy 1 | 42 i · 43 j · 44 h · 45 c · 46 g · 47 d · 48 b · 49 a |
 | Elementy 2 | 50 sprawie · 51 mieszkam · 52 podoba · 53 są · 54 jak · 55 zwierzę · 56 pracy · 57 odpowiada · 58 pierwszego · 59 i |
 
 Пороги тесту: <b>B2 43–59</b>, <b>B1 27–42</b>, нижче 27 — B1 не складено.

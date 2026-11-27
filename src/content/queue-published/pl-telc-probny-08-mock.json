@@ -51,9 +51,9 @@
        "id": "sl1-1",
        "stem": "Salon optyczny informuje, że",
        "options": [
-        "okulary można odebrać w piątek.",
+        "za nowe szkła trzeba dopłacić.",
         "okulary będą gotowe później, niż planowano.",
-        "za nowe szkła trzeba dopłacić."
+        "okulary można odebrać w piątek."
        ],
        "answer": "b",
        "explain": "Okulary miały być gotowe w piątek, ale będą „do odbioru w przyszły wtorek”. Dopłacać nie trzeba."
@@ -62,11 +62,11 @@
        "id": "sl1-2",
        "stem": "Wiktor prosi Igora, żeby",
        "options": [
-        "zagrał w niedzielnym meczu.",
         "odwiedził chorego Darka.",
+        "zagrał w niedzielnym meczu.",
         "kupił koszulki dla drużyny."
        ],
-       "answer": "a",
+       "answer": "b",
        "explain": "Drużynie „brakuje bramkarza” i Wiktor pyta: „może nam pomożesz?”. Koszulkę przyniesie sam Wiktor."
       },
       {
@@ -85,8 +85,8 @@
        "stem": "Od przyszłego miesiąca warsztaty ceramiki",
        "options": [
         "odbywają się w innym miejscu.",
-        "zaczynają się o innej godzinie.",
-        "kosztują więcej z powodu remontu."
+        "kosztują więcej z powodu remontu.",
+        "zaczynają się o innej godzinie."
        ],
        "answer": "a",
        "explain": "Zajęcia będą „w szkole podstawowej przy ulicy Leśnej”. Dzień i godzina się nie zmieniają, o cenie nie ma mowy."
@@ -122,11 +122,11 @@
        "id": "sl2-2",
        "stem": "Naprawa kosztuje więcej, niż mówił wcześniej mechanik, ponieważ",
        "options": [
-        "trzeba było wymienić zużyty łańcuch.",
+        "klient płaci kartą.",
         "mechanik liczy także za pompowanie koła.",
-        "klient płaci kartą."
+        "trzeba było wymienić zużyty łańcuch."
        ],
-       "answer": "a",
+       "answer": "c",
        "explain": "Łańcuch „był zupełnie zużyty” i mechanik musiał go wymienić. Za pompowanie „nic nie liczę”."
       },
       {
@@ -179,11 +179,11 @@
        "id": "sl2-8",
        "stem": "Drugą noc Paweł i Kasia spędzą",
        "options": [
-        "w schronisku.",
+        "u rodziny Kasi.",
         "w hotelu w Zakopanem.",
-        "u rodziny Kasi."
+        "w schronisku."
        ],
-       "answer": "c",
+       "answer": "a",
        "explain": "Drugą noc śpią „u mojej cioci w Zakopanem” — to rodzina Kasi. Schronisko jest pierwszej nocy."
       },
       {
@@ -198,11 +198,11 @@
        "id": "sl2-10",
        "stem": "Mężczyzna musi",
        "options": [
+        "czekać na kartę dwa miesiące.",
         "przynieść oryginał dokumentu podatkowego.",
-        "wysłać zeznanie podatkowe mailem.",
-        "czekać na kartę dwa miesiące."
+        "wysłać zeznanie podatkowe mailem."
        ],
-       "answer": "a",
+       "answer": "b",
        "explain": "Mailem nie można: „trzeba przynieść oryginał”. Na kartę czeka się dwa tygodnie, nie miesiące."
       }
      ]
@@ -226,21 +226,21 @@
        "stem": "Pan Krzysztof został zegarmistrzem, ponieważ",
        "options": [
         "od dziecka marzył o tym zawodzie.",
-        "zaczął pomagać choremu ojcu.",
-        "stracił pracę informatyka."
+        "stracił pracę informatyka.",
+        "zaczął pomagać choremu ojcu."
        ],
-       "answer": "b",
+       "answer": "c",
        "explain": "„Kiedy tata zachorował, przyszedłem mu pomóc” — i został. Mówi, że „wcale nie” marzył o tym zawodzie."
       },
       {
        "id": "sl3-2",
        "stem": "Klienci przynoszą najczęściej zegarki, które",
        "options": [
-        "mają dla nich wartość pamiątkową.",
         "są bardzo drogie.",
-        "kupili w internecie."
+        "kupili w internecie.",
+        "mają dla nich wartość pamiątkową."
        ],
-       "answer": "a",
+       "answer": "c",
        "explain": "Zegarki „po dziadkach” mają „wartość rodzinną, a nie dlatego, że są drogie”."
       },
       {
@@ -248,10 +248,10 @@
        "stem": "Najtrudniejsze w tej pracy jest",
        "options": [
         "siedzenie wiele godzin przy stole.",
-        "rozmawianie z klientami.",
-        "zdobywanie części."
+        "zdobywanie części.",
+        "rozmawianie z klientami."
        ],
-       "answer": "c",
+       "answer": "b",
        "explain": "Na pytanie o trudności odpowiada: „Części” — nikt ich już nie produkuje."
       },
       {
@@ -259,32 +259,32 @@
        "stem": "Dzięki internetowi pan Krzysztof",
        "options": [
         "kupuje tańsze narzędzia.",
-        "ma klientów także spoza Torunia.",
-        "naprawia zegarki przez wideorozmowę."
+        "naprawia zegarki przez wideorozmowę.",
+        "ma klientów także spoza Torunia."
        ],
-       "answer": "b",
+       "answer": "c",
        "explain": "Przez stronę i kanał „przesyłki przychodzą z całej Polski, a nawet z Niemiec”."
       },
       {
        "id": "sl3-5",
        "stem": "Za wycenę naprawy klient",
        "options": [
+        "płaci tylko za stare zegarki.",
         "nie płaci, jeśli nie zgadza się na cenę.",
-        "płaci zawsze sto złotych.",
-        "płaci tylko za stare zegarki."
+        "płaci zawsze sto złotych."
        ],
-       "answer": "a",
+       "answer": "b",
        "explain": "„Jeśli ktoś się nie zgadza, nic nie płaci za wycenę”. Sto złotych to najniższa cena naprawy, nie wyceny."
       },
       {
        "id": "sl3-6",
        "stem": "W przyszłości warsztat może przejąć",
        "options": [
-        "syn pana Krzysztofa.",
+        "młody praktykant.",
         "jego ojciec po wyzdrowieniu.",
-        "młody praktykant."
+        "syn pana Krzysztofa."
        ],
-       "answer": "c",
+       "answer": "a",
        "explain": "Ma nadzieję na praktykanta z technikum. Syn „woli piłkę nożną”."
       }
      ]
@@ -523,11 +523,11 @@
        "id": "cz3-1",
        "stem": "Nowy bus",
        "options": [
-        "jeździ według stałego rozkładu, ale częściej.",
         "trzeba zamówić najpóźniej godzinę przed wyjazdem.",
+        "jeździ według stałego rozkładu, ale częściej.",
         "wozi tylko uczniów i seniorów."
        ],
-       "answer": "b",
+       "answer": "a",
        "passage": "Bus na telefon\n\nW gminie Dobra pod Szczecinem od jesieni kursuje bus, który nie ma stałego rozkładu jazdy. Mieszkańcy dzwonią albo piszą w aplikacji najpóźniej godzinę przed wyjazdem, a dyspozytor układa trasę tak, żeby zabrać wszystkich z jednej okolicy. Wcześniej do niektórych wsi autobus przyjeżdżał dwa razy dziennie, a wieczorem wcale. Bilet kosztuje tyle samo co w zwykłym autobusie, a seniorzy po siedemdziesiątce jeżdżą za darmo. Najczęściej z busa korzystają uczniowie i starsze osoby, które jadą do przychodni. Gmina płaci za tę usługę więcej niż za tradycyjną linię, ale radni uważają, że warto, bo mniej mieszkańców wyprowadza się do miasta.",
        "explain": "Mieszkańcy dzwonią lub piszą „najpóźniej godzinę przed wyjazdem”. Bus „nie ma stałego rozkładu”, a uczniowie i seniorzy to tylko najczęstsi pasażerowie."
       },
@@ -536,21 +536,21 @@
        "stem": "Radni uważają, że nowa usługa",
        "options": [
         "jest tańsza niż zwykła linia.",
-        "przyciąga na wieś nowych mieszkańców.",
-        "pomaga zatrzymać ludzi na wsi."
+        "pomaga zatrzymać ludzi na wsi.",
+        "przyciąga na wieś nowych mieszkańców."
        ],
-       "answer": "c",
+       "answer": "b",
        "explain": "Gmina płaci więcej, ale warto, bo „mniej mieszkańców wyprowadza się do miasta”. O nowych mieszkańcach tekst nie mówi."
       },
       {
        "id": "cz3-3",
        "stem": "Żeby pracować krócej, firma",
        "options": [
-        "obniżyła pensje.",
         "zmieniła sposób organizowania pracy, np. zebrań.",
+        "obniżyła pensje.",
         "wydłużyła dzień pracy do dziesięciu godzin."
        ],
-       "answer": "b",
+       "answer": "a",
        "passage": "Cztery dni pracy, trzy dni wolnego\n\nFirma informatyczna „Kodera” z Lublina od roku testuje czterodniowy tydzień pracy. Pracownicy pracują od poniedziałku do czwartku po osiem godzin, a pensje się nie zmieniły. Żeby zdążyć ze wszystkim, firma skróciła zebrania do piętnastu minut i wprowadziła dwie godziny dziennie bez telefonów i wiadomości. Prezes przyznaje, że na początku klienci byli zaniepokojeni, bo w piątki nikt nie odbierał. Dlatego teraz jedna osoba z każdego zespołu ma dyżur w piątek, a wolne bierze w poniedziałek. Po roku liczba zwolnień lekarskich spadła o jedną trzecią, a do firmy zgłasza się dwa razy więcej kandydatów.",
        "explain": "Firma „skróciła zebrania do piętnastu minut” i wprowadziła czas bez telefonów. Pensje się nie zmieniły, dzień ma osiem godzin."
       },
@@ -559,8 +559,8 @@
        "stem": "Klienci firmy",
        "options": [
         "na początku martwili się, że w piątki nie ma kontaktu.",
-        "nie zauważyli żadnej zmiany.",
-        "mogą dzwonić tylko od poniedziałku do czwartku."
+        "mogą dzwonić tylko od poniedziałku do czwartku.",
+        "nie zauważyli żadnej zmiany."
        ],
        "answer": "a",
        "explain": "Klienci „byli zaniepokojeni, bo w piątki nikt nie odbierał”. Teraz w piątek jest dyżur, więc można dzwonić."
@@ -581,11 +581,11 @@
        "id": "cz3-6",
        "stem": "Obecnie agencja ma problem, ponieważ",
        "options": [
-        "brakuje jej seniorów.",
         "rodziny uważają, że usługa jest za droga.",
+        "brakuje jej seniorów.",
         "seniorzy nie chcą robić kursu pierwszej pomocy."
        ],
-       "answer": "a",
+       "answer": "b",
        "explain": "Chętnych rodzin jest „dwa razy więcej niż seniorów”, dlatego agencja szuka nowych „babć” i „dziadków”."
       }
      ]
@@ -646,43 +646,43 @@
      "bank": [
       {
        "key": "a",
-       "text": "chciałabym umówić"
-      },
-      {
-       "key": "b",
-       "text": "od kiedy"
-      },
-      {
-       "key": "c",
-       "text": "czy mogłabym"
-      },
-      {
-       "key": "d",
        "text": "proszę się nie martwić"
       },
       {
-       "key": "e",
-       "text": "w takim razie"
-      },
-      {
-       "key": "f",
-       "text": "do zobaczenia"
-      },
-      {
-       "key": "g",
-       "text": "zależy od tego"
-      },
-      {
-       "key": "h",
-       "text": "mimo że"
-      },
-      {
-       "key": "i",
+       "key": "b",
        "text": "na wszelki wypadek"
       },
       {
-       "key": "j",
+       "key": "c",
        "text": "jak najszybciej"
+      },
+      {
+       "key": "d",
+       "text": "zależy od tego"
+      },
+      {
+       "key": "e",
+       "text": "do zobaczenia"
+      },
+      {
+       "key": "f",
+       "text": "w takim razie"
+      },
+      {
+       "key": "g",
+       "text": "czy mogłabym"
+      },
+      {
+       "key": "h",
+       "text": "od kiedy"
+      },
+      {
+       "key": "i",
+       "text": "chciałabym umówić"
+      },
+      {
+       "key": "j",
+       "text": "mimo że"
       }
      ],
      "text": "Recepcjonistka: Przychodnia weterynaryjna „Łapa”, dzień dobry.\nKlientka: Dzień dobry, {{42}} wizytę dla mojego psa.\nRecepcjonistka: Co się dzieje z pieskiem?\nKlientka: Nic nie je i ciągle śpi, {{43}} zwykle jest bardzo aktywny.\nRecepcjonistka: {{44}} to trwa?\nKlientka: Od wczoraj wieczorem.\nRecepcjonistka: Trzeba go zbadać {{45}}, nie warto czekać. Może pani przyjść dzisiaj o szesnastej?\nKlientka: Niestety pracuję do siedemnastej. {{46}} przyjść o osiemnastej?\nRecepcjonistka: Tak, mamy jeszcze wolne miejsce o osiemnastej piętnaście.\nKlientka: Ile kosztuje wizyta?\nRecepcjonistka: Badanie kosztuje sto złotych. Cena badań krwi {{47}}, co zaleci lekarz.\nKlientka: Rozumiem. Czy przed wizytą mam go nie karmić?\nRecepcjonistka: Nie trzeba. Ale proszę zabrać książeczkę szczepień, {{48}}.\nKlientka: Dobrze. Bardzo się boję, że to coś poważnego.\nRecepcjonistka: {{49}}, doktor Nowak ma duże doświadczenie.\nKlientka: Dziękuję, do widzenia.",
@@ -691,56 +691,56 @@
        "id": "el1-42",
        "n": 42,
        "kind": "bank",
-       "answer": "a",
+       "answer": "i",
        "explain": "Początek rozmowy: „chciałabym umówić wizytę” (umówić + biernik)."
       },
       {
        "id": "el1-43",
        "n": 43,
        "kind": "bank",
-       "answer": "h",
+       "answer": "j",
        "explain": "Kontrast: pies śpi, „mimo że” zwykle jest aktywny."
       },
       {
        "id": "el1-44",
        "n": 44,
        "kind": "bank",
-       "answer": "b",
+       "answer": "h",
        "explain": "Pytanie o początek: „Od kiedy to trwa?” — odpowiedź „od wczoraj”."
       },
       {
        "id": "el1-45",
        "n": 45,
        "kind": "bank",
-       "answer": "j",
+       "answer": "c",
        "explain": "„Jak najszybciej, nie warto czekać” — sprawa jest pilna."
       },
       {
        "id": "el1-46",
        "n": 46,
        "kind": "bank",
-       "answer": "c",
+       "answer": "g",
        "explain": "Grzeczna prośba z bezokolicznikiem: „Czy mogłabym przyjść…?”."
       },
       {
        "id": "el1-47",
        "n": 47,
        "kind": "bank",
-       "answer": "g",
+       "answer": "d",
        "explain": "„Cena zależy od tego, co zaleci lekarz” — po „od tego” idzie „co…”."
       },
       {
        "id": "el1-48",
        "n": 48,
        "kind": "bank",
-       "answer": "i",
+       "answer": "b",
        "explain": "Książeczkę trzeba zabrać „na wszelki wypadek”, gdyby była potrzebna."
       },
       {
        "id": "el1-49",
        "n": 49,
        "kind": "bank",
-       "answer": "d",
+       "answer": "a",
        "explain": "Uspokojenie zmartwionej klientki: „Proszę się nie martwić”."
       }
      ]
