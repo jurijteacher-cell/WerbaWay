@@ -1,0 +1,319 @@
+{
+  "lesson_id": "ru-a0-06-na-granitse",
+  "exercise_type": "fill-in-blank",
+  "title": "Homework: куда́? отку́да? на ско́лько?",
+  "instruction": "Четы́ре упражне́ния. 25 мину́т.",
+  "instruction_uk": "Four exercises, 25 minutes. New cities, new trips.",
+  "estimated_minutes": 25,
+  "blocks": [
+    {
+      "block_id": "h1",
+      "exercise_type": "fill-in-blank",
+      "title": "1. Куда́? Write the form",
+      "instruction": "Впиши слово в нужной форме.",
+      "instruction_uk": "Where to? Put the place in the Куда́?-form.",
+      "items": [
+        {
+          "id": "h1-1",
+          "text": "Я е́ду в ___ (Пра́га).",
+          "answer": "Прагу",
+          "accept": [
+            "Пра́гу"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "-а → -у: в Пра́гу.",
+          "hint": "Пра́га"
+        },
+        {
+          "id": "h1-2",
+          "text": "Мы е́дем в ___ (Ита́лия).",
+          "answer": "Италию",
+          "accept": [
+            "Ита́лию"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "-ия → -ию: в Ита́лию.",
+          "hint": "Ита́лия"
+        },
+        {
+          "id": "h1-3",
+          "text": "Друг е́дет в ___ (Берли́н).",
+          "answer": "Берлин",
+          "accept": [
+            "Берли́н"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "он word: no change.",
+          "hint": "Берли́н"
+        },
+        {
+          "id": "h1-4",
+          "text": "Она́ е́дет на ___ (по́чта — post office).",
+          "answer": "почту",
+          "accept": [
+            "по́чту"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "-а → -у: на по́чту.",
+          "hint": "по́чта"
+        },
+        {
+          "id": "h1-5",
+          "text": "Они́ е́дут в ___ (Шотла́ндия).",
+          "answer": "Шотландию",
+          "accept": [
+            "Шотла́ндию"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "-ия → -ию.",
+          "hint": "Шотла́ндия"
+        },
+        {
+          "id": "h1-6",
+          "text": "Ты е́дешь в ___ (Ве́на)?",
+          "answer": "Вену",
+          "accept": [
+            "Ве́ну"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "-а → -у: в Ве́ну.",
+          "hint": "Ве́на"
+        }
+      ]
+    },
+    {
+      "block_id": "h2",
+      "exercise_type": "fill-in-blank",
+      "title": "2. Отку́да? Write the form",
+      "instruction": "Впиши слово в нужной форме.",
+      "instruction_uk": "Where from? Put the place after из.",
+      "items": [
+        {
+          "id": "h2-1",
+          "text": "Мой колле́га из ___ (Пари́ж).",
+          "answer": "Парижа",
+          "accept": [
+            "Пари́жа"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "+а: из Пари́жа.",
+          "hint": "Пари́ж"
+        },
+        {
+          "id": "h2-2",
+          "text": "Эти пода́рки из ___ (Пра́га).",
+          "answer": "Праги",
+          "accept": [
+            "Пра́ги"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "after г → и: из Пра́ги.",
+          "hint": "Пра́га"
+        },
+        {
+          "id": "h2-3",
+          "text": "Моя́ сестра́ из ___ (Ирла́ндия).",
+          "answer": "Ирландии",
+          "accept": [
+            "Ирла́ндии"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "-ия → -ии.",
+          "hint": "Ирла́ндия"
+        },
+        {
+          "id": "h2-4",
+          "text": "Он е́дет из ___ (Кра́ков) в Ве́ну.",
+          "answer": "Кракова",
+          "accept": [
+            "Кра́кова"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "+а: из Кра́кова.",
+          "hint": "Кра́ков"
+        },
+        {
+          "id": "h2-5",
+          "text": "Маши́на из ___ (Ве́на).",
+          "answer": "Вены",
+          "accept": [
+            "Ве́ны"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "-а → -ы: из Ве́ны.",
+          "hint": "Ве́на"
+        },
+        {
+          "id": "h2-6",
+          "text": "Мы из ___ (А́встрия).",
+          "answer": "Австрии",
+          "accept": [
+            "А́встрии"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "-ия → -ии.",
+          "hint": "А́встрия"
+        }
+      ]
+    },
+    {
+      "block_id": "h3",
+      "exercise_type": "fill-in-blank",
+      "title": "3. день, дня or дней?",
+      "instruction": "Выбери правильный вариант.",
+      "instruction_uk": "1 → день · 2–4 → дня · 5–20 → дней.",
+      "items": [
+        {
+          "id": "h3-1",
+          "text": "Я в Пра́ге на ___. (3)",
+          "answer": "три дня",
+          "options": [
+            "три дня",
+            "три день",
+            "три дней"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "2–4 → дня."
+        },
+        {
+          "id": "h3-2",
+          "text": "Мы в Ве́не на ___. (6)",
+          "answer": "шесть дней",
+          "options": [
+            "шесть день",
+            "шесть дней",
+            "шесть дня"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "5+ → дней."
+        },
+        {
+          "id": "h3-3",
+          "text": "Она́ там на ___. (22)",
+          "answer": "два́дцать два дня",
+          "options": [
+            "два́дцать два день",
+            "два́дцать два дней",
+            "два́дцать два дня"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "…два → дня."
+        },
+        {
+          "id": "h3-4",
+          "text": "Брат в Ита́лии на ___. (11)",
+          "answer": "оди́ннадцать дней",
+          "options": [
+            "оди́ннадцать день",
+            "оди́ннадцать дней",
+            "оди́ннадцать дня"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "11–14 → дней."
+        },
+        {
+          "id": "h3-5",
+          "text": "Это сто́ит ___. (3 roubles)",
+          "answer": "три рубля́",
+          "options": [
+            "три рубля́",
+            "три рубль",
+            "три рубле́й"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "2–4 → рубля́."
+        },
+        {
+          "id": "h3-6",
+          "text": "Ме́сяц — это ___. (31)",
+          "answer": "три́дцать оди́н день",
+          "options": [
+            "три́дцать оди́н дней",
+            "три́дцать оди́н дня",
+            "три́дцать оди́н день"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "…оди́н → день."
+        }
+      ]
+    },
+    {
+      "block_id": "h4",
+      "exercise_type": "sentence-building",
+      "title": "4. Build the sentence",
+      "instruction": "Составь предложение из слов.",
+      "instruction_uk": "Put the words in order.",
+      "items": [
+        {
+          "id": "h4-1",
+          "words": [
+            "мы",
+            "е́дем",
+            "в",
+            "Ве́ну",
+            "на",
+            "пять",
+            "дней"
+          ],
+          "answer": "Мы е́дем в Ве́ну на пять дней.",
+          "accept": [
+            "На пять дней мы е́дем в Ве́ну.",
+            "Мы е́дем на пять дней в Ве́ну.",
+            "Мы едем в Вену на пять дней.",
+            "На пять дней мы едем в Вену.",
+            "Мы едем на пять дней в Вену."
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Куда́? + на ско́лько?"
+        },
+        {
+          "id": "h4-2",
+          "words": [
+            "моя́",
+            "сестра́",
+            "из",
+            "Ирла́ндии"
+          ],
+          "answer": "Моя́ сестра́ из Ирла́ндии.",
+          "accept": [
+            "Моя сестра из Ирландии."
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Отку́да?"
+        },
+        {
+          "id": "h4-3",
+          "words": [
+            "вот",
+            "мой",
+            "па́спорт"
+          ],
+          "answer": "Вот мой па́спорт.",
+          "accept": [
+            "Вот мой паспорт."
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Here is my passport."
+        },
+        {
+          "id": "h4-4",
+          "words": [
+            "я",
+            "бу́ду",
+            "жить",
+            "у",
+            "дру́га"
+          ],
+          "answer": "Я бу́ду жить у дру́га.",
+          "accept": [
+            "У дру́га я бу́ду жить.",
+            "Я буду жить у друга.",
+            "У друга я буду жить."
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "I will stay at a friend's."
+        }
+      ]
+    }
+  ]
+}

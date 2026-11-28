@@ -1,0 +1,899 @@
+{
+  "lesson_id": "ru-a0-06-na-granitse",
+  "exercise_type": "fill-in-blank",
+  "title": "Exercises: на грани́це — куда́? отку́да? на ско́лько?",
+  "instruction": "Try first, then press Sprawdź (check).",
+  "eyebrow": "exercises",
+  "estimated_minutes": 40,
+  "blocks": [
+    {
+      "block_id": "t1",
+      "part": 1,
+      "exercise_type": "ordering",
+      "title": "Text. Put the steps in order",
+      "instruction": "Что бы́ло снача́ла, а что пото́м? Кли́кай предложе́ния по о́череди.",
+      "instruction_uk": "Click the sentences in the order of the text «На грани́це».",
+      "items": [
+        {
+          "id": "t1-1",
+          "prompt": "Ма́йк е́дет из Кишинёва в Тира́споль на маршру́тке.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-2",
+          "prompt": "На грани́це все выхо́дят.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-3",
+          "prompt": "Тамо́женник берёт па́спорт.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-4",
+          "prompt": "Ма́йк говори́т, что он из Великобрита́нии.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-5",
+          "prompt": "Ма́йк не понима́ет вопро́с: «Цель пое́здки?»",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-6",
+          "prompt": "Ма́йк е́дет в Тира́споль на три дня.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-7",
+          "prompt": "В су́мке ве́щи, оде́жда и пода́рок.",
+          "grammar_point": "czytanie"
+        },
+        {
+          "id": "t1-8",
+          "prompt": "Тамо́женник даёт миграцио́нную ка́рту.",
+          "grammar_point": "czytanie"
+        }
+      ]
+    },
+    {
+      "block_id": "t2",
+      "part": 1,
+      "exercise_type": "cloze-text",
+      "title": "Text. Mike's trip, retold",
+      "instruction": "Выбери правильный вариант. Choose what fits the text.",
+      "instruction_uk": "Pick what is true for Mike — and grammatically right.",
+      "text": "Ма́йк живёт {t2-1}. Сего́дня он е́дет {t2-2} в Тира́споль. Он тури́ст, он е́дет {t2-3}. Он бу́дет жить {t2-4}. В су́мке {t2-5} и пода́рок. Ма́йк не понима́ет и говори́т: «Повтори́те, пожа́луйста, {t2-6}». В конце́ тамо́женник даёт ему́ {t2-7}.",
+      "items": [
+        {
+          "id": "t2-1",
+          "answer": "в Ло́ндоне",
+          "options": [
+            "из Ло́ндона",
+            "в Ло́ндоне",
+            "в Ло́ндон"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "Где он живёт? — в Ло́ндоне (where? → -е)."
+        },
+        {
+          "id": "t2-2",
+          "answer": "из Кишинёва",
+          "options": [
+            "из Кишинёва",
+            "из Кишинёв",
+            "в Кишинёв"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "He starts in Chișinău: из Кишинёва."
+        },
+        {
+          "id": "t2-3",
+          "answer": "на три дня",
+          "options": [
+            "на три дней",
+            "на три дня",
+            "для три дня"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "For how long? — на + number: на три дня."
+        },
+        {
+          "id": "t2-4",
+          "answer": "в гости́нице",
+          "options": [
+            "в гости́ницу",
+            "на гости́нице",
+            "в гости́нице"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "Where will he live? — в гости́нице (where? → -е)."
+        },
+        {
+          "id": "t2-5",
+          "answer": "ве́щи, оде́жда",
+          "options": [
+            "ве́щи, оде́жда",
+            "ноутбу́к, кни́ги",
+            "сигаре́ты, вино́"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "In the text: ве́щи, оде́жда и пода́рок."
+        },
+        {
+          "id": "t2-6",
+          "answer": "ме́дленно",
+          "options": [
+            "ме́дленно",
+            "бы́стро",
+            "по-англи́йски"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "He asks the officer to speak slowly: ме́дленно."
+        },
+        {
+          "id": "t2-7",
+          "answer": "миграцио́нную ка́рту",
+          "options": [
+            "ви́зу",
+            "печа́ть в па́спорте",
+            "миграцио́нную ка́рту"
+          ],
+          "grammar_point": "czytanie",
+          "explanation": "There is no stamp and no visa — you get a migration card."
+        }
+      ]
+    },
+    {
+      "block_id": "w1",
+      "part": 2,
+      "exercise_type": "matching",
+      "title": "Vocabulary. Question → answer",
+      "instruction": "Соедини вопрос и ответ.",
+      "instruction_uk": "Match what the officer says with what you answer.",
+      "items": [
+        {
+          "id": "w1-1",
+          "left": "Ваш па́спорт, пожа́луйста.",
+          "right": "Вот, пожа́луйста.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-2",
+          "left": "Цель пое́здки?",
+          "right": "Тури́зм. Я тури́ст.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-3",
+          "left": "Где вы бу́дете жить?",
+          "right": "В гости́нице, в це́нтре.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-4",
+          "left": "Что у вас в су́мке?",
+          "right": "Ве́щи и оде́жда.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-5",
+          "left": "Де́ньги есть?",
+          "right": "Да, у меня́ сто е́вро.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-6",
+          "left": "Вы понима́ете?",
+          "right": "Извини́те, повтори́те ме́дленно.",
+          "grammar_point": "slownictwo"
+        },
+        {
+          "id": "w1-7",
+          "left": "Спаси́бо. До свида́ния!",
+          "right": "До свида́ния!",
+          "grammar_point": "slownictwo"
+        }
+      ]
+    },
+    {
+      "block_id": "g1",
+      "part": 3,
+      "exercise_type": "fill-in-blank",
+      "title": "3. Куда́? — where to?",
+      "instruction": "Выбери правильный вариант.",
+      "instruction_uk": "Где? (where — you are there) or Куда́? (where to — you are going there). Watch the ending.",
+      "items": [
+        {
+          "id": "g1-1",
+          "text": "Я живу́ в Ло́ндоне, но сейча́с я е́ду ___.",
+          "answer": "в Тира́споль",
+          "options": [
+            "в Тира́споль",
+            "в Тира́споле",
+            "в Тира́споля"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Куда́? — the он word does not change: в Тира́споль."
+        },
+        {
+          "id": "g1-2",
+          "text": "(We are going to Moldova.) Мы е́дем ___.",
+          "answer": "в Молдо́ву",
+          "options": [
+            "в Молдо́ва",
+            "в Молдо́ве",
+            "в Молдо́ву"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Куда́? — -а → -у: в Молдо́ву. в Молдо́ве = where? (in Moldova)."
+        },
+        {
+          "id": "g1-3",
+          "text": "Куда́ ты е́дешь? — ___.",
+          "answer": "В Ри́гу",
+          "options": [
+            "В Ри́гу",
+            "В Ри́ге",
+            "На Ри́гу"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Куда́? — -а → -у: в Ри́гу."
+        },
+        {
+          "id": "g1-4",
+          "text": "(They are going to Great Britain.) Они́ е́дут ___.",
+          "answer": "в Великобрита́нию",
+          "options": [
+            "в Великобрита́нию",
+            "в Великобрита́ния",
+            "в Великобрита́нии"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Куда́? — -ия → -ию: в Великобрита́нию."
+        },
+        {
+          "id": "g1-5",
+          "text": "___ вы е́дете? — В Кишинёв.",
+          "answer": "Куда́",
+          "options": [
+            "Где",
+            "Куда́",
+            "Кто"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "е́хать (to go) asks Куда́?, not Где?"
+        },
+        {
+          "id": "g1-6",
+          "text": "___ вы живёте? — В Ло́ндоне.",
+          "answer": "Где",
+          "options": [
+            "Куда́",
+            "Где",
+            "Что"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "жить (to live) asks Где? — the answer has -е."
+        },
+        {
+          "id": "g1-7",
+          "text": "(Dad is going to work.) Па́па е́дет ___.",
+          "answer": "на рабо́ту",
+          "options": [
+            "в рабо́ту",
+            "на рабо́те",
+            "на рабо́ту"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "рабо́та takes на; Куда́? → -у: на рабо́ту."
+        },
+        {
+          "id": "g1-8",
+          "text": "(Mum is at the station, she is waiting for the bus.) Ма́ма сейча́с ___.",
+          "answer": "на вокза́ле",
+          "options": [
+            "на вокза́л",
+            "на вокза́ле",
+            "в вокза́ле"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "She is there, she does not go: Где? → на вокза́ле."
+        },
+        {
+          "id": "g1-9",
+          "text": "Мой друг е́дет ___ (Tbilisi).",
+          "answer": "в Тбили́си",
+          "options": [
+            "в Тбили́су",
+            "в Тбили́сию",
+            "в Тбили́си"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Тбили́си never changes."
+        },
+        {
+          "id": "g1-10",
+          "text": "Вы ___ в Тира́споль?",
+          "answer": "е́дете",
+          "options": [
+            "е́дут",
+            "е́дете",
+            "е́дешь"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "вы → е́дете (ты е́дешь, они́ е́дут)."
+        }
+      ]
+    },
+    {
+      "block_id": "g2",
+      "part": 4,
+      "exercise_type": "fill-in-blank",
+      "title": "4. Отку́да? — where from?",
+      "instruction": "Впиши слово в нужной форме.",
+      "instruction_uk": "The place in brackets is in the dictionary form. Put it after из.",
+      "items": [
+        {
+          "id": "g2-1",
+          "text": "Я из ___ (Ло́ндон).",
+          "answer": "Лондона",
+          "accept": [
+            "Ло́ндона"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "он word → +а: из Ло́ндона.",
+          "hint": "Ло́ндон"
+        },
+        {
+          "id": "g2-2",
+          "text": "Маршру́тка из ___ (Кишинёв).",
+          "answer": "Кишинёва",
+          "accept": [
+            "Кишинева"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "он word → +а: из Кишинёва.",
+          "hint": "Кишинёв"
+        },
+        {
+          "id": "g2-3",
+          "text": "Тамо́женник из ___ (Тира́споль).",
+          "answer": "Тирасполя",
+          "accept": [
+            "Тира́споля"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "-ь → -я: из Тира́споля.",
+          "hint": "Тира́споль"
+        },
+        {
+          "id": "g2-4",
+          "text": "Моя́ подру́га из ___ (Варша́ва).",
+          "answer": "Варшавы",
+          "accept": [
+            "Варша́вы"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "-а → -ы: из Варша́вы.",
+          "hint": "Варша́ва"
+        },
+        {
+          "id": "g2-5",
+          "text": "Э́дик из ___ (Ри́га).",
+          "answer": "Риги",
+          "accept": [
+            "Ри́ги"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "-а → -ы, but after г, к, х, ж, ш, ч, щ you write и: из Ри́ги.",
+          "hint": "Ри́га"
+        },
+        {
+          "id": "g2-6",
+          "text": "Я из ___ (Великобрита́ния).",
+          "answer": "Великобритании",
+          "accept": [
+            "Великобрита́нии"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "-ия → -ии: из Великобрита́нии.",
+          "hint": "Великобрита́ния"
+        },
+        {
+          "id": "g2-7",
+          "text": "Мы из ___ (По́льша).",
+          "answer": "Польши",
+          "accept": [
+            "По́льши"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "after ш you write и: из По́льши.",
+          "hint": "По́льша"
+        },
+        {
+          "id": "g2-8",
+          "text": "Дави́т из ___ (Тбили́си).",
+          "answer": "Тбилиси",
+          "accept": [
+            "Тбили́си"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Тбили́си never changes.",
+          "hint": "Тбили́си"
+        },
+        {
+          "id": "g2-9",
+          "text": "Авто́бус из ___ (Молдо́ва).",
+          "answer": "Молдовы",
+          "accept": [
+            "Молдо́вы"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "-а → -ы: из Молдо́вы.",
+          "hint": "Молдо́ва"
+        }
+      ]
+    },
+    {
+      "block_id": "g3",
+      "part": 5,
+      "exercise_type": "fill-in-blank",
+      "title": "5. На ско́лько? — день, дня, дней",
+      "instruction": "Выбери правильный вариант.",
+      "instruction_uk": "1 → день · 2, 3, 4 → дня · 5–20 → дней. The last digit decides (but 11–14 → дней).",
+      "items": [
+        {
+          "id": "g3-1",
+          "text": "На ско́лько дней? — На ___. (1)",
+          "answer": "оди́н день",
+          "options": [
+            "одна́ день",
+            "оди́н день",
+            "оди́н дня"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "1 → день."
+        },
+        {
+          "id": "g3-2",
+          "text": "На ско́лько дней? — На ___. (2)",
+          "answer": "два дня",
+          "options": [
+            "два дня",
+            "два дней",
+            "два день"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "2, 3, 4 → дня."
+        },
+        {
+          "id": "g3-3",
+          "text": "Я здесь на ___. (3)",
+          "answer": "три дня",
+          "options": [
+            "три дня",
+            "три дней",
+            "три день"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "2, 3, 4 → дня."
+        },
+        {
+          "id": "g3-4",
+          "text": "Мы здесь на ___. (5)",
+          "answer": "пять дней",
+          "options": [
+            "пять день",
+            "пять дня",
+            "пять дней"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "5 and more → дней."
+        },
+        {
+          "id": "g3-5",
+          "text": "Она́ е́дет на ___. (4)",
+          "answer": "четы́ре дня",
+          "options": [
+            "четы́ре дней",
+            "четы́ре дня",
+            "четы́ре день"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "2, 3, 4 → дня."
+        },
+        {
+          "id": "g3-6",
+          "text": "Друг здесь на ___. (12)",
+          "answer": "двена́дцать дней",
+          "options": [
+            "двена́дцать день",
+            "двена́дцать дня",
+            "двена́дцать дней"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "11–14 always take дней — even 12."
+        },
+        {
+          "id": "g3-7",
+          "text": "Он е́дет на ___. (21)",
+          "answer": "два́дцать оди́н день",
+          "options": [
+            "два́дцать оди́н дня",
+            "два́дцать оди́н день",
+            "два́дцать оди́н дней"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "The last word decides: …оди́н → день."
+        },
+        {
+          "id": "g3-8",
+          "text": "(for a week) Я е́ду на ___.",
+          "answer": "неде́лю",
+          "options": [
+            "неде́лю",
+            "неде́ле",
+            "неде́ля"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "на + Куда́?-form: неде́ля → на неде́лю."
+        },
+        {
+          "id": "g3-9",
+          "text": "У меня́ ___. (2 Transnistrian roubles)",
+          "answer": "два рубля́",
+          "options": [
+            "два рубле́й",
+            "два рубля́",
+            "два рубль"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "рубль works like день: 2 → рубля́."
+        },
+        {
+          "id": "g3-10",
+          "text": "Биле́т сто́ит ___. (5 roubles)",
+          "answer": "пять рубле́й",
+          "options": [
+            "пять рубль",
+            "пять рубля́",
+            "пять рубле́й"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "5 → рубле́й."
+        },
+        {
+          "id": "g3-11",
+          "text": "У меня́ ___. (100 euros)",
+          "answer": "сто е́вро",
+          "options": [
+            "сто е́вров",
+            "сто е́вра",
+            "сто е́вро"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "е́вро never changes."
+        }
+      ]
+    },
+    {
+      "block_id": "g4",
+      "part": 6,
+      "exercise_type": "sentence-building",
+      "title": "6. Find the mistake",
+      "instruction": "В каждом предложении одна ошибка. Напиши предложение правильно.",
+      "instruction_uk": "One mistake per sentence — the ones English speakers really make.",
+      "items": [
+        {
+          "id": "g4-1",
+          "prompt": "Где вы е́дете?",
+          "answer": "Куда́ вы е́дете?",
+          "accept": [
+            "Куда вы едете?"
+          ],
+          "grammar_point": "kalki-en",
+          "explanation": "English «where» is two words in Russian: Где? (where are you) and Куда́? (where are you going)."
+        },
+        {
+          "id": "g4-2",
+          "prompt": "Я иду́ в Тира́споль на авто́бусе.",
+          "answer": "Я е́ду в Тира́споль на авто́бусе.",
+          "accept": [
+            "Я еду в Тирасполь на автобусе."
+          ],
+          "grammar_point": "kalki-en",
+          "explanation": "иду́ = on foot. By bus, car or train it is е́ду."
+        },
+        {
+          "id": "g4-3",
+          "prompt": "Я из Ло́ндон.",
+          "answer": "Я из Ло́ндона.",
+          "accept": [
+            "Я из Лондона."
+          ],
+          "grammar_point": "kalki-en",
+          "explanation": "After из the noun changes: Ло́ндон → из Ло́ндона."
+        },
+        {
+          "id": "g4-4",
+          "prompt": "Я здесь для три дня.",
+          "answer": "Я здесь на три дня.",
+          "accept": [
+            "Я на три дня здесь.",
+            "Здесь я на три дня."
+          ],
+          "grammar_point": "kalki-en",
+          "explanation": "«for (how long)» is на, not для."
+        },
+        {
+          "id": "g4-5",
+          "prompt": "Я брита́нский.",
+          "answer": "Я брита́нец.",
+          "accept": [
+            "Я из Великобрита́нии.",
+            "Я англича́нин.",
+            "Я британец.",
+            "Я из Великобритании.",
+            "Я англичанин."
+          ],
+          "grammar_point": "kalki-en",
+          "explanation": "брита́нский is an adjective (British passport). About yourself: Я брита́нец / Я из Великобрита́нии."
+        },
+        {
+          "id": "g4-6",
+          "prompt": "Мы е́дем в Молдо́ве.",
+          "answer": "Мы е́дем в Молдо́ву.",
+          "accept": [
+            "Мы едем в Молдову."
+          ],
+          "grammar_point": "kalki-en",
+          "explanation": "е́хать → Куда́? → -у: в Молдо́ву."
+        }
+      ]
+    },
+    {
+      "block_id": "g5",
+      "part": 7,
+      "exercise_type": "sentence-building",
+      "title": "7. Build the sentence",
+      "instruction": "Составь предложение из слов.",
+      "instruction_uk": "Put the words in order — sentences you will say at the checkpoint.",
+      "items": [
+        {
+          "id": "g5-1",
+          "words": [
+            "я",
+            "е́ду",
+            "в",
+            "Тира́споль",
+            "на",
+            "два",
+            "дня"
+          ],
+          "answer": "Я е́ду в Тира́споль на два дня.",
+          "accept": [
+            "На два дня я е́ду в Тира́споль.",
+            "Я е́ду на два дня в Тира́споль.",
+            "Я еду в Тирасполь на два дня.",
+            "На два дня я еду в Тирасполь.",
+            "Я еду на два дня в Тирасполь."
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Куда́? + на ско́лько?"
+        },
+        {
+          "id": "g5-2",
+          "words": [
+            "мой",
+            "друг",
+            "из",
+            "Ри́ги"
+          ],
+          "answer": "Мой друг из Ри́ги.",
+          "accept": [
+            "Мой друг из Риги."
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Отку́да? → из Ри́ги (г → и)."
+        },
+        {
+          "id": "g5-3",
+          "words": [
+            "где",
+            "вы",
+            "бу́дете",
+            "жить?"
+          ],
+          "answer": "Где вы бу́дете жить?",
+          "accept": [
+            "Вы где бу́дете жить?",
+            "Где вы будете жить?",
+            "Вы где будете жить?"
+          ],
+          "grammar_point": "slownictwo",
+          "explanation": "Where will you stay? — a ready question."
+        },
+        {
+          "id": "g5-4",
+          "words": [
+            "у",
+            "меня́",
+            "сто",
+            "е́вро"
+          ],
+          "answer": "У меня́ сто е́вро.",
+          "accept": [
+            "У меня сто евро."
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "е́вро never changes."
+        },
+        {
+          "id": "g5-5",
+          "words": [
+            "отку́да",
+            "вы",
+            "е́дете?"
+          ],
+          "answer": "Отку́да вы е́дете?",
+          "accept": [
+            "Вы отку́да е́дете?",
+            "Откуда вы едете?",
+            "Вы откуда едете?"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Where are you coming from?"
+        },
+        {
+          "id": "g5-6",
+          "words": [
+            "мы",
+            "е́дем",
+            "обра́тно",
+            "в",
+            "Кишинёв"
+          ],
+          "answer": "Мы е́дем обра́тно в Кишинёв.",
+          "accept": [
+            "Мы е́дем в Кишинёв обра́тно.",
+            "Обра́тно мы е́дем в Кишинёв.",
+            "Мы едем обратно в Кишинёв.",
+            "Мы едем в Кишинёв обратно.",
+            "Обратно мы едем в Кишинёв."
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "We are going back to Chișinău."
+        }
+      ]
+    },
+    {
+      "block_id": "gz",
+      "part": 8,
+      "exercise_type": "fill-in-blank",
+      "title": "8. Ćwiczenia zbiorcze — all together",
+      "instruction": "Все темы урока вместе.",
+      "instruction_uk": "Mixed practice from the whole lesson: choose or write the form, name the question.",
+      "items": [
+        {
+          "id": "gz-1",
+          "text": "«в Тира́споль» answers the question…",
+          "answer": "Куда́?",
+          "options": [
+            "Где?",
+            "Отку́да?",
+            "Куда́?"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "No -е, no из → Куда́?"
+        },
+        {
+          "id": "gz-2",
+          "text": "«в Тира́споле» answers the question…",
+          "answer": "Где?",
+          "options": [
+            "Куда́?",
+            "Где?",
+            "На ско́лько?"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "-е after в → Где?"
+        },
+        {
+          "id": "gz-3",
+          "text": "«из Тира́споля» answers the question…",
+          "answer": "Отку́да?",
+          "options": [
+            "Где?",
+            "Отку́да?",
+            "Заче́м?"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "из + -я → Отку́да?"
+        },
+        {
+          "id": "gz-4",
+          "text": "(for a week) Я в Кишинёве ___.",
+          "answer": "на неде́лю",
+          "options": [
+            "на неде́лю",
+            "для неде́ли",
+            "на неде́ле"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "на ско́лько? → на неде́лю."
+        },
+        {
+          "id": "gz-5",
+          "text": "(from Warsaw) Друг е́дет ___ в Ри́гу.",
+          "answer": "из Варша́вы",
+          "options": [
+            "в Варша́ву",
+            "из Варша́вы",
+            "из Варша́ва"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Отку́да? → из Варша́вы."
+        },
+        {
+          "id": "gz-6",
+          "text": "Мы здесь на ___. (6)",
+          "answer": "шесть дней",
+          "options": [
+            "шесть дней",
+            "шесть дня",
+            "шесть день"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "5 and more → дней."
+        },
+        {
+          "id": "gz-7",
+          "text": "(Where are you going?) ___ вы е́дете?",
+          "answer": "Куда́",
+          "options": [
+            "Где",
+            "Заче́м",
+            "Куда́"
+          ],
+          "grammar_point": "kalki-en",
+          "explanation": "Not Где: е́хать asks Куда́?"
+        },
+        {
+          "id": "gz-8",
+          "text": "Ма́ма е́дет в ___ (Великобрита́ния).",
+          "answer": "Великобританию",
+          "accept": [
+            "Великобрита́нию"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Куда́? → -ия → -ию.",
+          "hint": "Великобрита́ния"
+        },
+        {
+          "id": "gz-9",
+          "text": "Па́па из ___ (Ри́га).",
+          "answer": "Риги",
+          "accept": [
+            "Ри́ги"
+          ],
+          "grammar_point": "przyimki-kierunku",
+          "explanation": "Отку́да? → after г → и.",
+          "hint": "Ри́га"
+        },
+        {
+          "id": "gz-10",
+          "text": "Я на грани́це уже́ (already) ___. (2 hours: час)",
+          "answer": "два часа́",
+          "options": [
+            "два часо́в",
+            "два часа́",
+            "два час"
+          ],
+          "grammar_point": "liczebnik-rzeczownik",
+          "explanation": "час works like день: 2 → часа́."
+        }
+      ]
+    }
+  ]
+}
